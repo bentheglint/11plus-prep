@@ -4334,6 +4334,389 @@ export const decimalsSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 15: master-column-addition-decimals
+  // Adding decimals using the column method — line up the decimal points
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "master-column-addition-decimals",
+    name: "Column Addition with Decimals",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "master-column-addition-decimals-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to add decimals by lining up the decimal points",
+          "Why you must pad with zeros when numbers have different decimal places"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            scenario: "adding up the cost of two items at the school tuck shop",
+            numA: 3.4, numA_str: "3.40", numA_raw: "3.4",
+            numB: 0.56, numB_str: "0.56",
+            answer: 3.96, answer_str: "3.96",
+            unit: "\u00a3", unitAfter: "",
+            padNote: "3.4 only has one decimal place, so write it as **3.40** to match 0.56",
+            columns: ["Ones", ".", "10ths", "100ths"],
+            digitsA: [3, ".", 4, 0], digitsB: [0, ".", 5, 6], digitsAns: [3, ".", 9, 6],
+            h_add: "0 + 6 = 6", t_add: "4 + 5 = 9", o_add: "3 + 0 = 3",
+            carry: false,
+            // Interact-specific addition
+            interactNumA: 2.7, interactNumA_raw: "2.7", interactNumA_str: "2.70",
+            interactNumB: 1.45, interactNumB_str: "1.45",
+            interactAnswer: 4.15, interactAnswer_str: "4.15",
+            interactH_add: "0 + 5 = 5", interactT_add: "7 + 4 = 11, write 1 carry 1", interactO_add: "2 + 1 + 1 = 4"
+          },
+          {
+            name: "Ben",
+            scenario: "adding together two jump distances for a sports day relay",
+            numA: 4.85, numA_str: "4.85", numA_raw: "4.85",
+            numB: 2.7, numB_str: "2.70", numB_raw: "2.7",
+            answer: 7.55, answer_str: "7.55",
+            unit: "", unitAfter: " metres",
+            padNote: "2.7 only has one decimal place, so write it as **2.70** to match 4.85",
+            columns: ["Ones", ".", "10ths", "100ths"],
+            digitsA: [4, ".", 8, 5], digitsB: [2, ".", 7, 0], digitsAns: [7, ".", 5, 5],
+            h_add: "5 + 0 = 5", t_add: "8 + 7 = 15, write 5 carry 1", o_add: "4 + 2 + 1 = 7",
+            carry: true,
+            interactNumA: 5.6, interactNumA_raw: "5.6", interactNumA_str: "5.60",
+            interactNumB: 3.85, interactNumB_str: "3.85",
+            interactAnswer: 9.45, interactAnswer_str: "9.45",
+            interactH_add: "0 + 5 = 5", interactT_add: "6 + 8 = 14, write 4 carry 1", interactO_add: "5 + 3 + 1 = 9"
+          },
+          {
+            name: "Chloe",
+            scenario: "weighing two parcels to work out the total for posting",
+            numA: 1.36, numA_str: "1.36", numA_raw: "1.36",
+            numB: 2.89, numB_str: "2.89",
+            answer: 4.25, answer_str: "4.25",
+            unit: "", unitAfter: " kg",
+            padNote: "Both numbers already have two decimal places, so they're ready to line up",
+            columns: ["Ones", ".", "10ths", "100ths"],
+            digitsA: [1, ".", 3, 6], digitsB: [2, ".", 8, 9], digitsAns: [4, ".", 2, 5],
+            h_add: "6 + 9 = 15, write 5 carry 1", t_add: "3 + 8 + 1 = 12, write 2 carry 1", o_add: "1 + 2 + 1 = 4",
+            carry: true,
+            interactNumA: 3.48, interactNumA_raw: "3.48", interactNumA_str: "3.48",
+            interactNumB: 1.76, interactNumB_str: "1.76",
+            interactAnswer: 5.24, interactAnswer_str: "5.24",
+            interactH_add: "8 + 6 = 14, write 4 carry 1", interactT_add: "4 + 7 + 1 = 12, write 2 carry 1", interactO_add: "3 + 1 + 1 = 5"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `${v.unit}${v.numA_raw || v.numA_str} + ${v.unit}${v.numB_raw || v.numB_str} = ?`,
+            body: (v) => `${v.name} is ${v.scenario}. The two amounts are **${v.unit}${v.numA_raw || v.numA_str}${v.unitAfter}** and **${v.unit}${v.numB_raw || v.numB_str}${v.unitAfter}**.\n\nAdding decimals is just like adding whole numbers — but there's one golden rule you must follow. Can you guess what it is?`,
+            visual: {
+              component: "PlaceValueChart",
+              props: (v) => ({
+                columns: v.columns,
+                rows: [
+                  { label: v.numA_str, values: v.digitsA },
+                  { label: "+ " + v.numB_str, values: v.digitsB }
+                ],
+                highlight: []
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Line up the decimal points!",
+            bodyParts: [
+              {
+                type: 'text',
+                content: (v) => `The golden rule: **line up the decimal points** so that tenths are under tenths and hundredths are under hundredths. ${v.padNote}. Tap to see each step!`
+              },
+              {
+                type: 'visual',
+                component: 'PlaceValueChart',
+                props: (v) => ({
+                  columns: v.columns,
+                  rows: [
+                    { label: v.numA_str, values: v.digitsA },
+                    { label: "+ " + v.numB_str, values: v.digitsB }
+                  ],
+                  highlight: []
+                })
+              },
+              {
+                type: 'visual',
+                component: 'WorkedExample',
+                props: (v) => {
+                  const steps = [
+                    { text: "Line up the decimal points", why: "Pad with zeros so both numbers have the same number of decimal places" },
+                    { text: `Hundredths: ${v.h_add}`, why: "Start from the rightmost column" },
+                    { text: `Tenths: ${v.t_add}`, why: v.carry ? "If the column adds to 10 or more, carry 1 to the next column" : "Add the digits in this column" },
+                    { text: `Ones: ${v.o_add}`, why: "Don't forget to add any carry digit!" },
+                    { text: `Answer: ${v.unit}${v.answer_str}${v.unitAfter}`, result: `${v.unit}${v.numA_str} + ${v.unit}${v.numB_str} = ${v.unit}${v.answer_str}${v.unitAfter} \u2713` }
+                  ];
+                  return { steps };
+                }
+              }
+            ],
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `What is **${v.interactNumA_str} + ${v.interactNumB_str}**?\n\nRemember: line up the decimal points first!`,
+            visual: {
+              component: "PlaceValueChart",
+              props: (v) => ({
+                columns: ["Ones", ".", "10ths", "100ths"],
+                rows: [
+                  { label: v.interactNumA_str, values: v.interactNumA_str.split("").map(c => c === "." ? "." : Number(c)) },
+                  { label: "+ " + v.interactNumB_str, values: v.interactNumB_str.split("").map(c => c === "." ? "." : Number(c)) }
+                ],
+                highlight: []
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What is ${v.interactNumA_str} + ${v.interactNumB_str}?`,
+              getOptions: (v) => decimalDistractors(v.interactAnswer),
+              correctAnswer: (v) => v.interactAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! **${v.interactNumA_str} + ${v.interactNumB_str} = ${v.interactAnswer_str}**. You lined up those decimal points perfectly! \u2713`,
+                incorrect: (v) => `Not quite! Line up the points and add from the right: ${v.interactH_add}, ${v.interactT_add}, ${v.interactO_add}. The answer is **${v.interactAnswer_str}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The recipe for adding decimals",
+            body: () => `Adding decimals is easy when you follow these steps every time:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Step 1: Line up the decimal points", why: "Write one number above the other with the points directly in line" },
+                  { text: "Step 2: Pad with zeros if needed", why: "e.g. 3.4 becomes 3.40 so it matches 0.56" },
+                  { text: "Step 3: Add from the right", why: "Hundredths first, then tenths, then ones" },
+                  { text: "Step 4: Carry if a column totals 10 or more", why: "Write the ones digit, carry the tens digit to the next column" },
+                  { text: "Step 5: Bring the decimal point straight down", why: "The point in the answer lines up with the ones above \u2713" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "master-column-addition-decimals-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "How to spot when decimal points aren't lined up in column addition",
+          "Why lining up the right-hand digits instead of the decimal points gives the wrong answer"
+        ],
+        variableSets: [
+          {
+            name: "Tom",
+            scenario: "tried to add 3.4 + 0.56 and got 3.96",
+            numA_raw: "3.4", numB_raw: "0.56",
+            numA_str: "3.40", numB_str: "0.56",
+            // Tom's mistake: lined up right-hand digits so treated it as 3.4 + 0.56 aligned wrong
+            // Wrong working: 3.4_ + _0.56 -> right-aligned = 3.4 and 0.56 pushed right -> 34 + 056 = 090 -> 0.90
+            // Actually the specific mistake: treating 3.4 + 0.56 as if both were right-aligned whole numbers
+            // 3.4 right-aligned with 0.56 gives:   3 . 4
+            //                                    +  0 . 5 6  <- but Tom wrote
+            //                                       3 . 4
+            //                                     + 0 . 5 6  <- with 4 above 6 instead of above 5
+            wrongColumns: ["Ones", ".", "10ths", "100ths"],
+            wrongDigitsA: [3, ".", " ", 4],
+            wrongDigitsB: [0, ".", 5, 6],
+            wrongAnswer: 0.90, wrongAnswer_str: "0.90",
+            wrongDigitsAns: [0, ".", 9, 0],
+            wrongExplanation: "lined up the 4 above the 6 instead of lining up the decimal points",
+            correctAnswer: 3.96, correctAnswer_str: "3.96",
+            correctColumns: ["Ones", ".", "10ths", "100ths"],
+            correctDigitsA: [3, ".", 4, 0],
+            correctDigitsB: [0, ".", 5, 6],
+            correctDigitsAns: [3, ".", 9, 6],
+            correctExplanation: "Write 3.4 as 3.40, then line up the points: 0 + 6 = 6 hundredths, 4 + 5 = 9 tenths, 3 + 0 = 3 ones. Answer: 3.96",
+            // Interact
+            interactNumA_raw: "5.3", interactNumB_raw: "2.68",
+            interactNumA_str: "5.30", interactNumB_str: "2.68",
+            interactAnswer: 7.98, interactAnswer_str: "7.98"
+          },
+          {
+            name: "Ruby",
+            scenario: "tried to add 12.5 + 3.75 and got 5.00",
+            numA_raw: "12.5", numB_raw: "3.75",
+            numA_str: "12.50", numB_str: "3.75",
+            wrongColumns: ["Tens", "Ones", ".", "10ths", "100ths"],
+            wrongDigitsA: [" ", 1, ".", 2, 5],
+            wrongDigitsB: [" ", " ", ".", 3, 75],
+            wrongAnswer: 5.00, wrongAnswer_str: "5.00",
+            wrongDigitsAns: [" ", 5, ".", 0, 0],
+            wrongExplanation: "lined up 12.5 as 1.25 by pushing digits right instead of lining up the decimal points",
+            correctAnswer: 16.25, correctAnswer_str: "16.25",
+            correctColumns: ["Tens", "Ones", ".", "10ths", "100ths"],
+            correctDigitsA: [1, 2, ".", 5, 0],
+            correctDigitsB: [0, 3, ".", 7, 5],
+            correctDigitsAns: [1, 6, ".", 2, 5],
+            correctExplanation: "Write 12.5 as 12.50, then line up the points: 0 + 5 = 5, 5 + 7 = 12 (write 2 carry 1), 2 + 3 + 1 = 6, 1 + 0 = 1. Answer: 16.25",
+            interactNumA_raw: "8.2", interactNumB_raw: "4.63",
+            interactNumA_str: "8.20", interactNumB_str: "4.63",
+            interactAnswer: 12.83, interactAnswer_str: "12.83"
+          },
+          {
+            name: "Oscar",
+            scenario: "tried to add 7.6 + 14.38 and got 21.44",
+            numA_raw: "7.6", numB_raw: "14.38",
+            numA_str: "7.60", numB_str: "14.38",
+            wrongColumns: ["Tens", "Ones", ".", "10ths", "100ths"],
+            wrongDigitsA: [" ", 7, ".", " ", 6],
+            wrongDigitsB: [1, 4, ".", 3, 8],
+            wrongAnswer: 21.44, wrongAnswer_str: "21.44",
+            wrongDigitsAns: [2, 1, ".", 4, 4],
+            wrongExplanation: "put the 6 in the hundredths column instead of the tenths, then added 6 + 8 = 14 in the wrong column",
+            correctAnswer: 21.98, correctAnswer_str: "21.98",
+            correctColumns: ["Tens", "Ones", ".", "10ths", "100ths"],
+            correctDigitsA: [0, 7, ".", 6, 0],
+            correctDigitsB: [1, 4, ".", 3, 8],
+            correctDigitsAns: [2, 1, ".", 9, 8],
+            correctExplanation: "Write 7.6 as 7.60, then line up the points: 0 + 8 = 8, 6 + 3 = 9, 7 + 4 = 11 (write 1 carry 1), 0 + 1 + 1 = 2. Answer: 21.98",
+            interactNumA_raw: "6.5", interactNumB_raw: "11.72",
+            interactNumA_str: "6.50", interactNumB_str: "11.72",
+            interactAnswer: 18.22, interactAnswer_str: "18.22"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you spot ${v.name}'s mistake?`,
+            body: (v) => `${v.name} ${v.scenario}.\n\nBut the answer is **wrong**! The most common mistake in decimal addition is something really sneaky. Can you see what went wrong?`,
+            visual: {
+              component: "PlaceValueChart",
+              props: (v) => ({
+                columns: v.wrongColumns,
+                rows: [
+                  { label: v.numA_raw, values: v.wrongDigitsA },
+                  { label: "+ " + v.numB_raw, values: v.wrongDigitsB },
+                  { label: "Wrong!", values: v.wrongDigitsAns }
+                ],
+                highlight: []
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The decimal points weren't lined up!",
+            bodyParts: [
+              {
+                type: 'text',
+                content: (v) => `${v.name} ${v.wrongExplanation}. When you push digits to the right without lining up the decimal points, you're adding **tenths to hundredths** — that's like adding apples to oranges!`
+              },
+              {
+                type: 'visual',
+                component: 'PlaceValueChart',
+                props: (v) => ({
+                  columns: v.wrongColumns,
+                  rows: [
+                    { label: v.numA_raw, values: v.wrongDigitsA },
+                    { label: "+ " + v.numB_raw, values: v.wrongDigitsB },
+                    { label: "Wrong!", values: v.wrongDigitsAns }
+                  ],
+                  highlight: []
+                })
+              },
+              {
+                type: 'text',
+                content: () => `Here's the correct way — **line up the decimal points** and pad with zeros:`
+              },
+              {
+                type: 'visual',
+                component: 'PlaceValueChart',
+                props: (v) => ({
+                  columns: v.correctColumns,
+                  rows: [
+                    { label: v.numA_str, values: v.correctDigitsA },
+                    { label: "+ " + v.numB_str, values: v.correctDigitsB },
+                    { label: "Correct!", values: v.correctDigitsAns }
+                  ],
+                  highlight: []
+                })
+              },
+              {
+                type: 'visual',
+                component: 'WorkedExample',
+                props: (v) => ({
+                  steps: v.correctExplanation.split('. ').filter(s => s.trim()).map(s => ({
+                    text: s.replace(/\.$/, '').trim(),
+                    why: ""
+                  })),
+                  allRevealed: true
+                })
+              }
+            ],
+            interaction: {
+              type: "true-false",
+              statements: () => [
+                { text: "When adding decimals, you must line up the decimal points before adding", answer: true, explanation: "Always line up the points so tenths are under tenths and hundredths under hundredths. \u2713" },
+                { text: "If one number has fewer decimal places, you should line up the last digits on the right", answer: false, explanation: "Never right-align the digits! Instead, pad with zeros so both numbers have the same number of decimal places, then line up the points." }
+              ]
+            }
+          },
+          {
+            type: "interact",
+            title: () => "What's the correct answer?",
+            body: (v) => `What is **${v.interactNumA_raw} + ${v.interactNumB_raw}**?\n\nRemember to line up the decimal points first!`,
+            visual: {
+              component: "PlaceValueChart",
+              props: (v) => ({
+                columns: v.correctColumns,
+                rows: [
+                  { label: v.interactNumA_str, values: v.interactNumA_str.split("").map(c => c === "." ? "." : c === " " ? " " : Number(c)) },
+                  { label: "+ " + v.interactNumB_str, values: v.interactNumB_str.split("").map(c => c === "." ? "." : c === " " ? " " : Number(c)) }
+                ],
+                highlight: []
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.interactNumA_raw} + ${v.interactNumB_raw} = ?`,
+              getOptions: (v) => decimalDistractors(v.interactAnswer),
+              correctAnswer: (v) => v.interactAnswer,
+              feedback: {
+                correct: (v) => `Well done! **${v.interactNumA_raw} + ${v.interactNumB_raw} = ${v.interactAnswer_str}**. You lined up the decimal points like a pro! \u2713`,
+                incorrect: (v) => `Not quite! ${v.correctExplanation.split('. ')[0]}. The correct answer is **${v.interactAnswer_str}**. Always line up the decimal points first!`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The number one rule: line up the points!",
+            body: () => `The most common mistake in decimal addition is **not lining up the decimal points**. Here's how to avoid it:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "ALWAYS line up the decimal points, not the last digits", why: "Tenths must be under tenths, hundredths under hundredths" },
+                  { text: "If one number has fewer decimal places, pad with zeros", why: "e.g. 3.4 becomes 3.40 before adding to 0.56" },
+                  { text: "Then add from the right, carrying as normal", why: "It's the same as whole-number addition once the points are lined up" },
+                  { text: "Check: is your answer sensible?", why: "3.4 + 0.56 should be close to 4, not close to 1! \u2713" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];  // end of decimalsSubConcepts

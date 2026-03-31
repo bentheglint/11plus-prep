@@ -1261,7 +1261,7 @@
     },
     {
       "questionId": 2,
-      "subConceptId": "part-whole",
+      "subConceptId": "function-categories",
       "confidence": "high"
     },
     {
@@ -1311,7 +1311,7 @@
     },
     {
       "questionId": 12,
-      "subConceptId": "part-whole",
+      "subConceptId": "animal-home",
       "confidence": "high"
     },
     {
@@ -6123,42 +6123,42 @@
     },
     {
       "questionId": 149,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 150,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 151,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 152,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 153,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 154,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 155,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 156,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
@@ -6328,42 +6328,42 @@
     },
     {
       "questionId": 149,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 150,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 151,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 152,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 153,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 154,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 155,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {
       "questionId": 156,
-      "subConceptId": "mirror-code",
+      "subConceptId": "mirror-pairs",
       "confidence": "high"
     },
     {

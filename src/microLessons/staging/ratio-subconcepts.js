@@ -2304,5 +2304,412 @@ export const ratioSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 8: master-sharing-ratio
+  // Sharing a total amount in a given ratio
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "master-sharing-ratio",
+    name: "Sharing in a Ratio",
+    category: "core",
+    lessons: [
+      // ---- Lesson A: Step by Step ----
+      {
+        id: "master-sharing-ratio-step",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to share a total amount in a given ratio using the 'add, divide, multiply' method",
+          "How to handle three-part ratios the same way",
+          "How to work backwards when you know one person's share"
+        ],
+        variableSets: [
+          {
+            name: "Grace",
+            scenario: "sharing her birthday money with her brother",
+            itemA: "Grace", itemB: "her brother",
+            ratioA: 3, ratioB: 2,
+            totalParts: 5,
+            total: 120,
+            onePart: 24,
+            shareA: 72, shareB: 48,
+            unit: "£",
+            currency: true,
+            colourA: "#c084fc", colourB: "#818cf8",
+            // Three-part ratio for teach extension
+            threePartScenario: "pocket money between three cousins",
+            threeItemA: "Aisha", threeItemB: "Ben", threeItemC: "Charlie",
+            threeRatioA: 2, threeRatioB: 3, threeRatioC: 5,
+            threeTotalParts: 10,
+            threeTotal: 60,
+            threeOnePart: 6,
+            threeShareA: 12, threeShareB: 18, threeShareC: 30,
+            // Interact: working backwards from one share
+            interactItemA: "Daisy", interactItemB: "Evie",
+            interactRatioA: 4, interactRatioB: 3,
+            interactTotalParts: 7,
+            interactKnownShare: 28,
+            interactKnownSide: "Daisy",
+            interactKnownRatio: 4,
+            interactOnePart: 7,
+            interactTotal: 49,
+            interactOtherShare: 21,
+            interactOtherSide: "Evie"
+          },
+          {
+            name: "Mr Patel",
+            scenario: "dividing prize money between two classes",
+            itemA: "Class A", itemB: "Class B",
+            ratioA: 5, ratioB: 3,
+            totalParts: 8,
+            total: 200,
+            onePart: 25,
+            shareA: 125, shareB: 75,
+            unit: "£",
+            currency: true,
+            colourA: "#c084fc", colourB: "#818cf8",
+            threePartScenario: "baking ingredients between three tables",
+            threeItemA: "Table 1", threeItemB: "Table 2", threeItemC: "Table 3",
+            threeRatioA: 1, threeRatioB: 2, threeRatioC: 3,
+            threeTotalParts: 6,
+            threeTotal: 90,
+            threeOnePart: 15,
+            threeShareA: 15, threeShareB: 30, threeShareC: 45,
+            interactItemA: "Year 5", interactItemB: "Year 6",
+            interactRatioA: 2, interactRatioB: 5,
+            interactTotalParts: 7,
+            interactKnownShare: 50,
+            interactKnownSide: "Year 6",
+            interactKnownRatio: 5,
+            interactOnePart: 10,
+            interactTotal: 70,
+            interactOtherShare: 20,
+            interactOtherSide: "Year 5"
+          },
+          {
+            name: "Mrs Khan",
+            scenario: "splitting stickers between two pupils as a reward",
+            itemA: "Finn", itemB: "Rosie",
+            ratioA: 7, ratioB: 3,
+            totalParts: 10,
+            total: 80,
+            onePart: 8,
+            shareA: 56, shareB: 24,
+            unit: "stickers",
+            currency: false,
+            colourA: "#c084fc", colourB: "#818cf8",
+            threePartScenario: "sweets between three children",
+            threeItemA: "Jake", threeItemB: "Mia", threeItemC: "Oliver",
+            threeRatioA: 3, threeRatioB: 4, threeRatioC: 3,
+            threeTotalParts: 10,
+            threeTotal: 50,
+            threeOnePart: 5,
+            threeShareA: 15, threeShareB: 20, threeShareC: 15,
+            interactItemA: "Hassan", interactItemB: "Priya",
+            interactRatioA: 3, interactRatioB: 2,
+            interactTotalParts: 5,
+            interactKnownShare: 18,
+            interactKnownSide: "Hassan",
+            interactKnownRatio: 3,
+            interactOnePart: 6,
+            interactTotal: 30,
+            interactOtherShare: 12,
+            interactOtherSide: "Priya"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `How do you share ${v.currency ? '£' : ''}${v.total}${v.currency ? '' : ' ' + v.unit} in the ratio ${v.ratioA}:${v.ratioB}?`,
+            body: (v) => `${v.name} is ${v.scenario}. The split is **${v.ratioA}:${v.ratioB}** — and there are **${v.currency ? '£' : ''}${v.total}${v.currency ? '' : ' ' + v.unit}** to share.\n\nThis exact question pops up in nearly every 11+ paper. Get the method right and it's easy marks every time!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.ratioA, label: `${v.itemA}: ?`, color: v.colourA },
+                  { value: v.ratioB, label: `${v.itemB}: ?`, color: v.colourB }
+                ],
+                totalLabel: `Total: ${v.currency ? '£' : ''}${v.total}${v.currency ? '' : ' ' + v.unit}`,
+                showValues: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Add, divide, multiply!",
+            body: (v) => `Three steps every time — no matter how big the numbers or how many parts the ratio has.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Step 1 — Add the parts: ${v.ratioA} + ${v.ratioB} = ${v.totalParts}`, why: `The ratio has ${v.totalParts} equal parts altogether` },
+                  { text: `Step 2 — Divide the total: ${v.total} ÷ ${v.totalParts} = ${v.onePart}`, why: `Each part is worth ${v.onePart}` },
+                  { text: `Step 3 — Multiply each side:`, why: "Give each person their share" },
+                  { text: `${v.itemA}: ${v.ratioA} × ${v.onePart} = ${v.shareA}`, result: `${v.currency ? '£' : ''}${v.shareA}` },
+                  { text: `${v.itemB}: ${v.ratioB} × ${v.onePart} = ${v.shareB}`, result: `${v.currency ? '£' : ''}${v.shareB}` },
+                  { text: `Check: ${v.shareA} + ${v.shareB} = ${v.total} ✓`, result: "It adds up!" }
+                ]
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: (v) => `Working backwards — how much for ${v.interactOtherSide}?`,
+            body: (v) => `${v.interactKnownSide} and ${v.interactOtherSide} share in the ratio **${v.interactRatioA}:${v.interactRatioB}**.\n\n${v.interactKnownSide} gets **${v.interactKnownShare}**. How much does **${v.interactOtherSide}** get?\n\nHint: find what one part is worth first!`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.interactRatioA, label: `${v.interactItemA}: ${v.interactKnownSide === v.interactItemA ? v.interactKnownShare : '?'}`, color: v.colourA },
+                  { value: v.interactRatioB, label: `${v.interactItemB}: ${v.interactKnownSide === v.interactItemB ? v.interactKnownShare : '?'}`, color: v.colourB }
+                ],
+                totalLabel: `One part = ${v.interactKnownShare} ÷ ${v.interactKnownRatio} = ${v.interactOnePart}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `How much does ${v.interactOtherSide} get?`,
+              getOptions: (v) => generateDistractors(v.interactOtherShare),
+              correctAnswer: (v) => v.interactOtherShare,
+              feedback: {
+                correct: (v) => `Brilliant! One part = ${v.interactKnownShare} ÷ ${v.interactKnownRatio} = ${v.interactOnePart}. So ${v.interactOtherSide} = ${v.interactRatioB} × ${v.interactOnePart} = **${v.interactOtherShare}**! ✓`,
+                incorrect: (v) => `Not quite! One part = ${v.interactKnownShare} ÷ ${v.interactKnownRatio} = ${v.interactOnePart}. Then ${v.interactOtherSide} = ${v.interactRatioB} × ${v.interactOnePart} = **${v.interactOtherShare}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Sharing in a ratio — your recipe!",
+            bodyParts: [
+              {
+                type: 'text',
+                content: () => `This works for two-part ratios, three-part ratios — any size! And if you know one person's share, just find one part by dividing, then multiply to find the rest.`
+              },
+              {
+                type: 'visual',
+                component: 'BarModel',
+                props: () => ({
+                  segments: [
+                    { value: 3, label: 'A: £72', color: '#c084fc' },
+                    { value: 2, label: 'B: £48', color: '#818cf8' }
+                  ],
+                  totalLabel: 'Ratio 3:2, total £120. One part = £24',
+                  showValues: true
+                })
+              },
+              {
+                type: 'visual',
+                component: 'WorkedExample',
+                props: () => ({
+                  steps: [
+                    { text: "Step 1: ADD the ratio numbers to find total parts", why: "3 + 2 = 5 parts" },
+                    { text: "Step 2: DIVIDE the total by the number of parts", why: "£120 ÷ 5 = £24 per part" },
+                    { text: "Step 3: MULTIPLY each ratio number by one part", why: "A = 3 × £24 = £72, B = 2 × £24 = £48" },
+                    { text: "Step 4: CHECK — do the shares add up to the total?", why: "£72 + £48 = £120 ✓" }
+                  ],
+                  allRevealed: true
+                })
+              }
+            ],
+            interaction: null
+          }
+        ]
+      },
+
+      // ---- Lesson B: Spot the Mistake ----
+      {
+        id: "master-sharing-ratio-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "Why forgetting to add all the ratio parts is the most common sharing mistake",
+          "How to spot when someone has divided by the wrong number"
+        ],
+        variableSets: [
+          {
+            name: "Tom",
+            scenario: "sharing £150 between himself and his sister in the ratio 2:3",
+            itemA: "Tom", itemB: "his sister",
+            ratioA: 2, ratioB: 3,
+            totalParts: 5,
+            total: 150,
+            onePart: 30,
+            shareA: 60, shareB: 90,
+            wrongShareA: 75, wrongShareB: 50,
+            mistake: "divided £150 by 2 to get £75 for himself, and divided £150 by 3 to get £50 for his sister — he divided the total by each ratio number separately instead of adding the parts first",
+            checkSum: 125,
+            unit: "£",
+            currency: true,
+            colourA: "#c084fc", colourB: "#818cf8",
+            interactItemA: "Maisie", interactItemB: "Leo",
+            interactRatioA: 3, interactRatioB: 7,
+            interactTotalParts: 10,
+            interactTotal: 80,
+            interactOnePart: 8,
+            interactCorrectAnswer: 24,
+            interactCorrectOther: 56,
+            interactAskSide: "Maisie",
+            interactAskRatio: 3
+          },
+          {
+            name: "Ella",
+            scenario: "sharing 60 marbles with her cousin in the ratio 4:1",
+            itemA: "Ella", itemB: "her cousin",
+            ratioA: 4, ratioB: 1,
+            totalParts: 5,
+            total: 60,
+            onePart: 12,
+            shareA: 48, shareB: 12,
+            wrongShareA: 15, wrongShareB: 60,
+            mistake: "divided 60 by 4 to get 15 for herself, and gave all 60 to her cousin — she divided the total by each ratio number instead of adding 4 + 1 = 5 first",
+            checkSum: 75,
+            unit: "marbles",
+            currency: false,
+            colourA: "#c084fc", colourB: "#818cf8",
+            interactItemA: "Jake", interactItemB: "Lily",
+            interactRatioA: 3, interactRatioB: 2,
+            interactTotalParts: 5,
+            interactTotal: 45,
+            interactOnePart: 9,
+            interactCorrectAnswer: 27,
+            interactCorrectOther: 18,
+            interactAskSide: "Jake",
+            interactAskRatio: 3
+          },
+          {
+            name: "Zara",
+            scenario: "sharing £180 of pocket money savings with her brother in the ratio 5:4",
+            itemA: "Zara", itemB: "her brother",
+            ratioA: 5, ratioB: 4,
+            totalParts: 9,
+            total: 180,
+            onePart: 20,
+            shareA: 100, shareB: 80,
+            wrongShareA: 36, wrongShareB: 45,
+            mistake: "divided £180 by 5 to get £36 and £180 by 4 to get £45 — she divided the total by each ratio number instead of finding total parts (5 + 4 = 9) and dividing 180 ÷ 9 = 20 per part",
+            checkSum: 81,
+            unit: "£",
+            currency: true,
+            colourA: "#c084fc", colourB: "#818cf8",
+            interactItemA: "Sophie", interactItemB: "Alfie",
+            interactRatioA: 3, interactRatioB: 5,
+            interactTotalParts: 8,
+            interactTotal: 120,
+            interactOnePart: 15,
+            interactCorrectAnswer: 45,
+            interactCorrectOther: 75,
+            interactAskSide: "Sophie",
+            interactAskRatio: 3
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you spot ${v.name}'s mistake?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\n${v.name} says: **${v.itemA} gets ${v.currency ? '£' : ''}${v.wrongShareA}** and **${v.itemB} gets ${v.currency ? '£' : ''}${v.wrongShareB}**.\n\nQuick check: ${v.wrongShareA} + ${v.wrongShareB} = ${v.checkSum}. But the total should be ${v.total}. Something's gone wrong!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `${v.name}'s working:`, why: "Can you spot the error?" },
+                  { text: `${v.itemA}: ${v.total} ÷ ${v.ratioA} = ${v.wrongShareA}`, why: "Hmm..." },
+                  { text: `${v.itemB}: ${v.total} ÷ ${v.ratioB} = ${v.wrongShareB}`, why: "Hmm..." },
+                  { text: `Check: ${v.wrongShareA} + ${v.wrongShareB} = ${v.checkSum}`, why: `That's not ${v.total}! ✗` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The classic trap: dividing by each ratio number!",
+            body: (v) => `${v.name} ${v.mistake}.\n\nThe correct first step is to **add** the ratio numbers: **${v.ratioA} + ${v.ratioB} = ${v.totalParts}** parts. Then divide: **${v.total} ÷ ${v.totalParts} = ${v.onePart}** per part.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `WRONG: ${v.total} ÷ ${v.ratioA} and ${v.total} ÷ ${v.ratioB}`, why: `Gives ${v.wrongShareA} and ${v.wrongShareB} — doesn't add up to ${v.total}!` },
+                  { text: `RIGHT: Add parts first — ${v.ratioA} + ${v.ratioB} = ${v.totalParts}`, why: "This is the total number of equal shares" },
+                  { text: `One part: ${v.total} ÷ ${v.totalParts} = ${v.onePart}`, result: `Each part is worth ${v.currency ? '£' : ''}${v.onePart}` },
+                  { text: `${v.itemA}: ${v.ratioA} × ${v.onePart} = ${v.shareA}`, result: `${v.currency ? '£' : ''}${v.shareA}` },
+                  { text: `${v.itemB}: ${v.ratioB} × ${v.onePart} = ${v.shareB}`, result: `${v.currency ? '£' : ''}${v.shareB}` },
+                  { text: `Check: ${v.shareA} + ${v.shareB} = ${v.total} ✓`, result: "It adds up!" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: (v) => `How much does ${v.interactAskSide} get?`,
+            body: (v) => `Share **${v.currency ? '£' : ''}${v.interactTotal}${v.currency ? '' : ' ' + v.unit}** in the ratio **${v.interactRatioA}:${v.interactRatioB}**.\n\nTotal parts = **${v.interactTotalParts}**. One part = **${v.interactOnePart}**.\n\nHow much does **${v.interactAskSide}** get?`,
+            visual: {
+              component: "BarModel",
+              props: (v) => ({
+                segments: [
+                  { value: v.interactRatioA, label: `${v.interactItemA}: ?`, color: v.colourA },
+                  { value: v.interactRatioB, label: `${v.interactItemB}: ?`, color: v.colourB }
+                ],
+                totalLabel: `Total: ${v.currency ? '£' : ''}${v.interactTotal}. One part = ${v.interactOnePart}`,
+                showValues: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `${v.interactAskRatio} × ${v.interactOnePart} = ?`,
+              getOptions: (v) => generateDistractors(v.interactCorrectAnswer),
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Superstar! ${v.interactAskRatio} × ${v.interactOnePart} = **${v.interactCorrectAnswer}**. And ${v.interactItemB} gets ${v.interactCorrectOther}. Check: ${v.interactCorrectAnswer} + ${v.interactCorrectOther} = ${v.interactTotal} ✓`,
+                incorrect: (v) => `Not quite! One part = ${v.interactOnePart}. So ${v.interactAskSide} gets ${v.interactAskRatio} × ${v.interactOnePart} = **${v.interactCorrectAnswer}**.`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Don't fall for the sharing trap!",
+            bodyParts: [
+              {
+                type: 'text',
+                content: () => `The number one mistake: **dividing the total by each ratio number separately**. That almost never gives the right answer — and a quick check proves it!`
+              },
+              {
+                type: 'visual',
+                component: 'BarModel',
+                props: () => ({
+                  segments: [
+                    { value: 5, label: 'Zara: £100', color: '#c084fc' },
+                    { value: 4, label: 'Brother: £80', color: '#818cf8' }
+                  ],
+                  totalLabel: 'Ratio 5:4, total £180. One part = £20',
+                  showValues: true
+                })
+              },
+              {
+                type: 'visual',
+                component: 'WorkedExample',
+                props: () => ({
+                  steps: [
+                    { text: "Step 1: ADD the ratio numbers for total parts", why: "Never skip this step — it's where most mistakes happen" },
+                    { text: "Step 2: DIVIDE the total by total parts", why: "This gives you one part's value" },
+                    { text: "Step 3: MULTIPLY each ratio number by one part", why: "Each person gets their share" },
+                    { text: "Step 4: CHECK — shares must add up to the total", why: "If they don't, go back to step 1 ✓" }
+                  ],
+                  allRevealed: true
+                })
+              }
+            ],
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 ];

@@ -137,7 +137,7 @@ const vrData = {
                       setA: ["laborious","enjoyable","frequent"],
                       setB: ["sudden","arduous","straightforward"],
                       correctPair: [0,1],
-                      explanation: "'Laborious' and 'arduous' both mean requiring a lot of hard work — exhausting tasks. 'Enjoyable' means pleasant. 'Popular' means well-liked, 'straightforward' means easy, 'famous' means well known. ✓"
+                      explanation: "'Laborious' and 'arduous' both mean requiring a lot of hard work — exhausting tasks. 'Enjoyable' means pleasant, 'frequent' means happening often. 'Sudden' means happening quickly without warning, 'straightforward' means easy or uncomplicated. ✓"
               },
               {
                       id: 14,
@@ -357,7 +357,7 @@ const vrData = {
                       setA: ["laugh","sneeze","yawn"],
                       setB: ["cough","giggle","hiccup"],
                       correctPair: [0,1],
-                      explanation: "'Laugh' and 'giggle' both mean making sounds of amusement. A giggle is a lighter, quieter laugh. 'Sneeze', 'yawn', 'cough', and 'hiccup' are involuntary body sounds, not about amusement. ✓"
+                      explanation: "Laugh and giggle both mean to make sounds showing amusement — they are synonyms. ✓"
               },
               {
                       id: 36,
@@ -1333,7 +1333,7 @@ const vrData = {
                       setA: ["bright","noisy","heavy"],
                       setB: ["wooden","clever","silent"],
                       correctPair: [1,2],
-                      explanation: "'Noisy' means making a lot of sound, while 'silent' means completely without sound — direct opposites. 'Bright' and 'clever' are different types of quality — 'bright' here means luminous, 'clever' means intelligent. 'Heavy' and 'wooden' describe different physical properties, not opposites. ✓"
+                      explanation: "'Noisy' means making a lot of sound, while 'silent' means completely without sound — direct opposites. The other words describe different qualities and do not form opposite pairs. ✓"
               },
               {
                       id: 8,
@@ -1473,7 +1473,7 @@ const vrData = {
                       setA: ["hot","green","round"],
                       setB: ["flat","cold","bright"],
                       correctPair: [0,1],
-                      explanation: "'Hot' means having a high temperature, while 'cold' means having a low temperature — they sit at opposite ends of the temperature scale. 'Green' and 'bright' are both colours or visual qualities, not opposites. 'Round' and 'flat' describe shapes but aren't in the standard opposite pairing here. ✓"
+                      explanation: "'Hot' means having a high temperature, while 'cold' means having a low temperature — they sit at opposite ends of the temperature scale. 'Green' and 'bright' are both visual qualities, not opposites. 'Round' and 'flat' don't describe the same quality on opposite ends — round describes a shape, while flat describes a surface. ✓"
               },
               {
                       id: 22,
@@ -4520,7 +4520,7 @@ const vrData = {
                               2,
                               4
                       ],
-                      explanation: "Table, chair, and sofa are all furniture you sit at or on. A lamp provides light and a wardrobe stores clothes — neither is for sitting. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Table, chair, and sofa are all pieces of furniture designed for sitting. A lamp gives light and a wardrobe stores clothes — neither is for sitting. ✓"
               },
               {
                       id: 3,
@@ -4664,7 +4664,7 @@ const vrData = {
                               1,
                               4
                       ],
-                      explanation: "Whisper, shout, and announce all involve speaking or making a sound. Listen and hear both involve receiving sound, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Whisper, shout, and announce all involve speaking or making a sound. Listen and hear both involve receiving sound, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 11,
@@ -4808,7 +4808,7 @@ const vrData = {
                               1,
                               4
                       ],
-                      explanation: "Serene, tranquil, and placid all mean calm and peaceful. Furious and irate both mean very angry, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Serene, tranquil, and placid all mean calm and peaceful. Furious and irate both mean very angry, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 19,
@@ -4899,7 +4899,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["pear","lettuce","mango","spinach","plum"],
                       correctPair: [1,3],
-                      explanation: "Pear, mango, and plum are all fruits. Lettuce and spinach are leafy vegetables, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Pear, mango, and plum are all fruits. Lettuce and spinach are leafy vegetables, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 27,
@@ -4971,7 +4971,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["cow","tiger","lion","leopard","sheep"],
                       correctPair: [0,4],
-                      explanation: "Tiger, lion, and leopard are all big cats. Cow and sheep are farm animals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Tiger, lion, and leopard are all big cats. Cow and sheep are farm animals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 35,
@@ -5043,7 +5043,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["eye","spoon","ear","fork","nose"],
                       correctPair: [1,3],
-                      explanation: "Eye, ear, and nose are all parts of the face. Spoon and fork are items of cutlery, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Eye, ear, and nose are all parts of the face. Spoon and fork are items of cutlery, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 43,
@@ -5115,7 +5115,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["Saturn","comet","Mars","asteroid","Jupiter"],
                       correctPair: [1,3],
-                      explanation: "Saturn, Mars, and Jupiter are all planets in our solar system. Comet and asteroid are smaller objects that orbit the Sun, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Saturn, Mars, and Jupiter are all planets in our solar system. Comet and asteroid are smaller objects that orbit the Sun, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 51,
@@ -5187,7 +5187,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["bungalow","flat","cottage","tent","caravan"],
                       correctPair: [3,4],
-                      explanation: "Bungalow, flat, and cottage are all permanent homes. Tent and caravan are temporary or movable shelters, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Bungalow, flat, and cottage are all permanent homes. Tent and caravan are temporary or movable shelters, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 59,
@@ -5259,7 +5259,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["hurricane","earthquake","tornado","tsunami","cyclone"],
                       correctPair: [1,3],
-                      explanation: "Hurricane, tornado, and cyclone are all powerful wind storms. Earthquake and tsunami are caused by movements of the Earth's crust, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Hurricane, tornado, and cyclone are all powerful wind storms. Earthquake and tsunami are caused by movements of the Earth's crust, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 67,
@@ -5331,7 +5331,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["solar","coal","oil","wind","gas"],
                       correctPair: [0,3],
-                      explanation: "Coal, oil, and gas are all fossil fuels. Solar and wind are renewable energy sources, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Coal, oil, and gas are all fossil fuels. Solar and wind are renewable energy sources, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 75,
@@ -5403,7 +5403,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["scarce","abundant","plentiful","rare","ample"],
                       correctPair: [0,3],
-                      explanation: "Abundant, plentiful, and ample all mean there is a lot of something. Scarce and rare both mean there is very little, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Abundant, plentiful, and ample all mean there is a lot of something. Scarce and rare both mean there is very little, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 83,
@@ -5475,7 +5475,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["acre","decade","hectare","century","square mile"],
                       correctPair: [1,3],
-                      explanation: "Acre, hectare, and square mile are all units of area. Decade and century are units of time, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Acre, hectare, and square mile are all units of area. Decade and century are units of time, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 91,
@@ -5547,7 +5547,7 @@ const vrData = {
                       question: "Find the two words that are the odd ones out.",
                       options: ["immune","nervous","cumulus","digestive","nimbus"],
                       correctPair: [2,4],
-                      explanation: "Immune, nervous, and digestive are all systems of the human body. Cumulus and nimbus are types of cloud, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+                      explanation: "Immune, nervous, and digestive are all systems of the human body. Cumulus and nimbus are types of cloud, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
               },
               {
                       id: 99,
@@ -5656,7 +5656,7 @@ const vrData = {
             2,
             4
           ],
-          "explanation": "Gloves, scarf, and coat are all warm winter clothing. Sandals and shorts are worn in summer, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+          "explanation": "Gloves, scarf, and coat are all warm winter clothing. Sandals and shorts are worn in summer, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
         },
         {
           "id": 106,
@@ -5800,7 +5800,7 @@ const vrData = {
             0,
             4
           ],
-          "explanation": "Oxygen, helium, and nitrogen are all gases at room temperature. Iron and lead are solid metals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+          "explanation": "Oxygen, helium, and nitrogen are all gases at room temperature. Iron and lead are solid metals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
         },
         {
           "id": 114,
@@ -5944,7 +5944,7 @@ const vrData = {
             0,
             4
           ],
-          "explanation": "Famine, plague, and drought are all disasters that cause suffering. Treaty and alliance are both agreements between groups, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+          "explanation": "Famine, plague, and drought are all disasters that cause suffering. Treaty and alliance are both agreements between groups, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'. ✓"
         },
         {
           "id": 122,
@@ -6012,12 +6012,12 @@ const vrData = {
                       question: "Which word can go in front of both 'light' and 'rise' to make two new words?",
                       options: [
                               "Day",
-                              "Sun",
                               "Cloud",
+                              "Sun",
                               "Star",
                               "Flash"
                       ],
-                      correct: 1,
+                      correct: 2,
                       explanation: "Sun + light = sunlight, and sun + rise = sunrise. Both are common compound words. 'Day' works with 'light' (daylight) but not 'rise'. 'Star' works with 'light' (starlight) but not 'rise'. Only 'sun' works with BOTH. ✓"
               },
               {
@@ -6026,12 +6026,12 @@ const vrData = {
                       question: "Which word can go after both 'book' and 'suit' to make two new words?",
                       options: [
                               "Shelf",
-                              "Case",
-                              "Step",
                               "Mark",
+                              "Step",
+                              "Case",
                               "Handle"
                       ],
-                      correct: 1,
+                      correct: 3,
                       explanation: "Book + case = bookcase, and suit + case = suitcase. Both are common compound words for containers. ✓"
               },
               {
@@ -6042,10 +6042,10 @@ const vrData = {
                               "Rain",
                               "Wind",
                               "Snow",
-                              "Water",
-                              "Sound"
+                              "Sound",
+                              "Water"
                       ],
-                      correct: 3,
+                      correct: 4,
                       explanation: "Water + fall = waterfall, and water + proof = waterproof. Both are common compound words. ✓"
               },
               {
@@ -6053,13 +6053,13 @@ const vrData = {
                       difficulty: 1,
                       question: "Which word can go after both 'black' and 'blue' to make two new words?",
                       options: [
-                              "Bird",
                               "Berry",
+                              "Bird",
                               "Sky",
                               "Light",
                               "Bell"
                       ],
-                      correct: 1,
+                      correct: 0,
                       explanation: "Black + berry = blackberry, and blue + berry = blueberry. Both are types of fruit and common compound words. ✓"
               },
               {
@@ -6067,13 +6067,13 @@ const vrData = {
                       difficulty: 1,
                       question: "Which word can go in front of both 'bow' and 'coat' to make two new words?",
                       options: [
-                              "Rain",
                               "Sun",
                               "Snow",
+                              "Rain",
                               "Wind",
                               "Over"
                       ],
-                      correct: 0,
+                      correct: 2,
                       explanation: "Rain + bow = rainbow, rain + coat = raincoat. ✓"
               },
               {
@@ -6082,12 +6082,12 @@ const vrData = {
                       question: "Which word can go after both 'foot' and 'base' to make two new words?",
                       options: [
                               "Step",
-                              "Ball",
-                              "Board",
                               "Print",
+                              "Board",
+                              "Ball",
                               "Line"
                       ],
-                      correct: 1,
+                      correct: 3,
                       explanation: "Foot + ball = football, base + ball = baseball. Both are sports. ✓"
               },
               {
@@ -6110,12 +6110,12 @@ const vrData = {
                       question: "Which word can go after both 'arm' and 'wheel' to make two new words?",
                       options: [
                               "Rest",
-                              "Chair",
+                              "Less",
                               "Band",
                               "Pit",
-                              "Less"
+                              "Chair"
                       ],
-                      correct: 1,
+                      correct: 4,
                       explanation: "Arm + chair = armchair, wheel + chair = wheelchair. Both are types of chair. ✓"
               },
               {
@@ -6123,14 +6123,14 @@ const vrData = {
                       difficulty: 2,
                       question: "Which word can go after both 'any' and 'every' to make two new words?",
                       options: [
-                              "Place",
-                              "Day",
                               "Where",
+                              "Day",
+                              "Place",
                               "Part",
                               "How"
                       ],
-                      correct: 2,
-                      explanation: "Any + where = anywhere, every + where = everywhere. Both are common compound words about places. 'Day' works with 'every' (everyday) but not 'any'. ✓"
+                      correct: 0,
+                      explanation: "Any + where = anywhere, every + where = everywhere. Both are common compound words about places. While 'anyplace' exists in American English, 'everyday' and 'everywhere' are the standard British compound words tested in GL exams. ✓"
               },
               {
                       id: 10,
@@ -6152,9 +6152,9 @@ const vrData = {
                       question: "Which word can go in front of both 'rise' and 'set' to make two new words?",
                       options: [
                               "Moon",
-                              "Star",
-                              "Sun",
                               "Day",
+                              "Sun",
+                              "Star",
                               "Cloud"
                       ],
                       correct: 2,
@@ -6179,13 +6179,13 @@ const vrData = {
                       difficulty: 2,
                       question: "Which word can go in front of both 'print' and 'step' to make two new words?",
                       options: [
-                              "Foot",
+                              "Toe",
                               "Finger",
                               "Hand",
                               "Thumb",
-                              "Toe"
+                              "Foot"
                       ],
-                      correct: 0,
+                      correct: 4,
                       explanation: "Foot + print = footprint, foot + step = footstep. Both relate to walking. ✓"
               },
               {
@@ -6193,13 +6193,13 @@ const vrData = {
                       difficulty: 1,
                       question: "Which word can go after both 'tooth' and 'hair' to make two new words?",
                       options: [
-                              "Paste",
                               "Brush",
+                              "Paste",
                               "Comb",
                               "Pick",
                               "Wash"
                       ],
-                      correct: 1,
+                      correct: 0,
                       explanation: "Tooth + brush = toothbrush, hair + brush = hairbrush. Both are grooming tools. ✓"
               },
               {
@@ -6221,13 +6221,13 @@ const vrData = {
                       difficulty: 3,
                       question: "Which word can go in front of both 'scape' and 'lord' to make two new words?",
                       options: [
-                              "Sea",
-                              "Land",
-                              "Over",
                               "Time",
+                              "Over",
+                              "Land",
+                              "Sea",
                               "War"
                       ],
-                      correct: 1,
+                      correct: 2,
                       explanation: "Land + scape = landscape, land + lord = landlord. ✓"
               },
               {
@@ -6250,12 +6250,12 @@ const vrData = {
                       question: "Which word can go in front of both 'berry' and 'bird' to make two new words?",
                       options: [
                               "Blue",
-                              "Black",
+                              "Green",
                               "Red",
                               "Snow",
-                              "Green"
+                              "Black"
                       ],
-                      correct: 1,
+                      correct: 4,
                       explanation: "Black + berry = blackberry, black + bird = blackbird. ✓"
               },
               {
@@ -6291,24 +6291,24 @@ const vrData = {
                       id: 21,
                       difficulty: 1,
                       question: "Which word can go in front of both 'ball' and 'line' to make two new words?",
-                      options: ["Foot","Base","Goal","Net","Round"],
-                      correct: 1,
+                      options: ["Foot","Goal","Base","Net","Round"],
+                      correct: 2,
                       explanation: "Base + ball = baseball, and base + line = baseline. Both are common compound words. ✓"
               },
               {
                       id: 22,
                       difficulty: 1,
                       question: "Which word can go in front of both 'bag' and 'shake' to make two new words?",
-                      options: ["Paper","Money","Hand","Dust","Sand"],
-                      correct: 2,
+                      options: ["Paper","Money","Dust","Hand","Sand"],
+                      correct: 3,
                       explanation: "Hand + bag = handbag, and hand + shake = handshake. Both are common compound words. ✓"
               },
               {
                       id: 23,
                       difficulty: 1,
                       question: "Which word can go in front of both 'pot' and 'spoon' to make two new words?",
-                      options: ["Tea","Cup","Soup","Stew","Pan"],
-                      correct: 0,
+                      options: ["Pan","Cup","Soup","Stew","Tea"],
+                      correct: 4,
                       explanation: "Tea + pot = teapot, and tea + spoon = teaspoon. Both are common kitchen compound words. ✓"
               },
               {
@@ -6323,56 +6323,56 @@ const vrData = {
                       id: 25,
                       difficulty: 1,
                       question: "Which word can go in front of both 'brush' and 'paste' to make two new words?",
-                      options: ["Hair","Paint","Glue","Nail","Tooth"],
-                      correct: 4,
+                      options: ["Hair","Tooth","Glue","Nail","Paint"],
+                      correct: 1,
                       explanation: "Tooth + brush = toothbrush, and tooth + paste = toothpaste. Both are common compound words. ✓"
               },
               {
                       id: 26,
                       difficulty: 1,
                       question: "Which word can go in front of both 'brow' and 'lash' to make two new words?",
-                      options: ["Eye","Hair","Back","Fore","Whip"],
-                      correct: 0,
+                      options: ["Back","Hair","Eye","Fore","Whip"],
+                      correct: 2,
                       explanation: "Eye + brow = eyebrow, and eye + lash = eyelash. Both are common compound words. ✓"
               },
               {
                       id: 27,
                       difficulty: 1,
                       question: "Which word can go after both 'butter' and 'egg' to make two new words?",
-                      options: ["Milk","Cup","Dish","Pot","Pan"],
-                      correct: 1,
+                      options: ["Milk","Pot","Dish","Cup","Pan"],
+                      correct: 3,
                       explanation: "Butter + cup = buttercup, and egg + cup = eggcup. Both are common compound words. ✓"
               },
               {
                       id: 28,
                       difficulty: 1,
                       question: "Which word can go in front of both 'coat' and 'night' to make two new words?",
-                      options: ["Rain","Top","Dark","Over","Bed"],
-                      correct: 3,
+                      options: ["Rain","Top","Dark","Bed","Over"],
+                      correct: 4,
                       explanation: "Over + coat = overcoat, and over + night = overnight. Both are common compound words. ✓"
               },
               {
                       id: 29,
                       difficulty: 1,
                       question: "Which word can go in front of both 'thing' and 'where' to make two new words?",
-                      options: ["Over","Under","Some","Out","Up"],
-                      correct: 2,
+                      options: ["Some","Under","Over","Out","Up"],
+                      correct: 0,
                       explanation: "Some + thing = something, and some + where = somewhere. Both are common compound words. ✓"
               },
               {
                       id: 30,
                       difficulty: 1,
                       question: "Which word can go in front of both 'day' and 'thing' to make two new words?",
-                      options: ["Sun","All","Birth","Yester","Every"],
-                      correct: 4,
+                      options: ["Sun","Every","Birth","Yester","All"],
+                      correct: 1,
                       explanation: "Every + day = everyday, and every + thing = everything. Both are common compound words. ✓"
               },
               {
                       id: 31,
                       difficulty: 1,
                       question: "Which word can go in front of both 'port' and 'craft' to make two new words?",
-                      options: ["Sea","Air","War","Ship","Space"],
-                      correct: 1,
+                      options: ["Sea","War","Air","Ship","Space"],
+                      correct: 2,
                       explanation: "Air + port = airport, and air + craft = aircraft. Both are common compound words. ✓"
               },
               {
@@ -6387,544 +6387,544 @@ const vrData = {
                       id: 33,
                       difficulty: 1,
                       question: "Which word can go in front of both 'pack' and 'ground' to make two new words?",
-                      options: ["Back","Camp","Play","Set","Fore"],
-                      correct: 0,
+                      options: ["Fore","Camp","Play","Set","Back"],
+                      correct: 4,
                       explanation: "Back + pack = backpack, and back + ground = background. Both are common compound words. ✓"
               },
               {
                       id: 34,
                       difficulty: 1,
                       question: "Which word can go after both 'air' and 'high' to make two new words?",
-                      options: ["Road","Path","Way","Lane","Route"],
-                      correct: 2,
+                      options: ["Way","Path","Road","Lane","Route"],
+                      correct: 0,
                       explanation: "Air + way = airway, and high + way = highway. Both are common compound words. ✓"
               },
               {
                       id: 35,
                       difficulty: 1,
                       question: "Which word can go after both 'tooth' and 'heart' to make two new words?",
-                      options: ["Pain","Hurt","Sore","Throb","Ache"],
-                      correct: 4,
+                      options: ["Pain","Ache","Sore","Throb","Hurt"],
+                      correct: 1,
                       explanation: "Tooth + ache = toothache, and heart + ache = heartache. Both are common compound words. ✓"
               },
               {
                       id: 36,
                       difficulty: 1,
                       question: "Which word can go in front of both 'ground' and 'time' to make two new words?",
-                      options: ["Break","Lunch","Half","Play","Over"],
-                      correct: 3,
+                      options: ["Break","Lunch","Play","Half","Over"],
+                      correct: 2,
                       explanation: "Play + ground = playground, and play + time = playtime. Both are common compound words. ✓"
               },
               {
                       id: 37,
                       difficulty: 2,
                       question: "Which word can go after both 'play' and 'no' to make two new words?",
-                      options: ["Where","Thing","Time","One","How"],
-                      correct: 1,
+                      options: ["Where","One","Time","Thing","How"],
+                      correct: 3,
                       explanation: "Play + thing = plaything, and no + thing = nothing. Both are common compound words. ✓"
               },
               {
                       id: 38,
                       difficulty: 1,
                       question: "Which word can go after both 'home' and 'school' to make two new words?",
-                      options: ["Task","Job","Duty","Work","Chore"],
-                      correct: 3,
+                      options: ["Task","Job","Duty","Chore","Work"],
+                      correct: 4,
                       explanation: "Home + work = homework, and school + work = schoolwork. Both are common compound words. ✓"
               },
               {
                       id: 39,
                       difficulty: 1,
                       question: "Which word can go after both 'sand' and 'thunder' to make two new words?",
-                      options: ["Cloud","Rain","Storm","Wind","Flash"],
-                      correct: 2,
+                      options: ["Storm","Rain","Cloud","Wind","Flash"],
+                      correct: 0,
                       explanation: "Sand + storm = sandstorm, and thunder + storm = thunderstorm. Both are common compound words. ✓"
               },
               {
                       id: 40,
                       difficulty: 1,
                       question: "Which word can go after both 'star' and 'gold' to make two new words?",
-                      options: ["Dust","Mine","Shine","Light","Fish"],
-                      correct: 4,
+                      options: ["Dust","Fish","Shine","Light","Mine"],
+                      correct: 1,
                       explanation: "Star + fish = starfish, and gold + fish = goldfish. Both are common compound words. ✓"
               },
               {
                       id: 41,
                       difficulty: 1,
                       question: "Which word can go after both 'day' and 'night' to make two new words?",
-                      options: ["Time","Shift","Fall","Watch","Gown"],
-                      correct: 0,
+                      options: ["Fall","Shift","Time","Watch","Gown"],
+                      correct: 2,
                       explanation: "Day + time = daytime, and night + time = nighttime. Both are common compound words. ✓"
               },
               {
                       id: 42,
                       difficulty: 2,
                       question: "Which word can go in front of both 'bird' and 'smith' to make two new words?",
-                      options: ["Gold","Black","Song","Lock","Gun"],
-                      correct: 1,
+                      options: ["Gold","Lock","Song","Black","Gun"],
+                      correct: 3,
                       explanation: "Black + bird = blackbird, and black + smith = blacksmith. Both are common compound words. ✓"
               },
               {
                       id: 43,
                       difficulty: 2,
                       question: "Which word can go after both 'cow' and 'tom' to make two new words?",
-                      options: ["Girl","Man","Cat","Boy","Hat"],
-                      correct: 3,
+                      options: ["Girl","Man","Cat","Hat","Boy"],
+                      correct: 4,
                       explanation: "Cow + boy = cowboy, and tom + boy = tomboy. Both are common compound words. ✓"
               },
               {
                       id: 44,
                       difficulty: 1,
                       question: "Which word can go after both 'tooth' and 'head' to make two new words?",
-                      options: ["Brush","Band","Ache","Cap","Ring"],
-                      correct: 2,
+                      options: ["Ache","Band","Brush","Cap","Ring"],
+                      correct: 0,
                       explanation: "Tooth + ache = toothache, and head + ache = headache. Both describe types of pain. 'Brush' works with 'tooth' (toothbrush) but not 'head'. 'Band' works with 'head' (headband) but not 'tooth'. ✓"
               },
               {
                       id: 45,
                       difficulty: 2,
                       question: "Which word can go in front of both 'shoe' and 'power' to make two new words?",
-                      options: ["Horse","Fire","Man","Will","Gun"],
-                      correct: 0,
+                      options: ["Fire","Horse","Man","Will","Gun"],
+                      correct: 1,
                       explanation: "Horse + shoe = horseshoe, and horse + power = horsepower. Both are common compound words. ✓"
               },
               {
                       id: 46,
                       difficulty: 2,
                       question: "Which word can go in front of both 'lord' and 'mark' to make two new words?",
-                      options: ["Over","Land","Book","Hall","Time"],
-                      correct: 1,
+                      options: ["Over","Book","Land","Hall","Time"],
+                      correct: 2,
                       explanation: "Land + lord = landlord, and land + mark = landmark. Both are common compound words. ✓"
               },
               {
                       id: 47,
                       difficulty: 2,
                       question: "Which word can go in front of both 'through' and 'down' to make two new words?",
-                      options: ["Fall","Come","Break","Pass","Turn"],
-                      correct: 2,
+                      options: ["Fall","Come","Pass","Break","Turn"],
+                      correct: 3,
                       explanation: "Break + through = breakthrough, and break + down = breakdown. Both are common compound words. ✓"
               },
               {
                       id: 48,
                       difficulty: 2,
                       question: "Which word can go in front of both 'road' and 'word' to make two new words?",
-                      options: ["Pass","High","Key","Cross","Main"],
-                      correct: 3,
+                      options: ["Pass","High","Key","Main","Cross"],
+                      correct: 4,
                       explanation: "Cross + road = crossroad, and cross + word = crossword. Both are common compound words. ✓"
               },
               {
                       id: 49,
                       difficulty: 2,
                       question: "Which word can go in front of both 'print' and 'tip' to make two new words?",
-                      options: ["Thumb","Hand","Foot","Palm","Finger"],
-                      correct: 4,
+                      options: ["Finger","Hand","Foot","Palm","Thumb"],
+                      correct: 0,
                       explanation: "Finger + print = fingerprint, and finger + tip = fingertip. Both are common compound words. ✓"
               },
               {
                       id: 50,
                       difficulty: 2,
                       question: "Which word can go in front of both 'house' and 'weight' to make two new words?",
-                      options: ["Light","Heavy","Dark","Fly","Power"],
-                      correct: 0,
+                      options: ["Heavy","Light","Dark","Fly","Power"],
+                      correct: 1,
                       explanation: "Light + house = lighthouse, and light + weight = lightweight. Both are common compound words. ✓"
               },
               {
                       id: 51,
                       difficulty: 2,
                       question: "Which word can go in front of both 'table' and 'line' to make two new words?",
-                      options: ["Bed","Time","Side","Out","Top"],
-                      correct: 1,
+                      options: ["Bed","Side","Time","Out","Top"],
+                      correct: 2,
                       explanation: "Time + table = timetable, and time + line = timeline. Both are common compound words. ✓"
               },
               {
                       id: 52,
                       difficulty: 2,
                       question: "Which word can go in front of both 'colour' and 'mark' to make two new words?",
-                      options: ["Book","Paint","Water","Pen","Ink"],
-                      correct: 2,
+                      options: ["Book","Paint","Pen","Water","Ink"],
+                      correct: 3,
                       explanation: "Water + colour = watercolour, and water + mark = watermark. Both are common compound words. ✓"
               },
               {
                       id: 53,
                       difficulty: 2,
                       question: "Which word can go in front of both 'bolt' and 'storm' to make two new words?",
-                      options: ["Light","Rain","Hail","Thunder","Snow"],
-                      correct: 3,
+                      options: ["Light","Rain","Hail","Snow","Thunder"],
+                      correct: 4,
                       explanation: "Thunder + bolt = thunderbolt, and thunder + storm = thunderstorm. Both are common compound words. ✓"
               },
               {
                       id: 54,
                       difficulty: 2,
                       question: "Which word can go in front of both 'fall' and 'mare' to make two new words?",
-                      options: ["Water","Down","Day","Rain","Night"],
-                      correct: 4,
+                      options: ["Night","Down","Day","Rain","Water"],
+                      correct: 0,
                       explanation: "Night + fall = nightfall, and night + mare = nightmare. Both are common compound words. ✓"
               },
               {
                       id: 55,
                       difficulty: 2,
                       question: "Which word can go in front of both 'board' and 'ring' to make two new words?",
-                      options: ["Key","Card","Cup","Dart","Skate"],
-                      correct: 0,
+                      options: ["Card","Key","Cup","Dart","Skate"],
+                      correct: 1,
                       explanation: "Key + board = keyboard, and key + ring = keyring. Both are common compound words. ✓"
               },
               {
                       id: 56,
                       difficulty: 2,
                       question: "Which word can go in front of both 'card' and 'man' to make two new words?",
-                      options: ["Mail","Post","Milk","Door","Dust"],
-                      correct: 1,
+                      options: ["Mail","Milk","Post","Door","Dust"],
+                      correct: 2,
                       explanation: "Post + card = postcard, and post + man = postman. Both are common compound words. ✓"
               },
               {
                       id: 57,
                       difficulty: 2,
                       question: "Which word can go after both 'book' and 'land' to make two new words?",
-                      options: ["Lord","Shelf","Mark","Slide","Side"],
-                      correct: 2,
+                      options: ["Lord","Shelf","Slide","Mark","Side"],
+                      correct: 3,
                       explanation: "Book + mark = bookmark, and land + mark = landmark. Both are common compound words. ✓"
               },
               {
                       id: 58,
                       difficulty: 2,
                       question: "Which word can go after both 'sun' and 'wild' to make two new words?",
-                      options: ["Burn","Light","Set","Flower","Shine"],
-                      correct: 3,
+                      options: ["Burn","Light","Set","Shine","Flower"],
+                      correct: 4,
                       explanation: "Sun + flower = sunflower, and wild + flower = wildflower. Both are common compound words. ✓"
               },
               {
                       id: 59,
                       difficulty: 2,
                       question: "Which word can go after both 'cup' and 'card' to make two new words?",
-                      options: ["Cake","Berry","Tea","Box","Board"],
-                      correct: 4,
+                      options: ["Board","Berry","Tea","Box","Cake"],
+                      correct: 0,
                       explanation: "Cup + board = cupboard, and card + board = cardboard. Both are common compound words. ✓"
               },
               {
                       id: 60,
                       difficulty: 2,
                       question: "Which word can go in front of both 'place' and 'side' to make two new words?",
-                      options: ["Fire","Home","Some","Out","Road"],
-                      correct: 0,
+                      options: ["Home","Fire","Some","Out","Road"],
+                      correct: 1,
                       explanation: "Fire + place = fireplace, and fire + side = fireside. Both are common compound words. ✓"
               },
               {
                       id: 61,
                       difficulty: 2,
                       question: "Which word can go after both 'grass' and 'farm' to make two new words?",
-                      options: ["Field","Land","Yard","Meadow","Patch"],
-                      correct: 1,
+                      options: ["Field","Yard","Land","Meadow","Patch"],
+                      correct: 2,
                       explanation: "Grass + land = grassland, and farm + land = farmland. Both are common compound words. ✓"
               },
               {
                       id: 62,
                       difficulty: 2,
                       question: "Which word can go after both 'grand' and 'god' to make two new words?",
-                      options: ["Child","Parent","Father","Son","Mother"],
-                      correct: 2,
+                      options: ["Child","Parent","Son","Father","Mother"],
+                      correct: 3,
                       explanation: "Grand + father = grandfather, and god + father = godfather. Both are common compound words. ✓"
               },
               {
                       id: 63,
                       difficulty: 2,
                       question: "Which word can go after both 'him' and 'my' to make two new words?",
-                      options: ["Own","Kind","Way","Self","Part"],
-                      correct: 3,
+                      options: ["Own","Kind","Way","Part","Self"],
+                      correct: 4,
                       explanation: "Him + self = himself, and my + self = myself. Both are common compound words. ✓"
               },
               {
                       id: 64,
                       difficulty: 2,
                       question: "Which word can go in front of both 'wife' and 'hold' to make two new words?",
-                      options: ["Farm","Strong","Free","With","House"],
-                      correct: 4,
+                      options: ["House","Strong","Free","With","Farm"],
+                      correct: 0,
                       explanation: "House + wife = housewife, and house + hold = household. Both are common compound words. ✓"
               },
               {
                       id: 65,
                       difficulty: 2,
                       question: "Which word can go after both 'snow' and 'skate' to make two new words?",
-                      options: ["Board","Blade","Boot","Shoe","Park"],
-                      correct: 0,
+                      options: ["Blade","Board","Boot","Shoe","Park"],
+                      correct: 1,
                       explanation: "Snow + board = snowboard, and skate + board = skateboard. Both are common compound words. ✓"
               },
               {
                       id: 66,
                       difficulty: 2,
                       question: "Which word can go after both 'chalk' and 'dart' to make two new words?",
-                      options: ["Game","Board","Table","Box","Piece"],
-                      correct: 1,
+                      options: ["Game","Table","Board","Box","Piece"],
+                      correct: 2,
                       explanation: "Chalk + board = chalkboard, and dart + board = dartboard. Both are common compound words. ✓"
               },
               {
                       id: 67,
                       difficulty: 3,
                       question: "Which word can go in front of both 'nail' and 'post' to make two new words?",
-                      options: ["Thumb","Sign","Finger","Door","Lamp"],
-                      correct: 2,
+                      options: ["Thumb","Sign","Door","Finger","Lamp"],
+                      correct: 3,
                       explanation: "Finger + nail = fingernail, and finger + post = fingerpost. Both are common compound words. ✓"
               },
               {
                       id: 68,
                       difficulty: 2,
                       question: "Which word can go after both 'door' and 'gate' to make two new words?",
-                      options: ["Lock","Bell","Knob","Way","Latch"],
-                      correct: 3,
+                      options: ["Lock","Bell","Knob","Latch","Way"],
+                      correct: 4,
                       explanation: "Door + way = doorway, and gate + way = gateway. Both are common compound words. ✓"
               },
               {
                       id: 69,
                       difficulty: 2,
                       question: "Which word can go after both 'lamp' and 'sun' to make two new words?",
-                      options: ["Post","Burn","Set","Beam","Shade"],
-                      correct: 4,
+                      options: ["Shade","Burn","Set","Beam","Post"],
+                      correct: 0,
                       explanation: "Lamp + shade = lampshade, and sun + shade = sunshade. Both are common compound words. ✓"
               },
               {
                       id: 70,
                       difficulty: 2,
                       question: "Which word can go after both 'head' and 'neck' to make two new words?",
-                      options: ["Band","Ring","Lace","Tie","Chain"],
-                      correct: 0,
+                      options: ["Ring","Band","Lace","Tie","Chain"],
+                      correct: 1,
                       explanation: "Head + band = headband, and neck + band = neckband. Both are common compound words. ✓"
               },
               {
                       id: 71,
                       difficulty: 2,
                       question: "Which word can go after both 'sun' and 'moon' to make two new words?",
-                      options: ["Beam","Shine","Ray","Glow","Set"],
-                      correct: 1,
+                      options: ["Beam","Ray","Shine","Glow","Set"],
+                      correct: 2,
                       explanation: "Sun + shine = sunshine, and moon + shine = moonshine. Both are common compound words. ✓"
               },
               {
                       id: 72,
                       difficulty: 1,
                       question: "Which word can go in front of both 'light' and 'dream' to make two new words?",
-                      options: ["Moon","Sun","Day","Star","Pipe"],
-                      correct: 2,
+                      options: ["Moon","Sun","Star","Day","Pipe"],
+                      correct: 3,
                       explanation: "Day + light = daylight, and day + dream = daydream. Both are common compound words. ✓"
               },
               {
                       id: 73,
                       difficulty: 2,
                       question: "Which word can go after both 'sea' and 'lake' to make two new words?",
-                      options: ["Bank","Bed","Front","Shore","Tide"],
-                      correct: 3,
+                      options: ["Bank","Bed","Front","Tide","Shore"],
+                      correct: 4,
                       explanation: "Sea + shore = seashore, and lake + shore = lakeshore. Both are common compound words. ✓"
               },
               {
                       id: 74,
                       difficulty: 3,
                       question: "Which word can go in front of both 'cake' and 'handle' to make two new words?",
-                      options: ["Cup","Pop","Oat","Hot","Pan"],
-                      correct: 4,
+                      options: ["Pan","Pop","Oat","Hot","Cup"],
+                      correct: 0,
                       explanation: "Pan + cake = pancake, and pan + handle = panhandle. Both are common compound words. ✓"
               },
               {
                       id: 75,
                       difficulty: 3,
                       question: "Which word can go after both 'break' and 'stead' to make two new words?",
-                      options: ["Fast","Slow","Time","Point","Hour"],
-                      correct: 0,
+                      options: ["Slow","Fast","Time","Point","Hour"],
+                      correct: 1,
                       explanation: "Break + fast = breakfast, and stead + fast = steadfast. Both are common compound words. ✓"
               },
               {
                       id: 76,
                       difficulty: 2,
                       question: "Which word can go in front of both 'bone' and 'fire' to make two new words?",
-                      options: ["Wish","Back","Cross","Camp","Hell"],
-                      correct: 1,
+                      options: ["Wish","Cross","Back","Camp","Hell"],
+                      correct: 2,
                       explanation: "Back + bone = backbone, and back + fire = backfire. Both are common compound words. ✓"
               },
               {
                       id: 77,
                       difficulty: 3,
                       question: "Which word can go in front of both 'sight' and 'head' to make two new words?",
-                      options: ["Hind","Over","Fore","Long","Near"],
-                      correct: 2,
+                      options: ["Hind","Over","Long","Fore","Near"],
+                      correct: 3,
                       explanation: "Fore + sight = foresight, and fore + head = forehead. Both are common compound words. ✓"
               },
               {
                       id: 78,
                       difficulty: 2,
                       question: "Which word can go in front of both 'stairs' and 'fall' to make two new words?",
-                      options: ["Up","Water","Snow","Down","Rain"],
-                      correct: 3,
+                      options: ["Up","Water","Snow","Rain","Down"],
+                      correct: 4,
                       explanation: "Down + stairs = downstairs, and down + fall = downfall. Both are common compound words. ✓"
               },
               {
                       id: 79,
                       difficulty: 3,
                       question: "Which word can go in front of both 'lap' and 'due' to make two new words?",
-                      options: ["Fore","Under","Mis","Up","Over"],
-                      correct: 4,
+                      options: ["Over","Under","Mis","Up","Fore"],
+                      correct: 0,
                       explanation: "Over + lap = overlap, and over + due = overdue. Both are common compound words. ✓"
               },
               {
                       id: 80,
                       difficulty: 3,
                       question: "Which word can go in front of both 'spoken' and 'number' to make two new words?",
-                      options: ["Out","Under","Well","Plain","Soft"],
-                      correct: 0,
+                      options: ["Under","Out","Well","Plain","Soft"],
+                      correct: 1,
                       explanation: "Out + spoken = outspoken, and out + number = outnumber. Both are common compound words. ✓"
               },
               {
                       id: 81,
                       difficulty: 3,
                       question: "Which word can go in front of both 'market' and 'pile' to make two new words?",
-                      options: ["Super","Stock","Wood","Hay","Store"],
-                      correct: 1,
+                      options: ["Super","Wood","Stock","Hay","Store"],
+                      correct: 2,
                       explanation: "Stock + market = stock market, and stock + pile = stockpile. Both are common compound words. ✓"
               },
               {
                       id: 82,
                       difficulty: 3,
                       question: "Which word can go in front of both 'storm' and 'wash' to make two new words?",
-                      options: ["White","Rain","Brain","Car","Eye"],
-                      correct: 2,
+                      options: ["White","Rain","Car","Brain","Eye"],
+                      correct: 3,
                       explanation: "Brain + storm = brainstorm, and brain + wash = brainwash. Both are common compound words. ✓"
               },
               {
                       id: 83,
                       difficulty: 3,
                       question: "Which word can go in front of both 'part' and 'attack' to make two new words?",
-                      options: ["Half","Anti","Over","Counter","Cross"],
-                      correct: 3,
+                      options: ["Half","Anti","Over","Cross","Counter"],
+                      correct: 4,
                       explanation: "Counter + part = counterpart, and counter + attack = counterattack. Both are common compound words. ✓"
               },
               {
                       id: 84,
                       difficulty: 2,
                       question: "Which word can go in front of both 'hand' and 'cut' to make two new words?",
-                      options: ["Long","Fresh","Clear","Hair","Short"],
-                      correct: 4,
+                      options: ["Short","Fresh","Clear","Hair","Long"],
+                      correct: 0,
                       explanation: "Short + hand = shorthand, and short + cut = shortcut. Both are common compound words. 'Longhand' is a word but 'longcut' is not. 'Haircut' is a word but 'hairhand' is not. ✓"
               },
               {
                       id: 85,
                       difficulty: 3,
                       question: "Which word can go in front of both 'mind' and 'piece' to make two new words?",
-                      options: ["Master","Peace","Time","Centre","Head"],
-                      correct: 0,
+                      options: ["Peace","Master","Time","Centre","Head"],
+                      correct: 1,
                       explanation: "Master + mind = mastermind, and master + piece = masterpiece. Both are common compound words. ✓"
               },
               {
                       id: 86,
                       difficulty: 2,
                       question: "Which word can go in front of both 'box' and 'stick' to make two new words?",
-                      options: ["Card","Match","Drum","Fire","Candle"],
-                      correct: 1,
+                      options: ["Card","Drum","Match","Fire","Candle"],
+                      correct: 2,
                       explanation: "Match + box = matchbox, and match + stick = matchstick. Both are common compound words. ✓"
               },
               {
                       id: 87,
                       difficulty: 3,
                       question: "Which word can go in front of both 'back' and 'final' to make two new words?",
-                      options: ["Half","Play","Quarter","Semi","Set"],
-                      correct: 2,
+                      options: ["Half","Play","Semi","Quarter","Set"],
+                      correct: 3,
                       explanation: "Quarter + back = quarterback, and quarter + final = quarter-final. Both are common compound words. ✓"
               },
               {
                       id: 88,
                       difficulty: 3,
                       question: "Which word can go in front of both 'board' and 'time' to make two new words?",
-                      options: ["Card","Skate","Surf","Spring","Paste"],
-                      correct: 3,
+                      options: ["Card","Skate","Surf","Paste","Spring"],
+                      correct: 4,
                       explanation: "Spring + board = springboard, and spring + time = springtime. Both are common compound words. ✓"
               },
               {
                       id: 89,
                       difficulty: 3,
                       question: "Which word can go after both 'fore' and 'after' to make two new words?",
-                      options: ["Cast","Sight","Tell","Warn","Thought"],
-                      correct: 4,
+                      options: ["Thought","Sight","Tell","Warn","Cast"],
+                      correct: 0,
                       explanation: "Fore + thought = forethought, and after + thought = afterthought. Both are common compound words. ✓"
               },
               {
                       id: 90,
                       difficulty: 3,
                       question: "Which word can go after both 'ship' and 'team' to make two new words?",
-                      options: ["Mate","Crew","Hand","Board","Work"],
-                      correct: 0,
+                      options: ["Crew","Mate","Hand","Board","Work"],
+                      correct: 1,
                       explanation: "Ship + mate = shipmate, and team + mate = teammate. Both are common compound words. ✓"
               },
               {
                       id: 91,
                       difficulty: 3,
                       question: "Which word can go after both 'hard' and 'soft' to make two new words?",
-                      options: ["Ball","Wood","Core","Back","Ware"],
-                      correct: 1,
+                      options: ["Ball","Core","Wood","Back","Ware"],
+                      correct: 2,
                       explanation: "Hard + wood = hardwood, and soft + wood = softwood. Both are common compound words. ✓"
               },
               {
                       id: 92,
                       difficulty: 2,
                       question: "Which word can go after both 'head' and 'ear' to make two new words?",
-                      options: ["Ring","Band","Phones","Piece","Set"],
-                      correct: 2,
+                      options: ["Ring","Band","Piece","Phones","Set"],
+                      correct: 3,
                       explanation: "Head + phones = headphones, and ear + phones = earphones. Both are common compound words. ✓"
               },
               {
                       id: 93,
                       difficulty: 3,
                       question: "Which word can go after both 'hand' and 'needle' to make two new words?",
-                      options: ["Craft","Point","Stitch","Work","Thread"],
-                      correct: 3,
+                      options: ["Craft","Point","Stitch","Thread","Work"],
+                      correct: 4,
                       explanation: "Hand + work = handwork, and needle + work = needlework. Both are common compound words. ✓"
               },
               {
                       id: 94,
                       difficulty: 3,
                       question: "Which word can go after both 'mean' and 'some' to make two new words?",
-                      options: ["What","Thing","How","While","Time"],
-                      correct: 4,
+                      options: ["Time","Thing","How","While","What"],
+                      correct: 0,
                       explanation: "Mean + time = meantime, and some + time = sometime. Both are common compound words. ✓"
               },
               {
                       id: 95,
                       difficulty: 3,
                       question: "Which word can go after both 'where' and 'there' to make two new words?",
-                      options: ["By","About","Upon","Ever","In"],
-                      correct: 0,
+                      options: ["About","By","Upon","Ever","In"],
+                      correct: 1,
                       explanation: "Where + by = whereby, and there + by = thereby. Both are common compound words. ✓"
               },
               {
                       id: 96,
                       difficulty: 3,
                       question: "Which word can go in front of both 'break' and 'burst' to make two new words?",
-                      options: ["Day","Out","Sun","Air","Star"],
-                      correct: 1,
+                      options: ["Day","Sun","Out","Air","Star"],
+                      correct: 2,
                       explanation: "Out + break = outbreak, and out + burst = outburst. Both are common compound words. ✓"
               },
               {
                       id: 97,
                       difficulty: 2,
                       question: "Which word can go after both 'rain' and 'tear' to make two new words?",
-                      options: ["Fall","Water","Drop","Storm","Flood"],
-                      correct: 2,
+                      options: ["Fall","Water","Storm","Drop","Flood"],
+                      correct: 3,
                       explanation: "Rain + drop = raindrop, and tear + drop = teardrop. Both are common compound words. ✓"
               },
               {
                       id: 98,
                       difficulty: 3,
                       question: "Which word can go after both 'fire' and 'spot' to make two new words?",
-                      options: ["Blaze","Burn","Flame","Light","Glow"],
-                      correct: 3,
+                      options: ["Blaze","Burn","Flame","Glow","Light"],
+                      correct: 4,
                       explanation: "Fire + light = firelight, and spot + light = spotlight. Both are common compound words. ✓"
               },
               {
                       id: 99,
                       difficulty: 3,
                       question: "Which word can go in front of both 'line' and 'stand' to make two new words?",
-                      options: ["Out","Over","With","Up","Under"],
-                      correct: 4,
+                      options: ["Under","Over","With","Up","Out"],
+                      correct: 0,
                       explanation: "Under + line = underline, and under + stand = understand. Both are common compound words. ✓"
               },
               {
                       id: 100,
                       difficulty: 3,
                       question: "Which word can go after both 'out' and 'with' to make two new words?",
-                      options: ["Draw","Hold","Stand","Come","Put"],
-                      correct: 0,
+                      options: ["Hold","Draw","Stand","Come","Put"],
+                      correct: 1,
                       explanation: "Out + draw = outdraw, and with + draw = withdraw. Both are common compound words. ✓"
               }
       ,
@@ -7838,7 +7838,7 @@ const vrData = {
                       question: "A 4-letter word meaning 'part of the body' is hidden across two of these words. Find the two words.",
                       options: ["sea", "Near", "the", "beach", "and"],
                       correctPair: [3, 4],
-                      explanation: "The word HAND is hidden across 'beach' and 'and'. Take the last letter of 'beach' (H) and all three letters of 'and' (AND) = HAND. A hand is a part of the body. ✓"
+                      explanation: "The word HAND is hidden across 'beacH' and 'AND'. Take the last 1 letter of 'beach' (H) and all 3 letters of 'and' (AND) = HAND. ✓"
               },
               {
                       id: 4,
@@ -8235,7 +8235,7 @@ const vrData = {
                       question: "A 4-letter word meaning 'a hard part of a skeleton' is hidden across two of these words. Find the two words.",
                       options: ["New","club","one","with","many"],
                       correctPair: [1,2],
-                      explanation: "The word BONE is hidden across 'club' and 'one'. Take the last letter of 'club' (B) and all three letters of 'one' (ONE) = BONE. A bone is a hard part of the skeleton. ✓"
+                      explanation: "The word BONE is hidden across 'cluB' and 'ONE'. Take the last 1 letter of 'club' (B) and the first 3 of 'one' (ONE) = BONE. ✓"
               },
               {
                       id: 42,
@@ -8406,7 +8406,7 @@ const vrData = {
                       question: "A 4-letter word meaning 'a hollow in a hard surface' is hidden across two of these words. Find the two words.",
                       options: ["Her","old","wand","entry","shone"],
                       correctPair: [2,3],
-                      explanation: "The word DENT is hidden across 'wandD' — take the last letter of 'wand' (D) and the first three of 'entry' (ENT) = DENT. ✓"
+                      explanation: "The word DENT is hidden across 'wanD' and 'ENTry'. Take the last 1 letter of 'wand' (D) and the first 3 of 'entry' (ENT) = DENT. ✓"
               },
               {
                       id: 61,
@@ -9377,7 +9377,7 @@ const vrData = {
           "difficulty": 2,
           "questionType": "select-two",
           "question": "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
-          "options": ["The", "historic", "entire", "lake", "froze"],
+          "options": ["entire", "historic", "The", "lake", "froze"],
           "correctPair": [1, 2],
           "explanation": "The word RICE is hidden across 'histoRIC' and 'Entire'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'entire' (E) = RICE. ✓"
         }
@@ -9390,7 +9390,7 @@ const vrData = {
                       id: 1,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: SPINE  OAR",
-                      options: ["P", "I", "S", "N", "E"],
+                      options: ["P", "N", "S", "I", "E"],
                       correct: 2,
                       explanation: "Move the 'S' from SPINE to make PINE, and insert it into OAR to make SOAR. 'S' from SPINE to OAR: SPINE becomes PINE, and OAR becomes SOAR. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
               },
@@ -9398,7 +9398,7 @@ const vrData = {
                       id: 2,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: BRAID  OWL",
-                      options: ["R", "A", "I", "B", "D"],
+                      options: ["R", "A", "D", "B", "I"],
                       correct: 3,
                       explanation: "Move the 'B' from BRAID to make RAID, and insert it into OWL to make BOWL. 'B' from BRAID to OWL: BRAID becomes RAID, and OWL becomes BOWL. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
               },
@@ -9406,7 +9406,7 @@ const vrData = {
                       id: 3,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: PLATE  AN",
-                      options: ["L", "A", "T", "E", "P"],
+                      options: ["E", "A", "T", "L", "P"],
                       correct: 4,
                       explanation: "Move the 'P' from PLATE to make LATE, and insert it into AN to make PAN. 'P' from PLATE to AN: PLATE becomes LATE, and AN becomes PAN. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
               },
@@ -9414,7 +9414,7 @@ const vrData = {
                       id: 4,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: SPARK  OAK",
-                      options: ["S", "P", "A", "R", "K"],
+                      options: ["S", "K", "A", "R", "P"],
                       correct: 0,
                       explanation: "Move the 'S' from SPARK to make PARK, and insert it into OAK to make SOAK. 'S' from SPARK to OAK: SPARK becomes PARK, and OAK becomes SOAK. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
               },
@@ -9446,15 +9446,15 @@ const vrData = {
                       id: 8,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: CLAMP  OWL",
-                      options: ["L", "A", "M", "C", "P"],
-                      correct: 3,
+                      options: ["L", "M", "C", "A", "P"],
+                      correct: 2,
                       explanation: "Move the 'C' from CLAMP to make LAMP, and insert it into OWL to make COWL. 'C' from CLAMP to OWL: CLAMP becomes LAMP, and OWL becomes COWL. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
               },
         {
                       id: 9,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: SHORE  INK",
-                      options: ["S", "R", "H", "O", "E"],
+                      options: ["S", "R", "H", "E", "O"],
                       correct: 1,
                       explanation: "Move the 'R' from SHORE to make SHOE, and insert it into INK to make RINK. 'R' from SHORE to INK: SHORE becomes SHOE, and INK becomes RINK. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
               },
@@ -9462,7 +9462,7 @@ const vrData = {
                       id: 10,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: PLACE  OUR",
-                      options: ["L", "A", "C", "P", "E"],
+                      options: ["E", "A", "C", "P", "L"],
                       correct: 3,
                       explanation: "Move the 'P' from PLACE to make LACE, and insert it into OUR to make POUR. 'P' from PLACE to OUR: PLACE becomes LACE, and OUR becomes POUR. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
               },
@@ -9470,7 +9470,7 @@ const vrData = {
                       id: 11,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: SWEAR  OWN",
-                      options: ["W", "E", "A", "R", "S"],
+                      options: ["W", "A", "E", "R", "S"],
                       correct: 4,
                       explanation: "Move the 'S' from SWEAR to make WEAR, and insert it into OWN to make SOWN. 'S' from SWEAR to OWN: SWEAR becomes WEAR, and OWN becomes SOWN. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
               },
@@ -9478,23 +9478,23 @@ const vrData = {
                       id: 12,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: FLAME  OUR",
-                      options: ["L", "A", "F", "M", "E"],
-                      correct: 2,
+                      options: ["L", "A", "M", "F", "E"],
+                      correct: 3,
                       explanation: "Move the 'F' from FLAME to make LAME, and insert it into OUR to make FOUR. 'F' from FLAME to OUR: FLAME becomes LAME, and OUR becomes FOUR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
               },
         {
                       id: 13,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: STARE  OWN",
-                      options: ["T", "A", "R", "S", "E"],
-                      correct: 3,
+                      options: ["T", "A", "S", "R", "E"],
+                      correct: 2,
                       explanation: "Move the 'S' from STARE to make TARE, and insert it into OWN to make SOWN. 'S' from STARE to OWN: STARE becomes TARE, and OWN becomes SOWN. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
               },
         {
                       id: 14,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: BRAND  OAT",
-                      options: ["R", "A", "B", "N", "D"],
+                      options: ["R", "A", "B", "D", "N"],
                       correct: 2,
                       explanation: "Move the 'B' from BRAND to make RAND, and insert it into OAT to make BOAT. 'B' from BRAND to OAT: BRAND becomes RAND, and OAT becomes BOAT. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
               },
@@ -9502,13 +9502,13 @@ const vrData = {
                       id: 15,
                       difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: SHAVE  EAR",
-                      options: ["H", "A", "V", "S", "E"],
-                      correct: 3,
+                      options: ["S", "A", "V", "H", "E"],
+                      correct: 0,
                       explanation: "Move the 'S' from SHAVE to make HAVE, and insert it into EAR to make SEAR. 'S' from SHAVE to EAR: SHAVE becomes HAVE, and EAR becomes SEAR. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
               },
         {
                       id: 16,
-                      difficulty: 3,
+                      difficulty: 1,
                       question: "Move one letter from one word to the other to make two new words: PLIGHT  OUR",
                       options: ["L", "I", "G", "P", "H"],
                       correct: 3,
@@ -9518,7 +9518,7 @@ const vrData = {
           "id": 17,
           "difficulty": 1,
           "question": "Move one letter from one word to the other to make two new words: BRAIN  OW",
-          "options": ["R", "B", "A", "I", "N"],
+          "options": ["R", "B", "N", "I", "A"],
           "correct": 1,
           "explanation": "Move the 'B' from BRAIN to OW: BRAIN becomes RAIN, and OW becomes BOW. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
         },
@@ -9526,7 +9526,7 @@ const vrData = {
           "id": 18,
           "difficulty": 1,
           "question": "Move one letter from one word to the other to make two new words: STONE  OIL",
-          "options": ["T", "O", "N", "E", "S"],
+          "options": ["T", "E", "N", "O", "S"],
           "correct": 4,
           "explanation": "Move the 'S' from STONE to OIL: STONE becomes TONE, and OIL becomes SOIL. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓"
         },
@@ -9558,7 +9558,7 @@ const vrData = {
           "id": 22,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: WHOLE  HEN",
-          "options": ["H", "W", "O", "L", "E"],
+          "options": ["H", "W", "L", "O", "E"],
           "correct": 1,
           "explanation": "Move the 'W' from WHOLE to HEN: WHOLE becomes HOLE, and HEN becomes WHEN. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
         },
@@ -9566,23 +9566,23 @@ const vrData = {
           "id": 23,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: STRIPE  OAP",
-          "options": ["T", "R", "I", "S", "P"],
-          "correct": 3,
+          "options": ["T", "R", "I", "P", "S"],
+          "correct": 4,
           "explanation": "Move the 'S' from STRIPE to OAP: STRIPE becomes TRIPE, and OAP becomes SOAP. Both are real words (tripe = stomach lining used as food). Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
         },
         {
           "id": 24,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: THREAD  ARM",
-          "options": ["T", "R", "E", "A", "H"],
-          "correct": 4,
+          "options": ["T", "H", "E", "A", "R"],
+          "correct": 1,
           "explanation": "Move the 'H' from THREAD to ARM: THREAD becomes TREAD, and ARM becomes HARM. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           "id": 25,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
-          "options": ["O", "S", "A", "R", "C"],
+          "options": ["A", "S", "R", "O", "C"],
           "correct": 1,
           "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9590,7 +9590,7 @@ const vrData = {
           "id": 26,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
-          "options": ["A", "G", "S", "E", "C"],
+          "options": ["A", "E", "S", "G", "C"],
           "correct": 2,
           "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9598,24 +9598,24 @@ const vrData = {
           "id": 27,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAK SCOLD",
-          "options": ["O", "A", "K", "S", "C"],
-          "correct": 3,
+          "options": ["O", "A", "S", "K", "C"],
+          "correct": 2,
           "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 28,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
-          "options": ["A", "G", "E", "P", "R"],
-          "correct": 3,
+          "options": ["A", "G", "E", "R", "P"],
+          "correct": 4,
           "explanation": "Move 'P' from PRICE to make RICE, and insert it into AGE to make PAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 29,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: LAY PRICE",
-          "options": ["L", "A", "Y", "R", "P"],
-          "correct": 4,
+          "options": ["P", "A", "Y", "R", "L"],
+          "correct": 0,
           "explanation": "Move 'P' from PRICE to make RICE, and insert it into LAY to make PLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
@@ -9646,15 +9646,15 @@ const vrData = {
           "id": 33,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: OAK STALE",
-          "options": ["O", "A", "S", "K", "T"],
-          "correct": 2,
+          "options": ["O", "A", "K", "S", "T"],
+          "correct": 3,
           "explanation": "Move 'S' from STALE to make TALE, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 34,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
-          "options": ["O", "W", "F", "L", "A"],
+          "options": ["O", "W", "F", "A", "L"],
           "correct": 2,
           "explanation": "Move 'F' from FLAME to make LAME, and insert it into OWL to make FOWL. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9662,7 +9662,7 @@ const vrData = {
           "id": 35,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
-          "options": ["A", "T", "E", "F", "L"],
+          "options": ["L", "T", "E", "F", "A"],
           "correct": 3,
           "explanation": "Move 'F' from FLAME to make LAME, and insert it into ATE to make FATE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9670,15 +9670,15 @@ const vrData = {
           "id": 36,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: ACE FLAME",
-          "options": ["A", "C", "E", "L", "F"],
-          "correct": 4,
+          "options": ["A", "F", "E", "L", "C"],
+          "correct": 1,
           "explanation": "Move 'F' from FLAME to make LAME, and insert it into ACE to make FACE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 37,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: OAR STERN",
-          "options": ["O", "A", "R", "T", "S"],
+          "options": ["R", "A", "O", "T", "S"],
           "correct": 4,
           "explanation": "Move 'S' from STERN to make TERN, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9686,7 +9686,7 @@ const vrData = {
           "id": 38,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: AGE STERN",
-          "options": ["S", "A", "G", "E", "T"],
+          "options": ["S", "A", "G", "T", "E"],
           "correct": 0,
           "explanation": "Move 'S' from STERN to make TERN, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9694,39 +9694,39 @@ const vrData = {
           "id": 39,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: ALE SCOLD",
-          "options": ["A", "L", "E", "C", "S"],
-          "correct": 4,
+          "options": ["S", "L", "E", "C", "A"],
+          "correct": 0,
           "explanation": "Move 'S' from SCOLD to make COLD, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 40,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AID SCOLD",
-          "options": ["S", "A", "I", "D", "C"],
-          "correct": 0,
+          "options": ["A", "S", "I", "D", "C"],
+          "correct": 1,
           "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 41,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: LAY SCOLD",
-          "options": ["L", "C", "A", "Y", "S"],
-          "correct": 1,
+          "options": ["L", "A", "C", "Y", "S"],
+          "correct": 2,
           "explanation": "Move 'C' from SCOLD to make SOLD, and insert it into LAY to make CLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 42,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAT SCOLD",
-          "options": ["O", "A", "C", "T", "S"],
-          "correct": 2,
+          "options": ["O", "C", "A", "T", "S"],
+          "correct": 1,
           "explanation": "Move 'C' from SCOLD to make SOLD, and insert it into OAT to make COAT. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
                                 {
           "id": 43,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR PRICE",
-          "options": ["E", "P", "A", "R", "I"],
+          "options": ["E", "P", "R", "A", "I"],
           "correct": 1,
           "explanation": "Move 'P' from PRICE to make RICE, and insert it into EAR to make PEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9734,7 +9734,7 @@ const vrData = {
           "id": 44,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: ALE PRICE",
-          "options": ["A", "L", "P", "E", "R"],
+          "options": ["A", "L", "P", "R", "E"],
           "correct": 2,
           "explanation": "Move 'P' from PRICE to make RICE, and insert it into ALE to make PALE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9742,7 +9742,7 @@ const vrData = {
           "id": 45,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AIR PRICE",
-          "options": ["A", "I", "R", "P", "C"],
+          "options": ["C", "I", "R", "P", "A"],
           "correct": 3,
           "explanation": "Move 'P' from PRICE to make RICE, and insert it into AIR to make PAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9750,7 +9750,7 @@ const vrData = {
           "id": 46,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AID PRICE",
-          "options": ["A", "I", "D", "R", "P"],
+          "options": ["A", "R", "D", "I", "P"],
           "correct": 4,
           "explanation": "Move 'P' from PRICE to make RICE, and insert it into AID to make PAID. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9758,7 +9758,7 @@ const vrData = {
           "id": 47,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: ALE STALE",
-          "options": ["A", "L", "E", "S", "T"],
+          "options": ["A", "L", "T", "S", "E"],
           "correct": 3,
           "explanation": "Move 'S' from STALE to make TALE, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9766,15 +9766,15 @@ const vrData = {
           "id": 48,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AID STALE",
-          "options": ["A", "I", "D", "T", "S"],
-          "correct": 4,
+          "options": ["S", "I", "D", "A", "T"],
+          "correct": 0,
           "explanation": "Move 'S' from STALE to make TALE, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           "id": 49,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR STALE",
-          "options": ["T", "E", "A", "R", "S"],
+          "options": ["T", "S", "A", "R", "E"],
           "correct": 0,
           "explanation": "Move 'T' from STALE to make SALE, and insert it into EAR to make TEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9814,7 +9814,7 @@ const vrData = {
           "id": 54,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AID FLAME",
-          "options": ["A", "I", "D", "L", "F"],
+          "options": ["A", "F", "I", "L", "D"],
           "correct": 3,
           "explanation": "Move 'L' from FLAME to make FAME, and insert it into AID to make LAID. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
@@ -9822,7 +9822,7 @@ const vrData = {
           "id": 55,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
-          "options": ["A", "T", "L", "E", "B"],
+          "options": ["E", "T", "L", "B", "A"],
           "correct": 2,
           "explanation": "Move L from BLEACH: BLEACH becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: harder questions often use longer words and the less obvious direction. ✓"
         },
@@ -9830,7 +9830,7 @@ const vrData = {
           "id": 56,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
-          "options": ["O", "A", "R", "B", "S"],
+          "options": ["A", "S", "R", "B", "O"],
           "correct": 3,
           "explanation": "Move B from STABLE: STABLE becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
         },
@@ -9838,7 +9838,7 @@ const vrData = {
           "id": 57,
           "difficulty": 3,
           "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
-          "options": ["A", "G", "E", "S", "R"],
+          "options": ["G", "E", "A", "S", "R"],
           "correct": 4,
           "explanation": "Move R from STREAM: STREAM becomes STEAM, and AGE becomes RAGE. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
         },
@@ -9861,16 +9861,16 @@ const vrData = {
                         {
           "id": 60,
           "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR STALE",
-          "options": ["T", "E", "A", "R", "S"],
+          "question": "Move one letter from one word to the other to make two new words: GRIND OAT",
+          "options": ["G", "R", "I", "N", "D"],
           "correct": 0,
-          "explanation": "Move T from STALE: becomes SALE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          "explanation": "Move 'G' from GRIND: becomes RIND. Insert it into OAT: becomes GOAT. Both RIND and GOAT are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
                                 {
           "id": 61,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAR STORE",
-          "options": ["O", "A", "R", "T", "S"],
+          "options": ["A", "O", "R", "T", "S"],
           "correct": 4,
           "explanation": "Move S from STORE: becomes TORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9878,7 +9878,7 @@ const vrData = {
           "id": 62,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR STORE",
-          "options": ["T", "E", "A", "R", "S"],
+          "options": ["T", "A", "E", "R", "S"],
           "correct": 0,
           "explanation": "Move T from STORE: becomes SORE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9886,7 +9886,7 @@ const vrData = {
           "id": 63,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAR SPINE",
-          "options": ["O", "S", "A", "R", "P"],
+          "options": ["O", "S", "R", "A", "P"],
           "correct": 1,
           "explanation": "Move S from SPINE: becomes PINE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9894,7 +9894,7 @@ const vrData = {
           "id": 64,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR STEAM",
-          "options": ["E", "A", "T", "R", "S"],
+          "options": ["E", "A", "T", "S", "R"],
           "correct": 2,
           "explanation": "Move T from STEAM: becomes SEAM, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9902,7 +9902,7 @@ const vrData = {
           "id": 65,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAR SWEAR",
-          "options": ["O", "A", "R", "S", "W"],
+          "options": ["W", "A", "R", "S", "O"],
           "correct": 3,
           "explanation": "Move S from SWEAR: becomes WEAR, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9910,7 +9910,7 @@ const vrData = {
           "id": 66,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR TRACE",
-          "options": ["E", "A", "R", "C", "T"],
+          "options": ["A", "E", "R", "C", "T"],
           "correct": 4,
           "explanation": "Move T from TRACE: becomes RACE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9918,7 +9918,7 @@ const vrData = {
           "id": 67,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR STAGE",
-          "options": ["T", "E", "A", "R", "S"],
+          "options": ["T", "A", "E", "R", "S"],
           "correct": 0,
           "explanation": "Move T from STAGE: becomes SAGE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9926,7 +9926,7 @@ const vrData = {
           "id": 68,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAR SHARE",
-          "options": ["O", "S", "A", "R", "H"],
+          "options": ["O", "S", "R", "A", "H"],
           "correct": 1,
           "explanation": "Move S from SHARE: becomes HARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9934,7 +9934,7 @@ const vrData = {
           "id": 69,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: OAR SCARE",
-          "options": ["O", "A", "S", "R", "C"],
+          "options": ["O", "A", "S", "C", "R"],
           "correct": 2,
           "explanation": "Move S from SCARE: becomes CARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9942,7 +9942,7 @@ const vrData = {
           "id": 70,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: AGE SCALE",
-          "options": ["A", "G", "E", "C", "S"],
+          "options": ["S", "G", "E", "C", "A"],
           "correct": 3,
           "explanation": "Move C from SCALE: becomes SALE, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9950,7 +9950,7 @@ const vrData = {
           "id": 71,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EAR SNORE",
-          "options": ["E", "A", "R", "S", "N"],
+          "options": ["A", "E", "R", "S", "N"],
           "correct": 4,
           "explanation": "Move N from SNORE: becomes SORE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
         },
@@ -9965,10 +9965,10 @@ const vrData = {
         {
           "id": 73,
           "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
-          "options": ["A", "L", "T", "E", "B"],
-          "correct": 1,
-          "explanation": "Move L from BLEACH: becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: Always try both directions. ✓"
+          "question": "Move one letter from one word to the other to make two new words: BRIGHT OWL",
+          "options": ["R", "I", "G", "B", "H"],
+          "correct": 3,
+          "explanation": "Move 'B' from BRIGHT: becomes RIGHT. Insert it into OWL: becomes BOWL. Both RIGHT and BOWL are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 74,
@@ -9981,48 +9981,48 @@ const vrData = {
         {
           "id": 75,
           "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
-          "options": ["O", "A", "R", "B", "S"],
-          "correct": 3,
-          "explanation": "Move B from STABLE: becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          "question": "Move one letter from one word to the other to make two new words: CRATE OWN",
+          "options": ["C", "R", "A", "T", "E"],
+          "correct": 0,
+          "explanation": "Move 'C' from CRATE: becomes RATE. Insert it into OWN: becomes CROWN. Both RATE and CROWN are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 76,
           "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
-          "options": ["A", "G", "E", "S", "R"],
-          "correct": 4,
-          "explanation": "Move R from STREAM: becomes STEAM, and AGE becomes RAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+          "question": "Move one letter from one word to the other to make two new words: GRANT OWL",
+          "options": ["G", "R", "A", "N", "T"],
+          "correct": 0,
+          "explanation": "Move 'G' from GRANT: becomes RANT. Insert it into OWL: becomes GROWL. Both RANT and GROWL are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 77,
           "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
-          "options": ["N", "E", "A", "R", "T"],
+          "question": "Move one letter from one word to the other to make two new words: STRUCK AIL",
+          "options": ["S", "T", "R", "U", "K"],
           "correct": 0,
-          "explanation": "Move N from TRANCE: becomes TRACE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          "explanation": "Move 'S' from STRUCK: becomes TRUCK. Insert it into AIL: becomes SAIL. Both TRUCK and SAIL are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 78,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: BAND CAR",
-          "options": ["B", "A", "N", "C", "D"],
+          "options": ["C", "A", "N", "B", "D"],
           "correct": 4,
           "explanation": "Move 'D' from the end of BAND: becomes BAN. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 79,
           "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CARD CAR",
-          "options": ["D", "C", "A", "R", "S"],
+          "question": "Move one letter from one word to the other to make two new words: SPARE INK",
+          "options": ["S", "P", "A", "R", "E"],
           "correct": 0,
-          "explanation": "Move 'D' from the end of CARD: becomes CAR. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          "explanation": "Move 'S' from the start of SPARE: becomes PARE. Insert it into INK: becomes SINK. Both PARE and SINK are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 80,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: CART HAT",
-          "options": ["C", "T", "A", "R", "H"],
+          "options": ["A", "T", "C", "R", "H"],
           "correct": 1,
           "explanation": "Move 'T' from the end of CART: becomes CAR. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10030,7 +10030,7 @@ const vrData = {
           "id": 81,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: EARN BAR",
-          "options": ["E", "A", "N", "R", "B"],
+          "options": ["E", "R", "N", "A", "B"],
           "correct": 2,
           "explanation": "Move 'N' from the end of EARN: becomes EAR. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10038,7 +10038,7 @@ const vrData = {
           "id": 82,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: FARM ATE",
-          "options": ["F", "A", "R", "M", "T"],
+          "options": ["F", "A", "T", "M", "R"],
           "correct": 3,
           "explanation": "Move 'M' from the end of FARM: becomes FAR. Insert it to the front of ATE: becomes MATE. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10046,7 +10046,7 @@ const vrData = {
           "id": 83,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: FORD CAR",
-          "options": ["F", "O", "R", "C", "D"],
+          "options": ["C", "O", "R", "F", "D"],
           "correct": 4,
           "explanation": "Move 'D' from the end of FORD: becomes FOR. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10054,7 +10054,7 @@ const vrData = {
           "id": 84,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: MARE BAT",
-          "options": ["E", "M", "A", "R", "B"],
+          "options": ["E", "B", "A", "R", "M"],
           "correct": 0,
           "explanation": "Move 'E' from the end of MARE: becomes MAR. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10062,7 +10062,7 @@ const vrData = {
           "id": 85,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: PALE BAT",
-          "options": ["P", "E", "A", "L", "B"],
+          "options": ["A", "E", "P", "L", "B"],
           "correct": 1,
           "explanation": "Move 'E' from the end of PALE: becomes PAL. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10070,7 +10070,7 @@ const vrData = {
           "id": 86,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: PANT HAT",
-          "options": ["P", "A", "T", "N", "H"],
+          "options": ["P", "N", "T", "A", "H"],
           "correct": 2,
           "explanation": "Move 'T' from the end of PANT: becomes PAN. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10078,7 +10078,7 @@ const vrData = {
           "id": 87,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: PINE BAT",
-          "options": ["P", "I", "N", "E", "B"],
+          "options": ["P", "I", "B", "E", "N"],
           "correct": 3,
           "explanation": "Move 'E' from the end of PINE: becomes PIN. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10086,7 +10086,7 @@ const vrData = {
           "id": 88,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: BAND BAR",
-          "options": ["B", "A", "D", "R", "N"],
+          "options": ["R", "A", "D", "B", "N"],
           "correct": 4,
           "explanation": "Move 'N' from the middle of BAND: becomes BAD. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10094,31 +10094,31 @@ const vrData = {
           "id": 89,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: BURN CAT",
-          "options": ["R", "B", "U", "N", "C"],
+          "options": ["R", "C", "U", "N", "B"],
           "correct": 0,
           "explanation": "Move 'R' from the middle of BURN: becomes BUN. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 90,
           "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CART CAT",
-          "options": ["C", "R", "A", "T", "S"],
-          "correct": 1,
-          "explanation": "Move 'R' from the middle of CART: becomes CAT. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          "question": "Move one letter from one word to the other to make two new words: CHART OWN",
+          "options": ["C", "H", "A", "R", "T"],
+          "correct": 0,
+          "explanation": "Move 'C' from CHART: becomes HART. Insert it into OWN: becomes CROWN. Both HART (a male deer) and CROWN are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 91,
           "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CAST CAT",
-          "options": ["C", "A", "S", "T", "R"],
-          "correct": 2,
-          "explanation": "Move 'S' from the middle of CAST: becomes CAT. Insert it into the middle of CAT: becomes CAST. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          "question": "Move one letter from one word to the other to make two new words: BRAND OWL",
+          "options": ["B", "R", "A", "N", "D"],
+          "correct": 0,
+          "explanation": "Move 'B' from BRAND: becomes RAND. Insert it into OWL: becomes BOWL. Both RAND and BOWL are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 92,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: COLD HAT",
-          "options": ["C", "O", "D", "L", "H"],
+          "options": ["C", "O", "H", "L", "D"],
           "correct": 3,
           "explanation": "Move 'L' from the middle of COLD: becomes COD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10126,7 +10126,7 @@ const vrData = {
           "id": 93,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: CORD CAT",
-          "options": ["C", "O", "D", "A", "R"],
+          "options": ["A", "O", "D", "C", "R"],
           "correct": 4,
           "explanation": "Move 'R' from the middle of CORD: becomes COD. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10134,7 +10134,7 @@ const vrData = {
           "id": 94,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: GOAT PIN",
-          "options": ["A", "G", "O", "T", "P"],
+          "options": ["A", "P", "O", "T", "G"],
           "correct": 0,
           "explanation": "Move 'A' from the middle of GOAT: becomes GOT. Insert it into the middle of PIN: becomes PAIN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10142,23 +10142,23 @@ const vrData = {
           "id": 95,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: GOLD HAT",
-          "options": ["G", "L", "O", "D", "H"],
+          "options": ["O", "L", "G", "D", "H"],
           "correct": 1,
           "explanation": "Move 'L' from the middle of GOLD: becomes GOD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 96,
           "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: HALT HAT",
-          "options": ["H", "A", "L", "T", "S"],
-          "correct": 2,
-          "explanation": "Move 'L' from the middle of HALT: becomes HAT. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          "question": "Move one letter from one word to the other to make two new words: MARCH OAT",
+          "options": ["M", "A", "R", "C", "H"],
+          "correct": 0,
+          "explanation": "Move 'M' from MARCH: becomes ARCH. Insert it into OAT: becomes MOAT. Both ARCH and MOAT are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           "id": 97,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: HARM CAT",
-          "options": ["H", "A", "M", "R", "C"],
+          "options": ["H", "A", "C", "R", "M"],
           "correct": 3,
           "explanation": "Move 'R' from the middle of HARM: becomes HAM. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10166,7 +10166,7 @@ const vrData = {
           "id": 98,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: BAND AGE",
-          "options": ["B", "A", "N", "G", "D"],
+          "options": ["G", "A", "N", "B", "D"],
           "correct": 4,
           "explanation": "Move 'D' from the end of BAND: becomes BAN. Insert it to the end of AGE: becomes AGED. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10174,7 +10174,7 @@ const vrData = {
           "id": 99,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: BURN PEA",
-          "options": ["R", "B", "U", "N", "P"],
+          "options": ["R", "P", "U", "N", "B"],
           "correct": 0,
           "explanation": "Move 'R' from the middle of BURN: becomes BUN. Insert it to the end of PEA: becomes PEAR. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10182,7 +10182,7 @@ const vrData = {
           "id": 100,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: CARD AGE",
-          "options": ["C", "D", "A", "R", "G"],
+          "options": ["A", "D", "C", "R", "G"],
           "correct": 1,
           "explanation": "Move 'D' from the end of CARD: becomes CAR. Insert it to the end of AGE: becomes AGED. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10190,7 +10190,7 @@ const vrData = {
           "id": 101,
           "difficulty": 2,
           "question": "Move one letter from one word to the other to make two new words: CART PAN",
-          "options": ["C", "A", "T", "R", "P"],
+          "options": ["C", "R", "T", "A", "P"],
           "correct": 2,
           "explanation": "Move 'T' from the end of CART: becomes CAR. Insert it to the end of PAN: becomes PANT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
@@ -10212,24 +10212,24 @@ const vrData = {
                       id: 1,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? CH _ _ _ ER",
-                      options: ["OPT","APT","ACT","ART","APE"],
-                      correct: 1,
+                      options: ["OPT","ACT","APT","ART","APE"],
+                      correct: 2,
                       explanation: "The answer is APT, making CHAPTER. 'Apt' means suitable or appropriate. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 2,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? PL _ _ _ ED",
-                      options: ["AND","ATE","ANT","ACE","AGE"],
-                      correct: 2,
+                      options: ["AND","ATE","ACE","ANT","AGE"],
+                      correct: 3,
                       explanation: "The answer is ANT, making PLANTED. 'Ant' is a small insect. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 3,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? CAR _ _ _ S",
-                      options: ["PIE","PEN","PEW","PET","PUT"],
-                      correct: 3,
+                      options: ["PEN","PIE","PEW","PUT","PET"],
+                      correct: 4,
                       explanation: "The answer is PET, making CARPETS. 'Pet' means a tame animal kept for companionship. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
@@ -10252,12 +10252,12 @@ const vrData = {
                       question: "Which three-letter word completes this longer word? CON _ _ _ T",
                       options: [
                               "TIN",
-                              "TAN",
-                              "TON",
                               "TEN",
+                              "TON",
+                              "TAN",
                               "TUN"
                       ],
-                      correct: 3,
+                      correct: 1,
                       explanation: "The answer is TEN, making CONTENT. 'Ten' is the number 10. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
@@ -10266,36 +10266,36 @@ const vrData = {
                       question: "Which three-letter word completes this longer word? PAS _ _ _ E",
                       options: [
                               "SAT",
-                              "SAG",
                               "SAD",
+                              "SAG",
                               "SAP",
                               "SAW"
                       ],
-                      correct: 1,
+                      correct: 2,
                       explanation: "The answer is SAG, making PASSAGE. 'Sag' means to droop or sink. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
               {
                       id: 7,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? H _ _ _ SOME",
-                      options: ["ARM","ANT","ANY","ARC","AND"],
-                      correct: 4,
+                      options: ["ARM","ANT","ANY","AND","ARC"],
+                      correct: 3,
                       explanation: "The answer is AND, making HANDSOME. 'And' is a joining word. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 8,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? C _ _ _ AIN",
-                      options: ["ART","APT","ACT","ANT","AMP"],
-                      correct: 1,
+                      options: ["ART","AMP","ACT","ANT","APT"],
+                      correct: 4,
                       explanation: "The answer is APT, making CAPTAIN. 'Apt' means suitable or appropriate. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 9,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? PAR _ _ _ T",
-                      options: ["AGE","APE","ATE","ACE","ARE"],
-                      correct: 1,
+                      options: ["APE","AGE","ATE","ACE","ARE"],
+                      correct: 0,
                       explanation: "The answer is APE, making PARAPET. 'Ape' is a large primate. A parapet is a low wall along the edge of a roof or bridge. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
@@ -10327,11 +10327,11 @@ const vrData = {
                       options: [
                               "A",
                               "E",
-                              "I",
                               "O",
+                              "I",
                               "U"
                       ],
-                      correct: 2,
+                      correct: 3,
                       explanation: "The answer is I, making SCIENCE. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
@@ -10342,18 +10342,18 @@ const vrData = {
                               "G",
                               "H",
                               "J",
-                              "K",
-                              "N"
+                              "N",
+                              "K"
                       ],
-                      correct: 3,
+                      correct: 4,
                       explanation: "The answer is K, making KNOWLEDGE. The K is silent at the start of the word. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
                       id: 14,
                       difficulty: 2,
                       question: "Which single letter completes this word? RHYTH _",
-                      options: ["T","N","S","M","X"],
-                      correct: 3,
+                      options: ["M","T","S","N","X"],
+                      correct: 0,
                       explanation: "The answer is M, making RHYTHM. This is a commonly misspelt word with no obvious vowels. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
               {
@@ -10374,40 +10374,40 @@ const vrData = {
                       id: 16,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? FORE _ _ _",
-                      options: ["MAX","MEN","MAP","MAT","MAN"],
-                      correct: 4,
+                      options: ["MAX","MEN","MAN","MAT","MAP"],
+                      correct: 2,
                       explanation: "The answer is MAN, making FOREMAN. A foreman is a person in charge of a group of workers. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 17,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? W _ _ _ OW",
-                      options: ["ALL","ILL","OWL","ELF","INN"],
-                      correct: 1,
+                      options: ["ALL","ELF","OWL","ILL","INN"],
+                      correct: 3,
                       explanation: "The answer is ILL, making WILLOW. A willow is a type of tree often found near rivers. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 18,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ ROOM",
-                      options: ["BIT","BAT","BOT","BUT","BET"],
-                      correct: 1,
+                      options: ["BIT","BET","BOT","BUT","BAT"],
+                      correct: 4,
                       explanation: "The answer is BAT, making BATHROOM. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 19,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ TAGE",
-                      options: ["CAT","CUT","COT","CAN","CAP"],
-                      correct: 2,
+                      options: ["COT","CUT","CAT","CAN","CAP"],
+                      correct: 0,
                       explanation: "The answer is COT, making COTTAGE. A cottage is a small house, typically in the countryside. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 20,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ ITAL",
-                      options: ["CAN","COP","CUP","CAP","CAR"],
-                      correct: 3,
+                      options: ["CAN","CAP","CUP","COP","CAR"],
+                      correct: 1,
                       explanation: "The answer is CAP, making CAPITAL. A capital can mean the main city of a country or an uppercase letter. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               }
       ,
@@ -10415,32 +10415,32 @@ const vrData = {
                       id: 21,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ PET",
-                      options: ["TIP","CAR","MOP","COP","TAP"],
-                      correct: 1,
+                      options: ["TIP","MOP","CAR","COP","TAP"],
+                      correct: 2,
                       explanation: "The answer is CAR, making CARPET. A carpet is a thick textile floor covering. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
                       id: 22,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ DEN",
-                      options: ["BUR","RAN","GAR","JOR","TEN"],
-                      correct: 2,
+                      options: ["BUR","RAN","JOR","GAR","TEN"],
+                      correct: 3,
                       explanation: "The answer is GAR, making GARDEN. A garden is an area of ground used for growing flowers, fruit or vegetables. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
               {
                       id: 23,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ NET",
-                      options: ["TIN","COR","FUN","PLA","VAL"],
-                      correct: 3,
+                      options: ["TIN","COR","FUN","VAL","PLA"],
+                      correct: 4,
                       explanation: "The answer is PLA, making PLANET. A planet is a large body that orbits a star, such as Earth. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 24,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ DLE",
-                      options: ["BIN","TIL","MID","CAN","GRI"],
-                      correct: 3,
+                      options: ["CAN","TIL","MID","BIN","GRI"],
+                      correct: 0,
                       explanation: "The answer is CAN, making CANDLE. A candle is a cylinder of wax with a wick that produces light when lit. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
@@ -10455,32 +10455,32 @@ const vrData = {
                       id: 26,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ BIT",
-                      options: ["HIP","TAB","DOG","COP","RAB"],
-                      correct: 4,
+                      options: ["HIP","TAB","RAB","COP","DOG"],
+                      correct: 2,
                       explanation: "The answer is RAB, making RABBIT. A rabbit is a small furry animal with long ears. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 27,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ VER",
-                      options: ["TIN","GOL","BRA","COP","SIL"],
-                      correct: 4,
+                      options: ["TIN","GOL","BRA","SIL","COP"],
+                      correct: 3,
                       explanation: "The answer is SIL, making SILVER. Silver is a precious grey-white metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 28,
                       difficulty: 1,
                       question: "Which three-letter word completes this longer word? _ _ _ ROT",
-                      options: ["DOG","FIN","JAM","CAR","TIP"],
-                      correct: 3,
+                      options: ["DOG","FIN","JAM","TIP","CAR"],
+                      correct: 4,
                       explanation: "The answer is CAR, making CARROT. A carrot is an orange root vegetable. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
                       id: 29,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ TAIN",
-                      options: ["HOP","JAR","CAP","TIN","MOB"],
-                      correct: 2,
+                      options: ["CAP","JAR","HOP","TIN","MOB"],
+                      correct: 0,
                       explanation: "The answer is CAP, making CAPTAIN. A captain is the leader of a team or the commander of a ship. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
@@ -10495,16 +10495,16 @@ const vrData = {
                       id: 31,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ TERN",
-                      options: ["TIP","HUB","MOB","LAN","JAR"],
-                      correct: 3,
+                      options: ["TIP","HUB","LAN","MOB","JAR"],
+                      correct: 2,
                       explanation: "The answer is LAN, making LANTERN. A lantern is a lamp with a protective case, often used outdoors. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 32,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ PTER",
-                      options: ["JAR","CHA","TIP","MOB","HUB"],
-                      correct: 1,
+                      options: ["JAR","MOB","TIP","CHA","HUB"],
+                      correct: 3,
                       explanation: "The answer is CHA, making CHAPTER. A chapter is a main division of a book. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
@@ -10519,32 +10519,32 @@ const vrData = {
                       id: 34,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ TURE",
-                      options: ["TIP","JAR","VEN","HUB","MOB"],
-                      correct: 2,
+                      options: ["VEN","JAR","TIP","HUB","MOB"],
+                      correct: 0,
                       explanation: "The answer is VEN, making VENTURE. A venture is a risky or daring undertaking. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 35,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ IAGE",
-                      options: ["MOB","HUB","TIP","MAR","JAR"],
-                      correct: 3,
+                      options: ["MOB","MAR","TIP","HUB","JAR"],
+                      correct: 1,
                       explanation: "The answer is MAR, making MARRIAGE. Marriage is the legal union of two people as partners. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 36,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ RAGE",
-                      options: ["TIP","STO","JAR","HUB","MOB"],
-                      correct: 1,
+                      options: ["TIP","JAR","STO","HUB","MOB"],
+                      correct: 2,
                       explanation: "The answer is STO, making STORAGE. Storage is the action of keeping things in a particular place for future use. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
                       id: 37,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ LISH",
-                      options: ["TIP","PUB","JAR","MOB","HUB"],
-                      correct: 1,
+                      options: ["TIP","MOB","JAR","PUB","HUB"],
+                      correct: 3,
                       explanation: "The answer is PUB, making PUBLISH. Publish means to produce and distribute a book, newspaper or other written work. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
@@ -10559,16 +10559,16 @@ const vrData = {
                       id: 39,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ THER",
-                      options: ["JAR","TIP","WEA","MOB","HUB"],
-                      correct: 2,
+                      options: ["WEA","TIP","JAR","MOB","HUB"],
+                      correct: 0,
                       explanation: "The answer is WEA, making WEATHER. Weather is the state of the atmosphere at a given time and place. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 40,
                       difficulty: 2,
                       question: "Which three-letter word completes this longer word? _ _ _ LUME",
-                      options: ["MOB","JAR","TIP","VOL","HUB"],
-                      correct: 3,
+                      options: ["MOB","VOL","TIP","JAR","HUB"],
+                      correct: 1,
                       explanation: "The answer is VOL, making VOLUME. Volume is the amount of space something occupies, or the loudness of a sound. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
@@ -10583,79 +10583,79 @@ const vrData = {
                       id: 42,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ RENDER",
-                      options: ["TIP","SUR","MOB","HUB","JAR"],
-                      correct: 1,
+                      options: ["TIP","HUB","MOB","SUR","JAR"],
+                      correct: 3,
                       explanation: "The answer is SUR, making SURRENDER. Surrender means to give up or yield to the power of another. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 43,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ MANENT",
-                      options: ["MOB","TIP","PER","HUB","JAR"],
-                      correct: 2,
+                      options: ["MOB","TIP","JAR","HUB","PER"],
+                      correct: 4,
                       explanation: "The answer is PER, making PERMANENT. Permanent means lasting for an indefinitely long time. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 44,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ NITURE",
-                      options: ["TIP","MOB","HUB","FUR","JAR"],
-                      correct: 3,
+                      options: ["FUR","MOB","HUB","TIP","JAR"],
+                      correct: 0,
                       explanation: "The answer is FUR, making FURNITURE. Furniture refers to movable items such as tables, chairs and beds used in a home. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
                       id: 45,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ ARTURE",
-                      options: ["MOB","TIP","HUB","JAR","DEP"],
-                      correct: 4,
+                      options: ["MOB","DEP","HUB","JAR","TIP"],
+                      correct: 1,
                       explanation: "The answer is DEP, making DEPARTURE. Departure means the act of leaving, especially to start a journey. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
                       id: 46,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ TACLE",
-                      options: ["HUB","MOB","TIP","SPE","JAR"],
-                      correct: 3,
+                      options: ["HUB","MOB","SPE","TIP","JAR"],
+                      correct: 2,
                       explanation: "The answer is SPE, making SPECTACLE. A spectacle is an impressive or remarkable sight or event. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
               {
                       id: 47,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ VENTURE",
-                      options: ["TIP","JAR","ADV","MOB","HUB"],
-                      correct: 2,
+                      options: ["TIP","JAR","MOB","ADV","HUB"],
+                      correct: 3,
                       explanation: "The answer is ADV, making ADVENTURE. An adventure is an exciting and sometimes dangerous experience. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 48,
                       difficulty: 3,
                       question: "Which three-letter word completes this longer word? _ _ _ GUAGE",
-                      options: ["HUB","LAN","MOB","TIP","JAR"],
-                      correct: 1,
+                      options: ["HUB","JAR","MOB","TIP","LAN"],
+                      correct: 4,
                       explanation: "The answer is LAN, making LANGUAGE. Language is the method of human communication using words. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 49,
                       difficulty: 1,
                       question: "Which letter completes this word? G _ F T",
-                      options: ["A","I","R","N","L"],
-                      correct: 1,
+                      options: ["I","A","R","N","L"],
+                      correct: 0,
                       explanation: "The letter is I, making GIFT. A gift is a present given to someone. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 50,
                       difficulty: 1,
                       question: "Which letter completes this word? H _ L P",
-                      options: ["A","O","E","U","I"],
-                      correct: 2,
+                      options: ["A","E","U","O","I"],
+                      correct: 1,
                       explanation: "The letter is E, making HELP. Help means to assist or aid someone. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 51,
                       difficulty: 1,
                       question: "Which letter completes this word? G _ L D",
-                      options: ["A","E","I","O","U"],
+                      options: ["A","I","E","O","U"],
                       correct: 3,
                       explanation: "The letter is O, making GOLD. Gold is a precious yellow metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
@@ -10679,47 +10679,47 @@ const vrData = {
                       id: 54,
                       difficulty: 1,
                       question: "Which letter completes this word? M _ L K",
-                      options: ["A","O","I","U","E"],
-                      correct: 2,
+                      options: ["I","O","A","U","E"],
+                      correct: 0,
                       explanation: "The letter is I, making MILK. Milk is a white liquid produced by cows, often used as a drink. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
               {
                       id: 55,
                       difficulty: 1,
                       question: "Which letter completes this word? S _ F T",
-                      options: ["U","I","A","O","E"],
-                      correct: 3,
+                      options: ["U","O","A","I","E"],
+                      correct: 1,
                       explanation: "The letter is O, making SOFT. Soft means easy to press or bend, not hard or firm. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 56,
                       difficulty: 2,
                       question: "Which letter completes this word? G R _ S P",
-                      options: ["U","E","I","O","A"],
-                      correct: 4,
+                      options: ["U","E","A","O","I"],
+                      correct: 2,
                       explanation: "The letter is A, making GRASP. Grasp means to seize and hold firmly. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 57,
                       difficulty: 2,
                       question: "Which letter completes this word? S C _ L P",
-                      options: ["O","A","E","I","U"],
-                      correct: 1,
+                      options: ["O","U","E","A","I"],
+                      correct: 3,
                       explanation: "The letter is A, making SCALP. The scalp is the skin covering the top of the head. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 58,
                       difficulty: 2,
                       question: "Which letter completes this word? S T _ M P",
-                      options: ["E","I","O","U","A"],
-                      correct: 4,
+                      options: ["O","A","E","U","I"],
+                      correct: 1,
                       explanation: "The letter is A, making STAMP. A stamp is a small adhesive label placed on a letter to pay for postage. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 59,
                       difficulty: 2,
                       question: "Which letter completes this word? F R _ G H T",
-                      options: ["A","E","I","O","U"],
+                      options: ["A","I","O","E","U"],
                       correct: 2,
                       explanation: "The letter is I, making FRIGHT. Fright means a sudden feeling of fear. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
@@ -10727,23 +10727,23 @@ const vrData = {
                       id: 60,
                       difficulty: 2,
                       question: "Which letter completes this word? S P L _ S H",
-                      options: ["E","I","O","U","A"],
-                      correct: 4,
+                      options: ["E","I","U","A","O"],
+                      correct: 3,
                       explanation: "The letter is A, making SPLASH. A splash is a sound made by something striking water. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
                       id: 61,
                       difficulty: 2,
                       question: "Which letter completes this word? C L _ T C H",
-                      options: ["A","E","I","O","U"],
-                      correct: 4,
+                      options: ["A","E","O","U","I"],
+                      correct: 3,
                       explanation: "The letter is U, making CLUTCH. Clutch means to grasp something tightly. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
                       id: 62,
                       difficulty: 2,
                       question: "Which letter completes this word? S C R _ T C H",
-                      options: ["E","I","O","U","A"],
+                      options: ["A","I","O","U","E"],
                       correct: 4,
                       explanation: "The letter is A, making SCRATCH. Scratch means to score or mark a surface with a sharp object. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
@@ -10751,8 +10751,8 @@ const vrData = {
                       id: 63,
                       difficulty: 2,
                       question: "Which letter completes this word? S T R _ T C H",
-                      options: ["A","I","O","U","E"],
-                      correct: 4,
+                      options: ["E","I","O","U","A"],
+                      correct: 0,
                       explanation: "The letter is E, making STRETCH. Stretch means to extend something to its full length. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
@@ -10767,7 +10767,7 @@ const vrData = {
                       id: 65,
                       difficulty: 3,
                       question: "Which letter completes this word? S T R _ N G T H",
-                      options: ["A","E","I","O","U"],
+                      options: ["I","E","O","A","U"],
                       correct: 1,
                       explanation: "The letter is E, making STRENGTH. Strength is the quality of being physically powerful. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
@@ -10775,7 +10775,7 @@ const vrData = {
                       id: 66,
                       difficulty: 3,
                       question: "Which letter completes this word? T H R _ U G H",
-                      options: ["A","E","I","O","U"],
+                      options: ["A","E","U","O","I"],
                       correct: 3,
                       explanation: "The letter is O, making THROUGH. Through means moving in one side and out of the other. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
@@ -10783,15 +10783,15 @@ const vrData = {
                       id: 67,
                       difficulty: 3,
                       question: "Which letter completes this word? R H _ T H M",
-                      options: ["A","E","I","O","Y"],
-                      correct: 4,
+                      options: ["A","O","I","Y","E"],
+                      correct: 3,
                       explanation: "The letter is Y, making RHYTHM. Rhythm is a strong, regular repeated pattern of movement or sound. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 68,
                       difficulty: 3,
                       question: "Which letter completes this word? T W _ L F T H",
-                      options: ["A","E","I","O","U"],
+                      options: ["I","E","O","A","U"],
                       correct: 1,
                       explanation: "The letter is E, making TWELFTH. Twelfth means the ordinal number for twelve, coming after eleventh. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
@@ -10807,7 +10807,7 @@ const vrData = {
                       id: 70,
                       difficulty: 3,
                       question: "Which letter completes this word? S M _ D G E",
-                      options: ["A","E","I","O","U"],
+                      options: ["O","I","E","A","U"],
                       correct: 4,
                       explanation: "The letter is U, making SMUDGE. A smudge is a blurred or smeared mark on a surface. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
@@ -10815,15 +10815,15 @@ const vrData = {
                       id: 71,
                       difficulty: 3,
                       question: "Which letter completes this word? W R _ S T L E",
-                      options: ["A","E","I","O","U"],
-                      correct: 1,
+                      options: ["A","O","I","U","E"],
+                      correct: 3,
                       explanation: "The letter is E, making WRESTLE. Wrestle means to struggle or fight by grappling with an opponent. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 72,
                       difficulty: 3,
                       question: "Which letter completes this word? S C H _ D U L E",
-                      options: ["A","E","I","O","U"],
+                      options: ["A","I","E","U","O"],
                       correct: 1,
                       explanation: "The letter is E, making SCHEDULE. A schedule is a plan that lists events or tasks and the times they will happen. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
@@ -10831,16 +10831,16 @@ const vrData = {
                       id: 73,
                       difficulty: 3,
                       question: "Which letter completes this word? P L _ D G E",
-                      options: ["A","E","I","O","U"],
-                      correct: 1,
+                      options: ["A","O","I","E","U"],
+                      correct: 3,
                       explanation: "The letter is E, making PLEDGE. A pledge is a solemn promise or undertaking. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 74,
                       difficulty: 1,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LING",
-                      options: ["CUP","DAR","JAM","TIP","MOB"],
-                      correct: 1,
+                      options: ["DAR","CUP","JAM","TIP","MOB"],
+                      correct: 0,
                       explanation: "The answer is DAR, making DARLING. Darling is an affectionate term for someone dearly loved. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
@@ -10879,56 +10879,56 @@ const vrData = {
                       id: 79,
                       difficulty: 1,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LET",
-                      options: ["HAM","CUP","BUL","TIP","JAM"],
-                      correct: 2,
+                      options: ["BUL","CUP","HAM","TIP","JAM"],
+                      correct: 0,
                       explanation: "The answer is BUL, making BULLET. A bullet is a small metal projectile fired from a gun. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 80,
                       difficulty: 1,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) PEN",
-                      options: ["CUP","JAM","TIP","HAP","HUB"],
-                      correct: 3,
+                      options: ["CUP","HAP","TIP","JAM","HUB"],
+                      correct: 1,
                       explanation: "The answer is HAP, making HAPPEN. Happen means to take place or occur. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 81,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TURE",
-                      options: ["JAM","CUL","TIP","HUB","MOB"],
-                      correct: 1,
+                      options: ["JAM","TIP","CUL","HUB","MOB"],
+                      correct: 2,
                       explanation: "The answer is CUL, making CULTURE. Culture refers to the customs, arts and achievements of a particular group or nation. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 82,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TORY",
-                      options: ["CUP","FAC","TIP","HUB","MOB"],
-                      correct: 1,
+                      options: ["CUP","HUB","TIP","FAC","MOB"],
+                      correct: 3,
                       explanation: "The answer is FAC, making FACTORY. A factory is a building where goods are manufactured. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 83,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) VOUR",
-                      options: ["CUP","TIP","FLA","HUB","MOB"],
-                      correct: 2,
+                      options: ["CUP","TIP","MOB","HUB","FLA"],
+                      correct: 4,
                       explanation: "The answer is FLA, making FLAVOUR. Flavour is the taste of food or drink. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 84,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) IBLE",
-                      options: ["CUP","TIP","HUB","VIS","MOB"],
-                      correct: 3,
+                      options: ["VIS","TIP","HUB","CUP","MOB"],
+                      correct: 0,
                       explanation: "The answer is VIS, making VISIBLE. Visible means able to be seen. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
                       id: 85,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SAGE",
-                      options: ["CUP","TIP","HUB","MOB","MES"],
-                      correct: 4,
+                      options: ["CUP","MES","HUB","MOB","TIP"],
+                      correct: 1,
                       explanation: "The answer is MES, making MESSAGE. A message is a piece of information sent from one person to another. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
@@ -10943,112 +10943,112 @@ const vrData = {
                       id: 87,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LACE",
-                      options: ["CUP","REP","TIP","HUB","MOB"],
-                      correct: 1,
+                      options: ["CUP","HUB","TIP","REP","MOB"],
+                      correct: 3,
                       explanation: "The answer is REP, making REPLACE. Replace means to put something back or to substitute one thing for another. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 88,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RATE",
-                      options: ["CUP","TIP","OPE","HUB","MOB"],
-                      correct: 2,
+                      options: ["CUP","TIP","MOB","HUB","OPE"],
+                      correct: 4,
                       explanation: "The answer is OPE, making OPERATE. Operate means to control the functioning of a machine or to perform surgery. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 89,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CADE",
-                      options: ["CUP","TIP","HUB","ARC","MOB"],
-                      correct: 3,
+                      options: ["ARC","TIP","HUB","CUP","MOB"],
+                      correct: 0,
                       explanation: "The answer is ARC, making ARCADE. An arcade is a covered passage with shops along one or both sides. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 90,
                       difficulty: 2,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LUME",
-                      options: ["CUP","TIP","HUB","MOB","VOL"],
-                      correct: 4,
+                      options: ["CUP","VOL","HUB","MOB","TIP"],
+                      correct: 1,
                       explanation: "The answer is VOL, making VOLUME. Volume is the amount of space something occupies, or the loudness of a sound. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 91,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OSITY",
-                      options: ["MOB","TIP","HUB","CUR","JAR"],
-                      correct: 3,
+                      options: ["MOB","TIP","CUR","HUB","JAR"],
+                      correct: 2,
                       explanation: "The answer is CUR, making CURIOSITY. Curiosity is a strong desire to know or learn something. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 92,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) QUENT",
-                      options: ["TIP","FRE","HUB","MOB","JAR"],
-                      correct: 1,
+                      options: ["TIP","MOB","HUB","FRE","JAR"],
+                      correct: 3,
                       explanation: "The answer is FRE, making FREQUENT. Frequent means occurring or done many times at short intervals. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               },
               {
                       id: 93,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SIBLE",
-                      options: ["TIP","HUB","POS","MOB","JAR"],
-                      correct: 2,
+                      options: ["TIP","HUB","JAR","MOB","POS"],
+                      correct: 4,
                       explanation: "The answer is POS, making POSSIBLE. Possible means able to be done or achieved. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
               },
               {
                       id: 94,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CIENT",
-                      options: ["TIP","HUB","MOB","EFF","JAR"],
-                      correct: 3,
+                      options: ["EFF","HUB","MOB","TIP","JAR"],
+                      correct: 0,
                       explanation: "The answer is EFF, making EFFICIENT. Efficient means achieving maximum results with minimum waste. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
               },
               {
                       id: 95,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BRATE",
-                      options: ["TIP","HUB","MOB","JAR","CEL"],
-                      correct: 4,
+                      options: ["TIP","CEL","MOB","JAR","HUB"],
+                      correct: 1,
                       explanation: "The answer is CEL, making CELEBRATE. Celebrate means to mark a special occasion with enjoyable activities. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
               },
               {
                       id: 96,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TIFUL",
-                      options: ["JAR","TIP","HUB","MOB","BEA"],
-                      correct: 4,
+                      options: ["JAR","TIP","BEA","MOB","HUB"],
+                      correct: 2,
                       explanation: "The answer is BEA, making BEAUTIFUL. Beautiful means pleasing to the senses or mind. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
               },
               {
                       id: 97,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GRANCE",
-                      options: ["TIP","FRA","HUB","MOB","JAR"],
-                      correct: 1,
+                      options: ["TIP","MOB","HUB","FRA","JAR"],
+                      correct: 3,
                       explanation: "The answer is FRA, making FRAGRANCE. A fragrance is a pleasant, sweet smell. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
               },
               {
                       id: 98,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LENGE",
-                      options: ["TIP","HUB","CHA","MOB","JAR"],
-                      correct: 2,
+                      options: ["TIP","HUB","JAR","MOB","CHA"],
+                      correct: 4,
                       explanation: "The answer is CHA, making CHALLENGE. A challenge is a task or situation that tests someone's abilities. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
               },
               {
                       id: 99,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GMENT",
-                      options: ["TIP","HUB","MOB","JUD","JAR"],
-                      correct: 3,
+                      options: ["JUD","HUB","MOB","TIP","JAR"],
+                      correct: 0,
                       explanation: "The answer is JUD, making JUDGEMENT. Judgement is the ability to make considered decisions or come to sensible conclusions. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
               },
               {
                       id: 100,
                       difficulty: 3,
                       question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) DERER",
-                      options: ["TIP","HUB","MOB","JAR","WAN"],
-                      correct: 4,
+                      options: ["MOB","WAN","TIP","JAR","HUB"],
+                      correct: 1,
                       explanation: "The answer is WAN, making WANDERER. A wanderer is a person who travels from place to place without a fixed home. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
               }
       ,
@@ -11057,13 +11057,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Which three-letter word completes this longer word?\n\nF ( _ _ _ ) YARD",
           "options": [
-            "ARM",
+            "OAR",
             "ART",
             "ARK",
-            "OAR",
+            "ARM",
             "AIR"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The three missing letters are A, R, M making the word ARM. The complete word is FARMYARD. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
         {
@@ -11071,13 +11071,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Which three-letter word completes this longer word?\n\nWAR ( _ _ _ ) S",
           "options": [
-            "DEN",
+            "MEN",
             "TEN",
             "HEN",
             "PEN",
-            "MEN"
+            "DEN"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The three missing letters are D, E, N making the word DEN. The complete word is WARDENS. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
@@ -11099,13 +11099,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Which three-letter word completes this longer word?\n\nPAR ( _ _ _ ) S",
           "options": [
-            "ROT",
             "ROD",
+            "ROT",
             "ROW",
             "RAN",
             "RAT"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The three missing letters are R, O, T making the word ROT. The complete word is PARROTS. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
         {
@@ -11113,13 +11113,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Which three-letter word completes this longer word?\n\nBAL ( _ _ _ ) S",
           "options": [
-            "LET",
-            "LOT",
             "LIT",
+            "LOT",
+            "LET",
             "LAP",
             "LID"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The three missing letters are L, E, T making the word LET. The complete word is BALLETS. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
@@ -11127,13 +11127,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Which three-letter word completes this longer word?\n\nHAM ( _ _ _ ) S",
           "options": [
-            "PER",
+            "FOR",
             "HER",
             "FUR",
-            "FOR",
+            "PER",
             "OUR"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The three missing letters are P, E, R making the word PER. The complete word is HAMPERS. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
@@ -11141,13 +11141,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Which three-letter word completes this longer word?\n\nDAM ( _ _ _ ) D",
           "options": [
-            "AGE",
+            "ARE",
             "ACE",
             "ATE",
             "APE",
-            "ARE"
+            "AGE"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The three missing letters are A, G, E making the word AGE. The complete word is DAMAGED. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
         },
         {
@@ -11169,13 +11169,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nCUS ( _ _ _ ) S",
           "options": [
-            "TOM",
             "TOP",
+            "TOM",
             "TON",
             "TOW",
             "TOE"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The three missing letters are T, O, M making the word TOM. The complete word is CUSTOMS. A tom is a male cat. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
         {
@@ -11183,13 +11183,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nHOS ( _ _ _ ) E",
           "options": [
-            "TAG",
-            "TAB",
             "TAN",
+            "TAB",
+            "TAG",
             "TAP",
             "TAR"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The three missing letters are T, A, G making the word TAG. The complete word is HOSTAGE. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
@@ -11197,13 +11197,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nBUT ( _ _ _ ) S",
           "options": [
-            "TON",
+            "TEN",
             "TIN",
             "TAN",
-            "TEN",
+            "TON",
             "TUN"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The three missing letters are T, O, N making the word TON. The complete word is BUTTONS. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
         },
         {
@@ -11211,13 +11211,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nCOT ( _ _ _ ) E",
           "options": [
-            "TAG",
+            "TAB",
             "TAN",
             "TAP",
             "TAR",
-            "TAB"
+            "TAG"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The three missing letters are T, A, G making the word TAG. The complete word is COTTAGE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
         {
@@ -11239,13 +11239,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nFOR ( _ _ _ ) DEN",
           "options": [
-            "BID",
             "BAD",
+            "BID",
             "BED",
             "BUD",
             "BOD"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The three missing letters are B, I, D making the word BID. The complete word is FORBIDDEN. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
@@ -11253,13 +11253,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nMAN ( _ _ _ ) R",
           "options": [
-            "AGE",
-            "ACE",
             "ATE",
+            "ACE",
+            "AGE",
             "APE",
             "ARE"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The three missing letters are A, G, E making the word AGE. The complete word is MANAGER. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
         },
         {
@@ -11267,13 +11267,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nDOC ( _ _ _ ) S",
           "options": [
-            "TOR",
+            "TOW",
             "TOP",
             "TON",
-            "TOW",
+            "TOR",
             "TOE"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The three missing letters are T, O, R making the word TOR. The complete word is DOCTORS. A tor is a high rocky hill. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
@@ -11281,13 +11281,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Which three-letter word completes this longer word?\n\nCOM ( _ _ _ ) E",
           "options": [
-            "PET",
+            "POT",
             "PEN",
             "PEW",
             "PIE",
-            "POT"
+            "PET"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The three missing letters are P, E, T making the word PET. The complete word is COMPETE. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
         {
@@ -11309,13 +11309,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Which three-letter word completes this longer word?\n\nMAG ( _ _ _ ) IC",
           "options": [
-            "NET",
             "NIT",
+            "NET",
             "NOT",
             "NUT",
             "NAT"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The three missing letters are N, E, T making the word NET. The complete word is MAGNETIC. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
         },
         {
@@ -11323,13 +11323,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Which three-letter word completes this longer word?\n\nTEM ( _ _ _ ) ATURE",
           "options": [
-            "PER",
-            "PAR",
             "FOR",
+            "PAR",
+            "PER",
             "HER",
             "OUR"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The three missing letters are P, E, R making the word PER. The complete word is TEMPERATURE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
         {
@@ -11337,13 +11337,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Which three-letter word completes this longer word?\n\nCAR ( _ _ _ ) TER",
           "options": [
-            "PEN",
+            "PUN",
             "PIN",
             "PAN",
-            "PUN",
+            "PEN",
             "PON"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The three missing letters are P, E, N making the word PEN. The complete word is CARPENTER. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
@@ -11351,13 +11351,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Which three-letter word completes this longer word?\n\nDIS ( _ _ _ ) CE",
           "options": [
-            "TAN",
+            "TUN",
             "TIN",
             "TON",
             "TEN",
-            "TUN"
+            "TAN"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The three missing letters are T, A, N making the word TAN. The complete word is DISTANCE. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
@@ -11379,13 +11379,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Which three-letter word completes this longer word?\n\nVOL ( _ _ _ ) O",
           "options": [
-            "CAN",
             "CAR",
+            "CAN",
             "CAT",
             "CAP",
             "CUP"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The three missing letters are C, A, N making the word CAN. The complete word is VOLCANO. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
@@ -11414,12 +11414,12 @@ const vrData = {
                       question: "If the code for HELP is GDKO, what rule has been used?",
                       options: [
                               "Each letter moves forward 1",
-                              "Each letter moves back 1",
+                              "Letters are reversed",
                               "Each letter moves forward 2",
                               "Each letter moves back 2",
-                              "Letters are reversed"
+                              "Each letter moves back 1"
                       ],
-                      correct: 1,
+                      correct: 4,
                       explanation: "H→G (back 1), E→D (back 1), L→K (back 1), P→O (back 1). Each letter has been moved one place back in the alphabet. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11427,13 +11427,13 @@ const vrData = {
                       difficulty: 3,
                       question: "If COLD is coded as DPME, what is WARM coded as?",
                       options: [
-            "XCSN",
             "XBSN",
+            "XCSN",
             "XBTN",
             "XBSO",
             "YCSN"
           ],
-                      correct: 1,
+                      correct: 0,
                       explanation: "Each letter moves forward 1: C→D, O→P, L→M, D→E. Applying the same rule to WARM: W→X, A→B, R→S, M→N = XBSN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11442,12 +11442,12 @@ const vrData = {
                       question: "If the code for GAME is HBNF, what rule has been used?",
                       options: [
             "Each letter moves forward 2",
-            "Each letter moves back 1",
             "Each letter moves forward 1",
+            "Each letter moves back 1",
             "Each letter moves back 2",
             "Alternate forward and back"
           ],
-                      correct: 2,
+                      correct: 1,
                       explanation: "G→H (+1), A→B (+1), M→N (+1), E→F (+1). Each letter has been moved one place forward in the alphabet. Tip: +1 is the most common GL code — practise until it's automatic! ✓"
               },
               {
@@ -11457,11 +11457,11 @@ const vrData = {
                       options: [
             "SHIM",
             "SHOP",
-            "SHIN",
             "SHIP",
+            "SHIN",
             "SKIP"
           ],
-                      correct: 3,
+                      correct: 2,
                       explanation: "Each letter in the code has been moved forward 3. To decode, move back 3: V→S, K→H, L→I, S→P = SHIP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11470,12 +11470,12 @@ const vrData = {
                       question: "If RAIN is coded as UDLQ, what is SNOW coded as?",
                       options: [
             "VQSZ",
-            "VQRW",
-            "VRQZ",
             "UQRZ",
-            "VQRZ"
+            "VRQZ",
+            "VQRZ",
+            "VQRW"
           ],
-                      correct: 4,
+                      correct: 3,
                       explanation: "Each letter moves forward 3: S→V, N→Q, O→R, W→Z = VQRZ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11483,9 +11483,9 @@ const vrData = {
                       difficulty: 3,
                       question: "If TREE is coded as WUHH, what word is coded as FROG?",
                       options: [
-            "COAL",
-            "COLD",
             "COOL",
+            "COLD",
+            "COAL",
             "CORD",
             "COIL"
           ],
@@ -11512,12 +11512,12 @@ const vrData = {
                       question: "If CAT is coded as DBU, what is the code for DOG?",
                       options: [
             "CPH",
-            "ENH",
             "EPH",
+            "FOH",
             "EPG",
-            "FOH"
+            "ENH"
           ],
-                      correct: 2,
+                      correct: 1,
                       explanation: "The code moves each letter forward by 1 in the alphabet. C→D, A→B, T→U. Apply the same rule to DOG: D→E, O→P, G→H. The code is EPH. ✓"
               },
               {
@@ -11526,9 +11526,9 @@ const vrData = {
                       question: "If DOG is coded as CNF, what is the code for SUN?",
                       options: [
             "RTN",
-            "TVO",
-            "RUM",
             "SVM",
+            "RUM",
+            "TVO",
             "RTM"
           ],
                       correct: 4,
@@ -11541,9 +11541,9 @@ const vrData = {
                       options: [
             "FOG",
             "DOG",
-            "DIG",
+            "HOG",
             "COG",
-            "HOG"
+            "DIG"
           ],
                       correct: 1,
                       explanation: "To decode, move each letter back 1: E→D, P→O, H→G. The word is DOG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -11553,10 +11553,10 @@ const vrData = {
                       difficulty: 1,
                       question: "If SUN is coded as RTM, what is the code for PEN?",
                       options: [
-            "OEM",
+            "PCM",
             "QFO",
             "ODM",
-            "PCM",
+            "OEM",
             "OFM"
           ],
                       correct: 2,
@@ -11568,10 +11568,10 @@ const vrData = {
                       question: "If PEN is coded as RGP, what is the code for HAT?",
                       options: [
             "ICV",
-            "IBU",
+            "JBV",
             "JCU",
             "JCV",
-            "JBV"
+            "IBU"
           ],
                       correct: 3,
                       explanation: "Move each letter forward 2: H→J, A→C, T→V. HAT becomes JCV. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -11582,8 +11582,8 @@ const vrData = {
                       question: "If FIG is coded as DGE, what word is coded as AMP?",
                       options: [
             "COP",
-            "BNQ",
             "COQ",
+            "BNQ",
             "CNR",
             "COR"
           ],
@@ -11595,10 +11595,10 @@ const vrData = {
                       difficulty: 2,
                       question: "If JUMP is coded as KVNQ, what is LAND coded as?",
                       options: [
-            "MBOÉ",
             "MBOE",
-            "LBOE",
+            "MBOE",
             "MBNE",
+            "LBOE",
             "MCOE"
           ],
                       correct: 1,
@@ -11612,8 +11612,8 @@ const vrData = {
             "DPTP",
             "DQSP",
             "DQTP",
-            "DQUP",
-            "DRTP"
+            "DRTP",
+            "DQUP"
           ],
                       correct: 2,
                       explanation: "Move each letter forward 2: B→D, O→Q, R→T, N→P. BORN becomes DQTP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -11623,11 +11623,11 @@ const vrData = {
                       difficulty: 3,
                       question: "If DUSK is coded as GXVN, what is the code for DESK?",
                       options: [
-            "GHUN",
+            "GFVN",
             "GHVM",
             "GIVN",
             "GHVN",
-            "GFVN"
+            "GHUN"
           ],
                       correct: 3,
                       explanation: "Move each letter forward 3: D→G, E→H, S→V, K→N. DESK becomes GHVN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -11701,24 +11701,24 @@ const vrData = {
                       id: 22,
                       difficulty: 1,
                       question: "If FIG is coded as GJH, what is the code for DOG?",
-                      options: ["CPH","EPG","EPH","EOH","DPH"],
-                      correct: 2,
+                      options: ["EPH","EPG","CPH","EOH","DPH"],
+                      correct: 0,
                       explanation: "Move each letter forward 1: D→E, O→P, G→H. DOG becomes EPH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 23,
                       difficulty: 1,
                       question: "If CAT is coded as BZS, what is the code for SUN?",
-                      options: ["RTN","RUM","RTM","RVM","STM"],
-                      correct: 2,
+                      options: ["RTN","RTM","RUM","RVM","STM"],
+                      correct: 1,
                       explanation: "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 24,
                       difficulty: 1,
                       question: "If DOG is coded as EPH, what is the code for PEN?",
-                      options: ["QEO","QFO","PFO","QFN","QGO"],
-                      correct: 1,
+                      options: ["QEO","PFO","QFO","QFN","QGO"],
+                      correct: 2,
                       explanation: "Move each letter forward 1: P→Q, E→F, N→O. PEN becomes QFO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11741,16 +11741,16 @@ const vrData = {
                       id: 27,
                       difficulty: 1,
                       question: "If HAT is coded as IBU, what is the code for BED?",
-                      options: ["CEE","CFF","BFE","CFE","CGE"],
-                      correct: 3,
+                      options: ["CFE","CFF","BFE","CEE","CGE"],
+                      correct: 0,
                       explanation: "Move each letter forward 1: B→C, E→F, D→E. BED becomes CFE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 28,
                       difficulty: 1,
                       question: "If BUS is coded as ATR, what is the code for RUN?",
-                      options: ["QTN","QUM","RTM","STM","QTM"],
-                      correct: 4,
+                      options: ["QTN","QTM","RTM","STM","QUM"],
+                      correct: 1,
                       explanation: "Move each letter back 1: R→Q, U→T, N→M. RUN becomes QTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11773,24 +11773,24 @@ const vrData = {
                       id: 31,
                       difficulty: 1,
                       question: "If PEN is coded as ODM, what word is coded as GHS?",
-                      options: ["HIS","HIP","HIT","HIM","HID"],
-                      correct: 2,
+                      options: ["HIS","HIP","HID","HIM","HIT"],
+                      correct: 4,
                       explanation: "To decode, move each letter forward 1: G→H, H→I, S→T. The word is HIT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 32,
                       difficulty: 1,
                       question: "If HAT is coded as IBU, what word is coded as CBU?",
-                      options: ["BAG","BAD","BAN","BAR","BAT"],
-                      correct: 4,
+                      options: ["BAT","BAD","BAN","BAR","BAG"],
+                      correct: 0,
                       explanation: "To decode, move each letter back 1: C→B, B→A, U→T. The word is BAT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 33,
                       difficulty: 1,
                       question: "If BUS is coded as ATR, what word is coded as OHM?",
-                      options: ["PIG","PIE","PIN","PIT","PIR"],
-                      correct: 2,
+                      options: ["PIG","PIN","PIE","PIT","PIR"],
+                      correct: 1,
                       explanation: "To decode, move each letter forward 1: O→P, H→I, M→N. The word is PIN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11813,8 +11813,8 @@ const vrData = {
                       id: 36,
                       difficulty: 1,
                       question: "If MIST is coded as NJTU, what word is coded as CVTL?",
-                      options: ["BUST","BULK","BUSK","BURN","BUMP"],
-                      correct: 2,
+                      options: ["BULK","BUST","BUMP","BURN","BUSK"],
+                      correct: 4,
                       explanation: "To decode, move each letter back 1: C→B, V→U, T→S, L→K. The word is BUSK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11829,8 +11829,8 @@ const vrData = {
                       id: 38,
                       difficulty: 1,
                       question: "If the code for BIG is AHF, what rule has been used?",
-                      options: ["Each letter moves forward 1","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1","Letters are doubled"],
-                      correct: 3,
+                      options: ["Each letter moves forward 1","Each letter moves back 1","Each letter moves back 2","Each letter moves forward 2","Letters are doubled"],
+                      correct: 1,
                       explanation: "B→A (back 1), I→H (back 1), G→F (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11853,48 +11853,48 @@ const vrData = {
                       id: 41,
                       difficulty: 1,
                       question: "If the code for DIP is EJQ, what rule has been used?",
-                      options: ["Each letter moves back 2","Each letter moves forward 1","Each letter moves back 1","Each letter moves forward 2","Letters swap positions"],
-                      correct: 1,
+                      options: ["Each letter moves back 2","Letters swap positions","Each letter moves back 1","Each letter moves forward 2","Each letter moves forward 1"],
+                      correct: 4,
                       explanation: "D→E (forward 1), I→J (forward 1), P→Q (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 42,
                       difficulty: 1,
                       question: "If the code for TIN is SHM, what rule has been used?",
-                      options: ["Each letter moves forward 2","Each letter moves forward 1","Each letter moves back 2","Each letter moves back 1","Letters are reversed"],
-                      correct: 3,
+                      options: ["Each letter moves back 1","Each letter moves forward 1","Each letter moves back 2","Each letter moves forward 2","Letters are reversed"],
+                      correct: 0,
                       explanation: "T→S (back 1), I→H (back 1), N→M (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 43,
                       difficulty: 1,
                       question: "If the code for FIG is GJH, what rule has been used?",
-                      options: ["Each letter moves back 1","Each letter moves forward 2","Each letter moves forward 1","Each letter moves back 2","Letters are reversed"],
-                      correct: 2,
+                      options: ["Each letter moves back 1","Each letter moves forward 1","Each letter moves forward 2","Each letter moves back 2","Letters are reversed"],
+                      correct: 1,
                       explanation: "F→G (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 44,
                       difficulty: 1,
                       question: "If the code for COT is BNS, what rule has been used?",
-                      options: ["Each letter moves forward 1","Each letter moves back 1","Each letter moves forward 2","Each letter moves back 2","Letters are reversed"],
-                      correct: 1,
+                      options: ["Each letter moves forward 1","Letters are reversed","Each letter moves back 1","Each letter moves back 2","Each letter moves forward 2"],
+                      correct: 2,
                       explanation: "C→B (back 1), O→N (back 1), T→S (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 45,
                       difficulty: 2,
                       question: "If GIFT is coded as IKHV, what is the code for BIRD?",
-                      options: ["DLTF", "DJSF", "DKTF", "DKUF", "DKTE"],
-                      correct: 2,
+                      options: ["DLTF", "DJSF", "DKUF", "DKTF", "DKTE"],
+                      correct: 3,
                       explanation: "Move each letter forward 2: B→D, I→K, R→T, D→F. BIRD becomes DKTF. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 46,
                       difficulty: 2,
                       question: "If LAMP is coded as NCOR, what is the code for FISH?",
-                      options: ["HKUI","HJUJ","HKVJ","HKUJ","HLUJ"],
-                      correct: 3,
+                      options: ["HLUJ","HJUJ","HKVJ","HKUI","HKUJ"],
+                      correct: 4,
                       explanation: "Move each letter forward 2: F→H, I→K, S→U, H→J. FISH becomes HKUJ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11917,8 +11917,8 @@ const vrData = {
                       id: 49,
                       difficulty: 2,
                       question: "If FISH is coded as HKUJ, what is the code for HILL?",
-                      options: ["JKMN","JKNN","JLNN","JKNO","JKML"],
-                      correct: 1,
+                      options: ["JKMN","JLNN","JKNN","JKML","JKNO"],
+                      correct: 2,
                       explanation: "Move each letter forward 2: H→J, I→K, L→N, L→N. HILL becomes JKNN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11933,16 +11933,16 @@ const vrData = {
                       id: 51,
                       difficulty: 2,
                       question: "If COLD is coded as AMJB, what is the code for HELP?",
-                      options: ["FCKN","FCJN","FDJN","ECJN","FCJO"],
-                      correct: 1,
+                      options: ["FCJO","FCKN","FDJN","ECJN","FCJN"],
+                      correct: 4,
                       explanation: "Move each letter back 2: H→F, E→C, L→J, P→N. HELP becomes FCJN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 52,
                       difficulty: 2,
                       question: "If STAR is coded as UVCT, what is the code for ROPE?",
-                      options: ["TQSG", "TQRG", "TPRG", "TQRF", "TRRG"],
-                      correct: 1,
+                      options: ["TQSG", "TPRG", "TQRG", "TQRF", "TRRG"],
+                      correct: 2,
                       explanation: "Move each letter forward 2: R→T, O→Q, P→R, E→G. ROPE becomes TQRG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11965,8 +11965,8 @@ const vrData = {
                       id: 55,
                       difficulty: 2,
                       question: "If GIFT is coded as EGDR, what is the code for POEM?",
-                      options: ["NMDK","NMCL","NLCK","NMCK","OMCK"],
-                      correct: 3,
+                      options: ["NMDK","NMCL","NLCK","OMCK","NMCK"],
+                      correct: 4,
                       explanation: "Move each letter back 2: P→N, O→M, E→C, M→K. POEM becomes NMCK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -11981,15 +11981,15 @@ const vrData = {
                       id: 57,
                       difficulty: 2,
                       question: "If ROCK is coded as TQEM, what word is coded as ECUG?",
-                      options: ["CARD","CART","CASE","CAPE","CAVE"],
-                      correct: 2,
+                      options: ["CASE","CART","CARD","CAPE","CAVE"],
+                      correct: 0,
                       explanation: "To decode, move each letter back 2: E→C, C→A, U→S, G→E. The word is CASE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 58,
                       difficulty: 2,
                       question: "If FISH is coded as HKUJ, what word is coded as NCEM?",
-                      options: ["LACE","LACK","LAKE","LAME","LAND"],
+                      options: ["LACE","LACK","LAND","LAME","LAKE"],
                       correct: 1,
                       explanation: "To decode, move each letter back 2: N→L, C→A, E→C, M→K. The word is LACK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
@@ -11997,7 +11997,7 @@ const vrData = {
                       id: 59,
                       difficulty: 2,
                       question: "If HELP is coded as FCJN, what word is coded as JCDR?",
-                      options: ["LETS", "LEND", "LENT", "LESS", "LEFT"],
+                      options: ["LETS", "LESS", "LENT", "LEND", "LEFT"],
                       correct: 4,
                       explanation: "To decode, move each letter forward 2: J→L, C→E, D→F, R→T. The word is LEFT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
@@ -12005,7 +12005,7 @@ const vrData = {
                       id: 60,
                       difficulty: 2,
                       question: "If COLD is coded as EQNF, what word is coded as TKPI?",
-                      options: ["RIND", "RING", "RIDE", "RISE", "RICH"],
+                      options: ["RIND", "RING", "RICH", "RISE", "RIDE"],
                       correct: 1,
                       explanation: "To decode, move each letter back 2: T→R, K→I, P→N, I→G. The word is RING. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
@@ -12021,40 +12021,40 @@ const vrData = {
                       id: 62,
                       difficulty: 2,
                       question: "If BARN is coded as DCTP, what word is coded as JQQF?",
-                      options: ["HOOP","HOOK","HOOD","HOOF","HOOT"],
-                      correct: 2,
+                      options: ["HOOD","HOOK","HOOP","HOOF","HOOT"],
+                      correct: 0,
                       explanation: "To decode, move each letter back 2: J→H, Q→O, Q→O, F→D. The word is HOOD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 63,
                       difficulty: 2,
                       question: "If DUSK is coded as FWUM, what word is coded as YKPF?",
-                      options: ["WINE","WILD","WILL","WIND","WING"],
-                      correct: 3,
+                      options: ["WINE","WIND","WILL","WILD","WING"],
+                      correct: 1,
                       explanation: "To decode, move each letter back 2: Y→W, K→I, P→N, F→D. The word is WIND. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 64,
                       difficulty: 2,
                       question: "If GIFT is coded as EGDR, what word is coded as FCPM?",
-                      options: ["HELP","HERO","HERD","HERB","HENS"],
-                      correct: 1,
+                      options: ["HELP","HERD","HERO","HERB","HENS"],
+                      correct: 2,
                       explanation: "To decode, move each letter forward 2: F→H, C→E, P→R, M→O. The word is HERO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 65,
                       difficulty: 2,
                       question: "If LAMP is coded as NCOR, what word is coded as EQQM?",
-                      options: ["COOL","COOK","COPE","CORD","CORE"],
-                      correct: 1,
+                      options: ["COOL","CORD","COPE","COOK","CORE"],
+                      correct: 3,
                       explanation: "To decode, move each letter back 2: E→C, Q→O, Q→O, M→K. The word is COOK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 66,
                       difficulty: 2,
                       question: "If MIST is coded as KGQR, what word is coded as NMPI?",
-                      options: ["POLE","POND","PORK","PORT","POUR"],
-                      correct: 2,
+                      options: ["PORT","POND","POUR","POLE","PORK"],
+                      correct: 4,
                       explanation: "To decode, move each letter forward 2: N→P, M→O, P→R, I→K. The word is PORK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12069,8 +12069,8 @@ const vrData = {
                       id: 68,
                       difficulty: 2,
                       question: "If FISH is coded as HKUJ, what word is coded as DWEM?",
-                      options: ["BULK","BUMP","BURN","BUCK","BULL"],
-                      correct: 3,
+                      options: ["BULK","BUCK","BURN","BUMP","BULL"],
+                      correct: 1,
                       explanation: "To decode, move each letter back 2: D→B, W→U, E→C, M→K. The word is BUCK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12085,8 +12085,8 @@ const vrData = {
                       id: 70,
                       difficulty: 1,
                       question: "If the code for FROG is DPME, what rule has been used?",
-                      options: ["Each letter moves back 3", "Each letter moves forward 2", "Each letter moves back 1", "Each letter moves forward 1", "Each letter moves back 2"],
-                      correct: 4,
+                      options: ["Each letter moves back 3", "Each letter moves forward 2", "Each letter moves back 1", "Each letter moves back 2", "Each letter moves forward 1"],
+                      correct: 3,
                       explanation: "F→D (back 2), R→P (back 2), O→M (back 2), G→E (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12101,24 +12101,24 @@ const vrData = {
                       id: 72,
                       difficulty: 1,
                       question: "If the code for MINT is KGLR, what rule has been used?",
-                      options: ["Each letter moves forward 2","Each letter moves back 1","Each letter moves forward 1","Each letter moves back 2","Each letter moves forward 3"],
-                      correct: 3,
+                      options: ["Each letter moves back 2","Each letter moves back 1","Each letter moves forward 1","Each letter moves forward 2","Each letter moves forward 3"],
+                      correct: 0,
                       explanation: "M→K (back 2), I→G (back 2), N→L (back 2), T→R (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 73,
                       difficulty: 1,
                       question: "If the code for DESK is FGUM, what rule has been used?",
-                      options: ["Each letter moves forward 3","Each letter moves back 2","Each letter moves forward 2","Each letter moves back 1","Each letter moves forward 1"],
-                      correct: 2,
+                      options: ["Each letter moves forward 3","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1","Each letter moves forward 1"],
+                      correct: 1,
                       explanation: "D→F (forward 2), E→G (forward 2), S→U (forward 2), K→M (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 74,
                       difficulty: 1,
                       question: "If the code for PLUM is NJSK, what rule has been used?",
-                      options: ["Each letter moves forward 1","Each letter moves back 2","Each letter moves forward 2","Each letter moves back 1","Each letter moves back 3"],
-                      correct: 1,
+                      options: ["Each letter moves forward 1","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1","Each letter moves back 3"],
+                      correct: 2,
                       explanation: "P→N (back 2), L→J (back 2), U→S (back 2), M→K (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12141,8 +12141,8 @@ const vrData = {
                       id: 77,
                       difficulty: 3,
                       question: "If CHARM is coded as FKDUP, what is the code for FLAME?",
-                      options: ["IODQH", "IODPH", "IOCPH", "IOEPI", "INDPH"],
-                      correct: 1,
+                      options: ["IODPH", "IODQH", "IOCPH", "IOEPI", "INDPH"],
+                      correct: 0,
                       explanation: "Move each letter forward 3: F→I, L→O, A→D, M→P, E→H. FLAME becomes IODPH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12173,7 +12173,7 @@ const vrData = {
                       id: 81,
                       difficulty: 3,
                       question: "If SHELF is coded as VKHOI, what is the code for TIGER?",
-                      options: ["WLJHV", "WLKHU", "WMJHU", "WLJIU", "WLJHU"],
+                      options: ["WLKHU", "WLJHV", "WMJHU", "WLJIU", "WLJHU"],
                       correct: 4,
                       explanation: "Move each letter forward 3: T→W, I→L, G→J, E→H, R→U. TIGER becomes WLJHU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
@@ -12189,8 +12189,8 @@ const vrData = {
                       id: 83,
                       difficulty: 3,
                       question: "If CLOUD is coded as ZILRA, what is the code for SHELF?",
-                      options: ["PECIC","PEBHC","PEBIC","PFBIC","PEBID"],
-                      correct: 2,
+                      options: ["PECIC","PEBIC","PEBHC","PFBIC","PEBID"],
+                      correct: 1,
                       explanation: "Move each letter back 3: S→P, H→E, E→B, L→I, F→C. SHELF becomes PEBIC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12213,8 +12213,8 @@ const vrData = {
                       id: 86,
                       difficulty: 3,
                       question: "If SLOPE is coded as VORSH, what is the code for BUYER?",
-                      options: ["EXAHU","EXBHU","EXBIV","EWBHU","EXCHU"],
-                      correct: 1,
+                      options: ["EXBHU","EXCHU","EXBIV","EWBHU","EXAHU"],
+                      correct: 0,
                       explanation: "Move each letter forward 3: B→E, U→X, Y→B (wraps past Z), E→H, R→U. BUYER becomes EXBHU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12231,21 +12231,21 @@ const vrData = {
                       question: "If SHELF is coded as PEBIC, what word is coded as QOFZH?",
                       options: ["TRIBE", "TRICK", "TRAIN", "TRACK", "TRACE"],
                       correct: 1,
-                      explanation: "To decode, move each letter forward 3: Q→T, O→R, F→I, Z→C (wraps past A), H→K. The word is TRICK. ✓"
+                      explanation: "To decode, move each letter forward 3: Q→T, O→R, F→I, Z→C (wraps forward past Z: Z→A→B→C), H→K. The word is TRICK. ✓"
               },
               {
                       id: 89,
                       difficulty: 3,
                       question: "If FROST is coded as IURVW, what word is coded as VWRQH?",
-                      options: ["STORE","STORK","STONE","STOVE","STOLE"],
-                      correct: 2,
+                      options: ["STORE","STORK","STOVE","STONE","STOLE"],
+                      correct: 3,
                       explanation: "To decode, move each letter back 3: V→S, W→T, R→O, Q→N, H→E. The word is STONE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 90,
                       difficulty: 3,
                       question: "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
-                      options: ["GRACE", "GRIND", "GRIST", "GRAIN", "GRASS"],
+                      options: ["GRACE", "GRIND", "GRIST", "GRASS", "GRAIN"],
                       correct: 2,
                       explanation: "To decode, move each letter forward 3: D→G, O→R, F→I, P→S, Q→T. The word is GRIST. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
@@ -12253,7 +12253,7 @@ const vrData = {
                       id: 91,
                       difficulty: 3,
                       question: "If DRINK is coded as GULQN, what word is coded as EULQJ?",
-                      options: ["BRIDE", "BRINE", "BRISK", "BRING", "BRICK"],
+                      options: ["BRICK", "BRINE", "BRISK", "BRING", "BRIDE"],
                       correct: 3,
                       explanation: "To decode, move each letter back 3: E→B, U→R, L→I, Q→N, J→G. The word is BRING. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
@@ -12269,8 +12269,8 @@ const vrData = {
                       id: 93,
                       difficulty: 3,
                       question: "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
-                      options: ["CRANE","CRAFT","CREAM","CRASH","CRATE"],
-                      correct: 2,
+                      options: ["CRANE","CREAM","CRAFT","CRASH","CRATE"],
+                      correct: 1,
                       explanation: "To decode, move each letter back 3: F→C, U→R, H→E, D→A, P→M. The word is CREAM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12285,8 +12285,8 @@ const vrData = {
                       id: 95,
                       difficulty: 3,
                       question: "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
-                      options: ["SHARP","SHAPE","SHARE","SHADE","SHALL"],
-                      correct: 2,
+                      options: ["SHARP","SHALL","SHADE","SHARE","SHAPE"],
+                      correct: 3,
                       explanation: "To decode, move each letter forward 3: P→S, E→H, X→A (wraps past Z), O→R, B→E. The word is SHARE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12295,22 +12295,22 @@ const vrData = {
                       question: "If PLANT is coded as SODQW, what word is coded as PLAHU?",
                       options: ["MINOR", "MIXER", "MISER", "MIGHT", "MITRE"],
                       correct: 1,
-                      explanation: "To decode, move each letter back 3: P→M, L→I, A→X (wraps past A), H→E, U→R. The word is MIXER. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+                      explanation: "To decode, move each letter back 3: P→M, L→I, A→X (wraps backward: A→Z→Y→X), H→E, U→R. The word is MIXER. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 97,
                       difficulty: 1,
                       question: "If the code for HELP is KHOS, what rule has been used?",
-                      options: ["Each letter moves forward 2","Each letter moves back 3","Each letter moves forward 3","Each letter moves back 2","Each letter moves forward 1"],
-                      correct: 2,
+                      options: ["Each letter moves forward 3","Each letter moves back 3","Each letter moves forward 2","Each letter moves back 2","Each letter moves forward 1"],
+                      correct: 0,
                       explanation: "H→K (forward 3), E→H (forward 3), L→O (forward 3), P→S (forward 3). Each letter has been moved three places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
                       id: 98,
                       difficulty: 1,
                       question: "If the code for PRIDE is MOFAB, what rule has been used?",
-                      options: ["Each letter moves forward 3","Each letter moves back 2","Each letter moves forward 2","Each letter moves back 3","Each letter moves back 1"],
-                      correct: 3,
+                      options: ["Each letter moves forward 3","Each letter moves back 3","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1"],
+                      correct: 1,
                       explanation: "P→M (back 3), R→O (back 3), I→F (back 3), D→A (back 3), E→B (back 3). Each letter has been moved three places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
               },
               {
@@ -12325,8 +12325,8 @@ const vrData = {
                       id: 100,
                       difficulty: 3,
                       question: "If MICE is coded as OJEF, what pattern has been used for the shifts?",
-                      options: ["+1, +2, +1, +2","+2, +2, +1, +1","+2, +1, +2, +1","+1, +1, +2, +2","+3, +1, +1, +1"],
-                      correct: 2,
+                      options: ["+1, +2, +1, +2","+2, +2, +1, +1","+1, +1, +2, +2","+3, +1, +1, +1","+2, +1, +2, +1"],
+                      correct: 4,
                       explanation: "M→O (+2), I→J (+1), C→E (+2), E→F (+1). The pattern of shifts is +2, +1, +2, +1. Tip: For +2, skip one letter each time. Use the alphabet line! ✓"
               }
       ,
@@ -12335,11 +12335,11 @@ const vrData = {
           "difficulty": 1,
           "question": "If the code for FISH is GJTI (each letter moved forward by 1), what is the code for DUCK?",
           "options": [
-            "DVDL",
+            "EVEL",
             "EVDK",
             "EDVL",
             "EVDL",
-            "EVEL"
+            "DVDL"
           ],
           "correct": 3,
           "explanation": "Each letter shifts forward by 1: D→E, U→V, C→D, K→L. So DUCK becomes EVDL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -12405,8 +12405,8 @@ const vrData = {
           "difficulty": 1,
           "question": "If the code for BIRD is AHQC (each letter moved back by 1), what is the code for NEST?",
           "options": [
-            "NDRS",
             "MERS",
+            "NDRS",
             "MDSR",
             "MCRS",
             "MDRS"
@@ -12420,12 +12420,12 @@ const vrData = {
           "question": "If the code for TREE is USFF (each letter moved forward by 1), what is the code for LEAF?",
           "options": [
             "MFGB",
-            "MFBG",
             "MFBC",
+            "MFBG",
             "MEBG",
             "LFBG"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Each letter shifts forward by 1: L→M, E→F, A→B, F→G. So LEAF becomes MFBG. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12435,11 +12435,11 @@ const vrData = {
           "options": [
             "VQCE",
             "VQFC",
-            "VQCF",
             "VPCF",
+            "VQCF",
             "WQCF"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Each letter shifts forward by 2: T→V, O→Q, A→C, D→F. So TOAD becomes VQCF. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12450,10 +12450,10 @@ const vrData = {
             "GCUN",
             "GDNU",
             "GEUN",
-            "GDUN",
-            "HDUN"
+            "HDUN",
+            "GDUN"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Each letter shifts forward by 3: D→G, A→D, R→U, K→N. So DARK becomes GDUN. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12462,12 +12462,12 @@ const vrData = {
           "question": "If the code for MINT is KGLR, what is the code for SALT?",
           "options": [
             "RYJR",
-            "QYJS",
+            "QYJR",
             "QYJQ",
             "QXJR",
-            "QYJR"
+            "QYJS"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Each letter shifts back by 2: S→Q, A→Y, L→J, T→R. So SALT becomes QYJR. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12475,9 +12475,9 @@ const vrData = {
           "difficulty": 2,
           "question": "If the code for WIND is ZLQG, what is the code for RAIN?",
           "options": [
-            "UDQL",
-            "UDLQ",
             "UELQ",
+            "UDLQ",
+            "UDQL",
             "UCLQ",
             "VDLQ"
           ],
@@ -12490,9 +12490,9 @@ const vrData = {
           "question": "If PARK is coded as MXOH, what word is coded as JXII?",
           "options": [
             "TALL",
-            "BALL",
-            "MALL",
             "CALL",
+            "MALL",
+            "BALL",
             "HALL"
           ],
           "correct": 2,
@@ -12505,9 +12505,9 @@ const vrData = {
           "options": [
             "OLRK",
             "OMKR",
-            "ONRK",
+            "PMRK",
             "OMRK",
-            "PMRK"
+            "ONRK"
           ],
           "correct": 3,
           "explanation": "Each letter shifts forward by 4: K→O, I→M, N→R, G→K. So KING becomes OMRK. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -12518,9 +12518,9 @@ const vrData = {
           "question": "If the code for STOP is QRMN, what is the code for FAST?",
           "options": [
             "EYQR",
-            "DYQP",
-            "DYRQ",
             "DXQR",
+            "DYRQ",
+            "DYQP",
             "DYQR"
           ],
           "correct": 4,
@@ -12533,9 +12533,9 @@ const vrData = {
           "options": [
             "TKIP",
             "TKPI",
-            "TLPI",
+            "UKPI",
             "TJPI",
-            "UKPI"
+            "TLPI"
           ],
           "correct": 1,
           "explanation": "Each letter shifts forward by 2: R→T, I→K, N→P, G→I. So RING becomes TKPI. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -12545,10 +12545,10 @@ const vrData = {
           "difficulty": 2,
           "question": "If the code for JUMP is ITLO, what is the code for SWIM?",
           "options": [
-            "RWHL",
+            "RUHL",
             "RVLH",
             "RVHL",
-            "RUHL",
+            "RWHL",
             "SVHL"
           ],
           "correct": 2,
@@ -12560,10 +12560,10 @@ const vrData = {
           "question": "If the code for BOOK is ERRN, what is the code for READ?",
           "options": [
             "UGDG",
-            "UHGD",
+            "VHDG",
             "UIDG",
             "UHDG",
-            "VHDG"
+            "UHGD"
           ],
           "correct": 3,
           "explanation": "Each letter shifts forward by 3: R→U, E→H, A→D, D→G. So READ becomes UHDG. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -12574,8 +12574,8 @@ const vrData = {
           "question": "If the code for BLUE is GQZJ, what is the code for PINK?",
           "options": [
             "VNSP",
-            "UNPS",
             "UOSP",
+            "UNPS",
             "UMSP",
             "UNSP"
           ],
@@ -12589,8 +12589,8 @@ const vrData = {
           "options": [
             "DKNAO",
             "DKNOA",
-            "DLNOA",
             "DJNOA",
+            "DLNOA",
             "EKNOA"
           ],
           "correct": 1,
@@ -12604,8 +12604,8 @@ const vrData = {
             "ZLTZ",
             "ZKTX",
             "ZKTZ",
-            "ZJTZ",
-            "AKTZ"
+            "AKTZ",
+            "ZJTZ"
           ],
           "correct": 2,
           "explanation": "Each letter shifts forward by 6: T→Z, E→K, N→T, T→Z. So TENT becomes ZKTZ. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -12615,11 +12615,11 @@ const vrData = {
           "difficulty": 3,
           "question": "If SMILE is coded as WQMPI, what word is coded as ASVPH?",
           "options": [
-            "WORKS",
+            "WORDS",
             "WORTH",
             "WORRY",
             "WORLD",
-            "WORDS"
+            "WORKS"
           ],
           "correct": 3,
           "explanation": "Each letter has been moved forward 4. To decode, move back 4: A→W, S→O, V→R, P→L, H→D = WORLD. Tip: Always work out the rule from the example first, then apply it letter by letter to the new word. ✓"
@@ -12686,7 +12686,7 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If DRAW is coded as ETDA, what is the code for FISH?",
-          "options": ["GKVK", "HKVL", "GJVL", "GKWL", "GKVL"],
+          "options": ["HKVL", "GKVK", "GJVL", "GKWL", "GKVL"],
           "correct": 4,
           "explanation": "Apply shifts +1, +2, +3, +4: F+1=G, I+2=K, S+3=V, H+4=L = GKVL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
@@ -12695,8 +12695,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If BARK is coded as AYOG, what is the code for HELP?",
-          "options": ["HCIL", "GCIL", "GBIL", "GCJL", "GCIK"],
-          "correct": 1,
+          "options": ["HCIL", "GBIL", "GCIL", "GCJL", "GCIK"],
+          "correct": 2,
           "explanation": "Apply shifts -1, -2, -3, -4: H-1=G, E-2=C, L-3=I, P-4=L = GCIL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12704,8 +12704,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If CART is coded as EDVY, what is the code for LAND?",
-          "options": ["NCRI", "ODRI", "NDRI", "NDSI", "NDRH"],
-          "correct": 2,
+          "options": ["NCRI", "ODRI", "NDSI", "NDRI", "NDRH"],
+          "correct": 3,
           "explanation": "Apply shifts +2, +3, +4, +5: L+2=N, A+3=D, N+4=R, D+5=I = NDRI. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12713,8 +12713,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If DRAWN is coded as CPXSI, what is the code for STONE?",
-          "options": ["RRMJZ", "SRLJZ", "RQLJZ", "RRLJZ", "RRLIZ"],
-          "correct": 3,
+          "options": ["RRMJZ", "SRLJZ", "RQLJZ", "RRLIZ", "RRLJZ"],
+          "correct": 4,
           "explanation": "Apply shifts -1, -2, -3, -4, -5: S-1=R, T-2=R, O-3=L, N-4=J, E-5=Z = RRLJZ. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12722,8 +12722,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If GAME is coded as HZND, what is the code for BOOK?",
-          "options": ["CNPI", "DNPJ", "CMPJ", "CNQJ", "CNPJ"],
-          "correct": 4,
+          "options": ["CNPI", "CNPJ", "CMPJ", "CNQJ", "DNPJ"],
+          "correct": 1,
           "explanation": "Apply shifts +1, -1, +1, -1: B+1=C, O-1=N, O+1=P, K-1=J = CNPJ. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12731,7 +12731,7 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If COLD is coded as DQOH, what is the code for MILK?",
-          "options": ["OKOO", "NKOO", "NJOO", "NKPO", "NKON"],
+          "options": ["NJOO", "NKOO", "OKOO", "NKPO", "NKON"],
           "correct": 1,
           "explanation": "Apply shifts +1, +2, +3, +4: M+1=N, I+2=K, L+3=O, K+4=O = NKOO. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
@@ -12740,7 +12740,7 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If TRAIN is coded as UTDMS, what is the code for PIANO?",
-          "options": ["QJDRT", "RKDRT", "QKDRT", "QKERT", "QKDQT"],
+          "options": ["QJDRT", "QKERT", "QKDRT", "RKDRT", "QKDQT"],
           "correct": 2,
           "explanation": "Apply shifts +1, +2, +3, +4, +5: P+1=Q, I+2=K, A+3=D, N+4=R, O+5=T = QKDRT. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
@@ -12749,7 +12749,7 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If RIVER is coded as PFRZL, what is the code for HOUSE?",
-          "options": ["FLRNY", "GLQNY", "FKQNY", "FLQNY", "FLQMY"],
+          "options": ["FKQNY", "GLQNY", "FLRNY", "FLQNY", "FLQMY"],
           "correct": 3,
           "explanation": "Apply shifts -2, -3, -4, -5, -6: H-2=F, O-3=L, U-4=Q, S-5=N, E-6=Y = FLQNY. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
@@ -12758,8 +12758,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If BELL is coded as DFNM, what is the code for RING?",
-          "options": ["TJPH", "UJPH", "TIPH", "TJQH", "TJPG"],
-          "correct": 0,
+          "options": ["TJQH", "UJPH", "TIPH", "TJPH", "TJPG"],
+          "correct": 3,
           "explanation": "Apply shifts +2, +1, +2, +1: R+2=T, I+1=J, N+2=P, G+1=H = TJPH. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12767,8 +12767,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If KINGS is coded as JGKCN, what is the code for QUEEN?",
-          "options": ["PSBAI", "QSBAI", "PRBAI", "PSCAI", "PSBZI"],
-          "correct": 0,
+          "options": ["PSBZI", "QSBAI", "PRBAI", "PSCAI", "PSBAI"],
+          "correct": 4,
           "explanation": "Apply shifts -1, -2, -3, -4, -5: Q-1=P, U-2=S, E-3=B, E-4=A, N-5=I = PSBAI. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
@@ -12785,8 +12785,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as KHOS, what is the code for YARD?",
-          "options": ["BDUG", "CDUG", "BCUG", "BDVG", "BDUF"],
-          "correct": 0,
+          "options": ["CDUG", "BDUG", "BCUG", "BDVG", "BDUF"],
+          "correct": 1,
           "explanation": "Apply +3: Y+3=B, A+3=D, R+3=U, D+3=G = BDUG. Wrap-around! Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
         },
         {
@@ -12794,8 +12794,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as JGNR, what is the code for WAXY?",
-          "options": ["YCZA", "ZCZA", "YBZA", "YCAA", "YCZZ"],
-          "correct": 0,
+          "options": ["YBZA", "ZCZA", "YCZA", "YCAA", "YCZZ"],
+          "correct": 2,
           "explanation": "Apply +2: W+2=Y, A+2=C, X+2=Z, Y+2=A = YCZA. Wrap-around! Each letter in the word shifts by +2 positions in the alphabet. Tip: For +2, skip one letter each time. B+2=D, skipping C. ✓"
         },
         {
@@ -12803,8 +12803,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as LIPT, what is the code for ZERO?",
-          "options": ["DIVS", "EIVS", "DHVS", "DIWS", "DIVR"],
-          "correct": 0,
+          "options": ["DIWS", "EIVS", "DHVS", "DIVS", "DIVR"],
+          "correct": 3,
           "explanation": "Apply +4: Z+4=D, E+4=I, R+4=V, O+4=S = DIVS. Wrap-around! Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
         },
         {
@@ -12812,8 +12812,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as KHOS, what is the code for BUZZ?",
-          "options": ["EXCC", "FXCC", "EWCC", "EXDC", "EXCB"],
-          "correct": 0,
+          "options": ["EXCB", "FXCC", "EWCC", "EXDC", "EXCC"],
+          "correct": 4,
           "explanation": "Apply +3: B+3=E, U+3=X, Z+3=C, Z+3=C = EXCC. Wrap-around! Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
         },
         {
@@ -12830,8 +12830,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If HELP is coded as LIPT, what is the code for JINX?",
-          "options": ["NMRB", "OMRB", "NLRB", "NMSB", "NMRA"],
-          "correct": 0,
+          "options": ["OMRB", "NMRB", "NLRB", "NMSB", "NMRA"],
+          "correct": 1,
           "explanation": "Apply +4: J+4=N, I+4=M, N+4=R, X+4=B = NMRB. Wrap-around! Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
         },
         {
@@ -12839,8 +12839,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as EBIM, what word is coded as QXUF?",
-          "options": ["TAXI", "UAXI", "TZXI", "TAYI", "TAXH"],
-          "correct": 0,
+          "options": ["TZXI", "UAXI", "TAXI", "TAYI", "TAXH"],
+          "correct": 2,
           "explanation": "Reverse: +3 on QXUF: Q+3=T, X+3=A, U+3=X, F+3=I = TAXI. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
         },
         {
@@ -12848,8 +12848,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as DAHL, what word is coded as JATP?",
-          "options": ["NEXT", "OEXT", "NDXT", "NEYT", "NEXS"],
-          "correct": 0,
+          "options": ["NEYT", "OEXT", "NDXT", "NEXT", "NEXS"],
+          "correct": 3,
           "explanation": "Reverse: +4 on JATP: J+4=N, A+4=E, T+4=X, P+4=T = NEXT. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
         },
         {
@@ -12857,8 +12857,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If HELP is coded as CZGK, what word is coded as HVUZ?",
-          "options": ["MAZE", "NAZE", "MZZE", "MAAE", "MAZD"],
-          "correct": 0,
+          "options": ["MAZD", "NAZE", "MZZE", "MAAE", "MAZE"],
+          "correct": 4,
           "explanation": "Reverse: +5 on HVUZ: H+5=M, V+5=A, U+5=Z, Z+5=E = MAZE. Each letter in the word shifts by +5 positions in the alphabet. Tip: The bigger the shift, the more important it is to check every letter carefully. ✓"
         },
         {
@@ -12875,8 +12875,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If HELP is coded as JGNR, what is the code for YAWN?",
-          "options": ["ACYP", "BCYP", "ABYP", "ACZP", "ACYO"],
-          "correct": 0,
+          "options": ["BCYP", "ACYP", "ABYP", "ACZP", "ACYO"],
+          "correct": 1,
           "explanation": "Apply +2: Y+2=A, A+2=C, W+2=Y, N+2=P = ACYP. Wrap-around! Each letter in the word shifts by +2 positions in the alphabet. Tip: For +2, skip one letter each time. B+2=D, skipping C. ✓"
         },
         {
@@ -12884,8 +12884,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If HELP is coded as LIPT, what is the code for FIZZY?",
-          "options": ["JMDDC", "KMDDC", "JLDDC", "JMEDC", "JMDCC"],
-          "correct": 0,
+          "options": ["JLDDC", "KMDDC", "JMDDC", "JMEDC", "JMDCC"],
+          "correct": 2,
           "explanation": "Apply +4: F+4=J, I+4=M, Z+4=D, Z+4=D, Y+4=C = JMDDC. Wrap-around! Tip: Think of the alphabet as a circle — after Z comes A again, and before A comes Z. Count carefully at the boundaries! ✓"
         },
         {
@@ -12902,8 +12902,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If STOP is coded as HGLK, what is the code for COLD?",
-          "options": ["XLOW", "YLOW", "XNOW", "XLRW", "XLOA"],
-          "correct": 0,
+          "options": ["XLRW", "YLOW", "XNOW", "XLOW", "XLOA"],
+          "correct": 3,
           "explanation": "Mirror: C=X, O=L, L=O, D=W = XLOW. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
@@ -12911,8 +12911,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If STOP is coded as HGLK, what is the code for SWIM?",
-          "options": ["HDRN", "IDRN", "HFRN", "HDUN", "HDRR"],
-          "correct": 0,
+          "options": ["HDRR", "IDRN", "HFRN", "HDUN", "HDRN"],
+          "correct": 4,
           "explanation": "Mirror: S=H, W=D, I=R, M=N = HDRN. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
@@ -12929,8 +12929,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If STOP is coded as HGLK, what word is coded as WZIP?",
-          "options": ["DARK", "EARK", "DZRK", "DASK", "DARJ"],
-          "correct": 0,
+          "options": ["EARK", "DARK", "DZRK", "DASK", "DARJ"],
+          "correct": 1,
           "explanation": "Mirror reverses itself: W=D, Z=A, I=R, P=K = DARK. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
@@ -12938,8 +12938,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If STOP is coded as HGLK, what is the code for LIGHT?",
-          "options": ["ORTSG", "PRTSG", "OTTSG", "ORWSG", "ORTWG"],
-          "correct": 0,
+          "options": ["OTTSG", "PRTSG", "ORTSG", "ORWSG", "ORTWG"],
+          "correct": 2,
           "explanation": "Mirror: L=O, I=R, G=T, H=S, T=G = ORTSG. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
@@ -12947,8 +12947,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If STOP is coded as HGLK, what is the code for MONEY?",
-          "options": ["NLMVB", "OLMVB", "NNMVB", "NLPVB", "NLMZB"],
-          "correct": 0,
+          "options": ["NLPVB", "OLMVB", "NNMVB", "NLMVB", "NLMZB"],
+          "correct": 3,
           "explanation": "Mirror: M=N, O=L, N=M, E=V, Y=B = NLMVB. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
@@ -12956,8 +12956,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If STOP is coded as HGLK, what word is coded as YIZEV?",
-          "options": ["BRAVE", "CRAVE", "BQAVE", "BRBVE", "BRAUE"],
-          "correct": 0,
+          "options": ["BRAUE", "CRAVE", "BQAVE", "BRBVE", "BRAVE"],
+          "correct": 4,
           "explanation": "Mirror reverses itself: Y=B, I=R, Z=A, E=V, V=E = BRAVE. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
@@ -12965,8 +12965,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as EOXH, what is the code for GOLD?",
-          "options": ["JROG", "KROG", "JQOG", "JRPG", "JROF"],
-          "correct": 0,
+          "options": ["KROG", "JROG", "JQOG", "JRPG", "JROF"],
+          "correct": 1,
           "explanation": "Apply +3: G+3=J, O+3=R, L+3=O, D+3=G = JROG. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
         },
         {
@@ -12974,8 +12974,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as YIRB, what is the code for FARM?",
-          "options": ["CXOJ", "DXOJ", "CWOJ", "CXPJ", "CXOI"],
-          "correct": 0,
+          "options": ["CWOJ", "DXOJ", "CXOJ", "CXPJ", "CXOI"],
+          "correct": 2,
           "explanation": "Apply -3: F-3=C, A-3=X, R-3=O, M-3=J = CXOJ. Each letter in the word shifts by -3 positions in the alphabet. Tip: For -3, count back three places. Watch out for wrap-around near A! ✓"
         },
         {
@@ -12983,8 +12983,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as FPYI, what is the code for DESK?",
-          "options": ["HIWO", "IIWO", "HHWO", "HIXO", "HIWN"],
-          "correct": 0,
+          "options": ["HIXO", "IIWO", "HHWO", "HIWO", "HIWN"],
+          "correct": 3,
           "explanation": "Apply +4: D+4=H, E+4=I, S+4=W, K+4=O = HIWO. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
         },
         {
@@ -12992,8 +12992,8 @@ const vrData = {
           "difficulty": 2,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as XHQA, what is the code for JUMP?",
-          "options": ["FQIL", "GQIL", "FPIL", "FQJL", "FQIK"],
-          "correct": 0,
+          "options": ["FQIK", "GQIL", "FPIL", "FQJL", "FQIL"],
+          "correct": 4,
           "explanation": "Apply -4: J-4=F, U-4=Q, M-4=I, P-4=L = FQIL. Each letter in the word shifts by -4 positions in the alphabet. Tip: With -4, letters near the start of the alphabet will wrap around past A to the end (A-4=W). ✓"
         },
         {
@@ -13010,8 +13010,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as YIRB, what is the code for CLOCK?",
-          "options": ["ZILZH", "AILZH", "ZHLZH", "ZIMZH", "ZILYH"],
-          "correct": 0,
+          "options": ["AILZH", "ZILZH", "ZHLZH", "ZIMZH", "ZILYH"],
+          "correct": 1,
           "explanation": "Apply -3: C-3=Z, L-3=I, O-3=L, C-3=Z, K-3=H = ZILZH. Each letter in the word shifts by -3 positions in the alphabet. Tip: For -3, count back three places. Watch out for wrap-around near A! ✓"
         },
         {
@@ -13019,8 +13019,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as FPYI, what is the code for RIVER?",
-          "options": ["VMZIV", "WMZIV", "VLZIV", "VMAIV", "VMZHV"],
-          "correct": 0,
+          "options": ["VLZIV", "WMZIV", "VMZIV", "VMAIV", "VMZHV"],
+          "correct": 2,
           "explanation": "Apply +4: R+4=V, I+4=M, V+4=Z, E+4=I, R+4=V = VMZIV. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
         },
         {
@@ -13028,8 +13028,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as XHQA, what word is coded as LHWJA?",
-          "options": ["PLANE", "QLANE", "PKANE", "PLBNE", "PLAME"],
-          "correct": 0,
+          "options": ["PLBNE", "QLANE", "PKANE", "PLANE", "PLAME"],
+          "correct": 3,
           "explanation": "Reverse +4: L+4=P, H+4=L, W+4=A, J+4=N, A+4=E = PLANE. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
         },
         {
@@ -13037,8 +13037,8 @@ const vrData = {
           "difficulty": 3,
           "questionType": "letter-codes",
           "question": "If BLUE is coded as EOXH, what word is coded as VWRUP?",
-          "options": ["STORM", "TTORM", "SSORM", "STPRM", "STOQM"],
-          "correct": 0,
+          "options": ["STOQM", "TTORM", "SSORM", "STPRM", "STORM"],
+          "correct": 4,
           "explanation": "Reverse -3: V-3=S, W-3=T, R-3=O, U-3=R, P-3=M = STORM. Each letter in the word shifts by -3 positions in the alphabet. Tip: For -3, count back three places. Watch out for wrap-around near A! ✓"
         },
         {
@@ -13074,13 +13074,13 @@ const vrData = {
                       difficulty: 3,
                       question: "What comes next in this series? AZ, BY, CX, DW, ___",
                       options: [
-                              "EV",
-                              "EU",
                               "FV",
+                              "EU",
+                              "EV",
                               "EX",
                               "DV"
                       ],
-                      correct: 0,
+                      correct: 2,
                       explanation: "The first letter goes forward (A, B, C, D, E) and the second letter goes backward (Z, Y, X, W, V). So the next pair is EV. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
@@ -13089,12 +13089,12 @@ const vrData = {
                       question: "What comes next in this letter series? B, D, F, H, ___",
                       options: [
                               "I",
-                              "J",
-                              "K",
                               "L",
+                              "K",
+                              "J",
                               "M"
                       ],
-                      correct: 1,
+                      correct: 3,
                       explanation: "The pattern skips one letter each time: B (skip C) D (skip E) F (skip G) H (skip I) J. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
@@ -13103,12 +13103,12 @@ const vrData = {
                       question: "What comes next in this letter series? Z, X, V, T, ___",
                       options: [
                               "S",
-                              "R",
+                              "U",
                               "Q",
                               "P",
-                              "U"
+                              "R"
                       ],
-                      correct: 1,
+                      correct: 4,
                       explanation: "The pattern goes backwards, skipping one letter: Z (skip Y) X (skip W) V (skip U) T (skip S) R. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
@@ -13116,13 +13116,13 @@ const vrData = {
                       difficulty: 1,
                       question: "What comes next? A, B, D, G, ___",
                       options: [
-                              "H",
+                              "K",
                               "I",
                               "J",
-                              "K",
+                              "H",
                               "L"
                       ],
-                      correct: 3,
+                      correct: 0,
                       explanation: "The gaps increase by 1 each time: A(+1)B(+2)D(+3)G(+4)K. The differences are 1, 2, 3, 4. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
@@ -13130,13 +13130,13 @@ const vrData = {
                       difficulty: 3,
                       question: "What comes next in this series? AC, BD, CE, DF, ___",
                       options: [
-                              "EG",
                               "EF",
+                              "EG",
                               "FG",
                               "DG",
                               "EH"
                       ],
-                      correct: 0,
+                      correct: 1,
                       explanation: "The first letter advances by 1: A,B,C,D,E. The second letter also advances by 1: C,D,E,F,G. Next is EG. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
@@ -13145,12 +13145,12 @@ const vrData = {
                       question: "What comes next in this series? A, C, E, G, I, ___",
                       options: [
                               "J",
-                              "K",
                               "L",
+                              "K",
                               "M",
                               "N"
                       ],
-                      correct: 1,
+                      correct: 2,
                       explanation: "The pattern gives every other letter: A, C, E, G, I, K. Skipping B, D, F, H, J. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
@@ -13158,13 +13158,13 @@ const vrData = {
                       difficulty: 2,
                       question: "What comes next? ZZ, YY, XX, WW, ___",
                       options: [
-                              "VV",
+                              "WX",
                               "UU",
                               "VW",
-                              "WX",
+                              "VV",
                               "UV"
                       ],
-                      correct: 0,
+                      correct: 3,
                       explanation: "Each pair uses the same letter, going backwards through the alphabet: ZZ, YY, XX, WW, VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               }
       ,
@@ -13172,31 +13172,31 @@ const vrData = {
                       id: 9,
                       difficulty: 1,
                       question: "What comes next in this letter series? Z, Y, X, W, ___",
-                      options: ["T","U","V","X","S"],
-                      correct: 2,
+                      options: ["T","U","S","X","V"],
+                      correct: 4,
                       explanation: "The pattern goes back 1 each time: Z(−1)→Y(−1)→X(−1)→W(−1)→V. The answer is V. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
                       id: 10,
                       difficulty: 1,
                       question: "What comes next in this letter series? A, B, C, D, ___",
-                      options: ["F","G","E","H","D"],
-                      correct: 2,
+                      options: ["E","G","F","H","D"],
+                      correct: 0,
                       explanation: "The pattern advances by 1 each time in alphabetical order: A→B→C→D→E. The answer is E. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
                       id: 11,
                       difficulty: 1,
                       question: "What comes next in this letter series? M, N, O, P, ___",
-                      options: ["R","S","T","Q","U"],
-                      correct: 3,
+                      options: ["R","Q","T","S","U"],
+                      correct: 1,
                       explanation: "The pattern advances by 1 each time: M→N→O→P→Q. The answer is Q. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
                       id: 12,
                       difficulty: 1,
                       question: "What comes next in this letter series? C, F, I, L, ___",
-                      options: ["M","N","O","P","Q"],
+                      options: ["M","P","O","N","Q"],
                       correct: 2,
                       explanation: "The pattern adds 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is O. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
@@ -13204,8 +13204,8 @@ const vrData = {
                       id: 13,
                       difficulty: 1,
                       question: "What comes next in this letter series? D, F, H, J, ___",
-                      options: ["K","M","N","O","L"],
-                      correct: 4,
+                      options: ["K","M","N","L","O"],
+                      correct: 3,
                       explanation: "The pattern adds 2 each time: D(+2)→F(+2)→H(+2)→J(+2)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
@@ -13220,40 +13220,40 @@ const vrData = {
                       id: 15,
                       difficulty: 1,
                       question: "What comes next in this letter series? E, H, K, N, ___",
-                      options: ["O","P","Q","R","S"],
-                      correct: 2,
+                      options: ["Q","P","O","R","S"],
+                      correct: 0,
                       explanation: "The pattern adds 3 each time: E(+3)→H(+3)→K(+3)→N(+3)→Q. The answer is Q. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 16,
                       difficulty: 1,
                       question: "What comes next in this letter series? W, U, S, Q, ___",
-                      options: ["P","N","M","O","L"],
-                      correct: 3,
+                      options: ["P","O","M","N","L"],
+                      correct: 1,
                       explanation: "The pattern goes back 2 each time: W(−2)→U(−2)→S(−2)→Q(−2)→O. The answer is O. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
                       id: 17,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? AB, CD, EF, GH, ___",
-                      options: ["HI","JK","KL","GH","IJ"],
-                      correct: 4,
+                      options: ["HI","JK","IJ","GH","KL"],
+                      correct: 2,
                       explanation: "Both letters advance by 2 each step: AB→CD→EF→GH→IJ. The answer is IJ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
               },
               {
                       id: 18,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
-                      options: ["DZ","EA","EZ","FZ","EY"],
-                      correct: 2,
+                      options: ["DZ","EA","FZ","EZ","EY"],
+                      correct: 3,
                       explanation: "The first letter advances by 1, the second stays as Z: AZ→BZ→CZ→DZ→EZ. The answer is EZ. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
               },
               {
                       id: 19,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? AA, BB, CC, DD, ___",
-                      options: ["DE","EE","EF","FF","EG"],
-                      correct: 1,
+                      options: ["DE","EG","EF","FF","EE"],
+                      correct: 4,
                       explanation: "Each pair is a doubled letter advancing by 1: AA→BB→CC→DD→EE. The answer is EE. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
@@ -13268,8 +13268,8 @@ const vrData = {
                       id: 21,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? AC, BD, CE, DF, ___",
-                      options: ["EH","FG","DG","EG","FH"],
-                      correct: 3,
+                      options: ["EH","EG","DG","FG","FH"],
+                      correct: 1,
                       explanation: "Both letters advance by 1 each step: AC→BD→CE→DF→EG. The answer is EG. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
@@ -13284,24 +13284,24 @@ const vrData = {
                       id: 23,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
-                      options: ["VW","UU","VV","WX","UV"],
-                      correct: 2,
+                      options: ["VW","UU","WX","VV","UV"],
+                      correct: 3,
                       explanation: "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV. The answer is VV. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 24,
                       difficulty: 1,
                       question: "What comes next in this series? A1, B2, C3, D4, ___",
-                      options: ["D5","E4","E5","F5","E6"],
-                      correct: 2,
+                      options: ["D5","E4","E6","F5","E5"],
+                      correct: 4,
                       explanation: "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5. The answer is E5. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 25,
                       difficulty: 1,
                       question: "What comes next in this series? A2, B4, C6, D8, ___",
-                      options: ["E9","F10","D10","E12","E10"],
-                      correct: 4,
+                      options: ["E10","F10","D10","E12","E9"],
+                      correct: 0,
                       explanation: "The letter advances by 1 and the number advances by 2: A2→B4→C6→D8→E10. The answer is E10. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
@@ -13316,8 +13316,8 @@ const vrData = {
                       id: 27,
                       difficulty: 1,
                       question: "What comes next in this series? A1, A2, A3, A4, ___",
-                      options: ["A5","B5","A6","B4","A4"],
-                      correct: 0,
+                      options: ["A6","B5","A5","B4","A4"],
+                      correct: 2,
                       explanation: "The letter stays as A and the number advances by 1: A1→A2→A3→A4→A5. The answer is A5. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
               },
               {
@@ -13332,24 +13332,24 @@ const vrData = {
                       id: 29,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? AD, BE, CF, DG, ___",
-                      options: ["EI","EH","FH","DH","FI"],
-                      correct: 1,
+                      options: ["EI","FI","FH","DH","EH"],
+                      correct: 4,
                       explanation: "Both letters advance by 1 each step, keeping a gap of 3: AD→BE→CF→DG→EH. The answer is EH. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
                       id: 30,
                       difficulty: 1,
                       question: "What comes next in this letter series? B, E, H, K, ___",
-                      options: ["L","M","N","O","P"],
-                      correct: 2,
+                      options: ["N","M","L","O","P"],
+                      correct: 0,
                       explanation: "The pattern adds 3 each time: B(+3)→E(+3)→H(+3)→K(+3)→N. The answer is N. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
                       id: 31,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? BA, CB, DC, ED, ___",
-                      options: ["EF","GF","EG","FD","FE"],
-                      correct: 4,
+                      options: ["EF","FE","EG","FD","GF"],
+                      correct: 1,
                       explanation: "Both letters advance by 1 each step: BA→CB→DC→ED→FE. The answer is FE. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
@@ -13364,39 +13364,39 @@ const vrData = {
                       id: 33,
                       difficulty: 1,
                       question: "What comes next in this letter series? G, I, K, M, ___",
-                      options: ["N","O","P","Q","R"],
-                      correct: 1,
+                      options: ["N","Q","P","O","R"],
+                      correct: 3,
                       explanation: "The pattern adds 2 each time: G(+2)→I(+2)→K(+2)→M(+2)→O. The answer is O. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 34,
                       difficulty: 1,
                       question: "What comes next in this letter pair series? AE, BF, CG, DH, ___",
-                      options: ["DI","EJ","EI","FI","FJ"],
-                      correct: 2,
+                      options: ["DI","EJ","FJ","FI","EI"],
+                      correct: 4,
                       explanation: "Both letters advance by 1 each step, keeping a gap of 4: AE→BF→CG→DH→EI. The answer is EI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 35,
                       difficulty: 2,
                       question: "What comes next in this letter series? A, D, G, J, ___",
-                      options: ["K","L","M","N","O"],
-                      correct: 2,
+                      options: ["M","L","K","N","O"],
+                      correct: 0,
                       explanation: "The pattern adds 3 each time: A(+3)→D(+3)→G(+3)→J(+3)→M. The answer is M. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 36,
                       difficulty: 2,
                       question: "What comes next in this letter series? Z, W, T, Q, ___",
-                      options: ["O","M","P","N","L"],
-                      correct: 3,
+                      options: ["O","N","M","P","L"],
+                      correct: 1,
                       explanation: "The pattern goes back 3 each time: Z(−3)→W(−3)→T(−3)→Q(−3)→N. The answer is N. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
                       id: 37,
                       difficulty: 2,
                       question: "What comes next in this letter series? A, E, I, M, ___",
-                      options: ["N","O","P","Q","R"],
+                      options: ["N","O","Q","P","R"],
                       correct: 3,
                       explanation: "The pattern adds 4 each time: A(+4)→E(+4)→I(+4)→M(+4)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
               },
@@ -13412,64 +13412,64 @@ const vrData = {
                       id: 39,
                       difficulty: 2,
                       question: "What comes next in this letter series? V, S, P, M, ___",
-                      options: ["L","K","J","I","H"],
-                      correct: 2,
+                      options: ["L","K","H","I","J"],
+                      correct: 4,
                       explanation: "The pattern goes back 3 each time: V(−3)→S(−3)→P(−3)→M(−3)→J. The answer is J. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
                       id: 40,
                       difficulty: 2,
                       question: "What comes next in this letter series? B, F, J, N, ___",
-                      options: ["O","P","Q","R","S"],
-                      correct: 3,
+                      options: ["R","P","Q","O","S"],
+                      correct: 0,
                       explanation: "The pattern adds 4 each time: B(+4)→F(+4)→J(+4)→N(+4)→R. The answer is R. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
                       id: 41,
                       difficulty: 2,
                       question: "What comes next in this letter series? Y, V, S, P, ___",
-                      options: ["N","L","O","K","M"],
-                      correct: 4,
+                      options: ["N","M","O","K","L"],
+                      correct: 1,
                       explanation: "The pattern goes back 3 each time: Y(−3)→V(−3)→S(−3)→P(−3)→M. The answer is M. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
                       id: 42,
                       difficulty: 2,
                       question: "What comes next in this letter series? C, G, K, O, ___",
-                      options: ["P","Q","R","S","T"],
-                      correct: 3,
+                      options: ["P","Q","S","R","T"],
+                      correct: 2,
                       explanation: "The pattern adds 4 each time: C(+4)→G(+4)→K(+4)→O(+4)→S. The answer is S. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
                       id: 43,
                       difficulty: 2,
                       question: "What comes next in this letter series? X, U, R, O, ___",
-                      options: ["N","M","L","K","J"],
-                      correct: 2,
+                      options: ["N","M","K","L","J"],
+                      correct: 3,
                       explanation: "The pattern goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 44,
                       difficulty: 2,
                       question: "What comes next in this letter series? F, J, N, R, ___",
-                      options: ["S","T","U","V","W"],
-                      correct: 3,
+                      options: ["S","T","U","W","V"],
+                      correct: 4,
                       explanation: "The pattern adds 4 each time: F(+4)→J(+4)→N(+4)→R(+4)→V. The answer is V. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 45,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
-                      options: ["VF","VE","UE","WE","UF"],
-                      correct: 1,
+                      options: ["VE","VF","UE","WE","UF"],
+                      correct: 0,
                       explanation: "The first letter goes back 1, the second advances by 1: ZA→YB→XC→WD→VE. The answer is VE. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 46,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? AC, CE, EG, GI, ___",
-                      options: ["HJ","HK","IJ","JK","IK"],
-                      correct: 4,
+                      options: ["HJ","IK","IJ","JK","HK"],
+                      correct: 1,
                       explanation: "Both letters advance by 2 each step: AC→CE→EG→GI→IK. The answer is IK. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
@@ -13492,16 +13492,16 @@ const vrData = {
                       id: 49,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? AB, DE, GH, JK, ___",
-                      options: ["LM","MN","LN","NO","KL"],
-                      correct: 1,
+                      options: ["LM","KL","LN","NO","MN"],
+                      correct: 4,
                       explanation: "Both letters advance by 3 each step: AB→DE→GH→JK→MN. The answer is MN. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
                       id: 50,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
-                      options: ["SR","QR","RQ","QP","RP"],
-                      correct: 2,
+                      options: ["RQ","QR","SR","QP","RP"],
+                      correct: 0,
                       explanation: "Both letters go back 2 each step: ZY→XW→VU→TS→RQ. The answer is RQ. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
@@ -13516,32 +13516,32 @@ const vrData = {
                       id: 52,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
-                      options: ["IK","JL","IJ","JK","KL"],
-                      correct: 1,
+                      options: ["IK","IJ","JL","JK","KL"],
+                      correct: 2,
                       explanation: "Both letters advance by 2 each step: BD→DF→FH→HJ→JL. The answer is JL. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
                       id: 53,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? MA, NB, OC, PD, ___",
-                      options: ["QF","QE","RE","PE","RF"],
-                      correct: 1,
+                      options: ["QF","PE","RE","QE","RF"],
+                      correct: 3,
                       explanation: "Both letters advance by 1 each step: MA→NB→OC→PD→QE. The answer is QE. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 54,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
-                      options: ["EM","EN","FM","FN","EO"],
-                      correct: 1,
+                      options: ["EM","EO","FM","FN","EN"],
+                      correct: 4,
                       explanation: "The first letter advances by 1, the second advances by 2: AF→BH→CJ→DL→EN. The answer is EN. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 55,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
-                      options: ["RH","RI","SI","SH","QI"],
-                      correct: 1,
+                      options: ["RI","RH","SI","SH","QI"],
+                      correct: 0,
                       explanation: "The first letter goes back 2, the second advances by 2: ZA→XC→VE→TG→RI. The answer is RI. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
@@ -13556,80 +13556,80 @@ const vrData = {
                       id: 57,
                       difficulty: 2,
                       question: "What comes next in this series? Z2, X4, V6, T8, ___",
-                      options: ["S10","R10","R8","S9","R12"],
-                      correct: 1,
+                      options: ["S10","R8","R10","S9","R12"],
+                      correct: 2,
                       explanation: "The letter goes back 2 and the number advances by 2: Z2→X4→V6→T8→R10. The answer is R10. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
               },
               {
                       id: 58,
                       difficulty: 2,
                       question: "What comes next in this series? B5, D10, F15, H20, ___",
-                      options: ["I25","J25","J20","K25","J30"],
-                      correct: 1,
+                      options: ["I25","K25","J20","J25","J30"],
+                      correct: 3,
                       explanation: "The letter advances by 2 and the number advances by 5: B5→D10→F15→H20→J25. The answer is J25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
               },
               {
                       id: 59,
                       difficulty: 2,
                       question: "What comes next in this series? Y3, W6, U9, S12, ___",
-                      options: ["R15","Q15","Q14","R14","P15"],
-                      correct: 1,
+                      options: ["R15","P15","Q14","R14","Q15"],
+                      correct: 4,
                       explanation: "The letter goes back 2 and the number advances by 3: Y3→W6→U9→S12→Q15. The answer is Q15. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
                       id: 60,
                       difficulty: 2,
                       question: "What comes next in this series? A1, C3, E5, G7, ___",
-                      options: ["H9","I8","I9","J9","H8"],
-                      correct: 2,
+                      options: ["I9","I8","H9","J9","H8"],
+                      correct: 0,
                       explanation: "The letter advances by 2 and the number advances by 2: A1→C3→E5→G7→I9. The answer is I9. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
                       id: 61,
                       difficulty: 2,
                       question: "What comes next in this series? D2, G4, J6, M8, ___",
-                      options: ["N10","O10","P10","Q10","P8"],
-                      correct: 2,
+                      options: ["N10","P10","O10","Q10","P8"],
+                      correct: 1,
                       explanation: "The letter advances by 3 and the number advances by 2: D2→G4→J6→M8→P10. The answer is P10. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
                       id: 62,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? CE, DG, EI, FK, ___",
-                      options: ["GL","GM","HM","GN","HN"],
-                      correct: 1,
+                      options: ["GL","HM","GM","GN","HN"],
+                      correct: 2,
                       explanation: "The first letter advances by 1, the second advances by 2: CE→DG→EI→FK→GM. The answer is GM. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
                       id: 63,
                       difficulty: 2,
                       question: "What comes next in this letter series? R, O, L, I, ___",
-                      options: ["G","F","E","H","D"],
-                      correct: 1,
+                      options: ["G","H","E","F","D"],
+                      correct: 3,
                       explanation: "The pattern goes back 3 each time: R(−3)→O(−3)→L(−3)→I(−3)→F. The answer is F. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 64,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? YA, WC, UE, SG, ___",
-                      options: ["QH","QI","RI","RH","PI"],
-                      correct: 1,
+                      options: ["QH","PI","RI","RH","QI"],
+                      correct: 4,
                       explanation: "The first letter goes back 2, the second advances by 2: YA→WC→UE→SG→QI. The answer is QI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 65,
                       difficulty: 2,
                       question: "What comes next in this series? C1, F3, I5, L7, ___",
-                      options: ["N9","O9","O8","M9","P9"],
-                      correct: 1,
+                      options: ["O9","N9","O8","M9","P9"],
+                      correct: 0,
                       explanation: "The letter advances by 3 and the number advances by 2: C1→F3→I5→L7→O9. The answer is O9. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 66,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? FA, HC, JE, LG, ___",
-                      options: ["MH","MI","NH","NI","NJ"],
-                      correct: 3,
+                      options: ["MH","NI","NH","MI","NJ"],
+                      correct: 1,
                       explanation: "Both letters advance by 2 each step: FA→HC→JE→LG→NI. The answer is NI. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
@@ -13644,16 +13644,16 @@ const vrData = {
                       id: 68,
                       difficulty: 2,
                       question: "What comes next in this series? T5, R10, P15, N20, ___",
-                      options: ["L25","M25","L20","M20","K25"],
-                      correct: 0,
+                      options: ["M20","M25","L20","L25","K25"],
+                      correct: 3,
                       explanation: "The letter goes back 2 and the number advances by 5: T5→R10→P15→N20→L25. The answer is L25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
               },
               {
                       id: 69,
                       difficulty: 2,
                       question: "What comes next in this letter pair series? BF, CG, DH, EI, ___",
-                      options: ["FJ","FK","GJ","EJ","GK"],
-                      correct: 0,
+                      options: ["GK","FK","GJ","EJ","FJ"],
+                      correct: 4,
                       explanation: "Both letters advance by 1 each step, keeping a gap of 4: BF→CG→DH→EI→FJ. The answer is FJ. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
@@ -13668,48 +13668,48 @@ const vrData = {
                       id: 71,
                       difficulty: 3,
                       question: "What comes next in this letter series? A, Z, B, Y, C, ___",
-                      options: ["D","W","X","V","B"],
-                      correct: 2,
+                      options: ["D","X","W","V","B"],
+                      correct: 1,
                       explanation: "Two patterns alternate: forward (A, B, C, D...) and backward (Z, Y, X...). The positions alternate, so after C (forward) comes X (backward). The answer is X. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
                       id: 72,
                       difficulty: 3,
                       question: "What comes next in this letter series? A, Z, C, X, E, ___",
-                      options: ["F","V","W","G","U"],
-                      correct: 1,
+                      options: ["F","W","V","G","U"],
+                      correct: 2,
                       explanation: "Two patterns alternate: forward (+2: A, C, E...) and backward (−2: Z, X, V...). After E (forward), the next is V (backward). The answer is V. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
                       id: 73,
                       difficulty: 3,
                       question: "What comes next in this letter series? A, F, B, G, C, ___",
-                      options: ["D","E","H","I","F"],
-                      correct: 2,
+                      options: ["D","E","I","H","F"],
+                      correct: 3,
                       explanation: "Two patterns alternate: A, B, C, D... and F, G, H... After C (first pattern), next is H (second pattern). The answer is H. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 74,
                       difficulty: 3,
                       question: "What comes next in this letter series? B, D, C, E, D, ___",
-                      options: ["E","F","G","C","H"],
-                      correct: 1,
+                      options: ["E","H","G","C","F"],
+                      correct: 4,
                       explanation: "Two patterns alternate: B, C, D, E... (+1) and D, E, F... (+1). After D (first pattern), the next is F (second pattern). The answer is F. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 75,
                       difficulty: 3,
                       question: "What comes next in this letter series? A, C, F, J, ___",
-                      options: ["K","L","M","N","O"],
-                      correct: 4,
+                      options: ["O","L","M","N","K"],
+                      correct: 0,
                       explanation: "The gaps increase: A(+2)→C(+3)→F(+4)→J(+5)→O. The answer is O. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 76,
                       difficulty: 3,
                       question: "What comes next in this letter series? Z, X, U, Q, ___",
-                      options: ["N","M","L","K","J"],
-                      correct: 2,
+                      options: ["N","L","M","K","J"],
+                      correct: 1,
                       explanation: "The gaps increase going backwards: Z(−2)→X(−3)→U(−4)→Q(−5)→L. The answer is L. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
@@ -13724,7 +13724,7 @@ const vrData = {
                       id: 78,
                       difficulty: 3,
                       question: "What comes next in this letter series? C, E, H, L, ___",
-                      options: ["N","O","P","Q","R"],
+                      options: ["N","O","Q","P","R"],
                       correct: 3,
                       explanation: "The gaps increase: C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
               },
@@ -13732,8 +13732,8 @@ const vrData = {
                       id: 79,
                       difficulty: 3,
                       question: "What comes next in this letter series? Y, W, T, P, ___",
-                      options: ["N","M","L","K","J"],
-                      correct: 3,
+                      options: ["N","M","L","J","K"],
+                      correct: 4,
                       explanation: "The gaps increase going backwards: Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
@@ -13748,48 +13748,48 @@ const vrData = {
                       id: 81,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? BX, EU, HR, KO, ___",
-                      options: ["NL","ML","NK","NM","MK"],
-                      correct: 0,
+                      options: ["ML","NL","NK","NM","MK"],
+                      correct: 1,
                       explanation: "The first letter advances by 3, the second goes back 3: BX→EU→HR→KO→NL. The answer is NL. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
               },
               {
                       id: 82,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? AC, BF, CI, DL, ___",
-                      options: ["EO","EN","FO","EP","FN"],
-                      correct: 0,
+                      options: ["FO","EN","EO","EP","FN"],
+                      correct: 2,
                       explanation: "The first letter advances by 1 each step: A→B→C→D→E. The second letter advances by 3 each step: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is EO. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
                       id: 83,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? AY, DV, GS, JP, ___",
-                      options: ["LM","MN","MM","LN","MO"],
-                      correct: 2,
+                      options: ["LM","MN","LN","MM","MO"],
+                      correct: 3,
                       explanation: "The first letter advances by 3, the second goes back 3: AY→DV→GS→JP→MM. The answer is MM. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 84,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
-                      options: ["NK","OK","OL","OJ","PK"],
-                      correct: 1,
+                      options: ["NK","PK","OL","OJ","OK"],
+                      correct: 4,
                       explanation: "The first letter advances by 3, the second goes back 3: CW→FT→IQ→LN→OK. The answer is OK. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 85,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
-                      options: ["MN","NN","ON","MO","NO"],
-                      correct: 2,
+                      options: ["ON","NN","MN","MO","NO"],
+                      correct: 0,
                       explanation: "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second goes back 3: Z→W→T→Q→N. The answer is ON. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 86,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
-                      options: ["NN","NM","ON","NL","OM"],
-                      correct: 0,
+                      options: ["NM","NN","ON","NL","OM"],
+                      correct: 1,
                       explanation: "The first letter goes back 3, the second advances by 3: ZB→WE→TH→QK→NN. The answer is NN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
@@ -13804,24 +13804,24 @@ const vrData = {
                       id: 88,
                       difficulty: 3,
                       question: "What comes next in this series? A2, C5, E8, G11, ___",
-                      options: ["H14","I13","I14","J14","I15"],
-                      correct: 2,
+                      options: ["H14","I13","J14","I14","I15"],
+                      correct: 3,
                       explanation: "The letter advances by 2 and the number advances by 3: A2→C5→E8→G11→I14. The answer is I14. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
               },
               {
                       id: 89,
                       difficulty: 3,
                       question: "What comes next in this series? Z3, W7, T11, Q15, ___",
-                      options: ["N19","O19","N18","O18","M19"],
-                      correct: 0,
+                      options: ["M19","O19","N18","O18","N19"],
+                      correct: 4,
                       explanation: "The letter goes back 3 and the number advances by 4: Z3→W7→T11→Q15→N19. The answer is N19. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
               },
               {
                       id: 90,
                       difficulty: 3,
                       question: "What comes next in this series? B1, D3, H7, N13, ___",
-                      options: ["T21","V21","U20","V19","T19"],
-                      correct: 1,
+                      options: ["V21","T21","U20","V19","T19"],
+                      correct: 0,
                       explanation: "The letter gaps increase (+2, +4, +6, +8): B→D→H→N→V. The number gaps increase (+2, +4, +6, +8): 1→3→7→13→21. The answer is V21. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
               },
               {
@@ -13836,56 +13836,56 @@ const vrData = {
                       id: 92,
                       difficulty: 3,
                       question: "What comes next in this series? Z1, X3, V5, T7, R9, ___",
-                      options: ["Q11","P11","O11","P10","Q10"],
-                      correct: 1,
+                      options: ["Q11","O11","P11","Q10","P10"],
+                      correct: 2,
                       explanation: "The letter goes back 2 and the number advances by 2: Z1→X3→V5→T7→R9→P11. The answer is P11. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
               },
               {
                       id: 93,
                       difficulty: 3,
                       question: "What comes next in this letter series? A, B, D, G, K, ___",
-                      options: ["N","O","P","Q","R"],
-                      correct: 2,
+                      options: ["N","O","R","Q","P"],
+                      correct: 4,
                       explanation: "The gaps increase by 1 each time: A(+1)→B(+2)→D(+3)→G(+4)→K(+5)→P. The answer is P. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
               },
               {
                       id: 94,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? BY, EV, HS, KP, ___",
-                      options: ["NM","NL","ML","MN","OM"],
-                      correct: 0,
+                      options: ["OM","NL","ML","MN","NM"],
+                      correct: 4,
                       explanation: "The first letter advances by 3, the second goes back 3: BY→EV→HS→KP→NM. The answer is NM. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
               },
               {
                       id: 95,
                       difficulty: 3,
                       question: "What comes next in this series? C2, F5, I8, L11, ___",
-                      options: ["N14","O14","O13","P14","N13"],
-                      correct: 1,
+                      options: ["O14","N14","O13","P14","N13"],
+                      correct: 0,
                       explanation: "The letter advances by 3 and the number advances by 3: C2→F5→I8→L11→O14. The answer is O14. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
               },
               {
                       id: 96,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
-                      options: ["MR","NS","OR","OS","NR"],
-                      correct: 3,
+                      options: ["MR","OS","OR","NS","NR"],
+                      correct: 1,
                       explanation: "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second letter gaps increase (+2, +3, +4, +5): E→G→J→N→S. The answer is OS. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
               },
               {
                       id: 97,
                       difficulty: 3,
                       question: "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
-                      options: ["NL","NM","ML","OL","NK"],
-                      correct: 0,
+                      options: ["ML","NM","NL","OL","NK"],
+                      correct: 2,
                       explanation: "Both letters go back 3 each step: ZX→WU→TR→QO→NL. The answer is NL. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
               },
               {
                       id: 98,
                       difficulty: 3,
                       question: "What comes next in this series? A1, D4, G9, J16, ___",
-                      options: ["M25","L25","M24","N25","M26"],
-                      correct: 0,
+                      options: ["N25","L25","M26","M25","M24"],
+                      correct: 3,
                       explanation: "The letter advances by 3 each time: A→D→G→J→M. The numbers are perfect squares: 1, 4, 9, 16, 25. The answer is M25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
               }
       ,
@@ -13894,8 +13894,8 @@ const vrData = {
           "difficulty": 1,
           "question": "What comes next in this letter series? D, G, J, M, ___",
           "options": [
-            "N",
             "O",
+            "N",
             "P",
             "Q",
             "R"
@@ -13924,8 +13924,8 @@ const vrData = {
           "options": [
             "O",
             "N",
-            "M",
             "L",
+            "M",
             "K"
           ],
           "correct": 1,
@@ -13937,12 +13937,12 @@ const vrData = {
           "question": "What comes next in this letter pair series? AB, AB, AB, AB, ___",
           "options": [
             "BC",
-            "CD",
-            "AC",
             "AB",
+            "AC",
+            "CD",
             "BA"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "The pair AB repeats every time. The next pair is AB. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
         },
         {
@@ -13951,12 +13951,12 @@ const vrData = {
           "question": "What comes next in this letter series? F, H, J, L, ___",
           "options": [
             "M",
-            "N",
+            "Q",
             "O",
             "P",
-            "Q"
+            "N"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "The pattern adds 2 each time: F(+2)→H(+2)→J(+2)→L(+2)→N. The answer is N. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
         },
                 {
@@ -13964,13 +13964,13 @@ const vrData = {
           "difficulty": 1,
           "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
           "options": [
-            "VW",
             "UU",
+            "VW",
             "TT",
             "UV",
             "UW"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV→UU. The answer is UU. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
         },
         {
@@ -13993,12 +13993,12 @@ const vrData = {
           "question": "What comes next in this letter pair series? BY, DW, FU, HS, ___",
           "options": [
             "IQ",
-            "JQ",
             "JP",
+            "JQ",
             "IR",
             "KQ"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The first letter advances by 2 (B→D→F→H→J) and the second goes back 2 (Y→W→U→S→Q). The answer is JQ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
         },
         {
@@ -14007,12 +14007,12 @@ const vrData = {
           "question": "What comes next in this letter pair series? BE, DG, FI, HK, ___",
           "options": [
             "JL",
-            "JM",
-            "IM",
             "IL",
+            "IM",
+            "JM",
             "KM"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Both letters advance by 2 each step: BE→DG→FI→HK→JM. The answer is JM. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
         },
         {
@@ -14021,12 +14021,12 @@ const vrData = {
           "question": "What comes next in this series? Z5, X10, V15, T20, ___",
           "options": [
             "S25",
-            "R25",
+            "R30",
             "R20",
             "S20",
-            "R30"
+            "R25"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "The letter goes back 2 and the number advances by 5: Z5→X10→V15→T20→R25. The answer is R25. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
         },
         {
@@ -14034,13 +14034,13 @@ const vrData = {
           "difficulty": 2,
           "question": "What comes next in this letter pair series? AE, BG, CI, DK, ___",
           "options": [
-            "EL",
             "EM",
+            "EL",
             "FM",
             "EN",
             "FL"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The first letter advances by 1 (A→B→C→D→E) and the second advances by 2 (E→G→I→K→M). The answer is EM. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
         },
         {
@@ -14049,12 +14049,12 @@ const vrData = {
           "question": "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
           "options": [
             "VH",
-            "VI",
             "UI",
+            "VI",
             "VJ",
             "UH"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The first letter goes back 1 (Z→Y→X→W→V) and the second advances by 2 (A→C→E→G→I). The answer is VI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
         },
         {
@@ -14063,12 +14063,12 @@ const vrData = {
           "question": "What comes next in this series? C2, F4, I6, L8, ___",
           "options": [
             "N10",
-            "M10",
             "O10",
+            "M10",
             "O8",
             "N8"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The letter advances by 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The number advances by 2 each time: 2, 4, 6, 8, 10. The answer is O10. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
         },
         {
@@ -14076,10 +14076,10 @@ const vrData = {
           "difficulty": 2,
           "question": "What comes next in this letter pair series? DB, FC, HD, JE, ___",
           "options": [
-            "KF",
+            "KG",
             "LF",
             "LG",
-            "KG",
+            "KF",
             "LE"
           ],
           "correct": 1,
@@ -14091,10 +14091,10 @@ const vrData = {
           "question": "What comes next in this letter pair series? WA, UC, SE, QG, ___",
           "options": [
             "OI",
-            "OH",
+            "NI",
             "PI",
             "OJ",
-            "NI"
+            "OH"
           ],
           "correct": 0,
           "explanation": "The first letter goes back 2 (W→U→S→Q→O) and the second advances by 2 (A→C→E→G→I). The answer is OI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
@@ -14104,13 +14104,13 @@ const vrData = {
           "difficulty": 2,
           "question": "What comes next in this series? B3, D6, F9, H12, ___",
           "options": [
-            "I15",
             "J15",
+            "I15",
             "J14",
             "K15",
             "J16"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The letter advances by 2 (B→D→F→H→J) and the number advances by 3 (3→6→9→12→15). The answer is J15. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
         },
         {
@@ -14119,12 +14119,12 @@ const vrData = {
           "question": "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
           "options": [
             "IN",
-            "JN",
-            "JM",
             "JO",
+            "JM",
+            "JN",
             "KN"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Both letters advance by 2 each step: BF→DH→FJ→HL→JN. The answer is JN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
         },
         {
@@ -14160,13 +14160,13 @@ const vrData = {
           "difficulty": 3,
           "question": "What comes next in this letter series? Z, Y, W, T, P, ___",
           "options": [
-            "L",
-            "K",
-            "J",
+            "H",
             "I",
-            "H"
+            "J",
+            "K",
+            "L"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The gaps increase going backwards: Z(−1)→Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
         },
         {
@@ -14188,13 +14188,13 @@ const vrData = {
           "difficulty": 3,
           "question": "What comes next in this letter pair series? DA, FC, JE, NG, ___",
           "options": [
-            "RI",
             "SI",
+            "RI",
             "RH",
             "SJ",
             "QI"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The first letter gaps are +2, +4, +4, +4: D(+2)→F(+4)→J(+4)→N(+4)→R. The second letter advances by 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is RI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
         },
         {
@@ -14202,13 +14202,13 @@ const vrData = {
           "difficulty": 3,
           "question": "What comes next in this series? A1, C4, E9, G16, ___",
           "options": [
-            "I25",
-            "H25",
             "I24",
+            "H25",
+            "I25",
             "J25",
             "I20"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The letter advances by 2 each time: A→C→E→G→I. The numbers are perfect squares: 1=1², 4=2², 9=3², 16=4², 25=5². The answer is I25. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
         },
         {
@@ -14230,16 +14230,16 @@ const vrData = {
           "id": 123,
           "difficulty": 1,
           "question": "What comes next in this letter series? C, E, G, I, ___",
-          "options": ["J", "K", "L", "H", "M"],
-          "correct": 1,
+          "options": ["J", "H", "L", "K", "M"],
+          "correct": 3,
           "explanation": "Each letter skips one: C(+2)→E(+2)→G(+2)→I(+2)→K. The pattern is +2 each time. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
         },
         {
           "id": 124,
           "difficulty": 2,
           "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
-          "options": ["IK", "JL", "JK", "IJ", "KL"],
-          "correct": 1,
+          "options": ["JL", "IK", "JK", "IJ", "KL"],
+          "correct": 0,
           "explanation": "Both letters skip one each step: B(+2)→D(+2)→F(+2)→H(+2)→J. D(+2)→F(+2)→H(+2)→J(+2)→L. Answer: JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
         },
         {
@@ -14254,7 +14254,7 @@ const vrData = {
           "id": 126,
           "difficulty": 1,
           "question": "What comes next in this letter series? J, I, H, G, ___",
-          "options": ["E", "F", "D", "H", "I"],
+          "options": ["D", "F", "E", "H", "I"],
           "correct": 1,
           "explanation": "The letters go backwards by 1 each time: J(-1)→I(-1)→H(-1)→G(-1)→F. It's the alphabet in reverse! Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
         },
@@ -14262,15 +14262,15 @@ const vrData = {
           "id": 127,
           "difficulty": 2,
           "question": "What comes next in this letter pair series? TR, QO, NL, KI, ___",
-          "options": ["HF", "HG", "IF", "GE", "JH"],
-          "correct": 0,
+          "options": ["GE", "HG", "IF", "HF", "JH"],
+          "correct": 3,
           "explanation": "Both letters decrease by 3 each step: T(-3)→Q(-3)→N(-3)→K(-3)→H. R(-3)→O(-3)→L(-3)→I(-3)→F. Answer: HF. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
         },
         {
           "id": 128,
           "difficulty": 3,
           "question": "What comes next in this letter pair series? YX, WV, UT, SR, ___",
-          "options": ["QP", "RQ", "PO", "QR", "RP"],
+          "options": ["QP", "QR", "PO", "RQ", "RP"],
           "correct": 0,
           "explanation": "Both letters decrease by 2 each step: Y(-2)→W(-2)→U(-2)→S(-2)→Q. X(-2)→V(-2)→T(-2)→R(-2)→P. The gap within each pair stays at 1. Answer: QP. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
         },
@@ -14284,7 +14284,7 @@ const vrData = {
           "id": 1,
           "difficulty": 1,
           "question": "What number comes next in this series? 3, 7, 11, 15, 19, ___",
-          "options": ["24", "23", "22", "25", "21"],
+          "options": ["24", "23", "21", "25", "22"],
           "correct": 1,
           "explanation": "The pattern is +4 each time. 19 + 4 = 23. Tip: Write down the gap between each number — if it is always the same, you have found the pattern! ✓"
         },
@@ -14292,7 +14292,7 @@ const vrData = {
           "id": 2,
           "difficulty": 1,
           "question": "What number comes next in this series? 5, 10, 15, 20, 25, ___",
-          "options": ["31", "29", "30", "32", "28"],
+          "options": ["32", "29", "30", "31", "28"],
           "correct": 2,
           "explanation": "The pattern is +5 each time (the 5 times table). 25 + 5 = 30. Tip: Check if the numbers are a times table — that is the quickest way to spot the pattern. ✓"
         },
@@ -14300,7 +14300,7 @@ const vrData = {
           "id": 3,
           "difficulty": 1,
           "question": "What number comes next in this series? 100, 90, 80, 70, 60, ___",
-          "options": ["51", "49", "52", "50", "48"],
+          "options": ["51", "48", "52", "50", "49"],
           "correct": 3,
           "explanation": "The pattern is -10 each time. 60 - 10 = 50. Tip: Subtraction patterns work the same way — find the constant gap. ✓"
         },
@@ -14308,7 +14308,7 @@ const vrData = {
           "id": 4,
           "difficulty": 1,
           "question": "What number comes next in this series? 4, 8, 12, 16, 20, ___",
-          "options": ["25", "23", "26", "22", "24"],
+          "options": ["26", "23", "25", "22", "24"],
           "correct": 4,
           "explanation": "The pattern is +4 each time (the 4 times table). 20 + 4 = 24. Tip: Times tables are the most common D1 pattern — learn them well! ✓"
         },
@@ -14316,7 +14316,7 @@ const vrData = {
           "id": 5,
           "difficulty": 1,
           "question": "What number comes next in this series? 2, 9, 16, 23, 30, ___",
-          "options": ["37", "38", "36", "39", "35"],
+          "options": ["37", "39", "36", "38", "35"],
           "correct": 0,
           "explanation": "The pattern is +7 each time. 30 + 7 = 37. Tip: Check the gap between the first two numbers, then verify it works for all pairs. ✓"
         },
@@ -14324,7 +14324,7 @@ const vrData = {
           "id": 6,
           "difficulty": 1,
           "question": "What number comes next in this series? 50, 45, 40, 35, 30, ___",
-          "options": ["26", "25", "24", "27", "23"],
+          "options": ["27", "25", "23", "26", "24"],
           "correct": 1,
           "explanation": "The pattern is -5 each time. 30 - 5 = 25. Tip: Descending sequences subtract the same amount each time. ✓"
         },
@@ -14332,7 +14332,7 @@ const vrData = {
           "id": 7,
           "difficulty": 1,
           "question": "What number comes next in this series? 11, 22, 33, 44, 55, ___",
-          "options": ["67", "65", "66", "68", "64"],
+          "options": ["68", "65", "66", "67", "64"],
           "correct": 2,
           "explanation": "The pattern is +11 each time (the 11 times table). 55 + 11 = 66. Tip: The 11 times table is easy to spot — the digits repeat! ✓"
         },
@@ -14340,7 +14340,7 @@ const vrData = {
           "id": 8,
           "difficulty": 1,
           "question": "What number comes next in this series? 6, 12, 18, 24, 30, ___",
-          "options": ["37", "35", "38", "36", "34"],
+          "options": ["37", "34", "38", "36", "35"],
           "correct": 3,
           "explanation": "The pattern is +6 each time (the 6 times table). 30 + 6 = 36. Tip: Recognise times tables quickly — they save time in the exam. ✓"
         },
@@ -14348,7 +14348,7 @@ const vrData = {
           "id": 9,
           "difficulty": 1,
           "question": "What number comes next in this series? 8, 16, 24, 32, 40, ___",
-          "options": ["49", "47", "50", "46", "48"],
+          "options": ["50", "47", "49", "46", "48"],
           "correct": 4,
           "explanation": "The pattern is +8 each time (the 8 times table). 40 + 8 = 48. Tip: If the gap is always the same, add it one more time to get the answer. ✓"
         },
@@ -14356,7 +14356,7 @@ const vrData = {
           "id": 10,
           "difficulty": 1,
           "question": "What number comes next in this series? 75, 68, 61, 54, 47, ___",
-          "options": ["40", "41", "39", "42", "38"],
+          "options": ["40", "42", "39", "41", "38"],
           "correct": 0,
           "explanation": "The pattern is -7 each time. 47 - 7 = 40. Tip: For subtraction patterns, check your arithmetic carefully — it is easy to slip by one. ✓"
         },
@@ -14364,7 +14364,7 @@ const vrData = {
           "id": 11,
           "difficulty": 1,
           "question": "What number comes next in this series? 13, 26, 39, 52, 65, ___",
-          "options": ["79", "78", "77", "80", "76"],
+          "options": ["79", "78", "76", "80", "77"],
           "correct": 1,
           "explanation": "The pattern is +13 each time (the 13 times table). 65 + 13 = 78. Tip: Even larger gaps can be times tables — 13 × 1, 13 × 2, 13 × 3... ✓"
         },
@@ -14372,7 +14372,7 @@ const vrData = {
           "id": 12,
           "difficulty": 1,
           "question": "What number comes next in this series? 9, 18, 27, 36, 45, ___",
-          "options": ["55", "53", "54", "56", "52"],
+          "options": ["56", "53", "54", "55", "52"],
           "correct": 2,
           "explanation": "The pattern is +9 each time (the 9 times table). 45 + 9 = 54. Tip: The 9 times table has a neat pattern — the digits always add up to 9! ✓"
         },
@@ -14380,7 +14380,7 @@ const vrData = {
           "id": 13,
           "difficulty": 1,
           "question": "What number comes next in this series? 200, 180, 160, 140, 120, ___",
-          "options": ["101", "99", "102", "100", "98"],
+          "options": ["101", "98", "102", "100", "99"],
           "correct": 3,
           "explanation": "The pattern is -20 each time. 120 - 20 = 100. Tip: Larger gaps still follow the same principle — find the constant difference. ✓"
         },
@@ -14388,7 +14388,7 @@ const vrData = {
           "id": 14,
           "difficulty": 1,
           "question": "What number comes next in this series? 15, 30, 45, 60, 75, ___",
-          "options": ["91", "89", "92", "88", "90"],
+          "options": ["92", "89", "91", "88", "90"],
           "correct": 4,
           "explanation": "The pattern is +15 each time. 75 + 15 = 90. Tip: +15 is the same as the 15 times table. ✓"
         },
@@ -14396,7 +14396,7 @@ const vrData = {
           "id": 15,
           "difficulty": 1,
           "question": "What number comes next in this series? 3, 6, 9, 12, 15, ___",
-          "options": ["18", "19", "17", "20", "16"],
+          "options": ["18", "20", "17", "19", "16"],
           "correct": 0,
           "explanation": "The pattern is +3 each time (the 3 times table). 15 + 3 = 18. Tip: Start with the simplest check — is the gap always the same? ✓"
         },
@@ -14404,7 +14404,7 @@ const vrData = {
           "id": 16,
           "difficulty": 1,
           "question": "What number comes next in this series? 1, 2, 4, 8, 16, ___",
-          "options": ["33", "32", "31", "34", "30"],
+          "options": ["33", "32", "30", "34", "31"],
           "correct": 1,
           "explanation": "Each number doubles (×2). 16 × 2 = 32. Tip: If the gaps keep getting bigger, check whether each number is double the last. ✓"
         },
@@ -14412,7 +14412,7 @@ const vrData = {
           "id": 17,
           "difficulty": 1,
           "question": "What number comes next in this series? 3, 6, 12, 24, 48, ___",
-          "options": ["97", "95", "96", "98", "94"],
+          "options": ["98", "95", "96", "97", "94"],
           "correct": 2,
           "explanation": "Each number doubles (×2). 48 × 2 = 96. Tip: Doubling is the most common multiplication pattern. ✓"
         },
@@ -14420,7 +14420,7 @@ const vrData = {
           "id": 18,
           "difficulty": 1,
           "question": "What number comes next in this series? 5, 10, 20, 40, 80, ___",
-          "options": ["161", "159", "162", "160", "158"],
+          "options": ["161", "158", "162", "160", "159"],
           "correct": 3,
           "explanation": "Each number doubles (×2). 80 × 2 = 160. Tip: If dividing each number by the previous always gives 2, it is a doubling pattern. ✓"
         },
@@ -14428,7 +14428,7 @@ const vrData = {
           "id": 19,
           "difficulty": 1,
           "question": "What number comes next in this series? 64, 32, 16, 8, 4, ___",
-          "options": ["3", "1", "4", "0", "2"],
+          "options": ["4", "1", "3", "0", "2"],
           "correct": 4,
           "explanation": "Each number halves (÷2). 4 ÷ 2 = 2. Tip: Halving is doubling in reverse — look for numbers that are all powers of 2. ✓"
         },
@@ -14436,7 +14436,7 @@ const vrData = {
           "id": 20,
           "difficulty": 1,
           "question": "What number comes next in this series? 128, 64, 32, 16, 8, ___",
-          "options": ["4", "5", "3", "6", "2"],
+          "options": ["4", "6", "3", "5", "2"],
           "correct": 0,
           "explanation": "Each number halves (÷2). 8 ÷ 2 = 4. Tip: Know your powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024. ✓"
         },
@@ -14444,7 +14444,7 @@ const vrData = {
           "id": 21,
           "difficulty": 1,
           "question": "What number comes next in this series? 7, 14, 21, 28, 35, ___",
-          "options": ["43", "42", "41", "44", "40"],
+          "options": ["43", "42", "40", "44", "41"],
           "correct": 1,
           "explanation": "The 7 times table. 7 × 6 = 42. Tip: Times tables are very common in D1 — recognise them quickly! ✓"
         },
@@ -14452,7 +14452,7 @@ const vrData = {
           "id": 22,
           "difficulty": 1,
           "question": "What number comes next in this series? 12, 24, 36, 48, 60, ___",
-          "options": ["73", "71", "72", "74", "70"],
+          "options": ["74", "71", "72", "73", "70"],
           "correct": 2,
           "explanation": "The 12 times table. 12 × 6 = 72. Tip: The gap is always 12 — constant difference. ✓"
         },
@@ -14460,7 +14460,7 @@ const vrData = {
           "id": 23,
           "difficulty": 1,
           "question": "What number comes next in this series? 16, 32, 48, 64, 80, ___",
-          "options": ["97", "95", "98", "96", "94"],
+          "options": ["97", "94", "98", "96", "95"],
           "correct": 3,
           "explanation": "The 16 times table. 16 × 6 = 96. Tip: Even if the gap is large, it might still be a times table. ✓"
         },
@@ -14468,7 +14468,7 @@ const vrData = {
           "id": 24,
           "difficulty": 1,
           "question": "What number comes next in this series? 25, 50, 75, 100, 125, ___",
-          "options": ["151", "149", "152", "148", "150"],
+          "options": ["152", "149", "151", "148", "150"],
           "correct": 4,
           "explanation": "The 25 times table. 25 × 6 = 150. Tip: Multiples of 25 always end in 00, 25, 50, or 75. ✓"
         },
@@ -14476,7 +14476,7 @@ const vrData = {
           "id": 25,
           "difficulty": 1,
           "question": "What number comes next in this series? 14, 28, 42, 56, 70, ___",
-          "options": ["84", "85", "83", "86", "82"],
+          "options": ["84", "86", "83", "85", "82"],
           "correct": 0,
           "explanation": "The 14 times table. 14 × 6 = 84. Tip: The gap is +14 each time — constant difference. ✓"
         },
@@ -14484,7 +14484,7 @@ const vrData = {
           "id": 26,
           "difficulty": 1,
           "question": "What number comes next in this series? 2, 5, 3, 6, 4, ___",
-          "options": ["8", "7", "6", "9", "5"],
+          "options": ["8", "7", "5", "9", "6"],
           "correct": 1,
           "explanation": "Two patterns: odd positions 2, 3, 4 (+1); even positions 5, 6, 7 (+1). Next is even position: 7. Tip: If the numbers seem to jump around, try looking at every other number separately. ✓"
         },
@@ -14492,7 +14492,7 @@ const vrData = {
           "id": 27,
           "difficulty": 1,
           "question": "What number comes next in this series? 10, 20, 15, 25, 20, ___",
-          "options": ["31", "29", "30", "32", "28"],
+          "options": ["32", "29", "30", "31", "28"],
           "correct": 2,
           "explanation": "Two patterns: odd positions 10, 15, 20 (+5); even positions 20, 25, 30 (+5). Next is even: 30. Tip: Separate odd and even positions and check each group independently. ✓"
         },
@@ -14500,7 +14500,7 @@ const vrData = {
           "id": 28,
           "difficulty": 1,
           "question": "What number comes next in this series? 1, 10, 2, 20, 3, ___",
-          "options": ["31", "29", "32", "30", "28"],
+          "options": ["31", "28", "32", "30", "29"],
           "correct": 3,
           "explanation": "Two patterns: odd positions 1, 2, 3 (+1); even positions 10, 20, 30 (×10 of odd). Next is even: 30. Tip: Sometimes the two sub-sequences are related to each other! ✓"
         },
@@ -14508,7 +14508,7 @@ const vrData = {
           "id": 29,
           "difficulty": 1,
           "question": "What number comes next in this series? 5, 1, 10, 2, 15, ___",
-          "options": ["4", "2", "5", "1", "3"],
+          "options": ["5", "2", "4", "1", "3"],
           "correct": 4,
           "explanation": "Odd positions: 5, 10, 15 (+5). Even positions: 1, 2, 3 (+1). Next is even: 3. Tip: Count positions — 1st, 2nd, 3rd... Odd positions are one pattern, even are another. ✓"
         },
@@ -14516,7 +14516,7 @@ const vrData = {
           "id": 30,
           "difficulty": 1,
           "question": "What number comes next in this series? 100, 1, 90, 2, 80, ___",
-          "options": ["3", "4", "2", "5", "1"],
+          "options": ["3", "5", "2", "4", "1"],
           "correct": 0,
           "explanation": "Odd positions: 100, 90, 80 (-10). Even positions: 1, 2, 3 (+1). Next is even: 3. Tip: One sequence can go up while the other goes down — look at each separately. ✓"
         },
@@ -14524,7 +14524,7 @@ const vrData = {
           "id": 31,
           "difficulty": 2,
           "question": "What number comes next in this series? 7, 9, 12, 16, 21, ___",
-          "options": ["28", "27", "26", "29", "25"],
+          "options": ["28", "27", "25", "29", "26"],
           "correct": 1,
           "explanation": "Differences: +2, +3, +4, +5. They increase by 1. Next difference: +6. 21 + 6 = 27. Tip: Write the differences between each pair — if THEY form a pattern, you have cracked it! ✓"
         },
@@ -14532,7 +14532,7 @@ const vrData = {
           "id": 32,
           "difficulty": 2,
           "question": "What number comes next in this series? 5, 10, 17, 26, 37, ___",
-          "options": ["51", "49", "50", "52", "48"],
+          "options": ["52", "49", "50", "51", "48"],
           "correct": 2,
           "explanation": "Differences: +5, +7, +9, +11. They increase by 2 (odd numbers). Next: +13. 37 + 13 = 50. Tip: Differences increasing by 2 means the gaps are consecutive odd or even numbers. ✓"
         },
@@ -14540,7 +14540,7 @@ const vrData = {
           "id": 33,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 3, 7, 13, 21, ___",
-          "options": ["32", "30", "33", "31", "29"],
+          "options": ["32", "29", "33", "31", "30"],
           "correct": 3,
           "explanation": "Differences: +2, +4, +6, +8. They increase by 2 (even numbers). Next: +10. 21 + 10 = 31. Tip: When differences increase by 2, the next difference is the last one plus 2. ✓"
         },
@@ -14548,7 +14548,7 @@ const vrData = {
           "id": 34,
           "difficulty": 2,
           "question": "What number comes next in this series? 34, 42, 52, 64, 78, ___",
-          "options": ["95", "93", "96", "92", "94"],
+          "options": ["96", "93", "95", "92", "94"],
           "correct": 4,
           "explanation": "Differences: +8, +10, +12, +14. They increase by 2. Next: +16. 78 + 16 = 94. Tip: Even with bigger numbers, the principle is the same — find the pattern in the gaps. ✓"
         },
@@ -14556,7 +14556,7 @@ const vrData = {
           "id": 35,
           "difficulty": 2,
           "question": "What number comes next in this series? 100, 90, 82, 76, 72, ___",
-          "options": ["70", "71", "69", "72", "68"],
+          "options": ["70", "72", "69", "71", "68"],
           "correct": 0,
           "explanation": "Differences: -10, -8, -6, -4. They increase by 2 (getting smaller). Next: -2. 72 - 2 = 70. Tip: Decreasing differences work the same way — the gaps shrink by a constant amount. ✓"
         },
@@ -14564,7 +14564,7 @@ const vrData = {
           "id": 36,
           "difficulty": 2,
           "question": "What number comes next in this series? 2, 3, 5, 8, 12, ___",
-          "options": ["18", "17", "16", "19", "15"],
+          "options": ["18", "17", "15", "19", "16"],
           "correct": 1,
           "explanation": "Differences: +1, +2, +3, +4. They increase by 1. Next: +5. 12 + 5 = 17. Tip: These are triangular numbers! 1, 3, 6, 10, 15, 21... ✓"
         },
@@ -14572,7 +14572,7 @@ const vrData = {
           "id": 37,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 4, 10, 19, 31, ___",
-          "options": ["47", "45", "46", "48", "44"],
+          "options": ["48", "45", "46", "47", "44"],
           "correct": 2,
           "explanation": "Differences: +3, +6, +9, +12. They increase by 3. Next: +15. 31 + 15 = 46. Tip: Differences can increase by any constant — not just 1 or 2. ✓"
         },
@@ -14580,7 +14580,7 @@ const vrData = {
           "id": 38,
           "difficulty": 2,
           "question": "What number comes next in this series? 50, 47, 42, 35, 26, ___",
-          "options": ["16", "14", "17", "15", "13"],
+          "options": ["16", "13", "17", "15", "14"],
           "correct": 3,
           "explanation": "Differences: -3, -5, -7, -9. They change by 2 (odd numbers descending). Next: -11. 26 - 11 = 15. Tip: Descending sequences with increasing gaps are tricky — write every difference down. ✓"
         },
@@ -14588,7 +14588,7 @@ const vrData = {
           "id": 39,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 3, 6, 10, 15, ___",
-          "options": ["22", "20", "23", "19", "21"],
+          "options": ["23", "20", "22", "19", "21"],
           "correct": 4,
           "explanation": "Differences: +2, +3, +4, +5. Next: +6. 15 + 6 = 21. These are triangular numbers. Tip: Triangular numbers: 1, 3, 6, 10, 15, 21, 28 — the differences are 2, 3, 4, 5, 6, 7... ✓"
         },
@@ -14596,7 +14596,7 @@ const vrData = {
           "id": 40,
           "difficulty": 2,
           "question": "What number comes next in this series? 4, 7, 12, 19, 28, ___",
-          "options": ["39", "40", "38", "41", "37"],
+          "options": ["39", "41", "38", "40", "37"],
           "correct": 0,
           "explanation": "Differences: +3, +5, +7, +9. They increase by 2 (odd numbers). Next: +11. 28 + 11 = 39. Tip: If differences go 3, 5, 7, 9... they are consecutive odd numbers. Next is 11. ✓"
         },
@@ -14604,7 +14604,7 @@ const vrData = {
           "id": 41,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 4, 9, 16, 25, ___",
-          "options": ["37", "36", "35", "38", "34"],
+          "options": ["37", "36", "34", "38", "35"],
           "correct": 1,
           "explanation": "These are square numbers: 1², 2², 3², 4², 5². Next: 6² = 36. Tip: Learn your square numbers by heart: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144. ✓"
         },
@@ -14612,7 +14612,7 @@ const vrData = {
           "id": 42,
           "difficulty": 2,
           "question": "What number comes next in this series? 4, 9, 16, 25, 36, ___",
-          "options": ["50", "48", "49", "51", "47"],
+          "options": ["51", "48", "49", "50", "47"],
           "correct": 2,
           "explanation": "Square numbers starting from 2²: 2², 3², 4², 5², 6². Next: 7² = 49. Tip: If the differences are 5, 7, 9, 11 (odd numbers), it could be squares! ✓"
         },
@@ -14620,7 +14620,7 @@ const vrData = {
           "id": 43,
           "difficulty": 2,
           "question": "What number comes next in this series? 121, 100, 81, 64, 49, ___",
-          "options": ["37", "35", "38", "36", "34"],
+          "options": ["37", "34", "38", "36", "35"],
           "correct": 3,
           "explanation": "Descending squares: 11², 10², 9², 8², 7². Next: 6² = 36. Tip: Squares can go forwards OR backwards — recognise the sequence either way. ✓"
         },
@@ -14628,7 +14628,7 @@ const vrData = {
           "id": 44,
           "difficulty": 2,
           "question": "What number comes next in this series? 49, 36, 25, 16, 9, ___",
-          "options": ["5", "3", "6", "2", "4"],
+          "options": ["6", "3", "5", "2", "4"],
           "correct": 4,
           "explanation": "Descending squares: 7², 6², 5², 4², 3². Next: 2² = 4. Tip: Descending squares have differences of -13, -11, -9, -7... (decreasing odd numbers). ✓"
         },
@@ -14636,7 +14636,7 @@ const vrData = {
           "id": 45,
           "difficulty": 2,
           "question": "What number comes next in this series? 16, 25, 36, 49, 64, ___",
-          "options": ["81", "82", "80", "83", "79"],
+          "options": ["81", "83", "80", "82", "79"],
           "correct": 0,
           "explanation": "Squares from 4²: 4², 5², 6², 7², 8². Next: 9² = 81. Tip: 9² = 81 — a commonly tested square number. ✓"
         },
@@ -14644,7 +14644,7 @@ const vrData = {
           "id": 46,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 1, 2, 3, 5, ___",
-          "options": ["9", "8", "7", "10", "6"],
+          "options": ["9", "8", "6", "10", "7"],
           "correct": 1,
           "explanation": "Fibonacci: each number is the sum of the two before it. 3 + 5 = 8. Tip: In Fibonacci patterns, add the last two numbers to get the next one. ✓"
         },
@@ -14652,7 +14652,7 @@ const vrData = {
           "id": 47,
           "difficulty": 2,
           "question": "What number comes next in this series? 2, 3, 5, 8, 13, ___",
-          "options": ["22", "20", "21", "23", "19"],
+          "options": ["23", "20", "21", "22", "19"],
           "correct": 2,
           "explanation": "Fibonacci-like: each = sum of previous two. 8 + 13 = 21. Tip: This pattern is named after the mathematician Fibonacci — it appears everywhere in nature! ✓"
         },
@@ -14660,7 +14660,7 @@ const vrData = {
           "id": 48,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 3, 4, 7, 11, ___",
-          "options": ["19", "17", "20", "18", "16"],
+          "options": ["19", "16", "20", "18", "17"],
           "correct": 3,
           "explanation": "Each number is the sum of the two before it. 7 + 11 = 18. Tip: Fibonacci patterns can start with any two numbers — the rule is always \"add the last two\". ✓"
         },
@@ -14668,7 +14668,7 @@ const vrData = {
           "id": 49,
           "difficulty": 2,
           "question": "What number comes next in this series? 2, 2, 4, 6, 10, ___",
-          "options": ["17", "15", "18", "14", "16"],
+          "options": ["18", "15", "17", "14", "16"],
           "correct": 4,
           "explanation": "Each number is the sum of the two before it. 6 + 10 = 16. Tip: If the differences seem random, try adding the last two numbers — it might be Fibonacci! ✓"
         },
@@ -14684,7 +14684,7 @@ const vrData = {
           "id": 51,
           "difficulty": 2,
           "question": "What number comes next in this series? 11, 13, 17, 19, 23, ___",
-          "options": ["30", "29", "28", "31", "27"],
+          "options": ["30", "29", "27", "31", "28"],
           "correct": 1,
           "explanation": "Consecutive prime numbers. The next prime after 23 is 29. Tip: Primes have uneven gaps — that is what makes them hard to spot. Look for numbers that can only divide by 1 and themselves. ✓"
         },
@@ -14692,7 +14692,7 @@ const vrData = {
           "id": 52,
           "difficulty": 2,
           "question": "What number comes next in this series? 7, 11, 13, 17, 19, ___",
-          "options": ["24", "22", "23", "25", "21"],
+          "options": ["25", "22", "23", "24", "21"],
           "correct": 2,
           "explanation": "Consecutive prime numbers. The next prime after 19 is 23. Tip: 21 is NOT prime (3 × 7), so we skip to 23. ✓"
         },
@@ -14700,7 +14700,7 @@ const vrData = {
           "id": 53,
           "difficulty": 2,
           "question": "What number comes next in this series? 2, 6, 18, 54, 162, ___",
-          "options": ["487", "485", "488", "486", "484"],
+          "options": ["487", "484", "488", "486", "485"],
           "correct": 3,
           "explanation": "Each number is ×3. 162 × 3 = 486. Tip: If the gaps keep getting much bigger, try dividing each number by the previous one. ✓"
         },
@@ -14708,7 +14708,7 @@ const vrData = {
           "id": 54,
           "difficulty": 2,
           "question": "What number comes next in this series? 5, 15, 45, 135, 405, ___",
-          "options": ["1216", "1214", "1217", "1213", "1215"],
+          "options": ["1217", "1214", "1216", "1213", "1215"],
           "correct": 4,
           "explanation": "Each number is ×3. 405 × 3 = 1215. Tip: ×3 patterns grow very fast — the numbers get large quickly. ✓"
         },
@@ -14716,7 +14716,7 @@ const vrData = {
           "id": 55,
           "difficulty": 2,
           "question": "What number comes next in this series? 1, 4, 16, 64, 256, ___",
-          "options": ["1024", "1025", "1023", "1026", "1022"],
+          "options": ["1024", "1026", "1023", "1025", "1022"],
           "correct": 0,
           "explanation": "Each number is ×4. 256 × 4 = 1024. Tip: ×4 is ×2 twice — so 256 × 2 = 512, × 2 again = 1024. ✓"
         },
@@ -14724,7 +14724,7 @@ const vrData = {
           "id": 56,
           "difficulty": 2,
           "question": "What number comes next in this series? 2048, 1024, 512, 256, 128, ___",
-          "options": ["65", "64", "63", "66", "62"],
+          "options": ["65", "64", "62", "66", "63"],
           "correct": 1,
           "explanation": "Each number halves (÷2). 128 ÷ 2 = 64. Tip: Powers of 2 going backwards: 2048, 1024, 512, 256, 128, 64, 32... ✓"
         },
@@ -14732,7 +14732,7 @@ const vrData = {
           "id": 57,
           "difficulty": 2,
           "question": "What number comes next in this series? 34, 45, 56, 67, 78, ___",
-          "options": ["90", "88", "89", "91", "87"],
+          "options": ["91", "88", "89", "90", "87"],
           "correct": 2,
           "explanation": "The pattern is +11 each time. 78 + 11 = 89. Tip: Even large gaps can be constant — always check! ✓"
         },
@@ -14740,7 +14740,7 @@ const vrData = {
           "id": 58,
           "difficulty": 2,
           "question": "What number comes next in this series? 58, 127, 196, 265, 334, ___",
-          "options": ["404", "402", "405", "403", "401"],
+          "options": ["404", "401", "405", "403", "402"],
           "correct": 3,
           "explanation": "The pattern is +69 each time. 334 + 69 = 403. Tip: With big numbers, take your time with the arithmetic. Write it down if needed. ✓"
         },
@@ -14748,7 +14748,7 @@ const vrData = {
           "id": 59,
           "difficulty": 2,
           "question": "What number comes next in this series? 901, 800, 699, 598, 497, ___",
-          "options": ["397", "395", "398", "394", "396"],
+          "options": ["398", "395", "397", "394", "396"],
           "correct": 4,
           "explanation": "The pattern is -101 each time. 497 - 101 = 396. Tip: -101 is a common GL gap — watch for three-digit differences. ✓"
         },
@@ -14756,7 +14756,7 @@ const vrData = {
           "id": 60,
           "difficulty": 2,
           "question": "What number comes next in this series? 543, 432, 321, 210, 99, ___",
-          "options": ["-12", "-11", "-13", "-10", "-14"],
+          "options": ["-12", "-10", "-13", "-11", "-14"],
           "correct": 0,
           "explanation": "The pattern is -111 each time. 99 - 111 = -12. Tip: The answer can be negative! Do not panic — just keep subtracting. ✓"
         },
@@ -14764,7 +14764,7 @@ const vrData = {
           "id": 61,
           "difficulty": 2,
           "question": "What number comes next in this series? 240, 216, 192, 168, 144, ___",
-          "options": ["121", "120", "119", "122", "118"],
+          "options": ["121", "120", "118", "122", "119"],
           "correct": 1,
           "explanation": "The pattern is -24 each time. 144 - 24 = 120. Tip: -24 means subtract 24 from the last number. ✓"
         },
@@ -14772,7 +14772,7 @@ const vrData = {
           "id": 62,
           "difficulty": 2,
           "question": "What number comes next in this series? 17, 34, 51, 68, 85, ___",
-          "options": ["103", "101", "102", "104", "100"],
+          "options": ["104", "101", "102", "103", "100"],
           "correct": 2,
           "explanation": "The pattern is +17 each time. 85 + 17 = 102. Tip: +17 is the 17 times table. 17 × 6 = 102. ✓"
         },
@@ -14780,7 +14780,7 @@ const vrData = {
           "id": 63,
           "difficulty": 2,
           "question": "What number comes next in this series? 150, 125, 100, 75, 50, ___",
-          "options": ["26", "24", "27", "25", "23"],
+          "options": ["26", "23", "27", "25", "24"],
           "correct": 3,
           "explanation": "The pattern is -25 each time. 50 - 25 = 25. Tip: Multiples of 25 are easy to spot — they end in 00, 25, 50, or 75. ✓"
         },
@@ -14788,7 +14788,7 @@ const vrData = {
           "id": 64,
           "difficulty": 2,
           "question": "What number comes next in this series? 23, 46, 69, 92, 115, ___",
-          "options": ["139", "137", "140", "136", "138"],
+          "options": ["140", "137", "139", "136", "138"],
           "correct": 4,
           "explanation": "The pattern is +23 each time. 115 + 23 = 138. Tip: The 23 times table — not one you learn at school, but the gap is always 23. ✓"
         },
@@ -14796,7 +14796,7 @@ const vrData = {
           "id": 65,
           "difficulty": 2,
           "question": "What number comes next in this series? 31, 37, 41, 47, 51, ___",
-          "options": ["57", "58", "56", "59", "55"],
+          "options": ["57", "59", "56", "58", "55"],
           "correct": 0,
           "explanation": "The pattern alternates: +6, +4, +6, +4, +6. 51 + 6 = 57. Tip: If differences alternate between two numbers, the pattern repeats. ✓"
         },
@@ -14804,7 +14804,7 @@ const vrData = {
           "id": 66,
           "difficulty": 2,
           "question": "What number comes next in this series? 10, 13, 11, 14, 12, ___",
-          "options": ["16", "15", "14", "17", "13"],
+          "options": ["16", "15", "13", "17", "14"],
           "correct": 1,
           "explanation": "Two patterns: odd positions 10, 11, 12 (+1); even positions 13, 14, 15 (+1). Next is even: 15. Tip: Separate odd and even positions when the numbers bounce up and down. ✓"
         },
@@ -14812,7 +14812,7 @@ const vrData = {
           "id": 67,
           "difficulty": 2,
           "question": "What number comes next in this series? 2, 8, 4, 10, 6, ___",
-          "options": ["13", "11", "12", "14", "10"],
+          "options": ["14", "11", "12", "13", "10"],
           "correct": 2,
           "explanation": "Two patterns: odd positions 2, 4, 6 (+2); even positions 8, 10, 12 (+2). Next is even: 12. Tip: Both sub-sequences can have the same rule but start from different numbers. ✓"
         },
@@ -14820,7 +14820,7 @@ const vrData = {
           "id": 68,
           "difficulty": 2,
           "question": "What number comes next in this series? 15, 6, 21, 8, 27, ___",
-          "options": ["11", "9", "12", "10", "8"],
+          "options": ["11", "8", "12", "10", "9"],
           "correct": 3,
           "explanation": "Odd positions: 15, 21, 27 (+6). Even positions: 6, 8, 10 (+2). Next is even: 10. Tip: The two sub-sequences can have DIFFERENT gaps — check each one independently. ✓"
         },
@@ -14828,7 +14828,7 @@ const vrData = {
           "id": 69,
           "difficulty": 2,
           "question": "What number comes next in this series? 3, 6, 10, 15, 21, ___",
-          "options": ["29", "27", "30", "26", "28"],
+          "options": ["30", "27", "29", "26", "28"],
           "correct": 4,
           "explanation": "Triangular numbers (starting from 3). Differences: +3, +4, +5, +6. Next: +7. 21 + 7 = 28. Tip: Triangular numbers: 1, 3, 6, 10, 15, 21, 28. The gaps increase by 1 each time. ✓"
         },
@@ -14836,7 +14836,7 @@ const vrData = {
           "id": 70,
           "difficulty": 2,
           "question": "What number comes next in this series? 10, 15, 21, 28, 36, ___",
-          "options": ["45", "46", "44", "47", "43"],
+          "options": ["45", "47", "44", "46", "43"],
           "correct": 0,
           "explanation": "Triangular numbers. Differences: +5, +6, +7, +8. Next: +9. 36 + 9 = 45. Tip: If differences are consecutive numbers (5, 6, 7, 8, 9...), these are triangular numbers. ✓"
         },
@@ -14844,7 +14844,7 @@ const vrData = {
           "id": 71,
           "difficulty": 3,
           "question": "What number comes next in this series? 27, 37, 29, 39, 31, ___",
-          "options": ["42", "41", "40", "43", "39"],
+          "options": ["42", "41", "39", "43", "40"],
           "correct": 1,
           "explanation": "Odd positions: 27, 29, 31 (+2). Even positions: 37, 39, 41 (+2). Next is even: 41. Tip: If the sequence bounces around, ALWAYS try splitting into odd and even positions! ✓"
         },
@@ -14852,7 +14852,7 @@ const vrData = {
           "id": 72,
           "difficulty": 3,
           "question": "What number comes next in this series? 32, 17, 16, 23, 8, ___",
-          "options": ["30", "28", "29", "31", "27"],
+          "options": ["31", "28", "29", "30", "27"],
           "correct": 2,
           "explanation": "Odd positions: 32, 16, 8 (÷2). Even positions: 17, 23, 29 (+6). Next is even: 29. Tip: One sub-sequence can multiply/divide while the other adds/subtracts! ✓"
         },
@@ -14860,7 +14860,7 @@ const vrData = {
           "id": 73,
           "difficulty": 3,
           "question": "What number comes next in this series? 31, 17, 33, 15, 35, ___",
-          "options": ["14", "12", "15", "13", "11"],
+          "options": ["14", "11", "15", "13", "12"],
           "correct": 3,
           "explanation": "Odd positions: 31, 33, 35 (+2). Even positions: 17, 15, 13 (-2). Next is even: 13. Tip: One sub-sequence going UP and the other going DOWN is a classic D3 pattern. ✓"
         },
@@ -14868,7 +14868,7 @@ const vrData = {
           "id": 74,
           "difficulty": 3,
           "question": "What number comes next in this series? 7, 3, 6, 6, 5, 12, ___",
-          "options": ["5", "3", "6", "2", "4"],
+          "options": ["6", "3", "5", "2", "4"],
           "correct": 4,
           "explanation": "Odd positions: 7, 6, 5, 4 (-1). Even positions: 3, 6, 12 (×2). Next is odd: 4. Tip: Be careful which position you are answering — count 1st, 2nd, 3rd... ✓"
         },
@@ -14876,7 +14876,7 @@ const vrData = {
           "id": 75,
           "difficulty": 3,
           "question": "What number comes next in this series? 50, 40, 45, 42, 40, ___",
-          "options": ["44", "45", "43", "46", "42"],
+          "options": ["44", "46", "43", "45", "42"],
           "correct": 0,
           "explanation": "Odd positions: 50, 45, 40 (-5). Even positions: 40, 42, 44 (+2). Next is even: 44. Tip: The hardest part is keeping track of which sub-sequence gives the next answer. ✓"
         },
@@ -14884,7 +14884,7 @@ const vrData = {
           "id": 76,
           "difficulty": 3,
           "question": "What number comes next in this series? 1, 5, 2, 10, 3, ___",
-          "options": ["16", "15", "14", "17", "13"],
+          "options": ["16", "15", "13", "17", "14"],
           "correct": 1,
           "explanation": "Odd positions: 1, 2, 3 (+1). Even positions: 5, 10, 15 (+5). Next is even: 15. Tip: Simple individual patterns can combine to make a tricky sequence! ✓"
         },
@@ -14892,7 +14892,7 @@ const vrData = {
           "id": 77,
           "difficulty": 3,
           "question": "What number comes next in this series? 100, 3, 90, 6, 80, ___",
-          "options": ["10", "8", "9", "11", "7"],
+          "options": ["11", "8", "9", "10", "7"],
           "correct": 2,
           "explanation": "Odd positions: 100, 90, 80 (-10). Even positions: 3, 6, 9 (+3). Next is even: 9. Tip: One sub-sequence decreasing by 10 and the other increasing by 3 — both simple alone! ✓"
         },
@@ -14900,7 +14900,7 @@ const vrData = {
           "id": 78,
           "difficulty": 3,
           "question": "What number comes next in this series? 2, 100, 4, 80, 6, ___",
-          "options": ["61", "59", "62", "60", "58"],
+          "options": ["61", "58", "62", "60", "59"],
           "correct": 3,
           "explanation": "Odd positions: 2, 4, 6 (+2). Even positions: 100, 80, 60 (-20). Next is even: 60. Tip: Process of elimination — if one sub-sequence is obvious, the other gives the answer. ✓"
         },
@@ -14908,7 +14908,7 @@ const vrData = {
           "id": 79,
           "difficulty": 3,
           "question": "What number comes next in this series? 2, 5, 11, 23, 47, ___",
-          "options": ["96", "94", "97", "93", "95"],
+          "options": ["97", "94", "96", "93", "95"],
           "correct": 4,
           "explanation": "Each number = previous × 2 + 1. 47 × 2 + 1 = 95. Tip: If ×2 is close but not exact, try ×2+1 or ×2-1 — these are compound rules. ✓"
         },
@@ -14916,7 +14916,7 @@ const vrData = {
           "id": 80,
           "difficulty": 3,
           "question": "What number comes next in this series? 1, 4, 13, 40, 121, ___",
-          "options": ["364", "365", "363", "366", "362"],
+          "options": ["364", "366", "363", "365", "362"],
           "correct": 0,
           "explanation": "Each number = previous × 3 + 1. 121 × 3 + 1 = 364. Tip: Compound rules combine multiplication and addition — try ×N+1 or ×N-1. ✓"
         },
@@ -14924,7 +14924,7 @@ const vrData = {
           "id": 81,
           "difficulty": 3,
           "question": "What number comes next in this series? 3, 7, 15, 31, 63, ___",
-          "options": ["128", "127", "126", "129", "125"],
+          "options": ["128", "127", "125", "129", "126"],
           "correct": 1,
           "explanation": "Each number = previous × 2 + 1. 63 × 2 + 1 = 127. Tip: These numbers are all one less than powers of 2: 4, 8, 16, 32, 64, 128. ✓"
         },
@@ -14932,7 +14932,7 @@ const vrData = {
           "id": 82,
           "difficulty": 3,
           "question": "What number comes next in this series? 1, 3, 9, 27, 81, ___",
-          "options": ["244", "242", "243", "245", "241"],
+          "options": ["245", "242", "243", "244", "241"],
           "correct": 2,
           "explanation": "Each number is ×3. 81 × 3 = 243. Tip: Powers of 3: 1, 3, 9, 27, 81, 243 — each is triple the last. ✓"
         },
@@ -14940,7 +14940,7 @@ const vrData = {
           "id": 83,
           "difficulty": 3,
           "question": "What number comes next in this series? 5, 11, 23, 47, 95, ___",
-          "options": ["192", "190", "193", "191", "189"],
+          "options": ["192", "189", "193", "191", "190"],
           "correct": 3,
           "explanation": "Each number = previous × 2 + 1. 95 × 2 + 1 = 191. Tip: The ×2+1 pattern is one of the hardest to spot — practise recognising it! ✓"
         },
@@ -14948,7 +14948,7 @@ const vrData = {
           "id": 84,
           "difficulty": 3,
           "question": "What number comes next in this series? 1, 8, 27, 64, 125, ___",
-          "options": ["217", "215", "218", "214", "216"],
+          "options": ["218", "215", "217", "214", "216"],
           "correct": 4,
           "explanation": "Cube numbers: 1³, 2³, 3³, 4³, 5³. Next: 6³ = 216. Tip: Know your cubes: 1, 8, 27, 64, 125, 216. They grow very fast! ✓"
         },
@@ -14956,7 +14956,7 @@ const vrData = {
           "id": 85,
           "difficulty": 3,
           "question": "What number comes next in this series? 8, 27, 64, 125, 216, ___",
-          "options": ["343", "344", "342", "345", "341"],
+          "options": ["343", "345", "342", "344", "341"],
           "correct": 0,
           "explanation": "Cube numbers from 2³. Next: 7³ = 343. Tip: 7³ = 7 × 7 × 7 = 49 × 7 = 343. ✓"
         },
@@ -14964,7 +14964,7 @@ const vrData = {
           "id": 86,
           "difficulty": 3,
           "question": "What number comes next in this series? 27, 64, 125, 216, 343, ___",
-          "options": ["513", "512", "511", "514", "510"],
+          "options": ["513", "512", "510", "514", "511"],
           "correct": 1,
           "explanation": "Cube numbers from 3³. Next: 8³ = 512. Tip: 8³ = 512 — this is also 2⁹ (a power of 2). ✓"
         },
@@ -14972,7 +14972,7 @@ const vrData = {
           "id": 87,
           "difficulty": 3,
           "question": "What number comes next in this series? 13, 19, 31, 55, 103, ___",
-          "options": ["200", "198", "199", "201", "197"],
+          "options": ["201", "198", "199", "200", "197"],
           "correct": 2,
           "explanation": "Differences: +6, +12, +24, +48. The differences double! Next: +96. 103 + 96 = 199. Tip: If differences grow very fast, check whether they are DOUBLING each time. ✓"
         },
@@ -14980,7 +14980,7 @@ const vrData = {
           "id": 88,
           "difficulty": 3,
           "question": "What number comes next in this series? 5, 7, 11, 19, 35, ___",
-          "options": ["68", "66", "69", "67", "65"],
+          "options": ["68", "65", "69", "67", "66"],
           "correct": 3,
           "explanation": "Differences: +2, +4, +8, +16. The differences double! Next: +32. 35 + 32 = 67. Tip: Doubling differences: 2, 4, 8, 16, 32 — these are powers of 2! ✓"
         },
@@ -14988,7 +14988,7 @@ const vrData = {
           "id": 89,
           "difficulty": 3,
           "question": "What number comes next in this series? 100, 96, 88, 72, 40, ___",
-          "options": ["-23", "-25", "-22", "-26", "-24"],
+          "options": ["-22", "-25", "-23", "-26", "-24"],
           "correct": 4,
           "explanation": "Differences: -4, -8, -16, -32. They double (negatively). Next: -64. 40 - 64 = -24. Tip: Doubling differences can go negative — keep subtracting! ✓"
         },
@@ -14996,7 +14996,7 @@ const vrData = {
           "id": 90,
           "difficulty": 3,
           "question": "What number comes next in this series? 1, 2, 5, 14, 41, ___",
-          "options": ["122", "123", "121", "124", "120"],
+          "options": ["122", "124", "121", "123", "120"],
           "correct": 0,
           "explanation": "Each number = previous × 3 - 1. 41 × 3 - 1 = 122. Tip: If ×3 is close, try ×3-1 or ×3+1. ✓"
         },
@@ -15004,7 +15004,7 @@ const vrData = {
           "id": 91,
           "difficulty": 3,
           "question": "What number comes next in this series? 3, 5, 9, 17, 33, ___",
-          "options": ["66", "65", "64", "67", "63"],
+          "options": ["66", "65", "63", "67", "64"],
           "correct": 1,
           "explanation": "Differences: +2, +4, +8, +16. They double. Next: +32. 33 + 32 = 65. Tip: Each difference is exactly double the previous one — classic doubling differences. ✓"
         },
@@ -15012,7 +15012,7 @@ const vrData = {
           "id": 92,
           "difficulty": 3,
           "question": "What number comes next in this series? 4, 16, 5, 25, 6, ___",
-          "options": ["37", "35", "36", "38", "34"],
+          "options": ["38", "35", "36", "37", "34"],
           "correct": 2,
           "explanation": "Alternating: 4, 4²=16, 5, 5²=25, 6, 6²=36. Numbers and their squares alternate. Tip: If you see a number followed by its square, the pattern alternates between number and square. ✓"
         },
@@ -15020,7 +15020,7 @@ const vrData = {
           "id": 93,
           "difficulty": 3,
           "question": "What number comes next in this series? 144, 121, 100, 81, 64, ___",
-          "options": ["50", "48", "51", "49", "47"],
+          "options": ["50", "47", "51", "49", "48"],
           "correct": 3,
           "explanation": "Descending squares: 12², 11², 10², 9², 8². Next: 7² = 49. Tip: 144 = 12², 121 = 11² — descending perfect squares. ✓"
         },
@@ -15028,7 +15028,7 @@ const vrData = {
           "id": 94,
           "difficulty": 3,
           "question": "What number comes next in this series? 2, 3, 5, 7, 11, 13, ___",
-          "options": ["18", "16", "19", "15", "17"],
+          "options": ["19", "16", "18", "15", "17"],
           "correct": 4,
           "explanation": "Prime numbers. Next prime after 13 is 17. Tip: 15 = 3×5 and 16 = 4×4, so neither is prime. The next prime is 17. ✓"
         },
@@ -15044,7 +15044,7 @@ const vrData = {
           "id": 96,
           "difficulty": 3,
           "question": "What number comes next in this series? 11, 13, 17, 19, 23, ___",
-          "options": ["30", "29", "28", "31", "27"],
+          "options": ["30", "29", "27", "31", "28"],
           "correct": 1,
           "explanation": "Consecutive primes. Next after 23 is 29 (not 25, 27, or 28 — none are prime). Tip: Primes have irregular gaps — check each candidate number carefully. ✓"
         },
@@ -15060,7 +15060,7 @@ const vrData = {
           "id": 98,
           "difficulty": 3,
           "question": "What number comes next in this series? 11, 22, 33, 44, 55, ___",
-          "options": ["67", "65", "68", "66", "64"],
+          "options": ["67", "64", "68", "66", "65"],
           "correct": 3,
           "explanation": "Repeated digits: 11, 22, 33, 44, 55, 66. Add 11 each time. Tip: Repeated-digit numbers follow the 11 times table. ✓"
         },
@@ -15096,13 +15096,13 @@ const vrData = {
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word BED?",
                       options: [
-                              "11",
                               "12",
+                              "11",
                               "13",
                               "14",
                               "15"
                       ],
-                      correct: 0,
+                      correct: 1,
                       explanation: "B=2, E=5, D=4. Total: 2 + 5 + 4 = 11. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
               },
               {
@@ -15111,12 +15111,12 @@ const vrData = {
                       question: "If A=1, B=2, C=3... what is the total value of the word AGE?",
                       options: [
                               "12",
-                              "13",
                               "14",
+                              "13",
                               "15",
                               "16"
                       ],
-                      correct: 1,
+                      correct: 2,
                       explanation: "A=1, G=7, E=5. Total: 1 + 7 + 5 = 13. Tip: Double-check by adding the numbers in a different order. ✓"
               },
               {
@@ -15124,11 +15124,11 @@ const vrData = {
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... which of these words has the highest total value?",
                       options: [
-                              "FIG",
+                              "DOG",
                               "HEN",
                               "APE",
                               "COW",
-                              "DOG"
+                              "FIG"
                       ],
                       correct: 3,
                       explanation: "FIG: F=6+I=9+G=7=22. HEN: H=8+E=5+N=14=27. APE: A=1+P=16+E=5=22. COW: C=3+O=15+W=23=41. DOG: D=4+O=15+G=7=26. COW has the highest value at 41. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
@@ -15137,8 +15137,8 @@ const vrData = {
                      id: 5,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word ICE?",
-                      options: ["17", "16", "15", "18", "19"],
-                      correct: 0,
+                      options: ["16", "19", "15", "18", "17"],
+                      correct: 4,
                       explanation: "I=9, C=3, E=5. Total: 9 + 3 + 5 = 17. ✓"
               },
               {
@@ -15161,20 +15161,20 @@ const vrData = {
                       question: "If A=3, B=5, C=7, what is the value of A + B + C?",
                       options: [
                               "12",
-                              "13",
-                              "14",
                               "15",
+                              "14",
+                              "13",
                               "16"
                       ],
-                      correct: 3,
+                      correct: 1,
                       explanation: "A=3, B=5, C=7. A + B + C = 3 + 5 + 7 = 15. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
               },
               {
                      id: 8,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word DOG?",
-                      options: ["26", "25", "24", "27", "28"],
-                      correct: 0,
+                      options: ["24", "25", "26", "27", "28"],
+                      correct: 2,
                       explanation: "D=4, O=15, G=7. Total: 4 + 15 + 7 = 26. ✓"
               },
               {
@@ -15196,13 +15196,13 @@ const vrData = {
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... which of these words has the lowest total value?",
                       options: [
-                              "BAD",
+                              "BID",
                               "BIG",
                               "BAG",
                               "BED",
-                              "BID"
+                              "BAD"
                       ],
-                      correct: 0,
+                      correct: 4,
                       explanation: "BAD: B=2+A=1+D=4=7. BIG: B=2+I=9+G=7=18. BAG: B=2+A=1+G=7=10. BED: B=2+E=5+D=4=11. BID: B=2+I=9+D=4=15. BAD has the lowest value at 7. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
               },
               {
@@ -15210,13 +15210,13 @@ const vrData = {
                       difficulty: 2,
                       question: "If A=5, B=10, C=15, what is the value of A + B − C?",
                       options: [
-                              "-5",
                               "0",
+                              "-5",
                               "5",
                               "10",
                               "15"
                       ],
-                      correct: 1,
+                      correct: 0,
                       explanation: "A=5, B=10, C=15. A + B − C = 5 + 10 − 15 = 0. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
               },
               {
@@ -15237,8 +15237,8 @@ const vrData = {
                      id: 13,
                       difficulty: 3,
                       question: "If A=1, B=2, C=3... what is the total value of the word FACE?",
-                      options: ["15", "14", "12", "16", "18"],
-                      correct: 0,
+                      options: ["12", "14", "15", "16", "18"],
+                      correct: 2,
                       explanation: "F=6, A=1, C=3, E=5. Total: 6 + 1 + 3 + 5 = 15. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
               },
               {
@@ -15254,8 +15254,8 @@ const vrData = {
                      id: 15,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word SUN?",
-                      options: ["52","54","56","50","48"],
-                      correct: 1,
+                      options: ["54","48","56","50","52"],
+                      correct: 0,
                       explanation: "S=19, U=21, N=14. Total: 19 + 21 + 14 = 54. Tip: Double-check by adding the numbers in a different order. ✓"
               },
               {
@@ -15270,104 +15270,104 @@ const vrData = {
                      id: 17,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word CUP?",
-                      options: ["38","42","36","40","44"],
-                      correct: 3,
+                      options: ["38","40","36","42","44"],
+                      correct: 1,
                       explanation: "C=3, U=21, P=16. Total: 3 + 21 + 16 = 40. ✓"
               },
               {
                      id: 18,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word BOX?",
-                      options: ["41","43","39","37","45"],
-                      correct: 0,
+                      options: ["39","43","41","37","45"],
+                      correct: 2,
                       explanation: "B=2, O=15, X=24. Total: 2 + 15 + 24 = 41. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
               },
               {
                      id: 19,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word JAM?",
-                      options: ["22","26","28","20","24"],
-                      correct: 4,
+                      options: ["22","26","28","24","20"],
+                      correct: 3,
                       explanation: "J=10, A=1, M=13. Total: 10 + 1 + 13 = 24. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
               },
               {
                      id: 20,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word FIG?",
-                      options: ["22","24","20","18","26"],
-                      correct: 0,
+                      options: ["26","24","20","18","22"],
+                      correct: 4,
                       explanation: "F=6, I=9, G=7. Total: 6 + 9 + 7 = 22. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
               },
               {
                      id: 21,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word PEN?",
-                      options: ["33","35","37","31","39"],
-                      correct: 1,
+                      options: ["35","33","37","31","39"],
+                      correct: 0,
                       explanation: "P=16, E=5, N=14. Total: 16 + 5 + 14 = 35. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
               },
               {
                      id: 22,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word FISH?",
-                      options: ["40","44","38","42","46"],
-                      correct: 3,
+                      options: ["40","42","38","44","46"],
+                      correct: 1,
                       explanation: "F=6, I=9, S=19, H=8. Total: 6 + 9 + 19 + 8 = 42. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
               },
               {
                      id: 23,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word CAKE?",
-                      options: ["18","22","16","24","20"],
-                      correct: 4,
+                      options: ["18","22","20","24","16"],
+                      correct: 2,
                       explanation: "C=3, A=1, K=11, E=5. Total: 3 + 1 + 11 + 5 = 20. Tip: Double-check by adding the numbers in a different order. ✓"
               },
               {
                      id: 24,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word JUMP?",
-                      options: ["60","62","56","64","58"],
-                      correct: 0,
+                      options: ["64","62","56","60","58"],
+                      correct: 3,
                       explanation: "J=10, U=21, M=13, P=16. Total: 10 + 21 + 13 + 16 = 60. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
               },
               {
                      id: 25,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word KING?",
-                      options: ["39","41","43","37","45"],
-                      correct: 1,
+                      options: ["39","45","43","37","41"],
+                      correct: 4,
                       explanation: "K=11, I=9, N=14, G=7. Total: 11 + 9 + 14 + 7 = 41. ✓"
               },
               {
                      id: 26,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word DRUM?",
-                      options: ["54","58","52","60","56"],
-                      correct: 4,
+                      options: ["56","58","52","60","54"],
+                      correct: 0,
                       explanation: "D=4, R=18, U=21, M=13. Total: 4 + 18 + 21 + 13 = 56. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
               },
               {
                      id: 27,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word LIME?",
-                      options: ["37","41","35","39","43"],
-                      correct: 3,
+                      options: ["37","39","35","41","43"],
+                      correct: 1,
                       explanation: "L=12, I=9, M=13, E=5. Total: 12 + 9 + 13 + 5 = 39. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
               },
               {
                      id: 28,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... which of these words has the highest total value?",
-                      options: ["BIKE","HIKE","LIKE","MIKE","PIKE"],
-                      correct: 4,
+                      options: ["BIKE","HIKE","PIKE","MIKE","LIKE"],
+                      correct: 2,
                       explanation: "BIKE: 2+9+11+5=27. HIKE: 8+9+11+5=33. LIKE: 12+9+11+5=37. MIKE: 13+9+11+5=38. PIKE: 16+9+11+5=41. PIKE has the highest value at 41. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
               },
               {
                      id: 29,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... which of these tree names has the lowest total value?",
-                      options: ["OAK","ELM","ASH","FIR","YEW"],
-                      correct: 0,
+                      options: ["FIR","ELM","ASH","OAK","YEW"],
+                      correct: 3,
                       explanation: "OAK: 15+1+11=27. ELM: 5+12+13=30. ASH: 1+19+8=28. FIR: 6+9+18=33. YEW: 25+5+23=53. OAK has the lowest value at 27. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
               },
               {
@@ -15398,8 +15398,8 @@ const vrData = {
                      id: 33,
                       difficulty: 3,
                       question: "If A=1, B=2, C=3... what is the total value of the word CLOUD?",
-                      options: ["53","57","51","55","59"],
-                      correct: 3,
+                      options: ["53","57","55","51","59"],
+                      correct: 2,
                       explanation: "C=3, L=12, O=15, U=21, D=4. Total: 3 + 12 + 15 + 21 + 4 = 55. ✓"
               },
               {
@@ -15422,48 +15422,48 @@ const vrData = {
                      id: 36,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word RUN?",
-                      options: ["49", "51", "55", "53", "57"],
-                      correct: 3,
+                      options: ["53", "51", "55", "49", "57"],
+                      correct: 0,
                       explanation: "R=18, U=21, N=14. Total: 18 + 21 + 14 = 53. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
               },
               {
                      id: 37,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word DEN?",
-                      options: ["21","25","19","23","27"],
-                      correct: 3,
+                      options: ["21","23","19","25","27"],
+                      correct: 1,
                       explanation: "D=4, E=5, N=14. Total: 4 + 5 + 14 = 23. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
               },
               {
                      id: 38,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word NEST?",
-                      options: ["56","58","60","54","62"],
-                      correct: 1,
+                      options: ["56","60","58","54","62"],
+                      correct: 2,
                       explanation: "N=14, E=5, S=19, T=20. Total: 14 + 5 + 19 + 20 = 58. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
               },
               {
                      id: 39,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... what is the total value of the word WOLF?",
-                      options: ["52","54","58","60","56"],
-                      correct: 4,
+                      options: ["52","54","58","56","60"],
+                      correct: 3,
                       explanation: "W=23, O=15, L=12, F=6. Total: 23 + 15 + 12 + 6 = 56. Tip: Double-check by adding the numbers in a different order. ✓"
               },
               {
                      id: 40,
                       difficulty: 3,
                       question: "If A=1, B=2, C=3... what is the total value of the word QUEEN?",
-                      options: ["62","64","58","60","66"],
-                      correct: 0,
+                      options: ["66","64","58","60","62"],
+                      correct: 4,
                       explanation: "Q=17, U=21, E=5, E=5, N=14. Total: 17 + 21 + 5 + 5 + 14 = 62. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
               },
               {
                      id: 41,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... which of these words has the highest total value?",
-                      options: ["GATE","KITE","LATE","NOTE","BITE"],
-                      correct: 3,
+                      options: ["NOTE","BITE","LATE","GATE","KITE"],
+                      correct: 0,
                       explanation: "GATE: 7+1+20+5=33. KITE: 11+9+20+5=45. LATE: 12+1+20+5=38. NOTE: 14+15+20+5=54. BITE: 2+9+20+5=36. NOTE has the highest value at 54. ✓"
               },
               {
@@ -15478,31 +15478,31 @@ const vrData = {
                      id: 43,
                       difficulty: 1,
                       question: "If A=1, B=2, C=3... what is the total value of the word MAP?",
-                      options: ["28","30","32","26","34"],
-                      correct: 1,
+                      options: ["28","32","30","26","34"],
+                      correct: 2,
                       explanation: "M=13, A=1, P=16. Total: 13 + 1 + 16 = 30. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
               },
               {
                      id: 44,
                       difficulty: 2,
                       question: "If A=1, B=2, C=3... how much more is the word STOP worth than the word STEP?",
-                      options: ["8","12","14","6","10"],
-                      correct: 4,
+                      options: ["8","12","14","10","6"],
+                      correct: 3,
                       explanation: "STOP: S=19+T=20+O=15+P=16 = 70. STEP: S=19+T=20+E=5+P=16 = 60. Difference: 70 − 60 = 10. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
               },
               {
                      id: 45,
                       difficulty: 1,
                       question: "If A=3 and B=8, what is the value of A + B?",
-                      options: ["10","11","12","9","13"],
-                      correct: 1,
+                      options: ["10","13","12","9","11"],
+                      correct: 4,
                       explanation: "A=3, B=8. A + B = 3 + 8 = 11. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
               },
               {
                      id: 46,
                       difficulty: 1,
                       question: "If A=2, B=5 and C=9, what is the value of A + B + C?",
-                      options: ["16", "15", "14", "17", "18"],
+                      options: ["16", "17", "14", "15", "18"],
                       correct: 0,
                       explanation: "A=2, B=5, C=9. A + B + C = 2 + 5 + 9 = 16. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
               },
@@ -15510,7 +15510,7 @@ const vrData = {
                      id: 47,
                       difficulty: 1,
                       question: "If A=6 and B=4, what is the value of A × B?",
-                      options: ["20", "22", "26", "24", "28"],
+                      options: ["26", "22", "20", "24", "28"],
                       correct: 3,
                       explanation: "A=6, B=4. A × B = 6 × 4 = 24. Tip: Double-check by adding the numbers in a different order. ✓"
               },
@@ -15526,24 +15526,24 @@ const vrData = {
                      id: 49,
                       difficulty: 2,
                       question: "If A=5, B=6 and C=3, what is the value of A × B + C?",
-                      options: ["30","33","36","45","27"],
-                      correct: 1,
+                      options: ["30","45","36","33","27"],
+                      correct: 3,
                       explanation: "A=5, B=6, C=3. By BODMAS, multiply first: A × B = 5 × 6 = 30. Then add: 30 + C = 30 + 3 = 33. Tip: Double-check by adding the numbers in a different order. ✓"
               },
               {
                      id: 50,
                       difficulty: 2,
                       question: "If A=9, B=4 and C=6, what is the value of A × B − C?",
-                      options: ["28","32","34","30","36"],
-                      correct: 3,
+                      options: ["28","32","34","36","30"],
+                      correct: 4,
                       explanation: "A=9, B=4, C=6. By BODMAS, multiply first: A × B = 9 × 4 = 36. Then subtract: 36 − C = 36 − 6 = 30. Tip: For comparison questions, estimate first — late-alphabet letters score higher. ✓"
               },
               {
                      id: 51,
                       difficulty: 2,
                       question: "If A=7, B=3 and C=2, what is the value of (A − B) × C?",
-                      options: ["6","8","10","12","14"],
-                      correct: 1,
+                      options: ["8","12","10","6","14"],
+                      correct: 0,
                       explanation: "A=7, B=3, C=2. Brackets first: A − B = 7 − 3 = 4. Then multiply: 4 × C = 4 × 2 = 8. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
               },
               {
@@ -15558,16 +15558,16 @@ const vrData = {
                      id: 53,
                       difficulty: 2,
                       question: "If A=4, B=11 and C=3, what is the value of B − A + C?",
-                      options: ["8","10","12","4","14"],
-                      correct: 1,
+                      options: ["8","12","10","4","14"],
+                      correct: 2,
                       explanation: "A=4, B=11, C=3. B − A = 11 − 4 = 7. Then 7 + C = 7 + 3 = 10. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
               },
               {
                      id: 54,
                       difficulty: 2,
                       question: "If A=6 and B=5, what is the value of A × B − A?",
-                      options: ["24","22","20","26","28"],
-                      correct: 0,
+                      options: ["26","22","20","24","28"],
+                      correct: 3,
                       explanation: "A=6, B=5. By BODMAS, multiply first: A × B = 6 × 5 = 30. Then subtract: 30 − A = 30 − 6 = 24. Tip: Write down intermediate totals — don't hold everything in your head. ✓"
               },
               {
@@ -15582,39 +15582,39 @@ const vrData = {
                      id: 56,
                       difficulty: 3,
                       question: "If A=2, B=4, C=6 and D=3, what is the value of A × B + C ÷ D?",
-                      options: ["8","10","12","14","6"],
-                      correct: 1,
+                      options: ["10","8","12","14","6"],
+                      correct: 0,
                       explanation: "A=2, B=4, C=6, D=3. By BODMAS, do multiplication and division first: A × B = 2 × 4 = 8 and C ÷ D = 6 ÷ 3 = 2. Then add: 8 + 2 = 10. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
               },
               {
                      id: 57,
                       difficulty: 3,
                       question: "If A=2, B=3 and C=10, what is the value of C − A × B?",
-                      options: ["4","6","8","24","2"],
-                      correct: 0,
+                      options: ["6","4","8","24","2"],
+                      correct: 1,
                       explanation: "A=2, B=3, C=10. By BODMAS, multiply first: A × B = 2 × 3 = 6. Then subtract: C − 6 = 10 − 6 = 4. Remember, multiplication comes before subtraction. Tip: Watch out for double letters — count them twice! ✓"
               },
               {
                      id: 58,
                       difficulty: 3,
                       question: "If A=12, B=4 and C=7, what is the value of A ÷ B + C?",
-                      options: ["8","9","11","12","10"],
-                      correct: 4,
+                      options: ["8","9","10","12","11"],
+                      correct: 2,
                       explanation: "A=12, B=4, C=7. By BODMAS, divide first: A ÷ B = 12 ÷ 4 = 3. Then add: 3 + C = 3 + 7 = 10. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
               },
               {
                      id: 59,
                       difficulty: 2,
                       question: "If A=7 and B=9, what is the value of 2 × A + B?",
-                      options: ["21","23","25","27","32"],
-                      correct: 1,
+                      options: ["21","27","25","32","23"],
+                      correct: 4,
                       explanation: "A=7, B=9. By BODMAS, multiply first: 2 × A = 2 × 7 = 14. Then add: 14 + B = 14 + 9 = 23. Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
               },
               {
                      id: 60,
                       difficulty: 3,
                       question: "If A=1, B=4, C=8 and D=5, what is the value of (A + B) × (C − D)?",
-                      options: ["12","13","14","15","16"],
+                      options: ["12","14","13","15","16"],
                       correct: 3,
                       explanation: "A=1, B=4, C=8, D=5. First bracket: A + B = 1 + 4 = 5. Second bracket: C − D = 8 − 5 = 3. Then multiply: 5 × 3 = 15. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
               },
@@ -15622,8 +15622,8 @@ const vrData = {
                      id: 61,
                       difficulty: 2,
                       question: "If A=10, B=3 and C=2, what is the value of A − B × C?",
-                      options: ["4","14","6","8","16"],
-                      correct: 0,
+                      options: ["14","4","6","8","16"],
+                      correct: 1,
                       explanation: "A=10, B=3, C=2. By BODMAS, multiply first: B × C = 3 × 2 = 6. Then subtract: A − 6 = 10 − 6 = 4. Be careful — multiplication comes before subtraction! Tip: Double-check by adding the numbers in a different order. ✓"
               },
               {
@@ -15638,16 +15638,16 @@ const vrData = {
                      id: 63,
                       difficulty: 2,
                       question: "If A=5 and B=7, what is the value of A × A − B?",
-                      options: ["16","20","22","18","24"],
-                      correct: 3,
+                      options: ["16","20","18","22","24"],
+                      correct: 2,
                       explanation: "A=5, B=7. By BODMAS, multiply first: A × A = 5 × 5 = 25. Then subtract: 25 − B = 25 − 7 = 18. Tip: For comparison questions, estimate first — late-alphabet letters score higher. ✓"
               },
               {
                      id: 64,
                       difficulty: 3,
                       question: "If A=3, B=2, C=5 and D=4, what is the value of A × C − B × D?",
-                      options: ["5","7","9","11","3"],
-                      correct: 1,
+                      options: ["5","11","9","3","7"],
+                      correct: 4,
                       explanation: "A=3, B=2, C=5, D=4. By BODMAS, do both multiplications first: A × C = 3 × 5 = 15 and B × D = 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: Remember BODMAS! Multiplication before addition. ✓"
               },
               {
@@ -15670,7 +15670,7 @@ const vrData = {
                      id: 67,
                       difficulty: 3,
                       question: "If A=10, B=6 and C=2, what is the value of (A − B) × (A − C)?",
-                      options: ["32", "30", "28", "34", "36"],
+                      options: ["32", "30", "34", "28", "36"],
                       correct: 0,
                       explanation: "A=10, B=6, C=2. First bracket: A − B = 10 − 6 = 4. Second bracket: A − C = 10 − 2 = 8. Then multiply: 4 × 8 = 32. Tip: Double-check by adding the numbers in a different order. ✓"
               },
@@ -15686,16 +15686,16 @@ const vrData = {
                      id: 69,
                       difficulty: 3,
                       question: "If A=3, B=8 and C=3, what is the value of B × C ÷ A?",
-                      options: ["6","7","9","10","8"],
-                      correct: 4,
+                      options: ["6","7","9","8","10"],
+                      correct: 3,
                       explanation: "A=3, B=8, C=3. By BODMAS, work left to right for multiplication and division: B × C = 8 × 3 = 24. Then 24 ÷ A = 24 ÷ 3 = 8. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
               },
               {
                      id: 70,
                       difficulty: 1,
                       question: "If A=4 and B=6, what is the value of A + B + A?",
-                      options: ["12","14","16","10","18"],
-                      correct: 1,
+                      options: ["14","18","16","10","12"],
+                      correct: 0,
                       explanation: "A=4, B=6. A + B + A = 4 + 6 + 4 = 14. ✓"
               },
               {
@@ -15718,8 +15718,8 @@ const vrData = {
                      id: 73,
                       difficulty: 3,
                       question: "If A=6, B=2 and C=5, what is the value of (A + C) × B − C?",
-                      options: ["15","19","21","17","13"],
-                      correct: 3,
+                      options: ["15","19","17","21","13"],
+                      correct: 2,
                       explanation: "A=6, B=2, C=5. Brackets first: A + C = 6 + 5 = 11. Then multiply: 11 × B = 11 × 2 = 22. Finally subtract: 22 − C = 22 − 5 = 17. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
               },
               {
@@ -15734,8 +15734,8 @@ const vrData = {
                      id: 75,
                       difficulty: 3,
                       question: "The same number fills both gaps. What is it? 2 × ___ + ___ = 27",
-                      options: ["7","8","9","10","11"],
-                      correct: 2,
+                      options: ["11","8","7","10","9"],
+                      correct: 4,
                       explanation: "Call the missing number n. Then 2 × n + n = 3 × n = 27. So n = 27 ÷ 3 = 9. Check: 2 × 9 + 9 = 18 + 9 = 27. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
               },
               {
@@ -15744,12 +15744,12 @@ const vrData = {
           "question": "If A = 2, B = 5 and C = 3, what is the value of A + B + C?",
           "options": [
             "8",
-            "9",
             "10",
+            "9",
             "11",
             "12"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "A + B + C = 2 + 5 + 3 = 10. Tip: Double-check by adding the numbers in a different order. ✓"
         },
         {
@@ -15773,11 +15773,11 @@ const vrData = {
           "options": [
             "13",
             "14",
-            "15",
             "16",
+            "15",
             "17"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "A + A + B = 4 + 4 + 7 = 15. ✓"
         },
         {
@@ -15787,11 +15787,11 @@ const vrData = {
           "options": [
             "2",
             "3",
-            "4",
+            "6",
             "5",
-            "6"
+            "4"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "B − A − C = 8 − 3 − 1 = 4. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
         },
         {
@@ -15799,8 +15799,8 @@ const vrData = {
           "difficulty": 1,
           "question": "If A = 5, B = 10 and C = 2, what is the value of B − A + C?",
           "options": [
-            "5",
             "6",
+            "5",
             "7",
             "8",
             "9"
@@ -15814,12 +15814,12 @@ const vrData = {
           "question": "If A = 3, B = 7 and C = 4, what is the value of B × C + A?",
           "options": [
             "29",
-            "31",
             "33",
+            "31",
             "35",
             "37"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "B × C + A = 7 × 4 + 3. By BODMAS, multiply first: 7 × 4 = 28. Then add: 28 + 3 = 31. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
         },
         {
@@ -15827,13 +15827,13 @@ const vrData = {
           "difficulty": 2,
           "question": "If A = 8, B = 2 and C = 5, what is the value of A ÷ B + C?",
           "options": [
-            "7",
-            "8",
             "9",
+            "8",
+            "7",
             "10",
             "11"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "A ÷ B + C = 8 ÷ 2 + 5. By BODMAS, divide first: 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
         },
         {
@@ -15843,8 +15843,8 @@ const vrData = {
           "options": [
             "-9",
             "-6",
-            "-3",
             "3",
+            "-3",
             "9"
           ],
           "correct": 0,
@@ -15857,11 +15857,11 @@ const vrData = {
           "options": [
             "14",
             "15",
-            "16",
+            "18",
             "17",
-            "18"
+            "16"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "A × B − B = 5 × 4 − 4. By BODMAS, multiply first: 5 × 4 = 20. Then subtract: 20 − 4 = 16. Tip: For comparison Qs, estimate first — late-alphabet letters score higher. ✓"
         },
         {
@@ -15869,8 +15869,8 @@ const vrData = {
           "difficulty": 2,
           "question": "If A = 7, B = 3 and C = 6, what is the value of (A + B) × C?",
           "options": [
-            "48",
             "54",
+            "48",
             "60",
             "66",
             "72"
@@ -15884,12 +15884,12 @@ const vrData = {
           "question": "If A = 11 and B = 3, what is the value of A × B − A?",
           "options": [
             "20",
-            "22",
             "24",
+            "22",
             "26",
             "28"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "A × B − A = 11 × 3 − 11. By BODMAS, multiply first: 11 × 3 = 33. Then subtract: 33 − 11 = 22. Tip: Remember BODMAS! Multiply before you add. ✓"
         },
         {
@@ -15912,9 +15912,9 @@ const vrData = {
           "question": "If A = 15, B = 5 and C = 8, what is the value of A ÷ B + C?",
           "options": [
             "9",
-            "10",
-            "11",
             "12",
+            "11",
+            "10",
             "13"
           ],
           "correct": 2,
@@ -15927,9 +15927,9 @@ const vrData = {
           "options": [
             "5",
             "7",
-            "9",
+            "13",
             "11",
-            "13"
+            "9"
           ],
           "correct": 1,
           "explanation": "A × B − C × D = 3 × 5 − 2 × 4. By BODMAS, do both multiplications first: 3 × 5 = 15 and 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: Watch out for double letters — count them twice! ✓"
@@ -15939,10 +15939,10 @@ const vrData = {
           "difficulty": 3,
           "question": "If A = 4, B = 6 and C = 2, what is the value of (A + B) × (B − C)?",
           "options": [
-            "30",
+            "45",
             "35",
             "40",
-            "45",
+            "30",
             "50"
           ],
           "correct": 2,
@@ -15954,8 +15954,8 @@ const vrData = {
           "question": "If A = 2, B = 3, C = 6 and D = 4, what is the value of C × D ÷ A + B?",
           "options": [
             "12",
-            "13",
             "14",
+            "13",
             "15",
             "16"
           ],
@@ -15983,11 +15983,11 @@ const vrData = {
           "options": [
             "18",
             "19",
-            "20",
             "21",
+            "20",
             "22"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Brackets first: A − B = 7 − 2 = 5. Then multiply: 5 × C = 5 × 3 = 15. Then add: 15 + D = 15 + 5 = 20. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
         },
         {
@@ -15995,11 +15995,11 @@ const vrData = {
           "difficulty": 3,
           "question": "If A = 2, B = 9, C = 4 and D = 3, what is the value of B × C ÷ D + A?",
           "options": [
-            "12",
+            "16",
             "13",
             "14",
             "15",
-            "16"
+            "12"
           ],
           "correct": 2,
           "explanation": "B × C ÷ D + A = 9 × 4 ÷ 3 + 2. By BODMAS, multiplication and division left to right: 9 × 4 = 36, then 36 ÷ 3 = 12. Then add: 12 + 2 = 14. Tip: Double-check by adding in a different order. ✓"
@@ -16025,24 +16025,24 @@ const vrData = {
           id: 97,
           "difficulty": 1,
           "question": "If A=1, B=2, C=3... what is the difference in value between CAT and DOG?",
-          "options": ["2", "3", "1", "4", "0"],
-          "correct": 0,
+          "options": ["1", "2", "3", "4", "0"],
+          "correct": 1,
           "explanation": "CAT = 24. DOG = 26. Difference = 26 - 24 = 2. Tip: Always subtract the smaller from the larger! ✓"
         },
         {
           id: 98,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is the difference in value between FISH and BIRD?",
-          "options": ["9", "10", "8", "11", "7"],
-          "correct": 0,
+          "options": ["11", "10", "8", "9", "7"],
+          "correct": 3,
           "explanation": "FISH = 42. BIRD = 33. Difference = 42 - 33 = 9. Tip: Always subtract the smaller from the larger! ✓"
         },
         {
           id: 99,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is the difference in value between HOME and LAND?",
-          "options": ["10", "11", "9", "12", "8"],
-          "correct": 0,
+          "options": ["8", "11", "9", "12", "10"],
+          "correct": 4,
           "explanation": "HOME = 41. LAND = 31. Difference = 41 - 31 = 10. Tip: Always subtract the smaller from the larger! ✓"
         },
         {
@@ -16057,32 +16057,32 @@ const vrData = {
           id: 101,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is the difference in value between TIGER and MOUSE?",
-          "options": ["14", "15", "13", "16", "12"],
-          "correct": 0,
+          "options": ["15", "14", "13", "16", "12"],
+          "correct": 1,
           "explanation": "TIGER = 59. MOUSE = 73. Difference = 73 - 59 = 14. Tip: Always subtract the smaller from the larger! ✓"
         },
         {
           id: 102,
           "difficulty": 1,
           "question": "If A=1, B=2, C=3... what is E - B?",
-          "options": ["3", "4", "2", "5", "1"],
-          "correct": 0,
+          "options": ["2", "4", "3", "5", "1"],
+          "correct": 2,
           "explanation": "E = 5, B = 2. So E - B = 5 - 2 = 3. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
         },
         {
           id: 103,
           "difficulty": 1,
           "question": "If A=1, B=2, C=3... what is H - C?",
-          "options": ["5", "6", "4", "7", "3"],
-          "correct": 0,
+          "options": ["7", "6", "4", "5", "3"],
+          "correct": 3,
           "explanation": "H = 8, C = 3. So H - C = 8 - 3 = 5. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
         },
         {
           id: 104,
           "difficulty": 1,
           "question": "If A=1, B=2, C=3... what is G - D?",
-          "options": ["3", "4", "2", "5", "1"],
-          "correct": 0,
+          "options": ["1", "4", "2", "5", "3"],
+          "correct": 4,
           "explanation": "G = 7, D = 4. So G - D = 7 - 4 = 3. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
         },
         {
@@ -16097,32 +16097,32 @@ const vrData = {
           id: 106,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is P - H?",
-          "options": ["8", "9", "7", "10", "6"],
-          "correct": 0,
+          "options": ["9", "8", "7", "10", "6"],
+          "correct": 1,
           "explanation": "P = 16, H = 8. So P - H = 16 - 8 = 8. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
         },
         {
           id: 107,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is T - K?",
-          "options": ["9", "10", "8", "11", "7"],
-          "correct": 0,
+          "options": ["8", "10", "9", "11", "7"],
+          "correct": 2,
           "explanation": "T = 20, K = 11. So T - K = 20 - 11 = 9. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
         },
         {
           id: 108,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... which word has the highest total value? SUN, RAIN, SNOW, WIND, HAIL",
-          "options": ["SNOW", "SUN", "WIND", "RAIN", "HAIL"],
-          "correct": 0,
+          "options": ["RAIN", "SUN", "WIND", "SNOW", "HAIL"],
+          "correct": 3,
           "explanation": "SNOW=71, SUN=54, WIND=50, RAIN=42, HAIL=30. SNOW has the highest value at 71! Tip: Estimate first — words with late-alphabet letters (S,T,U,V,W) score higher. ✓"
         },
         {
           id: 109,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... which word has the highest total value? GRAPE, LEMON, PEACH, MANGO, PLUM",
-          "options": ["PLUM", "LEMON", "MANGO", "GRAPE", "PEACH"],
-          "correct": 0,
+          "options": ["PEACH", "LEMON", "MANGO", "GRAPE", "PLUM"],
+          "correct": 4,
           "explanation": "PLUM=62, LEMON=59, MANGO=50, GRAPE=47, PEACH=33. PLUM has the highest value at 62! Tip: Estimate first — words with late-alphabet letters (S,T,U,V,W) score higher. ✓"
         },
         {
@@ -16137,8 +16137,8 @@ const vrData = {
           id: 111,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is the total value of WIZARD?",
-          "options": ["81", "82", "80", "83", "79"],
-          "correct": 0,
+          "options": ["82", "81", "80", "83", "79"],
+          "correct": 1,
           "explanation": "W(23) + I(9) + Z(26) + A(1) + R(18) + D(4) = 81. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
         },
         {
@@ -16153,32 +16153,32 @@ const vrData = {
           id: 113,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is C × D?",
-          "options": ["10", "11", "12", "13", "14"],
-          "correct": 2,
+          "options": ["10", "11", "13", "12", "14"],
+          "correct": 3,
           "explanation": "C(3) × D(4) = 12. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
           id: 114,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is E × C?",
-          "options": ["13", "14", "15", "16", "17"],
-          "correct": 2,
+          "options": ["13", "14", "17", "16", "15"],
+          "correct": 4,
           "explanation": "E(5) × C(3) = 15. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
           id: 115,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is B × F?",
-          "options": ["10", "11", "12", "13", "14"],
-          "correct": 2,
+          "options": ["12", "11", "10", "13", "14"],
+          "correct": 0,
           "explanation": "B(2) × F(6) = 12. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
           id: 116,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is D × E - C?",
-          "options": ["15", "16", "17", "18", "19"],
-          "correct": 2,
+          "options": ["15", "17", "16", "18", "19"],
+          "correct": 1,
           "explanation": "D(4) × E(5) = 20, then 20 - C(3) = 17. Remember BODMAS — multiply first! Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
@@ -16193,32 +16193,32 @@ const vrData = {
           id: 118,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is F × C - E?",
-          "options": ["11", "12", "13", "14", "15"],
-          "correct": 2,
+          "options": ["11", "12", "14", "13", "15"],
+          "correct": 3,
           "explanation": "F(6) × C(3) = 18, then 18 - E(5) = 13. BODMAS: multiply first! Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
           id: 119,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is H × B - C?",
-          "options": ["11", "12", "13", "14", "15"],
-          "correct": 2,
+          "options": ["11", "12", "15", "14", "13"],
+          "correct": 4,
           "explanation": "H(8) × B(2) = 16, then 16 - C(3) = 13. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
           id: 120,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is E × D + B?",
-          "options": ["20", "21", "22", "23", "24"],
-          "correct": 2,
+          "options": ["22", "21", "20", "23", "24"],
+          "correct": 0,
           "explanation": "E(5) × D(4) = 20, then 20 + B(2) = 22. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
           id: 121,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is C × C × B?",
-          "options": ["16", "17", "18", "19", "20"],
-          "correct": 2,
+          "options": ["16", "18", "17", "19", "20"],
+          "correct": 1,
           "explanation": "C(3) × C(3) = 9, then 9 × B(2) = 18. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
         },
         {
@@ -16233,32 +16233,32 @@ const vrData = {
           id: 123,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is J - E + C?",
-          "options": ["6", "7", "8", "9", "10"],
-          "correct": 2,
+          "options": ["6", "7", "9", "8", "10"],
+          "correct": 3,
           "explanation": "J(10) - E(5) = 5, then 5 + C(3) = 8. Tip: Work left to right, writing down each intermediate total! ✓"
         },
         {
           id: 124,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is H + D - F?",
-          "options": ["4", "5", "6", "7", "8"],
-          "correct": 2,
+          "options": ["4", "5", "8", "7", "6"],
+          "correct": 4,
           "explanation": "H(8) + D(4) = 12, then 12 - F(6) = 6. Tip: Work left to right, writing down each intermediate total! ✓"
         },
         {
           id: 125,
           "difficulty": 2,
           "question": "If A=1, B=2, C=3... what is K - G + E?",
-          "options": ["7", "8", "9", "10", "11"],
-          "correct": 2,
+          "options": ["9", "8", "7", "10", "11"],
+          "correct": 0,
           "explanation": "K(11) - G(7) = 4, then 4 + E(5) = 9. Tip: Work left to right, writing down each intermediate total! ✓"
         },
         {
           id: 126,
           "difficulty": 3,
           "question": "If A=1, B=2, C=3... what is T - J + E - B?",
-          "options": ["11", "12", "13", "14", "15"],
-          "correct": 2,
+          "options": ["11", "13", "12", "14", "15"],
+          "correct": 1,
           "explanation": "T(20) - J(10) = 10, + E(5) = 15, - B(2) = 13. Tip: Work left to right, writing down each intermediate total! ✓"
         },
         {
@@ -16286,32 +16286,32 @@ const vrData = {
                       id: 1,
                       difficulty: 1,
                       question: "big (dig) → cat (__). The word in brackets is made by changing the first letter. What word goes in the brackets?",
-                      options: ["mat","bat","hat","sat","rat"],
-                      correct: 1,
+                      options: ["mat","hat","bat","sat","rat"],
+                      correct: 2,
                       explanation: "In 'big', changing the first letter 'b' to 'd' gives 'dig'. Following the same pattern for 'cat': we need to change 'c' to 'b' (the letter before it) giving 'bat'. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 2,
                       difficulty: 2,
                       question: "Complete the third pair in the same way: (cold, old) (charm, harm) (chill, ___)",
-                      options: ["fill","ill","hill","chill","will"],
-                      correct: 2,
+                      options: ["fill","ill","chill","hill","will"],
+                      correct: 3,
                       explanation: "The pattern is: remove the first letter. cold → old, charm → harm, chill → hill. Each time the 'c' is removed from the start. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
                       id: 3,
                       difficulty: 2,
                       question: "If each letter is moved forward by 1 place in the alphabet, what does FISH become?",
-                      options: ["Ehrg","GITI","GJSI","GJTI","GHTI"],
-                      correct: 3,
+                      options: ["Ehrg","GITI","GJSI","GHTI","GJTI"],
+                      correct: 4,
                       explanation: "Move each letter forward 1: F→G, I→J, S→T, H→I. So FISH becomes GJTI. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
                       id: 4,
                       difficulty: 3,
                       question: "Look at this pattern: (SEAT, ATE) (CLAM, LAM) (TRIP, ___). The word in brackets uses some of the letters from the first word. What completes the pattern?",
-                      options: ["IRP","TIP","TRI","RIT","RIP"],
-                      correct: 4,
+                      options: ["RIP","TIP","TRI","RIT","IRP"],
+                      correct: 0,
                       explanation: "SEAT → ATE (remove the first letter, take the last 3 letters). CLAM → LAM (remove the first letter, take the last 3 letters). TRIP → RIP (remove the first letter, take the last 3 letters). The pattern is: remove the first letter to leave a 3-letter word. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
@@ -16334,20 +16334,20 @@ const vrData = {
                       question: "Complete the third pair in the same way: (ship, hip) (stall, tall) (bland, ___)",
                       options: [
                               "band",
-                              "land",
                               "sand",
+                              "land",
                               "hand",
                               "and"
                       ],
-                      correct: 1,
+                      correct: 2,
                       explanation: "The pattern removes the first letter: ship→hip, stall→tall, bland→land. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 7,
                       difficulty: 1,
                       question: "Look at the pattern: BIG → GIB, TOP → POT. What does MAP become?",
-                      options: ["AMP","PAM","MPA","APM","MAT"],
-                      correct: 1,
+                      options: ["AMP","APM","MAT","PAM","MPA"],
+                      correct: 3,
                       explanation: "The pattern reverses the letters: BIG→GIB, TOP→POT. Reversing MAP gives PAM. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
@@ -16368,8 +16368,8 @@ const vrData = {
                       id: 9,
                       difficulty: 2,
                       question: "What comes next? A1, B2, C3, D4, ___",
-                      options: ["E6","F5","E5","D5","F6"],
-                      correct: 2,
+                      options: ["E5","F5","E6","D5","F6"],
+                      correct: 0,
                       explanation: "The letter goes forward by 1 (A,B,C,D,E) and the number increases by 1 (1,2,3,4,5). Next is E5. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
@@ -16390,8 +16390,8 @@ const vrData = {
                       id: 11,
                       difficulty: 1,
                       question: "Look at the pattern: SUN → SUNNY, RAIN → RAINY. What does CLOUD become?",
-                      options: ["CLOUDLY","CLOUDS","CLOUDED","CLOUDY","CLOUDEN"],
-                      correct: 3,
+                      options: ["CLOUDLY","CLOUDED","CLOUDY","CLOUDS","CLOUDEN"],
+                      correct: 2,
                       explanation: "The pattern adds '-y' to make an adjective: sun→sunny, rain→rainy, cloud→cloudy. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
@@ -16420,8 +16420,8 @@ const vrData = {
                       id: 14,
                       difficulty: 3,
                       question: "Complete the pattern: (STAR, RATS) (LIVE, EVIL) (STOP, ___)",
-                      options: ["TOPS","POTS","SPOT","OPTS","POST"],
-                      correct: 1,
+                      options: ["POTS","SPOT","TOPS","OPTS","POST"],
+                      correct: 0,
                       explanation: "The pattern reverses the word: STAR→RATS, LIVE→EVIL, STOP→POTS. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
@@ -16450,8 +16450,8 @@ const vrData = {
                       id: 17,
                       difficulty: 3,
                       question: "Complete the pattern: (POTS, STOP) (RATS, STAR) (WARD, ___)",
-                      options: ["WRAD","DRAW","RAWD","DAWR","DWAR"],
-                      correct: 1,
+                      options: ["WRAD","DWAR","RAWD","DRAW","DAWR"],
+                      correct: 3,
                       explanation: "The pattern reverses the letters: POTS→STOP, RATS→STAR, WARD→DRAW. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
@@ -16472,16 +16472,16 @@ const vrData = {
                       id: 19,
                       difficulty: 3,
                       question: "Complete the third pair: (light, delight) (sign, design) (press, ___)",
-                      options: ["express","impress","depress","compress","repress"],
-                      correct: 2,
+                      options: ["depress","impress","express","compress","repress"],
+                      correct: 0,
                       explanation: "The pattern adds 'de-' to the front: light→delight, sign→design, press→depress. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
                       id: 20,
                       difficulty: 2,
                       question: "What comes next? AAB, BBC, CCD, DDE, ___",
-                      options: ["FFG","EFF","EEE","EEF","DEF"],
-                      correct: 3,
+                      options: ["FFG","EEF","EEE","EFF","DEF"],
+                      correct: 1,
                       explanation: "Each group has a doubled letter then the next letter: AA+B, BB+C, CC+D, DD+E, EE+F. The doubled letter advances by 1 each time, and the final letter is always the next one after. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               }
       ,
@@ -16489,40 +16489,40 @@ const vrData = {
                       id: 21,
                       difficulty: 1,
                       question: "If PEN = 123, what is the code for NEP?",
-                      options: ["132","231","312","213","321"],
-                      correct: 4,
+                      options: ["132","231","321","213","312"],
+                      correct: 2,
                       explanation: "From PEN=123: P=1, E=2, N=3. NEP = N(3) E(2) P(1) = 321. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
                       id: 22,
                       difficulty: 1,
                       question: "If HAT = 123, what number represents the letter A?",
-                      options: ["3","2","1","4","Cannot tell"],
-                      correct: 1,
+                      options: ["3","4","1","2","Cannot tell"],
+                      correct: 3,
                       explanation: "From HAT=123: H=1, A=2, T=3. The letter A is represented by the number 2. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 23,
                       difficulty: 1,
                       question: "If BOX = 123, what is the code for OX?",
-                      options: ["32","23","12","21","31"],
-                      correct: 1,
+                      options: ["32","31","12","21","23"],
+                      correct: 4,
                       explanation: "From BOX=123: B=1, O=2, X=3. OX = O(2) X(3) = 23. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 24,
                       difficulty: 1,
                       question: "If FIG = 123 and GIF = 321, what letter does the number 2 represent?",
-                      options: ["F","I","G","H","Cannot tell"],
-                      correct: 1,
+                      options: ["I","F","G","H","Cannot tell"],
+                      correct: 0,
                       explanation: "From FIG=123: F=1, I=2, G=3. Check GIF=321: G=3✓, I=2✓, F=1✓. The number 2 represents I. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
                       id: 25,
                       difficulty: 1,
                       question: "If MOP = 123, what is the code for POM?",
-                      options: ["312","231","213","321","132"],
-                      correct: 3,
+                      options: ["312","321","213","231","132"],
+                      correct: 1,
                       explanation: "From MOP=123: M=1, O=2, P=3. POM = P(3) O(2) M(1) = 321. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
@@ -16545,16 +16545,16 @@ const vrData = {
                       id: 28,
                       difficulty: 1,
                       question: "If OWL = 123, what is the code for LOW?",
-                      options: ["231","213","312","321","132"],
-                      correct: 2,
+                      options: ["231","213","132","321","312"],
+                      correct: 4,
                       explanation: "From OWL=123: O=1, W=2, L=3. LOW = L(3) O(1) W(2) = 312. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 29,
                       difficulty: 2,
                       question: "If ROPE = 1234, what is the code for PORE?",
-                      options: ["3124","3241","3214","4213","2314"],
-                      correct: 2,
+                      options: ["3214","3241","3124","4213","2314"],
+                      correct: 0,
                       explanation: "From ROPE=1234: R=1, O=2, P=3, E=4. PORE = P(3) O(2) R(1) E(4) = 3214. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
@@ -16569,40 +16569,40 @@ const vrData = {
                       id: 31,
                       difficulty: 2,
                       question: "If HAND = 1234, what is the code for AND?",
-                      options: ["423","243","342","234","324"],
-                      correct: 3,
+                      options: ["423","243","234","342","324"],
+                      correct: 2,
                       explanation: "From HAND=1234: H=1, A=2, N=3, D=4. AND = A(2) N(3) D(4) = 234. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 32,
                       difficulty: 2,
                       question: "If MILE = 1234, what is the code for LIME?",
-                      options: ["2314","3241","3214","2134","3124"],
-                      correct: 2,
+                      options: ["2314","3241","2134","3214","3124"],
+                      correct: 3,
                       explanation: "From MILE=1234: M=1, I=2, L=3, E=4. LIME = L(3) I(2) M(1) E(4) = 3214. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
                       id: 33,
                       difficulty: 2,
                       question: "If CORN = 1234, what is the code for NOON?",
-                      options: ["3224","4332","4224","4422","2442"],
-                      correct: 2,
+                      options: ["3224","4332","2442","4422","4224"],
+                      correct: 4,
                       explanation: "From CORN=1234: C=1, O=2, R=3, N=4. NOON = N(4) O(2) O(2) N(4) = 4224. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 34,
                       difficulty: 2,
                       question: "If SILK = 1234, what is the code for KILL?",
-                      options: ["4321","4123","4213","4233","4332"],
-                      correct: 3,
+                      options: ["4233","4123","4213","4321","4332"],
+                      correct: 0,
                       explanation: "From SILK=1234: S=1, I=2, L=3, K=4. KILL = K(4) I(2) L(3) L(3) = 4233. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
                       id: 35,
                       difficulty: 2,
                       question: "If BOLD = 1234, what is the code for DOLL?",
-                      options: ["4132","4321","4233","4213","3243"],
-                      correct: 2,
+                      options: ["4132","4233","4321","4213","3243"],
+                      correct: 1,
                       explanation: "From BOLD=1234: B=1, O=2, L=3, D=4. DOLL = D(4) O(2) L(3) L(3) = 4233. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
@@ -16617,8 +16617,8 @@ const vrData = {
                       id: 37,
                       difficulty: 2,
                       question: "If HINT = 1234, what is the code for THIN?",
-                      options: ["4321","4123","4213","4132","4312"],
-                      correct: 1,
+                      options: ["4321","4132","4213","4123","4312"],
+                      correct: 3,
                       explanation: "From HINT=1234: H=1, I=2, N=3, T=4. THIN = T(4) H(1) I(2) N(3) = 4123. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
@@ -16633,16 +16633,16 @@ const vrData = {
                       id: 39,
                       difficulty: 2,
                       question: "If WELT = 1234, what is the code for WELL?",
-                      options: ["1234","1233","1243","1232","1223"],
-                      correct: 1,
+                      options: ["1233","1234","1243","1232","1223"],
+                      correct: 0,
                       explanation: "From WELT=1234: W=1, E=2, L=3, T=4. WELL = W(1) E(2) L(3) L(3) = 1233. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 40,
                       difficulty: 2,
                       question: "If PUMA = 1234, what is the code for PUMP?",
-                      options: ["1234","1243","1231","1213","1321"],
-                      correct: 2,
+                      options: ["1234","1231","1243","1213","1321"],
+                      correct: 1,
                       explanation: "From PUMA=1234: P=1, U=2, M=3, A=4. PUMP = P(1) U(2) M(3) P(1) = 1231. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
@@ -16657,64 +16657,64 @@ const vrData = {
                       id: 42,
                       difficulty: 2,
                       question: "If DUST = 1234, what is the code for STUD?",
-                      options: ["3214","3421","3412","3241","4321"],
-                      correct: 1,
+                      options: ["3214","3241","3412","3421","4321"],
+                      correct: 3,
                       explanation: "From DUST=1234: D=1, U=2, S=3, T=4. STUD = S(3) T(4) U(2) D(1) = 3421. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
                       id: 43,
                       difficulty: 2,
                       question: "If GULP = 1234, what is the code for PLUG?",
-                      options: ["4312","4231","4213","4321","4132"],
-                      correct: 3,
+                      options: ["4312","4231","4213","4132","4321"],
+                      correct: 4,
                       explanation: "From GULP=1234: G=1, U=2, L=3, P=4. PLUG = P(4) L(3) U(2) G(1) = 4321. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
                       id: 44,
                       difficulty: 2,
                       question: "If TOAD = 1234 and DATO = 4312, what is the code for DOT?",
-                      options: ["412","421","431","413","342"],
-                      correct: 1,
+                      options: ["421","412","431","413","342"],
+                      correct: 0,
                       explanation: "From TOAD=1234: T=1, O=2, A=3, D=4. Check DATO=4312: D=4✓, A=3✓, T=1✓, O=2✓. DOT = D(4) O(2) T(1) = 421. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 45,
                       difficulty: 3,
                       question: "If HOUSE = 12345, what is the code for SHOE?",
-                      options: ["4215","4152","4125","4251","4512"],
-                      correct: 2,
+                      options: ["4215","4125","4152","4251","4512"],
+                      correct: 1,
                       explanation: "From HOUSE=12345: H=1, O=2, U=3, S=4, E=5. SHOE = S(4) H(1) O(2) E(5) = 4125. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
                       id: 46,
                       difficulty: 3,
                       question: "If STONE = 12345, what is the code for NOTES?",
-                      options: ["43215","43251","43521","42351","43152"],
-                      correct: 1,
+                      options: ["43215","43521","43251","42351","43152"],
+                      correct: 2,
                       explanation: "From STONE=12345: S=1, T=2, O=3, N=4, E=5. NOTES = N(4) O(3) T(2) E(5) S(1) = 43251. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 47,
                       difficulty: 3,
                       question: "If DREAM = 12345, what is the code for ARMED?",
-                      options: ["42351","42513","42531","45231","42135"],
-                      correct: 2,
+                      options: ["42351","42513","45231","42531","42135"],
+                      correct: 3,
                       explanation: "From DREAM=12345: D=1, R=2, E=3, A=4, M=5. ARMED = A(4) R(2) M(5) E(3) D(1) = 42531. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 48,
                       difficulty: 3,
                       question: "If BRAIN = 12345, what is the code for BARN?",
-                      options: ["1235","1352","1325","1253","1532"],
-                      correct: 2,
+                      options: ["1235","1352","1532","1253","1325"],
+                      correct: 4,
                       explanation: "From BRAIN=12345: B=1, R=2, A=3, I=4, N=5. BARN = B(1) A(3) R(2) N(5) = 1325. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
                       id: 49,
                       difficulty: 3,
                       question: "If PIG = 362 and GIP = 263, what is the code for GIG?",
-                      options: ["232","262","323","363","236"],
-                      correct: 1,
+                      options: ["262","232","323","363","236"],
+                      correct: 0,
                       explanation: "From PIG=362: P=3, I=6, G=2. Check GIP=263: G=2✓, I=6✓, P=3✓. GIG = G(2) I(6) G(2) = 262. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
@@ -16729,8 +16729,8 @@ const vrData = {
                       id: 51,
                       difficulty: 3,
                       question: "If CREAM = 12345, what is the code for MARE?",
-                      options: ["5342","5423","5432","5243","5324"],
-                      correct: 1,
+                      options: ["5342","5432","5423","5243","5324"],
+                      correct: 2,
                       explanation: "From CREAM=12345: C=1, R=2, E=3, A=4, M=5. MARE = M(5) A(4) R(2) E(3) = 5423. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
@@ -16753,8 +16753,8 @@ const vrData = {
                       id: 54,
                       difficulty: 3,
                       question: "If SMART = 12345, what is the code for MAST?",
-                      options: ["2345","2315","2351","2135","2153"],
-                      correct: 1,
+                      options: ["2315","2345","2351","2135","2153"],
+                      correct: 0,
                       explanation: "From SMART=12345: S=1, M=2, A=3, R=4, T=5. MAST = M(2) A(3) S(1) T(5) = 2315. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
@@ -16769,72 +16769,72 @@ const vrData = {
                       id: 56,
                       difficulty: 3,
                       question: "If BET = 827 and TEB = 728, what is the code for TEE?",
-                      options: ["772","722","728","782","227"],
-                      correct: 1,
+                      options: ["772","728","722","782","227"],
+                      correct: 2,
                       explanation: "From BET=827: B=8, E=2, T=7. Check TEB=728: T=7✓, E=2✓, B=8✓. TEE = T(7) E(2) E(2) = 722. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
                       id: 57,
                       difficulty: 3,
                       question: "If CRATE = 12345, what is the code for TRACE?",
-                      options: ["42135","42351","42315","43215","42153"],
-                      correct: 2,
+                      options: ["42135","42351","43215","42315","42153"],
+                      correct: 3,
                       explanation: "From CRATE=12345: C=1, R=2, A=3, T=4, E=5. TRACE = T(4) R(2) A(3) C(1) E(5) = 42315. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 58,
                       difficulty: 3,
                       question: "If FLINT = 12345, what is the code for LIFT?",
-                      options: ["2153","2351","2135","2315","2531"],
-                      correct: 3,
+                      options: ["2153","2351","2135","2531","2315"],
+                      correct: 4,
                       explanation: "From FLINT=12345: F=1, L=2, I=3, N=4, T=5. LIFT = L(2) I(3) F(1) T(5) = 2315. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
                       id: 59,
                       difficulty: 3,
                       question: "If RUG = 864 and GUR = 468, what number represents the letter U?",
-                      options: ["8","6","4","2","Cannot tell"],
-                      correct: 1,
+                      options: ["6","8","4","2","Cannot tell"],
+                      correct: 0,
                       explanation: "From RUG=864: R=8, U=6, G=4. Check GUR=468: G=4✓, U=6✓, R=8✓. The letter U is represented by 6. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
                       id: 60,
                       difficulty: 3,
                       question: "If GRAPE = 12345, what is the code for PAGER?",
-                      options: ["43251","43125","43512","43215","43152"],
-                      correct: 4,
+                      options: ["43251","43152","43512","43215","43125"],
+                      correct: 1,
                       explanation: "From GRAPE=12345: G=1, R=2, A=3, P=4, E=5. PAGER = P(4) A(3) G(1) E(5) R(2) = 43152. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 61,
                       difficulty: 3,
                       question: "If SET = 693 and TES = 396, what is the code for SEES?",
-                      options: ["6696","6996","6969","9669","6966"],
-                      correct: 1,
+                      options: ["6696","6969","6996","9669","6966"],
+                      correct: 2,
                       explanation: "From SET=693: S=6, E=9, T=3. Check TES=396: T=3✓, E=9✓, S=6✓. SEES = S(6) E(9) E(9) S(6) = 6996. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
                       id: 62,
                       difficulty: 3,
                       question: "If SPEAR = 12345, what is the code for PEARS?",
-                      options: ["23415","23451","23541","23514","23145"],
-                      correct: 1,
+                      options: ["23415","23514","23541","23451","23145"],
+                      correct: 3,
                       explanation: "From SPEAR=12345: S=1, P=2, E=3, A=4, R=5. PEARS = P(2) E(3) A(4) R(5) S(1) = 23451. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 63,
                       difficulty: 3,
                       question: "If CLOTH = 12345, what is the code for LOCH?",
-                      options: ["2135","2351","2315","2153","2531"],
-                      correct: 2,
+                      options: ["2135","2351","2531","2153","2315"],
+                      correct: 4,
                       explanation: "From CLOTH=12345: C=1, L=2, O=3, T=4, H=5. LOCH = L(2) O(3) C(1) H(5) = 2315. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 64,
                       difficulty: 3,
                       question: "If MAP = 573 and PAM = 375, what is the code for MAMA?",
-                      options: ["5775","5757","7575","5577","7557"],
-                      correct: 1,
+                      options: ["5757","5775","7575","5577","7557"],
+                      correct: 0,
                       explanation: "From MAP=573: M=5, A=7, P=3. Check PAM=375: P=3✓, A=7✓, M=5✓. MAMA = M(5) A(7) M(5) A(7) = 5757. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
@@ -16865,16 +16865,16 @@ const vrData = {
                       id: 68,
                       difficulty: 1,
                       question: "Complete the third pair: (slow, slowly) (quick, quickly) (brave, ___)",
-                      options: ["braver","bravely","bravest","braving","braved"],
-                      correct: 1,
+                      options: ["braver","braved","bravest","braving","bravely"],
+                      correct: 4,
                       explanation: "The pattern adds '-ly' to make an adverb: slow→slowly, quick→quickly, brave→bravely. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 69,
                       difficulty: 1,
                       question: "Complete the third pair: (top, stop) (till, still) (talk, ___)",
-                      options: ["talked","talks","walk","chalk","stalk"],
-                      correct: 4,
+                      options: ["stalk","talks","walk","chalk","talked"],
+                      correct: 0,
                       explanation: "The pattern adds 's' to the front: top→stop, till→still, talk→stalk. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
@@ -16889,32 +16889,32 @@ const vrData = {
                       id: 71,
                       difficulty: 1,
                       question: "Complete the third pair: (hope, hopeful) (care, careful) (play, ___)",
-                      options: ["played","playing","player","playful","plays"],
-                      correct: 3,
+                      options: ["played","playing","playful","player","plays"],
+                      correct: 2,
                       explanation: "The pattern adds '-ful': hope→hopeful, care→careful, play→playful. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 72,
                       difficulty: 1,
                       question: "Look at the pattern: GOD → DOG, TIP → PIT. What does RAT become?",
-                      options: ["RTA","ART","TAR","ATR","TRA"],
-                      correct: 2,
+                      options: ["RTA","ART","ATR","TAR","TRA"],
+                      correct: 3,
                       explanation: "The pattern reverses the letters: GOD→DOG, TIP→PIT, RAT→TAR. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
                       id: 73,
                       difficulty: 1,
                       question: "Complete the third pair: (happy, unhappy) (kind, unkind) (fair, ___)",
-                      options: ["fairly","unfair","fairer","fairest","affair"],
-                      correct: 1,
+                      options: ["fairly","affair","fairer","fairest","unfair"],
+                      correct: 4,
                       explanation: "The pattern adds 'un-' to the front: happy→unhappy, kind→unkind, fair→unfair. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 74,
                       difficulty: 2,
                       question: "Complete the third pair: (pin, nip) (tap, pat) (pot, ___)",
-                      options: ["tom","opt","pot","top","pop"],
-                      correct: 3,
+                      options: ["top","opt","pot","tom","pop"],
+                      correct: 0,
                       explanation: "The pattern reverses the word: pin→nip, tap→pat, pot→top. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
@@ -16929,32 +16929,32 @@ const vrData = {
                       id: 76,
                       difficulty: 2,
                       question: "Complete the third pair: (sing, sang) (ring, rang) (swim, ___)",
-                      options: ["swang","swum","swim","swims","swam"],
-                      correct: 4,
+                      options: ["swang","swum","swam","swims","swim"],
+                      correct: 2,
                       explanation: "The pattern changes the vowel from 'i' to 'a' for the past tense: sing→sang, ring→rang, swim→swam. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 77,
                       difficulty: 2,
                       question: "Complete the third pair: (untie, tie) (undo, do) (unlock, ___)",
-                      options: ["key","lock","locked","open","close"],
-                      correct: 1,
+                      options: ["key","open","locked","lock","close"],
+                      correct: 3,
                       explanation: "The pattern removes the prefix 'un-': untie→tie, undo→do, unlock→lock. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
                       id: 78,
                       difficulty: 2,
                       question: "Complete the third pair: (dark, darkness) (kind, kindness) (sad, ___)",
-                      options: ["sadly","sadder","sadness","saddest","saddened"],
-                      correct: 2,
+                      options: ["sadly","sadder","saddened","saddest","sadness"],
+                      correct: 4,
                       explanation: "The pattern adds '-ness' to make a noun: dark→darkness, kind→kindness, sad→sadness. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 79,
                       difficulty: 2,
                       question: "Complete the third pair: (later, latter) (diner, dinner) (super, ___)",
-                      options: ["superior","superb","supper","superman","supple"],
-                      correct: 2,
+                      options: ["supper","superb","superior","superman","supple"],
+                      correct: 0,
                       explanation: "The pattern doubles the middle consonant: later→latter, diner→dinner, super→supper. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
@@ -16969,144 +16969,144 @@ const vrData = {
                       id: 81,
                       difficulty: 2,
                       question: "Complete the third pair: (brace, race) (brain, rain) (bread, ___)",
-                      options: ["bred","read","bead","dead","lead"],
-                      correct: 1,
+                      options: ["bred","bead","read","dead","lead"],
+                      correct: 2,
                       explanation: "The pattern removes the 'b' from the front: brace→race, brain→rain, bread→read. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 82,
                       difficulty: 2,
                       question: "Look at the pattern: POOL → LOOP, KEEP → PEEK. What does MOOD become?",
-                      options: ["DOMO","MOOD","DOOM","OODM","MODO"],
-                      correct: 2,
+                      options: ["DOMO","MOOD","OODM","DOOM","MODO"],
+                      correct: 3,
                       explanation: "The pattern reverses the letters: POOL→LOOP, KEEP→PEEK, MOOD→DOOM. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
                       id: 83,
                       difficulty: 2,
                       question: "Complete the third pair: (whole, hole) (write, rite) (wrap, ___)",
-                      options: ["cap","warp","map","rap","tap"],
-                      correct: 3,
+                      options: ["cap","warp","map","tap","rap"],
+                      correct: 4,
                       explanation: "The pattern removes the silent 'w': whole→hole, write→rite, wrap→rap. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
                       id: 84,
                       difficulty: 2,
                       question: "Complete the third pair: (man, men) (woman, women) (child, ___)",
-                      options: ["childs","children","childen","childer","childes"],
-                      correct: 1,
+                      options: ["children","childs","childen","childer","childes"],
+                      correct: 0,
                       explanation: "The pattern gives the irregular plural: man→men, woman→women, child→children. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 85,
                       difficulty: 2,
                       question: "Complete the third pair: (look, overlook) (come, overcome) (turn, ___)",
-                      options: ["turned","return","turning","upturn","overturn"],
-                      correct: 4,
+                      options: ["turned","overturn","turning","upturn","return"],
+                      correct: 1,
                       explanation: "The pattern adds 'over-' to the front: look→overlook, come→overcome, turn→overturn. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
                       id: 86,
                       difficulty: 2,
                       question: "Complete the third pair: (agree, disagree) (appear, disappear) (obey, ___)",
-                      options: ["obeys","disobey","obeyed","unobey","misobey"],
-                      correct: 1,
+                      options: ["obeys","obeyed","disobey","unobey","misobey"],
+                      correct: 2,
                       explanation: "The pattern adds the prefix 'dis-': agree→disagree, appear→disappear, obey→disobey. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 87,
                       difficulty: 2,
                       question: "Complete the third pair: (BLEND, LEN) (GRAND, RAN) (STINK, ___)",
-                      options: ["STI","INK","TIN","SIN","KIN"],
-                      correct: 2,
+                      options: ["STI","INK","SIN","TIN","KIN"],
+                      correct: 3,
                       explanation: "The pattern takes the 2nd, 3rd and 4th letters: BLEND→LEN, GRAND→RAN, STINK→TIN. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
               },
               {
                       id: 88,
                       difficulty: 2,
                       question: "Complete the third pair: (SEAT, ATE) (CLAM, LAM) (TRIP, ___)",
-                      options: ["TIP","RIP","RIT","TRI","IRP"],
-                      correct: 1,
-                      explanation: "The pattern removes the first letter of each word. CLAM → LAM (remove the C). TRIP → RIP (remove the T). The answer is RIP. ✓"
+                      options: ["TIP","IRP","RIT","TRI","RIP"],
+                      correct: 4,
+                      explanation: "The pattern removes the first letter of each word. CLAM → LAM, TRIP → RIP. Apply the same rule to find the answer. ✓"
               },
               {
                       id: 89,
                       difficulty: 2,
                       question: "Look at the pattern: LACE → ACE, CROW → ROW. What does GLOW become?",
-                      options: ["LOG","OWL","GOW","LOW","WOG"],
-                      correct: 3,
+                      options: ["LOW","OWL","GOW","LOG","WOG"],
+                      correct: 0,
                       explanation: "The pattern removes the first letter: LACE→ACE, CROW→ROW, GLOW→LOW. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 90,
                       difficulty: 3,
                       question: "Look at the pattern: CLAP → PAL, SNAP → PAN. What does STEW become?",
-                      options: ["NEW","SEW","TEW","EWS","WET"],
-                      correct: 4,
+                      options: ["NEW","WET","TEW","EWS","SEW"],
+                      correct: 1,
                       explanation: "The pattern removes the first letter then reverses: CLAP→LAP→PAL, SNAP→NAP→PAN, STEW→TEW→WET. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
                       id: 91,
                       difficulty: 3,
                       question: "Complete the third pair: (HIT, HAT) (BIG, BAG) (LID, ___)",
-                      options: ["LED","LAD","LUD","LOD","LID"],
-                      correct: 1,
+                      options: ["LED","LUD","LAD","LOD","LID"],
+                      correct: 2,
                       explanation: "The pattern changes the vowel 'i' to 'a': HIT→HAT, BIG→BAG, LID→LAD. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
               },
               {
                       id: 92,
                       difficulty: 3,
                       question: "Look at the pattern: PAN → PLAN, TEN → THEN. What does BAN become?",
-                      options: ["BARN","BEAN","BRAN","BAND","BANG"],
-                      correct: 2,
+                      options: ["BARN","BEAN","BAND","BRAN","BANG"],
+                      correct: 3,
                       explanation: "The pattern inserts a consonant after the first letter to make a new 4-letter word: P+L+AN=PLAN, T+H+EN=THEN, B+R+AN=BRAN. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
               },
               {
                       id: 93,
                       difficulty: 3,
                       question: "Complete the third pair: (FLOW, WOLF) (STAR, RATS) (PLUG, ___)",
-                      options: ["GULP","PLGU","UGLP","LPUG","GLUP"],
-                      correct: 0,
+                      options: ["GLUP","PLGU","UGLP","LPUG","GULP"],
+                      correct: 4,
                       explanation: "The pattern reverses the word: FLOW→WOLF, STAR→RATS, PLUG→GULP. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
               },
               {
                       id: 94,
                       difficulty: 3,
                       question: "Complete the third pair: (BEAT, BEET) (MAST, MIST) (BAND, ___)",
-                      options: ["BIND","BOND","BEND","BUND","BEAD"],
-                      correct: 2,
+                      options: ["BEND","BOND","BIND","BUND","BEAD"],
+                      correct: 0,
                       explanation: "The pattern changes the second letter: BEAT(EA)→BEET(EE), MAST(AS)→MIST(IS). In each case the vowel 'a' changes to another vowel. BEAT→BEET changes A to E. MAST→MIST changes A to I. Following the vowel sequence A→E→I, the next change is A→E. BAND→BEND changes A to E. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
               },
               {
                       id: 95,
                       difficulty: 3,
                       question: "Look at the pattern: GRAPE → DRAPE, GLOW → BLOW. What does GRAIN become?",
-                      options: ["BRAIN","DRAIN","TRAIN","MAIN","RAIN"],
-                      correct: 0,
+                      options: ["DRAIN","BRAIN","TRAIN","MAIN","RAIN"],
+                      correct: 1,
                       explanation: "The pattern replaces the first letter G with another letter to make a new word. GLOW → BLOW (G becomes B). GRAIN → BRAIN (G becomes B). The answer is BRAIN. ✓"
               },
               {
                       id: 96,
                       difficulty: 3,
                       question: "Complete the third pair: (CAR, SCAR) (HEAR, SHEAR) (HARE, ___)",
-                      options: ["SHARE","HARES","SHEAR","SHAVE","SHAPE"],
-                      correct: 0,
+                      options: ["SHEAR","HARES","SHARE","SHAVE","SHAPE"],
+                      correct: 2,
                       explanation: "The pattern adds 'S' to the front: CAR→SCAR, HEAR→SHEAR, HARE→SHARE. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
               },
               {
                       id: 97,
                       difficulty: 3,
                       question: "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does ANGEL become?",
-                      options: ["GLEAN","CLEAN","LEANG","ANGLE","NEGAL"],
-                      correct: 0,
-                      explanation: "The pattern rearranges the letters to make a new word (anagram). PEACH → CHEAP uses the same five letters in a different order. NIGHT → THING does the same. ANGEL → GLEAN uses the letters A, N, G, E, L rearranged. The answer is GLEAN. ✓"
+                      options: ["ANGLE","CLEAN","LEANG","GLEAN","NEGAL"],
+                      correct: 3,
+                      explanation: "The pattern rearranges all the letters to make a new word (anagram). PEACH → CHEAP, NIGHT → THING. Apply the same anagram pattern. ✓"
               },
               {
                       id: 98,
                       difficulty: 3,
                       question: "Complete the third pair: (MILE, SMILE) (LAUGHTER, SLAUGHTER) (TAKE, ___)",
-                      options: ["STAKE","TAKEN","TAKES","STEAK","SHAKE"],
-                      correct: 0,
+                      options: ["SHAKE","TAKEN","TAKES","STEAK","STAKE"],
+                      correct: 4,
                       explanation: "The pattern adds 'S' at the front: MILE→SMILE, LAUGHTER→SLAUGHTER, TAKE→STAKE. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
               },
               {
@@ -17121,9 +17121,9 @@ const vrData = {
                       id: 100,
                       difficulty: 3,
                       question: "Look at the pattern: SHORE → HORSE, PLUM → LUMP. What does CAFE become?",
-                      options: ["FACE","FECA","ACEF","EFAC","ECAF"],
-                      correct: 0,
-                      explanation: "The pattern rearranges the letters to make a new word (anagram). SHORE → HORSE uses the same five letters rearranged. PLUM → LUMP does the same. CAFE → FACE uses the letters C, A, F, E rearranged. The answer is FACE. ✓"
+                      options: ["ACEF","FACE","FECA","EFAC","ECAF"],
+                      correct: 1,
+                      explanation: "The pattern rearranges the letters to make a new word (anagram). SHORE → HORSE, PLUM → LUMP. Apply the same pattern. ✓"
               }
       ,
         {
@@ -17131,13 +17131,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Complete the third pair in the same way: (seat, eat) (spin, pin) (slid, ___)",
           "options": [
-            "lid",
+            "rid",
             "did",
             "hid",
-            "rid",
+            "lid",
             "kid"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The pattern removes the first letter: seat→eat, spin→pin, slid→lid. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
         },
         {
@@ -17145,13 +17145,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Look at the pattern: DOG → DOGS, CAT → CATS. What does BIRD become?",
           "options": [
-            "BIRDS",
+            "BIRDLY",
             "BIRDY",
             "BIRDED",
             "BIRDING",
-            "BIRDLY"
+            "BIRDS"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The pattern adds '-s' to make the plural: dog→dogs, cat→cats, bird→birds. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
         },
         {
@@ -17188,12 +17188,12 @@ const vrData = {
           "question": "Complete the third pair in the same way: (paint, painter) (sing, singer) (read, ___)",
           "options": [
             "reading",
-            "reader",
             "reads",
+            "reader",
             "readed",
             "readly"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The pattern adds '-er' to make the person who does the action: paint→painter, sing→singer, read→reader. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
         },
         {
@@ -17203,8 +17203,8 @@ const vrData = {
           "options": [
             "unpolite",
             "impolite",
-            "dispolite",
             "nonpolite",
+            "dispolite",
             "mispolite"
           ],
           "correct": 1,
@@ -17217,11 +17217,11 @@ const vrData = {
           "options": [
             "cleanly",
             "cleaned",
-            "cleaner",
+            "cleaning",
             "cleanest",
-            "cleaning"
+            "cleaner"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "The pattern adds '-er' to make the comparative form: loud→louder, bright→brighter, clean→cleaner. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
         },
         {
@@ -17229,13 +17229,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Complete the third pair in the same way: (glad, gladly) (soft, softly) (neat, ___)",
           "options": [
-            "neater",
-            "neatest",
             "neatly",
+            "neatest",
+            "neater",
             "neaten",
             "neats"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The pattern adds '-ly' to make an adverb: glad→gladly, soft→softly, neat→neatly. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
         },
         {
@@ -17243,8 +17243,8 @@ const vrData = {
           "difficulty": 2,
           "question": "Complete the third pair in the same way: (blow, blown) (grow, grown) (show, ___)",
           "options": [
-            "showed",
             "showing",
+            "showed",
             "shown",
             "shows",
             "shower"
@@ -17257,13 +17257,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Complete the third pair in the same way: (stripe, ripe) (stable, able) (stream, ___)",
           "options": [
-            "ream",
-            "team",
             "seam",
+            "team",
+            "ream",
             "beam",
             "dream"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The pattern removes the first two letters 'st': stripe→ripe, stable→able, stream→ream. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
         },
         {
@@ -17272,9 +17272,9 @@ const vrData = {
           "question": "What comes next in this pattern? AZ, BY, CX, DW, ___",
           "options": [
             "EV",
-            "EU",
-            "FV",
             "EW",
+            "FV",
+            "EU",
             "FU"
           ],
           "correct": 0,
@@ -17285,11 +17285,11 @@ const vrData = {
           "difficulty": 2,
           "question": "Complete the third pair in the same way: (run, rerun) (write, rewrite) (play, ___)",
           "options": [
-            "played",
+            "plays",
             "replay",
             "playing",
             "player",
-            "plays"
+            "played"
           ],
           "correct": 1,
           "explanation": "The pattern adds 're-' to the front: run→rerun, write→rewrite, play→replay. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
@@ -17313,13 +17313,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Complete the third pair in the same way: (MIST, MAST) (FILL, FALL) (WISH, ___)",
           "options": [
-            "WASH",
             "WOSH",
+            "WASH",
             "WUSH",
             "WESH",
             "WISP"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The pattern changes the vowel 'i' to 'a': MIST→MAST, FILL→FALL, WISH→WASH. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
         },
         {
@@ -17327,13 +17327,13 @@ const vrData = {
           "difficulty": 2,
           "question": "What comes next? Z1, X2, V3, T4, ___",
           "options": [
-            "R5",
-            "S5",
             "R6",
+            "S5",
+            "R5",
             "Q5",
             "S4"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The letter goes back by 2 each time (Z, X, V, T, R) and the number increases by 1 (1, 2, 3, 4, 5). Next is R5. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
         },
         {
@@ -17341,13 +17341,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Complete the third pair in the same way: (TEAM, MEAT) (PART, TRAP) (SNIP, ___)",
           "options": [
-            "PINS",
+            "PENS",
             "SPIN",
             "NIPS",
-            "PENS",
+            "PINS",
             "SNIP"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The pattern reverses the word: TEAM→MEAT, PART→TRAP, SNIP→PINS. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
         },
         {
@@ -17355,13 +17355,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Complete the third pair in the same way: (act, react) (turn, return) (fill, ___)",
           "options": [
-            "refill",
+            "fills",
             "filled",
             "filling",
             "fuller",
-            "fills"
+            "refill"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The pattern adds 're-' to the front: act→react, turn→return, fill→refill. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
         },
         {
@@ -17383,13 +17383,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Complete the third pair in the same way: (LAMP, CLAMP) (LOCK, CLOCK) (LEAN, ___)",
           "options": [
-            "CLEAN",
             "LEANT",
+            "CLEAN",
             "LEANER",
             "CLEANS",
             "GLEAM"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The pattern adds 'C' to the front: LAMP→CLAMP, LOCK→CLOCK, LEAN→CLEAN. Tip: Count letter positions carefully in longer words — miscounting is a common mistake. ✓"
         },
         {
@@ -17397,13 +17397,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Complete the third pair: (DEAL, LEAD) (EVIL, LIVE) (DEER, ___)",
           "options": [
-            "REED",
-            "RIDE",
             "DEAR",
+            "RIDE",
+            "REED",
             "REEL",
             "DREE"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The pattern reverses the word: DEAL→LEAD, EVIL→LIVE, DEER→REED. Tip: All answer options are real words — if your answer is not a word, re-check the rule. ✓"
         },
         {
@@ -17411,13 +17411,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Complete the third pair: (WHEAT, HEAT) (WROTE, ROTE) (WHOLE, ___)",
           "options": [
-            "HOLE",
+            "MOLE",
             "ROLE",
             "SOLE",
-            "MOLE",
+            "HOLE",
             "POLE"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The pattern removes the 'W': WHEAT→HEAT, WROTE→ROTE, WHOLE→HOLE. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
         },
         {
@@ -17425,13 +17425,13 @@ const vrData = {
           "difficulty": 3,
           "question": "What comes next? AC, CE, EG, GI, ___",
           "options": [
-            "IK",
+            "HI",
             "HJ",
             "JK",
             "IJ",
-            "HI"
+            "IK"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The first letter of each pair is the second letter of the previous pair. Letters advance by 2: A,C,E,G,I and C,E,G,I,K. Next is IK. Tip: Define the rule precisely: WHAT changed, WHERE, and HOW. ✓"
         },
         {
@@ -17453,13 +17453,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Complete the third pair: (MILE, SMILE) (LAUGHTER, SLAUGHTER) (WORD, ___)",
           "options": [
-            "SWORD",
             "WORDS",
+            "SWORD",
             "WORDY",
             "WORLD",
             "SWORE"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The pattern adds 'S' to the front: MILE→SMILE, LAUGHTER→SLAUGHTER, WORD→SWORD. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
         },
         {
@@ -17489,11 +17489,11 @@ const vrData = {
                       options: [
                               "1",
                               "2",
-                              "3",
+                              "5",
                               "4",
-                              "5"
+                              "3"
                       ],
-                      correct: 2,
+                      correct: 4,
                       explanation: "From SPOT=1234: S=1, P=2, O=3, T=4. We can check with TOPS=4321: T=4✓, O=3✓, P=2✓, S=1✓. The letter O = 3. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
@@ -17501,13 +17501,13 @@ const vrData = {
                       difficulty: 2,
                       question: "If LAMP is coded as 5436 and PALM is coded as 6453, what is the code for MAP?",
                       options: [
-                              "345",
-                              "436",
                               "346",
+                              "436",
+                              "345",
                               "356",
                               "364"
                       ],
-                      correct: 2,
+                      correct: 0,
                       explanation: "From LAMP=5436: L=5, A=4, M=3, P=6. From PALM=6453: P=6✓, A=4✓, L=5✓, M=3✓. So MAP = M(3) A(4) P(6) = 346. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
@@ -17528,8 +17528,8 @@ const vrData = {
                       id: 4,
                       difficulty: 3,
                       question: "If BANK = 2134 and KNAB = 4312, what is the code for NAB?",
-                      options: ["123","132","321","213","312"],
-                      correct: 4,
+                      options: ["123","132","312","213","321"],
+                      correct: 2,
                       explanation: "From BANK=2134: B=2, A=1, N=3, K=4. Check with KNAB=4312: K=4✓, N=3✓, A=1✓, B=2✓. So NAB = N(3) A(1) B(2) = 312. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
@@ -17544,7 +17544,7 @@ const vrData = {
                       id: 6,
                       difficulty: 1,
                       question: "If SUN = 123, what is the code for NUS?",
-                      options: ["132","231","312","213","321"],
+                      options: ["231","132","312","213","321"],
                       correct: 4,
                       explanation: "From SUN=123: S=1, U=2, N=3. NUS = N(3) U(2) S(1) = 321. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
@@ -17574,32 +17574,32 @@ const vrData = {
                       id: 9,
                       difficulty: 2,
                       question: "If STAR = 1234, what is the code for RATS?",
-                      options: ["3412","4312","3421","4231","4321"],
-                      correct: 4,
+                      options: ["3412","4312","4321","4231","3421"],
+                      correct: 2,
                       explanation: "From STAR=1234: S=1, T=2, A=3, R=4. RATS = R(4) A(3) T(2) S(1) = 4321. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 10,
                       difficulty: 2,
                       question: "If FISH = 1234, what is the code for HIS?",
-                      options: ["342","432","243","234","423"],
-                      correct: 4,
+                      options: ["342","432","243","423","234"],
+                      correct: 3,
                       explanation: "From FISH=1234: F=1, I=2, S=3, H=4. HIS = H(4) I(2) S(3) = 423. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 11,
                       difficulty: 2,
                       question: "If CLAP = 1234, what is the code for CALL?",
-                      options: ["1332","1232","1223","1322","1233"],
-                      correct: 3,
+                      options: ["1332","1232","1223","1233","1322"],
+                      correct: 4,
                       explanation: "From CLAP=1234: C=1, L=2, A=3, P=4. CALL = C(1) A(3) L(2) L(2) = 1322. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 12,
                       difficulty: 3,
                       question: "If TIGER = 12345, what is the code for GRIT?",
-                      options: ["3215","3512","3251","5321","3521"],
-                      correct: 4,
+                      options: ["3521","5321","3251","3512","3215"],
+                      correct: 0,
                       explanation: "From TIGER=12345: T=1, I=2, G=3, E=4, R=5. GRIT = G(3) R(5) I(2) T(1) = 3521. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
@@ -17620,16 +17620,16 @@ const vrData = {
                       id: 14,
                       difficulty: 3,
                       question: "If LEMON = 12345, what is the code for MELON?",
-                      options: ["31245","32145","32154","23145","31254"],
-                      correct: 1,
+                      options: ["31245","32154","32145","23145","31254"],
+                      correct: 2,
                       explanation: "From LEMON=12345: L=1, E=2, M=3, O=4, N=5. MELON = M(3) E(2) L(1) O(4) N(5) = 32145. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 15,
                       difficulty: 3,
                       question: "If PLATE = 12345, what is the code for TAPE?",
-                      options: ["4513","4351","4135","3415","4315"],
-                      correct: 4,
+                      options: ["4513","4351","4135","4315","3415"],
+                      correct: 3,
                       explanation: "From PLATE=12345: P=1, L=2, A=3, T=4, E=5. TAPE = T(4) A(3) P(1) E(5) = 4315. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
@@ -17644,8 +17644,8 @@ const vrData = {
                       id: 17,
                       difficulty: 2,
                       question: "If TRAIN = 12345, what is the code for RAIN?",
-                      options: ["3245","1234","2354","2345","2435"],
-                      correct: 3,
+                      options: ["2345","2354","1234","3245","2435"],
+                      correct: 0,
                       explanation: "From TRAIN=12345: T=1, R=2, A=3, I=4, N=5. RAIN = R(2) A(3) I(4) N(5) = 2345. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
@@ -17666,16 +17666,16 @@ const vrData = {
                       id: 19,
                       difficulty: 3,
                       question: "If PLANE = 12345, what is the code for PANEL?",
-                      options: ["13245","13425","13254","13524","13452"],
-                      correct: 4,
+                      options: ["13245","13425","13452","13524","13254"],
+                      correct: 2,
                       explanation: "From PLANE=12345: P=1, L=2, A=3, N=4, E=5. PANEL = P(1) A(3) N(4) E(5) L(2) = 13452. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 20,
                       difficulty: 2,
                       question: "If FLAME = 12345, what is the code for MALE?",
-                      options: ["4352","4325","4235","4253","4532"],
-                      correct: 1,
+                      options: ["4352","4253","4235","4325","4532"],
+                      correct: 3,
                       explanation: "From FLAME=12345: F=1, L=2, A=3, M=4, E=5. MALE = M(4) A(3) L(2) E(5) = 4325. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               }
       ,
@@ -17691,24 +17691,24 @@ const vrData = {
                       id: 22,
                       difficulty: 1,
                       question: "In a code, DOG = 214. What is the code for GOD?",
-                      options: ["142","241","412","421","124"],
-                      correct: 2,
+                      options: ["412","241","142","421","124"],
+                      correct: 0,
                       explanation: "From DOG = 214: D=2, O=1, G=4. GOD = G(4) O(1) D(2) = 412. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 23,
                       difficulty: 1,
                       question: "In a code, PEN = 531. What is the code for NEP?",
-                      options: ["315","153","135","351","513"],
-                      correct: 2,
+                      options: ["315","135","153","351","513"],
+                      correct: 1,
                       explanation: "From PEN = 531: P=5, E=3, N=1. NEP = N(1) E(3) P(5) = 135. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
                       id: 24,
                       difficulty: 1,
                       question: "In a code, BUS = 743. What is the code for SUB?",
-                      options: ["374","347","473","437","734"],
-                      correct: 1,
+                      options: ["374","473","347","437","734"],
+                      correct: 2,
                       explanation: "From BUS = 743: B=7, U=4, S=3. SUB = S(3) U(4) B(7) = 347. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
@@ -17723,72 +17723,72 @@ const vrData = {
                       id: 26,
                       difficulty: 1,
                       question: "In a code, MOP = 815. What is the code for POM?",
-                      options: ["158","581","185","518","851"],
-                      correct: 3,
+                      options: ["158","581","185","851","518"],
+                      correct: 4,
                       explanation: "From MOP = 815: M=8, O=1, P=5. POM = P(5) O(1) M(8) = 518. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 27,
                       difficulty: 1,
                       question: "In a code, RUN = 341. What is the code for NUR?",
-                      options: ["431","314","143","413","134"],
-                      correct: 2,
+                      options: ["143","314","431","413","134"],
+                      correct: 0,
                       explanation: "From RUN = 341: R=3, U=4, N=1. NUR = N(1) U(4) R(3) = 143. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 28,
                       difficulty: 1,
                       question: "In a code, LEG = 538. What is the code for GEL?",
-                      options: ["358","853","583","835","385"],
-                      correct: 3,
+                      options: ["358","835","583","853","385"],
+                      correct: 1,
                       explanation: "From LEG = 538: L=5, E=3, G=8. GEL = G(8) E(3) L(5) = 835. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
                       id: 29,
                       difficulty: 1,
                       question: "In a code, BAD = 123. What word does 321 stand for?",
-                      options: ["ABD","DAB","DBA","ADB","BDA"],
-                      correct: 1,
+                      options: ["ABD","DBA","DAB","ADB","BDA"],
+                      correct: 2,
                       explanation: "From BAD = 123: B=1, A=2, D=3. So 321 = D(3) A(2) B(1) = DAB. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
                       id: 30,
                       difficulty: 1,
                       question: "In a code, TOP = 415. What word does 541 stand for?",
-                      options: ["OTP","TPO","POT","OPT","PTO"],
-                      correct: 2,
+                      options: ["OTP","TPO","OPT","POT","PTO"],
+                      correct: 3,
                       explanation: "From TOP = 415: T=4, O=1, P=5. So 5=P, 4=T, 1=O → 541 = POT. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 31,
                       difficulty: 1,
                       question: "In a code, WAR = 192. What word does 291 stand for?",
-                      options: ["RWA","AWR","WRA","RAW","ARW"],
-                      correct: 3,
+                      options: ["RWA","AWR","WRA","ARW","RAW"],
+                      correct: 4,
                       explanation: "From WAR = 192: W=1, A=9, R=2. So 2=R, 9=A, 1=W → 291 = RAW. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
                       id: 32,
                       difficulty: 1,
                       question: "In a code, SIT = 893. What word does 398 stand for?",
-                      options: ["STI","ITS","TSI","IST","TIS"],
-                      correct: 4,
+                      options: ["TIS","ITS","TSI","IST","STI"],
+                      correct: 0,
                       explanation: "From SIT = 893: S=8, I=9, T=3. So 3=T, 9=I, 8=S → 398 = TIS. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
                       id: 33,
                       difficulty: 1,
                       question: "In a code, SUN = 524. What number represents the letter U?",
-                      options: ["5","4","2","1","3"],
-                      correct: 2,
+                      options: ["5","2","4","1","3"],
+                      correct: 1,
                       explanation: "From SUN = 524: S=5, U=2, N=4. The letter U is represented by 2. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 34,
                       difficulty: 1,
                       question: "In a code, JAM = 316. What number represents the letter A?",
-                      options: ["3","6","4","1","2"],
-                      correct: 3,
+                      options: ["3","6","1","4","2"],
+                      correct: 2,
                       explanation: "From JAM = 316: J=3, A=1, M=6. The letter A is represented by 1. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
@@ -17803,24 +17803,24 @@ const vrData = {
                       id: 36,
                       difficulty: 1,
                       question: "In a code, FAN = 263. What number represents the letter F?",
-                      options: ["3","6","2","1","5"],
-                      correct: 2,
+                      options: ["3","6","5","1","2"],
+                      correct: 4,
                       explanation: "From FAN = 263: F=2, A=6, N=3. The letter F is represented by 2. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
                       id: 37,
                       difficulty: 1,
                       question: "In a code, NET = 152 and TEN = 251. What letter does 5 represent?",
-                      options: ["N","T","E","A","I"],
-                      correct: 2,
+                      options: ["E","T","N","A","I"],
+                      correct: 0,
                       explanation: "From NET = 152: N=1, E=5, T=2. Check: TEN = T(2) E(5) N(1) = 251. Correct! So 5 represents E. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
                       id: 38,
                       difficulty: 1,
                       question: "In a code, POT = 617 and TOP = 716. Which number represents T?",
-                      options: ["6","1","3","7","5"],
-                      correct: 3,
+                      options: ["6","7","3","1","5"],
+                      correct: 1,
                       explanation: "From POT = 617: P=6, O=1, T=7. Check: TOP = T(7) O(1) P(6) = 716. Correct! So T is represented by 7. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
@@ -17835,72 +17835,72 @@ const vrData = {
                       id: 40,
                       difficulty: 1,
                       question: "In a code, HAM = 694. What is the code for MAH?",
-                      options: ["946","469","496","964","649"],
-                      correct: 2,
+                      options: ["946","469","964","496","649"],
+                      correct: 3,
                       explanation: "From HAM = 694: H=6, A=9, M=4. MAH = M(4) A(9) H(6) = 496. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
                       id: 41,
                       difficulty: 1,
                       question: "In a code, OWL = 647. What is the code for LOW?",
-                      options: ["476","746","764","674","467"],
-                      correct: 2,
+                      options: ["476","746","467","674","764"],
+                      correct: 4,
                       explanation: "From OWL = 647: O=6, W=4, L=7. LOW = L(7) O(6) W(4) = 764. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 42,
                       difficulty: 1,
                       question: "In a code, DIP = 285. What is the code for PID?",
-                      options: ["258","528","852","582","825"],
-                      correct: 3,
+                      options: ["582","528","852","258","825"],
+                      correct: 0,
                       explanation: "From DIP = 285: D=2, I=8, P=5. PID = P(5) I(8) D(2) = 582. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 43,
                       difficulty: 1,
                       question: "In a code, GAP = 319. What is the code for PAG?",
-                      options: ["193","391","931","913","139"],
-                      correct: 3,
+                      options: ["193","913","931","391","139"],
+                      correct: 1,
                       explanation: "From GAP = 319: G=3, A=1, P=9. PAG = P(9) A(1) G(3) = 913. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 44,
                       difficulty: 1,
                       question: "In a code, CUB = 847. What is the code for BUC?",
-                      options: ["478","487","874","784","748"],
-                      correct: 4,
+                      options: ["478","487","748","784","874"],
+                      correct: 2,
                       explanation: "From CUB = 847: C=8, U=4, B=7. BUC = B(7) U(4) C(8) = 748. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
                       id: 45,
                       difficulty: 2,
                       question: "In a code, LAMP = 5268. What is the code for PALM?",
-                      options: ["6285","8625","8256","2856","8526"],
-                      correct: 2,
+                      options: ["6285","8625","2856","8256","8526"],
+                      correct: 3,
                       explanation: "From LAMP = 5268: L=5, A=2, M=6, P=8. PALM = P(8) A(2) L(5) M(6) = 8256. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
                       id: 46,
                       difficulty: 2,
                       question: "In a code, ROAD = 3125. What is the code for DORA?",
-                      options: ["5312","5132","5213","1532","2531"],
-                      correct: 1,
+                      options: ["5312","2531","5213","1532","5132"],
+                      correct: 4,
                       explanation: "From ROAD = 3125: R=3, O=1, A=2, D=5. DORA = D(5) O(1) R(3) A(2) = 5132. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 47,
                       difficulty: 2,
                       question: "In a code, PEAR = 6123. What is the code for REAP?",
-                      options: ["3216","3162","1326","3126","2316"],
-                      correct: 3,
+                      options: ["3126","3162","1326","3216","2316"],
+                      correct: 0,
                       explanation: "From PEAR = 6123: P=6, E=1, A=2, R=3. REAP = R(3) E(1) A(2) P(6) = 3126. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
                       id: 48,
                       difficulty: 2,
                       question: "In a code, SLIM = 1578. What is the code for MILS?",
-                      options: ["7851","8571","8751","8175","5871"],
-                      correct: 2,
+                      options: ["7851","8751","8571","8175","5871"],
+                      correct: 1,
                       explanation: "From SLIM = 1578: S=1, L=5, I=7, M=8. MILS = M(8) I(7) L(5) S(1) = 8751. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
@@ -17923,32 +17923,32 @@ const vrData = {
                       id: 51,
                       difficulty: 2,
                       question: "In a code, WINE = 3297. What is the code for WEIN?",
-                      options: ["3972","3279","3927","3729","3792"],
-                      correct: 3,
+                      options: ["3972","3279","3927","3792","3729"],
+                      correct: 4,
                       explanation: "From WINE = 3297: W=3, I=2, N=9, E=7. WEIN = W(3) E(7) I(2) N(9) = 3729. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 52,
                       difficulty: 2,
                       question: "In a code, GALE = 8279. What is the code for LAGE?",
-                      options: ["7298","7928","7289","2789","9278"],
-                      correct: 2,
+                      options: ["7289","7928","7298","2789","9278"],
+                      correct: 0,
                       explanation: "From GALE = 8279: G=8, A=2, L=7, E=9. LAGE = L(7) A(2) G(8) E(9) = 7289. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
                       id: 53,
                       difficulty: 2,
                       question: "In a code, BOLT = 1352. What is the code for BLOT?",
-                      options: ["1523","1352","1532","5132","1253"],
-                      correct: 2,
+                      options: ["1523","1532","1352","5132","1253"],
+                      correct: 1,
                       explanation: "From BOLT = 1352: B=1, O=3, L=5, T=2. BLOT = B(1) L(5) O(3) T(2) = 1532. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
                       id: 54,
                       difficulty: 2,
                       question: "In a code, DESK = 4791. What is the code for SKED?",
-                      options: ["9147","9714","1974","9174","1794"],
-                      correct: 3,
+                      options: ["9147","9714","9174","1974","1794"],
+                      correct: 2,
                       explanation: "From DESK = 4791: D=4, E=7, S=9, K=1. SKED = S(9) K(1) E(7) D(4) = 9174. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
@@ -17963,40 +17963,40 @@ const vrData = {
                       id: 56,
                       difficulty: 2,
                       question: "In a code, ITEM = 2896. What word does 6289 stand for?",
-                      options: ["EMIT","TIME","MITE","MEIT","TIEM"],
-                      correct: 2,
+                      options: ["EMIT","TIME","TIEM","MEIT","MITE"],
+                      correct: 4,
                       explanation: "From ITEM = 2896: I=2, T=8, E=9, M=6. So 6=M, 2=I, 8=T, 9=E → 6289 = MITE. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
                       id: 57,
                       difficulty: 2,
                       question: "In a code, LAME = 5268. What word does 6258 stand for?",
-                      options: ["MEAL","MALE","EMAL","LEAM","ALEM"],
-                      correct: 1,
+                      options: ["MALE","MEAL","EMAL","LEAM","ALEM"],
+                      correct: 0,
                       explanation: "From LAME = 5268: L=5, A=2, M=6, E=8. So 6=M, 2=A, 5=L, 8=E → 6258 = MALE. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 58,
                       difficulty: 2,
                       question: "In a code, EAST = 7218. What word does 8721 stand for?",
-                      options: ["SEAT","SATE","TEAS","ETAS","ATES"],
-                      correct: 2,
+                      options: ["SEAT","TEAS","SATE","ETAS","ATES"],
+                      correct: 1,
                       explanation: "From EAST = 7218: E=7, A=2, S=1, T=8. So 8=T, 7=E, 2=A, 1=S → 8721 = TEAS. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 59,
                       difficulty: 2,
                       question: "In a code, POTS = 6421. What word does 1246 stand for?",
-                      options: ["TOPS","STOP","SPOT","OPTS","POST"],
-                      correct: 1,
+                      options: ["TOPS","SPOT","STOP","OPTS","POST"],
+                      correct: 2,
                       explanation: "From POTS = 6421: P=6, O=4, T=2, S=1. So 1=S, 2=T, 4=O, 6=P → 1246 = STOP. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 60,
                       difficulty: 2,
                       question: "In a code, PART = 6238. What word does 8326 stand for?",
-                      options: ["RAPT","TRAP","TARP","PRAT","RATA"],
-                      correct: 1,
+                      options: ["RAPT","PRAT","TARP","TRAP","RATA"],
+                      correct: 3,
                       explanation: "From PART = 6238: P=6, A=2, R=3, T=8. So 8=T, 3=R, 2=A, 6=P → 8326 = TRAP. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
@@ -18011,24 +18011,24 @@ const vrData = {
                       id: 62,
                       difficulty: 2,
                       question: "In a code, PINS = 6281. What word does 1826 stand for?",
-                      options: ["NIPS","SPIN","SNIP","PSIN","INSP"],
-                      correct: 2,
+                      options: ["SNIP","SPIN","NIPS","PSIN","INSP"],
+                      correct: 0,
                       explanation: "From PINS = 6281: P=6, I=2, N=8, S=1. So 1=S, 8=N, 2=I, 6=P → 1826 = SNIP. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 63,
                       difficulty: 2,
                       question: "In a code, STAR = 4825. What number represents the letter A?",
-                      options: ["4","8","2","5","6"],
-                      correct: 2,
+                      options: ["4","2","8","5","6"],
+                      correct: 1,
                       explanation: "From STAR = 4825: S=4, T=8, A=2, R=5. The letter A is represented by 2. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
                       id: 64,
                       difficulty: 2,
                       question: "In a code, DRUM = 5168. What number represents the letter U?",
-                      options: ["5","1","8","6","3"],
-                      correct: 3,
+                      options: ["5","1","6","8","3"],
+                      correct: 2,
                       explanation: "From DRUM = 5168: D=5, R=1, U=6, M=8. The letter U is represented by 6. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
@@ -18043,32 +18043,32 @@ const vrData = {
                       id: 66,
                       difficulty: 2,
                       question: "In a code, CLAP = 9528. What number represents the letter P?",
-                      options: ["9","5","2","8","6"],
-                      correct: 3,
+                      options: ["9","5","2","6","8"],
+                      correct: 4,
                       explanation: "From CLAP = 9528: C=9, L=5, A=2, P=8. The letter P is represented by 8. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 67,
                       difficulty: 2,
                       question: "In a code, FIST = 2948. What number represents the letter I?",
-                      options: ["2","4","8","9","6"],
-                      correct: 3,
+                      options: ["9","4","8","2","6"],
+                      correct: 0,
                       explanation: "From FIST = 2948: F=2, I=9, S=4, T=8. The letter I is represented by 9. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 68,
                       difficulty: 2,
                       question: "In a code, PEAR = 6123 and REAP = 3126. What letter does 2 represent?",
-                      options: ["P","E","R","A","S"],
-                      correct: 3,
+                      options: ["P","A","R","E","S"],
+                      correct: 1,
                       explanation: "From PEAR = 6123: P=6, E=1, A=2, R=3. Check REAP: R(3) E(1) A(2) P(6) = 3126. Consistent! So 2 represents A. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
                       id: 69,
                       difficulty: 2,
                       question: "In a code, LATE = 5289 and TALE = 8259. What letter does 9 represent?",
-                      options: ["L","A","T","E","S"],
-                      correct: 3,
+                      options: ["L","A","E","T","S"],
+                      correct: 2,
                       explanation: "From LATE = 5289: L=5, A=2, T=8, E=9. Check TALE: T(8) A(2) L(5) E(9) = 8259. Consistent! So 9 represents E. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
@@ -18083,40 +18083,40 @@ const vrData = {
                       id: 71,
                       difficulty: 2,
                       question: "In a code, ROPE = 3169 and PORE = 6139. What is the code for REPO?",
-                      options: ["3916","3691","3961","9361","6391"],
-                      correct: 2,
+                      options: ["3916","3691","6391","9361","3961"],
+                      correct: 4,
                       explanation: "From ROPE = 3169: R=3, O=1, P=6, E=9. Check PORE: P(6) O(1) R(3) E(9) = 6139. Consistent! REPO = R(3) E(9) P(6) O(1) = 3961. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
                       id: 72,
                       difficulty: 2,
                       question: "In a code, NAIL = 1235 and LAIN = 5231. What letter does 3 represent?",
-                      options: ["N","A","I","L","E"],
-                      correct: 2,
+                      options: ["I","A","N","L","E"],
+                      correct: 0,
                       explanation: "From NAIL = 1235: N=1, A=2, I=3, L=5. Check LAIN: L(5) A(2) I(3) N(1) = 5231. Consistent! So 3 represents I. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
                       id: 73,
                       difficulty: 2,
                       question: "In a code, GUST = 8694. What is the code for GUTS?",
-                      options: ["8694","8469","8649","8496","8946"],
-                      correct: 2,
+                      options: ["8694","8649","8469","8496","8946"],
+                      correct: 1,
                       explanation: "From GUST = 8694: G=8, U=6, S=9, T=4. GUTS = G(8) U(6) T(4) S(9) = 8649. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 74,
                       difficulty: 2,
                       question: "In a code, WAND = 3215. What is the code for DAWN?",
-                      options: ["5213","5231","5321","2531","5123"],
-                      correct: 1,
+                      options: ["5213","5321","5231","2531","5123"],
+                      correct: 2,
                       explanation: "From WAND = 3215: W=3, A=2, N=1, D=5. DAWN = D(5) A(2) W(3) N(1) = 5231. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 75,
                       difficulty: 2,
                       question: "In a code, CARE = 1234. What word does 3214 stand for?",
-                      options: ["ACRE","RACE","ARCE","ECAR","RECA"],
-                      correct: 1,
+                      options: ["ACRE","ECAR","ARCE","RACE","RECA"],
+                      correct: 3,
                       explanation: "From CARE = 1234: C=1, A=2, R=3, E=4. So 3=R, 2=A, 1=C, 4=E → 3214 = RACE. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
@@ -18131,8 +18131,8 @@ const vrData = {
                       id: 77,
                       difficulty: 3,
                       question: "In a code, CART = 1234 and CARD = 1235. What is the code for DART?",
-                      options: ["5342","5324","5243","3254","5234"],
-                      correct: 4,
+                      options: ["5234","5324","5243","3254","5342"],
+                      correct: 0,
                       explanation: "From CART = 1234: C=1, A=2, R=3, T=4. From CARD = 1235: D=5 (C=1, A=2, R=3 are consistent). DART = D(5) A(2) R(3) T(4) = 5234. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
@@ -18147,8 +18147,8 @@ const vrData = {
                       id: 79,
                       difficulty: 3,
                       question: "In a code, BONE = 1329 and TONE = 4329. What is the code for NOTE?",
-                      options: ["2439","2394","2934","2349","2493"],
-                      correct: 3,
+                      options: ["2439","2394","2349","2934","2493"],
+                      correct: 2,
                       explanation: "From BONE = 1329: B=1, O=3, N=2, E=9. From TONE = 4329: T=4 (O=3, N=2, E=9 consistent). NOTE = N(2) O(3) T(4) E(9) = 2349. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
@@ -18163,56 +18163,56 @@ const vrData = {
                       id: 81,
                       difficulty: 3,
                       question: "In a code, PLAN = 6521 and PANE = 6217. What is the code for LEAN?",
-                      options: ["5271","5712","5217","5721","7521"],
-                      correct: 3,
+                      options: ["5271","5712","5217","7521","5721"],
+                      correct: 4,
                       explanation: "From PLAN = 6521: P=6, L=5, A=2, N=1. From PANE = 6217: E=7 (P=6, A=2, N=1 consistent). LEAN = L(5) E(7) A(2) N(1) = 5721. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 82,
                       difficulty: 3,
                       question: "In a code, SHIP = 3628 and WHIP = 9628. What is the code for WISH?",
-                      options: ["9326","9263","9362","9632","9236"],
-                      correct: 4,
+                      options: ["9236","9263","9362","9632","9326"],
+                      correct: 0,
                       explanation: "From SHIP = 3628: S=3, H=6, I=2, P=8. From WHIP = 9628: W=9 (H=6, I=2, P=8 consistent). WISH = W(9) I(2) S(3) H(6) = 9236. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 83,
                       difficulty: 3,
                       question: "In a code, MIST = 6248 and FIST = 5248. What is the code for FITS?",
-                      options: ["5248","5842","5428","5284","5824"],
-                      correct: 3,
+                      options: ["5248","5284","5428","5842","5824"],
+                      correct: 1,
                       explanation: "From MIST = 6248: M=6, I=2, S=4, T=8. From FIST = 5248: F=5 (I=2, S=4, T=8 consistent). FITS = F(5) I(2) T(8) S(4) = 5284. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 84,
                       difficulty: 3,
                       question: "In a code, MEAL = 6925 and LAME = 5269. What word does 6259 stand for?",
-                      options: ["ALEM","LEAM","EMAL","MALE","MLAE"],
-                      correct: 3,
+                      options: ["ALEM","LEAM","MALE","EMAL","MLAE"],
+                      correct: 2,
                       explanation: "From MEAL = 6925: M=6, E=9, A=2, L=5. Check LAME: L(5) A(2) M(6) E(9) = 5269. Consistent! So 6=M, 2=A, 5=L, 9=E → 6259 = MALE. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
                       id: 85,
                       difficulty: 3,
                       question: "In a code, LION = 5241 and LOIN = 5421. What word does 5214 stand for?",
-                      options: ["LINO","LOIN","LION","NOLI","INOL"],
-                      correct: 0,
+                      options: ["NOLI","LOIN","LION","LINO","INOL"],
+                      correct: 3,
                       explanation: "From LION = 5241: L=5, I=2, O=4, N=1. Check LOIN: L(5) O(4) I(2) N(1) = 5421. Consistent! So 5=L, 2=I, 1=N, 4=O → 5214 = LINO. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
               },
               {
                       id: 86,
                       difficulty: 3,
                       question: "In a code, LATE = 5289 and TALE = 8259. What word does 8925 stand for?",
-                      options: ["TEAL","ETAL","TALE","LATE","LEAT"],
-                      correct: 0,
+                      options: ["LEAT","ETAL","TALE","LATE","TEAL"],
+                      correct: 4,
                       explanation: "From LATE = 5289: L=5, A=2, T=8, E=9. Check TALE: T(8) A(2) L(5) E(9) = 8259. Consistent! So 8=T, 9=E, 2=A, 5=L → 8925 = TEAL. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 87,
                       difficulty: 3,
                       question: "In a code, STOP = 4826 and TOPS = 8264. What word does 6284 stand for?",
-                      options: ["SPOT","POST","POTS","OPTS","TPOS"],
-                      correct: 2,
+                      options: ["POTS","POST","SPOT","OPTS","TPOS"],
+                      correct: 0,
                       explanation: "From STOP = 4826: S=4, T=8, O=2, P=6. Check TOPS: T(8) O(2) P(6) S(4) = 8264. Consistent! So 6=P, 2=O, 8=T, 4=S → 6284 = POTS. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
@@ -18235,24 +18235,24 @@ const vrData = {
                       id: 90,
                       difficulty: 3,
                       question: "In a code, FAST = 2148 and LAST = 5148. What number represents the letter S?",
-                      options: ["2","1","4","8","5"],
-                      correct: 2,
+                      options: ["2","1","8","4","5"],
+                      correct: 3,
                       explanation: "Comparing FAST = 2148 and LAST = 5148: the first letters differ (F vs L → 2 vs 5), so A=1, S=4, T=8. The letter S is represented by 4. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 91,
                       difficulty: 3,
                       question: "In a code, MINT = 6217 and HINT = 3217. What number represents the letter N?",
-                      options: ["6","2","1","7","3"],
-                      correct: 2,
+                      options: ["6","2","3","7","1"],
+                      correct: 4,
                       explanation: "Comparing MINT = 6217 and HINT = 3217: the first letters differ (M vs H → 6 vs 3), so I=2, N=1, T=7. The letter N is represented by 1. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 92,
                       difficulty: 3,
                       question: "In a code, BEAR = 1923 and DEAR = 5923. What number represents the letter R?",
-                      options: ["1","9","2","3","5"],
-                      correct: 3,
+                      options: ["3","9","2","1","5"],
+                      correct: 0,
                       explanation: "Comparing BEAR = 1923 and DEAR = 5923: the first letters differ (B vs D → 1 vs 5), so E=9, A=2, R=3. The letter R is represented by 3. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               },
               {
@@ -18267,56 +18267,56 @@ const vrData = {
                       id: 94,
                       difficulty: 3,
                       question: "In a code, COLD = 9152 and BOLD = 7152. Which letter does 9 represent?",
-                      options: ["O","L","D","B","C"],
-                      correct: 4,
+                      options: ["O","L","C","B","D"],
+                      correct: 2,
                       explanation: "Comparing COLD = 9152 and BOLD = 7152: the first letters differ (C vs B → 9 vs 7), so O=1, L=5, D=2. The number 9 represents C. Tip: Check your answer by substituting back — does every letter match its number? ✓"
               },
               {
                       id: 95,
                       difficulty: 3,
                       question: "In a code, ROPE = 3164 and ROBE = 3184. What is the code for BORE?",
-                      options: ["8314","8134","8143","8341","8413"],
-                      correct: 1,
+                      options: ["8314","8341","8143","8134","8413"],
+                      correct: 3,
                       explanation: "From ROPE = 3164: R=3, O=1, P=6, E=4. From ROBE = 3184: B=8 (R=3, O=1, E=4 consistent). BORE = B(8) O(1) R(3) E(4) = 8134. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
               },
               {
                       id: 96,
                       difficulty: 3,
                       question: "In a code, PLATE = 65289 and PETAL = 69825. What is the code for LEAPT?",
-                      options: ["59286","59268","59628","52968","59826"],
-                      correct: 1,
+                      options: ["59286","59826","59628","52968","59268"],
+                      correct: 4,
                       explanation: "From PLATE = 65289: P=6, L=5, A=2, T=8, E=9. Check PETAL: P(6) E(9) T(8) A(2) L(5) = 69825. Consistent! LEAPT = L(5) E(9) A(2) P(6) T(8) = 59268. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
               },
               {
                       id: 97,
                       difficulty: 3,
                       question: "In a code, STARE = 18234 and RATES = 32841. What is the code for TEARS?",
-                      options: ["84213","84231","84321","82431","84132"],
-                      correct: 1,
+                      options: ["84231","84213","84321","82431","84132"],
+                      correct: 0,
                       explanation: "From STARE = 18234: S=1, T=8, A=2, R=3, E=4. Check RATES: R(3) A(2) T(8) E(4) S(1) = 32841. Consistent! TEARS = T(8) E(4) A(2) R(3) S(1) = 84231. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
               },
               {
                       id: 98,
                       difficulty: 3,
                       question: "In a code, CRATE = 13289 and TRACE = 83219. What word does 12893 stand for?",
-                      options: ["CATER","REACT","CARTE","RECTA","ARECT"],
-                      correct: 0,
+                      options: ["REACT","CATER","CARTE","RECTA","ARECT"],
+                      correct: 1,
                       explanation: "From CRATE = 13289: C=1, R=3, A=2, T=8, E=9. Check TRACE: T(8) R(3) A(2) C(1) E(9) = 83219. Consistent! So 1=C, 2=A, 8=T, 9=E, 3=R → 12893 = CATER. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
               },
               {
                       id: 99,
                       difficulty: 3,
                       question: "In a code, STEAM = 18926 and MEATS = 69281. What is the code for MATES?",
-                      options: ["62981","62891","62819","62918","62198"],
-                      correct: 1,
+                      options: ["62981","62819","62891","62918","62198"],
+                      correct: 2,
                       explanation: "From STEAM = 18926: S=1, T=8, E=9, A=2, M=6. Check MEATS: M(6) E(9) A(2) T(8) S(1) = 69281. Consistent! MATES = M(6) A(2) T(8) E(9) S(1) = 62891. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
               },
               {
                       id: 100,
                       difficulty: 3,
                       question: "In a code, PARSE = 62349 and SPARE = 46239. What word does 69234 stand for?",
-                      options: ["SPEAR","PEARS","REAPS","RAPES","APERS"],
-                      correct: 1,
+                      options: ["APERS","RAPES","REAPS","PEARS","SPEAR"],
+                      correct: 3,
                       explanation: "From PARSE = 62349: P=6, A=2, R=3, S=4, E=9. Check SPARE: S(4) P(6) A(2) R(3) E(9) = 46239. Consistent! So 6=P, 9=E, 2=A, 3=R, 4=S → 69234 = PEARS. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
               }
       ,
@@ -18325,13 +18325,13 @@ const vrData = {
           "difficulty": 1,
           "question": "In a code, HOP = 123. What is the code for POH?",
           "options": [
-            "321",
             "312",
+            "321",
             "231",
             "213",
             "132"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "From HOP = 123: H=1, O=2, P=3. POH = P(3) O(2) H(1) = 321. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
         },
         {
@@ -18339,13 +18339,13 @@ const vrData = {
           "difficulty": 1,
           "question": "In a code, WEB = 456. What number represents the letter E?",
           "options": [
-            "4",
             "5",
+            "4",
             "6",
             "7",
             "Cannot tell"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "From WEB = 456: W=4, E=5, B=6. The letter E is represented by 5. Tip: Check your answer by substituting back — does every letter match its number? ✓"
         },
         {
@@ -18353,13 +18353,13 @@ const vrData = {
           "difficulty": 1,
           "question": "In a code, FOX = 738. What is the code for OXF?",
           "options": [
-            "387",
-            "378",
             "873",
+            "378",
+            "387",
             "837",
             "783"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "From FOX = 738: F=7, O=3, X=8. OXF = O(3) X(8) F(7) = 387. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
         },
         {
@@ -18368,9 +18368,9 @@ const vrData = {
           "question": "In a code, VAN = 591. What word does 195 stand for?",
           "options": [
             "NAV",
-            "NVA",
-            "ANV",
             "AVN",
+            "ANV",
+            "NVA",
             "VNA"
           ],
           "correct": 0,
@@ -18383,9 +18383,9 @@ const vrData = {
           "options": [
             "462",
             "426",
-            "246",
+            "642",
             "264",
-            "642"
+            "246"
           ],
           "correct": 1,
           "explanation": "From SAW = 624: S=6, A=2, W=4. WAS = W(4) A(2) S(6) = 426. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
@@ -18409,13 +18409,13 @@ const vrData = {
           "difficulty": 1,
           "question": "In a code, TIN = 825 and NIT = 528. What is the code for IN?",
           "options": [
-            "25",
             "52",
+            "25",
             "28",
             "82",
             "58"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "From TIN = 825: T=8, I=2, N=5. Check NIT: N(5) I(2) T(8) = 528. Consistent! IN = I(2) N(5) = 25. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
         },
         {
@@ -18423,13 +18423,13 @@ const vrData = {
           "difficulty": 1,
           "question": "In a code, GUM = 943. What is the code for MUG?",
           "options": [
-            "349",
-            "394",
             "493",
+            "394",
+            "349",
             "439",
             "934"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "From GUM = 943: G=9, U=4, M=3. MUG = M(3) U(4) G(9) = 349. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
         },
         {
@@ -18437,13 +18437,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, FORK = 1234. What is the code for ROOF?",
           "options": [
-            "3221",
+            "2312",
             "3212",
             "3122",
-            "2312",
+            "3221",
             "2321"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "From FORK = 1234: F=1, O=2, R=3, K=4. ROOF = R(3) O(2) O(2) F(1) = 3221. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
         },
         {
@@ -18451,13 +18451,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, BELT = 3958. What is the code for TELL?",
           "options": [
-            "8955",
+            "8595",
             "8599",
             "8959",
             "8995",
-            "8595"
+            "8955"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "From BELT = 3958: B=3, E=9, L=5, T=8. TELL = T(8) E(9) L(5) L(5) = 8955. Tip: Check your answer by substituting back — does every letter match its number? ✓"
         },
         {
@@ -18479,13 +18479,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, TWIG = 8614. What is the code for WIT?",
           "options": [
-            "618",
             "681",
+            "618",
             "168",
             "186",
             "816"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "From TWIG = 8614: T=8, W=6, I=1, G=4. WIT = W(6) I(1) T(8) = 618. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
         },
         {
@@ -18493,13 +18493,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, SNAP = 1234. What is the code for PANS?",
           "options": [
-            "4321",
-            "4231",
             "4213",
+            "4231",
+            "4321",
             "4312",
             "4132"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "From SNAP = 1234: S=1, N=2, A=3, P=4. PANS = P(4) A(3) N(2) S(1) = 4321. Tip: Start by finding double letters — if a word has 'OO' and a code has the same digit twice, that's your entry point! ✓"
         },
         {
@@ -18507,13 +18507,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, PLOD = 4927. What word does 7294 stand for?",
           "options": [
-            "DOLP",
+            "DLOP",
             "DPOL",
             "DOPL",
-            "DLOP",
+            "DOLP",
             "DOPLL"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "From PLOD = 4927: P=4, L=9, O=2, D=7. So 7=D, 2=O, 9=L, 4=P → 7294 = DOLP. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
         },
         {
@@ -18521,13 +18521,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, CUBE = 1534. What is the code for BUC?",
           "options": [
-            "351",
+            "153",
             "315",
             "531",
             "513",
-            "153"
+            "351"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "From CUBE = 1534: C=1, U=5, B=3, E=4. BUC = B(3) U(5) C(1) = 351. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
         },
         {
@@ -18549,13 +18549,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, FROG = 2738 and GORF = 8372. What is the code for GOOF?",
           "options": [
-            "8332",
             "8323",
+            "8332",
             "8233",
             "3832",
             "3382"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "From FROG = 2738: F=2, R=7, O=3, G=8. Check GORF: G(8) O(3) R(7) F(2) = 8372. Consistent! GOOF = G(8) O(3) O(3) F(2) = 8332. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
         },
         {
@@ -18563,13 +18563,13 @@ const vrData = {
           "difficulty": 2,
           "question": "In a code, WIND = 4152. What is the code for WINN?",
           "options": [
-            "4155",
-            "4515",
             "4551",
+            "4515",
+            "4155",
             "4511",
             "4115"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "From WIND = 4152: W=4, I=1, N=5, D=2. WINN = W(4) I(1) N(5) N(5) = 4155. Tip: Check your answer by substituting back — does every letter match its number? ✓"
         },
         {
@@ -18577,13 +18577,13 @@ const vrData = {
           "difficulty": 3,
           "question": "In a code, GRAPE = 12345. What is the code for REAP?",
           "options": [
-            "2534",
+            "2435",
             "2543",
             "2345",
-            "2435",
+            "2534",
             "2354"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "From GRAPE = 12345: G=1, R=2, A=3, P=4, E=5. REAP = R(2) E(5) A(3) P(4) = 2534. Tip: Similar-looking options (1793 vs 1973) are deliberate traps — check each digit carefully. ✓"
         },
         {
@@ -18592,10 +18592,10 @@ const vrData = {
           "question": "In a code, BLAZE = 12345. What is the code for ABLE?",
           "options": [
             "3125",
-            "3215",
+            "3512",
             "3152",
             "3251",
-            "3512"
+            "3215"
           ],
           "correct": 0,
           "explanation": "From BLAZE = 12345: B=1, L=2, A=3, Z=4, E=5. ABLE = A(3) B(1) L(2) E(5) = 3125. Tip: Use elimination — if you know the first digit must be 3, cross out options that don't start with 3. ✓"
@@ -18619,13 +18619,13 @@ const vrData = {
           "difficulty": 3,
           "question": "In a code, SHAVE = 15384. What is the code for VASE?",
           "options": [
-            "8314",
             "8341",
+            "8314",
             "8134",
             "8143",
             "8413"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "From SHAVE = 15384: S=1, H=5, A=3, V=8, E=4. VASE = V(8) A(3) S(1) E(4) = 8314. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
         },
         {
@@ -18633,13 +18633,13 @@ const vrData = {
           "difficulty": 3,
           "question": "In a code, TIGER = 12345. What is the code for GREET?",
           "options": [
-            "35441",
-            "35414",
             "35144",
+            "35414",
+            "35441",
             "35411",
             "34541"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "From TIGER = 12345: T=1, I=2, G=3, E=4, R=5. GREET = G(3) R(5) E(4) E(4) T(1) = 35441. Tip: Look for shared starting or ending letters between words — they'll have the same digit. ✓"
         },
         {
@@ -18647,13 +18647,13 @@ const vrData = {
           "difficulty": 3,
           "question": "In a code, CANOE = 13526. What is the code for ACNE?",
           "options": [
-            "3156",
+            "3561",
             "3165",
             "3516",
-            "3561",
+            "3156",
             "3615"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "From CANOE = 13526: C=1, A=3, N=5, O=2, E=6. ACNE = A(3) C(1) N(5) E(6) = 3156. Tip: You don't need to decode every letter — just the ones in your target word. ✓"
         },
         {
@@ -18680,16 +18680,16 @@ const vrData = {
                       id: 1,
                       difficulty: 1,
                       question: "Amy is taller than Beth. Beth is taller than Claire. Who is the shortest?",
-                      options: ["Claire","Beth","Amy","Amy and Claire","Cannot tell"],
-                      correct: 0,
+                      options: ["Beth","Claire","Amy","Amy and Claire","Cannot tell"],
+                      correct: 1,
                       explanation: "Amy > Beth > Claire in height. Claire is shorter than Beth, who is shorter than Amy. So Claire is the shortest. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 2,
                       difficulty: 2,
                       question: "All roses have thorns. This plant has thorns. Is this plant definitely a rose?",
-                      options: ["Yes, definitely","Only if it is red","Only if it has flowers","No, not necessarily","There is not enough information"],
-                      correct: 3,
+                      options: ["Yes, definitely","Only if it is red","No, not necessarily","Only if it has flowers","There is not enough information"],
+                      correct: 2,
                       explanation: "Just because all roses have thorns doesn't mean only roses have thorns. Other plants (like holly or cacti) also have thorns. Having thorns doesn't prove it's a rose. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
@@ -18697,13 +18697,13 @@ const vrData = {
                       difficulty: 2,
                       question: "Rearrange these words to make a sentence: 'school walked to they morning every'. What is the last word of the correct sentence?",
                       options: [
-                              "morning",
+                              "they",
                               "school",
                               "every",
-                              "they",
+                              "morning",
                               "walked"
                       ],
-                      correct: 0,
+                      correct: 3,
                       explanation: "The correct sentence is: 'They walked to school every morning.' The last word is 'morning'. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
@@ -18711,37 +18711,37 @@ const vrData = {
                       difficulty: 3,
                       question: "Dan has more sweets than Emma. Fay has fewer sweets than Emma but more than George. Who has the most sweets?",
                       options: [
-                              "Dan",
+                              "Cannot tell",
                               "Emma",
                               "Fay",
                               "George",
-                              "Cannot tell"
+                              "Dan"
                       ],
-                      correct: 0,
+                      correct: 4,
                       explanation: "Dan > Emma > Fay > George. Dan has the most, then Emma, then Fay, and George has the fewest. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 5,
                       difficulty: 3,
                       question: "I am thinking of two rhyming words that mean 'an overweight feline'. What are they?",
-                      options: ["Big pig","Plump lump","Round hound","Thick chick","Fat cat"],
-                      correct: 4,
+                      options: ["Fat cat","Plump lump","Round hound","Thick chick","Big pig"],
+                      correct: 0,
                       explanation: "A feline is a cat, and overweight means fat. The two rhyming words are 'fat cat'. This is a rhyming synonym puzzle — a common VR question type. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
                       id: 6,
                       difficulty: 1,
                       question: "Tom is older than Sam. Sam is older than Jack. Who is the youngest?",
-                      options: ["Jack","Sam","Tom","Tom and Jack","Cannot tell"],
-                      correct: 0,
+                      options: ["Sam","Jack","Tom","Tom and Jack","Cannot tell"],
+                      correct: 1,
                       explanation: "Tom > Sam > Jack in age. Jack is younger than Sam, who is younger than Tom. So Jack is the youngest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 7,
                       difficulty: 1,
                       question: "All dogs have four legs. Rover is a dog. How many legs does Rover have?",
-                      options: ["Two","Three","Six","Four","Cannot tell"],
-                      correct: 3,
+                      options: ["Two","Three","Four","Six","Cannot tell"],
+                      correct: 2,
                       explanation: "We know all dogs have four legs. Rover is a dog, so Rover must have four legs. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
@@ -18763,13 +18763,13 @@ const vrData = {
                       difficulty: 2,
                       question: "Red is faster than Blue. Green is slower than Blue but faster than Yellow. Put them in order from fastest to slowest.",
                       options: [
-                              "Red, Blue, Green, Yellow",
+                              "Red, Blue, Yellow, Green",
                               "Blue, Red, Green, Yellow",
                               "Red, Green, Blue, Yellow",
                               "Yellow, Green, Blue, Red",
-                              "Red, Blue, Yellow, Green"
+                              "Red, Blue, Green, Yellow"
                       ],
-                      correct: 0,
+                      correct: 4,
                       explanation: "Red is faster than Blue. Green is between Blue and Yellow but slower than Blue. So: Red > Blue > Green > Yellow. Fastest to slowest: Red, Blue, Green, Yellow. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
@@ -18784,8 +18784,8 @@ const vrData = {
                       id: 11,
                       difficulty: 2,
                       question: "I am thinking of two rhyming words that mean 'a large swine'. What are they?",
-                      options: ["Fat cat","Round hound","Tall ball","Big pig","Thick brick"],
-                      correct: 3,
+                      options: ["Fat cat","Big pig","Round hound","Tall ball","Thick brick"],
+                      correct: 1,
                       explanation: "A swine is a pig, and large means big. The two rhyming words are 'big pig'. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
@@ -18810,10 +18810,10 @@ const vrData = {
                               "James is left-handed",
                               "Sarah is in Class 3",
                               "James is not left-handed",
-                              "Sarah is not in Class 3",
-                              "Both C and D"
+                              "Both C and D",
+                              "Sarah is not in Class 3"
                       ],
-                      correct: 4,
+                      correct: 3,
                       explanation: "Since no children in Class 3 are left-handed: James (in Class 3) must be right-handed, and Sarah (left-handed) cannot be in Class 3. Both C and D must be true. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
@@ -18824,66 +18824,66 @@ const vrData = {
                               "quickly",
                               "the",
                               "very",
-                              "fox",
-                              "brown"
+                              "brown",
+                              "fox"
                       ],
-                      correct: 3,
+                      correct: 4,
                       explanation: "The correct sentence is: 'The brown fox ran very quickly.' The third word is 'fox' — The (1st), brown (2nd), fox (3rd). Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 15,
                       difficulty: 2,
                       question: "Ali is shorter than Ben. Charlie is taller than Ben. Dave is shorter than Ali. Who is second tallest?",
-                      options: ["Ali","Cannot tell","Charlie","Dave","Ben"],
-                      correct: 4,
+                      options: ["Ben","Cannot tell","Charlie","Dave","Ali"],
+                      correct: 0,
                       explanation: "Charlie > Ben > Ali > Dave. Charlie is tallest, Ben is second tallest, then Ali, then Dave. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 16,
                       difficulty: 1,
                       question: "What month comes two months after March?",
-                      options: ["May","April","June","July","February"],
-                      correct: 0,
+                      options: ["April","February","June","July","May"],
+                      correct: 4,
                       explanation: "March → April (one month) → May (two months). Two months after March is May. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 17,
                       difficulty: 3,
                       question: "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
-                      options: ["Mean dean","Grump trump","Mad dad","Cross boss","Rude dude"],
-                      correct: 3,
+                      options: ["Mean dean","Grump trump","Cross boss","Mad dad","Rude dude"],
+                      correct: 2,
                       explanation: "An employer is a boss, and angry means cross. The two rhyming words are 'cross boss'. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 18,
                       difficulty: 2,
                       question: "Kate has more stickers than Liam. Mia has more stickers than Kate. Who has the fewest stickers?",
-                      options: ["Liam","Kate","Mia","Kate and Liam","Cannot tell"],
-                      correct: 0,
+                      options: ["Kate and Liam","Kate","Mia","Liam","Cannot tell"],
+                      correct: 3,
                       explanation: "Mia > Kate > Liam. Liam has the fewest stickers. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 19,
                       difficulty: 3,
                       question: "Some birds can fly. Penguins are birds. Penguins cannot fly. Which statement must be true?",
-                      options: ["All birds can fly","No birds can fly","Penguins are not really birds","Not all birds can fly","All birds that can fly are penguins"],
-                      correct: 3,
+                      options: ["All birds can fly","No birds can fly","Penguins are not really birds","All birds that can fly are penguins","Not all birds can fly"],
+                      correct: 4,
                       explanation: "Penguins are birds but cannot fly, which proves that not all birds can fly. The word 'some' in the first statement already tells us this. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 20,
                       difficulty: 1,
                       question: "What day comes three days after Monday?",
-                      options: ["Tuesday","Wednesday","Saturday","Friday","Thursday"],
-                      correct: 4,
+                      options: ["Thursday","Wednesday","Saturday","Friday","Tuesday"],
+                      correct: 0,
                       explanation: "Monday → Tuesday (1 day) → Wednesday (2 days) → Thursday (3 days). Three days after Monday is Thursday. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 21,
                       difficulty: 3,
                       question: "Which word has a meaning that connects with both 'light' and 'fair'?",
-                      options: ["Bright","Dark","Heavy","Gloomy","Faint"],
-                      correct: 0,
+                      options: ["Dark","Bright","Gloomy","Heavy","Faint"],
+                      correct: 1,
                       explanation: "'Bright' connects with 'light' (a bright light) and 'fair' (bright/fair hair, or a bright/fair day). Words with multiple meanings that overlap are called double-meaning connections. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
@@ -18905,13 +18905,13 @@ const vrData = {
                       difficulty: 3,
                       question: "Which word can mean both 'a container for arrows' and 'to shake with fear'?",
                       options: [
-                              "Quiver",
+                              "Sheath",
                               "Tremble",
                               "Bow",
-                              "Sheath",
+                              "Quiver",
                               "Rattle"
                       ],
-                      correct: 0,
+                      correct: 3,
                       explanation: "'Quiver' has two meanings: a container for holding arrows, and to shake or tremble slightly. This is a double-meaning word. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               }
       ,
@@ -18919,8 +18919,8 @@ const vrData = {
                       id: 24,
                       difficulty: 1,
                       question: "Freya is faster than Kai. Kai is faster than Toby. Who is the slowest?",
-                      options: ["Freya","Kai","Freya and Toby","Toby","Cannot tell"],
-                      correct: 3,
+                      options: ["Freya","Kai","Freya and Toby","Cannot tell","Toby"],
+                      correct: 4,
                       explanation: "Freya > Kai > Toby in speed. Toby is the slowest. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
@@ -18935,32 +18935,32 @@ const vrData = {
                       id: 26,
                       difficulty: 1,
                       question: "Amara's bag is heavier than Toby's bag. Toby's bag is heavier than Kai's bag. Whose bag is the lightest?",
-                      options: ["Amara's","Toby's","They all weigh the same","Kai's","Cannot tell"],
-                      correct: 3,
+                      options: ["Amara's","Kai's","They all weigh the same","Toby's","Cannot tell"],
+                      correct: 1,
                       explanation: "Amara > Toby > Kai in bag weight. Kai's bag is the lightest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 27,
                       difficulty: 1,
                       question: "Ivy scored higher than Hugo. Hugo scored higher than Evie. Who came second?",
-                      options: ["Ivy","Cannot tell","Evie","Ivy and Hugo","Hugo"],
-                      correct: 4,
+                      options: ["Ivy","Cannot tell","Hugo","Ivy and Hugo","Evie"],
+                      correct: 2,
                       explanation: "Ivy > Hugo > Evie in score. Hugo came second. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 28,
                       difficulty: 1,
                       question: "Zara's pencil is longer than Freya's pencil. Freya's pencil is longer than Priya's pencil. Which pencil is the shortest?",
-                      options: ["Priya's","Freya's","Zara's","They are all the same","Cannot tell"],
-                      correct: 0,
+                      options: ["They are all the same","Freya's","Zara's","Priya's","Cannot tell"],
+                      correct: 3,
                       explanation: "Zara > Freya > Priya in pencil length. Priya's pencil is the shortest. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 29,
                       difficulty: 1,
                       question: "The red team finished before the blue team. The blue team finished before the green team. Which team finished last?",
-                      options: ["Red","Blue","Red and Green","Green","Cannot tell"],
-                      correct: 3,
+                      options: ["Red","Blue","Red and Green","Cannot tell","Green"],
+                      correct: 4,
                       explanation: "Red finished first, then Blue, then Green. The green team finished last. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
@@ -18975,112 +18975,112 @@ const vrData = {
                       id: 31,
                       difficulty: 2,
                       question: "Priya is taller than Zara. Amara is shorter than Zara but taller than Freya. Who is second shortest?",
-                      options: ["Priya","Zara","Freya","Amara","Cannot tell"],
-                      correct: 3,
+                      options: ["Priya","Amara","Freya","Zara","Cannot tell"],
+                      correct: 1,
                       explanation: "Priya > Zara > Amara > Freya. Freya is shortest and Amara is second shortest. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 32,
                       difficulty: 2,
                       question: "Kai ran faster than Toby. Omar ran faster than Kai. Toby ran faster than Hugo. Who came third in the race?",
-                      options: ["Omar","Kai","Cannot tell","Hugo","Toby"],
-                      correct: 4,
+                      options: ["Omar","Kai","Toby","Hugo","Cannot tell"],
+                      correct: 2,
                       explanation: "Omar > Kai > Toby > Hugo in speed. Omar first, Kai second, Toby third, Hugo fourth. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 33,
                       difficulty: 2,
                       question: "In a spelling test, Evie scored more than Ivy. Ivy scored less than Hugo. Hugo scored less than Evie. Put them in order from highest to lowest score.",
-                      options: ["Evie, Hugo, Ivy","Hugo, Evie, Ivy","Ivy, Hugo, Evie","Evie, Ivy, Hugo","Hugo, Ivy, Evie"],
-                      correct: 0,
+                      options: ["Evie, Ivy, Hugo","Hugo, Evie, Ivy","Ivy, Hugo, Evie","Evie, Hugo, Ivy","Hugo, Ivy, Evie"],
+                      correct: 3,
                       explanation: "Evie > Hugo (Hugo < Evie) and Hugo > Ivy (Ivy < Hugo). So Evie > Hugo > Ivy. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 34,
                       difficulty: 2,
                       question: "Freya's house is closer to school than Zara's house. Priya's house is further from school than Zara's house. Amara's house is the closest to school. Who lives second furthest from school?",
-                      options: ["Zara","Freya","Priya","Amara","Cannot tell"],
-                      correct: 0,
+                      options: ["Cannot tell","Freya","Priya","Amara","Zara"],
+                      correct: 4,
                       explanation: "From closest to furthest: Amara, Freya, Zara, Priya. Zara lives second furthest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 35,
                       difficulty: 2,
                       question: "Toby has fewer marbles than Omar. Kai has more marbles than Omar. Hugo has fewer marbles than Toby. Who has the second most marbles?",
-                      options: ["Toby","Hugo","Kai","Omar","Cannot tell"],
-                      correct: 3,
+                      options: ["Omar","Hugo","Kai","Toby","Cannot tell"],
+                      correct: 0,
                       explanation: "Kai > Omar > Toby > Hugo. Omar has the second most marbles. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 36,
                       difficulty: 2,
                       question: "Zara is not the tallest or the shortest of three friends. Amara is shorter than Zara. Who is the tallest?",
-                      options: ["The third friend","Amara","Zara","Zara and Amara","Cannot tell"],
-                      correct: 0,
+                      options: ["Amara","The third friend","Zara","Zara and Amara","Cannot tell"],
+                      correct: 1,
                       explanation: "Zara is in the middle. Amara is shorter than Zara, so Amara is shortest. The third friend must be the tallest. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 37,
                       difficulty: 2,
                       question: "In a swimming race, Priya finished after Kai but before Freya. Toby finished after Freya. Who finished second?",
-                      options: ["Kai","Toby","Freya","Priya","Cannot tell"],
-                      correct: 3,
+                      options: ["Kai","Toby","Priya","Freya","Cannot tell"],
+                      correct: 2,
                       explanation: "Kai finished first, then Priya, then Freya, then Toby. Priya finished second. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
                       id: 38,
                       difficulty: 3,
                       question: "Amara is older than Priya. Kai is younger than Toby but older than Amara. Freya is younger than Priya. Put them in order from oldest to youngest.",
-                      options: ["Toby, Kai, Amara, Priya, Freya","Kai, Toby, Amara, Freya, Priya","Toby, Kai, Priya, Amara, Freya","Toby, Amara, Kai, Priya, Freya","Kai, Toby, Priya, Amara, Freya"],
-                      correct: 0,
+                      options: ["Toby, Amara, Kai, Priya, Freya","Kai, Toby, Amara, Freya, Priya","Toby, Kai, Priya, Amara, Freya","Toby, Kai, Amara, Priya, Freya","Kai, Toby, Priya, Amara, Freya"],
+                      correct: 3,
                       explanation: "Kai < Toby, so Toby > Kai. Kai > Amara > Priya > Freya. Combining: Toby > Kai > Amara > Priya > Freya. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 39,
                       difficulty: 3,
                       question: "Five children sit in a row. Omar is next to Zara. Kai is at one end. Freya is between Omar and Kai. Toby is at the other end. Who sits in the middle seat?",
-                      options: ["Omar","Zara","Kai","Freya","Toby"],
-                      correct: 0,
+                      options: ["Toby","Zara","Kai","Freya","Omar"],
+                      correct: 4,
                       explanation: "Kai is at one end. Freya is between Kai and Omar, giving us Kai, Freya, Omar. Omar is next to Zara, so: Kai, Freya, Omar, Zara. Toby is at the other end: Kai, Freya, Omar, Zara, Toby. The middle seat (position 3) is Omar. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 40,
                       difficulty: 3,
                       question: "Ivy's cat is heavier than Hugo's cat. Evie's cat is lighter than Hugo's cat but heavier than Priya's cat. Amara's cat is heavier than Ivy's cat. Whose cat is the second lightest?",
-                      options: ["Ivy's","Hugo's","Amara's","Priya's","Evie's"],
-                      correct: 4,
+                      options: ["Evie's","Hugo's","Amara's","Priya's","Ivy's"],
+                      correct: 0,
                       explanation: "Amara > Ivy > Hugo > Evie > Priya. From lightest: Priya (lightest), Evie (2nd lightest). Evie's cat is the second lightest. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 41,
                       difficulty: 3,
                       question: "In a queue, Toby is further forward than Kai. Zara is further back than Freya but further forward than Toby. Omar is at the very back. Kai is just in front of Omar. Who is second in the queue?",
-                      options: ["Zara","Freya","Toby","Kai","Omar"],
-                      correct: 0,
+                      options: ["Freya","Zara","Toby","Kai","Omar"],
+                      correct: 1,
                       explanation: "Freya is in front of Zara, Zara in front of Toby, Toby in front of Kai, Kai in front of Omar. Order from front: Freya, Zara, Toby, Kai, Omar. Zara is second. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 42,
                       difficulty: 3,
                       question: "Five friends each have a different number of pets. Amara has more pets than Priya but fewer than Kai. Toby has the fewest pets. Freya has more pets than Kai. How many children have more pets than Amara?",
-                      options: ["1","4","3","2","Cannot tell"],
-                      correct: 3,
+                      options: ["1","4","2","3","Cannot tell"],
+                      correct: 2,
                       explanation: "Toby < Priya < Amara < Kai < Freya. Kai and Freya both have more pets than Amara, so 2 children have more. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 43,
                       difficulty: 3,
                       question: "Omar is not the heaviest or the lightest of five friends. Kai is heavier than Omar. Zara is lighter than Omar. Toby is heavier than Kai. Freya is lighter than Zara. Who is in the middle?",
-                      options: ["Omar","Kai","Zara","Toby","Freya"],
-                      correct: 0,
+                      options: ["Toby","Kai","Zara","Omar","Freya"],
+                      correct: 3,
                       explanation: "Toby > Kai > Omar > Zara > Freya. Omar is in the middle (3rd out of 5). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 99,
                       difficulty: 3,
                       question: "Amara, Priya, Kai, Zara, and Toby each finished a race in a different position. Amara finished ahead of Priya but behind Kai. Toby finished last. Zara finished ahead of Kai. Who finished second?",
-                      options: ["Kai","Priya","Amara","Zara","Toby"],
-                      correct: 0,
+                      options: ["Toby","Priya","Amara","Zara","Kai"],
+                      correct: 4,
                       explanation: "Zara > Kai > Amara > Priya, and Toby is last. So: Zara (1st), Kai (2nd), Amara (3rd), Priya (4th), Toby (5th). Kai finished second. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
@@ -19096,31 +19096,31 @@ const vrData = {
                       difficulty: 1,
                       question: "Every child in Year 5 wears a blue jumper. Priya is in Year 5. What colour jumper does Priya wear?",
                       options: ["Red","Green","Yellow","Blue","Cannot tell"],
-                      correct: 3,
+                      correct: 1,
                       explanation: "Every child in Year 5 wears blue. Priya is in Year 5, so she wears a blue jumper. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 46,
                       difficulty: 1,
                       question: "No fish can walk. A salmon is a fish. Can a salmon walk?",
-                      options: ["Yes","Cannot tell","Only on land","Only in water","No"],
-                      correct: 4,
+                      options: ["Yes","Cannot tell","No","Only in water","Only on land"],
+                      correct: 2,
                       explanation: "No fish can walk and a salmon is a fish, so a salmon cannot walk. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 47,
                       difficulty: 1,
                       question: "All bicycles have two wheels. Kai's bicycle is in the shed. How many wheels does Kai's bicycle have?",
-                      options: ["Two","One","Three","Four","Cannot tell"],
-                      correct: 0,
+                      options: ["Four","One","Three","Two","Cannot tell"],
+                      correct: 3,
                       explanation: "All bicycles have two wheels. Kai's bicycle is still a bicycle, so it has two wheels. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 48,
                       difficulty: 1,
                       question: "If it is Saturday, Toby goes swimming. Today is Saturday. What does Toby do today?",
-                      options: ["Goes to school","Plays football","Stays at home","Goes swimming","Cannot tell"],
-                      correct: 3,
+                      options: ["Goes to school","Plays football","Stays at home","Cannot tell","Goes swimming"],
+                      correct: 4,
                       explanation: "On Saturdays Toby goes swimming. Today is Saturday, so Toby goes swimming. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
@@ -19135,120 +19135,120 @@ const vrData = {
                       id: 50,
                       difficulty: 2,
                       question: "Some children in the class play football. All children who play football wear boots. Zara plays football. Which statement must be true?",
-                      options: ["Zara does not wear boots","All children wear boots","Only Zara plays football","Zara wears boots","No children wear boots"],
-                      correct: 3,
+                      options: ["Zara does not wear boots","Zara wears boots","Only Zara plays football","All children wear boots","No children wear boots"],
+                      correct: 1,
                       explanation: "All football players wear boots and Zara plays football, so Zara must wear boots. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 51,
                       difficulty: 2,
                       question: "No reptiles have fur. All mammals have fur. A gecko does not have fur. Which statement must be true?",
-                      options: ["A gecko is a mammal","A gecko is definitely a reptile","A gecko has scales","A gecko cannot be an animal","A gecko is not a mammal"],
-                      correct: 4,
+                      options: ["A gecko is a mammal","A gecko is definitely a reptile","A gecko is not a mammal","A gecko cannot be an animal","A gecko has scales"],
+                      correct: 2,
                       explanation: "All mammals have fur, but a gecko does not have fur. Therefore a gecko is not a mammal. We can't be certain it's a reptile — it could be something else — but we know it isn't a mammal. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 52,
                       difficulty: 2,
                       question: "Every pupil who finishes their homework gets a sticker. Freya did not get a sticker. Which statement must be true?",
-                      options: ["Freya did not finish her homework","Freya lost her sticker","Freya finished her homework","Freya was absent","Freya does not like stickers"],
-                      correct: 0,
+                      options: ["Freya was absent","Freya lost her sticker","Freya finished her homework","Freya did not finish her homework","Freya does not like stickers"],
+                      correct: 3,
                       explanation: "Everyone who finishes homework gets a sticker. Freya didn't get one, so she must not have finished her homework. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
                       id: 53,
                       difficulty: 2,
                       question: "All birds have feathers. All robins are birds. Which statement must be true?",
-                      options: ["All feathered things are birds","Robins cannot fly","All birds are robins","All robins have feathers","All feathered things are robins"],
-                      correct: 3,
+                      options: ["All feathered things are birds","Robins cannot fly","All birds are robins","All feathered things are robins","All robins have feathers"],
+                      correct: 4,
                       explanation: "All robins are birds, and all birds have feathers. So all robins must have feathers. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 54,
                       difficulty: 2,
                       question: "If it rains, Amara takes her umbrella. If she takes her umbrella, she does not get wet. It is raining. Which statement must be true?",
-                      options: ["Amara gets wet","Amara forgets her umbrella","Amara does not get wet","It stops raining","Amara stays at home"],
-                      correct: 2,
+                      options: ["Amara does not get wet","Amara forgets her umbrella","Amara gets wet","It stops raining","Amara stays at home"],
+                      correct: 0,
                       explanation: "It rains → Amara takes umbrella → she doesn't get wet. So Amara does not get wet. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 62,
                       difficulty: 2,
                       question: "If a number is even, it can be divided exactly by 2. The number 15 cannot be divided exactly by 2. Which statement must be true?",
-                      options: ["15 is even","15 is a prime number","15 is not even","15 can be divided by 3","15 is less than 10"],
-                      correct: 2,
+                      options: ["15 is even","15 is not even","15 is a prime number","15 can be divided by 3","15 is less than 10"],
+                      correct: 1,
                       explanation: "Even numbers can be divided exactly by 2. Since 15 cannot be divided exactly by 2, 15 is not even. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 63,
                       difficulty: 2,
                       question: "All swans at the park are white. Freya saw a white bird at the park. Is the bird definitely a swan?",
-                      options: ["Yes, definitely","No, not necessarily","Only if it was swimming","Only if it was large","Cannot tell"],
-                      correct: 1,
+                      options: ["Yes, definitely","Only if it was swimming","No, not necessarily","Only if it was large","Cannot tell"],
+                      correct: 2,
                       explanation: "All swans at the park are white, but other birds can be white too (seagulls, doves). A white bird isn't necessarily a swan. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 100,
                       difficulty: 2,
                       question: "Every pupil in the maths club enjoys puzzles. Kai enjoys puzzles. Is Kai definitely in the maths club?",
-                      options: ["Yes, definitely","No, not necessarily","Only if he is good at maths","Only on Tuesdays","Cannot tell"],
-                      correct: 1,
+                      options: ["Yes, definitely","Only on Tuesdays","Only if he is good at maths","No, not necessarily","Cannot tell"],
+                      correct: 3,
                       explanation: "Every maths club pupil enjoys puzzles, but other people can enjoy puzzles too. Just because Kai enjoys puzzles doesn't mean he's in the maths club. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 55,
                       difficulty: 3,
                       question: "All of Mrs Chen's pupils are in Year 6. Some Year 6 pupils play in the orchestra. Hugo is one of Mrs Chen's pupils. Which statement must be true?",
-                      options: ["Hugo plays in the orchestra","Hugo does not play in the orchestra","Hugo is in Year 6","Hugo is the best musician","Hugo plays a violin"],
-                      correct: 2,
+                      options: ["Hugo plays in the orchestra","Hugo does not play in the orchestra","Hugo plays a violin","Hugo is the best musician","Hugo is in Year 6"],
+                      correct: 4,
                       explanation: "All of Mrs Chen's pupils are in Year 6. Hugo is one of her pupils, so Hugo is in Year 6. We can't be sure about the orchestra — only some Year 6 pupils play in it. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 56,
                       difficulty: 3,
                       question: "No child who is late for school gets a merit point. All children who are on time get a merit point. Kai was late. Priya was on time. Which statement must be true?",
-                      options: ["Kai gets a merit point and Priya does not","Neither Kai nor Priya gets a merit point","Both Kai and Priya get merit points","Kai does not get a merit point but Priya does","Only Kai gets a merit point"],
-                      correct: 3,
+                      options: ["Kai does not get a merit point but Priya does","Neither Kai nor Priya gets a merit point","Both Kai and Priya get merit points","Kai gets a merit point and Priya does not","Only Kai gets a merit point"],
+                      correct: 0,
                       explanation: "Kai was late so he doesn't get a merit point. Priya was on time so she does get one. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 57,
                       difficulty: 3,
                       question: "All of Toby's friends like football. Some people who like football also like tennis. Zara is one of Toby's friends. Which statement CANNOT be determined from the clues?",
-                      options: ["Zara likes football","Zara is Toby's friend","Whether Zara likes tennis","Whether Toby has friends","Whether Toby's friends like football"],
-                      correct: 2,
+                      options: ["Zara likes football","Whether Zara likes tennis","Zara is Toby's friend","Whether Toby has friends","Whether Toby's friends like football"],
+                      correct: 1,
                       explanation: "We know Zara likes football (she's Toby's friend). But only 'some' football fans like tennis, so we can't tell whether Zara likes tennis. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
                       id: 58,
                       difficulty: 3,
                       question: "Every child in the school choir can sing. Every child who can sing can read music. Evie is in the school choir. Ivy can read music. Which statement must be true?",
-                      options: ["Ivy is in the school choir","Evie can read music","Everyone who reads music can sing","Ivy can sing","Evie taught Ivy to read music"],
-                      correct: 1,
+                      options: ["Ivy is in the school choir","Everyone who reads music can sing","Evie can read music","Ivy can sing","Evie taught Ivy to read music"],
+                      correct: 2,
                       explanation: "Choir → can sing → can read music. Evie is in the choir, so Evie can sing, so Evie can read music. We can't conclude anything certain about Ivy — reading music doesn't prove she's in the choir or can sing. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 59,
                       difficulty: 3,
                       question: "In a village, all shop owners drive. Some people who drive also cycle. No cyclists in the village swim. Mr Patel owns a shop and cycles. Which statement must be true?",
-                      options: ["Mr Patel swims","Mr Patel does not swim","All shop owners cycle","Mr Patel does not drive","All drivers swim"],
-                      correct: 1,
+                      options: ["Mr Patel swims","Mr Patel does not drive","All shop owners cycle","Mr Patel does not swim","All drivers swim"],
+                      correct: 3,
                       explanation: "Mr Patel owns a shop so he drives. He also cycles. No cyclists swim, so Mr Patel does not swim. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 60,
                       difficulty: 3,
                       question: "If Omar practises piano, he gets better. If he gets better, he passes his exam. If he passes his exam, he gets a certificate. Omar practised piano. What does Omar get?",
-                      options: ["Nothing","A trophy","A certificate","A new piano","Cannot tell"],
-                      correct: 2,
+                      options: ["Nothing","A trophy","Cannot tell","A new piano","A certificate"],
+                      correct: 4,
                       explanation: "Practises → gets better → passes exam → gets certificate. Omar practised, so following the chain, he gets a certificate. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 61,
                       difficulty: 3,
                       question: "All children wearing glasses sit at the front. Some children at the front are monitors. Amara wears glasses. Which statement is definitely true?",
-                      options: ["Amara is a monitor","Amara sits at the front","All monitors wear glasses","Children without glasses sit at the back","Amara does not sit at the front"],
-                      correct: 1,
+                      options: ["Amara sits at the front","Amara is a monitor","All monitors wear glasses","Children without glasses sit at the back","Amara does not sit at the front"],
+                      correct: 0,
                       explanation: "All children wearing glasses sit at the front. Amara wears glasses, so she sits at the front. We can't say she's a monitor because only 'some' front-row children are monitors. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
@@ -19263,24 +19263,24 @@ const vrData = {
                       id: 65,
                       difficulty: 1,
                       question: "Rearrange these words to make a sentence: 'happy was very the dog'. What is the last word?",
-                      options: ["Happy","Was","Very","The","Dog"],
-                      correct: 0,
+                      options: ["Very","Was","Happy","The","Dog"],
+                      correct: 2,
                       explanation: "The correct sentence is: 'The dog was very happy.' The last word is 'happy'. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 66,
                       difficulty: 1,
                       question: "Rearrange these words to make a sentence: 'pond the swam duck in the'. What is the second word?",
-                      options: ["Pond","The","Duck","Swam","In"],
-                      correct: 2,
+                      options: ["Pond","The","Swam","Duck","In"],
+                      correct: 3,
                       explanation: "The correct sentence is: 'The duck swam in the pond.' The(1) duck(2). The second word is 'duck'. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 67,
                       difficulty: 1,
                       question: "Rearrange these words to make a sentence: 'ate breakfast for toast she'. What is the second word?",
-                      options: ["Ate","Breakfast","For","Toast","She"],
-                      correct: 0,
+                      options: ["She","Breakfast","For","Toast","Ate"],
+                      correct: 4,
                       explanation: "The correct sentence is: 'She ate toast for breakfast.' She(1) ate(2). The second word is 'ate'. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
@@ -19295,40 +19295,40 @@ const vrData = {
                       id: 69,
                       difficulty: 2,
                       question: "Rearrange these words to make a sentence: 'beautiful the sang bird a song morning every'. What is the last word?",
-                      options: ["Beautiful","Bird","Song","Morning","Every"],
-                      correct: 3,
+                      options: ["Beautiful","Morning","Song","Bird","Every"],
+                      correct: 1,
                       explanation: "The correct sentence is: 'The bird sang a beautiful song every morning.' The last word is 'morning'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 70,
                       difficulty: 2,
                       question: "Rearrange these words to make a sentence: 'reading enjoys library the books at Amara'. What is the first word?",
-                      options: ["Reading","Enjoys","Library","Books","Amara"],
-                      correct: 4,
+                      options: ["Reading","Enjoys","Amara","Books","Library"],
+                      correct: 2,
                       explanation: "The correct sentence is: 'Amara enjoys reading books at the library.' The first word is 'Amara'. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 71,
                       difficulty: 2,
                       question: "Rearrange these words to make a sentence: 'class carefully the listened teacher to the'. What is the second word?",
-                      options: ["Class","Carefully","Listened","Teacher","To"],
-                      correct: 0,
+                      options: ["Teacher","Carefully","Listened","Class","To"],
+                      correct: 3,
                       explanation: "The correct sentence is: 'The class listened carefully to the teacher.' The(1) class(2). The second word is 'class'. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 72,
                       difficulty: 2,
                       question: "Rearrange these words to make a sentence: 'after stars the dark appeared it got'. What is the first word?",
-                      options: ["After","Stars","The","Dark","Appeared"],
-                      correct: 2,
+                      options: ["After","Stars","Appeared","Dark","The"],
+                      correct: 4,
                       explanation: "The correct sentence is: 'The stars appeared after it got dark.' The first word is 'The'. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 78,
                       difficulty: 2,
                       question: "Rearrange these words to make a sentence: 'ball kicked Toby the park in the'. What is the third word?",
-                      options: ["Ball","Kicked","Toby","The","Park"],
-                      correct: 3,
+                      options: ["The","Kicked","Toby","Ball","Park"],
+                      correct: 0,
                       explanation: "The correct sentence is: 'Toby kicked the ball in the park.' Toby(1) kicked(2) the(3). The third word is 'the'. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
@@ -19343,32 +19343,32 @@ const vrData = {
                       id: 74,
                       difficulty: 3,
                       question: "Rearrange these words to make a sentence: 'before the finished bell everyone the rang work their'. What is the third word?",
-                      options: ["Before","Finished","Bell","Everyone","Their"],
-                      correct: 4,
+                      options: ["Before","Finished","Their","Everyone","Bell"],
+                      correct: 2,
                       explanation: "The correct sentence is: 'Everyone finished their work before the bell rang.' Everyone(1) finished(2) their(3). The third word is 'their'. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
                       id: 75,
                       difficulty: 3,
                       question: "Rearrange these words to make a sentence: 'carefully promised he more would write he'. What is the last word?",
-                      options: ["Promised","Carefully","More","Write","He"],
-                      correct: 1,
+                      options: ["Promised","Write","More","Carefully","He"],
+                      correct: 3,
                       explanation: "The correct sentence is: 'He promised he would write more carefully.' He(1) promised(2) he(3) would(4) write(5) more(6) carefully(7). The last word is 'carefully'. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 76,
                       difficulty: 3,
                       question: "Rearrange these words to make a sentence: 'the crept fog slowly streets through the morning'. What is the second word?",
-                      options: ["Crept","Fog","Slowly","Morning","Streets"],
-                      correct: 3,
+                      options: ["Crept","Fog","Slowly","Streets","Morning"],
+                      correct: 4,
                       explanation: "The correct sentence is: 'The morning fog crept slowly through the streets.' The(1) morning(2). The second word is 'morning'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 77,
                       difficulty: 3,
                       question: "Rearrange these words to make a sentence: 'had packed she brought lunch the that she'. What is the fifth word?",
-                      options: ["Had","Packed","She","Brought","Lunch"],
-                      correct: 4,
+                      options: ["Lunch","Packed","She","Brought","Had"],
+                      correct: 0,
                       explanation: "The correct sentence is: 'She brought the packed lunch that she had.' She(1) brought(2) the(3) packed(4) lunch(5). The fifth word is 'lunch'. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
@@ -19391,24 +19391,24 @@ const vrData = {
                       id: 81,
                       difficulty: 1,
                       question: "Which word can mean both 'not heavy' and 'brightness from the sun or a lamp'?",
-                      options: ["Bright","Glow","Light","Shine","Pale"],
-                      correct: 2,
+                      options: ["Bright","Glow","Shine","Light","Pale"],
+                      correct: 3,
                       explanation: "'Light' can mean not heavy (a light bag) OR the brightness that lets us see (sunlight, lamplight). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 82,
                       difficulty: 1,
                       question: "Which word can mean both 'a piece of jewellery worn on a finger' and 'to telephone someone'?",
-                      options: ["Call","Band","Ring","Dial","Circle"],
-                      correct: 2,
+                      options: ["Call","Band","Circle","Dial","Ring"],
+                      correct: 4,
                       explanation: "'Ring' can mean a circular piece of jewellery worn on a finger OR to telephone someone (give them a ring). Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 83,
                       difficulty: 1,
                       question: "Which word can mean both 'a season of the year' and 'a coiled piece of metal'?",
-                      options: ["Summer","Spring","Autumn","Bounce","Wire"],
-                      correct: 1,
+                      options: ["Spring","Summer","Autumn","Bounce","Wire"],
+                      correct: 0,
                       explanation: "'Spring' can mean the season between winter and summer OR a coiled piece of metal that bounces back into shape. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
@@ -19423,111 +19423,111 @@ const vrData = {
                       id: 85,
                       difficulty: 2,
                       question: "Which word can mean both 'where you keep your money' and 'the side of a river'?",
-                      options: ["Shore","Bank","Edge","Save","Side"],
-                      correct: 1,
+                      options: ["Shore","Edge","Bank","Save","Side"],
+                      correct: 2,
                       explanation: "'Bank' can mean a financial institution where you keep money OR the sloping ground alongside a river. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 86,
                       difficulty: 2,
                       question: "Which word can mean both 'the long nose of an elephant' and 'a large travel case'?",
-                      options: ["Case","Trunk","Snout","Boot","Chest"],
-                      correct: 1,
+                      options: ["Case","Boot","Snout","Trunk","Chest"],
+                      correct: 3,
                       explanation: "'Trunk' can mean an elephant's long, flexible nose OR a large, sturdy travel case. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 87,
                       difficulty: 2,
                       question: "Which word can mean both 'a movement of the ocean' and 'a hand gesture to say hello or goodbye'?",
-                      options: ["Tide","Wave","Splash","Signal","Ripple"],
-                      correct: 1,
+                      options: ["Tide","Ripple","Splash","Signal","Wave"],
+                      correct: 4,
                       explanation: "'Wave' can mean a moving ridge of water in the ocean OR the action of moving your hand to greet someone. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 88,
                       difficulty: 2,
                       question: "Which word can mean both 'a student at school' and 'the dark circle in the centre of your eye'?",
-                      options: ["Iris","Student","Pupil","Lens","Scholar"],
-                      correct: 2,
+                      options: ["Pupil","Student","Iris","Lens","Scholar"],
+                      correct: 0,
                       explanation: "'Pupil' can mean a student who attends a school OR the small, dark, circular opening in the centre of the eye. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 89,
                       difficulty: 2,
                       question: "Which word can mean both 'something written and posted' and 'a symbol of the alphabet'?",
-                      options: ["Post","Note","Letter","Sign","Word"],
-                      correct: 2,
+                      options: ["Post","Letter","Note","Sign","Word"],
+                      correct: 1,
                       explanation: "'Letter' can mean a written message sent through the post OR a single character of the alphabet (A, B, C, etc.). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 90,
                       difficulty: 2,
                       question: "Which word can mean both 'a sweet spread made from fruit' and 'when too many cars block the road'?",
-                      options: ["Jelly","Jam","Marmalade","Block","Spread"],
-                      correct: 1,
+                      options: ["Jelly","Marmalade","Jam","Block","Spread"],
+                      correct: 2,
                       explanation: "'Jam' can mean a sweet preserve made by boiling fruit with sugar OR a traffic jam where vehicles are stuck and cannot move. Tip: Process one clue at a time and build the ranking step by step. ✓"
               },
               {
                       id: 96,
                       difficulty: 2,
                       question: "Which word can mean both 'happening now' and 'the flow of water in a river'?",
-                      options: ["Present","Current","Stream","Modern","Flow"],
-                      correct: 1,
+                      options: ["Present","Modern","Stream","Current","Flow"],
+                      correct: 3,
                       explanation: "'Current' can mean happening right now or up-to-date (current affairs) OR the steady flow of water in a particular direction (river current). Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
               },
               {
                       id: 98,
                       difficulty: 2,
                       question: "Which word can mean both 'a game between two sports teams' and 'a thin stick used to start a fire'?",
-                      options: ["Game","Match","Tie","Light","Stick"],
-                      correct: 1,
+                      options: ["Game","Stick","Tie","Light","Match"],
+                      correct: 4,
                       explanation: "'Match' can mean a sporting contest between two teams (a football match) OR a small wooden stick with a head that lights when struck. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
               },
               {
                       id: 91,
                       difficulty: 3,
                       question: "Which word can mean both 'a sea creature with flippers' and 'to close something tightly'?",
-                      options: ["Otter","Seal","Walrus","Lock","Shut"],
-                      correct: 1,
+                      options: ["Seal","Otter","Walrus","Lock","Shut"],
+                      correct: 0,
                       explanation: "'Seal' can mean a marine mammal with flippers that lives in cold waters OR to close something securely (seal an envelope). Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
               },
               {
                       id: 92,
                       difficulty: 3,
                       question: "Which word can mean both 'a small burrowing animal' and 'a spy who works secretly within an organisation'?",
-                      options: ["Rat","Fox","Mole","Badger","Agent"],
-                      correct: 2,
+                      options: ["Rat","Mole","Fox","Badger","Agent"],
+                      correct: 1,
                       explanation: "'Mole' can mean a small, dark-furred animal that digs underground tunnels OR a secret agent planted inside an enemy organisation. It can also mean a dark spot on the skin. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
               },
               {
                       id: 93,
                       difficulty: 3,
                       question: "Which word can mean both 'British currency' and 'to hit something heavily and repeatedly'?",
-                      options: ["Quid","Pound","Sterling","Thump","Smash"],
-                      correct: 1,
+                      options: ["Quid","Sterling","Pound","Thump","Smash"],
+                      correct: 2,
                       explanation: "'Pound' can mean the basic unit of British currency (£) OR to strike something hard again and again (pound the dough). It also means a unit of weight. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
               },
               {
                       id: 94,
                       difficulty: 3,
                       question: "Which word can mean both 'a lock fastener on a door' and 'a flash of lightning'?",
-                      options: ["Latch","Bolt","Chain","Flash","Strike"],
-                      correct: 1,
+                      options: ["Latch","Flash","Chain","Bolt","Strike"],
+                      correct: 3,
                       explanation: "'Bolt' can mean a sliding metal bar used to fasten a door OR a sudden flash of lightning (a bolt of lightning). It can also mean to run away suddenly. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
               },
               {
                       id: 95,
                       difficulty: 3,
                       question: "Which word can mean both 'a sleeveless cloak' and 'a piece of land jutting into the sea'?",
-                      options: ["Shawl","Cape","Cloak","Bay","Peninsula"],
-                      correct: 1,
+                      options: ["Shawl","Peninsula","Cloak","Bay","Cape"],
+                      correct: 4,
                       explanation: "'Cape' can mean a sleeveless cloak fastened at the neck (like a superhero's cape) OR a narrow point of land that extends into the sea (e.g. the Cape of Good Hope). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
               },
               {
                       id: 97,
                       difficulty: 3,
                       question: "Which word can mean both 'a fun outdoor event with rides' and 'treating everyone equally'?",
-                      options: ["Fair","Just","Carnival","Festival","Right"],
+                      options: ["Fair","Carnival","Just","Festival","Right"],
                       correct: 0,
                       explanation: "'Fair' can mean an outdoor event with rides, games, and stalls (a funfair) OR treating people in an equal and just way (that's not fair!). It can also describe light hair or skin. Tip: Process one clue at a time and build the ranking step by step. ✓"
               }
@@ -19553,11 +19553,11 @@ const vrData = {
           "options": [
             "Noah",
             "Olivia",
-            "Mia",
             "Noah and Mia",
+            "Mia",
             "Cannot tell"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Mia > Noah > Olivia in height. Mia is the tallest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
         },
         {
@@ -19566,10 +19566,10 @@ const vrData = {
           "question": "If it is Monday, Harry goes to football club. Today is Monday. What does Harry do today?",
           "options": [
             "Goes swimming",
-            "Stays at home",
+            "Plays in the park",
             "Goes to football club",
             "Reads a book",
-            "Plays in the park"
+            "Stays at home"
           ],
           "correct": 2,
           "explanation": "On Mondays Harry goes to football club. Today is Monday, so Harry goes to football club. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
@@ -19579,9 +19579,9 @@ const vrData = {
           "difficulty": 1,
           "question": "No birds can breathe underwater. A robin is a bird. Can a robin breathe underwater?",
           "options": [
-            "Yes",
-            "No",
             "Only in a lake",
+            "No",
+            "Yes",
             "Only in the sea",
             "Cannot tell"
           ],
@@ -19594,9 +19594,9 @@ const vrData = {
           "question": "All pentagons have five sides. This shape is a pentagon. How many sides does it have?",
           "options": [
             "Three",
-            "Four",
-            "Five",
             "Six",
+            "Five",
+            "Four",
             "Seven"
           ],
           "correct": 2,
@@ -19608,8 +19608,8 @@ const vrData = {
           "question": "Ethan has 10 marbles. Grace has half as many as Ethan. How many marbles does Grace have?",
           "options": [
             "2",
-            "3",
             "4",
+            "3",
             "5",
             "10"
           ],
@@ -19623,8 +19623,8 @@ const vrData = {
           "options": [
             "Jake likes his uniform",
             "Jake wears a uniform",
-            "Jake wears a tie",
             "Jake wears black shoes",
+            "Jake wears a tie",
             "Jake looks smart"
           ],
           "correct": 1,
@@ -19636,10 +19636,10 @@ const vrData = {
           "question": "Ruby is faster than Sanjay. Sanjay is faster than Tara. Who is the slowest?",
           "options": [
             "Ruby",
-            "Sanjay",
+            "Cannot tell",
             "Tara",
             "Ruby and Tara",
-            "Cannot tell"
+            "Sanjay"
           ],
           "correct": 2,
           "explanation": "Ruby > Sanjay > Tara in speed. Tara is the slowest. Tip: Process one clue at a time and build the ranking step by step. ✓"
@@ -19663,13 +19663,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Oliver is heavier than Poppy. Poppy is heavier than Quinn. Who is the lightest?",
           "options": [
-            "Oliver",
-            "Poppy",
             "Quinn",
+            "Poppy",
+            "Oliver",
             "Oliver and Quinn",
             "Cannot tell"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Oliver > Poppy > Quinn in weight. Quinn is the lightest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
         },
         {
@@ -19707,11 +19707,11 @@ const vrData = {
           "options": [
             "Leo brought a packed lunch",
             "Leo forgot his lunch",
-            "Leo did not bring a packed lunch",
             "Leo sat in the classroom",
+            "Leo did not bring a packed lunch",
             "Leo was absent"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Everyone with a packed lunch sits in the hall. Leo didn't sit in the hall, so he did not bring a packed lunch. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
         },
         {
@@ -19719,9 +19719,9 @@ const vrData = {
           "difficulty": 2,
           "question": "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
           "options": [
-            "Mad lad",
-            "Cross boss",
             "Mean queen",
+            "Cross boss",
+            "Mad lad",
             "Sad dad",
             "Grumpy lumpy"
           ],
@@ -19734,9 +19734,9 @@ const vrData = {
           "question": "All pupils in the choir can sing. Not all pupils in Year 5 can sing. Asha is in the choir. Which statement must be true?",
           "options": [
             "Asha is in Year 5",
-            "Asha cannot sing",
-            "Asha can sing",
             "Asha is the best singer",
+            "Asha can sing",
+            "Asha cannot sing",
             "All Year 5 pupils are in the choir"
           ],
           "correct": 2,
@@ -19748,8 +19748,8 @@ const vrData = {
           "question": "Red is more expensive than Blue. Yellow is cheaper than Blue but more expensive than Green. Which is the cheapest?",
           "options": [
             "Red",
-            "Blue",
             "Yellow",
+            "Blue",
             "Green",
             "Cannot tell"
           ],
@@ -19775,13 +19775,13 @@ const vrData = {
           "difficulty": 2,
           "question": "All children who play in the rain get wet. None of the children in Mrs Brown's class got wet. Which statement must be true?",
           "options": [
-            "No one in Mrs Brown's class played in the rain",
+            "Mrs Brown's class wore raincoats",
             "Mrs Brown's class stayed indoors",
             "It did not rain",
-            "Mrs Brown's class wore raincoats",
+            "No one in Mrs Brown's class played in the rain",
             "Mrs Brown's class used umbrellas"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Playing in the rain means getting wet. No one in the class got wet, so no one in the class played in the rain. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
         },
         {
@@ -19790,12 +19790,12 @@ const vrData = {
           "question": "Rearrange these words to make a sentence: 'garden the played in children the happily'. What is the fifth word of the correct sentence?",
           "options": [
             "played",
-            "in",
+            "happily",
             "the",
             "children",
-            "happily"
+            "in"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "The correct sentence is: 'The children played happily in the garden.' The fifth word is 'in' — The (1st), children (2nd), played (3rd), happily (4th), in (5th). Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
         },
         {
@@ -19803,13 +19803,13 @@ const vrData = {
           "difficulty": 3,
           "question": "All of Mr Patel's pupils study French. Some pupils who study French also study Spanish. Daisy is one of Mr Patel's pupils. Which statement CANNOT be determined from the clues?",
           "options": [
-            "Daisy studies French",
-            "Daisy is Mr Patel's pupil",
             "Whether Daisy studies Spanish",
+            "Daisy is Mr Patel's pupil",
+            "Daisy studies French",
             "Whether Mr Patel's pupils study French",
             "Whether Mr Patel has pupils"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "We know Daisy studies French (since she's Mr Patel's pupil), but only 'some' French students also study Spanish — we can't tell if Daisy is one of them. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
         },
         {
@@ -19847,11 +19847,11 @@ const vrData = {
           "options": [
             "My bicycle is a car",
             "All vehicles are cars",
-            "My bicycle has wheels",
             "All cars are bicycles",
+            "My bicycle has wheels",
             "My bicycle has four wheels"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "All vehicles have wheels and my bicycle is a vehicle, so my bicycle has wheels. We can't say it's a car, and we don't know how many wheels it has. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
         },
         {
@@ -19859,13 +19859,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Every member of the swimming team trains on Tuesday. Every child who trains on Tuesday eats pasta the night before. Ava is on the swimming team. Which TWO statements must both be true?",
           "options": [
-            "Ava trains on Tuesday and eats pasta on Monday night",
+            "Ava is the best swimmer and eats pasta",
             "Ava trains every day and eats pasta every night",
             "Ava likes swimming and likes pasta",
             "Ava trains on Tuesday and likes pasta",
-            "Ava is the best swimmer and eats pasta"
+            "Ava trains on Tuesday and eats pasta on Monday night"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Ava is on the swimming team, so she trains on Tuesday. Children who train on Tuesday eat pasta the night before (Monday night). So both must be true: Ava trains on Tuesday AND eats pasta on Monday night. Tip: Process one clue at a time and build the ranking step by step. ✓"
         },
         {
@@ -19873,36 +19873,36 @@ const vrData = {
           "difficulty": 3,
           "question": "All children who study music play an instrument. All children who play an instrument practise at home. No child who practises at home watches TV after school. Zain studies music. Which statement must be true?",
           "options": [
-            "Zain watches TV after school",
-            "Zain does not play an instrument",
             "Zain does not watch TV after school",
+            "Zain does not play an instrument",
+            "Zain watches TV after school",
             "Zain practises at school",
             "Zain likes music"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Zain studies music, so he plays an instrument. He plays an instrument, so he practises at home. He practises at home, so he does not watch TV after school. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
         },
         {
           "id": 126,
           "difficulty": 1,
           "question": "Priya can swim faster than Noah. Noah can swim faster than Leila. Who is the slowest swimmer?",
-          "options": ["Priya", "Noah", "Leila", "They are all equal", "Cannot tell"],
-          "correct": 2,
+          "options": ["Priya", "Leila", "Noah", "They are all equal", "Cannot tell"],
+          "correct": 1,
           "explanation": "Priya > Noah > Leila in speed. Leila is the slowest. Tip: Draw a vertical line and place names from top (fastest) to bottom (slowest). ✓"
         },
         {
           "id": 127,
           "difficulty": 1,
           "question": "The red pencil is longer than the blue pencil. The blue pencil is longer than the green pencil. Which pencil is the shortest?",
-          "options": ["Red", "Blue", "Green", "They are all the same", "Cannot tell"],
-          "correct": 2,
+          "options": ["Red", "Blue", "They are all the same", "Green", "Cannot tell"],
+          "correct": 3,
           "explanation": "Red > Blue > Green in length. Green is the shortest. Tip: When the question uses comparison words, list items in order before answering. ✓"
         },
         {
           "id": 128,
           "difficulty": 1,
           "question": "Class 3 has more pupils than Class 2. Class 2 has more pupils than Class 1. Which class has the fewest pupils?",
-          "options": ["Class 3", "Class 2", "Class 1", "They all have the same", "Cannot tell"],
+          "options": ["Class 3", "Cannot tell", "Class 1", "They all have the same", "Class 2"],
           "correct": 2,
           "explanation": "Class 3 > Class 2 > Class 1. Class 1 has the fewest. Tip: Watch out for tricky words like 'fewest' — it means the smallest number. ✓"
         },
@@ -19918,8 +19918,8 @@ const vrData = {
           "id": 130,
           "difficulty": 2,
           "question": "None of the children who walk to school arrive late. Ben walks to school. What must be true?",
-          "options": ["Ben is never ill", "Ben does not arrive late", "Ben lives nearby", "Ben walks quickly", "Ben likes walking"],
-          "correct": 1,
+          "options": ["Ben does not arrive late", "Ben is never ill", "Ben lives nearby", "Ben walks quickly", "Ben likes walking"],
+          "correct": 0,
           "explanation": "No walkers arrive late + Ben walks = Ben does not arrive late. Tip: Focus only on what the statements PROVE, not what seems likely. ✓"
         },
         {
@@ -19934,16 +19934,16 @@ const vrData = {
           "id": 132,
           "difficulty": 3,
           "question": "No pet in the rescue centre has been mistreated. Some pets in the centre are puppies. Bella is a puppy at the centre. What can we say for certain?",
-          "options": ["Bella has been mistreated", "Bella has not been mistreated", "Bella is friendly", "Bella is small", "All puppies are in the centre"],
-          "correct": 1,
+          "options": ["Bella has been mistreated", "Bella is friendly", "Bella has not been mistreated", "Bella is small", "All puppies are in the centre"],
+          "correct": 2,
           "explanation": "No centre pets have been mistreated + Bella is at the centre = Bella has not been mistreated. Being a puppy doesn't add anything — the rule applies to ALL centre pets. Tip: 'No X are Y' is a powerful rule — it applies to every single member of group X. ✓"
         },
         {
           "id": 133,
           "difficulty": 2,
           "question": "All members of the book club read at least one book a month. Jamie does not read any books. What must be true?",
-          "options": ["Jamie is in the book club", "Jamie is not in the book club", "Jamie dislikes reading", "Jamie is too busy", "Jamie reads magazines instead"],
-          "correct": 1,
+          "options": ["Jamie reads magazines instead", "Jamie is too busy", "Jamie dislikes reading", "Jamie is not in the book club", "Jamie is in the book club"],
+          "correct": 3,
           "explanation": "All book club members read at least one book. Jamie reads none. Therefore Jamie CANNOT be in the book club. Tip: If 'All A do B' and someone doesn't do B, they can't be A. ✓"
         },
         {
@@ -19958,23 +19958,23 @@ const vrData = {
           "id": 135,
           "difficulty": 2,
           "question": "All cats are animals. Whiskers is a cat. Which statement must be true?",
-          "options": ["Whiskers is a dog", "Whiskers is an animal", "Whiskers is fluffy", "All animals are cats", "Whiskers catches mice"],
-          "correct": 1,
+          "options": ["Whiskers is an animal", "Whiskers is a dog", "Whiskers is fluffy", "All animals are cats", "Whiskers catches mice"],
+          "correct": 0,
           "explanation": "All cats are animals + Whiskers is a cat = Whiskers is an animal. Simple! But notice option D — 'All animals are cats' is NOT true. Don't reverse the logic! Tip: 'All A are B' does NOT mean 'All B are A'. ✓"
         },
         {
           "id": 136,
           "difficulty": 2,
           "question": "All birds have feathers. A penguin is a bird. Which statement must be true?",
-          "options": ["Penguins can fly", "Penguins have feathers", "All feathered animals are birds", "Penguins live in cold places", "Penguins are small"],
-          "correct": 1,
+          "options": ["Penguins can fly", "All feathered animals are birds", "Penguins have feathers", "Penguins live in cold places", "Penguins are small"],
+          "correct": 2,
           "explanation": "All birds have feathers + penguins are birds = penguins have feathers. Even though penguins can't fly, they ARE birds and DO have feathers. Tip: Stick to the logic — don't add your own knowledge! ✓"
         },
         {
           "id": 137,
           "difficulty": 2,
           "question": "Every child in Year 6 has a locker. Sam is in Year 6. What can we say for certain?",
-          "options": ["Sam has the biggest locker", "Sam has a locker", "Sam keeps his locker tidy", "Sam shares his locker", "All lockers belong to Year 6"],
+          "options": ["Sam has the biggest locker", "Sam has a locker", "Sam shares his locker", "Sam keeps his locker tidy", "All lockers belong to Year 6"],
           "correct": 1,
           "explanation": "Every Year 6 child has a locker + Sam is in Year 6 = Sam has a locker. That's all we know for sure. Tip: 'What must be true?' means proven by the facts, not just likely. ✓"
         },
@@ -19982,7 +19982,7 @@ const vrData = {
           "id": 138,
           "difficulty": 3,
           "question": "All squares are rectangles. All rectangles have four sides. What must be true about squares?",
-          "options": ["Squares have three sides", "Squares are circles", "Squares have four sides", "All four-sided shapes are squares", "Rectangles are squares"],
+          "options": ["Squares have three sides", "Squares are circles", "Squares have four sides", "Rectangles are squares", "All four-sided shapes are squares"],
           "correct": 2,
           "explanation": "Squares → rectangles → four sides. So squares have four sides. This is a chain: if A→B and B→C, then A→C. Tip: Follow the chain step by step — each arrow only goes one way! ✓"
         },
@@ -19990,7 +19990,7 @@ const vrData = {
           "id": 139,
           "difficulty": 3,
           "question": "Some children who play football also play cricket. Zara plays football. Does Zara play cricket?",
-          "options": ["Yes, definitely", "No, never", "Yes, because all footballers play cricket", "Cannot tell from the information given", "Only in summer"],
+          "options": ["No, never", "Yes, definitely", "Yes, because all footballers play cricket", "Cannot tell from the information given", "Only in summer"],
           "correct": 3,
           "explanation": "'SOME' footballers play cricket — not ALL. So we can't tell if Zara is one of them. Tip: 'Some' is the trickiest word in logic — it means 'at least one but not necessarily all'. ✓"
         },
@@ -19998,8 +19998,8 @@ const vrData = {
           "id": 140,
           "difficulty": 3,
           "question": "All dogs are mammals. Fido is a mammal. Is Fido definitely a dog?",
-          "options": ["Yes, definitely", "No — Fido could be any mammal", "Only if Fido barks", "Yes, because all mammals are dogs", "Cannot tell"],
-          "correct": 1,
+          "options": ["No — Fido could be any mammal", "Yes, definitely", "Only if Fido barks", "Yes, because all mammals are dogs", "Cannot tell"],
+          "correct": 0,
           "explanation": "All dogs are mammals, but NOT all mammals are dogs. Fido could be a cat, horse, or any other mammal. Tip: This is the classic reverse logic trap — 'All A are B' does NOT mean 'All B are A'. ✓"
         },
         {
@@ -20014,15 +20014,15 @@ const vrData = {
           "id": 142,
           "difficulty": 1,
           "question": "Who is the tallest? Amy is taller than Beth. Claire is shorter than Beth.",
-          "options": ["Amy", "Beth", "Claire", "They are all the same", "Cannot tell"],
-          "correct": 0,
+          "options": ["They are all the same", "Beth", "Amy", "Claire", "Cannot tell"],
+          "correct": 2,
           "explanation": "Amy > Beth > Claire. Amy is tallest. Tip: Write the names in order from biggest to smallest. ✓"
         },
         {
           "id": 143,
           "difficulty": 1,
           "question": "Which is the heaviest? A brick is heavier than a book. A book is heavier than a feather.",
-          "options": ["Brick", "Book", "Feather", "They weigh the same", "Cannot tell"],
+          "options": ["Brick", "Book", "Cannot tell", "They weigh the same", "Feather"],
           "correct": 0,
           "explanation": "Brick > Book > Feather. The brick is heaviest. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
         },
@@ -20030,15 +20030,15 @@ const vrData = {
           "id": 144,
           "difficulty": 2,
           "question": "Who ran the fastest? Dan beat Ellie. Fran beat Dan. Ellie beat Grace.",
-          "options": ["Dan", "Ellie", "Fran", "Grace", "Cannot tell"],
-          "correct": 2,
+          "options": ["Fran", "Ellie", "Dan", "Grace", "Cannot tell"],
+          "correct": 0,
           "explanation": "Fran > Dan > Ellie > Grace. Fran was fastest. Tip: Process one clue at a time and slot each person into the ranking. ✓"
         },
         {
           "id": 145,
           "difficulty": 2,
           "question": "Which town is furthest north? York is north of London. Edinburgh is north of York.",
-          "options": ["London", "York", "Edinburgh", "They are equal", "Cannot tell"],
+          "options": ["York", "London", "Edinburgh", "They are equal", "Cannot tell"],
           "correct": 2,
           "explanation": "Edinburgh > York > London going north. Edinburgh is furthest north. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
         },
@@ -20054,7 +20054,7 @@ const vrData = {
           "id": 147,
           "difficulty": 2,
           "question": "Who lives closest to school? Mia lives further from school than Noah. Noah lives further than Olivia.",
-          "options": ["Mia", "Noah", "Olivia", "They all live equally far", "Cannot tell"],
+          "options": ["Mia", "They all live equally far", "Olivia", "Noah", "Cannot tell"],
           "correct": 2,
           "explanation": "Mia > Noah > Olivia in distance. Olivia is closest. Tip: 'Closest' means the LEAST distance — it's the opposite end from 'furthest'. ✓"
         },
@@ -20062,8 +20062,8 @@ const vrData = {
           "id": 148,
           "difficulty": 3,
           "question": "Who came third in the race? Kai beat Leo. Mia beat Kai. Leo beat Nora. Nora beat Oscar.",
-          "options": ["Kai", "Leo", "Mia", "Nora", "Oscar"],
-          "correct": 1,
+          "options": ["Kai", "Oscar", "Mia", "Nora", "Leo"],
+          "correct": 4,
           "explanation": "Mia > Kai > Leo > Nora > Oscar. Leo came third. Tip: With 5 people, build the full ranking before answering — don't guess from partial information. ✓"
         },
         {
@@ -20078,24 +20078,24 @@ const vrData = {
           "id": 150,
           "difficulty": 3,
           "question": "Who finished fourth? Anna finished before Beth. Beth finished before Chris. Dave finished after Chris but before Eve.",
-          "options": ["Anna", "Beth", "Chris", "Dave", "Eve"],
-          "correct": 3,
+          "options": ["Dave", "Chris", "Beth", "Anna", "Eve"],
+          "correct": 0,
           "explanation": "Anna > Beth > Chris > Dave > Eve (in finishing order). Dave finished fourth. Tip: 'After' and 'before' tell you the order — process each clue carefully. ✓"
         },
         {
           "id": 151,
           "difficulty": 1,
           "question": "What is the cheapest? A coat costs more than a hat. A hat costs more than a scarf.",
-          "options": ["Coat", "Hat", "Scarf", "They cost the same", "Cannot tell"],
-          "correct": 2,
+          "options": ["Coat", "Hat", "They cost the same", "Scarf", "Cannot tell"],
+          "correct": 3,
           "explanation": "Coat > Hat > Scarf in price. The scarf is cheapest. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
         },
         {
           "id": 152,
           "difficulty": 2,
           "question": "Who has the least pocket money? Freya gets more than George. Harry gets less than George but more than Isla.",
-          "options": ["Freya", "George", "Harry", "Isla", "Cannot tell"],
-          "correct": 3,
+          "options": ["Freya", "George", "Isla", "Harry", "Cannot tell"],
+          "correct": 2,
           "explanation": "Freya > George > Harry > Isla. Isla has the least. Tip: 'Less than' means smaller — slot the person below in the ranking. ✓"
         },
         {
@@ -20110,16 +20110,16 @@ const vrData = {
           "id": 154,
           "difficulty": 3,
           "question": "Five children — Amy, Ben, Cal, Dee, and Eve — each live in a different-coloured house: red, blue, green, yellow, and white. Amy does not live in the red or blue house. Ben lives in the yellow house. Cal lives next door to Ben. The green house is at one end of the row and Amy lives in it. What colour is Dee's house?",
-          "options": ["Red", "Blue", "Green", "Yellow", "White"],
-          "correct": 0,
+          "options": ["White", "Blue", "Green", "Yellow", "Red"],
+          "correct": 4,
           "explanation": "Ben lives in yellow. Amy lives in green, which is at one end. Cal lives next to Ben. That leaves red, blue, and white for Cal, Dee, and Eve. Since we need to assign colours: Amy = green (end), Ben = yellow, and the remaining houses are red, blue, white for Cal, Dee, Eve. Since Amy is not in red or blue (confirmed — she's in green), and Cal is next to Ben, the arrangement works with Dee in red. ✓"
         },
         {
           "id": 155,
           "difficulty": 3,
           "question": "Five friends ran a race. Priya finished before Kai but after Zara. Omar finished last. Freya finished before Zara. In what position did Priya finish?",
-          "options": ["1st", "2nd", "3rd", "4th", "5th"],
-          "correct": 2,
+          "options": ["3rd", "1st", "2nd", "4th", "5th"],
+          "correct": 0,
           "explanation": "Freya finished before Zara. Zara finished before Priya. Priya finished before Kai. Omar finished last. Order: Freya (1st), Zara (2nd), Priya (3rd), Kai (4th), Omar (5th). Priya finished 3rd. ✓"
         },
         {
@@ -20150,7 +20150,7 @@ const vrData = {
           "id": 159,
           "difficulty": 3,
           "question": "Five children — Amy, Ben, Cat, Dan, and Eve — each play a different instrument. Amy does not play guitar or drums. Ben plays piano. Cat plays the instrument that comes first alphabetically. Dan does not play violin. Eve plays flute. What does Amy play?",
-          "options": ["Drums", "Flute", "Guitar", "Piano", "Violin"],
+          "options": ["Piano", "Flute", "Guitar", "Drums", "Violin"],
           "correct": 4,
           "explanation": "Ben = piano, Eve = flute. The instruments are drums, flute, guitar, piano, violin. Alphabetically first = drums, so Cat = drums. Amy does not play guitar or drums, and piano and flute are taken, so Amy = violin. That leaves Dan = guitar. ✓"
         },
@@ -20166,8 +20166,8 @@ const vrData = {
           "id": 161,
           "difficulty": 3,
           "question": "Five children — Mia, Noah, Olivia, Pete, and Quinn — each have a different number of books: 2, 4, 6, 8, and 10. Quinn has the most books. Mia has more books than Pete but fewer than Olivia. Noah has 4 books. How many books does Pete have?",
-          "options": ["2", "4", "6", "8", "10"],
-          "correct": 0,
+          "options": ["6", "2", "4", "8", "10"],
+          "correct": 1,
           "explanation": "Quinn has the most = 10. Noah = 4. Mia > Pete and Olivia > Mia. So order from most: Quinn(10), Olivia, Mia, Pete, with Noah(4) fitting in. Since Olivia > Mia > Pete, and Noah = 4: the remaining values are 2, 6, 8. Olivia = 8, Mia = 6, Pete = 2. Check: Quinn(10) > Olivia(8) > Mia(6) > Noah(4) > Pete(2). ✓"
         },
         {
@@ -20182,8 +20182,8 @@ const vrData = {
           "id": 163,
           "difficulty": 3,
           "question": "Five children each have a different favourite colour: red, blue, green, yellow, and purple. Amara's favourite is not red or yellow. Ben's favourite is blue. Cara's favourite is not green. Dev's favourite is yellow. What is Amara's favourite colour?",
-          "options": ["Red", "Blue", "Green", "Yellow", "Purple"],
-          "correct": 2,
+          "options": ["Red", "Blue", "Yellow", "Green", "Purple"],
+          "correct": 3,
           "explanation": "Ben = blue, Dev = yellow. Remaining colours: red, green, purple for Amara, Cara, and Ella (5th child). Amara is not red or yellow, and blue and yellow are taken, so Amara = green or purple. Cara is not green, so if Amara = green, Cara gets red or purple, and the 5th child gets the other. Amara = green works. ✓"
         }
 
@@ -20200,10 +20200,10 @@ const vrData = {
             "R",
             "S",
             "N",
-            "L",
-            "T"
+            "T",
+            "L"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "The letter T completes both pairs: CAT + TEN, and BUT + TANK. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
         },
         {
@@ -20211,10 +20211,10 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nBU ( ? ) UN\nHA ( ? ) AND",
           "options": [
-            "T",
+            "D",
             "N",
             "R",
-            "D",
+            "T",
             "S"
           ],
           "correct": 4,
@@ -20239,9 +20239,9 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nBA ( ? ) OG\nBE ( ? ) ARK",
           "options": [
-            "T",
-            "D",
             "N",
+            "D",
+            "T",
             "S",
             "L"
           ],
@@ -20254,9 +20254,9 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nWI ( ? ) OT\nPI ( ? ) EST",
           "options": [
             "N",
-            "S",
-            "R",
             "T",
+            "R",
+            "S",
             "L"
           ],
           "correct": 0,
@@ -20270,8 +20270,8 @@ const vrData = {
             "T",
             "R",
             "N",
-            "S",
-            "D"
+            "D",
+            "S"
           ],
           "correct": 1,
           "explanation": "The letter R completes both pairs: CAR + RUN, and FAR + ROAD. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
@@ -20281,13 +20281,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nCU ( ? ) AP\nFA ( ? ) ALL",
           "options": [
-            "P",
+            "T",
             "N",
             "R",
-            "T",
+            "P",
             "B"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "The letter T completes both pairs: CUT + TAP, and FAT + TALL. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
         },
         {
@@ -20296,10 +20296,10 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nGA ( ? ) IT\nHI ( ? ) ING",
           "options": [
             "T",
-            "N",
+            "D",
             "R",
             "S",
-            "D"
+            "N"
           ],
           "correct": 3,
           "explanation": "The letter S completes both pairs: GAS + SIT, and HIS + SING. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
@@ -20309,9 +20309,9 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nCU ( ? ) IG\nDI ( ? ) LAN",
           "options": [
-            "T",
-            "R",
             "S",
+            "R",
+            "T",
             "N",
             "P"
           ],
@@ -20337,11 +20337,11 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nCA ( ? ) IG\nRI ( ? ) ONE",
           "options": [
-            "D",
+            "S",
             "N",
             "T",
             "B",
-            "S"
+            "D"
           ],
           "correct": 3,
           "explanation": "The letter B completes both pairs: CAB + BIG, and RIB + BONE. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
@@ -20351,13 +20351,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nOW ( ? ) AP\nAL ( ? ) ONG",
           "options": [
-            "L",
+            "T",
             "N",
             "S",
-            "T",
+            "L",
             "R"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The letter L completes both pairs: OWL + LAP, and ALL + LONG. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
@@ -20366,12 +20366,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nME ( ? ) OP\nSE ( ? ) AIL",
           "options": [
             "P",
-            "N",
-            "S",
             "T",
+            "S",
+            "N",
             "R"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "The letter T completes both pairs: MET + TOP, and SET + TAIL. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -20393,10 +20393,10 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nRA ( ? ) EW\nFA ( ? ) AIL",
           "options": [
-            "T",
+            "R",
             "S",
             "N",
-            "R",
+            "T",
             "D"
           ],
           "correct": 2,
@@ -20410,8 +20410,8 @@ const vrData = {
             "D",
             "B",
             "T",
-            "N",
-            "S"
+            "S",
+            "N"
           ],
           "correct": 0,
           "explanation": "The letter D completes both pairs: ADD + DIG, and ODD + DOOR. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
@@ -20421,8 +20421,8 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nTU ( ? ) AT\nJO ( ? ) ALL",
           "options": [
-            "T",
             "S",
+            "T",
             "N",
             "B",
             "R"
@@ -20436,12 +20436,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nHE ( ? ) UG\nFO ( ? ) AIN",
           "options": [
             "N",
-            "R",
-            "T",
             "S",
+            "T",
+            "R",
             "D"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The letter R completes both pairs: HER + RUG, and FOR + RAIN. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -20451,11 +20451,11 @@ const vrData = {
           "options": [
             "T",
             "N",
-            "S",
             "D",
+            "S",
             "P"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "The letter D completes both pairs: HAD + DIP, and RED + DUSK. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
         },
         {
@@ -20466,10 +20466,10 @@ const vrData = {
             "S",
             "N",
             "R",
-            "T",
-            "D"
+            "D",
+            "T"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "The letter T completes both pairs: GOT + TEN, and NOT + TRIP. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
@@ -20478,12 +20478,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nBA ( ? ) IN\nHA ( ? ) URN",
           "options": [
             "D",
-            "S",
+            "T",
             "N",
             "R",
-            "T"
+            "S"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "The letter T completes both pairs: BAT + TIN, and HAT + TURN. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -20491,9 +20491,9 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nBI ( ? ) IP\nSI ( ? ) ALK",
           "options": [
-            "N",
-            "T",
             "R",
+            "T",
+            "N",
             "D",
             "S"
           ],
@@ -20506,10 +20506,10 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nPE ( ? ) AN\nNE ( ? ) EAR",
           "options": [
             "S",
-            "R",
+            "D",
             "T",
             "N",
-            "D"
+            "R"
           ],
           "correct": 2,
           "explanation": "The letter T completes both pairs: PET + TAN, and NET + TEAR. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
@@ -20519,9 +20519,9 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nMA ( ? ) AR\nSA ( ? ) OAD",
           "options": [
-            "N",
-            "D",
             "S",
+            "D",
+            "N",
             "R",
             "T"
           ],
@@ -20547,11 +20547,11 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nOI ( ? ) ET\nTAL ( ? ) AKE",
           "options": [
-            "T",
+            "R",
             "N",
             "S",
             "L",
-            "R"
+            "T"
           ],
           "correct": 3,
           "explanation": "The letter L completes both pairs: OIL + LET, and TALL + LAKE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
@@ -20561,13 +20561,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nTI ( ? ) OT\nHI ( ? ) OKE",
           "options": [
-            "P",
+            "R",
             "T",
             "N",
             "S",
-            "R"
+            "P"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The letter P completes both pairs: TIP + POT, and HIP + POKE. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
         },
         {
@@ -20576,12 +20576,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nLO ( ? ) UB\nDO ( ? ) AKE",
           "options": [
             "S",
-            "D",
+            "T",
             "N",
             "R",
-            "T"
+            "D"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "The letter T completes both pairs: LOT + TUB, and DOT + TAKE. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
@@ -20605,11 +20605,11 @@ const vrData = {
           "options": [
             "T",
             "S",
-            "G",
             "N",
+            "G",
             "R"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The letter G completes both pairs: PIG + GAP, and DIG + GATE. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
@@ -20619,11 +20619,11 @@ const vrData = {
           "options": [
             "T",
             "S",
-            "W",
+            "R",
             "N",
-            "R"
+            "W"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "The letter W completes both pairs: BOW + WET, and COW + WILL. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
         },
         {
@@ -20673,10 +20673,10 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nSO ( ? ) ET\nRI ( ? ) ANK",
           "options": [
-            "T",
+            "S",
             "N",
             "B",
-            "S",
+            "T",
             "R"
           ],
           "correct": 2,
@@ -20690,8 +20690,8 @@ const vrData = {
             "G",
             "N",
             "T",
-            "S",
-            "R"
+            "R",
+            "S"
           ],
           "correct": 0,
           "explanation": "The letter G completes both pairs: PEG + GUN, and JOG + GIRL. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
@@ -20715,13 +20715,13 @@ const vrData = {
           "difficulty": 1,
           "question": "Find the letter that completes both pairs of words:\n\nNO ( ? ) AS\nSE ( ? ) ING",
           "options": [
-            "T",
             "W",
+            "R",
             "S",
             "N",
-            "R"
+            "T"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The letter W completes both pairs: NOW + WAS, and SEW + WING. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
@@ -20744,9 +20744,9 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nPLU ( ? ) END\nSWI ( ? ) ASK",
           "options": [
             "N",
-            "T",
-            "M",
             "S",
+            "M",
+            "T",
             "R"
           ],
           "correct": 2,
@@ -20760,8 +20760,8 @@ const vrData = {
             "T",
             "B",
             "S",
-            "N",
-            "R"
+            "R",
+            "N"
           ],
           "correct": 1,
           "explanation": "The letter B completes both pairs: CLUB + BELL, and GRAB + BIRD. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
@@ -20786,8 +20786,8 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nLOS ( ? ) ENT\nDUS ( ? ) RAM",
           "options": [
             "T",
-            "N",
             "S",
+            "N",
             "R",
             "D"
           ],
@@ -20799,13 +20799,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nPLA ( ? ) AME\nTHI ( ? ) ECK",
           "options": [
-            "T",
-            "S",
             "N",
+            "S",
+            "T",
             "R",
             "D"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "The letter N completes both pairs: PLAN + NAME, and THIN + NECK. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
@@ -20813,13 +20813,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nHEL ( ? ) INK\nDRI ( ? ) OLE",
           "options": [
-            "P",
+            "T",
             "N",
             "S",
-            "T",
+            "P",
             "R"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "The letter P completes both pairs: HELP + PINK, and DRIP + POLE. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -20841,13 +20841,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nDRU ( ? ) ILK\nPRA ( ? ) INE",
           "options": [
-            "N",
+            "M",
             "T",
             "R",
             "S",
-            "M"
+            "N"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "The letter M completes both pairs: DRUM + MILK, and PRAM + MINE. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
         },
         {
@@ -20855,8 +20855,8 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nNAI ( ? ) AMP\nGIR ( ? ) ONG",
           "options": [
-            "T",
             "R",
+            "T",
             "S",
             "N",
             "L"
@@ -20885,11 +20885,11 @@ const vrData = {
           "options": [
             "T",
             "N",
-            "P",
             "S",
+            "P",
             "R"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "The letter P completes both pairs: SHIP + POLE, and CHOP + PLUG. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -20900,8 +20900,8 @@ const vrData = {
             "S",
             "N",
             "T",
-            "R",
-            "D"
+            "D",
+            "R"
           ],
           "correct": 2,
           "explanation": "The letter T completes both pairs: PART + TALK, and SALT + TOLD. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
@@ -20911,13 +20911,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nBEL ( ? ) UCK\nTAL ( ? ) ION",
           "options": [
-            "T",
+            "L",
             "N",
             "S",
-            "L",
+            "T",
             "R"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "The letter L completes both pairs: BELL + LUCK, and TALL + LION. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
@@ -20926,12 +20926,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nFAS ( ? ) ENT\nBES ( ? ) OAD",
           "options": [
             "S",
-            "N",
-            "R",
             "T",
+            "R",
+            "N",
             "D"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "The letter T completes both pairs: FAST + TENT, and BEST + TOAD. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -20953,10 +20953,10 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nFIS ( ? ) AND\nPUS ( ? ) ELP",
           "options": [
-            "T",
+            "S",
             "N",
             "H",
-            "S",
+            "T",
             "R"
           ],
           "correct": 2,
@@ -20970,8 +20970,8 @@ const vrData = {
             "B",
             "N",
             "T",
-            "S",
-            "R"
+            "R",
+            "S"
           ],
           "correct": 0,
           "explanation": "The letter B completes both pairs: GRAB + BAND, and LIMB + BIKE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
@@ -20981,8 +20981,8 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nSCA ( ? ) ING\nSTI ( ? ) OPE",
           "options": [
-            "T",
             "N",
+            "T",
             "S",
             "R",
             "D"
@@ -20996,12 +20996,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nWHE ( ? ) AME\nBOR ( ? ) ICE",
           "options": [
             "T",
-            "N",
-            "S",
             "R",
+            "S",
+            "N",
             "D"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The letter N completes both pairs: WHEN + NAME, and BORN + NICE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -21010,8 +21010,8 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nSKI ( ? ) OND\nBUM ( ? ) AGE",
           "options": [
             "T",
-            "N",
             "S",
+            "N",
             "P",
             "R"
           ],
@@ -21026,8 +21026,8 @@ const vrData = {
             "T",
             "H",
             "S",
-            "N",
-            "R"
+            "R",
+            "N"
           ],
           "correct": 1,
           "explanation": "The letter H completes both pairs: WISH + HOLE, and CRASH + HILL. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
@@ -21051,13 +21051,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nTOO ( ? ) END\nPOO ( ? ) AND",
           "options": [
-            "T",
+            "L",
             "R",
             "S",
             "N",
-            "L"
+            "T"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "The letter L completes both pairs: TOOL + LEND, and POOL + LAND. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
@@ -21121,8 +21121,8 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nSTOR ( ? ) ICE\nWAR ( ? ) IST",
           "options": [
-            "T",
             "N",
+            "T",
             "R",
             "S",
             "M"
@@ -21150,12 +21150,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nSTO ( ? ) INT\nTRA ( ? ) AIR",
           "options": [
             "T",
-            "P",
             "N",
+            "P",
             "S",
             "R"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The letter P completes both pairs: STOP + PINT, and TRAP + PAIR. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -21164,12 +21164,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nSAN ( ? ) ARE\nFIN ( ? ) EAR",
           "options": [
             "T",
-            "D",
-            "S",
             "R",
+            "S",
+            "D",
             "N"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "The letter D completes both pairs: SAND + DARE, and FIND + DEAR. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
@@ -21179,9 +21179,9 @@ const vrData = {
           "options": [
             "T",
             "K",
-            "N",
+            "R",
             "S",
-            "R"
+            "N"
           ],
           "correct": 1,
           "explanation": "The letter K completes both pairs: MARK + KEEP, and DARK + KNEE. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
@@ -21191,11 +21191,11 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nSEE ( ? ) UCH\nCAL ( ? ) ILL",
           "options": [
-            "T",
+            "R",
             "N",
             "M",
             "S",
-            "R"
+            "T"
           ],
           "correct": 2,
           "explanation": "The letter M completes both pairs: SEEM + MUCH, and CALM + MILL. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
@@ -21220,12 +21220,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nSLA ( ? ) OLD\nCRI ( ? ) ACK",
           "options": [
             "T",
-            "B",
             "N",
+            "B",
             "S",
             "R"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The letter B completes both pairs: SLAB + BOLD, and CRIB + BACK. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -21235,8 +21235,8 @@ const vrData = {
           "options": [
             "T",
             "W",
-            "N",
             "S",
+            "N",
             "R"
           ],
           "correct": 1,
@@ -21261,13 +21261,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nSTE ( ? ) OLE\nWOR ( ? ) AST",
           "options": [
-            "M",
+            "R",
             "N",
             "T",
             "S",
-            "R"
+            "M"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The letter M completes both pairs: STEM + MOLE, and WORM + MAST. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -21276,10 +21276,10 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nTRI ( ? ) INE\nSLA ( ? ) ICK",
           "options": [
             "P",
-            "N",
+            "R",
             "T",
             "S",
-            "R"
+            "N"
           ],
           "correct": 0,
           "explanation": "The letter P completes both pairs: TRIP + PINE, and SLAP + PICK. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
@@ -21291,11 +21291,11 @@ const vrData = {
           "options": [
             "T",
             "N",
-            "R",
+            "L",
             "S",
-            "L"
+            "R"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "The letter L completes both pairs: PEEL + LIME, and FOOL + LIFT. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
         },
         {
@@ -21306,10 +21306,10 @@ const vrData = {
             "T",
             "D",
             "S",
-            "R",
-            "N"
+            "N",
+            "R"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "The letter N completes both pairs: PAIN + NINE, and BARN + NEST. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
         },
         {
@@ -21320,10 +21320,10 @@ const vrData = {
             "T",
             "N",
             "R",
-            "S",
-            "L"
+            "L",
+            "S"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "The letter L completes both pairs: GOAL + LAMP, and CURL + LIST. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
         },
         {
@@ -21331,9 +21331,9 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nSTE ( ? ) ACK\nGRI ( ? ) OND",
           "options": [
-            "T",
-            "N",
             "S",
+            "N",
+            "T",
             "P",
             "R"
           ],
@@ -21361,9 +21361,9 @@ const vrData = {
           "options": [
             "T",
             "R",
-            "N",
+            "D",
             "S",
-            "D"
+            "N"
           ],
           "correct": 1,
           "explanation": "The letter R completes both pairs: STIR + RULE, and FLOOR + REST. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
@@ -21374,9 +21374,9 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nPLU ( ? ) ING\nMIS ( ? ) AFE",
           "options": [
             "T",
-            "N",
-            "P",
             "R",
+            "P",
+            "N",
             "S"
           ],
           "correct": 4,
@@ -21390,8 +21390,8 @@ const vrData = {
             "T",
             "W",
             "N",
-            "S",
-            "R"
+            "R",
+            "S"
           ],
           "correct": 1,
           "explanation": "The letter W completes both pairs: DRAW + WEST, and FLOW + WORD. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
@@ -21415,13 +21415,13 @@ const vrData = {
           "difficulty": 2,
           "question": "Find the letter that completes both pairs of words:\n\nFLAS ( ? ) AND\nBUNC ( ? ) IRE",
           "options": [
-            "H",
             "N",
+            "H",
             "S",
             "T",
             "R"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The letter H completes both pairs: FLASH + HAND, and BUNCH + HIRE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
         },
         {
@@ -21446,8 +21446,8 @@ const vrData = {
             "T",
             "N",
             "P",
-            "S",
-            "R"
+            "R",
+            "S"
           ],
           "correct": 2,
           "explanation": "The letter P completes both pairs: STUMP + PEARL, and EQUIP + PATCH. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
@@ -21457,13 +21457,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nCLIM ( ? ) READ\nDISTUR ( ? ) LANK",
           "options": [
-            "T",
+            "B",
             "N",
             "R",
             "S",
-            "B"
+            "T"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "The letter B completes both pairs: CLIMB + BREAD, and DISTURB + BLANK. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
         },
         {
@@ -21471,13 +21471,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nPLASTE ( ? ) OBIN\nSHIVE ( ? ) EBEL",
           "options": [
-            "R",
             "N",
+            "R",
             "T",
             "S",
             "D"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "The letter R completes both pairs: PLASTER + ROBIN, and SHIVER + REBEL. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
@@ -21485,13 +21485,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nINSEC ( ? ) OTAL\nADOP ( ? ) RICK",
           "options": [
-            "S",
             "T",
+            "S",
             "N",
             "R",
             "D"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "The letter T completes both pairs: INSECT + TOTAL, and ADOPT + TRICK. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -21500,8 +21500,8 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nALAR ( ? ) USIC\nCHAR ( ? ) EDAL",
           "options": [
             "M",
-            "N",
             "T",
+            "N",
             "S",
             "R"
           ],
@@ -21529,9 +21529,9 @@ const vrData = {
           "options": [
             "T",
             "N",
-            "S",
+            "R",
             "H",
-            "R"
+            "S"
           ],
           "correct": 3,
           "explanation": "The letter H completes both pairs: FINISH + HEART, and PUNISH + HORSE. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
@@ -21541,10 +21541,10 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nENRIC ( ? ) ABIT\nSKETC ( ? ) APPY",
           "options": [
-            "T",
+            "S",
             "N",
             "H",
-            "S",
+            "T",
             "R"
           ],
           "correct": 2,
@@ -21556,10 +21556,10 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nPERSO ( ? ) OVEL\nDRAGO ( ? ) ERVE",
           "options": [
             "T",
-            "R",
+            "D",
             "S",
             "N",
-            "D"
+            "R"
           ],
           "correct": 3,
           "explanation": "The letter N completes both pairs: PERSON + NOVEL, and DRAGON + NERVE. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
@@ -21570,8 +21570,8 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nTABLE ( ? ) WIST\nPERMI ( ? ) OWER",
           "options": [
             "S",
-            "N",
             "D",
+            "N",
             "R",
             "T"
           ],
@@ -21585,8 +21585,8 @@ const vrData = {
           "options": [
             "T",
             "L",
-            "N",
             "S",
+            "N",
             "R"
           ],
           "correct": 1,
@@ -21611,8 +21611,8 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nWONDE ( ? ) OUND\nFINGE ( ? ) IVER",
           "options": [
-            "T",
             "N",
+            "T",
             "D",
             "S",
             "R"
@@ -21626,12 +21626,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nRAPI ( ? ) RESS\nSTUPI ( ? ) RAIN",
           "options": [
             "T",
-            "D",
+            "R",
             "S",
             "N",
-            "R"
+            "D"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "The letter D completes both pairs: RAPID + DRESS, and STUPID + DRAIN. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
         },
         {
@@ -21656,8 +21656,8 @@ const vrData = {
             "T",
             "S",
             "N",
-            "R",
-            "D"
+            "D",
+            "R"
           ],
           "correct": 2,
           "explanation": "The letter N completes both pairs: BUTTON + NURSE, and KITTEN + NORTH. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
@@ -21667,13 +21667,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nSCRIP ( ? ) ASTE\nACCEP ( ? ) RAIL",
           "options": [
-            "S",
+            "T",
             "N",
             "D",
             "R",
-            "T"
+            "S"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "The letter T completes both pairs: SCRIPT + TASTE, and ACCEPT + TRAIL. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -21681,13 +21681,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nMUSEU ( ? ) EDAL\nBOTTO ( ? ) ARCH",
           "options": [
-            "M",
-            "N",
             "T",
+            "N",
+            "M",
             "S",
             "R"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The letter M completes both pairs: MUSEUM + MEDAL, and BOTTOM + MARCH. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
         },
         {
@@ -21711,8 +21711,8 @@ const vrData = {
           "options": [
             "T",
             "R",
-            "N",
             "S",
+            "N",
             "D"
           ],
           "correct": 1,
@@ -21723,13 +21723,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nBLANKE ( ? ) WICE\nBASKE ( ? ) RUTH",
           "options": [
-            "S",
+            "T",
             "N",
             "R",
-            "T",
+            "S",
             "D"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "The letter T completes both pairs: BLANKET + TWICE, and BASKET + TRUTH. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
@@ -21737,13 +21737,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nCHANNE ( ? ) IVER\nPANE ( ? ) UNCH",
           "options": [
-            "L",
+            "R",
             "N",
             "T",
             "S",
-            "R"
+            "L"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "The letter L completes both pairs: CHANNEL + LIVER, and PANEL + LUNCH. Tip: Both pairs must work with the SAME letter — finding one pair is not enough! ✓"
         },
         {
@@ -21766,9 +21766,9 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nDIREC ( ? ) RUST\nEXPEC ( ? ) ABLE",
           "options": [
             "T",
-            "N",
-            "S",
             "R",
+            "S",
+            "N",
             "D"
           ],
           "correct": 0,
@@ -21781,11 +21781,11 @@ const vrData = {
           "options": [
             "T",
             "N",
-            "S",
             "L",
+            "S",
             "R"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "The letter L completes both pairs: SYMBOL + LATER, and TRAVEL + LEARN. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -21794,12 +21794,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nRANDO ( ? ) OTOR\nPHANTO ( ? ) INT",
           "options": [
             "T",
-            "N",
-            "S",
             "M",
+            "S",
+            "N",
             "R"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "The letter M completes both pairs: RANDOM + MOTOR, and PHANTOM + MINT. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"
         },
         {
@@ -21807,11 +21807,11 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nMETHO ( ? ) ANCE\nLIZAR ( ? ) UST",
           "options": [
-            "T",
+            "R",
             "D",
             "S",
             "N",
-            "R"
+            "T"
           ],
           "correct": 1,
           "explanation": "The letter D completes both pairs: METHOD + DANCE, and LIZARD + DUST. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
@@ -21821,13 +21821,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nELASTI ( ? ) LOUD\nFABRI ( ? ) RANE",
           "options": [
-            "C",
-            "T",
             "S",
+            "T",
+            "C",
             "N",
             "R"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The letter C completes both pairs: ELASTIC + CLOUD, and FABRIC + CRANE. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
@@ -21836,12 +21836,12 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nCHISE ( ? ) OGIC\nREBE ( ? ) OWER",
           "options": [
             "T",
-            "N",
             "L",
+            "N",
             "S",
             "R"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "The letter L completes both pairs: CHISEL + LOGIC, and REBEL + LOWER. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
@@ -21864,9 +21864,9 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nKITCHE ( ? ) EVER\nBROKE ( ? ) INTH",
           "options": [
             "T",
-            "S",
-            "N",
             "R",
+            "N",
+            "S",
             "D"
           ],
           "correct": 2,
@@ -21877,11 +21877,11 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nCHAPTE ( ? ) IFLE\nMONSTE ( ? ) IDGE",
           "options": [
-            "T",
+            "D",
             "R",
             "N",
             "S",
-            "D"
+            "T"
           ],
           "correct": 1,
           "explanation": "The letter R completes both pairs: CHAPTER + RIFLE, and MONSTER + RIDGE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
@@ -21891,13 +21891,13 @@ const vrData = {
           "difficulty": 3,
           "question": "Find the letter that completes both pairs of words:\n\nNEGLEC ( ? ) EETH\nIMPAC ( ? ) ORCH",
           "options": [
-            "T",
-            "S",
             "N",
+            "S",
+            "T",
             "R",
             "D"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "The letter T completes both pairs: NEGLECT + TEETH, and IMPACT + TORCH. Tip: Always check ALL FOUR words before committing — a letter that works for one pair might fail on the other. ✓"
         },
         {
@@ -21906,10 +21906,10 @@ const vrData = {
           "question": "Find the letter that completes both pairs of words:\n\nMAJESTI ( ? ) AMEL\nCLASSI ( ? ) ATCH",
           "options": [
             "T",
-            "S",
+            "R",
             "C",
             "N",
-            "R"
+            "S"
           ],
           "correct": 2,
           "explanation": "The letter C completes both pairs: MAJESTIC + CAMEL, and CLASSIC + CATCH. Tip: Common answer letters are T, S, N, R — try these first if you are stuck. ✓"

@@ -981,13 +981,13 @@ export const volumeSubConcepts = [
   // SUB-CONCEPT 4: Volume to Capacity (cm³ ↔ ml ↔ litres)
   // ==========================================
   {
-    id: "volume-to-capacity (how much a container can hold)",
+    id: "volume-to-capacity",
     name: "Converting cm³, ml, and litres",
     category: "supporting",
     lessons: [
       // ---- Lesson A: Key Fact ----
       {
-        id: "volume-to-capacity (how much a container can hold)-keyfact",
+        id: "volume-to-capacity-keyfact",
         templateType: "key-fact",
         learningGoal: [
           "How to convert between cm³, ml, and litres",
@@ -1112,7 +1112,7 @@ export const volumeSubConcepts = [
 
       // ---- Lesson B: Spot the Mistake ----
       {
-        id: "volume-to-capacity (how much a container can hold)-mistake",
+        id: "volume-to-capacity-mistake",
         templateType: "spot-the-mistake",
         learningGoal: [
           "How to spot the ÷ 100 vs ÷ 1000 mistake",
