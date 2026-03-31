@@ -2796,3291 +2796,4806 @@ const vrData = {
     verbalAnalogies: {
       name: "Verbal Analogies",
       questions: [
-              {
-                      id: 1,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to brush as writer is to ___",
-                      setA: [
-                              "painter",
-                              "cleaner",
-                              "artist"
-                      ],
-                      setB: [
-                              "book",
-                              "pen",
-                              "paper"
-                      ],
-                      correctPair: [
-                              0,
-                              1
-                      ],
-                      explanation: "A painter uses a brush, just as a writer uses a pen. Both are tools of their craft. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 2,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to hand as helmet is to ___",
-                      setA: [
-                              "ring",
-                              "glove",
-                              "watch"
-                      ],
-                      setB: [
-                              "head",
-                              "bike",
-                              "safety"
-                      ],
-                      correctPair: [
-                              1,
-                              0
-                      ],
-                      explanation: "A glove covers and protects a hand, just as a helmet covers and protects a head. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 3,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to bear as cygnet is to ___",
-                      setA: [
-                              "cub",
-                              "den",
-                              "fur"
-                      ],
-                      setB: [
-                              "lake",
-                              "feather",
-                              "swan"
-                      ],
-                      correctPair: [
-                              0,
-                              2
-                      ],
-                      explanation: "A cub is a young bear, just as a cygnet is a young swan. Both are baby animals. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 4,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to patient as teacher is to ___",
-                      setA: [
-                              "nurse",
-                              "doctor",
-                              "hospital"
-                      ],
-                      setB: [
-                              "school",
-                              "pupil",
-                              "lesson"
-                      ],
-                      correctPair: [
-                              1,
-                              1
-                      ],
-                      explanation: "A doctor looks after a patient, just as a teacher looks after a pupil. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 5,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to foot as finger is to ___",
-                      setA: [
-                              "shoe",
-                              "toe",
-                              "ankle"
-                      ],
-                      setB: [
-                              "ring",
-                              "nail",
-                              "hand"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "A toe is part of a foot, just as a finger is part of a hand. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 6,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to book as verse is to ___",
-                      setA: [
-                              "page",
-                              "chapter",
-                              "cover"
-                      ],
-                      setB: [
-                              "rhyme",
-                              "poem",
-                              "song"
-                      ],
-                      correctPair: [
-                              1,
-                              1
-                      ],
-                      explanation: "A chapter is a section of a book, just as a verse is a section of a poem. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 7,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to cat as hoof is to ___",
-                      setA: [
-                              "claw",
-                              "paw",
-                              "whisker"
-                      ],
-                      setB: [
-                              "stable",
-                              "horse",
-                              "saddle"
-                      ],
-                      correctPair: [
-                              1,
-                              1
-                      ],
-                      explanation: "A paw belongs to a cat, just as a hoof belongs to a horse. Both are feet of animals. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 8,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to car as wing is to ___",
-                      setA: [
-                              "wheel",
-                              "door",
-                              "engine"
-                      ],
-                      setB: [
-                              "sky",
-                              "bird",
-                              "feather"
-                      ],
-                      correctPair: [
-                              0,
-                              1
-                      ],
-                      explanation: "A wheel helps a car move, just as a wing helps a bird fly. Both enable movement. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 9,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to sheep as pack is to ___",
-                      setA: [
-                              'lamb',
-                              "flock",
-                              "field"
-                      ],
-                      setB: [
-                              "wolves",
-                              "bag",
-                              "cards"
-                      ],
-                      correctPair: [
-                              1,
-                              0
-                      ],
-                      explanation: "A flock is the collective noun for sheep, just as a pack is the collective noun for wolves. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 10,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to tired as shiver is to ___",
-                      setA: [
-                              "sleep",
-                              "yawn",
-                              "stretch"
-                      ],
-                      setB: [
-                              "cold",
-                              "shake",
-                              "winter"
-                      ],
-                      correctPair: [
-                              1,
-                              0
-                      ],
-                      explanation: "You yawn when you are tired, just as you shiver when you are cold. Both are involuntary reactions. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 11,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to orchestra as captain is to ___",
-                      setA: [
-                              "musician",
-                              "conductor",
-                              "violin"
-                      ],
-                      setB: [
-                              "team",
-                              "ship",
-                              "army"
-                      ],
-                      correctPair: [
-                              1,
-                              0
-                      ],
-                      explanation: "A conductor leads an orchestra, just as a captain leads a team. Both are leaders of a group. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 12,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to dog as meow is to ___",
-                      setA: [
-                              "bark",
-                              "bone",
-                              "lead"
-                      ],
-                      setB: [
-                              "kitten",
-                              "cat",
-                              "mouse"
-                      ],
-                      correctPair: [
-                              0,
-                              1
-                      ],
-                      explanation: "Bark is the sound a dog makes, just as meow is the sound a cat makes. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 13,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to ink as brush is to ___",
-                      setA: [
-                              "pen",
-                              "bottle",
-                              "stain"
-                      ],
-                      setB: [
-                              "hair",
-                              "paint",
-                              "canvas"
-                      ],
-                      correctPair: [
-                              0,
-                              1
-                      ],
-                      explanation: "A pen uses ink to write, just as a brush uses paint to create art. Both are tools paired with their medium. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 14,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to pen as canvas is to ___",
-                      setA: [
-                              "paper",
-                              "pencil",
-                              "book"
-                      ],
-                      setB: [
-                              "brush",
-                              "frame",
-                              "easel"
-                      ],
-                      correctPair: [
-                              0,
-                              0
-                      ],
-                      explanation: "You write on paper with a pen, just as you paint on canvas with a brush. Both pairs link a surface to the tool used on it. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 15,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to uncle as niece is to ___",
-                      setA: [
-                              "nephew",
-                              "son",
-                              "brother"
-                      ],
-                      setB: [
-                              "aunt",
-                              "mother",
-                              "sister"
-                      ],
-                      correctPair: [
-                              0,
-                              0
-                      ],
-                      explanation: "A nephew is the male relation to an uncle, just as a niece is the female relation to an aunt. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 16,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to bird as fin is to ___",
-                      setA: [
-                              "nest",
-                              "wing",
-                              "beak"
-                      ],
-                      setB: [
-                              "sea",
-                              "fish",
-                              "scale"
-                      ],
-                      correctPair: [
-                              1,
-                              1
-                      ],
-                      explanation: "A wing helps a bird move through the air, just as a fin helps a fish move through water. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 17,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to morning as supper is to ___",
-                      setA: [
-                              "breakfast",
-                              "lunch",
-                              "dawn"
-                      ],
-                      setB: [
-                              "evening",
-                              "night",
-                              "dusk"
-                      ],
-                      correctPair: [
-                              0,
-                              0
-                      ],
-                      explanation: "Breakfast is the meal eaten in the morning, just as supper is the meal eaten in the evening. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 18,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to sheep as kennel is to ___",
-                      setA: [
-                              "wool",
-                              "pen",
-                              "field"
-                      ],
-                      setB: [
-                              "dog",
-                              "bone",
-                              "lead"
-                      ],
-                      correctPair: [
-                              1,
-                              0
-                      ],
-                      explanation: "A pen is an enclosure for sheep, just as a kennel is a shelter for a dog. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 19,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to grape as tree is to ___",
-                      setA: [
-                              "vine",
-                              "wine",
-                              "fruit"
-                      ],
-                      setB: [
-                              "leaf",
-                              "apple",
-                              "wood"
-                      ],
-                      correctPair: [
-                              0,
-                              1
-                      ],
-                      explanation: "A grape grows on a vine, just as an apple grows on a tree. Both are fruits and where they grow. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 20,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to flour as cow is to ___",
-                      setA: [
-                              "bread",
-                              "wheat",
-                              "baker"
-                      ],
-                      setB: [
-                              "milk",
-                              "beef",
-                              "farm"
-                      ],
-                      correctPair: [
-                              1,
-                              0
-                      ],
-                      explanation: "Wheat is processed to produce flour, just as a cow produces milk. Both are raw sources of a product. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              }
-      ,
-              {
-                      id: 21,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to tall as light is to ___",
-                      setA: ["short","height","big"],
-                      setB: ["lamp","heavy","bright"],
-                      correctPair: [0,1],
-                      explanation: "Short is the opposite of tall, and light is the opposite of heavy. Both are antonym pairs describing contrasting qualities. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 22,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to fast as quiet is to ___",
-                      setA: ["slow","speed","quick"],
-                      setB: ["loud","soft","silent"],
-                      correctPair: [0,0],
-                      explanation: "Slow is the opposite of fast, and quiet is the opposite of loud. Both are antonym pairs. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 23,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to hard as smooth is to ___",
-                      setA: ["rock","soft","tough"],
-                      setB: ["rough","silk","flat"],
-                      correctPair: [1,0],
-                      explanation: "Soft is the opposite of hard, and smooth is the opposite of rough. Both are antonym pairs about texture. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 24,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to narrow as tall is to ___",
-                      setA: ["wide","thin","long"],
-                      setB: ["high","short","big"],
-                      correctPair: [0,1],
-                      explanation: "Wide is the opposite of narrow, and tall is the opposite of short. Both are antonym pairs describing size. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 25,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to polite as brave is to ___",
-                      setA: ["kind","gentle","rude"],
-                      setB: ["cowardly","strong","hero"],
-                      correctPair: [2,0],
-                      explanation: "Rude is the opposite of polite, and brave is the opposite of cowardly. Both are antonym pairs about behaviour. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 26,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to ancient as shallow is to ___",
-                      setA: ["old","ruin","modern"],
-                      setB: ["deep","water","puddle"],
-                      correctPair: [2,0],
-                      explanation: "Modern is the opposite of ancient, and shallow is the opposite of deep. Both are antonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 27,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to generous as honest is to ___",
-                      setA: ["greedy","kind","selfish"],
-                      setB: ["truth","deceitful","fair"],
-                      correctPair: [2,1],
-                      explanation: "Selfish is the opposite of generous, and honest is the opposite of deceitful. Both are antonym pairs about character. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 28,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to temporary as rigid is to ___",
-                      setA: ["brief","permanent","lasting"],
-                      setB: ["flexible","stiff","firm"],
-                      correctPair: [1,0],
-                      explanation: "Permanent is the opposite of temporary, and rigid is the opposite of flexible. Both are antonym pairs. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 29,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to abundant as visible is to ___",
-                      setA: ["plenty","scarce","rich"],
-                      setB: ["clear","hidden","bright"],
-                      correctPair: [1,1],
-                      explanation: "Scarce is the opposite of abundant, and visible is the opposite of hidden. Both are antonym pairs. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 30,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to timid as cautious is to ___",
-                      setA: ["shy","bold","nervous"],
-                      setB: ["reckless","careful","safe"],
-                      correctPair: [1,0],
-                      explanation: "Bold is the opposite of timid, and cautious is the opposite of reckless. Both are antonym pairs about confidence. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 31,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to innocent as artificial is to ___",
-                      setA: ["pure","guilty","young"],
-                      setB: ["plastic","genuine","fake"],
-                      correctPair: [1,1],
-                      explanation: "Guilty is the opposite of innocent, and artificial is the opposite of genuine. Both are antonym pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 32,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to empty as open is to ___",
-                      setA: ["full","bottle","hollow"],
-                      setB: ["door","shut","wide"],
-                      correctPair: [0,1],
-                      explanation: "Full is the opposite of empty, and open is the opposite of shut. Both are antonym pairs. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 33,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to hand as toe is to ___",
-                      setA: ["finger","glove","wrist"],
-                      setB: ["shoe","foot","sock"],
-                      correctPair: [0,1],
-                      explanation: "A finger is part of a hand, just as a toe is part of a foot. Both are part-to-whole relationships. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 34,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to tree as petal is to ___",
-                      setA: ["forest","leaf","bark"],
-                      setB: ["garden","flower","stem"],
-                      correctPair: [1,1],
-                      explanation: "A leaf is part of a tree, just as a petal is part of a flower. Both are parts of plants. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 35,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to clock as key is to ___",
-                      setA: ["time","hand","tick"],
-                      setB: ["lock","door","metal"],
-                      correctPair: [1,0],
-                      explanation: "A hand is part of a clock, just as a key is part of a lock. Both are essential components. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 36,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to car as mast is to ___",
-                      setA: ["bonnet","road","driver"],
-                      setB: ["flag","boat","sail"],
-                      correctPair: [0,1],
-                      explanation: "A bonnet is part of a car, just as a mast is part of a boat. Both are structural parts of vehicles. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 37,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to guitar as key is to ___",
-                      setA: ["music","string","player"],
-                      setB: ["piano","lock","note"],
-                      correctPair: [1,0],
-                      explanation: "A string is part of a guitar, just as a key is part of a piano. Both are parts of musical instruments. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 38,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to face as elbow is to ___",
-                      setA: ["smile","nose","head"],
-                      setB: ["arm","bend","joint"],
-                      correctPair: [1,0],
-                      explanation: "A nose is part of a face, just as an elbow is part of an arm. Both are part-to-whole relationships of the body. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 39,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to sentence as brick is to ___",
-                      setA: ["word","full stop","paragraph"],
-                      setB: ["cement","house","wall"],
-                      correctPair: [0,2],
-                      explanation: "A word is part of a sentence, just as a brick is part of a wall. Both are small units making up a larger whole. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 40,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to skeleton as stitch is to ___",
-                      setA: ["bone","body","skull"],
-                      setB: ["needle","fabric","thread"],
-                      correctPair: [0,1],
-                      explanation: "A bone is part of a skeleton, just as a stitch is part of a fabric. Both are individual units forming a larger structure. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 41,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to archipelago as scene is to ___",
-                      setA: ["ocean","island","beach"],
-                      setB: ["actor","play","stage"],
-                      correctPair: [1,1],
-                      explanation: "An island is part of an archipelago, just as a scene is part of a play. Both are individual elements within a larger whole. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 42,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to chain as carriage is to ___",
-                      setA: ["metal","fence","link"],
-                      setB: ["horse","wheel","train"],
-                      correctPair: [2,2],
-                      explanation: "A link is part of a chain, just as a carriage is part of a train. Both are individual units in a connected series. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 43,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to fruit as carrot is to ___",
-                      setA: ["tree","apple","juice"],
-                      setB: ["orange","vegetable","garden"],
-                      correctPair: [1,1],
-                      explanation: "An apple is a type of fruit, just as a carrot is a type of vegetable. Both are category relationships. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 44,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to colour as violin is to ___",
-                      setA: ["paint","red","rainbow"],
-                      setB: ["instrument","music","bow"],
-                      correctPair: [1,0],
-                      explanation: "Red is a type of colour, just as a violin is a type of instrument. Both belong to a wider category. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 45,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to bird as trout is to ___",
-                      setA: ["nest","feather","robin"],
-                      setB: ["fish","river","scale"],
-                      correctPair: [2,0],
-                      explanation: "A robin is a type of bird, just as a trout is a type of fish. Both are specific examples of an animal group. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 46,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to planet as Thames is to ___",
-                      setA: ["star","Mars","space"],
-                      setB: ["river","London","bridge"],
-                      correctPair: [1,0],
-                      explanation: "Mars is a type of planet, just as the Thames is a type of river. Both are specific examples of a category. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 47,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to metal as oak is to ___",
-                      setA: ["iron","strong","mine"],
-                      setB: ["leaf","acorn","wood"],
-                      correctPair: [0,2],
-                      explanation: "Iron is a type of metal, just as oak is a type of wood. Both are specific materials within a broader group. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 48,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to shape as emerald is to ___",
-                      setA: ["circle","triangle","square"],
-                      setB: ["ring","gemstone","green"],
-                      correctPair: [1,1],
-                      explanation: "A triangle is a type of shape, just as an emerald is a type of gemstone. Both are specific examples of a category. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 49,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to furniture as daisy is to ___",
-                      setA: ["room","table","wood"],
-                      setB: ["garden","petal","flower"],
-                      correctPair: [1,2],
-                      explanation: "A table is a type of furniture, just as a daisy is a type of flower. Both are examples belonging to a wider group. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 50,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to reptile as eagle is to ___",
-                      setA: ["cold","snake","scales"],
-                      setB: ["sky","feather","raptor"],
-                      correctPair: [1,2],
-                      explanation: "A snake is a type of reptile, just as an eagle is a type of raptor (bird of prey). Both are category relationships. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 51,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to cereal as spinach is to ___",
-                      setA: ["wheat","breakfast","bowl"],
-                      setB: ["green","salad","leafy vegetable"],
-                      correctPair: [0,2],
-                      explanation: "Wheat is a type of cereal crop, just as spinach is a type of leafy vegetable. Both are specific examples of food groups. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 52,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to dwelling as sonnet is to ___",
-                      setA: ["roof","family","cottage"],
-                      setB: ["rhyme","Shakespeare","poem"],
-                      correctPair: [2,2],
-                      explanation: "A cottage is a type of dwelling, just as a sonnet is a type of poem. Both are specific forms within a broader category. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 53,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to write as spoon is to ___",
-                      setA: ["paper","letter","pencil"],
-                      setB: ["soup","bowl","eat"],
-                      correctPair: [2,2],
-                      explanation: "A pencil is used to write, just as a spoon is used to eat. Both are tools paired with their purpose. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 54,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to see as ear is to ___",
-                      setA: ["glasses","look","eye"],
-                      setB: ["sound","hear","music"],
-                      correctPair: [2,1],
-                      explanation: "An eye is used to see, just as an ear is used to hear. Both are sense organs paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 55,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to rain as coat is to ___",
-                      setA: ["cloud","umbrella","puddle"],
-                      setB: ["cold","wool","button"],
-                      correctPair: [1,0],
-                      explanation: "An umbrella protects you from rain, just as a coat protects you from cold. Both have a protective purpose. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 56,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to measure as telescope is to ___",
-                      setA: ["length","maths","ruler"],
-                      setB: ["star","magnify","lens"],
-                      correctPair: [2,1],
-                      explanation: "A ruler is used to measure, just as a telescope is used to magnify. Both are instruments paired with their function. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 57,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to warm as fan is to ___",
-                      setA: ["fire","blanket","radiator"],
-                      setB: ["cool","blade","air"],
-                      correctPair: [2,0],
-                      explanation: "A radiator is used to warm, just as a fan is used to cool. Both are appliances with opposite temperature functions. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 58,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to dig as net is to ___",
-                      setA: ["spade","soil","garden"],
-                      setB: ["fish","catch","rope"],
-                      correctPair: [0,1],
-                      explanation: "A spade is used to dig, just as a net is used to catch. Both are tools paired with their action. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 59,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to lock as anchor is to ___",
-                      setA: ["key","door","safe"],
-                      setB: ["hold","ship","chain"],
-                      correctPair: [0,0],
-                      explanation: "A key operates a lock, just as an anchor holds a ship in place. Both serve a securing function. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 60,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to preserve as filter is to ___",
-                      setA: ["jar","fridge","salt"],
-                      setB: ["purify","screen","water"],
-                      correctPair: [2,0],
-                      explanation: "Salt is used to preserve food, just as a filter is used to purify water. Both serve a processing function. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 61,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to navigate as compass is to ___",
-                      setA: ["map","road","journey"],
-                      setB: ["direction","north","needle"],
-                      correctPair: [0,0],
-                      explanation: "A map is used to navigate, just as a compass is used to find direction. Both are navigation tools paired with their purpose. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 62,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to illuminate as microscope is to ___",
-                      setA: ["candle","lantern","torch"],
-                      setB: ["scientist","lens","enlarge"],
-                      correctPair: [2,2],
-                      explanation: "A torch is used to illuminate, just as a microscope is used to enlarge. Both are devices paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 63,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to boiling as cool is to ___",
-                      setA: ["warm","water","steam"],
-                      setB: ["ice","freezing","cold"],
-                      correctPair: [0,1],
-                      explanation: "Warm is a mild form and boiling is an extreme form of heat, just as cool is mild and freezing is an extreme form of cold. Both show degree of intensity. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 64,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to shout as tap is to ___",
-                      setA: ["whisper","talk","voice"],
-                      setB: ["thump","knock","door"],
-                      correctPair: [0,0],
-                      explanation: "A whisper is quiet and a shout is loud, just as a tap is gentle and a thump is forceful. Both show increasing intensity. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 65,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to furious as pleased is to ___",
-                      setA: ["angry","annoyed","cross"],
-                      setB: ["delighted","happy","content"],
-                      correctPair: [1,0],
-                      explanation: "Annoyed is a mild form of anger and furious is the extreme, just as pleased is mild satisfaction and delighted is the extreme. Both show increasing intensity. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 66,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to starving as tired is to ___",
-                      setA: ["peckish","hungry","food"],
-                      setB: ["exhausted","sleep","yawn"],
-                      correctPair: [1,0],
-                      explanation: "Hungry is moderate and starving is extreme, just as tired is moderate and exhausted is extreme. Both show increasing intensity. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 67,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to downpour as breeze is to ___",
-                      setA: ["rain","drizzle","cloud"],
-                      setB: ["wind","air","gale"],
-                      correctPair: [1,2],
-                      explanation: "A drizzle is light rain and a downpour is heavy rain, just as a breeze is a light wind and a gale is a strong wind. Both show degree of intensity. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 68,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to terrified as dislike is to ___",
-                      setA: ["scared","nervous","worried"],
-                      setB: ["hate","loathe","detest"],
-                      correctPair: [1,0],
-                      explanation: "Nervous is a mild form of fear and terrified is the extreme, just as dislike is mild and hate is the extreme. Both show increasing intensity of feeling. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 69,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to ancient as damp is to ___",
-                      setA: ["old","new","aged"],
-                      setB: ["wet","soaked","moist"],
-                      correctPair: [0,1],
-                      explanation: "Old is a mild form and ancient is extreme in terms of age, just as damp is mild and soaked is extreme in terms of wetness. Both show increasing degree. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 70,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to blizzard as nibble is to ___",
-                      setA: ["snow","frost","flurry"],
-                      setB: ["chew","bite","devour"],
-                      correctPair: [2,2],
-                      explanation: "A flurry is a light snowfall and a blizzard is an extreme one, just as a nibble is a small bite and devour means to eat ravenously. Both show increasing intensity. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 71,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to oven as gardener is to ___",
-                      setA: ["food","kitchen","chef"],
-                      setB: ["plant","spade","lawn"],
-                      correctPair: [2,1],
-                      explanation: "A chef uses an oven, just as a gardener uses a spade. Both are workers paired with their tools. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 72,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to camera as surgeon is to ___",
-                      setA: ["film","photographer","picture"],
-                      setB: ["scalpel","hospital","patient"],
-                      correctPair: [1,0],
-                      explanation: "A photographer uses a camera, just as a surgeon uses a scalpel. Both are professionals paired with their tools. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 73,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to chisel as farmer is to ___",
-                      setA: ["stone","art","sculptor"],
-                      setB: ["field","crop","plough"],
-                      correctPair: [2,2],
-                      explanation: "A sculptor uses a chisel, just as a farmer uses a plough. Both are workers paired with their essential tools. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 74,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to microscope as electrician is to ___",
-                      setA: ["scientist","lab","experiment"],
-                      setB: ["wire","light","multimeter"],
-                      correctPair: [0,2],
-                      explanation: "A scientist uses a microscope, just as an electrician uses a multimeter. Both are professionals paired with their specialist tools. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 75,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to stethoscope as archaeologist is to ___",
-                      setA: ["nurse","doctor","hospital"],
-                      setB: ["trowel","museum","bones"],
-                      correctPair: [1,0],
-                      explanation: "A doctor uses a stethoscope, just as an archaeologist uses a trowel. Both are professionals paired with their diagnostic or discovery tools. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 76,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to baton as astronomer is to ___",
-                      setA: ["police","relay","conductor"],
-                      setB: ["planet","telescope","star"],
-                      correctPair: [2,1],
-                      explanation: "A conductor uses a baton, just as an astronomer uses a telescope. Both are professionals paired with their key tools. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 77,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to dog as chick is to ___",
-                      setA: ["bone","puppy","kennel"],
-                      setB: ["egg","nest","hen"],
-                      correctPair: [1,2],
-                      explanation: "A puppy is a young dog, just as a chick is a young hen. Both are baby-to-adult animal pairs. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 78,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to cow as lamb is to ___",
-                      setA: ["milk","calf","bull"],
-                      setB: ["sheep","wool","field"],
-                      correctPair: [1,0],
-                      explanation: "A calf is a young cow, just as a lamb is a young sheep. Both are baby-to-adult animal pairs. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 79,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to horse as gosling is to ___",
-                      setA: ["foal","stable","pony"],
-                      setB: ["pond","goose","feather"],
-                      correctPair: [0,1],
-                      explanation: "A foal is a young horse, just as a gosling is a young goose. Both are baby-to-adult animal pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 80,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to frog as caterpillar is to ___",
-                      setA: ["tadpole","pond","lily"],
-                      setB: ["leaf","cocoon","butterfly"],
-                      correctPair: [0,2],
-                      explanation: "A tadpole grows into a frog, just as a caterpillar grows into a butterfly. Both are young-to-adult pairs that undergo transformation. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 81,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to deer as joey is to ___",
-                      setA: ["antler","fawn","forest"],
-                      setB: ["kangaroo","pouch","Australia"],
-                      correctPair: [1,0],
-                      explanation: "A fawn is a young deer, just as a joey is a young kangaroo. Both are baby-to-adult animal pairs. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 82,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to owl as elver is to ___",
-                      setA: ["owlet","hoot","talon"],
-                      setB: ["river","eel","slippery"],
-                      correctPair: [0,1],
-                      explanation: "An owlet is a young owl, just as an elver is a young eel. Both are baby-to-adult animal pairs with unusual names. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 83,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to bread as wool is to ___",
-                      setA: ["baker","oven","flour"],
-                      setB: ["sheep","jumper","knit"],
-                      correctPair: [2,1],
-                      explanation: "Flour is used to make bread, just as wool is used to make a jumper. Both are materials paired with their products. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 84,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to paper as sand is to ___",
-                      setA: ["pen","wood","book"],
-                      setB: ["beach","castle","glass"],
-                      correctPair: [1,2],
-                      explanation: "Wood pulp is used to make paper, just as sand is used to make glass. Both are raw materials paired with their products. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 85,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to cheese as grape is to ___",
-                      setA: ["mouse","slice","milk"],
-                      setB: ["vine","fruit","wine"],
-                      correctPair: [2,2],
-                      explanation: "Milk is used to make cheese, just as a grape is used to make wine. Both are raw ingredients paired with their products. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 86,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to pottery as ore is to ___",
-                      setA: ["wheel","kiln","clay"],
-                      setB: ["metal","mine","rock"],
-                      correctPair: [2,0],
-                      explanation: "Clay is shaped to make pottery, just as ore is smelted to produce metal. Both are raw materials paired with their refined products. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 87,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to linen as rubber is to ___",
-                      setA: ["cloth","weave","flax"],
-                      setB: ["bounce","latex","tyre"],
-                      correctPair: [2,2],
-                      explanation: "Flax is the plant used to make linen, just as rubber is made into tyres. Both are material-to-product relationships. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 88,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to learn as kitchen is to ___",
-                      setA: ["school","teacher","book"],
-                      setB: ["knife","food","cook"],
-                      correctPair: [0,2],
-                      explanation: "You go to school to learn, just as you go to the kitchen to cook. Both are places paired with their main activity. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 89,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to swim as pitch is to ___",
-                      setA: ["towel","pool","water"],
-                      setB: ["football","grass","play"],
-                      correctPair: [1,2],
-                      explanation: "A pool is where you swim, just as a pitch is where you play. Both are places paired with their activities. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 90,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to worship as court is to ___",
-                      setA: ["church","prayer","hymn"],
-                      setB: ["judge","trial","law"],
-                      correctPair: [0,1],
-                      explanation: "A church is a place of worship, just as a court is a place of trial. Both are buildings paired with their main purpose. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 91,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to act as studio is to ___",
-                      setA: ["stage","audience","theatre"],
-                      setB: ["music","record","artist"],
-                      correctPair: [2,1],
-                      explanation: "A theatre is where you act, just as a studio is where you record. Both are places paired with their creative activities. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 92,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to experiment as observatory is to ___",
-                      setA: ["scientist","beaker","laboratory"],
-                      setB: ["telescope","observe","planet"],
-                      correctPair: [2,1],
-                      explanation: "A laboratory is where you experiment, just as an observatory is where you observe. Both are specialist places paired with their activities. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              },
-              {
-                      id: 93,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to flood as wind is to ___",
-                      setA: ["rain","river","dam"],
-                      setB: ["kite","gale","storm"],
-                      correctPair: [0,2],
-                      explanation: "Heavy rain causes a flood, just as strong wind causes a storm. Both are cause-and-effect pairs in weather. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-              },
-              {
-                      id: 94,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to ash as exercise is to ___",
-                      setA: ["volcano","fire","smoke"],
-                      setB: ["muscle","sweat","gym"],
-                      correctPair: [1,1],
-                      explanation: "Fire produces ash, just as exercise produces sweat. Both are cause-and-effect relationships. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-              },
-              {
-                      id: 95,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to echo as sun is to ___",
-                      setA: ["cave","noise","shout"],
-                      setB: ["heat","shadow","light"],
-                      correctPair: [2,1],
-                      explanation: "A shout causes an echo, just as the sun causes a shadow (when it shines on an object). Both are cause-and-effect pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-              },
-              {
-                      id: 96,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to rust as neglect is to ___",
-                      setA: ["iron","rain","moisture"],
-                      setB: ["garden","decay","weeds"],
-                      correctPair: [2,1],
-                      explanation: "Moisture causes rust on metal, just as neglect causes decay. Both are cause-and-effect relationships showing deterioration. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-              },
-              {
-                      id: 97,
-                      difficulty: 1,
-                      questionType: "pick-from-sets",
-                      question: "___ is to leap as quick is to ___",
-                      setA: ["jump","frog","high"],
-                      setB: ["rapid","slow","race"],
-                      correctPair: [0,0],
-                      explanation: "Jump and leap mean the same thing, just as quick and rapid mean the same thing. Both are synonym pairs. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-              },
-              {
-                      id: 98,
-                      difficulty: 2,
-                      questionType: "pick-from-sets",
-                      question: "___ is to snatch as mend is to ___",
-                      setA: ["thief","steal","grab"],
-                      setB: ["fix","broken","repair"],
-                      correctPair: [2,2],
-                      explanation: "Grab and snatch both mean to seize quickly, just as mend and repair both mean to fix something. Both are synonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-              },
-              {
-                      id: 99,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to cunning as weary is to ___",
-                      setA: ["fox","clever","sly"],
-                      setB: ["tired","sleepy","fatigued"],
-                      correctPair: [2,2],
-                      explanation: "Sly and cunning both mean crafty or devious, just as weary and fatigued both mean very tired. Both are synonym pairs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-              },
-              {
-                      id: 100,
-                      difficulty: 3,
-                      questionType: "pick-from-sets",
-                      question: "___ is to ample as feeble is to ___",
-                      setA: ["sufficient","plenty","plentiful"],
-                      setB: ["frail","small","weak"],
-                      correctPair: [2,2],
-                      explanation: "Plentiful and ample both mean more than enough, just as feeble and weak both mean lacking strength. Both are synonym pairs. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-              }
-      ,
-        {
-          "id": 101,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to fur as bird is to ___",
-          "setA": [
-            "cat",
-            "brush",
-            "warm"
-          ],
-          "setB": [
-            "nest",
-            "feathers",
-            "sky"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "A cat is covered in fur, just as a bird is covered in feathers. Both are body coverings of animals. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-        },
-        {
-          "id": 102,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to eye as hearing is to ___",
-          "setA": [
-            "sight",
-            "glasses",
-            "colour"
-          ],
-          "setB": [
-            "ear",
-            "sound",
-            "music"
-          ],
-          "correctPair": [
-            0,
-            0
-          ],
-          "explanation": "Sight is the sense that uses the eye, just as hearing is the sense that uses the ear. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-        },
-        {
-          "id": 103,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to cow as lamb is to ___",
-          "setA": [
-            "milk",
-            "calf",
-            "barn"
-          ],
-          "setB": [
-            "sheep",
-            "wool",
-            "field"
-          ],
-          "correctPair": [
-            1,
-            0
-          ],
-          "explanation": "A calf is a young cow, just as a lamb is a young sheep. The relationship is baby animal to adult animal. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-        },
-        {
-          "id": 104,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to breakfast as dinner is to ___",
-          "setA": [
-            "cereal",
-            "morning",
-            "toast"
-          ],
-          "setB": [
-            "plate",
-            "food",
-            "evening"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "Morning is the time for breakfast, just as evening is the time for dinner. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-        },
-        {
-          "id": 105,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to book as actor is to ___",
-          "setA": [
-            "author",
-            "reader",
-            "library"
-          ],
-          "setB": [
-            "stage",
-            "film",
-            "costume"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "An author creates a book, just as an actor performs in a film. Both are creators in their field. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-        },
-        {
-          "id": 106,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to hot as ice is to ___",
-          "setA": [
-            "sun",
-            "summer",
-            "fire"
-          ],
-          "setB": [
-            "winter",
-            "cold",
-            "snow"
-          ],
-          "correctPair": [
-            2,
-            1
-          ],
-          "explanation": "Fire is hot, just as ice is cold. Both describe the temperature of something. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-        },
-        {
-          "id": 107,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to drive as aeroplane is to ___",
-          "setA": [
-            "road",
-            "car",
-            "wheel"
-          ],
-          "setB": [
-            "wing",
-            "airport",
-            "fly"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "You drive a car, just as you fly an aeroplane. Both describe how a vehicle is operated. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-        },
-        {
-          "id": 108,
-          "difficulty": 1,
-          "questionType": "pick-from-sets",
-          "question": "___ is to page as song is to ___",
-          "setA": [
-            "read",
-            "paper",
-            "book"
-          ],
-          "setB": [
-            "singer",
-            "verse",
-            "radio"
-          ],
-          "correctPair": [
-            2,
-            1
-          ],
-          "explanation": "A book is made up of pages, just as a song is made up of verses. Both are parts of a whole. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-        },
-        {
-          "id": 109,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to flock as wolf is to ___",
-          "setA": [
-            "bird",
-            "feather",
-            "nest"
-          ],
-          "setB": [
-            "den",
-            "pack",
-            "howl"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "A group of birds is called a flock, just as a group of wolves is called a pack. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-        },
-        {
-          "id": 110,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to France as Tokyo is to ___",
-          "setA": [
-            "Paris",
-            "French",
-            "Europe"
-          ],
-          "setB": [
-            "Asia",
-            "Japan",
-            "sushi"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "Paris is the capital of France, just as Tokyo is the capital of Japan. Both are capitals of their countries. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-        },
-        {
-          "id": 111,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to piano as bow is to ___",
-          "setA": [
-            "key",
-            "music",
-            "tune"
-          ],
-          "setB": [
-            "arrow",
-            "violin",
-            "string"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "A key is used to play a piano, just as a bow is used to play a violin. Both are how the instrument is played. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-        },
-        {
-          "id": 112,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to tree as petal is to ___",
-          "setA": [
-            "leaf",
-            "bark",
-            "root"
-          ],
-          "setB": [
-            "stem",
-            "flower",
-            "garden"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "A leaf is a part of a tree, just as a petal is a part of a flower. Both are parts of a plant. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-        },
-        {
-          "id": 113,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to cold as drought is to ___",
-          "setA": [
-            "winter",
-            "frost",
-            "snow"
-          ],
-          "setB": [
-            "desert",
-            "thirst",
-            "dry"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "Frost is caused by cold weather, just as a drought is caused by dry conditions. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-        },
-        {
-          "id": 114,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to chapter as atlas is to ___",
-          "setA": [
-            "story",
-            "author",
-            "novel"
-          ],
-          "setB": [
-            "globe",
-            "map",
-            "country"
-          ],
-          "correctPair": [
-            2,
-            1
-          ],
-          "explanation": "A novel is divided into chapters, just as an atlas is divided into maps. Both are units within a larger work. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-        },
-        {
-          "id": 115,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to fish as lungs are to ___",
-          "setA": [
-            "scales",
-            "fin",
-            "gills"
-          ],
-          "setB": [
-            "human",
-            "breathe",
-            "chest"
-          ],
-          "correctPair": [
-            2,
-            0
-          ],
-          "explanation": "Gills allow a fish to breathe underwater, just as lungs allow a human to breathe air. Both are breathing organs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-        },
-        {
-          "id": 116,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to teeth as shampoo is to ___",
-          "setA": [
-            "dentist",
-            "brush",
-            "toothpaste"
-          ],
-          "setB": [
-            "shower",
-            "hair",
-            "bottle"
-          ],
-          "correctPair": [
-            2,
-            1
-          ],
-          "explanation": "Toothpaste is used to clean teeth, just as shampoo is used to clean hair. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-        },
-        {
-          "id": 117,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to spider as hive is to ___",
-          "setA": [
-            "leg",
-            "insect",
-            "web"
-          ],
-          "setB": [
-            "bee",
-            "honey",
-            "queen"
-          ],
-          "correctPair": [
-            2,
-            0
-          ],
-          "explanation": "A web is the home built by a spider, just as a hive is the home built by a bee. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-        },
-        {
-          "id": 118,
-          "difficulty": 2,
-          "questionType": "pick-from-sets",
-          "question": "___ is to king as duchess is to ___",
-          "setA": [
-            "prince",
-            "queen",
-            "duke"
-          ],
-          "setB": [
-            "duke",
-            "royal",
-            "lord"
-          ],
-          "correctPair": [
-            1,
-            0
-          ],
-          "explanation": "A queen is the female equivalent of a king, just as a duchess is the female equivalent of a duke. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
-        },
-        {
-          "id": 119,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to word as brick is to ___",
-          "setA": [
-            "sentence",
-            "pen",
-            "letter"
-          ],
-          "setB": [
-            "wall",
-            "cement",
-            "house"
-          ],
-          "correctPair": [
-            2,
-            0
-          ],
-          "explanation": "A letter is the smallest building block of a word, just as a brick is the smallest building block of a wall. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
-        },
-        {
-          "id": 120,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to telescope as small is to ___",
-          "setA": [
-            "distant",
-            "star",
-            "lens"
-          ],
-          "setB": [
-            "magnifying glass",
-            "tiny",
-            "microscope"
-          ],
-          "correctPair": [
-            0,
-            2
-          ],
-          "explanation": "A telescope is used to see distant things, just as a microscope is used to see small things. Both are tools for seeing what the eye cannot. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
-        },
-        {
-          "id": 121,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to mammal as salmon is to ___",
-          "setA": [
-            "whale",
-            "ocean",
-            "blubber"
-          ],
-          "setB": [
-            "river",
-            "fish",
-            "scales"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "A whale is a type of mammal, just as a salmon is a type of fish. Both describe an animal and its classification. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
-        },
-        {
-          "id": 122,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to orchestra as captain is to ___",
-          "setA": [
-            "conductor",
-            "violin",
-            "concert"
-          ],
-          "setB": [
-            "ship",
-            "team",
-            "badge"
-          ],
-          "correctPair": [
-            0,
-            1
-          ],
-          "explanation": "A conductor leads an orchestra, just as a captain leads a team. Both are leaders of a group. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
-        },
-        {
-          "id": 123,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to caterpillar as frog is to ___",
-          "setA": [
-            "leaf",
-            "cocoon",
-            "butterfly"
-          ],
-          "setB": [
-            "tadpole",
-            "pond",
-            "lily"
-          ],
-          "correctPair": [
-            2,
-            0
-          ],
-          "explanation": "A butterfly is the adult form of a caterpillar, just as a frog is the adult form of a tadpole. Both undergo metamorphosis. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
-        },
-        {
-          "id": 124,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to guilty as acquit is to ___",
-          "setA": [
-            "judge",
-            "prison",
-            "convict"
-          ],
-          "setB": [
-            "innocent",
-            "court",
-            "free"
-          ],
-          "correctPair": [
-            2,
-            0
-          ],
-          "explanation": "To convict someone is to find them guilty, just as to acquit someone is to find them innocent. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
-        },
-        {
-          "id": 125,
-          "difficulty": 3,
-          "questionType": "pick-from-sets",
-          "question": "___ is to painting as playwright is to ___",
-          "setA": [
-            "canvas",
-            "gallery",
-            "artist"
-          ],
-          "setB": [
-            "drama",
-            "theatre",
-            "stage"
-          ],
-          "correctPair": [
-            2,
-            0
-          ],
-          "explanation": "An artist creates a painting, just as a playwright creates a drama. Both are creators and their works. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
-        }
+            {
+                  "id": 1,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to brush as writer is to ___",
+                  "setA": [
+                        "painter",
+                        "cleaner",
+                        "artist"
+                  ],
+                  "setB": [
+                        "book",
+                        "pen",
+                        "paper"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A painter uses a brush, just as a writer uses a pen. Both are tools of their craft. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 2,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to hand as helmet is to ___",
+                  "setA": [
+                        "ring",
+                        "glove",
+                        "watch"
+                  ],
+                  "setB": [
+                        "head",
+                        "bike",
+                        "safety"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A glove covers and protects a hand, just as a helmet covers and protects a head. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 3,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to bear as cygnet is to ___",
+                  "setA": [
+                        "cub",
+                        "den",
+                        "fur"
+                  ],
+                  "setB": [
+                        "lake",
+                        "feather",
+                        "swan"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "A cub is a young bear, just as a cygnet is a young swan. Both are baby animals. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 4,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to patient as teacher is to ___",
+                  "setA": [
+                        "nurse",
+                        "doctor",
+                        "hospital"
+                  ],
+                  "setB": [
+                        "school",
+                        "pupil",
+                        "lesson"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "A doctor looks after a patient, just as a teacher looks after a pupil. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 5,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to foot as finger is to ___",
+                  "setA": [
+                        "shoe",
+                        "toe",
+                        "ankle"
+                  ],
+                  "setB": [
+                        "ring",
+                        "nail",
+                        "hand"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "A toe is part of a foot, just as a finger is part of a hand. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 6,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to book as verse is to ___",
+                  "setA": [
+                        "page",
+                        "chapter",
+                        "cover"
+                  ],
+                  "setB": [
+                        "rhyme",
+                        "poem",
+                        "song"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "A chapter is a section of a book, just as a verse is a section of a poem. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 7,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to cat as hoof is to ___",
+                  "setA": [
+                        "claw",
+                        "paw",
+                        "whisker"
+                  ],
+                  "setB": [
+                        "stable",
+                        "horse",
+                        "saddle"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "A paw belongs to a cat, just as a hoof belongs to a horse. Both are feet of animals. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 8,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to car as wing is to ___",
+                  "setA": [
+                        "wheel",
+                        "door",
+                        "engine"
+                  ],
+                  "setB": [
+                        "sky",
+                        "bird",
+                        "feather"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A wheel helps a car move, just as a wing helps a bird fly. Both enable movement. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 9,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to sheep as pack is to ___",
+                  "setA": [
+                        "lamb",
+                        "flock",
+                        "field"
+                  ],
+                  "setB": [
+                        "wolves",
+                        "bag",
+                        "cards"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A flock is the collective noun for sheep, just as a pack is the collective noun for wolves. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 10,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to tired as shiver is to ___",
+                  "setA": [
+                        "sleep",
+                        "yawn",
+                        "stretch"
+                  ],
+                  "setB": [
+                        "cold",
+                        "shake",
+                        "winter"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "You yawn when you are tired, just as you shiver when you are cold. Both are involuntary reactions. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 11,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to orchestra as captain is to ___",
+                  "setA": [
+                        "musician",
+                        "conductor",
+                        "violin"
+                  ],
+                  "setB": [
+                        "team",
+                        "ship",
+                        "army"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A conductor leads an orchestra, just as a captain leads a team. Both are leaders of a group. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 12,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to dog as meow is to ___",
+                  "setA": [
+                        "bark",
+                        "bone",
+                        "lead"
+                  ],
+                  "setB": [
+                        "kitten",
+                        "cat",
+                        "mouse"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Bark is the sound a dog makes, just as meow is the sound a cat makes. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 13,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to ink as brush is to ___",
+                  "setA": [
+                        "pen",
+                        "bottle",
+                        "stain"
+                  ],
+                  "setB": [
+                        "hair",
+                        "paint",
+                        "canvas"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A pen uses ink to write, just as a brush uses paint to create art. Both are tools paired with their medium. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 14,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to pen as canvas is to ___",
+                  "setA": [
+                        "paper",
+                        "pencil",
+                        "book"
+                  ],
+                  "setB": [
+                        "brush",
+                        "frame",
+                        "easel"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "You write on paper with a pen, just as you paint on canvas with a brush. Both pairs link a surface to the tool used on it. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 15,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to uncle as niece is to ___",
+                  "setA": [
+                        "nephew",
+                        "son",
+                        "brother"
+                  ],
+                  "setB": [
+                        "aunt",
+                        "mother",
+                        "sister"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "A nephew is the male relation to an uncle, just as a niece is the female relation to an aunt. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 16,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to bird as fin is to ___",
+                  "setA": [
+                        "nest",
+                        "wing",
+                        "beak"
+                  ],
+                  "setB": [
+                        "sea",
+                        "fish",
+                        "scale"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "A wing helps a bird move through the air, just as a fin helps a fish move through water. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 17,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to morning as supper is to ___",
+                  "setA": [
+                        "breakfast",
+                        "lunch",
+                        "dawn"
+                  ],
+                  "setB": [
+                        "evening",
+                        "night",
+                        "dusk"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "Breakfast is the meal eaten in the morning, just as supper is the meal eaten in the evening. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 18,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to sheep as kennel is to ___",
+                  "setA": [
+                        "wool",
+                        "pen",
+                        "field"
+                  ],
+                  "setB": [
+                        "dog",
+                        "bone",
+                        "lead"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A pen is an enclosure for sheep, just as a kennel is a shelter for a dog. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 19,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to grape as tree is to ___",
+                  "setA": [
+                        "vine",
+                        "wine",
+                        "fruit"
+                  ],
+                  "setB": [
+                        "leaf",
+                        "apple",
+                        "wood"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A grape grows on a vine, just as an apple grows on a tree. Both are fruits and where they grow. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 20,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to flour as cow is to ___",
+                  "setA": [
+                        "bread",
+                        "wheat",
+                        "baker"
+                  ],
+                  "setB": [
+                        "milk",
+                        "beef",
+                        "farm"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Wheat is processed to produce flour, just as a cow produces milk. Both are raw sources of a product. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 21,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to tall as light is to ___",
+                  "setA": [
+                        "short",
+                        "height",
+                        "big"
+                  ],
+                  "setB": [
+                        "lamp",
+                        "heavy",
+                        "bright"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Short is the opposite of tall, and light is the opposite of heavy. Both are antonym pairs describing contrasting qualities. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 22,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to fast as quiet is to ___",
+                  "setA": [
+                        "slow",
+                        "speed",
+                        "quick"
+                  ],
+                  "setB": [
+                        "loud",
+                        "soft",
+                        "silent"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "Slow is the opposite of fast, and quiet is the opposite of loud. Both are antonym pairs. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 23,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to hard as smooth is to ___",
+                  "setA": [
+                        "rock",
+                        "soft",
+                        "tough"
+                  ],
+                  "setB": [
+                        "rough",
+                        "silk",
+                        "flat"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Soft is the opposite of hard, and smooth is the opposite of rough. Both are antonym pairs about texture. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 24,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to narrow as tall is to ___",
+                  "setA": [
+                        "wide",
+                        "thin",
+                        "long"
+                  ],
+                  "setB": [
+                        "high",
+                        "short",
+                        "big"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Wide is the opposite of narrow, and tall is the opposite of short. Both are antonym pairs describing size. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 25,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to polite as brave is to ___",
+                  "setA": [
+                        "kind",
+                        "gentle",
+                        "rude"
+                  ],
+                  "setB": [
+                        "cowardly",
+                        "strong",
+                        "hero"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "Rude is the opposite of polite, and brave is the opposite of cowardly. Both are antonym pairs about behaviour. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 26,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to ancient as shallow is to ___",
+                  "setA": [
+                        "old",
+                        "ruin",
+                        "modern"
+                  ],
+                  "setB": [
+                        "deep",
+                        "water",
+                        "puddle"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "Modern is the opposite of ancient, and shallow is the opposite of deep. Both are antonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 27,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to generous as honest is to ___",
+                  "setA": [
+                        "greedy",
+                        "kind",
+                        "selfish"
+                  ],
+                  "setB": [
+                        "truth",
+                        "deceitful",
+                        "fair"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "Selfish is the opposite of generous, and honest is the opposite of deceitful. Both are antonym pairs about character. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 28,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to temporary as rigid is to ___",
+                  "setA": [
+                        "brief",
+                        "permanent",
+                        "lasting"
+                  ],
+                  "setB": [
+                        "flexible",
+                        "stiff",
+                        "firm"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Permanent is the opposite of temporary, and rigid is the opposite of flexible. Both are antonym pairs. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 29,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to abundant as visible is to ___",
+                  "setA": [
+                        "plenty",
+                        "scarce",
+                        "rich"
+                  ],
+                  "setB": [
+                        "clear",
+                        "hidden",
+                        "bright"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "Scarce is the opposite of abundant, and visible is the opposite of hidden. Both are antonym pairs. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 30,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to timid as cautious is to ___",
+                  "setA": [
+                        "shy",
+                        "bold",
+                        "nervous"
+                  ],
+                  "setB": [
+                        "reckless",
+                        "careful",
+                        "safe"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Bold is the opposite of timid, and cautious is the opposite of reckless. Both are antonym pairs about confidence. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 31,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to innocent as artificial is to ___",
+                  "setA": [
+                        "pure",
+                        "guilty",
+                        "young"
+                  ],
+                  "setB": [
+                        "plastic",
+                        "genuine",
+                        "fake"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "Guilty is the opposite of innocent, and artificial is the opposite of genuine. Both are antonym pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 32,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to empty as open is to ___",
+                  "setA": [
+                        "full",
+                        "bottle",
+                        "hollow"
+                  ],
+                  "setB": [
+                        "door",
+                        "shut",
+                        "wide"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Full is the opposite of empty, and open is the opposite of shut. Both are antonym pairs. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 33,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to hand as toe is to ___",
+                  "setA": [
+                        "finger",
+                        "glove",
+                        "wrist"
+                  ],
+                  "setB": [
+                        "shoe",
+                        "foot",
+                        "sock"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A finger is part of a hand, just as a toe is part of a foot. Both are part-to-whole relationships. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 34,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to tree as petal is to ___",
+                  "setA": [
+                        "forest",
+                        "leaf",
+                        "bark"
+                  ],
+                  "setB": [
+                        "garden",
+                        "flower",
+                        "stem"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "A leaf is part of a tree, just as a petal is part of a flower. Both are parts of plants. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 35,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to clock as key is to ___",
+                  "setA": [
+                        "time",
+                        "hand",
+                        "tick"
+                  ],
+                  "setB": [
+                        "lock",
+                        "door",
+                        "metal"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A hand is part of a clock, just as a key is part of a lock. Both are essential components. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 36,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to car as mast is to ___",
+                  "setA": [
+                        "bonnet",
+                        "road",
+                        "driver"
+                  ],
+                  "setB": [
+                        "flag",
+                        "boat",
+                        "sail"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A bonnet is part of a car, just as a mast is part of a boat. Both are structural parts of vehicles. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 37,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to guitar as key is to ___",
+                  "setA": [
+                        "music",
+                        "string",
+                        "player"
+                  ],
+                  "setB": [
+                        "piano",
+                        "lock",
+                        "note"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A string is part of a guitar, just as a key is part of a piano. Both are parts of musical instruments. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 38,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to face as elbow is to ___",
+                  "setA": [
+                        "smile",
+                        "nose",
+                        "head"
+                  ],
+                  "setB": [
+                        "arm",
+                        "bend",
+                        "joint"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A nose is part of a face, just as an elbow is part of an arm. Both are part-to-whole relationships of the body. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 39,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to sentence as brick is to ___",
+                  "setA": [
+                        "word",
+                        "full stop",
+                        "paragraph"
+                  ],
+                  "setB": [
+                        "cement",
+                        "house",
+                        "wall"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "A word is part of a sentence, just as a brick is part of a wall. Both are small units making up a larger whole. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 40,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to skeleton as stitch is to ___",
+                  "setA": [
+                        "bone",
+                        "body",
+                        "skull"
+                  ],
+                  "setB": [
+                        "needle",
+                        "fabric",
+                        "thread"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A bone is part of a skeleton, just as a stitch is part of a fabric. Both are individual units forming a larger structure. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 41,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to archipelago as scene is to ___",
+                  "setA": [
+                        "ocean",
+                        "island",
+                        "beach"
+                  ],
+                  "setB": [
+                        "actor",
+                        "play",
+                        "stage"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "An island is part of an archipelago, just as a scene is part of a play. Both are individual elements within a larger whole. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 42,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to chain as carriage is to ___",
+                  "setA": [
+                        "metal",
+                        "fence",
+                        "link"
+                  ],
+                  "setB": [
+                        "horse",
+                        "wheel",
+                        "train"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "A link is part of a chain, just as a carriage is part of a train. Both are individual units in a connected series. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 43,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to fruit as carrot is to ___",
+                  "setA": [
+                        "tree",
+                        "apple",
+                        "juice"
+                  ],
+                  "setB": [
+                        "orange",
+                        "vegetable",
+                        "garden"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "An apple is a type of fruit, just as a carrot is a type of vegetable. Both are category relationships. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 44,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to colour as violin is to ___",
+                  "setA": [
+                        "paint",
+                        "red",
+                        "rainbow"
+                  ],
+                  "setB": [
+                        "instrument",
+                        "music",
+                        "bow"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Red is a type of colour, just as a violin is a type of instrument. Both belong to a wider category. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 45,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to bird as trout is to ___",
+                  "setA": [
+                        "nest",
+                        "feather",
+                        "robin"
+                  ],
+                  "setB": [
+                        "fish",
+                        "river",
+                        "scale"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "A robin is a type of bird, just as a trout is a type of fish. Both are specific examples of an animal group. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 46,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to planet as Thames is to ___",
+                  "setA": [
+                        "star",
+                        "Mars",
+                        "space"
+                  ],
+                  "setB": [
+                        "river",
+                        "London",
+                        "bridge"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Mars is a type of planet, just as the Thames is a type of river. Both are specific examples of a category. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 47,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to metal as oak is to ___",
+                  "setA": [
+                        "iron",
+                        "strong",
+                        "mine"
+                  ],
+                  "setB": [
+                        "leaf",
+                        "acorn",
+                        "wood"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "Iron is a type of metal, just as oak is a type of wood. Both are specific materials within a broader group. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 48,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to shape as emerald is to ___",
+                  "setA": [
+                        "circle",
+                        "triangle",
+                        "square"
+                  ],
+                  "setB": [
+                        "ring",
+                        "gemstone",
+                        "green"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "A triangle is a type of shape, just as an emerald is a type of gemstone. Both are specific examples of a category. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 49,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to furniture as daisy is to ___",
+                  "setA": [
+                        "room",
+                        "table",
+                        "wood"
+                  ],
+                  "setB": [
+                        "garden",
+                        "petal",
+                        "flower"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "A table is a type of furniture, just as a daisy is a type of flower. Both are examples belonging to a wider group. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 50,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to reptile as eagle is to ___",
+                  "setA": [
+                        "cold",
+                        "snake",
+                        "scales"
+                  ],
+                  "setB": [
+                        "sky",
+                        "feather",
+                        "raptor"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "A snake is a type of reptile, just as an eagle is a type of raptor (bird of prey). Both are category relationships. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 51,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to cereal as spinach is to ___",
+                  "setA": [
+                        "wheat",
+                        "breakfast",
+                        "bowl"
+                  ],
+                  "setB": [
+                        "green",
+                        "salad",
+                        "leafy vegetable"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "Wheat is a type of cereal crop, just as spinach is a type of leafy vegetable. Both are specific examples of food groups. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 52,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to dwelling as sonnet is to ___",
+                  "setA": [
+                        "roof",
+                        "family",
+                        "cottage"
+                  ],
+                  "setB": [
+                        "rhyme",
+                        "Shakespeare",
+                        "poem"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "A cottage is a type of dwelling, just as a sonnet is a type of poem. Both are specific forms within a broader category. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 53,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to write as spoon is to ___",
+                  "setA": [
+                        "paper",
+                        "letter",
+                        "pencil"
+                  ],
+                  "setB": [
+                        "soup",
+                        "bowl",
+                        "eat"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "A pencil is used to write, just as a spoon is used to eat. Both are tools paired with their purpose. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 54,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to see as ear is to ___",
+                  "setA": [
+                        "glasses",
+                        "look",
+                        "eye"
+                  ],
+                  "setB": [
+                        "sound",
+                        "hear",
+                        "music"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "An eye is used to see, just as an ear is used to hear. Both are sense organs paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 55,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to rain as coat is to ___",
+                  "setA": [
+                        "cloud",
+                        "umbrella",
+                        "puddle"
+                  ],
+                  "setB": [
+                        "cold",
+                        "wool",
+                        "button"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "An umbrella protects you from rain, just as a coat protects you from cold. Both have a protective purpose. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 56,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to measure as telescope is to ___",
+                  "setA": [
+                        "length",
+                        "maths",
+                        "ruler"
+                  ],
+                  "setB": [
+                        "star",
+                        "magnify",
+                        "lens"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A ruler is used to measure, just as a telescope is used to magnify. Both are instruments paired with their function. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 57,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to warm as fan is to ___",
+                  "setA": [
+                        "fire",
+                        "blanket",
+                        "radiator"
+                  ],
+                  "setB": [
+                        "cool",
+                        "blade",
+                        "air"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "A radiator is used to warm, just as a fan is used to cool. Both are appliances with opposite temperature functions. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 58,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to dig as net is to ___",
+                  "setA": [
+                        "spade",
+                        "soil",
+                        "garden"
+                  ],
+                  "setB": [
+                        "fish",
+                        "catch",
+                        "rope"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A spade is used to dig, just as a net is used to catch. Both are tools paired with their action. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 59,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to lock as anchor is to ___",
+                  "setA": [
+                        "key",
+                        "door",
+                        "safe"
+                  ],
+                  "setB": [
+                        "hold",
+                        "ship",
+                        "chain"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "A key operates a lock, just as an anchor holds a ship in place. Both serve a securing function. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 60,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to preserve as filter is to ___",
+                  "setA": [
+                        "jar",
+                        "fridge",
+                        "salt"
+                  ],
+                  "setB": [
+                        "purify",
+                        "screen",
+                        "water"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "Salt is used to preserve food, just as a filter is used to purify water. Both serve a processing function. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 61,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to navigate as compass is to ___",
+                  "setA": [
+                        "map",
+                        "road",
+                        "journey"
+                  ],
+                  "setB": [
+                        "direction",
+                        "north",
+                        "needle"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "A map is used to navigate, just as a compass is used to find direction. Both are navigation tools paired with their purpose. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 62,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to illuminate as microscope is to ___",
+                  "setA": [
+                        "candle",
+                        "lantern",
+                        "torch"
+                  ],
+                  "setB": [
+                        "scientist",
+                        "lens",
+                        "enlarge"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "A torch is used to illuminate, just as a microscope is used to enlarge. Both are devices paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 63,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to boiling as cool is to ___",
+                  "setA": [
+                        "warm",
+                        "water",
+                        "steam"
+                  ],
+                  "setB": [
+                        "ice",
+                        "freezing",
+                        "cold"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Warm is a mild form and boiling is an extreme form of heat, just as cool is mild and freezing is an extreme form of cold. Both show degree of intensity. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 64,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to shout as tap is to ___",
+                  "setA": [
+                        "whisper",
+                        "talk",
+                        "voice"
+                  ],
+                  "setB": [
+                        "thump",
+                        "knock",
+                        "door"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "A whisper is quiet and a shout is loud, just as a tap is gentle and a thump is forceful. Both show increasing intensity. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 65,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to furious as pleased is to ___",
+                  "setA": [
+                        "angry",
+                        "annoyed",
+                        "cross"
+                  ],
+                  "setB": [
+                        "delighted",
+                        "happy",
+                        "content"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Annoyed is a mild form of anger and furious is the extreme, just as pleased is mild satisfaction and delighted is the extreme. Both show increasing intensity. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 66,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to starving as tired is to ___",
+                  "setA": [
+                        "peckish",
+                        "hungry",
+                        "food"
+                  ],
+                  "setB": [
+                        "exhausted",
+                        "sleep",
+                        "yawn"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Hungry is moderate and starving is extreme, just as tired is moderate and exhausted is extreme. Both show increasing intensity. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 67,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to downpour as breeze is to ___",
+                  "setA": [
+                        "rain",
+                        "drizzle",
+                        "cloud"
+                  ],
+                  "setB": [
+                        "wind",
+                        "air",
+                        "gale"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "A drizzle is light rain and a downpour is heavy rain, just as a breeze is a light wind and a gale is a strong wind. Both show degree of intensity. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 68,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to terrified as dislike is to ___",
+                  "setA": [
+                        "scared",
+                        "nervous",
+                        "worried"
+                  ],
+                  "setB": [
+                        "hate",
+                        "loathe",
+                        "detest"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "Nervous is a mild form of fear and terrified is the extreme, just as dislike is mild and hate is the extreme. Both show increasing intensity of feeling. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 69,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to ancient as damp is to ___",
+                  "setA": [
+                        "old",
+                        "new",
+                        "aged"
+                  ],
+                  "setB": [
+                        "wet",
+                        "soaked",
+                        "moist"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Old is a mild form and ancient is extreme in terms of age, just as damp is mild and soaked is extreme in terms of wetness. Both show increasing degree. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 70,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to blizzard as nibble is to ___",
+                  "setA": [
+                        "snow",
+                        "frost",
+                        "flurry"
+                  ],
+                  "setB": [
+                        "chew",
+                        "bite",
+                        "devour"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "A flurry is a light snowfall and a blizzard is an extreme one, just as a nibble is a small bite and devour means to eat ravenously. Both show increasing intensity. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 71,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to oven as gardener is to ___",
+                  "setA": [
+                        "food",
+                        "kitchen",
+                        "chef"
+                  ],
+                  "setB": [
+                        "plant",
+                        "spade",
+                        "lawn"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A chef uses an oven, just as a gardener uses a spade. Both are workers paired with their tools. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 72,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to camera as surgeon is to ___",
+                  "setA": [
+                        "film",
+                        "photographer",
+                        "picture"
+                  ],
+                  "setB": [
+                        "scalpel",
+                        "hospital",
+                        "patient"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A photographer uses a camera, just as a surgeon uses a scalpel. Both are professionals paired with their tools. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 73,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to chisel as farmer is to ___",
+                  "setA": [
+                        "stone",
+                        "art",
+                        "sculptor"
+                  ],
+                  "setB": [
+                        "field",
+                        "crop",
+                        "plough"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "A sculptor uses a chisel, just as a farmer uses a plough. Both are workers paired with their essential tools. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 74,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to microscope as electrician is to ___",
+                  "setA": [
+                        "scientist",
+                        "lab",
+                        "experiment"
+                  ],
+                  "setB": [
+                        "wire",
+                        "light",
+                        "multimeter"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "A scientist uses a microscope, just as an electrician uses a multimeter. Both are professionals paired with their specialist tools. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 75,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to stethoscope as archaeologist is to ___",
+                  "setA": [
+                        "nurse",
+                        "doctor",
+                        "hospital"
+                  ],
+                  "setB": [
+                        "trowel",
+                        "museum",
+                        "bones"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A doctor uses a stethoscope, just as an archaeologist uses a trowel. Both are professionals paired with their diagnostic or discovery tools. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 76,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to baton as astronomer is to ___",
+                  "setA": [
+                        "police",
+                        "relay",
+                        "conductor"
+                  ],
+                  "setB": [
+                        "planet",
+                        "telescope",
+                        "star"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A conductor uses a baton, just as an astronomer uses a telescope. Both are professionals paired with their key tools. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 77,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to dog as chick is to ___",
+                  "setA": [
+                        "bone",
+                        "puppy",
+                        "kennel"
+                  ],
+                  "setB": [
+                        "egg",
+                        "nest",
+                        "hen"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "A puppy is a young dog, just as a chick is a young hen. Both are baby-to-adult animal pairs. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 78,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to cow as lamb is to ___",
+                  "setA": [
+                        "milk",
+                        "calf",
+                        "bull"
+                  ],
+                  "setB": [
+                        "sheep",
+                        "wool",
+                        "field"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A calf is a young cow, just as a lamb is a young sheep. Both are baby-to-adult animal pairs. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 79,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to horse as gosling is to ___",
+                  "setA": [
+                        "foal",
+                        "stable",
+                        "pony"
+                  ],
+                  "setB": [
+                        "pond",
+                        "goose",
+                        "feather"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A foal is a young horse, just as a gosling is a young goose. Both are baby-to-adult animal pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 80,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to frog as caterpillar is to ___",
+                  "setA": [
+                        "tadpole",
+                        "pond",
+                        "lily"
+                  ],
+                  "setB": [
+                        "leaf",
+                        "cocoon",
+                        "butterfly"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "A tadpole grows into a frog, just as a caterpillar grows into a butterfly. Both are young-to-adult pairs that undergo transformation. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 81,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to deer as joey is to ___",
+                  "setA": [
+                        "antler",
+                        "fawn",
+                        "forest"
+                  ],
+                  "setB": [
+                        "kangaroo",
+                        "pouch",
+                        "Australia"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A fawn is a young deer, just as a joey is a young kangaroo. Both are baby-to-adult animal pairs. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 82,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to owl as elver is to ___",
+                  "setA": [
+                        "owlet",
+                        "hoot",
+                        "talon"
+                  ],
+                  "setB": [
+                        "river",
+                        "eel",
+                        "slippery"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "An owlet is a young owl, just as an elver is a young eel. Both are baby-to-adult animal pairs with unusual names. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 83,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to bread as wool is to ___",
+                  "setA": [
+                        "baker",
+                        "oven",
+                        "flour"
+                  ],
+                  "setB": [
+                        "sheep",
+                        "jumper",
+                        "knit"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "Flour is used to make bread, just as wool is used to make a jumper. Both are materials paired with their products. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 84,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to paper as sand is to ___",
+                  "setA": [
+                        "pen",
+                        "wood",
+                        "book"
+                  ],
+                  "setB": [
+                        "beach",
+                        "castle",
+                        "glass"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "Wood pulp is used to make paper, just as sand is used to make glass. Both are raw materials paired with their products. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 85,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to cheese as grape is to ___",
+                  "setA": [
+                        "mouse",
+                        "slice",
+                        "milk"
+                  ],
+                  "setB": [
+                        "vine",
+                        "fruit",
+                        "wine"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "Milk is used to make cheese, just as a grape is used to make wine. Both are raw ingredients paired with their products. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 86,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to pottery as ore is to ___",
+                  "setA": [
+                        "wheel",
+                        "kiln",
+                        "clay"
+                  ],
+                  "setB": [
+                        "metal",
+                        "mine",
+                        "rock"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "Clay is shaped to make pottery, just as ore is smelted to produce metal. Both are raw materials paired with their refined products. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 87,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to linen as rubber is to ___",
+                  "setA": [
+                        "cloth",
+                        "weave",
+                        "flax"
+                  ],
+                  "setB": [
+                        "bounce",
+                        "latex",
+                        "tyre"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "Flax is the plant used to make linen, just as rubber is made into tyres. Both are material-to-product relationships. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 88,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to learn as kitchen is to ___",
+                  "setA": [
+                        "school",
+                        "teacher",
+                        "book"
+                  ],
+                  "setB": [
+                        "knife",
+                        "food",
+                        "cook"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "You go to school to learn, just as you go to the kitchen to cook. Both are places paired with their main activity. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 89,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to swim as pitch is to ___",
+                  "setA": [
+                        "towel",
+                        "pool",
+                        "water"
+                  ],
+                  "setB": [
+                        "football",
+                        "grass",
+                        "play"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "A pool is where you swim, just as a pitch is where you play. Both are places paired with their activities. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 90,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to worship as court is to ___",
+                  "setA": [
+                        "church",
+                        "prayer",
+                        "hymn"
+                  ],
+                  "setB": [
+                        "judge",
+                        "trial",
+                        "law"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A church is a place of worship, just as a court is a place of trial. Both are buildings paired with their main purpose. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 91,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to act as studio is to ___",
+                  "setA": [
+                        "stage",
+                        "audience",
+                        "theatre"
+                  ],
+                  "setB": [
+                        "music",
+                        "record",
+                        "artist"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A theatre is where you act, just as a studio is where you record. Both are places paired with their creative activities. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 92,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to experiment as observatory is to ___",
+                  "setA": [
+                        "scientist",
+                        "beaker",
+                        "laboratory"
+                  ],
+                  "setB": [
+                        "telescope",
+                        "observe",
+                        "planet"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A laboratory is where you experiment, just as an observatory is where you observe. Both are specialist places paired with their activities. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 93,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to flood as wind is to ___",
+                  "setA": [
+                        "rain",
+                        "river",
+                        "dam"
+                  ],
+                  "setB": [
+                        "kite",
+                        "gale",
+                        "storm"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "Heavy rain causes a flood, just as strong wind causes a storm. Both are cause-and-effect pairs in weather. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 94,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to ash as exercise is to ___",
+                  "setA": [
+                        "volcano",
+                        "fire",
+                        "smoke"
+                  ],
+                  "setB": [
+                        "muscle",
+                        "sweat",
+                        "gym"
+                  ],
+                  "correctPair": [
+                        1,
+                        1
+                  ],
+                  "explanation": "Fire produces ash, just as exercise produces sweat. Both are cause-and-effect relationships. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 95,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to echo as sun is to ___",
+                  "setA": [
+                        "cave",
+                        "noise",
+                        "shout"
+                  ],
+                  "setB": [
+                        "heat",
+                        "shadow",
+                        "light"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A shout causes an echo, just as the sun causes a shadow (when it shines on an object). Both are cause-and-effect pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 96,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to rust as neglect is to ___",
+                  "setA": [
+                        "iron",
+                        "rain",
+                        "moisture"
+                  ],
+                  "setB": [
+                        "garden",
+                        "decay",
+                        "weeds"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "Moisture causes rust on metal, just as neglect causes decay. Both are cause-and-effect relationships showing deterioration. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 97,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to leap as quick is to ___",
+                  "setA": [
+                        "jump",
+                        "frog",
+                        "high"
+                  ],
+                  "setB": [
+                        "rapid",
+                        "slow",
+                        "race"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "Jump and leap mean the same thing, just as quick and rapid mean the same thing. Both are synonym pairs. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 98,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to snatch as mend is to ___",
+                  "setA": [
+                        "thief",
+                        "steal",
+                        "grab"
+                  ],
+                  "setB": [
+                        "fix",
+                        "broken",
+                        "repair"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "Grab and snatch both mean to seize quickly, just as mend and repair both mean to fix something. Both are synonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 99,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to cunning as weary is to ___",
+                  "setA": [
+                        "fox",
+                        "clever",
+                        "sly"
+                  ],
+                  "setB": [
+                        "tired",
+                        "sleepy",
+                        "fatigued"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "Sly and cunning both mean crafty or devious, just as weary and fatigued both mean very tired. Both are synonym pairs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 100,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to ample as feeble is to ___",
+                  "setA": [
+                        "sufficient",
+                        "plenty",
+                        "plentiful"
+                  ],
+                  "setB": [
+                        "frail",
+                        "small",
+                        "weak"
+                  ],
+                  "correctPair": [
+                        2,
+                        2
+                  ],
+                  "explanation": "Plentiful and ample both mean more than enough, just as feeble and weak both mean lacking strength. Both are synonym pairs. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 101,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to fur as bird is to ___",
+                  "setA": [
+                        "cat",
+                        "brush",
+                        "warm"
+                  ],
+                  "setB": [
+                        "nest",
+                        "feathers",
+                        "sky"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A cat is covered in fur, just as a bird is covered in feathers. Both are body coverings of animals. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 102,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to eye as hearing is to ___",
+                  "setA": [
+                        "sight",
+                        "glasses",
+                        "colour"
+                  ],
+                  "setB": [
+                        "ear",
+                        "sound",
+                        "music"
+                  ],
+                  "correctPair": [
+                        0,
+                        0
+                  ],
+                  "explanation": "Sight is the sense that uses the eye, just as hearing is the sense that uses the ear. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 103,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to breakfast as dinner is to ___",
+                  "setA": [
+                        "cereal",
+                        "morning",
+                        "toast"
+                  ],
+                  "setB": [
+                        "plate",
+                        "food",
+                        "evening"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "Morning is the time for breakfast, just as evening is the time for dinner. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 104,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to book as actor is to ___",
+                  "setA": [
+                        "author",
+                        "reader",
+                        "library"
+                  ],
+                  "setB": [
+                        "stage",
+                        "film",
+                        "costume"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "An author creates a book, just as an actor performs in a film. Both are creators in their field. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 105,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to hot as ice is to ___",
+                  "setA": [
+                        "sun",
+                        "summer",
+                        "fire"
+                  ],
+                  "setB": [
+                        "winter",
+                        "cold",
+                        "snow"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "Fire is hot, just as ice is cold. Both describe the temperature of something. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 106,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to drive as aeroplane is to ___",
+                  "setA": [
+                        "road",
+                        "car",
+                        "wheel"
+                  ],
+                  "setB": [
+                        "wing",
+                        "airport",
+                        "fly"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "You drive a car, just as you fly an aeroplane. Both describe how a vehicle is operated. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 107,
+                  "difficulty": 1,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to page as song is to ___",
+                  "setA": [
+                        "read",
+                        "paper",
+                        "book"
+                  ],
+                  "setB": [
+                        "singer",
+                        "verse",
+                        "radio"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A book is made up of pages, just as a song is made up of verses. Both are parts of a whole. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 108,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to flock as wolf is to ___",
+                  "setA": [
+                        "bird",
+                        "feather",
+                        "nest"
+                  ],
+                  "setB": [
+                        "den",
+                        "pack",
+                        "howl"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A group of birds is called a flock, just as a group of wolves is called a pack. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 109,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to France as Tokyo is to ___",
+                  "setA": [
+                        "Paris",
+                        "French",
+                        "Europe"
+                  ],
+                  "setB": [
+                        "Asia",
+                        "Japan",
+                        "sushi"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Paris is the capital of France, just as Tokyo is the capital of Japan. Both are capitals of their countries. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 110,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to piano as bow is to ___",
+                  "setA": [
+                        "key",
+                        "music",
+                        "tune"
+                  ],
+                  "setB": [
+                        "arrow",
+                        "violin",
+                        "string"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A key is used to play a piano, just as a bow is used to play a violin. Both are how the instrument is played. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 111,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to cold as drought is to ___",
+                  "setA": [
+                        "winter",
+                        "frost",
+                        "snow"
+                  ],
+                  "setB": [
+                        "desert",
+                        "thirst",
+                        "dry"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "Frost is caused by cold weather, just as a drought is caused by dry conditions. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 112,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to chapter as atlas is to ___",
+                  "setA": [
+                        "story",
+                        "author",
+                        "novel"
+                  ],
+                  "setB": [
+                        "globe",
+                        "map",
+                        "country"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "A novel is divided into chapters, just as an atlas is divided into maps. Both are units within a larger work. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+            },
+            {
+                  "id": 113,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to fish as lungs are to ___",
+                  "setA": [
+                        "scales",
+                        "fin",
+                        "gills"
+                  ],
+                  "setB": [
+                        "human",
+                        "breathe",
+                        "chest"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "Gills allow a fish to breathe underwater, just as lungs allow a human to breathe air. Both are breathing organs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 114,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to teeth as shampoo is to ___",
+                  "setA": [
+                        "dentist",
+                        "brush",
+                        "toothpaste"
+                  ],
+                  "setB": [
+                        "shower",
+                        "hair",
+                        "bottle"
+                  ],
+                  "correctPair": [
+                        2,
+                        1
+                  ],
+                  "explanation": "Toothpaste is used to clean teeth, just as shampoo is used to clean hair. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 115,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to spider as hive is to ___",
+                  "setA": [
+                        "leg",
+                        "insect",
+                        "web"
+                  ],
+                  "setB": [
+                        "bee",
+                        "honey",
+                        "queen"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "A web is the home built by a spider, just as a hive is the home built by a bee. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            },
+            {
+                  "id": 116,
+                  "difficulty": 2,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to king as duchess is to ___",
+                  "setA": [
+                        "prince",
+                        "queen",
+                        "duke"
+                  ],
+                  "setB": [
+                        "duke",
+                        "royal",
+                        "lord"
+                  ],
+                  "correctPair": [
+                        1,
+                        0
+                  ],
+                  "explanation": "A queen is the female equivalent of a king, just as a duchess is the female equivalent of a duke. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+            },
+            {
+                  "id": 117,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to word as brick is to ___",
+                  "setA": [
+                        "sentence",
+                        "pen",
+                        "letter"
+                  ],
+                  "setB": [
+                        "wall",
+                        "cement",
+                        "house"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "A letter is the smallest building block of a word, just as a brick is the smallest building block of a wall. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+            },
+            {
+                  "id": 118,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to telescope as small is to ___",
+                  "setA": [
+                        "distant",
+                        "star",
+                        "lens"
+                  ],
+                  "setB": [
+                        "magnifying glass",
+                        "tiny",
+                        "microscope"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "A telescope is used to see distant things, just as a microscope is used to see small things. Both are tools for seeing what the eye cannot. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+            },
+            {
+                  "id": 119,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to mammal as salmon is to ___",
+                  "setA": [
+                        "whale",
+                        "ocean",
+                        "blubber"
+                  ],
+                  "setB": [
+                        "river",
+                        "fish",
+                        "scales"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "A whale is a type of mammal, just as a salmon is a type of fish. Both describe an animal and its classification. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+            },
+            {
+                  "id": 120,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to caterpillar as frog is to ___",
+                  "setA": [
+                        "leaf",
+                        "cocoon",
+                        "butterfly"
+                  ],
+                  "setB": [
+                        "tadpole",
+                        "pond",
+                        "lily"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "A butterfly is the adult form of a caterpillar, just as a frog is the adult form of a tadpole. Both undergo metamorphosis. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+            },
+            {
+                  "id": 121,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to guilty as acquit is to ___",
+                  "setA": [
+                        "judge",
+                        "prison",
+                        "convict"
+                  ],
+                  "setB": [
+                        "innocent",
+                        "court",
+                        "free"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "To convict someone is to find them guilty, just as to acquit someone is to find them innocent. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+            },
+            {
+                  "id": 122,
+                  "difficulty": 3,
+                  "questionType": "pick-from-sets",
+                  "question": "___ is to painting as playwright is to ___",
+                  "setA": [
+                        "canvas",
+                        "gallery",
+                        "artist"
+                  ],
+                  "setB": [
+                        "drama",
+                        "theatre",
+                        "stage"
+                  ],
+                  "correctPair": [
+                        2,
+                        0
+                  ],
+                  "explanation": "An artist creates a painting, just as a playwright creates a drama. Both are creators and their works. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+            }
       ]
     },
 
     oddTwoOut: {
       name: "Odd Two Out",
       questions: [
-              {
-                      id: 1,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "eagle",
-                              "sparrow",
-                              "bat",
-                              "penguin",
-                              "robin"
-                      ],
-                      correctPair: [
-                              2,
-                              3
-                      ],
-                      explanation: "Eagle, sparrow, and robin are all common flying birds. Bat is a mammal (not a bird), and penguin is a bird that cannot fly. Both are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 2,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "table",
-                              "chair",
-                              "lamp",
-                              "sofa",
-                              "wardrobe"
-                      ],
-                      correctPair: [
-                              2,
-                              4
-                      ],
-                      explanation: "Table, chair, and sofa are all furniture you sit at or on. A lamp provides light and a wardrobe stores clothes — neither is for sitting. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 3,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "apple",
-                              "carrot",
-                              "banana",
-                              "grape",
-                              "potato"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Apple, banana, and grape are all fruits. Carrot and potato are vegetables, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 4,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "goldfish",
-                              "hamster",
-                              "rabbit",
-                              "trout",
-                              "guinea pig"
-                      ],
-                      correctPair: [
-                              0,
-                              3
-                      ],
-                      explanation: "Hamster, rabbit, and guinea pig are furry pets you can hold. Goldfish and trout are both fish, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 5,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "red",
-                              "triangle",
-                              "blue",
-                              "green",
-                              "square"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Red, blue, and green are all colours. Triangle and square are shapes, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 6,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "violin",
-                              "crayon",
-                              "trumpet",
-                              "flute",
-                              "paintbrush"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Violin, trumpet, and flute are all musical instruments. Crayon and paintbrush are art supplies, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 7,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "tennis",
-                              "chess",
-                              "badminton",
-                              "draughts",
-                              "squash"
-                      ],
-                      correctPair: [
-                              1,
-                              3
-                      ],
-                      explanation: "Tennis, badminton, and squash are all racquet sports. Chess and draughts are board games, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 8,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "fork",
-                              "saucepan",
-                              "knife",
-                              "spoon",
-                              "frying pan"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Fork, knife, and spoon are all cutlery. Saucepan and frying pan are cooking pans, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 9,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "oak",
-                              "daisy",
-                              "willow",
-                              "beech",
-                              "tulip"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Oak, willow, and beech are all types of tree. Daisy and tulip are flowers, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 10,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "whisper",
-                              "listen",
-                              "shout",
-                              "announce",
-                              "hear"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Whisper, shout, and announce all involve speaking or making a sound. Listen and hear both involve receiving sound, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 11,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "iron",
-                              "cotton",
-                              "steel",
-                              "bronze",
-                              "silk"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Iron, steel, and bronze are all metals. Cotton and silk are fabrics, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 12,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "foal",
-                              "stallion",
-                              "calf",
-                              "mare",
-                              'lamb'
-                      ],
-                      correctPair: [
-                              2,
-                              4
-                      ],
-                      explanation: "Foal, stallion, and mare are all types of horse (young, male adult, female adult). Calf (young cow) and lamb (young sheep) are baby animals of different species, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 13,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "sprint",
-                              "marathon",
-                              "crawl",
-                              "relay",
-                              "stroll"
-                      ],
-                      correctPair: [
-                              2,
-                              4
-                      ],
-                      explanation: "Sprint, marathon, and relay are all types of race. Crawl and stroll are slow ways of moving, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 14,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "metre",
-                              "kilogram",
-                              "centimetre",
-                              "mile",
-                              "tonne"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Metre, centimetre, and mile are all units of length. Kilogram and tonne are units of weight, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 15,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "biography",
-                              "tragedy",
-                              "autobiography",
-                              "comedy",
-                              "encyclopedia"
-                      ],
-                      correctPair: [
-                              1,
-                              3
-                      ],
-                      explanation: "Biography, autobiography, and encyclopedia are all types of non-fiction writing. Tragedy and comedy are types of drama, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 16,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "radius",
-                              "volume",
-                              "diameter",
-                              "circumference",
-                              "capacity"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Radius, diameter, and circumference are all measurements of a circle. Volume and capacity are measurements of 3D space, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 17,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "simile",
-                              "adjective",
-                              "metaphor",
-                              "personification",
-                              "adverb"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Simile, metaphor, and personification are all figures of speech. Adjective and adverb are word classes, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 18,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "serene",
-                              "furious",
-                              "tranquil",
-                              "placid",
-                              "irate"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Serene, tranquil, and placid all mean calm and peaceful. Furious and irate both mean very angry, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 19,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "valley",
-                              "strait",
-                              "plateau",
-                              "channel",
-                              "cliff"
-                      ],
-                      correctPair: [
-                              1,
-                              3
-                      ],
-                      explanation: "Valley, plateau, and cliff are all land formations. Strait and channel are both narrow passages of water, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 20,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: [
-                              "democracy",
-                              "sonnet",
-                              "republic",
-                              "monarchy",
-                              "limerick"
-                      ],
-                      correctPair: [
-                              1,
-                              4
-                      ],
-                      explanation: "Democracy, republic, and monarchy are all types of government. Sonnet and limerick are types of poem, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              }
-      ,
-              {
-                      id: 21,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["shark","cod","eagle","mackerel","owl"],
-                      correctPair: [2,4],
-                      explanation: "Shark, cod, and mackerel are all fish. Eagle and owl are birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 22,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["bookcase","wardrobe","jumper","trousers","coat"],
-                      correctPair: [0,1],
-                      explanation: "Jumper, trousers, and coat are all items of clothing. Bookcase and wardrobe are pieces of furniture, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 23,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["helicopter","bicycle","scooter","skateboard","aeroplane"],
-                      correctPair: [0,4],
-                      explanation: "Bicycle, scooter, and skateboard all travel on the ground with wheels. Helicopter and aeroplane both fly, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 24,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["rose","hammer","daffodil","screwdriver","sunflower"],
-                      correctPair: [1,3],
-                      explanation: "Rose, daffodil, and sunflower are all flowers. Hammer and screwdriver are tools, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 25,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["rain","ankle","elbow","snow","wrist"],
-                      correctPair: [0,3],
-                      explanation: "Ankle, elbow, and wrist are all joints in the body. Rain and snow are types of weather, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 26,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["pear","lettuce","mango","spinach","plum"],
-                      correctPair: [1,3],
-                      explanation: "Pear, mango, and plum are all fruits. Lettuce and spinach are leafy vegetables, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 27,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["drum","guitar","teddy bear","piano","doll"],
-                      correctPair: [2,4],
-                      explanation: "Drum, guitar, and piano are all musical instruments. Teddy bear and doll are toys, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 28,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["Monday","March","Friday","August","Wednesday"],
-                      correctPair: [1,3],
-                      explanation: "Monday, Friday, and Wednesday are all days of the week. March and August are months of the year, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 29,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["sparrow","whale","dolphin","robin","seal"],
-                      correctPair: [0,3],
-                      explanation: "Whale, dolphin, and seal are all marine mammals. Sparrow and robin are small garden birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 30,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["library","hospital","school","bus","train"],
-                      correctPair: [3,4],
-                      explanation: "Library, hospital, and school are all buildings. Bus and train are types of transport, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 31,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["crab","lobster","parrot","prawn","budgie"],
-                      correctPair: [2,4],
-                      explanation: "Crab, lobster, and prawn are all shellfish. Parrot and budgie are pet birds, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 32,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["bread","toast","milk","sandwich","juice"],
-                      correctPair: [2,4],
-                      explanation: "Bread, toast, and sandwich are all foods made from bread. Milk and juice are drinks, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 33,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["oven","pencil","ruler","toaster","eraser"],
-                      correctPair: [0,3],
-                      explanation: "Pencil, ruler, and eraser are all stationery items. Oven and toaster are kitchen appliances, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 34,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["cow","tiger","lion","leopard","sheep"],
-                      correctPair: [0,4],
-                      explanation: "Tiger, lion, and leopard are all big cats. Cow and sheep are farm animals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 35,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["pond","lake","cherry","strawberry","raspberry"],
-                      correctPair: [0,1],
-                      explanation: "Cherry, strawberry, and raspberry are all red berries. Pond and lake are bodies of fresh water, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 36,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["football","rugby","painting","cricket","sculpture"],
-                      correctPair: [2,4],
-                      explanation: "Football, rugby, and cricket are all team sports played with a ball. Painting and sculpture are forms of art, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 37,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["hat","glove","scarf","boot","slipper"],
-                      correctPair: [3,4],
-                      explanation: "Hat, glove, and scarf are all winter accessories worn above the waist. Boot and slipper are types of footwear, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 38,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["candle","sun","pillow","torch","blanket"],
-                      correctPair: [2,4],
-                      explanation: "Candle, sun, and torch all give off light. Pillow and blanket are bedding items, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 39,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["broccoli","orange","cabbage","peach","apricot"],
-                      correctPair: [0,2],
-                      explanation: "Orange, peach, and apricot are all fruits. Broccoli and cabbage are vegetables, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 40,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["caterpillar","frog","butterfly","toad","bee"],
-                      correctPair: [1,3],
-                      explanation: "Caterpillar, butterfly, and bee are all insects. Frog and toad are amphibians, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 41,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["television","radio","sofa","armchair","stool"],
-                      correctPair: [0,1],
-                      explanation: "Sofa, armchair, and stool are all things you sit on. Television and radio are electronic entertainment devices, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 42,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["eye","spoon","ear","fork","nose"],
-                      correctPair: [1,3],
-                      explanation: "Eye, ear, and nose are all parts of the face. Spoon and fork are items of cutlery, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 43,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["nurse","teacher","stethoscope","thermometer","headteacher"],
-                      correctPair: [2,3],
-                      explanation: "Nurse, teacher, and headteacher are all people with jobs. Stethoscope and thermometer are pieces of medical equipment, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 44,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["river","stream","mountain","canal","hill"],
-                      correctPair: [2,4],
-                      explanation: "River, stream, and canal are all waterways. Mountain and hill are raised landforms, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 45,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["salmon","sparrow","trout","starling","pike"],
-                      correctPair: [1,3],
-                      explanation: "Salmon, trout, and pike are all freshwater fish. Sparrow and starling are common garden birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 46,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["cello","easel","violin","palette","harp"],
-                      correctPair: [1,3],
-                      explanation: "Cello, violin, and harp are all stringed instruments. Easel and palette are both used by painters, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 47,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["France","Edinburgh","Cardiff","Germany","Belfast"],
-                      correctPair: [0,3],
-                      explanation: "Edinburgh, Cardiff, and Belfast are all capital cities of UK nations. France and Germany are countries, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 48,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["oboe","harp","clarinet","cello","bassoon"],
-                      correctPair: [1,3],
-                      explanation: "Oboe, clarinet, and bassoon are all woodwind instruments. Harp and cello are stringed instruments, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 49,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["rabbit","lion","wolf","deer","bear"],
-                      correctPair: [0,3],
-                      explanation: "Lion, wolf, and bear are all carnivores (meat-eaters). Rabbit and deer are herbivores (plant-eaters), so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 50,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["Saturn","comet","Mars","asteroid","Jupiter"],
-                      correctPair: [1,3],
-                      explanation: "Saturn, Mars, and Jupiter are all planets in our solar system. Comet and asteroid are smaller objects that orbit the Sun, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 51,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["Antarctica","Brazil","Egypt","Arctic","India"],
-                      correctPair: [0,3],
-                      explanation: "Brazil, Egypt, and India are all countries. Antarctica and Arctic are polar regions (not countries), so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 52,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["cub","puppy","stallion","kitten","bull"],
-                      correctPair: [2,4],
-                      explanation: "Cub, puppy, and kitten are all names for young animals. Stallion (adult male horse) and bull (adult male cow) are names for adult animals, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 53,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["ruler","thermometer","protractor","barometer","compass"],
-                      correctPair: [1,3],
-                      explanation: "Ruler, protractor, and compass are all maths instruments used for drawing and measuring on paper. Thermometer and barometer are scientific instruments that measure weather conditions, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 54,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["tennis","diving","volleyball","swimming","basketball"],
-                      correctPair: [1,3],
-                      explanation: "Tennis, volleyball, and basketball are all played with a ball. Diving and swimming are water sports without a ball, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 55,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["yoghurt","cream","cheddar","brie","stilton"],
-                      correctPair: [0,1],
-                      explanation: "Cheddar, brie, and stilton are all types of cheese. Yoghurt and cream are other dairy products, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 56,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["emerald","ruby","diamond","gold","silver"],
-                      correctPair: [3,4],
-                      explanation: "Emerald, ruby, and diamond are all gemstones. Gold and silver are precious metals, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 57,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["crocodile","whale","salmon","lizard","trout"],
-                      correctPair: [0,3],
-                      explanation: "Whale, salmon, and trout all live in water. Crocodile and lizard are both reptiles that spend most of their time on land, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 58,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["bungalow","flat","cottage","tent","caravan"],
-                      correctPair: [3,4],
-                      explanation: "Bungalow, flat, and cottage are all permanent homes. Tent and caravan are temporary or movable shelters, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 59,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["giggle","chuckle","sob","snigger","weep"],
-                      correctPair: [2,4],
-                      explanation: "Giggle, chuckle, and snigger are all ways of laughing. Sob and weep are ways of crying, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 60,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["nephew","aunt","cousin","uncle","niece"],
-                      correctPair: [1,3],
-                      explanation: "Nephew, cousin, and niece are all younger or same-generation relatives. Aunt and uncle are older-generation relatives (parents' siblings), so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 61,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["pint","gallon","inch","foot","yard"],
-                      correctPair: [0,1],
-                      explanation: "Inch, foot, and yard are all units of length. Pint and gallon are units of volume (liquid measurement), so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 62,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["atlas","biography","globe","diary","map"],
-                      correctPair: [1,3],
-                      explanation: "Atlas, globe, and map are all used for geography and finding places. Biography and diary are both types of writing about a person's life, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 63,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["glacier","iceberg","desert","avalanche","volcano"],
-                      correctPair: [2,4],
-                      explanation: "Glacier, iceberg, and avalanche are all related to ice and snow. Desert and volcano are associated with extreme heat, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 64,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["oxygen","nitrogen","granite","helium","marble"],
-                      correctPair: [2,4],
-                      explanation: "Oxygen, nitrogen, and helium are all gases. Granite and marble are types of stone, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 65,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["judge","surgeon","dentist","barrister","optician"],
-                      correctPair: [0,3],
-                      explanation: "Surgeon, dentist, and optician all work in healthcare. Judge and barrister both work in law, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 66,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["hurricane","earthquake","tornado","tsunami","cyclone"],
-                      correctPair: [1,3],
-                      explanation: "Hurricane, tornado, and cyclone are all powerful wind storms. Earthquake and tsunami are caused by movements of the Earth's crust, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 67,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["tortoise","python","cobra","turtle","viper"],
-                      correctPair: [0,3],
-                      explanation: "Python, cobra, and viper are all types of snake. Tortoise and turtle both have shells, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 68,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["dash","sprint","crawl","race","creep"],
-                      correctPair: [2,4],
-                      explanation: "Dash, sprint, and race all mean moving very quickly. Crawl and creep both mean moving very slowly, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 69,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["verse","chapter","chorus","paragraph","bridge"],
-                      correctPair: [1,3],
-                      explanation: "Verse, chorus, and bridge are all parts of a song. Chapter and paragraph are parts of a book, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 70,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["cathedral","mosque","museum","synagogue","gallery"],
-                      correctPair: [2,4],
-                      explanation: "Cathedral, mosque, and synagogue are all places of worship. Museum and gallery are places for viewing exhibits and art, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 71,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["violin","trombone","viola","trumpet","cello"],
-                      correctPair: [1,3],
-                      explanation: "Violin, viola, and cello are all stringed instruments played with a bow. Trombone and trumpet are brass instruments, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 72,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["walnut","almond","wheat","cashew","barley"],
-                      correctPair: [2,4],
-                      explanation: "Walnut, almond, and cashew are all types of nut. Wheat and barley are cereal grains, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 73,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["captain","private","bishop","sergeant","vicar"],
-                      correctPair: [2,4],
-                      explanation: "Captain, private, and sergeant are all military ranks. Bishop and vicar are members of the clergy, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 74,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["solar","coal","oil","wind","gas"],
-                      correctPair: [0,3],
-                      explanation: "Coal, oil, and gas are all fossil fuels. Solar and wind are renewable energy sources, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 75,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["oak","fern","maple","moss","birch"],
-                      correctPair: [1,3],
-                      explanation: "Oak, maple, and birch are all deciduous trees. Fern and moss are small plants that grow in shady, damp places, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 76,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["sketch","novel","portrait","poem","watercolour"],
-                      correctPair: [1,3],
-                      explanation: "Sketch, portrait, and watercolour are all types of visual artwork. Novel and poem are types of written literature, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 77,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["second","metre","minute","kilometre","hour"],
-                      correctPair: [1,3],
-                      explanation: "Second, minute, and hour are all units of time. Metre and kilometre are units of distance, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 78,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["canine","molar","femur","wisdom","tibia"],
-                      correctPair: [2,4],
-                      explanation: "Canine, molar, and wisdom are all types of tooth. Femur and tibia are bones in the leg, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 79,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["hexagon","pentagon","bicep","octagon","spine"],
-                      correctPair: [2,4],
-                      explanation: "Hexagon, pentagon, and octagon are all geometric shapes (polygons). Bicep and spine are parts of the human body, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 80,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["kinetic","thermal","friction","electrical","gravity"],
-                      correctPair: [2,4],
-                      explanation: "Kinetic, thermal, and electrical are all types of energy. Friction and gravity are types of force, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 81,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["igneous","clay","sedimentary","chalk","metamorphic"],
-                      correctPair: [1,3],
-                      explanation: "Igneous, sedimentary, and metamorphic are the three types of rock. Clay and chalk are types of soil or soft earth material, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 82,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["scarce","abundant","plentiful","rare","ample"],
-                      correctPair: [0,3],
-                      explanation: "Abundant, plentiful, and ample all mean there is a lot of something. Scarce and rare both mean there is very little, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 83,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["parliament","verdict","election","sentence","cabinet"],
-                      correctPair: [1,3],
-                      explanation: "Parliament, election, and cabinet are all related to government and politics. Verdict and sentence are terms used in law courts, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 84,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["erosion","weathering","evaporation","condensation","precipitation"],
-                      correctPair: [0,1],
-                      explanation: "Evaporation, condensation, and precipitation are all stages of the water cycle. Erosion and weathering are processes that wear away rock, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 85,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["tendon","artery","ligament","vein","cartilage"],
-                      correctPair: [1,3],
-                      explanation: "Tendon, ligament, and cartilage all connect or support bones and muscles. Artery and vein are both blood vessels, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 86,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["longitude","altitude","latitude","depth","equator"],
-                      correctPair: [1,3],
-                      explanation: "Longitude, latitude, and equator are all geographical terms for positions on the Earth's surface. Altitude and depth are vertical measurements (height and how deep), so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 87,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["famine","drought","plague","flood","epidemic"],
-                      correctPair: [1,3],
-                      explanation: "Famine, plague, and epidemic are all related to widespread suffering from hunger or disease. Drought and flood are both extreme water-related weather events, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 88,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["prefix","suffix","paragraph","root","chapter"],
-                      correctPair: [2,4],
-                      explanation: "Prefix, suffix, and root are all parts of a word. Paragraph and chapter are sections of written text, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 89,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["predator","photosynthesis","prey","respiration","germination"],
-                      correctPair: [0,2],
-                      explanation: "Photosynthesis, respiration, and germination are all biological processes in plants. Predator and prey describe animals in a food chain, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 90,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["acre","decade","hectare","century","square mile"],
-                      correctPair: [1,3],
-                      explanation: "Acre, hectare, and square mile are all units of area. Decade and century are units of time, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 91,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["compass","anchor","telescope","rudder","microscope"],
-                      correctPair: [1,3],
-                      explanation: "Compass, telescope, and microscope are all instruments used for navigation or observation. Anchor and rudder are both parts of a ship, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 92,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["conceal","disguise","reveal","camouflage","expose"],
-                      correctPair: [2,4],
-                      explanation: "Conceal, disguise, and camouflage all mean to hide something. Reveal and expose both mean to show something that was hidden, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              },
-              {
-                      id: 93,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["conductor","architect","orchestra","blueprint","symphony"],
-                      correctPair: [1,3],
-                      explanation: "Conductor, orchestra, and symphony are all related to music. Architect and blueprint are both related to designing buildings, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-              },
-              {
-                      id: 94,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["helium","mercury","iron","neon","copper"],
-                      correctPair: [0,3],
-                      explanation: "Mercury, iron, and copper are all metals on the periodic table. Helium and neon are noble gases, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-              },
-              {
-                      id: 95,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["peninsula","archipelago","continent","bay","gulf"],
-                      correctPair: [3,4],
-                      explanation: "Peninsula, archipelago, and continent are all landmasses or land formations. Bay and gulf are both bodies of water partly enclosed by land, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-              },
-              {
-                      id: 96,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["democracy","habitat","monarchy","ecosystem","dictatorship"],
-                      correctPair: [1,3],
-                      explanation: "Democracy, monarchy, and dictatorship are all systems of government. Habitat and ecosystem are both terms from ecology about where living things exist, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-              },
-              {
-                      id: 97,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["soprano","crotchet","tenor","quaver","alto"],
-                      correctPair: [1,3],
-                      explanation: "Soprano, tenor, and alto are all types of singing voice. Crotchet and quaver are musical note values (lengths of notes), so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-              },
-              {
-                      id: 98,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["immune","nervous","cumulus","digestive","nimbus"],
-                      correctPair: [2,4],
-                      explanation: "Immune, nervous, and digestive are all systems of the human body. Cumulus and nimbus are types of cloud, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-              },
-              {
-                      id: 99,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["stalactite","crater","stalagmite","orbit","cavern"],
-                      correctPair: [1,3],
-                      explanation: "Stalactite, stalagmite, and cavern are all found in underground caves. Crater and orbit are both associated with space and astronomy, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-              },
-              {
-                      id: 100,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "Find the two words that are the odd ones out.",
-                      options: ["solstice","isosceles","equinox","scalene","eclipse"],
-                      correctPair: [1,3],
-                      explanation: "Solstice, equinox, and eclipse are all astronomical events. Isosceles and scalene are types of triangle, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-              }
-      ,
-        {
-          "id": 101,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "football",
-            "cricket",
-            "painting",
-            "rugby",
-            "sculpture"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Football, cricket, and rugby are all sports. Painting and sculpture are forms of art, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-        },
-        {
-          "id": 102,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "hammer",
-            "cake",
-            "biscuit",
-            "muffin",
-            "drill"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Cake, biscuit, and muffin are all baked goods you can eat. Hammer and drill are tools, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-        },
-        {
-          "id": 103,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "shelf",
-            "ankle",
-            "wrist",
-            "cupboard",
-            "knee"
-          ],
-          "correctPair": [
-            0,
-            3
-          ],
-          "explanation": "Ankle, wrist, and knee are all joints in the human body. Shelf and cupboard are pieces of furniture, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-        },
-        {
-          "id": 104,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "January",
-            "Monday",
-            "March",
-            "Friday",
-            "April"
-          ],
-          "correctPair": [
-            1,
-            3
-          ],
-          "explanation": "January, March, and April are all months of the year. Monday and Friday are days of the week, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-        },
-        {
-          "id": 105,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "salmon",
-            "cow",
-            "sheep",
-            "pig",
-            "trout"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Cow, sheep, and pig are all farm animals. Salmon and trout are fish, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-        },
-        {
-          "id": 106,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "gloves",
-            "scarf",
-            "sandals",
-            "coat",
-            "shorts"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Gloves, scarf, and coat are all warm winter clothing. Sandals and shorts are worn in summer, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-        },
-        {
-          "id": 107,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "piano",
-            "pencil",
-            "ruler",
-            "guitar",
-            "rubber"
-          ],
-          "correctPair": [
-            0,
-            3
-          ],
-          "explanation": "Pencil, ruler, and rubber are all stationery items. Piano and guitar are musical instruments, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-        },
-        {
-          "id": 108,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "daisy",
-            "rose",
-            "elm",
-            "tulip",
-            "oak"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Daisy, rose, and tulip are all flowers. Elm and oak are types of tree, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-        },
-        {
-          "id": 109,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "bridge",
-            "cathedral",
-            "mosque",
-            "temple",
-            "tunnel"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Cathedral, mosque, and temple are all places of worship. Bridge and tunnel are both structures for crossing obstacles, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-        },
-        {
-          "id": 110,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "simile",
-            "fraction",
-            "metaphor",
-            "decimal",
-            "alliteration"
-          ],
-          "correctPair": [
-            1,
-            3
-          ],
-          "explanation": "Simile, metaphor, and alliteration are all techniques used in English writing. Fraction and decimal are both mathematical terms, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-        },
-        {
-          "id": 111,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "Atlantic",
-            "Mars",
-            "Venus",
-            "Jupiter",
-            "Pacific"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Mars, Venus, and Jupiter are all planets in our solar system. Atlantic and Pacific are oceans, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-        },
-        {
-          "id": 112,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "easel",
-            "cello",
-            "harp",
-            "violin",
-            "canvas"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Cello, harp, and violin are all stringed musical instruments. Easel and canvas are used for painting, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-        },
-        {
-          "id": 113,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "elm",
-            "pine",
-            "granite",
-            "maple",
-            "marble"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Elm, pine, and maple are all types of tree. Granite and marble are types of stone, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-        },
-        {
-          "id": 114,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "iron",
-            "oxygen",
-            "helium",
-            "nitrogen",
-            "lead"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Oxygen, helium, and nitrogen are all gases at room temperature. Iron and lead are solid metals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-        },
-        {
-          "id": 115,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "beret",
-            "turban",
-            "bracelet",
-            "cap",
-            "necklace"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Beret, turban, and cap are all headwear. Bracelet and necklace are jewellery, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-        },
-        {
-          "id": 116,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "sprint",
-            "stammer",
-            "mumble",
-            "whisper",
-            "jog"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Stammer, mumble, and whisper are all ways of speaking. Sprint and jog are ways of running, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-        },
-        {
-          "id": 117,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "kettle",
-            "compass",
-            "telescope",
-            "binoculars",
-            "toaster"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Compass, telescope, and binoculars are all instruments for navigation or observation. Kettle and toaster are kitchen appliances, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-        },
-        {
-          "id": 118,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "waltz",
-            "sketch",
-            "tango",
-            "portrait",
-            "salsa"
-          ],
-          "correctPair": [
-            1,
-            3
-          ],
-          "explanation": "Waltz, tango, and salsa are all types of dance. Sketch and portrait are both types of artwork, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
-        },
-        {
-          "id": 119,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "allegro",
-            "sonnet",
-            "tempo",
-            "limerick",
-            "crescendo"
-          ],
-          "correctPair": [
-            1,
-            3
-          ],
-          "explanation": "Allegro, tempo, and crescendo are all musical terms. Sonnet and limerick are both types of poem, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
-        },
-        {
-          "id": 120,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "archipelago",
-            "glacier",
-            "peninsula",
-            "iceberg",
-            "isthmus"
-          ],
-          "correctPair": [
-            1,
-            3
-          ],
-          "explanation": "Archipelago, peninsula, and isthmus are all geographical landforms. Glacier and iceberg are both large masses of ice, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
-        },
-        {
-          "id": 121,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "quartz",
-            "emerald",
-            "limestone",
-            "sapphire",
-            "sandstone"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Quartz, emerald, and sapphire are all gemstones or precious minerals. Limestone and sandstone are sedimentary rocks, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
-        },
-        {
-          "id": 122,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "treaty",
-            "famine",
-            "plague",
-            "drought",
-            "alliance"
-          ],
-          "correctPair": [
-            0,
-            4
-          ],
-          "explanation": "Famine, plague, and drought are all disasters that cause suffering. Treaty and alliance are both agreements between groups, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
-        },
-        {
-          "id": 123,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "prologue",
-            "equation",
-            "epilogue",
-            "formula",
-            "chapter"
-          ],
-          "correctPair": [
-            1,
-            3
-          ],
-          "explanation": "Prologue, epilogue, and chapter are all parts of a book. Equation and formula are both mathematical expressions, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
-        },
-        {
-          "id": 124,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "meridian",
-            "latitude",
-            "velocity",
-            "equator",
-            "acceleration"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Meridian, latitude, and equator are all geographical terms relating to lines on a map or globe. Velocity and acceleration are both physics terms about motion, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
-        },
-        {
-          "id": 125,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "Find the two words that are the odd ones out.",
-          "options": [
-            "oboe",
-            "bassoon",
-            "sonata",
-            "clarinet",
-            "symphony"
-          ],
-          "correctPair": [
-            2,
-            4
-          ],
-          "explanation": "Oboe, bassoon, and clarinet are all woodwind instruments. Sonata and symphony are both types of musical composition, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
-        }
+            {
+                  "id": 1,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "eagle",
+                        "sparrow",
+                        "bat",
+                        "penguin",
+                        "robin"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "Eagle, sparrow, and robin are all common flying birds. Bat is a mammal (not a bird), and penguin is a bird that cannot fly. Both are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 2,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "table",
+                        "chair",
+                        "lamp",
+                        "sofa",
+                        "wardrobe"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Table, chair, and sofa are all furniture you sit at or on. A lamp provides light and a wardrobe stores clothes — neither is for sitting. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 3,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "apple",
+                        "carrot",
+                        "banana",
+                        "grape",
+                        "potato"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Apple, banana, and grape are all fruits. Carrot and potato are vegetables, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 4,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "goldfish",
+                        "hamster",
+                        "rabbit",
+                        "trout",
+                        "guinea pig"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Hamster, rabbit, and guinea pig are furry pets you can hold. Goldfish and trout are both fish, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 5,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "red",
+                        "triangle",
+                        "blue",
+                        "green",
+                        "square"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Red, blue, and green are all colours. Triangle and square are shapes, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 6,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "violin",
+                        "crayon",
+                        "trumpet",
+                        "flute",
+                        "paintbrush"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Violin, trumpet, and flute are all musical instruments. Crayon and paintbrush are art supplies, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 7,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "tennis",
+                        "chess",
+                        "badminton",
+                        "draughts",
+                        "squash"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Tennis, badminton, and squash are all racquet sports. Chess and draughts are board games, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 8,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "fork",
+                        "saucepan",
+                        "knife",
+                        "spoon",
+                        "frying pan"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Fork, knife, and spoon are all cutlery. Saucepan and frying pan are cooking pans, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 9,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "oak",
+                        "daisy",
+                        "willow",
+                        "beech",
+                        "tulip"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Oak, willow, and beech are all types of tree. Daisy and tulip are flowers, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 10,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "whisper",
+                        "listen",
+                        "shout",
+                        "announce",
+                        "hear"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Whisper, shout, and announce all involve speaking or making a sound. Listen and hear both involve receiving sound, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 11,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "iron",
+                        "cotton",
+                        "steel",
+                        "bronze",
+                        "silk"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Iron, steel, and bronze are all metals. Cotton and silk are fabrics, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 12,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "foal",
+                        "stallion",
+                        "calf",
+                        "mare",
+                        "lamb"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Foal, stallion, and mare are all types of horse (young, male adult, female adult). Calf (young cow) and lamb (young sheep) are baby animals of different species, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 13,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "sprint",
+                        "marathon",
+                        "crawl",
+                        "relay",
+                        "stroll"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Sprint, marathon, and relay are all types of race. Crawl and stroll are slow ways of moving, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 14,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "metre",
+                        "kilogram",
+                        "centimetre",
+                        "mile",
+                        "tonne"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Metre, centimetre, and mile are all units of length. Kilogram and tonne are units of weight, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 15,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "biography",
+                        "tragedy",
+                        "autobiography",
+                        "comedy",
+                        "encyclopedia"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Biography, autobiography, and encyclopedia are all types of non-fiction writing. Tragedy and comedy are types of drama, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 16,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "radius",
+                        "volume",
+                        "diameter",
+                        "circumference",
+                        "capacity"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Radius, diameter, and circumference are all measurements of a circle. Volume and capacity are measurements of 3D space, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 17,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "simile",
+                        "adjective",
+                        "metaphor",
+                        "personification",
+                        "adverb"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Simile, metaphor, and personification are all figures of speech. Adjective and adverb are word classes, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 18,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "serene",
+                        "furious",
+                        "tranquil",
+                        "placid",
+                        "irate"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Serene, tranquil, and placid all mean calm and peaceful. Furious and irate both mean very angry, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 19,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "valley",
+                        "strait",
+                        "plateau",
+                        "channel",
+                        "cliff"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Valley, plateau, and cliff are all land formations. Strait and channel are both narrow passages of water, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 20,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "democracy",
+                        "sonnet",
+                        "republic",
+                        "monarchy",
+                        "limerick"
+                  ],
+                  "correctPair": [
+                        1,
+                        4
+                  ],
+                  "explanation": "Democracy, republic, and monarchy are all types of government. Sonnet and limerick are types of poem, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 21,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "shark",
+                        "cod",
+                        "eagle",
+                        "mackerel",
+                        "owl"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Shark, cod, and mackerel are all fish. Eagle and owl are birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 22,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "bookcase",
+                        "wardrobe",
+                        "jumper",
+                        "trousers",
+                        "coat"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Jumper, trousers, and coat are all items of clothing. Bookcase and wardrobe are pieces of furniture, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 23,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "helicopter",
+                        "bicycle",
+                        "scooter",
+                        "skateboard",
+                        "aeroplane"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Bicycle, scooter, and skateboard all travel on the ground with wheels. Helicopter and aeroplane both fly, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 24,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "rose",
+                        "hammer",
+                        "daffodil",
+                        "screwdriver",
+                        "sunflower"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Rose, daffodil, and sunflower are all flowers. Hammer and screwdriver are tools, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 25,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "rain",
+                        "ankle",
+                        "elbow",
+                        "snow",
+                        "wrist"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Ankle, elbow, and wrist are all joints in the body. Rain and snow are types of weather, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 26,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "pear",
+                        "lettuce",
+                        "mango",
+                        "spinach",
+                        "plum"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Pear, mango, and plum are all fruits. Lettuce and spinach are leafy vegetables, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 27,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "drum",
+                        "guitar",
+                        "teddy bear",
+                        "piano",
+                        "doll"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Drum, guitar, and piano are all musical instruments. Teddy bear and doll are toys, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 28,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "Monday",
+                        "March",
+                        "Friday",
+                        "August",
+                        "Wednesday"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Monday, Friday, and Wednesday are all days of the week. March and August are months of the year, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 29,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "sparrow",
+                        "whale",
+                        "dolphin",
+                        "robin",
+                        "seal"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Whale, dolphin, and seal are all marine mammals. Sparrow and robin are small garden birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 30,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "library",
+                        "hospital",
+                        "school",
+                        "bus",
+                        "train"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "Library, hospital, and school are all buildings. Bus and train are types of transport, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 31,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "crab",
+                        "lobster",
+                        "parrot",
+                        "prawn",
+                        "budgie"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Crab, lobster, and prawn are all shellfish. Parrot and budgie are pet birds, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 32,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "bread",
+                        "toast",
+                        "milk",
+                        "sandwich",
+                        "juice"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Bread, toast, and sandwich are all foods made from bread. Milk and juice are drinks, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 33,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "oven",
+                        "pencil",
+                        "ruler",
+                        "toaster",
+                        "eraser"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Pencil, ruler, and eraser are all stationery items. Oven and toaster are kitchen appliances, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 34,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "cow",
+                        "tiger",
+                        "lion",
+                        "leopard",
+                        "sheep"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Tiger, lion, and leopard are all big cats. Cow and sheep are farm animals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 35,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "pond",
+                        "lake",
+                        "cherry",
+                        "strawberry",
+                        "raspberry"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Cherry, strawberry, and raspberry are all red berries. Pond and lake are bodies of fresh water, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 36,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "football",
+                        "rugby",
+                        "painting",
+                        "cricket",
+                        "sculpture"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Football, rugby, and cricket are all team sports played with a ball. Painting and sculpture are forms of art, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 37,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "hat",
+                        "glove",
+                        "scarf",
+                        "boot",
+                        "slipper"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "Hat, glove, and scarf are all winter accessories worn above the waist. Boot and slipper are types of footwear, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 38,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "candle",
+                        "sun",
+                        "pillow",
+                        "torch",
+                        "blanket"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Candle, sun, and torch all give off light. Pillow and blanket are bedding items, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 39,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "broccoli",
+                        "orange",
+                        "cabbage",
+                        "peach",
+                        "apricot"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "Orange, peach, and apricot are all fruits. Broccoli and cabbage are vegetables, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 40,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "caterpillar",
+                        "frog",
+                        "butterfly",
+                        "toad",
+                        "bee"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Caterpillar, butterfly, and bee are all insects. Frog and toad are amphibians, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 41,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "television",
+                        "radio",
+                        "sofa",
+                        "armchair",
+                        "stool"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Sofa, armchair, and stool are all things you sit on. Television and radio are electronic entertainment devices, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 42,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "eye",
+                        "spoon",
+                        "ear",
+                        "fork",
+                        "nose"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Eye, ear, and nose are all parts of the face. Spoon and fork are items of cutlery, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 43,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "nurse",
+                        "teacher",
+                        "stethoscope",
+                        "thermometer",
+                        "headteacher"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "Nurse, teacher, and headteacher are all people with jobs. Stethoscope and thermometer are pieces of medical equipment, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 44,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "river",
+                        "stream",
+                        "mountain",
+                        "canal",
+                        "hill"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "River, stream, and canal are all waterways. Mountain and hill are raised landforms, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 45,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "salmon",
+                        "sparrow",
+                        "trout",
+                        "starling",
+                        "pike"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Salmon, trout, and pike are all freshwater fish. Sparrow and starling are common garden birds, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 46,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "cello",
+                        "easel",
+                        "violin",
+                        "palette",
+                        "harp"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Cello, violin, and harp are all stringed instruments. Easel and palette are both used by painters, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 47,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "France",
+                        "Edinburgh",
+                        "Cardiff",
+                        "Germany",
+                        "Belfast"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Edinburgh, Cardiff, and Belfast are all capital cities of UK nations. France and Germany are countries, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 48,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "oboe",
+                        "harp",
+                        "clarinet",
+                        "cello",
+                        "bassoon"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Oboe, clarinet, and bassoon are all woodwind instruments. Harp and cello are stringed instruments, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 49,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "rabbit",
+                        "lion",
+                        "wolf",
+                        "deer",
+                        "bear"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Lion, wolf, and bear are all carnivores (meat-eaters). Rabbit and deer are herbivores (plant-eaters), so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 50,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "Saturn",
+                        "comet",
+                        "Mars",
+                        "asteroid",
+                        "Jupiter"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Saturn, Mars, and Jupiter are all planets in our solar system. Comet and asteroid are smaller objects that orbit the Sun, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 51,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "Antarctica",
+                        "Brazil",
+                        "Egypt",
+                        "Arctic",
+                        "India"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Brazil, Egypt, and India are all countries. Antarctica and Arctic are polar regions (not countries), so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 52,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "cub",
+                        "puppy",
+                        "stallion",
+                        "kitten",
+                        "bull"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Cub, puppy, and kitten are all names for young animals. Stallion (adult male horse) and bull (adult male cow) are names for adult animals, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 53,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "ruler",
+                        "thermometer",
+                        "protractor",
+                        "barometer",
+                        "compass"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Ruler, protractor, and compass are all maths instruments used for drawing and measuring on paper. Thermometer and barometer are scientific instruments that measure weather conditions, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 54,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "tennis",
+                        "diving",
+                        "volleyball",
+                        "swimming",
+                        "basketball"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Tennis, volleyball, and basketball are all played with a ball. Diving and swimming are water sports without a ball, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 55,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "yoghurt",
+                        "cream",
+                        "cheddar",
+                        "brie",
+                        "stilton"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Cheddar, brie, and stilton are all types of cheese. Yoghurt and cream are other dairy products, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 56,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "emerald",
+                        "ruby",
+                        "diamond",
+                        "gold",
+                        "silver"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "Emerald, ruby, and diamond are all gemstones. Gold and silver are precious metals, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 57,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "crocodile",
+                        "whale",
+                        "salmon",
+                        "lizard",
+                        "trout"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Whale, salmon, and trout all live in water. Crocodile and lizard are both reptiles that spend most of their time on land, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 58,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "bungalow",
+                        "flat",
+                        "cottage",
+                        "tent",
+                        "caravan"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "Bungalow, flat, and cottage are all permanent homes. Tent and caravan are temporary or movable shelters, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 59,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "giggle",
+                        "chuckle",
+                        "sob",
+                        "snigger",
+                        "weep"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Giggle, chuckle, and snigger are all ways of laughing. Sob and weep are ways of crying, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 60,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "nephew",
+                        "aunt",
+                        "cousin",
+                        "uncle",
+                        "niece"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Nephew, cousin, and niece are all younger or same-generation relatives. Aunt and uncle are older-generation relatives (parents' siblings), so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 61,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "pint",
+                        "gallon",
+                        "inch",
+                        "foot",
+                        "yard"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Inch, foot, and yard are all units of length. Pint and gallon are units of volume (liquid measurement), so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 62,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "atlas",
+                        "biography",
+                        "globe",
+                        "diary",
+                        "map"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Atlas, globe, and map are all used for geography and finding places. Biography and diary are both types of writing about a person's life, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 63,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "glacier",
+                        "iceberg",
+                        "desert",
+                        "avalanche",
+                        "volcano"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Glacier, iceberg, and avalanche are all related to ice and snow. Desert and volcano are associated with extreme heat, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 64,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "oxygen",
+                        "nitrogen",
+                        "granite",
+                        "helium",
+                        "marble"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Oxygen, nitrogen, and helium are all gases. Granite and marble are types of stone, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 65,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "judge",
+                        "surgeon",
+                        "dentist",
+                        "barrister",
+                        "optician"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Surgeon, dentist, and optician all work in healthcare. Judge and barrister both work in law, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 66,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "hurricane",
+                        "earthquake",
+                        "tornado",
+                        "tsunami",
+                        "cyclone"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Hurricane, tornado, and cyclone are all powerful wind storms. Earthquake and tsunami are caused by movements of the Earth's crust, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 67,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "tortoise",
+                        "python",
+                        "cobra",
+                        "turtle",
+                        "viper"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Python, cobra, and viper are all types of snake. Tortoise and turtle both have shells, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 68,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "dash",
+                        "sprint",
+                        "crawl",
+                        "race",
+                        "creep"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Dash, sprint, and race all mean moving very quickly. Crawl and creep both mean moving very slowly, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 69,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "verse",
+                        "chapter",
+                        "chorus",
+                        "paragraph",
+                        "bridge"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Verse, chorus, and bridge are all parts of a song. Chapter and paragraph are parts of a book, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 70,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "cathedral",
+                        "mosque",
+                        "museum",
+                        "synagogue",
+                        "gallery"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Cathedral, mosque, and synagogue are all places of worship. Museum and gallery are places for viewing exhibits and art, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 71,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "violin",
+                        "trombone",
+                        "viola",
+                        "trumpet",
+                        "cello"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Violin, viola, and cello are all stringed instruments played with a bow. Trombone and trumpet are brass instruments, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 72,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "walnut",
+                        "almond",
+                        "wheat",
+                        "cashew",
+                        "barley"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Walnut, almond, and cashew are all types of nut. Wheat and barley are cereal grains, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 73,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "captain",
+                        "private",
+                        "bishop",
+                        "sergeant",
+                        "vicar"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Captain, private, and sergeant are all military ranks. Bishop and vicar are members of the clergy, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 74,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "solar",
+                        "coal",
+                        "oil",
+                        "wind",
+                        "gas"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Coal, oil, and gas are all fossil fuels. Solar and wind are renewable energy sources, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 75,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "oak",
+                        "fern",
+                        "maple",
+                        "moss",
+                        "birch"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Oak, maple, and birch are all deciduous trees. Fern and moss are small plants that grow in shady, damp places, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 76,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "sketch",
+                        "novel",
+                        "portrait",
+                        "poem",
+                        "watercolour"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Sketch, portrait, and watercolour are all types of visual artwork. Novel and poem are types of written literature, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 77,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "second",
+                        "metre",
+                        "minute",
+                        "kilometre",
+                        "hour"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Second, minute, and hour are all units of time. Metre and kilometre are units of distance, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 78,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "canine",
+                        "molar",
+                        "femur",
+                        "wisdom",
+                        "tibia"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Canine, molar, and wisdom are all types of tooth. Femur and tibia are bones in the leg, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 79,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "hexagon",
+                        "pentagon",
+                        "bicep",
+                        "octagon",
+                        "spine"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Hexagon, pentagon, and octagon are all geometric shapes (polygons). Bicep and spine are parts of the human body, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 80,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "kinetic",
+                        "thermal",
+                        "friction",
+                        "electrical",
+                        "gravity"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Kinetic, thermal, and electrical are all types of energy. Friction and gravity are types of force, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 81,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "igneous",
+                        "clay",
+                        "sedimentary",
+                        "chalk",
+                        "metamorphic"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Igneous, sedimentary, and metamorphic are the three types of rock. Clay and chalk are types of soil or soft earth material, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 82,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "scarce",
+                        "abundant",
+                        "plentiful",
+                        "rare",
+                        "ample"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Abundant, plentiful, and ample all mean there is a lot of something. Scarce and rare both mean there is very little, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 83,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "parliament",
+                        "verdict",
+                        "election",
+                        "sentence",
+                        "cabinet"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Parliament, election, and cabinet are all related to government and politics. Verdict and sentence are terms used in law courts, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 84,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "erosion",
+                        "weathering",
+                        "evaporation",
+                        "condensation",
+                        "precipitation"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "Evaporation, condensation, and precipitation are all stages of the water cycle. Erosion and weathering are processes that wear away rock, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 85,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "tendon",
+                        "artery",
+                        "ligament",
+                        "vein",
+                        "cartilage"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Tendon, ligament, and cartilage all connect or support bones and muscles. Artery and vein are both blood vessels, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 86,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "longitude",
+                        "altitude",
+                        "latitude",
+                        "depth",
+                        "equator"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Longitude, latitude, and equator are all geographical terms for positions on the Earth's surface. Altitude and depth are vertical measurements (height and how deep), so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 87,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "famine",
+                        "drought",
+                        "plague",
+                        "flood",
+                        "epidemic"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Famine, plague, and epidemic are all related to widespread suffering from hunger or disease. Drought and flood are both extreme water-related weather events, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 88,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "prefix",
+                        "suffix",
+                        "paragraph",
+                        "root",
+                        "chapter"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Prefix, suffix, and root are all parts of a word. Paragraph and chapter are sections of written text, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 89,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "predator",
+                        "photosynthesis",
+                        "prey",
+                        "respiration",
+                        "germination"
+                  ],
+                  "correctPair": [
+                        0,
+                        2
+                  ],
+                  "explanation": "Photosynthesis, respiration, and germination are all biological processes in plants. Predator and prey describe animals in a food chain, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 90,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "acre",
+                        "decade",
+                        "hectare",
+                        "century",
+                        "square mile"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Acre, hectare, and square mile are all units of area. Decade and century are units of time, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 91,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "compass",
+                        "anchor",
+                        "telescope",
+                        "rudder",
+                        "microscope"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Compass, telescope, and microscope are all instruments used for navigation or observation. Anchor and rudder are both parts of a ship, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 92,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "conceal",
+                        "disguise",
+                        "reveal",
+                        "camouflage",
+                        "expose"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Conceal, disguise, and camouflage all mean to hide something. Reveal and expose both mean to show something that was hidden, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 93,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "conductor",
+                        "architect",
+                        "orchestra",
+                        "blueprint",
+                        "symphony"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Conductor, orchestra, and symphony are all related to music. Architect and blueprint are both related to designing buildings, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 94,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "helium",
+                        "mercury",
+                        "iron",
+                        "neon",
+                        "copper"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Mercury, iron, and copper are all metals on the periodic table. Helium and neon are noble gases, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 95,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "peninsula",
+                        "archipelago",
+                        "continent",
+                        "bay",
+                        "gulf"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "Peninsula, archipelago, and continent are all landmasses or land formations. Bay and gulf are both bodies of water partly enclosed by land, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 96,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "democracy",
+                        "habitat",
+                        "monarchy",
+                        "ecosystem",
+                        "dictatorship"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Democracy, monarchy, and dictatorship are all systems of government. Habitat and ecosystem are both terms from ecology about where living things exist, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 97,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "soprano",
+                        "crotchet",
+                        "tenor",
+                        "quaver",
+                        "alto"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Soprano, tenor, and alto are all types of singing voice. Crotchet and quaver are musical note values (lengths of notes), so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 98,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "immune",
+                        "nervous",
+                        "cumulus",
+                        "digestive",
+                        "nimbus"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Immune, nervous, and digestive are all systems of the human body. Cumulus and nimbus are types of cloud, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 99,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "stalactite",
+                        "crater",
+                        "stalagmite",
+                        "orbit",
+                        "cavern"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Stalactite, stalagmite, and cavern are all found in underground caves. Crater and orbit are both associated with space and astronomy, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 100,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "solstice",
+                        "isosceles",
+                        "equinox",
+                        "scalene",
+                        "eclipse"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Solstice, equinox, and eclipse are all astronomical events. Isosceles and scalene are types of triangle, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 101,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "hammer",
+                        "cake",
+                        "biscuit",
+                        "muffin",
+                        "drill"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Cake, biscuit, and muffin are all baked goods you can eat. Hammer and drill are tools, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 102,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "shelf",
+                        "ankle",
+                        "wrist",
+                        "cupboard",
+                        "knee"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Ankle, wrist, and knee are all joints in the human body. Shelf and cupboard are pieces of furniture, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 103,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "January",
+                        "Monday",
+                        "March",
+                        "Friday",
+                        "April"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "January, March, and April are all months of the year. Monday and Friday are days of the week, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 104,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "salmon",
+                        "cow",
+                        "sheep",
+                        "pig",
+                        "trout"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Cow, sheep, and pig are all farm animals. Salmon and trout are fish, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 105,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "gloves",
+                        "scarf",
+                        "sandals",
+                        "coat",
+                        "shorts"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Gloves, scarf, and coat are all warm winter clothing. Sandals and shorts are worn in summer, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 106,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "piano",
+                        "pencil",
+                        "ruler",
+                        "guitar",
+                        "rubber"
+                  ],
+                  "correctPair": [
+                        0,
+                        3
+                  ],
+                  "explanation": "Pencil, ruler, and rubber are all stationery items. Piano and guitar are musical instruments, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 107,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "daisy",
+                        "rose",
+                        "elm",
+                        "tulip",
+                        "oak"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Daisy, rose, and tulip are all flowers. Elm and oak are types of tree, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 108,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "bridge",
+                        "cathedral",
+                        "mosque",
+                        "temple",
+                        "tunnel"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Cathedral, mosque, and temple are all places of worship. Bridge and tunnel are both structures for crossing obstacles, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 109,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "simile",
+                        "fraction",
+                        "metaphor",
+                        "decimal",
+                        "alliteration"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Simile, metaphor, and alliteration are all techniques used in English writing. Fraction and decimal are both mathematical terms, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 110,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "Atlantic",
+                        "Mars",
+                        "Venus",
+                        "Jupiter",
+                        "Pacific"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Mars, Venus, and Jupiter are all planets in our solar system. Atlantic and Pacific are oceans, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 111,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "easel",
+                        "cello",
+                        "harp",
+                        "violin",
+                        "canvas"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Cello, harp, and violin are all stringed musical instruments. Easel and canvas are used for painting, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 112,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "elm",
+                        "pine",
+                        "granite",
+                        "maple",
+                        "marble"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Elm, pine, and maple are all types of tree. Granite and marble are types of stone, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 113,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "iron",
+                        "oxygen",
+                        "helium",
+                        "nitrogen",
+                        "lead"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Oxygen, helium, and nitrogen are all gases at room temperature. Iron and lead are solid metals, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 114,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "beret",
+                        "turban",
+                        "bracelet",
+                        "cap",
+                        "necklace"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Beret, turban, and cap are all headwear. Bracelet and necklace are jewellery, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 115,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "sprint",
+                        "stammer",
+                        "mumble",
+                        "whisper",
+                        "jog"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Stammer, mumble, and whisper are all ways of speaking. Sprint and jog are ways of running, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 116,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "kettle",
+                        "compass",
+                        "telescope",
+                        "binoculars",
+                        "toaster"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Compass, telescope, and binoculars are all instruments for navigation or observation. Kettle and toaster are kitchen appliances, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            },
+            {
+                  "id": 117,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "waltz",
+                        "sketch",
+                        "tango",
+                        "portrait",
+                        "salsa"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Waltz, tango, and salsa are all types of dance. Sketch and portrait are both types of artwork, so they are the odd ones out. Tip: Watch for double meanings — 'lamb' could mean a young animal OR a type of meat. ✓"
+            },
+            {
+                  "id": 118,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "allegro",
+                        "sonnet",
+                        "tempo",
+                        "limerick",
+                        "crescendo"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Allegro, tempo, and crescendo are all musical terms. Sonnet and limerick are both types of poem, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+            },
+            {
+                  "id": 119,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "archipelago",
+                        "glacier",
+                        "peninsula",
+                        "iceberg",
+                        "isthmus"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Archipelago, peninsula, and isthmus are all geographical landforms. Glacier and iceberg are both large masses of ice, so they are the odd ones out. Tip: Check your answer — do the remaining three genuinely share ONE clear link? ✓"
+            },
+            {
+                  "id": 120,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "quartz",
+                        "emerald",
+                        "limestone",
+                        "sapphire",
+                        "sandstone"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Quartz, emerald, and sapphire are all gemstones or precious minerals. Limestone and sandstone are sedimentary rocks, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+            },
+            {
+                  "id": 121,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "treaty",
+                        "famine",
+                        "plague",
+                        "drought",
+                        "alliance"
+                  ],
+                  "correctPair": [
+                        0,
+                        4
+                  ],
+                  "explanation": "Famine, plague, and drought are all disasters that cause suffering. Treaty and alliance are both agreements between groups, so they are the odd ones out. Tip: Name the link specifically. 'All trees' is better than 'all nature things'.. ✓"
+            },
+            {
+                  "id": 122,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "prologue",
+                        "equation",
+                        "epilogue",
+                        "formula",
+                        "chapter"
+                  ],
+                  "correctPair": [
+                        1,
+                        3
+                  ],
+                  "explanation": "Prologue, epilogue, and chapter are all parts of a book. Equation and formula are both mathematical expressions, so they are the odd ones out. Tip: The two odd words do NOT need to relate to each other — they are just the leftovers. ✓"
+            },
+            {
+                  "id": 123,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "meridian",
+                        "latitude",
+                        "velocity",
+                        "equator",
+                        "acceleration"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Meridian, latitude, and equator are all geographical terms relating to lines on a map or globe. Velocity and acceleration are both physics terms about motion, so they are the odd ones out. Tip: If all five seem to belong to one group, look for a more SPECIFIC sub-category that only three share. ✓"
+            },
+            {
+                  "id": 124,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "Find the two words that are the odd ones out.",
+                  "options": [
+                        "oboe",
+                        "bassoon",
+                        "sonata",
+                        "clarinet",
+                        "symphony"
+                  ],
+                  "correctPair": [
+                        2,
+                        4
+                  ],
+                  "explanation": "Oboe, bassoon, and clarinet are all woodwind instruments. Sonata and symphony are both types of musical composition, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+            }
       ]
     },
 
@@ -7885,2720 +9400,4121 @@ const vrData = {
     hiddenWords: {
       name: "Hidden Words",
       questions: [
-              {
-                      id: 1,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'not closed' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "The",
-                              "top",
-                              "end",
-                              "was",
-                              "closed"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "The word OPEN is hidden across 'tOP' and 'ENd'. Take the last two letters of 'top' (OP) and the first two of 'end' (EN) = OPEN. ✓"
-              },
-              {
-                      id: 2,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'warmth' is hidden across two of these words. Find the two words.",
-                      options: ["something", "Each", "time", "she", "ate"],
-                      correctPair: [3, 4],
-                      explanation: "The word HEAT is hidden across 'sHE' and 'ATe'. Take the last two letters of 'she' (HE) and the first two of 'ate' (AT) = HEAT. ✓"
-              },
-              {
-                      id: 3,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'part of the body' is hidden across two of these words. Find the two words.",
-                      options: ["sea", "Near", "the", "beach", "and"],
-                      correctPair: [3, 4],
-                      explanation: "The word HAND is hidden across 'beach' and 'and'. Take the last letter of 'beach' (H) and all three letters of 'and' (AND) = HAND. A hand is a part of the body. ✓"
-              },
-              {
-                      id: 4,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to care for deeply' is hidden across two of these words. Find the two words.",
-                      options: ["there", "Go", "to", "school", "over"],
-                      correctPair: [3, 4],
-                      explanation: "The word LOVE is hidden across 'schooL' and 'OVEr'. Take the last letter of 'school' (L) and the first three of 'over' (OVE) = LOVE. ✓"
-              },
-              {
-                      id: 5,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a brave person' is hidden across two of these words. Find the two words.",
-                      options: ["away", "Just", "before", "she", "rode"],
-                      correctPair: [3, 4],
-                      explanation: "The word HERO is hidden across 'sHE' and 'ROde'. Take the last two letters of 'she' (HE) and the first two of 'rode' (RO) = HERO. ✓"
-              },
-              {
-                      id: 6,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'water falling from clouds' is hidden across two of these words. Look where two words join together.",
-                      options: ["carefully", "Pack", "your", "camera", "inside"],
-                      correctPair: [3, 4],
-                      explanation: "The word RAIN is hidden across 'cameRA' and 'INside'. Take the last two letters of 'camera' (RA) and the first two of 'inside' (IN) = RAIN. ✓"
-              },
-              {
-                      id: 7,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a curved structure' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "He",
-                              "saw",
-                              "the",
-                              "clear",
-                              "chance"
-                      ],
-                      correctPair: [
-                              3,
-                              4
-                      ],
-                      explanation: "The word ARCH is hidden across 'cleAR' and 'CHance'. Take the last two letters of 'clear' (AR) and the first two of 'chance' (CH) = ARCH. ✓"
-              },
-              {
-                      id: 8,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'slim or not thick' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "The",
-                              "warmth",
-                              "inside",
-                              "felt",
-                              "good"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "The word THIN is hidden across 'warmTH' and 'INside'. Take the last two letters of 'warmth' (TH) and the first two of 'inside' (IN) = THIN. ✓"
-              },
-              {
-                      id: 9,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'capable' is hidden across two of these words. Find the two words.",
-                      options: ["here", "Find", "the", "extra", "blend"],
-                      correctPair: [3, 4],
-                      explanation: "The word ABLE is hidden across 'extrA' and 'BLEnd'. Take the last letter of 'extra' (A) and the first three of 'blend' (BLE) = ABLE. ✓"
-              },
-              {
-                      id: 10,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a magic stick' is hidden across two of these words. Find the two words.",
-                      options: ["leave", "He", "finally", "saw", "Andrew"],
-                      correctPair: [3, 4],
-                      explanation: "The word WAND is hidden across 'saW' and 'ANDrew'. Take the last letter of 'saw' (W) and the first three of 'Andrew' (AND) = WAND. ✓"
-              },
-              {
-                      id: 11,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to practise boxing' is hidden across two of these words. Find the two words.",
-                      options: ["well", "Play", "your", "chess", "partner"],
-                      correctPair: [3, 4],
-                      explanation: "The word SPAR is hidden across 'chesS' and 'PARtner'. Take the last letter of 'chess' (S) and the first three of 'partner' (PAR) = SPAR. ✓"
-              },
-              {
-                      id: 12,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a large black bird' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "That",
-                              "epic",
-                              "row",
-                              "angered",
-                              "everyone"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "The word CROW is hidden across 'epiC' and 'ROW'. Take the last letter of 'epic' (C) and all of 'row' (ROW) = CROW. ✓"
-              },
-              {
-                      id: 13,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a wheeled vehicle pulled by a horse' is hidden across two of these words. Find the two words.",
-                      options: ["perform", "See", "the", "magic", "artist"],
-                      correctPair: [3, 4],
-                      explanation: "The word CART is hidden across 'magiC' and 'ARTist'. Take the last letter of 'magic' (C) and the first three of 'artist' (ART) = CART. ✓"
-              },
-              {
-                      id: 14,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'an irritating feeling on the skin' is hidden across two of these words. Find the two words.",
-                      options: ["wisely", "The", "small", "rabbit", "chose"],
-                      correctPair: [3, 4],
-                      explanation: "The word ITCH is hidden across 'rabbIT' and 'CHose'. Take the last two letters of 'rabbit' (IT) and the first two of 'chose' (CH) = ITCH. ✓"
-              },
-              {
-                      id: 15,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a grain eaten around the world' is hidden across two of these words. Find the two words.",
-                      options: ["broke", "The", "noisy", "electric", "engine"],
-                      correctPair: [3, 4],
-                      explanation: "The word RICE is hidden across 'electRIC' and 'Engine'. Take the last three letters of 'electric' (RIC) and the first letter of 'engine' (E) = RICE. ✓"
-              },
-        {
-          "id": 166,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a small hollow or damage' is hidden across two of these words. Find the two words.",
-          "options": ["The", "garden", "tools", "were", "rusty"],
-          "correctPair": [1, 2],
-          "explanation": "The word DENT is hidden across 'garDEN' and 'Tools'. Take the last three letters of 'garden' (DEN) and the first letter of 'tools' (T) = DENT. ✓"
-        },
-              {
-                      id: 16,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a military position' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "Thick",
-                              "rubber",
-                              "ankle",
-                              "supports",
-                              "helped"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "The word RANK is hidden across 'rubbeR' and 'ANKle'. Take the last letter of 'rubber' (R) and the first three of 'ankle' (ANK) = RANK. ✓"
-              },
-              {
-                      id: 17,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'weak or feeble' is hidden across two of these words. Find the two words.",
-                      options: ["tonight", "Near", "the", "villa", "menu"],
-                      correctPair: [3, 4],
-                      explanation: "The word LAME is hidden across 'vilLA' and 'MEnu'. Take the last two letters of 'villa' (LA) and the first two of 'menu' (ME) = LAME. ✓"
-              },
-              {
-                      id: 18,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "Their",
-                              "great",
-                              "allies",
-                              "arrived",
-                              "today"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "The word TALL is hidden across 'greaT' and 'ALLies'. Take the last letter of 'great' (T) and the first three of 'allies' (ALL) = TALL. ✓"
-              },
-              {
-                      id: 19,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a bundle of hay or straw' is hidden across two of these words. Find the two words.",
-                      options: [
-                              "Her",
-                              "tuba",
-                              "lesson",
-                              "went",
-                              "well"
-                      ],
-                      correctPair: [
-                              1,
-                              2
-                      ],
-                      explanation: "The word BALE is hidden across 'tuBA' and 'LEsson'. Take the last two letters of 'tuba' (BA) and the first two of 'lesson' (LE) = BALE. ✓"
-              },
-              {
-                      id: 20,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a reddish-brown coating on metal' is hidden across two of these words. Find the two words.",
-                      options: ["Monday", "He", "left", "Peru", "starting"],
-                      correctPair: [3, 4],
-                      explanation: "The word RUST is hidden across 'peRU' and 'STarting'. Take the last two letters of 'Peru' (RU) and the first two of 'starting' (ST) = RUST. ✓"
-              }
-      ,
-              {
-                      id: 21,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a small body of still water' is hidden across two of these words. Find the two words.",
-                      options: ["Read","upon","damp","those","early"],
-                      correctPair: [1,2],
-                      explanation: "The word POND is hidden across 'uPON' and 'Damp'. Take the last three letters of 'upon' (PON) and the first letter of 'damp' (D) = POND. ✓"
-              },
-              {
-                      id: 22,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'an entrance in a fence or wall' is hidden across two of these words. Find the two words.",
-                      options: ["Bring","yoga","test","while","group"],
-                      correctPair: [1,2],
-                      explanation: "The word GATE is hidden across 'yoGA' and 'TEst'. Take the last two letters of 'yoga' (GA) and the first two of 'test' (TE) = GATE. ✓"
-              },
-              {
-                      id: 23,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a device that gives light' is hidden across two of these words. Find the two words.",
-                      options: ["school","ample","bring","those","quiet"],
-                      correctPair: [0,1],
-                      explanation: "The word LAMP is hidden across 'schooL' and 'AMPle'. Take the last letter of 'school' (L) and the first three of 'ample' (AMP) = LAMP. ✓"
-              },
-              {
-                      id: 24,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'where a bird lays its eggs' is hidden across two of these words. Find the two words.",
-                      options: ["grew", "That", "big", "moon", "estate"],
-                      correctPair: [3, 4],
-                      explanation: "The word NEST is hidden across 'mooN' and 'ESTate'. Take the last letter of 'moon' (N) and the first three of 'estate' (EST) = NEST. ✓"
-              },
-              {
-                      id: 25,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a bright object in the night sky' is hidden across two of these words. Find the two words.",
-                      options: ["plenty", "Most", "with", "fast", "argue"],
-                      correctPair: [3, 4],
-                      explanation: "The word STAR is hidden across 'faST' and 'ARgue'. Take the last two letters of 'fast' (ST) and the first two of 'argue' (AR) = STAR. ✓"
-              },
-              {
-                      id: 26,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a hollow metal object that rings' is hidden across two of these words. Find the two words.",
-                      options: ["happy", "Take", "your", "grab", "ellipse"],
-                      correctPair: [3, 4],
-                      explanation: "The word BELL is hidden across 'graB' and 'ELLipse'. Take the last letter of 'grab' (B) and the first three of 'ellipse' (ELL) = BELL. ✓"
-              },
-              {
-                      id: 27,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a sweet baked treat' is hidden across two of these words. Find the two words.",
-                      options: ["That","orca","kept","his","friend"],
-                      correctPair: [1,2],
-                      explanation: "The word CAKE is hidden across 'orCA' and 'KEpt'. Take the last two letters of 'orca' (CA) and the first two of 'kept' (KE) = CAKE. ✓"
-              },
-              {
-                      id: 28,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'tiny dry particles found on surfaces' is hidden across two of these words. Find the two words.",
-                      options: ["Some","big","Hindu","still","paper"],
-                      correctPair: [2,3],
-                      explanation: "The word DUST is hidden across 'hinDU' and 'STill'. Take the last two letters of 'Hindu' (DU) and the first two of 'still' (ST) = DUST. ✓"
-              },
-              {
-                      id: 29,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'thick strong cord used for tying' is hidden across two of these words. Find the two words.",
-                      options: ["Keep","your","hero","peak","under"],
-                      correctPair: [2,3],
-                      explanation: "The word ROPE is hidden across 'heRO' and 'PEak'. Take the last two letters of 'hero' (RO) and the first two of 'peak' (PE) = ROPE. ✓"
-              },
-              {
-                      id: 30,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a male ruler of a country' is hidden across two of these words. Find the two words.",
-                      options: ["thick","ingot","was","old","heavy"],
-                      correctPair: [0,1],
-                      explanation: "The word KING is hidden across 'thicK' and 'INGot'. Take the last letter of 'thick' (K) and the first three of 'ingot' (ING) = KING. ✓"
-              },
-              {
-                      id: 31,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
-                      options: ["That","old","climb","android","field"],
-                      correctPair: [2,3],
-                      explanation: "The word BAND is hidden across 'climB' and 'ANDroid'. Take the last letter of 'climb' (B) and the first three of 'android' (AND) = BAND. ✓"
-              },
-              {
-                      id: 32,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'having a low temperature' is hidden across two of these words. Find the two words.",
-                      options: ["Some","music","older","than","before"],
-                      correctPair: [1,2],
-                      explanation: "The word COLD is hidden across 'musiC' and 'OLDer'. Take the last letter of 'music' (C) and the first three of 'older' (OLD) = COLD. ✓"
-              },
-              {
-                      id: 33,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a circular band worn on a finger' is hidden across two of these words. Find the two words.",
-                      options: ["Keep","your","floor","ingest","safe"],
-                      correctPair: [2,3],
-                      explanation: "The word RING is hidden across 'flooR' and 'INGest'. Take the last letter of 'floor' (R) and the first three of 'ingest' (ING) = RING. ✓"
-              },
-              {
-                      id: 34,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a vertical structure around a garden' is hidden across two of these words. Find the two words.",
-                      options: ["She","could","draw","allow","them"],
-                      correctPair: [2,3],
-                      explanation: "The word WALL is hidden across 'draW' and 'ALLow'. Take the last letter of 'draw' (W) and the first three of 'allow' (ALL) = WALL. ✓"
-              },
-              {
-                      id: 35,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a shelter made of canvas for camping' is hidden across two of these words. Find the two words.",
-                      options: ["bright","enter","my","small","house"],
-                      correctPair: [0,1],
-                      explanation: "The word TENT is hidden across 'brighT' and 'ENTer'. Take the last letter of 'bright' (T) and the first three of 'enter' (ENT) = TENT. ✓"
-              },
-              {
-                      id: 36,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'tiny grains found on a beach' is hidden across two of these words. Find the two words.",
-                      options: ["Take","the","long","grass","android"],
-                      correctPair: [3,4],
-                      explanation: "The word SAND is hidden across 'grasS' and 'ANDroid'. Take the last letter of 'grass' (S) and the first three of 'android' (AND) = SAND. ✓"
-              },
-              {
-                      id: 37,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a white drink from cows' is hidden across two of these words. Find the two words.",
-                      options: ["Every","dream","ilk","was","golden"],
-                      correctPair: [1,2],
-                      explanation: "The word MILK is hidden across 'dreaM' and 'ILK'. Take the last letter of 'dream' (M) and all three letters of 'ilk' (ILK) = MILK. ✓"
-              },
-              {
-                      id: 38,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to eat an evening meal' is hidden across two of these words. Find the two words.",
-                      options: ["laid","inert","from","quite","slowly"],
-                      correctPair: [0,1],
-                      explanation: "The word DINE is hidden across 'laiD' and 'INErt'. Take the last letter of 'laid' (D) and the first three of 'inert' (INE) = DINE. ✓"
-              },
-              {
-                      id: 39,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a strong building used for defence' is hidden across two of these words. Find the two words.",
-                      options: ["Her","old","loaf","orthodox","view"],
-                      correctPair: [2,3],
-                      explanation: "The word FORT is hidden across 'loaF' and 'ORThodox'. Take the last letter of 'loaf' (F) and the first three of 'orthodox' (ORT) = FORT. ✓"
-              },
-              {
-                      id: 40,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a hard part of a skeleton' is hidden across two of these words. Find the two words.",
-                      options: ["New","club","one","with","many"],
-                      correctPair: [1,2],
-                      explanation: "The word BONE is hidden across 'club' and 'one'. Take the last letter of 'club' (B) and all three letters of 'one' (ONE) = BONE. A bone is a hard part of the skeleton. ✓"
-              },
-              {
-                      id: 41,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a large area of fresh water' is hidden across two of these words. Find the two words.",
-                      options: ["His","formula","keep","the","prize"],
-                      correctPair: [1,2],
-                      explanation: "The word LAKE is hidden across 'formuLA' and 'KEep'. Take the last two letters of 'formula' (LA) and the first two of 'keep' (KE) = LAKE. ✓"
-              },
-              {
-                      id: 42,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to want or hope for something' is hidden across two of these words. Find the two words.",
-                      options: ["The","tasty","big","kiwi","shelf"],
-                      correctPair: [3,4],
-                      explanation: "The word WISH is hidden across 'kiWI' and 'SHelf'. Take the last two letters of 'kiwi' (WI) and the first two of 'shelf' (SH) = WISH. ✓"
-              },
-              {
-                      id: 43,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to search for something' is hidden across two of these words. Find the two words.",
-                      options: ["match","until","from","quite","slowly"],
-                      correctPair: [0,1],
-                      explanation: "The word HUNT is hidden across 'matcH' and 'UNTil'. Take the last letter of 'match' (H) and the first three of 'until' (UNT) = HUNT. ✓"
-              },
-              {
-                      id: 44,
-                      difficulty: 1,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a pale red colour' is hidden across two of these words. Find the two words.",
-                      options: ["Her","big","fancy","tulip","inkwell"],
-                      correctPair: [3,4],
-                      explanation: "The word PINK is hidden across 'tuliP' and 'INKwell'. Take the last letter of 'tulip' (P) and the first three of 'inkwell' (INK) = PINK. ✓"
-              },
-              {
-                      id: 45,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a tall pole on a sailing ship' is hidden across two of these words. Find the two words.",
-                      options: ["The","llama","stop","when","ready"],
-                      correctPair: [1,2],
-                      explanation: "The word MAST is hidden across 'llaMA' and 'STop'. Take the last two letters of 'llama' (MA) and the first two of 'stop' (ST) = MAST. ✓"
-              },
-              {
-                      id: 46,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to repair something broken' is hidden across two of these words. Find the two words.",
-                      options: ["They","both","swam","endless","miles"],
-                      correctPair: [2,3],
-                      explanation: "The word MEND is hidden across 'swaM' and 'ENDless'. Take the last letter of 'swam' (M) and the first three of 'endless' (END) = MEND. ✓"
-              },
-              {
-                      id: 47,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'the time just before nightfall' is hidden across two of these words. Find the two words.",
-                      options: ["Hindu","skate","on","the","river"],
-                      correctPair: [0,1],
-                      explanation: "The word DUSK is hidden across 'hinDU' and 'SKate'. Take the last two letters of 'Hindu' (DU) and the first two of 'skate' (SK) = DUSK. ✓"
-              },
-              {
-                      id: 48,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'the wheel or tiller used to steer a ship' is hidden across two of these words. Find the two words.",
-                      options: ["Very","much","elms","grow","tall"],
-                      correctPair: [1,2],
-                      explanation: "The word HELM is hidden across 'mucH' and 'ELMs'. Take the last letter of 'much' (H) and the first three of 'elms' (ELM) = HELM. ✓"
-              },
-              {
-                      id: 49,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a room or space under the roof' is hidden across two of these words. Find the two words.",
-                      options: ["Her","big","pedal","often","broke"],
-                      correctPair: [2,3],
-                      explanation: "The word LOFT is hidden across 'pedaL' and 'OFTen'. Take the last letter of 'pedal' (L) and the first three of 'often' (OFT) = LOFT. ✓"
-              },
-              {
-                      id: 50,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a very small brown bird' is hidden across two of these words. Find the two words.",
-                      options: ["The","brew","rental","was","cheap"],
-                      correctPair: [1,2],
-                      explanation: "The word WREN is hidden across 'breW' and 'RENtal'. Take the last letter of 'brew' (W) and the first three of 'rental' (REN) = WREN. ✓"
-              },
-              {
-                      id: 51,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a metal fastener or to run quickly' is hidden across two of these words. Find the two words.",
-                      options: ["The","old","symbol","tank","rusted"],
-                      correctPair: [2,3],
-                      explanation: "The word BOLT is hidden across 'symBOL' and 'Tank'. Take the last three letters of 'symbol' (BOL) and the first letter of 'tank' (T) = BOLT. ✓"
-              },
-              {
-                      id: 52,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a young deer' is hidden across two of these words. Find the two words.",
-                      options: ["That","loaf","awning","near","garden"],
-                      correctPair: [1,2],
-                      explanation: "The word FAWN is hidden across 'loaF' and 'AWNing'. Take the last letter of 'loaf' (F) and the first three of 'awning' (AWN) = FAWN. ✓"
-              },
-              {
-                      id: 53,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a ridge of rock or coral near the sea surface' is hidden across two of these words. Find the two words.",
-                      options: ["sure","effort","brings","good","marks"],
-                      correctPair: [0,1],
-                      explanation: "The word REEF is hidden across 'suRE' and 'EFfort'. Take the last two letters of 'sure' (RE) and the first two of 'effort' (EF) = REEF. ✓"
-              },
-              {
-                      id: 54,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'the smallest piece in chess' is hidden across two of these words. Find the two words.",
-                      options: ["His","big","steep","awning","broke"],
-                      correctPair: [2,3],
-                      explanation: "The word PAWN is hidden across 'steeP' and 'AWNing'. Take the last letter of 'steep' (P) and the first three of 'awning' (AWN) = PAWN. ✓"
-              },
-              {
-                      id: 55,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a thick flat piece of stone or concrete' is hidden across two of these words. Find the two words.",
-                      options: ["His","plus","label","for","lunch"],
-                      correctPair: [1,2],
-                      explanation: "The word SLAB is hidden across 'pluS' and 'LABel'. Take the last letter of 'plus' (S) and the first three of 'label' (LAB) = SLAB. ✓"
-              },
-              {
-                      id: 56,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a fastening made by tying string' is hidden across two of these words. Find the two words.",
-                      options: ["That","old","drink","note","faded"],
-                      correctPair: [2,3],
-                      explanation: "The word KNOT is hidden across 'drinK' and 'NOTe'. Take the last letter of 'drink' (K) and the first three of 'note' (NOT) = KNOT. ✓"
-              },
-              {
-                      id: 57,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a shellfish with two hinged shells' is hidden across two of these words. Find the two words.",
-                      options: ["magic",'lamb',"for","the","party"],
-                      correctPair: [0,1],
-                      explanation: "The word CLAM is hidden across 'magiC' and 'LAMb'. Take the last letter of 'magic' (C) and the first three of 'lamb' (LAM) = CLAM. ✓"
-              },
-              {
-                      id: 58,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a thin branch of a tree' is hidden across two of these words. Find the two words.",
-                      options: ["The","first","post","wiggle","began"],
-                      correctPair: [2,3],
-                      explanation: "The word TWIG is hidden across 'posT' and 'WIGgle'. Take the last letter of 'post' (T) and the first three of 'wiggle' (WIG) = TWIG. ✓"
-              },
-              {
-                      id: 59,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a hollow in a hard surface' is hidden across two of these words. Find the two words.",
-                      options: ["Her","old","wand","entry","shone"],
-                      correctPair: [2,3],
-                      explanation: "The word DENT is hidden across 'wandD' — take the last letter of 'wand' (D) and the first three of 'entry' (ENT) = DENT. ✓"
-              },
-              {
-                      id: 60,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a sudden strong rush of wind' is hidden across two of these words. Find the two words.",
-                      options: ["The","old","fungus","took","hold"],
-                      correctPair: [2,3],
-                      explanation: "The word GUST is hidden across 'funGUS' and 'Took'. Take the last three letters of 'fungus' (GUS) and the first letter of 'took' (T) = GUST. ✓"
-              },
-              {
-                      id: 61,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a stopper for a bottle, or a city in Ireland' is hidden across two of these words. Find the two words.",
-                      options: ["The","decor","kept","them","happy"],
-                      correctPair: [1,2],
-                      explanation: "The word CORK is hidden across 'deCOR' and 'Kept'. Take the last three letters of 'decor' (COR) and the first letter of 'kept' (K) = CORK. ✓"
-              },
-              {
-                      id: 62,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to beat or sell something' is hidden across two of these words. Find the two words.",
-                      options: ["dwarf","logic","from","the","hill"],
-                      correctPair: [0,1],
-                      explanation: "The word FLOG is hidden across 'dwarF' and 'LOGic'. Take the last letter of 'dwarf' (F) and the first three of 'logic' (LOG) = FLOG. ✓"
-              },
-              {
-                      id: 63,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'an aromatic herb or a place where coins are made' is hidden across two of these words. Find the two words.",
-                      options: ["We","all","swim","into","rivers"],
-                      correctPair: [2,3],
-                      explanation: "The word MINT is hidden across 'swiM' and 'INTo'. Take the last letter of 'swim' (M) and the first three of 'into' (INT) = MINT. ✓"
-              },
-              {
-                      id: 64,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a sharp curved nail on an animal's foot' is hidden across two of these words. Find the two words.",
-                      options: ["The","music","lawn","is","green"],
-                      correctPair: [1,2],
-                      explanation: "The word CLAW hides across 'music' and 'lawn': musi|C + LAW|n → CLAW. The last letter of 'music' (C) joins the first three letters of 'lawn' (LAW). ✓"
-              },
-              {
-                      id: 65,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a soft round purple fruit' is hidden across two of these words. Find the two words.",
-                      options: ["help","lump","in","the","basket"],
-                      correctPair: [0,1],
-                      explanation: "The word PLUM is hidden across 'helP' and 'LUMp'. Take the last letter of 'help' (P) and the first three of 'lump' (LUM) = PLUM. ✓"
-              },
-              {
-                      id: 66,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a broad smile' is hidden across two of these words. Find the two words.",
-                      options: ["Big","red","shag","rinse","foam"],
-                      correctPair: [2,3],
-                      explanation: "The word GRIN is hidden across 'shaG' and 'RINse'. Take the last letter of 'shag' (G) and the first three of 'rinse' (RIN) = GRIN. ✓"
-              },
-              {
-                      id: 67,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a narrow opening or gap' is hidden across two of these words. Find the two words.",
-                      options: ["The","girls","lotion","was","smooth"],
-                      correctPair: [1,2],
-                      explanation: "The word SLOT is hidden across 'girlS' and 'LOTion'. Take the last letter of 'girls' (S) and the first three of 'lotion' (LOT) = SLOT. ✓"
-              },
-              {
-                      id: 68,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to move wings up and down' is hidden across two of these words. Find the two words.",
-                      options: ["One","half","laptop","was","broken"],
-                      correctPair: [1,2],
-                      explanation: "The word FLAP is hidden across 'halF' and 'LAPtop'. Take the last letter of 'half' (F) and the first three of 'laptop' (LAP) = FLAP. ✓"
-              },
-              {
-                      id: 69,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a dish of meat and vegetables cooked slowly' is hidden across two of these words. Find the two words.",
-                      options: ["frost","ewe","grazed","the","field"],
-                      correctPair: [0,1],
-                      explanation: "The word STEW is hidden across 'froST' and 'EWe'. Take the last two letters of 'frost' (ST) and the first two of 'ewe' (EW) = STEW. ✓"
-              },
-              {
-                      id: 70,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a fastener or to cut with scissors' is hidden across two of these words. Find the two words.",
-                      options: ["Her","big","music","lips","moved"],
-                      correctPair: [2,3],
-                      explanation: "The word CLIP is hidden across 'musiC' and 'LIPs'. Take the last letter of 'music' (C) and the first three of 'lips' (LIP) = CLIP. ✓"
-              },
-              {
-                      id: 71,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a narrow valley' is hidden across two of these words. Find the two words.",
-                      options: ["The","big","shrug","lend","itself"],
-                      correctPair: [2,3],
-                      explanation: "The word GLEN is hidden across 'shruG' and 'LENd'. Take the last letter of 'shrug' (G) and the first three of 'lend' (LEN) = GLEN. ✓"
-              },
-              {
-                      id: 72,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to kick a ball before it hits the ground' is hidden across two of these words. Find the two words.",
-                      options: ["step","until","the","bell","rings"],
-                      correctPair: [0,1],
-                      explanation: "The word PUNT is hidden across 'steP' and 'UNTil'. Take the last letter of 'step' (P) and the first three of 'until' (UNT) = PUNT. ✓"
-              },
-              {
-                      id: 73,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a short funny performance' is hidden across two of these words. Find the two words.",
-                      options: ["The","old","brisk","item","waited"],
-                      correctPair: [2,3],
-                      explanation: "The word SKIT is hidden across 'briSK' and 'ITem'. Take the last two letters of 'brisk' (SK) and the first two of 'item' (IT) = SKIT. ✓"
-              },
-              {
-                      id: 74,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to walk with difficulty' is hidden across two of these words. Find the two words.",
-                      options: ["Each","trial","import","grew","well"],
-                      correctPair: [1,2],
-                      explanation: "The word LIMP is hidden across 'triaL' and 'IMPort'. Take the last letter of 'trial' (L) and the first three of 'import' (IMP) = LIMP. ✓"
-              },
-              {
-                      id: 75,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'serious and gloomy' is hidden across two of these words. Find the two words.",
-                      options: ["Her","old","debug","rim","broke"],
-                      correctPair: [2,3],
-                      explanation: "The word GRIM is hidden across 'debuG' and 'RIM'. Take the last letter of 'debug' (G) and all three letters of 'rim' (RIM) = GRIM. ✓"
-              },
-              {
-                      id: 76,
-                      difficulty: 2,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a piece of cloth worn to cover the face' is hidden across two of these words. Find the two words.",
-                      options: ["The","grave","illness","was","brief"],
-                      correctPair: [1,2],
-                      explanation: "The word VEIL is hidden across 'graVE' and 'ILlness'. Take the last two letters of 'grave' (VE) and the first two of 'illness' (IL) = VEIL. ✓"
-              },
-              {
-                      id: 77,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a clever trick or deception' is hidden across two of these words. Find the two words.",
-                      options: ["guru","seed","from","the","garden"],
-                      correctPair: [0,1],
-                      explanation: "The word RUSE is hidden across 'guRU' and 'SEed'. Take the last two letters of 'guru' (RU) and the first two of 'seed' (SE) = RUSE. ✓"
-              },
-              {
-                      id: 78,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a cause of great distress' is hidden across two of these words. Find the two words.",
-                      options: ["Her","old","tuba","next","played"],
-                      correctPair: [2,3],
-                      explanation: "The word BANE is hidden across 'tuBA' and 'NExt'. Take the last two letters of 'tuba' (BA) and the first two of 'next' (NE) = BANE. ✓"
-              },
-              {
-                      id: 79,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a large fire for burning a dead body' is hidden across two of these words. Find the two words.",
-                      options: ["His","copy","realm","grew","wide"],
-                      correctPair: [1,2],
-                      explanation: "The word PYRE is hidden across 'coPY' and 'REalm'. Take the last two letters of 'copy' (PY) and the first two of 'realm' (RE) = PYRE. ✓"
-              },
-              {
-                      id: 80,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to gradually decrease or decline' is hidden across two of these words. Find the two words.",
-                      options: ["Build","with","long","straw","anew"],
-                      correctPair: [3,4],
-                      explanation: "The word WANE is hidden across 'straW' and 'ANEw'. Take the last letter of 'straw' (W) and the first three of 'anew' (ANE) = WANE. ✓"
-              },
-              {
-                      id: 81,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a very strong wind' is hidden across two of these words. Find the two words.",
-                      options: ["The","drag","alert","came","first"],
-                      correctPair: [1,2],
-                      explanation: "The word GALE is hidden across 'draG' and 'ALErt'. Take the last letter of 'drag' (G) and the first three of 'alert' (ALE) = GALE. ✓"
-              },
-              {
-                      id: 82,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'an urgent request or appeal' is hidden across two of these words. Find the two words.",
-                      options: ["The","steeple","afoot","was","grand"],
-                      correctPair: [1,2],
-                      explanation: "The word PLEA is hidden across 'steePLE' and 'Afoot'. Take the last three letters of 'steeple' (PLE) and the first letter of 'afoot' (A) = PLEA. ✓"
-              },
-              {
-                      id: 83,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'the upper edge of a cup or hat' is hidden across two of these words. Find the two words.",
-                      options: ["Each","small","club","rim","shone"],
-                      correctPair: [2,3],
-                      explanation: "The word BRIM is hidden across 'cluB' and 'RIM'. Take the last letter of 'club' (B) and all three letters of 'rim' (RIM) = BRIM. ✓"
-              },
-              {
-                      id: 84,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a wise person, or an aromatic herb' is hidden across two of these words. Find the two words.",
-                      options: ["mesa","get","from","the","market"],
-                      correctPair: [0,1],
-                      explanation: "The word SAGE is hidden across 'meSA' and 'GEt'. Take the last two letters of 'mesa' (SA) and the first two of 'get' (GE) = SAGE. ✓"
-              },
-              {
-                      id: 85,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a precious stone that shimmers with colours' is hidden across two of these words. Find the two words.",
-                      options: ["Walk","into","palace","with","pride"],
-                      correctPair: [1,2],
-                      explanation: "The word OPAL is hidden across 'intO' and 'PALace'. Take the last letter of 'into' (O) and the first three of 'palace' (PAL) = OPAL. ✓"
-              },
-              {
-                      id: 86,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'skilful and quick in movement' is hidden across two of these words. Find the two words.",
-                      options: ["The","bored","efts","swam","slowly"],
-                      correctPair: [1,2],
-                      explanation: "The word DEFT is hidden across 'boreD' and 'EFTs'. Take the last letter of 'bored' (D) and the first three of 'efts' (EFT) = DEFT. ✓"
-              },
-              {
-                      id: 87,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'great enthusiasm or passion' is hidden across two of these words. Find the two words.",
-                      options: ["froze","altar","near","the","church"],
-                      correctPair: [0,1],
-                      explanation: "The word ZEAL is hidden across 'froZE' and 'ALtar'. Take the last two letters of 'froze' (ZE) and the first two of 'altar' (AL) = ZEAL. ✓"
-              },
-              {
-                      id: 88,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a major musical composition' is hidden across two of these words. Find the two words.",
-                      options: ["The","old","bishop","usher","smiled"],
-                      correctPair: [2,3],
-                      explanation: "The word OPUS is hidden across 'bishOP' and 'USher'. Take the last two letters of 'bishop' (OP) and the first two of 'usher' (US) = OPUS. ✓"
-              },
-              {
-                      id: 89,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a mound of sand shaped by wind' is hidden across two of these words. Find the two words.",
-                      options: ["Big","old","Hindu","never","forgot"],
-                      correctPair: [2,3],
-                      explanation: "The word DUNE is hidden across 'hinDU' and 'NEver'. Take the last two letters of 'Hindu' (DU) and the first two of 'never' (NE) = DUNE. ✓"
-              },
-              {
-                      id: 90,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'an ancient stringed musical instrument' is hidden across two of these words. Find the two words.",
-                      options: ["In","July","read","some","books"],
-                      correctPair: [1,2],
-                      explanation: "The word LYRE is hidden across 'juLY' and 'REad'. Take the last two letters of 'July' (LY) and the first two of 'read' (RE) = LYRE. ✓"
-              },
-              {
-                      id: 91,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'traditional knowledge passed down through stories' is hidden across two of these words. Find the two words.",
-                      options: ["pool","oregano","with","fresh","taste"],
-                      correctPair: [0,1],
-                      explanation: "The word LORE is hidden across 'pooL' and 'OREgano'. Take the last letter of 'pool' (L) and the first three of 'oregano' (ORE) = LORE. ✓"
-              },
-              {
-                      id: 92,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a soothing ointment or something that comforts' is hidden across two of these words. Find the two words.",
-                      options: ["His","old","verb","almond","tasted"],
-                      correctPair: [2,3],
-                      explanation: "The word BALM is hidden across 'verB' and 'ALMond'. Take the last letter of 'verb' (B) and the first three of 'almond' (ALM) = BALM. ✓"
-              },
-              {
-                      id: 93,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'extremely serious or urgent' is hidden across two of these words. Find the two words.",
-                      options: ["The","grand","ire","brought","chaos"],
-                      correctPair: [1,2],
-                      explanation: "The word DIRE is hidden across 'granD' and 'IRE'. Take the last letter of 'grand' (D) and all three letters of 'ire' (IRE) = DIRE. ✓"
-              },
-              {
-                      id: 94,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a green plant with feathery leaves' is hidden across two of these words. Find the two words.",
-                      options: ["Big","old","offer","night","walks"],
-                      correctPair: [2,3],
-                      explanation: "The word FERN is hidden across 'ofFER' and 'Night'. Take the last three letters of 'offer' (FER) and the first letter of 'night' (N) = FERN. ✓"
-              },
-              {
-                      id: 95,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a device that shows wind direction' is hidden across two of these words. Find the two words.",
-                      options: ["The","larva","never","grew","much"],
-                      correctPair: [1,2],
-                      explanation: "The word VANE is hidden across 'larVA' and 'NEver'. Take the last two letters of 'larva' (VA) and the first two of 'never' (NE) = VANE. ✓"
-              },
-              {
-                      id: 96,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'the back of the neck' is hidden across two of these words. Find the two words.",
-                      options: ["turn","apex","from","this","angle"],
-                      correctPair: [0,1],
-                      explanation: "The word NAPE is hidden across 'turN' and 'APEx'. Take the last letter of 'turn' (N) and the first three of 'apex' (APE) = NAPE. ✓"
-              },
-              {
-                      id: 97,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a formal written legal document' is hidden across two of these words. Find the two words.",
-                      options: ["His","old","brew","ritual","began"],
-                      correctPair: [2,3],
-                      explanation: "The word WRIT is hidden across 'breW' and 'RITual'. Take the last letter of 'brew' (W) and the first three of 'ritual' (RIT) = WRIT. ✓"
-              },
-              {
-                      id: 98,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a cunning plan or scheme' is hidden across two of these words. Find the two words.",
-                      options: ["Her","big","tulip","loyal","friend"],
-                      correctPair: [2,3],
-                      explanation: "The word PLOY is hidden across 'tuliP' and 'LOYal'. Take the last letter of 'tulip' (P) and the first three of 'loyal' (LOY) = PLOY. ✓"
-              },
-              {
-                      id: 99,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'a large heavy book' is hidden across two of these words. Find the two words.",
-                      options: ["The","veto","meant","very","little"],
-                      correctPair: [1,2],
-                      explanation: "The word TOME is hidden across 'veTO' and 'MEant'. Take the last two letters of 'veto' (TO) and the first two of 'meant' (ME) = TOME. ✓"
-              },
-              {
-                      id: 100,
-                      difficulty: 3,
-                      questionType: "select-two",
-                      question: "A 4-letter word meaning 'to stare at in a rude or admiring way' is hidden across two of these words. Find the two words.",
-                      options: ["shoo","gleam","from","that","lamp"],
-                      correctPair: [0,1],
-                      explanation: "The word OGLE is hidden across 'shoO' and 'GLEam'. Take the last letter of 'shoo' (O) and the first three of 'gleam' (GLE) = OGLE. ✓"
-              }
-      ,
-        {
-          "id": 101,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a light you can carry' is hidden across two of these words. Find the two words.",
-          "options": [
-            "Her",
-            "school",
-            "ample",
-            "space",
-            "helped"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word LAMP is hidden across 'schooL' and 'AMPle'. Take the last letter of 'school' (L) and the first three of 'ample' (AMP) = LAMP. ✓"
-        },
-        {
-          "id": 102,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a bird's home' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "old",
-            "clean",
-            "estate",
-            "gardens"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word NEST is hidden across 'cleaN' and 'ESTate'. Take the last letter of 'clean' (N) and the first three of 'estate' (EST) = NEST. ✓"
-        },
-        {
-          "id": 103,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
-          "options": [
-            "They",
-            "saw",
-            "the",
-            "boat",
-            "allowed"
-          ],
-          "correctPair": [
-            3,
-            4
-          ],
-          "explanation": "The word TALL is hidden across 'boaT' and 'ALLowed'. Take the last letter of 'boat' (T) and the first three of 'allowed' (ALL) = TALL. ✓"
-        },
-        {
-          "id": 104,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a green fruit' is hidden across two of these words. Find the two words.",
-          "options": [
-            "That",
-            "odd",
-            "shape",
-            "around",
-            "here"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word PEAR is hidden across 'shaPE' and 'ARound'. Take the last two letters of 'shape' (PE) and the first two of 'around' (AR) = PEAR. ✓"
-        },
-        {
-          "id": 105,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'to hurt or damage' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "knight",
-            "with",
-            "armour",
-            "rode"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word HARM is hidden across 'witH' and 'ARMour'. Take the last letter of 'with' (H) and the first three of 'armour' (ARM) = HARM. ✓"
-        },
-        {
-          "id": 106,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'part of a bird or aeroplane' is hidden across two of these words. Find the two words.",
-          "options": [
-            "She",
-            "could",
-            "brew",
-            "ingredients",
-            "well"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word WING is hidden across 'breW' and 'INGredients'. Take the last letter of 'brew' (W) and the first three of 'ingredients' (ING) = WING. ✓"
-        },
-        {
-          "id": 107,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'to get money by working' is hidden across two of these words. Find the two words.",
-          "options": [
-            "It",
-            "was",
-            "quite",
-            "true",
-            "Arnold"
-          ],
-          "correctPair": [
-            3,
-            4
-          ],
-          "explanation": "The word EARN is hidden across 'truE' and 'ARNold'. Take the last letter of 'true' (E) and the first three of 'Arnold' (ARN) = EARN. ✓"
-        },
-        {
-          "id": 108,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'as well' or 'too' is hidden across two of these words. Find the two words.",
-          "options": [
-            "Mum",
-            "bought",
-            "metal",
-            "some",
-            "ago"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word ALSO is hidden across 'metAL' and 'SOme'. Take the last two letters of 'metal' (AL) and the first two of 'some' (SO) = ALSO. ✓"
-        },
-        {
-          "id": 109,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a decorative fabric' is hidden across two of these words. Find the two words.",
-          "options": [
-            "Her",
-            "signal",
-            "aced",
-            "the",
-            "test"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word LACE is hidden across 'signaL' and 'ACEd'. Take the last letter of 'signal' (L) and the first three of 'aced' (ACE) = LACE. ✓"
-        },
-        {
-          "id": 110,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'something you cook food in' is hidden across two of these words. Find the two words.",
-          "options": [
-            "They",
-            "went",
-            "into",
-            "venture",
-            "funds"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word OVEN is hidden across 'intO' and 'VENture'. Take the last letter of 'into' (O) and the first three of 'venture' (VEN) = OVEN. ✓"
-        },
-        {
-          "id": 111,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
-          "options": [
-            "He",
-            "joined",
-            "club",
-            "Andrew",
-            "managed"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word BAND is hidden across 'cluB' and 'ANDrew'. Take the last letter of 'club' (B) and the first three of 'Andrew' (AND) = BAND. ✓"
-        },
-        {
-          "id": 112,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a soft, steady light' is hidden across two of these words. Find the two words.",
-          "options": [
-            "She",
-            "gave",
-            "shrug",
-            "lower",
-            "expected"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word GLOW is hidden across 'shruG' and 'LOWer'. Take the last letter of 'shrug' (G) and the first three of 'lower' (LOW) = GLOW. ✓"
-        },
-        {
-          "id": 113,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'every one' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "race",
-            "achieved",
-            "new",
-            "record"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word EACH is hidden across 'racE' and 'ACHieved'. Take the last letter of 'race' (E) and the first three of 'achieved' (ACH) = EACH. ✓"
-        },
-        {
-          "id": 114,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a small singing bird' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "solar",
-            "kind",
-            "warmth",
-            "spread"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word LARK is hidden across 'soLAR' and 'Kind'. Take the last three letters of 'solar' (LAR) and the first letter of 'kind' (K) = LARK. ✓"
-        },
-        {
-          "id": 115,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'to eat a meal' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "board",
-            "inedible",
-            "food",
-            "remained"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word DINE is hidden across 'boarD' and 'INEdible'. Take the last letter of 'board' (D) and the first three of 'inedible' (INE) = DINE. ✓"
-        },
-        {
-          "id": 116,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'to wander freely' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "hero",
-            "among",
-            "the",
-            "crowd"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word ROAM is hidden across 'heRO' and 'AMong'. Take the last two letters of 'hero' (RO) and the first two of 'among' (AM) = ROAM. ✓"
-        },
-        {
-          "id": 117,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'an annoying insect or creature' is hidden across two of these words. Find the two words.",
-          "options": [
-            "One",
-            "tulip",
-            "estate",
-            "garden",
-            "bloomed"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word PEST is hidden across 'tuliP' and 'ESTate'. Take the last letter of 'tulip' (P) and the first three of 'estate' (EST) = PEST. ✓"
-        },
-        {
-          "id": 118,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a covering for the face' is hidden across two of these words. Find the two words.",
-          "options": [
-            "Her",
-            "drama",
-            "sketch",
-            "was",
-            "brilliant"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word MASK is hidden across 'draMA' and 'SKetch'. Take the last two letters of 'drama' (MA) and the first two of 'sketch' (SK) = MASK. ✓"
-        },
-        {
-          "id": 119,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'an urgent request' is hidden across two of these words. Find the two words.",
-          "options": [
-            "Could",
-            "you",
-            "stop",
-            "leaving",
-            "now"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word PLEA is hidden across 'stoP' and 'LEAving'. Take the last letter of 'stop' (P) and the first three of 'leaving' (LEA) = PLEA. ✓"
-        },
-        {
-          "id": 120,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a long flowing garment' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "old",
-            "manor",
-            "obeyed",
-            "traditions"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word ROBE is hidden across 'manoR' and 'OBEyed'. Take the last letter of 'manor' (R) and the first three of 'obeyed' (OBE) = ROBE. ✓"
-        },
-        {
-          "id": 121,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a very wise person' is hidden across two of these words. Find the two words.",
-          "options": [
-            "A",
-            "big",
-            "bus",
-            "agent",
-            "waited"
-          ],
-          "correctPair": [
-            2,
-            3
-          ],
-          "explanation": "The word SAGE is hidden across 'buS' and 'AGEnt'. Take the last letter of 'bus' (S) and the first three of 'agent' (AGE) = SAGE. ✓"
-        },
-        {
-          "id": 122,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a wide valley' is hidden across two of these words. Find the two words.",
-          "options": [
-            "That",
-            "larva",
-            "left",
-            "nothing",
-            "behind"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word VALE hides across 'larva' and 'left': lar|VA + LE|ft → VALE. The last two letters of 'larva' (VA) join the first two letters of 'left' (LE). ✓"
-        },
-        {
-          "id": 123,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a sudden sharp feeling' is hidden across two of these words. Find the two words.",
-          "options": [
-            "That",
-            "cheap",
-            "anger",
-            "grew",
-            "inside"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word PANG is hidden across 'cheaP' and 'ANGer'. Take the last letter of 'cheap' (P) and the first three of 'anger' (ANG) = PANG. ✓"
-        },
-        {
-          "id": 124,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a thin covering for the face' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "dove",
-            "illustrated",
-            "peace",
-            "beautifully"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word VEIL is hidden across 'doVE' and 'ILlustrated'. Take the last two letters of 'dove' (VE) and the first two of 'illustrated' (IL) = VEIL. ✓"
-        },
-        {
-          "id": 125,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'to manage or deal with something' is hidden across two of these words. Find the two words.",
-          "options": [
-            "The",
-            "disco",
-            "performed",
-            "brilliantly",
-            "tonight"
-          ],
-          "correctPair": [
-            1,
-            2
-          ],
-          "explanation": "The word COPE is hidden across 'disCO' and 'PErformed'. Take the last two letters of 'disco' (CO) and the first two of 'performed' (PE) = COPE. ✓"
-        },
-{
-          "id": 126,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'to gain a victory' is hidden across two of these words. Find the two words.",
-          "options": ["The", "new", "inner", "coat", "fits"],
-          "correctPair": [1, 2],
-          "explanation": "The word WIN is hidden across 'neW' and 'INner'. Take the last 1 letter of 'new' (W) and the first 2 of 'inner' (IN) = WIN. ✓"
-        },
-        {
-          "id": 127,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'an animal that barks' is hidden across two of these words. Find the two words.",
-          "options": ["The", "old", "ogre", "sat", "down"],
-          "correctPair": [1, 2],
-          "explanation": "The word DOG is hidden across 'olD' and 'OGre'. Take the last 1 letter of 'old' (D) and the first 2 of 'ogre' (OG) = DOG. ✓"
-        },
-        {
-          "id": 128,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a rodent' is hidden across two of these words. Find the two words.",
-          "options": ["Her", "atlas", "held", "the", "key"],
-          "correctPair": [0, 1],
-          "explanation": "The word RAT is hidden across 'HeR' and 'ATlas'. Take the last 1 letter of 'Her' (R) and the first 2 of 'atlas' (AT) = RAT. ✓"
-        },
-        {
-          "id": 129,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a head covering' is hidden across two of these words. Find the two words.",
-          "options": ["Each", "athlete", "ran", "the", "race"],
-          "correctPair": [0, 1],
-          "explanation": "The word HAT is hidden across 'EacH' and 'AThlete'. Take the last 1 letter of 'Each' (H) and the first 2 of 'athlete' (AT) = HAT. ✓"
-        },
-        {
-          "id": 130,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
-          "options": ["The", "crisp", "envelope", "held", "news"],
-          "correctPair": [1, 2],
-          "explanation": "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last 1 letter of 'crisp' (P) and the first 2 of 'envelope' (EN) = PEN. ✓"
-        },
-        {
-          "id": 131,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a floor covering' is hidden across two of these words. Find the two words.",
-          "options": ["Our", "ugly", "green", "car", "broke"],
-          "correctPair": [0, 1],
-          "explanation": "The word RUG is hidden across 'OuR' and 'UGly'. Take the last 1 letter of 'Our' (R) and the first 2 of 'ugly' (UG) = RUG. ✓"
-        },
-        {
-          "id": 132,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a large vehicle' is hidden across two of these words. Find the two words.",
-          "options": ["The", "hub", "used", "to", "squeak"],
-          "correctPair": [1, 2],
-          "explanation": "The word BUS is hidden across 'huB' and 'USed'. Take the last 1 letter of 'hub' (B) and the first 2 of 'used' (US) = BUS. ✓"
-        },
-        {
-          "id": 133,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a body part used for seeing' is hidden across two of these words. Find the two words.",
-          "options": ["She", "yelled", "loudly", "at", "him"],
-          "correctPair": [0, 1],
-          "explanation": "The word EYE is hidden across 'ShE' and 'YElled'. Take the last 1 letter of 'She' (E) and the first 2 of 'yelled' (YE) = EYE. ✓"
-        },
-        {
-          "id": 134,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'something you sleep on' is hidden across two of these words. Find the two words.",
-          "options": ["The", 'lamb', "edged", "closer", "now"],
-          "correctPair": [1, 2],
-          "explanation": "The word BED is hidden across 'lamB' and 'EDged'. Take the last 1 letter of 'lamb' (B) and the first 2 of 'edged' (ED) = BED. ✓"
-        },
-        {
-          "id": 135,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'to attempt' is hidden across two of these words. Find the two words.",
-          "options": ["Short", "rye", "bread", "is", "tasty"],
-          "correctPair": [0, 1],
-          "explanation": "The word TRY is hidden across 'ShorT' and 'RYe'. Take the last 1 letter of 'Short' (T) and the first 2 of 'rye' (RY) = TRY. ✓"
-        },
-        {
-          "id": 136,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'to cut with scissors' is hidden across two of these words. Find the two words.",
-          "options": ["Music", "utility", "room", "was", "tidy"],
-          "correctPair": [0, 1],
-          "explanation": "The word CUT is hidden across 'MusiC' and 'UTility'. Take the last 1 letter of 'Music' (C) and the first 2 of 'utility' (UT) = CUT. ✓"
-        },
-        {
-          "id": 137,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'an insect that makes honey' is hidden across two of these words. Find the two words.",
-          "options": ["The", "tube", "enters", "the", "ground"],
-          "correctPair": [1, 2],
-          "explanation": "The word BEE is hidden across 'tuBE' and 'Enters'. Take the last 2 letters of 'tube' (BE) and the first 1 of 'enters' (E) = BEE. ✓"
-        },
-        {
-          "id": 138,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
-          "options": ["The", "crisp", "envelope", "was", "sealed"],
-          "correctPair": [1, 2],
-          "explanation": "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last letter of 'crisp' (P) and the first two letters of 'envelope' (EN) = PEN. A pen is a writing tool. ✓"
-        },
-        {
-          "id": 139,
-          "difficulty": 1,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'to pull something' is hidden across two of these words. Find the two words.",
-          "options": ["Get", "owls", "from", "the", "barn"],
-          "correctPair": [0, 1],
-          "explanation": "The word TOW is hidden across 'GeT' and 'OWls'. Take the last 1 letter of 'Get' (T) and the first 2 of 'owls' (OW) = TOW. ✓"
-        },
-        {
-          "id": 141,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'a large feather' is hidden across two of these words. Find the two words.",
-          "options": ["The", "crisp", "lumen", "shone", "brightly"],
-          "correctPair": [1, 2],
-          "explanation": "The word PLUME is hidden across 'crisP' and 'LUMEn'. Take the last 1 letter of 'crisp' (P) and the first 4 of 'lumen' (LUME) = PLUME. ✓"
-        },
-        {
-          "id": 142,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'the speed of music' is hidden across two of these words. Find the two words.",
-          "options": ["The", "temp", "often", "changes", "fast"],
-          "correctPair": [1, 2],
-          "explanation": "The word TEMPO is hidden across 'TEMP' and 'Often'. Take the last 4 letters of 'temp' (TEMP) and the first 1 of 'often' (O) = TEMPO. ✓"
-        },
-        {
-          "id": 143,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'a secret worker' is hidden across two of these words. Find the two words.",
-          "options": ["Each", "flag", "entered", "the", "room"],
-          "correctPair": [1, 2],
-          "explanation": "The word AGENT is hidden across 'flAG' and 'ENTered'. Take the last 2 letters of 'flag' (AG) and the first 3 of 'entered' (ENT) = AGENT. ✓"
-        },
-        {
-          "id": 144,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'to change' is hidden across two of these words. Find the two words.",
-          "options": ["The", "metal", "terrified", "him", "greatly"],
-          "correctPair": [1, 2],
-          "explanation": "The word ALTER is hidden across 'metAL' and 'TERrified'. Take the last 2 letters of 'metal' (AL) and the first 3 of 'terrified' (TER) = ALTER. ✓"
-        },
-        {
-          "id": 145,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'a yellow fruit' is hidden across two of these words. Find the two words.",
-          "options": ["There", "camel", "on", "the", "road"],
-          "correctPair": [1, 2],
-          "explanation": "The word MELON is hidden across 'caMEL' and 'ON'. Take the last 3 letters of 'camel' (MEL) and the first 2 of 'on' (ON) = MELON. ✓"
-        },
-        {
-          "id": 150,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'soft and smooth' is hidden across two of these words. Find the two words.",
-          "options": ["The", "music", "reams", "of", "paper"],
-          "correctPair": [1, 2],
-          "explanation": "The word CREAM is hidden across 'musiC' and 'REAMs'. Take the last 1 letter of 'music' (C) and the first 4 of 'reams' (REAM) = CREAM. ✓"
-        },
-        {
-          "id": 151,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'a wooden seat' is hidden across two of these words. Find the two words.",
-          "options": ["The", "bench", "aired", "its", "views"],
-          "correctPair": [1, 2],
-          "explanation": "The word CHAIR is hidden across 'benCH' and 'AIRed'. Take the last 2 letters of 'bench' (CH) and the first 3 of 'aired' (AIR) = CHAIR. ✓"
-        },
-        {
-          "id": 152,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'a tool for sweeping' is hidden across two of these words. Find the two words.",
-          "options": ["The", "club", "roomed", "with", "others"],
-          "correctPair": [1, 2],
-          "explanation": "The word BROOM is hidden across 'cluB' and 'ROOMed'. Take the last 1 letter of 'club' (B) and the first 4 of 'roomed' (ROOM) = BROOM. ✓"
-        },
-        {
-          "id": 153,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'a citrus fruit' is hidden across two of these words. Find the two words.",
-          "options": ["Her", "rule", "monsters", "hide", "well"],
-          "correctPair": [1, 2],
-          "explanation": "The word LEMON is hidden across 'ruLE' and 'MONsters'. Take the last 2 letters of 'rule' (LE) and the first 3 of 'monsters' (MON) = LEMON. ✓"
-        },
-        {
-          "id": 154,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'anger' is hidden across two of these words. Find the two words.",
-          "options": ["The", "gang", "errand", "took", "long"],
-          "correctPair": [1, 2],
-          "explanation": "The word ANGER is hidden across 'gANG' and 'ERrand'. Take the last 3 letters of 'gang' (ANG) and the first 2 of 'errand' (ER) = ANGER. ✓"
-        },
-        {
-          "id": 155,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 5-letter word meaning 'to begin' is hidden across two of these words. Find the two words.",
-          "options": ["The", "mast", "article", "was", "long"],
-          "correctPair": [1, 2],
-          "explanation": "The word START is hidden across 'maST' and 'ARTicle'. Take the last 2 letters of 'mast' (ST) and the first 3 of 'article' (ART) = START. ✓"
-        },
-        {
-          "id": 159,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a loud noise' is hidden across two of these words. Find the two words.",
-          "options": ["The", "crab", "anger", "made", "waves"],
-          "correctPair": [1, 2],
-          "explanation": "The word BANG is hidden across 'craB' and 'ANGer'. Take the last 1 letter of 'crab' (B) and the first 3 of 'anger' (ANG) = BANG. ✓"
-        },
-        {
-          "id": 161,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'to break suddenly' is hidden across two of these words. Find the two words.",
-          "options": ["The", "lens", "napped", "in", "half"],
-          "correctPair": [1, 2],
-          "explanation": "The word SNAP is hidden across 'lenS' and 'NAPped'. Take the last 1 letter of 'lens' (S) and the first 3 of 'napped' (NAP) = SNAP. ✓"
-        },
-        {
-          "id": 163,
-          "difficulty": 3,
-          "questionType": "select-two",
-          "question": "A 3-letter word meaning 'frozen water' is hidden across two of these words. Find the two words.",
-          "options": ["A", "basic", "energy", "heats", "well"],
-          "correctPair": [1, 2],
-          "explanation": "The word ICE is hidden across 'basIC' and 'Energy'. Take the last 2 letters of 'basic' (IC) and the first 1 of 'energy' (E) = ICE. ✓"
-        },
-        {
-          "id": 165,
-          "difficulty": 2,
-          "questionType": "select-two",
-          "question": "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
-          "options": ["The", "historic", "entire", "lake", "froze"],
-          "correctPair": [1, 2],
-          "explanation": "The word RICE is hidden across 'histoRIC' and 'Entire'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'entire' (E) = RICE. ✓"
-        }
+            {
+                  "id": 1,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'not closed' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "top",
+                        "end",
+                        "was",
+                        "closed"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word OPEN is hidden across 'tOP' and 'ENd'. Take the last two letters of 'top' (OP) and the first two of 'end' (EN) = OPEN. ✓"
+            },
+            {
+                  "id": 2,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'warmth' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "something",
+                        "Each",
+                        "time",
+                        "she",
+                        "ate"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word HEAT is hidden across 'sHE' and 'ATe'. Take the last two letters of 'she' (HE) and the first two of 'ate' (AT) = HEAT. ✓"
+            },
+            {
+                  "id": 3,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'part of the body' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "sea",
+                        "Near",
+                        "the",
+                        "beach",
+                        "and"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word HAND is hidden across 'beach' and 'and'. Take the last letter of 'beach' (H) and all three letters of 'and' (AND) = HAND. A hand is a part of the body. ✓"
+            },
+            {
+                  "id": 4,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to care for deeply' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "there",
+                        "Go",
+                        "to",
+                        "school",
+                        "over"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word LOVE is hidden across 'schooL' and 'OVEr'. Take the last letter of 'school' (L) and the first three of 'over' (OVE) = LOVE. ✓"
+            },
+            {
+                  "id": 5,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a brave person' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "away",
+                        "Just",
+                        "before",
+                        "she",
+                        "rode"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word HERO is hidden across 'sHE' and 'ROde'. Take the last two letters of 'she' (HE) and the first two of 'rode' (RO) = HERO. ✓"
+            },
+            {
+                  "id": 6,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'water falling from clouds' is hidden across two of these words. Look where two words join together.",
+                  "options": [
+                        "carefully",
+                        "Pack",
+                        "your",
+                        "camera",
+                        "inside"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word RAIN is hidden across 'cameRA' and 'INside'. Take the last two letters of 'camera' (RA) and the first two of 'inside' (IN) = RAIN. ✓"
+            },
+            {
+                  "id": 7,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a curved structure' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "He",
+                        "saw",
+                        "the",
+                        "clear",
+                        "chance"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word ARCH is hidden across 'cleAR' and 'CHance'. Take the last two letters of 'clear' (AR) and the first two of 'chance' (CH) = ARCH. ✓"
+            },
+            {
+                  "id": 8,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'slim or not thick' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "warmth",
+                        "inside",
+                        "felt",
+                        "good"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word THIN is hidden across 'warmTH' and 'INside'. Take the last two letters of 'warmth' (TH) and the first two of 'inside' (IN) = THIN. ✓"
+            },
+            {
+                  "id": 9,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'capable' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "here",
+                        "Find",
+                        "the",
+                        "extra",
+                        "blend"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word ABLE is hidden across 'extrA' and 'BLEnd'. Take the last letter of 'extra' (A) and the first three of 'blend' (BLE) = ABLE. ✓"
+            },
+            {
+                  "id": 10,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a magic stick' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "leave",
+                        "He",
+                        "finally",
+                        "saw",
+                        "Andrew"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word WAND is hidden across 'saW' and 'ANDrew'. Take the last letter of 'saw' (W) and the first three of 'Andrew' (AND) = WAND. ✓"
+            },
+            {
+                  "id": 11,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to practise boxing' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "well",
+                        "Play",
+                        "your",
+                        "chess",
+                        "partner"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word SPAR is hidden across 'chesS' and 'PARtner'. Take the last letter of 'chess' (S) and the first three of 'partner' (PAR) = SPAR. ✓"
+            },
+            {
+                  "id": 12,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a large black bird' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "epic",
+                        "row",
+                        "angered",
+                        "everyone"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word CROW is hidden across 'epiC' and 'ROW'. Take the last letter of 'epic' (C) and all of 'row' (ROW) = CROW. ✓"
+            },
+            {
+                  "id": 13,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a wheeled vehicle pulled by a horse' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "perform",
+                        "See",
+                        "the",
+                        "magic",
+                        "artist"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word CART is hidden across 'magiC' and 'ARTist'. Take the last letter of 'magic' (C) and the first three of 'artist' (ART) = CART. ✓"
+            },
+            {
+                  "id": 14,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'an irritating feeling on the skin' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "wisely",
+                        "The",
+                        "small",
+                        "rabbit",
+                        "chose"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word ITCH is hidden across 'rabbIT' and 'CHose'. Take the last two letters of 'rabbit' (IT) and the first two of 'chose' (CH) = ITCH. ✓"
+            },
+            {
+                  "id": 15,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a grain eaten around the world' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "broke",
+                        "The",
+                        "noisy",
+                        "electric",
+                        "engine"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word RICE is hidden across 'electRIC' and 'Engine'. Take the last three letters of 'electric' (RIC) and the first letter of 'engine' (E) = RICE. ✓"
+            },
+            {
+                  "id": 16,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a small hollow or damage' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "garden",
+                        "tools",
+                        "were",
+                        "rusty"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word DENT is hidden across 'garDEN' and 'Tools'. Take the last three letters of 'garden' (DEN) and the first letter of 'tools' (T) = DENT. ✓"
+            },
+            {
+                  "id": 17,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a military position' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Thick",
+                        "rubber",
+                        "ankle",
+                        "supports",
+                        "helped"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word RANK is hidden across 'rubbeR' and 'ANKle'. Take the last letter of 'rubber' (R) and the first three of 'ankle' (ANK) = RANK. ✓"
+            },
+            {
+                  "id": 18,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'weak or feeble' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "tonight",
+                        "Near",
+                        "the",
+                        "villa",
+                        "menu"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word LAME is hidden across 'vilLA' and 'MEnu'. Take the last two letters of 'villa' (LA) and the first two of 'menu' (ME) = LAME. ✓"
+            },
+            {
+                  "id": 19,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Their",
+                        "great",
+                        "allies",
+                        "arrived",
+                        "today"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word TALL is hidden across 'greaT' and 'ALLies'. Take the last letter of 'great' (T) and the first three of 'allies' (ALL) = TALL. ✓"
+            },
+            {
+                  "id": 20,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a bundle of hay or straw' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "tuba",
+                        "lesson",
+                        "went",
+                        "well"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BALE is hidden across 'tuBA' and 'LEsson'. Take the last two letters of 'tuba' (BA) and the first two of 'lesson' (LE) = BALE. ✓"
+            },
+            {
+                  "id": 21,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a reddish-brown coating on metal' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Monday",
+                        "He",
+                        "left",
+                        "Peru",
+                        "starting"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word RUST is hidden across 'peRU' and 'STarting'. Take the last two letters of 'Peru' (RU) and the first two of 'starting' (ST) = RUST. ✓"
+            },
+            {
+                  "id": 22,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a small body of still water' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Read",
+                        "upon",
+                        "damp",
+                        "those",
+                        "early"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word POND is hidden across 'uPON' and 'Damp'. Take the last three letters of 'upon' (PON) and the first letter of 'damp' (D) = POND. ✓"
+            },
+            {
+                  "id": 23,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'an entrance in a fence or wall' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Bring",
+                        "yoga",
+                        "test",
+                        "while",
+                        "group"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word GATE is hidden across 'yoGA' and 'TEst'. Take the last two letters of 'yoga' (GA) and the first two of 'test' (TE) = GATE. ✓"
+            },
+            {
+                  "id": 24,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a device that gives light' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "school",
+                        "ample",
+                        "bring",
+                        "those",
+                        "quiet"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word LAMP is hidden across 'schooL' and 'AMPle'. Take the last letter of 'school' (L) and the first three of 'ample' (AMP) = LAMP. ✓"
+            },
+            {
+                  "id": 25,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'where a bird lays its eggs' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "grew",
+                        "That",
+                        "big",
+                        "moon",
+                        "estate"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word NEST is hidden across 'mooN' and 'ESTate'. Take the last letter of 'moon' (N) and the first three of 'estate' (EST) = NEST. ✓"
+            },
+            {
+                  "id": 26,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a bright object in the night sky' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "plenty",
+                        "Most",
+                        "with",
+                        "fast",
+                        "argue"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word STAR is hidden across 'faST' and 'ARgue'. Take the last two letters of 'fast' (ST) and the first two of 'argue' (AR) = STAR. ✓"
+            },
+            {
+                  "id": 27,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a hollow metal object that rings' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "happy",
+                        "Take",
+                        "your",
+                        "grab",
+                        "ellipse"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word BELL is hidden across 'graB' and 'ELLipse'. Take the last letter of 'grab' (B) and the first three of 'ellipse' (ELL) = BELL. ✓"
+            },
+            {
+                  "id": 28,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a sweet baked treat' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "orca",
+                        "kept",
+                        "his",
+                        "friend"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word CAKE is hidden across 'orCA' and 'KEpt'. Take the last two letters of 'orca' (CA) and the first two of 'kept' (KE) = CAKE. ✓"
+            },
+            {
+                  "id": 29,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'tiny dry particles found on surfaces' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Some",
+                        "big",
+                        "Hindu",
+                        "still",
+                        "paper"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word DUST is hidden across 'hinDU' and 'STill'. Take the last two letters of 'Hindu' (DU) and the first two of 'still' (ST) = DUST. ✓"
+            },
+            {
+                  "id": 30,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'thick strong cord used for tying' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Keep",
+                        "your",
+                        "hero",
+                        "peak",
+                        "under"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word ROPE is hidden across 'heRO' and 'PEak'. Take the last two letters of 'hero' (RO) and the first two of 'peak' (PE) = ROPE. ✓"
+            },
+            {
+                  "id": 31,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a male ruler of a country' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "thick",
+                        "ingot",
+                        "was",
+                        "old",
+                        "heavy"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word KING is hidden across 'thicK' and 'INGot'. Take the last letter of 'thick' (K) and the first three of 'ingot' (ING) = KING. ✓"
+            },
+            {
+                  "id": 32,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "old",
+                        "climb",
+                        "android",
+                        "field"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word BAND is hidden across 'climB' and 'ANDroid'. Take the last letter of 'climb' (B) and the first three of 'android' (AND) = BAND. ✓"
+            },
+            {
+                  "id": 33,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'having a low temperature' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Some",
+                        "music",
+                        "older",
+                        "than",
+                        "before"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word COLD is hidden across 'musiC' and 'OLDer'. Take the last letter of 'music' (C) and the first three of 'older' (OLD) = COLD. ✓"
+            },
+            {
+                  "id": 34,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a circular band worn on a finger' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Keep",
+                        "your",
+                        "floor",
+                        "ingest",
+                        "safe"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word RING is hidden across 'flooR' and 'INGest'. Take the last letter of 'floor' (R) and the first three of 'ingest' (ING) = RING. ✓"
+            },
+            {
+                  "id": 35,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a vertical structure around a garden' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "She",
+                        "could",
+                        "draw",
+                        "allow",
+                        "them"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word WALL is hidden across 'draW' and 'ALLow'. Take the last letter of 'draw' (W) and the first three of 'allow' (ALL) = WALL. ✓"
+            },
+            {
+                  "id": 36,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a shelter made of canvas for camping' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "bright",
+                        "enter",
+                        "my",
+                        "small",
+                        "house"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word TENT is hidden across 'brighT' and 'ENTer'. Take the last letter of 'bright' (T) and the first three of 'enter' (ENT) = TENT. ✓"
+            },
+            {
+                  "id": 37,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'tiny grains found on a beach' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Take",
+                        "the",
+                        "long",
+                        "grass",
+                        "android"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word SAND is hidden across 'grasS' and 'ANDroid'. Take the last letter of 'grass' (S) and the first three of 'android' (AND) = SAND. ✓"
+            },
+            {
+                  "id": 38,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a white drink from cows' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Every",
+                        "dream",
+                        "ilk",
+                        "was",
+                        "golden"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word MILK is hidden across 'dreaM' and 'ILK'. Take the last letter of 'dream' (M) and all three letters of 'ilk' (ILK) = MILK. ✓"
+            },
+            {
+                  "id": 39,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to eat an evening meal' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "laid",
+                        "inert",
+                        "from",
+                        "quite",
+                        "slowly"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word DINE is hidden across 'laiD' and 'INErt'. Take the last letter of 'laid' (D) and the first three of 'inert' (INE) = DINE. ✓"
+            },
+            {
+                  "id": 40,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a strong building used for defence' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "old",
+                        "loaf",
+                        "orthodox",
+                        "view"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word FORT is hidden across 'loaF' and 'ORThodox'. Take the last letter of 'loaf' (F) and the first three of 'orthodox' (ORT) = FORT. ✓"
+            },
+            {
+                  "id": 41,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a hard part of a skeleton' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "New",
+                        "club",
+                        "one",
+                        "with",
+                        "many"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BONE is hidden across 'club' and 'one'. Take the last letter of 'club' (B) and all three letters of 'one' (ONE) = BONE. A bone is a hard part of the skeleton. ✓"
+            },
+            {
+                  "id": 42,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a large area of fresh water' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "His",
+                        "formula",
+                        "keep",
+                        "the",
+                        "prize"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word LAKE is hidden across 'formuLA' and 'KEep'. Take the last two letters of 'formula' (LA) and the first two of 'keep' (KE) = LAKE. ✓"
+            },
+            {
+                  "id": 43,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to want or hope for something' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "tasty",
+                        "big",
+                        "kiwi",
+                        "shelf"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word WISH is hidden across 'kiWI' and 'SHelf'. Take the last two letters of 'kiwi' (WI) and the first two of 'shelf' (SH) = WISH. ✓"
+            },
+            {
+                  "id": 44,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to search for something' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "match",
+                        "until",
+                        "from",
+                        "quite",
+                        "slowly"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word HUNT is hidden across 'matcH' and 'UNTil'. Take the last letter of 'match' (H) and the first three of 'until' (UNT) = HUNT. ✓"
+            },
+            {
+                  "id": 45,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a pale red colour' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "big",
+                        "fancy",
+                        "tulip",
+                        "inkwell"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word PINK is hidden across 'tuliP' and 'INKwell'. Take the last letter of 'tulip' (P) and the first three of 'inkwell' (INK) = PINK. ✓"
+            },
+            {
+                  "id": 46,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a tall pole on a sailing ship' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "llama",
+                        "stop",
+                        "when",
+                        "ready"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word MAST is hidden across 'llaMA' and 'STop'. Take the last two letters of 'llama' (MA) and the first two of 'stop' (ST) = MAST. ✓"
+            },
+            {
+                  "id": 47,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to repair something broken' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "They",
+                        "both",
+                        "swam",
+                        "endless",
+                        "miles"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word MEND is hidden across 'swaM' and 'ENDless'. Take the last letter of 'swam' (M) and the first three of 'endless' (END) = MEND. ✓"
+            },
+            {
+                  "id": 48,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'the time just before nightfall' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Hindu",
+                        "skate",
+                        "on",
+                        "the",
+                        "river"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word DUSK is hidden across 'hinDU' and 'SKate'. Take the last two letters of 'Hindu' (DU) and the first two of 'skate' (SK) = DUSK. ✓"
+            },
+            {
+                  "id": 49,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'the wheel or tiller used to steer a ship' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Very",
+                        "much",
+                        "elms",
+                        "grow",
+                        "tall"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word HELM is hidden across 'mucH' and 'ELMs'. Take the last letter of 'much' (H) and the first three of 'elms' (ELM) = HELM. ✓"
+            },
+            {
+                  "id": 50,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a room or space under the roof' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "big",
+                        "pedal",
+                        "often",
+                        "broke"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word LOFT is hidden across 'pedaL' and 'OFTen'. Take the last letter of 'pedal' (L) and the first three of 'often' (OFT) = LOFT. ✓"
+            },
+            {
+                  "id": 51,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a very small brown bird' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "brew",
+                        "rental",
+                        "was",
+                        "cheap"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word WREN is hidden across 'breW' and 'RENtal'. Take the last letter of 'brew' (W) and the first three of 'rental' (REN) = WREN. ✓"
+            },
+            {
+                  "id": 52,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a metal fastener or to run quickly' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "symbol",
+                        "tank",
+                        "rusted"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word BOLT is hidden across 'symBOL' and 'Tank'. Take the last three letters of 'symbol' (BOL) and the first letter of 'tank' (T) = BOLT. ✓"
+            },
+            {
+                  "id": 53,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a young deer' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "loaf",
+                        "awning",
+                        "near",
+                        "garden"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word FAWN is hidden across 'loaF' and 'AWNing'. Take the last letter of 'loaf' (F) and the first three of 'awning' (AWN) = FAWN. ✓"
+            },
+            {
+                  "id": 54,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a ridge of rock or coral near the sea surface' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "sure",
+                        "effort",
+                        "brings",
+                        "good",
+                        "marks"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word REEF is hidden across 'suRE' and 'EFfort'. Take the last two letters of 'sure' (RE) and the first two of 'effort' (EF) = REEF. ✓"
+            },
+            {
+                  "id": 55,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'the smallest piece in chess' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "His",
+                        "big",
+                        "steep",
+                        "awning",
+                        "broke"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word PAWN is hidden across 'steeP' and 'AWNing'. Take the last letter of 'steep' (P) and the first three of 'awning' (AWN) = PAWN. ✓"
+            },
+            {
+                  "id": 56,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a thick flat piece of stone or concrete' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "His",
+                        "plus",
+                        "label",
+                        "for",
+                        "lunch"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word SLAB is hidden across 'pluS' and 'LABel'. Take the last letter of 'plus' (S) and the first three of 'label' (LAB) = SLAB. ✓"
+            },
+            {
+                  "id": 57,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a fastening made by tying string' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "old",
+                        "drink",
+                        "note",
+                        "faded"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word KNOT is hidden across 'drinK' and 'NOTe'. Take the last letter of 'drink' (K) and the first three of 'note' (NOT) = KNOT. ✓"
+            },
+            {
+                  "id": 58,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a shellfish with two hinged shells' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "magic",
+                        "lamb",
+                        "for",
+                        "the",
+                        "party"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word CLAM is hidden across 'magiC' and 'LAMb'. Take the last letter of 'magic' (C) and the first three of 'lamb' (LAM) = CLAM. ✓"
+            },
+            {
+                  "id": 59,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a thin branch of a tree' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "first",
+                        "post",
+                        "wiggle",
+                        "began"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word TWIG is hidden across 'posT' and 'WIGgle'. Take the last letter of 'post' (T) and the first three of 'wiggle' (WIG) = TWIG. ✓"
+            },
+            {
+                  "id": 60,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a hollow in a hard surface' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "old",
+                        "wand",
+                        "entry",
+                        "shone"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word DENT is hidden across 'wandD' — take the last letter of 'wand' (D) and the first three of 'entry' (ENT) = DENT. ✓"
+            },
+            {
+                  "id": 61,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a sudden strong rush of wind' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "fungus",
+                        "took",
+                        "hold"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word GUST is hidden across 'funGUS' and 'Took'. Take the last three letters of 'fungus' (GUS) and the first letter of 'took' (T) = GUST. ✓"
+            },
+            {
+                  "id": 62,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a stopper for a bottle, or a city in Ireland' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "decor",
+                        "kept",
+                        "them",
+                        "happy"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word CORK is hidden across 'deCOR' and 'Kept'. Take the last three letters of 'decor' (COR) and the first letter of 'kept' (K) = CORK. ✓"
+            },
+            {
+                  "id": 63,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to beat or sell something' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "dwarf",
+                        "logic",
+                        "from",
+                        "the",
+                        "hill"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word FLOG is hidden across 'dwarF' and 'LOGic'. Take the last letter of 'dwarf' (F) and the first three of 'logic' (LOG) = FLOG. ✓"
+            },
+            {
+                  "id": 64,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'an aromatic herb or a place where coins are made' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "We",
+                        "all",
+                        "swim",
+                        "into",
+                        "rivers"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word MINT is hidden across 'swiM' and 'INTo'. Take the last letter of 'swim' (M) and the first three of 'into' (INT) = MINT. ✓"
+            },
+            {
+                  "id": 65,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a sharp curved nail on an animal's foot' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "music",
+                        "lawn",
+                        "is",
+                        "green"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word CLAW hides across 'music' and 'lawn': musi|C + LAW|n → CLAW. The last letter of 'music' (C) joins the first three letters of 'lawn' (LAW). ✓"
+            },
+            {
+                  "id": 66,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a soft round purple fruit' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "help",
+                        "lump",
+                        "in",
+                        "the",
+                        "basket"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word PLUM is hidden across 'helP' and 'LUMp'. Take the last letter of 'help' (P) and the first three of 'lump' (LUM) = PLUM. ✓"
+            },
+            {
+                  "id": 67,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a broad smile' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Big",
+                        "red",
+                        "shag",
+                        "rinse",
+                        "foam"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word GRIN is hidden across 'shaG' and 'RINse'. Take the last letter of 'shag' (G) and the first three of 'rinse' (RIN) = GRIN. ✓"
+            },
+            {
+                  "id": 68,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a narrow opening or gap' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "girls",
+                        "lotion",
+                        "was",
+                        "smooth"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word SLOT is hidden across 'girlS' and 'LOTion'. Take the last letter of 'girls' (S) and the first three of 'lotion' (LOT) = SLOT. ✓"
+            },
+            {
+                  "id": 69,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to move wings up and down' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "One",
+                        "half",
+                        "laptop",
+                        "was",
+                        "broken"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word FLAP is hidden across 'halF' and 'LAPtop'. Take the last letter of 'half' (F) and the first three of 'laptop' (LAP) = FLAP. ✓"
+            },
+            {
+                  "id": 70,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a dish of meat and vegetables cooked slowly' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "frost",
+                        "ewe",
+                        "grazed",
+                        "the",
+                        "field"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word STEW is hidden across 'froST' and 'EWe'. Take the last two letters of 'frost' (ST) and the first two of 'ewe' (EW) = STEW. ✓"
+            },
+            {
+                  "id": 71,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a fastener or to cut with scissors' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "big",
+                        "music",
+                        "lips",
+                        "moved"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word CLIP is hidden across 'musiC' and 'LIPs'. Take the last letter of 'music' (C) and the first three of 'lips' (LIP) = CLIP. ✓"
+            },
+            {
+                  "id": 72,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a narrow valley' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "big",
+                        "shrug",
+                        "lend",
+                        "itself"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word GLEN is hidden across 'shruG' and 'LENd'. Take the last letter of 'shrug' (G) and the first three of 'lend' (LEN) = GLEN. ✓"
+            },
+            {
+                  "id": 73,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to kick a ball before it hits the ground' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "step",
+                        "until",
+                        "the",
+                        "bell",
+                        "rings"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word PUNT is hidden across 'steP' and 'UNTil'. Take the last letter of 'step' (P) and the first three of 'until' (UNT) = PUNT. ✓"
+            },
+            {
+                  "id": 74,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a short funny performance' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "brisk",
+                        "item",
+                        "waited"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word SKIT is hidden across 'briSK' and 'ITem'. Take the last two letters of 'brisk' (SK) and the first two of 'item' (IT) = SKIT. ✓"
+            },
+            {
+                  "id": 75,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to walk with difficulty' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Each",
+                        "trial",
+                        "import",
+                        "grew",
+                        "well"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word LIMP is hidden across 'triaL' and 'IMPort'. Take the last letter of 'trial' (L) and the first three of 'import' (IMP) = LIMP. ✓"
+            },
+            {
+                  "id": 76,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'serious and gloomy' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "old",
+                        "debug",
+                        "rim",
+                        "broke"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word GRIM is hidden across 'debuG' and 'RIM'. Take the last letter of 'debug' (G) and all three letters of 'rim' (RIM) = GRIM. ✓"
+            },
+            {
+                  "id": 77,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a piece of cloth worn to cover the face' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "grave",
+                        "illness",
+                        "was",
+                        "brief"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word VEIL is hidden across 'graVE' and 'ILlness'. Take the last two letters of 'grave' (VE) and the first two of 'illness' (IL) = VEIL. ✓"
+            },
+            {
+                  "id": 78,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a clever trick or deception' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "guru",
+                        "seed",
+                        "from",
+                        "the",
+                        "garden"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word RUSE is hidden across 'guRU' and 'SEed'. Take the last two letters of 'guru' (RU) and the first two of 'seed' (SE) = RUSE. ✓"
+            },
+            {
+                  "id": 79,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a cause of great distress' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "old",
+                        "tuba",
+                        "next",
+                        "played"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word BANE is hidden across 'tuBA' and 'NExt'. Take the last two letters of 'tuba' (BA) and the first two of 'next' (NE) = BANE. ✓"
+            },
+            {
+                  "id": 80,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a large fire for burning a dead body' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "His",
+                        "copy",
+                        "realm",
+                        "grew",
+                        "wide"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PYRE is hidden across 'coPY' and 'REalm'. Take the last two letters of 'copy' (PY) and the first two of 'realm' (RE) = PYRE. ✓"
+            },
+            {
+                  "id": 81,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to gradually decrease or decline' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Build",
+                        "with",
+                        "long",
+                        "straw",
+                        "anew"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word WANE is hidden across 'straW' and 'ANEw'. Take the last letter of 'straw' (W) and the first three of 'anew' (ANE) = WANE. ✓"
+            },
+            {
+                  "id": 82,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a very strong wind' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "drag",
+                        "alert",
+                        "came",
+                        "first"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word GALE is hidden across 'draG' and 'ALErt'. Take the last letter of 'drag' (G) and the first three of 'alert' (ALE) = GALE. ✓"
+            },
+            {
+                  "id": 83,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'an urgent request or appeal' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "steeple",
+                        "afoot",
+                        "was",
+                        "grand"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PLEA is hidden across 'steePLE' and 'Afoot'. Take the last three letters of 'steeple' (PLE) and the first letter of 'afoot' (A) = PLEA. ✓"
+            },
+            {
+                  "id": 84,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'the upper edge of a cup or hat' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Each",
+                        "small",
+                        "club",
+                        "rim",
+                        "shone"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word BRIM is hidden across 'cluB' and 'RIM'. Take the last letter of 'club' (B) and all three letters of 'rim' (RIM) = BRIM. ✓"
+            },
+            {
+                  "id": 85,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a wise person, or an aromatic herb' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "mesa",
+                        "get",
+                        "from",
+                        "the",
+                        "market"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word SAGE is hidden across 'meSA' and 'GEt'. Take the last two letters of 'mesa' (SA) and the first two of 'get' (GE) = SAGE. ✓"
+            },
+            {
+                  "id": 86,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a precious stone that shimmers with colours' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Walk",
+                        "into",
+                        "palace",
+                        "with",
+                        "pride"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word OPAL is hidden across 'intO' and 'PALace'. Take the last letter of 'into' (O) and the first three of 'palace' (PAL) = OPAL. ✓"
+            },
+            {
+                  "id": 87,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'skilful and quick in movement' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "bored",
+                        "efts",
+                        "swam",
+                        "slowly"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word DEFT is hidden across 'boreD' and 'EFTs'. Take the last letter of 'bored' (D) and the first three of 'efts' (EFT) = DEFT. ✓"
+            },
+            {
+                  "id": 88,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'great enthusiasm or passion' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "froze",
+                        "altar",
+                        "near",
+                        "the",
+                        "church"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word ZEAL is hidden across 'froZE' and 'ALtar'. Take the last two letters of 'froze' (ZE) and the first two of 'altar' (AL) = ZEAL. ✓"
+            },
+            {
+                  "id": 89,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a major musical composition' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "bishop",
+                        "usher",
+                        "smiled"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word OPUS is hidden across 'bishOP' and 'USher'. Take the last two letters of 'bishop' (OP) and the first two of 'usher' (US) = OPUS. ✓"
+            },
+            {
+                  "id": 90,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a mound of sand shaped by wind' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Big",
+                        "old",
+                        "Hindu",
+                        "never",
+                        "forgot"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word DUNE is hidden across 'hinDU' and 'NEver'. Take the last two letters of 'Hindu' (DU) and the first two of 'never' (NE) = DUNE. ✓"
+            },
+            {
+                  "id": 91,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'an ancient stringed musical instrument' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "In",
+                        "July",
+                        "read",
+                        "some",
+                        "books"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word LYRE is hidden across 'juLY' and 'REad'. Take the last two letters of 'July' (LY) and the first two of 'read' (RE) = LYRE. ✓"
+            },
+            {
+                  "id": 92,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'traditional knowledge passed down through stories' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "pool",
+                        "oregano",
+                        "with",
+                        "fresh",
+                        "taste"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word LORE is hidden across 'pooL' and 'OREgano'. Take the last letter of 'pool' (L) and the first three of 'oregano' (ORE) = LORE. ✓"
+            },
+            {
+                  "id": 93,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a soothing ointment or something that comforts' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "His",
+                        "old",
+                        "verb",
+                        "almond",
+                        "tasted"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word BALM is hidden across 'verB' and 'ALMond'. Take the last letter of 'verb' (B) and the first three of 'almond' (ALM) = BALM. ✓"
+            },
+            {
+                  "id": 94,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'extremely serious or urgent' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "grand",
+                        "ire",
+                        "brought",
+                        "chaos"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word DIRE is hidden across 'granD' and 'IRE'. Take the last letter of 'grand' (D) and all three letters of 'ire' (IRE) = DIRE. ✓"
+            },
+            {
+                  "id": 95,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a green plant with feathery leaves' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Big",
+                        "old",
+                        "offer",
+                        "night",
+                        "walks"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word FERN is hidden across 'ofFER' and 'Night'. Take the last three letters of 'offer' (FER) and the first letter of 'night' (N) = FERN. ✓"
+            },
+            {
+                  "id": 96,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a device that shows wind direction' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "larva",
+                        "never",
+                        "grew",
+                        "much"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word VANE is hidden across 'larVA' and 'NEver'. Take the last two letters of 'larva' (VA) and the first two of 'never' (NE) = VANE. ✓"
+            },
+            {
+                  "id": 97,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'the back of the neck' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "turn",
+                        "apex",
+                        "from",
+                        "this",
+                        "angle"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word NAPE is hidden across 'turN' and 'APEx'. Take the last letter of 'turn' (N) and the first three of 'apex' (APE) = NAPE. ✓"
+            },
+            {
+                  "id": 98,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a formal written legal document' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "His",
+                        "old",
+                        "brew",
+                        "ritual",
+                        "began"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word WRIT is hidden across 'breW' and 'RITual'. Take the last letter of 'brew' (W) and the first three of 'ritual' (RIT) = WRIT. ✓"
+            },
+            {
+                  "id": 99,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a cunning plan or scheme' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "big",
+                        "tulip",
+                        "loyal",
+                        "friend"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word PLOY is hidden across 'tuliP' and 'LOYal'. Take the last letter of 'tulip' (P) and the first three of 'loyal' (LOY) = PLOY. ✓"
+            },
+            {
+                  "id": 100,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a large heavy book' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "veto",
+                        "meant",
+                        "very",
+                        "little"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word TOME is hidden across 'veTO' and 'MEant'. Take the last two letters of 'veto' (TO) and the first two of 'meant' (ME) = TOME. ✓"
+            },
+            {
+                  "id": 101,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to stare at in a rude or admiring way' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "shoo",
+                        "gleam",
+                        "from",
+                        "that",
+                        "lamp"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word OGLE is hidden across 'shoO' and 'GLEam'. Take the last letter of 'shoo' (O) and the first three of 'gleam' (GLE) = OGLE. ✓"
+            },
+            {
+                  "id": 102,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a bird's home' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "clean",
+                        "estate",
+                        "gardens"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word NEST is hidden across 'cleaN' and 'ESTate'. Take the last letter of 'clean' (N) and the first three of 'estate' (EST) = NEST. ✓"
+            },
+            {
+                  "id": 103,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a green fruit' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "odd",
+                        "shape",
+                        "around",
+                        "here"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word PEAR is hidden across 'shaPE' and 'ARound'. Take the last two letters of 'shape' (PE) and the first two of 'around' (AR) = PEAR. ✓"
+            },
+            {
+                  "id": 104,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to hurt or damage' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "knight",
+                        "with",
+                        "armour",
+                        "rode"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word HARM is hidden across 'witH' and 'ARMour'. Take the last letter of 'with' (H) and the first three of 'armour' (ARM) = HARM. ✓"
+            },
+            {
+                  "id": 105,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'part of a bird or aeroplane' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "She",
+                        "could",
+                        "brew",
+                        "ingredients",
+                        "well"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word WING is hidden across 'breW' and 'INGredients'. Take the last letter of 'brew' (W) and the first three of 'ingredients' (ING) = WING. ✓"
+            },
+            {
+                  "id": 106,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to get money by working' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "It",
+                        "was",
+                        "quite",
+                        "true",
+                        "Arnold"
+                  ],
+                  "correctPair": [
+                        3,
+                        4
+                  ],
+                  "explanation": "The word EARN is hidden across 'truE' and 'ARNold'. Take the last letter of 'true' (E) and the first three of 'Arnold' (ARN) = EARN. ✓"
+            },
+            {
+                  "id": 107,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'as well' or 'too' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Mum",
+                        "bought",
+                        "metal",
+                        "some",
+                        "ago"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word ALSO is hidden across 'metAL' and 'SOme'. Take the last two letters of 'metal' (AL) and the first two of 'some' (SO) = ALSO. ✓"
+            },
+            {
+                  "id": 108,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a decorative fabric' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "signal",
+                        "aced",
+                        "the",
+                        "test"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word LACE is hidden across 'signaL' and 'ACEd'. Take the last letter of 'signal' (L) and the first three of 'aced' (ACE) = LACE. ✓"
+            },
+            {
+                  "id": 109,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'something you cook food in' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "They",
+                        "went",
+                        "into",
+                        "venture",
+                        "funds"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word OVEN is hidden across 'intO' and 'VENture'. Take the last letter of 'into' (O) and the first three of 'venture' (VEN) = OVEN. ✓"
+            },
+            {
+                  "id": 110,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a soft, steady light' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "She",
+                        "gave",
+                        "shrug",
+                        "lower",
+                        "expected"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word GLOW is hidden across 'shruG' and 'LOWer'. Take the last letter of 'shrug' (G) and the first three of 'lower' (LOW) = GLOW. ✓"
+            },
+            {
+                  "id": 111,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'every one' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "race",
+                        "achieved",
+                        "new",
+                        "record"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word EACH is hidden across 'racE' and 'ACHieved'. Take the last letter of 'race' (E) and the first three of 'achieved' (ACH) = EACH. ✓"
+            },
+            {
+                  "id": 112,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a small singing bird' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "solar",
+                        "kind",
+                        "warmth",
+                        "spread"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word LARK is hidden across 'soLAR' and 'Kind'. Take the last three letters of 'solar' (LAR) and the first letter of 'kind' (K) = LARK. ✓"
+            },
+            {
+                  "id": 113,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to eat a meal' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "board",
+                        "inedible",
+                        "food",
+                        "remained"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word DINE is hidden across 'boarD' and 'INEdible'. Take the last letter of 'board' (D) and the first three of 'inedible' (INE) = DINE. ✓"
+            },
+            {
+                  "id": 114,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to wander freely' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "hero",
+                        "among",
+                        "the",
+                        "crowd"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word ROAM is hidden across 'heRO' and 'AMong'. Take the last two letters of 'hero' (RO) and the first two of 'among' (AM) = ROAM. ✓"
+            },
+            {
+                  "id": 115,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'an annoying insect or creature' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "One",
+                        "tulip",
+                        "estate",
+                        "garden",
+                        "bloomed"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PEST is hidden across 'tuliP' and 'ESTate'. Take the last letter of 'tulip' (P) and the first three of 'estate' (EST) = PEST. ✓"
+            },
+            {
+                  "id": 116,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a covering for the face' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "drama",
+                        "sketch",
+                        "was",
+                        "brilliant"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word MASK is hidden across 'draMA' and 'SKetch'. Take the last two letters of 'drama' (MA) and the first two of 'sketch' (SK) = MASK. ✓"
+            },
+            {
+                  "id": 117,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a long flowing garment' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "manor",
+                        "obeyed",
+                        "traditions"
+                  ],
+                  "correctPair": [
+                        2,
+                        3
+                  ],
+                  "explanation": "The word ROBE is hidden across 'manoR' and 'OBEyed'. Take the last letter of 'manor' (R) and the first three of 'obeyed' (OBE) = ROBE. ✓"
+            },
+            {
+                  "id": 118,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a wide valley' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "larva",
+                        "left",
+                        "nothing",
+                        "behind"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word VALE hides across 'larva' and 'left': lar|VA + LE|ft → VALE. The last two letters of 'larva' (VA) join the first two letters of 'left' (LE). ✓"
+            },
+            {
+                  "id": 119,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a sudden sharp feeling' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "That",
+                        "cheap",
+                        "anger",
+                        "grew",
+                        "inside"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PANG is hidden across 'cheaP' and 'ANGer'. Take the last letter of 'cheap' (P) and the first three of 'anger' (ANG) = PANG. ✓"
+            },
+            {
+                  "id": 120,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to manage or deal with something' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "disco",
+                        "performed",
+                        "brilliantly",
+                        "tonight"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word COPE is hidden across 'disCO' and 'PErformed'. Take the last two letters of 'disco' (CO) and the first two of 'performed' (PE) = COPE. ✓"
+            },
+            {
+                  "id": 121,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'to gain a victory' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "new",
+                        "inner",
+                        "coat",
+                        "fits"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word WIN is hidden across 'neW' and 'INner'. Take the last 1 letter of 'new' (W) and the first 2 of 'inner' (IN) = WIN. ✓"
+            },
+            {
+                  "id": 122,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'an animal that barks' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "old",
+                        "ogre",
+                        "sat",
+                        "down"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word DOG is hidden across 'olD' and 'OGre'. Take the last 1 letter of 'old' (D) and the first 2 of 'ogre' (OG) = DOG. ✓"
+            },
+            {
+                  "id": 123,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a rodent' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "atlas",
+                        "held",
+                        "the",
+                        "key"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word RAT is hidden across 'HeR' and 'ATlas'. Take the last 1 letter of 'Her' (R) and the first 2 of 'atlas' (AT) = RAT. ✓"
+            },
+            {
+                  "id": 124,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a head covering' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Each",
+                        "athlete",
+                        "ran",
+                        "the",
+                        "race"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word HAT is hidden across 'EacH' and 'AThlete'. Take the last 1 letter of 'Each' (H) and the first 2 of 'athlete' (AT) = HAT. ✓"
+            },
+            {
+                  "id": 125,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "crisp",
+                        "envelope",
+                        "held",
+                        "news"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last 1 letter of 'crisp' (P) and the first 2 of 'envelope' (EN) = PEN. ✓"
+            },
+            {
+                  "id": 126,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a floor covering' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Our",
+                        "ugly",
+                        "green",
+                        "car",
+                        "broke"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word RUG is hidden across 'OuR' and 'UGly'. Take the last 1 letter of 'Our' (R) and the first 2 of 'ugly' (UG) = RUG. ✓"
+            },
+            {
+                  "id": 127,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a large vehicle' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "hub",
+                        "used",
+                        "to",
+                        "squeak"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BUS is hidden across 'huB' and 'USed'. Take the last 1 letter of 'hub' (B) and the first 2 of 'used' (US) = BUS. ✓"
+            },
+            {
+                  "id": 128,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a body part used for seeing' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "She",
+                        "yelled",
+                        "loudly",
+                        "at",
+                        "him"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word EYE is hidden across 'ShE' and 'YElled'. Take the last 1 letter of 'She' (E) and the first 2 of 'yelled' (YE) = EYE. ✓"
+            },
+            {
+                  "id": 129,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'something you sleep on' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "lamb",
+                        "edged",
+                        "closer",
+                        "now"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BED is hidden across 'lamB' and 'EDged'. Take the last 1 letter of 'lamb' (B) and the first 2 of 'edged' (ED) = BED. ✓"
+            },
+            {
+                  "id": 130,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'to attempt' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Short",
+                        "rye",
+                        "bread",
+                        "is",
+                        "tasty"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word TRY is hidden across 'ShorT' and 'RYe'. Take the last 1 letter of 'Short' (T) and the first 2 of 'rye' (RY) = TRY. ✓"
+            },
+            {
+                  "id": 131,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'to cut with scissors' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Music",
+                        "utility",
+                        "room",
+                        "was",
+                        "tidy"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word CUT is hidden across 'MusiC' and 'UTility'. Take the last 1 letter of 'Music' (C) and the first 2 of 'utility' (UT) = CUT. ✓"
+            },
+            {
+                  "id": 132,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'an insect that makes honey' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "tube",
+                        "enters",
+                        "the",
+                        "ground"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BEE is hidden across 'tuBE' and 'Enters'. Take the last 2 letters of 'tube' (BE) and the first 1 of 'enters' (E) = BEE. ✓"
+            },
+            {
+                  "id": 133,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "crisp",
+                        "envelope",
+                        "was",
+                        "sealed"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last letter of 'crisp' (P) and the first two letters of 'envelope' (EN) = PEN. A pen is a writing tool. ✓"
+            },
+            {
+                  "id": 134,
+                  "difficulty": 1,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'to pull something' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Get",
+                        "owls",
+                        "from",
+                        "the",
+                        "barn"
+                  ],
+                  "correctPair": [
+                        0,
+                        1
+                  ],
+                  "explanation": "The word TOW is hidden across 'GeT' and 'OWls'. Take the last 1 letter of 'Get' (T) and the first 2 of 'owls' (OW) = TOW. ✓"
+            },
+            {
+                  "id": 135,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'a large feather' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "crisp",
+                        "lumen",
+                        "shone",
+                        "brightly"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word PLUME is hidden across 'crisP' and 'LUMEn'. Take the last 1 letter of 'crisp' (P) and the first 4 of 'lumen' (LUME) = PLUME. ✓"
+            },
+            {
+                  "id": 136,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'the speed of music' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "temp",
+                        "often",
+                        "changes",
+                        "fast"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word TEMPO is hidden across 'TEMP' and 'Often'. Take the last 4 letters of 'temp' (TEMP) and the first 1 of 'often' (O) = TEMPO. ✓"
+            },
+            {
+                  "id": 137,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'a secret worker' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Each",
+                        "flag",
+                        "entered",
+                        "the",
+                        "room"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word AGENT is hidden across 'flAG' and 'ENTered'. Take the last 2 letters of 'flag' (AG) and the first 3 of 'entered' (ENT) = AGENT. ✓"
+            },
+            {
+                  "id": 138,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'to change' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "metal",
+                        "terrified",
+                        "him",
+                        "greatly"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word ALTER is hidden across 'metAL' and 'TERrified'. Take the last 2 letters of 'metal' (AL) and the first 3 of 'terrified' (TER) = ALTER. ✓"
+            },
+            {
+                  "id": 139,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'a yellow fruit' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "There",
+                        "camel",
+                        "on",
+                        "the",
+                        "road"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word MELON is hidden across 'caMEL' and 'ON'. Take the last 3 letters of 'camel' (MEL) and the first 2 of 'on' (ON) = MELON. ✓"
+            },
+            {
+                  "id": 140,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'soft and smooth' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "music",
+                        "reams",
+                        "of",
+                        "paper"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word CREAM is hidden across 'musiC' and 'REAMs'. Take the last 1 letter of 'music' (C) and the first 4 of 'reams' (REAM) = CREAM. ✓"
+            },
+            {
+                  "id": 141,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'a wooden seat' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "bench",
+                        "aired",
+                        "its",
+                        "views"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word CHAIR is hidden across 'benCH' and 'AIRed'. Take the last 2 letters of 'bench' (CH) and the first 3 of 'aired' (AIR) = CHAIR. ✓"
+            },
+            {
+                  "id": 142,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'a tool for sweeping' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "club",
+                        "roomed",
+                        "with",
+                        "others"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BROOM is hidden across 'cluB' and 'ROOMed'. Take the last 1 letter of 'club' (B) and the first 4 of 'roomed' (ROOM) = BROOM. ✓"
+            },
+            {
+                  "id": 143,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'a citrus fruit' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "Her",
+                        "rule",
+                        "monsters",
+                        "hide",
+                        "well"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word LEMON is hidden across 'ruLE' and 'MONsters'. Take the last 2 letters of 'rule' (LE) and the first 3 of 'monsters' (MON) = LEMON. ✓"
+            },
+            {
+                  "id": 144,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'anger' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "gang",
+                        "errand",
+                        "took",
+                        "long"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word ANGER is hidden across 'gANG' and 'ERrand'. Take the last 3 letters of 'gang' (ANG) and the first 2 of 'errand' (ER) = ANGER. ✓"
+            },
+            {
+                  "id": 145,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 5-letter word meaning 'to begin' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "mast",
+                        "article",
+                        "was",
+                        "long"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word START is hidden across 'maST' and 'ARTicle'. Take the last 2 letters of 'mast' (ST) and the first 3 of 'article' (ART) = START. ✓"
+            },
+            {
+                  "id": 146,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a loud noise' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "crab",
+                        "anger",
+                        "made",
+                        "waves"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word BANG is hidden across 'craB' and 'ANGer'. Take the last 1 letter of 'crab' (B) and the first 3 of 'anger' (ANG) = BANG. ✓"
+            },
+            {
+                  "id": 147,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'to break suddenly' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "lens",
+                        "napped",
+                        "in",
+                        "half"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word SNAP is hidden across 'lenS' and 'NAPped'. Take the last 1 letter of 'lens' (S) and the first 3 of 'napped' (NAP) = SNAP. ✓"
+            },
+            {
+                  "id": 148,
+                  "difficulty": 3,
+                  "questionType": "select-two",
+                  "question": "A 3-letter word meaning 'frozen water' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "A",
+                        "basic",
+                        "energy",
+                        "heats",
+                        "well"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word ICE is hidden across 'basIC' and 'Energy'. Take the last 2 letters of 'basic' (IC) and the first 1 of 'energy' (E) = ICE. ✓"
+            },
+            {
+                  "id": 149,
+                  "difficulty": 2,
+                  "questionType": "select-two",
+                  "question": "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
+                  "options": [
+                        "The",
+                        "historic",
+                        "entire",
+                        "lake",
+                        "froze"
+                  ],
+                  "correctPair": [
+                        1,
+                        2
+                  ],
+                  "explanation": "The word RICE is hidden across 'histoRIC' and 'Entire'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'entire' (E) = RICE. ✓"
+            }
       ]
     },
     letterMove: {
       name: "Letter Move",
       questions: [
-        {
-                      id: 1,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: WHEAT  EAR",
-                      options: ["H", "W", "E", "A", "T"],
-                      correct: 1,
-                      explanation: "Move the 'W' from WHEAT to make HEAT, and insert it into EAR to make WEAR. 'W' from WHEAT to EAR: WHEAT becomes HEAT, and EAR becomes WEAR. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
-              },
-        {
-                      id: 2,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SPINE  OAR",
-                      options: ["P", "I", "S", "N", "E"],
-                      correct: 2,
-                      explanation: "Move the 'S' from SPINE to make PINE, and insert it into OAR to make SOAR. 'S' from SPINE to OAR: SPINE becomes PINE, and OAR becomes SOAR. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
-              },
-        {
-                      id: 3,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: BRAID  OWL",
-                      options: ["R", "A", "I", "B", "D"],
-                      correct: 3,
-                      explanation: "Move the 'B' from BRAID to make RAID, and insert it into OWL to make BOWL. 'B' from BRAID to OWL: BRAID becomes RAID, and OWL becomes BOWL. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
-              },
-        {
-                      id: 4,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: PLATE  AN",
-                      options: ["L", "A", "T", "E", "P"],
-                      correct: 4,
-                      explanation: "Move the 'P' from PLATE to make LATE, and insert it into AN to make PAN. 'P' from PLATE to AN: PLATE becomes LATE, and AN becomes PAN. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
-              },
-        {
-                      id: 5,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SPARK  OAK",
-                      options: ["S", "P", "A", "R", "K"],
-                      correct: 0,
-                      explanation: "Move the 'S' from SPARK to make PARK, and insert it into OAK to make SOAK. 'S' from SPARK to OAK: SPARK becomes PARK, and OAK becomes SOAK. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
-              },
-        {
-                      id: 6,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: BLOOM  OAT",
-                      options: ["L", "B", "O", "M", "A"],
-                      correct: 1,
-                      explanation: "Move the 'B' from BLOOM to make LOOM, and insert it into OAT to make BOAT. 'B' from BLOOM to OAT: BLOOM becomes LOOM, and OAT becomes BOAT. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
-              },
-        {
-                      id: 7,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: WHEAT  EAR",
-                      options: ["W", "H", "E", "A", "T"],
-                      correct: 0,
-                      explanation: "Move the 'W' from WHEAT to make HEAT, and insert it into EAR to make WEAR. 'W' from WHEAT to EAR: WHEAT becomes HEAT, and EAR becomes WEAR. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
-              },
-        {
-                      id: 8,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: BLAND  OAR",
-                      options: ["L", "B", "A", "N", "D"],
-                      correct: 1,
-                      explanation: "Move the 'B' from BLAND to make LAND, and insert it into OAR to make BOAR. 'B' from BLAND to OAR: BLAND becomes LAND, and OAR becomes BOAR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
-              },
-        {
-                      id: 9,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: PLATE  AN",
-                      options: ["L", "A", "P", "T", "E"],
-                      correct: 2,
-                      explanation: "Move the 'P' from PLATE to make LATE, and insert it into AN to make PAN. 'P' from PLATE to AN: PLATE becomes LATE, and AN becomes PAN. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
-              },
-        {
-                      id: 10,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SPARK  OAK",
-                      options: ["P", "A", "R", "S", "K"],
-                      correct: 3,
-                      explanation: "Move the 'S' from SPARK to make PARK, and insert it into OAK to make SOAK. 'S' from SPARK to OAK: SPARK becomes PARK, and OAK becomes SOAK. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
-              },
-        {
-                      id: 11,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: BLOOM  OAT",
-                      options: ["L", "O", "M", "A", "B"],
-                      correct: 4,
-                      explanation: "Move the 'B' from BLOOM to make LOOM, and insert it into OAT to make BOAT. 'B' from BLOOM to OAT: BLOOM becomes LOOM, and OAT becomes BOAT. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓"
-              },
-        {
-                      id: 12,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: BRAID  OWL",
-                      options: ["B", "R", "A", "I", "D"],
-                      correct: 0,
-                      explanation: "Move the 'B' from BRAID to make RAID, and insert it into OWL to make BOWL. 'B' from BRAID to OWL: BRAID becomes RAID, and OWL becomes BOWL. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
-              },
-        {
-                      id: 13,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SPINE  OAR",
-                      options: ["P", "S", "I", "N", "E"],
-                      correct: 1,
-                      explanation: "Move the 'S' from SPINE to make PINE, and insert it into OAR to make SOAR. 'S' from SPINE to OAR: SPINE becomes PINE, and OAR becomes SOAR. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
-              },
-        {
-                      id: 14,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: CLAMP  OWL",
-                      options: ["L", "A", "M", "C", "P"],
-                      correct: 3,
-                      explanation: "Move the 'C' from CLAMP to make LAMP, and insert it into OWL to make COWL. 'C' from CLAMP to OWL: CLAMP becomes LAMP, and OWL becomes COWL. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
-              },
-        {
-                      id: 15,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SHORE  INK",
-                      options: ["S", "R", "H", "O", "E"],
-                      correct: 1,
-                      explanation: "Move the 'R' from SHORE to make SHOE, and insert it into INK to make RINK. 'R' from SHORE to INK: SHORE becomes SHOE, and INK becomes RINK. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
-              },
-        {
-                      id: 16,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: PLACE  OUR",
-                      options: ["L", "A", "C", "P", "E"],
-                      correct: 3,
-                      explanation: "Move the 'P' from PLACE to make LACE, and insert it into OUR to make POUR. 'P' from PLACE to OUR: PLACE becomes LACE, and OUR becomes POUR. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
-              },
-        {
-                      id: 17,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SWEAR  OWN",
-                      options: ["W", "E", "A", "R", "S"],
-                      correct: 4,
-                      explanation: "Move the 'S' from SWEAR to make WEAR, and insert it into OWN to make SOWN. 'S' from SWEAR to OWN: SWEAR becomes WEAR, and OWN becomes SOWN. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
-              },
-        {
-                      id: 18,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: FLAME  OUR",
-                      options: ["L", "A", "F", "M", "E"],
-                      correct: 2,
-                      explanation: "Move the 'F' from FLAME to make LAME, and insert it into OUR to make FOUR. 'F' from FLAME to OUR: FLAME becomes LAME, and OUR becomes FOUR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
-              },
-        {
-                      id: 19,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: STARE  OWN",
-                      options: ["T", "A", "R", "S", "E"],
-                      correct: 3,
-                      explanation: "Move the 'S' from STARE to make TARE, and insert it into OWN to make SOWN. 'S' from STARE to OWN: STARE becomes TARE, and OWN becomes SOWN. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
-              },
-        {
-                      id: 20,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: BRAND  OAT",
-                      options: ["R", "A", "B", "N", "D"],
-                      correct: 2,
-                      explanation: "Move the 'B' from BRAND to make RAND, and insert it into OAT to make BOAT. 'B' from BRAND to OAT: BRAND becomes RAND, and OAT becomes BOAT. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
-              },
-        {
-                      id: 21,
-                      difficulty: 1,
-                      question: "Move one letter from one word to the other to make two new words: SHAVE  EAR",
-                      options: ["H", "A", "V", "S", "E"],
-                      correct: 3,
-                      explanation: "Move the 'S' from SHAVE to make HAVE, and insert it into EAR to make SEAR. 'S' from SHAVE to EAR: SHAVE becomes HAVE, and EAR becomes SEAR. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
-              },
-        {
-                      id: 22,
-                      difficulty: 3,
-                      question: "Move one letter from one word to the other to make two new words: PLIGHT  OUR",
-                      options: ["L", "I", "G", "P", "H"],
-                      correct: 3,
-                      explanation: "Move the 'P' from PLIGHT to make LIGHT, and insert it into OUR to make POUR. 'P' from PLIGHT to OUR: PLIGHT becomes LIGHT, and OUR becomes POUR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
-              },
-        {
-          "id": 23,
-          "difficulty": 1,
-          "question": "Move one letter from one word to the other to make two new words: BRAIN  OW",
-          "options": ["R", "B", "A", "I", "N"],
-          "correct": 1,
-          "explanation": "Move the 'B' from BRAIN to OW: BRAIN becomes RAIN, and OW becomes BOW. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
-        },
-        {
-          "id": 24,
-          "difficulty": 1,
-          "question": "Move one letter from one word to the other to make two new words: STONE  OIL",
-          "options": ["T", "O", "N", "E", "S"],
-          "correct": 4,
-          "explanation": "Move the 'S' from STONE to OIL: STONE becomes TONE, and OIL becomes SOIL. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓"
-        },
-        {
-          "id": 25,
-          "difficulty": 1,
-          "question": "Move one letter from one word to the other to make two new words: TRAIN  OAD",
-          "options": ["R", "T", "A", "I", "N"],
-          "correct": 1,
-          "explanation": "Move the 'T' from TRAIN to OAD: TRAIN becomes RAIN, and OAD becomes TOAD. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
-        },
-        {
-          "id": 26,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: SHORE  AND",
-          "options": ["S", "O", "R", "E", "H"],
-          "correct": 4,
-          "explanation": "Move the 'H' from SHORE to AND: SHORE becomes SORE, and AND becomes HAND. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
-        },
-        {
-          "id": 27,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: GRAIN  LOW",
-          "options": ["G", "R", "A", "I", "N"],
-          "correct": 0,
-          "explanation": "Move the 'G' from GRAIN to LOW: GRAIN becomes RAIN, and LOW becomes GLOW. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓"
-        },
-        {
-          "id": 28,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: WHOLE  HEN",
-          "options": ["H", "W", "O", "L", "E"],
-          "correct": 1,
-          "explanation": "Move the 'W' from WHOLE to HEN: WHOLE becomes HOLE, and HEN becomes WHEN. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
-        },
-        {
-          "id": 29,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: STRIPE  OAP",
-          "options": ["T", "R", "I", "S", "P"],
-          "correct": 3,
-          "explanation": "Move the 'S' from STRIPE to OAP: STRIPE becomes TRIPE, and OAP becomes SOAP. Both are real words (tripe = stomach lining used as food). Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
-        },
-        {
-          "id": 30,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: THREAD  ARM",
-          "options": ["T", "R", "E", "A", "H"],
-          "correct": 4,
-          "explanation": "Move the 'H' from THREAD to ARM: THREAD becomes TREAD, and ARM becomes HARM. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
-        },
-        {
-          "id": 31,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
-          "options": ["O", "S", "A", "R", "C"],
-          "correct": 1,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 32,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
-          "options": ["A", "G", "S", "E", "C"],
-          "correct": 2,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 33,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAK SCOLD",
-          "options": ["O", "A", "K", "S", "C"],
-          "correct": 3,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 34,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
-          "options": ["A", "G", "E", "P", "R"],
-          "correct": 3,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into AGE to make PAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 35,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: LAY PRICE",
-          "options": ["L", "A", "Y", "R", "P"],
-          "correct": 4,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into LAY to make PLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 36,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ACE PRICE",
-          "options": ["P", "A", "C", "E", "R"],
-          "correct": 0,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into ACE to make PACE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 37,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: OAR STALE",
-          "options": ["S", "O", "A", "R", "T"],
-          "correct": 0,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 38,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: AGE STALE",
-          "options": ["A", "S", "G", "E", "T"],
-          "correct": 1,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 39,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: OAK STALE",
-          "options": ["O", "A", "S", "K", "T"],
-          "correct": 2,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 40,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
-          "options": ["O", "W", "F", "L", "A"],
-          "correct": 2,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into OWL to make FOWL. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 41,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
-          "options": ["A", "T", "E", "F", "L"],
-          "correct": 3,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into ATE to make FATE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 42,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ACE FLAME",
-          "options": ["A", "C", "E", "L", "F"],
-          "correct": 4,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into ACE to make FACE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 43,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: OAR STERN",
-          "options": ["O", "A", "R", "T", "S"],
-          "correct": 4,
-          "explanation": "Move 'S' from STERN to make TERN, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 44,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: AGE STERN",
-          "options": ["S", "A", "G", "E", "T"],
-          "correct": 0,
-          "explanation": "Move 'S' from STERN to make TERN, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 45,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
-          "options": ["O", "S", "A", "R", "C"],
-          "correct": 1,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 46,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
-          "options": ["A", "G", "S", "E", "C"],
-          "correct": 2,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 47,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAK SCOLD",
-          "options": ["O", "A", "K", "S", "C"],
-          "correct": 3,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 48,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ALE SCOLD",
-          "options": ["A", "L", "E", "C", "S"],
-          "correct": 4,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 49,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AID SCOLD",
-          "options": ["S", "A", "I", "D", "C"],
-          "correct": 0,
-          "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 50,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: LAY SCOLD",
-          "options": ["L", "C", "A", "Y", "S"],
-          "correct": 1,
-          "explanation": "Move 'C' from SCOLD to make SOLD, and insert it into LAY to make CLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 51,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAT SCOLD",
-          "options": ["O", "A", "C", "T", "S"],
-          "correct": 2,
-          "explanation": "Move 'C' from SCOLD to make SOLD, and insert it into OAT to make COAT. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 52,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
-          "options": ["A", "G", "E", "P", "R"],
-          "correct": 3,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into AGE to make PAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 53,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: LAY PRICE",
-          "options": ["L", "A", "Y", "R", "P"],
-          "correct": 4,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into LAY to make PLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 54,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ACE PRICE",
-          "options": ["P", "A", "C", "E", "R"],
-          "correct": 0,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into ACE to make PACE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 55,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR PRICE",
-          "options": ["E", "P", "A", "R", "I"],
-          "correct": 1,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into EAR to make PEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 56,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ALE PRICE",
-          "options": ["A", "L", "P", "E", "R"],
-          "correct": 2,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into ALE to make PALE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 57,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AIR PRICE",
-          "options": ["A", "I", "R", "P", "C"],
-          "correct": 3,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into AIR to make PAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 58,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AID PRICE",
-          "options": ["A", "I", "D", "R", "P"],
-          "correct": 4,
-          "explanation": "Move 'P' from PRICE to make RICE, and insert it into AID to make PAID. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 59,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR STALE",
-          "options": ["S", "O", "A", "R", "T"],
-          "correct": 0,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 60,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE STALE",
-          "options": ["A", "S", "G", "E", "T"],
-          "correct": 1,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 61,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAK STALE",
-          "options": ["O", "A", "S", "K", "T"],
-          "correct": 2,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 62,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ALE STALE",
-          "options": ["A", "L", "E", "S", "T"],
-          "correct": 3,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 63,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AID STALE",
-          "options": ["A", "I", "D", "T", "S"],
-          "correct": 4,
-          "explanation": "Move 'S' from STALE to make TALE, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 64,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR STALE",
-          "options": ["T", "E", "A", "R", "S"],
-          "correct": 0,
-          "explanation": "Move 'T' from STALE to make SALE, and insert it into EAR to make TEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 65,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OWN STALE",
-          "options": ["O", "T", "W", "N", "S"],
-          "correct": 1,
-          "explanation": "Move 'T' from STALE to make SALE, and insert it into OWN to make TOWN. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 66,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
-          "options": ["O", "W", "F", "L", "A"],
-          "correct": 2,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into OWL to make FOWL. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 67,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
-          "options": ["A", "T", "E", "F", "L"],
-          "correct": 3,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into ATE to make FATE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 68,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ACE FLAME",
-          "options": ["A", "C", "E", "L", "F"],
-          "correct": 4,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into ACE to make FACE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 69,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR FLAME",
-          "options": ["F", "E", "A", "R", "L"],
-          "correct": 0,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into EAR to make FEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 70,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ARM FLAME",
-          "options": ["A", "F", "R", "M", "L"],
-          "correct": 1,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into ARM to make FARM. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 71,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AIR FLAME",
-          "options": ["A", "I", "F", "R", "L"],
-          "correct": 2,
-          "explanation": "Move 'F' from FLAME to make LAME, and insert it into AIR to make FAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 72,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AID FLAME",
-          "options": ["A", "I", "D", "L", "F"],
-          "correct": 3,
-          "explanation": "Move 'L' from FLAME to make FAME, and insert it into AID to make LAID. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 73,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR STERN",
-          "options": ["O", "A", "R", "T", "S"],
-          "correct": 4,
-          "explanation": "Move 'S' from STERN to make TERN, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 74,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE STERN",
-          "options": ["S", "A", "G", "E", "T"],
-          "correct": 0,
-          "explanation": "Move 'S' from STERN to make TERN, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 75,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
-          "options": ["A", "T", "L", "E", "B"],
-          "correct": 2,
-          "explanation": "Move L from BLEACH: BLEACH becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: harder questions often use longer words and the less obvious direction. ✓"
-        },
-        {
-          "id": 76,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
-          "options": ["O", "A", "R", "B", "S"],
-          "correct": 3,
-          "explanation": "Move B from STABLE: STABLE becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
-        },
-        {
-          "id": 77,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
-          "options": ["A", "G", "E", "S", "R"],
-          "correct": 4,
-          "explanation": "Move R from STREAM: STREAM becomes STEAM, and AGE becomes RAGE. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
-        },
-        {
-          "id": 78,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
-          "options": ["N", "E", "A", "R", "T"],
-          "correct": 0,
-          "explanation": "Move N from TRANCE: TRANCE becomes TRACE, and EAR becomes NEAR. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
-        },
-        {
-          "id": 79,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
-          "options": ["O", "S", "A", "R", "C"],
-          "correct": 1,
-          "explanation": "Move S from SCOLD: becomes COLD, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 80,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
-          "options": ["A", "G", "C", "E", "S"],
-          "correct": 2,
-          "explanation": "Move C from SCOLD: becomes SOLD, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 81,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
-          "options": ["A", "G", "E", "P", "R"],
-          "correct": 3,
-          "explanation": "Move P from PRICE: becomes RICE, and AGE becomes PAGE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 82,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR STALE",
-          "options": ["O", "A", "R", "T", "S"],
-          "correct": 4,
-          "explanation": "Move S from STALE: becomes TALE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 83,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR STALE",
-          "options": ["T", "E", "A", "R", "S"],
-          "correct": 0,
-          "explanation": "Move T from STALE: becomes SALE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 84,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
-          "options": ["O", "F", "W", "L", "A"],
-          "correct": 1,
-          "explanation": "Move F from FLAME: becomes LAME, and OWL becomes FOWL. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 85,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
-          "options": ["A", "T", "L", "E", "F"],
-          "correct": 2,
-          "explanation": "Move L from FLAME: becomes FAME, and ATE becomes LATE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 86,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR STERN",
-          "options": ["O", "A", "R", "S", "T"],
-          "correct": 3,
-          "explanation": "Move S from STERN: becomes TERN, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 87,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR STORE",
-          "options": ["O", "A", "R", "T", "S"],
-          "correct": 4,
-          "explanation": "Move S from STORE: becomes TORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 88,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR STORE",
-          "options": ["T", "E", "A", "R", "S"],
-          "correct": 0,
-          "explanation": "Move T from STORE: becomes SORE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 89,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SPINE",
-          "options": ["O", "S", "A", "R", "P"],
-          "correct": 1,
-          "explanation": "Move S from SPINE: becomes PINE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 90,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR STEAM",
-          "options": ["E", "A", "T", "R", "S"],
-          "correct": 2,
-          "explanation": "Move T from STEAM: becomes SEAM, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 91,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SWEAR",
-          "options": ["O", "A", "R", "S", "W"],
-          "correct": 3,
-          "explanation": "Move S from SWEAR: becomes WEAR, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 92,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR TRACE",
-          "options": ["E", "A", "R", "C", "T"],
-          "correct": 4,
-          "explanation": "Move T from TRACE: becomes RACE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 93,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR STAGE",
-          "options": ["T", "E", "A", "R", "S"],
-          "correct": 0,
-          "explanation": "Move T from STAGE: becomes SAGE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 94,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SHARE",
-          "options": ["O", "S", "A", "R", "H"],
-          "correct": 1,
-          "explanation": "Move S from SHARE: becomes HARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 95,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SCARE",
-          "options": ["O", "A", "S", "R", "C"],
-          "correct": 2,
-          "explanation": "Move S from SCARE: becomes CARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 96,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: AGE SCALE",
-          "options": ["A", "G", "E", "C", "S"],
-          "correct": 3,
-          "explanation": "Move C from SCALE: becomes SALE, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 97,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EAR SNORE",
-          "options": ["E", "A", "R", "S", "N"],
-          "correct": 4,
-          "explanation": "Move N from SNORE: becomes SORE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 98,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: OAR SCORE",
-          "options": ["S", "O", "A", "R", "C"],
-          "correct": 0,
-          "explanation": "Move S from SCORE: becomes CORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 99,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
-          "options": ["A", "L", "T", "E", "B"],
-          "correct": 1,
-          "explanation": "Move L from BLEACH: becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 100,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: AGE BREACH",
-          "options": ["A", "G", "R", "E", "B"],
-          "correct": 2,
-          "explanation": "Move R from BREACH: becomes BEACH, and AGE becomes RAGE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 101,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
-          "options": ["O", "A", "R", "B", "S"],
-          "correct": 3,
-          "explanation": "Move B from STABLE: becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 102,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
-          "options": ["A", "G", "E", "S", "R"],
-          "correct": 4,
-          "explanation": "Move R from STREAM: becomes STEAM, and AGE becomes RAGE. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 103,
-          "difficulty": 3,
-          "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
-          "options": ["N", "E", "A", "R", "T"],
-          "correct": 0,
-          "explanation": "Move N from TRANCE: becomes TRACE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
-        },
-        {
-          "id": 104,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: BAND CAR",
-          "options": ["B", "A", "N", "C", "D"],
-          "correct": 4,
-          "explanation": "Move 'D' from the end of BAND: becomes BAN. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 105,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CARD CAR",
-          "options": ["D", "C", "A", "R", "S"],
-          "correct": 0,
-          "explanation": "Move 'D' from the end of CARD: becomes CAR. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 106,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CART HAT",
-          "options": ["C", "T", "A", "R", "H"],
-          "correct": 1,
-          "explanation": "Move 'T' from the end of CART: becomes CAR. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 107,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: EARN BAR",
-          "options": ["E", "A", "N", "R", "B"],
-          "correct": 2,
-          "explanation": "Move 'N' from the end of EARN: becomes EAR. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 108,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: FARM ATE",
-          "options": ["F", "A", "R", "M", "T"],
-          "correct": 3,
-          "explanation": "Move 'M' from the end of FARM: becomes FAR. Insert it to the front of ATE: becomes MATE. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 109,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: FORD CAR",
-          "options": ["F", "O", "R", "C", "D"],
-          "correct": 4,
-          "explanation": "Move 'D' from the end of FORD: becomes FOR. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 110,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: MARE BAT",
-          "options": ["E", "M", "A", "R", "B"],
-          "correct": 0,
-          "explanation": "Move 'E' from the end of MARE: becomes MAR. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 111,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: PALE BAT",
-          "options": ["P", "E", "A", "L", "B"],
-          "correct": 1,
-          "explanation": "Move 'E' from the end of PALE: becomes PAL. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 112,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: PANT HAT",
-          "options": ["P", "A", "T", "N", "H"],
-          "correct": 2,
-          "explanation": "Move 'T' from the end of PANT: becomes PAN. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 113,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: PINE BAT",
-          "options": ["P", "I", "N", "E", "B"],
-          "correct": 3,
-          "explanation": "Move 'E' from the end of PINE: becomes PIN. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 114,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: BAND BAR",
-          "options": ["B", "A", "D", "R", "N"],
-          "correct": 4,
-          "explanation": "Move 'N' from the middle of BAND: becomes BAD. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 115,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: BURN CAT",
-          "options": ["R", "B", "U", "N", "C"],
-          "correct": 0,
-          "explanation": "Move 'R' from the middle of BURN: becomes BUN. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 116,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CART CAT",
-          "options": ["C", "R", "A", "T", "S"],
-          "correct": 1,
-          "explanation": "Move 'R' from the middle of CART: becomes CAT. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 117,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CAST CAT",
-          "options": ["C", "A", "S", "T", "R"],
-          "correct": 2,
-          "explanation": "Move 'S' from the middle of CAST: becomes CAT. Insert it into the middle of CAT: becomes CAST. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 118,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: COLD HAT",
-          "options": ["C", "O", "D", "L", "H"],
-          "correct": 3,
-          "explanation": "Move 'L' from the middle of COLD: becomes COD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 119,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CORD CAT",
-          "options": ["C", "O", "D", "A", "R"],
-          "correct": 4,
-          "explanation": "Move 'R' from the middle of CORD: becomes COD. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 120,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: GOAT PIN",
-          "options": ["A", "G", "O", "T", "P"],
-          "correct": 0,
-          "explanation": "Move 'A' from the middle of GOAT: becomes GOT. Insert it into the middle of PIN: becomes PAIN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 121,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: GOLD HAT",
-          "options": ["G", "L", "O", "D", "H"],
-          "correct": 1,
-          "explanation": "Move 'L' from the middle of GOLD: becomes GOD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 122,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: HALT HAT",
-          "options": ["H", "A", "L", "T", "S"],
-          "correct": 2,
-          "explanation": "Move 'L' from the middle of HALT: becomes HAT. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 123,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: HARM CAT",
-          "options": ["H", "A", "M", "R", "C"],
-          "correct": 3,
-          "explanation": "Move 'R' from the middle of HARM: becomes HAM. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 124,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: BAND AGE",
-          "options": ["B", "A", "N", "G", "D"],
-          "correct": 4,
-          "explanation": "Move 'D' from the end of BAND: becomes BAN. Insert it to the end of AGE: becomes AGED. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 125,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: BURN PEA",
-          "options": ["R", "B", "U", "N", "P"],
-          "correct": 0,
-          "explanation": "Move 'R' from the middle of BURN: becomes BUN. Insert it to the end of PEA: becomes PEAR. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 126,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CARD AGE",
-          "options": ["C", "D", "A", "R", "G"],
-          "correct": 1,
-          "explanation": "Move 'D' from the end of CARD: becomes CAR. Insert it to the end of AGE: becomes AGED. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 127,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CART PAN",
-          "options": ["C", "A", "T", "R", "P"],
-          "correct": 2,
-          "explanation": "Move 'T' from the end of CART: becomes CAR. Insert it to the end of PAN: becomes PANT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        },
-        {
-          "id": 128,
-          "difficulty": 2,
-          "question": "Move one letter from one word to the other to make two new words: CAST OAK",
-          "options": ["C", "A", "T", "S", "O"],
-          "correct": 3,
-          "explanation": "Move 'S' from the middle of CAST: becomes CAT. Insert it to the end of OAK: becomes OAKS. Tip: The letter can come from ANY position — start, middle, or end! ✓"
-        }
+            {
+                  "id": 1,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: SPINE  OAR",
+                  "options": [
+                        "P",
+                        "I",
+                        "S",
+                        "N",
+                        "E"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move the 'S' from SPINE to make PINE, and insert it into OAR to make SOAR. 'S' from SPINE to OAR: SPINE becomes PINE, and OAR becomes SOAR. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
+            },
+            {
+                  "id": 2,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: BRAID  OWL",
+                  "options": [
+                        "R",
+                        "A",
+                        "I",
+                        "B",
+                        "D"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'B' from BRAID to make RAID, and insert it into OWL to make BOWL. 'B' from BRAID to OWL: BRAID becomes RAID, and OWL becomes BOWL. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
+            },
+            {
+                  "id": 3,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: PLATE  AN",
+                  "options": [
+                        "L",
+                        "A",
+                        "T",
+                        "E",
+                        "P"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move the 'P' from PLATE to make LATE, and insert it into AN to make PAN. 'P' from PLATE to AN: PLATE becomes LATE, and AN becomes PAN. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
+            },
+            {
+                  "id": 4,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: SPARK  OAK",
+                  "options": [
+                        "S",
+                        "P",
+                        "A",
+                        "R",
+                        "K"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move the 'S' from SPARK to make PARK, and insert it into OAK to make SOAK. 'S' from SPARK to OAK: SPARK becomes PARK, and OAK becomes SOAK. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
+            },
+            {
+                  "id": 5,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: BLOOM  OAT",
+                  "options": [
+                        "L",
+                        "B",
+                        "O",
+                        "M",
+                        "A"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move the 'B' from BLOOM to make LOOM, and insert it into OAT to make BOAT. 'B' from BLOOM to OAT: BLOOM becomes LOOM, and OAT becomes BOAT. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
+            },
+            {
+                  "id": 6,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: WHEAT  EAR",
+                  "options": [
+                        "W",
+                        "H",
+                        "E",
+                        "A",
+                        "T"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move the 'W' from WHEAT to make HEAT, and insert it into EAR to make WEAR. 'W' from WHEAT to EAR: WHEAT becomes HEAT, and EAR becomes WEAR. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
+            },
+            {
+                  "id": 7,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: BLAND  OAR",
+                  "options": [
+                        "L",
+                        "B",
+                        "A",
+                        "N",
+                        "D"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move the 'B' from BLAND to make LAND, and insert it into OAR to make BOAR. 'B' from BLAND to OAR: BLAND becomes LAND, and OAR becomes BOAR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
+            },
+            {
+                  "id": 8,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: CLAMP  OWL",
+                  "options": [
+                        "L",
+                        "A",
+                        "M",
+                        "C",
+                        "P"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'C' from CLAMP to make LAMP, and insert it into OWL to make COWL. 'C' from CLAMP to OWL: CLAMP becomes LAMP, and OWL becomes COWL. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
+            },
+            {
+                  "id": 9,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: SHORE  INK",
+                  "options": [
+                        "S",
+                        "R",
+                        "H",
+                        "O",
+                        "E"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move the 'R' from SHORE to make SHOE, and insert it into INK to make RINK. 'R' from SHORE to INK: SHORE becomes SHOE, and INK becomes RINK. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
+            },
+            {
+                  "id": 10,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: PLACE  OUR",
+                  "options": [
+                        "L",
+                        "A",
+                        "C",
+                        "P",
+                        "E"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'P' from PLACE to make LACE, and insert it into OUR to make POUR. 'P' from PLACE to OUR: PLACE becomes LACE, and OUR becomes POUR. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
+            },
+            {
+                  "id": 11,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: SWEAR  OWN",
+                  "options": [
+                        "W",
+                        "E",
+                        "A",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move the 'S' from SWEAR to make WEAR, and insert it into OWN to make SOWN. 'S' from SWEAR to OWN: SWEAR becomes WEAR, and OWN becomes SOWN. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
+            },
+            {
+                  "id": 12,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: FLAME  OUR",
+                  "options": [
+                        "L",
+                        "A",
+                        "F",
+                        "M",
+                        "E"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move the 'F' from FLAME to make LAME, and insert it into OUR to make FOUR. 'F' from FLAME to OUR: FLAME becomes LAME, and OUR becomes FOUR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
+            },
+            {
+                  "id": 13,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: STARE  OWN",
+                  "options": [
+                        "T",
+                        "A",
+                        "R",
+                        "S",
+                        "E"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'S' from STARE to make TARE, and insert it into OWN to make SOWN. 'S' from STARE to OWN: STARE becomes TARE, and OWN becomes SOWN. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
+            },
+            {
+                  "id": 14,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: BRAND  OAT",
+                  "options": [
+                        "R",
+                        "A",
+                        "B",
+                        "N",
+                        "D"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move the 'B' from BRAND to make RAND, and insert it into OAT to make BOAT. 'B' from BRAND to OAT: BRAND becomes RAND, and OAT becomes BOAT. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
+            },
+            {
+                  "id": 15,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: SHAVE  EAR",
+                  "options": [
+                        "H",
+                        "A",
+                        "V",
+                        "S",
+                        "E"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'S' from SHAVE to make HAVE, and insert it into EAR to make SEAR. 'S' from SHAVE to EAR: SHAVE becomes HAVE, and EAR becomes SEAR. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
+            },
+            {
+                  "id": 16,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: PLIGHT  OUR",
+                  "options": [
+                        "L",
+                        "I",
+                        "G",
+                        "P",
+                        "H"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'P' from PLIGHT to make LIGHT, and insert it into OUR to make POUR. 'P' from PLIGHT to OUR: PLIGHT becomes LIGHT, and OUR becomes POUR. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
+            },
+            {
+                  "id": 17,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: BRAIN  OW",
+                  "options": [
+                        "R",
+                        "B",
+                        "A",
+                        "I",
+                        "N"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move the 'B' from BRAIN to OW: BRAIN becomes RAIN, and OW becomes BOW. Both are real words. Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
+            },
+            {
+                  "id": 18,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: STONE  OIL",
+                  "options": [
+                        "T",
+                        "O",
+                        "N",
+                        "E",
+                        "S"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move the 'S' from STONE to OIL: STONE becomes TONE, and OIL becomes SOIL. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓"
+            },
+            {
+                  "id": 19,
+                  "difficulty": 1,
+                  "question": "Move one letter from one word to the other to make two new words: TRAIN  OAD",
+                  "options": [
+                        "R",
+                        "T",
+                        "A",
+                        "I",
+                        "N"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move the 'T' from TRAIN to OAD: TRAIN becomes RAIN, and OAD becomes TOAD. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
+            },
+            {
+                  "id": 20,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: SHORE  AND",
+                  "options": [
+                        "S",
+                        "O",
+                        "R",
+                        "E",
+                        "H"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move the 'H' from SHORE to AND: SHORE becomes SORE, and AND becomes HAND. Both are real words. Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
+            },
+            {
+                  "id": 21,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: GRAIN  LOW",
+                  "options": [
+                        "G",
+                        "R",
+                        "A",
+                        "I",
+                        "N"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move the 'G' from GRAIN to LOW: GRAIN becomes RAIN, and LOW becomes GLOW. Both are real words. Tip: Try both directions — the letter doesn't always move left to right! ✓"
+            },
+            {
+                  "id": 22,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: WHOLE  HEN",
+                  "options": [
+                        "H",
+                        "W",
+                        "O",
+                        "L",
+                        "E"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move the 'W' from WHOLE to HEN: WHOLE becomes HOLE, and HEN becomes WHEN. Both are real words. Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
+            },
+            {
+                  "id": 23,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: STRIPE  OAP",
+                  "options": [
+                        "T",
+                        "R",
+                        "I",
+                        "S",
+                        "P"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move the 'S' from STRIPE to OAP: STRIPE becomes TRIPE, and OAP becomes SOAP. Both are real words (tripe = stomach lining used as food). Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
+            },
+            {
+                  "id": 24,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: THREAD  ARM",
+                  "options": [
+                        "T",
+                        "R",
+                        "E",
+                        "A",
+                        "H"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move the 'H' from THREAD to ARM: THREAD becomes TREAD, and ARM becomes HARM. Both are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
+            },
+            {
+                  "id": 25,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR SCOLD",
+                  "options": [
+                        "O",
+                        "S",
+                        "A",
+                        "R",
+                        "C"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 26,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
+                  "options": [
+                        "A",
+                        "G",
+                        "S",
+                        "E",
+                        "C"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 27,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAK SCOLD",
+                  "options": [
+                        "O",
+                        "A",
+                        "K",
+                        "S",
+                        "C"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'S' from SCOLD to make COLD, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 28,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AGE PRICE",
+                  "options": [
+                        "A",
+                        "G",
+                        "E",
+                        "P",
+                        "R"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into AGE to make PAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 29,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: LAY PRICE",
+                  "options": [
+                        "L",
+                        "A",
+                        "Y",
+                        "R",
+                        "P"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into LAY to make PLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 30,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ACE PRICE",
+                  "options": [
+                        "P",
+                        "A",
+                        "C",
+                        "E",
+                        "R"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into ACE to make PACE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 31,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: OAR STALE",
+                  "options": [
+                        "S",
+                        "O",
+                        "A",
+                        "R",
+                        "T"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'S' from STALE to make TALE, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 32,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: AGE STALE",
+                  "options": [
+                        "A",
+                        "S",
+                        "G",
+                        "E",
+                        "T"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'S' from STALE to make TALE, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 33,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: OAK STALE",
+                  "options": [
+                        "O",
+                        "A",
+                        "S",
+                        "K",
+                        "T"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'S' from STALE to make TALE, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 34,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OWL FLAME",
+                  "options": [
+                        "O",
+                        "W",
+                        "F",
+                        "L",
+                        "A"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'F' from FLAME to make LAME, and insert it into OWL to make FOWL. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 35,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ATE FLAME",
+                  "options": [
+                        "A",
+                        "T",
+                        "E",
+                        "F",
+                        "L"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'F' from FLAME to make LAME, and insert it into ATE to make FATE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 36,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ACE FLAME",
+                  "options": [
+                        "A",
+                        "C",
+                        "E",
+                        "L",
+                        "F"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'F' from FLAME to make LAME, and insert it into ACE to make FACE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 37,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: OAR STERN",
+                  "options": [
+                        "O",
+                        "A",
+                        "R",
+                        "T",
+                        "S"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'S' from STERN to make TERN, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 38,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: AGE STERN",
+                  "options": [
+                        "S",
+                        "A",
+                        "G",
+                        "E",
+                        "T"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'S' from STERN to make TERN, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 39,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ALE SCOLD",
+                  "options": [
+                        "A",
+                        "L",
+                        "E",
+                        "C",
+                        "S"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'S' from SCOLD to make COLD, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 40,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AID SCOLD",
+                  "options": [
+                        "S",
+                        "A",
+                        "I",
+                        "D",
+                        "C"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'S' from SCOLD to make COLD, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 41,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: LAY SCOLD",
+                  "options": [
+                        "L",
+                        "C",
+                        "A",
+                        "Y",
+                        "S"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'C' from SCOLD to make SOLD, and insert it into LAY to make CLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 42,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAT SCOLD",
+                  "options": [
+                        "O",
+                        "A",
+                        "C",
+                        "T",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'C' from SCOLD to make SOLD, and insert it into OAT to make COAT. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 43,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR PRICE",
+                  "options": [
+                        "E",
+                        "P",
+                        "A",
+                        "R",
+                        "I"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into EAR to make PEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 44,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ALE PRICE",
+                  "options": [
+                        "A",
+                        "L",
+                        "P",
+                        "E",
+                        "R"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into ALE to make PALE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 45,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AIR PRICE",
+                  "options": [
+                        "A",
+                        "I",
+                        "R",
+                        "P",
+                        "C"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into AIR to make PAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 46,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AID PRICE",
+                  "options": [
+                        "A",
+                        "I",
+                        "D",
+                        "R",
+                        "P"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'P' from PRICE to make RICE, and insert it into AID to make PAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 47,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ALE STALE",
+                  "options": [
+                        "A",
+                        "L",
+                        "E",
+                        "S",
+                        "T"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'S' from STALE to make TALE, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 48,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AID STALE",
+                  "options": [
+                        "A",
+                        "I",
+                        "D",
+                        "T",
+                        "S"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'S' from STALE to make TALE, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 49,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR STALE",
+                  "options": [
+                        "T",
+                        "E",
+                        "A",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'T' from STALE to make SALE, and insert it into EAR to make TEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 50,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OWN STALE",
+                  "options": [
+                        "O",
+                        "T",
+                        "W",
+                        "N",
+                        "S"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'T' from STALE to make SALE, and insert it into OWN to make TOWN. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 51,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR FLAME",
+                  "options": [
+                        "F",
+                        "E",
+                        "A",
+                        "R",
+                        "L"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'F' from FLAME to make LAME, and insert it into EAR to make FEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 52,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: ARM FLAME",
+                  "options": [
+                        "A",
+                        "F",
+                        "R",
+                        "M",
+                        "L"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'F' from FLAME to make LAME, and insert it into ARM to make FARM. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 53,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AIR FLAME",
+                  "options": [
+                        "A",
+                        "I",
+                        "F",
+                        "R",
+                        "L"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'F' from FLAME to make LAME, and insert it into AIR to make FAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 54,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AID FLAME",
+                  "options": [
+                        "A",
+                        "I",
+                        "D",
+                        "L",
+                        "F"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'L' from FLAME to make FAME, and insert it into AID to make LAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 55,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
+                  "options": [
+                        "A",
+                        "T",
+                        "L",
+                        "E",
+                        "B"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move L from BLEACH: BLEACH becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: harder questions often use longer words and the less obvious direction. ✓"
+            },
+            {
+                  "id": 56,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
+                  "options": [
+                        "O",
+                        "A",
+                        "R",
+                        "B",
+                        "S"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move B from STABLE: STABLE becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
+            },
+            {
+                  "id": 57,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
+                  "options": [
+                        "A",
+                        "G",
+                        "E",
+                        "S",
+                        "R"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move R from STREAM: STREAM becomes STEAM, and AGE becomes RAGE. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
+            },
+            {
+                  "id": 58,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
+                  "options": [
+                        "N",
+                        "E",
+                        "A",
+                        "R",
+                        "T"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move N from TRANCE: TRANCE becomes TRACE, and EAR becomes NEAR. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
+            },
+            {
+                  "id": 59,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AGE SCOLD",
+                  "options": [
+                        "A",
+                        "G",
+                        "C",
+                        "E",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move C from SCOLD: becomes SOLD, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 60,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR STALE",
+                  "options": [
+                        "T",
+                        "E",
+                        "A",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move T from STALE: becomes SALE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 61,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR STORE",
+                  "options": [
+                        "O",
+                        "A",
+                        "R",
+                        "T",
+                        "S"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move S from STORE: becomes TORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 62,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR STORE",
+                  "options": [
+                        "T",
+                        "E",
+                        "A",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move T from STORE: becomes SORE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 63,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR SPINE",
+                  "options": [
+                        "O",
+                        "S",
+                        "A",
+                        "R",
+                        "P"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move S from SPINE: becomes PINE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 64,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR STEAM",
+                  "options": [
+                        "E",
+                        "A",
+                        "T",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move T from STEAM: becomes SEAM, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 65,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR SWEAR",
+                  "options": [
+                        "O",
+                        "A",
+                        "R",
+                        "S",
+                        "W"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move S from SWEAR: becomes WEAR, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 66,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR TRACE",
+                  "options": [
+                        "E",
+                        "A",
+                        "R",
+                        "C",
+                        "T"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move T from TRACE: becomes RACE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 67,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR STAGE",
+                  "options": [
+                        "T",
+                        "E",
+                        "A",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move T from STAGE: becomes SAGE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 68,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR SHARE",
+                  "options": [
+                        "O",
+                        "S",
+                        "A",
+                        "R",
+                        "H"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move S from SHARE: becomes HARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 69,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR SCARE",
+                  "options": [
+                        "O",
+                        "A",
+                        "S",
+                        "R",
+                        "C"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move S from SCARE: becomes CARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 70,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: AGE SCALE",
+                  "options": [
+                        "A",
+                        "G",
+                        "E",
+                        "C",
+                        "S"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move C from SCALE: becomes SALE, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 71,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EAR SNORE",
+                  "options": [
+                        "E",
+                        "A",
+                        "R",
+                        "S",
+                        "N"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move N from SNORE: becomes SORE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 72,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: OAR SCORE",
+                  "options": [
+                        "S",
+                        "O",
+                        "A",
+                        "R",
+                        "C"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move S from SCORE: becomes CORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 73,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: ATE BLEACH",
+                  "options": [
+                        "A",
+                        "L",
+                        "T",
+                        "E",
+                        "B"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move L from BLEACH: becomes BEACH, and ATE becomes LATE. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 74,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: AGE BREACH",
+                  "options": [
+                        "A",
+                        "G",
+                        "R",
+                        "E",
+                        "B"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move R from BREACH: becomes BEACH, and AGE becomes RAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 75,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: OAR STABLE",
+                  "options": [
+                        "O",
+                        "A",
+                        "R",
+                        "B",
+                        "S"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move B from STABLE: becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 76,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: AGE STREAM",
+                  "options": [
+                        "A",
+                        "G",
+                        "E",
+                        "S",
+                        "R"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move R from STREAM: becomes STEAM, and AGE becomes RAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 77,
+                  "difficulty": 3,
+                  "question": "Move one letter from one word to the other to make two new words: EAR TRANCE",
+                  "options": [
+                        "N",
+                        "E",
+                        "A",
+                        "R",
+                        "T"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move N from TRANCE: becomes TRACE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+            },
+            {
+                  "id": 78,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: BAND CAR",
+                  "options": [
+                        "B",
+                        "A",
+                        "N",
+                        "C",
+                        "D"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'D' from the end of BAND: becomes BAN. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 79,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CARD CAR",
+                  "options": [
+                        "D",
+                        "C",
+                        "A",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'D' from the end of CARD: becomes CAR. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 80,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CART HAT",
+                  "options": [
+                        "C",
+                        "T",
+                        "A",
+                        "R",
+                        "H"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'T' from the end of CART: becomes CAR. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 81,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: EARN BAR",
+                  "options": [
+                        "E",
+                        "A",
+                        "N",
+                        "R",
+                        "B"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'N' from the end of EARN: becomes EAR. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 82,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: FARM ATE",
+                  "options": [
+                        "F",
+                        "A",
+                        "R",
+                        "M",
+                        "T"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'M' from the end of FARM: becomes FAR. Insert it to the front of ATE: becomes MATE. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 83,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: FORD CAR",
+                  "options": [
+                        "F",
+                        "O",
+                        "R",
+                        "C",
+                        "D"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'D' from the end of FORD: becomes FOR. Insert it to the end of CAR: becomes CARD. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 84,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: MARE BAT",
+                  "options": [
+                        "E",
+                        "M",
+                        "A",
+                        "R",
+                        "B"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'E' from the end of MARE: becomes MAR. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 85,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: PALE BAT",
+                  "options": [
+                        "P",
+                        "E",
+                        "A",
+                        "L",
+                        "B"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'E' from the end of PALE: becomes PAL. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 86,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: PANT HAT",
+                  "options": [
+                        "P",
+                        "A",
+                        "T",
+                        "N",
+                        "H"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'T' from the end of PANT: becomes PAN. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 87,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: PINE BAT",
+                  "options": [
+                        "P",
+                        "I",
+                        "N",
+                        "E",
+                        "B"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'E' from the end of PINE: becomes PIN. Insert it into the middle of BAT: becomes BEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 88,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: BAND BAR",
+                  "options": [
+                        "B",
+                        "A",
+                        "D",
+                        "R",
+                        "N"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'N' from the middle of BAND: becomes BAD. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 89,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: BURN CAT",
+                  "options": [
+                        "R",
+                        "B",
+                        "U",
+                        "N",
+                        "C"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'R' from the middle of BURN: becomes BUN. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 90,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CART CAT",
+                  "options": [
+                        "C",
+                        "R",
+                        "A",
+                        "T",
+                        "S"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'R' from the middle of CART: becomes CAT. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 91,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CAST CAT",
+                  "options": [
+                        "C",
+                        "A",
+                        "S",
+                        "T",
+                        "R"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'S' from the middle of CAST: becomes CAT. Insert it into the middle of CAT: becomes CAST. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 92,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: COLD HAT",
+                  "options": [
+                        "C",
+                        "O",
+                        "D",
+                        "L",
+                        "H"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'L' from the middle of COLD: becomes COD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 93,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CORD CAT",
+                  "options": [
+                        "C",
+                        "O",
+                        "D",
+                        "A",
+                        "R"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'R' from the middle of CORD: becomes COD. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 94,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: GOAT PIN",
+                  "options": [
+                        "A",
+                        "G",
+                        "O",
+                        "T",
+                        "P"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'A' from the middle of GOAT: becomes GOT. Insert it into the middle of PIN: becomes PAIN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 95,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: GOLD HAT",
+                  "options": [
+                        "G",
+                        "L",
+                        "O",
+                        "D",
+                        "H"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'L' from the middle of GOLD: becomes GOD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 96,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: HALT HAT",
+                  "options": [
+                        "H",
+                        "A",
+                        "L",
+                        "T",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'L' from the middle of HALT: becomes HAT. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 97,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: HARM CAT",
+                  "options": [
+                        "H",
+                        "A",
+                        "M",
+                        "R",
+                        "C"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'R' from the middle of HARM: becomes HAM. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 98,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: BAND AGE",
+                  "options": [
+                        "B",
+                        "A",
+                        "N",
+                        "G",
+                        "D"
+                  ],
+                  "correct": 4,
+                  "explanation": "Move 'D' from the end of BAND: becomes BAN. Insert it to the end of AGE: becomes AGED. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 99,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: BURN PEA",
+                  "options": [
+                        "R",
+                        "B",
+                        "U",
+                        "N",
+                        "P"
+                  ],
+                  "correct": 0,
+                  "explanation": "Move 'R' from the middle of BURN: becomes BUN. Insert it to the end of PEA: becomes PEAR. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 100,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CARD AGE",
+                  "options": [
+                        "C",
+                        "D",
+                        "A",
+                        "R",
+                        "G"
+                  ],
+                  "correct": 1,
+                  "explanation": "Move 'D' from the end of CARD: becomes CAR. Insert it to the end of AGE: becomes AGED. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 101,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CART PAN",
+                  "options": [
+                        "C",
+                        "A",
+                        "T",
+                        "R",
+                        "P"
+                  ],
+                  "correct": 2,
+                  "explanation": "Move 'T' from the end of CART: becomes CAR. Insert it to the end of PAN: becomes PANT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            },
+            {
+                  "id": 102,
+                  "difficulty": 2,
+                  "question": "Move one letter from one word to the other to make two new words: CAST OAK",
+                  "options": [
+                        "C",
+                        "A",
+                        "T",
+                        "S",
+                        "O"
+                  ],
+                  "correct": 3,
+                  "explanation": "Move 'S' from the middle of CAST: becomes CAT. Insert it to the end of OAK: becomes OAKS. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+            }
       ]
     },
 
@@ -13452,1263 +16368,1798 @@ const vrData = {
     letterPairSeries: {
       name: "Letter Pair Series",
       questions: [
-              {
-                      id: 1,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? A, C, E, G, ___",
-                      options: [
-                              "H",
-                              "I",
-                              "J",
-                              "K",
-                              "L"
-                      ],
-                      correct: 1,
-                      explanation: "The pattern skips one letter each time: A (skip B) C (skip D) E (skip F) G (skip H) I. These are the odd-positioned letters of the alphabet. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 2,
-                      difficulty: 3,
-                      question: "What comes next in this series? AZ, BY, CX, DW, ___",
-                      options: [
-                              "EV",
-                              "EU",
-                              "FV",
-                              "EX",
-                              "DV"
-                      ],
-                      correct: 0,
-                      explanation: "The first letter goes forward (A, B, C, D, E) and the second letter goes backward (Z, Y, X, W, V). So the next pair is EV. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 3,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? B, D, F, H, ___",
-                      options: [
-                              "I",
-                              "J",
-                              "K",
-                              "L",
-                              "M"
-                      ],
-                      correct: 1,
-                      explanation: "The pattern skips one letter each time: B (skip C) D (skip E) F (skip G) H (skip I) J. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 4,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? Z, X, V, T, ___",
-                      options: [
-                              "S",
-                              "R",
-                              "Q",
-                              "P",
-                              "U"
-                      ],
-                      correct: 1,
-                      explanation: "The pattern goes backwards, skipping one letter: Z (skip Y) X (skip W) V (skip U) T (skip S) R. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 5,
-                      difficulty: 1,
-                      question: "What comes next? A, B, D, G, ___",
-                      options: [
-                              "H",
-                              "I",
-                              "J",
-                              "K",
-                              "L"
-                      ],
-                      correct: 3,
-                      explanation: "The gaps increase by 1 each time: A(+1)B(+2)D(+3)G(+4)K. The differences are 1, 2, 3, 4. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 6,
-                      difficulty: 3,
-                      question: "What comes next in this series? AC, BD, CE, DF, ___",
-                      options: [
-                              "EG",
-                              "EF",
-                              "FG",
-                              "DG",
-                              "EH"
-                      ],
-                      correct: 0,
-                      explanation: "The first letter advances by 1: A,B,C,D,E. The second letter also advances by 1: C,D,E,F,G. Next is EG. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 7,
-                      difficulty: 1,
-                      question: "What comes next in this series? A, C, E, G, I, ___",
-                      options: [
-                              "J",
-                              "K",
-                              "L",
-                              "M",
-                              "N"
-                      ],
-                      correct: 1,
-                      explanation: "The pattern gives every other letter: A, C, E, G, I, K. Skipping B, D, F, H, J. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 8,
-                      difficulty: 2,
-                      question: "What comes next? ZZ, YY, XX, WW, ___",
-                      options: [
-                              "VV",
-                              "UU",
-                              "VW",
-                              "WX",
-                              "UV"
-                      ],
-                      correct: 0,
-                      explanation: "Each pair uses the same letter, going backwards through the alphabet: ZZ, YY, XX, WW, VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              }
-      ,
-              {
-                      id: 9,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? A, C, E, G, ___",
-                      options: ["H","I","J","K","L"],
-                      correct: 1,
-                      explanation: "The pattern adds 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is I. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 10,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? B, D, F, H, ___",
-                      options: ["I","K","L","J","M"],
-                      correct: 3,
-                      explanation: "The pattern adds 2 each time: B(+2)→D(+2)→F(+2)→H(+2)→J. The answer is J. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 11,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? Z, Y, X, W, ___",
-                      options: ["T","U","V","X","S"],
-                      correct: 2,
-                      explanation: "The pattern goes back 1 each time: Z(−1)→Y(−1)→X(−1)→W(−1)→V. The answer is V. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 12,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? A, B, C, D, ___",
-                      options: ["F","G","E","H","D"],
-                      correct: 2,
-                      explanation: "The pattern advances by 1 each time in alphabetical order: A→B→C→D→E. The answer is E. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 13,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? M, N, O, P, ___",
-                      options: ["R","S","T","Q","U"],
-                      correct: 3,
-                      explanation: "The pattern advances by 1 each time: M→N→O→P→Q. The answer is Q. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 14,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? C, F, I, L, ___",
-                      options: ["M","N","O","P","Q"],
-                      correct: 2,
-                      explanation: "The pattern adds 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is O. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 15,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? D, F, H, J, ___",
-                      options: ["K","M","N","O","L"],
-                      correct: 4,
-                      explanation: "The pattern adds 2 each time: D(+2)→F(+2)→H(+2)→J(+2)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 16,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? T, R, P, N, ___",
-                      options: ["M","K","J","O","L"],
-                      correct: 4,
-                      explanation: "The pattern goes back 2 each time: T(−2)→R(−2)→P(−2)→N(−2)→L. The answer is L. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 17,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? E, H, K, N, ___",
-                      options: ["O","P","Q","R","S"],
-                      correct: 2,
-                      explanation: "The pattern adds 3 each time: E(+3)→H(+3)→K(+3)→N(+3)→Q. The answer is Q. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 18,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? W, U, S, Q, ___",
-                      options: ["P","N","M","O","L"],
-                      correct: 3,
-                      explanation: "The pattern goes back 2 each time: W(−2)→U(−2)→S(−2)→Q(−2)→O. The answer is O. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 19,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AB, CD, EF, GH, ___",
-                      options: ["HI","JK","KL","GH","IJ"],
-                      correct: 4,
-                      explanation: "Both letters advance by 2 each step: AB→CD→EF→GH→IJ. The answer is IJ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 20,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
-                      options: ["DZ","EA","EZ","FZ","EY"],
-                      correct: 2,
-                      explanation: "The first letter advances by 1, the second stays as Z: AZ→BZ→CZ→DZ→EZ. The answer is EZ. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 21,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AA, BB, CC, DD, ___",
-                      options: ["DE","EE","EF","FF","EG"],
-                      correct: 1,
-                      explanation: "Each pair is a doubled letter advancing by 1: AA→BB→CC→DD→EE. The answer is EE. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 22,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AB, BC, CD, DE, ___",
-                      options: ["EF","EG","FG","DF","FH"],
-                      correct: 0,
-                      explanation: "Both letters advance by 1 each step: AB→BC→CD→DE→EF. The answer is EF. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 23,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AC, BD, CE, DF, ___",
-                      options: ["EH","FG","DG","EG","FH"],
-                      correct: 3,
-                      explanation: "Both letters advance by 1 each step: AC→BD→CE→DF→EG. The answer is EG. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 24,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AX, BX, CX, DX, ___",
-                      options: ["DY","EW","EX","FX","EY"],
-                      correct: 2,
-                      explanation: "The first letter advances by 1, the second stays as X: AX→BX→CX→DX→EX. The answer is EX. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 25,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
-                      options: ["VW","UU","VV","WX","UV"],
-                      correct: 2,
-                      explanation: "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV. The answer is VV. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 26,
-                      difficulty: 1,
-                      question: "What comes next in this series? A1, B2, C3, D4, ___",
-                      options: ["D5","E4","E5","F5","E6"],
-                      correct: 2,
-                      explanation: "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5. The answer is E5. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 27,
-                      difficulty: 1,
-                      question: "What comes next in this series? A2, B4, C6, D8, ___",
-                      options: ["E9","F10","D10","E12","E10"],
-                      correct: 4,
-                      explanation: "The letter advances by 1 and the number advances by 2: A2→B4→C6→D8→E10. The answer is E10. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 28,
-                      difficulty: 1,
-                      question: "What comes next in this series? Z1, Y2, X3, W4, ___",
-                      options: ["V4","V5","U5","W5","V6"],
-                      correct: 1,
-                      explanation: "The letter goes back 1 and the number advances by 1: Z1→Y2→X3→W4→V5. The answer is V5. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 29,
-                      difficulty: 1,
-                      question: "What comes next in this series? A1, A2, A3, A4, ___",
-                      options: ["A5","B5","A6","B4","A4"],
-                      correct: 0,
-                      explanation: "The letter stays as A and the number advances by 1: A1→A2→A3→A4→A5. The answer is A5. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 30,
-                      difficulty: 1,
-                      question: "What comes next in this series? B1, D2, F3, H4, ___",
-                      options: ["I5","J4","I4","J5","K5"],
-                      correct: 3,
-                      explanation: "The letter advances by 2 and the number advances by 1: B1→D2→F3→H4→J5. The answer is J5. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 31,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AD, BE, CF, DG, ___",
-                      options: ["EI","EH","FH","DH","FI"],
-                      correct: 1,
-                      explanation: "Both letters advance by 1 each step, keeping a gap of 3: AD→BE→CF→DG→EH. The answer is EH. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 32,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? B, E, H, K, ___",
-                      options: ["L","M","N","O","P"],
-                      correct: 2,
-                      explanation: "The pattern adds 3 each time: B(+3)→E(+3)→H(+3)→K(+3)→N. The answer is N. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 33,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? BA, CB, DC, ED, ___",
-                      options: ["EF","GF","EG","FD","FE"],
-                      correct: 4,
-                      explanation: "Both letters advance by 1 each step: BA→CB→DC→ED→FE. The answer is FE. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 34,
-                      difficulty: 1,
-                      question: "What comes next in this series? M1, N2, O3, P4, ___",
-                      options: ["Q4","R5","Q5","P5","Q6"],
-                      correct: 2,
-                      explanation: "The letter advances by 1 and the number advances by 1: M1→N2→O3→P4→Q5. The answer is Q5. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 35,
-                      difficulty: 1,
-                      question: "What comes next in this letter series? G, I, K, M, ___",
-                      options: ["N","O","P","Q","R"],
-                      correct: 1,
-                      explanation: "The pattern adds 2 each time: G(+2)→I(+2)→K(+2)→M(+2)→O. The answer is O. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 36,
-                      difficulty: 1,
-                      question: "What comes next in this letter pair series? AE, BF, CG, DH, ___",
-                      options: ["DI","EJ","EI","FI","FJ"],
-                      correct: 2,
-                      explanation: "Both letters advance by 1 each step, keeping a gap of 4: AE→BF→CG→DH→EI. The answer is EI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 37,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? A, D, G, J, ___",
-                      options: ["K","L","M","N","O"],
-                      correct: 2,
-                      explanation: "The pattern adds 3 each time: A(+3)→D(+3)→G(+3)→J(+3)→M. The answer is M. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 38,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? Z, W, T, Q, ___",
-                      options: ["O","M","P","N","L"],
-                      correct: 3,
-                      explanation: "The pattern goes back 3 each time: Z(−3)→W(−3)→T(−3)→Q(−3)→N. The answer is N. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 39,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? A, E, I, M, ___",
-                      options: ["N","O","P","Q","R"],
-                      correct: 3,
-                      explanation: "The pattern adds 4 each time: A(+4)→E(+4)→I(+4)→M(+4)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 40,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? D, H, L, P, ___",
-                      options: ["Q","R","S","T","U"],
-                      correct: 3,
-                      explanation: "The pattern adds 4 each time: D(+4)→H(+4)→L(+4)→P(+4)→T. The answer is T. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 41,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? V, S, P, M, ___",
-                      options: ["L","K","J","I","H"],
-                      correct: 2,
-                      explanation: "The pattern goes back 3 each time: V(−3)→S(−3)→P(−3)→M(−3)→J. The answer is J. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 42,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? B, F, J, N, ___",
-                      options: ["O","P","Q","R","S"],
-                      correct: 3,
-                      explanation: "The pattern adds 4 each time: B(+4)→F(+4)→J(+4)→N(+4)→R. The answer is R. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 43,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? Y, V, S, P, ___",
-                      options: ["N","L","O","K","M"],
-                      correct: 4,
-                      explanation: "The pattern goes back 3 each time: Y(−3)→V(−3)→S(−3)→P(−3)→M. The answer is M. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 44,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? C, G, K, O, ___",
-                      options: ["P","Q","R","S","T"],
-                      correct: 3,
-                      explanation: "The pattern adds 4 each time: C(+4)→G(+4)→K(+4)→O(+4)→S. The answer is S. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 45,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? X, U, R, O, ___",
-                      options: ["N","M","L","K","J"],
-                      correct: 2,
-                      explanation: "The pattern goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 46,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? F, J, N, R, ___",
-                      options: ["S","T","U","V","W"],
-                      correct: 3,
-                      explanation: "The pattern adds 4 each time: F(+4)→J(+4)→N(+4)→R(+4)→V. The answer is V. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 47,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
-                      options: ["VF","VE","UE","WE","UF"],
-                      correct: 1,
-                      explanation: "The first letter goes back 1, the second advances by 1: ZA→YB→XC→WD→VE. The answer is VE. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 48,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? AC, CE, EG, GI, ___",
-                      options: ["HJ","HK","IJ","JK","IK"],
-                      correct: 4,
-                      explanation: "Both letters advance by 2 each step: AC→CE→EG→GI→IK. The answer is IK. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 49,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? AZ, CX, EV, GT, ___",
-                      options: ["HR","IS","IR","HS","IT"],
-                      correct: 2,
-                      explanation: "The first letter advances by 2, the second goes back 2: AZ→CX→EV→GT→IR. The answer is IR. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 50,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? BZ, DY, FX, HW, ___",
-                      options: ["IV","JW","IW","JV","KV"],
-                      correct: 3,
-                      explanation: "The first letter advances by 2, the second goes back 1: BZ→DY→FX→HW→JV. The answer is JV. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 51,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? AB, DE, GH, JK, ___",
-                      options: ["LM","MN","LN","NO","KL"],
-                      correct: 1,
-                      explanation: "Both letters advance by 3 each step: AB→DE→GH→JK→MN. The answer is MN. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 52,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
-                      options: ["SR","QR","RQ","QP","RP"],
-                      correct: 2,
-                      explanation: "Both letters go back 2 each step: ZY→XW→VU→TS→RQ. The answer is RQ. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 53,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? AZ, BY, CX, DW, ___",
-                      options: ["EU","FV","FW","DV","EV"],
-                      correct: 4,
-                      explanation: "The first letter advances by 1, the second goes back 1: AZ→BY→CX→DW→EV. The answer is EV. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 54,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
-                      options: ["IK","JL","IJ","JK","KL"],
-                      correct: 1,
-                      explanation: "Both letters advance by 2 each step: BD→DF→FH→HJ→JL. The answer is JL. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 55,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? MA, NB, OC, PD, ___",
-                      options: ["QF","QE","RE","PE","RF"],
-                      correct: 1,
-                      explanation: "Both letters advance by 1 each step: MA→NB→OC→PD→QE. The answer is QE. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 56,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
-                      options: ["EM","EN","FM","FN","EO"],
-                      correct: 1,
-                      explanation: "The first letter advances by 1, the second advances by 2: AF→BH→CJ→DL→EN. The answer is EN. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 57,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
-                      options: ["RH","RI","SI","SH","QI"],
-                      correct: 1,
-                      explanation: "The first letter goes back 2, the second advances by 2: ZA→XC→VE→TG→RI. The answer is RI. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 58,
-                      difficulty: 2,
-                      question: "What comes next in this series? A3, C6, E9, G12, ___",
-                      options: ["H15","I15","I14","J15","I16"],
-                      correct: 1,
-                      explanation: "The letter advances by 2 and the number advances by 3: A3→C6→E9→G12→I15. The answer is I15. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 59,
-                      difficulty: 2,
-                      question: "What comes next in this series? Z2, X4, V6, T8, ___",
-                      options: ["S10","R10","R8","S9","R12"],
-                      correct: 1,
-                      explanation: "The letter goes back 2 and the number advances by 2: Z2→X4→V6→T8→R10. The answer is R10. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 60,
-                      difficulty: 2,
-                      question: "What comes next in this series? B5, D10, F15, H20, ___",
-                      options: ["I25","J25","J20","K25","J30"],
-                      correct: 1,
-                      explanation: "The letter advances by 2 and the number advances by 5: B5→D10→F15→H20→J25. The answer is J25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 61,
-                      difficulty: 2,
-                      question: "What comes next in this series? Y3, W6, U9, S12, ___",
-                      options: ["R15","Q15","Q14","R14","P15"],
-                      correct: 1,
-                      explanation: "The letter goes back 2 and the number advances by 3: Y3→W6→U9→S12→Q15. The answer is Q15. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 62,
-                      difficulty: 2,
-                      question: "What comes next in this series? A1, C3, E5, G7, ___",
-                      options: ["H9","I8","I9","J9","H8"],
-                      correct: 2,
-                      explanation: "The letter advances by 2 and the number advances by 2: A1→C3→E5→G7→I9. The answer is I9. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 63,
-                      difficulty: 2,
-                      question: "What comes next in this series? D2, G4, J6, M8, ___",
-                      options: ["N10","O10","P10","Q10","P8"],
-                      correct: 2,
-                      explanation: "The letter advances by 3 and the number advances by 2: D2→G4→J6→M8→P10. The answer is P10. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 64,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? CE, DG, EI, FK, ___",
-                      options: ["GL","GM","HM","GN","HN"],
-                      correct: 1,
-                      explanation: "The first letter advances by 1, the second advances by 2: CE→DG→EI→FK→GM. The answer is GM. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 65,
-                      difficulty: 2,
-                      question: "What comes next in this letter series? R, O, L, I, ___",
-                      options: ["G","F","E","H","D"],
-                      correct: 1,
-                      explanation: "The pattern goes back 3 each time: R(−3)→O(−3)→L(−3)→I(−3)→F. The answer is F. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 66,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? YA, WC, UE, SG, ___",
-                      options: ["QH","QI","RI","RH","PI"],
-                      correct: 1,
-                      explanation: "The first letter goes back 2, the second advances by 2: YA→WC→UE→SG→QI. The answer is QI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 67,
-                      difficulty: 2,
-                      question: "What comes next in this series? C1, F3, I5, L7, ___",
-                      options: ["N9","O9","O8","M9","P9"],
-                      correct: 1,
-                      explanation: "The letter advances by 3 and the number advances by 2: C1→F3→I5→L7→O9. The answer is O9. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 68,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? FA, HC, JE, LG, ___",
-                      options: ["MH","MI","NH","NI","NJ"],
-                      correct: 3,
-                      explanation: "Both letters advance by 2 each step: FA→HC→JE→LG→NI. The answer is NI. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 69,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? AK, CM, EO, GQ, ___",
-                      options: ["HR","HS","IS","IR","IT"],
-                      correct: 2,
-                      explanation: "Both letters advance by 2 each step: AK→CM→EO→GQ→IS. The answer is IS. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 70,
-                      difficulty: 2,
-                      question: "What comes next in this series? T5, R10, P15, N20, ___",
-                      options: ["L25","M25","L20","M20","K25"],
-                      correct: 0,
-                      explanation: "The letter goes back 2 and the number advances by 5: T5→R10→P15→N20→L25. The answer is L25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 71,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? BF, CG, DH, EI, ___",
-                      options: ["FJ","FK","GJ","EJ","GK"],
-                      correct: 0,
-                      explanation: "Both letters advance by 1 each step, keeping a gap of 4: BF→CG→DH→EI→FJ. The answer is FJ. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 72,
-                      difficulty: 2,
-                      question: "What comes next in this letter pair series? ZW, YV, XU, WT, ___",
-                      options: ["VS","UR","VR","US","VT"],
-                      correct: 0,
-                      explanation: "Both letters go back 1 each step: ZW→YV→XU→WT→VS. The answer is VS. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 73,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? A, Z, B, Y, C, ___",
-                      options: ["D","W","X","V","B"],
-                      correct: 2,
-                      explanation: "Two patterns alternate: forward (A, B, C, D...) and backward (Z, Y, X...). The positions alternate, so after C (forward) comes X (backward). The answer is X. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 74,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? A, Z, C, X, E, ___",
-                      options: ["F","V","W","G","U"],
-                      correct: 1,
-                      explanation: "Two patterns alternate: forward (+2: A, C, E...) and backward (−2: Z, X, V...). After E (forward), the next is V (backward). The answer is V. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 75,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? A, F, B, G, C, ___",
-                      options: ["D","E","H","I","F"],
-                      correct: 2,
-                      explanation: "Two patterns alternate: A, B, C, D... and F, G, H... After C (first pattern), next is H (second pattern). The answer is H. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 76,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? B, D, C, E, D, ___",
-                      options: ["E","F","G","C","H"],
-                      correct: 1,
-                      explanation: "Two patterns alternate: B, C, D, E... (+1) and D, E, F... (+1). After D (first pattern), the next is F (second pattern). The answer is F. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 77,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? A, C, F, J, ___",
-                      options: ["K","L","M","N","O"],
-                      correct: 4,
-                      explanation: "The gaps increase: A(+2)→C(+3)→F(+4)→J(+5)→O. The answer is O. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 78,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? Z, X, U, Q, ___",
-                      options: ["N","M","L","K","J"],
-                      correct: 2,
-                      explanation: "The gaps increase going backwards: Z(−2)→X(−3)→U(−4)→Q(−5)→L. The answer is L. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 79,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? B, D, H, N, ___",
-                      options: ["T","U","V","W","S"],
-                      correct: 2,
-                      explanation: "The gaps increase: B(+2)→D(+4)→H(+6)→N(+8)→V. The answer is V. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 80,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? C, E, H, L, ___",
-                      options: ["N","O","P","Q","R"],
-                      correct: 3,
-                      explanation: "The gaps increase: C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 81,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? Y, W, T, P, ___",
-                      options: ["N","M","L","K","J"],
-                      correct: 3,
-                      explanation: "The gaps increase going backwards: Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 82,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? AZ, DW, GT, JQ, ___",
-                      options: ["MN","LN","MO","LP","MP"],
-                      correct: 0,
-                      explanation: "The first letter advances by 3, the second goes back 3: AZ→DW→GT→JQ→MN. The answer is MN. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 83,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? BX, EU, HR, KO, ___",
-                      options: ["NL","ML","NK","NM","MK"],
-                      correct: 0,
-                      explanation: "The first letter advances by 3, the second goes back 3: BX→EU→HR→KO→NL. The answer is NL. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 84,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? AC, BF, CI, DL, ___",
-                      options: ["EO","EN","FO","EP","FN"],
-                      correct: 0,
-                      explanation: "The first letter advances by 1 each step: A→B→C→D→E. The second letter advances by 3 each step: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is EO. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 85,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? AY, DV, GS, JP, ___",
-                      options: ["LM","MN","MM","LN","MO"],
-                      correct: 2,
-                      explanation: "The first letter advances by 3, the second goes back 3: AY→DV→GS→JP→MM. The answer is MM. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 86,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
-                      options: ["NK","OK","OL","OJ","PK"],
-                      correct: 1,
-                      explanation: "The first letter advances by 3, the second goes back 3: CW→FT→IQ→LN→OK. The answer is OK. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 87,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
-                      options: ["MN","NN","ON","MO","NO"],
-                      correct: 2,
-                      explanation: "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second goes back 3: Z→W→T→Q→N. The answer is ON. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 88,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
-                      options: ["NN","NM","ON","NL","OM"],
-                      correct: 0,
-                      explanation: "The first letter goes back 3, the second advances by 3: ZB→WE→TH→QK→NN. The answer is NN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 89,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? AD, BG, CJ, DM, ___",
-                      options: ["EN","EO","EP","FP","EQ"],
-                      correct: 2,
-                      explanation: "The first letter advances by 1, the second advances by 3: AD→BG→CJ→DM→EP. The answer is EP. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 90,
-                      difficulty: 3,
-                      question: "What comes next in this series? A2, C5, E8, G11, ___",
-                      options: ["H14","I13","I14","J14","I15"],
-                      correct: 2,
-                      explanation: "The letter advances by 2 and the number advances by 3: A2→C5→E8→G11→I14. The answer is I14. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              },
-              {
-                      id: 91,
-                      difficulty: 3,
-                      question: "What comes next in this series? Z3, W7, T11, Q15, ___",
-                      options: ["N19","O19","N18","O18","M19"],
-                      correct: 0,
-                      explanation: "The letter goes back 3 and the number advances by 4: Z3→W7→T11→Q15→N19. The answer is N19. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-              },
-              {
-                      id: 92,
-                      difficulty: 3,
-                      question: "What comes next in this series? B1, D3, H7, N13, ___",
-                      options: ["T21","V21","U20","V19","T19"],
-                      correct: 1,
-                      explanation: "The letter gaps increase (+2, +4, +6, +8): B→D→H→N→V. The number gaps increase (+2, +4, +6, +8): 1→3→7→13→21. The answer is V21. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-              },
-              {
-                      id: 93,
-                      difficulty: 3,
-                      question: "What comes next in this series? A1, B3, D6, G10, ___",
-                      options: ["J15","K15","L15","K14","J14"],
-                      correct: 1,
-                      explanation: "The letter gaps increase (+1, +2, +3, +4): A→B→D→G→K. The number gaps increase (+2, +3, +4, +5): 1→3→6→10→15. The answer is K15. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-              },
-              {
-                      id: 94,
-                      difficulty: 3,
-                      question: "What comes next in this series? Z1, X3, V5, T7, R9, ___",
-                      options: ["Q11","P11","O11","P10","Q10"],
-                      correct: 1,
-                      explanation: "The letter goes back 2 and the number advances by 2: Z1→X3→V5→T7→R9→P11. The answer is P11. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-              },
-              {
-                      id: 95,
-                      difficulty: 3,
-                      question: "What comes next in this letter series? A, B, D, G, K, ___",
-                      options: ["N","O","P","Q","R"],
-                      correct: 2,
-                      explanation: "The gaps increase by 1 each time: A(+1)→B(+2)→D(+3)→G(+4)→K(+5)→P. The answer is P. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-              },
-              {
-                      id: 96,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? BY, EV, HS, KP, ___",
-                      options: ["NM","NL","ML","MN","OM"],
-                      correct: 0,
-                      explanation: "The first letter advances by 3, the second goes back 3: BY→EV→HS→KP→NM. The answer is NM. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-              },
-              {
-                      id: 97,
-                      difficulty: 3,
-                      question: "What comes next in this series? C2, F5, I8, L11, ___",
-                      options: ["N14","O14","O13","P14","N13"],
-                      correct: 1,
-                      explanation: "The letter advances by 3 and the number advances by 3: C2→F5→I8→L11→O14. The answer is O14. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-              },
-              {
-                      id: 98,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
-                      options: ["MR","NS","OR","OS","NR"],
-                      correct: 3,
-                      explanation: "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second letter gaps increase (+2, +3, +4, +5): E→G→J→N→S. The answer is OS. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-              },
-              {
-                      id: 99,
-                      difficulty: 3,
-                      question: "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
-                      options: ["NL","NM","ML","OL","NK"],
-                      correct: 0,
-                      explanation: "Both letters go back 3 each step: ZX→WU→TR→QO→NL. The answer is NL. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-              },
-              {
-                      id: 100,
-                      difficulty: 3,
-                      question: "What comes next in this series? A1, D4, G9, J16, ___",
-                      options: ["M25","L25","M24","N25","M26"],
-                      correct: 0,
-                      explanation: "The letter advances by 3 each time: A→D→G→J→M. The numbers are perfect squares: 1, 4, 9, 16, 25. The answer is M25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-              }
-      ,
-        {
-          "id": 101,
-          "difficulty": 1,
-          "question": "What comes next in this letter series? D, G, J, M, ___",
-          "options": [
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R"
-          ],
-          "correct": 2,
-          "explanation": "The pattern adds 3 each time: D(+3)→G(+3)→J(+3)→M(+3)→P. The answer is P. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-        },
-        {
-          "id": 102,
-          "difficulty": 1,
-          "question": "What comes next in this letter pair series? FH, GI, HJ, IK, ___",
-          "options": [
-            "JM",
-            "JL",
-            "KL",
-            "IL",
-            "KM"
-          ],
-          "correct": 1,
-          "explanation": "Both letters advance by 1 each step: FH→GI→HJ→IK→JL. The answer is JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-        },
-        {
-          "id": 103,
-          "difficulty": 1,
-          "question": "What comes next in this letter series? V, T, R, P, ___",
-          "options": [
-            "O",
-            "N",
-            "M",
-            "L",
-            "K"
-          ],
-          "correct": 1,
-          "explanation": "The pattern goes back 2 each time: V(−2)→T(−2)→R(−2)→P(−2)→N. The answer is N. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-        },
-        {
-          "id": 104,
-          "difficulty": 1,
-          "question": "What comes next in this letter pair series? AB, AB, AB, AB, ___",
-          "options": [
-            "BC",
-            "CD",
-            "AC",
-            "AB",
-            "BA"
-          ],
-          "correct": 3,
-          "explanation": "The pair AB repeats every time. The next pair is AB. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-        },
-        {
-          "id": 105,
-          "difficulty": 1,
-          "question": "What comes next in this letter series? F, H, J, L, ___",
-          "options": [
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q"
-          ],
-          "correct": 1,
-          "explanation": "The pattern adds 2 each time: F(+2)→H(+2)→J(+2)→L(+2)→N. The answer is N. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-        },
-        {
-          "id": 106,
-          "difficulty": 1,
-          "question": "What comes next in this series? A1, B2, C3, D4, E5, ___",
-          "options": [
-            "E6",
-            "F5",
-            "F6",
-            "G6",
-            "F7"
-          ],
-          "correct": 2,
-          "explanation": "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5→F6. The answer is F6. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-        },
-        {
-          "id": 107,
-          "difficulty": 1,
-          "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
-          "options": [
-            "VW",
-            "UU",
-            "TT",
-            "UV",
-            "UW"
-          ],
-          "correct": 1,
-          "explanation": "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV→UU. The answer is UU. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-        },
-        {
-          "id": 108,
-          "difficulty": 1,
-          "question": "What comes next in this letter series? S, Q, O, M, ___",
-          "options": [
-            "L",
-            "K",
-            "J",
-            "I",
-            "H"
-          ],
-          "correct": 1,
-          "explanation": "The pattern goes back 2 each time: S(−2)→Q(−2)→O(−2)→M(−2)→K. The answer is K. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-        },
-        {
-          "id": 109,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? BY, DW, FU, HS, ___",
-          "options": [
-            "IQ",
-            "JQ",
-            "JP",
-            "IR",
-            "KQ"
-          ],
-          "correct": 1,
-          "explanation": "The first letter advances by 2 (B→D→F→H→J) and the second goes back 2 (Y→W→U→S→Q). The answer is JQ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-        },
-        {
-          "id": 110,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? BE, DG, FI, HK, ___",
-          "options": [
-            "JL",
-            "JM",
-            "IM",
-            "IL",
-            "KM"
-          ],
-          "correct": 1,
-          "explanation": "Both letters advance by 2 each step: BE→DG→FI→HK→JM. The answer is JM. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-        },
-        {
-          "id": 111,
-          "difficulty": 2,
-          "question": "What comes next in this series? Z5, X10, V15, T20, ___",
-          "options": [
-            "S25",
-            "R25",
-            "R20",
-            "S20",
-            "R30"
-          ],
-          "correct": 1,
-          "explanation": "The letter goes back 2 and the number advances by 5: Z5→X10→V15→T20→R25. The answer is R25. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-        },
-        {
-          "id": 112,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? AE, BG, CI, DK, ___",
-          "options": [
-            "EL",
-            "EM",
-            "FM",
-            "EN",
-            "FL"
-          ],
-          "correct": 1,
-          "explanation": "The first letter advances by 1 (A→B→C→D→E) and the second advances by 2 (E→G→I→K→M). The answer is EM. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-        },
-        {
-          "id": 113,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
-          "options": [
-            "VH",
-            "VI",
-            "UI",
-            "VJ",
-            "UH"
-          ],
-          "correct": 1,
-          "explanation": "The first letter goes back 1 (Z→Y→X→W→V) and the second advances by 2 (A→C→E→G→I). The answer is VI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-        },
-        {
-          "id": 114,
-          "difficulty": 2,
-          "question": "What comes next in this series? C2, F4, I6, L8, ___",
-          "options": [
-            "N10",
-            "M10",
-            "O10",
-            "O8",
-            "N8"
-          ],
-          "correct": 2,
-          "explanation": "The letter advances by 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The number advances by 2 each time: 2, 4, 6, 8, 10. The answer is O10. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-        },
-        {
-          "id": 115,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? DB, FC, HD, JE, ___",
-          "options": [
-            "KF",
-            "LF",
-            "LG",
-            "KG",
-            "LE"
-          ],
-          "correct": 1,
-          "explanation": "The first letter advances by 2 (D→F→H→J→L) and the second advances by 1 (B→C→D→E→F). The answer is LF. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-        },
-        {
-          "id": 116,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? WA, UC, SE, QG, ___",
-          "options": [
-            "OI",
-            "OH",
-            "PI",
-            "OJ",
-            "NI"
-          ],
-          "correct": 0,
-          "explanation": "The first letter goes back 2 (W→U→S→Q→O) and the second advances by 2 (A→C→E→G→I). The answer is OI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-        },
-        {
-          "id": 117,
-          "difficulty": 2,
-          "question": "What comes next in this series? B3, D6, F9, H12, ___",
-          "options": [
-            "I15",
-            "J15",
-            "J14",
-            "K15",
-            "J16"
-          ],
-          "correct": 1,
-          "explanation": "The letter advances by 2 (B→D→F→H→J) and the number advances by 3 (3→6→9→12→15). The answer is J15. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-        },
-        {
-          "id": 118,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
-          "options": [
-            "IN",
-            "JN",
-            "JM",
-            "JO",
-            "KN"
-          ],
-          "correct": 1,
-          "explanation": "Both letters advance by 2 each step: BF→DH→FJ→HL→JN. The answer is JN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-        },
-        {
-          "id": 119,
-          "difficulty": 3,
-          "question": "What comes next in this letter series? B, C, E, H, L, ___",
-          "options": [
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R"
-          ],
-          "correct": 3,
-          "explanation": "The gaps increase by 1 each time: B(+1)→C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
-        },
-        {
-          "id": 120,
-          "difficulty": 3,
-          "question": "What comes next in this letter pair series? BX, DU, GR, KO, ___",
-          "options": [
-            "NL",
-            "OL",
-            "PL",
-            "NM",
-            "OK"
-          ],
-          "correct": 2,
-          "explanation": "The first letter gaps increase (+2, +3, +4, +5): B(+2)→D(+3)→G(+4)→K(+5)→P. The second letter goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is PL. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
-        },
-        {
-          "id": 121,
-          "difficulty": 3,
-          "question": "What comes next in this letter series? Z, Y, W, T, P, ___",
-          "options": [
-            "L",
-            "K",
-            "J",
-            "I",
-            "H"
-          ],
-          "correct": 1,
-          "explanation": "The gaps increase going backwards: Z(−1)→Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-        },
-        {
-          "id": 122,
-          "difficulty": 3,
-          "question": "What comes next in this letter pair series? BW, ET, GQ, JN, ___",
-          "options": [
-            "LK",
-            "MK",
-            "LJ",
-            "MJ",
-            "NK"
-          ],
-          "correct": 0,
-          "explanation": "The first letter alternates +3, +2: B(+3)→E(+2)→G(+3)→J(+2)→L. The second letter goes back 3 each time: W(−3)→T(−3)→Q(−3)→N(−3)→K. The answer is LK. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-        },
-        {
-          "id": 123,
-          "difficulty": 3,
-          "question": "What comes next in this letter pair series? DA, FC, JE, NG, ___",
-          "options": [
-            "RI",
-            "SI",
-            "RH",
-            "SJ",
-            "QI"
-          ],
-          "correct": 0,
-          "explanation": "The first letter gaps are +2, +4, +4, +4: D(+2)→F(+4)→J(+4)→N(+4)→R. The second letter advances by 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is RI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-        },
-        {
-          "id": 124,
-          "difficulty": 3,
-          "question": "What comes next in this series? A1, C4, E9, G16, ___",
-          "options": [
-            "I25",
-            "H25",
-            "I24",
-            "J25",
-            "I20"
-          ],
-          "correct": 0,
-          "explanation": "The letter advances by 2 each time: A→C→E→G→I. The numbers are perfect squares: 1=1², 4=2², 9=3², 16=4², 25=5². The answer is I25. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-        },
-        {
-          "id": 125,
-          "difficulty": 3,
-          "question": "What comes next in this letter pair series? AD, BH, CL, DP, ___",
-          "options": [
-            "ET",
-            "ES",
-            "FT",
-            "EU",
-            "FS"
-          ],
-          "correct": 0,
-          "explanation": "The first letter advances by 1: A→B→C→D→E. The second letter advances by 4 each step: D(+4)→H(+4)→L(+4)→P(+4)→T. The answer is ET. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
-        }
-      ,
-        {
-          "id": 126,
-          "difficulty": 1,
-          "question": "What comes next in this letter series? C, E, G, I, ___",
-          "options": ["J", "K", "L", "H", "M"],
-          "correct": 1,
-          "explanation": "Each letter skips one: C(+2)→E(+2)→G(+2)→I(+2)→K. The pattern is +2 each time. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
-        },
-        {
-          "id": 127,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
-          "options": ["IK", "JL", "JK", "IJ", "KL"],
-          "correct": 1,
-          "explanation": "Both letters skip one each step: B(+2)→D(+2)→F(+2)→H(+2)→J. D(+2)→F(+2)→H(+2)→J(+2)→L. Answer: JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
-        },
-        {
-          "id": 128,
-          "difficulty": 3,
-          "question": "What comes next in this letter series? M, K, I, G, ___",
-          "options": ["F", "E", "D", "H", "C"],
-          "correct": 1,
-          "explanation": "Each letter skips one going backwards: M(-2)→K(-2)→I(-2)→G(-2)→E. The pattern is -2 each time. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
-        },
-        {
-          "id": 129,
-          "difficulty": 1,
-          "question": "What comes next in this letter series? J, I, H, G, ___",
-          "options": ["E", "F", "D", "H", "I"],
-          "correct": 1,
-          "explanation": "The letters go backwards by 1 each time: J(-1)→I(-1)→H(-1)→G(-1)→F. It's the alphabet in reverse! Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
-        },
-        {
-          "id": 130,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
-          "options": ["VV", "UU", "VW", "WX", "UV"],
-          "correct": 0,
-          "explanation": "Both letters decrease by 1 each step: Z(-1)→Y(-1)→X(-1)→W(-1)→V. Both letters match, so the answer is VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
-        },
-        {
-          "id": 131,
-          "difficulty": 2,
-          "question": "What comes next in this letter pair series? TR, QO, NL, KI, ___",
-          "options": ["HF", "HG", "IF", "GE", "JH"],
-          "correct": 0,
-          "explanation": "Both letters decrease by 3 each step: T(-3)→Q(-3)→N(-3)→K(-3)→H. R(-3)→O(-3)→L(-3)→I(-3)→F. Answer: HF. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
-        },
-        {
-          "id": 132,
-          "difficulty": 3,
-          "question": "What comes next in this letter pair series? YX, WV, UT, SR, ___",
-          "options": ["QP", "RQ", "PO", "QR", "RP"],
-          "correct": 0,
-          "explanation": "Both letters decrease by 2 each step: Y(-2)→W(-2)→U(-2)→S(-2)→Q. X(-2)→V(-2)→T(-2)→R(-2)→P. The gap within each pair stays at 1. Answer: QP. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
-        },
+            {
+                  "id": 1,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? A, C, E, G, ___",
+                  "options": [
+                        "H",
+                        "I",
+                        "J",
+                        "K",
+                        "L"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern skips one letter each time: A (skip B) C (skip D) E (skip F) G (skip H) I. These are the odd-positioned letters of the alphabet. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 2,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? AZ, BY, CX, DW, ___",
+                  "options": [
+                        "EV",
+                        "EU",
+                        "FV",
+                        "EX",
+                        "DV"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter goes forward (A, B, C, D, E) and the second letter goes backward (Z, Y, X, W, V). So the next pair is EV. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 3,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? B, D, F, H, ___",
+                  "options": [
+                        "I",
+                        "J",
+                        "K",
+                        "L",
+                        "M"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern skips one letter each time: B (skip C) D (skip E) F (skip G) H (skip I) J. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 4,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? Z, X, V, T, ___",
+                  "options": [
+                        "S",
+                        "R",
+                        "Q",
+                        "P",
+                        "U"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern goes backwards, skipping one letter: Z (skip Y) X (skip W) V (skip U) T (skip S) R. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 5,
+                  "difficulty": 1,
+                  "question": "What comes next? A, B, D, G, ___",
+                  "options": [
+                        "H",
+                        "I",
+                        "J",
+                        "K",
+                        "L"
+                  ],
+                  "correct": 3,
+                  "explanation": "The gaps increase by 1 each time: A(+1)B(+2)D(+3)G(+4)K. The differences are 1, 2, 3, 4. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 6,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? AC, BD, CE, DF, ___",
+                  "options": [
+                        "EG",
+                        "EF",
+                        "FG",
+                        "DG",
+                        "EH"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter advances by 1: A,B,C,D,E. The second letter also advances by 1: C,D,E,F,G. Next is EG. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 7,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? A, C, E, G, I, ___",
+                  "options": [
+                        "J",
+                        "K",
+                        "L",
+                        "M",
+                        "N"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern gives every other letter: A, C, E, G, I, K. Skipping B, D, F, H, J. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 8,
+                  "difficulty": 2,
+                  "question": "What comes next? ZZ, YY, XX, WW, ___",
+                  "options": [
+                        "VV",
+                        "UU",
+                        "VW",
+                        "WX",
+                        "UV"
+                  ],
+                  "correct": 0,
+                  "explanation": "Each pair uses the same letter, going backwards through the alphabet: ZZ, YY, XX, WW, VV. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 9,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? Z, Y, X, W, ___",
+                  "options": [
+                        "T",
+                        "U",
+                        "V",
+                        "X",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern goes back 1 each time: Z(−1)→Y(−1)→X(−1)→W(−1)→V. The answer is V. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 10,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? A, B, C, D, ___",
+                  "options": [
+                        "F",
+                        "G",
+                        "E",
+                        "H",
+                        "D"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern advances by 1 each time in alphabetical order: A→B→C→D→E. The answer is E. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 11,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? M, N, O, P, ___",
+                  "options": [
+                        "R",
+                        "S",
+                        "T",
+                        "Q",
+                        "U"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern advances by 1 each time: M→N→O→P→Q. The answer is Q. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 12,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? C, F, I, L, ___",
+                  "options": [
+                        "M",
+                        "N",
+                        "O",
+                        "P",
+                        "Q"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern adds 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is O. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 13,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? D, F, H, J, ___",
+                  "options": [
+                        "K",
+                        "M",
+                        "N",
+                        "O",
+                        "L"
+                  ],
+                  "correct": 4,
+                  "explanation": "The pattern adds 2 each time: D(+2)→F(+2)→H(+2)→J(+2)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 14,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? T, R, P, N, ___",
+                  "options": [
+                        "M",
+                        "K",
+                        "J",
+                        "O",
+                        "L"
+                  ],
+                  "correct": 4,
+                  "explanation": "The pattern goes back 2 each time: T(−2)→R(−2)→P(−2)→N(−2)→L. The answer is L. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 15,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? E, H, K, N, ___",
+                  "options": [
+                        "O",
+                        "P",
+                        "Q",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern adds 3 each time: E(+3)→H(+3)→K(+3)→N(+3)→Q. The answer is Q. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 16,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? W, U, S, Q, ___",
+                  "options": [
+                        "P",
+                        "N",
+                        "M",
+                        "O",
+                        "L"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern goes back 2 each time: W(−2)→U(−2)→S(−2)→Q(−2)→O. The answer is O. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 17,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AB, CD, EF, GH, ___",
+                  "options": [
+                        "HI",
+                        "JK",
+                        "KL",
+                        "GH",
+                        "IJ"
+                  ],
+                  "correct": 4,
+                  "explanation": "Both letters advance by 2 each step: AB→CD→EF→GH→IJ. The answer is IJ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 18,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
+                  "options": [
+                        "DZ",
+                        "EA",
+                        "EZ",
+                        "FZ",
+                        "EY"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter advances by 1, the second stays as Z: AZ→BZ→CZ→DZ→EZ. The answer is EZ. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 19,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AA, BB, CC, DD, ___",
+                  "options": [
+                        "DE",
+                        "EE",
+                        "EF",
+                        "FF",
+                        "EG"
+                  ],
+                  "correct": 1,
+                  "explanation": "Each pair is a doubled letter advancing by 1: AA→BB→CC→DD→EE. The answer is EE. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 20,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AB, BC, CD, DE, ___",
+                  "options": [
+                        "EF",
+                        "EG",
+                        "FG",
+                        "DF",
+                        "FH"
+                  ],
+                  "correct": 0,
+                  "explanation": "Both letters advance by 1 each step: AB→BC→CD→DE→EF. The answer is EF. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 21,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AC, BD, CE, DF, ___",
+                  "options": [
+                        "EH",
+                        "FG",
+                        "DG",
+                        "EG",
+                        "FH"
+                  ],
+                  "correct": 3,
+                  "explanation": "Both letters advance by 1 each step: AC→BD→CE→DF→EG. The answer is EG. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 22,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AX, BX, CX, DX, ___",
+                  "options": [
+                        "DY",
+                        "EW",
+                        "EX",
+                        "FX",
+                        "EY"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter advances by 1, the second stays as X: AX→BX→CX→DX→EX. The answer is EX. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 23,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
+                  "options": [
+                        "VW",
+                        "UU",
+                        "VV",
+                        "WX",
+                        "UV"
+                  ],
+                  "correct": 2,
+                  "explanation": "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV. The answer is VV. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 24,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? A1, B2, C3, D4, ___",
+                  "options": [
+                        "D5",
+                        "E4",
+                        "E5",
+                        "F5",
+                        "E6"
+                  ],
+                  "correct": 2,
+                  "explanation": "The letter advances by 1 and the number advances by 1: A1→B2→C3→D4→E5. The answer is E5. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 25,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? A2, B4, C6, D8, ___",
+                  "options": [
+                        "E9",
+                        "F10",
+                        "D10",
+                        "E12",
+                        "E10"
+                  ],
+                  "correct": 4,
+                  "explanation": "The letter advances by 1 and the number advances by 2: A2→B4→C6→D8→E10. The answer is E10. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 26,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? Z1, Y2, X3, W4, ___",
+                  "options": [
+                        "V4",
+                        "V5",
+                        "U5",
+                        "W5",
+                        "V6"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter goes back 1 and the number advances by 1: Z1→Y2→X3→W4→V5. The answer is V5. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 27,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? A1, A2, A3, A4, ___",
+                  "options": [
+                        "A5",
+                        "B5",
+                        "A6",
+                        "B4",
+                        "A4"
+                  ],
+                  "correct": 0,
+                  "explanation": "The letter stays as A and the number advances by 1: A1→A2→A3→A4→A5. The answer is A5. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 28,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? B1, D2, F3, H4, ___",
+                  "options": [
+                        "I5",
+                        "J4",
+                        "I4",
+                        "J5",
+                        "K5"
+                  ],
+                  "correct": 3,
+                  "explanation": "The letter advances by 2 and the number advances by 1: B1→D2→F3→H4→J5. The answer is J5. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 29,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AD, BE, CF, DG, ___",
+                  "options": [
+                        "EI",
+                        "EH",
+                        "FH",
+                        "DH",
+                        "FI"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 1 each step, keeping a gap of 3: AD→BE→CF→DG→EH. The answer is EH. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 30,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? B, E, H, K, ___",
+                  "options": [
+                        "L",
+                        "M",
+                        "N",
+                        "O",
+                        "P"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern adds 3 each time: B(+3)→E(+3)→H(+3)→K(+3)→N. The answer is N. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 31,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? BA, CB, DC, ED, ___",
+                  "options": [
+                        "EF",
+                        "GF",
+                        "EG",
+                        "FD",
+                        "FE"
+                  ],
+                  "correct": 4,
+                  "explanation": "Both letters advance by 1 each step: BA→CB→DC→ED→FE. The answer is FE. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 32,
+                  "difficulty": 1,
+                  "question": "What comes next in this series? M1, N2, O3, P4, ___",
+                  "options": [
+                        "Q4",
+                        "R5",
+                        "Q5",
+                        "P5",
+                        "Q6"
+                  ],
+                  "correct": 2,
+                  "explanation": "The letter advances by 1 and the number advances by 1: M1→N2→O3→P4→Q5. The answer is Q5. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 33,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? G, I, K, M, ___",
+                  "options": [
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern adds 2 each time: G(+2)→I(+2)→K(+2)→M(+2)→O. The answer is O. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 34,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AE, BF, CG, DH, ___",
+                  "options": [
+                        "DI",
+                        "EJ",
+                        "EI",
+                        "FI",
+                        "FJ"
+                  ],
+                  "correct": 2,
+                  "explanation": "Both letters advance by 1 each step, keeping a gap of 4: AE→BF→CG→DH→EI. The answer is EI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 35,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? A, D, G, J, ___",
+                  "options": [
+                        "K",
+                        "L",
+                        "M",
+                        "N",
+                        "O"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern adds 3 each time: A(+3)→D(+3)→G(+3)→J(+3)→M. The answer is M. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 36,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? Z, W, T, Q, ___",
+                  "options": [
+                        "O",
+                        "M",
+                        "P",
+                        "N",
+                        "L"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern goes back 3 each time: Z(−3)→W(−3)→T(−3)→Q(−3)→N. The answer is N. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 37,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? A, E, I, M, ___",
+                  "options": [
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern adds 4 each time: A(+4)→E(+4)→I(+4)→M(+4)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 38,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? D, H, L, P, ___",
+                  "options": [
+                        "Q",
+                        "R",
+                        "S",
+                        "T",
+                        "U"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern adds 4 each time: D(+4)→H(+4)→L(+4)→P(+4)→T. The answer is T. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 39,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? V, S, P, M, ___",
+                  "options": [
+                        "L",
+                        "K",
+                        "J",
+                        "I",
+                        "H"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern goes back 3 each time: V(−3)→S(−3)→P(−3)→M(−3)→J. The answer is J. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 40,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? B, F, J, N, ___",
+                  "options": [
+                        "O",
+                        "P",
+                        "Q",
+                        "R",
+                        "S"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern adds 4 each time: B(+4)→F(+4)→J(+4)→N(+4)→R. The answer is R. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 41,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? Y, V, S, P, ___",
+                  "options": [
+                        "N",
+                        "L",
+                        "O",
+                        "K",
+                        "M"
+                  ],
+                  "correct": 4,
+                  "explanation": "The pattern goes back 3 each time: Y(−3)→V(−3)→S(−3)→P(−3)→M. The answer is M. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 42,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? C, G, K, O, ___",
+                  "options": [
+                        "P",
+                        "Q",
+                        "R",
+                        "S",
+                        "T"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern adds 4 each time: C(+4)→G(+4)→K(+4)→O(+4)→S. The answer is S. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 43,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? X, U, R, O, ___",
+                  "options": [
+                        "N",
+                        "M",
+                        "L",
+                        "K",
+                        "J"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is L. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 44,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? F, J, N, R, ___",
+                  "options": [
+                        "S",
+                        "T",
+                        "U",
+                        "V",
+                        "W"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pattern adds 4 each time: F(+4)→J(+4)→N(+4)→R(+4)→V. The answer is V. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 45,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
+                  "options": [
+                        "VF",
+                        "VE",
+                        "UE",
+                        "WE",
+                        "UF"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter goes back 1, the second advances by 1: ZA→YB→XC→WD→VE. The answer is VE. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 46,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AC, CE, EG, GI, ___",
+                  "options": [
+                        "HJ",
+                        "HK",
+                        "IJ",
+                        "JK",
+                        "IK"
+                  ],
+                  "correct": 4,
+                  "explanation": "Both letters advance by 2 each step: AC→CE→EG→GI→IK. The answer is IK. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 47,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AZ, CX, EV, GT, ___",
+                  "options": [
+                        "HR",
+                        "IS",
+                        "IR",
+                        "HS",
+                        "IT"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter advances by 2, the second goes back 2: AZ→CX→EV→GT→IR. The answer is IR. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 48,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BZ, DY, FX, HW, ___",
+                  "options": [
+                        "IV",
+                        "JW",
+                        "IW",
+                        "JV",
+                        "KV"
+                  ],
+                  "correct": 3,
+                  "explanation": "The first letter advances by 2, the second goes back 1: BZ→DY→FX→HW→JV. The answer is JV. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 49,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AB, DE, GH, JK, ___",
+                  "options": [
+                        "LM",
+                        "MN",
+                        "LN",
+                        "NO",
+                        "KL"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 3 each step: AB→DE→GH→JK→MN. The answer is MN. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 50,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
+                  "options": [
+                        "SR",
+                        "QR",
+                        "RQ",
+                        "QP",
+                        "RP"
+                  ],
+                  "correct": 2,
+                  "explanation": "Both letters go back 2 each step: ZY→XW→VU→TS→RQ. The answer is RQ. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 51,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AZ, BY, CX, DW, ___",
+                  "options": [
+                        "EU",
+                        "FV",
+                        "FW",
+                        "DV",
+                        "EV"
+                  ],
+                  "correct": 4,
+                  "explanation": "The first letter advances by 1, the second goes back 1: AZ→BY→CX→DW→EV. The answer is EV. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 52,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
+                  "options": [
+                        "IK",
+                        "JL",
+                        "IJ",
+                        "JK",
+                        "KL"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 2 each step: BD→DF→FH→HJ→JL. The answer is JL. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 53,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? MA, NB, OC, PD, ___",
+                  "options": [
+                        "QF",
+                        "QE",
+                        "RE",
+                        "PE",
+                        "RF"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 1 each step: MA→NB→OC→PD→QE. The answer is QE. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 54,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
+                  "options": [
+                        "EM",
+                        "EN",
+                        "FM",
+                        "FN",
+                        "EO"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter advances by 1, the second advances by 2: AF→BH→CJ→DL→EN. The answer is EN. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 55,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
+                  "options": [
+                        "RH",
+                        "RI",
+                        "SI",
+                        "SH",
+                        "QI"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter goes back 2, the second advances by 2: ZA→XC→VE→TG→RI. The answer is RI. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 56,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? A3, C6, E9, G12, ___",
+                  "options": [
+                        "H15",
+                        "I15",
+                        "I14",
+                        "J15",
+                        "I16"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter advances by 2 and the number advances by 3: A3→C6→E9→G12→I15. The answer is I15. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 57,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? Z2, X4, V6, T8, ___",
+                  "options": [
+                        "S10",
+                        "R10",
+                        "R8",
+                        "S9",
+                        "R12"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter goes back 2 and the number advances by 2: Z2→X4→V6→T8→R10. The answer is R10. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 58,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? B5, D10, F15, H20, ___",
+                  "options": [
+                        "I25",
+                        "J25",
+                        "J20",
+                        "K25",
+                        "J30"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter advances by 2 and the number advances by 5: B5→D10→F15→H20→J25. The answer is J25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 59,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? Y3, W6, U9, S12, ___",
+                  "options": [
+                        "R15",
+                        "Q15",
+                        "Q14",
+                        "R14",
+                        "P15"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter goes back 2 and the number advances by 3: Y3→W6→U9→S12→Q15. The answer is Q15. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 60,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? A1, C3, E5, G7, ___",
+                  "options": [
+                        "H9",
+                        "I8",
+                        "I9",
+                        "J9",
+                        "H8"
+                  ],
+                  "correct": 2,
+                  "explanation": "The letter advances by 2 and the number advances by 2: A1→C3→E5→G7→I9. The answer is I9. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 61,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? D2, G4, J6, M8, ___",
+                  "options": [
+                        "N10",
+                        "O10",
+                        "P10",
+                        "Q10",
+                        "P8"
+                  ],
+                  "correct": 2,
+                  "explanation": "The letter advances by 3 and the number advances by 2: D2→G4→J6→M8→P10. The answer is P10. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 62,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? CE, DG, EI, FK, ___",
+                  "options": [
+                        "GL",
+                        "GM",
+                        "HM",
+                        "GN",
+                        "HN"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter advances by 1, the second advances by 2: CE→DG→EI→FK→GM. The answer is GM. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 63,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter series? R, O, L, I, ___",
+                  "options": [
+                        "G",
+                        "F",
+                        "E",
+                        "H",
+                        "D"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern goes back 3 each time: R(−3)→O(−3)→L(−3)→I(−3)→F. The answer is F. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 64,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? YA, WC, UE, SG, ___",
+                  "options": [
+                        "QH",
+                        "QI",
+                        "RI",
+                        "RH",
+                        "PI"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter goes back 2, the second advances by 2: YA→WC→UE→SG→QI. The answer is QI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 65,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? C1, F3, I5, L7, ___",
+                  "options": [
+                        "N9",
+                        "O9",
+                        "O8",
+                        "M9",
+                        "P9"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter advances by 3 and the number advances by 2: C1→F3→I5→L7→O9. The answer is O9. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 66,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? FA, HC, JE, LG, ___",
+                  "options": [
+                        "MH",
+                        "MI",
+                        "NH",
+                        "NI",
+                        "NJ"
+                  ],
+                  "correct": 3,
+                  "explanation": "Both letters advance by 2 each step: FA→HC→JE→LG→NI. The answer is NI. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 67,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AK, CM, EO, GQ, ___",
+                  "options": [
+                        "HR",
+                        "HS",
+                        "IS",
+                        "IR",
+                        "IT"
+                  ],
+                  "correct": 2,
+                  "explanation": "Both letters advance by 2 each step: AK→CM→EO→GQ→IS. The answer is IS. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 68,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? T5, R10, P15, N20, ___",
+                  "options": [
+                        "L25",
+                        "M25",
+                        "L20",
+                        "M20",
+                        "K25"
+                  ],
+                  "correct": 0,
+                  "explanation": "The letter goes back 2 and the number advances by 5: T5→R10→P15→N20→L25. The answer is L25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 69,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BF, CG, DH, EI, ___",
+                  "options": [
+                        "FJ",
+                        "FK",
+                        "GJ",
+                        "EJ",
+                        "GK"
+                  ],
+                  "correct": 0,
+                  "explanation": "Both letters advance by 1 each step, keeping a gap of 4: BF→CG→DH→EI→FJ. The answer is FJ. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 70,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? ZW, YV, XU, WT, ___",
+                  "options": [
+                        "VS",
+                        "UR",
+                        "VR",
+                        "US",
+                        "VT"
+                  ],
+                  "correct": 0,
+                  "explanation": "Both letters go back 1 each step: ZW→YV→XU→WT→VS. The answer is VS. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 71,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? A, Z, B, Y, C, ___",
+                  "options": [
+                        "D",
+                        "W",
+                        "X",
+                        "V",
+                        "B"
+                  ],
+                  "correct": 2,
+                  "explanation": "Two patterns alternate: forward (A, B, C, D...) and backward (Z, Y, X...). The positions alternate, so after C (forward) comes X (backward). The answer is X. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 72,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? A, Z, C, X, E, ___",
+                  "options": [
+                        "F",
+                        "V",
+                        "W",
+                        "G",
+                        "U"
+                  ],
+                  "correct": 1,
+                  "explanation": "Two patterns alternate: forward (+2: A, C, E...) and backward (−2: Z, X, V...). After E (forward), the next is V (backward). The answer is V. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 73,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? A, F, B, G, C, ___",
+                  "options": [
+                        "D",
+                        "E",
+                        "H",
+                        "I",
+                        "F"
+                  ],
+                  "correct": 2,
+                  "explanation": "Two patterns alternate: A, B, C, D... and F, G, H... After C (first pattern), next is H (second pattern). The answer is H. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 74,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? B, D, C, E, D, ___",
+                  "options": [
+                        "E",
+                        "F",
+                        "G",
+                        "C",
+                        "H"
+                  ],
+                  "correct": 1,
+                  "explanation": "Two patterns alternate: B, C, D, E... (+1) and D, E, F... (+1). After D (first pattern), the next is F (second pattern). The answer is F. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 75,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? A, C, F, J, ___",
+                  "options": [
+                        "K",
+                        "L",
+                        "M",
+                        "N",
+                        "O"
+                  ],
+                  "correct": 4,
+                  "explanation": "The gaps increase: A(+2)→C(+3)→F(+4)→J(+5)→O. The answer is O. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 76,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? Z, X, U, Q, ___",
+                  "options": [
+                        "N",
+                        "M",
+                        "L",
+                        "K",
+                        "J"
+                  ],
+                  "correct": 2,
+                  "explanation": "The gaps increase going backwards: Z(−2)→X(−3)→U(−4)→Q(−5)→L. The answer is L. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 77,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? B, D, H, N, ___",
+                  "options": [
+                        "T",
+                        "U",
+                        "V",
+                        "W",
+                        "S"
+                  ],
+                  "correct": 2,
+                  "explanation": "The gaps increase: B(+2)→D(+4)→H(+6)→N(+8)→V. The answer is V. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 78,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? C, E, H, L, ___",
+                  "options": [
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R"
+                  ],
+                  "correct": 3,
+                  "explanation": "The gaps increase: C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 79,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? Y, W, T, P, ___",
+                  "options": [
+                        "N",
+                        "M",
+                        "L",
+                        "K",
+                        "J"
+                  ],
+                  "correct": 3,
+                  "explanation": "The gaps increase going backwards: Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 80,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AZ, DW, GT, JQ, ___",
+                  "options": [
+                        "MN",
+                        "LN",
+                        "MO",
+                        "LP",
+                        "MP"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter advances by 3, the second goes back 3: AZ→DW→GT→JQ→MN. The answer is MN. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 81,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? BX, EU, HR, KO, ___",
+                  "options": [
+                        "NL",
+                        "ML",
+                        "NK",
+                        "NM",
+                        "MK"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter advances by 3, the second goes back 3: BX→EU→HR→KO→NL. The answer is NL. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 82,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AC, BF, CI, DL, ___",
+                  "options": [
+                        "EO",
+                        "EN",
+                        "FO",
+                        "EP",
+                        "FN"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter advances by 1 each step: A→B→C→D→E. The second letter advances by 3 each step: C(+3)→F(+3)→I(+3)→L(+3)→O. The answer is EO. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 83,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AY, DV, GS, JP, ___",
+                  "options": [
+                        "LM",
+                        "MN",
+                        "MM",
+                        "LN",
+                        "MO"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter advances by 3, the second goes back 3: AY→DV→GS→JP→MM. The answer is MM. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 84,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
+                  "options": [
+                        "NK",
+                        "OK",
+                        "OL",
+                        "OJ",
+                        "PK"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter advances by 3, the second goes back 3: CW→FT→IQ→LN→OK. The answer is OK. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 85,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
+                  "options": [
+                        "MN",
+                        "NN",
+                        "ON",
+                        "MO",
+                        "NO"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second goes back 3: Z→W→T→Q→N. The answer is ON. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 86,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
+                  "options": [
+                        "NN",
+                        "NM",
+                        "ON",
+                        "NL",
+                        "OM"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter goes back 3, the second advances by 3: ZB→WE→TH→QK→NN. The answer is NN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 87,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AD, BG, CJ, DM, ___",
+                  "options": [
+                        "EN",
+                        "EO",
+                        "EP",
+                        "FP",
+                        "EQ"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter advances by 1, the second advances by 3: AD→BG→CJ→DM→EP. The answer is EP. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 88,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? A2, C5, E8, G11, ___",
+                  "options": [
+                        "H14",
+                        "I13",
+                        "I14",
+                        "J14",
+                        "I15"
+                  ],
+                  "correct": 2,
+                  "explanation": "The letter advances by 2 and the number advances by 3: A2→C5→E8→G11→I14. The answer is I14. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 89,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? Z3, W7, T11, Q15, ___",
+                  "options": [
+                        "N19",
+                        "O19",
+                        "N18",
+                        "O18",
+                        "M19"
+                  ],
+                  "correct": 0,
+                  "explanation": "The letter goes back 3 and the number advances by 4: Z3→W7→T11→Q15→N19. The answer is N19. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 90,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? B1, D3, H7, N13, ___",
+                  "options": [
+                        "T21",
+                        "V21",
+                        "U20",
+                        "V19",
+                        "T19"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter gaps increase (+2, +4, +6, +8): B→D→H→N→V. The number gaps increase (+2, +4, +6, +8): 1→3→7→13→21. The answer is V21. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 91,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? A1, B3, D6, G10, ___",
+                  "options": [
+                        "J15",
+                        "K15",
+                        "L15",
+                        "K14",
+                        "J14"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter gaps increase (+1, +2, +3, +4): A→B→D→G→K. The number gaps increase (+2, +3, +4, +5): 1→3→6→10→15. The answer is K15. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 92,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? Z1, X3, V5, T7, R9, ___",
+                  "options": [
+                        "Q11",
+                        "P11",
+                        "O11",
+                        "P10",
+                        "Q10"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter goes back 2 and the number advances by 2: Z1→X3→V5→T7→R9→P11. The answer is P11. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 93,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? A, B, D, G, K, ___",
+                  "options": [
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R"
+                  ],
+                  "correct": 2,
+                  "explanation": "The gaps increase by 1 each time: A(+1)→B(+2)→D(+3)→G(+4)→K(+5)→P. The answer is P. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 94,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? BY, EV, HS, KP, ___",
+                  "options": [
+                        "NM",
+                        "NL",
+                        "ML",
+                        "MN",
+                        "OM"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter advances by 3, the second goes back 3: BY→EV→HS→KP→NM. The answer is NM. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 95,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? C2, F5, I8, L11, ___",
+                  "options": [
+                        "N14",
+                        "O14",
+                        "O13",
+                        "P14",
+                        "N13"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter advances by 3 and the number advances by 3: C2→F5→I8→L11→O14. The answer is O14. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 96,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
+                  "options": [
+                        "MR",
+                        "NS",
+                        "OR",
+                        "OS",
+                        "NR"
+                  ],
+                  "correct": 3,
+                  "explanation": "The first letter gaps increase (+2, +3, +4, +5): A→C→F→J→O. The second letter gaps increase (+2, +3, +4, +5): E→G→J→N→S. The answer is OS. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 97,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
+                  "options": [
+                        "NL",
+                        "NM",
+                        "ML",
+                        "OL",
+                        "NK"
+                  ],
+                  "correct": 0,
+                  "explanation": "Both letters go back 3 each step: ZX→WU→TR→QO→NL. The answer is NL. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 98,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? A1, D4, G9, J16, ___",
+                  "options": [
+                        "M25",
+                        "L25",
+                        "M24",
+                        "N25",
+                        "M26"
+                  ],
+                  "correct": 0,
+                  "explanation": "The letter advances by 3 each time: A→D→G→J→M. The numbers are perfect squares: 1, 4, 9, 16, 25. The answer is M25. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 99,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? D, G, J, M, ___",
+                  "options": [
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R"
+                  ],
+                  "correct": 2,
+                  "explanation": "The pattern adds 3 each time: D(+3)→G(+3)→J(+3)→M(+3)→P. The answer is P. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 100,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? FH, GI, HJ, IK, ___",
+                  "options": [
+                        "JM",
+                        "JL",
+                        "KL",
+                        "IL",
+                        "KM"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 1 each step: FH→GI→HJ→IK→JL. The answer is JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 101,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? V, T, R, P, ___",
+                  "options": [
+                        "O",
+                        "N",
+                        "M",
+                        "L",
+                        "K"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern goes back 2 each time: V(−2)→T(−2)→R(−2)→P(−2)→N. The answer is N. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 102,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? AB, AB, AB, AB, ___",
+                  "options": [
+                        "BC",
+                        "CD",
+                        "AC",
+                        "AB",
+                        "BA"
+                  ],
+                  "correct": 3,
+                  "explanation": "The pair AB repeats every time. The next pair is AB. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 103,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? F, H, J, L, ___",
+                  "options": [
+                        "M",
+                        "N",
+                        "O",
+                        "P",
+                        "Q"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern adds 2 each time: F(+2)→H(+2)→J(+2)→L(+2)→N. The answer is N. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 104,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
+                  "options": [
+                        "VW",
+                        "UU",
+                        "TT",
+                        "UV",
+                        "UW"
+                  ],
+                  "correct": 1,
+                  "explanation": "Each pair is a doubled letter going back 1: ZZ→YY→XX→WW→VV→UU. The answer is UU. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 105,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? S, Q, O, M, ___",
+                  "options": [
+                        "L",
+                        "K",
+                        "J",
+                        "I",
+                        "H"
+                  ],
+                  "correct": 1,
+                  "explanation": "The pattern goes back 2 each time: S(−2)→Q(−2)→O(−2)→M(−2)→K. The answer is K. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 106,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BY, DW, FU, HS, ___",
+                  "options": [
+                        "IQ",
+                        "JQ",
+                        "JP",
+                        "IR",
+                        "KQ"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter advances by 2 (B→D→F→H→J) and the second goes back 2 (Y→W→U→S→Q). The answer is JQ. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 107,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BE, DG, FI, HK, ___",
+                  "options": [
+                        "JL",
+                        "JM",
+                        "IM",
+                        "IL",
+                        "KM"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 2 each step: BE→DG→FI→HK→JM. The answer is JM. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 108,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? Z5, X10, V15, T20, ___",
+                  "options": [
+                        "S25",
+                        "R25",
+                        "R20",
+                        "S20",
+                        "R30"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter goes back 2 and the number advances by 5: Z5→X10→V15→T20→R25. The answer is R25. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 109,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? AE, BG, CI, DK, ___",
+                  "options": [
+                        "EL",
+                        "EM",
+                        "FM",
+                        "EN",
+                        "FL"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter advances by 1 (A→B→C→D→E) and the second advances by 2 (E→G→I→K→M). The answer is EM. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 110,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
+                  "options": [
+                        "VH",
+                        "VI",
+                        "UI",
+                        "VJ",
+                        "UH"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter goes back 1 (Z→Y→X→W→V) and the second advances by 2 (A→C→E→G→I). The answer is VI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 111,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? C2, F4, I6, L8, ___",
+                  "options": [
+                        "N10",
+                        "M10",
+                        "O10",
+                        "O8",
+                        "N8"
+                  ],
+                  "correct": 2,
+                  "explanation": "The letter advances by 3 each time: C(+3)→F(+3)→I(+3)→L(+3)→O. The number advances by 2 each time: 2, 4, 6, 8, 10. The answer is O10. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 112,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? DB, FC, HD, JE, ___",
+                  "options": [
+                        "KF",
+                        "LF",
+                        "LG",
+                        "KG",
+                        "LE"
+                  ],
+                  "correct": 1,
+                  "explanation": "The first letter advances by 2 (D→F→H→J→L) and the second advances by 1 (B→C→D→E→F). The answer is LF. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 113,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? WA, UC, SE, QG, ___",
+                  "options": [
+                        "OI",
+                        "OH",
+                        "PI",
+                        "OJ",
+                        "NI"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter goes back 2 (W→U→S→Q→O) and the second advances by 2 (A→C→E→G→I). The answer is OI. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            },
+            {
+                  "id": 114,
+                  "difficulty": 2,
+                  "question": "What comes next in this series? B3, D6, F9, H12, ___",
+                  "options": [
+                        "I15",
+                        "J15",
+                        "J14",
+                        "K15",
+                        "J16"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letter advances by 2 (B→D→F→H→J) and the number advances by 3 (3→6→9→12→15). The answer is J15. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 115,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
+                  "options": [
+                        "IN",
+                        "JN",
+                        "JM",
+                        "JO",
+                        "KN"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters advance by 2 each step: BF→DH→FJ→HL→JN. The answer is JN. Tip: In the exam, if you're stuck, try the most common pattern first: both letters +1 or +2. ✓"
+            },
+            {
+                  "id": 116,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? B, C, E, H, L, ___",
+                  "options": [
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R"
+                  ],
+                  "correct": 3,
+                  "explanation": "The gaps increase by 1 each time: B(+1)→C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
+            },
+            {
+                  "id": 117,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? BX, DU, GR, KO, ___",
+                  "options": [
+                        "NL",
+                        "OL",
+                        "PL",
+                        "NM",
+                        "OK"
+                  ],
+                  "correct": 2,
+                  "explanation": "The first letter gaps increase (+2, +3, +4, +5): B(+2)→D(+3)→G(+4)→K(+5)→P. The second letter goes back 3 each time: X(−3)→U(−3)→R(−3)→O(−3)→L. The answer is PL. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
+            },
+            {
+                  "id": 118,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? Z, Y, W, T, P, ___",
+                  "options": [
+                        "L",
+                        "K",
+                        "J",
+                        "I",
+                        "H"
+                  ],
+                  "correct": 1,
+                  "explanation": "The gaps increase going backwards: Z(−1)→Y(−2)→W(−3)→T(−4)→P(−5)→K. The answer is K. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 119,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? BW, ET, GQ, JN, ___",
+                  "options": [
+                        "LK",
+                        "MK",
+                        "LJ",
+                        "MJ",
+                        "NK"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter alternates +3, +2: B(+3)→E(+2)→G(+3)→J(+2)→L. The second letter goes back 3 each time: W(−3)→T(−3)→Q(−3)→N(−3)→K. The answer is LK. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 120,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? DA, FC, JE, NG, ___",
+                  "options": [
+                        "RI",
+                        "SI",
+                        "RH",
+                        "SJ",
+                        "QI"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter gaps are +2, +4, +4, +4: D(+2)→F(+4)→J(+4)→N(+4)→R. The second letter advances by 2 each time: A(+2)→C(+2)→E(+2)→G(+2)→I. The answer is RI. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 121,
+                  "difficulty": 3,
+                  "question": "What comes next in this series? A1, C4, E9, G16, ___",
+                  "options": [
+                        "I25",
+                        "H25",
+                        "I24",
+                        "J25",
+                        "I20"
+                  ],
+                  "correct": 0,
+                  "explanation": "The letter advances by 2 each time: A→C→E→G→I. The numbers are perfect squares: 1=1², 4=2², 9=3², 16=4², 25=5². The answer is I25. Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 122,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? AD, BH, CL, DP, ___",
+                  "options": [
+                        "ET",
+                        "ES",
+                        "FT",
+                        "EU",
+                        "FS"
+                  ],
+                  "correct": 0,
+                  "explanation": "The first letter advances by 1: A→B→C→D→E. The second letter advances by 4 each step: D(+4)→H(+4)→L(+4)→P(+4)→T. The answer is ET. Tip: If both letters change by the same amount, it's a simple pattern. If different, track each separately. ✓"
+            },
+            {
+                  "id": 123,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? C, E, G, I, ___",
+                  "options": [
+                        "J",
+                        "K",
+                        "L",
+                        "H",
+                        "M"
+                  ],
+                  "correct": 1,
+                  "explanation": "Each letter skips one: C(+2)→E(+2)→G(+2)→I(+2)→K. The pattern is +2 each time. Tip: Convert letters to numbers (A=1, B=2...) to spot the pattern more easily! ✓"
+            },
+            {
+                  "id": 124,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
+                  "options": [
+                        "IK",
+                        "JL",
+                        "JK",
+                        "IJ",
+                        "KL"
+                  ],
+                  "correct": 1,
+                  "explanation": "Both letters skip one each step: B(+2)→D(+2)→F(+2)→H(+2)→J. D(+2)→F(+2)→H(+2)→J(+2)→L. Answer: JL. Tip: Look at the first and second letters separately — they might follow different rules. ✓"
+            },
+            {
+                  "id": 125,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter series? M, K, I, G, ___",
+                  "options": [
+                        "F",
+                        "E",
+                        "D",
+                        "H",
+                        "C"
+                  ],
+                  "correct": 1,
+                  "explanation": "Each letter skips one going backwards: M(-2)→K(-2)→I(-2)→G(-2)→E. The pattern is -2 each time. Tip: Use EJOTY (E=5, J=10, O=15, T=20, Y=25) as anchor points for counting. ✓"
+            },
+            {
+                  "id": 126,
+                  "difficulty": 1,
+                  "question": "What comes next in this letter series? J, I, H, G, ___",
+                  "options": [
+                        "E",
+                        "F",
+                        "D",
+                        "H",
+                        "I"
+                  ],
+                  "correct": 1,
+                  "explanation": "The letters go backwards by 1 each time: J(-1)→I(-1)→H(-1)→G(-1)→F. It's the alphabet in reverse! Tip: Check your answer works with ALL the pairs, not just the last two. ✓"
+            },
+            {
+                  "id": 127,
+                  "difficulty": 2,
+                  "question": "What comes next in this letter pair series? TR, QO, NL, KI, ___",
+                  "options": [
+                        "HF",
+                        "HG",
+                        "IF",
+                        "GE",
+                        "JH"
+                  ],
+                  "correct": 0,
+                  "explanation": "Both letters decrease by 3 each step: T(-3)→Q(-3)→N(-3)→K(-3)→H. R(-3)→O(-3)→L(-3)→I(-3)→F. Answer: HF. Tip: Write the alphabet out and count the jumps between letters to find the pattern. ✓"
+            },
+            {
+                  "id": 128,
+                  "difficulty": 3,
+                  "question": "What comes next in this letter pair series? YX, WV, UT, SR, ___",
+                  "options": [
+                        "QP",
+                        "RQ",
+                        "PO",
+                        "QR",
+                        "RP"
+                  ],
+                  "correct": 0,
+                  "explanation": "Both letters decrease by 2 each step: Y(-2)→W(-2)→U(-2)→S(-2)→Q. X(-2)→V(-2)→T(-2)→R(-2)→P. The gap within each pair stays at 1. Answer: QP. Tip: Watch for letters going in opposite directions — one forward, one backward. ✓"
+            }
       ]
     },
 
@@ -15574,7 +19025,7 @@ const vrData = {
                       question: "If A=1, B=2, C=3... what is the total value of the word ICE?",
                       options: ["17", "16", "15", "18", "19"],
                       correct: 0,
-                      explanation: "I=9, C=3, E=5. Total: 9 + 3 + 5 = 17. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "I=9, C=3, E=5. Total: 9 + 3 + 5 = 17. ✓"
               },
               {
                      id: 6,
@@ -15610,7 +19061,7 @@ const vrData = {
                       question: "If A=1, B=2, C=3... what is the total value of the word DOG?",
                       options: ["26", "25", "24", "27", "28"],
                       correct: 0,
-                      explanation: "D=4, O=15, G=7. Total: 4 + 15 + 7 = 26. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "D=4, O=15, G=7. Total: 4 + 15 + 7 = 26. ✓"
               },
               {
                      id: 9,
@@ -15707,7 +19158,7 @@ const vrData = {
                       question: "If A=1, B=2, C=3... what is the total value of the word CUP?",
                       options: ["38","42","36","40","44"],
                       correct: 3,
-                      explanation: "C=3, U=21, P=16. Total: 3 + 21 + 16 = 40. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "C=3, U=21, P=16. Total: 3 + 21 + 16 = 40. ✓"
               },
               {
                      id: 18,
@@ -15771,7 +19222,7 @@ const vrData = {
                       question: "If A=1, B=2, C=3... what is the total value of the word KING?",
                       options: ["39","41","43","37","45"],
                       correct: 1,
-                      explanation: "K=11, I=9, N=14, G=7. Total: 11 + 9 + 14 + 7 = 41. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "K=11, I=9, N=14, G=7. Total: 11 + 9 + 14 + 7 = 41. ✓"
               },
               {
                      id: 26,
@@ -15835,7 +19286,7 @@ const vrData = {
                       question: "If A=1, B=2, C=3... what is the total value of the word CLOUD?",
                       options: ["53","57","51","55","59"],
                       correct: 3,
-                      explanation: "C=3, L=12, O=15, U=21, D=4. Total: 3 + 12 + 15 + 21 + 4 = 55. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "C=3, L=12, O=15, U=21, D=4. Total: 3 + 12 + 15 + 21 + 4 = 55. ✓"
               },
               {
                      id: 34,
@@ -15899,7 +19350,7 @@ const vrData = {
                       question: "If A=1, B=2, C=3... which of these words has the highest total value?",
                       options: ["GATE","KITE","LATE","NOTE","BITE"],
                       correct: 3,
-                      explanation: "GATE: 7+1+20+5=33. KITE: 11+9+20+5=45. LATE: 12+1+20+5=38. NOTE: 14+15+20+5=54. BITE: 2+9+20+5=36. NOTE has the highest value at 54. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "GATE: 7+1+20+5=33. KITE: 11+9+20+5=45. LATE: 12+1+20+5=38. NOTE: 14+15+20+5=54. BITE: 2+9+20+5=36. NOTE has the highest value at 54. ✓"
               },
               {
                      id: 42,
@@ -16131,7 +19582,7 @@ const vrData = {
                       question: "If A=4 and B=6, what is the value of A + B + A?",
                       options: ["12","14","16","10","18"],
                       correct: 1,
-                      explanation: "A=4, B=6. A + B + A = 4 + 6 + 4 = 14. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+                      explanation: "A=4, B=6. A + B + A = 4 + 6 + 4 = 14. ✓"
               },
               {
                      id: 71,
@@ -16213,7 +19664,7 @@ const vrData = {
             "17"
           ],
           "correct": 2,
-          "explanation": "A + A + B = 4 + 4 + 7 = 15. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+          "explanation": "A + A + B = 4 + 4 + 7 = 15. ✓"
         },
         {
           id: 79,

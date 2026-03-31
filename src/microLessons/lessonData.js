@@ -13882,7 +13882,7 @@ export const lessonBank = {
             learningGoal: [
               "How letter sums work — A=1, B=2, C=3 through to Z=26",
               "The EJOTY trick for quick positioning (E=5, J=10, O=15, T=20, Y=25)",
-              "CRITICAL: Work LEFT to RIGHT, NOT BODMAS!"
+              "Use BODMAS for mixed operations (× ÷ before + −), left to right for same-level operations"
             ],
             variableSets: [
               {
@@ -14061,7 +14061,7 @@ export const lessonBank = {
                     props: () => ({
                       steps: [
                         { text: "1. Write number above each letter", why: "Use EJOTY as anchor points (E=5, J=10, O=15, T=20, Y=25)" },
-                        { text: "2. Work LEFT TO RIGHT", why: "NOT **BODMAS** (Brackets, Orders, Division, Multiplication, Addition, Subtraction)! In letter sums, you go strictly left to right instead" },
+                        { text: "2. Follow BODMAS for mixed operations", why: "If you see × or ÷ mixed with + or −, do **multiplication and division first**. For addition and subtraction only, just work left to right" },
                         { text: "3. Calculate step by step", why: "Do one operation at a time, moving right" },
                         { text: "4. Convert back if needed", why: "If the answer should be a letter, convert the number using EJOTY" }
                       ],
@@ -14070,7 +14070,7 @@ export const lessonBank = {
                   },
                   {
                     type: 'text',
-                    content: () => `**IMPORTANT:** In letter sums, you work **LEFT to RIGHT** — do NOT use **BODMAS** (the usual maths rule for the order of operations). In these questions, just go left to right instead. This catches lots of people out!`
+                    content: () => `**IMPORTANT:** In letter sums with only + and −, just work **left to right**. But if you see **× or ÷** mixed with + or −, use **BODMAS** — do the multiplication and division first! This catches lots of people out!`
                   }
                 ],
                 visual: null,
@@ -14143,7 +14143,7 @@ export const lessonBank = {
                   props: () => ({
                     steps: [
                       { text: "1. Write number above each letter", why: "EJOTY = E(5) J(10) O(15) T(20) Y(25) — count from nearest" },
-                      { text: "2. Work LEFT TO RIGHT", why: "NOT BODMAS (the usual maths order)! Left to right only!" },
+                      { text: "2. Check the operations", why: "Only + and −? Work left to right. See × or ÷? Use BODMAS — multiply/divide first!" },
                       { text: "3. Calculate step by step", why: "One operation at a time" },
                       { text: "4. Convert back if needed", why: "Number → letter? Use EJOTY to find it ✓" }
                     ],
