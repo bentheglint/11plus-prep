@@ -14533,16 +14533,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "explanation": "'schools' needs an apostrophe — it should be 'school's'. The apostrophe shows that something BELONGS to someone. Without it, it just looks like a normal plural (more than one). Quick test: can you say \"the ___ of the ___\"? If yes, you need an apostrophe! ✓"
         },
         {
-          "id": 7,
-          "difficulty": 2,
-          "questionType": "error-spotting",
-          "question": "Which section contains a punctuation error?",
-          "segments": ["My sister who is","seven years old","loves reading books","about animals."],
-          "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 4,
-          "explanation": "This sentence is perfectly punctuated — well done if you spotted that! The commas are all where they should be. ✓"
-        },
-        {
           "id": 8,
           "difficulty": 1,
           "questionType": "error-spotting",
@@ -14641,16 +14631,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
           "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
-        },
-        {
-          "id": 18,
-          "difficulty": 2,
-          "questionType": "error-spotting",
-          "question": "Which section contains a punctuation error?",
-          "segments": ["My grandparents who","live in Scotland","are coming to","visit us next week."],
-          "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 4,
-          "explanation": "Tricky one! There's no error — all the punctuation is correct. The commas are all where they should be. ✓"
         },
         {
           "id": 19,
@@ -15621,16 +15601,6 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
           "explanation": "'aunt' needs a capital letter — it should be 'aunt'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
-        },
-        {
-          "id": 116,
-          "difficulty": 1,
-          "questionType": "error-spotting",
-          "question": "Which section contains a punctuation error?",
-          "segments": ["The teacher asked","the class a question","but nobody","new the answer."],
-          "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 4,
-          "explanation": "No mistakes here! Every bit of punctuation is in the right place. The apostrophe is in exactly the right place. ✓"
         },
         {
           "id": 117,

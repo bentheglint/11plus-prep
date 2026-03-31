@@ -14851,7 +14851,7 @@ negativenumbers: {
       difficulty: 3,
       question: "A sequence starts: 12, 7, 2, −3, −8, ... What is the sum of the 6th and 7th terms?",
       options: ["−31", "−26", "−21", "−16", "−11"],
-      correct: 1,
+      correct: 0,
       explanation: "Subtract 5 each time. Term 6: −8 − 5 = −13. Term 7: −13 − 5 = −18. Sum: −13 + (−18) = −31. ✓"
     },
     {
@@ -15950,7 +15950,7 @@ primenumbers: {
       difficulty: 3,
       question: "How many numbers from 1 to 50 have exactly two factors?",
       options: ["12", "13", "14", "15", "16"],
-      correct: 4,
+      correct: 3,
       explanation: "Numbers with exactly two factors are prime numbers. Primes from 1 to 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. That's 15 primes. ✓"
     },
     {
@@ -26033,7 +26033,7 @@ speeddistancetime: {
       difficulty: 2,
       question: "A commuter train travels at 55 km/h for 2 hours 30 minutes from Weymouth to Southampton. How far is the journey?",
       options: ["127.5 km", "130 km", "132.5 km", "135 km", "137.5 km"],
-      correct: 3,
+      correct: 4,
       explanation: "2 hours 30 min = 2.5 hours. Distance = 55 × 2.5 = 137.5 km. ✓"
     },
     {
@@ -26265,7 +26265,7 @@ speeddistancetime: {
       difficulty: 3,
       question: "A park runner completes a 3500 m course through the New Forest in 20 minutes. Speed in km/h?",
       options: ["9 km/h", "9.5 km/h", "10 km/h", "10.5 km/h", "11 km/h"],
-      correct: 2,
+      correct: 3,
       explanation: "3500 m = 3.5 km. 20 min = 1/3 hour. Speed = 3.5 \u00f7 (1/3) = 10.5 km/h. \u2713"
     },
     {
@@ -26745,7 +26745,7 @@ speeddistancetime: {
       difficulty: 3,
       question: "A triathlete runs 6500 metres in 26 minutes during the running leg of a race. Speed in km/h?",
       options: ["13 km/h", "14 km/h", "15 km/h", "16 km/h", "17 km/h"],
-      correct: 3,
+      correct: 2,
       explanation: "6500 m = 6.5 km. 26 min = 13/30 hours. Speed = 6.5 \u00f7 (13/30) = 15 km/h. \u2713"
     },
     {
