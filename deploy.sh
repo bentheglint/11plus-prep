@@ -2,6 +2,14 @@
 # Deploy 11+ Prep App to Cloudflare Pages
 # Usage: bash deploy.sh
 
+echo "Running tests..."
+npx react-scripts test --watchAll=false 2>&1
+if [ $? -ne 0 ]; then
+  echo "Tests failed. Fix failing tests before deploying."
+  exit 1
+fi
+echo "Tests passed."
+
 echo "Building app..."
 npm run build
 
