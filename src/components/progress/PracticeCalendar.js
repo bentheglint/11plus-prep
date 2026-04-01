@@ -1,107 +1,142 @@
 import React from 'react';
+import { CheckCircle2 } from 'lucide-react';
 
-// GitHub-style contribution grid showing practice consistency
+// Weekly practice calendar — rows are weeks, columns are Mon-Sun
 function PracticeCalendar({ practiceDays, practiceLog }) {
   const today = new Date();
-  const days = [];
+  const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-  // Generate last 84 days (12 weeks)
-  for (let i = 83; i >= 0; i--) {
+  // Build day data for last 56 days (8 weeks)
+  const dayMap = {};
+  for (let i = 55; i >= 0; i--) {
     const d = new Date(today);
     d.setDate(d.getDate() - i);
     const dateStr = d.toISOString().split('T')[0];
     const practiced = practiceDays.includes(dateStr);
-
-    // Count questions on this day from practice log
     const dayLog = (practiceLog || []).filter(p => p.date === dateStr);
     const questions = dayLog.reduce((s, p) => s + (p.questionsAttempted || 0), 0);
-
-    days.push({
-      date: dateStr,
-      day: d.getDay(),
-      practiced,
-      questions,
-      intensity: questions === 0 ? 0 : questions <= 10 ? 1 : questions <= 25 ? 2 : 3,
-    });
+    dayMap[dateStr] = { date: dateStr, dateObj: d, practiced, questions };
   }
 
-  // Group into calendar weeks (columns), rows = day of week (0=Sun to 6=Sat)
-  // Each column is a Sun-Sat week, like GitHub's contribution graph
+  // Group into Mon-Sun weeks (ISO weeks: Monday = start)
+  // Find the Monday on or before 55 days ago
+  const startDate = new Date(today);
+  startDate.setDate(startDate.getDate() - 55);
+  const startDay = startDate.getDay(); // 0=Sun, 1=Mon, ...
+  const mondayOffset = startDay === 0 ? -6 : 1 - startDay;
+  const firstMonday = new Date(startDate);
+  firstMonday.setDate(startDate.getDate() + mondayOffset);
+
   const weeks = [];
-  let currentWeek = new Array(7).fill(null);
-  days.forEach((day) => {
-    currentWeek[day.day] = day;
-    if (day.day === 6) { // Saturday = end of week
-      weeks.push(currentWeek);
-      currentWeek = new Array(7).fill(null);
+  const d = new Date(firstMonday);
+  while (d <= today) {
+    const week = [];
+    const weekStart = new Date(d);
+    for (let i = 0; i < 7; i++) {
+      const dateStr = d.toISOString().split('T')[0];
+      week.push(dayMap[dateStr] || { date: dateStr, dateObj: new Date(d), practiced: false, questions: 0, outOfRange: true });
+      d.setDate(d.getDate() + 1);
     }
-  });
-  // Push any remaining partial week
-  if (currentWeek.some(d => d !== null)) {
-    weeks.push(currentWeek);
+    const weekEnd = new Date(d);
+    weekEnd.setDate(weekEnd.getDate() - 1);
+    weeks.push({ days: week, start: weekStart, end: weekEnd });
   }
 
-  const intensityColours = ['#EBEDF0', '#C4B5FD', '#8B5CF6', '#6C5CE7'];
+  // Most recent week first
+  weeks.reverse();
+
+  const intensityColours = ['#F3F4F6', '#DDD6FE', '#A78BFA', '#6C5CE7'];
+  const getIntensity = (q) => q === 0 ? 0 : q <= 10 ? 1 : q <= 25 ? 2 : 3;
+
+  // Format date range label: "24 Mar - 30 Mar"
+  const formatRange = (start, end) => {
+    const opts = { day: 'numeric', month: 'short' };
+    return `${start.toLocaleDateString('en-GB', opts)} – ${end.toLocaleDateString('en-GB', opts)}`;
+  };
+
+  // Is this the current week?
+  const isCurrentWeek = (week) => {
+    const todayStr = today.toISOString().split('T')[0];
+    return week.days.some(d => d.date === todayStr);
+  };
 
   // Stats
-  const thisWeekStart = new Date(today);
-  thisWeekStart.setDate(today.getDate() - today.getDay());
-  const thisWeekStr = thisWeekStart.toISOString().split('T')[0];
-  const thisWeekDays = practiceDays.filter(d => d >= thisWeekStr).length;
-
-  const last28Days = days.slice(-28);
-  const last28Practiced = last28Days.filter(d => d.practiced).length;
-  const last28Questions = last28Days.reduce((s, d) => s + d.questions, 0);
+  const last28 = Object.values(dayMap).slice(-28);
+  const last28Practiced = last28.filter(d => d.practiced).length;
+  const last28Questions = last28.reduce((s, d) => s + d.questions, 0);
+  const currentWeek = weeks.find(isCurrentWeek);
+  const thisWeekDays = currentWeek ? currentWeek.days.filter(d => d.practiced).length : 0;
 
   return (
     <div className="card-elevated p-5 mb-6">
-      <h3 className="font-heading font-bold text-[#2D3436] mb-3">Practice Consistency</h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="font-heading font-bold text-[#2D3436]">Practice Consistency</h3>
+        <p className="text-sm font-bold text-[#2D3436]">
+          {thisWeekDays}/7 this week
+          <span className="text-xs font-normal text-[#636E72] ml-1">(target: 4-5)</span>
+        </p>
+      </div>
 
-      {/* Day labels + calendar grid */}
-      <div className="flex gap-1 mb-2">
-        <div className="flex flex-col gap-1 text-[10px] text-[#636E72] pr-1" style={{ paddingTop: 1 }}>
-          {['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map((d, i) => (
-            <div key={d} className="flex items-center" style={{ height: 14, minHeight: 14 }}>
-              {i % 2 === 1 ? <span>{d}</span> : <span>&nbsp;</span>}
-            </div>
-          ))}
-        </div>
-
-        {/* Calendar grid — each column is a calendar week, each row is a day of week */}
-        <div className="flex gap-1 flex-1">
-          {weeks.map((week, wi) => (
-            <div key={wi} className="flex flex-col gap-1 flex-1">
-              {week.map((day, di) => (
-                <div
-                  key={day ? day.date : `empty-${wi}-${di}`}
-                  className="aspect-square rounded transition-colors"
-                  style={{
-                    background: day ? intensityColours[day.intensity] : 'transparent',
-                    minHeight: 14,
-                  }}
-                  title={day ? `${day.date}: ${day.questions} questions` : ''}
-                />
-              ))}
-            </div>
-          ))}
+      {/* Column headers: Mon - Sun + Total */}
+      <div className="flex items-center mb-2">
+        <div className="w-28 flex-shrink-0" />
+        {dayNames.map(name => (
+          <div key={name} className="flex-1 text-center text-xs font-bold text-[#636E72]">
+            {name}
+          </div>
+        ))}
+        <div className="w-8 flex-shrink-0 text-center text-[10px] font-bold text-[#636E72] pl-1">
+          Total
         </div>
       </div>
 
+      {/* Week rows — most recent first */}
+      <div className="space-y-1.5">
+        {weeks.map((week, wi) => {
+          const current = isCurrentWeek(week);
+          const practicedCount = week.days.filter(d => d.practiced).length;
+          return (
+            <div key={wi} className={`flex items-center ${current ? 'bg-[#EDE8FF]/50 rounded-lg py-1 -mx-1 px-1' : ''}`}>
+              {/* Date range label */}
+              <div className="w-28 flex-shrink-0 text-[11px] text-[#636E72] pr-2">
+                {current && <span className="text-[#6C5CE7] font-bold">This week</span>}
+                {!current && formatRange(week.start, week.end)}
+              </div>
+              {/* Day cells */}
+              {week.days.map((day) => {
+                const isToday = day.date === today.toISOString().split('T')[0];
+                const isFuture = new Date(day.date) > today;
+                const intensity = getIntensity(day.questions);
+                return (
+                  <div key={day.date} className="flex-1 flex justify-center">
+                    <div
+                      className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${isToday ? 'ring-2 ring-[#6C5CE7] ring-offset-1' : ''}`}
+                      style={{ background: isFuture ? 'transparent' : intensityColours[intensity] }}
+                      title={`${day.date}: ${day.questions} questions`}
+                    >
+                      {day.practiced && (
+                        <CheckCircle2 className="w-4 h-4 text-[#6C5CE7]" />
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+              {/* Weekly count */}
+              <div className="w-8 flex-shrink-0 text-center text-xs font-bold text-[#636E72] pl-1">
+                {practicedCount > 0 ? practicedCount : ''}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
       {/* Legend */}
-      <div className="flex items-center justify-between mt-1">
-        <div className="flex items-center gap-1.5 text-xs text-[#636E72]">
-          <span>Less</span>
-          {intensityColours.map((c, i) => (
-            <div key={i} className="w-4 h-4 rounded-sm" style={{ background: c }} />
-          ))}
-          <span>More</span>
-        </div>
-        <div className="text-right">
-          <p className="text-sm font-bold text-[#2D3436]">
-            {thisWeekDays} day{thisWeekDays !== 1 ? 's' : ''} this week
-            <span className="text-xs font-normal text-[#636E72] ml-1">(target: 4-5)</span>
-          </p>
-        </div>
+      <div className="flex items-center gap-2 mt-3 text-xs text-[#636E72]">
+        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#F3F4F6' }} /> No practice</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#DDD6FE' }} /> 1-10 Qs</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#A78BFA' }} /> 11-25 Qs</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#6C5CE7' }} /> 25+ Qs</span>
+        <span className="flex items-center gap-1 ml-1"><CheckCircle2 className="w-3.5 h-3.5 text-[#6C5CE7]" /> Practised</span>
       </div>
 
       {/* Summary stats */}
