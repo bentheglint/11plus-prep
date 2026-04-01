@@ -20194,10 +20194,10 @@ const vrData = {
         {
           "id": 149,
           "difficulty": 3,
-          "question": "Who has the second most books? Priya has more books than Quinn. Ravi has fewer books than Quinn but more than Sam. Quinn has fewer than Uma.",
+          "question": "Who has the second most books? Uma has more books than Priya. Priya has more books than Quinn. Ravi has fewer books than Quinn but more than Sam.",
           "options": ["Uma", "Priya", "Quinn", "Ravi", "Sam"],
           "correct": 1,
-          "explanation": "Uma > Priya > Quinn > Ravi > Sam... wait. Let me re-check: Uma > Quinn > ... and Priya > Quinn. We don't know if Uma > Priya or Priya > Uma. Actually the clues give: Priya > Quinn, Ravi < Quinn, Ravi > Sam, Uma > Quinn. So Uma and Priya are both above Quinn but their relative order is unknown. Cannot determine 2nd for certain. Hmm, let me fix this to be solvable. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
+          "explanation": "Build the order: Uma > Priya > Quinn (from the first two clues), and Quinn > Ravi > Sam (from the last clue). Full order: Uma, Priya, Quinn, Ravi, Sam. Priya has the second most books. ✓"
         },
         {
           "id": 150,
@@ -20228,8 +20228,8 @@ const vrData = {
           "difficulty": 3,
           "question": "Who is second youngest? Adam is older than Bella. Bella is younger than Charlie but older than Dina. Charlie is younger than Eve.",
           "options": ["Adam", "Bella", "Charlie", "Dina", "Eve"],
-          "correct": 2,
-          "explanation": "Working it out: Eve > Charlie, Adam > Bella > Dina, and Charlie > Bella. So Eve > Charlie > Adam/Bella > Dina... Actually: Eve > Charlie > Bella > Dina, and Adam > Bella. So order from oldest: Eve, Charlie/Adam (unknown relative), Bella, Dina. Hmm — need Adam's position relative to Charlie. Not given, so second youngest might be Bella. Bella is second youngest. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
+          "correct": 1,
+          "explanation": "Build the order step by step: Eve > Charlie (Charlie younger than Eve), Charlie > Bella (Bella younger than Charlie), Bella > Dina (Bella older than Dina), Adam > Bella (Adam older than Bella). The definite order from youngest: Dina, Bella, then Charlie above her. Bella is second youngest. ✓"
         },
         {
           "id": 154,
