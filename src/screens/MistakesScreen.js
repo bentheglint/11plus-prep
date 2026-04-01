@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw } from 'lucide-react';
+import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw, BookOpen } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
@@ -112,9 +112,8 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
 
   // Start practice mode for a topic
   const startPractice = useCallback((topicKey, subject, mistakes) => {
-    // Filter out questions that can't be practised inline (missing, or types needing full context)
-    const unsupported = ['missing', 'passage', 'error-spotting'];
-    const practiceable = mistakes.filter(m => !unsupported.includes(m.questionType));
+    // Filter out questions no longer in the bank
+    const practiceable = mistakes.filter(m => m.questionType !== 'missing');
     if (practiceable.length === 0) return;
     setPracticeMode({ topicKey, subject, questions: practiceable });
     setPracticeIndex(0);
@@ -278,8 +277,70 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             />
           </div>
 
+          {/* Passage text for comprehension questions */}
+          {current.questionType === 'passage' && current.fullQuestion?.passage && (
+            <div className="mb-4 relative animate-fade-in-up">
+              <div className="bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto"
+                onScroll={(e) => {
+                  const el = e.target;
+                  const indicator = el.parentElement.querySelector('.scroll-hint');
+                  if (indicator) indicator.style.opacity = (el.scrollHeight - el.scrollTop - el.clientHeight > 10) ? '1' : '0';
+                }}
+                ref={(el) => {
+                  if (el) {
+                    const indicator = el.parentElement.querySelector('.scroll-hint');
+                    if (indicator) indicator.style.opacity = (el.scrollHeight > el.clientHeight) ? '1' : '0';
+                  }
+                }}
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <BookOpen className="w-4 h-4 text-[#F39C12]" />
+                  <span className="text-sm font-heading font-bold text-[#2D3436]">{current.fullQuestion.passageTitle}</span>
+                </div>
+                <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
+                  {current.fullQuestion.passage}
+                </div>
+              </div>
+              <div className="scroll-hint absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#FFF8E8] to-transparent rounded-b-xl pointer-events-none flex items-end justify-center pb-1 transition-opacity"
+                style={{ opacity: 0 }}>
+                <span className="text-[10px] font-bold text-[#F39C12] animate-bounce">▼ Scroll for more</span>
+              </div>
+            </div>
+          )}
+
           {/* Question */}
           <div className="card-elevated p-6 mb-4 animate-fade-in-up">
+            {/* Error-spotting segments */}
+            {current.questionType === 'error-spotting' && current.fullQuestion?.segments && (
+              <div className="mb-4">
+                <div className="grid grid-cols-2 gap-3">
+                  {current.fullQuestion.segments.map((segment, idx) => (
+                    <div key={idx} className="bg-gray-50 border-2 border-gray-300 rounded-lg p-3 text-center">
+                      <span className="block text-xs font-bold text-[#6C5CE7] mb-1">
+                        Section {String.fromCharCode(65 + idx)}
+                      </span>
+                      <span className="text-gray-900 text-sm font-medium">{segment}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Alphabet line for letter code questions */}
+            {current.questionType === 'letter-codes' && (
+              <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
+                <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">Use this alphabet to crack the code</div>
+                <div className="flex justify-center">
+                  {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
+                    <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
+                      <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-[#2D3436]'}`}>{letter}</span>
+                      <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <p className="text-lg font-medium text-[#2D3436] mb-6">{current.questionText}</p>
 
             {/* Standard MCQ options */}
@@ -561,7 +622,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                           + {group.mistakes.length - 10} more
                         </p>
                       )}
-                      {group.mistakes.some(m => !['missing', 'passage', 'error-spotting'].includes(m.questionType)) && (
+                      {group.mistakes.some(m => m.questionType !== 'missing') && (
                         <div className="px-5 py-3 bg-gray-50">
                           <button
                             onClick={() => startPractice(topicKey, group.subject, group.mistakes)}
@@ -569,7 +630,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                             style={{ background: colour }}
                           >
                             <Target className="w-4 h-4" />
-                            Practice These ({group.mistakes.filter(m => !['missing', 'passage', 'error-spotting'].includes(m.questionType)).length})
+                            Practice These ({group.mistakes.filter(m => m.questionType !== 'missing').length})
                           </button>
                         </div>
                       )}
