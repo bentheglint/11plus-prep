@@ -25,16 +25,21 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
     });
   }
 
-  // Group into weeks (columns)
+  // Group into calendar weeks (columns), rows = day of week (0=Sun to 6=Sat)
+  // Each column is a Sun-Sat week, like GitHub's contribution graph
   const weeks = [];
-  let currentWeek = [];
-  days.forEach((day, i) => {
-    currentWeek.push(day);
-    if (currentWeek.length === 7 || i === days.length - 1) {
+  let currentWeek = new Array(7).fill(null);
+  days.forEach((day) => {
+    currentWeek[day.day] = day;
+    if (day.day === 6) { // Saturday = end of week
       weeks.push(currentWeek);
-      currentWeek = [];
+      currentWeek = new Array(7).fill(null);
     }
   });
+  // Push any remaining partial week
+  if (currentWeek.some(d => d !== null)) {
+    weeks.push(currentWeek);
+  }
 
   const intensityColours = ['#EBEDF0', '#C4B5FD', '#8B5CF6', '#6C5CE7'];
 
@@ -52,25 +57,29 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
     <div className="card-elevated p-5 mb-6">
       <h3 className="font-heading font-bold text-[#2D3436] mb-3">Practice Consistency</h3>
 
-      {/* Day labels */}
+      {/* Day labels + calendar grid */}
       <div className="flex gap-1 mb-2">
-        <div className="flex flex-col gap-1 text-[10px] text-[#636E72] pr-1 justify-between" style={{ paddingTop: 2, paddingBottom: 2 }}>
-          <span>Mon</span>
-          <span>Wed</span>
-          <span>Fri</span>
-          <span>Sun</span>
+        <div className="flex flex-col gap-1 text-[10px] text-[#636E72] pr-1" style={{ paddingTop: 1 }}>
+          {['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map((d, i) => (
+            <div key={d} className="flex items-center" style={{ height: 14, minHeight: 14 }}>
+              {i % 2 === 1 ? <span>{d}</span> : <span>&nbsp;</span>}
+            </div>
+          ))}
         </div>
 
-        {/* Calendar grid */}
+        {/* Calendar grid — each column is a calendar week, each row is a day of week */}
         <div className="flex gap-1 flex-1">
           {weeks.map((week, wi) => (
             <div key={wi} className="flex flex-col gap-1 flex-1">
-              {week.map(day => (
+              {week.map((day, di) => (
                 <div
-                  key={day.date}
+                  key={day ? day.date : `empty-${wi}-${di}`}
                   className="aspect-square rounded transition-colors"
-                  style={{ background: intensityColours[day.intensity], minHeight: 14 }}
-                  title={`${day.date}: ${day.questions} questions`}
+                  style={{
+                    background: day ? intensityColours[day.intensity] : 'transparent',
+                    minHeight: 14,
+                  }}
+                  title={day ? `${day.date}: ${day.questions} questions` : ''}
                 />
               ))}
             </div>
