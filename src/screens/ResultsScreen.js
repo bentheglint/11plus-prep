@@ -1,5 +1,5 @@
 import React, { useMemo, useEffect, useRef } from 'react';
-import { Home, RotateCcw, Trophy, ThumbsUp, Zap, ArrowLeft } from 'lucide-react';
+import { Home, RotateCcw, Trophy, ThumbsUp, Zap, ArrowLeft, Clock } from 'lucide-react';
 import ResultsInsightCard from '../components/ResultsInsightCard';
 import { selectResultsInsightTip } from '../utils/tipSelection';
 
@@ -7,6 +7,10 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
   const correctCount = answers.filter(a => a.correct).length;
   const totalCount = answers.length;
   const percentage = Math.round((correctCount / totalCount) * 100);
+  // Total time from per-question measurements (excludes feedback reading time)
+  const totalTimeMs = answers.reduce((sum, a) => sum + (a.timeSpentMs || 0), 0);
+  const totalMinutes = Math.floor(totalTimeMs / 60000);
+  const totalSeconds = Math.floor((totalTimeMs % 60000) / 1000);
   const circumference = 2 * Math.PI * 45;
   const strokeOffset = circumference - (percentage / 100) * circumference;
   const ResultIcon = percentage >= 80 ? Trophy : percentage >= 60 ? ThumbsUp : Zap;
@@ -71,6 +75,15 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
               {correctCount} / {totalCount}
             </div>
             <p className="text-lg text-[#636E72] font-medium">Questions Correct</p>
+            {totalTimeMs > 0 && (
+              <div className="mt-3 pt-3 border-t border-[#DDD6FE] flex items-center justify-center gap-2 text-[#636E72] animate-fade-in-up" style={{ animationDelay: '800ms' }}>
+                <Clock className="w-4 h-4" />
+                <span className="font-mono font-medium">
+                  {totalMinutes > 0 ? `${totalMinutes}m ${String(totalSeconds).padStart(2, '0')}s` : `${totalSeconds}s`}
+                </span>
+                <span className="text-sm">total time</span>
+              </div>
+            )}
           </div>
 
           <ResultsInsightCard tip={insightTip} />

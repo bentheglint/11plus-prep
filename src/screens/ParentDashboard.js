@@ -7,6 +7,7 @@ import PracticeCalendar from '../components/progress/PracticeCalendar';
 import FocusAreas from '../components/progress/FocusAreas';
 import MockTestHistory from '../components/progress/MockTestHistory';
 import SpeedTracking from '../components/progress/SpeedTracking';
+import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant';
 import ParentGuidance from '../components/progress/ParentGuidance';
 import parentGuides from '../data/parentGuides';
 
@@ -58,6 +59,8 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopic
         <MockTestHistory mockTestHistory={userData.mockTestHistory} />
 
         <SpeedTracking questionResults={userData.questionResults} />
+
+        <SpeedAccuracyQuadrant questionResults={userData.questionResults} />
 
         <button
           onClick={onHome}
