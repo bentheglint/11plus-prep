@@ -20,6 +20,7 @@ export const fractionsSubConcepts = [
         variableSets: [
           {
             name: "Ella",
+            pronoun: "She",
             scenario: "sharing sweets at a party",
             numerator: 6, denominator: 8,
             hcf: 2, simplifiedNum: 3, simplifiedDen: 4,
@@ -29,6 +30,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Charlie",
+            pronoun: "He",
             scenario: "sorting marbles into bags",
             numerator: 10, denominator: 15,
             hcf: 5, simplifiedNum: 2, simplifiedDen: 3,
@@ -38,6 +40,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Priya",
+            pronoun: "She",
             scenario: "cutting ribbon for craft projects",
             numerator: 12, denominator: 18,
             hcf: 6, simplifiedNum: 2, simplifiedDen: 3,
@@ -50,7 +53,7 @@ export const fractionsSubConcepts = [
           {
             type: "hook",
             title: (v) => `Can you simplify ${v.numerator}/${v.denominator}?`,
-            body: (v) => `${v.name} is ${v.scenario}. She used **${v.numerator}/${v.denominator}** of the ${v.unit}. But there's a **simpler** way to write that fraction!`,
+            body: (v) => `${v.name} is ${v.scenario}. ${v.pronoun} used **${v.numerator}/${v.denominator}** of the ${v.unit}. But there's a **simpler** way to write that fraction!`,
             visual: {
               component: "BarModel",
               props: (v) => ({
@@ -1030,6 +1033,7 @@ export const fractionsSubConcepts = [
         variableSets: [
           {
             name: "Holly",
+            pronoun: "She",
             scenario: "had a chocolate bar and gave some away",
             fracANum: 5, fracBNum: 2, denominator: 8,
             answerNum: 3, unit: "chocolate bar",
@@ -1037,6 +1041,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Tom",
+            pronoun: "He",
             scenario: "filled a jug with water and poured some out",
             fracANum: 4, fracBNum: 1, denominator: 6,
             answerNum: 3, unit: "jug",
@@ -1044,6 +1049,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Ella",
+            pronoun: "She",
             scenario: "had ribbon and used some for wrapping",
             fracANum: 7, fracBNum: 3, denominator: 10,
             answerNum: 4, unit: "metre",
@@ -1054,7 +1060,7 @@ export const fractionsSubConcepts = [
           {
             type: "hook",
             title: (v) => `${v.fracANum}/${v.denominator} − ${v.fracBNum}/${v.denominator} = ?`,
-            body: (v) => `${v.name} ${v.scenario}. She started with **${v.fracANum}/${v.denominator}** and used **${v.fracBNum}/${v.denominator}**. How much is left?`,
+            body: (v) => `${v.name} ${v.scenario}. ${v.pronoun} started with **${v.fracANum}/${v.denominator}** and used **${v.fracBNum}/${v.denominator}**. How much is left?`,
             visual: {
               component: "BarModel",
               props: (v) => ({
@@ -1337,6 +1343,7 @@ export const fractionsSubConcepts = [
         variableSets: [
           {
             name: "Sophie",
+            pronoun: "She",
             scenario: "mixing paint for art class",
             fracANum: 1, fracADen: 3, fracBNum: 1, fracBDen: 4,
             lcd: 12, newANum: 4, newBNum: 3,
@@ -1349,6 +1356,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Ben",
+            pronoun: "He",
             scenario: "pouring juice from two bottles",
             fracANum: 2, fracADen: 5, fracBNum: 1, fracBDen: 3,
             lcd: 15, newANum: 6, newBNum: 5,
@@ -1361,6 +1369,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Lily",
+            pronoun: "She",
             scenario: "walking two sections of a trail",
             fracANum: 1, fracADen: 2, fracBNum: 1, fracBDen: 6,
             lcd: 6, newANum: 3, newBNum: 1,
@@ -1376,7 +1385,7 @@ export const fractionsSubConcepts = [
           {
             type: "hook",
             title: (v) => `${v.fracANum}/${v.fracADen} + ${v.fracBNum}/${v.fracBDen} = ?`,
-            body: (v) => `${v.name} is ${v.scenario}. She uses **${v.fracANum}/${v.fracADen}** of a ${v.unit} and then **${v.fracBNum}/${v.fracBDen}** more. The bottom numbers are **different** — how do we add them?`,
+            body: (v) => `${v.name} is ${v.scenario}. ${v.pronoun} uses **${v.fracANum}/${v.fracADen}** of a ${v.unit} and then **${v.fracBNum}/${v.fracBDen}** more. The bottom numbers are **different** — how do we add them?`,
             visual: {
               component: "BarModel",
               props: (v) => ({
@@ -2063,6 +2072,7 @@ export const fractionsSubConcepts = [
         variableSets: [
           {
             name: "Ella",
+            pronoun: "She",
             scenario: "has a bag of marbles",
             amount: 40, numerator: 3, denominator: 4,
             onePartValue: 10, answer: 30,
@@ -2071,6 +2081,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Jake",
+            pronoun: "He",
             scenario: "earned pocket money",
             amount: 30, numerator: 2, denominator: 5,
             onePartValue: 6, answer: 12,
@@ -2079,6 +2090,7 @@ export const fractionsSubConcepts = [
           },
           {
             name: "Daisy",
+            pronoun: "She",
             scenario: "picked strawberries in a garden",
             amount: 24, numerator: 5, denominator: 6,
             onePartValue: 4, answer: 20,
@@ -2090,7 +2102,7 @@ export const fractionsSubConcepts = [
           {
             type: "hook",
             title: (v) => `What is ${v.numerator}/${v.denominator} of ${v.amount}?`,
-            body: (v) => `${v.name} ${v.scenario}. She has **${v.amount} ${v.unit}** and wants to find **${v.numerator}/${v.denominator}** of them. There's a two-step trick!`,
+            body: (v) => `${v.name} ${v.scenario}. ${v.pronoun} has **${v.amount} ${v.unit}** and wants to find **${v.numerator}/${v.denominator}** of them. There's a two-step trick!`,
             visual: {
               component: "BarModel",
               props: (v) => ({

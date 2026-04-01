@@ -1458,10 +1458,20 @@ export function RectangleDiagram({
   const padR = 30;
   const padT = 30;
   const padB = 50;
-  const rectW = svgW - padL - padR;
-  const rectH = svgH - padT - padB;
-  const rx = padL;
-  const ry = padT;
+  const maxW = svgW - padL - padR;
+  const maxH = svgH - padT - padB;
+  // Scale rectangle to match aspect ratio of actual dimensions
+  const aspect = length / width;
+  let rectW, rectH;
+  if (aspect >= maxW / maxH) {
+    rectW = maxW;
+    rectH = maxW / aspect;
+  } else {
+    rectH = maxH;
+    rectW = maxH * aspect;
+  }
+  const rx = padL + (maxW - rectW) / 2;
+  const ry = padT + (maxH - rectH) / 2;
 
   return (
     <div className="flex justify-center">
@@ -3812,7 +3822,10 @@ export function ExteriorAngle({
   angle2 = 70,
   angle3 = 60,
   showExterior = true,
-  exteriorLabel = null
+  exteriorLabel = null,
+  angle1Label = null,
+  angle2Label = null,
+  angle3Label = null
 }) {
   const DEG = Math.PI / 180;
   const vw = 400, vh = 240;
@@ -3898,9 +3911,9 @@ export function ExteriorAngle({
           stroke="#6366f1" strokeWidth={2.5} strokeDasharray="6,4" />
 
         {/* Interior angle arcs — all drawn INSIDE the triangle */}
-        {drawAngleArc(B.x, B.y, dirB_to_C, angle2, "#818cf8", `${angle2}°`)}
-        {drawAngleArc(Cfinal.x, Cfinal.y, dirC_to_A, angle3, "#d1d5db", `${angle3}°`)}
-        {drawAngleArc(A.x, A.y, dirA_to_B, angle1, "#38bdf8", `${angle1}°`)}
+        {drawAngleArc(B.x, B.y, dirB_to_C, angle2, "#818cf8", angle2Label !== null ? angle2Label : `${angle2}°`)}
+        {drawAngleArc(Cfinal.x, Cfinal.y, dirC_to_A, angle3, "#d1d5db", angle3Label !== null ? angle3Label : `${angle3}°`)}
+        {drawAngleArc(A.x, A.y, dirA_to_B, angle1, "#38bdf8", angle1Label !== null ? angle1Label : `${angle1}°`)}
 
         {/* Exterior angle — from extension (0°) to apex direction */}
         {showExterior && (
@@ -3914,6 +3927,90 @@ export function ExteriorAngle({
         <circle cx={A.x} cy={A.y} r={3} fill="#1e293b" />
         <circle cx={B.x} cy={B.y} r={3} fill="#1e293b" />
         <circle cx={Cfinal.x} cy={Cfinal.y} r={3} fill="#1e293b" />
+      </svg>
+    </div>
+  );
+}
+
+// ============================================================
+// ClockFace — clock diagram for angle questions
+// Props: hourHand (1-12), minuteHand (1-12), showAngle (boolean),
+//        angleLabel (string, e.g. "120°" or "?")
+// ============================================================
+export function ClockFace({
+  hourHand = 12,
+  minuteHand = 12,
+  showAngle = false,
+  angleLabel = null
+}) {
+  const cx = 150, cy = 150, r = 120;
+  const DEG = Math.PI / 180;
+  // Clock positions: 12 is at top (270° in SVG coords), each number is 30° clockwise
+  const clockAngle = (pos) => (pos * 30 - 90) * DEG;
+  const hourAngle = clockAngle(hourHand);
+  const minuteAngle = clockAngle(minuteHand);
+  const hourLen = r * 0.55;
+  const minuteLen = r * 0.78;
+
+  // Calculate angle between hands (smaller arc)
+  const hDeg = (hourHand * 30 - 90 + 360) % 360;
+  const mDeg = (minuteHand * 30 - 90 + 360) % 360;
+  let sweep = (mDeg - hDeg + 360) % 360;
+  // For the angle arc SVG
+  const startRad = hourAngle;
+  const endRad = minuteAngle;
+  const arcR = 40;
+  const sx = cx + arcR * Math.cos(startRad), sy = cy + arcR * Math.sin(startRad);
+  const ex = cx + arcR * Math.cos(endRad), ey = cy + arcR * Math.sin(endRad);
+  const largeArc = sweep > 180 ? 1 : 0;
+  const midAngle = (hDeg + sweep / 2) % 360 * DEG;
+  const labelR = arcR + 18;
+  const lx = cx + labelR * Math.cos(midAngle), ly = cy + labelR * Math.sin(midAngle);
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
+      <svg viewBox="0 0 300 300" style={{ width: '100%', maxWidth: 280, height: 'auto' }}>
+        {/* Clock face */}
+        <circle cx={cx} cy={cy} r={r} fill="white" stroke="#6366f1" strokeWidth={3} />
+        {/* Hour numbers */}
+        {[...Array(12)].map((_, i) => {
+          const num = i + 1;
+          const a = clockAngle(num);
+          const nx = cx + (r - 18) * Math.cos(a);
+          const ny = cy + (r - 18) * Math.sin(a);
+          return (
+            <text key={num} x={nx} y={ny} textAnchor="middle" dominantBaseline="central"
+              fontSize={14} fontWeight="600" fill="#374151">{num}</text>
+          );
+        })}
+        {/* Tick marks */}
+        {[...Array(12)].map((_, i) => {
+          const a = clockAngle(i + 1);
+          const x1 = cx + (r - 6) * Math.cos(a), y1 = cy + (r - 6) * Math.sin(a);
+          const x2 = cx + r * Math.cos(a), y2 = cy + r * Math.sin(a);
+          return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#9ca3af" strokeWidth={2} />;
+        })}
+        {/* Angle arc */}
+        {showAngle && (
+          <g>
+            <path d={`M ${sx},${sy} A ${arcR},${arcR} 0 ${largeArc},1 ${ex},${ey} L ${cx},${cy} Z`}
+              fill="#f59e0b30" stroke="#f59e0b" strokeWidth={2} />
+            {angleLabel && (
+              <text x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
+                fontSize={13} fontWeight="700" fill="#f59e0b">{angleLabel}</text>
+            )}
+          </g>
+        )}
+        {/* Hour hand */}
+        <line x1={cx} y1={cy}
+          x2={cx + hourLen * Math.cos(hourAngle)} y2={cy + hourLen * Math.sin(hourAngle)}
+          stroke="#1e293b" strokeWidth={5} strokeLinecap="round" />
+        {/* Minute hand */}
+        <line x1={cx} y1={cy}
+          x2={cx + minuteLen * Math.cos(minuteAngle)} y2={cy + minuteLen * Math.sin(minuteAngle)}
+          stroke="#6366f1" strokeWidth={3} strokeLinecap="round" />
+        {/* Centre dot */}
+        <circle cx={cx} cy={cy} r={5} fill="#1e293b" />
       </svg>
     </div>
   );

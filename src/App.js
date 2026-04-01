@@ -8,7 +8,8 @@ import {
   AngleDisplay, QuadShape, ParallelLines, ExteriorAngle, RegularPolygon,
   BarChart, PieChart, LineGraph, TwoWayTable, RectangleDiagram,
   TriangleAreaDiagram, ParallelogramDiagram, LShapeDiagram,
-  NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart
+  NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
+  ClockFace
 } from './microLessons/visuals';
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
@@ -46,7 +47,8 @@ const quizVisualComponents = {
   AngleDisplay, QuadShape, ParallelLines, ExteriorAngle, RegularPolygon,
   BarChart, PieChart, LineGraph, TwoWayTable, RectangleDiagram,
   TriangleAreaDiagram, ParallelogramDiagram, LShapeDiagram,
-  NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart
+  NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
+  ClockFace
 };
 
 const questionData = {
@@ -94,6 +96,7 @@ function App() {
   const [pendingAchievement, setPendingAchievement] = useState(null);
 
   const mockTest = useMockTest();
+  const mockResultsSaved = React.useRef(false);
   const [currentView, setCurrentView] = useState('home');
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -139,8 +142,22 @@ function App() {
   const [drillDownTopic, setDrillDownTopic] = useState(null); // { subject, topicKey }
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('tested-subconcepts')) || {}; } catch { return {}; }
+    try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
   });
+
+  // Check achievements when results are shown — state is fully updated by then
+  const prevResultsKey = React.useRef(null);
+  React.useEffect(() => {
+    const isResults = currentView === 'results' || (currentView === 'mockTest' && mockTest.mockTestComplete);
+    const resultsKey = isResults ? `${currentView}-${quizHistory.length}-${userData.mockTestHistory.length}` : null;
+    if (isResults && resultsKey !== prevResultsKey.current) {
+      prevResultsKey.current = resultsKey;
+      const newAchievements = achievements.checkAchievements();
+      if (newAchievements.length > 0) {
+        setPendingAchievement(newAchievements[0]);
+      }
+    }
+  }, [currentView, mockTest.mockTestComplete, achievements, quizHistory.length, userData.mockTestHistory.length]);
 
   // ── Quiz State Persistence ──
   // Save quiz progress so children can resume if they leave mid-quiz
@@ -345,9 +362,10 @@ function App() {
     setCurrentView('quiz');
   };
 
-  const handleTopicSelect = (topic) => {
+  const handleTopicSelect = (topic, subject) => {
+    const activeSubject = subject || selectedSubject;
     setSelectedTopic(topic);
-    const selected = selectFocusedQuestions(topic);
+    const selected = selectFocusedQuestions(topic, activeSubject);
     setQuizQuestions(selected);
     setQuizMode('focused');
     setCurrentQuestionIndex(0);
@@ -364,7 +382,7 @@ function App() {
     setChatMessages([]);
     setForcedLessonResult(null);
 
-    if (selectedSubject === 'maths' || selectedSubject === 'english' || selectedSubject === 'verbalreasoning') {
+    if (activeSubject === 'maths' || activeSubject === 'english' || activeSubject === 'verbalreasoning') {
       setCurrentView('lesson');
     } else {
       setCurrentView('quiz');
@@ -431,6 +449,7 @@ function App() {
       questionId: currentQuestion.id,
       correct: isCorrect,
       timeSpentMs,
+      difficulty: currentQuestion.difficulty || 2,
     }]);
 
     // Post-question tip: show ~every 3rd wrong answer
@@ -468,7 +487,8 @@ function App() {
           const topicQuestions = questionData[selectedSubject]?.topics?.[topicKey]?.questions ||
             englishData?.topics?.[topicKey]?.questions ||
             vrData?.topics?.[topicKey]?.questions || [];
-          const replacement = pickQuestionAtDifficulty(topicQuestions, seenQuestions[topicKey] || [], targetDiff);
+          const currentQuizIds = quizQuestions.map(q => q.question.id);
+          const replacement = pickQuestionAtDifficulty(topicQuestions, seenQuestions[topicKey] || [], targetDiff, currentQuizIds);
           if (replacement && replacement.id !== nextQ.question.id) {
             const updated = [...quizQuestions];
             updated[nextIdx] = { ...nextQ, question: replacement };
@@ -822,9 +842,11 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     return shuffled;
   };
 
-  const pickQuestionAtDifficulty = (questions, seenIds, targetDifficulty) => {
-    // Filter out broken questions (e.g. passage questions missing passage text)
-    const valid = questions.filter(q => !(q.questionType === 'passage' && !q.passage));
+  const pickQuestionAtDifficulty = (questions, seenIds, targetDifficulty, excludeIds = []) => {
+    // Filter out broken questions and any already in the current quiz
+    const valid = questions.filter(q =>
+      !(q.questionType === 'passage' && !q.passage) && !excludeIds.includes(q.id)
+    );
     // Try to find an unseen question at the target difficulty
     let pool = valid.filter(q => q.difficulty === targetDifficulty && !seenIds.includes(q.id));
     if (pool.length > 0) return pool[Math.floor(Math.random() * pool.length)];
@@ -880,8 +902,9 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     return shuffleArray(selected);
   };
 
-  const selectFocusedQuestions = (topicKey) => {
-    const topics = questionData[selectedSubject].topics;
+  const selectFocusedQuestions = (topicKey, subject) => {
+    const activeSubject = subject || selectedSubject;
+    const topics = questionData[activeSubject].topics;
     const topicQuestions = topics[topicKey].questions;
     const topicName = topics[topicKey].name;
     const updatedSeen = { ...seenQuestions };
@@ -1007,13 +1030,6 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     );
     streaksAndPP.awardPP(ppCalc.total, 'Quiz completed');
 
-    // Check for new achievements (show first one found)
-    setTimeout(() => {
-      const newAchievements = achievements.checkAchievements();
-      if (newAchievements.length > 0) {
-        setPendingAchievement(newAchievements[0]);
-      }
-    }, 500);
   };
 
   // ── Dev Navigation ──
@@ -1222,7 +1238,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onSpeedReview={() => setCurrentView('speedReview')}
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);
-          handleTopicSelect(topicKey);
+          handleTopicSelect(topicKey, subject);
         }}
         mastery={mastery}
         streaksAndPP={streaksAndPP}
@@ -1239,6 +1255,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onStartDaily={handleStartDaily}
         onFocusedLearning={() => setCurrentView('topics')}
         onMockTest={() => {
+          mockResultsSaved.current = false;
           mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
           setCurrentView('mockTest');
         }}
@@ -1308,8 +1325,8 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   if (currentView === 'mockTest' && mockTest.mockTestComplete) {
     // Save mock test per-question results to progress tracking (once)
     const results = mockTest.getResults();
-    if (results && !mockTest._resultsSavedToProgress) {
-      mockTest._resultsSavedToProgress = true;
+    if (results && !mockResultsSaved.current) {
+      mockResultsSaved.current = true;
       const sessionId = Date.now();
       const mockQuestions = mockTest.mockTestQuestions;
       const mockAnswers = mockTest.mockTestAnswers;
@@ -1363,11 +1380,23 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       const ppCalc = streaksAndPP.calculateQuizPP(mockQuestions.length, mockCorrectCount, pct, false);
       streaksAndPP.awardPP(ppCalc.total, 'Mock test completed');
 
-      // Check achievements
-      setTimeout(() => {
-        const newAch = achievements.checkAchievements();
-        if (newAch.length > 0) setPendingAchievement(newAch[0]);
-      }, 500);
+      // Persist aggregate mock result to history (parent dashboard, trends, etc.)
+      userData.saveMockTestResult({
+        id: sessionId,
+        date: new Date().toISOString(),
+        subject: mockTest.mockTestSubject,
+        totalQuestions: mockQuestions.length,
+        totalCorrect: mockCorrectCount,
+        percentage: pct,
+        timeTaken: results.timeTaken,
+        timeLimit: results.timeLimit,
+        sections: Object.entries(results.sectionResults).map(([name, data]) => ({
+          name,
+          correct: data.correct,
+          total: data.total,
+          percentage: Math.round((data.correct / data.total) * 100),
+        })),
+      });
     }
 
     return (
@@ -1375,11 +1404,11 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         <MockTestResultsScreen
           results={results}
           onTryAgain={() => {
-            mockTest._resultsSavedToProgress = false;
+            mockResultsSaved.current = false;
             mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
           }}
           onHome={() => {
-            mockTest._resultsSavedToProgress = false;
+            mockResultsSaved.current = false;
             mockTest.endMockTest();
             handleHome();
           }}
@@ -1644,7 +1673,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         questionResults={questionResults}
         onPractise={(subject, topicKey) => {
           setSelectedSubject(subject);
-          handleTopicSelect(topicKey);
+          handleTopicSelect(topicKey, subject);
         }}
         onBack={() => setCurrentView('progress')}
       />
@@ -1660,8 +1689,9 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         vrData={vrData}
         onPractiseTopic={(subject, topicKey) => {
           setSelectedSubject(subject);
-          handleTopicSelect(topicKey);
+          handleTopicSelect(topicKey, subject);
         }}
+        onRecordResult={(result) => userData.saveQuestionResult(result)}
         onBack={handleHome}
       />
     );
@@ -1679,7 +1709,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onHome={handleHome}
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);
-          handleTopicSelect(topicKey);
+          handleTopicSelect(topicKey, subject);
         }}
         onDrillDown={(subject, topicKey) => {
           setDrillDownTopic({ subject, topicKey });

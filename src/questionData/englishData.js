@@ -14540,7 +14540,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Hurry up!\" shouted Mum.","\"Were going to","be late for the","dentist again.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is not strong enough here. 'They played football together' is a new sentence, so it needs a full stop after 'outside' instead of a comma. Two complete sentences need a full stop between them. ✓"
+          "explanation": "'Were' should be 'We're'. 'We're' is short for 'we are' — so the sentence should say 'We're going to be late.' 'Were' (without the apostrophe) is a past tense word, like 'they were late yesterday'. Remember: if you can swap in 'we are', you need the apostrophe! ✓"
         },
         {
           "id": 9,
@@ -14860,7 +14860,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Mrs Taylor said","the homework was sent","too late and she","hadnt received it."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "Commas are needed between the items in this list: 'a torch, a map, a compass and some warm clothes'. Without commas, the items all run together and it is hard to tell where one ends and the next begins. ✓"
+          "explanation": "'hadnt' should be 'hadn't'. 'Hadn't' is short for 'had not', so it needs an apostrophe where the 'o' has been removed. Whenever you squash two words together and leave out letters, the apostrophe goes in the gap: had + not = hadn't. ✓"
         },
         {
           "id": 42,
@@ -14870,7 +14870,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We haven't decided","where to go because","were still saving up","for our family holiday."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A full stop is missing at the end of the first sentence. It should be 'bread.' because 'Then we went home' is a new sentence. Every sentence must end with a full stop, question mark, or exclamation mark. ✓"
+          "explanation": "'were' should be 'we're'. 'We're' is short for 'we are' — so the sentence should say 'we're still saving up.' 'Were' (without the apostrophe) is a past tense word. Top tip: try swapping in 'we are' — if it makes sense, you need the apostrophe! ✓"
         },
         {
           "id": 43,
@@ -15220,7 +15220,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We need flour, sugar","butter, eggs and","milk to bake","the birthday cake."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "Commas are needed to separate the items in this list: sandwiches, crisps, fruit and a drink. Without commas, the words all run together and it is hard to tell where one item ends and the next begins. ✓"
+          "explanation": "A comma is missing after 'sugar'. The list should read 'flour, sugar, butter, eggs and milk'. When you write a list of three or more items, each item needs a comma after it (except the last one before 'and'). Without it, 'sugar butter' looks like one item! ✓"
         },
         {
           "id": 78,
@@ -15330,7 +15330,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["You will need the","following, a pen","a ruler and","a calculator."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. The sentence needs commas between the fruits: ‘oranges, grapes and pears.’ Without them, the words all run together. ✓"
+          "explanation": "A comma is needed after ‘pen’ to separate the items in the list — it should be ‘a pen, a ruler and a calculator’. When you list three or more things, put a comma between each item (except before ‘and’). Without the comma, ‘a pen a ruler’ runs together. ✓"
         },
         {
           "id": 89,
@@ -16380,7 +16380,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The teacher asked","\"Who can tell me","the answer to","question five?\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the fronted adverbial: ‘Even though the film was very scary, the children watched it all.’ The comma shows where the opening phrase ends and the main sentence begins. ✓"
+          "explanation": "A comma is needed after ‘asked’ before the speech marks: ‘The teacher asked, \"Who can tell me...\"’ When someone says something, you need a comma between the reporting verb (asked, said, shouted) and the opening speech marks. ✓"
         },
         {
           "id": 195,
@@ -16420,7 +16420,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Dad whispered","\"Don't make a sound","or you'll scare","the deer away.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'whispered' to introduce the speech — it should be 'Dad whispered, \"Don't...' When a character speaks, put a comma before the opening speech marks to separate the speaker from what they say. ✓"
         },
         {
           "id": 199,
@@ -16440,7 +16440,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Gran exclaimed","\"What a lovely","surprise to","see you all!\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'exclaimed' to introduce the speech — it should be 'Gran exclaimed, \"What...' When a character speaks, put a comma before the opening speech marks to separate the speaker from what they say. ✓"
         },
         {
           "id": 201,
@@ -16460,7 +16460,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The headteacher replied","\"The school fair will","be held on the","last day of term.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'replied' to introduce the speech — it should be 'The headteacher replied, \"The...' When a character speaks, put a comma before the opening speech marks to separate the speaker from what they say. ✓"
         },
         {
           "id": 203,
@@ -16480,7 +16480,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The librarian asked","\"Has anyone seen","the missing copy of","Charlotte's Web?\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'asked' to introduce the speech — it should be 'The librarian asked, \"Has...' When a character speaks, put a comma before the opening speech marks to separate the speaker from what they say. ✓"
         },
         {
           "id": 205,
@@ -16500,7 +16500,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Dad announced","\"We're going on","holiday to France","this summer!\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'announced' to introduce the speech — it should be 'Dad announced, \"We're...' When a character speaks, put a comma before the opening speech marks to separate the speaker from what they say. ✓"
         },
         {
           "id": 207,
@@ -17170,7 +17170,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The play which","was written by","Year Five, was","performed for parents."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'play' — it should be 'The play, which'. The phrase 'which was written by Year Five' is extra information (a relative clause) that could be removed without changing the main meaning. Extra information like this needs commas around it: 'The play, which was written by Year Five, was performed for parents.' ✓"
         },
         {
           "id": 274,
@@ -17180,7 +17180,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The building which","dated back to","Tudor times, was","now a museum."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'building' to open the relative clause. 'Which dated back to Tudor times' is extra information about the building that could be removed, so it needs commas around it. Corrected: 'The building, which dated back to Tudor times, was now a museum.' ✓"
         },
         {
           "id": 275,
@@ -17270,7 +17270,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["My friend's mother","Mrs Wilson who","works at the hospital,","picked us up."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'Wilson' to open the relative clause. 'Who works at the hospital' is extra information about Mrs Wilson that could be removed, so it needs commas around it. Corrected: 'My friend's mother, Mrs Wilson, who works at the hospital, picked us up.' ✓"
         },
         {
           "id": 284,
@@ -17340,7 +17340,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Our class teacher","Miss Clark who","is very kind,","helped us with the project."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'Clark' to open the relative clause. 'Who is very kind' is extra information about Miss Clark that could be removed, so it needs commas around it. Corrected: 'Our class teacher, Miss Clark, who is very kind, helped us with the project.' ✓"
         },
         {
           "id": 291,
@@ -17370,7 +17370,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The twins, Ella and","Mia who are in","Year Four, both love","reading."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'Mia' — it should be 'Mia, who are in'. The phrase 'who are in Year Four' is extra information (a relative clause) that tells us more about the twins. Extra information like this needs commas around it: 'Ella and Mia, who are in Year Four, both love reading.' ✓"
         },
         {
           "id": 294,
@@ -17390,7 +17390,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The Year Six pupils,","who sat their SATs","last week are","celebrating today."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'week' to close the relative clause. 'Who sat their SATs last week' is extra information about the pupils that could be removed — it already has an opening comma, but needs a closing comma too. Corrected: 'The Year Six pupils, who sat their SATs last week, are celebrating today.' ✓"
         },
         {
           "id": 296,
@@ -17410,7 +17410,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The old oak tree","which had stood","for centuries was","finally cut down."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'centuries' to close the relative clause. 'Which had stood for centuries' is extra information about the tree that could be removed, so it needs commas around it. The error in Section C is the missing closing comma. Corrected: 'The old oak tree, which had stood for centuries, was finally cut down.' ✓"
         },
         {
           "id": 298,
@@ -17430,7 +17430,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["My best friend,","Amira, who lives","next door is coming","to my party."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'door' to close the relative clause. 'Who lives next door' is extra information about Amira that could be removed, so it needs a closing comma. Corrected: 'My best friend, Amira, who lives next door, is coming to my party.' ✓"
         },
         {
           "id": 300,
@@ -17490,7 +17490,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The children,","who had brought","wellies were allowed","to go on the muddy walk."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'wellies' to close the relative clause. 'Who had brought wellies' is extra information about the children that could be removed — it already has an opening comma, but needs a closing comma too. Corrected: 'The children, who had brought wellies, were allowed to go on the muddy walk.' ✓"
         },
         {
           "id": 306,
@@ -18010,7 +18010,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We need bread milk","eggs and butter","from the shop","on the way home."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "Commas are needed between the items in this list — it should be 'bread, milk, eggs and butter'. When you list three or more things, put a comma between each item (except before 'and' at the end). ✓"
         },
         {
           "id": 358,
@@ -18150,7 +18150,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The old bridge which","was built in 1850","is now a protected","historical monument."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'bridge': 'The old bridge, which was built in 1850, is now a protected historical monument.' The phrase 'which was built in 1850' is extra information — you could remove it and the sentence still works. Extra information like this needs commas at both ends, like brackets. ✓"
         },
         {
           "id": 372,
@@ -18310,7 +18310,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Come here\" called","Mum from the","kitchen, \"your dinner","is ready now.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'here' inside the speech marks — it should be '\"Come here,\" called Mum'. When speech is interrupted by who is speaking, the first part of the speech needs a comma before the closing speech marks. ✓"
         },
         {
           "id": 388,
@@ -18380,7 +18380,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The teacher said","\"Please open your","books to page twelve","and begin reading.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
+          "explanation": "A comma is needed after 'said' to introduce the speech — it should be 'The teacher said, \"Please...' When a character speaks, put a comma before the opening speech marks to separate the speaker from what they say. ✓"
         },
         {
           "id": 395,
@@ -18557,10 +18557,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["You will need the","following, a pen","a ruler and","a calculator."],
+          "segments": ["You will need the","following: a pen","a ruler and","a calculator."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "explanation": "A comma is needed after 'pen' to separate the items in the list — it should be 'a pen, a ruler and a calculator'. When you list three or more things, put a comma between each item (except before 'and'). ✓"
         },
         {
           "id": 413,

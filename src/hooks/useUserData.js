@@ -215,10 +215,12 @@ export default function useUserData(userName) {
 
   const saveMockTestResult = useCallback((result) => {
     if (!userName) return;
-    const updated = [...mockTestHistory, result];
-    setMockTestHistory(updated);
-    saveJSON(userKey(userName, 'mock-test-history'), updated);
-  }, [userName, mockTestHistory]);
+    setMockTestHistory(prev => {
+      const updated = [...prev, result];
+      saveJSON(userKey(userName, 'mock-test-history'), updated);
+      return updated;
+    });
+  }, [userName]);
 
   const saveLessonHistory = useCallback((updated) => {
     if (!userName) return;
@@ -228,18 +230,22 @@ export default function useUserData(userName) {
 
   const saveQuestionResult = useCallback((result) => {
     if (!userName) return;
-    // Rolling window: keep last 5000 results to prevent localStorage bloat
-    const updated = [...questionResults, result].slice(-5000);
-    setQuestionResults(updated);
-    saveJSON(userKey(userName, 'question-results'), updated);
-  }, [userName, questionResults]);
+    // Use functional updater to avoid stale closure when called rapidly in a loop
+    setQuestionResults(prev => {
+      const updated = [...prev, result].slice(-5000);
+      saveJSON(userKey(userName, 'question-results'), updated);
+      return updated;
+    });
+  }, [userName]);
 
   const savePracticeSession = useCallback((session) => {
     if (!userName) return;
-    const updated = [...practiceLog, session];
-    setPracticeLog(updated);
-    saveJSON(userKey(userName, 'practice-log'), updated);
-  }, [userName, practiceLog]);
+    setPracticeLog(prev => {
+      const updated = [...prev, session];
+      saveJSON(userKey(userName, 'practice-log'), updated);
+      return updated;
+    });
+  }, [userName]);
 
   const saveStreakData = useCallback((data) => {
     if (!userName) return;

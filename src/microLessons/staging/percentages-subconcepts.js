@@ -3259,7 +3259,7 @@ export const percentagesSubConcepts = [
         ],
         variableSets: [
           {
-            name: "Jake",
+            name: "Jake", pronoun: "He",
             salePrice: 240, discount: 20,
             wrongOriginal: 288, correctOriginal: 300,
             mistake: "found 20% of \u00a3240 (\u00a348) and added it back on — but \u00a3240 is NOT 100%, it's 80%!",
@@ -3267,15 +3267,15 @@ export const percentagesSubConcepts = [
             interactSalePrice: 320, interactDiscount: 20, interactCorrectOriginal: 400
           },
           {
-            name: "Rosie",
+            name: "Rosie", pronoun: "She",
             salePrice: 150, discount: 25,
-            wrongOriginal: 187.5, correctOriginal: 200,
+            wrongOriginal: "187.50", correctOriginal: 200,
             mistake: "found 25% of \u00a3150 (\u00a337.50) and added it on — but \u00a3150 is 75% of the original, not 100%",
             wrongMethod: "\u00a3150 + 25% of \u00a3150 = \u00a3150 + \u00a337.50 = \u00a3187.50",
             interactSalePrice: 225, interactDiscount: 25, interactCorrectOriginal: 300
           },
           {
-            name: "Alfie",
+            name: "Alfie", pronoun: "He",
             salePrice: 180, discount: 10,
             wrongOriginal: 198, correctOriginal: 200,
             mistake: "found 10% of \u00a3180 (\u00a318) and added it back — but \u00a3180 represents 90%, not 100%",
@@ -3287,7 +3287,7 @@ export const percentagesSubConcepts = [
           {
             type: "hook",
             title: (v) => `${v.name}'s reverse percentage trap!`,
-            body: (v) => `${v.name} paid **\u00a3${v.salePrice}** after **${v.discount}% off**. He worked out the original price like this:\n\n${v.wrongMethod}\n\nBut something's wrong...`,
+            body: (v) => `${v.name} paid **\u00a3${v.salePrice}** after **${v.discount}% off**. ${v.pronoun} worked out the original price like this:\n\n${v.wrongMethod}\n\nBut something's wrong...`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({

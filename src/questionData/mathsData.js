@@ -164,7 +164,7 @@ const mathsData = {
           {
             id: 20,
             difficulty: 3,
-            question: "A jacket originally cost £75. After two successive discounts of 10% and then 10%, what is the final price?",
+            question: "A jacket originally cost £75. It is reduced by 10%, and then the new price is reduced by 10% again. What is the final price?",
             options: ["£60.00", "£67.50", "£61.25", "£61.50", "£60.75"],
             correct: 4,
             explanation: "First discount: 10% of £75 = £7.50, so price = £67.50. Second discount: 10% of £67.50 = £6.75, so final price = £67.50 - £6.75 = £60.75. ✓ Remember: two 10% discounts don't equal 20%!"
@@ -7704,7 +7704,6 @@ fractions: {
     {
       id: 4,
       difficulty: 2,
-      image: "fractions/bar-model-q4.svg",
       question: "Which of these fractions is the largest? 2/5, 3/10, 1/2, 3/5, 4/10",
       options: ["3/5", "3/10", "1/2", "2/5", "4/10"],
       correct: 0,
@@ -21024,8 +21023,8 @@ anglesshapes: {
     },
     {
       id: 15,
-      visual: { component: "ExteriorAngle", props: { angle1: 70, angle2: 50, angle3: 60, showExterior: true, exteriorLabel: "120°" } },
       difficulty: 2,
+      visual: { component: "ExteriorAngle", props: { angle1: 70, angle2: 50, angle3: 60, showExterior: true, exteriorLabel: "120°", angle2Label: "y°" } },
       question: "Mia finds that an exterior angle of a triangle is 120°. The two interior opposite angles are 70° and y°. What is y?",
       image: "angles-shapes/exterior-q15.svg",
       options: ["40°", "50°", "45°", "55°", "60°"],
@@ -21242,9 +21241,8 @@ anglesshapes: {
     {
       id: 37,
       difficulty: 3,
-      visual: { component: "ExteriorAngle", props: { angle1: 68, angle2: 67, angle3: 45, showExterior: true, exteriorLabel: "135°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 68, angle2: 67, angle3: 45, showExterior: true, exteriorLabel: "135°", angle2Label: "m°" } },
       question: "An exterior angle of a triangle measures 135°. Two interior opposite angles are 68° and m°. What is m?",
-      image: "angles-shapes/exterior-q37.svg",
       options: ["57°", "62°", "72°", "67°", "77°"],
       correct: 3,
       explanation: "An exterior angle of a triangle equals the sum of the two opposite interior angles. So 68° + m = 135°. Therefore m = 135 - 68 = 67°. ✓"
@@ -21331,9 +21329,8 @@ anglesshapes: {
     {
       id: 46,
       difficulty: 3,
-      visual: { component: "ExteriorAngle", props: { angle1: 79, angle2: 69, angle3: 32, showExterior: true, exteriorLabel: "148°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 79, angle2: 69, angle3: 32, showExterior: true, exteriorLabel: "148°", angle2Label: "d°" } },
       question: "An exterior angle of a triangle is 148°. The two opposite interior angles are 79° and d°. What is d?",
-      image: "angles-shapes/exterior-q46.svg",
       options: ["59°", "64°", "69°", "74°", "79°"],
       correct: 2,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 79° + d = 148°. Therefore d = 148 - 79 = 69°. ✓"
@@ -21469,9 +21466,8 @@ anglesshapes: {
     {
       id: 60,
       difficulty: 3,
-      visual: { component: "ExteriorAngle", props: { angle1: 88, angle2: 68, angle3: 24, showExterior: true, exteriorLabel: "156°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 88, angle2: 68, angle3: 24, showExterior: true, exteriorLabel: "156°", angle2Label: "k°" } },
       question: "An exterior angle of a triangle is 156°. The two opposite interior angles are 88° and k°. What is k?",
-      image: "angles-shapes/exterior-q60.svg",
       options: ["58°", "68°", "63°", "73°", "78°"],
       correct: 1,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 88° + k = 156°. Therefore k = 156 - 88 = 68°. ✓"
@@ -21598,9 +21594,8 @@ anglesshapes: {
     {
       id: 73,
       difficulty: 3,
-      visual: { component: "ExteriorAngle", props: { angle1: 95, angle2: 67, angle3: 18, showExterior: true, exteriorLabel: "162°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 95, angle2: 67, angle3: 18, showExterior: true, exteriorLabel: "162°", angle2Label: "w°" } },
       question: "An exterior angle of a triangle is 162°. The two opposite interior angles are 95° and w°. What is w?",
-      image: "angles-shapes/exterior-q73.svg",
       options: ["57°", "62°", "77°", "72°", "67°"],
       correct: 4,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 95° + w = 162°. Therefore w = 162 - 95 = 67°. ✓"
@@ -21737,9 +21732,8 @@ anglesshapes: {
     {
       id: 87,
       difficulty: 3,
-      visual: { component: "ExteriorAngle", props: { angle1: 76, angle2: 65, angle3: 39, showExterior: true, exteriorLabel: "141°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 76, angle2: 65, angle3: 39, showExterior: true, exteriorLabel: "141°", angle2Label: "f°" } },
       question: "An exterior angle of a triangle is 141°. The two opposite interior angles are 76° and f°. What is f?",
-      image: "angles-shapes/exterior-q87.svg",
       options: ["55°", "60°", "70°", "65°", "75°"],
       correct: 3,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 76° + f = 141°. Therefore f = 141 - 76 = 65°. ✓"
@@ -21867,9 +21861,8 @@ anglesshapes: {
     {
       id: 100,
       difficulty: 2,
-      visual: { component: "ExteriorAngle", props: { angle1: 64, angle2: 64, angle3: 52, showExterior: true, exteriorLabel: "128°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 64, angle2: 64, angle3: 52, showExterior: true, exteriorLabel: "128°", angle2Label: "p°" } },
       question: "An exterior angle of a triangle is 128°. The two opposite interior angles are 64° and p°. What is p?",
-      image: "angles-shapes/exterior-q100.svg",
       options: ["54°", "64°", "59°", "69°", "74°"],
       correct: 1,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 64° + p = 128°. Therefore p = 128 - 64 = 64°. ✓"
@@ -21976,9 +21969,8 @@ anglesshapes: {
     {
       id: 111,
       difficulty: 3,
-      visual: { component: "ExteriorAngle", props: { angle1: 82, angle2: 68, angle3: 30, showExterior: true, exteriorLabel: "150°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 82, angle2: 68, angle3: 30, showExterior: true, exteriorLabel: "150°", angle2Label: "v°" } },
       question: "An exterior angle of a triangle is 150°. The two opposite interior angles are 82° and v°. What is v?",
-      image: "angles-shapes/exterior-q111.svg",
       options: ["58°", "63°", "68°", "73°", "78°"],
       correct: 2,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 82° + v = 150°. Therefore v = 150 - 82 = 68°. ✓"
@@ -22400,7 +22392,6 @@ anglesshapes: {
     {
       id: 154,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 181, label: "181°", color: "#6C5CE7"}], size: 200 } },
       question: "Which of these angles is reflex?",
       options: ["181°", "91°", "179°", "89°", "90°"],
       correct: 0,
@@ -22421,7 +22412,7 @@ anglesshapes: {
     {
       id: 156,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "ClockFace", props: { hourHand: 4, minuteHand: 12 } },
       question: "A clock shows 4 o'clock. What type of angle is formed between the hour hand and the minute hand?",
       options: ["Acute", "Right", "Obtuse", "Straight", "Reflex"],
       correct: 2,
@@ -22430,7 +22421,7 @@ anglesshapes: {
     {
       id: 157,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 270, label: "270°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "ClockFace", props: { hourHand: 12, minuteHand: 9, showAngle: true, angleLabel: "?" } },
       question: "The minute hand of a clock turns from 12 to 9. How many degrees does it turn through, and what type of angle is this?",
       options: ["90° — a right angle", "180° — a straight angle", "240° — a reflex angle", "270° — a reflex angle", "360° — a full turn"],
       correct: 3,
@@ -22629,7 +22620,7 @@ anglesshapes: {
     {
       id: 180,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 240, label: "?", color: "#FDCB6E"}, {value: 120, label: "120°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "ClockFace", props: { hourHand: 12, minuteHand: 8, showAngle: true, angleLabel: "?" } },
       question: "The minute hand of a clock points at 12. It turns clockwise to point at 8. What angle has it turned through?",
       options: ["200°", "240°", "220°", "260°", "280°"],
       correct: 1,
@@ -22647,7 +22638,7 @@ anglesshapes: {
     {
       id: 182,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 150, label: "?", color: "#FDCB6E"}, {value: 210, label: "210°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "ClockFace", props: { hourHand: 12, minuteHand: 5, showAngle: true, angleLabel: "?" } },
       question: "The minute hand of a clock points at 12. It turns clockwise to point at 5. What angle has it turned through?",
       options: ["120°", "130°", "140°", "150°", "160°"],
       correct: 3,
@@ -22982,7 +22973,7 @@ anglesshapes: {
     {
       id: 215,
       difficulty: 2,
-      visual: { component: "ExteriorAngle", props: { angle1: 55, angle2: 55, angle3: 70, showExterior: true, exteriorLabel: "110°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 55, angle2: 55, angle3: 70, showExterior: true, exteriorLabel: "110°", angle1Label: "?", angle2Label: "?" } },
       question: "The exterior angle of a triangle is 110°. The two non-adjacent interior angles are equal. What is each one?",
       options: ["45°", "55°", "50°", "60°", "65°"],
       correct: 1,
@@ -22991,7 +22982,7 @@ anglesshapes: {
     {
       id: 216,
       difficulty: 2,
-      visual: { component: "ExteriorAngle", props: { angle1: 62, angle2: 62, angle3: 56, showExterior: true, exteriorLabel: "124°" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 62, angle2: 62, angle3: 56, showExterior: true, exteriorLabel: "124°", angle1Label: "?", angle2Label: "?" } },
       question: "The exterior angle of a triangle is 124°. The two non-adjacent interior angles are equal. What is each one?",
       options: ["52°", "57°", "62°", "67°", "72°"],
       correct: 2,

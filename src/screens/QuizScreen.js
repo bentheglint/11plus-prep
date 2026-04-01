@@ -51,9 +51,9 @@ function QuizScreen({
                   {quizTitle} — Question {currentQuestionIndex + 1} of {quizQuestions.length}
                 </span>
                 <div className="flex items-center gap-2">
-                  {timerEnabled && (
-                    <Timer mode="elapsed" resetKey={currentQuestionIndex} />
-                  )}
+                  <div style={{ display: timerEnabled ? 'block' : 'none' }}>
+                    <Timer mode="elapsed" />
+                  </div>
                   <button
                     onClick={() => setTimerEnabled(!timerEnabled)}
                     className={`p-1.5 rounded-lg transition-colors ${timerEnabled ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
@@ -104,13 +104,31 @@ function QuizScreen({
 
               {/* Passage rendering for comprehension questions */}
               {currentQuestion.questionType === 'passage' && currentQuestion.passage && (
-                <div className="mb-6 bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto">
-                  <div className="flex items-center gap-2 mb-2">
-                    <BookOpen className="w-4 h-4 text-[#F39C12]" />
-                    <span className="text-sm font-heading font-bold text-[#2D3436]">{currentQuestion.passageTitle}</span>
+                <div className="mb-6 relative">
+                  <div className="bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto scroll-passage"
+                    onScroll={(e) => {
+                      const el = e.target;
+                      const indicator = el.parentElement.querySelector('.scroll-hint');
+                      if (indicator) indicator.style.opacity = (el.scrollHeight - el.scrollTop - el.clientHeight > 10) ? '1' : '0';
+                    }}
+                    ref={(el) => {
+                      if (el) {
+                        const indicator = el.parentElement.querySelector('.scroll-hint');
+                        if (indicator) indicator.style.opacity = (el.scrollHeight > el.clientHeight) ? '1' : '0';
+                      }
+                    }}
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <BookOpen className="w-4 h-4 text-[#F39C12]" />
+                      <span className="text-sm font-heading font-bold text-[#2D3436]">{currentQuestion.passageTitle}</span>
+                    </div>
+                    <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
+                      {currentQuestion.passage}
+                    </div>
                   </div>
-                  <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
-                    {currentQuestion.passage}
+                  <div className="scroll-hint absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#FFF8E8] to-transparent rounded-b-xl pointer-events-none flex items-end justify-center pb-1 transition-opacity"
+                    style={{ opacity: 0 }}>
+                    <span className="text-[10px] font-bold text-[#F39C12] animate-bounce">▼ Scroll for more</span>
                   </div>
                 </div>
               )}
@@ -279,7 +297,7 @@ function QuizScreen({
                 );
               })()}
               
-              {(!currentQuestion.questionType || currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'error-spotting') ? (
+              {(!currentQuestion.questionType || currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'error-spotting' || currentQuestion.questionType === 'letter-codes') ? (
                 <div className="space-y-3 stagger-children">
                   {currentQuestion.options.map((option, idx) => {
                     const letter = String.fromCharCode(65 + idx);

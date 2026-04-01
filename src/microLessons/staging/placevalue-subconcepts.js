@@ -1604,6 +1604,7 @@ export const placevalueSubConcepts = [
         variableSets: [
           {
             name: "Daisy",
+            pronoun: "She",
             scenario: "measures the length of her desk in metres",
             number: 1.47,
             numberStr: "1.47",
@@ -1630,6 +1631,7 @@ export const placevalueSubConcepts = [
           },
           {
             name: "Oscar",
+            pronoun: "He",
             scenario: "weighs a parcel at the post office",
             number: 3.65,
             numberStr: "3.65",
@@ -1656,6 +1658,7 @@ export const placevalueSubConcepts = [
           },
           {
             name: "Lily",
+            pronoun: "She",
             scenario: "records her 100m sprint time",
             number: 14.83,
             numberStr: "14.83",
@@ -1685,7 +1688,7 @@ export const placevalueSubConcepts = [
           {
             type: "hook",
             title: (v) => `Round ${v.numberStr} to the ${v.roundTo}`,
-            body: (v) => `${v.name} ${v.scenario} and gets **${v.numberStr} ${v.unit}**. She needs to round it to the **${v.roundTo}**. The method is exactly the same as rounding whole numbers!`,
+            body: (v) => `${v.name} ${v.scenario} and gets **${v.numberStr} ${v.unit}**. ${v.pronoun} needs to round it to the **${v.roundTo}**. The method is exactly the same as rounding whole numbers!`,
             visual: {
               component: "NumberLine",
               props: (v) => ({
@@ -2827,6 +2830,7 @@ export const placevalueSubConcepts = [
         variableSets: [
           {
             name: "Holly",
+            pronoun: "She",
             scenario: "tries to make the smallest number from these digits",
             digits: [5, 0, 3, 8, 0],
             digitsStr: "5, 0, 3, 8, 0",
@@ -2840,6 +2844,7 @@ export const placevalueSubConcepts = [
           },
           {
             name: "Finn",
+            pronoun: "He",
             scenario: "has digit cards with a zero",
             digits: [7, 0, 2, 9, 1],
             digitsStr: "7, 0, 2, 9, 1",
@@ -2853,6 +2858,7 @@ export const placevalueSubConcepts = [
           },
           {
             name: "Lily",
+            pronoun: "She",
             scenario: "picks digit tiles for a game",
             digits: [4, 0, 6, 0, 2],
             digitsStr: "4, 0, 6, 0, 2",
@@ -2869,7 +2875,7 @@ export const placevalueSubConcepts = [
           {
             type: "hook",
             title: (v) => `The zero trap!`,
-            body: (v) => `${v.name} ${v.scenario}: **${v.digitsStr}**. She sorts them smallest first: **${v.sortedAsc.join(', ')}** and writes **${v.wrongSmallest}**.\n\nBut wait — that starts with zero! Is it really a 5-digit number?`,
+            body: (v) => `${v.name} ${v.scenario}: **${v.digitsStr}**. ${v.pronoun} sorts them smallest first: **${v.sortedAsc.join(', ')}** and writes **${v.wrongSmallest}**.\n\nBut wait — that starts with zero! Is it really a 5-digit number?`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({

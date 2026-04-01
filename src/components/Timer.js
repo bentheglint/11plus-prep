@@ -12,9 +12,9 @@ function Timer({ totalSeconds, onTimeUp, mode = 'countdown', resetKey, className
     }
   }, [totalSeconds, mode]);
 
-  // Reset elapsed timer when resetKey changes (e.g. on question change)
+  // Reset elapsed timer when resetKey changes (e.g. for per-question timing)
   useEffect(() => {
-    if (mode === 'elapsed') {
+    if (mode === 'elapsed' && resetKey !== undefined) {
       setRemaining(0);
     }
   }, [resetKey, mode]);

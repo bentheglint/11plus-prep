@@ -6054,13 +6054,13 @@ const vrData = {
                       question: "Which word can go after both 'black' and 'blue' to make two new words?",
                       options: [
                               "Berry",
-                              "Bird",
+                              "Spot",
                               "Sky",
                               "Light",
                               "Bell"
                       ],
                       correct: 0,
-                      explanation: "Black + berry = blackberry, and blue + berry = blueberry. Both are types of fruit and common compound words. ✓"
+                      explanation: "Black + berry = blackberry, and blue + berry = blueberry. Both are types of fruit and common compound words. 'Spot' works with 'black' (blackspot) but not with 'blue'. ✓"
               },
               {
                       id: 5,
@@ -6083,12 +6083,12 @@ const vrData = {
                       options: [
                               "Step",
                               "Print",
-                              "Board",
+                              "Bridge",
                               "Ball",
                               "Line"
                       ],
                       correct: 3,
-                      explanation: "Foot + ball = football, base + ball = baseball. Both are sports. ✓"
+                      explanation: "Foot + ball = football, base + ball = baseball. Both are sports. 'Bridge' works with 'foot' (footbridge) but not with 'base'. ✓"
               },
               {
                       id: 7,
@@ -6249,14 +6249,14 @@ const vrData = {
                       difficulty: 1,
                       question: "Which word can go in front of both 'berry' and 'bird' to make two new words?",
                       options: [
-                              "Blue",
+                              "Goose",
                               "Green",
                               "Red",
                               "Snow",
                               "Black"
                       ],
                       correct: 4,
-                      explanation: "Black + berry = blackberry, black + bird = blackbird. ✓"
+                      explanation: "Black + berry = blackberry, black + bird = blackbird. 'Goose' works with 'berry' (gooseberry) but not with 'bird'. ✓"
               },
               {
                       id: 19,
@@ -6707,9 +6707,9 @@ const vrData = {
                       id: 73,
                       difficulty: 2,
                       question: "Which word can go after both 'sea' and 'lake' to make two new words?",
-                      options: ["Bank","Bed","Front","Tide","Shore"],
+                      options: ["Bank","Bed","Gull","Tide","Shore"],
                       correct: 4,
-                      explanation: "Sea + shore = seashore, and lake + shore = lakeshore. Both are common compound words. ✓"
+                      explanation: "Sea + shore = seashore, and lake + shore = lakeshore. Both are common compound words. 'Gull' works with 'sea' (seagull) but not with 'lake'. ✓"
               },
               {
                       id: 74,
@@ -6851,9 +6851,9 @@ const vrData = {
                       id: 91,
                       difficulty: 3,
                       question: "Which word can go after both 'hard' and 'soft' to make two new words?",
-                      options: ["Ball","Core","Wood","Back","Ware"],
+                      options: ["Lime","Peel","Wood","Leaf","Coin"],
                       correct: 2,
-                      explanation: "Hard + wood = hardwood, and soft + wood = softwood. Both are common compound words. ✓"
+                      explanation: "Hard + wood = hardwood, and soft + wood = softwood. Both are common compound words. None of the other options form valid compounds with both 'hard' and 'soft'. ✓"
               },
               {
                       id: 92,
@@ -11411,6 +11411,7 @@ const vrData = {
               {
                       id: 1,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for HELP is GDKO, what rule has been used?",
                       options: [
                               "Each letter moves forward 1",
@@ -11425,6 +11426,7 @@ const vrData = {
               {
                       id: 2,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If COLD is coded as DPME, what is WARM coded as?",
                       options: [
             "XBSN",
@@ -11439,6 +11441,7 @@ const vrData = {
               {
                       id: 3,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for GAME is HBNF, what rule has been used?",
                       options: [
             "Each letter moves forward 2",
@@ -11453,6 +11456,7 @@ const vrData = {
               {
                       id: 4,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If BOAT is coded as ERDW, what word is coded as VKLS?",
                       options: [
             "SHIM",
@@ -11467,6 +11471,7 @@ const vrData = {
               {
                       id: 5,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If RAIN is coded as UDLQ, what is SNOW coded as?",
                       options: [
             "VQSZ",
@@ -11481,6 +11486,7 @@ const vrData = {
               {
                       id: 6,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If TREE is coded as WUHH, what word is coded as FROG?",
                       options: [
             "COOL",
@@ -11495,6 +11501,7 @@ const vrData = {
               {
                       id: 7,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for STAR is TUBS, what rule has been used?",
                       options: [
             "First and last letters swap",
@@ -11509,6 +11516,7 @@ const vrData = {
               {
                       id: 8,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If CAT is coded as DBU, what is the code for DOG?",
                       options: [
             "CPH",
@@ -11523,6 +11531,7 @@ const vrData = {
               {
                       id: 9,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If DOG is coded as CNF, what is the code for SUN?",
                       options: [
             "RTN",
@@ -11537,6 +11546,7 @@ const vrData = {
               {
                       id: 10,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If LOG is coded as MPH, what word is coded as EPH?",
                       options: [
             "FOG",
@@ -11551,6 +11561,7 @@ const vrData = {
               {
                       id: 11,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If SUN is coded as RTM, what is the code for PEN?",
                       options: [
             "PCM",
@@ -11565,6 +11576,7 @@ const vrData = {
               {
                       id: 12,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If PEN is coded as RGP, what is the code for HAT?",
                       options: [
             "ICV",
@@ -11579,6 +11591,7 @@ const vrData = {
               {
                       id: 13,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If FIG is coded as DGE, what word is coded as AMP?",
                       options: [
             "COP",
@@ -11593,6 +11606,7 @@ const vrData = {
               {
                       id: 14,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If JUMP is coded as KVNQ, what is LAND coded as?",
                       options: [
             "MBOE",
@@ -11607,6 +11621,7 @@ const vrData = {
               {
                       id: 15,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If BARN is coded as DCTP, what is the code for BORN?",
                       options: [
             "DPTP",
@@ -11621,6 +11636,7 @@ const vrData = {
               {
                       id: 16,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If DUSK is coded as GXVN, what is the code for DESK?",
                       options: [
             "GFVN",
@@ -11635,6 +11651,7 @@ const vrData = {
               {
                       id: 17,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If FISH is coded as ILVK, what word is coded as ORYH?",
                       options: [
             "LOSE",
@@ -11649,6 +11666,7 @@ const vrData = {
               {
                       id: 18,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If MILK is coded as PLON, what word is coded as IROG?",
                       options: [
             "FOOD",
@@ -11663,6 +11681,7 @@ const vrData = {
               {
                       id: 19,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If GIFT is coded as JLIW, what is the code for WISH?",
                       options: [
             "ZLUK",
@@ -11677,6 +11696,7 @@ const vrData = {
               {
                       id: 20,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If LAMP is coded as JYKN, what is the code for FIRE?",
                       options: [
             "DGPD",
@@ -11692,6 +11712,7 @@ const vrData = {
               {
                       id: 21,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If LOG is coded as MPH, what is the code for CAT?",
                       options: ["CBU", "DCU", "DAU", "DBT", "DBU"],
                       correct: 4,
@@ -11700,6 +11721,7 @@ const vrData = {
               {
                       id: 22,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If FIG is coded as GJH, what is the code for DOG?",
                       options: ["EPH","EPG","CPH","EOH","DPH"],
                       correct: 0,
@@ -11708,6 +11730,7 @@ const vrData = {
               {
                       id: 23,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If CAT is coded as BZS, what is the code for SUN?",
                       options: ["RTN","RTM","RUM","RVM","STM"],
                       correct: 1,
@@ -11716,6 +11739,7 @@ const vrData = {
               {
                       id: 24,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If DOG is coded as EPH, what is the code for PEN?",
                       options: ["QEO","PFO","QFO","QFN","QGO"],
                       correct: 2,
@@ -11724,6 +11748,7 @@ const vrData = {
               {
                       id: 25,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If SUN is coded as RTM, what is the code for CUP?",
                       options: ["BUO","DVQ","BTP","BTO","CTO"],
                       correct: 3,
@@ -11732,6 +11757,7 @@ const vrData = {
               {
                       id: 26,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If PEN is coded as QFO, what is the code for HAT?",
                       options: ["IBV","IAU","HBU","ICU","IBU"],
                       correct: 4,
@@ -11740,6 +11766,7 @@ const vrData = {
               {
                       id: 27,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If HAT is coded as IBU, what is the code for BED?",
                       options: ["CFE","CFF","BFE","CEE","CGE"],
                       correct: 0,
@@ -11748,6 +11775,7 @@ const vrData = {
               {
                       id: 28,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If BUS is coded as ATR, what is the code for RUN?",
                       options: ["QTN","QTM","RTM","STM","QUM"],
                       correct: 1,
@@ -11756,6 +11784,7 @@ const vrData = {
               {
                       id: 29,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If DOG is coded as EPH, what word is coded as SVO?",
                       options: ["RUM","RUG","RUN","RUT","TUN"],
                       correct: 2,
@@ -11764,6 +11793,7 @@ const vrData = {
               {
                       id: 30,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If SUN is coded as TVO, what word is coded as HFU?",
                       options: ["GEM","SET","JET","GET","NET"],
                       correct: 3,
@@ -11772,6 +11802,7 @@ const vrData = {
               {
                       id: 31,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If PEN is coded as ODM, what word is coded as GHS?",
                       options: ["HIS","HIP","HID","HIM","HIT"],
                       correct: 4,
@@ -11780,6 +11811,7 @@ const vrData = {
               {
                       id: 32,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If HAT is coded as IBU, what word is coded as CBU?",
                       options: ["BAT","BAD","BAN","BAR","BAG"],
                       correct: 0,
@@ -11788,6 +11820,7 @@ const vrData = {
               {
                       id: 33,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If BUS is coded as ATR, what word is coded as OHM?",
                       options: ["PIG","PIN","PIE","PIT","PIR"],
                       correct: 1,
@@ -11796,6 +11829,7 @@ const vrData = {
               {
                       id: 34,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If JAM is coded as KBN, what word is coded as GPY?",
                       options: ["FIG","FLY","FOX","FUN","FAR"],
                       correct: 2,
@@ -11804,6 +11838,7 @@ const vrData = {
               {
                       id: 35,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If CUP is coded as BTO, what word is coded as QDC?",
                       options: ["REF","RID","ROD","RED","RUG"],
                       correct: 3,
@@ -11812,6 +11847,7 @@ const vrData = {
               {
                       id: 36,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If MIST is coded as NJTU, what word is coded as CVTL?",
                       options: ["BULK","BUST","BUMP","BURN","BUSK"],
                       correct: 4,
@@ -11820,6 +11856,7 @@ const vrData = {
               {
                       id: 37,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for PIG is QJH, what rule has been used?",
                       options: ["Each letter moves back 1", "Each letter moves forward 1", "Each letter moves forward 2", "Each letter moves back 2", "Letters are reversed"],
                       correct: 1,
@@ -11828,6 +11865,7 @@ const vrData = {
               {
                       id: 38,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for BIG is AHF, what rule has been used?",
                       options: ["Each letter moves forward 1","Each letter moves back 1","Each letter moves back 2","Each letter moves forward 2","Letters are doubled"],
                       correct: 1,
@@ -11836,6 +11874,7 @@ const vrData = {
               {
                       id: 39,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for HEN is IFO, what rule has been used?",
                       options: ["Each letter moves back 1","Each letter moves forward 2","Each letter moves forward 1","Each letter moves back 2","Letters are swapped"],
                       correct: 2,
@@ -11844,6 +11883,7 @@ const vrData = {
               {
                       id: 40,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for TOP is SNO, what rule has been used?",
                       options: ["Each letter moves forward 1","Each letter moves back 2","Each letter moves forward 2","Each letter moves back 1","Letters are reversed"],
                       correct: 3,
@@ -11852,6 +11892,7 @@ const vrData = {
               {
                       id: 41,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for DIP is EJQ, what rule has been used?",
                       options: ["Each letter moves back 2","Letters swap positions","Each letter moves back 1","Each letter moves forward 2","Each letter moves forward 1"],
                       correct: 4,
@@ -11860,6 +11901,7 @@ const vrData = {
               {
                       id: 42,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for TIN is SHM, what rule has been used?",
                       options: ["Each letter moves back 1","Each letter moves forward 1","Each letter moves back 2","Each letter moves forward 2","Letters are reversed"],
                       correct: 0,
@@ -11868,6 +11910,7 @@ const vrData = {
               {
                       id: 43,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for FIG is GJH, what rule has been used?",
                       options: ["Each letter moves back 1","Each letter moves forward 1","Each letter moves forward 2","Each letter moves back 2","Letters are reversed"],
                       correct: 1,
@@ -11876,6 +11919,7 @@ const vrData = {
               {
                       id: 44,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for COT is BNS, what rule has been used?",
                       options: ["Each letter moves forward 1","Letters are reversed","Each letter moves back 1","Each letter moves back 2","Each letter moves forward 2"],
                       correct: 2,
@@ -11884,6 +11928,7 @@ const vrData = {
               {
                       id: 45,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If GIFT is coded as IKHV, what is the code for BIRD?",
                       options: ["DLTF", "DJSF", "DKUF", "DKTF", "DKTE"],
                       correct: 3,
@@ -11892,6 +11937,7 @@ const vrData = {
               {
                       id: 46,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If LAMP is coded as NCOR, what is the code for FISH?",
                       options: ["HLUJ","HJUJ","HKVJ","HKUI","HKUJ"],
                       correct: 4,
@@ -11900,6 +11946,7 @@ const vrData = {
               {
                       id: 47,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If MIST is coded as OKUV, what is the code for TREE?",
                       options: ["VTGH", "VTGF", "VTHG", "VTGG", "VUGG"],
                       correct: 3,
@@ -11908,6 +11955,7 @@ const vrData = {
               {
                       id: 48,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If ROCK is coded as TQEM, what is the code for MOON?",
                       options: ["OQPP","OQQP","OPQP","OQQO","ORRP"],
                       correct: 1,
@@ -11916,6 +11964,7 @@ const vrData = {
               {
                       id: 49,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If FISH is coded as HKUJ, what is the code for HILL?",
                       options: ["JKMN","JLNN","JKNN","JKML","JKNO"],
                       correct: 2,
@@ -11924,6 +11973,7 @@ const vrData = {
               {
                       id: 50,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If HELP is coded as JGNR, what is the code for GATE?",
                       options: ["IBVG", "ICWG", "IDVG", "ICVH", "ICVG"],
                       correct: 4,
@@ -11932,6 +11982,7 @@ const vrData = {
               {
                       id: 51,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If COLD is coded as AMJB, what is the code for HELP?",
                       options: ["FCJO","FCKN","FDJN","ECJN","FCJN"],
                       correct: 4,
@@ -11940,6 +11991,7 @@ const vrData = {
               {
                       id: 52,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If STAR is coded as UVCT, what is the code for ROPE?",
                       options: ["TQSG", "TPRG", "TQRG", "TQRF", "TRRG"],
                       correct: 2,
@@ -11948,6 +12000,7 @@ const vrData = {
               {
                       id: 53,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If BARN is coded as ZYPL, what is the code for NEST?",
                       options: ["LCRR", "LDQR", "LCQR", "LCQS", "MCQR"],
                       correct: 2,
@@ -11956,6 +12009,7 @@ const vrData = {
               {
                       id: 54,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If DUSK is coded as FWUM, what is the code for FROG?",
                       options: ["HTRI","HSQI","HTQI","HUQI","HTQJ"],
                       correct: 2,
@@ -11964,6 +12018,7 @@ const vrData = {
               {
                       id: 55,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If GIFT is coded as EGDR, what is the code for POEM?",
                       options: ["NMDK","NMCL","NLCK","OMCK","NMCK"],
                       correct: 4,
@@ -11972,6 +12027,7 @@ const vrData = {
               {
                       id: 56,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If LAMP is coded as NCOR, what is the code for LION?",
                       options: ["NKQO", "NLQP", "NKRP", "NKQP", "NJQP"],
                       correct: 3,
@@ -11980,6 +12036,7 @@ const vrData = {
               {
                       id: 57,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If ROCK is coded as TQEM, what word is coded as ECUG?",
                       options: ["CASE","CART","CARD","CAPE","CAVE"],
                       correct: 0,
@@ -11988,6 +12045,7 @@ const vrData = {
               {
                       id: 58,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If FISH is coded as HKUJ, what word is coded as NCEM?",
                       options: ["LACE","LACK","LAND","LAME","LAKE"],
                       correct: 1,
@@ -11996,6 +12054,7 @@ const vrData = {
               {
                       id: 59,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If HELP is coded as FCJN, what word is coded as JCDR?",
                       options: ["LETS", "LESS", "LENT", "LEND", "LEFT"],
                       correct: 4,
@@ -12004,6 +12063,7 @@ const vrData = {
               {
                       id: 60,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If COLD is coded as EQNF, what word is coded as TKPI?",
                       options: ["RIND", "RING", "RICH", "RISE", "RIDE"],
                       correct: 1,
@@ -12012,6 +12072,7 @@ const vrData = {
               {
                       id: 61,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If STAR is coded as QRYP, what word is coded as DGQF?",
                       options: ["FILE", "FIST", "FISH", "FILM", "FILL"],
                       correct: 2,
@@ -12020,6 +12081,7 @@ const vrData = {
               {
                       id: 62,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If BARN is coded as DCTP, what word is coded as JQQF?",
                       options: ["HOOD","HOOK","HOOP","HOOF","HOOT"],
                       correct: 0,
@@ -12028,6 +12090,7 @@ const vrData = {
               {
                       id: 63,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If DUSK is coded as FWUM, what word is coded as YKPF?",
                       options: ["WINE","WIND","WILL","WILD","WING"],
                       correct: 1,
@@ -12036,6 +12099,7 @@ const vrData = {
               {
                       id: 64,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If GIFT is coded as EGDR, what word is coded as FCPM?",
                       options: ["HELP","HERD","HERO","HERB","HENS"],
                       correct: 2,
@@ -12044,6 +12108,7 @@ const vrData = {
               {
                       id: 65,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If LAMP is coded as NCOR, what word is coded as EQQM?",
                       options: ["COOL","CORD","COPE","COOK","CORE"],
                       correct: 3,
@@ -12052,6 +12117,7 @@ const vrData = {
               {
                       id: 66,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If MIST is coded as KGQR, what word is coded as NMPI?",
                       options: ["PORT","POND","POUR","POLE","PORK"],
                       correct: 4,
@@ -12060,6 +12126,7 @@ const vrData = {
               {
                       id: 67,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If ROCK is coded as TQEM, what word is coded as NQQR?",
                       options: ["LOOT", "LOOK", "LOOM", "LOOP", "LORE"],
                       correct: 3,
@@ -12068,6 +12135,7 @@ const vrData = {
               {
                       id: 68,
                       difficulty: 2,
+                      questionType: "letter-codes",
                       question: "If FISH is coded as HKUJ, what word is coded as DWEM?",
                       options: ["BULK","BUCK","BURN","BUMP","BULL"],
                       correct: 1,
@@ -12076,6 +12144,7 @@ const vrData = {
               {
                       id: 69,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for HELP is JGNR, what rule has been used?",
                       options: ["Each letter moves forward 1","Each letter moves back 1","Each letter moves forward 2","Each letter moves back 2","Each letter moves forward 3"],
                       correct: 2,
@@ -12084,6 +12153,7 @@ const vrData = {
               {
                       id: 70,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for FROG is DPME, what rule has been used?",
                       options: ["Each letter moves back 3", "Each letter moves forward 2", "Each letter moves back 1", "Each letter moves back 2", "Each letter moves forward 1"],
                       correct: 3,
@@ -12092,6 +12162,7 @@ const vrData = {
               {
                       id: 71,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for GOLD is IQNF, what rule has been used?",
                       options: ["Each letter moves back 1","Each letter moves forward 1","Each letter moves back 2","Each letter moves forward 3","Each letter moves forward 2"],
                       correct: 4,
@@ -12100,6 +12171,7 @@ const vrData = {
               {
                       id: 72,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for MINT is KGLR, what rule has been used?",
                       options: ["Each letter moves back 2","Each letter moves back 1","Each letter moves forward 1","Each letter moves forward 2","Each letter moves forward 3"],
                       correct: 0,
@@ -12108,6 +12180,7 @@ const vrData = {
               {
                       id: 73,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for DESK is FGUM, what rule has been used?",
                       options: ["Each letter moves forward 3","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1","Each letter moves forward 1"],
                       correct: 1,
@@ -12116,6 +12189,7 @@ const vrData = {
               {
                       id: 74,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for PLUM is NJSK, what rule has been used?",
                       options: ["Each letter moves forward 1","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1","Each letter moves back 3"],
                       correct: 2,
@@ -12124,6 +12198,7 @@ const vrData = {
               {
                       id: 75,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for PINE is RKPG, what rule has been used?",
                       options: ["Each letter moves back 2","Each letter moves forward 1","Each letter moves back 1","Each letter moves forward 2","Each letter moves forward 3"],
                       correct: 3,
@@ -12132,6 +12207,7 @@ const vrData = {
               {
                       id: 76,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for WOLF is UMJD, what rule has been used?",
                       options: ["Each letter moves forward 2","Each letter moves forward 1","Each letter moves back 1","Each letter moves forward 3","Each letter moves back 2"],
                       correct: 4,
@@ -12140,6 +12216,7 @@ const vrData = {
               {
                       id: 77,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If CHARM is coded as FKDUP, what is the code for FLAME?",
                       options: ["IODPH", "IODQH", "IOCPH", "IOEPI", "INDPH"],
                       correct: 0,
@@ -12148,6 +12225,7 @@ const vrData = {
               {
                       id: 78,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If GLOBE is coded as DILYB, what is the code for STORM?",
                       options: ["PQLNJ","PQLOJ","PRLOJ","PQMOJ","PQLOK"],
                       correct: 1,
@@ -12156,6 +12234,7 @@ const vrData = {
               {
                       id: 79,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If PLANT is coded as SODQW, what is the code for CROWN?",
                       options: ["FURAQ", "FUSZQ", "FURZQ", "FURZR", "FURYQ"],
                       correct: 2,
@@ -12164,6 +12243,7 @@ const vrData = {
               {
                       id: 80,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If BRICK is coded as YOFZH, what is the code for SWIFT?",
                       options: ["PTECQ", "PTFDQ", "PTFCR", "PTFCQ", "PUFCQ"],
                       correct: 3,
@@ -12172,6 +12252,7 @@ const vrData = {
               {
                       id: 81,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If SHELF is coded as VKHOI, what is the code for TIGER?",
                       options: ["WLKHU", "WLJHV", "WMJHU", "WLJIU", "WLJHU"],
                       correct: 4,
@@ -12180,6 +12261,7 @@ const vrData = {
               {
                       id: 82,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If FROST is coded as IURVW, what is the code for GRAPE?",
                       options: ["JUDTI", "JUDSH", "JUCSH", "JUDSG", "JUESH"],
                       correct: 1,
@@ -12188,6 +12270,7 @@ const vrData = {
               {
                       id: 83,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If CLOUD is coded as ZILRA, what is the code for SHELF?",
                       options: ["PECIC","PEBIC","PEBHC","PFBIC","PEBID"],
                       correct: 1,
@@ -12196,6 +12279,7 @@ const vrData = {
               {
                       id: 84,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If DRINK is coded as GULQN, what is the code for LUCKY?",
                       options: ["OXFMC", "OXFNA", "OXFNB", "OXGNB", "OWFNB"],
                       correct: 2,
@@ -12204,6 +12288,7 @@ const vrData = {
               {
                       id: 85,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If TRUNK is coded as WUXQN, what is the code for FIXED?",
                       options: ["ILAHF", "ILBHG", "ILAIG", "ILAHG", "IKAHG"],
                       correct: 3,
@@ -12212,6 +12297,7 @@ const vrData = {
               {
                       id: 86,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If SLOPE is coded as VORSH, what is the code for BUYER?",
                       options: ["EXBHU","EXCHU","EXBIV","EWBHU","EXAHU"],
                       correct: 0,
@@ -12220,6 +12306,7 @@ const vrData = {
               {
                       id: 87,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If BRICK is coded as EULFN, what word is coded as WRUFK?",
                       options: ["TOOTH", "TOTAL", "TOWER", "TOUCH", "TORCH"],
                       correct: 4,
@@ -12228,6 +12315,7 @@ const vrData = {
               {
                       id: 88,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If SHELF is coded as PEBIC, what word is coded as QOFZH?",
                       options: ["TRIBE", "TRICK", "TRAIN", "TRACK", "TRACE"],
                       correct: 1,
@@ -12236,6 +12324,7 @@ const vrData = {
               {
                       id: 89,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If FROST is coded as IURVW, what word is coded as VWRQH?",
                       options: ["STORE","STORK","STOVE","STONE","STOLE"],
                       correct: 3,
@@ -12244,6 +12333,7 @@ const vrData = {
               {
                       id: 90,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
                       options: ["GRACE", "GRIND", "GRIST", "GRASS", "GRAIN"],
                       correct: 2,
@@ -12252,6 +12342,7 @@ const vrData = {
               {
                       id: 91,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If DRINK is coded as GULQN, what word is coded as EULQJ?",
                       options: ["BRICK", "BRINE", "BRISK", "BRING", "BRIDE"],
                       correct: 3,
@@ -12260,6 +12351,7 @@ const vrData = {
               {
                       id: 92,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If TRUNK is coded as QORKH, what word is coded as JXDFZ?",
                       options: ["MASON", "MAJOR", "MANOR", "MARCH", "MAGIC"],
                       correct: 4,
@@ -12268,6 +12360,7 @@ const vrData = {
               {
                       id: 93,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
                       options: ["CRANE","CREAM","CRAFT","CRASH","CRATE"],
                       correct: 1,
@@ -12276,6 +12369,7 @@ const vrData = {
               {
                       id: 94,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If CHARM is coded as FKDUP, what word is coded as SODFH?",
                       options: ["PLANE","PLATE","PLACE","PLANT","PLANK"],
                       correct: 2,
@@ -12284,6 +12378,7 @@ const vrData = {
               {
                       id: 95,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
                       options: ["SHARP","SHALL","SHADE","SHARE","SHAPE"],
                       correct: 3,
@@ -12292,6 +12387,7 @@ const vrData = {
               {
                       id: 96,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If PLANT is coded as SODQW, what word is coded as PLAHU?",
                       options: ["MINOR", "MIXER", "MISER", "MIGHT", "MITRE"],
                       correct: 1,
@@ -12300,6 +12396,7 @@ const vrData = {
               {
                       id: 97,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for HELP is KHOS, what rule has been used?",
                       options: ["Each letter moves forward 3","Each letter moves back 3","Each letter moves forward 2","Each letter moves back 2","Each letter moves forward 1"],
                       correct: 0,
@@ -12308,6 +12405,7 @@ const vrData = {
               {
                       id: 98,
                       difficulty: 1,
+                      questionType: "letter-codes",
                       question: "If the code for PRIDE is MOFAB, what rule has been used?",
                       options: ["Each letter moves forward 3","Each letter moves back 3","Each letter moves forward 2","Each letter moves back 2","Each letter moves back 1"],
                       correct: 1,
@@ -12316,6 +12414,7 @@ const vrData = {
               {
                       id: 99,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If FROG is coded as GTRH, what pattern has been used for the shifts?",
                       options: ["+1, +3, +2, +1", "+2, +1, +3, +2", "+1, +2, +3, +1", "+1, +2, +2, +1", "+2, +2, +3, +1"],
                       correct: 2,
@@ -12324,6 +12423,7 @@ const vrData = {
               {
                       id: 100,
                       difficulty: 3,
+                      questionType: "letter-codes",
                       question: "If MICE is coded as OJEF, what pattern has been used for the shifts?",
                       options: ["+1, +2, +1, +2","+2, +2, +1, +1","+1, +1, +2, +2","+3, +1, +1, +1","+2, +1, +2, +1"],
                       correct: 4,
@@ -12333,6 +12433,7 @@ const vrData = {
         {
           "id": 101,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for FISH is GJTI (each letter moved forward by 1), what is the code for DUCK?",
           "options": [
             "EVEL",
@@ -12347,6 +12448,7 @@ const vrData = {
         {
           "id": 102,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for HAND is IBOE (each letter moved forward by 1), what is the code for FEET?",
           "options": [
             "FFGU",
@@ -12361,6 +12463,7 @@ const vrData = {
         {
           "id": 103,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for COME is BNLD (each letter moved back by 1), what is the code for PLAY?",
           "options": [
             "OKZY",
@@ -12375,6 +12478,7 @@ const vrData = {
         {
           "id": 104,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for BALL is DCNN (each letter moved forward by 2), what is the code for KICK?",
           "options": [
             "MKEN",
@@ -12389,6 +12493,7 @@ const vrData = {
         {
           "id": 105,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for CAKE is DBLF (each letter moved forward by 1), what is the code for MILK?",
           "options": [
             "NKML",
@@ -12403,6 +12508,7 @@ const vrData = {
         {
           "id": 106,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for BIRD is AHQC (each letter moved back by 1), what is the code for NEST?",
           "options": [
             "MERS",
@@ -12417,6 +12523,7 @@ const vrData = {
         {
           "id": 107,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for TREE is USFF (each letter moved forward by 1), what is the code for LEAF?",
           "options": [
             "MFGB",
@@ -12431,6 +12538,7 @@ const vrData = {
         {
           "id": 108,
           "difficulty": 1,
+          "questionType": "letter-codes",
           "question": "If the code for FROG is HTQI (each letter moved forward by 2), what is the code for TOAD?",
           "options": [
             "VQCE",
@@ -12445,6 +12553,7 @@ const vrData = {
         {
           "id": 109,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for LAMP is ODPS, what is the code for DARK?",
           "options": [
             "GCUN",
@@ -12459,6 +12568,7 @@ const vrData = {
         {
           "id": 110,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for MINT is KGLR, what is the code for SALT?",
           "options": [
             "RYJR",
@@ -12473,6 +12583,7 @@ const vrData = {
         {
           "id": 111,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for WIND is ZLQG, what is the code for RAIN?",
           "options": [
             "UELQ",
@@ -12487,6 +12598,7 @@ const vrData = {
         {
           "id": 112,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If PARK is coded as MXOH, what word is coded as JXII?",
           "options": [
             "TALL",
@@ -12501,6 +12613,7 @@ const vrData = {
         {
           "id": 113,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for HERO is LIVS, what is the code for KING?",
           "options": [
             "OLRK",
@@ -12515,6 +12628,7 @@ const vrData = {
         {
           "id": 114,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for STOP is QRMN, what is the code for FAST?",
           "options": [
             "EYQR",
@@ -12529,6 +12643,7 @@ const vrData = {
         {
           "id": 115,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If GOLD is coded as IQNF, what is the code for RING?",
           "options": [
             "TKIP",
@@ -12543,6 +12658,7 @@ const vrData = {
         {
           "id": 116,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for JUMP is ITLO, what is the code for SWIM?",
           "options": [
             "RUHL",
@@ -12557,6 +12673,7 @@ const vrData = {
         {
           "id": 117,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for BOOK is ERRN, what is the code for READ?",
           "options": [
             "UGDG",
@@ -12571,6 +12688,7 @@ const vrData = {
         {
           "id": 118,
           "difficulty": 2,
+          "questionType": "letter-codes",
           "question": "If the code for BLUE is GQZJ, what is the code for PINK?",
           "options": [
             "VNSP",
@@ -12585,6 +12703,7 @@ const vrData = {
         {
           "id": 119,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If the code for TIGER is PECAN, what is the code for HORSE?",
           "options": [
             "DKNAO",
@@ -12599,6 +12718,7 @@ const vrData = {
         {
           "id": 120,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If the code for CAMP is IGSV, what is the code for TENT?",
           "options": [
             "ZLTZ",
@@ -12613,6 +12733,7 @@ const vrData = {
         {
           "id": 121,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If SMILE is coded as WQMPI, what word is coded as ASVPH?",
           "options": [
             "WORDS",
@@ -12627,6 +12748,7 @@ const vrData = {
         {
           "id": 122,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for FROG?",
           "options": [
             "HTPI",
@@ -12641,6 +12763,7 @@ const vrData = {
         {
           "id": 123,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If HELP is coded as SVOK using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
           "options": [
             "UIRV",
@@ -12655,6 +12778,7 @@ const vrData = {
         {
           "id": 124,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If CROWN is coded as FURZQ, what word is coded as VWDUW?",
           "options": [
             "STARK",
@@ -12669,6 +12793,7 @@ const vrData = {
         {
           "id": 125,
           "difficulty": 3,
+          "questionType": "letter-codes",
           "question": "If HAPPY is coded as ICSQA (1st +1, 2nd +2, 3rd +3, 4th +1, 5th +2), what is the code for SMILE?",
           "options": [
             "TOLNG",

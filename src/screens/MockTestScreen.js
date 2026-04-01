@@ -358,7 +358,7 @@ function MockTestScreen({
           )}
 
           {/* Standard 5-option MC */}
-          {(!question.questionType || question.questionType === 'passage' || question.questionType === 'error-spotting') && question.options && (
+          {(!question.questionType || question.questionType === 'passage' || question.questionType === 'error-spotting' || question.questionType === 'letter-codes') && question.options && (
             <div className="space-y-3">
               {question.options.map((option, idx) => {
                 const letter = String.fromCharCode(65 + idx);

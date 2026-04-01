@@ -2669,17 +2669,17 @@ export const lessonBank = {
             learningGoal: ["How to multiply by 20, 30, 40 and other multiples of 10", "The split-off-the-10 shortcut"],
             variableSets: [
               {
-                name: "Ella", scenario: "buying party bags",
+                name: "Ella", pronoun: "She", scenario: "buying party bags",
                 numA: 23, numB: 40, numBBase: 4,
                 intermediate: 92, product: 920
               },
               {
-                name: "Owen", scenario: "counting toy cars in boxes",
+                name: "Owen", pronoun: "He", scenario: "counting toy cars in boxes",
                 numA: 15, numB: 30, numBBase: 3,
                 intermediate: 45, product: 450
               },
               {
-                name: "Maya", scenario: "planting seeds in rows",
+                name: "Maya", pronoun: "She", scenario: "planting seeds in rows",
                 numA: 31, numB: 20, numBBase: 2,
                 intermediate: 62, product: 620
               }
@@ -2688,7 +2688,7 @@ export const lessonBank = {
               {
                 type: "hook",
                 title: (v) => `${v.numA} × ${v.numB} — is there a shortcut?`,
-                body: (v) => `${v.name} is ${v.scenario}. She needs **${v.numA} × ${v.numB}**. That looks tricky... but there's a sneaky shortcut!`,
+                body: (v) => `${v.name} is ${v.scenario}. ${v.pronoun} needs **${v.numA} × ${v.numB}**. That looks tricky... but there's a sneaky shortcut!`,
                 visual: {
                   component: "WorkedExample",
                   props: (v) => ({
@@ -7407,7 +7407,7 @@ export const lessonBank = {
                   },
                   {
                     type: 'text',
-                    content: (v) => `We know two angles add up to **${v.knownSum}°**. Since all angles add to **180°**, the missing angle = **180° − ${v.knownSum}° = ${v.missingAngle}°**.`
+                    content: (v) => `We know two angles add up to **${v.knownSum}°**. Now we need to subtract from **180°** to find the missing angle.`
                   }
                 ],
                 visual: null,
@@ -8707,11 +8707,11 @@ export const lessonBank = {
                     component: 'WorkedExample',
                     props: () => ({
                       steps: [
-                        { text: "1. Capital letters", why: "After full stops? All **proper nouns** (names of specific people, places, or things — always start with a capital letter)? Days and months? (NOT seasons!)" },
-                        { text: "2. Apostrophes", why: "**Contractions** (shortened words like don't, can't, it's) correct? Possession correct? (girl's vs girls')" },
-                        { text: "3. Commas", why: "In lists? After **subordinate clauses** (extra information added to a sentence, often starting with Although, Because, When)? Before 'but' in long sentences?" },
-                        { text: "4. Question marks", why: "Is a question ending with a full stop instead?" },
-                        { text: "5. Speech marks", why: "Paired? Capital inside? Punctuation before closing mark?" }
+                        { text: "1. Capital letters", why: "Check after full stops, all **proper nouns** (names of people, places, days, months — NOT seasons)" },
+                        { text: "2. Apostrophes", why: "Check **contractions** (don't, can't, it's) and **possession** (girl's bag vs girls' bags)" },
+                        { text: "3. Commas", why: "Check lists, after **subordinate clauses** (Although…, Because…, When…), and before 'but' in long sentences" },
+                        { text: "4. Question marks", why: "Check that questions end with ? not a full stop" },
+                        { text: "5. Speech marks", why: "Check they're paired, capital inside, punctuation before closing mark" }
                       ],
                       allRevealed: false
                     })
@@ -8797,11 +8797,11 @@ export const lessonBank = {
                   component: "WorkedExample",
                   props: () => ({
                     steps: [
-                      { text: "1. Capital letters", why: "Sentence starts, **proper nouns** (names of specific people, places, or things), days, months — NOT seasons!" },
-                      { text: "2. Apostrophes", why: "**Contractions** (shortened words like don't, can't, it's) and possession (the dog's bone)" },
-                      { text: "3. Commas", why: "Lists, after **subordinate clauses** (extra bits of information added to a sentence), before 'but' in compound sentences" },
-                      { text: "4. Question marks", why: "Every question needs ? not . at the end" },
-                      { text: "5. Speech marks", why: "Paired marks, capital inside, punctuation before closing ✓" }
+                      { text: "1. Capital letters", why: "Sentence starts, **proper nouns** (names, places, days, months — NOT seasons)" },
+                      { text: "2. Apostrophes", why: "**Contractions** (don't, can't, it's) and **possession** (the dog's bone)" },
+                      { text: "3. Commas", why: "Lists, after **subordinate clauses** (Although…, Because…), before 'but'" },
+                      { text: "4. Question marks", why: "Every question ends with a ? not a full stop" },
+                      { text: "5. Speech marks", why: "Paired marks, capital inside, punctuation before closing mark ✓" }
                     ],
                     allRevealed: true
                   })
