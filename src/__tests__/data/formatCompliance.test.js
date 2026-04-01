@@ -190,6 +190,23 @@ describe('Passage format (English comprehension)', () => {
     const broken = passageQuestions.filter(q => !q.passageId);
     expect(broken).toEqual([]);
   });
+
+  it('every passage question has a valid questionSubType', () => {
+    const validSubTypes = [
+      'retrieval', 'inference', 'vocabulary-in-context', 'word-class',
+      'author-purpose', 'literary-device', 'negative-retrieval',
+      'prediction', 'genre'
+    ];
+    const broken = passageQuestions.filter(q =>
+      !q.questionSubType || !validSubTypes.includes(q.questionSubType)
+    );
+    if (broken.length > 0) {
+      console.log('Bad questionSubType:', broken.slice(0, 5).map(q =>
+        `${q._topicKey}/Q${q.id}: "${q.questionSubType}"`
+      ));
+    }
+    expect(broken).toEqual([]);
+  });
 });
 
 describe('Error-spotting format (English)', () => {
@@ -252,6 +269,37 @@ describe('Explanation quality — mechanical checks', () => {
     const broken = allQuestions.filter(q =>
       q.explanation && q.question && q.explanation.trim() === q.question.trim()
     );
+    expect(broken).toEqual([]);
+  });
+
+  it('no explanation is shorter than 20 characters (likely placeholder)', () => {
+    const broken = allQuestions.filter(q =>
+      q.explanation && q.explanation.trim().length < 20
+    );
+    if (broken.length > 0) {
+      console.log('Short explanations:', broken.slice(0, 5).map(q =>
+        `${q._subject}/${q._topicKey}/Q${q.id}: "${q.explanation}"`
+      ));
+    }
+    // 33 known short explanations as of 2026-04-01 (simple arithmetic).
+    // Ceiling prevents NEW short explanations. Decrease as content improves.
+    expect(broken.length).toBeLessThanOrEqual(33);
+  });
+
+  it('no explanation ends with the check mark alone (no reasoning)', () => {
+    // Pattern: explanation is just the answer restated + ✓
+    // e.g. "The answer is 42. ✓" with nothing explaining why
+    const broken = allQuestions.filter(q => {
+      if (!q.explanation) return false;
+      // Short explanation that's basically "Answer is X. ✓"
+      const words = q.explanation.replace(/[✓✗]/g, '').trim().split(/\s+/);
+      return words.length < 5 && q.explanation.includes('✓');
+    });
+    if (broken.length > 0) {
+      console.log('No-reasoning explanations:', broken.slice(0, 5).map(q =>
+        `${q._subject}/${q._topicKey}/Q${q.id}: "${q.explanation.slice(0, 60)}"`
+      ));
+    }
     expect(broken).toEqual([]);
   });
 });
