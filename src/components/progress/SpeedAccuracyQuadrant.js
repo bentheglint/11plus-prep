@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from 'react';
-import { Target, ChevronDown, ChevronRight } from 'lucide-react';
+import React, { useMemo } from 'react';
+import { Target } from 'lucide-react';
 import { topicNames } from '../RecommendationCard';
 
 const subjectConfig = {
@@ -13,7 +13,6 @@ const MIN_RESULTS = 5;
 const STALE_DAYS = 14;
 
 function SpeedAccuracyQuadrant({ questionResults }) {
-  const [expanded, setExpanded] = useState(false);
 
   // Compute per-topic stats grouped by subject
   const subjectData = useMemo(() => {
@@ -64,40 +63,29 @@ function SpeedAccuracyQuadrant({ questionResults }) {
 
   return (
     <div className="card-elevated p-5 mb-6">
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between"
-      >
-        <div className="flex items-center gap-2">
-          <Target className="w-5 h-5 text-[#6C5CE7]" />
-          <h3 className="font-heading font-bold text-[#2D3436]">Accuracy vs Speed</h3>
-        </div>
-        {expanded
-          ? <ChevronDown className="w-4 h-4 text-[#636E72]" />
-          : <ChevronRight className="w-4 h-4 text-[#636E72]" />
-        }
-      </button>
-      <p className="text-xs text-[#636E72] mt-1">
+      <div className="flex items-center gap-2 mb-1">
+        <Target className="w-5 h-5 text-[#6C5CE7]" />
+        <h3 className="font-heading font-bold text-[#2D3436]">Accuracy vs Speed</h3>
+      </div>
+      <p className="text-xs text-[#636E72] mb-4">
         How each topic compares on accuracy and speed against GL exam targets
       </p>
 
-      {expanded && (
-        <div className="mt-4 space-y-6">
-          {Object.entries(subjectConfig).map(([subject, config]) => {
-            const topics = subjectData[subject];
-            if (!topics || topics.length === 0) return null;
-            return (
-              <QuadrantChart
-                key={subject}
-                subjectName={config.name}
-                colour={config.colour}
-                speedTarget={config.speedTarget}
-                topics={topics}
-              />
-            );
-          })}
-        </div>
-      )}
+      <div className="space-y-6">
+        {Object.entries(subjectConfig).map(([subject, config]) => {
+          const topics = subjectData[subject];
+          if (!topics || topics.length === 0) return null;
+          return (
+            <QuadrantChart
+              key={subject}
+              subjectName={config.name}
+              colour={config.colour}
+              speedTarget={config.speedTarget}
+              topics={topics}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

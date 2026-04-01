@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowLeft, BarChart3 } from 'lucide-react';
 import OnTrackCard from '../components/progress/OnTrackCard';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
@@ -13,6 +13,8 @@ import parentGuides from '../data/parentGuides';
 
 function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopicClick, onBack, onHome }) {
   const practiceDays = streaksAndPP.getPracticeDays(84);
+
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div className="app-bg p-4 min-h-screen">
