@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
+// Basic smoke test — verifies the app renders without crashing
+import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders without crashing', () => {
+  // App renders with localStorage state — just verify no throw
+  expect(() => render(<App />)).not.toThrow();
 });
