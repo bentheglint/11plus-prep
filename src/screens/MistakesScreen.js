@@ -112,8 +112,9 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
 
   // Start practice mode for a topic
   const startPractice = useCallback((topicKey, subject, mistakes) => {
-    // Filter out missing questions — can't practise what's no longer in the bank
-    const practiceable = mistakes.filter(m => m.questionType !== 'missing');
+    // Filter out questions that can't be practised inline (missing, or types needing full context)
+    const unsupported = ['missing', 'passage', 'error-spotting'];
+    const practiceable = mistakes.filter(m => !unsupported.includes(m.questionType));
     if (practiceable.length === 0) return;
     setPracticeMode({ topicKey, subject, questions: practiceable });
     setPracticeIndex(0);
@@ -560,7 +561,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                           + {group.mistakes.length - 10} more
                         </p>
                       )}
-                      {group.mistakes.some(m => m.questionType !== 'missing') && (
+                      {group.mistakes.some(m => !['missing', 'passage', 'error-spotting'].includes(m.questionType)) && (
                         <div className="px-5 py-3 bg-gray-50">
                           <button
                             onClick={() => startPractice(topicKey, group.subject, group.mistakes)}
@@ -568,7 +569,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                             style={{ background: colour }}
                           >
                             <Target className="w-4 h-4" />
-                            Practice These ({group.mistakes.filter(m => m.questionType !== 'missing').length})
+                            Practice These ({group.mistakes.filter(m => !['missing', 'passage', 'error-spotting'].includes(m.questionType)).length})
                           </button>
                         </div>
                       )}
