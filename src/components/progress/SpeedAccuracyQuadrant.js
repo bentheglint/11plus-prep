@@ -103,9 +103,9 @@ function SpeedAccuracyQuadrant({ questionResults }) {
 }
 
 function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
-  // SVG dimensions
-  const W = 360, H = 280;
-  const pad = { top: 30, right: 20, bottom: 45, left: 50 };
+  // SVG dimensions — large enough to read comfortably
+  const W = 520, H = 400;
+  const pad = { top: 36, right: 24, bottom: 56, left: 58 };
   const plotW = W - pad.left - pad.right;
   const plotH = H - pad.top - pad.bottom;
 
@@ -136,17 +136,17 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
 
   // Quadrant background colours (very subtle)
   const quadrants = [
-    { x: pad.left, y: pad.top, w: threshX - pad.left, h: threshY - pad.top, fill: '#00B89408', label: 'Exam Ready', lx: pad.left + 4, ly: pad.top + 14 },
-    { x: threshX, y: pad.top, w: pad.left + plotW - threshX, h: threshY - pad.top, fill: '#0984E308', label: 'Build Speed', lx: pad.left + plotW - 4, ly: pad.top + 14, anchor: 'end' },
-    { x: pad.left, y: threshY, w: threshX - pad.left, h: pad.top + plotH - threshY, fill: '#FDCB6E08', label: 'Build Accuracy', lx: pad.left + 4, ly: pad.top + plotH - 4 },
-    { x: threshX, y: threshY, w: pad.left + plotW - threshX, h: pad.top + plotH - threshY, fill: '#E17B1E08', label: 'Focus Here', lx: pad.left + plotW - 4, ly: pad.top + plotH - 4, anchor: 'end' },
+    { x: pad.left, y: pad.top, w: threshX - pad.left, h: threshY - pad.top, fill: '#00B89408', label: 'Exam Ready', lx: pad.left + 8, ly: pad.top + 18 },
+    { x: threshX, y: pad.top, w: pad.left + plotW - threshX, h: threshY - pad.top, fill: '#0984E308', label: 'Build Speed', lx: pad.left + plotW - 8, ly: pad.top + 18, anchor: 'end' },
+    { x: pad.left, y: threshY, w: threshX - pad.left, h: pad.top + plotH - threshY, fill: '#FDCB6E08', label: 'Build Accuracy', lx: pad.left + 8, ly: pad.top + plotH - 8 },
+    { x: threshX, y: threshY, w: pad.left + plotW - threshX, h: pad.top + plotH - threshY, fill: '#E17B1E08', label: 'Focus Here', lx: pad.left + plotW - 8, ly: pad.top + plotH - 8, anchor: 'end' },
   ];
 
   return (
     <div>
-      <h4 className="text-sm font-heading font-bold mb-2" style={{ color: colour }}>{subjectName}</h4>
+      <h4 className="text-base font-heading font-bold mb-3" style={{ color: colour }}>{subjectName}</h4>
       <div className="flex justify-center">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ maxWidth: W }}>
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
           {/* Plot area background */}
           <rect x={pad.left} y={pad.top} width={plotW} height={plotH} fill="#fafafa" rx={4} />
 
@@ -157,7 +157,7 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
                 width={Math.min(q.w, plotW)} height={Math.min(q.h, plotH)}
                 fill={q.fill} />
               <text x={q.lx} y={q.ly} textAnchor={q.anchor || 'start'}
-                fontSize={8} fontWeight="600" fill="#d1d5db" opacity={0.7}>
+                fontSize={11} fontWeight="600" fill="#d1d5db" opacity={0.7}>
                 {q.label}
               </text>
             </g>
@@ -170,43 +170,41 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
             stroke="#d1d5db" strokeWidth={1.5} strokeDasharray="4,3" />
 
           {/* Threshold labels */}
-          <text x={threshX} y={pad.top + plotH + 12} textAnchor="middle"
-            fontSize={9} fill="#9ca3af" fontWeight="600">
-            GL target: {speedTarget}s
+          <text x={threshX} y={pad.top - 8} textAnchor="middle"
+            fontSize={11} fill="#9ca3af" fontWeight="600">
+            GL: {speedTarget}s
           </text>
-          <text x={pad.left - 4} y={threshY + 3} textAnchor="end"
-            fontSize={9} fill="#9ca3af" fontWeight="600">
+          <text x={pad.left - 6} y={threshY + 4} textAnchor="end"
+            fontSize={11} fill="#9ca3af" fontWeight="600">
             {ACCURACY_LINE}%
           </text>
 
           {/* Axis labels */}
-          <text x={pad.left + plotW / 2} y={H - 4} textAnchor="middle"
-            fontSize={10} fill="#636E72" fontWeight="500">
+          <text x={pad.left + plotW / 2} y={H - 6} textAnchor="middle"
+            fontSize={12} fill="#636E72" fontWeight="500">
             ← Faster — Seconds per question — Slower →
           </text>
-          <text x={12} y={pad.top + plotH / 2} textAnchor="middle"
-            fontSize={10} fill="#636E72" fontWeight="500"
-            transform={`rotate(-90, 12, ${pad.top + plotH / 2})`}>
+          <text x={14} y={pad.top + plotH / 2} textAnchor="middle"
+            fontSize={12} fill="#636E72" fontWeight="500"
+            transform={`rotate(-90, 14, ${pad.top + plotH / 2})`}>
             Accuracy %
           </text>
 
           {/* Y-axis ticks */}
           {[minAcc, ACCURACY_LINE, maxAcc].filter((v, i, a) => a.indexOf(v) === i).map(acc => (
             <g key={`ya-${acc}`}>
-              <line x1={pad.left - 3} y1={yScale(acc)} x2={pad.left} y2={yScale(acc)} stroke="#d1d5db" />
+              <line x1={pad.left - 4} y1={yScale(acc)} x2={pad.left} y2={yScale(acc)} stroke="#d1d5db" />
               {acc !== ACCURACY_LINE && (
-                <text x={pad.left - 5} y={yScale(acc) + 3} textAnchor="end" fontSize={9} fill="#9ca3af">{acc}%</text>
+                <text x={pad.left - 7} y={yScale(acc) + 4} textAnchor="end" fontSize={11} fill="#9ca3af">{acc}%</text>
               )}
             </g>
           ))}
 
           {/* X-axis ticks */}
-          {[minSpeed, speedTarget, maxSpeed].filter((v, i, a) => a.indexOf(v) === i).map(secs => (
+          {[minSpeed, maxSpeed].map(secs => (
             <g key={`xa-${secs}`}>
-              <line x1={xScale(secs)} y1={pad.top + plotH} x2={xScale(secs)} y2={pad.top + plotH + 3} stroke="#d1d5db" />
-              {secs !== speedTarget && (
-                <text x={xScale(secs)} y={pad.top + plotH + 12} textAnchor="middle" fontSize={9} fill="#9ca3af">{secs}s</text>
-              )}
+              <line x1={xScale(secs)} y1={pad.top + plotH} x2={xScale(secs)} y2={pad.top + plotH + 4} stroke="#d1d5db" />
+              <text x={xScale(secs)} y={pad.top + plotH + 16} textAnchor="middle" fontSize={11} fill="#9ca3af">{secs}s</text>
             </g>
           ))}
 
@@ -215,15 +213,15 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
             const cx = xScale(t.avgSecs);
             const cy = yScale(t.accuracy);
             const opacity = t.isStale ? 0.35 : 1;
-            const label = t.name.length > 14 ? t.name.slice(0, 12) + '…' : t.name;
+            const label = t.name.length > 18 ? t.name.slice(0, 16) + '…' : t.name;
             // Place label below dot when near top of chart, above when near bottom
             const labelAbove = cy > pad.top + plotH * 0.35;
-            const ly = labelAbove ? cy - 10 : cy + 16;
+            const ly = labelAbove ? cy - 14 : cy + 20;
             return (
               <g key={t.topicKey} opacity={opacity}>
-                <circle cx={cx} cy={cy} r={6} fill={colour} stroke="white" strokeWidth={1.5} />
+                <circle cx={cx} cy={cy} r={8} fill={colour} stroke="white" strokeWidth={2} />
                 <text x={cx} y={ly} textAnchor="middle"
-                  fontSize={8} fontWeight="600" fill="#374151">
+                  fontSize={11} fontWeight="600" fill="#374151">
                   {label}
                 </text>
               </g>
@@ -232,14 +230,16 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
         </svg>
       </div>
       {/* Legend */}
-      <div className="flex items-center justify-center gap-4 mt-2 text-[9px] text-[#9ca3af]">
-        <span className="flex items-center gap-1">
-          <span className="inline-block w-2 h-2 rounded-full" style={{ background: colour }} /> Topic
+      <div className="flex items-center justify-center gap-5 mt-3 text-xs text-[#9ca3af]">
+        <span className="flex items-center gap-1.5">
+          <span className="inline-block w-3 h-3 rounded-full" style={{ background: colour }} /> Topic
         </span>
-        <span className="flex items-center gap-1">
-          <span className="inline-block w-2 h-2 rounded-full opacity-35" style={{ background: colour }} /> Not practised recently
+        <span className="flex items-center gap-1.5">
+          <span className="inline-block w-3 h-3 rounded-full opacity-35" style={{ background: colour }} /> Not practised recently
         </span>
-        <span>--- GL exam pace</span>
+        <span className="flex items-center gap-1.5">
+          <span className="inline-block w-5 border-t-2 border-dashed border-gray-300" /> GL exam pace
+        </span>
       </div>
     </div>
   );
