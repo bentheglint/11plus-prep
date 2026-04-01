@@ -2133,11 +2133,6 @@
       "confidence": "high"
     },
     {
-      "questionId": 7,
-      "subConceptId": "commas-clauses",
-      "confidence": "high"
-    },
-    {
       "questionId": 8,
       "subConceptId": "apostrophe-contraction",
       "confidence": "high"
@@ -2185,11 +2180,6 @@
     {
       "questionId": 17,
       "subConceptId": "commas-clauses",
-      "confidence": "high"
-    },
-    {
-      "questionId": 18,
-      "subConceptId": "commas-parenthesis",
       "confidence": "high"
     },
     {
@@ -2675,11 +2665,6 @@
     {
       "questionId": 115,
       "subConceptId": "capital-letters",
-      "confidence": "high"
-    },
-    {
-      "questionId": 116,
-      "subConceptId": "apostrophe-possession",
       "confidence": "high"
     },
     {

@@ -1319,7 +1319,7 @@ const mathsData = {
       question: "Which of these is equal to 1/2? 45%, 50%, 55%, 60%, 65%",
       options: ["45%", "60%", "55%", "50%", "65%"],
       correct: 3,
-      explanation: "1/2 = 0.5 = 50%. ✓"
+      explanation: "This is worth memorising: 1/2 = 50%. Half of 100 is 50 — one of those key facts that saves time in the exam. ✓"
     },
     {
       id: 165,
@@ -7967,7 +7967,7 @@ fractions: {
       question: "Ravi eats 1/3 of a pie at lunch and another 1/3 after school. What fraction of the pie has he eaten?",
       options: ["1/6", "1/9", "2/3", "2/6", "3/3"],
       correct: 2,
-      explanation: "1/3 + 1/3 = 2/3. ✓"
+      explanation: "When the bottom numbers match, just add the tops! 1 + 1 = 2, so it's 2/3. Easy marks in the exam. ✓"
     },
     {
       id: 37,
@@ -7991,7 +7991,7 @@ fractions: {
       question: "What is 7/9 - 2/9?",
       options: ["5/9", "4/9", "5/18", "6/9", "2/3"],
       correct: 0,
-      explanation: "7/9 - 2/9 = 5/9. ✓"
+      explanation: "Same denominator? Just subtract the top numbers: 7 - 2 = 5, keep the 9 on the bottom. 5/9. ✓"
     },
     {
       id: 40,
@@ -8081,7 +8081,7 @@ fractions: {
       question: "What is 2/9 + 5/9?",
       options: ["7/18", "7/9", "3/9", "1/3", "2/3"],
       correct: 1,
-      explanation: "2/9 + 5/9 = 7/9. ✓"
+      explanation: "The denominators are both 9 — great, no extra work! Add the numerators: 2 + 5 = 7. Done. ✓"
     },
     {
       id: 51,
@@ -8169,7 +8169,7 @@ fractions: {
       question: "What is 4/7 + 2/7?",
       options: ["6/14", "2/7", "6/7", "5/7", "3/7"],
       correct: 2,
-      explanation: "4/7 + 2/7 = 6/7. ✓"
+      explanation: "Both sevenths, so add the tops: 4 + 2 = 6. The denominator stays as 7. Quick and easy! ✓"
     },
     {
       id: 62,
@@ -8265,7 +8265,7 @@ fractions: {
       question: "What is 5/9 + 3/9?",
       options: ["8/18", "1/9", "7/9", "2/3", "8/9"],
       correct: 4,
-      explanation: "5/9 + 3/9 = 8/9. ✓"
+      explanation: "Matching denominators is a gift — just add the numerators. 5 + 3 = 8, so 8/9. ✓"
     },
     {
       id: 74,
@@ -8393,7 +8393,7 @@ fractions: {
       question: "What is 1/5 + 2/5?",
       options: ["3/5", "3/10", "2/5", "1/5", "4/5"],
       correct: 0,
-      explanation: "1/5 + 2/5 = 3/5. ✓"
+      explanation: "Same denominator means same-sized slices. Add the tops: 1 + 2 = 3 fifths. Simple! ✓"
     },
     {
       id: 90,
@@ -8409,7 +8409,7 @@ fractions: {
       question: "What is 4/5 - 1/5?",
       options: ["2/5", "3/10", "3/5", "1/5", "4/10"],
       correct: 2,
-      explanation: "4/5 - 1/5 = 3/5. ✓"
+      explanation: "Both fifths, so subtract the tops: 4 - 1 = 3. The bottom number doesn't change — it's 3/5. ✓"
     },
     {
       id: 92,
@@ -8425,7 +8425,7 @@ fractions: {
       question: "What is 2/7 + 3/7?",
       options: ["5/14", "4/7", "1/7", "6/7", "5/7"],
       correct: 4,
-      explanation: "2/7 + 3/7 = 5/7. ✓"
+      explanation: "Same denominator? Lucky you! Just add the tops: 2 + 3 = 5 sevenths. The 7 stays put. ✓"
     },
     {
       id: 94,
@@ -8441,7 +8441,7 @@ fractions: {
       question: "What is 5/9 + 2/9?",
       options: ["7/18", "7/9", "3/9", "1/3", "2/3"],
       correct: 1,
-      explanation: "5/9 + 2/9 = 7/9. ✓"
+      explanation: "Matching bottoms = easy life. Add the tops: 5 + 2 = 7, keep the 9. That's 7/9. ✓"
     },
     {
       id: 96,
@@ -8721,7 +8721,7 @@ fractions: {
       question: "What is 5/7 + 1/7?",
       options: ["6/14", "6/7", "5/14", "1/7", "4/7"],
       correct: 1,
-      explanation: "5/7 + 1/7 = 6/7. ✓"
+      explanation: "Both sevenths — add the numerators: 5 + 1 = 6. The denominator stays as 7, giving 6/7. ✓"
     },
     {
       id: 131,
@@ -8737,7 +8737,7 @@ fractions: {
       question: "What is 3/5 - 1/5?",
       options: ["2/10", "3/10", "1/5", "2/5", "4/5"],
       correct: 3,
-      explanation: "3/5 - 1/5 = 2/5. ✓"
+      explanation: "Same denominator means just subtract the tops: 3 - 1 = 2 fifths. The bottom number never changes! ✓"
     },
     {
       id: 133,
@@ -13143,7 +13143,7 @@ algebra: {
             question: "If a = 6, what is (a + 4) × (a - 2)?",
             options: ["24", "32", "36", "40", "48"],
             correct: 3,
-            explanation: "10 × 4 = 40. ✓"
+            explanation: "Swap in a = 6: (6 + 4) × (6 - 2) = 10 × 4 = 40. Always work out the brackets first! ✓"
           },
           {
             id: 235,
@@ -13271,7 +13271,7 @@ algebra: {
             question: "The rule for a sequence is 3n + 5. What is the 15th term?",
             options: ["45", "47", "48", "53", "50"],
             correct: 4,
-            explanation: "3 × 15 + 5 = 50. ✓"
+            explanation: "Pop n = 15 into the rule: 3 × 15 + 5 = 45 + 5 = 50. Remember — multiply first, then add. BODMAS! ✓"
           },
           {
             id: 251,
@@ -15072,7 +15072,7 @@ negativenumbers: {
       question: "The temperature in York is 2°C. It drops by 14°C overnight. What is the new temperature?",
       options: ["16°C", "12°C", "-12°C", "-16°C", "14°C"],
       correct: 2,
-      explanation: "2 - 14 = -12. ✓"
+      explanation: "Start at 2°C and drop 14. You pass through zero at 2, then keep going 12 more — landing on -12°C. ✓"
     },
     {
       id: 45,
@@ -15168,7 +15168,7 @@ negativenumbers: {
       question: "The temperature in Cardiff is 4°C. Overnight it drops by 19°C. What is the new temperature?",
       options: ["23°C", "15°C", "19°C", "-23°C", "-15°C"],
       correct: 4,
-      explanation: "4 - 19 = -15°C. ✓"
+      explanation: "You've only got 4°C but you're losing 19. That's 15 more than you have, so you end up 15 below zero: -15°C. ✓"
     },
     {
       id: 57,
@@ -15240,7 +15240,7 @@ negativenumbers: {
       question: "Tom has £6 in his account. He buys a toy costing £22. What is his balance now?",
       options: ["£28", "£16", "£-28", "£-16", "£22"],
       correct: 3,
-      explanation: "6 - 22 = -16. ✓"
+      explanation: "He's £16 short! 6 - 22 = -16. When you spend more than you have, you go into the negatives. ✓"
     },
     {
       id: 66,
@@ -15280,7 +15280,7 @@ negativenumbers: {
       question: "The temperature is 10°C during the day. It drops by 27°C at night. What is the new temperature?",
       options: ["37°C", "17°C", "-37°C", "-17°C", "27°C"],
       correct: 3,
-      explanation: "10 - 27 = -17. ✓"
+      explanation: "10°C minus 27°C: you run out of degrees at 10, then drop 17 more below zero. That's -17°C. ✓"
     },
     {
       id: 71,
@@ -15296,7 +15296,7 @@ negativenumbers: {
       question: "A submarine is at 19 metres below sea level. It dives another 8 metres. What is its new depth?",
       options: ["-27", "-11", "11", "27", "-8"],
       correct: 0,
-      explanation: "-19 - 8 = -27. ✓"
+      explanation: "Already at -19m and diving 8 more. Going deeper means more negative: -19 - 8 = -27m. ✓"
     },
     {
       id: 73,
@@ -15336,7 +15336,7 @@ negativenumbers: {
       question: "The temperature in Edinburgh is 1°C. It drops by 16°C overnight. What is the new temperature?",
       options: ["-15°C", "15°C", "17°C", "-17°C", "16°C"],
       correct: 0,
-      explanation: "1 - 16 = -15. ✓"
+      explanation: "Only 1°C to spare, but it drops 16. Past zero by 15, so -15°C. Picture a thermometer going down! ✓"
     },
     {
       id: 78,
@@ -15368,7 +15368,7 @@ negativenumbers: {
       question: "Freddie has £9 in his wallet. He owes his friend £31. After paying, what is his balance?",
       options: ["£40", "£22", "£31", "£-40", "£-22"],
       correct: 4,
-      explanation: "9 - 31 = -22. ✓"
+      explanation: "£9 minus £31 — he's £22 short. When you owe more than you have, the answer goes negative: -£22. ✓"
     },
     {
       id: 82,
@@ -15392,7 +15392,7 @@ negativenumbers: {
       question: "The temperature is -11°C. It drops by another 14°C during a blizzard. What is the new temperature?",
       options: ["3", "-3", "-25", "25", "-14"],
       correct: 2,
-      explanation: "-11 - 14 = -25. ✓"
+      explanation: "Already -11°C and dropping 14 more. When you're below zero and it gets colder, add the numbers: 11 + 14 = 25, so -25°C. ✓"
     },
     {
       id: 85,
@@ -15408,7 +15408,7 @@ negativenumbers: {
       question: "Hannah has £13 on her library card. She buys a £35 book. What is her balance now?",
       options: ["£48", "£22", "£35", "£-48", "£-22"],
       correct: 4,
-      explanation: "13 - 35 = -22. ✓"
+      explanation: "£13 minus £35 = -£22. She's £22 short! Subtracting more than you have always gives a negative answer. ✓"
     },
     {
       id: 87,
@@ -15448,7 +15448,7 @@ negativenumbers: {
       question: "A dolphin is swimming at 8 metres below the surface. It dives down another 17 metres. What is its new depth?",
       options: ["-17", "-9", "9", "25", "-25"],
       correct: 4,
-      explanation: "-8 - 17 = -25. ✓"
+      explanation: "Already at -8m, then dives 17 more. Further down = more negative. 8 + 17 = 25, so -25m. ✓"
     },
     {
       id: 92,
@@ -15456,7 +15456,7 @@ negativenumbers: {
       question: "The temperature in Dundee is 5°C. It drops by 24°C overnight. What is the new temperature?",
       options: ["-19°C", "19°C", "29°C", "-29°C", "24°C"],
       correct: 0,
-      explanation: "5 - 24 = -19. ✓"
+      explanation: "5 - 24: you use up the 5 reaching zero, then still need to drop 19 more. That's -19°C. ✓"
     },
     {
       id: 93,
@@ -15496,7 +15496,7 @@ negativenumbers: {
       question: "The temperature in Reykjavik is -21°C. It falls by another 9°C. What is the new temperature?",
       options: ["-30", "-12", "12", "30", "-9"],
       correct: 0,
-      explanation: "-21 - 9 = -30. ✓"
+      explanation: "Already -21°C, falling another 9. It just gets colder: 21 + 9 = 30, so -30°C. ✓"
     },
     {
       id: 98,
@@ -15512,7 +15512,7 @@ negativenumbers: {
       question: "Sam has £11 in his account. He pays a £38 bill. What is his balance now?",
       options: ["£49", "£27", "£-27", "£-49", "£38"],
       correct: 2,
-      explanation: "11 - 38 = -27. ✓"
+      explanation: "£11 can't cover a £38 bill — that's £27 short. 11 - 38 = -27. Into the red! ✓"
     },
     {
       id: 100,
@@ -15544,7 +15544,7 @@ negativenumbers: {
       question: "The temperature in Bristol is 14°C. It drops by 42°C during a freak cold snap. What is the new temperature?",
       options: ["56°C", "-28°C", "28°C", "-56°C", "42°C"],
       correct: 1,
-      explanation: "14 - 42 = -28. ✓"
+      explanation: "14 - 42: past zero by 28. When the drop is bigger than what you start with, the answer is negative. -28°C. ✓"
     },
     {
       id: 104,
@@ -15560,7 +15560,7 @@ negativenumbers: {
       question: "A scuba diver is 10 metres below the surface. She descends another 13 metres. What is her new depth?",
       options: ["23", "-3", "3", "-23", "-13"],
       correct: 3,
-      explanation: "-10 - 13 = -23. ✓"
+      explanation: "Starting at -10m and going down 13 more. Add the distances below zero: 10 + 13 = 23, so -23m. ✓"
     },
     {
       id: 106,
@@ -15600,7 +15600,7 @@ negativenumbers: {
       question: "The temperature in Manchester is 8°C. A cold front causes it to drop by 33°C. What is the new temperature?",
       options: ["41°C", "25°C", "-41°C", "-25°C", "33°C"],
       correct: 3,
-      explanation: "8 - 33 = -25. ✓"
+      explanation: "8 - 33 = -25°C. You blow past zero after just 8 degrees, then keep dropping another 25. ✓"
     },
     {
       id: 111,
@@ -15616,7 +15616,7 @@ negativenumbers: {
       question: "A potholer is 17 metres underground. She descends another 15 metres. What is her new depth?",
       options: ["-32", "-2", "2", "32", "-15"],
       correct: 0,
-      explanation: "-17 - 15 = -32. ✓"
+      explanation: "At -17m, descending 15 more. Deeper = more negative. 17 + 15 = 32, so -32m. ✓"
     },
     {
       id: 113,
@@ -15640,7 +15640,7 @@ negativenumbers: {
       question: "Alfie has £17 saved up. He buys a game costing £45. What is his balance now?",
       options: ["£62", "£28", "£-62", "£-28", "£45"],
       correct: 3,
-      explanation: "17 - 45 = -28. ✓"
+      explanation: "£17 minus £45 = -£28. He's £28 short — that's what negative means here, the amount you're missing! ✓"
     },
     {
       id: 116,
@@ -15656,7 +15656,7 @@ negativenumbers: {
       question: "The temperature in northern Canada is -32°C. It drops by another 8°C. What is the new temperature?",
       options: ["-40", "-24", "24", "40", "-8"],
       correct: 0,
-      explanation: "-32 - 8 = -40. ✓"
+      explanation: "Already a freezing -32°C, then 8 more degrees colder. 32 + 8 = 40, so -40°C. Brrr! ✓"
     },
     {
       id: 118,

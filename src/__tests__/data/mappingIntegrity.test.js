@@ -55,10 +55,7 @@ function testMappingFile(mapData, questionIndex, subjectName) {
       if (orphans.length > 0) {
         console.log(`${subjectName} orphaned mappings (${orphans.length}):`, orphans.slice(0, 10));
       }
-      // Known orphans as of 2026-04-01: English 3, VR 65 (from ID renumbering).
-      // Ceiling prevents NEW orphans. Decrease as issues are fixed.
-      const knownOrphans = { Maths: 0, English: 3, VR: 65 };
-      expect(orphans.length).toBeLessThanOrEqual(knownOrphans[subjectName] || 0);
+      expect(orphans).toEqual([]);
     });
 
     it('every mapping has a valid confidence value', () => {
@@ -112,10 +109,7 @@ function testMappingFile(mapData, questionIndex, subjectName) {
       if (dupes.length > 0) {
         console.log(`${subjectName} duplicate mappings:`, dupes.slice(0, 10));
       }
-      // Known duplicates as of 2026-04-01: VR letterCodes 41.
-      // Ceiling prevents NEW duplicates.
-      const knownDupes = { Maths: 0, English: 0, VR: 41 };
-      expect(dupes.length).toBeLessThanOrEqual(knownDupes[subjectName] || 0);
+      expect(dupes).toEqual([]);
     });
 
     it('reports question coverage (questions with mappings vs total)', () => {

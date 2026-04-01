@@ -281,9 +281,7 @@ describe('Explanation quality — mechanical checks', () => {
         `${q._subject}/${q._topicKey}/Q${q.id}: "${q.explanation}"`
       ));
     }
-    // 33 known short explanations as of 2026-04-01 (simple arithmetic).
-    // Ceiling prevents NEW short explanations. Decrease as content improves.
-    expect(broken.length).toBeLessThanOrEqual(33);
+    expect(broken).toEqual([]);
   });
 
   it('no explanation ends with the check mark alone (no reasoning)', () => {
