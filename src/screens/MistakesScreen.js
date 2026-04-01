@@ -605,34 +605,50 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
 
                   {/* Expanded mistake details */}
                   {isExpanded && (
-                    <div className="border-t border-gray-100">
-                      {group.mistakes.slice(0, 10).map((mistake, i) => (
-                        <div key={mistake.questionId || i} className="px-5 py-3 border-b border-gray-50 last:border-b-0">
-                          <p className="text-sm text-[#2D3436] font-medium mb-1">
-                            {(mistake.questionText || '').slice(0, 120)}{(mistake.questionText || '').length > 120 ? '...' : ''}
-                          </p>
-                          <div className="flex items-center gap-3 text-xs text-[#636E72]">
-                            <span>D{mistake.difficulty || '?'}</span>
-                            <span>{new Date(mistake.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
-                          </div>
-                        </div>
-                      ))}
+                    <div className="border-t border-gray-100 px-4 py-3">
+                      <div className="space-y-2">
+                        {group.mistakes.slice(0, 10).map((mistake, i) => {
+                          // Show the most useful preview per question type
+                          let preview = (mistake.questionText || '').slice(0, 100);
+                          if (mistake.questionType === 'error-spotting' && mistake.fullQuestion?.segments) {
+                            preview = mistake.fullQuestion.segments.join(' | ');
+                          } else if (mistake.questionType === 'passage' && mistake.fullQuestion?.passageTitle) {
+                            preview = `${mistake.fullQuestion.passageTitle}: ${mistake.questionText}`;
+                          } else if (mistake.questionType === 'pick-from-sets' && mistake.setA && mistake.setB) {
+                            preview = `${mistake.questionText} (${mistake.setA.join(', ')} / ${mistake.setB.join(', ')})`;
+                          }
+                          if (preview.length > 110) preview = preview.slice(0, 108) + '...';
+
+                          return (
+                            <div key={mistake.questionId || i}
+                              className="flex items-start gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100">
+                              <div className="w-6 h-6 rounded-full bg-[#FF6B6B]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <XCircle className="w-3.5 h-3.5 text-[#FF6B6B]" />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <p className="text-sm text-[#2D3436] font-medium leading-snug">{preview}</p>
+                                <p className="text-[11px] text-[#9ca3af] mt-1">
+                                  {new Date(mistake.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                                </p>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                       {group.mistakes.length > 10 && (
-                        <p className="px-5 py-2 text-xs text-[#636E72] italic">
+                        <p className="text-xs text-[#9ca3af] italic mt-2 text-center">
                           + {group.mistakes.length - 10} more
                         </p>
                       )}
                       {group.mistakes.some(m => m.questionType !== 'missing') && (
-                        <div className="px-5 py-3 bg-gray-50">
-                          <button
-                            onClick={() => startPractice(topicKey, group.subject, group.mistakes)}
-                            className="flex items-center gap-2 px-4 py-2 text-white font-bold rounded-lg text-sm transition-colors"
-                            style={{ background: colour }}
-                          >
-                            <Target className="w-4 h-4" />
-                            Practice These ({group.mistakes.filter(m => m.questionType !== 'missing').length})
-                          </button>
-                        </div>
+                        <button
+                          onClick={() => startPractice(topicKey, group.subject, group.mistakes)}
+                          className="mt-3 w-full flex items-center justify-center gap-2 py-2.5 text-white font-bold rounded-xl text-sm transition-colors"
+                          style={{ background: colour }}
+                        >
+                          <Target className="w-4 h-4" />
+                          Practice These ({group.mistakes.filter(m => m.questionType !== 'missing').length})
+                        </button>
                       )}
                     </div>
                   )}
