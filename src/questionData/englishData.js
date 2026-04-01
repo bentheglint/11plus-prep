@@ -18187,10 +18187,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The children who","had finished early,","were allowed to","read their books."],
+          "segments": ["The swimmers who","had trained hardest,","qualified for the","county championships."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The comma after 'early' is wrong. 'Who had finished early' is essential information (it tells us WHICH children), so it should NOT have commas around it. Remove the comma. ✓"
+          "explanation": "The comma after 'hardest' shouldn't be there. 'Who had trained hardest' is a defining relative clause — it tells us WHICH swimmers qualified. Because this information is essential to the meaning, it doesn't get commas. Top tip: if you can't remove the clause without losing the point of the sentence, leave the commas out. ✓"
         },
         {
           "id": 376,
@@ -18217,10 +18217,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["My best friend,","Amira, who lives","next door is coming","to my party."],
+          "segments": ["Our headteacher,","Mrs Sharma, who joined","last September has","made lots of changes."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after 'door': 'next door, is coming'. The information 'who lives next door' needs a closing comma. ✓"
+          "explanation": "A comma is needed after 'September' — it should be 'last September, has'. The phrase 'who joined last September' is extra information about Mrs Sharma that could be removed, so it needs a closing comma to match the opening one. Think of commas around extra information like brackets — they always come in pairs! ✓"
         },
         {
           "id": 379,
@@ -18237,10 +18237,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The story that we","read in class,","was about a","boy who lived alone."],
+          "segments": ["The cake that Grandma","baked for the fair,","won first prize","in the competition."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The comma after 'class' is wrong. 'That we read in class' is essential information (it tells us WHICH story), so it should NOT have a comma. Remove it. ✓"
+          "explanation": "The comma after 'fair' shouldn't be there. 'That Grandma baked for the fair' is a defining clause — it tells us WHICH cake won. Clauses starting with 'that' are almost always defining, which means no commas. Here's a handy trick: if you see 'that' introducing a clause, you almost never need a comma after it. ✓"
         },
         {
           "id": 381,
@@ -18257,10 +18257,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The pupils who","had been absent,","needed to catch","up on their work."],
+          "segments": ["The runners who","completed the course,","received medals at","the finish line."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The comma after 'absent' is wrong. 'Who had been absent' is essential (it tells us WHICH pupils), so no commas. ✓"
+          "explanation": "The comma after 'course' is wrong. 'Who completed the course' is essential information — it tells us WHICH runners got medals (not all of them, just the ones who finished). Because the information is defining, no comma is needed. Remember: if the clause answers 'which ones?', it's essential and shouldn't have commas. ✓"
         },
         {
           "id": 383,
@@ -18277,10 +18277,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The boy who sits","next to me,","always forgets","his homework."],
+          "segments": ["The girl who won","the spelling bee,","was given a book","token as her prize."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The comma after 'me' is wrong. 'Who sits next to me' is essential information (it tells us WHICH boy), so no comma is needed. ✓"
+          "explanation": "The comma after 'bee' shouldn't be there. 'Who won the spelling bee' is essential — it tells us WHICH girl received the prize. Without this information, we wouldn't know who the sentence is about. A good test: try removing the clause. If the sentence loses its point ('The girl was given a book token' — which girl?), the clause is essential. ✓"
         },
         {
           "id": 385,
@@ -18547,10 +18547,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The children played","outside; meanwhile,","the teachers prepared","the classroom."],
+          "segments": ["The hall was packed;","every seat had","been taken before","the doors opened."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 4,
-          "explanation": "No mistakes here! Every bit of punctuation is in the right place. The semicolon is used correctly to join two sentences that are closely connected. ✓"
+          "explanation": "No mistakes here! The semicolon is used perfectly — it joins two complete sentences that are closely related. 'The hall was packed' and 'every seat had been taken before the doors opened' are both full sentences, and the semicolon shows the connection between them. If a semicolon joins two ideas that could each stand alone, it's doing its job. ✓"
         },
         {
           "id": 412,
@@ -18567,10 +18567,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["There was one rule","at camp: everyone","had to be back","before it got dark."],
+          "segments": ["She had one wish:","to visit the Natural","History Museum before","the end of term."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 4,
-          "explanation": "Tricky one! There's no error — all the punctuation is correct. The colon is used correctly here. ✓"
+          "explanation": "Tricky one! There's no error — every bit of punctuation is correct. The colon after 'wish' is spot on: it introduces an explanation of what the wish actually was. When a colon comes after a complete sentence and introduces something that expands on it, that's exactly the right use. Well done if you spotted that everything was fine! ✓"
         },
         {
           "id": 414,
@@ -18727,20 +18727,20 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The well known author","visited our school","to read from her","latest children's book."],
+          "segments": ["The long awaited school","trip to London was","finally confirmed by","the headteacher's letter."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A hyphen is needed to join these words together into one describing phrase. When two or more words team up to describe something ('well-known', 'nine-year-old'), the hyphen shows they belong together as a single description. ✓"
+          "explanation": "'Long awaited' needs a hyphen: 'long-awaited'. When two words team up before a noun to describe it as a single idea, they need a hyphen to show they belong together. 'Long-awaited school trip' means the trip that has been awaited for a long time. Without the hyphen, the reader might stumble. Did you know? Hyphens are one of the trickiest punctuation marks — even adults get them wrong! ✓"
         },
         {
           "id": 430,
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["My nine year old","cousin won first","prize in the","painting competition."],
+          "segments": ["We adopted a two","year old rescue dog","from the shelter","on Saturday morning."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A hyphen is needed to join these words together into one describing phrase. When two or more words team up to describe something ('well-known', 'nine-year-old'), the hyphen shows they belong together as a single description. ✓"
+          "explanation": "'Two year old' needs hyphens: 'two-year-old'. When a number-plus-unit phrase describes a noun ('two-year-old dog'), the hyphens glue the words together into one compound adjective. Without them, the reader might stumble over which words belong together. This rule works the same way for any age or measurement: 'a three-metre-long snake', 'a five-minute walk'. ✓"
         },
         {
           "id": 431,
@@ -23198,10 +23198,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 383,
           "difficulty": 2,
-          "question": "Choose the correct word to complete the sentence: 'I ___ never tasted mango before I went to India.'",
-          "options": ["have","had","has","was","am"],
+          "question": "Choose the correct word to complete the sentence: 'My sister ___ already finished her homework, so she is reading a book.'",
+          "options": ["have","has","had","is","were"],
           "correct": 1,
-          "explanation": "'Had' is correct — the past perfect ('had tasted') is needed because there are two past events: tasting mango and going to India. The tasting (or lack of it) happened before going to India. ✓"
+          "explanation": "'Has' is correct because 'my sister' is singular (one person), and we use 'has' with singular subjects: she has, he has, it has. We use 'have' with plural subjects (they have) and with 'I' and 'you'. The word 'already' is a clue that we need the present perfect tense: 'has finished'. A quick way to check: try saying 'she have' out loud — it sounds wrong, doesn't it? Trust your ear on this one! ✓"
         },
         {
           "id": 384,

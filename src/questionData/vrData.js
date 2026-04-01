@@ -15167,11 +15167,11 @@ const vrData = {
         },
         {
           "id": 96,
-          "difficulty": 3,
-          "question": "What number comes next in this series? 11, 13, 17, 19, 23, ___",
-          "options": ["30", "29", "27", "31", "28"],
-          "correct": 1,
-          "explanation": "Consecutive primes. Next after 23 is 29 (not 25, 27, or 28 — none are prime). Tip: Primes have irregular gaps — check each candidate number carefully. ✓"
+          "difficulty": 2,
+          "question": "What number comes next in this series? 4, 9, 12, 17, 20, ___",
+          "options": ["23", "26", "28", "25", "24"],
+          "correct": 3,
+          "explanation": "The differences alternate: +5, +3, +5, +3, +5. The next step is +5, so 20 + 5 = 25. Tip: If you notice two different gaps taking turns, write them down in order — you'll spot the repeat! ✓"
         },
         {
           "id": 97,

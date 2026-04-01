@@ -49,6 +49,13 @@ describe('Duplicate Detection', () => {
           fingerprint = normalise(q.passageId + '|' + q.question);
         } else if (q.questionType === 'pick-from-sets' && q.setA && q.setB) {
           fingerprint = normalise(q.setA.join(',') + '|' + q.setB.join(','));
+        } else if (q.questionType === 'select-two' && q.options && q.correctPair) {
+          // select-two questions often share prompt text — differentiated by options
+          fingerprint = normalise(q.question + '|' + q.options.join(','));
+        } else if (q.options && q.options.length > 0) {
+          // Standard MCQ with generic prompt (oddTwoOut, letterSums, etc.)
+          // — include options in fingerprint to distinguish them
+          fingerprint = normalise(q.question + '|' + q.options.join(','));
         } else {
           fingerprint = normalise(q.question);
         }
@@ -65,10 +72,7 @@ describe('Duplicate Detection', () => {
     if (duplicates.length > 0) {
       console.log(`\nDuplicate questions found (${duplicates.length}):\n${duplicates.slice(0, 10).join('\n')}\n`);
     }
-    // 174 known duplicates as of 2026-04-01 (mostly punctuation/grammar).
-    // This ceiling should decrease as duplicates are cleaned up.
-    // Fail if NEW duplicates are introduced (count goes up).
-    expect(duplicates.length).toBeLessThanOrEqual(174);
+    expect(duplicates).toEqual([]);
   });
 
   it('no pick-from-sets topic has identical setA+setB combinations', () => {
