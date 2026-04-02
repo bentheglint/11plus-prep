@@ -2601,7 +2601,7 @@ const vrData = {
         },
         {
           id: 9,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "pick-from-sets",
           question: "___ is to sheep as pack is to ___",
           setA: ["lamb","flock","field"],

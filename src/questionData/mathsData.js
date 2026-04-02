@@ -6968,7 +6968,7 @@ ratio: {
     {
       id: 159,
       difficulty: 3,
-      question: "Three brothers share an inheritance in the ratio 2:5:8. The youngest brother receives £3,600. How much is the total inheritance?",
+      question: "Three brothers share an inheritance in the ratio 2:5:8, from youngest to oldest. The youngest brother receives £3,600. How much is the total inheritance?",
       options: ["£21,000", "£24,000", "£27,000", "£30,000", "£33,000"],
       correct: 2,
       explanation: "The youngest gets the smallest share: 2 parts = £3,600. So 1 part = £1,800. Total parts = 2 + 5 + 8 = 15. Total = 15 × £1,800 = £27,000. ✓"
@@ -7118,10 +7118,10 @@ ratio: {
     {
       id: 177,
       difficulty: 3,
-      question: "On a map, 1 cm represents 4 km. A lake is 3.5 cm long on the map. A cyclist rides around the actual lake at 16 km/h. How long does one lap take?",
+      question: "On a map, 1 cm represents 4 km. The path around a lake measures 3.5 cm on the map. A cyclist rides around the actual lake at 16 km/h. How long does one lap take?",
       options: ["52.5 minutes", "55 minutes", "57.5 minutes", "60 minutes", "62.5 minutes"],
       correct: 0,
-      explanation: "Lake length = 3.5 × 4 = 14 km. At 16 km/h, time = 14 ÷ 16 = 0.875 hours = 0.875 × 60 = 52.5 minutes. ✓"
+      explanation: "Path around lake = 3.5 × 4 = 14 km. At 16 km/h, time = 14 ÷ 16 = 0.875 hours = 0.875 × 60 = 52.5 minutes. ✓"
     },
     {
       id: 178,
@@ -7712,7 +7712,7 @@ fractions: {
     {
       id: 5,
       difficulty: 1,
-      question: "A bowl is 5/8 full of flour. Jack uses 1/8 of the bowl for a recipe. What fraction of the bowl is left?",
+      question: "A bowl is 5/8 full of flour. Jack uses 1/8 of the bowl for a recipe. What fraction of the bowl is left? Give your answer in its simplest form.",
       options: ["4/8", "1/2", "6/8", "3/4", "4/16"],
       correct: 1,
       explanation: "Jack has 5/8 and uses 1/8: 5/8 - 1/8 = 4/8. Simplify: 4/8 = 1/2 of the bowl left. ✓"
@@ -7802,7 +7802,7 @@ fractions: {
     {
       id: 16,
       difficulty: 1,
-      question: "What is 7/10 - 2/10?",
+      question: "What is 7/10 - 2/10? Give your answer in its simplest form.",
       options: ["5/10", "5/20", "1/2", "9/10", "1/5"],
       correct: 2,
       explanation: "7/10 - 2/10 = 5/10. Simplify: 5/10 = 1/2. ✓"
@@ -7850,7 +7850,7 @@ fractions: {
     {
       id: 22,
       difficulty: 1,
-      question: "What is 3/4 - 1/4?",
+      question: "What is 3/4 - 1/4? Give your answer in its simplest form.",
       options: ["1/4", "2/4", "2/8", "1/2", "3/8"],
       correct: 3,
       explanation: "3/4 - 1/4 = 2/4. Simplify: 2/4 = 1/2. ✓"
@@ -7866,7 +7866,7 @@ fractions: {
     {
       id: 24,
       difficulty: 1,
-      question: "What is 5/12 + 1/12?",
+      question: "What is 5/12 + 1/12? Give your answer in its simplest form.",
       options: ["1/2", "6/12", "5/24", "6/24", "1/3"],
       correct: 0,
       explanation: "5/12 + 1/12 = 6/12. Simplify: 6/12 = 1/2. ✓"
@@ -7916,7 +7916,7 @@ fractions: {
       id: 30,
       difficulty: 1,
       image: "fractions/jug-q30.svg",
-      question: "A jug is 7/8 full of orange juice. Dad pours out 3/8 of the jug. What fraction of the jug still has juice?",
+      question: "A jug is 7/8 full of orange juice. Dad pours out 3/8 of the jug. What fraction of the jug still has juice? Give your answer in its simplest form.",
       options: ["4/8", "1/2", "3/8", "5/8", "4/16"],
       correct: 1,
       explanation: "The jug had 7/8 and Dad poured out 3/8: 7/8 - 3/8 = 4/8. Simplify: 4/8 = 1/2 of the jug left. ✓"
@@ -8036,7 +8036,7 @@ fractions: {
     },
     {
       id: 45,
-      difficulty: 3,
+      difficulty: 2,
       question: "Maya paints 2/3 of a fence in the morning and 1/12 more after lunch. What fraction of the fence has she painted?",
       options: ["3/15", "3/4", "7/12", "9/12", "5/12"],
       correct: 1,
@@ -8054,7 +8054,7 @@ fractions: {
     {
       id: 47,
       difficulty: 1,
-      question: "A tin of paint is 5/6 full. Ruby uses 1/6 of the tin for her art project. What fraction of the tin is left?",
+      question: "A tin of paint is 5/6 full. Ruby uses 1/6 of the tin for her art project. What fraction of the tin is left? Give your answer in its simplest form.",
       options: ["4/6", "4/12", "1/2", "2/3", "5/12"],
       correct: 3,
       explanation: "The tin had 5/6 and Ruby used 1/6: 5/6 - 1/6 = 4/6. Simplify: 4/6 = 2/3 of the tin left. ✓"
@@ -8118,7 +8118,7 @@ fractions: {
     {
       id: 55,
       difficulty: 1,
-      question: "What is 9/10 - 3/10?",
+      question: "What is 9/10 - 3/10? Give your answer in its simplest form.",
       options: ["3/5", "6/10", "7/10", "6/20", "1/2"],
       correct: 0,
       explanation: "9/10 - 3/10 = 6/10. Simplify: 6/10 = 3/5. ✓"
@@ -8182,7 +8182,7 @@ fractions: {
     {
       id: 63,
       difficulty: 1,
-      question: "A roll of sticky tape is 8/12 full. After wrapping a present, 2/12 has been used. What fraction is left?",
+      question: "A roll of sticky tape is 8/12 full. After wrapping a present, 2/12 has been used. What fraction is left? Give your answer in its simplest form.",
       options: ["6/12", "2/3", "6/24", "4/12", "1/2"],
       correct: 4,
       explanation: "8/12 - 2/12 = 6/12. Simplify: 6/12 = 1/2. ✓"
@@ -8302,7 +8302,7 @@ fractions: {
     {
       id: 78,
       difficulty: 1,
-      question: "What is 1/8 + 3/8?",
+      question: "What is 1/8 + 3/8? Give your answer in its simplest form.",
       options: ["4/16", "5/8", "1/2", "3/16", "4/8"],
       correct: 2,
       explanation: "1/8 + 3/8 = 4/8. Simplify: 4/8 = 1/2. ✓"
@@ -8429,7 +8429,7 @@ fractions: {
     },
     {
       id: 94,
-      difficulty: 3,
+      difficulty: 2,
       question: "A jug holds 2 litres. How much is 3/4 of the jug in millilitres?",
       options: ["1500ml", "1450ml", "1400ml", "1550ml", "1600ml"],
       correct: 0,
@@ -8454,7 +8454,7 @@ fractions: {
     {
       id: 97,
       difficulty: 1,
-      question: "What is 11/12 - 5/12?",
+      question: "What is 11/12 - 5/12? Give your answer in its simplest form.",
       options: ["5/12", "1/2", "6/24", "6/12", "7/12"],
       correct: 1,
       explanation: "11/12 - 5/12 = 6/12. Simplify: 6/12 = 1/2. ✓"
@@ -8478,7 +8478,7 @@ fractions: {
     {
       id: 100,
       difficulty: 1,
-      question: "What is 3/8 + 1/8?",
+      question: "What is 3/8 + 1/8? Give your answer in its simplest form.",
       options: ["4/16", "4/8", "1/2", "2/8", "3/16"],
       correct: 2,
       explanation: "3/8 + 1/8 = 4/8. Simplify: 4/8 = 1/2. ✓"
@@ -8494,7 +8494,7 @@ fractions: {
     {
       id: 102,
       difficulty: 1,
-      question: "What is 8/9 - 2/9?",
+      question: "What is 8/9 - 2/9? Give your answer in its simplest form.",
       options: ["6/18", "2/3", "4/9", "6/9", "1/3"],
       correct: 1,
       explanation: "8/9 - 2/9 = 6/9. Simplify: 6/9 = 2/3. ✓"
@@ -8549,8 +8549,8 @@ fractions: {
     },
     {
       id: 109,
-      difficulty: 3,
-      question: "Oliver has read 5/6 of his book. His sister has read 1/3 of the same book. How much more of the book has Oliver read than his sister?",
+      difficulty: 2,
+      question: "Oliver has read 5/6 of his book. His sister has read 1/3 ofthe same book. How much more of the book has Oliver read than his sister?",
       options: ["1/2", "4/6", "2/3", "4/3", "1/3"],
       correct: 0,
       explanation: "Convert to sixths: 1/3 = 2/6. Then 5/6 - 2/6 = 3/6. Simplify: 3/6 = 1/2 more of the book. ✓"
@@ -8573,7 +8573,7 @@ fractions: {
     },
     {
       id: 112,
-      difficulty: 3,
+      difficulty: 2,
       question: "A box of 56 chocolates has 21 dark chocolates. What fraction are dark?",
       options: ["1/3", "1/2", "2/5", "3/8", "5/8"],
       correct: 3,
@@ -8622,7 +8622,7 @@ fractions: {
     {
       id: 118,
       difficulty: 2,
-      question: "Which fraction equals 40%?",
+      question: "Which fraction equals 40%? Give your answer in its simplest form.",
       options: ["1/4", "4/10", "1/2", "3/5", "2/5"],
       correct: 4,
       explanation: "40% = 40/100. Simplify: 40÷20 = 2 and 100÷20 = 5, so 2/5. ✓"
@@ -9091,7 +9091,7 @@ fractions: {
     // --- D2 (4 questions: 175–178) ---
     {
       id: 175,
-      difficulty: 1,
+      difficulty: 2,
       question: "What is 1 2/5 + 2 1/5?",
       options: ["3 1/5", "3 3/5", "3 2/5", "3 4/5", "4"],
       correct: 1,
@@ -9099,7 +9099,7 @@ fractions: {
     },
     {
       id: 176,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is 3 1/4 − 1 3/4?",
       options: ["1 1/4", "1 3/4", "1 1/2", "2", "2 1/4"],
       correct: 2,
@@ -9115,7 +9115,7 @@ fractions: {
     },
     {
       id: 178,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is 4 1/6 − 2 5/6?",
       options: ["1 1/6", "2 1/3", "1 2/6", "2 1/6", "1 1/3"],
       correct: 4,
