@@ -76,3 +76,18 @@ ratings can be omitted or marked with a dash.
 - **high** — clearly wrong, no reasonable argument for current rating
 - **medium** — borderline case, could go either way but leans toward change
 - **low** — very borderline, flagging for awareness only
+
+## Distribution Analysis Rule
+
+If you are reviewing a BATCH (subset) of a topic, do NOT calculate
+or comment on difficulty distribution (e.g., "this batch has 0% D1").
+Distribution metrics are only meaningful across the FULL topic.
+
+- **Per-question ratings:** Review in the batch — flag individual
+  questions that are mis-rated.
+- **Distribution totals:** Only report if you have seen ALL questions
+  in the topic. If reviewing a batch, state "Distribution analysis
+  deferred to full-topic summary" and move on.
+
+This prevents false alarms when one batch happens to cluster around
+a single difficulty level.

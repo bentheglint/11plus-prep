@@ -81,3 +81,19 @@ is its average speed?"
 | Q25  | No trap answer | medium | Common-error answer (multiply instead of divide) not included in options |
 | Q42  | Format mismatch | low | Correct answer has 1 decimal place, two distractors are whole numbers |
 ```
+
+## Distribution Analysis Rule
+
+If you are reviewing a BATCH (subset) of a topic, do NOT calculate
+or comment on answer position distribution, "No mistake" rates, or
+category coverage percentages. These metrics are only meaningful
+across the FULL topic.
+
+- **Per-question distractor checks:** Review in the batch.
+- **Distribution totals (answer bias, category coverage):** Only
+  report if you have seen ALL questions in the topic. If reviewing
+  a batch, state "Distribution analysis deferred to full-topic
+  summary" and move on.
+
+This prevents false alarms when one batch has different characteristics
+from another — the full topic may balance out perfectly.
