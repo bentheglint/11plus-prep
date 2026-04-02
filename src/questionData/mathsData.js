@@ -16164,7 +16164,7 @@ negativenumbers: {
   ]
 }
 ,
-primenumbers: {
+primenumbersfactors: {
   name: "Prime Numbers & Factors",
   questions: [
     {

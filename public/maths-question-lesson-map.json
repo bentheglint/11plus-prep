@@ -9967,7 +9967,7 @@
       "confidence": "high"
     }
   ],
-  "primenumbers": [
+  "primenumbersfactors": [
     {
       "questionId": 1,
       "subConceptId": "identifying-primes",

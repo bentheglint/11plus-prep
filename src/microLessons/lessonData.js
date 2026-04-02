@@ -6029,7 +6029,7 @@ export const lessonBank = {
   },
 
   // TOPIC: Prime Numbers & Factors
-  primenumbers: {
+  primenumbersfactors: {
     name: "Prime Numbers & Factors",
     subConcepts: [
       // ==========================================
@@ -14509,7 +14509,7 @@ const stagingMap = {
   negativenumbers: negativeNumbersSubConcepts,
   percentages: percentagesSubConcepts,
   placevalue: placevalueSubConcepts,
-  primenumbers: primenumbersfactorsSubConcepts,
+  primenumbersfactors: primenumbersfactorsSubConcepts,
   ratio: ratioSubConcepts,
   sequences: sequencesSubConcepts,
   speeddistancetime: speeddistancetimeSubConcepts,
@@ -14564,7 +14564,7 @@ export const testSubConceptBank = {
   negativenumbers: negativeNumbersSubConcepts,
   percentages: percentagesSubConcepts,
   placevalue: placevalueSubConcepts,
-  primenumbers: primenumbersfactorsSubConcepts,
+  primenumbersfactors: primenumbersfactorsSubConcepts,
   ratio: ratioSubConcepts,
   sequences: sequencesSubConcepts,
   speeddistancetime: speeddistancetimeSubConcepts,
