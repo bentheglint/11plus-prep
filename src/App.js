@@ -34,6 +34,8 @@ import allTips from './data/studyTips';
 import { selectPostQuestionTip, selectPreQuizTip } from './utils/tipSelection';
 import { selectWeightedTopics } from './utils/spacedRepetition';
 import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
+import { checkAnswerCorrectness, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
+import { getQuizSaveKey, buildQuizSaveState, isQuizExpired, parseAndValidateQuiz } from './utils/quizPersistence';
 import useLeitner from './hooks/useLeitner';
 import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
@@ -161,19 +163,19 @@ function App() {
 
   // ── Quiz State Persistence ──
   // Save quiz progress so children can resume if they leave mid-quiz
-  const quizSaveKey = currentUser ? `user:${currentUser}:active-quiz` : null;
+  const quizSaveKey = getQuizSaveKey(currentUser);
 
   // Save active quiz state whenever it changes
   useEffect(() => {
     if (!quizSaveKey) return;
     if (currentView === 'quiz' && quizQuestions.length > 0) {
-      localStorage.setItem(quizSaveKey, JSON.stringify({
+      const saveState = buildQuizSaveState({
         currentView, selectedSubject, selectedTopic, quizMode,
         quizQuestions, currentQuestionIndex, answers,
         selectedAnswer, selectedPair, showFeedback,
         sessionId: quizSessionId.current,
-        savedAt: Date.now(),
-      }));
+      });
+      localStorage.setItem(quizSaveKey, JSON.stringify(saveState));
     } else {
       // Clear saved quiz when not in quiz view
       localStorage.removeItem(quizSaveKey);
@@ -185,30 +187,25 @@ function App() {
   useEffect(() => {
     if (quizRestored.current || !quizSaveKey) return;
     quizRestored.current = true;
-    try {
-      const saved = localStorage.getItem(quizSaveKey);
-      if (!saved) return;
-      const state = JSON.parse(saved);
-      // Only restore if saved within last 24 hours
-      if (Date.now() - state.savedAt > 24 * 60 * 60 * 1000) {
-        localStorage.removeItem(quizSaveKey);
-        return;
-      }
-      if (state.quizQuestions?.length > 0 && state.currentView === 'quiz') {
-        setSelectedSubject(state.selectedSubject);
-        setSelectedTopic(state.selectedTopic);
-        setQuizMode(state.quizMode);
-        setQuizQuestions(state.quizQuestions);
-        setCurrentQuestionIndex(state.currentQuestionIndex);
-        setAnswers(state.answers || []);
-        setSelectedAnswer(state.selectedAnswer);
-        setSelectedPair(state.selectedPair || []);
-        setShowFeedback(state.showFeedback || false);
-        quizSessionId.current = state.sessionId || Date.now();
-        questionStartTime.current = Date.now();
-        setCurrentView('quiz');
-      }
-    } catch { /* ignore corrupt data */ }
+    const raw = localStorage.getItem(quizSaveKey);
+    const state = parseAndValidateQuiz(raw);
+    if (!state) {
+      // Clear expired or corrupt data
+      if (raw) localStorage.removeItem(quizSaveKey);
+      return;
+    }
+    setSelectedSubject(state.selectedSubject);
+    setSelectedTopic(state.selectedTopic);
+    setQuizMode(state.quizMode);
+    setQuizQuestions(state.quizQuestions);
+    setCurrentQuestionIndex(state.currentQuestionIndex);
+    setAnswers(state.answers);
+    setSelectedAnswer(state.selectedAnswer);
+    setSelectedPair(state.selectedPair);
+    setShowFeedback(state.showFeedback);
+    quizSessionId.current = state.sessionId;
+    questionStartTime.current = Date.now();
+    setCurrentView('quiz');
   }, [quizSaveKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Keep Dev Review panel context updated
@@ -429,19 +426,7 @@ function App() {
 
     setShowFeedback(true);
 
-    let isCorrect;
-    if (currentQuestion.questionType === 'select-two' || currentQuestion.questionType === 'pick-from-sets') {
-      const cp = currentQuestion.correctPair;
-      if (currentQuestion.questionType === 'select-two') {
-        isCorrect = selectedPair.length === 2 &&
-          ((selectedPair[0] === cp[0] && selectedPair[1] === cp[1]) ||
-           (selectedPair[0] === cp[1] && selectedPair[1] === cp[0]));
-      } else {
-        isCorrect = selectedPair[0] === cp[0] && selectedPair[1] === cp[1];
-      }
-    } else {
-      isCorrect = selectedAnswer === currentQuestion.correct;
-    }
+    const isCorrect = checkAnswerCorrectness(currentQuestion, selectedAnswer, selectedPair);
 
     const rawTimeMs = Date.now() - questionStartTime.current;
     const timeSpentMs = rawTimeMs > 300000 ? 0 : rawTimeMs; // Cap at 5 mins — longer means they walked away
@@ -455,7 +440,7 @@ function App() {
     // Post-question tip: show ~every 3rd wrong answer
     if (!isCorrect) {
       wrongAnswerCount.current += 1;
-      if (wrongAnswerCount.current % 3 === 1) {
+      if (shouldShowPostQuestionTip(wrongAnswerCount.current)) {
         const tip = selectPostQuestionTip(currentQ.topicKey, allTips, sessionShownTipIds.current, userData.seenTips);
         if (tip) {
           sessionShownTipIds.current.add(tip.id);
@@ -987,49 +972,10 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
 
   // Save per-question results and update streaks/PP after quiz completion
   const recordQuizResults = (sessionQuestions, sessionAnswers) => {
-    const sessionId = quizSessionId.current;
-    let correctCount = 0;
-
-    // Save individual question results
-    sessionQuestions.forEach((q, i) => {
-      const isCorrect = sessionAnswers[i]?.correct || false;
-      if (isCorrect) correctCount++;
-      userData.saveQuestionResult({
-        id: Date.now() + i,
-        date: new Date().toISOString(),
-        questionId: q.question.id,
-        topicKey: q.topicKey,
-        subject: selectedSubject,
-        difficulty: q.question.difficulty || 2,
-        correct: isCorrect,
-        timeSpentMs: sessionAnswers[i]?.timeSpentMs || 0,
-        mode: quizMode || 'focused',
-        sessionId,
-      });
+    recordQuizResultsOrch(sessionQuestions, sessionAnswers, {
+      userData, streaksAndPP, selectedSubject, quizMode,
+      selectedTopic, topicPerformance, sessionId: quizSessionId.current,
     });
-
-    // Save practice session log
-    userData.savePracticeSession({
-      id: sessionId,
-      date: new Date().toISOString().split('T')[0],
-      mode: quizMode || 'focused',
-      subject: selectedSubject,
-      topicKey: quizMode === 'daily' ? null : selectedTopic,
-      questionsAttempted: sessionQuestions.length,
-      questionsCorrect: correctCount,
-    });
-
-    // Update streak (1 completed quiz counts)
-    streaksAndPP.recordQuizCompletion();
-
-    // Award Prep Points
-    const percentage = Math.round((correctCount / sessionQuestions.length) * 100);
-    const isFirstTime = selectedTopic && !topicPerformance[selectedTopic];
-    const ppCalc = streaksAndPP.calculateQuizPP(
-      sessionQuestions.length, correctCount, percentage, isFirstTime
-    );
-    streaksAndPP.awardPP(ppCalc.total, 'Quiz completed');
-
   };
 
   // ── Dev Navigation ──
@@ -1327,76 +1273,13 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     const results = mockTest.getResults();
     if (results && !mockResultsSaved.current) {
       mockResultsSaved.current = true;
-      const sessionId = Date.now();
-      const mockQuestions = mockTest.mockTestQuestions;
-      const mockAnswers = mockTest.mockTestAnswers;
-      let mockCorrectCount = 0;
-
-      mockQuestions.forEach((q, i) => {
-        const answer = mockAnswers[i];
-        const question = q.question;
-        let isCorrect = false;
-        if (question.questionType === 'select-two' || question.questionType === 'pick-from-sets') {
-          if (Array.isArray(answer) && question.correctPair) {
-            if (question.questionType === 'select-two') {
-              isCorrect = answer.length === 2 &&
-                ((answer[0] === question.correctPair[0] && answer[1] === question.correctPair[1]) ||
-                 (answer[0] === question.correctPair[1] && answer[1] === question.correctPair[0]));
-            } else {
-              isCorrect = answer[0] === question.correctPair[0] && answer[1] === question.correctPair[1];
-            }
-          }
-        } else {
-          isCorrect = answer === question.correct;
-        }
-        if (isCorrect) mockCorrectCount++;
-
-        userData.saveQuestionResult({
-          id: sessionId + i,
-          date: new Date().toISOString(),
-          questionId: question.id,
-          topicKey: q.topicKey,
-          subject: mockTest.mockTestSubject,
-          difficulty: question.difficulty || 2,
-          correct: isCorrect,
-          timeSpentMs: mockTest.mockTestQuestionTimes[i] || 0,
-          mode: 'mock',
-          sessionId,
-        });
-      });
-
-      // Save practice session + update streak + award PP
-      userData.savePracticeSession({
-        id: sessionId,
-        date: new Date().toISOString().split('T')[0],
-        mode: 'mock',
-        subject: mockTest.mockTestSubject,
-        topicKey: null,
-        questionsAttempted: mockQuestions.length,
-        questionsCorrect: mockCorrectCount,
-      });
-      streaksAndPP.recordQuizCompletion();
-      const pct = Math.round((mockCorrectCount / mockQuestions.length) * 100);
-      const ppCalc = streaksAndPP.calculateQuizPP(mockQuestions.length, mockCorrectCount, pct, false);
-      streaksAndPP.awardPP(ppCalc.total, 'Mock test completed');
-
-      // Persist aggregate mock result to history (parent dashboard, trends, etc.)
-      userData.saveMockTestResult({
-        id: sessionId,
-        date: new Date().toISOString(),
-        subject: mockTest.mockTestSubject,
-        totalQuestions: mockQuestions.length,
-        totalCorrect: mockCorrectCount,
-        percentage: pct,
-        timeTaken: results.timeTaken,
-        timeLimit: results.timeLimit,
-        sections: Object.entries(results.sectionResults).map(([name, data]) => ({
-          name,
-          correct: data.correct,
-          total: data.total,
-          percentage: Math.round((data.correct / data.total) * 100),
-        })),
-      });
+      saveMockTestResults(
+        mockTest.mockTestQuestions,
+        mockTest.mockTestAnswers,
+        { mockTestSubject: mockTest.mockTestSubject, mockTestQuestionTimes: mockTest.mockTestQuestionTimes },
+        results,
+        { userData, streaksAndPP }
+      );
     }
 
     return (

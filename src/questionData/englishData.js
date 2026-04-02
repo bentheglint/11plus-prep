@@ -154,6 +154,44 @@ const englishData = {
           correct: 4,
           explanation: "The passage contrasts the ordinary setting (a small museum between a chip shop and post office, in an 'ordinary town') with the extraordinary objects inside (a 140-million-year-old tooth, a magical compass). The repetition of 'ordinary' at the end emphasises that amazing things can be found in unexpected places. ✓"
         },
+        {
+          id: 454,
+          difficulty: 2,
+          questionType: 'passage',
+          questionSubType: 'vocabulary-in-context',
+          passageId: 'peculiar-museum',
+          passageTitle: "The Peculiar Museum",
+          passage: `Priya had walked past the little museum on Coppice Lane a thousand times without ever going inside. It sat between the chip shop and the post office, with a faded green door and a hand-painted sign that read: "Coppice Lane Museum of Curious Objects — Open Tuesdays and Saturdays, 10am–4pm."\n\nIt was a rainy Saturday in March, and Priya had nothing else to do. She pushed open the door. A bell tinkled overhead.\n\nInside, the museum was far larger than it looked from the street. Glass cabinets lined every wall, crammed with objects that seemed to glow under the warm yellow lights. A stuffed owl perched on a branch in the corner, its glass eyes following Priya as she moved. Or at least, that's what it felt like.\n\n"Welcome!" A tiny woman with silver hair and round spectacles appeared from behind a curtain. "I'm Mrs Greenwood. I don't get many young visitors. Most children prefer the internet these days."\n\n"What is all this stuff?" Priya asked, peering into a cabinet containing a collection of Victorian pennies, a compass that spun wildly in circles, and what appeared to be a genuine dinosaur tooth.\n\n"Every object has a story," Mrs Greenwood said, her eyes twinkling. "That compass, for instance, belonged to an explorer who claimed it always pointed towards adventure rather than north. And that tooth? Found right here in Dorset, on the Jurassic Coast, one hundred and forty million years old."\n\nPriya stared at the tooth. It was dark brown and heavy-looking, about the size of her thumb. She felt a shiver of wonder. Something that old, sitting in a tiny museum, on an ordinary street, in her ordinary town.\n\n"Can I come back next Tuesday?" she asked.\n\nMrs Greenwood smiled. "I was hoping you'd say that."`,
+          question: "Which word is closest in meaning to 'peering' as used in the passage?",
+          options: [
+            "Glancing quickly without interest",
+            "Looking closely and carefully",
+            "Staring rudely at someone",
+            "Squinting because of bright light",
+            "Searching with her hands"
+          ],
+          correct: 1,
+          explanation: "When the passage says Priya was 'peering into a cabinet', it means she was looking very closely and carefully at the objects inside. 'Peering' suggests leaning in and examining something with real curiosity — which fits perfectly with the way Priya is beginning to be fascinated by the museum's collection. It is more focused and deliberate than a quick glance, and it does not carry the rudeness of staring. Well spotted if you got this one right! ✓"
+        },
+        {
+          id: 455,
+          difficulty: 2,
+          questionType: 'passage',
+          questionSubType: 'inference',
+          passageId: 'peculiar-museum',
+          passageTitle: "The Peculiar Museum",
+          passage: `Priya had walked past the little museum on Coppice Lane a thousand times without ever going inside. It sat between the chip shop and the post office, with a faded green door and a hand-painted sign that read: "Coppice Lane Museum of Curious Objects — Open Tuesdays and Saturdays, 10am–4pm."\n\nIt was a rainy Saturday in March, and Priya had nothing else to do. She pushed open the door. A bell tinkled overhead.\n\nInside, the museum was far larger than it looked from the street. Glass cabinets lined every wall, crammed with objects that seemed to glow under the warm yellow lights. A stuffed owl perched on a branch in the corner, its glass eyes following Priya as she moved. Or at least, that's what it felt like.\n\n"Welcome!" A tiny woman with silver hair and round spectacles appeared from behind a curtain. "I'm Mrs Greenwood. I don't get many young visitors. Most children prefer the internet these days."\n\n"What is all this stuff?" Priya asked, peering into a cabinet containing a collection of Victorian pennies, a compass that spun wildly in circles, and what appeared to be a genuine dinosaur tooth.\n\n"Every object has a story," Mrs Greenwood said, her eyes twinkling. "That compass, for instance, belonged to an explorer who claimed it always pointed towards adventure rather than north. And that tooth? Found right here in Dorset, on the Jurassic Coast, one hundred and forty million years old."\n\nPriya stared at the tooth. It was dark brown and heavy-looking, about the size of her thumb. She felt a shiver of wonder. Something that old, sitting in a tiny museum, on an ordinary street, in her ordinary town.\n\n"Can I come back next Tuesday?" she asked.\n\nMrs Greenwood smiled. "I was hoping you'd say that."`,
+          question: "What does Mrs Greenwood's response — \"I was hoping you'd say that\" — suggest about how she feels?",
+          options: [
+            "She is annoyed that Priya wants to come back",
+            "She is surprised because she expected Priya to dislike the museum",
+            "She is delighted that Priya is interested and wants to return",
+            "She is worried that too many children will start visiting",
+            "She is being polite but does not really want visitors"
+          ],
+          correct: 2,
+          explanation: "Mrs Greenwood smiles and says she was 'hoping' Priya would ask to return. The word 'hoping' tells us she really wanted this to happen — she is pleased and perhaps a little touched that a young person has shown genuine interest in her museum. Earlier, she mentioned that she does not get many young visitors, so Priya's enthusiasm clearly means a lot to her. A lovely inference to make! ✓"
+        },
 
         // --- Passage 3: "Saving the Hedgehogs" (non-fiction) ---
         {
@@ -225,6 +263,44 @@ const englishData = {
           ],
           correct: 3,
           explanation: "The passage has a clear informative and persuasive structure: it presents the problem (hedgehog decline), explains the causes (habitat loss, roads), and offers solutions (Hedgehog Highways, garden changes). Its purpose is to inform readers about the crisis and inspire action. ✓"
+        },
+        {
+          id: 456,
+          difficulty: 1,
+          questionType: 'passage',
+          questionSubType: 'retrieval',
+          passageId: 'hedgehogs',
+          passageTitle: "Saving the Hedgehogs",
+          passage: `Britain's hedgehog population has fallen dramatically over the past twenty years. In the 1990s, there were an estimated thirty million hedgehogs roaming the countryside and suburban gardens. Today, that number has dropped to fewer than one million. Wildlife experts have called this decline "alarming" and warn that hedgehogs could disappear from Britain entirely within a generation.\n\nSo what has gone wrong? The biggest threat is habitat loss. Modern farming methods have removed the hedgerows and wild borders where hedgehogs once nested and found food. In towns, solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas. A hedgehog needs to roam up to two kilometres each night to find enough slugs, beetles, and caterpillars to survive.\n\nRoads are another major danger. Around 100,000 hedgehogs are killed on British roads every year. Because hedgehogs curl into a ball when frightened rather than running away, they are especially vulnerable to traffic.\n\nHowever, there is hope. Conservation groups across the country are working to reverse the decline. The "Hedgehog Highway" campaign encourages homeowners to cut small holes (about 13cm square) in the bottom of their garden fences, creating corridors that allow hedgehogs to move freely between gardens. Schools and community groups have been building hedgehog houses — simple wooden shelters filled with dry leaves — and placing them in quiet corners of parks and gardens.\n\nSimple actions can make a real difference. Checking long grass before mowing, avoiding slug pellets, and leaving a dish of fresh water in the garden can all help these beloved creatures survive. As one wildlife officer put it: "Hedgehogs don't need grand gestures — they just need us to share our gardens with them."`,
+          question: "How far does a hedgehog need to travel each night to find enough food?",
+          options: [
+            "Up to five hundred metres",
+            "Up to one kilometre",
+            "Up to two kilometres",
+            "Up to five kilometres",
+            "Up to ten kilometres"
+          ],
+          correct: 2,
+          explanation: "The passage tells us that 'A hedgehog needs to roam up to two kilometres each night to find enough slugs, beetles, and caterpillars to survive.' That is quite a long way for a small creature — which is why solid fences blocking their path are such a big problem. ✓"
+        },
+        {
+          id: 457,
+          difficulty: 2,
+          questionType: 'passage',
+          questionSubType: 'inference',
+          passageId: 'hedgehogs',
+          passageTitle: "Saving the Hedgehogs",
+          passage: `Britain's hedgehog population has fallen dramatically over the past twenty years. In the 1990s, there were an estimated thirty million hedgehogs roaming the countryside and suburban gardens. Today, that number has dropped to fewer than one million. Wildlife experts have called this decline "alarming" and warn that hedgehogs could disappear from Britain entirely within a generation.\n\nSo what has gone wrong? The biggest threat is habitat loss. Modern farming methods have removed the hedgerows and wild borders where hedgehogs once nested and found food. In towns, solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas. A hedgehog needs to roam up to two kilometres each night to find enough slugs, beetles, and caterpillars to survive.\n\nRoads are another major danger. Around 100,000 hedgehogs are killed on British roads every year. Because hedgehogs curl into a ball when frightened rather than running away, they are especially vulnerable to traffic.\n\nHowever, there is hope. Conservation groups across the country are working to reverse the decline. The "Hedgehog Highway" campaign encourages homeowners to cut small holes (about 13cm square) in the bottom of their garden fences, creating corridors that allow hedgehogs to move freely between gardens. Schools and community groups have been building hedgehog houses — simple wooden shelters filled with dry leaves — and placing them in quiet corners of parks and gardens.\n\nSimple actions can make a real difference. Checking long grass before mowing, avoiding slug pellets, and leaving a dish of fresh water in the garden can all help these beloved creatures survive. As one wildlife officer put it: "Hedgehogs don't need grand gestures — they just need us to share our gardens with them."`,
+          question: "Why does the passage suggest that 'tidy gardens' are a problem for hedgehogs?",
+          options: [
+            "Because tidy gardens use too much water",
+            "Because hedgehogs prefer to live in trees, not gardens",
+            "Because tidy gardens have no food for hedgehogs to eat",
+            "Because tidy gardens leave nowhere for hedgehogs to shelter or move between feeding areas",
+            "Because gardeners often chase hedgehogs away"
+          ],
+          correct: 3,
+          explanation: "The passage says that 'solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas.' A tidy garden — with neat lawns, no log piles, and no wild corners — does not provide the hiding places and sheltered spots that hedgehogs need. It is not about the food directly, but about having nowhere safe to rest and no way to get from one garden to the next. Great reading between the lines! ✓"
         },
 
         // --- Passage 4: "The Roman Baths" (non-fiction/history) ---
@@ -1865,6 +1941,25 @@ const englishData = {
           explanation: "Opening with a question ('Have you ever wondered...?') is a technique authors use to engage the reader's curiosity and make them want to read on. It invites the reader to think about something they may have taken for granted, drawing them into the explanation that follows. ✓"
         },
         {
+          id: 460,
+          difficulty: 2,
+          questionType: 'passage',
+          questionSubType: 'inference',
+          passageId: 'post-delivery',
+          passageTitle: "How the Post Gets Delivered",
+          passage: "Have you ever wondered what happens to a letter after you drop it into the bright red postbox on the corner of your street? Its journey is far more complicated — and far more impressive — than most people realise.\n\nFirst, a Royal Mail postal worker arrives in a van to collect the letters. This happens at least once a day, usually in the late afternoon. The time of the next collection is printed on a small label inside the postbox door, so you can check when your letter will be picked up. The worker unlocks the box with a special key, scoops out all the letters, and loads them into grey canvas sacks.\n\nThe sacks are driven to the nearest sorting office, which is usually a large warehouse on an industrial estate. Here, the real work begins. Letters are tipped onto conveyor belts and fed through machines that can read postcodes at astonishing speed — up to 40,000 letters per hour. The machine scans the address, prints a pattern of orange dots on the envelope, and directs the letter into the correct tray for its destination. Letters that the machine cannot read — perhaps because of messy handwriting — are sorted by hand.\n\nOnce sorted, the letters are bundled together by area and loaded onto lorries. If a letter is travelling a long distance, it might go to one of Royal Mail's main distribution centres before being sent on to the local sorting office nearest to the delivery address. Some letters travel hundreds of miles overnight, arriving at the local office in the early hours of the morning.\n\nFinally, the postal worker — or \"postie,\" as many people call them — sets out on their round. Walking or cycling through the streets, they push letters through letterboxes, starting their round as early as half past six in the morning. By the time most people sit down to breakfast, their post has already completed a remarkable journey.",
+          question: "What can you work out about the purpose of the orange dots printed on each envelope?",
+          options: [
+            "They are decorations to make the letters look more attractive",
+            "They tell the postal worker how much the stamp cost",
+            "They are a code that tells the sorting system where the letter needs to go",
+            "They show that the letter has been opened and checked",
+            "They are printed by mistake and serve no purpose"
+          ],
+          correct: 2,
+          explanation: "The passage says the machine 'scans the address, prints a pattern of orange dots on the envelope, and directs the letter into the correct tray for its destination.' Even though the passage does not spell out exactly what the dots are for, you can work it out from the sequence: the machine reads the postcode, prints the dots, then sorts the letter. The dots must be a code that records where the letter needs to go, so it can be sorted correctly at every stage of its journey. Brilliant inference! ✓"
+        },
+        {
           id: 135,
           difficulty: 1,
           questionType: 'passage',
@@ -2008,6 +2103,25 @@ const englishData = {
           explanation: "The passage is an informative, balanced piece that presents both the benefits of cycling (fitness, environment) and addresses safety concerns (Bikeability training, M-check, helmets). The author's purpose is to inform and gently persuade, showing that cycling is both beneficial and can be done safely with proper training. ✓"
         },
         {
+          id: 459,
+          difficulty: 2,
+          questionType: 'passage',
+          questionSubType: 'inference',
+          passageId: 'cycling-school',
+          passageTitle: "Cycling to School",
+          passage: "Across the United Kingdom, more and more children are choosing to cycle to school rather than travel by car. According to recent surveys, around one in twenty primary school pupils now arrives on two wheels — and that number is growing every year. But what makes cycling such a good idea, and how can young riders stay safe on the roads?\n\nThe benefits of cycling are clear. It keeps you fit and healthy, strengthening your heart, lungs, and leg muscles without you even realising it. A twenty-minute cycle ride burns roughly the same energy as half an hour of swimming. Cycling also helps the environment, because bicycles produce no exhaust fumes or pollution. If every family who lived within two miles of school swapped just one car journey a week for a bike ride, it would take thousands of tonnes of carbon dioxide out of the air each year.\n\nSafety, however, is the biggest concern for parents, and rightly so. That is why many primary schools now offer Bikeability training, a programme funded by the government that teaches children to ride confidently on real roads. The course has three levels. Level One covers basic bike handling in a playground or car park — starting, stopping, signalling, and looking behind you. Level Two takes pupils onto quiet local roads, where they learn to deal with junctions, roundabouts, and parked cars. Level Three, for older or more experienced riders, tackles busier roads and more complex situations.\n\nInstructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the \"M-check,\" running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.\n\nSchools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.",
+          question: "Why does the Bikeability course have three separate levels?",
+          options: [
+            "Because the government requires exactly three levels for all training programmes",
+            "So that children can gradually build their skills from safe environments to more challenging real roads",
+            "Because Level One is for girls and Level Two is for boys",
+            "So that younger children never have to cycle at all",
+            "Because each level teaches a completely different sport"
+          ],
+          correct: 1,
+          explanation: "The passage describes how Level One starts in a safe, enclosed space like a playground, Level Two moves onto quiet local roads, and Level Three tackles busier roads. Each level is a step up in difficulty and real-world challenge. This graduated structure lets children build confidence and skills progressively — they are not thrown onto busy roads before they are ready. It is a really sensible way to learn! ✓"
+        },
+        {
           id: 146,
           difficulty: 1,
           questionType: 'passage',
@@ -2071,6 +2185,25 @@ const englishData = {
           options: ["That baking is too difficult for children to do on their own","That competitions always end in disaster","That chocolate cake is better than lemon cupcakes","That fathers should not be allowed to judge baking competitions","That teamwork, quick thinking, and helping each other can turn problems into successes"],
           correct: 4,
           explanation: "When things go wrong, Priya steps in to help both Oliver and Mum with practical solutions, and the results turn out well. Dad's declaration of a 'three-way tie' reinforces the idea that working together matters more than winning. The story's message is that teamwork and creative problem-solving can overcome setbacks. ✓"
+        },
+        {
+          id: 458,
+          difficulty: 2,
+          questionType: 'passage',
+          questionSubType: 'inference',
+          passageId: 'bake-off',
+          passageTitle: "The Bake Off",
+          passage: "\"Right then,\" said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. \"The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win.\"\n\nOliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.\n\nFor the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.\n\nThen disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. \"There's no cocoa!\" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. \"I forgot to put it on the middle shelf!\" she wailed.\n\nPriya looked at the chaos around her, set down her piping bag, and took charge. \"Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know.\"\n\nAn hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.\n\nDad tasted each one slowly, making exaggerated \"mmm\" noises. Finally, he announced: \"I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers.\"",
+          question: "What do Priya's actions when things go wrong tell us about her character?",
+          options: [
+            "She panics easily and cannot cope under pressure",
+            "She is bossy and enjoys telling other people what to do",
+            "She is calm, practical, and good at solving problems quickly",
+            "She does not care about anyone else's baking",
+            "She is jealous of Oliver's chocolate cake"
+          ],
+          correct: 2,
+          explanation: "When everything goes wrong around her, Priya does not panic or get upset. Instead, she 'set down her piping bag and took charge' — calmly stopping her own work to help others. She gives Oliver a clever alternative (melt dark chocolate instead of cocoa) and tells Mum how to rescue her sponge. These actions show someone who stays cool under pressure and thinks quickly to find practical solutions. That is a really useful skill — in baking and in life! ✓"
         },
         {
           "id": 151,
@@ -5893,10 +6026,10 @@ Tom grabbed the fog horn lever and pulled with all his strength. The deep, boomi
 Minutes passed. Then, slowly, the horn sound grew fainter. The ship was turning away, finding safer waters. Tom slumped into his chair, exhausted but relieved. Barnacle jumped onto his lap and purred.
 
 "Another one saved, old friend," Tom whispered. "Another one saved."`,
-          "question": "In the sentence 'The wind howled fiercely around the tower,' what type of word is 'fiercely'?",
+          "question": "In the sentence 'Then, slowly, the horn sound grew fainter,' what type of word is 'slowly'?",
           "options": ["A noun (naming word)","A verb (doing word)","An adverb (tells us how something is done)","An adjective (describing word)","A preposition (position word)"],
           "correct": 2,
-          "explanation": "'Fiercely' is an adverb — it tells us HOW the wind howled. Most adverbs end in '-ly' and answer the question 'how?'. If you can ask 'how did it happen?' and the word answers that, it's an adverb! ✓"
+          "explanation": "'Slowly' is an adverb — it tells us HOW the horn sound grew fainter. Adverbs answer the question 'how?' and many end in '-ly'. Here, 'slowly' describes the way the change happened over time. ✓"
         },
         {
           "id": 352,
@@ -5922,31 +6055,12 @@ Priya stared at the tooth. It was dark brown and heavy-looking, about the size o
 "Can I come back next Tuesday?" she asked.
 
 Mrs Greenwood smiled. "I was hoping you'd say that."`,
-          "question": "In the sentence 'The ancient display cases were covered in dust,' what type of word is 'ancient'?",
+          "question": "In the sentence 'It was dark brown and heavy-looking, about the size of her thumb,' what type of word is 'dark'?",
           "options": ["A noun","A verb","An adverb","An adjective","A pronoun"],
           "correct": 3,
-          "explanation": "'Ancient' is an adjective — it describes the display cases, telling us what they're like. Adjectives answer the question 'what kind of?' — what kind of display cases? Ancient ones! ✓"
+          "explanation": "'Dark' is an adjective — it describes the colour of the tooth (what kind of brown? dark brown). Adjectives modify nouns by telling us more about their appearance or quality. Here, 'dark' tells us about the shade of brown. ✓"
         },
-        {
-          "id": 353,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "saving-hedgehogs",
-          "passageTitle": "Saving the Hedgehogs",
-          "passage": `Every autumn, wildlife charities across Britain launch campaigns to help one of our most beloved creatures: the hedgehog. Once a common sight in gardens and hedgerows, hedgehog numbers have fallen dramatically over the past twenty years. Scientists estimate that the British hedgehog population has declined from around thirty million in the 1950s to fewer than one million today.
-
-Hedgehogs sleep through the cold winter months, curling into tight balls inside nests of dry leaves hidden beneath sheds, log piles, and thick hedgerows. This deep sleep, called hibernation, allows them to survive when their food — slugs, beetles, caterpillars, and earthworms — is scarce. Before hibernating, a hedgehog must weigh at least 600 grams, or it may not have enough energy to last until spring.
-
-The biggest threat to hedgehogs is not cold weather but the loss of the rough, wild patches of ground where they find food and shelter. Modern gardens with close-boarded fences, tidy lawns, and concrete patios offer little for a hungry hedgehog. Conservation groups encourage people to cut small holes in their garden fences — 'hedgehog highways' — so the animals can roam freely between gardens at night. Leaving a shallow dish of water and a pile of leaves in a quiet corner can make a real difference.
-
-Volunteers across the country also rescue underweight hedgehogs found wandering in daylight, nursing them through the winter in heated shelters before releasing them in spring. It is painstaking, gentle work, but for those involved, the sight of a healthy hedgehog shuffling back into the undergrowth makes every effort worthwhile.`,
-          "question": "In the sentence 'Hedgehogs sleep through the cold winter months,' what type of word is 'through'?",
-          "options": ["A noun","A verb","An adverb","An adjective","A preposition"],
-          "correct": 4,
-          "explanation": "'Through' is a preposition — it shows the relationship between 'sleep' and 'winter months'. Prepositions are position/direction words like 'in', 'on', 'under', 'through', 'between'. ✓"
-        },
-        {
+{
           "id": 354,
           "difficulty": 2,
           "questionType": "passage",
@@ -5964,10 +6078,10 @@ Between baths, visitors would exercise, have their skin scraped clean with a cur
 The Romans also built a grand temple next to the baths, dedicated to the goddess Sulis Minerva. Visitors would throw coins and small offerings into the sacred spring, asking the goddess for good health or protection. Archaeologists have found thousands of these offerings, along with carved stone heads and written curses scratched onto thin pieces of lead.
 
 When the Romans left Britain around 410 AD, the baths gradually fell into ruin. Over the centuries, the buildings crumbled and were buried beneath newer streets and houses. It was not until the eighteenth century that the baths were rediscovered, and today they are one of Britain's most visited historical sites.`,
-          "question": "In the sentence 'Visitors can still see the steaming green water today,' what type of word is 'steaming'?",
+          "question": "In the sentence 'have their skin scraped clean with a curved metal tool called a strigil,' what type of word is 'curved'?",
           "options": ["An adjective","A verb","A noun","An adverb","A conjunction"],
           "correct": 0,
-          "explanation": "'Steaming' is an adjective here — it describes the water (what kind of water? steaming water). Words ending in '-ing' can sometimes be verbs, but here it's describing a noun, so it's working as an adjective. ✓"
+          "explanation": "'Curved' is an adjective — it describes the metal tool (what shape of tool? a curved one). Words ending in '-ed' can sometimes be verbs ('she curved the line'), but here 'curved' is placed before a noun to describe its shape, so it's working as an adjective. ✓"
         },
         {
           "id": 355,
@@ -5999,10 +6113,10 @@ Then, through the rain, Kai spotted the harbour wall. "There!" he croaked. "I ca
 Dave guided them through the narrow entrance, and suddenly the water was calm. They tied up at the pontoon with trembling hands. For a long moment, nobody spoke. Then Isla looked at her brother and started laughing — the kind of breathless, relief-soaked laughter that comes after genuine fear.
 
 "Same time tomorrow?" she said.`,
-          "question": "In the sentence 'The dark clouds gathered quickly above the village,' what type of word is 'gathered'?",
+          "question": "In the sentence 'The breeze stiffened,' what type of word is 'stiffened'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 1,
-          "explanation": "'Gathered' is a verb — it's the action word telling us what the clouds DID. Verbs are doing or being words. What did the clouds do? They gathered! ✓"
+          "explanation": "'Stiffened' is a verb — it tells us what the breeze DID. What happened? The breeze stiffened! Even though 'stiff' is an adjective, adding '-ened' turns it into a verb describing the action of becoming stronger. ✓"
         },
         {
           "id": 356,
@@ -6037,31 +6151,12 @@ Yet even as the damage dries,
 The queen returns. She never cries.
 She simply starts her work once more
 And builds a palace as before.`,
-          "question": "In the sentence 'She carefully placed the jar over the spider,' what type of word is 'carefully'?",
+          "question": "In the sentence 'She simply starts her work once more,' what type of word is 'simply'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
-          "correct": 2,
-          "explanation": "'Carefully' is an adverb — it tells us HOW she placed the jar. The '-ly' ending is a big clue! Adverbs usually describe verbs, telling us how, when, or where something happens. ✓"
-        },
-        {
-          "id": 357,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "secret-hedgehogs",
-          "passageTitle": "The Secret Life of Hedgehogs",
-          "passage": `Most people have never watched a hedgehog at work, and for good reason: hedgehogs are almost entirely nocturnal. They emerge after dark, snuffling through gardens, parks, and woodland edges in search of food. They build warm nests from dry leaves and grass, tucking themselves into sheltered spots during the day where they sleep soundly, invisible to the world above.
-
-A hedgehog's night begins at dusk. Using its remarkably sharp sense of smell — far more powerful than a human's — it follows invisible trails left by slugs, beetles, and earthworms. A single hedgehog can travel up to two kilometres in one night, covering a home range that might include a dozen gardens. It moves with surprising purpose, following the same routes night after night, squeezing through gaps in fences and under gates with practised ease.
-
-The hedgehog's most famous feature is, of course, its spines — around seven thousand of them, each one a modified hair made of keratin, the same material as human fingernails. When threatened, a hedgehog rolls into a tight ball, presenting a prickly fortress that deters most predators. Badgers, however, are strong enough to uncurl a hedgehog, which is one reason why hedgehog numbers tend to be lower in areas with large badger populations.
-
-As dawn approaches, the hedgehog returns to its nest, curls up, and sleeps. The garden looks perfectly ordinary in the morning light, giving no sign of the busy little creature that spent the whole night patrolling it. This is why the author calls hedgehogs' lives 'secret' — their entire world unfolds while we are asleep.`,
-          "question": "In the sentence 'They build warm nests from dry leaves and grass,' what type of word is 'warm'?",
-          "options": ["A noun","A verb","A preposition","An adjective","An adverb"],
           "correct": 3,
-          "explanation": "'Warm' is an adjective — it describes the nests (what kind of nests? warm ones). Adjectives are describing words that tell us more about a noun. ✓"
+          "explanation": "'Simply' is an adverb — it tells us HOW she starts her work. Here, 'simply' means without fuss or complaint. Adverbs modify verbs by answering the question 'how?' and many end in '-ly'. ✓"
         },
-        {
+{
           "id": 358,
           "difficulty": 2,
           "questionType": "passage",
@@ -6077,10 +6172,10 @@ The most common inhabitants of Cornish rock pools are limpets and periwinkles, w
 More adventurous explorers may discover beadlet anemones, which look like blobs of dark red jelly stuck to the rock when the tide is out. Once the water returns, they transform into beautiful flowers with rings of waving tentacles that catch tiny particles of food drifting past. Starfish, too, can sometimes be found in deeper pools, their five arms moving with surprising grace across the rocky floor.
 
 Rock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.`,
-          "question": "In the sentence 'Tiny crabs scuttle between the rocks,' what type of word is 'between'?",
+          "question": "In the sentence 'their five arms moving with surprising grace across the rocky floor,' what type of word is 'across'?",
           "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
           "correct": 4,
-          "explanation": "'Between' is a preposition — it tells us WHERE the crabs scuttle (between the rocks). Prepositions show position or direction: in, on, under, between, through, beside. ✓"
+          "explanation": "'Across' is a preposition — it tells us WHERE the arms are moving (across the rocky floor). Prepositions show position or direction and come before a noun: across the floor, between the rocks, under the water. ✓"
         },
         {
           "id": 359,
@@ -6098,10 +6193,10 @@ Forager bees leave the hive at dawn and may fly up to five kilometres in search 
 Back at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.
 
 Beyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.`,
-          "question": "In the sentence 'The busy workers collect nectar from hundreds of flowers,' what type of word is 'collect'?",
+          "question": "In the sentence 'tiny grains of pollen stick to their furry bodies and are carried to the next blossom,' what type of word is 'stick'?",
           "options": ["A verb","A noun","An adverb","An adjective","A preposition"],
           "correct": 0,
-          "explanation": "'Collect' is a verb — it's the action the workers do. What do the workers do? They collect! Verbs are the engine of every sentence — they tell us what's happening. ✓"
+          "explanation": "'Stick' is a verb — it tells us what the pollen grains DO. What happens? They stick to the bees' bodies! 'Stick' can also be a noun (a wooden stick), but here it describes an action, making it a verb. ✓"
         },
         {
           "id": 360,
@@ -6119,10 +6214,10 @@ Centuries passed, and I grew. My trunk thickened until it took five adults stand
 I have weathered every storm, though not without scars. The great gale of 1987 tore away my largest branch, leaving a wound that took twenty years to heal. Lightning struck my crown one August night, splitting a limb clean in two, yet I survived. My heartwood is hollow now in places — home to nesting tawny owls, roosting bats and the occasional family of squirrels who store their hazelnuts in my crevices as if I were their personal larder.
 
 Now, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: "The Ashworth Oak — estimated age 400 years. Protected." Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.`,
-          "question": "In the sentence 'Its enormous branches stretched across the entire meadow,' what type of word is 'enormous'?",
+          "question": "In the sentence 'My heartwood is hollow now in places,' what type of word is 'hollow'?",
           "options": ["A noun","An adjective","A verb","An adverb","A conjunction"],
           "correct": 1,
-          "explanation": "'Enormous' is an adjective — it tells us about the branches (how big? enormous!). Adjectives add detail to nouns, painting a picture in the reader's mind. ✓"
+          "explanation": "'Hollow' is an adjective — it describes what the heartwood is like (what kind of heartwood? hollow heartwood). 'Hollow' can also be a noun ('a hollow in a tree') or a verb ('to hollow out'), but here it follows 'is' and describes the subject, so it's an adjective. ✓"
         },
         {
           "id": 361,
@@ -6140,10 +6235,10 @@ Perhaps the most important tool in a modern meteorologist's arsenal is the super
 Britain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.
 
 Despite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.`,
-          "question": "In the sentence 'The team drove rapidly towards the approaching storm,' what type of word is 'rapidly'?",
+          "question": "In the sentence 'weather forecasting has improved dramatically since 1987,' what type of word is 'dramatically'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
-          "correct": 2,
-          "explanation": "'Rapidly' is an adverb — it tells us HOW the team drove. That '-ly' ending is your best friend for spotting adverbs! ✓"
+          "correct": 3,
+          "explanation": "'Dramatically' is an adverb — it tells us HOW forecasting has improved. That '-ly' ending is your best friend for spotting adverbs! Adverbs modify verbs by answering the question 'how?' ✓"
         },
         {
           "id": 362,
@@ -6167,31 +6262,12 @@ Amir walked slowly around the ship, running his fingers just above the rope barr
 At the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the "steerboard" side, and that our modern word "starboard" comes directly from this Viking term.
 
 "Can we stay a bit longer?" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.`,
-          "question": "In the sentence 'The warriors sailed across the freezing sea,' what type of word is 'across'?",
+          "question": "In the sentence 'Amir walked slowly around the ship, running his fingers just above the rope barrier,' what type of word is 'above'?",
           "options": ["A noun","An adverb","An adjective","A preposition","A verb"],
           "correct": 3,
-          "explanation": "'Across' is a preposition — it shows the direction of the sailing (across the sea). Prepositions tell us about position and direction. ✓"
+          "explanation": "'Above' is a preposition — it tells us WHERE Amir's fingers were (above the rope barrier). Prepositions show position or direction and usually come before a noun. Some words like 'above' can be adverbs too, but here it has an object ('the rope barrier'), so it's a preposition. ✓"
         },
-        {
-          "id": 363,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "florence-nightingale",
-          "passageTitle": "Florence Nightingale's Lamp",
-          "passage": `In the winter of 1854, a young English nurse named Florence Nightingale arrived at the British military hospital in Scutari, Turkey. What she found horrified her. Wounded soldiers from the Crimean War lay on filthy floors, without clean bandages, proper food, or basic medicines. Infection spread rapidly through the overcrowded wards, and more men were dying from disease than from their battlefield injuries.
-
-Florence immediately set about transforming the hospital. She tended the wounded soldiers with great care, organising teams of nurses to scrub the wards clean, wash bed linen, and prepare nutritious meals. She insisted on proper ventilation, clean water, and fresh supplies — measures that seem obvious today but were revolutionary at the time. Within months, the death rate at Scutari had fallen dramatically.
-
-What made Florence famous, however, was not just her medical skill but her extraordinary dedication. She worked from dawn until long after midnight, and each night she walked the hospital corridors carrying a Turkish lamp, checking on patients who could not sleep. The soldiers called her 'The Lady with the Lamp,' and the image became one of the most recognised symbols of nursing in history.
-
-Florence Nightingale returned to England as a national heroine. She spent the rest of her long life campaigning to improve hospital conditions, training nurses at the school she founded at St Thomas' Hospital in London, and writing influential books on public health. She proved that careful observation, cleanliness, and compassion could save thousands of lives — and she changed the practice of medicine forever.`,
-          "question": "In the sentence 'She tended the wounded soldiers with great care,' what type of word is 'wounded'?",
-          "options": ["A noun","A verb","An adjective","An adverb","A preposition"],
-          "correct": 4,
-          "explanation": "'Wounded' is an adjective here — it describes the soldiers (which soldiers? the wounded ones). Like 'steaming' and 'broken', words ending in '-ed' can work as adjectives when they describe a noun. ✓"
-        },
-        {
+{
           "id": 364,
           "difficulty": 2,
           "questionType": "passage",
@@ -6209,10 +6285,10 @@ The journey along the Silk Road was extraordinarily dangerous. Merchants had to 
 Few merchants ever completed the entire journey. Instead, goods were passed from trader to trader, changing hands many times before reaching their final destination. Along the way, bustling market towns sprang up at oases and mountain passes, where people from dozens of different cultures would meet, trade, and exchange stories.
 
 Perhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.`,
-          "question": "In the sentence 'Merchants traded silk, spices and precious stones,' what type of word is 'traded'?",
+          "question": "In the sentence 'Bandits lurked along remote stretches of the route, waiting to ambush travellers and steal their valuable cargo,' what type of word is 'lurked'?",
           "options": ["A verb","A noun","An adjective","An adverb","A conjunction"],
           "correct": 0,
-          "explanation": "'Traded' is a verb — it tells us what the merchants DID. It's in the past tense (they traded), which is how we know it's describing an action that already happened. ✓"
+          "explanation": "'Lurked' is a verb — it tells us what the bandits DID. What did they do? They lurked! It's in the past tense, telling us about an action that happened. Verbs are the engine of every sentence. ✓"
         },
         {
           "id": 365,
@@ -6232,10 +6308,10 @@ The afternoon brought lessons. Thomas practised his handwriting, copying passage
 As evening fell, Thomas sat on a bench near the enormous fireplace in the great hall, listening to a travelling musician play the lute and sing ballads about King Henry and his six wives. The firelight flickered across the tapestries that hung on the stone walls, making the woven figures seem to dance.
 
 "Not a bad life," whispered Robert, the page beside him. Thomas smiled but said nothing. His feet were sore, his fingers were stained with ink, and his arms still throbbed from sword practice. But Robert was right. Not a bad life at all.`,
-          "question": "In the sentence 'Rich families ate lavishly while poor people often went hungry,' what type of word is 'while'?",
+          "question": "In the sentence 'Thomas smiled but said nothing,' what type of word is 'but'?",
           "options": ["A noun","A conjunction","An adjective","An adverb","A verb"],
           "correct": 1,
-          "explanation": "'While' is a conjunction — it joins two parts of the sentence together and shows they're happening at the same time. Conjunctions are joining words: and, but, or, because, although, while. ✓"
+          "explanation": "'But' is a conjunction — it joins two parts of the sentence together and shows a contrast. Thomas smiled AND said nothing — 'but' connects these opposite ideas. Common conjunctions include: and, but, or, because, although, while. ✓"
         },
         {
           "id": 366,
@@ -6257,10 +6333,10 @@ Elara's heart hammered, but curiosity held her feet in place. She reached for an
 She spent what felt like hours exploring three different books, each one a doorway into another world. A jungle adventure. A moonlit castle. A city built entirely of glass. When she finally stumbled back through the gap in the fence, Biscuit tucked under her arm, the village clock was striking quarter past twelve. Only twelve minutes had passed.
 
 Elara glanced back at the ruin. The ivy had closed over the gap already, as though the building were drawing its curtains. She smiled. She knew she would return tomorrow night — and every night after that.`,
-          "question": "In the sentence 'She crept silently between the towering shelves,' what type of word is 'silently'?",
+          "question": "In the sentence 'The ivy had closed over the gap already, as though the building were drawing its curtains,' what type of word is 'already'?",
           "options": ["An adjective","A verb","An adverb","A noun","A preposition"],
           "correct": 2,
-          "explanation": "'Silently' is an adverb — it tells us HOW she crept. Spot the '-ly'! Adverbs usually modify verbs: she crept (how?) silently. ✓"
+          "explanation": "'Already' is an adverb — it tells us WHEN the ivy had closed (it had closed by that point in time). Not all adverbs end in '-ly'! Words like 'already', 'soon', 'never', and 'often' are adverbs that tell us about timing. ✓"
         },
         {
           "id": 367,
@@ -6284,10 +6360,10 @@ They spent the morning following the map's clues. The first led them to a moss-c
 At the foot of the oak, half-buried in tangled roots, sat a flat grey stone. When Mia pressed her ear to it, she could hear a faint hum — almost like whispering. Sam used the brass key to prise up the stone, revealing a tin box no bigger than a shoebox. Inside lay a collection of hand-painted postcards from places around the world, a tiny compass, and a note in elegant handwriting: "To whoever finds this — never stop exploring. Your loving adventurer, Great-Aunt Hattie, 1923."
 
 Mia and Sam looked at each other and grinned. The summer holidays had only just begun.`,
-          "question": "In the sentence 'Mia carefully unfolded the yellowed parchment,' what type of word is 'yellowed'?",
+          "question": "In the sentence 'he pulled out a roll of yellowed paper tied with a faded red ribbon,' what type of word is 'yellowed'?",
           "options": ["A noun","A verb","An adjective","An adverb","A pronoun"],
-          "correct": 3,
-          "explanation": "'Yellowed' is an adjective — it describes the parchment (what kind? yellowed/old). Past participles like 'yellowed', 'broken', and 'frozen' often work as adjectives. ✓"
+          "correct": 2,
+          "explanation": "'Yellowed' is an adjective — it describes the paper (what kind of paper? yellowed paper). Past participles like 'yellowed', 'broken', and 'frozen' often work as adjectives when they're placed before a noun to describe it. ✓"
         },
         {
           "id": 368,
@@ -6315,10 +6391,10 @@ Over the weeks that followed, Cadi visited Draig every Saturday. She brought him
 "Will you ever leave?" she asked one afternoon, scratching the rough scales beneath his chin.
 
 Draig closed his eyes contentedly. "Not while there is still someone who believes," he rumbled. "And now there is you."`,
-          "question": "In the sentence 'The creature roared with terrifying power,' what type of word is 'terrifying'?",
+          "question": "In the sentence 'Its voice was low and gravelly, like stones tumbling in a riverbed,' what type of word is 'gravelly'?",
           "options": ["A noun","A verb","A conjunction","An adverb","An adjective"],
           "correct": 4,
-          "explanation": "'Terrifying' is an adjective — it describes the power (what kind of power? terrifying power). Even though it looks like a verb form, here it's describing a noun. ✓"
+          "explanation": "'Gravelly' is an adjective — it describes the dragon's voice (what kind of voice? a gravelly one). Be careful — not all words ending in '-ly' are adverbs! 'Gravelly' comes from the noun 'gravel' and describes what the voice sounds like, making it an adjective. ✓"
         },
         {
           "id": 369,
@@ -6350,10 +6426,10 @@ As the sun began to dip, painting the sea in shades of copper and rose, Zara spo
 The light turned towards them. By nightfall, all four were wrapped in foil blankets aboard the rescue boat, sipping hot chocolate and trying to stop their hands from shaking. Captain Trevelyan, they learned, had been picked up an hour earlier, clinging to a piece of the Silver Gull's mast.
 
 "Best school trip ever," Marcus whispered, and despite everything, they all laughed.`,
-          "question": "In the sentence 'The cold waves crashed against the rocks,' what type of word is 'crashed'?",
+          "question": "In the sentence 'Rain lashed the deck,' what type of word is 'lashed'?",
           "options": ["A verb (doing word)","A noun (naming word)","An adjective (describing word)","An adverb (how word)","A preposition (position word)"],
           "correct": 0,
-          "explanation": "'Crashed' is a verb — it's what the waves DID. Verbs are action words. What happened? The waves crashed! ✓"
+          "explanation": "'Lashed' is a verb — it's what the rain DID. What happened? Rain lashed the deck! Verbs are action words that tell us what is happening in the sentence. ✓"
         },
         {
           "id": 370,
@@ -6379,10 +6455,10 @@ The work demanded extraordinary patience. One afternoon, Nell spent three hours 
 "Clockmaking," he told her one rainy Thursday, polishing a crystal face until it gleamed, "is not about telling the time. Any phone can do that. It is about respecting time — understanding that every second matters, that nothing worth making can be rushed." He held up the clock he had been restoring for six months: a beautiful Victorian mantel piece with a midnight-blue dial and golden hands. "This clock will outlive us both, and it will still keep perfect time. That is craftsmanship."
 
 Nell looked at the clock, then at her own clumsy, oil-stained hands. She was beginning to understand.`,
-          "question": "In the sentence 'The delicate mechanism ticked softly inside the wooden case,' what type of word is 'softly'?",
+          "question": "In the sentence 'When she finally succeeded, Mr Thorne gave her the rarest of his compliments: a brief nod,' what type of word is 'finally'?",
           "options": ["A noun","An adverb","An adjective","A preposition","A verb"],
           "correct": 1,
-          "explanation": "'Softly' is an adverb — it tells us HOW the mechanism ticked. That '-ly' is your clue! ✓"
+          "explanation": "'Finally' is an adverb — it tells us WHEN she succeeded. Adverbs don't just describe HOW things happen — they can also tell us WHEN. 'Finally' means 'at last' or 'after a long time'. The '-ly' ending is your clue! ✓"
         },
         {
           "id": 371,
@@ -6400,10 +6476,10 @@ The children threw themselves into the project with enormous enthusiasm. Year Th
 One of the most important parts of the project was the compost bin, which stood at the edge of the allotment like a large wooden crate. The school dinner ladies began saving vegetable peelings and fruit scraps from the kitchen, and the children took turns adding them to the bin along with fallen leaves and grass cuttings from the school grounds. Mrs Kapoor explained that the mixture would slowly break down into rich, dark compost that could be spread on the beds to feed the soil.
 
 By the following spring, the allotment had become the heart of the school. Parents stopped by to admire the neat rows of green shoots. The school cook, Mr Petrov, created a special "Allotment Lunch" each Friday using whatever had been harvested that week. Even the children who had grumbled about getting mud under their fingernails admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.`,
-          "question": "In the sentence 'The children planted seeds in neat rows,' what type of word is 'in'?",
+          "question": "In the sentence 'The children threw themselves into the project with enormous enthusiasm,' what type of word is 'into'?",
           "options": ["An adverb","A verb","A preposition","A noun","An adjective"],
           "correct": 2,
-          "explanation": "'In' is a preposition — it tells us WHERE the seeds were planted (in the rows). Short words like 'in', 'on', 'at', 'by', 'to' are almost always prepositions. ✓"
+          "explanation": "'Into' is a preposition — it shows the direction of the action (threw themselves into the project). Prepositions tell us about position, direction, or movement: in, into, on, under, beside, through. 'Into' suggests movement towards the inside of something. ✓"
         },
         {
           "id": 372,
@@ -6421,10 +6497,10 @@ The sacks are driven to the nearest sorting office, which is usually a large war
 Once sorted, the letters are bundled together by area and loaded onto lorries. If a letter is travelling a long distance, it might go to one of Royal Mail's main distribution centres before being sent on to the local sorting office nearest to the delivery address. Some letters travel hundreds of miles overnight, arriving at the local office in the early hours of the morning.
 
 Finally, the postal worker — or "postie," as many people call them — sets out on their round. Walking or cycling through the streets, they push letters through letterboxes, starting their round as early as half past six in the morning. By the time most people sit down to breakfast, their post has already completed a remarkable journey.`,
-          "question": "In the sentence 'The postman delivers letters every morning,' what type of word is 'delivers'?",
+          "question": "In the sentence 'The worker unlocks the box with a special key, scoops out all the letters, and loads them into grey canvas sacks,' what type of word is 'scoops'?",
           "options": ["A noun (naming word)","An adverb (how word)","An adjective (describing word)","A verb (doing word)","A preposition (position word)"],
           "correct": 3,
-          "explanation": "'Delivers' is a verb — it's what the postman DOES. Verbs tell us the action in the sentence. ✓"
+          "explanation": "'Scoops' is a verb — it tells us what the worker DOES. What does the worker do? They scoop out the letters! 'Scoop' can also be a noun (an ice cream scoop), but here it describes an action, so it's a verb. ✓"
         },
         {
           "id": 373,
@@ -6446,10 +6522,10 @@ At break time, a girl with curly red hair and paint-stained fingers appeared at 
 By lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded "properly exciting." Amira found herself laughing for the first time all day.
 
 Walking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.`,
-          "question": "In the sentence 'She felt nervous and uncertain about her first day,' what type of word is 'uncertain'?",
+          "question": "In the sentence 'The classroom was bright and airy, with large windows that looked out over the school field towards the sea,' what type of word is 'airy'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
-          "correct": 4,
-          "explanation": "'Uncertain' is an adjective — it describes how she felt. Adjectives don't just describe things you can see — they also describe feelings and emotions! ✓"
+          "correct": 2,
+          "explanation": "'Airy' is an adjective — it describes what the classroom was like (a bright and airy classroom). Even though 'airy' ends in '-y', not '-ly', it's an adjective because it describes a noun. Words ending in '-y' like 'airy', 'dusty', and 'sunny' are usually adjectives. ✓"
         },
         {
           "id": 374,
@@ -6467,10 +6543,10 @@ Safety, however, is the biggest concern for parents, and rightly so. That is why
 Instructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the "M-check," running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.
 
 Schools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.`,
-          "question": "In the sentence 'He pedalled steadily up the steep hill,' what type of word is 'steadily'?",
+          "question": "In the sentence 'Instructors always check that each child's bicycle is roadworthy before a session begins,' what type of word is 'always'?",
           "options": ["An adverb","A verb","A preposition","A noun","An adjective"],
           "correct": 0,
-          "explanation": "'Steadily' is an adverb — it tells us HOW he pedalled. The '-ly' ending is your biggest clue for spotting adverbs! ✓"
+          "explanation": "'Always' is an adverb — it tells us HOW OFTEN the instructors check (every single time). Not all adverbs end in '-ly'! Words like 'always', 'never', 'often', and 'sometimes' are adverbs that tell us about frequency. ✓"
         },
         {
           "id": 375,
@@ -6492,10 +6568,10 @@ Priya looked at the chaos around her, set down her piping bag, and took charge. 
 An hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.
 
 Dad tasted each one slowly, making exaggerated "mmm" noises. Finally, he announced: "I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers."`,
-          "question": "In the sentence 'The delicious aroma drifted through the kitchen,' what type of word is 'through'?",
+          "question": "In the sentence 'Priya looked at the chaos around her, set down her piping bag, and took charge,' what type of word is 'around'?",
           "options": ["An adjective","A preposition","A noun","An adverb","A verb"],
           "correct": 1,
-          "explanation": "'Through' is a preposition — it shows the direction the aroma moved (through the kitchen). Prepositions tell us about position and movement. ✓"
+          "explanation": "'Around' is a preposition — it tells us WHERE the chaos was (around her). Prepositions show position or direction and come before a noun or pronoun: around her, through the kitchen, beside the oven. ✓"
         },
         {
           "id": 376,
@@ -6513,10 +6589,10 @@ The way bees communicate is one of nature's greatest marvels. When a worker bee 
 Bees are also essential to the British countryside. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next plant. This process, called pollination, is vital for growing fruits, vegetables, and wildflowers. Without bees, we would lose about a third of the food we eat, including apples, strawberries, and runner beans.
 
 Sadly, bee numbers in the United Kingdom have fallen sharply in recent years. Habitat loss, pesticides, and disease have all taken their toll. Conservation groups are now working hard to protect these tiny but mighty creatures, encouraging people to plant wildflowers and avoid harmful chemicals in their gardens.`,
-          "question": "In the sentence 'Bees are incredibly important for our environment,' what type of word is 'important'?",
+          "question": "In the sentence 'This process, called pollination, is vital for growing fruits, vegetables, and wildflowers,' what type of word is 'vital'?",
           "options": ["A noun (naming word)","A preposition (position word)","An adjective (describing word)","An adverb (how word)","A verb (doing word)"],
           "correct": 2,
-          "explanation": "'Important' is an adjective — it describes the bees (bees are important). Adjectives tell us what something is like. ✓"
+          "explanation": "'Vital' is an adjective — it describes what the process is like (pollination is vital). Adjectives don't just describe things you can see — they also describe importance and necessity. 'Vital' means absolutely essential or critically important. ✓"
         },
         {
           "id": 377,
@@ -6534,31 +6610,12 @@ Below the sunlight zone lies the twilight zone, from two hundred to one thousand
 Deeper still is the midnight zone, where no sunlight penetrates at all. The pressure here is immense — imagine having fifty jumbo jets stacked on top of you. Yet even here, life finds a way. Giant squid with eyes the size of dinner plates hunt in the blackness, while strange worms cluster around volcanic vents on the ocean floor, feeding on chemicals that would be poisonous to most living things.
 
 The very deepest part of any ocean is the Mariana Trench in the Pacific, which plunges to nearly eleven thousand metres. In 2019, the British explorer Victor Vescovo became one of the few people ever to reach the bottom. Astonishingly, even there, in the most extreme environment on Earth, he found living creatures — and plastic rubbish.`,
-          "question": "In the sentence 'Strange creatures lurk in the darkness below,' what type of word is 'below'?",
+          "question": "In the sentence 'the light fades to a dim blue glow, and the water grows bitterly cold,' what type of word is 'bitterly'?",
           "options": ["A noun","A preposition","An adjective","An adverb","A verb"],
           "correct": 3,
-          "explanation": "'Below' is an adverb here — it tells us WHERE the darkness is. Some words like 'below', 'above', 'outside' can be either adverbs or prepositions depending on how they're used. Here it modifies 'darkness' by telling us its location. ✓"
+          "explanation": "'Bitterly' is an adverb — but here it doesn't describe a verb! It describes HOW cold the water is (bitterly cold). Adverbs can modify adjectives too, telling us the degree or intensity. The '-ly' ending is your clue. ✓"
         },
-        {
-          "id": 378,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "lightning",
-          "passageTitle": "When Lightning Strikes",
-          "passage": `On a hot summer afternoon, when the air feels thick and heavy, dark clouds begin to pile up along the horizon. Inside those towering clouds, an extraordinary process is taking place. Tiny ice crystals and water droplets collide with tremendous force, building up enormous electrical charges — positive at the top of the cloud, negative at the bottom. When the difference becomes too great, nature releases it in one of its most spectacular displays: a crack of white fire splitting the sky.
-
-Lightning strikes are both dangerous and fascinating. A single bolt can reach temperatures of 30,000 degrees Celsius — roughly five times hotter than the surface of the sun. It travels at speeds of up to 270,000 miles per hour and can carry 300 million volts of electricity. The thunder we hear is the sound of air expanding explosively as the lightning superheats it, creating a shockwave that rumbles across the landscape.
-
-Britain experiences around 300,000 lightning strikes each year, mostly during summer months when warm, moist air rises rapidly to form cumulonimbus clouds. The safest place during a thunderstorm is inside a building or a car, whose metal frame conducts the electricity safely around the occupants. Standing under a tree is extremely dangerous, as trees are often the tallest objects in a landscape and attract lightning strikes.
-
-Despite its dangers, lightning plays a vital role in nature. It helps produce nitrogen compounds that fertilise the soil, and the fires it starts in wild landscapes can clear old growth and allow new plants to flourish. Scientists continue to study lightning using high-speed cameras and rocket-triggered experiments, but much about this dazzling phenomenon remains mysterious.`,
-          "question": "In the sentence 'Lightning strikes are both dangerous and fascinating,' what type of word is 'and'?",
-          "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
-          "correct": 4,
-          "explanation": "'And' is a conjunction — it joins 'dangerous' and 'fascinating' together. Conjunctions are the glue words of English: and, but, or, so, because, although. ✓"
-        },
-        {
+{
           "id": 379,
           "difficulty": 2,
           "questionType": "passage",
@@ -6574,50 +6631,12 @@ Not all volcanic eruptions are the same. Some volcanoes, like Kilauea in Hawaii,
 Britain does not have any active volcanoes today, but it was not always so peaceful. Edinburgh Castle sits on top of an ancient volcanic plug — the solidified core of a volcano that erupted over three hundred million years ago. Arthur's Seat, the famous hill in Edinburgh, is another remnant of this fiery past.
 
 Volcanoes are not entirely destructive. Volcanic soil is extremely fertile, which is why many farmers choose to live on the slopes of volcanoes despite the danger. Volcanic eruptions also release gases that helped form the Earth's atmosphere billions of years ago, and hot springs heated by underground volcanic activity provide warmth and energy in countries like Iceland and New Zealand.`,
-          "question": "In the sentence 'Molten lava flows slowly down the mountainside,' what type of word is 'slowly'?",
+          "question": "In the sentence 'Volcanoes are not entirely destructive,' what type of word is 'entirely'?",
           "options": ["An adverb","A verb","An adjective","A noun","A preposition"],
           "correct": 0,
-          "explanation": "'Slowly' is an adverb — it tells us HOW the lava flows. Spot the '-ly'! ✓"
+          "explanation": "'Entirely' is an adverb — it tells us the degree to which volcanoes are destructive (not entirely). Adverbs can modify adjectives as well as verbs. Here, 'entirely' tells us the extent of 'destructive'. The '-ly' ending is your clue! ✓"
         },
-        {
-          "id": 380,
-          "difficulty": 3,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "ancient-woodlands",
-          "passageTitle": "Britain's Ancient Woodlands",
-          "passage": `Scattered across Britain are patches of forest that have stood, unbroken, since at least the year 1600 — and many are far older than that. These remarkable forests have survived for thousands of years, predating the Norman Conquest, the Roman invasion, and in some cases even the arrival of farming in these islands. They are called ancient woodlands, and they are among the most precious and irreplaceable habitats in the country.
-
-Ancient woodlands are home to an extraordinary variety of life. Their soils, undisturbed for centuries, contain complex networks of fungi that connect tree roots underground, allowing trees to share nutrients and even warn each other of pest attacks. Bluebells, wood anemones, and wild garlic carpet the floor each spring — plants that spread so slowly they are reliable indicators of truly ancient ground. If you see a bluebell wood, the chances are that woodland has been there for at least four hundred years.
-
-The trees themselves tell remarkable stories. Many ancient woodlands were traditionally managed by coppicing — cutting trees near the base and allowing them to regrow multiple stems. Some coppiced trees have root systems that are over a thousand years old, even though the visible stems are much younger. These living monuments connect us directly to the medieval craftsmen who harvested their wood for fuel, fencing, and building.
-
-Despite legal protections, ancient woodlands remain under threat from development, road building, and the spread of invasive species. Conservation groups argue that once destroyed, an ancient woodland cannot be recreated — the intricate web of life it supports took centuries to develop and cannot be replanted.`,
-          "question": "In the sentence 'These remarkable forests have survived for thousands of years,' what type of word is 'remarkable'?",
-          "options": ["A noun","An adjective","A verb","An adverb","A pronoun"],
-          "correct": 1,
-          "explanation": "'Remarkable' is an adjective — it describes the forests. Adjectives add colour and detail to nouns, helping the reader picture exactly what the writer means. ✓"
-        },
-        {
-          "id": 381,
-          "difficulty": 3,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "night-sky",
-          "passageTitle": "A Guide to the Night Sky",
-          "passage": `On a clear night, far from the glow of street lights and towns, the sky transforms into a vast, glittering display. The stars twinkled brightly above the quiet countryside, and for thousands of years, humans have gazed upward in wonder, telling stories about the patterns they saw among the stars.
-
-The easiest pattern to recognise in the British night sky is the Plough — seven bright stars forming the shape of a saucepan, which is part of a larger constellation called Ursa Major, the Great Bear. By following the two stars at the end of the Plough's 'blade' upward, you can find Polaris, the North Star, which sits almost directly above the North Pole and has guided travellers and sailors for centuries.
-
-The best time to observe the night sky is during a new moon, when the moon's light does not wash out fainter stars. Winter nights, though cold, offer some of the clearest viewing conditions and the most spectacular constellations, including Orion the Hunter with his distinctive belt of three bright stars. In summer, the Milky Way — our own galaxy seen from the inside — stretches across the sky like a pale, luminous river.
-
-Light pollution is the biggest enemy of stargazing. In towns and cities, fewer than a hundred stars may be visible, compared to several thousand in a truly dark location. Dark sky reserves, such as Northumberland International Dark Sky Park, protect areas where artificial light is minimised, allowing visitors to experience the night sky as our ancestors once saw it.`,
-          "question": "In the sentence 'The stars twinkled brightly above the quiet countryside,' what type of word is 'above'?",
-          "options": ["A noun","A verb","A preposition","An adverb","An adjective"],
-          "correct": 2,
-          "explanation": "'Above' is a preposition here — it tells us WHERE the stars twinkled (above the countryside). When 'above' is followed by a noun, it's a preposition showing position. ✓"
-        },
-        {
+{
           "id": 382,
           "difficulty": 2,
           "questionType": "passage",
@@ -6633,69 +6652,12 @@ The biggest threat to hedgehogs is not predators like badgers or foxes, but the 
 This is where hedgehog highways come in. A hedgehog highway is simply a small hole, about thirteen centimetres square, cut into the bottom of a garden fence. This tiny gap allows hedgehogs to pass through freely while being too small for most pets to squeeze through. The idea has caught on across Britain, with thousands of homeowners cutting holes in their fences and marking them with special 'Hedgehog Highway' signs.
 
 Other ways to help hedgehogs include leaving a shallow dish of water in the garden, avoiding slug pellets (which poison the slugs that hedgehogs eat), and creating log piles where hedgehogs can hibernate during winter. Hedgehogs curl into a tight ball from November to March, slowing their heartbeat from around 190 beats per minute to just twenty, surviving on the fat reserves they built up during autumn.`,
-          "question": "In the sentence 'Volunteers worked tirelessly to create safe routes,' what type of word is 'tirelessly'?",
+          "question": "In the sentence 'This tiny gap allows hedgehogs to pass through freely while being too small for most pets to squeeze through,' what type of word is 'freely'?",
           "options": ["A noun","A verb","An adjective","An adverb","A conjunction"],
           "correct": 3,
-          "explanation": "'Tirelessly' is an adverb — it describes HOW the volunteers worked. That '-ly' ending is your best clue for adverbs! ✓"
+          "explanation": "'Freely' is an adverb — it tells us HOW the hedgehogs can pass through (without restriction). Adverbs modify verbs by answering the question 'how?'. The '-ly' ending is your biggest clue for spotting adverbs! ✓"
         },
-        {
-          "id": 383,
-          "difficulty": 1,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "raindrop-journey",
-          "passageTitle": "The Journey of a Raindrop",
-          "passage": `High above the fields of southern England, a small grey cloud drifts on the autumn wind. Inside it, millions of tiny water droplets cling to specks of dust, each one too light to fall. But as the cloud rises and cools, the droplets merge and grow heavier. The tiny raindrop fell from the grey cloud, tumbling through the air, bouncing off a leaf, and landing with a soft splash in a puddle on the footpath below.
-
-This is just the beginning of the raindrop's remarkable journey. From the puddle, it trickles into a drainage ditch, then into a small stream that winds through a farmer's field. The stream joins a river, which flows through villages and towns, under stone bridges and past old mills, gathering water from hundreds of other streams along the way. By the time it reaches the coast, the river is wide and slow, carrying our raindrop out into the salty waters of the English Channel.
-
-But the journey does not end at the sea. Warmed by the sun, water molecules at the ocean's surface gain enough energy to escape into the air as invisible water vapour — a process called evaporation. Rising on warm currents of air, the vapour cools and condenses around tiny particles of dust or salt, forming new cloud droplets. The cycle begins again.
-
-This endless loop — evaporation, condensation, precipitation, and collection — is called the water cycle, and it has been running without interruption for billions of years. Every glass of water you drink contains molecules that have been rain, river, ocean, and cloud countless times before.`,
-          "question": "In the sentence 'The tiny raindrop fell from the grey cloud,' what type of word is 'fell'?",
-          "options": ["A noun (naming word)","A preposition (position word)","An adjective (describing word)","An adverb (how word)","A verb (doing word)"],
-          "correct": 4,
-          "explanation": "'Fell' is a verb — it tells us what the raindrop DID. It's the past tense of 'fall'. ✓"
-        },
-        {
-          "id": 384,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "fastest-animal",
-          "passageTitle": "The Fastest Animal on Earth",
-          "passage": `When people think of fast animals, they usually picture a cheetah sprinting across the African savannah. The cheetah is indeed the fastest animal on land, capable of reaching 70 miles per hour in short bursts. But the true speed champion of the animal kingdom is a bird — and it lives right here in Britain.
-
-The peregrine falcon dives at extraordinary speed, tucking its wings tight against its body and plunging toward its prey in a hunting manoeuvre called a stoop. During a stoop, a peregrine can exceed 240 miles per hour, making it the fastest animal ever recorded. To put that in perspective, it is faster than a Formula One car and nearly as fast as a skydiver in freefall.
-
-How does the peregrine survive such extreme speeds? Its body is superbly adapted for the task. A bony ridge above each eye acts as a sun visor, reducing glare. Special baffles in its nostrils slow the airflow so it can breathe during the dive. Its feathers are stiff and streamlined, reducing drag, and its powerful chest muscles allow it to pull out of the dive and strike its target — usually a pigeon or other bird — with devastating precision.
-
-Peregrine falcons nearly disappeared from Britain in the 1960s due to pesticide poisoning, but a long-running conservation programme has brought them back. Today, peregrines nest not only on sea cliffs and mountain crags but also on the ledges of city buildings, cathedrals, and tower blocks, where they hunt the plentiful pigeons below. In many cities, webcams allow the public to watch peregrine families raise their chicks each spring.`,
-          "question": "In the sentence 'The peregrine falcon dives at extraordinary speed,' what type of word is 'extraordinary'?",
-          "options": ["An adjective","A verb","A noun","An adverb","A preposition"],
-          "correct": 0,
-          "explanation": "'Extraordinary' is an adjective — it describes the speed (what kind of speed? extraordinary speed!). Even long, impressive-sounding words can be adjectives! ✓"
-        },
-        {
-          "id": 385,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "word-class",
-          "passageId": "pharaohs",
-          "passageTitle": "Secrets of the Pharaohs",
-          "passage": `For over three thousand years, the pharaohs of ancient Egypt ruled one of the most powerful civilisations the world has ever known. They built enormous pyramids, carved temples into mountainsides, and filled their tombs with treasures of breathtaking beauty. Then, as Egypt's power faded, the desert sands slowly buried their monuments, and the secrets of the pharaohs were lost to the world for centuries.
-
-Archaeologists discovered the tomb beneath the sand in a series of extraordinary excavations that began in the early nineteenth century. The most famous discovery came in 1922, when the British archaeologist Howard Carter found the tomb of Tutankhamun in the Valley of the Kings. Unlike most royal tombs, which had been emptied by grave robbers centuries earlier, Tutankhamun's burial chamber was almost completely intact. Inside lay a solid gold coffin, a magnificent death mask, jewellery, weapons, furniture, and even preserved food — over five thousand objects in total.
-
-The discovery caused a worldwide sensation. Newspapers ran breathless headlines, and 'Tut-mania' swept across Europe and America. The treasures revealed the astonishing skill of ancient Egyptian craftsmen and provided invaluable information about royal life, religious beliefs, and burial customs. Scientists have since used X-rays, CT scans, and DNA analysis to learn more about Tutankhamun himself — a young king who died at just nineteen, probably from a combination of malaria and a broken leg.
-
-Today, the treasures of Tutankhamun are displayed at the Grand Egyptian Museum in Cairo, where they continue to fascinate visitors from around the world. The pharaohs may have been gone for two thousand years, but their legacy endures in stone, gold, and the endless curiosity of those who seek to understand them.`,
-          "question": "In the sentence 'Archaeologists discovered the tomb beneath the sand,' what type of word is 'beneath'?",
-          "options": ["A noun","A preposition","An adjective","An adverb","A verb"],
-          "correct": 1,
-          "explanation": "'Beneath' is a preposition — it tells us WHERE the tomb was (beneath the sand). 'Beneath', 'under', 'below' are all prepositions that show something is lower than something else. ✓"
-        },
-        {
+{
           "id": 386,
           "difficulty": 2,
           "questionType": "passage",
@@ -6784,26 +6746,7 @@ Mrs Greenwood smiled. "I was hoping you'd say that."`,
           "correct": 4,
           "explanation": "'Peculiar' suggests something odd and slightly mysterious — it makes us curious about what we might find inside. The author chose this word carefully to create a sense of wonder and intrigue from the very start. ✓"
         },
-        {
-          "id": 389,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "inference",
-          "passageId": "secret-hedgehogs",
-          "passageTitle": "The Secret Life of Hedgehogs",
-          "passage": `Most people have never watched a hedgehog at work, and for good reason: hedgehogs are almost entirely nocturnal. They emerge after dark, snuffling through gardens, parks, and woodland edges in search of food. They build warm nests from dry leaves and grass, tucking themselves into sheltered spots during the day where they sleep soundly, invisible to the world above.
-
-A hedgehog's night begins at dusk. Using its remarkably sharp sense of smell — far more powerful than a human's — it follows invisible trails left by slugs, beetles, and earthworms. A single hedgehog can travel up to two kilometres in one night, covering a home range that might include a dozen gardens. It moves with surprising purpose, following the same routes night after night, squeezing through gaps in fences and under gates with practised ease.
-
-The hedgehog's most famous feature is, of course, its spines — around seven thousand of them, each one a modified hair made of keratin, the same material as human fingernails. When threatened, a hedgehog rolls into a tight ball, presenting a prickly fortress that deters most predators. Badgers, however, are strong enough to uncurl a hedgehog, which is one reason why hedgehog numbers tend to be lower in areas with large badger populations.
-
-As dawn approaches, the hedgehog returns to its nest, curls up, and sleeps. The garden looks perfectly ordinary in the morning light, giving no sign of the busy little creature that spent the whole night patrolling it. This is why the author calls hedgehogs' lives 'secret' — their entire world unfolds while we are asleep.`,
-          "question": "Why does the author call hedgehogs' lives 'secret'?",
-          "options": ["Because most people don't know what hedgehogs do at night","Because hedgehogs can talk","Because hedgehogs hide from other animals","Because scientists don't study hedgehogs","Because hedgehogs are invisible"],
-          "correct": 0,
-          "explanation": "Hedgehogs are nocturnal (active at night), so most people never see what they get up to. The word 'secret' makes us feel like we're about to discover something hidden — it hooks us into wanting to read more! ✓"
-        },
-        {
+{
           "id": 390,
           "difficulty": 2,
           "questionType": "passage",
@@ -6914,26 +6857,7 @@ At the stern, a single large steering oar was fixed to the right-hand side of th
           "correct": 0,
           "explanation": "Writing from the ship's perspective puts us right in the middle of the action — we can feel the waves, hear the wind, and share the Vikings' excitement and fear. It's much more gripping than just describing events from the outside! ✓"
         },
-        {
-          "id": 395,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "inference",
-          "passageId": "florence-nightingale",
-          "passageTitle": "Florence Nightingale's Lamp",
-          "passage": `In the winter of 1854, a young English nurse named Florence Nightingale arrived at the British military hospital in Scutari, Turkey. What she found horrified her. Wounded soldiers from the Crimean War lay on filthy floors, without clean bandages, proper food, or basic medicines. Infection spread rapidly through the overcrowded wards, and more men were dying from disease than from their battlefield injuries.
-
-Florence immediately set about transforming the hospital. She tended the wounded soldiers with great care, organising teams of nurses to scrub the wards clean, wash bed linen, and prepare nutritious meals. She insisted on proper ventilation, clean water, and fresh supplies — measures that seem obvious today but were revolutionary at the time. Within months, the death rate at Scutari had fallen dramatically.
-
-What made Florence famous, however, was not just her medical skill but her extraordinary dedication. She worked from dawn until long after midnight, and each night she walked the hospital corridors carrying a Turkish lamp, checking on patients who could not sleep. The soldiers called her 'The Lady with the Lamp,' and the image became one of the most recognised symbols of nursing in history.
-
-Florence Nightingale returned to England as a national heroine. She spent the rest of her long life campaigning to improve hospital conditions, training nurses at the school she founded at St Thomas' Hospital in London, and writing influential books on public health. She proved that careful observation, cleanliness, and compassion could save thousands of lives — and she changed the practice of medicine forever.`,
-          "question": "What does the detail about Florence carrying a lamp at night suggest about her?",
-          "options": ["She was afraid of the dark","She was dedicated to her patients and worked even through the night","She collected lamps","The hospital had no electricity","She was looking for something she lost"],
-          "correct": 1,
-          "explanation": "Carrying a lamp to check on patients at night shows incredible dedication — she didn't stop caring when her shift ended. This small detail tells us so much about her character: she was tireless, compassionate, and put her patients first. ✓"
-        },
-        {
+{
           "id": 396,
           "difficulty": 2,
           "questionType": "passage",
@@ -7167,26 +7091,7 @@ The very deepest part of any ocean is the Mariana Trench in the Pacific, which p
           "correct": 1,
           "explanation": "'Lurk' suggests something hiding in the shadows, waiting — it creates a sense of mystery and slight danger. The author could have used 'live' or 'swim' but 'lurk' is much more atmospheric. Word choice makes all the difference! ✓"
         },
-        {
-          "id": 406,
-          "difficulty": 2,
-          "questionType": "passage",
-          "questionSubType": "inference",
-          "passageId": "lightning",
-          "passageTitle": "When Lightning Strikes",
-          "passage": `On a hot summer afternoon, when the air feels thick and heavy, dark clouds begin to pile up along the horizon. Inside those towering clouds, an extraordinary process is taking place. Tiny ice crystals and water droplets collide with tremendous force, building up enormous electrical charges — positive at the top of the cloud, negative at the bottom. When the difference becomes too great, nature releases it in one of its most spectacular displays: a crack of white fire splitting the sky.
-
-Lightning strikes are both dangerous and fascinating. A single bolt can reach temperatures of 30,000 degrees Celsius — roughly five times hotter than the surface of the sun. It travels at speeds of up to 270,000 miles per hour and can carry 300 million volts of electricity. The thunder we hear is the sound of air expanding explosively as the lightning superheats it, creating a shockwave that rumbles across the landscape.
-
-Britain experiences around 300,000 lightning strikes each year, mostly during summer months when warm, moist air rises rapidly to form cumulonimbus clouds. The safest place during a thunderstorm is inside a building or a car, whose metal frame conducts the electricity safely around the occupants. Standing under a tree is extremely dangerous, as trees are often the tallest objects in a landscape and attract lightning strikes.
-
-Despite its dangers, lightning plays a vital role in nature. It helps produce nitrogen compounds that fertilise the soil, and the fires it starts in wild landscapes can clear old growth and allow new plants to flourish. Scientists continue to study lightning using high-speed cameras and rocket-triggered experiments, but much about this dazzling phenomenon remains mysterious.`,
-          "question": "Why does the author describe lightning as 'a crack of white fire splitting the sky'?",
-          "options": ["Because the sky actually breaks","Because lightning is made of fire","To help us see and feel the power and speed of lightning through vivid description","To explain the science","Because white is a common colour"],
-          "correct": 2,
-          "explanation": "This vivid description helps us EXPERIENCE the lightning rather than just reading about it. 'Crack' gives us sound, 'white fire' gives us brightness, and 'splitting the sky' gives us the dramatic scale. Good writers make you feel like you were there! ✓"
-        },
-        {
+{
           "id": 407,
           "difficulty": 2,
           "questionType": "passage",
@@ -15330,7 +15235,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["You will need the","following, a pen","a ruler and","a calculator."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is needed after ‘pen’ to separate the items in the list — it should be ‘a pen, a ruler and a calculator’. When you list three or more things, put a comma between each item (except before ‘and’). Without the comma, ‘a pen a ruler’ runs together. ✓"
+          "explanation": "The comma after ‘following’ should be a colon — it should be ‘the following: a pen, a ruler and a calculator.’ When you introduce a list, use a colon (:), not a comma. A colon says ‘here comes the list!’ ✓"
         },
         {
           "id": 89,
@@ -15860,7 +15765,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["My birthday is","in january and","I always have","an indoor party."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "'january' needs a capital letter — it should be 'january'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'january' needs a capital letter — it should be 'January'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 143,
@@ -15890,7 +15795,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Have you ever","been to cornwall","during the summer","holidays?"],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "'cornwall' needs a capital letter — it should be 'cornwall'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'cornwall' needs a capital letter — it should be 'Cornwall'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 146,
@@ -15900,7 +15805,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We are learning","about the romans","in our history","lessons this term."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "'romans' needs a capital letter — it should be 'romans'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'romans' needs a capital letter — it should be 'Romans'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 147,
@@ -15910,7 +15815,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["My uncle lives","in birmingham and","works at a","big hospital."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "'birmingham' needs a capital letter — it should be 'birmingham'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'birmingham' needs a capital letter — it should be 'Birmingham'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 148,
@@ -15940,7 +15845,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We spent the","whole of october","learning about","the Victorians."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "'october' needs a capital letter — it should be 'october'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'october' needs a capital letter — it should be 'October'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 151,
@@ -15950,7 +15855,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We packed our bags","and caught the train","to edinburgh for","a family holiday."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "'edinburgh' needs a capital letter — it should be 'edinburgh'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'edinburgh' needs a capital letter — it should be 'Edinburgh'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 152,
@@ -15980,7 +15885,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The school concert","was held on","tuesday evening in","the main hall."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "'tuesday' needs a capital letter — it should be 'tuesday'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'tuesday' needs a capital letter — it should be 'Tuesday'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 155,
@@ -16000,7 +15905,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The new pupil","arrived from","ireland and joined","our Year Five class."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "'ireland' needs a capital letter — it should be 'ireland'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'ireland' needs a capital letter — it should be 'Ireland'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 157,
@@ -16010,7 +15915,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Grandad took us","fishing at the","River thames last","weekend."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "'thames' needs a capital letter — it should be 'thames'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'thames' needs a capital letter — it should be 'Thames'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 158,
@@ -16040,7 +15945,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Our school is","having a bake","sale on friday","to raise money."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "'friday' needs a capital letter — it should be 'friday'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'friday' needs a capital letter — it should be 'Friday'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 161,
@@ -16050,7 +15955,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Dad cooked a","lovely roast dinner","for the whole","family on sunday."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "'sunday' needs a capital letter — it should be 'sunday'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'sunday' needs a capital letter — it should be 'Sunday'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 162,
@@ -16090,7 +15995,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["My gran knitted","me a lovely scarf","for my birthday","last february."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "'february' needs a capital letter — it should be 'february'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'february' needs a capital letter — it should be 'February'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 166,
@@ -16160,7 +16065,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The whole class","went on a trip","to the Tower","of london."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "'london' needs a capital letter — it should be 'london'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'london' needs a capital letter — it should be 'London'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 173,
@@ -16250,7 +16155,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We drove to","the coast in","august and stayed","in a caravan."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "'august' needs a capital letter — it should be 'august'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'august' needs a capital letter — it should be 'August'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 182,
@@ -16300,7 +16205,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The class went","on a visit to","the museum in","bristol last week."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "'bristol' needs a capital letter — it should be 'bristol'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'bristol' needs a capital letter — it should be 'Bristol'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
         },
         {
           "id": 187,
@@ -18390,7 +18295,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"I'm really hungry,\"","said Tom. \"can we","have tea soon?\"","asked his sister."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "'can' needs a capital letter — it should be 'can'. Names of people, places, days of the week, and months always start with a capital letter. They're special — they're called proper nouns (names for specific things). ✓"
+          "explanation": "'can' needs a capital letter — it should be 'Can'. When a new piece of speech starts, the first word gets a capital letter. '\"Can we have tea soon?\"' is a new sentence of speech, so 'Can' needs a capital C. ✓"
         },
         {
           "id": 396,

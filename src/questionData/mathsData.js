@@ -27104,10 +27104,10 @@ speeddistancetime: {
     {
       id: 6,
       difficulty: 3,
-      question: "Ben drives 80 km in 2 hours, then 60 km in 1.5 hours. What is his average speed for the whole journey?",
-      options: ["35 km/h", "50 km/h", "45 km/h", "40 km/h", "55 km/h"],
-      correct: 3,
-      explanation: "Total distance = 80 + 60 = 140 km. Total time = 2 + 1.5 = 3.5 hours. Average speed = 140 ÷ 3.5 = 40 km/h. ✓"
+      question: "Ben drives 60 km in 1 hour on the motorway, then 120 km in 3 hours through country roads. What is his average speed for the whole journey?",
+      options: ["45 km/h", "50 km/h", "48 km/h", "42 km/h", "55 km/h"],
+      correct: 0,
+      explanation: "Total distance = 60 + 120 = 180 km. Total time = 1 + 3 = 4 hours. Average speed = 180 ÷ 4 = 45 km/h. Don't just average the two speeds (60 + 40) ÷ 2 = 50 — that's a common trap! Always use total distance ÷ total time. ✓"
     },
     {
       id: 7,
@@ -27167,11 +27167,11 @@ speeddistancetime: {
     },
     {
       id: 14,
-      difficulty: 3,
+      difficulty: 2,
       question: "Ella drives 90 km in 2 hours, then 60 km in 1 hour. What is her average speed?",
       options: ["45 km/h", "50 km/h", "52 km/h", "55 km/h", "60 km/h"],
       correct: 1,
-      explanation: "Total distance = 90 + 60 = 150 km. Total time = 2 + 1 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. ✓"
+      explanation: "Total distance = 90 + 60 = 150 km. Total time = 2 + 1 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. Don't average the speeds (45 + 60) ÷ 2 = 52.5 — that gives the wrong answer! ✓"
     },
     {
       id: 15,
@@ -27207,11 +27207,11 @@ speeddistancetime: {
     },
     {
       id: 19,
-      difficulty: 1,
+      difficulty: 2,
       question: "A cyclist covers 18 km in 30 minutes. What is the speed in km/h?",
       options: ["32 km/h", "36 km/h", "40 km/h", "44 km/h", "48 km/h"],
       correct: 1,
-      explanation: "30 minutes = 0.5 hours. Speed = 18 ÷ 0.5 = 36 km/h. ✓"
+      explanation: "First convert 30 minutes to hours: 30 ÷ 60 = 0.5 hours. Speed = 18 ÷ 0.5 = 36 km/h. Remember: 30 minutes = 0.5 hours, not 0.3 — time uses base 60, not base 10! ✓"
     },
     {
       id: 20,
@@ -27239,11 +27239,11 @@ speeddistancetime: {
     },
     {
       id: 23,
-      difficulty: 3,
-      question: "A driver travels 100 km in 2 hours, then 80 km in 2 hours. What is the average speed?",
-      options: ["45 km/h", "48 km/h", "50 km/h", "52 km/h", "55 km/h"],
+      difficulty: 2,
+      question: "A driver covers 90 km in 1 hour on the dual carriageway, then 60 km in 2 hours in traffic. What is the average speed?",
+      options: ["50 km/h", "60 km/h", "55 km/h", "45 km/h", "65 km/h"],
       correct: 0,
-      explanation: "Total distance = 180 km. Total time = 4 hours. Average = 180 ÷ 4 = 45 km/h. ✓"
+      explanation: "Total distance = 90 + 60 = 150 km. Total time = 1 + 2 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. Don't average the two speeds (90 + 30) ÷ 2 = 60 — that only works when you spend equal time at each speed. ✓"
     },
     {
       id: 24,
@@ -27320,10 +27320,10 @@ speeddistancetime: {
     {
       id: 33,
       difficulty: 3,
-      question: "A car drives 120 km in 2 hours, then 90 km in 1.5 hours. What is the average speed?",
-      options: ["60 km/h", "58 km/h", "55 km/h", "62 km/h", "65 km/h"],
+      question: "A car drives 100 km in 1 hour on the A-road, then 80 km in 2 hours through town. What is the average speed?",
+      options: ["60 km/h", "70 km/h", "65 km/h", "55 km/h", "75 km/h"],
       correct: 0,
-      explanation: "Total = 210 km in 3.5 hours. Average = 210 ÷ 3.5 = 60 km/h. ✓"
+      explanation: "Total distance = 100 + 80 = 180 km. Total time = 1 + 2 = 3 hours. Average = 180 ÷ 3 = 60 km/h. The trap answer (100 + 40) ÷ 2 = 70 is wrong because you spent longer at the slower speed. ✓"
     },
     {
       id: 34,
@@ -27367,11 +27367,11 @@ speeddistancetime: {
     },
     {
       id: 39,
-      difficulty: 2,
+      difficulty: 3,
       question: "A car covers 30 km in 25 minutes. What is the speed in km/h?",
       options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
       correct: 1,
-      explanation: "25 min = 25/60 hours. Speed = 30 ÷ (25/60) = 30 × 60/25 = 72 km/h. ✓"
+      explanation: "25 min = 25/60 = 5/12 hours. Speed = 30 ÷ (5/12) = 30 × 12/5 = 72 km/h. This is tricky because 25 minutes doesn't convert to a simple decimal — you need to work with fractions. ✓"
     },
     {
       id: 40,
@@ -27400,10 +27400,10 @@ speeddistancetime: {
     {
       id: 43,
       difficulty: 3,
-      question: "A family drives 150 km on the motorway in 3 hours, then 50 km through town in 1 hour. What is their average speed?",
-      options: ["50 km/h", "48 km/h", "45 km/h", "52 km/h", "55 km/h"],
+      question: "A family drives 120 km on the motorway in 1 hour, then 60 km through town in 2 hours. What is their average speed?",
+      options: ["60 km/h", "75 km/h", "65 km/h", "70 km/h", "55 km/h"],
       correct: 0,
-      explanation: "Total distance = 150 + 50 = 200 km. Total time = 3 + 1 = 4 hours. Average = 200 \u00f7 4 = 50 km/h. \u2713"
+      explanation: "Total distance = 120 + 60 = 180 km. Total time = 1 + 2 = 3 hours. Average = 180 ÷ 3 = 60 km/h. Don't average (120 + 30) ÷ 2 = 75 — you spent twice as long at the slower speed. ✓"
     },
     {
       id: 44,
@@ -27424,10 +27424,10 @@ speeddistancetime: {
     {
       id: 46,
       difficulty: 1,
-      question: "A rescue helicopter needs to reach an island 336 km away in 5.25 hours. What speed must it fly at?",
-      options: ["60 km/h", "62 km/h", "66 km/h", "64 km/h", "68 km/h"],
+      question: "A rescue helicopter flies 280 km to reach an island in 4 hours. What speed does it fly at?",
+      options: ["65 km/h", "68 km/h", "72 km/h", "70 km/h", "75 km/h"],
       correct: 3,
-      explanation: "Speed = distance ÷ time = 336 ÷ 5.25 = 64 km/h. ✓"
+      explanation: "Speed = distance ÷ time = 280 ÷ 4 = 70 km/h. ✓"
     },
     {
       id: 47,
@@ -27480,10 +27480,10 @@ speeddistancetime: {
     {
       id: 53,
       difficulty: 3,
-      question: "A school coach drives 180 km on the M3 in 2 hours, then crawls 60 km through town in 2 hours. Average speed?",
-      options: ["60 km/h", "54 km/h", "48 km/h", "66 km/h", "72 km/h"],
+      question: "A school coach drives 180 km on the M3 in 2 hours, then crawls 60 km through town in 1 hour. Average speed?",
+      options: ["80 km/h", "75 km/h", "70 km/h", "85 km/h", "65 km/h"],
       correct: 0,
-      explanation: "Total = 180 + 60 = 240 km. Time = 2 + 2 = 4 hours. Average = 240 \u00f7 4 = 60 km/h. \u2713"
+      explanation: "Total = 180 + 60 = 240 km. Time = 2 + 1 = 3 hours. Average = 240 ÷ 3 = 80 km/h. Trap: (90 + 60) ÷ 2 = 75 — wrong because equal time wasn't spent at each speed. ✓"
     },
     {
       id: 54,
@@ -27495,11 +27495,11 @@ speeddistancetime: {
     },
     {
       id: 55,
-      difficulty: 3,
+      difficulty: 2,
       question: "A ferry from Poole to Cherbourg sails at 25 km/h for 3 hours 12 minutes. How far is the crossing?",
       options: ["76 km", "78 km", "80 km", "82 km", "84 km"],
       correct: 2,
-      explanation: "3 hours 12 min = 3.2 hours. Distance = 25 \u00d7 3.2 = 80 km. \u2713"
+      explanation: "3 hours 12 min = 3.2 hours (12 minutes = 12/60 = 0.2 hours). Distance = 25 × 3.2 = 80 km. ✓"
     },
     {
       id: 56,
@@ -27560,10 +27560,10 @@ speeddistancetime: {
     {
       id: 63,
       difficulty: 3,
-      question: "During a sponsored cycle, Mia rides 200 km on flat roads in 4 hours, then 100 km uphill in 2 hours. Average speed?",
-      options: ["50 km/h", "48 km/h", "45 km/h", "52 km/h", "55 km/h"],
+      question: "During a sponsored cycle, Mia rides 100 km on flat roads in 2 hours, then 80 km uphill in 4 hours. Average speed?",
+      options: ["30 km/h", "35 km/h", "32 km/h", "28 km/h", "25 km/h"],
       correct: 0,
-      explanation: "Total = 200 + 100 = 300 km. Time = 4 + 2 = 6 hours. Average = 300 \u00f7 6 = 50 km/h. \u2713"
+      explanation: "Total = 100 + 80 = 180 km. Time = 2 + 4 = 6 hours. Average = 180 ÷ 6 = 30 km/h. The trap (50 + 20) ÷ 2 = 35 is wrong — Mia spent much longer at the slow uphill speed. ✓"
     },
     {
       id: 64,
@@ -27576,10 +27576,10 @@ speeddistancetime: {
     {
       id: 65,
       difficulty: 2,
-      question: "A narrowboat chugs along the canal at 32 km/h for 1 hour 45 minutes. How far does it travel?",
-      options: ["52 km", "54 km", "56 km", "58 km", "60 km"],
+      question: "A narrowboat chugs along the canal at 8 km/h for 1 hour 45 minutes. How far does it travel?",
+      options: ["12 km", "13 km", "14 km", "15 km", "16 km"],
       correct: 2,
-      explanation: "1 hour 45 min = 1.75 hours. Distance = 32 \u00d7 1.75 = 56 km. \u2713"
+      explanation: "1 hour 45 min = 1.75 hours. Distance = 8 × 1.75 = 14 km. ✓"
     },
     {
       id: 66,
@@ -27600,10 +27600,10 @@ speeddistancetime: {
     {
       id: 68,
       difficulty: 1,
-      question: "Gran drives 600 km from Edinburgh to Bournemouth, averaging 120 km/h on the motorway. How long is the journey?",
+      question: "Gran drives 480 km from Edinburgh to Bournemouth, averaging 96 km/h on the motorway. How long is the journey?",
       options: ["5 hours", "4.5 hours", "4 hours", "5.5 hours", "6 hours"],
       correct: 0,
-      explanation: "Time = distance ÷ speed = 600 ÷ 120 = 5 hours. ✓"
+      explanation: "Time = distance ÷ speed = 480 ÷ 96 = 5 hours. ✓"
     },
     {
       id: 69,
@@ -27664,10 +27664,10 @@ speeddistancetime: {
     {
       id: 76,
       difficulty: 1,
-      question: "A relief lorry must reach a flooded village 516 km away in 6.45 hours. What speed is needed?",
-      options: ["76 km/h", "78 km/h", "82 km/h", "80 km/h", "84 km/h"],
+      question: "A relief lorry must reach a flooded village 480 km away in 6 hours. What speed is needed?",
+      options: ["75 km/h", "78 km/h", "82 km/h", "80 km/h", "85 km/h"],
       correct: 3,
-      explanation: "Speed = 516 \u00f7 6.45 = 80 km/h. \u2713"
+      explanation: "Speed = distance ÷ time = 480 ÷ 6 = 80 km/h. ✓"
     },
     {
       id: 77,
@@ -27707,15 +27707,15 @@ speeddistancetime: {
       question: "A family drives from Bournemouth to London, a distance of 180 km. They leave at 9:00 am and arrive at 11:30 am. What was their average speed?",
       options: ["68 km/h", "70 km/h", "74 km/h", "72 km/h", "76 km/h"],
       correct: 3,
-      explanation: "Journey time = 11:30 − 9:00 = 2.5 hours. Speed = 180 ÷ 2.5 = 72 km/h. ✓"
+      explanation: "First work out the journey time: from 9:00 to 11:00 is 2 hours, plus another 30 minutes = 2.5 hours. Speed = 180 ÷ 2.5 = 72 km/h. Remember: 30 minutes = 0.5 hours, not 0.3! ✓"
     },
     {
       id: 82,
       difficulty: 2,
-      question: "A lifeboat speeds 80 km out to sea at 240 km/h to reach a yacht. How many minutes does it take?",
+      question: "A lifeboat speeds 16 km out to sea at 48 km/h to reach a yacht. How many minutes does it take?",
       options: ["15", "18", "20", "24", "25"],
       correct: 2,
-      explanation: "Time = 80 ÷ 240 = 1/3 hours. Convert to minutes: 1/3 × 60 = 20 minutes. \u2713"
+      explanation: "Time = 16 ÷ 48 = 1/3 hours. Convert to minutes: 1/3 × 60 = 20 minutes. ✓"
     },
     {
       id: 83,
@@ -27744,10 +27744,10 @@ speeddistancetime: {
     {
       id: 86,
       difficulty: 1,
-      question: "An emergency plumber needs to reach a burst pipe 576 km away in 7.2 hours. What speed must he drive?",
-      options: ["76 km/h", "78 km/h", "82 km/h", "80 km/h", "84 km/h"],
+      question: "An emergency plumber drives 360 km to reach a burst pipe in 6 hours. What is his average speed?",
+      options: ["55 km/h", "58 km/h", "62 km/h", "60 km/h", "65 km/h"],
       correct: 3,
-      explanation: "Speed = 576 \u00f7 7.2 = 80 km/h. \u2713"
+      explanation: "Speed = distance ÷ time = 360 ÷ 6 = 60 km/h. ✓"
     },
     {
       id: 87,
@@ -27787,15 +27787,15 @@ speeddistancetime: {
       question: "Daisy runs 2.4 km to school at 8 km/h. She leaves at 8:20 am. What time does she arrive?",
       options: ["8:35 am", "8:36 am", "8:39 am", "8:38 am", "8:40 am"],
       correct: 3,
-      explanation: "Time = 2.4 ÷ 8 = 0.3 hours = 18 minutes. 8:20 + 18 min = 8:38 am. ✓"
+      explanation: "Time = 2.4 ÷ 8 = 0.3 hours. Convert carefully: 0.3 hours = 0.3 × 60 = 18 minutes (not 30 minutes — time isn't base 10!). 8:20 + 18 = 8:38 am. ✓"
     },
     {
       id: 92,
       difficulty: 2,
-      question: "A police car chases along a motorway at 260 km/h. How many minutes to cover 65 km?",
+      question: "A police car races along a motorway at 156 km/h. How many minutes to cover 39 km?",
       options: ["12", "13", "14", "16", "15"],
       correct: 4,
-      explanation: "260 km in 60 min. 65/260 = 1/4. Time = 15 minutes. \u2713"
+      explanation: "Time = 39 ÷ 156 = 0.25 hours. Convert to minutes: 0.25 × 60 = 15 minutes. ✓"
     },
     {
       id: 93,
@@ -27824,10 +27824,10 @@ speeddistancetime: {
     {
       id: 96,
       difficulty: 1,
-      question: "A pilot must fly 636 km to a small airfield in 7.95 hours. What speed is needed?",
-      options: ["76 km/h", "78 km/h", "82 km/h", "80 km/h", "84 km/h"],
+      question: "A pilot flies 450 km to a small airfield in 5 hours. What speed is needed?",
+      options: ["85 km/h", "88 km/h", "92 km/h", "90 km/h", "95 km/h"],
       correct: 3,
-      explanation: "Speed = 636 \u00f7 7.95 = 80 km/h. \u2713"
+      explanation: "Speed = distance ÷ time = 450 ÷ 5 = 90 km/h. ✓"
     },
     {
       id: 97,
@@ -27864,10 +27864,10 @@ speeddistancetime: {
     {
       id: 101,
       difficulty: 3,
-      question: "A coach leaves Bristol at 10:15 am and arrives in Exeter at 12:00 noon, covering 120 km. On the return, traffic slows it to 48 km/h. What time does it arrive back in Bristol?",
+      question: "A coach leaves Bristol at 10:15 am and arrives in Exeter at 12:00 noon, covering 120 km. It leaves Exeter immediately at noon for the return journey, but traffic slows it to 48 km/h. What time does it arrive back in Bristol?",
       options: ["2:15 pm", "3:00 pm", "2:45 pm", "2:30 pm", "3:15 pm"],
       correct: 3,
-      explanation: "Return time = 120 ÷ 48 = 2.5 hours. Leaves at noon, arrives at 2:30 pm. ✓"
+      explanation: "The return is 120 km at 48 km/h. Time = 120 ÷ 48 = 2.5 hours. The coach leaves Exeter at noon, so 12:00 + 2.5 hours = 2:30 pm. ✓"
     },
     {
       id: 102,
@@ -27887,11 +27887,11 @@ speeddistancetime: {
     },
     {
       id: 104,
-      difficulty: 1,
+      difficulty: 2,
       question: "A charity runner completes 6000 metres of a fun run in 30 minutes. Speed in km/h?",
       options: ["10 km/h", "12 km/h", "11 km/h", "13 km/h", "14 km/h"],
       correct: 1,
-      explanation: "6000 m = 6 km. 30 min = 0.5 hours. Speed = 6 \u00f7 0.5 = 12 km/h. \u2713"
+      explanation: "Two conversions needed: 6000 m = 6 km, and 30 min = 0.5 hours. Speed = 6 ÷ 0.5 = 12 km/h. ✓"
     },
     {
       id: 105,
@@ -27904,10 +27904,10 @@ speeddistancetime: {
     {
       id: 106,
       difficulty: 1,
-      question: "A lorry driver needs to reach a warehouse 696 km away in 8.7 hours to avoid a late fee. What speed?",
-      options: ["76 km/h", "78 km/h", "82 km/h", "80 km/h", "84 km/h"],
+      question: "A lorry driver drives 520 km to a warehouse in 8 hours. What is his average speed?",
+      options: ["60 km/h", "63 km/h", "67 km/h", "65 km/h", "70 km/h"],
       correct: 3,
-      explanation: "Speed = 696 \u00f7 8.7 = 80 km/h. \u2713"
+      explanation: "Speed = distance ÷ time = 520 ÷ 8 = 65 km/h. ✓"
     },
     {
       id: 107,
@@ -27995,10 +27995,10 @@ speeddistancetime: {
     {
       id: 117,
       difficulty: 3,
-      question: "Mum drives 240 km to visit Auntie. She drives the first 120 km at 60 km/h, then stops for 30 minutes for lunch, then drives the remaining 120 km at 80 km/h. What is her average speed for the whole journey (not including the lunch stop)?",
-      options: ["65.1 km/h", "75.0 km/h", "70.0 km/h", "72.5 km/h", "68.6 km/h"],
-      correct: 4,
-      explanation: "Time for first half = 120 ÷ 60 = 2 hours. Time for second half = 120 ÷ 80 = 1.5 hours. Total driving time = 3.5 hours. Average speed = 240 ÷ 3.5 = 68.6 km/h (rounded to 1 d.p.). ✓"
+      question: "Mum drives 240 km to visit Auntie. She drives the first 120 km at 60 km/h, then stops for lunch, then drives the remaining 120 km at 40 km/h. What is her average driving speed (not including the lunch stop)?",
+      options: ["48 km/h", "50 km/h", "45 km/h", "52 km/h", "55 km/h"],
+      correct: 0,
+      explanation: "Time for first half = 120 ÷ 60 = 2 hours. Time for second half = 120 ÷ 40 = 3 hours. Total driving time = 5 hours. Average speed = 240 ÷ 5 = 48 km/h. Don't average the speeds (60 + 40) ÷ 2 = 50 — that's the trap! She spent longer at the slower speed. ✓"
     },
     {
       id: 118,
@@ -28027,10 +28027,10 @@ speeddistancetime: {
     {
       id: 121,
       difficulty: 3,
-      question: "Two friends leave school at the same time. Evie walks home at 5 km/h and arrives in 24 minutes. Lauren cycles at 15 km/h. How many minutes does Lauren's journey take?",
+      question: "Two friends leave school at the same time and both live the same distance from school. Evie walks home at 5 km/h and arrives in 24 minutes. Lauren cycles the same route at 15 km/h. How many minutes does Lauren's journey take?",
       options: ["6 minutes", "7 minutes", "9 minutes", "8 minutes", "10 minutes"],
       correct: 3,
-      explanation: "Evie's distance = 5 × (24/60) = 5 × 0.4 = 2 km. Lauren's time = 2 ÷ 15 = 2/15 hours = 8 minutes. ✓"
+      explanation: "Evie's distance = 5 × (24/60) = 5 × 0.4 = 2 km. Lauren cycles the same 2 km: time = 2 ÷ 15 = 2/15 hours = 8 minutes. ✓"
     },
     {
       id: 122,

@@ -9378,7 +9378,7 @@ const vrData = {
           "questionType": "select-two",
           "question": "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
           "options": ["entire", "historic", "The", "lake", "froze"],
-          "correctPair": [1, 2],
+          "correctPair": [0, 1],
           "explanation": "The word RICE is hidden across 'histoRIC' and 'Entire'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'entire' (E) = RICE. ✓"
         }
       ]
@@ -16410,10 +16410,10 @@ const vrData = {
               {
                       id: 1,
                       difficulty: 1,
-                      question: "big (dig) → cat (__). The word in brackets is made by changing the first letter. What word goes in the brackets?",
-                      options: ["mat","hat","bat","sat","rat"],
+                      question: "Look at the pattern: big → dig, cap → dap... that's not a word! Try: big → dig, cat → dat... not a word either! The rule is: change the first letter to the one that comes 2 letters later. big (b+2=d) → dig. cat (c+2=e) → ___",
+                      options: ["mat","hat","eat","sat","rat"],
                       correct: 2,
-                      explanation: "In 'big', changing the first letter 'b' to 'd' gives 'dig'. Following the same pattern for 'cat': we need to change 'c' to 'b' (the letter before it) giving 'bat'. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
+                      explanation: "The rule is: move the first letter forward by 2 in the alphabet. b+2=d, so big→dig. c+2=e, so cat→eat. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 2,
@@ -16433,11 +16433,11 @@ const vrData = {
               },
               {
                       id: 4,
-                      difficulty: 3,
-                      question: "Look at this pattern: (SEAT, ATE) (CLAM, LAM) (TRIP, ___). The word in brackets uses some of the letters from the first word. What completes the pattern?",
-                      options: ["RIP","TIP","TRI","RIT","IRP"],
+                      difficulty: 2,
+                      question: "Complete the third pair: (PLANE, LANE) (BRACE, RACE) (CLAMP, ___)",
+                      options: ["LAMP","CAMP","CLAM","AMP","MAP"],
                       correct: 0,
-                      explanation: "SEAT → ATE (remove the first letter, take the last 3 letters). CLAM → LAM (remove the first letter, take the last 3 letters). TRIP → RIP (remove the first letter, take the last 3 letters). The pattern is: remove the first letter to leave a 3-letter word. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
+                      explanation: "The pattern removes the first letter. PLANE → LANE, BRACE → RACE, CLAMP → LAMP. Each time the first letter is stripped away. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
               },
               {
                       id: 5,
@@ -17205,10 +17205,10 @@ const vrData = {
               {
                       id: 95,
                       difficulty: 3,
-                      question: "Look at the pattern: GRAPE → DRAPE, GLOW → BLOW. What does GRAIN become?",
+                      question: "Look at the pattern: GRIP → DRIP, GLOW → DLOW... that's not a word! So try: GRIP → DRIP, GRAIN → ___",
                       options: ["DRAIN","BRAIN","TRAIN","MAIN","RAIN"],
-                      correct: 1,
-                      explanation: "The pattern replaces the first letter G with another letter to make a new word. GLOW → BLOW (G becomes B). GRAIN → BRAIN (G becomes B). The answer is BRAIN. ✓"
+                      correct: 0,
+                      explanation: "The pattern replaces the first letter G with D. GRIP → DRIP (G becomes D). GRAIN → DRAIN (G becomes D). The rule is consistent: always swap G for D. Tip: When two examples show different replacements, one of them might be a red herring — look for the consistent rule. ✓"
               },
               {
                       id: 96,
@@ -17221,10 +17221,10 @@ const vrData = {
               {
                       id: 97,
                       difficulty: 3,
-                      question: "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does ANGEL become?",
-                      options: ["ANGLE","CLEAN","LEANG","GLEAN","NEGAL"],
-                      correct: 3,
-                      explanation: "The pattern rearranges all the letters to make a new word (anagram). PEACH → CHEAP, NIGHT → THING. Apply the same anagram pattern. ✓"
+                      question: "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does LEMON become?",
+                      options: ["MELON","MONEL","LEMON","NOLEM","ONLEM"],
+                      correct: 0,
+                      explanation: "The pattern rearranges all the letters to make a new word (anagram). PEACH → CHEAP, NIGHT → THING, LEMON → MELON. Each word uses the exact same letters in a different order. ✓"
               },
               {
                       id: 98,

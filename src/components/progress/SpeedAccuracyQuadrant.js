@@ -2,6 +2,123 @@ import React, { useMemo } from 'react';
 import { Target } from 'lucide-react';
 import { topicNames } from '../RecommendationCard';
 
+/**
+ * Resolve overlapping labels by nudging them apart vertically.
+ * Dots never move — only the text labels shift. Returns labels
+ * with final (lx, ly) positions and whether a leader line is needed.
+ */
+function resolveLabels(labels, plotBounds) {
+  // Approximate text dimensions: ~6px per char width, 14px height
+  const CHAR_W = 6;
+  const LABEL_H = 14;
+  const LABEL_PAD = 3;
+  const DOT_PROXIMITY = 50; // px — dots closer than this are "clustered"
+
+  // Calculate bounding boxes
+  const items = labels.map(l => {
+    const textW = l.text.length * CHAR_W;
+    return {
+      ...l,
+      width: textW,
+      height: LABEL_H,
+      origLx: l.lx,
+      origLy: l.ly,
+      left: l.lx - textW / 2,
+      right: l.lx + textW / 2,
+      top: l.ly - LABEL_H,
+      bottom: l.ly,
+    };
+  });
+
+  // Fan out horizontally: for dots that are close together, alternate
+  // labels left and right so leader lines don't overlap
+  items.sort((a, b) => a.cx - b.cx);
+  for (let i = 0; i < items.length; i++) {
+    for (let j = i + 1; j < items.length; j++) {
+      const dx = Math.abs(items[i].cx - items[j].cx);
+      const dy = Math.abs(items[i].cy - items[j].cy);
+      if (dx < DOT_PROXIMITY && dy < DOT_PROXIMITY) {
+        // Dots are clustered — offset labels in opposite horizontal directions
+        const fanOffset = 40;
+        // Left dot gets label to the left, right dot to the right
+        if (items[i].cx <= items[j].cx) {
+          if (items[i].lx === items[i].origLx) {
+            items[i].lx -= fanOffset;
+            items[i].left -= fanOffset;
+            items[i].right -= fanOffset;
+          }
+          if (items[j].lx === items[j].origLx) {
+            items[j].lx += fanOffset;
+            items[j].left += fanOffset;
+            items[j].right += fanOffset;
+          }
+        }
+      }
+    }
+  }
+
+  // Clamp labels horizontally within plot bounds
+  items.forEach(item => {
+    if (item.left < plotBounds.left) {
+      const shift = plotBounds.left - item.left;
+      item.lx += shift;
+      item.left += shift;
+      item.right += shift;
+    }
+    if (item.right > plotBounds.right) {
+      const shift = item.right - plotBounds.right;
+      item.lx -= shift;
+      item.left -= shift;
+      item.right -= shift;
+    }
+  });
+
+  // Sort by Y for vertical de-collision
+  items.sort((a, b) => a.ly - b.ly);
+
+  // Push overlapping labels apart vertically
+  for (let pass = 0; pass < 5; pass++) {
+    let moved = false;
+    for (let i = 0; i < items.length; i++) {
+      for (let j = i + 1; j < items.length; j++) {
+        const a = items[i];
+        const b = items[j];
+        if (a.right < b.left || b.right < a.left) continue;
+        const overlapY = (a.bottom + LABEL_PAD) - b.top;
+        if (overlapY > 0) {
+          const shift = Math.ceil(overlapY / 2);
+          a.ly -= shift;
+          a.top -= shift;
+          a.bottom -= shift;
+          b.ly += shift;
+          b.top += shift;
+          b.bottom += shift;
+          moved = true;
+        }
+      }
+    }
+    if (!moved) break;
+  }
+
+  // Clamp labels vertically within plot bounds
+  items.forEach(item => {
+    if (item.top < plotBounds.top) {
+      const shift = plotBounds.top - item.top;
+      item.ly += shift;
+      item.top += shift;
+      item.bottom += shift;
+    }
+    if (item.bottom > plotBounds.bottom) {
+      const shift = item.bottom - plotBounds.bottom;
+      item.ly -= shift;
+      item.top -= shift;
+      item.bottom -= shift;
+    }
+  });
+
+  return items;
+}
+
 const subjectConfig = {
   maths: { name: 'Maths', colour: '#0984E3', speedTarget: 60 },
   english: { name: 'English', colour: '#00B894', speedTarget: 55 },
@@ -196,25 +313,51 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
             </g>
           ))}
 
-          {/* Topic dots */}
-          {topics.map((t, i) => {
-            const cx = xScale(t.avgSecs);
-            const cy = yScale(t.accuracy);
-            const opacity = t.isStale ? 0.35 : 1;
-            const label = t.name.length > 18 ? t.name.slice(0, 16) + '…' : t.name;
-            // Place label below dot when near top of chart, above when near bottom
-            const labelAbove = cy > pad.top + plotH * 0.35;
-            const ly = labelAbove ? cy - 14 : cy + 20;
+          {/* Topic dots + collision-resolved labels */}
+          {(() => {
+            // Build initial label positions
+            const rawLabels = topics.map(t => {
+              const cx = xScale(t.avgSecs);
+              const cy = yScale(t.accuracy);
+              const text = t.name.length > 18 ? t.name.slice(0, 16) + '…' : t.name;
+              const labelAbove = cy > pad.top + plotH * 0.35;
+              const ly = labelAbove ? cy - 14 : cy + 20;
+              return { topicKey: t.topicKey, cx, cy, lx: cx, ly, text, opacity: t.isStale ? 0.35 : 1 };
+            });
+
+            const resolved = resolveLabels(rawLabels, {
+              top: pad.top + 4,
+              bottom: pad.top + plotH - 4,
+              left: pad.left + 4,
+              right: pad.left + plotW - 4,
+            });
+
+            // Render leader lines first (behind dots), then dots, then labels
             return (
-              <g key={t.topicKey} opacity={opacity}>
-                <circle cx={cx} cy={cy} r={8} fill={colour} stroke="white" strokeWidth={2} />
-                <text x={cx} y={ly} textAnchor="middle"
-                  fontSize={11} fontWeight="600" fill="#374151">
-                  {label}
-                </text>
-              </g>
+              <>
+                {/* Leader lines — always drawn, subject colour */}
+                {resolved.map(l => (
+                  <line key={`lead-${l.topicKey}`} x1={l.cx} y1={l.cy}
+                    x2={l.lx} y2={l.ly < l.cy ? l.ly + 2 : l.ly - 12}
+                    stroke={colour} strokeWidth={1} opacity={l.opacity * 0.4} />
+                ))}
+                {/* Dots — always at true data position */}
+                {resolved.map(l => (
+                  <circle key={`dot-${l.topicKey}`} cx={l.cx} cy={l.cy}
+                    r={8} fill={colour} stroke="white" strokeWidth={2}
+                    opacity={l.opacity} />
+                ))}
+                {/* Labels — may be nudged to avoid overlaps */}
+                {resolved.map(l => (
+                  <text key={`lbl-${l.topicKey}`} x={l.lx} y={l.ly}
+                    textAnchor="middle" fontSize={11} fontWeight="600"
+                    fill="#374151" opacity={l.opacity}>
+                    {l.text}
+                  </text>
+                ))}
+              </>
             );
-          })}
+          })()}
         </svg>
       </div>
       {/* Legend */}

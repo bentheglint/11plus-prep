@@ -104,7 +104,7 @@ function QuizScreen({
 
               {/* Passage rendering for comprehension questions */}
               {currentQuestion.questionType === 'passage' && currentQuestion.passage && (
-                <div className="mb-6 relative">
+                <div className="mb-6 relative" data-testid="passage-block">
                   <div className="bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto scroll-passage"
                     onScroll={(e) => {
                       const el = e.target;
@@ -135,7 +135,7 @@ function QuizScreen({
 
               {/* Error-spotting rendering for spelling/punctuation questions */}
               {currentQuestion.questionType === 'error-spotting' && currentQuestion.segments && (
-                <div className="mb-6">
+                <div className="mb-6" data-testid="segment-grid">
                   <div className="grid grid-cols-2 gap-3">
                     {currentQuestion.segments.map((segment, idx) => (
                       <div
@@ -177,7 +177,7 @@ function QuizScreen({
 
               {/* Select-two rendering for dual-answer questions (e.g. VR synonyms, odd-two-out, hidden words) */}
               {currentQuestion.questionType === 'select-two' && (
-                <div className="mb-6">
+                <div className="mb-6" data-testid="select-two-grid">
                   <div className={selectedTopic === 'hiddenWords' ? 'flex flex-wrap justify-center gap-2' : 'grid grid-cols-2 gap-3 sm:grid-cols-3'}>
                     {currentQuestion.options.map((option, idx) => (
                       <button
@@ -213,7 +213,7 @@ function QuizScreen({
 
               {/* Pick-from-sets rendering for two-group questions (e.g. VR analogies, compound words) */}
               {currentQuestion.questionType === 'pick-from-sets' && (
-                <div className="mb-6 space-y-4">
+                <div className="mb-6 space-y-4" data-testid="pick-from-sets-groups">
                   <div>
                     <p className="text-sm font-bold text-[#6C5CE7] mb-2">Group A</p>
                     <div className="grid grid-cols-3 gap-3">
@@ -298,7 +298,7 @@ function QuizScreen({
               })()}
               
               {(!currentQuestion.questionType || currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'error-spotting' || currentQuestion.questionType === 'letter-codes') ? (
-                <div className="space-y-3 stagger-children">
+                <div className="space-y-3 stagger-children" data-testid="options-standard">
                   {currentQuestion.options.map((option, idx) => {
                     const letter = String.fromCharCode(65 + idx);
                     return (

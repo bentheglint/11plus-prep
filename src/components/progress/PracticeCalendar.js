@@ -1,5 +1,4 @@
 import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
 
 // Weekly practice calendar — rows are weeks, columns are Mon-Sun
 function PracticeCalendar({ practiceDays, practiceLog }) {
@@ -113,11 +112,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
                       className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${isToday ? 'ring-2 ring-[#6C5CE7] ring-offset-1' : ''}`}
                       style={{ background: isFuture ? 'transparent' : intensityColours[intensity] }}
                       title={`${day.date}: ${day.questions} questions`}
-                    >
-                      {day.practiced && (
-                        <CheckCircle2 className="w-4 h-4 text-[#6C5CE7]" />
-                      )}
-                    </div>
+                    />
                   </div>
                 );
               })}
@@ -132,11 +127,10 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
 
       {/* Legend */}
       <div className="flex items-center gap-2 mt-3 text-xs text-[#636E72]">
-        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#F3F4F6' }} /> No practice</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded border border-gray-300" style={{ background: '#F3F4F6' }} /> No practice</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#DDD6FE' }} /> 1-10 Qs</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#A78BFA' }} /> 11-25 Qs</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#6C5CE7' }} /> 25+ Qs</span>
-        <span className="flex items-center gap-1 ml-1"><CheckCircle2 className="w-3.5 h-3.5 text-[#6C5CE7]" /> Practised</span>
       </div>
 
       {/* Summary stats */}

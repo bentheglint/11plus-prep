@@ -6,6 +6,8 @@ npm start
 
 "C:/Users/Ben Jackson/Documents/MyBrain/content/11plus-testing-strategy.md"
 
+https://docs.google.com/spreadsheets/d/139AkRkO3UxVitGyL1ZMPfsjD5fvp98M14xtEKwQMpEo/edit?gid=0#gid=0
+
 OK we just installed chrome dev tools MCP so you can view the pages we create and Visual QA skills. Lets use both of those together to view each        page in the subconcepts lessons for Maths, English and VR we have createdso far. All of them not just the templates in the app. The audit          
   should ask 1 - Does the page "look" right, are there any problems or errors in the diagrams, too small too big, overlapping text or lines etc. 2     
    - Is it really clear and simple to read the page, do the relevant pieces of information pop out of the screen or are they being lost in long        

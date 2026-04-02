@@ -10,7 +10,7 @@
   <path d="M 200 120 L 340 120 L 365 95 L 225 95 Z" fill="lightcoral" fill-opacity="0.2" stroke="black" stroke-width="2"/>
   <path d="M 340 200 L 365 175 L 365 95 L 340 120 Z" fill="lightcoral" fill-opacity="0.25" stroke="black" stroke-width="2"/>
   <text x="270" y="215" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle">12 cm</text>
-  <text x="188" y="165" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-90 188 165)">? cm</text>
+  <text x="188" y="165" font-family="Arial" font-size="12" fill="red" text-anchor="middle" transform="rotate(-90 188 165)">? cm</text>
   <text x="375" y="200" font-family="Arial" font-size="12" fill="dimgray" text-anchor="middle" transform="rotate(-45 375 200)">3 cm</text>
   <!-- Labels -->
   <text x="60" y="80" font-family="Arial" font-size="13" fill="dimgray" text-anchor="middle" font-weight="bold">Cube</text>

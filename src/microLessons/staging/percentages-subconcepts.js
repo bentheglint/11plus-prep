@@ -593,13 +593,12 @@ export const percentagesSubConcepts = [
                 component: 'BarModel',
                 props: () => ({
                   segments: [
-                    { value: 10, label: "10%", color: "#c084fc" },
-                    { value: 15, label: "25%", color: "#818cf8" },
-                    { value: 25, label: "50%", color: "#38bdf8" },
-                    { value: 25, label: "75%", color: "#34d399" },
+                    { value: 25, label: "25% = 1/4", color: "#818cf8" },
+                    { value: 25, label: "50% = 1/2", color: "#38bdf8" },
+                    { value: 25, label: "75% = 3/4", color: "#34d399" },
                     { value: 25, label: "100%", color: "#fbbf24" }
                   ],
-                  totalLabel: "Key percentages on a bar",
+                  totalLabel: "100% split into quarters",
                   showValues: true
                 })
               },
@@ -1418,8 +1417,8 @@ export const percentagesSubConcepts = [
           {
             name: "Jake",
             part: 15, whole: 60,
-            wrongAnswer: 25, correctAnswer: 25,
-            actualWrong: 400,
+            correctAnswer: 25,
+            wrongAnswer: 400,
             mistake: "divided the wrong way round (60 \u00f7 15 = 4, then 4 \u00d7 100 = 400%)",
             wrongWorking: "60 \u00f7 15 = 4, then 4 \u00d7 100 = 400%",
             interactPart: 8, interactWhole: 40, interactCorrectAnswer: 20
@@ -1427,8 +1426,8 @@ export const percentagesSubConcepts = [
           {
             name: "Rosie",
             part: 12, whole: 40,
-            wrongAnswer: 30, correctAnswer: 30,
-            actualWrong: 3,
+            correctAnswer: 30,
+            wrongAnswer: 3,
             mistake: "divided correctly (12 \u00f7 40 = 0.3) but forgot to multiply by 100, so said 0.3%",
             wrongWorking: "12 \u00f7 40 = 0.3, answer = 0.3%",
             interactPart: 18, interactWhole: 50, interactCorrectAnswer: 36
@@ -1436,8 +1435,8 @@ export const percentagesSubConcepts = [
           {
             name: "Alfie",
             part: 9, whole: 50,
-            wrongAnswer: 18, correctAnswer: 18,
-            actualWrong: 9,
+            correctAnswer: 18,
+            wrongAnswer: 9,
             mistake: "just wrote the part as the percentage without dividing (said 9%)",
             wrongWorking: "9 out of 50... so 9%?",
             interactPart: 12, interactWhole: 60, interactCorrectAnswer: 20

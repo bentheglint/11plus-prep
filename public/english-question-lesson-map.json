@@ -12231,11 +12231,6 @@
       "confidence": "high"
     },
     {
-      "questionId": 353,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
       "questionId": 354,
       "subConceptId": "word-class",
       "confidence": "high"
@@ -12247,11 +12242,6 @@
     },
     {
       "questionId": 356,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
-      "questionId": 357,
       "subConceptId": "word-class",
       "confidence": "high"
     },
@@ -12277,11 +12267,6 @@
     },
     {
       "questionId": 362,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
-      "questionId": 363,
       "subConceptId": "word-class",
       "confidence": "high"
     },
@@ -12356,42 +12341,12 @@
       "confidence": "high"
     },
     {
-      "questionId": 378,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
       "questionId": 379,
       "subConceptId": "word-class",
       "confidence": "high"
     },
     {
-      "questionId": 380,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
-      "questionId": 381,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
       "questionId": 382,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
-      "questionId": 383,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
-      "questionId": 384,
-      "subConceptId": "word-class",
-      "confidence": "high"
-    },
-    {
-      "questionId": 385,
       "subConceptId": "word-class",
       "confidence": "high"
     },
@@ -12407,11 +12362,6 @@
     },
     {
       "questionId": 388,
-      "subConceptId": "inference",
-      "confidence": "high"
-    },
-    {
-      "questionId": 389,
       "subConceptId": "inference",
       "confidence": "high"
     },
@@ -12437,11 +12387,6 @@
     },
     {
       "questionId": 394,
-      "subConceptId": "inference",
-      "confidence": "high"
-    },
-    {
-      "questionId": 395,
       "subConceptId": "inference",
       "confidence": "high"
     },
@@ -12492,11 +12437,6 @@
     },
     {
       "questionId": 405,
-      "subConceptId": "inference",
-      "confidence": "high"
-    },
-    {
-      "questionId": 406,
       "subConceptId": "inference",
       "confidence": "high"
     },
