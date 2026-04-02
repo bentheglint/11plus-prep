@@ -4816,7 +4816,7 @@ longdivision: {
     },
     {
       id: 161,
-      difficulty: 2,
+      difficulty: 1,
       question: "A teacher has 195 sheets of paper to share equally among 7 pupils. How many sheets does each pupil get, and how many are left over?",
       options: ["27 sheets, 4 left", "27 sheets, 6 left", "28 sheets, 0 left", "26 sheets, 5 left", "28 sheets, 1 left"],
       correct: 1,
@@ -4824,7 +4824,7 @@ longdivision: {
     },
     {
       id: 162,
-      difficulty: 2,
+      difficulty: 1,
       question: "A farmer picks 247 apples and puts 9 in each bag. How many full bags does he make, and how many apples are left?",
       options: ["27 bags, 2 left", "26 bags, 5 left", "27 bags, 4 left", "28 bags, 1 left", "25 bags, 7 left"],
       correct: 2,
@@ -4910,7 +4910,7 @@ longdivision: {
       difficulty: 1,
       question: "Chairs are arranged in rows of 12 for a school assembly. There are 250 children. How many full rows are there?",
       options: ["19", "20", "21", "22", "23"],
-      correct: 2,
+      correct: 1,
       explanation: "250 ÷ 12 = 20 remainder 10. There are 20 full rows. The remaining 10 children sit in an incomplete 21st row, but only 20 rows are full. ✓"
     },
     {
@@ -5301,7 +5301,7 @@ longdivision: {
     },
     {
       id: 219,
-      difficulty: 2,
+      difficulty: 1,
       question: "A teacher has 257 crayons to share equally among 6 art tables. How many crayons does each table get, and how many are left over?",
       options: ["43 each, 2 left", "43 each, 1 left", "42 each, 3 left", "41 each, 5 left", "42 each, 5 left"],
       correct: 4,
@@ -5309,7 +5309,7 @@ longdivision: {
     },
     {
       id: 220,
-      difficulty: 2,
+      difficulty: 1,
       question: "A shop has 314 sweets to put into jars of 9. How many full jars can be filled, and how many sweets are left?",
       options: ["34 jars, 8 left", "33 jars, 7 left", "35 jars, 1 left", "34 jars, 5 left", "35 jars, 0 left"],
       correct: 0,
@@ -5317,7 +5317,7 @@ longdivision: {
     },
     {
       id: 221,
-      difficulty: 2,
+      difficulty: 1,
       question: "A farmer collects 183 eggs and puts 8 in each box. How many full boxes does he fill, and how many eggs are left?",
       options: ["22 boxes, 5 left", "22 boxes, 7 left", "23 boxes, 0 left", "21 boxes, 7 left", "23 boxes, 1 left"],
       correct: 1,
@@ -5325,7 +5325,7 @@ longdivision: {
     },
     {
       id: 222,
-      difficulty: 2,
+      difficulty: 1,
       question: "A sports coach has 206 tennis balls to divide equally among 9 baskets. How many balls go in each basket, and how many are left?",
       options: ["22 balls, 6 left", "23 balls, 1 left", "22 balls, 8 left", "23 balls, 0 left", "21 balls, 8 left"],
       correct: 2,
@@ -5333,7 +5333,7 @@ longdivision: {
     },
     {
       id: 223,
-      difficulty: 2,
+      difficulty: 1,
       question: "A ribbon is 365 cm long. It is cut into pieces of 7 cm each. How many complete pieces are cut, and how many centimetres are left?",
       options: ["51 pieces, 6 left", "53 pieces, 0 left", "50 pieces, 5 left", "52 pieces, 1 left", "51 pieces, 4 left"],
       correct: 3,
@@ -5341,7 +5341,7 @@ longdivision: {
     },
     {
       id: 224,
-      difficulty: 2,
+      difficulty: 1,
       question: "A school has 289 pencils to share equally among 8 classes. How many pencils does each class get, and how many are left over?",
       options: ["35 each, 7 left", "34 each, 6 left", "35 each, 9 left", "37 each, 0 left", "36 each, 1 left"],
       correct: 4,
@@ -5349,7 +5349,7 @@ longdivision: {
     },
     {
       id: 225,
-      difficulty: 2,
+      difficulty: 1,
       question: "A camp cook has 173 sausages to divide equally among 6 barbecue stations. How many sausages go to each station, and how many are left?",
       options: ["28 each, 5 left", "28 each, 3 left", "29 each, 1 left", "27 each, 5 left", "30 each, 0 left"],
       correct: 0,
@@ -5357,7 +5357,7 @@ longdivision: {
     },
     {
       id: 226,
-      difficulty: 2,
+      difficulty: 1,
       question: "A florist has 349 daffodils. She ties them into bunches of 8. How many full bunches can she make, and how many are left?",
       options: ["43 bunches, 3 left", "43 bunches, 5 left", "44 bunches, 1 left", "42 bunches, 5 left", "44 bunches, 0 left"],
       correct: 1,
@@ -5365,7 +5365,7 @@ longdivision: {
     },
     {
       id: 227,
-      difficulty: 2,
+      difficulty: 1,
       question: "A delivery driver has 427 parcels to load equally into 9 vans. How many parcels go in each van, and how many are left?",
       options: ["46 parcels, 7 left", "48 parcels, 1 left", "47 parcels, 4 left", "46 parcels, 5 left", "47 parcels, 3 left"],
       correct: 2,
@@ -5373,7 +5373,7 @@ longdivision: {
     },
     {
       id: 228,
-      difficulty: 2,
+      difficulty: 1,
       question: "A warehouse has 578 tins of paint. They are packed into crates of 9. How many full crates are there, and how many tins are left?",
       options: ["63 crates, 7 left", "65 crates, 0 left", "63 crates, 5 left", "64 crates, 2 left", "62 crates, 8 left"],
       correct: 3,
@@ -5381,7 +5381,7 @@ longdivision: {
     },
     {
       id: 229,
-      difficulty: 2,
+      difficulty: 1,
       question: "A school library has 643 bookmarks to share equally among 7 year groups. How many bookmarks does each year group get, and how many are left?",
       options: ["91 each, 4 left", "92 each, 0 left", "92 each, 1 left", "90 each, 5 left", "91 each, 6 left"],
       correct: 4,
@@ -5389,7 +5389,7 @@ longdivision: {
     },
     {
       id: 230,
-      difficulty: 2,
+      difficulty: 1,
       question: "A chef has 815 cherry tomatoes. She puts 6 on each plate. How many plates can she prepare, and how many tomatoes are left?",
       options: ["135 plates, 5 left", "135 plates, 3 left", "136 plates, 1 left", "134 plates, 5 left", "136 plates, 0 left"],
       correct: 0,
@@ -5397,7 +5397,7 @@ longdivision: {
     },
     {
       id: 231,
-      difficulty: 2,
+      difficulty: 1,
       question: "A printer produces 947 leaflets. They are bundled into groups of 8. How many full bundles are made, and how many leaflets are left?",
       options: ["117 bundles, 7 left", "118 bundles, 3 left", "119 bundles, 0 left", "117 bundles, 5 left", "116 bundles, 7 left"],
       correct: 1,
@@ -5456,7 +5456,7 @@ longdivision: {
     },
     {
       id: 238,
-      difficulty: 2,
+      difficulty: 1,
       question: "A taxi holds 4 passengers. There are 27 people who need a taxi. How many taxis must be booked?",
       options: ["5", "6", "8", "7", "9"],
       correct: 3,
@@ -5590,8 +5590,8 @@ longdivision: {
       difficulty: 1,
       question: "Which is the closest estimate for 189 ÷ 4?",
       options: ["40", "45", "48", "55", "50"],
-      correct: 4,
-      explanation: "Round 189 to 200. 200 ÷ 4 = 50. The actual answer is 47.25, so 50 is the closest estimate. ✓"
+      correct: 2,
+      explanation: "189 ÷ 4 = 47.25. The closest option is 48. You can estimate by thinking: 4 × 48 = 192, which is very close to 189. Rounding 189 to 200 gives 50, but 48 is actually closer to the real answer. ✓"
     },
     {
       id: 255,
@@ -16265,7 +16265,7 @@ primenumbers: {
     },
     {
       id: 13,
-      difficulty: 1,
+      difficulty: 2,
       question: "Tom says 'All odd numbers are prime'. Is he correct?",
       options: ["Yes, always", "No, because 2 is prime but even", "Yes, but only for numbers under 10", "No, because 9 is odd but not prime", "Only sometimes"],
       correct: 3,
@@ -16914,10 +16914,10 @@ primenumbers: {
     {
       id: 89,
       difficulty: 1,
-      question: "Which is the smallest prime number?",
-      options: ["0", "1", "5", "3", "2"],
-      correct: 4,
-      explanation: "2 is the smallest prime number. It's also the only even prime. ✓"
+      question: "Which of these is the only even prime number?",
+      options: ["4", "6", "2", "8", "10"],
+      correct: 2,
+      explanation: "2 is the only even prime number. Every other even number can be divided by 2, so they all have at least three factors (1, 2, and themselves). But 2 only has two factors: 1 and 2. ✓"
     },
     {
       id: 90,
@@ -16931,7 +16931,7 @@ primenumbers: {
       id: 91,
       difficulty: 3,
       question: "What is the prime factorisation of 54?",
-      options: ["2 × 27", "2 × 3³", "2² × 3²", "3³ × 2", "6 × 9"],
+      options: ["2 × 27", "2 × 3³", "2² × 3²", "2³ × 3", "6 × 9"],
       correct: 1,
       explanation: "54 = 2 × 27 = 2 × 3 × 9 = 2 × 3 × 3 × 3 = 2 × 3³. ✓"
     },
@@ -16945,7 +16945,7 @@ primenumbers: {
     },
     {
       id: 93,
-      difficulty: 2,
+      difficulty: 1,
       question: "What is the Lowest Common Multiple (LCM) of 3 and 7?",
       options: ["10", "14", "18", "21", "28"],
       correct: 3,
@@ -17529,7 +17529,7 @@ primenumbers: {
     // --- prime-factorisation (9 new: Q170–Q178) ---
     {
       id: 170,
-      difficulty: 1,
+      difficulty: 2,
       question: "What is the prime factorisation of 18?",
       options: ["2 × 3²", "2 × 9", "3 × 6", "2² × 3", "3³"],
       correct: 0,
@@ -17537,7 +17537,7 @@ primenumbers: {
     },
     {
       id: 171,
-      difficulty: 1,
+      difficulty: 2,
       question: "What is the prime factorisation of 20?",
       options: ["2 × 10", "2² × 5", "4 × 5", "2 × 5²", "2³ × 5"],
       correct: 1,
@@ -17545,7 +17545,7 @@ primenumbers: {
     },
     {
       id: 172,
-      difficulty: 1,
+      difficulty: 2,
       question: "What is the prime factorisation of 12?",
       options: ["2 × 6", "3 × 4", "2² × 3", "2 × 3²", "6²"],
       correct: 2,
@@ -17593,7 +17593,7 @@ primenumbers: {
     },
     {
       id: 178,
-      difficulty: 1,
+      difficulty: 2,
       question: "What is the prime factorisation of 30?",
       options: ["5 × 6", "2 × 15", "3 × 10", "2 × 3 × 5", "2² × 5"],
       correct: 3,
@@ -20946,11 +20946,11 @@ anglesshapes: {
       id: 7,
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 45, angle2: 90, angle3: 45 } },
-      question: "Two angles in a triangle are 45° and 90°. What type of triangle is this?",
+      question: "Two angles in a triangle are 30° and 90°. What type of triangle is this?",
       image: "angles-shapes/right-triangle-q7.svg",
       options: ["Equilateral", "Isosceles", "Obtuse", "Right-angled", "Scalene"],
       correct: 3,
-      explanation: "A triangle with a 90° angle is called a right-angled triangle. The third angle is 180 - 45 - 90 = 45°, making it a right-angled isosceles triangle, but 'right-angled' is the main classification. ✓"
+      explanation: "A triangle with a 90° angle is called a right-angled triangle. The third angle is 180 - 30 - 90 = 60°. All three angles are different (30°, 60°, 90°), so it's also scalene — but 'right-angled' is the primary classification because the 90° angle is the defining feature. ✓"
     },
     {
       id: 8,
@@ -21240,7 +21240,7 @@ anglesshapes: {
     },
     {
       id: 37,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 68, angle2: 67, angle3: 45, showExterior: true, exteriorLabel: "135°", angle2Label: "m°" } },
       question: "An exterior angle of a triangle measures 135°. Two interior opposite angles are 68° and m°. What is m?",
       options: ["57°", "62°", "72°", "67°", "77°"],
@@ -21289,7 +21289,7 @@ anglesshapes: {
     },
     {
       id: 42,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 73, highlight: "alternate", hideAnswer: true } },
       question: "Parallel lines are cut by a transversal. An angle measures 73°. What is the alternate interior angle?",
       image: "angles-shapes/parallel-q42.svg",
@@ -21319,8 +21319,8 @@ anglesshapes: {
     },
     {
       id: 45,
-      difficulty: 3,
-      visual: { component: "RegularPolygon", props: { sides: 7, eachAngle: 128.6, angleLabel: "?", highlightAngle: true } },
+      difficulty: 1,
+      visual: { component: "AngleDiagram", props: { angle1: 65, angle2: 48, angle3: 67, labels: ["65°", "48°", "?"] } },
       question: "A triangle has angles of 65° and 48°. What is the third angle?",
       options: ["57°", "62°", "67°", "72°", "77°"],
       correct: 2,
@@ -21328,7 +21328,7 @@ anglesshapes: {
     },
     {
       id: 46,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 79, angle2: 69, angle3: 32, showExterior: true, exteriorLabel: "148°", angle2Label: "d°" } },
       question: "An exterior angle of a triangle is 148°. The two opposite interior angles are 79° and d°. What is d?",
       options: ["59°", "64°", "69°", "74°", "79°"],
@@ -21465,7 +21465,7 @@ anglesshapes: {
     },
     {
       id: 60,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 88, angle2: 68, angle3: 24, showExterior: true, exteriorLabel: "156°", angle2Label: "k°" } },
       question: "An exterior angle of a triangle is 156°. The two opposite interior angles are 88° and k°. What is k?",
       options: ["58°", "68°", "63°", "73°", "78°"],
@@ -21543,7 +21543,7 @@ anglesshapes: {
     },
     {
       id: 68,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 67, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 67°. What is the alternate interior angle?",
       image: "angles-shapes/parallel-q68.svg",
@@ -21593,7 +21593,7 @@ anglesshapes: {
     },
     {
       id: 73,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 95, angle2: 67, angle3: 18, showExterior: true, exteriorLabel: "162°", angle2Label: "w°" } },
       question: "An exterior angle of a triangle is 162°. The two opposite interior angles are 95° and w°. What is w?",
       options: ["57°", "62°", "77°", "72°", "67°"],
@@ -21662,7 +21662,7 @@ anglesshapes: {
     },
     {
       id: 80,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 139, highlight: "corresponding", hideAnswer: true } },
       question: "Parallel lines are crossed by a transversal. One angle is 139°. What is the corresponding angle?",
       image: "angles-shapes/parallel-q80.svg",
@@ -21693,7 +21693,7 @@ anglesshapes: {
     {
       id: 83,
       difficulty: 3,
-      visual: { component: "RegularPolygon", props: { sides: 15, eachAngle: 156, angleLabel: "?", highlightAngle: true } },
+      visual: { component: "RegularPolygon", props: { sides: 8, eachAngle: 135, angleLabel: "?", highlightAngle: true } },
       question: "What is the sum of the interior angles of a regular octagon (8 sides)?",
       options: ["720°", "900°", "1080°", "1260°", "1440°"],
       correct: 2,
@@ -21731,7 +21731,7 @@ anglesshapes: {
     },
     {
       id: 87,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 76, angle2: 65, angle3: 39, showExterior: true, exteriorLabel: "141°", angle2Label: "f°" } },
       question: "An exterior angle of a triangle is 141°. The two opposite interior angles are 76° and f°. What is f?",
       options: ["55°", "60°", "70°", "65°", "75°"],
@@ -21770,7 +21770,7 @@ anglesshapes: {
     },
     {
       id: 91,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 80, angle2: 90, angle3: 10, labels: ["8h°", "9h°", "h°"] } },
       question: "A triangle has angles 8h°, 9h°, and h°. What is h?",
       image: "angles-shapes/triangle-q91.svg",
@@ -21790,7 +21790,7 @@ anglesshapes: {
     },
     {
       id: 93,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 82, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 82°. What is the alternate interior angle?",
       image: "angles-shapes/parallel-q93.svg",
@@ -21918,7 +21918,7 @@ anglesshapes: {
     },
     {
       id: 106,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 146, highlight: "corresponding", hideAnswer: true } },
       question: "Parallel lines are crossed by a transversal. One angle is 146°. What is the corresponding angle?",
       image: "angles-shapes/parallel-q106.svg",
@@ -21928,7 +21928,7 @@ anglesshapes: {
     },
     {
       id: 107,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 100, angle2: 50, angle3: 30, labels: ["10t°", "5t°", "3t°"] } },
       question: "A triangle has angles 10t°, 5t°, and 3t°. What is t?",
       image: "angles-shapes/triangle-q107.svg",
@@ -21968,7 +21968,7 @@ anglesshapes: {
     },
     {
       id: 111,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 82, angle2: 68, angle3: 30, showExterior: true, exteriorLabel: "150°", angle2Label: "v°" } },
       question: "An exterior angle of a triangle is 150°. The two opposite interior angles are 82° and v°. What is v?",
       options: ["58°", "63°", "68°", "73°", "78°"],
@@ -21977,7 +21977,7 @@ anglesshapes: {
     },
     {
       id: 112,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 110, angle2: 40, angle3: 30, labels: ["11w°", "4w°", "3w°"] } },
       question: "A triangle has angles 11w°, 4w°, and 3w°. What is w?",
       image: "angles-shapes/triangle-q112.svg",
@@ -22047,7 +22047,7 @@ anglesshapes: {
     },
     {
       id: 119,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 93, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 93°. What is the alternate interior angle?",
       image: "angles-shapes/parallel-q119.svg",
@@ -22254,7 +22254,7 @@ anglesshapes: {
     },
     {
       id: 140,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#6C5CE7"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "A door is open, making an angle of 65° with the wall. What is the angle between the door and the wall on the other side?",
       options: ["95°", "115°", "105°", "125°", "135°"],
@@ -22281,7 +22281,7 @@ anglesshapes: {
     },
     {
       id: 143,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 45, label: "x°", color: "#6C5CE7"}, {value: 135, label: "3x°", color: "#FDCB6E"}], size: 200 } },
       question: "Lily has two angles on a straight line. One angle is 3 times the size of the other. What is the smaller angle?",
       options: ["30°", "36°", "60°", "54°", "45°"],
@@ -22382,7 +22382,7 @@ anglesshapes: {
     },
     {
       id: 153,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#6C5CE7"}], size: 200 } },
       question: "Oliver draws a triangle. Two of its angles are 50° and 60°. What type of angle is the third angle?",
       options: ["Reflex", "Right", "Obtuse", "Straight", "Acute"],
@@ -22399,7 +22399,7 @@ anglesshapes: {
     },
     {
       id: 155,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#6C5CE7"}], size: 200 } },
       question: "Jack draws a triangle with angles 25° and 35°. What type of angle is the third angle?",
       options: ["Acute", "Obtuse", "Right", "Straight", "Reflex"],
@@ -22429,7 +22429,7 @@ anglesshapes: {
     },
     {
       id: 158,
-      difficulty: 3,
+      difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#6C5CE7"}], size: 200 } },
       question: "An obtuse angle is exactly 3 times the size of a 40° angle. What is the obtuse angle?",
       options: ["80°", "100°", "160°", "140°", "120°"],
@@ -22951,7 +22951,7 @@ anglesshapes: {
 
     {
       id: 213,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "ExteriorAngle", props: { angle1: 60, angle2: 60, angle3: 60, showExterior: true, exteriorLabel: "?" } },
       question: "The interior angle of a triangle at one vertex is 60°. What is the exterior angle at that vertex?",
       options: ["60°", "90°", "100°", "130°", "120°"],
@@ -22960,7 +22960,7 @@ anglesshapes: {
     },
     {
       id: 214,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "ExteriorAngle", props: { angle1: 75, angle2: 45, angle3: 60, showExterior: true, exteriorLabel: "?" } },
       question: "The interior angle of a triangle at one vertex is 75°. What is the exterior angle at that vertex?",
       options: ["105°", "95°", "85°", "115°", "125°"],
@@ -22998,7 +22998,7 @@ anglesshapes: {
 
     {
       id: 217,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "ParallelLines", props: { givenAngle: 70, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 70°. What is the corresponding angle?",
       options: ["100°", "80°", "90°", "70°", "110°"],
@@ -23007,7 +23007,7 @@ anglesshapes: {
     },
     {
       id: 218,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "ParallelLines", props: { givenAngle: 115, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 115°. What is the alternate angle?",
       options: ["55°", "65°", "75°", "105°", "115°"],
@@ -23016,7 +23016,7 @@ anglesshapes: {
     },
     {
       id: 219,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "ParallelLines", props: { givenAngle: 48, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 48°. What is the corresponding angle on the other parallel line?",
       options: ["48°", "42°", "52°", "132°", "138°"],
@@ -23028,7 +23028,7 @@ anglesshapes: {
 
     {
       id: 220,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 55, highlight: "co-interior", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 55°. Co-interior angles (same side of the transversal, between the parallel lines) add up to 180°. What is the co-interior angle?",
       options: ["55°", "125°", "115°", "105°", "135°"],
@@ -23037,7 +23037,7 @@ anglesshapes: {
     },
     {
       id: 221,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 68, highlight: "co-interior", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 68°. What is the co-interior angle on the same side?",
       options: ["68°", "102°", "112°", "108°", "122°"],
@@ -23046,7 +23046,7 @@ anglesshapes: {
     },
     {
       id: 222,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 72, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal forming an angle of 72°. What are the two different angle sizes formed at each intersection?",
       options: ["72° and 98°", "72° and 128°", "72° and 118°", "72° and 108°", "72° and 138°"],
