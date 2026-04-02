@@ -8365,7 +8365,7 @@ fractions: {
     },
     {
       id: 86,
-      difficulty: 1,
+      difficulty: 2,
       question: "Simplify 24/32.",
       options: ["6/8", "12/16", "3/4", "2/3", "4/5"],
       correct: 2,
