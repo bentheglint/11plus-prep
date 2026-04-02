@@ -1,5 +1,8 @@
 # Tone & Age-Appropriateness — Oracle Review Prompt
 
+> **REQUIRED:** Before starting, read `scripts/oracle-review/prompts/SWEEP-RULES.md`.
+> Those rules override any conflicting instructions below.
+
 ## Scope
 
 **Load:** The target topic's questions (explanations), lessons

@@ -1,5 +1,8 @@
 # Difficulty Calibration — Oracle Review Prompt
 
+> **REQUIRED:** Before starting, read `scripts/oracle-review/prompts/SWEEP-RULES.md`.
+> Those rules override any conflicting instructions below.
+
 ## Scope
 
 **Load:** The target topic's questions from the relevant data file
@@ -77,17 +80,7 @@ ratings can be omitted or marked with a dash.
 - **medium** — borderline case, could go either way but leans toward change
 - **low** — very borderline, flagging for awareness only
 
-## Distribution Analysis Rule
+## Distribution Analysis
 
-If you are reviewing a BATCH (subset) of a topic, do NOT calculate
-or comment on difficulty distribution (e.g., "this batch has 0% D1").
-Distribution metrics are only meaningful across the FULL topic.
-
-- **Per-question ratings:** Review in the batch — flag individual
-  questions that are mis-rated.
-- **Distribution totals:** Only report if you have seen ALL questions
-  in the topic. If reviewing a batch, state "Distribution analysis
-  deferred to full-topic summary" and move on.
-
-This prevents false alarms when one batch happens to cluster around
-a single difficulty level.
+See SWEEP-RULES.md Rule 2. Do not calculate difficulty distribution
+from a batch — only from the full topic.

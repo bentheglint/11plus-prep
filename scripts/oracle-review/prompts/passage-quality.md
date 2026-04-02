@@ -1,5 +1,8 @@
 # Passage Quality — Oracle Review Prompt
 
+> **REQUIRED:** Before starting, read `scripts/oracle-review/prompts/SWEEP-RULES.md`.
+> Those rules override any conflicting instructions below.
+
 ## Scope
 
 **Load:** The comprehension topic from `src/questionData/englishData.js`.
