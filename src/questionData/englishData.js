@@ -16445,7 +16445,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"I'm really hungry,\"","said Tom","\"Can we have","tea soon?\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The punctuation at the end of the speech needs to go INSIDE the speech marks. Whatever the person said (including the full stop, question mark, or exclamation mark) stays wrapped up inside the speech marks. ✓"
+          "explanation": "A full stop is needed after 'Tom' before the new speech begins: 'said Tom. \"Can we have...' When one sentence of speech ends and a new one starts, the reporting clause needs its own full stop before the next opening speech marks. ✓"
         },
         {
           "id": 211,
@@ -16485,7 +16485,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Watch out!\"","shouted Lily","\"There's a puddle","right in front of you.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The punctuation at the end of the speech needs to go INSIDE the speech marks. Whatever the person said (including the full stop, question mark, or exclamation mark) stays wrapped up inside the speech marks. ✓"
+          "explanation": "A full stop is needed after 'Lily' before the new speech begins: 'shouted Lily. \"There's a puddle...' The first speech ('Watch out!') ends correctly, but the reporting clause needs its own full stop before the next sentence of speech starts. ✓"
         },
         {
           "id": 215,
@@ -16632,7 +16632,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["Early in the morning","we heard the","geeses honking across","the village."],
+          "segments": ["Early in the morning,","we heard the","geeses honking across","the village."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
           "explanation": "'geeses' should be 'geese's'. 'Geese' is already plural, so the possessive apostrophe goes before the 's': geese's honking. ✓"
@@ -16772,7 +16772,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["Until the teacher","gives the signal","nobody should touch","the familys presents."],
+          "segments": ["Until the teacher","gives the signal,","nobody should touch","the familys presents."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
           "explanation": "'familys' should be 'family's'. The presents belong to the family, so a possessive apostrophe is needed: family's presents. ✓"
@@ -16822,7 +16822,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["Whenever Grandad visits","he brings sweets from","the corner shop in","the boys favourite flavours."],
+          "segments": ["Whenever Grandad visits,","he brings sweets from","the corner shop in","the boys favourite flavours."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
           "explanation": "'boys' should be 'boys'' (plural possessive). The favourite flavours belong to multiple boys, so the apostrophe goes after the 's': boys' favourite flavours. ✓"
@@ -16842,7 +16842,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["When the music started","all the children","began to dance in","the schools hall."],
+          "segments": ["When the music started,","all the children","began to dance in","the schools hall."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
           "explanation": "'schools' needs an apostrophe — it should be 'school's'. The apostrophe shows that something BELONGS to someone. Without it, it just looks like a normal plural (more than one). Quick test: can you say \"the ___ of the ___\"? If yes, you need an apostrophe! ✓"
@@ -16862,7 +16862,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["After we ate lunch","we walked to the","park near the","rivers edge."],
+          "segments": ["After we ate lunch,","we walked to the","park near the","rivers edge."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
           "explanation": "'rivers' needs an apostrophe — it should be 'river's'. The apostrophe shows that something BELONGS to someone. Without it, it just looks like a normal plural (more than one). Quick test: can you say \"the ___ of the ___\"? If yes, you need an apostrophe! ✓"
@@ -17092,10 +17092,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The school librarian","Mrs Thompson","organised a book","fair for the pupils."],
+          "segments": ["The school librarian","Mrs Thompson,","organised a book","fair for the pupils."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "There's a comma missing! When you add extra information in the middle of a sentence (stuff you could take out and the sentence would still work), it needs commas at BOTH ends — like putting it in a little bubble. One comma opens the bubble, the other closes it. ✓"
+          "explanation": "A comma is needed after 'librarian' before 'Mrs Thompson': 'The school librarian, Mrs Thompson, organised a book fair.' When you add a person's name as extra information (an apposition), it needs commas at both ends — the closing comma is there after 'Thompson' but the opening one before it is missing. ✓"
         },
         {
           "id": 276,
@@ -17172,7 +17172,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["My friend's mother","Mrs Wilson who","works at the hospital,","picked us up."],
+          "segments": ["My friend's mother,","Mrs Wilson who","works at the hospital,","picked us up."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
           "explanation": "A comma is needed after 'Wilson' to open the relative clause. 'Who works at the hospital' is extra information about Mrs Wilson that could be removed, so it needs commas around it. Corrected: 'My friend's mother, Mrs Wilson, who works at the hospital, picked us up.' ✓"
@@ -17242,7 +17242,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["Our class teacher","Miss Clark who","is very kind,","helped us with the project."],
+          "segments": ["Our class teacher,","Miss Clark who","is very kind,","helped us with the project."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
           "explanation": "A comma is needed after 'Clark' to open the relative clause. 'Who is very kind' is extra information about Miss Clark that could be removed, so it needs commas around it. Corrected: 'Our class teacher, Miss Clark, who is very kind, helped us with the project.' ✓"
@@ -17365,7 +17365,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The school concert","which took place","on Thursday was","attended by many parents."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "That comma shouldn't be there! The information in this part of the sentence is essential — it tells us WHICH one we're talking about. If you took it out, the sentence wouldn't make sense any more. When the information is essential, don't use commas around it. ✓"
+          "explanation": "A comma is needed after 'Thursday' to close off the extra information: 'The school concert, which took place on Thursday, was attended by many parents.' The phrase 'which took place on Thursday' is additional detail, so it needs commas at both ends — there's an opening comma after 'concert' but the closing one after 'Thursday' is missing. ✓"
         },
         {
           "id": 303,
@@ -17384,8 +17384,8 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The girl, who won","the spelling bee","received a certificate","in assembly."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 1,
-          "explanation": "That comma shouldn't be there! The information in this part of the sentence is essential — it tells us WHICH one we're talking about. If you took it out, the sentence wouldn't make sense any more. When the information is essential, don't use commas around it. ✓"
+          "correct": 0,
+          "explanation": "The comma after 'girl' shouldn't be there! 'Who won the spelling bee' is essential information — it tells us WHICH girl we're talking about. Without it, we wouldn't know which girl received the certificate. When the information is essential, don't use commas around it: 'The girl who won the spelling bee received a certificate.' ✓"
         },
         {
           "id": 305,
@@ -17405,7 +17405,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The ancient castle,","which overlooks","the harbour is","open to visitors."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "That comma shouldn't be there! The information in this part of the sentence is essential — it tells us WHICH one we're talking about. If you took it out, the sentence wouldn't make sense any more. When the information is essential, don't use commas around it. ✓"
+          "explanation": "A comma is needed after 'harbour' to close off the extra information: 'The ancient castle, which overlooks the harbour, is open to visitors.' The phrase 'which overlooks the harbour' is additional detail, so it needs commas at both ends — there's an opening comma after 'castle' but the closing one after 'harbour' is missing. ✓"
         },
         {
           "id": 307,
@@ -17422,7 +17422,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["Above the fireplace","in the great hall","hung the","duchess' portrait."],
+          "segments": ["Above the fireplace","in the great hall,","hung the","duchess' portrait."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
           "explanation": "'duchess'' should be 'duchess's'. For singular nouns ending in 's', we add apostrophe + s for the possessive: duchess's portrait. ✓"
@@ -17492,7 +17492,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["In the school play","the girl forgot","her lines and","Ross' costume ripped."],
+          "segments": ["In the school play,","the girl forgot","her lines and","Ross' costume ripped."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
           "explanation": "'Ross'' should be 'Ross's'. For singular proper nouns ending in 's', the standard British convention is to add apostrophe + s: Ross's. ✓"
@@ -17545,7 +17545,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The town centre was","busy; shoppers hurried","along the pavements","carrying heavy bags."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 4,
-          "explanation": "This one's a trick — there's actually nothing wrong here! The colon is used correctly here. ✓"
+          "explanation": "This one's a trick — there's actually nothing wrong here! The semicolon is used correctly — it joins two closely related sentences: 'The town centre was busy' and 'shoppers hurried along the pavements.' A semicolon is perfect when two sentences are connected in meaning but you don't want to use a joining word like 'and'. ✓"
         },
         {
           "id": 321,
@@ -18262,10 +18262,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["\"Can we go now\"","asked Sophie, \"I'm","getting really bored","of waiting here.\""],
+          "segments": ["\"Can we go now\"","asked Sophie. \"I'm","getting really bored","of waiting here.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "The punctuation at the end of the speech needs to go INSIDE the speech marks. Whatever the person said (including the full stop, question mark, or exclamation mark) stays wrapped up inside the speech marks. ✓"
+          "explanation": "A question mark is needed inside the speech marks: '\"Can we go now?\" asked Sophie.' The speech is a question (it starts with 'Can we'), so it must end with a question mark before the closing speech marks, not nothing at all. ✓"
         },
         {
           "id": 393,
@@ -18414,8 +18414,8 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The team played","brilliantly, they","deserved to win","the tournament."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
-          "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
+          "correct": 1,
+          "explanation": "The comma after 'brilliantly' isn't strong enough! 'The team played brilliantly' and 'they deserved to win' are two complete sentences, and a comma on its own can't hold them together. You need something stronger: a semicolon (brilliantly; they), a full stop, or a joining word like 'and'. A comma is a speed bump, but two sentences need a proper junction! ✓"
         },
         {
           "id": 408,
@@ -18484,8 +18484,8 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["She had three","hobbies, swimming","painting and reading","adventure stories."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "correct": 1,
+          "explanation": "The comma after 'hobbies' should be a colon: 'She had three hobbies: swimming, painting and reading.' When you announce a list with a phrase like 'three hobbies', use a colon (:) to introduce what follows, not a comma. A colon says 'here comes the list!' ✓"
         },
         {
           "id": 415,
@@ -18505,7 +18505,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["For the trip you","will need, warm","clothes, waterproof","boots and a packed lunch."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "explanation": "The comma after 'need' shouldn't be there! You don't put a comma between a verb and what follows it: 'you will need warm clothes' not 'you will need, warm clothes.' The comma breaks up the sentence in the wrong place — 'need' leads straight into the list of things needed. ✓"
         },
         {
           "id": 417,
@@ -18525,7 +18525,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["There are three","types of rock,","igneous, sedimentary","and metamorphic."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "explanation": "The comma after 'rock' should be a colon: 'There are three types of rock: igneous, sedimentary and metamorphic.' When you introduce a list after a complete statement like 'three types of rock', use a colon (:), not a comma. A colon announces what's coming next. ✓"
         },
         {
           "id": 419,
