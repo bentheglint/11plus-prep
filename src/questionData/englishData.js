@@ -14385,7 +14385,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The dog's owner","called out loudly","but the puppy didnt","come back to her."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "The sentence starts with 'Is it true', which makes it a question. It should end with a question mark: 'house?' not 'house.' The 'Is' at the start tells you it is asking something. ✓"
+          "explanation": "'didnt' should be 'didn't'. The apostrophe replaces the 'o' in 'not': did + not = didn't. Without the apostrophe, 'didnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 2,
@@ -14405,7 +14405,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["For the trip we need","the following items:","a torch a compass","and a waterproof jacket."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after the closing speech marks and before the reporting verb: \"I love swimming,\" said Amara. When speech comes before the reporting clause, a comma replaces the full stop inside the speech marks. ✓"
+          "explanation": "A comma is needed after 'torch' to separate items in the list: 'a torch, a compass and a waterproof jacket.' In a list, each item needs a comma after it (except the last one before 'and'). Without the comma, 'a torch a compass' runs together. ✓"
         },
         {
           "id": 4,
@@ -14425,7 +14425,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Although it was raining","the match went ahead","and both teams","played brilliantly."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the reporting verb before the opening speech marks. When introducing direct speech, always place a comma before the speech marks begin. ✓"
+          "explanation": "A comma is needed after 'raining' because 'Although it was raining' is a subordinate clause at the start of the sentence. It should be: 'Although it was raining, the match went ahead.' The comma shows where the opening clause ends and the main sentence begins. ✓"
         },
         {
           "id": 6,
@@ -14495,7 +14495,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"I love swimming\"","said Amara","\"because it makes","me feel so free.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the reporting verb before the opening speech marks. When introducing direct speech, always place a comma before the speech marks begin. ✓"
+          "explanation": "A comma is needed after 'swimming' before the closing speech marks: '\"I love swimming,\" said Amara'. When speech is interrupted by a reporting clause (said Amara), the first part of the speech needs a comma inside the speech marks, not a full stop or nothing. ✓"
         },
         {
           "id": 14,
@@ -14535,7 +14535,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The shop sells:","bread, milk, eggs","cheese and","fresh vegetables."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is missing after 'sugar'. In a list, each item needs to be separated by a comma: 'flour, sugar, butter, eggs and milk'. Without the comma, 'sugar butter' looks like it could be one item. ✓"
+          "explanation": "A comma is missing after 'eggs'. In a list, each item needs to be separated by a comma: 'bread, milk, eggs, cheese and fresh vegetables.' Without the comma, 'eggs cheese' runs together and looks like it could be one item. ✓"
         },
         {
           "id": 19,
@@ -14575,7 +14575,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["I cant believe","how quickly the","summer holidays","have gone by."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "The sentence starts with 'Which', which makes it a question. It should end with a question mark: 'centre?' not 'centre.' All questions must end with a question mark. ✓"
+          "explanation": "'cant' should be 'can't'. The apostrophe replaces the 'no' in 'cannot': can + not = can't. Without the apostrophe, 'cant' is actually a different word (meaning insincere talk). Remember: contractions always need an apostrophe where letters are missing. ✓"
         },
         {
           "id": 23,
@@ -14645,7 +14645,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Where are you","going.\" asked Dad","as I put on","my coat and shoes."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The punctuation at the end of the speech needs to go INSIDE the speech marks. Whatever the person said (including the full stop, question mark, or exclamation mark) stays wrapped up inside the speech marks. ✓"
+          "explanation": "The full stop after 'going' should be a question mark: '\"Where are you going?\" asked Dad'. The speech is a question (it starts with 'Where'), so it must end with a question mark inside the speech marks, not a full stop. ✓"
         },
         {
           "id": 30,
@@ -14675,7 +14675,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We had a lovely day","at the beach but","we couldnt find","any rock pools."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A full stop is missing between 'trip' and 'He'. These are two separate sentences: 'Sam packed his bag for the trip.' and 'He was excited about visiting the castle.' ✓"
+          "explanation": "'couldnt' should be 'couldn't'. The apostrophe replaces the 'o' in 'not': could + not = couldn't. Without the apostrophe, 'couldnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 33,
@@ -14685,7 +14685,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["She said that","she wont be able","to come to","the party on Saturday."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "The sentence starts with 'What time does', which makes it a question, so it needs a question mark at the end: 'Saturday?' not 'Saturday.' Questions must always end with a question mark. ✓"
+          "explanation": "'wont' should be 'won't'. The apostrophe shows that letters are missing: will + not = won't. Without the apostrophe, 'wont' is actually a different word (meaning 'accustomed to'). Remember: contractions always need an apostrophe where letters are missing. ✓"
         },
         {
           "id": 34,
@@ -14705,7 +14705,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The weather forecast says","it will be dry","during the match but","we shouldnt count on it."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "A comma is needed before 'Tom' because the speaker is talking directly to him: 'that glass, Tom'. This is called a comma of direct address — it separates the person's name from the rest of the sentence. ✓"
+          "explanation": "'shouldnt' should be 'shouldn't'. The apostrophe replaces the 'o' in 'not': should + not = shouldn't. Without the apostrophe, 'shouldnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 36,
@@ -14725,7 +14725,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Dad said we","must not play","near the river because","he doesnt think its safe."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "A comma is needed before 'Dad' because the speaker is talking directly to him: 'pepper, Dad'. This is called a comma of direct address — it shows who is being spoken to. ✓"
+          "explanation": "'doesnt' should be 'doesn't'. The apostrophe replaces the 'o' in 'not': does + not = doesn't. Without the apostrophe, 'doesnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 38,
@@ -14745,7 +14745,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The children were told","to walk quietly","in the corridors and","that they mustnt run."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "A comma is needed after 'Every morning' because it is a fronted adverbial — a time phrase at the start. It should be 'Every morning, Dad walks...' The comma shows where the time phrase ends and the main sentence begins. ✓"
+          "explanation": "'mustnt' should be 'mustn't'. The apostrophe replaces the 'o' in 'not': must + not = mustn't. Without the apostrophe, 'mustnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 40,
@@ -15195,7 +15195,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Please sit down,\"","said Mrs Harris","\"and open your","books to page ten.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is needed after the reporting verb before the opening speech marks. When introducing direct speech, always place a comma before the speech marks begin. ✓"
+          "explanation": "A comma is needed after 'Harris' before the speech continues: 'said Mrs Harris, \"and open your...' When speech is interrupted by a reporting clause, you need a comma after the reporting clause before the speech resumes. ✓"
         },
         {
           "id": 85,
@@ -15225,7 +15225,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Have you finished","your homework?\" asked Dad.","\"Not yet\" replied","Emma, \"but I'm almost done.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after the reporting verb before the opening speech marks. When introducing direct speech, always place a comma before the speech marks begin. ✓"
+          "explanation": "A comma is needed after 'yet' inside the speech marks: '\"Not yet,\" replied Emma'. When speech comes before the reporting clause, a comma replaces the full stop inside the closing speech marks. Without it, the speech and the reporting clause run together. ✓"
         },
         {
           "id": 88,
@@ -15255,7 +15255,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["The shop sold three","types of bread;","white, wholemeal","and sourdough."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "explanation": "The semicolon (;) should be a colon (:). A colon is used to introduce a list: 'types of bread: white, wholemeal and sourdough.' A semicolon joins two complete sentences — it doesn't introduce a list. Think of a colon as saying 'here's what I mean...' ✓"
         },
         {
           "id": 91,
@@ -15365,7 +15365,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We havent been","to the seaside","since last","summer holidays."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed before 'Mum' because the speaker is talking directly to her: 'today, Mum!' This is called a comma of direct address. ✓"
+          "explanation": "'havent' should be 'haven't'. The apostrophe replaces the 'o' in 'not': have + not = haven't. Without the apostrophe, 'havent' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 102,
@@ -15375,7 +15375,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["My best friend","isnt coming to","the cinema with","us this evening."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A comma is needed after 'After lunch' because it is a fronted adverbial — a time phrase at the start of the sentence. It should be 'After lunch, the children...' The comma gives the reader a little pause before the main action. ✓"
+          "explanation": "'isnt' should be 'isn't'. The apostrophe replaces the 'o' in 'not': is + not = isn't. Without the apostrophe, 'isnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 103,
@@ -15385,7 +15385,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Dad said we","could go to","the park but we","mustnt be late home."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "A comma is needed after 'Every morning' because it is a fronted adverbial — a time phrase at the start. It should be 'Every morning, Dad walks...' The comma shows where the time phrase ends and the main sentence begins. ✓"
+          "explanation": "'mustnt' should be 'mustn't'. The apostrophe replaces the 'o' in 'not': must + not = mustn't. Without the apostrophe, 'mustnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 104,
@@ -15395,7 +15395,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["She wasnt sure","whether the library","would be open","on Bank Holiday Monday."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after 'Without any doubt' because it is a fronted adverbial — a phrase at the start of a sentence that adds emphasis. It should be 'Without any doubt, it was...' ✓"
+          "explanation": "'wasnt' should be 'wasn't'. The apostrophe replaces the 'o' in 'not': was + not = wasn't. Without the apostrophe, 'wasnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 105,
@@ -15455,7 +15455,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["What time does","the swimming pool","close on","Saturday."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 3,
-          "explanation": "The sentence starts with 'Can I', which makes it a question. It should end with a question mark: 'please?' not 'please.' Even though it sounds polite, it is still asking something. ✓"
+          "explanation": "The sentence starts with 'What time does', which makes it a question. It should end with a question mark: 'Saturday?' not 'Saturday.' The words 'What time does' tell you this is asking something, so it must end with a question mark. ✓"
         },
         {
           "id": 111,
@@ -15575,7 +15575,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["I wouldnt eat","that sandwich if","I were you because","it looks stale."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after 'Later that evening' because it is a fronted adverbial — a time phrase at the start. It should be 'Later that evening, we had...' ✓"
+          "explanation": "'wouldnt' should be 'wouldn't'. The apostrophe replaces the 'o' in 'not': would + not = wouldn't. Without the apostrophe, 'wouldnt' isn't a real word. Remember: contractions always need an apostrophe where the missing letters used to be. ✓"
         },
         {
           "id": 124,
@@ -16035,7 +16035,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Every morning Dad","walks the dog before","he goes to","work at the office."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "'mustnt' should be 'mustn't'. The apostrophe replaces the 'o' in 'not': must + not = mustn't. ✓"
+          "explanation": "A comma is needed after 'Every morning' because it is a fronted adverbial — a time phrase at the start of the sentence. It should be: 'Every morning, Dad walks the dog...' The comma shows where the time phrase ends and the main sentence begins. ✓"
         },
         {
           "id": 170,
@@ -16195,7 +16195,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Sam packed his bag","for the trip He","was excited about","visiting the castle."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "A full stop is missing after 'came out'. 'Everyone ran outside to play in the park' is a new sentence, so the previous sentence must end with a full stop. ✓"
+          "explanation": "A full stop is missing after 'trip'. 'He was excited about visiting the castle' is a new sentence, so the previous sentence must end with a full stop: 'for the trip. He was excited...' Two sentences need a full stop between them. ✓"
         },
         {
           "id": 186,
@@ -16255,7 +16255,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["After the rain stopped","we went outside","to play on","the wet grass."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after 'Harris' before the speech continues: said Mrs Harris, \"and open your...\" When speech is interrupted by a reporting clause, you need a comma after the reporting clause before the speech resumes. ✓"
+          "explanation": "A comma is needed after 'stopped' because 'After the rain stopped' is a subordinate clause at the start of the sentence. It should be: 'After the rain stopped, we went outside.' The comma shows where the opening clause ends and the main sentence begins. ✓"
         },
         {
           "id": 192,
@@ -16265,7 +16265,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Mum said","\"Hurry up or","we will be late","for school.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the fronted adverbial: ‘While the teacher was talking, Tom passed a note.’ When a sentence starts with a time or place phrase, put a comma before the main action begins. ✓"
+          "explanation": "A comma is needed after ‘said’ before the opening speech marks: ‘Mum said, \"Hurry up...’ When introducing direct speech with a reporting verb (said, asked, shouted), always place a comma before the speech marks begin. ✓"
         },
         {
           "id": 193,
@@ -16275,7 +16275,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Although it was cold","the children still","wanted to play","outside at break."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the fronted adverbial: ‘Because the road was icy, the bus arrived late.’ When a sentence begins with a reason (because...), a comma is needed before the main clause. ✓"
+          "explanation": "A comma is needed after ‘cold’ because ‘Although it was cold’ is a subordinate clause at the start of the sentence. It should be: ‘Although it was cold, the children still wanted to play.’ The comma shows where the opening clause ends and the main sentence begins. ✓"
         },
         {
           "id": 194,
