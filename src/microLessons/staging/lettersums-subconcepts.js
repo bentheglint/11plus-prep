@@ -6,7 +6,7 @@
 // K=11, L=12, M=13, N=14, O=15, P=16, Q=17, R=18, S=19, T=20,
 // U=21, V=22, W=23, X=24, Y=25, Z=26
 // EJOTY: E=5, J=10, O=15, T=20, Y=25
-// CRITICAL: All calculations work LEFT TO RIGHT, NOT BODMAS!
+// For + and − only, work left to right. For mixed operations with × or ÷, use BODMAS.
 // ============================================================
 
 export const letterSumsSubConcepts = [
@@ -852,20 +852,20 @@ export const letterSumsSubConcepts = [
   },
 
   // ==========================================
-  // SUB-CONCEPT 4: Left-to-Right Rule (NOT BODMAS!)
+  // SUB-CONCEPT 4: Order of Operations (BODMAS)
   // Category: core
   // ==========================================
   {
     id: "left-to-right-rule",
-    name: "Left to Right — NOT BODMAS!",
+    name: "Order of Operations — BODMAS",
     category: "core",
     lessons: [
       {
         id: "left-to-right-rule-steps",
         templateType: "spot-the-mistake",
         learningGoal: [
-          "Why BODMAS (the normal maths rule) does NOT apply to letter sums — this catches loads of people!",
-          "How to avoid the number one trap in letter sum questions"
+          "Why BODMAS applies to letter sums — multiplication and division come before addition and subtraction",
+          "How to spot the left-to-right trap in letter sum questions"
         ],
         variableSets: [
           {
@@ -873,87 +873,87 @@ export const letterSumsSubConcepts = [
             scenario: "checking her friend's letter sum answer",
             expression: "B + C × D",
             letterValues: { B: 2, C: 3, D: 4 },
-            bodmasAnswer: 14,
-            bodmasWorking: "BODMAS: 3 × 4 = 12, then 2 + 12 = 14",
-            correctWorking: "Left to right: 2 + 3 = 5, then 5 × 4 = 20",
-            answer: 20,
-            answerAsLetter: "T",
-            options: ["20", "14", "24", "18", "12"],
-            correctAnswer: "20",
-            explanation: "LEFT TO RIGHT (not BODMAS!): B + C = 2 + 3 = 5, then 5 × D = 5 × 4 = 20. The BODMAS trap gives 14, which is WRONG. ✓",
+            ltrAnswer: 20,
+            ltrWorking: "Left to right: 2 + 3 = 5, then 5 × 4 = 20",
+            correctWorking: "BODMAS: 3 × 4 = 12, then 2 + 12 = 14",
+            answer: 14,
+            answerAsLetter: "N",
+            options: ["14", "20", "24", "18", "12"],
+            correctAnswer: "14",
+            explanation: "By BODMAS, multiply first: C × D = 3 × 4 = 12. Then add: B + 12 = 2 + 12 = 14. The left-to-right trap gives 20, which is wrong. ✓",
             interactExpression: "A + D × B",
             interactLetterValues: { A: 1, D: 4, B: 2 },
-            interactBodmasAnswer: 9,
-            interactOptions: ["10", "9", "8", "12", "6"],
-            interactCorrectAnswer: "10",
-            interactExplanation: "LEFT TO RIGHT (not BODMAS!): A + D = 1 + 4 = 5, then 5 × B = 5 × 2 = 10. BODMAS would wrongly give 1 + 8 = 9. ✓"
+            interactLtrAnswer: 10,
+            interactOptions: ["9", "10", "8", "12", "6"],
+            interactCorrectAnswer: "9",
+            interactExplanation: "By BODMAS, multiply first: D × B = 4 × 2 = 8. Then add: A + 8 = 1 + 8 = 9. The left-to-right trap gives 10. ✓"
           },
           {
             name: "Oliver",
-            scenario: "spotting the BODMAS trap in a letter sum",
+            scenario: "spotting the left-to-right trap in a letter sum",
             expression: "A + D × C",
             letterValues: { A: 1, D: 4, C: 3 },
-            bodmasAnswer: 13,
-            bodmasWorking: "BODMAS: 4 × 3 = 12, then 1 + 12 = 13",
-            correctWorking: "Left to right: 1 + 4 = 5, then 5 × 3 = 15",
-            answer: 15,
-            answerAsLetter: "O",
-            options: ["15", "13", "12", "17", "9"],
-            correctAnswer: "15",
-            explanation: "LEFT TO RIGHT: A + D = 1 + 4 = 5, then 5 × C = 5 × 3 = 15. BODMAS would wrongly give 13. ✓",
+            ltrAnswer: 15,
+            ltrWorking: "Left to right: 1 + 4 = 5, then 5 × 3 = 15",
+            correctWorking: "BODMAS: 4 × 3 = 12, then 1 + 12 = 13",
+            answer: 13,
+            answerAsLetter: "M",
+            options: ["13", "15", "12", "17", "9"],
+            correctAnswer: "13",
+            explanation: "By BODMAS, multiply first: D × C = 4 × 3 = 12. Then add: A + 12 = 1 + 12 = 13. The left-to-right trap gives 15. ✓",
             interactExpression: "C + A × E",
             interactLetterValues: { C: 3, A: 1, E: 5 },
-            interactBodmasAnswer: 8,
-            interactOptions: ["20", "8", "15", "18", "10"],
-            interactCorrectAnswer: "20",
-            interactExplanation: "LEFT TO RIGHT: C + A = 3 + 1 = 4, then 4 × E = 4 × 5 = 20. BODMAS would wrongly give 3 + 5 = 8. ✓"
+            interactLtrAnswer: 20,
+            interactOptions: ["8", "20", "15", "18", "10"],
+            interactCorrectAnswer: "8",
+            interactExplanation: "By BODMAS, multiply first: A × E = 1 × 5 = 5. Then add: C + 5 = 3 + 5 = 8. The left-to-right trap gives 20. ✓"
           },
           {
             name: "Priya",
-            scenario: "avoiding the biggest letter sum trap",
-            expression: "E × B + C",
-            letterValues: { E: 5, B: 2, C: 3 },
-            bodmasAnswer: 13,
-            bodmasWorking: "BODMAS: 5 × 2 = 10, then 10 + 3 = 13",
-            correctWorking: "Left to right: 5 × 2 = 10, then 10 + 3 = 13",
-            answer: 13,
-            answerAsLetter: "M",
-            options: ["13", "16", "10", "15", "11"],
-            correctAnswer: "13",
-            explanation: "Left to right: E × B = 5 × 2 = 10, then 10 + C = 10 + 3 = 13. This time BODMAS and left-to-right give the same answer — but only because × comes first anyway! ✓",
+            scenario: "using BODMAS in a letter sum",
+            expression: "A + E × B",
+            letterValues: { A: 1, E: 5, B: 2 },
+            ltrAnswer: 12,
+            ltrWorking: "Left to right: 1 + 5 = 6, then 6 × 2 = 12",
+            correctWorking: "BODMAS: 5 × 2 = 10, then 1 + 10 = 11",
+            answer: 11,
+            answerAsLetter: "K",
+            options: ["11", "12", "10", "15", "7"],
+            correctAnswer: "11",
+            explanation: "By BODMAS, multiply first: E × B = 5 × 2 = 10. Then add: A + 10 = 1 + 10 = 11. The left-to-right trap gives 12. ✓",
             interactExpression: "B + E × C",
             interactLetterValues: { B: 2, E: 5, C: 3 },
-            interactBodmasAnswer: 17,
-            interactOptions: ["21", "17", "15", "10", "24"],
-            interactCorrectAnswer: "21",
-            interactExplanation: "LEFT TO RIGHT: B + E = 2 + 5 = 7, then 7 × C = 7 × 3 = 21. BODMAS would wrongly give 2 + 15 = 17. ✓"
+            interactLtrAnswer: 21,
+            interactOptions: ["17", "21", "15", "10", "24"],
+            interactCorrectAnswer: "17",
+            interactExplanation: "By BODMAS, multiply first: E × C = 5 × 3 = 15. Then add: B + 15 = 2 + 15 = 17. The left-to-right trap gives 21. ✓"
           },
           {
             name: "Finn",
             scenario: "working through the trickiest letter sum trap",
             expression: "C + B × E",
             letterValues: { C: 3, B: 2, E: 5 },
-            bodmasAnswer: 13,
-            bodmasWorking: "BODMAS: 2 × 5 = 10, then 3 + 10 = 13",
-            correctWorking: "Left to right: 3 + 2 = 5, then 5 × 5 = 25",
-            answer: 25,
-            answerAsLetter: "Y",
-            options: ["25", "13", "15", "20", "10"],
-            correctAnswer: "25",
-            explanation: "LEFT TO RIGHT (not BODMAS!): C + B = 3 + 2 = 5, then 5 × E = 5 × 5 = 25. That's Y (EJOTY!). BODMAS would wrongly give 13. ✓",
+            ltrAnswer: 25,
+            ltrWorking: "Left to right: 3 + 2 = 5, then 5 × 5 = 25",
+            correctWorking: "BODMAS: 2 × 5 = 10, then 3 + 10 = 13",
+            answer: 13,
+            answerAsLetter: "M",
+            options: ["13", "25", "15", "20", "10"],
+            correctAnswer: "13",
+            explanation: "By BODMAS, multiply first: B × E = 2 × 5 = 10. Then add: C + 10 = 3 + 10 = 13. That's M. The left-to-right trap gives 25. ✓",
             interactExpression: "D + C × B",
             interactLetterValues: { D: 4, C: 3, B: 2 },
-            interactBodmasAnswer: 10,
-            interactOptions: ["14", "10", "12", "8", "16"],
-            interactCorrectAnswer: "14",
-            interactExplanation: "LEFT TO RIGHT (not BODMAS!): D + C = 4 + 3 = 7, then 7 × B = 7 × 2 = 14. That's N. BODMAS would wrongly give 4 + 6 = 10. ✓"
+            interactLtrAnswer: 14,
+            interactOptions: ["10", "14", "12", "8", "16"],
+            interactCorrectAnswer: "10",
+            interactExplanation: "By BODMAS, multiply first: C × B = 3 × 2 = 6. Then add: D + 6 = 4 + 6 = 10. That's J (EJOTY!). The left-to-right trap gives 14. ✓"
           }
         ],
         screens: [
           {
             type: "hook",
-            title: (v) => `Is ${v.bodmasAnswer} the right answer?`,
-            body: (v) => `${v.name} is ${v.scenario}.\n\nSomeone answered **${v.expression} = ${v.bodmasAnswer}** using BODMAS (the order you normally do calculations: Brackets, Orders, Division, Multiplication, Addition, Subtraction).\n\nBut wait — **letter sums do NOT use BODMAS!** You must work **left to right**.\n\nWhat's the real answer?`,
+            title: (v) => `Is ${v.ltrAnswer} the right answer?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nSomeone answered **${v.expression} = ${v.ltrAnswer}** by working left to right.\n\nBut wait — when you see **× or ÷** mixed with **+ or −**, you need to use **BODMAS**! Multiplication and division come first.\n\nWhat's the real answer?`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -966,15 +966,15 @@ export const letterSumsSubConcepts = [
           },
           {
             type: "teach",
-            title: () => "BODMAS is WRONG here!",
-            body: (v) => `Someone said **${v.expression} = ${v.bodmasAnswer}** using BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction). But that's WRONG!\n\nIn maths class, you use BODMAS. But in **letter sums on the 11+**, you work **strictly LEFT to RIGHT**.\n\nThis is the **number one trap** in letter sum questions!`,
+            title: () => "BODMAS applies here!",
+            body: (v) => `Someone said **${v.expression} = ${v.ltrAnswer}** by working left to right. But that's **wrong** when × or ÷ are mixed with + or −!\n\nJust like in maths class, **BODMAS** tells you to do **multiplication and division first**, then addition and subtraction.\n\nThis is the **number one trap** in letter sum questions!`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
                 steps: [
-                  { text: `WRONG (BODMAS): ${v.bodmasWorking} = ${v.bodmasAnswer}`, why: "This is what most people do — but it's WRONG for letter sums!" },
-                  { text: `RIGHT (Left to right): ${v.correctWorking} = ${v.answer}`, why: "In letter sums, ALWAYS go left to right" },
-                  { text: `The correct answer is ${v.answer}${v.answerAsLetter ? ` (= letter ${v.answerAsLetter})` : ''}`, why: "Don't let BODMAS trick you! ✓" }
+                  { text: `WRONG (left to right): ${v.ltrWorking} = ${v.ltrAnswer}`, why: "Going straight left to right ignores the order of operations!" },
+                  { text: `RIGHT (BODMAS): ${v.correctWorking} = ${v.answer}`, why: "Multiply or divide first, THEN add or subtract" },
+                  { text: `The correct answer is ${v.answer}${v.answerAsLetter ? ` (= letter ${v.answerAsLetter})` : ''}`, why: "BODMAS saves the day! ✓" }
                 ],
                 allRevealed: true
               })
@@ -982,15 +982,15 @@ export const letterSumsSubConcepts = [
             interaction: {
               type: "true-false",
               statements: (v) => [
-                { text: `In letter sums, you should use BODMAS to decide the order of operations`, answer: false, explanation: `No! BODMAS applies in maths class, but letter sums on the 11+ are ALWAYS worked left to right.` },
-                { text: `In letter sums, you always work strictly left to right`, answer: true, explanation: `Correct! Left to right is the rule — ignore BODMAS for letter sums. ✓` }
+                { text: `When a letter sum has × or ÷ mixed with + or −, you should use BODMAS`, answer: true, explanation: `Correct! Multiply and divide first, then add and subtract. ✓` },
+                { text: `In letter sums, you always work strictly left to right no matter what`, answer: false, explanation: `Not quite! Left to right works for + and − only. When × or ÷ appear, use BODMAS — multiply and divide first.` }
               ]
             }
           },
           {
             type: "interact",
-            title: () => "Your turn — avoid the trap!",
-            body: (v) => `What is **${v.interactExpression}**?\n\n**Remember: LEFT TO RIGHT, not BODMAS!**`,
+            title: () => "Your turn — use BODMAS!",
+            body: (v) => `What is **${v.interactExpression}**?\n\n**Remember: multiply first, then add or subtract!**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1011,15 +1011,15 @@ export const letterSumsSubConcepts = [
           },
           {
             type: "consolidate",
-            title: () => "The BODMAS Trap — you'll never fall for it again!",
+            title: () => "The Left-to-Right Trap — you'll never fall for it again!",
             body: () => `This is the **biggest trap** in letter sums, and now you know how to beat it:`,
             visual: {
               component: "WorkedExample",
               props: () => ({
                 steps: [
-                  { text: "In MATHS class → use BODMAS", why: "Brackets, Orders, Division, Multiplication, Addition, Subtraction" },
-                  { text: "In LETTER SUMS → work LEFT TO RIGHT", why: "Forget BODMAS completely! Go strictly left to right" },
-                  { text: "B + C × D = (2+3) × 4 = 20, NOT 2 + 12 = 14", why: "The BODMAS answer is ALWAYS a wrong option to trick you! ✓" }
+                  { text: "Only + and −? Work left to right", why: "Same-level operations go in order" },
+                  { text: "See × or ÷ mixed in? Use BODMAS!", why: "Multiply and divide first, then add and subtract" },
+                  { text: "B + C × D = 2 + (3 × 4) = 2 + 12 = 14, NOT (2+3) × 4 = 20", why: "The left-to-right answer is always there as a trap option! ✓" }
                 ],
                 allRevealed: true
               })
@@ -1032,88 +1032,88 @@ export const letterSumsSubConcepts = [
         id: "left-to-right-rule-practice",
         templateType: "step-by-step",
         learningGoal: [
-          "How to train your brain to ignore BODMAS when you see letter sums",
-          "How to make left-to-right your automatic habit — so the trap never catches you"
+          "How to spot when BODMAS matters in letter sums",
+          "How to make BODMAS your automatic habit — so the trap never catches you"
         ],
         variableSets: [
           {
             name: "Evie",
-            scenario: "carefully avoiding the BODMAS trap",
+            scenario: "carefully applying BODMAS",
             expression: "D + A × F",
             letterValues: { D: 4, A: 1, F: 6 },
-            calculation: "4 + 1 = 5, then 5 × 6 = 30",
-            answer: 30,
-            answerAsLetter: null,
-            options: ["30", "10", "24", "6", "36"],
-            correctAnswer: "30",
-            explanation: "LEFT TO RIGHT: D + A = 4 + 1 = 5, then 5 × F = 5 × 6 = 30. BODMAS would wrongly give 4 + 6 = 10. ✓",
+            calculation: "A × F = 1 × 6 = 6, then D + 6 = 4 + 6 = 10",
+            answer: 10,
+            answerAsLetter: "J",
+            options: ["10", "30", "24", "6", "36"],
+            correctAnswer: "10",
+            explanation: "By BODMAS, multiply first: A × F = 1 × 6 = 6. Then add: D + 6 = 4 + 6 = 10. That's J (EJOTY!). The left-to-right trap gives 30. ✓",
             interactExpression: "B + C × E",
             interactLetterValues: { B: 2, C: 3, E: 5 },
-            interactBodmasAnswer: 17,
-            interactOptions: ["25", "17", "15", "20", "30"],
-            interactCorrectAnswer: "25",
-            interactExplanation: "LEFT TO RIGHT: B + C = 2 + 3 = 5, then 5 × E = 5 × 5 = 25. That's Y (EJOTY!). BODMAS would wrongly give 2 + 15 = 17. ✓"
+            interactLtrAnswer: 25,
+            interactOptions: ["17", "25", "15", "20", "30"],
+            interactCorrectAnswer: "17",
+            interactExplanation: "By BODMAS, multiply first: C × E = 3 × 5 = 15. Then add: B + 15 = 2 + 15 = 17. The left-to-right trap gives 25. ✓"
           },
           {
             name: "Marcus",
-            scenario: "practising the left-to-right rule",
+            scenario: "practising the BODMAS rule",
             expression: "A + B × C",
             letterValues: { A: 1, B: 2, C: 3 },
-            calculation: "1 + 2 = 3, then 3 × 3 = 9",
-            answer: 9,
-            answerAsLetter: "I",
-            options: ["9", "7", "6", "3", "12"],
-            correctAnswer: "9",
-            explanation: "LEFT TO RIGHT: A + B = 1 + 2 = 3, then 3 × C = 3 × 3 = 9. That's I. BODMAS would wrongly give 1 + 6 = 7. ✓",
+            calculation: "B × C = 2 × 3 = 6, then A + 6 = 1 + 6 = 7",
+            answer: 7,
+            answerAsLetter: "G",
+            options: ["7", "9", "6", "3", "12"],
+            correctAnswer: "7",
+            explanation: "By BODMAS, multiply first: B × C = 2 × 3 = 6. Then add: A + 6 = 1 + 6 = 7. That's G. The left-to-right trap gives 9. ✓",
             interactExpression: "C + B × D",
             interactLetterValues: { C: 3, B: 2, D: 4 },
-            interactBodmasAnswer: 11,
-            interactOptions: ["20", "11", "14", "8", "24"],
-            interactCorrectAnswer: "20",
-            interactExplanation: "LEFT TO RIGHT: C + B = 3 + 2 = 5, then 5 × D = 5 × 4 = 20. That's T (EJOTY!). BODMAS would wrongly give 3 + 8 = 11. ✓"
+            interactLtrAnswer: 20,
+            interactOptions: ["11", "20", "14", "8", "24"],
+            interactCorrectAnswer: "11",
+            interactExplanation: "By BODMAS, multiply first: B × D = 2 × 4 = 8. Then add: C + 8 = 3 + 8 = 11. That's K. The left-to-right trap gives 20. ✓"
           },
           {
             name: "Aisha",
             scenario: "spotting the trap answer",
             expression: "E - A × C",
             letterValues: { E: 5, A: 1, C: 3 },
-            calculation: "5 - 1 = 4, then 4 × 3 = 12",
-            answer: 12,
-            answerAsLetter: "L",
-            options: ["12", "2", "15", "8", "3"],
-            correctAnswer: "12",
-            explanation: "LEFT TO RIGHT: E - A = 5 - 1 = 4, then 4 × C = 4 × 3 = 12. That's L. BODMAS would wrongly give 5 - 3 = 2. ✓",
+            calculation: "A × C = 1 × 3 = 3, then E - 3 = 5 - 3 = 2",
+            answer: 2,
+            answerAsLetter: "B",
+            options: ["2", "12", "15", "8", "3"],
+            correctAnswer: "2",
+            explanation: "By BODMAS, multiply first: A × C = 1 × 3 = 3. Then subtract: E - 3 = 5 - 3 = 2. That's B. The left-to-right trap gives 12. ✓",
             interactExpression: "D - B × C",
             interactLetterValues: { D: 4, B: 2, C: 3 },
-            interactBodmasAnswer: -2,
-            interactOptions: ["6", "-2", "2", "10", "4"],
-            interactCorrectAnswer: "6",
-            interactExplanation: "LEFT TO RIGHT: D - B = 4 - 2 = 2, then 2 × C = 2 × 3 = 6. That's F. BODMAS would wrongly give 4 - 6 = -2. ✓"
+            interactLtrAnswer: 6,
+            interactOptions: ["-2", "6", "2", "10", "4"],
+            interactCorrectAnswer: "-2",
+            interactExplanation: "By BODMAS, multiply first: B × C = 2 × 3 = 6. Then subtract: D - 6 = 4 - 6 = -2. Be careful — the answer can be negative! The left-to-right trap gives 6. ✓"
           },
           {
             name: "Charlie",
-            scenario: "beating the BODMAS trap once and for all",
+            scenario: "beating the left-to-right trap once and for all",
             expression: "C + D × B",
             letterValues: { C: 3, D: 4, B: 2 },
-            calculation: "3 + 4 = 7, then 7 × 2 = 14",
-            answer: 14,
-            answerAsLetter: "N",
-            options: ["14", "11", "10", "8", "16"],
-            correctAnswer: "14",
-            explanation: "LEFT TO RIGHT: C + D = 3 + 4 = 7, then 7 × B = 7 × 2 = 14. That's N. BODMAS would wrongly give 3 + 8 = 11. ✓",
+            calculation: "D × B = 4 × 2 = 8, then C + 8 = 3 + 8 = 11",
+            answer: 11,
+            answerAsLetter: "K",
+            options: ["11", "14", "10", "8", "16"],
+            correctAnswer: "11",
+            explanation: "By BODMAS, multiply first: D × B = 4 × 2 = 8. Then add: C + 8 = 3 + 8 = 11. That's K. The left-to-right trap gives 14. ✓",
             interactExpression: "A + E × B",
             interactLetterValues: { A: 1, E: 5, B: 2 },
-            interactBodmasAnswer: 11,
-            interactOptions: ["12", "11", "7", "15", "10"],
-            interactCorrectAnswer: "12",
-            interactExplanation: "LEFT TO RIGHT: A + E = 1 + 5 = 6, then 6 × B = 6 × 2 = 12. That's L. BODMAS would wrongly give 1 + 10 = 11. ✓"
+            interactLtrAnswer: 12,
+            interactOptions: ["11", "12", "7", "15", "10"],
+            interactCorrectAnswer: "11",
+            interactExplanation: "By BODMAS, multiply first: E × B = 5 × 2 = 10. Then add: A + 10 = 1 + 10 = 11. That's K. The left-to-right trap gives 12. ✓"
           }
         ],
         screens: [
           {
             type: "hook",
             title: (v) => `Don't fall for the trap!`,
-            body: (v) => `${v.name} is ${v.scenario}.\n\n**${v.expression} = ???**\n\nThe question has a × sign. Your brain might want to use BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction) — but **DON'T!** Work left to right.`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**${v.expression} = ???**\n\nThis has × mixed with + or −. Remember: **use BODMAS** — do the multiplication first!`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1126,8 +1126,8 @@ export const letterSumsSubConcepts = [
           },
           {
             type: "teach",
-            title: () => "Left to right, always!",
-            body: (v) => `For **${v.expression}**, your brain might want to do the × first — but DON'T! Even when you see × or ÷ in a letter sum, **always work left to right**. The BODMAS answer will be there as a trap option!`,
+            title: () => "BODMAS — multiply first!",
+            body: (v) => `For **${v.expression}**, spot the × sign — that means **multiply first** before adding or subtracting. The left-to-right answer will be there as a trap option!`,
             visual: {
               component: "WorkedExample",
               props: (v) => {
@@ -1135,8 +1135,8 @@ export const letterSumsSubConcepts = [
                 return {
                   steps: [
                     { text: `Numbers: ${letters.map(l => `${l}=${v.letterValues[l]}`).join(', ')}`, why: "Swap letters for numbers" },
-                    { text: `LEFT TO RIGHT: ${v.calculation}`, why: "Do each operation in order, left to right" },
-                    { text: `Answer: ${v.answer}${v.answerAsLetter ? ` (= letter ${v.answerAsLetter})` : ''}`, why: "The trap answer is always in the options — don't pick it! ✓" }
+                    { text: `BODMAS: ${v.calculation}`, why: "Multiply first, then add or subtract" },
+                    { text: `Answer: ${v.answer}${v.answerAsLetter ? ` (= letter ${v.answerAsLetter})` : ''}`, why: "The left-to-right trap answer is always in the options — don't pick it! ✓" }
                   ],
                   allRevealed: false
                 };
@@ -1146,8 +1146,8 @@ export const letterSumsSubConcepts = [
           },
           {
             type: "interact",
-            title: () => "Your turn — left to right!",
-            body: (v) => `What is **${v.interactExpression}**?\n\n**LEFT TO RIGHT, not BODMAS!**`,
+            title: () => "Your turn — BODMAS!",
+            body: (v) => `What is **${v.interactExpression}**?\n\n**Remember: multiply first, then add or subtract!**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1168,15 +1168,15 @@ export const letterSumsSubConcepts = [
           },
           {
             type: "consolidate",
-            title: () => "BODMAS trap? Not any more!",
+            title: () => "Left-to-right trap? Not any more!",
             body: () => `You've learned to spot and dodge this trap. Here's your reminder:`,
             visual: {
               component: "WorkedExample",
               props: () => ({
                 steps: [
-                  { text: "1. See × or ÷ in a letter sum? Don't panic!", why: "Your brain will scream 'BODMAS!' — ignore it" },
-                  { text: "2. Start from the LEFT", why: "Do the first operation, then use the result for the next" },
-                  { text: "3. The BODMAS answer is a trap option", why: "If you see it in the choices, DON'T pick it! ✓" }
+                  { text: "1. See × or ÷ mixed with + or −? Use BODMAS!", why: "Multiply and divide come before adding and subtracting" },
+                  { text: "2. Do the × or ÷ first, then the + or −", why: "Even if the × isn't the first thing in the expression" },
+                  { text: "3. The left-to-right answer is a trap option", why: "If you see it in the choices, DON'T pick it! ✓" }
                 ],
                 allRevealed: true
               })
@@ -1202,7 +1202,7 @@ export const letterSumsSubConcepts = [
         templateType: "step-by-step",
         learningGoal: [
           "How to handle multiplication in letter sums — times tables to the rescue!",
-          "How the left-to-right rule works with × signs too"
+          "How to handle multiplication in letter sums step by step"
         ],
         variableSets: [
           {
@@ -1292,7 +1292,7 @@ export const letterSumsSubConcepts = [
           {
             type: "teach",
             title: () => "Multiply left to right",
-            body: (v) => `Let's solve **${v.expression}**. Multiplication letter sums follow the same rule: **swap and calculate, left to right**.\n\nImportant: normal maths uses **BODMAS** (Brackets, Orders, Division, Multiplication, Addition, Subtraction) — but letter sums do NOT! Always work **left to right**.`,
+            body: (v) => `Let's solve **${v.expression}**. For pure multiplication, just swap letters for numbers and multiply step by step.`,
             visual: {
               component: "WorkedExample",
               props: (v) => {
@@ -1309,12 +1309,12 @@ export const letterSumsSubConcepts = [
             },
             interaction: {
               type: "fill-blank",
-              sentence: (v) => `Even with multiplication, letter sums are always worked ____ to ____`,
-              options: (v) => ["left, right", "right, left", "top, bottom", "biggest, smallest"],
+              sentence: (v) => `To solve a multiplication letter sum, first ____ the letters for numbers, then ____`,
+              options: (v) => ["swap, multiply", "add, swap", "multiply, swap", "swap, add"],
               correctIndex: (v) => 0,
               feedback: {
-                correct: (v) => `Yes! Left to right — the same rule applies to all operations in letter sums. ✓`,
-                incorrect: (v) => `Not quite — ALL letter sum operations go left to right, including multiplication!`
+                correct: (v) => `Yes! Swap letters for numbers, then multiply. Simple! ✓`,
+                incorrect: (v) => `Not quite — first swap letters for their number values, then multiply!`
               }
             }
           },
@@ -1349,8 +1349,8 @@ export const letterSumsSubConcepts = [
               props: () => ({
                 steps: [
                   { text: "1. Swap letters for numbers", why: "Use EJOTY for speed" },
-                  { text: "2. Multiply left to right", why: "Same rule as always — left to right!" },
-                  { text: "3. Remember: NOT BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction)!", why: "A + B × C means (A+B) × C in letter sums ✓" }
+                  { text: "2. Multiply step by step", why: "Use your times tables!" },
+                  { text: "3. If × is mixed with + or −, use BODMAS!", why: "Multiply first, then add or subtract ✓" }
                 ],
                 allRevealed: true
               })

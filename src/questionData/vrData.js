@@ -9284,7 +9284,7 @@ const vrData = {
         },
         {
           id: 2,
-          difficulty: 3,
+          difficulty: 1,
           questionType: "letter-codes",
           question: "If COLD is coded as DPME, what is WARM coded as?",
           options: ["XBSN","XCSN","XBTN","XBSO","YCSN"],
@@ -9317,7 +9317,7 @@ const vrData = {
         },
         {
           id: 5,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "letter-codes",
           question: "If RAIN is coded as UDLQ, what is SNOW coded as?",
           options: ["VQSZ","UQRZ","VRQZ","VQRZ","VQRW"],
@@ -9404,11 +9404,11 @@ const vrData = {
         },
         {
           id: 14,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "letter-codes",
           question: "If JUMP is coded as KVNQ, what is LAND coded as?",
-          options: ["MBOE","MBOE","MBNE","LBOE","MCOE"],
-          correct: 1,
+          options: ["MBOE","MBOF","MBNE","LBOE","MCOE"],
+          correct: 0,
           explanation: "Each letter moves forward 1: L→M, A→B, N→O, D→E. LAND becomes MBOE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
         },
         {
@@ -9422,7 +9422,7 @@ const vrData = {
         },
         {
           id: 16,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "letter-codes",
           question: "If DUSK is coded as GXVN, what is the code for DESK?",
           options: ["GFVN","GHVM","GIVN","GHVN","GHUN"],
@@ -9947,7 +9947,7 @@ const vrData = {
         },
         {
           id: 69,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "letter-codes",
           question: "If the code for HELP is JGNR, what rule has been used?",
           options: [
@@ -10247,7 +10247,7 @@ const vrData = {
         },
         {
           id: 97,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "letter-codes",
           question: "If the code for HELP is KHOS, what rule has been used?",
           options: [
@@ -10262,7 +10262,7 @@ const vrData = {
         },
         {
           id: 98,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "letter-codes",
           question: "If the code for PRIDE is MOFAB, what rule has been used?",
           options: [
@@ -10403,7 +10403,7 @@ const vrData = {
         },
         {
           id: 113,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "letter-codes",
           question: "If the code for HERO is LIVS, what is the code for KING?",
           options: ["OLRK","OMKR","PMRK","OMRK","ONRK"],
@@ -10448,7 +10448,7 @@ const vrData = {
         },
         {
           id: 118,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "letter-codes",
           question: "If the code for BLUE is GQZJ, what is the code for PINK?",
           options: ["VNSP","UOSP","UNPS","UMSP","UNSP"],
@@ -10727,7 +10727,7 @@ const vrData = {
         },
         {
           id: 149,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for HELP?",
           options: ["SVOK","TVOK","SXOK","SVRK","SVOO"],
@@ -10736,7 +10736,7 @@ const vrData = {
         },
         {
           id: 150,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for COLD?",
           options: ["XLRW","YLOW","XNOW","XLOW","XLOA"],
@@ -10745,7 +10745,7 @@ const vrData = {
         },
         {
           id: 151,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for SWIM?",
           options: ["HDRR","IDRN","HFRN","HDUN","HDRN"],
@@ -12752,7 +12752,7 @@ const vrData = {
         },
         {
           id: 5,
-          difficulty: 2,
+          difficulty: 1,
           question: "If A=1, B=2, C=3... what is the total value of the word ICE?",
           options: ["16","19","15","18","17"],
           correct: 4,
@@ -12816,7 +12816,7 @@ const vrData = {
         },
         {
           id: 13,
-          difficulty: 3,
+          difficulty: 1,
           question: "If A=1, B=2, C=3... what is the total value of the word FACE?",
           options: ["12","14","15","16","18"],
           correct: 2,
@@ -12832,7 +12832,7 @@ const vrData = {
         },
         {
           id: 15,
-          difficulty: 1,
+          difficulty: 2,
           question: "If A=1, B=2, C=3... what is the total value of the word SUN?",
           options: ["54","48","56","50","52"],
           correct: 0,
@@ -12848,7 +12848,7 @@ const vrData = {
         },
         {
           id: 17,
-          difficulty: 1,
+          difficulty: 2,
           question: "If A=1, B=2, C=3... what is the total value of the word CUP?",
           options: ["38","40","36","42","44"],
           correct: 1,
@@ -12856,7 +12856,7 @@ const vrData = {
         },
         {
           id: 18,
-          difficulty: 1,
+          difficulty: 2,
           question: "If A=1, B=2, C=3... what is the total value of the word BOX?",
           options: ["39","43","41","37","45"],
           correct: 2,
@@ -13000,7 +13000,7 @@ const vrData = {
         },
         {
           id: 36,
-          difficulty: 1,
+          difficulty: 2,
           question: "If A=1, B=2, C=3... what is the total value of the word RUN?",
           options: ["53","51","55","49","57"],
           correct: 0,
@@ -13376,7 +13376,7 @@ const vrData = {
         },
         {
           id: 83,
-          difficulty: 2,
+          difficulty: 3,
           question: "If A = 6, B = 3 and C = 9, what is the value of C − A × B?",
           options: ["-9","-6","3","-3","9"],
           correct: 0,
@@ -13392,7 +13392,7 @@ const vrData = {
         },
         {
           id: 85,
-          difficulty: 2,
+          difficulty: 3,
           question: "If A = 7, B = 3 and C = 6, what is the value of (A + B) × C?",
           options: ["54","48","60","66","72"],
           correct: 2,

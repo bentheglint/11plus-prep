@@ -37,7 +37,7 @@ import { letterPairSeriesSubConcepts } from './staging/letterpairseries-subconce
 import { wordCodeAnalogiesSubConcepts } from './staging/wordcodeanalogies-subconcepts';
 import { numberWordCodesSubConcepts } from './staging/numberwordcodes-subconcepts';
 import { numberSeriesSubConcepts } from './staging/numberseries-subconcepts';
-import { letterSumsSubConcepts } from './staging/lettersums-subconcepts';
+import { letterSumsSubConcepts } from './staging/letterSums-subconcepts';
 import { logicAndLanguageSubConcepts } from './staging/logicandlanguage-subconcepts';
 
 // ============================================================

@@ -1723,7 +1723,7 @@ const mathsData = {
     },
     {
       id: 2,
-      difficulty: 1,
+      difficulty: 2,
       question: "Two parcels weigh 4.6 kg and 2.8 kg. What is their total weight?",
       options: ["6.4", "7.2", "7.14", "6.14", "7.4"],
       correct: 4,
@@ -1779,7 +1779,7 @@ const mathsData = {
     },
     {
       id: 9,
-      difficulty: 3,
+      difficulty: 2,
       question: "Four science beakers contain different amounts of liquid: Beaker A has 0.6 litres, Beaker B has 0.06 litres, Beaker C has 0.66 litres, and Beaker D has 0.606 litres. Put these amounts in order from smallest to largest.",
       options: ["0.06, 0.606, 0.6, 0.66", "0.06, 0.6, 0.606, 0.66", "0.6, 0.06, 0.606, 0.66", "0.606, 0.06, 0.6, 0.66", "0.06, 0.6, 0.66, 0.606"],
       correct: 1,
@@ -1787,7 +1787,7 @@ const mathsData = {
     },
     {
       id: 10,
-      difficulty: 1,
+      difficulty: 2,
       question: "Four friends share 7.2 metres of ribbon equally. How much does each person get?",
       options: ["1.6", "2.0", "1.8", "2.2", "2.8"],
       correct: 2,
@@ -1803,7 +1803,7 @@ const mathsData = {
     },
     {
       id: 12,
-      difficulty: 1,
+      difficulty: 2,
       question: "In a science experiment, Sam measures 5.8 ml in one beaker and 3.6 ml in another. What is the total volume?",
       options: ["8.4", "9.2", "9.14", "8.14", "9.4"],
       correct: 4,
@@ -1907,7 +1907,7 @@ const mathsData = {
     },
     {
       id: 25,
-      difficulty: 1,
+      difficulty: 2,
       question: "Sarah runs 2.4 km on Monday and 3.8 km on Tuesday. How far does she run in total?",
       options: ["5.2 km", "5.12 km", "6.2 km", "6.12 km", "5.8 km"],
       correct: 2,
@@ -2043,7 +2043,7 @@ const mathsData = {
     },
     {
       id: 42,
-      difficulty: 1,
+      difficulty: 2,
       question: "A piece of cheese weighs 9.6 kg. It is cut into 4 equal blocks. How much does each block weigh?",
       options: ["2.2", "3.0", "2.6", "2.8", "2.4"],
       correct: 4,
@@ -2059,7 +2059,7 @@ const mathsData = {
     },
     {
       id: 44,
-      difficulty: 1,
+      difficulty: 2,
       question: "On sports day, Zara throws a javelin 7.8 metres and then 5.6 metres. What is her total distance across both throws?",
       options: ["12.4", "13.4", "13.2", "12.14", "13.14"],
       correct: 1,
@@ -2139,7 +2139,7 @@ const mathsData = {
     },
     {
       id: 54,
-      difficulty: 3,
+      difficulty: 2,
       question: "A chocolate bar is split into 8 equal pieces. Tom eats 1 piece. What decimal of the whole bar has he eaten? (Which decimal equals 1/8?)",
       options: ["0.08", "0.125", "0.18", "0.25", "0.8"],
       correct: 1,
@@ -2155,7 +2155,7 @@ const mathsData = {
     },
     {
       id: 56,
-      difficulty: 3,
+      difficulty: 2,
       question: "Four parcels weigh 0.8 kg, 0.08 kg, 0.88 kg and 0.808 kg. Put these weights in order from smallest to largest.",
       options: ["0.808, 0.08, 0.8, 0.88", "0.08, 0.808, 0.8, 0.88", "0.8, 0.08, 0.808, 0.88", "0.08, 0.8, 0.808, 0.88", "0.08, 0.8, 0.88, 0.808"],
       correct: 3,
@@ -2195,7 +2195,7 @@ const mathsData = {
     },
     {
       id: 61,
-      difficulty: 1,
+      difficulty: 2,
       question: "A model aeroplane weighs 3.6 kg. Its box weighs 7.9 kg. What is the total weight?",
       options: ["10.5", "11.4", "10.15", "11.5", "11.15"],
       correct: 3,
@@ -2339,7 +2339,7 @@ const mathsData = {
     },
     {
       id: 79,
-      difficulty: 3,
+      difficulty: 2,
       question: "Four bottles of cooking oil weigh 0.5 kg, 0.05 kg, 0.55 kg and 0.505 kg. Put these weights in order from lightest to heaviest.",
       options: ["0.05, 0.505, 0.5, 0.55", "0.05, 0.5, 0.505, 0.55", "0.5, 0.05, 0.505, 0.55", "0.505, 0.05, 0.5, 0.55", "0.05, 0.5, 0.55, 0.505"],
       correct: 1,
@@ -2419,7 +2419,7 @@ const mathsData = {
     },
     {
       id: 89,
-      difficulty: 1,
+      difficulty: 2,
       question: "Lily runs 3.6 km on Monday and 4.9 km on Tuesday. How far in total?",
       options: ["7.5 km", "8.5 km", "8.4 km", "7.15 km", "8.15 km"],
       correct: 1,
@@ -2451,7 +2451,7 @@ const mathsData = {
     },
     {
       id: 93,
-      difficulty: 1,
+      difficulty: 2,
       question: "A school shares 6.3 litres of paint equally among 100 pupils. How many litres does each pupil get?",
       options: ["0.063", "0.63", "63", "6.3", "0.0063"],
       correct: 0,
@@ -2467,7 +2467,7 @@ const mathsData = {
     },
     {
       id: 95,
-      difficulty: 1,
+      difficulty: 2,
       question: "A bag of apples weighs 7.5 kg and a bag of pears weighs 6.8 kg. What do they weigh altogether?",
       options: ["13.3", "14.2", "14.3", "13.13", "14.13"],
       correct: 2,
@@ -2499,7 +2499,7 @@ const mathsData = {
     },
     {
       id: 99,
-      difficulty: 1,
+      difficulty: 2,
       question: "A length of fabric measuring 14.4 metres is cut into 6 equal strips. How long is each strip?",
       options: ["2.2", "2.4", "2.3", "2.5", "2.6"],
       correct: 1,
@@ -2571,7 +2571,7 @@ const mathsData = {
     },
     {
       id: 108,
-      difficulty: 1,
+      difficulty: 2,
       question: "Grandma knits a scarf that is 4.5 metres long and then adds another section of 9.7 metres. What is the total length?",
       options: ["14.2", "14.1", "13.2", "13.12", "14.12"],
       correct: 0,
@@ -2635,7 +2635,7 @@ const mathsData = {
     },
     {
       id: 116,
-      difficulty: 3,
+      difficulty: 2,
       question: "Four friends measure how far they can jump: Oscar 0.7 m, Priya 0.07 m, Quinn 0.77 m, Ruby 0.707 m. Put these distances in order from shortest to longest.",
       options: ["0.707, 0.07, 0.7, 0.77", "0.07, 0.707, 0.7, 0.77", "0.7, 0.07, 0.707, 0.77", "0.07, 0.7, 0.707, 0.77", "0.07, 0.7, 0.77, 0.707"],
       correct: 3,
@@ -2707,7 +2707,7 @@ const mathsData = {
     },
     {
       id: 125,
-      difficulty: 1,
+      difficulty: 2,
       question: "A suitcase weighs 6.4 kg and a rucksack weighs 8.9 kg. What is their combined weight?",
       options: ["14.3", "15.2", "15.3", "14.13", "15.13"],
       correct: 2,
@@ -2763,7 +2763,7 @@ const mathsData = {
     },
     {
       id: 132,
-      difficulty: 1,
+      difficulty: 2,
       question: "Ava cycles 2.7 km on Saturday and 5.8 km on Sunday. How far in total?",
       options: ["7.5 km", "8.4 km", "8.15 km", "7.15 km", "8.5 km"],
       correct: 4,
@@ -2919,7 +2919,7 @@ const mathsData = {
       question: "Which calculation gives the largest answer?",
       options: ["4.8 × 0.5", "7.2 ÷ 3", "1.5 × 1.8", "6.5 ÷ 2", "0.9 × 3"],
       correct: 3,
-      explanation: "A: 4.8 × 0.5 = 2.4. B: 7.2 ÷ 3 = 2.4. C: 1.5 × 1.8 = 2.7. D: 0.9 × 3 = 2.7. E: 6.5 ÷ 2 = 3.25. The largest answer is 3.25, which is 6.5 ÷ 2. ✓"
+      explanation: "A: 4.8 × 0.5 = 2.4. B: 7.2 ÷ 3 = 2.4. C: 1.5 × 1.8 = 2.7. D: 6.5 ÷ 2 = 3.25. E: 0.9 × 3 = 2.7. The largest answer is 3.25, which is D (6.5 ÷ 2). ✓"
     },
     {
       id: 152,
@@ -3015,7 +3015,7 @@ const mathsData = {
     },
     {
       id: 163,
-      difficulty: 3,
+      difficulty: 2,
       question: "Which digit is in the thousandths place in 2.468?",
       options: ["8", "4", "6", "2", "0"],
       correct: 0,
@@ -3074,7 +3074,7 @@ const mathsData = {
     },
     {
       id: 170,
-      difficulty: 3,
+      difficulty: 2,
       question: "Convert 0.125 to a percentage.",
       options: ["125%", "1.25%", "12.5%", "0.125%", "1250%"],
       correct: 2,
@@ -3222,7 +3222,7 @@ const mathsData = {
     },
     {
       id: 188,
-      difficulty: 3,
+      difficulty: 2,
       question: "A bottle holds 1.5 litres of juice. Mia pours out 4 glasses, each holding 0.25 litres. How much juice is left in the bottle?",
       options: ["0.5 litres", "0.25 litres", "0.75 litres", "1.0 litres", "1.25 litres"],
       correct: 0,
@@ -9716,7 +9716,7 @@ longmultiplication: {
     },
     {
       id: 40,
-      difficulty: 3,
+      difficulty: 2,
       question: "A biscuit factory packs 72 biscuits into each tin. How many biscuits are in 68 tins?",
       options: ["4,846", "4,876", "4,896", "4,926", "4,956"],
       correct: 2,
@@ -9820,7 +9820,7 @@ longmultiplication: {
     },
     {
       id: 53,
-      difficulty: 3,
+      difficulty: 2,
       question: "A garden centre sells 84 packets of seeds each week. How many packets are sold in 57 weeks?",
       options: ["4,788", "4,768", "4,738", "4,818", "4,848"],
       correct: 0,
@@ -10108,7 +10108,7 @@ longmultiplication: {
     },
     {
       id: 89,
-      difficulty: 2,
+      difficulty: 3,
       question: "A wind farm generates 738 units of electricity per day. How many units are generated in 31 days?",
       options: ["22,778", "22,878", "22,828", "22,928", "22,978"],
       correct: 1,
@@ -10124,7 +10124,7 @@ longmultiplication: {
     },
     {
       id: 91,
-      difficulty: 2,
+      difficulty: 3,
       question: "A store sells 319 products. Each product generates £65 profit. What is the total profit?",
       options: ["£20,635", "£20,685", "£20,785", "£20,735", "£20,835"],
       correct: 3,
@@ -10188,7 +10188,7 @@ longmultiplication: {
     },
     {
       id: 99,
-      difficulty: 2,
+      difficulty: 3,
       question: "A concert hall has 958 seats. If 23 concerts are held with full houses, how many tickets are sold in total?",
       options: ["22,084", "22,034", "22,134", "22,184", "22,234"],
       correct: 1,
@@ -11323,7 +11323,7 @@ algebra: {
     },
     {
       id: 12,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: 5, dimUnit: "cm" } },
       question: "A rectangle has length l cm and width 5 cm. What is its perimeter?",
       options: ["l + 5", "2l + 10", "5l", "l + 10", "2l + 5"],
@@ -11407,7 +11407,7 @@ algebra: {
       id: 22,
       difficulty: 1,
       question: "Sarah collects stickers. She has s stickers and buys 12 more. Then she gives away 5. How many does she have now?",
-      options: ["s + 17", "s + 7", "s - 7", "12s + 5", "s + 12 - 5"],
+      options: ["s + 17", "s + 7", "s - 7", "12s + 5", "12s - 5"],
       correct: 1,
       explanation: "Start with s, add 12 (s + 12), then subtract 5: (s + 12) - 5 = s + 7 stickers. ✓"
     },
@@ -11542,7 +11542,7 @@ algebra: {
     },
     {
       id: 39,
-      difficulty: 1,
+      difficulty: 2,
       question: "On a quiz card, a = 4 and b = 9. Work out 3a + b.",
       options: ["16", "18", "20", "21", "23"],
       correct: 3,
@@ -11606,7 +11606,7 @@ algebra: {
     },
     {
       id: 47,
-      difficulty: 1,
+      difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: 8, operations: ["+ 12", "× 3"], output: "?" } },
       question: "A number machine adds 12 then multiplies by 3. If you put 8 into the machine, what comes out?",
       options: ["48", "60", "56", "52", "64"],
@@ -11631,7 +11631,7 @@ algebra: {
     },
     {
       id: 50,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 8, width: "?", dimUnit: "cm" } },
       question: "A rectangle has length 8 cm and width w cm. What is its perimeter?",
       options: ["8 + w", "8w", "2w + 8", "8 + 2w", "16 + 2w"],
@@ -12127,7 +12127,7 @@ algebra: {
       id: 111,
       difficulty: 1,
       question: "Emma collects e books. She buys 9 more then gives away 4. How many now?",
-      options: ["e + 5", "e + 13", "e - 5", "9e + 4", "e + 9 - 4"],
+      options: ["e + 5", "e + 13", "e - 5", "9e + 4", "9e - 4"],
       correct: 0,
       explanation: "Start e, add 9: e+9, subtract 4: e+9-4 = e+5. ✓"
     },
@@ -12181,7 +12181,7 @@ algebra: {
     },
     {
       id: 118,
-      difficulty: 1,
+      difficulty: 2,
       question: "If p = 17, what is 4p - 28?",
       options: ["36", "38", "40", "42", "44"],
       correct: 2,
@@ -12221,7 +12221,7 @@ algebra: {
     },
     {
       id: 123,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["− 8", "× 6"], output: 48, direction: "backwards" } },
       question: "A number machine subtracts 8 then multiplies by 6. Output is 48. What was input?",
       options: ["14", "15", "16", "17", "18"],
@@ -12254,7 +12254,7 @@ algebra: {
     },
     {
       id: 127,
-      difficulty: 1,
+      difficulty: 2,
       question: "If m = 19, what is 5m - 42?",
       options: ["45", "53", "49", "51", "47"],
       correct: 1,
@@ -12380,7 +12380,7 @@ algebra: {
     },
     {
       id: 142,
-      difficulty: 1,
+      difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: 6, operations: ["× 4", "+ 3"], output: "?" } },
       question: "A number machine multiplies by 4 then adds 3. If you put 6 into the machine, what comes out?",
       options: ["24", "27", "30", "33", "36"],
@@ -12389,7 +12389,7 @@ algebra: {
     },
     {
       id: 143,
-      difficulty: 1,
+      difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: 5, operations: ["+ 7", "× 3"], output: "?" } },
       question: "A number machine adds 7 then multiplies by 3. If you put 5 into the machine, what comes out?",
       options: ["22", "26", "36", "30", "42"],
@@ -12419,13 +12419,13 @@ algebra: {
       difficulty: 3,
       visual: { component: "FunctionMachine", props: { input: 4, operations: ["?"], output: 28 } },
       question: "A number machine takes an input of 4 and gives an output of 28. Which of these could be the rule?",
-      options: ["All of A, B and C", "Multiply by 7", "Multiply by 6 then add 4", "Both A and B", "Add 24"],
-      correct: 0,
+      options: ["Add 24", "Multiply by 7", "Multiply by 6 then add 4", "Both A and B", "All of A, B and C"],
+      correct: 4,
       explanation: "Test each rule with input 4. Add 24: 4 + 24 = 28 ✓. Multiply by 7: 4 × 7 = 28 ✓. Multiply by 6 then add 4: 4 × 6 + 4 = 24 + 4 = 28 ✓. All three rules give 28, so the answer is 'All of A, B and C'. ✓"
     },
     {
       id: 147,
-      difficulty: 1,
+      difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: 9, operations: ["− 3", "× 4"], output: "?" } },
       question: "A number machine subtracts 3 then multiplies by 4. If you put 9 into the machine, what comes out?",
       options: ["20", "24", "28", "33", "36"],
@@ -13465,7 +13465,7 @@ placevalue: {
     },
     {
       id: 22,
-      difficulty: 3,
+      difficulty: 2,
       question: "A town has a population of 85,555. The council rounds this to the nearest thousand for a report. What number do they write?",
       options: ["85,000", "85,500", "85,600", "86,000", "90,000"],
       correct: 3,
@@ -13481,7 +13481,7 @@ placevalue: {
     },
     {
       id: 24,
-      difficulty: 3,
+      difficulty: 2,
       question: "In the number 76,328, what is the sum of the thousands digit and the hundreds digit?",
       options: ["9", "6", "10", "11", "15"],
       correct: 0,
@@ -13561,7 +13561,7 @@ placevalue: {
     },
     {
       id: 34,
-      difficulty: 3,
+      difficulty: 2,
       question: "A concert hall holds 89,728 people. Round this to the nearest thousand.",
       options: ["90,000", "89,000", "89,700", "89,800", "80,000"],
       correct: 0,
@@ -13681,7 +13681,7 @@ placevalue: {
     },
     {
       id: 49,
-      difficulty: 3,
+      difficulty: 2,
       question: "In the number 29,716, what is the sum of the thousands digit and the tens digit?",
       options: ["10", "9", "8", "11", "12"],
       correct: 0,
@@ -13801,7 +13801,7 @@ placevalue: {
     },
     {
       id: 64,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the smallest 5-digit number you can make using 6, 3, 9, 1, 7 (each once)?",
       options: ["13,679", "16,379", "17,369", "19,367", "31,679"],
       correct: 0,
@@ -13825,7 +13825,7 @@ placevalue: {
     },
     {
       id: 67,
-      difficulty: 3,
+      difficulty: 2,
       question: "Round 99,555 to the nearest hundred.",
       options: ["99,500", "99,550", "99,560", "99,600", "100,000"],
       correct: 3,
@@ -13873,7 +13873,7 @@ placevalue: {
     },
     {
       id: 73,
-      difficulty: 3,
+      difficulty: 2,
       question: "In the number 74,258, what is the sum of all the digits?",
       options: ["24", "25", "28", "27", "26"],
       correct: 4,
@@ -13985,7 +13985,7 @@ placevalue: {
     },
     {
       id: 87,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the largest number you can make using 4, 0, 7, 2, 9 (each once)?",
       options: ["94,720", "97,402", "97,240", "97,420", "92,740"],
       correct: 3,
@@ -14041,7 +14041,7 @@ placevalue: {
     },
     {
       id: 94,
-      difficulty: 3,
+      difficulty: 2,
       question: "In the number 51,628, what is the difference between the largest and smallest digits?",
       options: ["7", "4", "5", "6", "3"],
       correct: 0,
@@ -14556,9 +14556,9 @@ placevalue: {
       id: 158,
       difficulty: 3,
       question: "Three numbers are written using the digits of 48,352 rearranged. The three numbers are put in order and the middle one is 53,842. Which of these could be the smallest of the three?",
-      options: ["84,532", "58,234", "85,432", "53,824", "25,348"],
+      options: ["84,532", "58,234", "85,432", "54,832", "25,348"],
       correct: 4,
-      explanation: "The middle number is 53,842. The smallest must be less than 53,842. Check each option: 84,532 > 53,842 ✗; 58,234 > 53,842 ✗; 25,348 < 53,842 ✓; 53,824 < 53,842 ✓; 85,432 > 53,842 ✗. Both 25,348 and 53,824 are less. But 53,824 is very close to 53,842 — if 53,824 were the smallest, the middle would need to be between it and the largest, which it is (53,842). However, 25,348 also works and uses the digits 2, 5, 3, 4, 8 — which are the same as 4, 8, 3, 5, 2 ✓. The answer is 25,348. ✓"
+      explanation: "The middle number is 53,842. The smallest must be less than 53,842. Check each option uses the digits {4,8,3,5,2} and is smaller: 84,532 > 53,842 ✗. 58,234 > 53,842 ✗. 85,432 > 53,842 ✗. 54,832 > 53,842 ✗. 25,348 < 53,842 ✓ and uses digits {2,5,3,4,8} = {4,8,3,5,2} ✓. The answer is 25,348. ✓"
     },
     // === READING & WRITING NUMBERS (Q159–Q166) ===
     {
@@ -15012,7 +15012,7 @@ negativenumbers: {
     },
     {
       id: 37,
-      difficulty: 3,
+      difficulty: 2,
       question: "A diver is at -30 metres. She dives down another 12 metres. What is her new depth?",
       options: ["42m below", "18m below", "18m above", "30m below", "12m below"],
       correct: 0,
@@ -15116,7 +15116,7 @@ negativenumbers: {
     },
     {
       id: 50,
-      difficulty: 3,
+      difficulty: 2,
       question: "The temperature in Alaska is -22°C. In Florida it is 48°C warmer. What is the temperature in Florida?",
       options: ["30°C", "70°C", "-70°C", "26°C", "48°C"],
       correct: 3,
@@ -15140,7 +15140,7 @@ negativenumbers: {
     },
     {
       id: 53,
-      difficulty: 3,
+      difficulty: 2,
       question: "A cave is 24 metres below ground level. A climber ascends 19 metres. What is her position relative to ground level?",
       options: ["-43", "-5", "5", "43", "-19"],
       correct: 1,
@@ -15180,7 +15180,7 @@ negativenumbers: {
     },
     {
       id: 58,
-      difficulty: 3,
+      difficulty: 2,
       question: "A submarine is at 30 metres below sea level. It rises 25 metres. What is its new depth?",
       options: ["-55", "-5", "5", "55", "-25"],
       correct: 1,
@@ -15222,7 +15222,7 @@ negativenumbers: {
       id: 63,
       difficulty: 1,
       question: "Lucy has -£7 in her savings account. Her gran gives her £20 for her birthday. What is her balance now?",
-      options: ["£-27", "£13", "£-13", "£27", "£20"],
+      options: ["-£27", "£13", "-£13", "£27", "£20"],
       correct: 1,
       explanation: "Start at -7 and add 20: -7 + 20 = 13. ✓"
     },
@@ -15238,7 +15238,7 @@ negativenumbers: {
       id: 65,
       difficulty: 2,
       question: "Tom has £6 in his account. He buys a toy costing £22. What is his balance now?",
-      options: ["£28", "£16", "£-28", "£-16", "£22"],
+      options: ["£28", "£16", "-£28", "-£16", "£22"],
       correct: 3,
       explanation: "He's £16 short! 6 - 22 = -16. When you spend more than you have, you go into the negatives. ✓"
     },
@@ -15340,7 +15340,7 @@ negativenumbers: {
     },
     {
       id: 78,
-      difficulty: 3,
+      difficulty: 2,
       question: "Oscar owes his dad £30. He pays back £18. How much does he still owe?",
       options: ["£48", "£12", "-£12", "-£48", "£30"],
       correct: 1,
@@ -15366,7 +15366,7 @@ negativenumbers: {
       id: 81,
       difficulty: 2,
       question: "Freddie has £9 in his wallet. He owes his friend £31. After paying, what is his balance?",
-      options: ["£40", "£22", "£31", "£-40", "£-22"],
+      options: ["£40", "£22", "£31", "-£40", "-£22"],
       correct: 4,
       explanation: "£9 minus £31 — he's £22 short. When you owe more than you have, the answer goes negative: -£22. ✓"
     },
@@ -15406,7 +15406,7 @@ negativenumbers: {
       id: 86,
       difficulty: 2,
       question: "Hannah has £13 on her library card. She buys a £35 book. What is her balance now?",
-      options: ["£48", "£22", "£35", "£-48", "£-22"],
+      options: ["£48", "£22", "£35", "-£48", "-£22"],
       correct: 4,
       explanation: "£13 minus £35 = -£22. She's £22 short! Subtracting more than you have always gives a negative answer. ✓"
     },
@@ -15492,7 +15492,7 @@ negativenumbers: {
     },
     {
       id: 97,
-      difficulty: 3,
+      difficulty: 2,
       question: "The temperature in Reykjavik is -21°C. It falls by another 9°C. What is the new temperature?",
       options: ["-30", "-12", "12", "30", "-9"],
       correct: 0,
@@ -15510,7 +15510,7 @@ negativenumbers: {
       id: 99,
       difficulty: 2,
       question: "Sam has £11 in his account. He pays a £38 bill. What is his balance now?",
-      options: ["£49", "£27", "£-27", "£-49", "£38"],
+      options: ["£49", "£27", "-£27", "-£49", "£38"],
       correct: 2,
       explanation: "£11 can't cover a £38 bill — that's £27 short. 11 - 38 = -27. Into the red! ✓"
     },
@@ -15580,7 +15580,7 @@ negativenumbers: {
     },
     {
       id: 108,
-      difficulty: 3,
+      difficulty: 2,
       question: "The temperature was -21°C. It dropped by 14°C. What is the new temperature?",
       options: ["-7°C", "-35°C", "7°C", "35°C", "-14°C"],
       correct: 1,
@@ -15612,7 +15612,7 @@ negativenumbers: {
     },
     {
       id: 112,
-      difficulty: 3,
+      difficulty: 2,
       question: "A potholer is 17 metres underground. She descends another 15 metres. What is her new depth?",
       options: ["-32", "-2", "2", "32", "-15"],
       correct: 0,
@@ -15620,7 +15620,7 @@ negativenumbers: {
     },
     {
       id: 113,
-      difficulty: 3,
+      difficulty: 2,
       question: "An explorer is 25 metres below ground in a cave. She climbs up 25 metres. What is her position now?",
       options: ["-50", "0", "50", "25", "-25"],
       correct: 1,
@@ -15638,7 +15638,7 @@ negativenumbers: {
       id: 115,
       difficulty: 3,
       question: "Alfie has £17 saved up. He buys a game costing £45. What is his balance now?",
-      options: ["£62", "£28", "£-62", "£-28", "£45"],
+      options: ["£62", "£28", "-£62", "-£28", "£45"],
       correct: 3,
       explanation: "£17 minus £45 = -£28. He's £28 short — that's what negative means here, the amount you're missing! ✓"
     },
@@ -23682,7 +23682,7 @@ sequences: {
     },
     {
       id: 74,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 37, 74, 111, 148, 185, ?",
       options: ["212", "218", "222", "228", "232"],
       correct: 2,
@@ -23706,7 +23706,7 @@ sequences: {
     },
     {
       id: 77,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the next term? 13, 39, 117, 351, ?",
       options: ["1053", "936", "702", "1170", "1287"],
       correct: 0,
@@ -23722,7 +23722,7 @@ sequences: {
     },
     {
       id: 79,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 41, 82, 123, 164, 205, ?",
       options: ["236", "242", "246", "252", "256"],
       correct: 2,
@@ -23762,7 +23762,7 @@ sequences: {
     },
     {
       id: 84,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the next number? 43, 86, 129, 172, 215, ?",
       options: ["248", "252", "258", "256", "262"],
       correct: 2,
@@ -23794,7 +23794,7 @@ sequences: {
     },
     {
       id: 88,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the next term? 18, 54, 162, 486, ?",
       options: ["972", "1458", "1296", "1620", "1782"],
       correct: 1,
@@ -23810,7 +23810,7 @@ sequences: {
     },
     {
       id: 90,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 47, 94, 141, 188, 235, ?",
       options: ["272", "276", "280", "282", "286"],
       correct: 3,
@@ -23842,7 +23842,7 @@ sequences: {
     },
     {
       id: 94,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 53, 106, 159, 212, 265, ?",
       options: ["308", "312", "318", "316", "322"],
       correct: 2,
@@ -23858,7 +23858,7 @@ sequences: {
     },
     {
       id: 96,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the 16th term in the sequence: 7, 14, 21, 28, ...?",
       options: ["105", "108", "110", "115", "112"],
       correct: 4,
@@ -23866,7 +23866,7 @@ sequences: {
     },
     {
       id: 97,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 59, 118, 177, 236, 295, ?",
       options: ["354", "348", "352", "344", "358"],
       correct: 0,
@@ -23882,7 +23882,7 @@ sequences: {
     },
     {
       id: 99,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 20, 60, 180, 540, ?",
       options: ["1080", "1440", "1620", "1800", "1980"],
       correct: 2,
@@ -23906,7 +23906,7 @@ sequences: {
     },
     {
       id: 102,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the next number? 61, 122, 183, 244, 305, ?",
       options: ["366", "360", "364", "356", "370"],
       correct: 0,
@@ -23938,7 +23938,7 @@ sequences: {
     },
     {
       id: 106,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the next term? 25, 75, 225, 675, ?",
       options: ["1350", "1800", "2475", "2250", "2025"],
       correct: 4,
@@ -23946,7 +23946,7 @@ sequences: {
     },
     {
       id: 107,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the 17th term in the sequence: 13, 26, 39, 52, ...?",
       options: ["221", "213", "218", "208", "226"],
       correct: 0,
@@ -23954,7 +23954,7 @@ sequences: {
     },
     {
       id: 108,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 67, 134, 201, 268, 335, ?",
       options: ["392", "402", "400", "396", "406"],
       correct: 1,
@@ -23978,7 +23978,7 @@ sequences: {
     },
     {
       id: 111,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 71, 142, 213, 284, 355, ?",
       options: ["416", "420", "424", "430", "426"],
       correct: 4,
@@ -24018,7 +24018,7 @@ sequences: {
     },
     {
       id: 116,
-      difficulty: 3,
+      difficulty: 2,
       question: "What comes next? 73, 146, 219, 292, 365, ?",
       options: ["428", "432", "436", "442", "438"],
       correct: 4,
@@ -24042,7 +24042,7 @@ sequences: {
     },
     {
       id: 119,
-      difficulty: 3,
+      difficulty: 2,
       question: "What is the next term? 30, 90, 270, 810, ?",
       options: ["1620", "2160", "2430", "2700", "2970"],
       correct: 2,
@@ -24298,9 +24298,9 @@ sequences: {
       id: 149,
       difficulty: 3,
       question: "Sam says 50 is a triangular number. Is he correct? The triangular numbers start: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...",
-      options: ["Yes, it is the 9th", "Yes, it is the 10th", "No, 55 is but 50 is not", "No, 45 is but 50 is not", "No, 48 is but 50 is not"],
+      options: ["Yes, it is the 9th", "Yes, it is the 10th", "No, it falls between 45 and 55", "No, 48 is but 50 is not", "No, 46 is but 50 is not"],
       correct: 2,
-      explanation: "The triangular numbers are: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... The 9th is 45 and the 10th is 55. There is no triangular number equal to 50, so Sam is incorrect. ✓"
+      explanation: "The triangular numbers are: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... The 9th is 45 and the 10th is 55. Since 50 falls between them, it is not a triangular number. Neither 48 nor 46 are triangular numbers either. ✓"
     },
 
     // --- D3 continue-sequence: IDs 150-152 ---
