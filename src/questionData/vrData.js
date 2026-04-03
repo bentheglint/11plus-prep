@@ -791,7 +791,7 @@ const vrData = {
         },
         {
           id: 79,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
           setA: ["irritate","soothe","impress"],
@@ -4430,7 +4430,7 @@ const vrData = {
         },
         {
           id: 77,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
           question: "Find the two words that are the odd ones out.",
           options: ["second","metre","minute","kilometre","hour"],
@@ -4448,7 +4448,7 @@ const vrData = {
         },
         {
           id: 79,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
           question: "Find the two words that are the odd ones out.",
           options: ["hexagon","pentagon","bicep","octagon","spine"],
@@ -5331,7 +5331,7 @@ const vrData = {
         },
         {
           id: 59,
-          difficulty: 2,
+          difficulty: 3,
           question: "Which word can go after both 'cup' and 'card' to make two new words?",
           options: ["Board","Berry","Tea","Box","Cake"],
           correct: 0,
@@ -5483,7 +5483,7 @@ const vrData = {
         },
         {
           id: 78,
-          difficulty: 2,
+          difficulty: 1,
           question: "Which word can go in front of both 'stairs' and 'fall' to make two new words?",
           options: ["Up","Water","Snow","Rain","Down"],
           correct: 4,
@@ -5491,7 +5491,7 @@ const vrData = {
         },
         {
           id: 79,
-          difficulty: 3,
+          difficulty: 2,
           question: "Which word can go in front of both 'lap' and 'due' to make two new words?",
           options: ["Over","Under","Mis","Up","Fore"],
           correct: 0,
@@ -5651,7 +5651,7 @@ const vrData = {
         },
         {
           id: 99,
-          difficulty: 3,
+          difficulty: 2,
           question: "Which word can go in front of both 'line' and 'stand' to make two new words?",
           options: ["Under","Over","With","Up","Out"],
           correct: 0,
@@ -5902,7 +5902,7 @@ const vrData = {
         },
         {
           id: 127,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "pick-from-sets",
           question: "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
           setA: ["cup","jug","pot"],
@@ -10894,7 +10894,7 @@ const vrData = {
       questions: [
         {
           id: 1,
-          difficulty: 2,
+          difficulty: 1,
           question: "What comes next in this letter series? A, C, E, G, ___",
           options: ["H","I","J","K","L"],
           correct: 1,
@@ -10902,7 +10902,7 @@ const vrData = {
         },
         {
           id: 2,
-          difficulty: 3,
+          difficulty: 2,
           question: "What comes next in this series? AZ, BY, CX, DW, ___",
           options: ["FV","EU","EV","EX","DV"],
           correct: 2,
@@ -10918,7 +10918,7 @@ const vrData = {
         },
         {
           id: 4,
-          difficulty: 2,
+          difficulty: 1,
           question: "What comes next in this letter series? Z, X, V, T, ___",
           options: ["S","U","Q","P","R"],
           correct: 4,
@@ -10926,7 +10926,7 @@ const vrData = {
         },
         {
           id: 5,
-          difficulty: 1,
+          difficulty: 3,
           question: "What comes next? A, B, D, G, ___",
           options: ["K","I","J","H","L"],
           correct: 0,
@@ -10934,7 +10934,7 @@ const vrData = {
         },
         {
           id: 6,
-          difficulty: 3,
+          difficulty: 1,
           question: "What comes next in this series? AC, BD, CE, DF, ___",
           options: ["EF","EG","FG","DG","EH"],
           correct: 1,
@@ -10950,7 +10950,7 @@ const vrData = {
         },
         {
           id: 8,
-          difficulty: 2,
+          difficulty: 1,
           question: "What comes next? ZZ, YY, XX, WW, ___",
           options: ["WX","UU","VW","VV","UV"],
           correct: 3,
@@ -11166,7 +11166,7 @@ const vrData = {
         },
         {
           id: 35,
-          difficulty: 2,
+          difficulty: 1,
           question: "What comes next in this letter series? A, D, G, J, ___",
           options: ["M","L","K","N","O"],
           correct: 0,
@@ -11185,7 +11185,7 @@ const vrData = {
           difficulty: 2,
           question: "What comes next in this letter series? A, E, I, M, ___",
           options: ["N","O","Q","P","R"],
-          correct: 3,
+          correct: 2,
           explanation: "The pattern adds 4 each time: A(+4)→E(+4)→I(+4)→M(+4)→Q. The answer is Q. Tip: Some series wrap around — after Z comes A again. Don't panic if the letters seem to jump! ✓"
         },
         {
@@ -11310,7 +11310,7 @@ const vrData = {
         },
         {
           id: 53,
-          difficulty: 2,
+          difficulty: 1,
           question: "What comes next in this letter pair series? MA, NB, OC, PD, ___",
           options: ["QF","PE","RE","QE","RF"],
           correct: 3,
@@ -11438,7 +11438,7 @@ const vrData = {
         },
         {
           id: 69,
-          difficulty: 2,
+          difficulty: 1,
           question: "What comes next in this letter pair series? BF, CG, DH, EI, ___",
           options: ["GK","FK","GJ","EJ","FJ"],
           correct: 4,
@@ -11513,7 +11513,7 @@ const vrData = {
           difficulty: 3,
           question: "What comes next in this letter series? C, E, H, L, ___",
           options: ["N","O","Q","P","R"],
-          correct: 3,
+          correct: 2,
           explanation: "The gaps increase: C(+2)→E(+3)→H(+4)→L(+5)→Q. The answer is Q. Tip: Process of elimination works well here — check each option against your predicted pattern. ✓"
         },
         {
@@ -11886,7 +11886,7 @@ const vrData = {
         },
         {
           id: 125,
-          difficulty: 3,
+          difficulty: 1,
           question: "What comes next in this letter series? M, K, I, G, ___",
           options: ["F","E","D","H","C"],
           correct: 1,
@@ -11910,7 +11910,7 @@ const vrData = {
         },
         {
           id: 128,
-          difficulty: 3,
+          difficulty: 1,
           question: "What comes next in this letter pair series? YX, WV, UT, SR, ___",
           options: ["QP","QR","PO","RQ","RP"],
           correct: 0,

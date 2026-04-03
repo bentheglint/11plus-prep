@@ -18862,7 +18862,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           explanation: "'Homework' is a singular uncountable noun, so it takes the singular verb 'needs'. We say 'the homework needs' not 'the homework need'. ✓"
         },
         {
-          id: 25, difficulty: 2,
+          id: 25, difficulty: 3,
           question: "Choose the correct word to complete the sentence: 'If I ___ you, I would apologise immediately.'",
           options: ["am", "be", "were", "is", "was"],
           correct: 2,
@@ -18964,7 +18964,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           difficulty: 2,
           question: "Choose the correct word to complete the sentence: 'There ___ several reasons why we should recycle more.'",
           options: ["is","was","does","has","are"],
-          correct: 2,
+          correct: 4,
           explanation: "The real subject here is 'reasons' (plural), not 'there'. Since 'reasons' is plural, we need the plural verb 'are'. ✓"
         },
         {
@@ -22769,7 +22769,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 1,
           "question": "Choose the correct word to complete the sentence: 'The children ___ very excited about the school trip.'",
           "options": ["was","is","am","be","were"],
-          "correct": 2,
+          "correct": 4,
           "explanation": "'The children were' is correct. 'Children' is plural, so it takes 'were' not 'was'. 'The children was' is non-standard. ✓"
         },
         {
@@ -22865,7 +22865,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "Choose the correct word to complete the sentence: 'There ___ fewer pupils in school today because of the flu.'",
           "options": ["is","was","does","has","are"],
-          "correct": 2,
+          "correct": 4,
           "explanation": "'There are fewer' is correct. 'Fewer' is used with countable nouns (pupils), and 'pupils' is plural, so we need 'are'. Also note: 'fewer' not 'less' with countable nouns. ✓"
         },
         {
@@ -22881,8 +22881,8 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "Choose the correct word to complete the sentence: 'None of the children ___ finished their work on time.'",
           "options": ["has","was","is","have","does"],
-          "correct": 3,
-          "explanation": "'None has finished' is traditionally correct — 'none' means 'not one' and takes a singular verb. However, 'none have' is widely accepted too. In formal/exam English, singular is preferred. ✓"
+          "correct": 0,
+          "explanation": "'None has finished' is correct in formal English — 'none' means 'not one' and takes a singular verb. You may hear 'none have' in everyday speech, but in exams, the singular form is preferred. ✓"
         },
         {
           "id": 356,
