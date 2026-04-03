@@ -17820,7 +17820,7 @@ areaperimeter: {
     },
     {
       id: 9,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 3, width: 2, dimUnit: "m", showGrid: true } },
       question: "Oliver is tiling his bathroom floor which is 3 metres long and 2 metres wide. Each tile covers 1 square metre. How many tiles does he need?",
       options: ["5 tiles", "6 tiles", "10 tiles", "12 tiles", "15 tiles"],
@@ -18056,7 +18056,7 @@ areaperimeter: {
     },
     {
       id: 34,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Perimeter = 60 m" } },
       question: "A square field has a perimeter of 60 metres. What is the length of each side?",
       image: "area-perimeter/square-q34.svg",
@@ -18076,7 +18076,7 @@ areaperimeter: {
     },
     {
       id: 36,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 10, width: 10, dimUnit: "m", areaLabel: "100 m²" } },
       question: "A square patio has an area of 100 square metres. What is its perimeter?",
       image: "area-perimeter/square-q36.svg",
@@ -18134,7 +18134,7 @@ areaperimeter: {
     },
     {
       id: 42,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 8, width: 8, dimUnit: "m" } },
       question: "A square room has a perimeter of 32 metres. What is its area?",
       image: "area-perimeter/square-q42.svg",
@@ -18210,7 +18210,7 @@ areaperimeter: {
     },
     {
       id: 50,
-      difficulty: 2,
+      difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 7, width: 5, dimUnit: "m", showGrid: true } },
       question: "Harper is tiling a rectangular floor that is 7 metres long and 5 metres wide. Each tile covers 1 square metre. How many tiles are needed?",
       options: ["12 tiles", "24 tiles", "35 tiles", "30 tiles", "70 tiles"],
@@ -18285,7 +18285,7 @@ areaperimeter: {
     },
     {
       id: 58,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 9, width: 9, dimUnit: "m" } },
       question: "A square carpet has a perimeter of 36 metres. What is its area?",
       image: "area-perimeter/square-q58.svg",
@@ -18502,7 +18502,7 @@ areaperimeter: {
     },
     {
       id: 81,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 4, width: 3, dimUnit: "m", showGrid: true } },
       question: "Mia is tiling a rectangular bathroom that is 4 metres long and 3 metres wide. Each tile is 0.5 metres by 0.5 metres. How many tiles does she need?",
       options: ["12 tiles", "24 tiles", "96 tiles", "48 tiles", "192 tiles"],
@@ -18636,7 +18636,7 @@ areaperimeter: {
     },
     {
       id: 95,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 25, width: 25, dimUnit: "m" } },
       question: "A square has a perimeter of 100 metres. What is its area?",
       image: "area-perimeter/square-q95.svg",
@@ -19463,7 +19463,7 @@ areaperimeter: {
     },
     {
       id: 186,
-      difficulty: 3,
+      difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", areaLabel: "perimeter = 20 cm" } },
       question: "A square has a perimeter of 20 cm. What is its area?",
       options: ["16 cm²", "20 cm²", "36 cm²", "25 cm²", "40 cm²"],
@@ -25060,7 +25060,7 @@ datahandling: {
       visual: { component: "PieChart", props: { sections: [{label: "Option A", angle: 126}, {label: "Option B", angle: 90}, {label: "Option C", angle: 72}, {label: "Option D", angle: 72}], showLabels: true, showValues: false, total: 200 } },
       options: ["70", "50", "60", "40", "80"],
       correct: 0,
-      explanation: "Option D = 126° out of 360° = 0.35. So 200 × 0.35 = 70. ✓"
+      explanation: "Option A = 126° out of 360° = 0.35. So 200 × 0.35 = 70. ✓"
     },
     {
       id: 76,
@@ -25597,7 +25597,7 @@ datahandling: {
     },
     {
       id: 134,
-      difficulty: 1,
+      difficulty: 2,
       question: "In a survey, children chose their favourite colour: Red — 12, Blue — 18, Green — 9, Yellow — 15, Purple — 6. How many more children chose Blue than Green and Purple combined?",
       options: ["2", "12", "6", "9", "3"],
       correct: 4,
@@ -26320,7 +26320,7 @@ datahandling: {
 
     {
       id: 176,
-      difficulty: 2,
+      difficulty: 1,
       visual: {
         component: "PieChart",
         props: {
@@ -26408,7 +26408,7 @@ datahandling: {
 
     {
       id: 180,
-      difficulty: 3,
+      difficulty: 2,
       visual: {
         component: "PieChart",
         props: {
@@ -26452,7 +26452,7 @@ datahandling: {
     },
     {
       id: 182,
-      difficulty: 3,
+      difficulty: 2,
       visual: {
         component: "PieChart",
         props: {
@@ -26894,7 +26894,7 @@ datahandling: {
 
     {
       id: 202,
-      difficulty: 1,
+      difficulty: 2,
       question: "A set of 7 numbers has a mode of 5. Six of the numbers are 3, 5, 7, 5, 4, and 8. What is the seventh number?",
       options: ["3", "4", "5", "7", "8"],
       correct: 2,

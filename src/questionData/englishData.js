@@ -7653,7 +7653,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           id: 47,
-          difficulty: 1,
+          difficulty: 2,
           questionType: 'error-spotting',
           question: "Which section contains a spelling error?",
           segments: ["The girls' hockey","practice starts at","four o'clock every","Wednesday afternoon."],
@@ -8382,7 +8382,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 110,
-          "difficulty": 1,
+          "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -10776,7 +10776,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 224,
-          "difficulty": 2,
+          "difficulty": 1,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -13038,7 +13038,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 332,
-          "difficulty": 2,
+          "difficulty": 1,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -13053,7 +13053,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 333,
-          "difficulty": 3,
+          "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -13218,7 +13218,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 344,
-          "difficulty": 1,
+          "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -13233,7 +13233,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 345,
-          "difficulty": 1,
+          "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -13818,7 +13818,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 384,
-          "difficulty": 3,
+          "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
@@ -13897,7 +13897,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "questionType": "error-spotting",
           "question": "Which section contains a spelling error?",
           "segments": [
-            "It was totaly",
+            "It was totally",
             "unecessary to bring",
             "an umbrella today",
             "as the sun shone."
