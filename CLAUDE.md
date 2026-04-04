@@ -114,6 +114,7 @@ See `Master Brief Document and Working Instructions/Master_Brief_v6_0.md` lines 
 - British English and UK context (£, metres, British names)
 - SVG diagrams verified visually in browser (File Explorer → double-click)
 - When creating SVGs, follow the locked templates in memory files
+- **The Oracle writes ALL new question content.** Claude handles mechanical fixes (index corrections, formatting, file operations) but the 11plus-oracle agent must write any new questions, replacement questions, word sets, distractors, answer options, or explanations. The Oracle has the GL research library; Claude does not. This rule exists because Claude-written content has repeatedly needed correction.
 
 ## Installed Skills
 

@@ -4940,10 +4940,10 @@ const vrData = {
         {
           id: 10,
           difficulty: 3,
-          question: "Which word can go in front of both 'ward' and 'right' to make two new words?",
+          question: "Which word can go in front of both 'grade' and 'roar' to make two new words?",
           options: ["Up","Out","Down","Back","For"],
-          correct: 1,
-          explanation: "Out + ward = outward, out + right = outright. Both are common compound words. ✓"
+          correct: 0,
+          explanation: "Up + grade = upgrade, and up + roar = uproar. Both are common compound words. 'Down' works with 'grade' (downgrade) but not 'roar'. 'Out', 'Back' and 'For' do not form compound words with either. ✓"
         },
         {
           id: 11,
@@ -5508,10 +5508,10 @@ const vrData = {
         {
           id: 81,
           difficulty: 3,
-          question: "Which word can go in front of both 'market' and 'pile' to make two new words?",
+          question: "Which word can go in front of both 'room' and 'pile' to make two new words?",
           options: ["Super","Wood","Stock","Hay","Store"],
           correct: 2,
-          explanation: "Stock + market = stock market, and stock + pile = stockpile. Both are common compound words. ✓"
+          explanation: "Stock + room = stockroom, and stock + pile = stockpile. Both are closed compound words. 'Storeroom' exists but 'storepile' does not, so only 'Stock' works with both. ✓"
         },
         {
           id: 82,
@@ -5670,135 +5670,135 @@ const vrData = {
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["sun","rain","flower","bow","light"],
-          correctPair: [1,3],
-          explanation: "'Rain' + 'bow' makes 'rainbow'. ✓"
+          options: ["rain","bow","grape","lamp","cork"],
+          correctPair: [0,1],
+          explanation: "'Rain' + 'bow' makes 'rainbow'. None of the other words (grape, lamp, cork) form compound words with each other or with rain/bow. ✓"
         },
         {
           id: 102,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["door","fire","step","bell","place"],
-          correctPair: [1,4],
-          explanation: "'Fire' + 'place' makes 'fireplace'. ✓"
+          options: ["fire","place","silk","wedge","grit"],
+          correctPair: [0,1],
+          explanation: "'Fire' + 'place' makes 'fireplace'. None of the other words (silk, wedge, grit) form compound words with each other or with fire/place. ✓"
         },
         {
           id: 103,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["cup","tea","board","pot","glass"],
-          correctPair: [1,3],
-          explanation: "'Tea' + 'pot' makes 'teapot'. ✓"
+          options: ["tea","pot","fern","squid","valve"],
+          correctPair: [0,1],
+          explanation: "'Tea' + 'pot' makes 'teapot'. None of the other words (fern, squid, valve) form compound words with each other or with tea/pot. ✓"
         },
         {
           id: 104,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["snow","rain","ball","drop","coat"],
-          correctPair: [0,2],
-          explanation: "'Snow' + 'ball' makes 'snowball'. ✓"
+          options: ["snow","ball","thorn","silk","dusk"],
+          correctPair: [0,1],
+          explanation: "'Snow' + 'ball' makes 'snowball'. None of the other words (thorn, silk, dusk) form compound words with each other or with snow/ball. ✓"
         },
         {
           id: 105,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["bed","book","time","shelf","room"],
-          correctPair: [0,4],
-          explanation: "'Bed' + 'room' makes 'bedroom'. ✓"
+          options: ["bed","room","prawn","cork","grit"],
+          correctPair: [0,1],
+          explanation: "'Bed' + 'room' makes 'bedroom'. None of the other words (prawn, cork, grit) form compound words with each other or with bed/room. ✓"
         },
         {
           id: 106,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["play","sun","ground","shine","set"],
-          correctPair: [0,2],
-          explanation: "'Play' + 'ground' makes 'playground'. ✓"
+          options: ["play","ground","elk","hinge","quilt"],
+          correctPair: [0,1],
+          explanation: "'Play' + 'ground' makes 'playground'. None of the other words (elk, hinge, quilt) form compound words with each other or with play/ground. ✓"
         },
         {
           id: 107,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["tooth","hair","paste","band","brush"],
-          correctPair: [0,2],
-          explanation: "'Tooth' + 'paste' makes 'toothpaste'. ✓"
+          options: ["tooth","brush","pond","kelp","ridge"],
+          correctPair: [0,1],
+          explanation: "'Tooth' + 'brush' makes 'toothbrush'. None of the other words (pond, kelp, ridge) form compound words with each other or with tooth/brush. ✓"
         },
         {
           id: 108,
           difficulty: 1,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["star","moon","fish","light","beam"],
-          correctPair: [0,2],
-          explanation: "'Star' + 'fish' makes 'starfish'. ✓"
+          options: ["star","fish","chalk","crust","mesh"],
+          correctPair: [0,1],
+          explanation: "'Star' + 'fish' makes 'starfish'. None of the other words (chalk, crust, mesh) form compound words with each other or with star/fish. ✓"
         },
         {
           id: 109,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["butter","bread","fly","bin","cup"],
-          correctPair: [0,2],
-          explanation: "'Butter' + 'fly' makes 'butterfly'. ✓"
+          options: ["butter","fly","brick","frost","plum"],
+          correctPair: [0,1],
+          explanation: "'Butter' + 'fly' makes 'butterfly'. None of the other words (brick, frost, plum) form compound words with each other or with butter/fly. ✓"
         },
         {
           id: 110,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["post","card","news","man","paper"],
-          correctPair: [2,4],
-          explanation: "'News' + 'paper' makes 'newspaper'. ✓"
+          options: ["news","paper","drum","moth","wedge"],
+          correctPair: [0,1],
+          explanation: "'News' + 'paper' makes 'newspaper'. None of the other words (drum, moth, wedge) form compound words with each other or with news/paper. ✓"
         },
         {
           id: 111,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["hand","book","shake","mark","worm"],
-          correctPair: [1,4],
-          explanation: "'Book' + 'worm' makes 'bookworm'. ✓"
+          options: ["book","worm","toast","cliff","dusk"],
+          correctPair: [0,1],
+          explanation: "'Book' + 'worm' makes 'bookworm'. None of the other words (toast, cliff, dusk) form compound words with each other or with book/worm. ✓"
         },
         {
           id: 112,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["black","water","bird","fall","blue"],
-          correctPair: [1,3],
-          explanation: "'Water' + 'fall' makes 'waterfall'. ✓"
+          options: ["water","fall","prawn","grit","lamp"],
+          correctPair: [0,1],
+          explanation: "'Water' + 'fall' makes 'waterfall'. None of the other words (prawn, grit, lamp) form compound words with each other or with water/fall. ✓"
         },
         {
           id: 113,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["moon","day","star","light","dream"],
-          correctPair: [1,4],
-          explanation: "'Day' + 'dream' makes 'daydream'. ✓"
+          options: ["day","dream","squid","cork","fern"],
+          correctPair: [0,1],
+          explanation: "'Day' + 'dream' makes 'daydream'. None of the other words (squid, cork, fern) form compound words with each other or with day/dream. ✓"
         },
         {
           id: 114,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["ring","ear","head","band","line"],
-          correctPair: [2,4],
-          explanation: "'Head' + 'line' makes 'headline'. ✓"
+          options: ["head","line","thorn","valve","silk"],
+          correctPair: [0,1],
+          explanation: "'Head' + 'line' makes 'headline'. None of the other words (thorn, valve, silk) form compound words with each other or with head/line. ✓"
         },
         {
           id: 115,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["river","bank","sea","horse","bed"],
-          correctPair: [2,3],
-          explanation: "'Sea' + 'horse' makes 'seahorse'. ✓"
+          options: ["sea","horse","brick","dusk","kelp"],
+          correctPair: [0,1],
+          explanation: "'Sea' + 'horse' makes 'seahorse'. None of the other words (brick, dusk, kelp) form compound words with each other or with sea/horse. ✓"
         },
         {
           id: 116,
@@ -5823,72 +5823,72 @@ const vrData = {
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["hand","bag","arm","rail","chair"],
-          correctPair: [2,4],
-          explanation: "'Arm' + 'chair' makes 'armchair'. ✓"
+          options: ["arm","chair","pond","quilt","ridge"],
+          correctPair: [0,1],
+          explanation: "'Arm' + 'chair' makes 'armchair'. None of the other words (pond, quilt, ridge) form compound words with each other or with arm/chair. ✓"
         },
         {
           id: 119,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["climb","drift","over","cross","look"],
-          correctPair: [2,4],
-          explanation: "'Over' + 'look' makes 'overlook', meaning to fail to notice or to have a view of something from above. 'Overclimb', 'overdrift', and 'crosslook' are not real words. ✓"
+          options: ["over","look","cliff","drum","plum"],
+          correctPair: [0,1],
+          explanation: "'Over' + 'look' makes 'overlook'. None of the other pairs form compound words. ✓"
         },
         {
           id: 120,
           difficulty: 3,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["black","green","house","smith","field"],
-          correctPair: [0,3],
-          explanation: "'Black' + 'smith' makes 'blacksmith'. ✓"
+          options: ["black","smith","chalk","hinge","elm"],
+          correctPair: [0,1],
+          explanation: "'Black' + 'smith' makes 'blacksmith'. None of the other words (chalk, hinge, elm) form compound words with each other or with black/smith. ✓"
         },
         {
           id: 121,
           difficulty: 3,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["sand","castle","land","mark","lord"],
-          correctPair: [2,4],
-          explanation: "'Land' + 'lord' makes 'landlord'. ✓"
+          options: ["land","lord","frost","mesh","crust"],
+          correctPair: [0,1],
+          explanation: "'Land' + 'lord' makes 'landlord'. None of the other words (frost, mesh, crust) form compound words with each other or with land/lord. ✓"
         },
         {
           id: 122,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["quarter","half","back","time","way"],
-          correctPair: [1,4],
-          explanation: "'Half' + 'way' makes 'halfway'. ✓"
+          options: ["half","way","moth","cork","grit"],
+          correctPair: [0,1],
+          explanation: "'Half' + 'way' makes 'halfway'. None of the other words (moth, cork, grit) form compound words with each other or with half/way. ✓"
         },
         {
           id: 123,
           difficulty: 2,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["some","no","body","thing","where"],
-          correctPair: [1,4],
-          explanation: "'No' + 'where' makes 'nowhere'. ✓"
+          options: ["no","where","plum","silk","valve"],
+          correctPair: [0,1],
+          explanation: "'No' + 'where' makes 'nowhere'. None of the other words (plum, silk, valve) form compound words with each other or with no/where. ✓"
         },
         {
           id: 124,
           difficulty: 3,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["with","out","draw","come","line"],
-          correctPair: [0,2],
-          explanation: "'With' + 'draw' makes 'withdraw'. ✓"
+          options: ["with","draw","elk","thorn","dusk"],
+          correctPair: [0,1],
+          explanation: "'With' + 'draw' makes 'withdraw'. None of the other words (elk, thorn, dusk) form compound words with each other or with with/draw. ✓"
         },
         {
           id: 125,
           difficulty: 3,
           questionType: "select-two",
           question: "Find two words, one from each group, that join together to make a new word.",
-          options: ["down","up","stairs","hill","stream"],
-          correctPair: [1,4],
-          explanation: "'Up' + 'stream' makes 'upstream'. ✓"
+          options: ["up","stream","wedge","hinge","prawn"],
+          correctPair: [0,1],
+          explanation: "'Up' + 'stream' makes 'upstream'. None of the other words (wedge, hinge, prawn) form compound words with each other or with up/stream. ✓"
         },
         {
           id: 126,
@@ -8441,10 +8441,10 @@ const vrData = {
         {
           id: 23,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ NET",
-          options: ["TIN","COR","FUN","VAL","PLA"],
-          correct: 4,
-          explanation: "The answer is PLA, making PLANET. A planet is a large body that orbits a star, such as Earth. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ KET",
+          options: ["MAR","JAR","TAR","BAR","CAR"],
+          correct: 0,
+          explanation: "The answer is MAR, making MARKET. 'Mar' means to damage or spoil something. A market is a place where goods are bought and sold. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 24,
@@ -8465,18 +8465,18 @@ const vrData = {
         {
           id: 26,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ BIT",
-          options: ["HIP","TAB","RAB","COP","DOG"],
-          correct: 2,
-          explanation: "The answer is RAB, making RABBIT. A rabbit is a small furry animal with long ears. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ LET",
+          options: ["HUB","GOB","JOB","COB","MOB"],
+          correct: 1,
+          explanation: "The answer is GOB, making GOBLET. A 'gob' is a lump or mouthful. A goblet is a drinking cup with a stem and base. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 27,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ VER",
-          options: ["TIN","GOL","BRA","SIL","COP"],
-          correct: 3,
-          explanation: "The answer is SIL, making SILVER. Silver is a precious grey-white metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ DIT",
+          options: ["BAT","BAD","BAN","BAG","BIN"],
+          correct: 2,
+          explanation: "The answer is BAN, making BANDIT. 'Ban' means to forbid something. A bandit is a robber or outlaw. Tip: Try common three-letter words first — many of them hide inside longer words! ✓"
         },
         {
           id: 28,
@@ -8497,18 +8497,18 @@ const vrData = {
         {
           id: 30,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TION",
-          options: ["JAR","POR","TIP","MOB","HUB"],
-          correct: 1,
-          explanation: "The answer is POR, making PORTION. A portion is a part or share of something, such as a helping of food. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ LTER",
+          options: ["SHE","THE","HER","SET","SEW"],
+          correct: 0,
+          explanation: "The answer is SHE, making SHELTER. 'She' is a pronoun for a female person. A shelter is a place giving protection from bad weather or danger. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
           id: 31,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TERN",
-          options: ["TIP","HUB","LAN","MOB","JAR"],
-          correct: 2,
-          explanation: "The answer is LAN, making LANTERN. A lantern is a lamp with a protective case, often used outdoors. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ THER",
+          options: ["PAN","PIN","PEN","PAD","PIG"],
+          correct: 0,
+          explanation: "The answer is PAN, making PANTHER. A 'pan' is a cooking vessel. A panther is a large wild cat, usually black. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 32,
@@ -8530,9 +8530,9 @@ const vrData = {
           id: 34,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ TURE",
-          options: ["VEN","JAR","TIP","HUB","MOB"],
-          correct: 0,
-          explanation: "The answer is VEN, making VENTURE. A venture is a risky or daring undertaking. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          options: ["CUT","CUP","CUR","CAP","CAT"],
+          correct: 3,
+          explanation: "The answer is CAP, making CAPTURE. A 'cap' is a type of hat. Capture means to catch or take by force. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 35,
@@ -8546,9 +8546,9 @@ const vrData = {
           id: 36,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ RAGE",
-          options: ["TIP","JAR","STO","HUB","MOB"],
-          correct: 2,
-          explanation: "The answer is STO, making STORAGE. Storage is the action of keeping things in a particular place for future use. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          options: ["AGE","ATE","ACE","AVE","AXE"],
+          correct: 3,
+          explanation: "The answer is AVE, making AVERAGE. 'Ave' is short for avenue, a wide street. Average means the typical or middle amount. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 37,
@@ -8570,33 +8570,33 @@ const vrData = {
           id: 39,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ THER",
-          options: ["WEA","TIP","JAR","MOB","HUB"],
-          correct: 0,
-          explanation: "The answer is WEA, making WEATHER. Weather is the state of the atmosphere at a given time and place. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          options: ["LET","LAP","LEA","LED","LEG"],
+          correct: 2,
+          explanation: "The answer is LEA, making LEATHER. A 'lea' is an open area of grassy land, or a meadow. Leather is a material made from animal skin. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
         {
           id: 40,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ LUME",
-          options: ["MOB","VOL","TIP","JAR","HUB"],
-          correct: 1,
-          explanation: "The answer is VOL, making VOLUME. Volume is the amount of space something occupies, or the loudness of a sound. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ TUME",
+          options: ["COT","COW","COS","COB","COG"],
+          correct: 2,
+          explanation: "The answer is COS, making COSTUME. 'Cos' is a type of lettuce, or an informal way of saying 'because'. A costume is a set of clothes worn for a special occasion or performance. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
           id: 41,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ESTOR",
-          options: ["TIP","MOB","ANC","HUB","JAR"],
-          correct: 2,
-          explanation: "The answer is ANC, making ANCESTOR. An ancestor is a person from whom one is descended, such as a great-grandparent. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ ASTER",
+          options: ["DIN","DIG","DIM","DIS","DIP"],
+          correct: 3,
+          explanation: "The answer is DIS, making DISASTER. 'Dis' means to show disrespect. A disaster is a sudden event causing great damage or suffering. Tip: Watch out for uncommon words that hide common three-letter words inside them! ✓"
         },
         {
           id: 42,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ RENDER",
-          options: ["TIP","HUB","MOB","SUR","JAR"],
+          question: "Which three-letter word completes this longer word? _ _ _ SKIRTS",
+          options: ["OUR","OAR","OAT","OUT","OWE"],
           correct: 3,
-          explanation: "The answer is SUR, making SURRENDER. Surrender means to give up or yield to the power of another. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "The answer is OUT, making OUTSKIRTS. 'Out' means the opposite of in. Outskirts are the outer parts of a town or city. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 43,
@@ -8617,34 +8617,34 @@ const vrData = {
         {
           id: 45,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ARTURE",
-          options: ["MOB","DEP","HUB","JAR","TIP"],
-          correct: 1,
-          explanation: "The answer is DEP, making DEPARTURE. Departure means the act of leaving, especially to start a journey. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ ERATE",
+          options: ["GEL","GEM","GET","GEN","GEE"],
+          correct: 3,
+          explanation: "The answer is GEN, making GENERATE. 'Gen' means useful information. Generate means to produce or create something. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 46,
           difficulty: 3,
           question: "Which three-letter word completes this longer word? _ _ _ TACLE",
-          options: ["HUB","MOB","SPE","TIP","JAR"],
-          correct: 2,
-          explanation: "The answer is SPE, making SPECTACLE. A spectacle is an impressive or remarkable sight or event. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          options: ["TIN","TEN","TAN","TON","TUN"],
+          correct: 1,
+          explanation: "The answer is TEN, making TENTACLE. 'Ten' is the number 10. A tentacle is a long, flexible arm of an animal like an octopus. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 47,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ VENTURE",
-          options: ["TIP","JAR","MOB","ADV","HUB"],
-          correct: 3,
-          explanation: "The answer is ADV, making ADVENTURE. An adventure is an exciting and sometimes dangerous experience. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ IDOTE",
+          options: ["AND","ANY","ANT","ARC","APE"],
+          correct: 2,
+          explanation: "The answer is ANT, making ANTIDOTE. An 'ant' is a small insect. An antidote is a medicine that counteracts the effects of a poison. Tip: Watch out for silent letters and unusual spellings — they won't sound right but they're correct! ✓"
         },
         {
           id: 48,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ GUAGE",
-          options: ["HUB","JAR","MOB","TIP","LAN"],
-          correct: 4,
-          explanation: "The answer is LAN, making LANGUAGE. Language is the method of human communication using words. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ PAGE",
+          options: ["RAG","RAT","RAN","RAM","RAP"],
+          correct: 3,
+          explanation: "The answer is RAM, making RAMPAGE. A 'ram' is a male sheep. A rampage is a period of violent or reckless behaviour. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
         {
           id: 49,
@@ -8849,18 +8849,18 @@ const vrData = {
         {
           id: 74,
           difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LING",
-          options: ["DAR","CUP","JAM","TIP","MOB"],
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RING",
+          options: ["HER","HIS","HIM","HIT","HID"],
           correct: 0,
-          explanation: "The answer is DAR, making DARLING. Darling is an affectionate term for someone dearly loved. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "The answer is HER, making HERRING. 'Her' is a pronoun for a female person. A herring is a type of silver fish found in the sea. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 75,
           difficulty: 1,
           question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) STER",
-          options: ["TIP","MON","CUP","JAM","HUB"],
-          correct: 1,
-          explanation: "The answer is MON, making MONSTER. A monster is a large, frightening imaginary creature. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          options: ["HIM","HIT","HAM","HAS","HAD"],
+          correct: 2,
+          explanation: "The answer is HAM, making HAMSTER. 'Ham' is a type of meat from a pig. A hamster is a small furry pet animal with pouchy cheeks. Tip: Try common three-letter words first — many of them hide inside longer words! ✓"
         },
         {
           id: 76,
@@ -8874,9 +8874,9 @@ const vrData = {
           id: 77,
           difficulty: 1,
           question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BER",
-          options: ["CUP","JAM","TIP","TIM","HUB"],
-          correct: 3,
-          explanation: "The answer is TIM, making TIMBER. Timber is wood prepared for use in building and carpentry. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          options: ["ROB","ROD","ROT","ROW","RUN"],
+          correct: 0,
+          explanation: "The answer is ROB, making ROBBER. 'Rob' means to steal from someone. A robber is a person who commits robbery. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 78,
@@ -8889,10 +8889,10 @@ const vrData = {
         {
           id: 79,
           difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LET",
-          options: ["BUL","CUP","HAM","TIP","JAM"],
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) ET",
+          options: ["OWL","OAK","OAR","OWE","ODD"],
           correct: 0,
-          explanation: "The answer is BUL, making BULLET. A bullet is a small metal projectile fired from a gun. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          explanation: "The answer is OWL, making OWLET. An 'owl' is a bird of prey that hunts at night. An owlet is a young owl. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
           id: 80,
@@ -8906,49 +8906,49 @@ const vrData = {
           id: 81,
           difficulty: 2,
           question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TURE",
-          options: ["JAM","TIP","CUL","HUB","MOB"],
+          options: ["PIG","PIN","PIC","PIE","PIT"],
           correct: 2,
-          explanation: "The answer is CUL, making CULTURE. Culture refers to the customs, arts and achievements of a particular group or nation. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "The answer is PIC, making PICTURE. A 'pic' is an informal word for a photograph. A picture is an image or painting. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 82,
           difficulty: 2,
           question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TORY",
-          options: ["CUP","HUB","TIP","FAC","MOB"],
-          correct: 3,
-          explanation: "The answer is FAC, making FACTORY. A factory is a building where goods are manufactured. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          options: ["HIT","HIM","HIS","HID","HIP"],
+          correct: 2,
+          explanation: "The answer is HIS, making HISTORY. 'His' is a possessive pronoun for a male. History is the study of past events. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 83,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) VOUR",
-          options: ["CUP","TIP","MOB","HUB","FLA"],
-          correct: 4,
-          explanation: "The answer is FLA, making FLAVOUR. Flavour is the taste of food or drink. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OUR",
+          options: ["ARC","ARE","ARM","ART","ARK"],
+          correct: 2,
+          explanation: "The answer is ARM, making ARMOUR. An 'arm' is a part of the body. Armour is a protective metal covering worn by knights. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
         {
           id: 84,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) IBLE",
-          options: ["VIS","TIP","HUB","CUP","MOB"],
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TUNE",
+          options: ["FOR","FIG","FIN","FIT","FOX"],
           correct: 0,
-          explanation: "The answer is VIS, making VISIBLE. Visible means able to be seen. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          explanation: "The answer is FOR, making FORTUNE. 'For' is a common preposition. A fortune is a large amount of money or good luck. Tip: Try common three-letter words first — many of them hide inside longer words! ✓"
         },
         {
           id: 85,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SAGE",
-          options: ["CUP","MES","HUB","MOB","TIP"],
-          correct: 1,
-          explanation: "The answer is MES, making MESSAGE. A message is a piece of information sent from one person to another. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) NON",
+          options: ["CAN","CUP","CUT","CAR","COT"],
+          correct: 0,
+          explanation: "The answer is CAN, making CANNON. A 'can' is a metal container. A cannon is a large, heavy weapon that fires metal balls. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 86,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TICE",
-          options: ["TIP","CUP","PRA","HUB","MOB"],
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) DON",
+          options: ["PAN","PAT","PAR","PAD","PAW"],
           correct: 2,
-          explanation: "The answer is PRA, making PRACTICE. Practice means repeated exercise to improve a skill. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          explanation: "The answer is PAR, making PARDON. 'Par' means equal or the expected standard. Pardon means to forgive or excuse someone. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
           id: 87,
@@ -8977,10 +8977,10 @@ const vrData = {
         {
           id: 90,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LUME",
-          options: ["CUP","VOL","HUB","MOB","TIP"],
-          correct: 1,
-          explanation: "The answer is VOL, making VOLUME. Volume is the amount of space something occupies, or the loudness of a sound. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TAIN",
+          options: ["CUP","CUT","CUR","CUB","CUD"],
+          correct: 2,
+          explanation: "The answer is CUR, making CURTAIN. A 'cur' is a mongrel or aggressive dog. A curtain is a piece of fabric hung to cover a window. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 91,
@@ -8993,18 +8993,18 @@ const vrData = {
         {
           id: 92,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) QUENT",
-          options: ["TIP","MOB","HUB","FRE","JAR"],
-          correct: 3,
-          explanation: "The answer is FRE, making FREQUENT. Frequent means occurring or done many times at short intervals. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OSSIBLE",
+          options: ["INN","ILL","IMP","INK","IRE"],
+          correct: 2,
+          explanation: "The answer is IMP, making IMPOSSIBLE. An 'imp' is a mischievous little devil or child. Impossible means not able to be done. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 93,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) SIBLE",
-          options: ["TIP","HUB","JAR","MOB","POS"],
-          correct: 4,
-          explanation: "The answer is POS, making POSSIBLE. Possible means able to be done or achieved. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) USCRIPT",
+          options: ["MAP","MAD","MAN","MAT","MAR"],
+          correct: 2,
+          explanation: "The answer is MAN, making MANUSCRIPT. A 'man' is an adult male. A manuscript is a handwritten or typed document, especially an author's original text. Tip: Watch out for uncommon words that hide common three-letter words inside them! ✓"
         },
         {
           id: 94,
@@ -9025,18 +9025,18 @@ const vrData = {
         {
           id: 96,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TIFUL",
-          options: ["JAR","TIP","BEA","MOB","HUB"],
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) INSULA",
+          options: ["PEW","PEA","PEN","PEG","PET"],
           correct: 2,
-          explanation: "The answer is BEA, making BEAUTIFUL. Beautiful means pleasing to the senses or mind. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "The answer is PEN, making PENINSULA. A 'pen' is a writing instrument. A peninsula is a piece of land almost surrounded by water, like Italy. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 97,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GRANCE",
-          options: ["TIP","MOB","HUB","FRA","JAR"],
-          correct: 3,
-          explanation: "The answer is FRA, making FRAGRANCE. A fragrance is a pleasant, sweet smell. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) FORMANCE",
+          options: ["PEA","PER","PEW","PEG","PET"],
+          correct: 1,
+          explanation: "The answer is PER, making PERFORMANCE. 'Per' means for each (as in 'per hour'). A performance is an act of presenting a play, concert, or other entertainment. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
         {
           id: 98,
@@ -9049,10 +9049,10 @@ const vrData = {
         {
           id: 99,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) GMENT",
-          options: ["JUD","HUB","MOB","TIP","JAR"],
-          correct: 0,
-          explanation: "The answer is JUD, making JUDGEMENT. Judgement is the ability to make considered decisions or come to sensible conclusions. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RICADE",
+          options: ["BAD","BAG","BAR","BAT","BAN"],
+          correct: 2,
+          explanation: "The answer is BAR, making BARRICADE. A 'bar' is a rod or a place that serves drinks. A barricade is a barrier erected to block a passage. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
         {
           id: 100,
