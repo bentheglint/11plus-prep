@@ -1751,7 +1751,7 @@ const mathsData = {
       question: "A bag of sweets costs £0.60. What do 10 bags cost?",
       options: ["0.06", "60", "6", "0.6", "0.006"],
       correct: 2,
-      explanation: "When multiplying by 10, move the decimal point one place to the right. 0.6 × 10 = 6. ✓"
+      explanation: "When multiplying by 10, the digits shift one place to the left (the number gets 10 times bigger). 0.6 × 10 = 6. ✓"
     },
     {
       id: 6,
@@ -1759,7 +1759,7 @@ const mathsData = {
       question: "A piece of rope is 4.5 metres long. It is cut into 10 equal pieces. How long is each piece, in metres?",
       options: ["4.5", "0.045", "45", "0.45", "0.0045"],
       correct: 3,
-      explanation: "When dividing by 10, move the decimal point one place to the left. 4.5 ÷ 10 = 0.45. ✓"
+      explanation: "When dividing by 10, the digits shift one place to the right (the number gets 10 times smaller). 4.5 ÷ 10 = 0.45. ✓"
     },
     {
       id: 7,
@@ -1895,7 +1895,7 @@ const mathsData = {
       question: "A box of crayons costs £4.80. How many pence is this? (Hint: multiply 4.8 × 100)",
       options: ["480", "4800", "0.48", "48", "0.048"],
       correct: 0,
-      explanation: "When multiplying by 100, move the decimal point two places to the right. 4.8 × 100 = 480. ✓"
+      explanation: "When multiplying by 100, the digits shift two places to the left (the number gets 100 times bigger). 4.8 × 100 = 480. ✓"
     },
     {
       id: 24,
@@ -1943,7 +1943,7 @@ const mathsData = {
       question: "A school raises £7.50 and shares it equally among 100 pupils. How many pounds does each pupil receive?",
       options: ["0.75", "0.075", "75", "0.0075", "750"],
       correct: 1,
-      explanation: "When dividing by 100, move the decimal point two places to the left. 7.5 ÷ 100 = 0.075. ✓"
+      explanation: "When dividing by 100, the digits shift two places to the right (the number gets 100 times smaller). 7.5 ÷ 100 = 0.075. ✓"
     },
     {
       id: 30,
@@ -2015,7 +2015,7 @@ const mathsData = {
       question: "A pencil is 3.45 cm wide. What is this measurement multiplied by 10?",
       options: ["34.5", "345", "0.345", "3.45", "3450"],
       correct: 0,
-      explanation: "When multiplying by 10, move the decimal point one place to the right. 3.45 × 10 = 34.5. ✓"
+      explanation: "When multiplying by 10, the digits shift one place to the left (the number gets 10 times bigger). 3.45 × 10 = 34.5. ✓"
     },
     {
       id: 39,
@@ -2023,7 +2023,7 @@ const mathsData = {
       question: "A bag of 10 sweets weighs 68 grams in total. What is the weight of one sweet? (Hint: divide 68 by 10)",
       options: ["0.68", "6.8", "6.08", "680", "0.068"],
       correct: 1,
-      explanation: "When dividing by 10, move the decimal point one place to the left. 68 ÷ 10 = 6.8. ✓"
+      explanation: "When dividing by 10, the digits shift one place to the right (the number gets 10 times smaller). 68 ÷ 10 = 6.8. ✓"
     },
     {
       id: 40,
@@ -2071,7 +2071,7 @@ const mathsData = {
       question: "A scientist measures 0.38 metres of copper wire. How many centimetres is that? (Hint: multiply 0.38 × 100)",
       options: ["3.8", "380", "38", "0.038", "3800"],
       correct: 2,
-      explanation: "When multiplying by 100, move the decimal point two places to the right. 0.38 × 100 = 38. ✓"
+      explanation: "When multiplying by 100, the digits shift two places to the left (the number gets 100 times bigger). 0.38 × 100 = 38. ✓"
     },
     {
       id: 46,
@@ -3120,7 +3120,7 @@ const mathsData = {
       question: "What is 45.6 ÷ 100?",
       options: ["4.56", "456", "0.456", "4560", "0.0456"],
       correct: 2,
-      explanation: "When dividing by 100, move the decimal point two places to the left. 45.6 ÷ 100 = 0.456. ✓"
+      explanation: "When dividing by 100, the digits shift two places to the right (the number gets 100 times smaller). 45.6 ÷ 100 = 0.456. ✓"
     },
     {
       id: 176,
@@ -3367,7 +3367,7 @@ const mathsData = {
       question: "What is 0.045 × 1000?",
       options: ["0.45", "4.5", "45", "450", "4500"],
       correct: 2,
-      explanation: "To multiply by 1000, move the decimal point 3 places to the right. 0.045 × 1000 = 45. ✓"
+      explanation: "To multiply by 1000, the digits shift 3 places to the left (the number gets 1000 times bigger). 0.045 × 1000 = 45. ✓"
     },
     {
       id: 206,
@@ -3391,7 +3391,7 @@ const mathsData = {
       question: "A raindrop holds 0.0042 litres of water. How many litres is that for 10,000 raindrops?",
       options: ["42 litres", "4.2 litres", "0.42 litres", "420 litres", "4200 litres"],
       correct: 0,
-      explanation: "0.0042 × 10,000: move the decimal 4 places to the right. 0.0042 × 10,000 = 42 litres. ✓"
+      explanation: "0.0042 × 10,000: the digits shift 4 places to the left (the number gets 10,000 times bigger). 0.0042 × 10,000 = 42 litres. ✓"
     },
     // ===== MULTIPLYING DECIMALS BY WHOLE NUMBERS D2/D3 (IDs 209–212) =====
     {
@@ -9701,10 +9701,10 @@ longmultiplication: {
     {
       id: 38,
       difficulty: 2,
-      question: "A Year 5 sponsored read challenge has 91 pupils, each reading 54 pages. How many pages are read altogether?",
-      options: ["4,914", "4,904", "4,864", "4,954", "5,004"],
-      correct: 0,
-      explanation: "91 × 54: (91 × 50 = 4,550) + (91 × 4 = 364) = 4,550 + 364 = 4,914. ✓"
+      question: "A Year 5 sponsored read challenge has 28 pupils, each reading 76 pages. How many pages are read altogether?",
+      options: ["2,088", "2,108", "2,128", "2,168", "2,188"],
+      correct: 2,
+      explanation: "28 × 76: (28 × 70 = 1,960) + (28 × 6 = 168) = 1,960 + 168 = 2,128. ✓"
     },
     {
       id: 39,
@@ -10061,10 +10061,10 @@ longmultiplication: {
     {
       id: 83,
       difficulty: 3,
-      question: "A swimming teacher gives 98 lessons each term. How many lessons are given over 81 terms?",
-      options: ["7,938", "7,918", "7,888", "7,968", "8,018"],
-      correct: 0,
-      explanation: "98 × 81: (98 × 80 = 7,840) + (98 × 1 = 98) = 7,840 + 98 = 7,938. ✓"
+      question: "A swimming school runs 186 lessons each term. How many lessons are run over 43 terms?",
+      options: ["7,958", "7,978", "7,998", "8,028", "8,048"],
+      correct: 2,
+      explanation: "186 × 43: (186 × 40 = 7,440) + (186 × 3 = 558) = 7,440 + 558 = 7,998. ✓"
     },
     {
       id: 84,
@@ -10157,10 +10157,10 @@ longmultiplication: {
     {
       id: 95,
       difficulty: 3,
-      question: "A bird sanctuary rescues 71 birds each month. How many birds are rescued over 92 months?",
-      options: ["6,482", "6,512", "6,532", "6,562", "6,612"],
+      question: "A bird sanctuary rescues 147 birds each month. How many birds are rescued over 46 months?",
+      options: ["6,722", "6,742", "6,762", "6,792", "6,822"],
       correct: 2,
-      explanation: "71 × 92: (71 × 90 = 6,390) + (71 × 2 = 142) = 6,390 + 142 = 6,532. ✓"
+      explanation: "147 × 46: (147 × 40 = 5,880) + (147 × 6 = 882) = 5,880 + 882 = 6,762. ✓"
     },
     {
       id: 96,
@@ -10221,10 +10221,10 @@ longmultiplication: {
     {
       id: 103,
       difficulty: 3,
-      question: "A cricket club orders 91 balls for each season. How many balls are ordered over 68 seasons?",
-      options: ["6,188", "6,168", "6,138", "6,218", "6,268"],
-      correct: 0,
-      explanation: "91 × 68: (91 × 70 = 6,370) - (91 × 2 = 182) = 6,370 - 182 = 6,188. ✓"
+      question: "A cricket club orders 214 balls each season. How many balls are ordered over 29 seasons?",
+      options: ["6,166", "6,186", "6,206", "6,236", "6,256"],
+      correct: 2,
+      explanation: "214 × 29: (214 × 30 = 6,420) - (214 × 1 = 214) = 6,420 - 214 = 6,206. ✓"
     },
     {
       id: 104,
@@ -10237,10 +10237,10 @@ longmultiplication: {
     {
       id: 105,
       difficulty: 3,
-      question: "A dance studio holds 78 classes each term. How many classes are held over 83 terms?",
-      options: ["6,424", "6,454", "6,474", "6,504", "6,554"],
+      question: "A dance studio holds 243 classes each term. How many classes are held over 27 terms?",
+      options: ["6,521", "6,541", "6,561", "6,591", "6,611"],
       correct: 2,
-      explanation: "78 × 83: (78 × 80 = 6,240) + (78 × 3 = 234) = 6,240 + 234 = 6,474. ✓"
+      explanation: "243 × 27: (243 × 30 = 7,290) - (243 × 3 = 729) = 7,290 - 729 = 6,561. ✓"
     },
     {
       id: 106,

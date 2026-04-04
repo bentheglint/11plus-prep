@@ -467,7 +467,7 @@ const vrData = {
           setA: ["generous","selfish","narrow"],
           setB: ["charitable","ambitious","popular"],
           correctPair: [0,0],
-          explanation: "'Generous' and 'charitable' both mean willing to give freely. 'Selfish' is the opposite — thinking only of yourself. 'Strict' means firm, 'ambitious' means driven, 'popular' means well-liked. ✓"
+          explanation: "'Generous' and 'charitable' both mean willing to give freely. 'Selfish' is the opposite — thinking only of yourself. 'Narrow' means not wide or limited in extent, 'ambitious' means driven, 'popular' means well-liked. ✓"
         },
         {
           id: 47,
@@ -487,7 +487,7 @@ const vrData = {
           setA: ["deserted","crowded","frozen"],
           setB: ["frequent","abandoned","pleasant"],
           correctPair: [0,1],
-          explanation: "'Deserted' and 'abandoned' both mean left empty with no people. 'Crowded' is the opposite — packed with people. 'Strict' means firm, 'famous' means well known, 'popular' means well-liked. ✓"
+          explanation: "'Deserted' and 'abandoned' both mean left empty with no people. 'Crowded' is the opposite — packed with people. 'Frozen' means turned to ice, 'frequent' means happening often, 'pleasant' means enjoyable or agreeable. ✓"
         },
         {
           id: 49,
@@ -647,7 +647,7 @@ const vrData = {
           setA: ["polite","rude","wealthy"],
           setB: ["gradual","courteous","sharp"],
           correctPair: [0,1],
-          explanation: "'Polite' and 'courteous' both mean showing good manners. 'Rude' is the opposite — lacking manners. 'Wealthy' means rich, 'famous' means well known, 'strict' means firm. ✓"
+          explanation: "'Polite' and 'courteous' both mean showing good manners. 'Rude' is the opposite — lacking manners. 'Wealthy' means rich, 'gradual' means happening slowly, 'sharp' means having a fine edge or quick-witted. ✓"
         },
         {
           id: 65,
@@ -687,7 +687,7 @@ const vrData = {
           setA: ["eager","reluctant","patient"],
           setB: ["grateful","keen","rough"],
           correctPair: [0,1],
-          explanation: "'Eager' and 'keen' both mean enthusiastic and wanting to do something. 'Reluctant' is the opposite — not wanting to. 'Patient' means able to wait, 'grateful' means thankful, 'strict' means firm. ✓"
+          explanation: "'Eager' and 'keen' both mean enthusiastic and wanting to do something. 'Reluctant' is the opposite — not wanting to. 'Patient' means able to wait, 'grateful' means thankful, 'rough' means not smooth or gentle. ✓"
         },
         {
           id: 69,
@@ -697,7 +697,7 @@ const vrData = {
           setA: ["honest","deceitful","confident"],
           setB: ["wealthy","truthful","ambitious"],
           correctPair: [0,1],
-          explanation: "'Honest' and 'truthful' both mean always telling the truth. 'Deceitful' is the opposite — deliberately misleading. 'Confident' means self-assured, 'popular' means well-liked, 'ambitious' means driven. ✓"
+          explanation: "'Honest' and 'truthful' both mean always telling the truth. 'Deceitful' is the opposite — deliberately misleading. 'Confident' means self-assured, 'wealthy' means having a lot of money, 'ambitious' means driven. ✓"
         },
         {
           id: 70,
@@ -887,7 +887,7 @@ const vrData = {
           setA: ["attentive","round","negligent"],
           setB: ["gradual","careless","ambitious"],
           correctPair: [2,1],
-          explanation: "'Negligent' and 'careless' both mean failing to take proper care. 'Attentive' is the opposite — paying close attention. 'Strict' means firm, 'popular' means well-liked, 'ambitious' means driven. ✓"
+          explanation: "'Negligent' and 'careless' both mean failing to take proper care. 'Attentive' is the opposite — paying close attention. 'Round' means shaped like a circle, 'gradual' means happening slowly, 'ambitious' means driven. ✓"
         },
         {
           id: 89,
@@ -907,7 +907,7 @@ const vrData = {
           setA: ["resilient","fragile","heavy"],
           setB: ["unusual","tough","regular"],
           correctPair: [0,1],
-          explanation: "'Resilient' and 'tough' both mean able to recover from difficulties. 'Fragile' is the opposite — easily broken. 'Strict' means firm, 'popular' means well-liked, 'famous' means well known. ✓"
+          explanation: "'Resilient' and 'tough' both mean able to recover from difficulties. 'Fragile' is the opposite — easily broken. 'Heavy' means weighing a lot, 'unusual' means not common or ordinary, 'regular' means happening at even intervals. ✓"
         },
         {
           id: 91,
@@ -1017,7 +1017,7 @@ const vrData = {
           setA: ["afraid","cheerful","steep"],
           setB: ["popular","frightened","famous"],
           correctPair: [0,1],
-          explanation: "'Afraid' and 'frightened' both mean feeling fear. 'Cheerful' means happy, 'strict' means firm, 'popular' means well-liked, 'famous' means well known — none describe fear. ✓"
+          explanation: "'Afraid' and 'frightened' both mean feeling fear. 'Cheerful' means happy, 'steep' means rising or falling sharply, 'popular' means well-liked, 'famous' means well known — none describe fear. ✓"
         },
         {
           id: 102,
@@ -1127,7 +1127,7 @@ const vrData = {
           setA: ["weary","flat","cautious"],
           setB: ["bold","exhausted","ancient"],
           correctPair: [0,1],
-          explanation: "'Weary' and 'exhausted' both mean extremely tired. 'Strict' means firm, 'cautious' means careful, 'bold' means brave, 'popular' means well-liked — none relate to tiredness. ✓"
+          explanation: "'Weary' and 'exhausted' both mean extremely tired. 'Flat' means having a level surface, 'cautious' means careful, 'bold' means brave, 'ancient' means very old — none relate to tiredness. ✓"
         },
         {
           id: 113,
@@ -1147,7 +1147,7 @@ const vrData = {
           setA: ["scarce","frequent","expensive"],
           setB: ["cheap","modern","rare"],
           correctPair: [0,2],
-          explanation: "'Scarce' and 'rare' both mean not found in large numbers. 'Frequent' is the opposite — happening often. 'Expensive' means costly, 'cheap' means low-priced, 'popular' means well-liked. ✓"
+          explanation: "'Scarce' and 'rare' both mean not found in large numbers. 'Frequent' is the opposite — happening often. 'Expensive' means costly, 'cheap' means low-priced, 'modern' means belonging to the present time. ✓"
         },
         {
           id: 115,
@@ -1187,7 +1187,7 @@ const vrData = {
           setA: ["ancient","modern","steep"],
           setB: ["narrow","prehistoric","distant"],
           correctPair: [0,1],
-          explanation: "'Ancient' and 'prehistoric' both mean belonging to the very distant past. 'Modern' is the opposite — present day. 'Steep' describes angle, 'narrow' describes width, 'popular' means well-liked. ✓"
+          explanation: "'Ancient' and 'prehistoric' both mean belonging to the very distant past. 'Modern' is the opposite — present day. 'Steep' describes angle, 'narrow' describes width, 'distant' means far away. ✓"
         },
         {
           id: 119,
@@ -1197,7 +1197,7 @@ const vrData = {
           setA: ["prudent","reckless","ambitious"],
           setB: ["grateful","wary","occasional"],
           correctPair: [0,1],
-          explanation: "'Prudent' and 'wary' both mean acting with careful thought about possible dangers. 'Reckless' is the opposite — acting without thinking. 'Ambitious' means driven, 'popular' means well-liked, 'famous' means well known. ✓"
+          explanation: "'Prudent' and 'wary' both mean acting with careful thought about possible dangers. 'Reckless' is the opposite — acting without thinking. 'Ambitious' means driven, 'grateful' means feeling thankful, 'occasional' means happening from time to time. ✓"
         },
         {
           id: 120,
@@ -1257,7 +1257,7 @@ const vrData = {
           setA: ["obsolete","modern","nervous"],
           setB: ["coastal","outdated","pleasant"],
           correctPair: [0,1],
-          explanation: "'Obsolete' and 'outdated' both mean no longer in use because something better has replaced it. 'Modern' is the opposite — present day. 'Popular' means well-liked, 'famous' means well known. ✓"
+          explanation: "'Obsolete' and 'outdated' both mean no longer in use because something better has replaced it. 'Modern' is the opposite — present day. 'Nervous' means feeling worried or anxious, 'coastal' means near the sea, 'pleasant' means enjoyable or agreeable. ✓"
         }
       ]
     },
@@ -12700,10 +12700,10 @@ const vrData = {
         {
           id: 98,
           difficulty: 3,
-          question: "What number comes next in this series? 11, 22, 33, 44, 55, ___",
-          options: ["67","64","68","66","65"],
-          correct: 3,
-          explanation: "Repeated digits: 11, 22, 33, 44, 55, 66. Add 11 each time. Tip: Repeated-digit numbers follow the 11 times table. ✓"
+          question: "What number comes next in this series? 1, 5, 13, 29, 61, ___",
+          options: ["122","119","125","123","127"],
+          correct: 2,
+          explanation: "The rule is ×2 then +3: 1×2+3=5, 5×2+3=13, 13×2+3=29, 29×2+3=61, 61×2+3=125. Tip: If differences keep growing but it is not a simple pattern, try multiplying each term by 2, 3 etc. and adjusting. ✓"
         },
         {
           id: 99,

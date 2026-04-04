@@ -26153,16 +26153,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 261,
           "difficulty": 2,
-          "question": "What does the word 'inevitable' mean?",
+          "question": "What does the word 'superfluous' mean?",
           "options": [
-            "Avoidable",
-            "Unlikely",
-            "Surprising",
-            "Certain to happen",
-            "Invisible"
+            "Essential",
+            "More than is needed; excessive",
+            "Very expensive",
+            "Extremely fast",
+            "Well organised"
           ],
-          "correct": 3,
-          "explanation": "'Inevitable' means certain to happen and unable to be avoided. Rain on a dark, cloudy day in Britain often feels inevitable. Building a strong vocabulary is one of the best exam skills. ✓"
+          "correct": 1,
+          "explanation": "'Superfluous' means more than is needed or unnecessary. The prefix 'super-' means above or beyond, so superfluous literally means overflowing beyond what is required. Building a strong vocabulary is one of the best exam skills. ✓"
         },
         {
           "id": 262,
@@ -26307,16 +26307,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 272,
           "difficulty": 3,
-          "question": "Which word is the best antonym (opposite) of 'eloquent'?",
+          "question": "Which word is the best antonym (opposite) of 'congenial'?",
           "options": [
-            "Musical",
-            "Persuasive",
-            "Charming",
-            "Inarticulate",
-            "Fluent"
+            "Hostile",
+            "Friendly",
+            "Pleasant",
+            "Cheerful",
+            "Sociable"
           ],
-          "correct": 3,
-          "explanation": "'Eloquent' means fluent and persuasive in speech or writing. Its opposite is 'inarticulate', meaning unable to speak distinctly or express ideas clearly. A great word to use in your own writing! ✓"
+          "correct": 0,
+          "explanation": "'Congenial' means pleasant and suited to one's taste or nature; agreeable company. Its opposite is 'hostile', meaning unfriendly and opposed. The distractors are all near-synonyms of congenial, which is a common GL trap. A great word to use in your own writing! ✓"
         },
         {
           "id": 273,
@@ -26517,16 +26517,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 287,
           "difficulty": 3,
-          "question": "What does the word 'impartial' mean?",
+          "question": "What does the word 'exquisite' mean?",
           "options": [
-            "Taking one side strongly",
-            "Not caring at all",
-            "Being extremely strict",
-            "Treating all sides equally and fairly",
-            "Showing great emotion"
+            "Very expensive and rare",
+            "Extremely beautiful and delicate",
+            "Quite ordinary",
+            "Old-fashioned and traditional",
+            "Large and impressive"
           ],
-          "correct": 3,
-          "explanation": "'Impartial' means treating all rivals or sides equally; not favouring one over another. A judge should always be impartial. Context is your best friend — surrounding words give clues. ✓"
+          "correct": 1,
+          "explanation": "'Exquisite' means extremely beautiful, delicate, and finely made. An exquisite piece of jewellery would be breathtakingly intricate and lovely. Children often confuse this with 'expensive' because exquisite things can be costly, but the word describes beauty, not price. Context is your best friend — surrounding words give clues. ✓"
         },
         {
           "id": 288,
@@ -27405,10 +27405,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 365,
           "difficulty": 3,
-          "question": "Which pair shows the correct FORMAL and INFORMAL versions?",
-          "options": ["reside / live", "depart / go away", "enquire / ask", "observe / watch", "All of the above"],
-          "correct": 4,
-          "explanation": "All four pairs are correct! 'Reside' is formal for 'live', 'depart' for 'go away', 'enquire' for 'ask', and 'observe' for 'watch'. Formal words often come from Latin or French and sound more official. Try using this word in a sentence today to make it stick. ✓"
+          "question": "Which pair correctly shows the FORMAL word first and its INFORMAL equivalent second?",
+          "options": ["commence / stop", "reside / live", "assist / demand", "observe / ignore", "enquire / answer"],
+          "correct": 1,
+          "explanation": "'Reside' is the formal way of saying 'live' (as in where you live). The other pairs are wrong: 'commence' means begin (not stop), 'assist' means help (not demand), 'observe' means watch (not ignore), and 'enquire' means ask (not answer). Formal words often come from Latin or French. ✓"
         },
         {
           "id": 366,
@@ -27429,10 +27429,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 368,
           "difficulty": 1,
-          "question": "Which word can mean BOTH 'a container for flowers' AND 'the past tense of plant'?",
-          "options": ["Box", "Vase", "Planted", "Pot", "Planter"],
-          "correct": 3,
-          "explanation": "'Pot' can mean a container for flowers (a flower pot) AND the past tense of 'to pot' (she potted the plant). But actually, none of these perfectly fit — 'pot' is the best answer as it works as both a noun (container) and a verb (to pot a ball in snooker). Words with similar meanings often have subtle differences. ✓"
+          "question": "Which word can mean BOTH 'a flying animal that comes out at night' AND 'something you hit a ball with in cricket'?",
+          "options": ["Racket", "Ball", "Bat", "Club", "Stick"],
+          "correct": 2,
+          "explanation": "'Bat' has two completely different meanings: a small flying mammal that comes out at night, and a piece of equipment used to hit a ball in cricket or rounders. Same spelling, same pronunciation, but totally different meanings. The sentence around the word tells you which meaning is intended. ✓"
         },
         {
           "id": 369,
@@ -27846,9 +27846,9 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 420,
           "difficulty": 3,
           "question": "Which word pair shows a correct noun → verb relationship?",
-          "options": ["Both A and B", "decision → decide", "explanation → explain", "creation → creative", "beautiful → beautify"],
+          "options": ["decision → decide", "creation → creative", "beautiful → beautify", "happy → happiness", "danger → dangerous"],
           "correct": 0,
-          "explanation": "Both pairs are correct! 'Explanation → explain' and 'decision → decide' both show noun → verb relationships. 'Creation → creative' is noun → adjective, and 'beautiful → beautify' is adjective → verb. Words with similar meanings often have subtle differences. ✓"
+          "explanation": "'Decision → decide' is the correct noun → verb pair. The others are wrong relationships: 'creation → creative' is noun → adjective, 'beautiful → beautify' is adjective → verb, 'happy → happiness' is adjective → noun, and 'danger → dangerous' is noun → adjective. ✓"
         },
         {
           "id": 421,
