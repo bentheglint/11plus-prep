@@ -4004,7 +4004,7 @@
     },
     {
       "questionId": 9,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4059,7 +4059,7 @@
     },
     {
       "questionId": 20,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4079,7 +4079,7 @@
     },
     {
       "questionId": 24,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4164,12 +4164,12 @@
     },
     {
       "questionId": 41,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 42,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4204,12 +4204,12 @@
     },
     {
       "questionId": 49,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 50,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4229,32 +4229,32 @@
     },
     {
       "questionId": 54,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 55,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 56,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 57,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 58,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 59,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4269,7 +4269,7 @@
     },
     {
       "questionId": 62,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4279,7 +4279,7 @@
     },
     {
       "questionId": 64,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4294,7 +4294,7 @@
     },
     {
       "questionId": 67,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4309,12 +4309,12 @@
     },
     {
       "questionId": 70,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 71,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4329,7 +4329,7 @@
     },
     {
       "questionId": 74,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4349,7 +4349,7 @@
     },
     {
       "questionId": 78,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
@@ -4359,52 +4359,52 @@
     },
     {
       "questionId": 80,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 81,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 82,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 83,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 84,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 85,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 86,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 87,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 88,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 89,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4419,22 +4419,22 @@
     },
     {
       "questionId": 92,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 93,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 94,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 95,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
@@ -4444,32 +4444,32 @@
     },
     {
       "questionId": 97,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 98,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 99,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     },
     {
       "questionId": 100,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 101,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-last-letter",
       "confidence": "high"
     },
     {
       "questionId": 102,
-      "subConceptId": "remove-first-letter",
+      "subConceptId": "remove-middle-letter",
       "confidence": "high"
     }
   ],
@@ -4506,7 +4506,7 @@
     },
     {
       "questionId": 7,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "middle-gaps",
       "confidence": "high"
     },
     {
@@ -4806,7 +4806,7 @@
     },
     {
       "questionId": 67,
-      "subConceptId": "consonant-gaps",
+      "subConceptId": "vowel-gaps",
       "confidence": "high"
     },
     {
@@ -7052,7 +7052,7 @@
     },
     {
       "questionId": 96,
-      "subConceptId": "constant-difference",
+      "subConceptId": "alternating-pattern",
       "confidence": "high"
     },
     {
@@ -9245,7 +9245,7 @@
     },
     {
       "questionId": 6,
-      "subConceptId": "four-person-ordering",
+      "subConceptId": "three-person-ordering",
       "confidence": "high"
     },
     {
@@ -9275,8 +9275,8 @@
     },
     {
       "questionId": 12,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "true-false-statements",
+      "confidence": "high"
     },
     {
       "questionId": 13,
@@ -9295,8 +9295,8 @@
     },
     {
       "questionId": 16,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "true-false-statements",
+      "confidence": "high"
     },
     {
       "questionId": 17,
@@ -9305,8 +9305,8 @@
     },
     {
       "questionId": 18,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "three-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 19,
@@ -9315,18 +9315,18 @@
     },
     {
       "questionId": 20,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "true-false-statements",
+      "confidence": "high"
     },
     {
       "questionId": 21,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "homonyms",
+      "confidence": "high"
     },
     {
       "questionId": 22,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "homonyms",
+      "confidence": "high"
     },
     {
       "questionId": 23,
@@ -9345,23 +9345,23 @@
     },
     {
       "questionId": 26,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "three-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 27,
-      "subConceptId": "syllogisms",
+      "subConceptId": "three-person-ordering",
       "confidence": "high"
     },
     {
       "questionId": 28,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "three-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 29,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "three-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 30,
@@ -9390,7 +9390,7 @@
     },
     {
       "questionId": 35,
-      "subConceptId": "syllogisms",
+      "subConceptId": "four-person-ordering",
       "confidence": "high"
     },
     {
@@ -9430,7 +9430,7 @@
     },
     {
       "questionId": 43,
-      "subConceptId": "syllogisms",
+      "subConceptId": "four-person-ordering",
       "confidence": "high"
     },
     {
@@ -9460,8 +9460,8 @@
     },
     {
       "questionId": 48,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "true-false-statements",
+      "confidence": "high"
     },
     {
       "questionId": 49,
@@ -9490,7 +9490,7 @@
     },
     {
       "questionId": 54,
-      "subConceptId": "negation-traps",
+      "subConceptId": "syllogisms",
       "confidence": "high"
     },
     {
@@ -9510,8 +9510,8 @@
     },
     {
       "questionId": 55,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "syllogisms",
+      "confidence": "high"
     },
     {
       "questionId": 56,
@@ -9520,8 +9520,8 @@
     },
     {
       "questionId": 57,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "syllogisms",
+      "confidence": "high"
     },
     {
       "questionId": 58,
@@ -9535,8 +9535,8 @@
     },
     {
       "questionId": 60,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "syllogisms",
+      "confidence": "high"
     },
     {
       "questionId": 61,
@@ -9725,13 +9725,13 @@
     },
     {
       "questionId": 102,
-      "subConceptId": "true-false-statements",
+      "subConceptId": "three-person-ordering",
       "confidence": "high"
     },
     {
       "questionId": 103,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "true-false-statements",
+      "confidence": "high"
     },
     {
       "questionId": 104,
@@ -9745,7 +9745,7 @@
     },
     {
       "questionId": 106,
-      "subConceptId": "four-person-ordering",
+      "subConceptId": "true-false-statements",
       "confidence": "high"
     },
     {
@@ -9815,8 +9815,8 @@
     },
     {
       "questionId": 120,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "syllogisms",
+      "confidence": "high"
     },
     {
       "questionId": 121,
@@ -9850,13 +9850,13 @@
     },
     {
       "questionId": 127,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "three-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 128,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "three-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 129,
@@ -9915,7 +9915,7 @@
     },
     {
       "questionId": 140,
-      "subConceptId": "negation-traps",
+      "subConceptId": "syllogisms",
       "confidence": "high"
     },
     {
@@ -9935,8 +9935,8 @@
     },
     {
       "questionId": 144,
-      "subConceptId": "comparative-language",
-      "confidence": "medium"
+      "subConceptId": "four-person-ordering",
+      "confidence": "high"
     },
     {
       "questionId": 145,
@@ -10431,7 +10431,7 @@
     },
     {
       "questionId": 75,
-      "subConceptId": "two-word-pairs",
+      "subConceptId": "restrictive-word-strategy",
       "confidence": "high",
       "note": "SHOW+WINK, GREW+WARM"
     },
@@ -10527,7 +10527,7 @@
     },
     {
       "questionId": 91,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "CLIMB+BREAD, DISTURB+BLANK. Silent B in CLIMB"
     },
@@ -10551,7 +10551,7 @@
     },
     {
       "questionId": 95,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "ABSORB+BENCH, SUPERB+BRAIN. B ending is restrictive"
     },
@@ -10581,7 +10581,7 @@
     },
     {
       "questionId": 100,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "COUNCIL+LOTUS, PENCIL+LUNCH"
     },
@@ -10629,7 +10629,7 @@
     },
     {
       "questionId": 108,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "CHERUB+BRING, PREFAB+BOAST. B ending restrictive"
     },
@@ -10683,7 +10683,7 @@
     },
     {
       "questionId": 117,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "ELASTIC+CLOUD, FABRIC+CRANE. C ending very restrictive"
     },
@@ -10719,13 +10719,13 @@
     },
     {
       "questionId": 123,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "MAJESTIC+CAMEL, CLASSIC+CATCH. C ending very restrictive"
     },
     {
       "questionId": 124,
-      "subConceptId": "restrictive-word-strategy",
+      "subConceptId": "tricky-pairs",
       "confidence": "high",
       "note": "TRIUMPH+HOUSE, MAMMOTH+HEDGE. H ending restrictive"
     },

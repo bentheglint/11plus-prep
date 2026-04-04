@@ -7539,7 +7539,7 @@ const vrData = {
         },
         {
           id: 13,
-          difficulty: 1,
+          difficulty: 2,
           question: "Move one letter from one word to the other to make two new words: STARE  OWN",
           options: ["T","A","S","R","E"],
           correct: 2,
@@ -7547,7 +7547,7 @@ const vrData = {
         },
         {
           id: 14,
-          difficulty: 1,
+          difficulty: 2,
           question: "Move one letter from one word to the other to make two new words: BRAND  OAT",
           options: ["R","A","B","D","N"],
           correct: 2,
@@ -7603,7 +7603,7 @@ const vrData = {
         },
         {
           id: 21,
-          difficulty: 3,
+          difficulty: 1,
           question: "Move one letter from one word to the other to make two new words: GRAIN  LOW",
           options: ["G","R","A","I","N"],
           correct: 0,
@@ -7611,7 +7611,7 @@ const vrData = {
         },
         {
           id: 22,
-          difficulty: 3,
+          difficulty: 1,
           question: "Move one letter from one word to the other to make two new words: WHOLE  HEN",
           options: ["H","W","L","O","E"],
           correct: 1,
@@ -8158,8 +8158,8 @@ const vrData = {
           difficulty: 2,
           question: "Move one letter from one word to the other to make two new words: CHART OWN",
           options: ["C","H","A","R","T"],
-          correct: 0,
-          explanation: "Move 'C' from CHART: becomes HART. Insert it into OWN: becomes CROWN. Both HART (a male deer) and CROWN are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          correct: 4,
+          explanation: "Move 'T' from CHART: becomes CHAR (to burn slightly). Insert it into OWN: becomes TOWN. Both CHAR and TOWN are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 91,
@@ -8312,7 +8312,7 @@ const vrData = {
         },
         {
           id: 7,
-          difficulty: 2,
+          difficulty: 1,
           question: "Which three-letter word completes this longer word? H _ _ _ SOME",
           options: ["ARM","ANT","ANY","AND","ARC"],
           correct: 3,
@@ -8408,7 +8408,7 @@ const vrData = {
         },
         {
           id: 19,
-          difficulty: 3,
+          difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ TAGE",
           options: ["COT","CUT","CAT","CAN","CAP"],
           correct: 0,
@@ -8432,7 +8432,7 @@ const vrData = {
         },
         {
           id: 22,
-          difficulty: 1,
+          difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ DEN",
           options: ["BUR","RAN","JOR","GAR","TEN"],
           correct: 3,
@@ -8731,7 +8731,7 @@ const vrData = {
           difficulty: 2,
           question: "Which letter completes this word? F R _ G H T",
           options: ["A","I","O","E","U"],
-          correct: 2,
+          correct: 1,
           explanation: "The letter is I, making FRIGHT. Fright means a sudden feeling of fear. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
         },
         {
@@ -8755,7 +8755,7 @@ const vrData = {
           difficulty: 2,
           question: "Which letter completes this word? S C R _ T C H",
           options: ["A","I","O","U","E"],
-          correct: 4,
+          correct: 0,
           explanation: "The letter is A, making SCRATCH. Scratch means to score or mark a surface with a sharp object. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
@@ -8768,7 +8768,7 @@ const vrData = {
         },
         {
           id: 64,
-          difficulty: 2,
+          difficulty: 3,
           question: "Which letter completes this word? S Q U _ L L",
           options: ["E","I","O","U","A"],
           correct: 4,
@@ -8827,7 +8827,7 @@ const vrData = {
           difficulty: 3,
           question: "Which letter completes this word? W R _ S T L E",
           options: ["A","O","I","U","E"],
-          correct: 3,
+          correct: 4,
           explanation: "The letter is E, making WRESTLE. Wrestle means to struggle or fight by grappling with an opponent. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
         },
         {
@@ -8835,7 +8835,7 @@ const vrData = {
           difficulty: 3,
           question: "Which letter completes this word? S C H _ D U L E",
           options: ["A","I","E","U","O"],
-          correct: 1,
+          correct: 2,
           explanation: "The letter is E, making SCHEDULE. A schedule is a plan that lists events or tasks and the times they will happen. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
         {
@@ -9128,7 +9128,7 @@ const vrData = {
         },
         {
           id: 109,
-          difficulty: 2,
+          difficulty: 1,
           question: "Which three-letter word completes this longer word?\n\nCUS ( _ _ _ ) S",
           options: ["TOP","TOM","TON","TOW","TOE"],
           correct: 1,
@@ -12571,7 +12571,7 @@ const vrData = {
         },
         {
           id: 82,
-          difficulty: 3,
+          difficulty: 2,
           question: "What number comes next in this series? 1, 3, 9, 27, 81, ___",
           options: ["245","242","243","244","241"],
           correct: 2,
@@ -12659,7 +12659,7 @@ const vrData = {
         },
         {
           id: 93,
-          difficulty: 3,
+          difficulty: 2,
           question: "What number comes next in this series? 144, 121, 100, 81, 64, ___",
           options: ["50","47","51","49","48"],
           correct: 3,
@@ -12667,7 +12667,7 @@ const vrData = {
         },
         {
           id: 94,
-          difficulty: 3,
+          difficulty: 2,
           question: "What number comes next in this series? 2, 3, 5, 7, 11, 13, ___",
           options: ["19","16","18","15","17"],
           correct: 4,
@@ -12707,7 +12707,7 @@ const vrData = {
         },
         {
           id: 99,
-          difficulty: 3,
+          difficulty: 1,
           question: "What number comes next in this series? 19, 28, 37, 46, 55, ___",
           options: ["65","63","66","62","64"],
           correct: 4,
@@ -14778,7 +14778,7 @@ const vrData = {
         },
         {
           id: 4,
-          difficulty: 3,
+          difficulty: 2,
           question: "If BANK = 2134 and KNAB = 4312, what is the code for NAB?",
           options: ["123","132","312","213","321"],
           correct: 2,
@@ -14987,10 +14987,10 @@ const vrData = {
         {
           id: 30,
           difficulty: 1,
-          question: "In a code, TOP = 415. What word does 541 stand for?",
+          question: "In a code, TOP = 415. What word does 514 stand for?",
           options: ["OTP","TPO","OPT","POT","PTO"],
           correct: 3,
-          explanation: "From TOP = 415: T=4, O=1, P=5. So 5=P, 4=T, 1=O → 541 = POT. Tip: Check your answer by substituting back — does every letter match its number? ✓"
+          explanation: "From TOP = 415: T=4, O=1, P=5. So 5=P, 1=O, 4=T → 514 = POT. Tip: Check your answer by substituting back — does every letter match its number? ✓"
         },
         {
           id: 31,
@@ -15789,7 +15789,7 @@ const vrData = {
         },
         {
           id: 4,
-          difficulty: 3,
+          difficulty: 2,
           question: "Dan has more sweets than Emma. Fay has fewer sweets than Emma but more than George. Who has the most sweets?",
           options: ["Cannot tell","Emma","Fay","George","Dan"],
           correct: 4,
@@ -15797,7 +15797,7 @@ const vrData = {
         },
         {
           id: 5,
-          difficulty: 3,
+          difficulty: 1,
           question: "I am thinking of two rhyming words that mean 'an overweight feline'. What are they?",
           options: ["Fat cat","Plump lump","Round hound","Thick chick","Big pig"],
           correct: 0,
@@ -15857,7 +15857,7 @@ const vrData = {
         },
         {
           id: 11,
-          difficulty: 2,
+          difficulty: 1,
           question: "I am thinking of two rhyming words that mean 'a large swine'. What are they?",
           options: ["Fat cat","Big pig","Round hound","Tall ball","Thick brick"],
           correct: 1,
@@ -16158,7 +16158,7 @@ const vrData = {
           difficulty: 1,
           question: "Every child in Year 5 wears a blue jumper. Priya is in Year 5. What colour jumper does Priya wear?",
           options: ["Red","Green","Yellow","Blue","Cannot tell"],
-          correct: 1,
+          correct: 3,
           explanation: "Every child in Year 5 wears blue. Priya is in Year 5, so she wears a blue jumper. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
         },
         {
@@ -16637,7 +16637,7 @@ const vrData = {
         },
         {
           id: 91,
-          difficulty: 3,
+          difficulty: 2,
           question: "Which word can mean both 'a sea creature with flippers' and 'to close something tightly'?",
           options: ["Seal","Otter","Walrus","Lock","Shut"],
           correct: 0,
@@ -16677,7 +16677,7 @@ const vrData = {
         },
         {
           id: 97,
-          difficulty: 3,
+          difficulty: 2,
           question: "Which word can mean both 'a fun outdoor event with rides' and 'treating everyone equally'?",
           options: ["Fair","Carnival","Just","Festival","Right"],
           correct: 0,
@@ -16769,7 +16769,7 @@ const vrData = {
         },
         {
           id: 110,
-          difficulty: 2,
+          difficulty: 1,
           question: "Oliver is heavier than Poppy. Poppy is heavier than Quinn. Who is the lightest?",
           options: ["Quinn","Poppy","Oliver","Oliver and Quinn","Cannot tell"],
           correct: 0,
@@ -16819,7 +16819,7 @@ const vrData = {
         },
         {
           id: 114,
-          difficulty: 2,
+          difficulty: 3,
           question: "I am thinking of two rhyming words that mean 'an angry employer'. What are they?",
           options: ["Mean queen","Cross boss","Mad lad","Sad dad","Grumpy lumpy"],
           correct: 1,
@@ -17193,7 +17193,7 @@ const vrData = {
         },
         {
           id: 145,
-          difficulty: 2,
+          difficulty: 1,
           question: "Which town is furthest north? York is north of London. Edinburgh is north of York.",
           options: ["York","London","Edinburgh","They are equal","Cannot tell"],
           correct: 2,
@@ -17209,7 +17209,7 @@ const vrData = {
         },
         {
           id: 147,
-          difficulty: 2,
+          difficulty: 1,
           question: "Who lives closest to school? Mia lives further from school than Noah. Noah lives further than Olivia.",
           options: ["Mia","They all live equally far","Olivia","Noah","Cannot tell"],
           correct: 2,
@@ -18054,7 +18054,7 @@ const vrData = {
         },
         {
           id: 89,
-          difficulty: 3,
+          difficulty: 2,
           question: "Find the letter that completes both pairs of words:\n\nORBI ( ? ) RADE\nCHAR ( ? ) IGER",
           options: ["T","N","S","R","D"],
           correct: 0,
@@ -18086,7 +18086,7 @@ const vrData = {
         },
         {
           id: 93,
-          difficulty: 3,
+          difficulty: 2,
           question: "Find the letter that completes both pairs of words:\n\nINSEC ( ? ) OTAL\nADOP ( ? ) RICK",
           options: ["T","S","N","R","D"],
           correct: 0,
@@ -18126,7 +18126,7 @@ const vrData = {
         },
         {
           id: 98,
-          difficulty: 3,
+          difficulty: 2,
           question: "Find the letter that completes both pairs of words:\n\nPERSO ( ? ) OVEL\nDRAGO ( ? ) ERVE",
           options: ["T","D","S","N","R"],
           correct: 3,
@@ -18182,7 +18182,7 @@ const vrData = {
         },
         {
           id: 105,
-          difficulty: 3,
+          difficulty: 2,
           question: "Find the letter that completes both pairs of words:\n\nBUTTO ( ? ) URSE\nKITTE ( ? ) ORTH",
           options: ["T","S","N","D","R"],
           correct: 2,
@@ -18246,7 +18246,7 @@ const vrData = {
         },
         {
           id: 113,
-          difficulty: 3,
+          difficulty: 2,
           question: "Find the letter that completes both pairs of words:\n\nDIREC ( ? ) RUST\nEXPEC ( ? ) ABLE",
           options: ["T","R","S","N","D"],
           correct: 0,

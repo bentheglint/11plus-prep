@@ -23148,7 +23148,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           id: 3,
-          difficulty: 2,
+          difficulty: 1,
           question: "Which word is the best antonym (opposite) of 'courageous'?",
           options: ["Strong", "Brave", "Cowardly", "Loud", "Kind"],
           correct: 2,
@@ -23309,14 +23309,14 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           explanation: "'Assist' means to help or give support to someone. An assistant is a helper. Look for prefixes and suffixes you recognise in unfamiliar words. ✓"
         },
         {
-          id: 25, difficulty: 3,
+          id: 25, difficulty: 2,
           question: "What does the word 'benevolent' mean?",
           options: ["Evil and cruel", "Well-meaning and kindly", "Extremely wealthy", "Very intelligent", "Slightly confused"],
           correct: 1,
           explanation: "'Benevolent' means kind, generous, and well-meaning. It comes from Latin: 'bene' (well) + 'volent' (wishing). A benevolent person wishes others well. Words with similar meanings often have subtle differences. ✓"
         },
         {
-          id: 26, difficulty: 3,
+          id: 26, difficulty: 2,
           question: "Which word would be most appropriate in a formal letter instead of 'big'?",
           options: ["Huge", "Mega", "Substantial", "Massive", "Ginormous"],
           correct: 2,
@@ -23536,7 +23536,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           id: 54,
-          difficulty: 2,
+          difficulty: 3,
           question: "Which word is closest in meaning to 'benevolent'?",
           options: ["Kind and generous","Dangerous","Selfish","Powerful","Intelligent"],
           correct: 0,
@@ -24696,7 +24696,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 157,
-          "difficulty": 1,
+          "difficulty": 2,
           "question": "In the sentence 'He was reluctant to try the unusual food,' what does 'reluctant' mean?",
           "options": [
             "Keen",
@@ -24808,7 +24808,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 165,
-          "difficulty": 1,
+          "difficulty": 2,
           "question": "In the sentence 'The peculiar smell came from the kitchen,' what does 'peculiar' mean?",
           "options": [
             "Familiar",
@@ -25508,7 +25508,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 215,
-          "difficulty": 2,
+          "difficulty": 3,
           "question": "In the sentence 'The referee's decision was impartial,' what does 'impartial' mean?",
           "options": [
             "Unfair",
@@ -26040,7 +26040,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 253,
-          "difficulty": 2,
+          "difficulty": 3,
           "question": "Which word means 'to officially give something to someone'?",
           "options": [
             "Refuse",
@@ -27628,7 +27628,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 393,
-          "difficulty": 3,
+          "difficulty": 2,
           "question": "Using your knowledge of the prefix 'bi-', how often does a 'biannual' event happen?",
           "options": ["Once a year", "Once a month", "Every two years", "Three times a year", "Twice a year"],
           "correct": 4,
@@ -28886,8 +28886,8 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Adjectives",
             "Adverbs"
           ],
-          "correct": 0,
-          "explanation": "These are conjunctive adverbs that function as conjunctions — they link ideas between sentences. 'It rained all day. However, the match continued.' Some grammarians class these as adverbs, but their main job is joining ideas. ✓"
+          "correct": 4,
+          "explanation": "These are adverbs (sometimes called conjunctive adverbs). They modify the whole sentence and show how ideas connect: 'It rained all day. However, the match continued.' Unlike conjunctions (and, but, because), they can't join two clauses in a single sentence — they need a full stop or semicolon before them. ✓"
         },
         {
           "id": 56,
@@ -29563,7 +29563,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 104,
-          "difficulty": 2,
+          "difficulty": 1,
           "question": "Which word class do 'they', 'we', 'it' and 'she' belong to?",
           "options": [
             "Verbs",
@@ -29591,7 +29591,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 106,
-          "difficulty": 3,
+          "difficulty": 1,
           "question": "What type of word is 'quickly' in the sentence: 'She quickly ran to the shop'?",
           "options": [
             "Noun",
@@ -32757,7 +32757,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 333,
-          "difficulty": 1,
+          "difficulty": 2,
           "question": "In the sentence 'I can do it myself', what type of pronoun is 'myself'?",
           "options": ["Personal pronoun", "Possessive pronoun", "Reflexive pronoun", "Relative pronoun", "Demonstrative pronoun"],
           "correct": 2,
@@ -33029,7 +33029,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           "id": 367,
-          "difficulty": 1,
+          "difficulty": 2,
           "question": "In 'The cat sat on the mat', what type of word is 'the'?",
           "options": ["Preposition", "Pronoun", "Adjective", "Determiner", "Noun"],
           "correct": 3,
