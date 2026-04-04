@@ -7644,18 +7644,18 @@ const vrData = {
         {
           id: 26,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: IRE SCOLD",
-          options: ["I","R","S","E","C"],
+          question: "Move one letter from one word to the other to make two new words: IRE  TRAIL",
+          options: ["I","R","T","E","A"],
           correct: 2,
-          explanation: "Move 'S' from SCOLD to make COLD, and insert it into IRE to make SIRE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'T' from TRAIL to make RAIL, and insert it into IRE to make TIRE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 27,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAK SCOLD",
-          options: ["O","A","S","K","C"],
+          question: "Move one letter from one word to the other to make two new words: APE  CHEAT",
+          options: ["A","P","C","E","H"],
           correct: 2,
-          explanation: "Move 'S' from SCOLD to make COLD, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'C' from CHEAT to make HEAT, and insert it into APE to make CAPE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 28,
@@ -7684,66 +7684,66 @@ const vrData = {
         {
           id: 31,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: OAR STALE",
-          options: ["S","O","A","R","T"],
-          correct: 0,
-          explanation: "Move 'S' from STALE to make TALE, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: LIP  STALE",
+          options: ["L","I","S","P","T"],
+          correct: 2,
+          explanation: "Move 'S' from STALE to make TALE, and insert it into LIP to make SLIP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 32,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: AGE STALE",
-          options: ["A","S","G","E","T"],
-          correct: 1,
-          explanation: "Move 'S' from STALE to make TALE, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: GROUND  ATE",
+          options: ["G","R","O","U","N"],
+          correct: 0,
+          explanation: "Move 'G' from GROUND to make ROUND, and insert it into ATE to make GATE. Both ROUND and GATE are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 33,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: OAK STALE",
-          options: ["O","A","K","S","T"],
-          correct: 3,
-          explanation: "Move 'S' from STALE to make TALE, and insert it into OAK to make SOAK. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: FRIGHT  ARM",
+          options: ["F","R","I","G","H"],
+          correct: 0,
+          explanation: "Move 'F' from FRIGHT to make RIGHT, and insert it into ARM to make FARM. Both RIGHT and FARM are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 34,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OWL FLAME",
-          options: ["O","W","F","A","L"],
+          question: "Move one letter from one word to the other to make two new words: LAG  FLAME",
+          options: ["L","A","F","G","M"],
           correct: 2,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into OWL to make FOWL. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'F' from FLAME to make LAME, and insert it into LAG to make FLAG. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 35,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OLD FLAME",
-          options: ["O","L","D","F","A"],
-          correct: 3,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into OLD to make FOLD. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: OLD  GROPE",
+          options: ["O","L","G","D","R"],
+          correct: 2,
+          explanation: "Move 'G' from GROPE to make ROPE, and insert it into OLD to make GOLD. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 36,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EEL FLAME",
-          options: ["E","F","L","A","M"],
-          correct: 1,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into EEL to make FEEL. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: EEL  SPEAR",
+          options: ["E","S","P","A","R"],
+          correct: 2,
+          explanation: "Move 'P' from SPEAR to make SEAR, and insert it into EEL to make PEEL. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 37,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: OAR STERN",
-          options: ["R","A","O","T","S"],
-          correct: 4,
-          explanation: "Move 'S' from STERN to make TERN, and insert it into OAR to make SOAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: HIP  STERN",
+          options: ["H","I","S","P","N"],
+          correct: 2,
+          explanation: "Move 'S' from STERN to make TERN, and insert it into HIP to make SHIP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 38,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: AGE STERN",
-          options: ["S","A","G","T","E"],
-          correct: 0,
-          explanation: "Move 'S' from STERN to make TERN, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: POT  STERN",
+          options: ["P","O","S","T","N"],
+          correct: 2,
+          explanation: "Move 'S' from STERN to make TERN, and insert it into POT to make SPOT. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 39,
@@ -7788,42 +7788,42 @@ const vrData = {
         {
           id: 44,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: ALE PRICE",
-          options: ["A","L","P","R","E"],
+          question: "Move one letter from one word to the other to make two new words: ALE  BREAD",
+          options: ["A","L","B","E","R"],
           correct: 2,
-          explanation: "Move 'P' from PRICE to make RICE, and insert it into ALE to make PALE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'B' from BREAD to make READ, and insert it into ALE to make BALE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 45,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AIR PRICE",
-          options: ["C","I","R","P","A"],
-          correct: 3,
-          explanation: "Move 'P' from PRICE to make RICE, and insert it into AIR to make PAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: AIR  FEAST",
+          options: ["A","I","F","R","E"],
+          correct: 2,
+          explanation: "Move 'F' from FEAST to make EAST, and insert it into AIR to make FAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 46,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AID PRICE",
-          options: ["A","R","D","I","P"],
-          correct: 4,
-          explanation: "Move 'P' from PRICE to make RICE, and insert it into AID to make PAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: GRAZE  OWN",
+          options: ["G","R","A","Z","E"],
+          correct: 0,
+          explanation: "Move 'G' from GRAZE to make RAZE, and insert it into OWN to make GOWN. Both RAZE (to demolish) and GOWN are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 47,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: INK STALE",
-          options: ["I","N","K","S","T"],
-          correct: 3,
-          explanation: "Move 'S' from STALE to make TALE, and insert it into INK to make SINK. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: SCREAM  LED",
+          options: ["S","C","R","E","A"],
+          correct: 0,
+          explanation: "Move 'S' from SCREAM to make CREAM, and insert it into LED to make SLED. Both CREAM and SLED are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 48,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AID STALE",
-          options: ["S","I","D","A","T"],
+          question: "Move one letter from one word to the other to make two new words: PLANK  ATE",
+          options: ["P","L","A","N","K"],
           correct: 0,
-          explanation: "Move 'S' from STALE to make TALE, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'P' from PLANK to make LANK, and insert it into ATE to make PATE (the top of the head). Both LANK and PATE are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 49,
@@ -7844,18 +7844,18 @@ const vrData = {
         {
           id: 51,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR FLAME",
-          options: ["F","E","A","R","L"],
+          question: "Move one letter from one word to the other to make two new words: DREAM  RUG",
+          options: ["D","R","E","A","M"],
           correct: 0,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into EAR to make FEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'D' from DREAM to make REAM, and insert it into RUG to make DRUG. Both REAM and DRUG are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 52,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: ARM FLAME",
-          options: ["A","F","R","M","L"],
-          correct: 1,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into ARM to make FARM. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: ARM  SWORE",
+          options: ["A","R","W","M","S"],
+          correct: 2,
+          explanation: "Move 'W' from SWORE to make SORE, and insert it into ARM to make WARM. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 53,
@@ -7884,10 +7884,10 @@ const vrData = {
         {
           id: 56,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: OAR STABLE",
-          options: ["A","S","R","B","O"],
-          correct: 3,
-          explanation: "Move B from STABLE: STABLE becomes STALE, and OAR becomes BOAR. The letter moves right to left! Tip: D3 questions often use longer, less familiar words and the less obvious direction. ✓"
+          question: "Move one letter from one word to the other to make two new words: ARK  STABLE",
+          options: ["A","R","B","K","S"],
+          correct: 2,
+          explanation: "Move 'B' from STABLE to make STALE, and insert it into ARK to make BARK. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 57,
@@ -7908,10 +7908,10 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR SCOLD",
-          options: ["O","A","R","S","C"],
-          correct: 3,
-          explanation: "Move S from SCOLD: becomes COLD, and OAR becomes SOAR. Both COLD and SOAR are real words. Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: CLONE  ASH",
+          options: ["C","L","O","N","E"],
+          correct: 0,
+          explanation: "Move 'C' from CLONE to make LONE, and insert it into ASH to make CASH. Both LONE and CASH are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 60,
@@ -7924,10 +7924,10 @@ const vrData = {
         {
           id: 61,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR STORE",
-          options: ["A","O","R","T","S"],
-          correct: 4,
-          explanation: "Move S from STORE: becomes TORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: HOP  STORE",
+          options: ["H","O","S","P","T"],
+          correct: 2,
+          explanation: "Move 'S' from STORE to make TORE, and insert it into HOP to make SHOP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 62,
@@ -7940,82 +7940,82 @@ const vrData = {
         {
           id: 63,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR SPINE",
-          options: ["O","S","R","A","P"],
-          correct: 1,
-          explanation: "Move S from SPINE: becomes PINE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: BROAD  END",
+          options: ["B","R","O","A","D"],
+          correct: 0,
+          explanation: "Move 'B' from BROAD to make ROAD, and insert it into END to make BEND. Both ROAD and BEND are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 64,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR STEAM",
-          options: ["E","A","T","S","R"],
+          question: "Move one letter from one word to the other to make two new words: RIM  STEAM",
+          options: ["R","I","T","M","S"],
           correct: 2,
-          explanation: "Move T from STEAM: becomes SEAM, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          explanation: "Move 'T' from STEAM to make SEAM, and insert it into RIM to make TRIM. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 65,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR SWEAR",
-          options: ["W","A","R","S","O"],
-          correct: 3,
-          explanation: "Move S from SWEAR: becomes WEAR, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: HAM  SWEAR",
+          options: ["H","A","S","M","W"],
+          correct: 2,
+          explanation: "Move 'S' from SWEAR to make WEAR, and insert it into HAM to make SHAM. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 66,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR TRACE",
-          options: ["A","E","R","C","T"],
-          correct: 4,
-          explanation: "Move T from TRACE: becomes RACE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: WIG  TRACE",
+          options: ["W","I","T","G","R"],
+          correct: 2,
+          explanation: "Move 'T' from TRACE to make RACE, and insert it into WIG to make TWIG. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 67,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR STAGE",
-          options: ["T","A","E","R","S"],
-          correct: 0,
-          explanation: "Move T from STAGE: becomes SAGE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: RAP  STAGE",
+          options: ["R","A","T","P","S"],
+          correct: 2,
+          explanation: "Move 'T' from STAGE to make SAGE, and insert it into RAP to make TRAP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 68,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR SHARE",
-          options: ["O","S","R","A","H"],
-          correct: 1,
-          explanation: "Move S from SHARE: becomes HARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: TAR  SHARE",
+          options: ["T","A","S","R","H"],
+          correct: 2,
+          explanation: "Move 'S' from SHARE to make HARE, and insert it into TAR to make STAR. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 69,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR SCARE",
-          options: ["O","A","S","C","R"],
+          question: "Move one letter from one word to the other to make two new words: LAP  SCARE",
+          options: ["L","A","S","P","C"],
           correct: 2,
-          explanation: "Move S from SCARE: becomes CARE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          explanation: "Move 'S' from SCARE to make CARE, and insert it into LAP to make SLAP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 70,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AGE SCALE",
-          options: ["S","G","E","C","A"],
-          correct: 3,
-          explanation: "Move C from SCALE: becomes SALE, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: HIT  SCALE",
+          options: ["H","I","S","T","C"],
+          correct: 4,
+          explanation: "Move 'C' from SCALE to make SALE, and insert it into HIT to make CHIT (a small note). The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 71,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR SNORE",
-          options: ["A","E","R","S","N"],
-          correct: 4,
-          explanation: "Move N from SNORE: becomes SORE, and EAR becomes NEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: APE  SNORE",
+          options: ["A","P","N","E","S"],
+          correct: 2,
+          explanation: "Move 'N' from SNORE to make SORE, and insert it into APE to make NAPE (the back of the neck). The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 72,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAR SCORE",
-          options: ["S","O","A","R","C"],
-          correct: 0,
-          explanation: "Move S from SCORE: becomes CORE, and OAR becomes SOAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: NAP  SCORE",
+          options: ["N","A","S","P","C"],
+          correct: 2,
+          explanation: "Move 'S' from SCORE to make CORE, and insert it into NAP to make SNAP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 73,
@@ -8028,18 +8028,18 @@ const vrData = {
         {
           id: 74,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: AGE BREACH",
-          options: ["A","G","R","E","B"],
+          question: "Move one letter from one word to the other to make two new words: ACE  BREACH",
+          options: ["A","C","R","E","B"],
           correct: 2,
-          explanation: "Move R from BREACH: becomes BEACH, and AGE becomes RAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+          explanation: "Move 'R' from BREACH to make BEACH, and insert it into ACE to make RACE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 75,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: BLAST OAR",
+          question: "Move one letter from one word to the other to make two new words: BLAST  RAN",
           options: ["B","L","A","S","T"],
           correct: 0,
-          explanation: "Move 'B' from BLAST: becomes LAST. Insert it into OAR: becomes BOAR (a wild pig). Both LAST and BOAR are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'B' from BLAST to make LAST, and insert it into RAN to make BRAN. Both LAST and BRAN are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 76,
@@ -8164,10 +8164,10 @@ const vrData = {
         {
           id: 91,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: BRAND OWL",
+          question: "Move one letter from one word to the other to make two new words: BRAND  ORE",
           options: ["B","R","A","N","D"],
           correct: 0,
-          explanation: "Move 'B' from BRAND: becomes RAND. Insert it into OWL: becomes BOWL. Both RAND and BOWL are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'B' from BRAND to make RAND, and insert it into ORE to make BORE. Both RAND and BORE are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 92,
@@ -8204,10 +8204,10 @@ const vrData = {
         {
           id: 96,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: MARCH OAT",
+          question: "Move one letter from one word to the other to make two new words: MARCH  ASK",
           options: ["M","A","R","C","H"],
           correct: 0,
-          explanation: "Move 'M' from MARCH: becomes ARCH. Insert it into OAT: becomes MOAT. Both ARCH and MOAT are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'M' from MARCH to make ARCH, and insert it into ASK to make MASK. Both ARCH and MASK are real words. Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
         },
         {
           id: 97,

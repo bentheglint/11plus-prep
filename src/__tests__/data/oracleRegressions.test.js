@@ -375,10 +375,21 @@ describe('Oracle Sweep — Critical Content Fixes (2026-04-03)', () => {
     expect(badFormat).toEqual([]);
   });
 
-  // Letter Move Q75/Q76: flagged as unsolvable (CROWN/GROWL from 3-letter words)
-  // These need full replacement — tracked as deferred content rewrites
-  it.todo('Letter Move Q75 needs replacement (CROWN impossible from OWN+1 letter)')
-  it.todo('Letter Move Q76 needs replacement (GROWL impossible from OWL+1 letter)')
+  // Letter Move Q75/Q76: were unsolvable (CROWN/GROWL from 3-letter words)
+  // Replaced with BLAST+OAR and GRAIN+OAT respectively
+  it('Letter Move Q75 no longer references CROWN', () => {
+    const q = findQuestion(vrData, 'letterMove', 75);
+    expect(q).toBeTruthy();
+    expect(q.explanation).not.toContain('CROWN');
+    expect(q.question).not.toContain('CRATE');
+  });
+
+  it('Letter Move Q76 no longer references GROWL', () => {
+    const q = findQuestion(vrData, 'letterMove', 76);
+    expect(q).toBeTruthy();
+    expect(q.explanation).not.toContain('GROWL');
+    expect(q.question).not.toContain('GRANT');
+  });
 });
 
 // ══════════════════════════════════════════════════════════════
@@ -424,5 +435,87 @@ describe('Oracle Sweep — Structural Invariants', () => {
     const content = fs.readFileSync('src/microLessons/lessonData.js', 'utf8');
     expect(content).toContain("./staging/letterSums-subconcepts");
     expect(content).not.toContain("./staging/lettersums-subconcepts");
+  });
+});
+
+// ══════════════════════════════════════════════════════════════
+// Cross-Question Analysis: Word/Answer Repetition
+// Checks the question bank as a COLLECTION, not just individual Qs.
+// Added after finding SOAR appeared 13 times in Letter Move.
+// ══════════════════════════════════════════════════════════════
+
+describe('Cross-Question Analysis — Word Repetition', () => {
+  // Helper: extract all words from Letter Move questions
+  function getLetterMoveWords() {
+    const questions = getTopicQuestions(vrData, 'letterMove');
+    const wordCounts = {};
+    questions.forEach(q => {
+      // Extract the two words from the question text
+      const match = q.question.match(/:\s*(\w+)\s+(\w+)/);
+      if (match) {
+        [match[1], match[2]].forEach(w => {
+          const word = w.toUpperCase();
+          wordCounts[word] = (wordCounts[word] || 0) + 1;
+        });
+      }
+      // Extract result words from explanation
+      if (q.explanation) {
+        const resultWords = q.explanation.match(/becomes\s+(\w+)/gi);
+        if (resultWords) {
+          resultWords.forEach(m => {
+            const word = m.replace(/becomes\s+/i, '').toUpperCase();
+            wordCounts[word] = (wordCounts[word] || 0) + 1;
+          });
+        }
+      }
+    });
+    return wordCounts;
+  }
+
+  it('no word appears more than 8 times across Letter Move questions', () => {
+    const wordCounts = getLetterMoveWords();
+    const overused = Object.entries(wordCounts)
+      .filter(([, count]) => count > 8)
+      .sort((a, b) => b[1] - a[1])
+      .map(([word, count]) => `${word}: ${count} times`);
+    if (overused.length > 0) console.log('Overused words:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  it('no source word (first word) is reused more than 4 times in Letter Move', () => {
+    const questions = getTopicQuestions(vrData, 'letterMove');
+    const sourceCounts = {};
+    questions.forEach(q => {
+      const match = q.question.match(/:\s*(\w+)\s+\w+/);
+      if (match) {
+        const word = match[1].toUpperCase();
+        sourceCounts[word] = (sourceCounts[word] || 0) + 1;
+      }
+    });
+    const overused = Object.entries(sourceCounts)
+      .filter(([, count]) => count > 4)
+      .sort((a, b) => b[1] - a[1])
+      .map(([word, count]) => `${word}: ${count} times`);
+    if (overused.length > 0) console.log('Overused source words:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  it('no two Letter Move questions produce the same pair of result words', () => {
+    const questions = getTopicQuestions(vrData, 'letterMove');
+    const resultPairs = {};
+    const duplicates = [];
+    questions.forEach(q => {
+      if (!q.explanation) return;
+      const words = q.explanation.match(/becomes\s+(\w+)/gi);
+      if (words && words.length >= 2) {
+        const pair = words.map(m => m.replace(/becomes\s+/i, '').toUpperCase()).sort().join('+');
+        if (resultPairs[pair]) {
+          duplicates.push(`Q${resultPairs[pair]} and Q${q.id} both produce ${pair}`);
+        } else {
+          resultPairs[pair] = q.id;
+        }
+      }
+    });
+    expect(duplicates).toEqual([]);
   });
 });
