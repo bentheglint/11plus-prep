@@ -18,31 +18,29 @@ function getToday() {
   return new Date().toISOString().split('T')[0];
 }
 
-function getYesterday() {
+function getDaysAgo(n) {
   const d = new Date();
-  d.setDate(d.getDate() - 1);
+  d.setDate(d.getDate() - n);
   return d.toISOString().split('T')[0];
 }
 
 export default function useStreaksAndPP(streakData, prepPointsData, saveStreakData, savePrepPoints) {
 
   // Update streak when a quiz is completed
+  // Forgiveness window: up to 2 gap days allowed (supports 5-day-a-week practice)
   const recordQuizCompletion = useCallback(() => {
     const today = getToday();
-    const yesterday = getYesterday();
 
     // If already recorded a quiz today, don't update streak
     if (streakData.lastQuizDate === today) return streakData;
 
     let newStreak;
-    if (streakData.lastQuizDate === yesterday) {
-      // Consecutive day — extend streak
+    const recentDays = [getDaysAgo(1), getDaysAgo(2)];
+    if (recentDays.includes(streakData.lastQuizDate)) {
+      // Practised within last 2 days — streak continues
       newStreak = streakData.currentStreak + 1;
-    } else if (streakData.lastQuizDate === today) {
-      // Same day — no change
-      newStreak = streakData.currentStreak;
     } else {
-      // Gap — streak resets to 1
+      // Gap of 3+ days — streak resets to 1
       newStreak = 1;
     }
 
@@ -61,10 +59,12 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
   }, [streakData, saveStreakData]);
 
   // Check if streak is still active (not broken)
+  // Active if practised today or within the 2-day forgiveness window
   const isStreakActive = useCallback(() => {
     const today = getToday();
-    const yesterday = getYesterday();
-    return streakData.lastQuizDate === today || streakData.lastQuizDate === yesterday;
+    return streakData.lastQuizDate === today
+      || streakData.lastQuizDate === getDaysAgo(1)
+      || streakData.lastQuizDate === getDaysAgo(2);
   }, [streakData]);
 
   // Award Prep Points for various activities

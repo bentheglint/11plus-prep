@@ -9541,7 +9541,7 @@ const vrData = {
           id: 29,
           difficulty: 1,
           questionType: "letter-codes",
-          question: "If DOG is coded as EPH, what word is coded as SVO?",
+          question: "If OWL is coded as PXM, what word is coded as SVO?",
           options: ["RUM","RUG","RUN","RUT","TUN"],
           correct: 2,
           explanation: "To decode, move each letter back 1: S→R, V→U, O→N. The word is RUN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -9550,7 +9550,7 @@ const vrData = {
           id: 30,
           difficulty: 1,
           questionType: "letter-codes",
-          question: "If SUN is coded as TVO, what word is coded as HFU?",
+          question: "If JAR is coded as KBS, what word is coded as HFU?",
           options: ["GEM","SET","JET","GET","NET"],
           correct: 3,
           explanation: "To decode, move each letter back 1: H→G, F→E, U→T. The word is GET. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -9559,7 +9559,7 @@ const vrData = {
           id: 31,
           difficulty: 1,
           questionType: "letter-codes",
-          question: "If PEN is coded as ODM, what word is coded as GHS?",
+          question: "If BOW is coded as ANV, what word is coded as GHS?",
           options: ["HIS","HIP","HID","HIM","HIT"],
           correct: 4,
           explanation: "To decode, move each letter forward 1: G→H, H→I, S→T. The word is HIT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -9742,10 +9742,10 @@ const vrData = {
           id: 46,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If LAMP is coded as NCOR, what is the code for FISH?",
-          options: ["HLUJ","HJUJ","HKVJ","HKUI","HKUJ"],
+          question: "If LAMP is coded as NCOR, what is the code for PAWN?",
+          options: ["SCYP","RDYP","RCZP","RCYQ","RCYP"],
           correct: 4,
-          explanation: "Move each letter forward 2: F→H, I→K, S→U, H→J. FISH becomes HKUJ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: P→R, A→C, W→Y, N→P. PAWN becomes RCYP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
         },
         {
           id: 47,
@@ -9787,10 +9787,10 @@ const vrData = {
           id: 51,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If COLD is coded as AMJB, what is the code for HELP?",
-          options: ["FCJO","FCKN","FDJN","ECJN","FCJN"],
+          question: "If COLD is coded as AMJB, what is the code for FORK?",
+          options: ["DNPI","DMQI","DMPH","EMPI","DMPI"],
           correct: 4,
-          explanation: "Move each letter back 2: H→F, E→C, L→J, P→N. HELP becomes FCJN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 2: F→D, O→M, R→P, K→I. FORK becomes DMPI. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
         },
         {
           id: 52,
@@ -9859,7 +9859,7 @@ const vrData = {
           id: 59,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as FCJN, what word is coded as JCDR?",
+          question: "If POND is coded as NMLB, what word is coded as JCDR?",
           options: ["LETS","LESS","LENT","LEND","LEFT"],
           correct: 4,
           explanation: "To decode, move each letter forward 2: J→L, C→E, D→F, R→T. The word is LEFT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
@@ -9964,7 +9964,7 @@ const vrData = {
           id: 70,
           difficulty: 1,
           questionType: "letter-codes",
-          question: "If the code for FROG is DPME, what rule has been used?",
+          question: "If the code for GUST is ESQR, what rule has been used?",
           options: [
             "Each letter moves back 3",
             "Each letter moves forward 2",
@@ -9973,7 +9973,7 @@ const vrData = {
             "Each letter moves forward 1"
           ],
           correct: 3,
-          explanation: "F→D (back 2), R→P (back 2), O→M (back 2), G→E (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "G→E (back 2), U→S (back 2), S→Q (back 2), T→R (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
         },
         {
           id: 71,
@@ -10249,7 +10249,7 @@ const vrData = {
           id: 97,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If the code for HELP is KHOS, what rule has been used?",
+          question: "If the code for DRUM is GUXP, what rule has been used?",
           options: [
             "Each letter moves forward 3",
             "Each letter moves back 3",
@@ -10258,7 +10258,7 @@ const vrData = {
             "Each letter moves forward 1"
           ],
           correct: 0,
-          explanation: "H→K (forward 3), E→H (forward 3), L→O (forward 3), P→S (forward 3). Each letter has been moved three places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "D→G (forward 3), R→U (forward 3), U→X (forward 3), M→P (forward 3). Each letter has been moved three places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
         },
         {
           id: 98,
@@ -10297,7 +10297,7 @@ const vrData = {
           id: 101,
           difficulty: 1,
           questionType: "letter-codes",
-          question: "If the code for FISH is GJTI (each letter moved forward by 1), what is the code for DUCK?",
+          question: "If the code for FAWN is GBXO (each letter moved forward by 1), what is the code for DUCK?",
           options: ["EVEL","EVDK","EDVL","EVDL","DVDL"],
           correct: 3,
           explanation: "Each letter shifts forward by 1: D→E, U→V, C→D, K→L. So DUCK becomes EVDL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10369,7 +10369,7 @@ const vrData = {
           id: 109,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If the code for LAMP is ODPS, what is the code for DARK?",
+          question: "If the code for RUBY is UXEB, what is the code for DARK?",
           options: ["GCUN","GDNU","GEUN","HDUN","GDUN"],
           correct: 4,
           explanation: "Each letter shifts forward by 3: D→G, A→D, R→U, K→N. So DARK becomes GDUN. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10414,7 +10414,7 @@ const vrData = {
           id: 114,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If the code for STOP is QRMN, what is the code for FAST?",
+          question: "If the code for MOLE is KMJC, what is the code for FAST?",
           options: ["EYQR","DXQR","DYRQ","DYQP","DYQR"],
           correct: 4,
           explanation: "Each letter shifts back by 2: F→D, A→Y, S→Q, T→R. So FAST becomes DYQR. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10486,16 +10486,16 @@ const vrData = {
           id: 122,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for FROG?",
-          options: ["HTPI","GTIP","GUPI","GSPI","GTPI"],
+          question: "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for DAWN?",
+          options: ["FCXP","EDXP","ECYP","ECXQ","ECXP"],
           correct: 4,
-          explanation: "The pattern alternates +1, +2: F→G(+1), R→T(+2), O→P(+1), G→I(+2). So FROG becomes GTPI. Tip: +1 is the most common GL code — practise it until it's automatic! ✓"
+          explanation: "The pattern alternates +1, +2: D→E(+1), A→C(+2), W→X(+1), N→P(+2). So DAWN becomes ECXP. Tip: +1 is the most common GL code — practise it until it's automatic! ✓"
         },
         {
           id: 123,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If HELP is coded as SVOK using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
+          question: "If KITE is coded as PRGV using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
           options: ["UIRV","URIV","URVI","USIV","VRIV"],
           correct: 1,
           explanation: "Using reverse alphabet: F→U, I→R, R→I, E→V. So FIRE becomes URIV. Tip: Always work out the rule from the example first, then apply it letter by letter to the new word. ✓"
@@ -10522,19 +10522,19 @@ const vrData = {
           id: 126,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If DRAW is coded as ETDA, what is the code for FISH?",
-          options: ["HKVL","GKVK","GJVL","GKWL","GKVL"],
+          question: "If DRAW is coded as ETDA, what is the code for LAKE?",
+          options: ["NCNI","MDNI","MCOI","MCNH","MCNI"],
           correct: 4,
-          explanation: "Apply shifts +1, +2, +3, +4: F+1=G, I+2=K, S+3=V, H+4=L = GKVL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
+          explanation: "Apply shifts +1, +2, +3, +4: L+1=M, A+2=C, K+3=N, E+4=I = MCNI. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
           id: 127,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If BARK is coded as AYOG, what is the code for HELP?",
-          options: ["HCIL","GBIL","GCIL","GCJL","GCIK"],
+          question: "If BARK is coded as AYOG, what is the code for VINE?",
+          options: ["UHKA","UGLA","UGKA","UGKB","VGKA"],
           correct: 2,
-          explanation: "Apply shifts -1, -2, -3, -4: H-1=G, E-2=C, L-3=I, P-4=L = GCIL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
+          explanation: "Apply shifts -1, -2, -3, -4: V-1=U, I-2=G, N-3=K, E-4=A = UGKA. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
           id: 128,
@@ -10621,7 +10621,7 @@ const vrData = {
           id: 137,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as KHOS, what is the code for YARD?",
+          question: "If SAND is coded as VDQG, what is the code for YARD?",
           options: ["CDUG","BDUG","BCUG","BDVG","BDUF"],
           correct: 1,
           explanation: "Apply +3: Y+3=B, A+3=D, R+3=U, D+3=G = BDUG. Wrap-around! Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
@@ -10630,7 +10630,7 @@ const vrData = {
           id: 138,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as JGNR, what is the code for WAXY?",
+          question: "If WAVE is coded as YCXG, what is the code for WAXY?",
           options: ["YBZA","ZCZA","YCZA","YCAA","YCZZ"],
           correct: 2,
           explanation: "Apply +2: W+2=Y, A+2=C, X+2=Z, Y+2=A = YCZA. Wrap-around! Each letter in the word shifts by +2 positions in the alphabet. Tip: For +2, skip one letter each time. B+2=D, skipping C. ✓"
@@ -10639,7 +10639,7 @@ const vrData = {
           id: 139,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as LIPT, what is the code for ZERO?",
+          question: "If FERN is coded as JIVR, what is the code for ZERO?",
           options: ["DIWS","EIVS","DHVS","DIVS","DIVR"],
           correct: 3,
           explanation: "Apply +4: Z+4=D, E+4=I, R+4=V, O+4=S = DIVS. Wrap-around! Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
@@ -10648,7 +10648,7 @@ const vrData = {
           id: 140,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as KHOS, what is the code for BUZZ?",
+          question: "If MOTH is coded as PRWK, what is the code for BUZZ?",
           options: ["EXCB","FXCC","EWCC","EXDC","EXCC"],
           correct: 4,
           explanation: "Apply +3: B+3=E, U+3=X, Z+3=C, Z+3=C = EXCC. Wrap-around! Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
@@ -10657,7 +10657,7 @@ const vrData = {
           id: 141,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If HELP is coded as MJQU, what is the code for COZY?",
+          question: "If COIN is coded as HTNS, what is the code for COZY?",
           options: ["HTED","ITED","HSED","HTFD","HTEC"],
           correct: 0,
           explanation: "Apply +5: C+5=H, O+5=T, Z+5=E, Y+5=D = HTED. Wrap-around! Each letter in the word shifts by +5 positions in the alphabet. Tip: The bigger the shift, the more important it is to check every letter carefully. ✓"
@@ -10666,7 +10666,7 @@ const vrData = {
           id: 142,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If HELP is coded as LIPT, what is the code for JINX?",
+          question: "If GLOW is coded as KPSA, what is the code for JINX?",
           options: ["OMRB","NMRB","NLRB","NMSB","NMRA"],
           correct: 1,
           explanation: "Apply +4: J+4=N, I+4=M, N+4=R, X+4=B = NMRB. Wrap-around! Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
@@ -10675,7 +10675,7 @@ const vrData = {
           id: 143,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as EBIM, what word is coded as QXUF?",
+          question: "If CAPE is coded as ZXMB, what word is coded as QXUF?",
           options: ["TZXI","UAXI","TAXI","TAYI","TAXH"],
           correct: 2,
           explanation: "Reverse: +3 on QXUF: Q+3=T, X+3=A, U+3=X, F+3=I = TAXI. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
@@ -10684,7 +10684,7 @@ const vrData = {
           id: 144,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as DAHL, what word is coded as JATP?",
+          question: "If HIVE is coded as DERA, what word is coded as JATP?",
           options: ["NEYT","OEXT","NDXT","NEXT","NEXS"],
           correct: 3,
           explanation: "Reverse: +4 on JATP: J+4=N, A+4=E, T+4=X, P+4=T = NEXT. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
@@ -10693,7 +10693,7 @@ const vrData = {
           id: 145,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If HELP is coded as CZGK, what word is coded as HVUZ?",
+          question: "If PEAK is coded as KZVF, what word is coded as HVUZ?",
           options: ["MAZD","NAZE","MZZE","MAAE","MAZE"],
           correct: 4,
           explanation: "Reverse: +5 on HVUZ: H+5=M, V+5=A, U+5=Z, Z+5=E = MAZE. Each letter in the word shifts by +5 positions in the alphabet. Tip: The bigger the shift, the more important it is to check every letter carefully. ✓"
@@ -10702,7 +10702,7 @@ const vrData = {
           id: 146,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If HELP is coded as KHOS, what is the code for LYNX?",
+          question: "If BOLT is coded as EROW, what is the code for LYNX?",
           options: ["OBQA","PBQA","OAQA","OBRA","OBQZ"],
           correct: 0,
           explanation: "Apply +3: L+3=O, Y+3=B, N+3=Q, X+3=A = OBQA. Wrap-around! Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
@@ -10711,7 +10711,7 @@ const vrData = {
           id: 147,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If HELP is coded as JGNR, what is the code for YAWN?",
+          question: "If SILK is coded as UKNM, what is the code for YAWN?",
           options: ["BCYP","ACYP","ABYP","ACZP","ACYO"],
           correct: 1,
           explanation: "Apply +2: Y+2=A, A+2=C, W+2=Y, N+2=P = ACYP. Wrap-around! Each letter in the word shifts by +2 positions in the alphabet. Tip: For +2, skip one letter each time. B+2=D, skipping C. ✓"
@@ -10720,7 +10720,7 @@ const vrData = {
           id: 148,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If HELP is coded as LIPT, what is the code for FIZZY?",
+          question: "If DOVE is coded as HSZI, what is the code for FIZZY?",
           options: ["JLDDC","KMDDC","JMDDC","JMEDC","JMDCC"],
           correct: 2,
           explanation: "Apply +4: F+4=J, I+4=M, Z+4=D, Z+4=D, Y+4=C = JMDDC. Wrap-around! Tip: Think of the alphabet as a circle — after Z comes A again, and before A comes Z. Count carefully at the boundaries! ✓"
@@ -10729,19 +10729,19 @@ const vrData = {
           id: 149,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If STOP is coded as HGLK, what is the code for HELP?",
-          options: ["SVOK","TVOK","SXOK","SVRK","SVOO"],
+          question: "If LIME is coded as ORNV, what is the code for SWAN?",
+          options: ["HDZM","IDZM","HEZM","HDAM","HDZN"],
           correct: 0,
-          explanation: "Mirror: H=S, E=V, L=O, P=K = SVOK. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
+          explanation: "Mirror: S=H, W=D, A=Z, N=M = HDZM. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 150,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If STOP is coded as HGLK, what is the code for COLD?",
-          options: ["XLRW","YLOW","XNOW","XLOW","XLOA"],
+          question: "If STOP is coded as HGLK, what is the code for PLUM?",
+          options: ["LOFN","KOGN","KOEN","KOFN","KOFM"],
           correct: 3,
-          explanation: "Mirror: C=X, O=L, L=O, D=W = XLOW. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
+          explanation: "Mirror: P=K, L=O, U=F, M=N = KOFN. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 151,
@@ -10774,7 +10774,7 @@ const vrData = {
           id: 154,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If STOP is coded as HGLK, what is the code for LIGHT?",
+          question: "If CUBE is coded as XFYV, what is the code for LIGHT?",
           options: ["OTTSG","PRTSG","ORTSG","ORWSG","ORTWG"],
           correct: 2,
           explanation: "Mirror: L=O, I=R, G=T, H=S, T=G = ORTSG. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
@@ -10783,7 +10783,7 @@ const vrData = {
           id: 155,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If STOP is coded as HGLK, what is the code for MONEY?",
+          question: "If TUSK is coded as GFHP, what is the code for MONEY?",
           options: ["NLPVB","OLMVB","NNMVB","NLMVB","NLMZB"],
           correct: 3,
           explanation: "Mirror: M=N, O=L, N=M, E=V, Y=B = NLMVB. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
@@ -10792,7 +10792,7 @@ const vrData = {
           id: 156,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If STOP is coded as HGLK, what word is coded as YIZEV?",
+          question: "If HORN is coded as SLIM, what word is coded as YIZEV?",
           options: ["BRAUE","CRAVE","BQAVE","BRBVE","BRAVE"],
           correct: 4,
           explanation: "Mirror reverses itself: Y=B, I=R, Z=A, E=V, V=E = BRAVE. In mirror codes, each letter maps to its opposite in the alphabet — A↔Z, B↔Y, C↔X and so on. The brilliant thing is: to decode, you apply exactly the same mirror! Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
@@ -10801,7 +10801,7 @@ const vrData = {
           id: 157,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If BLUE is coded as EOXH, what is the code for GOLD?",
+          question: "If FORK is coded as IRUN, what is the code for GOLD?",
           options: ["KROG","JROG","JQOG","JRPG","JROF"],
           correct: 1,
           explanation: "Apply +3: G+3=J, O+3=R, L+3=O, D+3=G = JROG. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
@@ -10810,7 +10810,7 @@ const vrData = {
           id: 158,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If BLUE is coded as YIRB, what is the code for FARM?",
+          question: "If KNOT is coded as HKLQ, what is the code for FARM?",
           options: ["CWOJ","DXOJ","CXOJ","CXPJ","CXOI"],
           correct: 2,
           explanation: "Apply -3: F-3=C, A-3=X, R-3=O, M-3=J = CXOJ. Each letter in the word shifts by -3 positions in the alphabet. Tip: For -3, count back three places. Watch out for wrap-around near A! ✓"
@@ -10819,7 +10819,7 @@ const vrData = {
           id: 159,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If BLUE is coded as FPYI, what is the code for DESK?",
+          question: "If TWIG is coded as XAMK, what is the code for DESK?",
           options: ["HIXO","IIWO","HHWO","HIWO","HIWN"],
           correct: 3,
           explanation: "Apply +4: D+4=H, E+4=I, S+4=W, K+4=O = HIWO. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
@@ -10828,7 +10828,7 @@ const vrData = {
           id: 160,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If BLUE is coded as XHQA, what is the code for JUMP?",
+          question: "If PUMA is coded as LQIW, what is the code for JUMP?",
           options: ["FQIK","GQIL","FPIL","FQJL","FQIL"],
           correct: 4,
           explanation: "Apply -4: J-4=F, U-4=Q, M-4=I, P-4=L = FQIL. Each letter in the word shifts by -4 positions in the alphabet. Tip: With -4, letters near the start of the alphabet will wrap around past A to the end (A-4=W). ✓"
@@ -10837,7 +10837,7 @@ const vrData = {
           id: 161,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If BLUE is coded as EOXH, what is the code for TRAIN?",
+          question: "If VASE is coded as YDVH, what is the code for TRAIN?",
           options: ["WUDLQ","XUDLQ","WTDLQ","WUELQ","WUDKQ"],
           correct: 0,
           explanation: "Apply +3: T+3=W, R+3=U, A+3=D, I+3=L, N+3=Q = WUDLQ. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
@@ -10873,7 +10873,7 @@ const vrData = {
           id: 165,
           difficulty: 3,
           questionType: "letter-codes",
-          question: "If BLUE is coded as EOXH, what word is coded as VWRUP?",
+          question: "If CLAW is coded as FODZ, what word is coded as VWRUP?",
           options: ["STOQM","TTORM","SSORM","STPRM","STORM"],
           correct: 4,
           explanation: "Reverse -3: V-3=S, W-3=T, R-3=O, U-3=R, P-3=M = STORM. Each letter in the word shifts by -3 positions in the alphabet. Tip: For -3, count back three places. Watch out for wrap-around near A! ✓"
@@ -10882,7 +10882,7 @@ const vrData = {
           id: 166,
           difficulty: 2,
           questionType: "letter-codes",
-          question: "If BLUE is coded as YIRB, what word is coded as PEFM?",
+          question: "If OPAL is coded as LMXI, what word is coded as PEFM?",
           options: ["SHIP","THIP","SGIP","SHJP","SHIO"],
           correct: 0,
           explanation: "Reverse +3: P+3=S, E+3=H, F+3=I, M+3=P = SHIP. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"

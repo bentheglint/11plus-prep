@@ -32,6 +32,24 @@ function loadJSON(key, fallback) {
   }
 }
 
+// Normalise legacy topic keys in quiz history arrays
+// The primenumbers key was renamed to primenumbersfactors but old
+// localStorage entries may still use the old key
+const TOPIC_KEY_ALIASES = { primenumbers: 'primenumbersfactors' };
+
+function normaliseTopicKeys(data) {
+  if (!Array.isArray(data)) return data;
+  let changed = false;
+  const result = data.map(item => {
+    if (item.topicKey && TOPIC_KEY_ALIASES[item.topicKey]) {
+      changed = true;
+      return { ...item, topicKey: TOPIC_KEY_ALIASES[item.topicKey] };
+    }
+    return item;
+  });
+  return changed ? result : data;
+}
+
 function saveJSON(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
@@ -81,7 +99,7 @@ export default function useUserData(userName) {
 
   // --- Quiz History ---
   const [quizHistory, setQuizHistory] = useState(() =>
-    userName ? loadJSON(userKey(userName, 'quiz-history'), []) : []
+    userName ? normaliseTopicKeys(loadJSON(userKey(userName, 'quiz-history'), [])) : []
   );
 
   // --- Topic Performance ---
@@ -106,7 +124,7 @@ export default function useUserData(userName) {
 
   // --- Question Results (NEW — per-question tracking) ---
   const [questionResults, setQuestionResults] = useState(() =>
-    userName ? loadJSON(userKey(userName, 'question-results'), []) : []
+    userName ? normaliseTopicKeys(loadJSON(userKey(userName, 'question-results'), [])) : []
   );
 
   // --- Practice Log (NEW — daily session summaries) ---

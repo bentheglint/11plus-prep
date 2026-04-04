@@ -33,10 +33,10 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
     .map(([day, data]) => ({ day, pct: Math.round((data.correct / data.total) * 100) }));
 
   // SVG sparkline
-  const sparkW = 280, sparkH = 60;
+  const sparkW = 280, sparkH = 60, sparkTop = 10, sparkLeft = 5;
   const sparkPoints = sparkDays.length > 1
     ? sparkDays.map((d, i) =>
-        `${(i / (sparkDays.length - 1)) * sparkW},${sparkH - (d.pct / 100) * sparkH}`
+        `${sparkLeft + (i / (sparkDays.length - 1)) * sparkW},${sparkTop + sparkH - (d.pct / 100) * sparkH}`
       ).join(' ')
     : null;
 
@@ -133,13 +133,13 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
               <BarChart3 className="w-4 h-4 text-[#6C5CE7]" />
               <h3 className="font-heading font-bold text-[#2D3436] text-sm">Accuracy Over Time (Last 30 Days)</h3>
             </div>
-            <svg width="100%" viewBox={`0 0 ${sparkW} ${sparkH + 20}`} className="overflow-visible">
+            <svg width="100%" viewBox={`0 0 ${sparkLeft + sparkW + 35} ${sparkTop + sparkH + 20}`}>
               {/* Grid lines */}
               {[0, 25, 50, 75, 100].map(pct => (
                 <g key={pct}>
-                  <line x1="0" y1={sparkH - (pct / 100) * sparkH} x2={sparkW} y2={sparkH - (pct / 100) * sparkH}
+                  <line x1={sparkLeft} y1={sparkTop + sparkH - (pct / 100) * sparkH} x2={sparkLeft + sparkW} y2={sparkTop + sparkH - (pct / 100) * sparkH}
                     stroke="#EDE8FF" strokeWidth="1" strokeDasharray="4,4" />
-                  <text x={sparkW + 5} y={sparkH - (pct / 100) * sparkH + 4} fontSize="8" fill="#636E72">{pct}%</text>
+                  <text x={sparkLeft + sparkW + 5} y={sparkTop + sparkH - (pct / 100) * sparkH + 4} fontSize="8" fill="#636E72">{pct}%</text>
                 </g>
               ))}
               {/* Line */}
@@ -147,16 +147,16 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
               {/* Dots */}
               {sparkDays.map((d, i) => (
                 <circle key={i}
-                  cx={(i / (sparkDays.length - 1)) * sparkW}
-                  cy={sparkH - (d.pct / 100) * sparkH}
+                  cx={sparkLeft + (i / (sparkDays.length - 1)) * sparkW}
+                  cy={sparkTop + sparkH - (d.pct / 100) * sparkH}
                   r="4" fill={colour} stroke="white" strokeWidth="2"
                 />
               ))}
               {/* Date labels */}
               {sparkDays.filter((_, i) => i === 0 || i === sparkDays.length - 1).map((d, i) => (
                 <text key={i}
-                  x={i === 0 ? 0 : sparkW}
-                  y={sparkH + 15}
+                  x={i === 0 ? sparkLeft : sparkLeft + sparkW}
+                  y={sparkTop + sparkH + 15}
                   fontSize="8" fill="#636E72"
                   textAnchor={i === 0 ? 'start' : 'end'}
                 >
