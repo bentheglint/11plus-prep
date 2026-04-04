@@ -519,3 +519,174 @@ describe('Cross-Question Analysis — Word Repetition', () => {
     expect(duplicates).toEqual([]);
   });
 });
+
+// ══════════════════════════════════════════════════════════════
+// Cross-Question Analysis: All VR Topics
+// Extends the Letter Move pattern to catch repetition bank-wide.
+// ══════════════════════════════════════════════════════════════
+
+describe('Cross-Question Analysis — VR-wide Word Repetition', () => {
+
+  // Helper: count word frequencies in pick-from-sets topics (synonyms, antonyms, verbal analogies)
+  function getPickFromSetsAnswerWords(topicKey) {
+    const questions = getTopicQuestions(vrData, topicKey);
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (!q.setA || !q.setB || !q.correctPair) return;
+      const answerA = q.setA[q.correctPair[0]]?.toLowerCase();
+      const answerB = q.setB[q.correctPair[1]]?.toLowerCase();
+      if (answerA) wordCounts[answerA] = (wordCounts[answerA] || 0) + 1;
+      if (answerB) wordCounts[answerB] = (wordCounts[answerB] || 0) + 1;
+    });
+    return wordCounts;
+  }
+
+  // Synonyms: no answer word tested more than 3 times
+  it('Synonyms — no answer word appears more than 3 times', () => {
+    const counts = getPickFromSetsAnswerWords('synonyms');
+    const overused = Object.entries(counts)
+      .filter(([, c]) => c > 3)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('Synonyms overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Antonyms: no answer word tested more than 3 times
+  it('Antonyms — no answer word appears more than 3 times', () => {
+    const counts = getPickFromSetsAnswerWords('antonyms');
+    const overused = Object.entries(counts)
+      .filter(([, c]) => c > 3)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('Antonyms overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Compound Words: no answer/bridge word used more than 3 times
+  it('Compound Words — no bridge word appears more than 3 times', () => {
+    const questions = getTopicQuestions(vrData, 'compoundWords');
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (q.options && q.correct !== undefined) {
+        const answer = q.options[q.correct]?.toLowerCase();
+        if (answer) wordCounts[answer] = (wordCounts[answer] || 0) + 1;
+      }
+    });
+    const overused = Object.entries(wordCounts)
+      .filter(([, c]) => c > 3)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('Compound Words overused bridge:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Odd Two Out: no word appears in options more than 4 times across all questions
+  it('Odd Two Out — no word appears in options more than 4 times', () => {
+    const questions = getTopicQuestions(vrData, 'oddTwoOut');
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (!q.options) return;
+      q.options.forEach(o => {
+        const w = o.toLowerCase();
+        wordCounts[w] = (wordCounts[w] || 0) + 1;
+      });
+    });
+    const overused = Object.entries(wordCounts)
+      .filter(([, c]) => c > 4)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('OddTwoOut overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Shared Letter: no single answer letter exceeds 28% of all questions
+  it('Shared Letter — no answer letter exceeds 28% frequency', () => {
+    const questions = getTopicQuestions(vrData, 'sharedLetter');
+    const letterCounts = {};
+    questions.forEach(q => {
+      if (q.options && q.correct !== undefined) {
+        const letter = q.options[q.correct]?.toUpperCase();
+        if (letter) letterCounts[letter] = (letterCounts[letter] || 0) + 1;
+      }
+    });
+    const total = questions.length;
+    const overused = Object.entries(letterCounts)
+      .filter(([, c]) => c / total > 0.28)
+      .map(([l, c]) => `${l}: ${c}/${total} (${Math.round(c/total*100)}%)`);
+    if (overused.length) console.log('SharedLetter overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Number Word Codes: no code word (in question text) appears more than 4 times
+  it('Number Word Codes — no code word appears more than 4 times', () => {
+    const questions = getTopicQuestions(vrData, 'numberWordCodes');
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (!q.question) return;
+      const words = q.question.match(/\b[A-Z]{3,}\b/g);
+      if (words) words.forEach(w => {
+        wordCounts[w] = (wordCounts[w] || 0) + 1;
+      });
+    });
+    const overused = Object.entries(wordCounts)
+      .filter(([, c]) => c > 4)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('NWC overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Missing Letters: no target word (the complete word) appears more than twice
+  it('Missing Letters — no target word appears more than twice', () => {
+    const questions = getTopicQuestions(vrData, 'missingLettersWords');
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (!q.explanation) return;
+      // Extract target word: "making WORD" or "making WORD." — must be 5+ letters (the full word)
+      const match = q.explanation.match(/making\s+([A-Z][A-Z]+)/);
+      if (match && match[1].length >= 5) {
+        wordCounts[match[1]] = (wordCounts[match[1]] || 0) + 1;
+      }
+    });
+    const overused = Object.entries(wordCounts)
+      .filter(([, c]) => c > 2)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('MissingLetters overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Letter Codes: no source word encoded more than 4 times
+  it('Letter Codes — no source word appears more than 4 times', () => {
+    const questions = getTopicQuestions(vrData, 'letterCodes');
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (!q.question) return;
+      const words = q.question.match(/\b[A-Z]{3,}\b/g);
+      if (words) words.forEach(w => {
+        wordCounts[w] = (wordCounts[w] || 0) + 1;
+      });
+    });
+    const overused = Object.entries(wordCounts)
+      .filter(([, c]) => c > 4)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('LetterCodes overused:', overused);
+    expect(overused).toEqual([]);
+  });
+
+  // Hidden Words: no hidden answer word appears more than twice
+  it('Hidden Words — no hidden answer word appears more than twice', () => {
+    const questions = getTopicQuestions(vrData, 'hiddenWords');
+    const wordCounts = {};
+    questions.forEach(q => {
+      if (!q.question) return;
+      // Extract the described hidden word from the question text
+      // Pattern: "A X-letter word meaning 'CLUE'" or "meaning 'CLUE' is hidden"
+      const match = q.question.match(/meaning\s+['"]([^'"]+)['"]/i);
+      if (match) {
+        const clue = match[1].toUpperCase();
+        wordCounts[clue] = (wordCounts[clue] || 0) + 1;
+      }
+    });
+    const overused = Object.entries(wordCounts)
+      .filter(([, c]) => c > 2)
+      .map(([w, c]) => `${w}: ${c}`);
+    if (overused.length) console.log('HiddenWords overused clues:', overused);
+    expect(overused).toEqual([]);
+  });
+});
