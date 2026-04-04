@@ -23134,17 +23134,17 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 1,
           difficulty: 1,
           question: "Which word is closest in meaning to 'immense'?",
-          options: ["Calm", "Angry", "Happy", "Tired", "Scared"],
-          correct: 1,
-          explanation: "'Furious' means extremely angry or enraged. It's a much stronger word than just 'cross' or 'annoyed'. A great word to use in your own writing! ✓"
+          options: ["Tiny", "Average", "Enormous", "Narrow", "Light"],
+          correct: 2,
+          explanation: "'Immense' means extremely large or vast. 'Enormous' is the closest synonym. Other words with a similar meaning include huge, vast, and colossal. Try using this word in a sentence today to make it stick. ✓"
         },
         {
           id: 2,
           difficulty: 1,
           question: "Which word is closest in meaning to 'weary'?",
-          options: ["Tiny", "Average", "Light", "Narrow", "Vast"],
-          correct: 4,
-          explanation: "'Enormous' and 'vast' both mean extremely large. Other synonyms include huge, immense, and colossal. Try using this word in a sentence today to make it stick. ✓"
+          options: ["Calm", "Angry", "Happy", "Exhausted", "Scared"],
+          correct: 3,
+          explanation: "'Weary' means very tired or exhausted. If you've been running around all day and can barely keep your eyes open, you're weary! Reading widely helps you learn words like this naturally. ✓"
         },
         {
           id: 3,

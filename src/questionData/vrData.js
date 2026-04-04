@@ -514,7 +514,7 @@ const vrData = {
           difficulty: 2,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
-          setA: ["genuine","fake","valuable"],
+          setA: ["genuine","fake","popular"],
           setB: ["valuable","authentic","rare"],
           correctPair: [0,1],
           explanation: "'Genuine' and 'authentic' both mean real and not fake. 'Fake' is the opposite — not real. 'Popular' means well-liked, 'valuable' means worth a lot, 'rare' means hard to find. ✓"
@@ -924,10 +924,10 @@ const vrData = {
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
-          setA: ["yielding","tenacious","indifferent"],
-          setB: ["apathetic","submissive","dogged"],
+          setA: ["yielding","tenacious","reluctant"],
+          setB: ["apathetic","fierce","dogged"],
           correctPair: [1,2],
-          explanation: "'Tenacious' and 'dogged' both mean holding on firmly and refusing to give up. 'Yielding' is the opposite — giving way easily. 'Indifferent' means not caring, 'apathetic' means lacking enthusiasm, 'submissive' means giving in. ✓"
+          explanation: "'Tenacious' and 'dogged' both mean holding on firmly and refusing to give up. 'Yielding' means giving way easily, 'reluctant' means unwilling. 'Apathetic' means lacking enthusiasm, 'fierce' means intense or aggressive. ✓"
         },
         {
           id: 93,
@@ -975,9 +975,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
           setA: ["absolve","condemn","challenge"],
-          setB: ["dispute","forgive","challenge"],
+          setB: ["dispute","forgive","prohibit"],
           correctPair: [0,1],
-          explanation: "'Absolve' and 'forgive' both mean to declare someone free from blame. 'Condemn' is the opposite — to declare guilty. 'Challenge' means to test, 'dispute' means to argue, 'forbid' means to ban. ✓"
+          explanation: "'Absolve' and 'forgive' both mean to declare someone free from blame. 'Condemn' is the opposite — to declare guilty. 'Challenge' means to test, 'dispute' means to argue, 'prohibit' means to ban. ✓"
         },
         {
           id: 98,
@@ -1054,10 +1054,10 @@ const vrData = {
           difficulty: 1,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
-          setA: ["below","beside","above"],
+          setA: ["below","between","around"],
           setB: ["over","near","under"],
           correctPair: [0,2],
-          explanation: "'Below' and 'under' both mean in a lower position. 'Beside' means next to, 'above' means higher (the opposite!). 'Over' means above, 'near' means close to. ✓"
+          explanation: "'Below' and 'under' both mean in a lower position. 'Between' means in the middle of two things, 'around' means surrounding or encircling. 'Over' means above, 'near' means close to. ✓"
         },
         {
           id: 106,
@@ -4253,9 +4253,9 @@ const vrData = {
           difficulty: 2,
           questionType: "select-two",
           question: "Find the two words that are the odd ones out.",
-          options: ["crocodile","whale","salmon","lizard","trout"],
+          options: ["tortoise","whale","salmon","lizard","trout"],
           correctPair: [0,3],
-          explanation: "Whale, salmon, and trout all live in water. Crocodile and lizard are both reptiles that spend most of their time on land, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
+          explanation: "Whale, salmon, and trout all live in water. Tortoise and lizard are both reptiles that live on land, so they are the odd ones out. Tip: Look for THREE that link, not two that are odd — it is much easier to find the group! ✓"
         },
         {
           id: 58,
@@ -4523,9 +4523,9 @@ const vrData = {
           difficulty: 3,
           questionType: "select-two",
           question: "Find the two words that are the odd ones out.",
-          options: ["famine","drought","plague","flood","epidemic"],
-          correctPair: [1,3],
-          explanation: "Famine, plague, and epidemic are all related to widespread suffering from hunger or disease. Drought and flood are both extreme water-related weather events, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
+          options: ["hurricane","drought","plague","flood","epidemic"],
+          correctPair: [2,4],
+          explanation: "Hurricane, drought, and flood are all extreme weather or natural disaster events. Plague and epidemic are both related to widespread disease, so they are the odd ones out. Tip: Go specific, not broad. If all five are animals, what kind of animal are exactly three of them? ✓"
         },
         {
           id: 88,
@@ -7556,10 +7556,10 @@ const vrData = {
         {
           id: 15,
           difficulty: 1,
-          question: "Move one letter from one word to the other to make two new words: SHAVE  EAR",
+          question: "Move one letter from one word to the other to make two new words: SHAVE  INK",
           options: ["S","A","V","H","E"],
           correct: 0,
-          explanation: "Move the 'S' from SHAVE to make HAVE, and insert it into EAR to make SEAR. 'S' from SHAVE to EAR: SHAVE becomes HAVE, and EAR becomes SEAR. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
+          explanation: "Move the 'S' from SHAVE to make HAVE, and insert it into INK to make SINK. 'S' from SHAVE to INK: SHAVE becomes HAVE, and INK becomes SINK. Both are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
         },
         {
           id: 16,
@@ -7644,10 +7644,10 @@ const vrData = {
         {
           id: 26,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AGE SCOLD",
-          options: ["A","E","S","G","C"],
+          question: "Move one letter from one word to the other to make two new words: IRE SCOLD",
+          options: ["I","R","S","E","C"],
           correct: 2,
-          explanation: "Move 'S' from SCOLD to make COLD, and insert it into AGE to make SAGE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'S' from SCOLD to make COLD, and insert it into IRE to make SIRE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 27,
@@ -7716,18 +7716,18 @@ const vrData = {
         {
           id: 35,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: ATE FLAME",
-          options: ["L","T","E","F","A"],
+          question: "Move one letter from one word to the other to make two new words: OLD FLAME",
+          options: ["O","L","D","F","A"],
           correct: 3,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into ATE to make FATE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'F' from FLAME to make LAME, and insert it into OLD to make FOLD. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 36,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: ACE FLAME",
-          options: ["A","F","E","L","C"],
+          question: "Move one letter from one word to the other to make two new words: EEL FLAME",
+          options: ["E","F","L","A","M"],
           correct: 1,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into ACE to make FACE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'F' from FLAME to make LAME, and insert it into EEL to make FEEL. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 37,
@@ -7756,26 +7756,26 @@ const vrData = {
         {
           id: 40,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AID SCOLD",
-          options: ["A","S","I","D","C"],
+          question: "Move one letter from one word to the other to make two new words: INK SCOLD",
+          options: ["I","S","N","K","C"],
           correct: 1,
-          explanation: "Move 'S' from SCOLD to make COLD, and insert it into AID to make SAID. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'S' from SCOLD to make COLD, and insert it into INK to make SINK. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 41,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: LAY SCOLD",
-          options: ["L","A","C","Y","S"],
-          correct: 2,
-          explanation: "Move 'C' from SCOLD to make SOLD, and insert it into LAY to make CLAY. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: STING  OAR",
+          options: ["S","T","I","N","G"],
+          correct: 0,
+          explanation: "Move the 'S' from STING to make TING (a light ringing sound), and insert it into OAR to make SOAR. Both TING and SOAR are real words. Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
         },
         {
           id: 42,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OAT SCOLD",
-          options: ["O","C","A","T","S"],
+          question: "Move one letter from one word to the other to make two new words: OWL SCOLD",
+          options: ["O","C","W","L","S"],
           correct: 1,
-          explanation: "Move 'C' from SCOLD to make SOLD, and insert it into OAT to make COAT. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'C' from SCOLD to make SOLD, and insert it into OWL to make COWL. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 43,
@@ -7812,10 +7812,10 @@ const vrData = {
         {
           id: 47,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: ALE STALE",
-          options: ["A","L","T","S","E"],
+          question: "Move one letter from one word to the other to make two new words: INK STALE",
+          options: ["I","N","K","S","T"],
           correct: 3,
-          explanation: "Move 'S' from STALE to make TALE, and insert it into ALE to make SALE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'S' from STALE to make TALE, and insert it into INK to make SINK. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 48,
@@ -7828,18 +7828,18 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR STALE",
-          options: ["T","S","A","R","E"],
+          question: "Move one letter from one word to the other to make two new words: RIM STALE",
+          options: ["T","S","R","I","M"],
           correct: 0,
-          explanation: "Move 'T' from STALE to make SALE, and insert it into EAR to make TEAR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'T' from STALE to make SALE, and insert it into RIM to make TRIM. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 50,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OWN STALE",
-          options: ["O","T","W","N","S"],
+          question: "Move one letter from one word to the other to make two new words: APE STALE",
+          options: ["A","T","P","E","S"],
           correct: 1,
-          explanation: "Move 'T' from STALE to make SALE, and insert it into OWN to make TOWN. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'T' from STALE to make SALE, and insert it into APE to make TAPE. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 51,
@@ -7860,10 +7860,10 @@ const vrData = {
         {
           id: 53,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AIR FLAME",
-          options: ["A","I","F","R","L"],
+          question: "Move one letter from one word to the other to make two new words: OIL FLAME",
+          options: ["O","I","F","L","M"],
           correct: 2,
-          explanation: "Move 'F' from FLAME to make LAME, and insert it into AIR to make FAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'F' from FLAME to make LAME, and insert it into OIL to make FOIL. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 54,
@@ -7908,10 +7908,10 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AGE SCOLD",
-          options: ["A","G","C","E","S"],
-          correct: 2,
-          explanation: "Move C from SCOLD: becomes SOLD, and AGE becomes CAGE. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: OAR SCOLD",
+          options: ["O","A","R","S","C"],
+          correct: 3,
+          explanation: "Move S from SCOLD: becomes COLD, and OAR becomes SOAR. Both COLD and SOAR are real words. Tip: Always try both directions. ✓"
         },
         {
           id: 60,
@@ -7932,10 +7932,10 @@ const vrData = {
         {
           id: 62,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EAR STORE",
-          options: ["T","A","E","R","S"],
-          correct: 0,
-          explanation: "Move T from STORE: becomes SORE, and EAR becomes TEAR. The letter moves right to left! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: HIP STORE",
+          options: ["T","H","I","P","S"],
+          correct: 4,
+          explanation: "Move 'S' from STORE to make TORE, and insert it into HIP to make SHIP. The letter moves right to left here! Tip: Always try both directions. ✓"
         },
         {
           id: 63,
@@ -8036,18 +8036,18 @@ const vrData = {
         {
           id: 75,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: CRATE OWN",
-          options: ["C","R","A","T","E"],
+          question: "Move one letter from one word to the other to make two new words: BLAST OAR",
+          options: ["B","L","A","S","T"],
           correct: 0,
-          explanation: "Move 'C' from CRATE: becomes RATE. Insert it into OWN: becomes CROWN. Both RATE and CROWN are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'B' from BLAST: becomes LAST. Insert it into OAR: becomes BOAR (a wild pig). Both LAST and BOAR are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 76,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: GRANT OWL",
-          options: ["G","R","A","N","T"],
+          question: "Move one letter from one word to the other to make two new words: GRAIN OAT",
+          options: ["G","R","A","I","N"],
           correct: 0,
-          explanation: "Move 'G' from GRANT: becomes RANT. Insert it into OWL: becomes GROWL. Both RANT and GROWL are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'G' from GRAIN: becomes RAIN. Insert it into OAT: becomes GOAT. Both RAIN and GOAT are real words. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 77,
@@ -8666,7 +8666,7 @@ const vrData = {
           id: 51,
           difficulty: 1,
           question: "Which letter completes this word? G _ L D",
-          options: ["A","I","E","O","U"],
+          options: ["A","Y","E","O","U"],
           correct: 3,
           explanation: "The letter is O, making GOLD. Gold is a precious yellow metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
         },
@@ -8698,7 +8698,7 @@ const vrData = {
           id: 55,
           difficulty: 1,
           question: "Which letter completes this word? S _ F T",
-          options: ["U","O","A","I","E"],
+          options: ["U","O","A","Y","E"],
           correct: 1,
           explanation: "The letter is O, making SOFT. Soft means easy to press or bend, not hard or firm. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
         },
@@ -8722,7 +8722,7 @@ const vrData = {
           id: 58,
           difficulty: 2,
           question: "Which letter completes this word? S T _ M P",
-          options: ["O","A","E","U","I"],
+          options: ["Y","A","E","X","I"],
           correct: 1,
           explanation: "The letter is A, making STAMP. A stamp is a small adhesive label placed on a letter to pay for postage. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
@@ -8738,7 +8738,7 @@ const vrData = {
           id: 60,
           difficulty: 2,
           question: "Which letter completes this word? S P L _ S H",
-          options: ["E","I","U","A","O"],
+          options: ["E","I","U","A","Y"],
           correct: 3,
           explanation: "The letter is A, making SPLASH. A splash is a sound made by something striking water. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
@@ -15879,11 +15879,11 @@ const vrData = {
             "James is left-handed",
             "Sarah is in Class 3",
             "James is not left-handed",
-            "Both C and D",
+            "Both C and E",
             "Sarah is not in Class 3"
           ],
           correct: 3,
-          explanation: "Since no children in Class 3 are left-handed: James (in Class 3) must be right-handed, and Sarah (left-handed) cannot be in Class 3. Both C and D must be true. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
+          explanation: "Since no children in Class 3 are left-handed: James (in Class 3) must be right-handed, and Sarah (left-handed) cannot be in Class 3. Both C and E must be true. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
         },
         {
           id: 14,
