@@ -191,3 +191,238 @@ describe('Letter code questions have options array', () => {
     expect(broken).toEqual([]);
   });
 });
+
+// ══════════════════════════════════════════════════════════════
+// ORACLE SWEEP 2026-04-03: Wrong Answer Fixes
+// All 17 wrong answers found during full 39-topic discovery sweep
+// ══════════════════════════════════════════════════════════════
+
+describe('Oracle Sweep — Wrong Answer Fixes (2026-04-03)', () => {
+  // Grammar: Q38, Q341, Q353 had correct:2 but answer is "are" at index 4
+  it('Grammar Q38 correct answer is "are" (index 4)', () => {
+    const q = findQuestion(englishData, 'grammar', 38);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('are');
+  });
+
+  it('Grammar Q341 correct answer is "were" (index 4)', () => {
+    const q = findQuestion(englishData, 'grammar', 341);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('were');
+  });
+
+  it('Grammar Q353 correct answer is "are" (index 4)', () => {
+    const q = findQuestion(englishData, 'grammar', 353);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('are');
+  });
+
+  // Grammar Q355: "None has" is correct formal English (index 0)
+  it('Grammar Q355 correct answer is "has" (index 0)', () => {
+    const q = findQuestion(englishData, 'grammar', 355);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('has');
+  });
+
+  // Grammar Q55: "however/therefore" are adverbs not conjunctions
+  it('Grammar Q55 correct answer is "Adverbs" (index 4)', () => {
+    const q = findQuestion(englishData, 'wordClassGrammar', 55);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('Adverbs');
+  });
+
+  // Logic & Language Q45: Priya wears Blue not Green
+  it('Logic & Language Q45 correct answer is "Blue" (index 3)', () => {
+    const q = findQuestion(vrData, 'logicAndLanguage', 45);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('Blue');
+  });
+
+  // Missing Letters: 4 off-by-index errors
+  it('Missing Letters Q59 (FR_GHT) answer is "I"', () => {
+    const q = findQuestion(vrData, 'missingLettersWords', 59);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('I');
+  });
+
+  it('Missing Letters Q62 (SCR_TCH) answer is "A"', () => {
+    const q = findQuestion(vrData, 'missingLettersWords', 62);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('A');
+  });
+
+  it('Missing Letters Q71 (WR_STLE) answer is "E"', () => {
+    const q = findQuestion(vrData, 'missingLettersWords', 71);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('E');
+  });
+
+  it('Missing Letters Q72 (SCH_DULE) answer is "E"', () => {
+    const q = findQuestion(vrData, 'missingLettersWords', 72);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('E');
+  });
+
+  // Number Word Codes Q30: code changed to 514 so answer is POT
+  it('Number Word Codes Q30 answer is "POT"', () => {
+    const q = findQuestion(vrData, 'numberWordCodes', 30);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('POT');
+    expect(q.question).toContain('514');
+  });
+
+  // Letter Move Q90: T not C (CROWN impossible from 3-letter OWN)
+  it('Letter Move Q90 answer is "T" (CHAR + TOWN)', () => {
+    const q = findQuestion(vrData, 'letterMove', 90);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('T');
+  });
+
+  // Letter Pair Series Q37 and Q78: Q at index 2, not P at index 3
+  it('Letter Pair Series Q37 answer is "Q"', () => {
+    const q = findQuestion(vrData, 'letterPairSeries', 37);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('Q');
+  });
+
+  it('Letter Pair Series Q78 answer is "Q"', () => {
+    const q = findQuestion(vrData, 'letterPairSeries', 78);
+    expect(q).toBeTruthy();
+    expect(q.options[q.correct]).toBe('Q');
+  });
+
+  // Letter Codes Q14: no duplicate options (was "MBOE","MBOE")
+  it('Letter Codes Q14 has no duplicate options', () => {
+    const q = findQuestion(vrData, 'letterCodes', 14);
+    expect(q).toBeTruthy();
+    const unique = new Set(q.options);
+    expect(unique.size).toBe(q.options.length);
+  });
+
+  // Sequences Q149: only one valid "No" answer
+  it('Sequences Q149 has at most one "No" option citing a triangular number', () => {
+    const q = findQuestion(mathsData, 'sequences', 149);
+    expect(q).toBeTruthy();
+    // 48 and 46 are NOT triangular numbers, so those "No" options are wrong distractors
+    const noOptions = q.options.filter(o => o.startsWith('No'));
+    const triangulars = [1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91];
+    const validNos = noOptions.filter(o => {
+      const match = o.match(/(\d+) is but/);
+      return match && triangulars.includes(parseInt(match[1]));
+    });
+    expect(validNos.length).toBeLessThanOrEqual(1);
+  });
+
+  // Place Value Q158: only one option < 53,842 using correct digits
+  it('Place Value Q158 has exactly one option less than 53842', () => {
+    const q = findQuestion(mathsData, 'placevalue', 158);
+    expect(q).toBeTruthy();
+    const targetDigits = [2, 3, 4, 5, 8].sort().join('');
+    const validSmaller = q.options.filter(o => {
+      const num = parseInt(o.replace(/,/g, ''));
+      const digits = String(num).split('').map(Number).sort().join('');
+      return num < 53842 && digits === targetDigits;
+    });
+    expect(validSmaller.length).toBe(1);
+  });
+});
+
+// ══════════════════════════════════════════════════════════════
+// ORACLE SWEEP 2026-04-03: Critical Content Fixes
+// ══════════════════════════════════════════════════════════════
+
+describe('Oracle Sweep — Critical Content Fixes (2026-04-03)', () => {
+  // Letter Sums BODMAS: staging lesson must NOT teach "NOT BODMAS"
+  it('Letter Sums staging file does not contain "NOT BODMAS"', () => {
+    const fs = require('fs');
+    const content = fs.readFileSync('src/microLessons/staging/letterSums-subconcepts.js', 'utf8');
+    expect(content).not.toContain('NOT BODMAS');
+  });
+
+  // Spelling Q389: only one error per question (Segment A was "totaly")
+  it('Spelling Q389 Segment A is correctly spelled', () => {
+    const q = findQuestion(englishData, 'spelling', 389);
+    expect(q).toBeTruthy();
+    expect(q.segments[0]).not.toContain('totaly');
+  });
+
+  // Algebra Q146: "All of A, B and C" must not be option A (self-referential)
+  it('Algebra Q146 does not have "All of A, B and C" as first option', () => {
+    const q = findQuestion(mathsData, 'algebra', 146);
+    expect(q).toBeTruthy();
+    expect(q.options[0]).not.toMatch(/All of A/i);
+  });
+
+  // Algebra Q22/Q111: no equivalent options (s+12-5 = s+7, e+9-4 = e+5)
+  it('Algebra Q22 has no option equivalent to the correct answer', () => {
+    const q = findQuestion(mathsData, 'algebra', 22);
+    expect(q).toBeTruthy();
+    expect(q.options).not.toContain('s + 12 - 5');
+  });
+
+  it('Algebra Q111 has no option equivalent to the correct answer', () => {
+    const q = findQuestion(mathsData, 'algebra', 111);
+    expect(q).toBeTruthy();
+    expect(q.options).not.toContain('e + 9 - 4');
+  });
+
+  // Negative Numbers: £ format must be -£ not £-
+  it('Negative numbers options use "-£" not "£-" format', () => {
+    const questions = getTopicQuestions(mathsData, 'negativenumbers');
+    const badFormat = questions.filter(q =>
+      q.options?.some(o => /£-\d/.test(o))
+    );
+    expect(badFormat).toEqual([]);
+  });
+
+  // Letter Move Q75/Q76: flagged as unsolvable (CROWN/GROWL from 3-letter words)
+  // These need full replacement — tracked as deferred content rewrites
+  it.todo('Letter Move Q75 needs replacement (CROWN impossible from OWN+1 letter)')
+  it.todo('Letter Move Q76 needs replacement (GROWL impossible from OWL+1 letter)')
+});
+
+// ══════════════════════════════════════════════════════════════
+// ORACLE SWEEP 2026-04-03: Structural Invariants
+// These lock in patterns that should never regress
+// ══════════════════════════════════════════════════════════════
+
+describe('Oracle Sweep — Structural Invariants', () => {
+  // No question should have duplicate options (Letter Codes Q14 was the case)
+  it('no VR question has duplicate options', () => {
+    const problems = [];
+    Object.entries(vrData.topics || {}).forEach(([topicKey, topic]) => {
+      (topic.questions || []).forEach(q => {
+        if (!q.options) return;
+        const unique = new Set(q.options);
+        if (unique.size !== q.options.length) {
+          problems.push(`${topicKey} Q${q.id}: duplicate in [${q.options.join(', ')}]`);
+        }
+      });
+    });
+    expect(problems).toEqual([]);
+  });
+
+  // Data Handling Q75: explanation must reference "Option A" not "Option D"
+  it('Data Handling Q75 explanation references correct option label', () => {
+    const q = findQuestion(mathsData, 'datahandling', 75);
+    expect(q).toBeTruthy();
+    expect(q.explanation).toContain('Option A');
+    expect(q.explanation).not.toMatch(/Option D.*126/);
+  });
+
+  // Decimals Q151: explanation labels must match option order
+  it('Decimals Q151 explanation labels D and E in correct order', () => {
+    const q = findQuestion(mathsData, 'decimals', 151);
+    expect(q).toBeTruthy();
+    // D should be 6.5 ÷ 2 (index 3), E should be 0.9 × 3 (index 4)
+    expect(q.explanation).toMatch(/D:.*6\.5/);
+  });
+
+  // Import case sensitivity: letterSums import must use camelCase
+  it('lessonData.js imports letterSums-subconcepts with correct case', () => {
+    const fs = require('fs');
+    const content = fs.readFileSync('src/microLessons/lessonData.js', 'utf8');
+    expect(content).toContain("./staging/letterSums-subconcepts");
+    expect(content).not.toContain("./staging/lettersums-subconcepts");
+  });
+});
