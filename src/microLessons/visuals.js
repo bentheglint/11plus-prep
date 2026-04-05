@@ -4947,6 +4947,216 @@ export function PathBorderDiagram({
   );
 }
 
+// ============================================================
+// ThermometerDiagram — Vertical temperature scale
+// ============================================================
+// Props:
+//   min, max         — temperature range (e.g. -10, 10)
+//   value            — current temperature reading
+//   target           — optional second temperature to show
+//   showArrow        — show arrow pointing to value (default true)
+//   rise             — optional rise/drop amount to show with dashed arrow
+
+export function ThermometerDiagram({
+  min = -10,
+  max = 10,
+  value = 0,
+  target = null,
+  showArrow = true,
+  rise = null
+}) {
+  const svgW = 400, svgH = 300;
+  const tubeX = 190, tubeW = 30, tubeTop = 38, tubeH = 220;
+  const bulbR = 22, bulbY = tubeTop + tubeH + bulbR - 10;
+  const scaleRange = max - min;
+  const toY = (v) => tubeTop + tubeH - ((v - min) / scaleRange) * tubeH;
+
+  // Major ticks at intervals of 5
+  const majorTicks = [];
+  for (let v = min; v <= max; v += 5) majorTicks.push(v);
+
+  // Minor ticks at every degree
+  const minorTicks = [];
+  for (let v = min; v <= max; v++) {
+    if (v % 5 !== 0) minorTicks.push(v);
+  }
+
+  const mercuryTop = toY(value);
+
+  return (
+    <div className="flex justify-center">
+      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+        {/* Tube */}
+        <rect x={tubeX} y={tubeTop} width={tubeW} height={tubeH}
+              rx="15" ry="15" fill="#bfdbfe" stroke="#3b82f6" strokeWidth="2.5" />
+        {/* Bulb */}
+        <circle cx={tubeX + tubeW / 2} cy={bulbY} r={bulbR}
+                fill="#bfdbfe" stroke="#3b82f6" strokeWidth="2.5" />
+        {/* Mercury in bulb */}
+        <circle cx={tubeX + tubeW / 2} cy={bulbY} r={bulbR - 4} fill="#f87171" />
+        {/* Mercury column */}
+        <rect x={tubeX + 7} y={mercuryTop} width={tubeW - 14} height={bulbY - bulbR - mercuryTop + 8}
+              fill="#f87171" rx="2" />
+
+        {/* Major ticks + labels */}
+        {majorTicks.map(v => (
+          <g key={`maj-${v}`}>
+            <line x1={tubeX - 25} y1={toY(v)} x2={tubeX} y2={toY(v)}
+                  stroke={v === 0 ? "#3b82f6" : "#3b82f6"} strokeWidth={v === 0 ? 2.5 : 2} />
+            <text x={tubeX - 32} y={toY(v) + 5} textAnchor="end"
+                  fontFamily="system-ui, -apple-system, sans-serif" fontSize="14"
+                  fontWeight="bold" fill="#6366f1">{v}</text>
+          </g>
+        ))}
+
+        {/* Minor ticks */}
+        {minorTicks.map(v => (
+          <line key={`min-${v}`} x1={tubeX - 12} y1={toY(v)} x2={tubeX} y2={toY(v)}
+                stroke="#93c5fd" strokeWidth="1.5" />
+        ))}
+
+        {/* Arrow pointing to value */}
+        {showArrow && (
+          <g>
+            <line x1={tubeX + tubeW + 10} y1={toY(value)} x2={tubeX + tubeW + 50} y2={toY(value)}
+                  stroke="#6366f1" strokeWidth="2" />
+            <polygon points={`${tubeX + tubeW + 8},${toY(value)} ${tubeX + tubeW + 16},${toY(value) - 4} ${tubeX + tubeW + 16},${toY(value) + 4}`}
+                     fill="#6366f1" />
+            <text x={tubeX + tubeW + 56} y={toY(value) + 5}
+                  fontFamily="system-ui, -apple-system, sans-serif" fontSize="18"
+                  fontWeight="bold" fill="#dc2626">{value}°C</text>
+          </g>
+        )}
+
+        {/* Rise/drop arrow */}
+        {rise && (
+          <g>
+            <line x1={320} y1={toY(value)} x2={320} y2={toY(value + rise)}
+                  stroke="#6366f1" strokeWidth="2" strokeDasharray="4,3" />
+            <polygon points={`${320},${toY(value + rise) - 3} ${316},${toY(value + rise) + 5} ${324},${toY(value + rise) + 5}`}
+                     fill="#6366f1" />
+            <text x={338} y={(toY(value) + toY(value + rise)) / 2 + 5}
+                  fontFamily="system-ui, -apple-system, sans-serif" fontSize="14"
+                  fontWeight="bold" fill="#6366f1">{rise > 0 ? '+' : ''}{rise}°C</text>
+          </g>
+        )}
+
+        {/* Target temperature pointer */}
+        {target !== null && (
+          <g>
+            <line x1={tubeX + tubeW + 10} y1={toY(target)} x2={tubeX + tubeW + 50} y2={toY(target)}
+                  stroke="#6366f1" strokeWidth="2" />
+            <polygon points={`${tubeX + tubeW + 8},${toY(target)} ${tubeX + tubeW + 16},${toY(target) - 4} ${tubeX + tubeW + 16},${toY(target) + 4}`}
+                     fill="#6366f1" />
+            <text x={tubeX + tubeW + 56} y={toY(target) + 5}
+                  fontFamily="system-ui, -apple-system, sans-serif" fontSize="18"
+                  fontWeight="bold" fill="#dc2626">{target}°C</text>
+          </g>
+        )}
+
+        {/* Difference bracket */}
+        {target !== null && value !== target && (
+          <g>
+            <line x1={280} y1={toY(value)} x2={295} y2={toY(value)} stroke="#f97316" strokeWidth="2" />
+            <line x1={290} y1={toY(value)} x2={290} y2={toY(target)} stroke="#f97316" strokeWidth="2" />
+            <line x1={280} y1={toY(target)} x2={295} y2={toY(target)} stroke="#f97316" strokeWidth="2" />
+            <text x={305} y={(toY(value) + toY(target)) / 2 + 5}
+                  fontFamily="system-ui, -apple-system, sans-serif" fontSize="16"
+                  fontWeight="bold" fill="#f97316">?°C</text>
+          </g>
+        )}
+
+        {/* °C label */}
+        <text x={tubeX + tubeW / 2} y={tubeTop - 10} textAnchor="middle"
+              fontFamily="system-ui, -apple-system, sans-serif" fontSize="14"
+              fontWeight="bold" fill="#6366f1">°C</text>
+      </svg>
+    </div>
+  );
+}
+
+
+// ============================================================
+// BuildingDiagram — Multi-floor building with above/below ground
+// ============================================================
+// Props:
+//   floorsAbove  — number of floors above ground (default 3)
+//   floorsBelow  — number of floors below ground (default 2)
+//   personFloor  — which floor to show the person on (null = none)
+//   highlightFloor — which floor to highlight (null = none)
+//   showQuestion — floor to show "?" on (null = none)
+
+export function BuildingDiagram({
+  floorsAbove = 3,
+  floorsBelow = 2,
+  personFloor = null,
+  highlightFloor = null,
+  showQuestion = null
+}) {
+  const totalFloors = floorsAbove + floorsBelow + 1; // +1 for ground
+  const floorH = 36;
+  const buildW = 160;
+  const svgW = 400;
+  const svgH = Math.max(280, (totalFloors + 1) * floorH + 60);
+  const startX = (svgW - buildW) / 2;
+  const groundY = 30 + floorsAbove * floorH;
+
+  const floors = [];
+  for (let f = floorsAbove; f >= -floorsBelow; f--) {
+    floors.push(f);
+  }
+
+  return (
+    <div className="flex justify-center">
+      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+        {floors.map((f, i) => {
+          const y = 30 + i * floorH;
+          const isGround = f === 0;
+          const isBelow = f < 0;
+          const isHighlight = f === highlightFloor;
+          const isQuestion = f === showQuestion;
+
+          return (
+            <g key={f}>
+              {/* Floor rectangle */}
+              <rect x={startX} y={y} width={buildW} height={floorH}
+                    fill={isHighlight ? "#dbeafe" : isBelow ? "#e0e7ff" : "#bfdbfe"}
+                    stroke="#3b82f6" strokeWidth={isGround ? 2.5 : 1.5}
+                    rx="3" />
+
+              {/* Floor label */}
+              <text x={startX + buildW + 15} y={y + floorH / 2 + 5}
+                    fontFamily="system-ui, -apple-system, sans-serif"
+                    fontSize="16" fontWeight="bold"
+                    fill={isQuestion ? "#dc2626" : isBelow ? "#6366f1" : "#6366f1"}>
+                {isQuestion ? "?" : f === 0 ? "G" : f > 0 ? f : f}
+              </text>
+
+              {/* Ground label */}
+              {isGround && (
+                <text x={startX - 15} y={y + floorH / 2 + 5} textAnchor="end"
+                      fontFamily="system-ui, -apple-system, sans-serif"
+                      fontSize="12" fontWeight="bold" fill="#6366f1">Ground</text>
+              )}
+
+              {/* Person indicator */}
+              {f === personFloor && (
+                <circle cx={startX + buildW / 2} cy={y + floorH / 2}
+                        r="10" fill="#f97316" stroke="#ea580c" strokeWidth="2" />
+              )}
+            </g>
+          );
+        })}
+
+        {/* Ground line */}
+        <line x1={startX - 30} y1={groundY + floorH} x2={startX + buildW + 30} y2={groundY + floorH}
+              stroke="#6366f1" strokeWidth="2.5" strokeDasharray="6,3" />
+      </svg>
+    </div>
+  );
+}
+
+
 const styleSheet = document.createElement('style');
 styleSheet.textContent = `
   @keyframes fadeIn {

@@ -7687,7 +7687,7 @@ fractions: {
     {
       id: 2,
       difficulty: 1,
-      image: "fractions/bar-model-q2.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", empty: true}, {value: 1, label: "1/6", empty: true}, {value: 1, label: "1/6", empty: true}], totalLabel: "3/6", comparison: [{value: 1, label: "1/2", color: "#87CEFA"}, {value: 1, label: "1/2", empty: true}], comparisonLabel: "1/2" } },
       question: "Which fraction is equivalent to 3/6?",
       options: ["1/3", "3/4", "2/3", "1/2", "2/4"],
       correct: 3,
@@ -7752,7 +7752,7 @@ fractions: {
     {
       id: 10,
       difficulty: 1,
-      image: "fractions/pizza-q10.svg",
+      visual: { component: "PieChart", props: { sections: [{label: "Left", angle: 225}, {label: "Eaten", angle: 135}], colors: ["#87CEFA", "#D3D3D3"], showLabels: true, showValues: true } },
       question: "A pizza is cut into 8 equal slices. Tom eats 3 slices. What fraction of the pizza is left?",
       options: ["3/8", "5/8", "1/2", "2/8", "3/5"],
       correct: 1,
@@ -7874,7 +7874,7 @@ fractions: {
     {
       id: 25,
       difficulty: 1,
-      image: "fractions/chocolate-q25.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 8, label: "1/3 eaten", color: "#DEB887"}, {value: 8, label: "remaining", empty: true}, {value: 8, label: "remaining", empty: true}], totalLabel: "24 pieces" } },
       question: "A chocolate bar has 24 pieces. Emily eats 1/3 of it. How many pieces does she eat?",
       options: ["6", "8", "10", "12", "16"],
       correct: 1,
@@ -8028,7 +8028,7 @@ fractions: {
     {
       id: 44,
       difficulty: 2,
-      image: "fractions/bar-model-q44.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "1/5", color: "#87CEFA"}, {value: 1, label: "1/5", color: "#87CEFA"}, {value: 1, label: "1/5", color: "#87CEFA"}, {value: 1, label: "1/5", empty: true}, {value: 1, label: "1/5", empty: true}], totalLabel: "3/5", comparison: [{value: 1, label: "1/8", color: "#5BB5E8"}, {value: 1, label: "1/8", color: "#5BB5E8"}, {value: 1, label: "1/8", color: "#5BB5E8"}, {value: 1, label: "1/8", color: "#5BB5E8"}, {value: 1, label: "1/8", color: "#5BB5E8"}, {value: 1, label: "1/8", empty: true}, {value: 1, label: "1/8", empty: true}, {value: 1, label: "1/8", empty: true}], comparisonLabel: "5/8" } },
       question: "Which is larger: 3/5 or 5/8?",
       options: ["5/8", "3/5", "They are equal", "Cannot tell", "Neither"],
       correct: 0,
@@ -8045,7 +8045,7 @@ fractions: {
     {
       id: 46,
       difficulty: 1,
-      image: "fractions/cake-q46.svg",
+      visual: { component: "PieChart", props: { sections: [{label: "Left", angle: 210}, {label: "Eaten", angle: 150}], colors: ["#87CEFA", "#D3D3D3"], showLabels: true, showValues: true } },
       question: "A cake is cut into 12 equal pieces. Lucy eats 5 pieces. What fraction is left?",
       options: ["5/12", "1/2", "7/12", "2/3", "5/7"],
       correct: 2,
@@ -14716,7 +14716,7 @@ negativenumbers: {
     {
       id: 1,
       difficulty: 1,
-      image: "negative-numbers/thermometer-q1.svg",
+      visual: { component: "ThermometerDiagram", props: { min: -10, max: 10, value: -3 } },
       question: "The temperature in Edinburgh is -3°C. In London it is 5°C warmer. What is the temperature in London?",
       options: ["-8°C", "-2°C", "3°C", "8°C", "2°C"],
       correct: 4,
@@ -14725,7 +14725,7 @@ negativenumbers: {
     {
       id: 2,
       difficulty: 1,
-      image: "negative-numbers/numberline-q2.svg",
+      visual: { component: "NumberLine", props: { min: -10, max: 5, points: [{value: -8, label: "-8"}, {value: -5, label: "-5"}, {value: -2, label: "-2"}, {value: 0, label: "0"}, {value: 3, label: "3"}] } },
       question: "Which number is the smallest? -5, 3, -2, 0, -8",
       options: ["-8", "3", "-2", "0", "-5"],
       correct: 0,
@@ -14742,7 +14742,7 @@ negativenumbers: {
     {
       id: 4,
       difficulty: 1,
-      image: "negative-numbers/thermometer-q4.svg",
+      visual: { component: "ThermometerDiagram", props: { min: -10, max: 10, value: -7, rise: 12 } },
       question: "The temperature at midnight was -7°C. By midday it had risen by 12°C. What was the temperature at midday?",
       options: ["-19°C", "-5°C", "5°C", "19°C", "12°C"],
       correct: 2,
@@ -14751,7 +14751,7 @@ negativenumbers: {
     {
       id: 5,
       difficulty: 1,
-      image: "negative-numbers/numberline-q5.svg",
+      visual: { component: "NumberLine", props: { min: -8, max: 6, points: [{value: -6, label: "-6"}, {value: -3, label: "-3"}, {value: -1, label: "-1"}, {value: 2, label: "2"}, {value: 4, label: "4"}] } },
       question: "Put these numbers in order from smallest to largest: -1, 4, -6, 2, -3",
       options: ["-1, -3, -6, 2, 4", "4, 2, -1, -3, -6", "-6, -3, -1, 4, 2", "-6, -3, -1, 2, 4", "-3, -1, -6, 2, 4"],
       correct: 3,
@@ -14760,7 +14760,7 @@ negativenumbers: {
     {
       id: 6,
       difficulty: 2,
-      image: "negative-numbers/submarine-q6.svg",
+      visual: { component: "NumberLine", props: { min: -50, max: 0, tickInterval: 5, points: [{value: -45, label: "-45m"}, {value: -25, label: "?"}], jumps: [{from: -45, to: -25, label: "+20m"}] } },
       question: "A submarine is at 45 metres below sea level. It rises 20 metres. What is its new depth?",
       options: ["45 metres below", "65 metres below", "25 metres above", "20 metres below", "25 metres below"],
       correct: 4,
@@ -14777,7 +14777,7 @@ negativenumbers: {
     {
       id: 8,
       difficulty: 2,
-      image: "negative-numbers/thermometer-q8.svg",
+      visual: { component: "ThermometerDiagram", props: { min: -10, max: 10, value: -4, target: 3 } },
       question: "What is the difference between -4°C and 3°C?",
       options: ["1°C", "7°C", "-1°C", "-7°C", "4°C"],
       correct: 1,
@@ -14786,7 +14786,7 @@ negativenumbers: {
     {
       id: 9,
       difficulty: 1,
-      image: "negative-numbers/building-q9.svg",
+      visual: { component: "BuildingDiagram", props: { floorsAbove: 3, floorsBelow: 2, showQuestion: -2 } },
       question: "A car park has 3 floors above ground and 2 floors below ground. Ground floor is numbered 0. Which floor number is 2 floors below ground?",
       options: ["-3", "-1", "-2", "2", "0"],
       correct: 2,
@@ -14811,7 +14811,7 @@ negativenumbers: {
     {
       id: 12,
       difficulty: 1,
-      image: "negative-numbers/building-q12.svg",
+      visual: { component: "BuildingDiagram", props: { floorsAbove: 3, floorsBelow: 3, personFloor: -3, showQuestion: 2 } },
       question: "Oliver is on floor -3 in a building. He goes up 5 floors. Which floor is he on now?",
       options: ["Floor 2", "Floor -2", "Floor -8", "Floor 8", "Floor 5"],
       correct: 0,
@@ -14828,7 +14828,7 @@ negativenumbers: {
     {
       id: 14,
       difficulty: 2,
-      image: "negative-numbers/numberline-q14.svg",
+      visual: { component: "NumberLine", props: { min: -8, max: 6, points: [{value: -6, label: "-6", color: "#6366f1"}, {value: 4, label: "4", color: "#6366f1"}, {value: -1, label: "?", color: "#f97316"}] } },
       question: "What number is halfway between -6 and 4?",
       options: ["-2", "0", "-1", "1", "2"],
       correct: 2,
