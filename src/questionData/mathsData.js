@@ -5693,7 +5693,7 @@ ratio: {
     {
       id: 1,
       difficulty: 1,
-      image: "ratio/bar-model-q1.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "30 children" } },
       question: "In a class of 30 children, the ratio of boys to girls is 3:2. How many boys are there?",
       options: ["12", "15", "24", "20", "18"],
       correct: 4,
@@ -5702,7 +5702,7 @@ ratio: {
     {
       id: 2,
       difficulty: 1,
-      image: "ratio/bar-model-q2.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "80 marbles" } },
       question: "Tom and Jerry share 80 marbles in the ratio 3:5. How many marbles does Jerry get?",
       options: ["50", "35", "40", "45", "30"],
       correct: 0,
@@ -5744,7 +5744,7 @@ ratio: {
     {
       id: 7,
       difficulty: 2,
-      image: "ratio/bar-model-q7.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "96 sweets" } },
       question: "Andrew and Matthew share 96 sweets in the ratio 5:3. How many more sweets does Andrew get than Matthew?",
       options: ["24", "18", "12", "30", "36"],
       correct: 0,
@@ -5931,7 +5931,7 @@ ratio: {
     {
       id: 30,
       difficulty: 2,
-      image: "ratio/bar-model-q30.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "144 stickers" } },
       question: "Sarah and Tom divide 144 stickers in the ratio 7:5. How many stickers does Sarah get?",
       options: ["60", "72", "96", "84", "108"],
       correct: 3,
@@ -6863,7 +6863,7 @@ ratio: {
     {
       id: 146,
       difficulty: 3,
-      image: "ratio/bar-model-q146.svg",
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#34d399"}, {value: 1, label: "?", color: "#34d399"}, {value: 1, label: "?", color: "#34d399"}, {value: 1, label: "?", color: "#34d399"}], totalLabel: "£180" } },
       question: "Three friends share £180 in the ratio 2:3:4. How much does the person with the largest share receive?",
       options: ["£60", "£70", "£100", "£90", "£80"],
       correct: 4,
