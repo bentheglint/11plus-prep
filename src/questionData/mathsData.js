@@ -17746,7 +17746,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 8, width: 5, dimUnit: "m" } },
       question: "Emily's rectangular garden is 8 metres long and 5 metres wide. What is the perimeter of her garden?",
-      image: "area-perimeter/rectangle-q1.svg",
       options: ["13 metres", "18 metres", "40 metres", "26 metres", "21 metres"],
       correct: 3,
       explanation: "To find the perimeter of a rectangle, add all four sides together. The formula is: Perimeter = 2 × (length + width). So: 2 × (8 + 5) = 2 × 13 = 26 metres. ✓"
@@ -17756,7 +17755,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 12, width: 6, dimUnit: "m" } },
       question: "A rectangular swimming pool is 12 metres long and 6 metres wide. What is its area?",
-      image: "area-perimeter/rectangle-q2.svg",
       options: ["18 square metres", "36 square metres", "48 square metres", "24 square metres", "72 square metres"],
       correct: 4,
       explanation: "To find the area of a rectangle, multiply length by width. Area = length × width = 12 × 6 = 72 square metres. ✓"
@@ -17766,7 +17764,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 7, width: 7, dimUnit: "m" } },
       question: "Jake is building a fence around his square vegetable patch. Each side is 7 metres long. How much fencing does he need?",
-      image: "area-perimeter/square-q3.svg",
       options: ["28 metres", "21 metres", "14 metres", "49 metres", "35 metres"],
       correct: 0,
       explanation: "A square has 4 equal sides. To find the perimeter, multiply the side length by 4. Perimeter = 4 × 7 = 28 metres. ✓"
@@ -17776,7 +17773,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 5, width: 4, dimUnit: "m" } },
       question: "Sophie's bedroom floor is 5 metres long and 4 metres wide. She wants to carpet the entire floor. What area of carpet does she need?",
-      image: "area-perimeter/rectangle-q4.svg",
       options: ["9 square metres", "20 square metres", "18 square metres", "10 square metres", "40 square metres"],
       correct: 1,
       explanation: "Area = length × width = 5 × 4 = 20 square metres of carpet needed. ✓"
@@ -17813,7 +17809,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 8, width: "?", dimUnit: "cm", label: "Perimeter = 24 cm" } },
       question: "A rectangle has a perimeter of 24 cm. Its length is 8 cm. What is its width?",
-      image: "area-perimeter/rectangle-q8.svg",
       options: ["4 cm", "3 cm", "6 cm", "8 cm", "16 cm"],
       correct: 0,
       explanation: "Perimeter = 2 × (length + width), so 24 = 2 × (8 + width). Divide both sides by 2: 12 = 8 + width. Therefore width = 12 - 8 = 4 cm. ✓"
@@ -17832,7 +17827,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: 6, dimUnit: "m", label: "Area = 48 m²" } },
       question: "Emma's rectangular garden has an area of 48 square metres and a width of 6 metres. What is the length?",
-      image: "area-perimeter/rectangle-q10.svg",
       options: ["6 metres", "12 metres", "8 metres", "42 metres", "54 metres"],
       correct: 2,
       explanation: "Area = length × width, so 48 = length × 6. To find length, divide: 48 ÷ 6 = 8 metres. ✓"
@@ -17842,7 +17836,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", hideValues: true, label: "Perimeter = 40 m" } },
       question: "A square playground has a perimeter of 40 metres. What is the length of each side?",
-      image: "area-perimeter/square-q11.svg",
       options: ["4 metres", "8 metres", "20 metres", "10 metres", "160 metres"],
       correct: 3,
       explanation: "A square has 4 equal sides. Perimeter = 4 × side length, so 40 = 4 × side. Divide: 40 ÷ 4 = 10 metres per side. ✓"
@@ -17870,7 +17863,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 8, width: 8, dimUnit: "m", areaLabel: "64 m²" } },
       question: "A square garden has an area of 64 square metres. What is its perimeter?",
-      image: "area-perimeter/square-q14.svg",
       options: ["8 metres", "32 metres", "16 metres", "64 metres", "256 metres"],
       correct: 1,
       explanation: "If area = 64 m², and area of a square = side × side, then side × side = 64. So side = 8 m (because 8 × 8 = 64). Perimeter = 4 × 8 = 32 metres. ✓"
@@ -17880,7 +17872,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "2 × width", width: 4, dimUnit: "m" } },
       question: "Max's rectangular bedroom is twice as long as it is wide. If the width is 4 metres, what is the area?",
-      image: "area-perimeter/rectangle-q15.svg",
       options: ["8 square metres", "16 square metres", "32 square metres", "24 square metres", "12 square metres"],
       correct: 2,
       explanation: "Width = 4 metres, and length is twice the width, so length = 2 × 4 = 8 metres. Area = 8 × 4 = 32 square metres. ✓"
@@ -17890,7 +17881,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "LShapeDiagram", props: { totalLength: 6, totalWidth: 7, cutLength: 2, cutWidth: 3, dimUnit: "m" } },
       question: "An L-shaped room is made of two rectangles. The first rectangle is 6m by 4m. The second rectangle is 4m by 3m. What is the total area?",
-      image: "area-perimeter/l-shape-q16.svg",
       options: ["24 square metres", "48 square metres", "13 square metres", "36 square metres", "30 square metres"],
       correct: 3,
       explanation: "Find the area of each rectangle separately, then add them. First rectangle: 6 × 4 = 24 m². Second rectangle: 4 × 3 = 12 m². Total area: 24 + 12 = 36 square metres. ✓"
@@ -17909,7 +17899,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 12, width: 4, dimUnit: "cm" } },
       question: "A rectangle has a length of 12 cm and a perimeter of 32 cm. What is its area?",
-      image: "area-perimeter/rectangle-q18.svg",
       options: ["48 square cm", "44 square cm", "20 square cm", "96 square cm", "384 square cm"],
       correct: 0,
       explanation: "Perimeter = 2 × (length + width), so 32 = 2 × (12 + width). Therefore 16 = 12 + width, so width = 4 cm. Area = 12 × 4 = 48 square cm. ✓"
@@ -17955,7 +17944,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 30, outerW: 20, innerL: 26, innerW: 16, pathWidth: 2, dimUnit: "m" } },
       question: "A rectangular field is 30 metres long and 20 metres wide. A path 2 metres wide runs all the way around the inside edge. What is the area of the path?",
-      image: "area-perimeter/path-q23.svg",
       options: ["184 square metres", "100 square metres", "416 square metres", "600 square metres", "520 square metres"],
       correct: 0,
       explanation: "Total field area: 30 × 20 = 600 m². The path is 2m wide all around, so the inner rectangle (grass area) is (30 - 4) by (20 - 4) = 26 by 16. Inner area: 26 × 16 = 416 m². Path area = 600 - 416 = 184 square metres. ✓"
@@ -17973,7 +17961,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 20, outerW: 15, innerL: 18, innerW: 13, pathWidth: 1, dimUnit: "m" } },
       question: "James has a rectangular lawn that is 20m by 15m. He wants to create a flower border 1 metre wide all around the inside. What is the area of the flower border?",
-      image: "area-perimeter/border-q25.svg",
       options: ["35 square metres", "70 square metres", "66 square metres", "300 square metres", "234 square metres"],
       correct: 2,
       explanation: "Total lawn area: 20 × 15 = 300 m². After removing 1m border all around, inner lawn is (20 - 2) by (15 - 2) = 18 by 13. Inner area: 18 × 13 = 234 m². Border area = 300 - 234 = 66 square metres. ✓"
@@ -17983,7 +17970,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "2x", width: "3x", dimUnit: "cm", label: "x = 4" } },
       question: "A rectangle has dimensions 2x cm by 3x cm. If x = 4, what is the area?",
-      image: "area-perimeter/rectangle-q26.svg",
       options: ["24 square cm", "40 square cm", "48 square cm", "96 square cm", "5x square cm"],
       correct: 3,
       explanation: "If x = 4, then dimensions are 2 × 4 = 8 cm and 3 × 4 = 12 cm. Area = 8 × 12 = 96 square cm. ✓"
@@ -18010,7 +17996,7 @@ areaperimeter: {
       id: 29,
       difficulty: 2,
       question: "A compound shape is made from a rectangle 10cm by 6cm with a square of side 3cm cut from one corner. What is the remaining area?",
-      image: "area-perimeter/cutout-q29.svg",
+      visual: { component: "LShapeDiagram", props: { totalLength: 10, totalWidth: 6, cutLength: 3, cutWidth: 3, dimUnit: "cm" } },
       options: ["60 square cm", "51 square cm", "69 square cm", "9 square cm", "54 square cm"],
       correct: 1,
       explanation: "Rectangle area: 10 × 6 = 60 cm². Square cut out: 3 × 3 = 9 cm². Remaining area: 60 - 9 = 51 square cm. ✓"
@@ -18029,7 +18015,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 10, width: 7, dimUnit: "m" } },
       question: "A rectangular classroom is 10 metres long and 7 metres wide. What is the perimeter?",
-      image: "area-perimeter/rectangle-q31.svg",
       options: ["17 metres", "140 metres", "70 metres", "34 metres", "24 metres"],
       correct: 3,
       explanation: "Perimeter = 2 × (length + width) = 2 × (10 + 7) = 2 × 17 = 34 metres. ✓"
@@ -18039,7 +18024,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 9, width: 9, dimUnit: "m" } },
       question: "A square park has sides of 9 metres. What is its area?",
-      image: "area-perimeter/square-q32.svg",
       options: ["18 square metres", "36 square metres", "45 square metres", "27 square metres", "81 square metres"],
       correct: 4,
       explanation: "Area of a square = side × side = 9 × 9 = 81 square metres. ✓"
@@ -18049,7 +18033,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 15, width: 8, dimUnit: "m" } },
       question: "Noah's rectangular driveway is 15 metres long and 8 metres wide. What is its area?",
-      image: "area-perimeter/rectangle-q33.svg",
       options: ["120 square metres", "46 square metres", "92 square metres", "23 square metres", "60 square metres"],
       correct: 0,
       explanation: "Area = length × width = 15 × 8 = 120 square metres. ✓"
@@ -18059,7 +18042,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Perimeter = 60 m" } },
       question: "A square field has a perimeter of 60 metres. What is the length of each side?",
-      image: "area-perimeter/square-q34.svg",
       options: ["10 metres", "15 metres", "14 metres", "12 metres", "20 metres"],
       correct: 1,
       explanation: "Perimeter = 4 × side, so 60 = 4 × side. Side = 60 ÷ 4 = 15 metres. ✓"
@@ -18069,7 +18051,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 8, width: 7, dimUnit: "m", areaLabel: "56 m²" } },
       question: "A rectangular rug has an area of 56 square metres and a width of 7 metres. What is its length?",
-      image: "area-perimeter/rectangle-q35.svg",
       options: ["6 metres", "7 metres", "8 metres", "14 metres", "49 metres"],
       correct: 2,
       explanation: "Area = length × width, so 56 = length × 7. Length = 56 ÷ 7 = 8 metres. ✓"
@@ -18079,7 +18060,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 10, width: 10, dimUnit: "m", areaLabel: "100 m²" } },
       question: "A square patio has an area of 100 square metres. What is its perimeter?",
-      image: "area-perimeter/square-q36.svg",
       options: ["10 metres", "20 metres", "25 metres", "40 metres", "30 metres"],
       correct: 3,
       explanation: "If area = 100, then side × side = 100, so side = 10m. Perimeter = 4 × 10 = 40 metres. ✓"
@@ -18098,7 +18078,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 15, width: "?", dimUnit: "cm", label: "Perimeter = 50 cm" } },
       question: "A rectangle has a perimeter of 50 cm and a length of 15 cm. What is its width?",
-      image: "area-perimeter/rectangle-q38.svg",
       options: ["10 cm", "8 cm", "5 cm", "12 cm", "20 cm"],
       correct: 0,
       explanation: "Perimeter = 2 × (length + width), so 50 = 2 × (15 + width). Therefore 25 = 15 + width, so width = 10 cm. ✓"
@@ -18108,7 +18087,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 20, width: 12, dimUnit: "m" } },
       question: "A rectangular tennis court is 20 metres long and 12 metres wide. What is its area?",
-      image: "area-perimeter/rectangle-q39.svg",
       options: ["32 square metres", "240 square metres", "160 square metres", "200 square metres", "64 square metres"],
       correct: 1,
       explanation: "Area = length × width = 20 × 12 = 240 square metres. ✓"
@@ -18127,7 +18105,6 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 14, width: 9, dimUnit: "m" } },
       question: "Oliver is fencing a rectangular garden that is 14 metres long and 9 metres wide. How much fencing does he need?",
-      image: "area-perimeter/rectangle-q41.svg",
       options: ["23 metres", "63 metres", "126 metres", "46 metres", "92 metres"],
       correct: 3,
       explanation: "Perimeter = 2 × (14 + 9) = 2 × 23 = 46 metres. ✓"
@@ -18137,7 +18114,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 8, width: 8, dimUnit: "m" } },
       question: "A square room has a perimeter of 32 metres. What is its area?",
-      image: "area-perimeter/square-q42.svg",
       options: ["8 square metres", "16 square metres", "32 square metres", "128 square metres", "64 square metres"],
       correct: 4,
       explanation: "Perimeter = 4 × side, so side = 32 ÷ 4 = 8m. Area = 8 × 8 = 64 square metres. ✓"
@@ -18165,7 +18141,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 14, outerW: 14, innerL: 12, innerW: 12, pathWidth: 1, dimUnit: "m" } },
       question: "A square garden has sides of 12 metres. A path 1 metre wide runs around the outside. What is the perimeter of the outer edge of the path?",
-      image: "area-perimeter/square-path-q45.svg",
       options: ["48 metres", "52 metres", "56 metres", "60 metres", "64 metres"],
       correct: 2,
       explanation: "The path adds 1m on each side, so outer square has sides of 12 + 1 + 1 = 14m. Perimeter = 4 × 14 = 56 metres. ✓"
@@ -18175,7 +18150,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "2 × width", width: 6, dimUnit: "cm" } },
       question: "A rectangle is twice as long as it is wide. If the width is 6 cm, what is the perimeter?",
-      image: "area-perimeter/rectangle-q46.svg",
       options: ["18 cm", "24 cm", "48 cm", "36 cm", "72 cm"],
       correct: 3,
       explanation: "Width = 6 cm, length = 2 × 6 = 12 cm. Perimeter = 2 × (12 + 6) = 2 × 18 = 36 cm. ✓"
@@ -18194,7 +18168,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 21, width: 21, dimUnit: "cm" } },
       question: "A square has a perimeter of 84 cm. What is its area?",
-      image: "area-perimeter/square-q48.svg",
       options: ["441 square cm", "84 square cm", "168 square cm", "336 square cm", "21 square cm"],
       correct: 0,
       explanation: "Side = 84 ÷ 4 = 21 cm. Area = 21 × 21 = 441 square cm. ✓"
@@ -18222,7 +18195,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Area = 144 m²" } },
       question: "A square courtyard has an area of 144 square metres. What is the length of each side?",
-      image: "area-perimeter/square-q51.svg",
       options: ["10 metres", "11 metres", "13 metres", "12 metres", "14 metres"],
       correct: 3,
       explanation: "Area = side × side = 144, so side = 12 metres (because 12 × 12 = 144). ✓"
@@ -18232,7 +18204,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 14, width: 8, dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 44 cm and a width of 8 cm. What is its area?",
-      image: "area-perimeter/rectangle-q52.svg",
       options: ["176 square cm", "128 square cm", "144 square cm", "160 square cm", "112 square cm"],
       correct: 4,
       explanation: "Perimeter = 2 × (L + W), so 44 = 2 × (L + 8). Therefore 22 = L + 8, L = 14 cm. Area = 14 × 8 = 112 cm². ✓"
@@ -18251,7 +18222,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "3 × width", width: 5, dimUnit: "m" } },
       question: "A rectangle is three times as long as it is wide. If the width is 5 metres, what is the area?",
-      image: "area-perimeter/rectangle-q54.svg",
       options: ["15 square metres", "75 square metres", "40 square metres", "25 square metres", "225 square metres"],
       correct: 1,
       explanation: "Width = 5 m, length = 3 × 5 = 15 m. Area = 15 × 5 = 75 square metres. ✓"
@@ -18288,7 +18258,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 9, width: 9, dimUnit: "m" } },
       question: "A square carpet has a perimeter of 36 metres. What is its area?",
-      image: "area-perimeter/square-q58.svg",
       options: ["81 square metres", "18 square metres", "36 square metres", "64 square metres", "9 square metres"],
       correct: 0,
       explanation: "Side = 36 ÷ 4 = 9 metres. Area = 9 × 9 = 81 square metres. ✓"
@@ -18298,7 +18267,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 9, width: "?", dimUnit: "cm", label: "Area = 72 cm²" } },
       question: "A rectangle has an area of 72 square cm and a length of 9 cm. What is its width?",
-      image: "area-perimeter/rectangle-q59.svg",
       options: ["6 cm", "8 cm", "7 cm", "9 cm", "12 cm"],
       correct: 1,
       explanation: "Area = L × W, so 72 = 9 × W. Width = 72 ÷ 9 = 8 cm. ✓"
@@ -18317,7 +18285,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "LShapeDiagram", props: { totalLength: 8, totalWidth: 9, cutLength: 2, cutWidth: 4, dimUnit: "m" } },
       question: "An L-shaped room is made of two rectangles. The first is 8m by 5m. The second is 6m by 4m. What is the total area?",
-      image: "area-perimeter/l-shape-q61.svg",
       options: ["40 square metres", "24 square metres", "80 square metres", "64 square metres", "23 square metres"],
       correct: 3,
       explanation: "First rectangle: 8 × 5 = 40 m². Second rectangle: 6 × 4 = 24 m². Total: 40 + 24 = 64 m². ✓"
@@ -18327,7 +18294,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 13, width: 13, dimUnit: "cm", areaLabel: "169 cm²" } },
       question: "A square has an area of 169 square cm. What is its perimeter?",
-      image: "area-perimeter/square-q62.svg",
       options: ["13 cm", "26 cm", "39 cm", "84.5 cm", "52 cm"],
       correct: 4,
       explanation: "Side × side = 169, so side = 13 cm. Perimeter = 4 × 13 = 52 cm. ✓"
@@ -18346,7 +18312,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 11, width: 7, dimUnit: "cm" } },
       question: "A rectangle has a length of 11 cm and a perimeter of 36 cm. What is its area?",
-      image: "area-perimeter/rectangle-q64.svg",
       options: ["25 square cm", "77 square cm", "55 square cm", "99 square cm", "121 square cm"],
       correct: 1,
       explanation: "Perimeter = 2 × (11 + W), so 36 = 2 × (11 + W). Therefore 18 = 11 + W, W = 7 cm. Area = 11 × 7 = 77 cm². ✓"
@@ -18365,7 +18330,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "4x", width: "5x", dimUnit: "cm", label: "x = 3" } },
       question: "A rectangle has dimensions 4x cm by 5x cm. If x = 3, what is the area?",
-      image: "area-perimeter/rectangle-q66.svg",
       options: ["60 square cm", "120 square cm", "240 square cm", "180 square cm", "20x square cm"],
       correct: 3,
       explanation: "If x = 3, dimensions are 4 × 3 = 12 cm and 5 × 3 = 15 cm. Area = 12 × 15 = 180 cm². ✓"
@@ -18401,7 +18365,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 15, width: 15, dimUnit: "m", areaLabel: "225 m²" } },
       question: "A square garden has an area of 225 square metres. What is its perimeter?",
-      image: "area-perimeter/square-q70.svg",
       options: ["15 metres", "30 metres", "60 metres", "45 metres", "75 metres"],
       correct: 2,
       explanation: "Side × side = 225, so side = 15 m. Perimeter = 4 × 15 = 60 metres. ✓"
@@ -18411,7 +18374,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 23, width: 12, dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 70 cm and a width of 12 cm. What is its length?",
-      image: "area-perimeter/rectangle-q71.svg",
       options: ["46 cm", "29 cm", "35 cm", "23 cm", "58 cm"],
       correct: 3,
       explanation: "Perimeter = 2 × (L + 12), so 70 = 2 × (L + 12). Therefore 35 = L + 12, L = 23 cm. ✓"
@@ -18430,7 +18392,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "4 × width", width: 6, dimUnit: "m" } },
       question: "A rectangle is four times as long as it is wide. If the width is 6 metres, what is the perimeter?",
-      image: "area-perimeter/rectangle-q73.svg",
       options: ["60 metres", "48 metres", "30 metres", "120 metres", "144 metres"],
       correct: 0,
       explanation: "Width = 6 m, length = 4 × 6 = 24 m. Perimeter = 2 × (24 + 6) = 2 × 30 = 60 metres. ✓"
@@ -18448,7 +18409,7 @@ areaperimeter: {
       id: 75,
       difficulty: 2,
       question: "A compound shape is made from a rectangle 12cm by 8cm with a square of side 4cm cut from one corner. What is the remaining area?",
-      image: "area-perimeter/cutout-q75.svg",
+      visual: { component: "LShapeDiagram", props: { totalLength: 12, totalWidth: 8, cutLength: 4, cutWidth: 4, dimUnit: "cm" } },
       options: ["64 square cm", "96 square cm", "80 square cm", "112 square cm", "104 square cm"],
       correct: 2,
       explanation: "Rectangle: 12 × 8 = 96 cm². Square cut out: 4 × 4 = 16 cm². Remaining: 96 - 16 = 80 cm². ✓"
@@ -18476,7 +18437,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 10, width: 9, dimUnit: "m" } },
       question: "A rectangle has an area of 90 square metres and a width of 9 metres. What is its length?",
-      image: "area-perimeter/rectangle-q78.svg",
       options: ["10 metres", "9 metres", "11 metres", "12 metres", "81 metres"],
       correct: 0,
       explanation: "Area = L × W, so 90 = L × 9. Length = 90 ÷ 9 = 10 metres. ✓"
@@ -18495,7 +18455,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 13, width: 13, dimUnit: "m" } },
       question: "A square patio has a perimeter of 52 metres. What is its area?",
-      image: "area-perimeter/square-q80.svg",
       options: ["13 square metres", "26 square metres", "169 square metres", "104 square metres", "52 square metres"],
       correct: 2,
       explanation: "Side = 52 ÷ 4 = 13 m. Area = 13 × 13 = 169 square metres. ✓"
@@ -18514,7 +18473,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 18, width: 10, dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 56 cm and a length of 18 cm. What is its area?",
-      image: "area-perimeter/rectangle-q82.svg",
       options: ["220 square cm", "190 square cm", "200 square cm", "210 square cm", "180 square cm"],
       correct: 4,
       explanation: "Perimeter = 2 × (18 + W), so 56 = 2 × (18 + W). Therefore 28 = 18 + W, W = 10 cm. Area = 18 × 10 = 180 cm². ✓"
@@ -18542,7 +18500,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "3y", width: "7y", dimUnit: "m", label: "y = 2" } },
       question: "A rectangle has dimensions 3y metres by 7y metres. If y = 2, what is the area?",
-      image: "area-perimeter/rectangle-q85.svg",
       options: ["42 square metres", "126 square metres", "84 square metres", "168 square metres", "21y square metres"],
       correct: 2,
       explanation: "If y = 2, dimensions are 3 × 2 = 6 m and 7 × 2 = 14 m. Area = 6 × 14 = 84 m². ✓"
@@ -18552,7 +18509,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", label: "Area = 196 cm²" } },
       question: "A square has an area of 196 square cm. What is the length of each side?",
-      image: "area-perimeter/square-q86.svg",
       options: ["12 cm", "13 cm", "15 cm", "14 cm", "16 cm"],
       correct: 3,
       explanation: "Side × side = 196, so side = 14 cm (because 14 × 14 = 196). ✓"
@@ -18571,7 +18527,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 20, width: "?", dimUnit: "cm", label: "Perimeter = 64 cm" } },
       question: "A rectangle has a perimeter of 64 cm. Its length is 20 cm. What is its width?",
-      image: "area-perimeter/rectangle-q88.svg",
       options: ["12 cm", "10 cm", "8 cm", "14 cm", "16 cm"],
       correct: 0,
       explanation: "Perimeter = 2 × (20 + W), so 64 = 2 × (20 + W). Therefore 32 = 20 + W, W = 12 cm. ✓"
@@ -18581,7 +18536,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 12, width: "?", dimUnit: "m", label: "Area = 84 m²" } },
       question: "Sophie's rectangular garden has an area of 84 square metres and a length of 12 metres. What is its width?",
-      image: "area-perimeter/rectangle-q89.svg",
       options: ["6 metres", "7 metres", "8 metres", "9 metres", "10 metres"],
       correct: 1,
       explanation: "Area = L × W, so 84 = 12 × W. Width = 84 ÷ 12 = 7 metres. ✓"
@@ -18591,7 +18545,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 17, width: 17, dimUnit: "m" } },
       question: "A square fence encloses an area of 289 square metres. What is its perimeter?",
-      image: "area-perimeter/square-q90.svg",
       options: ["17 metres", "34 metres", "68 metres", "51 metres", "85 metres"],
       correct: 2,
       explanation: "Side × side = 289, so side = 17 m. Perimeter = 4 × 17 = 68 metres. ✓"
@@ -18601,7 +18554,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "(3z + 2)", width: "z", dimUnit: "m", label: "z = 4" } },
       question: "A rectangular swimming pool has a length of (3z + 2) metres and a width of z metres. If z = 4, what is the area?",
-      image: "area-perimeter/pool-q91.svg",
       options: ["28 square metres", "42 square metres", "70 square metres", "56 square metres", "84 square metres"],
       correct: 3,
       explanation: "If z = 4, length = (3 × 4) + 2 = 14 m and width = 4 m. Area = 14 × 4 = 56 m². ✓"
@@ -18629,7 +18581,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 40, outerW: 25, innerL: 34, innerW: 19, pathWidth: 3, dimUnit: "m" } },
       question: "A rectangular field is 40 metres long and 25 metres wide. A path 3 metres wide runs around the inside edge. What is the area of the path?",
-      image: "area-perimeter/path-q94.svg",
       options: ["282 square metres", "354 square metres", "318 square metres", "390 square metres", "1,000 square metres"],
       correct: 1,
       explanation: "Field area: 40 × 25 = 1,000 m². The path is 3m wide on each side, so the inner rectangle is (40 − 6) × (25 − 6) = 34 × 19 = 646 m². Path area = 1,000 − 646 = 354 square metres. ✓"
@@ -18639,7 +18590,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 25, width: 25, dimUnit: "m" } },
       question: "A square has a perimeter of 100 metres. What is its area?",
-      image: "area-perimeter/square-q95.svg",
       options: ["25 square metres", "50 square metres", "625 square metres", "400 square metres", "100 square metres"],
       correct: 2,
       explanation: "Side = 100 ÷ 4 = 25 m. Area = 25 × 25 = 625 square metres. ✓"
@@ -18667,7 +18617,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 25, outerW: 18, innerL: 21, innerW: 14, pathWidth: 2, dimUnit: "m" } },
       question: "Oliver has a rectangular lawn that is 25m by 18m. He wants to create a flower border 2 metres wide all around the inside. What is the area of the flower border?",
-      image: "area-perimeter/border-q98.svg",
       options: ["156 square metres", "144 square metres", "168 square metres", "180 square metres", "192 square metres"],
       correct: 0,
       explanation: "Total: 25 × 18 = 450 m². Inner lawn: (25-4) × (18-4) = 21 × 14 = 294 m². Border = 450 - 294 = 156 m². ✓"
@@ -18686,7 +18635,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 15, width: 7, dimUnit: "cm" } },
       question: "A rectangle has an area of 105 square cm and a length of 15 cm. What is its perimeter?",
-      image: "area-perimeter/rectangle-q100.svg",
       options: ["22 cm", "28 cm", "44 cm", "56 cm", "70 cm"],
       correct: 2,
       explanation: "Width = 105 ÷ 15 = 7 cm. Perimeter = 2 × (15 + 7) = 2 × 22 = 44 cm. ✓"
@@ -18705,7 +18653,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 17, width: 17, dimUnit: "cm" } },
       question: "A square has a perimeter of 68 cm. What is its area?",
-      image: "area-perimeter/square-q102.svg",
       options: ["17 square cm", "136 square cm", "1,156 square cm", "578 square cm", "289 square cm"],
       correct: 4,
       explanation: "Side = 68 ÷ 4 = 17 cm. Area = 17 × 17 = 289 square cm. ✓"
@@ -18715,7 +18662,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 22, width: 14, dimUnit: "m" } },
       question: "A rectangle has a perimeter of 72 metres and a width of 14 metres. What is its length?",
-      image: "area-perimeter/rectangle-q103.svg",
       options: ["22 metres", "20 metres", "18 metres", "24 metres", "26 metres"],
       correct: 0,
       explanation: "Perimeter = 2 × (L + 14), so 72 = 2 × (L + 14). Therefore 36 = L + 14, L = 22 metres. ✓"
@@ -18734,7 +18680,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "5 × width", width: 4, dimUnit: "m" } },
       question: "A rectangle is five times as long as it is wide. If the width is 4 metres, what is the area?",
-      image: "area-perimeter/rectangle-q105.svg",
       options: ["20 square metres", "40 square metres", "80 square metres", "60 square metres", "100 square metres"],
       correct: 2,
       explanation: "Width = 4 m, length = 5 × 4 = 20 m. Area = 20 × 4 = 80 square metres. ✓"
@@ -18744,7 +18689,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 19, width: 19, dimUnit: "m" } },
       question: "A square garden has an area of 361 square metres. What is its perimeter?",
-      image: "area-perimeter/square-q106.svg",
       options: ["19 metres", "38 metres", "57 metres", "76 metres", "95 metres"],
       correct: 3,
       explanation: "Side × side = 361, so side = 19 m. Perimeter = 4 × 19 = 76 metres. ✓"
@@ -18763,7 +18707,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 28, width: 17, dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 90 cm and a length of 28 cm. What is its area?",
-      image: "area-perimeter/rectangle-q108.svg",
       options: ["476 square cm", "392 square cm", "560 square cm", "644 square cm", "728 square cm"],
       correct: 0,
       explanation: "Perimeter = 2 × (length + width), so 90 = 2 × (28 + width). Divide both sides by 2: 45 = 28 + width. Width = 45 - 28 = 17 cm. Area = 28 × 17 = 476 square cm. ✓"
@@ -18790,7 +18733,7 @@ areaperimeter: {
       id: 111,
       difficulty: 2,
       question: "An L-shaped room is made of two rectangles. The first is 10m by 7m. The second is 8m by 5m. What is the total area?",
-      image: "area-perimeter/l-shape-q111.svg",
+      visual: { component: "LShapeDiagram", props: { totalLength: 10, totalWidth: 12, cutLength: 2, cutWidth: 5, dimUnit: "m" } },
       options: ["70 square metres", "100 square metres", "120 square metres", "110 square metres", "30 square metres"],
       correct: 3,
       explanation: "First: 10 × 7 = 70 m². Second: 8 × 5 = 40 m². Total: 70 + 40 = 110 m². ✓"
@@ -18799,7 +18742,7 @@ areaperimeter: {
       id: 112,
       difficulty: 2,
       question: "A compound shape is made from a rectangle 15cm by 10cm with a square of side 5cm cut from one corner. What is the remaining area?",
-      image: "area-perimeter/cutout-q112.svg",
+      visual: { component: "LShapeDiagram", props: { totalLength: 15, totalWidth: 10, cutLength: 5, cutWidth: 5, dimUnit: "cm" } },
       options: ["100 square cm", "115 square cm", "150 square cm", "140 square cm", "125 square cm"],
       correct: 4,
       explanation: "Rectangle: 15 × 10 = 150 cm². Square: 5 × 5 = 25 cm². Remaining: 150 - 25 = 125 cm². ✓"
@@ -18809,7 +18752,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 19, width: 19, dimUnit: "m" } },
       question: "A square has a perimeter of 76 metres. What is its area?",
-      image: "area-perimeter/square-q113.svg",
       options: ["361 square metres", "152 square metres", "304 square metres", "19 square metres", "5,776 square metres"],
       correct: 0,
       explanation: "Side = 76 ÷ 4 = 19 m. Area = 19 × 19 = 361 square metres. ✓"
@@ -18819,7 +18761,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 14, width: 9, dimUnit: "m" } },
       question: "A rectangle has an area of 126 square metres and a width of 9 metres. What is its length?",
-      image: "area-perimeter/rectangle-q114.svg",
       options: ["12 metres", "14 metres", "13 metres", "15 metres", "16 metres"],
       correct: 1,
       explanation: "Length = 126 ÷ 9 = 14 metres. ✓"
@@ -18838,7 +18779,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "6w", width: "8w", dimUnit: "m", label: "w = 2" } },
       question: "A rectangle has dimensions 6w metres by 8w metres. If w = 2, what is the perimeter?",
-      image: "area-perimeter/rectangle-q116.svg",
       options: ["28 metres", "40 metres", "84 metres", "56 metres", "192 square metres"],
       correct: 3,
       explanation: "If w = 2, dimensions are 12m and 16m. Perimeter = 2 × (12 + 16) = 2 × 28 = 56 metres. ✓"
@@ -18857,7 +18797,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 30, width: 18, dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 96 cm and a length of 30 cm. What is its area?",
-      image: "area-perimeter/rectangle-q118.svg",
       options: ["540 square cm", "420 square cm", "480 square cm", "360 square cm", "600 square cm"],
       correct: 0,
       explanation: "Width = 96/2 - 30 = 48 - 30 = 18 cm. Area = 30 × 18 = 540 cm². ✓"
@@ -18867,7 +18806,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 30, outerW: 22, innerL: 27, innerW: 19, pathWidth: 1.5, dimUnit: "m" } },
       question: "Amelia has a rectangular lawn that is 30m by 22m. She wants to create a flower border 1.5 metres wide all around the inside. What is the area of the flower border?",
-      image: "area-perimeter/border-q119.svg",
       options: ["132 square metres", "147 square metres", "146 square metres", "154 square metres", "660 square metres"],
       correct: 1,
       explanation: "Total: 30 × 22 = 660 m². Inner: (30-3) × (22-3) = 27 × 19 = 513 m². Border = 660 - 513 = 147 m². ✓"
@@ -18886,7 +18824,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", label: "Area = 324 cm²" } },
       question: "A square has an area of 324 square cm. What is the length of each side?",
-      image: "area-perimeter/square-q121.svg",
       options: ["16 cm", "17 cm", "19 cm", "18 cm", "20 cm"],
       correct: 3,
       explanation: "Side × side = 324, so side = 18 cm (because 18 × 18 = 324). ✓"
@@ -18905,7 +18842,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 26, width: 16, dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 84 cm and a width of 16 cm. What is its length?",
-      image: "area-perimeter/rectangle-q123.svg",
       options: ["26 cm", "24 cm", "22 cm", "28 cm", "30 cm"],
       correct: 0,
       explanation: "Perimeter = 2 × (L + 16), so 84 = 2 × (L + 16). Therefore 42 = L + 16, L = 26 cm. ✓"
@@ -18915,7 +18851,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 22, width: 22, dimUnit: "m" } },
       question: "A square courtyard has a perimeter of 88 metres. What is its area?",
-      image: "area-perimeter/square-q124.svg",
       options: ["22 square metres", "484 square metres", "352 square metres", "176 square metres", "7,744 square metres"],
       correct: 1,
       explanation: "Side = 88 ÷ 4 = 22 m. Area = 22 × 22 = 484 square metres. ✓"
@@ -18934,7 +18869,6 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "6 × width", width: 5, dimUnit: "m" } },
       question: "A rectangle is six times as long as it is wide. If the width is 5 metres, what is the perimeter?",
-      image: "area-perimeter/rectangle-q126.svg",
       options: ["35 metres", "55 metres", "105 metres", "70 metres", "150 square metres"],
       correct: 3,
       explanation: "Width = 5 m, length = 6 × 5 = 30 m. Perimeter = 2 × (30 + 5) = 2 × 35 = 70 metres. ✓"
@@ -18953,7 +18887,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "PathBorderDiagram", props: { outerL: 50, outerW: 36, innerL: 46, innerW: 32, pathWidth: 2, dimUnit: "m" } },
       question: "A rectangular field is 50 metres long and 36 metres wide. A path 2 metres wide runs around the inside edge. What is the area of the path?",
-      image: "area-perimeter/path-q128.svg",
       options: ["328 square metres", "312 square metres", "296 square metres", "344 square metres", "1,800 square metres"],
       correct: 0,
       explanation: "Field area: 50 × 36 = 1,800 m². The path is 2m wide on each side, so the inner rectangle is (50 − 4) × (36 − 4) = 46 × 32 = 1,472 m². Path area = 1,800 − 1,472 = 328 square metres. ✓"
@@ -18972,7 +18905,6 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 16, width: 9, dimUnit: "m" } },
       question: "A rectangle has an area of 144 square metres and a length of 16 metres. What is its perimeter?",
-      image: "area-perimeter/rectangle-q130.svg",
       options: ["32 metres", "40 metres", "50 metres", "60 metres", "80 metres"],
       correct: 2,
       explanation: "Width = 144 ÷ 16 = 9 m. Perimeter = 2 × (16 + 9) = 2 × 25 = 50 metres. ✓"
@@ -19684,7 +19616,7 @@ volume: {
       id: 1,
       difficulty: 1,
       question: "A rectangular box is 10 cm long, 5 cm wide, and 4 cm high. What is its volume?",
-      image: "volume/cuboid-q1.svg",
+      visual: { component: "CuboidDiagram", props: { length: 10, width: 5, height: 4, dimUnit: "cm" } },
       options: ["200 cubic cm", "40 cubic cm", "19 cubic cm", "50 cubic cm", "100 cubic cm"],
       correct: 0,
       explanation: "Volume of a cuboid = length × width × height. So: 10 × 5 × 4 = 200 cubic cm (or 200 cm³). ✓"
@@ -19693,7 +19625,7 @@ volume: {
       id: 2,
       difficulty: 1,
       question: "Emma has a cube-shaped storage box. Each edge is 6 cm long. What is the volume?",
-      image: "volume/cube-q2.svg",
+      visual: { component: "CuboidDiagram", props: { length: 6, width: 6, height: 6, dimUnit: "cm" } },
       options: ["18 cubic cm", "216 cubic cm", "108 cubic cm", "36 cubic cm", "72 cubic cm"],
       correct: 1,
       explanation: "Volume of a cube = edge × edge × edge. So: 6 × 6 × 6 = 216 cubic cm. ✓"
@@ -19702,7 +19634,7 @@ volume: {
       id: 3,
       difficulty: 2,
       question: "Tom's fish tank is 50 cm long, 30 cm wide, and 40 cm high. What is its volume in litres? (Remember: 1 litre = 1000 cm³)",
-      image: "volume/tank-q3.svg",
+      visual: { component: "CuboidDiagram", props: { length: 50, width: 30, height: 40, dimUnit: "cm" } },
       options: ["12 litres", "120 litres", "60 litres", "600 litres", "6000 litres"],
       correct: 2,
       explanation: "First find volume in cm³: 50 × 30 × 40 = 60,000 cm³. Then convert to litres: 60,000 ÷ 1000 = 60 litres. ✓"
@@ -19711,7 +19643,7 @@ volume: {
       id: 4,
       difficulty: 2,
       question: "A cuboid has a volume of 120 cm³, a length of 10 cm, and a width of 4 cm. What is its height?",
-      image: "volume/cuboid-q4.svg",
+      visual: { component: "CuboidDiagram", props: { length: 10, width: 4, height: 3, dimUnit: "cm", missingDim: "height" } },
       options: ["2 cm", "5 cm", "4 cm", "3 cm", "6 cm"],
       correct: 3,
       explanation: "Volume = length × width × height, so 120 = 10 × 4 × height. This means 120 = 40 × height, so height = 120 ÷ 40 = 3 cm. ✓"
@@ -19728,7 +19660,7 @@ volume: {
       id: 6,
       difficulty: 2,
       question: "A cube has a volume of 125 cm³. What is the length of each edge?",
-      image: "volume/cube-q6.svg",
+      visual: { component: "CuboidDiagram", props: { length: 5, width: 5, height: 5, dimUnit: "cm", missingDim: "all" } },
       options: ["5 cm", "4 cm", "3 cm", "25 cm", "10 cm"],
       correct: 0,
       explanation: "Volume of cube = edge³, so edge³ = 125. We need to find what number multiplied by itself three times equals 125. 5 × 5 × 5 = 125, so each edge is 5 cm. ✓"
@@ -19737,7 +19669,7 @@ volume: {
       id: 7,
       difficulty: 2,
       question: "Jake's bedroom is 4 metres long, 3 metres wide, and 2.5 metres high. What is the volume of his bedroom in cubic metres?",
-      image: "volume/room-q7.svg",
+      visual: { component: "CuboidDiagram", props: { length: 4, width: 3, height: 2.5, dimUnit: "m" } },
       options: ["9.5 cubic metres", "30 cubic metres", "24 cubic metres", "12 cubic metres", "20 cubic metres"],
       correct: 1,
       explanation: "Volume = length × width × height = 4 × 3 × 2.5 = 30 cubic metres (or 30 m³). ✓"
@@ -19763,7 +19695,7 @@ volume: {
       id: 10,
       difficulty: 1,
       question: "A cuboid has dimensions 12 cm × 5 cm × 3 cm. What is its volume?",
-      image: "volume/cuboid-q10.svg",
+      visual: { component: "CuboidDiagram", props: { length: 12, width: 5, height: 3, dimUnit: "cm" } },
       options: ["20 cubic cm", "60 cubic cm", "150 cubic cm", "36 cubic cm", "180 cubic cm"],
       correct: 4,
       explanation: "Volume = 12 × 5 × 3 = 180 cubic cm. ✓"
@@ -19780,7 +19712,7 @@ volume: {
       id: 12,
       difficulty: 1,
       question: "A rectangular swimming pool is 25 metres long, 10 metres wide, and 2 metres deep. What is its volume?",
-      image: "volume/pool-q12.svg",
+      visual: { component: "CuboidDiagram", props: { length: 25, width: 10, height: 2, dimUnit: "m" } },
       options: ["37 cubic metres", "500 cubic metres", "250 cubic metres", "50 cubic metres", "5000 cubic metres"],
       correct: 1,
       explanation: "Volume = length × width × depth = 25 × 10 × 2 = 500 cubic metres (or 500 m³). ✓"
@@ -19840,7 +19772,7 @@ volume: {
       id: 19,
       difficulty: 1,
       question: "A rectangular box is 12 cm long, 6 cm wide, and 5 cm high. What is its volume?",
-      image: "volume/cuboid-q19.svg",
+      visual: { component: "CuboidDiagram", props: { length: 12, width: 6, height: 5, dimUnit: "cm" } },
       options: ["23 cubic cm", "180 cubic cm", "60 cubic cm", "360 cubic cm", "72 cubic cm"],
       correct: 3,
       explanation: "Volume = length × width × height = 12 × 6 × 5 = 360 cubic cm. ✓"
@@ -19849,7 +19781,7 @@ volume: {
       id: 20,
       difficulty: 1,
       question: "A cube has edges of 7 cm. What is its volume?",
-      image: "volume/cube-q20.svg",
+      visual: { component: "CuboidDiagram", props: { length: 7, width: 7, height: 7, dimUnit: "cm" } },
       options: ["21 cubic cm", "294 cubic cm", "49 cubic cm", "147 cubic cm", "343 cubic cm"],
       correct: 4,
       explanation: "Volume of cube = edge³ = 7 × 7 × 7 = 343 cubic cm. ✓"
@@ -19858,7 +19790,7 @@ volume: {
       id: 21,
       difficulty: 1,
       question: "Noah's storage container is 15 cm long, 8 cm wide, and 4 cm high. What is its volume?",
-      image: "volume/cuboid-q21.svg",
+      visual: { component: "CuboidDiagram", props: { length: 15, width: 8, height: 4, dimUnit: "cm" } },
       options: ["480 cubic cm", "240 cubic cm", "360 cubic cm", "27 cubic cm", "120 cubic cm"],
       correct: 0,
       explanation: "Volume = 15 × 8 × 4 = 480 cubic cm. ✓"
@@ -19867,7 +19799,7 @@ volume: {
       id: 22,
       difficulty: 2,
       question: "A cube has a volume of 512 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q22.svg",
+      visual: { component: "CuboidDiagram", props: { length: 8, width: 8, height: 8, dimUnit: "cm", missingDim: "all" } },
       options: ["6 cm", "8 cm", "7.5 cm", "7 cm", "9 cm"],
       correct: 1,
       explanation: "edge³ = 512. Find what number × itself × itself = 512. 8 × 8 × 8 = 512, so edge = 8 cm. ✓"
@@ -19876,7 +19808,7 @@ volume: {
       id: 23,
       difficulty: 2,
       question: "A cuboid has a volume of 180 cm³, a length of 12 cm, and a width of 5 cm. What is its height?",
-      image: "volume/cuboid-q23.svg",
+      visual: { component: "CuboidDiagram", props: { length: 12, width: 5, height: 3, dimUnit: "cm", missingDim: "height" } },
       options: ["2 cm", "2.5 cm", "3 cm", "3.5 cm", "4 cm"],
       correct: 2,
       explanation: "Volume = L × W × H, so 180 = 12 × 5 × H. Therefore 180 = 60 × H, H = 180 ÷ 60 = 3 cm. ✓"
@@ -19885,7 +19817,7 @@ volume: {
       id: 24,
       difficulty: 2,
       question: "Lily's bedroom is 5 metres long, 4 metres wide, and 2.5 metres high. What is its volume?",
-      image: "volume/room-q24.svg",
+      visual: { component: "CuboidDiagram", props: { length: 5, width: 4, height: 2.5, dimUnit: "m" } },
       options: ["11.5 cubic metres", "20 cubic metres", "40 cubic metres", "50 cubic metres", "45 cubic metres"],
       correct: 3,
       explanation: "Volume = 5 × 4 × 2.5 = 50 cubic metres. ✓"
@@ -19894,7 +19826,7 @@ volume: {
       id: 25,
       difficulty: 2,
       question: "A fish tank is 40 cm long, 25 cm wide, and 30 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
-      image: "volume/tank-q25.svg",
+      visual: { component: "CuboidDiagram", props: { length: 40, width: 25, height: 30, dimUnit: "cm" } },
       options: ["3 litres", "15 litres", "3000 litres", "300 litres", "30 litres"],
       correct: 4,
       explanation: "Volume = 40 × 25 × 30 = 30,000 cm³. Convert: 30,000 ÷ 1000 = 30 litres. ✓"
@@ -19903,7 +19835,7 @@ volume: {
       id: 26,
       difficulty: 1,
       question: "A cuboid measures 20 cm by 10 cm by 6 cm. What is its volume?",
-      image: "volume/cuboid-q26.svg",
+      visual: { component: "CuboidDiagram", props: { length: 20, width: 10, height: 6, dimUnit: "cm" } },
       options: ["1200 cubic cm", "200 cubic cm", "600 cubic cm", "36 cubic cm", "2000 cubic cm"],
       correct: 0,
       explanation: "Volume = 20 × 10 × 6 = 1,200 cubic cm. ✓"
@@ -19912,7 +19844,7 @@ volume: {
       id: 27,
       difficulty: 1,
       question: "A cube has edges of 9 cm. What is its volume?",
-      image: "volume/cube-q27.svg",
+      visual: { component: "CuboidDiagram", props: { length: 9, width: 9, height: 9, dimUnit: "cm" } },
       options: ["27 cubic cm", "729 cubic cm", "81 cubic cm", "243 cubic cm", "486 cubic cm"],
       correct: 1,
       explanation: "Volume = 9 × 9 × 9 = 729 cubic cm. ✓"
@@ -19921,7 +19853,7 @@ volume: {
       id: 28,
       difficulty: 1,
       question: "A box is 18 cm long, 12 cm wide, and 5 cm high. What is its volume?",
-      image: "volume/cuboid-q28.svg",
+      visual: { component: "CuboidDiagram", props: { length: 18, width: 12, height: 5, dimUnit: "cm" } },
       options: ["35 cubic cm", "540 cubic cm", "1080 cubic cm", "216 cubic cm", "360 cubic cm"],
       correct: 2,
       explanation: "Volume = 18 × 12 × 5 = 1,080 cubic cm. ✓"
@@ -19946,7 +19878,7 @@ volume: {
       id: 31,
       difficulty: 2,
       question: "A cube has a volume of 1000 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q31.svg",
+      visual: { component: "CuboidDiagram", props: { length: 10, width: 10, height: 10, dimUnit: "cm", missingDim: "all" } },
       options: ["10 cm", "9 cm", "8 cm", "11 cm", "12 cm"],
       correct: 0,
       explanation: "edge³ = 1000. 10 × 10 × 10 = 1000, so edge = 10 cm. ✓"
@@ -19955,7 +19887,7 @@ volume: {
       id: 32,
       difficulty: 1,
       question: "A swimming pool is 20 metres long, 8 metres wide, and 1.5 metres deep. What is its volume?",
-      image: "volume/pool-q32.svg",
+      visual: { component: "CuboidDiagram", props: { length: 20, width: 8, height: 1.5, dimUnit: "m" } },
       options: ["29.5 cubic metres", "240 cubic metres", "160 cubic metres", "320 cubic metres", "1200 cubic metres"],
       correct: 1,
       explanation: "Volume = 20 × 8 × 1.5 = 240 cubic metres. ✓"
@@ -19964,7 +19896,7 @@ volume: {
       id: 33,
       difficulty: 1,
       question: "A cuboid has dimensions 14 cm × 7 cm × 6 cm. What is its volume?",
-      image: "volume/cuboid-q33.svg",
+      visual: { component: "CuboidDiagram", props: { length: 14, width: 7, height: 6, dimUnit: "cm" } },
       options: ["27 cubic cm", "294 cubic cm", "588 cubic cm", "420 cubic cm", "98 cubic cm"],
       correct: 2,
       explanation: "Volume = 14 × 7 × 6 = 588 cubic cm. ✓"
@@ -20023,7 +19955,7 @@ volume: {
       id: 40,
       difficulty: 1,
       question: "A cube has edges of 11 cm. What is its volume?",
-      image: "volume/cube-q40.svg",
+      visual: { component: "CuboidDiagram", props: { length: 11, width: 11, height: 11, dimUnit: "cm" } },
       options: ["33 cubic cm", "121 cubic cm", "363 cubic cm", "1210 cubic cm", "1331 cubic cm"],
       correct: 4,
       explanation: "Volume = 11 × 11 × 11 = 1,331 cubic cm. ✓"
@@ -20040,7 +19972,7 @@ volume: {
       id: 42,
       difficulty: 1,
       question: "A cuboid has dimensions 16 cm × 9 cm × 7 cm. What is its volume?",
-      image: "volume/cuboid-q42.svg",
+      visual: { component: "CuboidDiagram", props: { length: 16, width: 9, height: 7, dimUnit: "cm" } },
       options: ["32 cubic cm", "1008 cubic cm", "504 cubic cm", "144 cubic cm", "252 cubic cm"],
       correct: 1,
       explanation: "Volume = 16 × 9 × 7 = 1,008 cubic cm. ✓"
@@ -20049,7 +19981,7 @@ volume: {
       id: 43,
       difficulty: 2,
       question: "A cube has a volume of 729 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q43.svg",
+      visual: { component: "CuboidDiagram", props: { length: 9, width: 9, height: 9, dimUnit: "cm", missingDim: "all" } },
       options: ["7 cm", "8 cm", "9 cm", "10 cm", "11 cm"],
       correct: 2,
       explanation: "edge³ = 729. 9 × 9 × 9 = 729, so edge = 9 cm. ✓"
@@ -20075,7 +20007,7 @@ volume: {
       id: 46,
       difficulty: 2,
       question: "Leo's storage unit is 3 metres long, 2.5 metres wide, and 2 metres high. What is its volume?",
-      image: "volume/unit-q46.svg",
+      visual: { component: "CuboidDiagram", props: { length: 3, width: 2.5, height: 2, dimUnit: "m" } },
       options: ["15 cubic metres", "12 cubic metres", "7.5 cubic metres", "20 cubic metres", "30 cubic metres"],
       correct: 0,
       explanation: "Volume = 3 × 2.5 × 2 = 15 cubic metres. ✓"
@@ -20101,7 +20033,7 @@ volume: {
       id: 49,
       difficulty: 2,
       question: "A cuboid has a volume of 480 cm³, a length of 16 cm, and a width of 5 cm. What is its height?",
-      image: "volume/cuboid-q49.svg",
+      visual: { component: "CuboidDiagram", props: { length: 16, width: 5, height: 6, dimUnit: "cm", missingDim: "height" } },
       options: ["4 cm", "5 cm", "7 cm", "6 cm", "8 cm"],
       correct: 3,
       explanation: "480 = 16 × 5 × H. So 480 = 80 × H, H = 480 ÷ 80 = 6 cm. ✓"
@@ -20110,7 +20042,7 @@ volume: {
       id: 50,
       difficulty: 3,
       question: "A cube has edges of 13 cm. What is its volume?",
-      image: "volume/cube-q50.svg",
+      visual: { component: "CuboidDiagram", props: { length: 13, width: 13, height: 13, dimUnit: "cm" } },
       options: ["39 cubic cm", "169 cubic cm", "507 cubic cm", "1521 cubic cm", "2197 cubic cm"],
       correct: 4,
       explanation: "Volume = 13 × 13 × 13 = 2,197 cubic cm. ✓"
@@ -20119,7 +20051,7 @@ volume: {
       id: 51,
       difficulty: 2,
       question: "A fish tank is 70 cm long, 35 cm wide, and 40 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
-      image: "volume/tank-q51.svg",
+      visual: { component: "CuboidDiagram", props: { length: 70, width: 35, height: 40, dimUnit: "cm" } },
       options: ["98 litres", "49 litres", "9.8 litres", "245 litres", "980 litres"],
       correct: 0,
       explanation: "Volume = 70 × 35 × 40 = 98,000 cm³. Convert: 98,000 ÷ 1000 = 98 litres. ✓"
@@ -20128,7 +20060,7 @@ volume: {
       id: 52,
       difficulty: 1,
       question: "A cuboid measures 24 cm by 15 cm by 9 cm. What is its volume?",
-      image: "volume/cuboid-q52.svg",
+      visual: { component: "CuboidDiagram", props: { length: 24, width: 15, height: 9, dimUnit: "cm" } },
       options: ["48 cubic cm", "3240 cubic cm", "2160 cubic cm", "1080 cubic cm", "360 cubic cm"],
       correct: 1,
       explanation: "Volume = 24 × 15 × 9 = 3,240 cubic cm. ✓"
@@ -20153,7 +20085,7 @@ volume: {
       id: 55,
       difficulty: 2,
       question: "A cube has a volume of 1728 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q55.svg",
+      visual: { component: "CuboidDiagram", props: { length: 12, width: 12, height: 12, dimUnit: "cm", missingDim: "all" } },
       options: ["10 cm", "11 cm", "14 cm", "13 cm", "12 cm"],
       correct: 4,
       explanation: "edge³ = 1728. 12 × 12 × 12 = 1,728, so edge = 12 cm. ✓"
@@ -20162,7 +20094,7 @@ volume: {
       id: 56,
       difficulty: 2,
       question: "A swimming pool is 30 metres long, 12 metres wide, and 1.8 metres deep. What is its volume?",
-      image: "volume/pool-q56.svg",
+      visual: { component: "CuboidDiagram", props: { length: 30, width: 12, height: 1.8, dimUnit: "m" } },
       options: ["648 cubic metres", "360 cubic metres", "432 cubic metres", "540 cubic metres", "43.8 cubic metres"],
       correct: 0,
       explanation: "Volume = 30 × 12 × 1.8 = 648 cubic metres. ✓"
@@ -20187,7 +20119,7 @@ volume: {
       id: 59,
       difficulty: 3,
       question: "A cube has edges of 14 cm. What is its volume?",
-      image: "volume/cube-q59.svg",
+      visual: { component: "CuboidDiagram", props: { length: 14, width: 14, height: 14, dimUnit: "cm" } },
       options: ["42 cubic cm", "196 cubic cm", "588 cubic cm", "2744 cubic cm", "1372 cubic cm"],
       correct: 3,
       explanation: "Volume = 14 × 14 × 14 = 2,744 cubic cm. ✓"
@@ -20204,7 +20136,7 @@ volume: {
       id: 61,
       difficulty: 1,
       question: "A cuboid has dimensions 21 cm × 13 cm × 10 cm. What is its volume?",
-      image: "volume/cuboid-q61.svg",
+      visual: { component: "CuboidDiagram", props: { length: 21, width: 13, height: 10, dimUnit: "cm" } },
       options: ["2730 cubic cm", "1365 cubic cm", "44 cubic cm", "273 cubic cm", "210 cubic cm"],
       correct: 0,
       explanation: "Volume = 21 × 13 × 10 = 2,730 cubic cm. ✓"
@@ -20230,7 +20162,7 @@ volume: {
       id: 64,
       difficulty: 3,
       question: "A cube has a volume of 2197 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q64.svg",
+      visual: { component: "CuboidDiagram", props: { length: 13, width: 13, height: 13, dimUnit: "cm", missingDim: "all" } },
       options: ["11 cm", "12 cm", "14 cm", "13 cm", "15 cm"],
       correct: 3,
       explanation: "edge³ = 2197. 13 × 13 × 13 = 2,197, so edge = 13 cm. ✓"
@@ -20239,7 +20171,7 @@ volume: {
       id: 65,
       difficulty: 2,
       question: "Jack's bedroom is 6 metres long, 4.5 metres wide, and 3 metres high. What is its volume?",
-      image: "volume/room-q65.svg",
+      visual: { component: "CuboidDiagram", props: { length: 6, width: 4.5, height: 3, dimUnit: "m" } },
       options: ["13.5 cubic metres", "27 cubic metres", "54 cubic metres", "162 cubic metres", "81 cubic metres"],
       correct: 4,
       explanation: "Volume = 6 × 4.5 × 3 = 81 cubic metres. ✓"
@@ -20256,7 +20188,7 @@ volume: {
       id: 67,
       difficulty: 2,
       question: "A cuboid has a volume of 840 cm³, a length of 21 cm, and a width of 8 cm. What is its height?",
-      image: "volume/cuboid-q67.svg",
+      visual: { component: "CuboidDiagram", props: { length: 21, width: 8, height: 5, dimUnit: "cm", missingDim: "height" } },
       options: ["3 cm", "5 cm", "4 cm", "6 cm", "7 cm"],
       correct: 1,
       explanation: "840 = 21 × 8 × H. So 840 = 168 × H, H = 840 ÷ 168 = 5 cm. ✓"
@@ -20273,7 +20205,7 @@ volume: {
       id: 69,
       difficulty: 1,
       question: "A cuboid measures 28 cm by 19 cm by 12 cm. What is its volume?",
-      image: "volume/cuboid-q69.svg",
+      visual: { component: "CuboidDiagram", props: { length: 28, width: 19, height: 12, dimUnit: "cm" } },
       options: ["59 cubic cm", "3192 cubic cm", "336 cubic cm", "6384 cubic cm", "532 cubic cm"],
       correct: 3,
       explanation: "Volume = 28 × 19 × 12 = 6,384 cubic cm. ✓"
@@ -20282,7 +20214,7 @@ volume: {
       id: 70,
       difficulty: 3,
       question: "A cube has edges of 15 cm. What is its volume?",
-      image: "volume/cube-q70.svg",
+      visual: { component: "CuboidDiagram", props: { length: 15, width: 15, height: 15, dimUnit: "cm" } },
       options: ["45 cubic cm", "225 cubic cm", "675 cubic cm", "2025 cubic cm", "3375 cubic cm"],
       correct: 4,
       explanation: "Volume = 15 × 15 × 15 = 3,375 cubic cm. ✓"
@@ -20299,7 +20231,7 @@ volume: {
       id: 72,
       difficulty: 2,
       question: "A swimming pool is 40 metres long, 15 metres wide, and 2.2 metres deep. What is its volume?",
-      image: "volume/pool-q72.svg",
+      visual: { component: "CuboidDiagram", props: { length: 40, width: 15, height: 2.2, dimUnit: "m" } },
       options: ["330 cubic metres", "1320 cubic metres", "1200 cubic metres", "600 cubic metres", "2640 cubic metres"],
       correct: 1,
       explanation: "Volume = 40 × 15 × 2.2 = 1,320 cubic metres. ✓"
@@ -20324,7 +20256,7 @@ volume: {
       id: 75,
       difficulty: 2,
       question: "A cube has a volume of 3375 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q75.svg",
+      visual: { component: "CuboidDiagram", props: { length: 15, width: 15, height: 15, dimUnit: "cm", missingDim: "all" } },
       options: ["13 cm", "14 cm", "17 cm", "16 cm", "15 cm"],
       correct: 4,
       explanation: "edge³ = 3375. 15 × 15 × 15 = 3,375, so edge = 15 cm. ✓"
@@ -20349,7 +20281,7 @@ volume: {
       id: 78,
       difficulty: 3,
       question: "A cube has edges of 16 cm. What is its volume?",
-      image: "volume/cube-q78.svg",
+      visual: { component: "CuboidDiagram", props: { length: 16, width: 16, height: 16, dimUnit: "cm" } },
       options: ["48 cubic cm", "256 cubic cm", "4096 cubic cm", "3072 cubic cm", "768 cubic cm"],
       correct: 2,
       explanation: "Volume = 16 × 16 × 16 = 4,096 cubic cm. ✓"
@@ -20358,7 +20290,7 @@ volume: {
       id: 79,
       difficulty: 1,
       question: "A cuboid has dimensions 30 cm × 24 cm × 18 cm. What is its volume?",
-      image: "volume/cuboid-q79.svg",
+      visual: { component: "CuboidDiagram", props: { length: 30, width: 24, height: 18, dimUnit: "cm" } },
       options: ["72 cubic cm", "720 cubic cm", "6480 cubic cm", "12,960 cubic cm", "1440 cubic cm"],
       correct: 3,
       explanation: "Volume = 30 × 24 × 18 = 12,960 cubic cm. ✓"
@@ -20367,7 +20299,7 @@ volume: {
       id: 80,
       difficulty: 3,
       question: "A fish tank is 90 cm long, 45 cm wide, and 50 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
-      image: "volume/tank-q80.svg",
+      visual: { component: "CuboidDiagram", props: { length: 90, width: 45, height: 50, dimUnit: "cm" } },
       options: ["20.25 litres", "101.25 litres", "810 litres", "405 litres", "202.5 litres"],
       correct: 4,
       explanation: "Volume = 90 × 45 × 50 = 202,500 cm³. Convert: 202,500 ÷ 1000 = 202.5 litres. ✓"
@@ -20376,7 +20308,7 @@ volume: {
       id: 81,
       difficulty: 2,
       question: "A cuboid has a volume of 1200 cm³, a length of 24 cm, and a width of 10 cm. What is its height?",
-      image: "volume/cuboid-q81.svg",
+      visual: { component: "CuboidDiagram", props: { length: 24, width: 10, height: 5, dimUnit: "cm", missingDim: "height" } },
       options: ["5 cm", "4 cm", "3 cm", "6 cm", "7 cm"],
       correct: 0,
       explanation: "1200 = 24 × 10 × H. So 1200 = 240 × H, H = 1200 ÷ 240 = 5 cm. ✓"
@@ -20402,7 +20334,7 @@ volume: {
       id: 84,
       difficulty: 2,
       question: "Amelia's storage unit is 4 metres long, 3.5 metres wide, and 2.5 metres high. What is its volume?",
-      image: "volume/unit-q84.svg",
+      visual: { component: "CuboidDiagram", props: { length: 4, width: 3.5, height: 2.5, dimUnit: "m" } },
       options: ["10 cubic metres", "17.5 cubic metres", "26.25 cubic metres", "35 cubic metres", "52.5 cubic metres"],
       correct: 3,
       explanation: "Volume = 4 × 3.5 × 2.5 = 35 cubic metres. ✓"
@@ -20411,7 +20343,7 @@ volume: {
       id: 85,
       difficulty: 2,
       question: "A cube has a volume of 4096 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q85.svg",
+      visual: { component: "CuboidDiagram", props: { length: 16, width: 16, height: 16, dimUnit: "cm", missingDim: "all" } },
       options: ["14 cm", "15 cm", "18 cm", "17 cm", "16 cm"],
       correct: 4,
       explanation: "edge³ = 4096. 16 × 16 × 16 = 4,096, so edge = 16 cm. ✓"
@@ -20445,7 +20377,7 @@ volume: {
       id: 89,
       difficulty: 2,
       question: "A swimming pool is 50 metres long, 18 metres wide, and 2.4 metres deep. What is its volume?",
-      image: "volume/pool-q89.svg",
+      visual: { component: "CuboidDiagram", props: { length: 50, width: 18, height: 2.4, dimUnit: "m" } },
       options: ["216 cubic metres", "900 cubic metres", "1800 cubic metres", "2160 cubic metres", "4320 cubic metres"],
       correct: 3,
       explanation: "Volume = 50 × 18 × 2.4 = 2,160 cubic metres. ✓"
@@ -20470,7 +20402,7 @@ volume: {
       id: 92,
       difficulty: 3,
       question: "A cube has edges of 17 cm. What is its volume?",
-      image: "volume/cube-q92.svg",
+      visual: { component: "CuboidDiagram", props: { length: 17, width: 17, height: 17, dimUnit: "cm" } },
       options: ["51 cubic cm", "4913 cubic cm", "867 cubic cm", "4097 cubic cm", "289 cubic cm"],
       correct: 1,
       explanation: "Volume = 17 × 17 × 17 = 4,913 cubic cm. ✓"
@@ -20495,7 +20427,7 @@ volume: {
       id: 95,
       difficulty: 2,
       question: "A cuboid has a volume of 1800 cm³, a length of 30 cm, and a width of 12 cm. What is its height?",
-      image: "volume/cuboid-q95.svg",
+      visual: { component: "CuboidDiagram", props: { length: 30, width: 12, height: 5, dimUnit: "cm", missingDim: "height" } },
       options: ["3 cm", "4 cm", "7 cm", "6 cm", "5 cm"],
       correct: 4,
       explanation: "1800 = 30 × 12 × H. So 1800 = 360 × H, H = 1800 ÷ 360 = 5 cm. ✓"
@@ -20504,7 +20436,7 @@ volume: {
       id: 96,
       difficulty: 3,
       question: "A cube has a volume of 5832 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q96.svg",
+      visual: { component: "CuboidDiagram", props: { length: 18, width: 18, height: 18, dimUnit: "cm", missingDim: "all" } },
       options: ["18 cm", "17 cm", "16 cm", "19 cm", "20 cm"],
       correct: 0,
       explanation: "edge³ = 5832. 18 × 18 × 18 = 5,832, so edge = 18 cm. ✓"
@@ -20513,7 +20445,7 @@ volume: {
       id: 97,
       difficulty: 2,
       question: "Lucas's bedroom is 7 metres long, 5.5 metres wide, and 3.5 metres high. What is its volume?",
-      image: "volume/room-q97.svg",
+      visual: { component: "CuboidDiagram", props: { length: 7, width: 5.5, height: 3.5, dimUnit: "m" } },
       options: ["16 cubic metres", "134.75 cubic metres", "96.25 cubic metres", "192.5 cubic metres", "385 cubic metres"],
       correct: 1,
       explanation: "Volume = 7 × 5.5 × 3.5 = 134.75 cubic metres. ✓"
@@ -20522,7 +20454,7 @@ volume: {
       id: 98,
       difficulty: 2,
       question: "A fish tank is 100 cm long, 50 cm wide, and 60 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
-      image: "volume/tank-q98.svg",
+      visual: { component: "CuboidDiagram", props: { length: 100, width: 50, height: 60, dimUnit: "cm" } },
       options: ["30 litres", "150 litres", "300 litres", "600 litres", "3000 litres"],
       correct: 2,
       explanation: "Volume = 100 × 50 × 60 = 300,000 cm³. Convert: 300,000 ÷ 1000 = 300 litres. ✓"
@@ -20531,7 +20463,7 @@ volume: {
       id: 99,
       difficulty: 1,
       question: "A cuboid measures 56 cm by 38 cm by 24 cm. What is its volume?",
-      image: "volume/cuboid-q99.svg",
+      visual: { component: "CuboidDiagram", props: { length: 56, width: 38, height: 24, dimUnit: "cm" } },
       options: ["118 cubic cm", "25,536 cubic cm", "2128 cubic cm", "51,072 cubic cm", "1344 cubic cm"],
       correct: 3,
       explanation: "Volume = 56 × 38 × 24 = 51,072 cubic cm. ✓"
@@ -20557,7 +20489,7 @@ volume: {
       id: 102,
       difficulty: 3,
       question: "A cube has edges of 19 cm. What is its volume?",
-      image: "volume/cube-q102.svg",
+      visual: { component: "CuboidDiagram", props: { length: 19, width: 19, height: 19, dimUnit: "cm" } },
       options: ["57 cubic cm", "6859 cubic cm", "1083 cubic cm", "5491 cubic cm", "361 cubic cm"],
       correct: 1,
       explanation: "Volume = 19 × 19 × 19 = 6,859 cubic cm. ✓"
@@ -20574,7 +20506,7 @@ volume: {
       id: 104,
       difficulty: 2,
       question: "A swimming pool is 35 metres long, 14 metres wide, and 2.6 metres deep. What is its volume?",
-      image: "volume/pool-q104.svg",
+      visual: { component: "CuboidDiagram", props: { length: 35, width: 14, height: 2.6, dimUnit: "m" } },
       options: ["127.4 cubic metres", "490 cubic metres", "980 cubic metres", "1274 cubic metres", "2548 cubic metres"],
       correct: 3,
       explanation: "Volume = 35 × 14 × 2.6 = 1,274 cubic metres. ✓"
@@ -20599,7 +20531,7 @@ volume: {
       id: 107,
       difficulty: 2,
       question: "A cube has a volume of 6859 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q107.svg",
+      visual: { component: "CuboidDiagram", props: { length: 19, width: 19, height: 19, dimUnit: "cm", missingDim: "all" } },
       options: ["17 cm", "19 cm", "18 cm", "20 cm", "21 cm"],
       correct: 1,
       explanation: "edge³ = 6859. 19 × 19 × 19 = 6,859, so edge = 19 cm. ✓"
@@ -20624,7 +20556,7 @@ volume: {
       id: 110,
       difficulty: 2,
       question: "A cuboid has a volume of 2520 cm³, a length of 36 cm, and a width of 14 cm. What is its height?",
-      image: "volume/cuboid-q110.svg",
+      visual: { component: "CuboidDiagram", props: { length: 36, width: 14, height: 5, dimUnit: "cm", missingDim: "height" } },
       options: ["3 cm", "4 cm", "7 cm", "6 cm", "5 cm"],
       correct: 4,
       explanation: "2520 = 36 × 14 × H. So 2520 = 504 × H, H = 2520 ÷ 504 = 5 cm. ✓"
@@ -20633,7 +20565,7 @@ volume: {
       id: 111,
       difficulty: 1,
       question: "A cube has edges of 20 cm. What is its volume?",
-      image: "volume/cube-q111.svg",
+      visual: { component: "CuboidDiagram", props: { length: 20, width: 20, height: 20, dimUnit: "cm" } },
       options: ["8000 cubic cm", "400 cubic cm", "1200 cubic cm", "4000 cubic cm", "60 cubic cm"],
       correct: 0,
       explanation: "Volume = 20 × 20 × 20 = 8,000 cubic cm. ✓"
@@ -20642,7 +20574,7 @@ volume: {
       id: 112,
       difficulty: 3,
       question: "A fish tank is 110 cm long, 55 cm wide, and 70 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
-      image: "volume/tank-q112.svg",
+      visual: { component: "CuboidDiagram", props: { length: 110, width: 55, height: 70, dimUnit: "cm" } },
       options: ["42.35 litres", "423.5 litres", "211.75 litres", "847 litres", "4235 litres"],
       correct: 1,
       explanation: "Volume = 110 × 55 × 70 = 423,500 cm³. Convert: 423,500 ÷ 1000 = 423.5 litres. ✓"
@@ -20651,7 +20583,7 @@ volume: {
       id: 113,
       difficulty: 2,
       question: "Emma's storage unit is 5 metres long, 4.5 metres wide, and 3.5 metres high. What is its volume?",
-      image: "volume/unit-q113.svg",
+      visual: { component: "CuboidDiagram", props: { length: 5, width: 4.5, height: 3.5, dimUnit: "m" } },
       options: ["13 cubic metres", "39.375 cubic metres", "78.75 cubic metres", "57.75 cubic metres", "157.5 cubic metres"],
       correct: 2,
       explanation: "Volume = 5 × 4.5 × 3.5 = 78.75 cubic metres. ✓"
@@ -20677,7 +20609,7 @@ volume: {
       id: 116,
       difficulty: 2,
       question: "A cube has a volume of 8000 cubic cm. What is the length of each edge?",
-      image: "volume/cube-q116.svg",
+      visual: { component: "CuboidDiagram", props: { length: 20, width: 20, height: 20, dimUnit: "cm", missingDim: "all" } },
       options: ["20 cm", "19 cm", "18 cm", "21 cm", "22 cm"],
       correct: 0,
       explanation: "edge³ = 8000. 20 × 20 × 20 = 8,000, so edge = 20 cm. ✓"
@@ -20686,7 +20618,7 @@ volume: {
       id: 117,
       difficulty: 1,
       question: "A swimming pool is 45 metres long, 20 metres wide, and 3 metres deep. What is its volume?",
-      image: "volume/pool-q117.svg",
+      visual: { component: "CuboidDiagram", props: { length: 45, width: 20, height: 3, dimUnit: "m" } },
       options: ["68 cubic metres", "2700 cubic metres", "1350 cubic metres", "900 cubic metres", "5400 cubic metres"],
       correct: 1,
       explanation: "Volume = 45 × 20 × 3 = 2,700 cubic metres. ✓"
@@ -20890,7 +20822,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 65, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 115° and x°. What is the value of x?",
-      image: "angles-shapes/straight-line-q1.svg",
       options: ["45°", "55°", "65°", "75°", "85°"],
       correct: 2,
       explanation: "Angles on a straight line add up to 180°. So 115° + x° = 180°. Therefore x = 180 - 115 = 65°. ✓"
@@ -20900,7 +20831,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 100, label: "100°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#00B894"}, {value: 130, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Emma draws three angles around a point. Two angles are 100° and 130°. What is the third angle?",
-      image: "angles-shapes/point-q2.svg",
       options: ["100°", "110°", "120°", "130°", "140°"],
       correct: 3,
       explanation: "Angles around a point add up to 360°. So 100° + 130° + third angle = 360°. The third angle = 360 - 100 - 130 = 130°. ✓"
@@ -20910,7 +20840,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 70, angle2: 55, angle3: 55, showAngle3: false } },
       question: "A triangle has angles of 70° and 55°. What is the third angle?",
-      image: "angles-shapes/triangle-q3.svg",
       options: ["45°", "50°", "65°", "60°", "55°"],
       correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 70° + 55° + third angle = 180°. The third angle = 180 - 70 - 55 = 55°. ✓"
@@ -20929,7 +20858,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 60, angle2: 60, angle3: 60, showAngle3: false } },
       question: "An equilateral triangle has all three sides equal. What is each angle in an equilateral triangle?",
-      image: "angles-shapes/equilateral-q5.svg",
       options: ["45°", "60°", "75°", "90°", "120°"],
       correct: 1,
       explanation: "In an equilateral triangle, all three angles are equal. Since angles in a triangle add up to 180°, each angle = 180 ÷ 3 = 60°. ✓"
@@ -20947,7 +20875,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 45, angle2: 90, angle3: 45 } },
       question: "Two angles in a triangle are 30° and 90°. What type of triangle is this?",
-      image: "angles-shapes/right-triangle-q7.svg",
       options: ["Equilateral", "Isosceles", "Obtuse", "Right-angled", "Scalene"],
       correct: 3,
       explanation: "A triangle with a 90° angle is called a right-angled triangle. The third angle is 180 - 30 - 90 = 60°. All three angles are different (30°, 60°, 90°), so it's also scalene — but 'right-angled' is the primary classification because the 90° angle is the defining feature. ✓"
@@ -20957,7 +20884,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 65, angle2: 65, angle3: 50, showAngle3: false } },
       question: "Tom draws an isosceles triangle with two equal angles of 65° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q8.svg",
       options: ["40°", "45°", "60°", "55°", "50°"],
       correct: 4,
       explanation: "In an isosceles triangle, two angles are equal. The angles sum to 180°. So 65° + 65° + third angle = 180°. The third angle = 180 - 130 = 50°. ✓"
@@ -20967,7 +20893,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 85°, 90°, and 105°. What is the fourth angle?",
-      image: "angles-shapes/point-q9.svg",
       options: ["80°", "75°", "70°", "85°", "90°"],
       correct: 0,
       explanation: "Angles around a point add up to 360°. So 85° + 90° + 105° + fourth angle = 360°. The fourth angle = 360 - 280 = 80°. ✓"
@@ -20977,7 +20902,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [80, 100, 95, 85], labels: ["80°", "100°", "95°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "Lucy draws a quadrilateral with angles 80°, 100°, and 95°. What is the fourth angle?",
-      image: "angles-shapes/quadrilateral-q10.svg",
       options: ["75°", "85°", "80°", "90°", "95°"],
       correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 80° + 100° + 95° + fourth angle = 360°. The fourth angle = 360 - 275 = 85°. ✓"
@@ -20996,7 +20920,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3x°", color: "#6C5CE7"}, {value: 72, label: "2x°", color: "#FDCB6E"}], size: 200 } },
       question: "Ben measures angles on a straight line. One angle is 3x° and the other is 2x°. What is the value of x?",
-      image: "angles-shapes/straight-line-q12.svg",
       options: ["30°", "45°", "40°", "36°", "60°"],
       correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 3x + 2x = 180. This gives 5x = 180, so x = 180 ÷ 5 = 36°. ✓"
@@ -21006,7 +20929,6 @@ anglesshapes: {
       id: 13,
       difficulty: 2,
       question: "A triangle has two angles that are each x°, and a third angle of 80°. What is x?",
-      image: "angles-shapes/isosceles-q13.svg",
       options: ["40°", "45°", "60°", "55°", "50°"],
       correct: 4,
       explanation: "Angles in a triangle add up to 180°. So x + x + 80 = 180. This gives 2x = 100, so x = 50°. ✓"
@@ -21016,7 +20938,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 65, highlight: "corresponding", hideAnswer: true } },
       question: "Oliver draws two parallel lines crossed by a third line. An angle on one side is 65°. What is the corresponding angle on the other parallel line?",
-      image: "angles-shapes/parallel-q14.svg",
       options: ["65°", "60°", "55°", "115°", "125°"],
       correct: 0,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 65°. ✓"
@@ -21026,7 +20947,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 70, angle2: 50, angle3: 60, showExterior: true, exteriorLabel: "120°", angle2Label: "y°" } },
       question: "Mia finds that an exterior angle of a triangle is 120°. The two interior opposite angles are 70° and y°. What is y?",
-      image: "angles-shapes/exterior-q15.svg",
       options: ["40°", "50°", "45°", "55°", "60°"],
       correct: 1,
       explanation: "An exterior angle of a triangle equals the sum of the two opposite interior angles. So 70° + y = 120°. Therefore y = 120 - 70 = 50°. ✓"
@@ -21045,7 +20965,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "x°", color: "#FDCB6E"}, {value: 120, label: "2x°", color: "#6C5CE7"}], size: 200 } },
       question: "Sarah draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
-      image: "angles-shapes/straight-line-q17.svg",
       options: ["45°", "50°", "72°", "60°", "90°"],
       correct: 3,
       explanation: "Let the smaller angle be x. Then the larger angle is 2x. On a straight line: x + 2x = 180°. So 3x = 180°, and x = 60°. ✓"
@@ -21055,7 +20974,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "QuadShape", props: { angles: [60, 120, 60, 120], labels: ["60°", "120°", "60°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A rhombus has angles of 60°, 120°, 60°, and x°. What is x?",
-      image: "angles-shapes/rhombus-q18.svg",
       options: ["60°", "90°", "100°", "150°", "120°"],
       correct: 4,
       explanation: "Angles in a quadrilateral add up to 360°. So 60° + 120° + 60° + x = 360°. This gives x = 360 - 240 = 120°. ✓"
@@ -21065,7 +20983,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 110, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 110°. What is the alternate angle?",
-      image: "angles-shapes/alternate-q19.svg",
       options: ["110°", "70°", "80°", "90°", "60°"],
       correct: 0,
       explanation: "When parallel lines are cut by a transversal, alternate angles are equal. So the alternate angle is also 110°. ✓"
@@ -21075,7 +20992,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 40, angle2: 60, angle3: 80, labels: ["2x°", "3x°", "4x°"] } },
       question: "A triangle has angles of 2x°, 3x°, and 4x°. What is the value of x?",
-      image: "angles-shapes/triangle-q20.svg",
       options: ["15°", "20°", "25°", "30°", "36°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 2x + 3x + 4x = 180. This gives 9x = 180, so x = 20°. ✓"
@@ -21085,7 +21001,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 35, angle3: 55, showAngle3: false } },
       question: "Charlie draws a right-angled triangle with one other angle of 35°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q21.svg",
       options: ["45°", "50°", "55°", "60°", "65°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. We have 90° (right angle) + 35° + third angle = 180°. So the third angle = 180 - 90 - 35 = 55°. ✓"
@@ -21104,7 +21019,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 128, label: "128°", color: "#6C5CE7"}, {value: 52, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 128° and x°. What is the value of x?",
-      image: "angles-shapes/straight-line-q23.svg",
       options: ["42°", "48°", "62°", "58°", "52°"],
       correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 128° + x° = 180°. Therefore x = 180 - 128 = 52°. ✓"
@@ -21114,7 +21028,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 48, angle2: 67, angle3: 65, showAngle3: false } },
       question: "Emma draws a triangle with angles 48°, 67°, and y°. What is y?",
-      image: "angles-shapes/triangle-q24.svg",
       options: ["65°", "60°", "55°", "70°", "75°"],
       correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 48° + 67° + y = 180°. Therefore y = 180 - 48 - 67 = 65°. ✓"
@@ -21124,7 +21037,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 95, angle2: 42, angle3: 43, showAngle3: false } },
       question: "A triangle has angles of 95°, 42°, and z°. What is z?",
-      image: "angles-shapes/triangle-q25.svg",
       options: ["33°", "43°", "38°", "48°", "53°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 95° + 42° + z = 180°. Therefore z = 180 - 95 - 42 = 43°. ✓"
@@ -21134,7 +21046,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [92, 88, 105, 75], labels: ["92°", "88°", "105°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A quadrilateral has angles 92°, 88°, 105°, and a°. What is a?",
-      image: "angles-shapes/quadrilateral-q26.svg",
       options: ["65°", "70°", "75°", "80°", "85°"],
       correct: 2,
       explanation: "Angles in a quadrilateral add up to 360°. So 92° + 88° + 105° + a = 360°. Therefore a = 360 - 285 = 75°. ✓"
@@ -21144,7 +21055,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 72, angle2: 72, angle3: 36, showAngle3: false } },
       question: "Tom draws an isosceles triangle with two equal angles of 72° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q27.svg",
       options: ["26°", "31°", "41°", "36°", "46°"],
       correct: 3,
       explanation: "In an isosceles triangle, two angles are equal. The angles sum to 180°. So 72° + 72° + third angle = 180°. The third angle = 180 - 144 = 36°. ✓"
@@ -21154,7 +21064,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#00B894"}, {value: 115, label: "p°", color: "#dc2626"}] } },
       question: "Three angles meet around a point: 115°, 130°, and p°. What is p?",
-      image: "angles-shapes/point-q28.svg",
       options: ["105°", "110°", "125°", "120°", "115°"],
       correct: 4,
       explanation: "Angles around a point add up to 360°. So 115° + 130° + p = 360°. Therefore p = 360 - 245 = 115°. ✓"
@@ -21164,7 +21073,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "4x°", color: "#6C5CE7"}, {value: 100, label: "5x°", color: "#FDCB6E"}], size: 200 } },
       question: "Sophie has angles on a straight line measuring 4x° and 5x°. What is x?",
-      image: "angles-shapes/straight-line-q29.svg",
       options: ["20°", "18°", "15°", "24°", "30°"],
       correct: 0,
       explanation: "Angles on a straight line add up to 180°. So 4x + 5x = 180. This gives 9x = 180, so x = 20°. ✓"
@@ -21174,7 +21082,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 58, angle2: 58, angle3: 64, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 58°. What is the angle at the top?",
-      image: "angles-shapes/isosceles-q30.svg",
       options: ["54°", "64°", "59°", "69°", "74°"],
       correct: 1,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 58° + 58° + top angle = 180°. The top angle = 180 - 116 = 64°. ✓"
@@ -21184,7 +21091,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 38, angle3: 52, showAngle3: false } },
       question: "Jake measures a right-angled triangle with one angle of 38°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q31.svg",
       options: ["42°", "47°", "52°", "57°", "62°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. We have 90° (right angle) + 38° + third angle = 180°. So the third angle = 180 - 90 - 38 = 52°. ✓"
@@ -21203,7 +21109,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 145, label: "145°", color: "#00B894"}, {value: 75, label: "75°", color: "#6C5CE7"}, {value: 50, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Lucy calculates that three angles around a point are 90°, 145°, and 75°. What is the fourth angle?",
-      image: "angles-shapes/point-q33.svg",
       options: ["40°", "45°", "60°", "55°", "50°"],
       correct: 4,
       explanation: "Angles around a point add up to 360°. So 90° + 145° + 75° + fourth angle = 360°. The fourth angle = 360 - 310 = 50°. ✓"
@@ -21213,7 +21118,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 61, angle3: 29, showAngle3: false } },
       question: "A right-angled triangle has another angle of 61°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q34.svg",
       options: ["29°", "24°", "19°", "34°", "39°"],
       correct: 0,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 61° + third angle = 180°. So the third angle = 180 - 151 = 29°. ✓"
@@ -21223,7 +21127,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 118, highlight: "corresponding", hideAnswer: true } },
       question: "Ben measures parallel lines crossed by a transversal. One angle is 118°. What is the corresponding angle?",
-      image: "angles-shapes/parallel-q35.svg",
       options: ["62°", "118°", "82°", "72°", "128°"],
       correct: 1,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 118°. ✓"
@@ -21233,7 +21136,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 45, angle2: 60, angle3: 75, labels: ["3y°", "4y°", "5y°"] } },
       question: "A triangle has angles measuring 3y°, 4y°, and 5y°. What is y?",
-      image: "angles-shapes/triangle-q36.svg",
       options: ["12°", "18°", "15°", "20°", "24°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 3y + 4y + 5y = 180. This gives 12y = 180, so y = 15°. ✓"
@@ -21252,7 +21154,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [78, 102, 96, 84], labels: ["78°", "102°", "96°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "Mia draws a quadrilateral with angles 78°, 102°, 96°, and n°. What is n?",
-      image: "angles-shapes/quadrilateral-q38.svg",
       options: ["74°", "79°", "94°", "89°", "84°"],
       correct: 4,
       explanation: "Angles in a quadrilateral add up to 360°. So 78° + 102° + 96° + n = 360°. Therefore n = 360 - 276 = 84°. ✓"
@@ -21262,7 +21163,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 40, label: "2x°", color: "#FDCB6E"}, {value: 140, label: "7x°", color: "#6C5CE7"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 2:7. What is the smaller angle?",
-      image: "angles-shapes/straight-line-q39.svg",
       options: ["40°", "35°", "30°", "45°", "50°"],
       correct: 0,
       explanation: "The ratio 2:7 means the angles are 2x and 7x. On a straight line: 2x + 7x = 180°. So 9x = 180°, giving x = 20°. The smaller angle is 2x = 2 × 20 = 40°. ✓"
@@ -21272,7 +21172,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 68, angle2: 68, angle3: 44, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 68° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q40.svg",
       options: ["34°", "44°", "39°", "49°", "54°"],
       correct: 1,
       explanation: "Angles in a triangle sum to 180°. So 68° + 68° + third angle = 180°. The third angle = 180 - 136 = 44°. ✓"
@@ -21282,7 +21181,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 50, angle2: 60, angle3: 70, labels: ["5a°", "6a°", "7a°"] } },
       question: "Charlie finds a triangle with angles 5a°, 6a°, and 7a°. What is a?",
-      image: "angles-shapes/triangle-q41.svg",
       options: ["8°", "12°", "10°", "15°", "18°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 5a + 6a + 7a = 180. This gives 18a = 180, so a = 10°. ✓"
@@ -21292,7 +21190,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 73, highlight: "alternate", hideAnswer: true } },
       question: "Parallel lines are cut by a transversal. An angle measures 73°. What is the alternate interior angle?",
-      image: "angles-shapes/parallel-q42.svg",
       options: ["63°", "68°", "107°", "73°", "117°"],
       correct: 3,
       explanation: "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 73°. ✓"
@@ -21302,7 +21199,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 95, label: "95°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 92, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 85°, 95°, 88°, and b°. What is b?",
-      image: "angles-shapes/point-q43.svg",
       options: ["82°", "87°", "102°", "97°", "92°"],
       correct: 4,
       explanation: "Angles around a point add up to 360°. So 85° + 95° + 88° + b = 360°. Therefore b = 360 - 268 = 92°. ✓"
@@ -21312,7 +21208,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "7c°", color: "#6C5CE7"}, {value: 110, label: "11c°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 7c° and 11c°. What is c?",
-      image: "angles-shapes/straight-line-q44.svg",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
       explanation: "Angles on a straight line add up to 180°. So 7c + 11c = 180. This gives 18c = 180, so c = 10°. ✓"
@@ -21340,7 +21235,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [105, 75, 105, 75], labels: ["105°", "75°", "105°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A trapezium has angles 105°, 75°, 105°, and e°. What is e?",
-      image: "angles-shapes/quadrilateral-q47.svg",
       options: ["65°", "70°", "80°", "75°", "85°"],
       correct: 3,
       explanation: "Angles in a quadrilateral add up to 360°. So 105° + 75° + 105° + e = 360°. Therefore e = 360 - 285 = 75°. ✓"
@@ -21359,7 +21253,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "108°", color: "#6C5CE7"}, {value: 127, label: "127°", color: "#00B894"}, {value: 84, label: "84°", color: "#6C5CE7"}, {value: 41, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 108°, 127°, and 84°. What is the fourth angle?",
-      image: "angles-shapes/point-q49.svg",
       options: ["41°", "36°", "31°", "46°", "51°"],
       correct: 0,
       explanation: "Angles around a point add up to 360°. So 108° + 127° + 84° + fourth angle = 360°. The fourth angle = 360 - 319 = 41°. ✓"
@@ -21369,7 +21262,6 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "AngleDiagram", props: { angle1: 48, angle2: 66, angle3: 66, showAngle3: false } },
       question: "An isosceles triangle has an exterior angle of 132°. The two base angles are equal. What is each base angle?",
-      image: "angles-shapes/isosceles-q50.svg",
       options: ["54°", "66°", "60°", "72°", "78°"],
       correct: 1,
       explanation: "The interior angle adjacent to the exterior angle is 180° - 132° = 48°. This is the top angle. In an isosceles triangle with top angle 48°, the two base angles are equal. So 48° + base + base = 180°. Each base angle = (180 - 48) ÷ 2 = 66°. ✓"
@@ -21379,7 +21271,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3f°", color: "#6C5CE7"}, {value: 72, label: "2f°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 3f° and 2f°. What is f?",
-      image: "angles-shapes/straight-line-q51.svg",
       options: ["30°", "40°", "36°", "45°", "50°"],
       correct: 2,
       explanation: "Angles on a straight line add up to 180°. So 3f + 2f = 180. This gives 5f = 180, so f = 36°. ✓"
@@ -21389,7 +21280,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 30, angle2: 60, angle3: 90, labels: ["g°", "2g°", "3g°"] } },
       question: "A triangle has angles g°, 2g°, and 3g°. What is g?",
-      image: "angles-shapes/triangle-q52.svg",
       options: ["25°", "40°", "35°", "30°", "45°"],
       correct: 3,
       explanation: "Angles in a triangle add up to 180°. So g + 2g + 3g = 180. This gives 6g = 180, so g = 30°. ✓"
@@ -21399,7 +21289,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 76, angle2: 76, angle3: 28, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 76° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q53.svg",
       options: ["18°", "23°", "38°", "33°", "28°"],
       correct: 4,
       explanation: "Angles in a triangle sum to 180°. So 76° + 76° + third angle = 180°. The third angle = 180 - 152 = 28°. ✓"
@@ -21418,7 +21307,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 26, angle3: 64, showAngle3: false } },
       question: "A right-angled triangle has another angle of 26°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q55.svg",
       options: ["54°", "64°", "59°", "69°", "74°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 26° + third angle = 180°. So the third angle = 180 - 116 = 64°. ✓"
@@ -21428,7 +21316,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [68, 112, 68, 112], labels: ["68°", "112°", "68°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A parallelogram has angles 68°, 112°, 68°, and h°. What is h?",
-      image: "angles-shapes/quadrilateral-q56.svg",
       options: ["102°", "107°", "112°", "117°", "122°"],
       correct: 2,
       explanation: "Angles in a quadrilateral add up to 360°. So 68° + 112° + 68° + h = 360°. Therefore h = 360 - 248 = 112°. ✓"
@@ -21438,7 +21325,6 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "ParallelLines", props: { givenAngle: 124, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are crossed by a transversal. One angle measures 124°. What is the corresponding angle?",
-      image: "angles-shapes/parallel-q57.svg",
       options: ["56°", "66°", "76°", "124°", "114°"],
       correct: 3,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 124°. ✓"
@@ -21448,7 +21334,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "9j°", color: "#6C5CE7"}, {value: 72, label: "6j°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 9j° and 6j°. What is j?",
-      image: "angles-shapes/straight-line-q58.svg",
       options: ["10°", "20°", "15°", "18°", "12°"],
       correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 9j + 6j = 180. This gives 15j = 180, so j = 12°. ✓"
@@ -21458,7 +21343,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 47, angle2: 47, angle3: 86, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 47°. What is the top angle?",
-      image: "angles-shapes/isosceles-q59.svg",
       options: ["86°", "81°", "76°", "91°", "96°"],
       correct: 0,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 47° + 47° + top angle = 180°. The top angle = 180 - 94 = 86°. ✓"
@@ -21477,7 +21361,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 40, angle2: 60, angle3: 80, labels: ["2p°", "3p°", "4p°"] } },
       question: "A triangle has angles 2p°, 3p°, and 4p°. What is p?",
-      image: "angles-shapes/triangle-q61.svg",
       options: ["15°", "18°", "20°", "24°", "30°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 2p + 3p + 4p = 180. This gives 9p = 180, so p = 20°. ✓"
@@ -21487,7 +21370,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 85, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 72°, 98°, 105°, and q°. What is q?",
-      image: "angles-shapes/point-q62.svg",
       options: ["75°", "80°", "90°", "85°", "95°"],
       correct: 3,
       explanation: "Angles around a point add up to 360°. So 72° + 98° + 105° + q = 360°. Therefore q = 360 - 275 = 85°. ✓"
@@ -21497,7 +21379,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 75, label: "5r°", color: "#6C5CE7"}, {value: 105, label: "7r°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 5r° and 7r°. What is r?",
-      image: "angles-shapes/straight-line-q63.svg",
       options: ["12°", "24°", "18°", "20°", "15°"],
       correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 5r + 7r = 180. This gives 12r = 180, so r = 15°. ✓"
@@ -21507,7 +21388,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 49, angle3: 41, showAngle3: false } },
       question: "A right-angled triangle has another angle of 49°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q64.svg",
       options: ["41°", "36°", "31°", "46°", "51°"],
       correct: 0,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 49° + third angle = 180°. So the third angle = 180 - 139 = 41°. ✓"
@@ -21517,7 +21397,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 81, angle2: 81, angle3: 18, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 81° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q65.svg",
       options: ["8°", "18°", "13°", "23°", "28°"],
       correct: 1,
       explanation: "Angles in a triangle sum to 180°. So 81° + 81° + third angle = 180°. The third angle = 180 - 162 = 18°. ✓"
@@ -21536,7 +21415,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [84, 93, 97, 86], labels: ["84°", "93°", "97°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A quadrilateral has angles 84°, 93°, 97°, and s°. What is s?",
-      image: "angles-shapes/quadrilateral-q67.svg",
       options: ["76°", "81°", "91°", "86°", "96°"],
       correct: 3,
       explanation: "Angles in a quadrilateral add up to 360°. So 84° + 93° + 97° + s = 360°. Therefore s = 360 - 274 = 86°. ✓"
@@ -21546,7 +21424,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 67, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 67°. What is the alternate interior angle?",
-      image: "angles-shapes/parallel-q68.svg",
       options: ["57°", "62°", "123°", "113°", "67°"],
       correct: 4,
       explanation: "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 67°. ✓"
@@ -21556,7 +21433,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 54, angle2: 54, angle3: 72, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 54° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q69.svg",
       options: ["72°", "67°", "62°", "77°", "82°"],
       correct: 0,
       explanation: "Angles in a triangle sum to 180°. So 54° + 54° + third angle = 180°. The third angle = 180 - 108 = 72°. ✓"
@@ -21566,7 +21442,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 48, angle2: 60, angle3: 72, labels: ["4t°", "5t°", "6t°"] } },
       question: "A triangle has angles 4t°, 5t°, and 6t°. What is t?",
-      image: "angles-shapes/triangle-q70.svg",
       options: ["10°", "12°", "15°", "18°", "20°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 4t + 5t + 6t = 180. This gives 15t = 180, so t = 12°. ✓"
@@ -21576,7 +21451,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 70, angle2: 80, angle3: 30, labels: ["7u°", "8u°", "3u°"] } },
       question: "A triangle has angles measuring 7u°, 8u°, and 3u°. What is u?",
-      image: "angles-shapes/triangle-q71.svg",
       options: ["8°", "12°", "10°", "15°", "18°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 7u + 8u + 3u = 180. This gives 18u = 180, so u = 10°. ✓"
@@ -21586,7 +21460,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "8v°", color: "#6C5CE7"}, {value: 100, label: "10v°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 8v° and 10v°. What is v?",
-      image: "angles-shapes/straight-line-q72.svg",
       options: ["8°", "15°", "12°", "10°", "20°"],
       correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 8v + 10v = 180. This gives 18v = 180, so v = 10°. ✓"
@@ -21605,7 +21478,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 116, label: "116°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 82, label: "82°", color: "#6C5CE7"}, {value: 64, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 116°, 98°, and 82°. What is the fourth angle?",
-      image: "angles-shapes/point-q74.svg",
       options: ["64°", "59°", "54°", "69°", "74°"],
       correct: 0,
       explanation: "Angles around a point add up to 360°. So 116° + 98° + 82° + fourth angle = 360°. The fourth angle = 360 - 296 = 64°. ✓"
@@ -21615,7 +21487,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 57, angle3: 33, showAngle3: false } },
       question: "A right-angled triangle has another angle of 57°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q75.svg",
       options: ["23°", "33°", "28°", "38°", "43°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 57° + third angle = 180°. So the third angle = 180 - 147 = 33°. ✓"
@@ -21625,7 +21496,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "QuadShape", props: { angles: [72, 108, 72, 108], labels: ["72°", "108°", "72°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A kite has angles 72°, 108°, 72°, and z°. What is z?",
-      image: "angles-shapes/quadrilateral-q76.svg",
       options: ["98°", "103°", "108°", "113°", "118°"],
       correct: 2,
       explanation: "Angles in a quadrilateral add up to 360°. So 72° + 108° + 72° + z = 360°. Therefore z = 360 - 252 = 108°. ✓"
@@ -21635,7 +21505,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "6x°", color: "#6C5CE7"}, {value: 120, label: "12x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 6x° and 12x°. What is x?",
-      image: "angles-shapes/straight-line-q77.svg",
       options: ["8°", "15°", "12°", "10°", "18°"],
       correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 6x + 12x = 180. This gives 18x = 180, so x = 10°. ✓"
@@ -21645,7 +21514,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 39, angle2: 39, angle3: 102, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 39°. What is the top angle?",
-      image: "angles-shapes/isosceles-q78.svg",
       options: ["92°", "97°", "112°", "107°", "102°"],
       correct: 4,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 39° + 39° + top angle = 180°. The top angle = 180 - 78 = 102°. ✓"
@@ -21655,7 +21523,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 60, angle2: 70, angle3: 50, labels: ["6y°", "7y°", "5y°"] } },
       question: "A triangle has angles 6y°, 7y°, and 5y°. What is y?",
-      image: "angles-shapes/triangle-q79.svg",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 6y + 7y + 5y = 180. This gives 18y = 180, so y = 10°. ✓"
@@ -21665,7 +21532,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 139, highlight: "corresponding", hideAnswer: true } },
       question: "Parallel lines are crossed by a transversal. One angle is 139°. What is the corresponding angle?",
-      image: "angles-shapes/parallel-q80.svg",
       options: ["39°", "139°", "49°", "131°", "41°"],
       correct: 1,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 139°. ✓"
@@ -21675,7 +21541,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#6C5CE7"}, {value: 103, label: "103°", color: "#00B894"}, {value: 91, label: "91°", color: "#6C5CE7"}, {value: 77, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 89°, 103°, 91°, and b°. What is b?",
-      image: "angles-shapes/point-q81.svg",
       options: ["67°", "72°", "77°", "82°", "87°"],
       correct: 2,
       explanation: "Angles around a point add up to 360°. So 89° + 103° + 91° + b = 360°. Therefore b = 360 - 283 = 77°. ✓"
@@ -21685,7 +21550,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 63, angle2: 63, angle3: 54, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 63° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q82.svg",
       options: ["44°", "49°", "59°", "54°", "64°"],
       correct: 3,
       explanation: "Angles in a triangle sum to 180°. So 63° + 63° + third angle = 180°. The third angle = 180 - 126 = 54°. ✓"
@@ -21704,7 +21568,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "11c°", color: "#6C5CE7"}, {value: 70, label: "7c°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 11c° and 7c°. What is c?",
-      image: "angles-shapes/straight-line-q84.svg",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
       explanation: "Angles on a straight line add up to 180°. So 11c + 7c = 180. This gives 18c = 180, so c = 10°. ✓"
@@ -21714,7 +21577,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 92, angle2: 53, angle3: 35, showAngle3: false } },
       question: "A triangle has angles 92°, 53°, and d°. What is d?",
-      image: "angles-shapes/triangle-q85.svg",
       options: ["25°", "35°", "30°", "40°", "45°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 92° + 53° + d = 180°. Therefore d = 180 - 145 = 35°. ✓"
@@ -21724,7 +21586,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [87, 94, 91, 88], labels: ["87°", "94°", "91°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A quadrilateral has angles 87°, 94°, 91°, and e°. What is e?",
-      image: "angles-shapes/quadrilateral-q86.svg",
       options: ["78°", "83°", "88°", "93°", "98°"],
       correct: 2,
       explanation: "Angles in a quadrilateral add up to 360°. So 87° + 94° + 91° + e = 360°. Therefore e = 360 - 272 = 88°. ✓"
@@ -21743,7 +21604,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 44, angle3: 46, showAngle3: false } },
       question: "A right-angled triangle has another angle of 44°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q88.svg",
       options: ["36°", "41°", "56°", "51°", "46°"],
       correct: 4,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 44° + third angle = 180°. So the third angle = 180 - 134 = 46°. ✓"
@@ -21753,7 +21613,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "13g°", color: "#6C5CE7"}, {value: 50, label: "5g°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 13g° and 5g°. What is g?",
-      image: "angles-shapes/straight-line-q89.svg",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
       explanation: "Angles on a straight line add up to 180°. So 13g + 5g = 180. This gives 18g = 180, so g = 10°. ✓"
@@ -21763,7 +21622,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 77, angle2: 77, angle3: 26, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 77° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q90.svg",
       options: ["16°", "26°", "21°", "31°", "36°"],
       correct: 1,
       explanation: "Angles in a triangle sum to 180°. So 77° + 77° + third angle = 180°. The third angle = 180 - 154 = 26°. ✓"
@@ -21773,7 +21631,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 80, angle2: 90, angle3: 10, labels: ["8h°", "9h°", "h°"] } },
       question: "A triangle has angles 8h°, 9h°, and h°. What is h?",
-      image: "angles-shapes/triangle-q91.svg",
       options: ["8°", "12°", "10°", "15°", "18°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 8h + 9h + h = 180. This gives 18h = 180, so h = 10°. ✓"
@@ -21783,7 +21640,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 124, label: "124°", color: "#6C5CE7"}, {value: 87, label: "87°", color: "#00B894"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 53, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 124°, 87°, and 96°. What is the fourth angle?",
-      image: "angles-shapes/point-q92.svg",
       options: ["43°", "48°", "58°", "53°", "63°"],
       correct: 3,
       explanation: "Angles around a point add up to 360°. So 124° + 87° + 96° + fourth angle = 360°. The fourth angle = 360 - 307 = 53°. ✓"
@@ -21793,7 +21649,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 82, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 82°. What is the alternate interior angle?",
-      image: "angles-shapes/parallel-q93.svg",
       options: ["72°", "78°", "108°", "98°", "82°"],
       correct: 4,
       explanation: "When two parallel lines are crossed by another line (called a transversal), the angles on opposite sides are equal. These are called alternate angles. Since one angle is 82°, the alternate angle is also 82°. ✓"
@@ -21803,7 +21658,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 60, angle3: 30, labels: ["9j°", "6j°", "3j°"] } },
       question: "A triangle has angles 9j°, 6j°, and 3j°. What is j?",
-      image: "angles-shapes/triangle-q94.svg",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 9j + 6j + 3j = 180. This gives 18j = 180, so j = 10°. ✓"
@@ -21813,7 +21667,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "QuadShape", props: { angles: [65, 115, 65, 115], labels: ["65°", "115°", "65°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A rhombus has angles 65°, 115°, 65°, and k°. What is k?",
-      image: "angles-shapes/quadrilateral-q95.svg",
       options: ["105°", "115°", "110°", "120°", "125°"],
       correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 65° + 115° + 65° + k = 360°. Therefore k = 360 - 245 = 115°. ✓"
@@ -21823,7 +21676,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 86, angle2: 58, angle3: 36, showAngle3: false } },
       question: "A triangle has angles 86°, 58°, and m°. What is m?",
-      image: "angles-shapes/triangle-q96.svg",
       options: ["26°", "31°", "36°", "41°", "46°"],
       correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 86° + 58° + m = 180°. Therefore m = 180 - 144 = 36°. ✓"
@@ -21833,7 +21685,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 31, angle3: 59, showAngle3: false } },
       question: "A right-angled triangle has another angle of 31°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q97.svg",
       options: ["49°", "54°", "64°", "59°", "69°"],
       correct: 3,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 31° + third angle = 180°. So the third angle = 180 - 121 = 59°. ✓"
@@ -21843,7 +21694,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 140, label: "14n°", color: "#6C5CE7"}, {value: 40, label: "4n°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 14n° and 4n°. What is n?",
-      image: "angles-shapes/straight-line-q98.svg",
       options: ["8°", "18°", "12°", "15°", "10°"],
       correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 14n + 4n = 180. This gives 18n = 180, so n = 10°. ✓"
@@ -21853,7 +21703,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 52, angle2: 52, angle3: 76, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 52°. What is the top angle?",
-      image: "angles-shapes/isosceles-q99.svg",
       options: ["76°", "71°", "66°", "81°", "86°"],
       correct: 0,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 52° + 52° + top angle = 180°. The top angle = 180 - 104 = 76°. ✓"
@@ -21872,7 +21721,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#00B894"}, {value: 108, label: "108°", color: "#6C5CE7"}, {value: 76, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 94°, 82°, 108°, and q°. What is q?",
-      image: "angles-shapes/point-q101.svg",
       options: ["66°", "71°", "76°", "81°", "86°"],
       correct: 2,
       explanation: "Angles around a point add up to 360°. So 94° + 82° + 108° + q = 360°. Therefore q = 360 - 284 = 76°. ✓"
@@ -21882,7 +21730,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 59, angle2: 59, angle3: 62, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 59° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q102.svg",
       options: ["52°", "57°", "67°", "62°", "72°"],
       correct: 3,
       explanation: "Angles in a triangle sum to 180°. So 59° + 59° + third angle = 180°. The third angle = 180 - 118 = 62°. ✓"
@@ -21892,7 +21739,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 150, label: "15r°", color: "#6C5CE7"}, {value: 30, label: "3r°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 15r° and 3r°. What is r?",
-      image: "angles-shapes/straight-line-q103.svg",
       options: ["8°", "18°", "12°", "15°", "10°"],
       correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 15r + 3r = 180. This gives 18r = 180, so r = 10°. ✓"
@@ -21911,7 +21757,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [98, 82, 98, 82], labels: ["98°", "82°", "98°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A trapezium has angles 98°, 82°, 98°, and s°. What is s?",
-      image: "angles-shapes/quadrilateral-q105.svg",
       options: ["72°", "82°", "77°", "87°", "92°"],
       correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 98° + 82° + 98° + s = 360°. Therefore s = 360 - 278 = 82°. ✓"
@@ -21921,7 +21766,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 146, highlight: "corresponding", hideAnswer: true } },
       question: "Parallel lines are crossed by a transversal. One angle is 146°. What is the corresponding angle?",
-      image: "angles-shapes/parallel-q106.svg",
       options: ["34°", "44°", "146°", "136°", "54°"],
       correct: 2,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 146°. ✓"
@@ -21931,7 +21775,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 100, angle2: 50, angle3: 30, labels: ["10t°", "5t°", "3t°"] } },
       question: "A triangle has angles 10t°, 5t°, and 3t°. What is t?",
-      image: "angles-shapes/triangle-q107.svg",
       options: ["8°", "15°", "12°", "10°", "18°"],
       correct: 3,
       explanation: "Angles in a triangle add up to 180°. So 10t + 5t + 3t = 180. This gives 18t = 180, so t = 10°. ✓"
@@ -21941,7 +21784,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 43, angle2: 43, angle3: 94, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 43°. What is the top angle?",
-      image: "angles-shapes/isosceles-q108.svg",
       options: ["84°", "89°", "104°", "99°", "94°"],
       correct: 4,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 43° + 43° + top angle = 180°. The top angle = 180 - 86 = 94°. ✓"
@@ -21951,7 +21793,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 52, angle3: 38, showAngle3: false } },
       question: "A right-angled triangle has another angle of 52°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q109.svg",
       options: ["38°", "33°", "28°", "43°", "48°"],
       correct: 0,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 52° + third angle = 180°. So the third angle = 180 - 142 = 38°. ✓"
@@ -21961,7 +21802,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 160, label: "16u°", color: "#6C5CE7"}, {value: 20, label: "2u°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 16u° and 2u°. What is u?",
-      image: "angles-shapes/straight-line-q110.svg",
       options: ["8°", "10°", "12°", "15°", "18°"],
       correct: 1,
       explanation: "Angles on a straight line add up to 180°. So 16u + 2u = 180. This gives 18u = 180, so u = 10°. ✓"
@@ -21980,7 +21820,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 110, angle2: 40, angle3: 30, labels: ["11w°", "4w°", "3w°"] } },
       question: "A triangle has angles 11w°, 4w°, and 3w°. What is w?",
-      image: "angles-shapes/triangle-q112.svg",
       options: ["8°", "15°", "12°", "10°", "18°"],
       correct: 3,
       explanation: "Angles in a triangle add up to 180°. So 11w + 4w + 3w = 180. This gives 18w = 180, so w = 10°. ✓"
@@ -21990,7 +21829,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 78, angle2: 64, angle3: 38, showAngle3: false } },
       question: "A triangle has angles 78°, 64°, and x°. What is x?",
-      image: "angles-shapes/triangle-q113.svg",
       options: ["28°", "33°", "48°", "43°", "38°"],
       correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 78° + 64° + x = 180°. Therefore x = 180 - 142 = 38°. ✓"
@@ -22000,7 +21838,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 132, label: "132°", color: "#6C5CE7"}, {value: 78, label: "78°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 45, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 132°, 78°, and 105°. What is the fourth angle?",
-      image: "angles-shapes/point-q114.svg",
       options: ["45°", "40°", "35°", "50°", "55°"],
       correct: 0,
       explanation: "Angles around a point add up to 360°. So 132° + 78° + 105° + fourth angle = 360°. The fourth angle = 360 - 315 = 45°. ✓"
@@ -22010,7 +21847,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [74, 106, 74, 106], labels: ["74°", "106°", "74°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A parallelogram has angles 74°, 106°, 74°, and y°. What is y?",
-      image: "angles-shapes/quadrilateral-q115.svg",
       options: ["96°", "106°", "101°", "111°", "116°"],
       correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 74° + 106° + 74° + y = 360°. Therefore y = 360 - 254 = 106°. ✓"
@@ -22020,7 +21856,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 170, label: "17z°", color: "#6C5CE7"}, {value: 10, label: "z°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 17z° and z°. What is z?",
-      image: "angles-shapes/straight-line-q116.svg",
       options: ["8°", "12°", "10°", "15°", "18°"],
       correct: 2,
       explanation: "Angles on a straight line add up to 180°. So 17z + z = 180. This gives 18z = 180, so z = 10°. ✓"
@@ -22030,7 +21865,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 70, angle2: 70, angle3: 40, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 70° each. What is the third angle?",
-      image: "angles-shapes/isosceles-q117.svg",
       options: ["30°", "35°", "45°", "40°", "50°"],
       correct: 3,
       explanation: "Angles in a triangle sum to 180°. So 70° + 70° + third angle = 180°. The third angle = 180 - 140 = 40°. ✓"
@@ -22040,7 +21874,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 36, angle2: 36, angle3: 108, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 36°. What is the top angle?",
-      image: "angles-shapes/isosceles-q118.svg",
       options: ["98°", "103°", "118°", "113°", "108°"],
       correct: 4,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 36° + 36° + top angle = 180°. The top angle = 180 - 72 = 108°. ✓"
@@ -22050,7 +21883,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 93, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 93°. What is the alternate interior angle?",
-      image: "angles-shapes/parallel-q119.svg",
       options: ["93°", "87°", "83°", "97°", "103°"],
       correct: 0,
       explanation: "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 93°. ✓"
@@ -22060,7 +21892,6 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 68, angle3: 22, showAngle3: false } },
       question: "A right-angled triangle has another angle of 68°. What is the third angle?",
-      image: "angles-shapes/right-triangle-q120.svg",
       options: ["12°", "22°", "17°", "27°", "32°"],
       correct: 1,
       explanation: "Angles in a triangle add up to 180°. We have 90° + 68° + third angle = 180°. So the third angle = 180 - 158 = 22°. ✓"
@@ -22070,7 +21901,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#6C5CE7"}, {value: 109, label: "109°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 67, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 96°, 109°, 88°, and b°. What is b?",
-      image: "angles-shapes/point-q121.svg",
       options: ["57°", "62°", "67°", "72°", "77°"],
       correct: 2,
       explanation: "Angles around a point add up to 360°. So 96° + 109° + 88° + b = 360°. Therefore b = 360 - 293 = 67°. ✓"
@@ -22080,7 +21910,6 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "5x°", color: "#FDCB6E"}, {value: 130, label: "13x°", color: "#6C5CE7"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 5:13. What is the smaller angle?",
-      image: "angles-shapes/straight-line-q122.svg",
       options: ["40°", "45°", "55°", "50°", "60°"],
       correct: 3,
       explanation: "The ratio 5:13 means the angles are 5x and 13x. On a straight line: 5x + 13x = 180°. So 18x = 180°, giving x = 10°. The smaller angle is 5x = 5 × 10 = 50°. ✓"
@@ -24385,7 +24214,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows Lucy's test scores. What was her score in Science?",
-      image: "data-handling/bar-chart-q5.svg",
       options: ["8", "7", "6", "9", "10"],
       correct: 0,
       explanation: "Reading from the bar chart, the Science bar reaches up to 8. ✓"
@@ -24428,7 +24256,6 @@ datahandling: {
       difficulty: 1,
       visual: { component: "LineGraph", props: { data: [{label: "9am", value: 14}, {label: "12pm", value: 18}, {label: "3pm", value: 22}, {label: "6pm", value: 18}, {label: "9pm", value: 14}], xLabel: "Time", yLabel: "Temperature", unit: "°C", showValues: false } },
       question: "This line graph shows temperature during a day. At what time was the temperature highest?",
-      image: "data-handling/line-graph-q10.svg",
       options: ["3pm", "12pm", "9am", "6pm", "9pm"],
       correct: 0,
       explanation: "Reading the line graph, the highest point is at 3pm. ✓"
@@ -24484,7 +24311,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows ice cream sales. How many more vanilla cones were sold than chocolate?",
-      image: "data-handling/bar-chart-q15.svg",
       options: ["10", "5", "15", "20", "25"],
       correct: 0,
       explanation: "Reading the bar chart: Vanilla = 45, Chocolate = 35. Difference = 45 - 35 = 10. ✓"
@@ -24536,7 +24362,6 @@ datahandling: {
       difficulty: 2,
       visual: { component: "LineGraph", props: { data: [{label: "Week 1", value: 6}, {label: "Week 2", value: 6}, {label: "Week 3", value: 10}, {label: "Week 4", value: 14}, {label: "Week 5", value: 18}, {label: "Week 6", value: 20}], xLabel: "Week", yLabel: "Height", unit: "cm", showValues: false } },
       question: "This line graph shows plant growth over 6 weeks. How much did the plant grow between week 2 and week 5?",
-      image: "data-handling/line-graph-q21.svg",
       options: ["8cm", "12cm", "10cm", "14cm", "16cm"],
       correct: 1,
       explanation: "Reading the graph: Week 2 = 6cm, Week 5 = 18cm. Growth = 18 - 6 = 12cm. ✓"
@@ -24569,7 +24394,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows book sales. What was the total number of books sold across all four weeks?",
-      image: "data-handling/bar-chart-q23.svg",
       options: ["180", "200", "240", "220", "260"],
       correct: 3,
       explanation: "Reading the bars: Week 1 = 50, Week 2 = 60, Week 3 = 55, Week 4 = 55. Total = 50 + 60 + 55 + 55 = 220. ✓"
@@ -24690,7 +24514,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows weekly sales. What were the sales in Week 3?",
-      image: "data-handling/bar-chart-q36.svg",
       options: ["35", "45", "40", "50", "55"],
       correct: 1,
       explanation: "Reading the bar chart, Week 3 sales = 45. ✓"
@@ -24724,7 +24547,6 @@ datahandling: {
       difficulty: 1,
       visual: { component: "LineGraph", props: { data: [{label: "10am", value: 14}, {label: "12pm", value: 18}, {label: "2pm", value: 22}, {label: "4pm", value: 20}, {label: "6pm", value: 16}], xLabel: "Time", yLabel: "Temperature", unit: "°C", showValues: false } },
       question: "This line graph shows temperature. What was the temperature at 2pm?",
-      image: "data-handling/line-graph-q40.svg",
       options: ["22°C", "20°C", "18°C", "24°C", "26°C"],
       correct: 0,
       explanation: "Reading the graph at 2pm, temperature = 22°C. ✓"
@@ -24838,7 +24660,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows scores. What is the total of all scores?",
-      image: "data-handling/bar-chart-q52.svg",
       options: ["180", "220", "200", "240", "260"],
       correct: 2,
       explanation: "Adding all bars: 45 + 50 + 55 + 50 = 200. ✓"
@@ -24872,7 +24693,6 @@ datahandling: {
       difficulty: 2,
       visual: { component: "LineGraph", props: { data: [{label: "Day 1", value: 6}, {label: "Day 3", value: 8}, {label: "Day 5", value: 12}, {label: "Day 7", value: 18}, {label: "Day 9", value: 20}], xLabel: "Day", yLabel: "Height", unit: "cm", showValues: false } },
       question: "This line graph shows growth. How much growth between Day 3 and Day 7?",
-      image: "data-handling/line-graph-q56.svg",
       options: ["6cm", "10cm", "8cm", "12cm", "14cm"],
       correct: 1,
       explanation: "Day 3 = 8cm, Day 7 = 18cm. Growth = 18 - 8 = 10cm. ✓"
@@ -24980,7 +24800,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows attendance. How many more attended Friday than Monday?",
-      image: "data-handling/bar-chart-q67.svg",
       options: ["8", "10", "12", "14", "16"],
       correct: 2,
       explanation: "Friday = 58, Monday = 46. Difference = 58 - 46 = 12. ✓"
@@ -25014,7 +24833,6 @@ datahandling: {
       difficulty: 1,
       visual: { component: "LineGraph", props: { data: [{label: "Month 1", value: 55}, {label: "Month 2", value: 60}, {label: "Month 3", value: 70}, {label: "Month 4", value: 65}, {label: "Month 5", value: 75}, {label: "Month 6", value: 80}], xLabel: "Month", yLabel: "Sales", showValues: false } },
       question: "This line graph shows sales. What were sales in Month 5?",
-      image: "data-handling/line-graph-q71.svg",
       options: ["65", "75", "70", "80", "85"],
       correct: 1,
       explanation: "Reading the graph at Month 5, sales = 75. ✓"
@@ -25129,7 +24947,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows production. What was the total production?",
-      image: "data-handling/bar-chart-q83.svg",
       options: ["240", "260", "300", "280", "320"],
       correct: 3,
       explanation: "Adding all bars: 65 + 70 + 75 + 70 = 280. ✓"
@@ -25163,7 +24980,6 @@ datahandling: {
       difficulty: 2,
       visual: { component: "LineGraph", props: { data: [{label: "Mon", value: 18}, {label: "Tue", value: 12}, {label: "Wed", value: 22}, {label: "Thu", value: 26}, {label: "Fri", value: 20}], xLabel: "Day", yLabel: "Temperature", unit: "°C", showValues: false } },
       question: "This line graph shows temperature. What is the range of temperatures shown?",
-      image: "data-handling/line-graph-q87.svg",
       options: ["10°C", "12°C", "14°C", "16°C", "18°C"],
       correct: 2,
       explanation: "Highest = 26°C, Lowest = 12°C. Range = 26 - 12 = 14°C. ✓"
@@ -25278,7 +25094,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows sales. Which day had the highest sales?",
-      image: "data-handling/bar-chart-q99.svg",
       options: ["Monday", "Tuesday", "Wednesday", "Friday", "Thursday"],
       correct: 4,
       explanation: "Reading the bars, Thursday has the tallest bar = highest sales. ✓"
@@ -25320,7 +25135,6 @@ datahandling: {
       difficulty: 2,
       visual: { component: "LineGraph", props: { data: [{label: "Week 1", value: 20}, {label: "Week 2", value: 25}, {label: "Week 3", value: 30}, {label: "Week 4", value: 35}, {label: "Week 5", value: 40}, {label: "Week 6", value: 43}], xLabel: "Week", yLabel: "Score", showValues: false } },
       question: "This line graph shows progress. How much progress between Week 2 and Week 6?",
-      image: "data-handling/line-graph-q104.svg",
       options: ["14", "16", "22", "20", "18"],
       correct: 4,
       explanation: "Week 2 = 25, Week 6 = 43. Progress = 43 - 25 = 18. ✓"
@@ -25378,7 +25192,6 @@ datahandling: {
       id: 111,
       difficulty: 3,
       question: "This pie chart shows subjects. If 180 students surveyed, how many chose Maths?",
-      image: "data-handling/pie-chart-q111.svg",
       visual: { component: "PieChart", props: { sections: [{label: "Maths", angle: 110}, {label: "English", angle: 90}, {label: "Science", angle: 80}, {label: "Art", angle: 80}], showLabels: true, showValues: false, total: 180 } },
       options: ["40", "55", "50", "45", "60"],
       correct: 1,
@@ -25428,7 +25241,6 @@ datahandling: {
         }
       },
       question: "This bar chart shows attendance. What is the mean attendance?",
-      image: "data-handling/bar-chart-q115.svg",
       options: ["60", "58", "62", "64", "66"],
       correct: 0,
       explanation: "Adding bars: 55 + 60 + 65 + 60 = 240. Mean = 240 ÷ 4 = 60. ✓"
@@ -25462,7 +25274,6 @@ datahandling: {
       difficulty: 1,
       visual: { component: "LineGraph", props: { data: [{label: "Mon", value: 70}, {label: "Tue", value: 75}, {label: "Wed", value: 85}, {label: "Thu", value: 80}, {label: "Fri", value: 90}], xLabel: "Day", yLabel: "Visitors", showValues: false } },
       question: "This line graph shows visitors. On which day were there 85 visitors?",
-      image: "data-handling/line-graph-q119.svg",
       options: ["Monday", "Tuesday", "Friday", "Thursday", "Wednesday"],
       correct: 4,
       explanation: "Reading the graph, Wednesday shows 85 visitors. ✓"
@@ -25495,7 +25306,6 @@ datahandling: {
       id: 123,
       difficulty: 2,
       question: "This two-way table shows preferences. What is the total number surveyed?",
-      image: "data-handling/table-q123.svg",
       visual: { component: "TwoWayTable", props: { tableDesc: "Reading: Children=15, Teenagers=20, Adults=25. Sport: Children=25, Teenagers=20, Adults=15. Gaming: Children=20, Teenagers=15, Adults=15.", showTotals: false } },
       options: ["140", "150", "160", "170", "180"],
       correct: 3,
@@ -25611,7 +25421,6 @@ datahandling: {
     {
       id: 137,
       difficulty: 3,
-      image: "data-handling/pie-chart-q137.svg",
       visual: { component: "PieChart", props: { sections: [{label: "Football", angle: 90}, {label: "Cricket", angle: 60}, {label: "Tennis", angle: 120}, {label: "Swimming", angle: 90}], showLabels: true, showValues: false, total: 240 } },
       question: "A pie chart shows favourite sports for 240 children. Football is 90°, Cricket is 60°, Tennis is 120° and Swimming is 90°. How many children chose Tennis?",
       options: ["60", "70", "80", "90", "100"],
@@ -25629,7 +25438,6 @@ datahandling: {
     {
       id: 139,
       difficulty: 3,
-      image: "data-handling/pie-chart-q139.svg",
       visual: { component: "PieChart", props: { sections: [{label: "Bus", angle: 108}, {label: "Car", angle: 54}, {label: "Walk", angle: 90}, {label: "Cycle", angle: 108}], showLabels: true, showValues: false, total: 300 } },
       question: "A pie chart shows how 300 pupils travel to school. The Bus section has an angle of 108°. The Car section is half the size of the Bus section. How many pupils travel by Car?",
       options: ["36", "40", "54", "50", "45"],
