@@ -1450,18 +1450,34 @@ export function RectangleDiagram({
   showGrid = false,
   areaLabel = null,
   color = "#bfdbfe",
-  missingDim = null
+  missingDim = null,
+  label = null
 }) {
   const svgW = 400;
-  const svgH = 280;
+  const svgH = label ? 300 : 280;
   const padL = 70;
   const padR = 30;
   const padT = 30;
-  const padB = 50;
+  const padB = label ? 70 : 50;
   const maxW = svgW - padL - padR;
   const maxH = svgH - padT - padB;
+
+  // Extract numeric values for layout — strings like "?" or "3 × width" use defaults
+  const numLength = typeof length === 'number' ? length : 8;
+  const numWidth = typeof width === 'number' ? width : 5;
+  const isLengthString = typeof length === 'string';
+  const isWidthString = typeof width === 'string';
+
+  // Build display labels
+  const lengthLabel = isLengthString ? `${length}` :
+    (missingDim === 'length' || missingDim === 'all') ? `? ${dimUnit}` : `${length} ${dimUnit}`;
+  const widthLabel = isWidthString ? `${width}` :
+    (missingDim === 'width' || missingDim === 'all') ? `? ${dimUnit}` : `${width} ${dimUnit}`;
+  const lengthColor = (isLengthString || missingDim === 'length' || missingDim === 'all') ? '#dc2626' : '#6366f1';
+  const widthColor = (isWidthString || missingDim === 'width' || missingDim === 'all') ? '#dc2626' : '#6366f1';
+
   // Scale rectangle to match aspect ratio of actual dimensions
-  const aspect = length / width;
+  const aspect = numLength / numWidth;
   let rectW, rectH;
   if (aspect >= maxW / maxH) {
     rectW = maxW;
@@ -1483,8 +1499,8 @@ export function RectangleDiagram({
         {/* Grid lines if enabled */}
         {showGrid && (() => {
           const lines = [];
-          const cols = Math.min(length, 20);
-          const rows = Math.min(width, 15);
+          const cols = Math.min(numLength, 20);
+          const rows = Math.min(numWidth, 15);
           for (let i = 1; i < cols; i++) {
             const x = rx + (i / cols) * rectW;
             lines.push(<line key={`gc-${i}`} x1={x} y1={ry} x2={x} y2={ry + rectH} stroke="#93c5fd" strokeWidth="0.8" />);
@@ -1508,18 +1524,26 @@ export function RectangleDiagram({
         <line x1={rx} y1={ry + rectH + 20} x2={rx + rectW} y2={ry + rectH + 20}
               stroke="#6366f1" strokeWidth="2" markerStart="url(#rd-arrow-l)" markerEnd="url(#rd-arrow-r)" />
         <text x={rx + rectW / 2} y={ry + rectH + 42} textAnchor="middle"
-              fill={missingDim === 'length' || missingDim === 'all' ? '#dc2626' : '#6366f1'} fontSize="18" fontWeight="bold">
-          {missingDim === 'length' || missingDim === 'all' ? `? ${dimUnit}` : `${length} ${dimUnit}`}
+              fill={lengthColor} fontSize="18" fontWeight="bold">
+          {lengthLabel}
         </text>
 
         {/* Left dimension line — width */}
         <line x1={rx - 20} y1={ry} x2={rx - 20} y2={ry + rectH}
               stroke="#6366f1" strokeWidth="2" markerStart="url(#rd-arrow-u)" markerEnd="url(#rd-arrow-d)" />
         <text x={rx - 38} y={ry + rectH / 2 + 5} textAnchor="middle"
-              fill={missingDim === 'width' || missingDim === 'all' ? '#dc2626' : '#6366f1'} fontSize="18" fontWeight="bold"
+              fill={widthColor} fontSize="18" fontWeight="bold"
               transform={`rotate(-90, ${rx - 38}, ${ry + rectH / 2 + 5})`}>
-          {missingDim === 'width' || missingDim === 'all' ? `? ${dimUnit}` : `${width} ${dimUnit}`}
+          {widthLabel}
         </text>
+
+        {/* Extra label (e.g. "Perimeter = 48 cm") */}
+        {label && (
+          <text x={svgW / 2} y={svgH - 10} textAnchor="middle"
+                fill="#6366f1" fontSize="16" fontWeight="bold">
+            {label}
+          </text>
+        )}
 
         {/* Arrow markers */}
         <defs>
