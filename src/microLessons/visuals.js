@@ -497,22 +497,28 @@ export function NumberLine({
           );
         })}
 
-        {/* Points — coloured circles on the line; labels offset when too close */}
+        {/* Points — coloured circles on the line; labels at consistent height */}
         {(() => {
-          // Calculate label positions, offsetting when points are too close
-          const labelPositions = points.map((pt, i) => {
-            const x = toX(pt.value);
-            let y = lineY - 30;
-            // Check if this label would overlap with any previous label
-            for (let j = 0; j < i; j++) {
-              const prevX = toX(points[j].value);
-              if (Math.abs(x - prevX) < 70) {
-                // Too close — push this label further up
+          // Calculate label positions — all at same baseline unless genuinely overlapping
+          const sorted = points.map((pt, i) => ({ ...pt, idx: i, x: toX(pt.value) }))
+            .sort((a, b) => a.x - b.x);
+          const labelY = {};
+          sorted.forEach((pt, i) => {
+            let y = lineY - 34;
+            // Only stagger if the PREVIOUS sorted point's label is too close
+            if (i > 0) {
+              const prevPt = sorted[i - 1];
+              const prevLabelY = labelY[prevPt.idx];
+              if (Math.abs(pt.x - prevPt.x) < 50 && prevLabelY === lineY - 34) {
                 y = lineY - 58;
               }
             }
-            return { x, y };
+            labelY[pt.idx] = y;
           });
+          const labelPositions = points.map((pt, i) => ({
+            x: toX(pt.value),
+            y: labelY[i] || lineY - 34
+          }));
           return points.map((pt, i) => (
             <g key={`pt-${i}`}>
               <circle cx={toX(pt.value)} cy={lineY} r={16}
