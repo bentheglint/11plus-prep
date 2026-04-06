@@ -9,7 +9,8 @@ import {
   BarChart, PieChart, LineGraph, TwoWayTable, RectangleDiagram,
   TriangleAreaDiagram, ParallelogramDiagram, LShapeDiagram,
   NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
-  ClockFace, ThermometerDiagram, BuildingDiagram
+  ClockFace, ThermometerDiagram, BuildingDiagram,
+  RectangleComparison, RectangleGrid, DotPattern
 } from './microLessons/visuals';
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
@@ -50,7 +51,8 @@ const quizVisualComponents = {
   BarChart, PieChart, LineGraph, TwoWayTable, RectangleDiagram,
   TriangleAreaDiagram, ParallelogramDiagram, LShapeDiagram,
   NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
-  ClockFace, ThermometerDiagram, BuildingDiagram
+  ClockFace, ThermometerDiagram, BuildingDiagram,
+  RectangleComparison, RectangleGrid, DotPattern
 };
 
 const questionData = {

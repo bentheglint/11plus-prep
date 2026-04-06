@@ -1573,6 +1573,129 @@ export function RectangleDiagram({
 
 
 // ============================================================
+// RectangleComparison — Two rectangles side by side for comparison
+// ============================================================
+// Props:
+//   rect1: { length, width, label } — first rectangle
+//   rect2: { length, width, label } — second rectangle
+//   dimUnit — unit string
+
+export function RectangleComparison({
+  rect1 = { length: 5, width: 3, label: "Bed 1" },
+  rect2 = { length: 4, width: 4, label: "Bed 2" },
+  dimUnit = "m"
+}) {
+  const svgW = 400, svgH = 240;
+  const pad = 20;
+  const gap = 30;
+  const halfW = (svgW - pad * 2 - gap) / 2;
+  const maxH = svgH - pad * 2 - 40;
+
+  // Scale both rectangles to fit, preserving aspect ratios
+  const maxDim = Math.max(rect1.length, rect1.width, rect2.length, rect2.width);
+  const scale = Math.min(halfW / maxDim, maxH / maxDim) * 0.8;
+
+  const r1w = rect1.length * scale, r1h = rect1.width * scale;
+  const r2w = rect2.length * scale, r2h = rect2.width * scale;
+
+  const r1x = pad + (halfW - r1w) / 2;
+  const r2x = pad + halfW + gap + (halfW - r2w) / 2;
+  const r1y = pad + (maxH - r1h) / 2;
+  const r2y = pad + (maxH - r2h) / 2;
+
+  const renderRect = (x, y, w, h, length, width, label, color) => (
+    <g>
+      <rect x={x} y={y} width={w} height={h}
+            fill={color} stroke="#3b82f6" strokeWidth="2.5" rx="4" />
+      {/* Length label (bottom) */}
+      <text x={x + w / 2} y={y + h + 18} textAnchor="middle"
+            fontFamily="system-ui, -apple-system, sans-serif" fontSize="14"
+            fontWeight="bold" fill="#6366f1">{length} {dimUnit}</text>
+      {/* Width label (left) */}
+      <text x={x - 8} y={y + h / 2 + 5} textAnchor="end"
+            fontFamily="system-ui, -apple-system, sans-serif" fontSize="14"
+            fontWeight="bold" fill="#6366f1">{width} {dimUnit}</text>
+      {/* Label */}
+      <text x={x + w / 2} y={y + h + 36} textAnchor="middle"
+            fontFamily="system-ui, -apple-system, sans-serif" fontSize="13"
+            fontWeight="bold" fill="#64748b">{label}</text>
+    </g>
+  );
+
+  return (
+    <div className="flex justify-center">
+      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 420 }}>
+        {renderRect(r1x, r1y, r1w, r1h, rect1.length, rect1.width, rect1.label, "#bfdbfe")}
+        {renderRect(r2x, r2y, r2w, r2h, rect2.length, rect2.width, rect2.label, "#dbeafe")}
+      </svg>
+    </div>
+  );
+}
+
+
+// ============================================================
+// RectangleGrid — Multiple rectangles at proportional sizes
+// ============================================================
+// Props:
+//   rectangles: [{ length, width }] — array of rectangles to show
+//   dimUnit — unit string
+//   highlightIndex — which rectangle to highlight (optional)
+
+export function RectangleGrid({
+  rectangles = [],
+  dimUnit = "cm",
+  highlightIndex = null
+}) {
+  const svgW = 460, svgH = 260;
+  const pad = 10;
+  const gap = 8;
+  const cols = Math.min(rectangles.length, 3);
+  const rows = Math.ceil(rectangles.length / cols);
+
+  const cellW = (svgW - pad * 2 - gap * (cols - 1)) / cols;
+  const cellH = (svgH - pad * 2 - gap * (rows - 1)) / rows;
+
+  // Single shared scale so areas are visually comparable
+  const maxLength = Math.max(...rectangles.map(r => r.length));
+  const maxWidth = Math.max(...rectangles.map(r => r.width));
+  const globalScale = Math.min(
+    (cellW * 0.9) / maxLength,
+    (cellH * 0.6) / maxWidth
+  );
+
+  return (
+    <div className="flex justify-center">
+      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 440 }}>
+        {rectangles.map((rect, i) => {
+          const col = i % cols;
+          const row = Math.floor(i / cols);
+          const cx = pad + col * (cellW + gap) + cellW / 2;
+          const cy = pad + row * (cellH + gap) + cellH * 0.45;
+          const rw = rect.length * globalScale;
+          const rh = rect.width * globalScale;
+          const isHighlight = i === highlightIndex;
+
+          return (
+            <g key={i}>
+              <rect x={cx - rw / 2} y={cy - rh / 2} width={rw} height={rh}
+                    fill={isHighlight ? "#fecaca" : "#bfdbfe"}
+                    stroke={isHighlight ? "#ef4444" : "#3b82f6"}
+                    strokeWidth="2" rx="3" />
+              <text x={cx} y={cy + rh / 2 + 16} textAnchor="middle"
+                    fontFamily="system-ui, -apple-system, sans-serif" fontSize="13"
+                    fontWeight="bold" fill={isHighlight ? "#dc2626" : "#6366f1"}>
+                {rect.length}×{rect.width}
+              </text>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
+
+
+// ============================================================
 // TriangleAreaDiagram — Triangle with base, height, and optional
 // enclosing rectangle for area lessons
 // ============================================================
@@ -3052,6 +3175,142 @@ export function SequenceChain({
 //   pair1Color    — colour for pair 1 words (default brand violet)
 //   pair2Color    — colour for pair 2 word (default red)
 //   label         — optional label above the display
+
+
+// ============================================================
+// DotPattern — Dot arrangements showing number patterns
+// ============================================================
+// Props:
+//   type: "square" | "triangular" | "rectangular" | "linear" | "custom"
+//   terms: array of { n, value, label? } — which terms to show
+//   showQuestion: boolean — show "?" for the next term
+//   questionLabel: string — label under the "?" (e.g. "6×6")
+
+export function DotPattern({
+  type = "square",
+  terms = [],
+  showQuestion = true,
+  questionLabel = "?",
+  fixedCols = null
+}) {
+  const allItems = [...terms.map((t, i) => ({ ...t, isQ: false, idx: i }))];
+  if (showQuestion) allItems.push({ isQ: true, n: 0, value: '?', label: questionLabel });
+
+  // Decide layout: 1 row if ≤5 items, 2 rows if more
+  const useRows = allItems.length > 5 ? 2 : 1;
+  const perRow = Math.ceil(allItems.length / useRows);
+
+  // Scale dots based on largest term to avoid overlap
+  const maxN = Math.max(...terms.map(t => t.n), 1);
+  const baseDotGap = maxN <= 3 ? 16 : maxN <= 5 ? 12 : maxN <= 7 ? 9 : 7;
+  const baseDotR = maxN <= 3 ? 6 : maxN <= 5 ? 5 : maxN <= 7 ? 3.5 : 3;
+
+  const svgW = 500;
+  const rowH = useRows === 1 ? 200 : 160;
+  const svgH = useRows === 1 ? 240 : rowH * 2 + 20;
+  const pad = 15;
+  const slotW = (svgW - pad * 2) / perRow;
+
+  const getDots = (n) => {
+    const dots = [];
+    if (type === "square") {
+      for (let r = 0; r < n; r++)
+        for (let c = 0; c < n; c++)
+          dots.push({ r, c });
+    } else if (type === "triangular") {
+      for (let r = 0; r < n; r++)
+        for (let c = 0; c <= r; c++)
+          dots.push({ r, c, triRow: r });
+    } else if (type === "rectangular") {
+      for (let r = 0; r < n + 1; r++)
+        for (let c = 0; c < n; c++)
+          dots.push({ r, c });
+    } else if (type === "linear") {
+      if (fixedCols) {
+        // Draw rows of fixedCols dots, n rows total
+        for (let r = 0; r < n; r++)
+          for (let c = 0; c < fixedCols; c++)
+            dots.push({ r, c });
+      } else {
+        const show = Math.min(n, 10);
+        for (let c = 0; c < show; c++)
+          dots.push({ r: 0, c });
+      }
+    }
+    return dots;
+  };
+
+  return (
+    <div className="flex justify-center">
+      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 520 }}>
+        {allItems.map((item, idx) => {
+          const row = Math.floor(idx / perRow);
+          const col = idx % perRow;
+          const cx = pad + col * slotW + slotW / 2;
+          const baseY = row * rowH + rowH - 40;
+
+          if (item.isQ) {
+            return (
+              <g key="q">
+                <text x={cx} y={baseY - 20} textAnchor="middle"
+                      fontFamily="system-ui, -apple-system, sans-serif"
+                      fontSize="26" fontWeight="bold" fill="#dc2626">?</text>
+                <text x={cx} y={baseY + 6} textAnchor="middle"
+                      fontFamily="system-ui, -apple-system, sans-serif"
+                      fontSize="13" fontWeight="bold" fill="#dc2626">
+                  {item.label}
+                </text>
+              </g>
+            );
+          }
+
+          const dots = getDots(item.n);
+          if (dots.length === 0) return null;
+
+          const maxDotRow = dots.length > 0 ? Math.max(...dots.map(d => d.r)) : 0;
+          const maxDotCol = dots.length > 0 ? Math.max(...dots.map(d => d.c)) : 0;
+          const patternH = maxDotRow * baseDotGap;
+          const patternW = (type === "triangular")
+            ? (maxDotRow) * baseDotGap
+            : maxDotCol * baseDotGap;
+
+          return (
+            <g key={idx}>
+              {dots.map((d, di) => {
+                let dx, dy;
+                if (type === "triangular") {
+                  const rowWidth = d.triRow * baseDotGap;
+                  dx = cx - rowWidth / 2 + d.c * baseDotGap;
+                  dy = baseY - patternH - 20 + d.r * baseDotGap;
+                } else {
+                  dx = cx - patternW / 2 + d.c * baseDotGap;
+                  dy = baseY - patternH - 20 + d.r * baseDotGap;
+                }
+                return (
+                  <circle key={di} cx={dx} cy={dy} r={baseDotR}
+                          fill="#818cf8" stroke="#4f46e5" strokeWidth="1" />
+                );
+              })}
+              <text x={cx} y={baseY + 6} textAnchor="middle"
+                    fontFamily="system-ui, -apple-system, sans-serif"
+                    fontSize="14" fontWeight="bold" fill="#6366f1">
+                {item.value}
+              </text>
+              {item.label && (
+                <text x={cx} y={baseY + 20} textAnchor="middle"
+                      fontFamily="system-ui, -apple-system, sans-serif"
+                      fontSize="10" fill="#64748b">
+                  {item.label}
+                </text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
+
 
 export function AnalogyDisplay({
   pair1 = [],

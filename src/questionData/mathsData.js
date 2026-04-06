@@ -5727,7 +5727,6 @@ ratio: {
     {
       id: 5,
       difficulty: 1,
-      image: "ratio/paint-mixing-q5.svg",
       question: "Red paint and blue paint are mixed in the ratio 2:3 to make purple. If 6 litres of red paint are used, how much blue paint is needed?",
       options: ["4 litres", "6 litres", "8 litres", "9 litres", "12 litres"],
       correct: 3,
@@ -5785,7 +5784,6 @@ ratio: {
     {
       id: 12,
       difficulty: 1,
-      image: "ratio/map-scale-q12.svg",
       question: "A map scale is 1cm : 5km. A distance on the map is 8cm. What is the actual distance?",
       options: ["40 km", "35 km", "45 km", "50 km", "55 km"],
       correct: 0,
@@ -5898,7 +5896,6 @@ ratio: {
     {
       id: 26,
       difficulty: 3,
-      image: "ratio/building-scale-q26.svg",
       question: "A model of a building is made to scale 1:50. If the model is 60cm tall, how tall is the real building in metres?",
       options: ["20m", "25m", "40m", "35m", "30m"],
       correct: 4,
@@ -7678,7 +7675,6 @@ fractions: {
     {
       id: 1,
       difficulty: 1,
-      image: "fractions/bottle-q1.svg",
       question: "Aisha drinks 1/4 of a bottle of water before lunch and another 1/4 after lunch. What fraction of the bottle has she drunk altogether?",
       options: ["1/8", "2/3", "1/2", "2/8", "1/4"],
       correct: 2,
@@ -7761,7 +7757,6 @@ fractions: {
     {
       id: 11,
       difficulty: 2,
-      image: "fractions/jugs-q11.svg",
       question: "Two jugs are the same size. One is 2/3 full of squash and the other is 3/4 full. Which jug has more squash?",
       options: ["2/3", "They are equal", "3/4", "Cannot tell", "Neither"],
       correct: 2,
@@ -7915,7 +7910,6 @@ fractions: {
     {
       id: 30,
       difficulty: 1,
-      image: "fractions/jug-q30.svg",
       question: "A jug is 7/8 full of orange juice. Dad pours out 3/8 of the jug. What fraction of the jug still has juice? Give your answer in its simplest form.",
       options: ["4/8", "1/2", "3/8", "5/8", "4/16"],
       correct: 1,
@@ -17934,7 +17928,7 @@ areaperimeter: {
       id: 22,
       difficulty: 2,
       question: "Hannah has two rectangular flower beds. The first is 5m by 3m, and the second is 4m by 4m. Which has the greater area and by how much?",
-      image: "area-perimeter/flowerbeds-q22.svg",
+      visual: { component: "RectangleComparison", props: { rect1: { length: 5, width: 3, label: "Bed 1" }, rect2: { length: 4, width: 4, label: "Bed 2" }, dimUnit: "m" } },
       options: ["First bed by 1 square metre", "Second bed by 2 square metres", "They are equal", "First bed by 2 square metres", "Second bed by 1 square metre"],
       correct: 4,
       explanation: "First bed area: 5 × 3 = 15 m². Second bed area: 4 × 4 = 16 m². The second bed has greater area by 16 - 15 = 1 square metre. ✓"
@@ -17978,7 +17972,7 @@ areaperimeter: {
       id: 27,
       difficulty: 2,
       question: "Which of these rectangles has a different area from the others?",
-      image: "area-perimeter/rectangles-q27.svg",
+      visual: { component: "RectangleGrid", props: { rectangles: [{length: 9, width: 4}, {length: 12, width: 3}, {length: 18, width: 2}, {length: 6, width: 6}, {length: 8, width: 5}], dimUnit: "cm" } },
       options: ["9 cm by 4 cm", "12 cm by 3 cm", "18 cm by 2 cm", "6 cm by 6 cm", "8 cm by 5 cm"],
       correct: 4,
       explanation: "Calculate each area: 9 × 4 = 36 cm², 12 × 3 = 36 cm², 18 × 2 = 36 cm², 8 × 5 = 40 cm², 6 × 6 = 36 cm². The rectangle that is 8 cm by 5 cm has a different area (40 cm²) from the others (36 cm²). ✓"
@@ -18400,7 +18394,7 @@ areaperimeter: {
       id: 74,
       difficulty: 2,
       question: "Four of these rectangles have the same area. Which one is different?",
-      image: "area-perimeter/rectangles-q74.svg",
+      visual: { component: "RectangleGrid", props: { rectangles: [{length: 15, width: 4}, {length: 10, width: 7}, {length: 12, width: 5}, {length: 20, width: 3}, {length: 30, width: 2}], dimUnit: "cm" } },
       options: ["15 cm by 4 cm", "10 cm by 7 cm", "12 cm by 5 cm", "20 cm by 3 cm", "30 cm by 2 cm"],
       correct: 1,
       explanation: "Calculate each: 15×4=60, 20×3=60, 12×5=60, 10×7=70, 30×2=60. The 10×7 rectangle has different area. ✓"
@@ -18571,7 +18565,7 @@ areaperimeter: {
       id: 93,
       difficulty: 2,
       question: "Emma has two rectangular flower beds. The first is 9m by 6m, and the second is 8m by 7m. Which has the greater area and by how much?",
-      image: "area-perimeter/flowerbeds-q93.svg",
+      visual: { component: "RectangleComparison", props: { rect1: { length: 9, width: 6, label: "Bed 1" }, rect2: { length: 8, width: 7, label: "Bed 2" }, dimUnit: "m" } },
       options: ["Second bed by 2 square metres", "First bed by 2 square metres", "They are equal", "First bed by 1 square metre", "Second bed by 1 square metre"],
       correct: 0,
       explanation: "First bed: 9 × 6 = 54 m². Second bed: 8 × 7 = 56 m². Second bed is greater by 56 - 54 = 2 m². ✓"
@@ -18877,7 +18871,7 @@ areaperimeter: {
       id: 127,
       difficulty: 2,
       question: "Which rectangle does NOT have the same area as the others?",
-      image: "area-perimeter/rectangles-q127.svg",
+      visual: { component: "RectangleGrid", props: { rectangles: [{length: 24, width: 5}, {length: 30, width: 4}, {length: 20, width: 6}, {length: 40, width: 3}, {length: 15, width: 9}], dimUnit: "cm" } },
       options: ["24 cm by 5 cm", "30 cm by 4 cm", "20 cm by 6 cm", "40 cm by 3 cm", "15 cm by 9 cm"],
       correct: 4,
       explanation: "Calculate: 24×5=120, 30×4=120, 20×6=120, 15×9=135, 40×3=120. The 15×9 has different area. ✓"
@@ -22947,7 +22941,7 @@ sequences: {
     {
       id: 4,
       difficulty: 2,
-      image: "sequences/square-numbers-q4.svg",
+      visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:1, label:"1×1"}, {n:2, value:4, label:"2×2"}, {n:3, value:9, label:"3×3"}, {n:4, value:16, label:"4×4"}, {n:5, value:25, label:"5×5"}], questionLabel: "6×6" } },
       question: "Tom notices the pattern: 1, 4, 9, 16, 25, ?. What is the next number?",
       options: ["30", "32", "36", "34", "38"],
       correct: 2,
@@ -23068,7 +23062,7 @@ sequences: {
     {
       id: 19,
       difficulty: 2,
-      image: "sequences/rectangular-numbers-q19.svg",
+      visual: { component: "DotPattern", props: { type: "rectangular", terms: [{n:1, value:2, label:"1×2"}, {n:2, value:6, label:"2×3"}, {n:3, value:12, label:"3×4"}, {n:4, value:20, label:"4×5"}], questionLabel: "5×6" } },
       question: "In a number puzzle, the sequence reads 2, 6, 12, 20, ?, 42. What is the missing number?",
       options: ["28", "32", "30", "34", "36"],
       correct: 2,
@@ -23109,7 +23103,7 @@ sequences: {
     {
       id: 24,
       difficulty: 2,
-      image: "sequences/square-numbers-q24.svg",
+      visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:1, label:"1×1"}, {n:2, value:4, label:"2×2"}, {n:3, value:9, label:"3×3"}, {n:4, value:16, label:"4×4"}, {n:5, value:25, label:"5×5"}, {n:6, value:36, label:"6×6"}], showQuestion: true, questionLabel: "7×7" } },
       question: "Tiles are arranged in square patterns: 1, 4, 9, 16, 25, 36. How many tiles are needed for the next square pattern?",
       options: ["42", "45", "49", "48", "47"],
       correct: 2,
@@ -23278,7 +23272,7 @@ sequences: {
     {
       id: 45,
       difficulty: 2,
-      image: "sequences/growing-stacks-q45.svg",
+      visual: { component: "DotPattern", props: { type: "linear", fixedCols: 6, terms: [{n:1, value:6, label:"Week 1"}, {n:2, value:12, label:"Week 2"}, {n:3, value:18, label:"Week 3"}, {n:4, value:24, label:"Week 4"}], questionLabel: "Week 9?" } },
       question: "A stack of books grows by 6 each week. After week 1 there are 6 books, week 2 has 12, week 3 has 18, week 4 has 24, and so on. How many books will there be after week 9?",
       options: ["48", "50", "52", "54", "56"],
       correct: 3,
@@ -23375,7 +23369,7 @@ sequences: {
     {
       id: 57,
       difficulty: 3,
-      image: "sequences/cube-numbers-q57.svg",
+      visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:"1×1×1=1", label:"1³"}, {n:2, value:"2×2×2=8", label:"2³"}, {n:3, value:"3×3×3=27", label:"3³"}, {n:4, value:"4×4×4=64", label:"4³"}, {n:5, value:"5×5×5=125", label:"5³"}], questionLabel: "6³" } },
       question: "Blocks are stacked into cubes of increasing size: 1, 8, 27, 64, 125. How many blocks are in the next cube?",
       options: ["216", "196", "200", "180", "225"],
       correct: 0,
@@ -23896,7 +23890,7 @@ sequences: {
     {
       id: 122,
       difficulty: 3,
-      image: "sequences/triangular-numbers-q122.svg",
+      visual: { component: "DotPattern", props: { type: "triangular", terms: [{n:1, value:1}, {n:2, value:3}, {n:3, value:6}, {n:4, value:10}, {n:5, value:15}, {n:6, value:21}], questionLabel: "10th?" } },
       question: "Triangular numbers go 1, 3, 6, 10, 15, 21, ... What is the 10th triangular number?",
       options: ["55", "50", "45", "60", "66"],
       correct: 0,
@@ -23921,7 +23915,7 @@ sequences: {
     {
       id: 125,
       difficulty: 3,
-      image: "sequences/square-plus-one-q125.svg",
+      visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:"1+1=2", label:"1²+1"}, {n:2, value:"4+1=5", label:"2²+1"}, {n:3, value:"9+1=10", label:"3²+1"}, {n:4, value:"16+1=17", label:"4²+1"}, {n:5, value:"25+1=26", label:"5²+1"}], questionLabel: "9th?" } },
       question: "Look at this sequence: 2, 5, 10, 17, 26, 37, ... The differences between terms increase by 2 each time. What is the 9th term?",
       options: ["58", "65", "74", "82", "91"],
       correct: 3,
