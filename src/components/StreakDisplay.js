@@ -159,11 +159,11 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#6C5CE7] font-bold mt-0.5">★</span>
-                  <span>Aim for <strong className="text-[#2D3436]">5 days a week</strong> — weekends off won't break your streak!</span>
+                  <span>Practise <strong className="text-[#2D3436]">5 out of every 7 days</strong> to keep your streak going</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#FF6B6B] font-bold mt-0.5">!</span>
-                  <span>Miss <strong className="text-[#2D3436]">4 days in a row</strong> and your streak resets to zero</span>
+                  <span>Drop below <strong className="text-[#2D3436]">5 days in any week</strong> and your streak resets</span>
                 </p>
               </div>
             </div>
