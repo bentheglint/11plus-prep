@@ -23914,7 +23914,6 @@ sequences: {
     {
       id: 125,
       difficulty: 3,
-      visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:"1+1=2", label:"1²+1"}, {n:2, value:"4+1=5", label:"2²+1"}, {n:3, value:"9+1=10", label:"3²+1"}, {n:4, value:"16+1=17", label:"4²+1"}, {n:5, value:"25+1=26", label:"5²+1"}], questionLabel: "9th?" } },
       question: "Look at this sequence: 2, 5, 10, 17, 26, 37, ... The differences between terms increase by 2 each time. What is the 9th term?",
       options: ["58", "65", "74", "82", "91"],
       correct: 3,
