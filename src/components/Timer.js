@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function Timer({ totalSeconds, onTimeUp, mode = 'countdown', resetKey, className, paused = false, startFrom = 0 }) {
+function Timer({ totalSeconds, onTimeUp, mode = 'countdown', resetKey, className, paused = false, startFrom = 0, onTick }) {
   const [remaining, setRemaining] = useState(mode === 'elapsed' ? startFrom : totalSeconds);
   const intervalRef = useRef(null);
   const hasExpired = useRef(false);
@@ -35,10 +35,14 @@ function Timer({ totalSeconds, onTimeUp, mode = 'countdown', resetKey, className
         });
       }, 1000);
     } else {
-      // Elapsed mode: count up (pauses when paused prop is true)
+      // Elapsed mode: count up, but pause when paused prop is true
       if (!paused) {
         intervalRef.current = setInterval(() => {
-          setRemaining(prev => prev + 1);
+          setRemaining(prev => {
+            const next = prev + 1;
+            if (onTick) onTick(next);
+            return next;
+          });
         }, 1000);
       }
     }

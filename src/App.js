@@ -118,7 +118,7 @@ function App() {
   const questionStartTime = React.useRef(Date.now());
   const pausedTimeMs = React.useRef(0);        // accumulated pause time for current question
   const pauseStartTime = React.useRef(null);    // when the current pause began
-  const visibleElapsedSecs = React.useRef(0);   // tracks visible timer for resume after lesson
+  const [savedTimerSecs, setSavedTimerSecs] = useState(0); // visible timer value saved before lesson
   const quizSessionId = React.useRef(Date.now());
   // Resume timer when AI tutor chat closes
   const prevShowTutorChat = React.useRef(false);
@@ -218,8 +218,7 @@ function App() {
     setSelectedPair(state.selectedPair);
     setShowFeedback(state.showFeedback);
     quizSessionId.current = state.sessionId;
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null; visibleElapsedSecs.current = 0;
-    setCurrentView('quiz');
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    setCurrentView('quiz');
   }, [quizSaveKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Keep Dev Review panel context updated
@@ -337,8 +336,8 @@ function App() {
     setQuizMode('challenge');
     setCurrentQuestionIndex(0);
     setAnswers([]);
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null; visibleElapsedSecs.current = 0;
-    quizSessionId.current = Date.now();
+    setSavedTimerSecs(0);
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
     setPostQuestionTip(null);
@@ -356,8 +355,8 @@ function App() {
     setQuizMode('daily');
     setCurrentQuestionIndex(0);
     setAnswers([]);
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null; visibleElapsedSecs.current = 0;
-    quizSessionId.current = Date.now();
+    setSavedTimerSecs(0);
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
     setPostQuestionTip(null);
@@ -380,9 +379,9 @@ function App() {
     setQuizQuestions(selected);
     setQuizMode('focused');
     setCurrentQuestionIndex(0);
+    setSavedTimerSecs(0);
     setAnswers([]);
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null; visibleElapsedSecs.current = 0;
-    quizSessionId.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
     setPostQuestionTip(null);
@@ -514,8 +513,7 @@ function App() {
 
   const handleNextQuestion = () => {
     // Reset timer for next question
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null; visibleElapsedSecs.current = 0;
-    if (currentQuestionIndex < quizQuestions.length - 1) {
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
       setSelectedPair([]);
@@ -650,9 +648,6 @@ function App() {
   const handleFindLesson = () => {
     // Pause the question timer — don't penalise children for using learning tools
     pauseStartTime.current = Date.now();
-    // Save visible timer position so it can resume after lesson
-    const elapsed = Math.floor((Date.now() - questionStartTime.current - pausedTimeMs.current) / 1000);
-    visibleElapsedSecs.current = Math.max(0, elapsed);
     const currentQ = quizQuestions[currentQuestionIndex];
     const topicKey = currentQ.topicKey || selectedTopic;
     const questionId = currentQ.question.id;
@@ -1534,7 +1529,9 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onNextQuestion={handleNextQuestion}
         onFindLesson={handleFindLesson}
         onAskTutor={handleAskTutor}
-        timerResumeFrom={visibleElapsedSecs.current}
+        timerPaused={currentView !== 'quiz'}
+        timerStartFrom={savedTimerSecs}
+        onTimerTick={(secs) => setSavedTimerSecs(secs)}
         onSendMessage={handleSendMessage}
         onUserMessageChange={setUserMessage}
         onToggleListening={(target) => toggleListening(target === 'feedback' ? setFeedbackText : setUserMessage)}
