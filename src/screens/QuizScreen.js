@@ -14,6 +14,7 @@ function QuizScreen({
   onNextQuestion, onFindLesson, onAskTutor, onSendMessage,
   onUserMessageChange, onToggleListening, onFeedbackTextChange,
   onSubmitFeedback, onToggleFeedbackForm, onBack,
+  timerResumeFrom = 0,
 }) {
   const currentQ = quizQuestions[currentQuestionIndex];
   const currentQuestion = currentQ.question;
@@ -52,7 +53,7 @@ function QuizScreen({
                 </span>
                 <div className="flex items-center gap-2">
                   <div style={{ display: timerEnabled ? 'block' : 'none' }}>
-                    <Timer mode="elapsed" />
+                    <Timer mode="elapsed" paused={showTutorChat} startFrom={timerResumeFrom} />
                   </div>
                   <button
                     onClick={() => setTimerEnabled(!timerEnabled)}
