@@ -23369,7 +23369,6 @@ sequences: {
     {
       id: 57,
       difficulty: 3,
-      visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:"1×1×1=1", label:"1³"}, {n:2, value:"2×2×2=8", label:"2³"}, {n:3, value:"3×3×3=27", label:"3³"}, {n:4, value:"4×4×4=64", label:"4³"}, {n:5, value:"5×5×5=125", label:"5³"}], questionLabel: "6³" } },
       question: "Blocks are stacked into cubes of increasing size: 1, 8, 27, 64, 125. How many blocks are in the next cube?",
       options: ["216", "196", "200", "180", "225"],
       correct: 0,
