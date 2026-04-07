@@ -987,17 +987,19 @@ export function AngleDiagram({
   color3 = "#34d399",
   showAngle2 = true,
   showAngle3 = true,
-  totalLabel = null
+  totalLabel = null,
+  labels = []
 }) {
   const DEG = Math.PI / 180;
 
   // Tag each angle with its display properties
+  // Custom labels override defaults (for algebraic expressions like "3x°")
   const entries = [
-    { value: angle1, color: color1, label: `${angle1}°` },
+    { value: angle1, color: color1, label: labels[0] || `${angle1}°` },
     { value: angle2, color: showAngle2 ? color2 : "#9ca3af",
-      label: showAngle2 ? `${angle2}°` : "?°" },
+      label: labels[1] || (showAngle2 ? `${angle2}°` : "?°") },
     { value: angle3, color: showAngle3 ? color3 : "#9ca3af",
-      label: showAngle3 ? `${angle3}°` : "?°" }
+      label: labels[2] || (showAngle3 ? `${angle3}°` : "?°") }
   ];
 
   const hasRight = entries.some(e => e.value === 90);

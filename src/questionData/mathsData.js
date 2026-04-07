@@ -7683,7 +7683,7 @@ fractions: {
     {
       id: 2,
       difficulty: 1,
-      visual: { component: "BarModel", props: { segments: [{value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", empty: true}, {value: 1, label: "1/6", empty: true}, {value: 1, label: "1/6", empty: true}], totalLabel: "3/6", comparison: [{value: 1, label: "1/2", color: "#87CEFA"}, {value: 1, label: "1/2", empty: true}], comparisonLabel: "1/2" } },
+      visual: { component: "BarModel", props: { segments: [{value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", color: "#87CEFA"}, {value: 1, label: "1/6", empty: true}, {value: 1, label: "1/6", empty: true}, {value: 1, label: "1/6", empty: true}], totalLabel: "3/6" } },
       question: "Which fraction is equivalent to 3/6?",
       options: ["1/3", "3/4", "2/3", "1/2", "2/4"],
       correct: 3,
@@ -25904,7 +25904,7 @@ datahandling: {
         component: "TwoWayTable",
         props: {
           tableDesc: "Boys: Pasta=11, Curry=9, Roast=14. Girls: Pasta=13, Curry=7, Roast=10",
-          showTotals: true
+          showTotals: false
         }
       },
       question: "The table shows the favourite school dinners of boys and girls. What is the total number of children who chose Pasta?",
