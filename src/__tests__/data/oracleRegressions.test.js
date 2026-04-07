@@ -690,3 +690,175 @@ describe('Cross-Question Analysis — VR-wide Word Repetition', () => {
     expect(overused).toEqual([]);
   });
 });
+
+// ══════════════════════════════════════════════════════════════
+// Content Integrity Tests
+// Catches classes of error found via user feedback that existing
+// tests missed. Each test targets a PATTERN, not a single instance.
+// ══════════════════════════════════════════════════════════════
+
+describe('Content Integrity — Missing Letters fragment + stem = real word', () => {
+  // Found via feedback: Q94 had "CIENT" but efficient needs "ICIENT"
+  // This test reconstructs every 3-letter stolen word question and
+  // checks the result is a plausible word (6+ letters, no weird chars)
+
+  const questions = getTopicQuestions(vrData, 'missingLettersWords');
+
+  it('every 3-letter stolen word question produces a valid-looking complete word', () => {
+    const problems = [];
+    questions.forEach(q => {
+      if (!q.question) return;
+      // Match pattern: ( _ _ _ ) STEM or STEM ( _ _ _ )
+      const frontMatch = q.question.match(/\( _ _ _ \)\s*([A-Z]+)/);
+      const backMatch = q.question.match(/([A-Z]+)\s*\( _ _ _ \)/);
+      if (!frontMatch && !backMatch) return;
+
+      const stem = frontMatch ? frontMatch[1] : backMatch[1];
+      const answer = q.options?.[q.correct];
+      if (!answer || answer.length !== 3) return;
+      // Skip if stem is too short (single-letter gap questions use different format)
+      if (stem.length < 4) return;
+
+      const fullWord = frontMatch
+        ? answer.toUpperCase() + stem
+        : stem + answer.toUpperCase();
+
+      // Basic checks: should be 6+ letters, all alpha, no repeated fragments
+      if (fullWord.length < 6) {
+        problems.push(`Q${q.id}: ${answer} + ${stem} = ${fullWord} (too short)`);
+      }
+      if (/(.)\1{3,}/.test(fullWord)) {
+        problems.push(`Q${q.id}: ${answer} + ${stem} = ${fullWord} (suspicious repeated chars)`);
+      }
+
+      // Check the explanation mentions the full word
+      if (q.explanation) {
+        const fullWordLower = fullWord.toLowerCase();
+        const explanationLower = q.explanation.toLowerCase();
+        if (!explanationLower.includes(fullWordLower) &&
+            !explanationLower.includes(fullWordLower.charAt(0).toUpperCase() + fullWordLower.slice(1))) {
+          problems.push(`Q${q.id}: ${fullWord} not found in explanation`);
+        }
+      }
+    });
+    if (problems.length) console.log('Fragment+stem issues:', problems);
+    expect(problems).toEqual([]);
+  });
+});
+
+describe('Content Integrity — Synonym pick-from-sets no competing pairs', () => {
+  // Found via feedback: Q87 had hasty/rushed as a second valid pair
+  // This test checks every pick-from-sets synonym question for known
+  // synonym pairs in the distractors
+
+  const questions = getTopicQuestions(vrData, 'synonyms');
+
+  // Common synonym pairs that should never both appear across setA/setB
+  // (unless they ARE the intended answer pair)
+  const knownSynonymPairs = [
+    ['happy', 'joyful'], ['sad', 'unhappy'], ['big', 'large'], ['small', 'tiny'],
+    ['fast', 'quick'], ['slow', 'sluggish'], ['angry', 'furious'], ['scared', 'frightened'],
+    ['brave', 'courageous'], ['clever', 'intelligent'], ['kind', 'generous'],
+    ['beautiful', 'gorgeous'], ['ugly', 'hideous'], ['rich', 'wealthy'], ['poor', 'destitute'],
+    ['old', 'ancient'], ['new', 'modern'], ['hot', 'scorching'], ['cold', 'freezing'],
+    ['loud', 'noisy'], ['quiet', 'silent'], ['hard', 'difficult'], ['easy', 'simple'],
+    ['begin', 'start'], ['end', 'finish'], ['buy', 'purchase'], ['sell', 'vend'],
+    ['hasty', 'rushed'], ['calm', 'serene'], ['bold', 'daring'], ['shy', 'timid'],
+    ['glad', 'pleased'], ['afraid', 'scared'], ['weary', 'tired'], ['strong', 'powerful'],
+    ['weak', 'feeble'], ['dull', 'boring'], ['bright', 'vivid'], ['vague', 'unclear'],
+    ['polite', 'courteous'], ['rude', 'impolite'], ['tidy', 'neat'], ['messy', 'untidy'],
+    ['sturdy', 'robust'], ['fragile', 'delicate'], ['soggy', 'damp'], ['dry', 'arid'],
+    ['swift', 'rapid'], ['gentle', 'tender'], ['fierce', 'ferocious'], ['humble', 'modest'],
+    ['arrogant', 'conceited'], ['irritate', 'annoy'], ['destroy', 'demolish'],
+    ['grab', 'seize'], ['permit', 'allow'], ['assist', 'help'], ['accept', 'agree'],
+    ['unite', 'combine'], ['decrease', 'reduce'], ['defend', 'protect'],
+  ];
+
+  it('no distractor words form a known synonym pair across setA/setB', () => {
+    const problems = [];
+    questions.forEach(q => {
+      if (!q.setA || !q.setB || !q.correctPair) return;
+      const answerA = q.correctPair[0];
+      const answerB = q.correctPair[1];
+
+      // Check every non-answer word in setA against every non-answer word in setB
+      q.setA.forEach((wordA, iA) => {
+        if (iA === answerA) return; // skip the intended answer
+        q.setB.forEach((wordB, iB) => {
+          if (iB === answerB) return; // skip the intended answer
+          const a = wordA.toLowerCase();
+          const b = wordB.toLowerCase();
+          for (const pair of knownSynonymPairs) {
+            if ((a === pair[0] && b === pair[1]) || (a === pair[1] && b === pair[0])) {
+              problems.push(`Q${q.id}: distractor pair "${wordA}/${wordB}" are synonyms`);
+            }
+          }
+        });
+      });
+    });
+    if (problems.length) console.log('Competing synonym pairs:', problems);
+    expect(problems).toEqual([]);
+  });
+});
+
+describe('Content Integrity — Explanations must not contradict themselves', () => {
+  // Found via feedback: Q371 explanation said "can be debated" and "actually"
+  // Scan all explanations for hedging/contradictory language
+
+  const hedgePatterns = [
+    /can be debated/i,
+    /actually the (?:clear|real|correct) answer/i,
+    /none of these perfectly fit/i,
+    /but actually/i,
+    /this is debatable/i,
+    /arguably/i,
+  ];
+
+  it('no maths explanation contains self-contradicting language', () => {
+    const problems = [];
+    Object.entries(mathsData.topics || {}).forEach(([topicKey, topic]) => {
+      (topic.questions || []).forEach(q => {
+        if (!q.explanation) return;
+        for (const pattern of hedgePatterns) {
+          if (pattern.test(q.explanation)) {
+            problems.push(`${topicKey} Q${q.id}: "${q.explanation.slice(0, 80)}..." matches ${pattern}`);
+          }
+        }
+      });
+    });
+    if (problems.length) console.log('Hedging explanations (maths):', problems);
+    expect(problems).toEqual([]);
+  });
+
+  it('no English explanation contains self-contradicting language', () => {
+    const problems = [];
+    Object.entries(englishData.topics || {}).forEach(([topicKey, topic]) => {
+      (topic.questions || []).forEach(q => {
+        if (!q.explanation) return;
+        for (const pattern of hedgePatterns) {
+          if (pattern.test(q.explanation)) {
+            problems.push(`${topicKey} Q${q.id}: "${q.explanation.slice(0, 80)}..." matches ${pattern}`);
+          }
+        }
+      });
+    });
+    if (problems.length) console.log('Hedging explanations (English):', problems);
+    expect(problems).toEqual([]);
+  });
+
+  it('no VR explanation contains self-contradicting language', () => {
+    const problems = [];
+    Object.entries(vrData.topics || {}).forEach(([topicKey, topic]) => {
+      (topic.questions || []).forEach(q => {
+        if (!q.explanation) return;
+        for (const pattern of hedgePatterns) {
+          if (pattern.test(q.explanation)) {
+            problems.push(`${topicKey} Q${q.id}: "${q.explanation.slice(0, 80)}..." matches ${pattern}`);
+          }
+        }
+      });
+    });
+    if (problems.length) console.log('Hedging explanations (VR):', problems);
+    expect(problems).toEqual([]);
+  });
+});

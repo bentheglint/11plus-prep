@@ -8969,7 +8969,7 @@ const vrData = {
         {
           id: 89,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CADE",
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) ADE",
           options: ["ARC","TIP","HUB","CUP","MOB"],
           correct: 0,
           explanation: "The answer is ARC, making ARCADE. An arcade is a covered passage with shops along one or both sides. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
@@ -8985,7 +8985,7 @@ const vrData = {
         {
           id: 91,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OSITY",
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) IOSITY",
           options: ["MOB","TIP","CUR","HUB","JAR"],
           correct: 2,
           explanation: "The answer is CUR, making CURIOSITY. Curiosity is a strong desire to know or learn something. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
@@ -9017,7 +9017,7 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BRATE",
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) EBRATE",
           options: ["TIP","CEL","MOB","JAR","HUB"],
           correct: 1,
           explanation: "The answer is CEL, making CELEBRATE. Celebrate means to mark a special occasion with enjoyable activities. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
@@ -9041,7 +9041,7 @@ const vrData = {
         {
           id: 98,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LENGE",
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LLENGE",
           options: ["TIP","HUB","JAR","MOB","CHA"],
           correct: 4,
           explanation: "The answer is CHA, making CHALLENGE. A challenge is a task or situation that tests someone's abilities. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
