@@ -7,114 +7,192 @@ import { topicNames } from '../RecommendationCard';
  * Dots never move — only the text labels shift. Returns labels
  * with final (lx, ly) positions and whether a leader line is needed.
  */
-function resolveLabels(labels, plotBounds) {
-  // Approximate text dimensions: ~6px per char width, 14px height
-  const CHAR_W = 6;
+/**
+ * 8-position greedy label placement with iterative refinement.
+ * Avoids label-label AND label-dot overlaps.
+ *
+ * @param {Array} labels — [{topicKey, cx, cy, lx, ly, text, opacity}]
+ * @param {Array} dots   — [{cx, cy}] all dot positions (for label-dot collision)
+ * @param {Object} plotBounds — {top, bottom, left, right}
+ */
+function resolveLabels(labels, dots, plotBounds) {
+  const CHAR_W = 5.5;
   const LABEL_H = 14;
-  const LABEL_PAD = 3;
-  const DOT_PROXIMITY = 50; // px — dots closer than this are "clustered"
+  const LABEL_PAD = 4;
+  const DOT_R = 10; // dot radius + small buffer
 
-  // Calculate bounding boxes
+  // Helper: compute bounding box for a label at (lx, ly) with given anchor
+  const bbox = (lx, ly, textW, anchor) => {
+    const left = anchor === 'start' ? lx : anchor === 'end' ? lx - textW : lx - textW / 2;
+    return { left, right: left + textW, top: ly - LABEL_H, bottom: ly };
+  };
+
+  // Helper: area of overlap between two rects
+  const rectOverlap = (a, b) => {
+    const ox = Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left));
+    const oy = Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top));
+    return ox * oy;
+  };
+
+  // Helper: does rect overlap a circle at (cx, cy) with radius r?
+  const rectCircleOverlap = (rect, cx, cy, r) => {
+    const nearX = Math.max(rect.left, Math.min(cx, rect.right));
+    const nearY = Math.max(rect.top, Math.min(cy, rect.bottom));
+    return (nearX - cx) ** 2 + (nearY - cy) ** 2 < r * r;
+  };
+
+  // Helper: how far outside bounds is this rect?
+  const outOfBounds = (rect) => {
+    let penalty = 0;
+    if (rect.left < plotBounds.left) penalty += plotBounds.left - rect.left;
+    if (rect.right > plotBounds.right) penalty += rect.right - plotBounds.right;
+    if (rect.top < plotBounds.top) penalty += plotBounds.top - rect.top;
+    if (rect.bottom > plotBounds.bottom) penalty += rect.bottom - plotBounds.bottom;
+    return penalty;
+  };
+
+  // Build items with text width
   const items = labels.map(l => {
     const textW = l.text.length * CHAR_W;
-    return {
-      ...l,
-      width: textW,
-      height: LABEL_H,
-      origLx: l.lx,
-      origLy: l.ly,
-      left: l.lx - textW / 2,
-      right: l.lx + textW / 2,
-      top: l.ly - LABEL_H,
-      bottom: l.ly,
-    };
+    return { ...l, textW };
   });
 
-  // Fan out horizontally: for dots that are close together, alternate
-  // labels left and right so leader lines don't overlap
-  items.sort((a, b) => a.cx - b.cx);
-  for (let i = 0; i < items.length; i++) {
-    for (let j = i + 1; j < items.length; j++) {
-      const dx = Math.abs(items[i].cx - items[j].cx);
-      const dy = Math.abs(items[i].cy - items[j].cy);
-      if (dx < DOT_PROXIMITY && dy < DOT_PROXIMITY) {
-        // Dots are clustered — offset labels in opposite horizontal directions
-        const fanOffset = 40;
-        // Left dot gets label to the left, right dot to the right
-        if (items[i].cx <= items[j].cx) {
-          if (items[i].lx === items[i].origLx) {
-            items[i].lx -= fanOffset;
-            items[i].left -= fanOffset;
-            items[i].right -= fanOffset;
-          }
-          if (items[j].lx === items[j].origLx) {
-            items[j].lx += fanOffset;
-            items[j].left += fanOffset;
-            items[j].right += fanOffset;
-          }
-        }
-      }
-    }
-  }
+  // Sort by density (most crowded dots first — hardest to place)
+  items.sort((a, b) => {
+    const densityA = dots.filter(d => Math.hypot(d.cx - a.cx, d.cy - a.cy) < 50).length;
+    const densityB = dots.filter(d => Math.hypot(d.cx - b.cx, d.cy - b.cy) < 50).length;
+    return densityB - densityA || a.topicKey.localeCompare(b.topicKey);
+  });
 
-  // Clamp labels horizontally within plot bounds
+  // 8 candidate positions around each dot
+  const candidates = (cx, cy, textW) => [
+    { lx: cx + 14, ly: cy + 4,   anchor: 'start', name: 'E'  },  // right (preferred)
+    { lx: cx - 14, ly: cy + 4,   anchor: 'end',   name: 'W'  },  // left
+    { lx: cx,      ly: cy - 16,  anchor: 'middle', name: 'N'  },  // above
+    { lx: cx,      ly: cy + 20,  anchor: 'middle', name: 'S'  },  // below
+    { lx: cx + 14, ly: cy - 12,  anchor: 'start', name: 'NE' },
+    { lx: cx - 14, ly: cy - 12,  anchor: 'end',   name: 'NW' },
+    { lx: cx + 14, ly: cy + 18,  anchor: 'start', name: 'SE' },
+    { lx: cx - 14, ly: cy + 18,  anchor: 'end',   name: 'SW' },
+  ];
+
+  // Phase 1: Greedy placement
+  const placed = []; // [{left, right, top, bottom, ...}]
+
   items.forEach(item => {
-    if (item.left < plotBounds.left) {
-      const shift = plotBounds.left - item.left;
-      item.lx += shift;
-      item.left += shift;
-      item.right += shift;
-    }
-    if (item.right > plotBounds.right) {
-      const shift = item.right - plotBounds.right;
-      item.lx -= shift;
-      item.left -= shift;
-      item.right -= shift;
-    }
+    const cands = candidates(item.cx, item.cy, item.textW);
+    let bestScore = Infinity;
+    let bestCand = cands[0];
+    let bestBox = bbox(cands[0].lx, cands[0].ly, item.textW, cands[0].anchor);
+
+    cands.forEach(c => {
+      const box = bbox(c.lx, c.ly, item.textW, c.anchor);
+      let score = 0;
+
+      // Penalty: overlap with already-placed labels
+      placed.forEach(p => {
+        score += rectOverlap(box, p) * 100;
+      });
+
+      // Penalty: overlap with any dot — very high to make this effectively impossible
+      dots.forEach(d => {
+        if (rectCircleOverlap(box, d.cx, d.cy, DOT_R)) score += 100000;
+      });
+
+      // Penalty: outside plot bounds
+      score += outOfBounds(box) * 50;
+
+      // Penalty: distance from dot (prefer close labels)
+      score += Math.hypot(c.lx - item.cx, c.ly - item.cy) * 0.5;
+
+      // Bonus: prefer E/W (horizontal = easier to read)
+      if (c.name === 'E' || c.name === 'W') score -= 15;
+
+      if (score < bestScore) {
+        bestScore = score;
+        bestCand = c;
+        bestBox = box;
+      }
+    });
+
+    item.lx = bestCand.lx;
+    item.ly = bestCand.ly;
+    item.anchor = bestCand.anchor;
+    item.left = bestBox.left;
+    item.right = bestBox.right;
+    item.top = bestBox.top;
+    item.bottom = bestBox.bottom;
+    placed.push({ left: bestBox.left - LABEL_PAD, right: bestBox.right + LABEL_PAD,
+                  top: bestBox.top - LABEL_PAD, bottom: bestBox.bottom + LABEL_PAD });
   });
 
-  // Sort by Y for vertical de-collision
-  items.sort((a, b) => a.ly - b.ly);
-
-  // Push overlapping labels apart vertically
-  for (let pass = 0; pass < 5; pass++) {
+  // Phase 2: Iterative refinement — push remaining overlaps apart in X and Y
+  for (let pass = 0; pass < 30; pass++) {
     let moved = false;
     for (let i = 0; i < items.length; i++) {
       for (let j = i + 1; j < items.length; j++) {
-        const a = items[i];
-        const b = items[j];
-        if (a.right < b.left || b.right < a.left) continue;
-        const overlapY = (a.bottom + LABEL_PAD) - b.top;
-        if (overlapY > 0) {
-          const shift = Math.ceil(overlapY / 2);
-          a.ly -= shift;
-          a.top -= shift;
-          a.bottom -= shift;
-          b.ly += shift;
-          b.top += shift;
-          b.bottom += shift;
+        const a = items[i], b = items[j];
+        const ox = Math.max(0, Math.min(a.right + LABEL_PAD, b.right + LABEL_PAD) - Math.max(a.left - LABEL_PAD, b.left - LABEL_PAD));
+        const oy = Math.max(0, Math.min(a.bottom + LABEL_PAD, b.bottom + LABEL_PAD) - Math.max(a.top - LABEL_PAD, b.top - LABEL_PAD));
+        if (ox > 0 && oy > 0) {
+          // Push apart along the axis with less overlap (smaller displacement needed)
+          if (ox < oy) {
+            const shift = Math.ceil(ox / 2) + 1;
+            const dir = a.lx < b.lx ? -1 : 1;
+            a.lx += dir * shift; a.left += dir * shift; a.right += dir * shift;
+            b.lx -= dir * shift; b.left -= dir * shift; b.right -= dir * shift;
+          } else {
+            const shift = Math.ceil(oy / 2) + 1;
+            const dir = a.ly < b.ly ? -1 : 1;
+            a.ly += dir * shift; a.top += dir * shift; a.bottom += dir * shift;
+            b.ly -= dir * shift; b.top -= dir * shift; b.bottom -= dir * shift;
+          }
           moved = true;
         }
       }
     }
     if (!moved) break;
-  }
 
-  // Clamp labels vertically within plot bounds
-  items.forEach(item => {
-    if (item.top < plotBounds.top) {
-      const shift = plotBounds.top - item.top;
-      item.ly += shift;
-      item.top += shift;
-      item.bottom += shift;
-    }
-    if (item.bottom > plotBounds.bottom) {
-      const shift = item.bottom - plotBounds.bottom;
-      item.ly -= shift;
-      item.top -= shift;
-      item.bottom -= shift;
-    }
-  });
+    // Push labels away from any dot they overlap
+    items.forEach(item => {
+      dots.forEach(d => {
+        if (rectCircleOverlap(item, d.cx, d.cy, DOT_R)) {
+          // Push label away from the dot
+          const dx = item.lx - d.cx;
+          const dy = item.ly - d.cy;
+          const dist = Math.hypot(dx, dy) || 1;
+          const pushDist = DOT_R + 4;
+          item.lx += (dx / dist) * pushDist;
+          item.ly += (dy / dist) * pushDist;
+          item.left = item.anchor === 'start' ? item.lx : item.anchor === 'end' ? item.lx - item.textW : item.lx - item.textW / 2;
+          item.right = item.left + item.textW;
+          item.top = item.ly - LABEL_H;
+          item.bottom = item.ly;
+          moved = true;
+        }
+      });
+    });
+
+    // Clamp to bounds after each pass
+    items.forEach(item => {
+      if (item.left < plotBounds.left) {
+        const s = plotBounds.left - item.left;
+        item.lx += s; item.left += s; item.right += s;
+      }
+      if (item.right > plotBounds.right) {
+        const s = item.right - plotBounds.right;
+        item.lx -= s; item.left -= s; item.right -= s;
+      }
+      if (item.top < plotBounds.top - 8) {
+        const s = (plotBounds.top - 8) - item.top;
+        item.ly += s; item.top += s; item.bottom += s;
+      }
+      if (item.bottom > plotBounds.bottom + 8) {
+        const s = item.bottom - (plotBounds.bottom + 8);
+        item.ly -= s; item.top -= s; item.bottom -= s;
+      }
+    });
+  }
 
   return items;
 }
@@ -208,8 +286,8 @@ function SpeedAccuracyQuadrant({ questionResults }) {
 }
 
 function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
-  // SVG dimensions — large enough to read comfortably
-  const W = 520, H = 400;
+  // SVG dimensions — increase height for dense charts (11+ topics)
+  const W = 520, H = topics.length > 10 ? 480 : 400;
   const pad = { top: 36, right: 24, bottom: 56, left: 58 };
   const plotW = W - pad.left - pad.right;
   const plotH = H - pad.top - pad.bottom;
@@ -316,16 +394,18 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
           {/* Topic dots + collision-resolved labels */}
           {(() => {
             // Build initial label positions
+            const allDots = topics.map(t => ({
+              cx: xScale(t.avgSecs),
+              cy: yScale(t.accuracy),
+            }));
             const rawLabels = topics.map(t => {
               const cx = xScale(t.avgSecs);
               const cy = yScale(t.accuracy);
               const text = t.name.length > 18 ? t.name.slice(0, 16) + '…' : t.name;
-              const labelAbove = cy > pad.top + plotH * 0.35;
-              const ly = labelAbove ? cy - 14 : cy + 20;
-              return { topicKey: t.topicKey, cx, cy, lx: cx, ly, text, opacity: t.isStale ? 0.35 : 1 };
+              return { topicKey: t.topicKey, cx, cy, lx: cx, ly: cy - 14, text, opacity: t.isStale ? 0.35 : 1 };
             });
 
-            const resolved = resolveLabels(rawLabels, {
+            const resolved = resolveLabels(rawLabels, allDots, {
               top: pad.top + 4,
               bottom: pad.top + plotH - 4,
               left: pad.left + 4,
@@ -335,22 +415,29 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
             // Render leader lines first (behind dots), then dots, then labels
             return (
               <>
-                {/* Leader lines — always drawn, subject colour */}
-                {resolved.map(l => (
-                  <line key={`lead-${l.topicKey}`} x1={l.cx} y1={l.cy}
-                    x2={l.lx} y2={l.ly < l.cy ? l.ly + 2 : l.ly - 12}
-                    stroke={colour} strokeWidth={1} opacity={l.opacity * 0.4} />
-                ))}
+                {/* Leader lines — connect dot to nearest point on label */}
+                {resolved.map(l => {
+                  // Find the nearest point on the label bounding box to the dot centre
+                  const nearX = Math.max(l.left || l.lx, Math.min(l.cx, l.right || l.lx));
+                  const nearY = Math.max(l.top || l.ly - 14, Math.min(l.cy, l.bottom || l.ly));
+                  const dist = Math.hypot(nearX - l.cx, nearY - l.cy);
+                  if (dist < 12) return null; // label is adjacent to dot, no line needed
+                  return (
+                    <line key={`lead-${l.topicKey}`} x1={l.cx} y1={l.cy}
+                      x2={nearX} y2={nearY}
+                      stroke={colour} strokeWidth={1} opacity={l.opacity * 0.4} />
+                  );
+                })}
                 {/* Dots — always at true data position */}
                 {resolved.map(l => (
                   <circle key={`dot-${l.topicKey}`} cx={l.cx} cy={l.cy}
                     r={8} fill={colour} stroke="white" strokeWidth={2}
                     opacity={l.opacity} />
                 ))}
-                {/* Labels — may be nudged to avoid overlaps */}
+                {/* Labels — positioned to avoid overlaps */}
                 {resolved.map(l => (
                   <text key={`lbl-${l.topicKey}`} x={l.lx} y={l.ly}
-                    textAnchor="middle" fontSize={11} fontWeight="600"
+                    textAnchor={l.anchor || "middle"} fontSize={11} fontWeight="600"
                     fill="#374151" opacity={l.opacity}>
                     {l.text}
                   </text>
