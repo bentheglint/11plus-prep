@@ -53,4 +53,40 @@ module.exports = function(app) {
       }
     });
   });
+
+  // Testing flag — append a single flag entry to the notes file
+  app.post('/api/testing-flag', (req, res) => {
+    let body = '';
+    req.on('data', chunk => body += chunk);
+    req.on('end', () => {
+      try {
+        const flag = JSON.parse(body);
+        let notes = [];
+        try { notes = JSON.parse(fs.readFileSync(NOTES_FILE, 'utf8')); } catch {}
+        notes.push({
+          id: Date.now(),
+          timestamp: new Date().toISOString(),
+          source: 'testing',
+          view: 'testing',
+          subject: flag.subject,
+          topic: flag.topicKey,
+          topicName: flag.topicName,
+          questionId: flag.questionId,
+          subConceptId: flag.subConceptId,
+          subConceptName: flag.subConceptName,
+          lessonId: flag.lessonId,
+          screenIndex: flag.screenIndex,
+          screenType: flag.screenType,
+          difficulty: flag.difficulty,
+          hasVisual: flag.hasVisual,
+          note: [flag.category, flag.note].filter(Boolean).join(' — '),
+          status: 'pending',
+        });
+        fs.writeFileSync(NOTES_FILE, JSON.stringify(notes, null, 2));
+        res.json({ ok: true });
+      } catch (e) {
+        res.status(500).json({ error: e.message });
+      }
+    });
+  });
 };

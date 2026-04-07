@@ -18456,7 +18456,7 @@ areaperimeter: {
     {
       id: 81,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 4, width: 3, dimUnit: "m", showGrid: true } },
+      visual: { component: "RectangleDiagram", props: { length: 4, width: 3, dimUnit: "m" } },
       question: "Mia is tiling a rectangular bathroom that is 4 metres long and 3 metres wide. Each tile is 0.5 metres by 0.5 metres. How many tiles does she need?",
       options: ["12 tiles", "24 tiles", "96 tiles", "48 tiles", "192 tiles"],
       correct: 3,

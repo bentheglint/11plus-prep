@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench } from 'lucide-react';
+import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench, ClipboardCheck } from 'lucide-react';
 import UserAvatar from '../components/UserAvatar';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
@@ -18,7 +18,7 @@ function SubjectCard({ title, icon: Icon, gradient, onClick }) {
   );
 }
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onStartTopic, mastery, streaksAndPP }) {
+function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP }) {
   // Get suggested topics — exactly one per subject (Maths, English, VR)
   const suggestions = (() => {
     if (!mastery) return [];
@@ -88,6 +88,15 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
             >
               <Wrench className="w-5 h-5 text-amber-500" />
               <span className="font-heading">Speed Review</span>
+            </button>
+          )}
+          {(currentUser === 'Ben' || currentUser === 'Jacqui') && (
+            <button
+              onClick={onTestingMode}
+              className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-rose-300 hover:bg-rose-50 transition-colors"
+            >
+              <ClipboardCheck className="w-5 h-5 text-rose-500" />
+              <span className="font-heading">Testing Mode</span>
             </button>
           )}
         </div>

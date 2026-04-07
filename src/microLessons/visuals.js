@@ -2171,7 +2171,7 @@ export function LShapeDiagram({
 }) {
   const svgW = 580;
   const svgH = 420;
-  const pad = 70;
+  const pad = 90;
   const drawW = svgW - 2 * pad;
   const drawH = svgH - 2 * pad;
 
@@ -5231,14 +5231,25 @@ export function PathBorderDiagram({
   innerLabel = null,
   pathLabel = null
 }) {
-  const svgW = 400, svgH = 280;
+  const svgW = 400, svgH = 320;
   const padL = 60, padR = 40, padT = 30, padB = 50;
-  const shapeW = svgW - padL - padR;
-  const shapeH = svgH - padT - padB;
+  const maxW = svgW - padL - padR;
+  const maxH = svgH - padT - padB;
 
-  // Outer rectangle
-  const ox = padL, oy = padT;
-  const ow = shapeW, oh = shapeH;
+  // Scale proportionally so squares look like squares
+  const aspect = outerL / outerW;
+  let ow, oh;
+  if (aspect >= 1) {
+    ow = maxW;
+    oh = Math.min(maxH, maxW / aspect);
+  } else {
+    oh = maxH;
+    ow = Math.min(maxW, maxH * aspect);
+  }
+
+  // Centre within available space
+  const ox = padL + (maxW - ow) / 2;
+  const oy = padT + (maxH - oh) / 2;
 
   // Inner rectangle (centred within outer, proportional to dimensions)
   const borderFracX = (outerL - innerL) / (2 * outerL);

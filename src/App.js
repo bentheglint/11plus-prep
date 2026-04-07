@@ -38,6 +38,8 @@ import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
 import { checkAnswerCorrectness, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
 import { getQuizSaveKey, buildQuizSaveState, isQuizExpired, parseAndValidateQuiz } from './utils/quizPersistence';
 import useLeitner from './hooks/useLeitner';
+import useTestingCoverage from './hooks/useTestingCoverage';
+import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMode';
 import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
@@ -84,6 +86,9 @@ function App() {
 
   // Leitner spaced repetition queue
   const leitner = useLeitner(userData.leitnerQueue, userData.saveLeitnerQueue);
+
+  // Testing coverage (Ben + Jacqui only — loaded lazily, empty for other users)
+  const testingCoverage = useTestingCoverage(currentUser);
 
   // Streaks and Prep Points
   const streaksAndPP = useStreaksAndPP(
@@ -145,6 +150,8 @@ function App() {
   const toolkitLessonsViewed = React.useRef(0);
   const [quizMode, setQuizMode] = useState(null);
   const [returnToSpeedReview, setReturnToSpeedReview] = useState(false);
+  const [returnToTestingMode, setReturnToTestingMode] = useState(false);
+  const [testingSessionFlags, setTestingSessionFlags] = useState([]);
   const [speedReviewTab, setSpeedReviewTab] = useState('lessons');
   const [speedReviewMapTopic, setSpeedReviewMapTopic] = useState('');
   const [speedReviewScrollY, setSpeedReviewScrollY] = useState(0);
@@ -182,6 +189,7 @@ function App() {
   // Save active quiz state whenever it changes
   useEffect(() => {
     if (!quizSaveKey) return;
+    if (quizMode === 'testing') return; // Don't persist testing quizzes
     if (currentView === 'quiz' && quizQuestions.length > 0) {
       const saveState = buildQuizSaveState({
         currentView, selectedSubject, selectedTopic, quizMode,
@@ -455,6 +463,9 @@ function App() {
       difficulty: currentQuestion.difficulty || 2,
     }]);
 
+    // Testing mode: skip tips, adaptive difficulty, and Leitner — just record the answer
+    if (quizMode === 'testing') return;
+
     // Post-question tip: show ~every 3rd wrong answer
     if (!isCorrect) {
       wrongAnswerCount.current += 1;
@@ -523,6 +534,18 @@ function App() {
       setShowFeedbackForm(false);
       setFeedbackText('');
     } else {
+      // Testing mode: mark questions as tested, skip all normal progress recording
+      if (quizMode === 'testing') {
+        quizQuestions.forEach(q => testingCoverage.markQuestionTested(q.topicKey, q.question.id));
+        // Single-question view (from flagged issues): go back to dashboard
+        if (returnToTestingMode) {
+          setReturnToTestingMode(false);
+          setCurrentView('testingMode');
+        } else {
+          setCurrentView('testingResults');
+        }
+        return;
+      }
       // If viewing a single question from Speed Review, go back instead of showing results
       if (returnToSpeedReview) {
         setCurrentView('speedReview');
@@ -983,6 +1006,48 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     return shuffleArray(selected);
   };
 
+  // ── Testing Mode question selection ──
+  // Random selection, prioritising untested questions. No adaptive difficulty.
+  const selectTestingQuestions = (topicKey, subject) => {
+    const activeSubject = subject || selectedSubject;
+    const topics = questionData[activeSubject]?.topics;
+    if (!topics || !topics[topicKey]) return [];
+    const topicQuestions = topics[topicKey].questions;
+    const topicName = topics[topicKey].name;
+    const testedIds = testingCoverage.data.questions[topicKey]?.tested || [];
+
+    // Prefer untested questions; backfill from all if <10 untested remain
+    let pool = topicQuestions.filter(q => !testedIds.includes(q.id));
+    if (pool.length < 10) {
+      const extra = topicQuestions.filter(q => testedIds.includes(q.id));
+      pool = [...pool, ...shuffleArray(extra)];
+    }
+    return shuffleArray(pool).slice(0, 10).map(q => ({ question: q, topicKey, topicName }));
+  };
+
+  const handleStartTestingQuiz = (topicKey, subject) => {
+    const questions = selectTestingQuestions(topicKey, subject);
+    if (questions.length === 0) return;
+    setSelectedSubject(subject);
+    setSelectedTopic(topicKey);
+    setQuizQuestions(questions);
+    setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setSelectedPair([]);
+    setShowFeedback(false);
+    setAnswers([]);
+    setShowTutorChat(false);
+    setChatMessages([]);
+    setTestingSessionFlags([]);
+    setQuizMode('testing');
+    setCurrentView('quiz');
+    quizSessionId.current = Date.now();
+    questionStartTime.current = Date.now();
+    pausedTimeMs.current = 0;
+    pauseStartTime.current = null;
+    wrongAnswerCount.current = 0;
+  };
+
   const markQuestionsAsSeen = (questions) => {
     const updatedSeen = { ...seenQuestions };
     questions.forEach(({ question, topicKey }) => {
@@ -1193,6 +1258,74 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     />;
   }
 
+  if (currentView === 'testingMode') {
+    return (
+      <TestingDashboard
+        questionData={questionData}
+        lessonBank={lessonBank}
+        testingCoverage={testingCoverage}
+        onStartTestingQuiz={handleStartTestingQuiz}
+        onStartTestingLesson={(topicKey, subConcept) => {
+          // Determine subject from questionData keys
+          const subject = Object.entries(questionData).find(
+            ([, sd]) => sd.topics && sd.topics[topicKey]
+          )?.[0] || 'maths';
+          setSelectedSubject(subject);
+          setSelectedTopic(topicKey);
+          setReturnToTestingMode(true);
+          setForcedLessonResult({
+            lesson: subConcept.lessons?.[0],
+            subConcept,
+            topicKey,
+            topicName: lessonBank[topicKey]?.name || topicKey,
+            vars: subConcept.lessons?.[0]?.variableSets?.[0] || {},
+            interactVars: subConcept.lessons?.[0]?.variableSets?.length > 1
+              ? subConcept.lessons[0].variableSets[1]
+              : subConcept.lessons?.[0]?.variableSets?.[0] || {},
+          });
+          setCurrentView('lesson');
+        }}
+        onViewQuestion={(topicKey, subject, questionId) => {
+          // Look up the real subject key — flag data may have topicKey as subject
+          const validSubjects = ['maths', 'english', 'verbalreasoning'];
+          const sub = (subject && validSubjects.includes(subject)) ? subject
+            : Object.entries(questionData).find(([, sd]) => sd.topics && sd.topics[topicKey])?.[0] || 'maths';
+          const allQuestions = questionData[sub]?.topics?.[topicKey]?.questions || [];
+          const targetQ = allQuestions.find(q => q.id === questionId);
+          if (!targetQ) return;
+          const topicName = questionData[sub]?.topics?.[topicKey]?.name || topicKey;
+          setSelectedSubject(sub);
+          setSelectedTopic(topicKey);
+          setQuizQuestions([{ question: targetQ, topicKey, topicName }]);
+          setCurrentQuestionIndex(0);
+          setSelectedAnswer(null);
+          setSelectedPair([]);
+          setShowFeedback(false);
+          setShowTutorChat(false);
+          setChatMessages([]);
+          setAnswers([]);
+          setQuizMode('testing');
+          setReturnToTestingMode(true);
+          setCurrentView('quiz');
+        }}
+        onBack={() => setCurrentView('home')}
+      />
+    );
+  }
+
+  if (currentView === 'testingResults') {
+    return (
+      <TestingResultsSummary
+        quizQuestions={quizQuestions}
+        answers={answers}
+        sessionFlags={testingSessionFlags}
+        testingCoverage={testingCoverage}
+        onContinueTopic={() => handleStartTestingQuiz(selectedTopic, selectedSubject)}
+        onBackToDashboard={() => setCurrentView('testingMode')}
+      />
+    );
+  }
+
   // Welcome Back interstitial (spaced resurfacing)
   if (currentView === 'home' && showWelcomeBack && welcomeBackTip) {
     return (
@@ -1217,6 +1350,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onViewProgress={() => setCurrentView('progress')}
         onViewMistakes={() => setCurrentView('mistakes')}
         onSpeedReview={() => setCurrentView('speedReview')}
+        onTestingMode={() => setCurrentView('testingMode')}
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);
           handleTopicSelect(topicKey, subject);
@@ -1350,8 +1484,28 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         currentUser={currentUser}
         onSheetSubmit={submitToGoogleSheet}
         forcedLessonResult={forcedLessonResult}
-        backLabel={returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : "Back to Topics"}
+        isTestingMode={returnToTestingMode}
+        onFlagLesson={(flagData) => {
+          testingCoverage.flagLesson(flagData.topicKey, flagData.subConceptId, flagData.screenIndex, flagData.category, flagData.note);
+          const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
+          if (workerUrl) fetch(`${workerUrl}/flags`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ submitter: currentUser, ...flagData })
+          }).catch(() => {});
+        }}
+        backLabel={returnToTestingMode ? "Back to Testing Dashboard" : returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : "Back to Topics"}
         onComplete={(lessonRecord) => {
+          // Testing mode: mark tested, skip normal lesson history, return to dashboard
+          if (returnToTestingMode) {
+            if (lessonRecord) {
+              testingCoverage.markLessonTested(selectedTopic, lessonRecord.subConcept);
+              testingCoverage.recordSession({ questionsChecked: 0, lessonsChecked: 1, issuesFlagged: 0 });
+            }
+            setForcedLessonResult(null);
+            setReturnToTestingMode(false);
+            setCurrentView('testingMode');
+            return;
+          }
           if (lessonRecord) {
             const updated = { ...lessonHistory };
             if (!updated[selectedTopic]) updated[selectedTopic] = { shown: [] };
@@ -1386,7 +1540,10 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         }}
         onBack={() => {
           setForcedLessonResult(null);
-          if (returnToToolkit) {
+          if (returnToTestingMode) {
+            setReturnToTestingMode(false);
+            setCurrentView('testingMode');
+          } else if (returnToToolkit) {
             setReturnToToolkit(false);
             setCurrentView('studyToolkit');
           } else if (returnToSpeedReview) {
@@ -1536,6 +1693,17 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         speechSupported={speechSupported}
         quizVisualComponents={quizVisualComponents}
         postQuestionTip={postQuestionTip}
+        isTestingMode={quizMode === 'testing'}
+        onFlagQuestion={(flagData) => {
+          const flagWithSubject = { ...flagData, subject: selectedSubject };
+          testingCoverage.flagQuestion(flagData.topicKey, flagData.questionId, flagData.category, flagData.note);
+          setTestingSessionFlags(prev => [...prev, flagWithSubject]);
+          const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
+          if (workerUrl) fetch(`${workerUrl}/flags`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ submitter: currentUser, ...flagWithSubject })
+          }).catch(() => {});
+        }}
         onAnswerSelect={handleAnswerSelect}
         onSelectTwoToggle={handleSelectTwoToggle}
         onPickFromSet={handlePickFromSet}
@@ -1553,6 +1721,11 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onSubmitFeedback={submitQuestionFeedback}
         onToggleFeedbackForm={(val) => val === false ? setShowFeedbackForm(false) : setShowFeedbackForm(!showFeedbackForm)}
         onBack={() => {
+          if (quizMode === 'testing') {
+            setReturnToTestingMode(false);
+            setCurrentView('testingMode');
+            return;
+          }
           if (returnToSpeedReview) {
             setReturnToSpeedReview(false);
             setCurrentView('speedReview');

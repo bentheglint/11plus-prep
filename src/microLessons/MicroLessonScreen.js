@@ -574,6 +574,96 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
 }
 
 // ============================================================
+// TestingFlagButton — floating flag button for testing mode
+// ============================================================
+
+function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConceptName, screenIndex, screenType, lessonId }) {
+  const [showModal, setShowModal] = React.useState(false);
+  const [category, setCategory] = React.useState('');
+  const [note, setNote] = React.useState('');
+
+  const categories = ['Confusing explanation', 'Visual/diagram issue', 'Interaction broken', 'Typo/spelling', 'Content wrong', 'Other'];
+
+  const handleSubmit = () => {
+    if (!category || !onFlag) return;
+    onFlag({ topicKey, topicName, subConceptId, subConceptName, lessonId, screenIndex, screenType, category, note });
+    setCategory('');
+    setNote('');
+    setShowModal(false);
+  };
+
+  return (
+    <>
+      <button
+        onClick={() => setShowModal(true)}
+        className="fixed bottom-6 right-6 z-[9999] flex items-center gap-2 px-4 py-2.5 bg-red-500 text-white font-medium rounded-xl shadow-lg hover:bg-red-600 transition-colors"
+      >
+        <Flag className="w-4 h-4" />
+        Flag Issue
+      </button>
+
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 z-[10000] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" onClick={e => e.stopPropagation()}>
+            <h3 className="text-lg font-heading font-bold text-[#2D3436] flex items-center gap-2 mb-1">
+              <Flag className="w-5 h-5 text-red-500" />
+              Flag Issue
+            </h3>
+            <p className="text-xs text-gray-500 mb-4">
+              {subConceptName} · Screen {screenIndex + 1} ({screenType})
+            </p>
+
+            <div className="mb-4">
+              <label className="block text-sm font-semibold text-[#2D3436] mb-2">What's wrong?</label>
+              <div className="grid grid-cols-2 gap-2">
+                {categories.map(cat => (
+                  <button
+                    key={cat}
+                    onClick={() => setCategory(cat)}
+                    className={`px-3 py-2 rounded-lg text-sm font-medium border transition-colors ${
+                      category === cat
+                        ? 'bg-red-50 border-red-300 text-red-700'
+                        : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-5">
+              <label className="block text-sm font-semibold text-[#2D3436] mb-1">Details (optional)</label>
+              <textarea
+                value={note}
+                onChange={e => setNote(e.target.value)}
+                placeholder="Describe what's wrong..."
+                className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm resize-none h-20 focus:outline-none focus:ring-2 focus:ring-red-300"
+              />
+            </div>
+
+            <div className="flex gap-2">
+              <button onClick={() => setShowModal(false)} className="flex-1 px-4 py-2 bg-gray-100 text-gray-600 rounded-lg font-medium hover:bg-gray-200 transition-colors">
+                Cancel
+              </button>
+              <button
+                onClick={handleSubmit}
+                disabled={!category}
+                className={`flex-1 px-4 py-2 rounded-lg font-medium transition-colors ${
+                  category ? 'bg-red-500 text-white hover:bg-red-600' : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                }`}
+              >
+                Flag It
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+// ============================================================
 // MicroLessonScreen — the main lesson view
 // ============================================================
 
@@ -584,6 +674,8 @@ export default function MicroLessonScreen({
   currentUser,
   onSheetSubmit,
   forcedLessonResult,
+  isTestingMode,
+  onFlagLesson,
   onComplete,
   onBack,
   backLabel
@@ -756,6 +848,7 @@ export default function MicroLessonScreen({
   // +1 for the intro screen
   const totalScreens = lesson.screens.length + 1;
   const screenData = isIntroScreen ? null : lesson.screens[lessonScreenIndex];
+  const screenType = isIntroScreen ? 'intro' : (screenData?.type || 'unknown');
 
   // Use interact variable set for interact screens, teach set for everything else
   const activeVariables = (!isIntroScreen && screenData?.type === 'interact' && interactVariables)
@@ -1597,6 +1690,19 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         </div>
       </div>
 
+      {/* Testing mode: floating flag button */}
+      {isTestingMode && (
+        <TestingFlagButton
+          onFlag={onFlagLesson}
+          topicKey={topicKey}
+          topicName={topicName}
+          subConceptId={subConceptId}
+          subConceptName={subConceptName}
+          screenIndex={currentScreen}
+          screenType={screenType}
+          lessonId={lesson?.id}
+        />
+      )}
     </div>
   );
 }

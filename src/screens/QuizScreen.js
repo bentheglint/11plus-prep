@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock } from 'lucide-react';
+import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock, Flag, ChevronDown, CheckSquare, Square } from 'lucide-react';
 import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
 import ClozeQuestionText from '../components/ClozeQuestionText';
 import Timer from '../components/Timer';
+import { FlagModal } from '../TestingMode';
 
 function QuizScreen({
   quizQuestions, currentQuestionIndex, quizMode, selectedTopic,
@@ -10,6 +11,7 @@ function QuizScreen({
   showTutorChat, chatMessages, userMessage, isAiThinking, isListening,
   showFeedbackForm, feedbackText, currentUser, speechSupported,
   quizVisualComponents, postQuestionTip,
+  isTestingMode, onFlagQuestion,
   onAnswerSelect, onSelectTwoToggle, onPickFromSet, onCheckAnswer,
   onNextQuestion, onFindLesson, onAskTutor, onSendMessage,
   onUserMessageChange, onToggleListening, onFeedbackTextChange,
@@ -31,8 +33,19 @@ function QuizScreen({
   } else {
     isCorrect = selectedAnswer === currentQuestion.correct;
   }
-  const quizTitle = quizMode === 'daily' ? 'Daily Learning' : quizMode === 'challenge' ? 'Challenge Mode' : currentQ.topicName + ' Practice';
+  const quizTitle = isTestingMode ? 'Testing Mode — ' + currentQ.topicName : quizMode === 'daily' ? 'Daily Learning' : quizMode === 'challenge' ? 'Challenge Mode' : currentQ.topicName + ' Practice';
   const [timerEnabled, setTimerEnabled] = useState(false);
+  const [showFlagModal, setShowFlagModal] = useState(false);
+  const [checklistOpen, setChecklistOpen] = useState(true);
+  const [checks, setChecks] = useState([false, false, false, false, false]);
+  // Reset checklist when moving to next question
+  const prevQIdx = React.useRef(currentQuestionIndex);
+  React.useEffect(() => {
+    if (currentQuestionIndex !== prevQIdx.current) {
+      prevQIdx.current = currentQuestionIndex;
+      setChecks([false, false, false, false, false]);
+    }
+  }, [currentQuestionIndex]);
 
     return (
       <div className="app-bg p-4">
@@ -42,7 +55,7 @@ function QuizScreen({
             className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
           >
             <ArrowLeft className="w-5 h-5" />
-            {returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
+            {isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
           </button>
 
           <div className="card-elevated p-6 md:p-8 animate-fade-in-up">
@@ -72,14 +85,64 @@ function QuizScreen({
                 />
               </div>
 
+              {/* Testing mode: question metadata + heuristic checklist */}
+              {isTestingMode && (
+                <>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-mono text-gray-400 bg-gray-50 px-2 py-1 rounded">
+                      Q{currentQuestion.id} · D{currentQuestion.difficulty || 2}{currentQuestion.visual ? ' · Diagram' : ''}
+                    </span>
+                    <button
+                      onClick={() => setShowFlagModal(true)}
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-red-600 text-sm font-medium rounded-lg border border-red-200 hover:bg-red-100 transition-colors"
+                    >
+                      <Flag className="w-4 h-4" />
+                      Flag Issue
+                    </button>
+                  </div>
+
+                  <div className="mb-4 bg-amber-50 border border-amber-200 rounded-xl overflow-hidden">
+                    <button
+                      onClick={() => setChecklistOpen(!checklistOpen)}
+                      className="w-full flex items-center justify-between px-3 py-2 text-xs font-bold text-amber-700 uppercase tracking-wider"
+                    >
+                      QA Checklist
+                      <ChevronDown className={`w-4 h-4 transition-transform ${checklistOpen ? '' : '-rotate-90'}`} />
+                    </button>
+                    {checklistOpen && (
+                      <div className="px-3 pb-3 space-y-1.5">
+                        {[
+                          'Does the question make sense?',
+                          ...(currentQuestion.visual ? ['Does the diagram look right?'] : []),
+                          'Is the correct answer actually correct?',
+                          'Does the explanation match the answer?',
+                          'British English, 5 options, no typos?',
+                        ].map((label, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setChecks(prev => { const n = [...prev]; n[i] = !n[i]; return n; })}
+                            className="flex items-center gap-2 w-full text-left"
+                          >
+                            {checks[i]
+                              ? <CheckSquare className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                              : <Square className="w-4 h-4 text-amber-400 flex-shrink-0" />}
+                            <span className={`text-xs ${checks[i] ? 'text-emerald-600 line-through' : 'text-amber-700'}`}>{label}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </>
+              )}
+
               {quizMode === 'daily' && (
                 <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full mb-3">
                   {currentQ.topicName}
                 </span>
               )}
 
-              {/* Help buttons — always visible */}
-              <div className="flex gap-2 mb-4">
+              {/* Help buttons — hidden in testing mode */}
+              {!isTestingMode && <div className="flex gap-2 mb-4">
                 <button
                   onClick={onFindLesson}
                   className="px-3 py-1.5 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] hover:from-[#DDD6FF] hover:to-[#CFF0FF] text-[#6C5CE7] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-[#A29BFE]/30"
@@ -101,7 +164,7 @@ function QuizScreen({
                   <MessageSquare className="w-4 h-4" />
                   Report Issue
                 </button>
-              </div>
+              </div>}
 
               {/* Passage rendering for comprehension questions */}
               {currentQuestion.questionType === 'passage' && currentQuestion.passage && (
@@ -381,7 +444,7 @@ function QuizScreen({
                         </p>
                       )}
 
-                      {!isCorrect && postQuestionTip && (
+                      {!isCorrect && postQuestionTip && !isTestingMode && (
                         <PostQuestionTipBanner tip={postQuestionTip} />
                       )}
 
@@ -527,12 +590,30 @@ function QuizScreen({
                 className="w-full py-4 btn-primary text-lg flex items-center justify-center"
                 style={{ touchAction: 'manipulation' }}
               >
-                {currentQuestionIndex < quizQuestions.length - 1 ? 'Next Question' : returnToSpeedReview ? 'Back to Speed Review' : 'See Results'}
+                {currentQuestionIndex < quizQuestions.length - 1 ? 'Next Question' : isTestingMode ? 'Finish Testing' : returnToSpeedReview ? 'Back to Speed Review' : 'See Results'}
                 <ChevronRight className="w-5 h-5 ml-2" />
               </button>
             )}
           </div>
         </div>
+      {isTestingMode && (
+        <FlagModal
+          isOpen={showFlagModal}
+          onClose={() => setShowFlagModal(false)}
+          onSubmit={(flagData) => {
+            if (onFlagQuestion) onFlagQuestion(flagData);
+          }}
+          categories={['Wrong answer', 'Bad diagram', 'Confusing wording', 'Explanation wrong', 'Typo/spelling', 'Other']}
+          context={{
+            questionId: currentQuestion.id,
+            topicKey: currentQ.topicKey,
+            topicName: currentQ.topicName,
+            subject: selectedTopic,
+            difficulty: currentQuestion.difficulty || 2,
+            hasVisual: !!currentQuestion.visual,
+          }}
+        />
+      )}
       </div>
     );
 }
