@@ -77,8 +77,8 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
 
       {/* Streak detail panel */}
       {showPanel && (
-        <div className="fixed inset-0 bg-black/30 z-50 flex items-start justify-center pt-16 px-4" onClick={() => setShowPanel(false)}>
-          <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 animate-fade-in-up" onClick={e => e.stopPropagation()}>
+        <div className="fixed inset-0 bg-black/30 z-50 flex items-start justify-center pt-8 px-4 overflow-y-auto" onClick={() => setShowPanel(false)}>
+          <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 animate-fade-in-up my-4" onClick={e => e.stopPropagation()}>
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
@@ -163,7 +163,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#FF6B6B] font-bold mt-0.5">!</span>
-                  <span>Miss <strong className="text-[#2D3436]">3 days in a row</strong> and your streak resets to zero</span>
+                  <span>Miss <strong className="text-[#2D3436]">4 days in a row</strong> and your streak resets to zero</span>
                 </p>
               </div>
             </div>
