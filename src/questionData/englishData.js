@@ -33062,10 +33062,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 371,
           "difficulty": 2,
-          "question": "How many determiners are in: 'Every child should bring their own pencil'?",
+          "question": "How many determiners are in: 'Some children ate their lunch before the bell rang'?",
           "options": ["One", "Two", "None", "Four", "Three"],
           "correct": 4,
-          "explanation": "Three determiners: 'every' (before 'child'), 'their' (before 'own'), and 'own' can be debated, but 'every' and 'their' are clear determiners. Actually the clear answer is 'every', 'their' and arguably 'own' = three. ✓"
+          "explanation": "Three determiners: 'some' (before 'children'), 'their' (before 'lunch'), and 'the' (before 'bell'). Determiners sit before a noun to introduce it. Words like adjectives (e.g. 'big') describe nouns but don't introduce them. ✓"
         },
         {
           "id": 372,

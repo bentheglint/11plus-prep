@@ -874,10 +874,10 @@ const vrData = {
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
-          setA: ["scrupulous","hasty","ambitious"],
+          setA: ["scrupulous","candid","ambitious"],
           setB: ["painstaking","rushed","modest"],
           correctPair: [0,0],
-          explanation: "'Scrupulous' and 'painstaking' both mean taking extreme care over every detail. 'Hasty' is the opposite — done too quickly. 'Ambitious' means driven, 'rushed' means done too fast, 'modest' means humble. ✓"
+          explanation: "'Scrupulous' and 'painstaking' both mean taking extreme care over every detail. 'Candid' means open and honest, 'ambitious' means driven, 'rushed' means done too fast, 'modest' means humble. ✓"
         },
         {
           id: 88,
@@ -9009,10 +9009,10 @@ const vrData = {
         {
           id: 94,
           difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) CIENT",
+          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) ICIENT",
           options: ["EFF","HUB","MOB","TIP","JAR"],
           correct: 0,
-          explanation: "The answer is EFF, making EFFICIENT. Efficient means achieving maximum results with minimum waste. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          explanation: "The answer is EFF, making EFFICIENT (EFF + ICIENT). Efficient means achieving maximum results with minimum waste. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 95,
