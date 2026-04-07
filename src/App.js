@@ -905,7 +905,21 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       }
     }
 
-    return shuffleArray(selected);
+    // Ensure we always return exactly 10 questions
+    if (selected.length < 10) {
+      const allTopicKeys = Object.keys(topics);
+      for (const key of shuffleArray(allTopicKeys)) {
+        if (selected.length >= 10) break;
+        const topicQuestions = topics[key].questions;
+        const question = topicQuestions[Math.floor(Math.random() * topicQuestions.length)];
+        if (!usedQuestionIds.has(`${key}-${question.id}`)) {
+          selected.push({ question, topicKey: key, topicName: topics[key].name });
+          usedQuestionIds.add(`${key}-${question.id}`);
+        }
+      }
+    }
+
+    return shuffleArray(selected).slice(0, 10);
   };
 
   const selectFocusedQuestions = (topicKey, subject) => {
@@ -936,7 +950,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         });
       }
       // Return in passage order (don't shuffle — questions follow the passage)
-      return selected.slice(0, 14); // Allow slightly more if a passage has many questions
+      return selected.slice(0, 10);
     }
 
     // Reset if fewer than 10 unseen remain
