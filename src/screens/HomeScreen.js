@@ -19,8 +19,21 @@ function SubjectCard({ title, icon: Icon, gradient, onClick }) {
 }
 
 function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onStartTopic, mastery, streaksAndPP }) {
-  // Get top 2 suggested topics from mastery system
-  const suggestions = mastery ? mastery.getFocusAreas().slice(0, 2) : [];
+  // Get suggested topics — exactly one per subject (Maths, English, VR)
+  const suggestions = (() => {
+    if (!mastery) return [];
+    const all = mastery.getFocusAreas();
+    const result = [];
+    const seenSubjects = new Set();
+    for (const rec of all) {
+      if (!seenSubjects.has(rec.subject)) {
+        result.push(rec);
+        seenSubjects.add(rec.subject);
+      }
+      if (result.length >= 3) break;
+    }
+    return result;
+  })();
 
   return (
     <div className="app-bg p-4">
