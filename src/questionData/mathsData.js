@@ -19672,7 +19672,7 @@ volume: {
       id: 8,
       difficulty: 2,
       question: "A box measures 8 cm by 8 cm by 8 cm. Another box measures 16 cm by 4 cm by 8 cm. Which statement is true?",
-      image: "volume/comparison-q8.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 8, width: 8, height: 8, label: "Box 1" }, cuboid2: { length: 16, width: 4, height: 8, label: "Box 2" }, dimUnit: "cm" } },
       options: ["First box has greater volume", "Second box has greater volume", "They have equal volumes", "Cannot determine", "First box has double the volume"],
       correct: 2,
       explanation: "First box: 8 × 8 × 8 = 512 cm³. Second box: 16 × 4 × 8 = 512 cm³. They have equal volumes. ✓"
@@ -19723,7 +19723,7 @@ volume: {
       id: 14,
       difficulty: 2,
       question: "A cuboid has dimensions x cm by 2x cm by 3 cm. If x = 5, what is the volume?",
-      image: "volume/algebraic-q14.svg",
+      visual: { component: "CuboidDiagram", props: { length: "x", width: "2x", height: 3, dimUnit: "cm" } },
       options: ["30 cubic cm", "50 cubic cm", "300 cubic cm", "150 cubic cm", "75 cubic cm"],
       correct: 3,
       explanation: "If x = 5, the dimensions are: 5 cm × 10 cm × 3 cm (because 2x = 2 × 5 = 10). Volume = 5 × 10 × 3 = 150 cm³. ✓"
@@ -19740,7 +19740,7 @@ volume: {
       id: 16,
       difficulty: 2,
       question: "A cube and a cuboid both have the same volume of 64 cm³. The cube has edges of 4 cm. If the cuboid is 8 cm long and 2 cm wide, what is its height?",
-      image: "volume/comparison-q16.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 4, width: 4, height: 4, label: "Cube" }, cuboid2: { length: 8, width: 2, height: 4, label: "Cuboid" }, dimUnit: "cm" } },
       options: ["4 cm", "2 cm", "6 cm", "8 cm", "16 cm"],
       correct: 0,
       explanation: "The cuboid's volume is 64 cm³. Volume = length × width × height, so 64 = 8 × 2 × height. This gives 64 = 16 × height, so height = 64 ÷ 16 = 4 cm. ✓"
@@ -19757,7 +19757,7 @@ volume: {
       id: 18,
       difficulty: 3,
       question: "A cube has edges that are twice as long as another cube with 3 cm edges. What is the volume of the larger cube?",
-      image: "volume/cubes-q18.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 3, width: 3, height: 3, label: "Small cube" }, cuboid2: { length: 6, width: 6, height: 6, label: "Large cube" }, dimUnit: "cm" } },
       options: ["6 cubic cm", "18 cubic cm", "216 cubic cm", "54 cubic cm", "24 cubic cm"],
       correct: 2,
       explanation: "The small cube has 3 cm edges. The larger cube has edges twice as long: 2 × 3 = 6 cm. Volume of larger cube = 6 × 6 × 6 = 216 cm³. ✓"
@@ -19907,7 +19907,7 @@ volume: {
       id: 35,
       difficulty: 2,
       question: "A cube and a cuboid both have a volume of 216 cm³. The cube has 6 cm edges. If the cuboid is 12 cm long and 3 cm wide, what is its height?",
-      image: "volume/comparison-q35.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 6, width: 6, height: 6, label: "Cube" }, cuboid2: { length: 12, width: 3, height: 6, label: "Cuboid" }, dimUnit: "cm" } },
       options: ["4 cm", "5 cm", "8 cm", "7 cm", "6 cm"],
       correct: 4,
       explanation: "Cuboid: 216 = 12 × 3 × H. So 216 = 36 × H, H = 216 ÷ 36 = 6 cm. ✓"
@@ -19932,7 +19932,7 @@ volume: {
       id: 38,
       difficulty: 2,
       question: "A box measures 11 cm by 11 cm by 11 cm. Another box measures 22 cm by 5.5 cm by 11 cm. Which statement is true?",
-      image: "volume/comparison-q38.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 11, width: 11, height: 11, label: "Box 1" }, cuboid2: { length: 22, width: 5.5, height: 11, label: "Box 2" }, dimUnit: "cm" } },
       options: ["First box has greater volume", "Second box has greater volume", "They have equal volumes", "Cannot determine", "Second box has double volume"],
       correct: 2,
       explanation: "First: 11 × 11 × 11 = 1,331 cm³. Second: 22 × 5.5 × 11 = 1,331 cm³. Equal volumes. ✓"
@@ -19984,7 +19984,7 @@ volume: {
       id: 44,
       difficulty: 2,
       question: "A cuboid has dimensions x cm by 3x cm by 4 cm. If x = 6, what is the volume?",
-      image: "volume/algebraic-q44.svg",
+      visual: { component: "CuboidDiagram", props: { length: "x", width: "3x", height: 4, dimUnit: "cm" } },
       options: ["72 cubic cm", "216 cubic cm", "864 cubic cm", "432 cubic cm", "144 cubic cm"],
       correct: 3,
       explanation: "If x = 6, dimensions are 6 × 18 × 4. Volume = 6 × 18 × 4 = 432 cm³. ✓"
@@ -20010,7 +20010,7 @@ volume: {
       id: 47,
       difficulty: 3,
       question: "A cube has edges that are three times as long as another cube with 4 cm edges. What is the volume of the larger cube?",
-      image: "volume/cubes-q47.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 4, width: 4, height: 4, label: "Small cube" }, cuboid2: { length: 12, width: 12, height: 12, label: "Large cube" }, dimUnit: "cm" } },
       options: ["48 cubic cm", "1728 cubic cm", "576 cubic cm", "192 cubic cm", "144 cubic cm"],
       correct: 1,
       explanation: "Larger cube edge = 3 × 4 = 12 cm. Volume = 12 × 12 × 12 = 1,728 cm³. ✓"
@@ -20139,7 +20139,7 @@ volume: {
       id: 62,
       difficulty: 2,
       question: "A cuboid has dimensions 2y cm by 5y cm by 6 cm. If y = 4, what is the volume?",
-      image: "volume/algebraic-q62.svg",
+      visual: { component: "CuboidDiagram", props: { length: "2y", width: "5y", height: 6, dimUnit: "cm" } },
       options: ["240 cubic cm", "960 cubic cm", "480 cubic cm", "1920 cubic cm", "120 cubic cm"],
       correct: 1,
       explanation: "If y = 4, dimensions are 8 × 20 × 6. Volume = 8 × 20 × 6 = 960 cm³. ✓"
@@ -20319,7 +20319,7 @@ volume: {
       id: 83,
       difficulty: 2,
       question: "A cube and a cuboid both have a volume of 1000 cm³. The cube has 10 cm edges. If the cuboid is 20 cm long and 5 cm wide, what is its height?",
-      image: "volume/comparison-q83.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 10, width: 10, height: 10, label: "Cube" }, cuboid2: { length: 20, width: 5, height: 10, label: "Cuboid" }, dimUnit: "cm" } },
       options: ["5 cm", "8 cm", "10 cm", "12 cm", "15 cm"],
       correct: 2,
       explanation: "Cuboid: 1000 = 20 × 5 × H. So 1000 = 100 × H, H = 10 cm. ✓"
@@ -20362,7 +20362,7 @@ volume: {
       id: 88,
       difficulty: 3,
       question: "A cuboid has dimensions 3z cm by 4z cm by 8 cm. If z = 5, what is the volume?",
-      image: "volume/algebraic-q88.svg",
+      visual: { component: "CuboidDiagram", props: { length: "3z", width: "4z", height: 8, dimUnit: "cm" } },
       options: ["480 cubic cm", "960 cubic cm", "2400 cubic cm", "1920 cubic cm", "3840 cubic cm"],
       correct: 2,
       explanation: "If z = 5, dimensions are 3 × 5 = 15 cm, 4 × 5 = 20 cm, and 8 cm. Volume = 15 × 20 × 8 = 2,400 cubic cm. ✓"
@@ -20466,7 +20466,7 @@ volume: {
       id: 100,
       difficulty: 3,
       question: "A cube has edges that are four times as long as another cube with 5 cm edges. What is the volume of the larger cube?",
-      image: "volume/cubes-q100.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 5, width: 5, height: 5, label: "Small cube" }, cuboid2: { length: 20, width: 20, height: 20, label: "Large cube" }, dimUnit: "cm" } },
       options: ["100 cubic cm", "500 cubic cm", "2000 cubic cm", "4000 cubic cm", "8000 cubic cm"],
       correct: 4,
       explanation: "Larger cube edge = 4 × 5 = 20 cm. Volume = 20 × 20 × 20 = 8,000 cm³. ✓"
@@ -20586,7 +20586,7 @@ volume: {
       id: 114,
       difficulty: 3,
       question: "A cuboid has dimensions 2w cm by 3w cm by 4w cm. If w = 5, what is the volume?",
-      image: "volume/algebraic-q114.svg",
+      visual: { component: "CuboidDiagram", props: { length: "2w", width: "3w", height: "4w", dimUnit: "cm" } },
       options: ["2,400 cubic cm", "2,700 cubic cm", "3,300 cubic cm", "3,000 cubic cm", "3,600 cubic cm"],
       correct: 3,
       explanation: "If w = 5, dimensions are 2×5 = 10, 3×5 = 15, and 4×5 = 20. Volume = 10 × 15 × 20 = 3,000 cm³. ✓"
@@ -20660,7 +20660,7 @@ volume: {
     {
       id: 123,
       difficulty: 3,
-      image: "volume/comparison-q123.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 30, width: 20, height: 15, label: "Box" }, cuboid2: { length: 25, width: 25, height: 25, label: "Cube" }, dimUnit: "cm" } },
       question: "Which container holds more water: a rectangular box measuring 30 cm \u00D7 20 cm \u00D7 15 cm, or a cube with edges of 25 cm? How much more does the larger one hold, in cm\u00B3?",
       options: ["The box holds 6,625 cm\u00B3 more", "The cube holds 9,000 cm\u00B3 more", "The cube holds 6,625 cm\u00B3 more", "The box holds 15,625 cm\u00B3 more", "They hold the same amount"],
       correct: 2,
@@ -20685,7 +20685,7 @@ volume: {
     {
       id: 126,
       difficulty: 3,
-      image: "volume/lshape-q126.svg",
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 10, width: 6, height: 4, label: "Full cuboid" }, cuboid2: { length: 5, width: 3, height: 4, label: "Cut-out" }, dimUnit: "cm" } },
       question: "An L-shaped solid is made by cutting a 5 cm \u00D7 3 cm \u00D7 4 cm corner from a 10 cm \u00D7 6 cm \u00D7 4 cm cuboid. What is the volume of the L-shaped solid?",
       options: ["180 cm\u00B3", "150 cm\u00B3", "120 cm\u00B3", "200 cm\u00B3", "240 cm\u00B3"],
       correct: 0,

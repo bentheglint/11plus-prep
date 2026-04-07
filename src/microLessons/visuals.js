@@ -2057,6 +2057,95 @@ export function CuboidDiagram({
 
 
 // ============================================================
+// CuboidComparison — Two cuboids side by side for comparison
+// ============================================================
+// Props:
+//   cuboid1: { length, width, height, label } — first cuboid
+//   cuboid2: { length, width, height, label } — second cuboid
+//   dimUnit — unit string
+
+export function CuboidComparison({
+  cuboid1 = { length: 8, width: 8, height: 8, label: "Box 1" },
+  cuboid2 = { length: 16, width: 4, height: 8, label: "Box 2" },
+  dimUnit = "cm"
+}) {
+  const svgW = 480, svgH = 260;
+  const baseY = 195;
+
+  // Parse numeric values for proportional scaling
+  const num = (v) => typeof v === 'number' ? v : parseFloat(v) || 5;
+  const allDims = [num(cuboid1.length), num(cuboid1.width), num(cuboid1.height),
+                   num(cuboid2.length), num(cuboid2.width), num(cuboid2.height)];
+  const maxDim = Math.max(...allDims);
+
+  // Scale factor: largest dimension maps to maxPx
+  const maxPx = 100;
+  const s = maxPx / maxDim;
+
+  const drawCuboid = (cx, dims, label) => {
+    // Proportional sizes
+    const fl = num(dims.length) * s;    // front face width
+    const fh = num(dims.height) * s;    // front face height
+    const depth = num(dims.width) * s;  // depth
+    const dxOff = depth * 0.55;
+    const dyOff = -depth * 0.44;
+
+    const ox = cx - fl / 2 - dxOff * 0.3;
+    const oy = baseY;
+
+    const f_bl = { x: ox, y: oy };
+    const f_br = { x: ox + fl, y: oy };
+    const f_tr = { x: ox + fl, y: oy - fh };
+    const f_tl = { x: ox, y: oy - fh };
+    const b_tr = { x: f_tr.x + dxOff, y: f_tr.y + dyOff };
+    const b_tl = { x: f_tl.x + dxOff, y: f_tl.y + dyOff };
+    const b_br = { x: f_br.x + dxOff, y: f_br.y + dyOff };
+
+    return (
+      <g>
+        {/* Faces */}
+        <polygon points={`${f_bl.x},${f_bl.y} ${f_br.x},${f_br.y} ${f_tr.x},${f_tr.y} ${f_tl.x},${f_tl.y}`}
+                 fill="#bfdbfe" stroke="#3b82f6" strokeWidth="2" />
+        <polygon points={`${f_tl.x},${f_tl.y} ${f_tr.x},${f_tr.y} ${b_tr.x},${b_tr.y} ${b_tl.x},${b_tl.y}`}
+                 fill="#dbeafe" stroke="#3b82f6" strokeWidth="2" />
+        <polygon points={`${f_br.x},${f_br.y} ${b_br.x},${b_br.y} ${b_tr.x},${b_tr.y} ${f_tr.x},${f_tr.y}`}
+                 fill="#93c5fd" stroke="#3b82f6" strokeWidth="2" />
+
+        {/* Length label — below front face */}
+        <text x={(f_bl.x + f_br.x) / 2} y={oy + 20} textAnchor="middle"
+              fontFamily="system-ui, -apple-system, sans-serif" fontSize="12"
+              fontWeight="bold" fill="#6366f1">{dims.length} {dimUnit}</text>
+
+        {/* Height label — left of front face */}
+        <text x={f_bl.x - 10} y={(f_bl.y + f_tl.y) / 2 + 4} textAnchor="end"
+              fontFamily="system-ui, -apple-system, sans-serif" fontSize="12"
+              fontWeight="bold" fill="#6366f1">{dims.height} {dimUnit}</text>
+
+        {/* Width label — along top-right edge */}
+        <text x={b_tr.x + 6} y={b_tr.y + 14} textAnchor="start"
+              fontFamily="system-ui, -apple-system, sans-serif" fontSize="12"
+              fontWeight="bold" fill="#6366f1">{dims.width} {dimUnit}</text>
+
+        {/* Name label */}
+        <text x={(f_bl.x + f_br.x) / 2} y={oy + 38} textAnchor="middle"
+              fontFamily="system-ui, -apple-system, sans-serif" fontSize="13"
+              fontWeight="bold" fill="#64748b">{label}</text>
+      </g>
+    );
+  };
+
+  return (
+    <div className="flex justify-center">
+      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 500 }}>
+        {drawCuboid(145, cuboid1, cuboid1.label)}
+        {drawCuboid(355, cuboid2, cuboid2.label)}
+      </svg>
+    </div>
+  );
+}
+
+
+// ============================================================
 // LShapeDiagram — Compound L-shape with two labelled rectangles
 // ============================================================
 // Shows an L-shape split into Rectangle A and Rectangle B with dimensions.
