@@ -32,6 +32,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
               currentStreak={streaksAndPP.currentStreak}
               longestStreak={streaksAndPP.longestStreak}
               isActive={streaksAndPP.isStreakActive()}
+              practiceDays={streaksAndPP.getPracticeDays(56)}
             />
           ) : <div />}
           <UserAvatar currentUser={currentUser} onSetCurrentUser={onSetCurrentUser} />
