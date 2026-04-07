@@ -116,7 +116,18 @@ function App() {
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = React.useRef(null);
   const questionStartTime = React.useRef(Date.now());
+  const pausedTimeMs = React.useRef(0);        // accumulated pause time for current question
+  const pauseStartTime = React.useRef(null);    // when the current pause began
   const quizSessionId = React.useRef(Date.now());
+  // Resume timer when AI tutor chat closes
+  const prevShowTutorChat = React.useRef(false);
+  React.useEffect(() => {
+    if (prevShowTutorChat.current && !showTutorChat && pauseStartTime.current) {
+      pausedTimeMs.current += Date.now() - pauseStartTime.current;
+      pauseStartTime.current = null;
+    }
+    prevShowTutorChat.current = showTutorChat;
+  }, [showTutorChat]);
   // Post-question tip state (Oracle: show tip ~every 3rd wrong answer)
   const wrongAnswerCount = React.useRef(0);
   const sessionShownTipIds = React.useRef(new Set());
@@ -206,7 +217,7 @@ function App() {
     setSelectedPair(state.selectedPair);
     setShowFeedback(state.showFeedback);
     quizSessionId.current = state.sessionId;
-    questionStartTime.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;
     setCurrentView('quiz');
   }, [quizSaveKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -325,7 +336,7 @@ function App() {
     setQuizMode('challenge');
     setCurrentQuestionIndex(0);
     setAnswers([]);
-    questionStartTime.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;
     quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
@@ -344,7 +355,7 @@ function App() {
     setQuizMode('daily');
     setCurrentQuestionIndex(0);
     setAnswers([]);
-    questionStartTime.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;
     quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
@@ -369,7 +380,7 @@ function App() {
     setQuizMode('focused');
     setCurrentQuestionIndex(0);
     setAnswers([]);
-    questionStartTime.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;
     quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
@@ -430,8 +441,13 @@ function App() {
 
     const isCorrect = checkAnswerCorrectness(currentQuestion, selectedAnswer, selectedPair);
 
-    const rawTimeMs = Date.now() - questionStartTime.current;
-    const timeSpentMs = rawTimeMs > 300000 ? 0 : rawTimeMs; // Cap at 5 mins — longer means they walked away
+    // Subtract time spent in lessons/tutor so children aren't penalised for learning
+    if (pauseStartTime.current) {
+      pausedTimeMs.current += Date.now() - pauseStartTime.current;
+      pauseStartTime.current = null;
+    }
+    const rawTimeMs = Date.now() - questionStartTime.current - pausedTimeMs.current;
+    const timeSpentMs = rawTimeMs > 300000 ? 0 : Math.max(0, rawTimeMs); // Cap at 5 mins
     setAnswers([...answers, {
       questionId: currentQuestion.id,
       correct: isCorrect,
@@ -497,7 +513,7 @@ function App() {
 
   const handleNextQuestion = () => {
     // Reset timer for next question
-    questionStartTime.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;
     if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
@@ -631,6 +647,8 @@ function App() {
   };
 
   const handleFindLesson = () => {
+    // Pause the question timer — don't penalise children for using learning tools
+    pauseStartTime.current = Date.now();
     const currentQ = quizQuestions[currentQuestionIndex];
     const topicKey = currentQ.topicKey || selectedTopic;
     const questionId = currentQ.question.id;
@@ -691,6 +709,8 @@ function App() {
   };
 
   const handleAskTutor = () => {
+    // Pause the question timer — don't penalise children for using learning tools
+    if (!pauseStartTime.current) pauseStartTime.current = Date.now();
     setShowTutorChat(true);
     if (chatMessages.length === 0) {
       setChatMessages([{
@@ -1330,6 +1350,11 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           setForcedLessonResult(null);
           // If launched from quiz "Find Me a Lesson", show "Did that help?" screen
           if (lessonFromQuiz) {
+            // Resume question timer — add paused duration to accumulator
+            if (pauseStartTime.current) {
+              pausedTimeMs.current += Date.now() - pauseStartTime.current;
+              pauseStartTime.current = null;
+            }
             setShowDidItHelp(true);
             setCurrentView('quiz');
           } else if (returnToToolkit) {
