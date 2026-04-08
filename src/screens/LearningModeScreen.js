@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Calendar, Target, ArrowLeft, Clock, Lightbulb, Flame, Lock } from 'lucide-react';
+import { motion } from '../components/Motion';
 import { SUBJECT_TOPICS } from '../hooks/useMastery';
 
 const mockTestInfo = {
@@ -25,13 +26,16 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
   return (
     <div className="app-bg p-4">
       <div className="max-w-3xl mx-auto">
-        <button
+        <motion.button
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
           onClick={onBack}
           className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Home
-        </button>
+        </motion.button>
 
         <div className="text-center mb-8 animate-fade-in-up">
           <h2 className="text-3xl font-heading font-bold text-slate-800 mb-2">
@@ -41,31 +45,40 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={onStartDaily}
-            className="card rounded-2xl p-8 text-left flex flex-col hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#0984E3]/30 animate-scale-in"
+            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#0984E3]/30 "
           >
             <div className="flex items-center justify-center w-16 h-16 bg-[#0984E3]/10 rounded-2xl mb-4">
               <Calendar className="w-8 h-8 text-[#0984E3]" />
             </div>
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Daily Learning</h3>
             <p className="text-slate-500 flex-1">10 questions from across all topics. A great way to keep your skills sharp!</p>
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={onFocusedLearning}
-            className="card rounded-2xl p-8 text-left flex flex-col hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#6C5CE7]/30 animate-scale-in"
+            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#6C5CE7]/30 "
           >
             <div className="flex items-center justify-center w-16 h-16 bg-[#6C5CE7]/10 rounded-2xl mb-4">
               <Target className="w-8 h-8 text-[#6C5CE7]" />
             </div>
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Focused Learning</h3>
             <p className="text-slate-500 flex-1">Pick a topic and practise 10 questions to build your confidence.</p>
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={onMockTest}
-            className="card rounded-2xl p-8 text-left flex flex-col hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#FF6B6B]/30 animate-scale-in"
+            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#FF6B6B]/30 "
           >
             <div className="flex items-center justify-center w-16 h-16 bg-[#FF6B6B]/10 rounded-2xl mb-4">
               <Clock className="w-8 h-8 text-[#FF6B6B]" />
@@ -74,23 +87,29 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             <p className="text-slate-500 flex-1">
               Full practice paper — {testInfo.questions} questions in {testInfo.time} minutes. Timed, just like the real exam!
             </p>
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={onStudyToolkit}
-            className="card rounded-2xl p-8 text-left flex flex-col hover:scale-[1.02] transition-all border-2 border-transparent hover:border-[#FDCB6E]/30 animate-scale-in"
+            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#FDCB6E]/30 "
           >
             <div className="flex items-center justify-center w-16 h-16 bg-[#FDCB6E]/10 rounded-2xl mb-4">
               <Lightbulb className="w-8 h-8 text-[#F39C12]" />
             </div>
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Study Toolkit</h3>
             <p className="text-slate-500 flex-1">Tips, strategies, and lessons to help you ace the exam!</p>
-          </button>
+          </motion.button>
         </div>
 
         {/* Challenge Mode — full-width banner below the grid */}
         <div className="mt-6 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-          <button
+          <motion.button
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={challengeStatus.unlocked ? onChallengeMode : undefined}
             disabled={!challengeStatus.unlocked}
             className={`w-full card rounded-2xl p-6 text-left flex items-center gap-5 transition-all border-2 ${
@@ -128,7 +147,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
                 D3 Only
               </div>
             )}
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

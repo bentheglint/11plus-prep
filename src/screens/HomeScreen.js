@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench, ClipboardCheck } from 'lucide-react';
+import { motion } from '../components/Motion';
 import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
@@ -62,22 +63,26 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           </div>
         </div>
 
-        <div className="mb-8 flex justify-center gap-3 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-          <button
+        <div className="mb-8 flex justify-center gap-3">
+          <motion.button
             onClick={onViewProgress}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
             className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
           >
             <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
             <span className="font-heading">View My Progress</span>
-          </button>
+          </motion.button>
           {onViewMistakes && (
-            <button
+            <motion.button
               onClick={onViewMistakes}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
               className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
             >
               <BookOpen className="w-5 h-5 text-[#FF6B6B]" />
               <span className="font-heading">My Mistakes</span>
-            </button>
+            </motion.button>
           )}
           {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui') && (
             <button

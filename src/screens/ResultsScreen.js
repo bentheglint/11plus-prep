@@ -1,5 +1,6 @@
 import React, { useMemo, useEffect, useRef } from 'react';
 import { Home, RotateCcw, Trophy, ThumbsUp, Zap, ArrowLeft, Clock } from 'lucide-react';
+import { motion } from '../components/Motion';
 import ResultsInsightCard from '../components/ResultsInsightCard';
 import { selectResultsInsightTip } from '../utils/tipSelection';
 
@@ -95,21 +96,25 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
 
           <ResultsInsightCard tip={insightTip} />
 
-          <div className="flex flex-col sm:flex-row gap-4 stagger-children">
-            <button
+          <div className="flex flex-col sm:flex-row gap-4">
+            <motion.button
               onClick={onRetry}
-              className="flex-1 py-4 btn-primary flex items-center justify-center animate-fade-in-up"
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+              className="flex-1 py-4 btn-primary flex items-center justify-center"
             >
               <RotateCcw className="w-5 h-5 mr-2" />
               {quizMode === 'daily' ? 'New Daily Quiz' : quizMode === 'challenge' ? 'New Challenge' : 'Try Again'}
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={onChooseTopic}
-              className="flex-1 py-4 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-slate-800 font-heading font-bold rounded-xl transition-colors flex items-center justify-center animate-fade-in-up"
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+              className="flex-1 py-4 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-slate-800 font-heading font-bold rounded-xl transition-colors flex items-center justify-center"
             >
               <Home className="w-5 h-5 mr-2" />
               {quizMode === 'daily' ? 'Learning Modes' : 'Choose Topic'}
-            </button>
+            </motion.button>
           </div>
 
           {/* Home link at top via back button */}

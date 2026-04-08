@@ -1849,17 +1849,20 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
 
 function SubjectCard({ title, icon: Icon, gradient, color, onClick, disabled }) {
   return (
-    <button
+    <motion.button
       onClick={onClick}
       disabled={disabled}
-      className={`${gradient ? `bg-gradient-to-br ${gradient}` : color} text-white rounded-2xl p-8 transition-all transform hover:scale-[1.03] shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed animate-scale-in`}
+      whileHover={disabled ? {} : { scale: 1.03, y: -3 }}
+      whileTap={disabled ? {} : { scale: 0.97 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+      className={`${gradient ? `bg-gradient-to-br ${gradient}` : color} text-white rounded-2xl p-8 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed`}
     >
       <div className="w-16 h-16 mx-auto mb-4 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
         <Icon className="w-9 h-9" />
       </div>
       <h3 className="text-2xl font-heading font-bold">{title}</h3>
       {disabled && <p className="text-sm mt-2 opacity-80">Coming Soon</p>}
-    </button>
+    </motion.button>
   );
 }
 
@@ -1897,9 +1900,12 @@ function TopicCard({ title, questionCount, performance, onClick }) {
     }
   }
   return (
-    <button
+    <motion.button
       onClick={onClick}
-      className="w-full card hover:bg-[#EDE8FF]/30 rounded-xl p-6 transition-all flex items-center justify-between group animate-fade-in-up overflow-hidden relative"
+      whileHover={{ scale: 1.015, y: -2 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+      className="w-full card hover:bg-[#EDE8FF]/30 rounded-xl p-6 flex items-center justify-between group overflow-hidden relative"
     >
       {/* Left performance bar */}
       <div
@@ -1912,7 +1918,7 @@ function TopicCard({ title, questionCount, performance, onClick }) {
         {perfDisplay}
       </div>
       <ChevronRight className="w-8 h-8 text-[#A29BFE] group-hover:translate-x-1 transition-transform" />
-    </button>
+    </motion.button>
   );
 }
 

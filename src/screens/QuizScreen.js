@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock, Flag, ChevronDown, CheckSquare, Square, Home } from 'lucide-react';
+import { motion } from '../components/Motion';
 import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
 import ClozeQuestionText from '../components/ClozeQuestionText';
 import Timer from '../components/Timer';
@@ -369,16 +370,20 @@ function QuizScreen({
               })()}
               
               {(!currentQuestion.questionType || currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'error-spotting' || currentQuestion.questionType === 'letter-codes') ? (
-                <div className="space-y-3 stagger-children" data-testid="options-standard">
+                <div className="space-y-3" data-testid="options-standard">
                   {currentQuestion.options.map((option, idx) => {
                     const letter = String.fromCharCode(65 + idx);
                     return (
-                    <button
+                    <motion.button
                       key={idx}
                       onClick={() => onAnswerSelect(idx)}
                       disabled={showFeedback}
                       style={{ touchAction: 'manipulation' }}
-                      className={`w-full p-4 text-left rounded-xl border-2 transition-all font-medium text-lg flex items-center gap-3 animate-fade-in-up ${
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 25, delay: idx * 0.06 }}
+                      whileTap={showFeedback ? {} : { scale: 0.97 }}
+                      className={`w-full p-4 text-left rounded-xl border-2 transition-colors font-medium text-lg flex items-center gap-3 ${
                         showFeedback
                           ? idx === currentQuestion.correct
                             ? 'border-[#00B894] bg-[#00B894]/10 text-slate-800'
@@ -404,7 +409,7 @@ function QuizScreen({
                         {letter}
                       </span>
                       {option}
-                    </button>
+                    </motion.button>
                     );
                   })}
                 </div>
