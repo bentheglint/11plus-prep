@@ -51,6 +51,16 @@ async function verifyClerkJWT(request, env) {
     if (payload.exp && payload.exp < now) return null;
     if (payload.nbf && payload.nbf > now + 60) return null;
 
+    // Verify issuer matches our Clerk instance
+    const expectedIssuer = `https://${env.CLERK_DOMAIN}`;
+    if (payload.iss !== expectedIssuer) return null;
+
+    // Verify authorized party if present (matches our frontend origins)
+    if (payload.azp && env.ALLOWED_ORIGINS) {
+      const allowed = env.ALLOWED_ORIGINS.split(',').map(o => o.trim());
+      if (!allowed.includes(payload.azp)) return null;
+    }
+
     return payload.sub;
   } catch {
     return null;

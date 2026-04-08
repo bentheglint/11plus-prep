@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
 import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
-import { fetchAllData, setTokenProvider } from '../utils/apiSync';
+import { fetchAllData, setTokenProvider, setVersions } from '../utils/apiSync';
 import MigrationScreen from './MigrationScreen';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
@@ -227,6 +227,9 @@ export default function AuthGate({ children }) {
   const seedLocalStorage = useCallback(async (childDisplayName) => {
     const serverData = await fetchAllData(getToken);
     if (!serverData) return; // No server data yet, that's fine
+
+    // Seed version cache so mutable PATCHes use correct versions
+    setVersions(serverData);
 
     const prefix = `user:${childDisplayName}:`;
 

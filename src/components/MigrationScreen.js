@@ -137,6 +137,10 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
   const [isImporting, setIsImporting] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [mismatchConfirmed, setMismatchConfirmed] = useState(false);
+
+  // Check if the found data belongs to a different child
+  const hasNameMismatch = scan?.userName && scan.userName.toLowerCase() !== childName?.toLowerCase();
 
   // Scan on mount
   useEffect(() => {
@@ -336,6 +340,24 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
           </div>
         </div>
 
+        {hasNameMismatch && !mismatchConfirmed && (
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
+            <div className="flex items-start gap-2 text-amber-700 text-sm mb-3">
+              <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold mb-1">Different name detected</p>
+                <p>This data belongs to <strong>{scan.userName}</strong>, but you're setting up an account for <strong>{childName}</strong>. Only import if this is the same child.</p>
+              </div>
+            </div>
+            <button
+              onClick={() => setMismatchConfirmed(true)}
+              className="w-full py-2 rounded-lg text-sm font-bold text-amber-700 bg-amber-100 hover:bg-amber-200 transition-colors"
+            >
+              Yes, this is {childName}'s data
+            </button>
+          </div>
+        )}
+
         {error && (
           <div className="flex items-center gap-2 bg-red-50 text-red-600 rounded-xl p-3 mb-4 text-sm">
             <AlertCircle className="w-4 h-4 flex-shrink-0" />
@@ -345,9 +367,9 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
 
         <button
           onClick={handleImport}
-          disabled={isImporting}
+          disabled={isImporting || (hasNameMismatch && !mismatchConfirmed)}
           className={`w-full py-3 rounded-xl font-bold text-white mb-3 transition-colors flex items-center justify-center gap-2 ${
-            isImporting ? 'bg-gray-300 cursor-not-allowed' : 'bg-[#6C5CE7] hover:bg-[#5A4BD1]'
+            isImporting || (hasNameMismatch && !mismatchConfirmed) ? 'bg-gray-300 cursor-not-allowed' : 'bg-[#6C5CE7] hover:bg-[#5A4BD1]'
           }`}
         >
           <Upload className="w-4 h-4" />

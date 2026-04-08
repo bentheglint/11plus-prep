@@ -35,16 +35,22 @@ function AccountMenu({ currentUser }) {
     setShowMenu(false);
   };
 
-  // Delete account and all data
+  // Delete account and all data — fail-closed: only clear local data if server confirms deletion
   const handleDelete = async () => {
     try {
       setIsDeleting(true);
       const token = await getToken();
-      await fetch(`${API_URL}/api/account`, {
+      const res = await fetch(`${API_URL}/api/account`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
-      // Clear localStorage for this user
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || `Server returned ${res.status}`);
+      }
+
+      // Server confirmed deletion — now safe to clear local data
       const prefix = `user:${currentUser}:`;
       Object.keys(localStorage).forEach(key => {
         if (key.startsWith(prefix)) localStorage.removeItem(key);
@@ -53,7 +59,7 @@ function AccountMenu({ currentUser }) {
       // Sign out of Clerk
       await signOut();
     } catch (err) {
-      alert('Delete failed. Please try again.');
+      alert(`Delete failed: ${err.message}. Your account has not been deleted. Please try again.`);
       setIsDeleting(false);
     }
   };

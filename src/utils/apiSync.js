@@ -11,6 +11,16 @@ export function setTokenProvider(getTokenFn) {
   _getToken = getTokenFn;
 }
 
+// ── Server version cache for mutable records ──
+const _versions = { streaks: 1, prepPoints: 1, preferences: 1 };
+
+// Called by AuthGate after bulk load to seed versions from server
+export function setVersions(serverData) {
+  if (serverData?.streaks?.version) _versions.streaks = serverData.streaks.version;
+  if (serverData?.prepPoints?.version) _versions.prepPoints = serverData.prepPoints.version;
+  if (serverData?.preferences?.version) _versions.preferences = serverData.preferences.version;
+}
+
 async function apiCall(path, method = 'GET', body = null) {
   if (!_getToken || !API_URL) return null;
 
@@ -98,13 +108,58 @@ export function syncSeenTip(tipId, lastSeenDate) {
   apiCall('/api/data/seen-tip', 'POST', { tipId, lastSeenDate });
 }
 
-// ── Mutable writes (fire-and-forget, no version check for now) ──
-// At 10 users on one device each, version conflicts won't happen.
-// Full optimistic concurrency added when multi-device is tested.
+// ── Mutable writes (versioned, fire-and-forget with 409 retry) ──
+
+async function versionedPatch(path, versionKey, body) {
+  if (!_getToken || !API_URL) return;
+
+  try {
+    const token = await _getToken();
+    if (!token) return;
+
+    const payload = { ...body, version: _versions[versionKey] };
+    const res = await fetch(`${API_URL}${path}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      if (data.version) _versions[versionKey] = data.version;
+      return;
+    }
+
+    // On 409, update cached version and retry once
+    if (res.status === 409) {
+      const err = await res.json().catch(() => ({}));
+      if (err.currentVersion) {
+        _versions[versionKey] = err.currentVersion;
+        const retryPayload = { ...body, version: err.currentVersion };
+        const retry = await fetch(`${API_URL}${path}`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify(retryPayload),
+        });
+        if (retry.ok) {
+          const data = await retry.json();
+          if (data.version) _versions[versionKey] = data.version;
+        }
+      }
+    }
+  } catch (err) {
+    console.warn(`[apiSync] PATCH ${path} error:`, err.message);
+  }
+}
 
 export function syncStreaks(data) {
-  apiCall('/api/data/streaks', 'PATCH', {
-    version: 1, // TODO: track actual version for multi-device
+  versionedPatch('/api/data/streaks', 'streaks', {
     currentStreak: data.currentStreak,
     longestStreak: data.longestStreak,
     lastQuizDate: data.lastQuizDate,
@@ -113,8 +168,7 @@ export function syncStreaks(data) {
 }
 
 export function syncPrepPoints(data) {
-  apiCall('/api/data/prep-points', 'PATCH', {
-    version: 1, // TODO: track actual version for multi-device
+  versionedPatch('/api/data/prep-points', 'prepPoints', {
     total: data.total,
     level: data.level,
     todayPP: data.todayPP,
@@ -123,8 +177,7 @@ export function syncPrepPoints(data) {
 }
 
 export function syncPreferences(lastSessionDate) {
-  apiCall('/api/data/preferences', 'PATCH', {
-    version: 1, // TODO: track actual version for multi-device
+  versionedPatch('/api/data/preferences', 'preferences', {
     lastSessionDate,
   });
 }
