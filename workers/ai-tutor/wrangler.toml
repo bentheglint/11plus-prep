@@ -5,3 +5,8 @@ compatibility_date = "2024-01-01"
 [[kv_namespaces]]
 binding = "TESTING_FLAGS"
 id = "4002f528b09b4352a5f42f0396645116"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "11plus-user-data"
+database_id = "11c21cbc-441a-4af0-b9ec-0151663393ab"

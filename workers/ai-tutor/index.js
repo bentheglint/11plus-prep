@@ -1,7 +1,7 @@
 const CORS = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Methods': 'GET, POST, PATCH, DELETE, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
 
 function json(data, status = 200) {
@@ -11,7 +11,75 @@ function json(data, status = 200) {
   });
 }
 
-// ── Testing Flags (KV-backed) ──
+// ── Clerk JWT Verification ──
+// Verifies the Clerk session JWT from the Authorization header.
+// Returns the Clerk userId on success, or null on failure.
+
+async function verifyClerkJWT(request, env) {
+  const authHeader = request.headers.get('Authorization');
+  if (!authHeader || !authHeader.startsWith('Bearer ')) return null;
+
+  const token = authHeader.slice(7);
+
+  try {
+    // Decode the JWT header to get the key ID (kid)
+    const [headerB64] = token.split('.');
+    const header = JSON.parse(atob(headerB64.replace(/-/g, '+').replace(/_/g, '/')));
+    const kid = header.kid;
+    if (!kid) return null;
+
+    // Fetch Clerk's JWKS (JSON Web Key Set) — cached by CF for performance
+    const jwksUrl = `https://${env.CLERK_DOMAIN}/.well-known/jwks.json`;
+    const jwksResponse = await fetch(jwksUrl, {
+      cf: { cacheTtl: 3600, cacheEverything: true },
+    });
+    if (!jwksResponse.ok) return null;
+
+    const jwks = await jwksResponse.json();
+    const key = jwks.keys.find(k => k.kid === kid);
+    if (!key) return null;
+
+    // Import the public key and verify the JWT signature
+    const cryptoKey = await crypto.subtle.importKey(
+      'jwk', key,
+      { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
+      false, ['verify']
+    );
+
+    // Split token and verify signature
+    const parts = token.split('.');
+    const encoder = new TextEncoder();
+    const data = encoder.encode(`${parts[0]}.${parts[1]}`);
+    const signature = Uint8Array.from(
+      atob(parts[2].replace(/-/g, '+').replace(/_/g, '/')),
+      c => c.charCodeAt(0)
+    );
+
+    const valid = await crypto.subtle.verify('RSASSA-PKCS1-v1_5', cryptoKey, signature, data);
+    if (!valid) return null;
+
+    // Decode payload and check expiry
+    const payload = JSON.parse(atob(parts[1].replace(/-/g, '+').replace(/_/g, '/')));
+    const now = Math.floor(Date.now() / 1000);
+    if (payload.exp && payload.exp < now) return null;
+    if (payload.nbf && payload.nbf > now + 60) return null;
+
+    return payload.sub; // Clerk userId
+  } catch {
+    return null;
+  }
+}
+
+// Middleware: require auth and return userId, or respond with 401
+async function requireAuth(request, env) {
+  const userId = await verifyClerkJWT(request, env);
+  if (!userId) {
+    return { error: json({ error: 'Unauthorized' }, 401) };
+  }
+  return { userId };
+}
+
+// ── Testing Flags (KV-backed, no auth required) ──
 
 async function getFlags(env) {
   const raw = await env.TESTING_FLAGS.get('all-flags');
@@ -53,7 +121,7 @@ async function handleMarkFixed(request, env) {
   return json({ ok: true });
 }
 
-// ── AI Tutor (Anthropic proxy) ──
+// ── AI Tutor (Anthropic proxy, no auth required) ──
 
 async function handleTutor(request, env) {
   const { system, messages } = await request.json();
@@ -86,6 +154,19 @@ async function handleTutor(request, env) {
   return json(data);
 }
 
+// ── API Route Placeholders (auth-protected, implemented in Phase 2) ──
+
+async function handleApiRoute(request, env, userId, path) {
+  // Phase 2 will implement these routes. For now, return the route info
+  // so we can verify the auth middleware is working.
+  return json({
+    message: 'API route not yet implemented',
+    route: path,
+    method: request.method,
+    userId,
+  }, 501);
+}
+
 // ── Router ──
 
 export default {
@@ -98,6 +179,8 @@ export default {
     const path = url.pathname;
 
     try {
+      // ── Public routes (no auth) ──
+
       // Flag routes
       if (path === '/flags' && request.method === 'GET') {
         return handleGetFlags(env);
@@ -112,9 +195,18 @@ export default {
         return handleMarkFixed(request, env);
       }
 
-      // Default: AI tutor (backward compatible — POST to root)
-      if (request.method === 'POST') {
+      // AI tutor — backward compatible POST to root (no /api prefix)
+      if (request.method === 'POST' && !path.startsWith('/api/')) {
         return handleTutor(request, env);
+      }
+
+      // ── Auth-protected routes (/api/*) ──
+
+      if (path.startsWith('/api/')) {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+
+        return handleApiRoute(request, env, auth.userId, path);
       }
 
       return new Response('Not found', { status: 404, headers: CORS });
