@@ -8,6 +8,8 @@ import App from './App';
 import DevReviewPanel from './DevReviewPanel';
 import DiagramViewer from './DiagramViewer';
 import AuthGate from './components/AuthGate';
+import ErrorBoundary from './components/ErrorBoundary';
+import OfflineBanner from './components/OfflineBanner';
 import reportWebVitals from './reportWebVitals';
 
 const CLERK_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
@@ -17,20 +19,23 @@ const isDiagramViewer = new URLSearchParams(window.location.search).has('diagram
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClerkProvider publishableKey={CLERK_KEY}>
-      {isDiagramViewer ? (
-        <DiagramViewer />
-      ) : (
-        <AuthGate>
-          {(childName) => (
-            <>
-              <App currentUser={childName} />
-              <DevReviewPanel />
-            </>
-          )}
-        </AuthGate>
-      )}
-    </ClerkProvider>
+    <ErrorBoundary>
+      <OfflineBanner />
+      <ClerkProvider publishableKey={CLERK_KEY}>
+        {isDiagramViewer ? (
+          <DiagramViewer />
+        ) : (
+          <AuthGate>
+            {(childName) => (
+              <>
+                <App currentUser={childName} />
+                <DevReviewPanel />
+              </>
+            )}
+          </AuthGate>
+        )}
+      </ClerkProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 );
 

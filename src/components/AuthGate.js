@@ -443,7 +443,7 @@ export default function AuthGate({ children }) {
             <ArrowLeft className="w-4 h-4" />
             Back
           </button>
-          <SignIn afterSignInUrl="/" />
+          <SignIn fallbackRedirectUrl="/" />
         </div>
       );
     }
@@ -457,7 +457,7 @@ export default function AuthGate({ children }) {
             <ArrowLeft className="w-4 h-4" />
             Back
           </button>
-          <SignUp afterSignUpUrl="/" />
+          <SignUp fallbackRedirectUrl="/" />
         </div>
       );
     }
