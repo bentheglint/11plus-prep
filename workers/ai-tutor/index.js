@@ -1,19 +1,10 @@
-const CORS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, POST, PATCH, DELETE, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-};
-
-function json(data, status = 200) {
-  return new Response(JSON.stringify(data), {
-    status,
-    headers: { 'Content-Type': 'application/json', ...CORS },
-  });
-}
+import { CORS, json } from './helpers.js';
+import { handleAccountRoutes } from './routes/account.js';
+import { handleDataRoutes } from './routes/data.js';
+import { handleMutableRoutes } from './routes/mutable.js';
+import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 
 // ── Clerk JWT Verification ──
-// Verifies the Clerk session JWT from the Authorization header.
-// Returns the Clerk userId on success, or null on failure.
 
 async function verifyClerkJWT(request, env) {
   const authHeader = request.headers.get('Authorization');
@@ -22,13 +13,11 @@ async function verifyClerkJWT(request, env) {
   const token = authHeader.slice(7);
 
   try {
-    // Decode the JWT header to get the key ID (kid)
     const [headerB64] = token.split('.');
     const header = JSON.parse(atob(headerB64.replace(/-/g, '+').replace(/_/g, '/')));
     const kid = header.kid;
     if (!kid) return null;
 
-    // Fetch Clerk's JWKS (JSON Web Key Set) — cached by CF for performance
     const jwksUrl = `https://${env.CLERK_DOMAIN}/.well-known/jwks.json`;
     const jwksResponse = await fetch(jwksUrl, {
       cf: { cacheTtl: 3600, cacheEverything: true },
@@ -39,14 +28,12 @@ async function verifyClerkJWT(request, env) {
     const key = jwks.keys.find(k => k.kid === kid);
     if (!key) return null;
 
-    // Import the public key and verify the JWT signature
     const cryptoKey = await crypto.subtle.importKey(
       'jwk', key,
       { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
       false, ['verify']
     );
 
-    // Split token and verify signature
     const parts = token.split('.');
     const encoder = new TextEncoder();
     const data = encoder.encode(`${parts[0]}.${parts[1]}`);
@@ -58,19 +45,17 @@ async function verifyClerkJWT(request, env) {
     const valid = await crypto.subtle.verify('RSASSA-PKCS1-v1_5', cryptoKey, signature, data);
     if (!valid) return null;
 
-    // Decode payload and check expiry
     const payload = JSON.parse(atob(parts[1].replace(/-/g, '+').replace(/_/g, '/')));
     const now = Math.floor(Date.now() / 1000);
     if (payload.exp && payload.exp < now) return null;
     if (payload.nbf && payload.nbf > now + 60) return null;
 
-    return payload.sub; // Clerk userId
+    return payload.sub;
   } catch {
     return null;
   }
 }
 
-// Middleware: require auth and return userId, or respond with 401
 async function requireAuth(request, env) {
   const userId = await verifyClerkJWT(request, env);
   if (!userId) {
@@ -154,19 +139,6 @@ async function handleTutor(request, env) {
   return json(data);
 }
 
-// ── API Route Placeholders (auth-protected, implemented in Phase 2) ──
-
-async function handleApiRoute(request, env, userId, path) {
-  // Phase 2 will implement these routes. For now, return the route info
-  // so we can verify the auth middleware is working.
-  return json({
-    message: 'API route not yet implemented',
-    route: path,
-    method: request.method,
-    userId,
-  }, 501);
-}
-
 // ── Router ──
 
 export default {
@@ -181,21 +153,12 @@ export default {
     try {
       // ── Public routes (no auth) ──
 
-      // Flag routes
-      if (path === '/flags' && request.method === 'GET') {
-        return handleGetFlags(env);
-      }
-      if (path === '/flags' && request.method === 'POST') {
-        return handlePostFlag(request, env);
-      }
-      if (path === '/flags/resolve' && request.method === 'POST') {
-        return handleResolveFlag(request, env);
-      }
-      if (path === '/flags/fix' && request.method === 'POST') {
-        return handleMarkFixed(request, env);
-      }
+      if (path === '/flags' && request.method === 'GET') return handleGetFlags(env);
+      if (path === '/flags' && request.method === 'POST') return handlePostFlag(request, env);
+      if (path === '/flags/resolve' && request.method === 'POST') return handleResolveFlag(request, env);
+      if (path === '/flags/fix' && request.method === 'POST') return handleMarkFixed(request, env);
 
-      // AI tutor — backward compatible POST to root (no /api prefix)
+      // AI tutor — backward compatible POST to root
       if (request.method === 'POST' && !path.startsWith('/api/')) {
         return handleTutor(request, env);
       }
@@ -205,13 +168,41 @@ export default {
       if (path.startsWith('/api/')) {
         const auth = await requireAuth(request, env);
         if (auth.error) return auth.error;
+        const userId = auth.userId;
 
-        return handleApiRoute(request, env, auth.userId, path);
+        // Bulk load (single round-trip on login)
+        if (path === '/api/data/all' && request.method === 'GET') {
+          return handleBulkLoad(request, env, userId);
+        }
+
+        // Migration
+        if (path === '/api/data/migrate' && request.method === 'POST') {
+          return handleMigrate(request, env, userId);
+        }
+
+        // Export (GDPR)
+        if (path === '/api/data/export' && request.method === 'GET') {
+          return handleExport(request, env, userId);
+        }
+
+        // Account routes
+        const accountResult = await handleAccountRoutes(request, env, userId, path);
+        if (accountResult) return accountResult;
+
+        // Append-only data routes
+        const dataResult = await handleDataRoutes(request, env, userId, path);
+        if (dataResult) return dataResult;
+
+        // Mutable data routes (versioned)
+        const mutableResult = await handleMutableRoutes(request, env, userId, path);
+        if (mutableResult) return mutableResult;
+
+        return json({ error: 'API route not found', path, method: request.method }, 404);
       }
 
       return new Response('Not found', { status: 404, headers: CORS });
     } catch (err) {
-      return json({ error: 'Internal server error' }, 500);
+      return json({ error: 'Internal server error', detail: err.message }, 500);
     }
   },
 };
