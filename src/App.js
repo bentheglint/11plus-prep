@@ -1523,7 +1523,8 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           }
           if (lessonRecord) {
             const updated = { ...lessonHistory };
-            if (!updated[selectedTopic]) updated[selectedTopic] = { shown: [] };
+            if (!updated[selectedTopic]) updated[selectedTopic] = {};
+            if (!updated[selectedTopic].shown) updated[selectedTopic].shown = [];
             updated[selectedTopic].shown.push(lessonRecord);
             updated[selectedTopic].lastSubConcept = lessonRecord.subConcept;
             updated[selectedTopic].lastTemplateType = lessonRecord.templateType;
