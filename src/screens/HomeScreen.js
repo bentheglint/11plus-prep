@@ -1,23 +1,9 @@
 import React from 'react';
-import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench, ClipboardCheck } from 'lucide-react';
+import { BookOpen, Calculator, Brain, BarChart3, AlertCircle, Wrench, ClipboardCheck, ChevronRight } from 'lucide-react';
 import { motion } from '../components/Motion';
 import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
-
-function SubjectCard({ title, icon: Icon, gradient, onClick }) {
-  return (
-    <button
-      onClick={onClick}
-      className={`bg-gradient-to-br ${gradient} text-white rounded-2xl p-8 transition-all transform hover:scale-[1.03] shadow-lg hover:shadow-xl animate-scale-in`}
-    >
-      <div className="w-16 h-16 mx-auto mb-4 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-        <Icon className="w-9 h-9" />
-      </div>
-      <h3 className="text-2xl font-heading font-bold">{title}</h3>
-    </button>
-  );
-}
 
 function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP }) {
   // Get suggested topics — exactly one per subject (Maths, English, VR)
@@ -36,11 +22,22 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
     return result;
   })();
 
+  // Subject mastery scores
+  const mathsMastery = mastery?.getSubjectMastery?.('maths')?.score || 0;
+  const englishMastery = mastery?.getSubjectMastery?.('english')?.score || 0;
+  const vrMastery = mastery?.getSubjectMastery?.('verbalreasoning')?.score || 0;
+
+  const subjects = [
+    { key: 'maths', title: 'Maths', icon: Calculator, gradient: 'from-[#0984E3] to-[#0652DD]', mastery: mathsMastery },
+    { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#00B894] to-[#00876A]', mastery: englishMastery },
+    { key: 'verbalreasoning', title: 'Verbal Reasoning', icon: Brain, gradient: 'from-[#6C5CE7] to-[#5A4BD1]', mastery: vrMastery },
+  ];
+
   return (
     <div className="app-bg p-4">
       <div className="max-w-4xl mx-auto">
-        {/* Top bar with streak + avatar */}
-        <div className="flex items-center justify-between mb-4">
+        {/* Top bar */}
+        <div className="flex items-center justify-between mb-6">
           {streaksAndPP ? (
             <StreakDisplay
               currentStreak={streaksAndPP.currentStreak}
@@ -52,65 +49,106 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           <AccountMenu currentUser={currentUser} />
         </div>
 
-        <div className="text-center mb-6 mt-2 animate-fade-in-up">
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#6C5CE7] to-[#A29BFE] flex items-center justify-center shadow-lg">
-              <GraduationCap className="w-7 h-7 text-white" />
-            </div>
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-800">
-              11+ Test Prep
-            </h1>
+        {/* Greeting */}
+        <motion.div
+          className="mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+        >
+          <h1 className="font-heading text-fluid-xl font-bold text-slate-800">
+            {currentUser ? `Hey ${currentUser}!` : '11+ Test Prep'}
+          </h1>
+          <p className="text-slate-500 text-sm mt-1">What shall we work on today?</p>
+        </motion.div>
+
+        {/* Subject cards — 3-column bento */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          {subjects.map((sub, idx) => (
+            <motion.button
+              key={sub.key}
+              onClick={() => onSubjectSelect(sub.key)}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 25, delay: idx * 0.08 }}
+              whileHover={{ scale: 1.03, y: -3 }}
+              whileTap={{ scale: 0.97 }}
+              className={`bg-gradient-to-br ${sub.gradient} text-white rounded-2xl p-6 text-left relative overflow-hidden shadow-lg`}
+            >
+              <sub.icon className="w-8 h-8 mb-3 opacity-90" />
+              <h3 className="text-xl font-heading font-bold mb-3">{sub.title}</h3>
+              {/* Mastery progress bar */}
+              <div className="w-full h-1.5 bg-white/20 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full bg-white/70 rounded-full"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${sub.mastery}%` }}
+                  transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 + idx * 0.1 }}
+                />
+              </div>
+              <p className="text-white/70 text-xs mt-1.5 font-medium">{sub.mastery}% mastery</p>
+              {/* Decorative orb */}
+              <div className="absolute -bottom-8 -right-8 w-28 h-28 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+            </motion.button>
+          ))}
+        </div>
+
+        {/* Bento row: suggestion + nav buttons */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          {/* Suggestion card — spans 2 columns on desktop */}
+          <div className="md:col-span-2">
+            {suggestions.length > 0 ? (
+              <RecommendationCard
+                recommendation={suggestions[0]}
+                onStart={onStartTopic}
+              />
+            ) : (
+              <motion.div
+                className="card p-5 h-full flex items-center gap-4"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#6C5CE7]/10 flex items-center justify-center flex-shrink-0">
+                  <ChevronRight className="w-6 h-6 text-[#6C5CE7]" />
+                </div>
+                <div>
+                  <p className="font-heading font-bold text-slate-800">Ready to practise?</p>
+                  <p className="text-sm text-slate-500">Pick a subject above to get started</p>
+                </div>
+              </motion.div>
+            )}
+          </div>
+
+          {/* Quick nav — stacked in 1 column */}
+          <div className="flex flex-col gap-3">
+            <motion.button
+              onClick={onViewProgress}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+              className="flex items-center gap-3 px-4 py-3 card hover:bg-[#EDE8FF]/30 rounded-xl transition-colors"
+            >
+              <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
+              <span className="font-heading font-bold text-slate-800 text-sm">My Progress</span>
+            </motion.button>
+            {onViewMistakes && (
+              <motion.button
+                onClick={onViewMistakes}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                className="flex items-center gap-3 px-4 py-3 card hover:bg-[#FF6B6B]/5 rounded-xl transition-colors"
+              >
+                <AlertCircle className="w-5 h-5 text-[#FF6B6B]" />
+                <span className="font-heading font-bold text-slate-800 text-sm">My Mistakes</span>
+              </motion.button>
+            )}
           </div>
         </div>
 
-        <div className="mb-8 flex justify-center gap-3">
-          <motion.button
-            onClick={onViewProgress}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-            className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
-          >
-            <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
-            <span className="font-heading">View My Progress</span>
-          </motion.button>
-          {onViewMistakes && (
-            <motion.button
-              onClick={onViewMistakes}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
-            >
-              <BookOpen className="w-5 h-5 text-[#FF6B6B]" />
-              <span className="font-heading">My Mistakes</span>
-            </motion.button>
-          )}
-          {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui') && (
-            <button
-              onClick={onSpeedReview}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-amber-300 hover:bg-amber-50 transition-colors"
-            >
-              <Wrench className="w-5 h-5 text-amber-500" />
-              <span className="font-heading">Speed Review</span>
-            </button>
-          )}
-          {(currentUser === 'Ben' || currentUser === 'Jacqui') && (
-            <button
-              onClick={onTestingMode}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-rose-300 hover:bg-rose-50 transition-colors"
-            >
-              <ClipboardCheck className="w-5 h-5 text-rose-500" />
-              <span className="font-heading">Testing Mode</span>
-            </button>
-          )}
-        </div>
-
-        {/* Suggested next sessions */}
-        {suggestions.length > 0 && (
-          <div className="mb-8 max-w-xl mx-auto space-y-3 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider text-center mb-2">
-              Suggested for you
-            </p>
-            {suggestions.map(rec => (
+        {/* Additional suggestions (2nd and 3rd) */}
+        {suggestions.length > 1 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            {suggestions.slice(1).map(rec => (
               <RecommendationCard
                 key={rec.topicKey}
                 recommendation={rec}
@@ -120,26 +158,27 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           </div>
         )}
 
-        <div className="grid md:grid-cols-3 gap-6 stagger-children">
-          <SubjectCard
-            title="Maths"
-            icon={Calculator}
-            gradient="from-[#0984E3] to-[#0652DD]"
-            onClick={() => onSubjectSelect('maths')}
-          />
-          <SubjectCard
-            title="English"
-            icon={BookOpen}
-            gradient="from-[#00B894] to-[#00876A]"
-            onClick={() => onSubjectSelect('english')}
-          />
-          <SubjectCard
-            title="Verbal Reasoning"
-            icon={Brain}
-            gradient="from-[#6C5CE7] to-[#5A4BD1]"
-            onClick={() => onSubjectSelect('verbalreasoning')}
-          />
-        </div>
+        {/* Dev/admin tools — only for specific users */}
+        {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui') && (
+          <div className="flex gap-3 mt-2">
+            <button
+              onClick={onSpeedReview}
+              className="flex items-center gap-2 px-4 py-2 text-sm text-amber-600 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200 transition-colors"
+            >
+              <Wrench className="w-4 h-4" />
+              Speed Review
+            </button>
+            {(currentUser === 'Ben' || currentUser === 'Jacqui') && (
+              <button
+                onClick={onTestingMode}
+                className="flex items-center gap-2 px-4 py-2 text-sm text-rose-600 bg-rose-50 hover:bg-rose-100 rounded-lg border border-rose-200 transition-colors"
+              >
+                <ClipboardCheck className="w-4 h-4" />
+                Testing Mode
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
