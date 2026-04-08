@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
 import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
 import { fetchAllData, setTokenProvider } from '../utils/apiSync';
+import MigrationScreen from './MigrationScreen';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -339,7 +340,15 @@ export default function AuthGate({ children }) {
         // Seed localStorage from server before rendering app
         await seedLocalStorage(data.child.display_name);
         setChildName(data.child.display_name);
-        setOnboardingStep('ready');
+
+        // Check if migration has already been done (either server-side or localStorage flag)
+        const migrationDone = localStorage.getItem(`migration-complete:${data.child.display_name}`);
+        if (migrationDone) {
+          setOnboardingStep('ready');
+        } else {
+          // First login on this device — check for localStorage data to migrate
+          setOnboardingStep('migration');
+        }
       } else if (data.account && !data.child) {
         setOnboardingStep('childName');
       }
@@ -397,12 +406,18 @@ export default function AuthGate({ children }) {
       });
 
       setChildName(displayName);
-      setOnboardingStep('ready');
+      // After creating child, check for localStorage data to migrate
+      setOnboardingStep('migration');
     } catch (err) {
       setError(err.message);
     } finally {
       setIsLoading(false);
     }
+  };
+
+  // Handle migration complete or skip
+  const handleMigrationDone = () => {
+    setOnboardingStep('ready');
   };
 
   // ── Render ──
@@ -484,6 +499,17 @@ export default function AuthGate({ children }) {
   // Onboarding: child name
   if (onboardingStep === 'childName') {
     return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
+  }
+
+  // Migration: check for existing localStorage data
+  if (onboardingStep === 'migration') {
+    return (
+      <MigrationScreen
+        childName={childName}
+        onComplete={handleMigrationDone}
+        onSkip={handleMigrationDone}
+      />
+    );
   }
 
   // Ready — render the app with child name
