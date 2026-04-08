@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { motion, AnimatePresence, viewTransition } from './components/Motion';
 import { BookOpen, Calculator, Brain, Home, ChevronRight, CheckCircle, XCircle, RotateCcw, BarChart3, Calendar, Target, MessageSquare, GraduationCap, Star, Trophy, ThumbsUp, Zap, Crown, Rocket, Wrench, MessageCircle, ArrowLeft, Award, Layers, Mic, MicOff } from 'lucide-react';
 import MicroLessonScreen from './microLessons/MicroLessonScreen';
 import SpeedReviewPanel from './SpeedReviewPanel';
@@ -1192,6 +1193,16 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     }
   }
 
+  // ── View key for AnimatePresence transitions ──
+  const viewKey = currentView === 'quiz' && showDidItHelp && lessonFromQuiz ? 'quiz-help'
+    : currentView === 'quiz' && showPreQuizTip && preQuizTip ? 'quiz-tip'
+    : currentView === 'mockTest' && mockTest.mockTestComplete ? 'mockTest-results'
+    : currentView === 'home' && showWelcomeBack && welcomeBackTip ? 'welcomeBack'
+    : currentView;
+
+  // ── Render the current view ──
+  function renderView() {
+
   if (currentView === 'speedReview') {
     return <SpeedReviewPanel
       onBack={() => setCurrentView('home')}
@@ -1464,26 +1475,18 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     }
 
     return (
-      <>
-        <MockTestResultsScreen
-          results={results}
-          onTryAgain={() => {
-            mockResultsSaved.current = false;
-            mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
-          }}
-          onHome={() => {
-            mockResultsSaved.current = false;
-            mockTest.endMockTest();
-            handleHome();
-          }}
-        />
-        {pendingAchievement && (
-          <AchievementModal
-            achievement={pendingAchievement}
-            onDismiss={() => setPendingAchievement(null)}
-          />
-        )}
-      </>
+      <MockTestResultsScreen
+        results={results}
+        onTryAgain={() => {
+          mockResultsSaved.current = false;
+          mockTest.startMockTest(selectedSubject, questionData, englishData, vrData);
+        }}
+        onHome={() => {
+          mockResultsSaved.current = false;
+          mockTest.endMockTest();
+          handleHome();
+        }}
+      />
     );
   }
 
@@ -1754,25 +1757,17 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
 
   if (currentView === 'results') {
     return (
-      <>
-        <ResultsScreen
-          answers={answers}
-          quizMode={quizMode}
-          quizQuestions={quizQuestions}
-          allTips={allTips}
-          seenTips={userData.seenTips}
-          onMarkTipSeen={userData.markTipSeen}
-          onRetry={handleRetry}
-          onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
-          onHome={handleHome}
-        />
-        {pendingAchievement && (
-          <AchievementModal
-            achievement={pendingAchievement}
-            onDismiss={() => setPendingAchievement(null)}
-          />
-        )}
-      </>
+      <ResultsScreen
+        answers={answers}
+        quizMode={quizMode}
+        quizQuestions={quizQuestions}
+        allTips={allTips}
+        seenTips={userData.seenTips}
+        onMarkTipSeen={userData.markTipSeen}
+        onRetry={handleRetry}
+        onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
+        onHome={handleHome}
+      />
     );
   }
 
@@ -1831,6 +1826,25 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       />
     );
   }
+
+  } // end renderView
+
+  // ── Animated view wrapper ──
+  return (
+    <>
+      <AnimatePresence mode="wait">
+        <motion.div key={viewKey} {...viewTransition}>
+          {renderView()}
+        </motion.div>
+      </AnimatePresence>
+      {pendingAchievement && (
+        <AchievementModal
+          achievement={pendingAchievement}
+          onDismiss={() => setPendingAchievement(null)}
+        />
+      )}
+    </>
+  );
 }
 
 function SubjectCard({ title, icon: Icon, gradient, color, onClick, disabled }) {
