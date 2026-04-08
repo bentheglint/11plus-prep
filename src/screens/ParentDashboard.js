@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft, BarChart3 } from 'lucide-react';
+// Icons handled by ProgressScreen header
 import OnTrackCard from '../components/progress/OnTrackCard';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
 import TopicHeatMap from '../components/progress/TopicHeatMap';
@@ -11,7 +11,7 @@ import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant'
 import ParentGuidance from '../components/progress/ParentGuidance';
 import parentGuides from '../data/parentGuides';
 
-function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopicClick, onBack, onHome }) {
+function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopicClick, onHome }) {
   const practiceDays = streaksAndPP.getPracticeDays(84);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -19,19 +19,7 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopic
   return (
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center justify-between mb-6">
-          <button
-            onClick={onBack}
-            className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            My Journey
-          </button>
-          <div className="flex items-center gap-2">
-            <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
-            <h2 className="font-heading font-bold text-[#2D3436]">Parent Dashboard</h2>
-          </div>
-        </div>
+        {/* Header handled by ProgressScreen tabs */}
 
         {/* The most important card — answers "Is my child on track?" */}
         <OnTrackCard
@@ -64,12 +52,7 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopic
 
         <SpeedAccuracyQuadrant questionResults={userData.questionResults} />
 
-        <button
-          onClick={onHome}
-          className="w-full py-3 text-[#6C5CE7] hover:text-[#5A4BD1] font-medium text-center mb-8"
-        >
-          ← Back to Home
-        </button>
+        <div className="h-8" />
       </div>
     </div>
   );

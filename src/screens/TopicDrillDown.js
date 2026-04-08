@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowLeft, Star, TrendingUp, TrendingDown, Minus, Clock, Target, BarChart3, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Star, TrendingUp, TrendingDown, Minus, Clock, Target, BarChart3, ChevronRight, Home } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
 const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
 
-function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractise, onBack }) {
+function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractise, onBack, onHome }) {
   const m = mastery.getTopicMastery(topicKey);
   const displayName = topicNames[topicKey] || topicKey;
   const colour = subjectColours[subject] || '#6C5CE7';
@@ -68,10 +68,17 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <button onClick={onBack} className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
-          <ArrowLeft className="w-5 h-5" />
-          Back to Dashboard
-        </button>
+        <div className="flex items-center justify-between mb-4">
+          <button onClick={onBack} className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+            <ArrowLeft className="w-5 h-5" />
+            Back to Progress
+          </button>
+          {onHome && (
+            <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+              <Home className="w-5 h-5" />
+            </button>
+          )}
+        </div>
 
         <div className="card-elevated p-6 mb-6">
           <div className="flex items-start justify-between mb-4">

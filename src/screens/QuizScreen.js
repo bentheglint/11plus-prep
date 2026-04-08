@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock, Flag, ChevronDown, CheckSquare, Square } from 'lucide-react';
+import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock, Flag, ChevronDown, CheckSquare, Square, Home } from 'lucide-react';
 import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
 import ClozeQuestionText from '../components/ClozeQuestionText';
 import Timer from '../components/Timer';
@@ -15,7 +15,7 @@ function QuizScreen({
   onAnswerSelect, onSelectTwoToggle, onPickFromSet, onCheckAnswer,
   onNextQuestion, onFindLesson, onAskTutor, onSendMessage,
   onUserMessageChange, onToggleListening, onFeedbackTextChange,
-  onSubmitFeedback, onToggleFeedbackForm, onBack,
+  onSubmitFeedback, onToggleFeedbackForm, onBack, onHome,
   timerPaused = false, timerStartFrom = 0, onTimerTick,
 }) {
   const currentQ = quizQuestions[currentQuestionIndex];
@@ -50,13 +50,20 @@ function QuizScreen({
     return (
       <div className="app-bg p-4">
         <div className="max-w-2xl mx-auto">
-          <button
-            onClick={onBack}
-            className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            {isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
-          </button>
+          <div className="flex items-center justify-between mb-6">
+            <button
+              onClick={onBack}
+              className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              {isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
+            </button>
+            {onHome && !isTestingMode && !returnToSpeedReview && (
+              <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+                <Home className="w-5 h-5" />
+              </button>
+            )}
+          </div>
 
           <div className="card-elevated p-6 md:p-8 animate-fade-in-up">
             <div className="mb-6">

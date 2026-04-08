@@ -11,7 +11,7 @@ const subjectConfig = {
   verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#6C5CE7', gradient: 'from-[#6C5CE7] to-[#5A4BD1]' },
 };
 
-function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onHome }) {
+function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome }) {
   const [selectedSubject, setSelectedSubject] = useState('maths');
 
   const levelInfo = streaksAndPP.getLevelInfo();
@@ -102,7 +102,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
               return (
                 <button
                   key={topic.key}
-                  onClick={() => onStartTopic(selectedSubject, topic.key)}
+                  onClick={() => onDrillDown ? onDrillDown(selectedSubject, topic.key) : onStartTopic(selectedSubject, topic.key)}
                   className="p-3 rounded-lg border border-gray-100 text-left hover:shadow-md transition-all relative overflow-hidden group"
                   style={{ background: topic.score > 0 ? `rgba(${colour === '#0984E3' ? '9,132,227' : colour === '#00B894' ? '0,184,148' : '108,92,231'},${bgIntensity})` : undefined }}
                 >
@@ -165,13 +165,8 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
           </div>
         )}
 
-        {/* Back to Home */}
-        <button
-          onClick={onHome}
-          className="w-full py-3 text-[#6C5CE7] hover:text-[#5A4BD1] font-medium text-center"
-        >
-          ← Back to Home
-        </button>
+        {/* Spacer for bottom scroll room */}
+        <div className="h-4" />
       </div>
     </div>
   );

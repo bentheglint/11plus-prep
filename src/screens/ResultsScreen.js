@@ -34,6 +34,13 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
   return (
     <div className="app-bg p-4">
       <div className="max-w-2xl mx-auto">
+        <button
+          onClick={onHome}
+          className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          Back to Home
+        </button>
         <div className="card-elevated p-6 md:p-8 text-center">
           <div className="mb-6 animate-celebrate">
             <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-br ${resultGradient} flex items-center justify-center shadow-lg mb-4`}>
@@ -105,13 +112,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
             </button>
           </div>
 
-          <button
-            onClick={onHome}
-            className="mt-4 w-full py-3 text-[#6C5CE7] hover:text-[#5A4BD1] font-medium flex items-center justify-center gap-2"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </button>
+          {/* Home link at top via back button */}
         </div>
       </div>
     </div>

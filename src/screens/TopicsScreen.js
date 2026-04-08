@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Star, Crown, Rocket, Target, Wrench, ArrowLeft } from 'lucide-react';
+import { ChevronRight, Star, Crown, Rocket, Target, Wrench, ArrowLeft, Home } from 'lucide-react';
 
 function getTopicBadge(pct) {
   if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F39C12]', bg: 'bg-[#FDCB6E]/20' };
@@ -52,7 +52,7 @@ function TopicCard({ title, performance, onClick }) {
   );
 }
 
-function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack }) {
+function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack, onHome }) {
   const topicEntries = Object.entries(subject.topics);
   const sortedTopics = [...topicEntries].sort((a, b) => {
     const perfA = topicPerformance[a[0]];
@@ -68,13 +68,20 @@ function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack }) {
   return (
     <div className="app-bg p-4">
       <div className="max-w-3xl mx-auto">
-        <button
-          onClick={onBack}
-          className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
-        >
-          <ArrowLeft className="w-5 h-5" />
-          Back to Learning Modes
-        </button>
+        <div className="flex items-center justify-between mb-6">
+          <button
+            onClick={onBack}
+            className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            Back to Learning Modes
+          </button>
+          {onHome && (
+            <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+              <Home className="w-5 h-5" />
+            </button>
+          )}
+        </div>
 
         <div className="text-center mb-8 animate-fade-in-up">
           <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">

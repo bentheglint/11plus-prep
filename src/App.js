@@ -1398,6 +1398,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           toolkitLessonsViewed.current = 0;
           setCurrentView('learningMode');
         }}
+        onHome={handleHome}
       />
     );
   }
@@ -1409,6 +1410,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         topicPerformance={topicPerformance}
         onTopicSelect={handleTopicSelect}
         onBack={() => setCurrentView('learningMode')}
+        onHome={handleHome}
       />
     );
   }
@@ -1720,6 +1722,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onFeedbackTextChange={setFeedbackText}
         onSubmitFeedback={submitQuestionFeedback}
         onToggleFeedbackForm={(val) => val === false ? setShowFeedbackForm(false) : setShowFeedbackForm(!showFeedbackForm)}
+        onHome={handleHome}
         onBack={() => {
           if (quizMode === 'testing') {
             setReturnToTestingMode(false);
@@ -1775,6 +1778,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           handleTopicSelect(topicKey, subject);
         }}
         onBack={() => setCurrentView('progress')}
+        onHome={handleHome}
       />
     );
   }

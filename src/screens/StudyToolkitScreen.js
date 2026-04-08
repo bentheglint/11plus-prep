@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react';
-import { ArrowLeft, Lightbulb, Sparkles, BookOpen } from 'lucide-react';
+import { ArrowLeft, Lightbulb, Sparkles, BookOpen, Home } from 'lucide-react';
 import TipCard from '../components/TipCard';
 import LessonBrowser from '../components/LessonBrowser';
 import { getWeakTopics } from '../utils/tipSelection';
 
-function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerformance, lessonBank, lessonHistory, onLaunchLesson, toolkitLessonsViewed, onStartQuiz, onBack }) {
+function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerformance, lessonBank, lessonHistory, onLaunchLesson, toolkitLessonsViewed, onStartQuiz, onBack, onHome }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showIntro, setShowIntro] = useState(true);
   const [activeTab, setActiveTab] = useState('tips');
@@ -53,7 +53,8 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
     if (currentIndex < availableTips.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      onBack();
+      // Last tip — loop back to start instead of exiting
+      setCurrentIndex(0);
     }
   };
 
@@ -112,13 +113,20 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
       <div className="max-w-lg mx-auto">
         {/* Top bar */}
         <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={onBack}
-            className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-1 text-sm"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={onBack}
+              className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-1 text-sm"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Learning Modes
+            </button>
+            {onHome && (
+              <button onClick={onHome} className="p-1.5 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+                <Home className="w-4 h-4" />
+              </button>
+            )}
+          </div>
           <div className="flex items-center gap-1.5">
             <Lightbulb className="w-4 h-4" style={{ color: colour }} />
             <span className="text-xs font-bold text-[#636E72]">Study Toolkit</span>
