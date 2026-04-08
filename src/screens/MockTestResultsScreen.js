@@ -1,17 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Trophy, ThumbsUp, Zap, ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Clock } from 'lucide-react';
+import { motion } from '../components/Motion';
+import { animate as motionAnimate } from 'motion';
+import { celebrateHighScore } from '../utils/confetti';
 
 function MockTestResultsScreen({ results, onHome, onTryAgain }) {
   const [expandedSection, setExpandedSection] = useState(null);
+  const [displayPct, setDisplayPct] = useState(0);
+  const scoreAnimated = useRef(false);
+
+  const percentage = results ? Math.round((results.totalCorrect / results.totalQuestions) * 100) : 0;
+
+  useEffect(() => {
+    if (!results || scoreAnimated.current) return;
+    scoreAnimated.current = true;
+    const controls = motionAnimate(0, percentage, {
+      duration: 1.2,
+      ease: 'easeOut',
+      onUpdate: (v) => setDisplayPct(Math.round(v)),
+    });
+    if (percentage >= 80) {
+      setTimeout(celebrateHighScore, 600);
+    }
+    return () => controls.stop();
+  }, [results, percentage]);
 
   if (!results) return null;
 
-  const { totalQuestions, totalCorrect, percentage, timeTaken, timeLimit, sectionResults, subject } = results;
+  const { totalQuestions, totalCorrect, timeTaken, timeLimit, sectionResults, subject } = results;
 
   const ResultIcon = percentage >= 80 ? Trophy : percentage >= 60 ? ThumbsUp : Zap;
   const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F39C12]' : percentage >= 60 ? 'from-[#6C5CE7] to-[#5A4BD1]' : 'from-[#0984E3] to-[#0652DD]';
   const circumference = 2 * Math.PI * 45;
   const strokeOffset = circumference - (percentage / 100) * circumference;
+  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#6C5CE7' : '#0984E3';
 
   const minsUsed = Math.floor(timeTaken / 60);
   const secsUsed = timeTaken % 60;
@@ -34,7 +56,12 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="card-elevated p-6 md:p-8 text-center mb-6">
-          <div className="mb-4 animate-celebrate">
+          <motion.div
+            className="mb-4"
+            initial={{ opacity: 0, scale: 0.3 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: 'spring', stiffness: 200, damping: 15, delay: 0.1 }}
+          >
             <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-br ${resultGradient} flex items-center justify-center shadow-lg mb-4`}>
               <ResultIcon className="w-10 h-10 text-white" />
             </div>
@@ -44,26 +71,32 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
             <p className="text-lg text-slate-500">
               {subjectNames[subject] || subject} Paper
             </p>
-          </div>
+          </motion.div>
 
           {/* Score ring */}
-          <div className="bg-[#EDE8FF] rounded-xl p-6 mb-6">
+          <motion.div
+            className="bg-[#EDE8FF] rounded-xl p-6 mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 200, damping: 20, delay: 0.3 }}
+          >
             <div className="mx-auto w-32 h-32 relative mb-4">
               <svg className="w-32 h-32" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="45" fill="none" stroke="#DDD6FE" strokeWidth="8" />
-                <circle
+                <motion.circle
                   cx="50" cy="50" r="45" fill="none"
-                  stroke={percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#6C5CE7' : '#0984E3'}
+                  stroke={ringColour}
                   strokeWidth="8"
                   strokeLinecap="round"
                   strokeDasharray={circumference}
-                  strokeDashoffset={strokeOffset}
-                  className="progress-ring-circle"
-                  style={{ animation: 'progressRing 1s ease-out forwards' }}
+                  initial={{ strokeDashoffset: circumference }}
+                  animate={{ strokeDashoffset: strokeOffset }}
+                  transition={{ duration: 1.2, ease: 'easeOut', delay: 0.4 }}
+                  style={{ transform: 'rotate(-90deg)', transformOrigin: '50% 50%' }}
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-3xl font-heading font-bold text-slate-800">{percentage}%</span>
+                <span className="text-3xl font-heading font-bold text-slate-800">{displayPct}%</span>
               </div>
             </div>
             <div className="text-3xl font-heading font-bold text-slate-800 mb-1">
@@ -74,7 +107,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
               Time: {minsUsed}m {secsUsed}s of {minsAllowed} minutes
               {finishedEarly && <span className="text-[#00B894] font-medium"> — finished early!</span>}
             </p>
-          </div>
+          </motion.div>
 
           {/* Strengths & Weaknesses */}
           {(strengths.length > 0 || weaknesses.length > 0) && (
