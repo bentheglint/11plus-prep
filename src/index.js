@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@fontsource-variable/dm-sans';
+import '@fontsource-variable/outfit';
 import './index.css';
 import App from './App';
 import DevReviewPanel from './DevReviewPanel';

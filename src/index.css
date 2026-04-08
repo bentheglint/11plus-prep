@@ -37,14 +37,14 @@
 /* ===== TYPOGRAPHY ===== */
 
 body {
-  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-family: 'DM Sans Variable', 'DM Sans', system-ui, -apple-system, sans-serif;
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .font-heading {
-  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  font-family: 'Outfit Variable', 'Outfit', system-ui, -apple-system, sans-serif;
 }
 
 /* ===== APP BACKGROUND ===== */
@@ -241,7 +241,7 @@ body {
 .btn-primary {
   background: var(--primary);
   color: white;
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Outfit Variable', 'Outfit', system-ui, sans-serif;
   font-weight: 700;
   border-radius: 0.75rem;
   transition: background 0.2s ease, transform 0.15s ease;

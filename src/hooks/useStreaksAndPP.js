@@ -150,11 +150,12 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
       breakdown.push({ label: 'New topic explored!', pp: 100 });
     }
 
-    // Streak day bonus: +20 per day in current streak (capped at +200)
-    const streakBonus = Math.min(200, streakData.currentStreak * 20);
-    if (streakBonus > 0) {
-      total += streakBonus;
-      breakdown.push({ label: `${streakData.currentStreak}-day streak bonus`, pp: streakBonus });
+    // Practice day bonus: flat +25 for practising today (not tied to streak length)
+    const todayStr = new Date().toISOString().split('T')[0];
+    const practicedToday = streakData.lastQuizDate === todayStr;
+    if (practicedToday) {
+      total += 25;
+      breakdown.push({ label: 'Practice day bonus', pp: 25 });
     }
 
     return { total, breakdown };
