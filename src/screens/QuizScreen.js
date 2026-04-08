@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BookOpen, Brain, ChevronRight, XCircle, Star, MessageSquare, MessageCircle, ArrowLeft, Mic, MicOff, Clock, Flag, ChevronDown, CheckSquare, Square, Home } from 'lucide-react';
-import { motion } from '../components/Motion';
+import { motion, AnimatePresence } from '../components/Motion';
+import { celebrateCorrect } from '../utils/confetti';
 import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
 import ClozeQuestionText from '../components/ClozeQuestionText';
 import Timer from '../components/Timer';
@@ -47,6 +48,15 @@ function QuizScreen({
       setChecks([false, false, false, false, false]);
     }
   }, [currentQuestionIndex]);
+
+  // Confetti on correct answer
+  const prevFeedback = useRef(false);
+  useEffect(() => {
+    if (showFeedback && !prevFeedback.current && isCorrect) {
+      celebrateCorrect();
+    }
+    prevFeedback.current = showFeedback;
+  }, [showFeedback, isCorrect]);
 
     return (
       <div className="app-bg p-4">
@@ -243,9 +253,15 @@ function QuizScreen({
                 </div>
               )}
 
-              <h3 className="text-2xl font-heading font-bold text-slate-800 mb-6 whitespace-pre-line">
+              <motion.h3
+                key={`q-${currentQuestionIndex}`}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.2, ease: 'easeOut' }}
+                className="text-2xl font-heading font-bold text-slate-800 mb-6 whitespace-pre-line"
+              >
                 <ClozeQuestionText text={currentQuestion.question} />
-              </h3>
+              </motion.h3>
 
               {/* Select-two rendering for dual-answer questions (e.g. VR synonyms, odd-two-out, hidden words) */}
               {currentQuestion.questionType === 'select-two' && (
@@ -380,8 +396,18 @@ function QuizScreen({
                       disabled={showFeedback}
                       style={{ touchAction: 'manipulation' }}
                       initial={{ opacity: 0, y: 12 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ type: 'spring', stiffness: 300, damping: 25, delay: idx * 0.06 }}
+                      animate={
+                        showFeedback && idx === selectedAnswer && !isCorrect
+                          ? { opacity: 1, y: 0, x: [0, -8, 8, -6, 6, -3, 3, 0] }
+                          : showFeedback && idx === currentQuestion.correct
+                          ? { opacity: 1, y: 0, boxShadow: ['0 0 0 0 rgba(0,184,148,0.4)', '0 0 0 8px rgba(0,184,148,0)', '0 0 0 0 rgba(0,184,148,0)'] }
+                          : { opacity: 1, y: 0 }
+                      }
+                      transition={
+                        showFeedback && idx === selectedAnswer && !isCorrect
+                          ? { duration: 0.4, ease: 'easeInOut' }
+                          : { type: 'spring', stiffness: 300, damping: 25, delay: showFeedback ? 0 : idx * 0.06 }
+                      }
                       whileTap={showFeedback ? {} : { scale: 0.97 }}
                       className={`w-full p-4 text-left rounded-xl border-2 transition-colors font-medium text-lg flex items-center gap-3 ${
                         showFeedback
@@ -429,7 +455,11 @@ function QuizScreen({
               )}
               
               {showFeedback && (
-                <div className={`mt-6 p-4 rounded-xl animate-fade-in-up ${
+                <motion.div
+                  initial={{ opacity: 0, y: 16, scale: 0.97 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                  className={`mt-6 p-4 rounded-xl ${
                   isCorrect ? 'bg-[#00B894]/10 border-2 border-[#00B894]' : 'bg-[#FF6B6B]/10 border-2 border-[#FF6B6B]'
                 }`}>
                   <div className="flex items-start">
@@ -478,7 +508,7 @@ function QuizScreen({
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               )}
 
               {showFeedbackForm && (
@@ -597,14 +627,18 @@ function QuizScreen({
             </div>
             
             {showFeedback && (
-              <button
+              <motion.button
                 onClick={onNextQuestion}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 25, delay: 0.15 }}
+                whileTap={{ scale: 0.96 }}
                 className="w-full py-4 btn-primary text-lg flex items-center justify-center"
                 style={{ touchAction: 'manipulation' }}
               >
                 {currentQuestionIndex < quizQuestions.length - 1 ? 'Next Question' : isTestingMode ? 'Finish Testing' : returnToSpeedReview ? 'Back to Speed Review' : 'See Results'}
                 <ChevronRight className="w-5 h-5 ml-2" />
-              </button>
+              </motion.button>
             )}
           </div>
         </div>
