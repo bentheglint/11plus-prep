@@ -20,7 +20,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
   return (
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="font-heading font-bold text-[#2D3436]">Topic Mastery</h3>
+        <h3 className="font-heading font-bold text-slate-800">Topic Mastery</h3>
         <div className="flex gap-1">
           {subjects.map(s => {
             const Icon = s.icon;
@@ -31,7 +31,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selected === s.key
                     ? 'text-white shadow-sm'
-                    : 'text-[#636E72] bg-gray-50 hover:bg-gray-100'
+                    : 'text-slate-500 bg-gray-50 hover:bg-gray-100'
                 }`}
                 style={selected === s.key ? { background: s.colour } : {}}
               >
@@ -44,7 +44,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-4 mb-3 text-[10px] text-[#636E72]">
+      <div className="flex items-center gap-4 mb-3 text-[10px] text-slate-500">
         <div className="flex items-center gap-1">
           <div className="w-3 h-3 rounded-sm bg-gray-100 border border-gray-200" />
           Not started
@@ -74,7 +74,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
             topic.score > 0 ? Math.min(0.6, topic.score / 150) : 0;
           const bg = topic.score >= 90 ? '#FDCB6E' :
             topic.score > 0 ? `rgba(${subj.rgb},${intensity})` : '#F8F9FA';
-          const textCol = topic.score >= 70 ? '#fff' : '#2D3436';
+          const textCol = topic.score >= 70 ? '#fff' : '#1E293B';
           const needsReview = topic.daysSince > 14 && topic.stars > 0;
           const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
                            topic.trend?.direction === 'down' ? TrendingDown : null;
@@ -101,7 +101,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
                 ))}
               </div>
               {topic.totalQuestions > 0 && (
-                <p className="text-[9px] mt-0.5" style={{ color: topic.score >= 70 ? 'rgba(255,255,255,0.8)' : '#636E72' }}>
+                <p className="text-[9px] mt-0.5" style={{ color: topic.score >= 70 ? 'rgba(255,255,255,0.8)' : '#64748B' }}>
                   {topic.recentAccuracy}%{topic.daysSince > 0 ? ` · ${topic.daysSince}d` : ''}
                 </p>
               )}

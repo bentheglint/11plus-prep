@@ -260,9 +260,9 @@ function SpeedAccuracyQuadrant({ questionResults }) {
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center gap-2 mb-1">
         <Target className="w-5 h-5 text-[#6C5CE7]" />
-        <h3 className="font-heading font-bold text-[#2D3436]">Accuracy vs Speed</h3>
+        <h3 className="font-heading font-bold text-slate-800">Accuracy vs Speed</h3>
       </div>
-      <p className="text-xs text-[#636E72] mb-4">
+      <p className="text-xs text-slate-500 mb-4">
         How each topic compares on accuracy and speed against GL exam targets
       </p>
 
@@ -364,11 +364,11 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
 
           {/* Axis labels */}
           <text x={pad.left + plotW / 2} y={H - 6} textAnchor="middle"
-            fontSize={12} fill="#636E72" fontWeight="500">
+            fontSize={12} fill="#64748B" fontWeight="500">
             ← Faster — Seconds per question — Slower →
           </text>
           <text x={14} y={pad.top + plotH / 2} textAnchor="middle"
-            fontSize={12} fill="#636E72" fontWeight="500"
+            fontSize={12} fill="#64748B" fontWeight="500"
             transform={`rotate(-90, 14, ${pad.top + plotH / 2})`}>
             Accuracy %
           </text>

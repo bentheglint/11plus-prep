@@ -72,10 +72,10 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
           <div className="w-20 h-20 mx-auto mb-6 rounded-2xl flex items-center justify-center shadow-lg" style={{ background: `linear-gradient(135deg, ${colour}, ${colour}CC)` }}>
             <Lightbulb className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-3">
+          <h2 className="text-3xl font-heading font-bold text-slate-800 mb-3">
             {subjectName} Study Toolkit
           </h2>
-          <p className="text-lg text-[#636E72] mb-2">
+          <p className="text-lg text-slate-500 mb-2">
             Tips, strategies, and lessons to help you ace the exam!
           </p>
           {unseenCount > 0 ? (
@@ -86,7 +86,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
               </p>
             </div>
           ) : (
-            <p className="text-sm text-[#636E72] mb-8">
+            <p className="text-sm text-slate-500 mb-8">
               You've seen all the tips — time to review your favourites!
             </p>
           )}
@@ -99,7 +99,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
           </button>
           <button
             onClick={onBack}
-            className="block mx-auto mt-4 text-sm text-[#636E72] hover:text-[#2D3436]"
+            className="block mx-auto mt-4 text-sm text-slate-500 hover:text-slate-800"
           >
             &larr; Back
           </button>
@@ -129,7 +129,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
           </div>
           <div className="flex items-center gap-1.5">
             <Lightbulb className="w-4 h-4" style={{ color: colour }} />
-            <span className="text-xs font-bold text-[#636E72]">Study Toolkit</span>
+            <span className="text-xs font-bold text-slate-500">Study Toolkit</span>
           </div>
         </div>
 
@@ -139,8 +139,8 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
             onClick={() => setActiveTab('tips')}
             className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2 ${
               activeTab === 'tips'
-                ? 'bg-white text-[#2D3436] shadow-sm'
-                : 'text-[#636E72] hover:text-[#2D3436]'
+                ? 'bg-white text-slate-800 shadow-sm'
+                : 'text-slate-500 hover:text-slate-800'
             }`}
           >
             <Lightbulb className="w-4 h-4" />
@@ -150,8 +150,8 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
             onClick={() => setActiveTab('lessons')}
             className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2 ${
               activeTab === 'lessons'
-                ? 'bg-white text-[#2D3436] shadow-sm'
-                : 'text-[#636E72] hover:text-[#2D3436]'
+                ? 'bg-white text-slate-800 shadow-sm'
+                : 'text-slate-500 hover:text-slate-800'
             }`}
           >
             <BookOpen className="w-4 h-4" />
@@ -175,7 +175,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
             </div>
           ) : (
             <div className="text-center py-8">
-              <p className="text-lg text-[#636E72]">No tips available yet!</p>
+              <p className="text-lg text-slate-500">No tips available yet!</p>
             </div>
           )
         ) : (

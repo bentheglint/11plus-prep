@@ -97,7 +97,7 @@ function MockTestScreen({
         <div className="max-w-2xl mx-auto">
           <div className="flex justify-between items-center mb-6">
             <Timer totalSeconds={timeLimit} onTimeUp={onSubmit} />
-            <span className="text-sm text-[#636E72]">
+            <span className="text-sm text-slate-500">
               Question {currentIndex + 1} of {questions.length}
             </span>
           </div>
@@ -106,19 +106,19 @@ function MockTestScreen({
             <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#6C5CE7]/10 flex items-center justify-center">
               <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
             </div>
-            <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-3">
+            <h2 className="text-2xl font-heading font-bold text-slate-800 mb-3">
               {currentSection.typeName}
             </h2>
-            <p className="text-[#636E72] mb-6 max-w-lg mx-auto leading-relaxed">
+            <p className="text-slate-500 mb-6 max-w-lg mx-auto leading-relaxed">
               {currentSection.instruction}
             </p>
 
             {currentSection.workedExample && (
               <div className="bg-[#EDE8FF] rounded-xl p-5 mb-6 text-left max-w-lg mx-auto">
                 <p className="text-sm font-bold text-[#6C5CE7] mb-2">Worked Example:</p>
-                <p className="text-[#2D3436] font-medium mb-2">{currentSection.workedExample.question}</p>
-                <p className="text-[#2D3436] mb-1"><strong>Answer:</strong> {currentSection.workedExample.answer}</p>
-                <p className="text-sm text-[#636E72]">{currentSection.workedExample.explanation}</p>
+                <p className="text-slate-800 font-medium mb-2">{currentSection.workedExample.question}</p>
+                <p className="text-slate-800 mb-1"><strong>Answer:</strong> {currentSection.workedExample.answer}</p>
+                <p className="text-sm text-slate-500">{currentSection.workedExample.explanation}</p>
               </div>
             )}
 
@@ -128,7 +128,7 @@ function MockTestScreen({
                 <div className="flex justify-center">
                   {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                     <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                      <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-[#2D3436]'}`}>{letter}</span>
+                      <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
                       <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                     </div>
                   ))}
@@ -136,7 +136,7 @@ function MockTestScreen({
               </div>
             )}
 
-            <p className="text-sm text-[#636E72] mb-4">
+            <p className="text-sm text-slate-500 mb-4">
               {currentSection.questionCount} question{currentSection.questionCount !== 1 ? 's' : ''} in this section
             </p>
 
@@ -167,14 +167,14 @@ function MockTestScreen({
           <div className="flex items-center gap-2">
             <button
               onClick={() => onToggleFlag && onToggleFlag(currentIndex)}
-              className={`p-2 rounded-lg transition-colors ${flags && flags[currentIndex] ? 'bg-amber-100 text-amber-600' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
+              className={`p-2 rounded-lg transition-colors ${flags && flags[currentIndex] ? 'bg-amber-100 text-amber-600' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
               title={flags && flags[currentIndex] ? 'Remove flag' : 'Flag for review'}
             >
               <Flag className="w-4 h-4" />
             </button>
             <button
               onClick={() => setShowNavigator(!showNavigator)}
-              className={`p-2 rounded-lg transition-colors ${showNavigator ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
+              className={`p-2 rounded-lg transition-colors ${showNavigator ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
               title="Question navigator"
             >
               <Grid3X3 className="w-4 h-4" />
@@ -183,7 +183,7 @@ function MockTestScreen({
               <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
                 Q{currentIndex + 1}/{questions.length}
               </span>
-              <div className="text-xs text-[#636E72]">{answeredCount} done</div>
+              <div className="text-xs text-slate-500">{answeredCount} done</div>
             </div>
           </div>
         </div>
@@ -221,8 +221,8 @@ function MockTestScreen({
             <details className="mb-6 bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl" open>
               <summary className="p-4 cursor-pointer flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#F39C12]" />
-                <span className="text-sm font-heading font-bold text-[#2D3436]">{currentQ.passageTitle}</span>
-                <span className="text-xs text-[#636E72] ml-auto">Click to show/hide passage</span>
+                <span className="text-sm font-heading font-bold text-slate-800">{currentQ.passageTitle}</span>
+                <span className="text-xs text-slate-500 ml-auto">Click to show/hide passage</span>
               </summary>
               <div className="px-4 pb-4 text-gray-800 text-sm leading-relaxed whitespace-pre-line max-h-64 overflow-y-auto">
                 {currentQ.passage}
@@ -236,7 +236,7 @@ function MockTestScreen({
               <div className="flex justify-center">
                 {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                   <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                    <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-[#2D3436]'}`}>{letter}</span>
+                    <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
                     <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                   </div>
                 ))}
@@ -261,7 +261,7 @@ function MockTestScreen({
           )}
 
           {/* Question text */}
-          <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-6 whitespace-pre-line">
+          <h3 className="text-xl font-heading font-bold text-slate-800 mb-6 whitespace-pre-line">
             <ClozeQuestionText text={question.question} />
           </h3>
 
@@ -300,8 +300,8 @@ function MockTestScreen({
                     onClick={() => handleSelectTwo(idx)}
                     className={`p-4 text-center rounded-xl border-2 transition-all font-medium text-lg ${
                       selectedPair.includes(idx)
-                        ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                        : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                        ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                        : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                     }`}
                   >
                     {option}
@@ -326,8 +326,8 @@ function MockTestScreen({
                       onClick={() => handlePickFromSet('A', idx)}
                       className={`p-3 text-center rounded-xl border-2 transition-all font-medium ${
                         selectedPair[0] === idx
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}
                     >
                       {word}
@@ -344,8 +344,8 @@ function MockTestScreen({
                       onClick={() => handlePickFromSet('B', idx)}
                       className={`p-3 text-center rounded-xl border-2 transition-all font-medium ${
                         selectedPair[1] === idx
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}
                     >
                       {word}
@@ -370,8 +370,8 @@ function MockTestScreen({
                     style={{ touchAction: 'manipulation' }}
                     className={`w-full p-4 text-left rounded-xl border-2 transition-all font-medium text-lg flex items-center gap-3 ${
                       isSelected
-                        ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436]'
-                        : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                        ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800'
+                        : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                     }`}
                   >
                     <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
@@ -422,21 +422,21 @@ function MockTestScreen({
             <div className="bg-white rounded-2xl p-8 max-w-md w-full animate-fade-in-up">
               <div className="text-center">
                 <AlertTriangle className="w-12 h-12 text-amber-500 mx-auto mb-4" />
-                <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Submit your test?</h3>
+                <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Submit your test?</h3>
                 {unansweredCount > 0 ? (
-                  <p className="text-[#636E72] mb-6">
+                  <p className="text-slate-500 mb-6">
                     You have <strong className="text-red-500">{unansweredCount} unanswered question{unansweredCount !== 1 ? 's' : ''}</strong>.
                     Once submitted, you cannot change your answers.
                   </p>
                 ) : (
-                  <p className="text-[#636E72] mb-6">
+                  <p className="text-slate-500 mb-6">
                     You have answered all {questions.length} questions. Ready to see your results?
                   </p>
                 )}
                 <div className="flex gap-3 justify-center">
                   <button
                     onClick={() => setShowConfirmSubmit(false)}
-                    className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-[#2D3436] font-bold rounded-xl transition-colors"
+                    className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-slate-800 font-bold rounded-xl transition-colors"
                   >
                     Go Back
                   </button>

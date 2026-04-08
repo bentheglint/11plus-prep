@@ -8,8 +8,8 @@ function WelcomeBackScreen({ tip, onDismiss }) {
     <div className="app-bg p-4 min-h-screen flex items-center justify-center">
       <div className="max-w-md mx-auto text-center animate-fade-in-up">
         <p className="text-4xl mb-4">👋</p>
-        <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">Welcome back!</h2>
-        <p className="text-lg text-[#636E72] mb-6">Remember this?</p>
+        <h2 className="text-3xl font-heading font-bold text-slate-800 mb-2">Welcome back!</h2>
+        <p className="text-lg text-slate-500 mb-6">Remember this?</p>
 
         <div className="bg-white rounded-xl p-6 shadow-md border border-amber-100 mb-6">
           <div className="flex items-start gap-3 text-left">
@@ -18,7 +18,7 @@ function WelcomeBackScreen({ tip, onDismiss }) {
             </div>
             <div>
               <p className="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">{tip.category}</p>
-              <p className="text-base text-[#2D3436] font-medium leading-relaxed">{tip.keyInsight}</p>
+              <p className="text-base text-slate-800 font-medium leading-relaxed">{tip.keyInsight}</p>
             </div>
           </div>
         </div>

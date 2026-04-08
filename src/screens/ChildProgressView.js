@@ -75,9 +75,9 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                 style={isSelected ? { '--tw-ring-color': s.colour } : {}}
               >
                 <Icon className="w-6 h-6 mx-auto mb-2" style={{ color: s.colour }} />
-                <p className="text-sm font-bold text-[#2D3436] mb-1">{s.name}</p>
+                <p className="text-sm font-bold text-slate-800 mb-1">{s.name}</p>
                 <TopicStarRating stars={s.mastery.stars} compact />
-                <p className="text-[10px] text-[#636E72] mt-1">
+                <p className="text-[10px] text-slate-500 mt-1">
                   {s.mastery.topicsCovered}/{s.mastery.topicsTotal} topics
                 </p>
               </button>
@@ -87,7 +87,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
 
         {/* Topic Star Grid for Selected Subject */}
         <div className="card-elevated p-5 mb-6">
-          <h3 className="font-heading font-bold text-[#2D3436] mb-4">
+          <h3 className="font-heading font-bold text-slate-800 mb-4">
             {subjectConfig[selectedSubject]?.name} Topics
           </h3>
           <div className="grid grid-cols-2 gap-2">
@@ -107,7 +107,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                   style={{ background: topic.score > 0 ? `rgba(${colour === '#0984E3' ? '9,132,227' : colour === '#00B894' ? '0,184,148' : '108,92,231'},${bgIntensity})` : undefined }}
                 >
                   <div className="flex items-start justify-between mb-1">
-                    <p className="text-sm font-bold text-[#2D3436] leading-tight">{topic.name}</p>
+                    <p className="text-sm font-bold text-slate-800 leading-tight">{topic.name}</p>
                     {TrendIcon && (
                       <TrendIcon className="w-3.5 h-3.5 flex-shrink-0" style={{ color: trendColour }} />
                     )}
@@ -118,7 +118,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                     ))}
                   </div>
                   {topic.totalQuestions > 0 ? (
-                    <p className="text-[10px] text-[#636E72]">
+                    <p className="text-[10px] text-slate-500">
                       {topic.recentAccuracy}% accuracy
                       {topic.daysSince > 0 && ` · ${topic.daysSince}d ago`}
                     </p>
@@ -140,7 +140,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
         {/* Recent Activity */}
         {recentQuizzes.length > 0 && (
           <div className="card-elevated p-5 mb-6">
-            <h3 className="font-heading font-bold text-[#2D3436] mb-3">Recent Activity</h3>
+            <h3 className="font-heading font-bold text-slate-800 mb-3">Recent Activity</h3>
             <div className="space-y-2">
               {recentQuizzes.map(quiz => {
                 const dotColour = quiz.percentage >= 80 ? '#00B894' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
@@ -153,8 +153,8 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                     <div className="flex items-center gap-3">
                       <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: dotColour }} />
                       <div>
-                        <p className="text-sm font-medium text-[#2D3436]">{quiz.topic}</p>
-                        <p className="text-[10px] text-[#636E72]">{dateLabel} · {quiz.score}/{quiz.total}</p>
+                        <p className="text-sm font-medium text-slate-800">{quiz.topic}</p>
+                        <p className="text-[10px] text-slate-500">{dateLabel} · {quiz.score}/{quiz.total}</p>
                       </div>
                     </div>
                     <span className="text-sm font-bold" style={{ color: dotColour }}>{quiz.percentage}%</span>

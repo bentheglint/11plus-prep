@@ -26,7 +26,7 @@ function TopicStarRating({ stars, label, trend, daysSince, compact = false }) {
           <Star key={i} className="w-4 h-4" fill={i <= stars ? '#FDCB6E' : 'none'} stroke={i <= stars ? '#F39C12' : '#DFE6E9'} strokeWidth={2} />
         ))}
       </div>
-      {label && <span className="text-xs font-medium text-[#636E72]">{label}</span>}
+      {label && <span className="text-xs font-medium text-slate-500">{label}</span>}
       {trend && trend.direction !== 'stable' && (
         <TrendIcon className="w-3.5 h-3.5" style={{ color: trendColour }} />
       )}

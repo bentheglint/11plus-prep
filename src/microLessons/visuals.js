@@ -242,7 +242,7 @@ export function GridModel({
                 ×
               </th>
               {headers.cols.map((h, i) => (
-                <th key={i} className="bg-[#EDE8FF] border-2 border-[#A29BFE]/40 px-5 py-3 text-lg font-bold text-[#2D3436] min-w-[70px]">
+                <th key={i} className="bg-[#EDE8FF] border-2 border-[#A29BFE]/40 px-5 py-3 text-lg font-bold text-slate-800 min-w-[70px]">
                   {h}
                 </th>
               ))}
@@ -252,7 +252,7 @@ export function GridModel({
             {Array.from({ length: rows }).map((_, r) => (
               <tr key={r}>
                 {/* Row header */}
-                <td className="bg-[#EDE8FF] border-2 border-[#A29BFE]/40 px-5 py-3 text-lg font-bold text-[#2D3436]">
+                <td className="bg-[#EDE8FF] border-2 border-[#A29BFE]/40 px-5 py-3 text-lg font-bold text-slate-800">
                   {headers.rows[r]}
                 </td>
                 {/* Value cells */}
@@ -2419,7 +2419,7 @@ export function SentenceDisplay({
         <div className="w-full">
           {label && <p className="text-sm font-heading font-bold text-[#6C5CE7] mb-3 text-center">{label}</p>}
           <div className="bg-[#FAFBFF] border-2 border-[#EDE8FF] rounded-2xl p-5 shadow-sm">
-            <p className={`${fontSize} text-[#2D3436] leading-relaxed text-center`}>{text}</p>
+            <p className={`${fontSize} text-slate-800 leading-relaxed text-center`}>{text}</p>
           </div>
         </div>
       );
@@ -2433,7 +2433,7 @@ export function SentenceDisplay({
       <div className="w-full">
         {label && <p className="text-sm font-heading font-bold text-[#6C5CE7] mb-3 text-center">{label}</p>}
         <div className="bg-[#FAFBFF] border-2 border-[#EDE8FF] rounded-2xl p-5 shadow-sm">
-          <p className={`${fontSize} text-[#2D3436] leading-relaxed text-center`}>
+          <p className={`${fontSize} text-slate-800 leading-relaxed text-center`}>
             {splitParts.map((part, i) => {
               const match = validWords.find(w => w.word.toLowerCase() === part.toLowerCase());
               if (match) {
@@ -3083,7 +3083,7 @@ export function LogicDiagram({
               <div className={`px-6 py-2.5 rounded-lg font-heading font-bold text-base min-w-[140px] text-center transition-all ${
                 isHighlighted
                   ? 'bg-[#6C5CE7] text-white shadow-md'
-                  : 'bg-[#EDE8FF] text-[#2D3436]'
+                  : 'bg-[#EDE8FF] text-slate-800'
               }`}>
                 {item}
               </div>
@@ -3138,7 +3138,7 @@ export function CodeTable({
             <thead>
               <tr>
                 {headers.map((h, i) => (
-                  <th key={i} className={`${headerColor} border-2 border-[#A29BFE]/40 ${cellPad} ${fontSize} font-bold text-[#2D3436]`}>
+                  <th key={i} className={`${headerColor} border-2 border-[#A29BFE]/40 ${cellPad} ${fontSize} font-bold text-slate-800`}>
                     {h}
                   </th>
                 ))}
@@ -3495,8 +3495,8 @@ export function AnalogyDisplay({
         )}
 
         {relationship && (
-          <p className="text-center text-sm font-medium text-[#636E72] mt-3 pt-3 border-t border-[#EDE8FF]">
-            Relationship: <span className="font-bold text-[#2D3436]">{relationship}</span>
+          <p className="text-center text-sm font-medium text-slate-500 mt-3 pt-3 border-t border-[#EDE8FF]">
+            Relationship: <span className="font-bold text-slate-800">{relationship}</span>
           </p>
         )}
       </div>
@@ -3538,7 +3538,7 @@ export function WordChipsDisplay({
               className="font-heading font-bold text-lg px-5 py-2.5 rounded-xl transition-all"
               style={{
                 background: isHighlighted(word) ? `${highlightColor}15` : '#EDE8FF',
-                color: isHighlighted(word) ? highlightColor : '#2D3436',
+                color: isHighlighted(word) ? highlightColor : '#1E293B',
                 border: `2px solid ${isHighlighted(word) ? `${highlightColor}40` : 'transparent'}`
               }}
             >
@@ -3622,7 +3622,7 @@ export function SDTTriangle({
           dominantBaseline="central"
           fontSize={fontSize}
           fontWeight="bold"
-          fill={isCovered("D") ? "white" : "#2D3436"}
+          fill={isCovered("D") ? "white" : "#1E293B"}
         >
           D
         </text>
@@ -3635,7 +3635,7 @@ export function SDTTriangle({
           dominantBaseline="central"
           fontSize={fontSize}
           fontWeight="bold"
-          fill={isCovered("S") ? "white" : "#2D3436"}
+          fill={isCovered("S") ? "white" : "#1E293B"}
         >
           S
         </text>
@@ -3660,7 +3660,7 @@ export function SDTTriangle({
           dominantBaseline="central"
           fontSize={fontSize}
           fontWeight="bold"
-          fill={isCovered("T") ? "white" : "#2D3436"}
+          fill={isCovered("T") ? "white" : "#1E293B"}
         >
           T
         </text>

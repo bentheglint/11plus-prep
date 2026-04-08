@@ -12,7 +12,7 @@ const NAME_COLORS = {
 
 function UserAvatar({ currentUser, onSetCurrentUser }) {
   const [showPicker, setShowPicker] = useState(false);
-  const color = NAME_COLORS[currentUser] || '#636E72';
+  const color = NAME_COLORS[currentUser] || '#64748B';
 
   return (
     <div className="relative">
@@ -27,10 +27,10 @@ function UserAvatar({ currentUser, onSetCurrentUser }) {
         >
           {currentUser ? currentUser[0] : '?'}
         </span>
-        <span className="text-sm font-bold text-[#2D3436] hidden sm:inline">
+        <span className="text-sm font-bold text-slate-800 hidden sm:inline">
           {currentUser || 'Choose'}
         </span>
-        <ChevronDown className="w-4 h-4 text-[#636E72]" />
+        <ChevronDown className="w-4 h-4 text-slate-500" />
       </button>
 
       {/* Picker modal */}
@@ -44,7 +44,7 @@ function UserAvatar({ currentUser, onSetCurrentUser }) {
           {/* Dropdown */}
           <div className="absolute right-0 top-full mt-2 z-50 bg-white rounded-xl shadow-xl border border-gray-200 p-3 min-w-[200px] animate-fade-in-up">
             <div className="flex items-center justify-between mb-2 px-1">
-              <p className="text-xs font-bold text-[#636E72] uppercase tracking-wider">Who's practising?</p>
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Who's practising?</p>
               <button onClick={() => setShowPicker(false)} className="text-gray-400 hover:text-gray-600">
                 <X className="w-4 h-4" />
               </button>
@@ -72,7 +72,7 @@ function UserAvatar({ currentUser, onSetCurrentUser }) {
                     >
                       {name[0]}
                     </span>
-                    <span className={`font-bold text-sm ${isActive ? 'text-[#6C5CE7]' : 'text-[#2D3436]'}`}>
+                    <span className={`font-bold text-sm ${isActive ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>
                       {name}
                     </span>
                     {isActive && (

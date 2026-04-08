@@ -69,10 +69,10 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
   return (
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="font-heading font-bold text-[#2D3436]">Practice Consistency</h3>
-        <p className="text-sm font-bold text-[#2D3436]">
+        <h3 className="font-heading font-bold text-slate-800">Practice Consistency</h3>
+        <p className="text-sm font-bold text-slate-800">
           {thisWeekDays}/7 this week
-          <span className="text-xs font-normal text-[#636E72] ml-1">(target: 4-5)</span>
+          <span className="text-xs font-normal text-slate-500 ml-1">(target: 4-5)</span>
         </p>
       </div>
 
@@ -80,11 +80,11 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
       <div className="flex items-center mb-2">
         <div className="w-28 flex-shrink-0" />
         {dayNames.map(name => (
-          <div key={name} className="flex-1 text-center text-xs font-bold text-[#636E72]">
+          <div key={name} className="flex-1 text-center text-xs font-bold text-slate-500">
             {name}
           </div>
         ))}
-        <div className="w-8 flex-shrink-0 text-center text-[10px] font-bold text-[#636E72] pl-1">
+        <div className="w-8 flex-shrink-0 text-center text-[10px] font-bold text-slate-500 pl-1">
           Total
         </div>
       </div>
@@ -97,7 +97,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
           return (
             <div key={wi} className={`flex items-center ${current ? 'bg-[#EDE8FF]/50 rounded-lg py-1 -mx-1 px-1' : ''}`}>
               {/* Date range label */}
-              <div className="w-28 flex-shrink-0 text-[11px] text-[#636E72] pr-2">
+              <div className="w-28 flex-shrink-0 text-[11px] text-slate-500 pr-2">
                 {current && <span className="text-[#6C5CE7] font-bold">This week</span>}
                 {!current && formatRange(week.start, week.end)}
               </div>
@@ -117,7 +117,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
                 );
               })}
               {/* Weekly count */}
-              <div className="w-8 flex-shrink-0 text-center text-xs font-bold text-[#636E72] pl-1">
+              <div className="w-8 flex-shrink-0 text-center text-xs font-bold text-slate-500 pl-1">
                 {practicedCount > 0 ? practicedCount : ''}
               </div>
             </div>
@@ -126,7 +126,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-2 mt-3 text-xs text-[#636E72]">
+      <div className="flex items-center gap-2 mt-3 text-xs text-slate-500">
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded border border-gray-300" style={{ background: '#F3F4F6' }} /> No practice</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#DDD6FE' }} /> 1-10 Qs</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#A78BFA' }} /> 11-25 Qs</span>
@@ -136,16 +136,16 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
       {/* Summary stats */}
       <div className="grid grid-cols-3 gap-3 mt-3 pt-3 border-t border-gray-100">
         <div className="text-center">
-          <p className="text-xl font-heading font-bold text-[#2D3436]">{last28Practiced}</p>
-          <p className="text-[10px] text-[#636E72]">Days (last 4 wks)</p>
+          <p className="text-xl font-heading font-bold text-slate-800">{last28Practiced}</p>
+          <p className="text-[10px] text-slate-500">Days (last 4 wks)</p>
         </div>
         <div className="text-center">
-          <p className="text-xl font-heading font-bold text-[#2D3436]">{last28Questions}</p>
-          <p className="text-[10px] text-[#636E72]">Questions</p>
+          <p className="text-xl font-heading font-bold text-slate-800">{last28Questions}</p>
+          <p className="text-[10px] text-slate-500">Questions</p>
         </div>
         <div className="text-center">
-          <p className="text-xl font-heading font-bold text-[#2D3436]">{practiceDays.length}</p>
-          <p className="text-[10px] text-[#636E72]">Total days</p>
+          <p className="text-xl font-heading font-bold text-slate-800">{practiceDays.length}</p>
+          <p className="text-[10px] text-slate-500">Total days</p>
         </div>
       </div>
     </div>

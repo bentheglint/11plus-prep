@@ -46,10 +46,10 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
             <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-br ${resultGradient} flex items-center justify-center shadow-lg mb-4`}>
               <ResultIcon className="w-10 h-10 text-white" />
             </div>
-            <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">
+            <h2 className="text-3xl font-heading font-bold text-slate-800 mb-2">
               Quiz Complete!
             </h2>
-            <p className="text-xl text-[#636E72]">
+            <p className="text-xl text-slate-500">
               {percentage >= 80
                 ? 'Amazing work! You\'re a star!'
                 : percentage >= 60
@@ -75,15 +75,15 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-3xl font-heading font-bold text-[#2D3436] animate-count-up" style={{ animationDelay: '400ms' }}>{percentage}%</span>
+                <span className="text-3xl font-heading font-bold text-slate-800 animate-count-up" style={{ animationDelay: '400ms' }}>{percentage}%</span>
               </div>
             </div>
-            <div className="text-4xl font-heading font-bold text-[#2D3436] mb-1 animate-count-up" style={{ animationDelay: '600ms' }}>
+            <div className="text-4xl font-heading font-bold text-slate-800 mb-1 animate-count-up" style={{ animationDelay: '600ms' }}>
               {correctCount} / {totalCount}
             </div>
-            <p className="text-lg text-[#636E72] font-medium">Questions Correct</p>
+            <p className="text-lg text-slate-500 font-medium">Questions Correct</p>
             {totalTimeMs > 0 && (
-              <div className="mt-3 pt-3 border-t border-[#DDD6FE] flex items-center justify-center gap-2 text-[#636E72] animate-fade-in-up" style={{ animationDelay: '800ms' }}>
+              <div className="mt-3 pt-3 border-t border-[#DDD6FE] flex items-center justify-center gap-2 text-slate-500 animate-fade-in-up" style={{ animationDelay: '800ms' }}>
                 <Clock className="w-4 h-4" />
                 <span className="font-mono font-medium">
                   {totalMinutes > 0 ? `${totalMinutes}m ${String(totalSeconds).padStart(2, '0')}s` : `${totalSeconds}s`}
@@ -105,7 +105,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
             </button>
             <button
               onClick={onChooseTopic}
-              className="flex-1 py-4 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#2D3436] font-heading font-bold rounded-xl transition-colors flex items-center justify-center animate-fade-in-up"
+              className="flex-1 py-4 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-slate-800 font-heading font-bold rounded-xl transition-colors flex items-center justify-center animate-fade-in-up"
             >
               <Home className="w-5 h-5 mr-2" />
               {quizMode === 'daily' ? 'Learning Modes' : 'Choose Topic'}

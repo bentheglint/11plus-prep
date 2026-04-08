@@ -77,7 +77,7 @@ function QuizScreen({
                   </div>
                   <button
                     onClick={() => setTimerEnabled(!timerEnabled)}
-                    className={`p-1.5 rounded-lg transition-colors ${timerEnabled ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'}`}
+                    className={`p-1.5 rounded-lg transition-colors ${timerEnabled ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
                     title={timerEnabled ? 'Hide timer' : 'Show timer'}
                   >
                     <Clock className="w-4 h-4" />
@@ -166,7 +166,7 @@ function QuizScreen({
                 </button>
                 <button
                   onClick={() => onToggleFeedbackForm()}
-                  className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-[#636E72] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-gray-200"
+                  className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-slate-500 font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-gray-200"
                 >
                   <MessageSquare className="w-4 h-4" />
                   Report Issue
@@ -191,7 +191,7 @@ function QuizScreen({
                   >
                     <div className="flex items-center gap-2 mb-2">
                       <BookOpen className="w-4 h-4 text-[#F39C12]" />
-                      <span className="text-sm font-heading font-bold text-[#2D3436]">{currentQuestion.passageTitle}</span>
+                      <span className="text-sm font-heading font-bold text-slate-800">{currentQuestion.passageTitle}</span>
                     </div>
                     <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
                       {currentQuestion.passage}
@@ -231,7 +231,7 @@ function QuizScreen({
                     {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                       <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
                         <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${
-                          i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-[#2D3436]'
+                          i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'
                         }`}>{letter}</span>
                         <span className={`text-[7px] sm:text-[8px] font-mono ${
                           i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'
@@ -242,7 +242,7 @@ function QuizScreen({
                 </div>
               )}
 
-              <h3 className="text-2xl font-heading font-bold text-[#2D3436] mb-6 whitespace-pre-line">
+              <h3 className="text-2xl font-heading font-bold text-slate-800 mb-6 whitespace-pre-line">
                 <ClozeQuestionText text={currentQuestion.question} />
               </h3>
 
@@ -263,8 +263,8 @@ function QuizScreen({
                               ? 'border-red-500 bg-red-50 text-red-900'
                               : 'border-gray-200 bg-gray-50 text-gray-500'
                             : selectedPair.includes(idx)
-                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                            : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                            : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                         }`}
                       >
                         {option}
@@ -301,8 +301,8 @@ function QuizScreen({
                                 ? 'border-red-500 bg-red-50 text-red-900'
                                 : 'border-gray-200 bg-gray-50 text-gray-500'
                               : selectedPair[0] === idx
-                              ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                              : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                              ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                              : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                           }`}
                         >
                           {word}
@@ -326,8 +326,8 @@ function QuizScreen({
                                 ? 'border-red-500 bg-red-50 text-red-900'
                                 : 'border-gray-200 bg-gray-50 text-gray-500'
                               : selectedPair[1] === idx
-                              ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                              : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                              ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                              : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                           }`}
                         >
                           {word}
@@ -381,13 +381,13 @@ function QuizScreen({
                       className={`w-full p-4 text-left rounded-xl border-2 transition-all font-medium text-lg flex items-center gap-3 animate-fade-in-up ${
                         showFeedback
                           ? idx === currentQuestion.correct
-                            ? 'border-[#00B894] bg-[#00B894]/10 text-[#2D3436]'
+                            ? 'border-[#00B894] bg-[#00B894]/10 text-slate-800'
                             : idx === selectedAnswer
-                            ? 'border-[#FF6B6B] bg-[#FF6B6B]/10 text-[#2D3436]'
+                            ? 'border-[#FF6B6B] bg-[#FF6B6B]/10 text-slate-800'
                             : 'border-gray-200 bg-gray-50 text-gray-400'
                           : selectedAnswer === idx
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436]'
-                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800'
+                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}
                     >
                       <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
@@ -436,7 +436,7 @@ function QuizScreen({
                       <XCircle className="w-6 h-6 text-[#FF6B6B] mr-3 flex-shrink-0 mt-1" />
                     )}
                     <div className="flex-1">
-                      <p className={`font-heading font-bold mb-2 ${isCorrect ? 'text-[#2D3436]' : 'text-[#2D3436]'}`}>
+                      <p className={`font-heading font-bold mb-2 ${isCorrect ? 'text-slate-800' : 'text-slate-800'}`}>
                         {isCorrect ? 'Correct! Well done!' : 'Not quite right, but that\'s okay!'}
                       </p>
                       <p className="text-gray-800">{currentQuestion.explanation}</p>
@@ -529,7 +529,7 @@ function QuizScreen({
                 <div className="mt-6 bg-[#EDE8FF] border-2 border-[#A29BFE]/40 rounded-xl p-4 animate-fade-in-up">
                   <div className="flex items-center mb-3">
                     <Brain className="w-5 h-5 text-[#6C5CE7] mr-2" />
-                    <h4 className="font-heading font-bold text-[#2D3436]">AI Tutor Chat</h4>
+                    <h4 className="font-heading font-bold text-slate-800">AI Tutor Chat</h4>
                   </div>
 
                   <div className="bg-white rounded-lg p-3 mb-3 max-h-64 overflow-y-auto">
@@ -538,7 +538,7 @@ function QuizScreen({
                         <div className={`inline-block p-3 rounded-lg max-w-[80%] ${
                           msg.role === 'user'
                             ? 'bg-[#6C5CE7] text-white'
-                            : 'bg-[#FAFBFF] text-[#2D3436] border border-[#EDE8FF]'
+                            : 'bg-[#FAFBFF] text-slate-800 border border-[#EDE8FF]'
                         }`}>
                           <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
                         </div>

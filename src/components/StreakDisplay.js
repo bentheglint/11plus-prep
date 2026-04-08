@@ -4,7 +4,7 @@ import { X, Flame, Calendar, Target, Info } from 'lucide-react';
 function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = [], practiceLog = [] }) {
   const [showPanel, setShowPanel] = useState(false);
   const flameColour = isActive ? '#FF6B6B' : '#B2BEC3';
-  const textColour = isActive ? '#2D3436' : '#636E72';
+  const textColour = isActive ? '#1E293B' : '#64748B';
 
   // Build 8-week calendar data
   const today = new Date();
@@ -70,7 +70,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
              `${currentStreak}-day streak!`}
           </p>
           {longestStreak > currentStreak && (
-            <p className="text-[10px] text-[#636E72]">Best: {longestStreak} days</p>
+            <p className="text-[10px] text-slate-500">Best: {longestStreak} days</p>
           )}
         </div>
       </button>
@@ -83,7 +83,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
                 <Flame className="w-6 h-6 text-[#FF6B6B]" />
-                <h2 className="font-heading font-bold text-lg text-[#2D3436]">Your Practice Streak</h2>
+                <h2 className="font-heading font-bold text-lg text-slate-800">Your Practice Streak</h2>
               </div>
               <button onClick={() => setShowPanel(false)} className="text-gray-400 hover:text-gray-600">
                 <X className="w-5 h-5" />
@@ -94,15 +94,15 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
             <div className="grid grid-cols-3 gap-3 mb-5">
               <div className="text-center p-3 bg-gradient-to-b from-orange-50 to-white rounded-xl">
                 <p className="text-2xl font-bold text-[#FF6B6B]">{currentStreak}</p>
-                <p className="text-[10px] text-[#636E72] font-medium">Current streak</p>
+                <p className="text-[10px] text-slate-500 font-medium">Current streak</p>
               </div>
               <div className="text-center p-3 bg-gradient-to-b from-purple-50 to-white rounded-xl">
                 <p className="text-2xl font-bold text-[#6C5CE7]">{longestStreak}</p>
-                <p className="text-[10px] text-[#636E72] font-medium">Best streak</p>
+                <p className="text-[10px] text-slate-500 font-medium">Best streak</p>
               </div>
               <div className="text-center p-3 bg-gradient-to-b from-green-50 to-white rounded-xl">
                 <p className="text-2xl font-bold text-[#00B894]">{thisWeekCount}/5</p>
-                <p className="text-[10px] text-[#636E72] font-medium">This week</p>
+                <p className="text-[10px] text-slate-500 font-medium">This week</p>
               </div>
             </div>
 
@@ -110,13 +110,13 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
             <div className="mb-5">
               <div className="flex items-center gap-2 mb-2">
                 <Calendar className="w-4 h-4 text-[#6C5CE7]" />
-                <h3 className="font-heading font-bold text-sm text-[#2D3436]">Practice Consistency</h3>
+                <h3 className="font-heading font-bold text-sm text-slate-800">Practice Consistency</h3>
               </div>
               <div className="bg-gray-50 rounded-xl p-3">
                 {/* Day headers */}
                 <div className="grid grid-cols-7 gap-1 mb-1">
                   {dayNames.map((name, i) => (
-                    <div key={i} className="text-center text-[9px] font-bold text-[#636E72]">{name}</div>
+                    <div key={i} className="text-center text-[9px] font-bold text-slate-500">{name}</div>
                   ))}
                 </div>
                 {/* Week rows */}
@@ -139,7 +139,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                   </div>
                 ))}
                 {/* Legend */}
-                <div className="flex items-center gap-3 mt-2 text-[9px] text-[#636E72]">
+                <div className="flex items-center gap-3 mt-2 text-[9px] text-slate-500">
                   <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm bg-[#6C5CE7] inline-block"></span> Practised</span>
                   <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm bg-gray-200 inline-block border border-gray-300"></span> No practice</span>
                 </div>
@@ -150,24 +150,24 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
             <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4">
               <div className="flex items-center gap-2 mb-2">
                 <Target className="w-4 h-4 text-[#6C5CE7]" />
-                <h3 className="font-heading font-bold text-sm text-[#2D3436]">How Streaks Work</h3>
+                <h3 className="font-heading font-bold text-sm text-slate-800">How Streaks Work</h3>
               </div>
-              <div className="space-y-2 text-xs text-[#636E72]">
+              <div className="space-y-2 text-xs text-slate-500">
                 <p className="flex items-start gap-2">
                   <span className="text-[#00B894] font-bold mt-0.5">✓</span>
-                  <span>Complete <strong className="text-[#2D3436]">at least one quiz</strong> to count as a practice day</span>
+                  <span>Complete <strong className="text-slate-800">at least one quiz</strong> to count as a practice day</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#6C5CE7] font-bold mt-0.5">★</span>
-                  <span>Practise <strong className="text-[#2D3436]">5 out of every 7 days</strong> and you're building great habits</span>
+                  <span>Practise <strong className="text-slate-800">5 out of every 7 days</strong> and you're building great habits</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#FF6B6B] font-bold mt-0.5">!</span>
-                  <span>Drop below <strong className="text-[#2D3436]">5 days in any week</strong> and your streak starts fresh</span>
+                  <span>Drop below <strong className="text-slate-800">5 days in any week</strong> and your streak starts fresh</span>
                 </p>
                 <p className="flex items-start gap-2 mt-1">
                   <span className="text-[#00B894] font-bold mt-0.5">♥</span>
-                  <span>Taking breaks is healthy! Your progress is <strong className="text-[#2D3436]">always saved</strong></span>
+                  <span>Taking breaks is healthy! Your progress is <strong className="text-slate-800">always saved</strong></span>
                 </p>
               </div>
             </div>

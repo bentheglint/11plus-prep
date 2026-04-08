@@ -43,8 +43,8 @@ function RecommendationCard({ recommendation, onStart }) {
           <p className="text-xs font-bold uppercase tracking-wider mb-0.5" style={{ color: colour }}>
             What to practise next
           </p>
-          <h3 className="text-lg font-heading font-bold text-[#2D3436] mb-1">{displayName}</h3>
-          <p className="text-sm text-[#636E72] mb-3">{reason}</p>
+          <h3 className="text-lg font-heading font-bold text-slate-800 mb-1">{displayName}</h3>
+          <p className="text-sm text-slate-500 mb-3">{reason}</p>
           <button
             onClick={() => onStart(subject, topicKey)}
             className="flex items-center gap-2 px-5 py-2.5 font-bold text-white rounded-xl transition-colors text-sm"

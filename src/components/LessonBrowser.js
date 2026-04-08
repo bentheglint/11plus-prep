@@ -52,7 +52,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
       {/* Gentle nudge after 2+ lessons browsed without quiz */}
       {showNudge && (
         <div className="bg-[#EDE8FF] border border-[#DDD6FE] rounded-xl p-4 mb-2 animate-fade-in-up">
-          <p className="text-sm text-[#2D3436] font-medium mb-2">
+          <p className="text-sm text-slate-800 font-medium mb-2">
             You've been studying hard! Ready to test what you've learned?
           </p>
           <button
@@ -81,15 +81,15 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
                   <BookOpen className="w-4 h-4 text-[#6C5CE7]" />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-sm font-heading font-bold text-[#2D3436]">{name}</h3>
-                  <p className="text-xs text-[#636E72]">
+                  <h3 className="text-sm font-heading font-bold text-slate-800">{name}</h3>
+                  <p className="text-xs text-slate-500">
                     {progress.seen}/{progress.total} lessons studied
                   </p>
                 </div>
               </div>
               {isExpanded
-                ? <ChevronDown className="w-4 h-4 text-[#636E72]" />
-                : <ChevronRight className="w-4 h-4 text-[#636E72]" />
+                ? <ChevronDown className="w-4 h-4 text-slate-500" />
+                : <ChevronRight className="w-4 h-4 text-slate-500" />
               }
             </button>
 
@@ -108,7 +108,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
                         ? <CheckCircle className="w-4 h-4 text-[#00B894] flex-shrink-0" />
                         : <Circle className="w-4 h-4 text-gray-300 flex-shrink-0" />
                       }
-                      <span className={`text-sm ${isSeen ? 'text-[#636E72]' : 'text-[#2D3436] font-medium'}`}>
+                      <span className={`text-sm ${isSeen ? 'text-slate-500' : 'text-slate-800 font-medium'}`}>
                         {sc.name}
                       </span>
                     </button>
@@ -121,7 +121,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
       })}
 
       {sortedTopics.length === 0 && (
-        <p className="text-center text-[#636E72] py-8">No lessons available for this subject yet.</p>
+        <p className="text-center text-slate-500 py-8">No lessons available for this subject yet.</p>
       )}
     </div>
   );

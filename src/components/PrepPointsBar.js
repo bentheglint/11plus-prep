@@ -13,8 +13,8 @@ function PrepPointsBar({ levelInfo }) {
 
       <div className="flex-1 min-w-0">
         <div className="flex items-center justify-between mb-1">
-          <span className="text-xs font-bold text-[#2D3436]">Level {level}</span>
-          <span className="text-xs text-[#636E72]">{totalPP.toLocaleString()} PP</span>
+          <span className="text-xs font-bold text-slate-800">Level {level}</span>
+          <span className="text-xs text-slate-500">{totalPP.toLocaleString()} PP</span>
         </div>
         {/* Progress bar to next level */}
         <div className="w-full h-2 bg-[#EDE8FF] rounded-full overflow-hidden">
@@ -26,7 +26,7 @@ function PrepPointsBar({ levelInfo }) {
         {todayPP > 0 && (
           <div className="flex items-center gap-1 mt-0.5">
             <Star className="w-3 h-3 text-[#FDCB6E]" />
-            <span className="text-[10px] text-[#636E72]">+{todayPP} PP today</span>
+            <span className="text-[10px] text-slate-500">+{todayPP} PP today</span>
           </div>
         )}
       </div>

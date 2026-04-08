@@ -605,7 +605,7 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
       {showModal && (
         <div className="fixed inset-0 bg-black/50 z-[10000] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
           <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" onClick={e => e.stopPropagation()}>
-            <h3 className="text-lg font-heading font-bold text-[#2D3436] flex items-center gap-2 mb-1">
+            <h3 className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2 mb-1">
               <Flag className="w-5 h-5 text-red-500" />
               Flag Issue
             </h3>
@@ -614,7 +614,7 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
             </p>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold text-[#2D3436] mb-2">What's wrong?</label>
+              <label className="block text-sm font-semibold text-slate-800 mb-2">What's wrong?</label>
               <div className="grid grid-cols-2 gap-2">
                 {categories.map(cat => (
                   <button
@@ -633,7 +633,7 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
             </div>
 
             <div className="mb-5">
-              <label className="block text-sm font-semibold text-[#2D3436] mb-1">Details (optional)</label>
+              <label className="block text-sm font-semibold text-slate-800 mb-1">Details (optional)</label>
               <textarea
                 value={note}
                 onChange={e => setNote(e.target.value)}
@@ -1343,7 +1343,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 </p>
 
                 {/* Sub-concept name */}
-                <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-6">
+                <h2 className="text-2xl font-heading font-bold text-slate-800 mb-6">
                   {subConceptName}
                 </h2>
 
@@ -1445,7 +1445,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
               </div>
 
               {/* Title */}
-              <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-4">
+              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-4">
                 {screenData.title(activeVariables)}
               </h2>
 
@@ -1583,7 +1583,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center">
                       <Brain className="w-5 h-5 text-[#6C5CE7] mr-2" />
-                      <h4 className="font-heading font-bold text-[#2D3436] text-sm">AI Tutor</h4>
+                      <h4 className="font-heading font-bold text-slate-800 text-sm">AI Tutor</h4>
                     </div>
                     <button
                       onClick={() => setShowTutorChat(false)}
@@ -1599,7 +1599,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                         <div className={`inline-block p-3 rounded-lg max-w-[85%] ${
                           msg.role === 'user'
                             ? 'bg-[#6C5CE7] text-white'
-                            : 'bg-[#FAFBFF] text-[#2D3436] border border-[#EDE8FF]'
+                            : 'bg-[#FAFBFF] text-slate-800 border border-[#EDE8FF]'
                         }`}>
                           <div className="text-sm whitespace-pre-wrap">{msg.content.split('\n').map((line, li) => (
                             <p key={li} className={li > 0 ? 'mt-2' : ''}>{renderBoldText(line)}</p>

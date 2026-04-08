@@ -12,8 +12,8 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-4 mb-4 animate-fade-in-up">
       <div className="flex items-center justify-between mb-3">
-        <h4 className="text-sm font-heading font-bold text-[#2D3436]">Question Navigator</h4>
-        <button onClick={onClose} className="text-[#636E72] hover:text-[#2D3436]">
+        <h4 className="text-sm font-heading font-bold text-slate-800">Question Navigator</h4>
+        <button onClick={onClose} className="text-slate-500 hover:text-slate-800">
           <ChevronUp className="w-4 h-4" />
         </button>
       </div>
@@ -33,7 +33,7 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
                   ? 'ring-2 ring-[#6C5CE7] bg-[#EDE8FF] text-[#6C5CE7]'
                   : isAnswered
                   ? 'bg-[#00B894]/15 text-[#00876A]'
-                  : 'bg-gray-100 text-[#636E72] hover:bg-gray-200'
+                  : 'bg-gray-100 text-slate-500 hover:bg-gray-200'
                 }`}
             >
               {i + 1}
@@ -47,7 +47,7 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
         })}
       </div>
 
-      <div className="flex items-center justify-between text-xs text-[#636E72]">
+      <div className="flex items-center justify-between text-xs text-slate-500">
         <span className="flex items-center gap-1">
           <span className="w-3 h-3 rounded bg-[#00B894]/15 inline-block"></span>
           {answeredCount} answered

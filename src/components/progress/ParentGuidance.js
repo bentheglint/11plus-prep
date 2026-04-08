@@ -29,10 +29,10 @@ function GuideCard({ guide, onClose }) {
             {guide.category}
           </span>
         </div>
-        <h4 className="font-heading font-bold text-lg text-[#2D3436] mb-3">{guide.title}</h4>
-        <div className="text-sm text-[#2D3436] leading-relaxed whitespace-pre-line">{guide.body}</div>
+        <h4 className="font-heading font-bold text-lg text-slate-800 mb-3">{guide.title}</h4>
+        <div className="text-sm text-slate-800 leading-relaxed whitespace-pre-line">{guide.body}</div>
         {guide.researchNote && (
-          <p className="mt-4 text-xs text-[#636E72] italic border-t border-gray-100 pt-3">
+          <p className="mt-4 text-xs text-slate-500 italic border-t border-gray-100 pt-3">
             {guide.researchNote}
           </p>
         )}
@@ -137,7 +137,7 @@ function ParentGuidance({ guides, mastery, userData }) {
         </button>
         <div className="flex items-center gap-2 mb-4">
           <BookOpen className="w-5 h-5 text-[#6C5CE7]" />
-          <h3 className="font-heading font-bold text-[#2D3436]">All Parent Guides</h3>
+          <h3 className="font-heading font-bold text-slate-800">All Parent Guides</h3>
         </div>
 
         <div className="space-y-2">
@@ -153,12 +153,12 @@ function ParentGuidance({ guides, mastery, userData }) {
                 >
                   <div className="flex items-center gap-2.5">
                     <span className="text-lg">{config.icon}</span>
-                    <span className="font-heading font-bold text-sm text-[#2D3436]">{category}</span>
-                    <span className="text-xs text-[#636E72]">({categoryGuides.length})</span>
+                    <span className="font-heading font-bold text-sm text-slate-800">{category}</span>
+                    <span className="text-xs text-slate-500">({categoryGuides.length})</span>
                   </div>
                   {isExpanded
-                    ? <ChevronDown className="w-4 h-4 text-[#636E72]" />
-                    : <ChevronRight className="w-4 h-4 text-[#636E72]" />
+                    ? <ChevronDown className="w-4 h-4 text-slate-500" />
+                    : <ChevronRight className="w-4 h-4 text-slate-500" />
                   }
                 </button>
                 {isExpanded && (
@@ -169,8 +169,8 @@ function ParentGuidance({ guides, mastery, userData }) {
                         onClick={() => { setSelectedGuide(guide); setBrowsing(false); }}
                         className="w-full px-4 py-3 text-left hover:bg-gray-100 transition-colors border-b border-gray-100 last:border-b-0"
                       >
-                        <p className="text-sm font-medium text-[#2D3436]">{guide.title}</p>
-                        <p className="text-xs text-[#636E72] mt-0.5">{guide.summary}</p>
+                        <p className="text-sm font-medium text-slate-800">{guide.title}</p>
+                        <p className="text-xs text-slate-500 mt-0.5">{guide.summary}</p>
                       </button>
                     ))}
                   </div>
@@ -189,7 +189,7 @@ function ParentGuidance({ guides, mastery, userData }) {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <BookOpen className="w-5 h-5 text-[#6C5CE7]" />
-          <h3 className="font-heading font-bold text-[#2D3436]">Parent Guidance</h3>
+          <h3 className="font-heading font-bold text-slate-800">Parent Guidance</h3>
         </div>
         <button
           onClick={() => setBrowsing(true)}
@@ -199,7 +199,7 @@ function ParentGuidance({ guides, mastery, userData }) {
         </button>
       </div>
 
-      <p className="text-sm text-[#636E72] mb-4">Evidence-based advice to support your child's preparation:</p>
+      <p className="text-sm text-slate-500 mb-4">Evidence-based advice to support your child's preparation:</p>
 
       {featuredGuide && (
         <button

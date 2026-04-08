@@ -56,7 +56,7 @@ function Timer({ totalSeconds, onTimeUp, mode = 'countdown', resetKey, className
 
   if (mode === 'elapsed') {
     return (
-      <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100 text-[#636E72] font-mono font-medium text-sm ${className || ''}`}>
+      <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100 text-slate-500 font-mono font-medium text-sm ${className || ''}`}>
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="12" cy="12" r="10" />
           <polyline points="12 6 12 12 16 14" />
@@ -76,7 +76,7 @@ function Timer({ totalSeconds, onTimeUp, mode = 'countdown', resetKey, className
     ? 'bg-red-500 text-white animate-pulse'
     : isWarning
     ? 'bg-amber-100 text-amber-800 border-amber-300'
-    : 'bg-white/90 text-[#2D3436] border-gray-200';
+    : 'bg-white/90 text-slate-800 border-gray-200';
 
   return (
     <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl border font-mono font-bold text-lg ${bgColor} ${className || ''}`}>

@@ -10,7 +10,7 @@ function PostQuestionTipBanner({ tip }) {
         <Lightbulb className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
         <div>
           <span className="text-xs font-bold text-amber-700">Quick tip: </span>
-          <span className="text-sm text-[#2D3436]">{tip.keyInsight}</span>
+          <span className="text-sm text-slate-800">{tip.keyInsight}</span>
         </div>
       </div>
     </div>

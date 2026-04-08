@@ -38,10 +38,10 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
             <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-br ${resultGradient} flex items-center justify-center shadow-lg mb-4`}>
               <ResultIcon className="w-10 h-10 text-white" />
             </div>
-            <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-1">
+            <h2 className="text-3xl font-heading font-bold text-slate-800 mb-1">
               Mock Test Complete!
             </h2>
-            <p className="text-lg text-[#636E72]">
+            <p className="text-lg text-slate-500">
               {subjectNames[subject] || subject} Paper
             </p>
           </div>
@@ -63,14 +63,14 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-3xl font-heading font-bold text-[#2D3436]">{percentage}%</span>
+                <span className="text-3xl font-heading font-bold text-slate-800">{percentage}%</span>
               </div>
             </div>
-            <div className="text-3xl font-heading font-bold text-[#2D3436] mb-1">
+            <div className="text-3xl font-heading font-bold text-slate-800 mb-1">
               {totalCorrect} / {totalQuestions}
             </div>
-            <p className="text-[#636E72]">Questions Correct</p>
-            <p className="text-sm text-[#636E72] mt-2">
+            <p className="text-slate-500">Questions Correct</p>
+            <p className="text-sm text-slate-500 mt-2">
               Time: {minsUsed}m {secsUsed}s of {minsAllowed} minutes
               {finishedEarly && <span className="text-[#00B894] font-medium"> — finished early!</span>}
             </p>
@@ -87,7 +87,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
                   </h3>
                   {strengths.map(s => (
                     <div key={s.name} className="flex justify-between text-sm py-1">
-                      <span className="text-[#2D3436]">{s.name}</span>
+                      <span className="text-slate-800">{s.name}</span>
                       <span className="font-bold text-[#00B894]">{s.pct}%</span>
                     </div>
                   ))}
@@ -101,7 +101,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
                   </h3>
                   {weaknesses.map(s => (
                     <div key={s.name} className="flex justify-between text-sm py-1">
-                      <span className="text-[#2D3436]">{s.name}</span>
+                      <span className="text-slate-800">{s.name}</span>
                       <span className="font-bold text-[#FF6B6B]">{s.pct}%</span>
                     </div>
                   ))}
@@ -113,7 +113,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
 
         {/* Section-by-section breakdown */}
         <div className="card-elevated p-6 mb-6">
-          <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-4">Section Breakdown</h3>
+          <h3 className="text-xl font-heading font-bold text-slate-800 mb-4">Section Breakdown</h3>
           <div className="space-y-3">
             {sectionEntries.map(section => {
               const isExpanded = expandedSection === section.name;
@@ -127,8 +127,8 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
                   >
                     <div className="flex-1 text-left">
                       <div className="flex items-center gap-3 mb-1">
-                        <span className="font-heading font-bold text-[#2D3436]">{section.name}</span>
-                        <span className="text-sm text-[#636E72]">{section.correct}/{section.total}</span>
+                        <span className="font-heading font-bold text-slate-800">{section.name}</span>
+                        <span className="text-sm text-slate-500">{section.correct}/{section.total}</span>
                       </div>
                       <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
                         <div
@@ -153,7 +153,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
                               : <XCircle className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" />
                             }
                             <div className="flex-1">
-                              <p className="text-[#2D3436] font-medium">{item.question.question.question?.substring(0, 100) || item.question.question.substring?.(0, 100) || 'Question'}{(item.question.question.question || item.question.question || '').length > 100 ? '...' : ''}</p>
+                              <p className="text-slate-800 font-medium">{item.question.question.question?.substring(0, 100) || item.question.question.substring?.(0, 100) || 'Question'}{(item.question.question.question || item.question.question || '').length > 100 ? '...' : ''}</p>
                               {!item.isCorrect && item.question.question.explanation && (
                                 <p className="text-gray-600 text-xs mt-1">{item.question.question.explanation}</p>
                               )}
@@ -183,20 +183,20 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
             <div className="card-elevated p-6 mb-6">
               <div className="flex items-center gap-2 mb-4">
                 <Clock className="w-5 h-5 text-[#6C5CE7]" />
-                <h3 className="text-xl font-heading font-bold text-[#2D3436]">Time Analysis</h3>
+                <h3 className="text-xl font-heading font-bold text-slate-800">Time Analysis</h3>
               </div>
               <div className="grid grid-cols-3 gap-4 mb-4">
                 <div className="text-center p-3 bg-gray-50 rounded-xl">
-                  <p className="text-2xl font-bold text-[#2D3436]">{avgTime}s</p>
-                  <p className="text-xs text-[#636E72]">Avg per question</p>
+                  <p className="text-2xl font-bold text-slate-800">{avgTime}s</p>
+                  <p className="text-xs text-slate-500">Avg per question</p>
                 </div>
                 <div className="text-center p-3 bg-gray-50 rounded-xl">
-                  <p className="text-2xl font-bold text-[#2D3436]">{Math.round(Math.min(...times) / 1000)}s</p>
-                  <p className="text-xs text-[#636E72]">Fastest</p>
+                  <p className="text-2xl font-bold text-slate-800">{Math.round(Math.min(...times) / 1000)}s</p>
+                  <p className="text-xs text-slate-500">Fastest</p>
                 </div>
                 <div className="text-center p-3 bg-gray-50 rounded-xl">
-                  <p className="text-2xl font-bold text-[#2D3436]">{Math.round(Math.max(...times) / 1000)}s</p>
-                  <p className="text-xs text-[#636E72]">Slowest</p>
+                  <p className="text-2xl font-bold text-slate-800">{Math.round(Math.max(...times) / 1000)}s</p>
+                  <p className="text-xs text-slate-500">Slowest</p>
                 </div>
               </div>
               {slowQuestions.length > 0 && (
@@ -205,7 +205,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
                   <div className="space-y-1">
                     {slowQuestions.map(([idx, timeMs]) => (
                       <div key={idx} className="flex items-center justify-between text-sm px-3 py-2 bg-amber-50 rounded-lg">
-                        <span className="text-[#2D3436]">Question {parseInt(idx) + 1}</span>
+                        <span className="text-slate-800">Question {parseInt(idx) + 1}</span>
                         <span className="font-bold text-amber-600">{Math.round(timeMs / 1000)}s</span>
                       </div>
                     ))}
@@ -226,7 +226,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
           </button>
           <button
             onClick={onHome}
-            className="flex-1 py-4 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#2D3436] font-heading font-bold rounded-xl transition-colors flex items-center justify-center"
+            className="flex-1 py-4 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-slate-800 font-heading font-bold rounded-xl transition-colors flex items-center justify-center"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home

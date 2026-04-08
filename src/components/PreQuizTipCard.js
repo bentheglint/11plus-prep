@@ -14,7 +14,7 @@ function PreQuizTipCard({ tip, onDismiss }) {
         <p className="text-xs font-bold text-amber-600 uppercase tracking-wide mb-3">Quick tip before you start</p>
 
         <div className="bg-white rounded-xl p-6 shadow-md border border-amber-100 mb-6">
-          <p className="text-lg text-[#2D3436] font-medium leading-relaxed">{tip.keyInsight}</p>
+          <p className="text-lg text-slate-800 font-medium leading-relaxed">{tip.keyInsight}</p>
         </div>
 
         <button

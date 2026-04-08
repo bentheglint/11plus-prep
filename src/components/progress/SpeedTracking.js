@@ -25,7 +25,7 @@ function SpeedTracking({ questionResults }) {
     const recent = results.slice(-50); // last 50 questions
     const avgMs = recent.reduce((s, r) => s + r.timeSpentMs, 0) / recent.length;
     const avgSecs = Math.round(avgMs / 1000);
-    const config = subjectTargets[subject] || { target: 60, name: subject, colour: '#636E72' };
+    const config = subjectTargets[subject] || { target: 60, name: subject, colour: '#64748B' };
 
     // Check for guessing: fast + low accuracy
     const recentCorrect = recent.filter(r => r.correct).length;
@@ -52,9 +52,9 @@ function SpeedTracking({ questionResults }) {
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center gap-2 mb-4">
         <Clock className="w-5 h-5 text-[#6C5CE7]" />
-        <h3 className="font-heading font-bold text-[#2D3436]">Speed Tracking</h3>
+        <h3 className="font-heading font-bold text-slate-800">Speed Tracking</h3>
       </div>
-      <p className="text-xs text-[#636E72] mb-4">Average time per question (lower is better, but not at the cost of accuracy)</p>
+      <p className="text-xs text-slate-500 mb-4">Average time per question (lower is better, but not at the cost of accuracy)</p>
 
       <div className="space-y-3">
         {subjectStats.map(stat => {
@@ -65,12 +65,12 @@ function SpeedTracking({ questionResults }) {
           return (
             <div key={stat.subject}>
               <div className="flex items-center justify-between mb-1">
-                <span className="text-sm font-bold text-[#2D3436]">{stat.name}</span>
+                <span className="text-sm font-bold text-slate-800">{stat.name}</span>
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-bold" style={{ color: barColour }}>
                     {stat.avgSecs}s
                   </span>
-                  <span className="text-[10px] text-[#636E72]">
+                  <span className="text-[10px] text-slate-500">
                     / {stat.target}s target
                   </span>
                   {stat.trend === 'faster' && <span className="text-[10px] text-[#00B894] font-bold">↓ faster</span>}

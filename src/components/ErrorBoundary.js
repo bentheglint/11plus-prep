@@ -31,16 +31,16 @@ class ErrorBoundary extends React.Component {
             <div className="w-16 h-16 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-8 h-8 text-amber-500" />
             </div>
-            <h1 className="font-heading text-2xl font-bold text-[#2D3436] mb-2">
+            <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2">
               Something went wrong
             </h1>
-            <p className="text-[#636E72] mb-6">
+            <p className="text-slate-500 mb-6">
               Sorry about that! The app ran into a problem. Your progress is saved — try reloading.
             </p>
             <div className="flex gap-3">
               <button
                 onClick={this.handleGoHome}
-                className="flex-1 py-2.5 rounded-xl font-bold text-[#2D3436] bg-gray-100 hover:bg-gray-200 transition-colors"
+                className="flex-1 py-2.5 rounded-xl font-bold text-slate-800 bg-gray-100 hover:bg-gray-200 transition-colors"
               >
                 Go Home
               </button>
@@ -54,7 +54,7 @@ class ErrorBoundary extends React.Component {
             </div>
             {this.state.error && (
               <details className="mt-4 text-left">
-                <summary className="text-xs text-[#636E72] cursor-pointer">Technical details</summary>
+                <summary className="text-xs text-slate-500 cursor-pointer">Technical details</summary>
                 <pre className="mt-2 text-xs text-red-500 bg-red-50 rounded-lg p-3 overflow-auto max-h-32">
                   {this.state.error.message}
                 </pre>

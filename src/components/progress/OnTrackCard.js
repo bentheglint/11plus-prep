@@ -194,7 +194,7 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
           <StatusIcon className="w-7 h-7 text-white" />
         </div>
         <div className="flex-1">
-          <h2 className="text-xl font-heading font-bold text-[#2D3436] mb-1">{headline}</h2>
+          <h2 className="text-xl font-heading font-bold text-slate-800 mb-1">{headline}</h2>
           <p className="text-sm text-[#4A5568] leading-relaxed">{message}</p>
         </div>
       </div>
@@ -207,7 +207,7 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
             return (
               <div key={i} className="flex items-start gap-3 bg-white/60 rounded-xl px-4 py-3">
                 <DetailIcon className="w-4.5 h-4.5 mt-0.5 flex-shrink-0" style={{ color: borderColour }} />
-                <p className="text-sm text-[#2D3436] font-medium">{detail.text}</p>
+                <p className="text-sm text-slate-800 font-medium">{detail.text}</p>
               </div>
             );
           })}
@@ -219,15 +219,15 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
         <div className="flex items-center gap-4 mt-4 pt-4 border-t border-black/5">
           <div className="flex items-center gap-1.5">
             <Flame className="w-4 h-4" style={{ color: isStreakActive ? '#FF6B6B' : '#B2BEC3' }} />
-            <span className="text-xs font-bold text-[#2D3436]">{currentStreak} day streak</span>
+            <span className="text-xs font-bold text-slate-800">{currentStreak} day streak</span>
           </div>
           <div className="flex items-center gap-1.5">
             <Target className="w-4 h-4" style={{ color: borderColour }} />
-            <span className="text-xs font-bold text-[#2D3436]">{daysThisWeek}/5 days this week</span>
+            <span className="text-xs font-bold text-slate-800">{daysThisWeek}/5 days this week</span>
           </div>
           <div className="flex items-center gap-1.5">
             <BookOpen className="w-4 h-4" style={{ color: borderColour }} />
-            <span className="text-xs font-bold text-[#2D3436]">{totalQuestions} questions answered</span>
+            <span className="text-xs font-bold text-slate-800">{totalQuestions} questions answered</span>
           </div>
         </div>
       )}

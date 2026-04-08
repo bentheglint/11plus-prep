@@ -234,10 +234,10 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
           <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
             <CheckCircle className="w-8 h-8 text-green-500" />
           </div>
-          <h1 className="font-heading text-2xl font-bold text-[#2D3436] mb-2">
+          <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2">
             Data Imported!
           </h1>
-          <p className="text-[#636E72] mb-4">
+          <p className="text-slate-500 mb-4">
             {childName}'s progress has been imported to their new account.
           </p>
 
@@ -267,7 +267,7 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
             </div>
           </div>
 
-          <p className="text-xs text-[#636E72] mb-6">
+          <p className="text-xs text-slate-500 mb-6">
             {result.itemsImported} items imported. Your original data is still saved on this device as a backup.
           </p>
 
@@ -290,10 +290,10 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
         <div className="w-16 h-16 mx-auto mb-4 bg-[#F0EDFF] rounded-full flex items-center justify-center">
           <Database className="w-8 h-8 text-[#6C5CE7]" />
         </div>
-        <h1 className="font-heading text-2xl font-bold text-[#2D3436] mb-2 text-center">
+        <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2 text-center">
           We found existing progress!
         </h1>
-        <p className="text-[#636E72] text-center mb-6">
+        <p className="text-slate-500 text-center mb-6">
           {scan.userName ? `${scan.userName}'s` : 'Your'} learning data is saved on this device.
           Import it to {childName}'s new account?
         </p>
@@ -378,12 +378,12 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
 
         <button
           onClick={onSkip}
-          className="w-full py-2.5 rounded-xl text-sm text-[#636E72] hover:text-[#2D3436] transition-colors"
+          className="w-full py-2.5 rounded-xl text-sm text-slate-500 hover:text-slate-800 transition-colors"
         >
           Skip — start fresh
         </button>
 
-        <p className="text-xs text-[#636E72] text-center mt-4">
+        <p className="text-xs text-slate-500 text-center mt-4">
           Your original data stays on this device as a backup.
         </p>
       </div>

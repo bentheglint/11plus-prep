@@ -6,7 +6,7 @@ function getTopicBadge(pct) {
   if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0984E3]', bg: 'bg-[#0984E3]/10' };
   if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#6C5CE7]', bg: 'bg-[#6C5CE7]/10' };
   if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F39C12]', bg: 'bg-[#F39C12]/10' };
-  return { label: 'Launch Pad', icon: Target, color: 'text-[#636E72]', bg: 'bg-gray-100' };
+  return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
 }
 
 function TopicCard({ title, performance, onClick }) {
@@ -31,7 +31,7 @@ function TopicCard({ title, performance, onClick }) {
         </div>
       );
     } else {
-      perfDisplay = <p className="text-sm text-[#636E72] mt-1">Not enough data</p>;
+      perfDisplay = <p className="text-sm text-slate-500 mt-1">Not enough data</p>;
     }
   }
   return (
@@ -44,7 +44,7 @@ function TopicCard({ title, performance, onClick }) {
         style={{ background: perfPct !== null ? perfBarColor : '#EDE8FF' }}
       />
       <div className="text-left pl-3">
-        <h4 className="text-xl font-heading font-bold text-[#2D3436] mb-1">{title}</h4>
+        <h4 className="text-xl font-heading font-bold text-slate-800 mb-1">{title}</h4>
         {perfDisplay}
       </div>
       <ChevronRight className="w-8 h-8 text-[#A29BFE] group-hover:translate-x-1 transition-transform" />
@@ -84,10 +84,10 @@ function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack, onHome
         </div>
 
         <div className="text-center mb-8 animate-fade-in-up">
-          <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">
+          <h2 className="text-3xl font-heading font-bold text-slate-800 mb-2">
             {subject.name} Topics
           </h2>
-          <p className="text-[#636E72]">Pick a topic to practise</p>
+          <p className="text-slate-500">Pick a topic to practise</p>
         </div>
 
         <div className="space-y-4 stagger-children">

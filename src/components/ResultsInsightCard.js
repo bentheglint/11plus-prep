@@ -12,7 +12,7 @@ function ResultsInsightCard({ tip }) {
         </div>
         <div className="flex-1">
           <p className="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">Level-up tip</p>
-          <p className="text-sm text-[#2D3436] font-medium leading-relaxed">{tip.keyInsight}</p>
+          <p className="text-sm text-slate-800 font-medium leading-relaxed">{tip.keyInsight}</p>
         </div>
       </div>
     </div>

@@ -80,7 +80,7 @@ export function FlagModal({ isOpen, onClose, onSubmit, categories, context }) {
     <div className="fixed inset-0 bg-black/50 z-[10000] flex items-center justify-center p-4" onClick={onClose}>
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 animate-scale-in" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-lg font-heading font-bold text-[#2D3436] flex items-center gap-2">
+          <h3 className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2">
             <Flag className="w-5 h-5 text-red-500" />
             Flag Issue
           </h3>
@@ -103,7 +103,7 @@ export function FlagModal({ isOpen, onClose, onSubmit, categories, context }) {
 
         {/* Category picker */}
         <div className="mb-4">
-          <label className="block text-sm font-semibold text-[#2D3436] mb-2">What's wrong?</label>
+          <label className="block text-sm font-semibold text-slate-800 mb-2">What's wrong?</label>
           <div className="grid grid-cols-2 gap-2">
             {categories.map(cat => (
               <button
@@ -123,7 +123,7 @@ export function FlagModal({ isOpen, onClose, onSubmit, categories, context }) {
 
         {/* Optional note */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold text-[#2D3436] mb-1">Details (optional)</label>
+          <label className="block text-sm font-semibold text-slate-800 mb-1">Details (optional)</label>
           <textarea
             value={note}
             onChange={e => setNote(e.target.value)}
@@ -178,7 +178,7 @@ export function TestingResultsSummary({
           <div className="w-16 h-16 mx-auto mb-4 bg-emerald-100 rounded-2xl flex items-center justify-center">
             <CheckCircle2 className="w-9 h-9 text-emerald-600" />
           </div>
-          <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-2">
+          <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">
             {quizQuestions.length} Questions Checked
           </h2>
           <p className="text-gray-500 mb-6">
@@ -187,7 +187,7 @@ export function TestingResultsSummary({
 
           {sessionFlags.length > 0 && (
             <div className="mb-6 text-left">
-              <h3 className="text-sm font-bold text-[#2D3436] mb-2">Flagged Issues</h3>
+              <h3 className="text-sm font-bold text-slate-800 mb-2">Flagged Issues</h3>
               <div className="space-y-2">
                 {sessionFlags.map((f, i) => (
                   <div key={i} className="flex items-start gap-2 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
@@ -206,7 +206,7 @@ export function TestingResultsSummary({
           <div className="flex gap-3">
             <button
               onClick={onBackToDashboard}
-              className="flex-1 px-4 py-3 bg-gray-100 text-[#2D3436] font-bold rounded-xl hover:bg-gray-200 transition-colors"
+              className="flex-1 px-4 py-3 bg-gray-100 text-slate-800 font-bold rounded-xl hover:bg-gray-200 transition-colors"
             >
               Back to Dashboard
             </button>
@@ -239,7 +239,7 @@ function TopicLessonPicker({ topicKey, topicName, lessonBank, testingCoverage, o
         Back to Dashboard
       </button>
 
-      <h2 className="text-xl font-heading font-bold text-[#2D3436] mb-1">{topicName} — Lessons</h2>
+      <h2 className="text-xl font-heading font-bold text-slate-800 mb-1">{topicName} — Lessons</h2>
       <p className="text-sm text-gray-500 mb-4">{testedIds.length}/{subConcepts.length} sub-concepts tested</p>
 
       <div className="space-y-2">
@@ -262,7 +262,7 @@ function TopicLessonPicker({ topicKey, topicName, lessonBank, testingCoverage, o
                   <Play className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}
                 <div>
-                  <span className="text-sm font-medium text-[#2D3436]">{sc.name}</span>
+                  <span className="text-sm font-medium text-slate-800">{sc.name}</span>
                   <span className="text-xs text-gray-400 ml-2">({sc.lessons?.length || 0} lesson{sc.lessons?.length !== 1 ? 's' : ''})</span>
                 </div>
               </div>
@@ -321,7 +321,7 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteF
     <div className="mb-6">
       <button onClick={() => setExpanded(!expanded)} className="flex items-center gap-2 mb-3">
         {expanded ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
-        <h2 className="text-sm font-bold text-[#2D3436] uppercase tracking-wider">Flagged Issues</h2>
+        <h2 className="text-sm font-bold text-slate-800 uppercase tracking-wider">Flagged Issues</h2>
         <span className="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-full">{allFlags.length}</span>
       </button>
       {expanded && (
@@ -335,7 +335,7 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteF
                   : <Flag className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" />}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="text-sm font-bold text-[#2D3436]">
+                    <span className="text-sm font-bold text-slate-800">
                       {flag.type === 'question' ? `Q${flag.questionId}` : `Lesson: ${flag.subConceptId}`}
                     </span>
                     <span className="text-xs text-gray-400">{flag.topicName}</span>
@@ -505,7 +505,7 @@ export default function TestingDashboard({
             <ClipboardCheck className="w-7 h-7 text-white" />
           </div>
           <div>
-            <h1 className="font-heading text-3xl font-extrabold text-[#2D3436]">Testing Mode</h1>
+            <h1 className="font-heading text-3xl font-extrabold text-slate-800">Testing Mode</h1>
             <p className="text-sm text-gray-500">Systematic QA — find bugs before the kids do</p>
           </div>
         </div>
@@ -538,7 +538,7 @@ export default function TestingDashboard({
               className="flex items-center gap-2 mb-3"
             >
               {expandedRisk ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
-              <h2 className="text-sm font-bold text-[#2D3436] uppercase tracking-wider">Test Next</h2>
+              <h2 className="text-sm font-bold text-slate-800 uppercase tracking-wider">Test Next</h2>
               <AlertTriangle className="w-4 h-4 text-amber-500" />
             </button>
             {expandedRisk && (
@@ -549,7 +549,7 @@ export default function TestingDashboard({
                       <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${subjectBadgeClass(risk.subject)}`}>
                         {SUBJECT_LABELS[risk.subject]}
                       </span>
-                      <span className="text-sm font-bold text-[#2D3436]">{risk.topicName}</span>
+                      <span className="text-sm font-bold text-slate-800">{risk.topicName}</span>
                     </div>
                     <p className="text-xs text-gray-500 mb-3">{risk.reason}</p>
                     <div className="flex gap-2">
@@ -604,7 +604,7 @@ export default function TestingDashboard({
           {(bySubject[activeTab] || []).map(topic => (
             <div key={topic.topicKey} className="card-elevated p-4">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-sm font-bold text-[#2D3436]">{topic.topicName}</h3>
+                <h3 className="text-sm font-bold text-slate-800">{topic.topicName}</h3>
                 <div className="flex items-center gap-2">
                   {topic.flaggedQs + topic.flaggedLessons > 0 && (
                     <span className="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-full flex items-center gap-1">

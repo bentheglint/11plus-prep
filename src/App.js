@@ -1134,7 +1134,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       return (
         <div className="app-bg p-6 min-h-screen">
           <div className="max-w-2xl mx-auto">
-            <div className="text-xs text-[#636E72] mb-2">{subjectName} › {previewTopic} › Q{previewQId} (D{found.difficulty})</div>
+            <div className="text-xs text-slate-500 mb-2">{subjectName} › {previewTopic} › Q{previewQId} (D{found.difficulty})</div>
             <div className="card-elevated p-6">
               {/* Visual component */}
               {Comp && (
@@ -1160,7 +1160,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 </div>
               )}
               {/* Question text */}
-              <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-4 whitespace-pre-line">{found.question}</h3>
+              <h3 className="text-xl font-heading font-bold text-slate-800 mb-4 whitespace-pre-line">{found.question}</h3>
               {/* Options */}
               {found.options && (
                 <div className="space-y-2">
@@ -1579,7 +1579,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
                 <Brain className="w-8 h-8 text-[#6C5CE7]" />
               </div>
-              <h2 className="text-xl font-heading font-bold text-[#2D3436] mb-2">No worries — we can help!</h2>
+              <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">No worries — we can help!</h2>
               <p className="text-gray-600 mb-4">What didn't make sense? This helps us improve the lessons.</p>
               <textarea
                 value={feedbackText}
@@ -1590,7 +1590,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
               />
               <div className="bg-[#EDE8FF] rounded-xl p-4 mb-4 text-left">
                 <p className="text-sm font-bold text-[#6C5CE7] mb-1">Your AI Tutor can explain this differently!</p>
-                <p className="text-sm text-[#636E72]">They'll look at the specific question you're stuck on and break it down step by step, just for you.</p>
+                <p className="text-sm text-slate-500">They'll look at the specific question you're stuck on and break it down step by step, just for you.</p>
               </div>
               {/* Submit feedback + open AI Tutor */}
               <button
@@ -1652,7 +1652,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
                 <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
               </div>
-              <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-2">Did that lesson help?</h2>
+              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">Did that lesson help?</h2>
               <p className="text-gray-600 mb-6">We showed you the <strong>{lessonFromQuiz.subConceptName}</strong> lesson. Did it help you understand the question better?</p>
               <div className="flex gap-3 justify-center">
                 <button
@@ -1854,7 +1854,7 @@ function getTopicBadge(pct) {
   if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0984E3]', bg: 'bg-[#0984E3]/10' };
   if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#6C5CE7]', bg: 'bg-[#6C5CE7]/10' };
   if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F39C12]', bg: 'bg-[#F39C12]/10' };
-  return { label: 'Launch Pad', icon: Target, color: 'text-[#636E72]', bg: 'bg-gray-100' };
+  return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
 }
 
 function TopicCard({ title, questionCount, performance, onClick }) {
@@ -1879,7 +1879,7 @@ function TopicCard({ title, questionCount, performance, onClick }) {
         </div>
       );
     } else {
-      perfDisplay = <p className="text-sm text-[#636E72] mt-1">Not enough data</p>;
+      perfDisplay = <p className="text-sm text-slate-500 mt-1">Not enough data</p>;
     }
   }
   return (
@@ -1893,7 +1893,7 @@ function TopicCard({ title, questionCount, performance, onClick }) {
         style={{ background: perfPct !== null ? perfBarColor : '#EDE8FF' }}
       />
       <div className="text-left pl-3">
-        <h4 className="text-xl font-heading font-bold text-[#2D3436] mb-1">{title}</h4>
+        <h4 className="text-xl font-heading font-bold text-slate-800 mb-1">{title}</h4>
         {questionCount && <p className="text-[#6C5CE7] font-medium">{questionCount} questions</p>}
         {perfDisplay}
       </div>

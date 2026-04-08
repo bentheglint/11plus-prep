@@ -11,8 +11,8 @@ function FocusAreas({ mastery, onTopicClick }) {
   if (focusAreas.length === 0) {
     return (
       <div className="card-elevated p-5 mb-6 text-center">
-        <h3 className="font-heading font-bold text-[#2D3436] mb-2">Focus Areas</h3>
-        <p className="text-sm text-[#636E72]">Start practising to see personalised recommendations!</p>
+        <h3 className="font-heading font-bold text-slate-800 mb-2">Focus Areas</h3>
+        <p className="text-sm text-slate-500">Start practising to see personalised recommendations!</p>
       </div>
     );
   }
@@ -21,9 +21,9 @@ function FocusAreas({ mastery, onTopicClick }) {
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center gap-2 mb-4">
         <AlertCircle className="w-5 h-5 text-[#6C5CE7]" />
-        <h3 className="font-heading font-bold text-[#2D3436]">Focus Areas</h3>
+        <h3 className="font-heading font-bold text-slate-800">Focus Areas</h3>
       </div>
-      <p className="text-sm text-[#636E72] mb-4">Topics that need the most attention right now:</p>
+      <p className="text-sm text-slate-500 mb-4">Topics that need the most attention right now:</p>
 
       <div className="space-y-3">
         {focusAreas.map((area, i) => {
@@ -41,18 +41,18 @@ function FocusAreas({ mastery, onTopicClick }) {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-0.5">
-                  <span className="font-bold text-sm text-[#2D3436]">{displayName}</span>
+                  <span className="font-bold text-sm text-slate-800">{displayName}</span>
                   <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ background: `${colour}15`, color: colour }}>
                     {subjectNames[area.subject]}
                   </span>
                 </div>
-                <p className="text-xs text-[#636E72]">{area.reason}</p>
+                <p className="text-xs text-slate-500">{area.reason}</p>
                 {area.mastery && area.mastery.totalQuestions > 0 && (
                   <div className="flex items-center gap-1 mt-1">
                     {[1,2,3,4,5].map(s => (
                       <Star key={s} className="w-2.5 h-2.5" fill={s <= area.mastery.stars ? '#FDCB6E' : 'none'} stroke={s <= area.mastery.stars ? '#F39C12' : '#DFE6E9'} strokeWidth={2} />
                     ))}
-                    <span className="text-[10px] text-[#636E72] ml-1">{area.mastery.recentAccuracy}% accuracy</span>
+                    <span className="text-[10px] text-slate-500 ml-1">{area.mastery.recentAccuracy}% accuracy</span>
                   </div>
                 )}
               </div>

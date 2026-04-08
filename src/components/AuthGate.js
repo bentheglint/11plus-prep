@@ -48,10 +48,10 @@ function LandingPage({ onSignIn, onSignUp }) {
         <div className="w-20 h-20 rounded-2xl bg-[#6C5CE7] flex items-center justify-center mb-6 shadow-lg">
           <BookOpen className="w-10 h-10 text-white" />
         </div>
-        <h1 className="font-heading text-4xl font-bold text-[#2D3436] mb-3">
+        <h1 className="font-heading text-4xl font-bold text-slate-800 mb-3">
           11+ Exam Prep
         </h1>
-        <p className="text-lg text-[#636E72] max-w-md mb-8">
+        <p className="text-lg text-slate-500 max-w-md mb-8">
           Personalised practice for the GL Assessment 11+ exam.
           Maths, English, and Verbal Reasoning — with smart revision that adapts to your child.
         </p>
@@ -62,12 +62,12 @@ function LandingPage({ onSignIn, onSignUp }) {
           Get Started Free
           <ChevronRight className="w-5 h-5" />
         </button>
-        <p className="text-sm text-[#636E72] mt-4">
+        <p className="text-sm text-slate-500 mt-4">
           Free while in early access
         </p>
 
         {/* Trust signals */}
-        <div className="flex items-center gap-6 mt-10 text-sm text-[#636E72]">
+        <div className="flex items-center gap-6 mt-10 text-sm text-slate-500">
           <div className="flex items-center gap-1.5">
             <Shield className="w-4 h-4 text-[#00B894]" />
             <span>Your child's data is safe</span>
@@ -89,8 +89,8 @@ function ConsentScreen({ onConsent, isLoading }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
       <div className="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8">
-        <h1 className="font-heading text-2xl font-bold text-[#2D3436] mb-2">Before we get started</h1>
-        <p className="text-[#636E72] mb-6">
+        <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2">Before we get started</h1>
+        <p className="text-slate-500 mb-6">
           We need your permission to collect your child's learning data.
           Here's exactly what we collect and why.
         </p>
@@ -101,24 +101,24 @@ function ConsentScreen({ onConsent, isLoading }) {
           <table className="w-full text-sm">
             <tbody>
               <tr className="border-b border-[#E8E5FF]">
-                <td className="py-2 font-medium text-[#2D3436]">First name</td>
-                <td className="py-2 text-[#636E72]">So the app can personalise the experience</td>
+                <td className="py-2 font-medium text-slate-800">First name</td>
+                <td className="py-2 text-slate-500">So the app can personalise the experience</td>
               </tr>
               <tr className="border-b border-[#E8E5FF]">
-                <td className="py-2 font-medium text-[#2D3436]">Quiz scores</td>
-                <td className="py-2 text-[#636E72]">To track progress and show you reports</td>
+                <td className="py-2 font-medium text-slate-800">Quiz scores</td>
+                <td className="py-2 text-slate-500">To track progress and show you reports</td>
               </tr>
               <tr className="border-b border-[#E8E5FF]">
-                <td className="py-2 font-medium text-[#2D3436]">Answers</td>
-                <td className="py-2 text-[#636E72]">To schedule reviews of tricky topics</td>
+                <td className="py-2 font-medium text-slate-800">Answers</td>
+                <td className="py-2 text-slate-500">To schedule reviews of tricky topics</td>
               </tr>
               <tr className="border-b border-[#E8E5FF]">
-                <td className="py-2 font-medium text-[#2D3436]">Practice days</td>
-                <td className="py-2 text-[#636E72]">To help build a study routine</td>
+                <td className="py-2 font-medium text-slate-800">Practice days</td>
+                <td className="py-2 text-slate-500">To help build a study routine</td>
               </tr>
               <tr>
-                <td className="py-2 font-medium text-[#2D3436]">AI tutor</td>
-                <td className="py-2 text-[#636E72]">Answered and then forgotten — not saved</td>
+                <td className="py-2 font-medium text-slate-800">AI tutor</td>
+                <td className="py-2 text-slate-500">Answered and then forgotten — not saved</td>
               </tr>
             </tbody>
           </table>
@@ -133,7 +133,7 @@ function ConsentScreen({ onConsent, isLoading }) {
               onChange={(e) => setConsentChecked(e.target.checked)}
               className="mt-1 w-5 h-5 rounded accent-[#6C5CE7]"
             />
-            <span className="text-sm text-[#2D3436]">
+            <span className="text-sm text-slate-800">
               I am the parent or guardian of the child who will use this app, and I consent to the
               processing of their learning data as described above and in our{' '}
               <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-[#6C5CE7] underline">
@@ -149,7 +149,7 @@ function ConsentScreen({ onConsent, isLoading }) {
               onChange={(e) => setEmailOptIn(e.target.checked)}
               className="mt-1 w-5 h-5 rounded accent-[#6C5CE7]"
             />
-            <span className="text-sm text-[#636E72]">
+            <span className="text-sm text-slate-500">
               Send me weekly progress emails about my child's learning.
               <span className="text-xs ml-1">(optional)</span>
             </span>
@@ -179,10 +179,10 @@ function ChildNameScreen({ onSubmit, isLoading }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-lg p-8 text-center">
-        <h1 className="font-heading text-2xl font-bold text-[#2D3436] mb-2">
+        <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2">
           What's your child's first name?
         </h1>
-        <p className="text-[#636E72] mb-6">
+        <p className="text-slate-500 mb-6">
           We'll use this to personalise the app.
           Just their first name — nothing else.
         </p>
@@ -482,7 +482,7 @@ export default function AuthGate({ children }) {
       <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
         <div className="max-w-md bg-white rounded-2xl shadow-lg p-8 text-center">
           <p className="text-red-500 font-bold mb-4">Something went wrong</p>
-          <p className="text-[#636E72] text-sm mb-4">{error}</p>
+          <p className="text-slate-500 text-sm mb-4">{error}</p>
           <button
             onClick={checkAccount}
             className="px-6 py-2 bg-[#6C5CE7] text-white rounded-xl font-bold"

@@ -56,18 +56,16 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#6C5CE7] to-[#A29BFE] flex items-center justify-center shadow-lg">
               <GraduationCap className="w-7 h-7 text-white" />
             </div>
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-[#2D3436]">
+            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-slate-800">
               11+ Test Prep
             </h1>
           </div>
-          <p className="text-sm text-[#636E72] mb-1">Built by Ben</p>
-          <p className="text-lg text-[#636E72] font-medium">Choose a subject to start practising!</p>
         </div>
 
         <div className="mb-8 flex justify-center gap-3 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
           <button
             onClick={onViewProgress}
-            className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
+            className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
           >
             <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
             <span className="font-heading">View My Progress</span>
@@ -75,7 +73,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           {onViewMistakes && (
             <button
               onClick={onViewMistakes}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
+              className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
             >
               <BookOpen className="w-5 h-5 text-[#FF6B6B]" />
               <span className="font-heading">My Mistakes</span>
@@ -84,7 +82,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui') && (
             <button
               onClick={onSpeedReview}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-amber-300 hover:bg-amber-50 transition-colors"
+              className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-amber-300 hover:bg-amber-50 transition-colors"
             >
               <Wrench className="w-5 h-5 text-amber-500" />
               <span className="font-heading">Speed Review</span>
@@ -93,7 +91,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           {(currentUser === 'Ben' || currentUser === 'Jacqui') && (
             <button
               onClick={onTestingMode}
-              className="flex items-center gap-3 px-6 py-3 bg-white text-[#2D3436] font-bold rounded-xl border border-rose-300 hover:bg-rose-50 transition-colors"
+              className="flex items-center gap-3 px-6 py-3 bg-white text-slate-800 font-bold rounded-xl border border-rose-300 hover:bg-rose-50 transition-colors"
             >
               <ClipboardCheck className="w-5 h-5 text-rose-500" />
               <span className="font-heading">Testing Mode</span>
@@ -104,7 +102,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
         {/* Suggested next sessions */}
         {suggestions.length > 0 && (
           <div className="mb-8 max-w-xl mx-auto space-y-3 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-            <p className="text-xs font-bold text-[#636E72] uppercase tracking-wider text-center mb-2">
+            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider text-center mb-2">
               Suggested for you
             </p>
             {suggestions.map(rec => (

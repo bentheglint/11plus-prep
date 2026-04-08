@@ -7,8 +7,8 @@ function MockTestHistory({ mockTestHistory }) {
   if (!mockTestHistory || mockTestHistory.length === 0) {
     return (
       <div className="card-elevated p-5 mb-6 text-center">
-        <h3 className="font-heading font-bold text-[#2D3436] mb-2">Mock Tests</h3>
-        <p className="text-sm text-[#636E72]">No mock tests taken yet. Try one from any subject!</p>
+        <h3 className="font-heading font-bold text-slate-800 mb-2">Mock Tests</h3>
+        <p className="text-sm text-slate-500">No mock tests taken yet. Try one from any subject!</p>
       </div>
     );
   }
@@ -36,7 +36,7 @@ function MockTestHistory({ mockTestHistory }) {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <FileText className="w-5 h-5 text-[#6C5CE7]" />
-          <h3 className="font-heading font-bold text-[#2D3436]">Mock Tests</h3>
+          <h3 className="font-heading font-bold text-slate-800">Mock Tests</h3>
         </div>
         {sparkData.length >= 3 && (
           <svg width={sparkW} height={sparkH} className="overflow-visible">
@@ -64,9 +64,9 @@ function MockTestHistory({ mockTestHistory }) {
       {avgSpeed && (
         <div className="flex items-center gap-2 mb-3 px-3 py-2 bg-[#EDE8FF] rounded-lg">
           <Clock className="w-4 h-4 text-[#6C5CE7]" />
-          <span className="text-sm text-[#2D3436]">
+          <span className="text-sm text-slate-800">
             Average speed: <strong>{avgSpeed}s per question</strong>
-            <span className="text-[#636E72]"> (target: ~60s)</span>
+            <span className="text-slate-500"> (target: ~60s)</span>
           </span>
         </div>
       )}
@@ -84,10 +84,10 @@ function MockTestHistory({ mockTestHistory }) {
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ background: dotColour }} />
                 <div>
-                  <p className="font-bold text-sm text-[#2D3436]">
+                  <p className="font-bold text-sm text-slate-800">
                     {subjectNames[test.subject] || test.subject}
                   </p>
-                  <p className="text-[10px] text-[#636E72]">
+                  <p className="text-[10px] text-slate-500">
                     {dateLabel}
                     {minsUsed !== null && ` · ${minsUsed}m${minsAllowed ? `/${minsAllowed}m` : ''}`}
                   </p>
@@ -95,7 +95,7 @@ function MockTestHistory({ mockTestHistory }) {
               </div>
               <div className="text-right">
                 <p className="text-lg font-heading font-bold" style={{ color: dotColour }}>{test.percentage}%</p>
-                <p className="text-[10px] text-[#636E72]">{test.totalCorrect}/{test.totalQuestions}</p>
+                <p className="text-[10px] text-slate-500">{test.totalCorrect}/{test.totalQuestions}</p>
               </div>
             </div>
           );

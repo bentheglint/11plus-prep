@@ -221,19 +221,19 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           <div className="max-w-2xl mx-auto">
             <div className="card-elevated p-8 text-center animate-fade-in-up">
               <CheckCircle2 className="w-12 h-12 text-[#00B894] mx-auto mb-4" />
-              <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-2">Practice Complete!</h2>
+              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">Practice Complete!</h2>
               <div className="flex justify-center gap-6 mb-4">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-[#00B894]">{correctCount}</p>
-                  <p className="text-sm text-[#636E72]">Correct</p>
+                  <p className="text-sm text-slate-500">Correct</p>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl font-bold text-[#FF6B6B]">{wrongCount}</p>
-                  <p className="text-sm text-[#636E72]">Still to learn</p>
+                  <p className="text-sm text-slate-500">Still to learn</p>
                 </div>
               </div>
               {correctCount > 0 && (
-                <p className="text-sm text-[#636E72] mb-4">
+                <p className="text-sm text-slate-500 mb-4">
                   {correctCount} question{correctCount !== 1 ? 's' : ''} removed from your mistakes!
                 </p>
               )}
@@ -261,7 +261,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               <X className="w-5 h-5" />
               Exit
             </button>
-            <div className="text-sm font-medium text-[#636E72]">
+            <div className="text-sm font-medium text-slate-500">
               {practiceIndex + 1} / {practiceMode.questions.length}
             </div>
             <div className="text-xs font-bold px-2 py-1 rounded-full" style={{ background: `${colour}15`, color: colour }}>
@@ -295,7 +295,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               >
                 <div className="flex items-center gap-2 mb-2">
                   <BookOpen className="w-4 h-4 text-[#F39C12]" />
-                  <span className="text-sm font-heading font-bold text-[#2D3436]">{current.fullQuestion.passageTitle}</span>
+                  <span className="text-sm font-heading font-bold text-slate-800">{current.fullQuestion.passageTitle}</span>
                 </div>
                 <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
                   {current.fullQuestion.passage}
@@ -333,7 +333,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 <div className="flex justify-center">
                   {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                     <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                      <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-[#2D3436]'}`}>{letter}</span>
+                      <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
                       <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                     </div>
                   ))}
@@ -341,7 +341,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               </div>
             )}
 
-            <p className="text-lg font-medium text-[#2D3436] mb-6">{current.questionText}</p>
+            <p className="text-lg font-medium text-slate-800 mb-6">{current.questionText}</p>
 
             {/* Standard MCQ options */}
             {(!current.questionType || current.questionType === 'error-spotting' || current.questionType === 'letter-codes' || current.questionType === 'passage') && current.options && (
@@ -364,7 +364,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                         <span className="w-7 h-7 rounded-full border-2 border-current flex items-center justify-center text-xs font-bold flex-shrink-0">
                           {String.fromCharCode(65 + i)}
                         </span>
-                        <span className="text-sm font-medium text-[#2D3436]">{option}</span>
+                        <span className="text-sm font-medium text-slate-800">{option}</span>
                       </span>
                     </button>
                   );
@@ -386,8 +386,8 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                             ? 'border-red-500 bg-red-50 text-red-900'
                             : 'border-gray-200 bg-gray-50 text-gray-500'
                           : selectedPair.includes(idx)
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                          : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}>
                       {option}
                     </button>
@@ -423,8 +423,8 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                               ? 'border-red-500 bg-red-50 text-red-900'
                               : 'border-gray-200 bg-gray-50 text-gray-500'
                             : selectedPair[0] === idx
-                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                            : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                            : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                         }`}>
                         {word}
                       </button>
@@ -444,8 +444,8 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                               ? 'border-red-500 bg-red-50 text-red-900'
                               : 'border-gray-200 bg-gray-50 text-gray-500'
                             : selectedPair[1] === idx
-                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#2D3436] ring-2 ring-[#A29BFE]'
-                            : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-[#2D3436]'
+                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                            : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                         }`}>
                         {word}
                       </button>
@@ -477,7 +477,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                   <div>
                     <p className="font-bold text-[#00B894] mb-1">Correct! Removed from your mistakes.</p>
                     {current.explanation && (
-                      <p className="text-sm text-[#636E72]">{current.explanation}</p>
+                      <p className="text-sm text-slate-500">{current.explanation}</p>
                     )}
                   </div>
                 </div>
@@ -487,17 +487,17 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                   <div>
                     <p className="font-bold text-[#FF6B6B] mb-1">Not quite — this one stays on your list.</p>
                     {current.questionType === 'select-two' && current.correctPair && current.options && (
-                      <p className="text-sm text-[#636E72] mb-1">
+                      <p className="text-sm text-slate-500 mb-1">
                         The correct pair was: {current.options[current.correctPair[0]]} and {current.options[current.correctPair[1]]}
                       </p>
                     )}
                     {current.questionType === 'pick-from-sets' && current.correctPair && current.setA && current.setB && (
-                      <p className="text-sm text-[#636E72] mb-1">
+                      <p className="text-sm text-slate-500 mb-1">
                         The correct pair was: {current.setA[current.correctPair[0]]} and {current.setB[current.correctPair[1]]}
                       </p>
                     )}
                     {current.explanation && (
-                      <p className="text-sm text-[#636E72]">{current.explanation}</p>
+                      <p className="text-sm text-slate-500">{current.explanation}</p>
                     )}
                   </div>
                 </div>
@@ -532,13 +532,13 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           <div className="w-14 h-14 mx-auto mb-3 rounded-2xl bg-[#FF6B6B]/10 flex items-center justify-center">
             <XCircle className="w-7 h-7 text-[#FF6B6B]" />
           </div>
-          <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-1">My Mistakes</h2>
+          <h2 className="text-2xl font-heading font-bold text-slate-800 mb-1">My Mistakes</h2>
           {totalMistakes > 0 ? (
-            <p className="text-[#636E72]">
+            <p className="text-slate-500">
               {totalMistakes} mistake{totalMistakes !== 1 ? 's' : ''} across {topicEntries.length} topic{topicEntries.length !== 1 ? 's' : ''}
             </p>
           ) : (
-            <p className="text-[#636E72]">Review your mistakes to learn from them</p>
+            <p className="text-slate-500">Review your mistakes to learn from them</p>
           )}
         </div>
 
@@ -563,8 +563,8 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
         {topicEntries.length === 0 ? (
           <div className="card-elevated p-8 text-center animate-fade-in-up">
             <Sparkles className="w-10 h-10 text-[#FDCB6E] mx-auto mb-3" />
-            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">No mistakes to review!</h3>
-            <p className="text-[#636E72]">Keep practising — when you get something wrong, it will appear here so you can learn from it.</p>
+            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">No mistakes to review!</h3>
+            <p className="text-slate-500">Keep practising — when you get something wrong, it will appear here so you can learn from it.</p>
           </div>
         ) : (
           <div className="space-y-3 stagger-children">
@@ -587,19 +587,19 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                       </div>
                       <div className="text-left">
                         <div className="flex items-center gap-2">
-                          <span className="font-heading font-bold text-[#2D3436]">{displayName}</span>
+                          <span className="font-heading font-bold text-slate-800">{displayName}</span>
                           <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ background: `${colour}15`, color: colour }}>
                             {subjectLabel}
                           </span>
                         </div>
-                        <p className="text-xs text-[#636E72]">
+                        <p className="text-xs text-slate-500">
                           Last mistake: {new Date(group.mistakes[0]?.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                         </p>
                       </div>
                     </div>
                     {isExpanded
-                      ? <ChevronDown className="w-4 h-4 text-[#636E72]" />
-                      : <ChevronRight className="w-4 h-4 text-[#636E72]" />
+                      ? <ChevronDown className="w-4 h-4 text-slate-500" />
+                      : <ChevronRight className="w-4 h-4 text-slate-500" />
                     }
                   </button>
 
@@ -626,7 +626,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                                 <XCircle className="w-3.5 h-3.5 text-[#FF6B6B]" />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <p className="text-sm text-[#2D3436] font-medium leading-snug">{preview}</p>
+                                <p className="text-sm text-slate-800 font-medium leading-snug">{preview}</p>
                                 <p className="text-[11px] text-[#9ca3af] mt-1">
                                   {new Date(mistake.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                                 </p>

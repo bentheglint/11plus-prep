@@ -221,7 +221,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
       {/* Topic picker + Run button */}
       <div className="card rounded-xl p-4 mb-6 flex flex-wrap items-center gap-4">
         <div className="flex items-center gap-2 flex-1 min-w-[250px]">
-          <label className="text-sm font-medium text-[#636E72]">Topic:</label>
+          <label className="text-sm font-medium text-slate-500">Topic:</label>
           <select
             value={mapTopic}
             onChange={e => setMapTopic(e.target.value)}
@@ -266,7 +266,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
       {questionMap && (
         <div className="card rounded-xl p-4 mb-6">
           <div className="flex items-center justify-between mb-2">
-            <h3 className="font-heading font-bold text-[#2D3436]">
+            <h3 className="font-heading font-bold text-slate-800">
               {questionMap.topic} — {questionMap.totalQuestions} questions → {questionMap.totalSubConcepts} sub-concepts
             </h3>
             {(() => {
@@ -321,8 +321,8 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
         <div key={scId} className={`mb-6 ${isGroupReviewed ? 'opacity-60' : ''}`}>
           <div className="flex items-center justify-between mb-2 px-2">
             <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-[#2D3436]">{group.name}</span>
-              <span className="text-xs text-[#636E72]">({group.questions.length} questions)</span>
+              <span className="text-sm font-bold text-slate-800">{group.name}</span>
+              <span className="text-xs text-slate-500">({group.questions.length} questions)</span>
               {groupFlags.length > 0 && (
                 <span className="text-xs px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-medium">{groupFlags.length} flagged</span>
               )}
@@ -371,7 +371,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
                 <div className="rounded-lg border border-gray-200 bg-white overflow-hidden">
                   <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 border-b border-gray-100">
                     <span className="text-xs font-bold px-2 py-0.5 rounded bg-gray-200 text-gray-600">INTRO</span>
-                    <span className="text-sm font-medium text-[#2D3436]">{sc?.name || group.name}</span>
+                    <span className="text-sm font-medium text-slate-800">{sc?.name || group.name}</span>
                   </div>
                   <div className="px-4 py-3">
                     <p className="text-xs font-medium text-gray-500 mb-1">Learning goals:</p>
@@ -406,7 +406,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
                   <div key={`screen-${sIdx}`} className="rounded-lg border border-gray-200 bg-white overflow-hidden">
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 border-b border-gray-100">
                       <span className={`text-xs font-bold px-2 py-0.5 rounded ${badge.bg}`}>{badge.label}</span>
-                      <span className="text-sm font-medium text-[#2D3436]">{title}</span>
+                      <span className="text-sm font-medium text-slate-800">{title}</span>
                     </div>
                     <div className="px-4 py-3">
                       {/* bodyParts rendering */}
@@ -557,7 +557,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
 
       {/* No data state */}
       {!questionMap && (
-        <div className="text-center py-20 text-[#636E72]">
+        <div className="text-center py-20 text-slate-500">
           <p className="text-lg">Select a topic and click "Run Mapping" to map questions to lessons.</p>
         </div>
       )}
@@ -804,8 +804,8 @@ export default function SpeedReviewPanel({
             <ArrowLeft className="w-5 h-5" />
             Back
           </button>
-          <h2 className="text-2xl font-heading font-bold text-[#2D3436]">Speed Review</h2>
-          <div className="text-sm text-[#636E72]">
+          <h2 className="text-2xl font-heading font-bold text-slate-800">Speed Review</h2>
+          <div className="text-sm text-slate-500">
             {progressStats.reviewed}/{progressStats.total} reviewed
             {progressStats.flagged > 0 && <span className="text-amber-600 ml-2">{progressStats.flagged} flagged</span>}
           </div>
@@ -835,7 +835,7 @@ export default function SpeedReviewPanel({
         {activeTab === 'lessons' && <div className="card rounded-xl p-4 mb-6 flex flex-wrap items-center gap-4">
           {/* Topic picker */}
           <div className="flex items-center gap-2 flex-1 min-w-[250px]">
-            <label className="text-sm font-medium text-[#636E72]">Topic:</label>
+            <label className="text-sm font-medium text-slate-500">Topic:</label>
             <select
               value={selectedTopic}
               onChange={e => { setSelectedTopic(e.target.value); setCollapsedLessons(new Set()); }}
@@ -909,7 +909,7 @@ export default function SpeedReviewPanel({
         {activeTab === 'lessons' && <>
         {/* No topic selected */}
         {!selectedTopic && (
-          <div className="text-center py-20 text-[#636E72]">
+          <div className="text-center py-20 text-slate-500">
             <p className="text-lg">Select a topic above to begin speed review.</p>
             <p className="text-sm mt-2">Each sub-concept's lessons are shown on one scrollable page.</p>
           </div>
@@ -940,8 +940,8 @@ export default function SpeedReviewPanel({
               <div className="card rounded-xl overflow-hidden">
                 <div className="flex items-center justify-between px-5 py-3 bg-gradient-to-r from-[#6C5CE7]/10 to-transparent border-b border-gray-100">
                   <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono text-[#636E72]">#{scIdx + 1}</span>
-                    <h3 className="font-heading font-bold text-[#2D3436]">{sc.name}</h3>
+                    <span className="text-xs font-mono text-slate-500">#{scIdx + 1}</span>
+                    <h3 className="font-heading font-bold text-slate-800">{sc.name}</h3>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">{sc.category}</span>
                     <span className="text-xs text-gray-400">{sc.lessons.length} lessons</span>
                   </div>
@@ -980,7 +980,7 @@ export default function SpeedReviewPanel({
                             ? <ChevronDown className="w-4 h-4 text-gray-400" />
                             : <ChevronRight className="w-4 h-4 text-gray-400" />
                           }
-                          <span className="text-sm font-medium text-[#2D3436]">
+                          <span className="text-sm font-medium text-slate-800">
                             Lesson {String.fromCharCode(65 + lIdx)}: {lesson.templateType}
                           </span>
                           <span className="text-xs text-gray-400">{lesson.screens?.length || 0} screens</span>
@@ -1014,7 +1014,7 @@ export default function SpeedReviewPanel({
                               <div className="flex items-center justify-between px-4 py-2 bg-gray-50 border-b border-gray-100">
                                 <div className="flex items-center gap-2">
                                   <span className="text-xs font-bold px-2 py-0.5 rounded bg-gray-200 text-gray-600">INTRO</span>
-                                  <span className="text-sm font-medium text-[#2D3436]">{sc.name}</span>
+                                  <span className="text-sm font-medium text-slate-800">{sc.name}</span>
                                 </div>
                                 <button
                                   onClick={() => {
@@ -1130,7 +1130,7 @@ export default function SpeedReviewPanel({
                                 <div className="flex items-center justify-between px-4 py-2 bg-gray-50 border-b border-gray-100">
                                   <div className="flex items-center gap-2">
                                     <span className={`text-xs font-bold px-2 py-0.5 rounded ${badge.bg}`}>{badge.label}</span>
-                                    <span className="text-sm font-medium text-[#2D3436]">{title}</span>
+                                    <span className="text-sm font-medium text-slate-800">{title}</span>
                                   </div>
                                   <div className="flex items-center gap-2">
                                     {interactionInfo && (
@@ -1399,7 +1399,7 @@ export default function SpeedReviewPanel({
 
         {/* Empty state for flagged filter */}
         {selectedTopic && showFlaggedOnly && filteredSubConcepts.length === 0 && (
-          <div className="text-center py-20 text-[#636E72]">
+          <div className="text-center py-20 text-slate-500">
             <p className="text-lg">No flagged sub-concepts in this topic.</p>
           </div>
         )}

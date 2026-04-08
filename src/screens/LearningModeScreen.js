@@ -34,10 +34,10 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
         </button>
 
         <div className="text-center mb-8 animate-fade-in-up">
-          <h2 className="text-3xl font-heading font-bold text-[#2D3436] mb-2">
+          <h2 className="text-3xl font-heading font-bold text-slate-800 mb-2">
             {subjectName || 'Subject'}
           </h2>
-          <p className="text-[#636E72]">Choose how you'd like to practise</p>
+          <p className="text-slate-500">Choose how you'd like to practise</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
@@ -48,8 +48,8 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             <div className="flex items-center justify-center w-16 h-16 bg-[#0984E3]/10 rounded-2xl mb-4">
               <Calendar className="w-8 h-8 text-[#0984E3]" />
             </div>
-            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Daily Learning</h3>
-            <p className="text-[#636E72] flex-1">10 questions from across all topics. A great way to keep your skills sharp!</p>
+            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Daily Learning</h3>
+            <p className="text-slate-500 flex-1">10 questions from across all topics. A great way to keep your skills sharp!</p>
           </button>
 
           <button
@@ -59,8 +59,8 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             <div className="flex items-center justify-center w-16 h-16 bg-[#6C5CE7]/10 rounded-2xl mb-4">
               <Target className="w-8 h-8 text-[#6C5CE7]" />
             </div>
-            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Focused Learning</h3>
-            <p className="text-[#636E72] flex-1">Pick a topic and practise 10 questions to build your confidence.</p>
+            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Focused Learning</h3>
+            <p className="text-slate-500 flex-1">Pick a topic and practise 10 questions to build your confidence.</p>
           </button>
 
           <button
@@ -70,8 +70,8 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             <div className="flex items-center justify-center w-16 h-16 bg-[#FF6B6B]/10 rounded-2xl mb-4">
               <Clock className="w-8 h-8 text-[#FF6B6B]" />
             </div>
-            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Mock Test</h3>
-            <p className="text-[#636E72] flex-1">
+            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Mock Test</h3>
+            <p className="text-slate-500 flex-1">
               Full practice paper — {testInfo.questions} questions in {testInfo.time} minutes. Timed, just like the real exam!
             </p>
           </button>
@@ -83,8 +83,8 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             <div className="flex items-center justify-center w-16 h-16 bg-[#FDCB6E]/10 rounded-2xl mb-4">
               <Lightbulb className="w-8 h-8 text-[#F39C12]" />
             </div>
-            <h3 className="text-xl font-heading font-bold text-[#2D3436] mb-2">Study Toolkit</h3>
-            <p className="text-[#636E72] flex-1">Tips, strategies, and lessons to help you ace the exam!</p>
+            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Study Toolkit</h3>
+            <p className="text-slate-500 flex-1">Tips, strategies, and lessons to help you ace the exam!</p>
           </button>
         </div>
 
@@ -110,11 +110,11 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
               }
             </div>
             <div className="flex-1">
-              <h3 className={`text-lg font-heading font-bold mb-1 ${challengeStatus.unlocked ? 'text-[#2D3436]' : 'text-gray-400'}`}>
+              <h3 className={`text-lg font-heading font-bold mb-1 ${challengeStatus.unlocked ? 'text-slate-800' : 'text-gray-400'}`}>
                 Challenge Mode
               </h3>
               {challengeStatus.unlocked ? (
-                <p className="text-sm text-[#636E72]">
+                <p className="text-sm text-slate-500">
                   10 hard questions across your strongest topics. Can you handle it?
                 </p>
               ) : (

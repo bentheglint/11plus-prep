@@ -24,7 +24,7 @@ function TipCard({ tip, index, total, onNext, onBack, isLast }) {
         >
           {category}
         </span>
-        <span className="text-xs text-[#636E72] font-medium">
+        <span className="text-xs text-slate-500 font-medium">
           {index + 1} of {total}
         </span>
       </div>
@@ -35,7 +35,7 @@ function TipCard({ tip, index, total, onNext, onBack, isLast }) {
       </div>
 
       {/* Title */}
-      <h2 className="text-2xl font-heading font-bold text-[#2D3436] text-center mb-6 px-2">
+      <h2 className="text-2xl font-heading font-bold text-slate-800 text-center mb-6 px-2">
         {title}
       </h2>
 
@@ -46,7 +46,7 @@ function TipCard({ tip, index, total, onNext, onBack, isLast }) {
       >
         <div className="flex items-start gap-3">
           <Lightbulb className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: colour }} />
-          <p className="text-base font-semibold text-[#2D3436] leading-relaxed">
+          <p className="text-base font-semibold text-slate-800 leading-relaxed">
             {keyInsight}
           </p>
         </div>
@@ -67,7 +67,7 @@ function TipCard({ tip, index, total, onNext, onBack, isLast }) {
         <p className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: colour }}>
           Try this! 👇
         </p>
-        <p className="text-sm font-medium text-[#2D3436] leading-relaxed">
+        <p className="text-sm font-medium text-slate-800 leading-relaxed">
           {tryThis}
         </p>
       </div>
@@ -80,7 +80,7 @@ function TipCard({ tip, index, total, onNext, onBack, isLast }) {
         {index > 0 && (
           <button
             onClick={onBack}
-            className="px-5 py-3 text-sm font-bold text-[#636E72] hover:text-[#2D3436] transition-colors"
+            className="px-5 py-3 text-sm font-bold text-slate-500 hover:text-slate-800 transition-colors"
           >
             ← Previous
           </button>

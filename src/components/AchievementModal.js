@@ -27,8 +27,8 @@ function AchievementModal({ achievement, onDismiss }) {
         </div>
 
         <p className="text-sm font-bold text-[#6C5CE7] uppercase tracking-wider mb-1">Achievement Unlocked!</p>
-        <h2 className="text-2xl font-heading font-bold text-[#2D3436] mb-2">{achievement.name}</h2>
-        <p className="text-[#636E72] mb-6">{achievement.description}</p>
+        <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">{achievement.name}</h2>
+        <p className="text-slate-500 mb-6">{achievement.description}</p>
 
         <button
           onClick={onDismiss}

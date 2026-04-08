@@ -79,10 +79,10 @@ function AccountMenu({ currentUser }) {
         >
           {currentUser ? currentUser[0] : '?'}
         </span>
-        <span className="text-sm font-bold text-[#2D3436] hidden sm:inline">
+        <span className="text-sm font-bold text-slate-800 hidden sm:inline">
           {currentUser || 'Account'}
         </span>
-        <ChevronDown className="w-4 h-4 text-[#636E72]" />
+        <ChevronDown className="w-4 h-4 text-slate-500" />
       </button>
 
       {/* Dropdown menu */}
@@ -92,24 +92,24 @@ function AccountMenu({ currentUser }) {
           <div className="absolute right-0 top-12 z-50 bg-white rounded-xl shadow-xl border border-gray-200 w-64 overflow-hidden">
             {/* User info */}
             <div className="px-4 py-3 border-b border-gray-100">
-              <p className="font-bold text-[#2D3436]">{currentUser}'s Account</p>
-              <p className="text-xs text-[#636E72]">{parentEmail}</p>
+              <p className="font-bold text-slate-800">{currentUser}'s Account</p>
+              <p className="text-xs text-slate-500">{parentEmail}</p>
             </div>
 
             {/* Menu items */}
             <div className="py-1">
               <button
                 onClick={handleExport}
-                className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-[#2D3436] hover:bg-[#F8F7FF] transition-colors"
+                className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
               >
                 <Download className="w-4 h-4 text-[#6C5CE7]" />
                 Export Data
               </button>
               <button
                 onClick={() => signOut()}
-                className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-[#2D3436] hover:bg-[#F8F7FF] transition-colors"
+                className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
               >
-                <LogOut className="w-4 h-4 text-[#636E72]" />
+                <LogOut className="w-4 h-4 text-slate-500" />
                 Sign Out
               </button>
               <button
@@ -129,22 +129,22 @@ function AccountMenu({ currentUser }) {
         <div className="fixed inset-0 bg-black/30 z-50 flex items-center justify-center p-4" onClick={() => setShowDeleteConfirm(false)}>
           <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between mb-4">
-              <h2 className="font-heading font-bold text-lg text-[#2D3436]">Delete Account?</h2>
+              <h2 className="font-heading font-bold text-lg text-slate-800">Delete Account?</h2>
               <button onClick={() => setShowDeleteConfirm(false)}>
-                <X className="w-5 h-5 text-[#636E72]" />
+                <X className="w-5 h-5 text-slate-500" />
               </button>
             </div>
-            <p className="text-sm text-[#636E72] mb-4">
+            <p className="text-sm text-slate-500 mb-4">
               This will <strong className="text-red-500">permanently delete</strong> {currentUser}'s account and all learning data.
               This cannot be undone.
             </p>
-            <p className="text-sm text-[#636E72] mb-6">
+            <p className="text-sm text-slate-500 mb-6">
               You may want to <button onClick={handleExport} className="text-[#6C5CE7] underline">export your data</button> first.
             </p>
             <div className="flex gap-3">
               <button
                 onClick={() => setShowDeleteConfirm(false)}
-                className="flex-1 py-2.5 rounded-xl font-bold text-[#2D3436] bg-gray-100 hover:bg-gray-200 transition-colors"
+                className="flex-1 py-2.5 rounded-xl font-bold text-slate-800 bg-gray-100 hover:bg-gray-200 transition-colors"
               >
                 Cancel
               </button>

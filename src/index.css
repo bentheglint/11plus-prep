@@ -24,10 +24,12 @@
   --english: #00B894;
   --vr: #6C5CE7;
 
-  /* Neutrals */
-  --surface: #FAFBFF;
-  --text: #2D3436;
-  --text-secondary: #636E72;
+  /* Neutrals (warm palette) */
+  --surface: #FEFDFB;
+  --surface-alt: #FBF9F6;
+  --text: #1E293B;
+  --text-secondary: #64748B;
+  --border-subtle: rgba(0, 0, 0, 0.04);
 
   /* Background gradient stops */
   --bg-from: #EDE8FF;
@@ -60,9 +62,9 @@ body {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: radial-gradient(circle, var(--primary-light) 1px, transparent 1px);
-  background-size: 28px 28px;
-  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+  opacity: 0.03;
   pointer-events: none;
   z-index: 0;
 }
@@ -77,25 +79,35 @@ body {
 .card {
   background: var(--surface);
   border-radius: 1rem;
+  border: 1px solid var(--border-subtle);
   box-shadow:
-    0 1px 3px rgba(108, 92, 231, 0.06),
-    0 4px 12px rgba(108, 92, 231, 0.08);
+    0 1px 3px rgba(108, 92, 231, 0.04),
+    0 4px 12px rgba(108, 92, 231, 0.06);
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .card:hover {
   box-shadow:
-    0 2px 8px rgba(108, 92, 231, 0.1),
-    0 8px 24px rgba(108, 92, 231, 0.12);
+    0 2px 8px rgba(108, 92, 231, 0.08),
+    0 8px 24px rgba(108, 92, 231, 0.1);
 }
 
 .card-elevated {
   background: var(--surface);
   border-radius: 1rem;
+  border: 1px solid var(--border-subtle);
   box-shadow:
-    0 4px 12px rgba(108, 92, 231, 0.1),
-    0 12px 32px rgba(108, 92, 231, 0.14);
+    0 4px 12px rgba(108, 92, 231, 0.08),
+    0 12px 32px rgba(108, 92, 231, 0.12);
 }
+
+/* ===== FLUID TYPOGRAPHY ===== */
+
+.text-fluid-sm { font-size: clamp(0.875rem, 0.8rem + 0.25vw, 1rem); }
+.text-fluid-base { font-size: clamp(1rem, 0.9rem + 0.35vw, 1.125rem); }
+.text-fluid-lg { font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem); }
+.text-fluid-xl { font-size: clamp(1.5rem, 1.2rem + 1vw, 2.25rem); }
+.text-fluid-2xl { font-size: clamp(2rem, 1.5rem + 1.5vw, 3rem); }
 
 /* ===== ANIMATIONS ===== */
 
@@ -253,7 +265,7 @@ body {
 }
 
 .btn-primary:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.96);
 }
 
 /* ===== FOCUS STATES ===== */
