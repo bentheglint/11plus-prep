@@ -10,3 +10,8 @@ id = "4002f528b09b4352a5f42f0396645116"
 binding = "DB"
 database_name = "11plus-user-data"
 database_id = "11c21cbc-441a-4af0-b9ec-0151663393ab"
+
+# Weekly progress email — runs Sunday 18:00 UTC
+# Dormant until EMAIL_API_KEY secret is configured
+[triggers]
+crons = ["0 18 * * SUN"]

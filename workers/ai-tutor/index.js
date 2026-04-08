@@ -3,6 +3,7 @@ import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
+import { handleScheduled } from './routes/email.js';
 
 // ── Clerk JWT Verification ──
 
@@ -204,5 +205,10 @@ export default {
     } catch (err) {
       return json({ error: 'Internal server error', detail: err.message }, 500);
     }
+  },
+
+  // Cron trigger — weekly progress emails (Sunday 18:00 UTC)
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(handleScheduled(env));
   },
 };
