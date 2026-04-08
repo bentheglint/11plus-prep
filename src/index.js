@@ -1,26 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ClerkProvider } from '@clerk/clerk-react';
 import '@fontsource-variable/dm-sans';
 import '@fontsource-variable/outfit';
 import './index.css';
 import App from './App';
 import DevReviewPanel from './DevReviewPanel';
 import DiagramViewer from './DiagramViewer';
+import AuthGate from './components/AuthGate';
 import reportWebVitals from './reportWebVitals';
+
+const CLERK_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
 const isDiagramViewer = new URLSearchParams(window.location.search).has('diagram-viewer');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {isDiagramViewer ? (
-      <DiagramViewer />
-    ) : (
-      <>
-        <App />
-        <DevReviewPanel />
-      </>
-    )}
+    <ClerkProvider publishableKey={CLERK_KEY}>
+      {isDiagramViewer ? (
+        <DiagramViewer />
+      ) : (
+        <AuthGate>
+          {(childName) => (
+            <>
+              <App currentUser={childName} />
+              <DevReviewPanel />
+            </>
+          )}
+        </AuthGate>
+      )}
+    </ClerkProvider>
   </React.StrictMode>
 );
 

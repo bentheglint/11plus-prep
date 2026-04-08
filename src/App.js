@@ -72,10 +72,20 @@ const questionData = {
   }
 };
 
-function App() {
+function App({ currentUser: authUser }) {
+  // In auth mode, currentUser comes from Clerk/D1 via AuthGate prop.
+  // Fall back to localStorage for dev/testing (when rendered without AuthGate).
   const [currentUser, setCurrentUser] = useState(() => {
-    return localStorage.getItem('current-user') || '';
+    return authUser || localStorage.getItem('current-user') || '';
   });
+
+  // Sync currentUser when authUser prop changes (Clerk login)
+  useEffect(() => {
+    if (authUser && authUser !== currentUser) {
+      setCurrentUser(authUser);
+      localStorage.setItem('current-user', authUser);
+    }
+  }, [authUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Per-user data isolation — all progress data keyed by user name
   const userData = useUserData(currentUser);

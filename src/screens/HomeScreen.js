@@ -1,6 +1,6 @@
 import React from 'react';
 import { BookOpen, Calculator, Brain, GraduationCap, BarChart3, Wrench, ClipboardCheck } from 'lucide-react';
-import UserAvatar from '../components/UserAvatar';
+import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
 
@@ -48,7 +48,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
               practiceDays={streaksAndPP.getPracticeDays(56)}
             />
           ) : <div />}
-          <UserAvatar currentUser={currentUser} onSetCurrentUser={onSetCurrentUser} />
+          <AccountMenu currentUser={currentUser} />
         </div>
 
         <div className="text-center mb-6 mt-2 animate-fade-in-up">

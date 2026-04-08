@@ -1,8 +1,14 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import {
+  syncQuizResult, syncMockTestResult, syncQuestionResult,
+  syncLessonComplete, syncPracticeSession, syncStreaks,
+  syncPrepPoints, syncAchievement, syncSeenTip, syncPreferences
+} from '../utils/apiSync';
 
 // Per-user localStorage isolation
 // All keys prefixed with user:${name}: to keep each user's data separate
 // Handles migration from old shared (unprefixed) data on first load
+// Save functions also fire API sync calls (fire-and-forget)
 
 const KEYS = [
   'quiz-history',
@@ -217,6 +223,7 @@ export default function useUserData(userName) {
     const updated = [...quizHistory, result];
     setQuizHistory(updated);
     saveJSON(userKey(userName, 'quiz-history'), updated);
+    syncQuizResult(result);
   }, [userName, quizHistory]);
 
   const saveTopicPerformance = useCallback((updated) => {
@@ -238,6 +245,7 @@ export default function useUserData(userName) {
       saveJSON(userKey(userName, 'mock-test-history'), updated);
       return updated;
     });
+    syncMockTestResult(result);
   }, [userName]);
 
   const saveLessonHistory = useCallback((updated) => {
@@ -254,6 +262,7 @@ export default function useUserData(userName) {
       saveJSON(userKey(userName, 'question-results'), updated);
       return updated;
     });
+    syncQuestionResult(result);
   }, [userName]);
 
   const savePracticeSession = useCallback((session) => {
@@ -263,25 +272,36 @@ export default function useUserData(userName) {
       saveJSON(userKey(userName, 'practice-log'), updated);
       return updated;
     });
+    syncPracticeSession(session);
   }, [userName]);
 
   const saveStreakData = useCallback((data) => {
     if (!userName) return;
     setStreakData(data);
     saveJSON(userKey(userName, 'streaks'), data);
+    syncStreaks(data);
   }, [userName]);
 
   const savePrepPoints = useCallback((data) => {
     if (!userName) return;
     setPrepPointsData(data);
     saveJSON(userKey(userName, 'prep-points'), data);
+    syncPrepPoints(data);
   }, [userName]);
 
   const saveAchievements = useCallback((data) => {
     if (!userName) return;
+    // Sync newly added achievements (compare with current state)
+    if (Array.isArray(data)) {
+      const currentIds = new Set(achievements.map(a => typeof a === 'string' ? a : a.id));
+      data.forEach(a => {
+        const id = typeof a === 'string' ? a : a.id;
+        if (!currentIds.has(id)) syncAchievement(id);
+      });
+    }
     setAchievements(data);
     saveJSON(userKey(userName, 'achievements'), data);
-  }, [userName]);
+  }, [userName, achievements]);
 
   const markTipSeen = useCallback((tipId) => {
     if (!userName) return;
@@ -289,20 +309,20 @@ export default function useUserData(userName) {
     const existing = seenTips.findIndex(t => t.id === tipId);
     let updated;
     if (existing >= 0) {
-      // Update lastSeenDate for existing entry
       updated = seenTips.map((t, i) => i === existing ? { ...t, lastSeenDate: now } : t);
     } else {
-      // Add new entry
       updated = [...seenTips, { id: tipId, lastSeenDate: now }];
     }
     setSeenTips(updated);
     saveJSON(userKey(userName, 'seen-tips'), updated);
+    syncSeenTip(tipId, now);
   }, [userName, seenTips]);
 
   const saveLastSessionDate = useCallback((date) => {
     if (!userName) return;
     setLastSessionDate(date);
     saveJSON(userKey(userName, 'last-session-date'), date);
+    syncPreferences(date);
   }, [userName]);
 
   const saveLeitnerQueue = useCallback((queue) => {
