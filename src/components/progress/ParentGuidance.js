@@ -13,7 +13,7 @@ function GuideCard({ guide, onClose }) {
   const config = categoryConfig[guide.category] || { colour: '#6C5CE7', icon: '📖' };
 
   return (
-    <div className="animate-fade-in-up">
+    <div className="">
       {onClose && (
         <button
           onClick={onClose}

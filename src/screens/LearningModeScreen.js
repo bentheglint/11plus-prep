@@ -37,14 +37,14 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
           Back to Home
         </motion.button>
 
-        <div className="text-center mb-8 animate-fade-in-up">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-heading font-bold text-slate-800 mb-2">
             {subjectName || 'Subject'}
           </h2>
           <p className="text-slate-500">Choose how you'd like to practise</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <motion.button
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.97 }}
@@ -105,7 +105,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
         </div>
 
         {/* Challenge Mode — full-width banner below the grid */}
-        <div className="mt-6 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+        <div className="mt-6">
           <motion.button
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.97 }}

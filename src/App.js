@@ -1575,7 +1575,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   if (currentView === 'quiz' && showDidItHelp && lessonFromQuiz) {
     return (
       <div className="app-bg p-4 min-h-screen flex items-center justify-center">
-        <div className="max-w-md mx-auto card-elevated p-8 text-center animate-fade-in-up">
+        <div className="max-w-md mx-auto card-elevated p-8 text-center">
           {showDidItHelp === 'feedback' ? (
             // Step 2: feedback + AI Tutor CTA
             <>

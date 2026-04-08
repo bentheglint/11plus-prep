@@ -935,7 +935,7 @@ export default function SpeedReviewPanel({
           })();
 
           return (
-            <div key={sc.id} className="mb-8 animate-fade-in-up" style={{ animationDelay: `${scIdx * 30}ms` }}>
+            <div key={sc.id} className="mb-8" style={{ animationDelay: `${scIdx * 30}ms` }}>
               {/* Sub-concept header */}
               <div className="card rounded-xl overflow-hidden">
                 <div className="flex items-center justify-between px-5 py-3 bg-gradient-to-r from-[#6C5CE7]/10 to-transparent border-b border-gray-100">

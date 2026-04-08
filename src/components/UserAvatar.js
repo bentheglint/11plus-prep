@@ -42,7 +42,7 @@ function UserAvatar({ currentUser, onSetCurrentUser }) {
             onClick={() => setShowPicker(false)}
           />
           {/* Dropdown */}
-          <div className="absolute right-0 top-full mt-2 z-50 bg-white rounded-xl shadow-xl border border-gray-200 p-3 min-w-[200px] animate-fade-in-up">
+          <div className="absolute right-0 top-full mt-2 z-50 bg-white rounded-xl shadow-xl border border-gray-200 p-3 min-w-[200px]">
             <div className="flex items-center justify-between mb-2 px-1">
               <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Who's practising?</p>
               <button onClick={() => setShowPicker(false)} className="text-gray-400 hover:text-gray-600">

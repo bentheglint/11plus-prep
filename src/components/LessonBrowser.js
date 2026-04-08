@@ -51,7 +51,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
     <div className="space-y-3">
       {/* Gentle nudge after 2+ lessons browsed without quiz */}
       {showNudge && (
-        <div className="bg-[#EDE8FF] border border-[#DDD6FE] rounded-xl p-4 mb-2 animate-fade-in-up">
+        <div className="bg-[#EDE8FF] border border-[#DDD6FE] rounded-xl p-4 mb-2">
           <p className="text-sm text-slate-800 font-medium mb-2">
             You've been studying hard! Ready to test what you've learned?
           </p>

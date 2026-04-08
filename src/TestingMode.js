@@ -78,7 +78,7 @@ export function FlagModal({ isOpen, onClose, onSubmit, categories, context }) {
 
   return createPortal(
     <div className="fixed inset-0 bg-black/50 z-[10000] flex items-center justify-center p-4" onClick={onClose}>
-      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 animate-scale-in" onClick={e => e.stopPropagation()}>
+      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2">
             <Flag className="w-5 h-5 text-red-500" />
@@ -174,7 +174,7 @@ export function TestingResultsSummary({
   return (
     <div className="app-bg p-4">
       <div className="max-w-lg mx-auto">
-        <div className="card-elevated p-8 text-center animate-fade-in-up">
+        <div className="card-elevated p-8 text-center">
           <div className="w-16 h-16 mx-auto mb-4 bg-emerald-100 rounded-2xl flex items-center justify-center">
             <CheckCircle2 className="w-9 h-9 text-emerald-600" />
           </div>

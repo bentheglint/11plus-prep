@@ -102,7 +102,7 @@ function MockTestScreen({
             </span>
           </div>
 
-          <div className="card-elevated p-8 text-center animate-fade-in-up">
+          <div className="card-elevated p-8 text-center">
             <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#6C5CE7]/10 flex items-center justify-center">
               <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
             </div>
@@ -419,7 +419,7 @@ function MockTestScreen({
         {/* Submit confirmation modal */}
         {showConfirmSubmit && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-2xl p-8 max-w-md w-full animate-fade-in-up">
+            <div className="bg-white rounded-2xl p-8 max-w-md w-full">
               <div className="text-center">
                 <AlertTriangle className="w-12 h-12 text-amber-500 mx-auto mb-4" />
                 <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Submit your test?</h3>

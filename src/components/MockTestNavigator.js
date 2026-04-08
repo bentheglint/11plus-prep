@@ -10,7 +10,7 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
   const cols = questions.length > 60 ? 'grid-cols-10' : questions.length > 30 ? 'grid-cols-8' : 'grid-cols-5';
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-4 mb-4 animate-fade-in-up">
+    <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-4 mb-4">
       <div className="flex items-center justify-between mb-3">
         <h4 className="text-sm font-heading font-bold text-slate-800">Question Navigator</h4>
         <button onClick={onClose} className="text-slate-500 hover:text-slate-800">

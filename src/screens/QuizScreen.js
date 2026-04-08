@@ -76,7 +76,7 @@ function QuizScreen({
             )}
           </div>
 
-          <div className="card-elevated p-6 md:p-8 animate-fade-in-up">
+          <div className="card-elevated p-6 md:p-8">
             <div className="mb-6">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
@@ -561,7 +561,7 @@ function QuizScreen({
               )}
               
               {showTutorChat && (
-                <div className="mt-6 bg-[#EDE8FF] border-2 border-[#A29BFE]/40 rounded-xl p-4 animate-fade-in-up">
+                <div className="mt-6 bg-[#EDE8FF] border-2 border-[#A29BFE]/40 rounded-xl p-4">
                   <div className="flex items-center mb-3">
                     <Brain className="w-5 h-5 text-[#6C5CE7] mr-2" />
                     <h4 className="font-heading font-bold text-slate-800">AI Tutor Chat</h4>

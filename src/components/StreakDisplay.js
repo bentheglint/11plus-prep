@@ -78,7 +78,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
       {/* Streak detail panel */}
       {showPanel && (
         <div className="fixed inset-0 bg-black/30 z-50 flex items-start justify-center pt-8 px-4 overflow-y-auto" onClick={() => setShowPanel(false)}>
-          <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 animate-fade-in-up my-4" onClick={e => e.stopPropagation()}>
+          <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 my-4" onClick={e => e.stopPropagation()}>
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">

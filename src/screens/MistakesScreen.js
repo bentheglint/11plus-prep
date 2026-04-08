@@ -219,7 +219,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
       return (
         <div className="app-bg p-4 min-h-screen">
           <div className="max-w-2xl mx-auto">
-            <div className="card-elevated p-8 text-center animate-fade-in-up">
+            <div className="card-elevated p-8 text-center">
               <CheckCircle2 className="w-12 h-12 text-[#00B894] mx-auto mb-4" />
               <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">Practice Complete!</h2>
               <div className="flex justify-center gap-6 mb-4">
@@ -279,7 +279,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
 
           {/* Passage text for comprehension questions */}
           {current.questionType === 'passage' && current.fullQuestion?.passage && (
-            <div className="mb-4 relative animate-fade-in-up">
+            <div className="mb-4 relative">
               <div className="bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto"
                 onScroll={(e) => {
                   const el = e.target;
@@ -309,7 +309,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           )}
 
           {/* Question */}
-          <div className="card-elevated p-6 mb-4 animate-fade-in-up">
+          <div className="card-elevated p-6 mb-4">
             {/* Error-spotting segments */}
             {current.questionType === 'error-spotting' && current.fullQuestion?.segments && (
               <div className="mb-4">
@@ -470,7 +470,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             const lastResult = practiceResults[practiceResults.length - 1];
             const wasCorrect = lastResult?.correct;
             return (
-            <div className="card-elevated p-5 mb-4 animate-fade-in-up">
+            <div className="card-elevated p-5 mb-4">
               {wasCorrect ? (
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#00B894] flex-shrink-0 mt-0.5" />
@@ -528,7 +528,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           Back to Home
         </button>
 
-        <div className="text-center mb-6 animate-fade-in-up">
+        <div className="text-center mb-6">
           <div className="w-14 h-14 mx-auto mb-3 rounded-2xl bg-[#FF6B6B]/10 flex items-center justify-center">
             <XCircle className="w-7 h-7 text-[#FF6B6B]" />
           </div>
@@ -544,7 +544,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
 
         {/* Practice All button */}
         {totalMistakes > 0 && (
-          <div className="mb-4 animate-fade-in-up">
+          <div className="mb-4">
             <button
               onClick={() => {
                 const allMistakes = topicEntries.flatMap(([topicKey, group]) =>
@@ -561,13 +561,13 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
         )}
 
         {topicEntries.length === 0 ? (
-          <div className="card-elevated p-8 text-center animate-fade-in-up">
+          <div className="card-elevated p-8 text-center">
             <Sparkles className="w-10 h-10 text-[#FDCB6E] mx-auto mb-3" />
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">No mistakes to review!</h3>
             <p className="text-slate-500">Keep practising — when you get something wrong, it will appear here so you can learn from it.</p>
           </div>
         ) : (
-          <div className="space-y-3 stagger-children">
+          <div className="space-y-3">
             {topicEntries.map(([topicKey, group]) => {
               const isExpanded = expandedTopic === topicKey;
               const colour = subjectColours[group.subject] || '#6C5CE7';
@@ -575,7 +575,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               const subjectLabel = subjectNames[group.subject] || group.subject;
 
               return (
-                <div key={topicKey} className="card-elevated overflow-hidden animate-fade-in-up">
+                <div key={topicKey} className="card-elevated overflow-hidden">
                   {/* Topic header */}
                   <button
                     onClick={() => setExpandedTopic(isExpanded ? null : topicKey)}
