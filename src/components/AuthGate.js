@@ -237,10 +237,12 @@ export default function AuthGate({ children }) {
     if (serverData.quizResults?.length > 0) {
       // Convert server format back to localStorage format
       const quizHistory = serverData.quizResults.map(r => ({
-        topicKey: r.topic_key, topic: r.topic_key,
-        category: r.subject, subject: r.subject,
-        score: r.score, total: r.total,
-        time: r.time_seconds, quizMode: r.quiz_mode,
+        id: Date.parse(r.completed_at) || Date.now(),
+        topic: r.topic_key,
+        subject: r.subject,
+        score: r.score,
+        total: r.total,
+        percentage: r.total > 0 ? Math.round((r.score / r.total) * 100) : 0,
         date: r.completed_at,
       }));
       localStorage.setItem(prefix + 'quiz-history', JSON.stringify(quizHistory));
@@ -258,8 +260,19 @@ export default function AuthGate({ children }) {
     }
 
     if (serverData.questionResults?.length > 0) {
-      const qr = serverData.quizResults ? serverData.questionResults : [];
-      // Keep server format for question results
+      // Convert server format (snake_case) to localStorage format (camelCase)
+      const qr = serverData.questionResults.map(r => ({
+        id: r.id || Date.parse(r.created_at) || Date.now(),
+        date: r.created_at || r.date,
+        questionId: r.question_id ?? r.questionId,
+        topicKey: r.topic_key ?? r.topicKey,
+        subject: r.subject,
+        difficulty: r.difficulty ?? 2,
+        correct: r.is_correct ?? r.correct ?? false,
+        timeSpentMs: r.time_ms ?? r.timeSpentMs ?? 0,
+        mode: r.mode || 'focused',
+        sessionId: r.session_id ?? r.sessionId,
+      }));
       localStorage.setItem(prefix + 'question-results', JSON.stringify(qr));
     }
 
@@ -286,8 +299,13 @@ export default function AuthGate({ children }) {
     }
 
     if (serverData.seenQuestions?.length > 0) {
+      // Local format: { topicKey: [questionId1, questionId2, ...] }
       const sq = {};
-      serverData.seenQuestions.forEach(r => { sq[r.question_id] = { topicKey: r.topic_key, subject: r.subject }; });
+      serverData.seenQuestions.forEach(r => {
+        const key = r.topic_key;
+        if (!sq[key]) sq[key] = [];
+        if (!sq[key].includes(r.question_id)) sq[key].push(r.question_id);
+      });
       localStorage.setItem(prefix + 'seen-questions', JSON.stringify(sq));
     }
 

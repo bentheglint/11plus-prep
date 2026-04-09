@@ -81,8 +81,8 @@ export function syncQuestionResult(result) {
     questionId: result.questionId,
     topicKey: result.topicKey,
     subject: result.subject || 'maths',
-    isCorrect: result.isCorrect,
-    timeMs: result.timeMs,
+    isCorrect: result.correct ?? result.isCorrect ?? false,
+    timeMs: result.timeSpentMs ?? result.timeMs ?? 0,
     difficulty: result.difficulty,
   });
 }
