@@ -58,7 +58,13 @@ const englishData = {
           passageTitle: "The Lighthouse Keeper's Cat",
           passage: `Every evening, as the sun dipped below the horizon and the sea turned from blue to inky black, Old Tom climbed the one hundred and forty-seven steps to the top of Hartland Lighthouse. His knees ached and his back protested, but he never missed a night. The ships depended on him.\n\nHis only companion was a marmalade cat called Barnacle, who had appeared on the doorstep one stormy November night, soaking wet and mewing pitifully. That had been three winters ago. Now Barnacle followed Tom everywhere — up the spiral staircase, along the narrow walkway, and into the lamp room where the great light revolved slowly, sending its beam far out across the dark water.\n\n"You're a better assistant than any human I've known," Tom would say, scratching Barnacle behind the ears. The cat would purr in response, his amber eyes reflecting the rotating light.\n\nOne February evening, a terrible fog rolled in from the Atlantic. Tom could barely see his own hand in front of his face. He checked the lamp three times, making sure it burned at full brightness. Then he heard something that made his blood run cold — the blast of a ship's horn, far too close to the rocks below.\n\nTom grabbed the fog horn lever and pulled with all his strength. The deep, booming sound echoed across the water. He pulled again and again. Barnacle pressed against his legs, fur standing on end.\n\nMinutes passed. Then, slowly, the horn sound grew fainter. The ship was turning away, finding safer waters. Tom slumped into his chair, exhausted but relieved. Barnacle jumped onto his lap and purred.\n\n"Another one saved, old friend," Tom whispered. "Another one saved."`,
           question: "Why did Barnacle's fur stand on end?",
-          options: ["He was cold from the fog", "He had been startled by Tom sitting down", "He was excited to see the ship", "He was reacting to the loud fog horn and the tense situation", "He wanted to go outside"],
+          options: [
+            "He was cold from the thick sea fog blowing through the lighthouse window",
+            "He had been suddenly startled when Tom sat down heavily beside him",
+            "He was excited about spotting the approaching ship through the mist",
+            "He was reacting to the loud fog horn and the tense situation",
+            "He wanted to go outside and explore the clifftop in the storm"
+          ],
           correct: 3,
           explanation: "A cat's fur stands on end when it is frightened or alarmed. Barnacle was reacting to the stressful situation — the loud fog horn blasts and Tom's urgent actions showed something was wrong. ✓"
         },
@@ -236,11 +242,11 @@ const englishData = {
           passage: `Britain's hedgehog population has fallen dramatically over the past twenty years. In the 1990s, there were an estimated thirty million hedgehogs roaming the countryside and suburban gardens. Today, that number has dropped to fewer than one million. Wildlife experts have called this decline "alarming" and warn that hedgehogs could disappear from Britain entirely within a generation.\n\nSo what has gone wrong? The biggest threat is habitat loss. Modern farming methods have removed the hedgerows and wild borders where hedgehogs once nested and found food. In towns, solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas. A hedgehog needs to roam up to two kilometres each night to find enough slugs, beetles, and caterpillars to survive.\n\nRoads are another major danger. Around 100,000 hedgehogs are killed on British roads every year. Because hedgehogs curl into a ball when frightened rather than running away, they are especially vulnerable to traffic.\n\nHowever, there is hope. Conservation groups across the country are working to reverse the decline. The "Hedgehog Highway" campaign encourages homeowners to cut small holes (about 13cm square) in the bottom of their garden fences, creating corridors that allow hedgehogs to move freely between gardens. Schools and community groups have been building hedgehog houses — simple wooden shelters filled with dry leaves — and placing them in quiet corners of parks and gardens.\n\nSimple actions can make a real difference. Checking long grass before mowing, avoiding slug pellets, and leaving a dish of fresh water in the garden can all help these beloved creatures survive. As one wildlife officer put it: "Hedgehogs don't need grand gestures — they just need us to share our gardens with them."`,
           question: "What is a 'Hedgehog Highway'?",
           options: [
-            "A special road built just for hedgehogs",
-            "A charity that rescues injured hedgehogs",
+            "A special road built by the council to help hedgehogs cross between housing estates safely",
+            "A charity that rescues injured hedgehogs and releases them back into gardens across Britain",
             "A network of holes cut in garden fences so hedgehogs can travel between gardens",
-            "A path through the countryside where hedgehogs live",
-            "A tunnel under a busy road"
+            "A path through the countryside that hedgehogs follow each night to find food and shelter",
+            "A tunnel built underneath a busy road so that hedgehogs can cross without being hit"
           ],
           correct: 2,
           explanation: "The passage explains that the 'Hedgehog Highway' campaign encourages homeowners to 'cut small holes (about 13cm square) in the bottom of their garden fences, creating corridors that allow hedgehogs to move freely between gardens'. ✓"
@@ -255,11 +261,11 @@ const englishData = {
           passage: `Britain's hedgehog population has fallen dramatically over the past twenty years. In the 1990s, there were an estimated thirty million hedgehogs roaming the countryside and suburban gardens. Today, that number has dropped to fewer than one million. Wildlife experts have called this decline "alarming" and warn that hedgehogs could disappear from Britain entirely within a generation.\n\nSo what has gone wrong? The biggest threat is habitat loss. Modern farming methods have removed the hedgerows and wild borders where hedgehogs once nested and found food. In towns, solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas. A hedgehog needs to roam up to two kilometres each night to find enough slugs, beetles, and caterpillars to survive.\n\nRoads are another major danger. Around 100,000 hedgehogs are killed on British roads every year. Because hedgehogs curl into a ball when frightened rather than running away, they are especially vulnerable to traffic.\n\nHowever, there is hope. Conservation groups across the country are working to reverse the decline. The "Hedgehog Highway" campaign encourages homeowners to cut small holes (about 13cm square) in the bottom of their garden fences, creating corridors that allow hedgehogs to move freely between gardens. Schools and community groups have been building hedgehog houses — simple wooden shelters filled with dry leaves — and placing them in quiet corners of parks and gardens.\n\nSimple actions can make a real difference. Checking long grass before mowing, avoiding slug pellets, and leaving a dish of fresh water in the garden can all help these beloved creatures survive. As one wildlife officer put it: "Hedgehogs don't need grand gestures — they just need us to share our gardens with them."`,
           question: "What is the overall purpose of this passage?",
           options: [
-            "To entertain readers with a funny story about hedgehogs",
-            "To describe what hedgehogs eat",
-            "To persuade people to stop driving cars",
+            "To entertain readers with a funny and light-hearted story about hedgehogs",
+            "To describe in detail what hedgehogs eat and how they find their food",
+            "To persuade people to stop driving cars so that fewer hedgehogs are killed",
             "To explain why hedgehogs are declining and what people can do to help",
-            "To compare hedgehogs with other British wildlife"
+            "To compare hedgehogs with other British wildlife and show which is rarest"
           ],
           correct: 3,
           explanation: "The passage has a clear informative and persuasive structure: it presents the problem (hedgehog decline), explains the causes (habitat loss, roads), and offers solutions (Hedgehog Highways, garden changes). Its purpose is to inform readers about the crisis and inspire action. ✓"
@@ -293,11 +299,11 @@ const englishData = {
           passage: `Britain's hedgehog population has fallen dramatically over the past twenty years. In the 1990s, there were an estimated thirty million hedgehogs roaming the countryside and suburban gardens. Today, that number has dropped to fewer than one million. Wildlife experts have called this decline "alarming" and warn that hedgehogs could disappear from Britain entirely within a generation.\n\nSo what has gone wrong? The biggest threat is habitat loss. Modern farming methods have removed the hedgerows and wild borders where hedgehogs once nested and found food. In towns, solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas. A hedgehog needs to roam up to two kilometres each night to find enough slugs, beetles, and caterpillars to survive.\n\nRoads are another major danger. Around 100,000 hedgehogs are killed on British roads every year. Because hedgehogs curl into a ball when frightened rather than running away, they are especially vulnerable to traffic.\n\nHowever, there is hope. Conservation groups across the country are working to reverse the decline. The "Hedgehog Highway" campaign encourages homeowners to cut small holes (about 13cm square) in the bottom of their garden fences, creating corridors that allow hedgehogs to move freely between gardens. Schools and community groups have been building hedgehog houses — simple wooden shelters filled with dry leaves — and placing them in quiet corners of parks and gardens.\n\nSimple actions can make a real difference. Checking long grass before mowing, avoiding slug pellets, and leaving a dish of fresh water in the garden can all help these beloved creatures survive. As one wildlife officer put it: "Hedgehogs don't need grand gestures — they just need us to share our gardens with them."`,
           question: "Why does the passage suggest that 'tidy gardens' are a problem for hedgehogs?",
           options: [
-            "Because tidy gardens use too much water",
-            "Because hedgehogs prefer to live in trees, not gardens",
-            "Because tidy gardens have no food for hedgehogs to eat",
+            "Because tidy gardens use too much water, leaving none for hedgehogs to drink from safely",
+            "Because hedgehogs prefer to live in woodland trees, not in neatly maintained garden spaces",
+            "Because tidy gardens with short lawns and bare borders have no food for hedgehogs to eat",
             "Because tidy gardens leave nowhere for hedgehogs to shelter or move between feeding areas",
-            "Because gardeners often chase hedgehogs away"
+            "Because gardeners who keep their gardens tidy often deliberately chase hedgehogs away"
           ],
           correct: 3,
           explanation: "The passage says that 'solid fences and tidy gardens leave nowhere for hedgehogs to shelter or travel between feeding areas.' A tidy garden — with neat lawns, no log piles, and no wild corners — does not provide the hiding places and sheltered spots that hedgehogs need. It is not about the food directly, but about having nowhere safe to rest and no way to get from one garden to the next. Great reading between the lines! ✓"
@@ -340,11 +346,11 @@ const englishData = {
           passage: `When the Romans arrived in Britain nearly two thousand years ago, they discovered something remarkable in the south-west of England: a natural hot spring, where steaming water bubbled up from deep underground at a temperature of forty-six degrees Celsius. The Romans, who loved bathing more than almost anything else, knew exactly what to do with it.\n\nThey built an enormous bathing complex around the spring, dedicating it to the goddess Sulis Minerva — a combination of the local Celtic goddess Sulis and the Roman goddess Minerva. The town that grew around it became known as Aquae Sulis, meaning "the waters of Sulis." Today, we call it Bath.\n\nThe bathing complex was far more than just a place to wash. It was the heart of social life. Romans would spend hours there each day, moving between rooms of different temperatures. They would start in the tepidarium (warm room), then move to the caldarium (hot room) heated by the natural spring water, and finally plunge into the frigidarium (cold pool) to close their pores. Between baths, they would exercise, eat snacks, gossip, and conduct business. Slaves would scrape oil and dirt from bathers' skin using curved metal tools called strigils.\n\nThe engineering was extraordinary. The Romans built a system of lead-lined channels to direct the hot water from the spring into the various pools. They constructed an enormous vaulted ceiling over the main bath — a feat of architecture that would not be matched in Britain for over a thousand years. At its peak, over a million litres of hot water flowed through the baths every single day.\n\nAfter the Romans left Britain around AD 410, the baths fell into ruin. The great roof collapsed, and the pools filled with mud and rubble. For centuries, the baths lay buried and forgotten beneath the streets of the growing medieval city.\n\nIt was not until the eighteenth century that the baths were rediscovered during building works. Archaeologists carefully excavated the site, uncovering the remarkably well-preserved pools, statues, and the sacred spring itself. Today, the Roman Baths are one of Britain's most visited heritage sites, attracting over a million visitors each year. Although you can no longer swim in the ancient pools, you can still see the green, steaming water and imagine what it must have been like to bathe there two thousand years ago.`,
           question: "What does the passage suggest about the role of the baths in Roman daily life?",
           options: [
-            "They were only used for washing",
+            "They were only used for washing and had no other purpose in daily life",
             "They were the centre of social, business, and leisure activity",
-            "They were reserved for wealthy Romans only",
-            "They were mainly used for religious worship",
-            "They were only open on special occasions"
+            "They were reserved for wealthy Romans only and closed to ordinary people",
+            "They were mainly used for religious worship and honouring the Roman gods",
+            "They were only open on special occasions such as festivals and holidays"
           ],
           correct: 1,
           explanation: "The passage says the baths were 'the heart of social life' where Romans would 'exercise, eat snacks, gossip, and conduct business'. This shows they were much more than just washing facilities. ✓"
@@ -359,11 +365,11 @@ const englishData = {
           passage: `When the Romans arrived in Britain nearly two thousand years ago, they discovered something remarkable in the south-west of England: a natural hot spring, where steaming water bubbled up from deep underground at a temperature of forty-six degrees Celsius. The Romans, who loved bathing more than almost anything else, knew exactly what to do with it.\n\nThey built an enormous bathing complex around the spring, dedicating it to the goddess Sulis Minerva — a combination of the local Celtic goddess Sulis and the Roman goddess Minerva. The town that grew around it became known as Aquae Sulis, meaning "the waters of Sulis." Today, we call it Bath.\n\nThe bathing complex was far more than just a place to wash. It was the heart of social life. Romans would spend hours there each day, moving between rooms of different temperatures. They would start in the tepidarium (warm room), then move to the caldarium (hot room) heated by the natural spring water, and finally plunge into the frigidarium (cold pool) to close their pores. Between baths, they would exercise, eat snacks, gossip, and conduct business. Slaves would scrape oil and dirt from bathers' skin using curved metal tools called strigils.\n\nThe engineering was extraordinary. The Romans built a system of lead-lined channels to direct the hot water from the spring into the various pools. They constructed an enormous vaulted ceiling over the main bath — a feat of architecture that would not be matched in Britain for over a thousand years. At its peak, over a million litres of hot water flowed through the baths every single day.\n\nAfter the Romans left Britain around AD 410, the baths fell into ruin. The great roof collapsed, and the pools filled with mud and rubble. For centuries, the baths lay buried and forgotten beneath the streets of the growing medieval city.\n\nIt was not until the eighteenth century that the baths were rediscovered during building works. Archaeologists carefully excavated the site, uncovering the remarkably well-preserved pools, statues, and the sacred spring itself. Today, the Roman Baths are one of Britain's most visited heritage sites, attracting over a million visitors each year. Although you can no longer swim in the ancient pools, you can still see the green, steaming water and imagine what it must have been like to bathe there two thousand years ago.`,
           question: "What is a 'strigil'?",
           options: [
-            "A type of Roman bath towel",
-            "A channel used to carry hot water",
+            "A type of thick Roman bath towel used for drying after bathing",
+            "A stone channel used to carry hot water between the different rooms",
             "A curved metal tool for scraping oil and dirt from skin",
-            "A type of Roman exercise equipment",
-            "A stone used to heat the water"
+            "A type of Roman exercise equipment used in the gymnasium area",
+            "A heated stone used to warm the water in the bathing pools"
           ],
           correct: 2,
           explanation: "The passage explains that 'slaves would scrape oil and dirt from bathers' skin using curved metal tools called strigils'. ✓"
@@ -378,11 +384,11 @@ const englishData = {
           passage: `When the Romans arrived in Britain nearly two thousand years ago, they discovered something remarkable in the south-west of England: a natural hot spring, where steaming water bubbled up from deep underground at a temperature of forty-six degrees Celsius. The Romans, who loved bathing more than almost anything else, knew exactly what to do with it.\n\nThey built an enormous bathing complex around the spring, dedicating it to the goddess Sulis Minerva — a combination of the local Celtic goddess Sulis and the Roman goddess Minerva. The town that grew around it became known as Aquae Sulis, meaning "the waters of Sulis." Today, we call it Bath.\n\nThe bathing complex was far more than just a place to wash. It was the heart of social life. Romans would spend hours there each day, moving between rooms of different temperatures. They would start in the tepidarium (warm room), then move to the caldarium (hot room) heated by the natural spring water, and finally plunge into the frigidarium (cold pool) to close their pores. Between baths, they would exercise, eat snacks, gossip, and conduct business. Slaves would scrape oil and dirt from bathers' skin using curved metal tools called strigils.\n\nThe engineering was extraordinary. The Romans built a system of lead-lined channels to direct the hot water from the spring into the various pools. They constructed an enormous vaulted ceiling over the main bath — a feat of architecture that would not be matched in Britain for over a thousand years. At its peak, over a million litres of hot water flowed through the baths every single day.\n\nAfter the Romans left Britain around AD 410, the baths fell into ruin. The great roof collapsed, and the pools filled with mud and rubble. For centuries, the baths lay buried and forgotten beneath the streets of the growing medieval city.\n\nIt was not until the eighteenth century that the baths were rediscovered during building works. Archaeologists carefully excavated the site, uncovering the remarkably well-preserved pools, statues, and the sacred spring itself. Today, the Roman Baths are one of Britain's most visited heritage sites, attracting over a million visitors each year. Although you can no longer swim in the ancient pools, you can still see the green, steaming water and imagine what it must have been like to bathe there two thousand years ago.`,
           question: "Why does the author describe the vaulted ceiling as 'a feat of architecture that would not be matched in Britain for over a thousand years'?",
           options: [
-            "To show that the ceiling was very decorative",
-            "To compare Roman buildings with modern ones",
-            "To explain why the ceiling eventually collapsed",
+            "To show that the ceiling was very decorative and impressed all who visited the baths",
+            "To compare Roman buildings with modern ones and suggest modern designs are better",
+            "To explain why the ceiling eventually collapsed and could not be easily repaired",
             "To emphasise how advanced Roman engineering was compared to what came after",
-            "To suggest the Romans wasted money on unnecessary building"
+            "To suggest the Romans wasted money on unnecessary building that served no purpose"
           ],
           correct: 3,
           explanation: "By saying no one in Britain matched this engineering for over a thousand years, the author emphasises how remarkably advanced the Romans were. After they left, the skills and knowledge to build such structures were lost for centuries. ✓"
@@ -416,11 +422,11 @@ const englishData = {
           passage: `When the Romans arrived in Britain nearly two thousand years ago, they discovered something remarkable in the south-west of England: a natural hot spring, where steaming water bubbled up from deep underground at a temperature of forty-six degrees Celsius. The Romans, who loved bathing more than almost anything else, knew exactly what to do with it.\n\nThey built an enormous bathing complex around the spring, dedicating it to the goddess Sulis Minerva — a combination of the local Celtic goddess Sulis and the Roman goddess Minerva. The town that grew around it became known as Aquae Sulis, meaning "the waters of Sulis." Today, we call it Bath.\n\nThe bathing complex was far more than just a place to wash. It was the heart of social life. Romans would spend hours there each day, moving between rooms of different temperatures. They would start in the tepidarium (warm room), then move to the caldarium (hot room) heated by the natural spring water, and finally plunge into the frigidarium (cold pool) to close their pores. Between baths, they would exercise, eat snacks, gossip, and conduct business. Slaves would scrape oil and dirt from bathers' skin using curved metal tools called strigils.\n\nThe engineering was extraordinary. The Romans built a system of lead-lined channels to direct the hot water from the spring into the various pools. They constructed an enormous vaulted ceiling over the main bath — a feat of architecture that would not be matched in Britain for over a thousand years. At its peak, over a million litres of hot water flowed through the baths every single day.\n\nAfter the Romans left Britain around AD 410, the baths fell into ruin. The great roof collapsed, and the pools filled with mud and rubble. For centuries, the baths lay buried and forgotten beneath the streets of the growing medieval city.\n\nIt was not until the eighteenth century that the baths were rediscovered during building works. Archaeologists carefully excavated the site, uncovering the remarkably well-preserved pools, statues, and the sacred spring itself. Today, the Roman Baths are one of Britain's most visited heritage sites, attracting over a million visitors each year. Although you can no longer swim in the ancient pools, you can still see the green, steaming water and imagine what it must have been like to bathe there two thousand years ago.`,
           question: "How is the passage organised?",
           options: [
-            "Chronologically — from the Romans' arrival, through the baths' heyday, decline, and rediscovery",
-            "By comparing different Roman baths across Britain",
-            "By listing arguments for and against visiting the baths",
-            "By describing one visitor's experience at the baths",
-            "Alphabetically by topic"
+            "Chronologically — from the Romans’ arrival, through the baths’ heyday, decline, and rediscovery",
+            "By comparing different Roman baths built across various towns and cities in Britain",
+            "By listing arguments for and against visiting the baths as a modern tourist attraction",
+            "By describing one particular visitor’s personal experience at the baths step by step",
+            "Alphabetically by topic, moving through each aspect of the baths in A to Z order"
           ],
           correct: 0,
           explanation: "The passage follows a clear timeline: the Romans arrive and build the baths, we learn what they were like at their peak, then the Romans leave and the baths fall to ruin, and finally they are rediscovered in the 18th century. This is chronological organisation. ✓"
@@ -463,11 +469,11 @@ const englishData = {
           passage: `The morning had started perfectly. Blue sky, gentle breeze, the sea as flat as a mirror. Kai, Isla, and their instructor, Dave, had set out from Poole Harbour at nine o'clock in the little sailing dinghy, and by ten they were tacking smoothly across Studland Bay with the white cliffs of Old Harry Rocks gleaming in the distance.\n\n"You're natural sailors, both of you," Dave said, adjusting his sunglasses. "We'll head over towards the Purbeck coast and have lunch at Chapman's Pool."\n\nKai grinned at his sister. This was so much better than another day stuck at home during the summer holidays. The water was clear enough to see the sandy bottom, and a pod of dolphins had surfaced nearby, their curved backs glistening.\n\nBut by midday, everything had changed. The breeze stiffened. The sky in the west turned the colour of a bruise — dark purple with edges of sickly yellow. Dave's expression shifted from relaxed to alert in an instant.\n\n"Right," he said, his voice calm but firm. "Change of plan. We're heading straight back to the harbour. Kai, I need you on the jib sheet. Isla, take the tiller and keep us pointing north-east. Do exactly as I say, when I say it."\n\nThe first gust hit them like a slap. The dinghy heeled sharply, and cold spray exploded over the side. Isla gripped the tiller with white knuckles, her heart hammering against her ribs. Kai hauled on the rope until his palms burned, fighting to keep the jib under control.\n\n"Ease out! Ease out!" Dave shouted over the rising wind. "Don't fight it — work with it!"\n\nWaves that had been gentle ripples were now steep grey walls, each one lifting the dinghy's bow before dropping it with a stomach-lurching crash. Rain arrived in horizontal sheets, stinging their faces and making it almost impossible to see. Thunder grumbled somewhere behind them, getting closer.\n\nFor forty minutes they battled. Kai's arms screamed with exhaustion. Isla's teeth chattered from the cold, but she never let go of the tiller, adjusting their course with tiny, precise movements exactly as Dave directed. They worked as a team, each trusting the others completely.\n\nThen, through the rain, Kai spotted the harbour wall. "There!" he croaked. "I can see it!"\n\nDave guided them through the narrow entrance, and suddenly the water was calm. They tied up at the pontoon with trembling hands. For a long moment, nobody spoke. Then Isla looked at her brother and started laughing — the kind of breathless, relief-soaked laughter that comes after genuine fear.\n\n"Same time tomorrow?" she said.`,
           question: "What does the simile 'The sky turned the colour of a bruise' suggest?",
           options: [
-            "The sky was bright and cheerful",
-            "The sky had beautiful sunset colours",
-            "The sky was blue like the sea",
+            "The sky was bright, cheerful, and full of warm light",
+            "The sky had beautiful golden and pink sunset colours",
+            "The sky was a clear bright blue, like a calm sea",
             "The sky looked dark, threatening, and unnatural",
-            "The sky was completely black"
+            "The sky was completely black and impossible to see"
           ],
           correct: 3,
           explanation: "A bruise is dark purple/yellow and associated with injury and pain. Comparing the sky to a bruise creates an image of something threatening and unpleasant, warning of the dangerous storm to come. ✓"
@@ -482,10 +488,10 @@ const englishData = {
           passage: `The morning had started perfectly. Blue sky, gentle breeze, the sea as flat as a mirror. Kai, Isla, and their instructor, Dave, had set out from Poole Harbour at nine o'clock in the little sailing dinghy, and by ten they were tacking smoothly across Studland Bay with the white cliffs of Old Harry Rocks gleaming in the distance.\n\n"You're natural sailors, both of you," Dave said, adjusting his sunglasses. "We'll head over towards the Purbeck coast and have lunch at Chapman's Pool."\n\nKai grinned at his sister. This was so much better than another day stuck at home during the summer holidays. The water was clear enough to see the sandy bottom, and a pod of dolphins had surfaced nearby, their curved backs glistening.\n\nBut by midday, everything had changed. The breeze stiffened. The sky in the west turned the colour of a bruise — dark purple with edges of sickly yellow. Dave's expression shifted from relaxed to alert in an instant.\n\n"Right," he said, his voice calm but firm. "Change of plan. We're heading straight back to the harbour. Kai, I need you on the jib sheet. Isla, take the tiller and keep us pointing north-east. Do exactly as I say, when I say it."\n\nThe first gust hit them like a slap. The dinghy heeled sharply, and cold spray exploded over the side. Isla gripped the tiller with white knuckles, her heart hammering against her ribs. Kai hauled on the rope until his palms burned, fighting to keep the jib under control.\n\n"Ease out! Ease out!" Dave shouted over the rising wind. "Don't fight it — work with it!"\n\nWaves that had been gentle ripples were now steep grey walls, each one lifting the dinghy's bow before dropping it with a stomach-lurching crash. Rain arrived in horizontal sheets, stinging their faces and making it almost impossible to see. Thunder grumbled somewhere behind them, getting closer.\n\nFor forty minutes they battled. Kai's arms screamed with exhaustion. Isla's teeth chattered from the cold, but she never let go of the tiller, adjusting their course with tiny, precise movements exactly as Dave directed. They worked as a team, each trusting the others completely.\n\nThen, through the rain, Kai spotted the harbour wall. "There!" he croaked. "I can see it!"\n\nDave guided them through the narrow entrance, and suddenly the water was calm. They tied up at the pontoon with trembling hands. For a long moment, nobody spoke. Then Isla looked at her brother and started laughing — the kind of breathless, relief-soaked laughter that comes after genuine fear.\n\n"Same time tomorrow?" she said.`,
           question: "How does the author contrast the beginning and middle of the passage?",
           options: [
-            "By using different characters in each section",
-            "By changing the setting from sea to land",
-            "By switching from Kai's viewpoint to Isla's",
-            "By moving from dialogue to description",
+            "By using completely different characters in the beginning and middle sections",
+            "By changing the setting from the open sea to the sheltered harbour on land",
+            "By switching from Kai’s viewpoint to Isla’s viewpoint halfway through",
+            "By moving from passages of dialogue to long sections of pure description",
             "By changing from calm, beautiful imagery to violent, threatening imagery"
           ],
           correct: 4,
@@ -520,11 +526,11 @@ const englishData = {
           passage: `The morning had started perfectly. Blue sky, gentle breeze, the sea as flat as a mirror. Kai, Isla, and their instructor, Dave, had set out from Poole Harbour at nine o'clock in the little sailing dinghy, and by ten they were tacking smoothly across Studland Bay with the white cliffs of Old Harry Rocks gleaming in the distance.\n\n"You're natural sailors, both of you," Dave said, adjusting his sunglasses. "We'll head over towards the Purbeck coast and have lunch at Chapman's Pool."\n\nKai grinned at his sister. This was so much better than another day stuck at home during the summer holidays. The water was clear enough to see the sandy bottom, and a pod of dolphins had surfaced nearby, their curved backs glistening.\n\nBut by midday, everything had changed. The breeze stiffened. The sky in the west turned the colour of a bruise — dark purple with edges of sickly yellow. Dave's expression shifted from relaxed to alert in an instant.\n\n"Right," he said, his voice calm but firm. "Change of plan. We're heading straight back to the harbour. Kai, I need you on the jib sheet. Isla, take the tiller and keep us pointing north-east. Do exactly as I say, when I say it."\n\nThe first gust hit them like a slap. The dinghy heeled sharply, and cold spray exploded over the side. Isla gripped the tiller with white knuckles, her heart hammering against her ribs. Kai hauled on the rope until his palms burned, fighting to keep the jib under control.\n\n"Ease out! Ease out!" Dave shouted over the rising wind. "Don't fight it — work with it!"\n\nWaves that had been gentle ripples were now steep grey walls, each one lifting the dinghy's bow before dropping it with a stomach-lurching crash. Rain arrived in horizontal sheets, stinging their faces and making it almost impossible to see. Thunder grumbled somewhere behind them, getting closer.\n\nFor forty minutes they battled. Kai's arms screamed with exhaustion. Isla's teeth chattered from the cold, but she never let go of the tiller, adjusting their course with tiny, precise movements exactly as Dave directed. They worked as a team, each trusting the others completely.\n\nThen, through the rain, Kai spotted the harbour wall. "There!" he croaked. "I can see it!"\n\nDave guided them through the narrow entrance, and suddenly the water was calm. They tied up at the pontoon with trembling hands. For a long moment, nobody spoke. Then Isla looked at her brother and started laughing — the kind of breathless, relief-soaked laughter that comes after genuine fear.\n\n"Same time tomorrow?" she said.`,
           question: "What is the main theme of this passage?",
           options: [
-            "The dangers of sailing in bad weather",
+            "The dangers of sailing in bad weather and the power of the sea",
             "How teamwork and trust can help people overcome frightening situations",
-            "Why children should always listen to adults",
-            "The beauty of the Dorset coastline",
-            "How to sail a dinghy properly"
+            "Why children should always listen to the instructions adults give them",
+            "The beauty of the Dorset coastline and its hidden coves and beaches",
+            "How to sail a dinghy properly and what equipment you need on board"
           ],
           correct: 1,
           explanation: "While the passage includes sailing and danger, its heart is about teamwork: Dave stays calm and gives clear instructions, Kai and Isla each do their jobs, and 'they worked as a team, each trusting the others completely'. The successful outcome comes from cooperation under pressure. ✓"
@@ -540,7 +546,13 @@ const englishData = {
           passageTitle: "The Spider's Web",
           passage: `The Spider's Web\n\nBetween the gateposts, strung with care,\nA palace hangs in morning air —\nEach thread a wire of silver spun,\nCaught glinting in the early sun.\n\nThe spider sits, a patient queen,\nUpon her throne of silken sheen,\nAnd waits for visitors to call\nAt her glistening banquet hall.\n\nThe dewdrops hang like chandeliers,\nA thousand tiny crystal spheres\nThat tremble when the breeze breathes low\nAnd set the web's whole world aglow.\n\nBut careless boots come stamping past,\nA sleeve brushes — the spell is cast\nAway. The palace, grand and frail,\nLies ruined on the garden rail.\n\nYet even as the damage dries,\nThe queen returns. She never cries.\nShe simply starts her work once more\nAnd builds a palace as before.`,
           question: "Where has the spider built her web?",
-          options: ["In a tree", "Inside a house", "Between two gateposts", "Across a window", "Under a bridge"],
+          options: [
+            "In the branches of a tree",
+            "Inside a dusty old house",
+            "Between two gateposts",
+            "Across a kitchen window",
+            "Under a narrow stone bridge"
+          ],
           correct: 2,
           explanation: "The first line tells us the web is 'Between the gateposts, strung with care'. ✓"
         },
@@ -553,7 +565,13 @@ const englishData = {
           passageTitle: "The Spider's Web",
           passage: `The Spider's Web\n\nBetween the gateposts, strung with care,\nA palace hangs in morning air —\nEach thread a wire of silver spun,\nCaught glinting in the early sun.\n\nThe spider sits, a patient queen,\nUpon her throne of silken sheen,\nAnd waits for visitors to call\nAt her glistening banquet hall.\n\nThe dewdrops hang like chandeliers,\nA thousand tiny crystal spheres\nThat tremble when the breeze breathes low\nAnd set the web's whole world aglow.\n\nBut careless boots come stamping past,\nA sleeve brushes — the spell is cast\nAway. The palace, grand and frail,\nLies ruined on the garden rail.\n\nYet even as the damage dries,\nThe queen returns. She never cries.\nShe simply starts her work once more\nAnd builds a palace as before.`,
           question: "What destroys the spider's web?",
-          options: ["The wind blows it away", "Rain washes it down", "A bird flies through it", "A person accidentally brushes against it", "The sun dries it out"],
+          options: [
+            "The strong wind blows the whole web cleanly away",
+            "Heavy rain washes every strand of it slowly down",
+            "A bird flies straight through it and tears it apart",
+            "A person accidentally brushes against it",
+            "The hot sun dries it out until the threads snap"
+          ],
           correct: 3,
           explanation: "The poem says 'careless boots come stamping past, / A sleeve brushes' — a person walking past carelessly brushes the web with their sleeve and destroys it. ✓"
         },
@@ -581,10 +599,10 @@ const englishData = {
           question: "What does 'The dewdrops hang like chandeliers' mean?",
           options: [
             "The dewdrops look like sparkling, hanging light fixtures",
-            "The dewdrops are hanging from the ceiling",
-            "The dewdrops are made of glass",
-            "The dewdrops are very heavy",
-            "The dewdrops are making a noise"
+            "The dewdrops are hanging from the ceiling of a grand room",
+            "The dewdrops are made of glass and reflect the morning sun",
+            "The dewdrops are very heavy and about to fall to the ground",
+            "The dewdrops are making a noise as they tap against the web"
           ],
           correct: 0,
           explanation: "A chandelier is a decorative hanging light with crystal drops that sparkle. The simile compares the dewdrops on the web to chandeliers because they hang from the threads and glitter in the sunlight. ✓"
@@ -599,11 +617,11 @@ const englishData = {
           passage: `The Spider's Web\n\nBetween the gateposts, strung with care,\nA palace hangs in morning air —\nEach thread a wire of silver spun,\nCaught glinting in the early sun.\n\nThe spider sits, a patient queen,\nUpon her throne of silken sheen,\nAnd waits for visitors to call\nAt her glistening banquet hall.\n\nThe dewdrops hang like chandeliers,\nA thousand tiny crystal spheres\nThat tremble when the breeze breathes low\nAnd set the web's whole world aglow.\n\nBut careless boots come stamping past,\nA sleeve brushes — the spell is cast\nAway. The palace, grand and frail,\nLies ruined on the garden rail.\n\nYet even as the damage dries,\nThe queen returns. She never cries.\nShe simply starts her work once more\nAnd builds a palace as before.`,
           question: "What qualities does the poet give the spider by calling her a 'patient queen'?",
           options: [
-            "She is lazy and does nothing all day",
+            "She is lazy, doing nothing productive throughout the day",
             "She is dignified, calm, and in control of her territory",
-            "She is frightening and dangerous",
-            "She is sad and lonely",
-            "She is busy and rushing around"
+            "She is frightening and dangerous to anything that comes near",
+            "She is sad, lonely, and waiting for company to arrive",
+            "She is busy and rushing around from one task to another"
           ],
           correct: 1,
           explanation: "By calling the spider a 'patient queen', the poet uses personification to give her human qualities of dignity, calmness, and authority. A queen rules her domain with composure — the spider similarly presides over her web. ✓"
@@ -740,7 +758,13 @@ const englishData = {
           passageTitle: "The Rock Pools of Cornwall",
           passage: "Every summer, thousands of families flock to the rugged coastline of Cornwall to explore one of nature's most fascinating habitats: the rock pool. These miniature worlds, carved into the granite by centuries of crashing waves, are teeming with life. At low tide, the retreating sea leaves behind pools of crystal-clear water that become temporary homes for an astonishing variety of creatures.\n\nThe best time to visit rock pools is during a spring tide, when the sea pulls back further than usual, revealing pools that are normally hidden beneath the waves. Armed with a bucket, a small net and a magnifying glass, young explorers can discover creatures they might never otherwise see. The key rule of rock pooling, however, is simple: look, enjoy, and always put everything back exactly where you found it.\n\nThe most common inhabitants of Cornish rock pools are limpets and periwinkles, which cling stubbornly to the rocks with a muscular foot so powerful that trying to prise them off would damage both the animal and the rock. Bright green sea lettuce grows in frilly clusters, providing shelter for tiny shrimps that dart away at the slightest shadow. Hermit crabs are a particular favourite with children — these comical creatures live inside borrowed shells, upgrading to larger ones as they grow. If you watch patiently, you might even spot one swapping its shell for a bigger model.\n\nMore adventurous explorers may discover beadlet anemones, which look like blobs of dark red jelly stuck to the rock when the tide is out. Once the water returns, they transform into beautiful flowers with rings of waving tentacles that catch tiny particles of food drifting past. Starfish, too, can sometimes be found in deeper pools, their five arms moving with surprising grace across the rocky floor.\n\nRock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.",
           question: "Why do the tiny shrimps 'dart away at the slightest shadow'?",
-          options: ["Because they are playing a game with each other","Because they mistake shadows for predators and are trying to escape danger","Because they do not like the light","Because they are trying to find food","Because they are swimming towards the open sea"],
+          options: [
+            "Because they are playing a chasing game with each other in the pool",
+            "Because they mistake shadows for predators and are trying to escape danger",
+            "Because they do not like the light and prefer to stay in darkness",
+            "Because they are trying to find food and follow tiny floating scraps",
+            "Because they are swimming towards the open sea and away from the shore"
+          ],
           correct: 1,
           explanation: "The passage does not directly explain why the shrimps dart away, but the reader can infer that darting away at the slightest shadow is a survival instinct. A shadow passing over a rock pool could be a bird or other predator, so the shrimps react quickly to avoid being eaten. This is a natural defensive behaviour. ✓"
         },
@@ -766,7 +790,13 @@ const englishData = {
           passageTitle: "The Rock Pools of Cornwall",
           passage: "Every summer, thousands of families flock to the rugged coastline of Cornwall to explore one of nature's most fascinating habitats: the rock pool. These miniature worlds, carved into the granite by centuries of crashing waves, are teeming with life. At low tide, the retreating sea leaves behind pools of crystal-clear water that become temporary homes for an astonishing variety of creatures.\n\nThe best time to visit rock pools is during a spring tide, when the sea pulls back further than usual, revealing pools that are normally hidden beneath the waves. Armed with a bucket, a small net and a magnifying glass, young explorers can discover creatures they might never otherwise see. The key rule of rock pooling, however, is simple: look, enjoy, and always put everything back exactly where you found it.\n\nThe most common inhabitants of Cornish rock pools are limpets and periwinkles, which cling stubbornly to the rocks with a muscular foot so powerful that trying to prise them off would damage both the animal and the rock. Bright green sea lettuce grows in frilly clusters, providing shelter for tiny shrimps that dart away at the slightest shadow. Hermit crabs are a particular favourite with children — these comical creatures live inside borrowed shells, upgrading to larger ones as they grow. If you watch patiently, you might even spot one swapping its shell for a bigger model.\n\nMore adventurous explorers may discover beadlet anemones, which look like blobs of dark red jelly stuck to the rock when the tide is out. Once the water returns, they transform into beautiful flowers with rings of waving tentacles that catch tiny particles of food drifting past. Starfish, too, can sometimes be found in deeper pools, their five arms moving with surprising grace across the rocky floor.\n\nRock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.",
           question: "Why does the author describe hermit crabs as 'comical creatures' that live in 'borrowed shells'?",
-          options: ["To warn readers that hermit crabs are dangerous","To suggest that hermit crabs are dishonest","To explain why hermit crabs are endangered","To make the reader feel entertained and curious about their unusual behaviour","To show that hermit crabs are not real crabs"],
+          options: [
+            "To warn readers that hermit crabs can be surprisingly dangerous and aggressive",
+            "To suggest that hermit crabs are dishonest because they steal other creatures’ shells",
+            "To explain why hermit crabs are endangered and in need of urgent protection",
+            "To make the reader feel entertained and curious about their unusual behaviour",
+            "To show that hermit crabs are not real crabs and belong to a different species"
+          ],
           correct: 3,
           explanation: "The author uses the words 'comical' and 'borrowed' to create a humorous, entertaining tone that makes the reader smile and want to learn more. Describing the shells as 'borrowed' gives the hermit crabs an almost human quality, as if they are borrowing clothes, which adds charm and encourages the reader's interest in these quirky creatures. ✓"
         },
@@ -779,7 +809,13 @@ const englishData = {
           passageTitle: "The Rock Pools of Cornwall",
           passage: "Every summer, thousands of families flock to the rugged coastline of Cornwall to explore one of nature's most fascinating habitats: the rock pool. These miniature worlds, carved into the granite by centuries of crashing waves, are teeming with life. At low tide, the retreating sea leaves behind pools of crystal-clear water that become temporary homes for an astonishing variety of creatures.\n\nThe best time to visit rock pools is during a spring tide, when the sea pulls back further than usual, revealing pools that are normally hidden beneath the waves. Armed with a bucket, a small net and a magnifying glass, young explorers can discover creatures they might never otherwise see. The key rule of rock pooling, however, is simple: look, enjoy, and always put everything back exactly where you found it.\n\nThe most common inhabitants of Cornish rock pools are limpets and periwinkles, which cling stubbornly to the rocks with a muscular foot so powerful that trying to prise them off would damage both the animal and the rock. Bright green sea lettuce grows in frilly clusters, providing shelter for tiny shrimps that dart away at the slightest shadow. Hermit crabs are a particular favourite with children — these comical creatures live inside borrowed shells, upgrading to larger ones as they grow. If you watch patiently, you might even spot one swapping its shell for a bigger model.\n\nMore adventurous explorers may discover beadlet anemones, which look like blobs of dark red jelly stuck to the rock when the tide is out. Once the water returns, they transform into beautiful flowers with rings of waving tentacles that catch tiny particles of food drifting past. Starfish, too, can sometimes be found in deeper pools, their five arms moving with surprising grace across the rocky floor.\n\nRock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.",
           question: "The author calls rock pools 'miniature worlds' in the opening paragraph. What effect does this metaphor have?",
-          options: ["It suggests that rock pools are too small to be interesting","It makes the reader think of outer space","It implies that only tiny people could live there","It shows that rock pools are exactly like the wider ocean","It creates a sense of wonder by suggesting each pool is a complete, self-contained environment to explore"],
+          options: [
+            "It suggests that rock pools are far too small to be interesting or worth exploring on a visit to the coast",
+            "It makes the reader think of outer space, as though the pools are tiny planets floating in the universe",
+            "It implies that only tiny people could live there, making the reader imagine a magical fairy-tale setting",
+            "It shows that rock pools are exactly like the wider ocean and contain all of the same species of animals",
+            "It creates a sense of wonder by suggesting each pool is a complete, self-contained environment to explore"
+          ],
           correct: 4,
           explanation: "By calling rock pools 'miniature worlds,' the author uses a metaphor that suggests each pool is like a tiny, complete universe full of life and activity. This creates a sense of wonder and adventure, making the reader feel as though peering into a rock pool is like discovering a hidden world. It elevates something small into something exciting and worth exploring. ✓"
         },
@@ -818,7 +854,13 @@ const englishData = {
           passageTitle: "How Bees Make Honey",
           passage: "Deep inside a buzzing hive, tens of thousands of honeybees work together in one of nature's most extraordinary teams. A single hive can contain up to sixty thousand bees, and every one of them has a specific job to do. From the moment a worker bee hatches from its cell, its life is a carefully organised sequence of duties that changes as it grows older.\n\nIn the first few days of its life, a young worker bee acts as a cleaner, tidying out the cells where new eggs will be laid. After about a week, it becomes a nurse bee, feeding the growing larvae with a mixture of pollen and honey. By the time it is two weeks old, it has taken on the role of a builder, producing tiny flakes of wax from glands on its abdomen and using them to construct the perfect hexagonal cells of the honeycomb. Only when a worker bee reaches around three weeks of age does it finally graduate to the most famous role of all: forager.\n\nForager bees leave the hive at dawn and may fly up to five kilometres in search of nectar, the sweet liquid produced by flowers. When a forager finds a good patch of blossoms, it uses its long, straw-like tongue called a proboscis to suck up the nectar, storing it in a special honey stomach separate from its own digestive system. A single forager must visit between one hundred and fifteen hundred flowers to fill its honey stomach just once.\n\nBack at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.\n\nBeyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.",
           question: "Why do you think the author describes the forager role as the one a worker bee 'finally graduates to'?",
-          options: ["Because foragers earn more honey than other bees","Because it is the easiest job in the hive","Because it suggests foraging is the most important and experienced role, earned after completing simpler tasks","Because forager bees go to a special school","Because only the queen bee decides who becomes a forager"],
+          options: [
+            "Because foragers collect more honey than any of the other bees working inside the hive and are rewarded for it",
+            "Because it is the easiest and most relaxing job in the hive, requiring very little effort from the worker bee",
+            "Because it suggests foraging is the most important and experienced role, earned after completing simpler tasks",
+            "Because forager bees must attend a special training school run by the queen bee before they are allowed to fly",
+            "Because only the queen bee decides who becomes a forager and she chooses based on each worker’s size and strength"
+          ],
           correct: 2,
           explanation: "The word 'graduate' is usually associated with completing a course of study and earning a higher position. By using this word, the author implies that the forager role is the highest-level job in the hive, one that requires experience. The passage shows that a bee must first work as a cleaner, nurse and builder before it is old enough and experienced enough to become a forager. ✓"
         },
@@ -831,7 +873,13 @@ const englishData = {
           passageTitle: "How Bees Make Honey",
           passage: "Deep inside a buzzing hive, tens of thousands of honeybees work together in one of nature's most extraordinary teams. A single hive can contain up to sixty thousand bees, and every one of them has a specific job to do. From the moment a worker bee hatches from its cell, its life is a carefully organised sequence of duties that changes as it grows older.\n\nIn the first few days of its life, a young worker bee acts as a cleaner, tidying out the cells where new eggs will be laid. After about a week, it becomes a nurse bee, feeding the growing larvae with a mixture of pollen and honey. By the time it is two weeks old, it has taken on the role of a builder, producing tiny flakes of wax from glands on its abdomen and using them to construct the perfect hexagonal cells of the honeycomb. Only when a worker bee reaches around three weeks of age does it finally graduate to the most famous role of all: forager.\n\nForager bees leave the hive at dawn and may fly up to five kilometres in search of nectar, the sweet liquid produced by flowers. When a forager finds a good patch of blossoms, it uses its long, straw-like tongue called a proboscis to suck up the nectar, storing it in a special honey stomach separate from its own digestive system. A single forager must visit between one hundred and fifteen hundred flowers to fill its honey stomach just once.\n\nBack at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.\n\nBeyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.",
           question: "What does the word 'vigorously' mean in the phrase 'fan it vigorously with their wings'?",
-          options: ["Gently and carefully","Slowly and lazily","In a circular motion","With great energy and force","One at a time"],
+          options: [
+            "Gently and carefully, with slow movements",
+            "Slowly and lazily, without much effort",
+            "In a circular motion, going round and round",
+            "With great energy and force",
+            "One at a time, taking turns in a line"
+          ],
           correct: 3,
           explanation: "In this context, 'vigorously' means with great energy and force. The bees need to fan the nectar hard enough to evaporate the water from it, so they must beat their wings with considerable strength and speed. The word emphasises how much effort is involved in this stage of honey-making. ✓"
         },
@@ -844,7 +892,13 @@ const englishData = {
           passageTitle: "How Bees Make Honey",
           passage: "Deep inside a buzzing hive, tens of thousands of honeybees work together in one of nature's most extraordinary teams. A single hive can contain up to sixty thousand bees, and every one of them has a specific job to do. From the moment a worker bee hatches from its cell, its life is a carefully organised sequence of duties that changes as it grows older.\n\nIn the first few days of its life, a young worker bee acts as a cleaner, tidying out the cells where new eggs will be laid. After about a week, it becomes a nurse bee, feeding the growing larvae with a mixture of pollen and honey. By the time it is two weeks old, it has taken on the role of a builder, producing tiny flakes of wax from glands on its abdomen and using them to construct the perfect hexagonal cells of the honeycomb. Only when a worker bee reaches around three weeks of age does it finally graduate to the most famous role of all: forager.\n\nForager bees leave the hive at dawn and may fly up to five kilometres in search of nectar, the sweet liquid produced by flowers. When a forager finds a good patch of blossoms, it uses its long, straw-like tongue called a proboscis to suck up the nectar, storing it in a special honey stomach separate from its own digestive system. A single forager must visit between one hundred and fifteen hundred flowers to fill its honey stomach just once.\n\nBack at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.\n\nBeyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.",
           question: "Why does the author end the passage by discussing pollination rather than just honey production?",
-          options: ["Because the author forgot to mention it earlier","To show that honey is not very important","To compare bees with butterflies","To explain how to grow flowers in a garden","To persuade the reader that bees matter to all of us, not just honey lovers"],
+          options: [
+            "Because the author forgot to mention pollination earlier in the passage",
+            "To show that honey is not very important compared with other bee products",
+            "To compare bees with butterflies and show which is the better pollinator",
+            "To explain how to grow flowers in a garden by attracting more wild bees",
+            "To persuade the reader that bees matter to all of us, not just honey lovers"
+          ],
           correct: 4,
           explanation: "The author deliberately ends with pollination to broaden the reader's understanding of why bees are important. While honey production is interesting, pollination affects everyone because one third of our food depends on it. By ending on this point, the author ensures the reader understands that protecting bees is not just about honey — it is about our entire food supply. ✓"
         },
@@ -857,7 +911,13 @@ const englishData = {
           passageTitle: "How Bees Make Honey",
           passage: "Deep inside a buzzing hive, tens of thousands of honeybees work together in one of nature's most extraordinary teams. A single hive can contain up to sixty thousand bees, and every one of them has a specific job to do. From the moment a worker bee hatches from its cell, its life is a carefully organised sequence of duties that changes as it grows older.\n\nIn the first few days of its life, a young worker bee acts as a cleaner, tidying out the cells where new eggs will be laid. After about a week, it becomes a nurse bee, feeding the growing larvae with a mixture of pollen and honey. By the time it is two weeks old, it has taken on the role of a builder, producing tiny flakes of wax from glands on its abdomen and using them to construct the perfect hexagonal cells of the honeycomb. Only when a worker bee reaches around three weeks of age does it finally graduate to the most famous role of all: forager.\n\nForager bees leave the hive at dawn and may fly up to five kilometres in search of nectar, the sweet liquid produced by flowers. When a forager finds a good patch of blossoms, it uses its long, straw-like tongue called a proboscis to suck up the nectar, storing it in a special honey stomach separate from its own digestive system. A single forager must visit between one hundred and fifteen hundred flowers to fill its honey stomach just once.\n\nBack at the hive, the forager passes the nectar to a house bee through a process called trophallaxis, which is essentially mouth-to-mouth transfer. The house bee chews the nectar for about half an hour, mixing it with enzymes that begin breaking down the complex sugars. The processed nectar is then spread into honeycomb cells, where other bees fan it vigorously with their wings to evaporate the water. When the honey reaches the right thickness, the bees seal the cell with a wax cap, preserving it for the winter months ahead.\n\nBeyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.",
           question: "The author uses human job titles like 'cleaner', 'nurse' and 'builder' to describe the bees' roles. What effect does this have on the reader?",
-          options: ["It helps the reader understand and relate to the bees' roles by comparing them to familiar human jobs","It confuses the reader about what bees really do","It makes the reader think bees are actually human","It shows that humans copied their jobs from bees","It proves that bees are more intelligent than humans"],
+          options: [
+            "It helps the reader understand and relate to the bees’ roles by comparing them to familiar human jobs",
+            "It confuses the reader about what bees really do and makes the passage harder to follow clearly",
+            "It makes the reader think bees are actually human and behave in exactly the same way as people",
+            "It shows that humans copied their jobs from bees and that bee society came first in history",
+            "It proves that bees are far more intelligent than humans and can carry out the same complex tasks"
+          ],
           correct: 0,
           explanation: "By giving the bees human job titles, the author uses personification to make the bees' behaviour easier to understand. Readers can immediately picture what a 'cleaner' or 'nurse' does because these are familiar roles. This technique also creates a sense of admiration for the bees' organisation, as it suggests their hive operates like a well-run workplace where everyone has an important contribution to make. ✓"
         },
@@ -896,7 +956,13 @@ const englishData = {
           passageTitle: "The Great Oak",
           passage: "I have stood on this hilltop for four hundred years. My roots reach deep into the chalky soil of the Chiltern Hills, spreading outwards like underground rivers, anchoring me against the fiercest storms that sweep across the valley below. I am the Great Oak of Ashworth, and I have seen more than any human being who has ever lived.\n\nI remember when the village was nothing more than a handful of thatched cottages clustered around a muddy track. In those early days, a blacksmith worked beneath my branches, the ring of his hammer echoing across the fields as he shaped horseshoes on his anvil. Children climbed my lower limbs, shrieking with laughter, while their mothers gathered my acorns to feed the pigs. I was young then, barely a sapling by oak standards, and my trunk was slender enough for a child to wrap their arms around.\n\nCenturies passed, and I grew. My trunk thickened until it took five adults standing in a ring with outstretched arms to encircle it. My canopy spread wide, casting a pool of shade that covered half the village green. Families picnicked beneath me on summer afternoons. Lovers carved their initials into my bark — those letters are still there, stretched and distorted now, swallowed slowly into my expanding flesh like secrets I have promised to keep.\n\nI have weathered every storm, though not without scars. The great gale of 1987 tore away my largest branch, leaving a wound that took twenty years to heal. Lightning struck my crown one August night, splitting a limb clean in two, yet I survived. My heartwood is hollow now in places — home to nesting tawny owls, roosting bats and the occasional family of squirrels who store their hazelnuts in my crevices as if I were their personal larder.\n\nNow, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: \"The Ashworth Oak — estimated age 400 years. Protected.\" Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.",
           question: "What can we infer about how the village has changed over the four hundred years?",
-          options: ["It has stayed exactly the same since the oak was planted","It has been destroyed and rebuilt many times","It has become smaller and less populated","It has grown from a tiny settlement into a larger, modern community","It has moved to a different location"],
+          options: [
+            "It has stayed exactly the same since the oak was planted four hundred years ago",
+            "It has been destroyed by storms and rebuilt from scratch many times over the years",
+            "It has become much smaller and less populated as people have gradually moved away",
+            "It has grown from a tiny settlement into a larger, modern community",
+            "It has moved to a completely different location on the other side of the valley"
+          ],
           correct: 3,
           explanation: "The passage does not directly say the village has grown, but we can infer this from several clues. It began as 'a handful of thatched cottages clustered around a muddy track,' but by the present day it has a village green, a council that places preservation orders, and schoolchildren who visit on nature walks. The mention of 'this modern age' also suggests significant development over the centuries. ✓"
         },
@@ -922,7 +988,13 @@ const englishData = {
           passageTitle: "The Great Oak",
           passage: "I have stood on this hilltop for four hundred years. My roots reach deep into the chalky soil of the Chiltern Hills, spreading outwards like underground rivers, anchoring me against the fiercest storms that sweep across the valley below. I am the Great Oak of Ashworth, and I have seen more than any human being who has ever lived.\n\nI remember when the village was nothing more than a handful of thatched cottages clustered around a muddy track. In those early days, a blacksmith worked beneath my branches, the ring of his hammer echoing across the fields as he shaped horseshoes on his anvil. Children climbed my lower limbs, shrieking with laughter, while their mothers gathered my acorns to feed the pigs. I was young then, barely a sapling by oak standards, and my trunk was slender enough for a child to wrap their arms around.\n\nCenturies passed, and I grew. My trunk thickened until it took five adults standing in a ring with outstretched arms to encircle it. My canopy spread wide, casting a pool of shade that covered half the village green. Families picnicked beneath me on summer afternoons. Lovers carved their initials into my bark — those letters are still there, stretched and distorted now, swallowed slowly into my expanding flesh like secrets I have promised to keep.\n\nI have weathered every storm, though not without scars. The great gale of 1987 tore away my largest branch, leaving a wound that took twenty years to heal. Lightning struck my crown one August night, splitting a limb clean in two, yet I survived. My heartwood is hollow now in places — home to nesting tawny owls, roosting bats and the occasional family of squirrels who store their hazelnuts in my crevices as if I were their personal larder.\n\nNow, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: \"The Ashworth Oak — estimated age 400 years. Protected.\" Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.",
           question: "Why did the author choose to tell this story from the tree's point of view rather than from a human narrator?",
-          options: ["To give the reader a unique perspective on the passage of time and create an emotional connection with nature","To show that the tree is angry about being damaged by storms","Because trees can actually talk and share their memories","Because it was easier to write than using a human character","To teach the reader scientific facts about how trees grow"],
+          options: [
+            "To give the reader a unique perspective on the passage of time and create an emotional connection with nature",
+            "To show that the tree is angry about being damaged by storms and wants humans to protect it from further harm",
+            "Because trees can actually talk and share their memories, so this point of view is realistic and accurate",
+            "Because it was easier to write than using a human character who would need a detailed personal background",
+            "To teach the reader detailed scientific facts about how trees grow, absorb water, and produce their own food"
+          ],
           correct: 0,
           explanation: "By telling the story from the tree's perspective, the author allows the reader to experience four hundred years of history through a single, continuous voice. This first-person narration creates an emotional bond between the reader and the tree, making us care about its survival. It also highlights how nature witnesses and outlasts human generations, giving the passage a reflective, almost magical quality. ✓"
         },
@@ -935,7 +1007,13 @@ const englishData = {
           passageTitle: "The Great Oak",
           passage: "I have stood on this hilltop for four hundred years. My roots reach deep into the chalky soil of the Chiltern Hills, spreading outwards like underground rivers, anchoring me against the fiercest storms that sweep across the valley below. I am the Great Oak of Ashworth, and I have seen more than any human being who has ever lived.\n\nI remember when the village was nothing more than a handful of thatched cottages clustered around a muddy track. In those early days, a blacksmith worked beneath my branches, the ring of his hammer echoing across the fields as he shaped horseshoes on his anvil. Children climbed my lower limbs, shrieking with laughter, while their mothers gathered my acorns to feed the pigs. I was young then, barely a sapling by oak standards, and my trunk was slender enough for a child to wrap their arms around.\n\nCenturies passed, and I grew. My trunk thickened until it took five adults standing in a ring with outstretched arms to encircle it. My canopy spread wide, casting a pool of shade that covered half the village green. Families picnicked beneath me on summer afternoons. Lovers carved their initials into my bark — those letters are still there, stretched and distorted now, swallowed slowly into my expanding flesh like secrets I have promised to keep.\n\nI have weathered every storm, though not without scars. The great gale of 1987 tore away my largest branch, leaving a wound that took twenty years to heal. Lightning struck my crown one August night, splitting a limb clean in two, yet I survived. My heartwood is hollow now in places — home to nesting tawny owls, roosting bats and the occasional family of squirrels who store their hazelnuts in my crevices as if I were their personal larder.\n\nNow, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: \"The Ashworth Oak — estimated age 400 years. Protected.\" Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.",
           question: "The author describes the tree as 'a living library, holding the memory of this place in every ring of my ancient trunk.' What literary device is being used and what does it suggest?",
-          options: ["Alliteration — it makes the sentence sound musical","A metaphor — it suggests the tree holds knowledge and history, just as a library holds books","A simile — it compares the tree to a building","Onomatopoeia — it imitates the sound of turning pages","Repetition — it repeats the word 'library' for emphasis"],
+          options: [
+            "Alliteration — it makes the sentence sound musical and enjoyable when it is read aloud to the class",
+            "A metaphor — it suggests the tree holds knowledge and history, just as a library holds books",
+            "A simile — it directly compares the tree to a building by using the connecting word ‘like’ or ‘as’",
+            "Onomatopoeia — it imitates the sound of turning pages, linking the tree to the idea of reading books",
+            "Repetition — it repeats the word ‘library’ for emphasis, drawing the reader’s attention back to it"
+          ],
           correct: 1,
           explanation: "The author uses a metaphor, comparing the tree directly to a 'living library.' Just as a library stores books full of information and stories, the tree's growth rings store centuries of history. Each ring represents one year of the tree's life — one more chapter in its story. This metaphor suggests the tree is valuable not just as a living thing, but as a keeper of the village's entire past. ✓"
         },
@@ -974,7 +1052,13 @@ const englishData = {
           passageTitle: "Storm Chasers",
           passage: "On the morning of 16th October 1987, BBC weather forecaster Michael Fish famously reassured viewers that there was no hurricane on its way. Just hours later, the most devastating storm in three hundred years slammed into southern England. Winds of over 160 kilometres per hour uprooted an estimated fifteen million trees, flattened buildings and left millions of homes without electricity. The Great Storm, as it became known, changed the way Britain thinks about weather forecasting forever.\n\nToday, meteorologists — the scientists who study weather — use an extraordinary array of technology to predict storms before they arrive. Weather satellites orbiting hundreds of kilometres above the Earth take photographs of cloud formations every few minutes, allowing forecasters to track the movement and growth of storm systems in real time. Radar stations scattered across the country send out pulses of energy that bounce off raindrops and hailstones, revealing exactly where precipitation is falling and how heavily.\n\nPerhaps the most important tool in a modern meteorologist's arsenal is the supercomputer. The Met Office, which is based in Exeter, operates one of the most powerful supercomputers in the world. It can perform over sixteen thousand trillion calculations every second, processing data from weather stations, ocean buoys, aircraft and satellites to create detailed forecasts up to seven days ahead. Even so, predicting the weather remains one of the hardest scientific challenges on Earth, because the atmosphere is an incredibly complex system where tiny changes can have enormous consequences.\n\nBritain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.\n\nDespite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.",
           question: "Why do you think the 1987 storm 'changed the way Britain thinks about weather forecasting forever'?",
-          options: ["Because people stopped watching weather forecasts after that","Because it proved that Britain never gets bad weather","Because the storm was not actually very serious","Because Michael Fish was promoted after his correct prediction","Because the failure to predict such a destructive storm showed that forecasting needed to be dramatically improved"],
+          options: [
+            "Because people completely stopped watching weather forecasts after that embarrassing and public prediction failure",
+            "Because it proved that Britain hardly ever gets serious bad weather and so forecasting was seen as unnecessary",
+            "Because the storm was not actually very serious and the media greatly exaggerated the amount of damage caused",
+            "Because Michael Fish was promoted and praised by the BBC after his prediction turned out to be entirely correct",
+            "Because the failure to predict such a destructive storm showed that forecasting needed to be dramatically improved"
+          ],
           correct: 4,
           explanation: "The passage describes how Michael Fish reassured viewers there was no hurricane coming, yet hours later the worst storm in 300 years struck. This massive failure to predict a devastating event — fifteen million trees uprooted, buildings flattened, millions without power — would have shocked the public and motivated the government and meteorological services to invest heavily in better forecasting technology. The reader can infer that this embarrassing mistake drove major improvements. ✓"
         },
@@ -987,7 +1071,13 @@ const englishData = {
           passageTitle: "Storm Chasers",
           passage: "On the morning of 16th October 1987, BBC weather forecaster Michael Fish famously reassured viewers that there was no hurricane on its way. Just hours later, the most devastating storm in three hundred years slammed into southern England. Winds of over 160 kilometres per hour uprooted an estimated fifteen million trees, flattened buildings and left millions of homes without electricity. The Great Storm, as it became known, changed the way Britain thinks about weather forecasting forever.\n\nToday, meteorologists — the scientists who study weather — use an extraordinary array of technology to predict storms before they arrive. Weather satellites orbiting hundreds of kilometres above the Earth take photographs of cloud formations every few minutes, allowing forecasters to track the movement and growth of storm systems in real time. Radar stations scattered across the country send out pulses of energy that bounce off raindrops and hailstones, revealing exactly where precipitation is falling and how heavily.\n\nPerhaps the most important tool in a modern meteorologist's arsenal is the supercomputer. The Met Office, which is based in Exeter, operates one of the most powerful supercomputers in the world. It can perform over sixteen thousand trillion calculations every second, processing data from weather stations, ocean buoys, aircraft and satellites to create detailed forecasts up to seven days ahead. Even so, predicting the weather remains one of the hardest scientific challenges on Earth, because the atmosphere is an incredibly complex system where tiny changes can have enormous consequences.\n\nBritain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.\n\nDespite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.",
           question: "What does the word 'arsenal' mean in the phrase 'a modern meteorologist's arsenal'?",
-          options: ["A collection of weapons or tools available for use","A football stadium","A type of weather station","A university department","A storage cupboard"],
+          options: [
+            "A collection of weapons or tools available for use",
+            "A famous football stadium in north London",
+            "A type of weather station found on the coast",
+            "A university department that studies weather",
+            "A storage cupboard for meteorological equipment"
+          ],
           correct: 0,
           explanation: "In this context, 'arsenal' means a collection of tools or resources available for a particular purpose. Although 'arsenal' originally referred to a store of weapons, the author uses it here to describe the range of technological tools that meteorologists have at their disposal — satellites, radar and supercomputers. It suggests that forecasters are well-equipped to fight against the challenge of predicting weather. ✓"
         },
@@ -1000,7 +1090,13 @@ const englishData = {
           passageTitle: "Storm Chasers",
           passage: "On the morning of 16th October 1987, BBC weather forecaster Michael Fish famously reassured viewers that there was no hurricane on its way. Just hours later, the most devastating storm in three hundred years slammed into southern England. Winds of over 160 kilometres per hour uprooted an estimated fifteen million trees, flattened buildings and left millions of homes without electricity. The Great Storm, as it became known, changed the way Britain thinks about weather forecasting forever.\n\nToday, meteorologists — the scientists who study weather — use an extraordinary array of technology to predict storms before they arrive. Weather satellites orbiting hundreds of kilometres above the Earth take photographs of cloud formations every few minutes, allowing forecasters to track the movement and growth of storm systems in real time. Radar stations scattered across the country send out pulses of energy that bounce off raindrops and hailstones, revealing exactly where precipitation is falling and how heavily.\n\nPerhaps the most important tool in a modern meteorologist's arsenal is the supercomputer. The Met Office, which is based in Exeter, operates one of the most powerful supercomputers in the world. It can perform over sixteen thousand trillion calculations every second, processing data from weather stations, ocean buoys, aircraft and satellites to create detailed forecasts up to seven days ahead. Even so, predicting the weather remains one of the hardest scientific challenges on Earth, because the atmosphere is an incredibly complex system where tiny changes can have enormous consequences.\n\nBritain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.\n\nDespite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.",
           question: "Why does the author begin the passage with the story of Michael Fish and the 1987 storm?",
-          options: ["To make fun of Michael Fish for getting the forecast wrong","To grab the reader's attention with a dramatic, real-life event and set up the theme of how forecasting has improved","To show that weather forecasting has always been perfect","To explain why people should not watch the news","To argue that storms are not dangerous"],
+          options: [
+            "To make fun of Michael Fish for getting the forecast wrong and embarrassing himself on national television",
+            "To grab the reader’s attention with a dramatic, real-life event and set up the theme of how forecasting has improved",
+            "To show that weather forecasting has always been perfectly accurate and never makes any significant mistakes",
+            "To explain why people should not watch the news because the information given is often inaccurate and misleading",
+            "To argue that storms are not dangerous and that people worry too much about extreme weather events in Britain"
+          ],
           correct: 1,
           explanation: "The author opens with the dramatic story of Michael Fish's incorrect forecast and the devastating storm that followed because it immediately grabs the reader's attention and creates a compelling hook. It also establishes the central theme of the passage: that weather forecasting has improved enormously since that failure. By starting with this famous mistake, the author creates a clear 'before and after' structure that makes the progress described later feel more impressive. ✓"
         },
@@ -1013,7 +1109,13 @@ const englishData = {
           passageTitle: "Storm Chasers",
           passage: "On the morning of 16th October 1987, BBC weather forecaster Michael Fish famously reassured viewers that there was no hurricane on its way. Just hours later, the most devastating storm in three hundred years slammed into southern England. Winds of over 160 kilometres per hour uprooted an estimated fifteen million trees, flattened buildings and left millions of homes without electricity. The Great Storm, as it became known, changed the way Britain thinks about weather forecasting forever.\n\nToday, meteorologists — the scientists who study weather — use an extraordinary array of technology to predict storms before they arrive. Weather satellites orbiting hundreds of kilometres above the Earth take photographs of cloud formations every few minutes, allowing forecasters to track the movement and growth of storm systems in real time. Radar stations scattered across the country send out pulses of energy that bounce off raindrops and hailstones, revealing exactly where precipitation is falling and how heavily.\n\nPerhaps the most important tool in a modern meteorologist's arsenal is the supercomputer. The Met Office, which is based in Exeter, operates one of the most powerful supercomputers in the world. It can perform over sixteen thousand trillion calculations every second, processing data from weather stations, ocean buoys, aircraft and satellites to create detailed forecasts up to seven days ahead. Even so, predicting the weather remains one of the hardest scientific challenges on Earth, because the atmosphere is an incredibly complex system where tiny changes can have enormous consequences.\n\nBritain's weather is particularly tricky to forecast because the country sits at the meeting point of several different air masses. Warm, moist air sweeping in from the Atlantic Ocean frequently collides with cold, dry air pushing down from the Arctic, creating the changeable conditions that give Britain its famously unpredictable weather. This is why a sunny morning can turn into a rainy afternoon with little warning, and why forecasters sometimes get it wrong.\n\nDespite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.",
           question: "The author writes that warm air 'collides' with cold air. How does this word choice help the reader understand British weather?",
-          options: ["It suggests the air masses gently blend together","It implies that air masses move very slowly","It creates a violent, forceful image that helps explain why the weather can change so suddenly and dramatically","It shows that British weather is always calm","It compares the weather to a car crash"],
+          options: [
+            "It suggests the air masses gently blend together without causing any noticeable change in the weather conditions",
+            "It implies that air masses move very slowly across Britain, taking several weeks to travel from coast to coast",
+            "It creates a violent, forceful image that helps explain why the weather can change so suddenly and dramatically",
+            "It shows that British weather is always calm and predictable, rarely producing any sudden or dramatic changes",
+            "It compares the weather to a car crash, suggesting that storms always cause damage to roads and vehicles"
+          ],
           correct: 2,
           explanation: "The word 'collides' is a powerful, forceful verb that creates an image of two opposing forces crashing into each other. This word choice helps the reader understand that when warm Atlantic air meets cold Arctic air, the result is not gentle or gradual — it is sudden and dramatic, which explains why British weather can change so quickly and unpredictably. The violent imagery mirrors the disruptive effect these collisions have on our weather. ✓"
         },
@@ -1052,7 +1154,13 @@ const englishData = {
           passageTitle: "The Roman Baths of Aquae Sulis",
           passage: "The city of Bath, in the south-west of England, is famous for its natural hot springs. Nearly two thousand years ago, the Romans discovered these bubbling, steaming waters and built one of the most impressive bathing complexes in all of Britain. They named the settlement Aquae Sulis, meaning \"the waters of Sulis,\" after a local goddess.\n\nThe Great Bath, as it is known today, was the centrepiece of the complex. It measured about twelve metres long and was lined with sheets of lead to keep the water from leaking away. The water, which rises from deep underground at a temperature of around forty-six degrees Celsius, would have felt wonderfully warm to the Romans, especially during the cold British winters they were not accustomed to.\n\nBathing was not simply about getting clean. For the Romans, a visit to the baths was a social occasion. Wealthy citizens would spend hours there, moving between rooms of different temperatures. They would begin in the tepidarium, a gently warm room, before progressing to the caldarium, which was intensely hot and filled with steam. Afterwards, they might plunge into the frigidarium, a bracingly cold pool designed to close the pores and invigorate the body.\n\nBetween baths, visitors would exercise, have their skin scraped clean with a curved metal tool called a strigil, or simply sit and gossip with friends. Merchants discussed business deals, politicians debated laws, and children splashed in the shallow pools while their parents relaxed nearby.\n\nThe Romans also built a grand temple next to the baths, dedicated to the goddess Sulis Minerva. Visitors would throw coins and small offerings into the sacred spring, asking the goddess for good health or protection. Archaeologists have found thousands of these offerings, along with carved stone heads and written curses scratched onto thin pieces of lead.\n\nWhen the Romans left Britain around 410 AD, the baths gradually fell into ruin. Over the centuries, the buildings crumbled and were buried beneath newer streets and houses. It was not until the eighteenth century that the baths were rediscovered, and today they are one of Britain's most visited historical sites.",
           question: "Why would the hot springs have been especially appealing to the Romans in Britain?",
-          options: ["Because the Romans came from a warmer climate and found British winters difficult","Because the Romans had never seen hot water before","Because the Romans needed to wash their togas","Because the springs were free to use","Because the Romans were afraid of cold water"],
+          options: [
+            "Because the Romans came from a warmer climate and found British winters difficult",
+            "Because the Romans had never seen hot water before and were amazed by the springs",
+            "Because the Romans needed somewhere warm to wash their togas and other clothing",
+            "Because the springs were completely free to use and did not require any payment",
+            "Because the Romans were afraid of cold water and refused to bathe in cool pools"
+          ],
           correct: 0,
           explanation: "The passage says the warm water 'would have felt wonderfully warm to the Romans, especially during the cold British winters they were not accustomed to.' This tells us they came from a warmer place (Italy) and were not used to the cold British climate. ✓"
         },
@@ -1091,7 +1199,13 @@ const englishData = {
           passageTitle: "The Roman Baths of Aquae Sulis",
           passage: "The city of Bath, in the south-west of England, is famous for its natural hot springs. Nearly two thousand years ago, the Romans discovered these bubbling, steaming waters and built one of the most impressive bathing complexes in all of Britain. They named the settlement Aquae Sulis, meaning \"the waters of Sulis,\" after a local goddess.\n\nThe Great Bath, as it is known today, was the centrepiece of the complex. It measured about twelve metres long and was lined with sheets of lead to keep the water from leaking away. The water, which rises from deep underground at a temperature of around forty-six degrees Celsius, would have felt wonderfully warm to the Romans, especially during the cold British winters they were not accustomed to.\n\nBathing was not simply about getting clean. For the Romans, a visit to the baths was a social occasion. Wealthy citizens would spend hours there, moving between rooms of different temperatures. They would begin in the tepidarium, a gently warm room, before progressing to the caldarium, which was intensely hot and filled with steam. Afterwards, they might plunge into the frigidarium, a bracingly cold pool designed to close the pores and invigorate the body.\n\nBetween baths, visitors would exercise, have their skin scraped clean with a curved metal tool called a strigil, or simply sit and gossip with friends. Merchants discussed business deals, politicians debated laws, and children splashed in the shallow pools while their parents relaxed nearby.\n\nThe Romans also built a grand temple next to the baths, dedicated to the goddess Sulis Minerva. Visitors would throw coins and small offerings into the sacred spring, asking the goddess for good health or protection. Archaeologists have found thousands of these offerings, along with carved stone heads and written curses scratched onto thin pieces of lead.\n\nWhen the Romans left Britain around 410 AD, the baths gradually fell into ruin. Over the centuries, the buildings crumbled and were buried beneath newer streets and houses. It was not until the eighteenth century that the baths were rediscovered, and today they are one of Britain's most visited historical sites.",
           question: "How does the author use the structure of the passage to guide the reader through the topic?",
-          options: ["By telling the story in reverse, starting with the present day","By listing facts in alphabetical order","By comparing Roman baths to modern swimming pools throughout","By moving chronologically from the Roman arrival, through daily life, to the modern rediscovery","By repeating the same information in different ways"],
+          options: [
+            "By telling the story in reverse order, beginning with the present day and working back to Roman times",
+            "By listing historical facts in alphabetical order rather than grouping them by theme or time period",
+            "By comparing Roman baths to modern swimming pools throughout the passage to highlight the similarities",
+            "By moving chronologically from the Roman arrival, through daily life, to the modern rediscovery",
+            "By repeating the same pieces of information in several different ways across each section of the passage"
+          ],
           correct: 3,
           explanation: "The author structures the passage chronologically: first the Romans discovering the springs, then describing daily bathing life, then the temple, then the Romans leaving in 410 AD, and finally the eighteenth-century rediscovery. This timeline structure helps the reader follow the full history clearly. ✓"
         },
@@ -1104,7 +1218,13 @@ const englishData = {
           passageTitle: "The Viking Ship",
           passage: "Amir pressed his nose against the glass and stared. The Viking longship stretched the entire length of the museum hall, its dark wooden hull curving upwards like the wings of a giant bird. At the prow, a carved dragon's head reared up, its mouth open in a silent roar, its eyes fierce and unwelcoming.\n\n\"It's a replica,\" said Amir's grandmother, reading the information panel beside him. \"Built using the same methods the Vikings would have used over a thousand years ago. Overlapping planks of oak, held together with iron rivets.\"\n\nAmir barely heard her. In his mind, he was already standing on the deck, the salt spray stinging his face, the striped woollen sail billowing above him. He imagined the rhythmic splash of thirty oars cutting through grey northern seas, the crew chanting together to keep time. The Vikings had sailed ships like this one from Scandinavia all the way to Britain, crossing hundreds of miles of open water with no compass and no maps.\n\n\"How did they know where they were going?\" he asked.\n\n\"They navigated by the stars and the sun,\" his grandmother replied. \"They watched the flight patterns of birds and the direction of ocean currents. Some historians believe they even used a special crystal called a sunstone to find the sun on cloudy days.\"\n\nAmir walked slowly around the ship, running his fingers just above the rope barrier. He noticed how shallow the hull was — barely deeper than a bathtub. The information panel explained that this shallow design allowed the Vikings to sail up rivers as well as across oceans, meaning they could land almost anywhere.\n\nAt the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the \"steerboard\" side, and that our modern word \"starboard\" comes directly from this Viking term.\n\n\"Can we stay a bit longer?\" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.",
           question: "What material was the replica longship built from?",
-          options: ["Pine planks","Ash boards","Birch logs","Elm beams","Overlapping planks of oak"],
+          options: [
+            "Overlapping planks of pine",
+            "Overlapping planks of ash",
+            "Overlapping planks of elm",
+            "Overlapping planks of yew",
+            "Overlapping planks of oak"
+          ],
           correct: 4,
           explanation: "The passage states the ship was built using 'overlapping planks of oak, held together with iron rivets.' This is directly stated in the information panel that Amir's grandmother reads. ✓"
         },
@@ -1117,7 +1237,13 @@ const englishData = {
           passageTitle: "The Viking Ship",
           passage: "Amir pressed his nose against the glass and stared. The Viking longship stretched the entire length of the museum hall, its dark wooden hull curving upwards like the wings of a giant bird. At the prow, a carved dragon's head reared up, its mouth open in a silent roar, its eyes fierce and unwelcoming.\n\n\"It's a replica,\" said Amir's grandmother, reading the information panel beside him. \"Built using the same methods the Vikings would have used over a thousand years ago. Overlapping planks of oak, held together with iron rivets.\"\n\nAmir barely heard her. In his mind, he was already standing on the deck, the salt spray stinging his face, the striped woollen sail billowing above him. He imagined the rhythmic splash of thirty oars cutting through grey northern seas, the crew chanting together to keep time. The Vikings had sailed ships like this one from Scandinavia all the way to Britain, crossing hundreds of miles of open water with no compass and no maps.\n\n\"How did they know where they were going?\" he asked.\n\n\"They navigated by the stars and the sun,\" his grandmother replied. \"They watched the flight patterns of birds and the direction of ocean currents. Some historians believe they even used a special crystal called a sunstone to find the sun on cloudy days.\"\n\nAmir walked slowly around the ship, running his fingers just above the rope barrier. He noticed how shallow the hull was — barely deeper than a bathtub. The information panel explained that this shallow design allowed the Vikings to sail up rivers as well as across oceans, meaning they could land almost anywhere.\n\nAt the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the \"steerboard\" side, and that our modern word \"starboard\" comes directly from this Viking term.\n\n\"Can we stay a bit longer?\" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.",
           question: "What was fixed to the right-hand side of the ship at the stern?",
-          options: ["A single large steering oar","A large anchor","A carved dragon's head","A wooden shield","A lantern"],
+          options: [
+            "A single large steering oar",
+            "A large iron-tipped anchor",
+            "A carved wooden dragon's head",
+            "A painted round wooden shield",
+            "A small iron-framed lantern"
+          ],
           correct: 0,
           explanation: "The passage states 'a single large steering oar was fixed to the right-hand side of the ship' at the stern. This is directly stated in the text. ✓"
         },
@@ -1143,7 +1269,13 @@ const englishData = {
           passageTitle: "The Viking Ship",
           passage: "Amir pressed his nose against the glass and stared. The Viking longship stretched the entire length of the museum hall, its dark wooden hull curving upwards like the wings of a giant bird. At the prow, a carved dragon's head reared up, its mouth open in a silent roar, its eyes fierce and unwelcoming.\n\n\"It's a replica,\" said Amir's grandmother, reading the information panel beside him. \"Built using the same methods the Vikings would have used over a thousand years ago. Overlapping planks of oak, held together with iron rivets.\"\n\nAmir barely heard her. In his mind, he was already standing on the deck, the salt spray stinging his face, the striped woollen sail billowing above him. He imagined the rhythmic splash of thirty oars cutting through grey northern seas, the crew chanting together to keep time. The Vikings had sailed ships like this one from Scandinavia all the way to Britain, crossing hundreds of miles of open water with no compass and no maps.\n\n\"How did they know where they were going?\" he asked.\n\n\"They navigated by the stars and the sun,\" his grandmother replied. \"They watched the flight patterns of birds and the direction of ocean currents. Some historians believe they even used a special crystal called a sunstone to find the sun on cloudy days.\"\n\nAmir walked slowly around the ship, running his fingers just above the rope barrier. He noticed how shallow the hull was — barely deeper than a bathtub. The information panel explained that this shallow design allowed the Vikings to sail up rivers as well as across oceans, meaning they could land almost anywhere.\n\nAt the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the \"steerboard\" side, and that our modern word \"starboard\" comes directly from this Viking term.\n\n\"Can we stay a bit longer?\" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.",
           question: "What does the word 'billowing' mean in the phrase 'the striped woollen sail billowing above him'?",
-          options: ["Torn and ragged","Folded neatly","Swelling and puffing out with wind","Hanging limply","Spinning in circles"],
+          options: [
+            "Becoming torn and ragged in the wind",
+            "Hanging folded neatly against the mast",
+            "Swelling and puffing out with wind",
+            "Drooping and hanging limply with no wind",
+            "Spinning rapidly in circles overhead"
+          ],
           correct: 2,
           explanation: "In this context, 'billowing' means swelling outwards and puffing up as it fills with wind. It creates a vivid image of the sail catching the breeze and curving outward as the ship moves through the sea. ✓"
         },
@@ -1169,7 +1301,13 @@ const englishData = {
           passageTitle: "The Viking Ship",
           passage: "Amir pressed his nose against the glass and stared. The Viking longship stretched the entire length of the museum hall, its dark wooden hull curving upwards like the wings of a giant bird. At the prow, a carved dragon's head reared up, its mouth open in a silent roar, its eyes fierce and unwelcoming.\n\n\"It's a replica,\" said Amir's grandmother, reading the information panel beside him. \"Built using the same methods the Vikings would have used over a thousand years ago. Overlapping planks of oak, held together with iron rivets.\"\n\nAmir barely heard her. In his mind, he was already standing on the deck, the salt spray stinging his face, the striped woollen sail billowing above him. He imagined the rhythmic splash of thirty oars cutting through grey northern seas, the crew chanting together to keep time. The Vikings had sailed ships like this one from Scandinavia all the way to Britain, crossing hundreds of miles of open water with no compass and no maps.\n\n\"How did they know where they were going?\" he asked.\n\n\"They navigated by the stars and the sun,\" his grandmother replied. \"They watched the flight patterns of birds and the direction of ocean currents. Some historians believe they even used a special crystal called a sunstone to find the sun on cloudy days.\"\n\nAmir walked slowly around the ship, running his fingers just above the rope barrier. He noticed how shallow the hull was — barely deeper than a bathtub. The information panel explained that this shallow design allowed the Vikings to sail up rivers as well as across oceans, meaning they could land almost anywhere.\n\nAt the stern, a single large steering oar was fixed to the right-hand side of the ship. Amir learned that this was called the \"steerboard\" side, and that our modern word \"starboard\" comes directly from this Viking term.\n\n\"Can we stay a bit longer?\" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.",
           question: "The author describes the ship's hull as 'curving upwards like the wings of a giant bird.' What technique is this and what effect does it create?",
-          options: ["Alliteration — it makes the words sound rhythmic","Onomatopoeia — it imitates the sound of the ship","Personification — it makes the ship seem alive","Repetition — it emphasises how big the ship is","A simile — it helps the reader picture the graceful, sweeping shape of the ship"],
+          options: [
+            "Alliteration — it uses repeated sounds at the start of words to create a pleasing rhythm for the reader",
+            "Onomatopoeia — it imitates the sound of the ship cutting through the waves as it moves through the sea",
+            "Personification — it gives the ship human qualities and makes it seem alive and capable of independent action",
+            "Repetition — it emphasises how big and impressive the ship is by restating the idea of size several times",
+            "A simile — it helps the reader picture the graceful, sweeping shape of the ship"
+          ],
           correct: 4,
           explanation: "This is a simile because it compares the hull to bird's wings using the word 'like.' The comparison helps the reader visualise the elegant, sweeping curve of the longship and gives it a sense of beauty and grace. ✓"
         },
@@ -1195,7 +1333,13 @@ const englishData = {
           passageTitle: "Florence Nightingale's Lamp",
           passage: "In the autumn of 1854, news from the Crimean War shocked the British public. Soldiers fighting against Russia in a distant corner of Europe were dying — not mainly from battle wounds, but from disease, infection, and neglect. The military hospitals were filthy, overcrowded, and desperately short of basic supplies. Wounded men lay on bare floors without blankets, and rats scurried between the beds.\n\nFlorence Nightingale, a determined thirty-four-year-old nurse from a wealthy family, read the newspaper reports and was horrified. Against the wishes of many who believed nursing was not a suitable profession for a woman of her background, she gathered a team of thirty-eight volunteer nurses and sailed to the British military hospital at Scutari, near modern-day Istanbul.\n\nWhat she found there was worse than anything the newspapers had described. The hospital was built over a blocked sewer, and the air inside was thick with the stench of waste and decay. Over four thousand soldiers were crammed into wards designed for far fewer. There were no clean bandages, no proper food, and the water supply was contaminated.\n\nNightingale set to work immediately. She organised the scrubbing of every floor and wall. She demanded fresh bedding, clean water, and nutritious meals. She insisted that windows be opened to let in fresh air, and she established a laundry so that soldiers could have clean clothes and sheets. Many of the army doctors resisted her changes at first, viewing her as an interfering outsider, but the results spoke for themselves. Within months, the death rate at Scutari dropped dramatically.\n\nEach night, Florence would walk through the long, dark wards carrying a small Turkish lamp, checking on her patients and offering words of comfort. The soldiers called her \"the Lady with the Lamp,\" and many later said that simply seeing her light moving through the darkness gave them hope.\n\nAfter the war, Nightingale returned to Britain as a national hero. She used her fame to campaign for better hospital conditions and founded the first professional training school for nurses at St Thomas' Hospital in London. Her work transformed nursing from an unskilled job into a respected profession, and her principles of hygiene and patient care are still followed in hospitals around the world today.",
           question: "Where did Florence Nightingale establish the first professional training school for nurses?",
-          options: ["Scutari Hospital","St Thomas' Hospital in London","The Crimea","A hospital in Florence","Oxford University"],
+          options: [
+            "Scutari Hospital in Turkey",
+            "St Thomas' Hospital in London",
+            "A military hospital in the Crimea",
+            "A training hospital in Florence",
+            "The medical school at Oxford"
+          ],
           correct: 1,
           explanation: "The passage states she 'founded the first professional training school for nurses at St Thomas' Hospital in London.' This information is directly given in the final paragraph. ✓"
         },
@@ -1234,7 +1378,13 @@ const englishData = {
           passageTitle: "Florence Nightingale's Lamp",
           passage: "In the autumn of 1854, news from the Crimean War shocked the British public. Soldiers fighting against Russia in a distant corner of Europe were dying — not mainly from battle wounds, but from disease, infection, and neglect. The military hospitals were filthy, overcrowded, and desperately short of basic supplies. Wounded men lay on bare floors without blankets, and rats scurried between the beds.\n\nFlorence Nightingale, a determined thirty-four-year-old nurse from a wealthy family, read the newspaper reports and was horrified. Against the wishes of many who believed nursing was not a suitable profession for a woman of her background, she gathered a team of thirty-eight volunteer nurses and sailed to the British military hospital at Scutari, near modern-day Istanbul.\n\nWhat she found there was worse than anything the newspapers had described. The hospital was built over a blocked sewer, and the air inside was thick with the stench of waste and decay. Over four thousand soldiers were crammed into wards designed for far fewer. There were no clean bandages, no proper food, and the water supply was contaminated.\n\nNightingale set to work immediately. She organised the scrubbing of every floor and wall. She demanded fresh bedding, clean water, and nutritious meals. She insisted that windows be opened to let in fresh air, and she established a laundry so that soldiers could have clean clothes and sheets. Many of the army doctors resisted her changes at first, viewing her as an interfering outsider, but the results spoke for themselves. Within months, the death rate at Scutari dropped dramatically.\n\nEach night, Florence would walk through the long, dark wards carrying a small Turkish lamp, checking on her patients and offering words of comfort. The soldiers called her \"the Lady with the Lamp,\" and many later said that simply seeing her light moving through the darkness gave them hope.\n\nAfter the war, Nightingale returned to Britain as a national hero. She used her fame to campaign for better hospital conditions and founded the first professional training school for nurses at St Thomas' Hospital in London. Her work transformed nursing from an unskilled job into a respected profession, and her principles of hygiene and patient care are still followed in hospitals around the world today.",
           question: "Why does the author begin the passage by describing the terrible conditions at the hospital before introducing Florence Nightingale?",
-          options: ["To make the reader feel sorry for the author","To show that the war was not important","To fill space before getting to the main story","To persuade the reader that wars should be stopped","To establish how serious the problem was, making Nightingale's achievements more impressive"],
+          options: [
+            "To make the reader feel sorry for the author who had to research such unpleasant historical details for the passage",
+            "To show that the war itself was not important and that the reader should focus on other parts of the passage instead",
+            "To fill space before getting to the main story, because the hospital conditions are easier to describe in detail",
+            "To persuade the reader that wars should be stopped, since they always lead to suffering in overcrowded hospitals",
+            "To establish how serious the problem was, making Nightingale's achievements more impressive"
+          ],
           correct: 4,
           explanation: "By describing the dreadful conditions first — filthy hospitals, soldiers dying from disease, rats between beds — the author makes the reader understand the scale of the problem. This makes Nightingale's determination and her dramatic improvements all the more impressive and admirable. ✓"
         },
@@ -1286,7 +1436,13 @@ const englishData = {
           passageTitle: "The Silk Road",
           passage: "Imagine a network of dusty tracks stretching more than six thousand miles across mountains, deserts, and grasslands, connecting the great civilisations of China and Rome. This was the Silk Road, one of the most important trade routes in human history, and for over fifteen hundred years it carried not just goods but ideas, religions, and inventions between East and West.\n\nThe route earned its name from the most prized cargo that travelled along it: Chinese silk. This shimmering, lightweight fabric was produced by silkworms and was one of ancient China's most closely guarded secrets. For centuries, the Chinese kept the method of silk production hidden, and anyone caught smuggling silkworms or their eggs out of the country faced severe punishment. In Rome, silk was worth its weight in gold, and wealthy Romans would pay enormous sums for even a small piece.\n\nBut silk was far from the only treasure that moved along these ancient paths. From China came porcelain, tea, paper, and gunpowder. Travelling in the opposite direction, merchants brought glassware, wool, gold, and silver from the Mediterranean. From India came spices such as pepper and cinnamon, along with precious gemstones. Central Asian traders contributed horses, furs, and honey.\n\nThe journey along the Silk Road was extraordinarily dangerous. Merchants had to cross the scorching Taklamakan Desert, where temperatures could reach fifty degrees Celsius and sandstorms could bury entire caravans. They climbed through the towering Pamir Mountains, where the air was thin and the passes were blocked by snow for months at a time. Bandits lurked along remote stretches of the route, waiting to ambush travellers and steal their valuable cargo.\n\nFew merchants ever completed the entire journey. Instead, goods were passed from trader to trader, changing hands many times before reaching their final destination. Along the way, bustling market towns sprang up at oases and mountain passes, where people from dozens of different cultures would meet, trade, and exchange stories.\n\nPerhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.",
           question: "Why did few merchants ever complete the entire Silk Road journey?",
-          options: ["Because they were not allowed to cross national borders","Because the Chinese government stopped them","Because they preferred to stay in the market towns","Because the journey was far too long and dangerous for one person to manage alone","Because the road was only open for part of the year"],
+          options: [
+            "Because strict border controls meant that merchants were not allowed to cross between different kingdoms",
+            "Because the Chinese government stopped foreign traders from entering the country beyond the western gates",
+            "Because most merchants preferred to stay and trade in the busy, profitable market towns along the route",
+            "Because the journey was far too long and dangerous for one person to manage alone",
+            "Because the road was only open for part of the year, and heavy snow blocked the mountain passes in winter"
+          ],
           correct: 3,
           explanation: "The passage describes scorching deserts, towering mountains, thin air, snowbound passes, and bandits. These extreme dangers, combined with the vast distance of six thousand miles, made it practically impossible for any single merchant to complete the whole route safely. Instead, goods were 'passed from trader to trader.' ✓"
         },
@@ -1312,7 +1468,13 @@ const englishData = {
           passageTitle: "The Silk Road",
           passage: "Imagine a network of dusty tracks stretching more than six thousand miles across mountains, deserts, and grasslands, connecting the great civilisations of China and Rome. This was the Silk Road, one of the most important trade routes in human history, and for over fifteen hundred years it carried not just goods but ideas, religions, and inventions between East and West.\n\nThe route earned its name from the most prized cargo that travelled along it: Chinese silk. This shimmering, lightweight fabric was produced by silkworms and was one of ancient China's most closely guarded secrets. For centuries, the Chinese kept the method of silk production hidden, and anyone caught smuggling silkworms or their eggs out of the country faced severe punishment. In Rome, silk was worth its weight in gold, and wealthy Romans would pay enormous sums for even a small piece.\n\nBut silk was far from the only treasure that moved along these ancient paths. From China came porcelain, tea, paper, and gunpowder. Travelling in the opposite direction, merchants brought glassware, wool, gold, and silver from the Mediterranean. From India came spices such as pepper and cinnamon, along with precious gemstones. Central Asian traders contributed horses, furs, and honey.\n\nThe journey along the Silk Road was extraordinarily dangerous. Merchants had to cross the scorching Taklamakan Desert, where temperatures could reach fifty degrees Celsius and sandstorms could bury entire caravans. They climbed through the towering Pamir Mountains, where the air was thin and the passes were blocked by snow for months at a time. Bandits lurked along remote stretches of the route, waiting to ambush travellers and steal their valuable cargo.\n\nFew merchants ever completed the entire journey. Instead, goods were passed from trader to trader, changing hands many times before reaching their final destination. Along the way, bustling market towns sprang up at oases and mountain passes, where people from dozens of different cultures would meet, trade, and exchange stories.\n\nPerhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.",
           question: "Why does the author save the exchange of knowledge until the final paragraph?",
-          options: ["To build towards the most important point, ending with the idea that knowledge mattered more than any physical goods","Because knowledge is less interesting than silk and spices","Because the author forgot to mention it earlier","To fill up space at the end of the passage","Because the exchange of knowledge happened last in history"],
+          options: [
+            "To build towards the most important point, ending with the idea that knowledge mattered more than any physical goods",
+            "Because knowledge is less interesting than silk and spices, so the author placed it where fewer people would read it",
+            "Because the author forgot to mention the exchange of knowledge earlier and added it at the end as an afterthought",
+            "To fill up space at the end of the passage because there was not enough material about the goods that were traded",
+            "Because the exchange of knowledge happened last in history, after all the trading in physical goods had already ended"
+          ],
           correct: 0,
           explanation: "The author deliberately structures the passage to build towards the final, most important point. After describing all the valuable physical goods traded, the author reveals that 'the most lasting legacy' was actually the exchange of knowledge. Placing this at the end gives it extra emphasis and leaves the reader with the passage's key message. ✓"
         },
@@ -1325,7 +1487,13 @@ const englishData = {
           passageTitle: "The Silk Road",
           passage: "Imagine a network of dusty tracks stretching more than six thousand miles across mountains, deserts, and grasslands, connecting the great civilisations of China and Rome. This was the Silk Road, one of the most important trade routes in human history, and for over fifteen hundred years it carried not just goods but ideas, religions, and inventions between East and West.\n\nThe route earned its name from the most prized cargo that travelled along it: Chinese silk. This shimmering, lightweight fabric was produced by silkworms and was one of ancient China's most closely guarded secrets. For centuries, the Chinese kept the method of silk production hidden, and anyone caught smuggling silkworms or their eggs out of the country faced severe punishment. In Rome, silk was worth its weight in gold, and wealthy Romans would pay enormous sums for even a small piece.\n\nBut silk was far from the only treasure that moved along these ancient paths. From China came porcelain, tea, paper, and gunpowder. Travelling in the opposite direction, merchants brought glassware, wool, gold, and silver from the Mediterranean. From India came spices such as pepper and cinnamon, along with precious gemstones. Central Asian traders contributed horses, furs, and honey.\n\nThe journey along the Silk Road was extraordinarily dangerous. Merchants had to cross the scorching Taklamakan Desert, where temperatures could reach fifty degrees Celsius and sandstorms could bury entire caravans. They climbed through the towering Pamir Mountains, where the air was thin and the passes were blocked by snow for months at a time. Bandits lurked along remote stretches of the route, waiting to ambush travellers and steal their valuable cargo.\n\nFew merchants ever completed the entire journey. Instead, goods were passed from trader to trader, changing hands many times before reaching their final destination. Along the way, bustling market towns sprang up at oases and mountain passes, where people from dozens of different cultures would meet, trade, and exchange stories.\n\nPerhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.",
           question: "The author opens with 'Imagine a network of dusty tracks stretching more than six thousand miles.' What technique is this and why is it effective?",
-          options: ["A rhetorical question — it makes the reader think of an answer","Direct address — it invites the reader to picture the scene, making the history feel vivid and personal","Alliteration — it uses repeated sounds to create rhythm","A metaphor — it compares the Silk Road to something else","Onomatopoeia — it imitates the sound of travelling"],
+          options: [
+            "A rhetorical question — it makes the reader stop and think of an answer before continuing with the rest of the passage",
+            "Direct address — it invites the reader to picture the scene, making the history feel vivid and personal",
+            "Alliteration — it uses repeated sounds at the start of words to create a pleasing rhythm throughout the sentence",
+            "A metaphor — it compares the Silk Road to something else entirely, making the unfamiliar feel more recognisable",
+            "Onomatopoeia — it imitates the sound of travelling along a dusty track, helping the reader hear the journey clearly"
+          ],
           correct: 1,
           explanation: "By using the imperative 'Imagine,' the author speaks directly to the reader and invites them to create a mental picture. This technique of direct address draws the reader in immediately, making the ancient trade route feel vivid, real, and personal rather than distant and dry. ✓"
         },
@@ -1390,7 +1558,13 @@ const englishData = {
           passageTitle: "A Day in Tudor England",
           passage: "Thomas rubbed his eyes and swung his legs out of the narrow wooden bed. The bell in the chapel tower had just struck five, and already he could hear the other pages stirring in the dormitory around him. At ten years old, Thomas was the youngest page in Sir Edward Ashworth's household, and he had learned quickly that being last out of bed meant the coldest water for washing and the hardest crust of bread at breakfast.\n\nHe dressed hurriedly in his woollen hose and linen shirt, pulling his dark green tunic over the top. Every page in the household wore the same green, embroidered with Sir Edward's coat of arms — a silver stag on a blue shield. Thomas was proud of his tunic, even though it itched terribly in warm weather. Being chosen as a page was a great honour for his family. His father, a merchant from Exeter, hoped that Thomas would learn the manners and skills of a gentleman and eventually become a squire.\n\nAfter a breakfast of bread, cheese, and small beer in the great hall, Thomas reported to Master Hewitt, the household steward, for his morning duties. Today he was assigned to serve at the high table during dinner, which in Tudor times was eaten at eleven o'clock in the morning. Thomas carefully laid out the silver salt cellar, the pewter plates, and the linen napkins, making sure everything was positioned exactly as Master Hewitt demanded. A single mistake could earn him a sharp rap across the knuckles.\n\nThe afternoon brought lessons. Thomas practised his handwriting, copying passages from a book of prayers in his neatest script. Then came an hour of sword practice in the courtyard, where an older squire showed the pages how to hold a wooden practice sword and move their feet correctly. Thomas's arms ached afterwards, but he did not dare complain. A page who grumbled was a page who would never advance.\n\nAs evening fell, Thomas sat on a bench near the enormous fireplace in the great hall, listening to a travelling musician play the lute and sing ballads about King Henry and his six wives. The firelight flickered across the tapestries that hung on the stone walls, making the woven figures seem to dance.\n\n\"Not a bad life,\" whispered Robert, the page beside him. Thomas smiled but said nothing. His feet were sore, his fingers were stained with ink, and his arms still throbbed from sword practice. But Robert was right. Not a bad life at all.",
           question: "Why does the author include details like the time of dinner, the items on the table, and Thomas's breakfast?",
-          options: ["To make the reader feel hungry","To bring the Tudor period to life by showing how different daily routines were from today","To show that Tudor people ate too much food","To prove that Thomas was a fussy eater","To compare Tudor food with modern school dinners"],
+          options: [
+            "To make the reader feel hungry by describing the kinds of rich, heavy food that Tudor households prepared each day",
+            "To bring the Tudor period to life by showing how different daily routines were from today",
+            "To show that Tudor people ate far too much food and did not have a healthy or balanced diet at that time",
+            "To prove that Thomas was a fussy eater who complained about the meals that were served in the great hall",
+            "To compare Tudor food with modern school dinners so the reader can see which meals are more nutritious"
+          ],
           correct: 1,
           explanation: "By including specific historical details — eating dinner at eleven, drinking small beer, using pewter plates and silver salt cellars — the author helps the reader understand how different everyday life was in Tudor times. These authentic details make the historical setting feel real and vivid. ✓"
         },
@@ -1403,7 +1577,13 @@ const englishData = {
           passageTitle: "A Day in Tudor England",
           passage: "Thomas rubbed his eyes and swung his legs out of the narrow wooden bed. The bell in the chapel tower had just struck five, and already he could hear the other pages stirring in the dormitory around him. At ten years old, Thomas was the youngest page in Sir Edward Ashworth's household, and he had learned quickly that being last out of bed meant the coldest water for washing and the hardest crust of bread at breakfast.\n\nHe dressed hurriedly in his woollen hose and linen shirt, pulling his dark green tunic over the top. Every page in the household wore the same green, embroidered with Sir Edward's coat of arms — a silver stag on a blue shield. Thomas was proud of his tunic, even though it itched terribly in warm weather. Being chosen as a page was a great honour for his family. His father, a merchant from Exeter, hoped that Thomas would learn the manners and skills of a gentleman and eventually become a squire.\n\nAfter a breakfast of bread, cheese, and small beer in the great hall, Thomas reported to Master Hewitt, the household steward, for his morning duties. Today he was assigned to serve at the high table during dinner, which in Tudor times was eaten at eleven o'clock in the morning. Thomas carefully laid out the silver salt cellar, the pewter plates, and the linen napkins, making sure everything was positioned exactly as Master Hewitt demanded. A single mistake could earn him a sharp rap across the knuckles.\n\nThe afternoon brought lessons. Thomas practised his handwriting, copying passages from a book of prayers in his neatest script. Then came an hour of sword practice in the courtyard, where an older squire showed the pages how to hold a wooden practice sword and move their feet correctly. Thomas's arms ached afterwards, but he did not dare complain. A page who grumbled was a page who would never advance.\n\nAs evening fell, Thomas sat on a bench near the enormous fireplace in the great hall, listening to a travelling musician play the lute and sing ballads about King Henry and his six wives. The firelight flickered across the tapestries that hung on the stone walls, making the woven figures seem to dance.\n\n\"Not a bad life,\" whispered Robert, the page beside him. Thomas smiled but said nothing. His feet were sore, his fingers were stained with ink, and his arms still throbbed from sword practice. But Robert was right. Not a bad life at all.",
           question: "What effect does the final line — 'Not a bad life at all' — have on the reader?",
-          options: ["It makes the reader feel sorry for Thomas because he is clearly lying","It suggests Thomas is going to complain to Sir Edward","It creates a warm, satisfying ending by showing Thomas has found contentment despite the hardships","It shows that Thomas does not understand how hard his life is","It tells the reader that all pages enjoyed their work"],
+          options: [
+            "It makes the reader feel sorry for Thomas because he is clearly lying about being happy with his situation",
+            "It suggests that Thomas is planning to complain to Sir Edward about the conditions he has been living in",
+            "It creates a warm, satisfying ending by showing Thomas has found contentment despite the hardships",
+            "It shows that Thomas does not fully understand how hard and exhausting his daily life actually is",
+            "It tells the reader that all pages across the country enjoyed their work and never had any complaints"
+          ],
           correct: 2,
           explanation: "The final line echoes Robert's words but with Thomas's own quiet agreement. After listing all his physical discomforts — sore feet, ink-stained fingers, aching arms — the understated 'Not a bad life at all' creates a warm ending that shows Thomas has found genuine contentment and belonging in his new role. The understatement makes his acceptance feel more real and touching. ✓"
         },
@@ -1468,7 +1648,13 @@ const englishData = {
           passageTitle: "The Midnight Library",
           passage: "Elara had always thought the old building at the end of Mulberry Lane was nothing more than a crumbling ruin. Its windows were boarded up, the front door was padlocked shut, and a thick curtain of ivy smothered the walls like a green blanket. Nobody in the village paid it any attention — except on the night Elara's cat, Biscuit, slipped through a gap in the fence and vanished inside.\n\nIt was three minutes past midnight when Elara squeezed through the same gap, torch in hand. She expected dust, cobwebs and darkness. Instead, she found herself standing in a vast, glittering library. Thousands of books lined shelves that stretched up so high they disappeared into shadow. Candles floated in mid-air, casting a warm amber glow over everything. The air smelled of old paper, cinnamon and something she couldn't quite name — perhaps magic.\n\n\"Biscuit?\" she whispered, her voice swallowed by the enormous space.\n\nA book on the nearest shelf trembled, then launched itself into the air. It fluttered open like a bird spreading its wings, and from its pages tumbled a shower of tiny golden words that rearranged themselves into a sentence hovering before her eyes: WELCOME, ELARA. WE HAVE BEEN WAITING.\n\nElara's heart hammered, but curiosity held her feet in place. She reached for another book — a slim green volume titled \"The Ocean's Memory\" — and the moment her fingers touched the spine, the library floor dissolved beneath her. Suddenly she was standing on the deck of a wooden sailing ship, salt spray on her lips and seagulls wheeling overhead. The story had pulled her in.\n\nShe spent what felt like hours exploring three different books, each one a doorway into another world. A jungle adventure. A moonlit castle. A city built entirely of glass. When she finally stumbled back through the gap in the fence, Biscuit tucked under her arm, the village clock was striking quarter past twelve. Only twelve minutes had passed.\n\nElara glanced back at the ruin. The ivy had closed over the gap already, as though the building were drawing its curtains. She smiled. She knew she would return tomorrow night — and every night after that.",
           question: "Why does the author describe the building as a 'crumbling ruin' at the start of the passage?",
-          options: ["To show that the building is dangerous and should be demolished","To explain why no one has repaired the building for years","To create a contrast between its dull outside appearance and the magical world within","To make the reader feel sorry for Elara's village","To suggest that the library has only recently appeared"],
+          options: [
+            "To show that the building is dangerous and should be demolished before someone is seriously injured by it",
+            "To explain why no one in the village has bothered to repair the neglected building for so many years",
+            "To create a contrast between its dull outside appearance and the magical world within",
+            "To make the reader feel sorry for Elara's village, which has clearly fallen into decay and been forgotten",
+            "To suggest that the library has only recently appeared and was not there when the building was first built"
+          ],
           correct: 2,
           explanation: "The author describes the building as a ruin so that when Elara steps inside and finds a glittering, magical library, the contrast is striking and surprising. This makes the discovery feel even more wonderful. ✓"
         },
@@ -1533,7 +1719,13 @@ const englishData = {
           passageTitle: "The Map in the Attic",
           passage: "It was the first day of the summer holidays, and Mia and her younger brother Sam had been sent to stay with their grandparents in the small Dorset village of Brindleton. Grandpa Joe had told them to keep out of trouble, which naturally meant they went straight up to the attic to look for some.\n\nThe attic was a treasure trove of forgotten things: a dressmaker's dummy wearing a top hat, boxes of cracked china, and a rocking horse with only one eye. But it was Sam who made the real find. Wedged behind an old painting of a ship, he pulled out a roll of yellowed paper tied with a faded red ribbon.\n\n\"It's a map!\" he gasped, spreading it across the dusty floorboards.\n\nMia knelt beside him. The map showed Brindleton as it must have looked a hundred years ago. Pencilled paths wound between landmarks they recognised — the church, the duck pond, the old oak on the village green — and at the centre was a bold red X beside the words: \"Beneath the Whispering Stone.\"\n\n\"We have to find it,\" Mia said, already halfway down the attic ladder.\n\nThey spent the morning following the map's clues. The first led them to a moss-covered sundial in the churchyard, where faint letters carved into the base read: \"Face the rising sun and count thirty paces.\" The second clue brought them to a crumbling stone wall behind the baker's shop, where a loose brick hid a small brass key. The third and final clue pointed them towards the ancient oak tree on the green.\n\nAt the foot of the oak, half-buried in tangled roots, sat a flat grey stone. When Mia pressed her ear to it, she could hear a faint hum — almost like whispering. Sam used the brass key to prise up the stone, revealing a tin box no bigger than a shoebox. Inside lay a collection of hand-painted postcards from places around the world, a tiny compass, and a note in elegant handwriting: \"To whoever finds this — never stop exploring. Your loving adventurer, Great-Aunt Hattie, 1923.\"\n\nMia and Sam looked at each other and grinned. The summer holidays had only just begun.",
           question: "In the sentence 'The attic was a treasure trove of forgotten things,' what does the phrase 'treasure trove' mean?",
-          options: ["A locked safe full of gold coins","A hidden underground cave","A collection of valuable or interesting items","A shop selling antiques","A pirate's buried chest"],
+          options: [
+            "A locked safe that is full of gold coins and jewels",
+            "A hidden underground cave containing old relics",
+            "A collection of valuable or interesting items",
+            "A dusty old shop that specialises in antiques",
+            "A wooden chest buried by pirates long ago"
+          ],
           correct: 2,
           explanation: "'Treasure trove' is used here to mean a collection of valuable or interesting items. The attic is full of fascinating old objects, so the author uses this phrase to show it is a rich store of discoveries. ✓"
         },
@@ -1663,7 +1855,13 @@ const englishData = {
           passageTitle: "Shipwrecked!",
           passage: "The sailing trip had been Mr Kapoor's idea. \"A weekend on the water will do you all good,\" their teacher had announced, beaming at the class. And for the first few hours, it had been brilliant. The yacht, a sleek white vessel called the Silver Gull, cut through the waves off the Cornish coast while Zara, Finn, Priya and Marcus took turns at the helm under the watchful eye of their skipper, Captain Trevelyan.\n\nThen the storm arrived.\n\nIt came from nowhere — a wall of charcoal cloud that swallowed the horizon in minutes. Rain lashed the deck. Waves the size of houses slammed against the hull. Captain Trevelyan barked orders, his voice barely audible above the howling wind. Then came a sickening crunch, and the Silver Gull lurched to one side. They had struck rocks.\n\nWhat happened next was a blur of shouting, life jackets and freezing seawater. When Zara opened her eyes, she was lying face down on a strip of wet sand, coughing up salt water. The storm had passed as quickly as it had arrived, leaving behind a sky washed clean and pale. She could see Finn and Priya huddled further up the beach, and Marcus was wading out of the shallows dragging a waterproof bag.\n\nCaptain Trevelyan was nowhere to be seen.\n\nThe island was tiny — no more than a few hundred metres across — with a cluster of wind-bent trees at its centre and rocky outcrops at either end. There was no sign of houses, roads, or people.\n\n\"Right,\" said Priya, wringing water from her hair. \"We need a plan.\"\n\nThey divided the tasks. Finn gathered driftwood for a fire and used the waterproof matches from the emergency bag to light it. Priya and Marcus explored the island, discovering a freshwater stream trickling down from the rocks and a sheltered hollow out of the wind. Zara, the calmest of the four, took charge of rationing the small supply of food bars from the bag — three each, to last until help arrived.\n\nAs the sun began to dip, painting the sea in shades of copper and rose, Zara spotted something on the horizon: a flashing light. A coastguard vessel.\n\n\"Over here!\" she screamed, waving her arms. Finn threw damp seaweed onto the fire, sending a thick column of white smoke spiralling into the sky.\n\nThe light turned towards them. By nightfall, all four were wrapped in foil blankets aboard the rescue boat, sipping hot chocolate and trying to stop their hands from shaking. Captain Trevelyan, they learned, had been picked up an hour earlier, clinging to a piece of the Silver Gull's mast.\n\n\"Best school trip ever,\" Marcus whispered, and despite everything, they all laughed.",
           question: "What did Priya and Marcus discover while exploring the island?",
-          options: ["A ruined lighthouse and a cave","A fishing boat and a village","A freshwater stream and a sheltered hollow","A radio tower and a path","A sandy cove and a rock pool"],
+          options: [
+            "A ruined lighthouse and a deep rocky cave",
+            "An abandoned fishing boat and a small village",
+            "A freshwater stream and a sheltered hollow",
+            "A broken radio tower and a narrow footpath",
+            "A wide sandy cove and a shallow rock pool"
+          ],
           correct: 2,
           explanation: "The passage states 'Priya and Marcus explored the island, discovering a freshwater stream trickling down from the rocks and a sheltered hollow out of the wind.' ✓"
         },
@@ -1676,7 +1874,13 @@ const englishData = {
           passageTitle: "Shipwrecked!",
           passage: "The sailing trip had been Mr Kapoor's idea. \"A weekend on the water will do you all good,\" their teacher had announced, beaming at the class. And for the first few hours, it had been brilliant. The yacht, a sleek white vessel called the Silver Gull, cut through the waves off the Cornish coast while Zara, Finn, Priya and Marcus took turns at the helm under the watchful eye of their skipper, Captain Trevelyan.\n\nThen the storm arrived.\n\nIt came from nowhere — a wall of charcoal cloud that swallowed the horizon in minutes. Rain lashed the deck. Waves the size of houses slammed against the hull. Captain Trevelyan barked orders, his voice barely audible above the howling wind. Then came a sickening crunch, and the Silver Gull lurched to one side. They had struck rocks.\n\nWhat happened next was a blur of shouting, life jackets and freezing seawater. When Zara opened her eyes, she was lying face down on a strip of wet sand, coughing up salt water. The storm had passed as quickly as it had arrived, leaving behind a sky washed clean and pale. She could see Finn and Priya huddled further up the beach, and Marcus was wading out of the shallows dragging a waterproof bag.\n\nCaptain Trevelyan was nowhere to be seen.\n\nThe island was tiny — no more than a few hundred metres across — with a cluster of wind-bent trees at its centre and rocky outcrops at either end. There was no sign of houses, roads, or people.\n\n\"Right,\" said Priya, wringing water from her hair. \"We need a plan.\"\n\nThey divided the tasks. Finn gathered driftwood for a fire and used the waterproof matches from the emergency bag to light it. Priya and Marcus explored the island, discovering a freshwater stream trickling down from the rocks and a sheltered hollow out of the wind. Zara, the calmest of the four, took charge of rationing the small supply of food bars from the bag — three each, to last until help arrived.\n\nAs the sun began to dip, painting the sea in shades of copper and rose, Zara spotted something on the horizon: a flashing light. A coastguard vessel.\n\n\"Over here!\" she screamed, waving her arms. Finn threw damp seaweed onto the fire, sending a thick column of white smoke spiralling into the sky.\n\nThe light turned towards them. By nightfall, all four were wrapped in foil blankets aboard the rescue boat, sipping hot chocolate and trying to stop their hands from shaking. Captain Trevelyan, they learned, had been picked up an hour earlier, clinging to a piece of the Silver Gull's mast.\n\n\"Best school trip ever,\" Marcus whispered, and despite everything, they all laughed.",
           question: "Why did Finn throw damp seaweed onto the fire?",
-          options: ["To put the fire out before leaving the island","To cook food over the flames","To keep insects away from the group","To create visible smoke that would signal the rescue boat","To make the fire burn hotter and brighter"],
+          options: [
+            "To put the fire out completely before leaving the island safely",
+            "To cook the food they had found over the hot flames of the fire",
+            "To keep biting insects and midges well away from the whole group",
+            "To create visible smoke that would signal the rescue boat",
+            "To make the fire burn much hotter and brighter through the night"
+          ],
           correct: 3,
           explanation: "Finn threw damp seaweed on the fire when Zara spotted the coastguard vessel. Damp seaweed creates thick white smoke, which acts as a signal to the rescue boat so they could be seen and found. ✓"
         },
@@ -1780,7 +1984,13 @@ const englishData = {
           passageTitle: "The Clockmaker's Apprentice",
           passage: "Nobody in the town of Ashworth paid much attention to the narrow shop squeezed between the chemist and the post office. Its sign — \"Barnaby Thorne, Horologist\" — was so faded that most people walked past without a second glance. But eleven-year-old Nell noticed it on the very first day her family moved to town, and something about the gentle tick-tick-tick drifting through the open door pulled her inside.\n\nThe shop was a wonderland of timepieces. Grandfather clocks stood like tall soldiers along the back wall. Pocket watches lay in velvet-lined cases. Cuckoo clocks, carriage clocks, and clocks shaped like ships and castles filled every shelf and surface. And in the middle of it all sat Mr Thorne himself: a wiry old man with half-moon spectacles balanced on the tip of his nose and fingers as nimble as a pianist's.\n\n\"Don't touch anything,\" he said, without looking up from the tiny mechanism he was adjusting with a pair of silver tweezers.\n\n\"I wasn't going to,\" Nell replied, though her fingers were already itching.\n\nMr Thorne peered at her over his spectacles. \"You're the new family on Birch Lane. I suppose you'll be wanting something to do over the summer.\"\n\nAnd so began Nell's apprenticeship. Every morning at eight o'clock sharp, she would arrive at the shop, and Mr Thorne would teach her something new. She learned how to clean a clock face without scratching the enamel. She learned the difference between a mainspring and a hairspring, and why a pendulum swings at a steady rhythm. She learned to hold her breath while placing a gear no bigger than a ladybird into exactly the right position.\n\nThe work demanded extraordinary patience. One afternoon, Nell spent three hours straightening a single bent tooth on a brass cog. When she finally succeeded, Mr Thorne gave her the rarest of his compliments: a brief nod.\n\n\"Clockmaking,\" he told her one rainy Thursday, polishing a crystal face until it gleamed, \"is not about telling the time. Any phone can do that. It is about respecting time — understanding that every second matters, that nothing worth making can be rushed.\" He held up the clock he had been restoring for six months: a beautiful Victorian mantel piece with a midnight-blue dial and golden hands. \"This clock will outlive us both, and it will still keep perfect time. That is craftsmanship.\"\n\nNell looked at the clock, then at her own clumsy, oil-stained hands. She was beginning to understand.",
           question: "Why does the author include Mr Thorne's speech about clockmaking not being 'about telling the time'?",
-          options: ["To show that Mr Thorne does not know how modern technology works","To reveal the deeper message of the story — that patience, care and craftsmanship matter","To explain why Mr Thorne's shop is not very popular","To persuade Nell to buy one of his clocks","To show that Mr Thorne is an old-fashioned man who dislikes phones"],
+          options: [
+            "To show that Mr Thorne does not understand how modern technology works and is completely out of touch",
+            "To reveal the deeper message of the story — that patience, care and craftsmanship matter",
+            "To explain why Mr Thorne's shop on the high street is not very popular with customers any more",
+            "To persuade Nell that she should buy one of his beautifully crafted and expensive handmade clocks",
+            "To show that Mr Thorne is an old-fashioned man who strongly dislikes phones and modern inventions"
+          ],
           correct: 1,
           explanation: "Mr Thorne's speech about 'respecting time' and 'nothing worth making can be rushed' is the heart of the story's message. The author includes it to convey the deeper theme: that patience, care and craftsmanship have lasting value, which is what Nell is learning through her apprenticeship. ✓"
         },
@@ -1832,7 +2042,13 @@ const englishData = {
           passageTitle: "The School Garden Project",
           passage: "When the children of Oakfield Primary School arrived one Monday morning in September, they found a surprise waiting for them in the far corner of the playing field. Over the summer holidays, a group of parent volunteers had cleared the overgrown patch of brambles and nettles, dug over the soil, and built four large raised beds from recycled wooden pallets. A hand-painted sign read: \"Oakfield Allotment — Growing Together.\"\n\nMrs Kapoor, the Year Five teacher who had organised the project, gathered the whole school in the hall to explain. \"Every class will be responsible for one raised bed,\" she announced, her eyes shining with excitement. \"You'll choose what to grow, plant the seeds, care for the plants, and — if all goes well — harvest your own vegetables to use in the school kitchen.\"\n\nThe children threw themselves into the project with enormous enthusiasm. Year Three planted carrots, radishes, and spring onions. Year Four chose potatoes and broad beans. Year Five decided on courgettes, tomatoes, and lettuce, whilst Year Six opted for pumpkins, sweetcorn, and runner beans. Each class visited their bed twice a week, weeding carefully, watering the soil, and checking for slugs.\n\nOne of the most important parts of the project was the compost bin, which stood at the edge of the allotment like a large wooden crate. The school dinner ladies began saving vegetable peelings and fruit scraps from the kitchen, and the children took turns adding them to the bin along with fallen leaves and grass cuttings from the school grounds. Mrs Kapoor explained that the mixture would slowly break down into rich, dark compost that could be spread on the beds to feed the soil.\n\nBy the following spring, the allotment had become the heart of the school. Parents stopped by to admire the neat rows of green shoots. The school cook, Mr Petrov, created a special \"Allotment Lunch\" each Friday using whatever had been harvested that week. Even the children who had grumbled about getting mud under their fingernails admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.",
           question: "Why do you think 'even the children who had grumbled about getting mud under their fingernails' changed their minds about the project?",
-          options: ["They enjoyed eating food they had grown themselves and felt proud of their work","They were forced to take part by their teachers","They preferred being outdoors to doing lessons","They wanted to impress their parents","They had stopped getting muddy by the end of the project"],
+          options: [
+            "They enjoyed eating food they had grown themselves and felt proud of their work",
+            "They were forced to take part by their teachers and had absolutely no choice in the matter",
+            "They preferred being outdoors in the fresh air to sitting inside doing ordinary classroom lessons",
+            "They wanted to impress their parents by bringing home vegetables they had grown at school",
+            "They had stopped getting muddy by the end of the project because the soil had dried out completely"
+          ],
           correct: 0,
           explanation: "The passage says these children 'admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.' This suggests they changed their minds because they experienced the pride and satisfaction of eating something they had helped to create. ✓"
         },
@@ -1858,7 +2074,13 @@ const englishData = {
           passageTitle: "The School Garden Project",
           passage: "When the children of Oakfield Primary School arrived one Monday morning in September, they found a surprise waiting for them in the far corner of the playing field. Over the summer holidays, a group of parent volunteers had cleared the overgrown patch of brambles and nettles, dug over the soil, and built four large raised beds from recycled wooden pallets. A hand-painted sign read: \"Oakfield Allotment — Growing Together.\"\n\nMrs Kapoor, the Year Five teacher who had organised the project, gathered the whole school in the hall to explain. \"Every class will be responsible for one raised bed,\" she announced, her eyes shining with excitement. \"You'll choose what to grow, plant the seeds, care for the plants, and — if all goes well — harvest your own vegetables to use in the school kitchen.\"\n\nThe children threw themselves into the project with enormous enthusiasm. Year Three planted carrots, radishes, and spring onions. Year Four chose potatoes and broad beans. Year Five decided on courgettes, tomatoes, and lettuce, whilst Year Six opted for pumpkins, sweetcorn, and runner beans. Each class visited their bed twice a week, weeding carefully, watering the soil, and checking for slugs.\n\nOne of the most important parts of the project was the compost bin, which stood at the edge of the allotment like a large wooden crate. The school dinner ladies began saving vegetable peelings and fruit scraps from the kitchen, and the children took turns adding them to the bin along with fallen leaves and grass cuttings from the school grounds. Mrs Kapoor explained that the mixture would slowly break down into rich, dark compost that could be spread on the beds to feed the soil.\n\nBy the following spring, the allotment had become the heart of the school. Parents stopped by to admire the neat rows of green shoots. The school cook, Mr Petrov, created a special \"Allotment Lunch\" each Friday using whatever had been harvested that week. Even the children who had grumbled about getting mud under their fingernails admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.",
           question: "Why does the author describe the allotment as having 'become the heart of the school'?",
-          options: ["Because it was located in the centre of the school grounds","Because it was shaped like a heart","Because it had become the most important and valued part of school life, bringing everyone together","Because the headteacher loved gardening","Because it was the largest area of the school"],
+          options: [
+            "Because it was located right in the centre of the school grounds, near the main entrance and the hall",
+            "Because the raised beds and paths were arranged in the distinctive shape of a large heart from above",
+            "Because it had become the most important and valued part of school life, bringing everyone together",
+            "Because the headteacher loved gardening and spent every lunchtime working on the allotment by herself",
+            "Because it was the largest single area of the school grounds, taking up more space than the playground"
+          ],
           correct: 2,
           explanation: "The metaphor 'heart of the school' compares the allotment to a heart — the vital centre that keeps everything alive. The author uses this to show that the garden had become central to school life, bringing together pupils, parents, dinner ladies, and the cook. ✓"
         },
@@ -1910,7 +2132,13 @@ const englishData = {
           passageTitle: "How the Post Gets Delivered",
           passage: "Have you ever wondered what happens to a letter after you drop it into the bright red postbox on the corner of your street? Its journey is far more complicated — and far more impressive — than most people realise.\n\nFirst, a Royal Mail postal worker arrives in a van to collect the letters. This happens at least once a day, usually in the late afternoon. The time of the next collection is printed on a small label inside the postbox door, so you can check when your letter will be picked up. The worker unlocks the box with a special key, scoops out all the letters, and loads them into grey canvas sacks.\n\nThe sacks are driven to the nearest sorting office, which is usually a large warehouse on an industrial estate. Here, the real work begins. Letters are tipped onto conveyor belts and fed through machines that can read postcodes at astonishing speed — up to 40,000 letters per hour. The machine scans the address, prints a pattern of orange dots on the envelope, and directs the letter into the correct tray for its destination. Letters that the machine cannot read — perhaps because of messy handwriting — are sorted by hand.\n\nOnce sorted, the letters are bundled together by area and loaded onto lorries. If a letter is travelling a long distance, it might go to one of Royal Mail's main distribution centres before being sent on to the local sorting office nearest to the delivery address. Some letters travel hundreds of miles overnight, arriving at the local office in the early hours of the morning.\n\nFinally, the postal worker — or \"postie,\" as many people call them — sets out on their round. Walking or cycling through the streets, they push letters through letterboxes, starting their round as early as half past six in the morning. By the time most people sit down to breakfast, their post has already completed a remarkable journey.",
           question: "Why does the author say the letter's journey is 'far more complicated' than most people realise?",
-          options: ["Because letters often get lost in the system","Because the letter passes through many stages, machines, and workers before reaching its destination","Because the postbox is difficult to find","Because stamps are expensive","Because the letter has to travel abroad"],
+          options: [
+            "Because letters frequently get lost somewhere in the complicated postal system and never arrive at all",
+            "Because the letter passes through many stages, machines, and workers before reaching its destination",
+            "Because finding the correct postbox to use is surprisingly difficult for people in many parts of the country",
+            "Because stamps have become very expensive and the cost of sending a letter keeps rising every year",
+            "Because the letter has to travel abroad, crossing borders and passing through several different countries"
+          ],
           correct: 1,
           explanation: "The author spends the whole passage revealing the many stages a letter goes through — collection, sorting by machine, bundling, transport by lorry, distribution centres, and finally delivery. Most people simply post a letter and receive one, without knowing about all these steps in between. ✓"
         },
@@ -1923,7 +2151,13 @@ const englishData = {
           passageTitle: "How the Post Gets Delivered",
           passage: "Have you ever wondered what happens to a letter after you drop it into the bright red postbox on the corner of your street? Its journey is far more complicated — and far more impressive — than most people realise.\n\nFirst, a Royal Mail postal worker arrives in a van to collect the letters. This happens at least once a day, usually in the late afternoon. The time of the next collection is printed on a small label inside the postbox door, so you can check when your letter will be picked up. The worker unlocks the box with a special key, scoops out all the letters, and loads them into grey canvas sacks.\n\nThe sacks are driven to the nearest sorting office, which is usually a large warehouse on an industrial estate. Here, the real work begins. Letters are tipped onto conveyor belts and fed through machines that can read postcodes at astonishing speed — up to 40,000 letters per hour. The machine scans the address, prints a pattern of orange dots on the envelope, and directs the letter into the correct tray for its destination. Letters that the machine cannot read — perhaps because of messy handwriting — are sorted by hand.\n\nOnce sorted, the letters are bundled together by area and loaded onto lorries. If a letter is travelling a long distance, it might go to one of Royal Mail's main distribution centres before being sent on to the local sorting office nearest to the delivery address. Some letters travel hundreds of miles overnight, arriving at the local office in the early hours of the morning.\n\nFinally, the postal worker — or \"postie,\" as many people call them — sets out on their round. Walking or cycling through the streets, they push letters through letterboxes, starting their round as early as half past six in the morning. By the time most people sit down to breakfast, their post has already completed a remarkable journey.",
           question: "What does the word 'remarkable' mean in the final sentence of the passage?",
-          options: ["Very long and tiring","Ordinary and expected","Impressive and worthy of attention","Dangerous and risky","Quick and simple"],
+          options: [
+            "Very long, tiring, and drawn out",
+            "Ordinary, expected, and unremarkable",
+            "Impressive and worthy of attention",
+            "Dangerous, risky, and unpredictable",
+            "Quick, simple, and straightforward"
+          ],
           correct: 2,
           explanation: "The word 'remarkable' means something that is so impressive or unusual that it deserves to be noticed. The author uses it to emphasise how extraordinary the postal journey is — a letter can travel hundreds of miles overnight and arrive before breakfast. ✓"
         },
@@ -2007,7 +2241,13 @@ const englishData = {
           passageTitle: "The New Girl",
           passage: "Amira stood at the school gates, clutching the straps of her new rucksack so tightly that her knuckles had turned white. Around her, children streamed past in groups of two and three, laughing and chatting as though they had known each other for a hundred years. Which, Amira thought miserably, they probably had — or at least since Reception.\n\nHer family had moved from Birmingham to a small town on the Dorset coast during the summer. Her father's new job at the marine research centre had brought them here, and Amira knew she should be excited. She loved the sea. She loved the idea of living near rock pools and sandy beaches. But right now, standing outside Westcliffe Primary School on a grey Tuesday morning, all she felt was a tight knot of dread in her stomach.\n\n\"You must be Amira!\" A woman with short silver hair and a warm smile appeared beside her. \"I'm Mrs Okafor, your class teacher. Come with me — I'll show you where to put your things.\"\n\nThe classroom was bright and airy, with large windows that looked out over the school field towards the sea. Mrs Okafor introduced Amira to the class, and thirty pairs of eyes turned to stare at her. Amira's cheeks burned. She fixed her gaze on the floor and mumbled hello.\n\nAt break time, a girl with curly red hair and paint-stained fingers appeared at Amira's elbow. \"I'm Rosie,\" she said. \"Do you want to see the rock pool we found at the weekend? I've got photos on the classroom tablet.\" Before Amira could answer, Rosie had grabbed her hand and pulled her across the playground.\n\nBy lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded \"properly exciting.\" Amira found herself laughing for the first time all day.\n\nWalking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.",
           question: "What does the word 'streamed' suggest about how the other children moved past Amira at the school gates?",
-          options: ["They walked slowly and carefully","They ran as fast as they could","They moved in a steady, continuous flow, like water in a river","They pushed past her rudely","They stopped to look at her"],
+          options: [
+            "They walked past her slowly, carefully, and quietly",
+            "They ran past her as fast as they possibly could",
+            "They moved in a steady, continuous flow, like water in a river",
+            "They pushed past her rudely without saying sorry",
+            "They stopped suddenly to stand and look at her"
+          ],
           correct: 2,
           explanation: "The word 'streamed' compares the movement of the children to a flowing stream of water — a continuous, natural flow of people moving steadily past. This makes Amira seem even more isolated, standing still whilst everyone else flows around her. ✓"
         },
@@ -2020,7 +2260,13 @@ const englishData = {
           passageTitle: "The New Girl",
           passage: "Amira stood at the school gates, clutching the straps of her new rucksack so tightly that her knuckles had turned white. Around her, children streamed past in groups of two and three, laughing and chatting as though they had known each other for a hundred years. Which, Amira thought miserably, they probably had — or at least since Reception.\n\nHer family had moved from Birmingham to a small town on the Dorset coast during the summer. Her father's new job at the marine research centre had brought them here, and Amira knew she should be excited. She loved the sea. She loved the idea of living near rock pools and sandy beaches. But right now, standing outside Westcliffe Primary School on a grey Tuesday morning, all she felt was a tight knot of dread in her stomach.\n\n\"You must be Amira!\" A woman with short silver hair and a warm smile appeared beside her. \"I'm Mrs Okafor, your class teacher. Come with me — I'll show you where to put your things.\"\n\nThe classroom was bright and airy, with large windows that looked out over the school field towards the sea. Mrs Okafor introduced Amira to the class, and thirty pairs of eyes turned to stare at her. Amira's cheeks burned. She fixed her gaze on the floor and mumbled hello.\n\nAt break time, a girl with curly red hair and paint-stained fingers appeared at Amira's elbow. \"I'm Rosie,\" she said. \"Do you want to see the rock pool we found at the weekend? I've got photos on the classroom tablet.\" Before Amira could answer, Rosie had grabbed her hand and pulled her across the playground.\n\nBy lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded \"properly exciting.\" Amira found herself laughing for the first time all day.\n\nWalking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.",
           question: "Why does the author end the passage with Amira noticing 'the sunlight dancing on the harbour' and 'the distant cry of gulls'?",
-          options: ["To describe what the weather was like that day","To explain why Dorset is a popular tourist destination","To contrast Dorset with Birmingham","To show that Amira is now feeling happier and more hopeful, and is finally able to appreciate her new home","To explain that Amira wants to become a marine biologist like Rosie"],
+          options: [
+            "To describe in detail what the weather was like on that particular day, so the reader can picture the setting",
+            "To explain why the Dorset coastline is such a popular tourist destination for visitors from across the country",
+            "To create a strong contrast between the grey, industrial feel of Birmingham and the bright beauty of Dorset",
+            "To show that Amira is now feeling happier and more hopeful, and is finally able to appreciate her new home",
+            "To explain that Amira wants to become a marine biologist like Rosie and is now inspired by the natural world"
+          ],
           correct: 3,
           explanation: "The beautiful description of the harbour and gulls mirrors Amira's changing mood. That morning, she was too anxious to notice anything around her. Now, after making a friend and having a good day, she is relaxed enough to see the beauty of her new home. The author uses the setting to reflect Amira's inner feelings — a technique called pathetic fallacy. ✓"
         },
@@ -2072,7 +2318,13 @@ const englishData = {
           passageTitle: "Cycling to School",
           passage: "Across the United Kingdom, more and more children are choosing to cycle to school rather than travel by car. According to recent surveys, around one in twenty primary school pupils now arrives on two wheels — and that number is growing every year. But what makes cycling such a good idea, and how can young riders stay safe on the roads?\n\nThe benefits of cycling are clear. It keeps you fit and healthy, strengthening your heart, lungs, and leg muscles without you even realising it. A twenty-minute cycle ride burns roughly the same energy as half an hour of swimming. Cycling also helps the environment, because bicycles produce no exhaust fumes or pollution. If every family who lived within two miles of school swapped just one car journey a week for a bike ride, it would take thousands of tonnes of carbon dioxide out of the air each year.\n\nSafety, however, is the biggest concern for parents, and rightly so. That is why many primary schools now offer Bikeability training, a programme funded by the government that teaches children to ride confidently on real roads. The course has three levels. Level One covers basic bike handling in a playground or car park — starting, stopping, signalling, and looking behind you. Level Two takes pupils onto quiet local roads, where they learn to deal with junctions, roundabouts, and parked cars. Level Three, for older or more experienced riders, tackles busier roads and more complex situations.\n\nInstructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the \"M-check,\" running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.\n\nSchools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.",
           question: "Why does the author mention that 'bike sheds that once stood half-empty are now full to bursting'?",
-          options: ["To complain that the school needs bigger bike sheds","To explain that children are leaving their bikes at school overnight","To show that Bikeability training has successfully encouraged many more children to cycle to school","To suggest that the bike sheds are too small","To criticise parents for buying too many bicycles"],
+          options: [
+            "To complain that the school urgently needs bigger bike sheds because the current ones are far too small for everyone",
+            "To explain that children have been carelessly leaving their bikes locked at school overnight instead of riding home",
+            "To show that Bikeability training has successfully encouraged many more children to cycle to school",
+            "To suggest that the bike sheds are too small and were poorly designed when the school was originally built",
+            "To criticise parents for buying too many bicycles for their children without thinking about where to store them"
+          ],
           correct: 2,
           explanation: "The contrast between 'half-empty' and 'full to bursting' demonstrates the impact of Bikeability training. The author uses this detail as evidence that the programme has been effective — far more children are now cycling to school than before. ✓"
         },
@@ -2098,7 +2350,13 @@ const englishData = {
           passageTitle: "Cycling to School",
           passage: "Across the United Kingdom, more and more children are choosing to cycle to school rather than travel by car. According to recent surveys, around one in twenty primary school pupils now arrives on two wheels — and that number is growing every year. But what makes cycling such a good idea, and how can young riders stay safe on the roads?\n\nThe benefits of cycling are clear. It keeps you fit and healthy, strengthening your heart, lungs, and leg muscles without you even realising it. A twenty-minute cycle ride burns roughly the same energy as half an hour of swimming. Cycling also helps the environment, because bicycles produce no exhaust fumes or pollution. If every family who lived within two miles of school swapped just one car journey a week for a bike ride, it would take thousands of tonnes of carbon dioxide out of the air each year.\n\nSafety, however, is the biggest concern for parents, and rightly so. That is why many primary schools now offer Bikeability training, a programme funded by the government that teaches children to ride confidently on real roads. The course has three levels. Level One covers basic bike handling in a playground or car park — starting, stopping, signalling, and looking behind you. Level Two takes pupils onto quiet local roads, where they learn to deal with junctions, roundabouts, and parked cars. Level Three, for older or more experienced riders, tackles busier roads and more complex situations.\n\nInstructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the \"M-check,\" running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.\n\nSchools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.",
           question: "What is the author's main purpose in writing this passage?",
-          options: ["To persuade readers that cycling is dangerous and should be avoided","To entertain readers with a funny story about a bike ride","To describe how bicycles are manufactured","To argue that all children should be forced to cycle","To inform readers about the benefits of cycling to school and how Bikeability training keeps children safe"],
+          options: [
+            "To persuade readers that cycling is a dangerous activity and should be avoided by children whenever possible",
+            "To entertain readers with a funny and light-hearted story about a child's disastrous first bicycle ride",
+            "To describe in detail how bicycles are designed, manufactured, and assembled in factories around the world",
+            "To argue that all children across the country should be forced to cycle to school every single day of the week",
+            "To inform readers about the benefits of cycling to school and how Bikeability training keeps children safe"
+          ],
           correct: 4,
           explanation: "The passage is an informative, balanced piece that presents both the benefits of cycling (fitness, environment) and addresses safety concerns (Bikeability training, M-check, helmets). The author's purpose is to inform and gently persuade, showing that cycling is both beneficial and can be done safely with proper training. ✓"
         },
@@ -2112,11 +2370,11 @@ const englishData = {
           passage: "Across the United Kingdom, more and more children are choosing to cycle to school rather than travel by car. According to recent surveys, around one in twenty primary school pupils now arrives on two wheels — and that number is growing every year. But what makes cycling such a good idea, and how can young riders stay safe on the roads?\n\nThe benefits of cycling are clear. It keeps you fit and healthy, strengthening your heart, lungs, and leg muscles without you even realising it. A twenty-minute cycle ride burns roughly the same energy as half an hour of swimming. Cycling also helps the environment, because bicycles produce no exhaust fumes or pollution. If every family who lived within two miles of school swapped just one car journey a week for a bike ride, it would take thousands of tonnes of carbon dioxide out of the air each year.\n\nSafety, however, is the biggest concern for parents, and rightly so. That is why many primary schools now offer Bikeability training, a programme funded by the government that teaches children to ride confidently on real roads. The course has three levels. Level One covers basic bike handling in a playground or car park — starting, stopping, signalling, and looking behind you. Level Two takes pupils onto quiet local roads, where they learn to deal with junctions, roundabouts, and parked cars. Level Three, for older or more experienced riders, tackles busier roads and more complex situations.\n\nInstructors always check that each child's bicycle is roadworthy before a session begins. They use a simple routine called the \"M-check,\" running their eyes over the bike in the shape of the letter M: front wheel, forks, handlebars, seat, and rear wheel. Every rider must also wear a properly fitted helmet.\n\nSchools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.",
           question: "Why does the Bikeability course have three separate levels?",
           options: [
-            "Because the government requires exactly three levels for all training programmes",
+            "Because the government requires exactly three levels for all official training programmes run in schools",
             "So that children can gradually build their skills from safe environments to more challenging real roads",
-            "Because Level One is for girls and Level Two is for boys",
-            "So that younger children never have to cycle at all",
-            "Because each level teaches a completely different sport"
+            "Because Level One is designed for beginners in playgrounds and Level Two is only for experienced older cyclists",
+            "So that younger children in the early years of primary school never have to cycle on roads at all",
+            "Because each level teaches a completely different sport, moving from cycling to scooting to skateboarding"
           ],
           correct: 1,
           explanation: "The passage describes how Level One starts in a safe, enclosed space like a playground, Level Two moves onto quiet local roads, and Level Three tackles busier roads. Each level is a step up in difficulty and real-world challenge. This graduated structure lets children build confidence and skills progressively — they are not thrown onto busy roads before they are ready. It is a really sensible way to learn! ✓"
@@ -2130,7 +2388,13 @@ const englishData = {
           passageTitle: "The Bake Off",
           passage: "\"Right then,\" said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. \"The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win.\"\n\nOliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.\n\nFor the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.\n\nThen disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. \"There's no cocoa!\" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. \"I forgot to put it on the middle shelf!\" she wailed.\n\nPriya looked at the chaos around her, set down her piping bag, and took charge. \"Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know.\"\n\nAn hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.\n\nDad tasted each one slowly, making exaggerated \"mmm\" noises. Finally, he announced: \"I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers.\"",
           question: "What did Oliver decide to bake?",
-          options: ["A three-layer chocolate cake","A Victoria sponge","Lemon drizzle cupcakes","Chocolate brownies","A fruit tart"],
+          options: [
+            "A three-layer chocolate cake",
+            "A Victoria sponge with jam",
+            "Lemon drizzle cupcakes with icing",
+            "Chocolate brownies with walnuts",
+            "A fruit tart with fresh cream"
+          ],
           correct: 0,
           explanation: "The passage states: 'Oliver, who was ten, had decided to make a three-layer chocolate cake.' This is directly stated in the second paragraph. ✓"
         },
@@ -2143,7 +2407,13 @@ const englishData = {
           passageTitle: "The Bake Off",
           passage: "\"Right then,\" said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. \"The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win.\"\n\nOliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.\n\nFor the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.\n\nThen disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. \"There's no cocoa!\" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. \"I forgot to put it on the middle shelf!\" she wailed.\n\nPriya looked at the chaos around her, set down her piping bag, and took charge. \"Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know.\"\n\nAn hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.\n\nDad tasted each one slowly, making exaggerated \"mmm\" noises. Finally, he announced: \"I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers.\"",
           question: "Why did Mum's sponge burn on the bottom?",
-          options: ["The oven was set too high","She forgot to put it on the middle shelf","She left it in for too long","The oven was broken","She used the wrong tin"],
+          options: [
+            "The oven temperature was set too high",
+            "She forgot to put it on the middle shelf",
+            "She left it in the oven for far too long",
+            "The oven was broken and not heating evenly",
+            "She used the wrong size of baking tin"
+          ],
           correct: 1,
           explanation: "Mum explains the problem herself: 'I forgot to put it on the middle shelf!' This caused the bottom of the sponge to burn whilst the top stayed golden. ✓"
         },
@@ -2156,7 +2426,13 @@ const englishData = {
           passageTitle: "The Bake Off",
           passage: "\"Right then,\" said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. \"The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win.\"\n\nOliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.\n\nFor the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.\n\nThen disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. \"There's no cocoa!\" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. \"I forgot to put it on the middle shelf!\" she wailed.\n\nPriya looked at the chaos around her, set down her piping bag, and took charge. \"Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know.\"\n\nAn hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.\n\nDad tasted each one slowly, making exaggerated \"mmm\" noises. Finally, he announced: \"I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers.\"",
           question: "Why does Oliver suspect his Dad volunteered to be the judge?",
-          options: ["Because Dad is an expert baker and could judge fairly","Because nobody else wanted the job","Because Dad wanted to avoid baking and just eat the results instead","Because Dad always wins competitions","Because Dad owns a bakery"],
+          options: [
+            "Because Dad is an expert baker who has won competitions and could therefore judge fairly",
+            "Because nobody else in the family wanted the difficult and thankless job of being the judge",
+            "Because Dad wanted to avoid baking and just eat the results instead",
+            "Because Dad always wins family competitions and thought he would be the most qualified judge",
+            "Because Dad owns a bakery on the high street and knows exactly what makes a good cake"
+          ],
           correct: 2,
           explanation: "The passage says Oliver 'suspected he had volunteered for that role mainly to avoid baking anything himself.' Dad set up the competition but made himself the judge rather than a contestant — and his final comment about eating 'all the leftovers' confirms he was more interested in tasting than making. ✓"
         },
@@ -2182,7 +2458,13 @@ const englishData = {
           passageTitle: "The Bake Off",
           passage: "\"Right then,\" said Dad, rubbing his hands together and surveying the kitchen table, which was covered in bags of flour, eggs, butter, and an alarming number of mixing bowls. \"The Taylor Family Bake Off starts now. You have two hours to bake something spectacular. May the best baker win.\"\n\nOliver, who was ten, had decided to make a three-layer chocolate cake. His older sister Priya had chosen lemon drizzle cupcakes. Mum, who always claimed she could not cook to save her life, was attempting a Victoria sponge. Dad, who had organised the whole competition, was the judge — though Oliver suspected he had volunteered for that role mainly to avoid baking anything himself.\n\nFor the first half hour, everything went smoothly. Oliver carefully weighed his ingredients, cracked his eggs without getting any shell in the mixture, and even remembered to preheat the oven. Priya measured lemon juice with scientific precision, her tongue poking out in concentration. Mum hummed cheerfully as she creamed butter and sugar together.\n\nThen disaster struck. Oliver opened the cupboard to fetch the cocoa powder and discovered that the tin was completely empty. \"There's no cocoa!\" he cried. At the same moment, the kitchen filled with the sharp smell of burning. Mum yanked open the oven door and pulled out a sponge that was golden on top but charcoal-black underneath. \"I forgot to put it on the middle shelf!\" she wailed.\n\nPriya looked at the chaos around her, set down her piping bag, and took charge. \"Oliver, melt some of that dark chocolate instead — it'll be even better than cocoa. Mum, slice off the burnt bottom and we'll cover it with extra cream and jam. Nobody will know.\"\n\nAn hour later, the three creations stood on the table. Oliver's cake was slightly lopsided but tasted incredible. Mum's sponge looked a bit shorter than expected but was perfectly moist inside. Priya's cupcakes were, annoyingly, flawless.\n\nDad tasted each one slowly, making exaggerated \"mmm\" noises. Finally, he announced: \"I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers.\"",
           question: "What is the main message of this story?",
-          options: ["That baking is too difficult for children to do on their own","That competitions always end in disaster","That chocolate cake is better than lemon cupcakes","That fathers should not be allowed to judge baking competitions","That teamwork, quick thinking, and helping each other can turn problems into successes"],
+          options: [
+            "That baking is far too difficult and messy for children to attempt doing completely on their own",
+            "That family competitions always end in disaster because someone will inevitably make a mistake",
+            "That chocolate cake is always better than lemon cupcakes, no matter how carefully they are baked",
+            "That fathers should never be allowed to judge family baking competitions because they are too biased",
+            "That teamwork, quick thinking, and helping each other can turn problems into successes"
+          ],
           correct: 4,
           explanation: "When things go wrong, Priya steps in to help both Oliver and Mum with practical solutions, and the results turn out well. Dad's declaration of a 'three-way tie' reinforces the idea that working together matters more than winning. The story's message is that teamwork and creative problem-solving can overcome setbacks. ✓"
         },
@@ -2253,11 +2535,11 @@ const englishData = {
           "passage": "Most people think of bees as the small, buzzy creatures that hover around flowers in summer, but there is far more to these remarkable insects than meets the eye. In Britain alone, there are over 250 different species of bee, and only one of them — the honeybee — actually makes honey.\n\nBees live in carefully organised colonies. A single honeybee hive can contain up to sixty thousand bees, all working together with incredible precision. At the centre of every hive is the queen, whose only job is to lay eggs — sometimes as many as two thousand in a single day. The worker bees, all female, do everything else: building the honeycomb, feeding the young, guarding the entrance, and flying out to collect nectar and pollen from flowers.\n\nThe way bees communicate is one of nature's greatest marvels. When a worker bee discovers a good source of nectar, she returns to the hive and performs a special movement known as the waggle dance. By wiggling her body in a particular pattern, she tells the other bees exactly how far away the flowers are and in which direction to fly. Scientists have studied this dance for decades and still find new details about how it works.\n\nBees are also essential to the British countryside. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next plant. This process, called pollination, is vital for growing fruits, vegetables, and wildflowers. Without bees, we would lose about a third of the food we eat, including apples, strawberries, and runner beans.\n\nSadly, bee numbers in the United Kingdom have fallen sharply in recent years. Habitat loss, pesticides, and disease have all taken their toll. Conservation groups are now working hard to protect these tiny but mighty creatures, encouraging people to plant wildflowers and avoid harmful chemicals in their gardens.",
           "question": "What does the word 'precision' mean in this passage?",
           "options": [
-            "Speed",
-            "Strength",
+            "Quickness and rapidity",
+            "Physical power or force",
             "Exactness and accuracy",
-            "Happiness",
-            "Noise"
+            "Cheerfulness and delight",
+            "Loud and startling sound"
           ],
           "correct": 2,
           "explanation": "In this passage, 'precision' means exactness and accuracy. It describes how the bees work together with great care and organisation, each one performing its role perfectly. ✓"
@@ -2367,11 +2649,11 @@ const englishData = {
           "passage": "The ocean covers more than seventy per cent of our planet's surface, yet we have explored less of it than we have of the Moon. Beneath the waves lies a world of extraordinary creatures, crushing pressures, and total darkness — a place more alien than anything science fiction could imagine.\n\nThe ocean is divided into layers, rather like a cake. The top layer, called the sunlight zone, stretches down to about two hundred metres. This is where most sea life lives, because sunlight can still reach here, allowing tiny plants called phytoplankton to grow. These microscopic organisms produce over half of all the oxygen we breathe — more than all the world's rainforests combined.\n\nBelow the sunlight zone lies the twilight zone, from two hundred to one thousand metres deep. Here, the light fades to a dim blue glow, and the water grows bitterly cold. Many creatures in this zone have developed the ability to make their own light, a trick called bioluminescence. Lanternfish, for example, have rows of tiny light organs along their bellies that flash and shimmer in the darkness.\n\nDeeper still is the midnight zone, where no sunlight penetrates at all. The pressure here is immense — imagine having fifty jumbo jets stacked on top of you. Yet even here, life finds a way. Giant squid with eyes the size of dinner plates hunt in the blackness, while strange worms cluster around volcanic vents on the ocean floor, feeding on chemicals that would be poisonous to most living things.\n\nThe very deepest part of any ocean is the Mariana Trench in the Pacific, which plunges to nearly eleven thousand metres. In 2019, the British explorer Victor Vescovo became one of the few people ever to reach the bottom. Astonishingly, even there, in the most extreme environment on Earth, he found living creatures — and plastic rubbish.",
           "question": "What does the word 'penetrates' mean in this passage?",
           "options": [
-            "Bounces off",
-            "Disappears from",
-            "Heats up",
+            "Bounces off and reflects back from",
+            "Disappears from and fades away in",
+            "Heats up and raises the warmth of",
             "Passes through and reaches into",
-            "Floats above"
+            "Floats above and hovers on top of"
           ],
           "correct": 3,
           "explanation": "In this context, 'penetrates' means passes through and reaches into. The passage says 'no sunlight penetrates at all' in the midnight zone, meaning light cannot pass through the water to reach that depth. ✓"
@@ -2481,10 +2763,10 @@ const englishData = {
           "passage": "Few things in nature are as dramatic as a thunderstorm. The sky darkens, the wind picks up, and then — a blinding flash of lightning tears across the clouds, followed seconds later by a deep rumble of thunder. For thousands of years, people believed lightning was a weapon of the gods. Today, science has revealed the true story, and it is just as remarkable.\n\nLightning is a giant spark of electricity. Inside a storm cloud, tiny ice crystals and water droplets collide with each other millions of times, building up an enormous electrical charge. The top of the cloud becomes positively charged, while the bottom becomes negatively charged. When the difference between these charges becomes too great, the electricity is released in a sudden, powerful bolt.\n\nA single bolt of lightning can reach temperatures of around thirty thousand degrees Celsius — that is roughly five times hotter than the surface of the Sun. It travels at speeds of up to two hundred and seventy thousand miles per hour, and the flash lasts for less than a second. The thunder we hear is caused by the lightning heating the air so rapidly that it expands faster than the speed of sound, creating a shock wave.\n\nBritain experiences about three hundred thousand lightning strikes each year, mostly during the summer months when warm, humid air rises quickly and forms towering cumulonimbus clouds. The south-east of England tends to see more thunderstorms than anywhere else in the country.\n\nLightning can be dangerous, striking trees, buildings, and occasionally people. However, being struck by lightning is extremely rare — the odds are roughly one in a million. Tall structures like church steeples and skyscrapers are protected by lightning conductors, metal rods that safely channel the electricity into the ground.\n\nScientists are still learning about lightning. Some storms produce mysterious upward-shooting bolts called blue jets and red sprites, which flash above the clouds into the upper atmosphere. These strange phenomena were only discovered in the 1990s, proving that even our most familiar weather still holds secrets.",
           "question": "What does the word 'phenomena' mean in this passage?",
           "options": [
-            "Dangerous accidents",
-            "Electrical equipment",
-            "Weather forecasts",
-            "Scientific experiments",
+            "Dangerous accidents or disasters",
+            "Pieces of electrical equipment",
+            "Predictions about future weather",
+            "Carefully controlled experiments",
             "Observable events or occurrences"
           ],
           "correct": 4,
@@ -2519,11 +2801,11 @@ const englishData = {
           "passage": "Few things in nature are as dramatic as a thunderstorm. The sky darkens, the wind picks up, and then — a blinding flash of lightning tears across the clouds, followed seconds later by a deep rumble of thunder. For thousands of years, people believed lightning was a weapon of the gods. Today, science has revealed the true story, and it is just as remarkable.\n\nLightning is a giant spark of electricity. Inside a storm cloud, tiny ice crystals and water droplets collide with each other millions of times, building up an enormous electrical charge. The top of the cloud becomes positively charged, while the bottom becomes negatively charged. When the difference between these charges becomes too great, the electricity is released in a sudden, powerful bolt.\n\nA single bolt of lightning can reach temperatures of around thirty thousand degrees Celsius — that is roughly five times hotter than the surface of the Sun. It travels at speeds of up to two hundred and seventy thousand miles per hour, and the flash lasts for less than a second. The thunder we hear is caused by the lightning heating the air so rapidly that it expands faster than the speed of sound, creating a shock wave.\n\nBritain experiences about three hundred thousand lightning strikes each year, mostly during the summer months when warm, humid air rises quickly and forms towering cumulonimbus clouds. The south-east of England tends to see more thunderstorms than anywhere else in the country.\n\nLightning can be dangerous, striking trees, buildings, and occasionally people. However, being struck by lightning is extremely rare — the odds are roughly one in a million. Tall structures like church steeples and skyscrapers are protected by lightning conductors, metal rods that safely channel the electricity into the ground.\n\nScientists are still learning about lightning. Some storms produce mysterious upward-shooting bolts called blue jets and red sprites, which flash above the clouds into the upper atmosphere. These strange phenomena were only discovered in the 1990s, proving that even our most familiar weather still holds secrets.",
           "question": "Why does the author mention that ancient people believed lightning was 'a weapon of the gods'?",
           "options": [
-            "To teach the reader about ancient religions",
+            "To teach the reader about the religious beliefs of ancient civilisations",
             "To show how powerful and frightening lightning seemed before science explained it",
-            "To argue that ancient people were not very intelligent",
-            "To suggest that the scientific explanation is wrong",
-            "To explain why people today are still afraid of storms"
+            "To argue that ancient people were not intelligent enough to understand weather",
+            "To suggest that the modern scientific explanation of lightning is incorrect",
+            "To explain why many people today are still nervous during thunderstorms"
           ],
           "correct": 1,
           "explanation": "The author contrasts the ancient belief with modern scientific understanding. By mentioning that people once thought lightning was divine, the author highlights how dramatic and powerful lightning is — so impressive that people believed only gods could create it. This makes the scientific explanation feel even more remarkable. ✓"
@@ -2596,10 +2878,10 @@ const englishData = {
           "question": "What does the word 'remnant' mean in this passage?",
           "options": [
             "A remaining trace of something from the past",
-            "A dangerous threat",
-            "A type of volcanic rock",
-            "A popular tourist attraction",
-            "A scientific measurement"
+            "A dangerous threat to the surrounding area",
+            "A type of volcanic rock formed during cooling",
+            "A popular tourist attraction in the region",
+            "A scientific measurement used by geologists"
           ],
           "correct": 0,
           "explanation": "In this passage, 'remnant' means a remaining trace or leftover piece of something from the past. Arthur's Seat is described as a remnant of Edinburgh's volcanic history — what is left behind from volcanoes that erupted millions of years ago. ✓"
@@ -2652,11 +2934,11 @@ const englishData = {
           "passage": "Deep beneath the Earth's surface, temperatures are hot enough to melt rock. This molten rock, called magma, churns and swirls in a thick, glowing layer known as the mantle. Sometimes, the pressure becomes so great that the magma forces its way upwards through cracks in the Earth's crust and bursts out onto the surface. When this happens, we call it a volcanic eruption, and the mountain it creates is a volcano.\n\nThere are around 1,500 active volcanoes on Earth, and about twenty of them are erupting at any given moment. Most volcanoes are found along the edges of tectonic plates — the enormous slabs of rock that make up the Earth's outer shell. The Pacific Ring of Fire, a horseshoe-shaped belt stretching around the Pacific Ocean, contains about seventy-five per cent of all active volcanoes.\n\nNot all volcanic eruptions are the same. Some volcanoes, like Kilauea in Hawaii, ooze rivers of lava slowly across the landscape. Others, like Mount Vesuvius in Italy, erupt with terrifying violence, hurling ash, rocks, and poisonous gas high into the sky. The eruption of Vesuvius in AD 79 buried the entire Roman city of Pompeii under six metres of volcanic ash, preserving it almost perfectly for nearly two thousand years.\n\nBritain does not have any active volcanoes today, but it was not always so peaceful. Edinburgh Castle sits on top of an ancient volcanic plug — the solidified core of a volcano that erupted over three hundred million years ago. Arthur's Seat, the famous hill in Edinburgh, is another remnant of this fiery past.\n\nVolcanoes are not entirely destructive. Volcanic soil is extremely fertile, which is why many farmers choose to live on the slopes of volcanoes despite the danger. Volcanic eruptions also release gases that helped form the Earth's atmosphere billions of years ago, and hot springs heated by underground volcanic activity provide warmth and energy in countries like Iceland and New Zealand.",
           "question": "If this passage continued, what topic would the author most likely discuss next?",
           "options": [
-            "How to cook food using volcanic heat",
-            "The history of Edinburgh Castle in detail",
-            "A recipe for making artificial lava at home",
+            "How different cultures around the world use volcanic heat for cooking",
+            "The detailed military history of Edinburgh Castle through the centuries",
+            "A step-by-step guide to making a model volcano for a school project",
             "How scientists monitor and predict volcanic eruptions today",
-            "Why Britain should build more castles"
+            "Why Britain should invest in building more castles for tourism"
           ],
           "correct": 3,
           "explanation": "The passage covers what volcanoes are, where they are found, their dangers, and their benefits. The logical next step would be to explain how scientists try to predict eruptions to keep people safe — this follows naturally from the themes of danger and human interaction with volcanoes. ✓"
@@ -2709,11 +2991,11 @@ const englishData = {
           "passage": "Walk into an ancient woodland in spring and you step into a world that has existed for centuries. Bluebells carpet the floor in a haze of violet. Birdsong fills the air. Sunlight filters through a canopy of oak, ash, and beech trees whose roots have gripped the same soil since before the Tudor kings sat on the throne.\n\nAn ancient woodland is defined as an area that has been continuously wooded since at least 1600 in England and Wales, or 1750 in Scotland. These are not plantations — rows of identical trees planted by humans — but natural forests that have grown and evolved over hundreds of years. Britain has about 652,000 hectares of ancient woodland, but that is just 2.4 per cent of the country's total land area.\n\nThese old forests are extraordinarily rich in wildlife. A single mature oak tree can support up to 2,300 different species, including insects, birds, fungi, mosses, and lichens. Many of these species cannot survive anywhere else. The rare barbastelle bat, for instance, roosts in the peeling bark of old trees, while the purple emperor butterfly breeds only in woodlands where sallow trees grow.\n\nThe soil in ancient woodland is special too. Over centuries, falling leaves have built up a deep, nutrient-rich layer called leaf litter, which feeds countless invertebrates. Fungi spread their networks underground, connecting tree roots in what scientists have nicknamed the 'wood wide web' — a system through which trees can share nutrients and even send chemical warning signals to each other when they are attacked by insects.\n\nDespite their importance, ancient woodlands are under threat. Roads, housing developments, and railway lines have all destroyed patches of irreplaceable forest. Once an ancient woodland is gone, it cannot be recreated — the complex web of life that took centuries to develop is lost forever. Organisations like the Woodland Trust are fighting to protect every remaining fragment.",
           "question": "What does the word 'canopy' mean in this passage?",
           "options": [
-            "The roots of the trees underground",
+            "The network of roots that spreads out underground beneath the trees",
             "The upper layer of branches and leaves that forms a roof",
-            "A type of tent used by campers",
-            "The trunk of a large tree",
-            "A clearing in the middle of a forest"
+            "A type of waterproof tent used by campers in the forest",
+            "The thick bark covering the trunk of a large, old tree",
+            "A clearing or open space found in the middle of a forest"
           ],
           "correct": 1,
           "explanation": "In this passage, 'canopy' refers to the upper layer of branches and leaves that forms a natural roof over the woodland floor. The passage describes sunlight filtering through this canopy, showing that it sits above, shading the ground below. ✓"
@@ -2728,11 +3010,11 @@ const englishData = {
           "passage": "Walk into an ancient woodland in spring and you step into a world that has existed for centuries. Bluebells carpet the floor in a haze of violet. Birdsong fills the air. Sunlight filters through a canopy of oak, ash, and beech trees whose roots have gripped the same soil since before the Tudor kings sat on the throne.\n\nAn ancient woodland is defined as an area that has been continuously wooded since at least 1600 in England and Wales, or 1750 in Scotland. These are not plantations — rows of identical trees planted by humans — but natural forests that have grown and evolved over hundreds of years. Britain has about 652,000 hectares of ancient woodland, but that is just 2.4 per cent of the country's total land area.\n\nThese old forests are extraordinarily rich in wildlife. A single mature oak tree can support up to 2,300 different species, including insects, birds, fungi, mosses, and lichens. Many of these species cannot survive anywhere else. The rare barbastelle bat, for instance, roosts in the peeling bark of old trees, while the purple emperor butterfly breeds only in woodlands where sallow trees grow.\n\nThe soil in ancient woodland is special too. Over centuries, falling leaves have built up a deep, nutrient-rich layer called leaf litter, which feeds countless invertebrates. Fungi spread their networks underground, connecting tree roots in what scientists have nicknamed the 'wood wide web' — a system through which trees can share nutrients and even send chemical warning signals to each other when they are attacked by insects.\n\nDespite their importance, ancient woodlands are under threat. Roads, housing developments, and railway lines have all destroyed patches of irreplaceable forest. Once an ancient woodland is gone, it cannot be recreated — the complex web of life that took centuries to develop is lost forever. Organisations like the Woodland Trust are fighting to protect every remaining fragment.",
           "question": "Why do scientists call the underground fungi network the 'wood wide web'?",
           "options": [
-            "Because trees use the internet to communicate",
-            "Because spiders build webs between the tree roots",
+            "Because trees use the internet to send messages and communicate with one another online",
+            "Because spiders build enormous webs between tree roots that carry chemical signals",
             "Because it is a play on 'world wide web,' comparing the fungi network to the internet",
-            "Because the fungi grow in a web-like pattern above ground",
-            "Because the Woodland Trust invented the name for a website"
+            "Because the fungi grow in a visible web-like pattern above the ground between the trees",
+            "Because the Woodland Trust invented the name for a website promoting their charity work"
           ],
           "correct": 2,
           "explanation": "The nickname 'wood wide web' is a play on words (a pun) based on the 'world wide web' (the internet). Just as the internet connects computers and allows them to share information, the fungi network connects trees and allows them to share nutrients and chemical signals. ✓"
@@ -2766,10 +3048,10 @@ const englishData = {
           "passage": "Walk into an ancient woodland in spring and you step into a world that has existed for centuries. Bluebells carpet the floor in a haze of violet. Birdsong fills the air. Sunlight filters through a canopy of oak, ash, and beech trees whose roots have gripped the same soil since before the Tudor kings sat on the throne.\n\nAn ancient woodland is defined as an area that has been continuously wooded since at least 1600 in England and Wales, or 1750 in Scotland. These are not plantations — rows of identical trees planted by humans — but natural forests that have grown and evolved over hundreds of years. Britain has about 652,000 hectares of ancient woodland, but that is just 2.4 per cent of the country's total land area.\n\nThese old forests are extraordinarily rich in wildlife. A single mature oak tree can support up to 2,300 different species, including insects, birds, fungi, mosses, and lichens. Many of these species cannot survive anywhere else. The rare barbastelle bat, for instance, roosts in the peeling bark of old trees, while the purple emperor butterfly breeds only in woodlands where sallow trees grow.\n\nThe soil in ancient woodland is special too. Over centuries, falling leaves have built up a deep, nutrient-rich layer called leaf litter, which feeds countless invertebrates. Fungi spread their networks underground, connecting tree roots in what scientists have nicknamed the 'wood wide web' — a system through which trees can share nutrients and even send chemical warning signals to each other when they are attacked by insects.\n\nDespite their importance, ancient woodlands are under threat. Roads, housing developments, and railway lines have all destroyed patches of irreplaceable forest. Once an ancient woodland is gone, it cannot be recreated — the complex web of life that took centuries to develop is lost forever. Organisations like the Woodland Trust are fighting to protect every remaining fragment.",
           "question": "Based on the passage, what would most likely happen to the barbastelle bat if ancient woodlands were destroyed?",
           "options": [
-            "It would easily move to gardens and parks",
-            "It would adapt to living in modern buildings",
-            "Nothing would change because bats can live anywhere",
-            "It would start roosting in newer, planted forests",
+            "It would easily move to gardens and parks because bats can adapt to any habitat",
+            "It would quickly adapt to living in modern buildings and newer housing estates",
+            "Nothing would change because bats are able to live comfortably almost anywhere",
+            "It would simply start roosting in newer, planted forests and commercial woodland",
             "It could become extinct because it depends on old trees with peeling bark"
           ],
           "correct": 4,
@@ -2823,11 +3105,11 @@ const englishData = {
           "passage": "On a clear night, far from the glow of streetlights, you can see about two and a half thousand stars with the naked eye. Each one is a ball of burning gas, many times larger than our own Sun, shining across unimaginable distances. The nearest star to Earth, after the Sun, is called Proxima Centauri, and its light takes over four years to reach us.\n\nFor thousands of years, people have looked up and seen patterns in the stars. The ancient Greeks imagined hunters, bears, and mythical creatures traced out across the sky. These patterns are called constellations, and astronomers today recognise eighty-eight of them. In Britain, one of the easiest to spot is the Plough, a group of seven bright stars that looks like a saucepan. It is part of a larger constellation called Ursa Major, meaning the Great Bear.\n\nThe Plough is useful for more than just stargazing. If you draw an imaginary line through the two stars at the front of the Plough's 'bowl' and extend it upwards, it points directly to Polaris, the North Star. Polaris sits almost exactly above the North Pole, so it always shows which direction is north. Sailors, explorers, and travellers have used this trick for centuries to find their way.\n\nNot everything that shines in the night sky is a star. The planets Venus, Jupiter, Mars, and Saturn are all visible without a telescope at certain times of the year. Unlike stars, planets do not twinkle — they shine with a steady light because they are much closer to us and their light does not have to travel as far through the Earth's atmosphere.\n\nLight pollution from towns and cities has made stargazing much harder in modern Britain. The International Dark-Sky Association estimates that eighty per cent of people in Europe and North America can no longer see the Milky Way from where they live. Dark sky reserves, such as the one in Northumberland, have been set up to protect the few remaining places where the stars can still be seen in all their glory.",
           "question": "What does 'the naked eye' mean in this passage?",
           "options": [
-            "An eye without an eyelid",
-            "Looking while squinting",
+            "An eye that has no eyelid to protect it from light",
+            "Looking at the sky while squinting to block glare",
             "Seeing without using a telescope or binoculars",
-            "Closing one eye to focus",
-            "Using a magnifying glass"
+            "Closing one eye tightly in order to focus better",
+            "Using a magnifying glass to look at small objects"
           ],
           "correct": 2,
           "explanation": "The phrase 'the naked eye' means seeing something without the help of any instruments such as telescopes, binoculars, or magnifying glasses — just using your own eyes as they are. ✓"
@@ -2861,10 +3143,10 @@ const englishData = {
           "passage": "On a clear night, far from the glow of streetlights, you can see about two and a half thousand stars with the naked eye. Each one is a ball of burning gas, many times larger than our own Sun, shining across unimaginable distances. The nearest star to Earth, after the Sun, is called Proxima Centauri, and its light takes over four years to reach us.\n\nFor thousands of years, people have looked up and seen patterns in the stars. The ancient Greeks imagined hunters, bears, and mythical creatures traced out across the sky. These patterns are called constellations, and astronomers today recognise eighty-eight of them. In Britain, one of the easiest to spot is the Plough, a group of seven bright stars that looks like a saucepan. It is part of a larger constellation called Ursa Major, meaning the Great Bear.\n\nThe Plough is useful for more than just stargazing. If you draw an imaginary line through the two stars at the front of the Plough's 'bowl' and extend it upwards, it points directly to Polaris, the North Star. Polaris sits almost exactly above the North Pole, so it always shows which direction is north. Sailors, explorers, and travellers have used this trick for centuries to find their way.\n\nNot everything that shines in the night sky is a star. The planets Venus, Jupiter, Mars, and Saturn are all visible without a telescope at certain times of the year. Unlike stars, planets do not twinkle — they shine with a steady light because they are much closer to us and their light does not have to travel as far through the Earth's atmosphere.\n\nLight pollution from towns and cities has made stargazing much harder in modern Britain. The International Dark-Sky Association estimates that eighty per cent of people in Europe and North America can no longer see the Milky Way from where they live. Dark sky reserves, such as the one in Northumberland, have been set up to protect the few remaining places where the stars can still be seen in all their glory.",
           "question": "What is the main purpose of this passage?",
           "options": [
-            "To persuade people to become professional astronomers",
-            "To explain how telescopes work",
-            "To tell a story about ancient Greek myths",
-            "To advertise dark sky reserves in Northumberland",
+            "To persuade people to become professional astronomers and study at university",
+            "To inform the reader about how telescopes work and who invented them",
+            "To retell stories and myths about the stars from ancient Greek religion",
+            "To advertise dark sky reserves and encourage tourists to visit Northumberland",
             "To inform the reader about stars, constellations, and the night sky"
           ],
           "correct": 4,
@@ -2918,11 +3200,11 @@ const englishData = {
           "passage": "The hedgehog is one of Britain's best-loved animals, but it is in serious trouble. Since the year 2000, hedgehog numbers in the United Kingdom have fallen by roughly half, from an estimated 1.5 million to fewer than 750,000. If this decline continues, some scientists believe hedgehogs could disappear from the British countryside within a generation.\n\nHedgehogs are nocturnal creatures, meaning they are active at night. After sunset, they emerge from their nests — usually piles of leaves tucked under hedges or garden sheds — and set off in search of food. A single hedgehog can travel up to two kilometres in one night, snuffling through gardens, fields, and hedgerows looking for slugs, beetles, caterpillars, and earthworms. They eat a remarkable amount: one hedgehog can munch through around eighty slugs in a single night.\n\nThe biggest threat to hedgehogs is not predators like badgers or foxes, but the way humans have changed the landscape. Modern gardens are often surrounded by solid fences and walls with no gaps at the bottom. For a hedgehog trying to travel between gardens, this is like hitting a brick wall — quite literally. Without being able to roam freely, hedgehogs cannot find enough food, mates, or safe nesting sites.\n\nThis is where hedgehog highways come in. A hedgehog highway is simply a small hole, about thirteen centimetres square, cut into the bottom of a garden fence. This tiny gap allows hedgehogs to pass through freely while being too small for most pets to squeeze through. The idea has caught on across Britain, with thousands of homeowners cutting holes in their fences and marking them with special 'Hedgehog Highway' signs.\n\nOther ways to help hedgehogs include leaving a shallow dish of water in the garden, avoiding slug pellets (which poison the slugs that hedgehogs eat), and creating log piles where hedgehogs can hibernate during winter. Hedgehogs curl into a tight ball from November to March, slowing their heartbeat from around 190 beats per minute to just twenty, surviving on the fat reserves they built up during autumn.",
           "question": "Why does the passage say that garden fences are 'like hitting a brick wall — quite literally' for hedgehogs?",
           "options": [
-            "Because hedgehogs enjoy climbing walls",
-            "Because the fences are actually made of bricks",
+            "Because hedgehogs enjoy climbing over walls and fences as part of their nightly routine",
+            "Because the fences between gardens are actually built from solid bricks and mortar",
             "Because solid fences are a real, physical barrier that blocks their movement",
-            "Because hedgehogs are too lazy to find another route",
-            "Because hedgehogs cannot see the fences in the dark"
+            "Because hedgehogs are too lazy to walk around the fence and find another route",
+            "Because hedgehogs cannot see the fences clearly when they are moving in the dark"
           ],
           "correct": 2,
           "explanation": "The author plays with the phrase 'hitting a brick wall' (which usually means encountering a problem) by pointing out that for hedgehogs, the barrier is a real, physical wall or fence that they literally cannot get past. The solid fences genuinely block their movement between gardens. ✓"
@@ -3032,11 +3314,11 @@ const englishData = {
           "passage": "Every drop of rain that falls on your head has been on an incredible journey. The water in today's puddles may once have been drunk by a dinosaur, frozen in an Arctic glacier, or swirled in the current of the River Thames. This is because water on Earth is constantly being recycled in a never-ending process called the water cycle.\n\nThe water cycle begins with evaporation. When the Sun heats the surface of oceans, lakes, and rivers, some of the water turns into an invisible gas called water vapour and rises into the air. Plants also release water vapour through their leaves in a process called transpiration. Together, evaporation and transpiration send enormous amounts of water into the atmosphere — roughly 500,000 cubic kilometres every year.\n\nAs the water vapour rises higher into the sky, the air grows cooler. The vapour cools and turns back into tiny water droplets, which cling to specks of dust in the air. This process is called condensation, and it is how clouds are formed. A single cloud can contain millions of tonnes of water, yet the droplets are so small and light that they float on the air.\n\nWhen the droplets in a cloud combine and grow heavy enough, they fall as precipitation — rain, snow, sleet, or hail, depending on the temperature. In Britain, the wettest region is the Lake District in Cumbria, which receives over 3,000 millimetres of rainfall each year, while the driest is parts of Essex, which receive less than 600 millimetres.\n\nOnce the rain reaches the ground, it follows several paths. Some soaks into the soil and is absorbed by plant roots. Some flows downhill into streams and rivers, which carry it back to the sea. Some seeps deep underground into layers of porous rock called aquifers, where it can remain for thousands of years before eventually resurfacing. And then the cycle begins again — the same water, endlessly circling between earth and sky.",
           "question": "Why does the Lake District receive so much more rainfall than Essex?",
           "options": [
-            "Because it is closer to the equator than Essex",
-            "Because it has more lakes that cause rain to fall",
-            "Because Essex has a barrier that stops rain from falling",
+            "Because it is located much closer to the equator than Essex, making it warmer and wetter",
+            "Because it contains many large lakes that cause additional rain to fall on the land nearby",
+            "Because Essex has a natural barrier along its border that blocks rain clouds from arriving",
             "Because its mountainous landscape forces moist air upwards, causing more rain to form",
-            "Because the Lake District is further south than Essex"
+            "Because the Lake District is located further south than Essex, where rainfall is heavier"
           ],
           "correct": 3,
           "explanation": "Although the passage does not explain why directly, we can infer from what it says about the water cycle that the Lake District's mountains force moist air from the Atlantic upwards, where it cools and condenses into rain. Essex, being flat and in the east, receives less of this moist Atlantic air. ✓"
@@ -3051,10 +3333,10 @@ const englishData = {
           "passage": "Every drop of rain that falls on your head has been on an incredible journey. The water in today's puddles may once have been drunk by a dinosaur, frozen in an Arctic glacier, or swirled in the current of the River Thames. This is because water on Earth is constantly being recycled in a never-ending process called the water cycle.\n\nThe water cycle begins with evaporation. When the Sun heats the surface of oceans, lakes, and rivers, some of the water turns into an invisible gas called water vapour and rises into the air. Plants also release water vapour through their leaves in a process called transpiration. Together, evaporation and transpiration send enormous amounts of water into the atmosphere — roughly 500,000 cubic kilometres every year.\n\nAs the water vapour rises higher into the sky, the air grows cooler. The vapour cools and turns back into tiny water droplets, which cling to specks of dust in the air. This process is called condensation, and it is how clouds are formed. A single cloud can contain millions of tonnes of water, yet the droplets are so small and light that they float on the air.\n\nWhen the droplets in a cloud combine and grow heavy enough, they fall as precipitation — rain, snow, sleet, or hail, depending on the temperature. In Britain, the wettest region is the Lake District in Cumbria, which receives over 3,000 millimetres of rainfall each year, while the driest is parts of Essex, which receive less than 600 millimetres.\n\nOnce the rain reaches the ground, it follows several paths. Some soaks into the soil and is absorbed by plant roots. Some flows downhill into streams and rivers, which carry it back to the sea. Some seeps deep underground into layers of porous rock called aquifers, where it can remain for thousands of years before eventually resurfacing. And then the cycle begins again — the same water, endlessly circling between earth and sky.",
           "question": "What does the word 'porous' mean in this passage?",
           "options": [
-            "Extremely hard and solid",
-            "Frozen solid underground",
-            "Very dark in colour",
-            "Made of sand and gravel",
+            "Extremely hard and solid with no gaps at all",
+            "Frozen solid deep underground for many years",
+            "Very dark in colour and difficult to see through",
+            "Made entirely of compressed sand and gravel",
             "Full of tiny holes that allow water to pass through"
           ],
           "correct": 4,
@@ -3071,10 +3353,10 @@ const englishData = {
           "question": "Why does the author begin by saying the water 'may once have been drunk by a dinosaur'?",
           "options": [
             "To capture the reader's attention with an astonishing and imaginative idea",
-            "To prove that dinosaurs drank water just like humans",
-            "To show that dinosaurs lived in Britain",
-            "To explain how scientists discovered the water cycle",
-            "To argue that rainwater is not safe to drink"
+            "To prove that dinosaurs drank exactly the same water that we drink today",
+            "To show that dinosaurs once lived and roamed across Britain",
+            "To explain how scientists first discovered and understood the water cycle",
+            "To argue that old rainwater is not safe for people to drink"
           ],
           "correct": 0,
           "explanation": "The opening sentence is a hook designed to grab the reader's attention. By connecting something ordinary (a raindrop) to something extraordinary (a dinosaur), the author makes the reader curious and eager to learn more about the water cycle. It also illustrates the key idea that water is endlessly recycled. ✓"
@@ -3108,11 +3390,11 @@ const englishData = {
           "passage": "Every drop of rain that falls on your head has been on an incredible journey. The water in today's puddles may once have been drunk by a dinosaur, frozen in an Arctic glacier, or swirled in the current of the River Thames. This is because water on Earth is constantly being recycled in a never-ending process called the water cycle.\n\nThe water cycle begins with evaporation. When the Sun heats the surface of oceans, lakes, and rivers, some of the water turns into an invisible gas called water vapour and rises into the air. Plants also release water vapour through their leaves in a process called transpiration. Together, evaporation and transpiration send enormous amounts of water into the atmosphere — roughly 500,000 cubic kilometres every year.\n\nAs the water vapour rises higher into the sky, the air grows cooler. The vapour cools and turns back into tiny water droplets, which cling to specks of dust in the air. This process is called condensation, and it is how clouds are formed. A single cloud can contain millions of tonnes of water, yet the droplets are so small and light that they float on the air.\n\nWhen the droplets in a cloud combine and grow heavy enough, they fall as precipitation — rain, snow, sleet, or hail, depending on the temperature. In Britain, the wettest region is the Lake District in Cumbria, which receives over 3,000 millimetres of rainfall each year, while the driest is parts of Essex, which receive less than 600 millimetres.\n\nOnce the rain reaches the ground, it follows several paths. Some soaks into the soil and is absorbed by plant roots. Some flows downhill into streams and rivers, which carry it back to the sea. Some seeps deep underground into layers of porous rock called aquifers, where it can remain for thousands of years before eventually resurfacing. And then the cycle begins again — the same water, endlessly circling between earth and sky.",
           "question": "Why does the author end with the sentence 'And then the cycle begins again — the same water, endlessly circling between earth and sky'?",
           "options": [
-            "To suggest that the water cycle will eventually stop",
-            "To explain that new water is constantly being created",
+            "To suggest that the water cycle will eventually slow down and come to a stop",
+            "To explain that completely new water is being created by natural processes",
             "To remind the reader that the process is circular and never-ending, linking back to the opening",
-            "To encourage the reader to save water at home",
-            "To show that scientists do not fully understand the water cycle"
+            "To encourage the reader to save water at home by using less every day",
+            "To show that scientists do not yet fully understand how the water cycle works"
           ],
           "correct": 2,
           "explanation": "The final sentence brings the passage full circle, echoing the opening idea that water is 'constantly being recycled in a never-ending process.' By ending where it began, the author reinforces the key concept that the water cycle has no start or finish — it is continuous. ✓"
@@ -3146,10 +3428,10 @@ const englishData = {
           "passage": "It is not a cheetah. It is not a sailfish. The fastest animal on the planet is a bird — the peregrine falcon. When hunting, a peregrine tucks its wings against its body and plunges towards its prey in a breathtaking dive called a stoop. During this dive, it can reach speeds of over 240 miles per hour, making it faster than most racing cars and many light aircraft.\n\nPeregrine falcons are found on every continent except Antarctica. In Britain, they were once extremely rare. During the 1960s, a pesticide called DDT was widely used on farms. The chemical worked its way up the food chain: insects absorbed it, small birds ate the insects, and peregrines ate the small birds. The DDT caused the falcons' eggshells to become dangerously thin, so they cracked before the chicks could develop. By 1964, there were fewer than 360 breeding pairs left in the whole of Britain.\n\nAfter DDT was banned in 1984, peregrine numbers slowly recovered. Today, there are an estimated 1,750 breeding pairs in the United Kingdom, and the species is no longer considered endangered. This is one of conservation's greatest success stories.\n\nWhat makes the peregrine's comeback even more remarkable is where many of these birds now choose to live. Instead of nesting only on remote cliff faces, as they did historically, peregrines have moved into cities. Cathedral spires, tower blocks, and power station chimneys have become substitute cliff ledges. In London alone, there are thought to be around thirty breeding pairs. The tall buildings provide perfect vantage points for spotting pigeons, their favourite urban prey.\n\nWatching a peregrine hunt is an unforgettable experience. The falcon circles high above the city, barely visible against the sky. Then, in an instant, it folds its wings and drops like a feathered missile. The stoop lasts just a few seconds, but the impact is devastating — the peregrine strikes its prey with a clenched foot at such speed that the pigeon is killed instantly. It is brutal, but it is also one of the most spectacular sights in British wildlife.",
           "question": "Why have peregrines been able to adapt to living in cities?",
           "options": [
-            "Because people in cities feed them every day",
-            "Because there are no predators in cities",
-            "Because cities are warmer than the countryside",
-            "Because the government built special nesting boxes for them",
+            "Because people who live in cities put out food for them on a daily basis",
+            "Because there are almost no natural predators living in busy city centres",
+            "Because the temperature in cities is slightly warmer than the countryside",
+            "Because the government has built special nesting boxes for them on tall buildings",
             "Because tall buildings resemble the cliff faces where they naturally nest"
           ],
           "correct": 4,
@@ -3166,10 +3448,10 @@ const englishData = {
           "question": "What does the phrase 'vantage points' mean in this passage?",
           "options": [
             "High positions that give a good view of the area below",
-            "Hidden shelters from the wind",
-            "Places where birds build their nests",
-            "Warm spots where the sun shines",
-            "Landing platforms for birds"
+            "Hidden shelters that protect birds from the wind",
+            "Places in the cliffs where birds build their nests",
+            "Warm, sunny spots on the side of a tall building",
+            "Flat landing platforms designed especially for birds"
           ],
           "correct": 0,
           "explanation": "In this passage, 'vantage points' means high positions that give a good, wide view. The tall buildings allow peregrines to look down over a large area and spot pigeons far below, just as a cliff face would in the wild. ✓"
@@ -3184,11 +3466,11 @@ const englishData = {
           "passage": "It is not a cheetah. It is not a sailfish. The fastest animal on the planet is a bird — the peregrine falcon. When hunting, a peregrine tucks its wings against its body and plunges towards its prey in a breathtaking dive called a stoop. During this dive, it can reach speeds of over 240 miles per hour, making it faster than most racing cars and many light aircraft.\n\nPeregrine falcons are found on every continent except Antarctica. In Britain, they were once extremely rare. During the 1960s, a pesticide called DDT was widely used on farms. The chemical worked its way up the food chain: insects absorbed it, small birds ate the insects, and peregrines ate the small birds. The DDT caused the falcons' eggshells to become dangerously thin, so they cracked before the chicks could develop. By 1964, there were fewer than 360 breeding pairs left in the whole of Britain.\n\nAfter DDT was banned in 1984, peregrine numbers slowly recovered. Today, there are an estimated 1,750 breeding pairs in the United Kingdom, and the species is no longer considered endangered. This is one of conservation's greatest success stories.\n\nWhat makes the peregrine's comeback even more remarkable is where many of these birds now choose to live. Instead of nesting only on remote cliff faces, as they did historically, peregrines have moved into cities. Cathedral spires, tower blocks, and power station chimneys have become substitute cliff ledges. In London alone, there are thought to be around thirty breeding pairs. The tall buildings provide perfect vantage points for spotting pigeons, their favourite urban prey.\n\nWatching a peregrine hunt is an unforgettable experience. The falcon circles high above the city, barely visible against the sky. Then, in an instant, it folds its wings and drops like a feathered missile. The stoop lasts just a few seconds, but the impact is devastating — the peregrine strikes its prey with a clenched foot at such speed that the pigeon is killed instantly. It is brutal, but it is also one of the most spectacular sights in British wildlife.",
           "question": "What effect does the simile 'drops like a feathered missile' create?",
           "options": [
-            "It makes the falcon sound slow and gentle",
+            "It makes the falcon sound slow, gentle, and completely unthreatening",
             "It emphasises the terrifying speed, power, and precision of the falcon's dive",
-            "It suggests the falcon is a type of weapon",
-            "It shows that the falcon is as large as a missile",
-            "It makes the falcon seem clumsy and out of control"
+            "It suggests the falcon is a dangerous weapon that is used in warfare",
+            "It shows that the falcon is as large and heavy as a real military missile",
+            "It makes the falcon seem clumsy, awkward, and completely out of control"
           ],
           "correct": 1,
           "explanation": "The simile compares the diving falcon to a missile — a fast, powerful, precisely aimed weapon. This emphasises the incredible speed and deadly accuracy of the peregrine's stoop, helping the reader visualise just how dramatic and lethal the attack is. ✓"
@@ -3317,11 +3599,11 @@ const englishData = {
           "passage": "In November 1922, a British archaeologist named Howard Carter made one of the greatest discoveries in history. After searching the Valley of the Kings in Egypt for more than five years, his team finally uncovered the entrance to a hidden tomb. It belonged to Tutankhamun, a pharaoh who had ruled Egypt over three thousand years earlier.\n\nCarter's hands trembled as he chipped a small hole in the sealed doorway and held up a candle. When his sponsor, Lord Carnarvon, asked if he could see anything, Carter whispered the now-famous words: \"Yes, wonderful things.\" Inside lay golden treasures that had not been seen by human eyes for thousands of years.\n\nThe tomb contained over five thousand objects. There were golden chariots, jewelled necklaces, painted wooden boxes, and even jars of preserved honey. The most famous object of all was the death mask of Tutankhamun himself — a stunning face made from solid gold, weighing over ten kilograms. Its calm expression and striped headdress have become one of the most recognised images in the world.\n\nTutankhamun became pharaoh when he was only about nine years old and died when he was just nineteen. Despite his short life and reign, his tomb has taught historians more about ancient Egyptian beliefs than almost any other discovery. The Egyptians believed that the dead needed their belongings in the afterlife, which is why so many precious items were sealed inside the tomb with the young king.\n\nToday, Tutankhamun's treasures are displayed in the Grand Egyptian Museum near the pyramids of Giza. Millions of visitors travel from around the world to see them, still amazed by the skill and beauty of objects created so long ago.",
           "question": "Why does the author mention that Tutankhamun became pharaoh at about nine years old?",
           "options": [
-            "To suggest he was too young to be a good ruler",
-            "To show that only children could become pharaohs",
-            "To explain why the tomb was so small",
+            "To suggest he was far too young and inexperienced to be a good ruler",
+            "To show that only children from royal families could ever become pharaohs",
+            "To explain why the burial tomb was so small compared to other pharaohs",
             "To help the reader connect with someone who was close to their own age",
-            "To prove that the Egyptians did not care about education"
+            "To prove that the ancient Egyptians did not value education very highly"
           ],
           "correct": 3,
           "explanation": "The author includes Tutankhamun's young age to help young readers relate to the pharaoh — he was not much older than them when he took the throne. This makes the history feel more personal and engaging. The passage does not suggest he was a bad ruler or that the tomb was small. ✓"
@@ -3374,11 +3656,11 @@ const englishData = {
           "passage": "If you travel to the north of England, close to the border with Scotland, you can still walk along the remains of one of the most extraordinary buildings from the ancient world. Hadrian's Wall stretches for seventy-three miles across the country, from Wallsend on the east coast to Bowness-on-Solway in the west. It was built on the orders of Emperor Hadrian, who visited Britain in AD 122.\n\nThe wall took around six years to complete. Thousands of Roman soldiers did the back-breaking work, cutting and carrying enormous stones, mixing mortar, and laying each block by hand. At its tallest, the wall stood about five metres high and was three metres thick — wide enough for soldiers to patrol along the top.\n\nEvery Roman mile along the wall, there was a small fort called a milecastle, where soldiers could shelter and keep watch. Between each milecastle stood two turrets, used as lookout towers. Larger forts were built at important points, housing up to one thousand soldiers each. One of the best-preserved forts is Housesteads, where you can still see the remains of barracks, a hospital, and even the soldiers' toilets.\n\nLife on the wall was not easy. Northern England was bitterly cold in winter, and many of the soldiers had come from warmer parts of the Roman Empire, such as Spain, North Africa, and Syria. Archaeologists have found letters written by these soldiers, complaining about the weather and asking their families to send warm socks and underwear.\n\nHadrian's Wall was not just a military barrier. It also controlled trade and movement, with gateways where merchants could pass through after paying taxes. For nearly three hundred years, the wall marked the northern edge of the Roman Empire — one of the largest empires the world has ever known.",
           "question": "What do the soldiers' letters about warm socks tell us about their experience?",
           "options": [
-            "They enjoyed collecting clothes as a hobby",
+            "They enjoyed collecting different types of clothing as a personal hobby",
             "They were unprepared for how cold Britain was compared to their homelands",
-            "They wanted to start a clothing business",
-            "They were writing to complain about their uniforms",
-            "They had too much free time and nothing to do"
+            "They wanted to set up a clothing business selling woollen goods locally",
+            "They were writing home to complain formally about their military uniforms",
+            "They had far too much free time at the fort and nothing useful to do"
           ],
           "correct": 1,
           "explanation": "The soldiers came from warm countries like Spain, North Africa, and Syria. The fact that they wrote home asking for warm socks and underwear shows they were struggling with the cold British climate, which was very different from what they were used to. ✓"
@@ -3412,11 +3694,11 @@ const englishData = {
           "passage": "If you travel to the north of England, close to the border with Scotland, you can still walk along the remains of one of the most extraordinary buildings from the ancient world. Hadrian's Wall stretches for seventy-three miles across the country, from Wallsend on the east coast to Bowness-on-Solway in the west. It was built on the orders of Emperor Hadrian, who visited Britain in AD 122.\n\nThe wall took around six years to complete. Thousands of Roman soldiers did the back-breaking work, cutting and carrying enormous stones, mixing mortar, and laying each block by hand. At its tallest, the wall stood about five metres high and was three metres thick — wide enough for soldiers to patrol along the top.\n\nEvery Roman mile along the wall, there was a small fort called a milecastle, where soldiers could shelter and keep watch. Between each milecastle stood two turrets, used as lookout towers. Larger forts were built at important points, housing up to one thousand soldiers each. One of the best-preserved forts is Housesteads, where you can still see the remains of barracks, a hospital, and even the soldiers' toilets.\n\nLife on the wall was not easy. Northern England was bitterly cold in winter, and many of the soldiers had come from warmer parts of the Roman Empire, such as Spain, North Africa, and Syria. Archaeologists have found letters written by these soldiers, complaining about the weather and asking their families to send warm socks and underwear.\n\nHadrian's Wall was not just a military barrier. It also controlled trade and movement, with gateways where merchants could pass through after paying taxes. For nearly three hundred years, the wall marked the northern edge of the Roman Empire — one of the largest empires the world has ever known.",
           "question": "Why does the author mention the soldiers' toilets at Housesteads fort?",
           "options": [
-            "To make fun of the Roman soldiers",
-            "To explain why the fort smelled bad",
-            "To prove that Roman soldiers were unhygienic",
+            "To make fun of the Roman soldiers and their daily habits",
+            "To explain why the fort would have smelled unpleasant",
+            "To prove that Roman soldiers were unhygienic and careless about health",
             "To show that even everyday details of Roman life have been preserved",
-            "To suggest that Housesteads was not a serious military base"
+            "To suggest that Housesteads was not a serious or well-organised military base"
           ],
           "correct": 3,
           "explanation": "The author mentions the toilets as a surprising, memorable detail that shows how well-preserved the remains are. It brings the history to life by revealing ordinary, everyday aspects of Roman life — not just grand buildings and battles. The word 'even' signals that this is an unexpectedly complete level of preservation. ✓"
@@ -3451,10 +3733,10 @@ const englishData = {
           "question": "If this text continued, which topic would the author most likely write about next?",
           "options": [
             "What happened to the wall after the Romans left Britain",
-            "A recipe for Roman bread",
-            "How to build a modern brick wall",
-            "The weather forecast for northern England",
-            "A story about a Roman emperor's pet lion"
+            "A recipe for the type of bread Roman soldiers ate",
+            "How to build a modern brick wall in your own garden",
+            "The weather forecast for towns in northern England",
+            "A story about a Roman emperor's favourite pet lion"
           ],
           "correct": 0,
           "explanation": "The passage ends by describing the wall's role over nearly three hundred years. The most logical next topic would be what happened after the Romans left — whether the wall fell into ruin, how it was rediscovered, or how it is protected today. The passage follows a chronological structure, so continuing the timeline makes sense. ✓"
@@ -3507,11 +3789,11 @@ const englishData = {
           "passage": "If you had been invited to a grand feast at the court of Henry VIII, you would have needed a strong appetite. Tudor banquets could last for hours, with dozens of dishes served one after another. The rich ate like kings — quite literally — while the poor survived on bread, pottage, and whatever vegetables they could grow.\n\nAt a royal feast, the food was a way of showing off wealth and power. Whole roasted swans, peacocks with their feathers carefully reattached, and enormous pies filled with live birds were all designed to make guests gasp in amazement. Sugar was incredibly expensive in Tudor times, so the wealthiest hosts would display huge sugar sculptures called subtleties, shaped like castles, ships, or animals.\n\nTable manners were surprisingly important. Guests were expected to wash their hands before and after the meal, share dishes politely with their neighbours, and never pick their teeth at the table. Each person brought their own knife, as forks had not yet arrived in England. Food was eaten with a knife and fingers, or scooped up with pieces of bread called trenchers.\n\nNot everything on the Tudor menu would appeal to modern tastes. Dishes included roasted hedgehog, boiled calf's head, and a jelly made from deer antlers. Spices such as cinnamon, ginger, and saffron were used generously — partly for flavour, but also to disguise meat that was past its best, since there were no refrigerators to keep food fresh.\n\nDrinking water was often unsafe in Tudor England, so even children drank weak beer called small beer. Wine was reserved for the wealthy, imported from France and Spain at great cost. A Tudor feast was not just a meal — it was a spectacular performance, designed to impress, entertain, and remind everyone exactly who held the power.",
           "question": "What does the word 'disguise' mean as used in the fourth paragraph?",
           "options": [
-            "To dress up in a costume",
-            "To improve the quality of",
-            "To destroy completely",
+            "To dress up in a costume or outfit",
+            "To improve the overall quality of",
+            "To destroy or ruin something completely",
             "To hide or cover up something unpleasant",
-            "To cook at a very high temperature"
+            "To cook food at a very high temperature"
           ],
           "correct": 3,
           "explanation": "In this context, 'disguise' means to hide or cover up something — specifically the bad taste of meat that was going off. Although 'disguise' can mean wearing a costume, here it means masking an unpleasant flavour with strong spices. ✓"
@@ -3564,11 +3846,11 @@ const englishData = {
           "passage": "If you had been invited to a grand feast at the court of Henry VIII, you would have needed a strong appetite. Tudor banquets could last for hours, with dozens of dishes served one after another. The rich ate like kings — quite literally — while the poor survived on bread, pottage, and whatever vegetables they could grow.\n\nAt a royal feast, the food was a way of showing off wealth and power. Whole roasted swans, peacocks with their feathers carefully reattached, and enormous pies filled with live birds were all designed to make guests gasp in amazement. Sugar was incredibly expensive in Tudor times, so the wealthiest hosts would display huge sugar sculptures called subtleties, shaped like castles, ships, or animals.\n\nTable manners were surprisingly important. Guests were expected to wash their hands before and after the meal, share dishes politely with their neighbours, and never pick their teeth at the table. Each person brought their own knife, as forks had not yet arrived in England. Food was eaten with a knife and fingers, or scooped up with pieces of bread called trenchers.\n\nNot everything on the Tudor menu would appeal to modern tastes. Dishes included roasted hedgehog, boiled calf's head, and a jelly made from deer antlers. Spices such as cinnamon, ginger, and saffron were used generously — partly for flavour, but also to disguise meat that was past its best, since there were no refrigerators to keep food fresh.\n\nDrinking water was often unsafe in Tudor England, so even children drank weak beer called small beer. Wine was reserved for the wealthy, imported from France and Spain at great cost. A Tudor feast was not just a meal — it was a spectacular performance, designed to impress, entertain, and remind everyone exactly who held the power.",
           "question": "What is the effect of the phrase 'the rich ate like kings — quite literally'?",
           "options": [
-            "It shows that only kings were allowed to eat at feasts",
+            "It shows that only kings were allowed to eat the finest foods at grand feasts",
             "It is a humorous play on the common expression, since they actually dined with the king",
-            "It proves that rich people were greedy",
-            "It suggests the rich were pretending to be royal",
-            "It means the rich people were very unhappy with their food"
+            "It proves that rich people in Tudor England were very greedy and wasteful",
+            "It suggests the rich were pretending to be royal even though they were not",
+            "It means the rich people were very unhappy with the quality of their expensive food"
           ],
           "correct": 1,
           "explanation": "The phrase 'ate like kings' is a common expression meaning to eat very well. The author adds 'quite literally' as a witty observation, because at Henry VIII's court, the rich genuinely were eating alongside the king. This wordplay adds humour and engages the reader. ✓"
@@ -3602,11 +3884,11 @@ const englishData = {
           "passage": "Between September 1940 and May 1941, German aircraft bombed British cities almost every night in a campaign known as the Blitz. The word comes from the German 'Blitzkrieg', meaning lightning war. London was hit the hardest, bombed for fifty-seven nights in a row, but cities across the country suffered too — including Coventry, Liverpool, Bristol, Southampton, and Plymouth.\n\nWhen the air-raid sirens wailed, families had just minutes to reach safety. Many hurried to Anderson shelters — small corrugated metal huts buried in their back gardens and covered with earth. Others headed underground, sheltering in London's Tube stations, where they would sleep on the platforms, bundled in blankets, while trains continued to run through the night.\n\nChildren were among those most affected. Over a million children had already been evacuated from cities to the countryside at the start of the war, sent to live with strangers to keep them safe from the bombs. Many found kind foster families, but others were desperately homesick. Some evacuees had never seen a cow or a field before, having grown up entirely in the city.\n\nDespite the fear and destruction, people showed remarkable courage. Volunteer fire wardens patrolled the streets during raids, and rescue teams worked through the night to pull survivors from collapsed buildings. Neighbours helped one another without being asked. Shops that had been blown open would display signs reading \"More open than usual\" — a dark joke that showed people's determination not to be defeated.\n\nThe phrase 'Blitz spirit' came to describe this attitude of carrying on bravely in the face of terrible danger. Whether it was a shopkeeper sweeping glass from his doorstep at dawn, or a mother singing to her children in a shelter, ordinary people showed extraordinary courage during Britain's darkest hours.",
           "question": "Why were some evacuated children shocked to see cows and fields?",
           "options": [
-            "They were afraid of all animals",
-            "Their parents had told them cows were dangerous",
-            "The countryside had been damaged by bombs too",
+            "They were afraid of all animals, especially large farm animals",
+            "Their parents had warned them that cows in the countryside were dangerous",
+            "The countryside had also been heavily damaged by enemy bombs during the war",
             "They had only ever lived in cities and had never been to the countryside",
-            "They did not know what farms were for"
+            "They did not know what farms were for or how food was actually produced"
           ],
           "correct": 3,
           "explanation": "The passage says 'Some evacuees had never seen a cow or a field before, having grown up entirely in the city.' This tells us these children had only known city life, so the countryside was a completely new and surprising experience for them. ✓"
@@ -3641,10 +3923,10 @@ const englishData = {
           "question": "Why does the author describe the shop sign 'More open than usual' as a 'dark joke'?",
           "options": [
             "Because it uses humour about something terrible — a bombed building now has no walls",
-            "Because the shops had no electricity and were literally dark inside",
-            "Because the shops were open very late at night",
-            "Because the shopkeepers were angry and being sarcastic",
-            "Because children would not understand the joke"
+            "Because the shops had no electricity after the bombing and were literally dark inside",
+            "Because the shops were forced to stay open very late at night during the Blitz",
+            "Because the shopkeepers were furious about the damage and being deeply sarcastic",
+            "Because children walking past the shop would not have understood the joke"
           ],
           "correct": 0,
           "explanation": "This is 'dark humour' — making a joke about something awful. The shop was 'more open than usual' because the walls had been blown away by a bomb, not because it had extended its hours. It shows the British spirit of finding humour even in terrible situations, which is the main theme of the passage. ✓"
@@ -3716,10 +3998,10 @@ const englishData = {
           "passage": "Long before the Romans arrived in Britain, the Celtic people celebrated the turning of the seasons with great fire festivals. The most important of these was Samhain, held on the night of the thirty-first of October. The Celts believed that on this night, the boundary between the world of the living and the world of the dead grew thin, allowing spirits to cross over.\n\nHuge bonfires were lit on hilltops across the land, their flames visible for miles around. Families would extinguish the fires in their own hearths and then relight them using flames carried from the sacred bonfire, believing this would protect their homes for the coming year. People wore animal skins and carved faces into turnips to frighten away evil spirits. If this sounds familiar, it is because our modern Halloween celebrations have their roots in this ancient Celtic festival.\n\nAnother important festival was Beltane, celebrated on the first of May to mark the beginning of summer. Cattle were driven between two large fires before being sent out to their summer pastures, as the Celts believed the smoke would purify the animals and protect them from disease. Young people would leap over the flames for good luck, and flowers were gathered to decorate doorways.\n\nImbolc, held on the first of February, honoured the goddess Brigid and marked the first signs of spring. Families would weave crosses from rushes and hang them above their doors. Many would leave food and drink outside their homes as an offering to Brigid, hoping she would bless their household.\n\nThese festivals followed the agricultural year, marking the times when crops were planted and harvested, when animals were moved to new pastures, and when the cold dark months gave way to warmth and light. Though the Celts left no written records of their own, their traditions survived through centuries of storytelling and can still be seen in celebrations we enjoy today.",
           "question": "What does the passage suggest is the connection between Samhain and modern Halloween?",
           "options": [
-            "There is no connection — they are completely different",
-            "Modern Halloween was invented by shops to sell sweets",
-            "The Romans brought Halloween to Britain after defeating the Celts",
-            "Both festivals celebrate the beginning of summer",
+            "There is no real connection between the two — they are completely different festivals",
+            "Modern Halloween was invented by shops and sweet companies to sell more products",
+            "The Romans brought the idea of Halloween to Britain after defeating the Celtic tribes",
+            "Both festivals were created to celebrate the beginning of summer and longer days",
             "Halloween costumes and carved faces evolved from Celtic traditions of scaring away spirits"
           ],
           "correct": 4,
@@ -3849,11 +4131,11 @@ const englishData = {
           "passage": "On a summer's day in AD 793, monks on the tiny island of Lindisfarne, off the northeast coast of England, looked out to sea and saw something terrifying. Long, narrow ships with carved dragon heads on their prows were cutting through the waves towards them. The Vikings had arrived.\n\nThe raiders leapt ashore, armed with swords and axes. They ransacked the monastery, stealing gold crosses, silver chalices, and precious manuscripts that the monks had spent years creating. Some monks were killed, others were taken as slaves, and the rest fled in terror. News of the attack shocked all of Christian Europe. It was the beginning of the Viking Age in Britain, which would last for nearly three hundred years.\n\nThe Vikings came from Scandinavia — the lands we now call Norway, Sweden, and Denmark. They were skilled sailors who built remarkable longships, designed to cross oceans but shallow enough to sail up rivers. A typical longship was about twenty-three metres long, powered by a large square sail and up to thirty pairs of oars. These ships could carry around sixty warriors, along with their weapons and supplies.\n\nNot all Vikings were raiders, however. Many came to Britain as farmers and traders, settling in areas across northern and eastern England in a region that became known as the Danelaw. They established thriving market towns, including York, which they called Jorvik. Archaeologists have excavated streets in York where Viking craftspeople once made leather shoes, bone combs, and amber jewellery.\n\nThe Vikings also brought their own language, and many English words we use today have Old Norse origins. Words such as 'sky', 'egg', 'window', 'cake', and 'anger' all came from the Viking settlers. Even the names of some days of the week — Thursday (Thor's day) and Friday (Frigg's day) — come from Viking gods. The raiders who once terrified the monks of Lindisfarne left a lasting mark on Britain that can still be seen and heard today.",
           "question": "What does the word 'ransacked' mean in the second paragraph?",
           "options": [
-            "Carefully explored",
+            "Carefully explored and examined",
             "Violently searched and robbed",
-            "Quietly entered",
-            "Set fire to",
-            "Politely visited"
+            "Quietly entered without a sound",
+            "Set fire to and burned down",
+            "Politely visited and inspected"
           ],
           "correct": 1,
           "explanation": "In this context, 'ransacked' means to search through a place violently and steal valuable items. The passage describes the Vikings stealing gold crosses, silver chalices, and manuscripts, which shows the destructive, thorough nature of the attack. ✓"
@@ -3868,11 +4150,11 @@ const englishData = {
           "passage": "On a summer's day in AD 793, monks on the tiny island of Lindisfarne, off the northeast coast of England, looked out to sea and saw something terrifying. Long, narrow ships with carved dragon heads on their prows were cutting through the waves towards them. The Vikings had arrived.\n\nThe raiders leapt ashore, armed with swords and axes. They ransacked the monastery, stealing gold crosses, silver chalices, and precious manuscripts that the monks had spent years creating. Some monks were killed, others were taken as slaves, and the rest fled in terror. News of the attack shocked all of Christian Europe. It was the beginning of the Viking Age in Britain, which would last for nearly three hundred years.\n\nThe Vikings came from Scandinavia — the lands we now call Norway, Sweden, and Denmark. They were skilled sailors who built remarkable longships, designed to cross oceans but shallow enough to sail up rivers. A typical longship was about twenty-three metres long, powered by a large square sail and up to thirty pairs of oars. These ships could carry around sixty warriors, along with their weapons and supplies.\n\nNot all Vikings were raiders, however. Many came to Britain as farmers and traders, settling in areas across northern and eastern England in a region that became known as the Danelaw. They established thriving market towns, including York, which they called Jorvik. Archaeologists have excavated streets in York where Viking craftspeople once made leather shoes, bone combs, and amber jewellery.\n\nThe Vikings also brought their own language, and many English words we use today have Old Norse origins. Words such as 'sky', 'egg', 'window', 'cake', and 'anger' all came from the Viking settlers. Even the names of some days of the week — Thursday (Thor's day) and Friday (Frigg's day) — come from Viking gods. The raiders who once terrified the monks of Lindisfarne left a lasting mark on Britain that can still be seen and heard today.",
           "question": "Why does the author begin with 'Not all Vikings were raiders, however' in the fourth paragraph?",
           "options": [
-            "To apologise for giving wrong information earlier",
-            "To change the subject to something more interesting",
+            "To apologise for giving the reader wrong or misleading information earlier on",
+            "To change the subject to something the author finds more interesting to write about",
             "To challenge the common one-sided view that Vikings were only violent attackers",
-            "To suggest that the Viking raids never actually happened",
-            "To explain why the Vikings eventually left Britain"
+            "To suggest that the violent Viking raids described earlier never actually happened",
+            "To explain the reasons why the Vikings eventually decided to leave Britain"
           ],
           "correct": 2,
           "explanation": "The word 'however' signals a shift in the argument. The author has described the violent raids, but now wants to give a more balanced picture. By showing Vikings were also farmers, traders, and craftspeople, the author challenges the common stereotype that Vikings were nothing more than bloodthirsty warriors. ✓"
@@ -3963,11 +4245,11 @@ const englishData = {
           "passage": "When William the Conqueror invaded England in 1066, one of the first things he did was build castles. Within twenty years of his arrival, over five hundred castles had been constructed across the country. They were not built for comfort — they were built to control a conquered people.\n\nThe earliest castles were simple motte-and-bailey designs: a large mound of earth called a motte, topped with a wooden tower, surrounded by an enclosed yard called a bailey with a wooden fence. These could be built in as little as two weeks using local labour. Over time, wood was replaced with stone, and castles grew larger, grander, and more difficult to attack.\n\nA great stone castle like Warwick or Dover had many layers of defence. The outer walls, called curtain walls, could be three metres thick. Towers were placed at intervals so that archers could fire along the wall at anyone trying to climb it. The entrance was protected by a gatehouse with a heavy iron gate called a portcullis, which could be dropped in seconds to seal the castle.\n\nLife inside a castle was far from luxurious by modern standards. The great hall was the centre of daily life, where the lord, his family, and his household ate, worked, and sometimes even slept. Huge fireplaces provided heat, but the stone walls kept rooms cold and damp. Windows were narrow slits to prevent arrows from entering, which meant rooms were often dark. Fresh rushes mixed with herbs were scattered on the floor to cover the smell of old food and dogs.\n\nDespite these hardships, castles were also places of entertainment. Travelling musicians, jugglers, and storytellers would visit to perform for the lord and his guests. Feasts were held to celebrate important occasions, and children played in the courtyards with hoops, balls, and wooden swords. A medieval castle was a home, a fortress, a court of law, and a small town, all behind one set of walls.",
           "question": "What does the word 'luxurious' mean in the fourth paragraph?",
           "options": [
-            "Dangerous and frightening",
-            "Old-fashioned and plain",
+            "Dangerous and frightening to be in",
+            "Old-fashioned and plain in design",
             "Very comfortable and expensive",
-            "Small and cramped",
-            "Clean and tidy"
+            "Small and cramped with low ceilings",
+            "Clean and tidy but nothing special"
           ],
           "correct": 2,
           "explanation": "The word 'luxurious' means extremely comfortable, elegant, or expensive. The passage says life inside a castle was 'far from luxurious by modern standards', meaning it was not comfortable compared to how we live today, despite the lord being wealthy. ✓"
@@ -4001,10 +4283,10 @@ const englishData = {
           "passage": "When William the Conqueror invaded England in 1066, one of the first things he did was build castles. Within twenty years of his arrival, over five hundred castles had been constructed across the country. They were not built for comfort — they were built to control a conquered people.\n\nThe earliest castles were simple motte-and-bailey designs: a large mound of earth called a motte, topped with a wooden tower, surrounded by an enclosed yard called a bailey with a wooden fence. These could be built in as little as two weeks using local labour. Over time, wood was replaced with stone, and castles grew larger, grander, and more difficult to attack.\n\nA great stone castle like Warwick or Dover had many layers of defence. The outer walls, called curtain walls, could be three metres thick. Towers were placed at intervals so that archers could fire along the wall at anyone trying to climb it. The entrance was protected by a gatehouse with a heavy iron gate called a portcullis, which could be dropped in seconds to seal the castle.\n\nLife inside a castle was far from luxurious by modern standards. The great hall was the centre of daily life, where the lord, his family, and his household ate, worked, and sometimes even slept. Huge fireplaces provided heat, but the stone walls kept rooms cold and damp. Windows were narrow slits to prevent arrows from entering, which meant rooms were often dark. Fresh rushes mixed with herbs were scattered on the floor to cover the smell of old food and dogs.\n\nDespite these hardships, castles were also places of entertainment. Travelling musicians, jugglers, and storytellers would visit to perform for the lord and his guests. Feasts were held to celebrate important occasions, and children played in the courtyards with hoops, balls, and wooden swords. A medieval castle was a home, a fortress, a court of law, and a small town, all behind one set of walls.",
           "question": "If this passage had another paragraph, what would it most likely discuss?",
           "options": [
-            "How to cook a medieval feast at home",
-            "The life cycle of a medieval farm animal",
-            "The rules of a medieval jousting tournament",
-            "How to buy a castle in the modern day",
+            "How to cook a medieval feast at home using ingredients available in the Middle Ages",
+            "The life cycle of a medieval farm animal and the role livestock played in castle life",
+            "The rules and ceremonies of a medieval jousting tournament held at a castle",
+            "How to buy a castle in the modern day and what restoration would involve",
             "Why castles eventually became less important, perhaps due to cannons and gunpowder"
           ],
           "correct": 4,
@@ -4021,10 +4303,10 @@ const englishData = {
           "question": "What is the effect of the opening contrast: 'They were not built for comfort — they were built to control a conquered people'?",
           "options": [
             "It immediately establishes that castles had a harsh military purpose, setting a serious tone",
-            "It makes the reader feel sorry for William the Conqueror",
-            "It suggests that castles were poorly designed buildings",
-            "It proves that the English people welcomed the Norman invasion",
-            "It shows that the author does not like castles"
+            "It makes the reader feel sorry for William the Conqueror and his difficult responsibilities",
+            "It suggests that castles were poorly designed buildings that failed to keep people safe",
+            "It proves that the English people welcomed the Norman invasion and accepted their new rulers",
+            "It shows that the author does not like castles and wants to persuade the reader to agree"
           ],
           "correct": 0,
           "explanation": "The dash creates a sharp contrast between 'comfort' and 'control', immediately telling the reader that castles were instruments of power, not cosy homes. This sets up the serious, informative tone of the passage and hints at the difficult relationship between the Norman conquerors and the English people. ✓"
@@ -4058,11 +4340,11 @@ const englishData = {
           "passage": "In the early 1800s, the factory towns of northern England were filled with a sound that no one today would expect: the voices of children. Boys and girls as young as five years old worked in cotton mills, coal mines, and brick factories, often for fourteen hours a day, six days a week. They were paid a fraction of an adult's wage — sometimes as little as a few pennies.\n\nIn the cotton mills of Lancashire and Yorkshire, children were given the most dangerous jobs. Small fingers were ideal for reaching between the fast-moving parts of spinning machines to fix broken threads. If a child's hand slipped, they could lose fingers or even an entire arm. Exhausted children who fell asleep at their machines were sometimes beaten by overseers to keep them working.\n\nConditions in the coal mines were equally grim. Children called trappers sat alone in total darkness for hours, opening and closing ventilation doors to allow coal wagons to pass through. Others worked as hurriers, dragging heavy carts of coal along tunnels so low that they had to crawl on their hands and knees. The air was thick with dust that damaged their lungs.\n\nChange came slowly. In 1833, the Factory Act banned children under nine from working in textile factories and limited older children to eight hours a day. The Mines Act of 1842 stopped boys under ten and all girls from working underground. These laws were not always enforced, and many factory owners found ways around them, but they were an important first step.\n\nReformers such as Lord Shaftesbury campaigned tirelessly for better conditions, arguing that every child deserved an education and a childhood. Thanks to people like him, the lives of working children gradually improved. By the end of the Victorian era, most children in Britain were attending school rather than working in factories — something we take for granted today, but which was once considered a radical idea.",
           "question": "Why were children, rather than adults, chosen to fix broken threads in spinning machines?",
           "options": [
-            "Because children were more intelligent than adults",
-            "Because adults refused to do the work",
+            "Because children were believed to be more intelligent than the adult factory workers",
+            "Because adults had refused to do the dangerous and dirty work near the machines",
             "Because children had smaller fingers that could fit between the moving parts",
-            "Because children were better at spotting broken threads",
-            "Because the law required factories to hire children"
+            "Because children were thought to be better at spotting broken threads in the cotton",
+            "Because the law at the time required all factories to hire children for certain jobs"
           ],
           "correct": 2,
           "explanation": "The passage explains that 'Small fingers were ideal for reaching between the fast-moving parts of spinning machines to fix broken threads.' Children were chosen specifically because their small hands could fit into narrow gaps where adult hands could not reach. ✓"
@@ -4077,11 +4359,11 @@ const englishData = {
           "passage": "In the early 1800s, the factory towns of northern England were filled with a sound that no one today would expect: the voices of children. Boys and girls as young as five years old worked in cotton mills, coal mines, and brick factories, often for fourteen hours a day, six days a week. They were paid a fraction of an adult's wage — sometimes as little as a few pennies.\n\nIn the cotton mills of Lancashire and Yorkshire, children were given the most dangerous jobs. Small fingers were ideal for reaching between the fast-moving parts of spinning machines to fix broken threads. If a child's hand slipped, they could lose fingers or even an entire arm. Exhausted children who fell asleep at their machines were sometimes beaten by overseers to keep them working.\n\nConditions in the coal mines were equally grim. Children called trappers sat alone in total darkness for hours, opening and closing ventilation doors to allow coal wagons to pass through. Others worked as hurriers, dragging heavy carts of coal along tunnels so low that they had to crawl on their hands and knees. The air was thick with dust that damaged their lungs.\n\nChange came slowly. In 1833, the Factory Act banned children under nine from working in textile factories and limited older children to eight hours a day. The Mines Act of 1842 stopped boys under ten and all girls from working underground. These laws were not always enforced, and many factory owners found ways around them, but they were an important first step.\n\nReformers such as Lord Shaftesbury campaigned tirelessly for better conditions, arguing that every child deserved an education and a childhood. Thanks to people like him, the lives of working children gradually improved. By the end of the Victorian era, most children in Britain were attending school rather than working in factories — something we take for granted today, but which was once considered a radical idea.",
           "question": "What does the word 'radical' mean in the final sentence?",
           "options": [
-            "Boring and ordinary",
-            "Popular and widely supported",
-            "Illegal and forbidden",
+            "Boring and ordinary with no exciting qualities at all",
+            "Popular and widely supported by most people at the time",
+            "Illegal and forbidden under the laws of the country then",
             "Very different from what most people accepted at the time",
-            "Expensive and wasteful"
+            "Expensive and wasteful in a way that angered ordinary people"
           ],
           "correct": 3,
           "explanation": "In this context, 'radical' means very different from what was normal or accepted. The idea that all children should go to school instead of working was seen as extreme and revolutionary at the time, even though it seems completely obvious to us now. ✓"
@@ -4096,11 +4378,11 @@ const englishData = {
           "passage": "In the early 1800s, the factory towns of northern England were filled with a sound that no one today would expect: the voices of children. Boys and girls as young as five years old worked in cotton mills, coal mines, and brick factories, often for fourteen hours a day, six days a week. They were paid a fraction of an adult's wage — sometimes as little as a few pennies.\n\nIn the cotton mills of Lancashire and Yorkshire, children were given the most dangerous jobs. Small fingers were ideal for reaching between the fast-moving parts of spinning machines to fix broken threads. If a child's hand slipped, they could lose fingers or even an entire arm. Exhausted children who fell asleep at their machines were sometimes beaten by overseers to keep them working.\n\nConditions in the coal mines were equally grim. Children called trappers sat alone in total darkness for hours, opening and closing ventilation doors to allow coal wagons to pass through. Others worked as hurriers, dragging heavy carts of coal along tunnels so low that they had to crawl on their hands and knees. The air was thick with dust that damaged their lungs.\n\nChange came slowly. In 1833, the Factory Act banned children under nine from working in textile factories and limited older children to eight hours a day. The Mines Act of 1842 stopped boys under ten and all girls from working underground. These laws were not always enforced, and many factory owners found ways around them, but they were an important first step.\n\nReformers such as Lord Shaftesbury campaigned tirelessly for better conditions, arguing that every child deserved an education and a childhood. Thanks to people like him, the lives of working children gradually improved. By the end of the Victorian era, most children in Britain were attending school rather than working in factories — something we take for granted today, but which was once considered a radical idea.",
           "question": "What technique does the author use in the opening sentence, and what effect does it create?",
           "options": [
-            "A rhetorical question that makes the reader think deeply",
-            "A quotation from a factory owner defending child labour",
-            "A simile comparing factory sounds to children's laughter",
-            "An exaggeration to make the factories seem noisier than they were",
-            "A surprising statement that creates intrigue by making the reader wonder why children's voices were in factories"
+            "A rhetorical question that makes the reader think deeply about the treatment of children in factories",
+            "A quotation from a factory owner defending child labour and claiming the children were well treated",
+            "A simile comparing the loud factory sounds to the laughter of children playing in the schoolyard",
+            "An exaggeration designed to make the factories seem far noisier and more chaotic than they really were",
+            "A surprising statement that creates intrigue by making the reader wonder why children’s voices were in factories"
           ],
           "correct": 4,
           "explanation": "The author opens with 'a sound that no one today would expect: the voices of children.' This is a hook — a surprising or intriguing statement designed to grab the reader's attention. The colon creates a pause before the reveal, making the reader curious about what the unexpected sound could be. ✓"
@@ -4153,11 +4435,11 @@ const englishData = {
           "passage": "It was the first day of the summer holidays, and Jasper had been told to help his grandmother clear out her attic. He had expected dusty boxes of old clothes and broken furniture. What he had not expected was a rolled-up piece of parchment, tucked inside a battered leather satchel behind a stack of encyclopaedias.\n\n\"Gran, what's this?\" he called down the ladder, unrolling the paper carefully. It was brown and brittle at the edges, and it smelled of something ancient — like old books and damp earth mixed together.\n\nHis grandmother climbed halfway up and peered at it through her reading glasses. Her face changed. The colour drained from her cheeks and her mouth fell open.\n\n\"That belonged to your great-grandfather, Arthur,\" she said quietly. \"He was convinced there was something buried in Thornley Woods. Spent years looking for it before the war. I thought he'd thrown all this away.\"\n\nJasper studied the map. It showed a rough outline of the woods behind the village, with paths marked in faded red ink. There were tiny symbols he didn't recognise — a circle with a cross through it, a triangle pointing downward, and what looked like a bird in flight. At the bottom, in shaky handwriting, were the words: \"Start at the split oak. Forty paces north. Look where the shadow falls at noon.\"\n\n\"Can I go and look?\" Jasper asked, his heart hammering.\n\nHis grandmother hesitated. Then a slow smile spread across her face — the kind of smile that made her look forty years younger.\n\n\"I'll get my walking boots,\" she said.",
           "question": "Where did Jasper find the rolled-up parchment?",
           "options": [
-            "Under the floorboards in his bedroom",
-            "In a drawer in his grandmother's kitchen",
+            "Under the dusty floorboards in his bedroom, wrapped in an old cloth",
+            "In a forgotten drawer in his grandmother’s kitchen, beneath some papers",
             "Inside a leather satchel behind encyclopaedias in the attic",
-            "Buried in the garden shed",
-            "Hidden inside an old encyclopaedia"
+            "Buried at the back of the garden shed under a pile of broken tools",
+            "Hidden inside an old encyclopaedia that had been left on the shelf"
           ],
           "correct": 2,
           "explanation": "The passage states the parchment was 'tucked inside a battered leather satchel behind a stack of encyclopaedias' in the attic. This is directly stated in the text. ✓"
@@ -4172,11 +4454,11 @@ const englishData = {
           "passage": "It was the first day of the summer holidays, and Jasper had been told to help his grandmother clear out her attic. He had expected dusty boxes of old clothes and broken furniture. What he had not expected was a rolled-up piece of parchment, tucked inside a battered leather satchel behind a stack of encyclopaedias.\n\n\"Gran, what's this?\" he called down the ladder, unrolling the paper carefully. It was brown and brittle at the edges, and it smelled of something ancient — like old books and damp earth mixed together.\n\nHis grandmother climbed halfway up and peered at it through her reading glasses. Her face changed. The colour drained from her cheeks and her mouth fell open.\n\n\"That belonged to your great-grandfather, Arthur,\" she said quietly. \"He was convinced there was something buried in Thornley Woods. Spent years looking for it before the war. I thought he'd thrown all this away.\"\n\nJasper studied the map. It showed a rough outline of the woods behind the village, with paths marked in faded red ink. There were tiny symbols he didn't recognise — a circle with a cross through it, a triangle pointing downward, and what looked like a bird in flight. At the bottom, in shaky handwriting, were the words: \"Start at the split oak. Forty paces north. Look where the shadow falls at noon.\"\n\n\"Can I go and look?\" Jasper asked, his heart hammering.\n\nHis grandmother hesitated. Then a slow smile spread across her face — the kind of smile that made her look forty years younger.\n\n\"I'll get my walking boots,\" she said.",
           "question": "Why do you think the colour drained from the grandmother's cheeks when she saw the parchment?",
           "options": [
-            "She was angry that Jasper had been snooping",
-            "She felt dizzy from climbing the ladder",
-            "She was frightened of a ghost in the attic",
+            "She was angry that Jasper had been snooping around without her permission",
+            "She felt dizzy and unwell after climbing the steep ladder to the attic",
+            "She was frightened because she believed there was a ghost in the attic",
             "She was shocked to see something she thought had been lost long ago",
-            "She was upset because the map was damaged"
+            "She was upset because the map had been damaged and was now hard to read"
           ],
           "correct": 3,
           "explanation": "The grandmother says 'I thought he'd thrown all this away', showing that seeing the parchment was a complete surprise. Her shock comes from unexpectedly encountering a possession belonging to her father or father-in-law that she believed was gone. The physical reaction of colour draining from her face signals deep surprise and emotion. ✓"
@@ -4191,10 +4473,10 @@ const englishData = {
           "passage": "It was the first day of the summer holidays, and Jasper had been told to help his grandmother clear out her attic. He had expected dusty boxes of old clothes and broken furniture. What he had not expected was a rolled-up piece of parchment, tucked inside a battered leather satchel behind a stack of encyclopaedias.\n\n\"Gran, what's this?\" he called down the ladder, unrolling the paper carefully. It was brown and brittle at the edges, and it smelled of something ancient — like old books and damp earth mixed together.\n\nHis grandmother climbed halfway up and peered at it through her reading glasses. Her face changed. The colour drained from her cheeks and her mouth fell open.\n\n\"That belonged to your great-grandfather, Arthur,\" she said quietly. \"He was convinced there was something buried in Thornley Woods. Spent years looking for it before the war. I thought he'd thrown all this away.\"\n\nJasper studied the map. It showed a rough outline of the woods behind the village, with paths marked in faded red ink. There were tiny symbols he didn't recognise — a circle with a cross through it, a triangle pointing downward, and what looked like a bird in flight. At the bottom, in shaky handwriting, were the words: \"Start at the split oak. Forty paces north. Look where the shadow falls at noon.\"\n\n\"Can I go and look?\" Jasper asked, his heart hammering.\n\nHis grandmother hesitated. Then a slow smile spread across her face — the kind of smile that made her look forty years younger.\n\n\"I'll get my walking boots,\" she said.",
           "question": "What does the word 'brittle' tell us about the parchment?",
           "options": [
-            "It was soft and flexible",
-            "It was freshly made",
-            "It was thick and heavy",
-            "It was damp from the rain",
+            "It was soft and flexible enough to bend easily",
+            "It was freshly made and in very good condition",
+            "It was thick and heavy like a piece of cardboard",
+            "It was damp from the rain leaking through the roof",
             "It was dry and could easily snap or crumble"
           ],
           "correct": 4,
@@ -4210,11 +4492,11 @@ const englishData = {
           "passage": "It was the first day of the summer holidays, and Jasper had been told to help his grandmother clear out her attic. He had expected dusty boxes of old clothes and broken furniture. What he had not expected was a rolled-up piece of parchment, tucked inside a battered leather satchel behind a stack of encyclopaedias.\n\n\"Gran, what's this?\" he called down the ladder, unrolling the paper carefully. It was brown and brittle at the edges, and it smelled of something ancient — like old books and damp earth mixed together.\n\nHis grandmother climbed halfway up and peered at it through her reading glasses. Her face changed. The colour drained from her cheeks and her mouth fell open.\n\n\"That belonged to your great-grandfather, Arthur,\" she said quietly. \"He was convinced there was something buried in Thornley Woods. Spent years looking for it before the war. I thought he'd thrown all this away.\"\n\nJasper studied the map. It showed a rough outline of the woods behind the village, with paths marked in faded red ink. There were tiny symbols he didn't recognise — a circle with a cross through it, a triangle pointing downward, and what looked like a bird in flight. At the bottom, in shaky handwriting, were the words: \"Start at the split oak. Forty paces north. Look where the shadow falls at noon.\"\n\n\"Can I go and look?\" Jasper asked, his heart hammering.\n\nHis grandmother hesitated. Then a slow smile spread across her face — the kind of smile that made her look forty years younger.\n\n\"I'll get my walking boots,\" she said.",
           "question": "What do you think Jasper and his grandmother are most likely to do next?",
           "options": [
-            "Go to Thornley Woods to follow the map's instructions",
-            "Sell the map to a museum",
-            "Put the map back and forget about it",
-            "Phone the police to report the map",
-            "Argue about whether the map is real"
+            "Go to Thornley Woods to follow the map’s instructions",
+            "Sell the map to a museum for a large sum of money",
+            "Put the map back in the attic and forget about it",
+            "Phone the police to report the map and ask for advice",
+            "Argue about whether the map is real or just a fake"
           ],
           "correct": 0,
           "explanation": "The clues all point to an adventure: Jasper asks 'Can I go and look?' with his heart hammering (excitement), and his grandmother says 'I'll get my walking boots' with a youthful smile. They are clearly planning to go to Thornley Woods to follow the map's directions together. ✓"
@@ -4229,11 +4511,11 @@ const englishData = {
           "passage": "It was the first day of the summer holidays, and Jasper had been told to help his grandmother clear out her attic. He had expected dusty boxes of old clothes and broken furniture. What he had not expected was a rolled-up piece of parchment, tucked inside a battered leather satchel behind a stack of encyclopaedias.\n\n\"Gran, what's this?\" he called down the ladder, unrolling the paper carefully. It was brown and brittle at the edges, and it smelled of something ancient — like old books and damp earth mixed together.\n\nHis grandmother climbed halfway up and peered at it through her reading glasses. Her face changed. The colour drained from her cheeks and her mouth fell open.\n\n\"That belonged to your great-grandfather, Arthur,\" she said quietly. \"He was convinced there was something buried in Thornley Woods. Spent years looking for it before the war. I thought he'd thrown all this away.\"\n\nJasper studied the map. It showed a rough outline of the woods behind the village, with paths marked in faded red ink. There were tiny symbols he didn't recognise — a circle with a cross through it, a triangle pointing downward, and what looked like a bird in flight. At the bottom, in shaky handwriting, were the words: \"Start at the split oak. Forty paces north. Look where the shadow falls at noon.\"\n\n\"Can I go and look?\" Jasper asked, his heart hammering.\n\nHis grandmother hesitated. Then a slow smile spread across her face — the kind of smile that made her look forty years younger.\n\n\"I'll get my walking boots,\" she said.",
           "question": "The author describes the grandmother's smile as one that 'made her look forty years younger'. What does this literary device suggest?",
           "options": [
-            "She had actually become younger",
+            "She had actually become younger because of magic in the map",
             "The excitement of the adventure made her feel youthful and alive again",
-            "She was pretending to be a child",
-            "She had put on make-up",
-            "She was tired and wanted to rest"
+            "She was pretending to be a child so Jasper would trust her",
+            "She had put on make-up to look younger before coming upstairs",
+            "She was tired and wanted to rest but was hiding it from Jasper"
           ],
           "correct": 1,
           "explanation": "This is hyperbole (exaggeration for effect). The author does not mean she literally looked forty years younger, but that the excitement and joy of the discovery brought out a youthful energy in her. It suggests the adventure has awakened happy memories and a sense of fun. ✓"
@@ -4248,11 +4530,11 @@ const englishData = {
           "passage": "It was the first day of the summer holidays, and Jasper had been told to help his grandmother clear out her attic. He had expected dusty boxes of old clothes and broken furniture. What he had not expected was a rolled-up piece of parchment, tucked inside a battered leather satchel behind a stack of encyclopaedias.\n\n\"Gran, what's this?\" he called down the ladder, unrolling the paper carefully. It was brown and brittle at the edges, and it smelled of something ancient — like old books and damp earth mixed together.\n\nHis grandmother climbed halfway up and peered at it through her reading glasses. Her face changed. The colour drained from her cheeks and her mouth fell open.\n\n\"That belonged to your great-grandfather, Arthur,\" she said quietly. \"He was convinced there was something buried in Thornley Woods. Spent years looking for it before the war. I thought he'd thrown all this away.\"\n\nJasper studied the map. It showed a rough outline of the woods behind the village, with paths marked in faded red ink. There were tiny symbols he didn't recognise — a circle with a cross through it, a triangle pointing downward, and what looked like a bird in flight. At the bottom, in shaky handwriting, were the words: \"Start at the split oak. Forty paces north. Look where the shadow falls at noon.\"\n\n\"Can I go and look?\" Jasper asked, his heart hammering.\n\nHis grandmother hesitated. Then a slow smile spread across her face — the kind of smile that made her look forty years younger.\n\n\"I'll get my walking boots,\" she said.",
           "question": "Why does the author set the story on 'the first day of the summer holidays'?",
           "options": [
-            "To show that Jasper is lazy and has nothing to do",
-            "To explain why the weather is warm",
+            "To show that Jasper is lazy and bored and has nothing worthwhile to do",
+            "To explain why the weather is warm and the sun is shining that morning",
             "To establish that Jasper has plenty of free time ahead for an adventure",
-            "To tell the reader which month it is",
-            "To show that school is boring"
+            "To tell the reader which month it is and what season the story takes place in",
+            "To show that school is boring and Jasper would rather explore the attic"
           ],
           "correct": 2,
           "explanation": "By setting the story on the first day of the summer holidays, the author establishes that Jasper has a long stretch of free time ahead — perfect for following a treasure map. It creates a sense of possibility and suggests the adventure could continue for days or weeks. This is a deliberate authorial choice to make the plot feel believable. ✓"
@@ -4286,10 +4568,10 @@ const englishData = {
           "passage": "The diving instructor held up three fingers, then two, then one. Mia took a deep breath, bit down on her mouthpiece, and rolled backwards off the boat into the cold, grey water of the English Channel.\n\nFor a moment everything was chaos — bubbles, swirling currents, the muffled thump of her oxygen tank against her back. Then the water cleared, and Mia found herself floating in a silent blue world. Shafts of pale sunlight cut through the water like torches, illuminating tiny particles that drifted past like underwater snow.\n\nHer father appeared beside her, giving a thumbs-up. Together they swam downward, following the anchor line into the gloom. Mia's ears popped as the pressure built. She pinched her nose and blew gently, just as she'd been taught.\n\nThen she saw it.\n\nThe wreck of the Silver Gull lay on the seabed at fourteen metres, tilted to one side like a sleeping giant. It had been a fishing trawler once, her father had explained — lost in a storm in 1987. Now it was something else entirely. Every surface was covered in barnacles and seaweed. Orange and purple anemones clung to the railings. A shoal of silver fish darted through a hole where a window had been, moving together like a single, shimmering creature.\n\nMia swam closer. Through the doorway of the wheelhouse, she could see the ship's wheel, still in place, wrapped in green weed. A large crab sat on top of it, waving its claws as if steering the vessel on one final voyage.\n\nShe reached out and touched the hull. The metal was rough and cold beneath her gloves. Thirty-seven years this ship had been down here, and the sea had completely claimed it — transformed it from something broken into something beautiful.\n\nHer father tapped his watch. Time to go up. But Mia knew she would be back.",
           "question": "What does the sentence 'But Mia knew she would be back' suggest about her feelings?",
           "options": [
-            "She was relieved the dive was over",
-            "She felt frightened and wanted to overcome her fear",
-            "She was worried the wreck might disappear",
-            "She needed to collect something she had dropped",
+            "She was relieved the dive was over and glad to be back on the surface",
+            "She felt frightened by the wreck and wanted to overcome her fear of it",
+            "She was worried the wreck might disappear before she could return to it",
+            "She needed to go back and collect something important she had dropped down there",
             "She was deeply fascinated by the wreck and wanted to explore it further"
           ],
           "correct": 4,
@@ -4306,10 +4588,10 @@ const englishData = {
           "question": "What does the word 'claimed' mean in the phrase 'the sea had completely claimed it'?",
           "options": [
             "Taken ownership of it and made it part of itself",
-            "Complained about it",
-            "Destroyed it completely",
-            "Ignored it",
-            "Pushed it to the surface"
+            "Complained about it loudly and drawn attention to it",
+            "Destroyed it completely so nothing at all remained",
+            "Ignored it entirely and left it sitting untouched",
+            "Pushed it back up to the surface where it could be seen"
           ],
           "correct": 0,
           "explanation": "In this context, 'claimed' means the sea has taken possession of the ship and made it part of the underwater world. The passage supports this — every surface is covered in marine life, showing the sea has absorbed the wreck into its own environment rather than simply destroying it. ✓"
@@ -4324,11 +4606,11 @@ const englishData = {
           "passage": "The diving instructor held up three fingers, then two, then one. Mia took a deep breath, bit down on her mouthpiece, and rolled backwards off the boat into the cold, grey water of the English Channel.\n\nFor a moment everything was chaos — bubbles, swirling currents, the muffled thump of her oxygen tank against her back. Then the water cleared, and Mia found herself floating in a silent blue world. Shafts of pale sunlight cut through the water like torches, illuminating tiny particles that drifted past like underwater snow.\n\nHer father appeared beside her, giving a thumbs-up. Together they swam downward, following the anchor line into the gloom. Mia's ears popped as the pressure built. She pinched her nose and blew gently, just as she'd been taught.\n\nThen she saw it.\n\nThe wreck of the Silver Gull lay on the seabed at fourteen metres, tilted to one side like a sleeping giant. It had been a fishing trawler once, her father had explained — lost in a storm in 1987. Now it was something else entirely. Every surface was covered in barnacles and seaweed. Orange and purple anemones clung to the railings. A shoal of silver fish darted through a hole where a window had been, moving together like a single, shimmering creature.\n\nMia swam closer. Through the doorway of the wheelhouse, she could see the ship's wheel, still in place, wrapped in green weed. A large crab sat on top of it, waving its claws as if steering the vessel on one final voyage.\n\nShe reached out and touched the hull. The metal was rough and cold beneath her gloves. Thirty-seven years this ship had been down here, and the sea had completely claimed it — transformed it from something broken into something beautiful.\n\nHer father tapped his watch. Time to go up. But Mia knew she would be back.",
           "question": "The wreck is described as 'tilted to one side like a sleeping giant'. What technique is the author using and why?",
           "options": [
-            "Alliteration, to make the sentence sound musical",
+            "Alliteration, to make the sentence sound musical and pleasing to the reader’s ear",
             "A simile, to help the reader picture the size and stillness of the wreck",
-            "Onomatopoeia, to create a sound effect",
-            "Repetition, to emphasise the ship's size",
-            "A metaphor, to show the ship is actually alive"
+            "Onomatopoeia, to create a sound effect that echoes the noise of the waves",
+            "Repetition, to emphasise the enormous size of the ship resting on the seabed",
+            "A metaphor, to suggest that the ship is actually alive and sleeping on the ocean floor"
           ],
           "correct": 1,
           "explanation": "The phrase 'like a sleeping giant' is a simile — a comparison using 'like' or 'as'. It helps the reader picture the wreck as something huge and still, resting quietly on the seabed. The word 'sleeping' also suggests peacefulness rather than destruction, matching the passage's theme of beauty in decay. ✓"
@@ -4381,10 +4663,10 @@ const englishData = {
           "passage": "The shop at the end of Pemberton Street had no name above the door — just a faded painting of a clock face with its hands pointing to midnight. Inside, hundreds of clocks covered every wall, their ticking so loud and layered that it sounded like rain on a tin roof.\n\nOscar pushed open the door because his watch had stopped. It was a silver pocket watch that had belonged to his grandfather, and it was the most precious thing he owned. The watchmaker at the shopping centre had refused to fix it, saying the mechanism was too old.\n\n\"May I help you?\" The voice came from behind a curtain of hanging cuckoo clocks. A man appeared — tall and thin, with wild white hair and fingers stained with oil. His eyes, behind thick magnifying spectacles, were startlingly bright, like polished pennies.\n\n\"My watch has stopped,\" Oscar said, holding it out. \"Everyone says it can't be mended.\"\n\nThe old man took the watch and held it to his ear, as if listening for a heartbeat. He turned it over, studying the engraving on the back — a tiny ship sailing beneath a crescent moon.\n\n\"This is a Harrington and Sons, 1952,\" he murmured. \"They only made two hundred of these.\" He looked at Oscar with sudden interest. \"Where did you get it?\"\n\n\"My grandfather left it to me. He was in the Royal Navy.\"\n\nThe clockmaker nodded slowly. Then he did something Oscar didn't expect. He wound the tiny crown on the side — three clicks to the left, two to the right, then one more to the left. The watch began to tick.\n\n\"How did you do that?\" Oscar whispered.\n\nThe clockmaker smiled and placed the watch gently in Oscar's palm. \"Some things aren't broken,\" he said. \"They're just waiting for someone who knows the secret.\"",
           "question": "What was painted above the door of the shop?",
           "options": [
-            "The shop's name in gold letters",
-            "A painting of an old man",
-            "A picture of a pocket watch",
-            "A sign saying 'Closed'",
+            "The shop’s name written out in faded gold letters",
+            "A detailed painting of an old man wearing a hat",
+            "A picture of a pocket watch hanging from a chain",
+            "A sign saying ‘Closed’ with the opening hours below",
             "A clock face with hands pointing to midnight"
           ],
           "correct": 4,
@@ -4419,11 +4701,11 @@ const englishData = {
           "passage": "The shop at the end of Pemberton Street had no name above the door — just a faded painting of a clock face with its hands pointing to midnight. Inside, hundreds of clocks covered every wall, their ticking so loud and layered that it sounded like rain on a tin roof.\n\nOscar pushed open the door because his watch had stopped. It was a silver pocket watch that had belonged to his grandfather, and it was the most precious thing he owned. The watchmaker at the shopping centre had refused to fix it, saying the mechanism was too old.\n\n\"May I help you?\" The voice came from behind a curtain of hanging cuckoo clocks. A man appeared — tall and thin, with wild white hair and fingers stained with oil. His eyes, behind thick magnifying spectacles, were startlingly bright, like polished pennies.\n\n\"My watch has stopped,\" Oscar said, holding it out. \"Everyone says it can't be mended.\"\n\nThe old man took the watch and held it to his ear, as if listening for a heartbeat. He turned it over, studying the engraving on the back — a tiny ship sailing beneath a crescent moon.\n\n\"This is a Harrington and Sons, 1952,\" he murmured. \"They only made two hundred of these.\" He looked at Oscar with sudden interest. \"Where did you get it?\"\n\n\"My grandfather left it to me. He was in the Royal Navy.\"\n\nThe clockmaker nodded slowly. Then he did something Oscar didn't expect. He wound the tiny crown on the side — three clicks to the left, two to the right, then one more to the left. The watch began to tick.\n\n\"How did you do that?\" Oscar whispered.\n\nThe clockmaker smiled and placed the watch gently in Oscar's palm. \"Some things aren't broken,\" he said. \"They're just waiting for someone who knows the secret.\"",
           "question": "What does the word 'mechanism' mean in the phrase 'the mechanism was too old'?",
           "options": [
-            "The outer case of the watch",
+            "The outer metal case that protects and surrounds the watch",
             "The moving parts inside that make the watch work",
-            "The chain attached to the watch",
-            "The glass covering the watch face",
-            "The numbers on the dial"
+            "The chain attached to the watch that keeps it secure",
+            "The glass covering the watch face to protect the dial",
+            "The painted numbers and markings on the watch dial"
           ],
           "correct": 1,
           "explanation": "A 'mechanism' refers to the system of moving parts inside a device that makes it function. In a watch, this means the tiny cogs, springs, and gears inside that drive the hands. The shopping centre watchmaker believed these internal parts were too old to repair. ✓"
@@ -4496,10 +4778,10 @@ const englishData = {
           "question": "Why could Ellie and Sam see behind the waterfall for the first time?",
           "options": [
             "A drought had reduced the waterfall to a thin trickle",
-            "The waterfall had been switched off",
-            "Someone had moved the rocks aside",
-            "They had brought special equipment",
-            "The waterfall had frozen solid"
+            "The waterfall had been switched off by the park wardens",
+            "Someone had carefully moved the heavy rocks aside for them",
+            "They had brought special equipment to see behind the water",
+            "The waterfall had frozen solid because of the cold weather"
           ],
           "correct": 0,
           "explanation": "The passage explains that August was extremely dry — 'the driest month anyone could remember' — and the river had 'shrunk to a trickle'. The waterfall became a 'thin, whispering veil', allowing them to see the rock face and the hidden opening behind it for the first time. ✓"
@@ -4514,11 +4796,11 @@ const englishData = {
           "passage": "The waterfall had always been there, tumbling down the mossy cliff face at the edge of Brynmoor Farm. Ellie and her brother Sam had paddled in the pool beneath it every summer since they were small. But neither of them had ever walked behind it — not until the drought.\n\nAugust had been the driest month anyone could remember. The river that fed the waterfall had shrunk to a trickle, and the thundering curtain of water had become a thin, whispering veil. For the first time, Ellie could see the rock face behind it clearly. And there, half-hidden by ferns and moss, was an opening.\n\n\"Sam, look,\" she breathed. \"There's a gap in the rock.\"\n\nThey squeezed through, one at a time, their shoulders scraping against cold, wet stone. Beyond the narrow entrance, the passage opened into a cavern so large that their voices echoed back to them three times over. Ellie switched on her phone torch. The beam caught something that made them both gasp.\n\nThe walls were covered in paintings. Not modern graffiti, but ancient images drawn in red and brown ochre — stick figures hunting deer, handprints pressed against the stone, and a huge, curved shape that might have been a mammoth or an elephant. The colours were faded but still visible, protected from the weather by the waterfall outside.\n\n\"These must be thousands of years old,\" Sam whispered. His voice bounced around the chamber.\n\nEllie reached out, then stopped herself. She knew you weren't supposed to touch things like this. Instead, she took photographs — dozens of them, from every angle, making sure the flash captured every detail.\n\n\"We need to tell someone,\" she said. \"This could be really important.\"\n\nSam nodded, still staring at a row of handprints that looked no bigger than his own. Someone his age, thousands of years ago, had stood in this exact spot and pressed their hand against the rock. The thought made his skin prickle.",
           "question": "Why did Ellie stop herself from touching the paintings?",
           "options": [
-            "She was afraid they were cursed",
+            "She was afraid they might be cursed and would bring bad luck",
             "She knew that touching ancient artefacts could damage them",
-            "She didn't want to get paint on her hands",
-            "Sam told her not to touch them",
-            "She thought the paint was poisonous"
+            "She didn’t want to get any of the old pigment on her hands",
+            "Sam had warned her not to touch them in case they crumbled",
+            "She thought the paint might be poisonous and unsafe to touch"
           ],
           "correct": 1,
           "explanation": "Ellie 'reached out, then stopped herself' because 'she knew you weren't supposed to touch things like this'. This implies she understands that ancient paintings and artefacts are fragile and can be damaged by touch — oils from skin can deteriorate the pigments. She photographs them instead, showing responsible behaviour. ✓"
@@ -4533,11 +4815,11 @@ const englishData = {
           "passage": "The waterfall had always been there, tumbling down the mossy cliff face at the edge of Brynmoor Farm. Ellie and her brother Sam had paddled in the pool beneath it every summer since they were small. But neither of them had ever walked behind it — not until the drought.\n\nAugust had been the driest month anyone could remember. The river that fed the waterfall had shrunk to a trickle, and the thundering curtain of water had become a thin, whispering veil. For the first time, Ellie could see the rock face behind it clearly. And there, half-hidden by ferns and moss, was an opening.\n\n\"Sam, look,\" she breathed. \"There's a gap in the rock.\"\n\nThey squeezed through, one at a time, their shoulders scraping against cold, wet stone. Beyond the narrow entrance, the passage opened into a cavern so large that their voices echoed back to them three times over. Ellie switched on her phone torch. The beam caught something that made them both gasp.\n\nThe walls were covered in paintings. Not modern graffiti, but ancient images drawn in red and brown ochre — stick figures hunting deer, handprints pressed against the stone, and a huge, curved shape that might have been a mammoth or an elephant. The colours were faded but still visible, protected from the weather by the waterfall outside.\n\n\"These must be thousands of years old,\" Sam whispered. His voice bounced around the chamber.\n\nEllie reached out, then stopped herself. She knew you weren't supposed to touch things like this. Instead, she took photographs — dozens of them, from every angle, making sure the flash captured every detail.\n\n\"We need to tell someone,\" she said. \"This could be really important.\"\n\nSam nodded, still staring at a row of handprints that looked no bigger than his own. Someone his age, thousands of years ago, had stood in this exact spot and pressed their hand against the rock. The thought made his skin prickle.",
           "question": "What does the word 'ochre' refer to in this passage?",
           "options": [
-            "A type of stone used for building",
-            "A kind of ancient tool",
+            "A type of stone used for building walls and shelters",
+            "A kind of ancient tool used for carving into rock",
             "A natural earth pigment used for painting",
-            "A type of animal skin",
-            "A mineral used for cooking"
+            "A type of animal skin prepared for use as clothing",
+            "A mineral used for cooking and preserving food"
           ],
           "correct": 2,
           "explanation": "Ochre is a natural earth pigment — a coloured clay — that was used by ancient people to create paint. The passage describes paintings 'drawn in red and brown ochre', telling us it is the colouring material used to make the cave art. ✓"
@@ -4571,10 +4853,10 @@ const englishData = {
           "passage": "The waterfall had always been there, tumbling down the mossy cliff face at the edge of Brynmoor Farm. Ellie and her brother Sam had paddled in the pool beneath it every summer since they were small. But neither of them had ever walked behind it — not until the drought.\n\nAugust had been the driest month anyone could remember. The river that fed the waterfall had shrunk to a trickle, and the thundering curtain of water had become a thin, whispering veil. For the first time, Ellie could see the rock face behind it clearly. And there, half-hidden by ferns and moss, was an opening.\n\n\"Sam, look,\" she breathed. \"There's a gap in the rock.\"\n\nThey squeezed through, one at a time, their shoulders scraping against cold, wet stone. Beyond the narrow entrance, the passage opened into a cavern so large that their voices echoed back to them three times over. Ellie switched on her phone torch. The beam caught something that made them both gasp.\n\nThe walls were covered in paintings. Not modern graffiti, but ancient images drawn in red and brown ochre — stick figures hunting deer, handprints pressed against the stone, and a huge, curved shape that might have been a mammoth or an elephant. The colours were faded but still visible, protected from the weather by the waterfall outside.\n\n\"These must be thousands of years old,\" Sam whispered. His voice bounced around the chamber.\n\nEllie reached out, then stopped herself. She knew you weren't supposed to touch things like this. Instead, she took photographs — dozens of them, from every angle, making sure the flash captured every detail.\n\n\"We need to tell someone,\" she said. \"This could be really important.\"\n\nSam nodded, still staring at a row of handprints that looked no bigger than his own. Someone his age, thousands of years ago, had stood in this exact spot and pressed their hand against the rock. The thought made his skin prickle.",
           "question": "The author describes the waterfall as a 'thundering curtain of water' that became a 'thin, whispering veil'. What is the effect of this contrast?",
           "options": [
-            "It shows that curtains and veils are similar",
-            "It shows that Ellie prefers quiet places",
-            "It proves that waterfalls are always noisy",
-            "It describes two different waterfalls",
+            "It shows that curtains and veils are similar to falling streams of water",
+            "It shows that Ellie prefers quiet places and does not enjoy loud noises",
+            "It proves that waterfalls are always noisy and can be heard from far away",
+            "It describes two completely different waterfalls found in separate locations",
             "It dramatically shows how much the waterfall changed during the drought"
           ],
           "correct": 4,
@@ -4591,10 +4873,10 @@ const englishData = {
           "question": "Why does the author end the passage with Sam thinking about the ancient child's handprint?",
           "options": [
             "To create a personal connection between the present and the distant past",
-            "To make Sam seem cleverer than Ellie",
-            "To explain how handprints are made",
-            "To suggest Sam wants to be a painter",
-            "To show that the cave is haunted"
+            "To make Sam seem cleverer than Ellie by having him notice the handprint",
+            "To explain the process of how handprints were made by ancient people",
+            "To suggest that Sam wants to be a painter when he is older and has a job",
+            "To show that the cave is haunted by the spirits of children from long ago"
           ],
           "correct": 0,
           "explanation": "By ending with Sam realising a child his own age once stood in the same spot, the author creates a powerful emotional connection across thousands of years. It makes the ancient past feel real and personal, helping the reader feel the same sense of wonder — that history is not just facts in books, but real people who once lived and breathed. ✓"
@@ -4609,11 +4891,11 @@ const englishData = {
           "passage": "Nobody in the village of Kettlebridge had climbed Raven's Peak in over twenty years. The mountain loomed above the valley like a dark throne, its summit hidden in cloud for most of the year. Local people said the path was too dangerous — that loose rocks and sudden mists had driven back every walker who tried.\n\nBut Aisha had read something in the village library that nobody else seemed to know. An old guidebook from 1963, written by a fell-walker named Margaret Booth, described a second path — a hidden route that wound up the eastern side of the mountain, sheltered from the wind and far safer than the well-known western trail.\n\n\"If you find the carved stone at the base of Shepherd's Gill,\" Margaret Booth had written, \"you will see a narrow track leading upward through the bracken. Follow it faithfully and you will reach the summit in three hours.\"\n\nAisha showed the book to her father over breakfast.\n\n\"I've never heard of a carved stone,\" he said, frowning. \"And Margaret Booth — that name rings a bell. She was some sort of local legend, wasn't she? Climbed every peak in the Lake District before she was thirty.\"\n\n\"Can we look for it? The carved stone, I mean. We don't have to climb the whole mountain. Just see if the path exists.\"\n\nHer father stirred his tea slowly. Aisha could see him weighing it up — the sensible parent part of his brain fighting against the adventurous part.\n\n\"We'll take proper gear,\" he said finally. \"Waterproofs, a compass, a charged phone, and enough food for the day. And if the weather turns, we come straight back. Deal?\"\n\n\"Deal,\" said Aisha, already pulling on her boots.\n\nThey found the carved stone at half past nine that morning. It was half-buried in heather, no bigger than a football, with the letters M.B. and an arrow chiselled into its surface. The arrow pointed upward, into the bracken, exactly as the book described.\n\nAisha looked at her father. He looked at her.\n\n\"After you,\" he said.",
           "question": "Who wrote the old guidebook that Aisha found?",
           "options": [
-            "Aisha's father",
+            "Aisha’s father, who explored the fells",
             "A fell-walker named Margaret Booth",
-            "The village librarian",
-            "A mountain rescue volunteer",
-            "A local shepherd"
+            "The village librarian and historian",
+            "A mountain rescue volunteer from the area",
+            "A local shepherd who knew the footpaths"
           ],
           "correct": 1,
           "explanation": "The passage states 'An old guidebook from 1963, written by a fell-walker named Margaret Booth'. This is directly stated in the text. ✓"
@@ -4647,11 +4929,11 @@ const englishData = {
           "passage": "Nobody in the village of Kettlebridge had climbed Raven's Peak in over twenty years. The mountain loomed above the valley like a dark throne, its summit hidden in cloud for most of the year. Local people said the path was too dangerous — that loose rocks and sudden mists had driven back every walker who tried.\n\nBut Aisha had read something in the village library that nobody else seemed to know. An old guidebook from 1963, written by a fell-walker named Margaret Booth, described a second path — a hidden route that wound up the eastern side of the mountain, sheltered from the wind and far safer than the well-known western trail.\n\n\"If you find the carved stone at the base of Shepherd's Gill,\" Margaret Booth had written, \"you will see a narrow track leading upward through the bracken. Follow it faithfully and you will reach the summit in three hours.\"\n\nAisha showed the book to her father over breakfast.\n\n\"I've never heard of a carved stone,\" he said, frowning. \"And Margaret Booth — that name rings a bell. She was some sort of local legend, wasn't she? Climbed every peak in the Lake District before she was thirty.\"\n\n\"Can we look for it? The carved stone, I mean. We don't have to climb the whole mountain. Just see if the path exists.\"\n\nHer father stirred his tea slowly. Aisha could see him weighing it up — the sensible parent part of his brain fighting against the adventurous part.\n\n\"We'll take proper gear,\" he said finally. \"Waterproofs, a compass, a charged phone, and enough food for the day. And if the weather turns, we come straight back. Deal?\"\n\n\"Deal,\" said Aisha, already pulling on her boots.\n\nThey found the carved stone at half past nine that morning. It was half-buried in heather, no bigger than a football, with the letters M.B. and an arrow chiselled into its surface. The arrow pointed upward, into the bracken, exactly as the book described.\n\nAisha looked at her father. He looked at her.\n\n\"After you,\" he said.",
           "question": "What does the word 'loomed' tell us about how the mountain appeared?",
           "options": [
-            "It was small and easy to miss",
-            "It was hidden behind trees",
-            "It was brightly lit by sunshine",
+            "It was small and easy to miss from a distance",
+            "It was hidden behind a thick wall of tall trees",
+            "It was brightly lit by sunshine and looked welcoming",
             "It towered over the valley in a threatening or impressive way",
-            "It was crumbling and falling apart"
+            "It was crumbling and falling apart along its steep edges"
           ],
           "correct": 3,
           "explanation": "The word 'loomed' means to appear large, imposing, and slightly threatening. It tells us the mountain dominated the view of the valley and felt intimidating — which is reinforced by the comparison to 'a dark throne' and the fact that nobody had climbed it for twenty years. ✓"
@@ -4704,11 +4986,11 @@ const englishData = {
           "passage": "Nobody in the village of Kettlebridge had climbed Raven's Peak in over twenty years. The mountain loomed above the valley like a dark throne, its summit hidden in cloud for most of the year. Local people said the path was too dangerous — that loose rocks and sudden mists had driven back every walker who tried.\n\nBut Aisha had read something in the village library that nobody else seemed to know. An old guidebook from 1963, written by a fell-walker named Margaret Booth, described a second path — a hidden route that wound up the eastern side of the mountain, sheltered from the wind and far safer than the well-known western trail.\n\n\"If you find the carved stone at the base of Shepherd's Gill,\" Margaret Booth had written, \"you will see a narrow track leading upward through the bracken. Follow it faithfully and you will reach the summit in three hours.\"\n\nAisha showed the book to her father over breakfast.\n\n\"I've never heard of a carved stone,\" he said, frowning. \"And Margaret Booth — that name rings a bell. She was some sort of local legend, wasn't she? Climbed every peak in the Lake District before she was thirty.\"\n\n\"Can we look for it? The carved stone, I mean. We don't have to climb the whole mountain. Just see if the path exists.\"\n\nHer father stirred his tea slowly. Aisha could see him weighing it up — the sensible parent part of his brain fighting against the adventurous part.\n\n\"We'll take proper gear,\" he said finally. \"Waterproofs, a compass, a charged phone, and enough food for the day. And if the weather turns, we come straight back. Deal?\"\n\n\"Deal,\" said Aisha, already pulling on her boots.\n\nThey found the carved stone at half past nine that morning. It was half-buried in heather, no bigger than a football, with the letters M.B. and an arrow chiselled into its surface. The arrow pointed upward, into the bracken, exactly as the book described.\n\nAisha looked at her father. He looked at her.\n\n\"After you,\" he said.",
           "question": "The author writes that Aisha could see her father 'weighing it up — the sensible parent part of his brain fighting against the adventurous part.' What technique is this and what does it reveal?",
           "options": [
-            "Onomatopoeia — it creates a sound effect of thinking",
+            "Onomatopoeia — it creates a sound effect that captures the buzz of his busy thinking",
             "Personification — it gives his brain human qualities of conflict to show his inner struggle",
-            "Alliteration — it repeats the 'p' sound to create rhythm",
-            "A flashback — it shows a memory from his childhood",
-            "Hyperbole — it exaggerates how long he took to decide"
+            "Alliteration — it repeats the ‘p’ sound to create a pleasing rhythm in the sentence",
+            "A flashback — it shows a memory from his childhood when he explored the fells himself",
+            "Hyperbole — it deliberately exaggerates how long he took to reach his final decision"
           ],
           "correct": 1,
           "explanation": "This is personification — the author gives parts of the father's brain human qualities ('fighting against' each other). It vividly reveals his inner conflict between being a responsible, cautious parent and wanting to join the adventure himself. The technique helps the reader understand his dilemma in a clear, relatable way. ✓"
@@ -4742,11 +5024,11 @@ const englishData = {
           "passage": "The wall ran along the back of Rowan Close for as long as anyone could remember — eight feet high, built from grey stone, and covered in ivy so thick you couldn't see the mortar beneath. No gate, no door, no gap of any kind. Whatever was on the other side had been sealed away.\n\nLily had always wondered about it. She asked her mother, who said it was just an old walled garden belonging to the manor house that had been demolished in the 1960s. She asked Mr Patterson from number twelve, who claimed he'd once seen the top of a tree poking above the wall — a tree with silver leaves.\n\n\"Silver leaves?\" Lily had said. \"Trees don't have silver leaves.\"\n\nMr Patterson had shrugged. \"I know what I saw.\"\n\nOne morning in late October, after a night of fierce wind and driving rain, Lily noticed something had changed. A section of the old wall had collapsed, scattering stones across the muddy path. Through the gap, she could see a tangle of branches and, beyond them, a faint golden light that seemed to come from nowhere — the sky above was thick with grey cloud.\n\nShe stepped through carefully, pushing aside wet brambles. The garden on the other side took her breath away.\n\nIt was enormous — far larger than seemed possible from outside. Ancient fruit trees stood in neat rows, their branches heavy with apples and pears, despite it being nearly November. Roses bloomed along a crumbling stone pathway, their petals deep crimson and impossibly large. A fountain stood at the centre, its water somehow flowing upward before cascading down into a pool so clear she could count the pebbles at the bottom.\n\nAnd there, at the far end of the garden, stood the tree Mr Patterson had described. Its bark was white as chalk, and its leaves — every single one — shimmered like polished silver, catching the strange golden light and scattering it in all directions.\n\nLily stood perfectly still. A robin landed on the fountain's edge and watched her with its head tilted, as though deciding whether she was welcome.",
           "question": "What clues in the passage suggest this garden is not an ordinary garden?",
           "options": [
-            "It has a stone wall and ivy around it",
-            "There is a path leading to the fountain",
-            "The roses are red and there is a robin",
+            "It has a stone wall and ivy around it, which is common in most old country gardens",
+            "There is a path leading to the fountain, which is a normal feature of a large garden",
+            "The roses are red and there is a robin, both of which are everyday sights in autumn",
             "Fruit grows in late October, water flows upward, and a tree has silver leaves",
-            "It has neat rows of trees"
+            "It has neat rows of trees that are trimmed and well cared for by a gardener"
           ],
           "correct": 3,
           "explanation": "Several details suggest something magical: fruit trees are laden with apples and pears 'despite it being nearly November' (out of season), roses bloom with 'impossibly large' petals, the fountain water flows upward before falling, the garden seems 'far larger than seemed possible', and a tree has silver leaves. These are all impossible in an ordinary garden. ✓"
@@ -4761,10 +5043,10 @@ const englishData = {
           "passage": "The wall ran along the back of Rowan Close for as long as anyone could remember — eight feet high, built from grey stone, and covered in ivy so thick you couldn't see the mortar beneath. No gate, no door, no gap of any kind. Whatever was on the other side had been sealed away.\n\nLily had always wondered about it. She asked her mother, who said it was just an old walled garden belonging to the manor house that had been demolished in the 1960s. She asked Mr Patterson from number twelve, who claimed he'd once seen the top of a tree poking above the wall — a tree with silver leaves.\n\n\"Silver leaves?\" Lily had said. \"Trees don't have silver leaves.\"\n\nMr Patterson had shrugged. \"I know what I saw.\"\n\nOne morning in late October, after a night of fierce wind and driving rain, Lily noticed something had changed. A section of the old wall had collapsed, scattering stones across the muddy path. Through the gap, she could see a tangle of branches and, beyond them, a faint golden light that seemed to come from nowhere — the sky above was thick with grey cloud.\n\nShe stepped through carefully, pushing aside wet brambles. The garden on the other side took her breath away.\n\nIt was enormous — far larger than seemed possible from outside. Ancient fruit trees stood in neat rows, their branches heavy with apples and pears, despite it being nearly November. Roses bloomed along a crumbling stone pathway, their petals deep crimson and impossibly large. A fountain stood at the centre, its water somehow flowing upward before cascading down into a pool so clear she could count the pebbles at the bottom.\n\nAnd there, at the far end of the garden, stood the tree Mr Patterson had described. Its bark was white as chalk, and its leaves — every single one — shimmered like polished silver, catching the strange golden light and scattering it in all directions.\n\nLily stood perfectly still. A robin landed on the fountain's edge and watched her with its head tilted, as though deciding whether she was welcome.",
           "question": "What does the word 'cascading' mean in the phrase 'cascading down into a pool'?",
           "options": [
-            "Dripping slowly",
-            "Bubbling gently",
-            "Freezing into ice",
-            "Disappearing completely",
+            "Dripping slowly and steadily one drop at a time",
+            "Bubbling gently as though simmering with warmth",
+            "Freezing into ice and stopping the flow entirely",
+            "Disappearing completely before reaching the ground",
             "Pouring or flowing downward in a rush"
           ],
           "correct": 4,
@@ -4781,10 +5063,10 @@ const englishData = {
           "question": "The robin is described as watching Lily 'as though deciding whether she was welcome'. What technique is this and what mood does it create?",
           "options": [
             "Personification — it gives the robin human judgement, creating a sense of mystery and guardianship",
-            "Alliteration — it creates a musical rhythm",
-            "A simile — it compares the robin to a person",
-            "Repetition — it echoes an earlier phrase",
-            "Onomatopoeia — it imitates the robin's song"
+            "Alliteration — it creates a musical rhythm by repeating the same letter sounds throughout",
+            "A simile — it directly compares the robin to a person using the words ‘like’ or ‘as’",
+            "Repetition — it echoes an earlier phrase to reinforce a key idea about the garden",
+            "Onomatopoeia — it imitates the robin’s song to help the reader hear the sound clearly"
           ],
           "correct": 0,
           "explanation": "This is personification — the robin is given the human ability to make a decision about whether Lily is welcome. This creates a mysterious, almost magical mood, suggesting the garden has its own rules and guardians. The robin seems to be assessing Lily, as though the garden itself is watching her. ✓"
@@ -4799,11 +5081,11 @@ const englishData = {
           "passage": "The wall ran along the back of Rowan Close for as long as anyone could remember — eight feet high, built from grey stone, and covered in ivy so thick you couldn't see the mortar beneath. No gate, no door, no gap of any kind. Whatever was on the other side had been sealed away.\n\nLily had always wondered about it. She asked her mother, who said it was just an old walled garden belonging to the manor house that had been demolished in the 1960s. She asked Mr Patterson from number twelve, who claimed he'd once seen the top of a tree poking above the wall — a tree with silver leaves.\n\n\"Silver leaves?\" Lily had said. \"Trees don't have silver leaves.\"\n\nMr Patterson had shrugged. \"I know what I saw.\"\n\nOne morning in late October, after a night of fierce wind and driving rain, Lily noticed something had changed. A section of the old wall had collapsed, scattering stones across the muddy path. Through the gap, she could see a tangle of branches and, beyond them, a faint golden light that seemed to come from nowhere — the sky above was thick with grey cloud.\n\nShe stepped through carefully, pushing aside wet brambles. The garden on the other side took her breath away.\n\nIt was enormous — far larger than seemed possible from outside. Ancient fruit trees stood in neat rows, their branches heavy with apples and pears, despite it being nearly November. Roses bloomed along a crumbling stone pathway, their petals deep crimson and impossibly large. A fountain stood at the centre, its water somehow flowing upward before cascading down into a pool so clear she could count the pebbles at the bottom.\n\nAnd there, at the far end of the garden, stood the tree Mr Patterson had described. Its bark was white as chalk, and its leaves — every single one — shimmered like polished silver, catching the strange golden light and scattering it in all directions.\n\nLily stood perfectly still. A robin landed on the fountain's edge and watched her with its head tilted, as though deciding whether she was welcome.",
           "question": "Why does the author include Mr Patterson's earlier claim about seeing silver leaves?",
           "options": [
-            "To make Mr Patterson seem silly and forgetful",
+            "To make Mr Patterson seem silly and forgetful so the reader does not take him seriously",
             "To provide foreshadowing — preparing the reader for the magical discovery Lily will make",
-            "To explain why the wall was built",
-            "To show that Lily does not trust her neighbours",
-            "To describe the type of trees that grow locally"
+            "To explain why the stone wall was first built around the edge of the garden long ago",
+            "To show that Lily does not trust her neighbours and prefers to explore things on her own",
+            "To describe the types of unusual trees that grow locally in the area around the garden"
           ],
           "correct": 1,
           "explanation": "Mr Patterson's claim about silver leaves is foreshadowing — a technique where the author plants a hint about something that will happen later. When Lily initially dismisses the idea ('Trees don't have silver leaves'), the reader does too. But when she finds the tree exactly as described, it creates a satisfying sense of wonder and confirms that the garden truly is magical. ✓"
@@ -4856,10 +5138,10 @@ const englishData = {
           "passage": "The builders had been digging foundations for the new school library when their digger struck something metal. Mr Okafor, the head teacher, came out to investigate and found a dented tin box buried about a metre underground, sealed with thick brown tape that had turned brittle with age.\n\nHe brought it into the school hall and opened it in front of the whole of Year Six. Inside was a collection of objects, each wrapped in yellowed newspaper dated 14th June 1975 — exactly fifty years ago to the day.\n\n\"It's a time capsule!\" said Mr Okafor, carefully lifting out the first item. It was a photograph of a class of children standing in rows outside the school. The building behind them was recognisably the same school, though the windows were different and there was no car park — just a wide grass field.\n\n\"Look at their clothes,\" whispered Kai to his friend Deepa. The children in the photograph wore flared trousers and patterned shirts with enormous collars. Some of the girls had ribbons in their hair. Everyone was squinting in the sunshine.\n\nNext came a handwritten letter on lined paper. Mr Okafor read it aloud: \"Dear children of the future, we are the pupils of Class 6B. We hope you are having a good time in your flying cars and robot servants. Our favourite things are: roller skating, watching Crackerjack on the telly, and eating sherbet dip. What are yours? We buried this box so you would know we were here. Please remember us. Yours sincerely, Class 6B, 1975.\"\n\nThe hall went quiet. Kai stared at the photograph again. One boy in the front row had messy hair and a gap-toothed grin. He looked exactly like someone you might sit next to in class today.\n\n\"They didn't get the flying cars,\" Deepa murmured.\n\n\"No,\" said Mr Okafor softly. \"But they got something better. They got remembered.\"",
           "question": "Why did the hall go quiet after Mr Okafor read the letter?",
           "options": [
-            "The children were bored and falling asleep",
-            "The bell had rung for the next lesson",
-            "Mr Okafor told them to be silent",
-            "They were confused by the old-fashioned words",
+            "The children were bored by the letter and some of them were beginning to fall asleep",
+            "The bell had rung for the next lesson and the children were getting ready to leave",
+            "Mr Okafor had told them to be silent so they could hear every word of the letter",
+            "They were confused by the old-fashioned words and did not understand what it meant",
             "They were moved by the personal message from children who once sat where they sit now"
           ],
           "correct": 4,
@@ -4876,10 +5158,10 @@ const englishData = {
           "question": "What does the word 'foundations' mean in 'digging foundations for the new school library'?",
           "options": [
             "The underground base upon which a building is constructed",
-            "Decorations for the outside of a building",
-            "The roof and upper floors of a building",
-            "The furniture inside a room",
-            "The plans drawn by an architect"
+            "The decorative features added to the outside walls of a building",
+            "The roof structure and the upper floors found inside a building",
+            "The furniture and interior fittings placed inside each room",
+            "The detailed architectural plans drawn up before building begins"
           ],
           "correct": 0,
           "explanation": "Foundations are the solid underground structures — usually made of concrete — upon which a building is built. They provide a stable base. The builders were digging into the ground to create these foundations when they accidentally struck the buried time capsule. ✓"
@@ -4894,11 +5176,11 @@ const englishData = {
           "passage": "The builders had been digging foundations for the new school library when their digger struck something metal. Mr Okafor, the head teacher, came out to investigate and found a dented tin box buried about a metre underground, sealed with thick brown tape that had turned brittle with age.\n\nHe brought it into the school hall and opened it in front of the whole of Year Six. Inside was a collection of objects, each wrapped in yellowed newspaper dated 14th June 1975 — exactly fifty years ago to the day.\n\n\"It's a time capsule!\" said Mr Okafor, carefully lifting out the first item. It was a photograph of a class of children standing in rows outside the school. The building behind them was recognisably the same school, though the windows were different and there was no car park — just a wide grass field.\n\n\"Look at their clothes,\" whispered Kai to his friend Deepa. The children in the photograph wore flared trousers and patterned shirts with enormous collars. Some of the girls had ribbons in their hair. Everyone was squinting in the sunshine.\n\nNext came a handwritten letter on lined paper. Mr Okafor read it aloud: \"Dear children of the future, we are the pupils of Class 6B. We hope you are having a good time in your flying cars and robot servants. Our favourite things are: roller skating, watching Crackerjack on the telly, and eating sherbet dip. What are yours? We buried this box so you would know we were here. Please remember us. Yours sincerely, Class 6B, 1975.\"\n\nThe hall went quiet. Kai stared at the photograph again. One boy in the front row had messy hair and a gap-toothed grin. He looked exactly like someone you might sit next to in class today.\n\n\"They didn't get the flying cars,\" Deepa murmured.\n\n\"No,\" said Mr Okafor softly. \"But they got something better. They got remembered.\"",
           "question": "What is the deeper message the author conveys through Mr Okafor's final words: 'They got remembered'?",
           "options": [
-            "That flying cars are not important",
+            "That flying cars are not important and should not be taken seriously by anyone",
             "That being remembered by future generations is more valuable than technology",
-            "That head teachers always know the right thing to say",
-            "That time capsules should be buried in every school",
-            "That 1975 was a better time to be a child"
+            "That head teachers always know the right thing to say to inspire their pupils",
+            "That time capsules should be buried in every school playground across the country",
+            "That 1975 was a better time to be a child compared to the modern day"
           ],
           "correct": 1,
           "explanation": "Mr Okafor's words carry the story's central theme: that human connection across time matters more than material progress. The 1975 children did not get the futuristic inventions they imagined, but their wish — 'Please remember us' — was granted. The author suggests that being remembered and making a lasting impression on others is one of the most meaningful things a person can achieve. ✓"
@@ -4932,11 +5214,11 @@ const englishData = {
           "passage": "The builders had been digging foundations for the new school library when their digger struck something metal. Mr Okafor, the head teacher, came out to investigate and found a dented tin box buried about a metre underground, sealed with thick brown tape that had turned brittle with age.\n\nHe brought it into the school hall and opened it in front of the whole of Year Six. Inside was a collection of objects, each wrapped in yellowed newspaper dated 14th June 1975 — exactly fifty years ago to the day.\n\n\"It's a time capsule!\" said Mr Okafor, carefully lifting out the first item. It was a photograph of a class of children standing in rows outside the school. The building behind them was recognisably the same school, though the windows were different and there was no car park — just a wide grass field.\n\n\"Look at their clothes,\" whispered Kai to his friend Deepa. The children in the photograph wore flared trousers and patterned shirts with enormous collars. Some of the girls had ribbons in their hair. Everyone was squinting in the sunshine.\n\nNext came a handwritten letter on lined paper. Mr Okafor read it aloud: \"Dear children of the future, we are the pupils of Class 6B. We hope you are having a good time in your flying cars and robot servants. Our favourite things are: roller skating, watching Crackerjack on the telly, and eating sherbet dip. What are yours? We buried this box so you would know we were here. Please remember us. Yours sincerely, Class 6B, 1975.\"\n\nThe hall went quiet. Kai stared at the photograph again. One boy in the front row had messy hair and a gap-toothed grin. He looked exactly like someone you might sit next to in class today.\n\n\"They didn't get the flying cars,\" Deepa murmured.\n\n\"No,\" said Mr Okafor softly. \"But they got something better. They got remembered.\"",
           "question": "The author describes the boy in the photograph as looking 'exactly like someone you might sit next to in class today'. Why is this detail effective?",
           "options": [
-            "It proves the photograph is a fake",
-            "It means the boy is a relative of someone in Year Six",
+            "It is included to prove to the reader that the old photograph is actually a fake and not real",
+            "It means the boy is a relative of someone currently in Year Six at the same school today",
             "It shows that children have not changed much across generations, creating a bond between past and present",
-            "It suggests all school photographs look the same",
-            "It is included to make the reader laugh"
+            "It suggests that all school photographs look the same regardless of when they were taken",
+            "It is included to make the reader laugh by comparing old-fashioned clothing to modern styles"
           ],
           "correct": 2,
           "explanation": "By describing the 1975 boy as looking like a modern classmate, the author bridges the fifty-year gap between the two groups of children. It makes the past feel close and real rather than distant and abstract. The detail creates empathy — the reader realises that the children who buried the capsule were just like children today, making their wish to be remembered all the more touching. ✓"
@@ -4970,10 +5252,10 @@ const englishData = {
           "passage": "The villagers of Alderton had a rule that every child learned before they could walk: never enter Blackmere Wood after dark. Nobody explained why. It was simply understood, the way you understood that fire was hot and rivers were deep.\n\nFinn had obeyed the rule his entire life — all eleven years of it. But tonight was different. His younger sister, Rosie, had not come home. She had gone to pick blackberries at the edge of the wood after school, and now it was half past seven, the sky was turning violet, and her basket sat empty on the kitchen step.\n\nHis mother was on the phone to the neighbours. His father was checking the lanes with a torch. Finn stood at the back gate, staring at the dark line of trees two hundred metres across the field.\n\nHe didn't decide to go. His feet simply started walking.\n\nThe wood was different at dusk. The familiar oaks and beeches, friendly enough in daylight, had become tall, dark shapes that seemed to lean inward. The ground was soft and silent — no crunch of leaves, no snap of twigs. Just a thick, mossy carpet that swallowed every footstep.\n\nThen he heard it. A whispering sound, like hundreds of people talking very quietly all at once. It came from everywhere and nowhere — the branches above, the undergrowth below, the air itself. Finn's throat tightened, but he kept walking.\n\n\"Rosie?\" he called. His voice sounded thin and small.\n\nThe whispering stopped. The silence that followed was worse — heavy and watchful, as though the whole wood was holding its breath.\n\nThen, from somewhere ahead, a small voice answered: \"Finn? I'm here. I can't find the path.\"\n\nRelief crashed through him like a wave. He followed the sound of her voice, pushing through bracken and low branches until he found her sitting on a fallen log, her coat covered in bramble scratches, her cheeks streaked with tears but her chin held high.\n\n\"I wasn't scared,\" she said.\n\n\"I know,\" said Finn, taking her hand. \"Neither was I.\"",
           "question": "Why does the author say 'He didn't decide to go. His feet simply started walking'?",
           "options": [
-            "Finn was sleepwalking",
-            "He tripped and fell towards the wood",
-            "Someone pushed him forward",
-            "He was being controlled by the whispering sounds",
+            "Finn was sleepwalking through the dark night and had no awareness of what he was doing at all",
+            "He tripped and fell towards the wood and could not stop himself from sliding down the muddy slope",
+            "Someone standing behind him pushed him forward into the darkness without any kind of warning",
+            "He was being controlled by the strange whispering sounds drifting through the trees towards him",
             "His love for his sister was so strong that going to find her felt automatic and instinctive"
           ],
           "correct": 4,
@@ -4990,10 +5272,10 @@ const englishData = {
           "question": "What does the word 'dusk' mean in the phrase 'The wood was different at dusk'?",
           "options": [
             "The time just before it gets fully dark in the evening",
-            "Early morning when the sun is rising",
-            "The middle of the night when it is completely dark",
-            "A bright, sunny afternoon",
-            "A foggy morning"
+            "Early morning when the sun is just beginning to rise above the horizon",
+            "The middle of the night when the sky is completely dark and still",
+            "A bright and sunny afternoon with clear skies and warm weather",
+            "A foggy morning when mist hangs low over the ground and fields"
           ],
           "correct": 0,
           "explanation": "Dusk is the period of fading light in the evening, just after sunset and before full darkness. The passage shows this transition — the sky is 'turning violet' and the trees are becoming 'dark shapes'. It is the in-between time when daylight is disappearing but night has not fully arrived. ✓"
@@ -5008,11 +5290,11 @@ const englishData = {
           "passage": "The villagers of Alderton had a rule that every child learned before they could walk: never enter Blackmere Wood after dark. Nobody explained why. It was simply understood, the way you understood that fire was hot and rivers were deep.\n\nFinn had obeyed the rule his entire life — all eleven years of it. But tonight was different. His younger sister, Rosie, had not come home. She had gone to pick blackberries at the edge of the wood after school, and now it was half past seven, the sky was turning violet, and her basket sat empty on the kitchen step.\n\nHis mother was on the phone to the neighbours. His father was checking the lanes with a torch. Finn stood at the back gate, staring at the dark line of trees two hundred metres across the field.\n\nHe didn't decide to go. His feet simply started walking.\n\nThe wood was different at dusk. The familiar oaks and beeches, friendly enough in daylight, had become tall, dark shapes that seemed to lean inward. The ground was soft and silent — no crunch of leaves, no snap of twigs. Just a thick, mossy carpet that swallowed every footstep.\n\nThen he heard it. A whispering sound, like hundreds of people talking very quietly all at once. It came from everywhere and nowhere — the branches above, the undergrowth below, the air itself. Finn's throat tightened, but he kept walking.\n\n\"Rosie?\" he called. His voice sounded thin and small.\n\nThe whispering stopped. The silence that followed was worse — heavy and watchful, as though the whole wood was holding its breath.\n\nThen, from somewhere ahead, a small voice answered: \"Finn? I'm here. I can't find the path.\"\n\nRelief crashed through him like a wave. He followed the sound of her voice, pushing through bracken and low branches until he found her sitting on a fallen log, her coat covered in bramble scratches, her cheeks streaked with tears but her chin held high.\n\n\"I wasn't scared,\" she said.\n\n\"I know,\" said Finn, taking her hand. \"Neither was I.\"",
           "question": "The author writes that the silence was 'heavy and watchful, as though the whole wood was holding its breath'. What two techniques are used here?",
           "options": [
-            "Alliteration and a simile",
+            "Alliteration and a simile, making the wood seem threatening and cold",
             "Personification and a simile, making the wood seem alive and aware",
-            "A metaphor and onomatopoeia",
-            "Repetition and rhyme",
-            "Hyperbole and a rhetorical question"
+            "A metaphor and onomatopoeia, making the silence seem loud and strange",
+            "Repetition and rhyme, making the paragraph sound musical and flowing",
+            "Hyperbole and a rhetorical question, making the reader feel uncertain"
           ],
           "correct": 1,
           "explanation": "Two techniques work together here. Personification gives the wood human qualities — it is 'watchful' and 'holding its breath', as though it is a living thing that is aware of Finn. The phrase 'as though' introduces a simile, comparing the silence to a person holding their breath. Together, these techniques create an eerie, tense atmosphere where the forest itself seems conscious and alert. ✓"
@@ -5027,11 +5309,11 @@ const englishData = {
           "passage": "The villagers of Alderton had a rule that every child learned before they could walk: never enter Blackmere Wood after dark. Nobody explained why. It was simply understood, the way you understood that fire was hot and rivers were deep.\n\nFinn had obeyed the rule his entire life — all eleven years of it. But tonight was different. His younger sister, Rosie, had not come home. She had gone to pick blackberries at the edge of the wood after school, and now it was half past seven, the sky was turning violet, and her basket sat empty on the kitchen step.\n\nHis mother was on the phone to the neighbours. His father was checking the lanes with a torch. Finn stood at the back gate, staring at the dark line of trees two hundred metres across the field.\n\nHe didn't decide to go. His feet simply started walking.\n\nThe wood was different at dusk. The familiar oaks and beeches, friendly enough in daylight, had become tall, dark shapes that seemed to lean inward. The ground was soft and silent — no crunch of leaves, no snap of twigs. Just a thick, mossy carpet that swallowed every footstep.\n\nThen he heard it. A whispering sound, like hundreds of people talking very quietly all at once. It came from everywhere and nowhere — the branches above, the undergrowth below, the air itself. Finn's throat tightened, but he kept walking.\n\n\"Rosie?\" he called. His voice sounded thin and small.\n\nThe whispering stopped. The silence that followed was worse — heavy and watchful, as though the whole wood was holding its breath.\n\nThen, from somewhere ahead, a small voice answered: \"Finn? I'm here. I can't find the path.\"\n\nRelief crashed through him like a wave. He followed the sound of her voice, pushing through bracken and low branches until he found her sitting on a fallen log, her coat covered in bramble scratches, her cheeks streaked with tears but her chin held high.\n\n\"I wasn't scared,\" she said.\n\n\"I know,\" said Finn, taking her hand. \"Neither was I.\"",
           "question": "Why does the author end the story with both Finn and Rosie claiming they were not scared, when both clearly were?",
           "options": [
-            "To show they are both dishonest children",
-            "To prove that the wood is not really frightening",
-            "To demonstrate how siblings protect each other's feelings through shared understanding",
-            "To suggest they will go back into the wood tomorrow",
-            "To show that children never feel fear"
+            "To show they are both dishonest children who regularly lie to protect their own reputations",
+            "To prove that the wood is not really frightening and the children were never in true danger",
+            "To demonstrate how siblings protect each other’s feelings through shared understanding",
+            "To suggest they will go back into the wood tomorrow now that they know it is not dangerous",
+            "To show that children never feel fear and always pretend to be brave in difficult situations"
           ],
           "correct": 2,
           "explanation": "Both children were clearly frightened — Rosie's tears and Finn's tightening throat prove it. But by each claiming they were not scared, and Finn accepting Rosie's claim without question, the author shows the tender, protective bond between siblings. They are shielding each other's pride. Finn's 'Neither was I' is an act of kindness, not a lie — it tells Rosie she has nothing to be embarrassed about. ✓"
@@ -5046,11 +5328,11 @@ const englishData = {
           "passage": "The villagers of Alderton had a rule that every child learned before they could walk: never enter Blackmere Wood after dark. Nobody explained why. It was simply understood, the way you understood that fire was hot and rivers were deep.\n\nFinn had obeyed the rule his entire life — all eleven years of it. But tonight was different. His younger sister, Rosie, had not come home. She had gone to pick blackberries at the edge of the wood after school, and now it was half past seven, the sky was turning violet, and her basket sat empty on the kitchen step.\n\nHis mother was on the phone to the neighbours. His father was checking the lanes with a torch. Finn stood at the back gate, staring at the dark line of trees two hundred metres across the field.\n\nHe didn't decide to go. His feet simply started walking.\n\nThe wood was different at dusk. The familiar oaks and beeches, friendly enough in daylight, had become tall, dark shapes that seemed to lean inward. The ground was soft and silent — no crunch of leaves, no snap of twigs. Just a thick, mossy carpet that swallowed every footstep.\n\nThen he heard it. A whispering sound, like hundreds of people talking very quietly all at once. It came from everywhere and nowhere — the branches above, the undergrowth below, the air itself. Finn's throat tightened, but he kept walking.\n\n\"Rosie?\" he called. His voice sounded thin and small.\n\nThe whispering stopped. The silence that followed was worse — heavy and watchful, as though the whole wood was holding its breath.\n\nThen, from somewhere ahead, a small voice answered: \"Finn? I'm here. I can't find the path.\"\n\nRelief crashed through him like a wave. He followed the sound of her voice, pushing through bracken and low branches until he found her sitting on a fallen log, her coat covered in bramble scratches, her cheeks streaked with tears but her chin held high.\n\n\"I wasn't scared,\" she said.\n\n\"I know,\" said Finn, taking her hand. \"Neither was I.\"",
           "question": "What do you think will happen when Finn and Rosie arrive home?",
           "options": [
-            "Their parents will be angry and punish them both",
-            "Their parents will not have noticed they were gone",
-            "They will decide to move house immediately",
+            "Their parents will be angry and punish them both for staying out so late without permission",
+            "Their parents will not have noticed they were gone because they were both busy doing other things",
+            "They will decide to move house immediately so they no longer live near the dangerous woodland",
             "Their parents will be hugely relieved, and Finn may be praised for finding Rosie",
-            "Their parents will send them back to search for the blackberries"
+            "Their parents will send them back to search for the blackberries they originally went to find"
           ],
           "correct": 3,
           "explanation": "Both parents were already actively searching — the mother phoning neighbours and the father checking lanes with a torch. They will be hugely relieved when both children return safely. Finn went into the wood alone, at dusk, breaking the village rule to rescue his sister — an act of bravery that his parents are likely to acknowledge, even if they also express concern about the danger. ✓"
@@ -5103,11 +5385,11 @@ const englishData = {
           "passage": "When Mrs Okoro pinned the sign-up sheet for the new coding club on the Year 5 noticeboard, only three names appeared by the end of the day. Zara was the first to sign up. She had been asking for a coding club since Year 3, and she practically sprinted to the noticeboard during morning break.\n\nThe club met every Wednesday lunchtime in the ICT suite. Mrs Okoro explained that they would be using a programme called Scratch, which let you build games and animations by snapping colourful blocks together on screen, rather than typing complicated lines of code.\n\n\"Think of it like digital Lego,\" she said, and Zara immediately understood.\n\nBy the second week, the three members had grown to eleven. Word had spread that Zara had built a game where a cartoon cat dodged falling asteroids, and everyone wanted to see it. Marcus, who sat next to Zara in maths, created a quiz about football facts. A quiet girl called Deepa made an animation of a butterfly emerging from a cocoon, with gentle piano music playing in the background.\n\nThe real surprise came in Week 4, when Mrs Okoro announced a regional competition. Schools across Dorset were invited to submit their best Scratch projects. The winner would receive new tablets for their school library.\n\n\"We've only been doing this for a month,\" Marcus said doubtfully.\n\n\"The Wright brothers only flew for twelve seconds the first time,\" Mrs Okoro replied. \"Everyone starts somewhere.\"\n\nZara stayed behind after every session, tweaking her asteroid game, adding levels, sound effects, and a high-score table. She didn't know if they would win. But she knew something had changed. Computing wasn't just something that happened inside her tablet at home. It was something she could create.\n\nThe results were announced on a Friday morning. Zara's game came second. Deepa's butterfly animation won first place.",
           "question": "What does the word 'tweaking' mean in the sentence 'Zara stayed behind after every session, tweaking her asteroid game'?",
           "options": [
-            "Deleting and starting again",
+            "Deleting all of her work and starting again from scratch",
             "Making small improvements and adjustments",
-            "Breaking something by accident",
-            "Copying someone else's work",
-            "Playing the game for fun"
+            "Breaking something by accident while trying to fix it",
+            "Copying someone else’s work without their permission",
+            "Playing the game for fun rather than trying to improve"
           ],
           "correct": 1,
           "explanation": "In this context, 'tweaking' means making small adjustments and improvements. The passage goes on to list what Zara changed — adding levels, sound effects, and a high-score table — which are all refinements to her existing game. ✓"
@@ -5122,11 +5404,11 @@ const englishData = {
           "passage": "When Mrs Okoro pinned the sign-up sheet for the new coding club on the Year 5 noticeboard, only three names appeared by the end of the day. Zara was the first to sign up. She had been asking for a coding club since Year 3, and she practically sprinted to the noticeboard during morning break.\n\nThe club met every Wednesday lunchtime in the ICT suite. Mrs Okoro explained that they would be using a programme called Scratch, which let you build games and animations by snapping colourful blocks together on screen, rather than typing complicated lines of code.\n\n\"Think of it like digital Lego,\" she said, and Zara immediately understood.\n\nBy the second week, the three members had grown to eleven. Word had spread that Zara had built a game where a cartoon cat dodged falling asteroids, and everyone wanted to see it. Marcus, who sat next to Zara in maths, created a quiz about football facts. A quiet girl called Deepa made an animation of a butterfly emerging from a cocoon, with gentle piano music playing in the background.\n\nThe real surprise came in Week 4, when Mrs Okoro announced a regional competition. Schools across Dorset were invited to submit their best Scratch projects. The winner would receive new tablets for their school library.\n\n\"We've only been doing this for a month,\" Marcus said doubtfully.\n\n\"The Wright brothers only flew for twelve seconds the first time,\" Mrs Okoro replied. \"Everyone starts somewhere.\"\n\nZara stayed behind after every session, tweaking her asteroid game, adding levels, sound effects, and a high-score table. She didn't know if they would win. But she knew something had changed. Computing wasn't just something that happened inside her tablet at home. It was something she could create.\n\nThe results were announced on a Friday morning. Zara's game came second. Deepa's butterfly animation won first place.",
           "question": "Why does the author have Deepa win the competition instead of Zara?",
           "options": [
-            "To show that Zara was not very talented",
-            "To suggest that animations are always better than games",
+            "To show that Zara was not very talented and did not deserve to win the competition at all",
+            "To suggest that animations are always better than games no matter how much effort is put in",
             "To show that success is not always about the main character, and quiet effort matters too",
-            "To prove that Mrs Okoro had a favourite pupil",
-            "To make the reader feel sorry for Zara"
+            "To prove that Mrs Okoro had a favourite pupil and awarded the prize unfairly to her friend",
+            "To make the reader feel sorry for Zara and disappointed about the outcome of the contest"
           ],
           "correct": 2,
           "explanation": "The author deliberately has Deepa — described as 'a quiet girl' — win first place. This shows that success can come from unexpected places, and that Zara's journey was about discovering a passion for creating, not just winning. It adds depth to the story and avoids a predictable ending. ✓"
@@ -5160,11 +5442,11 @@ const englishData = {
           "passage": "When Mrs Okoro pinned the sign-up sheet for the new coding club on the Year 5 noticeboard, only three names appeared by the end of the day. Zara was the first to sign up. She had been asking for a coding club since Year 3, and she practically sprinted to the noticeboard during morning break.\n\nThe club met every Wednesday lunchtime in the ICT suite. Mrs Okoro explained that they would be using a programme called Scratch, which let you build games and animations by snapping colourful blocks together on screen, rather than typing complicated lines of code.\n\n\"Think of it like digital Lego,\" she said, and Zara immediately understood.\n\nBy the second week, the three members had grown to eleven. Word had spread that Zara had built a game where a cartoon cat dodged falling asteroids, and everyone wanted to see it. Marcus, who sat next to Zara in maths, created a quiz about football facts. A quiet girl called Deepa made an animation of a butterfly emerging from a cocoon, with gentle piano music playing in the background.\n\nThe real surprise came in Week 4, when Mrs Okoro announced a regional competition. Schools across Dorset were invited to submit their best Scratch projects. The winner would receive new tablets for their school library.\n\n\"We've only been doing this for a month,\" Marcus said doubtfully.\n\n\"The Wright brothers only flew for twelve seconds the first time,\" Mrs Okoro replied. \"Everyone starts somewhere.\"\n\nZara stayed behind after every session, tweaking her asteroid game, adding levels, sound effects, and a high-score table. She didn't know if they would win. But she knew something had changed. Computing wasn't just something that happened inside her tablet at home. It was something she could create.\n\nThe results were announced on a Friday morning. Zara's game came second. Deepa's butterfly animation won first place.",
           "question": "Why does Mrs Okoro mention the Wright brothers?",
           "options": [
-            "To teach the children about the history of flight",
-            "To explain how aeroplanes are built",
-            "To change the subject away from the competition",
+            "To teach the children about the history of flight and how aeroplanes were first invented",
+            "To explain in detail how aeroplanes are built using lightweight materials and engines",
+            "To change the subject away from the competition results and distract the disappointed pupils",
             "To encourage Marcus by showing that even famous achievements had small beginnings",
-            "To suggest the children should study science instead of computing"
+            "To suggest the children should study science instead of computing as a more useful subject"
           ],
           "correct": 3,
           "explanation": "Mrs Okoro uses the Wright brothers as an analogy. Marcus was doubtful because they had only been coding for a month. By pointing out that the Wright brothers' first flight lasted just twelve seconds, she shows that great things start small. Her follow-up — 'Everyone starts somewhere' — reinforces this encouraging message. ✓"
@@ -5199,10 +5481,10 @@ const englishData = {
           "question": "What was Callum's mistake in the race?",
           "options": [
             "He ran too fast at the start and tired himself out",
-            "He tripped over a hurdle",
-            "He stopped to tie his shoelace",
-            "He ran in the wrong direction",
-            "He was distracted by the crowd"
+            "He tripped over a hurdle and lost several seconds recovering his balance",
+            "He stopped partway through the race to tie his shoelace before continuing",
+            "He ran in the wrong direction and had to turn back to the correct lane",
+            "He was distracted by the noise from the crowd and lost his concentration"
           ],
           "correct": 0,
           "explanation": "The passage says 'Callum surged ahead immediately' and later 'Callum's pace had slowed — his earlier sprint had taken its toll.' This tells us he used too much energy at the start and didn't have enough left for the end of the race. ✓"
@@ -5236,11 +5518,11 @@ const englishData = {
           "passage": "Nobody expected Aiden to win anything on Sports Day. He was the smallest boy in Year 5, and in PE lessons he was always the last to be picked for teams. He didn't mind too much — he preferred reading to running, and he could name every bone in the human body but couldn't throw a ball in a straight line.\n\nSports Day at Westbury Primary was a serious event. Parents brought folding chairs and flasks of tea. Mr Hammond, the PE teacher, wore his special tracksuit — the one with the whistle permanently attached to a lanyard around his neck. The four houses — Oak, Elm, Ash, and Birch — competed in everything from the hundred-metre sprint to the egg-and-spoon race.\n\nAiden was in Birch house, which hadn't won the Sports Day trophy since 2019. He had been entered for two events: the beanbag throw (he came last) and the four-hundred-metre race.\n\nThe four-hundred-metre race was the final event of the afternoon. Aiden lined up alongside seven other runners, including Callum Parker, who had won every race so far and was already celebrating Elm's inevitable victory.\n\nThe starting whistle blew. Callum surged ahead immediately, opening up a gap of five or six metres. Aiden settled into a steady rhythm at the back of the group, his short legs pumping. By the halfway point, three runners had faded, gasping and clutching their sides. Aiden passed them without changing pace.\n\nComing around the final bend, only Callum and two others were ahead. Callum's pace had slowed — his earlier sprint had taken its toll. Aiden's legs burned, but his breathing was controlled. He had read once that long-distance runners pace themselves, saving energy for the end.\n\nWith twenty metres to go, Aiden drew level with Callum. With ten metres to go, he was a stride ahead. He crossed the line first, to absolute silence — and then an eruption of cheers from the Birch supporters.\n\n\"How did you do that?\" Callum panted, bent double.\n\nAiden shrugged. \"I just didn't stop.\"",
           "question": "What is most likely to happen to Aiden in PE lessons after this event?",
           "options": [
-            "He will be asked to leave the school team",
-            "He will refuse to take part in any more races",
+            "He will be asked to leave the school team because his technique was not good enough",
+            "He will refuse to take part in any more races because the pressure was too stressful",
             "He will be picked earlier for teams and gain more respect from classmates",
-            "He will stop reading books about the human body",
-            "He will become the PE teacher's assistant"
+            "He will stop reading books about the human body because he no longer needs the knowledge",
+            "He will become the PE teacher’s assistant and help to coach the younger year groups"
           ],
           "correct": 2,
           "explanation": "Before his win, Aiden was 'always the last to be picked for teams.' Now that he has shown he can beat the fastest boy in the year, classmates are likely to see him differently and pick him earlier. His unexpected talent for pacing has been revealed. ✓"
@@ -5255,11 +5537,11 @@ const englishData = {
           "passage": "Nobody expected Aiden to win anything on Sports Day. He was the smallest boy in Year 5, and in PE lessons he was always the last to be picked for teams. He didn't mind too much — he preferred reading to running, and he could name every bone in the human body but couldn't throw a ball in a straight line.\n\nSports Day at Westbury Primary was a serious event. Parents brought folding chairs and flasks of tea. Mr Hammond, the PE teacher, wore his special tracksuit — the one with the whistle permanently attached to a lanyard around his neck. The four houses — Oak, Elm, Ash, and Birch — competed in everything from the hundred-metre sprint to the egg-and-spoon race.\n\nAiden was in Birch house, which hadn't won the Sports Day trophy since 2019. He had been entered for two events: the beanbag throw (he came last) and the four-hundred-metre race.\n\nThe four-hundred-metre race was the final event of the afternoon. Aiden lined up alongside seven other runners, including Callum Parker, who had won every race so far and was already celebrating Elm's inevitable victory.\n\nThe starting whistle blew. Callum surged ahead immediately, opening up a gap of five or six metres. Aiden settled into a steady rhythm at the back of the group, his short legs pumping. By the halfway point, three runners had faded, gasping and clutching their sides. Aiden passed them without changing pace.\n\nComing around the final bend, only Callum and two others were ahead. Callum's pace had slowed — his earlier sprint had taken its toll. Aiden's legs burned, but his breathing was controlled. He had read once that long-distance runners pace themselves, saving energy for the end.\n\nWith twenty metres to go, Aiden drew level with Callum. With ten metres to go, he was a stride ahead. He crossed the line first, to absolute silence — and then an eruption of cheers from the Birch supporters.\n\n\"How did you do that?\" Callum panted, bent double.\n\nAiden shrugged. \"I just didn't stop.\"",
           "question": "Where would you most likely read this passage?",
           "options": [
-            "In a science textbook about human bones",
-            "In a guide to organising sports events",
-            "In a school newsletter reporting real results",
-            "In a children's story book or reading comprehension exercise",
-            "In a newspaper article about professional athletics"
+            "In a manual about how to repair telephone hardware",
+            "In a collection of fairy tales and fictional stories",
+            "In a history or information book for children",
+            "In a personal diary written by a teenager",
+            "In a recipe book for family cooking at home"
           ],
           "correct": 3,
           "explanation": "This is a piece of realistic fiction — a made-up story set in a familiar school setting with believable characters. It has a narrative arc (underdog wins the race), dialogue, and descriptive language. You would most likely find it in a children's story book or reading comprehension exercise. ✓"
@@ -5274,10 +5556,10 @@ const englishData = {
           "passage": "Nobody expected Aiden to win anything on Sports Day. He was the smallest boy in Year 5, and in PE lessons he was always the last to be picked for teams. He didn't mind too much — he preferred reading to running, and he could name every bone in the human body but couldn't throw a ball in a straight line.\n\nSports Day at Westbury Primary was a serious event. Parents brought folding chairs and flasks of tea. Mr Hammond, the PE teacher, wore his special tracksuit — the one with the whistle permanently attached to a lanyard around his neck. The four houses — Oak, Elm, Ash, and Birch — competed in everything from the hundred-metre sprint to the egg-and-spoon race.\n\nAiden was in Birch house, which hadn't won the Sports Day trophy since 2019. He had been entered for two events: the beanbag throw (he came last) and the four-hundred-metre race.\n\nThe four-hundred-metre race was the final event of the afternoon. Aiden lined up alongside seven other runners, including Callum Parker, who had won every race so far and was already celebrating Elm's inevitable victory.\n\nThe starting whistle blew. Callum surged ahead immediately, opening up a gap of five or six metres. Aiden settled into a steady rhythm at the back of the group, his short legs pumping. By the halfway point, three runners had faded, gasping and clutching their sides. Aiden passed them without changing pace.\n\nComing around the final bend, only Callum and two others were ahead. Callum's pace had slowed — his earlier sprint had taken its toll. Aiden's legs burned, but his breathing was controlled. He had read once that long-distance runners pace themselves, saving energy for the end.\n\nWith twenty metres to go, Aiden drew level with Callum. With ten metres to go, he was a stride ahead. He crossed the line first, to absolute silence — and then an eruption of cheers from the Birch supporters.\n\n\"How did you do that?\" Callum panted, bent double.\n\nAiden shrugged. \"I just didn't stop.\"",
           "question": "What effect does the phrase 'to absolute silence — and then an eruption of cheers' create?",
           "options": [
-            "It shows that nobody cared about the race",
-            "It shows that only a few people were watching",
-            "It proves that the crowd was too far away to see",
-            "It suggests the weather was very windy",
+            "It shows that nobody in the crowd cared about the outcome of the race",
+            "It shows that only a few people were watching and most had already left",
+            "It proves that the crowd was too far away to see clearly what had happened",
+            "It suggests the weather was very windy and drowned out the sound of cheering",
             "It creates a dramatic contrast between the shock and the celebration"
           ],
           "correct": 4,
@@ -5312,11 +5594,11 @@ const englishData = {
           "passage": "A bicycle is one of the most efficient machines ever invented. It converts the energy from your legs into forward motion more effectively than almost any other form of transport. But how does it actually work?\n\nThe key to a bicycle is the chain-and-gear system. When you push down on the pedals, you turn a large toothed wheel called the chainring. A metal chain loops around this chainring and connects it to a smaller toothed wheel on the back axle called the sprocket. Because the chainring is larger than the sprocket, each full turn of the pedals makes the back wheel spin several times. This is why you can travel quite far with just one push.\n\nBrakes work by pressing rubber pads against the metal rim of the wheel. The friction — the force created when two surfaces rub together — slows the wheel down. Modern mountain bikes often use disc brakes instead, where pads squeeze a metal disc attached to the centre of the wheel. Disc brakes work better in wet conditions because water doesn't collect on the disc as easily as it does on the rim.\n\nSteering a bicycle seems simple — you turn the handlebars. But at higher speeds, something more interesting happens. Cyclists actually steer by leaning. When you lean to the left, the bicycle naturally turns left. This is because shifting your weight changes the balance point, and the front wheel adjusts to keep you upright. Professional cyclists on velodromes lean at incredible angles, sometimes tilting more than forty degrees from vertical.\n\nThe tyres matter too. Road bikes have thin, smooth tyres pumped to high pressure, which reduces the contact area with the ground and minimises friction, allowing greater speed. Mountain bikes have wide, knobbly tyres at lower pressure, which grip mud and loose surfaces. The right tyre for the right job makes an enormous difference.\n\nA bicycle has no engine and no fuel tank. Its only power source is you.",
           "question": "Why would a road cyclist NOT want to use wide, knobbly tyres?",
           "options": [
-            "They are too expensive for road cyclists",
+            "They are too expensive for most road cyclists to afford for regular training",
             "They create more friction with the ground, which would slow the cyclist down",
-            "They are only available in one colour",
-            "They are too heavy to carry on a road bike",
-            "They would damage the road surface"
+            "They are only available in one colour and would not match a road bicycle frame",
+            "They are too heavy to carry on a road bike and would strain the wheel spokes",
+            "They would cause serious damage to the smooth tarmac surface of the road"
           ],
           "correct": 1,
           "explanation": "The passage explains that road bikes use thin, smooth tyres to reduce contact area and minimise friction for greater speed. Wide, knobbly tyres create more friction by gripping the surface more. A road cyclist needs speed on smooth tarmac, so extra grip would slow them down. ✓"
@@ -5331,11 +5613,11 @@ const englishData = {
           "passage": "A bicycle is one of the most efficient machines ever invented. It converts the energy from your legs into forward motion more effectively than almost any other form of transport. But how does it actually work?\n\nThe key to a bicycle is the chain-and-gear system. When you push down on the pedals, you turn a large toothed wheel called the chainring. A metal chain loops around this chainring and connects it to a smaller toothed wheel on the back axle called the sprocket. Because the chainring is larger than the sprocket, each full turn of the pedals makes the back wheel spin several times. This is why you can travel quite far with just one push.\n\nBrakes work by pressing rubber pads against the metal rim of the wheel. The friction — the force created when two surfaces rub together — slows the wheel down. Modern mountain bikes often use disc brakes instead, where pads squeeze a metal disc attached to the centre of the wheel. Disc brakes work better in wet conditions because water doesn't collect on the disc as easily as it does on the rim.\n\nSteering a bicycle seems simple — you turn the handlebars. But at higher speeds, something more interesting happens. Cyclists actually steer by leaning. When you lean to the left, the bicycle naturally turns left. This is because shifting your weight changes the balance point, and the front wheel adjusts to keep you upright. Professional cyclists on velodromes lean at incredible angles, sometimes tilting more than forty degrees from vertical.\n\nThe tyres matter too. Road bikes have thin, smooth tyres pumped to high pressure, which reduces the contact area with the ground and minimises friction, allowing greater speed. Mountain bikes have wide, knobbly tyres at lower pressure, which grip mud and loose surfaces. The right tyre for the right job makes an enormous difference.\n\nA bicycle has no engine and no fuel tank. Its only power source is you.",
           "question": "What does the word 'efficient' mean in the first sentence?",
           "options": [
-            "Very fast",
-            "Extremely heavy",
+            "Moving extremely fast with no concern for accuracy",
+            "So heavy that it is very difficult to carry around",
             "Produces good results without wasting energy",
-            "Difficult to use",
-            "Recently invented"
+            "Very difficult to use without specialist training",
+            "Recently invented using the latest technology"
           ],
           "correct": 2,
           "explanation": "In this context, 'efficient' means producing good results without wasting energy or effort. The passage explains that a bicycle converts leg energy into motion 'more effectively than almost any other form of transport,' which is what efficiency means. ✓"
@@ -5389,10 +5671,10 @@ const englishData = {
           "question": "Why does the author end with the sentence 'Its only power source is you'?",
           "options": [
             "To end on a powerful, memorable note that highlights the simplicity and personal nature of cycling",
-            "To criticise bicycles for not having engines",
-            "To warn readers that cycling is tiring",
-            "To suggest that bicycles are old-fashioned technology",
-            "To encourage readers to buy an electric bicycle instead"
+            "To criticise bicycles for not having engines and being slower than other forms of transport",
+            "To warn readers that cycling is tiring and requires a great deal of physical effort and stamina",
+            "To suggest that bicycles are old-fashioned technology that should be replaced by modern vehicles",
+            "To encourage readers to buy an electric bicycle instead of relying on their own physical strength"
           ],
           "correct": 0,
           "explanation": "The final sentence is short, direct, and personal — using 'you' to connect with the reader. After explaining the complex mechanics of a bicycle, the author ends by reminding us of the beautifully simple fact that it runs entirely on human power. This creates a memorable and satisfying conclusion. ✓"
@@ -5426,11 +5708,11 @@ const englishData = {
           "passage": "It had been raining for three days straight, and Maisie and her brother Joel were running out of things to do. They had exhausted every board game in the cupboard, watched two films, and built a blanket fort that had collapsed twice.\n\n\"Right,\" said their mum, rolling up her sleeves. \"We're having a bake-off. You've got ninety minutes to make the best cake you can. I'll judge. Winner gets to choose what we have for dinner tonight.\"\n\nMaisie immediately knew what she wanted to make: a lemon drizzle cake. She had watched her nan make one dozens of times. She could almost do it from memory — self-raising flour, caster sugar, eggs, butter, and the juice and zest of two lemons for the drizzle.\n\nJoel, who was eleven and had never baked anything in his life, grabbed Mum's recipe book and flicked through it wildly. \"Chocolate fudge cake,\" he announced. It was three pages long with fourteen ingredients.\n\n\"Are you sure?\" Maisie asked, weighing her flour on the kitchen scales. \"That looks quite complicated.\"\n\n\"I like a challenge,\" Joel said, cracking an egg so hard that half the shell fell into the bowl.\n\nFor the next hour and a half, the kitchen was a battlefield. Flour dusted every surface. Joel's chocolate mixture bubbled over in the microwave, and he burned his finger on a hot baking tray. Maisie worked calmly and methodically, greasing her tin, mixing her batter until it was smooth, and setting the oven to exactly one hundred and eighty degrees.\n\nWhen the timer went off, Maisie's lemon drizzle was golden and fragrant. She poked holes in the top with a skewer and poured over the lemon syrup, watching it soak into the sponge.\n\nJoel's chocolate cake looked like a volcano that had recently erupted. It had sunk in the middle and the fudge icing had slid off one side entirely.\n\nMum tasted both. \"Maisie's is perfect,\" she said. \"Joel's tastes wonderful but looks like it's been in a fight. Maisie wins.\"\n\n\"Pizza for dinner!\" Maisie declared.\n\nJoel grinned, his face smeared with chocolate. \"Can I have some more of my cake, though? It might look awful, but it's the best thing I've ever eaten.\"",
           "question": "Why did Maisie choose a lemon drizzle cake instead of something more complicated?",
           "options": [
-            "It was the only recipe in the book",
-            "She didn't like chocolate",
+            "It was the only recipe she could find in the entire book and there were no other choices",
+            "She didn’t like chocolate or any of the other flavours that were suggested to her",
             "She had learned it from watching her nan and could almost make it from memory",
-            "Her mum told her to make it",
-            "It was the quickest cake to bake"
+            "Her mum told her to make it because they already had the right ingredients at home",
+            "It was the quickest cake to bake and she wanted to finish before anyone else did"
           ],
           "correct": 2,
           "explanation": "The passage says Maisie 'had watched her nan make one dozens of times' and 'could almost do it from memory.' She chose it because it was familiar and she was confident she could make it well — a smart strategy compared to Joel's ambitious choice. ✓"
@@ -5445,11 +5727,11 @@ const englishData = {
           "passage": "It had been raining for three days straight, and Maisie and her brother Joel were running out of things to do. They had exhausted every board game in the cupboard, watched two films, and built a blanket fort that had collapsed twice.\n\n\"Right,\" said their mum, rolling up her sleeves. \"We're having a bake-off. You've got ninety minutes to make the best cake you can. I'll judge. Winner gets to choose what we have for dinner tonight.\"\n\nMaisie immediately knew what she wanted to make: a lemon drizzle cake. She had watched her nan make one dozens of times. She could almost do it from memory — self-raising flour, caster sugar, eggs, butter, and the juice and zest of two lemons for the drizzle.\n\nJoel, who was eleven and had never baked anything in his life, grabbed Mum's recipe book and flicked through it wildly. \"Chocolate fudge cake,\" he announced. It was three pages long with fourteen ingredients.\n\n\"Are you sure?\" Maisie asked, weighing her flour on the kitchen scales. \"That looks quite complicated.\"\n\n\"I like a challenge,\" Joel said, cracking an egg so hard that half the shell fell into the bowl.\n\nFor the next hour and a half, the kitchen was a battlefield. Flour dusted every surface. Joel's chocolate mixture bubbled over in the microwave, and he burned his finger on a hot baking tray. Maisie worked calmly and methodically, greasing her tin, mixing her batter until it was smooth, and setting the oven to exactly one hundred and eighty degrees.\n\nWhen the timer went off, Maisie's lemon drizzle was golden and fragrant. She poked holes in the top with a skewer and poured over the lemon syrup, watching it soak into the sponge.\n\nJoel's chocolate cake looked like a volcano that had recently erupted. It had sunk in the middle and the fudge icing had slid off one side entirely.\n\nMum tasted both. \"Maisie's is perfect,\" she said. \"Joel's tastes wonderful but looks like it's been in a fight. Maisie wins.\"\n\n\"Pizza for dinner!\" Maisie declared.\n\nJoel grinned, his face smeared with chocolate. \"Can I have some more of my cake, though? It might look awful, but it's the best thing I've ever eaten.\"",
           "question": "What does 'methodically' mean in the sentence 'Maisie worked calmly and methodically'?",
           "options": [
-            "Quickly and carelessly",
-            "Slowly and reluctantly",
-            "With great difficulty",
+            "Quickly, carelessly, and without paying attention",
+            "Slowly, reluctantly, and without any enthusiasm",
+            "With great difficulty and frequent mistakes",
             "In a careful, organised, step-by-step way",
-            "While talking to someone else"
+            "While talking to someone else at the same time"
           ],
           "correct": 3,
           "explanation": "The word 'methodically' means doing things in a careful, organised, step-by-step manner. This is supported by the details that follow — Maisie greased her tin, mixed her batter until smooth, and set the oven to exactly the right temperature. Everything was done carefully and in order. ✓"
@@ -5464,10 +5746,10 @@ const englishData = {
           "passage": "It had been raining for three days straight, and Maisie and her brother Joel were running out of things to do. They had exhausted every board game in the cupboard, watched two films, and built a blanket fort that had collapsed twice.\n\n\"Right,\" said their mum, rolling up her sleeves. \"We're having a bake-off. You've got ninety minutes to make the best cake you can. I'll judge. Winner gets to choose what we have for dinner tonight.\"\n\nMaisie immediately knew what she wanted to make: a lemon drizzle cake. She had watched her nan make one dozens of times. She could almost do it from memory — self-raising flour, caster sugar, eggs, butter, and the juice and zest of two lemons for the drizzle.\n\nJoel, who was eleven and had never baked anything in his life, grabbed Mum's recipe book and flicked through it wildly. \"Chocolate fudge cake,\" he announced. It was three pages long with fourteen ingredients.\n\n\"Are you sure?\" Maisie asked, weighing her flour on the kitchen scales. \"That looks quite complicated.\"\n\n\"I like a challenge,\" Joel said, cracking an egg so hard that half the shell fell into the bowl.\n\nFor the next hour and a half, the kitchen was a battlefield. Flour dusted every surface. Joel's chocolate mixture bubbled over in the microwave, and he burned his finger on a hot baking tray. Maisie worked calmly and methodically, greasing her tin, mixing her batter until it was smooth, and setting the oven to exactly one hundred and eighty degrees.\n\nWhen the timer went off, Maisie's lemon drizzle was golden and fragrant. She poked holes in the top with a skewer and poured over the lemon syrup, watching it soak into the sponge.\n\nJoel's chocolate cake looked like a volcano that had recently erupted. It had sunk in the middle and the fudge icing had slid off one side entirely.\n\nMum tasted both. \"Maisie's is perfect,\" she said. \"Joel's tastes wonderful but looks like it's been in a fight. Maisie wins.\"\n\n\"Pizza for dinner!\" Maisie declared.\n\nJoel grinned, his face smeared with chocolate. \"Can I have some more of my cake, though? It might look awful, but it's the best thing I've ever eaten.\"",
           "question": "Why does the author compare the kitchen to a 'battlefield'?",
           "options": [
-            "To suggest the children were fighting with each other",
-            "To show that the kitchen was damaged beyond repair",
-            "To show that baking is dangerous",
-            "To explain that their mum was angry about the state of the kitchen",
+            "To suggest the children were fighting with each other during the competition itself",
+            "To show that the kitchen was damaged beyond repair and could no longer be used",
+            "To show that baking is a dangerous activity that children should not attempt alone",
+            "To explain that their mum was angry about the terrible state of the messy kitchen",
             "To vividly convey the mess and chaos of two children baking at the same time"
           ],
           "correct": 4,
@@ -5484,10 +5766,10 @@ const englishData = {
           "question": "Based on Joel's reaction at the end, what is he most likely to do next time it rains?",
           "options": [
             "Ask to have another bake-off and try to improve",
-            "Refuse to bake ever again",
-            "Complain that the competition was unfair",
-            "Watch television all day instead",
-            "Ask his mum to bake for him"
+            "Refuse to bake ever again after his defeat",
+            "Complain to his mum that the competition was unfair",
+            "Watch television all day instead of doing anything",
+            "Ask his mum to bake his favourite cake for him"
           ],
           "correct": 0,
           "explanation": "Joel's positive reaction — grinning, saying his cake was 'the best thing I've ever eaten', and asking for more — shows he genuinely enjoyed the experience despite losing. His earlier comment, 'I like a challenge,' suggests he has a determined personality. He is most likely to want to try again and do better next time. ✓"
@@ -5540,11 +5822,11 @@ const englishData = {
           "passage": "Greenfield Primary School had a problem. Every lunchtime, the playground bins overflowed with crisp packets, juice cartons, and plastic wrappers. The caretaker, Mr Briggs, spent an hour each afternoon picking up litter that had blown across the field. He never complained, but everyone could see he was fed up.\n\nThen Year 5 had an idea. During a PSHE lesson about the environment, their teacher, Miss Sharma, challenged them to reduce the school's playground waste by half within one term. The class elected a team of four Eco Champions — Priya, Sam, Ethan, and Noor — to lead the project.\n\nTheir first step was research. The Eco Champions spent a week sorting through the playground waste, wearing gloves and recording what they found in a spreadsheet. The results were startling: sixty-two per cent of the rubbish was packaging that could have been recycled, and twenty-three per cent was food waste that could have been composted. Only fifteen per cent was genuine non-recyclable waste.\n\n\"That means eighty-five per cent of the rubbish doesn't need to go in the bin at all,\" Priya told the whole school during Monday assembly.\n\nThe team introduced three changes. First, they placed colour-coded recycling stations around the playground: blue for paper and cardboard, green for plastic bottles and cartons, and brown for food scraps. Second, they ran a poster competition, and the winning designs were displayed around the school. Third, they started a weekly league table, awarding points to the class that recycled the most and produced the least general waste.\n\nThe results were dramatic. Within three weeks, playground litter had dropped by forty per cent. Mr Briggs reported that his afternoon clean-up now took fifteen minutes instead of an hour. By the end of the term, waste had fallen by fifty-eight per cent — well above the target of fifty.\n\n\"You've done something amazing,\" Miss Sharma told them. \"But the real test is whether it lasts.\"\n\nSix months later, it was still working. The bins no longer overflowed. Mr Briggs had started using his spare time to plant a wildflower garden beside the car park.",
           "question": "How do we know that Mr Briggs was unhappy about the litter problem before the project started?",
           "options": [
-            "He wrote a letter to the headteacher",
-            "He shouted at the children for dropping rubbish",
-            "He refused to pick up the litter",
-            "The passage says he never complained but 'everyone could see he was fed up'",
-            "He threatened to leave the school"
+            "He wrote a letter to the headteacher asking for something to be done about it",
+            "He shouted at the children for dropping rubbish all over the school playground",
+            "He refused to pick up the litter and left it lying on the ground in protest",
+            "The passage says he never complained but ‘everyone could see he was fed up’",
+            "He threatened to leave the school if the litter problem was not sorted out"
           ],
           "correct": 3,
           "explanation": "The passage tells us 'He never complained, but everyone could see he was fed up.' This is an inference clue — Mr Briggs didn't say anything directly, but his feelings were visible to others. The detail that he spent a whole hour daily cleaning up also suggests frustration. ✓"
@@ -5579,10 +5861,10 @@ const englishData = {
           "question": "Why does the author include the detail about Mr Briggs planting a wildflower garden?",
           "options": [
             "To show a positive knock-on effect — reducing waste freed up time for something beautiful",
-            "To suggest the school now has a garden instead of a playground",
-            "To show that Mr Briggs has become a professional gardener",
-            "To explain that the school has too much spare land",
-            "To suggest that recycling is no longer needed"
+            "To suggest the school now has a garden instead of a playground for the children to use",
+            "To show that Mr Briggs has become a professional gardener and left his caretaking role",
+            "To explain that the school has too much spare land and needed to find a use for it",
+            "To suggest that recycling is no longer needed now that the wildflower garden is growing"
           ],
           "correct": 0,
           "explanation": "The wildflower garden detail shows a ripple effect of the recycling project. Because Mr Briggs no longer spends an hour picking up litter, he can use that time to create something positive and beautiful for the school. It reinforces the message that small changes can have wider benefits. ✓"
@@ -5616,11 +5898,11 @@ const englishData = {
           "passage": "Greenfield Primary School had a problem. Every lunchtime, the playground bins overflowed with crisp packets, juice cartons, and plastic wrappers. The caretaker, Mr Briggs, spent an hour each afternoon picking up litter that had blown across the field. He never complained, but everyone could see he was fed up.\n\nThen Year 5 had an idea. During a PSHE lesson about the environment, their teacher, Miss Sharma, challenged them to reduce the school's playground waste by half within one term. The class elected a team of four Eco Champions — Priya, Sam, Ethan, and Noor — to lead the project.\n\nTheir first step was research. The Eco Champions spent a week sorting through the playground waste, wearing gloves and recording what they found in a spreadsheet. The results were startling: sixty-two per cent of the rubbish was packaging that could have been recycled, and twenty-three per cent was food waste that could have been composted. Only fifteen per cent was genuine non-recyclable waste.\n\n\"That means eighty-five per cent of the rubbish doesn't need to go in the bin at all,\" Priya told the whole school during Monday assembly.\n\nThe team introduced three changes. First, they placed colour-coded recycling stations around the playground: blue for paper and cardboard, green for plastic bottles and cartons, and brown for food scraps. Second, they ran a poster competition, and the winning designs were displayed around the school. Third, they started a weekly league table, awarding points to the class that recycled the most and produced the least general waste.\n\nThe results were dramatic. Within three weeks, playground litter had dropped by forty per cent. Mr Briggs reported that his afternoon clean-up now took fifteen minutes instead of an hour. By the end of the term, waste had fallen by fifty-eight per cent — well above the target of fifty.\n\n\"You've done something amazing,\" Miss Sharma told them. \"But the real test is whether it lasts.\"\n\nSix months later, it was still working. The bins no longer overflowed. Mr Briggs had started using his spare time to plant a wildflower garden beside the car park.",
           "question": "Why does the author use specific numbers and percentages throughout this passage?",
           "options": [
-            "To make the passage longer and more difficult to read",
+            "To make the passage longer, more detailed, and much more difficult for the reader",
             "To make the facts convincing and show the measurable impact of the project",
-            "To confuse the reader with too much information",
-            "To test whether the reader is good at maths",
-            "To show that Miss Sharma teaches mathematics"
+            "To confuse the reader with too much complicated numerical information at once",
+            "To test whether the reader is good at maths and able to work out the figures",
+            "To show that Miss Sharma teaches mathematics as well as leading school projects"
           ],
           "correct": 1,
           "explanation": "The author includes precise figures (sixty-two per cent, forty per cent, fifty-eight per cent, fifteen minutes versus an hour) to make the project's impact feel real and measurable. Specific numbers are more convincing than vague statements like 'it got a lot better,' and they help the reader understand the scale of the achievement. ✓"
@@ -5654,11 +5936,11 @@ const englishData = {
           "passage": "Every Sunday evening, the same argument happened in the Kapoor household. Twelve-year-old Ravi wanted more screen time. His parents wanted him to have less.\n\n\"You've been on that tablet for three hours today,\" his dad said, glancing at the parental controls app on his phone. \"That's your limit.\"\n\n\"But I wasn't just watching videos,\" Ravi protested. \"I was learning. I watched a documentary about volcanoes, then I used an app to practise my Spanish vocabulary, and then I played twenty minutes of a strategy game that's actually really good for problem-solving.\"\n\nHis mum looked up from her own phone — she had been scrolling through a news app for the past forty minutes. \"It's not just about what you're doing on the screen, Ravi. It's about what you're not doing. When did you last go outside? When did you last read an actual book?\"\n\nRavi opened his mouth to argue, then closed it again. She had a point. He hadn't been to the park in over a week, and the library book on his bedside table had a bookmark stuck on page thirty-four, where it had been since October.\n\nThe family agreed to try something new. They called it the Screen Time Swap. For every thirty minutes Ravi spent on a screen, he had to match it with thirty minutes of something off-screen: reading, going outside, helping with cooking, playing a board game, or practising his guitar.\n\nAt first, Ravi found it annoying. But after two weeks, something unexpected happened. He finished his library book and actually enjoyed it. He discovered that he liked helping his dad make roti on Saturday mornings. He started cycling to the corner shop instead of asking for a lift. And he still had plenty of time for his tablet — he just used it more carefully, choosing things he genuinely wanted to do rather than scrolling out of boredom.\n\n\"It's not really about screens being bad,\" Ravi told his friend Omar at school. \"It's about making sure they don't take over everything else.\"",
           "question": "Why does the author mention that Ravi's mum had been scrolling through a news app for forty minutes?",
           "options": [
-            "To show that the mum is a journalist",
-            "To prove that the mum was ignoring Ravi deliberately",
-            "To explain what news apps are used for",
+            "To show that the mum works as a journalist and reads the news as part of her job",
+            "To prove that the mum was deliberately ignoring Ravi while he was trying to talk to her",
+            "To explain what news apps are used for and how adults access information on their phones",
             "To highlight that adults can also spend too much time on screens, adding irony to her advice",
-            "To show that the family's Wi-Fi connection was working"
+            "To show that the family’s Wi-Fi connection was working properly and the internet was available"
           ],
           "correct": 3,
           "explanation": "There is a gentle irony in the mum criticising Ravi's screen time while she herself has been on her phone for forty minutes. The author includes this detail to show that screen time is a challenge for the whole family, not just children, and that the mum's advice — though valid — comes with a touch of hypocrisy. ✓"
@@ -5673,10 +5955,10 @@ const englishData = {
           "passage": "Every Sunday evening, the same argument happened in the Kapoor household. Twelve-year-old Ravi wanted more screen time. His parents wanted him to have less.\n\n\"You've been on that tablet for three hours today,\" his dad said, glancing at the parental controls app on his phone. \"That's your limit.\"\n\n\"But I wasn't just watching videos,\" Ravi protested. \"I was learning. I watched a documentary about volcanoes, then I used an app to practise my Spanish vocabulary, and then I played twenty minutes of a strategy game that's actually really good for problem-solving.\"\n\nHis mum looked up from her own phone — she had been scrolling through a news app for the past forty minutes. \"It's not just about what you're doing on the screen, Ravi. It's about what you're not doing. When did you last go outside? When did you last read an actual book?\"\n\nRavi opened his mouth to argue, then closed it again. She had a point. He hadn't been to the park in over a week, and the library book on his bedside table had a bookmark stuck on page thirty-four, where it had been since October.\n\nThe family agreed to try something new. They called it the Screen Time Swap. For every thirty minutes Ravi spent on a screen, he had to match it with thirty minutes of something off-screen: reading, going outside, helping with cooking, playing a board game, or practising his guitar.\n\nAt first, Ravi found it annoying. But after two weeks, something unexpected happened. He finished his library book and actually enjoyed it. He discovered that he liked helping his dad make roti on Saturday mornings. He started cycling to the corner shop instead of asking for a lift. And he still had plenty of time for his tablet — he just used it more carefully, choosing things he genuinely wanted to do rather than scrolling out of boredom.\n\n\"It's not really about screens being bad,\" Ravi told his friend Omar at school. \"It's about making sure they don't take over everything else.\"",
           "question": "What does the word 'protested' mean in the sentence 'Ravi protested'?",
           "options": [
-            "Agreed quietly",
-            "Shouted angrily",
-            "Whispered nervously",
-            "Asked politely",
+            "Agreed quietly and calmly",
+            "Shouted angrily at someone",
+            "Whispered nervously to himself",
+            "Asked politely and patiently",
             "Objected and argued back"
           ],
           "correct": 4,
@@ -5693,10 +5975,10 @@ const englishData = {
           "question": "What is Omar most likely to do after hearing Ravi's advice?",
           "options": [
             "Think about his own screen habits and perhaps try a similar approach",
-            "Ignore Ravi completely because he doesn't own a tablet",
-            "Throw his tablet in the bin",
-            "Tell Ravi that screens are always bad",
-            "Report Ravi to a teacher for using too much screen time"
+            "Ignore Ravi completely because he doesn’t own a tablet of his own",
+            "Throw his tablet in the bin and never use a screen ever again",
+            "Tell Ravi that screens are always bad and should be banned entirely",
+            "Report Ravi to a teacher for spending too much time on his screen"
           ],
           "correct": 0,
           "explanation": "Ravi's conclusion is balanced and relatable — he is not saying screens are bad, just that they shouldn't 'take over everything else.' This is the kind of sensible, personal insight that would make a friend reflect on their own habits. Omar is most likely to consider trying something similar. ✓"
@@ -5730,11 +6012,11 @@ const englishData = {
           "passage": "Every Sunday evening, the same argument happened in the Kapoor household. Twelve-year-old Ravi wanted more screen time. His parents wanted him to have less.\n\n\"You've been on that tablet for three hours today,\" his dad said, glancing at the parental controls app on his phone. \"That's your limit.\"\n\n\"But I wasn't just watching videos,\" Ravi protested. \"I was learning. I watched a documentary about volcanoes, then I used an app to practise my Spanish vocabulary, and then I played twenty minutes of a strategy game that's actually really good for problem-solving.\"\n\nHis mum looked up from her own phone — she had been scrolling through a news app for the past forty minutes. \"It's not just about what you're doing on the screen, Ravi. It's about what you're not doing. When did you last go outside? When did you last read an actual book?\"\n\nRavi opened his mouth to argue, then closed it again. She had a point. He hadn't been to the park in over a week, and the library book on his bedside table had a bookmark stuck on page thirty-four, where it had been since October.\n\nThe family agreed to try something new. They called it the Screen Time Swap. For every thirty minutes Ravi spent on a screen, he had to match it with thirty minutes of something off-screen: reading, going outside, helping with cooking, playing a board game, or practising his guitar.\n\nAt first, Ravi found it annoying. But after two weeks, something unexpected happened. He finished his library book and actually enjoyed it. He discovered that he liked helping his dad make roti on Saturday mornings. He started cycling to the corner shop instead of asking for a lift. And he still had plenty of time for his tablet — he just used it more carefully, choosing things he genuinely wanted to do rather than scrolling out of boredom.\n\n\"It's not really about screens being bad,\" Ravi told his friend Omar at school. \"It's about making sure they don't take over everything else.\"",
           "question": "What is the author's overall viewpoint on screen time in this passage?",
           "options": [
-            "Screens are dangerous and should be banned for children",
-            "Screen time is always educational and parents worry too much",
+            "Screens are dangerous and should be completely banned for all children under the age of sixteen",
+            "Screen time is always educational and parents worry far too much about their children using them",
             "A balanced approach works best — screens are useful but should not replace other activities",
-            "Children should only use screens at school, never at home",
-            "Parents should not set any rules about screen time"
+            "Children should only use screens at school and never at home regardless of the circumstances",
+            "Parents should not set any rules about screen time because children can manage it themselves"
           ],
           "correct": 2,
           "explanation": "The passage presents a balanced viewpoint. Ravi's screen use includes educational content, and the solution is not to ban screens but to balance them with off-screen activities. Ravi's final comment — 'It's not really about screens being bad... it's about making sure they don't take over everything else' — sums up the author's balanced message. ✓"
@@ -5768,10 +6050,10 @@ const englishData = {
           "passage": "Today, almost everyone carries a telephone in their pocket. We use them to send messages, take photographs, watch videos, and browse the internet. But when Alexander Graham Bell made the first successful telephone call on 10th March 1876, he could never have imagined what his invention would become.\n\nBell was born in Edinburgh, Scotland, in 1847. His mother was nearly deaf, and his father was a speech teacher who worked with deaf pupils. Growing up surrounded by the science of sound and speech, it is perhaps no surprise that Bell became fascinated by the idea of sending the human voice along a wire.\n\nHe was not alone in this quest. Several other inventors were working on similar devices at the same time, including an Italian-American engineer called Antonio Meucci and an American electrician named Elisha Gray. In fact, Bell and Gray filed their patent applications on the very same day — 14th February 1876. Bell's was registered just hours earlier, and he was awarded the patent. This decision remained controversial for over a century.\n\nBell's first telephone was a simple device. A person spoke into a cone-shaped mouthpiece, which caused a thin metal disc to vibrate. These vibrations were converted into electrical signals that travelled along a copper wire to a receiver at the other end, where the process was reversed — electrical signals became vibrations, and vibrations became sound.\n\nThe first words ever spoken on a telephone were directed at Bell's assistant, Thomas Watson, who was in the next room: \"Mr Watson, come here. I want to see you.\" It was hardly a dramatic speech, but it changed the world.\n\nWithin just four years, there were over sixty thousand telephones in use across the United States. By 1900, that number had reached nearly six hundred thousand. Bell himself, however, refused to have a telephone in his study. He said it distracted him from his work — a complaint that sounds remarkably familiar to anyone who has ever been interrupted by a ringing phone.",
           "question": "Why does the author say Bell's interest in sound was 'perhaps no surprise'?",
           "options": [
-            "Because Bell had always loved music",
-            "Because Bell's school taught science as the main subject",
-            "Because all Scottish people were interested in science",
-            "Because telephones already existed when Bell was young",
+            "Because Bell had always loved listening to music and playing instruments from a young age",
+            "Because Bell’s school taught science as the main subject and encouraged technical invention",
+            "Because all Scottish people at that time were interested in science and mechanical invention",
+            "Because telephones already existed when Bell was young and he grew up using them every day",
             "Because his family background was deeply connected to sound, speech, and deafness"
           ],
           "correct": 4,
@@ -5788,10 +6070,10 @@ const englishData = {
           "question": "What does the word 'controversial' mean in the phrase 'This decision remained controversial for over a century'?",
           "options": [
             "Causing disagreement and debate",
-            "Universally celebrated",
-            "Quickly forgotten",
-            "Extremely expensive",
-            "Completely fair"
+            "Universally celebrated and admired",
+            "Quickly forgotten by most people",
+            "Extremely expensive to deal with",
+            "Completely fair to everyone involved"
           ],
           "correct": 0,
           "explanation": "The word 'controversial' means causing disagreement, debate, or argument. The patent decision was controversial because other inventors, particularly Meucci and Gray, were working on similar devices, and many people believed Bell was not the only — or even the first — inventor of the telephone. ✓"
@@ -5844,11 +6126,11 @@ const englishData = {
           "passage": "Today, almost everyone carries a telephone in their pocket. We use them to send messages, take photographs, watch videos, and browse the internet. But when Alexander Graham Bell made the first successful telephone call on 10th March 1876, he could never have imagined what his invention would become.\n\nBell was born in Edinburgh, Scotland, in 1847. His mother was nearly deaf, and his father was a speech teacher who worked with deaf pupils. Growing up surrounded by the science of sound and speech, it is perhaps no surprise that Bell became fascinated by the idea of sending the human voice along a wire.\n\nHe was not alone in this quest. Several other inventors were working on similar devices at the same time, including an Italian-American engineer called Antonio Meucci and an American electrician named Elisha Gray. In fact, Bell and Gray filed their patent applications on the very same day — 14th February 1876. Bell's was registered just hours earlier, and he was awarded the patent. This decision remained controversial for over a century.\n\nBell's first telephone was a simple device. A person spoke into a cone-shaped mouthpiece, which caused a thin metal disc to vibrate. These vibrations were converted into electrical signals that travelled along a copper wire to a receiver at the other end, where the process was reversed — electrical signals became vibrations, and vibrations became sound.\n\nThe first words ever spoken on a telephone were directed at Bell's assistant, Thomas Watson, who was in the next room: \"Mr Watson, come here. I want to see you.\" It was hardly a dramatic speech, but it changed the world.\n\nWithin just four years, there were over sixty thousand telephones in use across the United States. By 1900, that number had reached nearly six hundred thousand. Bell himself, however, refused to have a telephone in his study. He said it distracted him from his work — a complaint that sounds remarkably familiar to anyone who has ever been interrupted by a ringing phone.",
           "question": "Why does the author begin the passage by describing modern smartphones before going back to 1876?",
           "options": [
-            "Because the author forgot to organise the passage properly",
-            "To explain how to use a smartphone",
-            "To advertise modern telephones",
-            "To create a contrast between today's technology and Bell's simple invention, making the history feel relevant",
-            "To suggest that Bell's invention was not important"
+            "Because the author made an error and forgot to organise the passage in the correct chronological order throughout",
+            "To give the reader step-by-step instructions on how to set up and use a modern smartphone at home today",
+            "To advertise and promote modern telephone companies and encourage children to buy the latest devices",
+            "To create a contrast between today’s technology and Bell’s simple invention, making the history feel relevant",
+            "To suggest that Bell’s invention was not important and that his contribution to history should be forgotten"
           ],
           "correct": 3,
           "explanation": "By starting with something familiar — the phone in your pocket — and then jumping back to 1876, the author creates a powerful contrast. It helps the reader appreciate how far technology has come and makes the historical content feel relevant and connected to their own life. This technique hooks the reader's interest from the very first line. ✓"
@@ -5901,11 +6183,11 @@ const englishData = {
           "passage": "When Dad announced that this year's holiday would be a week of camping in the New Forest, Lily's heart sank. She pictured soggy sleeping bags, cold baked beans, and insects crawling into her shoes. Her younger brother, Alfie, who was seven, punched the air and shouted, \"YES!\" He had been asking to go camping since he saw a programme about survival skills on television.\n\nThey arrived on a Saturday afternoon in late July. The campsite was nothing like Lily had imagined. It sat in a clearing surrounded by ancient oak trees, with a stream running along one edge. There were proper toilet blocks, a small shop that sold milk and firewood, and a communal fire pit where families gathered in the evenings.\n\nThe first challenge was putting up the tent. Dad had watched a tutorial video online and was confident he knew what he was doing. Forty-five minutes later, the tent was still flat on the ground, and Dad was sitting on a cool box, reading the instructions he should have read from the start.\n\n\"Would you like a hand?\" called their neighbour from the next pitch — a cheerful woman called Margaret, who had been camping for thirty years. Within ten minutes, the tent was standing. Margaret showed them how to peg the guy ropes at the correct angle to stop it blowing over in the wind.\n\nBy Monday, Lily had stopped missing her bedroom. She had learned to toast marshmallows without setting them on fire. She had paddled in the stream and spotted a kingfisher — a flash of electric blue that appeared and vanished in a heartbeat. She had sat around the fire pit listening to Margaret's stories about camping in the Scottish Highlands during snowstorms.\n\nOn Wednesday, they went on a ranger-led walk and saw wild ponies grazing beside the path. The ranger explained that New Forest ponies had roamed freely for over a thousand years and belonged to local people called commoners, who had ancient rights to let their animals graze on the forest land.\n\nOn the last morning, as they packed the car, Lily felt something she hadn't expected: sadness. She didn't want to leave.\n\n\"Same time next year?\" Dad asked, folding the tent — perfectly this time.\n\nLily smiled. \"Can we come for two weeks?\"",
           "question": "What does the word 'communal' mean in the phrase 'a communal fire pit'?",
           "options": [
-            "Very large",
+            "Very large and impressive to look at",
             "Shared by everyone on the campsite",
-            "Made of stone",
-            "Only for adults",
-            "Hidden from view"
+            "Made of stone and built carefully",
+            "Only for adults and not for children",
+            "Hidden from view behind the main camp"
           ],
           "correct": 1,
           "explanation": "The word 'communal' means shared by a group of people. The passage says it was a fire pit 'where families gathered in the evenings,' confirming that it was a shared space used by everyone at the campsite, not private to one family. ✓"
@@ -5920,11 +6202,11 @@ const englishData = {
           "passage": "When Dad announced that this year's holiday would be a week of camping in the New Forest, Lily's heart sank. She pictured soggy sleeping bags, cold baked beans, and insects crawling into her shoes. Her younger brother, Alfie, who was seven, punched the air and shouted, \"YES!\" He had been asking to go camping since he saw a programme about survival skills on television.\n\nThey arrived on a Saturday afternoon in late July. The campsite was nothing like Lily had imagined. It sat in a clearing surrounded by ancient oak trees, with a stream running along one edge. There were proper toilet blocks, a small shop that sold milk and firewood, and a communal fire pit where families gathered in the evenings.\n\nThe first challenge was putting up the tent. Dad had watched a tutorial video online and was confident he knew what he was doing. Forty-five minutes later, the tent was still flat on the ground, and Dad was sitting on a cool box, reading the instructions he should have read from the start.\n\n\"Would you like a hand?\" called their neighbour from the next pitch — a cheerful woman called Margaret, who had been camping for thirty years. Within ten minutes, the tent was standing. Margaret showed them how to peg the guy ropes at the correct angle to stop it blowing over in the wind.\n\nBy Monday, Lily had stopped missing her bedroom. She had learned to toast marshmallows without setting them on fire. She had paddled in the stream and spotted a kingfisher — a flash of electric blue that appeared and vanished in a heartbeat. She had sat around the fire pit listening to Margaret's stories about camping in the Scottish Highlands during snowstorms.\n\nOn Wednesday, they went on a ranger-led walk and saw wild ponies grazing beside the path. The ranger explained that New Forest ponies had roamed freely for over a thousand years and belonged to local people called commoners, who had ancient rights to let their animals graze on the forest land.\n\nOn the last morning, as they packed the car, Lily felt something she hadn't expected: sadness. She didn't want to leave.\n\n\"Same time next year?\" Dad asked, folding the tent — perfectly this time.\n\nLily smiled. \"Can we come for two weeks?\"",
           "question": "Which of the following did Lily NOT do during the camping trip?",
           "options": [
-            "Toast marshmallows",
-            "Paddle in the stream",
+            "Toast marshmallows over the fire",
+            "Paddle in the stream with Alfie",
             "Go horse riding on the wild ponies",
-            "Spot a kingfisher",
-            "Listen to Margaret's stories"
+            "Spot a kingfisher by the stream",
+            "Listen to Margaret’s camping stories"
           ],
           "correct": 2,
           "explanation": "The passage mentions Lily toasting marshmallows, paddling in the stream, spotting a kingfisher, and listening to Margaret's stories. Although they saw wild ponies on the Wednesday walk, there is no mention of anyone riding them. The ponies were simply grazing beside the path. ✓"
@@ -5939,11 +6221,11 @@ const englishData = {
           "passage": "When Dad announced that this year's holiday would be a week of camping in the New Forest, Lily's heart sank. She pictured soggy sleeping bags, cold baked beans, and insects crawling into her shoes. Her younger brother, Alfie, who was seven, punched the air and shouted, \"YES!\" He had been asking to go camping since he saw a programme about survival skills on television.\n\nThey arrived on a Saturday afternoon in late July. The campsite was nothing like Lily had imagined. It sat in a clearing surrounded by ancient oak trees, with a stream running along one edge. There were proper toilet blocks, a small shop that sold milk and firewood, and a communal fire pit where families gathered in the evenings.\n\nThe first challenge was putting up the tent. Dad had watched a tutorial video online and was confident he knew what he was doing. Forty-five minutes later, the tent was still flat on the ground, and Dad was sitting on a cool box, reading the instructions he should have read from the start.\n\n\"Would you like a hand?\" called their neighbour from the next pitch — a cheerful woman called Margaret, who had been camping for thirty years. Within ten minutes, the tent was standing. Margaret showed them how to peg the guy ropes at the correct angle to stop it blowing over in the wind.\n\nBy Monday, Lily had stopped missing her bedroom. She had learned to toast marshmallows without setting them on fire. She had paddled in the stream and spotted a kingfisher — a flash of electric blue that appeared and vanished in a heartbeat. She had sat around the fire pit listening to Margaret's stories about camping in the Scottish Highlands during snowstorms.\n\nOn Wednesday, they went on a ranger-led walk and saw wild ponies grazing beside the path. The ranger explained that New Forest ponies had roamed freely for over a thousand years and belonged to local people called commoners, who had ancient rights to let their animals graze on the forest land.\n\nOn the last morning, as they packed the car, Lily felt something she hadn't expected: sadness. She didn't want to leave.\n\n\"Same time next year?\" Dad asked, folding the tent — perfectly this time.\n\nLily smiled. \"Can we come for two weeks?\"",
           "question": "What does the description 'a flash of electric blue that appeared and vanished in a heartbeat' help the reader to understand about the kingfisher?",
           "options": [
-            "That the kingfisher was very large",
-            "That the stream was very deep and blue",
-            "That Lily was frightened by the bird",
+            "That the kingfisher was a very large bird compared to the others Lily had seen before",
+            "That the stream itself was very deep and blue in colour, not the bird at the water’s edge",
+            "That Lily was so frightened by the bird that she jumped away from the water in surprise",
             "That it moved incredibly fast and its bright colour made a vivid, fleeting impression",
-            "That the kingfisher was injured"
+            "That the kingfisher had been injured recently and was struggling to fly across the stream"
           ],
           "correct": 3,
           "explanation": "This descriptive phrase uses vivid imagery to capture the kingfisher's speed and striking colour. 'A flash of electric blue' describes the intense colour, while 'appeared and vanished in a heartbeat' conveys how quickly the bird moved. Together, they create a sense of a brief but magical moment. ✓"
@@ -6027,7 +6309,13 @@ Minutes passed. Then, slowly, the horn sound grew fainter. The ship was turning 
 
 "Another one saved, old friend," Tom whispered. "Another one saved."`,
           "question": "In the sentence 'Then, slowly, the horn sound grew fainter,' what type of word is 'slowly'?",
-          "options": ["A noun (naming word)","A verb (doing word)","An adverb (tells us how something is done)","An adjective (describing word)","A preposition (position word)"],
+          "options": [
+            "A noun (a word that names a thing or object)",
+            "A verb (a word that describes an action)",
+            "An adverb (tells us how something is done)",
+            "An adjective (a word that describes a noun)",
+            "A preposition (a word that shows position)"
+          ],
           "correct": 2,
           "explanation": "'Slowly' is an adverb — it tells us HOW the horn sound grew fainter. Adverbs answer the question 'how?' and many end in '-ly'. Here, 'slowly' describes the way the change happened over time. ✓"
         },
@@ -6678,7 +6966,13 @@ Minutes passed. Then, slowly, the horn sound grew fainter. The ship was turning 
 
 "Another one saved, old friend," Tom whispered. "Another one saved."`,
           "question": "Why does Tom climb the lighthouse steps 'two at a time'?",
-          "options": ["He wants to exercise","He is racing against Barnacle","He is in a hurry because he is worried about something","He always climbs stairs quickly","He wants to reach the light before dark"],
+          "options": [
+            "He wants to get some exercise after sitting down all morning",
+            "He is racing against Barnacle the cat to reach the top first",
+            "He is in a hurry because he is worried about something",
+            "He has always climbed stairs quickly out of habit and energy",
+            "He wants to reach the light before dark because it takes time"
+          ],
           "correct": 2,
           "explanation": "Tom taking the stairs 'two at a time' suggests urgency — he's rushing because something has concerned him. Writers use details like this to show how a character is feeling without telling us directly. ✓"
         },
@@ -6713,7 +7007,13 @@ Dave guided them through the narrow entrance, and suddenly the water was calm. T
 
 "Same time tomorrow?" she said.`,
           "question": "What does the description of the sky as 'bruised and heavy' tell the reader?",
-          "options": ["The sky has been damaged","The clouds are purple","It is night time","The weather is about to turn very bad","Someone has been hurt"],
+          "options": [
+            "The sky has somehow been damaged by the wind",
+            "The clouds are a deep, rich purple colour",
+            "It is nearly night time and getting dark",
+            "The weather is about to turn very bad",
+            "Someone nearby has recently been hurt"
+          ],
           "correct": 3,
           "explanation": "'Bruised and heavy' paints a picture of dark, threatening clouds — the writer is hinting that a storm is coming without saying it directly. This is a great example of how authors use description to create atmosphere. ✓"
         },
@@ -6742,7 +7042,13 @@ Priya stared at the tooth. It was dark brown and heavy-looking, about the size o
 
 Mrs Greenwood smiled. "I was hoping you'd say that."`,
           "question": "Why does the author describe the museum as 'peculiar' rather than just 'old' or 'interesting'?",
-          "options": ["Because it is very large","Because it is very expensive","Because it is in a peculiar location","Because the exhibits are boring","Because there is something strange and unexpected about it"],
+          "options": [
+            "Because it is a very large building with many different rooms",
+            "Because the admission price is very expensive for visitors",
+            "Because it is located in an unusual and peculiar part of town",
+            "Because the exhibits inside are dull and boring to look at",
+            "Because there is something strange and unexpected about it"
+          ],
           "correct": 4,
           "explanation": "'Peculiar' suggests something odd and slightly mysterious — it makes us curious about what we might find inside. The author chose this word carefully to create a sense of wonder and intrigue from the very start. ✓"
         },
@@ -6763,7 +7069,13 @@ I have weathered every storm, though not without scars. The great gale of 1987 t
 
 Now, in this modern age, the council has placed a preservation order on me. A small brass plaque at my base reads: "The Ashworth Oak — estimated age 400 years. Protected." Schoolchildren visit me on nature walks, pressing their ears against my bark as if hoping to hear my heartbeat. And perhaps, in the gentle creak of my branches and the whisper of my leaves, they do. I am not just a tree. I am a living library, holding the memory of this place in every ring of my ancient trunk.`,
           "question": "What does the phrase 'the oak had witnessed centuries of change' suggest about the tree?",
-          "options": ["The tree can see","The tree is very old and has been standing through many generations","The tree has been moved many times","The tree was planted recently","The tree is magical"],
+          "options": [
+            "The tree has real eyes and can literally see the things around it",
+            "The tree is very old and has been standing through many generations",
+            "The tree has been carefully moved to several different locations over time",
+            "The tree was planted only recently and has not been there very long at all",
+            "The tree has magical powers that allow it to control the seasons and weather"
+          ],
           "correct": 1,
           "explanation": "'Witnessed centuries' is personification — giving the tree a human quality (witnessing). It tells us the tree is extremely old and has been there through huge amounts of history. The writer makes the tree sound wise and important. ✓"
         },
@@ -6784,7 +7096,13 @@ More adventurous explorers may discover beadlet anemones, which look like blobs 
 
 Rock pools face growing threats from pollution, climate change and careless visitors who remove creatures or disturb the delicate ecosystem. Marine conservation charities along the Cornish coast run regular guided rock pool safaris, teaching visitors how to explore responsibly. These experts remind us that every rock pool is a complex community where each creature plays a vital role. By treating these habitats with respect, we ensure that future generations can experience the same wonder and excitement that rock pooling has brought to families for centuries.`,
           "question": "Why does the author describe the rock pool as 'a miniature world'?",
-          "options": ["Because it is very small","Because children like small things","Because it contains a complete ecosystem with many different creatures, like a tiny version of the ocean","Because it is shaped like the world","Because it has a map in it"],
+          "options": [
+            "Because the pool itself is very small compared to the ocean, and children would notice its tiny size straight away",
+            "Because children generally enjoy looking at small things and feel comfortable exploring miniature environments",
+            "Because it contains a complete ecosystem with many different creatures, like a tiny version of the ocean",
+            "Because the shape of the rock pool is rounded like a globe, and its outline resembles a map of the whole world",
+            "Because someone has drawn a detailed map of the coastline on the rocks at the bottom of the shallow pool"
+          ],
           "correct": 2,
           "explanation": "A rock pool is like a tiny ocean in miniature — it has plants, predators, prey, and a whole community of creatures. Calling it 'a miniature world' helps us see it as something amazing and complete, not just a puddle. ✓"
         },
@@ -6805,7 +7123,13 @@ Back at the hive, the forager passes the nectar to a house bee through a process
 
 Beyond honey production, bees perform a service that is absolutely vital to our food supply: pollination. As they move from flower to flower collecting nectar, tiny grains of pollen stick to their furry bodies and are carried to the next blossom. This process allows plants to produce fruits, vegetables and seeds. Scientists estimate that one third of all the food we eat depends on bee pollination. Without these remarkable insects, our plates would look very different indeed.`,
           "question": "Why does the author compare a beehive to 'a perfectly organised factory'?",
-          "options": ["Because bees are machines","Because bees produce pollution","Because beehives are made of metal","Because every bee has a specific job and they work together efficiently","Because factories make honey"],
+          "options": [
+            "Because bees are like tiny machines that never rest and never think",
+            "Because bees create waste products that spread across the local area",
+            "Because beehives are built from metal and other industrial materials",
+            "Because every bee has a specific job and they work together efficiently",
+            "Because factories are well-known places where honey is manufactured"
+          ],
           "correct": 3,
           "explanation": "The comparison helps us understand that a beehive is incredibly well-organised — every bee has a role (guards, foragers, nursery bees) and they all work together smoothly, just like workers in a factory. ✓"
         },
@@ -6826,7 +7150,13 @@ Britain's weather is particularly tricky to forecast because the country sits at
 
 Despite these challenges, weather forecasting has improved dramatically since 1987. A modern four-day forecast is now as accurate as a one-day forecast was thirty years ago. Early warning systems for severe weather events give communities precious hours to prepare, saving lives and reducing damage. Weather apps on mobile phones give us all access to up-to-the-minute forecasts that would have seemed like science fiction to Michael Fish and his colleagues. The atmosphere may never be fully predictable, but thanks to the dedication of storm chasers and meteorologists around the world, we are better prepared for whatever the skies throw at us than ever before.`,
           "question": "What do the storm chasers' actions tell us about their character?",
-          "options": ["They are lazy","They are lost","They are afraid of storms","They don't enjoy their job","They are brave and passionate about understanding weather"],
+          "options": [
+            "They are lazy and unwilling to do anything difficult or tiring",
+            "They are completely lost and have no idea where they are going",
+            "They are deeply afraid of storms and would rather stay at home",
+            "They don’t enjoy their job and would prefer to do something else",
+            "They are brave and passionate about understanding weather"
+          ],
           "correct": 4,
           "explanation": "People who deliberately drive TOWARDS dangerous storms must be both brave and fascinated by weather. Their actions tell us more about them than any description could — this is 'show, don't tell' in action! ✓"
         },
@@ -6853,7 +7183,13 @@ At the stern, a single large steering oar was fixed to the right-hand side of th
 
 "Can we stay a bit longer?" Amir asked, already knowing his grandmother would say yes. She always did when his eyes shone like that. He wanted to memorise every plank, every rivet, every curve of that magnificent dragon's head. Somewhere across a thousand years of history, a Viking shipbuilder had crafted something that could still take your breath away.`,
           "question": "Why might the author have chosen to describe the Vikings' journey from the perspective of someone on the ship?",
-          "options": ["To make the reader feel like they are there, experiencing the journey","Because the author was a Viking","Because it was easier to write","Because Vikings only told stories on ships","Because the ship is the most important character"],
+          "options": [
+            "To make the reader feel like they are there, experiencing the journey",
+            "Because the author was actually a Viking and sailed on those ships",
+            "Because it was easier to write than any other point of view",
+            "Because Vikings only ever told stories while they were aboard their ships",
+            "Because the ship itself is the most important character in the whole story"
+          ],
           "correct": 0,
           "explanation": "Writing from the ship's perspective puts us right in the middle of the action — we can feel the waves, hear the wind, and share the Vikings' excitement and fear. It's much more gripping than just describing events from the outside! ✓"
         },
@@ -6876,7 +7212,13 @@ Few merchants ever completed the entire journey. Instead, goods were passed from
 
 Perhaps the most lasting legacy of the Silk Road was not any physical product but the exchange of knowledge. Paper-making techniques spread from China to the Islamic world and then to Europe. Buddhism travelled from India to China and beyond. Mathematical ideas, astronomical discoveries, and medical knowledge flowed in both directions, enriching every civilisation they touched.`,
           "question": "Why does the author emphasise how long and dangerous the journey along the Silk Road was?",
-          "options": ["To scare the reader","To show that people were foolish","To make the reader appreciate how valuable the traded goods must have been","To explain why nobody travels any more","To describe the weather"],
+          "options": [
+            "To scare the reader with frightening details about the harsh desert",
+            "To show that the people who made the journey were foolish and unwise",
+            "To make the reader appreciate how valuable the traded goods must have been",
+            "To explain why nobody in the modern world bothers to travel that route any more",
+            "To describe the weather conditions along the route in careful detail"
+          ],
           "correct": 2,
           "explanation": "If traders were willing to face months of dangerous travel, the goods they carried must have been incredibly valuable. By emphasising the difficulty, the author helps us understand why silk and spices were considered treasures. ✓"
         },
@@ -6899,7 +7241,13 @@ As evening fell, Thomas sat on a bench near the enormous fireplace in the great 
 
 "Not a bad life," whispered Robert, the page beside him. Thomas smiled but said nothing. His feet were sore, his fingers were stained with ink, and his arms still throbbed from sword practice. But Robert was right. Not a bad life at all.`,
           "question": "What can we infer about life in Tudor times from the contrast between rich and poor families?",
-          "options": ["Everyone was happy","Poor people didn't exist","Rich people were always kind","There was a huge gap between the lives of wealthy and ordinary people","Everyone ate the same food"],
+          "options": [
+            "Everyone in Tudor England was equally happy and content with life",
+            "Poor people did not exist at all during the whole Tudor period",
+            "Rich people in Tudor times were always generous and kind to others",
+            "There was a huge gap between the lives of wealthy and ordinary people",
+            "Everyone in Tudor England ate exactly the same food at every meal"
+          ],
           "correct": 3,
           "explanation": "The author deliberately shows both sides — lavish feasts for the rich and simple meals for the poor — to highlight the enormous inequality in Tudor society. The contrast makes the gap feel even bigger. ✓"
         },
@@ -6924,7 +7272,13 @@ She spent what felt like hours exploring three different books, each one a doorw
 
 Elara glanced back at the ruin. The ivy had closed over the gap already, as though the building were drawing its curtains. She smiled. She knew she would return tomorrow night — and every night after that.`,
           "question": "Why does the author set the story in a library at midnight?",
-          "options": ["Because libraries are boring during the day","Because the library is closed","Because the character works night shifts","Because books can only be read at night","To create a mysterious, magical atmosphere where anything could happen"],
+          "options": [
+            "Because libraries are considered boring and ordinary during the daytime",
+            "Because the library is officially closed at that hour of the night",
+            "Because the main character works regular night shifts at the library",
+            "Because books are only able to be properly read late at night time",
+            "To create a mysterious, magical atmosphere where anything could happen"
+          ],
           "correct": 4,
           "explanation": "Midnight suggests mystery, magic, and the unknown. A library is already full of stories and imagination — combine that with midnight and you've got the perfect setting for something extraordinary to happen. Clever authors choose their settings very carefully! ✓"
         },
@@ -6953,7 +7307,13 @@ The work demanded extraordinary patience. One afternoon, Nell spent three hours 
 
 Nell looked at the clock, then at her own clumsy, oil-stained hands. She was beginning to understand.`,
           "question": "What does the apprentice's careful handling of the clockwork suggest about his feelings towards his work?",
-          "options": ["He respects and values the craft, and wants to do his best","He is bored","He is afraid of the clockmaker","He doesn't understand how clocks work","He wants to break the clock"],
+          "options": [
+            "He respects and values the craft, and wants to do his best",
+            "He is bored by the work and wants to finish as soon as possible",
+            "He is afraid of what the clockmaker might say if he makes a mistake",
+            "He does not really understand how clocks work and is just guessing",
+            "He secretly wants to break the clock apart and see what happens"
+          ],
           "correct": 0,
           "explanation": "Careful, gentle handling shows respect and pride in the work. The apprentice isn't just going through the motions — he genuinely cares about getting it right. Actions speak louder than words! ✓"
         },
@@ -6974,7 +7334,13 @@ One of the most important parts of the project was the compost bin, which stood 
 
 By the following spring, the allotment had become the heart of the school. Parents stopped by to admire the neat rows of green shoots. The school cook, Mr Petrov, created a special "Allotment Lunch" each Friday using whatever had been harvested that week. Even the children who had grumbled about getting mud under their fingernails admitted that eating a salad you had grown yourself tasted better than anything from a supermarket.`,
           "question": "Why does the author include the detail that 'even the children who didn't like vegetables were excited'?",
-          "options": ["To show that the vegetables were different","To show how engaging and fun the project was — it won over even the reluctant ones","To criticise children who don't eat vegetables","To sell vegetables","To show the teacher was strict"],
+          "options": [
+            "To show that the vegetables grown in the school garden looked completely different from shop ones",
+            "To show how engaging and fun the project was — it won over even the reluctant ones",
+            "To criticise the children who normally refuse to eat vegetables at home or at school",
+            "To try to sell vegetables to the reader by making them sound appealing and delicious",
+            "To show that the class teacher was very strict about what the children were allowed to eat"
+          ],
           "correct": 1,
           "explanation": "This detail shows the project was SO exciting that it changed people's minds. When even the doubters get on board, you know something special is happening. The author includes this to show the power of hands-on learning. ✓"
         },
@@ -6999,7 +7365,13 @@ By lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that
 
 Walking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.`,
           "question": "What does Amira noticing 'the sunlight dancing on the harbour' at the end of the passage suggest?",
-          "options": ["The weather improved","She is interested in science","She is finally beginning to feel happy and hopeful in her new home","She wants to go swimming","She is looking for her old home"],
+          "options": [
+            "The weather improved and the clouds finally cleared away",
+            "She has become very interested in science and the sea",
+            "She is finally beginning to feel happy and hopeful in her new home",
+            "She wants to go swimming in the harbour with her new friends",
+            "She is looking out across the water for signs of her old home"
+          ],
           "correct": 2,
           "explanation": "At the start, Amira was too anxious to notice anything around her. Now she's seeing beauty in her new surroundings — the 'dancing' sunlight reflects her lighter, more hopeful mood. The author uses the setting to mirror her feelings. ✓"
         },
@@ -7020,7 +7392,13 @@ Instructors always check that each child's bicycle is roadworthy before a sessio
 
 Schools that have introduced Bikeability often report a noticeable change. Fewer cars clog the streets at drop-off time, children arrive more alert and ready to learn, and the bike sheds that once stood half-empty are now full to bursting.`,
           "question": "Why does the author mention the character's legs 'burning' as he cycles uphill?",
-          "options": ["His legs are on fire","He has a medical condition","Because cycling is dangerous","To show the physical effort and determination required","To warn children not to cycle"],
+          "options": [
+            "His legs have literally caught on fire from the friction",
+            "He has a medical condition that makes his muscles ache",
+            "Because cycling uphill is considered dangerous for children",
+            "To show the physical effort and determination required",
+            "To warn children that they should not cycle up steep hills"
+          ],
           "correct": 3,
           "explanation": "'Burning' legs is a vivid way to describe the pain of hard exercise. The author uses this physical detail to show us how tough the hill is and how determined the character is to keep going. It puts us right in his shoes! ✓"
         },
@@ -7045,7 +7423,13 @@ An hour later, the three creations stood on the table. Oliver's cake was slightl
 
 Dad tasted each one slowly, making exaggerated "mmm" noises. Finally, he announced: "I declare this a three-way tie. And the real winner is me, because I get to eat all the leftovers."`,
           "question": "What does the phrase 'her hands trembled as she piped the icing' tell us about how the character feels?",
-          "options": ["She is cold","She is tired","She doesn't know how to bake","She is angry","She is nervous and under pressure"],
+          "options": [
+            "She is cold from standing in the kitchen",
+            "She is tired from baking all day long",
+            "She does not really know how to bake well",
+            "She is angry at the person who asked her",
+            "She is nervous and under pressure"
+          ],
           "correct": 4,
           "explanation": "Trembling hands are a physical sign of nerves. The author doesn't need to say 'she was nervous' — the trembling shows us. This is a great example of 'show, don't tell' — one of the most important writing techniques. ✓"
         },
@@ -7066,7 +7450,13 @@ Bees are also essential to the British countryside. As they move from flower to 
 
 Sadly, bee numbers in the United Kingdom have fallen sharply in recent years. Habitat loss, pesticides, and disease have all taken their toll. Conservation groups are now working hard to protect these tiny but mighty creatures, encouraging people to plant wildflowers and avoid harmful chemicals in their gardens.`,
           "question": "Why does the author use the word 'secret' in the title?",
-          "options": ["To make us curious about what bees do that most people don't know about","Because bees keep secrets","Because the information is classified","Because bees are invisible","Because the author doesn't want us to read it"],
+          "options": [
+            "To make us curious about what bees do that most people don’t know about",
+            "Because bees are known to keep secrets from the other insects",
+            "Because the information is classified and should not be shared widely",
+            "Because bees are invisible and people cannot normally see them at all",
+            "Because the author does not actually want children to read the passage"
+          ],
           "correct": 0,
           "explanation": "'Secret' makes us feel like we're about to discover something hidden and special. It hooks us in — we WANT to know the secret! Clever title choices can make readers desperate to keep reading. ✓"
         },
@@ -7087,7 +7477,13 @@ Deeper still is the midnight zone, where no sunlight penetrates at all. The pres
 
 The very deepest part of any ocean is the Mariana Trench in the Pacific, which plunges to nearly eleven thousand metres. In 2019, the British explorer Victor Vescovo became one of the few people ever to reach the bottom. Astonishingly, even there, in the most extreme environment on Earth, he found living creatures — and plastic rubbish.`,
           "question": "What effect does the word 'lurk' have when describing deep-sea creatures?",
-          "options": ["It makes them sound friendly","It makes them sound hidden and slightly threatening","It makes them sound fast","It makes them sound small","It makes them sound colourful"],
+          "options": [
+            "It makes them sound friendly and welcoming to divers",
+            "It makes them sound hidden and slightly threatening",
+            "It makes them sound fast and full of quick energy",
+            "It makes them sound small and completely harmless",
+            "It makes them sound colourful and beautiful to watch"
+          ],
           "correct": 1,
           "explanation": "'Lurk' suggests something hiding in the shadows, waiting — it creates a sense of mystery and slight danger. The author could have used 'live' or 'swim' but 'lurk' is much more atmospheric. Word choice makes all the difference! ✓"
         },
@@ -7108,7 +7504,13 @@ Britain does not have any active volcanoes today, but it was not always so peace
 
 Volcanoes are not entirely destructive. Volcanic soil is extremely fertile, which is why many farmers choose to live on the slopes of volcanoes despite the danger. Volcanic eruptions also release gases that helped form the Earth's atmosphere billions of years ago, and hot springs heated by underground volcanic activity provide warmth and energy in countries like Iceland and New Zealand.`,
           "question": "Why does the author call volcanoes 'fire mountains' in the title?",
-          "options": ["Because the mountains are always on fire","Because the mountains are red","Because that's the scientific name","To use simple, dramatic language that makes volcanoes sound exciting and powerful","Because they're in a hot country"],
+          "options": [
+            "Because the actual mountains are permanently on fire deep inside the earth",
+            "Because the surface of the mountains always appears bright red in colour",
+            "Because ‘fire mountains’ is the correct scientific term used by geologists",
+            "To use simple, dramatic language that makes volcanoes sound exciting and powerful",
+            "Because these particular volcanoes are only found in very hot countries nearby"
+          ],
           "correct": 3,
           "explanation": "'Fire mountains' is much more exciting and vivid than 'volcanoes'. The title creates an image of something dramatic and dangerous — it makes us want to find out more. Authors choose titles that grab attention! ✓"
         },
@@ -7129,7 +7531,13 @@ Life on the wall was not easy. Northern England was bitterly cold in winter, and
 
 Hadrian's Wall was not just a military barrier. It also controlled trade and movement, with gateways where merchants could pass through after paying taxes. For nearly three hundred years, the wall marked the northern edge of the Roman Empire — one of the largest empires the world has ever known.`,
           "question": "What does the size of Hadrian's Wall tell us about the Romans?",
-          "options": ["They were very tall","They were afraid of everything","They liked building walls","They had nothing else to do","They were incredibly organised, powerful, and determined to defend their territory"],
+          "options": [
+            "They were very tall people and needed extremely high walls to match",
+            "They were afraid of everything and built walls to keep all danger out",
+            "They simply liked building walls and did it as a hobby in their spare time",
+            "They had nothing else to do with their time, so they built walls for fun",
+            "They were incredibly organised, powerful, and determined to defend their territory"
+          ],
           "correct": 4,
           "explanation": "Building a wall across the entire width of Britain required incredible organisation, thousands of workers, and huge resources. The wall itself is evidence of how powerful and determined the Roman Empire was. ✓"
         },
@@ -7150,7 +7558,13 @@ Not everything on the Tudor menu would appeal to modern tastes. Dishes included 
 
 Drinking water was often unsafe in Tudor England, so even children drank weak beer called small beer. Wine was reserved for the wealthy, imported from France and Spain at great cost. A Tudor feast was not just a meal — it was a spectacular performance, designed to impress, entertain, and remind everyone exactly who held the power.`,
           "question": "What can we infer about Tudor society from the description of the feast?",
-          "options": ["Wealth and status were extremely important — food was used to show off power and position","Everyone was vegetarian","Nobody enjoyed the food","The food was all healthy","Everyone ate the same amount"],
+          "options": [
+            "Wealth and status were extremely important — food was used to show off power and position",
+            "Everyone in Tudor England followed a strict vegetarian diet at all their formal feasts",
+            "Nobody actually enjoyed the food served at the feast because it was poorly prepared",
+            "The food at Tudor feasts was always healthy, fresh, and carefully balanced for nutrition",
+            "Everyone at the feast ate exactly the same amount of food regardless of their position"
+          ],
           "correct": 0,
           "explanation": "The lavish descriptions of exotic dishes and elaborate presentations show that Tudor feasts were as much about displaying wealth as they were about eating. Food was a status symbol — the richer you were, the more impressive your table. ✓"
         },
@@ -7171,7 +7585,13 @@ Despite the fear and destruction, people showed remarkable courage. Volunteer fi
 
 The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely in the face of terrible danger. Whether it was a shopkeeper sweeping glass from his doorstep at dawn, or a mother singing to her children in a shelter, ordinary people showed extraordinary courage during Britain's darkest hours.`,
           "question": "Why does the author include the detail that 'neighbours shared their last tin of biscuits'?",
-          "options": ["To show that biscuits were popular","To illustrate how people came together and supported each other during the most difficult times","To show food was expensive","To explain rationing rules","To advertise biscuits"],
+          "options": [
+            "To show that biscuits were a particularly popular and widely enjoyed treat during the wartime years",
+            "To illustrate how people came together and supported each other during the most difficult times",
+            "To show that food was very expensive and hard to come by during the rationing years of the war",
+            "To explain the official government rationing rules that controlled how food was shared fairly",
+            "To advertise a particular brand of biscuits that was especially well known during that period"
+          ],
           "correct": 1,
           "explanation": "Sharing your LAST tin — not just any tin — shows real sacrifice and community spirit. This small detail powerfully illustrates how ordinary people looked after each other when times were toughest. Sometimes the smallest details tell the biggest stories. ✓"
         }

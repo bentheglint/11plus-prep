@@ -319,12 +319,12 @@ function MockTestScreen({
             <div className="mb-6 space-y-4">
               <div>
                 <p className="text-sm font-bold text-[#6C5CE7] mb-2">Group A</p>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   {question.setA.map((word, idx) => (
                     <button
                       key={idx}
                       onClick={() => handlePickFromSet('A', idx)}
-                      className={`p-3 text-center rounded-xl border-2 transition-all font-medium ${
+                      className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
                         selectedPair[0] === idx
                           ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                           : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
@@ -337,12 +337,12 @@ function MockTestScreen({
               </div>
               <div>
                 <p className="text-sm font-bold text-indigo-700 mb-2">Group B</p>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   {question.setB.map((word, idx) => (
                     <button
                       key={idx}
                       onClick={() => handlePickFromSet('B', idx)}
-                      className={`p-3 text-center rounded-xl border-2 transition-all font-medium ${
+                      className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
                         selectedPair[1] === idx
                           ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                           : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'

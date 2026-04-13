@@ -4179,8 +4179,8 @@ export function ParallelLines({
         {topAngles.map(a => drawArc(topPt.x, topPt.y, a.start, a.sweep, a.color, a.label, a.isUnknown))}
         {botAngles.map(a => drawArc(botPt.x, botPt.y, a.start, a.sweep, a.color, a.label, a.isUnknown))}
 
-        {/* Letter shape hint */}
-        {highlight && (
+        {/* Letter shape hint — only show on lessons, not on quiz questions */}
+        {highlight && !hideAnswer && (
           <text x={vw / 2} y={vh - 8} textAnchor="middle" fontSize={13} fontWeight="600" fill="#64748b">
             {highlight === "corresponding" ? "F-shape — equal angles" :
              highlight === "alternate" ? "Z-shape — equal angles" :

@@ -20814,7 +20814,7 @@ anglesshapes: {
     {
       id: 1,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 65, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 65, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 115° and x°. What is the value of x?",
       options: ["45°", "55°", "65°", "75°", "85°"],
       correct: 2,
@@ -20966,7 +20966,7 @@ anglesshapes: {
     {
       id: 18,
       difficulty: 2,
-      visual: { component: "QuadShape", props: { angles: [60, 120, 60, 120], labels: ["60°", "120°", "60°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [60, 120, 60, 120], labels: ["60°", "120°", "60°", "x°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A rhombus has angles of 60°, 120°, 60°, and x°. What is x?",
       options: ["60°", "90°", "100°", "150°", "120°"],
       correct: 4,
@@ -21011,7 +21011,7 @@ anglesshapes: {
     {
       id: 23,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 128, label: "128°", color: "#6C5CE7"}, {value: 52, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 128, label: "128°", color: "#6C5CE7"}, {value: 52, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 128° and x°. What is the value of x?",
       options: ["42°", "48°", "62°", "58°", "52°"],
       correct: 4,
@@ -21038,7 +21038,7 @@ anglesshapes: {
     {
       id: 26,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [92, 88, 105, 75], labels: ["92°", "88°", "105°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [92, 88, 105, 75], labels: ["92°", "88°", "105°", "a°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A quadrilateral has angles 92°, 88°, 105°, and a°. What is a?",
       options: ["65°", "70°", "75°", "80°", "85°"],
       correct: 2,
@@ -21146,7 +21146,7 @@ anglesshapes: {
     {
       id: 38,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [78, 102, 96, 84], labels: ["78°", "102°", "96°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [78, 102, 96, 84], labels: ["78°", "102°", "96°", "n°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "Mia draws a quadrilateral with angles 78°, 102°, 96°, and n°. What is n?",
       options: ["74°", "79°", "94°", "89°", "84°"],
       correct: 4,
@@ -21155,7 +21155,7 @@ anglesshapes: {
     {
       id: 39,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 40, label: "2x°", color: "#FDCB6E"}, {value: 140, label: "7x°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 40, label: "?", color: "#FDCB6E"}, {value: 140, label: "?", color: "#6C5CE7"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 2:7. What is the smaller angle?",
       options: ["40°", "35°", "30°", "45°", "50°"],
       correct: 0,
@@ -21191,7 +21191,7 @@ anglesshapes: {
     {
       id: 43,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 95, label: "95°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 92, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 95, label: "95°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 92, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 85°, 95°, 88°, and b°. What is b?",
       options: ["82°", "87°", "102°", "97°", "92°"],
       correct: 4,
@@ -21227,7 +21227,7 @@ anglesshapes: {
     {
       id: 47,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [105, 75, 105, 75], labels: ["105°", "75°", "105°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [105, 75, 105, 75], labels: ["105°", "75°", "105°", "e°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A trapezium has angles 105°, 75°, 105°, and e°. What is e?",
       options: ["65°", "70°", "80°", "75°", "85°"],
       correct: 3,
@@ -21255,7 +21255,7 @@ anglesshapes: {
       id: 50,
       difficulty: 3,
       visual: { component: "AngleDiagram", props: { angle1: 48, angle2: 66, angle3: 66, showAngle3: false } },
-      question: "An isosceles triangle has an exterior angle of 132°. The two base angles are equal. What is each base angle?",
+      question: "An isosceles triangle has an exterior angle of 132°. What is each base angle?",
       options: ["54°", "66°", "60°", "72°", "78°"],
       correct: 1,
       explanation: "The interior angle adjacent to the exterior angle is 180° - 132° = 48°. This is the top angle. In an isosceles triangle with top angle 48°, the two base angles are equal. So 48° + base + base = 180°. Each base angle = (180 - 48) ÷ 2 = 66°. ✓"
@@ -21308,7 +21308,7 @@ anglesshapes: {
     {
       id: 56,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [68, 112, 68, 112], labels: ["68°", "112°", "68°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [68, 112, 68, 112], labels: ["68°", "112°", "68°", "h°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A parallelogram has angles 68°, 112°, 68°, and h°. What is h?",
       options: ["102°", "107°", "112°", "117°", "122°"],
       correct: 2,
@@ -21362,7 +21362,7 @@ anglesshapes: {
     {
       id: 62,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 85, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 85, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 72°, 98°, 105°, and q°. What is q?",
       options: ["75°", "80°", "90°", "85°", "95°"],
       correct: 3,
@@ -21375,7 +21375,7 @@ anglesshapes: {
       question: "Two angles on a straight line are 5r° and 7r°. What is r?",
       options: ["12°", "24°", "18°", "20°", "15°"],
       correct: 4,
-      explanation: "Angles on a straight line add up to 180°. So 5r + 7r = 180. This gives 12r = 180, so r = 15°. ✓"
+      explanation: "Angles on a straight line add up to 180°. So 5r + 7r = 180. This gives 12r = 180, so r = 180 ÷ 12 = 15°. ✓"
     },
     {
       id: 64,
@@ -21407,11 +21407,11 @@ anglesshapes: {
     {
       id: 67,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [84, 93, 97, 86], labels: ["84°", "93°", "97°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [84, 93, 97, 86], labels: ["84°", "93°", "97°", "s°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A quadrilateral has angles 84°, 93°, 97°, and s°. What is s?",
       options: ["76°", "81°", "91°", "86°", "96°"],
       correct: 3,
-      explanation: "Angles in a quadrilateral add up to 360°. So 84° + 93° + 97° + s = 360°. Therefore s = 360 - 274 = 86°. ✓"
+      explanation: "Angles in a quadrilateral add up to 360°. So s = 360 − (84 + 93 + 97) = 360 − 274 = 86°. ✓"
     },
     {
       id: 68,
@@ -21488,7 +21488,7 @@ anglesshapes: {
     {
       id: 76,
       difficulty: 2,
-      visual: { component: "QuadShape", props: { angles: [72, 108, 72, 108], labels: ["72°", "108°", "72°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [72, 108, 72, 108], labels: ["72°", "108°", "72°", "z°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A kite has angles 72°, 108°, 72°, and z°. What is z?",
       options: ["98°", "103°", "108°", "113°", "118°"],
       correct: 2,
@@ -21533,7 +21533,7 @@ anglesshapes: {
     {
       id: 81,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#6C5CE7"}, {value: 103, label: "103°", color: "#00B894"}, {value: 91, label: "91°", color: "#6C5CE7"}, {value: 77, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#6C5CE7"}, {value: 103, label: "103°", color: "#00B894"}, {value: 91, label: "91°", color: "#6C5CE7"}, {value: 77, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 89°, 103°, 91°, and b°. What is b?",
       options: ["67°", "72°", "77°", "82°", "87°"],
       correct: 2,
@@ -21578,7 +21578,7 @@ anglesshapes: {
     {
       id: 86,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [87, 94, 91, 88], labels: ["87°", "94°", "91°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [87, 94, 91, 88], labels: ["87°", "94°", "91°", "e°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A quadrilateral has angles 87°, 94°, 91°, and e°. What is e?",
       options: ["78°", "83°", "88°", "93°", "98°"],
       correct: 2,
@@ -21659,11 +21659,11 @@ anglesshapes: {
     {
       id: 95,
       difficulty: 2,
-      visual: { component: "QuadShape", props: { angles: [65, 115, 65, 115], labels: ["65°", "115°", "65°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [65, 115, 65, 115], labels: ["65°", "115°", "65°", "k°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A rhombus has angles 65°, 115°, 65°, and k°. What is k?",
       options: ["105°", "115°", "110°", "120°", "125°"],
       correct: 1,
-      explanation: "Angles in a quadrilateral add up to 360°. So 65° + 115° + 65° + k = 360°. Therefore k = 360 - 245 = 115°. ✓"
+      explanation: "A rhombus is a quadrilateral (4-sided shape), so its angles add up to 360°. So k = 360 − (65 + 115 + 65) = 360 − 245 = 115°. ✓"
     },
     {
       id: 96,
@@ -21713,7 +21713,7 @@ anglesshapes: {
     {
       id: 101,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#00B894"}, {value: 108, label: "108°", color: "#6C5CE7"}, {value: 76, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#00B894"}, {value: 108, label: "108°", color: "#6C5CE7"}, {value: 76, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 94°, 82°, 108°, and q°. What is q?",
       options: ["66°", "71°", "76°", "81°", "86°"],
       correct: 2,
@@ -21749,7 +21749,7 @@ anglesshapes: {
     {
       id: 105,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [98, 82, 98, 82], labels: ["98°", "82°", "98°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [98, 82, 98, 82], labels: ["98°", "82°", "98°", "s°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A trapezium has angles 98°, 82°, 98°, and s°. What is s?",
       options: ["72°", "82°", "77°", "87°", "92°"],
       correct: 1,
@@ -21839,7 +21839,7 @@ anglesshapes: {
     {
       id: 115,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [74, 106, 74, 106], labels: ["74°", "106°", "74°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [74, 106, 74, 106], labels: ["74°", "106°", "74°", "y°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
       question: "A parallelogram has angles 74°, 106°, 74°, and y°. What is y?",
       options: ["96°", "106°", "101°", "111°", "116°"],
       correct: 1,
@@ -21893,7 +21893,7 @@ anglesshapes: {
     {
       id: 121,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#6C5CE7"}, {value: 109, label: "109°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 67, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#6C5CE7"}, {value: 109, label: "109°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 67, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 96°, 109°, 88°, and b°. What is b?",
       options: ["57°", "62°", "67°", "72°", "77°"],
       correct: 2,
@@ -21902,7 +21902,7 @@ anglesshapes: {
     {
       id: 122,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "5x°", color: "#FDCB6E"}, {value: 130, label: "13x°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "?", color: "#FDCB6E"}, {value: 130, label: "?", color: "#6C5CE7"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 5:13. What is the smaller angle?",
       options: ["40°", "45°", "55°", "50°", "60°"],
       correct: 3,
@@ -21994,7 +21994,7 @@ anglesshapes: {
     {
       id: 131,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#6C5CE7"}, {value: 68, label: "68°", color: "#00B894"}, {value: 58, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#6C5CE7"}, {value: 68, label: "68°", color: "#00B894"}, {value: 58, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles on a straight line are 54°, 68°, and x°. What is x?",
       options: ["48°", "52°", "58°", "56°", "62°"],
       correct: 2,
@@ -22030,7 +22030,7 @@ anglesshapes: {
     {
       id: 135,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#6C5CE7"}, {value: 65, label: "?", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#00B894"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#6C5CE7"}, {value: 65, label: "y°", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#00B894"}], size: 200 } },
       question: "Sophie marks three angles on a straight line: 42°, y°, and 73°. What is y?",
       options: ["55°", "65°", "60°", "70°", "75°"],
       correct: 1,
@@ -22069,7 +22069,7 @@ anglesshapes: {
     {
       id: 139,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 28, label: "28°", color: "#6C5CE7"}, {value: 47, label: "47°", color: "#00B894"}, {value: 63, label: "63°", color: "#E17055"}, {value: 42, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 28, label: "28°", color: "#6C5CE7"}, {value: 47, label: "47°", color: "#00B894"}, {value: 63, label: "63°", color: "#E17055"}, {value: 42, label: "w°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles on a straight line are 28°, 47°, 63°, and w°. What is w?",
       options: ["42°", "37°", "32°", "47°", "52°"],
       correct: 0,
@@ -22087,7 +22087,7 @@ anglesshapes: {
     {
       id: 141,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "130°", color: "#6C5CE7"}, {value: 50, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "130°", color: "#6C5CE7"}, {value: 50, label: "a°", color: "#FDCB6E"}], size: 200 } },
       question: "Angle a is on a straight line with 130°. Angle b is vertically opposite to angle a. What is b?",
       options: ["40°", "60°", "50°", "130°", "140°"],
       correct: 2,
@@ -22096,7 +22096,7 @@ anglesshapes: {
     {
       id: 142,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 15, label: "15°", color: "#6C5CE7"}, {value: 35, label: "35°", color: "#00B894"}, {value: 75, label: "?", color: "#FDCB6E"}, {value: 55, label: "55°", color: "#E17055"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 15, label: "15°", color: "#6C5CE7"}, {value: 35, label: "35°", color: "#00B894"}, {value: 75, label: "x°", color: "#FDCB6E"}, {value: 55, label: "55°", color: "#E17055"}], size: 200 } },
       question: "Four angles on a straight line are 15°, 35°, x°, and 55°. What is x?",
       options: ["65°", "70°", "80°", "75°", "85°"],
       correct: 3,
@@ -22114,7 +22114,7 @@ anglesshapes: {
     {
       id: 144,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 68, label: "68°", color: "#6C5CE7"}, {value: 112, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 68, label: "68°", color: "#6C5CE7"}, {value: 112, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Angle p and angle q are on a straight line. Angle r is vertically opposite to angle q. If p = 68°, what is angle r?",
       options: ["112°", "68°", "102°", "22°", "122°"],
       correct: 0,
@@ -22407,7 +22407,7 @@ anglesshapes: {
     {
       id: 176,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 118, label: "118°", color: "#6C5CE7"}, {value: 76, label: "76°", color: "#00B894"}, {value: 83, label: "83°", color: "#6C5CE7"}, {value: 83, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 118, label: "118°", color: "#6C5CE7"}, {value: 76, label: "76°", color: "#00B894"}, {value: 83, label: "83°", color: "#6C5CE7"}, {value: 83, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 118°, 76°, 83°, and x°. What is x?",
       options: ["73°", "78°", "83°", "88°", "93°"],
       correct: 2,
@@ -22416,7 +22416,7 @@ anglesshapes: {
     {
       id: 177,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 156, label: "156°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 106, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 156, label: "156°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 106, label: "y°", color: "#FDCB6E"}], size: 200 } },
       question: "Three roads meet at a roundabout. The angles between them are 156°, 98°, and y°. What is y?",
       options: ["96°", "101°", "111°", "106°", "116°"],
       correct: 3,
@@ -22668,11 +22668,10 @@ anglesshapes: {
     {
       id: 203,
       difficulty: 3,
-      visual: { component: "RegularPolygon", props: { sides: 6, eachAngle: 120, angleLabel: "120°", highlightAngle: true } },
       question: "A regular polygon has interior angles of 120° each. How many sides does it have?",
       options: ["4", "5", "8", "7", "6"],
       correct: 4,
-      explanation: "For a regular polygon, each interior angle = ((n−2) × 180°) ÷ n. Setting this equal to 120° gives (n−2) × 180 = 120n. So 180n − 360 = 120n, meaning 60n = 360 and n = 6. It has 6 sides — it's a hexagon. ✓"
+      explanation: "In a regular polygon, each interior angle = ((n−2) × 180°) ÷ n. We need 120 = ((n−2) × 180) ÷ n. Multiply both sides by n: 120n = 180n − 360. So 60n = 360, meaning n = 6. It has 6 sides — it's a hexagon. ✓"
     },
     {
       id: 204,

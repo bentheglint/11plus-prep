@@ -1,9 +1,9 @@
 // Validates all question data for structural issues that would cause runtime crashes
 // Run: node scripts/validate-questions.js
 
-const mathsData = require('../src/questionData/mathsData.js');
-const englishData = require('../src/questionData/englishData.js');
-const vrData = require('../src/questionData/vrData.js');
+const mathsData = require('../../src/questionData/mathsData.js');
+const englishData = require('../../src/questionData/englishData.js');
+const vrData = require('../../src/questionData/vrData.js');
 
 const VALID_VISUAL_COMPONENTS = [
   'FunctionMachine', 'CuboidDiagram', 'SDTTriangle', 'AngleDiagram',
@@ -14,7 +14,76 @@ const VALID_VISUAL_COMPONENTS = [
 ];
 
 const errors = [];
+const warnings = [];
 let totalChecked = 0;
+
+// ── Quality checks (catch patterns from user feedback) ──
+
+function qualityChecks(q, subject, topicKey) {
+  const prefix = `${subject}/${topicKey}/Q${q.id}`;
+
+  // CHECK 1: Variable mismatch — question uses a named variable but diagram shows "?"
+  // Catches: question says "and y°. What is y?" but diagram label is "?"
+  if (q.visual && q.visual.props && q.question) {
+    const varMatch = q.question.match(/and\s+([a-z])°.*What is \1/i)
+      || q.question.match(/What is (?:the value of )?([a-z])\?/i)
+      || q.question.match(/Angle\s+([a-z])\s/i);
+    if (varMatch) {
+      const varName = varMatch[1].toLowerCase();
+      const comp = q.visual.component;
+      const props = q.visual.props;
+
+      // QuadShape labels
+      if (comp === 'QuadShape' && props.labels && Array.isArray(props.labels)) {
+        if (props.labels.includes('?') && !props.labels.includes(`${varName}°`)) {
+          warnings.push(`${prefix}: QuadShape label "?" should be "${varName}°" (variable mismatch)`);
+        }
+      }
+
+      // AngleDisplay labels
+      if (comp === 'AngleDisplay' && props.angles && Array.isArray(props.angles)) {
+        const hasQMark = props.angles.some(a => a.label === '?');
+        const hasVar = props.angles.some(a => a.label === `${varName}°`);
+        if (hasQMark && !hasVar) {
+          warnings.push(`${prefix}: AngleDisplay label "?" should be "${varName}°" (variable mismatch)`);
+        }
+      }
+    }
+  }
+
+  // CHECK 2: Diagram reveals algebraic method on ratio questions
+  // Catches: question says "ratio 2:7" but diagram shows "2x°" and "7x°"
+  if (q.visual && q.question && /ratio/i.test(q.question)) {
+    const comp = q.visual.component;
+    const props = q.visual.props;
+    if (comp === 'AngleDisplay' && props.angles && Array.isArray(props.angles)) {
+      const algebraicLabels = props.angles.filter(a => a.label && /\d+[a-z]°/.test(a.label));
+      if (algebraicLabels.length > 0) {
+        warnings.push(`${prefix}: Ratio question diagram shows algebraic labels (${algebraicLabels.map(a => a.label).join(', ')}) — gives away method`);
+      }
+    }
+  }
+
+  // CHECK 3: RegularPolygon visual reveals side count on "how many sides" questions
+  if (q.visual && q.visual.component === 'RegularPolygon' && q.question && /how many sides/i.test(q.question)) {
+    warnings.push(`${prefix}: RegularPolygon visual reveals the answer on a "how many sides?" question`);
+  }
+
+  // CHECK 4: Answer length bias — correct answer is longest option
+  // Only flag when correct is >30% longer than the average of other options
+  if (q.options && Array.isArray(q.options) && q.correct !== undefined) {
+    const lengths = q.options.map(o => String(o).length);
+    const correctLen = lengths[q.correct];
+    const otherLens = lengths.filter((_, i) => i !== q.correct);
+    const avgOther = otherLens.reduce((a, b) => a + b, 0) / otherLens.length;
+    if (correctLen > avgOther * 1.5 && correctLen > 20) {
+      // Only warn for comprehension/passage questions where this is a known systemic issue
+      if (q.questionType === 'passage' || topicKey === 'comprehension') {
+        warnings.push(`${prefix}: Correct answer is ${Math.round(correctLen/avgOther * 100 - 100)}% longer than average distractor (${correctLen} vs ${Math.round(avgOther)} chars)`);
+      }
+    }
+  }
+}
 
 function validateQuestion(q, subject, topicKey) {
   totalChecked++;
@@ -149,6 +218,7 @@ function validateTopic(topics, subject) {
       if (ids.has(q.id)) errors.push(`${subject}/${topicKey}/Q${q.id}: DUPLICATE ID`);
       ids.add(q.id);
       validateQuestion(q, subject, topicKey);
+      qualityChecks(q, subject, topicKey);
     }
   }
 }
@@ -171,8 +241,15 @@ console.log(`Checked ${totalChecked} questions across all subjects.\n`);
 if (errors.length === 0) {
   console.log('✅ No structural issues found!');
 } else {
-  console.log(`❌ Found ${errors.length} issue(s):\n`);
+  console.log(`❌ Found ${errors.length} structural issue(s):\n`);
   errors.forEach(e => console.log('  ' + e));
+}
+
+if (warnings.length > 0) {
+  console.log(`\n⚠️  Found ${warnings.length} quality warning(s):\n`);
+  warnings.forEach(w => console.log('  ' + w));
+} else {
+  console.log('\n✅ No quality warnings!');
 }
 
 process.exit(errors.length > 0 ? 1 : 0);

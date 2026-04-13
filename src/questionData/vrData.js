@@ -9270,6 +9270,7 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for HELP is GDKO, what rule has been used?",
           options: [
@@ -9285,6 +9286,7 @@ const vrData = {
         {
           id: 2,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If COLD is coded as DPME, what is WARM coded as?",
           options: ["XBSN","XCSN","XBTN","XBSO","YCSN"],
@@ -9294,6 +9296,7 @@ const vrData = {
         {
           id: 3,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for GAME is HBNF, what rule has been used?",
           options: [
@@ -9309,6 +9312,7 @@ const vrData = {
         {
           id: 4,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BOAT is coded as ERDW, what word is coded as VKLS?",
           options: ["SHIM","SHOP","SHIP","SHIN","SKIP"],
@@ -9318,6 +9322,7 @@ const vrData = {
         {
           id: 5,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If RAIN is coded as UDLQ, what is SNOW coded as?",
           options: ["VQSZ","UQRZ","VRQZ","VQRZ","VQRW"],
@@ -9327,6 +9332,7 @@ const vrData = {
         {
           id: 6,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If TREE is coded as WUHH, what word is coded as FROG?",
           options: ["COOL","COLD","COAL","CORD","COIL"],
@@ -9336,6 +9342,7 @@ const vrData = {
         {
           id: 7,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for STAR is TUBS, what rule has been used?",
           options: [
@@ -9351,6 +9358,7 @@ const vrData = {
         {
           id: 8,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CAT is coded as DBU, what is the code for DOG?",
           options: ["CPH","EPH","FOH","EPG","ENH"],
@@ -9360,6 +9368,7 @@ const vrData = {
         {
           id: 9,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DOG is coded as CNF, what is the code for SUN?",
           options: ["RTN","SVM","RUM","TVO","RTM"],
@@ -9369,6 +9378,7 @@ const vrData = {
         {
           id: 10,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LOG is coded as MPH, what word is coded as EPH?",
           options: ["FOG","DOG","HOG","COG","DIG"],
@@ -9378,6 +9388,7 @@ const vrData = {
         {
           id: 11,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SUN is coded as RTM, what is the code for PEN?",
           options: ["PCM","QFO","ODM","OEM","OFM"],
@@ -9387,6 +9398,7 @@ const vrData = {
         {
           id: 12,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PEN is coded as RGP, what is the code for HAT?",
           options: ["ICV","JBV","JCU","JCV","IBU"],
@@ -9396,6 +9408,7 @@ const vrData = {
         {
           id: 13,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FIG is coded as DGE, what word is coded as AMP?",
           options: ["COP","COQ","BNQ","CNR","COR"],
@@ -9405,6 +9418,7 @@ const vrData = {
         {
           id: 14,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If JUMP is coded as KVNQ, what is LAND coded as?",
           options: ["MBOE","MBOF","MBNE","LBOE","MCOE"],
@@ -9414,6 +9428,7 @@ const vrData = {
         {
           id: 15,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BARN is coded as DCTP, what is the code for BORN?",
           options: ["DPTP","DQSP","DQTP","DRTP","DQUP"],
@@ -9423,6 +9438,7 @@ const vrData = {
         {
           id: 16,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DUSK is coded as GXVN, what is the code for DESK?",
           options: ["GFVN","GHVM","GIVN","GHVN","GHUN"],
@@ -9432,6 +9448,7 @@ const vrData = {
         {
           id: 17,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FISH is coded as ILVK, what word is coded as ORYH?",
           options: ["LOSE","LIVE","LOBE","LORE","LOVE"],
@@ -9441,6 +9458,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If MILK is coded as PLON, what word is coded as IROG?",
           options: ["FOOD","FOLD","FORD","FOND","FORE"],
@@ -9450,6 +9468,7 @@ const vrData = {
         {
           id: 19,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GIFT is coded as JLIW, what is the code for WISH?",
           options: ["ZLUK","ZKVL","ZLVK","ZMVK","ZLWK"],
@@ -9459,6 +9478,7 @@ const vrData = {
         {
           id: 20,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LAMP is coded as JYKN, what is the code for FIRE?",
           options: ["DGPD","DHPC","DGQC","DGPC","DIPC"],
@@ -9468,6 +9488,7 @@ const vrData = {
         {
           id: 21,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LOG is coded as MPH, what is the code for CAT?",
           options: ["CBU","DCU","DAU","DBT","DBU"],
@@ -9477,6 +9498,7 @@ const vrData = {
         {
           id: 22,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FIG is coded as GJH, what is the code for DOG?",
           options: ["EPH","EPG","CPH","EOH","DPH"],
@@ -9486,6 +9508,7 @@ const vrData = {
         {
           id: 23,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CAT is coded as BZS, what is the code for SUN?",
           options: ["RTN","RTM","RUM","RVM","STM"],
@@ -9495,6 +9518,7 @@ const vrData = {
         {
           id: 24,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DOG is coded as EPH, what is the code for PEN?",
           options: ["QEO","PFO","QFO","QFN","QGO"],
@@ -9504,6 +9528,7 @@ const vrData = {
         {
           id: 25,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SUN is coded as RTM, what is the code for CUP?",
           options: ["BUO","DVQ","BTP","BTO","CTO"],
@@ -9513,6 +9538,7 @@ const vrData = {
         {
           id: 26,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PEN is coded as QFO, what is the code for HAT?",
           options: ["IBV","IAU","HBU","ICU","IBU"],
@@ -9522,6 +9548,7 @@ const vrData = {
         {
           id: 27,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HAT is coded as IBU, what is the code for BED?",
           options: ["CFE","CFF","BFE","CEE","CGE"],
@@ -9531,6 +9558,7 @@ const vrData = {
         {
           id: 28,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BUS is coded as ATR, what is the code for RUN?",
           options: ["QTN","QTM","RTM","STM","QUM"],
@@ -9540,6 +9568,7 @@ const vrData = {
         {
           id: 29,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If OWL is coded as PXM, what word is coded as SVO?",
           options: ["RUM","RUG","RUN","RUT","TUN"],
@@ -9549,6 +9578,7 @@ const vrData = {
         {
           id: 30,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If JAR is coded as KBS, what word is coded as HFU?",
           options: ["GEM","SET","JET","GET","NET"],
@@ -9558,6 +9588,7 @@ const vrData = {
         {
           id: 31,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BOW is coded as ANV, what word is coded as GHS?",
           options: ["HIS","HIP","HID","HIM","HIT"],
@@ -9567,6 +9598,7 @@ const vrData = {
         {
           id: 32,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HAT is coded as IBU, what word is coded as CBU?",
           options: ["BAT","BAD","BAN","BAR","BAG"],
@@ -9576,6 +9608,7 @@ const vrData = {
         {
           id: 33,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BUS is coded as ATR, what word is coded as OHM?",
           options: ["PIG","PIN","PIE","PIT","PIR"],
@@ -9585,6 +9618,7 @@ const vrData = {
         {
           id: 34,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If JAM is coded as KBN, what word is coded as GPY?",
           options: ["FIG","FLY","FOX","FUN","FAR"],
@@ -9594,6 +9628,7 @@ const vrData = {
         {
           id: 35,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CUP is coded as BTO, what word is coded as QDC?",
           options: ["REF","RID","ROD","RED","RUG"],
@@ -9603,6 +9638,7 @@ const vrData = {
         {
           id: 36,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If MIST is coded as NJTU, what word is coded as CVTL?",
           options: ["BULK","BUST","BUMP","BURN","BUSK"],
@@ -9612,6 +9648,7 @@ const vrData = {
         {
           id: 37,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for PIG is QJH, what rule has been used?",
           options: [
@@ -9627,6 +9664,7 @@ const vrData = {
         {
           id: 38,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for BIG is AHF, what rule has been used?",
           options: [
@@ -9642,6 +9680,7 @@ const vrData = {
         {
           id: 39,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for HEN is IFO, what rule has been used?",
           options: [
@@ -9657,6 +9696,7 @@ const vrData = {
         {
           id: 40,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for TOP is SNO, what rule has been used?",
           options: [
@@ -9672,6 +9712,7 @@ const vrData = {
         {
           id: 41,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for DIP is EJQ, what rule has been used?",
           options: [
@@ -9687,6 +9728,7 @@ const vrData = {
         {
           id: 42,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for TIN is SHM, what rule has been used?",
           options: [
@@ -9702,6 +9744,7 @@ const vrData = {
         {
           id: 43,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for FIG is GJH, what rule has been used?",
           options: [
@@ -9717,6 +9760,7 @@ const vrData = {
         {
           id: 44,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for COT is BNS, what rule has been used?",
           options: [
@@ -9732,6 +9776,7 @@ const vrData = {
         {
           id: 45,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GIFT is coded as IKHV, what is the code for BIRD?",
           options: ["DLTF","DJSF","DKUF","DKTF","DKTE"],
@@ -9741,6 +9786,7 @@ const vrData = {
         {
           id: 46,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LAMP is coded as NCOR, what is the code for PAWN?",
           options: ["SCYP","RDYP","RCZP","RCYQ","RCYP"],
@@ -9750,6 +9796,7 @@ const vrData = {
         {
           id: 47,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If MIST is coded as OKUV, what is the code for TREE?",
           options: ["VTGH","VTGF","VTHG","VTGG","VUGG"],
@@ -9759,6 +9806,7 @@ const vrData = {
         {
           id: 48,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If ROCK is coded as TQEM, what is the code for MOON?",
           options: ["OQPP","OQQP","OPQP","OQQO","ORRP"],
@@ -9768,6 +9816,7 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FISH is coded as HKUJ, what is the code for HILL?",
           options: ["JKMN","JLNN","JKNN","JKML","JKNO"],
@@ -9777,6 +9826,7 @@ const vrData = {
         {
           id: 50,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HELP is coded as JGNR, what is the code for GATE?",
           options: ["IBVG","ICWG","IDVG","ICVH","ICVG"],
@@ -9786,6 +9836,7 @@ const vrData = {
         {
           id: 51,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If COLD is coded as AMJB, what is the code for FORK?",
           options: ["DNPI","DMQI","DMPH","EMPI","DMPI"],
@@ -9795,6 +9846,7 @@ const vrData = {
         {
           id: 52,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If STAR is coded as UVCT, what is the code for ROPE?",
           options: ["TQSG","TPRG","TQRG","TQRF","TRRG"],
@@ -9804,6 +9856,7 @@ const vrData = {
         {
           id: 53,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BARN is coded as ZYPL, what is the code for NEST?",
           options: ["LCRR","LDQR","LCQR","LCQS","MCQR"],
@@ -9813,6 +9866,7 @@ const vrData = {
         {
           id: 54,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DUSK is coded as FWUM, what is the code for FROG?",
           options: ["HTRI","HSQI","HTQI","HUQI","HTQJ"],
@@ -9822,6 +9876,7 @@ const vrData = {
         {
           id: 55,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GIFT is coded as EGDR, what is the code for POEM?",
           options: ["NMDK","NMCL","NLCK","OMCK","NMCK"],
@@ -9831,6 +9886,7 @@ const vrData = {
         {
           id: 56,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LAMP is coded as NCOR, what is the code for LION?",
           options: ["NKQO","NLQP","NKRP","NKQP","NJQP"],
@@ -9840,6 +9896,7 @@ const vrData = {
         {
           id: 57,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If ROCK is coded as TQEM, what word is coded as ECUG?",
           options: ["CASE","CART","CARD","CAPE","CAVE"],
@@ -9849,6 +9906,7 @@ const vrData = {
         {
           id: 58,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FISH is coded as HKUJ, what word is coded as NCEM?",
           options: ["LACE","LACK","LAND","LAME","LAKE"],
@@ -9858,6 +9916,7 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If POND is coded as NMLB, what word is coded as JCDR?",
           options: ["LETS","LESS","LENT","LEND","LEFT"],
@@ -9867,6 +9926,7 @@ const vrData = {
         {
           id: 60,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If COLD is coded as EQNF, what word is coded as TKPI?",
           options: ["RIND","RING","RICH","RISE","RIDE"],
@@ -9876,6 +9936,7 @@ const vrData = {
         {
           id: 61,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If STAR is coded as QRYP, what word is coded as DGQF?",
           options: ["FILE","FIST","FISH","FILM","FILL"],
@@ -9885,6 +9946,7 @@ const vrData = {
         {
           id: 62,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BARN is coded as DCTP, what word is coded as JQQF?",
           options: ["HOOD","HOOK","HOOP","HOOF","HOOT"],
@@ -9894,6 +9956,7 @@ const vrData = {
         {
           id: 63,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DUSK is coded as FWUM, what word is coded as YKPF?",
           options: ["WINE","WIND","WILL","WILD","WING"],
@@ -9903,6 +9966,7 @@ const vrData = {
         {
           id: 64,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GIFT is coded as EGDR, what word is coded as FCPM?",
           options: ["HELP","HERD","HERO","HERB","HENS"],
@@ -9912,6 +9976,7 @@ const vrData = {
         {
           id: 65,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LAMP is coded as NCOR, what word is coded as EQQM?",
           options: ["COOL","CORD","COPE","COOK","CORE"],
@@ -9921,6 +9986,7 @@ const vrData = {
         {
           id: 66,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If MIST is coded as KGQR, what word is coded as NMPI?",
           options: ["PORT","POND","POUR","POLE","PORK"],
@@ -9930,6 +9996,7 @@ const vrData = {
         {
           id: 67,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If ROCK is coded as TQEM, what word is coded as NQQR?",
           options: ["LOOT","LOOK","LOOM","LOOP","LORE"],
@@ -9939,6 +10006,7 @@ const vrData = {
         {
           id: 68,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FISH is coded as HKUJ, what word is coded as DWEM?",
           options: ["BULK","BUCK","BURN","BUMP","BULL"],
@@ -9948,6 +10016,7 @@ const vrData = {
         {
           id: 69,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for HELP is JGNR, what rule has been used?",
           options: [
@@ -9963,6 +10032,7 @@ const vrData = {
         {
           id: 70,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for GUST is ESQR, what rule has been used?",
           options: [
@@ -9978,6 +10048,7 @@ const vrData = {
         {
           id: 71,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for GOLD is IQNF, what rule has been used?",
           options: [
@@ -9993,6 +10064,7 @@ const vrData = {
         {
           id: 72,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for MINT is KGLR, what rule has been used?",
           options: [
@@ -10008,6 +10080,7 @@ const vrData = {
         {
           id: 73,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for DESK is FGUM, what rule has been used?",
           options: [
@@ -10023,6 +10096,7 @@ const vrData = {
         {
           id: 74,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for PLUM is NJSK, what rule has been used?",
           options: [
@@ -10038,6 +10112,7 @@ const vrData = {
         {
           id: 75,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for PINE is RKPG, what rule has been used?",
           options: [
@@ -10053,6 +10128,7 @@ const vrData = {
         {
           id: 76,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for WOLF is UMJD, what rule has been used?",
           options: [
@@ -10068,6 +10144,7 @@ const vrData = {
         {
           id: 77,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CHARM is coded as FKDUP, what is the code for FLAME?",
           options: ["IODPH","IODQH","IOCPH","IOEPI","INDPH"],
@@ -10077,6 +10154,7 @@ const vrData = {
         {
           id: 78,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GLOBE is coded as DILYB, what is the code for STORM?",
           options: ["PQLNJ","PQLOJ","PRLOJ","PQMOJ","PQLOK"],
@@ -10086,6 +10164,7 @@ const vrData = {
         {
           id: 79,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PLANT is coded as SODQW, what is the code for CROWN?",
           options: ["FURAQ","FUSZQ","FURZQ","FURZR","FURYQ"],
@@ -10095,6 +10174,7 @@ const vrData = {
         {
           id: 80,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BRICK is coded as YOFZH, what is the code for SWIFT?",
           options: ["PTECQ","PTFDQ","PTFCR","PTFCQ","PUFCQ"],
@@ -10104,6 +10184,7 @@ const vrData = {
         {
           id: 81,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SHELF is coded as VKHOI, what is the code for TIGER?",
           options: ["WLKHU","WLJHV","WMJHU","WLJIU","WLJHU"],
@@ -10113,6 +10194,7 @@ const vrData = {
         {
           id: 82,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FROST is coded as IURVW, what is the code for GRAPE?",
           options: ["JUDTI","JUDSH","JUCSH","JUDSG","JUESH"],
@@ -10122,6 +10204,7 @@ const vrData = {
         {
           id: 83,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CLOUD is coded as ZILRA, what is the code for SHELF?",
           options: ["PECIC","PEBIC","PEBHC","PFBIC","PEBID"],
@@ -10131,6 +10214,7 @@ const vrData = {
         {
           id: 84,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DRINK is coded as GULQN, what is the code for LUCKY?",
           options: ["OXFMC","OXFNA","OXFNB","OXGNB","OWFNB"],
@@ -10140,6 +10224,7 @@ const vrData = {
         {
           id: 85,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If TRUNK is coded as WUXQN, what is the code for FIXED?",
           options: ["ILAHF","ILBHG","ILAIG","ILAHG","IKAHG"],
@@ -10149,6 +10234,7 @@ const vrData = {
         {
           id: 86,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SLOPE is coded as VORSH, what is the code for BUYER?",
           options: ["EXBHU","EXCHU","EXBIV","EWBHU","EXAHU"],
@@ -10158,6 +10244,7 @@ const vrData = {
         {
           id: 87,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BRICK is coded as EULFN, what word is coded as WRUFK?",
           options: ["TOOTH","TOTAL","TOWER","TOUCH","TORCH"],
@@ -10167,6 +10254,7 @@ const vrData = {
         {
           id: 88,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SHELF is coded as PEBIC, what word is coded as QOFZH?",
           options: ["TRIBE","TRICK","TRAIN","TRACK","TRACE"],
@@ -10176,6 +10264,7 @@ const vrData = {
         {
           id: 89,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FROST is coded as IURVW, what word is coded as VWRQH?",
           options: ["STORE","STORK","STOVE","STONE","STOLE"],
@@ -10185,6 +10274,7 @@ const vrData = {
         {
           id: 90,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
           options: ["GRACE","GRIND","GRIST","GRASS","GRAIN"],
@@ -10194,6 +10284,7 @@ const vrData = {
         {
           id: 91,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DRINK is coded as GULQN, what word is coded as EULQJ?",
           options: ["BRICK","BRINE","BRISK","BRING","BRIDE"],
@@ -10203,6 +10294,7 @@ const vrData = {
         {
           id: 92,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If TRUNK is coded as QORKH, what word is coded as JXDFZ?",
           options: ["MASON","MAJOR","MANOR","MARCH","MAGIC"],
@@ -10212,6 +10304,7 @@ const vrData = {
         {
           id: 93,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
           options: ["CRANE","CREAM","CRAFT","CRASH","CRATE"],
@@ -10221,6 +10314,7 @@ const vrData = {
         {
           id: 94,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CHARM is coded as FKDUP, what word is coded as SODFH?",
           options: ["PLANE","PLATE","PLACE","PLANT","PLANK"],
@@ -10230,6 +10324,7 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
           options: ["SHARP","SHALL","SHADE","SHARE","SHAPE"],
@@ -10239,6 +10334,7 @@ const vrData = {
         {
           id: 96,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PLANT is coded as SODQW, what word is coded as PLAHU?",
           options: ["MINOR","MIXER","MISER","MIGHT","MITRE"],
@@ -10248,6 +10344,7 @@ const vrData = {
         {
           id: 97,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for DRUM is GUXP, what rule has been used?",
           options: [
@@ -10263,6 +10360,7 @@ const vrData = {
         {
           id: 98,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for PRIDE is MOFAB, what rule has been used?",
           options: [
@@ -10278,6 +10376,7 @@ const vrData = {
         {
           id: 99,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FROG is coded as GTRH, what pattern has been used for the shifts?",
           options: ["+1, +3, +2, +1","+2, +1, +3, +2","+1, +2, +3, +1","+1, +2, +2, +1","+2, +2, +3, +1"],
@@ -10287,6 +10386,7 @@ const vrData = {
         {
           id: 100,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If MICE is coded as OJEF, what pattern has been used for the shifts?",
           options: ["+1, +2, +1, +2","+2, +2, +1, +1","+1, +1, +2, +2","+3, +1, +1, +1","+2, +1, +2, +1"],
@@ -10296,6 +10396,7 @@ const vrData = {
         {
           id: 101,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for FAWN is GBXO (each letter moved forward by 1), what is the code for DUCK?",
           options: ["EVEL","EVDK","EDVL","EVDL","DVDL"],
@@ -10305,6 +10406,7 @@ const vrData = {
         {
           id: 102,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for HAND is IBOE (each letter moved forward by 1), what is the code for FEET?",
           options: ["FFGU","GFFE","GFEU","GEFU","GFFU"],
@@ -10314,6 +10416,7 @@ const vrData = {
         {
           id: 103,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for COME is BNLD (each letter moved back by 1), what is the code for PLAY?",
           options: ["OKZY","OKZX","OKYZ","OLZX","PKZX"],
@@ -10323,6 +10426,7 @@ const vrData = {
         {
           id: 104,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for BALL is DCNN (each letter moved forward by 2), what is the code for KICK?",
           options: ["MKEN","MKME","MKEM","MKEL","NKEM"],
@@ -10332,6 +10436,7 @@ const vrData = {
         {
           id: 105,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for CAKE is DBLF (each letter moved forward by 1), what is the code for MILK?",
           options: ["NKML","NJMK","NJLM","NJML","MJML"],
@@ -10341,6 +10446,7 @@ const vrData = {
         {
           id: 106,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for BIRD is AHQC (each letter moved back by 1), what is the code for NEST?",
           options: ["MERS","NDRS","MDSR","MCRS","MDRS"],
@@ -10350,6 +10456,7 @@ const vrData = {
         {
           id: 107,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for TREE is USFF (each letter moved forward by 1), what is the code for LEAF?",
           options: ["MFGB","MFBC","MFBG","MEBG","LFBG"],
@@ -10359,6 +10466,7 @@ const vrData = {
         {
           id: 108,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for FROG is HTQI (each letter moved forward by 2), what is the code for TOAD?",
           options: ["VQCE","VQFC","VPCF","VQCF","WQCF"],
@@ -10368,6 +10476,7 @@ const vrData = {
         {
           id: 109,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for RUBY is UXEB, what is the code for DARK?",
           options: ["GCUN","GDNU","GEUN","HDUN","GDUN"],
@@ -10377,6 +10486,7 @@ const vrData = {
         {
           id: 110,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for MINT is KGLR, what is the code for SALT?",
           options: ["RYJR","QYJR","QYJQ","QXJR","QYJS"],
@@ -10386,6 +10496,7 @@ const vrData = {
         {
           id: 111,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for WIND is ZLQG, what is the code for RAIN?",
           options: ["UELQ","UDLQ","UDQL","UCLQ","VDLQ"],
@@ -10395,6 +10506,7 @@ const vrData = {
         {
           id: 112,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PARK is coded as MXOH, what word is coded as JXII?",
           options: ["TALL","CALL","MALL","BALL","HALL"],
@@ -10404,6 +10516,7 @@ const vrData = {
         {
           id: 113,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for HERO is LIVS, what is the code for KING?",
           options: ["OLRK","OMKR","PMRK","OMRK","ONRK"],
@@ -10413,6 +10526,7 @@ const vrData = {
         {
           id: 114,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for MOLE is KMJC, what is the code for FAST?",
           options: ["EYQR","DXQR","DYRQ","DYQP","DYQR"],
@@ -10422,6 +10536,7 @@ const vrData = {
         {
           id: 115,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GOLD is coded as IQNF, what is the code for RING?",
           options: ["TKIP","TKPI","UKPI","TJPI","TLPI"],
@@ -10431,6 +10546,7 @@ const vrData = {
         {
           id: 116,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for JUMP is ITLO, what is the code for SWIM?",
           options: ["RUHL","RVLH","RVHL","RWHL","SVHL"],
@@ -10440,6 +10556,7 @@ const vrData = {
         {
           id: 117,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for BOOK is ERRN, what is the code for READ?",
           options: ["UGDG","VHDG","UIDG","UHDG","UHGD"],
@@ -10449,6 +10566,7 @@ const vrData = {
         {
           id: 118,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for BLUE is GQZJ, what is the code for PINK?",
           options: ["VNSP","UOSP","UNPS","UMSP","UNSP"],
@@ -10458,6 +10576,7 @@ const vrData = {
         {
           id: 119,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for TIGER is PECAN, what is the code for HORSE?",
           options: ["DKNAO","DKNOA","DJNOA","DLNOA","EKNOA"],
@@ -10467,6 +10586,7 @@ const vrData = {
         {
           id: 120,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If the code for CAMP is IGSV, what is the code for TENT?",
           options: ["ZLTZ","ZKTX","ZKTZ","AKTZ","ZJTZ"],
@@ -10476,6 +10596,7 @@ const vrData = {
         {
           id: 121,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SMILE is coded as WQMPI, what word is coded as ASVPH?",
           options: ["WORDS","WORTH","WORRY","WORLD","WORKS"],
@@ -10485,6 +10606,7 @@ const vrData = {
         {
           id: 122,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for DAWN?",
           options: ["FCXP","EDXP","ECYP","ECXQ","ECXP"],
@@ -10494,6 +10616,7 @@ const vrData = {
         {
           id: 123,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If KITE is coded as PRGV using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
           options: ["UIRV","URIV","URVI","USIV","VRIV"],
@@ -10503,6 +10626,7 @@ const vrData = {
         {
           id: 124,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CROWN is coded as FURZQ, what word is coded as VWDUW?",
           options: ["STARK","STARE","START","STARS","STORE"],
@@ -10512,6 +10636,7 @@ const vrData = {
         {
           id: 125,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HAPPY is coded as ICSQA (1st +1, 2nd +2, 3rd +3, 4th +1, 5th +2), what is the code for SMILE?",
           options: ["TOLNG","TOMLG","TOLMF","TOLMG","UOLMG"],
@@ -10521,6 +10646,7 @@ const vrData = {
         {
           id: 126,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DRAW is coded as ETDA, what is the code for LAKE?",
           options: ["NCNI","MDNI","MCOI","MCNH","MCNI"],
@@ -10530,6 +10656,7 @@ const vrData = {
         {
           id: 127,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BARK is coded as AYOG, what is the code for VINE?",
           options: ["UHKA","UGLA","UGKA","UGKB","VGKA"],
@@ -10539,6 +10666,7 @@ const vrData = {
         {
           id: 128,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CART is coded as EDVY, what is the code for LAND?",
           options: ["NCRI","ODRI","NDSI","NDRI","NDRH"],
@@ -10548,6 +10676,7 @@ const vrData = {
         {
           id: 129,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DRAWN is coded as CPXSI, what is the code for STONE?",
           options: ["RRMJZ","SRLJZ","RQLJZ","RRLIZ","RRLJZ"],
@@ -10557,6 +10686,7 @@ const vrData = {
         {
           id: 130,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GAME is coded as HZND, what is the code for BOOK?",
           options: ["CNPI","CNPJ","CMPJ","CNQJ","DNPJ"],
@@ -10566,6 +10696,7 @@ const vrData = {
         {
           id: 131,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If COLD is coded as DQOH, what is the code for MILK?",
           options: ["NJOO","NKOO","OKOO","NKPO","NKON"],
@@ -10575,6 +10706,7 @@ const vrData = {
         {
           id: 132,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If TRAIN is coded as UTDMS, what is the code for PIANO?",
           options: ["QJDRT","QKERT","QKDRT","RKDRT","QKDQT"],
@@ -10584,6 +10716,7 @@ const vrData = {
         {
           id: 133,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If RIVER is coded as PFRZL, what is the code for HOUSE?",
           options: ["FKQNY","GLQNY","FLRNY","FLQNY","FLQMY"],
@@ -10593,6 +10726,7 @@ const vrData = {
         {
           id: 134,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BELL is coded as DFNM, what is the code for RING?",
           options: ["TJQH","UJPH","TIPH","TJPH","TJPG"],
@@ -10602,6 +10736,7 @@ const vrData = {
         {
           id: 135,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If KINGS is coded as JGKCN, what is the code for QUEEN?",
           options: ["PSBZI","QSBAI","PRBAI","PSCAI","PSBAI"],
@@ -10611,6 +10746,7 @@ const vrData = {
         {
           id: 136,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HORSE is coded as KQSVG, what is the code for BEACH?",
           options: ["EGBFJ","FGBFJ","EFBFJ","EGCFJ","EGBEJ"],
@@ -10620,6 +10756,7 @@ const vrData = {
         {
           id: 137,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SAND is coded as VDQG, what is the code for YARD?",
           options: ["CDUG","BDUG","BCUG","BDVG","BDUF"],
@@ -10629,6 +10766,7 @@ const vrData = {
         {
           id: 138,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If WAVE is coded as YCXG, what is the code for WAXY?",
           options: ["YBZA","ZCZA","YCZA","YCAA","YCZZ"],
@@ -10638,6 +10776,7 @@ const vrData = {
         {
           id: 139,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FERN is coded as JIVR, what is the code for ZERO?",
           options: ["DIWS","EIVS","DHVS","DIVS","DIVR"],
@@ -10647,6 +10786,7 @@ const vrData = {
         {
           id: 140,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If MOTH is coded as PRWK, what is the code for BUZZ?",
           options: ["EXCB","FXCC","EWCC","EXDC","EXCC"],
@@ -10656,6 +10796,7 @@ const vrData = {
         {
           id: 141,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If COIN is coded as HTNS, what is the code for COZY?",
           options: ["HTED","ITED","HSED","HTFD","HTEC"],
@@ -10665,6 +10806,7 @@ const vrData = {
         {
           id: 142,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If GLOW is coded as KPSA, what is the code for JINX?",
           options: ["OMRB","NMRB","NLRB","NMSB","NMRA"],
@@ -10674,6 +10816,7 @@ const vrData = {
         {
           id: 143,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CAPE is coded as ZXMB, what word is coded as QXUF?",
           options: ["TZXI","UAXI","TAXI","TAYI","TAXH"],
@@ -10683,6 +10826,7 @@ const vrData = {
         {
           id: 144,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HIVE is coded as DERA, what word is coded as JATP?",
           options: ["NEYT","OEXT","NDXT","NEXT","NEXS"],
@@ -10692,6 +10836,7 @@ const vrData = {
         {
           id: 145,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PEAK is coded as KZVF, what word is coded as HVUZ?",
           options: ["MAZD","NAZE","MZZE","MAAE","MAZE"],
@@ -10701,6 +10846,7 @@ const vrData = {
         {
           id: 146,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BOLT is coded as EROW, what is the code for LYNX?",
           options: ["OBQA","PBQA","OAQA","OBRA","OBQZ"],
@@ -10710,6 +10856,7 @@ const vrData = {
         {
           id: 147,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If SILK is coded as UKNM, what is the code for YAWN?",
           options: ["BCYP","ACYP","ABYP","ACZP","ACYO"],
@@ -10719,6 +10866,7 @@ const vrData = {
         {
           id: 148,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If DOVE is coded as HSZI, what is the code for FIZZY?",
           options: ["JLDDC","KMDDC","JMDDC","JMEDC","JMDCC"],
@@ -10728,6 +10876,7 @@ const vrData = {
         {
           id: 149,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If LIME is coded as ORNV, what is the code for SWAN?",
           options: ["HDZM","IDZM","HEZM","HDAM","HDZN"],
@@ -10737,6 +10886,7 @@ const vrData = {
         {
           id: 150,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for PLUM?",
           options: ["LOFN","KOGN","KOEN","KOFN","KOFM"],
@@ -10746,6 +10896,7 @@ const vrData = {
         {
           id: 151,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for SWIM?",
           options: ["HDRR","IDRN","HFRN","HDUN","HDRN"],
@@ -10755,6 +10906,7 @@ const vrData = {
         {
           id: 152,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what word is coded as IZRM?",
           options: ["RAIN","SAIN","RZIN","RAJN","RAIM"],
@@ -10764,6 +10916,7 @@ const vrData = {
         {
           id: 153,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what word is coded as WZIP?",
           options: ["EARK","DARK","DZRK","DASK","DARJ"],
@@ -10773,6 +10926,7 @@ const vrData = {
         {
           id: 154,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CUBE is coded as XFYV, what is the code for LIGHT?",
           options: ["OTTSG","PRTSG","ORTSG","ORWSG","ORTWG"],
@@ -10782,6 +10936,7 @@ const vrData = {
         {
           id: 155,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If TUSK is coded as GFHP, what is the code for MONEY?",
           options: ["NLPVB","OLMVB","NNMVB","NLMVB","NLMZB"],
@@ -10791,6 +10946,7 @@ const vrData = {
         {
           id: 156,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If HORN is coded as SLIM, what word is coded as YIZEV?",
           options: ["BRAUE","CRAVE","BQAVE","BRBVE","BRAVE"],
@@ -10800,6 +10956,7 @@ const vrData = {
         {
           id: 157,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If FORK is coded as IRUN, what is the code for GOLD?",
           options: ["KROG","JROG","JQOG","JRPG","JROF"],
@@ -10809,6 +10966,7 @@ const vrData = {
         {
           id: 158,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If KNOT is coded as HKLQ, what is the code for FARM?",
           options: ["CWOJ","DXOJ","CXOJ","CXPJ","CXOI"],
@@ -10818,6 +10976,7 @@ const vrData = {
         {
           id: 159,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If TWIG is coded as XAMK, what is the code for DESK?",
           options: ["HIXO","IIWO","HHWO","HIWO","HIWN"],
@@ -10827,6 +10986,7 @@ const vrData = {
         {
           id: 160,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If PUMA is coded as LQIW, what is the code for JUMP?",
           options: ["FQIK","GQIL","FPIL","FQJL","FQIL"],
@@ -10836,6 +10996,7 @@ const vrData = {
         {
           id: 161,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If VASE is coded as YDVH, what is the code for TRAIN?",
           options: ["WUDLQ","XUDLQ","WTDLQ","WUELQ","WUDKQ"],
@@ -10845,6 +11006,7 @@ const vrData = {
         {
           id: 162,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BLUE is coded as YIRB, what is the code for CLOCK?",
           options: ["AILZH","ZILZH","ZHLZH","ZIMZH","ZILYH"],
@@ -10854,6 +11016,7 @@ const vrData = {
         {
           id: 163,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BLUE is coded as FPYI, what is the code for RIVER?",
           options: ["VLZIV","WMZIV","VMZIV","VMAIV","VMZHV"],
@@ -10863,6 +11026,7 @@ const vrData = {
         {
           id: 164,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If BLUE is coded as XHQA, what word is coded as LHWJA?",
           options: ["PLBNE","QLANE","PKANE","PLANE","PLAME"],
@@ -10872,6 +11036,7 @@ const vrData = {
         {
           id: 165,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If CLAW is coded as FODZ, what word is coded as VWRUP?",
           options: ["STOQM","TTORM","SSORM","STPRM","STORM"],
@@ -10881,6 +11046,7 @@ const vrData = {
         {
           id: 166,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           questionType: "letter-codes",
           question: "If OPAL is coded as LMXI, what word is coded as PEFM?",
           options: ["SHIP","THIP","SGIP","SHJP","SHIO"],
@@ -10895,6 +11061,7 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, C, E, G, ___",
           options: ["H","I","J","K","L"],
           correct: 1,
@@ -10903,6 +11070,7 @@ const vrData = {
         {
           id: 2,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? AZ, BY, CX, DW, ___",
           options: ["FV","EU","EV","EX","DV"],
           correct: 2,
@@ -10911,6 +11079,7 @@ const vrData = {
         {
           id: 3,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? B, D, F, H, ___",
           options: ["I","L","K","J","M"],
           correct: 3,
@@ -10919,6 +11088,7 @@ const vrData = {
         {
           id: 4,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Z, X, V, T, ___",
           options: ["S","U","Q","P","R"],
           correct: 4,
@@ -10927,6 +11097,7 @@ const vrData = {
         {
           id: 5,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next? A, B, D, G, ___",
           options: ["K","I","J","H","L"],
           correct: 0,
@@ -10935,6 +11106,7 @@ const vrData = {
         {
           id: 6,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? AC, BD, CE, DF, ___",
           options: ["EF","EG","FG","DG","EH"],
           correct: 1,
@@ -10943,6 +11115,7 @@ const vrData = {
         {
           id: 7,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A, C, E, G, I, ___",
           options: ["J","L","K","M","N"],
           correct: 2,
@@ -10951,6 +11124,7 @@ const vrData = {
         {
           id: 8,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next? ZZ, YY, XX, WW, ___",
           options: ["WX","UU","VW","VV","UV"],
           correct: 3,
@@ -10959,6 +11133,7 @@ const vrData = {
         {
           id: 9,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Z, Y, X, W, ___",
           options: ["T","U","S","X","V"],
           correct: 4,
@@ -10967,6 +11142,7 @@ const vrData = {
         {
           id: 10,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, B, C, D, ___",
           options: ["E","G","F","H","D"],
           correct: 0,
@@ -10975,6 +11151,7 @@ const vrData = {
         {
           id: 11,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? M, N, O, P, ___",
           options: ["R","Q","T","S","U"],
           correct: 1,
@@ -10983,6 +11160,7 @@ const vrData = {
         {
           id: 12,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? C, F, I, L, ___",
           options: ["M","P","O","N","Q"],
           correct: 2,
@@ -10991,6 +11169,7 @@ const vrData = {
         {
           id: 13,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? D, F, H, J, ___",
           options: ["K","M","N","L","O"],
           correct: 3,
@@ -10999,6 +11178,7 @@ const vrData = {
         {
           id: 14,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? T, R, P, N, ___",
           options: ["M","K","J","O","L"],
           correct: 4,
@@ -11007,6 +11187,7 @@ const vrData = {
         {
           id: 15,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? E, H, K, N, ___",
           options: ["Q","P","O","R","S"],
           correct: 0,
@@ -11015,6 +11196,7 @@ const vrData = {
         {
           id: 16,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? W, U, S, Q, ___",
           options: ["P","O","M","N","L"],
           correct: 1,
@@ -11023,6 +11205,7 @@ const vrData = {
         {
           id: 17,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AB, CD, EF, GH, ___",
           options: ["HI","JK","IJ","GH","KL"],
           correct: 2,
@@ -11031,6 +11214,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AZ, BZ, CZ, DZ, ___",
           options: ["DZ","EA","FZ","EZ","EY"],
           correct: 3,
@@ -11039,6 +11223,7 @@ const vrData = {
         {
           id: 19,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AA, BB, CC, DD, ___",
           options: ["DE","EG","EF","FF","EE"],
           correct: 4,
@@ -11047,6 +11232,7 @@ const vrData = {
         {
           id: 20,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AB, BC, CD, DE, ___",
           options: ["EF","EG","FG","DF","FH"],
           correct: 0,
@@ -11055,6 +11241,7 @@ const vrData = {
         {
           id: 21,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AC, BD, CE, DF, ___",
           options: ["EH","EG","DG","FG","FH"],
           correct: 1,
@@ -11063,6 +11250,7 @@ const vrData = {
         {
           id: 22,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AX, BX, CX, DX, ___",
           options: ["DY","EW","EX","FX","EY"],
           correct: 2,
@@ -11071,6 +11259,7 @@ const vrData = {
         {
           id: 23,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZZ, YY, XX, WW, ___",
           options: ["VW","UU","WX","VV","UV"],
           correct: 3,
@@ -11079,6 +11268,7 @@ const vrData = {
         {
           id: 24,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A1, B2, C3, D4, ___",
           options: ["D5","E4","E6","F5","E5"],
           correct: 4,
@@ -11087,6 +11277,7 @@ const vrData = {
         {
           id: 25,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A2, B4, C6, D8, ___",
           options: ["E10","F10","D10","E12","E9"],
           correct: 0,
@@ -11095,6 +11286,7 @@ const vrData = {
         {
           id: 26,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? Z1, Y2, X3, W4, ___",
           options: ["V4","V5","U5","W5","V6"],
           correct: 1,
@@ -11103,6 +11295,7 @@ const vrData = {
         {
           id: 27,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A1, A2, A3, A4, ___",
           options: ["A6","B5","A5","B4","A4"],
           correct: 2,
@@ -11111,6 +11304,7 @@ const vrData = {
         {
           id: 28,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? B1, D2, F3, H4, ___",
           options: ["I5","J4","I4","J5","K5"],
           correct: 3,
@@ -11119,6 +11313,7 @@ const vrData = {
         {
           id: 29,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AD, BE, CF, DG, ___",
           options: ["EI","FI","FH","DH","EH"],
           correct: 4,
@@ -11127,6 +11322,7 @@ const vrData = {
         {
           id: 30,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? B, E, H, K, ___",
           options: ["N","M","L","O","P"],
           correct: 0,
@@ -11135,6 +11331,7 @@ const vrData = {
         {
           id: 31,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BA, CB, DC, ED, ___",
           options: ["EF","FE","EG","FD","GF"],
           correct: 1,
@@ -11143,6 +11340,7 @@ const vrData = {
         {
           id: 32,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? M1, N2, O3, P4, ___",
           options: ["Q4","R5","Q5","P5","Q6"],
           correct: 2,
@@ -11151,6 +11349,7 @@ const vrData = {
         {
           id: 33,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? G, I, K, M, ___",
           options: ["N","Q","P","O","R"],
           correct: 3,
@@ -11159,6 +11358,7 @@ const vrData = {
         {
           id: 34,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AE, BF, CG, DH, ___",
           options: ["DI","EJ","FJ","FI","EI"],
           correct: 4,
@@ -11167,6 +11367,7 @@ const vrData = {
         {
           id: 35,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, D, G, J, ___",
           options: ["M","L","K","N","O"],
           correct: 0,
@@ -11175,6 +11376,7 @@ const vrData = {
         {
           id: 36,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Z, W, T, Q, ___",
           options: ["O","N","M","P","L"],
           correct: 1,
@@ -11183,6 +11385,7 @@ const vrData = {
         {
           id: 37,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, E, I, M, ___",
           options: ["N","O","Q","P","R"],
           correct: 2,
@@ -11191,6 +11394,7 @@ const vrData = {
         {
           id: 38,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? D, H, L, P, ___",
           options: ["Q","R","S","T","U"],
           correct: 3,
@@ -11199,6 +11403,7 @@ const vrData = {
         {
           id: 39,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? V, S, P, M, ___",
           options: ["L","K","H","I","J"],
           correct: 4,
@@ -11207,6 +11412,7 @@ const vrData = {
         {
           id: 40,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? B, F, J, N, ___",
           options: ["R","P","Q","O","S"],
           correct: 0,
@@ -11215,6 +11421,7 @@ const vrData = {
         {
           id: 41,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Y, V, S, P, ___",
           options: ["N","M","O","K","L"],
           correct: 1,
@@ -11223,6 +11430,7 @@ const vrData = {
         {
           id: 42,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? C, G, K, O, ___",
           options: ["P","Q","S","R","T"],
           correct: 2,
@@ -11231,6 +11439,7 @@ const vrData = {
         {
           id: 43,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? X, U, R, O, ___",
           options: ["N","M","K","L","J"],
           correct: 3,
@@ -11239,6 +11448,7 @@ const vrData = {
         {
           id: 44,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? F, J, N, R, ___",
           options: ["S","T","U","W","V"],
           correct: 4,
@@ -11247,6 +11457,7 @@ const vrData = {
         {
           id: 45,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZA, YB, XC, WD, ___",
           options: ["VE","VF","UE","WE","UF"],
           correct: 0,
@@ -11255,6 +11466,7 @@ const vrData = {
         {
           id: 46,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AC, CE, EG, GI, ___",
           options: ["HJ","IK","IJ","JK","HK"],
           correct: 1,
@@ -11263,6 +11475,7 @@ const vrData = {
         {
           id: 47,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AZ, CX, EV, GT, ___",
           options: ["HR","IS","IR","HS","IT"],
           correct: 2,
@@ -11271,6 +11484,7 @@ const vrData = {
         {
           id: 48,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BZ, DY, FX, HW, ___",
           options: ["IV","JW","IW","JV","KV"],
           correct: 3,
@@ -11279,6 +11493,7 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AB, DE, GH, JK, ___",
           options: ["LM","KL","LN","NO","MN"],
           correct: 4,
@@ -11287,6 +11502,7 @@ const vrData = {
         {
           id: 50,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZY, XW, VU, TS, ___",
           options: ["RQ","QR","SR","QP","RP"],
           correct: 0,
@@ -11295,6 +11511,7 @@ const vrData = {
         {
           id: 51,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AZ, BY, CX, DW, ___",
           options: ["EU","FV","FW","DV","EV"],
           correct: 4,
@@ -11303,6 +11520,7 @@ const vrData = {
         {
           id: 52,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
           options: ["IK","IJ","JL","JK","KL"],
           correct: 2,
@@ -11311,6 +11529,7 @@ const vrData = {
         {
           id: 53,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? MA, NB, OC, PD, ___",
           options: ["QF","PE","RE","QE","RF"],
           correct: 3,
@@ -11319,6 +11538,7 @@ const vrData = {
         {
           id: 54,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AF, BH, CJ, DL, ___",
           options: ["EM","EO","FM","FN","EN"],
           correct: 4,
@@ -11327,6 +11547,7 @@ const vrData = {
         {
           id: 55,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZA, XC, VE, TG, ___",
           options: ["RI","RH","SI","SH","QI"],
           correct: 0,
@@ -11335,6 +11556,7 @@ const vrData = {
         {
           id: 56,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A3, C6, E9, G12, ___",
           options: ["H15","I15","I14","J15","I16"],
           correct: 1,
@@ -11343,6 +11565,7 @@ const vrData = {
         {
           id: 57,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? Z2, X4, V6, T8, ___",
           options: ["S10","R8","R10","S9","R12"],
           correct: 2,
@@ -11351,6 +11574,7 @@ const vrData = {
         {
           id: 58,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? B5, D10, F15, H20, ___",
           options: ["I25","K25","J20","J25","J30"],
           correct: 3,
@@ -11359,6 +11583,7 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? Y3, W6, U9, S12, ___",
           options: ["R15","P15","Q14","R14","Q15"],
           correct: 4,
@@ -11367,6 +11592,7 @@ const vrData = {
         {
           id: 60,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A1, C3, E5, G7, ___",
           options: ["I9","I8","H9","J9","H8"],
           correct: 0,
@@ -11375,6 +11601,7 @@ const vrData = {
         {
           id: 61,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? D2, G4, J6, M8, ___",
           options: ["N10","P10","O10","Q10","P8"],
           correct: 1,
@@ -11383,6 +11610,7 @@ const vrData = {
         {
           id: 62,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? CE, DG, EI, FK, ___",
           options: ["GL","HM","GM","GN","HN"],
           correct: 2,
@@ -11391,6 +11619,7 @@ const vrData = {
         {
           id: 63,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? R, O, L, I, ___",
           options: ["G","H","E","F","D"],
           correct: 3,
@@ -11399,6 +11628,7 @@ const vrData = {
         {
           id: 64,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? YA, WC, UE, SG, ___",
           options: ["QH","PI","RI","RH","QI"],
           correct: 4,
@@ -11407,6 +11637,7 @@ const vrData = {
         {
           id: 65,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? C1, F3, I5, L7, ___",
           options: ["O9","N9","O8","M9","P9"],
           correct: 0,
@@ -11415,6 +11646,7 @@ const vrData = {
         {
           id: 66,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? FA, HC, JE, LG, ___",
           options: ["MH","NI","NH","MI","NJ"],
           correct: 1,
@@ -11423,6 +11655,7 @@ const vrData = {
         {
           id: 67,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AK, CM, EO, GQ, ___",
           options: ["HR","HS","IS","IR","IT"],
           correct: 2,
@@ -11431,6 +11664,7 @@ const vrData = {
         {
           id: 68,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? T5, R10, P15, N20, ___",
           options: ["M20","M25","L20","L25","K25"],
           correct: 3,
@@ -11439,6 +11673,7 @@ const vrData = {
         {
           id: 69,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BF, CG, DH, EI, ___",
           options: ["GK","FK","GJ","EJ","FJ"],
           correct: 4,
@@ -11447,6 +11682,7 @@ const vrData = {
         {
           id: 70,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZW, YV, XU, WT, ___",
           options: ["VS","UR","VR","US","VT"],
           correct: 0,
@@ -11455,6 +11691,7 @@ const vrData = {
         {
           id: 71,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, Z, B, Y, C, ___",
           options: ["D","X","W","V","B"],
           correct: 1,
@@ -11463,6 +11700,7 @@ const vrData = {
         {
           id: 72,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, Z, C, X, E, ___",
           options: ["F","W","V","G","U"],
           correct: 2,
@@ -11471,6 +11709,7 @@ const vrData = {
         {
           id: 73,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, F, B, G, C, ___",
           options: ["D","E","I","H","F"],
           correct: 3,
@@ -11479,6 +11718,7 @@ const vrData = {
         {
           id: 74,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? B, D, C, E, D, ___",
           options: ["E","H","G","C","F"],
           correct: 4,
@@ -11487,6 +11727,7 @@ const vrData = {
         {
           id: 75,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, C, F, J, ___",
           options: ["O","L","M","N","K"],
           correct: 0,
@@ -11495,6 +11736,7 @@ const vrData = {
         {
           id: 76,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Z, X, U, Q, ___",
           options: ["N","L","M","K","J"],
           correct: 1,
@@ -11503,6 +11745,7 @@ const vrData = {
         {
           id: 77,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? B, D, H, N, ___",
           options: ["T","U","V","W","S"],
           correct: 2,
@@ -11511,6 +11754,7 @@ const vrData = {
         {
           id: 78,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? C, E, H, L, ___",
           options: ["N","O","Q","P","R"],
           correct: 2,
@@ -11519,6 +11763,7 @@ const vrData = {
         {
           id: 79,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Y, W, T, P, ___",
           options: ["N","M","L","J","K"],
           correct: 4,
@@ -11527,6 +11772,7 @@ const vrData = {
         {
           id: 80,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AZ, DW, GT, JQ, ___",
           options: ["MN","LN","MO","LP","MP"],
           correct: 0,
@@ -11535,6 +11781,7 @@ const vrData = {
         {
           id: 81,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BX, EU, HR, KO, ___",
           options: ["ML","NL","NK","NM","MK"],
           correct: 1,
@@ -11543,6 +11790,7 @@ const vrData = {
         {
           id: 82,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AC, BF, CI, DL, ___",
           options: ["FO","EN","EO","EP","FN"],
           correct: 2,
@@ -11551,6 +11799,7 @@ const vrData = {
         {
           id: 83,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AY, DV, GS, JP, ___",
           options: ["LM","MN","LN","MM","MO"],
           correct: 3,
@@ -11559,6 +11808,7 @@ const vrData = {
         {
           id: 84,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? CW, FT, IQ, LN, ___",
           options: ["NK","PK","OL","OJ","OK"],
           correct: 4,
@@ -11567,6 +11817,7 @@ const vrData = {
         {
           id: 85,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AZ, CW, FT, JQ, ___",
           options: ["ON","NN","MN","MO","NO"],
           correct: 0,
@@ -11575,6 +11826,7 @@ const vrData = {
         {
           id: 86,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZB, WE, TH, QK, ___",
           options: ["NM","NN","ON","NL","OM"],
           correct: 1,
@@ -11583,6 +11835,7 @@ const vrData = {
         {
           id: 87,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AD, BG, CJ, DM, ___",
           options: ["EN","EO","EP","FP","EQ"],
           correct: 2,
@@ -11591,6 +11844,7 @@ const vrData = {
         {
           id: 88,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A2, C5, E8, G11, ___",
           options: ["H14","I13","J14","I14","I15"],
           correct: 3,
@@ -11599,6 +11853,7 @@ const vrData = {
         {
           id: 89,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? Z3, W7, T11, Q15, ___",
           options: ["M19","O19","N18","O18","N19"],
           correct: 4,
@@ -11607,6 +11862,7 @@ const vrData = {
         {
           id: 90,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? B1, D3, H7, N13, ___",
           options: ["V21","T21","U20","V19","T19"],
           correct: 0,
@@ -11615,6 +11871,7 @@ const vrData = {
         {
           id: 91,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A1, B3, D6, G10, ___",
           options: ["J15","K15","L15","K14","J14"],
           correct: 1,
@@ -11623,6 +11880,7 @@ const vrData = {
         {
           id: 92,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? Z1, X3, V5, T7, R9, ___",
           options: ["Q11","O11","P11","Q10","P10"],
           correct: 2,
@@ -11631,6 +11889,7 @@ const vrData = {
         {
           id: 93,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? A, B, D, G, K, ___",
           options: ["N","O","R","Q","P"],
           correct: 4,
@@ -11639,6 +11898,7 @@ const vrData = {
         {
           id: 94,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BY, EV, HS, KP, ___",
           options: ["OM","NL","ML","MN","NM"],
           correct: 4,
@@ -11647,6 +11907,7 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? C2, F5, I8, L11, ___",
           options: ["O14","N14","O13","P14","N13"],
           correct: 0,
@@ -11655,6 +11916,7 @@ const vrData = {
         {
           id: 96,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AE, CG, FJ, JN, ___",
           options: ["MR","OS","OR","NS","NR"],
           correct: 1,
@@ -11663,6 +11925,7 @@ const vrData = {
         {
           id: 97,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZX, WU, TR, QO, ___",
           options: ["ML","NM","NL","OL","NK"],
           correct: 2,
@@ -11671,6 +11934,7 @@ const vrData = {
         {
           id: 98,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A1, D4, G9, J16, ___",
           options: ["N25","L25","M26","M25","M24"],
           correct: 3,
@@ -11679,6 +11943,7 @@ const vrData = {
         {
           id: 99,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? D, G, J, M, ___",
           options: ["O","N","P","Q","R"],
           correct: 2,
@@ -11687,6 +11952,7 @@ const vrData = {
         {
           id: 100,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? FH, GI, HJ, IK, ___",
           options: ["JM","JL","KL","IL","KM"],
           correct: 1,
@@ -11695,6 +11961,7 @@ const vrData = {
         {
           id: 101,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? V, T, R, P, ___",
           options: ["O","N","L","M","K"],
           correct: 1,
@@ -11703,6 +11970,7 @@ const vrData = {
         {
           id: 102,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AB, AB, AB, AB, ___",
           options: ["BC","AB","AC","CD","BA"],
           correct: 1,
@@ -11711,6 +11979,7 @@ const vrData = {
         {
           id: 103,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? F, H, J, L, ___",
           options: ["M","Q","O","P","N"],
           correct: 4,
@@ -11719,6 +11988,7 @@ const vrData = {
         {
           id: 104,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZZ, YY, XX, WW, VV, ___",
           options: ["UU","VW","TT","UV","UW"],
           correct: 0,
@@ -11727,6 +11997,7 @@ const vrData = {
         {
           id: 105,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? S, Q, O, M, ___",
           options: ["L","K","J","I","H"],
           correct: 1,
@@ -11735,6 +12006,7 @@ const vrData = {
         {
           id: 106,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BY, DW, FU, HS, ___",
           options: ["IQ","JP","JQ","IR","KQ"],
           correct: 2,
@@ -11743,6 +12015,7 @@ const vrData = {
         {
           id: 107,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BE, DG, FI, HK, ___",
           options: ["JL","IL","IM","JM","KM"],
           correct: 3,
@@ -11751,6 +12024,7 @@ const vrData = {
         {
           id: 108,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? Z5, X10, V15, T20, ___",
           options: ["S25","R30","R20","S20","R25"],
           correct: 4,
@@ -11759,6 +12033,7 @@ const vrData = {
         {
           id: 109,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AE, BG, CI, DK, ___",
           options: ["EM","EL","FM","EN","FL"],
           correct: 0,
@@ -11767,6 +12042,7 @@ const vrData = {
         {
           id: 110,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? ZA, YC, XE, WG, ___",
           options: ["VH","UI","VI","VJ","UH"],
           correct: 2,
@@ -11775,6 +12051,7 @@ const vrData = {
         {
           id: 111,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? C2, F4, I6, L8, ___",
           options: ["N10","O10","M10","O8","N8"],
           correct: 1,
@@ -11783,6 +12060,7 @@ const vrData = {
         {
           id: 112,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? DB, FC, HD, JE, ___",
           options: ["KG","LF","LG","KF","LE"],
           correct: 1,
@@ -11791,6 +12069,7 @@ const vrData = {
         {
           id: 113,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? WA, UC, SE, QG, ___",
           options: ["OI","NI","PI","OJ","OH"],
           correct: 0,
@@ -11799,6 +12078,7 @@ const vrData = {
         {
           id: 114,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? B3, D6, F9, H12, ___",
           options: ["J15","I15","J14","K15","J16"],
           correct: 0,
@@ -11807,6 +12087,7 @@ const vrData = {
         {
           id: 115,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BF, DH, FJ, HL, ___",
           options: ["IN","JO","JM","JN","KN"],
           correct: 3,
@@ -11815,6 +12096,7 @@ const vrData = {
         {
           id: 116,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? B, C, E, H, L, ___",
           options: ["N","O","P","Q","R"],
           correct: 3,
@@ -11823,6 +12105,7 @@ const vrData = {
         {
           id: 117,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BX, DU, GR, KO, ___",
           options: ["NL","OL","PL","NM","OK"],
           correct: 2,
@@ -11831,6 +12114,7 @@ const vrData = {
         {
           id: 118,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? Z, Y, W, T, P, ___",
           options: ["H","I","J","K","L"],
           correct: 3,
@@ -11839,6 +12123,7 @@ const vrData = {
         {
           id: 119,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BW, ET, GQ, JN, ___",
           options: ["LK","MK","LJ","MJ","NK"],
           correct: 0,
@@ -11847,6 +12132,7 @@ const vrData = {
         {
           id: 120,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? DA, FC, JE, NG, ___",
           options: ["SI","RI","RH","SJ","QI"],
           correct: 1,
@@ -11855,6 +12141,7 @@ const vrData = {
         {
           id: 121,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this series? A1, C4, E9, G16, ___",
           options: ["I24","H25","I25","J25","I20"],
           correct: 2,
@@ -11863,6 +12150,7 @@ const vrData = {
         {
           id: 122,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? AD, BH, CL, DP, ___",
           options: ["ET","ES","FT","EU","FS"],
           correct: 0,
@@ -11871,6 +12159,7 @@ const vrData = {
         {
           id: 123,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? C, E, G, I, ___",
           options: ["J","H","L","K","M"],
           correct: 3,
@@ -11879,6 +12168,7 @@ const vrData = {
         {
           id: 124,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? BD, DF, FH, HJ, ___",
           options: ["JL","IK","JK","IJ","KL"],
           correct: 0,
@@ -11887,6 +12177,7 @@ const vrData = {
         {
           id: 125,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? M, K, I, G, ___",
           options: ["F","E","D","H","C"],
           correct: 1,
@@ -11895,6 +12186,7 @@ const vrData = {
         {
           id: 126,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter series? J, I, H, G, ___",
           options: ["D","F","E","H","I"],
           correct: 1,
@@ -11903,6 +12195,7 @@ const vrData = {
         {
           id: 127,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? TR, QO, NL, KI, ___",
           options: ["GE","HG","IF","HF","JH"],
           correct: 3,
@@ -11911,6 +12204,7 @@ const vrData = {
         {
           id: 128,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What comes next in this letter pair series? YX, WV, UT, SR, ___",
           options: ["QP","QR","PO","RQ","RP"],
           correct: 0,
@@ -11924,6 +12218,7 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 3, 7, 11, 15, 19, ___",
           options: ["24","23","21","25","22"],
           correct: 1,
@@ -11932,6 +12227,7 @@ const vrData = {
         {
           id: 2,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 10, 15, 20, 25, ___",
           options: ["32","29","30","31","28"],
           correct: 2,
@@ -11940,6 +12236,7 @@ const vrData = {
         {
           id: 3,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 100, 90, 80, 70, 60, ___",
           options: ["51","48","52","50","49"],
           correct: 3,
@@ -11948,6 +12245,7 @@ const vrData = {
         {
           id: 4,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 4, 8, 12, 16, 20, ___",
           options: ["26","23","25","22","24"],
           correct: 4,
@@ -11956,6 +12254,7 @@ const vrData = {
         {
           id: 5,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 9, 16, 23, 30, ___",
           options: ["37","39","36","38","35"],
           correct: 0,
@@ -11964,6 +12263,7 @@ const vrData = {
         {
           id: 6,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 50, 45, 40, 35, 30, ___",
           options: ["27","25","23","26","24"],
           correct: 1,
@@ -11972,6 +12272,7 @@ const vrData = {
         {
           id: 7,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 11, 22, 33, 44, 55, ___",
           options: ["68","65","66","67","64"],
           correct: 2,
@@ -11980,6 +12281,7 @@ const vrData = {
         {
           id: 8,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 6, 12, 18, 24, 30, ___",
           options: ["37","34","38","36","35"],
           correct: 3,
@@ -11988,6 +12290,7 @@ const vrData = {
         {
           id: 9,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 8, 16, 24, 32, 40, ___",
           options: ["50","47","49","46","48"],
           correct: 4,
@@ -11996,6 +12299,7 @@ const vrData = {
         {
           id: 10,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 75, 68, 61, 54, 47, ___",
           options: ["40","42","39","41","38"],
           correct: 0,
@@ -12004,6 +12308,7 @@ const vrData = {
         {
           id: 11,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 13, 26, 39, 52, 65, ___",
           options: ["79","78","76","80","77"],
           correct: 1,
@@ -12012,6 +12317,7 @@ const vrData = {
         {
           id: 12,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 9, 18, 27, 36, 45, ___",
           options: ["56","53","54","55","52"],
           correct: 2,
@@ -12020,6 +12326,7 @@ const vrData = {
         {
           id: 13,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 200, 180, 160, 140, 120, ___",
           options: ["101","98","102","100","99"],
           correct: 3,
@@ -12028,6 +12335,7 @@ const vrData = {
         {
           id: 14,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 15, 30, 45, 60, 75, ___",
           options: ["92","89","91","88","90"],
           correct: 4,
@@ -12036,6 +12344,7 @@ const vrData = {
         {
           id: 15,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 3, 6, 9, 12, 15, ___",
           options: ["18","20","17","19","16"],
           correct: 0,
@@ -12044,6 +12353,7 @@ const vrData = {
         {
           id: 16,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 2, 4, 8, 16, ___",
           options: ["33","32","30","34","31"],
           correct: 1,
@@ -12052,6 +12362,7 @@ const vrData = {
         {
           id: 17,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 3, 6, 12, 24, 48, ___",
           options: ["98","95","96","97","94"],
           correct: 2,
@@ -12060,6 +12371,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 10, 20, 40, 80, ___",
           options: ["161","158","162","160","159"],
           correct: 3,
@@ -12068,6 +12380,7 @@ const vrData = {
         {
           id: 19,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 64, 32, 16, 8, 4, ___",
           options: ["4","1","3","0","2"],
           correct: 4,
@@ -12076,6 +12389,7 @@ const vrData = {
         {
           id: 20,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 128, 64, 32, 16, 8, ___",
           options: ["4","6","3","5","2"],
           correct: 0,
@@ -12084,6 +12398,7 @@ const vrData = {
         {
           id: 21,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 7, 14, 21, 28, 35, ___",
           options: ["43","42","40","44","41"],
           correct: 1,
@@ -12092,6 +12407,7 @@ const vrData = {
         {
           id: 22,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 12, 24, 36, 48, 60, ___",
           options: ["74","71","72","73","70"],
           correct: 2,
@@ -12100,6 +12416,7 @@ const vrData = {
         {
           id: 23,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 16, 32, 48, 64, 80, ___",
           options: ["97","94","98","96","95"],
           correct: 3,
@@ -12108,6 +12425,7 @@ const vrData = {
         {
           id: 24,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 25, 50, 75, 100, 125, ___",
           options: ["152","149","151","148","150"],
           correct: 4,
@@ -12116,6 +12434,7 @@ const vrData = {
         {
           id: 25,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 14, 28, 42, 56, 70, ___",
           options: ["84","86","83","85","82"],
           correct: 0,
@@ -12124,6 +12443,7 @@ const vrData = {
         {
           id: 26,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 5, 3, 6, 4, ___",
           options: ["8","7","5","9","6"],
           correct: 1,
@@ -12132,6 +12452,7 @@ const vrData = {
         {
           id: 27,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 10, 20, 15, 25, 20, ___",
           options: ["32","29","30","31","28"],
           correct: 2,
@@ -12140,6 +12461,7 @@ const vrData = {
         {
           id: 28,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 10, 2, 20, 3, ___",
           options: ["31","28","32","30","29"],
           correct: 3,
@@ -12148,6 +12470,7 @@ const vrData = {
         {
           id: 29,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 1, 10, 2, 15, ___",
           options: ["5","2","4","1","3"],
           correct: 4,
@@ -12156,6 +12479,7 @@ const vrData = {
         {
           id: 30,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 100, 1, 90, 2, 80, ___",
           options: ["3","5","2","4","1"],
           correct: 0,
@@ -12164,6 +12488,7 @@ const vrData = {
         {
           id: 31,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 7, 9, 12, 16, 21, ___",
           options: ["28","27","25","29","26"],
           correct: 1,
@@ -12172,6 +12497,7 @@ const vrData = {
         {
           id: 32,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 10, 17, 26, 37, ___",
           options: ["52","49","50","51","48"],
           correct: 2,
@@ -12180,6 +12506,7 @@ const vrData = {
         {
           id: 33,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 3, 7, 13, 21, ___",
           options: ["32","29","33","31","30"],
           correct: 3,
@@ -12188,6 +12515,7 @@ const vrData = {
         {
           id: 34,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 34, 42, 52, 64, 78, ___",
           options: ["96","93","95","92","94"],
           correct: 4,
@@ -12196,6 +12524,7 @@ const vrData = {
         {
           id: 35,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 100, 90, 82, 76, 72, ___",
           options: ["70","72","69","71","68"],
           correct: 0,
@@ -12204,6 +12533,7 @@ const vrData = {
         {
           id: 36,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 3, 5, 8, 12, ___",
           options: ["18","17","15","19","16"],
           correct: 1,
@@ -12212,6 +12542,7 @@ const vrData = {
         {
           id: 37,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 4, 10, 19, 31, ___",
           options: ["48","45","46","47","44"],
           correct: 2,
@@ -12220,6 +12551,7 @@ const vrData = {
         {
           id: 38,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 50, 47, 42, 35, 26, ___",
           options: ["16","13","17","15","14"],
           correct: 3,
@@ -12228,6 +12560,7 @@ const vrData = {
         {
           id: 39,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 3, 6, 10, 15, ___",
           options: ["23","20","22","19","21"],
           correct: 4,
@@ -12236,6 +12569,7 @@ const vrData = {
         {
           id: 40,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 4, 7, 12, 19, 28, ___",
           options: ["39","41","38","40","37"],
           correct: 0,
@@ -12244,6 +12578,7 @@ const vrData = {
         {
           id: 41,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 4, 9, 16, 25, ___",
           options: ["37","36","34","38","35"],
           correct: 1,
@@ -12252,6 +12587,7 @@ const vrData = {
         {
           id: 42,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 4, 9, 16, 25, 36, ___",
           options: ["51","48","49","50","47"],
           correct: 2,
@@ -12260,6 +12596,7 @@ const vrData = {
         {
           id: 43,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 121, 100, 81, 64, 49, ___",
           options: ["37","34","38","36","35"],
           correct: 3,
@@ -12268,6 +12605,7 @@ const vrData = {
         {
           id: 44,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 49, 36, 25, 16, 9, ___",
           options: ["6","3","5","2","4"],
           correct: 4,
@@ -12276,6 +12614,7 @@ const vrData = {
         {
           id: 45,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 16, 25, 36, 49, 64, ___",
           options: ["81","83","80","82","79"],
           correct: 0,
@@ -12284,6 +12623,7 @@ const vrData = {
         {
           id: 46,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 1, 2, 3, 5, ___",
           options: ["9","8","6","10","7"],
           correct: 1,
@@ -12292,6 +12632,7 @@ const vrData = {
         {
           id: 47,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 3, 5, 8, 13, ___",
           options: ["23","20","21","22","19"],
           correct: 2,
@@ -12300,6 +12641,7 @@ const vrData = {
         {
           id: 48,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 3, 4, 7, 11, ___",
           options: ["19","16","20","18","17"],
           correct: 3,
@@ -12308,6 +12650,7 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 2, 4, 6, 10, ___",
           options: ["18","15","17","14","16"],
           correct: 4,
@@ -12316,6 +12659,7 @@ const vrData = {
         {
           id: 50,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 3, 5, 7, 11, ___",
           options: ["13","14","12","15","11"],
           correct: 0,
@@ -12324,6 +12668,7 @@ const vrData = {
         {
           id: 51,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 11, 13, 17, 19, 23, ___",
           options: ["30","29","27","31","28"],
           correct: 1,
@@ -12332,6 +12677,7 @@ const vrData = {
         {
           id: 52,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 7, 11, 13, 17, 19, ___",
           options: ["25","22","23","24","21"],
           correct: 2,
@@ -12340,6 +12686,7 @@ const vrData = {
         {
           id: 53,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 6, 18, 54, 162, ___",
           options: ["487","484","488","486","485"],
           correct: 3,
@@ -12348,6 +12695,7 @@ const vrData = {
         {
           id: 54,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 15, 45, 135, 405, ___",
           options: ["1217","1214","1216","1213","1215"],
           correct: 4,
@@ -12356,6 +12704,7 @@ const vrData = {
         {
           id: 55,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 4, 16, 64, 256, ___",
           options: ["1024","1026","1023","1025","1022"],
           correct: 0,
@@ -12364,6 +12713,7 @@ const vrData = {
         {
           id: 56,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2048, 1024, 512, 256, 128, ___",
           options: ["65","64","62","66","63"],
           correct: 1,
@@ -12372,6 +12722,7 @@ const vrData = {
         {
           id: 57,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 34, 45, 56, 67, 78, ___",
           options: ["91","88","89","90","87"],
           correct: 2,
@@ -12380,6 +12731,7 @@ const vrData = {
         {
           id: 58,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 58, 127, 196, 265, 334, ___",
           options: ["404","401","405","403","402"],
           correct: 3,
@@ -12388,6 +12740,7 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 901, 800, 699, 598, 497, ___",
           options: ["398","395","397","394","396"],
           correct: 4,
@@ -12396,6 +12749,7 @@ const vrData = {
         {
           id: 60,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 543, 432, 321, 210, 99, ___",
           options: ["-12","-10","-13","-11","-14"],
           correct: 0,
@@ -12404,6 +12758,7 @@ const vrData = {
         {
           id: 61,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 240, 216, 192, 168, 144, ___",
           options: ["121","120","118","122","119"],
           correct: 1,
@@ -12412,6 +12767,7 @@ const vrData = {
         {
           id: 62,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 17, 34, 51, 68, 85, ___",
           options: ["104","101","102","103","100"],
           correct: 2,
@@ -12420,6 +12776,7 @@ const vrData = {
         {
           id: 63,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 150, 125, 100, 75, 50, ___",
           options: ["26","23","27","25","24"],
           correct: 3,
@@ -12428,6 +12785,7 @@ const vrData = {
         {
           id: 64,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 23, 46, 69, 92, 115, ___",
           options: ["140","137","139","136","138"],
           correct: 4,
@@ -12436,6 +12794,7 @@ const vrData = {
         {
           id: 65,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 31, 37, 41, 47, 51, ___",
           options: ["57","59","56","58","55"],
           correct: 0,
@@ -12444,6 +12803,7 @@ const vrData = {
         {
           id: 66,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 10, 13, 11, 14, 12, ___",
           options: ["16","15","13","17","14"],
           correct: 1,
@@ -12452,6 +12812,7 @@ const vrData = {
         {
           id: 67,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 8, 4, 10, 6, ___",
           options: ["14","11","12","13","10"],
           correct: 2,
@@ -12460,6 +12821,7 @@ const vrData = {
         {
           id: 68,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 15, 6, 21, 8, 27, ___",
           options: ["11","8","12","10","9"],
           correct: 3,
@@ -12468,6 +12830,7 @@ const vrData = {
         {
           id: 69,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 3, 6, 10, 15, 21, ___",
           options: ["30","27","29","26","28"],
           correct: 4,
@@ -12476,6 +12839,7 @@ const vrData = {
         {
           id: 70,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 10, 15, 21, 28, 36, ___",
           options: ["45","47","44","46","43"],
           correct: 0,
@@ -12484,6 +12848,7 @@ const vrData = {
         {
           id: 71,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 27, 37, 29, 39, 31, ___",
           options: ["42","41","39","43","40"],
           correct: 1,
@@ -12492,6 +12857,7 @@ const vrData = {
         {
           id: 72,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 32, 17, 16, 23, 8, ___",
           options: ["31","28","29","30","27"],
           correct: 2,
@@ -12500,6 +12866,7 @@ const vrData = {
         {
           id: 73,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 31, 17, 33, 15, 35, ___",
           options: ["14","11","15","13","12"],
           correct: 3,
@@ -12508,6 +12875,7 @@ const vrData = {
         {
           id: 74,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 7, 3, 6, 6, 5, 12, ___",
           options: ["6","3","5","2","4"],
           correct: 4,
@@ -12516,6 +12884,7 @@ const vrData = {
         {
           id: 75,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 50, 40, 45, 42, 40, ___",
           options: ["44","46","43","45","42"],
           correct: 0,
@@ -12524,6 +12893,7 @@ const vrData = {
         {
           id: 76,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 5, 2, 10, 3, ___",
           options: ["16","15","13","17","14"],
           correct: 1,
@@ -12532,6 +12902,7 @@ const vrData = {
         {
           id: 77,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 100, 3, 90, 6, 80, ___",
           options: ["11","8","9","10","7"],
           correct: 2,
@@ -12540,6 +12911,7 @@ const vrData = {
         {
           id: 78,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 100, 4, 80, 6, ___",
           options: ["61","58","62","60","59"],
           correct: 3,
@@ -12548,6 +12920,7 @@ const vrData = {
         {
           id: 79,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 5, 11, 23, 47, ___",
           options: ["97","94","96","93","95"],
           correct: 4,
@@ -12556,6 +12929,7 @@ const vrData = {
         {
           id: 80,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 4, 13, 40, 121, ___",
           options: ["364","366","363","365","362"],
           correct: 0,
@@ -12564,6 +12938,7 @@ const vrData = {
         {
           id: 81,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 3, 7, 15, 31, 63, ___",
           options: ["128","127","125","129","126"],
           correct: 1,
@@ -12572,6 +12947,7 @@ const vrData = {
         {
           id: 82,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 3, 9, 27, 81, ___",
           options: ["245","242","243","244","241"],
           correct: 2,
@@ -12580,6 +12956,7 @@ const vrData = {
         {
           id: 83,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 11, 23, 47, 95, ___",
           options: ["192","189","193","191","190"],
           correct: 3,
@@ -12588,6 +12965,7 @@ const vrData = {
         {
           id: 84,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 8, 27, 64, 125, ___",
           options: ["218","215","217","214","216"],
           correct: 4,
@@ -12596,6 +12974,7 @@ const vrData = {
         {
           id: 85,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 8, 27, 64, 125, 216, ___",
           options: ["343","345","342","344","341"],
           correct: 0,
@@ -12604,6 +12983,7 @@ const vrData = {
         {
           id: 86,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 27, 64, 125, 216, 343, ___",
           options: ["513","512","510","514","511"],
           correct: 1,
@@ -12612,6 +12992,7 @@ const vrData = {
         {
           id: 87,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 13, 19, 31, 55, 103, ___",
           options: ["201","198","199","200","197"],
           correct: 2,
@@ -12620,6 +13001,7 @@ const vrData = {
         {
           id: 88,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 5, 7, 11, 19, 35, ___",
           options: ["68","65","69","67","66"],
           correct: 3,
@@ -12628,6 +13010,7 @@ const vrData = {
         {
           id: 89,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 100, 96, 88, 72, 40, ___",
           options: ["-22","-25","-23","-26","-24"],
           correct: 4,
@@ -12636,6 +13019,7 @@ const vrData = {
         {
           id: 90,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 2, 5, 14, 41, ___",
           options: ["122","124","121","123","120"],
           correct: 0,
@@ -12644,6 +13028,7 @@ const vrData = {
         {
           id: 91,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 3, 5, 9, 17, 33, ___",
           options: ["66","65","63","67","64"],
           correct: 1,
@@ -12652,6 +13037,7 @@ const vrData = {
         {
           id: 92,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 4, 16, 5, 25, 6, ___",
           options: ["38","35","36","37","34"],
           correct: 2,
@@ -12660,6 +13046,7 @@ const vrData = {
         {
           id: 93,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 144, 121, 100, 81, 64, ___",
           options: ["50","47","51","49","48"],
           correct: 3,
@@ -12668,6 +13055,7 @@ const vrData = {
         {
           id: 94,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 2, 3, 5, 7, 11, 13, ___",
           options: ["19","16","18","15","17"],
           correct: 4,
@@ -12676,6 +13064,7 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 20, 14, 8, 2, -4, ___",
           options: ["-10","-9","-11","-8","-12"],
           correct: 0,
@@ -12684,6 +13073,7 @@ const vrData = {
         {
           id: 96,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 4, 9, 12, 17, 20, ___",
           options: ["23","26","28","25","24"],
           correct: 3,
@@ -12692,6 +13082,7 @@ const vrData = {
         {
           id: 97,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 12, 21, 13, 31, 14, ___",
           options: ["42","40","41","43","39"],
           correct: 2,
@@ -12700,6 +13091,7 @@ const vrData = {
         {
           id: 98,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 1, 5, 13, 29, 61, ___",
           options: ["122","119","125","123","127"],
           correct: 2,
@@ -12708,6 +13100,7 @@ const vrData = {
         {
           id: 99,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
           question: "What number comes next in this series? 19, 28, 37, 46, 55, ___",
           options: ["65","63","66","62","64"],
           correct: 4,
@@ -12721,6 +13114,7 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word CAT?",
           options: ["24","27","6","23","9"],
           correct: 0,
@@ -12729,6 +13123,7 @@ const vrData = {
         {
           id: 2,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word BED?",
           options: ["12","11","13","14","15"],
           correct: 1,
@@ -12737,6 +13132,7 @@ const vrData = {
         {
           id: 3,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word AGE?",
           options: ["12","14","13","15","16"],
           correct: 2,
@@ -12745,6 +13141,7 @@ const vrData = {
         {
           id: 4,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which of these words has the highest total value?",
           options: ["DOG","HEN","APE","COW","FIG"],
           correct: 3,
@@ -12753,6 +13150,7 @@ const vrData = {
         {
           id: 5,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word ICE?",
           options: ["16","19","15","18","17"],
           correct: 4,
@@ -12761,6 +13159,7 @@ const vrData = {
         {
           id: 6,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=2, B=4, C=6, D=8, what does BAD = ?",
           options: ["12","14","16","18","20"],
           correct: 1,
@@ -12769,6 +13168,7 @@ const vrData = {
         {
           id: 7,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=3, B=5, C=7, what is the value of A + B + C?",
           options: ["12","15","14","13","16"],
           correct: 1,
@@ -12777,6 +13177,7 @@ const vrData = {
         {
           id: 8,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word DOG?",
           options: ["24","25","26","27","28"],
           correct: 2,
@@ -12785,6 +13186,7 @@ const vrData = {
         {
           id: 9,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word PIG?",
           options: ["28","30","31","32","34"],
           correct: 3,
@@ -12793,6 +13195,7 @@ const vrData = {
         {
           id: 10,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which of these words has the lowest total value?",
           options: ["BID","BIG","BAG","BED","BAD"],
           correct: 4,
@@ -12801,6 +13204,7 @@ const vrData = {
         {
           id: 11,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=5, B=10, C=15, what is the value of A + B − C?",
           options: ["0","-5","5","10","15"],
           correct: 0,
@@ -12809,6 +13213,7 @@ const vrData = {
         {
           id: 12,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=4, B=7, C=2, what is A × B − C?",
           options: ["24","26","28","30","22"],
           correct: 1,
@@ -12817,6 +13222,7 @@ const vrData = {
         {
           id: 13,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word FACE?",
           options: ["12","14","15","16","18"],
           correct: 2,
@@ -12825,6 +13231,7 @@ const vrData = {
         {
           id: 14,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=3, B=6, C=9, what is the value of (B × C) ÷ A?",
           options: ["12","15","21","18","24"],
           correct: 3,
@@ -12833,6 +13240,7 @@ const vrData = {
         {
           id: 15,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word SUN?",
           options: ["54","48","56","50","52"],
           correct: 0,
@@ -12841,6 +13249,7 @@ const vrData = {
         {
           id: 16,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word HAT?",
           options: ["27","28","31","30","29"],
           correct: 4,
@@ -12849,6 +13258,7 @@ const vrData = {
         {
           id: 17,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word CUP?",
           options: ["38","40","36","42","44"],
           correct: 1,
@@ -12857,6 +13267,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word BOX?",
           options: ["39","43","41","37","45"],
           correct: 2,
@@ -12865,6 +13276,7 @@ const vrData = {
         {
           id: 19,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word JAM?",
           options: ["22","26","28","24","20"],
           correct: 3,
@@ -12873,6 +13285,7 @@ const vrData = {
         {
           id: 20,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word FIG?",
           options: ["26","24","20","18","22"],
           correct: 4,
@@ -12881,6 +13294,7 @@ const vrData = {
         {
           id: 21,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word PEN?",
           options: ["35","33","37","31","39"],
           correct: 0,
@@ -12889,6 +13303,7 @@ const vrData = {
         {
           id: 22,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word FISH?",
           options: ["40","42","38","44","46"],
           correct: 1,
@@ -12897,6 +13312,7 @@ const vrData = {
         {
           id: 23,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word CAKE?",
           options: ["18","22","20","24","16"],
           correct: 2,
@@ -12905,6 +13321,7 @@ const vrData = {
         {
           id: 24,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word JUMP?",
           options: ["64","62","56","60","58"],
           correct: 3,
@@ -12913,6 +13330,7 @@ const vrData = {
         {
           id: 25,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word KING?",
           options: ["39","45","43","37","41"],
           correct: 4,
@@ -12921,6 +13339,7 @@ const vrData = {
         {
           id: 26,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word DRUM?",
           options: ["56","58","52","60","54"],
           correct: 0,
@@ -12929,6 +13348,7 @@ const vrData = {
         {
           id: 27,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word LIME?",
           options: ["37","39","35","41","43"],
           correct: 1,
@@ -12937,6 +13357,7 @@ const vrData = {
         {
           id: 28,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which of these words has the highest total value?",
           options: ["BIKE","HIKE","PIKE","MIKE","LIKE"],
           correct: 2,
@@ -12945,6 +13366,7 @@ const vrData = {
         {
           id: 29,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which of these tree names has the lowest total value?",
           options: ["FIR","ELM","ASH","OAK","YEW"],
           correct: 3,
@@ -12953,6 +13375,7 @@ const vrData = {
         {
           id: 30,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word BRAVE?",
           options: ["46","50","52","44","48"],
           correct: 4,
@@ -12961,6 +13384,7 @@ const vrData = {
         {
           id: 31,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word LIGHT?",
           options: ["54","56","58","52","60"],
           correct: 1,
@@ -12969,6 +13393,7 @@ const vrData = {
         {
           id: 32,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word STONE?",
           options: ["73","75","71","69","77"],
           correct: 0,
@@ -12977,6 +13402,7 @@ const vrData = {
         {
           id: 33,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word CLOUD?",
           options: ["53","57","55","51","59"],
           correct: 2,
@@ -12985,6 +13411,7 @@ const vrData = {
         {
           id: 34,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word RIVER?",
           options: ["68","70","74","72","76"],
           correct: 3,
@@ -12993,6 +13420,7 @@ const vrData = {
         {
           id: 35,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which of these words has the highest total value?",
           options: ["SPARK","BLAZE","FLAME","EMBER","LIGHT"],
           correct: 0,
@@ -13001,6 +13429,7 @@ const vrData = {
         {
           id: 36,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word RUN?",
           options: ["53","51","55","49","57"],
           correct: 0,
@@ -13009,6 +13438,7 @@ const vrData = {
         {
           id: 37,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word DEN?",
           options: ["21","23","19","25","27"],
           correct: 1,
@@ -13017,6 +13447,7 @@ const vrData = {
         {
           id: 38,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word NEST?",
           options: ["56","60","58","54","62"],
           correct: 2,
@@ -13025,6 +13456,7 @@ const vrData = {
         {
           id: 39,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word WOLF?",
           options: ["52","54","58","56","60"],
           correct: 3,
@@ -13033,6 +13465,7 @@ const vrData = {
         {
           id: 40,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word QUEEN?",
           options: ["66","64","58","60","62"],
           correct: 4,
@@ -13041,6 +13474,7 @@ const vrData = {
         {
           id: 41,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which of these words has the highest total value?",
           options: ["NOTE","BITE","LATE","GATE","KITE"],
           correct: 0,
@@ -13049,6 +13483,7 @@ const vrData = {
         {
           id: 42,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word FROST?",
           options: ["74","76","82","80","78"],
           correct: 4,
@@ -13057,6 +13492,7 @@ const vrData = {
         {
           id: 43,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of the word MAP?",
           options: ["28","32","30","26","34"],
           correct: 2,
@@ -13065,6 +13501,7 @@ const vrData = {
         {
           id: 44,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... how much more is the word STOP worth than the word STEP?",
           options: ["8","12","14","10","6"],
           correct: 3,
@@ -13073,6 +13510,7 @@ const vrData = {
         {
           id: 45,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=3 and B=8, what is the value of A + B?",
           options: ["10","13","12","9","11"],
           correct: 4,
@@ -13081,6 +13519,7 @@ const vrData = {
         {
           id: 46,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=2, B=5 and C=9, what is the value of A + B + C?",
           options: ["16","17","14","15","18"],
           correct: 0,
@@ -13089,6 +13528,7 @@ const vrData = {
         {
           id: 47,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=6 and B=4, what is the value of A × B?",
           options: ["26","22","20","24","28"],
           correct: 3,
@@ -13097,6 +13537,7 @@ const vrData = {
         {
           id: 48,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=8, B=3 and C=5, what is the value of A + B − C?",
           options: ["6","5","4","7","8"],
           correct: 0,
@@ -13105,6 +13546,7 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=5, B=6 and C=3, what is the value of A × B + C?",
           options: ["30","45","36","33","27"],
           correct: 3,
@@ -13113,6 +13555,7 @@ const vrData = {
         {
           id: 50,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=9, B=4 and C=6, what is the value of A × B − C?",
           options: ["28","32","34","36","30"],
           correct: 4,
@@ -13121,6 +13564,7 @@ const vrData = {
         {
           id: 51,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=7, B=3 and C=2, what is the value of (A − B) × C?",
           options: ["8","12","10","6","14"],
           correct: 0,
@@ -13129,6 +13573,7 @@ const vrData = {
         {
           id: 52,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=8 and B=2, what is the value of A ÷ B + 5?",
           options: ["7","8","10","9","11"],
           correct: 3,
@@ -13137,6 +13582,7 @@ const vrData = {
         {
           id: 53,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=4, B=11 and C=3, what is the value of B − A + C?",
           options: ["8","12","10","4","14"],
           correct: 2,
@@ -13145,6 +13591,7 @@ const vrData = {
         {
           id: 54,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=6 and B=5, what is the value of A × B − A?",
           options: ["26","22","20","24","28"],
           correct: 3,
@@ -13153,6 +13600,7 @@ const vrData = {
         {
           id: 55,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=3, B=5 and C=2, what is the value of A × (B + C)?",
           options: ["17","19","25","23","21"],
           correct: 4,
@@ -13161,6 +13609,7 @@ const vrData = {
         {
           id: 56,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=2, B=4, C=6 and D=3, what is the value of A × B + C ÷ D?",
           options: ["10","8","12","14","6"],
           correct: 0,
@@ -13169,6 +13618,7 @@ const vrData = {
         {
           id: 57,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=2, B=3 and C=10, what is the value of C − A × B?",
           options: ["6","4","8","24","2"],
           correct: 1,
@@ -13177,6 +13627,7 @@ const vrData = {
         {
           id: 58,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=12, B=4 and C=7, what is the value of A ÷ B + C?",
           options: ["8","9","10","12","11"],
           correct: 2,
@@ -13185,6 +13636,7 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=7 and B=9, what is the value of 2 × A + B?",
           options: ["21","27","25","32","23"],
           correct: 4,
@@ -13193,6 +13645,7 @@ const vrData = {
         {
           id: 60,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=4, C=8 and D=5, what is the value of (A + B) × (C − D)?",
           options: ["12","14","13","15","16"],
           correct: 3,
@@ -13201,6 +13654,7 @@ const vrData = {
         {
           id: 61,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=10, B=3 and C=2, what is the value of A − B × C?",
           options: ["14","4","6","8","16"],
           correct: 1,
@@ -13209,6 +13663,7 @@ const vrData = {
         {
           id: 62,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=4, B=2 and C=8, what is the value of (C + A) ÷ B?",
           options: ["6","5","4","7","8"],
           correct: 0,
@@ -13217,6 +13672,7 @@ const vrData = {
         {
           id: 63,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=5 and B=7, what is the value of A × A − B?",
           options: ["16","20","18","22","24"],
           correct: 2,
@@ -13225,6 +13681,7 @@ const vrData = {
         {
           id: 64,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=3, B=2, C=5 and D=4, what is the value of A × C − B × D?",
           options: ["5","11","9","3","7"],
           correct: 4,
@@ -13233,6 +13690,7 @@ const vrData = {
         {
           id: 65,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=12 and B=5, what is the value of A − B?",
           options: ["5","6","8","7","9"],
           correct: 3,
@@ -13241,6 +13699,7 @@ const vrData = {
         {
           id: 66,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=4 and B=3, what is the value of B × B + A?",
           options: ["11","13","15","17","19"],
           correct: 1,
@@ -13249,6 +13708,7 @@ const vrData = {
         {
           id: 67,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=10, B=6 and C=2, what is the value of (A − B) × (A − C)?",
           options: ["32","30","34","28","36"],
           correct: 0,
@@ -13257,6 +13717,7 @@ const vrData = {
         {
           id: 68,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=8, B=3 and C=1, what is the value of A − B − C?",
           options: ["2","3","5","4","6"],
           correct: 3,
@@ -13265,6 +13726,7 @@ const vrData = {
         {
           id: 69,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=3, B=8 and C=3, what is the value of B × C ÷ A?",
           options: ["6","7","9","8","10"],
           correct: 3,
@@ -13273,6 +13735,7 @@ const vrData = {
         {
           id: 70,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=4 and B=6, what is the value of A + B + A?",
           options: ["14","18","16","10","12"],
           correct: 0,
@@ -13281,6 +13744,7 @@ const vrData = {
         {
           id: 71,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=5, B=2 and C=4, what is the value of A × B + A × C?",
           options: ["25","28","35","32","30"],
           correct: 4,
@@ -13289,6 +13753,7 @@ const vrData = {
         {
           id: 72,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=9 and B=2, what is the value of A × B + B?",
           options: ["18","20","22","16","24"],
           correct: 1,
@@ -13297,6 +13762,7 @@ const vrData = {
         {
           id: 73,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=6, B=2 and C=5, what is the value of (A + C) × B − C?",
           options: ["15","19","17","21","13"],
           correct: 2,
@@ -13305,6 +13771,7 @@ const vrData = {
         {
           id: 74,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=7, B=4 and C=3, what is the value of A + B × C?",
           options: ["33","21","17","19","15"],
           correct: 3,
@@ -13313,6 +13780,7 @@ const vrData = {
         {
           id: 75,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "The same number fills both gaps. What is it? 2 × ___ + ___ = 27",
           options: ["11","8","7","10","9"],
           correct: 4,
@@ -13321,6 +13789,7 @@ const vrData = {
         {
           id: 76,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 2, B = 5 and C = 3, what is the value of A + B + C?",
           options: ["8","10","9","11","12"],
           correct: 1,
@@ -13329,6 +13798,7 @@ const vrData = {
         {
           id: 77,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 6 and B = 9, what is the value of B − A?",
           options: ["1","2","3","4","5"],
           correct: 2,
@@ -13337,6 +13807,7 @@ const vrData = {
         {
           id: 78,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 4 and B = 7, what is the value of A + A + B?",
           options: ["13","14","16","15","17"],
           correct: 3,
@@ -13345,6 +13816,7 @@ const vrData = {
         {
           id: 79,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 3, B = 8 and C = 1, what is the value of B − A − C?",
           options: ["2","3","6","5","4"],
           correct: 4,
@@ -13353,6 +13825,7 @@ const vrData = {
         {
           id: 80,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 5, B = 10 and C = 2, what is the value of B − A + C?",
           options: ["6","5","7","8","9"],
           correct: 2,
@@ -13361,6 +13834,7 @@ const vrData = {
         {
           id: 81,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 3, B = 7 and C = 4, what is the value of B × C + A?",
           options: ["29","33","31","35","37"],
           correct: 2,
@@ -13369,6 +13843,7 @@ const vrData = {
         {
           id: 82,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 8, B = 2 and C = 5, what is the value of A ÷ B + C?",
           options: ["9","8","7","10","11"],
           correct: 0,
@@ -13377,6 +13852,7 @@ const vrData = {
         {
           id: 83,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 6, B = 3 and C = 9, what is the value of C − A × B?",
           options: ["-9","-6","3","-3","9"],
           correct: 0,
@@ -13385,6 +13861,7 @@ const vrData = {
         {
           id: 84,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 5 and B = 4, what is the value of A × B − B?",
           options: ["14","15","18","17","16"],
           correct: 4,
@@ -13393,6 +13870,7 @@ const vrData = {
         {
           id: 85,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 7, B = 3 and C = 6, what is the value of (A + B) × C?",
           options: ["54","48","60","66","72"],
           correct: 2,
@@ -13401,6 +13879,7 @@ const vrData = {
         {
           id: 86,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 11 and B = 3, what is the value of A × B − A?",
           options: ["20","24","22","26","28"],
           correct: 2,
@@ -13409,6 +13888,7 @@ const vrData = {
         {
           id: 87,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 9, B = 4 and C = 2, what is the value of A − B × C?",
           options: ["-1","0","1","2","10"],
           correct: 2,
@@ -13417,6 +13897,7 @@ const vrData = {
         {
           id: 88,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 15, B = 5 and C = 8, what is the value of A ÷ B + C?",
           options: ["9","12","11","10","13"],
           correct: 2,
@@ -13425,6 +13906,7 @@ const vrData = {
         {
           id: 89,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 3, B = 5, C = 2 and D = 4, what is the value of A × B − C × D?",
           options: ["5","7","13","11","9"],
           correct: 1,
@@ -13433,6 +13915,7 @@ const vrData = {
         {
           id: 90,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 4, B = 6 and C = 2, what is the value of (A + B) × (B − C)?",
           options: ["45","35","40","30","50"],
           correct: 2,
@@ -13441,6 +13924,7 @@ const vrData = {
         {
           id: 91,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 2, B = 3, C = 6 and D = 4, what is the value of C × D ÷ A + B?",
           options: ["12","14","13","15","16"],
           correct: 3,
@@ -13449,6 +13933,7 @@ const vrData = {
         {
           id: 92,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 5, B = 8 and C = 3, what is the value of B × B − A × C?",
           options: ["45","47","49","51","53"],
           correct: 2,
@@ -13457,6 +13942,7 @@ const vrData = {
         {
           id: 93,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 7, B = 2, C = 3 and D = 5, what is the value of (A − B) × C + D?",
           options: ["18","19","21","20","22"],
           correct: 3,
@@ -13465,6 +13951,7 @@ const vrData = {
         {
           id: 94,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A = 2, B = 9, C = 4 and D = 3, what is the value of B × C ÷ D + A?",
           options: ["16","13","14","15","12"],
           correct: 2,
@@ -13473,6 +13960,7 @@ const vrData = {
         {
           id: 95,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which two words have the same total value? ACE, DAD, BIG, HEN, FIG",
           options: ["ACE and DAD","ACE and BIG","ACE and HEN","ACE and FIG","DAD and BIG"],
           correct: 0,
@@ -13481,6 +13969,7 @@ const vrData = {
         {
           id: 96,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which two words have the same total value? STONE, PLANE, MOUSE, TRAIN, TIGER",
           options: ["STONE and MOUSE","STONE and PLANE","STONE and TRAIN","STONE and TIGER","PLANE and MOUSE"],
           correct: 0,
@@ -13489,6 +13978,7 @@ const vrData = {
         {
           id: 97,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the difference in value between CAT and DOG?",
           options: ["1","2","3","4","0"],
           correct: 1,
@@ -13497,6 +13987,7 @@ const vrData = {
         {
           id: 98,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the difference in value between FISH and BIRD?",
           options: ["11","10","8","9","7"],
           correct: 3,
@@ -13505,6 +13996,7 @@ const vrData = {
         {
           id: 99,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the difference in value between HOME and LAND?",
           options: ["8","11","9","12","10"],
           correct: 4,
@@ -13513,6 +14005,7 @@ const vrData = {
         {
           id: 100,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the difference in value between SMILE and FROWN?",
           options: ["18","19","17","20","16"],
           correct: 0,
@@ -13521,6 +14014,7 @@ const vrData = {
         {
           id: 101,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the difference in value between TIGER and MOUSE?",
           options: ["15","14","13","16","12"],
           correct: 1,
@@ -13529,6 +14023,7 @@ const vrData = {
         {
           id: 102,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is E - B?",
           options: ["2","4","3","5","1"],
           correct: 2,
@@ -13537,6 +14032,7 @@ const vrData = {
         {
           id: 103,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is H - C?",
           options: ["7","6","4","5","3"],
           correct: 3,
@@ -13545,6 +14041,7 @@ const vrData = {
         {
           id: 104,
           difficulty: 1,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is G - D?",
           options: ["1","4","2","5","3"],
           correct: 4,
@@ -13553,6 +14050,7 @@ const vrData = {
         {
           id: 105,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is M - F?",
           options: ["7","8","6","9","5"],
           correct: 0,
@@ -13561,6 +14059,7 @@ const vrData = {
         {
           id: 106,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is P - H?",
           options: ["9","8","7","10","6"],
           correct: 1,
@@ -13569,6 +14068,7 @@ const vrData = {
         {
           id: 107,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is T - K?",
           options: ["8","10","9","11","7"],
           correct: 2,
@@ -13577,6 +14077,7 @@ const vrData = {
         {
           id: 108,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which word has the highest total value? SUN, RAIN, SNOW, WIND, HAIL",
           options: ["RAIN","SUN","WIND","SNOW","HAIL"],
           correct: 3,
@@ -13585,6 +14086,7 @@ const vrData = {
         {
           id: 109,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... which word has the highest total value? GRAPE, LEMON, PEACH, MANGO, PLUM",
           options: ["PEACH","LEMON","MANGO","GRAPE","PLUM"],
           correct: 4,
@@ -13593,6 +14095,7 @@ const vrData = {
         {
           id: 110,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of RHYTHM?",
           options: ["92","93","91","94","90"],
           correct: 0,
@@ -13601,6 +14104,7 @@ const vrData = {
         {
           id: 111,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of WIZARD?",
           options: ["82","81","80","83","79"],
           correct: 1,
@@ -13609,6 +14113,7 @@ const vrData = {
         {
           id: 112,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is the total value of MONEY?",
           options: ["72","73","71","74","70"],
           correct: 0,
@@ -13617,6 +14122,7 @@ const vrData = {
         {
           id: 113,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is C × D?",
           options: ["10","11","13","12","14"],
           correct: 3,
@@ -13625,6 +14131,7 @@ const vrData = {
         {
           id: 114,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is E × C?",
           options: ["13","14","17","16","15"],
           correct: 4,
@@ -13633,6 +14140,7 @@ const vrData = {
         {
           id: 115,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is B × F?",
           options: ["12","11","10","13","14"],
           correct: 0,
@@ -13641,6 +14149,7 @@ const vrData = {
         {
           id: 116,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is D × E - C?",
           options: ["15","17","16","18","19"],
           correct: 1,
@@ -13649,6 +14158,7 @@ const vrData = {
         {
           id: 117,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is G × B + D?",
           options: ["16","17","18","19","20"],
           correct: 2,
@@ -13657,6 +14167,7 @@ const vrData = {
         {
           id: 118,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is F × C - E?",
           options: ["11","12","14","13","15"],
           correct: 3,
@@ -13665,6 +14176,7 @@ const vrData = {
         {
           id: 119,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is H × B - C?",
           options: ["11","12","15","14","13"],
           correct: 4,
@@ -13673,6 +14185,7 @@ const vrData = {
         {
           id: 120,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is E × D + B?",
           options: ["22","21","20","23","24"],
           correct: 0,
@@ -13681,6 +14194,7 @@ const vrData = {
         {
           id: 121,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is C × C × B?",
           options: ["16","18","17","19","20"],
           correct: 1,
@@ -13689,6 +14203,7 @@ const vrData = {
         {
           id: 122,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is F + G - D?",
           options: ["7","8","9","10","11"],
           correct: 2,
@@ -13697,6 +14212,7 @@ const vrData = {
         {
           id: 123,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is J - E + C?",
           options: ["6","7","9","8","10"],
           correct: 3,
@@ -13705,6 +14221,7 @@ const vrData = {
         {
           id: 124,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is H + D - F?",
           options: ["4","5","8","7","6"],
           correct: 4,
@@ -13713,6 +14230,7 @@ const vrData = {
         {
           id: 125,
           difficulty: 2,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is K - G + E?",
           options: ["9","8","7","10","11"],
           correct: 0,
@@ -13721,6 +14239,7 @@ const vrData = {
         {
           id: 126,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is T - J + E - B?",
           options: ["11","13","12","14","15"],
           correct: 1,
@@ -13729,6 +14248,7 @@ const vrData = {
         {
           id: 127,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is M + H - K + C?",
           options: ["11","12","13","14","15"],
           correct: 2,
@@ -13737,6 +14257,7 @@ const vrData = {
         {
           id: 128,
           difficulty: 3,
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
           question: "If A=1, B=2, C=3... what is O - F + D - A?",
           options: ["10","11","12","13","14"],
           correct: 2,
@@ -14502,10 +15023,10 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
-          question: "Look at the pattern: GRIP → DRIP, GLOW → DLOW... that's not a word! So try: GRIP → DRIP, GRAIN → ___",
-          options: ["DRAIN","BRAIN","TRAIN","MAIN","RAIN"],
+          question: "Complete the third pair: (GLARE, FLARE) (GRILL, FRILL) (GRAIL, ___)",
+          options: ["FRAIL","TRAIL","FLAIL","RAIL","GRAIN"],
           correct: 0,
-          explanation: "The pattern replaces the first letter G with D. GRIP → DRIP (G becomes D). GRAIN → DRAIN (G becomes D). The rule is consistent: always swap G for D. Tip: When two examples show different replacements, one of them might be a red herring — look for the consistent rule. ✓"
+          explanation: "The pattern replaces the first letter G with F: GLARE→FLARE, GRILL→FRILL, GRAIL→FRAIL. The rule is consistent: always swap G for F. Tip: Define the rule precisely — WHAT changed, WHERE, and HOW — then apply it to the new word. ✓"
         },
         {
           id: 96,
@@ -14726,10 +15247,10 @@ const vrData = {
         {
           id: 123,
           difficulty: 3,
-          question: "Complete the third pair: (LISTEN, SILENT) (EARTH, HEART) (BELOW, ___)",
-          options: ["ELBOW","BOWEL","TOWEL","LOWER","BLOWN"],
+          question: "Complete the third pair: (LISTEN, SILENT) (EARTH, HEART) (DIARY, ___)",
+          options: ["DAIRY","DAILY","DIRTY","DRILY","AIRY"],
           correct: 0,
-          explanation: "The pattern rearranges the letters to make a new word (anagram): LISTEN→SILENT, EARTH→HEART, BELOW→ELBOW. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
+          explanation: "The pattern rearranges the letters to make a new word (anagram): LISTEN→SILENT, EARTH→HEART, DIARY→DAIRY. All the same letters, just in a different order. Tip: Ignore what the words MEAN — focus only on the LETTERS. ✓"
         },
         {
           id: 124,

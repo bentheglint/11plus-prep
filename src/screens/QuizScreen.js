@@ -304,13 +304,13 @@ function QuizScreen({
                 <div className="mb-6 space-y-4" data-testid="pick-from-sets-groups">
                   <div>
                     <p className="text-sm font-bold text-[#6C5CE7] mb-2">Group A</p>
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-3 gap-2 sm:gap-3">
                       {currentQuestion.setA.map((word, idx) => (
                         <button
                           key={idx}
                           onClick={() => onPickFromSet('A', idx)}
                           disabled={showFeedback}
-                          className={`p-3 text-center rounded-xl border-2 transition-all font-medium ${
+                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
                             showFeedback
                               ? idx === currentQuestion.correctPair[0]
                                 ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'
@@ -329,13 +329,13 @@ function QuizScreen({
                   </div>
                   <div>
                     <p className="text-sm font-bold text-indigo-700 mb-2">Group B</p>
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-3 gap-2 sm:gap-3">
                       {currentQuestion.setB.map((word, idx) => (
                         <button
                           key={idx}
                           onClick={() => onPickFromSet('B', idx)}
                           disabled={showFeedback}
-                          className={`p-3 text-center rounded-xl border-2 transition-all font-medium ${
+                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
                             showFeedback
                               ? idx === currentQuestion.correctPair[1]
                                 ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'

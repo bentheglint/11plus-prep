@@ -211,6 +211,11 @@ function ChildNameScreen({ onSubmit, isLoading }) {
   );
 }
 
+// ── Dev bypass: skip auth on localhost with ?dev-auth=true ──
+const DEV_BYPASS = process.env.NODE_ENV === 'development'
+  && typeof window !== 'undefined'
+  && new URLSearchParams(window.location.search).get('dev-auth') === 'true';
+
 // ── Auth Gate (main orchestrator) ──
 export default function AuthGate({ children }) {
   const { isSignedIn, isLoaded: authLoaded } = useAuth();
@@ -442,6 +447,9 @@ export default function AuthGate({ children }) {
   };
 
   // ── Render ──
+
+  // Dev bypass: skip auth on localhost with ?dev-auth=true (development only)
+  if (DEV_BYPASS) return children(localStorage.getItem('current-user') || 'Dev');
 
   // Still loading Clerk
   if (!authLoaded) {

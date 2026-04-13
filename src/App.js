@@ -1294,15 +1294,16 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           setSelectedSubject(subject);
           setSelectedTopic(topicKey);
           setReturnToTestingMode(true);
+          const teachLesson = subConcept.lessons?.[0];
           setForcedLessonResult({
-            lesson: subConcept.lessons?.[0],
-            subConcept,
-            topicKey,
+            lesson: teachLesson,
+            variables: teachLesson?.variableSets?.[0] || {},
+            interactVariables: teachLesson?.variableSets?.length > 1
+              ? teachLesson.variableSets[1]
+              : teachLesson?.variableSets?.[0] || {},
+            subConceptId: subConcept.id || topicKey,
+            subConceptName: subConcept.name || topicKey,
             topicName: lessonBank[topicKey]?.name || topicKey,
-            vars: subConcept.lessons?.[0]?.variableSets?.[0] || {},
-            interactVars: subConcept.lessons?.[0]?.variableSets?.length > 1
-              ? subConcept.lessons[0].variableSets[1]
-              : subConcept.lessons?.[0]?.variableSets?.[0] || {},
           });
           setCurrentView('lesson');
         }}
