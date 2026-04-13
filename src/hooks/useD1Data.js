@@ -9,6 +9,7 @@ import { createSyncQueue } from '../utils/syncQueue';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
+
 // Default empty state shapes
 const DEFAULTS = {
   quizHistory: [],
@@ -183,16 +184,18 @@ function readCache(userName) {
 // ── API Helpers ──
 
 async function apiFetch(path, getToken) {
-  if (!getToken || !API_URL) return null;
+  if (!getToken) { console.warn('[useD1Data] apiFetch: no getToken'); return null; }
+  if (!API_URL) { console.warn('[useD1Data] apiFetch: no API_URL'); return null; }
   try {
     const token = await getToken();
-    if (!token) return null;
+    if (!token) { console.warn('[useD1Data] apiFetch: getToken returned null'); return null; }
     const res = await fetch(`${API_URL}${path}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    if (!res.ok) return null;
+    if (!res.ok) { console.warn(`[useD1Data] apiFetch ${path}: ${res.status}`); return null; }
     return res.json();
-  } catch {
+  } catch (err) {
+    console.warn(`[useD1Data] apiFetch ${path} error:`, err.message);
     return null;
   }
 }
