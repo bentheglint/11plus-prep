@@ -2285,17 +2285,22 @@ export function LShapeDiagram({
           {totalLength - cutLength} {dimUnit}
         </text>
 
-        {/* Notch horizontal edge: cutLength (P4 → P3) — in cut-out area above step */}
-        <line x1={P4.x} y1={P4.y - dimOff} x2={P3.x} y2={P3.y - dimOff}
-              stroke="#dc2626" strokeWidth="1.5" />
-        <line x1={P4.x} y1={P4.y - dimOff - tickHalf} x2={P4.x} y2={P4.y - dimOff + tickHalf}
-              stroke="#dc2626" strokeWidth="1.5" />
-        <line x1={P3.x} y1={P3.y - dimOff - tickHalf} x2={P3.x} y2={P3.y - dimOff + tickHalf}
-              stroke="#dc2626" strokeWidth="1.5" />
-        <text x={(P4.x + P3.x) / 2} y={P4.y - dimOff - 10} textAnchor="middle"
-              fill="#dc2626" fontSize="15" fontWeight="bold">
-          {cutLength} {dimUnit}
-        </text>
+        {/* Notch horizontal edge: cutLength (P4 → P3) — centred in cut-out area to avoid label overlap */}
+        {(() => {
+          const cutMidY = (P5.y + P4.y) / 2; // vertical midpoint of empty cut-out space
+          return (<>
+            <line x1={P4.x} y1={cutMidY} x2={P3.x} y2={cutMidY}
+                  stroke="#dc2626" strokeWidth="1.5" />
+            <line x1={P4.x} y1={cutMidY - tickHalf} x2={P4.x} y2={cutMidY + tickHalf}
+                  stroke="#dc2626" strokeWidth="1.5" />
+            <line x1={P3.x} y1={cutMidY - tickHalf} x2={P3.x} y2={cutMidY + tickHalf}
+                  stroke="#dc2626" strokeWidth="1.5" />
+            <text x={(P4.x + P3.x) / 2} y={cutMidY - 10} textAnchor="middle"
+                  fill="#dc2626" fontSize="15" fontWeight="bold">
+              {cutLength} {dimUnit}
+            </text>
+          </>);
+        })()}
 
         {/* Notch vertical edge: cutWidth (P5 → P4) — the step drop (right side, in cut-out area) */}
         <line x1={P5.x + dimOff} y1={P5.y} x2={P4.x + dimOff} y2={P4.y}
@@ -2716,7 +2721,8 @@ export function AlphabetLine({
   points = [],
   hops = [],
   showEJOTY = true,
-  showPositionNumbers = true
+  showPositionNumbers = true,
+  hint = null
 }) {
   // Smart range: auto-calculate from points + hops if using default A-Z
   let startCode = startLetter.toUpperCase().charCodeAt(0) - 64; // A=1
@@ -2861,6 +2867,9 @@ export function AlphabetLine({
           );
         })}
       </svg>
+      {hint && (
+        <p className="text-center text-sm text-gray-500 mt-1 italic">{hint}</p>
+      )}
     </div>
   );
 }

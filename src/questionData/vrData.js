@@ -9270,7 +9270,7 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for HELP is GDKO, what rule has been used?",
           options: [
@@ -9286,7 +9286,7 @@ const vrData = {
         {
           id: 2,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If COLD is coded as DPME, what is WARM coded as?",
           options: ["XBSN","XCSN","XBTN","XBSO","YCSN"],
@@ -9296,7 +9296,7 @@ const vrData = {
         {
           id: 3,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for GAME is HBNF, what rule has been used?",
           options: [
@@ -9312,7 +9312,7 @@ const vrData = {
         {
           id: 4,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BOAT is coded as ERDW, what word is coded as VKLS?",
           options: ["SHIM","SHOP","SHIP","SHIN","SKIP"],
@@ -9322,7 +9322,7 @@ const vrData = {
         {
           id: 5,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If RAIN is coded as UDLQ, what is SNOW coded as?",
           options: ["VQSZ","UQRZ","VRQZ","VQRZ","VQRW"],
@@ -9332,7 +9332,7 @@ const vrData = {
         {
           id: 6,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If TREE is coded as WUHH, what word is coded as FROG?",
           options: ["COOL","COLD","COAL","CORD","COIL"],
@@ -9342,7 +9342,7 @@ const vrData = {
         {
           id: 7,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for STAR is TUBS, what rule has been used?",
           options: [
@@ -9358,7 +9358,7 @@ const vrData = {
         {
           id: 8,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CAT is coded as DBU, what is the code for DOG?",
           options: ["CPH","EPH","FOH","EPG","ENH"],
@@ -9368,7 +9368,7 @@ const vrData = {
         {
           id: 9,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DOG is coded as CNF, what is the code for SUN?",
           options: ["RTN","SVM","RUM","TVO","RTM"],
@@ -9378,7 +9378,7 @@ const vrData = {
         {
           id: 10,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LOG is coded as MPH, what word is coded as EPH?",
           options: ["FOG","DOG","HOG","COG","DIG"],
@@ -9388,7 +9388,7 @@ const vrData = {
         {
           id: 11,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SUN is coded as RTM, what is the code for PEN?",
           options: ["PCM","QFO","ODM","OEM","OFM"],
@@ -9398,7 +9398,7 @@ const vrData = {
         {
           id: 12,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PEN is coded as RGP, what is the code for HAT?",
           options: ["ICV","JBV","JCU","JCV","IBU"],
@@ -9408,7 +9408,7 @@ const vrData = {
         {
           id: 13,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FIG is coded as DGE, what word is coded as AMP?",
           options: ["COP","COQ","BNQ","CNR","COR"],
@@ -9418,7 +9418,7 @@ const vrData = {
         {
           id: 14,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If JUMP is coded as KVNQ, what is LAND coded as?",
           options: ["MBOE","MBOF","MBNE","LBOE","MCOE"],
@@ -9428,7 +9428,7 @@ const vrData = {
         {
           id: 15,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BARN is coded as DCTP, what is the code for BORN?",
           options: ["DPTP","DQSP","DQTP","DRTP","DQUP"],
@@ -9438,7 +9438,7 @@ const vrData = {
         {
           id: 16,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DUSK is coded as GXVN, what is the code for DESK?",
           options: ["GFVN","GHVM","GIVN","GHVN","GHUN"],
@@ -9448,7 +9448,7 @@ const vrData = {
         {
           id: 17,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FISH is coded as ILVK, what word is coded as ORYH?",
           options: ["LOSE","LIVE","LOBE","LORE","LOVE"],
@@ -9458,7 +9458,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If MILK is coded as PLON, what word is coded as IROG?",
           options: ["FOOD","FOLD","FORD","FOND","FORE"],
@@ -9468,7 +9468,7 @@ const vrData = {
         {
           id: 19,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GIFT is coded as JLIW, what is the code for WISH?",
           options: ["ZLUK","ZKVL","ZLVK","ZMVK","ZLWK"],
@@ -9478,7 +9478,7 @@ const vrData = {
         {
           id: 20,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LAMP is coded as JYKN, what is the code for FIRE?",
           options: ["DGPD","DHPC","DGQC","DGPC","DIPC"],
@@ -9488,7 +9488,7 @@ const vrData = {
         {
           id: 21,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LOG is coded as MPH, what is the code for CAT?",
           options: ["CBU","DCU","DAU","DBT","DBU"],
@@ -9498,7 +9498,7 @@ const vrData = {
         {
           id: 22,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FIG is coded as GJH, what is the code for DOG?",
           options: ["EPH","EPG","CPH","EOH","DPH"],
@@ -9508,7 +9508,7 @@ const vrData = {
         {
           id: 23,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CAT is coded as BZS, what is the code for SUN?",
           options: ["RTN","RTM","RUM","RVM","STM"],
@@ -9518,7 +9518,7 @@ const vrData = {
         {
           id: 24,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DOG is coded as EPH, what is the code for PEN?",
           options: ["QEO","PFO","QFO","QFN","QGO"],
@@ -9528,7 +9528,7 @@ const vrData = {
         {
           id: 25,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SUN is coded as RTM, what is the code for CUP?",
           options: ["BUO","DVQ","BTP","BTO","CTO"],
@@ -9538,7 +9538,7 @@ const vrData = {
         {
           id: 26,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PEN is coded as QFO, what is the code for HAT?",
           options: ["IBV","IAU","HBU","ICU","IBU"],
@@ -9548,7 +9548,7 @@ const vrData = {
         {
           id: 27,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HAT is coded as IBU, what is the code for BED?",
           options: ["CFE","CFF","BFE","CEE","CGE"],
@@ -9558,7 +9558,7 @@ const vrData = {
         {
           id: 28,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BUS is coded as ATR, what is the code for RUN?",
           options: ["QTN","QTM","RTM","STM","QUM"],
@@ -9568,7 +9568,7 @@ const vrData = {
         {
           id: 29,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If OWL is coded as PXM, what word is coded as SVO?",
           options: ["RUM","RUG","RUN","RUT","TUN"],
@@ -9578,7 +9578,7 @@ const vrData = {
         {
           id: 30,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If JAR is coded as KBS, what word is coded as HFU?",
           options: ["GEM","SET","JET","GET","NET"],
@@ -9588,7 +9588,7 @@ const vrData = {
         {
           id: 31,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BOW is coded as ANV, what word is coded as GHS?",
           options: ["HIS","HIP","HID","HIM","HIT"],
@@ -9598,7 +9598,7 @@ const vrData = {
         {
           id: 32,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HAT is coded as IBU, what word is coded as CBU?",
           options: ["BAT","BAD","BAN","BAR","BAG"],
@@ -9608,7 +9608,7 @@ const vrData = {
         {
           id: 33,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BUS is coded as ATR, what word is coded as OHM?",
           options: ["PIG","PIN","PIE","PIT","PIR"],
@@ -9618,7 +9618,7 @@ const vrData = {
         {
           id: 34,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If JAM is coded as KBN, what word is coded as GPY?",
           options: ["FIG","FLY","FOX","FUN","FAR"],
@@ -9628,7 +9628,7 @@ const vrData = {
         {
           id: 35,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CUP is coded as BTO, what word is coded as QDC?",
           options: ["REF","RID","ROD","RED","RUG"],
@@ -9638,7 +9638,7 @@ const vrData = {
         {
           id: 36,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If MIST is coded as NJTU, what word is coded as CVTL?",
           options: ["BULK","BUST","BUMP","BURN","BUSK"],
@@ -9648,7 +9648,7 @@ const vrData = {
         {
           id: 37,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for PIG is QJH, what rule has been used?",
           options: [
@@ -9664,7 +9664,7 @@ const vrData = {
         {
           id: 38,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for BIG is AHF, what rule has been used?",
           options: [
@@ -9680,7 +9680,7 @@ const vrData = {
         {
           id: 39,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for HEN is IFO, what rule has been used?",
           options: [
@@ -9696,7 +9696,7 @@ const vrData = {
         {
           id: 40,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for TOP is SNO, what rule has been used?",
           options: [
@@ -9712,7 +9712,7 @@ const vrData = {
         {
           id: 41,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for DIP is EJQ, what rule has been used?",
           options: [
@@ -9728,7 +9728,7 @@ const vrData = {
         {
           id: 42,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for TIN is SHM, what rule has been used?",
           options: [
@@ -9744,7 +9744,7 @@ const vrData = {
         {
           id: 43,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for FIG is GJH, what rule has been used?",
           options: [
@@ -9760,7 +9760,7 @@ const vrData = {
         {
           id: 44,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for COT is BNS, what rule has been used?",
           options: [
@@ -9776,7 +9776,7 @@ const vrData = {
         {
           id: 45,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GIFT is coded as IKHV, what is the code for BIRD?",
           options: ["DLTF","DJSF","DKUF","DKTF","DKTE"],
@@ -9786,7 +9786,7 @@ const vrData = {
         {
           id: 46,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LAMP is coded as NCOR, what is the code for PAWN?",
           options: ["SCYP","RDYP","RCZP","RCYQ","RCYP"],
@@ -9796,7 +9796,7 @@ const vrData = {
         {
           id: 47,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If MIST is coded as OKUV, what is the code for TREE?",
           options: ["VTGH","VTGF","VTHG","VTGG","VUGG"],
@@ -9806,7 +9806,7 @@ const vrData = {
         {
           id: 48,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If ROCK is coded as TQEM, what is the code for MOON?",
           options: ["OQPP","OQQP","OPQP","OQQO","ORRP"],
@@ -9816,7 +9816,7 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FISH is coded as HKUJ, what is the code for HILL?",
           options: ["JKMN","JLNN","JKNN","JKML","JKNO"],
@@ -9826,7 +9826,7 @@ const vrData = {
         {
           id: 50,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HELP is coded as JGNR, what is the code for GATE?",
           options: ["IBVG","ICWG","IDVG","ICVH","ICVG"],
@@ -9836,7 +9836,7 @@ const vrData = {
         {
           id: 51,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If COLD is coded as AMJB, what is the code for FORK?",
           options: ["DNPI","DMQI","DMPH","EMPI","DMPI"],
@@ -9846,7 +9846,7 @@ const vrData = {
         {
           id: 52,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If STAR is coded as UVCT, what is the code for ROPE?",
           options: ["TQSG","TPRG","TQRG","TQRF","TRRG"],
@@ -9856,7 +9856,7 @@ const vrData = {
         {
           id: 53,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BARN is coded as ZYPL, what is the code for NEST?",
           options: ["LCRR","LDQR","LCQR","LCQS","MCQR"],
@@ -9866,7 +9866,7 @@ const vrData = {
         {
           id: 54,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DUSK is coded as FWUM, what is the code for FROG?",
           options: ["HTRI","HSQI","HTQI","HUQI","HTQJ"],
@@ -9876,7 +9876,7 @@ const vrData = {
         {
           id: 55,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GIFT is coded as EGDR, what is the code for POEM?",
           options: ["NMDK","NMCL","NLCK","OMCK","NMCK"],
@@ -9886,7 +9886,7 @@ const vrData = {
         {
           id: 56,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LAMP is coded as NCOR, what is the code for LION?",
           options: ["NKQO","NLQP","NKRP","NKQP","NJQP"],
@@ -9896,7 +9896,7 @@ const vrData = {
         {
           id: 57,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If ROCK is coded as TQEM, what word is coded as ECUG?",
           options: ["CASE","CART","CARD","CAPE","CAVE"],
@@ -9906,7 +9906,7 @@ const vrData = {
         {
           id: 58,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FISH is coded as HKUJ, what word is coded as NCEM?",
           options: ["LACE","LACK","LAND","LAME","LAKE"],
@@ -9916,7 +9916,7 @@ const vrData = {
         {
           id: 59,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If POND is coded as NMLB, what word is coded as JCDR?",
           options: ["LETS","LESS","LENT","LEND","LEFT"],
@@ -9926,7 +9926,7 @@ const vrData = {
         {
           id: 60,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If COLD is coded as EQNF, what word is coded as TKPI?",
           options: ["RIND","RING","RICH","RISE","RIDE"],
@@ -9936,7 +9936,7 @@ const vrData = {
         {
           id: 61,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If STAR is coded as QRYP, what word is coded as DGQF?",
           options: ["FILE","FIST","FISH","FILM","FILL"],
@@ -9946,7 +9946,7 @@ const vrData = {
         {
           id: 62,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BARN is coded as DCTP, what word is coded as JQQF?",
           options: ["HOOD","HOOK","HOOP","HOOF","HOOT"],
@@ -9956,7 +9956,7 @@ const vrData = {
         {
           id: 63,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DUSK is coded as FWUM, what word is coded as YKPF?",
           options: ["WINE","WIND","WILL","WILD","WING"],
@@ -9966,7 +9966,7 @@ const vrData = {
         {
           id: 64,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GIFT is coded as EGDR, what word is coded as FCPM?",
           options: ["HELP","HERD","HERO","HERB","HENS"],
@@ -9976,7 +9976,7 @@ const vrData = {
         {
           id: 65,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LAMP is coded as NCOR, what word is coded as EQQM?",
           options: ["COOL","CORD","COPE","COOK","CORE"],
@@ -9986,7 +9986,7 @@ const vrData = {
         {
           id: 66,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If MIST is coded as KGQR, what word is coded as NMPI?",
           options: ["PORT","POND","POUR","POLE","PORK"],
@@ -9996,7 +9996,7 @@ const vrData = {
         {
           id: 67,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If ROCK is coded as TQEM, what word is coded as NQQR?",
           options: ["LOOT","LOOK","LOOM","LOOP","LORE"],
@@ -10006,7 +10006,7 @@ const vrData = {
         {
           id: 68,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FISH is coded as HKUJ, what word is coded as DWEM?",
           options: ["BULK","BUCK","BURN","BUMP","BULL"],
@@ -10016,7 +10016,7 @@ const vrData = {
         {
           id: 69,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for HELP is JGNR, what rule has been used?",
           options: [
@@ -10032,7 +10032,7 @@ const vrData = {
         {
           id: 70,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for GUST is ESQR, what rule has been used?",
           options: [
@@ -10048,7 +10048,7 @@ const vrData = {
         {
           id: 71,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for GOLD is IQNF, what rule has been used?",
           options: [
@@ -10064,7 +10064,7 @@ const vrData = {
         {
           id: 72,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for MINT is KGLR, what rule has been used?",
           options: [
@@ -10080,7 +10080,7 @@ const vrData = {
         {
           id: 73,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for DESK is FGUM, what rule has been used?",
           options: [
@@ -10096,7 +10096,7 @@ const vrData = {
         {
           id: 74,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for PLUM is NJSK, what rule has been used?",
           options: [
@@ -10112,7 +10112,7 @@ const vrData = {
         {
           id: 75,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for PINE is RKPG, what rule has been used?",
           options: [
@@ -10128,7 +10128,7 @@ const vrData = {
         {
           id: 76,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for WOLF is UMJD, what rule has been used?",
           options: [
@@ -10144,7 +10144,7 @@ const vrData = {
         {
           id: 77,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CHARM is coded as FKDUP, what is the code for FLAME?",
           options: ["IODPH","IODQH","IOCPH","IOEPI","INDPH"],
@@ -10154,7 +10154,7 @@ const vrData = {
         {
           id: 78,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GLOBE is coded as DILYB, what is the code for STORM?",
           options: ["PQLNJ","PQLOJ","PRLOJ","PQMOJ","PQLOK"],
@@ -10164,7 +10164,7 @@ const vrData = {
         {
           id: 79,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PLANT is coded as SODQW, what is the code for CROWN?",
           options: ["FURAQ","FUSZQ","FURZQ","FURZR","FURYQ"],
@@ -10174,7 +10174,7 @@ const vrData = {
         {
           id: 80,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BRICK is coded as YOFZH, what is the code for SWIFT?",
           options: ["PTECQ","PTFDQ","PTFCR","PTFCQ","PUFCQ"],
@@ -10184,7 +10184,7 @@ const vrData = {
         {
           id: 81,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SHELF is coded as VKHOI, what is the code for TIGER?",
           options: ["WLKHU","WLJHV","WMJHU","WLJIU","WLJHU"],
@@ -10194,7 +10194,7 @@ const vrData = {
         {
           id: 82,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FROST is coded as IURVW, what is the code for GRAPE?",
           options: ["JUDTI","JUDSH","JUCSH","JUDSG","JUESH"],
@@ -10204,7 +10204,7 @@ const vrData = {
         {
           id: 83,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CLOUD is coded as ZILRA, what is the code for SHELF?",
           options: ["PECIC","PEBIC","PEBHC","PFBIC","PEBID"],
@@ -10214,7 +10214,7 @@ const vrData = {
         {
           id: 84,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DRINK is coded as GULQN, what is the code for LUCKY?",
           options: ["OXFMC","OXFNA","OXFNB","OXGNB","OWFNB"],
@@ -10224,7 +10224,7 @@ const vrData = {
         {
           id: 85,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If TRUNK is coded as WUXQN, what is the code for FIXED?",
           options: ["ILAHF","ILBHG","ILAIG","ILAHG","IKAHG"],
@@ -10234,7 +10234,7 @@ const vrData = {
         {
           id: 86,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SLOPE is coded as VORSH, what is the code for BUYER?",
           options: ["EXBHU","EXCHU","EXBIV","EWBHU","EXAHU"],
@@ -10244,7 +10244,7 @@ const vrData = {
         {
           id: 87,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BRICK is coded as EULFN, what word is coded as WRUFK?",
           options: ["TOOTH","TOTAL","TOWER","TOUCH","TORCH"],
@@ -10254,7 +10254,7 @@ const vrData = {
         {
           id: 88,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SHELF is coded as PEBIC, what word is coded as QOFZH?",
           options: ["TRIBE","TRICK","TRAIN","TRACK","TRACE"],
@@ -10264,7 +10264,7 @@ const vrData = {
         {
           id: 89,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FROST is coded as IURVW, what word is coded as VWRQH?",
           options: ["STORE","STORK","STOVE","STONE","STOLE"],
@@ -10274,7 +10274,7 @@ const vrData = {
         {
           id: 90,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
           options: ["GRACE","GRIND","GRIST","GRASS","GRAIN"],
@@ -10284,7 +10284,7 @@ const vrData = {
         {
           id: 91,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DRINK is coded as GULQN, what word is coded as EULQJ?",
           options: ["BRICK","BRINE","BRISK","BRING","BRIDE"],
@@ -10294,7 +10294,7 @@ const vrData = {
         {
           id: 92,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If TRUNK is coded as QORKH, what word is coded as JXDFZ?",
           options: ["MASON","MAJOR","MANOR","MARCH","MAGIC"],
@@ -10304,7 +10304,7 @@ const vrData = {
         {
           id: 93,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
           options: ["CRANE","CREAM","CRAFT","CRASH","CRATE"],
@@ -10314,7 +10314,7 @@ const vrData = {
         {
           id: 94,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CHARM is coded as FKDUP, what word is coded as SODFH?",
           options: ["PLANE","PLATE","PLACE","PLANT","PLANK"],
@@ -10324,7 +10324,7 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
           options: ["SHARP","SHALL","SHADE","SHARE","SHAPE"],
@@ -10334,7 +10334,7 @@ const vrData = {
         {
           id: 96,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PLANT is coded as SODQW, what word is coded as PLAHU?",
           options: ["MINOR","MIXER","MISER","MIGHT","MITRE"],
@@ -10344,7 +10344,7 @@ const vrData = {
         {
           id: 97,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for DRUM is GUXP, what rule has been used?",
           options: [
@@ -10360,7 +10360,7 @@ const vrData = {
         {
           id: 98,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for PRIDE is MOFAB, what rule has been used?",
           options: [
@@ -10376,7 +10376,7 @@ const vrData = {
         {
           id: 99,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FROG is coded as GTRH, what pattern has been used for the shifts?",
           options: ["+1, +3, +2, +1","+2, +1, +3, +2","+1, +2, +3, +1","+1, +2, +2, +1","+2, +2, +3, +1"],
@@ -10386,7 +10386,7 @@ const vrData = {
         {
           id: 100,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If MICE is coded as OJEF, what pattern has been used for the shifts?",
           options: ["+1, +2, +1, +2","+2, +2, +1, +1","+1, +1, +2, +2","+3, +1, +1, +1","+2, +1, +2, +1"],
@@ -10396,7 +10396,7 @@ const vrData = {
         {
           id: 101,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for FAWN is GBXO (each letter moved forward by 1), what is the code for DUCK?",
           options: ["EVEL","EVDK","EDVL","EVDL","DVDL"],
@@ -10406,7 +10406,7 @@ const vrData = {
         {
           id: 102,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for HAND is IBOE (each letter moved forward by 1), what is the code for FEET?",
           options: ["FFGU","GFFE","GFEU","GEFU","GFFU"],
@@ -10416,7 +10416,7 @@ const vrData = {
         {
           id: 103,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for COME is BNLD (each letter moved back by 1), what is the code for PLAY?",
           options: ["OKZY","OKZX","OKYZ","OLZX","PKZX"],
@@ -10426,7 +10426,7 @@ const vrData = {
         {
           id: 104,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for BALL is DCNN (each letter moved forward by 2), what is the code for KICK?",
           options: ["MKEN","MKME","MKEM","MKEL","NKEM"],
@@ -10436,7 +10436,7 @@ const vrData = {
         {
           id: 105,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for CAKE is DBLF (each letter moved forward by 1), what is the code for MILK?",
           options: ["NKML","NJMK","NJLM","NJML","MJML"],
@@ -10446,7 +10446,7 @@ const vrData = {
         {
           id: 106,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for BIRD is AHQC (each letter moved back by 1), what is the code for NEST?",
           options: ["MERS","NDRS","MDSR","MCRS","MDRS"],
@@ -10456,7 +10456,7 @@ const vrData = {
         {
           id: 107,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for TREE is USFF (each letter moved forward by 1), what is the code for LEAF?",
           options: ["MFGB","MFBC","MFBG","MEBG","LFBG"],
@@ -10466,7 +10466,7 @@ const vrData = {
         {
           id: 108,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for FROG is HTQI (each letter moved forward by 2), what is the code for TOAD?",
           options: ["VQCE","VQFC","VPCF","VQCF","WQCF"],
@@ -10476,7 +10476,7 @@ const vrData = {
         {
           id: 109,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for RUBY is UXEB, what is the code for DARK?",
           options: ["GCUN","GDNU","GEUN","HDUN","GDUN"],
@@ -10486,7 +10486,7 @@ const vrData = {
         {
           id: 110,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for MINT is KGLR, what is the code for SALT?",
           options: ["RYJR","QYJR","QYJQ","QXJR","QYJS"],
@@ -10496,7 +10496,7 @@ const vrData = {
         {
           id: 111,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for WIND is ZLQG, what is the code for RAIN?",
           options: ["UELQ","UDLQ","UDQL","UCLQ","VDLQ"],
@@ -10506,7 +10506,7 @@ const vrData = {
         {
           id: 112,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PARK is coded as MXOH, what word is coded as JXII?",
           options: ["TALL","CALL","MALL","BALL","HALL"],
@@ -10516,7 +10516,7 @@ const vrData = {
         {
           id: 113,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for HERO is LIVS, what is the code for KING?",
           options: ["OLRK","OMKR","PMRK","OMRK","ONRK"],
@@ -10526,7 +10526,7 @@ const vrData = {
         {
           id: 114,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for MOLE is KMJC, what is the code for FAST?",
           options: ["EYQR","DXQR","DYRQ","DYQP","DYQR"],
@@ -10536,7 +10536,7 @@ const vrData = {
         {
           id: 115,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GOLD is coded as IQNF, what is the code for RING?",
           options: ["TKIP","TKPI","UKPI","TJPI","TLPI"],
@@ -10546,7 +10546,7 @@ const vrData = {
         {
           id: 116,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for JUMP is ITLO, what is the code for SWIM?",
           options: ["RUHL","RVLH","RVHL","RWHL","SVHL"],
@@ -10556,7 +10556,7 @@ const vrData = {
         {
           id: 117,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for BOOK is ERRN, what is the code for READ?",
           options: ["UGDG","VHDG","UIDG","UHDG","UHGD"],
@@ -10566,7 +10566,7 @@ const vrData = {
         {
           id: 118,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for BLUE is GQZJ, what is the code for PINK?",
           options: ["VNSP","UOSP","UNPS","UMSP","UNSP"],
@@ -10576,7 +10576,7 @@ const vrData = {
         {
           id: 119,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for TIGER is PECAN, what is the code for HORSE?",
           options: ["DKNAO","DKNOA","DJNOA","DLNOA","EKNOA"],
@@ -10586,7 +10586,7 @@ const vrData = {
         {
           id: 120,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If the code for CAMP is IGSV, what is the code for TENT?",
           options: ["ZLTZ","ZKTX","ZKTZ","AKTZ","ZJTZ"],
@@ -10596,7 +10596,7 @@ const vrData = {
         {
           id: 121,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SMILE is coded as WQMPI, what word is coded as ASVPH?",
           options: ["WORDS","WORTH","WORRY","WORLD","WORKS"],
@@ -10606,7 +10606,7 @@ const vrData = {
         {
           id: 122,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for DAWN?",
           options: ["FCXP","EDXP","ECYP","ECXQ","ECXP"],
@@ -10616,7 +10616,7 @@ const vrData = {
         {
           id: 123,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If KITE is coded as PRGV using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
           options: ["UIRV","URIV","URVI","USIV","VRIV"],
@@ -10626,7 +10626,7 @@ const vrData = {
         {
           id: 124,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CROWN is coded as FURZQ, what word is coded as VWDUW?",
           options: ["STARK","STARE","START","STARS","STORE"],
@@ -10636,7 +10636,7 @@ const vrData = {
         {
           id: 125,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HAPPY is coded as ICSQA (1st +1, 2nd +2, 3rd +3, 4th +1, 5th +2), what is the code for SMILE?",
           options: ["TOLNG","TOMLG","TOLMF","TOLMG","UOLMG"],
@@ -10646,7 +10646,7 @@ const vrData = {
         {
           id: 126,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DRAW is coded as ETDA, what is the code for LAKE?",
           options: ["NCNI","MDNI","MCOI","MCNH","MCNI"],
@@ -10656,7 +10656,7 @@ const vrData = {
         {
           id: 127,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BARK is coded as AYOG, what is the code for VINE?",
           options: ["UHKA","UGLA","UGKA","UGKB","VGKA"],
@@ -10666,7 +10666,7 @@ const vrData = {
         {
           id: 128,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CART is coded as EDVY, what is the code for LAND?",
           options: ["NCRI","ODRI","NDSI","NDRI","NDRH"],
@@ -10676,7 +10676,7 @@ const vrData = {
         {
           id: 129,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DRAWN is coded as CPXSI, what is the code for STONE?",
           options: ["RRMJZ","SRLJZ","RQLJZ","RRLIZ","RRLJZ"],
@@ -10686,7 +10686,7 @@ const vrData = {
         {
           id: 130,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GAME is coded as HZND, what is the code for BOOK?",
           options: ["CNPI","CNPJ","CMPJ","CNQJ","DNPJ"],
@@ -10696,7 +10696,7 @@ const vrData = {
         {
           id: 131,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If COLD is coded as DQOH, what is the code for MILK?",
           options: ["NJOO","NKOO","OKOO","NKPO","NKON"],
@@ -10706,7 +10706,7 @@ const vrData = {
         {
           id: 132,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If TRAIN is coded as UTDMS, what is the code for PIANO?",
           options: ["QJDRT","QKERT","QKDRT","RKDRT","QKDQT"],
@@ -10716,7 +10716,7 @@ const vrData = {
         {
           id: 133,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If RIVER is coded as PFRZL, what is the code for HOUSE?",
           options: ["FKQNY","GLQNY","FLRNY","FLQNY","FLQMY"],
@@ -10726,7 +10726,7 @@ const vrData = {
         {
           id: 134,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BELL is coded as DFNM, what is the code for RING?",
           options: ["TJQH","UJPH","TIPH","TJPH","TJPG"],
@@ -10736,7 +10736,7 @@ const vrData = {
         {
           id: 135,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If KINGS is coded as JGKCN, what is the code for QUEEN?",
           options: ["PSBZI","QSBAI","PRBAI","PSCAI","PSBAI"],
@@ -10746,7 +10746,7 @@ const vrData = {
         {
           id: 136,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HORSE is coded as KQSVG, what is the code for BEACH?",
           options: ["EGBFJ","FGBFJ","EFBFJ","EGCFJ","EGBEJ"],
@@ -10756,7 +10756,7 @@ const vrData = {
         {
           id: 137,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SAND is coded as VDQG, what is the code for YARD?",
           options: ["CDUG","BDUG","BCUG","BDVG","BDUF"],
@@ -10766,7 +10766,7 @@ const vrData = {
         {
           id: 138,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If WAVE is coded as YCXG, what is the code for WAXY?",
           options: ["YBZA","ZCZA","YCZA","YCAA","YCZZ"],
@@ -10776,7 +10776,7 @@ const vrData = {
         {
           id: 139,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FERN is coded as JIVR, what is the code for ZERO?",
           options: ["DIWS","EIVS","DHVS","DIVS","DIVR"],
@@ -10786,7 +10786,7 @@ const vrData = {
         {
           id: 140,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If MOTH is coded as PRWK, what is the code for BUZZ?",
           options: ["EXCB","FXCC","EWCC","EXDC","EXCC"],
@@ -10796,7 +10796,7 @@ const vrData = {
         {
           id: 141,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If COIN is coded as HTNS, what is the code for COZY?",
           options: ["HTED","ITED","HSED","HTFD","HTEC"],
@@ -10806,7 +10806,7 @@ const vrData = {
         {
           id: 142,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If GLOW is coded as KPSA, what is the code for JINX?",
           options: ["OMRB","NMRB","NLRB","NMSB","NMRA"],
@@ -10816,7 +10816,7 @@ const vrData = {
         {
           id: 143,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CAPE is coded as ZXMB, what word is coded as QXUF?",
           options: ["TZXI","UAXI","TAXI","TAYI","TAXH"],
@@ -10826,7 +10826,7 @@ const vrData = {
         {
           id: 144,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HIVE is coded as DERA, what word is coded as JATP?",
           options: ["NEYT","OEXT","NDXT","NEXT","NEXS"],
@@ -10836,7 +10836,7 @@ const vrData = {
         {
           id: 145,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PEAK is coded as KZVF, what word is coded as HVUZ?",
           options: ["MAZD","NAZE","MZZE","MAAE","MAZE"],
@@ -10846,7 +10846,7 @@ const vrData = {
         {
           id: 146,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BOLT is coded as EROW, what is the code for LYNX?",
           options: ["OBQA","PBQA","OAQA","OBRA","OBQZ"],
@@ -10856,7 +10856,7 @@ const vrData = {
         {
           id: 147,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If SILK is coded as UKNM, what is the code for YAWN?",
           options: ["BCYP","ACYP","ABYP","ACZP","ACYO"],
@@ -10866,7 +10866,7 @@ const vrData = {
         {
           id: 148,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If DOVE is coded as HSZI, what is the code for FIZZY?",
           options: ["JLDDC","KMDDC","JMDDC","JMEDC","JMDCC"],
@@ -10876,7 +10876,7 @@ const vrData = {
         {
           id: 149,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If LIME is coded as ORNV, what is the code for SWAN?",
           options: ["HDZM","IDZM","HEZM","HDAM","HDZN"],
@@ -10886,7 +10886,7 @@ const vrData = {
         {
           id: 150,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for PLUM?",
           options: ["LOFN","KOGN","KOEN","KOFN","KOFM"],
@@ -10896,7 +10896,7 @@ const vrData = {
         {
           id: 151,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what is the code for SWIM?",
           options: ["HDRR","IDRN","HFRN","HDUN","HDRN"],
@@ -10906,7 +10906,7 @@ const vrData = {
         {
           id: 152,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what word is coded as IZRM?",
           options: ["RAIN","SAIN","RZIN","RAJN","RAIM"],
@@ -10916,7 +10916,7 @@ const vrData = {
         {
           id: 153,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If STOP is coded as HGLK, what word is coded as WZIP?",
           options: ["EARK","DARK","DZRK","DASK","DARJ"],
@@ -10926,7 +10926,7 @@ const vrData = {
         {
           id: 154,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CUBE is coded as XFYV, what is the code for LIGHT?",
           options: ["OTTSG","PRTSG","ORTSG","ORWSG","ORTWG"],
@@ -10936,7 +10936,7 @@ const vrData = {
         {
           id: 155,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If TUSK is coded as GFHP, what is the code for MONEY?",
           options: ["NLPVB","OLMVB","NNMVB","NLMVB","NLMZB"],
@@ -10946,7 +10946,7 @@ const vrData = {
         {
           id: 156,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If HORN is coded as SLIM, what word is coded as YIZEV?",
           options: ["BRAUE","CRAVE","BQAVE","BRBVE","BRAVE"],
@@ -10956,7 +10956,7 @@ const vrData = {
         {
           id: 157,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If FORK is coded as IRUN, what is the code for GOLD?",
           options: ["KROG","JROG","JQOG","JRPG","JROF"],
@@ -10966,7 +10966,7 @@ const vrData = {
         {
           id: 158,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If KNOT is coded as HKLQ, what is the code for FARM?",
           options: ["CWOJ","DXOJ","CXOJ","CXPJ","CXOI"],
@@ -10976,7 +10976,7 @@ const vrData = {
         {
           id: 159,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If TWIG is coded as XAMK, what is the code for DESK?",
           options: ["HIXO","IIWO","HHWO","HIWO","HIWN"],
@@ -10986,7 +10986,7 @@ const vrData = {
         {
           id: 160,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If PUMA is coded as LQIW, what is the code for JUMP?",
           options: ["FQIK","GQIL","FPIL","FQJL","FQIL"],
@@ -10996,7 +10996,7 @@ const vrData = {
         {
           id: 161,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If VASE is coded as YDVH, what is the code for TRAIN?",
           options: ["WUDLQ","XUDLQ","WTDLQ","WUELQ","WUDKQ"],
@@ -11006,7 +11006,7 @@ const vrData = {
         {
           id: 162,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BLUE is coded as YIRB, what is the code for CLOCK?",
           options: ["AILZH","ZILZH","ZHLZH","ZIMZH","ZILYH"],
@@ -11016,7 +11016,7 @@ const vrData = {
         {
           id: 163,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BLUE is coded as FPYI, what is the code for RIVER?",
           options: ["VLZIV","WMZIV","VMZIV","VMAIV","VMZHV"],
@@ -11026,7 +11026,7 @@ const vrData = {
         {
           id: 164,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If BLUE is coded as XHQA, what word is coded as LHWJA?",
           options: ["PLBNE","QLANE","PKANE","PLANE","PLAME"],
@@ -11036,7 +11036,7 @@ const vrData = {
         {
           id: 165,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If CLAW is coded as FODZ, what word is coded as VWRUP?",
           options: ["STOQM","TTORM","SSORM","STPRM","STORM"],
@@ -11046,7 +11046,7 @@ const vrData = {
         {
           id: 166,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true } },
+          visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
           question: "If OPAL is coded as LMXI, what word is coded as PEFM?",
           options: ["SHIP","THIP","SGIP","SHJP","SHIO"],
