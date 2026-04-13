@@ -6,8 +6,8 @@
  * chain and survives unmount/remount.
  */
 
-import { renderHook, act } from '@testing-library/react';
-import useUserData from '../../hooks/useUserData';
+import { renderHook, act, waitFor } from '@testing-library/react';
+import useD1Data from '../../hooks/useD1Data';
 import useMastery from '../../hooks/useMastery';
 import useStreaksAndPP from '../../hooks/useStreaksAndPP';
 
@@ -17,7 +17,7 @@ beforeEach(() => {
 
 // Helper: compose hooks like App.js does (lines 75-88)
 function useComposedHooks(userName) {
-  const userData = useUserData(userName);
+  const userData = useD1Data(userName);
   const mastery = useMastery(
     userData.questionResults,
     userData.practiceLog,
@@ -90,7 +90,7 @@ describe('Hook Composition', () => {
     expect(result.current.streaksAndPP.getLevelInfo().totalPP).toBe(50);
   });
 
-  it('all data survives unmount/remount', () => {
+  it('all data survives unmount/remount', async () => {
     // Mount and save data
     const { result: r1, unmount } = renderHook(() => useComposedHooks('Alice'));
 
@@ -114,10 +114,11 @@ describe('Hook Composition', () => {
 
     unmount();
 
-    // Remount — should reload from localStorage
+    // Remount — should reload from dual-written localStorage via async fallback
     const { result: r2 } = renderHook(() => useComposedHooks('Alice'));
 
-    expect(r2.current.userData.questionResults).toHaveLength(10);
+    // Wait for async load from legacy localStorage
+    await waitFor(() => expect(r2.current.userData.questionResults).toHaveLength(10));
     expect(r2.current.userData.practiceLog).toHaveLength(1);
     expect(r2.current.mastery.getTopicMastery('algebra').totalQuestions).toBe(10);
     expect(r2.current.streaksAndPP.currentStreak).toBe(streak1);
