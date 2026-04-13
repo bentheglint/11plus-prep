@@ -3,6 +3,7 @@ import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
+import { handleBatch } from './routes/batch.js';
 import { handleScheduled } from './routes/email.js';
 
 // ── Clerk JWT Verification ──
@@ -199,6 +200,11 @@ export default {
         // Account routes
         const accountResult = await handleAccountRoutes(request, env, userId, path);
         if (accountResult) return accountResult;
+
+        // Batch write endpoint (D1-first architecture)
+        if (path === '/api/data/batch' && request.method === 'POST') {
+          return handleBatch(request, env, userId);
+        }
 
         // Append-only data routes
         const dataResult = await handleDataRoutes(request, env, userId, path);
