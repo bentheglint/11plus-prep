@@ -27,10 +27,10 @@ root.render(
         ) : (
           <AuthGate>
             {(childName, getToken) => (
-              <>
+              <main>
                 <App currentUser={childName} getToken={getToken} />
                 <DevReviewPanel />
-              </>
+              </main>
             )}
           </AuthGate>
         )}

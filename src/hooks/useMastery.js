@@ -39,9 +39,9 @@ function getMasteryLevel(score) {
 // Exam readiness band from score
 function getReadinessBand(score) {
   if (score >= 81) return { band: 'Excelling', colour: '#FDCB6E' };
-  if (score >= 61) return { band: 'Exam Ready', colour: '#00B894' };
+  if (score >= 61) return { band: 'Exam Ready', colour: '#007D62' };
   if (score >= 36) return { band: 'Developing Well', colour: '#6C5CE7' };
-  return { band: 'Building Foundations', colour: '#0984E3' };
+  return { band: 'Building Foundations', colour: '#0770C2' };
 }
 
 export default function useMastery(questionResults, practiceLog, mockTestHistory) {

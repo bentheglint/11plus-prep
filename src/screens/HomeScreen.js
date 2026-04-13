@@ -28,8 +28,8 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
   const vrMastery = mastery?.getSubjectMastery?.('verbalreasoning')?.score || 0;
 
   const subjects = [
-    { key: 'maths', title: 'Maths', icon: Calculator, gradient: 'from-[#0984E3] to-[#0652DD]', mastery: mathsMastery },
-    { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#00B894] to-[#00876A]', mastery: englishMastery },
+    { key: 'maths', title: 'Maths', icon: Calculator, gradient: 'from-[#0770C2] to-[#0652DD]', mastery: mathsMastery },
+    { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#007D62] to-[#00876A]', mastery: englishMastery },
     { key: 'verbalreasoning', title: 'Verbal Reasoning', icon: Brain, gradient: 'from-[#6C5CE7] to-[#5A4BD1]', mastery: vrMastery },
   ];
 
@@ -76,7 +76,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
               className={`bg-gradient-to-br ${sub.gradient} text-white rounded-2xl p-6 text-left relative overflow-hidden shadow-lg`}
             >
               <sub.icon className="w-8 h-8 mb-3 opacity-90" />
-              <h3 className="text-xl font-heading font-bold mb-3">{sub.title}</h3>
+              <h2 className="text-xl font-heading font-bold mb-3">{sub.title}</h2>
               {/* Mastery progress bar */}
               <div className="w-full h-1.5 bg-white/20 rounded-full overflow-hidden">
                 <motion.div
@@ -163,7 +163,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           <div className="flex gap-3 mt-2">
             <button
               onClick={onSpeedReview}
-              className="flex items-center gap-2 px-4 py-2 text-sm text-amber-600 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 text-sm text-amber-700 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200 transition-colors"
             >
               <Wrench className="w-4 h-4" />
               Speed Review
@@ -171,7 +171,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
             {(currentUser === 'Ben' || currentUser === 'Jacqui') && (
               <button
                 onClick={onTestingMode}
-                className="flex items-center gap-2 px-4 py-2 text-sm text-rose-600 bg-rose-50 hover:bg-rose-100 rounded-lg border border-rose-200 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 text-sm text-rose-700 bg-rose-50 hover:bg-rose-100 rounded-lg border border-rose-200 transition-colors"
               >
                 <ClipboardCheck className="w-4 h-4" />
                 Testing Mode

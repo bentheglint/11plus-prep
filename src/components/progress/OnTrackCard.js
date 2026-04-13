@@ -101,8 +101,8 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
       status = 'on-track';
       icon = CheckCircle;
       bgGradient = 'from-[#D4EFDF] to-[#E8F8F5]';
-      borderColour = '#00B894';
-      iconBg = 'bg-[#00B894]';
+      borderColour = '#007D62';
+      iconBg = 'bg-[#007D62]';
       headline = `${firstName} is on track!`;
 
       const streakText = currentStreak >= 3 ? ` Their ${currentStreak}-day streak shows fantastic commitment.` : '';

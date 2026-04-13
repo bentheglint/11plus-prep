@@ -1,77 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
-  <!-- Background -->
-  <rect width="400" height="300" fill="white"/>
 
-  <!-- Title -->
-  <text x="200" y="25" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Temperature in Edinburgh</text>
-
-  <!-- Thermometer outer tube -->
-  <rect x="175" y="38" width="30" height="220" rx="15" ry="15" fill="#E8E8E8" stroke="#999" stroke-width="1.5"/>
+  <!-- Thermometer tube -->
+  <rect x="175" y="38" width="30" height="220" rx="15" ry="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5"/>
 
   <!-- Thermometer bulb -->
-  <circle cx="190" cy="268" r="22" fill="#E8E8E8" stroke="#999" stroke-width="1.5"/>
+  <circle cx="190" cy="268" r="22" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5"/>
 
   <!-- Mercury in bulb -->
-  <circle cx="190" cy="268" r="18" fill="#CC3333"/>
+  <circle cx="190" cy="268" r="17" fill="#f87171"/>
 
-  <!-- Mercury column (from bulb up to -3 level) -->
-  <!-- Scale: -10 at bottom (y=245), 10 at top (y=45). Each degree = 10px -->
-  <!-- -3 degrees = y=245 - 7*10 = y=175 (since -3 is 7 above -10) -->
-  <rect x="182" y="175" width="16" height="83" fill="#CC3333"/>
+  <!-- Mercury column (up to -3 level) -->
+  <rect x="183" y="175" width="14" height="82" fill="#f87171" rx="2"/>
 
-  <!-- Scale markings and labels (left side) -->
-  <!-- 10 degrees -->
-  <line x1="155" y1="45" x2="175" y2="45" stroke="#666" stroke-width="1"/>
-  <text x="145" y="49" text-anchor="end" font-family="Arial" font-size="12" fill="#333">10</text>
+  <!-- Scale markings -->
+  <!-- Major ticks -->
+  <line x1="155" y1="45" x2="175" y2="45" stroke="#3b82f6" stroke-width="2"/>
+  <text x="143" y="50" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">10</text>
 
-  <!-- 8 degrees -->
-  <line x1="160" y1="65" x2="175" y2="65" stroke="#999" stroke-width="0.5"/>
+  <line x1="155" y1="95" x2="175" y2="95" stroke="#3b82f6" stroke-width="2"/>
+  <text x="143" y="100" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">5</text>
 
-  <!-- 6 degrees -->
-  <line x1="160" y1="85" x2="175" y2="85" stroke="#999" stroke-width="0.5"/>
+  <line x1="150" y1="145" x2="175" y2="145" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="143" y="150" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">0</text>
 
-  <!-- 5 degrees -->
-  <line x1="155" y1="95" x2="175" y2="95" stroke="#666" stroke-width="1"/>
-  <text x="145" y="99" text-anchor="end" font-family="Arial" font-size="12" fill="#333">5</text>
+  <line x1="155" y1="195" x2="175" y2="195" stroke="#3b82f6" stroke-width="2"/>
+  <text x="143" y="200" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">-5</text>
 
-  <!-- 4 degrees -->
-  <line x1="160" y1="105" x2="175" y2="105" stroke="#999" stroke-width="0.5"/>
+  <line x1="155" y1="245" x2="175" y2="245" stroke="#3b82f6" stroke-width="2"/>
+  <text x="143" y="250" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">-10</text>
 
-  <!-- 2 degrees -->
-  <line x1="160" y1="125" x2="175" y2="125" stroke="#999" stroke-width="0.5"/>
+  <!-- Minor ticks -->
+  <line x1="163" y1="55" x2="175" y2="55" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="65" x2="175" y2="65" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="75" x2="175" y2="75" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="85" x2="175" y2="85" stroke="#93c5fd" stroke-width="1.5"/>
 
-  <!-- 0 degrees -->
-  <line x1="155" y1="145" x2="175" y2="145" stroke="#666" stroke-width="1.5"/>
-  <text x="145" y="149" text-anchor="end" font-family="Arial" font-size="12" font-weight="bold" fill="#333">0</text>
+  <line x1="163" y1="105" x2="175" y2="105" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="115" x2="175" y2="115" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="125" x2="175" y2="125" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="135" x2="175" y2="135" stroke="#93c5fd" stroke-width="1.5"/>
 
-  <!-- -2 degrees -->
-  <line x1="160" y1="165" x2="175" y2="165" stroke="#999" stroke-width="0.5"/>
+  <line x1="163" y1="155" x2="175" y2="155" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="165" x2="175" y2="165" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="175" x2="175" y2="175" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="185" x2="175" y2="185" stroke="#93c5fd" stroke-width="1.5"/>
 
-  <!-- -3 degrees (marked temperature) -->
-  <line x1="155" y1="175" x2="175" y2="175" stroke="#666" stroke-width="1"/>
+  <line x1="163" y1="205" x2="175" y2="205" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="215" x2="175" y2="215" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="225" x2="175" y2="225" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="163" y1="235" x2="175" y2="235" stroke="#93c5fd" stroke-width="1.5"/>
 
-  <!-- -4 degrees -->
-  <line x1="160" y1="185" x2="175" y2="185" stroke="#999" stroke-width="0.5"/>
+  <!-- Arrow pointing to -3 -->
+  <line x1="210" y1="175" x2="252" y2="175" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="208,175 216,171 216,179" fill="#6366f1"/>
+  <text x="258" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">-3°C</text>
 
-  <!-- -5 degrees -->
-  <line x1="155" y1="195" x2="175" y2="195" stroke="#666" stroke-width="1"/>
-  <text x="145" y="199" text-anchor="end" font-family="Arial" font-size="12" fill="#333">-5</text>
+  <!-- °C label -->
+  <text x="190" y="28" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">°C</text>
 
-  <!-- -6 degrees -->
-  <line x1="160" y1="205" x2="175" y2="205" stroke="#999" stroke-width="0.5"/>
-
-  <!-- -8 degrees -->
-  <line x1="160" y1="225" x2="175" y2="225" stroke="#999" stroke-width="0.5"/>
-
-  <!-- -10 degrees -->
-  <line x1="155" y1="245" x2="175" y2="245" stroke="#666" stroke-width="1"/>
-  <text x="145" y="249" text-anchor="end" font-family="Arial" font-size="12" fill="#333">-10</text>
-
-  <!-- Arrow and label pointing to -3 -->
-  <line x1="210" y1="175" x2="250" y2="175" stroke="#CC3333" stroke-width="2"/>
-  <polygon points="208,175 216,171 216,179" fill="#CC3333"/>
-  <text x="255" y="179" font-family="Arial" font-size="14" font-weight="bold" fill="#CC3333">-3°C</text>
-
-  <!-- Degree label -->
-  <text x="190" y="35" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">°C</text>
 </svg>

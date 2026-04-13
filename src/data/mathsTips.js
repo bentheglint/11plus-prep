@@ -14,7 +14,7 @@ const mathsTips = [
     keyInsight: "To multiply any number by 5, just multiply by 10 and halve it.",
     explanation: "10 × 5 is easy — it's 50. But what about 24 × 5? Do 24 × 10 = 240, then halve it: 120. Works every single time, even with big numbers!",
     tryThis: "Try 46 × 5 in your head using this trick. (46 × 10 = 460, halve it = 230!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication'],
   },
   {
@@ -26,7 +26,7 @@ const mathsTips = [
     keyInsight: "To multiply by 9, multiply by 10 and subtract the number once.",
     explanation: "So 7 × 9? Do 7 × 10 = 70, then take away 7 = 63. For bigger numbers like 15 × 9: 15 × 10 = 150, minus 15 = 135. Dead easy!",
     tryThis: "Use this to work out 23 × 9 in your head. (230 − 23 = 207!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication'],
   },
   {
@@ -38,7 +38,7 @@ const mathsTips = [
     keyInsight: "To multiply a two-digit number by 11, split the digits and add them in the middle.",
     explanation: "For 36 × 11: split the 3 and 6, add them (3 + 6 = 9), pop it in the middle: 396! If the middle adds to more than 9, carry the 1 to the front digit.",
     tryThis: "Try 45 × 11. Split: 4_5, middle: 4+5=9, answer: 495!",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication'],
   },
   {
@@ -50,7 +50,7 @@ const mathsTips = [
     keyInsight: "Multiplying by 25 is the same as dividing by 4 and multiplying by 100.",
     explanation: "25 is a quarter of 100. So 16 × 25? Just do 16 ÷ 4 = 4, then × 100 = 400. It turns a hard sum into two easy ones!",
     tryThis: "Work out 32 × 25. (32 ÷ 4 = 8, × 100 = 800!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication', 'longdivision'],
   },
   {
@@ -62,7 +62,7 @@ const mathsTips = [
     keyInsight: "Find 10% first (just divide by 10), then build up to any percentage you need.",
     explanation: "Want 35% of 80? Start with 10% = 8. So 30% = 24, and 5% = 4 (half of 10%). Add them: 24 + 4 = 28. You can build ANY percentage this way!",
     tryThis: "Find 15% of 60 by building from 10% (6) + 5% (3) = 9!",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['percentages'],
   },
   {
@@ -74,7 +74,7 @@ const mathsTips = [
     keyInsight: "To find 1%, divide by 100 — then multiply up to get tricky percentages like 3% or 7%.",
     explanation: "1% of 400 is 4. Need 3%? That's 4 × 3 = 12. Need 7%? That's 4 × 7 = 28. Once you've got 1%, you can make anything!",
     tryThis: "Find 4% of 200. (1% = 2, so 4% = 8!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['percentages'],
   },
   {
@@ -86,7 +86,7 @@ const mathsTips = [
     keyInsight: "Knowing key fraction-decimal conversions saves loads of time in the exam.",
     explanation: "Learn these by heart: ½ = 0.5, ¼ = 0.25, ¾ = 0.75, ⅕ = 0.2, ⅛ = 0.125, ⅓ ≈ 0.333. When a question switches between fractions and decimals, you'll fly through it!",
     tryThis: "Write out the decimal for every fraction with a denominator of 2, 4, 5, 8, and 10. Stick it on your wall!",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['fractions', 'decimals'],
   },
   {
@@ -98,7 +98,7 @@ const mathsTips = [
     keyInsight: "A number divides by 3 if its digits add up to a multiple of 3.",
     explanation: "Is 147 divisible by 3? Add the digits: 1 + 4 + 7 = 12. Is 12 a multiple of 3? Yes! So 147 ÷ 3 works perfectly. This also works for 9 — the digits must add to a multiple of 9.",
     tryThis: "Check if 258 divides by 3. (2 + 5 + 8 = 15, and 15 ÷ 3 = 5 — yes it does!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longdivision', 'primenumbersfactors'],
   },
   {
@@ -110,7 +110,7 @@ const mathsTips = [
     keyInsight: "You can tell if a number divides by 2, 4, 5, or 10 just by looking at its last digits.",
     explanation: "Divides by 2? Last digit is even. By 5? Last digit is 0 or 5. By 10? Last digit is 0. By 4? Last two digits divide by 4. No actual dividing needed!",
     tryThis: "Does 3,456 divide by 4? Check the last two digits: 56 ÷ 4 = 14 — yes!",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longdivision', 'primenumbersfactors'],
   },
   {
@@ -122,7 +122,7 @@ const mathsTips = [
     keyInsight: "When adding or subtracting nearly-round numbers, round them first, then adjust.",
     explanation: "For 356 + 99: add 100 to get 456, then subtract 1 = 455. For 500 − 298: subtract 300 to get 200, then add 2 back = 202. Round numbers are so much easier to work with!",
     tryThis: "Try 673 + 198 in your head. (673 + 200 = 873, minus 2 = 871!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['placevalue'],
   },
   {
@@ -134,7 +134,7 @@ const mathsTips = [
     keyInsight: "In multiplication, you can double one number and halve the other — the answer stays the same.",
     explanation: "Stuck on 35 × 4? Halve the 4 and double the 35: 70 × 2 = 140. Or 15 × 16: double 15 to 30, halve 16 to 8: 30 × 8 = 240. Keep going until one side is easy!",
     tryThis: "Try 25 × 12. (Double and halve: 50 × 6 = 300!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication'],
   },
   {
@@ -146,7 +146,7 @@ const mathsTips = [
     keyInsight: "To square a number ending in 5, multiply the tens digit by the next number up, then stick 25 on the end.",
     explanation: "For 35²: the tens digit is 3. Multiply 3 × 4 = 12. Stick 25 on the end: 1225. For 65²: 6 × 7 = 42, stick 25 on = 4225. Magic!",
     tryThis: "Work out 45² using this trick. (4 × 5 = 20, stick on 25 = 2025!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication'],
   },
   {
@@ -158,7 +158,7 @@ const mathsTips = [
     keyInsight: "Before you calculate, round the numbers and estimate — it catches silly mistakes.",
     explanation: "If you're working out 49 × 21, estimate first: 50 × 20 = 1,000. So your answer should be close to 1,000. If you get 129, you know something went wrong!",
     tryThis: "Before your next calculation, write a quick estimate in the margin. Compare it to your answer!",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['placevalue', 'longmultiplication', 'longdivision'],
   },
   {
@@ -170,7 +170,7 @@ const mathsTips = [
     keyInsight: "To halve a big number, split it into parts you can halve easily.",
     explanation: "Half of 78? Split it: half of 70 = 35, half of 8 = 4. So half of 78 = 39. This works for any number — just split it into chunks you're comfy with!",
     tryThis: "Find half of 156. (Half of 100 = 50, half of 56 = 28, total = 78!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longdivision', 'fractions'],
   },
   {
@@ -182,7 +182,7 @@ const mathsTips = [
     keyInsight: "Multiplying by 4 is the same as doubling the number, then doubling again.",
     explanation: "For 17 × 4: double 17 = 34, double again = 68. Much easier than doing 17 × 4 the long way! And × 8? Just double three times!",
     tryThis: "Try 23 × 4 by doubling twice. (23 → 46 → 92!)",
-    colour: '#0984E3',
+    colour: '#0770C2',
     topicKeys: ['longmultiplication'],
   },
 

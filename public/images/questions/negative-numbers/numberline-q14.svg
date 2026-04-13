@@ -1,97 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
-  <!-- Background -->
-  <rect width="400" height="300" fill="white"/>
-
-  <!-- Title -->
-  <text x="200" y="30" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">What number is halfway?</text>
 
   <!-- Number line: from -8 to 6 -->
   <!-- x positions: -8 at x=30, 6 at x=370. Each unit = (370-30)/14 = 24.29px -->
-  <line x1="25" y1="170" x2="380" y2="170" stroke="#333" stroke-width="2"/>
+  <line x1="25" y1="170" x2="380" y2="170" stroke="#3b82f6" stroke-width="2"/>
 
   <!-- Arrowheads -->
-  <polygon points="22,170 30,166 30,174" fill="#333"/>
-  <polygon points="383,170 375,166 375,174" fill="#333"/>
+  <polygon points="22,170 30,166 30,174" fill="#3b82f6"/>
+  <polygon points="383,170 375,166 375,174" fill="#3b82f6"/>
 
   <!-- Tick marks and labels -->
   <!-- -8 at x=30 -->
-  <line x1="30" y1="165" x2="30" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="30" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">-8</text>
+  <line x1="30" y1="165" x2="30" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="30" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">-8</text>
 
   <!-- -7 at x=54.3 -->
-  <line x1="54.3" y1="167" x2="54.3" y2="173" stroke="#999" stroke-width="0.8"/>
+  <line x1="54.3" y1="167" x2="54.3" y2="173" stroke="#93c5fd" stroke-width="1.5"/>
 
   <!-- -6 at x=78.6 -->
-  <line x1="78.6" y1="165" x2="78.6" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="78.6" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">-6</text>
+  <line x1="78.6" y1="165" x2="78.6" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="78.6" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">-6</text>
 
   <!-- -5 at x=102.9 -->
-  <line x1="102.9" y1="167" x2="102.9" y2="173" stroke="#999" stroke-width="0.8"/>
+  <line x1="102.9" y1="167" x2="102.9" y2="173" stroke="#93c5fd" stroke-width="1.5"/>
 
   <!-- -4 at x=127.1 -->
-  <line x1="127.1" y1="165" x2="127.1" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="127.1" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">-4</text>
+  <line x1="127.1" y1="165" x2="127.1" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="127.1" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">-4</text>
 
   <!-- -3 at x=151.4 -->
-  <line x1="151.4" y1="167" x2="151.4" y2="173" stroke="#999" stroke-width="0.8"/>
+  <line x1="151.4" y1="167" x2="151.4" y2="173" stroke="#93c5fd" stroke-width="1.5"/>
 
   <!-- -2 at x=175.7 -->
-  <line x1="175.7" y1="165" x2="175.7" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="175.7" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">-2</text>
+  <line x1="175.7" y1="165" x2="175.7" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="175.7" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">-2</text>
 
   <!-- -1 at x=200 -->
-  <line x1="200" y1="165" x2="200" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="200" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">-1</text>
+  <line x1="200" y1="165" x2="200" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="200" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">-1</text>
 
   <!-- 0 at x=224.3 -->
-  <line x1="224.3" y1="163" x2="224.3" y2="177" stroke="#333" stroke-width="2"/>
-  <text x="224.3" y="192" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">0</text>
+  <line x1="224.3" y1="163" x2="224.3" y2="177" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="224.3" y="192" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#6366f1">0</text>
 
   <!-- 1 at x=248.6 -->
-  <line x1="248.6" y1="167" x2="248.6" y2="173" stroke="#999" stroke-width="0.8"/>
+  <line x1="248.6" y1="167" x2="248.6" y2="173" stroke="#93c5fd" stroke-width="1.5"/>
 
   <!-- 2 at x=272.9 -->
-  <line x1="272.9" y1="165" x2="272.9" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="272.9" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">2</text>
+  <line x1="272.9" y1="165" x2="272.9" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="272.9" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">2</text>
 
   <!-- 3 at x=297.1 -->
-  <line x1="297.1" y1="167" x2="297.1" y2="173" stroke="#999" stroke-width="0.8"/>
+  <line x1="297.1" y1="167" x2="297.1" y2="173" stroke="#93c5fd" stroke-width="1.5"/>
 
   <!-- 4 at x=321.4 -->
-  <line x1="321.4" y1="165" x2="321.4" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="321.4" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">4</text>
+  <line x1="321.4" y1="165" x2="321.4" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="321.4" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">4</text>
 
   <!-- 5 at x=345.7 -->
-  <line x1="345.7" y1="167" x2="345.7" y2="173" stroke="#999" stroke-width="0.8"/>
+  <line x1="345.7" y1="167" x2="345.7" y2="173" stroke="#93c5fd" stroke-width="1.5"/>
 
   <!-- 6 at x=370 -->
-  <line x1="370" y1="165" x2="370" y2="175" stroke="#333" stroke-width="1.5"/>
-  <text x="370" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">6</text>
+  <line x1="370" y1="165" x2="370" y2="175" stroke="#3b82f6" stroke-width="2"/>
+  <text x="370" y="190" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#6366f1">6</text>
 
   <!-- Mark at -6 -->
-  <circle cx="78.6" cy="170" r="8" fill="#2E86C1" stroke="#1A5276" stroke-width="1.5"/>
-  <text x="78.6" y="130" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2E86C1">-6</text>
-  <line x1="78.6" y1="135" x2="78.6" y2="161" stroke="#2E86C1" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="78.6" cy="170" r="8" fill="#6366f1" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="78.6" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#6366f1">-6</text>
+  <line x1="78.6" y1="135" x2="78.6" y2="161" stroke="#6366f1" stroke-width="1" stroke-dasharray="2,2"/>
 
   <!-- Mark at 4 -->
-  <circle cx="321.4" cy="170" r="8" fill="#2E86C1" stroke="#1A5276" stroke-width="1.5"/>
-  <text x="321.4" y="130" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2E86C1">4</text>
-  <line x1="321.4" y1="135" x2="321.4" y2="161" stroke="#2E86C1" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="321.4" cy="170" r="8" fill="#6366f1" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="321.4" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#6366f1">4</text>
+  <line x1="321.4" y1="135" x2="321.4" y2="161" stroke="#6366f1" stroke-width="1" stroke-dasharray="2,2"/>
 
   <!-- Midpoint question mark at -1 (x=200) -->
-  <circle cx="200" cy="170" r="8" fill="#E67E22" stroke="#D35400" stroke-width="1.5"/>
-  <text x="200" y="105" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#E67E22">?</text>
-  <line x1="200" y1="112" x2="200" y2="161" stroke="#E67E22" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <circle cx="200" cy="170" r="8" fill="#f97316" stroke="#D35400" stroke-width="1.5"/>
+  <text x="200" y="105" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#f97316">?</text>
+  <line x1="200" y1="112" x2="200" y2="161" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3,3"/>
 
   <!-- Bracket showing left half -->
   <line x1="78.6" y1="210" x2="78.6" y2="218" stroke="#888" stroke-width="1.5"/>
   <line x1="78.6" y1="218" x2="200" y2="218" stroke="#888" stroke-width="1.5"/>
   <line x1="200" y1="210" x2="200" y2="218" stroke="#888" stroke-width="1.5"/>
-  <text x="139" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#888">same distance</text>
+  <text x="139" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#888">same distance</text>
 
   <!-- Bracket showing right half -->
   <line x1="200" y1="210" x2="200" y2="218" stroke="#888" stroke-width="1.5"/>
   <line x1="200" y1="218" x2="321.4" y2="218" stroke="#888" stroke-width="1.5"/>
   <line x1="321.4" y1="210" x2="321.4" y2="218" stroke="#888" stroke-width="1.5"/>
-  <text x="261" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#888">same distance</text>
+  <text x="261" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#888">same distance</text>
 </svg>

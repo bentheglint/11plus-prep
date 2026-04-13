@@ -6,8 +6,8 @@ import TopicStarRating from '../components/TopicStarRating';
 import RecommendationCard, { topicNames } from '../components/RecommendationCard';
 
 const subjectConfig = {
-  maths: { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0984E3', gradient: 'from-[#0984E3] to-[#0652DD]' },
-  english: { key: 'english', name: 'English', icon: BookOpen, colour: '#00B894', gradient: 'from-[#00B894] to-[#00876A]' },
+  maths: { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0770C2', gradient: 'from-[#0770C2] to-[#0652DD]' },
+  english: { key: 'english', name: 'English', icon: BookOpen, colour: '#007D62', gradient: 'from-[#007D62] to-[#00876A]' },
   verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#6C5CE7', gradient: 'from-[#6C5CE7] to-[#5A4BD1]' },
 };
 
@@ -94,7 +94,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
             {topicMasteries.map(topic => {
               const bgIntensity = topic.score > 0 ? Math.min(0.15, topic.score / 600) : 0;
               const colour = subjectConfig[selectedSubject]?.colour || '#6C5CE7';
-              const trendColour = topic.trend?.direction === 'up' ? '#00B894' :
+              const trendColour = topic.trend?.direction === 'up' ? '#007D62' :
                                   topic.trend?.direction === 'down' ? '#FF6B6B' : null;
               const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
                                topic.trend?.direction === 'down' ? TrendingDown : null;
@@ -104,7 +104,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                   key={topic.key}
                   onClick={() => onDrillDown ? onDrillDown(selectedSubject, topic.key) : onStartTopic(selectedSubject, topic.key)}
                   className="p-3 rounded-lg border border-gray-100 text-left hover:shadow-md transition-all relative overflow-hidden group"
-                  style={{ background: topic.score > 0 ? `rgba(${colour === '#0984E3' ? '9,132,227' : colour === '#00B894' ? '0,184,148' : '108,92,231'},${bgIntensity})` : undefined }}
+                  style={{ background: topic.score > 0 ? `rgba(${colour === '#0770C2' ? '9,132,227' : colour === '#007D62' ? '0,184,148' : '108,92,231'},${bgIntensity})` : undefined }}
                 >
                   <div className="flex items-start justify-between mb-1">
                     <p className="text-sm font-bold text-slate-800 leading-tight">{topic.name}</p>
@@ -143,7 +143,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
             <h3 className="font-heading font-bold text-slate-800 mb-3">Recent Activity</h3>
             <div className="space-y-2">
               {recentQuizzes.map(quiz => {
-                const dotColour = quiz.percentage >= 80 ? '#00B894' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
+                const dotColour = quiz.percentage >= 80 ? '#007D62' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
                 const date = new Date(quiz.date);
                 const isToday = date.toISOString().split('T')[0] === new Date().toISOString().split('T')[0];
                 const dateLabel = isToday ? 'Today' : date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });

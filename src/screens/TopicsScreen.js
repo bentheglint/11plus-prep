@@ -3,7 +3,7 @@ import { ChevronRight, Star, Crown, Rocket, Target, Wrench, ArrowLeft, Home } fr
 
 function getTopicBadge(pct) {
   if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F39C12]', bg: 'bg-[#FDCB6E]/20' };
-  if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0984E3]', bg: 'bg-[#0984E3]/10' };
+  if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0770C2]', bg: 'bg-[#0770C2]/10' };
   if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#6C5CE7]', bg: 'bg-[#6C5CE7]/10' };
   if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F39C12]', bg: 'bg-[#F39C12]/10' };
   return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
@@ -17,8 +17,8 @@ function TopicCard({ title, performance, onClick }) {
     if (performance.total >= 5) {
       const pct = Math.round((performance.correct / performance.total) * 100);
       perfPct = pct;
-      perfBarColor = pct >= 70 ? '#00B894' : pct >= 40 ? '#FDCB6E' : '#FF6B6B';
-      const pctColor = pct >= 70 ? 'text-[#00B894]' : pct >= 40 ? 'text-[#F39C12]' : 'text-[#FF6B6B]';
+      perfBarColor = pct >= 70 ? '#007D62' : pct >= 40 ? '#FDCB6E' : '#FF6B6B';
+      const pctColor = pct >= 70 ? 'text-[#007D62]' : pct >= 40 ? 'text-[#F39C12]' : 'text-[#FF6B6B]';
       const badge = getTopicBadge(pct);
       const BadgeIcon = badge.icon;
       perfDisplay = (

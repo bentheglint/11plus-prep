@@ -5,7 +5,7 @@ function TopicStarRating({ stars, label, trend, daysSince, compact = false }) {
   const trendIcon = trend?.direction === 'up' ? TrendingUp :
                     trend?.direction === 'down' ? TrendingDown : Minus;
   const TrendIcon = trendIcon;
-  const trendColour = trend?.direction === 'up' ? '#00B894' :
+  const trendColour = trend?.direction === 'up' ? '#007D62' :
                       trend?.direction === 'down' ? '#FF6B6B' : '#B2BEC3';
   const needsReview = daysSince > 14 && stars > 0;
 

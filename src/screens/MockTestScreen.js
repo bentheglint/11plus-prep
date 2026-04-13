@@ -408,7 +408,7 @@ function MockTestScreen({
             ) : (
               <button
                 onClick={() => setShowConfirmSubmit(true)}
-                className="flex items-center gap-2 px-6 py-2 bg-[#00B894] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
+                className="flex items-center gap-2 px-6 py-2 bg-[#007D62] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
               >
                 Finish Test
               </button>
@@ -442,7 +442,7 @@ function MockTestScreen({
                   </button>
                   <button
                     onClick={() => { setShowConfirmSubmit(false); onSubmit(); }}
-                    className="px-6 py-3 bg-[#00B894] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
+                    className="px-6 py-3 bg-[#007D62] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
                   >
                     Submit Test
                   </button>

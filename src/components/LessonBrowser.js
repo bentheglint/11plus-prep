@@ -105,7 +105,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
                       className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors border-b border-gray-100 last:border-b-0 text-left"
                     >
                       {isSeen
-                        ? <CheckCircle className="w-4 h-4 text-[#00B894] flex-shrink-0" />
+                        ? <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
                         : <Circle className="w-4 h-4 text-gray-300 flex-shrink-0" />
                       }
                       <span className={`text-sm ${isSeen ? 'text-slate-500' : 'text-slate-800 font-medium'}`}>

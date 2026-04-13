@@ -3,7 +3,7 @@ import { Zap, Calculator, BookOpen, Brain, ChevronRight } from 'lucide-react';
 import { motion } from './Motion';
 
 const subjectIcons = { maths: Calculator, english: BookOpen, verbalreasoning: Brain };
-const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
 
 // Topic key to display name mapping
@@ -50,7 +50,7 @@ function RecommendationCard({ recommendation, onStart }) {
           <p className="text-xs font-bold uppercase tracking-wider mb-0.5" style={{ color: colour }}>
             What to practise next
           </p>
-          <h3 className="text-lg font-heading font-bold text-slate-800 mb-1">{displayName}</h3>
+          <h2 className="text-lg font-heading font-bold text-slate-800 mb-1">{displayName}</h2>
           <p className="text-sm text-slate-500 mb-3">{reason}</p>
           <motion.button
             onClick={() => onStart(subject, topicKey)}

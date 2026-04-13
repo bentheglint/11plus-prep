@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw, BookOpen } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
-const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
 function MistakesScreen({ questionResults, questionData, englishData, vrData, onPractiseTopic, onRecordResult, onBack }) {
@@ -220,11 +220,11 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
         <div className="app-bg p-4 min-h-screen">
           <div className="max-w-2xl mx-auto">
             <div className="card-elevated p-8 text-center">
-              <CheckCircle2 className="w-12 h-12 text-[#00B894] mx-auto mb-4" />
+              <CheckCircle2 className="w-12 h-12 text-[#007D62] mx-auto mb-4" />
               <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">Practice Complete!</h2>
               <div className="flex justify-center gap-6 mb-4">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-[#00B894]">{correctCount}</p>
+                  <p className="text-3xl font-bold text-[#007D62]">{correctCount}</p>
                   <p className="text-sm text-slate-500">Correct</p>
                 </div>
                 <div className="text-center">
@@ -351,7 +351,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                   const isCorrectOption = i === current.correctAnswer;
                   let optionStyle = 'border-gray-200 hover:border-[#6C5CE7] hover:bg-[#6C5CE7]/5';
                   if (showFeedback) {
-                    if (isCorrectOption) optionStyle = 'border-[#00B894] bg-[#00B894]/10';
+                    if (isCorrectOption) optionStyle = 'border-[#007D62] bg-[#007D62]/10';
                     else if (isSelected) optionStyle = 'border-[#FF6B6B] bg-[#FF6B6B]/10';
                     else optionStyle = 'border-gray-200 opacity-50';
                   } else if (isSelected) {
@@ -473,9 +473,9 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             <div className="card-elevated p-5 mb-4">
               {wasCorrect ? (
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#00B894] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-6 h-6 text-[#007D62] flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-[#00B894] mb-1">Correct! Removed from your mistakes.</p>
+                    <p className="font-bold text-[#007D62] mb-1">Correct! Removed from your mistakes.</p>
                     {current.explanation && (
                       <p className="text-sm text-slate-500">{current.explanation}</p>
                     )}

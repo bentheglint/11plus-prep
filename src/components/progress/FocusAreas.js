@@ -2,7 +2,7 @@ import React from 'react';
 import { AlertCircle, Star, ChevronRight } from 'lucide-react';
 import { topicNames } from '../RecommendationCard';
 
-const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
 function FocusAreas({ mastery, onTopicClick }) {

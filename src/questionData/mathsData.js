@@ -20823,7 +20823,7 @@ anglesshapes: {
     {
       id: 2,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 100, label: "100°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#00B894"}, {value: 130, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 100, label: "100°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#007D62"}, {value: 130, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Emma draws three angles around a point. Two angles are 100° and 130°. What is the third angle?",
       options: ["100°", "110°", "120°", "130°", "140°"],
       correct: 3,
@@ -20885,7 +20885,7 @@ anglesshapes: {
     {
       id: 9,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#007D62"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 85°, 90°, and 105°. What is the fourth angle?",
       options: ["80°", "75°", "70°", "85°", "90°"],
       correct: 0,
@@ -21056,7 +21056,7 @@ anglesshapes: {
     {
       id: 28,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#00B894"}, {value: 115, label: "p°", color: "#dc2626"}] } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#007D62"}, {value: 115, label: "p°", color: "#dc2626"}] } },
       question: "Three angles meet around a point: 115°, 130°, and p°. What is p?",
       options: ["105°", "110°", "125°", "120°", "115°"],
       correct: 4,
@@ -21101,7 +21101,7 @@ anglesshapes: {
     {
       id: 33,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 145, label: "145°", color: "#00B894"}, {value: 75, label: "75°", color: "#6C5CE7"}, {value: 50, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 145, label: "145°", color: "#007D62"}, {value: 75, label: "75°", color: "#6C5CE7"}, {value: 50, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Lucy calculates that three angles around a point are 90°, 145°, and 75°. What is the fourth angle?",
       options: ["40°", "45°", "60°", "55°", "50°"],
       correct: 4,
@@ -21191,7 +21191,7 @@ anglesshapes: {
     {
       id: 43,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 95, label: "95°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 92, label: "b°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 95, label: "95°", color: "#007D62"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 92, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 85°, 95°, 88°, and b°. What is b?",
       options: ["82°", "87°", "102°", "97°", "92°"],
       correct: 4,
@@ -21245,7 +21245,7 @@ anglesshapes: {
     {
       id: 49,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "108°", color: "#6C5CE7"}, {value: 127, label: "127°", color: "#00B894"}, {value: 84, label: "84°", color: "#6C5CE7"}, {value: 41, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "108°", color: "#6C5CE7"}, {value: 127, label: "127°", color: "#007D62"}, {value: 84, label: "84°", color: "#6C5CE7"}, {value: 41, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 108°, 127°, and 84°. What is the fourth angle?",
       options: ["41°", "36°", "31°", "46°", "51°"],
       correct: 0,
@@ -21362,7 +21362,7 @@ anglesshapes: {
     {
       id: 62,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 85, label: "q°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#007D62"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 85, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 72°, 98°, 105°, and q°. What is q?",
       options: ["75°", "80°", "90°", "85°", "95°"],
       correct: 3,
@@ -21470,7 +21470,7 @@ anglesshapes: {
     {
       id: 74,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 116, label: "116°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 82, label: "82°", color: "#6C5CE7"}, {value: 64, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 116, label: "116°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#007D62"}, {value: 82, label: "82°", color: "#6C5CE7"}, {value: 64, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 116°, 98°, and 82°. What is the fourth angle?",
       options: ["64°", "59°", "54°", "69°", "74°"],
       correct: 0,
@@ -21533,7 +21533,7 @@ anglesshapes: {
     {
       id: 81,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#6C5CE7"}, {value: 103, label: "103°", color: "#00B894"}, {value: 91, label: "91°", color: "#6C5CE7"}, {value: 77, label: "b°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#6C5CE7"}, {value: 103, label: "103°", color: "#007D62"}, {value: 91, label: "91°", color: "#6C5CE7"}, {value: 77, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 89°, 103°, 91°, and b°. What is b?",
       options: ["67°", "72°", "77°", "82°", "87°"],
       correct: 2,
@@ -21632,7 +21632,7 @@ anglesshapes: {
     {
       id: 92,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 124, label: "124°", color: "#6C5CE7"}, {value: 87, label: "87°", color: "#00B894"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 53, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 124, label: "124°", color: "#6C5CE7"}, {value: 87, label: "87°", color: "#007D62"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 53, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 124°, 87°, and 96°. What is the fourth angle?",
       options: ["43°", "48°", "58°", "53°", "63°"],
       correct: 3,
@@ -21713,7 +21713,7 @@ anglesshapes: {
     {
       id: 101,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#00B894"}, {value: 108, label: "108°", color: "#6C5CE7"}, {value: 76, label: "q°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#007D62"}, {value: 108, label: "108°", color: "#6C5CE7"}, {value: 76, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 94°, 82°, 108°, and q°. What is q?",
       options: ["66°", "71°", "76°", "81°", "86°"],
       correct: 2,
@@ -21830,7 +21830,7 @@ anglesshapes: {
     {
       id: 114,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 132, label: "132°", color: "#6C5CE7"}, {value: 78, label: "78°", color: "#00B894"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 45, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 132, label: "132°", color: "#6C5CE7"}, {value: 78, label: "78°", color: "#007D62"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 45, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 132°, 78°, and 105°. What is the fourth angle?",
       options: ["45°", "40°", "35°", "50°", "55°"],
       correct: 0,
@@ -21893,7 +21893,7 @@ anglesshapes: {
     {
       id: 121,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#6C5CE7"}, {value: 109, label: "109°", color: "#00B894"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 67, label: "b°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#6C5CE7"}, {value: 109, label: "109°", color: "#007D62"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 67, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 96°, 109°, 88°, and b°. What is b?",
       options: ["57°", "62°", "67°", "72°", "77°"],
       correct: 2,
@@ -21919,7 +21919,7 @@ anglesshapes: {
     {
       id: 123,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "110°", color: "#6C5CE7"}, {value: 70, label: "70°", color: "#00B894"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "110°", color: "#6C5CE7"}, {value: 70, label: "70°", color: "#007D62"}], size: 200 } },
       question: "What do angles on a straight line add up to?",
       options: ["90°", "120°", "360°", "270°", "180°"],
       correct: 4,
@@ -21994,7 +21994,7 @@ anglesshapes: {
     {
       id: 131,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#6C5CE7"}, {value: 68, label: "68°", color: "#00B894"}, {value: 58, label: "x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#6C5CE7"}, {value: 68, label: "68°", color: "#007D62"}, {value: 58, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles on a straight line are 54°, 68°, and x°. What is x?",
       options: ["48°", "52°", "58°", "56°", "62°"],
       correct: 2,
@@ -22003,7 +22003,7 @@ anglesshapes: {
     {
       id: 132,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 37, label: "37°", color: "#6C5CE7"}, {value: 85, label: "85°", color: "#00B894"}, {value: 58, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 37, label: "37°", color: "#6C5CE7"}, {value: 85, label: "85°", color: "#007D62"}, {value: 58, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles sit on a straight line. Two of them are 37° and 85°. What is the third angle?",
       options: ["48°", "52°", "56°", "58°", "62°"],
       correct: 3,
@@ -22030,7 +22030,7 @@ anglesshapes: {
     {
       id: 135,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#6C5CE7"}, {value: 65, label: "y°", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#00B894"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#6C5CE7"}, {value: 65, label: "y°", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#007D62"}], size: 200 } },
       question: "Sophie marks three angles on a straight line: 42°, y°, and 73°. What is y?",
       options: ["55°", "65°", "60°", "70°", "75°"],
       correct: 1,
@@ -22069,7 +22069,7 @@ anglesshapes: {
     {
       id: 139,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 28, label: "28°", color: "#6C5CE7"}, {value: 47, label: "47°", color: "#00B894"}, {value: 63, label: "63°", color: "#E17055"}, {value: 42, label: "w°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 28, label: "28°", color: "#6C5CE7"}, {value: 47, label: "47°", color: "#007D62"}, {value: 63, label: "63°", color: "#E17055"}, {value: 42, label: "w°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles on a straight line are 28°, 47°, 63°, and w°. What is w?",
       options: ["42°", "37°", "32°", "47°", "52°"],
       correct: 0,
@@ -22096,7 +22096,7 @@ anglesshapes: {
     {
       id: 142,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 15, label: "15°", color: "#6C5CE7"}, {value: 35, label: "35°", color: "#00B894"}, {value: 75, label: "x°", color: "#FDCB6E"}, {value: 55, label: "55°", color: "#E17055"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 15, label: "15°", color: "#6C5CE7"}, {value: 35, label: "35°", color: "#007D62"}, {value: 75, label: "x°", color: "#FDCB6E"}, {value: 55, label: "55°", color: "#E17055"}], size: 200 } },
       question: "Four angles on a straight line are 15°, 35°, x°, and 55°. What is x?",
       options: ["65°", "70°", "80°", "75°", "85°"],
       correct: 3,
@@ -22380,7 +22380,7 @@ anglesshapes: {
     {
       id: 173,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 78, label: "78°", color: "#6C5CE7"}, {value: 112, label: "112°", color: "#00B894"}, {value: 95, label: "95°", color: "#6C5CE7"}, {value: 75, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 78, label: "78°", color: "#6C5CE7"}, {value: 112, label: "112°", color: "#007D62"}, {value: 95, label: "95°", color: "#6C5CE7"}, {value: 75, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 78°, 112°, and 95°. What is the fourth angle?",
       options: ["65°", "70°", "85°", "80°", "75°"],
       correct: 4,
@@ -22389,7 +22389,7 @@ anglesshapes: {
     {
       id: 174,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 148, label: "148°", color: "#6C5CE7"}, {value: 97, label: "97°", color: "#00B894"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 148, label: "148°", color: "#6C5CE7"}, {value: 97, label: "97°", color: "#007D62"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles meet at a point. Two of them are 148° and 97°. What is the third angle?",
       options: ["115°", "110°", "105°", "120°", "125°"],
       correct: 0,
@@ -22398,7 +22398,7 @@ anglesshapes: {
     {
       id: 175,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#00B894"}, {value: 74, label: "74°", color: "#6C5CE7"}, {value: 91, label: "91°", color: "#00B894"}, {value: 48, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#007D62"}, {value: 74, label: "74°", color: "#6C5CE7"}, {value: 91, label: "91°", color: "#007D62"}, {value: 48, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Five angles meet at a point. Four of them are 65°, 82°, 74°, and 91°. What is the fifth angle?",
       options: ["38°", "48°", "43°", "53°", "58°"],
       correct: 1,
@@ -22407,7 +22407,7 @@ anglesshapes: {
     {
       id: 176,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 118, label: "118°", color: "#6C5CE7"}, {value: 76, label: "76°", color: "#00B894"}, {value: 83, label: "83°", color: "#6C5CE7"}, {value: 83, label: "x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 118, label: "118°", color: "#6C5CE7"}, {value: 76, label: "76°", color: "#007D62"}, {value: 83, label: "83°", color: "#6C5CE7"}, {value: 83, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 118°, 76°, 83°, and x°. What is x?",
       options: ["73°", "78°", "83°", "88°", "93°"],
       correct: 2,
@@ -22416,7 +22416,7 @@ anglesshapes: {
     {
       id: 177,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 156, label: "156°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#00B894"}, {value: 106, label: "y°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 156, label: "156°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#007D62"}, {value: 106, label: "y°", color: "#FDCB6E"}], size: 200 } },
       question: "Three roads meet at a roundabout. The angles between them are 156°, 98°, and y°. What is y?",
       options: ["96°", "101°", "111°", "106°", "116°"],
       correct: 3,
@@ -22425,7 +22425,7 @@ anglesshapes: {
     {
       id: 178,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 64, label: "64°", color: "#6C5CE7"}, {value: 128, label: "128°", color: "#00B894"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 72, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 64, label: "64°", color: "#6C5CE7"}, {value: 128, label: "128°", color: "#007D62"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 72, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 64°, 128°, and 96°. What is the fourth angle?",
       options: ["62°", "67°", "82°", "77°", "72°"],
       correct: 4,
@@ -22452,7 +22452,7 @@ anglesshapes: {
     {
       id: 181,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#00B894"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#007D62"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles around a point are equal, and two other angles are 70° and 130°. What is each equal angle?",
       options: ["70°", "75°", "80°", "85°", "90°"],
       correct: 2,
@@ -22470,7 +22470,7 @@ anglesshapes: {
     {
       id: 183,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#00B894"}, {value: 90, label: "90°", color: "#6C5CE7"}, {value: 50, label: "50°", color: "#00B894"}, {value: 40, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#007D62"}, {value: 90, label: "90°", color: "#6C5CE7"}, {value: 50, label: "50°", color: "#007D62"}, {value: 40, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four equal angles meet at a point, but one of them is then split into two parts: 50° and the rest. What is 'the rest'?",
       options: ["30°", "35°", "50°", "45°", "40°"],
       correct: 4,
@@ -22902,7 +22902,7 @@ anglesshapes: {
     {
       id: 225,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "x°", color: "#FDCB6E"}, {value: 100, label: "100°", color: "#6C5CE7"}, {value: 150, label: "150°", color: "#00B894"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "x°", color: "#FDCB6E"}, {value: 100, label: "100°", color: "#6C5CE7"}, {value: 150, label: "150°", color: "#007D62"}], size: 200 } },
       question: "Angles around a point are x°, 100° and 150°. What is x?",
       options: ["100°", "110°", "105°", "115°", "120°"],
       correct: 1,

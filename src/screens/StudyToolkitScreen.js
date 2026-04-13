@@ -10,7 +10,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
   const [activeTab, setActiveTab] = useState('tips');
 
   const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-  const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
+  const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
   const colour = subjectColours[subject] || '#6C5CE7';
   const subjectName = subjectNames[subject] || 'General';
 

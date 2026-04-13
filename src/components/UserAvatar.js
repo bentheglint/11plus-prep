@@ -3,8 +3,8 @@ import { ChevronDown, X } from 'lucide-react';
 
 const USERS = ['Ben', 'Lauren', 'Daisy', 'Evie', 'Jacqui'];
 const NAME_COLORS = {
-  Ben: '#0984E3',
-  Lauren: '#00B894',
+  Ben: '#0770C2',
+  Lauren: '#007D62',
   Daisy: '#E84393',
   Evie: '#FDCB6E',
   Jacqui: '#6C5CE7',

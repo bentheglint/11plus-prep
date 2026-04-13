@@ -70,7 +70,7 @@ function LandingPage({ onSignIn, onSignUp }) {
         {/* Trust signals */}
         <div className="flex items-center gap-6 mt-10 text-sm text-slate-500">
           <div className="flex items-center gap-1.5">
-            <Shield className="w-4 h-4 text-[#00B894]" />
+            <Shield className="w-4 h-4 text-[#007D62]" />
             <span>Your child's data is safe</span>
           </div>
           <a href="/privacy.html" className="underline hover:text-[#6C5CE7]">

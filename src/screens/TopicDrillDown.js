@@ -3,7 +3,7 @@ import { ArrowLeft, Star, TrendingUp, TrendingDown, Minus, Clock, Target, BarCha
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-const subjectColours = { maths: '#0984E3', english: '#00B894', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
 
 function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractise, onBack, onHome }) {
   const m = mastery.getTopicMastery(topicKey);
@@ -48,7 +48,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
     return { difficulty: d, total: atDiff.length, correct, pct: Math.round((correct / atDiff.length) * 100) };
   });
   const diffLabels = { 1: 'Easy', 2: 'Medium', 3: 'Hard' };
-  const diffColours = { 1: '#00B894', 2: '#FDCB6E', 3: '#FF6B6B' };
+  const diffColours = { 1: '#007D62', 2: '#FDCB6E', 3: '#FF6B6B' };
 
   // Speed stats
   const withTime = topicResults.filter(r => r.timeSpentMs > 0).slice(0, 30);
@@ -59,7 +59,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
   // Trend display
   const TrendIcon = m.trend?.direction === 'up' ? TrendingUp :
                     m.trend?.direction === 'down' ? TrendingDown : Minus;
-  const trendColour = m.trend?.direction === 'up' ? '#00B894' :
+  const trendColour = m.trend?.direction === 'up' ? '#007D62' :
                       m.trend?.direction === 'down' ? '#FF6B6B' : '#64748B';
   const trendText = m.trend?.direction === 'up' ? `Improving (+${m.trend.delta}%)` :
                     m.trend?.direction === 'down' ? `Declining (${m.trend.delta}%)` : 'Stable';

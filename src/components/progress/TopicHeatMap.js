@@ -3,8 +3,8 @@ import { Calculator, BookOpen, Brain, Star, TrendingUp, TrendingDown, RotateCcw 
 import { topicNames } from '../RecommendationCard';
 
 const subjects = [
-  { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0984E3', rgb: '9,132,227' },
-  { key: 'english', name: 'English', icon: BookOpen, colour: '#00B894', rgb: '0,184,148' },
+  { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0770C2', rgb: '9,132,227' },
+  { key: 'english', name: 'English', icon: BookOpen, colour: '#007D62', rgb: '0,184,148' },
   { key: 'verbalreasoning', name: 'VR', icon: Brain, colour: '#6C5CE7', rgb: '108,92,231' },
 ];
 
@@ -78,7 +78,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
           const needsReview = topic.daysSince > 14 && topic.stars > 0;
           const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
                            topic.trend?.direction === 'down' ? TrendingDown : null;
-          const trendCol = topic.trend?.direction === 'up' ? '#00B894' :
+          const trendCol = topic.trend?.direction === 'up' ? '#007D62' :
                           topic.trend?.direction === 'down' ? '#FF6B6B' : null;
 
           return (

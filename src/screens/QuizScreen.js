@@ -412,7 +412,7 @@ function QuizScreen({
                       className={`w-full p-4 text-left rounded-xl border-2 transition-colors font-medium text-lg flex items-center gap-3 ${
                         showFeedback
                           ? idx === currentQuestion.correct
-                            ? 'border-[#00B894] bg-[#00B894]/10 text-slate-800'
+                            ? 'border-[#007D62] bg-[#007D62]/10 text-slate-800'
                             : idx === selectedAnswer
                             ? 'border-[#FF6B6B] bg-[#FF6B6B]/10 text-slate-800'
                             : 'border-gray-200 bg-gray-50 text-gray-400'
@@ -424,7 +424,7 @@ function QuizScreen({
                       <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
                         showFeedback
                           ? idx === currentQuestion.correct
-                            ? 'bg-[#00B894] text-white'
+                            ? 'bg-[#007D62] text-white'
                             : idx === selectedAnswer
                             ? 'bg-[#FF6B6B] text-white'
                             : 'bg-gray-200 text-gray-400'
@@ -460,11 +460,11 @@ function QuizScreen({
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                   className={`mt-6 p-4 rounded-xl ${
-                  isCorrect ? 'bg-[#00B894]/10 border-2 border-[#00B894]' : 'bg-[#FF6B6B]/10 border-2 border-[#FF6B6B]'
+                  isCorrect ? 'bg-[#007D62]/10 border-2 border-[#007D62]' : 'bg-[#FF6B6B]/10 border-2 border-[#FF6B6B]'
                 }`}>
                   <div className="flex items-start">
                     {isCorrect ? (
-                      <div className="w-8 h-8 rounded-full bg-[#00B894] flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <div className="w-8 h-8 rounded-full bg-[#007D62] flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
                         <Star className="w-4 h-4 text-white" />
                       </div>
                     ) : (
