@@ -26,9 +26,9 @@ root.render(
           <DiagramViewer />
         ) : (
           <AuthGate>
-            {(childName) => (
+            {(childName, getToken) => (
               <>
-                <App currentUser={childName} />
+                <App currentUser={childName} getToken={getToken} />
                 <DevReviewPanel />
               </>
             )}

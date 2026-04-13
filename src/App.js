@@ -24,7 +24,7 @@ import StudyToolkitScreen from './screens/StudyToolkitScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import useMockTest from './hooks/useMockTest';
-import useUserData from './hooks/useUserData';
+import useD1Data from './hooks/useD1Data';
 import useAchievements from './hooks/useAchievements';
 import AchievementModal from './components/AchievementModal';
 import useMastery from './hooks/useMastery';
@@ -73,7 +73,7 @@ const questionData = {
   }
 };
 
-function App({ currentUser: authUser }) {
+function App({ currentUser: authUser, getToken }) {
   // In auth mode, currentUser comes from Clerk/D1 via AuthGate prop.
   // Fall back to localStorage for dev/testing (when rendered without AuthGate).
   const [currentUser, setCurrentUser] = useState(() => {
@@ -89,7 +89,7 @@ function App({ currentUser: authUser }) {
   }, [authUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Per-user data isolation — all progress data keyed by user name
-  const userData = useUserData(currentUser);
+  const userData = useD1Data(currentUser, getToken);
   const { quizHistory, topicPerformance, seenQuestions, lessonHistory, questionResults, practiceLog } = userData;
 
   // Mastery scoring engine (computed from question results)

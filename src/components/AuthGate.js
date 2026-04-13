@@ -449,7 +449,7 @@ export default function AuthGate({ children }) {
   // ── Render ──
 
   // Dev bypass: skip auth on localhost with ?dev-auth=true (development only)
-  if (DEV_BYPASS) return children(localStorage.getItem('current-user') || 'Dev');
+  if (DEV_BYPASS) return children(localStorage.getItem('current-user') || 'Dev', null);
 
   // Still loading Clerk
   if (!authLoaded) {
@@ -543,7 +543,7 @@ export default function AuthGate({ children }) {
 
   // Ready — render the app with child name
   if (onboardingStep === 'ready') {
-    return children(childName);
+    return children(childName, getToken);
   }
 
   // Fallback loading
