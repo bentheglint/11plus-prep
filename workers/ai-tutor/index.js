@@ -118,6 +118,39 @@ async function handleMarkFixed(request, env) {
   return json({ ok: true });
 }
 
+// ── Shared Testing Coverage (KV-backed, no auth required) ──
+
+const COVERAGE_KEY = 'testing-coverage';
+const EMPTY_COVERAGE = { questions: {}, lessons: {} };
+
+async function getCoverage(env) {
+  const raw = await env.TESTING_FLAGS.get(COVERAGE_KEY);
+  return raw ? JSON.parse(raw) : EMPTY_COVERAGE;
+}
+
+async function handleGetCoverage(env) {
+  return json(await getCoverage(env));
+}
+
+async function handleMarkTested(request, env) {
+  const { type, topicKey, ids } = await request.json();
+  if (!type || !topicKey || !Array.isArray(ids) || ids.length === 0) {
+    return json({ error: 'Missing type, topicKey, or ids' }, 400);
+  }
+  if (type !== 'questions' && type !== 'lessons') {
+    return json({ error: 'type must be "questions" or "lessons"' }, 400);
+  }
+
+  const coverage = await getCoverage(env);
+  const existing = coverage[type][topicKey] || [];
+  // Merge — deduplicate via Set
+  const merged = [...new Set([...existing, ...ids])];
+  coverage[type][topicKey] = merged;
+
+  await env.TESTING_FLAGS.put(COVERAGE_KEY, JSON.stringify(coverage));
+  return json({ ok: true, count: merged.length });
+}
+
 // ── AI Tutor (Anthropic proxy, no auth required) ──
 
 async function handleTutor(request, env) {
@@ -169,6 +202,10 @@ export default {
       if (path === '/flags' && request.method === 'POST') return handlePostFlag(request, env);
       if (path === '/flags/resolve' && request.method === 'POST') return handleResolveFlag(request, env);
       if (path === '/flags/fix' && request.method === 'POST') return handleMarkFixed(request, env);
+
+      // Shared testing coverage
+      if (path === '/testing-coverage' && request.method === 'GET') return handleGetCoverage(env);
+      if (path === '/testing-coverage/mark' && request.method === 'POST') return handleMarkTested(request, env);
 
       // Error reporting — public (no auth required, fire-and-forget from client)
       if (path === '/api/error-report' && request.method === 'POST') {

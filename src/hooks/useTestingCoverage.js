@@ -1,7 +1,9 @@
 import { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 
-// Testing coverage tracking for manual QA sessions (Ben + Jacqui only)
-// Follows the same loadJSON/saveJSON pattern as useUserData.js
+// Testing coverage tracking for manual QA sessions (Ben + Jacqui)
+// Syncs to Worker KV for shared visibility — falls back to localStorage when offline
+
+const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
 function loadJSON(key, fallback) {
   try {
@@ -18,9 +20,56 @@ function saveJSON(key, value) {
 
 const EMPTY_COVERAGE = { questions: {}, lessons: {}, sessions: [] };
 
+// Fire-and-forget POST to Worker — never blocks UI
+function syncToWorker(type, topicKey, ids) {
+  if (!API_URL || !ids.length) return;
+  fetch(`${API_URL}/testing-coverage/mark`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, topicKey, ids }),
+  }).catch(() => {}); // Silently ignore — local is source of truth for this user
+}
+
+// Merge remote combined coverage into local data (adds IDs we haven't seen)
+function mergeRemoteIntoLocal(local, remote) {
+  const merged = { ...local };
+
+  for (const type of ['questions', 'lessons']) {
+    if (!remote[type]) continue;
+    merged[type] = { ...merged[type] };
+    for (const [topicKey, remoteIds] of Object.entries(remote[type])) {
+      const localTopic = merged[type][topicKey] || { tested: [], flagged: [] };
+      const localTested = new Set(localTopic.tested);
+      const newIds = remoteIds.filter(id => !localTested.has(id));
+      if (newIds.length > 0) {
+        merged[type][topicKey] = {
+          ...localTopic,
+          tested: [...localTopic.tested, ...newIds],
+        };
+      }
+    }
+  }
+
+  return merged;
+}
+
+// Upload all local tested IDs to Worker (first sync / catch-up)
+function uploadLocalToWorker(data) {
+  if (!API_URL) return;
+  for (const type of ['questions', 'lessons']) {
+    for (const [topicKey, topicData] of Object.entries(data[type] || {})) {
+      const ids = topicData.tested || [];
+      if (ids.length > 0) {
+        syncToWorker(type, topicKey, ids);
+      }
+    }
+  }
+}
+
 export default function useTestingCoverage(userName) {
   const storageKey = `user:${userName}:testing-coverage`;
   const prevUser = useRef(userName);
+  const hasSynced = useRef(false);
 
   const [data, setData] = useState(() =>
     userName ? loadJSON(storageKey, EMPTY_COVERAGE) : EMPTY_COVERAGE
@@ -30,8 +79,32 @@ export default function useTestingCoverage(userName) {
   useEffect(() => {
     if (userName && userName !== prevUser.current) {
       prevUser.current = userName;
+      hasSynced.current = false;
       setData(loadJSON(`user:${userName}:testing-coverage`, EMPTY_COVERAGE));
     }
+  }, [userName]);
+
+  // On mount: fetch combined coverage from Worker, merge into local, upload local to Worker
+  useEffect(() => {
+    if (!API_URL || !userName || hasSynced.current) return;
+
+    fetch(`${API_URL}/testing-coverage`)
+      .then(r => r.json())
+      .then(remote => {
+        hasSynced.current = true;
+        setData(prev => {
+          // First upload our local data to the shared store
+          uploadLocalToWorker(prev);
+          // Then merge remote into local
+          const merged = mergeRemoteIntoLocal(prev, remote);
+          saveJSON(`user:${userName}:testing-coverage`, merged);
+          return merged;
+        });
+      })
+      .catch(() => {
+        // Offline — work with local only
+        hasSynced.current = true;
+      });
   }, [userName]);
 
   const persist = useCallback((updated) => {
@@ -52,6 +125,7 @@ export default function useTestingCoverage(userName) {
         }
       };
       saveJSON(`user:${userName}:testing-coverage`, updated);
+      syncToWorker('questions', topicKey, [questionId]);
       return updated;
     });
   }, [userName]);
@@ -84,6 +158,7 @@ export default function useTestingCoverage(userName) {
         }
       };
       saveJSON(`user:${userName}:testing-coverage`, updated);
+      syncToWorker('lessons', topicKey, [subConceptId]);
       return updated;
     });
   }, [userName]);
