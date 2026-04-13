@@ -237,7 +237,11 @@ function QuizScreen({
               {/* Alphabet line for letter code questions (GL prints this on the paper) */}
               {(selectedTopic === 'letterCodes' || selectedTopic === 'letterPairSeries' || selectedTopic === 'letterSums' || currentQuestion.questionType === 'letter-codes') && (
                 <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
-                  <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">Use this alphabet to crack the code</div>
+                  <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">
+                    {selectedTopic === 'letterCodes' || currentQuestion.questionType === 'letter-codes'
+                      ? 'Work out the pattern from the example, then apply it to the new word'
+                      : 'Use this alphabet to help you'}
+                  </div>
                   <div className="flex justify-center">
                     {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                       <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>

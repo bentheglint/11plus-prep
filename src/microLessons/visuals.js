@@ -2285,34 +2285,39 @@ export function LShapeDiagram({
           {totalLength - cutLength} {dimUnit}
         </text>
 
-        {/* Notch horizontal edge: cutLength (P4 → P3) — centred in cut-out area to avoid label overlap */}
+        {/* Notch horizontal edge: cutLength (P4 → P3) — near top of cut-out */}
         {(() => {
-          const cutMidY = (P5.y + P4.y) / 2; // vertical midpoint of empty cut-out space
+          const cutTopY = P5.y + (P4.y - P5.y) * 0.25; // 25% down from top of cut-out
           return (<>
-            <line x1={P4.x} y1={cutMidY} x2={P3.x} y2={cutMidY}
+            <line x1={P4.x} y1={cutTopY} x2={P3.x} y2={cutTopY}
                   stroke="#dc2626" strokeWidth="1.5" />
-            <line x1={P4.x} y1={cutMidY - tickHalf} x2={P4.x} y2={cutMidY + tickHalf}
+            <line x1={P4.x} y1={cutTopY - tickHalf} x2={P4.x} y2={cutTopY + tickHalf}
                   stroke="#dc2626" strokeWidth="1.5" />
-            <line x1={P3.x} y1={cutMidY - tickHalf} x2={P3.x} y2={cutMidY + tickHalf}
+            <line x1={P3.x} y1={cutTopY - tickHalf} x2={P3.x} y2={cutTopY + tickHalf}
                   stroke="#dc2626" strokeWidth="1.5" />
-            <text x={(P4.x + P3.x) / 2} y={cutMidY - 10} textAnchor="middle"
+            <text x={(P4.x + P3.x) / 2} y={cutTopY - 10} textAnchor="middle"
                   fill="#dc2626" fontSize="15" fontWeight="bold">
               {cutLength} {dimUnit}
             </text>
           </>);
         })()}
 
-        {/* Notch vertical edge: cutWidth (P5 → P4) — the step drop (right side, in cut-out area) */}
-        <line x1={P5.x + dimOff} y1={P5.y} x2={P4.x + dimOff} y2={P4.y}
-              stroke="#dc2626" strokeWidth="1.5" />
-        <line x1={P5.x + dimOff - tickHalf} y1={P5.y} x2={P5.x + dimOff + tickHalf} y2={P5.y}
-              stroke="#dc2626" strokeWidth="1.5" />
-        <line x1={P4.x + dimOff - tickHalf} y1={P4.y} x2={P4.x + dimOff + tickHalf} y2={P4.y}
-              stroke="#dc2626" strokeWidth="1.5" />
-        <text x={P5.x + dimOff + 12} y={(P5.y + P4.y) / 2 + 5} textAnchor="start"
-              fill="#dc2626" fontSize="15" fontWeight="bold">
-          {cutWidth} {dimUnit}
-        </text>
+        {/* Notch vertical edge: cutWidth (P5 → P4) — near right of cut-out */}
+        {(() => {
+          const cutRightX = P3.x - (P3.x - P4.x) * 0.25; // 25% in from right edge of cut-out
+          return (<>
+            <line x1={cutRightX} y1={P5.y} x2={cutRightX} y2={P4.y}
+                  stroke="#dc2626" strokeWidth="1.5" />
+            <line x1={cutRightX - tickHalf} y1={P5.y} x2={cutRightX + tickHalf} y2={P5.y}
+                  stroke="#dc2626" strokeWidth="1.5" />
+            <line x1={cutRightX - tickHalf} y1={P4.y} x2={cutRightX + tickHalf} y2={P4.y}
+                  stroke="#dc2626" strokeWidth="1.5" />
+            <text x={cutRightX + 16} y={(P5.y + P4.y) / 2 + 5} textAnchor="start"
+                  fill="#dc2626" fontSize="15" fontWeight="bold">
+              {cutWidth} {dimUnit}
+            </text>
+          </>);
+        })()}
       </svg>
     </div>
   );

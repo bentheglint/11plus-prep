@@ -1140,6 +1140,24 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
           <div className="max-w-2xl mx-auto">
             <div className="text-xs text-slate-500 mb-2">{subjectName} › {previewTopic} › Q{previewQId} (D{found.difficulty})</div>
             <div className="card-elevated p-6">
+              {/* Alphabet line for letter code questions in preview mode */}
+              {(previewTopic === 'letterCodes' || previewTopic === 'letterPairSeries' || previewTopic === 'letterSums' || found.questionType === 'letter-codes') && (
+                <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
+                  <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">
+                    {previewTopic === 'letterCodes' || found.questionType === 'letter-codes'
+                      ? 'Work out the pattern from the example, then apply it to the new word'
+                      : 'Use this alphabet to help you'}
+                  </div>
+                  <div className="flex justify-center">
+                    {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
+                      <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
+                        <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
+                        <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               {/* Visual component */}
               {Comp && (
                 <div className="mb-6 p-4 rounded-xl bg-white border border-gray-200">
