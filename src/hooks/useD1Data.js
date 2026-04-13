@@ -42,18 +42,24 @@ function normaliseTopicKeys(data) {
   return changed ? result : data;
 }
 
+// SQLite datetime ("2026-04-09 10:31:00") → JS-compatible ISO ("2026-04-09T10:31:00Z")
+function normaliseDate(d) {
+  if (!d) return d;
+  return d.includes('T') ? d : d.replace(' ', 'T') + 'Z';
+}
+
 // ── Server → Client Format Transformations ──
 // These mirror the transformations that seedLocalStorage() used to do.
 
 function transformServerData(serverData) {
   const quizHistory = (serverData.quizResults || []).map(r => ({
-    id: Date.parse(r.completed_at) || Date.now(),
+    id: Date.parse(normaliseDate(r.completed_at)) || Date.now(),
     topic: r.topic_key,
     subject: r.subject,
     score: r.score,
     total: r.total,
     percentage: r.total > 0 ? Math.round((r.score / r.total) * 100) : 0,
-    date: r.completed_at,
+    date: normaliseDate(r.completed_at),
   }));
 
   const mockTestHistory = (serverData.mockTestResults || []).map(r => ({
@@ -65,12 +71,14 @@ function transformServerData(serverData) {
     timeLimit: r.time_limit,
     sectionResults: r.section_results,
     questionTimes: r.question_times,
-    date: r.completed_at,
+    date: normaliseDate(r.completed_at),
   }));
 
-  const questionResults = normaliseTopicKeys((serverData.questionResults || []).map(r => ({
-    id: r.id || Date.parse(r.created_at) || Date.now(),
-    date: r.created_at || r.date,
+  const questionResults = normaliseTopicKeys((serverData.questionResults || []).map(r => {
+    const date = normaliseDate(r.attempted_at || r.created_at || r.date);
+    return {
+    id: r.id || Date.parse(date) || Date.now(),
+    date,
     questionId: r.question_id ?? r.questionId,
     topicKey: r.topic_key ?? r.topicKey,
     subject: r.subject,
@@ -79,7 +87,7 @@ function transformServerData(serverData) {
     timeSpentMs: r.time_ms ?? r.timeSpentMs ?? 0,
     mode: r.mode || 'focused',
     sessionId: r.session_id ?? r.sessionId,
-  })));
+  }; }));
 
   const topicPerformance = {};
   (serverData.topicPerformance || []).forEach(r => { topicPerformance[r.topic_key] = r.data; });
