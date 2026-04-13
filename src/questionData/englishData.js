@@ -5537,11 +5537,11 @@ const englishData = {
           "passage": "Nobody expected Aiden to win anything on Sports Day. He was the smallest boy in Year 5, and in PE lessons he was always the last to be picked for teams. He didn't mind too much — he preferred reading to running, and he could name every bone in the human body but couldn't throw a ball in a straight line.\n\nSports Day at Westbury Primary was a serious event. Parents brought folding chairs and flasks of tea. Mr Hammond, the PE teacher, wore his special tracksuit — the one with the whistle permanently attached to a lanyard around his neck. The four houses — Oak, Elm, Ash, and Birch — competed in everything from the hundred-metre sprint to the egg-and-spoon race.\n\nAiden was in Birch house, which hadn't won the Sports Day trophy since 2019. He had been entered for two events: the beanbag throw (he came last) and the four-hundred-metre race.\n\nThe four-hundred-metre race was the final event of the afternoon. Aiden lined up alongside seven other runners, including Callum Parker, who had won every race so far and was already celebrating Elm's inevitable victory.\n\nThe starting whistle blew. Callum surged ahead immediately, opening up a gap of five or six metres. Aiden settled into a steady rhythm at the back of the group, his short legs pumping. By the halfway point, three runners had faded, gasping and clutching their sides. Aiden passed them without changing pace.\n\nComing around the final bend, only Callum and two others were ahead. Callum's pace had slowed — his earlier sprint had taken its toll. Aiden's legs burned, but his breathing was controlled. He had read once that long-distance runners pace themselves, saving energy for the end.\n\nWith twenty metres to go, Aiden drew level with Callum. With ten metres to go, he was a stride ahead. He crossed the line first, to absolute silence — and then an eruption of cheers from the Birch supporters.\n\n\"How did you do that?\" Callum panted, bent double.\n\nAiden shrugged. \"I just didn't stop.\"",
           "question": "Where would you most likely read this passage?",
           "options": [
-            "In a manual about how to repair telephone hardware",
-            "In a collection of fairy tales and fictional stories",
-            "In a history or information book for children",
-            "In a personal diary written by a teenager",
-            "In a recipe book for family cooking at home"
+            "In a science textbook about human bones",
+            "In a guide to organising sports events",
+            "In a school newsletter reporting real results",
+            "In a children's story book or reading comprehension exercise",
+            "In a newspaper article about professional athletics"
           ],
           "correct": 3,
           "explanation": "This is a piece of realistic fiction — a made-up story set in a familiar school setting with believable characters. It has a narrative arc (underdog wins the race), dialogue, and descriptive language. You would most likely find it in a children's story book or reading comprehension exercise. ✓"
@@ -6088,11 +6088,11 @@ const englishData = {
           "passage": "Today, almost everyone carries a telephone in their pocket. We use them to send messages, take photographs, watch videos, and browse the internet. But when Alexander Graham Bell made the first successful telephone call on 10th March 1876, he could never have imagined what his invention would become.\n\nBell was born in Edinburgh, Scotland, in 1847. His mother was nearly deaf, and his father was a speech teacher who worked with deaf pupils. Growing up surrounded by the science of sound and speech, it is perhaps no surprise that Bell became fascinated by the idea of sending the human voice along a wire.\n\nHe was not alone in this quest. Several other inventors were working on similar devices at the same time, including an Italian-American engineer called Antonio Meucci and an American electrician named Elisha Gray. In fact, Bell and Gray filed their patent applications on the very same day — 14th February 1876. Bell's was registered just hours earlier, and he was awarded the patent. This decision remained controversial for over a century.\n\nBell's first telephone was a simple device. A person spoke into a cone-shaped mouthpiece, which caused a thin metal disc to vibrate. These vibrations were converted into electrical signals that travelled along a copper wire to a receiver at the other end, where the process was reversed — electrical signals became vibrations, and vibrations became sound.\n\nThe first words ever spoken on a telephone were directed at Bell's assistant, Thomas Watson, who was in the next room: \"Mr Watson, come here. I want to see you.\" It was hardly a dramatic speech, but it changed the world.\n\nWithin just four years, there were over sixty thousand telephones in use across the United States. By 1900, that number had reached nearly six hundred thousand. Bell himself, however, refused to have a telephone in his study. He said it distracted him from his work — a complaint that sounds remarkably familiar to anyone who has ever been interrupted by a ringing phone.",
           "question": "Where would you most likely read this passage?",
           "options": [
-            "In a telephone repair manual",
-            "In a collection of fairy tales",
+            "In a manual about how to repair telephone hardware",
+            "In a collection of fairy tales and fictional stories",
             "In a history or information book for children",
-            "In a personal diary",
-            "In a recipe book"
+            "In a personal diary written by a teenager",
+            "In a recipe book for family cooking at home"
           ],
           "correct": 2,
           "explanation": "This passage is non-fiction and provides historical facts about the invention of the telephone, including dates, names, and how the device worked. It is written in an accessible, engaging style for a young audience. You would most likely find it in a history or information book for children. ✓"
