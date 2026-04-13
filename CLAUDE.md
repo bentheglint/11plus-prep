@@ -134,6 +134,22 @@ Unified design system for all SVG diagrams. Enforces consistent colours, typogra
 - `.claude/skills/diagram-design/references/design-tokens.md` — colours, fonts, sizes, spacing
 - `.claude/skills/diagram-design/references/component-templates.md` — structure templates per diagram type
 
+### Game Design (`.claude/skills/game-design/`)
+Game design system for the gamification layer. Encodes best practices for children's educational game design (ages 8-11) across economy, progression, mini-games, characters, social features, sound, and UX. Grounded in 14 research documents (12,000+ lines).
+
+**Trigger phrases:** "game design", "mini-game", "character system", "economy balance", "progression curve", "gamification", "training points", "boss battle", "leaderboard", "study group"
+
+**Proactive:** When writing code for any gamification feature, automatically check against the design principles and ethical guardrails.
+
+**Reference files:**
+- `.claude/skills/game-design/references/economy-design.md` — currency formulas, spreadsheet methodology, sinks/faucets
+- `.claude/skills/game-design/references/progression-design.md` — XP curves, stage design, dead zone, mastery, returning players
+- `.claude/skills/game-design/references/mini-game-design.md` — 5 engines, state machine, game feel/juice, input, win/loss
+- `.claude/skills/game-design/references/character-design.md` — creation, stats, evolution, states, SVG layers, themes
+- `.claude/skills/game-design/references/ux-and-safety.md` — children's UX, onboarding, accessibility, dark patterns, regulations
+
+**Research library:** `~/Documents/My Brain/content/Gamification/Gamification Research/` (14 documents)
+
 ## Agents
 
 ### 11+ Oracle (`.claude/agents/11plus-oracle.md`)
