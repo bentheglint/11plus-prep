@@ -1,6 +1,40 @@
 import React from 'react';
 import { RefreshCw, AlertTriangle } from 'lucide-react';
 
+const API_URL = process.env.REACT_APP_TUTOR_API_URL;
+
+// Report errors to the Worker for monitoring (fire-and-forget)
+function reportError(error, context = {}) {
+  if (!API_URL) return;
+  try {
+    const payload = {
+      message: error?.message || String(error),
+      stack: error?.stack?.substring(0, 2000),
+      url: window.location.href,
+      userAgent: navigator.userAgent,
+      timestamp: new Date().toISOString(),
+      user: localStorage.getItem('current-user') || 'unknown',
+      ...context,
+    };
+    // Fire-and-forget — don't block the UI
+    fetch(`${API_URL}/api/error-report`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }).catch(() => {}); // Silently ignore network failures
+  } catch { /* never throw from error reporting */ }
+}
+
+// Global uncaught error handler
+if (typeof window !== 'undefined') {
+  window.addEventListener('error', (event) => {
+    reportError(event.error || event.message, { source: 'window.onerror' });
+  });
+  window.addEventListener('unhandledrejection', (event) => {
+    reportError(event.reason, { source: 'unhandledrejection' });
+  });
+}
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +47,10 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     console.error('[ErrorBoundary]', error, errorInfo);
+    reportError(error, {
+      source: 'ErrorBoundary',
+      componentStack: errorInfo?.componentStack?.substring(0, 1000),
+    });
   }
 
   handleReload = () => {

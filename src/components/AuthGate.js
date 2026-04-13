@@ -76,6 +76,9 @@ function LandingPage({ onSignIn, onSignUp }) {
           <a href="/privacy.html" className="underline hover:text-[#6C5CE7]">
             Privacy Policy
           </a>
+          <a href="/terms.html" className="underline hover:text-[#6C5CE7]">
+            Terms
+          </a>
         </div>
       </main>
     </div>
@@ -135,8 +138,10 @@ function ConsentScreen({ onConsent, isLoading }) {
               className="mt-1 w-5 h-5 rounded accent-[#6C5CE7]"
             />
             <span className="text-sm text-slate-800">
-              I am the parent or guardian of the child who will use this app, and I consent to the
-              processing of their learning data as described above and in our{' '}
+              I am the parent or guardian of the child who will use this app. I agree to the{' '}
+              <a href="/terms.html" target="_blank" rel="noopener noreferrer" className="text-[#6C5CE7] underline">
+                terms of service
+              </a>{' '}and consent to the processing of their learning data as described in our{' '}
               <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-[#6C5CE7] underline">
                 privacy policy
               </a>.

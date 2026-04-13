@@ -170,6 +170,20 @@ export default {
       if (path === '/flags/resolve' && request.method === 'POST') return handleResolveFlag(request, env);
       if (path === '/flags/fix' && request.method === 'POST') return handleMarkFixed(request, env);
 
+      // Error reporting — public (no auth required, fire-and-forget from client)
+      if (path === '/api/error-report' && request.method === 'POST') {
+        const body = await request.json();
+        console.error('[CLIENT ERROR]', JSON.stringify({
+          message: body.message,
+          stack: body.stack?.substring(0, 500),
+          url: body.url,
+          user: body.user,
+          source: body.source,
+          timestamp: body.timestamp,
+        }));
+        return json({ ok: true });
+      }
+
       // AI tutor — backward compatible POST to root
       if (request.method === 'POST' && !path.startsWith('/api/')) {
         return handleTutor(request, env);
