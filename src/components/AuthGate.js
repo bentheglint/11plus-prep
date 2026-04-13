@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
 import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
-import { fetchAllData, setTokenProvider, setVersions } from '../utils/apiSync';
+// apiSync imports removed — D1 data loading moved to useD1Data hook
+// fetchAllData, setTokenProvider, setVersions no longer needed here
 import MigrationScreen from './MigrationScreen';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
@@ -228,128 +229,8 @@ export default function AuthGate({ children }) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Seed localStorage from server data so useUserData picks it up
-  const seedLocalStorage = useCallback(async (childDisplayName) => {
-    const serverData = await fetchAllData(getToken);
-    if (!serverData) return; // No server data yet, that's fine
-
-    // Seed version cache so mutable PATCHes use correct versions
-    setVersions(serverData);
-
-    const prefix = `user:${childDisplayName}:`;
-
-    // Only seed if server has data (don't overwrite localStorage with empty)
-    if (serverData.quizResults?.length > 0) {
-      // Convert server format back to localStorage format
-      const quizHistory = serverData.quizResults.map(r => ({
-        id: Date.parse(r.completed_at) || Date.now(),
-        topic: r.topic_key,
-        subject: r.subject,
-        score: r.score,
-        total: r.total,
-        percentage: r.total > 0 ? Math.round((r.score / r.total) * 100) : 0,
-        date: r.completed_at,
-      }));
-      localStorage.setItem(prefix + 'quiz-history', JSON.stringify(quizHistory));
-    }
-
-    if (serverData.mockTestResults?.length > 0) {
-      const mockHistory = serverData.mockTestResults.map(r => ({
-        subject: r.subject, totalQuestions: r.total_questions,
-        totalCorrect: r.total_correct, percentage: r.percentage,
-        timeTaken: r.time_taken, timeLimit: r.time_limit,
-        sectionResults: r.section_results, questionTimes: r.question_times,
-        date: r.completed_at,
-      }));
-      localStorage.setItem(prefix + 'mock-test-history', JSON.stringify(mockHistory));
-    }
-
-    if (serverData.questionResults?.length > 0) {
-      // Convert server format (snake_case) to localStorage format (camelCase)
-      const qr = serverData.questionResults.map(r => ({
-        id: r.id || Date.parse(r.created_at) || Date.now(),
-        date: r.created_at || r.date,
-        questionId: r.question_id ?? r.questionId,
-        topicKey: r.topic_key ?? r.topicKey,
-        subject: r.subject,
-        difficulty: r.difficulty ?? 2,
-        correct: r.is_correct ?? r.correct ?? false,
-        timeSpentMs: r.time_ms ?? r.timeSpentMs ?? 0,
-        mode: r.mode || 'focused',
-        sessionId: r.session_id ?? r.sessionId,
-      }));
-      localStorage.setItem(prefix + 'question-results', JSON.stringify(qr));
-    }
-
-    if (serverData.topicPerformance?.length > 0) {
-      const tp = {};
-      serverData.topicPerformance.forEach(r => { tp[r.topic_key] = r.data; });
-      localStorage.setItem(prefix + 'topic-performance', JSON.stringify(tp));
-    }
-
-    if (serverData.lessonHistory?.length > 0) {
-      const lh = {};
-      serverData.lessonHistory.forEach(r => { lh[r.lesson_id] = { completedAt: r.completed_at }; });
-      localStorage.setItem(prefix + 'lesson-history', JSON.stringify(lh));
-    }
-
-    if (serverData.leitnerQueue?.length > 0) {
-      localStorage.setItem(prefix + 'leitner-queue', JSON.stringify(serverData.leitnerQueue));
-    }
-
-    if (serverData.practiceSessions?.length > 0) {
-      localStorage.setItem(prefix + 'practice-log', JSON.stringify(
-        serverData.practiceSessions.map(r => ({ ...r.data, date: r.session_date }))
-      ));
-    }
-
-    if (serverData.seenQuestions?.length > 0) {
-      // Local format: { topicKey: [questionId1, questionId2, ...] }
-      const sq = {};
-      serverData.seenQuestions.forEach(r => {
-        const key = r.topic_key;
-        if (!sq[key]) sq[key] = [];
-        if (!sq[key].includes(r.question_id)) sq[key].push(r.question_id);
-      });
-      localStorage.setItem(prefix + 'seen-questions', JSON.stringify(sq));
-    }
-
-    if (serverData.streaks) {
-      localStorage.setItem(prefix + 'streaks', JSON.stringify({
-        currentStreak: serverData.streaks.current_streak,
-        longestStreak: serverData.streaks.longest_streak,
-        lastQuizDate: serverData.streaks.last_quiz_date,
-        streakHistory: serverData.streaks.streak_history,
-      }));
-    }
-
-    if (serverData.prepPoints) {
-      localStorage.setItem(prefix + 'prep-points', JSON.stringify({
-        total: serverData.prepPoints.total,
-        level: serverData.prepPoints.level,
-        todayPP: serverData.prepPoints.today_pp,
-        todayDate: serverData.prepPoints.today_date,
-      }));
-    }
-
-    if (serverData.achievements?.length > 0) {
-      localStorage.setItem(prefix + 'achievements', JSON.stringify(
-        serverData.achievements.map(a => ({ id: a.achievement_id, unlockedAt: a.unlocked_at }))
-      ));
-    }
-
-    if (serverData.seenTips?.length > 0) {
-      localStorage.setItem(prefix + 'seen-tips', JSON.stringify(
-        serverData.seenTips.map(t => ({ id: t.tip_id, lastSeenDate: t.last_seen_date }))
-      ));
-    }
-
-    if (serverData.preferences?.last_session_date) {
-      localStorage.setItem(prefix + 'last-session-date',
-        JSON.stringify(serverData.preferences.last_session_date)
-      );
-    }
-  }, [getToken]);
+  // seedLocalStorage REMOVED — D1 data loading now handled by useD1Data hook directly.
+  // The hook fetches from /api/data/all on mount, with offline fallback to d1-cache.
 
   // Check if user has a D1 account + child when they sign in
   const checkAccount = useCallback(async () => {
@@ -357,14 +238,11 @@ export default function AuthGate({ children }) {
 
     try {
       setIsLoading(true);
-      // Set the token provider so apiSync can make API calls
-      setTokenProvider(getToken);
 
       const token = await getToken();
       const data = await apiFetch('/api/account', token);
       if (data.account && data.child) {
-        // Seed localStorage from server before rendering app
-        await seedLocalStorage(data.child.display_name);
+        // D1 data loading is now handled by useD1Data hook — no seedLocalStorage needed
         setChildName(data.child.display_name);
 
         // Check if migration has already been done (either server-side or localStorage flag)
@@ -387,7 +265,7 @@ export default function AuthGate({ children }) {
     } finally {
       setIsLoading(false);
     }
-  }, [isSignedIn, getToken, seedLocalStorage]);
+  }, [isSignedIn, getToken]);
 
   useEffect(() => {
     if (authLoaded && isSignedIn) {

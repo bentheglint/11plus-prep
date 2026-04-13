@@ -1082,11 +1082,14 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
   };
 
   // Save per-question results and update streaks/PP after quiz completion
-  const recordQuizResults = (sessionQuestions, sessionAnswers) => {
+  // Wrapped in batch mode: all saves enqueue without flushing, then endBatch sends one request
+  const recordQuizResults = async (sessionQuestions, sessionAnswers) => {
+    userData.startBatch();
     recordQuizResultsOrch(sessionQuestions, sessionAnswers, {
       userData, streaksAndPP, selectedSubject, quizMode,
       selectedTopic, topicPerformance, sessionId: quizSessionId.current,
     });
+    await userData.endBatch();
   };
 
   // ── Dev Navigation ──
@@ -1466,6 +1469,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     const results = mockTest.getResults();
     if (results && !mockResultsSaved.current) {
       mockResultsSaved.current = true;
+      userData.startBatch();
       saveMockTestResults(
         mockTest.mockTestQuestions,
         mockTest.mockTestAnswers,
@@ -1473,6 +1477,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         results,
         { userData, streaksAndPP }
       );
+      userData.endBatch();
     }
 
     return (
