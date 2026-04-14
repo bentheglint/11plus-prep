@@ -50,8 +50,15 @@ function normaliseDate(d) {
 
 // ── Server → Client Format Transformations ──
 // These mirror the transformations that seedLocalStorage() used to do.
+//
+// ORDERING CONVENTION: All arrays returned by transformServerData are
+// NEWEST-FIRST (sorted DESC by timestamp in bulk.js). Do NOT call .reverse()
+// on these arrays expecting them to be oldest-first. If you need chronological
+// order for display, sort explicitly by date — don't rely on source order.
+// See: ChildProgressView Recent Activity bug (fixed 14 Apr 2026).
 
 function transformServerData(serverData) {
+  // quizHistory — newest-first (ORDER BY completed_at DESC)
   const quizHistory = (serverData.quizResults || []).map(r => ({
     id: Date.parse(normaliseDate(r.completed_at)) || Date.now(),
     topic: r.topic_key,
@@ -62,6 +69,7 @@ function transformServerData(serverData) {
     date: normaliseDate(r.completed_at),
   }));
 
+  // mockTestHistory — newest-first (ORDER BY completed_at DESC)
   const mockTestHistory = (serverData.mockTestResults || []).map(r => ({
     subject: r.subject,
     totalQuestions: r.total_questions,
@@ -74,6 +82,7 @@ function transformServerData(serverData) {
     date: normaliseDate(r.completed_at),
   }));
 
+  // questionResults — newest-first (ORDER BY attempted_at DESC)
   const questionResults = normaliseTopicKeys((serverData.questionResults || []).map(r => {
     const date = normaliseDate(r.attempted_at || r.created_at || r.date);
     return {
@@ -102,6 +111,7 @@ function transformServerData(serverData) {
     if (!seenQuestions[key].includes(r.question_id)) seenQuestions[key].push(r.question_id);
   });
 
+  // practiceLog — newest-first (ORDER BY session_date DESC)
   const practiceLog = (serverData.practiceSessions || []).map(r => ({
     ...r.data,
     date: r.session_date,
