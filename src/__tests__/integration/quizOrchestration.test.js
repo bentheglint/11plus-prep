@@ -11,6 +11,7 @@ import {
   shouldShowPostQuestionTip,
   recordQuizResults,
   saveMockTestResults,
+  normaliseSelectedAnswer,
 } from '../../utils/quizOrchestration';
 
 // ── Helpers ──
@@ -104,6 +105,51 @@ describe('shouldShowPostQuestionTip', () => {
   it('does not show on 5th or 6th', () => {
     expect(shouldShowPostQuestionTip(5)).toBe(false);
     expect(shouldShowPostQuestionTip(6)).toBe(false);
+  });
+});
+
+// ── normaliseSelectedAnswer ──
+// Ensures the Quiz Detail View can round-trip the child's selection through D1.
+// The stored shape must match what the review renderers expect per question type.
+
+describe('normaliseSelectedAnswer', () => {
+  test('MCQ: returns the selectedAnswer integer', () => {
+    const q = { correct: 2, options: ['a','b','c','d','e'] };
+    expect(normaliseSelectedAnswer(q, 3, [])).toBe(3);
+    expect(normaliseSelectedAnswer(q, 0, [])).toBe(0);
+  });
+
+  test('MCQ: returns null when nothing selected', () => {
+    const q = { correct: 2 };
+    expect(normaliseSelectedAnswer(q, null, [])).toBe(null);
+    expect(normaliseSelectedAnswer(q, undefined, [])).toBe(null);
+  });
+
+  test('select-two: returns a sorted pair (unordered comparison)', () => {
+    const q = { questionType: 'select-two', correctPair: [1, 3] };
+    // Child picks in 3, 1 order — stored form must be sorted [1, 3]
+    expect(normaliseSelectedAnswer(q, null, [3, 1])).toEqual([1, 3]);
+    // Child picks in correct order — same sorted output
+    expect(normaliseSelectedAnswer(q, null, [1, 3])).toEqual([1, 3]);
+  });
+
+  test('select-two: returns null for incomplete selection', () => {
+    const q = { questionType: 'select-two', correctPair: [1, 3] };
+    expect(normaliseSelectedAnswer(q, null, [2])).toBe(null);
+    expect(normaliseSelectedAnswer(q, null, [])).toBe(null);
+  });
+
+  test('pick-from-sets: returns {A, B} with set semantics preserved', () => {
+    const q = { questionType: 'pick-from-sets', correctPair: [2, 1] };
+    // selectedPair is stored as [setA_index, setB_index]
+    expect(normaliseSelectedAnswer(q, null, [2, 1])).toEqual({ A: 2, B: 1 });
+    expect(normaliseSelectedAnswer(q, null, [0, 4])).toEqual({ A: 0, B: 4 });
+  });
+
+  test('pick-from-sets: returns null for incomplete selection', () => {
+    const q = { questionType: 'pick-from-sets', correctPair: [2, 1] };
+    expect(normaliseSelectedAnswer(q, null, [1])).toBe(null);
+    expect(normaliseSelectedAnswer(q, null, [])).toBe(null);
   });
 });
 

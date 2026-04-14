@@ -26,18 +26,22 @@ const MUTABLE_TYPES = new Set(['streaks', 'prep-points', 'preferences', 'topic-p
 function buildAppendStatement(db, childId, type, payload) {
   switch (type) {
     case 'question-result': {
-      const { questionId, topicKey, subject, isCorrect, timeMs, difficulty } = payload;
+      const { questionId, topicKey, subject, isCorrect, timeMs, difficulty, sessionId, selectedAnswer } = payload;
       if (questionId == null || !topicKey || !subject || isCorrect == null) return null;
+      // selectedAnswer is stored as TEXT (JSON): integer for MCQ, sorted pair for select-two, {A,B} for pick-from-sets
+      const selectedAnswerJson = selectedAnswer !== undefined && selectedAnswer !== null
+        ? JSON.stringify(selectedAnswer)
+        : null;
       return db.prepare(
-        `INSERT INTO question_results (child_id, question_id, topic_key, subject, is_correct, time_ms, difficulty) VALUES (?, ?, ?, ?, ?, ?, ?)`
-      ).bind(childId, questionId, topicKey, subject, isCorrect ? 1 : 0, timeMs || null, difficulty || null);
+        `INSERT INTO question_results (child_id, question_id, topic_key, subject, is_correct, time_ms, difficulty, session_id, selected_answer) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+      ).bind(childId, questionId, topicKey, subject, isCorrect ? 1 : 0, timeMs || null, difficulty || null, sessionId || null, selectedAnswerJson);
     }
     case 'quiz-result': {
-      const { topicKey, subject, score, total, timeSeconds, quizMode } = payload;
+      const { topicKey, subject, score, total, timeSeconds, quizMode, sessionId } = payload;
       if (!topicKey || !subject || score == null || !total) return null;
       return db.prepare(
-        `INSERT INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode) VALUES (?, ?, ?, ?, ?, ?, ?)`
-      ).bind(childId, topicKey, subject, score, total, timeSeconds || null, quizMode || null);
+        `INSERT INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode, session_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+      ).bind(childId, topicKey, subject, score, total, timeSeconds || null, quizMode || null, sessionId || null);
     }
     case 'mock-result': {
       const { subject, totalQuestions, totalCorrect, percentage, timeTaken, timeLimit, sectionResults, questionTimes } = payload;

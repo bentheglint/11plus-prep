@@ -15,6 +15,7 @@ import {
 } from './microLessons/visuals';
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
+import QuizDetailScreen from './screens/QuizDetailScreen';
 import HomeScreen from './screens/HomeScreen';
 import QuizScreen from './screens/QuizScreen';
 import LearningModeScreen from './screens/LearningModeScreen';
@@ -174,6 +175,7 @@ function App({ currentUser: authUser, getToken }) {
   const [lessonFromQuiz, setLessonFromQuiz] = useState(null);
   const [showDidItHelp, setShowDidItHelp] = useState(false);
   const [drillDownTopic, setDrillDownTopic] = useState(null); // { subject, topicKey }
+  const [selectedQuiz, setSelectedQuiz] = useState(null); // Quiz Detail View — selected row from Recent Activity
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
@@ -322,7 +324,8 @@ function App({ currentUser: authUser, getToken }) {
       topic,
       score,
       total,
-      percentage: Math.round((score / total) * 100)
+      percentage: Math.round((score / total) * 100),
+      sessionId: quizSessionId.current, // correlates this quiz with its question_results rows
     };
     userData.saveQuizResult(newResult);
   };
@@ -472,6 +475,9 @@ function App({ currentUser: authUser, getToken }) {
       correct: isCorrect,
       timeSpentMs,
       difficulty: currentQuestion.difficulty || 2,
+      // Capture raw selection for Quiz Detail View (normalised downstream per question type)
+      selectedAnswer,
+      selectedPair: [...selectedPair],
     }]);
 
     // Testing mode: skip tips, adaptive difficulty, and Leitner — just record the answer
@@ -533,7 +539,7 @@ function App({ currentUser: authUser, getToken }) {
     }
   };
 
-  const handleNextQuestion = () => {
+  const handleNextQuestion = async () => {
     // Reset timer for next question
     questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -567,10 +573,14 @@ function App({ currentUser: authUser, getToken }) {
       const correctCount = answers.filter(a => a.correct).length;
       markQuestionsAsSeen(quizQuestions);
       updateTopicPerformance(quizQuestions, answers);
+      // Atomic batch: per-question rows, quiz row, streak, PP, practice session, last-session-date
+      // all commit together or not at all. See Codex adversarial review #1.
+      userData.startBatch();
       recordQuizResults(quizQuestions, answers);
       const topicLabel = quizMode === 'daily' ? 'Daily Learning' : quizQuestions[0].topicName;
       saveQuizResult(selectedSubject, topicLabel, correctCount, quizQuestions.length);
       userData.saveLastSessionDate(new Date().toISOString());
+      await userData.endBatch();
       setCurrentView('results');
     }
   };
@@ -1081,15 +1091,15 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     userData.saveTopicPerformance(updated);
   };
 
-  // Save per-question results and update streaks/PP after quiz completion
-  // Wrapped in batch mode: all saves enqueue without flushing, then endBatch sends one request
-  const recordQuizResults = async (sessionQuestions, sessionAnswers) => {
-    userData.startBatch();
+  // Save per-question results and update streaks/PP after quiz completion.
+  // NOTE: Caller (handleNextQuestion) opens/closes the batch. This function
+  // only enqueues — it does NOT manage batch lifecycle. This ensures the
+  // quiz row + per-question rows commit atomically.
+  const recordQuizResults = (sessionQuestions, sessionAnswers) => {
     recordQuizResultsOrch(sessionQuestions, sessionAnswers, {
       userData, streaksAndPP, selectedSubject, quizMode,
       selectedTopic, topicPerformance, sessionId: quizSessionId.current,
     });
-    await userData.endBatch();
   };
 
   // ── Dev Navigation ──
@@ -1847,6 +1857,26 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         onDrillDown={(subject, topicKey) => {
           setDrillDownTopic({ subject, topicKey });
           setCurrentView('topicDrillDown');
+        }}
+        onViewQuiz={(quiz) => {
+          setSelectedQuiz(quiz);
+          setCurrentView('quizDetail');
+        }}
+      />
+    );
+  }
+
+  if (currentView === 'quizDetail') {
+    return (
+      <QuizDetailScreen
+        quiz={selectedQuiz}
+        questionResults={questionResults}
+        questionData={mathsData}
+        englishData={englishData}
+        vrData={vrData}
+        onBack={() => {
+          setSelectedQuiz(null);
+          setCurrentView('progress');
         }}
       />
     );
