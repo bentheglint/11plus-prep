@@ -11,7 +11,7 @@ const subjectConfig = {
   verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#6C5CE7', gradient: 'from-[#6C5CE7] to-[#5A4BD1]' },
 };
 
-function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome }) {
+function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome, onViewQuiz }) {
   const [selectedSubject, setSelectedSubject] = useState('maths');
 
   const levelInfo = streaksAndPP.getLevelInfo();
@@ -150,8 +150,10 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                 const isToday = date.toISOString().split('T')[0] === new Date().toISOString().split('T')[0];
                 const dateLabel = isToday ? 'Today' : date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
 
-                return (
-                  <div key={quiz.id} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
+                // Only quizzes saved after the Quiz Detail feature shipped have a sessionId
+                const canViewDetail = !!(quiz.sessionId && onViewQuiz);
+                const rowContent = (
+                  <>
                     <div className="flex items-center gap-3">
                       <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: dotColour }} />
                       <div>
@@ -160,6 +162,19 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                       </div>
                     </div>
                     <span className="text-sm font-bold" style={{ color: dotColour }}>{quiz.percentage}%</span>
+                  </>
+                );
+                return canViewDetail ? (
+                  <button
+                    key={quiz.id}
+                    onClick={() => onViewQuiz(quiz)}
+                    className="w-full flex items-center justify-between py-2 border-b border-gray-50 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded transition-colors text-left"
+                  >
+                    {rowContent}
+                  </button>
+                ) : (
+                  <div key={quiz.id} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
+                    {rowContent}
                   </div>
                 );
               })}

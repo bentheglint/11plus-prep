@@ -3,7 +3,7 @@ import { ArrowLeft, Home, User, BarChart3 } from 'lucide-react';
 import ChildProgressView from './ChildProgressView';
 import ParentDashboard from './ParentDashboard';
 
-function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, currentUser, onHome, onStartTopic, onDrillDown }) {
+function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, currentUser, onHome, onStartTopic, onDrillDown, onViewQuiz }) {
   const defaultView = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('view') === 'progress-parent' ? 'parent' : 'child';
   const [view, setView] = useState(defaultView);
 
@@ -63,6 +63,7 @@ function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, user
           onStartTopic={onStartTopic}
           onDrillDown={onDrillDown}
           onHome={onHome}
+          onViewQuiz={onViewQuiz}
         />
       )}
     </div>

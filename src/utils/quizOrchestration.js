@@ -25,6 +25,33 @@ export function checkAnswerCorrectness(question, selectedAnswer, selectedPair) {
 }
 
 /**
+ * Normalise a selected answer into the typed shape stored in D1.
+ * The Quiz Detail View relies on reading this back correctly per question type.
+ *
+ *   MCQ (standard)   → integer index,    e.g. 2
+ *   select-two       → sorted pair,      e.g. [1, 3]  (a < b for unordered comparison)
+ *   pick-from-sets   → object,           e.g. { A: 1, B: 2 }  (set-ordered)
+ *
+ * Returns null if the input is empty/missing (so the save path can pass null through
+ * without introducing fake data).
+ */
+export function normaliseSelectedAnswer(question, selectedAnswer, selectedPair) {
+  if (question.questionType === 'select-two') {
+    if (!Array.isArray(selectedPair) || selectedPair.length !== 2) return null;
+    const [a, b] = selectedPair;
+    return a <= b ? [a, b] : [b, a];
+  }
+  if (question.questionType === 'pick-from-sets') {
+    if (!Array.isArray(selectedPair) || selectedPair.length !== 2) return null;
+    // Pair is stored as [setAIndex, setBIndex] in quiz flow — preserve that semantic
+    return { A: selectedPair[0], B: selectedPair[1] };
+  }
+  // Standard MCQ
+  if (selectedAnswer == null) return null;
+  return selectedAnswer;
+}
+
+/**
  * Whether to show a post-question tip based on wrong answer count.
  * Tips appear on the 1st, 4th, 7th, 10th, ... wrong answer (every 3rd).
  */
@@ -37,9 +64,14 @@ export function shouldShowPostQuestionTip(wrongAnswerCount) {
  * Fans out to: saveQuestionResult (per Q), savePracticeSession,
  * recordQuizCompletion, calculateQuizPP, awardPP.
  *
+ * IMPORTANT: This must run inside a userData.startBatch()/endBatch() window
+ * so the aggregate quiz row and per-question rows commit atomically. The
+ * caller is responsible for opening/closing the batch AND calling
+ * saveQuizResult within that same window — see App.js handleNextQuestion.
+ *
  * @param {Array} sessionQuestions - quiz questions with { question, topicKey }
- * @param {Array} sessionAnswers - answers with { correct, timeSpentMs, difficulty }
- * @param {Object} deps - injected dependencies
+ * @param {Array} sessionAnswers - answers with { correct, timeSpentMs, difficulty, selectedAnswer, selectedPair }
+ * @param {Object} deps - injected dependencies (userData, streaksAndPP, etc.)
  */
 export function recordQuizResults(sessionQuestions, sessionAnswers, deps) {
   const { userData, streaksAndPP, selectedSubject, quizMode, selectedTopic, topicPerformance, sessionId } = deps;
@@ -47,8 +79,10 @@ export function recordQuizResults(sessionQuestions, sessionAnswers, deps) {
 
   // Save individual question results
   sessionQuestions.forEach((q, i) => {
-    const isCorrect = sessionAnswers[i]?.correct || false;
+    const answer = sessionAnswers[i] || {};
+    const isCorrect = answer.correct || false;
     if (isCorrect) correctCount++;
+    const normalisedAnswer = normaliseSelectedAnswer(q.question, answer.selectedAnswer, answer.selectedPair);
     userData.saveQuestionResult({
       id: Date.now() + i,
       date: new Date().toISOString(),
@@ -57,9 +91,10 @@ export function recordQuizResults(sessionQuestions, sessionAnswers, deps) {
       subject: selectedSubject,
       difficulty: q.question.difficulty || 2,
       correct: isCorrect,
-      timeSpentMs: sessionAnswers[i]?.timeSpentMs || 0,
+      timeSpentMs: answer.timeSpentMs || 0,
       mode: quizMode || 'focused',
       sessionId,
+      selectedAnswer: normalisedAnswer,
     });
   });
 

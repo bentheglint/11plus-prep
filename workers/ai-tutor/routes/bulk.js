@@ -27,7 +27,7 @@ export async function handleBulkLoad(request, env, userId) {
   ] = await Promise.all([
     db.prepare('SELECT * FROM quiz_results WHERE child_id = ? ORDER BY completed_at DESC').bind(childId).all(),
     db.prepare('SELECT * FROM mock_test_results WHERE child_id = ? ORDER BY completed_at DESC').bind(childId).all(),
-    db.prepare('SELECT id, question_id, topic_key, subject, is_correct, time_ms, difficulty, attempted_at FROM question_results WHERE child_id = ? ORDER BY attempted_at DESC').bind(childId).all(),
+    db.prepare('SELECT id, question_id, topic_key, subject, is_correct, time_ms, difficulty, attempted_at, session_id, selected_answer FROM question_results WHERE child_id = ? ORDER BY attempted_at DESC').bind(childId).all(),
     db.prepare('SELECT topic_key, subject, data, version FROM topic_performance WHERE child_id = ?').bind(childId).all(),
     db.prepare('SELECT question_id, topic_key, subject, level, last_reviewed, next_review, times_correct, times_incorrect FROM leitner_queue WHERE child_id = ?').bind(childId).all(),
     db.prepare('SELECT lesson_id, completed_at FROM lesson_history WHERE child_id = ?').bind(childId).all(),

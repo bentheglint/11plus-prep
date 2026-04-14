@@ -67,6 +67,7 @@ function transformServerData(serverData) {
     total: r.total,
     percentage: r.total > 0 ? Math.round((r.score / r.total) * 100) : 0,
     date: normaliseDate(r.completed_at),
+    sessionId: r.session_id || null, // null for pre-feature quizzes
   }));
 
   // mockTestHistory — newest-first (ORDER BY completed_at DESC)
@@ -85,6 +86,13 @@ function transformServerData(serverData) {
   // questionResults — newest-first (ORDER BY attempted_at DESC)
   const questionResults = normaliseTopicKeys((serverData.questionResults || []).map(r => {
     const date = normaliseDate(r.attempted_at || r.created_at || r.date);
+    // selectedAnswer stored as JSON string in D1 — parse back on read
+    let selectedAnswer = null;
+    if (r.selected_answer) {
+      try { selectedAnswer = JSON.parse(r.selected_answer); } catch { selectedAnswer = null; }
+    } else if (r.selectedAnswer !== undefined) {
+      selectedAnswer = r.selectedAnswer;
+    }
     return {
     id: r.id || Date.parse(date) || Date.now(),
     date,
@@ -95,7 +103,8 @@ function transformServerData(serverData) {
     correct: r.is_correct ?? r.correct ?? false,
     timeSpentMs: r.time_ms ?? r.timeSpentMs ?? 0,
     mode: r.mode || 'focused',
-    sessionId: r.session_id ?? r.sessionId,
+    sessionId: r.session_id ?? r.sessionId ?? null,
+    selectedAnswer, // null for pre-feature question_results rows
   }; }));
 
   const topicPerformance = {};
@@ -483,6 +492,8 @@ export default function useD1Data(userName, getToken) {
 
   const saveQuizResult = useCallback((result) => {
     if (!userName) return;
+    // Preserve sessionId in local state so Recent Activity is immediately clickable
+    // without waiting for a page reload (Codex review #3).
     const updated = [...quizHistory, result];
     setQuizHistory(updated);
     legacyWrite(userName, 'quiz-history', updated);
@@ -490,6 +501,7 @@ export default function useD1Data(userName, getToken) {
       topicKey: result.topic, subject: result.subject,
       score: result.score, total: result.total,
       timeSeconds: result.timeSeconds || null, quizMode: result.quizMode || null,
+      sessionId: result.sessionId || null,
     });
   }, [userName, quizHistory, enqueue]);
 
@@ -539,6 +551,8 @@ export default function useD1Data(userName, getToken) {
       questionId: result.questionId, topicKey: result.topicKey,
       subject: result.subject, isCorrect: result.correct,
       timeMs: result.timeSpentMs, difficulty: result.difficulty,
+      sessionId: result.sessionId || null,
+      selectedAnswer: result.selectedAnswer !== undefined ? result.selectedAnswer : null,
     });
   }, [userName, enqueue]);
 

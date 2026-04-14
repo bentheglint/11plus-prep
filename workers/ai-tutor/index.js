@@ -254,7 +254,7 @@ export default {
 
         // Batch write endpoint (D1-first architecture)
         if (path === '/api/data/batch' && request.method === 'POST') {
-          return handleBatch(request, env, userId);
+          return await handleBatch(request, env, userId);
         }
 
         // Append-only data routes
@@ -270,7 +270,8 @@ export default {
 
       return new Response('Not found', { status: 404, headers: CORS });
     } catch (err) {
-      return json({ error: 'Internal server error', detail: err.message }, 500);
+      console.error('[Worker Error]', err.message, err.stack);
+      return json({ error: 'Internal server error', detail: err.message, stack: err.stack?.substring(0, 300) }, 500);
     }
   },
 
