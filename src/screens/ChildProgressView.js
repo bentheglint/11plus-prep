@@ -161,7 +161,15 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                         <p className="text-[10px] text-slate-500">{dateLabel} · {quiz.score}/{quiz.total}</p>
                       </div>
                     </div>
-                    <span className="text-sm font-bold" style={{ color: dotColour }}>{quiz.percentage}%</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-bold" style={{ color: dotColour }}>{quiz.percentage}%</span>
+                      {canViewDetail && (
+                        <span className="flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider text-[#6C5CE7] bg-[#EDE8FF] px-2 py-1 rounded-full">
+                          View
+                          <ChevronRight className="w-3 h-3" />
+                        </span>
+                      )}
+                    </div>
                   </>
                 );
                 return canViewDetail ? (
