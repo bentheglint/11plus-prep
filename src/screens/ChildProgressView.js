@@ -34,8 +34,10 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
     mastery: mastery.getSubjectMastery(key),
   }));
 
-  // Recent activity (last 5 quizzes)
-  const recentQuizzes = [...quizHistory].reverse().slice(0, 5);
+  // Recent activity (last 5 quizzes — most recent first)
+  const recentQuizzes = [...quizHistory]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 5);
 
   return (
     <div className="app-bg p-4 min-h-screen">
