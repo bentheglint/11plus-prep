@@ -54,6 +54,15 @@ function buildStats(quizHistory, questionResults, streakData, mockTestHistory, m
   };
 }
 
+// Normalise earned-achievements input into a Set of id strings.
+// The hook accepts both legacy string arrays (localStorage era) and the
+// current D1 shape of `{ id, unlockedAt }` objects. Without this, the D1
+// shape causes every check to treat already-earned achievements as new —
+// which is why "First Steps" was firing on every quiz.
+function toIdSet(list) {
+  return new Set((list || []).map(a => typeof a === 'string' ? a : a?.id).filter(Boolean));
+}
+
 export default function useAchievements(
   earnedAchievements, saveAchievements,
   quizHistory, questionResults, streakData, mockTestHistory, masteryFn
@@ -61,7 +70,7 @@ export default function useAchievements(
   // Check for newly unlocked achievements
   const checkAchievements = useCallback(() => {
     const stats = buildStats(quizHistory, questionResults, streakData, mockTestHistory, masteryFn);
-    const earnedIds = new Set(earnedAchievements);
+    const earnedIds = toIdSet(earnedAchievements);
     const newlyUnlocked = [];
 
     ACHIEVEMENTS.forEach(achievement => {
@@ -71,7 +80,13 @@ export default function useAchievements(
     });
 
     if (newlyUnlocked.length > 0) {
-      const updatedEarned = [...earnedAchievements, ...newlyUnlocked.map(a => a.id)];
+      // Build the updated list as plain id strings — saveAchievements
+      // in useD1Data handles both shapes defensively, but storing a
+      // homogeneous string list is tidier going forward.
+      const updatedEarned = [
+        ...Array.from(earnedIds),
+        ...newlyUnlocked.map(a => a.id),
+      ];
       saveAchievements(updatedEarned);
     }
 
@@ -80,7 +95,7 @@ export default function useAchievements(
 
   // Get all achievements with earned status
   const getAllAchievements = useCallback(() => {
-    const earnedIds = new Set(earnedAchievements);
+    const earnedIds = toIdSet(earnedAchievements);
     return ACHIEVEMENTS.map(a => ({
       ...a,
       earned: earnedIds.has(a.id),
