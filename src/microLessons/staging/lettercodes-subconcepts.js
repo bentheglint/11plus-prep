@@ -893,7 +893,13 @@ export const letterCodesSubConcepts = [
                 points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
-                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
+                // Per-hop label derived from each letter's own shift — previously
+                // the first hop carried the full pattern string ("+1, +2, +3")
+                // which ran off the side of the screen. Flagged 15 Apr 2026.
+                hops: v.originalWord.split('').map((l, i) => {
+                  const shift = v.codedWord.charCodeAt(i) - l.charCodeAt(0);
+                  return { from: l, to: v.codedWord[i], label: shift > 0 ? `+${shift}` : `${shift}` };
+                })
               })
             },
             interaction: null

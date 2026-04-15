@@ -418,10 +418,12 @@ export function NumberLine({
   const lineWidth = width - 2 * padding;
   const toX = (value) => padding + ((value - min) / (max - min)) * lineWidth;
 
-  // Adaptive font size based on tick density
+  // Adaptive font size based on tick density. Tight tiers needed —
+  // at 11 ticks (e.g. 8.0–9.0 with 0.1 spacing) 26pt labels collide
+  // in the ~46px-per-tick spacing. Flagged 15 Apr 2026.
   const tickCount = Math.round((max - min) / tickInterval) + 1;
-  const tickFontSize = tickCount > 20 ? 18 : tickCount > 12 ? 22 : 26;
-  const labelFontSize = tickCount > 20 ? 20 : 26;
+  const tickFontSize = tickCount > 20 ? 16 : tickCount > 14 ? 18 : tickCount > 10 ? 20 : 24;
+  const labelFontSize = tickCount > 20 ? 18 : tickCount > 10 ? 22 : 26;
   const showPointLabels = jumps.length === 0;
 
   // Cap arc heights to fit within the fixed frame

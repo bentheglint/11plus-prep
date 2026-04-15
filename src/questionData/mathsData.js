@@ -18988,11 +18988,11 @@ areaperimeter: {
     {
       id: 141,
       difficulty: 2,
-      visual: { component: "LShapeDiagram", props: { totalLength: 12, totalWidth: 9, cutLength: 5, cutWidth: 4, dimUnit: "cm" } },
-      question: "An L-shaped garden is 12 cm long and 9 cm wide overall. A 5 cm × 4 cm piece is cut from one corner. What is the area of the garden?",
-      options: ["128 cm²", "108 cm²", "20 cm²", "88 cm²", "68 cm²"],
+      visual: { component: "LShapeDiagram", props: { totalLength: 12, totalWidth: 9, cutLength: 5, cutWidth: 4, dimUnit: "m" } },
+      question: "An L-shaped garden is 12 m long and 9 m wide overall. A 5 m × 4 m piece is cut from one corner. What is the area of the garden?",
+      options: ["128 m²", "108 m²", "20 m²", "88 m²", "68 m²"],
       correct: 3,
-      explanation: "Full rectangle: 12 × 9 = 108 cm². Cut-out: 5 × 4 = 20 cm². Area = 108 − 20 = 88 cm². ✓"
+      explanation: "Full rectangle: 12 × 9 = 108 m². Cut-out: 5 × 4 = 20 m². Area = 108 − 20 = 88 m². ✓"
     },
     {
       id: 142,
@@ -19757,7 +19757,7 @@ volume: {
       id: 18,
       difficulty: 3,
       question: "A cube has edges that are twice as long as another cube with 3 cm edges. What is the volume of the larger cube?",
-      visual: { component: "CuboidComparison", props: { cuboid1: { length: 3, width: 3, height: 3, label: "Small cube" }, cuboid2: { length: 6, width: 6, height: 6, label: "Large cube" }, dimUnit: "cm" } },
+      visual: { component: "CuboidDiagram", props: { length: 3, width: 3, height: 3, dimUnit: "cm" } },
       options: ["6 cubic cm", "18 cubic cm", "216 cubic cm", "54 cubic cm", "24 cubic cm"],
       correct: 2,
       explanation: "The small cube has 3 cm edges. The larger cube has edges twice as long: 2 × 3 = 6 cm. Volume of larger cube = 6 × 6 × 6 = 216 cm³. ✓"
@@ -20010,7 +20010,7 @@ volume: {
       id: 47,
       difficulty: 3,
       question: "A cube has edges that are three times as long as another cube with 4 cm edges. What is the volume of the larger cube?",
-      visual: { component: "CuboidComparison", props: { cuboid1: { length: 4, width: 4, height: 4, label: "Small cube" }, cuboid2: { length: 12, width: 12, height: 12, label: "Large cube" }, dimUnit: "cm" } },
+      visual: { component: "CuboidDiagram", props: { length: 4, width: 4, height: 4, dimUnit: "cm" } },
       options: ["48 cubic cm", "1728 cubic cm", "576 cubic cm", "192 cubic cm", "144 cubic cm"],
       correct: 1,
       explanation: "Larger cube edge = 3 × 4 = 12 cm. Volume = 12 × 12 × 12 = 1,728 cm³. ✓"
@@ -20466,7 +20466,7 @@ volume: {
       id: 100,
       difficulty: 3,
       question: "A cube has edges that are four times as long as another cube with 5 cm edges. What is the volume of the larger cube?",
-      visual: { component: "CuboidComparison", props: { cuboid1: { length: 5, width: 5, height: 5, label: "Small cube" }, cuboid2: { length: 20, width: 20, height: 20, label: "Large cube" }, dimUnit: "cm" } },
+      visual: { component: "CuboidDiagram", props: { length: 5, width: 5, height: 5, dimUnit: "cm" } },
       options: ["100 cubic cm", "500 cubic cm", "2000 cubic cm", "4000 cubic cm", "8000 cubic cm"],
       correct: 4,
       explanation: "Larger cube edge = 4 × 5 = 20 cm. Volume = 20 × 20 × 20 = 8,000 cm³. ✓"
@@ -25182,7 +25182,7 @@ datahandling: {
     {
       id: 111,
       difficulty: 3,
-      question: "This pie chart shows subjects. If 180 students surveyed, how many chose Maths?",
+      question: "This pie chart shows the favourite subjects of 180 students. How many chose Maths?",
       visual: { component: "PieChart", props: { sections: [{label: "Maths", angle: 110}, {label: "English", angle: 90}, {label: "Science", angle: 80}, {label: "Art", angle: 80}], showLabels: true, showValues: false, total: 180 } },
       options: ["40", "55", "50", "45", "60"],
       correct: 1,
