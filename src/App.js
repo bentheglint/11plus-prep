@@ -28,6 +28,7 @@ import useMockTest from './hooks/useMockTest';
 import useD1Data from './hooks/useD1Data';
 import useAchievements from './hooks/useAchievements';
 import AchievementModal from './components/AchievementModal';
+import { topicNames } from './components/RecommendationCard';
 import useMastery from './hooks/useMastery';
 import useStreaksAndPP from './hooks/useStreaksAndPP';
 import mathsData from './questionData/mathsData';
@@ -177,6 +178,10 @@ function App({ currentUser: authUser, getToken }) {
   const [returnToToolkit, setReturnToToolkit] = useState(false);
   const toolkitLessonsViewed = React.useRef(0);
   const [quizMode, setQuizMode] = useState(null);
+  // Resume prompt — shown when user selects a Focused topic that already has
+  // a mid-quiz save. `pendingTopic` holds { topic, subject } if the user
+  // chooses "Start Fresh" and we need to proceed with the original selection.
+  const [resumePrompt, setResumePrompt] = useState(null); // { savedState, pendingTopic } | null
   const [returnToSpeedReview, setReturnToSpeedReview] = useState(false);
   const [returnToTestingMode, setReturnToTestingMode] = useState(false);
   const [testingSessionFlags, setTestingSessionFlags] = useState([]);
@@ -275,10 +280,11 @@ function App({ currentUser: authUser, getToken }) {
   const quizRestored = React.useRef(false);
 
   // Save active quiz state whenever it changes.
-  // Gated on quizRestored — on a fresh page load the default `currentView`
-  // is 'home', which would otherwise fire the `else` branch below and
-  // delete the saved quiz BEFORE the restore effect can read it (race
-  // condition flagged 15 Apr 2026 during Phase 17 walkthrough).
+  // Gated on quizRestored so a fresh page load doesn't wipe the save before
+  // the restore effect can read it. Deliberately does NOT clear the save when
+  // currentView !== 'quiz' — we want the quiz to survive a Home tap so the
+  // child can resume. Explicit clears happen on quiz completion (see
+  // handleNextQuestion) and on "Start Fresh" from the resume prompt.
   useEffect(() => {
     if (!quizSaveKey) return;
     if (quizMode === 'testing') return; // Don't persist testing quizzes
@@ -291,9 +297,6 @@ function App({ currentUser: authUser, getToken }) {
         sessionId: quizSessionId.current,
       });
       localStorage.setItem(quizSaveKey, JSON.stringify(saveState));
-    } else {
-      // Clear saved quiz when not in quiz view
-      localStorage.removeItem(quizSaveKey);
     }
   }, [quizSaveKey, currentView, quizQuestions, currentQuestionIndex, answers, selectedAnswer, selectedPair, showFeedback, selectedSubject, selectedTopic, quizMode]);
 
@@ -473,8 +476,9 @@ function App({ currentUser: authUser, getToken }) {
     setCurrentView('quiz');
   };
 
-  const handleTopicSelect = (topic, subject) => {
-    const activeSubject = subject || selectedSubject;
+  // Begin a fresh Focused quiz — the original body of handleTopicSelect
+  // before the resume-prompt check was added.
+  const beginFocusedQuiz = (topic, activeSubject) => {
     setSelectedTopic(topic);
     const selected = selectFocusedQuestions(topic, activeSubject);
     setQuizQuestions(selected);
@@ -482,7 +486,8 @@ function App({ currentUser: authUser, getToken }) {
     setCurrentQuestionIndex(0);
     setSavedTimerSecs(0);
     setAnswers([]);
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    quizSessionId.current = Date.now();
+    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;
+    quizSessionId.current = Date.now();
     wrongAnswerCount.current = 0;
     sessionShownTipIds.current = new Set();
     setPostQuestionTip(null);
@@ -498,6 +503,49 @@ function App({ currentUser: authUser, getToken }) {
     } else {
       setCurrentView('quiz');
     }
+  };
+
+  const handleTopicSelect = (topic, subject) => {
+    const activeSubject = subject || selectedSubject;
+    // If there's an in-progress Focused quiz for this exact topic+subject,
+    // prompt before overwriting. Different topic / mode silently overwrites
+    // (handleTopicSelect starts a new save).
+    if (quizSaveKey) {
+      const saved = parseAndValidateQuiz(localStorage.getItem(quizSaveKey));
+      if (saved && saved.quizMode === 'focused'
+          && saved.selectedTopic === topic
+          && saved.selectedSubject === activeSubject) {
+        setResumePrompt({ savedState: saved, pendingTopic: { topic, subject: activeSubject } });
+        return;
+      }
+    }
+    beginFocusedQuiz(topic, activeSubject);
+  };
+
+  // Restore a saved quiz straight back into the quiz view.
+  const resumeSavedQuiz = (savedState) => {
+    setSelectedSubject(savedState.selectedSubject);
+    setSelectedTopic(savedState.selectedTopic);
+    setQuizMode(savedState.quizMode);
+    setQuizQuestions(savedState.quizQuestions);
+    setCurrentQuestionIndex(savedState.currentQuestionIndex);
+    setAnswers(savedState.answers);
+    setSelectedAnswer(savedState.selectedAnswer);
+    setSelectedPair(savedState.selectedPair);
+    setShowFeedback(savedState.showFeedback);
+    quizSessionId.current = savedState.sessionId;
+    questionStartTime.current = Date.now();
+    pausedTimeMs.current = 0;
+    pauseStartTime.current = null;
+    setCurrentView('quiz');
+    setResumePrompt(null);
+  };
+
+  const startFreshFromPrompt = () => {
+    if (quizSaveKey) localStorage.removeItem(quizSaveKey);
+    const pending = resumePrompt?.pendingTopic;
+    setResumePrompt(null);
+    if (pending) beginFocusedQuiz(pending.topic, pending.subject);
   };
 
   const handleAnswerSelect = (optionIndex) => {
@@ -671,6 +719,9 @@ function App({ currentUser: authUser, getToken }) {
         } finally {
           await userData.endBatch();
         }
+        // Quiz finished — drop the in-progress save so a later reload
+        // doesn't auto-restore the completed quiz.
+        if (quizSaveKey) localStorage.removeItem(quizSaveKey);
         setCurrentView('results');
       } finally {
         isSubmittingRef.current = false;
@@ -2007,7 +2058,47 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           onDismiss={() => setPendingAchievement(null)}
         />
       )}
+      {resumePrompt && (
+        <ResumeQuizPrompt
+          savedState={resumePrompt.savedState}
+          onResume={() => resumeSavedQuiz(resumePrompt.savedState)}
+          onStartFresh={startFreshFromPrompt}
+        />
+      )}
     </>
+  );
+}
+
+function ResumeQuizPrompt({ savedState, onResume, onStartFresh }) {
+  const topicDisplay = topicNames[savedState.selectedTopic] || savedState.selectedTopic;
+  const total = savedState.quizQuestions?.length || 10;
+  const position = Math.min(total, (savedState.currentQuestionIndex || 0) + 1);
+  return (
+    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
+      <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6 text-center">
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
+          <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
+        </div>
+        <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">Pick up where you left off?</h2>
+        <p className="text-sm text-gray-600 mb-6">
+          You have a <strong>{topicDisplay}</strong> quiz in progress — question {position} of {total}.
+        </p>
+        <div className="space-y-2">
+          <button
+            onClick={onResume}
+            className="w-full py-3 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-bold rounded-xl transition-colors"
+          >
+            Resume quiz
+          </button>
+          <button
+            onClick={onStartFresh}
+            className="w-full py-3 bg-white hover:bg-gray-50 text-slate-600 border-2 border-gray-200 font-bold rounded-xl transition-colors"
+          >
+            Start fresh
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
