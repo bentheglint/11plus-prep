@@ -40,8 +40,9 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
   }, []);
 
   // Update streak when a quiz is completed
-  // Streak rule: 5 practice days in any rolling 7-day window = streak maintained
-  // Less than 5 in the last 7 days = streak resets
+  // Streak rule: grows every practice day; resets only if:
+  //   - Gap since last quiz > 2 days (can't maintain 5/7 with a 3+ day gap), OR
+  //   - Established user (7+ days history) dropped below 5/7 in rolling window
   const recordQuizCompletion = useCallback(() => {
     const today = getToday();
 
@@ -56,13 +57,24 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
     // Count practice days in the last 7 days (including today)
     const last7 = countPracticeDaysInWeek(today, updatedHistory);
 
+    // Days elapsed since previous practice (null if first ever practice)
+    const daysSinceLastQuiz = streakData.lastQuizDate
+      ? Math.floor((new Date(today) - new Date(streakData.lastQuizDate)) / 86400000)
+      : null;
+
     let newStreak;
-    if (last7 >= 5 || streakData.currentStreak === 0) {
-      // Either hitting the 5/7 target or starting fresh — streak grows
-      newStreak = streakData.currentStreak + 1;
-    } else {
-      // Fell below 5 in 7 — streak resets to 1 (today counts as day 1)
+    if (streakData.currentStreak === 0 || daysSinceLastQuiz === null) {
+      // Fresh start (first ever practice, or previously broken)
       newStreak = 1;
+    } else if (daysSinceLastQuiz > 2) {
+      // Gap too long — 3+ days off breaks the 5/7 rule, streak resets
+      newStreak = 1;
+    } else if (updatedHistory.length >= 7 && last7 < 5) {
+      // Established user: rolling 7-day window dropped below 5 → streak resets
+      newStreak = 1;
+    } else {
+      // Within tolerance — streak grows by 1 for today's practice
+      newStreak = streakData.currentStreak + 1;
     }
 
     const updated = {

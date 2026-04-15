@@ -94,8 +94,14 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
           </h3>
           <div className="grid grid-cols-2 gap-2">
             {topicMasteries.map(topic => {
-              const bgIntensity = topic.score > 0 ? Math.min(0.15, topic.score / 600) : 0;
+              // Background intensity scales with mastery score (0-100 range typical).
+              // Divisor/cap tuned so a mastered topic reads as a clear tint, not a whisper.
+              const bgIntensity = topic.score > 0 ? Math.min(0.35, topic.score / 300) : 0;
               const colour = subjectConfig[selectedSubject]?.colour || '#6C5CE7';
+              // RGB triples must match the subjectConfig hexes exactly for the tint to read correctly.
+              const colourRgb = colour === '#0770C2' ? '7,112,194'
+                              : colour === '#007D62' ? '0,125,98'
+                              : '108,92,231'; // VR purple #6C5CE7
               const trendColour = topic.trend?.direction === 'up' ? '#007D62' :
                                   topic.trend?.direction === 'down' ? '#FF6B6B' : null;
               const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
@@ -106,7 +112,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                   key={topic.key}
                   onClick={() => onDrillDown ? onDrillDown(selectedSubject, topic.key) : onStartTopic(selectedSubject, topic.key)}
                   className="p-3 rounded-lg border border-gray-100 text-left hover:shadow-md transition-all relative overflow-hidden group"
-                  style={{ background: topic.score > 0 ? `rgba(${colour === '#0770C2' ? '9,132,227' : colour === '#007D62' ? '0,184,148' : '108,92,231'},${bgIntensity})` : undefined }}
+                  style={{ background: topic.score > 0 ? `rgba(${colourRgb},${bgIntensity})` : undefined }}
                 >
                   <div className="flex items-start justify-between mb-1">
                     <p className="text-sm font-bold text-slate-800 leading-tight">{topic.name}</p>
