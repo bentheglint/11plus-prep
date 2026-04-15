@@ -3,9 +3,23 @@ import { ArrowLeft, Home, User, BarChart3 } from 'lucide-react';
 import ChildProgressView from './ChildProgressView';
 import ParentDashboard from './ParentDashboard';
 
+// Tab choice persists across ProgressScreen unmount/remount (e.g. drill-down →
+// back) via sessionStorage — returning to the screen keeps you on the tab
+// you came from. Flagged during 15 Apr walkthrough (Phase 11).
+const TAB_STORAGE_KEY = 'progressScreen:view';
+
 function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, currentUser, onHome, onStartTopic, onDrillDown, onViewQuiz }) {
-  const defaultView = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('view') === 'progress-parent' ? 'parent' : 'child';
-  const [view, setView] = useState(defaultView);
+  const initialView = (() => {
+    if (typeof window === 'undefined') return 'child';
+    if (new URLSearchParams(window.location.search).get('view') === 'progress-parent') return 'parent';
+    const stored = sessionStorage.getItem(TAB_STORAGE_KEY);
+    return stored === 'parent' ? 'parent' : 'child';
+  })();
+  const [view, setViewState] = useState(initialView);
+  const setView = (next) => {
+    setViewState(next);
+    try { sessionStorage.setItem(TAB_STORAGE_KEY, next); } catch (_) { /* noop */ }
+  };
 
   return (
     <div className="app-bg min-h-screen">
