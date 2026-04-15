@@ -272,11 +272,17 @@ function App({ currentUser: authUser, getToken }) {
   // ── Quiz State Persistence ──
   // Save quiz progress so children can resume if they leave mid-quiz
   const quizSaveKey = getQuizSaveKey(currentUser);
+  const quizRestored = React.useRef(false);
 
-  // Save active quiz state whenever it changes
+  // Save active quiz state whenever it changes.
+  // Gated on quizRestored — on a fresh page load the default `currentView`
+  // is 'home', which would otherwise fire the `else` branch below and
+  // delete the saved quiz BEFORE the restore effect can read it (race
+  // condition flagged 15 Apr 2026 during Phase 17 walkthrough).
   useEffect(() => {
     if (!quizSaveKey) return;
     if (quizMode === 'testing') return; // Don't persist testing quizzes
+    if (!quizRestored.current) return;  // Wait until restore has run
     if (currentView === 'quiz' && quizQuestions.length > 0) {
       const saveState = buildQuizSaveState({
         currentView, selectedSubject, selectedTopic, quizMode,
@@ -292,7 +298,6 @@ function App({ currentUser: authUser, getToken }) {
   }, [quizSaveKey, currentView, quizQuestions, currentQuestionIndex, answers, selectedAnswer, selectedPair, showFeedback, selectedSubject, selectedTopic, quizMode]);
 
   // Restore quiz on mount if one was in progress
-  const quizRestored = React.useRef(false);
   useEffect(() => {
     if (quizRestored.current || !quizSaveKey) return;
     quizRestored.current = true;
