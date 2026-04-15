@@ -124,6 +124,13 @@ function App({ currentUser: authUser, getToken }) {
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
   const [currentView, setCurrentView] = useState('home');
+
+  // Scroll to top whenever the view changes — otherwise new screens land
+  // wherever the previous screen's scroll position was (flagged 15 Apr 2026
+  // during Phase 10 walkthrough: Quiz Detail opened mid-page).
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentView]);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
