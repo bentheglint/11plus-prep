@@ -2246,7 +2246,7 @@ export const volumeSubConcepts = [
   // ==========================================
   {
     id: "volume-word-problems",
-    name: "Real-world Volume Problems",
+    name: "Volume word problems",
     category: "other",
     lessons: [
       // ---- Lesson A: Curiosity Hook ----

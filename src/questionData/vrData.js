@@ -12807,7 +12807,7 @@ const vrData = {
           question: "What number comes next in this series? 10, 13, 11, 14, 12, ___",
           options: ["16","15","13","17","14"],
           correct: 1,
-          explanation: "Two patterns: odd positions 10, 11, 12 (+1); even positions 13, 14, 15 (+1). Next is even: 15. Tip: Separate odd and even positions when the numbers bounce up and down. ✓"
+          explanation: "The numbers don't follow one rule — there are two patterns taking turns. Look at positions 1, 3, 5 (the 1st, 3rd, 5th numbers): 10, 11, 12 — each one adds 1. Now look at positions 2, 4, 6 (the 2nd, 4th, 6th numbers): 13, 14, ? — each one also adds 1, so the next is 15. The blank is in position 6, so the answer is 15. Tip: If a series zig-zags up and down, split it into two mini-series — the odd positions (1st, 3rd, 5th…) and the even positions (2nd, 4th, 6th…) — and solve each one separately. ✓"
         },
         {
           id: 67,
@@ -12987,7 +12987,7 @@ const vrData = {
           question: "What number comes next in this series? 27, 64, 125, 216, 343, ___",
           options: ["513","512","510","514","511"],
           correct: 1,
-          explanation: "Cube numbers from 3³. Next: 8³ = 512. Tip: 8³ = 512 — this is also 2⁹ (a power of 2). ✓"
+          explanation: "These are the cube numbers starting from 3³. A cube number is a number multiplied by itself three times: 3³ = 3 × 3 × 3 = 27, 4³ = 4 × 4 × 4 = 64, 5³ = 5 × 5 × 5 = 125, 6³ = 6 × 6 × 6 = 216, 7³ = 7 × 7 × 7 = 343. The next one is 8³ = 8 × 8 × 8 = 512. Tip: Learn the first ten cubes by heart (1, 8, 27, 64, 125, 216, 343, 512, 729, 1000) — if you spot any of them in a series, you'll know the pattern instantly. ✓"
         },
         {
           id: 87,
@@ -13095,7 +13095,7 @@ const vrData = {
           question: "What number comes next in this series? 1, 5, 13, 29, 61, ___",
           options: ["122","119","125","123","127"],
           correct: 2,
-          explanation: "The rule is ×2 then +3: 1×2+3=5, 5×2+3=13, 13×2+3=29, 29×2+3=61, 61×2+3=125. Tip: If differences keep growing but it is not a simple pattern, try multiplying each term by 2, 3 etc. and adjusting. ✓"
+          explanation: "The gaps grow too fast for a simple \"add\" rule (4, 8, 16, 32 — they double), so try a two-step rule: multiply, then add. Test × 2 then + 3: 1 × 2 + 3 = 5 ✓, 5 × 2 + 3 = 13 ✓, 13 × 2 + 3 = 29 ✓, 29 × 2 + 3 = 61 ✓. The rule holds, so the next term is 61 × 2 + 3 = 125. Tip: If the gaps between numbers are growing quickly and no single operation fits, try a two-step rule like \"× 2 then + something\" or \"× 3 then − something\". ✓"
         },
         {
           id: 99,
@@ -13559,7 +13559,7 @@ const vrData = {
           question: "If A=9, B=4 and C=6, what is the value of A × B − C?",
           options: ["28","32","34","36","30"],
           correct: 4,
-          explanation: "A=9, B=4, C=6. By BODMAS, multiply first: A × B = 9 × 4 = 36. Then subtract: 36 − C = 36 − 6 = 30. Tip: For comparison questions, estimate first — late-alphabet letters score higher. ✓"
+          explanation: "A=9, B=4, C=6. Work out the × part first (this is the standard maths rule — × and ÷ are done before + and −). A × B = 9 × 4 = 36. Now subtract: 36 − C = 36 − 6 = 30. Tip: When a letter sum mixes × with + or −, do the × first, then the + or − — even if the × comes later in the line. ✓"
         },
         {
           id: 51,
@@ -13658,7 +13658,7 @@ const vrData = {
           question: "If A=10, B=3 and C=2, what is the value of A − B × C?",
           options: ["14","4","6","8","16"],
           correct: 1,
-          explanation: "A=10, B=3, C=2. By BODMAS, multiply first: B × C = 3 × 2 = 6. Then subtract: A − 6 = 10 − 6 = 4. Be careful — multiplication comes before subtraction! Tip: Double-check by adding the numbers in a different order. ✓"
+          explanation: "A=10, B=3, C=2. In maths, × is always done before − (it doesn't matter that − comes first when you read left to right). So work out B × C first: 3 × 2 = 6. Now subtract that from A: 10 − 6 = 4. If you did A − B first you'd get 7, then × C would give 14 — that's the trap. Tip: Underline the × or ÷ part in the line and do it before anything else. ✓"
         },
         {
           id: 62,
@@ -13784,7 +13784,7 @@ const vrData = {
           question: "The same number fills both gaps. What is it? 2 × ___ + ___ = 27",
           options: ["11","8","7","10","9"],
           correct: 4,
-          explanation: "Call the missing number n. Then 2 × n + n = 3 × n = 27. So n = 27 ÷ 3 = 9. Check: 2 × 9 + 9 = 18 + 9 = 27. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          explanation: "Call the missing number n. The line becomes 2 × n + n, which is 3 lots of n altogether, so 3 × n = 27. That means n = 27 ÷ 3 = 9. Check: 2 × 9 + 9 = 18 + 9 = 27. Tip: When the same unknown appears twice in a line, count how many of it there are in total — then divide to find its value. ✓"
         },
         {
           id: 76,
@@ -14271,10 +14271,10 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
-          question: "Look at the pattern: big → dig, cap → dap... that's not a word! Try: big → dig, cat → dat... not a word either! The rule is: change the first letter to the one that comes 2 letters later. big (b+2=d) → dig. cat (c+2=e) → ___",
+          question: "big → dig. Using the same rule, what does cat become? cat → ___",
           options: ["mat","hat","eat","sat","rat"],
           correct: 2,
-          explanation: "The rule is: move the first letter forward by 2 in the alphabet. b+2=d, so big→dig. c+2=e, so cat→eat. Tip: Compare letter by letter — write the words aligned and circle what changed. ✓"
+          explanation: "Compare big and dig — only the first letter changed, from b to d. In the alphabet, b is followed by c, d, so b has moved forward 2 places. Apply the same rule to cat: the first letter c moves forward 2 places → c, d, e. So cat → eat. Tip: For word codes, always spot exactly what changed (which letter? which position?) and count the alphabet jump — that's your rule. ✓"
         },
         {
           id: 2,

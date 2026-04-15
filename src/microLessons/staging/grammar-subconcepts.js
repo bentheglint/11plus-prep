@@ -3775,7 +3775,18 @@ export const grammarSubConcepts = [
           {
             type: "teach",
             title: () => "Right camera angle, right picture!",
-            body: (v) => `${v.name} ${v.mistake}.\n\n${v.rule}.\n\n**Quick checks for verb forms:**\n• has/have + past participle (the -ed or irregular form) = present perfect — 'has eaten' connects past to present\n• had + past participle = past perfect — 'had eaten' happened before another past event\n• am/is/are + -ing = present progressive — 'is eating' is happening right now\n• was/were + -ing = past progressive — 'was eating' was ongoing in the past`,
+            body: (v) => {
+              // Tailored "right camera angle" tip per mistake type —
+              // avoids the wall-of-text cheat sheet that overwhelmed readers.
+              const cameraTip = v.name === "Finn"
+                ? `🎥 Wrong camera angle: **'has sung'** — that one connects to *now*. But the interval is in the past, so 'now' doesn't fit.\n\nRight camera angle: **'had sung'** — the flashback camera. Use 'had + past participle' when one past event happened *before* another past event.`
+                : v.name === "Priya"
+                ? `🎥 Wrong camera angle: **'has tripped'** — that one connects to *now*. But the race is already over, so 'now' doesn't fit.\n\nRight camera angle: **'tripped'** — simple past. When something ongoing (*was winning*) gets interrupted, the interrupting bit is just simple past, not present perfect.`
+                : v.name === "Oliver"
+                ? `🎥 Wrong camera angle: **'was ate'** — 'ate' is the wrong shape for this camera.\n\nRight camera angle: **'was eating'** — past progressive always uses *was/were + the -ing form*. The -ing is what makes the action feel ongoing, like a camera rolling.`
+                : `🎥 Wrong camera angle: it doesn't match the timing. Right camera angle: ${v.rule}.`;
+              return `Here's what's going on: ${v.name} ${v.mistake}.\n\n${cameraTip}\n\nOne trick that always helps — ask yourself *when* the action happened, and *what else* was happening at the same time. The timing tells you which camera to pick.`;
+            },
             visual: {
               component: "WorkedExample",
               props: (v) => ({
