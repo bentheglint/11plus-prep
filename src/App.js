@@ -81,11 +81,16 @@ function App({ currentUser: authUser, getToken }) {
     return authUser || localStorage.getItem('current-user') || '';
   });
 
-  // Sync currentUser when authUser prop changes (Clerk login)
+  // Sync currentUser when authUser prop changes (Clerk login/logout).
+  // Codex BLOCKER: explicit logout must clear currentUser, otherwise hooks
+  // keep operating against the previous child's data until the next login.
   useEffect(() => {
     if (authUser && authUser !== currentUser) {
       setCurrentUser(authUser);
       localStorage.setItem('current-user', authUser);
+    } else if (authUser === null && currentUser) {
+      setCurrentUser('');
+      localStorage.removeItem('current-user');
     }
   }, [authUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -146,6 +151,10 @@ function App({ currentUser: authUser, getToken }) {
     }
     prevShowTutorChat.current = showTutorChat;
   }, [showTutorChat]);
+  // Re-entry guard for quiz completion — prevents duplicate quiz_results rows
+  // when handleNextQuestion fires twice (rapid double-click, StrictMode remount,
+  // any async re-entry). Codex Fix E.
+  const isSubmittingRef = React.useRef(false);
   // Post-question tip state (Oracle: show tip ~every 3rd wrong answer)
   const wrongAnswerCount = React.useRef(0);
   const sessionShownTipIds = React.useRef(new Set());
@@ -180,6 +189,64 @@ function App({ currentUser: authUser, getToken }) {
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
   });
+
+  // ── Per-user state isolation on switch/logout ──
+  // Codex BLOCKER (child-safety): useD1Data resets its own hook state when
+  // currentUser changes, but App.js keeps all navigation + quiz + review
+  // state in local component state. If Ben switches from Evie mid-quiz or
+  // on Quiz Detail, without this reset the new user would briefly see the
+  // previous child's screen content. Bounce every transition to Home with
+  // a clean slate.
+  const prevCurrentUser = React.useRef(currentUser);
+  useEffect(() => {
+    if (prevCurrentUser.current === currentUser) return;
+    prevCurrentUser.current = currentUser;
+
+    // Navigation
+    setCurrentView('home');
+    setSelectedSubject(null);
+    setSelectedTopic(null);
+    setDrillDownTopic(null);
+    setSelectedQuiz(null);
+
+    // Mid-quiz state
+    setQuizMode(null);
+    setQuizQuestions([]);
+    setAnswers([]);
+    setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setSelectedPair([]);
+    setShowFeedback(false);
+    setQuestionFeedback([]);
+    setSavedTimerSecs(0);
+
+    // Tips / chat / overlays
+    setShowTutorChat(false);
+    setChatMessages([]);
+    setUserMessage('');
+    setShowFeedbackForm(false);
+    setFeedbackText('');
+    setPreQuizTip(null);
+    setShowPreQuizTip(false);
+    setPostQuestionTip(null);
+    setShowWelcomeBack(false);
+    setWelcomeBackTip(null);
+    setForcedLessonResult(null);
+    setLessonFromQuiz(null);
+    setShowDidItHelp(false);
+    setPendingAchievement(null);
+
+    // Refs
+    isSubmittingRef.current = false;
+    quizSessionId.current = Date.now();
+    questionStartTime.current = Date.now();
+    pausedTimeMs.current = 0;
+    pauseStartTime.current = null;
+    wrongAnswerCount.current = 0;
+    sessionShownTipIds.current = new Set();
+    welcomeBackChecked.current = false;
+    mockResultsSaved.current = false;
+  }, [currentUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Check achievements when results are shown — state is fully updated by then
   const prevResultsKey = React.useRef(null);
@@ -570,18 +637,32 @@ function App({ currentUser: authUser, getToken }) {
         window.scrollTo(0, speedReviewScrollY);
         return;
       }
-      const correctCount = answers.filter(a => a.correct).length;
-      markQuestionsAsSeen(quizQuestions);
-      updateTopicPerformance(quizQuestions, answers);
-      // Atomic batch: per-question rows, quiz row, streak, PP, practice session, last-session-date
-      // all commit together or not at all. See Codex adversarial review #1.
-      userData.startBatch();
-      recordQuizResults(quizQuestions, answers);
-      const topicLabel = quizMode === 'daily' ? 'Daily Learning' : quizQuestions[0].topicName;
-      saveQuizResult(selectedSubject, topicLabel, correctCount, quizQuestions.length);
-      userData.saveLastSessionDate(new Date().toISOString());
-      await userData.endBatch();
-      setCurrentView('results');
+      // Re-entry guard (Codex Fix E): prevents duplicate quiz_results when
+      // handleNextQuestion fires twice (rapid double-click, StrictMode remount,
+      // or any async re-entry between the first call's saves and its setCurrentView).
+      if (isSubmittingRef.current) return;
+      isSubmittingRef.current = true;
+      try {
+        const correctCount = answers.filter(a => a.correct).length;
+        markQuestionsAsSeen(quizQuestions);
+        updateTopicPerformance(quizQuestions, answers);
+        // Atomic batch: per-question rows, quiz row, streak, PP, practice session, last-session-date
+        // all commit together or not at all.
+        userData.startBatch();
+        try {
+          recordQuizResults(quizQuestions, answers);
+          // Codex Fix B: store slug in quiz_results.topic_key (not the display
+          // name) so the column aligns with question_results.topic_key.
+          const topicLabel = quizMode === 'daily' ? 'daily-learning' : quizQuestions[0].topicKey;
+          saveQuizResult(selectedSubject, topicLabel, correctCount, quizQuestions.length);
+          userData.saveLastSessionDate(new Date().toISOString());
+        } finally {
+          await userData.endBatch();
+        }
+        setCurrentView('results');
+      } finally {
+        isSubmittingRef.current = false;
+      }
     }
   };
 

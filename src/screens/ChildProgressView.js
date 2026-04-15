@@ -157,7 +157,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                     <div className="flex items-center gap-3">
                       <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: dotColour }} />
                       <div>
-                        <p className="text-sm font-medium text-slate-800">{quiz.topic}</p>
+                        <p className="text-sm font-medium text-slate-800">{topicNames[quiz.topic] || quiz.topic}</p>
                         <p className="text-[10px] text-slate-500">{dateLabel} · {quiz.score}/{quiz.total}</p>
                       </div>
                     </div>

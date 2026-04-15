@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { ArrowLeft, CheckCircle, XCircle, Circle } from 'lucide-react';
+import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
 const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
@@ -74,7 +75,7 @@ function QuizDetailScreen({ quiz, questionResults, questionData, englishData, vr
         <div className="card-elevated p-5 mb-6">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h1 className="text-xl font-heading font-bold text-slate-800">{quiz.topic}</h1>
+              <h1 className="text-xl font-heading font-bold text-slate-800">{topicNames[quiz.topic] || quiz.topic}</h1>
               <p className="text-sm text-slate-500">
                 {subjectNames[quiz.subject] || quiz.subject} · {dateLabel}
               </p>

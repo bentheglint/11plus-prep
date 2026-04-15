@@ -1,6 +1,7 @@
 // ── Batch Write Endpoint ──
-// Accepts an array of typed operations, deduplicates by UUID,
-// executes atomically in db.batch() chunks (data + UUID marker together).
+// Accepts an array of typed operations, deduplicates by UUID.
+// Each operation executes in its own tiny atomic db.batch() of
+// (data-stmt + uuid-marker) so a UUID race on one op never rolls back others.
 
 import { json, getChildId } from '../helpers.js';
 
@@ -19,6 +20,68 @@ const VALID_TYPES = new Set([
 // Mutable types that need version checks
 const MUTABLE_TYPES = new Set(['streaks', 'prep-points', 'preferences', 'topic-performance']);
 
+// ── Topic-key normalisation (Codex Fix B-Worker) ──
+// Old clients write display names ("Ratio & Proportion"); new clients write
+// slugs ("ratio"). Normalise on ingest so stale tabs cannot re-pollute the
+// column after migration.
+const TOPIC_NAME_TO_SLUG = {
+  'Ratio & Proportion': 'ratio',
+  'Long Multiplication': 'longmultiplication',
+  'Long Division': 'longdivision',
+  'Prime Numbers & Factors': 'primenumbersfactors',
+  'Place Value and Rounding': 'placevalue',
+  'Place Value': 'placevalue',
+  'Area and Perimeter': 'areaperimeter',
+  'Area & Perimeter': 'areaperimeter',
+  'Angles and Shapes': 'anglesshapes',
+  'Angles & Shapes': 'anglesshapes',
+  'Negative Numbers': 'negativenumbers',
+  'Speed, Distance, Time': 'speeddistancetime',
+  'Data Handling': 'datahandling',
+  'Daily Learning': 'daily-learning',
+  'Odd Two Out': 'oddTwoOut',
+  'Hidden Words': 'hiddenWords',
+  'Missing Letters & Words': 'missingLettersWords',
+  'Missing Letters': 'missingLettersWords',
+  'Letter Sums & Missing Numbers': 'letterSums',
+  'Letter Sums': 'letterSums',
+  'Logic & Language Puzzles': 'logicAndLanguage',
+  'Logic & Language': 'logicAndLanguage',
+  'Shared Letter': 'sharedLetter',
+  'Verbal Analogies': 'verbalAnalogies',
+  'Word Patterns & Codes': 'wordCodeAnalogies',
+  'Word Codes': 'wordCodeAnalogies',
+  'Compound Words': 'compoundWords',
+  'Letter Move': 'letterMove',
+  'Letter Codes': 'letterCodes',
+  'Letter Pair Series': 'letterPairSeries',
+  'Letter Pairs': 'letterPairSeries',
+  'Number Series': 'numberSeries',
+  'Number Word Codes': 'numberWordCodes',
+  'Word Class': 'wordClassGrammar',
+  'Word Class & Grammar': 'wordClassGrammar',
+  'Reading Comprehension': 'comprehension',
+  // Capitalised single-word display names → slug equivalents
+  'Percentages': 'percentages',
+  'Decimals': 'decimals',
+  'Fractions': 'fractions',
+  'Algebra': 'algebra',
+  'Volume': 'volume',
+  'Sequences': 'sequences',
+  'Comprehension': 'comprehension',
+  'Spelling': 'spelling',
+  'Punctuation': 'punctuation',
+  'Grammar': 'grammar',
+  'Vocabulary': 'vocabulary',
+  'Synonyms': 'synonyms',
+  'Antonyms': 'antonyms',
+};
+
+export function normaliseTopicKey(key) {
+  if (!key) return key;
+  return TOPIC_NAME_TO_SLUG[key] || key;
+}
+
 /**
  * Build a D1 prepared statement for an append-only operation.
  * Returns the statement or null if invalid.
@@ -26,7 +89,8 @@ const MUTABLE_TYPES = new Set(['streaks', 'prep-points', 'preferences', 'topic-p
 function buildAppendStatement(db, childId, type, payload) {
   switch (type) {
     case 'question-result': {
-      const { questionId, topicKey, subject, isCorrect, timeMs, difficulty, sessionId, selectedAnswer } = payload;
+      const { questionId, subject, isCorrect, timeMs, difficulty, sessionId, selectedAnswer } = payload;
+      const topicKey = normaliseTopicKey(payload.topicKey);
       if (questionId == null || !topicKey || !subject || isCorrect == null) return null;
       // selectedAnswer is stored as TEXT (JSON): integer for MCQ, sorted pair for select-two, {A,B} for pick-from-sets
       const selectedAnswerJson = selectedAnswer !== undefined && selectedAnswer !== null
@@ -37,7 +101,8 @@ function buildAppendStatement(db, childId, type, payload) {
       ).bind(childId, questionId, topicKey, subject, isCorrect ? 1 : 0, timeMs || null, difficulty || null, sessionId || null, selectedAnswerJson);
     }
     case 'quiz-result': {
-      const { topicKey, subject, score, total, timeSeconds, quizMode, sessionId } = payload;
+      const { subject, score, total, timeSeconds, quizMode, sessionId } = payload;
+      const topicKey = normaliseTopicKey(payload.topicKey);
       if (!topicKey || !subject || score == null || !total) return null;
       return db.prepare(
         `INSERT INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode, session_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
@@ -51,12 +116,25 @@ function buildAppendStatement(db, childId, type, payload) {
       ).bind(childId, subject, totalQuestions, totalCorrect, percentage || 0, timeTaken || 0, timeLimit || 0, JSON.stringify(sectionResults || {}), JSON.stringify(questionTimes || {}));
     }
     case 'practice-session': {
+      // Codex Fix D: merge day totals rather than overwrite. Multiple quizzes on
+      // the same day previously clobbered each other because the old SQL did
+      // `ON CONFLICT DO UPDATE SET data = excluded.data`. We now accumulate
+      // questionsAttempted + questionsCorrect into the existing row.
       const { sessionDate, data } = payload;
       if (!sessionDate || !data) return null;
+      const attemptedDelta = Number(data.questionsAttempted) || 0;
+      const correctDelta = Number(data.questionsCorrect) || 0;
       return db.prepare(
         `INSERT INTO practice_sessions (child_id, session_date, data) VALUES (?, ?, ?)
-         ON CONFLICT(child_id, session_date) DO UPDATE SET data = excluded.data, created_at = datetime('now')`
-      ).bind(childId, sessionDate, JSON.stringify(data));
+         ON CONFLICT(child_id, session_date) DO UPDATE SET
+           data = json_set(
+             data,
+             '$.questionsAttempted', COALESCE(CAST(json_extract(data, '$.questionsAttempted') AS INTEGER), 0) + ?,
+             '$.questionsCorrect',   COALESCE(CAST(json_extract(data, '$.questionsCorrect') AS INTEGER), 0) + ?,
+             '$.lastUpdated',        datetime('now')
+           ),
+           created_at = created_at`
+      ).bind(childId, sessionDate, JSON.stringify(data), attemptedDelta, correctDelta);
     }
     case 'lesson-complete': {
       const { lessonId } = payload;
@@ -66,7 +144,8 @@ function buildAppendStatement(db, childId, type, payload) {
       ).bind(childId, lessonId);
     }
     case 'seen-question': {
-      const { questionId, topicKey, subject } = payload;
+      const { questionId, subject } = payload;
+      const topicKey = normaliseTopicKey(payload.topicKey);
       if (questionId == null || !topicKey || !subject) return null;
       return db.prepare(
         `INSERT OR IGNORE INTO seen_questions (child_id, question_id, topic_key, subject) VALUES (?, ?, ?, ?)`
@@ -88,7 +167,8 @@ function buildAppendStatement(db, childId, type, payload) {
       ).bind(childId, tipId, lastSeenDate);
     }
     case 'leitner-entry': {
-      const { questionId, topicKey, subject, level, lastReviewed, nextReview, timesCorrect, timesIncorrect } = payload;
+      const { questionId, subject, level, lastReviewed, nextReview, timesCorrect, timesIncorrect } = payload;
+      const topicKey = normaliseTopicKey(payload.topicKey);
       if (questionId == null || !topicKey) return null;
       return db.prepare(
         `INSERT INTO leitner_queue (child_id, question_id, topic_key, subject, level, last_reviewed, next_review, times_correct, times_incorrect)
@@ -106,12 +186,17 @@ function buildAppendStatement(db, childId, type, payload) {
 
 /**
  * Build a UUID dedup marker INSERT statement.
- * Paired with data statements in the same db.batch() call for atomicity.
+ * Paired with data statement in a tiny per-op db.batch() for atomicity.
  */
 function buildUUIDMarker(db, childId, uuid, type) {
   return db.prepare(
     `INSERT INTO processed_operations (operation_uuid, child_id, operation_type) VALUES (?, ?, ?)`
   ).bind(uuid, childId, type);
+}
+
+function isUuidConflictError(err) {
+  const msg = String(err?.message || err || '');
+  return msg.includes('UNIQUE') && msg.includes('processed_operations');
 }
 
 export async function handleBatch(request, env, userId) {
@@ -138,7 +223,7 @@ export async function handleBatch(request, env, userId) {
     }
   }
 
-  // Check which UUIDs are already processed (dedup)
+  // Check which UUIDs are already processed (dedup, fast path for the common case)
   const uuids = operations.map(op => op.uuid);
   const placeholders = uuids.map(() => '?').join(',');
   const { results: existingOps } = await db.prepare(
@@ -159,9 +244,11 @@ export async function handleBatch(request, env, userId) {
     preferences: prefsRow?.version ?? 1,
   };
 
-  // Process each operation
+  // Build per-operation batches so a UUID race on one op does not roll back others.
+  // Each opBatch carries the statements that MUST commit atomically together
+  // (data + marker), and the result slot to update after execution.
   const results = [];
-  const statements = []; // Pairs of [dataStmt, uuidMarkerStmt]
+  const opBatches = []; // Array<{ uuid, resultIndex, stmts: Statement[] }>
 
   for (const op of operations) {
     // Skip already-processed (idempotent)
@@ -182,7 +269,8 @@ export async function handleBatch(request, env, userId) {
 
       if (versionKey === 'topic-performance') {
         // Topic performance is keyed by topicKey+subject, handle separately
-        const { topicKey, subject, version, data } = op.payload;
+        const { subject, data } = op.payload;
+        const topicKey = normaliseTopicKey(op.payload.topicKey);
         if (!topicKey || !subject || !data) {
           results.push({ uuid: op.uuid, status: 'error', error: 'Missing topicKey, subject, or data' });
           continue;
@@ -194,9 +282,13 @@ export async function handleBatch(request, env, userId) {
            ON CONFLICT(child_id, topic_key, subject) DO UPDATE SET
              data = excluded.data, version = topic_performance.version + 1, updated_at = datetime('now')`
         ).bind(childId, topicKey, subject, JSON.stringify(data));
-        statements.push(stmt);
-        statements.push(buildUUIDMarker(db, childId, op.uuid, op.type));
+        const resultIndex = results.length;
         results.push({ uuid: op.uuid, status: 'ok' });
+        opBatches.push({
+          uuid: op.uuid,
+          resultIndex,
+          stmts: [stmt, buildUUIDMarker(db, childId, op.uuid, op.type)],
+        });
         continue;
       }
 
@@ -256,9 +348,13 @@ export async function handleBatch(request, env, userId) {
       }
 
       if (stmt) {
-        statements.push(stmt);
-        statements.push(buildUUIDMarker(db, childId, op.uuid, op.type));
+        const resultIndex = results.length;
         results.push({ uuid: op.uuid, status: 'ok' });
+        opBatches.push({
+          uuid: op.uuid,
+          resultIndex,
+          stmts: [stmt, buildUUIDMarker(db, childId, op.uuid, op.type)],
+        });
       }
       continue;
     }
@@ -270,19 +366,32 @@ export async function handleBatch(request, env, userId) {
       continue;
     }
 
-    // Pair data statement with UUID marker (atomic — Codex Finding 1)
-    statements.push(stmt);
-    statements.push(buildUUIDMarker(db, childId, op.uuid, op.type));
+    const resultIndex = results.length;
     results.push({ uuid: op.uuid, status: 'ok' });
+    opBatches.push({
+      uuid: op.uuid,
+      resultIndex,
+      stmts: [stmt, buildUUIDMarker(db, childId, op.uuid, op.type)],
+    });
   }
 
-  // Execute all statements in db.batch() — atomic per call
-  // D1 batch limit is 100 statements, so chunk if needed
-  // Each operation = 2 statements (data + UUID marker), so 50 ops = 100 stmts
-  if (statements.length > 0) {
-    const CHUNK_SIZE = 100;
-    for (let i = 0; i < statements.length; i += CHUNK_SIZE) {
-      await db.batch(statements.slice(i, i + CHUNK_SIZE));
+  // Execute each op as its own tiny atomic batch. If a UUID race loses, only
+  // that op rolls back — others in the same request still commit.
+  // (Codex Fix C-Worker)
+  for (const opBatch of opBatches) {
+    try {
+      await db.batch(opBatch.stmts);
+    } catch (err) {
+      if (isUuidConflictError(err)) {
+        // Concurrent duplicate — treat as 'duplicate' so client stops retrying
+        results[opBatch.resultIndex] = { uuid: opBatch.uuid, status: 'duplicate' };
+      } else {
+        results[opBatch.resultIndex] = {
+          uuid: opBatch.uuid,
+          status: 'error',
+          error: String(err?.message || err),
+        };
+      }
     }
   }
 

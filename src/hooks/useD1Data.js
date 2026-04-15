@@ -9,6 +9,32 @@ import { createSyncQueue } from '../utils/syncQueue';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
+// ── Flush Mutex (module-level, keyed by userName) ──
+// Lives outside the hook so it survives StrictMode remounts and component
+// unmount/remount cycles. Prevents the UUID-race where N parallel flushes
+// (from rapid enqueue() calls during quiz completion) each pull the same
+// ops, causing UNIQUE constraint failures on processed_operations.
+// Keyed by userName so different children never block each other.
+// Exported for testing — do not import from app code.
+export const flushState = new Map(); // userName → { flushing: boolean, pending: boolean }
+
+export function getFlushState(userName) {
+  if (!flushState.has(userName)) {
+    flushState.set(userName, { flushing: false, pending: false });
+  }
+  return flushState.get(userName);
+}
+
+// Resets the mutex for a given user. Exported for testing — never call from
+// app code.
+export function _resetFlushStateForTests(userName) {
+  if (userName) {
+    flushState.delete(userName);
+  } else {
+    flushState.clear();
+  }
+}
+
 
 // Default empty state shapes
 const DEFAULTS = {
@@ -57,7 +83,7 @@ function normaliseDate(d) {
 // order for display, sort explicitly by date — don't rely on source order.
 // See: ChildProgressView Recent Activity bug (fixed 14 Apr 2026).
 
-function transformServerData(serverData) {
+export function transformServerData(serverData) {
   // quizHistory — newest-first (ORDER BY completed_at DESC)
   const quizHistory = (serverData.quizResults || []).map(r => ({
     id: Date.parse(normaliseDate(r.completed_at)) || Date.now(),
@@ -309,9 +335,46 @@ export default function useD1Data(userName, getToken) {
     if (data.versions) versionsRef.current = data.versions;
   }, []);
 
-  // ── Load from D1 on mount / user change ──
+  // Synchronously reset to fresh-user defaults. Fires at the TOP of the load
+  // effect on any userName transition (switch or logout) so no render ever
+  // sees the previous child's data. Codex adversarial review BLOCKER
+  // (child-safety): leaving prior hook state resident during the async /api/data/all
+  // reload window could leak Child A's progress into Child B's first render.
+  const resetToFreshUser = useCallback(() => {
+    setQuizHistory(DEFAULTS.quizHistory);
+    setTopicPerformance(DEFAULTS.topicPerformance);
+    setSeenQuestions(DEFAULTS.seenQuestions);
+    setMockTestHistory(DEFAULTS.mockTestHistory);
+    setLessonHistory(DEFAULTS.lessonHistory);
+    setQuestionResults(DEFAULTS.questionResults);
+    setPracticeLog(DEFAULTS.practiceLog);
+    setStreakData(DEFAULTS.streakData);
+    setPrepPointsData(DEFAULTS.prepPointsData);
+    setAchievements(DEFAULTS.achievements);
+    setSeenTips(DEFAULTS.seenTips);
+    setLastSessionDate(DEFAULTS.lastSessionDate);
+    setLeitnerQueue(DEFAULTS.leitnerQueue);
+    setLoaded(false);
+    versionsRef.current = { streaks: 1, prepPoints: 1, preferences: 1 };
+  }, []);
+
+  // ── Load from D1 on mount / user change / logout ──
   useEffect(() => {
-    if (!userName) return;
+    // On any userName transition — including becoming falsy (logout) — reset
+    // state synchronously before any async work. Codex adversarial review
+    // BLOCKER #2: the previous `if (!userName) return;` early-bail meant
+    // logout never cleared the previous child's hook state.
+    const userChanged = prevUser.current !== userName;
+    if (userChanged) {
+      resetToFreshUser();
+      prevUser.current = userName;
+    }
+
+    if (!userName) {
+      // Logged out — state is now fresh, nothing to load.
+      setLoaded(true);
+      return;
+    }
 
     let cancelled = false;
 
@@ -409,10 +472,9 @@ export default function useD1Data(userName, getToken) {
     }
 
     loadData();
-    prevUser.current = userName;
 
     return () => { cancelled = true; };
-  }, [userName, getToken, populateState]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [userName, getToken, populateState, resetToFreshUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Online/offline listener ──
   useEffect(() => {
@@ -426,51 +488,74 @@ export default function useD1Data(userName, getToken) {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Flush SyncQueue to D1 ──
+  // Mutex-protected via module-level flushState (keyed by userName) so the
+  // mutex survives StrictMode remounts and component unmount/remount cycles.
+  // Concurrent callers set `pending` so the in-flight flush re-drains after
+  // completing. Prevents the UUID-race where N parallel flushes pull the
+  // same ops, causing UNIQUE constraint failures on processed_operations.
+  // (Codex Fix C-Client; belt-and-braces with the per-op batching in the Worker.)
   const flushQueue = useCallback(async () => {
     const queue = syncQueueRef.current;
-    if (!queue || queue.isEmpty() || !getToken || !API_URL) return;
+    if (!queue || queue.isEmpty() || !getToken || !API_URL || !userName) return;
 
-    const { valid, quarantined } = queue.validateOwnership();
-    if (quarantined.length > 0) {
-      queue.remove(quarantined.map(op => op.uuid));
+    const state = getFlushState(userName);
+
+    // If a flush is already running (same user, possibly another mount),
+    // mark pending and bail — the running flush will re-drain.
+    if (state.flushing) {
+      state.pending = true;
+      return;
     }
-    if (valid.length === 0) return;
 
-    const ops = valid.slice(0, 50); // Batch up to 50 at a time
-    const result = await apiPost('/api/data/batch', { operations: ops }, getToken);
-
-    if (result) {
-      // Remove successfully processed operations
-      const processed = (result.results || [])
-        .filter(r => r.status === 'ok' || r.status === 'duplicate')
-        .map(r => r.uuid);
-      queue.remove(processed);
-
-      // Update version cache from response
-      if (result.versions) {
-        versionsRef.current = {
-          streaks: result.versions.streaks ?? versionsRef.current.streaks,
-          prepPoints: result.versions.prepPoints ?? versionsRef.current.prepPoints,
-          preferences: result.versions.preferences ?? versionsRef.current.preferences,
-        };
+    state.flushing = true;
+    try {
+      const { valid, quarantined } = queue.validateOwnership();
+      if (quarantined.length > 0) {
+        queue.remove(quarantined.map(op => op.uuid));
       }
+      if (valid.length === 0) return;
 
-      // Handle conflicts — update local state with server data
-      const conflicts = (result.results || []).filter(r => r.status === 'conflict');
-      for (const conflict of conflicts) {
-        queue.remove([conflict.uuid]); // Don't retry conflicts
-        // Could re-fetch specific data here, but for now trust the version update
-      }
+      const ops = valid.slice(0, 50); // Batch up to 50 at a time
+      const result = await apiPost('/api/data/batch', { operations: ops }, getToken);
 
-      // If there are more operations, flush again
-      if (!queue.isEmpty()) {
-        setTimeout(() => flushQueue(), 100);
+      if (result) {
+        // Remove successfully processed operations
+        const processed = (result.results || [])
+          .filter(r => r.status === 'ok' || r.status === 'duplicate')
+          .map(r => r.uuid);
+        queue.remove(processed);
+
+        // Update version cache from response
+        if (result.versions) {
+          versionsRef.current = {
+            streaks: result.versions.streaks ?? versionsRef.current.streaks,
+            prepPoints: result.versions.prepPoints ?? versionsRef.current.prepPoints,
+            preferences: result.versions.preferences ?? versionsRef.current.preferences,
+          };
+        }
+
+        // Handle conflicts — update local state with server data
+        const conflicts = (result.results || []).filter(r => r.status === 'conflict');
+        for (const conflict of conflicts) {
+          queue.remove([conflict.uuid]); // Don't retry conflicts
+          // Could re-fetch specific data here, but for now trust the version update
+        }
+      } else {
+        // Network failure — increment retry counts
+        queue.incrementRetries(ops.map(op => op.uuid));
       }
-    } else {
-      // Network failure — increment retry counts
-      queue.incrementRetries(ops.map(op => op.uuid));
+    } finally {
+      state.flushing = false;
     }
-  }, [getToken]);
+
+    // Drain again if: more ops remain, OR another caller tried to flush
+    // while we were in-flight (state.pending was set).
+    const shouldDrain = state.pending || !queue.isEmpty();
+    state.pending = false;
+    if (shouldDrain) {
+      setTimeout(() => flushQueue(), 100);
+    }
+  }, [getToken, userName]);
 
   // ── Batch Mode ──
   const startBatch = useCallback(() => { batchingRef.current = true; }, []);
@@ -673,6 +758,7 @@ export default function useD1Data(userName, getToken) {
     // New methods (batch mode)
     startBatch,
     endBatch,
+    enqueue,
     // New metadata
     loaded,
   };
