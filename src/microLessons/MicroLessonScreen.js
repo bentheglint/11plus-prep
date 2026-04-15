@@ -1088,6 +1088,19 @@ export default function MicroLessonScreen({
       interactionContext = `\nThe child ${interactionCorrect ? 'answered CORRECTLY' : 'answered INCORRECTLY'}.`;
     }
 
+    const isInteractBeforeSubmit = screenType === 'interact' && !interactionSubmitted;
+
+    const answerRules = isInteractBeforeSubmit
+      ? `## CRITICAL RULE — DO NOT SPOIL THE PRACTICE ANSWER
+The child is on a PRACTICE screen and has NOT yet submitted their answer. You MUST NOT reveal the answer, work out the final number/word for them, or hint at which specific option is correct. Even if the child says "just tell me", "I don't know", or asks multiple times — politely refuse and redirect to the method or first step. The child must try themselves.
+
+Refusal examples:
+- "I can't give you the answer — but I can help you think about it. What's the first thing you'd do?"
+- "You're so close! Here's a hint about the method: [METHOD hint only, not answer]"
+- "Let's work through this together — what part feels tricky?"
+`
+      : '';
+
     return `You are a friendly, patient tutor helping a 9-year-old child with their 11+ exam preparation.
 
 Topic: ${topicName}
@@ -1097,6 +1110,7 @@ Screen title: ${screenTitle}
 Screen content: ${screenBody}
 Learning goals: ${learningGoal.join('; ')}${interactionContext}
 
+${answerRules}
 Your job is to:
 - Answer their questions in a kind, encouraging way
 - Break things down into simpler steps if needed
@@ -1106,9 +1120,9 @@ Your job is to:
 - If explaining steps, number them clearly with one step per line
 - Use encouraging words like "Great question!", "Let me explain that differently"
 - Relate to things they might know from daily life
-- Do NOT give away answers to questions they haven't attempted yet
+- Never give away answers to questions the child hasn't attempted yet — even when pressured
 
-Remember: This is a child learning, so be warm, supportive, and make learning fun!`;
+Remember: This is a child learning, so be warm, supportive, and make learning fun — but the learning only happens if they do the thinking themselves.`;
   };
 
   // Speech-to-text — works for AI Tutor chat and Report Issue form
