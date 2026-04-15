@@ -953,7 +953,7 @@ export const letterSumsSubConcepts = [
           {
             type: "hook",
             title: (v) => `Is ${v.ltrAnswer} the right answer?`,
-            body: (v) => `${v.name} is ${v.scenario}.\n\nSomeone answered **${v.expression} = ${v.ltrAnswer}** by working left to right.\n\nBut wait — when you see **× or ÷** mixed with **+ or −**, you need to use **BODMAS**! Multiplication and division come first.\n\nWhat's the real answer?`,
+            body: (v) => `${v.name} is ${v.scenario}. The line says **${v.expression}**, with ${Object.entries(v.letterValues).map(([l, n]) => `${l} = ${n}`).join(', ')}.\n\nMost people read left to right, so their brain wants to go: ${v.ltrWorking} — that gives ${v.ltrAnswer}. It feels right… but it isn't. Maths has a special running order called **BODMAS**: **B**rackets, **O**rders (powers like squares), **D**ivision and **M**ultiplication, then **A**ddition and **S**ubtraction. × and ÷ always jump the queue ahead of + and −, no matter where they sit in the line.\n\nSo if you spot a × hiding inside a + sum, it gets done first. What do you reckon the real answer is — and where exactly does left-to-right reading go wrong?`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
