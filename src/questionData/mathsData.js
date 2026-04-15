@@ -26582,7 +26582,7 @@ datahandling: {
           yLabel: "Temperature (°C)",
           unit: "°",
           color: "#f97316",
-          showValues: false
+          showValues: true
         }
       },
       question: "The temperature rises at a steady rate, as shown in the line graph. If the pattern continues, what would you expect the temperature to be at 4pm?",
@@ -26606,7 +26606,7 @@ datahandling: {
           xLabel: "Day",
           yLabel: "Visitors",
           color: "#6C5CE7",
-          showValues: false
+          showValues: true
         }
       },
       question: "The line graph shows library visitors each day. The librarian says the mean number of visitors per day was at least 115. Is this correct? What is the actual mean?",
@@ -26631,7 +26631,7 @@ datahandling: {
           xLabel: "Month",
           yLabel: "Ice creams sold",
           color: "#38bdf8",
-          showValues: false
+          showValues: true
         }
       },
       question: "The line graph shows ice cream sales over 6 months. What fraction of the total ice creams sold were sold in the first three months (January to March)?",
