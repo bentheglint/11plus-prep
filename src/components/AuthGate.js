@@ -3,7 +3,9 @@ import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
 import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
 // apiSync imports removed — D1 data loading moved to useD1Data hook
 // fetchAllData, setTokenProvider, setVersions no longer needed here
-import MigrationScreen from './MigrationScreen';
+// MigrationScreen removed — the localStorage→D1 migration was a one-time
+// transition completed in early April 2026. New users have no legitimate
+// localStorage data to import and should go straight from onboarding to app.
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -249,15 +251,7 @@ export default function AuthGate({ children }) {
       if (data.account && data.child) {
         // D1 data loading is now handled by useD1Data hook — no seedLocalStorage needed
         setChildName(data.child.display_name);
-
-        // Check if migration has already been done (either server-side or localStorage flag)
-        const migrationDone = localStorage.getItem(`migration-complete:${data.child.display_name}`);
-        if (migrationDone) {
-          setOnboardingStep('ready');
-        } else {
-          // First login on this device — check for localStorage data to migrate
-          setOnboardingStep('migration');
-        }
+        setOnboardingStep('ready');
       } else if (data.account && !data.child) {
         setOnboardingStep('childName');
       }
@@ -315,18 +309,13 @@ export default function AuthGate({ children }) {
       });
 
       setChildName(displayName);
-      // After creating child, check for localStorage data to migrate
-      setOnboardingStep('migration');
+      // Go straight to app — no migration step for new accounts.
+      setOnboardingStep('ready');
     } catch (err) {
       setError(err.message);
     } finally {
       setIsLoading(false);
     }
-  };
-
-  // Handle migration complete or skip
-  const handleMigrationDone = () => {
-    setOnboardingStep('ready');
   };
 
   // ── Render ──
@@ -411,17 +400,6 @@ export default function AuthGate({ children }) {
   // Onboarding: child name
   if (onboardingStep === 'childName') {
     return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
-  }
-
-  // Migration: check for existing localStorage data
-  if (onboardingStep === 'migration') {
-    return (
-      <MigrationScreen
-        childName={childName}
-        onComplete={handleMigrationDone}
-        onSkip={handleMigrationDone}
-      />
-    );
   }
 
   // Ready — render the app with child name
