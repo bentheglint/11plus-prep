@@ -234,11 +234,22 @@ function QuizScreen({
                 </div>
               )}
 
-              {/* Alphabet line for letter code questions (GL prints this on the paper) */}
-              {(selectedTopic === 'letterCodes' || selectedTopic === 'letterPairSeries' || selectedTopic === 'letterSums' || currentQuestion.questionType === 'letter-codes') && (
+              {/* Alphabet line for letter-based questions (GL prints this on the paper).
+                  Driven by the CURRENT question's topicKey, not the quiz-level
+                  `selectedTopic` — so a Volume or Algebra question can never show
+                  an alphabet strip, even if the parent quiz context is confused.
+                  Flagged 15 Apr 2026 from Google Sheet feedback (Volume Q108,
+                  Algebra Q237, Long Division Q178 all showed alphabet lines). */}
+              {(() => {
+                const qTopic = currentQ.topicKey;
+                const letterTopics = ['letterCodes', 'letterPairSeries', 'letterSums', 'wordCodeAnalogies'];
+                const isLetterCode = qTopic === 'letterCodes' || currentQuestion.questionType === 'letter-codes';
+                const needsAlphabet = letterTopics.includes(qTopic) || currentQuestion.questionType === 'letter-codes';
+                if (!needsAlphabet) return null;
+                return (
                 <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
                   <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">
-                    {selectedTopic === 'letterCodes' || currentQuestion.questionType === 'letter-codes'
+                    {isLetterCode
                       ? 'Work out the pattern from the example, then apply it to the new word'
                       : 'Use this alphabet to help you'}
                   </div>
@@ -255,7 +266,8 @@ function QuizScreen({
                     ))}
                   </div>
                 </div>
-              )}
+                );
+              })()}
 
               <motion.h3
                 key={`q-${currentQuestionIndex}`}
