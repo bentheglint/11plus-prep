@@ -216,14 +216,38 @@ export default {
       // Error reporting — public (no auth required, fire-and-forget from client)
       if (path === '/api/error-report' && request.method === 'POST') {
         const body = await request.json();
-        console.error('[CLIENT ERROR]', JSON.stringify({
+        const entry = {
           message: body.message,
           stack: body.stack?.substring(0, 500),
           url: body.url,
           user: body.user,
           source: body.source,
           timestamp: body.timestamp,
-        }));
+        };
+        console.error('[CLIENT ERROR]', JSON.stringify(entry));
+
+        // Persist to KV so /errors dashboard can surface them. Ring buffer
+        // of last 50 — oldest dropped when full. Client-side throttle in
+        // ErrorBoundary caps this at 10/session + dedupe, so KV writes are
+        // bounded even in a render-loop scenario.
+        try {
+          const raw = await env.TESTING_FLAGS.get('recent-errors');
+          const errors = raw ? JSON.parse(raw) : [];
+          errors.push({ id: Date.now(), ...entry });
+          const trimmed = errors.slice(-50);
+          await env.TESTING_FLAGS.put('recent-errors', JSON.stringify(trimmed));
+        } catch {}
+
+        return json({ ok: true });
+      }
+
+      // Recent errors read — public (dashboard surfaces this)
+      if (path === '/errors' && request.method === 'GET') {
+        const raw = await env.TESTING_FLAGS.get('recent-errors');
+        return json(raw ? JSON.parse(raw) : []);
+      }
+      if (path === '/errors/clear' && request.method === 'POST') {
+        await env.TESTING_FLAGS.put('recent-errors', '[]');
         return json({ ok: true });
       }
 

@@ -24,6 +24,8 @@ import TopicDrillDown from './screens/TopicDrillDown';
 import StudyToolkitScreen from './screens/StudyToolkitScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
+import ErrorDashboardScreen from './screens/ErrorDashboardScreen';
+import FeatureFlagsScreen from './screens/FeatureFlagsScreen';
 import useMockTest from './hooks/useMockTest';
 import useD1Data from './hooks/useD1Data';
 import useAchievements from './hooks/useAchievements';
@@ -1258,6 +1260,10 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       setCurrentView('learningMode');
     } else if (urlViewParam === 'home') {
       setCurrentView('home');
+    } else if (urlViewParam === 'errors') {
+      setCurrentView('errors');
+    } else if (urlViewParam === 'flags') {
+      setCurrentView('flags');
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const previewTopic = urlParams.get('preview');
@@ -1552,6 +1558,14 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
       />
     );
+  }
+
+  if (currentView === 'errors') {
+    return <ErrorDashboardScreen onBack={() => setCurrentView('home')} />;
+  }
+
+  if (currentView === 'flags') {
+    return <FeatureFlagsScreen onBack={() => setCurrentView('home')} />;
   }
 
   if (currentView === 'home') {
