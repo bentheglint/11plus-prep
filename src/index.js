@@ -13,28 +13,38 @@ import OfflineBanner from './components/OfflineBanner';
 import reportWebVitals from './reportWebVitals';
 
 const CLERK_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
+const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
 
 const isDiagramViewer = new URLSearchParams(window.location.search).has('diagram-viewer');
+
+// Shared app tree — rendered with or without ClerkProvider depending on mode.
+const appTree = isDiagramViewer ? (
+  <DiagramViewer />
+) : (
+  <AuthGate>
+    {(childName, getToken) => (
+      <main>
+        <App currentUser={childName} getToken={getToken} />
+        <DevReviewPanel />
+      </main>
+    )}
+  </AuthGate>
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ErrorBoundary>
       <OfflineBanner />
-      <ClerkProvider publishableKey={CLERK_KEY}>
-        {isDiagramViewer ? (
-          <DiagramViewer />
-        ) : (
-          <AuthGate>
-            {(childName, getToken) => (
-              <main>
-                <App currentUser={childName} getToken={getToken} />
-                <DevReviewPanel />
-              </main>
-            )}
-          </AuthGate>
-        )}
-      </ClerkProvider>
+      {SMOKE_MODE ? (
+        // Smoke test harness: skip ClerkProvider so the app boots without
+        // needing a live Clerk key. Never true in production builds.
+        appTree
+      ) : (
+        <ClerkProvider publishableKey={CLERK_KEY}>
+          {appTree}
+        </ClerkProvider>
+      )}
     </ErrorBoundary>
   </React.StrictMode>
 );

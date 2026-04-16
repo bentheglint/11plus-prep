@@ -3,8 +3,25 @@ import { useClerk, useAuth, useUser } from '@clerk/clerk-react';
 import { LogOut, Download, Trash2, X, User, ChevronDown } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
+const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
 
-function AccountMenu({ currentUser }) {
+function AccountMenu(props) {
+  if (SMOKE_MODE) return <AccountMenuSmoke {...props} />;
+  return <AccountMenuReal {...props} />;
+}
+
+// Minimal placeholder for the smoke harness — the real AccountMenu uses
+// Clerk hooks that require ClerkProvider, which we skip in smoke builds.
+function AccountMenuSmoke({ currentUser }) {
+  return (
+    <div className="flex items-center gap-2 px-3 py-2 text-sm text-slate-500">
+      <User className="w-4 h-4" />
+      {currentUser || 'SmokeTest'}
+    </div>
+  );
+}
+
+function AccountMenuReal({ currentUser }) {
   const { signOut } = useClerk();
   const { getToken } = useAuth();
   const { user } = useUser();

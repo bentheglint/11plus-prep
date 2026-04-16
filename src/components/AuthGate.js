@@ -224,8 +224,26 @@ const DEV_BYPASS = process.env.NODE_ENV === 'development'
   && typeof window !== 'undefined'
   && new URLSearchParams(window.location.search).get('dev-auth') === 'true';
 
+// ── Smoke-test bypass: compile-time flag only set when building for
+// the smoke test harness (REACT_APP_SMOKE_MODE=true). Production builds
+// never set this variable, so real users can never hit this path.
+const SMOKE_BYPASS = process.env.REACT_APP_SMOKE_MODE === 'true';
+
+// ── Smoke bypass wrapper ──
+// When SMOKE_BYPASS is true, AuthGate renders children directly without
+// ever calling Clerk hooks — which is required because the smoke build
+// doesn't wrap the tree in ClerkProvider.
+function AuthGateSmoke({ children }) {
+  return children(localStorage.getItem('current-user') || 'SmokeTest', null);
+}
+
 // ── Auth Gate (main orchestrator) ──
-export default function AuthGate({ children }) {
+export default function AuthGate(props) {
+  if (SMOKE_BYPASS) return <AuthGateSmoke {...props} />;
+  return <AuthGateReal {...props} />;
+}
+
+function AuthGateReal({ children }) {
   const { isSignedIn, isLoaded: authLoaded } = useAuth();
   const { user } = useUser();
   const { getToken } = useAuth();
