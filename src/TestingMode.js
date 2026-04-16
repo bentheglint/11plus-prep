@@ -283,7 +283,7 @@ function TopicLessonPicker({ topicKey, topicName, lessonBank, testingCoverage, o
 // FlaggedIssuesPanel — shows all pending flags in one place
 // ============================================================
 
-function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteFlags, onResolveRemote }) {
+function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, onViewLesson, remoteFlags, onResolveRemote }) {
   const [expanded, setExpanded] = useState(true);
 
   // Merge local flags (this user's localStorage) with remote flags (Worker KV — both users)
@@ -370,6 +370,19 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteF
                         {isFixed ? 'Review Fix' : 'View'}
                       </button>
                     )}
+                    {flag.type === 'lesson' && onViewLesson && (flag.subConceptId || flag.lessonId) && (
+                      <button
+                        onClick={() => onViewLesson(flag.topicKey, flag.subConceptId, flag.lessonId)}
+                        className={`flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-md transition-colors ${
+                          isFixed
+                            ? 'text-emerald-700 bg-emerald-100 hover:bg-emerald-200 ring-1 ring-emerald-300'
+                            : 'text-[#6C5CE7] bg-[#EDE8FF] hover:bg-[#DDD6FF]'
+                        }`}
+                      >
+                        <Eye className="w-3 h-3" />
+                        {isFixed ? 'Review Fix' : 'View'}
+                      </button>
+                    )}
                     <button
                       onClick={() => {
                         if (flag.source === 'remote' && onResolveRemote) {
@@ -406,7 +419,7 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteF
 export default function TestingDashboard({
   questionData, lessonBank, testingCoverage,
   onStartTestingQuiz, onStartTestingLesson,
-  onViewQuestion, onBack,
+  onViewQuestion, onViewLesson, onBack,
 }) {
   const [activeTab, setActiveTab] = useState('maths');
   const [lessonPickerTopic, setLessonPickerTopic] = useState(null);
@@ -533,7 +546,7 @@ export default function TestingDashboard({
 
         {/* Flagged Issues — all pending flags */}
         {(totals.issuesFlagged > 0 || remoteFlags.length > 0) && (
-          <FlaggedIssuesPanel testingCoverage={testingCoverage} coverage={coverage} onViewQuestion={onViewQuestion} remoteFlags={remoteFlags} onResolveRemote={handleResolveRemote} />
+          <FlaggedIssuesPanel testingCoverage={testingCoverage} coverage={coverage} onViewQuestion={onViewQuestion} onViewLesson={onViewLesson} remoteFlags={remoteFlags} onResolveRemote={handleResolveRemote} />
         )}
 
         {/* Test Next — risk-based suggestions */}

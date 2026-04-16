@@ -1498,6 +1498,32 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           });
           setCurrentView('lesson');
         }}
+        onViewLesson={(topicKey, subConceptId, lessonId) => {
+          const topicLessons = lessonBank[topicKey];
+          if (!topicLessons) return;
+          const subConcept = topicLessons.subConcepts?.find(sc => sc.id === subConceptId);
+          if (!subConcept) return;
+          const lesson = (lessonId && subConcept.lessons?.find(l => l.id === lessonId))
+            || subConcept.lessons?.[0];
+          if (!lesson) return;
+          const subject = Object.entries(questionData).find(
+            ([, sd]) => sd.topics && sd.topics[topicKey]
+          )?.[0] || 'maths';
+          setSelectedSubject(subject);
+          setSelectedTopic(topicKey);
+          setReturnToTestingMode(true);
+          setForcedLessonResult({
+            lesson,
+            variables: lesson.variableSets?.[0] || {},
+            interactVariables: lesson.variableSets?.length > 1
+              ? lesson.variableSets[1]
+              : lesson.variableSets?.[0] || {},
+            subConceptId: subConcept.id || topicKey,
+            subConceptName: subConcept.name || topicKey,
+            topicName: lessonBank[topicKey]?.name || topicKey,
+          });
+          setCurrentView('lesson');
+        }}
         onViewQuestion={(topicKey, subject, questionId) => {
           // Look up the real subject key — flag data may have topicKey as subject
           const validSubjects = ['maths', 'english', 'verbalreasoning'];
