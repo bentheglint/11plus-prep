@@ -17855,7 +17855,7 @@ areaperimeter: {
     {
       id: 14,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 8, width: 8, dimUnit: "m", areaLabel: "64 m²" } },
+      visual: { component: "RectangleDiagram", props: { length: 8, width: 8, dimUnit: "m", areaLabel: "64 m²", missingDim: "all" } },
       question: "A square garden has an area of 64 square metres. What is its perimeter?",
       options: ["8 metres", "32 metres", "16 metres", "64 metres", "256 metres"],
       correct: 1,
@@ -18043,7 +18043,7 @@ areaperimeter: {
     {
       id: 35,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 8, width: 7, dimUnit: "m", areaLabel: "56 m²" } },
+      visual: { component: "RectangleDiagram", props: { length: 8, width: 7, dimUnit: "m", areaLabel: "56 m²", missingDim: "length" } },
       question: "A rectangular rug has an area of 56 square metres and a width of 7 metres. What is its length?",
       options: ["6 metres", "7 metres", "8 metres", "14 metres", "49 metres"],
       correct: 2,
@@ -18052,7 +18052,7 @@ areaperimeter: {
     {
       id: 36,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 10, width: 10, dimUnit: "m", areaLabel: "100 m²" } },
+      visual: { component: "RectangleDiagram", props: { length: 10, width: 10, dimUnit: "m", areaLabel: "100 m²", missingDim: "all" } },
       question: "A square patio has an area of 100 square metres. What is its perimeter?",
       options: ["10 metres", "20 metres", "25 metres", "40 metres", "30 metres"],
       correct: 3,
@@ -18286,7 +18286,7 @@ areaperimeter: {
     {
       id: 62,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 13, width: 13, dimUnit: "cm", areaLabel: "169 cm²" } },
+      visual: { component: "RectangleDiagram", props: { length: 13, width: 13, dimUnit: "cm", areaLabel: "169 cm²", missingDim: "all" } },
       question: "A square has an area of 169 square cm. What is its perimeter?",
       options: ["13 cm", "26 cm", "39 cm", "84.5 cm", "52 cm"],
       correct: 4,
@@ -18357,7 +18357,7 @@ areaperimeter: {
     {
       id: 70,
       difficulty: 3,
-      visual: { component: "RectangleDiagram", props: { length: 15, width: 15, dimUnit: "m", areaLabel: "225 m²" } },
+      visual: { component: "RectangleDiagram", props: { length: 15, width: 15, dimUnit: "m", areaLabel: "225 m²", missingDim: "all" } },
       question: "A square garden has an area of 225 square metres. What is its perimeter?",
       options: ["15 metres", "30 metres", "60 metres", "45 metres", "75 metres"],
       correct: 2,

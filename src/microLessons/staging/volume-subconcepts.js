@@ -418,7 +418,7 @@ export const volumeSubConcepts = [
             bodyParts: (v) => [
               {
                 type: 'text',
-                content: (v) => `Here's how to find the missing **${v.missingLabel}**. Tap to reveal each step:`
+                content: (v) => `Here's how to find the missing **${v.missingLabel}**:`
               },
               {
                 type: 'visual',

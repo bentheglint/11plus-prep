@@ -1699,7 +1699,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
           if (workerUrl) fetch(`${workerUrl}/flags`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ submitter: currentUser, ...flagData })
+            body: JSON.stringify({ submitter: currentUser, type: 'lesson', ...flagData })
           }).catch(() => {});
         }}
         backLabel={returnToTestingMode ? "Back to Testing Dashboard" : returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : "Back to Topics"}
@@ -1911,7 +1911,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
           if (workerUrl) fetch(`${workerUrl}/flags`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ submitter: currentUser, ...flagWithSubject })
+            body: JSON.stringify({ submitter: currentUser, type: 'question', ...flagWithSubject })
           }).catch(() => {});
         }}
         onAnswerSelect={handleAnswerSelect}

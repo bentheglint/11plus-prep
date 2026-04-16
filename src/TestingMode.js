@@ -291,11 +291,15 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteF
     const flags = [];
     // Remote flags from Worker (canonical — both users)
     for (const rf of remoteFlags) {
+      // Infer type for legacy flags posted without a `type` field:
+      // lesson flags carry subConceptId/lessonId; question flags carry questionId.
+      const inferredType = rf.type
+        || (rf.subConceptId || rf.lessonId ? 'lesson' : 'question');
       flags.push({
         ...rf,
         topicName: rf.topicName || coverage[rf.topicKey]?.topicName || rf.topicKey,
         subject: rf.subject || coverage[rf.topicKey]?.subject,
-        type: rf.type || 'question',
+        type: inferredType,
         source: 'remote',
       });
     }
@@ -336,7 +340,9 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, remoteF
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-sm font-bold text-slate-800">
-                      {flag.type === 'question' ? `Q${flag.questionId}` : `Lesson: ${flag.subConceptId}`}
+                      {flag.type === 'question'
+                        ? `Q${flag.questionId}`
+                        : `Lesson: ${flag.subConceptName || flag.subConceptId || flag.lessonId}${typeof flag.screenIndex === 'number' ? ` · Screen ${flag.screenIndex + 1}` : ''}`}
                     </span>
                     <span className="text-xs text-gray-400">{flag.topicName}</span>
                     <span className="text-xs font-medium text-red-600 bg-red-50 px-1.5 py-0.5 rounded">{flag.category}</span>

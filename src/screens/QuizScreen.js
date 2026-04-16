@@ -244,7 +244,19 @@ function QuizScreen({
                 const qTopic = currentQ.topicKey;
                 const letterTopics = ['letterCodes', 'letterPairSeries', 'letterSums', 'wordCodeAnalogies'];
                 const isLetterCode = qTopic === 'letterCodes' || currentQuestion.questionType === 'letter-codes';
-                const needsAlphabet = letterTopics.includes(qTopic) || currentQuestion.questionType === 'letter-codes';
+                let needsAlphabet = letterTopics.includes(qTopic) || currentQuestion.questionType === 'letter-codes';
+                // Letter Sums mixes two styles: alphabet-position ("A=1, B=2, C=3...")
+                // and BODMAS-with-variables ("A=12, B=4, C=7"). The strip is
+                // misleading on the BODMAS style, so only show it when the
+                // question actually uses the A=1 convention.
+                if (needsAlphabet && qTopic === 'letterSums') {
+                  const usesAlphabetPositions = /A\s*=\s*1\s*,\s*B\s*=\s*2/i.test(currentQuestion.question || '');
+                  if (!usesAlphabetPositions) needsAlphabet = false;
+                }
+                // Explicit per-question override (wins over heuristics)
+                if (typeof currentQuestion.showAlphabet === 'boolean') {
+                  needsAlphabet = currentQuestion.showAlphabet;
+                }
                 if (!needsAlphabet) return null;
                 return (
                 <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
