@@ -3,12 +3,26 @@ import { RefreshCw, AlertTriangle } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
+// Throttle error reports so a render loop can't DoS the Worker.
+// Cap per session + dedupe by message+source so the same error burst
+// only reports once.
+const MAX_REPORTS_PER_SESSION = 10;
+let reportCount = 0;
+const seenErrors = new Set();
+
 // Report errors to the Worker for monitoring (fire-and-forget)
 function reportError(error, context = {}) {
   if (!API_URL) return;
+  if (reportCount >= MAX_REPORTS_PER_SESSION) return;
   try {
+    const message = error?.message || String(error);
+    const dedupeKey = `${context.source || 'unknown'}:${message.substring(0, 200)}`;
+    if (seenErrors.has(dedupeKey)) return;
+    seenErrors.add(dedupeKey);
+    reportCount += 1;
+
     const payload = {
-      message: error?.message || String(error),
+      message,
       stack: error?.stack?.substring(0, 2000),
       url: window.location.href,
       userAgent: navigator.userAgent,

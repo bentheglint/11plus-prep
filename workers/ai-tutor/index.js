@@ -145,8 +145,14 @@ async function handleMarkTested(request, env) {
   const existing = coverage[type][topicKey] || [];
   // Merge — deduplicate via Set
   const merged = [...new Set([...existing, ...ids])];
-  coverage[type][topicKey] = merged;
 
+  // Skip the KV write if nothing changed — belt-and-braces against a
+  // chatty client re-uploading IDs the store already has.
+  if (merged.length === existing.length) {
+    return json({ ok: true, count: merged.length, noop: true });
+  }
+
+  coverage[type][topicKey] = merged;
   await env.TESTING_FLAGS.put(COVERAGE_KEY, JSON.stringify(coverage));
   return json({ ok: true, count: merged.length });
 }

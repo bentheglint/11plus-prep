@@ -53,15 +53,21 @@ function mergeRemoteIntoLocal(local, remote) {
   return merged;
 }
 
-// Upload all local tested IDs to Worker (first sync / catch-up)
-function uploadLocalToWorker(data) {
+// Upload only IDs that aren't already in the remote store.
+// Prior versions uploaded everything on every mount, which burnt KV
+// writes (1 write per topic per page load) and was the main cause of
+// the "50% of KV daily limit" emails from Cloudflare.
+function uploadDeltaToWorker(local, remote) {
   if (!API_URL) return;
   for (const type of ['questions', 'lessons']) {
-    for (const [topicKey, topicData] of Object.entries(data[type] || {})) {
-      const ids = topicData.tested || [];
-      if (ids.length > 0) {
-        syncToWorker(type, topicKey, ids);
-      }
+    const localType = local[type] || {};
+    const remoteType = remote?.[type] || {};
+    for (const [topicKey, topicData] of Object.entries(localType)) {
+      const localIds = topicData.tested || [];
+      if (localIds.length === 0) continue;
+      const remoteIds = new Set(remoteType[topicKey] || []);
+      const newIds = localIds.filter(id => !remoteIds.has(id));
+      if (newIds.length > 0) syncToWorker(type, topicKey, newIds);
     }
   }
 }
@@ -93,9 +99,9 @@ export default function useTestingCoverage(userName) {
       .then(remote => {
         hasSynced.current = true;
         setData(prev => {
-          // First upload our local data to the shared store
-          uploadLocalToWorker(prev);
-          // Then merge remote into local
+          // Push only deltas (IDs the remote doesn't already have)
+          uploadDeltaToWorker(prev, remote);
+          // Merge remote into local
           const merged = mergeRemoteIntoLocal(prev, remote);
           saveJSON(`user:${userName}:testing-coverage`, merged);
           return merged;
