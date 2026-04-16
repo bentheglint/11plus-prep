@@ -7,6 +7,7 @@ const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR'
 
 function MistakesScreen({ questionResults, questionData, englishData, vrData, onPractiseTopic, onRecordResult, onBack }) {
   const [expandedTopic, setExpandedTopic] = useState(null);
+  const [subjectFilter, setSubjectFilter] = useState('all'); // 'all' | 'maths' | 'english' | 'verbalreasoning'
   // Practice mode state
   const [practiceMode, setPracticeMode] = useState(null); // { topicKey, subject, questions }
   const [practiceIndex, setPracticeIndex] = useState(0);
@@ -107,7 +108,23 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
     );
   }, [questionResults, questionLookup]);
 
-  const topicEntries = Object.entries(groupedMistakes);
+  const allTopicEntries = Object.entries(groupedMistakes);
+
+  // Per-subject mistake counts, always showing all four pills so "VR: 0" is
+  // visible as a strong-subject signal.
+  const subjectCounts = useMemo(() => {
+    const counts = { all: 0, maths: 0, english: 0, verbalreasoning: 0 };
+    for (const [, group] of allTopicEntries) {
+      counts.all += group.mistakes.length;
+      if (counts[group.subject] !== undefined) counts[group.subject] += group.mistakes.length;
+    }
+    return counts;
+  }, [allTopicEntries]);
+
+  // Topic groups to show after applying the filter.
+  const topicEntries = subjectFilter === 'all'
+    ? allTopicEntries
+    : allTopicEntries.filter(([, g]) => g.subject === subjectFilter);
   const totalMistakes = topicEntries.reduce((sum, [, g]) => sum + g.mistakes.length, 0);
 
   // Start practice mode for a topic
@@ -542,6 +559,39 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           )}
         </div>
 
+        {/* Subject filter pills */}
+        {subjectCounts.all > 0 && (
+          <div className="flex gap-2 mb-4 overflow-x-auto">
+            {[
+              { key: 'all', label: 'All' },
+              { key: 'maths', label: 'Maths' },
+              { key: 'english', label: 'English' },
+              { key: 'verbalreasoning', label: 'VR' },
+            ].map(opt => {
+              const isActive = subjectFilter === opt.key;
+              const count = subjectCounts[opt.key];
+              const colour = opt.key === 'all' ? '#6C5CE7' : subjectColours[opt.key];
+              return (
+                <button
+                  key={opt.key}
+                  onClick={() => { setSubjectFilter(opt.key); setExpandedTopic(null); }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border transition-colors whitespace-nowrap ${
+                    isActive
+                      ? 'text-white border-transparent shadow-sm'
+                      : 'text-gray-600 bg-white border-gray-200 hover:bg-gray-50'
+                  }`}
+                  style={isActive ? { background: colour } : undefined}
+                >
+                  <span>{opt.label}</span>
+                  <span className={`text-[11px] font-bold px-1.5 py-0.5 rounded-full ${isActive ? 'bg-white/25' : 'bg-gray-100'}`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
         {/* Practice All button */}
         {totalMistakes > 0 && (
           <div className="mb-4">
@@ -563,8 +613,17 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
         {topicEntries.length === 0 ? (
           <div className="card-elevated p-8 text-center">
             <Sparkles className="w-10 h-10 text-[#FDCB6E] mx-auto mb-3" />
-            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">No mistakes to review!</h3>
-            <p className="text-slate-500">Keep practising — when you get something wrong, it will appear here so you can learn from it.</p>
+            {subjectCounts.all === 0 ? (
+              <>
+                <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">No mistakes to review!</h3>
+                <p className="text-slate-500">Keep practising — when you get something wrong, it will appear here so you can learn from it.</p>
+              </>
+            ) : (
+              <>
+                <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">No mistakes in this subject</h3>
+                <p className="text-slate-500">Nothing to review here — pick another subject above, or tap All.</p>
+              </>
+            )}
           </div>
         ) : (
           <div className="space-y-3">
@@ -619,9 +678,9 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                           }
                           if (preview.length > 110) preview = preview.slice(0, 108) + '...';
 
-                          return (
-                            <div key={mistake.questionId || i}
-                              className="flex items-start gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100">
+                          const canPractise = mistake.questionType !== 'missing';
+                          const rowInner = (
+                            <>
                               <div className="w-6 h-6 rounded-full bg-[#FF6B6B]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <XCircle className="w-3.5 h-3.5 text-[#FF6B6B]" />
                               </div>
@@ -631,6 +690,29 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                                   {new Date(mistake.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                                 </p>
                               </div>
+                              {canPractise && (
+                                <span
+                                  className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full flex-shrink-0 self-center"
+                                  style={{ background: `${colour}15`, color: colour }}
+                                >
+                                  <Target className="w-3 h-3" />
+                                  Practise
+                                </span>
+                              )}
+                            </>
+                          );
+                          return canPractise ? (
+                            <button
+                              key={mistake.questionId || i}
+                              onClick={(e) => { e.stopPropagation(); startPractice(topicKey, group.subject, [mistake]); }}
+                              className="w-full text-left flex items-start gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100 hover:bg-gray-100 hover:border-gray-200 transition-colors"
+                            >
+                              {rowInner}
+                            </button>
+                          ) : (
+                            <div key={mistake.questionId || i}
+                              className="flex items-start gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100">
+                              {rowInner}
                             </div>
                           );
                         })}
