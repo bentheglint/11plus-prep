@@ -277,18 +277,16 @@ function App({ currentUser: authUser, getToken }) {
   // ── Quiz State Persistence ──
   // Save quiz progress so children can resume if they leave mid-quiz
   const quizSaveKey = getQuizSaveKey(currentUser);
-  const quizRestored = React.useRef(false);
 
-  // Save active quiz state whenever it changes.
-  // Gated on quizRestored so a fresh page load doesn't wipe the save before
-  // the restore effect can read it. Deliberately does NOT clear the save when
-  // currentView !== 'quiz' — we want the quiz to survive a Home tap so the
-  // child can resume. Explicit clears happen on quiz completion (see
-  // handleNextQuestion) and on "Start Fresh" from the resume prompt.
+  // Save active quiz state whenever it changes so the child can pick up
+  // where they left off. The save is surfaced via the resume prompt when
+  // they re-select the same topic (handleTopicSelect). Deliberately does
+  // NOT auto-restore on mount — refresh takes the child back to Home, and
+  // the prompt handles resume. Explicit clears happen on quiz completion
+  // (see handleNextQuestion) and on "Start Fresh" from the resume prompt.
   useEffect(() => {
     if (!quizSaveKey) return;
     if (quizMode === 'testing') return; // Don't persist testing quizzes
-    if (!quizRestored.current) return;  // Wait until restore has run
     if (currentView === 'quiz' && quizQuestions.length > 0) {
       const saveState = buildQuizSaveState({
         currentView, selectedSubject, selectedTopic, quizMode,
@@ -299,30 +297,6 @@ function App({ currentUser: authUser, getToken }) {
       localStorage.setItem(quizSaveKey, JSON.stringify(saveState));
     }
   }, [quizSaveKey, currentView, quizQuestions, currentQuestionIndex, answers, selectedAnswer, selectedPair, showFeedback, selectedSubject, selectedTopic, quizMode]);
-
-  // Restore quiz on mount if one was in progress
-  useEffect(() => {
-    if (quizRestored.current || !quizSaveKey) return;
-    quizRestored.current = true;
-    const raw = localStorage.getItem(quizSaveKey);
-    const state = parseAndValidateQuiz(raw);
-    if (!state) {
-      // Clear expired or corrupt data
-      if (raw) localStorage.removeItem(quizSaveKey);
-      return;
-    }
-    setSelectedSubject(state.selectedSubject);
-    setSelectedTopic(state.selectedTopic);
-    setQuizMode(state.quizMode);
-    setQuizQuestions(state.quizQuestions);
-    setCurrentQuestionIndex(state.currentQuestionIndex);
-    setAnswers(state.answers);
-    setSelectedAnswer(state.selectedAnswer);
-    setSelectedPair(state.selectedPair);
-    setShowFeedback(state.showFeedback);
-    quizSessionId.current = state.sessionId;
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    setCurrentView('quiz');
-  }, [quizSaveKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Keep Dev Review panel context updated
   useEffect(() => {
