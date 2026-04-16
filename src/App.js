@@ -16,6 +16,7 @@ import {
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
 import QuizDetailScreen from './screens/QuizDetailScreen';
+import AllActivityScreen from './screens/AllActivityScreen';
 import HomeScreen from './screens/HomeScreen';
 import QuizScreen from './screens/QuizScreen';
 import LearningModeScreen from './screens/LearningModeScreen';
@@ -199,6 +200,7 @@ function App({ currentUser: authUser, getToken }) {
   const [showDidItHelp, setShowDidItHelp] = useState(false);
   const [drillDownTopic, setDrillDownTopic] = useState(null); // { subject, topicKey }
   const [selectedQuiz, setSelectedQuiz] = useState(null); // Quiz Detail View — selected row from Recent Activity
+  const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity'
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
@@ -2034,6 +2036,22 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
         onViewQuiz={(quiz) => {
           setSelectedQuiz(quiz);
+          setQuizDetailReturnTo('progress');
+          setCurrentView('quizDetail');
+        }}
+        onViewAllActivity={() => setCurrentView('allActivity')}
+      />
+    );
+  }
+
+  if (currentView === 'allActivity') {
+    return (
+      <AllActivityScreen
+        quizHistory={quizHistory}
+        onBack={() => setCurrentView('progress')}
+        onViewQuiz={(quiz) => {
+          setSelectedQuiz(quiz);
+          setQuizDetailReturnTo('allActivity');
           setCurrentView('quizDetail');
         }}
       />
@@ -2050,7 +2068,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         vrData={vrData}
         onBack={() => {
           setSelectedQuiz(null);
-          setCurrentView('progress');
+          setCurrentView(quizDetailReturnTo);
         }}
       />
     );

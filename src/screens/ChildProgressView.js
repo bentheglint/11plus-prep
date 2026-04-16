@@ -4,6 +4,7 @@ import StreakDisplay from '../components/StreakDisplay';
 import PrepPointsBar from '../components/PrepPointsBar';
 import TopicStarRating from '../components/TopicStarRating';
 import RecommendationCard, { topicNames } from '../components/RecommendationCard';
+import QuizHistoryRow from '../components/QuizHistoryRow';
 
 const subjectConfig = {
   maths: { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0770C2', gradient: 'from-[#0770C2] to-[#0652DD]' },
@@ -11,7 +12,7 @@ const subjectConfig = {
   verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#6C5CE7', gradient: 'from-[#6C5CE7] to-[#5A4BD1]' },
 };
 
-function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome, onViewQuiz }) {
+function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome, onViewQuiz, onViewAllActivity }) {
   const [selectedSubject, setSelectedSubject] = useState('maths');
 
   const levelInfo = streaksAndPP.getLevelInfo();
@@ -150,49 +151,19 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
           <div className="card-elevated p-5 mb-6">
             <h3 className="font-heading font-bold text-slate-800 mb-3">Recent Activity</h3>
             <div className="space-y-2">
-              {recentQuizzes.map(quiz => {
-                const dotColour = quiz.percentage >= 80 ? '#007D62' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
-                const date = new Date(quiz.date);
-                const isToday = date.toISOString().split('T')[0] === new Date().toISOString().split('T')[0];
-                const dateLabel = isToday ? 'Today' : date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
-
-                // Only quizzes saved after the Quiz Detail feature shipped have a sessionId
-                const canViewDetail = !!(quiz.sessionId && onViewQuiz);
-                const rowContent = (
-                  <>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: dotColour }} />
-                      <div>
-                        <p className="text-sm font-medium text-slate-800">{topicNames[quiz.topic] || quiz.topic}</p>
-                        <p className="text-[10px] text-slate-500">{dateLabel} · {quiz.score}/{quiz.total}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-bold" style={{ color: dotColour }}>{quiz.percentage}%</span>
-                      {canViewDetail && (
-                        <span className="flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider text-[#6C5CE7] bg-[#EDE8FF] px-2 py-1 rounded-full">
-                          View
-                          <ChevronRight className="w-3 h-3" />
-                        </span>
-                      )}
-                    </div>
-                  </>
-                );
-                return canViewDetail ? (
-                  <button
-                    key={quiz.id}
-                    onClick={() => onViewQuiz(quiz)}
-                    className="w-full flex items-center justify-between py-2 border-b border-gray-50 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded transition-colors text-left"
-                  >
-                    {rowContent}
-                  </button>
-                ) : (
-                  <div key={quiz.id} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
-                    {rowContent}
-                  </div>
-                );
-              })}
+              {recentQuizzes.map(quiz => (
+                <QuizHistoryRow key={quiz.id} quiz={quiz} onView={onViewQuiz} />
+              ))}
             </div>
+            {onViewAllActivity && quizHistory.length > recentQuizzes.length && (
+              <button
+                onClick={onViewAllActivity}
+                className="w-full mt-3 pt-3 border-t border-gray-100 flex items-center justify-center gap-1 text-sm font-bold text-[#6C5CE7] hover:text-[#5A4BD1] transition-colors"
+              >
+                View all activity
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            )}
           </div>
         )}
 
