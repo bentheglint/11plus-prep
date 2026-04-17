@@ -1,4 +1,4 @@
-import { CORS, json } from './helpers.js';
+import { CORS, BASE_HEADERS, json, checkRateLimit } from './helpers.js';
 import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
@@ -195,7 +195,7 @@ async function handleTutor(request, env) {
 export default {
   async fetch(request, env) {
     if (request.method === 'OPTIONS') {
-      return new Response(null, { headers: CORS });
+      return new Response(null, { headers: BASE_HEADERS });
     }
 
     const url = new URL(request.url);
@@ -215,6 +215,8 @@ export default {
 
       // Error reporting — public (no auth required, fire-and-forget from client)
       if (path === '/api/error-report' && request.method === 'POST') {
+        const limited = await checkRateLimit(env.ERROR_LIMITER, request, 'error-report');
+        if (limited) return limited;
         const body = await request.json();
         const entry = {
           message: body.message,
@@ -253,6 +255,8 @@ export default {
 
       // AI tutor — backward compatible POST to root
       if (request.method === 'POST' && !path.startsWith('/api/')) {
+        const limited = await checkRateLimit(env.TUTOR_LIMITER, request, 'tutor');
+        if (limited) return limited;
         return handleTutor(request, env);
       }
 
@@ -298,7 +302,7 @@ export default {
         return json({ error: 'API route not found', path, method: request.method }, 404);
       }
 
-      return new Response('Not found', { status: 404, headers: CORS });
+      return new Response('Not found', { status: 404, headers: BASE_HEADERS });
     } catch (err) {
       console.error('[Worker Error]', err.message, err.stack);
       return json({ error: 'Internal server error', detail: err.message, stack: err.stack?.substring(0, 300) }, 500);

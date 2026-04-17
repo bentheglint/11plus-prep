@@ -1,6 +1,6 @@
 // ── Bulk Load, Migration, and Export Routes ──
 
-import { json, getChildId } from '../helpers.js';
+import { json, getChildId, BASE_HEADERS } from '../helpers.js';
 
 // GET /api/data/all — Fetch ALL child data in one request (used on login)
 export async function handleBulkLoad(request, env, userId) {
@@ -367,11 +367,7 @@ export async function handleExport(request, env, userId) {
     headers: {
       'Content-Type': 'application/json',
       'Content-Disposition': 'attachment; filename="11plus-data-export.json"',
-      ...Object.fromEntries(Object.entries({
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, PATCH, DELETE, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-      })),
+      ...BASE_HEADERS,
     },
   });
 }

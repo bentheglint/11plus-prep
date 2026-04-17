@@ -11,6 +11,27 @@ binding = "DB"
 database_name = "11plus-user-data"
 database_id = "11c21cbc-441a-4af0-b9ec-0151663393ab"
 
+# Rate limiting — AI tutor endpoint (costs Anthropic credits per call)
+# 30 requests per minute per client IP
+[[ratelimits]]
+name = "TUTOR_LIMITER"
+namespace_id = "1001"
+
+  [ratelimits.simple]
+  limit = 30
+  period = 60
+
+# Rate limiting — client error reports (already client-side throttled,
+# belt-and-braces against runaway render loops or abuse)
+# 20 requests per minute per client IP
+[[ratelimits]]
+name = "ERROR_LIMITER"
+namespace_id = "1002"
+
+  [ratelimits.simple]
+  limit = 20
+  period = 60
+
 # Weekly progress email — runs Sunday 18:00 UTC
 # Dormant until EMAIL_API_KEY secret is configured
 [triggers]
