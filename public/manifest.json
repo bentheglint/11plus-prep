@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "11+ Prep",
+  "name": "11+ Test Prep",
+  "description": "11+ exam preparation for GL Assessment — maths, English and verbal reasoning practice for children preparing for grammar school entrance.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#6C5CE7",
   "background_color": "#ffffff"
 }
