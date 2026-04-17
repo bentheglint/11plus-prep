@@ -50,3 +50,22 @@ yarn-error.log*
 
 # Progress tracker screenshots (large binary files)
 /Progress Tracker Content
+
+# Temp/working files
+_tmp_*
+_diagram-audit/
+dev-review-notes.json
+
+# D1 backups — contain sensitive user data, never commit
+/backups/*.sql
+/backups/*.sql.gpg
+/backups/*.sql.gz
+
+# Wrangler local state (nested)
+workers/**/.wrangler
+
+# Batch processing scripts (one-off, not app code)
+scripts/bias-batch-*
+scripts/oracle-batch-*
+scripts/comprehension-length-bias.json
+scripts/write-remaining-batches.js

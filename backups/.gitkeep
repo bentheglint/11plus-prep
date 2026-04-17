@@ -1,0 +1,7 @@
+D1 SQL exports live here.
+
+These files contain sensitive user data (emails, Clerk IDs, child quiz history)
+and are deliberately NOT committed to git.
+
+See Master Brief Document and Working Instructions/d1-backup-plan.md for the
+full backup + restore procedure.

@@ -43,6 +43,7 @@
 
 - Check the week's commit activity — 3-5 commits/week is normal
 - Run `bash deploy.sh` at least once even if no code changes — keeps the smoke test verified against real browser behaviour
+- **Take D1 backup:** `cd workers/ai-tutor && npx wrangler d1 export 11plus-user-data --output=../../backups/d1-export-$(date +%Y-%m-%d).sql --remote` — see [d1-backup-plan.md](d1-backup-plan.md) for full restore procedure. Prune backups older than 4 weeks.
 - Update MEMORY.md with any new project context worth carrying forward
 - Review Master Brief v7.0 for drift — note updates needed for next revision
 
