@@ -84,8 +84,12 @@ export function FlagModal({ isOpen, onClose, onSubmit, categories, context }) {
             <Flag className="w-5 h-5 text-red-500" />
             Flag Issue
           </h3>
-          <button onClick={onClose} className="p-1 hover:bg-gray-100 rounded-lg">
-            <X className="w-5 h-5 text-gray-400" />
+          <button
+            onClick={onClose}
+            aria-label="Close flag dialog"
+            className="p-1 hover:bg-gray-100 rounded-lg"
+          >
+            <X className="w-5 h-5 text-gray-400" aria-hidden="true" />
           </button>
         </div>
 

@@ -13,8 +13,12 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
     <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-4 mb-4">
       <div className="flex items-center justify-between mb-3">
         <h4 className="text-sm font-heading font-bold text-slate-800">Question Navigator</h4>
-        <button onClick={onClose} className="text-slate-500 hover:text-slate-800">
-          <ChevronUp className="w-4 h-4" />
+        <button
+          onClick={onClose}
+          aria-label="Collapse question navigator"
+          className="text-slate-500 hover:text-slate-800"
+        >
+          <ChevronUp className="w-4 h-4" aria-hidden="true" />
         </button>
       </div>
 

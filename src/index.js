@@ -24,10 +24,13 @@ const appTree = isDiagramViewer ? (
 ) : (
   <AuthGate>
     {(childName, getToken) => (
-      <main>
-        <AppLoader App={App} currentUser={childName} getToken={getToken} />
-        <DevReviewPanel />
-      </main>
+      <>
+        <a href="#main-content" className="skip-to-content">Skip to content</a>
+        <main id="main-content">
+          <AppLoader App={App} currentUser={childName} getToken={getToken} />
+          <DevReviewPanel />
+        </main>
+      </>
     )}
   </AuthGate>
 );

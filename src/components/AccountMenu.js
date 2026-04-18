@@ -175,8 +175,11 @@ function AccountMenuReal({ currentUser }) {
           <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between mb-4">
               <h2 className="font-heading font-bold text-lg text-slate-800">Delete Account?</h2>
-              <button onClick={() => setShowDeleteConfirm(false)}>
-                <X className="w-5 h-5 text-slate-500" />
+              <button
+                onClick={() => setShowDeleteConfirm(false)}
+                aria-label="Close delete confirmation"
+              >
+                <X className="w-5 h-5 text-slate-500" aria-hidden="true" />
               </button>
             </div>
             <p className="text-sm text-slate-500 mb-4">
