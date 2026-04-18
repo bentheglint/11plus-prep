@@ -54,40 +54,35 @@ function assert(cond, msg) {
   console.log(`  ✓ ${msg}`);
 }
 
-// ── Smoke run ──
-async function run() {
-  if (!fs.existsSync(BUILD_DIR)) {
-    console.error(`✗ No build found at ${BUILD_DIR}. Run \`npm run build\` first (with REACT_APP_SMOKE_MODE=true).`);
-    process.exit(1);
-  }
+// Viewports to test. Runs the golden path against each — catches layout or
+// event-handler regressions that only reproduce at tablet/phone width.
+// iPhone + iPad sizes match their 2024 device-pixel viewports.
+const VIEWPORTS = [
+  { name: 'Desktop', width: 1280, height: 800, deviceScaleFactor: 1, isMobile: false, hasTouch: false },
+  { name: 'iPad',    width: 820,  height: 1180, deviceScaleFactor: 2, isMobile: true,  hasTouch: true  },
+  { name: 'iPhone',  width: 390,  height: 844, deviceScaleFactor: 3, isMobile: true,  hasTouch: true  },
+];
 
-  console.log('Starting static server...');
-  const server = await startServer();
-  console.log(`  Serving ${BUILD_DIR} on ${BASE_URL}`);
+// ── Golden-path test, runs once per viewport ──
+async function runGoldenPath(browser, viewport) {
+  console.log(`\n=== ${viewport.name} (${viewport.width}x${viewport.height}) ===`);
 
-  let browser;
-  let exitCode = 0;
+  const page = await browser.newPage();
+  page.setDefaultTimeout(15000);
+  await page.setViewport(viewport);
 
-  try {
-    browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
-    const page = await browser.newPage();
-    page.setDefaultTimeout(15000);
+  // Forward console/page errors so CI logs show them
+  page.on('pageerror', (err) => console.error(`  [${viewport.name} pageerror]`, err.message));
+  page.on('console', (msg) => {
+    if (msg.type() === 'error') console.error(`  [${viewport.name} console.error]`, msg.text());
+  });
 
-    // Forward console/page errors so CI logs show them
-    page.on('pageerror', (err) => console.error('  [pageerror]', err.message));
-    page.on('console', (msg) => {
-      if (msg.type() === 'error') console.error('  [console.error]', msg.text());
-    });
+  // Seed the user before navigation so the app treats us as signed-in.
+  await page.evaluateOnNewDocument(() => {
+    localStorage.setItem('current-user', 'SmokeTest');
+  });
 
-    // Seed the user before navigation so the app treats us as signed-in.
-    await page.evaluateOnNewDocument(() => {
-      localStorage.setItem('current-user', 'SmokeTest');
-    });
-
-    console.log('\n1. Load home screen');
+  console.log('\n1. Load home screen');
     await page.goto(BASE_URL, { waitUntil: 'networkidle0' });
     await page.waitForFunction(
       () => document.body.innerText.includes('SmokeTest') || document.body.innerText.includes('Hey'),
@@ -233,7 +228,35 @@ async function run() {
       'every question-result has questionId + correct fields'
     );
 
-    console.log('\n✓ Smoke test passed');
+  console.log(`\n✓ ${viewport.name} smoke passed`);
+  await page.close();
+}
+
+// ── Driver ──
+async function run() {
+  if (!fs.existsSync(BUILD_DIR)) {
+    console.error(`✗ No build found at ${BUILD_DIR}. Run \`npm run build\` first (with REACT_APP_SMOKE_MODE=true).`);
+    process.exit(1);
+  }
+
+  console.log('Starting static server...');
+  const server = await startServer();
+  console.log(`  Serving ${BUILD_DIR} on ${BASE_URL}`);
+
+  let browser;
+  let exitCode = 0;
+
+  try {
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+
+    for (const viewport of VIEWPORTS) {
+      await runGoldenPath(browser, viewport);
+    }
+
+    console.log(`\n✓ All ${VIEWPORTS.length} viewports passed`);
   } catch (err) {
     exitCode = 1;
     if (err instanceof AssertionError) {
