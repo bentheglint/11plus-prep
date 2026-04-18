@@ -437,7 +437,7 @@ export function NumberLine({
 
   return (
     <div className="w-full">
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full block">
+      <svg role="img" aria-label="Number line" viewBox={`0 0 ${width} ${height}`} className="w-full block">
         <defs>
           <marker id="nl-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
             <polygon points="0 0, 10 3.5, 0 7" fill="#5A4BD1" />
@@ -1242,7 +1242,7 @@ export function AngleDiagram({
 
   return (
     <div className="flex flex-col items-center space-y-2">
-      <svg viewBox={`0 0 400 ${vbH}`} width="100%" style={{ maxWidth: 360 }}>
+      <svg role="img" aria-label="Angle diagram" viewBox={`0 0 400 ${vbH}`} width="100%" style={{ maxWidth: 360 }}>
         {/* Triangle */}
         <polygon
           points={`${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`}
@@ -1357,7 +1357,7 @@ export function BusStopDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${totalW} ${totalH}`} className="w-full" style={{ maxWidth: is2DigitDivisor ? 440 : 400 }}>
+      <svg role="img" aria-label="Bus stop method for division" viewBox={`0 0 ${totalW} ${totalH}`} className="w-full" style={{ maxWidth: is2DigitDivisor ? 440 : 400 }}>
         {/* Bus stop bracket */}
         <path
           d={`M ${startX - 8} ${roofY + 60} L ${startX - 8} ${roofY + 8} Q ${startX - 8} ${roofY} ${startX} ${roofY} L ${startX + totalContentW + 10} ${roofY}`}
@@ -1501,7 +1501,7 @@ export function RectangleDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="Rectangle with dimensions" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {/* Rectangle fill */}
         <rect x={rx} y={ry} width={rectW} height={rectH}
               fill={color} stroke="#3b82f6" strokeWidth="2.5" rx="4" />
@@ -1628,7 +1628,7 @@ export function RectangleComparison({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 420 }}>
+      <svg role="img" aria-label="Rectangle comparison" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 420 }}>
         {renderRect(r1x, r1y, r1w, r1h, rect1.length, rect1.width, rect1.label, "#bfdbfe")}
         {renderRect(r2x, r2y, r2w, r2h, rect2.length, rect2.width, rect2.label, "#dbeafe")}
       </svg>
@@ -1669,7 +1669,7 @@ export function RectangleGrid({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 440 }}>
+      <svg role="img" aria-label="Grid of rectangles" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 440 }}>
         {rectangles.map((rect, i) => {
           const col = i % cols;
           const row = Math.floor(i / cols);
@@ -1739,7 +1739,7 @@ export function TriangleAreaDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="Triangle for area calculation" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {/* Optional enclosing rectangle (dashed) */}
         {showRectangle && (
           <rect x={padL} y={padT} width={shapeW} height={shapeH}
@@ -1850,7 +1850,7 @@ export function ParallelogramDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="Parallelogram with dimensions" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {/* Parallelogram fill */}
         <polygon
           points={`${bL.x},${bL.y} ${bR.x},${bR.y} ${tR.x},${tR.y} ${tL.x},${tL.y}`}
@@ -1996,7 +1996,7 @@ export function CuboidDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="3D cuboid diagram" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {/* Back edges (dashed) */}
         <line x1={b_bl.x} y1={b_bl.y} x2={b_br.x} y2={b_br.y} stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="6 4" />
         <line x1={b_bl.x} y1={b_bl.y} x2={b_tl.x} y2={b_tl.y} stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="6 4" />
@@ -2140,7 +2140,7 @@ export function CuboidComparison({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 500 }}>
+      <svg role="img" aria-label="Cuboid comparison" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 500 }}>
         {drawCuboid(145, cuboid1, cuboid1.label)}
         {drawCuboid(355, cuboid2, cuboid2.label)}
       </svg>
@@ -2212,7 +2212,7 @@ export function LShapeDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 560 }}>
+      <svg role="img" aria-label="L-shape with dimensions" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 560 }}>
         {/* L-shape fill */}
         <polygon points={polyPoints}
                  fill="#bfdbfe" stroke="#3b82f6" strokeWidth="2.5" strokeLinejoin="round" />
@@ -2805,7 +2805,7 @@ export function AlphabetLine({
 
   return (
     <div className="w-full">
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full block">
+      <svg role="img" aria-label="Alphabet line" viewBox={`0 0 ${width} ${height}`} className="w-full block">
         <defs>
           <marker id="al-arrow" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
             <polygon points="0 0, 7 2.5, 0 5" fill="#5A4BD1" />
@@ -3105,7 +3105,7 @@ export function LogicDiagram({
               </div>
               {i < items.length - 1 && (
                 <div className="flex flex-col items-center my-0.5">
-                  <svg width="16" height="16" viewBox="0 0 16 16">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
                     <path d="M8 2 L8 11 M4 8 L8 12 L12 8" stroke="#A29BFE" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
@@ -3349,7 +3349,7 @@ export function DotPattern({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 520 }}>
+      <svg role="img" aria-label="Dot pattern" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 520 }}>
         {allItems.map((item, idx) => {
           const row = Math.floor(idx / perRow);
           const col = idx % perRow;
@@ -3430,11 +3430,11 @@ export function AnalogyDisplay({
   mode = "analogy"  // "analogy" = →, "antonym" = ↔
 }) {
   const ArrowIcon = ({ color }) => mode === "antonym" ? (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="flex-shrink-0">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" className="flex-shrink-0">
       <path d="M4 12h16m-12-5l-4 5 4 5m8-10l4 5-4 5" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   ) : (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="flex-shrink-0">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" className="flex-shrink-0">
       <path d="M5 12h14m-6-6l6 6-6 6" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
@@ -3608,7 +3608,7 @@ export function SDTTriangle({
 
   return (
     <div className="flex flex-col items-center">
-      <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
+      <svg role="img" aria-label="Speed-distance-time formula triangle" width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
         {/* Main triangle outline */}
         <polygon
           points={`${top} ${bottomLeft} ${bottomRight}`}
@@ -3785,7 +3785,7 @@ export function AngleDisplay({
 
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '4px 0', gap: 6 }}>
-        <svg viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 400, height: 'auto' }}>
+        <svg role="img" aria-label="Angle display" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 400, height: 'auto' }}>
           {/* Subtle radial glow behind the angle */}
           <defs>
             <radialGradient id={`glow-${val}`} cx="50%" cy="50%" r="50%">
@@ -3931,7 +3931,7 @@ export function AngleDisplay({
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', padding: '8px 0' }}>
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', maxWidth: 480, height: 'auto' }}>
+      <svg role="img" aria-label="Angle display" viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', maxWidth: 480, height: 'auto' }}>
         {rayAngles.map((a, i) => {
           const end = toXY(a, rayLen);
           return <line key={`r${i}`} x1={cx} y1={cy} x2={end.x} y2={end.y}
@@ -4022,7 +4022,7 @@ export function QuadShape({
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', padding: '8px 0' }}>
-      <svg viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 400, height: 'auto' }}>
+      <svg role="img" aria-label="Quadrilateral shape" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 400, height: 'auto' }}>
         {/* Subtle shape fill with tint */}
         <defs>
           <linearGradient id="quadFill" x1="0" y1="0" x2="1" y2="1">
@@ -4172,7 +4172,7 @@ export function ParallelLines({
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
-      <svg viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 400, height: 'auto' }}>
+      <svg role="img" aria-label="Parallel lines with transversal" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 400, height: 'auto' }}>
         {/* Parallel lines */}
         <line x1={lineX1} y1={lineY1} x2={lineX2} y2={lineY1} stroke="#1e293b" strokeWidth={2.5} />
         <line x1={lineX1} y1={lineY2} x2={lineX2} y2={lineY2} stroke="#1e293b" strokeWidth={2.5} />
@@ -4295,7 +4295,7 @@ export function ExteriorAngle({
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
-      <svg viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 420, height: 'auto' }}>
+      <svg role="img" aria-label="Exterior angle diagram" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 420, height: 'auto' }}>
         {/* Triangle */}
         <polygon
           points={`${A.x},${A.y} ${B.x},${B.y} ${Cfinal.x},${Cfinal.y}`}
@@ -4365,7 +4365,7 @@ export function ClockFace({
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
-      <svg viewBox="0 0 300 300" style={{ width: '100%', maxWidth: 280, height: 'auto' }}>
+      <svg role="img" aria-label="Clock face" viewBox="0 0 300 300" style={{ width: '100%', maxWidth: 280, height: 'auto' }}>
         {/* Clock face */}
         <circle cx={cx} cy={cy} r={r} fill="white" stroke="#6366f1" strokeWidth={3} />
         {/* Hour numbers */}
@@ -4478,7 +4478,7 @@ export function RegularPolygon({
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '4px 0', gap: 4 }}>
-      <svg viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 340, height: 'auto' }}>
+      <svg role="img" aria-label="Regular polygon" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 340, height: 'auto' }}>
         {/* Polygon fill */}
         <polygon points={points} fill="#f0f0ff" stroke="#6366f1" strokeWidth={2.5} strokeLinejoin="round" />
 
@@ -4597,7 +4597,7 @@ export function FunctionMachine({
           if (item.type === "arrow") {
             return (
               <div key={`arrow-${i}`} className="flex items-center px-0.5">
-                <svg width="24" height="20" viewBox="0 0 24 20">
+                <svg aria-hidden="true" width="24" height="20" viewBox="0 0 24 20">
                   <defs>
                     <marker id={`arrowhead-${i}`} markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
                       <polygon points="0 0, 8 3, 0 6" fill="#A29BFE" />
@@ -4710,7 +4710,7 @@ export function LineGraph({
 
   return (
     <div className="w-full">
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full block">
+      <svg role="img" aria-label="Line graph" viewBox={`0 0 ${width} ${height}`} className="w-full block">
         {/* Grid lines */}
         {showGrid && yTicks.map((v, i) => (
           <line key={`grid-${i}`}
@@ -4850,7 +4850,7 @@ export function BarChart({
 
   return (
     <div className="w-full">
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full block">
+      <svg role="img" aria-label="Bar chart" viewBox={`0 0 ${width} ${height}`} className="w-full block">
         {/* Grid lines */}
         {yTicks.map((v, i) => (
           <line key={`grid-${i}`}
@@ -4972,7 +4972,7 @@ export function PieChart({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${size} ${size}`} className="w-full" style={{ maxWidth: 340 }}>
+      <svg role="img" aria-label="Pie chart" viewBox={`0 0 ${size} ${size}`} className="w-full" style={{ maxWidth: 340 }}>
         {slices.map((s, i) => {
           const start = arcPoint(s.startAngle, r);
           const end = arcPoint(s.startAngle + s.sweep, r);
@@ -5277,7 +5277,7 @@ export function PathBorderDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="Path and border diagram" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {/* Outer rectangle — path/border fill */}
         <rect x={ox} y={oy} width={ow} height={oh}
               fill="#fde68a" stroke="#d97706" strokeWidth="2" rx="3" />
@@ -5392,7 +5392,7 @@ export function ThermometerDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="Thermometer showing temperature" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {/* Tube */}
         <rect x={tubeX} y={tubeTop} width={tubeW} height={tubeH}
               rx="15" ry="15" fill="#bfdbfe" stroke="#3b82f6" strokeWidth="2.5" />
@@ -5515,7 +5515,7 @@ export function BuildingDiagram({
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
+      <svg role="img" aria-label="Building with multiple floors" viewBox={`0 0 ${svgW} ${svgH}`} className="w-full" style={{ maxWidth: 380 }}>
         {floors.map((f, i) => {
           const y = 30 + i * floorH;
           const isGround = f === 0;
