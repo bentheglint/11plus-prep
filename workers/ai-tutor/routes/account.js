@@ -14,7 +14,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
 
   // POST /api/account — Create account on first login
   if (path === '/api/account' && request.method === 'POST') {
-    const { email, name, consentVersion } = await request.json();
+    const { email, name, consentVersion, inviteCode } = await request.json();
     if (!email || !name || !consentVersion) {
       return json({ error: 'Missing email, name, or consentVersion' }, 400);
     }
@@ -25,18 +25,36 @@ export async function handleAccountRoutes(request, env, userId, path) {
       return json({ error: 'Account already exists' }, 409);
     }
 
-    await db.prepare(
-      `INSERT INTO accounts (id, email, name, consent_given_at, consent_version, last_login_at)
-       VALUES (?, ?, ?, datetime('now'), ?, datetime('now'))`
-    ).bind(userId, email, name, consentVersion).run();
+    // Invite code validation — free-forever access without card. Case-insensitive
+    // match against comma-separated allowlist in Worker secret. Unknown codes are
+    // silently ignored (account created without comp); we don't advertise which
+    // codes are valid so brute-force probing gains nothing.
+    let isComped = 0;
+    let compSource = null;
+    if (inviteCode && env.INVITE_CODES) {
+      const submitted = String(inviteCode).trim().toUpperCase();
+      const allowed = env.INVITE_CODES.split(',').map(c => c.trim().toUpperCase()).filter(Boolean);
+      if (allowed.includes(submitted)) {
+        isComped = 1;
+        compSource = `invite:${submitted}`;
+      }
+    }
 
-    return json({ ok: true, accountId: userId }, 201);
+    await db.prepare(
+      `INSERT INTO accounts (id, email, name, consent_given_at, consent_version, last_login_at, is_comped, comp_source)
+       VALUES (?, ?, ?, datetime('now'), ?, datetime('now'), ?, ?)`
+    ).bind(userId, email, name, consentVersion, isComped, compSource).run();
+
+    return json({ ok: true, accountId: userId, comped: !!isComped }, 201);
   }
 
-  // GET /api/account — Get account details
+  // GET /api/account — Get account details + access gate info
   if (path === '/api/account' && request.method === 'GET') {
     const account = await db.prepare(
-      'SELECT id, email, name, created_at, consent_given_at, consent_version, last_login_at FROM accounts WHERE id = ?'
+      `SELECT id, email, name, created_at, consent_given_at, consent_version, last_login_at,
+              stripe_customer_id, subscription_status, subscription_current_period_end,
+              is_comped, comp_source
+       FROM accounts WHERE id = ?`
     ).bind(userId).first();
 
     if (!account) {
@@ -51,7 +69,44 @@ export async function handleAccountRoutes(request, env, userId, path) {
     // Update last_login_at
     await db.prepare('UPDATE accounts SET last_login_at = datetime(\'now\') WHERE id = ?').bind(userId).run();
 
-    return json({ account, child });
+    // Compute access gate, in priority order:
+    //   1. Comped (grandfathered or invite code) → always hasAccess, no paywall
+    //   2. Active/trialing subscription → hasAccess
+    //   3. past_due (grace window) → hasAccess
+    //   4. Within 7-day free trial since account creation → hasAccess
+    //   5. Otherwise → paywall
+    const isComped = !!account.is_comped;
+
+    const trialDays = 7;
+    const createdAtMs = new Date(account.created_at + 'Z').getTime();
+    const msSinceCreate = Date.now() - createdAtMs;
+    const daysSinceCreate = msSinceCreate / (1000 * 60 * 60 * 24);
+    const trialDaysRemaining = Math.max(0, Math.ceil(trialDays - daysSinceCreate));
+
+    const subStatus = account.subscription_status;
+    const hasPaidAccess = ['active', 'trialing'].includes(subStatus);
+    // past_due: we keep access during Stripe's smart retry window. Stripe
+    // will flip to 'unpaid' or 'canceled' when retries exhaust — then access
+    // closes. This matches consumer expectations (card bounce ≠ instant lockout).
+    const hasGraceAccess = subStatus === 'past_due';
+    const inTrial = !isComped && !subStatus && trialDaysRemaining > 0;
+
+    const access = {
+      hasAccess: isComped || hasPaidAccess || hasGraceAccess || inTrial,
+      isComped,
+      inTrial,
+      trialDaysRemaining: inTrial ? trialDaysRemaining : 0,
+      subscriptionStatus: subStatus || null,
+      hasStripeCustomer: !!account.stripe_customer_id,
+    };
+
+    // Don't leak internal fields — comp_source is audit-only, stripe_customer_id
+    // is needed server-side for portal/subscribe routes but not client-side.
+    delete account.stripe_customer_id;
+    delete account.comp_source;
+    delete account.is_comped;
+
+    return json({ account, child, access });
   }
 
   // DELETE /api/account — Delete account + ALL child data (GDPR right to erasure)

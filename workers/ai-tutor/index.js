@@ -5,6 +5,7 @@ import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
 import { handleScheduled } from './routes/email.js';
+import { handleStripeRoutes, handleWebhook } from './routes/stripe.js';
 
 // ── Clerk JWT Verification ──
 
@@ -260,6 +261,13 @@ export default {
         return handleTutor(request, env);
       }
 
+      // Stripe webhook — public (signature-verified in handler).
+      // Must match before the JWT auth gate because Stripe doesn't send
+      // a bearer token, only the stripe-signature header.
+      if (path === '/api/stripe/webhook' && request.method === 'POST') {
+        return handleWebhook(request, env);
+      }
+
       // ── Auth-protected routes (/api/*) ──
 
       if (path.startsWith('/api/')) {
@@ -285,6 +293,10 @@ export default {
         // Account routes
         const accountResult = await handleAccountRoutes(request, env, userId, path);
         if (accountResult) return accountResult;
+
+        // Stripe subscribe + portal (auth-required)
+        const stripeResult = await handleStripeRoutes(request, env, userId, path);
+        if (stripeResult) return stripeResult;
 
         // Batch write endpoint (D1-first architecture)
         if (path === '/api/data/batch' && request.method === 'POST') {
