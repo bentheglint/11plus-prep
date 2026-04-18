@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
 import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
+import SubscribeScreen from './SubscribeScreen';
 // apiSync imports removed — D1 data loading moved to useD1Data hook
 // fetchAllData, setTokenProvider, setVersions no longer needed here
 // MigrationScreen removed — the localStorage→D1 migration was a one-time
@@ -24,10 +25,21 @@ async function apiFetch(path, token, options = {}) {
   return data;
 }
 
+// ── Invite banner (shown when ?invite=CODE was captured) ──
+function InviteBanner({ code }) {
+  if (!code) return null;
+  return (
+    <div className="bg-[#6C5CE7] text-white text-sm text-center py-2 px-4">
+      <span className="font-bold">Invite accepted!</span> You\u2019ll get free access — no card needed. Code: <span className="font-mono opacity-80">{code}</span>
+    </div>
+  );
+}
+
 // ── Landing Page (shown when signed out) ──
-function LandingPage({ onSignIn, onSignUp }) {
+function LandingPage({ onSignIn, onSignUp, inviteCode }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-[#E8E5FF] flex flex-col">
+      <InviteBanner code={inviteCode} />
       {/* Header */}
       <header className="p-6 flex justify-end gap-3">
         <button
@@ -88,12 +100,14 @@ function LandingPage({ onSignIn, onSignUp }) {
 }
 
 // ── Consent Screen ──
-function ConsentScreen({ onConsent, isLoading }) {
+function ConsentScreen({ onConsent, isLoading, inviteCode }) {
   const [consentChecked, setConsentChecked] = useState(false);
   const [emailOptIn, setEmailOptIn] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex flex-col">
+      <InviteBanner code={inviteCode} />
+      <div className="flex-1 flex items-center justify-center p-4">
       <div className="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8">
         <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2">Before we get started</h1>
         <p className="text-slate-500 mb-6">
@@ -176,6 +190,7 @@ function ConsentScreen({ onConsent, isLoading }) {
           {isLoading ? 'Creating account...' : 'Continue'}
         </button>
       </div>
+      </div>
     </div>
   );
 }
@@ -249,10 +264,32 @@ function AuthGateReal({ children }) {
   const { getToken } = useAuth();
 
   const [authView, setAuthView] = useState('landing'); // landing | signin | signup
-  const [onboardingStep, setOnboardingStep] = useState(null); // null | 'consent' | 'childName' | 'ready'
+  const [onboardingStep, setOnboardingStep] = useState(null); // null | 'consent' | 'childName' | 'ready' | 'subscribe'
   const [childName, setChildName] = useState(null);
+  const [access, setAccess] = useState(null); // { hasAccess, inTrial, trialDaysRemaining, subscriptionStatus, isComped }
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  // Invite code — captured from URL ?invite=CODE on first mount. Persists
+  // in localStorage so it survives the Clerk signup redirect round-trip and
+  // is consumed when we POST /api/account after consent.
+  const [inviteCode, setInviteCode] = useState(() => {
+    try {
+      const param = new URLSearchParams(window.location.search).get('invite');
+      if (param) {
+        localStorage.setItem('pending-invite', param);
+        // Clean the URL so ?invite= doesn't hang around after onboarding
+        const params = new URLSearchParams(window.location.search);
+        params.delete('invite');
+        const q = params.toString();
+        window.history.replaceState({}, '', window.location.pathname + (q ? '?' + q : ''));
+        return param;
+      }
+      return localStorage.getItem('pending-invite') || null;
+    } catch {
+      return null;
+    }
+  });
 
   // seedLocalStorage REMOVED — D1 data loading now handled by useD1Data hook directly.
   // The hook fetches from /api/data/all on mount, with offline fallback to d1-cache.
@@ -266,10 +303,16 @@ function AuthGateReal({ children }) {
 
       const token = await getToken();
       const data = await apiFetch('/api/account', token);
+      if (data.access) setAccess(data.access);
       if (data.account && data.child) {
         // D1 data loading is now handled by useD1Data hook — no seedLocalStorage needed
         setChildName(data.child.display_name);
-        setOnboardingStep('ready');
+        // Access gate — Option B trial: 7 days free without card, then paywall
+        if (data.access && !data.access.hasAccess) {
+          setOnboardingStep('subscribe');
+        } else {
+          setOnboardingStep('ready');
+        }
       } else if (data.account && !data.child) {
         setOnboardingStep('childName');
       }
@@ -290,6 +333,18 @@ function AuthGateReal({ children }) {
     }
   }, [authLoaded, isSignedIn, checkAccount]);
 
+  // Stripe redirect return — 3DS flow sends the user back to /?subscribed=1.
+  // Clear the param and re-fetch account so we see the new subscription_status.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('subscribed') === '1') {
+      params.delete('subscribed');
+      const newSearch = params.toString();
+      window.history.replaceState({}, '', window.location.pathname + (newSearch ? '?' + newSearch : ''));
+      if (isSignedIn) checkAccount();
+    }
+  }, [isSignedIn, checkAccount]);
+
   // Handle consent submission
   const handleConsent = async (emailOptIn) => {
     try {
@@ -297,14 +352,25 @@ function AuthGateReal({ children }) {
       setError(null);
       const token = await getToken();
 
-      await apiFetch('/api/account', token, {
+      const res = await apiFetch('/api/account', token, {
         method: 'POST',
         body: JSON.stringify({
           email: user.primaryEmailAddress?.emailAddress || '',
           name: user.fullName || user.firstName || 'Parent',
           consentVersion: '1.0',
+          inviteCode: inviteCode || undefined,
         }),
       });
+
+      // Consume the invite code — whether it was valid or not, remove from
+      // localStorage so it doesn't re-apply on future account creations.
+      localStorage.removeItem('pending-invite');
+      if (!res.comped && inviteCode) {
+        // User submitted a code but it wasn't recognised. Silent on the server
+        // (no leakage) — surface inline so they know they're still on the trial.
+        console.warn('[AuthGate] Invite code not recognised; account on standard trial.');
+      }
+      setInviteCode(null);
 
       setOnboardingStep('childName');
     } catch (err) {
@@ -380,7 +446,7 @@ function AuthGateReal({ children }) {
         </div>
       );
     }
-    return <LandingPage onSignIn={() => setAuthView('signin')} onSignUp={() => setAuthView('signup')} />;
+    return <LandingPage onSignIn={() => setAuthView('signin')} onSignUp={() => setAuthView('signup')} inviteCode={inviteCode} />;
   }
 
   // Signed in but checking/loading account
@@ -412,7 +478,7 @@ function AuthGateReal({ children }) {
 
   // Onboarding: consent
   if (onboardingStep === 'consent') {
-    return <ConsentScreen onConsent={handleConsent} isLoading={isLoading} />;
+    return <ConsentScreen onConsent={handleConsent} isLoading={isLoading} inviteCode={inviteCode} />;
   }
 
   // Onboarding: child name
@@ -420,9 +486,21 @@ function AuthGateReal({ children }) {
     return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
   }
 
-  // Ready — render the app with child name
+  // Paywall: no access (trial expired or subscription canceled)
+  if (onboardingStep === 'subscribe') {
+    return (
+      <SubscribeScreen
+        getToken={getToken}
+        trialExpired={!access?.inTrial}
+        onSuccess={() => checkAccount()}
+        onBack={() => null /* no back from paywall — user must subscribe */}
+      />
+    );
+  }
+
+  // Ready — render the app with child name + access info
   if (onboardingStep === 'ready') {
-    return children(childName, getToken);
+    return children(childName, getToken, access);
   }
 
   // Fallback loading

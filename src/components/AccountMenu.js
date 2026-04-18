@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useClerk, useAuth, useUser } from '@clerk/clerk-react';
-import { LogOut, Download, Trash2, X, User, ChevronDown } from 'lucide-react';
+import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
@@ -30,6 +30,27 @@ function AccountMenuReal({ currentUser }) {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const parentEmail = user?.primaryEmailAddress?.emailAddress || '';
+
+  // Open Stripe Customer Portal for card updates / cancellation
+  const handleManageSubscription = async () => {
+    try {
+      const token = await getToken();
+      const res = await fetch(`${API_URL}/api/stripe/portal`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ returnUrl: window.location.href }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `Error ${res.status}`);
+      window.location.href = data.url;
+    } catch (err) {
+      alert(`Couldn\u2019t open the subscription portal: ${err.message}`);
+    }
+    setShowMenu(false);
+  };
 
   // Export data as JSON download
   const handleExport = async () => {
@@ -115,6 +136,13 @@ function AccountMenuReal({ currentUser }) {
 
             {/* Menu items */}
             <div className="py-1">
+              <button
+                onClick={handleManageSubscription}
+                className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
+              >
+                <CreditCard className="w-4 h-4 text-[#6C5CE7]" />
+                Manage Subscription
+              </button>
               <button
                 onClick={handleExport}
                 className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
