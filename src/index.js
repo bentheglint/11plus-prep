@@ -5,6 +5,7 @@ import '@fontsource-variable/dm-sans';
 import '@fontsource-variable/outfit';
 import './index.css';
 import App from './App';
+import AppLoader from './components/AppLoader';
 import DevReviewPanel from './DevReviewPanel';
 import DiagramViewer from './DiagramViewer';
 import AuthGate from './components/AuthGate';
@@ -24,7 +25,7 @@ const appTree = isDiagramViewer ? (
   <AuthGate>
     {(childName, getToken) => (
       <main>
-        <App currentUser={childName} getToken={getToken} />
+        <AppLoader App={App} currentUser={childName} getToken={getToken} />
         <DevReviewPanel />
       </main>
     )}

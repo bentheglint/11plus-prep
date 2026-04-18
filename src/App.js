@@ -34,9 +34,9 @@ import AchievementModal from './components/AchievementModal';
 import { topicNames } from './components/RecommendationCard';
 import useMastery from './hooks/useMastery';
 import useStreaksAndPP from './hooks/useStreaksAndPP';
-import mathsData from './questionData/mathsData';
-import englishData from './questionData/englishData';
-import vrData from './questionData/vrData';
+// Question data for maths/English/VR is lazy-loaded by AppLoader and passed
+// in as the `loadedData` prop — keeps each subject's ~1–2 MB payload out of
+// the main bundle. Tests still import these modules directly (synchronous).
 import allTips from './data/studyTips';
 import { selectPostQuestionTip, selectPreQuizTip } from './utils/tipSelection';
 import { selectWeightedTopics } from './utils/spacedRepetition';
@@ -63,22 +63,20 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-const questionData = {
-  maths: {
-    ...mathsData,
-    icon: Calculator
-  },
-  english: {
-    ...englishData,
-    icon: BookOpen
-  },
-  verbalreasoning: {
-    ...vrData,
-    icon: Brain
-  }
-};
+function App({ currentUser: authUser, getToken, loadedData }) {
+  // Destructure the lazy-loaded question data into the same names the rest
+  // of this file used to import statically. Keeps every downstream reference
+  // to mathsData/englishData/vrData working without further edits.
+  const { maths: mathsData, english: englishData, verbalreasoning: vrData } = loadedData;
 
-function App({ currentUser: authUser, getToken }) {
+  // Subject map with icons — memoised on loadedData so hooks downstream get
+  // a stable reference between renders.
+  const questionData = useMemo(() => ({
+    maths: { ...mathsData, icon: Calculator },
+    english: { ...englishData, icon: BookOpen },
+    verbalreasoning: { ...vrData, icon: Brain },
+  }), [mathsData, englishData, vrData]);
+
   // In auth mode, currentUser comes from Clerk/D1 via AuthGate prop.
   // Fall back to localStorage for dev/testing (when rendered without AuthGate).
   const [currentUser, setCurrentUser] = useState(() => {
