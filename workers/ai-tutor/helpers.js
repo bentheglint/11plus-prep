@@ -30,6 +30,27 @@ export async function getChildId(db, userId) {
   return row ? row.id : null;
 }
 
+// Origin allowlist check — blocks browser requests from unknown origins
+// at the edge before any route logic runs. Server-to-server requests
+// (Stripe webhook, curl, scheduled tasks) have no Origin header and pass
+// through untouched; only browsers attach it.
+//
+// If ALLOWED_ORIGINS is unset, all origins are allowed (backward-compat
+// for pre-rollout state). Set it to a comma-separated list to enforce.
+// Example: "https://11plus-prep.pages.dev,http://localhost:3000".
+export function checkOrigin(request, env) {
+  const origin = request.headers.get('Origin');
+  if (!origin) return null; // no Origin = not a browser request
+  const configured = (env.ALLOWED_ORIGINS || '').split(',').map(o => o.trim()).filter(Boolean);
+  if (configured.length === 0) return null; // not configured, allow all
+  if (configured.includes('*')) return null;
+  if (configured.includes(origin)) return null;
+  return new Response('Forbidden origin', {
+    status: 403,
+    headers: { 'Content-Type': 'text/plain', ...SECURITY_HEADERS },
+  });
+}
+
 // Check a rate-limit binding keyed by client IP. Returns a 429 Response
 // if the caller is over the limit, otherwise returns null.
 export async function checkRateLimit(limiter, request, label) {

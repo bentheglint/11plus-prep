@@ -78,9 +78,16 @@ npx wrangler secret put APP_URL
 # Case-insensitive. Update + redeploy to rotate.
 npx wrangler secret put INVITE_CODES
 # e.g. EVIE-FRIENDS,LAUNCH-TESTER,FAMILY
+
+# CORS allowlist — browser requests from origins NOT in this list get 403
+# before any route runs. Server-to-server calls (Stripe webhook) are
+# unaffected (they send no Origin header). Include localhost entries so
+# `npm start` and `npm run smoke` work.
+npx wrangler secret put ALLOWED_ORIGINS
+# e.g. https://11plus-prep.pages.dev,http://localhost:3000,http://localhost:4173
 ```
 
-Verify: `npx wrangler secret list` should show all five.
+Verify: `npx wrangler secret list` should show all six.
 
 ---
 
@@ -223,4 +230,5 @@ The user will fall back to normal access rules — if they're past day 7 of thei
 | `STRIPE_PRICE_ID` | Worker secret | `price_...` | £15/month recurring price |
 | `APP_URL` | Worker secret (optional) | `https://11plus-prep.pages.dev/` | Portal return URL |
 | `INVITE_CODES` | Worker secret | `EVIE-FRIENDS,LAUNCH-TESTER` | Comma-separated comp-code allowlist |
+| `ALLOWED_ORIGINS` | Worker secret | `https://11plus-prep.pages.dev,http://localhost:3000` | Browser CORS allowlist |
 | `REACT_APP_STRIPE_PUBLISHABLE_KEY` | `.env` + Pages env | `pk_test_...` | Safe client-side |

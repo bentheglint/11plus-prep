@@ -1,4 +1,4 @@
-import { CORS, BASE_HEADERS, json, checkRateLimit } from './helpers.js';
+import { CORS, BASE_HEADERS, json, checkRateLimit, checkOrigin } from './helpers.js';
 import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
@@ -195,6 +195,12 @@ async function handleTutor(request, env) {
 
 export default {
   async fetch(request, env) {
+    // Origin allowlist gate — browser requests from unknown origins get
+    // 403 before any routing. Skips silently for server-to-server calls
+    // (no Origin header).
+    const originBlocked = checkOrigin(request, env);
+    if (originBlocked) return originBlocked;
+
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: BASE_HEADERS });
     }
