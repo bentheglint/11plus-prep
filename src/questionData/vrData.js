@@ -14126,7 +14126,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is C × D?",
           options: ["10","11","13","12","14"],
           correct: 3,
-          explanation: "C(3) × D(4) = 12. ✓"
+          explanation: "Multiply the two letter values: C(3) × D(4) = 12. ✓"
         },
         {
           id: 114,
@@ -14144,7 +14144,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is B × F?",
           options: ["12","11","10","13","14"],
           correct: 0,
-          explanation: "B(2) × F(6) = 12. ✓"
+          explanation: "Multiply the two letter values: B(2) × F(6) = 12. ✓"
         },
         {
           id: 116,
