@@ -10412,7 +10412,7 @@ export const lessonBank = {
               },
               {
                 name: "Grace",
-                scenario: "doing the hardest VR section of a GL practice paper",
+                scenario: "doing the hardest VR section of a 11+ practice paper",
                 words: ["copper", "silk", "iron", "cotton", "bronze"],
                 linkedWords: "copper, iron & bronze",
                 linkName: "metals",

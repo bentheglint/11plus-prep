@@ -2444,28 +2444,28 @@ export const compoundWordsSubConcepts = [
   },
 
   // ==========================================
-  // SUB-CONCEPT 11: GL Compound Pairs (pick-from-sets)
+  // SUB-CONCEPT 11: Compound Pairs (pick-from-sets)
   // Category: core
-  // The authentic GL Assessment format: two groups of 3 words,
+  // The authentic 11+ exam format: two groups of 3 words,
   // pick one from each to form a compound word
   // ==========================================
   {
     id: "gl-compound-pairs",
-    name: "GL Compound Pairs — Pick From Two Groups",
+    name: "Compound Pairs — Pick From Two Groups",
     category: "core",
     lessons: [
       {
         id: "gl-compound-pairs-steps",
         templateType: "step-by-step",
         learningGoal: [
-          "How to solve the real GL compound word format — picking one word from each of two groups",
+          "How to solve the real 11+ compound word format — picking one word from each of two groups",
           "The 3×3 Grid Method: systematically test all 9 combinations to find the one that makes a real word",
           "Why spelling matters more than sound for tricky compounds"
         ],
         variableSets: [
           {
             name: "Evie",
-            scenario: "tackling GL compound word questions",
+            scenario: "tackling 11+ compound word questions",
             groupA: ["rain", "silk", "brass"],
             groupB: ["bow", "thread", "ring"],
             correctA: "rain",
@@ -2541,8 +2541,8 @@ export const compoundWordsSubConcepts = [
             tryFirstResult: "reapseed? Not a word.",
             trySecond: "reap + pear",
             trySecondResult: "reappear! r-e-a-p-p-e-a-r — that means to appear again! Brilliant!",
-            tryThird: "This is the GL's favourite trick — the combined word sounds NOTHING like the two parts",
-            teachTip: "Always write combinations out or spell them in your head. The hardest GL questions use words that sound completely different when joined.",
+            tryThird: "This is the exam's favourite trick — the combined word sounds NOTHING like the two parts",
+            teachTip: "Always write combinations out or spell them in your head. The hardest 11+ questions use words that sound completely different when joined.",
             interactGroupA: ["band", "belt", "strap"],
             interactGroupB: ["age", "size", "fit"],
             interactCorrectA: "band",
@@ -2579,7 +2579,7 @@ export const compoundWordsSubConcepts = [
           {
             type: "teach",
             title: () => "The Spelling Secret",
-            body: () => `For **tricky compounds**, the word you make sounds **completely different** from the two parts.\n\nThe GL test loves this trick! The key is to **spell combinations out** letter by letter, not say them aloud.`,
+            body: () => `For **tricky compounds**, the word you make sounds **completely different** from the two parts.\n\nThe 11+ test loves this trick! The key is to **spell combinations out** letter by letter, not say them aloud.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -2620,7 +2620,7 @@ export const compoundWordsSubConcepts = [
           {
             type: "consolidate",
             title: () => "Two-group compound words — sorted!",
-            body: () => `You now know how to solve the GL's compound word format! Remember:`,
+            body: () => `You now know how to solve the 11+ compound word format! Remember:`,
             visual: {
               component: "WorkedExample",
               props: () => ({

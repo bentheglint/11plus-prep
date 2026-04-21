@@ -1898,13 +1898,13 @@ export const algebraSubConcepts = [
 
   // ==========================================
   // SUB-CONCEPT 8: bidmas-brackets
-  // BIDMAS and brackets in expressions
+  // BODMAS and brackets in expressions
   // Category: other
   // Lesson A: key-fact | Lesson B: spot-the-mistake
   // ==========================================
   {
     id: "bidmas-brackets",
-    name: "BIDMAS and Brackets",
+    name: "BODMAS and Brackets",
     category: "other",
     lessons: [
       // ---- Lesson A: Key Fact ----
@@ -1912,7 +1912,7 @@ export const algebraSubConcepts = [
         id: "bidmas-keyfact",
         templateType: "key-fact",
         learningGoal: [
-          "How to use BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
+          "How to use BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction) to decide which calculations to do first",
           "How to recognise that brackets change which part you do first"
         ],
         variableSets: [
@@ -1954,13 +1954,13 @@ export const algebraSubConcepts = [
           {
             type: "hook",
             title: (v) => `What is ${v.expression}?`,
-            body: (v) => `${v.name} says **${v.expression} = ${v.wrongAnswer}**.\n\nBut that's wrong! The correct answer is **${v.correctAnswer}**. Why? Because of a rule called **BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction)**!`,
+            body: (v) => `${v.name} says **${v.expression} = ${v.wrongAnswer}**.\n\nBut that's wrong! The correct answer is **${v.correctAnswer}**. Why? Because of a rule called **BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction)**!`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
                 steps: [
                   { text: `${v.name}: ${v.expression} = ${v.wrongAnswer}`, why: "Wrong! 😕" },
-                  { text: `Correct: ${v.expression} = ${v.correctAnswer}`, why: "Thanks to BIDMAS!" }
+                  { text: `Correct: ${v.expression} = ${v.correctAnswer}`, why: "Thanks to BODMAS!" }
                 ],
                 allRevealed: true
               })
@@ -1969,14 +1969,14 @@ export const algebraSubConcepts = [
           },
           {
             type: "teach",
-            title: () => "BIDMAS tells you the order!",
-            body: (v) => `**BIDMAS** tells you which calculations to do first:\n\n**B**rackets → **I**ndices → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addition and subtraction!\n\nSo for **${v.expression}**: ${v.correctReason}.`,
+            title: () => "BODMAS tells you the order!",
+            body: (v) => `**BODMAS** tells you which calculations to do first:\n\n**B**rackets → **O**rders → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction\n\nMultiplication and division come **before** addition and subtraction!\n\nSo for **${v.expression}**: ${v.correctReason}.`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
                 steps: [
                   { text: "B = Brackets (do these first!)", why: "(3 + 4) × 2 = 7 × 2 = 14" },
-                  { text: "I = Indices (powers)", why: "2² = 4" },
+                  { text: "O = Orders (powers, also called indices)", why: "2² = 4" },
                   { text: "DM = Division & Multiplication (left to right)", why: "Before + and −" },
                   { text: "AS = Addition & Subtraction (left to right)", why: "These come last" }
                 ],
@@ -1985,7 +1985,7 @@ export const algebraSubConcepts = [
             },
             interaction: {
               type: "fill-blank",
-              sentence: (v) => `In BIDMAS, the B stands for ____ — always do these first`,
+              sentence: (v) => `In BODMAS, the B stands for ____ — always do these first`,
               options: (v) => ["Brackets", "Both", "Before", "Below"],
               correctIndex: (v) => 0,
               feedback: {
@@ -1996,13 +1996,13 @@ export const algebraSubConcepts = [
           },
           {
             type: "interact",
-            title: () => "Apply BIDMAS!",
-            body: (v) => `What is **${v.interactExpression}** using BIDMAS?\n\nRemember: × and ÷ come before + and −!`,
+            title: () => "Apply BODMAS!",
+            body: (v) => `What is **${v.interactExpression}** using BODMAS?\n\nRemember: × and ÷ come before + and −!`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
                 steps: [
-                  { text: `${v.interactExpression}`, why: "Use BIDMAS!" }
+                  { text: `${v.interactExpression}`, why: "Use BODMAS!" }
                 ],
                 allRevealed: true
               })
@@ -2013,15 +2013,15 @@ export const algebraSubConcepts = [
               getOptions: (v) => generateDistractors(v.interactCorrectAnswer),
               correctAnswer: (v) => v.interactCorrectAnswer,
               feedback: {
-                correct: (v) => `Brilliant! ${v.interactReason}. BIDMAS in action! ✓`,
-                incorrect: (v) => `Not quite! Remember BIDMAS: ${v.interactReason}. Answer: **${v.interactCorrectAnswer}**.`
+                correct: (v) => `Brilliant! ${v.interactReason}. BODMAS in action! ✓`,
+                incorrect: (v) => `Not quite! Remember BODMAS: ${v.interactReason}. Answer: **${v.interactCorrectAnswer}**.`
               }
             }
           },
           {
             type: "consolidate",
-            title: () => "BIDMAS — remember the order!",
-            body: () => `BIDMAS keeps everyone's maths consistent. Without it, the same expression could give different answers!`,
+            title: () => "BODMAS — remember the order!",
+            body: () => `BODMAS keeps everyone's maths consistent. Without it, the same expression could give different answers!`,
             visual: {
               component: "WorkedExample",
               props: () => ({
@@ -2098,13 +2098,13 @@ export const algebraSubConcepts = [
           {
             type: "teach",
             title: () => "NOT the same!",
-            body: (v) => `${v.name} ${v.mistake}.\n\nBrackets tell you to do that part **first**, before anything else. Without them, BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction) applies and the order changes!`,
+            body: (v) => `${v.name} ${v.mistake}.\n\nBrackets tell you to do that part **first**, before anything else. Without them, BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction) applies and the order changes!`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
                 steps: [
                   { text: `${v.withBrackets} = ${v.bracketAnswer}`, why: "Brackets first!" },
-                  { text: `${v.withoutBrackets} = ${v.noBracketAnswer}`, why: "× before + (BIDMAS)" },
+                  { text: `${v.withoutBrackets} = ${v.noBracketAnswer}`, why: "× before + (BODMAS)" },
                   { text: `Different answers!`, result: `${v.bracketAnswer} is NOT the same as ${v.noBracketAnswer}` }
                 ],
                 allRevealed: false
@@ -2146,7 +2146,7 @@ export const algebraSubConcepts = [
           {
             type: "consolidate",
             title: () => "Brackets always come first!",
-            body: () => `If you see brackets, do that part FIRST. Brackets override everything else in BIDMAS.`,
+            body: () => `If you see brackets, do that part FIRST. Brackets override everything else in BODMAS.`,
             visual: {
               component: "WorkedExample",
               props: () => ({

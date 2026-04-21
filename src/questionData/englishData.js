@@ -1,4 +1,4 @@
-// English question data for 11+ GL Assessment prep
+// English question data for 11+ 11+ exam prep
 // 6 topics: Comprehension, Spelling, Punctuation, Grammar, Vocabulary, Word Class & Grammar
 // questionSubType metadata on comprehension questions: retrieval, inference, vocabulary-in-context, word-class, author-purpose, literary-device
 // All content is 100% original — no published material copied or paraphrased
@@ -20768,16 +20768,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 164,
           "difficulty": 3,
-          "question": "Choose the correct word to complete the sentence: 'The situation grew ___ and worse as the day went on.'",
+          "question": "Choose the correct word to complete the sentence: 'Traffic gets ___ every year — the roads simply cannot cope with all the new cars.'",
           "options": [
-            "bad",
+            "badder",
             "worse",
             "more bad",
             "worst",
-            "badly"
+            "baddest"
           ],
           "correct": 1,
-          "explanation": "'Worse and worse' describes something getting increasingly bad over time. 'Worse' is the comparative form of 'bad'. ✓"
+          "explanation": "'Bad' is irregular — its comparative (for two things or a change over time) is 'worse', not 'badder' or 'more bad'. The superlative (for three or more) is 'worst'. Here we are comparing traffic across years, so 'worse' is correct. ✓"
         },
         {
           "id": 165,
@@ -23398,7 +23398,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Choose the correct word to complete the sentence: 'The teacher, along with three teaching assistants, ___ supervising the trip.'",
           "options": ["is","were","are","have been","be"],
           "correct": 0,
-          "explanation": "'Is' is correct. The subject is 'the teacher' (singular). 'Along with three teaching assistants' is additional information but doesn't change the subject. This is a common GL trap — the nearby plural 'assistants' attracts children to pick 'are'. ✓"
+          "explanation": "'Is' is correct. The subject is 'the teacher' (singular). 'Along with three teaching assistants' is additional information but doesn't change the subject. This is a common exam trap — the nearby plural 'assistants' attracts children to pick 'are'. ✓"
         },
         {
           "id": 368,
@@ -23454,7 +23454,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Choose the correct word to complete the sentence: 'The number of pupils arriving by bus ___ increased this year.'",
           "options": ["have","are","has","were","do"],
           "correct": 2,
-          "explanation": "'The number of' is singular — it refers to the number itself. So 'has increased' is correct. Compare with 'A number of pupils have...' where 'a number of' means 'many' and takes a plural verb. This is a classic GL distinction! ✓"
+          "explanation": "'The number of' is singular — it refers to the number itself. So 'has increased' is correct. Compare with 'A number of pupils have...' where 'a number of' means 'many' and takes a plural verb. This is a classic key distinction! ✓"
         },
         {
           "id": 375,
@@ -23604,7 +23604,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is closest in meaning to 'ancient'?",
           options: ["Modern", "Valuable", "Beautiful", "Foreign", "Very old"],
           correct: 4,
-          explanation: "'Ancient' means belonging to the very distant past, or very old. Ancient civilisations like Egypt and Rome existed thousands of years ago. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Ancient' means belonging to the very distant past, or very old. Ancient civilisations like Egypt and Rome existed thousands of years ago. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 8,
@@ -23677,7 +23677,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word best completes: 'She spoke with great ___ about her travels around the world.'",
           options: ["Boredom", "Silence", "Anger", "Confusion", "Enthusiasm"],
           correct: 4,
-          explanation: "'Enthusiasm' means intense enjoyment, interest, or excitement. Speaking with enthusiasm means talking eagerly and passionately. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Enthusiasm' means intense enjoyment, interest, or excitement. Speaking with enthusiasm means talking eagerly and passionately. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 18, difficulty: 2,
@@ -23747,7 +23747,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is most opposite in meaning to 'noisy'?",
           options: ["Loud", "Small", "Fast", "Dark", "Quiet"],
           correct: 4,
-          explanation: "'Noisy' means making a lot of sound. Its opposite is 'quiet', meaning making very little sound. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Noisy' means making a lot of sound. Its opposite is 'quiet', meaning making very little sound. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 28, difficulty: 2,
@@ -23824,7 +23824,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is closest in meaning to 'dreadful'?",
           options: ["Wonderful","Ordinary","Exciting","Very bad or unpleasant","Odd"],
           correct: 3,
-          explanation: "'Dreadful' means extremely bad, unpleasant, or of very poor quality. Dreadful weather would be terrible weather that nobody wants to go out in. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Dreadful' means extremely bad, unpleasant, or of very poor quality. Dreadful weather would be terrible weather that nobody wants to go out in. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 38,
@@ -23904,7 +23904,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is the best antonym (opposite) of 'selfish'?",
           options: ["Greedy","Proud","Angry","Generous","Lazy"],
           correct: 3,
-          explanation: "'Selfish' means caring only about yourself. Its opposite is 'generous', meaning willing to give and share with others. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Selfish' means caring only about yourself. Its opposite is 'generous', meaning willing to give and share with others. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 48,
@@ -23984,7 +23984,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is closest in meaning to 'jubilant'?",
           options: ["Nervous","Bored","Angry","Confused","Overjoyed and triumphant"],
           correct: 4,
-          explanation: "'Jubilant' means feeling or expressing great happiness, especially after a success or victory. The jubilant crowd cheered when their team won. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Jubilant' means feeling or expressing great happiness, especially after a success or victory. The jubilant crowd cheered when their team won. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 58,
@@ -24064,7 +24064,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "In the sentence 'The gloomy weather matched her mood,' what does 'gloomy' mean?",
           options: ["Bright","Warm","Windy","Dark, dull, and depressing","Cold"],
           correct: 3,
-          explanation: "'Gloomy' means dark, dull, and depressing. Gloomy weather is overcast and dreary, and a gloomy mood is one of sadness and low spirits. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Gloomy' means dark, dull, and depressing. Gloomy weather is overcast and dreary, and a gloomy mood is one of sadness and low spirits. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 68,
@@ -24144,7 +24144,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is the best antonym (opposite) of 'defiant'?",
           options: ["Rebellious","Strong","Angry","Obedient","Brave"],
           correct: 3,
-          explanation: "'Defiant' means openly resisting authority or rules. Its opposite is 'obedient', meaning willing to comply with orders and follow instructions. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Defiant' means openly resisting authority or rules. Its opposite is 'obedient', meaning willing to comply with orders and follow instructions. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 78,
@@ -24224,7 +24224,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "In the sentence 'She sat quietly to contemplate the difficult decision,' what does 'contemplate' mean?",
           options: ["Ignore","Celebrate","Complain about","Think about deeply and carefully","Rush through"],
           correct: 3,
-          explanation: "'Contemplate' means to think about something carefully and at length, giving it deep consideration. It suggests thoughtful reflection before making a decision. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Contemplate' means to think about something carefully and at length, giving it deep consideration. It suggests thoughtful reflection before making a decision. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 88,
@@ -24304,7 +24304,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           question: "Which word is the best antonym (opposite) of 'tenacious'?",
           options: ["Stubborn","Strong","Determined","Giving up easily","Brave"],
           correct: 3,
-          explanation: "'Tenacious' means holding firmly to something and not letting go, or being very persistent. Its opposite is 'giving up easily', meaning lacking determination. This type of question comes up regularly in GL papers. ✓"
+          explanation: "'Tenacious' means holding firmly to something and not letting go, or being very persistent. Its opposite is 'giving up easily', meaning lacking determination. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           id: 98,
@@ -24426,7 +24426,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Tall"
           ],
           "correct": 0,
-          "explanation": "'Slender' means gracefully thin. It is often used to describe someone or something that is narrow and elegant. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Slender' means gracefully thin. It is often used to describe someone or something that is narrow and elegant. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 108,
@@ -24566,7 +24566,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Success"
           ],
           "correct": 1,
-          "explanation": "'Victory' means winning a battle, game, or competition. Its opposite is 'defeat', meaning losing or being beaten. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Victory' means winning a battle, game, or competition. Its opposite is 'defeat', meaning losing or being beaten. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 118,
@@ -24706,7 +24706,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "To punish"
           ],
           "correct": 3,
-          "explanation": "'Permit' means to give permission for something or to allow it to happen. If a teacher permits you to leave, she is saying you may go. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Permit' means to give permission for something or to allow it to happen. If a teacher permits you to leave, she is saying you may go. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 128,
@@ -24846,7 +24846,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Hungry"
           ],
           "correct": 3,
-          "explanation": "'Cunning' means skilled at achieving what you want, often by deceiving others. A cunning fox uses its cleverness to outsmart other animals. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Cunning' means skilled at achieving what you want, often by deceiving others. A cunning fox uses its cleverness to outsmart other animals. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 138,
@@ -24986,7 +24986,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Servant"
           ],
           "correct": 0,
-          "explanation": "'Companion' means a person you spend time with or travel with — a friend or partner who keeps you company. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Companion' means a person you spend time with or travel with — a friend or partner who keeps you company. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 148,
@@ -25126,7 +25126,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Forbidden"
           ],
           "correct": 2,
-          "explanation": "'Reluctant' means unwilling and hesitant. If you are reluctant to do something, you do not really want to do it. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Reluctant' means unwilling and hesitant. If you are reluctant to do something, you do not really want to do it. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 158,
@@ -25266,7 +25266,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Duty"
           ],
           "correct": 3,
-          "explanation": "A 'possession' is something that belongs to you — something you own. Your toys, books, and clothes are all your possessions. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "A 'possession' is something that belongs to you — something you own. Your toys, books, and clothes are all your possessions. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 168,
@@ -25406,7 +25406,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Nervous"
           ],
           "correct": 3,
-          "explanation": "'Prosperous' means successful, especially in terms of money and business. A prosperous town has thriving shops and well-kept buildings. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Prosperous' means successful, especially in terms of money and business. A prosperous town has thriving shops and well-kept buildings. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 178,
@@ -25546,7 +25546,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Thick"
           ],
           "correct": 0,
-          "explanation": "'Rigid' means unable to bend or be forced out of shape; stiff. Its opposite is 'flexible', meaning capable of bending easily without breaking. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Rigid' means unable to bend or be forced out of shape; stiff. Its opposite is 'flexible', meaning capable of bending easily without breaking. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 188,
@@ -25686,7 +25686,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "To clean thoroughly"
           ],
           "correct": 3,
-          "explanation": "'Accumulate' means to gather or collect something gradually over time. Dust accumulates on shelves if you do not clean regularly. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Accumulate' means to gather or collect something gradually over time. Dust accumulates on shelves if you do not clean regularly. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 198,
@@ -25826,7 +25826,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Paid"
           ],
           "correct": 1,
-          "explanation": "'Commended' means praised formally and publicly. When a headteacher commends pupils, she is officially recognising their good behaviour or achievements. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Commended' means praised formally and publicly. When a headteacher commends pupils, she is officially recognising their good behaviour or achievements. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 208,
@@ -25980,7 +25980,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Lament"
           ],
           "correct": 4,
-          "explanation": "To 'lament' means to express deep sadness or grief about something. People lament the loss of things they valued. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "To 'lament' means to express deep sadness or grief about something. People lament the loss of things they valued. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 219,
@@ -26120,7 +26120,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Quite ordinary"
           ],
           "correct": 0,
-          "explanation": "'Substantial' means of considerable importance, size, or worth. A substantial meal is a large, filling one. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Substantial' means of considerable importance, size, or worth. A substantial meal is a large, filling one. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 229,
@@ -26260,7 +26260,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Precede"
           ],
           "correct": 4,
-          "explanation": "To 'precede' means to come before something in time, order, or position. Lightning precedes thunder — you see the flash before you hear the boom. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "To 'precede' means to come before something in time, order, or position. Lightning precedes thunder — you see the flash before you hear the boom. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 239,
@@ -26400,7 +26400,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Humble and not showy"
           ],
           "correct": 4,
-          "explanation": "'Modest' means unassuming and moderate, not boasting about achievements. A modest person does not brag about their successes. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Modest' means unassuming and moderate, not boasting about achievements. A modest person does not brag about their successes. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 249,
@@ -26540,7 +26540,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Made a serious promise"
           ],
           "correct": 4,
-          "explanation": "'Pledged' means made a solemn promise or commitment. When a mayor pledges something, they are formally promising to make it happen. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Pledged' means made a solemn promise or commitment. When a mayor pledges something, they are formally promising to make it happen. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 259,
@@ -26680,7 +26680,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Enduring pain without complaining"
           ],
           "correct": 4,
-          "explanation": "'Stoic' means enduring pain and hardship without showing feelings or complaining. A stoic person remains calm and composed even in difficult times. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Stoic' means enduring pain and hardship without showing feelings or complaining. A stoic person remains calm and composed even in difficult times. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 269,
@@ -26736,7 +26736,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Sociable"
           ],
           "correct": 0,
-          "explanation": "'Congenial' means pleasant and suited to one's taste or nature; agreeable company. Its opposite is 'hostile', meaning unfriendly and opposed. The distractors are all near-synonyms of congenial, which is a common GL trap. A great word to use in your own writing! ✓"
+          "explanation": "'Congenial' means pleasant and suited to one's taste or nature; agreeable company. Its opposite is 'hostile', meaning unfriendly and opposed. The distractors are all near-synonyms of congenial, which is a common exam trap. A great word to use in your own writing! ✓"
         },
         {
           "id": 273,
@@ -26820,7 +26820,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Mild"
           ],
           "correct": 3,
-          "explanation": "'Benign' means gentle, kindly, and not harmful. Its opposite is 'malignant', meaning very dangerous, harmful, or likely to cause death. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Benign' means gentle, kindly, and not harmful. Its opposite is 'malignant', meaning very dangerous, harmful, or likely to cause death. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 279,
@@ -26960,7 +26960,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "To express sharp disapproval; tell someone off"
           ],
           "correct": 4,
-          "explanation": "A 'reprimand' is a formal expression of disapproval — a severe telling off. The teacher reprimanded the pupils for their rude behaviour. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "A 'reprimand' is a formal expression of disapproval — a severe telling off. The teacher reprimanded the pupils for their rude behaviour. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 289,
@@ -27114,7 +27114,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Evoking a keen sense of sadness or pity"
           ],
           "correct": 4,
-          "explanation": "'Poignant' means evoking a keen sense of sadness or regret. A poignant story touches your heart and may bring tears to your eyes. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Poignant' means evoking a keen sense of sadness or regret. A poignant story touches your heart and may bring tears to your eyes. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 300,
@@ -27268,7 +27268,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Quote"
           ],
           "correct": 3,
-          "explanation": "To 'disparage' means to regard or represent something as being of little worth; to belittle or speak disrespectfully about it. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "To 'disparage' means to regard or represent something as being of little worth; to belittle or speak disrespectfully about it. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 311,
@@ -27408,7 +27408,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Extremely generous"
           ],
           "correct": 1,
-          "explanation": "'Irrevocable' means not able to be changed, reversed, or recovered. An irrevocable decision is permanent and final. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Irrevocable' means not able to be changed, reversed, or recovered. An irrevocable decision is permanent and final. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 321,
@@ -27441,16 +27441,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 323,
           "difficulty": 3,
-          "question": "In the sentence 'She tried to placate the angry customer,' what does 'placate' mean?",
+          "question": "In the sentence 'He brought flowers to placate his mother after forgetting her birthday,' what does 'placate' mean?",
           "options": [
-            "Ignore",
-            "Argue with",
-            "Copy",
-            "Trick",
-            "Make someone less angry or hostile"
+            "To avoid speaking to someone",
+            "To calm or soothe someone who is upset",
+            "To blame someone for a mistake",
+            "To copy someone's behaviour",
+            "To embarrass someone in public"
           ],
-          "correct": 4,
-          "explanation": "To 'placate' means to make someone less angry or hostile, usually by doing or saying something to calm them down. Building a strong vocabulary is one of the best exam skills. ✓"
+          "correct": 1,
+          "explanation": "To 'placate' means to calm or soothe someone who is upset or annoyed, usually by doing something kind. The flowers are meant to smooth things over with his mother. Building a strong vocabulary is one of the best exam skills. ✓"
         },
         {
           "id": 324,
@@ -27548,7 +27548,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Beautifully made"
           ],
           "correct": 1,
-          "explanation": "'Clandestine' means kept secret or done secretly, especially because it is not officially allowed. A clandestine meeting is one held in secrecy away from public view. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Clandestine' means kept secret or done secretly, especially because it is not officially allowed. A clandestine meeting is one held in secrecy away from public view. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 331,
@@ -27628,7 +27628,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which of these words is the BEST opposite of 'enormous'?",
           "options": ["Small", "Little", "Tiny", "Short", "Thin"],
           "correct": 2,
-          "explanation": "'Tiny' is the best opposite of 'enormous' because both are extreme words. 'Small' is less extreme. When choosing antonyms, match the strength of the word — 'enormous' is very strong, so its opposite should be equally strong. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Tiny' is the best opposite of 'enormous' because both are extreme words. 'Small' is less extreme. When choosing antonyms, match the strength of the word — 'enormous' is very strong, so its opposite should be equally strong. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 341,
@@ -27708,7 +27708,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which word means 'to eat' but suggests someone is eating very messily?",
           "options": ["Nibble", "Devour", "Gobble", "Savour", "Munch"],
           "correct": 2,
-          "explanation": "'Gobble' means to eat quickly and greedily, often messily. 'Nibble' is small, neat bites. 'Savour' means to enjoy slowly. 'Devour' is fast but not necessarily messy. 'Munch' is steady chewing. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Gobble' means to eat quickly and greedily, often messily. 'Nibble' is small, neat bites. 'Savour' means to enjoy slowly. 'Devour' is fast but not necessarily messy. 'Munch' is steady chewing. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 351,
@@ -27788,7 +27788,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which sentence uses the most appropriate FORMAL language?",
           "options": ["We need to chat about the problem.", "We should discuss the matter.", "We gotta sort this out.", "Let's have a word about it.", "We need to talk about the stuff."],
           "correct": 1,
-          "explanation": "'We should discuss the matter' uses formal vocabulary: 'discuss' instead of 'chat', 'matter' instead of 'problem' or 'stuff'. This is the style you'd use in a letter to your MP or headteacher. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'We should discuss the matter' uses formal vocabulary: 'discuss' instead of 'chat', 'matter' instead of 'problem' or 'stuff'. This is the style you'd use in a letter to your MP or headteacher. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 361,
@@ -27868,15 +27868,15 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which word can mean BOTH 'reasonable' AND 'a place where rides and games are found'?",
           "options": ["Fair", "Just", "Right", "Equal", "Park"],
           "correct": 0,
-          "explanation": "'Fair' can mean reasonable or just ('That's not fair!') AND a funfair or travelling show ('We went to the fair'). It can also mean light-haired or fine weather! Words with multiple meanings are called homonyms. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Fair' can mean reasonable or just ('That's not fair!') AND a funfair or travelling show ('We went to the fair'). It can also mean light-haired or fine weather! Words with multiple meanings are called homonyms. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 371,
           "difficulty": 2,
-          "question": "In which sentence does 'sentence' mean 'a punishment given by a judge'?",
-          "options": ["Write a sentence using the word 'beautiful'.", "The judge gave a sentence of five years.", "Can you spot the error in this sentence?", "Start your sentence with a capital letter.", "That was a very long sentence to read."],
+          "question": "In which sentence does 'sentence' mean 'a punishment for a crime'?",
+          "options": ["Please copy this sentence into your book.", "The thief received a ten-year sentence for burglary.", "Can you find the mistake in this sentence?", "Begin every sentence with a capital letter.", "That sentence is too long and needs a full stop."],
           "correct": 1,
-          "explanation": "In 'The judge gave a sentence of five years', 'sentence' means a punishment. In all the other options, it means a group of words that makes a complete statement. Context is everything! ✓"
+          "explanation": "In 'The thief received a ten-year sentence for burglary', 'sentence' means a punishment. In all the other options, 'sentence' means a group of words forming a complete statement. Context is everything! ✓"
         },
         {
           "id": 372,
@@ -27905,10 +27905,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 375,
           "difficulty": 3,
-          "question": "In which sentence does 'crane' mean 'to stretch your neck'?",
-          "options": ["The crane lifted the heavy steel beam.", "A crane stood perfectly still in the shallow water.", "She had to crane her neck to see the stage.", "The construction crane towered above the building.", "We spotted a beautiful crane by the lake."],
+          "question": "In which sentence is 'crane' used as a verb meaning 'to stretch forward to see something'?",
+          "options": ["The enormous crane lifted the steel beams onto the roof.", "A crane stood perfectly still in the shallow water.", "Dad had to crane over the fence to watch the parade go past.", "The construction crane towered above the new building.", "We spotted a beautiful crane wading by the lake."],
           "correct": 2,
-          "explanation": "In 'She had to crane her neck', 'crane' is a verb meaning to stretch forward to see something. In the other sentences, it's either a machine for lifting heavy objects or a tall wading bird. Three meanings for one word! A great word to use in your own writing! ✓"
+          "explanation": "In 'Dad had to crane over the fence', 'crane' is a verb meaning to stretch forward to see better. In the other sentences, it's either a machine for lifting heavy objects or a tall wading bird. Three meanings for one word — a great one to use in your own writing! ✓"
         },
         {
           "id": 376,
@@ -27929,10 +27929,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 378,
           "difficulty": 3,
-          "question": "Which word can mean BOTH 'a round shape' AND 'a series of visits'?",
+          "question": "Which word can mean BOTH 'circular in shape' AND 'a doctor's set of visits to patients'?",
           "options": ["Circle", "Ring", "Cycle", "Round", "Loop"],
           "correct": 3,
-          "explanation": "'Round' can mean circular in shape (a round table) AND a series of visits (the doctor's rounds, a round of drinks). It's also a stage in a competition (round two) and a type of ammunition. Look for prefixes and suffixes you recognise in unfamiliar words. ✓"
+          "explanation": "'Round' can mean circular (a round table) AND a set of visits (the doctor's rounds, a postman's round). It's also a stage in a competition (round two). Look for prefixes and suffixes you recognise in unfamiliar words. ✓"
         },
         {
           "id": 379,
@@ -27945,10 +27945,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 380,
           "difficulty": 2,
-          "question": "Which word can mean BOTH 'a musical instrument' AND 'a body organ'?",
+          "question": "Which word can mean BOTH 'a large keyboard instrument often heard in churches' AND 'a body part such as the heart or liver'?",
           "options": ["Organ", "Drum", "Trumpet", "Bell", "Pipe"],
           "correct": 0,
-          "explanation": "'Organ' can mean a large keyboard instrument found in churches AND a body part like the heart, liver, or lungs. Same word, very different meanings! Context is your best friend — surrounding words give clues. ✓"
+          "explanation": "'Organ' can mean a large keyboard instrument found in churches AND a body part like the heart, liver, or lungs. Same word, very different meanings — context is your best friend. ✓"
         },
         {
           "id": 381,
@@ -27956,7 +27956,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the prefix 'un-' mean in the word 'unhappy'?",
           "options": ["Very", "Before", "Not", "Again", "Too much"],
           "correct": 2,
-          "explanation": "The prefix 'un-' means 'not'. So 'unhappy' means 'not happy'. This works for loads of words: unfair (not fair), unkind (not kind), unable (not able). It's one of the most useful prefixes to know! This type of question comes up regularly in GL papers. ✓"
+          "explanation": "The prefix 'un-' means 'not'. So 'unhappy' means 'not happy'. This works for loads of words: unfair (not fair), unkind (not kind), unable (not able). It's one of the most useful prefixes to know! This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 382,
@@ -28036,7 +28036,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the prefix 'inter-' mean in 'international'?",
           "options": ["Inside", "Outside", "Between", "Against", "Without"],
           "correct": 2,
-          "explanation": "'Inter-' means 'between'. So 'international' means between nations. Think of: internet (between networks), interval (time between), interact (act between people). This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Inter-' means 'between'. So 'international' means between nations. Think of: internet (between networks), interval (time between), interact (act between people). This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 392,
@@ -28116,7 +28116,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "The root 'struct' means 'to build'. What does 'destruction' mean?",
           "options": ["Building something up", "Taking something apart (un-building)", "Making something stronger", "Painting something", "Measuring something"],
           "correct": 1,
-          "explanation": "'De' means 'down/away' and 'struct' means 'to build', so 'destruction' means un-building — tearing something down. Other 'struct' words: construct (build together), instruct (build knowledge in someone), structure (something built). This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'De' means 'down/away' and 'struct' means 'to build', so 'destruction' means un-building — tearing something down. Other 'struct' words: construct (build together), instruct (build knowledge in someone), structure (something built). This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 402,
@@ -28204,7 +28204,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which word is the ADJECTIVE form in the word family of 'beauty'?",
           "options": ["Beautify", "Beautiful", "Beauty", "Beautifully", "Beautician"],
           "correct": 1,
-          "explanation": "'Beautiful' is the adjective (describes a noun: a beautiful garden). 'Beauty' is the noun, 'beautify' is the verb, 'beautifully' is the adverb, and 'beautician' is a person noun. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Beautiful' is the adjective (describes a noun: a beautiful garden). 'Beauty' is the noun, 'beautify' is the verb, 'beautifully' is the adverb, and 'beautician' is a person noun. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 413,
@@ -28284,7 +28284,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Complete the word family: electric → electrician → electricity → ___",
           "options": ["Electron", "Electrify", "Electrocute", "Electrical", "Electrode"],
           "correct": 3,
-          "explanation": "The pattern shows different word forms: adjective (electric) → person (electrician) → noun (electricity) → adjective variant (electrical). 'Electrical' means 'relating to electricity' and completes the core family forms. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "The pattern shows different word forms: adjective (electric) → person (electrician) → noun (electricity) → adjective variant (electrical). 'Electrical' means 'relating to electricity' and completes the core family forms. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 423,
@@ -28364,7 +28364,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the expression 'break the ice' mean?",
           "options": ["To smash something frozen", "To start a conversation with someone new", "To ruin a party", "To go ice skating", "To cause trouble"],
           "correct": 1,
-          "explanation": "'Break the ice' means to do or say something to make people feel more comfortable, especially when meeting for the first time. The 'ice' is the awkward feeling — you 'break' through it. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Break the ice' means to do or say something to make people feel more comfortable, especially when meeting for the first time. The 'ice' is the awkward feeling — you 'break' through it. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 433,
@@ -28452,7 +28452,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Choose the word that best completes the sentence: 'The scientist made a ___ discovery that changed our understanding of the disease.'",
           "options": ["Trivial", "Groundbreaking", "Accidental", "Minor", "Temporary"],
           "correct": 1,
-          "explanation": "'Groundbreaking' means revolutionary and extremely important — a discovery that changes our understanding must be significant. 'Trivial' and 'minor' mean unimportant (the opposite), 'accidental' and 'temporary' don't fit the meaning. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Groundbreaking' means revolutionary and extremely important — a discovery that changes our understanding must be significant. 'Trivial' and 'minor' mean unimportant (the opposite), 'accidental' and 'temporary' don't fit the meaning. This type of question comes up regularly in 11+ papers. ✓"
         },
         {
           "id": 444,
@@ -28532,7 +28532,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Choose the word that best completes the sentence: 'The museum's collection of ancient artefacts was truly ___.'",
           "options": ["Boring", "Dull", "Ordinary", "Remarkable", "Forgettable"],
           "correct": 3,
-          "explanation": "'Remarkable' means worthy of attention, impressive and unusual — fitting for a collection of ancient artefacts. 'Boring', 'ordinary', 'dull', and 'forgettable' all suggest something unimpressive, which contradicts 'truly'. This type of question comes up regularly in GL papers. ✓"
+          "explanation": "'Remarkable' means worthy of attention, impressive and unusual — fitting for a collection of ancient artefacts. 'Boring', 'ordinary', 'dull', and 'forgettable' all suggest something unimpressive, which contradicts 'truly'. This type of question comes up regularly in 11+ papers. ✓"
         }
       ]
     },
@@ -31916,16 +31916,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 242,
           "difficulty": 2,
-          "question": "What punctuation marks are used to show someone is speaking?",
+          "question": "Which punctuation is placed around the exact words a character says aloud?",
           "options": [
             "Brackets",
             "Apostrophes",
             "Hyphens",
-            "Speech marks (inverted commas)",
-            "Colons"
+            "Inverted commas (speech marks)",
+            "Semicolons"
           ],
           "correct": 3,
-          "explanation": "Speech marks (also called inverted commas or quotation marks) are used around the exact words someone says. For example: \"Hello,\" said Mrs Brown. ✓"
+          "explanation": "Inverted commas (also called speech marks or quotation marks) are placed around the exact words someone says. For example: \"Hello,\" said Mrs Brown. Apostrophes show possession or contractions, not speech. ✓"
         },
         {
           "id": 243,
@@ -33309,7 +33309,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "In 'The well was very deep', what word class is 'well'?",
           "options": ["Adverb", "Adjective", "Verb", "Noun", "Conjunction"],
           "correct": 3,
-          "explanation": "'Well' is a NOUN here — it means a deep hole for water. In 'She played well', it's an adverb. In 'I feel well', it's an adjective. This is a GL favourite — testing whether you can read the context! ✓"
+          "explanation": "'Well' is a NOUN here — it means a deep hole for water. In 'She played well', it's an adverb. In 'I feel well', it's an adjective. This is an 11+ favourite — testing whether you can read the context! ✓"
         },
         {
           "id": 350,

@@ -468,7 +468,7 @@ export const areaperimeterSubConcepts = [
           {
             type: "consolidate",
             title: () => "Finding a missing side from perimeter!",
-            body: () => `When you know the perimeter and one side, work backwards:`,
+            body: () => `Here's the recipe, worked through with this rectangle: length 12 m, width 6 m, perimeter 36 m. Imagine you were told the perimeter (36 m) and one side (12 m), and had to find the other.`,
             bodyParts: () => [
               { type: 'visual', component: 'RectangleDiagram', props: () => ({ length: 12, width: 6, dimUnit: "m" }) },
               {
@@ -476,9 +476,9 @@ export const areaperimeterSubConcepts = [
                 component: 'WorkedExample',
                 props: () => ({
                   steps: [
-                    { text: "Step 1: Halve the perimeter", why: "Perimeter ÷ 2 = length + width" },
-                    { text: "Step 2: Subtract the known side", why: "What's left is the missing side!" },
-                    { text: "Check: 2 × (length + width) should = perimeter", why: "Plug both sides back in to verify. ✓" }
+                    { text: "Step 1: Halve the perimeter → 36 ÷ 2 = 18", why: "Perimeter ÷ 2 = length + width" },
+                    { text: "Step 2: Subtract the known side → 18 − 12 = 6", why: "What's left is the missing side!" },
+                    { text: "Check: 2 × (12 + 6) = 36 ✓", why: "Plug both sides back in to verify." }
                   ],
                   allRevealed: true
                 })
@@ -2665,7 +2665,7 @@ export const areaperimeterSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Outer area = **${v.intOuterArea}${v.unit}**. Inner area = **${v.intInnerArea}${v.unit}**. What is the area of just the path?`,
+            body: (v) => `Outer area = **${v.outerArea}${v.unit}**. Inner area = **${v.innerArea}${v.unit}**. What is the area of just the path?`,
             visual: {
               component: "PathBorderDiagram",
               props: (v) => ({
@@ -2675,18 +2675,18 @@ export const areaperimeterSubConcepts = [
                 innerW: v.innerW,
                 pathWidth: v.pathWidth,
                 dimUnit: v.dimUnit,
-                innerLabel: `${v.intInnerArea} ${v.unit}`,
+                innerLabel: `${v.innerArea} ${v.unit}`,
                 pathLabel: "?"
               })
             },
             interaction: {
               type: "multiple-choice",
-              question: (v) => `What is ${v.intOuterArea} − ${v.intInnerArea}?`,
-              getOptions: (v) => generateDistractors(v.intPathArea),
-              correctAnswer: (v) => v.intPathArea,
+              question: (v) => `What is ${v.outerArea} − ${v.innerArea}?`,
+              getOptions: (v) => generateDistractors(v.pathArea),
+              correctAnswer: (v) => v.pathArea,
               feedback: {
-                correct: (v) => `Brilliant! **${v.intOuterArea} − ${v.intInnerArea} = ${v.intPathArea}${v.unit}**. The path area is ${v.intPathArea}${v.unit}! ✓`,
-                incorrect: (v) => `Not quite! ${v.intOuterArea} − ${v.intInnerArea} = **${v.intPathArea}${v.unit}**. Subtract the inner from the outer!`
+                correct: (v) => `Brilliant! **${v.outerArea} − ${v.innerArea} = ${v.pathArea}${v.unit}**. The path area is ${v.pathArea}${v.unit}! ✓`,
+                incorrect: (v) => `Not quite! ${v.outerArea} − ${v.innerArea} = **${v.pathArea}${v.unit}**. Subtract the inner from the outer!`
               }
             }
           },

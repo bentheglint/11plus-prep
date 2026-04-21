@@ -2007,6 +2007,304 @@ export const letterCodesSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT 9: Mirror Coding
+  // Category: core
+  // Lesson A: step-by-step | Lesson B: spot-the-mistake
+  // ==========================================
+  {
+    id: "mirror-coding",
+    name: "Mirror Coding",
+    category: "core",
+    lessons: [
+      {
+        id: "mirror-coding-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "Crack the **mirror code** — A↔Z, B↔Y, C↔X — letters swap with their alphabet twin",
+          "Discover the magic: encoding and decoding use the **same** rule (self-inverse!)"
+        ],
+        variableSets: [
+          {
+            name: "Aisha",
+            scenario: "learning to write in mirror code",
+            originalWord: "BED",
+            codedWord: "YVW",
+            letterBreakdown: ["B(2) ↔ Y(25)", "E(5) ↔ V(22)", "D(4) ↔ W(23)"],
+            interactWord: "FOX",
+            interactCoded: "ULC",
+            interactOptions: ["ULC", "UPC", "TLC", "ULD", "ULB"],
+            interactCorrectAnswer: "ULC",
+            interactExplanation: "Each letter swaps with its mirror twin: F↔U, O↔L, X↔C. FOX becomes ULC. ✓"
+          },
+          {
+            name: "Leo",
+            scenario: "sending a secret message to his best friend",
+            originalWord: "CAT",
+            codedWord: "XZG",
+            letterBreakdown: ["C(3) ↔ X(24)", "A(1) ↔ Z(26)", "T(20) ↔ G(7)"],
+            interactWord: "DOG",
+            interactCoded: "WLT",
+            interactOptions: ["WLT", "VLT", "WMT", "WLU", "WKS"],
+            interactCorrectAnswer: "WLT",
+            interactExplanation: "Each letter swaps with its mirror twin: D↔W, O↔L, G↔T. DOG becomes WLT. ✓"
+          },
+          {
+            name: "Zainab",
+            scenario: "building her first mirror cipher",
+            originalWord: "JOY",
+            codedWord: "QLB",
+            letterBreakdown: ["J(10) ↔ Q(17)", "O(15) ↔ L(12)", "Y(25) ↔ B(2)"],
+            interactWord: "MAP",
+            interactCoded: "NZK",
+            interactOptions: ["NZK", "MZK", "NZJ", "NAK", "OZK"],
+            interactCorrectAnswer: "NZK",
+            interactExplanation: "Each letter swaps with its mirror twin: M↔N, A↔Z, P↔K. MAP becomes NZK. ✓"
+          },
+          {
+            name: "Kwame",
+            scenario: "decoding a mirror message from his pen pal",
+            originalWord: "STAR",
+            codedWord: "HGZI",
+            letterBreakdown: ["S(19) ↔ H(8)", "T(20) ↔ G(7)", "A(1) ↔ Z(26)", "R(18) ↔ I(9)"],
+            interactWord: "WVZI",
+            interactCoded: "DEAR",
+            interactOptions: ["DEAR", "DEAL", "FEAR", "DFAR", "EDAR"],
+            interactCorrectAnswer: "DEAR",
+            interactExplanation: "Mirror is **self-inverse** — same rule for decoding! W↔D, V↔E, Z↔A, I↔R. WVZI becomes DEAR. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can you mirror ${v.originalWord}?`,
+            body: (v) => `${v.name} is ${v.scenario}. Imagine the alphabet as a **mirror** — A reflects to Z, B reflects to Y, C reflects to X...\n\nEvery letter has a twin on the other side. Can you work out what **${v.originalWord}** reflects to?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? 'mirror' : '' }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Meet the mirror twins!",
+            body: (v) => `For mirror code, every letter swaps with its **alphabet twin**. A↔Z, B↔Y, C↔X — all the way to M↔N in the middle.\n\nQuick trick: a letter at position N mirrors to position **(27 − N)**. Use **EJOTY** (E=5, J=10, O=15, T=20, Y=25) as signposts!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.letterBreakdown.map((step, i) => ({
+                  text: step,
+                  why: i === 0 ? "Find the letter's position, then work out 27 minus that number" : i === v.letterBreakdown.length - 1 ? `${v.originalWord} → ${v.codedWord} ✓` : "Every letter swaps with its mirror twin"
+                })),
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                "Find each letter's position (A=1, B=2... Z=26)",
+                "Work out 27 minus that number to get the mirror position",
+                "Write the mirror letter to build the code"
+              ],
+              feedback: {
+                correct: (v) => `Exactly! Position → subtract from 27 → mirror letter. ✓`,
+                incorrect: (v) => `Not quite — you need the position first before you can find the mirror!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `Use the mirror rule (A↔Z, B↔Y...). What does **${v.interactWord}** become?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.interactCorrectAnswer}". ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Mirror magic unlocked!",
+            body: () => `Here's your recipe — and the **best bit**: encoding and decoding use exactly the same rule. Learn one, get the other free!`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Picture a mirror in the middle of the alphabet", why: "Between M(13) and N(14) — they're twins" },
+                  { text: "2. Find each letter's position, then do 27 − position", why: "E(5) → 27−5 = 22 → V. T(20) → 27−20 = 7 → G" },
+                  { text: "3. Write the mirror letter each time", why: "CAT → XZG, JOY → QLB ✓" },
+                  { text: "4. Decoding uses the SAME rule!", why: "Mirror is **self-inverse** — one skill does both jobs" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      },
+      {
+        id: "mirror-coding-mistake",
+        templateType: "spot-the-mistake",
+        learningGoal: [
+          "Spot the sneaky mirror-coding mistakes: off-by-one, half-mirroring, forgetting letters",
+          "Learn why the **self-inverse** property stops you second-guessing decoding"
+        ],
+        variableSets: [
+          {
+            name: "Maya",
+            scenario: "checking her brother's mirror code homework",
+            originalWord: "HOP",
+            codedWord: "SLK",
+            letterBreakdown: ["H(8) ↔ S(19)", "O(15) ↔ L(12)", "P(16) ↔ K(11)"],
+            friendWrong: "SLJ",
+            friendReason: "miscounted P's mirror — used 26 − position instead of 27 − position",
+            whyWrong: "P is at position 16. Mirror = 27 − 16 = 11 = **K**, not J(10). Off-by-one is the most common mirror mistake!",
+            interactWord: "TEA",
+            interactCoded: "GVZ",
+            interactOptions: ["GVZ", "GVA", "HVZ", "GUZ", "GWZ"],
+            interactCorrectAnswer: "GVZ",
+            interactExplanation: "Mirror twins: T↔G, E↔V, A↔Z. TEA becomes GVZ. ✓"
+          },
+          {
+            name: "Raphael",
+            scenario: "reviewing his practice test answers",
+            originalWord: "GATE",
+            codedWord: "TZGV",
+            letterBreakdown: ["G(7) ↔ T(20)", "A(1) ↔ Z(26)", "T(20) ↔ G(7)", "E(5) ↔ V(22)"],
+            friendWrong: "UZGV",
+            friendReason: "counted G's mirror as U — forgot **EJOTY** says T=20, so G(7) mirrors to T not U",
+            whyWrong: "G is at position 7. 27 − 7 = 20 = **T** (remember T in EJOTY!). U is 21, one past the mirror.",
+            interactWord: "CAKE",
+            interactCoded: "XZPV",
+            interactOptions: ["XZPV", "XZPW", "YZPV", "XAPV", "XZQV"],
+            interactCorrectAnswer: "XZPV",
+            interactExplanation: "Mirror twins: C↔X, A↔Z, K↔P, E↔V. CAKE becomes XZPV. ✓"
+          },
+          {
+            name: "Freya",
+            scenario: "spotting errors in a friend's decoded message",
+            originalWord: "MOON",
+            codedWord: "NLLM",
+            letterBreakdown: ["M(13) ↔ N(14)", "O(15) ↔ L(12)", "O(15) ↔ L(12)", "N(14) ↔ M(13)"],
+            friendWrong: "MLLN",
+            friendReason: "left M and N unchanged, thinking middle letters stay put",
+            whyWrong: "Even M and N swap! M(13) mirrors to N(14) and N(14) mirrors to M(13). **Every** letter must swap — including the middle twins.",
+            interactWord: "LION",
+            interactCoded: "OROM",
+            interactOptions: ["OROM", "OROL", "ORON", "PRON", "OROK"],
+            interactCorrectAnswer: "OROM",
+            interactExplanation: "Mirror twins: L↔O, I↔R, O↔L, N↔M. LION becomes OROM. ✓"
+          },
+          {
+            name: "Dara",
+            scenario: "decoding a secret note from her cousin",
+            originalWord: "URMH",
+            codedWord: "FINS",
+            letterBreakdown: ["U(21) ↔ F(6)", "R(18) ↔ I(9)", "M(13) ↔ N(14)", "H(8) ↔ S(19)"],
+            friendWrong: "FIRH",
+            friendReason: "thought decoding needed a different rule, so only mirrored the first two letters",
+            whyWrong: "Mirror coding is **self-inverse** — the same rule works both ways! If encoding swaps twins, decoding swaps the same twins back.",
+            interactWord: "SVZI",
+            interactCoded: "HEAR",
+            interactOptions: ["HEAR", "HERE", "HEAL", "HFAR", "GEAR"],
+            interactCorrectAnswer: "HEAR",
+            interactExplanation: "Same mirror rule decodes: S↔H, V↔E, Z↔A, I↔R. SVZI becomes HEAR. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Is "${v.friendWrong}" the right mirror for ${v.originalWord}?`,
+            body: (v) => `${v.name} is ${v.scenario}. The answer given was **"${v.friendWrong}"** as the mirror code for **${v.originalWord}**.\n\nBut that's wrong! Can you spot the mirror mistake?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                  v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
+                ),
+                hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? 'mirror' : '' }))
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Spot the mirror slip!",
+            body: (v) => `The mistake: ${v.friendReason}.\n\n${v.whyWrong}`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Wrong: "${v.friendWrong}"`, why: v.friendReason },
+                  ...v.letterBreakdown.map((step, i) => ({ text: step, why: i === 0 ? "Use 27 − position to find each mirror twin" : "Every letter has a twin — none stays the same" })),
+                  { text: `Correct: "${v.codedWord}" ✓`, why: "Mirror is **self-inverse** — same rule for encoding AND decoding" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "What's the CORRECT mirror?",
+            body: (v) => `Swap every letter with its **mirror twin** (A↔Z, B↔Y...). What's the right answer for **${v.interactWord}**?`,
+            visual: {
+              component: "AlphabetLine",
+              props: (v) => ({
+                showEJOTY: true,
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Well spotted! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.interactCorrectAnswer}". ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Now you'll dodge these mirror traps!",
+            body: () => `Watch out for these common mirror mistakes:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Use 27 − position, NOT 26 − position", why: "E(5) mirrors to V(22), because 27−5=22. Off-by-one is mistake number one!" },
+                  { text: "Every letter swaps — even M and N", why: "The middle twins M(13)↔N(14) aren't exceptions" },
+                  { text: "Decoding uses the SAME rule", why: "Mirror is **self-inverse** — one skill, two jobs ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];

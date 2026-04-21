@@ -1,5 +1,5 @@
 // Mock Test Comprehension Data
-// Long-form passages (~900 words) with 25 questions each, matching GL Assessment format:
+// Long-form passages (~900 words) with 25 questions each, matching 11+ exam format:
 // - 18 comprehension questions (retrieval, inference, character inference, negative retrieval, author purpose, effect on reader, text type, prediction)
 // - 4 vocabulary-in-context questions
 // - 3 word class/grammar questions
@@ -346,7 +346,7 @@ export const mockComprehensionPassages = [
         question: "In the sentence from paragraph 5, 'She would spend hours copying detailed diagrams', which word is an adverb?",
         options: ["spend", "hours", "copying", "detailed", "diagrams"],
         correct: 1,
-        explanation: "'Hours' here functions as an adverb — it tells us how long she would spend (modifying the verb 'spend'). Although 'hours' is usually a noun, in this sentence it acts adverbially to describe the duration of the action. This is a common GL trap. ✓"
+        explanation: "'Hours' here functions as an adverb — it tells us how long she would spend (modifying the verb 'spend'). Although 'hours' is usually a noun, in this sentence it acts adverbially to describe the duration of the action. This is a common exam trap. ✓"
       }
     ]
   },
@@ -1045,7 +1045,7 @@ export const mockComprehensionPassages = [
         question: "What type of words are 'thriving', 'rotating', and 'glowing' as used in the passage?",
         options: ["Nouns", "Verbs in past tense", "Adjectives (present participles used as adjectives)", "Adverbs", "Prepositions"],
         correct: 2,
-        explanation: "Although these words end in '-ing' (which usually indicates a verb), in the passage they describe nouns: 'thriving ecosystem' (paragraph 7), 'rotating cutting head' (paragraph not in this passage — 'glowing lure' paragraph 3). They function as adjectives. This is a classic GL trap — '-ing' words are not always verbs. ✓"
+        explanation: "Although these words end in '-ing' (which usually indicates a verb), in the passage they describe nouns: 'thriving ecosystem' (paragraph 7), 'rotating cutting head' (paragraph not in this passage — 'glowing lure' paragraph 3). They function as adjectives. This is a classic exam trap — '-ing' words are not always verbs. ✓"
       },
       {
         id: 25,

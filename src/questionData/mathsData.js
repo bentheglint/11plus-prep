@@ -1,4 +1,4 @@
-// Maths question data for 11+ GL Assessment prep
+// Maths question data for 11+ 11+ exam prep
 // 16 topics: Percentages, Decimals, Long Division, Ratio & Proportion, Fractions,
 // Long Multiplication, Algebra, Place Value & Rounding, Negative Numbers,
 // Prime Numbers & Factors, Area & Perimeter, Volume, Angles & Shapes,
@@ -3520,7 +3520,7 @@ const mathsData = {
             options: ["0.25", "0.34", "0.5", "0.7", "0.75"],
             correct: 4,
             explanation: "3/4 of the way from 0 to 1 is 0.75. This is because 3 ÷ 4 = 0.75. The arrow is closer to 1 than to 0.5. ✓",
-            visual: {"component":"NumberLine","props":{"min":0,"max":1,"tickInterval":0.25,"points":[{"value":0.75,"label":"?"}],"showLabels":true}}
+            visual: {"component":"NumberLine","props":{"min":0,"max":1,"tickInterval":1,"points":[{"value":0.75,"label":"?"}],"showLabels":true}}
           }
         ]
 }
@@ -11395,7 +11395,7 @@ algebra: {
       question: "If p = 8, what is (p + 4) × 2?",
       options: ["24", "20", "16", "28", "32"],
       correct: 0,
-      explanation: "Substitute p = 8: (p + 4) × 2 = (8 + 4) × 2 = 12 × 2 = 24. Remember BIDMAS - brackets first! ✓"
+      explanation: "Substitute p = 8: (p + 4) × 2 = (8 + 4) × 2 = 12 × 2 = 24. Remember BODMAS — brackets first! ✓"
     },
     {
       id: 22,
@@ -12752,7 +12752,7 @@ algebra: {
       question: "What is 3 × (4 + 2)?",
       options: ["18", "15", "16", "14", "20"],
       correct: 0,
-      explanation: "Work out the bracket first: 4 + 2 = 6. Then multiply: 3 × 6 = 18. Remember BIDMAS — brackets come first! ✓"
+      explanation: "Work out the bracket first: 4 + 2 = 6. Then multiply: 3 × 6 = 18. Remember BODMAS — brackets come first! ✓"
     },
     {
       id: 187,
@@ -12808,7 +12808,7 @@ algebra: {
       question: "What is 5 + 2 × (9 - 3)?",
       options: ["15", "19", "17", "42", "44"],
       correct: 2,
-      explanation: "Brackets first: 9 - 3 = 6. Then multiply: 2 × 6 = 12. Then add: 5 + 12 = 17. BIDMAS means brackets, then multiplication, then addition. ✓"
+      explanation: "Brackets first: 9 - 3 = 6. Then multiply: 2 × 6 = 12. Then add: 5 + 12 = 17. BODMAS means brackets, then multiplication, then addition. ✓"
     },
     {
       id: 194,
@@ -17810,7 +17810,7 @@ areaperimeter: {
     {
       id: 9,
       difficulty: 1,
-      visual: { component: "RectangleDiagram", props: { length: 3, width: 2, dimUnit: "m", showGrid: true } },
+      visual: { component: "RectangleDiagram", props: { length: 3, width: 2, dimUnit: "m" } },
       question: "Oliver is tiling his bathroom floor which is 3 metres long and 2 metres wide. Each tile covers 1 square metre. How many tiles does he need?",
       options: ["5 tiles", "6 tiles", "10 tiles", "12 tiles", "15 tiles"],
       correct: 1,
@@ -18034,7 +18034,7 @@ areaperimeter: {
     {
       id: 34,
       difficulty: 1,
-      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Perimeter = 60 m" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "m", label: "Perimeter = 60 m", square: true } },
       question: "A square field has a perimeter of 60 metres. What is the length of each side?",
       options: ["10 metres", "15 metres", "14 metres", "12 metres", "20 metres"],
       correct: 1,
@@ -18654,7 +18654,7 @@ areaperimeter: {
     {
       id: 103,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 22, width: 14, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: 14, dimUnit: "m", label: "Perimeter = 72 m" } },
       question: "A rectangle has a perimeter of 72 metres and a width of 14 metres. What is its length?",
       options: ["22 metres", "20 metres", "18 metres", "24 metres", "26 metres"],
       correct: 0,
@@ -18816,7 +18816,7 @@ areaperimeter: {
     {
       id: 121,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", label: "Area = 324 cm²" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: "?", dimUnit: "cm", label: "Area = 324 cm²", square: true } },
       question: "A square has an area of 324 square cm. What is the length of each side?",
       options: ["16 cm", "17 cm", "19 cm", "18 cm", "20 cm"],
       correct: 3,
@@ -18834,7 +18834,7 @@ areaperimeter: {
     {
       id: 123,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 26, width: 16, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: "?", width: 16, dimUnit: "cm", label: "Perimeter = 84 cm" } },
       question: "A rectangle has a perimeter of 84 cm and a width of 16 cm. What is its length?",
       options: ["26 cm", "24 cm", "22 cm", "28 cm", "30 cm"],
       correct: 0,
@@ -19740,7 +19740,7 @@ volume: {
       id: 16,
       difficulty: 2,
       question: "A cube and a cuboid both have the same volume of 64 cm³. The cube has edges of 4 cm. If the cuboid is 8 cm long and 2 cm wide, what is its height?",
-      visual: { component: "CuboidComparison", props: { cuboid1: { length: 4, width: 4, height: 4, label: "Cube" }, cuboid2: { length: 8, width: 2, height: 4, label: "Cuboid" }, dimUnit: "cm" } },
+      visual: { component: "CuboidComparison", props: { cuboid1: { length: 4, width: 4, height: 4, label: "Cube" }, cuboid2: { length: 8, width: 2, height: "?", label: "Cuboid" }, dimUnit: "cm" } },
       options: ["4 cm", "2 cm", "6 cm", "8 cm", "16 cm"],
       correct: 0,
       explanation: "The cuboid's volume is 64 cm³. Volume = length × width × height, so 64 = 8 × 2 × height. This gives 64 = 16 × height, so height = 64 ÷ 16 = 4 cm. ✓"
@@ -22149,11 +22149,11 @@ anglesshapes: {
     {
       id: 147,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "?°", color: "#6C5CE7"}], size: 200 } },
       question: "Which of these is a right angle?",
       options: ["45°", "60°", "180°", "90°", "270°"],
       correct: 3,
-      explanation: "A right angle is exactly 90°. ✓"
+      explanation: "A right angle is exactly 90° — it forms a perfect L-shape or square corner. You can spot it because it looks like the corner of a book or a door frame. ✓"
     },
     {
       id: 148,

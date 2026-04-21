@@ -109,7 +109,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "Both letters marching forward!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nDid you know? Sometimes both letters in a pair go **forward** through the alphabet together — like two friends walking side by side! Split them into two rows and you'll see the pattern straight away.\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nDid you know? Sometimes both letters in a pair go **forward** through the alphabet together — like two friends walking side by side! Split them into two rows and you'll see the pattern straight away.\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -152,7 +152,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Use Split and Track to find the next pair:\n\n**${v.interactSeries.join(", ")}, ___**`,
+            body: (v) => `Use Split and Track to find the next pair:\n\n**${v.interactSeries.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -283,7 +283,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: (v) => `Is "${v.friendWrong}" really the next pair?`,
-            body: (v) => `${v.name} is ${v.scenario}. The answer given was **${v.friendWrong}** — ${v.friendReason}.\n\nSeries (a list of letters that follow a rule): **${v.series.join(", ")}, ___**\n\nBut is that right? Press Next to find out!`,
+            body: (v) => `${v.name} is ${v.scenario}. The answer given was **${v.friendWrong}** — ${v.friendReason}.\n\nSeries (a list of letters that follow a rule): **${v.series.join(", ")}, ??**\n\nBut is that right? Press Next to find out!`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -315,7 +315,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Find the correct next pair!",
-            body: (v) => `**${v.interactSeries.join(", ")}, ___**\n\nSplit into two rows and track each pattern:`,
+            body: (v) => `**${v.interactSeries.join(", ")}, ??**\n\nSplit into two rows and track each pattern:`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -455,7 +455,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "They're heading opposite ways!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nHere's the twist: one letter goes **forward** while the other goes **backward** — like two people on an escalator going in opposite directions! That's why splitting into two rows is so important.\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nHere's the twist: one letter goes **forward** while the other goes **backward** — like two people on an escalator going in opposite directions! That's why splitting into two rows is so important.\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -487,7 +487,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Split and Track — watch out for opposite directions:\n\n**${v.interactSeries.join(", ")}, ___**`,
+            body: (v) => `Split and Track — watch out for opposite directions:\n\n**${v.interactSeries.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -614,7 +614,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: (v) => `Is "${v.friendWrong}" the right answer?`,
-            body: (v) => `${v.name} is ${v.scenario}. The answer given was **${v.friendWrong}** — ${v.friendReason}.\n\nSeries: **${v.series.join(", ")}, ___**\n\nBut is that right?`,
+            body: (v) => `${v.name} is ${v.scenario}. The answer given was **${v.friendWrong}** — ${v.friendReason}.\n\nSeries: **${v.series.join(", ")}, ??**\n\nBut is that right?`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -652,7 +652,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Find the correct answer!",
-            body: (v) => `**${v.interactSeries.join(", ")}, ___**`,
+            body: (v) => `**${v.interactSeries.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -792,7 +792,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "These letters are skipping!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nInstead of moving one letter at a time, these pairs **skip one** — jumping by 2 positions each step! It's like going up stairs two at a time.\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nInstead of moving one letter at a time, these pairs **skip one** — jumping by 2 positions each step! It's like going up stairs two at a time.\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -833,7 +833,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Find the next pair — remember, these skip one!\n\n**${v.interactSeries.join(", ")}, ___**`,
+            body: (v) => `Find the next pair — remember, these skip one!\n\n**${v.interactSeries.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -986,7 +986,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "Spot the hidden gap!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nHere's a really neat trick: look at each pair — the **gap** between the first and second letter is **always the same**!\n\n**${v.series.join(", ")}, ___**\n\n${v.gapDescription}. You can use this to double-check your answer!`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nHere's a really neat trick: look at each pair — the **gap** between the first and second letter is **always the same**!\n\n**${v.series.join(", ")}, ??**\n\n${v.gapDescription}. You can use this to double-check your answer!`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -1018,7 +1018,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Find the next pair — check the gap stays the same:\n\n**${v.interactSeries.join(", ")}, ___**`,
+            body: (v) => `Find the next pair — check the gap stays the same:\n\n**${v.interactSeries.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1150,7 +1150,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "Two different step sizes!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nHere's a twist that catches a lot of people out: the first and second letters don't move by the **same amount**. One might jump by 1 while the other jumps by 2! But once you split them into rows, the pattern becomes clear.\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nHere's a twist that catches a lot of people out: the first and second letters don't move by the **same amount**. One might jump by 1 while the other jumps by 2! But once you split them into rows, the pattern becomes clear.\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -1182,7 +1182,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Find each row's step size separately:\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `Find each row's step size separately:\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1302,7 +1302,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "Z, Y, X, W... a countdown!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nWhen you spot **Z** as the starting second letter, that's a big clue! The second row is often counting **backward** through the alphabet — like a countdown.\n\n**${v.series.join(", ")}, ___**\n\nThe question is: how fast is it counting back?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nWhen you spot **Z** as the starting second letter, that's a big clue! The second row is often counting **backward** through the alphabet — like a countdown.\n\n**${v.series.join(", ")}, ??**\n\nThe question is: how fast is it counting back?`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -1341,7 +1341,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Watch for the backward count:\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `Watch for the backward count:\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1461,7 +1461,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "Taking bigger leaps!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nSome series have letters that jump by **3 or more** positions at a time. That can feel tricky — but here's a great trick: convert letters to **numbers** (A=1, B=2, ...) and suddenly it's just adding and subtracting!\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nSome series have letters that jump by **3 or more** positions at a time. That can feel tricky — but here's a great trick: convert letters to **numbers** (A=1, B=2, ...) and suddenly it's just adding and subtracting!\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -1510,7 +1510,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Try converting to numbers:\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `Try converting to numbers:\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1634,7 +1634,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: () => "The magic number 27!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\nDid you know? There's a magic number hiding in the alphabet! In some series, the **positions of the two letters always add to 27**:\n\nA=1, Z=26 → 1+26 = **27**\nB=2, Y=25 → 2+25 = **27**\n\nOnce you know this trick, you can check your answers instantly!\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nDid you know? There's a magic number hiding in the alphabet! In some series, the **positions of the two letters always add to 27**:\n\nA=1, Z=26 → 1+26 = **27**\nB=2, Y=25 → 2+25 = **27**\n\nOnce you know this trick, you can check your answers instantly!\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -1677,7 +1677,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Use the add-to-27 shortcut:\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `Use the add-to-27 shortcut:\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({
@@ -1789,7 +1789,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "hook",
             title: (v) => `Do these SKIP-mirror too?`,
-            body: (v) => `${v.name} is ${v.scenario}.\n\nWe know A+Z=27, B+Y=27... but what if the series **skips by 2**? Does the 27 rule still work?\n\n**${v.series.join(", ")}, ___**\n\nLet's find out!`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nWe know A+Z=27, B+Y=27... but what if the series **skips by 2**? Does the 27 rule still work?\n\n**${v.series.join(", ")}, ??**\n\nLet's find out!`,
             visual: {
               component: "SequenceChain",
               props: (v) => ({
@@ -1828,7 +1828,7 @@ export const letterPairSeriesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Use the 27 shortcut to check your answer:\n\n**${v.series.join(", ")}, ___**`,
+            body: (v) => `Use the 27 shortcut to check your answer:\n\n**${v.series.join(", ")}, ??**`,
             visual: {
               component: "AlphabetLine",
               props: (v) => ({

@@ -1,8 +1,8 @@
 // Mock Test VR Configuration
-// Instructions, worked examples, and section structure matching GL Assessment format
+// Instructions, worked examples, and section structure matching 11+ exam format
 // Each VR paper: 85 questions, 50 minutes, grouped by type with instructions before each section
 
-// Two paper variants (matching GL Tests A/B vs C/D):
+// Two paper variants (matching 11+ Tests A/B vs C/D):
 // Variant A: uses letterCodes (6 Qs) + antonyms replaces one type
 // Variant B: uses sharedLetter (6 Qs) + numberWordCodes replaces one type
 // Both variants total 85 questions

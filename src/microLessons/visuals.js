@@ -1461,7 +1461,8 @@ export function RectangleDiagram({
   areaLabel = null,
   color = "#bfdbfe",
   missingDim = null,
-  label = null
+  label = null,
+  square = false
 }) {
   const svgW = 400;
   const svgH = label ? 300 : 280;
@@ -1487,7 +1488,8 @@ export function RectangleDiagram({
   const widthColor = (isWidthString || missingDim === 'width' || missingDim === 'all') ? '#dc2626' : '#6366f1';
 
   // Scale rectangle to match aspect ratio of actual dimensions
-  const aspect = numLength / numWidth;
+  // When `square: true`, force a 1:1 aspect regardless of default values.
+  const aspect = square ? 1 : numLength / numWidth;
   let rectW, rectH;
   if (aspect >= maxW / maxH) {
     rectW = maxW;
@@ -4804,6 +4806,22 @@ export function LineGraph({
 // Props: bars [{label, value}], scale, xLabel, yLabel,
 //        highlight (index), colors, unit, yStart
 // ============================================================
+// When a bar/slice label is a standard colour name, render it in that colour
+// so the chart matches the data it describes (fixes Jacqui's flag: "colours
+// labelled incorrectly").
+const LABEL_COLOR_MAP = {
+  red: '#ef4444', blue: '#3b82f6', green: '#22c55e', yellow: '#eab308',
+  purple: '#a855f7', orange: '#f97316', pink: '#ec4899', brown: '#92400e',
+  black: '#1f2937', white: '#f3f4f6', grey: '#9ca3af', gray: '#9ca3af'
+};
+function colorFor(label, palette, index) {
+  if (typeof label === 'string') {
+    const key = label.trim().toLowerCase();
+    if (LABEL_COLOR_MAP[key]) return LABEL_COLOR_MAP[key];
+  }
+  return palette[index % palette.length];
+}
+
 export function BarChart({
   bars = [],
   scale = null,
@@ -4893,7 +4911,7 @@ export function BarChart({
           const y = toY(b.value);
           const h = toY(yMin) - y;
           const isHL = highlight === i;
-          const fill = colors[i % colors.length];
+          const fill = b.color || colorFor(b.label, colors, i);
 
           return (
             <g key={`bar-${i}`}>
@@ -4978,7 +4996,7 @@ export function PieChart({
           const end = arcPoint(s.startAngle + s.sweep, r);
           const largeArc = s.sweep > 180 ? 1 : 0;
           const isHL = highlightIndex === i;
-          const fill = colors[i % colors.length];
+          const fill = s.color || colorFor(s.label, colors, i);
 
           // Slice path
           const d = s.sweep >= 360

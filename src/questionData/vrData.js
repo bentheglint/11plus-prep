@@ -1,5 +1,5 @@
-// Verbal Reasoning question data for 11+ GL Assessment prep
-// 16 topics covering all GL question types
+// Verbal Reasoning question data for 11+ 11+ exam prep
+// 16 topics covering all 11+ question types
 // All content is 100% original — no published material copied or paraphrased
 // Supports standard MC, select-two, and pick-from-sets question formats
 
@@ -4935,7 +4935,7 @@ const vrData = {
           question: "Which word can go after both 'any' and 'every' to make two new words?",
           options: ["Where","Day","Place","Part","How"],
           correct: 0,
-          explanation: "Any + where = anywhere, every + where = everywhere. Both are common compound words about places. While 'anyplace' exists in American English, 'everyday' and 'everywhere' are the standard British compound words tested in GL exams. ✓"
+          explanation: "Any + where = anywhere, every + where = everywhere. Both are common compound words about places. While 'anyplace' exists in American English, 'everyday' and 'everywhere' are the standard British compound words tested in the 11+ exams. ✓"
         },
         {
           id: 10,
@@ -9307,7 +9307,7 @@ const vrData = {
             "Alternate forward and back"
           ],
           correct: 1,
-          explanation: "G→H (+1), A→B (+1), M→N (+1), E→F (+1). Each letter has been moved one place forward in the alphabet. Tip: +1 is the most common GL code — practise until it's automatic! ✓"
+          explanation: "G→H (+1), A→B (+1), M→N (+1), E→F (+1). Each letter has been moved one place forward in the alphabet. Tip: +1 is the most common 11+ code — practise until it's automatic! ✓"
         },
         {
           id: 4,
@@ -9353,7 +9353,7 @@ const vrData = {
             "Each letter moves forward 2"
           ],
           correct: 2,
-          explanation: "S→T (+1), T→U (+1), A→B (+1), R→S (+1). Each letter moves forward one place in the alphabet. Tip: +1 is the most common GL code — practise until it's automatic! ✓"
+          explanation: "S→T (+1), T→U (+1), A→B (+1), R→S (+1). Each letter moves forward one place in the alphabet. Tip: +1 is the most common 11+ code — practise until it's automatic! ✓"
         },
         {
           id: 8,
@@ -10381,7 +10381,7 @@ const vrData = {
           question: "If FROG is coded as GTRH, what pattern has been used for the shifts?",
           options: ["+1, +3, +2, +1","+2, +1, +3, +2","+1, +2, +3, +1","+1, +2, +2, +1","+2, +2, +3, +1"],
           correct: 2,
-          explanation: "F→G (+1), R→T (+2), O→R (+3), G→H (+1). The pattern of shifts is +1, +2, +3, +1. Tip: +1 is the most common GL code — practise until it's automatic! ✓"
+          explanation: "F→G (+1), R→T (+2), O→R (+3), G→H (+1). The shifts grow by one each time: +1, +2, +3, then back to +1. Tip: when the shift changes letter by letter, write the number above each arrow — the pattern jumps out. ✓"
         },
         {
           id: 100,
@@ -10398,7 +10398,7 @@ const vrData = {
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for FAWN is GBXO (each letter moved forward by 1), what is the code for DUCK?",
+          question: "If the code for FAWN is GBXO, what is the code for DUCK?",
           options: ["EVEL","EVDK","EDVL","EVDL","DVDL"],
           correct: 3,
           explanation: "Each letter shifts forward by 1: D→E, U→V, C→D, K→L. So DUCK becomes EVDL. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10408,27 +10408,27 @@ const vrData = {
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for HAND is IBOE (each letter moved forward by 1), what is the code for FEET?",
+          question: "If the code for HAND is IBOE, what is the code for FEET?",
           options: ["FFGU","GFFE","GFEU","GEFU","GFFU"],
           correct: 4,
-          explanation: "Each letter shifts forward by 1: F→G, E→F, E→F, T→U. So FEET becomes GFFU. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
+          explanation: "Check the example: H→I, A→B, N→O, D→E — every letter shifts forward by 1. Apply the same rule to FEET: F→G, E→F, E→F, T→U. So FEET becomes GFFU. Tip: always test the shift on all four letters before applying it — don't trust just the first one. ✓"
         },
         {
           id: 103,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for COME is BNLD (each letter moved back by 1), what is the code for PLAY?",
+          question: "If the code for COME is BNLD, what is the code for PLAY?",
           options: ["OKZY","OKZX","OKYZ","OLZX","PKZX"],
           correct: 1,
-          explanation: "Each letter shifts back by 1: P→O, L→K, A→Z, Y→X. So PLAY becomes OKZX. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
+          explanation: "Check the example: C→B, O→N, M→L, E→D — every letter shifts back by 1. Apply the same rule to PLAY: P→O, L→K, A→Z (wrapping from the start of the alphabet), Y→X. So PLAY becomes OKZX. Tip: when you go back past A, loop round to Z — the alphabet works like a circle. ✓"
         },
         {
           id: 104,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for BALL is DCNN (each letter moved forward by 2), what is the code for KICK?",
+          question: "If the code for BALL is DCNN, what is the code for KICK?",
           options: ["MKEN","MKME","MKEM","MKEL","NKEM"],
           correct: 2,
           explanation: "Each letter shifts forward by 2: K→M, I→K, C→E, K→M. So KICK becomes MKEM. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10438,7 +10438,7 @@ const vrData = {
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for CAKE is DBLF (each letter moved forward by 1), what is the code for MILK?",
+          question: "If the code for CAKE is DBLF, what is the code for MILK?",
           options: ["NKML","NJMK","NJLM","NJML","MJML"],
           correct: 3,
           explanation: "Each letter shifts forward by 1: M→N, I→J, L→M, K→L. So MILK becomes NJML. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10448,7 +10448,7 @@ const vrData = {
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for BIRD is AHQC (each letter moved back by 1), what is the code for NEST?",
+          question: "If the code for BIRD is AHQC, what is the code for NEST?",
           options: ["MERS","NDRS","MDSR","MCRS","MDRS"],
           correct: 4,
           explanation: "Each letter shifts back by 1: N→M, E→D, S→R, T→S. So NEST becomes MDRS. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10458,7 +10458,7 @@ const vrData = {
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for TREE is USFF (each letter moved forward by 1), what is the code for LEAF?",
+          question: "If the code for TREE is USFF, what is the code for LEAF?",
           options: ["MFGB","MFBC","MFBG","MEBG","LFBG"],
           correct: 2,
           explanation: "Each letter shifts forward by 1: L→M, E→F, A→B, F→G. So LEAF becomes MFBG. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10468,7 +10468,7 @@ const vrData = {
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If the code for FROG is HTQI (each letter moved forward by 2), what is the code for TOAD?",
+          question: "If the code for FROG is HTQI, what is the code for TOAD?",
           options: ["VQCE","VQFC","VPCF","VQCF","WQCF"],
           correct: 3,
           explanation: "Each letter shifts forward by 2: T→V, O→Q, A→C, D→F. So TOAD becomes VQCF. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
@@ -10611,7 +10611,7 @@ const vrData = {
           question: "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for DAWN?",
           options: ["FCXP","EDXP","ECYP","ECXQ","ECXP"],
           correct: 4,
-          explanation: "The pattern alternates +1, +2: D→E(+1), A→C(+2), W→X(+1), N→P(+2). So DAWN becomes ECXP. Tip: +1 is the most common GL code — practise it until it's automatic! ✓"
+          explanation: "The pattern alternates +1, +2: D→E(+1), A→C(+2), W→X(+1), N→P(+2). So DAWN becomes ECXP. Tip: +1 is the most common 11+ code — practise it until it's automatic! ✓"
         },
         {
           id: 123,
@@ -10641,7 +10641,7 @@ const vrData = {
           question: "If HAPPY is coded as ICSQA (1st +1, 2nd +2, 3rd +3, 4th +1, 5th +2), what is the code for SMILE?",
           options: ["TOLNG","TOMLG","TOLMF","TOLMG","UOLMG"],
           correct: 3,
-          explanation: "Following the pattern +1,+2,+3,+1,+2: S→T(+1), M→O(+2), I→L(+3), L→M(+1), E→G(+2). So SMILE becomes TOLMG. Tip: +1 is the most common GL code — practise it until it's automatic! ✓"
+          explanation: "Following the pattern +1,+2,+3,+1,+2: S→T(+1), M→O(+2), I→L(+3), L→M(+1), E→G(+2). So SMILE becomes TOLMG. Tip: +1 is the most common 11+ code — practise it until it's automatic! ✓"
         },
         {
           id: 126,
@@ -12744,7 +12744,7 @@ const vrData = {
           question: "What number comes next in this series? 901, 800, 699, 598, 497, ___",
           options: ["398","395","397","394","396"],
           correct: 4,
-          explanation: "The pattern is -101 each time. 497 - 101 = 396. Tip: -101 is a common GL gap — watch for three-digit differences. ✓"
+          explanation: "The pattern is -101 each time. 497 - 101 = 396. Tip: -101 is a common gap — watch for three-digit differences. ✓"
         },
         {
           id: 60,
@@ -13127,7 +13127,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word BED?",
           options: ["12","11","13","14","15"],
           correct: 1,
-          explanation: "B=2, E=5, D=4. Total: 2 + 5 + 4 = 11. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "B=2, E=5, D=4. Total: 2 + 5 + 4 = 11. Tip: E=5 is an EJOTY anchor — use it to double-check nearby letters (D=4, F=6). ✓"
         },
         {
           id: 3,
@@ -13172,7 +13172,7 @@ const vrData = {
           question: "If A=3, B=5, C=7, what is the value of A + B + C?",
           options: ["12","15","14","13","16"],
           correct: 1,
-          explanation: "A=3, B=5, C=7. A + B + C = 3 + 5 + 7 = 15. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "A=3, B=5, C=7. A + B + C = 3 + 5 + 7 = 15. Tip: When the values are given (not alphabet positions), re-read them carefully before adding. ✓"
         },
         {
           id: 8,
@@ -13199,7 +13199,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... which of these words has the lowest total value?",
           options: ["BID","BIG","BAG","BED","BAD"],
           correct: 4,
-          explanation: "BAD: B=2+A=1+D=4=7. BIG: B=2+I=9+G=7=18. BAG: B=2+A=1+G=7=10. BED: B=2+E=5+D=4=11. BID: B=2+I=9+D=4=15. BAD has the lowest value at 7. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "BAD: B=2+A=1+D=4=7. BIG: B=2+I=9+G=7=18. BAG: B=2+A=1+G=7=10. BED: B=2+E=5+D=4=11. BID: B=2+I=9+D=4=15. BAD has the lowest value at 7. Tip: All five words start with B, so compare the last two letters only — it saves time. ✓"
         },
         {
           id: 11,
@@ -13217,7 +13217,7 @@ const vrData = {
           question: "If A=4, B=7, C=2, what is A × B − C?",
           options: ["24","26","28","30","22"],
           correct: 1,
-          explanation: "A=4, B=7, C=2. First multiply: A × B = 4 × 7 = 28. Then subtract: 28 − C = 28 − 2 = 26. Remember BODMAS — multiplication before subtraction. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "A=4, B=7, C=2. First multiply: A × B = 4 × 7 = 28. Then subtract: 28 − C = 28 − 2 = 26. Remember BODMAS — multiplication before subtraction. Tip: When a line mixes × with + or −, always do the × first — even if the − comes later. ✓"
         },
         {
           id: 13,
@@ -13226,7 +13226,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word FACE?",
           options: ["12","14","15","16","18"],
           correct: 2,
-          explanation: "F=6, A=1, C=3, E=5. Total: 6 + 1 + 3 + 5 = 15. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "F=6, A=1, C=3, E=5. Total: 6 + 1 + 3 + 5 = 15. Tip: E=5 is an EJOTY anchor — use it to spot-check nearby letters quickly. ✓"
         },
         {
           id: 14,
@@ -13235,7 +13235,7 @@ const vrData = {
           question: "If A=3, B=6, C=9, what is the value of (B × C) ÷ A?",
           options: ["12","15","21","18","24"],
           correct: 3,
-          explanation: "B=6, C=9, A=3. First multiply: B × C = 6 × 9 = 54. Then divide: 54 ÷ A = 54 ÷ 3 = 18. Remember BODMAS — brackets and multiplication before division (left to right here). Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
+          explanation: "B=6, C=9, A=3. First multiply: B × C = 6 × 9 = 54. Then divide: 54 ÷ A = 54 ÷ 3 = 18. Remember BODMAS — brackets and multiplication before division (left to right here). Tip: For × and ÷ on the same line, work strictly left to right. ✓"
         },
         {
           id: 15,
@@ -13253,7 +13253,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word HAT?",
           options: ["27","28","31","30","29"],
           correct: 4,
-          explanation: "H=8, A=1, T=20. Total: 8 + 1 + 20 = 29. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "H=8, A=1, T=20. Total: 8 + 1 + 20 = 29. Tip: T=20 is an EJOTY anchor — lean on it for speed with nearby letters. ✓"
         },
         {
           id: 17,
@@ -13271,7 +13271,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word BOX?",
           options: ["39","43","41","37","45"],
           correct: 2,
-          explanation: "B=2, O=15, X=24. Total: 2 + 15 + 24 = 41. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          explanation: "B=2, O=15, X=24. Total: 2 + 15 + 24 = 41. Tip: O=15 is an EJOTY anchor — use it to pin down nearby letters (N=14, P=16). ✓"
         },
         {
           id: 19,
@@ -13280,7 +13280,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word JAM?",
           options: ["22","26","28","24","20"],
           correct: 3,
-          explanation: "J=10, A=1, M=13. Total: 10 + 1 + 13 = 24. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "J=10, A=1, M=13. Total: 10 + 1 + 13 = 24. Tip: J=10 is an EJOTY anchor, and M sits at 13 — the middle of the alphabet. ✓"
         },
         {
           id: 20,
@@ -13289,7 +13289,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word FIG?",
           options: ["26","24","20","18","22"],
           correct: 4,
-          explanation: "F=6, I=9, G=7. Total: 6 + 9 + 7 = 22. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "F=6, I=9, G=7. Total: 6 + 9 + 7 = 22. Tip: Pair F+G (6+7=13) then add I=9 to reach 22 — pairing small values helps. ✓"
         },
         {
           id: 21,
@@ -13307,7 +13307,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word FISH?",
           options: ["40","42","38","44","46"],
           correct: 1,
-          explanation: "F=6, I=9, S=19, H=8. Total: 6 + 9 + 19 + 8 = 42. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "F=6, I=9, S=19, H=8. Total: 6 + 9 + 19 + 8 = 42. Tip: Add in pairs that make round numbers — 6+8=14, 9+19=28, total 42. ✓"
         },
         {
           id: 23,
@@ -13325,7 +13325,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word JUMP?",
           options: ["64","62","56","60","58"],
           correct: 3,
-          explanation: "J=10, U=21, M=13, P=16. Total: 10 + 21 + 13 + 16 = 60. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "J=10, U=21, M=13, P=16. Total: 10 + 21 + 13 + 16 = 60. Tip: J=10 is an EJOTY anchor — always a handy starting point. ✓"
         },
         {
           id: 25,
@@ -13361,7 +13361,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... which of these words has the highest total value?",
           options: ["BIKE","HIKE","PIKE","MIKE","LIKE"],
           correct: 2,
-          explanation: "BIKE: 2+9+11+5=27. HIKE: 8+9+11+5=33. LIKE: 12+9+11+5=37. MIKE: 13+9+11+5=38. PIKE: 16+9+11+5=41. PIKE has the highest value at 41. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "BIKE: 2+9+11+5=27. HIKE: 8+9+11+5=33. LIKE: 12+9+11+5=37. MIKE: 13+9+11+5=38. PIKE: 16+9+11+5=41. PIKE has the highest value at 41. Tip: All five words end in IKE — compare only the first letters to save time. ✓"
         },
         {
           id: 29,
@@ -13379,7 +13379,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word BRAVE?",
           options: ["46","50","52","44","48"],
           correct: 4,
-          explanation: "B=2, R=18, A=1, V=22, E=5. Total: 2 + 18 + 1 + 22 + 5 = 48. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "B=2, R=18, A=1, V=22, E=5. Total: 2 + 18 + 1 + 22 + 5 = 48. Tip: Late-alphabet letters (R, V) are the big hitters here — add those first to keep a running total. ✓"
         },
         {
           id: 31,
@@ -13397,7 +13397,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word STONE?",
           options: ["73","75","71","69","77"],
           correct: 0,
-          explanation: "S=19, T=20, O=15, N=14, E=5. Total: 19 + 20 + 15 + 14 + 5 = 73. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "S=19, T=20, O=15, N=14, E=5. Total: 19 + 20 + 15 + 14 + 5 = 73. Tip: Four EJOTY-neighbour letters here (S, T, O, E) — lean on the anchors to speed it up. ✓"
         },
         {
           id: 33,
@@ -13415,7 +13415,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word RIVER?",
           options: ["68","70","74","72","76"],
           correct: 3,
-          explanation: "R=18, I=9, V=22, E=5, R=18. Total: 18 + 9 + 22 + 5 + 18 = 72. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          explanation: "R=18, I=9, V=22, E=5, R=18. Total: 18 + 9 + 22 + 5 + 18 = 72. Tip: R appears twice — make sure you count it both times (a common trap with repeated letters). ✓"
         },
         {
           id: 35,
@@ -13424,7 +13424,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... which of these words has the highest total value?",
           options: ["SPARK","BLAZE","FLAME","EMBER","LIGHT"],
           correct: 0,
-          explanation: "FLAME: 6+12+1+13+5=37. BLAZE: 2+12+1+26+5=46. SPARK: 19+16+1+18+11=65. EMBER: 5+13+2+5+18=43. LIGHT: 12+9+7+8+20=56. SPARK has the highest value at 65. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "FLAME: 6+12+1+13+5=37. BLAZE: 2+12+1+26+5=46. SPARK: 19+16+1+18+11=65. EMBER: 5+13+2+5+18=43. LIGHT: 12+9+7+8+20=56. SPARK has the highest value at 65. Tip: Estimate first — words with late-alphabet letters (S, P, R) usually score highest. ✓"
         },
         {
           id: 36,
@@ -13433,7 +13433,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word RUN?",
           options: ["53","51","55","49","57"],
           correct: 0,
-          explanation: "R=18, U=21, N=14. Total: 18 + 21 + 14 = 53. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "R=18, U=21, N=14. Total: 18 + 21 + 14 = 53. Tip: All three letters are past the midpoint — expect a total above 30. ✓"
         },
         {
           id: 37,
@@ -13451,7 +13451,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word NEST?",
           options: ["56","60","58","54","62"],
           correct: 2,
-          explanation: "N=14, E=5, S=19, T=20. Total: 14 + 5 + 19 + 20 = 58. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "N=14, E=5, S=19, T=20. Total: 14 + 5 + 19 + 20 = 58. Tip: Add in pairs that make round numbers — 14+5=19, paired with 19+20=39, total 58. ✓"
         },
         {
           id: 39,
@@ -13469,7 +13469,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of the word QUEEN?",
           options: ["66","64","58","60","62"],
           correct: 4,
-          explanation: "Q=17, U=21, E=5, E=5, N=14. Total: 17 + 21 + 5 + 5 + 14 = 62. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "Q=17, U=21, E=5, E=5, N=14. Total: 17 + 21 + 5 + 5 + 14 = 62. Tip: E appears twice — count both Es (a common letter-sum trap with double letters). ✓"
         },
         {
           id: 41,
@@ -13505,7 +13505,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... how much more is the word STOP worth than the word STEP?",
           options: ["8","12","14","10","6"],
           correct: 3,
-          explanation: "STOP: S=19+T=20+O=15+P=16 = 70. STEP: S=19+T=20+E=5+P=16 = 60. Difference: 70 − 60 = 10. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "STOP: S=19+T=20+O=15+P=16 = 70. STEP: S=19+T=20+E=5+P=16 = 60. Difference: 70 − 60 = 10. Tip: Only the third letter differs (O vs E) — the difference is just O − E = 15 − 5 = 10. ✓"
         },
         {
           id: 45,
@@ -13514,7 +13514,7 @@ const vrData = {
           question: "If A=3 and B=8, what is the value of A + B?",
           options: ["10","13","12","9","11"],
           correct: 4,
-          explanation: "A=3, B=8. A + B = 3 + 8 = 11. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          explanation: "A=3, B=8. A + B = 3 + 8 = 11. ✓"
         },
         {
           id: 46,
@@ -13523,7 +13523,7 @@ const vrData = {
           question: "If A=2, B=5 and C=9, what is the value of A + B + C?",
           options: ["16","17","14","15","18"],
           correct: 0,
-          explanation: "A=2, B=5, C=9. A + B + C = 2 + 5 + 9 = 16. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "A=2, B=5, C=9. A + B + C = 2 + 5 + 9 = 16. Tip: Spot pairs that make round numbers — 2 + 9 = 11, then add 5 to get 16. ✓"
         },
         {
           id: 47,
@@ -13532,7 +13532,7 @@ const vrData = {
           question: "If A=6 and B=4, what is the value of A × B?",
           options: ["26","22","20","24","28"],
           correct: 3,
-          explanation: "A=6, B=4. A × B = 6 × 4 = 24. Tip: Double-check by adding the numbers in a different order. ✓"
+          explanation: "A=6, B=4. A × B = 6 × 4 = 24. ✓"
         },
         {
           id: 48,
@@ -13541,7 +13541,7 @@ const vrData = {
           question: "If A=8, B=3 and C=5, what is the value of A + B − C?",
           options: ["6","5","4","7","8"],
           correct: 0,
-          explanation: "A=8, B=3, C=5. A + B = 8 + 3 = 11. Then 11 − C = 11 − 5 = 6. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "A=8, B=3, C=5. A + B = 8 + 3 = 11. Then 11 − C = 11 − 5 = 6. Tip: Only + and − here, so just work strictly left to right. ✓"
         },
         {
           id: 49,
@@ -13550,7 +13550,7 @@ const vrData = {
           question: "If A=5, B=6 and C=3, what is the value of A × B + C?",
           options: ["30","45","36","33","27"],
           correct: 3,
-          explanation: "A=5, B=6, C=3. By BODMAS, multiply first: A × B = 5 × 6 = 30. Then add: 30 + C = 30 + 3 = 33. Tip: Double-check by adding the numbers in a different order. ✓"
+          explanation: "A=5, B=6, C=3. By BODMAS, multiply first: A × B = 5 × 6 = 30. Then add: 30 + C = 30 + 3 = 33. Tip: Mixed operators — always do × before + or −, even when + appears first. ✓"
         },
         {
           id: 50,
@@ -13568,7 +13568,7 @@ const vrData = {
           question: "If A=7, B=3 and C=2, what is the value of (A − B) × C?",
           options: ["8","12","10","6","14"],
           correct: 0,
-          explanation: "A=7, B=3, C=2. Brackets first: A − B = 7 − 3 = 4. Then multiply: 4 × C = 4 × 2 = 8. Tip: Remember BODMAS! Multiplication before addition when there are mixed operations. ✓"
+          explanation: "A=7, B=3, C=2. Brackets first: A − B = 7 − 3 = 4. Then multiply: 4 × C = 4 × 2 = 8. Tip: Brackets always come first in BODMAS — do what's inside them before anything else. ✓"
         },
         {
           id: 52,
@@ -13577,7 +13577,7 @@ const vrData = {
           question: "If A=8 and B=2, what is the value of A ÷ B + 5?",
           options: ["7","8","10","9","11"],
           correct: 3,
-          explanation: "A=8, B=2. By BODMAS, divide first: A ÷ B = 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: Remember BODMAS! Multiplication before addition. ✓"
+          explanation: "A=8, B=2. By BODMAS, divide first: A ÷ B = 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: × and ÷ are done before + and −, so tackle the division first. ✓"
         },
         {
           id: 53,
@@ -13604,7 +13604,7 @@ const vrData = {
           question: "If A=3, B=5 and C=2, what is the value of A × (B + C)?",
           options: ["17","19","25","23","21"],
           correct: 4,
-          explanation: "A=3, B=5, C=2. Brackets first: B + C = 5 + 2 = 7. Then multiply: A × 7 = 3 × 7 = 21. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "A=3, B=5, C=2. Brackets first: B + C = 5 + 2 = 7. Then multiply: A × 7 = 3 × 7 = 21. Tip: Whatever is in brackets always comes first — do that before the ×. ✓"
         },
         {
           id: 56,
@@ -13613,7 +13613,7 @@ const vrData = {
           question: "If A=2, B=4, C=6 and D=3, what is the value of A × B + C ÷ D?",
           options: ["10","8","12","14","6"],
           correct: 0,
-          explanation: "A=2, B=4, C=6, D=3. By BODMAS, do multiplication and division first: A × B = 2 × 4 = 8 and C ÷ D = 6 ÷ 3 = 2. Then add: 8 + 2 = 10. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "A=2, B=4, C=6, D=3. By BODMAS, do multiplication and division first: A × B = 2 × 4 = 8 and C ÷ D = 6 ÷ 3 = 2. Then add: 8 + 2 = 10. Tip: Work out both × and ÷ parts before you touch the + sign. ✓"
         },
         {
           id: 57,
@@ -13622,7 +13622,7 @@ const vrData = {
           question: "If A=2, B=3 and C=10, what is the value of C − A × B?",
           options: ["6","4","8","24","2"],
           correct: 1,
-          explanation: "A=2, B=3, C=10. By BODMAS, multiply first: A × B = 2 × 3 = 6. Then subtract: C − 6 = 10 − 6 = 4. Remember, multiplication comes before subtraction. Tip: Watch out for double letters — count them twice! ✓"
+          explanation: "A=2, B=3, C=10. By BODMAS, multiply first: A × B = 2 × 3 = 6. Then subtract: C − 6 = 10 − 6 = 4. Remember, multiplication comes before subtraction. Tip: The trap here is C − A first (=8), then × B (=24). Always do the × before the − . ✓"
         },
         {
           id: 58,
@@ -13631,7 +13631,7 @@ const vrData = {
           question: "If A=12, B=4 and C=7, what is the value of A ÷ B + C?",
           options: ["8","9","10","12","11"],
           correct: 2,
-          explanation: "A=12, B=4, C=7. By BODMAS, divide first: A ÷ B = 12 ÷ 4 = 3. Then add: 3 + C = 3 + 7 = 10. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "A=12, B=4, C=7. By BODMAS, divide first: A ÷ B = 12 ÷ 4 = 3. Then add: 3 + C = 3 + 7 = 10. Tip: ÷ is done before +, even though + looks simpler. ✓"
         },
         {
           id: 59,
@@ -13640,7 +13640,7 @@ const vrData = {
           question: "If A=7 and B=9, what is the value of 2 × A + B?",
           options: ["21","27","25","32","23"],
           correct: 4,
-          explanation: "A=7, B=9. By BODMAS, multiply first: 2 × A = 2 × 7 = 14. Then add: 14 + B = 14 + 9 = 23. Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
+          explanation: "A=7, B=9. By BODMAS, multiply first: 2 × A = 2 × 7 = 14. Then add: 14 + B = 14 + 9 = 23. Tip: Always do × before + — even when the number (2) comes before the letter. ✓"
         },
         {
           id: 60,
@@ -13649,7 +13649,7 @@ const vrData = {
           question: "If A=1, B=4, C=8 and D=5, what is the value of (A + B) × (C − D)?",
           options: ["12","14","13","15","16"],
           correct: 3,
-          explanation: "A=1, B=4, C=8, D=5. First bracket: A + B = 1 + 4 = 5. Second bracket: C − D = 8 − 5 = 3. Then multiply: 5 × 3 = 15. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "A=1, B=4, C=8, D=5. First bracket: A + B = 1 + 4 = 5. Second bracket: C − D = 8 − 5 = 3. Then multiply: 5 × 3 = 15. Tip: Work out each bracket fully before multiplying — treat each bracket as one number. ✓"
         },
         {
           id: 61,
@@ -13667,7 +13667,7 @@ const vrData = {
           question: "If A=4, B=2 and C=8, what is the value of (C + A) ÷ B?",
           options: ["6","5","4","7","8"],
           correct: 0,
-          explanation: "A=4, B=2, C=8. Brackets first: C + A = 8 + 4 = 12. Then divide: 12 ÷ B = 12 ÷ 2 = 6. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          explanation: "A=4, B=2, C=8. Brackets first: C + A = 8 + 4 = 12. Then divide: 12 ÷ B = 12 ÷ 2 = 6. Tip: Brackets always come first — finish the sum inside before dividing. ✓"
         },
         {
           id: 63,
@@ -13676,7 +13676,7 @@ const vrData = {
           question: "If A=5 and B=7, what is the value of A × A − B?",
           options: ["16","20","18","22","24"],
           correct: 2,
-          explanation: "A=5, B=7. By BODMAS, multiply first: A × A = 5 × 5 = 25. Then subtract: 25 − B = 25 − 7 = 18. Tip: For comparison questions, estimate first — late-alphabet letters score higher. ✓"
+          explanation: "A=5, B=7. By BODMAS, multiply first: A × A = 5 × 5 = 25. Then subtract: 25 − B = 25 − 7 = 18. Tip: A × A means A multiplied by itself — work that out first, then subtract. ✓"
         },
         {
           id: 64,
@@ -13685,7 +13685,7 @@ const vrData = {
           question: "If A=3, B=2, C=5 and D=4, what is the value of A × C − B × D?",
           options: ["5","11","9","3","7"],
           correct: 4,
-          explanation: "A=3, B=2, C=5, D=4. By BODMAS, do both multiplications first: A × C = 3 × 5 = 15 and B × D = 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: Remember BODMAS! Multiplication before addition. ✓"
+          explanation: "A=3, B=2, C=5, D=4. By BODMAS, do both multiplications first: A × C = 3 × 5 = 15 and B × D = 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: When two × parts sit around a − sign, work out both products first, then subtract. ✓"
         },
         {
           id: 65,
@@ -13694,7 +13694,7 @@ const vrData = {
           question: "If A=12 and B=5, what is the value of A − B?",
           options: ["5","6","8","7","9"],
           correct: 3,
-          explanation: "A=12, B=5. A − B = 12 − 5 = 7. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "A=12, B=5. A − B = 12 − 5 = 7. ✓"
         },
         {
           id: 66,
@@ -13721,7 +13721,7 @@ const vrData = {
           question: "If A=8, B=3 and C=1, what is the value of A − B − C?",
           options: ["2","3","5","4","6"],
           correct: 3,
-          explanation: "A=8, B=3, C=1. A − B = 8 − 3 = 5. Then 5 − C = 5 − 1 = 4. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "A=8, B=3, C=1. A − B = 8 − 3 = 5. Then 5 − C = 5 − 1 = 4. Tip: Only subtractions here — just work strictly left to right. ✓"
         },
         {
           id: 69,
@@ -13730,7 +13730,7 @@ const vrData = {
           question: "If A=3, B=8 and C=3, what is the value of B × C ÷ A?",
           options: ["6","7","9","8","10"],
           correct: 3,
-          explanation: "A=3, B=8, C=3. By BODMAS, work left to right for multiplication and division: B × C = 8 × 3 = 24. Then 24 ÷ A = 24 ÷ 3 = 8. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "A=3, B=8, C=3. By BODMAS, work left to right for multiplication and division: B × C = 8 × 3 = 24. Then 24 ÷ A = 24 ÷ 3 = 8. Tip: When × and ÷ appear together, work strictly left to right. ✓"
         },
         {
           id: 70,
@@ -13748,7 +13748,7 @@ const vrData = {
           question: "If A=5, B=2 and C=4, what is the value of A × B + A × C?",
           options: ["25","28","35","32","30"],
           correct: 4,
-          explanation: "A=5, B=2, C=4. By BODMAS, do both multiplications first: A × B = 5 × 2 = 10 and A × C = 5 × 4 = 20. Then add: 10 + 20 = 30. Tip: Watch out for double letters — count them twice! ✓"
+          explanation: "A=5, B=2, C=4. By BODMAS, do both multiplications first: A × B = 5 × 2 = 10 and A × C = 5 × 4 = 20. Then add: 10 + 20 = 30. Tip: When two × parts sit around a + sign, work out both products before adding. ✓"
         },
         {
           id: 72,
@@ -13757,7 +13757,7 @@ const vrData = {
           question: "If A=9 and B=2, what is the value of A × B + B?",
           options: ["18","20","22","16","24"],
           correct: 1,
-          explanation: "A=9, B=2. By BODMAS, multiply first: A × B = 9 × 2 = 18. Then add: 18 + B = 18 + 2 = 20. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "A=9, B=2. By BODMAS, multiply first: A × B = 9 × 2 = 18. Then add: 18 + B = 18 + 2 = 20. Tip: Do the × before the + — even when the same letter (B) appears on both sides. ✓"
         },
         {
           id: 73,
@@ -13775,7 +13775,7 @@ const vrData = {
           question: "If A=7, B=4 and C=3, what is the value of A + B × C?",
           options: ["33","21","17","19","15"],
           correct: 3,
-          explanation: "A=7, B=4, C=3. By BODMAS, multiply first: B × C = 4 × 3 = 12. Then add: A + 12 = 7 + 12 = 19. Be careful — multiplication comes before addition! Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
+          explanation: "A=7, B=4, C=3. By BODMAS, multiply first: B × C = 4 × 3 = 12. Then add: A + 12 = 7 + 12 = 19. Be careful — multiplication comes before addition! Tip: The trap answer (33) comes from adding A + B first — always spot the × and do it first. ✓"
         },
         {
           id: 75,
@@ -13802,7 +13802,7 @@ const vrData = {
           question: "If A = 6 and B = 9, what is the value of B − A?",
           options: ["1","2","3","4","5"],
           correct: 2,
-          explanation: "B − A = 9 − 6 = 3. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "B − A = 9 − 6 = 3. ✓"
         },
         {
           id: 78,
@@ -13820,7 +13820,7 @@ const vrData = {
           question: "If A = 3, B = 8 and C = 1, what is the value of B − A − C?",
           options: ["2","3","6","5","4"],
           correct: 4,
-          explanation: "B − A − C = 8 − 3 − 1 = 4. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "B − A − C = 8 − 3 − 1 = 4. ✓"
         },
         {
           id: 80,
@@ -13829,7 +13829,7 @@ const vrData = {
           question: "If A = 5, B = 10 and C = 2, what is the value of B − A + C?",
           options: ["6","5","7","8","9"],
           correct: 2,
-          explanation: "B − A + C = 10 − 5 + 2 = 7. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          explanation: "B − A + C = 10 − 5 + 2 = 7. Tip: Only + and −, so just work strictly left to right. ✓"
         },
         {
           id: 81,
@@ -13838,7 +13838,7 @@ const vrData = {
           question: "If A = 3, B = 7 and C = 4, what is the value of B × C + A?",
           options: ["29","33","31","35","37"],
           correct: 2,
-          explanation: "B × C + A = 7 × 4 + 3. By BODMAS, multiply first: 7 × 4 = 28. Then add: 28 + 3 = 31. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "B × C + A = 7 × 4 + 3. By BODMAS, multiply first: 7 × 4 = 28. Then add: 28 + 3 = 31. Tip: Do × before + — even when + looks like the easier step. ✓"
         },
         {
           id: 82,
@@ -13847,7 +13847,7 @@ const vrData = {
           question: "If A = 8, B = 2 and C = 5, what is the value of A ÷ B + C?",
           options: ["9","8","7","10","11"],
           correct: 0,
-          explanation: "A ÷ B + C = 8 ÷ 2 + 5. By BODMAS, divide first: 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
+          explanation: "A ÷ B + C = 8 ÷ 2 + 5. By BODMAS, divide first: 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: × and ÷ always go before + and −, so tackle the division first. ✓"
         },
         {
           id: 83,
@@ -13856,7 +13856,7 @@ const vrData = {
           question: "If A = 6, B = 3 and C = 9, what is the value of C − A × B?",
           options: ["-9","-6","3","-3","9"],
           correct: 0,
-          explanation: "C − A × B = 9 − 6 × 3. By BODMAS, multiply first: 6 × 3 = 18. Then subtract: 9 − 18 = −9. Remember, multiplication comes before subtraction! Tip: Double-check by adding in a different order. ✓"
+          explanation: "C − A × B = 9 − 6 × 3. By BODMAS, multiply first: 6 × 3 = 18. Then subtract: 9 − 18 = −9. Remember, multiplication comes before subtraction! Tip: A negative answer is fine — it just means the × part was bigger than C. ✓"
         },
         {
           id: 84,
@@ -13865,7 +13865,7 @@ const vrData = {
           question: "If A = 5 and B = 4, what is the value of A × B − B?",
           options: ["14","15","18","17","16"],
           correct: 4,
-          explanation: "A × B − B = 5 × 4 − 4. By BODMAS, multiply first: 5 × 4 = 20. Then subtract: 20 − 4 = 16. Tip: For comparison Qs, estimate first — late-alphabet letters score higher. ✓"
+          explanation: "A × B − B = 5 × 4 − 4. By BODMAS, multiply first: 5 × 4 = 20. Then subtract: 20 − 4 = 16. Tip: Do × before − — even when the same letter (B) appears on both sides. ✓"
         },
         {
           id: 85,
@@ -13874,7 +13874,7 @@ const vrData = {
           question: "If A = 7, B = 3 and C = 6, what is the value of (A + B) × C?",
           options: ["54","48","60","66","72"],
           correct: 2,
-          explanation: "Brackets first: A + B = 7 + 3 = 10. Then multiply: 10 × C = 10 × 6 = 60. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          explanation: "Brackets first: A + B = 7 + 3 = 10. Then multiply: 10 × C = 10 × 6 = 60. Tip: Brackets always come first — finish the sum inside, then multiply. ✓"
         },
         {
           id: 86,
@@ -13883,7 +13883,7 @@ const vrData = {
           question: "If A = 11 and B = 3, what is the value of A × B − A?",
           options: ["20","24","22","26","28"],
           correct: 2,
-          explanation: "A × B − A = 11 × 3 − 11. By BODMAS, multiply first: 11 × 3 = 33. Then subtract: 33 − 11 = 22. Tip: Remember BODMAS! Multiply before you add. ✓"
+          explanation: "A × B − A = 11 × 3 − 11. By BODMAS, multiply first: 11 × 3 = 33. Then subtract: 33 − 11 = 22. Tip: Remember BODMAS! Multiply before you add or subtract. ✓"
         },
         {
           id: 87,
@@ -13892,7 +13892,7 @@ const vrData = {
           question: "If A = 9, B = 4 and C = 2, what is the value of A − B × C?",
           options: ["-1","0","1","2","10"],
           correct: 2,
-          explanation: "A − B × C = 9 − 4 × 2. By BODMAS, multiply first: 4 × 2 = 8. Then subtract: 9 − 8 = 1. Be careful — multiplication comes before subtraction! Tip: Write intermediate totals — don't hold everything in your head. ✓"
+          explanation: "A − B × C = 9 − 4 × 2. By BODMAS, multiply first: 4 × 2 = 8. Then subtract: 9 − 8 = 1. Be careful — multiplication comes before subtraction! Tip: The trap answer (10) comes from doing A − B first — always spot the × and do it first. ✓"
         },
         {
           id: 88,
@@ -13901,7 +13901,7 @@ const vrData = {
           question: "If A = 15, B = 5 and C = 8, what is the value of A ÷ B + C?",
           options: ["9","12","11","10","13"],
           correct: 2,
-          explanation: "A ÷ B + C = 15 ÷ 5 + 8. By BODMAS, divide first: 15 ÷ 5 = 3. Then add: 3 + 8 = 11. Tip: Learn the alphabet in groups of 5. ✓"
+          explanation: "A ÷ B + C = 15 ÷ 5 + 8. By BODMAS, divide first: 15 ÷ 5 = 3. Then add: 3 + 8 = 11. Tip: ÷ is always done before +, no matter which comes first in the line. ✓"
         },
         {
           id: 89,
@@ -13910,7 +13910,7 @@ const vrData = {
           question: "If A = 3, B = 5, C = 2 and D = 4, what is the value of A × B − C × D?",
           options: ["5","7","13","11","9"],
           correct: 1,
-          explanation: "A × B − C × D = 3 × 5 − 2 × 4. By BODMAS, do both multiplications first: 3 × 5 = 15 and 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: Watch out for double letters — count them twice! ✓"
+          explanation: "A × B − C × D = 3 × 5 − 2 × 4. By BODMAS, do both multiplications first: 3 × 5 = 15 and 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: When two × parts sit around a − sign, work out both products before subtracting. ✓"
         },
         {
           id: 90,
@@ -13928,7 +13928,7 @@ const vrData = {
           question: "If A = 2, B = 3, C = 6 and D = 4, what is the value of C × D ÷ A + B?",
           options: ["12","14","13","15","16"],
           correct: 3,
-          explanation: "C × D ÷ A + B = 6 × 4 ÷ 2 + 3. By BODMAS, do multiplication and division left to right: 6 × 4 = 24, then 24 ÷ 2 = 12. Then add: 12 + 3 = 15. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "C × D ÷ A + B = 6 × 4 ÷ 2 + 3. By BODMAS, do multiplication and division left to right: 6 × 4 = 24, then 24 ÷ 2 = 12. Then add: 12 + 3 = 15. Tip: When × and ÷ appear together, work strictly left to right — neither beats the other. ✓"
         },
         {
           id: 92,
@@ -13937,7 +13937,7 @@ const vrData = {
           question: "If A = 5, B = 8 and C = 3, what is the value of B × B − A × C?",
           options: ["45","47","49","51","53"],
           correct: 2,
-          explanation: "B × B − A × C = 8 × 8 − 5 × 3. By BODMAS, do both multiplications first: 8 × 8 = 64 and 5 × 3 = 15. Then subtract: 64 − 15 = 49. Tip: Add in pairs that make round numbers to speed up mental arithmetic! ✓"
+          explanation: "B × B − A × C = 8 × 8 − 5 × 3. By BODMAS, do both multiplications first: 8 × 8 = 64 and 5 × 3 = 15. Then subtract: 64 − 15 = 49. Tip: B × B means B multiplied by itself — work that out like any other × sum. ✓"
         },
         {
           id: 93,
@@ -13946,7 +13946,7 @@ const vrData = {
           question: "If A = 7, B = 2, C = 3 and D = 5, what is the value of (A − B) × C + D?",
           options: ["18","19","21","20","22"],
           correct: 3,
-          explanation: "Brackets first: A − B = 7 − 2 = 5. Then multiply: 5 × C = 5 × 3 = 15. Then add: 15 + D = 15 + 5 = 20. Tip: Watch out for double letters — count them twice (BELL = B+E+L+L)! ✓"
+          explanation: "Brackets first: A − B = 7 − 2 = 5. Then multiply: 5 × C = 5 × 3 = 15. Then add: 15 + D = 15 + 5 = 20. Tip: Brackets first, then × , then + — follow BODMAS one layer at a time. ✓"
         },
         {
           id: 94,
@@ -14036,7 +14036,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is H - C?",
           options: ["7","6","4","5","3"],
           correct: 3,
-          explanation: "H = 8, C = 3. So H - C = 8 - 3 = 5. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "H = 8, C = 3. So H - C = 8 - 3 = 5. Tip: H sits in the F-J group (6-10) — grouping letters in fives helps you find them fast. ✓"
         },
         {
           id: 104,
@@ -14045,7 +14045,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is G - D?",
           options: ["1","4","2","5","3"],
           correct: 4,
-          explanation: "G = 7, D = 4. So G - D = 7 - 4 = 3. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "G = 7, D = 4. So G - D = 7 - 4 = 3. Tip: Both letters live in the first ten — count on from A to lock in their values. ✓"
         },
         {
           id: 105,
@@ -14054,7 +14054,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is M - F?",
           options: ["7","8","6","9","5"],
           correct: 0,
-          explanation: "M = 13, F = 6. So M - F = 13 - 6 = 7. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "M = 13, F = 6. So M - F = 13 - 6 = 7. Tip: M sits right in the middle of the alphabet (position 13) — a useful landmark. ✓"
         },
         {
           id: 106,
@@ -14063,7 +14063,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is P - H?",
           options: ["9","8","7","10","6"],
           correct: 1,
-          explanation: "P = 16, H = 8. So P - H = 16 - 8 = 8. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "P = 16, H = 8. So P - H = 16 - 8 = 8. Tip: P starts the P-T group (16-20) and H sits in F-J (6-10) — groups of five make positions quick to find. ✓"
         },
         {
           id: 107,
@@ -14099,7 +14099,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of RHYTHM?",
           options: ["92","93","91","94","90"],
           correct: 0,
-          explanation: "R(18) + H(8) + Y(25) + T(20) + H(8) + M(13) = 92. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "R(18) + H(8) + Y(25) + T(20) + H(8) + M(13) = 92. Tip: H appears twice — remember to count it both times (a classic double-letter trap). ✓"
         },
         {
           id: 111,
@@ -14108,7 +14108,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of WIZARD?",
           options: ["82","81","80","83","79"],
           correct: 1,
-          explanation: "W(23) + I(9) + Z(26) + A(1) + R(18) + D(4) = 81. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "W(23) + I(9) + Z(26) + A(1) + R(18) + D(4) = 81. Tip: W, Z, R are all high-value letters — expect a total in the 70s or 80s. ✓"
         },
         {
           id: 112,
@@ -14117,7 +14117,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is the total value of MONEY?",
           options: ["72","73","71","74","70"],
           correct: 0,
-          explanation: "M(13) + O(15) + N(14) + E(5) + Y(25) = 72. Tip: Add in pairs that make round numbers — it speeds up mental arithmetic! ✓"
+          explanation: "M(13) + O(15) + N(14) + E(5) + Y(25) = 72. Tip: Three EJOTY neighbours here (O=15, E=5, Y=25) — use the anchors to speed it up. ✓"
         },
         {
           id: 113,
@@ -14126,7 +14126,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is C × D?",
           options: ["10","11","13","12","14"],
           correct: 3,
-          explanation: "C(3) × D(4) = 12. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "C(3) × D(4) = 12. ✓"
         },
         {
           id: 114,
@@ -14135,7 +14135,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is E × C?",
           options: ["13","14","17","16","15"],
           correct: 4,
-          explanation: "E(5) × C(3) = 15. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "E(5) × C(3) = 15. Tip: E=5 is an EJOTY anchor — handy for quick position checks. ✓"
         },
         {
           id: 115,
@@ -14144,7 +14144,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is B × F?",
           options: ["12","11","10","13","14"],
           correct: 0,
-          explanation: "B(2) × F(6) = 12. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "B(2) × F(6) = 12. ✓"
         },
         {
           id: 116,
@@ -14153,7 +14153,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is D × E - C?",
           options: ["15","17","16","18","19"],
           correct: 1,
-          explanation: "D(4) × E(5) = 20, then 20 - C(3) = 17. Remember BODMAS — multiply first! Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "D(4) × E(5) = 20, then 20 - C(3) = 17. Remember BODMAS — multiply first! Tip: Mixed operators — always do × before − , even when − appears later. ✓"
         },
         {
           id: 117,
@@ -14162,7 +14162,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is G × B + D?",
           options: ["16","17","18","19","20"],
           correct: 2,
-          explanation: "G(7) × B(2) = 14, then 14 + D(4) = 18. Multiply before adding! Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "G(7) × B(2) = 14, then 14 + D(4) = 18. Multiply before adding! Tip: Mixed operators — always do × before + , even when + comes second. ✓"
         },
         {
           id: 118,
@@ -14171,7 +14171,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is F × C - E?",
           options: ["11","12","14","13","15"],
           correct: 3,
-          explanation: "F(6) × C(3) = 18, then 18 - E(5) = 13. BODMAS: multiply first! Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "F(6) × C(3) = 18, then 18 - E(5) = 13. BODMAS: multiply first! Tip: Mixed operators — always do × before − to avoid the trap. ✓"
         },
         {
           id: 119,
@@ -14180,7 +14180,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is H × B - C?",
           options: ["11","12","15","14","13"],
           correct: 4,
-          explanation: "H(8) × B(2) = 16, then 16 - C(3) = 13. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "H(8) × B(2) = 16, then 16 - C(3) = 13. Tip: Mixed operators — always do × before − , no matter the order shown. ✓"
         },
         {
           id: 120,
@@ -14189,7 +14189,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is E × D + B?",
           options: ["22","21","20","23","24"],
           correct: 0,
-          explanation: "E(5) × D(4) = 20, then 20 + B(2) = 22. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "E(5) × D(4) = 20, then 20 + B(2) = 22. Tip: Mixed operators — always do × before + , even when + comes later. ✓"
         },
         {
           id: 121,
@@ -14198,7 +14198,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is C × C × B?",
           options: ["16","18","17","19","20"],
           correct: 1,
-          explanation: "C(3) × C(3) = 9, then 9 × B(2) = 18. Tip: Remember BODMAS! Multiplication before addition/subtraction. ✓"
+          explanation: "C(3) × C(3) = 9, then 9 × B(2) = 18. Tip: Only × signs here — work strictly left to right. ✓"
         },
         {
           id: 122,
@@ -14216,7 +14216,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is J - E + C?",
           options: ["6","7","9","8","10"],
           correct: 3,
-          explanation: "J(10) - E(5) = 5, then 5 + C(3) = 8. Tip: Work left to right, writing down each intermediate total! ✓"
+          explanation: "J(10) - E(5) = 5, then 5 + C(3) = 8. Tip: J=10 and E=5 are both EJOTY anchors — lean on them for speed. ✓"
         },
         {
           id: 124,
@@ -14243,7 +14243,7 @@ const vrData = {
           question: "If A=1, B=2, C=3... what is T - J + E - B?",
           options: ["11","13","12","14","15"],
           correct: 1,
-          explanation: "T(20) - J(10) = 10, + E(5) = 15, - B(2) = 13. Tip: Work left to right, writing down each intermediate total! ✓"
+          explanation: "T(20) - J(10) = 10, + E(5) = 15, - B(2) = 13. Tip: Three EJOTY anchors in one line (T, J, E) — the anchors make this one quick. ✓"
         },
         {
           id: 127,

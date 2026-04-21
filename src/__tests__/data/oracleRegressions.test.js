@@ -862,3 +862,356 @@ describe('Content Integrity — Explanations must not contradict themselves', ()
     expect(problems).toEqual([]);
   });
 });
+
+// ──────────────────────────────────────────────
+// 2026-04-21: Stem-leak detector
+// A "stem-leak" is when a distinctive keyword in the question stem
+// appears in exactly ONE option — the correct answer. Kids can pattern-match
+// instead of reasoning.
+// Triggered by Jacqui flagging Vocabulary Q371:
+//   Stem: "In which sentence does 'sentence' mean 'a punishment given by a judge'?"
+//   Correct: "The judge gave a sentence of five years."
+// Only option with "judge" → pattern-match giveaway.
+// ──────────────────────────────────────────────
+describe('Stem-leak detector — keyword in stem reveals answer', () => {
+  const STOP = new Set([
+    'the','a','an','and','or','but','if','then','so','of','to','in','on','at',
+    'is','are','was','were','be','been','being','have','has','had','do','does',
+    'did','will','would','could','should','may','might','can','as','it','its',
+    'this','that','these','those','which','what','who','whom','when','where',
+    'why','how','not','no','yes','for','from','with','by','into','onto','out',
+    'up','down','over','under','about','than','too','very','also','just','now',
+    'well','only','even','still','you','your','yours','he','him','his','she',
+    'her','hers','they','them','their','theirs','we','us','our','ours','i','me',
+    'my','mine','one','two','three','four','five','six','seven','eight','nine',
+    'ten','means','meaning','word','words','sentence','sentences','option',
+    'options','letter','letters','number','numbers','example','examples',
+    'answer','answers','question','questions','following','correct','wrong',
+    'true','false','best','next','first','last','here','there','now','then',
+    'always','never','often','sometimes','between','among','before','after',
+    'while','during','since','until','more','less','much','many','lot','lots',
+    'little','big','small','called','used','use','using','make','makes','made',
+    'give','gives','gave','given','take','takes','took','taken','say','says',
+    'said','see','saw','seen','goes','went','gone','tell','tells','told','think',
+    'thought','know','knew','known','above','below','right','left','near','far',
+    'way','ways','like','type','types','kind','kinds','part','parts','each',
+    'every','any','something','some','all','both','few','most','other','such',
+    'own','same'
+  ]);
+  const NUMBER_RE = /^\d+(\.\d+)?(cm|mm|m|km|g|kg|ml|l|%|°|°c|°f|p|£|\$)?$/i;
+  const EXCLUDED_TOPICS = new Set(['logicAndLanguage']);
+
+  function tokenise(text) {
+    if (!text) return new Set();
+    return new Set(
+      String(text)
+        .replace(/&[a-z#0-9]+;/gi, ' ')
+        .toLowerCase()
+        .replace(/[^a-z0-9' -]/g, ' ')
+        .split(/\s+/)
+        .filter(w => w.length >= 4)
+        .filter(w => !STOP.has(w))
+        .filter(w => !NUMBER_RE.test(w))
+        .map(w => w.replace(/^'+|'+$/g, '').replace(/s$/, ''))
+        .filter(w => w.length >= 4)
+    );
+  }
+
+  function isExemptQuestion(q) {
+    if (q.questionType === 'passage' || q.passageId || q.passageTitle) return true;
+    const stem = String(q.question || '');
+    if (/which word is (the|a|an) (adjective|adverb|verb|noun|pronoun|determiner|conjunction|preposition|article) in[:\s]/i.test(stem)) return true;
+    if (/rearrange these (words|letters)/i.test(stem)) return true;
+    if (/\b(taller|shorter|faster|slower|heavier|lighter|older|younger|longer|bigger|smaller|more|fewer)\s+than\b/i.test(stem)
+        && /\b(who|which|whose)\b/i.test(stem)) return true;
+    return false;
+  }
+
+  function findStemLeak(q) {
+    if (!q || !q.question || !Array.isArray(q.options)) return null;
+    if (typeof q.correct !== 'number') return null;
+    if (q.options.length < 2) return null;
+    if (isExemptQuestion(q)) return null;
+
+    const stemTokens = tokenise(q.question);
+    if (stemTokens.size === 0) return null;
+
+    for (const tok of stemTokens) {
+      const matchingOptions = [];
+      q.options.forEach((opt, i) => {
+        if (tokenise(opt).has(tok)) matchingOptions.push(i);
+      });
+      if (matchingOptions.length === 1 && matchingOptions[0] === q.correct) {
+        return tok;
+      }
+    }
+    return null;
+  }
+
+  // Allow-list: questions that were triaged as PEDAGOGICALLY LEGITIMATE
+  // (not bugs) by Oracle. Format: "<subject>:<topic>:<id>"
+  // These remain known-overlap by design (prefix-teaching, ranking, either/or
+  // format, yes-no format, comparison-from-a-list, pattern-apply).
+  // Populated from Oracle triage 2026-04-21 of scripts/stem-leak-findings.json
+  const ALLOW_LIST = new Set([
+    // Synonym-ranking (options ARE the stem list)
+    'english:vocabulary:19',
+    'english:vocabulary:341',
+    'english:vocabulary:342',
+    // Prefix / root teaching (applying the taught meaning IS the test)
+    'english:vocabulary:382',
+    'english:vocabulary:388',
+    'english:vocabulary:392',
+    'english:vocabulary:396',
+    'english:vocabulary:399',
+    'english:vocabulary:405',
+    'english:vocabulary:406',
+    'english:vocabulary:408',
+    // Clause / sentence-parse (options are drawn from the quoted sentence)
+    'english:wordClassGrammar:280',
+    'english:wordClassGrammar:351',
+    'english:wordClassGrammar:358',
+    // Either/or format ("is X a Y or Z?") — both named in stem
+    'english:wordClassGrammar:375',
+    'english:wordClassGrammar:401',
+    // Yes/No with sequence-as-reference-noun
+    'maths:algebra:249',
+    'maths:longmultiplication:160',
+    // Higher/lower/same — options dictated by stem phrasing
+    'maths:percentages:173',
+    // Comparison from a list (options are the named items in stem)
+    'maths:negativenumbers:144',
+    'maths:placevalue:149',
+    'maths:placevalue:154',
+    // Diagnostic "what mistake" — reference noun legitimate
+    'maths:placevalue:165',
+    // Letter-sum ranking (options ARE the stem word list)
+    'vr:letterSums:108',
+    'vr:letterSums:109',
+    // Pattern-apply (all options share the leaked token by construction)
+    'vr:wordCodeAnalogies:102'
+  ]);
+
+  function walkTopics(data, subject, visit) {
+    Object.entries(data.topics || {}).forEach(([topicKey, topic]) => {
+      if (EXCLUDED_TOPICS.has(topicKey)) return;
+      (topic.questions || []).forEach(q => visit(subject, topicKey, q));
+    });
+  }
+
+  it('no stem-leak in English, VR, or Maths (excluding allow-list)', () => {
+    const findings = [];
+    const dataSets = [
+      { data: englishData, subject: 'english' },
+      { data: vrData, subject: 'vr' },
+      { data: mathsData, subject: 'maths' }
+    ];
+    dataSets.forEach(({ data, subject }) => {
+      walkTopics(data, subject, (subj, topicKey, q) => {
+        const key = `${subj}:${topicKey}:${q.id}`;
+        if (ALLOW_LIST.has(key)) return;
+        const leaked = findStemLeak(q);
+        if (leaked) {
+          findings.push(`${key} — "${q.question.slice(0, 80)}..." leaks "${leaked}"`);
+        }
+      });
+    });
+    if (findings.length) {
+      console.log(`\nStem-leak findings (${findings.length}):`);
+      findings.forEach(f => console.log('  ' + f));
+    }
+    expect(findings).toEqual([]);
+  });
+});
+
+// ──────────────────────────────────────────────
+// 2026-04-21: NumberLine stem/visual consistency
+// Catches questions where the stem promises "Only X and Y are marked" but
+// the visual tickInterval would render subdivision ticks that reveal the answer.
+// Triggered by Ben flagging Maths Decimals Q223:
+//   Stem: "A number line goes from 0 to 1. Only 0 and 1 are marked. An arrow
+//          points to a position 3/4 of the way along."
+//   Visual had tickInterval:0.25 → rendered ticks at 0, 0.25, 0.5, 0.75, 1.
+//   Fixed by changing tickInterval to 1 (matching stem assertion).
+// ──────────────────────────────────────────────
+describe('NumberLine stem/visual consistency', () => {
+  const ONLY_ENDPOINTS_RE = /only\s+(-?\d+(?:\.\d+)?)\s+and\s+(-?\d+(?:\.\d+)?)\s+(are\s+)?(?:marked|labelled|shown)/i;
+  const NO_OTHER_MARKS_RE = /no\s+other\s+(marks|numbers|labels)|nothing\s+else\s+(is\s+)?(marked|labelled|shown)|unmarked|unlabelled/i;
+
+  function findMismatches(data, subject) {
+    const problems = [];
+    Object.entries(data.topics || {}).forEach(([topicKey, topic]) => {
+      (topic.questions || []).forEach(q => {
+        if (!q.visual || q.visual.component !== 'NumberLine') return;
+        const { min, max, tickInterval } = q.visual.props || {};
+        if (min == null || max == null || tickInterval == null) return;
+        const range = max - min;
+        const stem = String(q.question || '');
+        if ((ONLY_ENDPOINTS_RE.test(stem) || NO_OTHER_MARKS_RE.test(stem))
+            && tickInterval < range) {
+          problems.push(
+            `${subject}:${topicKey}:${q.id} — stem claims only endpoints marked `
+            + `but tickInterval=${tickInterval} < range=${range}`
+          );
+        }
+      });
+    });
+    return problems;
+  }
+
+  it('no NumberLine visual contradicts its stem', () => {
+    const problems = [
+      ...findMismatches(mathsData, 'maths'),
+      ...findMismatches(englishData, 'english'),
+      ...findMismatches(vrData, 'vr')
+    ];
+    if (problems.length) console.log('NumberLine mismatches:', problems);
+    expect(problems).toEqual([]);
+  });
+});
+
+// ──────────────────────────────────────────────
+// 2026-04-21: Order-of-operations acronym consistency
+// The app standardises on BODMAS (UK National Curriculum, CGP/Bond/Letts
+// 11+ workbooks, GL Assessment context). Mixed BIDMAS/BODMAS confuses
+// children cross-referencing with their school materials.
+// Triggered by Jacqui flagging Algebra Screen 4 (BIDMAS) contradicting
+// Letter Sums lessons (BODMAS). Oracle triage: standardise on BODMAS.
+// ──────────────────────────────────────────────
+describe('Order-of-operations acronym — BODMAS only', () => {
+  function findBidmas(data, subject) {
+    const problems = [];
+    const scan = (obj, path) => {
+      if (obj == null) return;
+      if (typeof obj === 'string') {
+        if (/\bBIDMAS\b/i.test(obj)) {
+          problems.push(`${subject}${path}: "${obj.slice(0, 80)}..."`);
+        }
+        return;
+      }
+      if (typeof obj !== 'object') return;
+      if (Array.isArray(obj)) {
+        obj.forEach((item, i) => scan(item, `${path}[${i}]`));
+        return;
+      }
+      for (const [k, v] of Object.entries(obj)) {
+        scan(v, `${path}.${k}`);
+      }
+    };
+    scan(data, '');
+    return problems;
+  }
+
+  it('no BIDMAS strings in any question bank', () => {
+    const problems = [
+      ...findBidmas(mathsData, 'maths'),
+      ...findBidmas(englishData, 'english'),
+      ...findBidmas(vrData, 'vr')
+    ];
+    if (problems.length) {
+      console.log(`\nBIDMAS leaks (${problems.length}):`);
+      problems.forEach(p => console.log('  ' + p));
+    }
+    expect(problems).toEqual([]);
+  });
+});
+
+// ──────────────────────────────────────────────
+// 2026-04-21: VR question-lesson map — no orphan sub-concept references
+// Catches question-to-lesson mappings that point at sub-concepts which don't
+// exist in the lesson bank (typos, removed lessons, unwritten content gaps).
+// Triggered by Jacqui flagging mirror-coding questions (Q149-156) that were
+// mapped to `reverse-decoding` because mirror-coding didn't exist as a lesson.
+// Oracle wrote the mirror-coding sub-concept; this test prevents the reverse
+// (orphan mappings) from recurring.
+// ──────────────────────────────────────────────
+describe('VR question-lesson map — no orphan sub-concept references', () => {
+  const vrMap = require('../../../public/vr-question-lesson-map.json');
+  const { letterCodesSubConcepts } = require('../../microLessons/staging/lettercodes-subconcepts');
+  const { letterSumsSubConcepts } = require('../../microLessons/staging/lettersums-subconcepts');
+  const { letterPairSeriesSubConcepts } = require('../../microLessons/staging/letterpairseries-subconcepts');
+  const { letterMoveSubConcepts } = require('../../microLessons/staging/lettermove-subconcepts');
+  const { missingLettersWordsSubConcepts } = require('../../microLessons/staging/missingletterswords-subconcepts');
+  const { sharedLetterSubConcepts } = require('../../microLessons/staging/sharedletter-subconcepts');
+
+  const stagingByTopic = {
+    letterCodes: letterCodesSubConcepts,
+    letterSums: letterSumsSubConcepts,
+    letterPairSeries: letterPairSeriesSubConcepts,
+    letterMove: letterMoveSubConcepts,
+    missingLettersWords: missingLettersWordsSubConcepts,
+    sharedLetter: sharedLetterSubConcepts
+  };
+
+  it('every mapped subConceptId exists in the staging lesson bank', () => {
+    const orphans = [];
+    Object.entries(vrMap).forEach(([topicKey, mappings]) => {
+      const staging = stagingByTopic[topicKey];
+      if (!staging) return; // topic has no staging file — skip
+      const validIds = new Set(staging.map(sc => sc.id));
+      (mappings || []).forEach(m => {
+        if (m.subConceptId && !validIds.has(m.subConceptId)) {
+          orphans.push(`${topicKey} Q${m.questionId} → "${m.subConceptId}" (not in staging)`);
+        }
+      });
+    });
+    if (orphans.length) {
+      console.log(`\nOrphan mappings (${orphans.length}):`);
+      orphans.forEach(o => console.log('  ' + o));
+    }
+    expect(orphans).toEqual([]);
+  });
+});
+
+// ──────────────────────────────────────────────
+// 2026-04-21: No "GL" jargon in child-facing content
+// Children and most parents don't know "GL" means GL Assessment.
+// Use "11+" instead. "GL" is fine in code comments, research docs, and
+// parent-facing guides (parentGuides.js is not scanned here).
+// Triggered by Jacqui flagging Letter Codes Q99 ("I don't know what a GL
+// code means") — prompted a 71-replacement sweep across content files.
+// Exception: "GL" is allowed as a letter-pair answer (e.g. options: ["FK",
+// "GL"] where GL refers to the letters G and L). The check below only
+// flags GL when it appears in prose (question stems, explanations,
+// scenarios, titles, lesson bodies) — i.e. in string contexts longer than
+// a typical letter-pair answer.
+// ──────────────────────────────────────────────
+describe('No GL jargon in child-facing content', () => {
+  function findGLJargon(data, subject) {
+    const problems = [];
+    const scan = (obj, path) => {
+      if (obj == null) return;
+      if (typeof obj === 'string') {
+        // Skip strings that are short (likely letter-pair answers like "GL").
+        if (obj.length < 10) return;
+        if (/\bGL\b/.test(obj)) {
+          problems.push(`${subject}${path}: "${obj.slice(0, 100)}..."`);
+        }
+        return;
+      }
+      if (typeof obj !== 'object') return;
+      if (Array.isArray(obj)) {
+        obj.forEach((item, i) => scan(item, `${path}[${i}]`));
+        return;
+      }
+      for (const [k, v] of Object.entries(obj)) {
+        scan(v, `${path}.${k}`);
+      }
+    };
+    scan(data, '');
+    return problems;
+  }
+
+  it('no "GL" jargon in question banks (English, VR, Maths)', () => {
+    const problems = [
+      ...findGLJargon(mathsData, 'maths'),
+      ...findGLJargon(englishData, 'english'),
+      ...findGLJargon(vrData, 'vr')
+    ];
+    if (problems.length) {
+      console.log(`\nGL jargon leaks (${problems.length}):`);
+      problems.forEach(p => console.log('  ' + p));
+    }
+    expect(problems).toEqual([]);
+  });
+});

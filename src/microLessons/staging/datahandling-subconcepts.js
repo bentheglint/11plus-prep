@@ -1037,13 +1037,14 @@ export const datahandlingSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Using the bar chart, work out **${v.question}**.`,
+            body: (v) => `Using the bar chart, work out **${v.question}**. Read each bar against the scale on the side — don't guess!`,
             visual: {
               component: "BarChart",
               props: (v) => ({
                 bars: Object.entries(v.values).map(([key, val]) => ({ label: key, value: val })),
                 scale: v.scale,
-                yLabel: "Count"
+                yLabel: "Count",
+                showValues: false
               })
             },
             interaction: {
