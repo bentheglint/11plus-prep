@@ -7588,10 +7588,10 @@ const vrData = {
         {
           id: 19,
           difficulty: 1,
-          question: "Move one letter from one word to the other to make two new words: TRAIN  OAD",
-          options: ["R","T","A","I","N"],
-          correct: 1,
-          explanation: "Move the 'T' from TRAIN to OAD: TRAIN becomes RAIN, and OAD becomes TOAD. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
+          question: "Move one letter from one word to the other to make two new words: TRAIN  EAR",
+          options: ["T","R","A","I","E"],
+          correct: 0,
+          explanation: "Move the 'T' from TRAIN to make RAIN, and insert it into EAR to make TEAR. Both are real words. Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
         },
         {
           id: 20,

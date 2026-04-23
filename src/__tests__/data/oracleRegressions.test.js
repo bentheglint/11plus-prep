@@ -579,6 +579,7 @@ describe('Oracle Sweep — Structural Invariants', () => {
     // Locks in the specific fixes so a future edit can't silently
     // revert to an ambiguous word pair.
     const EXPECTED = {
+      19: { word1: 'TRAIN', word2: 'EAR',   correctLetter: 'T' },
       36: { word1: 'ORE',   word2: 'PRICE', correctLetter: 'P' },
       42: { word1: 'OLD',   word2: 'CLOUD', correctLetter: 'C' },
       45: { word1: 'RAY',   word2: 'FLAKE', correctLetter: 'F' },
