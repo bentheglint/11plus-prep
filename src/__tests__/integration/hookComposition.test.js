@@ -90,39 +90,38 @@ describe('Hook Composition', () => {
     expect(result.current.streaksAndPP.getLevelInfo().totalPP).toBe(50);
   });
 
-  it('all data survives unmount/remount', async () => {
-    // Mount and save data
+  // Persistence across unmount/remount is now D1's job (via the Worker).
+  // With dual-write removed, a remount with no D1 token + no cache + no
+  // legacy localStorage yields empty state — the explicit expected shape
+  // when the Worker is unreachable in tests.
+  it('remount starts empty when no D1 cache or legacy data is present', async () => {
     const { result: r1, unmount } = renderHook(() => useComposedHooks('Alice'));
 
     act(() => {
       for (let i = 0; i < 10; i++) {
         r1.current.userData.saveQuestionResult(makeResult('algebra', i < 7));
       }
-      r1.current.userData.savePracticeSession({
-        id: 1, date: '2026-04-01', mode: 'focused',
-        subject: 'maths', topicKey: 'algebra',
-        questionsAttempted: 10, questionsCorrect: 7,
-      });
-      r1.current.streaksAndPP.recordQuizCompletion();
       r1.current.streaksAndPP.awardPP(25, 'test');
     });
 
-    // Capture state before unmount
-    const mastery1 = r1.current.mastery.getTopicMastery('algebra');
-    const streak1 = r1.current.streaksAndPP.currentStreak;
-    const pp1 = r1.current.streaksAndPP.getLevelInfo().totalPP;
-
+    expect(r1.current.userData.questionResults).toHaveLength(10);
     unmount();
 
-    // Remount — should reload from dual-written localStorage via async fallback
     const { result: r2 } = renderHook(() => useComposedHooks('Alice'));
+    await waitFor(() => expect(r2.current.userData.questionResults).toEqual([]));
+    expect(r2.current.streaksAndPP.getLevelInfo().totalPP).toBe(0);
+  });
 
-    // Wait for async load from legacy localStorage
-    await waitFor(() => expect(r2.current.userData.questionResults).toHaveLength(10));
-    expect(r2.current.userData.practiceLog).toHaveLength(1);
-    expect(r2.current.mastery.getTopicMastery('algebra').totalQuestions).toBe(10);
-    expect(r2.current.streaksAndPP.currentStreak).toBe(streak1);
-    expect(r2.current.streaksAndPP.getLevelInfo().totalPP).toBe(pp1);
+  // Pre-existing legacy data is still rehydrated so users mid-migration
+  // don't lose their history on a Worker outage.
+  it('remount rehydrates from legacy localStorage when present', async () => {
+    const existing = Array.from({ length: 5 }, (_, i) => (
+      makeResult('algebra', i < 3)
+    ));
+    localStorage.setItem('user:Alice:question-results', JSON.stringify(existing));
+
+    const { result } = renderHook(() => useComposedHooks('Alice'));
+    await waitFor(() => expect(result.current.userData.questionResults).toHaveLength(5));
   });
 
   it('different users have isolated data chains', () => {

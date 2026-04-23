@@ -193,16 +193,16 @@ export function transformServerData(serverData) {
   };
 }
 
-// ── Legacy localStorage Helpers (dual-write for rollback window) ──
+// ── Legacy localStorage Helpers ──
+//
+// Dual-write was removed on 2026-04-23 (rollback window ~ 27 April). The
+// `legacyRead` helper is retained because the migration and cold-fallback
+// paths still consult localStorage for any user who hasn't yet moved their
+// pre-D1 data. Once the migration flow is fully retired, this block can go
+// too.
 
 function userKey(userName, key) {
   return `user:${userName}:${key}`;
-}
-
-function legacyWrite(userName, key, value) {
-  try {
-    localStorage.setItem(userKey(userName, key), JSON.stringify(value));
-  } catch { /* localStorage full — non-critical */ }
 }
 
 function legacyRead(userName, key, fallback) {
@@ -581,7 +581,6 @@ export default function useD1Data(userName, getToken) {
     // without waiting for a page reload (Codex review #3).
     const updated = [...quizHistory, result];
     setQuizHistory(updated);
-    legacyWrite(userName, 'quiz-history', updated);
     enqueue('quiz-result', {
       topicKey: result.topic, subject: result.subject,
       score: result.score, total: result.total,
@@ -593,24 +592,17 @@ export default function useD1Data(userName, getToken) {
   const saveTopicPerformance = useCallback((updated) => {
     if (!userName) return;
     setTopicPerformance(updated);
-    legacyWrite(userName, 'topic-performance', updated);
-    // Topic performance is synced per-key — enqueue each changed key
-    // For now, just write to localStorage (same as old behavior — no individual sync)
+    // Topic performance is synced per-key elsewhere; nothing to enqueue here.
   }, [userName]);
 
   const saveSeenQuestions = useCallback((updated) => {
     if (!userName) return;
     setSeenQuestions(updated);
-    legacyWrite(userName, 'seen-questions', updated);
   }, [userName]);
 
   const saveMockTestResult = useCallback((result) => {
     if (!userName) return;
-    setMockTestHistory(prev => {
-      const updated = [...prev, result];
-      legacyWrite(userName, 'mock-test-history', updated);
-      return updated;
-    });
+    setMockTestHistory(prev => [...prev, result]);
     enqueue('mock-result', {
       subject: result.subject, totalQuestions: result.totalQuestions,
       totalCorrect: result.totalCorrect, percentage: result.percentage,
@@ -622,16 +614,11 @@ export default function useD1Data(userName, getToken) {
   const saveLessonHistory = useCallback((updated) => {
     if (!userName) return;
     setLessonHistory(updated);
-    legacyWrite(userName, 'lesson-history', updated);
   }, [userName]);
 
   const saveQuestionResult = useCallback((result) => {
     if (!userName) return;
-    setQuestionResults(prev => {
-      const updated = [...prev, result].slice(-5000);
-      legacyWrite(userName, 'question-results', updated);
-      return updated;
-    });
+    setQuestionResults(prev => [...prev, result].slice(-5000));
     enqueue('question-result', {
       questionId: result.questionId, topicKey: result.topicKey,
       subject: result.subject, isCorrect: result.correct,
@@ -643,11 +630,7 @@ export default function useD1Data(userName, getToken) {
 
   const savePracticeSession = useCallback((session) => {
     if (!userName) return;
-    setPracticeLog(prev => {
-      const updated = [...prev, session];
-      legacyWrite(userName, 'practice-log', updated);
-      return updated;
-    });
+    setPracticeLog(prev => [...prev, session]);
     enqueue('practice-session', {
       sessionDate: session.date || new Date().toISOString().slice(0, 10),
       data: session,
@@ -657,7 +640,6 @@ export default function useD1Data(userName, getToken) {
   const saveStreakData = useCallback((data) => {
     if (!userName) return;
     setStreakData(data);
-    legacyWrite(userName, 'streaks', data);
     enqueue('streaks', {
       version: versionsRef.current.streaks,
       currentStreak: data.currentStreak,
@@ -670,7 +652,6 @@ export default function useD1Data(userName, getToken) {
   const savePrepPoints = useCallback((data) => {
     if (!userName) return;
     setPrepPointsData(data);
-    legacyWrite(userName, 'prep-points', data);
     enqueue('prep-points', {
       version: versionsRef.current.prepPoints,
       total: data.total, level: data.level,
@@ -690,7 +671,6 @@ export default function useD1Data(userName, getToken) {
       });
     }
     setAchievements(data);
-    legacyWrite(userName, 'achievements', data);
   }, [userName, achievements, enqueue]);
 
   const markTipSeen = useCallback((tipId) => {
@@ -704,14 +684,12 @@ export default function useD1Data(userName, getToken) {
       updated = [...seenTips, { id: tipId, lastSeenDate: now }];
     }
     setSeenTips(updated);
-    legacyWrite(userName, 'seen-tips', updated);
     enqueue('seen-tip', { tipId, lastSeenDate: now });
   }, [userName, seenTips, enqueue]);
 
   const saveLastSessionDate = useCallback((date) => {
     if (!userName) return;
     setLastSessionDate(date);
-    legacyWrite(userName, 'last-session-date', date);
     enqueue('preferences', {
       version: versionsRef.current.preferences,
       lastSessionDate: date,
@@ -721,7 +699,6 @@ export default function useD1Data(userName, getToken) {
   const saveLeitnerQueue = useCallback((queue) => {
     if (!userName) return;
     setLeitnerQueue(queue);
-    legacyWrite(userName, 'leitner-queue', queue);
   }, [userName]);
 
   // ── Return (identical to old useUserData) ──
