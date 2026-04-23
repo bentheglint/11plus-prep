@@ -47,8 +47,8 @@ function coverageBadge(pct) {
 }
 
 function subjectGradient(subject) {
-  if (subject === 'maths') return 'from-[#0770C2] to-[#0652DD]';
-  if (subject === 'english') return 'from-[#007D62] to-[#00876A]';
+  if (subject === 'maths') return 'from-[#3B82F6] to-[#2563EB]';
+  if (subject === 'english') return 'from-[#22C55E] to-[#16A34A]';
   return 'from-[#7C3AED] to-[#5A4BD1]';
 }
 

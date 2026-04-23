@@ -198,8 +198,8 @@ function resolveLabels(labels, dots, plotBounds) {
 }
 
 const subjectConfig = {
-  maths: { name: 'Maths', colour: '#0770C2', speedTarget: 60 },
-  english: { name: 'English', colour: '#007D62', speedTarget: 55 },
+  maths: { name: 'Maths', colour: '#3B82F6', speedTarget: 60 },
+  english: { name: 'English', colour: '#22C55E', speedTarget: 55 },
   verbalreasoning: { name: 'Verbal Reasoning', colour: '#7C3AED', speedTarget: 37.5 },
 };
 
@@ -319,8 +319,8 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
 
   // Quadrant background colours (very subtle)
   const quadrants = [
-    { x: pad.left, y: pad.top, w: threshX - pad.left, h: threshY - pad.top, fill: '#007D6208', label: 'Exam Ready', lx: pad.left + 8, ly: pad.top + 18 },
-    { x: threshX, y: pad.top, w: pad.left + plotW - threshX, h: threshY - pad.top, fill: '#0770C208', label: 'Build Speed', lx: pad.left + plotW - 8, ly: pad.top + 18, anchor: 'end' },
+    { x: pad.left, y: pad.top, w: threshX - pad.left, h: threshY - pad.top, fill: '#22C55E08', label: 'Exam Ready', lx: pad.left + 8, ly: pad.top + 18 },
+    { x: threshX, y: pad.top, w: pad.left + plotW - threshX, h: threshY - pad.top, fill: '#3B82F608', label: 'Build Speed', lx: pad.left + plotW - 8, ly: pad.top + 18, anchor: 'end' },
     { x: pad.left, y: threshY, w: threshX - pad.left, h: pad.top + plotH - threshY, fill: '#FDCB6E08', label: 'Build Accuracy', lx: pad.left + 8, ly: pad.top + plotH - 8 },
     { x: threshX, y: threshY, w: pad.left + plotW - threshX, h: pad.top + plotH - threshY, fill: '#E17B1E08', label: 'Focus Here', lx: pad.left + plotW - 8, ly: pad.top + plotH - 8, anchor: 'end' },
   ];

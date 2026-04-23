@@ -4,8 +4,8 @@ import { BookOpen, ChevronDown, ChevronRight, ArrowLeft } from 'lucide-react';
 // Category display config
 const categoryConfig = {
   'How to Praise & Respond': { colour: '#7C3AED', icon: '💬' },
-  'Understanding How Practice Works': { colour: '#0770C2', icon: '🧠' },
-  'Managing Anxiety': { colour: '#007D62', icon: '🌱' },
+  'Understanding How Practice Works': { colour: '#3B82F6', icon: '🧠' },
+  'Managing Anxiety': { colour: '#22C55E', icon: '🌱' },
   'Sleep, Exercise & Downtime': { colour: '#FF6B6B', icon: '😴' },
 };
 

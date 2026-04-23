@@ -2,10 +2,10 @@ import React from 'react';
 import { ChevronRight, Star, Crown, Rocket, Target, Wrench, ArrowLeft, Home } from 'lucide-react';
 
 function getTopicBadge(pct) {
-  if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F39C12]', bg: 'bg-[#FDCB6E]/20' };
-  if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0770C2]', bg: 'bg-[#0770C2]/10' };
+  if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F59E0B]', bg: 'bg-[#FDCB6E]/20' };
+  if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#3B82F6]', bg: 'bg-[#3B82F6]/10' };
   if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#7C3AED]', bg: 'bg-[#7C3AED]/10' };
-  if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F39C12]', bg: 'bg-[#F39C12]/10' };
+  if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F59E0B]', bg: 'bg-[#F59E0B]/10' };
   return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
 }
 
@@ -17,8 +17,8 @@ function TopicCard({ title, performance, onClick }) {
     if (performance.total >= 5) {
       const pct = Math.round((performance.correct / performance.total) * 100);
       perfPct = pct;
-      perfBarColor = pct >= 70 ? '#007D62' : pct >= 40 ? '#FDCB6E' : '#FF6B6B';
-      const pctColor = pct >= 70 ? 'text-[#007D62]' : pct >= 40 ? 'text-[#F39C12]' : 'text-[#FF6B6B]';
+      perfBarColor = pct >= 70 ? '#22C55E' : pct >= 40 ? '#FDCB6E' : '#FF6B6B';
+      const pctColor = pct >= 70 ? 'text-[#22C55E]' : pct >= 40 ? 'text-[#F59E0B]' : 'text-[#FF6B6B]';
       const badge = getTopicBadge(pct);
       const BadgeIcon = badge.icon;
       perfDisplay = (

@@ -2,8 +2,8 @@ import React from 'react';
 import { Clock, AlertTriangle } from 'lucide-react';
 
 const subjectTargets = {
-  maths: { target: 60, name: 'Maths', colour: '#0770C2' },
-  english: { target: 60, name: 'English', colour: '#007D62' },
+  maths: { target: 60, name: 'Maths', colour: '#3B82F6' },
+  english: { target: 60, name: 'English', colour: '#22C55E' },
   verbalreasoning: { target: 37, name: 'Verbal Reasoning', colour: '#7C3AED' },
 };
 
@@ -59,7 +59,7 @@ function SpeedTracking({ questionResults }) {
       <div className="space-y-3">
         {subjectStats.map(stat => {
           const pct = Math.min(100, (stat.avgSecs / (stat.target * 1.5)) * 100);
-          const barColour = stat.avgSecs <= stat.target ? '#007D62' :
+          const barColour = stat.avgSecs <= stat.target ? '#22C55E' :
                            stat.avgSecs <= stat.target * 1.3 ? '#FDCB6E' : '#FF6B6B';
 
           return (
@@ -73,7 +73,7 @@ function SpeedTracking({ questionResults }) {
                   <span className="text-[10px] text-slate-500">
                     / {stat.target}s target
                   </span>
-                  {stat.trend === 'faster' && <span className="text-[10px] text-[#007D62] font-bold">↓ faster</span>}
+                  {stat.trend === 'faster' && <span className="text-[10px] text-[#22C55E] font-bold">↓ faster</span>}
                   {stat.trend === 'slower' && <span className="text-[10px] text-[#FF6B6B] font-bold">↑ slower</span>}
                 </div>
               </div>

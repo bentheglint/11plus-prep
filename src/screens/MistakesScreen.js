@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw, BookOpen } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
+const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
 function MistakesScreen({ questionResults, questionData, englishData, vrData, onPractiseTopic, onRecordResult, onBack }) {
@@ -237,11 +237,11 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
         <div className="app-bg p-4 min-h-screen">
           <div className="max-w-2xl mx-auto">
             <div className="card-elevated p-8 text-center">
-              <CheckCircle2 className="w-12 h-12 text-[#007D62] mx-auto mb-4" />
+              <CheckCircle2 className="w-12 h-12 text-[#22C55E] mx-auto mb-4" />
               <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">Practice Complete!</h2>
               <div className="flex justify-center gap-6 mb-4">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-[#007D62]">{correctCount}</p>
+                  <p className="text-3xl font-bold text-[#22C55E]">{correctCount}</p>
                   <p className="text-sm text-slate-500">Correct</p>
                 </div>
                 <div className="text-center">
@@ -311,7 +311,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 }}
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <BookOpen className="w-4 h-4 text-[#F39C12]" />
+                  <BookOpen className="w-4 h-4 text-[#F59E0B]" />
                   <span className="text-sm font-heading font-bold text-slate-800">{current.fullQuestion.passageTitle}</span>
                 </div>
                 <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
@@ -320,7 +320,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               </div>
               <div className="scroll-hint absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#FFF8E8] to-transparent rounded-b-xl pointer-events-none flex items-end justify-center pb-1 transition-opacity"
                 style={{ opacity: 0 }}>
-                <span className="text-[10px] font-bold text-[#F39C12] animate-bounce">▼ Scroll for more</span>
+                <span className="text-[10px] font-bold text-[#F59E0B] animate-bounce">▼ Scroll for more</span>
               </div>
             </div>
           )}
@@ -368,7 +368,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                   const isCorrectOption = i === current.correctAnswer;
                   let optionStyle = 'border-gray-200 hover:border-[#7C3AED] hover:bg-[#7C3AED]/5';
                   if (showFeedback) {
-                    if (isCorrectOption) optionStyle = 'border-[#007D62] bg-[#007D62]/10';
+                    if (isCorrectOption) optionStyle = 'border-[#22C55E] bg-[#22C55E]/10';
                     else if (isSelected) optionStyle = 'border-[#FF6B6B] bg-[#FF6B6B]/10';
                     else optionStyle = 'border-gray-200 opacity-50';
                   } else if (isSelected) {
@@ -490,9 +490,9 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             <div className="card-elevated p-5 mb-4">
               {wasCorrect ? (
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#007D62] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-6 h-6 text-[#22C55E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-[#007D62] mb-1">Correct! Removed from your mistakes.</p>
+                    <p className="font-bold text-[#22C55E] mb-1">Correct! Removed from your mistakes.</p>
                     {current.explanation && (
                       <p className="text-sm text-slate-500">{current.explanation}</p>
                     )}

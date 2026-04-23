@@ -2,7 +2,7 @@ import React from 'react';
 import { AlertCircle, Star, ChevronRight } from 'lucide-react';
 import { topicNames } from '../RecommendationCard';
 
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
+const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
 function FocusAreas({ mastery, onTopicClick }) {
@@ -50,7 +50,7 @@ function FocusAreas({ mastery, onTopicClick }) {
                 {area.mastery && area.mastery.totalQuestions > 0 && (
                   <div className="flex items-center gap-1 mt-1">
                     {[1,2,3,4,5].map(s => (
-                      <Star key={s} className="w-2.5 h-2.5" fill={s <= area.mastery.stars ? '#FDCB6E' : 'none'} stroke={s <= area.mastery.stars ? '#F39C12' : '#DFE6E9'} strokeWidth={2} />
+                      <Star key={s} className="w-2.5 h-2.5" fill={s <= area.mastery.stars ? '#FDCB6E' : 'none'} stroke={s <= area.mastery.stars ? '#F59E0B' : '#DFE6E9'} strokeWidth={2} />
                     ))}
                     <span className="text-[10px] text-slate-500 ml-1">{area.mastery.recentAccuracy}% accuracy</span>
                   </div>

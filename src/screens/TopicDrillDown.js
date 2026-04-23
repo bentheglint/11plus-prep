@@ -3,7 +3,7 @@ import { ArrowLeft, Star, TrendingUp, TrendingDown, Minus, Clock, Target, BarCha
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
+const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 
 function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractise, onBack, onHome }) {
   const m = mastery.getTopicMastery(topicKey);
@@ -48,7 +48,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
     return { difficulty: d, total: atDiff.length, correct, pct: Math.round((correct / atDiff.length) * 100) };
   });
   const diffLabels = { 1: 'Easy', 2: 'Medium', 3: 'Hard' };
-  const diffColours = { 1: '#007D62', 2: '#FDCB6E', 3: '#FF6B6B' };
+  const diffColours = { 1: '#22C55E', 2: '#FDCB6E', 3: '#FF6B6B' };
 
   // Speed stats
   const withTime = topicResults.filter(r => r.timeSpentMs > 0).slice(0, 30);
@@ -59,7 +59,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
   // Trend display
   const TrendIcon = m.trend?.direction === 'up' ? TrendingUp :
                     m.trend?.direction === 'down' ? TrendingDown : Minus;
-  const trendColour = m.trend?.direction === 'up' ? '#007D62' :
+  const trendColour = m.trend?.direction === 'up' ? '#22C55E' :
                       m.trend?.direction === 'down' ? '#FF6B6B' : '#64748B';
   const trendText = m.trend?.direction === 'up' ? `Improving (+${m.trend.delta}%)` :
                     m.trend?.direction === 'down' ? `Declining (${m.trend.delta}%)` : 'Stable';
@@ -102,7 +102,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
           <div className="flex items-center gap-4 mb-4">
             <div className="flex items-center gap-1">
               {[1, 2, 3, 4, 5].map(i => (
-                <Star key={i} className="w-5 h-5" fill={i <= m.stars ? '#FDCB6E' : 'none'} stroke={i <= m.stars ? '#F39C12' : '#DFE6E9'} strokeWidth={2} />
+                <Star key={i} className="w-5 h-5" fill={i <= m.stars ? '#FDCB6E' : 'none'} stroke={i <= m.stars ? '#F59E0B' : '#DFE6E9'} strokeWidth={2} />
               ))}
             </div>
             <span className="text-sm font-bold text-slate-800">{m.label}</span>

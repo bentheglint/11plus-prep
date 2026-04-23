@@ -12,7 +12,7 @@ const SUBJECT_NAMES = {
 // Keeps the two views visually identical so parents see the same layout
 // whether they're peeking or auditing.
 export default function QuizHistoryRow({ quiz, onView }) {
-  const dotColour = quiz.percentage >= 80 ? '#007D62' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
+  const dotColour = quiz.percentage >= 80 ? '#22C55E' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
   const date = new Date(quiz.date);
   const isToday = date.toISOString().split('T')[0] === new Date().toISOString().split('T')[0];
   const dateLabel = isToday ? 'Today' : date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });

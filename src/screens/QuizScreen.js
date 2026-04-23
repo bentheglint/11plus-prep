@@ -201,7 +201,7 @@ function QuizScreen({
                     }}
                   >
                     <div className="flex items-center gap-2 mb-2">
-                      <BookOpen className="w-4 h-4 text-[#F39C12]" />
+                      <BookOpen className="w-4 h-4 text-[#F59E0B]" />
                       <span className="text-sm font-heading font-bold text-slate-800">{currentQuestion.passageTitle}</span>
                     </div>
                     <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
@@ -210,7 +210,7 @@ function QuizScreen({
                   </div>
                   <div className="scroll-hint absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#FFF8E8] to-transparent rounded-b-xl pointer-events-none flex items-end justify-center pb-1 transition-opacity"
                     style={{ opacity: 0 }}>
-                    <span className="text-[10px] font-bold text-[#F39C12] animate-bounce">▼ Scroll for more</span>
+                    <span className="text-[10px] font-bold text-[#F59E0B] animate-bounce">▼ Scroll for more</span>
                   </div>
                 </div>
               )}
@@ -440,7 +440,7 @@ function QuizScreen({
                       className={`w-full p-4 text-left rounded-xl border-2 transition-colors font-medium text-lg flex items-center gap-3 ${
                         showFeedback
                           ? idx === currentQuestion.correct
-                            ? 'border-[#007D62] bg-[#007D62]/10 text-slate-800'
+                            ? 'border-[#22C55E] bg-[#22C55E]/10 text-slate-800'
                             : idx === selectedAnswer
                             ? 'border-[#FF6B6B] bg-[#FF6B6B]/10 text-slate-800'
                             : 'border-gray-200 bg-gray-50 text-gray-400'
@@ -452,7 +452,7 @@ function QuizScreen({
                       <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
                         showFeedback
                           ? idx === currentQuestion.correct
-                            ? 'bg-[#007D62] text-white'
+                            ? 'bg-[#22C55E] text-white'
                             : idx === selectedAnswer
                             ? 'bg-[#FF6B6B] text-white'
                             : 'bg-gray-200 text-gray-400'
@@ -488,11 +488,11 @@ function QuizScreen({
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                   className={`mt-6 p-4 rounded-xl ${
-                  isCorrect ? 'bg-[#007D62]/10 border-2 border-[#007D62]' : 'bg-[#FF6B6B]/10 border-2 border-[#FF6B6B]'
+                  isCorrect ? 'bg-[#22C55E]/10 border-2 border-[#22C55E]' : 'bg-[#FF6B6B]/10 border-2 border-[#FF6B6B]'
                 }`}>
                   <div className="flex items-start">
                     {isCorrect ? (
-                      <div className="w-8 h-8 rounded-full bg-[#007D62] flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <div className="w-8 h-8 rounded-full bg-[#22C55E] flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
                         <Star className="w-4 h-4 text-white" />
                       </div>
                     ) : (

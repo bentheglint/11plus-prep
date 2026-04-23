@@ -50,10 +50,10 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={onStartDaily}
-            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#0770C2]/30 "
+            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#3B82F6]/30 "
           >
-            <div className="flex items-center justify-center w-16 h-16 bg-[#0770C2]/10 rounded-2xl mb-4">
-              <Calendar className="w-8 h-8 text-[#0770C2]" />
+            <div className="flex items-center justify-center w-16 h-16 bg-[#3B82F6]/10 rounded-2xl mb-4">
+              <Calendar className="w-8 h-8 text-[#3B82F6]" />
             </div>
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Daily Learning</h3>
             <p className="text-slate-500 flex-1">10 questions from across all topics. A great way to keep your skills sharp!</p>
@@ -97,7 +97,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#FDCB6E]/30 "
           >
             <div className="flex items-center justify-center w-16 h-16 bg-[#FDCB6E]/10 rounded-2xl mb-4">
-              <Lightbulb className="w-8 h-8 text-[#F39C12]" />
+              <Lightbulb className="w-8 h-8 text-[#F59E0B]" />
             </div>
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Study Toolkit</h3>
             <p className="text-slate-500 flex-1">Tips, strategies, and lessons to help you ace the exam!</p>

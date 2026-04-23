@@ -2,17 +2,18 @@
 /**
  * update-brand-palette.js
  *
- * Swaps the old brand purple (#6C5CE7) for the new brighter purple (#7C3AED)
- * across runtime source files. The new shade hits WCAG AA on white body text
- * (5.93:1 vs old 3.98:1) while feeling more kid-friendly vibrant.
+ * Migrates all old muted brand colours to the new kid-friendly palette
+ * we approved in brand-assets/logo-options/palette.html.
  *
- * Scope:
- *   ✓ src/**
- *   ✓ public/terms.html, public/privacy.html
- *   ✗ scripts/oracle-review/** (generated extracts — regenerate if needed)
- *   ✗ JS Files for Question Bank/** (orphan archive)
- *   ✗ brand-assets/** (already on new palette)
- *   ✗ workers/** (standalone deploy, handle separately if needed)
+ *   Old muted → New bright
+ *   #6C5CE7   → #7C3AED   (primary purple; brand anchor)
+ *   #0770C2   → #3B82F6   (blue; was Maths subject colour)
+ *   #007D62   → #22C55E   (green; was English subject colour)
+ *   #F39C12   → #F59E0B   (amber; warm accent)
+ *   #0652DD   → #2563EB   (darker blue for gradient endpoints)
+ *   #00876A   → #16A34A   (darker green for gradient endpoints)
+ *
+ * Scope: src/** + public/*.html (excluding generated oracle-review extracts).
  *
  * Run: node scripts/update-brand-palette.js
  */
@@ -23,21 +24,22 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 
 const REPLACEMENTS = [
-  // Old brand purple → new brand purple. Case-insensitive (handles #6C5CE7, #6c5ce7).
-  { from: /#6C5CE7/g, to: '#7C3AED' },
-  { from: /#6c5ce7/g, to: '#7C3AED' }
+  // Primary purple (already migrated in prior run — idempotent safety net)
+  { from: /#6C5CE7/gi, to: '#7C3AED' },
+  // Blue family
+  { from: /#0770C2/gi, to: '#3B82F6' },
+  { from: /#0652DD/gi, to: '#2563EB' },
+  // Green family
+  { from: /#007D62/gi, to: '#22C55E' },
+  { from: /#00876A/gi, to: '#16A34A' },
+  // Amber accent
+  { from: /#F39C12/gi, to: '#F59E0B' }
 ];
 
-// Directories to walk
 const INCLUDE_ROOTS = [
   path.join(ROOT, 'src'),
   path.join(ROOT, 'public')
 ];
-
-// Files to skip by exact path suffix
-const EXCLUDE_PATHS = new Set([
-  // None for now — include everything in INCLUDE_ROOTS
-]);
 
 const EXT_PATTERN = /\.(js|jsx|ts|tsx|css|html|json|svg|md)$/i;
 
@@ -51,7 +53,6 @@ function walkDir(dir) {
     if (entry.isDirectory()) {
       walkDir(fullPath);
     } else if (entry.isFile() && EXT_PATTERN.test(entry.name)) {
-      if (EXCLUDE_PATHS.has(fullPath)) continue;
       processFile(fullPath);
     }
   }

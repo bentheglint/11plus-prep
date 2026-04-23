@@ -36,7 +36,7 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
                 ${isCurrent
                   ? 'ring-2 ring-[#7C3AED] bg-[#EDE8FF] text-[#7C3AED]'
                   : isAnswered
-                  ? 'bg-[#007D62]/15 text-[#00876A]'
+                  ? 'bg-[#22C55E]/15 text-[#16A34A]'
                   : 'bg-gray-100 text-slate-500 hover:bg-gray-200'
                 }`}
             >
@@ -53,7 +53,7 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
 
       <div className="flex items-center justify-between text-xs text-slate-500">
         <span className="flex items-center gap-1">
-          <span className="w-3 h-3 rounded bg-[#007D62]/15 inline-block"></span>
+          <span className="w-3 h-3 rounded bg-[#22C55E]/15 inline-block"></span>
           {answeredCount} answered
         </span>
         {flaggedCount > 0 && (

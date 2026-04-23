@@ -101,8 +101,8 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
       status = 'on-track';
       icon = CheckCircle;
       bgGradient = 'from-[#D4EFDF] to-[#E8F8F5]';
-      borderColour = '#007D62';
-      iconBg = 'bg-[#007D62]';
+      borderColour = '#22C55E';
+      iconBg = 'bg-[#22C55E]';
       headline = `${firstName} is on track!`;
 
       const streakText = currentStreak >= 3 ? ` Their ${currentStreak}-day streak shows fantastic commitment.` : '';
@@ -130,8 +130,8 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
       status = 'attention-needed';
       icon = ArrowUpRight;
       bgGradient = 'from-[#FFF8E1] to-[#FFF3CD]';
-      borderColour = '#F39C12';
-      iconBg = 'bg-[#F39C12]';
+      borderColour = '#F59E0B';
+      iconBg = 'bg-[#F59E0B]';
 
       // Build specific, actionable message
       const issues = [];

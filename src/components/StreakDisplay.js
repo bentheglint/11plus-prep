@@ -101,7 +101,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                 <p className="text-[10px] text-slate-500 font-medium">Best streak</p>
               </div>
               <div className="text-center p-3 bg-gradient-to-b from-green-50 to-white rounded-xl">
-                <p className="text-2xl font-bold text-[#007D62]">{thisWeekCount}/5</p>
+                <p className="text-2xl font-bold text-[#22C55E]">{thisWeekCount}/5</p>
                 <p className="text-[10px] text-slate-500 font-medium">This week</p>
               </div>
             </div>
@@ -127,7 +127,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                         key={di}
                         className={`aspect-square rounded-sm flex items-center justify-center text-[8px] font-bold
                           ${day.isFuture ? 'bg-gray-100' :
-                            day.isToday && day.practiced ? 'bg-[#007D62] text-white ring-2 ring-[#007D62]/30' :
+                            day.isToday && day.practiced ? 'bg-[#22C55E] text-white ring-2 ring-[#22C55E]/30' :
                             day.isToday ? 'bg-white border-2 border-[#7C3AED] text-[#7C3AED]' :
                             day.practiced ? 'bg-[#7C3AED] text-white' :
                             'bg-gray-200 text-gray-400'}`}
@@ -154,7 +154,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
               </div>
               <div className="space-y-2 text-xs text-slate-500">
                 <p className="flex items-start gap-2">
-                  <span className="text-[#007D62] font-bold mt-0.5">✓</span>
+                  <span className="text-[#22C55E] font-bold mt-0.5">✓</span>
                   <span>Complete <strong className="text-slate-800">at least one quiz</strong> to count as a practice day</span>
                 </p>
                 <p className="flex items-start gap-2">
@@ -166,7 +166,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                   <span>Drop below <strong className="text-slate-800">5 days in any week</strong> and your streak starts fresh</span>
                 </p>
                 <p className="flex items-start gap-2 mt-1">
-                  <span className="text-[#007D62] font-bold mt-0.5">♥</span>
+                  <span className="text-[#22C55E] font-bold mt-0.5">♥</span>
                   <span>Taking breaks is healthy! Your progress is <strong className="text-slate-800">always saved</strong></span>
                 </p>
               </div>

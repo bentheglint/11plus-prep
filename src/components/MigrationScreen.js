@@ -303,37 +303,37 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
           <div className="grid grid-cols-2 gap-3 text-sm">
             {scan.summary.quizzes > 0 && (
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                 <span><strong>{scan.summary.quizzes}</strong> quizzes completed</span>
               </div>
             )}
             {scan.summary.mockTests > 0 && (
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                 <span><strong>{scan.summary.mockTests}</strong> mock tests</span>
               </div>
             )}
             {scan.summary.lessons > 0 && (
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                 <span><strong>{scan.summary.lessons}</strong> lessons done</span>
               </div>
             )}
             {scan.summary.questionAttempts > 0 && (
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                 <span><strong>{scan.summary.questionAttempts}</strong> questions answered</span>
               </div>
             )}
             {scan.summary.streak > 0 && (
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                 <span><strong>{scan.summary.streak}</strong>-day streak</span>
               </div>
             )}
             {scan.summary.prepPoints > 0 && (
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                 <span><strong>{scan.summary.prepPoints}</strong> prep points</span>
               </div>
             )}

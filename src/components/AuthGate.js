@@ -60,14 +60,9 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
 
       {/* Hero */}
       <main className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-        <div className="w-20 h-20 rounded-2xl bg-[#7C3AED] flex items-center justify-center mb-6 shadow-lg">
-          <BookOpen className="w-10 h-10 text-white" />
-        </div>
-        <h1 className="font-heading text-4xl font-bold text-slate-800 mb-3">
-          11+ Exam Prep
-        </h1>
+        <img src="/logo.svg" alt="PrepStep" className="w-80 max-w-full mb-6" />
         <p className="text-lg text-slate-500 max-w-md mb-8">
-          Personalised practice for the GL Assessment 11+ exam.
+          Step-by-step practice for the GL Assessment 11+ exam.
           Maths, English, and Verbal Reasoning — with smart revision that adapts to your child.
         </p>
         <button
@@ -84,7 +79,7 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
         {/* Trust signals */}
         <div className="flex items-center gap-6 mt-10 text-sm text-slate-500">
           <div className="flex items-center gap-1.5">
-            <Shield className="w-4 h-4 text-[#007D62]" />
+            <Shield className="w-4 h-4 text-[#22C55E]" />
             <span>Your child's data is safe</span>
           </div>
           <a href="/privacy.html" className="underline hover:text-[#7C3AED]">

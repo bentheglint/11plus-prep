@@ -220,7 +220,7 @@ function MockTestScreen({
           {showPassage && (
             <details className="mb-6 bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl" open>
               <summary className="p-4 cursor-pointer flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-[#F39C12]" />
+                <BookOpen className="w-4 h-4 text-[#F59E0B]" />
                 <span className="text-sm font-heading font-bold text-slate-800">{currentQ.passageTitle}</span>
                 <span className="text-xs text-slate-500 ml-auto">Click to show/hide passage</span>
               </summary>
@@ -408,7 +408,7 @@ function MockTestScreen({
             ) : (
               <button
                 onClick={() => setShowConfirmSubmit(true)}
-                className="flex items-center gap-2 px-6 py-2 bg-[#007D62] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
+                className="flex items-center gap-2 px-6 py-2 bg-[#22C55E] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
               >
                 Finish Test
               </button>
@@ -442,7 +442,7 @@ function MockTestScreen({
                   </button>
                   <button
                     onClick={() => { setShowConfirmSubmit(false); onSubmit(); }}
-                    className="px-6 py-3 bg-[#007D62] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
+                    className="px-6 py-3 bg-[#22C55E] hover:bg-[#00A381] text-white font-bold rounded-xl transition-colors"
                   >
                     Submit Test
                   </button>

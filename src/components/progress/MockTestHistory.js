@@ -75,7 +75,7 @@ function MockTestHistory({ mockTestHistory }) {
         {sorted.slice(0, 8).map(test => {
           const date = new Date(test.date);
           const dateLabel = date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
-          const dotColour = test.percentage >= 80 ? '#007D62' : test.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
+          const dotColour = test.percentage >= 80 ? '#22C55E' : test.percentage >= 60 ? '#FDCB6E' : '#FF6B6B';
           const minsUsed = test.timeTaken ? Math.floor(test.timeTaken / 60) : null;
           const minsAllowed = test.timeLimit ? Math.floor(test.timeLimit / 60) : null;
 

@@ -28,8 +28,8 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
   const vrMastery = mastery?.getSubjectMastery?.('verbalreasoning')?.score || 0;
 
   const subjects = [
-    { key: 'maths', title: 'Maths', icon: Calculator, gradient: 'from-[#0770C2] to-[#0652DD]', mastery: mathsMastery },
-    { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#007D62] to-[#00876A]', mastery: englishMastery },
+    { key: 'maths', title: 'Maths', icon: Calculator, gradient: 'from-[#3B82F6] to-[#2563EB]', mastery: mathsMastery },
+    { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#22C55E] to-[#16A34A]', mastery: englishMastery },
     { key: 'verbalreasoning', title: 'Verbal Reasoning', icon: Brain, gradient: 'from-[#7C3AED] to-[#5A4BD1]', mastery: vrMastery },
   ];
 

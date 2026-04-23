@@ -11,7 +11,7 @@ const ACHIEVEMENTS = [
     name: 'First Steps',
     description: 'Complete your first quiz',
     icon: Rocket,
-    colour: '#0770C2',
+    colour: '#3B82F6',
     check: (s) => s.totalQuizzes >= 1,
   },
   {
@@ -35,7 +35,7 @@ const ACHIEVEMENTS = [
     name: 'Fantastic Five Hundred',
     description: 'Answer 500 questions',
     icon: Trophy,
-    colour: '#F39C12',
+    colour: '#F59E0B',
     check: (s) => s.totalQuestions >= 500,
   },
   {
@@ -95,7 +95,7 @@ const ACHIEVEMENTS = [
     name: 'Consistent Star',
     description: 'Score 80%+ on 5 quizzes',
     icon: Award,
-    colour: '#007D62',
+    colour: '#22C55E',
     check: (s) => s.highScoreCount >= 5,
   },
 
@@ -105,7 +105,7 @@ const ACHIEVEMENTS = [
     name: 'Maths Explorer',
     description: 'Try every Maths topic',
     icon: Calculator,
-    colour: '#0770C2',
+    colour: '#3B82F6',
     check: (s) => s.mathsTopicsCovered >= 16,
   },
   {
@@ -113,7 +113,7 @@ const ACHIEVEMENTS = [
     name: 'English Explorer',
     description: 'Try every English topic',
     icon: BookOpen,
-    colour: '#007D62',
+    colour: '#22C55E',
     check: (s) => s.englishTopicsCovered >= 6,
   },
   {
@@ -149,7 +149,7 @@ const ACHIEVEMENTS = [
     name: 'Big Leap',
     description: 'Improve 20%+ on a topic',
     icon: TrendingUp,
-    colour: '#007D62',
+    colour: '#22C55E',
     check: (s) => s.biggestImprovement >= 20,
   },
 
@@ -167,7 +167,7 @@ const ACHIEVEMENTS = [
     name: 'Exam Ready',
     description: 'Score 80%+ on a mock test',
     icon: Trophy,
-    colour: '#007D62',
+    colour: '#22C55E',
     check: (s) => s.bestMockScore >= 80,
   },
 ];

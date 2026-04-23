@@ -145,19 +145,19 @@ export default function SubscribeScreen({ getToken, trialExpired, onSuccess, onB
         {/* What's included */}
         <div className="bg-[#F8F7FF] rounded-xl p-4 mb-6 space-y-2">
           <div className="flex items-center gap-2 text-sm text-slate-700">
-            <CheckCircle2 className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
             <span>All three subjects — maths, English, verbal reasoning</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-slate-700">
-            <CheckCircle2 className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
             <span>AI tutor on every question</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-slate-700">
-            <CheckCircle2 className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
             <span>Mock tests + progress tracking</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-slate-700">
-            <CheckCircle2 className="w-4 h-4 text-[#007D62] flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
             <span>Cancel any time — 14-day refund guarantee</span>
           </div>
         </div>

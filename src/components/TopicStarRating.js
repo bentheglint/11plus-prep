@@ -5,7 +5,7 @@ function TopicStarRating({ stars, label, trend, daysSince, compact = false }) {
   const trendIcon = trend?.direction === 'up' ? TrendingUp :
                     trend?.direction === 'down' ? TrendingDown : Minus;
   const TrendIcon = trendIcon;
-  const trendColour = trend?.direction === 'up' ? '#007D62' :
+  const trendColour = trend?.direction === 'up' ? '#22C55E' :
                       trend?.direction === 'down' ? '#FF6B6B' : '#B2BEC3';
   const needsReview = daysSince > 14 && stars > 0;
 
@@ -13,7 +13,7 @@ function TopicStarRating({ stars, label, trend, daysSince, compact = false }) {
     return (
       <div className="flex items-center gap-1">
         {[1, 2, 3, 4, 5].map(i => (
-          <Star key={i} className="w-3.5 h-3.5" fill={i <= stars ? '#FDCB6E' : 'none'} stroke={i <= stars ? '#F39C12' : '#DFE6E9'} strokeWidth={2} />
+          <Star key={i} className="w-3.5 h-3.5" fill={i <= stars ? '#FDCB6E' : 'none'} stroke={i <= stars ? '#F59E0B' : '#DFE6E9'} strokeWidth={2} />
         ))}
       </div>
     );
@@ -23,7 +23,7 @@ function TopicStarRating({ stars, label, trend, daysSince, compact = false }) {
     <div className="flex items-center gap-2">
       <div className="flex items-center gap-0.5">
         {[1, 2, 3, 4, 5].map(i => (
-          <Star key={i} className="w-4 h-4" fill={i <= stars ? '#FDCB6E' : 'none'} stroke={i <= stars ? '#F39C12' : '#DFE6E9'} strokeWidth={2} />
+          <Star key={i} className="w-4 h-4" fill={i <= stars ? '#FDCB6E' : 'none'} stroke={i <= stars ? '#F59E0B' : '#DFE6E9'} strokeWidth={2} />
         ))}
       </div>
       {label && <span className="text-xs font-medium text-slate-500">{label}</span>}

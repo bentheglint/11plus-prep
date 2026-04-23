@@ -30,10 +30,10 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
   const { totalQuestions, totalCorrect, timeTaken, timeLimit, sectionResults, subject } = results;
 
   const ResultIcon = percentage >= 80 ? Trophy : percentage >= 60 ? ThumbsUp : Zap;
-  const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F39C12]' : percentage >= 60 ? 'from-[#7C3AED] to-[#5A4BD1]' : 'from-[#0770C2] to-[#0652DD]';
+  const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F59E0B]' : percentage >= 60 ? 'from-[#7C3AED] to-[#5A4BD1]' : 'from-[#3B82F6] to-[#2563EB]';
   const circumference = 2 * Math.PI * 45;
   const strokeOffset = circumference - (percentage / 100) * circumference;
-  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#7C3AED' : '#0770C2';
+  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#7C3AED' : '#3B82F6';
 
   const minsUsed = Math.floor(timeTaken / 60);
   const secsUsed = timeTaken % 60;
@@ -105,7 +105,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
             <p className="text-slate-500">Questions Correct</p>
             <p className="text-sm text-slate-500 mt-2">
               Time: {minsUsed}m {secsUsed}s of {minsAllowed} minutes
-              {finishedEarly && <span className="text-[#007D62] font-medium"> — finished early!</span>}
+              {finishedEarly && <span className="text-[#22C55E] font-medium"> — finished early!</span>}
             </p>
           </motion.div>
 
@@ -113,15 +113,15 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
           {(strengths.length > 0 || weaknesses.length > 0) && (
             <div className="grid md:grid-cols-2 gap-4 mb-6 text-left">
               {strengths.length > 0 && (
-                <div className="bg-[#007D62]/10 border-2 border-[#007D62]/30 rounded-xl p-4">
-                  <h3 className="font-heading font-bold text-[#007D62] mb-2 flex items-center gap-2">
+                <div className="bg-[#22C55E]/10 border-2 border-[#22C55E]/30 rounded-xl p-4">
+                  <h3 className="font-heading font-bold text-[#22C55E] mb-2 flex items-center gap-2">
                     <CheckCircle className="w-5 h-5" />
                     Strengths
                   </h3>
                   {strengths.map(s => (
                     <div key={s.name} className="flex justify-between text-sm py-1">
                       <span className="text-slate-800">{s.name}</span>
-                      <span className="font-bold text-[#007D62]">{s.pct}%</span>
+                      <span className="font-bold text-[#22C55E]">{s.pct}%</span>
                     </div>
                   ))}
                 </div>
@@ -150,7 +150,7 @@ function MockTestResultsScreen({ results, onHome, onTryAgain }) {
           <div className="space-y-3">
             {sectionEntries.map(section => {
               const isExpanded = expandedSection === section.name;
-              const barColor = section.pct >= 70 ? '#007D62' : section.pct >= 50 ? '#FDCB6E' : '#FF6B6B';
+              const barColor = section.pct >= 70 ? '#22C55E' : section.pct >= 50 ? '#FDCB6E' : '#FF6B6B';
 
               return (
                 <div key={section.name} className="border border-gray-100 rounded-xl overflow-hidden">

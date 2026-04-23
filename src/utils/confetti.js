@@ -13,7 +13,7 @@ export function celebrateCorrect() {
     particleCount: 40,
     spread: 55,
     origin: { y: 0.7 },
-    colors: ['#7C3AED', '#007D62', '#FDCB6E'],
+    colors: ['#7C3AED', '#22C55E', '#FDCB6E'],
     disableForReducedMotion: true,
   });
 }
@@ -35,7 +35,7 @@ export function celebrateHighScore() {
       angle: 120,
       spread: 55,
       origin: { x: 1 },
-      colors: ['#007D62', '#0770C2', '#FDCB6E'],
+      colors: ['#22C55E', '#3B82F6', '#FDCB6E'],
     });
     if (Date.now() < end) requestAnimationFrame(frame);
   })();

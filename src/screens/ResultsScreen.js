@@ -17,7 +17,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
   const circumference = 2 * Math.PI * 45;
   const strokeOffset = circumference - (percentage / 100) * circumference;
   const ResultIcon = percentage >= 80 ? Trophy : percentage >= 60 ? ThumbsUp : Zap;
-  const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F39C12]' : percentage >= 60 ? 'from-[#7C3AED] to-[#5A4BD1]' : 'from-[#0770C2] to-[#0652DD]';
+  const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F59E0B]' : percentage >= 60 ? 'from-[#7C3AED] to-[#5A4BD1]' : 'from-[#3B82F6] to-[#2563EB]';
 
   // Select a contextual tip based on performance band
   const insightTip = useMemo(() => {
@@ -52,7 +52,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
     }
   }, [insightTip, onMarkTipSeen]);
 
-  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#7C3AED' : '#0770C2';
+  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#7C3AED' : '#3B82F6';
 
   return (
     <div className="app-bg p-4">

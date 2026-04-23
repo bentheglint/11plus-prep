@@ -3,8 +3,8 @@ import { Calculator, BookOpen, Brain, Star, TrendingUp, TrendingDown, RotateCcw 
 import { topicNames } from '../RecommendationCard';
 
 const subjects = [
-  { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0770C2', rgb: '9,132,227' },
-  { key: 'english', name: 'English', icon: BookOpen, colour: '#007D62', rgb: '0,184,148' },
+  { key: 'maths', name: 'Maths', icon: Calculator, colour: '#3B82F6', rgb: '9,132,227' },
+  { key: 'english', name: 'English', icon: BookOpen, colour: '#22C55E', rgb: '0,184,148' },
   { key: 'verbalreasoning', name: 'VR', icon: Brain, colour: '#7C3AED', rgb: '108,92,231' },
 ];
 
@@ -78,7 +78,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
           const needsReview = topic.daysSince > 14 && topic.stars > 0;
           const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
                            topic.trend?.direction === 'down' ? TrendingDown : null;
-          const trendCol = topic.trend?.direction === 'up' ? '#007D62' :
+          const trendCol = topic.trend?.direction === 'up' ? '#22C55E' :
                           topic.trend?.direction === 'down' ? '#FF6B6B' : null;
 
           return (
@@ -95,7 +95,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
                 {[1,2,3,4,5].map(i => (
                   <Star key={i} className="w-2.5 h-2.5"
                     fill={i <= topic.stars ? (topic.score >= 70 ? '#fff' : '#FDCB6E') : 'none'}
-                    stroke={i <= topic.stars ? (topic.score >= 70 ? '#fff' : '#F39C12') : (topic.score >= 70 ? 'rgba(255,255,255,0.4)' : '#DFE6E9')}
+                    stroke={i <= topic.stars ? (topic.score >= 70 ? '#fff' : '#F59E0B') : (topic.score >= 70 ? 'rgba(255,255,255,0.4)' : '#DFE6E9')}
                     strokeWidth={2}
                   />
                 ))}

@@ -3,7 +3,7 @@ import { ArrowLeft, CheckCircle, XCircle, Circle } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
+const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 
 /**
  * QuizDetailScreen — per-question review of a completed quiz.
@@ -83,7 +83,7 @@ function QuizDetailScreen({ quiz, questionResults, questionData, englishData, vr
             <div className="text-right">
               <p
                 className="text-2xl font-heading font-bold"
-                style={{ color: quiz.percentage >= 80 ? '#007D62' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B' }}
+                style={{ color: quiz.percentage >= 80 ? '#22C55E' : quiz.percentage >= 60 ? '#FDCB6E' : '#FF6B6B' }}
               >
                 {quiz.percentage}%
               </p>
@@ -136,13 +136,13 @@ function BackHeader({ onBack }) {
 
 function QuestionReview({ index, question, result }) {
   const isCorrect = !!result.correct;
-  const borderColour = isCorrect ? 'border-l-[#007D62]' : 'border-l-[#FF6B6B]';
+  const borderColour = isCorrect ? 'border-l-[#22C55E]' : 'border-l-[#FF6B6B]';
 
   return (
     <div className={`card-elevated p-5 border-l-4 ${borderColour}`}>
       <div className="flex items-center gap-2 mb-3">
         {isCorrect
-          ? <CheckCircle className="w-5 h-5 text-[#007D62]" />
+          ? <CheckCircle className="w-5 h-5 text-[#22C55E]" />
           : <XCircle className="w-5 h-5 text-[#FF6B6B]" />}
         <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
           Question {index} · {isCorrect ? 'Correct' : 'Incorrect'}
@@ -269,15 +269,15 @@ function OptionRow({ label, text, isCorrect, isSelected }) {
   let iconColour = 'text-gray-300';
 
   if (isCorrect && isSelected) {
-    bg = 'bg-green-50 border-[#007D62]';
+    bg = 'bg-green-50 border-[#22C55E]';
     textColour = 'text-slate-800';
     Icon = CheckCircle;
-    iconColour = 'text-[#007D62]';
+    iconColour = 'text-[#22C55E]';
   } else if (isCorrect) {
-    bg = 'bg-green-50/60 border-[#007D62]/50';
+    bg = 'bg-green-50/60 border-[#22C55E]/50';
     textColour = 'text-slate-800';
     Icon = CheckCircle;
-    iconColour = 'text-[#007D62]';
+    iconColour = 'text-[#22C55E]';
   } else if (isSelected) {
     bg = 'bg-red-50 border-[#FF6B6B]';
     textColour = 'text-slate-800';

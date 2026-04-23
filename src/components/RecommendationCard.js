@@ -3,7 +3,7 @@ import { Zap, Calculator, BookOpen, Brain, ChevronRight } from 'lucide-react';
 import { motion } from './Motion';
 
 const subjectIcons = { maths: Calculator, english: BookOpen, verbalreasoning: Brain };
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
+const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
 
 // Topic key to display name mapping

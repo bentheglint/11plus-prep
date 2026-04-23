@@ -4,7 +4,7 @@
 const englishTips = [
 
   // ============================================================
-  // READING SMART (15 tips, colour: '#007D62')
+  // READING SMART (15 tips, colour: '#22C55E')
   // ============================================================
 
   {
@@ -16,7 +16,7 @@ const englishTips = [
     keyInsight: "Skim the passage quickly before you read the questions.",
     explanation: "Your first read should be fast — just get the gist of what's happening. Then read the questions so you know what to look for. Then go back and read carefully. It's like watching a film trailer before the full movie!",
     tryThis: "Next time you get a comprehension, spend 60 seconds skimming before you even look at the questions.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -29,7 +29,7 @@ const englishTips = [
     keyInsight: "For retrieval questions, find the keywords in the question and hunt for them in the passage.",
     explanation: "Retrieval questions ask you to find facts straight from the text. Pick out the important words in the question, then scan the passage for those exact words or similar ones. The answer is usually right there in the same sentence or the next one.",
     tryThis: "Underline the key words in the question, then scan the passage for those words. Circle them when you find them!",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -42,7 +42,7 @@ const englishTips = [
     keyInsight: "Inference means figuring out what the author hints at but doesn't say directly.",
     explanation: "Sometimes the answer isn't written in plain words — you have to be a detective! If a character 'slammed the door and stomped upstairs', the text doesn't say they're angry, but you can work it out from the clues.",
     tryThis: "When you see an inference question, ask yourself: 'What clues has the author given me?' Look for describing words and actions.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -55,7 +55,7 @@ const englishTips = [
     keyInsight: "When a question asks what the author 'suggests' or 'implies', look for clues rather than facts.",
     explanation: "'Suggests' means the author is hinting, not telling you outright. Look at the words they chose — are they painting a happy picture or a sad one? The mood and tone of the writing are your biggest clues.",
     tryThis: "Look at the adjectives and verbs near the part the question asks about. Are they positive, negative, or neutral? That's your hint!",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -68,7 +68,7 @@ const englishTips = [
     keyInsight: "Eliminate answers you know are wrong to give yourself a better chance.",
     explanation: "If you're stuck between options, start by crossing out the ones that are obviously wrong. If you can get rid of even two options, you've gone from a 1-in-5 chance to a 1-in-3 chance. That's a massive boost!",
     tryThis: "For every comprehension question, try to cross out at least two wrong answers before you pick your final one.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -81,7 +81,7 @@ const englishTips = [
     keyInsight: "Only use what's in the passage — never add your own knowledge or opinions.",
     explanation: "Even if you know loads about a topic, the answer must come from the text. If the passage is about dogs, don't pick an answer because you know it's true from your own life — it has to be supported by what the author wrote.",
     tryThis: "Before you pick an answer, point to the exact line in the passage that proves it. If you can't point to it, it might not be right!",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -94,7 +94,7 @@ const englishTips = [
     keyInsight: "For 'which statement is true' questions, you must check all five options against the passage.",
     explanation: "Don't just pick the first answer that sounds right! Sometimes option A looks good, but option D is actually better. These questions are sneaky — they put a tempting-but-wrong answer early to catch you out.",
     tryThis: "Read ALL five options before you choose. Put a tiny tick or cross next to each one as you check it against the passage.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -107,7 +107,7 @@ const englishTips = [
     keyInsight: "'Not mentioned in the passage' and 'not true' are completely different things.",
     explanation: "If the passage doesn't talk about something, that doesn't make it false — it just means the author didn't mention it. 'Not true' means the passage actually says the opposite. Watch out for this trick!",
     tryThis: "When you see 'not mentioned', check: does the passage actually talk about this at all? If it's silent on the topic, that's 'not mentioned'.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -120,7 +120,7 @@ const englishTips = [
     keyInsight: "If you find a word you don't know, look at the words around it for clues.",
     explanation: "The passage usually gives you enough context to figure out tricky words. If it says 'the famished boy ate three plates of food', you can guess 'famished' means really hungry. The sentence around the word is your best friend!",
     tryThis: "When you hit an unknown word, read the whole sentence and ask: 'What would make sense here?' Try swapping in a simpler word.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension', 'vocabulary'],
   },
 
@@ -133,7 +133,7 @@ const englishTips = [
     keyInsight: "Don't spend too long on one question — move on and come back if you have time.",
     explanation: "In the real exam, getting stuck on one hard question could mean you miss three easy ones at the end. If you've been thinking about a question for more than a minute, make your best guess, mark it, and move on.",
     tryThis: "Practice with a timer! Give yourself about 1 minute per question and see how it feels.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -146,7 +146,7 @@ const englishTips = [
     keyInsight: "When a question mentions a line number, read a few lines before AND after it.",
     explanation: "If the question says 'In line 12...', don't just read line 12. Read from line 10 to line 14 at least. The answer is often in the sentences around the line they mention, not just the exact line itself.",
     tryThis: "Always read 2-3 lines either side of any line reference. You'll find the answer much more easily!",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -159,7 +159,7 @@ const englishTips = [
     keyInsight: "Authors choose their words carefully to create a mood — happy, spooky, exciting, sad.",
     explanation: "If the passage uses words like 'dark', 'creaking', 'shadows', and 'silent', the mood is spooky or tense. If it uses 'bright', 'laughing', and 'warm', it's cheerful. The describing words tell you everything about the mood.",
     tryThis: "After reading a passage, write down three words that describe its mood. This helps you answer tone and atmosphere questions!",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension', 'vocabulary'],
   },
 
@@ -172,7 +172,7 @@ const englishTips = [
     keyInsight: "Each paragraph in a passage does something specific — introduces, describes, explains, or concludes.",
     explanation: "If a question asks about the purpose of a paragraph, think about what it does for the story or text. Does it set the scene? Introduce a character? Give an argument? Build tension? That's its job.",
     tryThis: "After reading each paragraph, sum it up in 3-4 words in your head. 'Introduces the castle.' 'Shows the boy is scared.'",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -185,7 +185,7 @@ const englishTips = [
     keyInsight: "The best title covers the WHOLE passage, not just one part of it.",
     explanation: "When asked to choose a title, some options will only match one paragraph or one event. The right answer is the one that covers the main idea of the entire passage. Think big picture, not small details!",
     tryThis: "Before looking at the options, try making up your own title. Then see which option is closest to yours.",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
@@ -198,7 +198,7 @@ const englishTips = [
     keyInsight: "If a question seems hard, go back and re-read that section of the passage slowly.",
     explanation: "It's totally fine to re-read parts of the passage — that's what good readers do! Rushing through once and trying to remember everything is much harder than going back and reading the key bit carefully a second time.",
     tryThis: "When you're unsure, put your finger on the part of the passage the question is about and read it again slowly. The answer usually jumps out!",
-    colour: '#007D62',
+    colour: '#22C55E',
     topicKeys: ['comprehension'],
   },
 
