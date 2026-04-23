@@ -511,6 +511,62 @@ describe('Oracle Sweep — Structural Invariants', () => {
     const wrong = progQs.filter(q => !q.explanation.includes(PROG_TIP_FRAG));
     expect(wrong.map(q => q.id)).toEqual([]);
   });
+
+  // 2026-04-24 — Constant-shift tip expansion.
+  // 94 constant-shift Qs previously shared one generic tip
+  // ("Always check every letter — don't assume..."). Replaced with Oracle's
+  // six sub-type-specific tips (+1, -1, +2, -2, +3, -3). Classification is
+  // SKILL-based (the shift the child must APPLY, not the code direction):
+  // "To decode, move forward 3" → skill = +3, regardless of code direction.
+  describe('Letter Codes — constant-shift tips are sub-type-specific', () => {
+    const qs = vrData.topics.letterCodes.questions;
+    const GENERIC_TIP_FRAG = "Always check every letter — don't assume";
+
+    // Skill-based classifier: identifies the shift the child must apply.
+    function classifySkill(exp) {
+      if (!exp) return null;
+      if (/\+1,\s*\+2,\s*\+3|\+2,\s*\+3,\s*\+4|progressive|increasing|pattern above the letters/i.test(exp)) return null;
+      if (/mirror|A=Z|reverse.*alphabet|reflected/i.test(exp)) return null;
+      // "To decode, move forward N" → child applies +N
+      let m = exp.match(/to decode[^.]*?forward (\d+)/i);
+      if (m && ['1','2','3'].includes(m[1])) return `+${m[1]}`;
+      m = exp.match(/to decode[^.]*?back (\d+)/i);
+      if (m && ['1','2','3'].includes(m[1])) return `-${m[1]}`;
+      // Direct "Each letter moves forward N" / "moves back N"
+      m = exp.match(/(?:move(?:s)? (?:each letter )?forward|moves forward|moved forward) (\d+)/i);
+      if (m && ['1','2','3'].includes(m[1])) return `+${m[1]}`;
+      m = exp.match(/(?:move(?:s)? (?:each letter )?back|moves back|moved back) (\d+)/i);
+      if (m && ['1','2','3'].includes(m[1])) return `-${m[1]}`;
+      return null;
+    }
+
+    // Exact canonical tips written by the Oracle. Full-string match only.
+    const CANONICAL_TIPS = {
+      '+1': "For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A.",
+      '-1': "For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z.",
+      '+2': "For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully.",
+      '-2': "For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end.",
+      '+3': "For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on.",
+      '-3': "For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X.",
+    };
+
+    it('no constant-shift question carries the retired generic tip', () => {
+      const offenders = qs.filter(q =>
+        classifySkill(q.explanation) !== null
+        && (q.explanation || '').includes(GENERIC_TIP_FRAG),
+      );
+      expect(offenders.map(q => q.id)).toEqual([]);
+    });
+
+    for (const skill of Object.keys(CANONICAL_TIPS)) {
+      it(`every ${skill} Q carries the canonical ${skill} tip`, () => {
+        const shiftQs = qs.filter(q => classifySkill(q.explanation) === skill);
+        expect(shiftQs.length).toBeGreaterThan(0);
+        const wrong = shiftQs.filter(q => !q.explanation.includes(CANONICAL_TIPS[skill]));
+        expect(wrong.map(q => q.id)).toEqual([]);
+      });
+    }
+  });
 });
 
 // ══════════════════════════════════════════════════════════════

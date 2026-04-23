@@ -1,0 +1,566 @@
+{
+  "1": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If the code for HELP is GDKO, what rule has been used?",
+    "explanation": "H→G (back 1), E→D (back 1), L→K (back 1), P→O (back 1). Each letter has been moved one place back in the alphabet. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "2": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If COLD is coded as DPME, what is WARM coded as?",
+    "explanation": "Each letter moves forward 1: C→D, O→P, L→M, D→E. Applying the same rule to WARM: W→X, A→B, R→S, M→N = XBSN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "4": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If BOAT is coded as ERDW, what word is coded as VKLS?",
+    "explanation": "Each letter in the code has been moved forward 3. To decode, move back 3: V→S, K→H, L→I, S→P = SHIP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "5": {
+    "shift": "+3",
+    "difficulty": 2,
+    "question": "If RAIN is coded as UDLQ, what is SNOW coded as?",
+    "explanation": "Each letter moves forward 3: S→V, N→Q, O→R, W→Z = VQRZ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "6": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If TREE is coded as WUHH, what word is coded as FROG?",
+    "explanation": "To decode, move each letter back 3: F→C, R→O, O→L, G→D = COLD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "9": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If DOG is coded as CNF, what is the code for SUN?",
+    "explanation": "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "10": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If LOG is coded as MPH, what word is coded as EPH?",
+    "explanation": "To decode, move each letter back 1: E→D, P→O, H→G. The word is DOG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "11": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If SUN is coded as RTM, what is the code for PEN?",
+    "explanation": "Move each letter back 1: P→O, E→D, N→M. PEN becomes ODM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "12": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If PEN is coded as RGP, what is the code for HAT?",
+    "explanation": "Move each letter forward 2: H→J, A→C, T→V. HAT becomes JCV. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "13": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If FIG is coded as DGE, what word is coded as AMP?",
+    "explanation": "To decode, move each letter forward 2: A→C, M→O, P→R. The word is COR. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "14": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If JUMP is coded as KVNQ, what is LAND coded as?",
+    "explanation": "Each letter moves forward 1: L→M, A→B, N→O, D→E. LAND becomes MBOE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "15": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If BARN is coded as DCTP, what is the code for BORN?",
+    "explanation": "Move each letter forward 2: B→D, O→Q, R→T, N→P. BORN becomes DQTP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "16": {
+    "shift": "+3",
+    "difficulty": 2,
+    "question": "If DUSK is coded as GXVN, what is the code for DESK?",
+    "explanation": "Move each letter forward 3: D→G, E→H, S→V, K→N. DESK becomes GHVN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "17": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If FISH is coded as ILVK, what word is coded as ORYH?",
+    "explanation": "To decode, move each letter back 3: O→L, R→O, Y→V, H→E. The word is LOVE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "18": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If MILK is coded as PLON, what word is coded as IROG?",
+    "explanation": "To decode, move each letter back 3: I→F, R→O, O→L, G→D. The word is FOLD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "19": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If GIFT is coded as JLIW, what is the code for WISH?",
+    "explanation": "Move each letter forward 3: W→Z, I→L, S→V, H→K. WISH becomes ZLVK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "20": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If LAMP is coded as JYKN, what is the code for FIRE?",
+    "explanation": "Move each letter back 2: F→D, I→G, R→P, E→C. FIRE becomes DGPC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "21": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If LOG is coded as MPH, what is the code for CAT?",
+    "explanation": "Move each letter forward 1: C→D, A→B, T→U. CAT becomes DBU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "22": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If FIG is coded as GJH, what is the code for DOG?",
+    "explanation": "Move each letter forward 1: D→E, O→P, G→H. DOG becomes EPH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "23": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If CAT is coded as BZS, what is the code for SUN?",
+    "explanation": "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "24": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If DOG is coded as EPH, what is the code for PEN?",
+    "explanation": "Move each letter forward 1: P→Q, E→F, N→O. PEN becomes QFO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "25": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If SUN is coded as RTM, what is the code for CUP?",
+    "explanation": "Move each letter back 1: C→B, U→T, P→O. CUP becomes BTO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "26": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If PEN is coded as QFO, what is the code for HAT?",
+    "explanation": "Move each letter forward 1: H→I, A→B, T→U. HAT becomes IBU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "27": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If HAT is coded as IBU, what is the code for BED?",
+    "explanation": "Move each letter forward 1: B→C, E→F, D→E. BED becomes CFE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "28": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If BUS is coded as ATR, what is the code for RUN?",
+    "explanation": "Move each letter back 1: R→Q, U→T, N→M. RUN becomes QTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "29": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If OWL is coded as PXM, what word is coded as SVO?",
+    "explanation": "To decode, move each letter back 1: S→R, V→U, O→N. The word is RUN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "30": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If JAR is coded as KBS, what word is coded as HFU?",
+    "explanation": "To decode, move each letter back 1: H→G, F→E, U→T. The word is GET. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "31": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If BOW is coded as ANV, what word is coded as GHS?",
+    "explanation": "To decode, move each letter forward 1: G→H, H→I, S→T. The word is HIT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "32": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If HAT is coded as IBU, what word is coded as CBU?",
+    "explanation": "To decode, move each letter back 1: C→B, B→A, U→T. The word is BAT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "33": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If BUS is coded as ATR, what word is coded as OHM?",
+    "explanation": "To decode, move each letter forward 1: O→P, H→I, M→N. The word is PIN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "34": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If JAM is coded as KBN, what word is coded as GPY?",
+    "explanation": "To decode, move each letter back 1: G→F, P→O, Y→X. The word is FOX. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "35": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If CUP is coded as BTO, what word is coded as QDC?",
+    "explanation": "To decode, move each letter forward 1: Q→R, D→E, C→D. The word is RED. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "36": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If MIST is coded as NJTU, what word is coded as CVTL?",
+    "explanation": "To decode, move each letter back 1: C→B, V→U, T→S, L→K. The word is BUSK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "37": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If the code for PIG is QJH, what rule has been used?",
+    "explanation": "P→Q (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "38": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If the code for BIG is AHF, what rule has been used?",
+    "explanation": "B→A (back 1), I→H (back 1), G→F (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "39": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If the code for HEN is IFO, what rule has been used?",
+    "explanation": "H→I (forward 1), E→F (forward 1), N→O (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "40": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If the code for TOP is SNO, what rule has been used?",
+    "explanation": "T→S (back 1), O→N (back 1), P→O (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "41": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If the code for DIP is EJQ, what rule has been used?",
+    "explanation": "D→E (forward 1), I→J (forward 1), P→Q (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "42": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If the code for TIN is SHM, what rule has been used?",
+    "explanation": "T→S (back 1), I→H (back 1), N→M (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "43": {
+    "shift": "+1",
+    "difficulty": 1,
+    "question": "If the code for FIG is GJH, what rule has been used?",
+    "explanation": "F→G (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "44": {
+    "shift": "-1",
+    "difficulty": 1,
+    "question": "If the code for COT is BNS, what rule has been used?",
+    "explanation": "C→B (back 1), O→N (back 1), T→S (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "45": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If GIFT is coded as IKHV, what is the code for BIRD?",
+    "explanation": "Move each letter forward 2: B→D, I→K, R→T, D→F. BIRD becomes DKTF. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "46": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If LAMP is coded as NCOR, what is the code for PAWN?",
+    "explanation": "Move each letter forward 2: P→R, A→C, W→Y, N→P. PAWN becomes RCYP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "47": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If MIST is coded as OKUV, what is the code for TREE?",
+    "explanation": "Move each letter forward 2: T→V, R→T, E→G, E→G. TREE becomes VTGG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "48": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If ROCK is coded as TQEM, what is the code for MOON?",
+    "explanation": "Move each letter forward 2: M→O, O→Q, O→Q, N→P. MOON becomes OQQP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "49": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If FISH is coded as HKUJ, what is the code for HILL?",
+    "explanation": "Move each letter forward 2: H→J, I→K, L→N, L→N. HILL becomes JKNN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "50": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If HELP is coded as JGNR, what is the code for GATE?",
+    "explanation": "Move each letter forward 2: G→I, A→C, T→V, E→G. GATE becomes ICVG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "51": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If COLD is coded as AMJB, what is the code for FORK?",
+    "explanation": "Move each letter back 2: F→D, O→M, R→P, K→I. FORK becomes DMPI. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "52": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If STAR is coded as UVCT, what is the code for ROPE?",
+    "explanation": "Move each letter forward 2: R→T, O→Q, P→R, E→G. ROPE becomes TQRG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "53": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If BARN is coded as ZYPL, what is the code for NEST?",
+    "explanation": "Move each letter back 2: N→L, E→C, S→Q, T→R. NEST becomes LCQR. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "54": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If DUSK is coded as FWUM, what is the code for FROG?",
+    "explanation": "Move each letter forward 2: F→H, R→T, O→Q, G→I. FROG becomes HTQI. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "55": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If GIFT is coded as EGDR, what is the code for POEM?",
+    "explanation": "Move each letter back 2: P→N, O→M, E→C, M→K. POEM becomes NMCK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "56": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If LAMP is coded as NCOR, what is the code for LION?",
+    "explanation": "Move each letter forward 2: L→N, I→K, O→Q, N→P. LION becomes NKQP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "57": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If ROCK is coded as TQEM, what word is coded as ECUG?",
+    "explanation": "To decode, move each letter back 2: E→C, C→A, U→S, G→E. The word is CASE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "58": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If FISH is coded as HKUJ, what word is coded as NCEM?",
+    "explanation": "To decode, move each letter back 2: N→L, C→A, E→C, M→K. The word is LACK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "59": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If POND is coded as NMLB, what word is coded as JCDR?",
+    "explanation": "To decode, move each letter forward 2: J→L, C→E, D→F, R→T. The word is LEFT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "60": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If COLD is coded as EQNF, what word is coded as TKPI?",
+    "explanation": "To decode, move each letter back 2: T→R, K→I, P→N, I→G. The word is RING. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "61": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If STAR is coded as QRYP, what word is coded as DGQF?",
+    "explanation": "To decode, move each letter forward 2: D→F, G→I, Q→S, F→H. The word is FISH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "62": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If BARN is coded as DCTP, what word is coded as JQQF?",
+    "explanation": "To decode, move each letter back 2: J→H, Q→O, Q→O, F→D. The word is HOOD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "63": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If DUSK is coded as FWUM, what word is coded as YKPF?",
+    "explanation": "To decode, move each letter back 2: Y→W, K→I, P→N, F→D. The word is WIND. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "64": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If GIFT is coded as EGDR, what word is coded as FCPM?",
+    "explanation": "To decode, move each letter forward 2: F→H, C→E, P→R, M→O. The word is HERO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "65": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If LAMP is coded as NCOR, what word is coded as EQQM?",
+    "explanation": "To decode, move each letter back 2: E→C, Q→O, Q→O, M→K. The word is COOK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "66": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If MIST is coded as KGQR, what word is coded as NMPI?",
+    "explanation": "To decode, move each letter forward 2: N→P, M→O, P→R, I→K. The word is PORK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "67": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If ROCK is coded as TQEM, what word is coded as NQQR?",
+    "explanation": "To decode, move each letter back 2: N→L, Q→O, Q→O, R→P. The word is LOOP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "68": {
+    "shift": "-2",
+    "difficulty": 2,
+    "question": "If FISH is coded as HKUJ, what word is coded as DWEM?",
+    "explanation": "To decode, move each letter back 2: D→B, W→U, E→C, M→K. The word is BUCK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "69": {
+    "shift": "+2",
+    "difficulty": 2,
+    "question": "If the code for HELP is JGNR, what rule has been used?",
+    "explanation": "H→J (forward 2), E→G (forward 2), L→N (forward 2), P→R (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "70": {
+    "shift": "-2",
+    "difficulty": 1,
+    "question": "If the code for GUST is ESQR, what rule has been used?",
+    "explanation": "G→E (back 2), U→S (back 2), S→Q (back 2), T→R (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "71": {
+    "shift": "+2",
+    "difficulty": 1,
+    "question": "If the code for GOLD is IQNF, what rule has been used?",
+    "explanation": "G→I (forward 2), O→Q (forward 2), L→N (forward 2), D→F (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "72": {
+    "shift": "-2",
+    "difficulty": 1,
+    "question": "If the code for MINT is KGLR, what rule has been used?",
+    "explanation": "M→K (back 2), I→G (back 2), N→L (back 2), T→R (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "73": {
+    "shift": "+2",
+    "difficulty": 1,
+    "question": "If the code for DESK is FGUM, what rule has been used?",
+    "explanation": "D→F (forward 2), E→G (forward 2), S→U (forward 2), K→M (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "74": {
+    "shift": "-2",
+    "difficulty": 1,
+    "question": "If the code for PLUM is NJSK, what rule has been used?",
+    "explanation": "P→N (back 2), L→J (back 2), U→S (back 2), M→K (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "75": {
+    "shift": "+2",
+    "difficulty": 1,
+    "question": "If the code for PINE is RKPG, what rule has been used?",
+    "explanation": "P→R (forward 2), I→K (forward 2), N→P (forward 2), E→G (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "76": {
+    "shift": "-2",
+    "difficulty": 1,
+    "question": "If the code for WOLF is UMJD, what rule has been used?",
+    "explanation": "W→U (back 2), O→M (back 2), L→J (back 2), F→D (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "77": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If CHARM is coded as FKDUP, what is the code for FLAME?",
+    "explanation": "Move each letter forward 3: F→I, L→O, A→D, M→P, E→H. FLAME becomes IODPH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "78": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If GLOBE is coded as DILYB, what is the code for STORM?",
+    "explanation": "Move each letter back 3: S→P, T→Q, O→L, R→O, M→J. STORM becomes PQLOJ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "79": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If PLANT is coded as SODQW, what is the code for CROWN?",
+    "explanation": "Move each letter forward 3: C→F, R→U, O→R, W→Z, N→Q. CROWN becomes FURZQ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "80": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If BRICK is coded as YOFZH, what is the code for SWIFT?",
+    "explanation": "Move each letter back 3: S→P, W→T, I→F, F→C, T→Q. SWIFT becomes PTFCQ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "81": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If SHELF is coded as VKHOI, what is the code for TIGER?",
+    "explanation": "Move each letter forward 3: T→W, I→L, G→J, E→H, R→U. TIGER becomes WLJHU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "82": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If FROST is coded as IURVW, what is the code for GRAPE?",
+    "explanation": "Move each letter forward 3: G→J, R→U, A→D, P→S, E→H. GRAPE becomes JUDSH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "83": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If CLOUD is coded as ZILRA, what is the code for SHELF?",
+    "explanation": "Move each letter back 3: S→P, H→E, E→B, L→I, F→C. SHELF becomes PEBIC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "84": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If DRINK is coded as GULQN, what is the code for LUCKY?",
+    "explanation": "Move each letter forward 3: L→O, U→X, C→F, K→N, Y→B (wraps past Z). LUCKY becomes OXFNB. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "85": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If TRUNK is coded as WUXQN, what is the code for FIXED?",
+    "explanation": "Move each letter forward 3: F→I, I→L, X→A (wraps past Z), E→H, D→G. FIXED becomes ILAHG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "86": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If SLOPE is coded as VORSH, what is the code for BUYER?",
+    "explanation": "Move each letter forward 3: B→E, U→X, Y→B (wraps past Z), E→H, R→U. BUYER becomes EXBHU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "87": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If BRICK is coded as EULFN, what word is coded as WRUFK?",
+    "explanation": "To decode, move each letter back 3: W→T, R→O, U→R, F→C, K→H. The word is TORCH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "89": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If FROST is coded as IURVW, what word is coded as VWRQH?",
+    "explanation": "To decode, move each letter back 3: V→S, W→T, R→O, Q→N, H→E. The word is STONE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "90": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
+    "explanation": "To decode, move each letter forward 3: D→G, O→R, F→I, P→S, Q→T. The word is GRIST. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "91": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If DRINK is coded as GULQN, what word is coded as EULQJ?",
+    "explanation": "To decode, move each letter back 3: E→B, U→R, L→I, Q→N, J→G. The word is BRING. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "92": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If TRUNK is coded as QORKH, what word is coded as JXDFZ?",
+    "explanation": "To decode, move each letter forward 3: J→M, X→A (wraps past Z), D→G, F→I, Z→C (wraps past Z). The word is MAGIC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "93": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
+    "explanation": "To decode, move each letter back 3: F→C, U→R, H→E, D→A, P→M. The word is CREAM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "94": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If CHARM is coded as FKDUP, what word is coded as SODFH?",
+    "explanation": "To decode, move each letter back 3: S→P, O→L, D→A, F→C, H→E. The word is PLACE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "95": {
+    "shift": "+3",
+    "difficulty": 3,
+    "question": "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
+    "explanation": "To decode, move each letter forward 3: P→S, E→H, X→A (wraps past Z), O→R, B→E. The word is SHARE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "96": {
+    "shift": "-3",
+    "difficulty": 3,
+    "question": "If PLANT is coded as SODQW, what word is coded as PLAHU?",
+    "explanation": "To decode, move each letter back 3: P→M, L→I, A→X (wraps backward: A→Z→Y→X), H→E, U→R. The word is MIXER. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "97": {
+    "shift": "+3",
+    "difficulty": 2,
+    "question": "If the code for DRUM is GUXP, what rule has been used?",
+    "explanation": "D→G (forward 3), R→U (forward 3), U→X (forward 3), M→P (forward 3). Each letter has been moved three places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  },
+  "98": {
+    "shift": "-3",
+    "difficulty": 2,
+    "question": "If the code for PRIDE is MOFAB, what rule has been used?",
+    "explanation": "P→M (back 3), R→O (back 3), I→F (back 3), D→A (back 3), E→B (back 3). Each letter has been moved three places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+  }
+}

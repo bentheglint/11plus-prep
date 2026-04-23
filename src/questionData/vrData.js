@@ -9281,7 +9281,7 @@ const vrData = {
             "Each letter moves back 1"
           ],
           correct: 4,
-          explanation: "H→G (back 1), E→D (back 1), L→K (back 1), P→O (back 1). Each letter has been moved one place back in the alphabet. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "H→G (back 1), E→D (back 1), L→K (back 1), P→O (back 1). Each letter has been moved one place back in the alphabet. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 2,
@@ -9291,7 +9291,7 @@ const vrData = {
           question: "If COLD is coded as DPME, what is WARM coded as?",
           options: ["XBSN","XCSN","XBTN","XBSO","YCSN"],
           correct: 0,
-          explanation: "Each letter moves forward 1: C→D, O→P, L→M, D→E. Applying the same rule to WARM: W→X, A→B, R→S, M→N = XBSN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Each letter moves forward 1: C→D, O→P, L→M, D→E. Applying the same rule to WARM: W→X, A→B, R→S, M→N = XBSN. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 3,
@@ -9317,7 +9317,7 @@ const vrData = {
           question: "If BOAT is coded as ERDW, what word is coded as VKLS?",
           options: ["SHIM","SHOP","SHIP","SHIN","SKIP"],
           correct: 2,
-          explanation: "Each letter in the code has been moved forward 3. To decode, move back 3: V→S, K→H, L→I, S→P = SHIP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Each letter in the code has been moved forward 3. To decode, move back 3: V→S, K→H, L→I, S→P = SHIP. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 5,
@@ -9327,7 +9327,7 @@ const vrData = {
           question: "If RAIN is coded as UDLQ, what is SNOW coded as?",
           options: ["VQSZ","UQRZ","VRQZ","VQRZ","VQRW"],
           correct: 3,
-          explanation: "Each letter moves forward 3: S→V, N→Q, O→R, W→Z = VQRZ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Each letter moves forward 3: S→V, N→Q, O→R, W→Z = VQRZ. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 6,
@@ -9337,7 +9337,7 @@ const vrData = {
           question: "If TREE is coded as WUHH, what word is coded as FROG?",
           options: ["COOL","COLD","COAL","CORD","COIL"],
           correct: 1,
-          explanation: "To decode, move each letter back 3: F→C, R→O, O→L, G→D = COLD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: F→C, R→O, O→L, G→D = COLD. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 7,
@@ -9373,7 +9373,7 @@ const vrData = {
           question: "If DOG is coded as CNF, what is the code for SUN?",
           options: ["RTN","SVM","RUM","TVO","RTM"],
           correct: 4,
-          explanation: "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 10,
@@ -9383,7 +9383,7 @@ const vrData = {
           question: "If LOG is coded as MPH, what word is coded as EPH?",
           options: ["FOG","DOG","HOG","COG","DIG"],
           correct: 1,
-          explanation: "To decode, move each letter back 1: E→D, P→O, H→G. The word is DOG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 1: E→D, P→O, H→G. The word is DOG. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 11,
@@ -9393,7 +9393,7 @@ const vrData = {
           question: "If SUN is coded as RTM, what is the code for PEN?",
           options: ["PCM","QFO","ODM","OEM","OFM"],
           correct: 2,
-          explanation: "Move each letter back 1: P→O, E→D, N→M. PEN becomes ODM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 1: P→O, E→D, N→M. PEN becomes ODM. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 12,
@@ -9403,7 +9403,7 @@ const vrData = {
           question: "If PEN is coded as RGP, what is the code for HAT?",
           options: ["ICV","JBV","JCU","JCV","IBU"],
           correct: 3,
-          explanation: "Move each letter forward 2: H→J, A→C, T→V. HAT becomes JCV. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: H→J, A→C, T→V. HAT becomes JCV. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 13,
@@ -9413,7 +9413,7 @@ const vrData = {
           question: "If FIG is coded as DGE, what word is coded as AMP?",
           options: ["COP","COQ","BNQ","CNR","COR"],
           correct: 4,
-          explanation: "To decode, move each letter forward 2: A→C, M→O, P→R. The word is COR. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 2: A→C, M→O, P→R. The word is COR. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 14,
@@ -9423,7 +9423,7 @@ const vrData = {
           question: "If JUMP is coded as KVNQ, what is LAND coded as?",
           options: ["MBOE","MBOF","MBNE","LBOE","MCOE"],
           correct: 0,
-          explanation: "Each letter moves forward 1: L→M, A→B, N→O, D→E. LAND becomes MBOE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Each letter moves forward 1: L→M, A→B, N→O, D→E. LAND becomes MBOE. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 15,
@@ -9433,7 +9433,7 @@ const vrData = {
           question: "If BARN is coded as DCTP, what is the code for BORN?",
           options: ["DPTP","DQSP","DQTP","DRTP","DQUP"],
           correct: 2,
-          explanation: "Move each letter forward 2: B→D, O→Q, R→T, N→P. BORN becomes DQTP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: B→D, O→Q, R→T, N→P. BORN becomes DQTP. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 16,
@@ -9443,7 +9443,7 @@ const vrData = {
           question: "If DUSK is coded as GXVN, what is the code for DESK?",
           options: ["GFVN","GHVM","GIVN","GHVN","GHUN"],
           correct: 3,
-          explanation: "Move each letter forward 3: D→G, E→H, S→V, K→N. DESK becomes GHVN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: D→G, E→H, S→V, K→N. DESK becomes GHVN. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 17,
@@ -9453,7 +9453,7 @@ const vrData = {
           question: "If FISH is coded as ILVK, what word is coded as ORYH?",
           options: ["LOSE","LIVE","LOBE","LORE","LOVE"],
           correct: 4,
-          explanation: "To decode, move each letter back 3: O→L, R→O, Y→V, H→E. The word is LOVE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: O→L, R→O, Y→V, H→E. The word is LOVE. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 18,
@@ -9463,7 +9463,7 @@ const vrData = {
           question: "If MILK is coded as PLON, what word is coded as IROG?",
           options: ["FOOD","FOLD","FORD","FOND","FORE"],
           correct: 1,
-          explanation: "To decode, move each letter back 3: I→F, R→O, O→L, G→D. The word is FOLD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: I→F, R→O, O→L, G→D. The word is FOLD. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 19,
@@ -9473,7 +9473,7 @@ const vrData = {
           question: "If GIFT is coded as JLIW, what is the code for WISH?",
           options: ["ZLUK","ZKVL","ZLVK","ZMVK","ZLWK"],
           correct: 2,
-          explanation: "Move each letter forward 3: W→Z, I→L, S→V, H→K. WISH becomes ZLVK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: W→Z, I→L, S→V, H→K. WISH becomes ZLVK. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 20,
@@ -9483,7 +9483,7 @@ const vrData = {
           question: "If LAMP is coded as JYKN, what is the code for FIRE?",
           options: ["DGPD","DHPC","DGQC","DGPC","DIPC"],
           correct: 3,
-          explanation: "Move each letter back 2: F→D, I→G, R→P, E→C. FIRE becomes DGPC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 2: F→D, I→G, R→P, E→C. FIRE becomes DGPC. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 21,
@@ -9493,7 +9493,7 @@ const vrData = {
           question: "If LOG is coded as MPH, what is the code for CAT?",
           options: ["CBU","DCU","DAU","DBT","DBU"],
           correct: 4,
-          explanation: "Move each letter forward 1: C→D, A→B, T→U. CAT becomes DBU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 1: C→D, A→B, T→U. CAT becomes DBU. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 22,
@@ -9503,7 +9503,7 @@ const vrData = {
           question: "If FIG is coded as GJH, what is the code for DOG?",
           options: ["EPH","EPG","CPH","EOH","DPH"],
           correct: 0,
-          explanation: "Move each letter forward 1: D→E, O→P, G→H. DOG becomes EPH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 1: D→E, O→P, G→H. DOG becomes EPH. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 23,
@@ -9513,7 +9513,7 @@ const vrData = {
           question: "If CAT is coded as BZS, what is the code for SUN?",
           options: ["RTN","RTM","RUM","RVM","STM"],
           correct: 1,
-          explanation: "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 1: S→R, U→T, N→M. SUN becomes RTM. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 24,
@@ -9523,7 +9523,7 @@ const vrData = {
           question: "If DOG is coded as EPH, what is the code for PEN?",
           options: ["QEO","PFO","QFO","QFN","QGO"],
           correct: 2,
-          explanation: "Move each letter forward 1: P→Q, E→F, N→O. PEN becomes QFO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 1: P→Q, E→F, N→O. PEN becomes QFO. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 25,
@@ -9533,7 +9533,7 @@ const vrData = {
           question: "If SUN is coded as RTM, what is the code for CUP?",
           options: ["BUO","DVQ","BTP","BTO","CTO"],
           correct: 3,
-          explanation: "Move each letter back 1: C→B, U→T, P→O. CUP becomes BTO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 1: C→B, U→T, P→O. CUP becomes BTO. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 26,
@@ -9543,7 +9543,7 @@ const vrData = {
           question: "If PEN is coded as QFO, what is the code for HAT?",
           options: ["IBV","IAU","HBU","ICU","IBU"],
           correct: 4,
-          explanation: "Move each letter forward 1: H→I, A→B, T→U. HAT becomes IBU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 1: H→I, A→B, T→U. HAT becomes IBU. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 27,
@@ -9553,7 +9553,7 @@ const vrData = {
           question: "If HAT is coded as IBU, what is the code for BED?",
           options: ["CFE","CFF","BFE","CEE","CGE"],
           correct: 0,
-          explanation: "Move each letter forward 1: B→C, E→F, D→E. BED becomes CFE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 1: B→C, E→F, D→E. BED becomes CFE. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 28,
@@ -9563,7 +9563,7 @@ const vrData = {
           question: "If BUS is coded as ATR, what is the code for RUN?",
           options: ["QTN","QTM","RTM","STM","QUM"],
           correct: 1,
-          explanation: "Move each letter back 1: R→Q, U→T, N→M. RUN becomes QTM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 1: R→Q, U→T, N→M. RUN becomes QTM. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 29,
@@ -9573,7 +9573,7 @@ const vrData = {
           question: "If OWL is coded as PXM, what word is coded as SVO?",
           options: ["RUM","RUG","RUN","RUT","TUN"],
           correct: 2,
-          explanation: "To decode, move each letter back 1: S→R, V→U, O→N. The word is RUN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 1: S→R, V→U, O→N. The word is RUN. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 30,
@@ -9583,7 +9583,7 @@ const vrData = {
           question: "If JAR is coded as KBS, what word is coded as HFU?",
           options: ["GEM","SET","JET","GET","NET"],
           correct: 3,
-          explanation: "To decode, move each letter back 1: H→G, F→E, U→T. The word is GET. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 1: H→G, F→E, U→T. The word is GET. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 31,
@@ -9593,7 +9593,7 @@ const vrData = {
           question: "If BOW is coded as ANV, what word is coded as GHS?",
           options: ["HIS","HIP","HID","HIM","HIT"],
           correct: 4,
-          explanation: "To decode, move each letter forward 1: G→H, H→I, S→T. The word is HIT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 1: G→H, H→I, S→T. The word is HIT. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 32,
@@ -9603,7 +9603,7 @@ const vrData = {
           question: "If HAT is coded as IBU, what word is coded as CBU?",
           options: ["BAT","BAD","BAN","BAR","BAG"],
           correct: 0,
-          explanation: "To decode, move each letter back 1: C→B, B→A, U→T. The word is BAT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 1: C→B, B→A, U→T. The word is BAT. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 33,
@@ -9613,7 +9613,7 @@ const vrData = {
           question: "If BUS is coded as ATR, what word is coded as OHM?",
           options: ["PIG","PIN","PIE","PIT","PIR"],
           correct: 1,
-          explanation: "To decode, move each letter forward 1: O→P, H→I, M→N. The word is PIN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 1: O→P, H→I, M→N. The word is PIN. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 34,
@@ -9623,7 +9623,7 @@ const vrData = {
           question: "If JAM is coded as KBN, what word is coded as GPY?",
           options: ["FIG","FLY","FOX","FUN","FAR"],
           correct: 2,
-          explanation: "To decode, move each letter back 1: G→F, P→O, Y→X. The word is FOX. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 1: G→F, P→O, Y→X. The word is FOX. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 35,
@@ -9633,7 +9633,7 @@ const vrData = {
           question: "If CUP is coded as BTO, what word is coded as QDC?",
           options: ["REF","RID","ROD","RED","RUG"],
           correct: 3,
-          explanation: "To decode, move each letter forward 1: Q→R, D→E, C→D. The word is RED. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 1: Q→R, D→E, C→D. The word is RED. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 36,
@@ -9643,7 +9643,7 @@ const vrData = {
           question: "If MIST is coded as NJTU, what word is coded as CVTL?",
           options: ["BULK","BUST","BUMP","BURN","BUSK"],
           correct: 4,
-          explanation: "To decode, move each letter back 1: C→B, V→U, T→S, L→K. The word is BUSK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 1: C→B, V→U, T→S, L→K. The word is BUSK. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 37,
@@ -9659,7 +9659,7 @@ const vrData = {
             "Letters are reversed"
           ],
           correct: 1,
-          explanation: "P→Q (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "P→Q (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 38,
@@ -9675,7 +9675,7 @@ const vrData = {
             "Letters are doubled"
           ],
           correct: 1,
-          explanation: "B→A (back 1), I→H (back 1), G→F (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "B→A (back 1), I→H (back 1), G→F (back 1). Each letter has been moved one place back. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 39,
@@ -9691,7 +9691,7 @@ const vrData = {
             "Letters are swapped"
           ],
           correct: 2,
-          explanation: "H→I (forward 1), E→F (forward 1), N→O (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "H→I (forward 1), E→F (forward 1), N→O (forward 1). Each letter has been moved one place forward. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 40,
@@ -9707,7 +9707,7 @@ const vrData = {
             "Letters are reversed"
           ],
           correct: 3,
-          explanation: "T→S (back 1), O→N (back 1), P→O (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "T→S (back 1), O→N (back 1), P→O (back 1). Each letter has been moved one place back. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 41,
@@ -9723,7 +9723,7 @@ const vrData = {
             "Each letter moves forward 1"
           ],
           correct: 4,
-          explanation: "D→E (forward 1), I→J (forward 1), P→Q (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "D→E (forward 1), I→J (forward 1), P→Q (forward 1). Each letter has been moved one place forward. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 42,
@@ -9739,7 +9739,7 @@ const vrData = {
             "Letters are reversed"
           ],
           correct: 0,
-          explanation: "T→S (back 1), I→H (back 1), N→M (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "T→S (back 1), I→H (back 1), N→M (back 1). Each letter has been moved one place back. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 43,
@@ -9755,7 +9755,7 @@ const vrData = {
             "Letters are reversed"
           ],
           correct: 1,
-          explanation: "F→G (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "F→G (forward 1), I→J (forward 1), G→H (forward 1). Each letter has been moved one place forward. Tip: For +1, each letter moves one step forward. A handy check: the last letter of the alphabet, Z, wraps round to A. ✓"
         },
         {
           id: 44,
@@ -9771,7 +9771,7 @@ const vrData = {
             "Each letter moves forward 2"
           ],
           correct: 2,
-          explanation: "C→B (back 1), O→N (back 1), T→S (back 1). Each letter has been moved one place back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "C→B (back 1), O→N (back 1), T→S (back 1). Each letter has been moved one place back. Tip: For -1, each letter moves one step back. Watch the start of the alphabet — A wraps round to Z. ✓"
         },
         {
           id: 45,
@@ -9781,7 +9781,7 @@ const vrData = {
           question: "If GIFT is coded as IKHV, what is the code for BIRD?",
           options: ["DLTF","DJSF","DKUF","DKTF","DKTE"],
           correct: 3,
-          explanation: "Move each letter forward 2: B→D, I→K, R→T, D→F. BIRD becomes DKTF. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: B→D, I→K, R→T, D→F. BIRD becomes DKTF. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 46,
@@ -9791,7 +9791,7 @@ const vrData = {
           question: "If LAMP is coded as NCOR, what is the code for PAWN?",
           options: ["SCYP","RDYP","RCZP","RCYQ","RCYP"],
           correct: 4,
-          explanation: "Move each letter forward 2: P→R, A→C, W→Y, N→P. PAWN becomes RCYP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: P→R, A→C, W→Y, N→P. PAWN becomes RCYP. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 47,
@@ -9801,7 +9801,7 @@ const vrData = {
           question: "If MIST is coded as OKUV, what is the code for TREE?",
           options: ["VTGH","VTGF","VTHG","VTGG","VUGG"],
           correct: 3,
-          explanation: "Move each letter forward 2: T→V, R→T, E→G, E→G. TREE becomes VTGG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: T→V, R→T, E→G, E→G. TREE becomes VTGG. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 48,
@@ -9811,7 +9811,7 @@ const vrData = {
           question: "If ROCK is coded as TQEM, what is the code for MOON?",
           options: ["OQPP","OQQP","OPQP","OQQO","ORRP"],
           correct: 1,
-          explanation: "Move each letter forward 2: M→O, O→Q, O→Q, N→P. MOON becomes OQQP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: M→O, O→Q, O→Q, N→P. MOON becomes OQQP. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 49,
@@ -9821,7 +9821,7 @@ const vrData = {
           question: "If FISH is coded as HKUJ, what is the code for HILL?",
           options: ["JKMN","JLNN","JKNN","JKML","JKNO"],
           correct: 2,
-          explanation: "Move each letter forward 2: H→J, I→K, L→N, L→N. HILL becomes JKNN. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: H→J, I→K, L→N, L→N. HILL becomes JKNN. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 50,
@@ -9831,7 +9831,7 @@ const vrData = {
           question: "If HELP is coded as JGNR, what is the code for GATE?",
           options: ["IBVG","ICWG","IDVG","ICVH","ICVG"],
           correct: 4,
-          explanation: "Move each letter forward 2: G→I, A→C, T→V, E→G. GATE becomes ICVG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: G→I, A→C, T→V, E→G. GATE becomes ICVG. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 51,
@@ -9841,7 +9841,7 @@ const vrData = {
           question: "If COLD is coded as AMJB, what is the code for FORK?",
           options: ["DNPI","DMQI","DMPH","EMPI","DMPI"],
           correct: 4,
-          explanation: "Move each letter back 2: F→D, O→M, R→P, K→I. FORK becomes DMPI. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 2: F→D, O→M, R→P, K→I. FORK becomes DMPI. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 52,
@@ -9851,7 +9851,7 @@ const vrData = {
           question: "If STAR is coded as UVCT, what is the code for ROPE?",
           options: ["TQSG","TPRG","TQRG","TQRF","TRRG"],
           correct: 2,
-          explanation: "Move each letter forward 2: R→T, O→Q, P→R, E→G. ROPE becomes TQRG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: R→T, O→Q, P→R, E→G. ROPE becomes TQRG. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 53,
@@ -9861,7 +9861,7 @@ const vrData = {
           question: "If BARN is coded as ZYPL, what is the code for NEST?",
           options: ["LCRR","LDQR","LCQR","LCQS","MCQR"],
           correct: 2,
-          explanation: "Move each letter back 2: N→L, E→C, S→Q, T→R. NEST becomes LCQR. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 2: N→L, E→C, S→Q, T→R. NEST becomes LCQR. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 54,
@@ -9871,7 +9871,7 @@ const vrData = {
           question: "If DUSK is coded as FWUM, what is the code for FROG?",
           options: ["HTRI","HSQI","HTQI","HUQI","HTQJ"],
           correct: 2,
-          explanation: "Move each letter forward 2: F→H, R→T, O→Q, G→I. FROG becomes HTQI. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: F→H, R→T, O→Q, G→I. FROG becomes HTQI. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 55,
@@ -9881,7 +9881,7 @@ const vrData = {
           question: "If GIFT is coded as EGDR, what is the code for POEM?",
           options: ["NMDK","NMCL","NLCK","OMCK","NMCK"],
           correct: 4,
-          explanation: "Move each letter back 2: P→N, O→M, E→C, M→K. POEM becomes NMCK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 2: P→N, O→M, E→C, M→K. POEM becomes NMCK. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 56,
@@ -9891,7 +9891,7 @@ const vrData = {
           question: "If LAMP is coded as NCOR, what is the code for LION?",
           options: ["NKQO","NLQP","NKRP","NKQP","NJQP"],
           correct: 3,
-          explanation: "Move each letter forward 2: L→N, I→K, O→Q, N→P. LION becomes NKQP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 2: L→N, I→K, O→Q, N→P. LION becomes NKQP. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 57,
@@ -9901,7 +9901,7 @@ const vrData = {
           question: "If ROCK is coded as TQEM, what word is coded as ECUG?",
           options: ["CASE","CART","CARD","CAPE","CAVE"],
           correct: 0,
-          explanation: "To decode, move each letter back 2: E→C, C→A, U→S, G→E. The word is CASE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: E→C, C→A, U→S, G→E. The word is CASE. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 58,
@@ -9911,7 +9911,7 @@ const vrData = {
           question: "If FISH is coded as HKUJ, what word is coded as NCEM?",
           options: ["LACE","LACK","LAND","LAME","LAKE"],
           correct: 1,
-          explanation: "To decode, move each letter back 2: N→L, C→A, E→C, M→K. The word is LACK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: N→L, C→A, E→C, M→K. The word is LACK. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 59,
@@ -9921,7 +9921,7 @@ const vrData = {
           question: "If POND is coded as NMLB, what word is coded as JCDR?",
           options: ["LETS","LESS","LENT","LEND","LEFT"],
           correct: 4,
-          explanation: "To decode, move each letter forward 2: J→L, C→E, D→F, R→T. The word is LEFT. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 2: J→L, C→E, D→F, R→T. The word is LEFT. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 60,
@@ -9931,7 +9931,7 @@ const vrData = {
           question: "If COLD is coded as EQNF, what word is coded as TKPI?",
           options: ["RIND","RING","RICH","RISE","RIDE"],
           correct: 1,
-          explanation: "To decode, move each letter back 2: T→R, K→I, P→N, I→G. The word is RING. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: T→R, K→I, P→N, I→G. The word is RING. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 61,
@@ -9941,7 +9941,7 @@ const vrData = {
           question: "If STAR is coded as QRYP, what word is coded as DGQF?",
           options: ["FILE","FIST","FISH","FILM","FILL"],
           correct: 2,
-          explanation: "To decode, move each letter forward 2: D→F, G→I, Q→S, F→H. The word is FISH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 2: D→F, G→I, Q→S, F→H. The word is FISH. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 62,
@@ -9951,7 +9951,7 @@ const vrData = {
           question: "If BARN is coded as DCTP, what word is coded as JQQF?",
           options: ["HOOD","HOOK","HOOP","HOOF","HOOT"],
           correct: 0,
-          explanation: "To decode, move each letter back 2: J→H, Q→O, Q→O, F→D. The word is HOOD. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: J→H, Q→O, Q→O, F→D. The word is HOOD. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 63,
@@ -9961,7 +9961,7 @@ const vrData = {
           question: "If DUSK is coded as FWUM, what word is coded as YKPF?",
           options: ["WINE","WIND","WILL","WILD","WING"],
           correct: 1,
-          explanation: "To decode, move each letter back 2: Y→W, K→I, P→N, F→D. The word is WIND. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: Y→W, K→I, P→N, F→D. The word is WIND. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 64,
@@ -9971,7 +9971,7 @@ const vrData = {
           question: "If GIFT is coded as EGDR, what word is coded as FCPM?",
           options: ["HELP","HERD","HERO","HERB","HENS"],
           correct: 2,
-          explanation: "To decode, move each letter forward 2: F→H, C→E, P→R, M→O. The word is HERO. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 2: F→H, C→E, P→R, M→O. The word is HERO. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 65,
@@ -9981,7 +9981,7 @@ const vrData = {
           question: "If LAMP is coded as NCOR, what word is coded as EQQM?",
           options: ["COOL","CORD","COPE","COOK","CORE"],
           correct: 3,
-          explanation: "To decode, move each letter back 2: E→C, Q→O, Q→O, M→K. The word is COOK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: E→C, Q→O, Q→O, M→K. The word is COOK. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 66,
@@ -9991,7 +9991,7 @@ const vrData = {
           question: "If MIST is coded as KGQR, what word is coded as NMPI?",
           options: ["PORT","POND","POUR","POLE","PORK"],
           correct: 4,
-          explanation: "To decode, move each letter forward 2: N→P, M→O, P→R, I→K. The word is PORK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 2: N→P, M→O, P→R, I→K. The word is PORK. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 67,
@@ -10001,7 +10001,7 @@ const vrData = {
           question: "If ROCK is coded as TQEM, what word is coded as NQQR?",
           options: ["LOOT","LOOK","LOOM","LOOP","LORE"],
           correct: 3,
-          explanation: "To decode, move each letter back 2: N→L, Q→O, Q→O, R→P. The word is LOOP. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: N→L, Q→O, Q→O, R→P. The word is LOOP. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 68,
@@ -10011,7 +10011,7 @@ const vrData = {
           question: "If FISH is coded as HKUJ, what word is coded as DWEM?",
           options: ["BULK","BUCK","BURN","BUMP","BULL"],
           correct: 1,
-          explanation: "To decode, move each letter back 2: D→B, W→U, E→C, M→K. The word is BUCK. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 2: D→B, W→U, E→C, M→K. The word is BUCK. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 69,
@@ -10027,7 +10027,7 @@ const vrData = {
             "Each letter moves forward 3"
           ],
           correct: 2,
-          explanation: "H→J (forward 2), E→G (forward 2), L→N (forward 2), P→R (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "H→J (forward 2), E→G (forward 2), L→N (forward 2), P→R (forward 2). Each letter has been moved two places forward. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 70,
@@ -10043,7 +10043,7 @@ const vrData = {
             "Each letter moves forward 1"
           ],
           correct: 3,
-          explanation: "G→E (back 2), U→S (back 2), S→Q (back 2), T→R (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "G→E (back 2), U→S (back 2), S→Q (back 2), T→R (back 2). Each letter has been moved two places back. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 71,
@@ -10059,7 +10059,7 @@ const vrData = {
             "Each letter moves forward 2"
           ],
           correct: 4,
-          explanation: "G→I (forward 2), O→Q (forward 2), L→N (forward 2), D→F (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "G→I (forward 2), O→Q (forward 2), L→N (forward 2), D→F (forward 2). Each letter has been moved two places forward. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 72,
@@ -10075,7 +10075,7 @@ const vrData = {
             "Each letter moves forward 3"
           ],
           correct: 0,
-          explanation: "M→K (back 2), I→G (back 2), N→L (back 2), T→R (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "M→K (back 2), I→G (back 2), N→L (back 2), T→R (back 2). Each letter has been moved two places back. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 73,
@@ -10091,7 +10091,7 @@ const vrData = {
             "Each letter moves forward 1"
           ],
           correct: 1,
-          explanation: "D→F (forward 2), E→G (forward 2), S→U (forward 2), K→M (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "D→F (forward 2), E→G (forward 2), S→U (forward 2), K→M (forward 2). Each letter has been moved two places forward. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 74,
@@ -10107,7 +10107,7 @@ const vrData = {
             "Each letter moves back 3"
           ],
           correct: 2,
-          explanation: "P→N (back 2), L→J (back 2), U→S (back 2), M→K (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "P→N (back 2), L→J (back 2), U→S (back 2), M→K (back 2). Each letter has been moved two places back. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 75,
@@ -10123,7 +10123,7 @@ const vrData = {
             "Each letter moves forward 3"
           ],
           correct: 3,
-          explanation: "P→R (forward 2), I→K (forward 2), N→P (forward 2), E→G (forward 2). Each letter has been moved two places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "P→R (forward 2), I→K (forward 2), N→P (forward 2), E→G (forward 2). Each letter has been moved two places forward. Tip: For +2, skip one letter each time — B goes to D, skipping C. Use the alphabet line to count carefully. ✓"
         },
         {
           id: 76,
@@ -10139,7 +10139,7 @@ const vrData = {
             "Each letter moves back 2"
           ],
           correct: 4,
-          explanation: "W→U (back 2), O→M (back 2), L→J (back 2), F→D (back 2). Each letter has been moved two places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "W→U (back 2), O→M (back 2), L→J (back 2), F→D (back 2). Each letter has been moved two places back. Tip: For -2, skip one letter going backwards — F goes to D, skipping E. Near A, letters wrap round to the end. ✓"
         },
         {
           id: 77,
@@ -10149,7 +10149,7 @@ const vrData = {
           question: "If CHARM is coded as FKDUP, what is the code for FLAME?",
           options: ["IODPH","IODQH","IOCPH","IOEPI","INDPH"],
           correct: 0,
-          explanation: "Move each letter forward 3: F→I, L→O, A→D, M→P, E→H. FLAME becomes IODPH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: F→I, L→O, A→D, M→P, E→H. FLAME becomes IODPH. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 78,
@@ -10159,7 +10159,7 @@ const vrData = {
           question: "If GLOBE is coded as DILYB, what is the code for STORM?",
           options: ["PQLNJ","PQLOJ","PRLOJ","PQMOJ","PQLOK"],
           correct: 1,
-          explanation: "Move each letter back 3: S→P, T→Q, O→L, R→O, M→J. STORM becomes PQLOJ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 3: S→P, T→Q, O→L, R→O, M→J. STORM becomes PQLOJ. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 79,
@@ -10169,7 +10169,7 @@ const vrData = {
           question: "If PLANT is coded as SODQW, what is the code for CROWN?",
           options: ["FURAQ","FUSZQ","FURZQ","FURZR","FURYQ"],
           correct: 2,
-          explanation: "Move each letter forward 3: C→F, R→U, O→R, W→Z, N→Q. CROWN becomes FURZQ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: C→F, R→U, O→R, W→Z, N→Q. CROWN becomes FURZQ. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 80,
@@ -10179,7 +10179,7 @@ const vrData = {
           question: "If BRICK is coded as YOFZH, what is the code for SWIFT?",
           options: ["PTECQ","PTFDQ","PTFCR","PTFCQ","PUFCQ"],
           correct: 3,
-          explanation: "Move each letter back 3: S→P, W→T, I→F, F→C, T→Q. SWIFT becomes PTFCQ. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 3: S→P, W→T, I→F, F→C, T→Q. SWIFT becomes PTFCQ. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 81,
@@ -10189,7 +10189,7 @@ const vrData = {
           question: "If SHELF is coded as VKHOI, what is the code for TIGER?",
           options: ["WLKHU","WLJHV","WMJHU","WLJIU","WLJHU"],
           correct: 4,
-          explanation: "Move each letter forward 3: T→W, I→L, G→J, E→H, R→U. TIGER becomes WLJHU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: T→W, I→L, G→J, E→H, R→U. TIGER becomes WLJHU. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 82,
@@ -10199,7 +10199,7 @@ const vrData = {
           question: "If FROST is coded as IURVW, what is the code for GRAPE?",
           options: ["JUDTI","JUDSH","JUCSH","JUDSG","JUESH"],
           correct: 1,
-          explanation: "Move each letter forward 3: G→J, R→U, A→D, P→S, E→H. GRAPE becomes JUDSH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: G→J, R→U, A→D, P→S, E→H. GRAPE becomes JUDSH. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 83,
@@ -10209,7 +10209,7 @@ const vrData = {
           question: "If CLOUD is coded as ZILRA, what is the code for SHELF?",
           options: ["PECIC","PEBIC","PEBHC","PFBIC","PEBID"],
           correct: 1,
-          explanation: "Move each letter back 3: S→P, H→E, E→B, L→I, F→C. SHELF becomes PEBIC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter back 3: S→P, H→E, E→B, L→I, F→C. SHELF becomes PEBIC. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 84,
@@ -10219,7 +10219,7 @@ const vrData = {
           question: "If DRINK is coded as GULQN, what is the code for LUCKY?",
           options: ["OXFMC","OXFNA","OXFNB","OXGNB","OWFNB"],
           correct: 2,
-          explanation: "Move each letter forward 3: L→O, U→X, C→F, K→N, Y→B (wraps past Z). LUCKY becomes OXFNB. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: L→O, U→X, C→F, K→N, Y→B (wraps past Z). LUCKY becomes OXFNB. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 85,
@@ -10229,7 +10229,7 @@ const vrData = {
           question: "If TRUNK is coded as WUXQN, what is the code for FIXED?",
           options: ["ILAHF","ILBHG","ILAIG","ILAHG","IKAHG"],
           correct: 3,
-          explanation: "Move each letter forward 3: F→I, I→L, X→A (wraps past Z), E→H, D→G. FIXED becomes ILAHG. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: F→I, I→L, X→A (wraps past Z), E→H, D→G. FIXED becomes ILAHG. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 86,
@@ -10239,7 +10239,7 @@ const vrData = {
           question: "If SLOPE is coded as VORSH, what is the code for BUYER?",
           options: ["EXBHU","EXCHU","EXBIV","EWBHU","EXAHU"],
           correct: 0,
-          explanation: "Move each letter forward 3: B→E, U→X, Y→B (wraps past Z), E→H, R→U. BUYER becomes EXBHU. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "Move each letter forward 3: B→E, U→X, Y→B (wraps past Z), E→H, R→U. BUYER becomes EXBHU. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 87,
@@ -10249,7 +10249,7 @@ const vrData = {
           question: "If BRICK is coded as EULFN, what word is coded as WRUFK?",
           options: ["TOOTH","TOTAL","TOWER","TOUCH","TORCH"],
           correct: 4,
-          explanation: "To decode, move each letter back 3: W→T, R→O, U→R, F→C, K→H. The word is TORCH. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: W→T, R→O, U→R, F→C, K→H. The word is TORCH. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 88,
@@ -10259,7 +10259,7 @@ const vrData = {
           question: "If SHELF is coded as PEBIC, what word is coded as QOFZH?",
           options: ["TRIBE","TRICK","TRAIN","TRACK","TRACE"],
           correct: 1,
-          explanation: "To decode, move each letter forward 3: Q→T, O→R, F→I, Z→C (wraps forward past Z: Z→A→B→C), H→K. The word is TRICK. ✓"
+          explanation: "To decode, move each letter forward 3: Q→T, O→R, F→I, Z→C (wraps forward past Z: Z→A→B→C), H→K. The word is TRICK. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 89,
@@ -10269,7 +10269,7 @@ const vrData = {
           question: "If FROST is coded as IURVW, what word is coded as VWRQH?",
           options: ["STORE","STORK","STOVE","STONE","STOLE"],
           correct: 3,
-          explanation: "To decode, move each letter back 3: V→S, W→T, R→O, Q→N, H→E. The word is STONE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: V→S, W→T, R→O, Q→N, H→E. The word is STONE. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 90,
@@ -10279,7 +10279,7 @@ const vrData = {
           question: "If CLOUD is coded as ZILRA, what word is coded as DOFPQ?",
           options: ["GRACE","GRIND","GRIST","GRASS","GRAIN"],
           correct: 2,
-          explanation: "To decode, move each letter forward 3: D→G, O→R, F→I, P→S, Q→T. The word is GRIST. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 3: D→G, O→R, F→I, P→S, Q→T. The word is GRIST. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 91,
@@ -10289,7 +10289,7 @@ const vrData = {
           question: "If DRINK is coded as GULQN, what word is coded as EULQJ?",
           options: ["BRICK","BRINE","BRISK","BRING","BRIDE"],
           correct: 3,
-          explanation: "To decode, move each letter back 3: E→B, U→R, L→I, Q→N, J→G. The word is BRING. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: E→B, U→R, L→I, Q→N, J→G. The word is BRING. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 92,
@@ -10299,7 +10299,7 @@ const vrData = {
           question: "If TRUNK is coded as QORKH, what word is coded as JXDFZ?",
           options: ["MASON","MAJOR","MANOR","MARCH","MAGIC"],
           correct: 4,
-          explanation: "To decode, move each letter forward 3: J→M, X→A (wraps past Z), D→G, F→I, Z→C (wraps past Z). The word is MAGIC. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 3: J→M, X→A (wraps past Z), D→G, F→I, Z→C (wraps past Z). The word is MAGIC. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 93,
@@ -10309,7 +10309,7 @@ const vrData = {
           question: "If SLOPE is coded as VORSH, what word is coded as FUHDP?",
           options: ["CRANE","CREAM","CRAFT","CRASH","CRATE"],
           correct: 1,
-          explanation: "To decode, move each letter back 3: F→C, U→R, H→E, D→A, P→M. The word is CREAM. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: F→C, U→R, H→E, D→A, P→M. The word is CREAM. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 94,
@@ -10319,7 +10319,7 @@ const vrData = {
           question: "If CHARM is coded as FKDUP, what word is coded as SODFH?",
           options: ["PLANE","PLATE","PLACE","PLANT","PLANK"],
           correct: 2,
-          explanation: "To decode, move each letter back 3: S→P, O→L, D→A, F→C, H→E. The word is PLACE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: S→P, O→L, D→A, F→C, H→E. The word is PLACE. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 95,
@@ -10329,7 +10329,7 @@ const vrData = {
           question: "If GLOBE is coded as DILYB, what word is coded as PEXOB?",
           options: ["SHARP","SHALL","SHADE","SHARE","SHAPE"],
           correct: 3,
-          explanation: "To decode, move each letter forward 3: P→S, E→H, X→A (wraps past Z), O→R, B→E. The word is SHARE. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter forward 3: P→S, E→H, X→A (wraps past Z), O→R, B→E. The word is SHARE. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 96,
@@ -10339,7 +10339,7 @@ const vrData = {
           question: "If PLANT is coded as SODQW, what word is coded as PLAHU?",
           options: ["MINOR","MIXER","MISER","MIGHT","MITRE"],
           correct: 1,
-          explanation: "To decode, move each letter back 3: P→M, L→I, A→X (wraps backward: A→Z→Y→X), H→E, U→R. The word is MIXER. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "To decode, move each letter back 3: P→M, L→I, A→X (wraps backward: A→Z→Y→X), H→E, U→R. The word is MIXER. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 97,
@@ -10355,7 +10355,7 @@ const vrData = {
             "Each letter moves forward 1"
           ],
           correct: 0,
-          explanation: "D→G (forward 3), R→U (forward 3), U→X (forward 3), M→P (forward 3). Each letter has been moved three places forward. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "D→G (forward 3), R→U (forward 3), U→X (forward 3), M→P (forward 3). Each letter has been moved three places forward. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 98,
@@ -10371,7 +10371,7 @@ const vrData = {
             "Each letter moves back 1"
           ],
           correct: 1,
-          explanation: "P→M (back 3), R→O (back 3), I→F (back 3), D→A (back 3), E→B (back 3). Each letter has been moved three places back. Tip: Always check every letter — don't assume the shift from just the first one. ✓"
+          explanation: "P→M (back 3), R→O (back 3), I→F (back 3), D→A (back 3), E→B (back 3). Each letter has been moved three places back. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 99,
@@ -10511,7 +10511,7 @@ const vrData = {
           question: "If PARK is coded as MXOH, what word is coded as JXII?",
           options: ["TALL","CALL","MALL","BALL","HALL"],
           correct: 2,
-          explanation: "Each letter in the code has been moved back 3. To decode, move forward 3: J→M, X→A, I→L, I→L = MALL. Tip: Think of the alphabet as a circle — after Z comes A again, and before A comes Z. Count carefully at the boundaries! ✓"
+          explanation: "Each letter in the code has been moved back 3. To decode, move forward 3: J→M, X→A, I→L, I→L = MALL. Tip: For +3, use the EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) as signposts — jump to the nearest anchor, then count on. ✓"
         },
         {
           id: 113,
@@ -10631,7 +10631,7 @@ const vrData = {
           question: "If CROWN is coded as FURZQ, what word is coded as VWDUW?",
           options: ["STARK","STARE","START","STARS","STORE"],
           correct: 2,
-          explanation: "Each letter has been moved forward 3. To decode, move back 3: V→S, W→T, D→A, U→R, W→T = START. Tip: Always work out the rule from the example first, then apply it letter by letter to the new word. ✓"
+          explanation: "Each letter has been moved forward 3. To decode, move back 3: V→S, W→T, D→A, U→R, W→T = START. Tip: For -3, count back three places using EJOTY anchors (E, J, O, T, Y) as signposts. Near A, letters wrap round to Z, Y, X. ✓"
         },
         {
           id: 125,
