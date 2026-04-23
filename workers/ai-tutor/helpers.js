@@ -37,7 +37,7 @@ export async function getChildId(db, userId) {
 //
 // If ALLOWED_ORIGINS is unset, all origins are allowed (backward-compat
 // for pre-rollout state). Set it to a comma-separated list to enforce.
-// Example: "https://11plus-prep.pages.dev,http://localhost:3000".
+// Example: "https://prepstep.co.uk,https://www.prepstep.co.uk,https://11plus-prep.pages.dev,http://localhost:3000".
 export function checkOrigin(request, env) {
   const origin = request.headers.get('Origin');
   if (!origin) return null; // no Origin = not a browser request

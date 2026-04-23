@@ -209,7 +209,7 @@ export async function handlePortal(request, env, userId) {
   try {
     const session = await stripeCall(env, 'POST', '/billing_portal/sessions', {
       customer: account.stripe_customer_id,
-      return_url: body.returnUrl || env.APP_URL || 'https://11plus-prep.pages.dev/',
+      return_url: body.returnUrl || env.APP_URL || 'https://prepstep.co.uk/',
     });
     return json({ url: session.url });
   } catch (err) {
