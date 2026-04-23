@@ -109,7 +109,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -154,7 +154,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -273,7 +273,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -316,7 +316,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -447,7 +447,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -487,7 +487,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -618,7 +618,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -663,7 +663,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -782,7 +782,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -816,7 +816,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -959,7 +959,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -996,7 +996,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1119,7 +1119,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -1153,7 +1153,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1284,7 +1284,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -1327,7 +1327,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactExpression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1466,7 +1466,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -1497,7 +1497,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1628,7 +1628,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -1668,7 +1668,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1787,7 +1787,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -1818,7 +1818,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1929,7 +1929,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: null
@@ -1963,7 +1963,7 @@ export const letterSumsSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {

@@ -29,7 +29,7 @@ async function apiFetch(path, token, options = {}) {
 function InviteBanner({ code }) {
   if (!code) return null;
   return (
-    <div className="bg-[#6C5CE7] text-white text-sm text-center py-2 px-4">
+    <div className="bg-[#7C3AED] text-white text-sm text-center py-2 px-4">
       <span className="font-bold">Invite accepted!</span> You\u2019ll get free access — no card needed. Code: <span className="font-mono opacity-80">{code}</span>
     </div>
   );
@@ -44,14 +44,14 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
       <header className="p-6 flex justify-end gap-3">
         <button
           onClick={onSignIn}
-          className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-[#6C5CE7] border-2 border-[#6C5CE7] rounded-xl hover:bg-[#6C5CE7] hover:text-white transition-colors"
+          className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-[#7C3AED] border-2 border-[#7C3AED] rounded-xl hover:bg-[#7C3AED] hover:text-white transition-colors"
         >
           <LogIn className="w-4 h-4" />
           Sign In
         </button>
         <button
           onClick={onSignUp}
-          className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-[#6C5CE7] rounded-xl hover:bg-[#5A4BD1] transition-colors"
+          className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-[#7C3AED] rounded-xl hover:bg-[#5A4BD1] transition-colors"
         >
           <UserPlus className="w-4 h-4" />
           Create Account
@@ -60,7 +60,7 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
 
       {/* Hero */}
       <main className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-        <div className="w-20 h-20 rounded-2xl bg-[#6C5CE7] flex items-center justify-center mb-6 shadow-lg">
+        <div className="w-20 h-20 rounded-2xl bg-[#7C3AED] flex items-center justify-center mb-6 shadow-lg">
           <BookOpen className="w-10 h-10 text-white" />
         </div>
         <h1 className="font-heading text-4xl font-bold text-slate-800 mb-3">
@@ -72,7 +72,7 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
         </p>
         <button
           onClick={onSignUp}
-          className="flex items-center gap-2 px-8 py-3.5 text-lg font-bold text-white bg-[#6C5CE7] rounded-2xl hover:bg-[#5A4BD1] transition-colors shadow-md"
+          className="flex items-center gap-2 px-8 py-3.5 text-lg font-bold text-white bg-[#7C3AED] rounded-2xl hover:bg-[#5A4BD1] transition-colors shadow-md"
         >
           Get Started Free
           <ChevronRight className="w-5 h-5" />
@@ -87,10 +87,10 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
             <Shield className="w-4 h-4 text-[#007D62]" />
             <span>Your child's data is safe</span>
           </div>
-          <a href="/privacy.html" className="underline hover:text-[#6C5CE7]">
+          <a href="/privacy.html" className="underline hover:text-[#7C3AED]">
             Privacy Policy
           </a>
-          <a href="/terms.html" className="underline hover:text-[#6C5CE7]">
+          <a href="/terms.html" className="underline hover:text-[#7C3AED]">
             Terms
           </a>
         </div>
@@ -117,7 +117,7 @@ function ConsentScreen({ onConsent, isLoading, inviteCode }) {
 
         {/* What we collect */}
         <div className="bg-[#F8F7FF] rounded-xl p-4 mb-6">
-          <h2 className="font-heading font-bold text-sm text-[#6C5CE7] mb-3">What we collect</h2>
+          <h2 className="font-heading font-bold text-sm text-[#7C3AED] mb-3">What we collect</h2>
           <table className="w-full text-sm">
             <tbody>
               <tr className="border-b border-[#E8E5FF]">
@@ -151,14 +151,14 @@ function ConsentScreen({ onConsent, isLoading, inviteCode }) {
               type="checkbox"
               checked={consentChecked}
               onChange={(e) => setConsentChecked(e.target.checked)}
-              className="mt-1 w-5 h-5 rounded accent-[#6C5CE7]"
+              className="mt-1 w-5 h-5 rounded accent-[#7C3AED]"
             />
             <span className="text-sm text-slate-800">
               I am the parent or guardian of the child who will use this app. I agree to the{' '}
-              <a href="/terms.html" target="_blank" rel="noopener noreferrer" className="text-[#6C5CE7] underline">
+              <a href="/terms.html" target="_blank" rel="noopener noreferrer" className="text-[#7C3AED] underline">
                 terms of service
               </a>{' '}and consent to the processing of their learning data as described in our{' '}
-              <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-[#6C5CE7] underline">
+              <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-[#7C3AED] underline">
                 privacy policy
               </a>.
             </span>
@@ -169,7 +169,7 @@ function ConsentScreen({ onConsent, isLoading, inviteCode }) {
               type="checkbox"
               checked={emailOptIn}
               onChange={(e) => setEmailOptIn(e.target.checked)}
-              className="mt-1 w-5 h-5 rounded accent-[#6C5CE7]"
+              className="mt-1 w-5 h-5 rounded accent-[#7C3AED]"
             />
             <span className="text-sm text-slate-500">
               Send me weekly progress emails about my child's learning.
@@ -183,7 +183,7 @@ function ConsentScreen({ onConsent, isLoading, inviteCode }) {
           disabled={!consentChecked || isLoading}
           className={`w-full py-3 rounded-xl font-bold text-white transition-colors ${
             consentChecked && !isLoading
-              ? 'bg-[#6C5CE7] hover:bg-[#5A4BD1]'
+              ? 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
               : 'bg-gray-300 cursor-not-allowed'
           }`}
         >
@@ -215,7 +215,7 @@ function ChildNameScreen({ onSubmit, isLoading }) {
           onChange={(e) => setName(e.target.value)}
           placeholder="e.g. Evie"
           maxLength={30}
-          className="w-full px-4 py-3 text-lg text-center border-2 border-gray-200 rounded-xl focus:border-[#6C5CE7] focus:outline-none mb-6"
+          className="w-full px-4 py-3 text-lg text-center border-2 border-gray-200 rounded-xl focus:border-[#7C3AED] focus:outline-none mb-6"
           autoFocus
         />
         <button
@@ -223,7 +223,7 @@ function ChildNameScreen({ onSubmit, isLoading }) {
           disabled={!name.trim() || isLoading}
           className={`w-full py-3 rounded-xl font-bold text-white transition-colors ${
             name.trim() && !isLoading
-              ? 'bg-[#6C5CE7] hover:bg-[#5A4BD1]'
+              ? 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
               : 'bg-gray-300 cursor-not-allowed'
           }`}
         >
@@ -411,7 +411,7 @@ function AuthGateReal({ children }) {
   if (!authLoaded) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center">
-        <div className="animate-pulse text-[#6C5CE7] font-heading font-bold text-xl">Loading...</div>
+        <div className="animate-pulse text-[#7C3AED] font-heading font-bold text-xl">Loading...</div>
       </div>
     );
   }
@@ -423,7 +423,7 @@ function AuthGateReal({ children }) {
         <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex flex-col items-center justify-center p-4">
           <button
             onClick={() => setAuthView('landing')}
-            className="flex items-center gap-2 text-sm text-[#6C5CE7] font-bold mb-6 hover:underline"
+            className="flex items-center gap-2 text-sm text-[#7C3AED] font-bold mb-6 hover:underline"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -437,7 +437,7 @@ function AuthGateReal({ children }) {
         <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex flex-col items-center justify-center p-4">
           <button
             onClick={() => setAuthView('landing')}
-            className="flex items-center gap-2 text-sm text-[#6C5CE7] font-bold mb-6 hover:underline"
+            className="flex items-center gap-2 text-sm text-[#7C3AED] font-bold mb-6 hover:underline"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -453,7 +453,7 @@ function AuthGateReal({ children }) {
   if (isLoading && !onboardingStep) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center">
-        <div className="animate-pulse text-[#6C5CE7] font-heading font-bold text-xl">Loading your data...</div>
+        <div className="animate-pulse text-[#7C3AED] font-heading font-bold text-xl">Loading your data...</div>
       </div>
     );
   }
@@ -467,7 +467,7 @@ function AuthGateReal({ children }) {
           <p className="text-slate-500 text-sm mb-4">{error}</p>
           <button
             onClick={checkAccount}
-            className="px-6 py-2 bg-[#6C5CE7] text-white rounded-xl font-bold"
+            className="px-6 py-2 bg-[#7C3AED] text-white rounded-xl font-bold"
           >
             Try again
           </button>
@@ -506,7 +506,7 @@ function AuthGateReal({ children }) {
   // Fallback loading
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center">
-      <div className="animate-pulse text-[#6C5CE7] font-heading font-bold text-xl">Loading...</div>
+      <div className="animate-pulse text-[#7C3AED] font-heading font-bold text-xl">Loading...</div>
     </div>
   );
 }

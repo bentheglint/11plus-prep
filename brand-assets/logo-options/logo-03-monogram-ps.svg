@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" role="img" aria-label="PrepStep logo with PS monogram">
+  <!-- Rounded-square icon badge -->
+  <rect x="15" y="15" width="90" height="90" rx="18" fill="#6C5CE7"/>
+  <!-- "PS" inside, white, stacked slightly for step feel -->
+  <text x="28" y="62" font-family="Nunito, -apple-system, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="#ffffff" letter-spacing="-1">P</text>
+  <text x="55" y="95" font-family="Nunito, -apple-system, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="#ffffff" letter-spacing="-1">S</text>
+  <!-- Wordmark -->
+  <text x="125" y="82" font-family="Nunito, -apple-system, 'Segoe UI', sans-serif" font-size="60" font-weight="800" fill="#1E1B4B" letter-spacing="-1">PrepStep</text>
+</svg>

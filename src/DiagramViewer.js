@@ -114,7 +114,7 @@ export default function DiagramViewer() {
           {Object.keys(COMPONENTS).map(name => (
             <li key={name}>
               <a href={`?diagram-viewer=true&component=${name}`}
-                 style={{ color: '#6C5CE7' }}>
+                 style={{ color: '#7C3AED' }}>
                 {name}
               </a>
             </li>

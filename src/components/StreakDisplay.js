@@ -97,7 +97,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                 <p className="text-[10px] text-slate-500 font-medium">Current streak</p>
               </div>
               <div className="text-center p-3 bg-gradient-to-b from-purple-50 to-white rounded-xl">
-                <p className="text-2xl font-bold text-[#6C5CE7]">{longestStreak}</p>
+                <p className="text-2xl font-bold text-[#7C3AED]">{longestStreak}</p>
                 <p className="text-[10px] text-slate-500 font-medium">Best streak</p>
               </div>
               <div className="text-center p-3 bg-gradient-to-b from-green-50 to-white rounded-xl">
@@ -109,7 +109,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
             {/* Practice calendar */}
             <div className="mb-5">
               <div className="flex items-center gap-2 mb-2">
-                <Calendar className="w-4 h-4 text-[#6C5CE7]" />
+                <Calendar className="w-4 h-4 text-[#7C3AED]" />
                 <h3 className="font-heading font-bold text-sm text-slate-800">Practice Consistency</h3>
               </div>
               <div className="bg-gray-50 rounded-xl p-3">
@@ -128,8 +128,8 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                         className={`aspect-square rounded-sm flex items-center justify-center text-[8px] font-bold
                           ${day.isFuture ? 'bg-gray-100' :
                             day.isToday && day.practiced ? 'bg-[#007D62] text-white ring-2 ring-[#007D62]/30' :
-                            day.isToday ? 'bg-white border-2 border-[#6C5CE7] text-[#6C5CE7]' :
-                            day.practiced ? 'bg-[#6C5CE7] text-white' :
+                            day.isToday ? 'bg-white border-2 border-[#7C3AED] text-[#7C3AED]' :
+                            day.practiced ? 'bg-[#7C3AED] text-white' :
                             'bg-gray-200 text-gray-400'}`}
                         title={day.date}
                       >
@@ -140,7 +140,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                 ))}
                 {/* Legend */}
                 <div className="flex items-center gap-3 mt-2 text-[9px] text-slate-500">
-                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm bg-[#6C5CE7] inline-block"></span> Practised</span>
+                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm bg-[#7C3AED] inline-block"></span> Practised</span>
                   <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm bg-gray-200 inline-block border border-gray-300"></span> No practice</span>
                 </div>
               </div>
@@ -149,7 +149,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
             {/* How streaks work */}
             <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4">
               <div className="flex items-center gap-2 mb-2">
-                <Target className="w-4 h-4 text-[#6C5CE7]" />
+                <Target className="w-4 h-4 text-[#7C3AED]" />
                 <h3 className="font-heading font-bold text-sm text-slate-800">How Streaks Work</h3>
               </div>
               <div className="space-y-2 text-xs text-slate-500">
@@ -158,7 +158,7 @@ function StreakDisplay({ currentStreak, longestStreak, isActive, practiceDays = 
                   <span>Complete <strong className="text-slate-800">at least one quiz</strong> to count as a practice day</span>
                 </p>
                 <p className="flex items-start gap-2">
-                  <span className="text-[#6C5CE7] font-bold mt-0.5">★</span>
+                  <span className="text-[#7C3AED] font-bold mt-0.5">★</span>
                   <span>Practise <strong className="text-slate-800">5 out of every 7 days</strong> and you're building great habits</span>
                 </p>
                 <p className="flex items-start gap-2">

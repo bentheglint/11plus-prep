@@ -65,8 +65,8 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
     status = 'getting-started';
     icon = BookOpen;
     bgGradient = 'from-[#DFF6FF] to-[#EDE8FF]';
-    borderColour = '#6C5CE7';
-    iconBg = 'bg-[#6C5CE7]';
+    borderColour = '#7C3AED';
+    iconBg = 'bg-[#7C3AED]';
     headline = `Let's get ${firstName} started!`;
     message = `${firstName} has answered ${totalQuestions} question${totalQuestions !== 1 ? 's' : ''} so far. Once they've completed a few quizzes, we'll be able to show you exactly how they're progressing and what to focus on.`;
     details = [
@@ -79,8 +79,8 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
     status = 'action-required';
     icon = AlertCircle;
     bgGradient = 'from-[#EDE8FF] to-[#F0E6FF]';
-    borderColour = '#6C5CE7';
-    iconBg = 'bg-[#6C5CE7]';
+    borderColour = '#7C3AED';
+    iconBg = 'bg-[#7C3AED]';
     headline = `${firstName} needs to practise more regularly`;
     const dayText = daysLast2Weeks === 0 ? "hasn't practised in the last 2 weeks" :
       `has only practised ${daysLast2Weeks} day${daysLast2Weeks !== 1 ? 's' : ''} in the last 2 weeks`;

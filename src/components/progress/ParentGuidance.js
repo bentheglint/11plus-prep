@@ -3,21 +3,21 @@ import { BookOpen, ChevronDown, ChevronRight, ArrowLeft } from 'lucide-react';
 
 // Category display config
 const categoryConfig = {
-  'How to Praise & Respond': { colour: '#6C5CE7', icon: '💬' },
+  'How to Praise & Respond': { colour: '#7C3AED', icon: '💬' },
   'Understanding How Practice Works': { colour: '#0770C2', icon: '🧠' },
   'Managing Anxiety': { colour: '#007D62', icon: '🌱' },
   'Sleep, Exercise & Downtime': { colour: '#FF6B6B', icon: '😴' },
 };
 
 function GuideCard({ guide, onClose }) {
-  const config = categoryConfig[guide.category] || { colour: '#6C5CE7', icon: '📖' };
+  const config = categoryConfig[guide.category] || { colour: '#7C3AED', icon: '📖' };
 
   return (
     <div className="">
       {onClose && (
         <button
           onClick={onClose}
-          className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-1 text-sm mb-3"
+          className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 text-sm mb-3"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to guides
@@ -130,19 +130,19 @@ function ParentGuidance({ guides, mastery, userData }) {
       <div className="card-elevated p-5 mb-6">
         <button
           onClick={() => setBrowsing(false)}
-          className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-1 text-sm mb-4"
+          className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 text-sm mb-4"
         >
           <ArrowLeft className="w-4 h-4" />
           Back
         </button>
         <div className="flex items-center gap-2 mb-4">
-          <BookOpen className="w-5 h-5 text-[#6C5CE7]" />
+          <BookOpen className="w-5 h-5 text-[#7C3AED]" />
           <h3 className="font-heading font-bold text-slate-800">All Parent Guides</h3>
         </div>
 
         <div className="space-y-2">
           {Object.entries(groupedGuides).map(([category, categoryGuides]) => {
-            const config = categoryConfig[category] || { colour: '#6C5CE7', icon: '📖' };
+            const config = categoryConfig[category] || { colour: '#7C3AED', icon: '📖' };
             const isExpanded = expandedCategory === category;
 
             return (
@@ -188,12 +188,12 @@ function ParentGuidance({ guides, mastery, userData }) {
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <BookOpen className="w-5 h-5 text-[#6C5CE7]" />
+          <BookOpen className="w-5 h-5 text-[#7C3AED]" />
           <h3 className="font-heading font-bold text-slate-800">Parent Guidance</h3>
         </div>
         <button
           onClick={() => setBrowsing(true)}
-          className="text-xs font-bold text-[#6C5CE7] hover:text-[#5A4BD1] transition-colors"
+          className="text-xs font-bold text-[#7C3AED] hover:text-[#5A4BD1] transition-colors"
         >
           Browse all guides ({guides.length})
         </button>

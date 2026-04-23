@@ -238,7 +238,7 @@ export function GridModel({
           <thead>
             <tr>
               {/* Top-left corner: multiplication sign */}
-              <th className="bg-[#EDE8FF] border-2 border-[#A29BFE]/40 px-4 py-3 text-lg font-bold text-[#6C5CE7]">
+              <th className="bg-[#EDE8FF] border-2 border-[#A29BFE]/40 px-4 py-3 text-lg font-bold text-[#7C3AED]">
                 ×
               </th>
               {headers.cols.map((h, i) => (
@@ -283,7 +283,7 @@ export function GridModel({
                           {generic ? '...' : cellValue}
                         </span>
                       ) : isNext && revealStepByStep ? (
-                        <span className="text-[#6C5CE7] font-bold text-xl" style={{ cursor: 'pointer' }}>?</span>
+                        <span className="text-[#7C3AED] font-bold text-xl" style={{ cursor: 'pointer' }}>?</span>
                       ) : (
                         <span className="text-gray-300">?</span>
                       )}
@@ -344,7 +344,7 @@ export function WorkedExample({
             style={{ animation: i === visibleCount - 1 && !allRevealed ? 'fadeIn 0.3s ease-in' : 'none' }}
           >
             {/* Step number circle */}
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#6C5CE7] text-white flex items-center justify-center font-bold text-sm">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#7C3AED] text-white flex items-center justify-center font-bold text-sm">
               {i + 1}
             </div>
             <div className="flex-1">
@@ -354,7 +354,7 @@ export function WorkedExample({
               </p>
               {/* WHY explanation */}
               {step.why && (
-                <p className="text-[#6C5CE7] text-sm mt-1 italic">
+                <p className="text-[#7C3AED] text-sm mt-1 italic">
                   {step.why}
                 </p>
               )}
@@ -373,7 +373,7 @@ export function WorkedExample({
       {hasMore && !allRevealed && (
         <button
           onClick={onRevealNext}
-          className="w-full p-3 rounded-xl border-2 border-dashed border-[#A29BFE] text-[#6C5CE7] font-medium hover:bg-[#EDE8FF]/50 hover:border-[#6C5CE7] transition-all text-base"
+          className="w-full p-3 rounded-xl border-2 border-dashed border-[#A29BFE] text-[#7C3AED] font-medium hover:bg-[#EDE8FF]/50 hover:border-[#7C3AED] transition-all text-base"
         >
           Show step {visibleCount + 1}...
         </button>
@@ -458,13 +458,13 @@ export function NumberLine({
 
         {/* Main line */}
         <line x1={padding - 5} y1={lineY} x2={width - padding + 5} y2={lineY}
-              stroke="#6C5CE7" strokeWidth={4} strokeLinecap="round" />
+              stroke="#7C3AED" strokeWidth={4} strokeLinecap="round" />
 
         {/* Tick marks */}
         {ticks.map((v, i) => (
           <g key={i}>
             <line x1={toX(v)} y1={lineY - 18} x2={toX(v)} y2={lineY + 18}
-                  stroke="#6C5CE7" strokeWidth={3} />
+                  stroke="#7C3AED" strokeWidth={3} />
             {showLabels && (
               <text x={toX(v)} y={lineY + 48} textAnchor="middle"
                     fill="#374151" fontSize={tickFontSize} fontWeight="600">
@@ -491,7 +491,7 @@ export function NumberLine({
               />
               {jump.label && (
                 <text x={midX} y={lineY - 30 - arcHeight} textAnchor="middle"
-                      fill="#6C5CE7" fontSize={labelFontSize} fontWeight="bold">
+                      fill="#7C3AED" fontSize={labelFontSize} fontWeight="bold">
                   {jump.label}
                 </text>
               )}
@@ -527,7 +527,7 @@ export function NumberLine({
                       fill={pt.color || "#5A4BD1"} stroke="white" strokeWidth={3} />
               {showPointLabels && pt.label && (
                 <text x={labelPositions[i].x} y={labelPositions[i].y} textAnchor="middle"
-                      fill={pt.color || "#6C5CE7"} fontSize={labelFontSize} fontWeight="bold">
+                      fill={pt.color || "#7C3AED"} fontSize={labelFontSize} fontWeight="bold">
                   {pt.label}
                 </text>
               )}
@@ -606,7 +606,7 @@ export function BarModel({
         {spanLabels.map((sl, i) => (
           <div key={`span-${i}`} className="absolute text-center"
                style={{ left: `${sl.startPct}%`, width: `${sl.widthPct}%`, top: '-24px' }}>
-            <span className="font-bold text-xs text-[#6C5CE7] bg-white px-1 rounded">{sl.label}</span>
+            <span className="font-bold text-xs text-[#7C3AED] bg-white px-1 rounded">{sl.label}</span>
             <div className="mx-auto mt-0.5 border-b-2 border-[#A29BFE]" style={{ width: '80%' }} />
           </div>
         ))}
@@ -645,7 +645,7 @@ export function BarModel({
       {renderBar(segments, 'border-[#A29BFE]/40')}
 
       {totalLabel && (
-        <p className="text-center text-sm font-bold text-[#6C5CE7]">{totalLabel}</p>
+        <p className="text-center text-sm font-bold text-[#7C3AED]">{totalLabel}</p>
       )}
 
       {comparison && (
@@ -921,7 +921,7 @@ export function ColumnMethod({
               {step.label && (
                 <div className="flex items-center">
                   <div className="w-8" />
-                  <div className="text-xs text-[#6C5CE7] font-medium -mt-1 mb-0.5 text-right"
+                  <div className="text-xs text-[#7C3AED] font-medium -mt-1 mb-0.5 text-right"
                        style={{ width: `${maxWidth * 2.5}rem` }}>
                     {step.label}
                   </div>
@@ -947,7 +947,7 @@ export function ColumnMethod({
       {hasMore && !allRevealed && (
         <button
           onClick={onRevealNext}
-          className="mt-3 w-full p-3 rounded-xl border-2 border-dashed border-[#A29BFE] text-[#6C5CE7] font-medium hover:bg-[#EDE8FF]/50 hover:border-[#6C5CE7] transition-all text-base"
+          className="mt-3 w-full p-3 rounded-xl border-2 border-dashed border-[#A29BFE] text-[#7C3AED] font-medium hover:bg-[#EDE8FF]/50 hover:border-[#7C3AED] transition-all text-base"
         >
           Show step {visibleSteps + 1}...
         </button>
@@ -1285,7 +1285,7 @@ export function AngleDiagram({
         )}
       </svg>
       {totalLabel && (
-        <p className="text-center text-sm font-bold text-[#6C5CE7]">{totalLabel}</p>
+        <p className="text-center text-sm font-bold text-[#7C3AED]">{totalLabel}</p>
       )}
     </div>
   );
@@ -1367,7 +1367,7 @@ export function BusStopDiagram({
 
         {/* Divisor */}
         <text x={startX - 32} y={digitY + 4} textAnchor="middle"
-              fill="#6C5CE7" fontSize="32" fontWeight="bold">
+              fill="#7C3AED" fontSize="32" fontWeight="bold">
           {divisor}
         </text>
 
@@ -2372,7 +2372,7 @@ export function SentenceDisplay({
   if (mode === "segments") {
     return (
       <div className="space-y-2">
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         <div className="flex flex-wrap gap-2">
           {segments.map((seg, i) => {
             const isError = i === errorIndex;
@@ -2399,7 +2399,7 @@ export function SentenceDisplay({
   // ── Gap mode ──
   if (mode === "gap") {
     const pillStyle = gapHighlight === "blank"
-      ? "border-2 border-dashed border-[#6C5CE7] bg-[#EDE8FF]/50 text-[#A29BFE] px-4 py-0.5 rounded-full inline-block min-w-[80px] text-center"
+      ? "border-2 border-dashed border-[#7C3AED] bg-[#EDE8FF]/50 text-[#A29BFE] px-4 py-0.5 rounded-full inline-block min-w-[80px] text-center"
       : gapHighlight === "correct"
       ? "bg-green-100 text-green-800 font-bold px-3 py-0.5 rounded-full inline-block border-2 border-green-400"
       : "bg-red-100 text-red-700 font-bold px-3 py-0.5 rounded-full inline-block border-2 border-red-300 line-through";
@@ -2409,7 +2409,7 @@ export function SentenceDisplay({
     const parts = text.split(/___+/);
     return (
       <div className="space-y-2">
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         <p className={`${fontSize} text-gray-800 leading-relaxed`}>
           {parts.map((part, i) => (
             <React.Fragment key={i}>
@@ -2427,11 +2427,11 @@ export function SentenceDisplay({
   // ── Highlight mode ──
   if (mode === "highlight") {
     // Build regex from highlight words
-    const words = highlightWords.map(hw => typeof hw === 'string' ? { word: hw, color: '#6C5CE7' } : hw);
+    const words = highlightWords.map(hw => typeof hw === 'string' ? { word: hw, color: '#7C3AED' } : hw);
     if (words.length === 0) {
       return (
         <div className="w-full">
-          {label && <p className="text-sm font-heading font-bold text-[#6C5CE7] mb-3 text-center">{label}</p>}
+          {label && <p className="text-sm font-heading font-bold text-[#7C3AED] mb-3 text-center">{label}</p>}
           <div className="bg-[#FAFBFF] border-2 border-[#EDE8FF] rounded-2xl p-5 shadow-sm">
             <p className={`${fontSize} text-slate-800 leading-relaxed text-center`}>{text}</p>
           </div>
@@ -2445,7 +2445,7 @@ export function SentenceDisplay({
     const splitParts = safeText.split(pattern);
     return (
       <div className="w-full">
-        {label && <p className="text-sm font-heading font-bold text-[#6C5CE7] mb-3 text-center">{label}</p>}
+        {label && <p className="text-sm font-heading font-bold text-[#7C3AED] mb-3 text-center">{label}</p>}
         <div className="bg-[#FAFBFF] border-2 border-[#EDE8FF] rounded-2xl p-5 shadow-sm">
           <p className={`${fontSize} text-slate-800 leading-relaxed text-center`}>
             {splitParts.map((part, i) => {
@@ -2472,7 +2472,7 @@ export function SentenceDisplay({
     const sentences = passage.split(/(?<=[.!?])\s+/);
     return (
       <div>
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-4 text-base leading-relaxed text-gray-700">
           {sentences.map((sentence, i) => {
             const isEvidence = evidenceSentence && sentence.trim().includes(evidenceSentence.trim());
@@ -2513,7 +2513,7 @@ export function LetterTiles({
   mode = "word",
   letters = [],
   highlightIndices = [],
-  highlightColor = "#6C5CE7",
+  highlightColor = "#7C3AED",
   strikeIndices = [],
   group1 = [],
   group2 = [],
@@ -2563,7 +2563,7 @@ export function LetterTiles({
   if (mode === "word") {
     return (
       <div>
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-2">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-2">{label}</p>}
         <div className="flex flex-wrap gap-1.5 justify-center">
           {letters.map((l, i) => renderTile(l, i))}
         </div>
@@ -2575,15 +2575,15 @@ export function LetterTiles({
   if (mode === "compound") {
     return (
       <div className="space-y-3">
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         <div className="flex items-center justify-center gap-2 flex-wrap">
           <div className="flex gap-1">{group1.map((l, i) => renderTile(l, i))}</div>
-          <span className="text-2xl font-bold text-[#6C5CE7]">+</span>
+          <span className="text-2xl font-bold text-[#7C3AED]">+</span>
           <div className="flex gap-1">{group2.map((l, i) => renderTile(l, i + 100))}</div>
         </div>
         {resultWord && (
           <div className="flex items-center justify-center gap-2">
-            <span className="text-2xl font-bold text-[#6C5CE7]">=</span>
+            <span className="text-2xl font-bold text-[#7C3AED]">=</span>
             <div className="flex gap-1">
               {resultWord.split('').map((l, i) => (
                 <div key={i} className={`${tileBase} bg-green-50 border-green-400 text-green-800`}>{l}</div>
@@ -2600,7 +2600,7 @@ export function LetterTiles({
     const allLetters = topLetters.length > 0 ? topLetters : letters;
     return (
       <div>
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-2">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-2">{label}</p>}
         <div className="flex gap-0.5 justify-center relative">
           {allLetters.map((l, i) => {
             const inWindow = i >= windowStart && i < windowEnd;
@@ -2622,7 +2622,7 @@ export function LetterTiles({
   if (mode === "gap") {
     return (
       <div className="space-y-2">
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         <div className="flex gap-1.5 justify-center flex-wrap">
           {template.map((l, i) => {
             if (l === '_') {
@@ -2643,7 +2643,7 @@ export function LetterTiles({
   if (mode === "shared-pair") {
     return (
       <div className="space-y-3">
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         {words.map((pair, wi) => {
           const pairStr = typeof pair === 'string' ? pair : '';
           const parts = pairStr.split('(?)');
@@ -2685,7 +2685,7 @@ export function LetterTiles({
   if (mode === "shared") {
     return (
       <div className="space-y-3">
-        {label && <p className="text-sm font-bold text-[#6C5CE7] mb-1">{label}</p>}
+        {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
         {words.map((wordObj, wi) => {
           const wordLetters = typeof wordObj === 'string' ? wordObj.split('') : (wordObj.letters || wordObj.word?.split('') || []);
           const gapIdx = typeof wordObj === 'object' && wordObj.gapIndex !== undefined ? wordObj.gapIndex : gapPosition;
@@ -2816,7 +2816,7 @@ export function AlphabetLine({
 
         {/* Main line */}
         <line x1={padding - 5} y1={lineY} x2={width - padding + 5} y2={lineY}
-              stroke="#6C5CE7" strokeWidth={4} strokeLinecap="round" />
+              stroke="#7C3AED" strokeWidth={4} strokeLinecap="round" />
 
         {/* Letters BELOW the line, hops ABOVE — no overlap */}
         {letters.map((l) => {
@@ -2828,7 +2828,7 @@ export function AlphabetLine({
           return (
             <g key={l.char}>
               <line x1={x} y1={lineY - 14} x2={x} y2={lineY + 14}
-                    stroke={isEJOTY && showEJOTY ? "#16a34a" : "#6C5CE7"} strokeWidth={isEJOTY && showEJOTY ? 3.5 : 2.5} />
+                    stroke={isEJOTY && showEJOTY ? "#16a34a" : "#7C3AED"} strokeWidth={isEJOTY && showEJOTY ? 3.5 : 2.5} />
               {/* Letter labels sit BELOW the line */}
               <text x={x} y={lineY + 38} textAnchor="middle"
                     fill={isPoint ? (pointData?.color || "#dc2626") : isEJOTY && showEJOTY ? "#16a34a" : "#6b7280"}
@@ -2868,7 +2868,7 @@ export function AlphabetLine({
               />
               {hop.label && (
                 <text x={midX} y={lineY - 30 - arcH} textAnchor="middle"
-                      fill="#6C5CE7" fontSize={hopLabelFontSize > 22 ? 18 : hopLabelFontSize} fontWeight="bold">
+                      fill="#7C3AED" fontSize={hopLabelFontSize > 22 ? 18 : hopLabelFontSize} fontWeight="bold">
                   {hop.label}
                 </text>
               )}
@@ -2994,7 +2994,7 @@ export function SlidingWindow({
                   inWindow
                     ? isCorrect && found
                       ? 'bg-green-500 text-white'
-                      : 'bg-[#6C5CE7] text-white'
+                      : 'bg-[#7C3AED] text-white'
                     : 'bg-gray-100 text-gray-700'
                 }`}
                 style={{
@@ -3034,7 +3034,7 @@ export function SlidingWindow({
         isCorrect && found
           ? 'bg-green-100 text-green-700 border-2 border-green-400'
           : isCorrect
-          ? 'bg-purple-100 text-[#6C5CE7] border-2 border-[#6C5CE7] animate-pulse'
+          ? 'bg-purple-100 text-[#7C3AED] border-2 border-[#7C3AED] animate-pulse'
           : 'bg-gray-100 text-gray-600 border border-gray-200'
       }`}>
         {reversed ? `${currentLetters} → ${displayLetters}` : displayLetters || '...'}
@@ -3049,7 +3049,7 @@ export function SlidingWindow({
       </div>
 
       {label && (
-        <p className="text-sm font-heading font-bold text-[#6C5CE7] mt-2 text-center">{label}</p>
+        <p className="text-sm font-heading font-bold text-[#7C3AED] mt-2 text-center">{label}</p>
       )}
     </div>
   );
@@ -3080,7 +3080,7 @@ export function LogicDiagram({
       {/* Clues */}
       {clues.length > 0 && (
         <div className="w-full bg-[#FAFBFF] border border-[#EDE8FF] rounded-lg p-3 mb-3">
-          <p className="text-xs font-bold text-[#6C5CE7] mb-1">Clues:</p>
+          <p className="text-xs font-bold text-[#7C3AED] mb-1">Clues:</p>
           {clues.map((clue, i) => (
             <p key={i} className="text-sm text-gray-700">{i + 1}. {clue}</p>
           ))}
@@ -3100,7 +3100,7 @@ export function LogicDiagram({
             <div key={i} className="flex flex-col items-center">
               <div className={`px-6 py-2.5 rounded-lg font-heading font-bold text-base min-w-[140px] text-center transition-all ${
                 isHighlighted
-                  ? 'bg-[#6C5CE7] text-white shadow-md'
+                  ? 'bg-[#7C3AED] text-white shadow-md'
                   : 'bg-[#EDE8FF] text-slate-800'
               }`}>
                 {item}
@@ -3179,7 +3179,7 @@ export function CodeTable({
         </table>
       </div>
       {showRule && ruleLabel && (
-        <p className="mt-2 text-sm font-bold text-[#6C5CE7] text-center">{ruleLabel}</p>
+        <p className="mt-2 text-sm font-bold text-[#7C3AED] text-center">{ruleLabel}</p>
       )}
     </div>
   );
@@ -3223,7 +3223,7 @@ export function SequenceChain({
           {allDiffs.map((diff, i) => (
             <React.Fragment key={`diff-${i}`}>
               <div className="flex flex-col items-center px-1" style={{ minWidth: '28px' }}>
-                <span className="text-xs font-bold text-[#6C5CE7]">{diff}</span>
+                <span className="text-xs font-bold text-[#7C3AED]">{diff}</span>
                 <span className="text-[#A29BFE] text-xs">→</span>
               </div>
               {i < allDiffs.length - 1 || (showNext && i === allDiffs.length - 1) ? (
@@ -3242,7 +3242,7 @@ export function SequenceChain({
             <React.Fragment key={`term-${i}`}>
               <div className={`w-14 h-14 rounded-xl border-2 flex items-center justify-center font-bold text-lg ${
                 isHighlighted
-                  ? 'bg-[#EDE8FF] border-[#6C5CE7] text-[#5A4BD1]'
+                  ? 'bg-[#EDE8FF] border-[#7C3AED] text-[#5A4BD1]'
                   : 'bg-white border-[#A29BFE]/40 text-gray-900'
               }`}>
                 {term}
@@ -3426,7 +3426,7 @@ export function AnalogyDisplay({
   pair2word = "",
   answer = null,
   relationship = null,
-  pair1Color = "#6C5CE7",
+  pair1Color = "#7C3AED",
   pair2Color = "#dc2626",
   label = null,
   mode = "analogy"  // "analogy" = →, "antonym" = ↔
@@ -3444,7 +3444,7 @@ export function AnalogyDisplay({
   return (
     <div className="w-full">
       {label && (
-        <p className="text-sm font-heading font-bold text-[#6C5CE7] mb-3 text-center">{label}</p>
+        <p className="text-sm font-heading font-bold text-[#7C3AED] mb-3 text-center">{label}</p>
       )}
       <div className="bg-[#FAFBFF] border-2 border-[#EDE8FF] rounded-2xl p-5 shadow-sm">
         {mode === "antonym" ? (
@@ -3538,7 +3538,7 @@ export function AnalogyDisplay({
 export function WordChipsDisplay({
   words = [],
   highlighted = [],
-  highlightColor = "#6C5CE7",
+  highlightColor = "#7C3AED",
   label = null
 }) {
   const isHighlighted = (w) => highlighted.some(h => h.toLowerCase() === w.toLowerCase());
@@ -3546,7 +3546,7 @@ export function WordChipsDisplay({
   return (
     <div className="w-full">
       {label && (
-        <p className="text-sm font-heading font-bold text-[#6C5CE7] mb-3 text-center">{label}</p>
+        <p className="text-sm font-heading font-bold text-[#7C3AED] mb-3 text-center">{label}</p>
       )}
       <div className="bg-[#FAFBFF] border-2 border-[#EDE8FF] rounded-2xl p-5 shadow-sm">
         <div className="flex flex-wrap items-center justify-center gap-3">
@@ -3615,7 +3615,7 @@ export function SDTTriangle({
         <polygon
           points={`${top} ${bottomLeft} ${bottomRight}`}
           fill="#EDE8FF"
-          stroke="#6C5CE7"
+          stroke="#7C3AED"
           strokeWidth="2.5"
         />
 
@@ -3623,13 +3623,13 @@ export function SDTTriangle({
 
         {/* Cover overlays — simple circles over the letter, like covering with your thumb */}
         {isCovered("D") && (
-          <circle cx={dPos.x} cy={dPos.y} r={coverRadius} fill="#6C5CE7" opacity="0.9" />
+          <circle cx={dPos.x} cy={dPos.y} r={coverRadius} fill="#7C3AED" opacity="0.9" />
         )}
         {isCovered("S") && (
-          <circle cx={sPos.x} cy={sPos.y} r={coverRadius} fill="#6C5CE7" opacity="0.9" />
+          <circle cx={sPos.x} cy={sPos.y} r={coverRadius} fill="#7C3AED" opacity="0.9" />
         )}
         {isCovered("T") && (
-          <circle cx={tPos.x} cy={tPos.y} r={coverRadius} fill="#6C5CE7" opacity="0.9" />
+          <circle cx={tPos.x} cy={tPos.y} r={coverRadius} fill="#7C3AED" opacity="0.9" />
         )}
 
         {/* D label (top section) */}
@@ -3665,7 +3665,7 @@ export function SDTTriangle({
           textAnchor="middle"
           dominantBaseline="central"
           fontSize={smallFontSize}
-          fill="#6C5CE7"
+          fill="#7C3AED"
         >
           x
         </text>
@@ -3690,14 +3690,14 @@ export function SDTTriangle({
           textAnchor="middle"
           dominantBaseline="central"
           fontSize={smallFontSize}
-          fill="#6C5CE7"
+          fill="#7C3AED"
           fontWeight="bold"
         >
           ÷
         </text>
       </svg>
       {label && (
-        <p className="text-sm font-heading font-bold text-[#6C5CE7] mt-2 text-center">{label}</p>
+        <p className="text-sm font-heading font-bold text-[#7C3AED] mt-2 text-center">{label}</p>
       )}
     </div>
   );
@@ -4620,7 +4620,7 @@ export function FunctionMachine({
                 <div className={`w-14 h-14 rounded-full border-3 flex items-center justify-center font-bold text-lg shadow-sm ${
                   isUnknown
                     ? 'bg-amber-50 border-amber-400 text-amber-600 border-dashed'
-                    : 'bg-white border-[#6C5CE7] text-[#5A4BD1]'
+                    : 'bg-white border-[#7C3AED] text-[#5A4BD1]'
                 }`}>
                   {item.value}
                 </div>
@@ -4665,7 +4665,7 @@ export function FunctionMachine({
 //   xLabel    — x-axis title (optional)
 //   yLabel    — y-axis title (optional)
 //   highlight — index of point to highlight (optional)
-//   color     — line/point colour (default "#6C5CE7")
+//   color     — line/point colour (default "#7C3AED")
 //   showGrid  — show horizontal grid lines (default true)
 //   unit      — unit string shown on y-axis labels (optional, e.g. "°C")
 
@@ -4674,7 +4674,7 @@ export function LineGraph({
   xLabel = "",
   yLabel = "",
   highlight = null,
-  color = "#6C5CE7",
+  color = "#7C3AED",
   showGrid = true,
   unit = "",
   showValues = true
@@ -5047,7 +5047,7 @@ export function PieChart({
           <>
             <circle cx={cx} cy={cy} r={22} fill="white" opacity={0.85} />
             <text x={cx} y={cy + 6} textAnchor="middle"
-              fill="#6C5CE7" fontSize={16} fontWeight="bold">
+              fill="#7C3AED" fontSize={16} fontWeight="bold">
               {total}
             </text>
           </>
@@ -5121,7 +5121,7 @@ export function TwoWayTable({
     fontWeight: 700,
     fontSize: 13,
     color: 'white',
-    background: '#6C5CE7',
+    background: '#7C3AED',
     borderBottom: '2px solid #5a4bd4',
     textAlign: 'center'
   };
@@ -5143,7 +5143,7 @@ export function TwoWayTable({
         borderSpacing: 0,
         borderRadius: 10,
         overflow: 'hidden',
-        border: '2px solid #6C5CE7',
+        border: '2px solid #7C3AED',
         fontSize: 14,
         minWidth: 240
       }}>
@@ -5186,7 +5186,7 @@ export function TwoWayTable({
                     textAlign: 'center',
                     fontWeight: 500,
                     fontSize: 15,
-                    color: row.cells[col] === '?' ? '#dc2626' : (highlightCol === col ? '#6C5CE7' : '#1f2937'),
+                    color: row.cells[col] === '?' ? '#dc2626' : (highlightCol === col ? '#7C3AED' : '#1f2937'),
                     fontWeight: row.cells[col] === '?' ? 700 : 500,
                     background: highlightCol === col
                       ? (ri % 2 === 0 ? '#ede9fe' : '#e0dbfa')
@@ -5201,7 +5201,7 @@ export function TwoWayTable({
                     textAlign: 'center',
                     fontWeight: 700,
                     fontSize: 14,
-                    color: '#6C5CE7',
+                    color: '#7C3AED',
                     background: ri % 2 === 0 ? '#f3f0ff' : '#ede9fe',
                     borderBottom: isLast ? 'none' : '1px solid #f3f4f6',
                     ...(isLast ? { borderBottomRightRadius: 8 } : {})
@@ -5224,7 +5224,7 @@ export function TwoWayTable({
                   textAlign: 'center',
                   fontWeight: 700,
                   fontSize: 14,
-                  color: colTotals[col] === '?' ? '#dc2626' : '#6C5CE7',
+                  color: colTotals[col] === '?' ? '#dc2626' : '#7C3AED',
                   background: '#f3f0ff',
                   borderBottom: 'none'
                 }}>{colTotals[col]}</td>

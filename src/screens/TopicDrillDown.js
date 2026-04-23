@@ -3,12 +3,12 @@ import { ArrowLeft, Star, TrendingUp, TrendingDown, Minus, Clock, Target, BarCha
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
 
 function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractise, onBack, onHome }) {
   const m = mastery.getTopicMastery(topicKey);
   const displayName = topicNames[topicKey] || topicKey;
-  const colour = subjectColours[subject] || '#6C5CE7';
+  const colour = subjectColours[subject] || '#7C3AED';
 
   // Get question results for this topic (most recent first)
   const topicResults = (questionResults || [])
@@ -69,12 +69,12 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <button onClick={onBack} className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+          <button onClick={onBack} className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
             <ArrowLeft className="w-5 h-5" />
             Back to Progress
           </button>
           {onHome && (
-            <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+            <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">
               <Home className="w-5 h-5" />
             </button>
           )}
@@ -137,7 +137,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
         {sparkDays.length >= 2 && (
           <div className="card-elevated p-5 mb-6">
             <div className="flex items-center gap-2 mb-3">
-              <BarChart3 className="w-4 h-4 text-[#6C5CE7]" />
+              <BarChart3 className="w-4 h-4 text-[#7C3AED]" />
               <h3 className="font-heading font-bold text-slate-800 text-sm">Accuracy Over Time (Last 30 Days)</h3>
             </div>
             <svg width="100%" viewBox={`0 0 ${sparkLeft + sparkW + 35} ${sparkTop + sparkH + 20}`}>
@@ -178,7 +178,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
         {diffData.some(d => d.total > 0) && (
           <div className="card-elevated p-5 mb-6">
             <div className="flex items-center gap-2 mb-3">
-              <Target className="w-4 h-4 text-[#6C5CE7]" />
+              <Target className="w-4 h-4 text-[#7C3AED]" />
               <h3 className="font-heading font-bold text-slate-800 text-sm">Difficulty Breakdown</h3>
             </div>
             <div className="space-y-3">
@@ -214,7 +214,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
         {topicResults.length > 0 && (
           <div className="card-elevated p-5 mb-6">
             <div className="flex items-center gap-2 mb-3">
-              <Clock className="w-4 h-4 text-[#6C5CE7]" />
+              <Clock className="w-4 h-4 text-[#7C3AED]" />
               <h3 className="font-heading font-bold text-slate-800 text-sm">Recent Questions</h3>
             </div>
             <div className="space-y-1.5 max-h-64 overflow-y-auto">

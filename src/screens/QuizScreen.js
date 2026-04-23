@@ -64,13 +64,13 @@ function QuizScreen({
           <div className="flex items-center justify-between mb-6">
             <button
               onClick={onBack}
-              className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
             >
               <ArrowLeft className="w-5 h-5" />
               {isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
             </button>
             {onHome && !isTestingMode && !returnToSpeedReview && (
-              <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+              <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">
                 <Home className="w-5 h-5" />
               </button>
             )}
@@ -79,7 +79,7 @@ function QuizScreen({
           <div className="card-elevated p-6 md:p-8">
             <div className="mb-6">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
+                <span className="text-sm font-heading font-semibold text-[#7C3AED]">
                   {quizTitle} — Question {currentQuestionIndex + 1} of {quizQuestions.length}
                 </span>
                 <div className="flex items-center gap-2">
@@ -88,7 +88,7 @@ function QuizScreen({
                   </div>
                   <button
                     onClick={() => setTimerEnabled(!timerEnabled)}
-                    className={`p-1.5 rounded-lg transition-colors ${timerEnabled ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
+                    className={`p-1.5 rounded-lg transition-colors ${timerEnabled ? 'bg-[#7C3AED] text-white' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
                     title={timerEnabled ? 'Hide timer' : 'Show timer'}
                   >
                     <Clock className="w-4 h-4" />
@@ -98,7 +98,7 @@ function QuizScreen({
               {/* Progress bar */}
               <div className="w-full h-2 bg-[#EDE8FF] rounded-full overflow-hidden mb-4">
                 <div
-                  className="h-full bg-gradient-to-r from-[#6C5CE7] to-[#A29BFE] rounded-full transition-all duration-500 ease-out"
+                  className="h-full bg-gradient-to-r from-[#7C3AED] to-[#A29BFE] rounded-full transition-all duration-500 ease-out"
                   style={{ width: `${((currentQuestionIndex + 1) / quizQuestions.length) * 100}%` }}
                 />
               </div>
@@ -163,14 +163,14 @@ function QuizScreen({
               {!isTestingMode && <div className="flex gap-2 mb-4">
                 <button
                   onClick={onFindLesson}
-                  className="px-3 py-1.5 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] hover:from-[#DDD6FF] hover:to-[#CFF0FF] text-[#6C5CE7] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-[#A29BFE]/30"
+                  className="px-3 py-1.5 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] hover:from-[#DDD6FF] hover:to-[#CFF0FF] text-[#7C3AED] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-[#A29BFE]/30"
                 >
                   <BookOpen className="w-4 h-4" />
                   Find Me a Lesson
                 </button>
                 <button
                   onClick={onAskTutor}
-                  className="px-3 py-1.5 bg-[#6C5CE7]/10 hover:bg-[#6C5CE7]/20 text-[#6C5CE7] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-[#6C5CE7]/20"
+                  className="px-3 py-1.5 bg-[#7C3AED]/10 hover:bg-[#7C3AED]/20 text-[#7C3AED] font-medium rounded-lg transition-all text-sm flex items-center gap-1.5 border border-[#7C3AED]/20"
                 >
                   <MessageCircle className="w-4 h-4" />
                   AI Tutor
@@ -224,7 +224,7 @@ function QuizScreen({
                         key={idx}
                         className="bg-gray-50 border-2 border-gray-300 rounded-lg p-3 text-center"
                       >
-                        <span className="block text-xs font-bold text-[#6C5CE7] mb-1">
+                        <span className="block text-xs font-bold text-[#7C3AED] mb-1">
                           Section {String.fromCharCode(65 + idx)}
                         </span>
                         <span className="text-gray-900 text-sm font-medium">{segment}</span>
@@ -260,7 +260,7 @@ function QuizScreen({
                 if (!needsAlphabet) return null;
                 return (
                 <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
-                  <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">
+                  <div className="text-[9px] text-[#7C3AED] mb-1.5 font-bold uppercase tracking-widest">
                     {isLetterCode
                       ? 'Work out the pattern from the example, then apply it to the new word'
                       : 'Use this alphabet to help you'}
@@ -269,10 +269,10 @@ function QuizScreen({
                     {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                       <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
                         <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${
-                          i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'
+                          i % 5 === 4 ? 'text-[#7C3AED]' : 'text-slate-800'
                         }`}>{letter}</span>
                         <span className={`text-[7px] sm:text-[8px] font-mono ${
-                          i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'
+                          i % 5 === 4 ? 'text-[#7C3AED] font-bold' : 'text-gray-400'
                         }`}>{i + 1}</span>
                       </div>
                     ))}
@@ -308,7 +308,7 @@ function QuizScreen({
                               ? 'border-red-500 bg-red-50 text-red-900'
                               : 'border-gray-200 bg-gray-50 text-gray-500'
                             : selectedPair.includes(idx)
-                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                            ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                             : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                         }`}
                       >
@@ -331,7 +331,7 @@ function QuizScreen({
               {currentQuestion.questionType === 'pick-from-sets' && (
                 <div className="mb-6 space-y-4" data-testid="pick-from-sets-groups">
                   <div>
-                    <p className="text-sm font-bold text-[#6C5CE7] mb-2">Group A</p>
+                    <p className="text-sm font-bold text-[#7C3AED] mb-2">Group A</p>
                     <div className="grid grid-cols-3 gap-2 sm:gap-3">
                       {currentQuestion.setA.map((word, idx) => (
                         <button
@@ -346,7 +346,7 @@ function QuizScreen({
                                 ? 'border-red-500 bg-red-50 text-red-900'
                                 : 'border-gray-200 bg-gray-50 text-gray-500'
                               : selectedPair[0] === idx
-                              ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                              ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                               : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                           }`}
                         >
@@ -371,7 +371,7 @@ function QuizScreen({
                                 ? 'border-red-500 bg-red-50 text-red-900'
                                 : 'border-gray-200 bg-gray-50 text-gray-500'
                               : selectedPair[1] === idx
-                              ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                              ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                               : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                           }`}
                         >
@@ -445,7 +445,7 @@ function QuizScreen({
                             ? 'border-[#FF6B6B] bg-[#FF6B6B]/10 text-slate-800'
                             : 'border-gray-200 bg-gray-50 text-gray-400'
                           : selectedAnswer === idx
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800'
+                          ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800'
                           : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}
                     >
@@ -457,8 +457,8 @@ function QuizScreen({
                             ? 'bg-[#FF6B6B] text-white'
                             : 'bg-gray-200 text-gray-400'
                           : selectedAnswer === idx
-                          ? 'bg-[#6C5CE7] text-white'
-                          : 'bg-[#EDE8FF] text-[#6C5CE7]'
+                          ? 'bg-[#7C3AED] text-white'
+                          : 'bg-[#EDE8FF] text-[#7C3AED]'
                       }`}>
                         {letter}
                       </span>
@@ -521,7 +521,7 @@ function QuizScreen({
                       <div className="flex gap-2 mt-3">
                         <button
                           onClick={onAskTutor}
-                          className="px-4 py-2 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors text-sm flex items-center gap-1.5"
+                          className="px-4 py-2 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors text-sm flex items-center gap-1.5"
                         >
                           <MessageCircle className="w-4 h-4" />
                           Talk to AI Tutor
@@ -543,7 +543,7 @@ function QuizScreen({
                 <div className="mt-4 bg-gray-50 border-2 border-gray-300 rounded-xl p-4">
                   <p className="text-sm font-medium text-gray-700 mb-2">What's wrong with this question?</p>
                   {currentUser && (
-                    <p className="text-xs text-[#6C5CE7] mb-2">Submitting as {currentUser}</p>
+                    <p className="text-xs text-[#7C3AED] mb-2">Submitting as {currentUser}</p>
                   )}
                   {!currentUser && (
                     <p className="text-xs text-amber-600 mb-2">Pick your name on the home screen so we know who's reporting</p>
@@ -553,7 +553,7 @@ function QuizScreen({
                       value={feedbackText}
                       onChange={(e) => onFeedbackTextChange(e.target.value)}
                       placeholder={isListening ? "Listening..." : "e.g. My daughter didn't understand what LCM means..."}
-                      className={`w-full px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#6C5CE7] text-sm resize-none ${isListening ? 'border-red-400 bg-red-50' : 'border-gray-300'}`}
+                      className={`w-full px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] text-sm resize-none ${isListening ? 'border-red-400 bg-red-50' : 'border-gray-300'}`}
                       rows={3}
                     />
                     {speechSupported && (
@@ -562,7 +562,7 @@ function QuizScreen({
                         className={`absolute right-2 bottom-2 p-2 rounded-lg transition-colors ${
                           isListening
                             ? 'bg-red-500 hover:bg-red-600 text-white animate-pulse'
-                            : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#6C5CE7]'
+                            : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#7C3AED]'
                         }`}
                         title={isListening ? "Stop listening" : "Speak your feedback"}
                       >
@@ -580,7 +580,7 @@ function QuizScreen({
                     <button
                       onClick={onSubmitFeedback}
                       disabled={!feedbackText.trim()}
-                      className="px-4 py-1.5 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors text-sm disabled:opacity-50"
+                      className="px-4 py-1.5 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors text-sm disabled:opacity-50"
                     >
                       Submit
                     </button>
@@ -591,7 +591,7 @@ function QuizScreen({
               {showTutorChat && (
                 <div className="mt-6 bg-[#EDE8FF] border-2 border-[#A29BFE]/40 rounded-xl p-4">
                   <div className="flex items-center mb-3">
-                    <Brain className="w-5 h-5 text-[#6C5CE7] mr-2" />
+                    <Brain className="w-5 h-5 text-[#7C3AED] mr-2" />
                     <h4 className="font-heading font-bold text-slate-800">AI Tutor Chat</h4>
                   </div>
 
@@ -600,7 +600,7 @@ function QuizScreen({
                       <div key={idx} className={`mb-3 ${msg.role === 'user' ? 'text-right' : 'text-left'}`}>
                         <div className={`inline-block p-3 rounded-lg max-w-[80%] ${
                           msg.role === 'user'
-                            ? 'bg-[#6C5CE7] text-white'
+                            ? 'bg-[#7C3AED] text-white'
                             : 'bg-[#FAFBFF] text-slate-800 border border-[#EDE8FF]'
                         }`}>
                           <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
@@ -626,7 +626,7 @@ function QuizScreen({
                       onKeyPress={(e) => e.key === 'Enter' && onSendMessage()}
                       placeholder={isListening ? "Listening..." : "Ask your question here..."}
                       disabled={isAiThinking}
-                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#6C5CE7] disabled:bg-gray-100 ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
+                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
                     />
                     {speechSupported && (
                       <button
@@ -635,7 +635,7 @@ function QuizScreen({
                         className={`px-3 py-2 rounded-lg transition-colors disabled:opacity-50 ${
                           isListening
                             ? 'bg-red-500 hover:bg-red-600 text-white animate-pulse'
-                            : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#6C5CE7]'
+                            : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#7C3AED]'
                         }`}
                         title={isListening ? "Stop listening" : "Speak your question"}
                       >
@@ -645,7 +645,7 @@ function QuizScreen({
                     <button
                       onClick={onSendMessage}
                       disabled={!userMessage.trim() || isAiThinking}
-                      className="px-4 py-2 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-4 py-2 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       Send
                     </button>

@@ -10,8 +10,8 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
   const [activeTab, setActiveTab] = useState('tips');
 
   const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-  const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
-  const colour = subjectColours[subject] || '#6C5CE7';
+  const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
+  const colour = subjectColours[subject] || '#7C3AED';
   const subjectName = subjectNames[subject] || 'General';
 
   // Filter tips for this subject + general tips, sorted by relevance to weak topics
@@ -116,13 +116,13 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
           <div className="flex items-center gap-2">
             <button
               onClick={onBack}
-              className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-1 text-sm"
+              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 text-sm"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Learning Modes
             </button>
             {onHome && (
-              <button onClick={onHome} className="p-1.5 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+              <button onClick={onHome} className="p-1.5 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">
                 <Home className="w-4 h-4" />
               </button>
             )}

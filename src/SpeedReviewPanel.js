@@ -28,7 +28,7 @@ function renderBoldText(text) {
   const parts = String(text).split(/(\*\*.*?\*\*)/g);
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
-      return <strong key={i} className="text-[#6C5CE7] font-bold">{part.slice(2, -2)}</strong>;
+      return <strong key={i} className="text-[#7C3AED] font-bold">{part.slice(2, -2)}</strong>;
     }
     return part;
   });
@@ -225,7 +225,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
           <select
             value={mapTopic}
             onChange={e => setMapTopic(e.target.value)}
-            className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-[#6C5CE7]"
+            className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-[#7C3AED]"
           >
             <option value="">-- Select topic --</option>
             {['Maths', 'English', 'VR'].map(subject => (
@@ -252,7 +252,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
                 key={f}
                 onClick={() => setFilterConf(f)}
                 className={`px-2 py-1 rounded text-xs font-medium ${
-                  filterConf === f ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                  filterConf === f ? 'bg-[#7C3AED] text-white' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
                 }`}
               >
                 {f === 'all' ? 'All' : f.charAt(0).toUpperCase() + f.slice(1)}
@@ -331,7 +331,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
               {onViewLesson && sc && lesson && (
                 <button
                   onClick={() => onViewLesson(questionMap.topic, sc, lesson)}
-                  className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-[#6C5CE7]/30 bg-[#6C5CE7]/10 text-[#6C5CE7] hover:bg-[#6C5CE7]/20 font-bold"
+                  className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-[#7C3AED]/30 bg-[#7C3AED]/10 text-[#7C3AED] hover:bg-[#7C3AED]/20 font-bold"
                 >
                   <Eye className="w-3.5 h-3.5" />
                   View Lesson
@@ -520,7 +520,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
                     </span>
                     <button
                       onClick={() => onViewQuestion && onViewQuestion(questionMap.topic, m.questionId)}
-                      className="text-xs px-2 py-0.5 rounded bg-[#6C5CE7]/10 text-[#6C5CE7] hover:bg-[#6C5CE7]/20 font-medium"
+                      className="text-xs px-2 py-0.5 rounded bg-[#7C3AED]/10 text-[#7C3AED] hover:bg-[#7C3AED]/20 font-medium"
                     >
                       View
                     </button>
@@ -800,7 +800,7 @@ export default function SpeedReviewPanel({
 
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
-          <button onClick={onBack} className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+          <button onClick={onBack} className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
             <ArrowLeft className="w-5 h-5" />
             Back
           </button>
@@ -816,7 +816,7 @@ export default function SpeedReviewPanel({
           <button
             onClick={() => setActiveTab('lessons')}
             className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${
-              activeTab === 'lessons' ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              activeTab === 'lessons' ? 'bg-[#7C3AED] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
             Lesson Review
@@ -824,7 +824,7 @@ export default function SpeedReviewPanel({
           <button
             onClick={() => setActiveTab('questionMap')}
             className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${
-              activeTab === 'questionMap' ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              activeTab === 'questionMap' ? 'bg-[#7C3AED] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
             Question → Lesson Map
@@ -839,7 +839,7 @@ export default function SpeedReviewPanel({
             <select
               value={selectedTopic}
               onChange={e => { setSelectedTopic(e.target.value); setCollapsedLessons(new Set()); }}
-              className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-[#6C5CE7] focus:border-transparent"
+              className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent"
             >
               <option value="">-- Select topic --</option>
               {['Maths', 'English', 'VR'].map(subject => (
@@ -938,7 +938,7 @@ export default function SpeedReviewPanel({
             <div key={sc.id} className="mb-8" style={{ animationDelay: `${scIdx * 30}ms` }}>
               {/* Sub-concept header */}
               <div className="card rounded-xl overflow-hidden">
-                <div className="flex items-center justify-between px-5 py-3 bg-gradient-to-r from-[#6C5CE7]/10 to-transparent border-b border-gray-100">
+                <div className="flex items-center justify-between px-5 py-3 bg-gradient-to-r from-[#7C3AED]/10 to-transparent border-b border-gray-100">
                   <div className="flex items-center gap-3">
                     <span className="text-xs font-mono text-slate-500">#{scIdx + 1}</span>
                     <h3 className="font-heading font-bold text-slate-800">{sc.name}</h3>
@@ -948,7 +948,7 @@ export default function SpeedReviewPanel({
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => collapseAll(sc)}
-                      className="text-xs text-[#6C5CE7] hover:underline"
+                      className="text-xs text-[#7C3AED] hover:underline"
                     >
                       Collapse all
                     </button>
@@ -988,7 +988,7 @@ export default function SpeedReviewPanel({
                         {onViewLesson && (
                           <button
                             onClick={() => onViewLesson(selectedTopic, sc, lesson)}
-                            className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-[#6C5CE7]/30 bg-[#6C5CE7]/10 text-[#6C5CE7] hover:bg-[#6C5CE7]/20 font-bold"
+                            className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-[#7C3AED]/30 bg-[#7C3AED]/10 text-[#7C3AED] hover:bg-[#7C3AED]/20 font-bold"
                           >
                             <Eye className="w-3.5 h-3.5" />
                             View Lesson

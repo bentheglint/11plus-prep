@@ -3,7 +3,7 @@ import { ArrowLeft, CheckCircle, XCircle, Circle } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
 
 /**
  * QuizDetailScreen — per-question review of a completed quiz.
@@ -162,7 +162,7 @@ function QuestionReview({ index, question, result }) {
 
       {question.explanation && (
         <div className="mt-4 p-3 rounded-lg bg-[#EDE8FF] border border-[#D4C9F9]">
-          <p className="text-xs font-bold uppercase tracking-wider text-[#6C5CE7] mb-1">Explanation</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-[#7C3AED] mb-1">Explanation</p>
           <p className="text-sm text-slate-700">{question.explanation}</p>
         </div>
       )}

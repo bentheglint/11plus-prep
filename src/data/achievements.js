@@ -19,7 +19,7 @@ const ACHIEVEMENTS = [
     name: 'Half Century',
     description: 'Answer 50 questions',
     icon: Target,
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     check: (s) => s.totalQuestions >= 50,
   },
   {
@@ -27,7 +27,7 @@ const ACHIEVEMENTS = [
     name: 'Century',
     description: 'Answer 100 questions',
     icon: Target,
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     check: (s) => s.totalQuestions >= 100,
   },
   {
@@ -121,7 +121,7 @@ const ACHIEVEMENTS = [
     name: 'VR Explorer',
     description: 'Try every VR topic',
     icon: Brain,
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     check: (s) => s.vrTopicsCovered >= 16,
   },
 
@@ -159,7 +159,7 @@ const ACHIEVEMENTS = [
     name: 'Test Ready',
     description: 'Complete your first mock test',
     icon: Zap,
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     check: (s) => s.mockTestCount >= 1,
   },
   {

@@ -34,7 +34,7 @@ function MockTestNavigator({ questions, answers, flags, currentIndex, onGoTo, on
               onClick={() => onGoTo(i)}
               className={`relative w-full aspect-square rounded-lg text-xs font-bold flex items-center justify-center transition-all
                 ${isCurrent
-                  ? 'ring-2 ring-[#6C5CE7] bg-[#EDE8FF] text-[#6C5CE7]'
+                  ? 'ring-2 ring-[#7C3AED] bg-[#EDE8FF] text-[#7C3AED]'
                   : isAnswered
                   ? 'bg-[#007D62]/15 text-[#00876A]'
                   : 'bg-gray-100 text-slate-500 hover:bg-gray-200'

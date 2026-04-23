@@ -2,7 +2,7 @@ import React from 'react';
 import { AlertCircle, Star, ChevronRight } from 'lucide-react';
 import { topicNames } from '../RecommendationCard';
 
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
 function FocusAreas({ mastery, onTopicClick }) {
@@ -20,14 +20,14 @@ function FocusAreas({ mastery, onTopicClick }) {
   return (
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center gap-2 mb-4">
-        <AlertCircle className="w-5 h-5 text-[#6C5CE7]" />
+        <AlertCircle className="w-5 h-5 text-[#7C3AED]" />
         <h3 className="font-heading font-bold text-slate-800">Focus Areas</h3>
       </div>
       <p className="text-sm text-slate-500 mb-4">Topics that need the most attention right now:</p>
 
       <div className="space-y-3">
         {focusAreas.map((area, i) => {
-          const colour = subjectColours[area.subject] || '#6C5CE7';
+          const colour = subjectColours[area.subject] || '#7C3AED';
           const displayName = topicNames[area.topicKey] || area.topicKey;
 
           return (
@@ -56,7 +56,7 @@ function FocusAreas({ mastery, onTopicClick }) {
                   </div>
                 )}
               </div>
-              <ChevronRight className="w-5 h-5 text-gray-200 group-hover:text-[#6C5CE7] transition-colors flex-shrink-0" />
+              <ChevronRight className="w-5 h-5 text-gray-200 group-hover:text-[#7C3AED] transition-colors flex-shrink-0" />
             </button>
           );
         })}

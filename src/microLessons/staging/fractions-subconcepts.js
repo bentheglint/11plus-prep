@@ -2463,7 +2463,7 @@ export const fractionsSubConcepts = [
                 min: 0, max: 1,
                 tickInterval: 0.1,
                 points: [
-                  { value: v.testDecimal, label: "?", color: "#6C5CE7" }
+                  { value: v.testDecimal, label: "?", color: "#7C3AED" }
                 ]
               })
             },
@@ -2684,7 +2684,7 @@ export const fractionsSubConcepts = [
                 min: 0, max: 1,
                 tickInterval: 0.1,
                 points: [
-                  { value: v.decimal, label: `${v.decimal}`, color: "#6C5CE7" }
+                  { value: v.decimal, label: `${v.decimal}`, color: "#7C3AED" }
                 ]
               })
             },
@@ -2826,7 +2826,7 @@ export const fractionsSubConcepts = [
                 min: 0, max: 1,
                 tickInterval: Math.max(1 / v.simDen, 0.1),
                 points: [
-                  { value: v.decimal, label: `${v.decimal} = ${v.simNum}/${v.simDen}`, color: "#6C5CE7" }
+                  { value: v.decimal, label: `${v.decimal} = ${v.simNum}/${v.simDen}`, color: "#7C3AED" }
                 ]
               })
             },

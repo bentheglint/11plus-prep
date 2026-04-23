@@ -9,7 +9,7 @@ import QuizHistoryRow from '../components/QuizHistoryRow';
 const subjectConfig = {
   maths: { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0770C2', gradient: 'from-[#0770C2] to-[#0652DD]' },
   english: { key: 'english', name: 'English', icon: BookOpen, colour: '#007D62', gradient: 'from-[#007D62] to-[#00876A]' },
-  verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#6C5CE7', gradient: 'from-[#6C5CE7] to-[#5A4BD1]' },
+  verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#7C3AED', gradient: 'from-[#7C3AED] to-[#5A4BD1]' },
 };
 
 function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome, onViewQuiz, onViewAllActivity }) {
@@ -98,11 +98,11 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
               // Background intensity scales with mastery score (0-100 range typical).
               // Divisor/cap tuned so a mastered topic reads as a clear tint, not a whisper.
               const bgIntensity = topic.score > 0 ? Math.min(0.35, topic.score / 300) : 0;
-              const colour = subjectConfig[selectedSubject]?.colour || '#6C5CE7';
+              const colour = subjectConfig[selectedSubject]?.colour || '#7C3AED';
               // RGB triples must match the subjectConfig hexes exactly for the tint to read correctly.
               const colourRgb = colour === '#0770C2' ? '7,112,194'
                               : colour === '#007D62' ? '0,125,98'
-                              : '108,92,231'; // VR purple #6C5CE7
+                              : '108,92,231'; // VR purple #7C3AED
               const trendColour = topic.trend?.direction === 'up' ? '#007D62' :
                                   topic.trend?.direction === 'down' ? '#FF6B6B' : null;
               const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
@@ -158,7 +158,7 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
             {onViewAllActivity && quizHistory.length > recentQuizzes.length && (
               <button
                 onClick={onViewAllActivity}
-                className="w-full mt-3 pt-3 border-t border-gray-100 flex items-center justify-center gap-1 text-sm font-bold text-[#6C5CE7] hover:text-[#5A4BD1] transition-colors"
+                className="w-full mt-3 pt-3 border-t border-gray-100 flex items-center justify-center gap-1 text-sm font-bold text-[#7C3AED] hover:text-[#5A4BD1] transition-colors"
               >
                 View all activity
                 <ChevronRight className="w-4 h-4" />

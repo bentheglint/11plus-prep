@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw, BookOpen } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
 
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
 function MistakesScreen({ questionResults, questionData, englishData, vrData, onPractiseTopic, onRecordResult, onBack }) {
@@ -225,7 +225,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
     const current = practiceMode.questions[practiceIndex];
     const currentSubject = current ? (current.subject || practiceMode.subject) : practiceMode.subject;
     const currentTopicKey = current ? (current.topicKey || practiceMode.topicKey) : practiceMode.topicKey;
-    const colour = subjectColours[currentSubject] || '#6C5CE7';
+    const colour = subjectColours[currentSubject] || '#7C3AED';
     const displayName = practiceMode.topicKey === 'all' ? 'All Mistakes' : (topicNames[currentTopicKey] || currentTopicKey);
     const isLastQuestion = practiceIndex + 1 >= practiceMode.questions.length;
     const correctCount = practiceResults.filter(r => r.correct).length;
@@ -256,7 +256,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               )}
               <button
                 onClick={() => setPracticeMode(null)}
-                className="px-6 py-3 bg-[#6C5CE7] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors"
+                className="px-6 py-3 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors"
               >
                 Back to Mistakes
               </button>
@@ -273,7 +273,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           <div className="flex items-center justify-between mb-6">
             <button
               onClick={() => setPracticeMode(null)}
-              className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
             >
               <X className="w-5 h-5" />
               Exit
@@ -333,7 +333,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 <div className="grid grid-cols-2 gap-3">
                   {current.fullQuestion.segments.map((segment, idx) => (
                     <div key={idx} className="bg-gray-50 border-2 border-gray-300 rounded-lg p-3 text-center">
-                      <span className="block text-xs font-bold text-[#6C5CE7] mb-1">
+                      <span className="block text-xs font-bold text-[#7C3AED] mb-1">
                         Section {String.fromCharCode(65 + idx)}
                       </span>
                       <span className="text-gray-900 text-sm font-medium">{segment}</span>
@@ -346,12 +346,12 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             {/* Alphabet line for letter code questions */}
             {current.questionType === 'letter-codes' && (
               <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
-                <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">Use this alphabet to crack the code</div>
+                <div className="text-[9px] text-[#7C3AED] mb-1.5 font-bold uppercase tracking-widest">Use this alphabet to crack the code</div>
                 <div className="flex justify-center">
                   {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                     <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                      <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
-                      <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
+                      <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#7C3AED]' : 'text-slate-800'}`}>{letter}</span>
+                      <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#7C3AED] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                     </div>
                   ))}
                 </div>
@@ -366,13 +366,13 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 {current.options.map((option, i) => {
                   const isSelected = selectedAnswer === i;
                   const isCorrectOption = i === current.correctAnswer;
-                  let optionStyle = 'border-gray-200 hover:border-[#6C5CE7] hover:bg-[#6C5CE7]/5';
+                  let optionStyle = 'border-gray-200 hover:border-[#7C3AED] hover:bg-[#7C3AED]/5';
                   if (showFeedback) {
                     if (isCorrectOption) optionStyle = 'border-[#007D62] bg-[#007D62]/10';
                     else if (isSelected) optionStyle = 'border-[#FF6B6B] bg-[#FF6B6B]/10';
                     else optionStyle = 'border-gray-200 opacity-50';
                   } else if (isSelected) {
-                    optionStyle = 'border-[#6C5CE7] bg-[#6C5CE7]/10';
+                    optionStyle = 'border-[#7C3AED] bg-[#7C3AED]/10';
                   }
                   return (
                     <button key={i} onClick={() => handleAnswer(i)} disabled={showFeedback}
@@ -403,7 +403,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                             ? 'border-red-500 bg-red-50 text-red-900'
                             : 'border-gray-200 bg-gray-50 text-gray-500'
                           : selectedPair.includes(idx)
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                          ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                           : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}>
                       {option}
@@ -417,7 +417,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 )}
                 {!showFeedback && selectedPair.length === 2 && (
                   <button onClick={handleCheckPairAnswer}
-                    className="mt-3 w-full py-3 bg-[#6C5CE7] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors">
+                    className="mt-3 w-full py-3 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors">
                     Check Answer
                   </button>
                 )}
@@ -428,7 +428,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             {current.questionType === 'pick-from-sets' && current.setA && current.setB && (
               <div className="space-y-4">
                 <div>
-                  <p className="text-sm font-bold text-[#6C5CE7] mb-2">Group A</p>
+                  <p className="text-sm font-bold text-[#7C3AED] mb-2">Group A</p>
                   <div className="grid grid-cols-3 gap-2 sm:gap-3">
                     {current.setA.map((word, idx) => (
                       <button key={idx} onClick={() => handlePickFromSet('A', idx)} disabled={showFeedback}
@@ -440,7 +440,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                               ? 'border-red-500 bg-red-50 text-red-900'
                               : 'border-gray-200 bg-gray-50 text-gray-500'
                             : selectedPair[0] === idx
-                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                            ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                             : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                         }`}>
                         {word}
@@ -461,7 +461,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                               ? 'border-red-500 bg-red-50 text-red-900'
                               : 'border-gray-200 bg-gray-50 text-gray-500'
                             : selectedPair[1] === idx
-                            ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                            ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                             : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                         }`}>
                         {word}
@@ -474,7 +474,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 )}
                 {!showFeedback && selectedPair[0] !== undefined && selectedPair[1] !== undefined && (
                   <button onClick={handleCheckPairAnswer}
-                    className="w-full py-3 bg-[#6C5CE7] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors">
+                    className="w-full py-3 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors">
                     Check Answer
                   </button>
                 )}
@@ -521,7 +521,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               )}
               <button
                 onClick={handleNext}
-                className="mt-4 w-full py-3 bg-[#6C5CE7] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors"
+                className="mt-4 w-full py-3 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#5A4BD1] transition-colors"
               >
                 {isLastQuestion ? 'See Results' : 'Next Question'}
               </button>
@@ -539,7 +539,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
       <div className="max-w-2xl mx-auto">
         <button
           onClick={onBack}
-          className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+          className="mb-6 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Home
@@ -570,7 +570,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
             ].map(opt => {
               const isActive = subjectFilter === opt.key;
               const count = subjectCounts[opt.key];
-              const colour = opt.key === 'all' ? '#6C5CE7' : subjectColours[opt.key];
+              const colour = opt.key === 'all' ? '#7C3AED' : subjectColours[opt.key];
               return (
                 <button
                   key={opt.key}
@@ -629,7 +629,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           <div className="space-y-3">
             {topicEntries.map(([topicKey, group]) => {
               const isExpanded = expandedTopic === topicKey;
-              const colour = subjectColours[group.subject] || '#6C5CE7';
+              const colour = subjectColours[group.subject] || '#7C3AED';
               const displayName = topicNames[topicKey] || topicKey;
               const subjectLabel = subjectNames[group.subject] || group.subject;
 

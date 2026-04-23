@@ -5616,7 +5616,7 @@ export const lessonBank = {
                     props: (v) => ({
                       min: v.roundDown,
                       max: v.roundUp,
-                      points: [{ value: v.number, label: String(v.number.toLocaleString()), color: "#6C5CE7" }],
+                      points: [{ value: v.number, label: String(v.number.toLocaleString()), color: "#7C3AED" }],
                       jumps: [{ from: v.number, to: v.rounded, label: v.direction === "up" ? "rounds up" : "rounds down" }],
                       tickInterval: v.roundTo,
                       showLabels: true,
@@ -9157,7 +9157,7 @@ export const lessonBank = {
                   props: (v) => ({
                     mode: "highlight",
                     text: v.sentence,
-                    highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                    highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                     label: "Find the target word:"
                   })
                 },
@@ -9226,7 +9226,7 @@ export const lessonBank = {
                   props: (v) => ({
                     mode: "highlight",
                     text: v.sentence,
-                    highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                    highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                     label: "Find the target word:"
                   })
                 },
@@ -9388,7 +9388,7 @@ export const lessonBank = {
                   props: (v) => ({
                     mode: "highlight",
                     text: v.sentence,
-                    highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                    highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                     label: "Which word class?"
                   })
                 },
@@ -9462,7 +9462,7 @@ export const lessonBank = {
                   props: (v) => ({
                     mode: "highlight",
                     text: v.sentence,
-                    highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                    highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                     label: "Which word class?"
                   })
                 },
@@ -9910,7 +9910,7 @@ export const lessonBank = {
                   props: (v) => ({
                     mode: "highlight",
                     text: v.testSentence.replace(/\*\*/g, ''),
-                    highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                    highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                     label: `Target word: "${v.targetWord}"`
                   })
                 },
@@ -9980,7 +9980,7 @@ export const lessonBank = {
                   props: (v) => ({
                     mode: "highlight",
                     text: `${v.targetWord} = ${v.definition}`,
-                    highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                    highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                     label: "Define it yourself first:"
                   })
                 },
@@ -12561,7 +12561,7 @@ export const lessonBank = {
                   component: "AlphabetLine",
                   props: (v) => ({
                     showEJOTY: true,
-                    points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                    points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                       v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                     ),
                     hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: v.shift }))
@@ -12643,7 +12643,7 @@ export const lessonBank = {
                   component: "AlphabetLine",
                   props: (v) => ({
                     showEJOTY: true,
-                    points: v.decodeWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                    points: v.decodeWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
                   })
                 },
                 interaction: {
@@ -12887,7 +12887,7 @@ export const lessonBank = {
                     props: (v) => ({
                       showEJOTY: true,
                       showPositionNumbers: true,
-                      points: v.firstLetters.replace(/ → .+/, '').split(', ').map(l => ({ letter: l.trim(), color: "#6C5CE7" })).concat(
+                      points: v.firstLetters.replace(/ → .+/, '').split(', ').map(l => ({ letter: l.trim(), color: "#7C3AED" })).concat(
                         v.secondLetters.replace(/ → .+/, '').split(', ').map(l => ({ letter: l.trim(), color: "#22c55e" }))
                       )
                     })
@@ -12954,7 +12954,7 @@ export const lessonBank = {
                       }
                       return {
                         showEJOTY: true,
-                        points: firstLetters.map(l => ({ letter: l, color: "#6C5CE7" })),
+                        points: firstLetters.map(l => ({ letter: l, color: "#7C3AED" })),
                         hops: hopsArr
                       };
                     }
@@ -14112,7 +14112,7 @@ export const lessonBank = {
                   props: (v) => ({
                     showEJOTY: true,
                     showPositionNumbers: true,
-                    points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                    points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
                   })
                 },
                 interaction: null
@@ -14160,7 +14160,7 @@ export const lessonBank = {
                     props: (v) => ({
                       showEJOTY: true,
                       showPositionNumbers: true,
-                      points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                      points: v.expression.replace(/[^A-Z]/g, '').split('').map(l => ({ letter: l, color: "#7C3AED" }))
                     })
                   },
                   {

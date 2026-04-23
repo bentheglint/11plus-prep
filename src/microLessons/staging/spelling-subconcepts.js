@@ -354,7 +354,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `"${v.exampleWord}" sounds like "${v.exampleSay}" — the ${v.silentLetter.toUpperCase()} is silent!`,
-                highlightWords: [{ word: v.exampleWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.exampleWord, color: "#7C3AED" }],
                 label: "Listen and look:"
               })
             },
@@ -677,7 +677,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.testBase} + ${v.testSuffix} = ?`,
-                highlightWords: [{ word: v.testBase, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testBase, color: "#7C3AED" }],
                 label: "What's the correct spelling?"
               })
             },
@@ -912,7 +912,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: "i before e, except after c",
-                highlightWords: [{ word: "i before e", color: "#6C5CE7" }],
+                highlightWords: [{ word: "i before e", color: "#7C3AED" }],
                 label: "The golden rule:"
               })
             },
@@ -1941,7 +1941,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `"${v.word}"`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Focus word:"
               })
             },
@@ -2212,7 +2212,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.prefix} + ${v.baseWord} = ${v.correctVersion}`,
-                highlightWords: [{ word: v.correctVersion, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.correctVersion, color: "#7C3AED" }],
                 label: "Prefix + word:"
               })
             },
@@ -2485,7 +2485,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.word,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Focus word:"
               })
             },
@@ -2754,7 +2754,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.singular} → ${v.plural}`,
-                highlightWords: [{ word: v.plural, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.plural, color: "#7C3AED" }],
                 label: "How do we make it plural?"
               })
             },
@@ -2801,7 +2801,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `What is the plural of "${v.testSingular}"?`,
-                highlightWords: [{ word: v.testSingular, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testSingular, color: "#7C3AED" }],
                 label: "Make it plural:"
               })
             },
@@ -3040,7 +3040,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `"${v.nounForm}" (noun) vs "${v.verbForm}" (verb)`,
-                highlightWords: [{ word: v.nounForm, color: "#6C5CE7" }, { word: v.verbForm, color: "#22c55e" }],
+                highlightWords: [{ word: v.nounForm, color: "#7C3AED" }, { word: v.verbForm, color: "#22c55e" }],
                 label: "Noun or verb?"
               })
             },
@@ -3332,7 +3332,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `"${v.word}"`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Focus word:"
               })
             },
@@ -3646,7 +3646,7 @@ export const spellingSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.testBase} + ${v.testSuffix} = ?`,
-                highlightWords: [{ word: v.testBase, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testBase, color: "#7C3AED" }],
                 label: "What's the correct spelling?"
               })
             },

@@ -3,7 +3,7 @@ import { Zap, Calculator, BookOpen, Brain, ChevronRight } from 'lucide-react';
 import { motion } from './Motion';
 
 const subjectIcons = { maths: Calculator, english: BookOpen, verbalreasoning: Brain };
-const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#6C5CE7' };
+const subjectColours = { maths: '#0770C2', english: '#007D62', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
 
 // Topic key to display name mapping
@@ -32,7 +32,7 @@ function RecommendationCard({ recommendation, onStart }) {
 
   const { topicKey, subject, reason } = recommendation;
   const Icon = subjectIcons[subject] || Zap;
-  const colour = subjectColours[subject] || '#6C5CE7';
+  const colour = subjectColours[subject] || '#7C3AED';
   const displayName = topicNames[topicKey] || topicKey;
   const subjectLabel = subjectNames[subject] || subject;
 

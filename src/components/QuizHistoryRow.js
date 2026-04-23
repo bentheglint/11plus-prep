@@ -39,7 +39,7 @@ export default function QuizHistoryRow({ quiz, onView }) {
       <div className="flex items-center gap-2">
         <span className="text-sm font-bold" style={{ color: dotColour }}>{quiz.percentage}%</span>
         {canViewDetail && (
-          <span className="flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider text-[#6C5CE7] bg-[#EDE8FF] px-2 py-1 rounded-full">
+          <span className="flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider text-[#7C3AED] bg-[#EDE8FF] px-2 py-1 rounded-full">
             View
             <ChevronRight className="w-3 h-3" />
           </span>

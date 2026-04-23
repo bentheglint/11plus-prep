@@ -14,7 +14,7 @@ function ClozeQuestionText({ text, className }) {
         <React.Fragment key={i}>
           {part}
           {i < parts.length - 1 && (
-            <span className="inline-block mx-1 min-w-[4rem] border-b-2 border-[#6C5CE7] align-baseline">
+            <span className="inline-block mx-1 min-w-[4rem] border-b-2 border-[#7C3AED] align-baseline">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </span>
           )}

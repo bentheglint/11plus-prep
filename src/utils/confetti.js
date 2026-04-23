@@ -13,7 +13,7 @@ export function celebrateCorrect() {
     particleCount: 40,
     spread: 55,
     origin: { y: 0.7 },
-    colors: ['#6C5CE7', '#007D62', '#FDCB6E'],
+    colors: ['#7C3AED', '#007D62', '#FDCB6E'],
     disableForReducedMotion: true,
   });
 }
@@ -28,7 +28,7 @@ export function celebrateHighScore() {
       angle: 60,
       spread: 55,
       origin: { x: 0 },
-      colors: ['#6C5CE7', '#A29BFE', '#FDCB6E'],
+      colors: ['#7C3AED', '#A29BFE', '#FDCB6E'],
     });
     confetti({
       particleCount: 3,

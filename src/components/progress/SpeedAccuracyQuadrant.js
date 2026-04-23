@@ -200,7 +200,7 @@ function resolveLabels(labels, dots, plotBounds) {
 const subjectConfig = {
   maths: { name: 'Maths', colour: '#0770C2', speedTarget: 60 },
   english: { name: 'English', colour: '#007D62', speedTarget: 55 },
-  verbalreasoning: { name: 'Verbal Reasoning', colour: '#6C5CE7', speedTarget: 37.5 },
+  verbalreasoning: { name: 'Verbal Reasoning', colour: '#7C3AED', speedTarget: 37.5 },
 };
 
 const ACCURACY_LINE = 75; // %
@@ -259,7 +259,7 @@ function SpeedAccuracyQuadrant({ questionResults }) {
   return (
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center gap-2 mb-1">
-        <Target className="w-5 h-5 text-[#6C5CE7]" />
+        <Target className="w-5 h-5 text-[#7C3AED]" />
         <h3 className="font-heading font-bold text-slate-800">Accuracy vs Speed</h3>
       </div>
       <p className="text-xs text-slate-500 mb-4">

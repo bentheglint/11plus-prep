@@ -44,7 +44,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
   // Most recent week first
   weeks.reverse();
 
-  const intensityColours = ['#F3F4F6', '#DDD6FE', '#A78BFA', '#6C5CE7'];
+  const intensityColours = ['#F3F4F6', '#DDD6FE', '#A78BFA', '#7C3AED'];
   const getIntensity = (q) => q === 0 ? 0 : q <= 10 ? 1 : q <= 25 ? 2 : 3;
 
   // Format date range label: "24 Mar - 30 Mar"
@@ -98,7 +98,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
             <div key={wi} className={`flex items-center ${current ? 'bg-[#EDE8FF]/50 rounded-lg py-1 -mx-1 px-1' : ''}`}>
               {/* Date range label */}
               <div className="w-28 flex-shrink-0 text-[11px] text-slate-500 pr-2">
-                {current && <span className="text-[#6C5CE7] font-bold">This week</span>}
+                {current && <span className="text-[#7C3AED] font-bold">This week</span>}
                 {!current && formatRange(week.start, week.end)}
               </div>
               {/* Day cells */}
@@ -109,7 +109,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
                 return (
                   <div key={day.date} className="flex-1 flex justify-center">
                     <div
-                      className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${isToday ? 'ring-2 ring-[#6C5CE7] ring-offset-1' : ''}`}
+                      className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${isToday ? 'ring-2 ring-[#7C3AED] ring-offset-1' : ''}`}
                       style={{ background: isFuture ? 'transparent' : intensityColours[intensity] }}
                       title={`${day.date}: ${day.questions} questions`}
                     />
@@ -130,7 +130,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded border border-gray-300" style={{ background: '#F3F4F6' }} /> No practice</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#DDD6FE' }} /> 1-10 Qs</span>
         <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#A78BFA' }} /> 11-25 Qs</span>
-        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#6C5CE7' }} /> 25+ Qs</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#7C3AED' }} /> 25+ Qs</span>
       </div>
 
       {/* Summary stats */}

@@ -1293,7 +1293,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
               {/* Alphabet line for letter code questions in preview mode */}
               {(previewTopic === 'letterCodes' || previewTopic === 'letterPairSeries' || previewTopic === 'letterSums' || found.questionType === 'letter-codes') && (
                 <div className="mb-4 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center">
-                  <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">
+                  <div className="text-[9px] text-[#7C3AED] mb-1.5 font-bold uppercase tracking-widest">
                     {previewTopic === 'letterCodes' || found.questionType === 'letter-codes'
                       ? 'Work out the pattern from the example, then apply it to the new word'
                       : 'Use this alphabet to help you'}
@@ -1301,8 +1301,8 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
                   <div className="flex justify-center">
                     {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                       <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                        <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
-                        <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
+                        <span className={`text-xs sm:text-sm font-mono font-bold py-0.5 rounded ${i % 5 === 4 ? 'text-[#7C3AED]' : 'text-slate-800'}`}>{letter}</span>
+                        <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#7C3AED] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                       </div>
                     ))}
                   </div>
@@ -1325,7 +1325,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
                 <div className="mb-6 grid grid-cols-2 gap-3">
                   {found.segments.map((seg, i) => (
                     <div key={i} className="bg-gray-50 border-2 border-gray-300 rounded-lg p-3 text-center">
-                      <span className="block text-xs font-bold text-[#6C5CE7] mb-1">Section {String.fromCharCode(65+i)}</span>
+                      <span className="block text-xs font-bold text-[#7C3AED] mb-1">Section {String.fromCharCode(65+i)}</span>
                       <span className="text-gray-900 text-sm font-medium">{seg}</span>
                     </div>
                   ))}
@@ -1347,7 +1347,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
               {/* Pick-from-sets */}
               {found.setA && (
                 <div className="space-y-3">
-                  <div><span className="text-sm font-bold text-[#6C5CE7]">Group A:</span> {found.setA.map((w,i) => <span key={i} className={`inline-block mx-1 px-2 py-1 rounded ${i===found.correctPair?.[0] ? 'bg-green-100 font-bold' : 'bg-gray-100'}`}>{w}</span>)}</div>
+                  <div><span className="text-sm font-bold text-[#7C3AED]">Group A:</span> {found.setA.map((w,i) => <span key={i} className={`inline-block mx-1 px-2 py-1 rounded ${i===found.correctPair?.[0] ? 'bg-green-100 font-bold' : 'bg-gray-100'}`}>{w}</span>)}</div>
                   <div><span className="text-sm font-bold text-indigo-700">Group B:</span> {found.setB.map((w,i) => <span key={i} className={`inline-block mx-1 px-2 py-1 rounded ${i===found.correctPair?.[1] ? 'bg-green-100 font-bold' : 'bg-gray-100'}`}>{w}</span>)}</div>
                 </div>
               )}
@@ -1789,7 +1789,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
             // Step 2: feedback + AI Tutor CTA
             <>
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
-                <Brain className="w-8 h-8 text-[#6C5CE7]" />
+                <Brain className="w-8 h-8 text-[#7C3AED]" />
               </div>
               <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">No worries — we can help!</h2>
               <p className="text-gray-600 mb-4">What didn't make sense? This helps us improve the lessons.</p>
@@ -1797,11 +1797,11 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
                 value={feedbackText}
                 onChange={(e) => setFeedbackText(e.target.value)}
                 placeholder="e.g. I didn't understand the second step..."
-                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#6C5CE7] text-sm resize-none mb-4"
+                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#7C3AED] text-sm resize-none mb-4"
                 rows={3}
               />
               <div className="bg-[#EDE8FF] rounded-xl p-4 mb-4 text-left">
-                <p className="text-sm font-bold text-[#6C5CE7] mb-1">Your AI Tutor can explain this differently!</p>
+                <p className="text-sm font-bold text-[#7C3AED] mb-1">Your AI Tutor can explain this differently!</p>
                 <p className="text-sm text-slate-500">They'll look at the specific question you're stuck on and break it down step by step, just for you.</p>
               </div>
               {/* Submit feedback + open AI Tutor */}
@@ -1828,7 +1828,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
                     content: "The lesson didn't quite click? No worries — I'm here to help! 😊 Let me try explaining this question in a different way. What part are you finding tricky?"
                   }]);
                 }}
-                className="w-full px-6 py-3 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-bold rounded-xl text-lg transition-colors flex items-center justify-center gap-2"
+                className="w-full px-6 py-3 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-bold rounded-xl text-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Brain className="w-5 h-5" />
                 Talk to AI Tutor
@@ -1862,7 +1862,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
             // Step 1: Did it help?
             <>
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
-                <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
+                <BookOpen className="w-8 h-8 text-[#7C3AED]" />
               </div>
               <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">Did that lesson help?</h2>
               <p className="text-gray-600 mb-6">We showed you the <strong>{lessonFromQuiz.subConceptName}</strong> lesson. Did it help you understand the question better?</p>
@@ -2107,7 +2107,7 @@ function ResumeQuizPrompt({ savedState, onResume, onStartFresh }) {
     <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6 text-center">
         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
-          <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
+          <BookOpen className="w-8 h-8 text-[#7C3AED]" />
         </div>
         <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">Pick up where you left off?</h2>
         <p className="text-sm text-gray-600 mb-6">
@@ -2116,7 +2116,7 @@ function ResumeQuizPrompt({ savedState, onResume, onStartFresh }) {
         <div className="space-y-2">
           <button
             onClick={onResume}
-            className="w-full py-3 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-bold rounded-xl transition-colors"
+            className="w-full py-3 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-bold rounded-xl transition-colors"
           >
             Resume quiz
           </button>
@@ -2154,7 +2154,7 @@ function SubjectCard({ title, icon: Icon, gradient, color, onClick, disabled }) 
 function getTopicBadge(pct) {
   if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F39C12]', bg: 'bg-[#FDCB6E]/20' };
   if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0770C2]', bg: 'bg-[#0770C2]/10' };
-  if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#6C5CE7]', bg: 'bg-[#6C5CE7]/10' };
+  if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#7C3AED]', bg: 'bg-[#7C3AED]/10' };
   if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F39C12]', bg: 'bg-[#F39C12]/10' };
   return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
 }
@@ -2199,7 +2199,7 @@ function TopicCard({ title, questionCount, performance, onClick }) {
       />
       <div className="text-left pl-3">
         <h4 className="text-xl font-heading font-bold text-slate-800 mb-1">{title}</h4>
-        {questionCount && <p className="text-[#6C5CE7] font-medium">{questionCount} questions</p>}
+        {questionCount && <p className="text-[#7C3AED] font-medium">{questionCount} questions</p>}
         {perfDisplay}
       </div>
       <ChevronRight className="w-8 h-8 text-[#A29BFE] group-hover:translate-x-1 transition-transform" />

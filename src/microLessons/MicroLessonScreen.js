@@ -57,7 +57,7 @@ function renderBoldText(text) {
   const parts = text.split(/(\*\*.*?\*\*)/g);
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
-      return <strong key={i} className="text-[#6C5CE7] font-bold">{part.slice(2, -2)}</strong>;
+      return <strong key={i} className="text-[#7C3AED] font-bold">{part.slice(2, -2)}</strong>;
     }
     return part;
   });
@@ -140,7 +140,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                 style = 'border-gray-200 bg-gray-50';
               }
             } else if (answer === idx) {
-              style = 'border-[#6C5CE7] bg-[#EDE8FF]';
+              style = 'border-[#7C3AED] bg-[#EDE8FF]';
             }
 
             return (
@@ -215,7 +215,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                     fbCorrect ? 'bg-green-100 border-green-500 text-green-800' : 'bg-red-100 border-red-500 text-red-800'
                   }`}>{options[fbSelected]}</span>
                 ) : fbSelected !== null ? (
-                  <span className="inline-block px-3 py-1 mx-1 rounded-lg font-bold border-2 border-[#6C5CE7] bg-[#EDE8FF] text-[#6C5CE7]">
+                  <span className="inline-block px-3 py-1 mx-1 rounded-lg font-bold border-2 border-[#7C3AED] bg-[#EDE8FF] text-[#7C3AED]">
                     {options[fbSelected]}
                   </span>
                 ) : (
@@ -234,7 +234,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                 onClick={() => setFbSelected(idx)}
                 className={`px-4 py-3 rounded-xl border-2 font-medium text-base transition-all ${
                   fbSelected === idx
-                    ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#6C5CE7]'
+                    ? 'border-[#7C3AED] bg-[#EDE8FF] text-[#7C3AED]'
                     : 'border-gray-300 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50'
                 }`}
               >
@@ -290,7 +290,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
 
     return (
       <div className="mt-4">
-        <p className="text-base font-semibold text-[#6C5CE7] mb-3">Put these steps in the correct order:</p>
+        <p className="text-base font-semibold text-[#7C3AED] mb-3">Put these steps in the correct order:</p>
         <p className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">Your order:</p>
         <div className="min-h-[60px] p-3 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300 mb-4 space-y-2">
           {orderedSteps.length === 0 && (
@@ -305,13 +305,13 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                   ? item.originalIndex === idx
                     ? 'border-green-500 bg-green-50'
                     : 'border-red-500 bg-red-50'
-                  : 'border-[#6C5CE7] bg-[#EDE8FF] hover:bg-[#DDD6FE] cursor-pointer'
+                  : 'border-[#7C3AED] bg-[#EDE8FF] hover:bg-[#DDD6FE] cursor-pointer'
               }`}
             >
               <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold ${
                 orderChecked
                   ? item.originalIndex === idx ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
-                  : 'bg-[#6C5CE7] text-white'
+                  : 'bg-[#7C3AED] text-white'
               }`}>{idx + 1}</span>
               <span className="text-base font-medium">{renderBoldText(item.text)}</span>
             </div>
@@ -419,7 +419,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                   className={`w-full p-3 rounded-xl border-2 text-left font-medium text-base transition-all ${
                     isMatched ? 'border-green-500 bg-green-50 text-green-800' :
                     isWrong ? 'border-red-500 bg-red-50' :
-                    isSelected ? 'border-[#6C5CE7] bg-[#EDE8FF] text-[#6C5CE7]' :
+                    isSelected ? 'border-[#7C3AED] bg-[#EDE8FF] text-[#7C3AED]' :
                     'border-gray-300 bg-white hover:border-[#A29BFE]'
                   }`}
                 >
@@ -494,7 +494,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
             <div key={i} className={`w-3 h-3 rounded-full transition-all ${
               i < tfAnswers.length
                 ? tfAnswers[i]?.correct ? 'bg-green-500' : 'bg-red-500'
-                : i === tfIndex ? 'bg-[#6C5CE7] scale-125' : 'bg-gray-300'
+                : i === tfIndex ? 'bg-[#7C3AED] scale-125' : 'bg-gray-300'
             }`} />
           ))}
         </div>
@@ -835,7 +835,7 @@ export default function MicroLessonScreen({
           <p className="text-center mt-4">
             <button
               onClick={() => onComplete(null)}
-              className="text-[#A29BFE] hover:text-[#6C5CE7] text-sm font-medium transition-colors"
+              className="text-[#A29BFE] hover:text-[#7C3AED] text-sm font-medium transition-colors"
             >
               Skip to quiz
             </button>
@@ -1282,7 +1282,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         {/* Back button */}
         <button
           onClick={onBack}
-          className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] transition-colors font-medium gap-1"
+          className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] transition-colors font-medium gap-1"
         >
           <ArrowLeft className="w-5 h-5 mr-1" />
           {backLabel || 'Back to Topics'}
@@ -1295,7 +1295,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
               key={i}
               className={`h-2 rounded-full transition-all duration-300 ${
                 i <= currentScreen
-                  ? 'bg-[#6C5CE7] w-8'
+                  ? 'bg-[#7C3AED] w-8'
                   : 'bg-gray-300 w-2'
               }`}
             />
@@ -1306,7 +1306,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
         {isIntroScreen && (
           <div className="flex items-center justify-center gap-2 mb-3">
             <Sparkles className="w-4 h-4 text-[#FDCB6E]" />
-            <span className="text-sm font-heading font-medium text-[#6C5CE7]">
+            <span className="text-sm font-heading font-medium text-[#7C3AED]">
               Quick warm-up!
             </span>
             <Sparkles className="w-4 h-4 text-[#FDCB6E]" />
@@ -1386,7 +1386,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                     ) : (
                       <>
                         {currentUser && (
-                          <p className="text-xs text-[#6C5CE7] mb-2">Submitting as {currentUser}</p>
+                          <p className="text-xs text-[#7C3AED] mb-2">Submitting as {currentUser}</p>
                         )}
                         {!currentUser && (
                           <p className="text-xs text-amber-600 mb-2">Pick your name on the home screen so we know who's reporting</p>
@@ -1396,7 +1396,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                             value={feedbackText}
                             onChange={(e) => setFeedbackText(e.target.value)}
                             placeholder={isListening ? "Listening..." : "What's the issue with this lesson?"}
-                            className={`w-full p-2 border rounded-lg text-sm resize-none focus:border-[#6C5CE7] focus:outline-none ${isListening ? 'border-red-400 bg-red-50' : 'border-gray-300'}`}
+                            className={`w-full p-2 border rounded-lg text-sm resize-none focus:border-[#7C3AED] focus:outline-none ${isListening ? 'border-red-400 bg-red-50' : 'border-gray-300'}`}
                             rows={2}
                           />
                           {speechSupported && (
@@ -1405,7 +1405,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                               className={`absolute right-2 bottom-2 p-1.5 rounded-lg transition-colors ${
                                 isListening
                                   ? 'bg-red-500 hover:bg-red-600 text-white animate-pulse'
-                                  : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#6C5CE7]'
+                                  : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#7C3AED]'
                               }`}
                               title={isListening ? "Stop listening" : "Speak your feedback"}
                             >
@@ -1423,7 +1423,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                           <button
                             onClick={handleFeedbackSubmit}
                             disabled={!feedbackText.trim()}
-                            className="px-4 py-1.5 bg-[#6C5CE7] text-white text-sm font-medium rounded-lg disabled:bg-gray-300 hover:bg-[#5A4BD1] transition-colors"
+                            className="px-4 py-1.5 bg-[#7C3AED] text-white text-sm font-medium rounded-lg disabled:bg-gray-300 hover:bg-[#5A4BD1] transition-colors"
                           >
                             Submit
                           </button>
@@ -1439,7 +1439,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
             <>
               {/* Topic + screen type badges + report button */}
               <div className="flex items-center gap-2 mb-4">
-                <span className="inline-block px-3 py-1 bg-[#EDE8FF] text-[#6C5CE7] text-xs font-medium rounded-full">
+                <span className="inline-block px-3 py-1 bg-[#EDE8FF] text-[#7C3AED] text-xs font-medium rounded-full">
                   {topicName}
                 </span>
                 <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${
@@ -1547,7 +1547,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 ) : (
                   <>
                     {currentUser && (
-                      <p className="text-xs text-[#6C5CE7] mb-2">Submitting as {currentUser}</p>
+                      <p className="text-xs text-[#7C3AED] mb-2">Submitting as {currentUser}</p>
                     )}
                     {!currentUser && (
                       <p className="text-xs text-amber-600 mb-2">Pick your name on the home screen so we know who's reporting</p>
@@ -1556,7 +1556,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       value={feedbackText}
                       onChange={(e) => setFeedbackText(e.target.value)}
                       placeholder="What's the issue with this screen?"
-                      className="w-full p-2 border border-gray-300 rounded-lg text-sm resize-none focus:border-[#6C5CE7] focus:outline-none"
+                      className="w-full p-2 border border-gray-300 rounded-lg text-sm resize-none focus:border-[#7C3AED] focus:outline-none"
                       rows={2}
                     />
                     <div className="flex justify-end gap-2 mt-2">
@@ -1569,7 +1569,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       <button
                         onClick={handleFeedbackSubmit}
                         disabled={!feedbackText.trim()}
-                        className="px-4 py-1.5 bg-[#6C5CE7] text-white text-sm font-medium rounded-lg disabled:bg-gray-300 hover:bg-[#5A4BD1] transition-colors"
+                        className="px-4 py-1.5 bg-[#7C3AED] text-white text-sm font-medium rounded-lg disabled:bg-gray-300 hover:bg-[#5A4BD1] transition-colors"
                       >
                         Submit
                       </button>
@@ -1584,7 +1584,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 <div className="mt-4 flex justify-center">
                   <button
                     onClick={handleAskTutor}
-                    className="flex items-center gap-2 px-4 py-2.5 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#6C5CE7] font-medium rounded-xl transition-all text-sm border border-[#A29BFE]/30"
+                    className="flex items-center gap-2 px-4 py-2.5 bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#7C3AED] font-medium rounded-xl transition-all text-sm border border-[#A29BFE]/30"
                   >
                     <MessageCircle className="w-4 h-4" />
                     Need help? Talk to AI Tutor
@@ -1596,7 +1596,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 <div className="mt-4 bg-[#EDE8FF] border-2 border-[#A29BFE]/40 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center">
-                      <Brain className="w-5 h-5 text-[#6C5CE7] mr-2" />
+                      <Brain className="w-5 h-5 text-[#7C3AED] mr-2" />
                       <h4 className="font-heading font-bold text-slate-800 text-sm">AI Tutor</h4>
                     </div>
                     <button
@@ -1612,7 +1612,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       <div key={idx} className={`mb-3 ${msg.role === 'user' ? 'text-right' : 'text-left'}`}>
                         <div className={`inline-block p-3 rounded-lg max-w-[85%] ${
                           msg.role === 'user'
-                            ? 'bg-[#6C5CE7] text-white'
+                            ? 'bg-[#7C3AED] text-white'
                             : 'bg-[#FAFBFF] text-slate-800 border border-[#EDE8FF]'
                         }`}>
                           <div className="text-sm whitespace-pre-wrap">{msg.content.split('\n').map((line, li) => (
@@ -1642,7 +1642,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       onKeyDown={(e) => e.key === 'Enter' && handleSendTutorMessage()}
                       placeholder={isListening ? "Listening..." : "Ask your question here..."}
                       disabled={isAiThinking}
-                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#6C5CE7] disabled:bg-gray-100 text-sm ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
+                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 text-sm ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
                     />
                     {speechSupported && (
                       <button
@@ -1651,7 +1651,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                         className={`px-3 py-2 rounded-lg transition-colors disabled:opacity-50 text-sm ${
                           isListening
                             ? 'bg-red-500 hover:bg-red-600 text-white animate-pulse'
-                            : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#6C5CE7]'
+                            : 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#7C3AED]'
                         }`}
                         title={isListening ? "Stop listening" : "Speak your question"}
                       >
@@ -1661,7 +1661,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                     <button
                       onClick={handleSendTutorMessage}
                       disabled={!tutorUserMessage.trim() || isAiThinking}
-                      className="px-4 py-2 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                      className="px-4 py-2 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
                     >
                       Send
                     </button>
@@ -1676,7 +1676,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
             {currentScreen > 0 && (
               <button
                 onClick={handleBack}
-                className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#6C5CE7] transition-all flex-shrink-0"
+                className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#EDE8FF] hover:bg-[#DDD6FE] text-[#7C3AED] transition-all flex-shrink-0"
                 title="Previous screen"
               >
                 <ChevronLeft className="w-5 h-5" />

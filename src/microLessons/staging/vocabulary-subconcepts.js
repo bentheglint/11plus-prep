@@ -116,7 +116,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -158,7 +158,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -277,7 +277,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -310,7 +310,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentenceContext,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the synonym for "${v.iTargetWord}":`
               })
             },
@@ -454,7 +454,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -496,7 +496,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -606,7 +606,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -638,7 +638,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -782,7 +782,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -827,7 +827,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -919,7 +919,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -950,7 +950,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.targetWord}":`
               })
             },
@@ -1071,7 +1071,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `Focus on: "${v.word}"`
               })
             },
@@ -1113,7 +1113,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `Find the answer for "${v.word}":`
               })
             },
@@ -1211,7 +1211,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.exampleWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.exampleWord, color: "#7C3AED" }],
                 label: `Prefix: "${v.focusPrefix}-"`
               })
             },
@@ -1413,7 +1413,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.rootWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.rootWord, color: "#7C3AED" }],
                 label: `Root word: "${v.rootWord}"`
               })
             },
@@ -1455,7 +1455,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iRootWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iRootWord, color: "#7C3AED" }],
                 label: `Which word comes from "${v.iRootWord}"?`
               })
             },
@@ -1565,7 +1565,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.rootWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.rootWord, color: "#7C3AED" }],
                 label: `Root word: "${v.rootWord}"`
               })
             },
@@ -1600,7 +1600,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What does "${v.testWord}" mean?`
               })
             },
@@ -1749,7 +1749,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -1788,7 +1788,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -1898,7 +1898,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -1931,7 +1931,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentenceB,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Find the meaning of "${v.targetWord}":`
               })
             },
@@ -2092,7 +2092,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `Focus on: "${v.word}"`
               })
             },
@@ -2134,7 +2134,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iWord}":`
               })
             },
@@ -2235,7 +2235,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.unknownWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.unknownWord, color: "#7C3AED" }],
                 label: `What does "${v.unknownWord}" mean?`
               })
             },
@@ -2266,7 +2266,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.unknownWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.unknownWord, color: "#7C3AED" }],
                 label: `Decode "${v.unknownWord}":`
               })
             },
@@ -2423,7 +2423,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.correctWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.correctWord, color: "#7C3AED" }],
                 label: `${v.category}: which word fits best?`
               })
             },
@@ -2578,7 +2578,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -2623,7 +2623,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -2748,7 +2748,7 @@ export const vocabularySubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `"${v.informalWord}" → "${v.formalWord}"`,
-                highlightWords: [{ word: v.formalWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.formalWord, color: "#7C3AED" }],
                 label: "Formal or informal?"
               })
             },

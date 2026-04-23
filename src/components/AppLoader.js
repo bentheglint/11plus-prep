@@ -45,7 +45,7 @@ export default function AppLoader({ App, ...appProps }) {
           <p className="text-slate-500 text-sm mb-4">{error.message}</p>
           <button
             onClick={() => window.location.reload()}
-            className="px-6 py-2 bg-[#6C5CE7] text-white rounded-xl font-bold"
+            className="px-6 py-2 bg-[#7C3AED] text-white rounded-xl font-bold"
           >
             Try again
           </button>
@@ -57,7 +57,7 @@ export default function AppLoader({ App, ...appProps }) {
   if (!loadedData) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center">
-        <div className="animate-pulse text-[#6C5CE7] font-heading font-bold text-xl">
+        <div className="animate-pulse text-[#7C3AED] font-heading font-bold text-xl">
           Loading questions\u2026
         </div>
       </div>

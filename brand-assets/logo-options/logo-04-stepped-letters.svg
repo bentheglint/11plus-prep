@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 140" role="img" aria-label="PrepStep logo with stepped wordmark">
+  <!-- "Prep" baseline lower, "Step" baseline higher — the wordmark steps up -->
+  <text x="20" y="110" font-family="Nunito, -apple-system, 'Segoe UI', sans-serif" font-size="68" font-weight="800" fill="#1E1B4B" letter-spacing="-1">Prep</text>
+  <!-- Small connecting step block (the "riser") -->
+  <rect x="205" y="65" width="16" height="48" fill="#6C5CE7" rx="2"/>
+  <text x="227" y="75" font-family="Nunito, -apple-system, 'Segoe UI', sans-serif" font-size="68" font-weight="800" fill="#6C5CE7" letter-spacing="-1">Step</text>
+</svg>

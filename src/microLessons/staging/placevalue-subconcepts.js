@@ -1355,7 +1355,7 @@ export const placevalueSubConcepts = [
                 props: (v) => ({
                   min: v.roundDown,
                   max: v.roundUp,
-                  points: [{ value: v.number, label: v.numberFormatted, color: "#6C5CE7" }],
+                  points: [{ value: v.number, label: v.numberFormatted, color: "#7C3AED" }],
                   jumps: [{ from: v.number, to: v.rounded, label: v.direction === "up" ? "rounds up" : "rounds down" }],
                   tickInterval: v.roundTo,
                   showLabels: true,
@@ -1694,7 +1694,7 @@ export const placevalueSubConcepts = [
               props: (v) => ({
                 min: v.roundDown,
                 max: v.roundUp,
-                points: [{ value: v.number, label: v.numberStr, color: "#6C5CE7" }],
+                points: [{ value: v.number, label: v.numberStr, color: "#7C3AED" }],
                 jumps: [],
                 tickInterval: v.roundUp - v.roundDown,
                 showLabels: true,
@@ -1736,7 +1736,7 @@ export const placevalueSubConcepts = [
                   min: v.roundDown,
                   max: v.roundUp,
                   points: [
-                    { value: v.number, label: v.numberStr, color: "#6C5CE7" },
+                    { value: v.number, label: v.numberStr, color: "#7C3AED" },
                     { value: v.rounded, label: `${v.roundedStr} ✓`, color: "#16a34a" }
                   ],
                   jumps: [{ from: v.number, to: v.rounded, label: v.direction === "up" ? "rounds up" : "rounds down" }],
@@ -1771,7 +1771,7 @@ export const placevalueSubConcepts = [
               props: (v) => ({
                 min: v.interactRoundDown,
                 max: v.interactRoundUp,
-                points: [{ value: v.interactNumber, label: v.interactNumberStr, color: "#6C5CE7" }],
+                points: [{ value: v.interactNumber, label: v.interactNumberStr, color: "#7C3AED" }],
                 jumps: [],
                 tickInterval: v.interactRoundUp - v.interactRoundDown,
                 showLabels: true,
@@ -1910,7 +1910,7 @@ export const placevalueSubConcepts = [
               props: (v) => ({
                 min: Math.floor(v.testNumber),
                 max: Math.ceil(v.testNumber),
-                points: [{ value: v.testNumber, label: v.testNumberStr, color: "#6C5CE7" }],
+                points: [{ value: v.testNumber, label: v.testNumberStr, color: "#7C3AED" }],
                 jumps: [],
                 tickInterval: 1,
                 showLabels: true,

@@ -17,7 +17,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
   const circumference = 2 * Math.PI * 45;
   const strokeOffset = circumference - (percentage / 100) * circumference;
   const ResultIcon = percentage >= 80 ? Trophy : percentage >= 60 ? ThumbsUp : Zap;
-  const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F39C12]' : percentage >= 60 ? 'from-[#6C5CE7] to-[#5A4BD1]' : 'from-[#0770C2] to-[#0652DD]';
+  const resultGradient = percentage >= 80 ? 'from-[#FDCB6E] to-[#F39C12]' : percentage >= 60 ? 'from-[#7C3AED] to-[#5A4BD1]' : 'from-[#0770C2] to-[#0652DD]';
 
   // Select a contextual tip based on performance band
   const insightTip = useMemo(() => {
@@ -52,14 +52,14 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
     }
   }, [insightTip, onMarkTipSeen]);
 
-  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#6C5CE7' : '#0770C2';
+  const ringColour = percentage >= 80 ? '#FDCB6E' : percentage >= 60 ? '#7C3AED' : '#0770C2';
 
   return (
     <div className="app-bg p-4">
       <div className="max-w-2xl mx-auto">
         <button
           onClick={onHome}
-          className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+          className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Home

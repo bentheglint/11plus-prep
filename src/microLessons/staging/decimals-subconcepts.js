@@ -1638,7 +1638,7 @@ export const decimalsSubConcepts = [
                 return {
                   min: 0, max: maxVal > 10 ? Math.ceil(maxVal / 5) * 5 : Math.ceil(maxVal),
                   points: [
-                    { value: start, label: v.numStr, color: "#6C5CE7" },
+                    { value: start, label: v.numStr, color: "#7C3AED" },
                     { value: wrong, label: v.wrongAnswer + "?", color: "#ef4444" }
                   ],
                   jumps: [], tickInterval: maxVal > 10 ? 5 : 1, showLabels: true
@@ -3106,7 +3106,7 @@ export const decimalsSubConcepts = [
                   points: [
                     { value: 0.25, label: "1/4", color: "#c084fc" },
                     { value: 0.5, label: "1/2", color: "#34d399" },
-                    { value: 0.75, label: "3/4", color: "#6C5CE7" }
+                    { value: 0.75, label: "3/4", color: "#7C3AED" }
                   ],
                   jumps: [], tickInterval: 0.1, showLabels: true
                 })

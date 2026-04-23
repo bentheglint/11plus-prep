@@ -31,7 +31,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           onClick={onBack}
-          className="mb-6 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+          className="mb-6 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Home
@@ -64,10 +64,10 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={onFocusedLearning}
-            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#6C5CE7]/30 "
+            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#7C3AED]/30 "
           >
-            <div className="flex items-center justify-center w-16 h-16 bg-[#6C5CE7]/10 rounded-2xl mb-4">
-              <Target className="w-8 h-8 text-[#6C5CE7]" />
+            <div className="flex items-center justify-center w-16 h-16 bg-[#7C3AED]/10 rounded-2xl mb-4">
+              <Target className="w-8 h-8 text-[#7C3AED]" />
             </div>
             <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Focused Learning</h3>
             <p className="text-slate-500 flex-1">Pick a topic and practise 10 questions to build your confidence.</p>

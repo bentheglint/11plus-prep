@@ -47,7 +47,7 @@ export default function ErrorDashboardScreen({ onBack }) {
   return (
     <div className="app-bg p-4">
       <div className="max-w-4xl mx-auto">
-        <button onClick={onBack} className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+        <button onClick={onBack} className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
           <ArrowLeft className="w-5 h-5" />
           Back
         </button>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" role="img" aria-label="PrepStep logo with ascending bars in blue, purple and green">
+  <text x="20" y="82" font-family="Nunito, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#1E1B4B" letter-spacing="-1">PrepStep</text>
+  <!-- Ascending bars: blue → purple → green (brightest on the right, growth mindset) -->
+  <rect x="388" y="76" width="20" height="24" fill="#3B82F6" rx="3"/>
+  <rect x="414" y="56" width="20" height="44" fill="#7C3AED" rx="3"/>
+  <rect x="440" y="36" width="20" height="64" fill="#22C55E" rx="3"/>
+</svg>

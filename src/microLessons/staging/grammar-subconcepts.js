@@ -395,7 +395,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `Past: ${v.pastForm} | Present: ${v.presentForm} | Future: ${v.futureForm}`,
-                highlightWords: [{ word: v.pastForm, color: "#6C5CE7" }, { word: v.presentForm, color: "#22c55e" }, { word: v.futureForm, color: "#f59e0b" }],
+                highlightWords: [{ word: v.pastForm, color: "#7C3AED" }, { word: v.presentForm, color: "#22c55e" }, { word: v.futureForm, color: "#f59e0b" }],
                 label: "Three tenses of the same verb:"
               })
             },
@@ -998,7 +998,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.shortAdj} → ${v.comparative} → ${v.superlative}`,
-                highlightWords: [{ word: v.comparative, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.comparative, color: "#7C3AED" }],
                 label: "Comparing words:"
               })
             },
@@ -1580,7 +1580,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.coordSentence,
-                highlightWords: [{ word: v.coordConj, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.coordConj, color: "#7C3AED" }],
                 label: "Spot the joining word:"
               })
             },
@@ -1860,7 +1860,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `Active: ${v.activeSentence}`,
-                highlightWords: [{ word: v.subject, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.subject, color: "#7C3AED" }],
                 label: "Who is doing the action?"
               })
             },
@@ -2457,7 +2457,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.fullComplex,
-                highlightWords: [{ word: v.subordinateClause, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.subordinateClause, color: "#7C3AED" }],
                 label: "Spot the clauses:"
               })
             },
@@ -2744,7 +2744,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.modalVerb === 'might' ? v.mightSentence : v.modalVerb === 'should' ? v.shouldSentence : v.mustSentence,
-                highlightWords: [{ word: v.modalVerb, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.modalVerb, color: "#7C3AED" }],
                 label: "Spot the modal verb:"
               })
             },
@@ -3320,7 +3320,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `"${v.simpleNoun}" → "${v.withAdjectives}"`,
-                highlightWords: [{ word: v.withAdjectives, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.withAdjectives, color: "#7C3AED" }],
                 label: "Expand the noun phrase:"
               })
             },
@@ -3362,7 +3362,7 @@ export const grammarSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.identifySentence,
-                highlightWords: [{ word: v.identifyNounPhrase || "", color: "#6C5CE7" }],
+                highlightWords: [{ word: v.identifyNounPhrase || "", color: "#7C3AED" }],
                 label: "Spot the expanded noun phrase:"
               })
             },

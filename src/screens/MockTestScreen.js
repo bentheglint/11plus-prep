@@ -103,8 +103,8 @@ function MockTestScreen({
           </div>
 
           <div className="card-elevated p-8 text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#6C5CE7]/10 flex items-center justify-center">
-              <BookOpen className="w-8 h-8 text-[#6C5CE7]" />
+            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#7C3AED]/10 flex items-center justify-center">
+              <BookOpen className="w-8 h-8 text-[#7C3AED]" />
             </div>
             <h2 className="text-2xl font-heading font-bold text-slate-800 mb-3">
               {currentSection.typeName}
@@ -115,7 +115,7 @@ function MockTestScreen({
 
             {currentSection.workedExample && (
               <div className="bg-[#EDE8FF] rounded-xl p-5 mb-6 text-left max-w-lg mx-auto">
-                <p className="text-sm font-bold text-[#6C5CE7] mb-2">Worked Example:</p>
+                <p className="text-sm font-bold text-[#7C3AED] mb-2">Worked Example:</p>
                 <p className="text-slate-800 font-medium mb-2">{currentSection.workedExample.question}</p>
                 <p className="text-slate-800 mb-1"><strong>Answer:</strong> {currentSection.workedExample.answer}</p>
                 <p className="text-sm text-slate-500">{currentSection.workedExample.explanation}</p>
@@ -124,12 +124,12 @@ function MockTestScreen({
 
             {currentSection.showAlphabet && (
               <div className="mb-6 px-2 py-3 bg-gradient-to-r from-[#EDE8FF] to-[#DFF6FF] border border-[#A29BFE]/30 rounded-xl text-center max-w-lg mx-auto">
-                <div className="text-[9px] text-[#6C5CE7] mb-1.5 font-bold uppercase tracking-widest">Alphabet Reference</div>
+                <div className="text-[9px] text-[#7C3AED] mb-1.5 font-bold uppercase tracking-widest">Alphabet Reference</div>
                 <div className="flex justify-center">
                   {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                     <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                      <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
-                      <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
+                      <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#7C3AED]' : 'text-slate-800'}`}>{letter}</span>
+                      <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#7C3AED] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                     </div>
                   ))}
                 </div>
@@ -174,13 +174,13 @@ function MockTestScreen({
             </button>
             <button
               onClick={() => setShowNavigator(!showNavigator)}
-              className={`p-2 rounded-lg transition-colors ${showNavigator ? 'bg-[#6C5CE7] text-white' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
+              className={`p-2 rounded-lg transition-colors ${showNavigator ? 'bg-[#7C3AED] text-white' : 'bg-gray-100 text-slate-500 hover:bg-gray-200'}`}
               title="Question navigator"
             >
               <Grid3X3 className="w-4 h-4" />
             </button>
             <div className="text-right">
-              <span className="text-sm font-heading font-semibold text-[#6C5CE7]">
+              <span className="text-sm font-heading font-semibold text-[#7C3AED]">
                 Q{currentIndex + 1}/{questions.length}
               </span>
               <div className="text-xs text-slate-500">{answeredCount} done</div>
@@ -203,14 +203,14 @@ function MockTestScreen({
         {/* Progress bar */}
         <div className="w-full h-2 bg-[#EDE8FF] rounded-full overflow-hidden mb-4">
           <div
-            className="h-full bg-gradient-to-r from-[#6C5CE7] to-[#A29BFE] rounded-full transition-all duration-300"
+            className="h-full bg-gradient-to-r from-[#7C3AED] to-[#A29BFE] rounded-full transition-all duration-300"
             style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
           />
         </div>
 
         {/* Section label */}
         {sectionLabel && (
-          <span className="inline-block px-3 py-1 bg-[#6C5CE7]/10 text-[#6C5CE7] text-xs font-bold rounded-full mb-3">
+          <span className="inline-block px-3 py-1 bg-[#7C3AED]/10 text-[#7C3AED] text-xs font-bold rounded-full mb-3">
             {sectionLabel}
           </span>
         )}
@@ -236,8 +236,8 @@ function MockTestScreen({
               <div className="flex justify-center">
                 {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter, i) => (
                   <div key={letter} className="flex flex-col items-center" style={{width: 'calc(100% / 26)'}}>
-                    <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>{letter}</span>
-                    <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#6C5CE7] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
+                    <span className={`text-xs sm:text-sm font-mono font-bold ${i % 5 === 4 ? 'text-[#7C3AED]' : 'text-slate-800'}`}>{letter}</span>
+                    <span className={`text-[7px] sm:text-[8px] font-mono ${i % 5 === 4 ? 'text-[#7C3AED] font-bold' : 'text-gray-400'}`}>{i + 1}</span>
                   </div>
                 ))}
               </div>
@@ -250,7 +250,7 @@ function MockTestScreen({
               <div className="grid grid-cols-2 gap-3">
                 {question.segments.map((segment, idx) => (
                   <div key={idx} className="bg-gray-50 border-2 border-gray-300 rounded-lg p-3 text-center">
-                    <span className="block text-xs font-bold text-[#6C5CE7] mb-1">
+                    <span className="block text-xs font-bold text-[#7C3AED] mb-1">
                       Section {String.fromCharCode(65 + idx)}
                     </span>
                     <span className="text-gray-900 text-sm font-medium">{segment}</span>
@@ -300,7 +300,7 @@ function MockTestScreen({
                     onClick={() => handleSelectTwo(idx)}
                     className={`p-4 text-center rounded-xl border-2 transition-all font-medium text-lg ${
                       selectedPair.includes(idx)
-                        ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                        ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                         : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                     }`}
                   >
@@ -318,7 +318,7 @@ function MockTestScreen({
           {question.questionType === 'pick-from-sets' && (
             <div className="mb-6 space-y-4">
               <div>
-                <p className="text-sm font-bold text-[#6C5CE7] mb-2">Group A</p>
+                <p className="text-sm font-bold text-[#7C3AED] mb-2">Group A</p>
                 <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   {question.setA.map((word, idx) => (
                     <button
@@ -326,7 +326,7 @@ function MockTestScreen({
                       onClick={() => handlePickFromSet('A', idx)}
                       className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
                         selectedPair[0] === idx
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                          ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                           : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}
                     >
@@ -344,7 +344,7 @@ function MockTestScreen({
                       onClick={() => handlePickFromSet('B', idx)}
                       className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
                         selectedPair[1] === idx
-                          ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
+                          ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800 ring-2 ring-[#A29BFE]'
                           : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                       }`}
                     >
@@ -370,12 +370,12 @@ function MockTestScreen({
                     style={{ touchAction: 'manipulation' }}
                     className={`w-full p-4 text-left rounded-xl border-2 transition-all font-medium text-lg flex items-center gap-3 ${
                       isSelected
-                        ? 'border-[#6C5CE7] bg-[#EDE8FF] text-slate-800'
+                        ? 'border-[#7C3AED] bg-[#EDE8FF] text-slate-800'
                         : 'border-gray-200 bg-white hover:border-[#A29BFE] hover:bg-[#EDE8FF]/50 text-slate-800'
                     }`}
                   >
                     <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
-                      isSelected ? 'bg-[#6C5CE7] text-white' : 'bg-[#EDE8FF] text-[#6C5CE7]'
+                      isSelected ? 'bg-[#7C3AED] text-white' : 'bg-[#EDE8FF] text-[#7C3AED]'
                     }`}>
                       {letter}
                     </span>
@@ -391,7 +391,7 @@ function MockTestScreen({
             <button
               onClick={goPrev}
               disabled={currentIndex === 0}
-              className="flex items-center gap-2 px-4 py-2 text-[#6C5CE7] font-medium disabled:opacity-30 disabled:cursor-not-allowed"
+              className="flex items-center gap-2 px-4 py-2 text-[#7C3AED] font-medium disabled:opacity-30 disabled:cursor-not-allowed"
             >
               <ChevronLeft className="w-5 h-5" />
               Previous

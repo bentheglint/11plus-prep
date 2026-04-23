@@ -136,7 +136,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },
@@ -395,7 +395,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },
@@ -675,7 +675,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },
@@ -974,7 +974,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `Is "${v.testWord}" a pronoun or a preposition?`,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: "Which word class?"
               })
             },
@@ -1280,7 +1280,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },
@@ -1540,7 +1540,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence1,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `What type of word is "${v.word}" here?`
               })
             },
@@ -1578,7 +1578,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.testSentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `What type of word is "${v.word}" here?`
               })
             },
@@ -1685,7 +1685,7 @@ export const wordClassSubConcepts = [
               { type: 'visual', component: 'SentenceDisplay', props: (v) => ({
                 mode: "highlight",
                 text: v.sentenceA,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `"${v.word}" as a ${v.classA}:`
               })},
               { type: 'visual', component: 'SentenceDisplay', props: (v) => ({
@@ -1735,7 +1735,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.testSentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: `What type of word is "${v.word}" here?`
               })
             },
@@ -1907,7 +1907,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },
@@ -2051,7 +2051,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },
@@ -2222,7 +2222,7 @@ export const wordClassSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.testWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testWord, color: "#7C3AED" }],
                 label: `What type of word is "${v.testWord}"?`
               })
             },

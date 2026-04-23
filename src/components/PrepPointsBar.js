@@ -7,7 +7,7 @@ function PrepPointsBar({ levelInfo }) {
   return (
     <div className="flex items-center gap-3">
       {/* Level badge */}
-      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#6C5CE7] to-[#A29BFE] flex items-center justify-center shadow-md flex-shrink-0">
+      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#A29BFE] flex items-center justify-center shadow-md flex-shrink-0">
         <span className="text-white font-bold text-sm">{level}</span>
       </div>
 
@@ -19,7 +19,7 @@ function PrepPointsBar({ levelInfo }) {
         {/* Progress bar to next level */}
         <div className="w-full h-2 bg-[#EDE8FF] rounded-full overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#6C5CE7] to-[#A29BFE] rounded-full transition-all duration-500"
+            className="h-full bg-gradient-to-r from-[#7C3AED] to-[#A29BFE] rounded-full transition-all duration-500"
             style={{ width: `${Math.min(100, progressPct)}%` }}
           />
         </div>

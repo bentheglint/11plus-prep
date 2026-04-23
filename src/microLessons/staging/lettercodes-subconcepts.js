@@ -97,7 +97,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -140,7 +140,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -266,7 +266,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -299,7 +299,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -426,7 +426,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -458,7 +458,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -573,7 +573,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -605,7 +605,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -724,7 +724,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -740,7 +740,7 @@ export const letterCodesSubConcepts = [
               { type: 'text', content: (v) => `Let's check **${v.originalWord} → ${v.codedWord}**. Count the hops for each letter — they should ALL be the same!` },
               { type: 'visual', component: 'AlphabetLine', props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#22c55e" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : '' }))
@@ -770,7 +770,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -890,7 +890,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 // Per-hop label derived from each letter's own shift — previously
@@ -928,7 +928,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1068,7 +1068,7 @@ export const letterCodesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 points: [
-                  { letter: v.targetLetter, color: "#6C5CE7" },
+                  { letter: v.targetLetter, color: "#7C3AED" },
                   { letter: v.nearestLandmark, color: "#dc2626" }
                 ],
                 hops: [{ from: v.nearestLandmark, to: v.targetLetter, label: v.countDirection }]
@@ -1111,7 +1111,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: [{ letter: v.interactLetter, color: "#6C5CE7" }]
+                points: [{ letter: v.interactLetter, color: "#7C3AED" }]
               })
             },
             interaction: {
@@ -1246,7 +1246,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -1289,7 +1289,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactOriginal.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1411,7 +1411,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -1450,7 +1450,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactOriginal.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1591,7 +1591,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? (typeof v.shiftAmount === 'number' ? (v.shiftAmount > 0 ? '+' + v.shiftAmount : String(v.shiftAmount)) : v.shiftAmount) : '' }))
@@ -1632,7 +1632,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1756,7 +1756,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.exampleCoded.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.exampleOriginal.split('').map((l, i) => ({ from: l, to: v.exampleCoded[i], label: v.ruleFound.split(' ')[0] }))
@@ -1772,7 +1772,7 @@ export const letterCodesSubConcepts = [
               { type: 'text', content: (v) => `First, find the rule from **${v.exampleOriginal} → ${v.exampleCoded}**. Then apply it to **${v.newWord}**:` },
               { type: 'visual', component: 'AlphabetLine', props: (v) => ({
                 showEJOTY: true,
-                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.exampleCoded.split('').map(l => ({ letter: l, color: "#22c55e" }))
                 ),
                 hops: v.exampleOriginal.split('').map((l, i) => ({ from: l, to: v.exampleCoded[i], label: i === 0 ? v.ruleFound.split(' ')[0] : '' }))
@@ -1810,7 +1810,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.newWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.newWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1922,7 +1922,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.exampleCoded.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.exampleOriginal.split('').map((l, i) => ({ from: l, to: v.exampleCoded[i], label: i === 0 ? v.ruleFound.split(' ')[0] : '' }))
@@ -1938,7 +1938,7 @@ export const letterCodesSubConcepts = [
               { type: 'text', content: (v) => `Confirm the rule from **${v.exampleOriginal} → ${v.exampleCoded}**, then apply it to **${v.newWord}**:` },
               { type: 'visual', component: 'AlphabetLine', props: (v) => ({
                 showEJOTY: true,
-                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.exampleOriginal.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.exampleCoded.split('').map(l => ({ letter: l, color: "#22c55e" }))
                 ),
                 hops: v.exampleOriginal.split('').map((l, i) => ({ from: l, to: v.exampleCoded[i], label: i === 0 ? v.ruleFound.split(' ')[0] : '' }))
@@ -1974,7 +1974,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.newWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.newWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -2085,7 +2085,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? 'mirror' : '' }))
@@ -2128,7 +2128,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -2239,7 +2239,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.originalWord.split('').map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.originalWord.split('').map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.codedWord.split('').map(l => ({ letter: l, color: "#dc2626" }))
                 ),
                 hops: v.originalWord.split('').map((l, i) => ({ from: l, to: v.codedWord[i], label: i === 0 ? 'mirror' : '' }))
@@ -2272,7 +2272,7 @@ export const letterCodesSubConcepts = [
               component: "AlphabetLine",
               props: (v) => ({
                 showEJOTY: true,
-                points: v.interactWord.split('').map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactWord.split('').map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {

@@ -75,7 +75,7 @@ export const punctuationSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.contraction, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.contraction, color: "#7C3AED" }],
                 label: "Spot the contraction:"
               })
             },
@@ -376,7 +376,7 @@ export const punctuationSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.singularPossessive} — ${v.pluralPossessive}`,
-                highlightWords: [{ word: v.singularPossessive, color: "#6C5CE7" }, { word: v.pluralPossessive, color: "#22c55e" }],
+                highlightWords: [{ word: v.singularPossessive, color: "#7C3AED" }, { word: v.pluralPossessive, color: "#22c55e" }],
                 label: "One owner vs many:"
               })
             },
@@ -417,7 +417,7 @@ export const punctuationSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.testPhrase,
-                highlightWords: [{ word: v.testPhrase, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testPhrase, color: "#7C3AED" }],
                 label: "What does this mean?"
               })
             },
@@ -675,7 +675,7 @@ export const punctuationSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentenceStart,
-                highlightWords: [{ word: v.properNoun, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.properNoun, color: "#7C3AED" }],
                 label: "Which words need capitals?"
               })
             },
@@ -1239,7 +1239,7 @@ export const punctuationSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.fullSentence,
-                highlightWords: [{ word: v.connective || v.subordinateClause, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.connective || v.subordinateClause, color: "#7C3AED" }],
                 label: "Spot the clause:"
               })
             },
@@ -3649,7 +3649,7 @@ export const punctuationSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.testPhrase,
-                highlightWords: [{ word: v.testPhrase, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.testPhrase, color: "#7C3AED" }],
                 label: "What does this mean?"
               })
             },

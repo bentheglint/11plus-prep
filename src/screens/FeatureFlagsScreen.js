@@ -24,7 +24,7 @@ export default function FeatureFlagsScreen({ onBack }) {
   return (
     <div className="app-bg p-4">
       <div className="max-w-2xl mx-auto">
-        <button onClick={onBack} className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+        <button onClick={onBack} className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
           <ArrowLeft className="w-5 h-5" />
           Back
         </button>
@@ -69,7 +69,7 @@ export default function FeatureFlagsScreen({ onBack }) {
                   <div className="flex flex-col gap-2">
                     <button
                       onClick={() => { setFeatureFlag(flag.name, !flag.value); refresh(); }}
-                      className="px-3 py-1.5 rounded-lg bg-[#6C5CE7] text-white text-sm font-medium hover:bg-[#5A4BD1]"
+                      className="px-3 py-1.5 rounded-lg bg-[#7C3AED] text-white text-sm font-medium hover:bg-[#5A4BD1]"
                     >
                       {flag.value ? 'Disable' : 'Enable'}
                     </button>

@@ -2454,7 +2454,7 @@ export const logicAndLanguageSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -2493,7 +2493,7 @@ export const logicAndLanguageSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentence,
-                highlightWords: [{ word: v.iTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.iTargetWord, color: "#7C3AED" }],
                 label: `Find the answer for "${v.iTargetWord}":`
               })
             },
@@ -2603,7 +2603,7 @@ export const logicAndLanguageSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Target word: "${v.targetWord}"`
               })
             },
@@ -2636,7 +2636,7 @@ export const logicAndLanguageSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.iSentenceB,
-                highlightWords: [{ word: v.targetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.targetWord, color: "#7C3AED" }],
                 label: `Find the meaning of "${v.targetWord}":`
               })
             },

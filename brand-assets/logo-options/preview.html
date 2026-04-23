@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>PrepStep — Logo Options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1E1B4B;
+    --purple: #6C5CE7;
+    --green: #16a34a;
+    --cream: #F8F7F4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Nunito, -apple-system, 'Segoe UI', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    margin: 0;
+    padding: 48px 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 40px; font-weight: 800; letter-spacing: -1px; margin: 0 0 8px; }
+  .sub { color: #6b7280; font-size: 16px; margin: 0 0 48px; }
+
+  .option {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+  .option-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .option-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+  }
+  .option-badge {
+    background: #F3F4F6;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4b5563;
+  }
+  .option-rationale {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+
+  .contexts {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 720px) {
+    .contexts { grid-template-columns: 1fr; }
+  }
+
+  .ctx {
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+  }
+  .ctx-light { background: #ffffff; border: 1px solid #e5e7eb; }
+  .ctx-dark  { background: var(--ink); }
+  .ctx-small { background: #ffffff; border: 1px solid #e5e7eb; padding: 16px; }
+  .ctx-label {
+    position: absolute;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #9ca3af;
+    margin-top: -150px;
+    margin-left: 4px;
+  }
+  .ctx-wrap { position: relative; padding-top: 24px; }
+  .ctx-wrap-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #9ca3af;
+    margin-bottom: 6px;
+  }
+
+  .logo-full svg { width: 100%; max-width: 400px; height: auto; }
+  .logo-small svg { width: 64px; height: auto; }
+  .logo-dark svg { filter: brightness(0) invert(1); }
+
+  .filename {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>PrepStep — Logo Options</h1>
+  <p class="sub">5 placeholder variants per the marketing direction. Nunito 800, purple + indigo + green palette. Pick a favourite and we'll ship it + create the matching favicon.</p>
+
+  <!-- Option 1 -->
+  <div class="option">
+    <div class="option-header">
+      <h2 class="option-title">1. Wordmark + Ascending Bars</h2>
+      <span class="option-badge">Marketing's preferred motif</span>
+    </div>
+    <p class="option-rationale">The brief's top pick. Three bars rising right of the wordmark — literal "step" made visible, doubles as a bar chart (progress), reads as an up-arrow. Green on the top bar for a growth accent.</p>
+    <div class="contexts">
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On white</div>
+        <div class="ctx ctx-light"><div class="logo-full"><object data="logo-01-ascending-bars.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On dark</div>
+        <div class="ctx ctx-dark"><div class="logo-full logo-dark"><object data="logo-01-ascending-bars.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">Small size</div>
+        <div class="ctx ctx-small"><div class="logo-small"><object data="logo-01-ascending-bars.svg" type="image/svg+xml"></object></div></div>
+      </div>
+    </div>
+    <p class="filename">logo-01-ascending-bars.svg</p>
+  </div>
+
+  <!-- Option 2 -->
+  <div class="option">
+    <div class="option-header">
+      <h2 class="option-title">2. Wordmark + Chevron/Tick</h2>
+      <span class="option-badge">Marketing's alt motif</span>
+    </div>
+    <p class="option-rationale">Upward chevron that doubles as a checkmark. Ties "step forward" to "got it right" — reinforces the growth-mindset process-praise frame. Cleaner, more energetic than the bars.</p>
+    <div class="contexts">
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On white</div>
+        <div class="ctx ctx-light"><div class="logo-full"><object data="logo-02-chevron-tick.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On dark</div>
+        <div class="ctx ctx-dark"><div class="logo-full logo-dark"><object data="logo-02-chevron-tick.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">Small size</div>
+        <div class="ctx ctx-small"><div class="logo-small"><object data="logo-02-chevron-tick.svg" type="image/svg+xml"></object></div></div>
+      </div>
+    </div>
+    <p class="filename">logo-02-chevron-tick.svg</p>
+  </div>
+
+  <!-- Option 3 -->
+  <div class="option">
+    <div class="option-header">
+      <h2 class="option-title">3. PS Monogram + Wordmark</h2>
+      <span class="option-badge">Icon-first</span>
+    </div>
+    <p class="option-rationale">Rounded-square PS badge left of the wordmark. Icon is offset (P top-left, S bottom-right) so the monogram itself steps. Works as a standalone app icon when the wordmark is dropped. Strongest identity for favicon/home-screen use.</p>
+    <div class="contexts">
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On white</div>
+        <div class="ctx ctx-light"><div class="logo-full"><object data="logo-03-monogram-ps.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On dark</div>
+        <div class="ctx ctx-dark"><div class="logo-full logo-dark"><object data="logo-03-monogram-ps.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">Small size</div>
+        <div class="ctx ctx-small"><div class="logo-small"><object data="logo-03-monogram-ps.svg" type="image/svg+xml"></object></div></div>
+      </div>
+    </div>
+    <p class="filename">logo-03-monogram-ps.svg</p>
+  </div>
+
+  <!-- Option 4 -->
+  <div class="option">
+    <div class="option-header">
+      <h2 class="option-title">4. Stepped Wordmark (Prep ↗ Step)</h2>
+      <span class="option-badge">Typography-led</span>
+    </div>
+    <p class="option-rationale">"Prep" sits at a lower baseline, "Step" rises above it with a small riser block between — the wordmark literally steps up. Typography IS the step metaphor; no separate icon needed. Distinctive but requires space.</p>
+    <div class="contexts">
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On white</div>
+        <div class="ctx ctx-light"><div class="logo-full"><object data="logo-04-stepped-letters.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On dark</div>
+        <div class="ctx ctx-dark"><div class="logo-full logo-dark"><object data="logo-04-stepped-letters.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">Small size</div>
+        <div class="ctx ctx-small"><div class="logo-small"><object data="logo-04-stepped-letters.svg" type="image/svg+xml"></object></div></div>
+      </div>
+    </div>
+    <p class="filename">logo-04-stepped-letters.svg</p>
+  </div>
+
+  <!-- Option 5 -->
+  <div class="option">
+    <div class="option-header">
+      <h2 class="option-title">5. Split-Colour Wordmark</h2>
+      <span class="option-badge">Minimalist</span>
+    </div>
+    <p class="option-rationale">Pure typography — "Prep" in deep indigo, "Step" in purple. No icon. Simplest execution, fastest to implement, ages best. Relies entirely on typographic craft. Least distinctive but most timeless.</p>
+    <div class="contexts">
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On white</div>
+        <div class="ctx ctx-light"><div class="logo-full"><object data="logo-05-split-color.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">On dark</div>
+        <div class="ctx ctx-dark"><div class="logo-full logo-dark"><object data="logo-05-split-color.svg" type="image/svg+xml"></object></div></div>
+      </div>
+      <div class="ctx-wrap">
+        <div class="ctx-wrap-label">Small size</div>
+        <div class="ctx ctx-small"><div class="logo-small"><object data="logo-05-split-color.svg" type="image/svg+xml"></object></div></div>
+      </div>
+    </div>
+    <p class="filename">logo-05-split-color.svg</p>
+  </div>
+
+  <p class="sub" style="margin-top: 48px; font-size: 14px;">Tell me which number you prefer (or if none land) and I'll create the matching favicon + app icons (192x192 + 512x512 PNGs) and wire them into the build.</p>
+</div>
+</body>
+</html>

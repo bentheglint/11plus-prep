@@ -49,7 +49,7 @@ function coverageBadge(pct) {
 function subjectGradient(subject) {
   if (subject === 'maths') return 'from-[#0770C2] to-[#0652DD]';
   if (subject === 'english') return 'from-[#007D62] to-[#00876A]';
-  return 'from-[#6C5CE7] to-[#5A4BD1]';
+  return 'from-[#7C3AED] to-[#5A4BD1]';
 }
 
 function subjectBadgeClass(subject) {
@@ -216,7 +216,7 @@ export function TestingResultsSummary({
             </button>
             <button
               onClick={onContinueTopic}
-              className="flex-1 px-4 py-3 bg-gradient-to-r from-[#6C5CE7] to-[#A29BFE] text-white font-bold rounded-xl hover:opacity-90 transition-opacity"
+              className="flex-1 px-4 py-3 bg-gradient-to-r from-[#7C3AED] to-[#A29BFE] text-white font-bold rounded-xl hover:opacity-90 transition-opacity"
             >
               Continue Testing
             </button>
@@ -238,7 +238,7 @@ function TopicLessonPicker({ topicKey, topicName, lessonBank, testingCoverage, o
 
   return (
     <div>
-      <button onClick={onBack} className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+      <button onClick={onBack} className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
         <ArrowLeft className="w-5 h-5" />
         Back to Dashboard
       </button>
@@ -367,7 +367,7 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, onViewL
                         className={`flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-md transition-colors ${
                           isFixed
                             ? 'text-emerald-700 bg-emerald-100 hover:bg-emerald-200 ring-1 ring-emerald-300'
-                            : 'text-[#6C5CE7] bg-[#EDE8FF] hover:bg-[#DDD6FF]'
+                            : 'text-[#7C3AED] bg-[#EDE8FF] hover:bg-[#DDD6FF]'
                         }`}
                       >
                         <Eye className="w-3 h-3" />
@@ -380,7 +380,7 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, onViewL
                         className={`flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-md transition-colors ${
                           isFixed
                             ? 'text-emerald-700 bg-emerald-100 hover:bg-emerald-200 ring-1 ring-emerald-300'
-                            : 'text-[#6C5CE7] bg-[#EDE8FF] hover:bg-[#DDD6FF]'
+                            : 'text-[#7C3AED] bg-[#EDE8FF] hover:bg-[#DDD6FF]'
                         }`}
                       >
                         <Eye className="w-3 h-3" />
@@ -518,7 +518,7 @@ export default function TestingDashboard({
     <div className="app-bg p-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <button onClick={onBack} className="mb-4 flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2">
+        <button onClick={onBack} className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
           <ArrowLeft className="w-5 h-5" />
           Back to Home
         </button>

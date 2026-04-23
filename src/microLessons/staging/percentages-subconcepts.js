@@ -2568,7 +2568,7 @@ export const percentagesSubConcepts = [
               component: "BarModel",
               props: (v) => ({
                 segments: [
-                  { value: v.interactPercent, label: `${v.interactPercent}%`, color: "#6C5CE7" },
+                  { value: v.interactPercent, label: `${v.interactPercent}%`, color: "#7C3AED" },
                   { value: 100 - v.interactPercent, label: `${100 - v.interactPercent}%`, color: "#E8E5FF", empty: true }
                 ],
                 totalLabel: `${v.interactPercent}% = ${v.interactDecimal}`
@@ -2730,7 +2730,7 @@ export const percentagesSubConcepts = [
               component: "BarModel",
               props: (v) => ({
                 segments: [
-                  { value: v.interactPercent, label: `${v.interactPercent}%`, color: "#6C5CE7" },
+                  { value: v.interactPercent, label: `${v.interactPercent}%`, color: "#7C3AED" },
                   { value: 100 - v.interactPercent, label: "", color: "#E8E5FF", empty: true }
                 ],
                 totalLabel: `${v.interactPercent}% ÷ 100 = ?`

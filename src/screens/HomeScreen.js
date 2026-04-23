@@ -30,7 +30,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
   const subjects = [
     { key: 'maths', title: 'Maths', icon: Calculator, gradient: 'from-[#0770C2] to-[#0652DD]', mastery: mathsMastery },
     { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#007D62] to-[#00876A]', mastery: englishMastery },
-    { key: 'verbalreasoning', title: 'Verbal Reasoning', icon: Brain, gradient: 'from-[#6C5CE7] to-[#5A4BD1]', mastery: vrMastery },
+    { key: 'verbalreasoning', title: 'Verbal Reasoning', icon: Brain, gradient: 'from-[#7C3AED] to-[#5A4BD1]', mastery: vrMastery },
   ];
 
   return (
@@ -109,8 +109,8 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <div className="w-12 h-12 rounded-xl bg-[#6C5CE7]/10 flex items-center justify-center flex-shrink-0">
-                  <ChevronRight className="w-6 h-6 text-[#6C5CE7]" />
+                <div className="w-12 h-12 rounded-xl bg-[#7C3AED]/10 flex items-center justify-center flex-shrink-0">
+                  <ChevronRight className="w-6 h-6 text-[#7C3AED]" />
                 </div>
                 <div>
                   <p className="font-heading font-bold text-slate-800">Ready to practise?</p>
@@ -128,7 +128,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
               transition={{ type: 'spring', stiffness: 400, damping: 25 }}
               className="flex items-center gap-3 px-4 py-3 card hover:bg-[#EDE8FF]/30 rounded-xl transition-colors"
             >
-              <BarChart3 className="w-5 h-5 text-[#6C5CE7]" />
+              <BarChart3 className="w-5 h-5 text-[#7C3AED]" />
               <span className="font-heading font-bold text-slate-800 text-sm">My Progress</span>
             </motion.button>
             {onViewMistakes && (

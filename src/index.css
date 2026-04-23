@@ -6,7 +6,7 @@
 
 :root {
   /* Primary */
-  --primary: #6C5CE7;
+  --primary: #7C3AED;
   --primary-light: #A29BFE;
   --primary-surface: #EDE8FF;
   --primary-dark: #5A4BD1;
@@ -22,7 +22,7 @@
   /* Subject colours */
   --maths: #0770C2;
   --english: #007D62;
-  --vr: #6C5CE7;
+  --vr: #7C3AED;
 
   /* Neutrals (warm palette) */
   --surface: #FEFDFB;

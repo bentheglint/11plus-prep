@@ -106,7 +106,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.word} — ${v.definition}`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Which word means the same?"
               })
             },
@@ -147,7 +147,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactWord} = ${v.interactDefinition}`,
-                highlightWords: [{ word: v.interactWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactWord, color: "#7C3AED" }],
                 label: "Find the exact match:"
               })
             },
@@ -268,7 +268,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.word} — is ${v.friendWrong} really a synonym?`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }, { word: v.friendWrong, color: "#dc2626" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }, { word: v.friendWrong, color: "#dc2626" }],
                 label: "Spot the mistake"
               })
             },
@@ -306,7 +306,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactWord} — find the same-level match`,
-                highlightWords: [{ word: v.interactWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactWord, color: "#7C3AED" }],
                 label: "Not stronger, not weaker — the SAME:"
               })
             },
@@ -439,7 +439,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.formalWord} — ${v.definition}`,
-                highlightWords: [{ word: v.formalWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.formalWord, color: "#7C3AED" }],
                 label: "What is the everyday version?"
               })
             },
@@ -479,7 +479,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactFormalWord} = ${v.interactDefinition}`,
-                highlightWords: [{ word: v.interactFormalWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactFormalWord, color: "#7C3AED" }],
                 label: "Find the simple version:"
               })
             },
@@ -600,7 +600,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.formalWord} — can you guess what this means?`,
-                highlightWords: [{ word: v.formalWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.formalWord, color: "#7C3AED" }],
                 label: "Find the simple synonym"
               })
             },
@@ -644,7 +644,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactFormalWord} = ${v.interactDefinition}`,
-                highlightWords: [{ word: v.interactFormalWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactFormalWord, color: "#7C3AED" }],
                 label: "Find the everyday synonym:"
               })
             },
@@ -773,7 +773,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.word} — ${v.definition}`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Which word shows the SAME action?"
               })
             },
@@ -805,7 +805,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactWord} = ${v.interactDefinition}`,
-                highlightWords: [{ word: v.interactWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactWord, color: "#7C3AED" }],
                 label: "Find the matching action:"
               })
             },
@@ -986,7 +986,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.interactSentence,
-                highlightWords: [{ word: v.interactTargetWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactTargetWord, color: "#7C3AED" }],
                 label: "Find the synonym in context:"
               })
             },
@@ -1157,7 +1157,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactWord} — find the same-strength match`,
-                highlightWords: [{ word: v.interactWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactWord, color: "#7C3AED" }],
                 label: "Match the intensity level:"
               })
             },
@@ -1282,7 +1282,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.word} — ${v.definition}`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Find the matching synonym"
               })
             },
@@ -1314,7 +1314,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.interactWord} = ${v.interactDefinition}`,
-                highlightWords: [{ word: v.interactWord, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.interactWord, color: "#7C3AED" }],
                 label: "Find the synonym:"
               })
             },
@@ -1423,7 +1423,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.word} — can you work out what this means?`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Find the synonym"
               })
             },
@@ -1461,7 +1461,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: `${v.word} = ${v.definition}`,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Find the synonym:"
               })
             },
@@ -1570,7 +1570,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Which word means the same?"
               })
             },
@@ -1602,7 +1602,7 @@ export const synonymsSubConcepts = [
               props: (v) => ({
                 mode: "highlight",
                 text: v.sentence,
-                highlightWords: [{ word: v.word, color: "#6C5CE7" }],
+                highlightWords: [{ word: v.word, color: "#7C3AED" }],
                 label: "Find the synonym in context:"
               })
             },

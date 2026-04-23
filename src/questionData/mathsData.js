@@ -20814,7 +20814,7 @@ anglesshapes: {
     {
       id: 1,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 65, label: "x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#7C3AED"}, {value: 65, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 115° and x°. What is the value of x?",
       options: ["45°", "55°", "65°", "75°", "85°"],
       correct: 2,
@@ -20823,7 +20823,7 @@ anglesshapes: {
     {
       id: 2,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 100, label: "100°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#007D62"}, {value: 130, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 100, label: "100°", color: "#7C3AED"}, {value: 130, label: "130°", color: "#007D62"}, {value: 130, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Emma draws three angles around a point. Two angles are 100° and 130°. What is the third angle?",
       options: ["100°", "110°", "120°", "130°", "140°"],
       correct: 3,
@@ -20841,7 +20841,7 @@ anglesshapes: {
     {
       id: 4,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 135, label: "135°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 135, label: "135°", color: "#7C3AED"}], size: 200 } },
       question: "Jake measures an angle and finds it is 135°. What type of angle is this?",
       options: ["Obtuse", "Right", "Acute", "Straight", "Reflex"],
       correct: 0,
@@ -20885,7 +20885,7 @@ anglesshapes: {
     {
       id: 9,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#007D62"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#7C3AED"}, {value: 90, label: "90°", color: "#007D62"}, {value: 105, label: "105°", color: "#7C3AED"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 85°, 90°, and 105°. What is the fourth angle?",
       options: ["80°", "75°", "70°", "85°", "90°"],
       correct: 0,
@@ -20894,7 +20894,7 @@ anglesshapes: {
     {
       id: 10,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [80, 100, 95, 85], labels: ["80°", "100°", "95°", "?"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [80, 100, 95, 85], labels: ["80°", "100°", "95°", "?"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "Lucy draws a quadrilateral with angles 80°, 100°, and 95°. What is the fourth angle?",
       options: ["75°", "85°", "80°", "90°", "95°"],
       correct: 1,
@@ -20903,7 +20903,7 @@ anglesshapes: {
     {
       id: 11,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 220, label: "220°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 220, label: "220°", color: "#7C3AED"}], size: 200 } },
       question: "An angle measures 220°. What type of angle is this?",
       options: ["Acute", "Right", "Reflex", "Straight", "Obtuse"],
       correct: 2,
@@ -20912,7 +20912,7 @@ anglesshapes: {
     {
       id: 12,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3x°", color: "#6C5CE7"}, {value: 72, label: "2x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3x°", color: "#7C3AED"}, {value: 72, label: "2x°", color: "#FDCB6E"}], size: 200 } },
       question: "Ben measures angles on a straight line. One angle is 3x° and the other is 2x°. What is the value of x?",
       options: ["30°", "45°", "40°", "36°", "60°"],
       correct: 3,
@@ -20957,7 +20957,7 @@ anglesshapes: {
     {
       id: 17,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "x°", color: "#FDCB6E"}, {value: 120, label: "2x°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "x°", color: "#FDCB6E"}, {value: 120, label: "2x°", color: "#7C3AED"}], size: 200 } },
       question: "Sarah draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
       options: ["45°", "50°", "72°", "60°", "90°"],
       correct: 3,
@@ -20966,7 +20966,7 @@ anglesshapes: {
     {
       id: 18,
       difficulty: 2,
-      visual: { component: "QuadShape", props: { angles: [60, 120, 60, 120], labels: ["60°", "120°", "60°", "x°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [60, 120, 60, 120], labels: ["60°", "120°", "60°", "x°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A rhombus has angles of 60°, 120°, 60°, and x°. What is x?",
       options: ["60°", "90°", "100°", "150°", "120°"],
       correct: 4,
@@ -21011,7 +21011,7 @@ anglesshapes: {
     {
       id: 23,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 128, label: "128°", color: "#6C5CE7"}, {value: 52, label: "x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 128, label: "128°", color: "#7C3AED"}, {value: 52, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 128° and x°. What is the value of x?",
       options: ["42°", "48°", "62°", "58°", "52°"],
       correct: 4,
@@ -21038,7 +21038,7 @@ anglesshapes: {
     {
       id: 26,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [92, 88, 105, 75], labels: ["92°", "88°", "105°", "a°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [92, 88, 105, 75], labels: ["92°", "88°", "105°", "a°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A quadrilateral has angles 92°, 88°, 105°, and a°. What is a?",
       options: ["65°", "70°", "75°", "80°", "85°"],
       correct: 2,
@@ -21056,7 +21056,7 @@ anglesshapes: {
     {
       id: 28,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 130, label: "130°", color: "#007D62"}, {value: 115, label: "p°", color: "#dc2626"}] } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#7C3AED"}, {value: 130, label: "130°", color: "#007D62"}, {value: 115, label: "p°", color: "#dc2626"}] } },
       question: "Three angles meet around a point: 115°, 130°, and p°. What is p?",
       options: ["105°", "110°", "125°", "120°", "115°"],
       correct: 4,
@@ -21065,7 +21065,7 @@ anglesshapes: {
     {
       id: 29,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "4x°", color: "#6C5CE7"}, {value: 100, label: "5x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "4x°", color: "#7C3AED"}, {value: 100, label: "5x°", color: "#FDCB6E"}], size: 200 } },
       question: "Sophie has angles on a straight line measuring 4x° and 5x°. What is x?",
       options: ["20°", "18°", "15°", "24°", "30°"],
       correct: 0,
@@ -21101,7 +21101,7 @@ anglesshapes: {
     {
       id: 33,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 145, label: "145°", color: "#007D62"}, {value: 75, label: "75°", color: "#6C5CE7"}, {value: 50, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#7C3AED"}, {value: 145, label: "145°", color: "#007D62"}, {value: 75, label: "75°", color: "#7C3AED"}, {value: 50, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Lucy calculates that three angles around a point are 90°, 145°, and 75°. What is the fourth angle?",
       options: ["40°", "45°", "60°", "55°", "50°"],
       correct: 4,
@@ -21146,7 +21146,7 @@ anglesshapes: {
     {
       id: 38,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [78, 102, 96, 84], labels: ["78°", "102°", "96°", "n°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [78, 102, 96, 84], labels: ["78°", "102°", "96°", "n°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "Mia draws a quadrilateral with angles 78°, 102°, 96°, and n°. What is n?",
       options: ["74°", "79°", "94°", "89°", "84°"],
       correct: 4,
@@ -21155,7 +21155,7 @@ anglesshapes: {
     {
       id: 39,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 40, label: "?", color: "#FDCB6E"}, {value: 140, label: "?", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 40, label: "?", color: "#FDCB6E"}, {value: 140, label: "?", color: "#7C3AED"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 2:7. What is the smaller angle?",
       options: ["40°", "35°", "30°", "45°", "50°"],
       correct: 0,
@@ -21191,7 +21191,7 @@ anglesshapes: {
     {
       id: 43,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#6C5CE7"}, {value: 95, label: "95°", color: "#007D62"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 92, label: "b°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#7C3AED"}, {value: 95, label: "95°", color: "#007D62"}, {value: 88, label: "88°", color: "#7C3AED"}, {value: 92, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 85°, 95°, 88°, and b°. What is b?",
       options: ["82°", "87°", "102°", "97°", "92°"],
       correct: 4,
@@ -21200,7 +21200,7 @@ anglesshapes: {
     {
       id: 44,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "7c°", color: "#6C5CE7"}, {value: 110, label: "11c°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "7c°", color: "#7C3AED"}, {value: 110, label: "11c°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 7c° and 11c°. What is c?",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
@@ -21227,7 +21227,7 @@ anglesshapes: {
     {
       id: 47,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [105, 75, 105, 75], labels: ["105°", "75°", "105°", "e°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [105, 75, 105, 75], labels: ["105°", "75°", "105°", "e°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A trapezium has angles 105°, 75°, 105°, and e°. What is e?",
       options: ["65°", "70°", "80°", "75°", "85°"],
       correct: 3,
@@ -21245,7 +21245,7 @@ anglesshapes: {
     {
       id: 49,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "108°", color: "#6C5CE7"}, {value: 127, label: "127°", color: "#007D62"}, {value: 84, label: "84°", color: "#6C5CE7"}, {value: 41, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "108°", color: "#7C3AED"}, {value: 127, label: "127°", color: "#007D62"}, {value: 84, label: "84°", color: "#7C3AED"}, {value: 41, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 108°, 127°, and 84°. What is the fourth angle?",
       options: ["41°", "36°", "31°", "46°", "51°"],
       correct: 0,
@@ -21263,7 +21263,7 @@ anglesshapes: {
     {
       id: 51,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3f°", color: "#6C5CE7"}, {value: 72, label: "2f°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3f°", color: "#7C3AED"}, {value: 72, label: "2f°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 3f° and 2f°. What is f?",
       options: ["30°", "40°", "36°", "45°", "50°"],
       correct: 2,
@@ -21308,7 +21308,7 @@ anglesshapes: {
     {
       id: 56,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [68, 112, 68, 112], labels: ["68°", "112°", "68°", "h°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [68, 112, 68, 112], labels: ["68°", "112°", "68°", "h°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A parallelogram has angles 68°, 112°, 68°, and h°. What is h?",
       options: ["102°", "107°", "112°", "117°", "122°"],
       correct: 2,
@@ -21326,7 +21326,7 @@ anglesshapes: {
     {
       id: 58,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "9j°", color: "#6C5CE7"}, {value: 72, label: "6j°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "9j°", color: "#7C3AED"}, {value: 72, label: "6j°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 9j° and 6j°. What is j?",
       options: ["10°", "20°", "15°", "18°", "12°"],
       correct: 4,
@@ -21362,7 +21362,7 @@ anglesshapes: {
     {
       id: 62,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#007D62"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 85, label: "q°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#7C3AED"}, {value: 98, label: "98°", color: "#007D62"}, {value: 105, label: "105°", color: "#7C3AED"}, {value: 85, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 72°, 98°, 105°, and q°. What is q?",
       options: ["75°", "80°", "90°", "85°", "95°"],
       correct: 3,
@@ -21371,7 +21371,7 @@ anglesshapes: {
     {
       id: 63,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 75, label: "5r°", color: "#6C5CE7"}, {value: 105, label: "7r°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 75, label: "5r°", color: "#7C3AED"}, {value: 105, label: "7r°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 5r° and 7r°. What is r?",
       options: ["12°", "24°", "18°", "20°", "15°"],
       correct: 4,
@@ -21407,7 +21407,7 @@ anglesshapes: {
     {
       id: 67,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [84, 93, 97, 86], labels: ["84°", "93°", "97°", "s°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [84, 93, 97, 86], labels: ["84°", "93°", "97°", "s°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A quadrilateral has angles 84°, 93°, 97°, and s°. What is s?",
       options: ["76°", "81°", "91°", "86°", "96°"],
       correct: 3,
@@ -21452,7 +21452,7 @@ anglesshapes: {
     {
       id: 72,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "8v°", color: "#6C5CE7"}, {value: 100, label: "10v°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "8v°", color: "#7C3AED"}, {value: 100, label: "10v°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 8v° and 10v°. What is v?",
       options: ["8°", "15°", "12°", "10°", "20°"],
       correct: 3,
@@ -21470,7 +21470,7 @@ anglesshapes: {
     {
       id: 74,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 116, label: "116°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#007D62"}, {value: 82, label: "82°", color: "#6C5CE7"}, {value: 64, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 116, label: "116°", color: "#7C3AED"}, {value: 98, label: "98°", color: "#007D62"}, {value: 82, label: "82°", color: "#7C3AED"}, {value: 64, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 116°, 98°, and 82°. What is the fourth angle?",
       options: ["64°", "59°", "54°", "69°", "74°"],
       correct: 0,
@@ -21488,7 +21488,7 @@ anglesshapes: {
     {
       id: 76,
       difficulty: 2,
-      visual: { component: "QuadShape", props: { angles: [72, 108, 72, 108], labels: ["72°", "108°", "72°", "z°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [72, 108, 72, 108], labels: ["72°", "108°", "72°", "z°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A kite has angles 72°, 108°, 72°, and z°. What is z?",
       options: ["98°", "103°", "108°", "113°", "118°"],
       correct: 2,
@@ -21497,7 +21497,7 @@ anglesshapes: {
     {
       id: 77,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "6x°", color: "#6C5CE7"}, {value: 120, label: "12x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "6x°", color: "#7C3AED"}, {value: 120, label: "12x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 6x° and 12x°. What is x?",
       options: ["8°", "15°", "12°", "10°", "18°"],
       correct: 3,
@@ -21533,7 +21533,7 @@ anglesshapes: {
     {
       id: 81,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#6C5CE7"}, {value: 103, label: "103°", color: "#007D62"}, {value: 91, label: "91°", color: "#6C5CE7"}, {value: 77, label: "b°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 89, label: "89°", color: "#7C3AED"}, {value: 103, label: "103°", color: "#007D62"}, {value: 91, label: "91°", color: "#7C3AED"}, {value: 77, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 89°, 103°, 91°, and b°. What is b?",
       options: ["67°", "72°", "77°", "82°", "87°"],
       correct: 2,
@@ -21560,7 +21560,7 @@ anglesshapes: {
     {
       id: 84,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "11c°", color: "#6C5CE7"}, {value: 70, label: "7c°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "11c°", color: "#7C3AED"}, {value: 70, label: "7c°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 11c° and 7c°. What is c?",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
@@ -21578,7 +21578,7 @@ anglesshapes: {
     {
       id: 86,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [87, 94, 91, 88], labels: ["87°", "94°", "91°", "e°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [87, 94, 91, 88], labels: ["87°", "94°", "91°", "e°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A quadrilateral has angles 87°, 94°, 91°, and e°. What is e?",
       options: ["78°", "83°", "88°", "93°", "98°"],
       correct: 2,
@@ -21605,7 +21605,7 @@ anglesshapes: {
     {
       id: 89,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "13g°", color: "#6C5CE7"}, {value: 50, label: "5g°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "13g°", color: "#7C3AED"}, {value: 50, label: "5g°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 13g° and 5g°. What is g?",
       options: ["10°", "8°", "12°", "15°", "18°"],
       correct: 0,
@@ -21632,7 +21632,7 @@ anglesshapes: {
     {
       id: 92,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 124, label: "124°", color: "#6C5CE7"}, {value: 87, label: "87°", color: "#007D62"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 53, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 124, label: "124°", color: "#7C3AED"}, {value: 87, label: "87°", color: "#007D62"}, {value: 96, label: "96°", color: "#7C3AED"}, {value: 53, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 124°, 87°, and 96°. What is the fourth angle?",
       options: ["43°", "48°", "58°", "53°", "63°"],
       correct: 3,
@@ -21659,7 +21659,7 @@ anglesshapes: {
     {
       id: 95,
       difficulty: 2,
-      visual: { component: "QuadShape", props: { angles: [65, 115, 65, 115], labels: ["65°", "115°", "65°", "k°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [65, 115, 65, 115], labels: ["65°", "115°", "65°", "k°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A rhombus has angles 65°, 115°, 65°, and k°. What is k?",
       options: ["105°", "115°", "110°", "120°", "125°"],
       correct: 1,
@@ -21686,7 +21686,7 @@ anglesshapes: {
     {
       id: 98,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 140, label: "14n°", color: "#6C5CE7"}, {value: 40, label: "4n°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 140, label: "14n°", color: "#7C3AED"}, {value: 40, label: "4n°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 14n° and 4n°. What is n?",
       options: ["8°", "18°", "12°", "15°", "10°"],
       correct: 4,
@@ -21713,7 +21713,7 @@ anglesshapes: {
     {
       id: 101,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#007D62"}, {value: 108, label: "108°", color: "#6C5CE7"}, {value: 76, label: "q°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 94, label: "94°", color: "#7C3AED"}, {value: 82, label: "82°", color: "#007D62"}, {value: 108, label: "108°", color: "#7C3AED"}, {value: 76, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 94°, 82°, 108°, and q°. What is q?",
       options: ["66°", "71°", "76°", "81°", "86°"],
       correct: 2,
@@ -21731,7 +21731,7 @@ anglesshapes: {
     {
       id: 103,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 150, label: "15r°", color: "#6C5CE7"}, {value: 30, label: "3r°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 150, label: "15r°", color: "#7C3AED"}, {value: 30, label: "3r°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 15r° and 3r°. What is r?",
       options: ["8°", "18°", "12°", "15°", "10°"],
       correct: 4,
@@ -21749,7 +21749,7 @@ anglesshapes: {
     {
       id: 105,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [98, 82, 98, 82], labels: ["98°", "82°", "98°", "s°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [98, 82, 98, 82], labels: ["98°", "82°", "98°", "s°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A trapezium has angles 98°, 82°, 98°, and s°. What is s?",
       options: ["72°", "82°", "77°", "87°", "92°"],
       correct: 1,
@@ -21794,7 +21794,7 @@ anglesshapes: {
     {
       id: 110,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 160, label: "16u°", color: "#6C5CE7"}, {value: 20, label: "2u°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 160, label: "16u°", color: "#7C3AED"}, {value: 20, label: "2u°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 16u° and 2u°. What is u?",
       options: ["8°", "10°", "12°", "15°", "18°"],
       correct: 1,
@@ -21830,7 +21830,7 @@ anglesshapes: {
     {
       id: 114,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 132, label: "132°", color: "#6C5CE7"}, {value: 78, label: "78°", color: "#007D62"}, {value: 105, label: "105°", color: "#6C5CE7"}, {value: 45, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 132, label: "132°", color: "#7C3AED"}, {value: 78, label: "78°", color: "#007D62"}, {value: 105, label: "105°", color: "#7C3AED"}, {value: 45, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 132°, 78°, and 105°. What is the fourth angle?",
       options: ["45°", "40°", "35°", "50°", "55°"],
       correct: 0,
@@ -21839,7 +21839,7 @@ anglesshapes: {
     {
       id: 115,
       difficulty: 1,
-      visual: { component: "QuadShape", props: { angles: [74, 106, 74, 106], labels: ["74°", "106°", "74°", "y°"], colors: ["#6C5CE7", "#6C5CE7", "#6C5CE7", "#FDCB6E"] } },
+      visual: { component: "QuadShape", props: { angles: [74, 106, 74, 106], labels: ["74°", "106°", "74°", "y°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A parallelogram has angles 74°, 106°, 74°, and y°. What is y?",
       options: ["96°", "106°", "101°", "111°", "116°"],
       correct: 1,
@@ -21848,7 +21848,7 @@ anglesshapes: {
     {
       id: 116,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 170, label: "17z°", color: "#6C5CE7"}, {value: 10, label: "z°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 170, label: "17z°", color: "#7C3AED"}, {value: 10, label: "z°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 17z° and z°. What is z?",
       options: ["8°", "12°", "10°", "15°", "18°"],
       correct: 2,
@@ -21893,7 +21893,7 @@ anglesshapes: {
     {
       id: 121,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#6C5CE7"}, {value: 109, label: "109°", color: "#007D62"}, {value: 88, label: "88°", color: "#6C5CE7"}, {value: 67, label: "b°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 96, label: "96°", color: "#7C3AED"}, {value: 109, label: "109°", color: "#007D62"}, {value: 88, label: "88°", color: "#7C3AED"}, {value: 67, label: "b°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 96°, 109°, 88°, and b°. What is b?",
       options: ["57°", "62°", "67°", "72°", "77°"],
       correct: 2,
@@ -21902,7 +21902,7 @@ anglesshapes: {
     {
       id: 122,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "?", color: "#FDCB6E"}, {value: 130, label: "?", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "?", color: "#FDCB6E"}, {value: 130, label: "?", color: "#7C3AED"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 5:13. What is the smaller angle?",
       options: ["40°", "45°", "55°", "50°", "60°"],
       correct: 3,
@@ -21919,7 +21919,7 @@ anglesshapes: {
     {
       id: 123,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "110°", color: "#6C5CE7"}, {value: 70, label: "70°", color: "#007D62"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "110°", color: "#7C3AED"}, {value: 70, label: "70°", color: "#007D62"}], size: 200 } },
       question: "What do angles on a straight line add up to?",
       options: ["90°", "120°", "360°", "270°", "180°"],
       correct: 4,
@@ -21928,7 +21928,7 @@ anglesshapes: {
     {
       id: 124,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#6C5CE7"}, {value: 65, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#7C3AED"}, {value: 65, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles are on a straight line. One angle is 115°. What is the other angle?",
       options: ["65°", "55°", "75°", "85°", "95°"],
       correct: 0,
@@ -21937,7 +21937,7 @@ anglesshapes: {
     {
       id: 125,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#6C5CE7"}, {value: 108, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#7C3AED"}, {value: 108, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles sit on a straight line. One angle is 72°. What is the other angle?",
       options: ["98°", "108°", "100°", "112°", "118°"],
       correct: 1,
@@ -21946,7 +21946,7 @@ anglesshapes: {
     {
       id: 126,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 90, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#7C3AED"}, {value: 90, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "An angle of 90° sits on a straight line with another angle. What is the other angle?",
       options: ["45°", "60°", "90°", "120°", "180°"],
       correct: 2,
@@ -21955,7 +21955,7 @@ anglesshapes: {
     {
       id: 127,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 143, label: "143°", color: "#6C5CE7"}, {value: 37, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 143, label: "143°", color: "#7C3AED"}, {value: 37, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles are formed on a straight line. One is 143°. What is the other?",
       options: ["27°", "47°", "43°", "37°", "57°"],
       correct: 3,
@@ -21964,7 +21964,7 @@ anglesshapes: {
     {
       id: 128,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 58, label: "58°", color: "#6C5CE7"}, {value: 122, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 58, label: "58°", color: "#7C3AED"}, {value: 122, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Oliver draws a straight line and marks an angle of 58° on one side. What is the angle on the other side?",
       options: ["112°", "118°", "132°", "128°", "122°"],
       correct: 4,
@@ -21973,7 +21973,7 @@ anglesshapes: {
     {
       id: 129,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 165, label: "165°", color: "#6C5CE7"}, {value: 15, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 165, label: "165°", color: "#7C3AED"}, {value: 15, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Emma measures one of two angles on a straight line and gets 165°. What is the other angle?",
       options: ["15°", "10°", "5°", "20°", "25°"],
       correct: 0,
@@ -21994,7 +21994,7 @@ anglesshapes: {
     {
       id: 131,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#6C5CE7"}, {value: 68, label: "68°", color: "#007D62"}, {value: 58, label: "x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#7C3AED"}, {value: 68, label: "68°", color: "#007D62"}, {value: 58, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles on a straight line are 54°, 68°, and x°. What is x?",
       options: ["48°", "52°", "58°", "56°", "62°"],
       correct: 2,
@@ -22003,7 +22003,7 @@ anglesshapes: {
     {
       id: 132,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 37, label: "37°", color: "#6C5CE7"}, {value: 85, label: "85°", color: "#007D62"}, {value: 58, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 37, label: "37°", color: "#7C3AED"}, {value: 85, label: "85°", color: "#007D62"}, {value: 58, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles sit on a straight line. Two of them are 37° and 85°. What is the third angle?",
       options: ["48°", "52°", "56°", "58°", "62°"],
       correct: 3,
@@ -22012,7 +22012,7 @@ anglesshapes: {
     {
       id: 133,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 125, label: "125°", color: "#6C5CE7"}, {value: 55, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 125, label: "125°", color: "#7C3AED"}, {value: 55, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two straight lines cross each other. One of the angles formed is 125°. What is the angle vertically opposite to it?",
       options: ["45°", "55°", "65°", "115°", "125°"],
       correct: 4,
@@ -22021,7 +22021,7 @@ anglesshapes: {
     {
       id: 134,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#6C5CE7"}, {value: 110, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#7C3AED"}, {value: 110, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two straight lines cross. One angle is 70°. What is the angle next to it on the straight line?",
       options: ["110°", "90°", "100°", "70°", "120°"],
       correct: 0,
@@ -22030,7 +22030,7 @@ anglesshapes: {
     {
       id: 135,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#6C5CE7"}, {value: 65, label: "y°", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#007D62"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#7C3AED"}, {value: 65, label: "y°", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#007D62"}], size: 200 } },
       question: "Sophie marks three angles on a straight line: 42°, y°, and 73°. What is y?",
       options: ["55°", "65°", "60°", "70°", "75°"],
       correct: 1,
@@ -22039,7 +22039,7 @@ anglesshapes: {
     {
       id: 136,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 45, label: "1 part", color: "#6C5CE7"}, {value: 135, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 45, label: "1 part", color: "#7C3AED"}, {value: 135, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are in the ratio 1:3. What is the larger angle?",
       options: ["30°", "45°", "135°", "120°", "90°"],
       correct: 2,
@@ -22048,7 +22048,7 @@ anglesshapes: {
     {
       id: 137,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "x°", color: "#6C5CE7"}, {value: 120, label: "2x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "x°", color: "#7C3AED"}, {value: 120, label: "2x°", color: "#FDCB6E"}], size: 200 } },
       question: "Jack draws two angles on a straight line. One angle is twice the size of the other. What is the smaller angle?",
       options: ["30°", "45°", "72°", "60°", "90°"],
       correct: 3,
@@ -22069,7 +22069,7 @@ anglesshapes: {
     {
       id: 139,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 28, label: "28°", color: "#6C5CE7"}, {value: 47, label: "47°", color: "#007D62"}, {value: 63, label: "63°", color: "#E17055"}, {value: 42, label: "w°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 28, label: "28°", color: "#7C3AED"}, {value: 47, label: "47°", color: "#007D62"}, {value: 63, label: "63°", color: "#E17055"}, {value: 42, label: "w°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles on a straight line are 28°, 47°, 63°, and w°. What is w?",
       options: ["42°", "37°", "32°", "47°", "52°"],
       correct: 0,
@@ -22078,7 +22078,7 @@ anglesshapes: {
     {
       id: 140,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#6C5CE7"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#7C3AED"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "A door is open, making an angle of 65° with the wall. What is the angle between the door and the wall on the other side?",
       options: ["95°", "115°", "105°", "125°", "135°"],
       correct: 1,
@@ -22087,7 +22087,7 @@ anglesshapes: {
     {
       id: 141,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "130°", color: "#6C5CE7"}, {value: 50, label: "a°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "130°", color: "#7C3AED"}, {value: 50, label: "a°", color: "#FDCB6E"}], size: 200 } },
       question: "Angle a is on a straight line with 130°. Angle b is vertically opposite to angle a. What is b?",
       options: ["40°", "60°", "50°", "130°", "140°"],
       correct: 2,
@@ -22096,7 +22096,7 @@ anglesshapes: {
     {
       id: 142,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 15, label: "15°", color: "#6C5CE7"}, {value: 35, label: "35°", color: "#007D62"}, {value: 75, label: "x°", color: "#FDCB6E"}, {value: 55, label: "55°", color: "#E17055"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 15, label: "15°", color: "#7C3AED"}, {value: 35, label: "35°", color: "#007D62"}, {value: 75, label: "x°", color: "#FDCB6E"}, {value: 55, label: "55°", color: "#E17055"}], size: 200 } },
       question: "Four angles on a straight line are 15°, 35°, x°, and 55°. What is x?",
       options: ["65°", "70°", "80°", "75°", "85°"],
       correct: 3,
@@ -22105,7 +22105,7 @@ anglesshapes: {
     {
       id: 143,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 45, label: "x°", color: "#6C5CE7"}, {value: 135, label: "3x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 45, label: "x°", color: "#7C3AED"}, {value: 135, label: "3x°", color: "#FDCB6E"}], size: 200 } },
       question: "Lily has two angles on a straight line. One angle is 3 times the size of the other. What is the smaller angle?",
       options: ["30°", "36°", "60°", "54°", "45°"],
       correct: 4,
@@ -22114,7 +22114,7 @@ anglesshapes: {
     {
       id: 144,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 68, label: "68°", color: "#6C5CE7"}, {value: 112, label: "q°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 68, label: "68°", color: "#7C3AED"}, {value: 112, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Angle p and angle q are on a straight line. Angle r is vertically opposite to angle q. If p = 68°, what is angle r?",
       options: ["112°", "68°", "102°", "22°", "122°"],
       correct: 0,
@@ -22131,7 +22131,7 @@ anglesshapes: {
     {
       id: 145,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 47, label: "47°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 47, label: "47°", color: "#7C3AED"}], size: 200 } },
       question: "An angle measures 47°. What type of angle is it?",
       options: ["Right", "Acute", "Obtuse", "Straight", "Reflex"],
       correct: 1,
@@ -22140,7 +22140,7 @@ anglesshapes: {
     {
       id: 146,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 135, label: "135°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 135, label: "135°", color: "#7C3AED"}], size: 200 } },
       question: "An angle measures 135°. What type of angle is it?",
       options: ["Acute", "Right", "Obtuse", "Straight", "Reflex"],
       correct: 2,
@@ -22149,7 +22149,7 @@ anglesshapes: {
     {
       id: 147,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "?°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "?°", color: "#7C3AED"}], size: 200 } },
       question: "Which of these is a right angle?",
       options: ["45°", "60°", "180°", "90°", "270°"],
       correct: 3,
@@ -22158,7 +22158,7 @@ anglesshapes: {
     {
       id: 148,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 180, label: "180°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 180, label: "180°", color: "#7C3AED"}], size: 200 } },
       question: "Sophie measures an angle of 180°. What type of angle is this?",
       options: ["Acute", "Right", "Obtuse", "Reflex", "Straight"],
       correct: 4,
@@ -22167,7 +22167,7 @@ anglesshapes: {
     {
       id: 149,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 82, label: "82°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 82, label: "82°", color: "#7C3AED"}], size: 200 } },
       question: "An angle measures 82°. What type of angle is it?",
       options: ["Acute", "Right", "Obtuse", "Straight", "Reflex"],
       correct: 0,
@@ -22176,7 +22176,7 @@ anglesshapes: {
     {
       id: 150,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 163, label: "163°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 163, label: "163°", color: "#7C3AED"}], size: 200 } },
       question: "Harry measures an angle of 163°. What type of angle is it?",
       options: ["Acute", "Obtuse", "Right", "Straight", "Reflex"],
       correct: 1,
@@ -22188,7 +22188,7 @@ anglesshapes: {
     {
       id: 151,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 250, label: "250°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 250, label: "250°", color: "#7C3AED"}], size: 200 } },
       question: "An angle is greater than 180° but less than 360°. What type of angle is it?",
       options: ["Acute", "Right", "Reflex", "Straight", "Obtuse"],
       correct: 2,
@@ -22197,7 +22197,7 @@ anglesshapes: {
     {
       id: 152,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 200, label: "200°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 200, label: "200°", color: "#7C3AED"}], size: 200 } },
       question: "Lily says an angle of 200° is obtuse. Is she correct?",
       options: ["Yes, because it is bigger than 90°", "Yes, because it is bigger than 180°", "No, it is a straight angle", "No, it is a reflex angle", "No, it is an acute angle"],
       correct: 3,
@@ -22206,7 +22206,7 @@ anglesshapes: {
     {
       id: 153,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#7C3AED"}], size: 200 } },
       question: "Oliver draws a triangle. Two of its angles are 50° and 60°. What type of angle is the third angle?",
       options: ["Reflex", "Right", "Obtuse", "Straight", "Acute"],
       correct: 4,
@@ -22223,7 +22223,7 @@ anglesshapes: {
     {
       id: 155,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#7C3AED"}], size: 200 } },
       question: "Jack draws a triangle with angles 25° and 35°. What type of angle is the third angle?",
       options: ["Acute", "Obtuse", "Right", "Straight", "Reflex"],
       correct: 1,
@@ -22253,7 +22253,7 @@ anglesshapes: {
     {
       id: 158,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#7C3AED"}], size: 200 } },
       question: "An obtuse angle is exactly 3 times the size of a 40° angle. What is the obtuse angle?",
       options: ["80°", "100°", "160°", "140°", "120°"],
       correct: 4,
@@ -22380,7 +22380,7 @@ anglesshapes: {
     {
       id: 173,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 78, label: "78°", color: "#6C5CE7"}, {value: 112, label: "112°", color: "#007D62"}, {value: 95, label: "95°", color: "#6C5CE7"}, {value: 75, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 78, label: "78°", color: "#7C3AED"}, {value: 112, label: "112°", color: "#007D62"}, {value: 95, label: "95°", color: "#7C3AED"}, {value: 75, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 78°, 112°, and 95°. What is the fourth angle?",
       options: ["65°", "70°", "85°", "80°", "75°"],
       correct: 4,
@@ -22389,7 +22389,7 @@ anglesshapes: {
     {
       id: 174,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 148, label: "148°", color: "#6C5CE7"}, {value: 97, label: "97°", color: "#007D62"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 148, label: "148°", color: "#7C3AED"}, {value: 97, label: "97°", color: "#007D62"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles meet at a point. Two of them are 148° and 97°. What is the third angle?",
       options: ["115°", "110°", "105°", "120°", "125°"],
       correct: 0,
@@ -22398,7 +22398,7 @@ anglesshapes: {
     {
       id: 175,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#6C5CE7"}, {value: 82, label: "82°", color: "#007D62"}, {value: 74, label: "74°", color: "#6C5CE7"}, {value: 91, label: "91°", color: "#007D62"}, {value: 48, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#7C3AED"}, {value: 82, label: "82°", color: "#007D62"}, {value: 74, label: "74°", color: "#7C3AED"}, {value: 91, label: "91°", color: "#007D62"}, {value: 48, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Five angles meet at a point. Four of them are 65°, 82°, 74°, and 91°. What is the fifth angle?",
       options: ["38°", "48°", "43°", "53°", "58°"],
       correct: 1,
@@ -22407,7 +22407,7 @@ anglesshapes: {
     {
       id: 176,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 118, label: "118°", color: "#6C5CE7"}, {value: 76, label: "76°", color: "#007D62"}, {value: 83, label: "83°", color: "#6C5CE7"}, {value: 83, label: "x°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 118, label: "118°", color: "#7C3AED"}, {value: 76, label: "76°", color: "#007D62"}, {value: 83, label: "83°", color: "#7C3AED"}, {value: 83, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles around a point are 118°, 76°, 83°, and x°. What is x?",
       options: ["73°", "78°", "83°", "88°", "93°"],
       correct: 2,
@@ -22416,7 +22416,7 @@ anglesshapes: {
     {
       id: 177,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 156, label: "156°", color: "#6C5CE7"}, {value: 98, label: "98°", color: "#007D62"}, {value: 106, label: "y°", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 156, label: "156°", color: "#7C3AED"}, {value: 98, label: "98°", color: "#007D62"}, {value: 106, label: "y°", color: "#FDCB6E"}], size: 200 } },
       question: "Three roads meet at a roundabout. The angles between them are 156°, 98°, and y°. What is y?",
       options: ["96°", "101°", "111°", "106°", "116°"],
       correct: 3,
@@ -22425,7 +22425,7 @@ anglesshapes: {
     {
       id: 178,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 64, label: "64°", color: "#6C5CE7"}, {value: 128, label: "128°", color: "#007D62"}, {value: 96, label: "96°", color: "#6C5CE7"}, {value: 72, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 64, label: "64°", color: "#7C3AED"}, {value: 128, label: "128°", color: "#007D62"}, {value: 96, label: "96°", color: "#7C3AED"}, {value: 72, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 64°, 128°, and 96°. What is the fourth angle?",
       options: ["62°", "67°", "82°", "77°", "72°"],
       correct: 4,
@@ -22434,7 +22434,7 @@ anglesshapes: {
     {
       id: 179,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 90, label: "?", color: "#FDCB6E"}, {value: 90, label: "?", color: "#FDCB6E"}, {value: 90, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#7C3AED"}, {value: 90, label: "?", color: "#FDCB6E"}, {value: 90, label: "?", color: "#FDCB6E"}, {value: 90, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three equal angles and one angle of 90° meet at a point. What is each equal angle?",
       options: ["90°", "85°", "80°", "95°", "100°"],
       correct: 0,
@@ -22452,7 +22452,7 @@ anglesshapes: {
     {
       id: 181,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#6C5CE7"}, {value: 80, label: "?", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#007D62"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#7C3AED"}, {value: 80, label: "?", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#007D62"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles around a point are equal, and two other angles are 70° and 130°. What is each equal angle?",
       options: ["70°", "75°", "80°", "85°", "90°"],
       correct: 2,
@@ -22470,7 +22470,7 @@ anglesshapes: {
     {
       id: 183,
       difficulty: 3,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#6C5CE7"}, {value: 90, label: "90°", color: "#007D62"}, {value: 90, label: "90°", color: "#6C5CE7"}, {value: 50, label: "50°", color: "#007D62"}, {value: 40, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#7C3AED"}, {value: 90, label: "90°", color: "#007D62"}, {value: 90, label: "90°", color: "#7C3AED"}, {value: 50, label: "50°", color: "#007D62"}, {value: 40, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four equal angles meet at a point, but one of them is then split into two parts: 50° and the rest. What is 'the rest'?",
       options: ["30°", "35°", "50°", "45°", "40°"],
       correct: 4,
@@ -22884,7 +22884,7 @@ anglesshapes: {
     {
       id: 223,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "x°", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "x°", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#7C3AED"}], size: 200 } },
       question: "Two angles on a straight line are x° and 130°. What is x?",
       options: ["40°", "80°", "60°", "70°", "50°"],
       correct: 4,
@@ -22893,7 +22893,7 @@ anglesshapes: {
     {
       id: 224,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "x°", color: "#FDCB6E"}, {value: 95, label: "95°", color: "#6C5CE7"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "x°", color: "#FDCB6E"}, {value: 95, label: "95°", color: "#7C3AED"}], size: 200 } },
       question: "Two angles on a straight line are x° and 95°. What is x?",
       options: ["85°", "80°", "75°", "90°", "95°"],
       correct: 0,
@@ -22902,7 +22902,7 @@ anglesshapes: {
     {
       id: 225,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "x°", color: "#FDCB6E"}, {value: 100, label: "100°", color: "#6C5CE7"}, {value: 150, label: "150°", color: "#007D62"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "x°", color: "#FDCB6E"}, {value: 100, label: "100°", color: "#7C3AED"}, {value: 150, label: "150°", color: "#007D62"}], size: 200 } },
       question: "Angles around a point are x°, 100° and 150°. What is x?",
       options: ["100°", "110°", "105°", "115°", "120°"],
       correct: 1,
@@ -26478,7 +26478,7 @@ datahandling: {
           ],
           xLabel: "Day",
           yLabel: "Visitors",
-          color: "#6C5CE7",
+          color: "#7C3AED",
           showValues: false
         }
       },
@@ -26605,7 +26605,7 @@ datahandling: {
           ],
           xLabel: "Day",
           yLabel: "Visitors",
-          color: "#6C5CE7",
+          color: "#7C3AED",
           showValues: true
         }
       },

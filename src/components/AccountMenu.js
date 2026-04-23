@@ -102,7 +102,7 @@ function AccountMenuReal({ currentUser }) {
     }
   };
 
-  const color = '#6C5CE7';
+  const color = '#7C3AED';
 
   return (
     <div className="relative">
@@ -140,14 +140,14 @@ function AccountMenuReal({ currentUser }) {
                 onClick={handleManageSubscription}
                 className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
               >
-                <CreditCard className="w-4 h-4 text-[#6C5CE7]" />
+                <CreditCard className="w-4 h-4 text-[#7C3AED]" />
                 Manage Subscription
               </button>
               <button
                 onClick={handleExport}
                 className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
               >
-                <Download className="w-4 h-4 text-[#6C5CE7]" />
+                <Download className="w-4 h-4 text-[#7C3AED]" />
                 Export Data
               </button>
               <button
@@ -187,7 +187,7 @@ function AccountMenuReal({ currentUser }) {
               This cannot be undone.
             </p>
             <p className="text-sm text-slate-500 mb-6">
-              You may want to <button onClick={handleExport} className="text-[#6C5CE7] underline">export your data</button> first.
+              You may want to <button onClick={handleExport} className="text-[#7C3AED] underline">export your data</button> first.
             </p>
             <div className="flex gap-3">
               <button

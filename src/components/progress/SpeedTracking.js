@@ -4,7 +4,7 @@ import { Clock, AlertTriangle } from 'lucide-react';
 const subjectTargets = {
   maths: { target: 60, name: 'Maths', colour: '#0770C2' },
   english: { target: 60, name: 'English', colour: '#007D62' },
-  verbalreasoning: { target: 37, name: 'Verbal Reasoning', colour: '#6C5CE7' },
+  verbalreasoning: { target: 37, name: 'Verbal Reasoning', colour: '#7C3AED' },
 };
 
 function SpeedTracking({ questionResults }) {
@@ -51,7 +51,7 @@ function SpeedTracking({ questionResults }) {
   return (
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center gap-2 mb-4">
-        <Clock className="w-5 h-5 text-[#6C5CE7]" />
+        <Clock className="w-5 h-5 text-[#7C3AED]" />
         <h3 className="font-heading font-bold text-slate-800">Speed Tracking</h3>
       </div>
       <p className="text-xs text-slate-500 mb-4">Average time per question (lower is better, but not at the cost of accuracy)</p>

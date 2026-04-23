@@ -5,7 +5,7 @@ import { topicNames } from '../RecommendationCard';
 const subjects = [
   { key: 'maths', name: 'Maths', icon: Calculator, colour: '#0770C2', rgb: '9,132,227' },
   { key: 'english', name: 'English', icon: BookOpen, colour: '#007D62', rgb: '0,184,148' },
-  { key: 'verbalreasoning', name: 'VR', icon: Brain, colour: '#6C5CE7', rgb: '108,92,231' },
+  { key: 'verbalreasoning', name: 'VR', icon: Brain, colour: '#7C3AED', rgb: '108,92,231' },
 ];
 
 function TopicHeatMap({ mastery, onTopicClick }) {

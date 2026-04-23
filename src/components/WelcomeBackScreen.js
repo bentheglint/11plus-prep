@@ -40,7 +40,7 @@ function WelcomeBackScreen({ tip, onDismiss }) {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
-          className="px-10 py-4 bg-gradient-to-r from-[#6C5CE7] to-[#5A4BD1] hover:from-[#5A4BD1] hover:to-[#4A3BC1] text-white font-bold rounded-xl text-lg transition-all shadow-lg hover:shadow-xl"
+          className="px-10 py-4 bg-gradient-to-r from-[#7C3AED] to-[#5A4BD1] hover:from-[#5A4BD1] hover:to-[#4A3BC1] text-white font-bold rounded-xl text-lg transition-all shadow-lg hover:shadow-xl"
         >
           Let's go!
         </motion.button>

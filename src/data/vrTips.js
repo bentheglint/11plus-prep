@@ -16,7 +16,7 @@ const vrTips = [
     keyInsight: "Always write out A–Z with numbers 1–26 underneath before you start any code question.",
     explanation: "The alphabet line turns tricky letter codes into simple number puzzles. Write A=1, B=2, C=3... all the way to Z=26 at the top of your working space. You'll use it over and over!",
     tryThis: "Practise writing out A–Z with 1–26 until you can do it in under 30 seconds — it'll save you loads of time in the real exam!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'letterPairSeries', 'letterMove'],
   },
   {
@@ -28,7 +28,7 @@ const vrTips = [
     keyInsight: "In letter code questions, each letter usually shifts by the same amount — like +1 or -2.",
     explanation: "If CAT becomes DBU, each letter moved forward by 1: C→D, A→B, T→U. Use your alphabet line to count the gap. The shift is the same for every letter in the word!",
     tryThis: "Next time you see a letter code, write the number under each letter and find the difference. Is it +1? +2? -3? That's your shift!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'letterMove'],
   },
   {
@@ -40,7 +40,7 @@ const vrTips = [
     keyInsight: "Shifts don't always go forward — sometimes letters move BACKWARDS in the alphabet.",
     explanation: "If DOG becomes CMF, each letter went back by 1: D→C, O→M... wait, that's -2! Check each letter carefully. If forward doesn't work, try counting backwards.",
     tryThis: "Take the word FISH and code it with a -3 shift. What do you get? (Answer: CFPE!) Now try decoding GRRG with a -2 shift.",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'letterMove'],
   },
   {
@@ -52,7 +52,7 @@ const vrTips = [
     keyInsight: "Harder questions might use a DIFFERENT shift for each position — like +1 for the first letter, +2 for the second, +3 for the third.",
     explanation: "If CAT becomes DCV, the shifts are +1, +2, +2. Write out the shift for each position separately. The pattern in the shifts is the real code!",
     tryThis: "Check each letter's shift one at a time. Write them in a row like +1, +2, +3. Can you see a pattern in those numbers?",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'wordCodeAnalogies'],
   },
   {
@@ -64,7 +64,7 @@ const vrTips = [
     keyInsight: "When a shift goes past Z, wrap around to the start of the alphabet — Z+1 = A.",
     explanation: "If you need to shift Y forward by 3, count Y→Z→A→B. Think of the alphabet as a circle, not a straight line. Z connects back to A!",
     tryThis: "Shift the word YES forward by 3. Y→B, E→H, S→V. The answer is BHV! Practise a few of these so wrapping around feels natural.",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'letterMove'],
   },
   {
@@ -76,7 +76,7 @@ const vrTips = [
     keyInsight: "In letter pair series, check the FIRST letters and SECOND letters as two separate patterns.",
     explanation: "If you see AB, CD, EF, GH — the first letters go A, C, E, G (+2 each time) and the second letters go B, D, F, H (+2 each time). Two simple patterns are easier than one confusing one!",
     tryThis: "Write the first letters in one row and the second letters in another. Find each pattern separately, then combine them for your answer.",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterPairSeries'],
   },
   {
@@ -88,7 +88,7 @@ const vrTips = [
     keyInsight: "The first letter and second letter in a pair often follow DIFFERENT patterns.",
     explanation: "In AZ, BY, CX, DW — the first letters go forward (+1) but the second letters go backward (-1). Don't assume both letters follow the same rule!",
     tryThis: "When you split the pair, write the number under each letter. The first row might be +1 while the second row is -2. Check them independently!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterPairSeries'],
   },
   {
@@ -100,7 +100,7 @@ const vrTips = [
     keyInsight: "For number series, write the DIFFERENCE between each pair of numbers — the pattern is usually hiding there.",
     explanation: "For 2, 5, 8, 11, ? — the gaps are +3, +3, +3. Easy! The next number is 14. Always write the differences in a row between the numbers.",
     tryThis: "Try this: 3, 7, 11, 15, ? Write the gaps: +4, +4, +4. The answer is 19! Now try 1, 4, 9, 16, ? (Gaps: +3, +5, +7 — they're going up by 2!)",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberSeries'],
   },
   {
@@ -112,7 +112,7 @@ const vrTips = [
     keyInsight: "If the differences aren't the same, find the differences BETWEEN the differences!",
     explanation: "For 1, 2, 4, 7, 11, ? — the gaps are +1, +2, +3, +4. The gaps are growing by 1 each time! So the next gap is +5, making the answer 16.",
     tryThis: "Write two rows: the first row is the differences, the second row is the differences of THOSE differences. This cracks most tricky series!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberSeries'],
   },
   {
@@ -124,7 +124,7 @@ const vrTips = [
     keyInsight: "In letter sum questions, ALWAYS write the number next to every letter before you do any adding or subtracting.",
     explanation: "If the question says A + C = ?, write A=1, C=3 first. Then do 1 + 3 = 4. Convert back: 4 = D. Setting up properly stops silly mistakes!",
     tryThis: "Before you even think about the answer, label every letter with its number. A=1, B=2... all the way. THEN do the maths. THEN convert back to a letter.",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterSums'],
   },
   {
@@ -136,7 +136,7 @@ const vrTips = [
     keyInsight: "The trickiest part of letter sums is remembering to turn your number answer back into a letter.",
     explanation: "You might work out that B + D = 2 + 4 = 6... but 6 isn't the answer! You need to convert 6 back to F. The answer is always a letter, not a number.",
     tryThis: "After doing the maths, ALWAYS ask: 'Have I turned my number back into a letter?' Circle your final letter answer so you don't accidentally write the number.",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterSums'],
   },
   {
@@ -148,7 +148,7 @@ const vrTips = [
     keyInsight: "In word-code analogies, figure out the rule from the LEFT side first, then apply it to the RIGHT side.",
     explanation: "If BEAR is coded as CFBS, work out the rule: B+1=C, E+1=F, A+1=B, R+1=S. The rule is +1! Now apply +1 to the right-side word to get your answer.",
     tryThis: "Cover the right side with your hand. Work out the rule from the left side only. Then uncover the right side and apply your rule. Much less confusing!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['wordCodeAnalogies', 'letterCodes'],
   },
   {
@@ -160,7 +160,7 @@ const vrTips = [
     keyInsight: "In number-word codes, each letter equals its position in the alphabet — A=1, B=2, C=3 and so on.",
     explanation: "So the word CAB = 3, 1, 2. If the question asks for the total, add them up: 3+1+2 = 6. This is why your alphabet line is so important!",
     tryThis: "Work out the number code for your own name! Write each letter's number and add them up. What's your name's total?",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberWordCodes', 'letterCodes'],
   },
   {
@@ -172,7 +172,7 @@ const vrTips = [
     keyInsight: "Square numbers pop up ALL the time in VR — learn 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 by heart.",
     explanation: "If you see the sequence 1, 4, 9, 16, 25, ? and you know your squares, the answer jumps out: 36! Without knowing them, you'd waste time working it out.",
     tryThis: "Write out 1×1=1, 2×2=4, 3×3=9... all the way to 12×12=144. Stick it on your wall and test yourself every day until you just KNOW them!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberSeries', 'numberWordCodes'],
   },
   {
@@ -184,7 +184,7 @@ const vrTips = [
     keyInsight: "Doubling and halving patterns are super common — always check if each number is double (or half) the one before.",
     explanation: "2, 4, 8, 16, 32, ? — each number doubles! The answer is 64. Or going the other way: 80, 40, 20, 10, ? — each one halves, so the answer is 5.",
     tryThis: "If the gaps between numbers keep getting bigger, try dividing each number by the one before it. If you always get 2, it's a doubling pattern!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberSeries'],
   },
   {
@@ -196,7 +196,7 @@ const vrTips = [
     keyInsight: "Learn to recognise primes (2, 3, 5, 7, 11, 13...) and the Fibonacci pattern (1, 1, 2, 3, 5, 8, 13...) — they love sneaking into VR!",
     explanation: "In Fibonacci, you add the last two numbers to get the next one: 1+1=2, 1+2=3, 2+3=5, 3+5=8. Primes are numbers that only divide by 1 and themselves.",
     tryThis: "Memorise the first 10 primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. And the Fibonacci sequence up to 89. These come up more than you'd think!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberSeries'],
   },
   {
@@ -208,7 +208,7 @@ const vrTips = [
     keyInsight: "Cube numbers catch people out because they're less well known — learn 1, 8, 27, 64, 125.",
     explanation: "1×1×1=1, 2×2×2=8, 3×3×3=27, 4×4×4=64, 5×5×5=125. If you see these in a number series and don't recognise them, you'll be stuck for ages!",
     tryThis: "Write cubes next to squares on your wall chart. 1²=1 and 1³=1, 2²=4 and 2³=8, 3²=9 and 3³=27. Spot how they're different!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['numberSeries'],
   },
   {
@@ -220,7 +220,7 @@ const vrTips = [
     keyInsight: "Some codes use TWO operations — like doubling THEN adding 1, or shifting the letter AND reversing the word.",
     explanation: "If 3 becomes 7 (not +4... but ×2+1!), and 5 becomes 11 (×2+1 again!), there might be two steps. If one operation doesn't work consistently, try combining two.",
     tryThis: "When a simple rule doesn't fit every pair, ask: 'What if I multiply first THEN add?' or 'What if I shift AND reverse?' Two steps often cracks it.",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'wordCodeAnalogies', 'numberWordCodes'],
   },
   {
@@ -232,7 +232,7 @@ const vrTips = [
     keyInsight: "After you find the rule, apply it BACKWARDS to check — if your rule works both ways, you've definitely got it right.",
     explanation: "If you think the rule is +3 and DOG becomes GRJ, check: G-3=D ✓, R-3=O ✓, J-3=G ✓. Working backwards confirms your answer!",
     tryThis: "Always spend 5 seconds checking your rule on the example you were given BEFORE applying it to find the answer. It catches mistakes!",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'wordCodeAnalogies', 'numberWordCodes'],
   },
   {
@@ -244,7 +244,7 @@ const vrTips = [
     keyInsight: "You don't need to count from A every time — memorise a few anchor points: E=5, J=10, O=15, T=20, Z=26.",
     explanation: "If you need to know what number S is, start from T=20 and go back one: S=19. Way faster than counting from A! These shortcuts save precious seconds.",
     tryThis: "Memorise E=5, J=10, O=15, T=20. Test yourself: what number is M? (O=15, two back = 13 ✓). What about R? (T=20, two back = 18 ✓).",
-    colour: '#6C5CE7',
+    colour: '#7C3AED',
     topicKeys: ['letterCodes', 'letterPairSeries', 'letterSums'],
   },
 

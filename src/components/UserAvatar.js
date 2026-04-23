@@ -7,7 +7,7 @@ const NAME_COLORS = {
   Lauren: '#007D62',
   Daisy: '#E84393',
   Evie: '#FDCB6E',
-  Jacqui: '#6C5CE7',
+  Jacqui: '#7C3AED',
 };
 
 function UserAvatar({ currentUser, onSetCurrentUser }) {
@@ -72,11 +72,11 @@ function UserAvatar({ currentUser, onSetCurrentUser }) {
                     >
                       {name[0]}
                     </span>
-                    <span className={`font-bold text-sm ${isActive ? 'text-[#6C5CE7]' : 'text-slate-800'}`}>
+                    <span className={`font-bold text-sm ${isActive ? 'text-[#7C3AED]' : 'text-slate-800'}`}>
                       {name}
                     </span>
                     {isActive && (
-                      <span className="ml-auto text-xs text-[#6C5CE7] font-medium">Active</span>
+                      <span className="ml-auto text-xs text-[#7C3AED] font-medium">Active</span>
                     )}
                   </button>
                 );

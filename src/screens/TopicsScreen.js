@@ -4,7 +4,7 @@ import { ChevronRight, Star, Crown, Rocket, Target, Wrench, ArrowLeft, Home } fr
 function getTopicBadge(pct) {
   if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F39C12]', bg: 'bg-[#FDCB6E]/20' };
   if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#0770C2]', bg: 'bg-[#0770C2]/10' };
-  if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#6C5CE7]', bg: 'bg-[#6C5CE7]/10' };
+  if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#7C3AED]', bg: 'bg-[#7C3AED]/10' };
   if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F39C12]', bg: 'bg-[#F39C12]/10' };
   return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
 }
@@ -71,13 +71,13 @@ function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack, onHome
         <div className="flex items-center justify-between mb-6">
           <button
             onClick={onBack}
-            className="flex items-center text-[#6C5CE7] hover:text-[#5A4BD1] font-medium gap-2"
+            className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
           >
             <ArrowLeft className="w-5 h-5" />
             Back to Learning Modes
           </button>
           {onHome && (
-            <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#6C5CE7] transition-colors" title="Home">
+            <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">
               <Home className="w-5 h-5" />
             </button>
           )}

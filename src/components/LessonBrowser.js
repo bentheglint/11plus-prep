@@ -57,7 +57,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
           </p>
           <button
             onClick={onStartQuiz}
-            className="px-4 py-2 bg-[#6C5CE7] hover:bg-[#5A4BD1] text-white font-bold rounded-lg text-sm transition-colors"
+            className="px-4 py-2 bg-[#7C3AED] hover:bg-[#5A4BD1] text-white font-bold rounded-lg text-sm transition-colors"
           >
             Try a quiz
           </button>
@@ -78,7 +78,7 @@ function LessonBrowser({ subject, lessonBank, lessonHistory, onLaunchLesson, too
             >
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-[#EDE8FF] flex items-center justify-center">
-                  <BookOpen className="w-4 h-4 text-[#6C5CE7]" />
+                  <BookOpen className="w-4 h-4 text-[#7C3AED]" />
                 </div>
                 <div className="text-left">
                   <h3 className="text-sm font-heading font-bold text-slate-800">{name}</h3>

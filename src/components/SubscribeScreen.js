@@ -65,7 +65,7 @@ function CheckoutForm({ onSuccess, onBack }) {
         disabled={!stripe || submitting}
         className={`w-full py-3 rounded-xl font-bold text-white transition-colors ${
           stripe && !submitting
-            ? 'bg-[#6C5CE7] hover:bg-[#5A4BD1]'
+            ? 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
             : 'bg-gray-300 cursor-not-allowed'
         }`}
       >
@@ -75,7 +75,7 @@ function CheckoutForm({ onSuccess, onBack }) {
       <button
         type="button"
         onClick={onBack}
-        className="w-full flex items-center justify-center gap-2 py-2 text-sm text-slate-500 hover:text-[#6C5CE7]"
+        className="w-full flex items-center justify-center gap-2 py-2 text-sm text-slate-500 hover:text-[#7C3AED]"
       >
         <ArrowLeft className="w-4 h-4" /> Back
       </button>
@@ -129,7 +129,7 @@ export default function SubscribeScreen({ getToken, trialExpired, onSuccess, onB
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
       <div className="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8">
-        <div className="w-14 h-14 rounded-2xl bg-[#6C5CE7] flex items-center justify-center mb-5">
+        <div className="w-14 h-14 rounded-2xl bg-[#7C3AED] flex items-center justify-center mb-5">
           <CreditCard className="w-7 h-7 text-white" />
         </div>
 
@@ -181,7 +181,7 @@ export default function SubscribeScreen({ getToken, trialExpired, onSuccess, onB
               appearance: {
                 theme: 'stripe',
                 variables: {
-                  colorPrimary: '#6C5CE7',
+                  colorPrimary: '#7C3AED',
                   colorBackground: '#ffffff',
                   colorText: '#1e293b',
                   borderRadius: '12px',

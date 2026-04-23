@@ -219,7 +219,7 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
   if (!scan) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center">
-        <div className="animate-pulse text-[#6C5CE7] font-heading font-bold text-xl">
+        <div className="animate-pulse text-[#7C3AED] font-heading font-bold text-xl">
           Checking for existing data...
         </div>
       </div>
@@ -244,25 +244,25 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
           <div className="bg-[#F8F7FF] rounded-xl p-4 mb-6 text-left">
             <div className="grid grid-cols-2 gap-2 text-sm">
               {scan.summary.quizzes > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.quizzes}</span> quizzes</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.quizzes}</span> quizzes</div>
               )}
               {scan.summary.mockTests > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.mockTests}</span> mock tests</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.mockTests}</span> mock tests</div>
               )}
               {scan.summary.lessons > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.lessons}</span> lessons</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.lessons}</span> lessons</div>
               )}
               {scan.summary.questionAttempts > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.questionAttempts}</span> questions</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.questionAttempts}</span> questions</div>
               )}
               {scan.summary.streak > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.streak}</span> day streak</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.streak}</span> day streak</div>
               )}
               {scan.summary.achievements > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.achievements}</span> achievements</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.achievements}</span> achievements</div>
               )}
               {scan.summary.prepPoints > 0 && (
-                <div><span className="font-bold text-[#6C5CE7]">{scan.summary.prepPoints}</span> prep points</div>
+                <div><span className="font-bold text-[#7C3AED]">{scan.summary.prepPoints}</span> prep points</div>
               )}
             </div>
           </div>
@@ -273,7 +273,7 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
 
           <button
             onClick={onComplete}
-            className="w-full py-3 rounded-xl font-bold text-white bg-[#6C5CE7] hover:bg-[#5A4BD1] transition-colors"
+            className="w-full py-3 rounded-xl font-bold text-white bg-[#7C3AED] hover:bg-[#5A4BD1] transition-colors"
           >
             Start Learning
             <ArrowRight className="w-4 h-4 inline ml-2" />
@@ -288,7 +288,7 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-lg p-8">
         <div className="w-16 h-16 mx-auto mb-4 bg-[#F0EDFF] rounded-full flex items-center justify-center">
-          <Database className="w-8 h-8 text-[#6C5CE7]" />
+          <Database className="w-8 h-8 text-[#7C3AED]" />
         </div>
         <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2 text-center">
           We found existing progress!
@@ -369,7 +369,7 @@ export default function MigrationScreen({ childName, onComplete, onSkip }) {
           onClick={handleImport}
           disabled={isImporting || (hasNameMismatch && !mismatchConfirmed)}
           className={`w-full py-3 rounded-xl font-bold text-white mb-3 transition-colors flex items-center justify-center gap-2 ${
-            isImporting || (hasNameMismatch && !mismatchConfirmed) ? 'bg-gray-300 cursor-not-allowed' : 'bg-[#6C5CE7] hover:bg-[#5A4BD1]'
+            isImporting || (hasNameMismatch && !mismatchConfirmed) ? 'bg-gray-300 cursor-not-allowed' : 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
           }`}
         >
           <Upload className="w-4 h-4" />

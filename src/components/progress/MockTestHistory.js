@@ -35,7 +35,7 @@ function MockTestHistory({ mockTestHistory }) {
     <div className="card-elevated p-5 mb-6">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <FileText className="w-5 h-5 text-[#6C5CE7]" />
+          <FileText className="w-5 h-5 text-[#7C3AED]" />
           <h3 className="font-heading font-bold text-slate-800">Mock Tests</h3>
         </div>
         {sparkData.length >= 3 && (
@@ -43,7 +43,7 @@ function MockTestHistory({ mockTestHistory }) {
             <polyline
               points={sparkPoints}
               fill="none"
-              stroke="#6C5CE7"
+              stroke="#7C3AED"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -54,7 +54,7 @@ function MockTestHistory({ mockTestHistory }) {
                 cx={(i / Math.max(1, sparkData.length - 1)) * sparkW}
                 cy={sparkH - ((v - sparkMin) / (sparkMax - sparkMin || 1)) * sparkH}
                 r="3"
-                fill="#6C5CE7"
+                fill="#7C3AED"
               />
             ))}
           </svg>
@@ -63,7 +63,7 @@ function MockTestHistory({ mockTestHistory }) {
 
       {avgSpeed && (
         <div className="flex items-center gap-2 mb-3 px-3 py-2 bg-[#EDE8FF] rounded-lg">
-          <Clock className="w-4 h-4 text-[#6C5CE7]" />
+          <Clock className="w-4 h-4 text-[#7C3AED]" />
           <span className="text-sm text-slate-800">
             Average speed: <strong>{avgSpeed}s per question</strong>
             <span className="text-slate-500"> (target: ~60s)</span>

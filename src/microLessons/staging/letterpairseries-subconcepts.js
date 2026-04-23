@@ -158,7 +158,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -321,7 +321,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -493,7 +493,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -658,7 +658,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -839,7 +839,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1024,7 +1024,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.interactSeries.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1188,7 +1188,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1347,7 +1347,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1482,7 +1482,7 @@ export const letterPairSeriesSubConcepts = [
               { type: 'visual', component: 'AlphabetLine', props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.map(p => p[0]).map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.series.map(p => p[0]).map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.series.map(p => p[1]).map(l => ({ letter: l, color: "#22c55e" }))
                 )
               })},
@@ -1516,7 +1516,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1683,7 +1683,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
@@ -1810,7 +1810,7 @@ export const letterPairSeriesSubConcepts = [
               { type: 'visual', component: 'AlphabetLine', props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.map(p => p[0]).map(l => ({ letter: l, color: "#6C5CE7" })).concat(
+                points: v.series.map(p => p[0]).map(l => ({ letter: l, color: "#7C3AED" })).concat(
                   v.series.map(p => p[1]).map(l => ({ letter: l, color: "#dc2626" }))
                 )
               })},
@@ -1834,7 +1834,7 @@ export const letterPairSeriesSubConcepts = [
               props: (v) => ({
                 showEJOTY: true,
                 showPositionNumbers: true,
-                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#6C5CE7" }))
+                points: v.series.join('').split('').filter((c, i, a) => a.indexOf(c) === i).map(l => ({ letter: l, color: "#7C3AED" }))
               })
             },
             interaction: {
