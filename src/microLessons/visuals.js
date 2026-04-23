@@ -1473,11 +1473,16 @@ export function RectangleDiagram({
   const maxW = svgW - padL - padR;
   const maxH = svgH - padT - padB;
 
-  // Extract numeric values for layout — strings like "?" or "3 × width" use defaults
-  const numLength = typeof length === 'number' ? length : 8;
-  const numWidth = typeof width === 'number' ? width : 5;
+  // Extract numeric values for layout — strings like "?" or "3 × width" need a sensible
+  // fallback so the rectangle's aspect matches the GL convention (length ≥ width).
+  // Without this, a fixed default (8,5) can contradict the real answer — e.g. width=14
+  // with length="?" previously drew a tall rectangle even when the answer made length > width.
   const isLengthString = typeof length === 'string';
   const isWidthString = typeof width === 'string';
+  const numLength = typeof length === 'number' ? length
+    : (typeof width === 'number' ? width * 1.5 : 8);
+  const numWidth = typeof width === 'number' ? width
+    : (typeof length === 'number' ? length * 0.7 : 5);
 
   // Build display labels
   const lengthLabel = isLengthString ? `${length}` :

@@ -22783,7 +22783,7 @@ anglesshapes: {
     {
       id: 214,
       difficulty: 1,
-      visual: { component: "ExteriorAngle", props: { angle1: 75, angle2: 45, angle3: 60, showExterior: true, exteriorLabel: "?" } },
+      visual: { component: "ExteriorAngle", props: { angle1: 60, angle2: 45, angle3: 75, showExterior: true, exteriorLabel: "?" } },
       question: "The interior angle of a triangle at one vertex is 75°. What is the exterior angle at that vertex?",
       options: ["105°", "95°", "85°", "115°", "125°"],
       correct: 0,

@@ -2168,9 +2168,9 @@ export const punctuationSubConcepts = [
               component: "SentenceDisplay",
               props: (v) => ({
                 mode: "highlight",
-                text: v.testItems.join('  /  '),
+                text: `${v.testSentence}  ___  ${v.testItems}`,
                 highlightWords: [],
-                label: "Put these into a sentence with commas:"
+                label: "Combine these two parts — which punctuation works best?"
               })
             },
             interaction: {

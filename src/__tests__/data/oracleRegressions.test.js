@@ -438,6 +438,56 @@ describe('Oracle Sweep — Structural Invariants', () => {
     expect(content).toContain("./staging/lettersums-subconcepts");
     expect(content).not.toContain("./staging/letterSums-subconcepts");
   });
+
+  // 2026-04-23 — Flag #1776871472038 (Jacqui):
+  // Letter Codes Q122 previously revealed the shift pattern in the question
+  // text ("1st letter +1, 2nd +2, 3rd +1, 4th +2"), which defeats the purpose
+  // of a Letter Codes question. The rewrite forces the student to deduce the
+  // pattern from the example.
+  it('VR Letter Codes Q122 does not reveal the shift pattern in the question', () => {
+    const q = findQuestion(vrData, 'letterCodes', 122);
+    expect(q).toBeTruthy();
+    expect(q.question).not.toMatch(/\+\d/);
+    expect(q.question).not.toMatch(/1st letter|2nd letter|3rd letter/i);
+  });
+
+  // 2026-04-23 — Flag #1776874665117 (Jacqui):
+  // Angles Q214 — ExteriorAngle renders the exterior marker at the angle3
+  // vertex. The question references the 75° interior, so angle3 must equal 75.
+  it('Angles & Shapes Q214 visual angle3 matches question text (75°)', () => {
+    const q = findQuestion(mathsData, 'anglesshapes', 214);
+    expect(q).toBeTruthy();
+    expect(q.visual?.component).toBe('ExteriorAngle');
+    expect(q.visual.props.angle3).toBe(75);
+    // Triangle still sums to 180
+    const { angle1, angle2, angle3 } = q.visual.props;
+    expect(angle1 + angle2 + angle3).toBe(180);
+  });
+
+  // 2026-04-23 — Flag #1776872853322 (Jacqui):
+  // Logic & Language homonym tips were template-rotated from other sub-types.
+  // All 21 homonym questions ("Which word can mean both…") now carry the
+  // canonical homonym tip.
+  it('Logic & Language homonym questions carry the homonym-appropriate tip', () => {
+    const qs = getTopicQuestions(vrData, 'logicAndLanguage')
+      .filter(q => q.question?.includes('Which word can mean both'));
+    expect(qs.length).toBeGreaterThan(15);
+    const wrong = qs.filter(q => !q.explanation.includes('Test each option against BOTH meanings'));
+    expect(wrong).toEqual([]);
+  });
+
+  // 2026-04-23 — Flag #1776876473297 (Jacqui):
+  // Punctuation brackets/colons lesson crashed on the interact screen because
+  // `.join()` was called on `testItems` which is a string (not an array) in
+  // this lesson's variable sets.
+  it('Punctuation brackets-colons lesson does not call .join on testItems', () => {
+    const fs = require('fs');
+    const content = fs.readFileSync('src/microLessons/staging/punctuation-subconcepts.js', 'utf8');
+    // Locate the brackets-colons block and check it doesn't contain the broken call
+    const block = content.slice(content.indexOf('id: "brackets-colons-steps"'),
+                                content.indexOf('id: "brackets-colons-mistake"'));
+    expect(block).not.toContain('v.testItems.join');
+  });
 });
 
 // ══════════════════════════════════════════════════════════════

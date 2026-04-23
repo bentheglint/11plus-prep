@@ -10608,10 +10608,10 @@ const vrData = {
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: false, showEJOTY: true, hint: "Work out the pattern from the example, then apply it to the new word" } },
           questionType: "letter-codes",
-          question: "If BIRD is coded as CKSF (1st letter +1, 2nd +2, 3rd +1, 4th +2), what is the code for DAWN?",
-          options: ["FCXP","EDXP","ECYP","ECXQ","ECXP"],
-          correct: 4,
-          explanation: "The pattern alternates +1, +2: D→E(+1), A→C(+2), W→X(+1), N→P(+2). So DAWN becomes ECXP. Tip: +1 is the most common 11+ code — practise it until it's automatic! ✓"
+          question: "If MIND is coded as NKOF, what is the code for YARD?",
+          options: ["ZBSE","ABTE","ZCSF","ZCTF","ACTF"],
+          correct: 2,
+          explanation: "Work out the shifts from MIND → NKOF one letter at a time: M→N is +1, I→K is +2, N→O is +1, D→F is +2. The pattern alternates +1, +2, +1, +2 (not a single constant shift). Apply it to YARD: Y+1=Z, A+2=C, R+1=S, D+2=F = ZCSF. Tip: Never assume the shift is the same for every letter — always check each position separately, especially when the first two letters shift by different amounts. ✓"
         },
         {
           id: 123,
@@ -16306,7 +16306,7 @@ const vrData = {
           question: "Rearrange these words to make a sentence: 'school walked to they morning every'. What is the last word of the correct sentence?",
           options: ["they","school","every","morning","walked"],
           correct: 3,
-          explanation: "The correct sentence is: 'They walked to school every morning.' The last word is 'morning'. Tip: Focus only on what MUST be true, not what COULD be true. ✓"
+          explanation: "The correct sentence is: 'They walked to school every morning.' The last word is 'morning'. Tip: Find the subject (who/what) and the verb (action) first — they anchor the sentence. ✓"
         },
         {
           id: 4,
@@ -16322,7 +16322,7 @@ const vrData = {
           question: "I am thinking of two rhyming words that mean 'an overweight feline'. What are they?",
           options: ["Fat cat","Plump lump","Round hound","Thick chick","Big pig"],
           correct: 0,
-          explanation: "A feline is a cat, and overweight means fat. The two rhyming words are 'fat cat'. This is a rhyming synonym puzzle — a common VR question type. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
+          explanation: "A feline is a cat, and overweight means fat. The two rhyming words are 'fat cat'. This is a rhyming synonym puzzle — a common VR question type. Tip: Work out the meaning first, then look for two short words that rhyme and match it. ✓"
         },
         {
           id: 6,
@@ -16490,7 +16490,7 @@ const vrData = {
           question: "Which word can mean both 'a container for arrows' and 'to shake with fear'?",
           options: ["Sheath","Tremble","Bow","Quiver","Rattle"],
           correct: 3,
-          explanation: "'Quiver' has two meanings: a container for holding arrows, and to shake or tremble slightly. This is a double-meaning word. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
+          explanation: "'Quiver' has two meanings: a container for holding arrows, and to shake or tremble slightly. This is a double-meaning word. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 24,
@@ -17050,7 +17050,7 @@ const vrData = {
           question: "Which word can mean both 'a flying mammal' and 'something you hit a cricket ball with'?",
           options: ["Ball","Bat","Bird","Stick","Glove"],
           correct: 1,
-          explanation: "'Bat' can mean a flying mammal that comes out at night OR a piece of equipment used to hit a cricket ball. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
+          explanation: "'Bat' can mean a flying mammal that comes out at night OR a piece of equipment used to hit a cricket ball. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 80,
@@ -17058,7 +17058,7 @@ const vrData = {
           question: "Which word can mean both 'the sound a dog makes' and 'the outer covering of a tree'?",
           options: ["Woof","Leaf","Bark","Branch","Howl"],
           correct: 2,
-          explanation: "'Bark' can mean the sound a dog makes OR the rough outer covering of a tree trunk. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
+          explanation: "'Bark' can mean the sound a dog makes OR the rough outer covering of a tree trunk. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 81,
@@ -17066,7 +17066,7 @@ const vrData = {
           question: "Which word can mean both 'not heavy' and 'brightness from the sun or a lamp'?",
           options: ["Bright","Glow","Shine","Light","Pale"],
           correct: 3,
-          explanation: "'Light' can mean not heavy (a light bag) OR the brightness that lets us see (sunlight, lamplight). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
+          explanation: "'Light' can mean not heavy (a light bag) OR the brightness that lets us see (sunlight, lamplight). Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 82,
@@ -17074,7 +17074,7 @@ const vrData = {
           question: "Which word can mean both 'a piece of jewellery worn on a finger' and 'to telephone someone'?",
           options: ["Call","Band","Circle","Dial","Ring"],
           correct: 4,
-          explanation: "'Ring' can mean a circular piece of jewellery worn on a finger OR to telephone someone (give them a ring). Tip: Process one clue at a time and build the ranking step by step. ✓"
+          explanation: "'Ring' can mean a circular piece of jewellery worn on a finger OR to telephone someone (give them a ring). Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 83,
@@ -17082,7 +17082,7 @@ const vrData = {
           question: "Which word can mean both 'a season of the year' and 'a coiled piece of metal'?",
           options: ["Spring","Summer","Autumn","Bounce","Wire"],
           correct: 0,
-          explanation: "'Spring' can mean the season between winter and summer OR a coiled piece of metal that bounces back into shape. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
+          explanation: "'Spring' can mean the season between winter and summer OR a coiled piece of metal that bounces back into shape. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 84,
@@ -17090,7 +17090,7 @@ const vrData = {
           question: "Which word can mean both 'a large bird' and 'a machine used for lifting heavy objects'?",
           options: ["Eagle","Crane","Heron","Pulley","Stork"],
           correct: 1,
-          explanation: "'Crane' can mean a tall wading bird with long legs OR a large machine used on building sites to lift heavy objects. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
+          explanation: "'Crane' can mean a tall wading bird with long legs OR a large machine used on building sites to lift heavy objects. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 85,
@@ -17098,7 +17098,7 @@ const vrData = {
           question: "Which word can mean both 'where you keep your money' and 'the side of a river'?",
           options: ["Shore","Edge","Bank","Save","Side"],
           correct: 2,
-          explanation: "'Bank' can mean a financial institution where you keep money OR the sloping ground alongside a river. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
+          explanation: "'Bank' can mean a financial institution where you keep money OR the sloping ground alongside a river. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 86,
@@ -17106,7 +17106,7 @@ const vrData = {
           question: "Which word can mean both 'the long nose of an elephant' and 'a large travel case'?",
           options: ["Case","Boot","Snout","Trunk","Chest"],
           correct: 3,
-          explanation: "'Trunk' can mean an elephant's long, flexible nose OR a large, sturdy travel case. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
+          explanation: "'Trunk' can mean an elephant's long, flexible nose OR a large, sturdy travel case. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 87,
@@ -17114,7 +17114,7 @@ const vrData = {
           question: "Which word can mean both 'a movement of the ocean' and 'a hand gesture to say hello or goodbye'?",
           options: ["Tide","Ripple","Splash","Signal","Wave"],
           correct: 4,
-          explanation: "'Wave' can mean a moving ridge of water in the ocean OR the action of moving your hand to greet someone. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
+          explanation: "'Wave' can mean a moving ridge of water in the ocean OR the action of moving your hand to greet someone. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 88,
@@ -17122,7 +17122,7 @@ const vrData = {
           question: "Which word can mean both 'a student at school' and 'the dark circle in the centre of your eye'?",
           options: ["Pupil","Student","Iris","Lens","Scholar"],
           correct: 0,
-          explanation: "'Pupil' can mean a student who attends a school OR the small, dark, circular opening in the centre of the eye. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
+          explanation: "'Pupil' can mean a student who attends a school OR the small, dark, circular opening in the centre of the eye. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 89,
@@ -17130,7 +17130,7 @@ const vrData = {
           question: "Which word can mean both 'something written and posted' and 'a symbol of the alphabet'?",
           options: ["Post","Letter","Note","Sign","Word"],
           correct: 1,
-          explanation: "'Letter' can mean a written message sent through the post OR a single character of the alphabet (A, B, C, etc.). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
+          explanation: "'Letter' can mean a written message sent through the post OR a single character of the alphabet (A, B, C, etc.). Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 90,
@@ -17138,7 +17138,7 @@ const vrData = {
           question: "Which word can mean both 'a sweet spread made from fruit' and 'when too many cars block the road'?",
           options: ["Jelly","Marmalade","Jam","Block","Spread"],
           correct: 2,
-          explanation: "'Jam' can mean a sweet preserve made by boiling fruit with sugar OR a traffic jam where vehicles are stuck and cannot move. Tip: Process one clue at a time and build the ranking step by step. ✓"
+          explanation: "'Jam' can mean a sweet preserve made by boiling fruit with sugar OR a traffic jam where vehicles are stuck and cannot move. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 96,
@@ -17146,7 +17146,7 @@ const vrData = {
           question: "Which word can mean both 'happening now' and 'the flow of water in a river'?",
           options: ["Present","Modern","Stream","Current","Flow"],
           correct: 3,
-          explanation: "'Current' can mean happening right now or up-to-date (current affairs) OR the steady flow of water in a particular direction (river current). Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
+          explanation: "'Current' can mean happening right now or up-to-date (current affairs) OR the steady flow of water in a particular direction (river current). Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 98,
@@ -17154,7 +17154,7 @@ const vrData = {
           question: "Which word can mean both 'a game between two sports teams' and 'a thin stick used to start a fire'?",
           options: ["Game","Stick","Tie","Light","Match"],
           correct: 4,
-          explanation: "'Match' can mean a sporting contest between two teams (a football match) OR a small wooden stick with a head that lights when struck. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
+          explanation: "'Match' can mean a sporting contest between two teams (a football match) OR a small wooden stick with a head that lights when struck. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 91,
@@ -17162,7 +17162,7 @@ const vrData = {
           question: "Which word can mean both 'a sea creature with flippers' and 'to close something tightly'?",
           options: ["Seal","Otter","Walrus","Lock","Shut"],
           correct: 0,
-          explanation: "'Seal' can mean a marine mammal with flippers that lives in cold waters OR to close something securely (seal an envelope). Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
+          explanation: "'Seal' can mean a marine mammal with flippers that lives in cold waters OR to close something securely (seal an envelope). Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 92,
@@ -17170,7 +17170,7 @@ const vrData = {
           question: "Which word can mean both 'a small burrowing animal' and 'a spy who works secretly within an organisation'?",
           options: ["Rat","Mole","Fox","Badger","Agent"],
           correct: 1,
-          explanation: "'Mole' can mean a small, dark-furred animal that digs underground tunnels OR a secret agent planted inside an enemy organisation. It can also mean a dark spot on the skin. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
+          explanation: "'Mole' can mean a small, dark-furred animal that digs underground tunnels OR a secret agent planted inside an enemy organisation. It can also mean a dark spot on the skin. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 93,
@@ -17178,7 +17178,7 @@ const vrData = {
           question: "Which word can mean both 'British currency' and 'to hit something heavily and repeatedly'?",
           options: ["Quid","Sterling","Pound","Thump","Smash"],
           correct: 2,
-          explanation: "'Pound' can mean the basic unit of British currency (£) OR to strike something hard again and again (pound the dough). It also means a unit of weight. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
+          explanation: "'Pound' can mean the basic unit of British currency (£) OR to strike something hard again and again (pound the dough). It also means a unit of weight. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 94,
@@ -17186,7 +17186,7 @@ const vrData = {
           question: "Which word can mean both 'a lock fastener on a door' and 'a flash of lightning'?",
           options: ["Latch","Flash","Chain","Bolt","Strike"],
           correct: 3,
-          explanation: "'Bolt' can mean a sliding metal bar used to fasten a door OR a sudden flash of lightning (a bolt of lightning). It can also mean to run away suddenly. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
+          explanation: "'Bolt' can mean a sliding metal bar used to fasten a door OR a sudden flash of lightning (a bolt of lightning). It can also mean to run away suddenly. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 95,
@@ -17194,7 +17194,7 @@ const vrData = {
           question: "Which word can mean both 'a sleeveless cloak' and 'a piece of land jutting into the sea'?",
           options: ["Shawl","Peninsula","Cloak","Bay","Cape"],
           correct: 4,
-          explanation: "'Cape' can mean a sleeveless cloak fastened at the neck (like a superhero's cape) OR a narrow point of land that extends into the sea (e.g. the Cape of Good Hope). Tip: Focus only on what MUST be true, not what COULD be true. ✓"
+          explanation: "'Cape' can mean a sleeveless cloak fastened at the neck (like a superhero's cape) OR a narrow point of land that extends into the sea (e.g. the Cape of Good Hope). Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 97,
@@ -17202,7 +17202,7 @@ const vrData = {
           question: "Which word can mean both 'a fun outdoor event with rides' and 'treating everyone equally'?",
           options: ["Fair","Carnival","Just","Festival","Right"],
           correct: 0,
-          explanation: "'Fair' can mean an outdoor event with rides, games, and stalls (a funfair) OR treating people in an equal and just way (that's not fair!). It can also describe light hair or skin. Tip: Process one clue at a time and build the ranking step by step. ✓"
+          explanation: "'Fair' can mean an outdoor event with rides, games, and stalls (a funfair) OR treating people in an equal and just way (that's not fair!). It can also describe light hair or skin. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 101,
