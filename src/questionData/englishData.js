@@ -31412,16 +31412,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 206,
           "difficulty": 1,
-          "question": "Which word is the adjective in: 'A fierce storm battered the small fishing village.'?",
+          "question": "Which word is the adjective in: 'A fierce storm battered the fishing village.'?",
           "options": [
             "fierce",
             "storm",
             "battered",
-            "small",
+            "the",
             "village"
           ],
           "correct": 0,
-          "explanation": "'Fierce' is an adjective — it describes the storm, telling us it was violent and powerful. 'Small' is also an adjective but describes the village. ✓"
+          "explanation": "'Fierce' is the adjective — it describes the storm, telling us it was violent and powerful. 'Storm' and 'village' are nouns (things), 'battered' is a verb (the action), and 'the' is a determiner. ✓"
         },
         {
           "id": 207,

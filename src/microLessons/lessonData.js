@@ -14471,18 +14471,45 @@ export const lessonBank = {
               {
                 type: "consolidate",
                 title: () => "Think It Through — your recipe!",
-                body: () => `Every time you see a logic question, follow these 3 steps:`,
-                visual: {
-                  component: "WorkedExample",
-                  props: () => ({
-                    steps: [
-                      { text: "1. Read ALL clues first", why: "Every clue matters — don't skip any!" },
-                      { text: "2. Draw the order or diagram", why: "Put things in order on a line, or draw arrows for logic" },
-                      { text: "3. Answer from your diagram", why: "The diagram shows the answer — trust it! ✓" }
-                    ],
-                    allRevealed: true
-                  })
-                },
+                body: (v) => `Every time you see a logic question, follow these 3 steps. Here's how they look for ${v.name}'s puzzle:`,
+                bodyParts: (v) => [
+                  {
+                    type: 'text',
+                    content: () => `Every time you see a logic question, follow these 3 steps. Here's how they look for **${v.name}'s puzzle**:`
+                  },
+                  {
+                    type: 'visual',
+                    component: 'WorkedExample',
+                    props: () => ({
+                      steps: [
+                        { text: "1. Read ALL clues first", why: "Every clue matters — don't skip any!" },
+                        { text: "2. Draw the order on a vertical line — biggest/first at the top, smallest/last at the bottom", why: "Stack the names or things on top of each other, then add arrows showing the order between them" },
+                        { text: "3. Answer from your diagram", why: "The diagram shows the answer — trust it! ✓" }
+                      ],
+                      allRevealed: true
+                    })
+                  },
+                  {
+                    type: 'text',
+                    content: (v) => `**Your diagram for this puzzle should look like this:**`
+                  },
+                  {
+                    type: 'visual',
+                    component: 'LogicDiagram',
+                    props: (v) => ({
+                      items: v.diagramDescription.includes('>') ? v.diagramDescription.split('>').map(s => s.trim().split('(')[0].trim()) : [v.answer],
+                      topLabel: v.diagramDescription.includes('tallest') ? 'Tallest' : v.diagramDescription.includes('oldest') ? 'Oldest' : v.diagramDescription.includes('fastest') ? 'Fastest' : v.diagramDescription.includes('most') ? 'Most' : '',
+                      bottomLabel: v.diagramDescription.includes('shortest') ? 'Shortest' : v.diagramDescription.includes('youngest') ? 'Youngest' : v.diagramDescription.includes('slowest') ? 'Slowest' : v.diagramDescription.includes('fewest') ? 'Fewest' : '',
+                      highlight: v.answer,
+                      clues: v.clues
+                    })
+                  },
+                  {
+                    type: 'text',
+                    content: () => `On paper, draw the same ladder with a pencil — names stacked top to bottom, with an arrow from each down to the next. Then circle the name the question asks for.`
+                  }
+                ],
+                visual: null,
                 interaction: null
               }
             ]

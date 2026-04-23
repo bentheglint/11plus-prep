@@ -7884,10 +7884,10 @@ const vrData = {
         {
           id: 56,
           difficulty: 3,
-          question: "Move one letter from one word to the other to make two new words: ARK  STABLE",
-          options: ["A","R","B","K","S"],
+          question: "Move one letter from one word to the other to make two new words: ARK  BLAME",
+          options: ["A","L","B","M","E"],
           correct: 2,
-          explanation: "Move 'B' from STABLE to make STALE, and insert it into ARK to make BARK. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'B' from BLAME to make LAME, and insert it into ARK to make BARK. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
         },
         {
           id: 57,
