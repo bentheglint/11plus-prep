@@ -183,7 +183,10 @@ async function runGoldenPath(browser, viewport) {
     );
     assert(true, 'score screen shows after quiz completion');
 
-    console.log('\n6. Data integrity — check localStorage writes');
+    console.log('\n6. Data integrity — check SyncQueue writes');
+    // Dual-write to legacy user:SmokeTest:* keys was removed 2026-04-23.
+    // The sync queue is now the canonical offline buffer — every save enqueues
+    // an operation that eventually flushes to D1. Assert against that.
     const storage = await page.evaluate(() => {
       const all = {};
       for (let i = 0; i < localStorage.length; i++) {
@@ -193,39 +196,39 @@ async function runGoldenPath(browser, viewport) {
       return all;
     });
 
-    const userKey = (suffix) => `user:SmokeTest:${suffix}`;
     const parse = (k) => { try { return JSON.parse(storage[k] || 'null'); } catch { return null; } };
+    const queue = parse('sync-queue:SmokeTest') || [];
 
-    const history = parse(userKey('quiz-history'));
     assert(
-      Array.isArray(history) && history.length > 0,
-      `quiz-history has ≥1 entry (found ${history?.length ?? 0})`
-    );
-    const latest = history?.[history.length - 1] || {};
-    assert(
-      typeof latest.score === 'number' && typeof latest.total === 'number',
-      `latest quiz-history entry has score (${latest.score}) and total (${latest.total})`
+      Array.isArray(queue) && queue.length > 0,
+      `sync-queue has ≥1 operation (found ${queue.length})`
     );
 
-    const topicPerf = parse(userKey('topic-performance'));
+    const quizResultOps = queue.filter(op => op.type === 'quiz-result');
     assert(
-      topicPerf && Object.keys(topicPerf).length > 0,
-      `topic-performance has ≥1 topic (found ${Object.keys(topicPerf || {}).length})`
+      quizResultOps.length >= 1,
+      `sync-queue has ≥1 quiz-result op (found ${quizResultOps.length})`
     );
-    const firstTopic = Object.entries(topicPerf || {})[0];
+    const latestQuiz = quizResultOps[quizResultOps.length - 1]?.payload || {};
     assert(
-      firstTopic && typeof firstTopic[1].total === 'number' && firstTopic[1].total > 0,
-      `topic-performance[${firstTopic?.[0]}] has total > 0`
+      typeof latestQuiz.score === 'number' && typeof latestQuiz.total === 'number',
+      `latest quiz-result op has score (${latestQuiz.score}) and total (${latestQuiz.total})`
     );
 
-    const qResults = parse(userKey('question-results'));
+    const questionResultOps = queue.filter(op => op.type === 'question-result');
     assert(
-      Array.isArray(qResults) && qResults.length > 0,
-      `question-results has ≥1 entry (found ${qResults?.length ?? 0}) — feeds My Mistakes`
+      questionResultOps.length > 0,
+      `sync-queue has ≥1 question-result op (found ${questionResultOps.length}) — feeds My Mistakes`
     );
     assert(
-      qResults.every(r => r && typeof r.questionId !== 'undefined' && typeof r.correct !== 'undefined'),
-      'every question-result has questionId + correct fields'
+      questionResultOps.every(op => op.payload && typeof op.payload.questionId !== 'undefined' && typeof op.payload.isCorrect !== 'undefined'),
+      'every question-result op has questionId + isCorrect fields'
+    );
+
+    // Every op carries the expected child + retry metadata.
+    assert(
+      queue.every(op => op.childId === 'SmokeTest' && typeof op.retryCount === 'number' && typeof op.uuid === 'string'),
+      'every sync-queue op has childId, retryCount, and uuid'
     );
 
   console.log(`\n✓ ${viewport.name} smoke passed`);
