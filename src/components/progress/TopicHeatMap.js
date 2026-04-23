@@ -68,7 +68,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
       </div>
 
       {/* Heat map grid */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
         {topics.map(topic => {
           const intensity = topic.score >= 90 ? null : // gold for mastered
             topic.score > 0 ? Math.min(0.6, topic.score / 150) : 0;

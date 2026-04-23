@@ -216,17 +216,17 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
 
       {/* Quick stats bar */}
       {hasEnoughData && (
-        <div className="flex items-center gap-4 mt-4 pt-4 border-t border-black/5">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-4 pt-4 border-t border-black/5">
           <div className="flex items-center gap-1.5">
-            <Flame className="w-4 h-4" style={{ color: isStreakActive ? '#FF6B6B' : '#B2BEC3' }} />
+            <Flame className="w-4 h-4 shrink-0" style={{ color: isStreakActive ? '#FF6B6B' : '#B2BEC3' }} />
             <span className="text-xs font-bold text-slate-800">{currentStreak} day streak</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <Target className="w-4 h-4" style={{ color: borderColour }} />
+            <Target className="w-4 h-4 shrink-0" style={{ color: borderColour }} />
             <span className="text-xs font-bold text-slate-800">{daysThisWeek}/5 days this week</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <BookOpen className="w-4 h-4" style={{ color: borderColour }} />
+            <BookOpen className="w-4 h-4 shrink-0" style={{ color: borderColour }} />
             <span className="text-xs font-bold text-slate-800">{totalQuestions} questions answered</span>
           </div>
         </div>

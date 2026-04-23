@@ -31,10 +31,11 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           onClick={onBack}
-          className="mb-6 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
+          className="mb-6 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 sm:gap-2 min-h-[44px] px-1"
+          aria-label="Back to Home"
         >
-          <ArrowLeft className="w-5 h-5" />
-          Back to Home
+          <ArrowLeft className="w-5 h-5 shrink-0" />
+          <span className="hidden sm:inline">Back to Home</span>
         </motion.button>
 
         <div className="text-center mb-8">

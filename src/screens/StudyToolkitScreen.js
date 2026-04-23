@@ -116,10 +116,11 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
           <div className="flex items-center gap-2">
             <button
               onClick={onBack}
-              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 text-sm"
+              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 text-sm min-h-[44px] px-1"
+              aria-label="Back to Learning Modes"
             >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Learning Modes
+              <ArrowLeft className="w-4 h-4 shrink-0" />
+              <span className="hidden sm:inline">Back to Learning Modes</span>
             </button>
             {onHome && (
               <button onClick={onHome} className="p-1.5 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">

@@ -69,9 +69,9 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <button onClick={onBack} className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
-            <ArrowLeft className="w-5 h-5" />
-            Back to Progress
+          <button onClick={onBack} className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 sm:gap-2 min-h-[44px] px-1" aria-label="Back to Progress">
+            <ArrowLeft className="w-5 h-5 shrink-0" />
+            <span className="hidden sm:inline">Back to Progress</span>
           </button>
           {onHome && (
             <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">
@@ -113,7 +113,7 @@ function TopicDrillDown({ subject, topicKey, mastery, questionResults, onPractis
           </div>
 
           {/* Key stats row */}
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="text-center p-3 bg-gray-50 rounded-lg">
               <p className="text-xl font-heading font-bold text-slate-800">{m.recentAccuracy || 0}%</p>
               <p className="text-[10px] text-slate-500">Accuracy</p>

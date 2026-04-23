@@ -64,10 +64,13 @@ function QuizScreen({
           <div className="flex items-center justify-between mb-6">
             <button
               onClick={onBack}
-              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
+              className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 sm:gap-2 min-h-[44px] px-1"
+              aria-label={isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
             >
-              <ArrowLeft className="w-5 h-5" />
-              {isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
+              <ArrowLeft className="w-5 h-5 shrink-0" />
+              <span className="hidden sm:inline">
+                {isTestingMode ? 'Back to Testing Dashboard' : returnToSpeedReview ? 'Back to Speed Review' : quizMode === 'daily' ? 'Back to Learning Modes' : 'Back to Topics'}
+              </span>
             </button>
             {onHome && !isTestingMode && !returnToSpeedReview && (
               <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">

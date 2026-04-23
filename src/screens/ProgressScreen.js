@@ -23,39 +23,39 @@ function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, user
 
   return (
     <div className="app-bg min-h-screen">
-      {/* Shared header with back, tabs, and home */}
-      <div className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100 px-4 py-3">
-        <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <button onClick={onHome} className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2">
+      {/* Shared header with back + tabs. On mobile: icon-only back, compact tab labels. */}
+      <div className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100 px-3 sm:px-4 py-3">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-2">
+          <button
+            onClick={onHome}
+            className="flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 sm:gap-2 shrink-0 min-h-[44px] px-1"
+            aria-label="Back to home"
+          >
             <ArrowLeft className="w-5 h-5" />
-            Back to Home
+            <span className="hidden sm:inline">Back to Home</span>
           </button>
 
           {/* Child / Parent tabs */}
-          <div className="flex bg-gray-100 rounded-lg p-0.5">
+          <div className="flex bg-gray-100 rounded-lg p-0.5 min-w-0">
             <button
               onClick={() => setView('child')}
-              className={`flex items-center gap-1.5 px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 sm:gap-1.5 px-2 sm:px-4 py-1.5 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                 view === 'child' ? 'bg-white text-[#7C3AED] shadow-sm' : 'text-gray-500 hover:text-gray-700'
               }`}
             >
-              <User className="w-4 h-4" />
-              My Journey
+              <User className="w-4 h-4 shrink-0" />
+              <span>My Journey</span>
             </button>
             <button
               onClick={() => setView('parent')}
-              className={`flex items-center gap-1.5 px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 sm:gap-1.5 px-2 sm:px-4 py-1.5 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                 view === 'parent' ? 'bg-white text-[#7C3AED] shadow-sm' : 'text-gray-500 hover:text-gray-700'
               }`}
             >
-              <BarChart3 className="w-4 h-4" />
-              Parent Dashboard
+              <BarChart3 className="w-4 h-4 shrink-0" />
+              <span className="sm:inline"><span className="sm:hidden">Parent</span><span className="hidden sm:inline">Parent Dashboard</span></span>
             </button>
           </div>
-
-          <button onClick={onHome} className="p-2 text-gray-400 hover:text-[#7C3AED] transition-colors" title="Home">
-            <Home className="w-5 h-5" />
-          </button>
         </div>
       </div>
 

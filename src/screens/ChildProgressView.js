@@ -44,13 +44,13 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-3xl mx-auto">
         {/* Header: Streak + Level */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
           <StreakDisplay
             currentStreak={streaksAndPP.currentStreak}
             longestStreak={streaksAndPP.longestStreak}
             isActive={streaksAndPP.isStreakActive()}
           />
-          <div className="w-48">
+          <div className="w-full sm:w-48">
             <PrepPointsBar levelInfo={levelInfo} />
           </div>
         </div>

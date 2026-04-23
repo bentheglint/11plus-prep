@@ -59,10 +59,11 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
       <div className="max-w-2xl mx-auto">
         <button
           onClick={onHome}
-          className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-2"
+          className="mb-4 flex items-center text-[#7C3AED] hover:text-[#5A4BD1] font-medium gap-1 sm:gap-2 min-h-[44px] px-1"
+          aria-label="Back to Home"
         >
-          <ArrowLeft className="w-5 h-5" />
-          Back to Home
+          <ArrowLeft className="w-5 h-5 shrink-0" />
+          <span className="hidden sm:inline">Back to Home</span>
         </button>
         <div className="card-elevated p-6 md:p-8 text-center">
           {/* Hero icon + message */}
