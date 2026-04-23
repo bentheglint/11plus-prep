@@ -10381,7 +10381,7 @@ const vrData = {
           question: "If FROG is coded as GTRH, what pattern has been used for the shifts?",
           options: ["+1, +3, +2, +1","+2, +1, +3, +2","+1, +2, +3, +1","+1, +2, +2, +1","+2, +2, +3, +1"],
           correct: 2,
-          explanation: "F→G (+1), R→T (+2), O→R (+3), G→H (+1). The shifts grow by one each time: +1, +2, +3, then back to +1. Tip: when the shift changes letter by letter, write the number above each arrow — the pattern jumps out. ✓"
+          explanation: "F→G (+1), R→T (+2), O→R (+3), G→H (+1). The shifts grow by one each time: +1, +2, +3, then back to +1. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
           id: 100,
@@ -10621,7 +10621,7 @@ const vrData = {
           question: "If KITE is coded as PRGV using the reverse alphabet (A=Z, B=Y, C=X...), what is the code for FIRE?",
           options: ["UIRV","URIV","URVI","USIV","VRIV"],
           correct: 1,
-          explanation: "Using reverse alphabet: F→U, I→R, R→I, E→V. So FIRE becomes URIV. Tip: Always work out the rule from the example first, then apply it letter by letter to the new word. ✓"
+          explanation: "Using reverse alphabet: F→U, I→R, R→I, E→V. So FIRE becomes URIV. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 124,
@@ -10641,7 +10641,7 @@ const vrData = {
           question: "If HAPPY is coded as ICSQA (1st +1, 2nd +2, 3rd +3, 4th +1, 5th +2), what is the code for SMILE?",
           options: ["TOLNG","TOMLG","TOLMF","TOLMG","UOLMG"],
           correct: 3,
-          explanation: "Following the pattern +1,+2,+3,+1,+2: S→T(+1), M→O(+2), I→L(+3), L→M(+1), E→G(+2). So SMILE becomes TOLMG. Tip: +1 is the most common 11+ code — practise it until it's automatic! ✓"
+          explanation: "Following the pattern +1,+2,+3,+1,+2: S→T(+1), M→O(+2), I→L(+3), L→M(+1), E→G(+2). So SMILE becomes TOLMG. Tip: When the shift changes each position, write the pattern above the letters. Look for +1,+2,+3,+4 or similar sequences. ✓"
         },
         {
           id: 126,
@@ -10821,7 +10821,7 @@ const vrData = {
           question: "If CAPE is coded as ZXMB, what word is coded as QXUF?",
           options: ["TZXI","UAXI","TAXI","TAYI","TAXH"],
           correct: 2,
-          explanation: "Reverse: +3 on QXUF: Q+3=T, X+3=A, U+3=X, F+3=I = TAXI. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
+          explanation: "Reverse: +3 on QXUF: Q+3=T, X+3=A, U+3=X, F+3=I = TAXI. Each letter in the word shifts by +3 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 144,
@@ -10831,7 +10831,7 @@ const vrData = {
           question: "If HIVE is coded as DERA, what word is coded as JATP?",
           options: ["NEYT","OEXT","NDXT","NEXT","NEXS"],
           correct: 3,
-          explanation: "Reverse: +4 on JATP: J+4=N, A+4=E, T+4=X, P+4=T = NEXT. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
+          explanation: "Reverse: +4 on JATP: J+4=N, A+4=E, T+4=X, P+4=T = NEXT. Each letter in the word shifts by +4 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 145,
@@ -10841,7 +10841,7 @@ const vrData = {
           question: "If PEAK is coded as KZVF, what word is coded as HVUZ?",
           options: ["MAZD","NAZE","MZZE","MAAE","MAZE"],
           correct: 4,
-          explanation: "Reverse: +5 on HVUZ: H+5=M, V+5=A, U+5=Z, Z+5=E = MAZE. Each letter in the word shifts by +5 positions in the alphabet. Tip: The bigger the shift, the more important it is to check every letter carefully. ✓"
+          explanation: "Reverse: +5 on HVUZ: H+5=M, V+5=A, U+5=Z, Z+5=E = MAZE. Each letter in the word shifts by +5 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 146,
@@ -11031,7 +11031,7 @@ const vrData = {
           question: "If BLUE is coded as XHQA, what word is coded as LHWJA?",
           options: ["PLBNE","QLANE","PKANE","PLANE","PLAME"],
           correct: 3,
-          explanation: "Reverse +4: L+4=P, H+4=L, W+4=A, J+4=N, A+4=E = PLANE. Each letter in the word shifts by +4 positions in the alphabet. Tip: Larger shifts are trickier — write the alphabet out and count carefully. Don't rush! ✓"
+          explanation: "Reverse +4: L+4=P, H+4=L, W+4=A, J+4=N, A+4=E = PLANE. Each letter in the word shifts by +4 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 165,
@@ -11041,7 +11041,7 @@ const vrData = {
           question: "If CLAW is coded as FODZ, what word is coded as VWRUP?",
           options: ["STOQM","TTORM","SSORM","STPRM","STORM"],
           correct: 4,
-          explanation: "Reverse -3: V-3=S, W-3=T, R-3=O, U-3=R, P-3=M = STORM. Each letter in the word shifts by -3 positions in the alphabet. Tip: For -3, count back three places. Watch out for wrap-around near A! ✓"
+          explanation: "Reverse -3: V-3=S, W-3=T, R-3=O, U-3=R, P-3=M = STORM. Each letter in the word shifts by -3 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 166,
@@ -11051,7 +11051,7 @@ const vrData = {
           question: "If OPAL is coded as LMXI, what word is coded as PEFM?",
           options: ["SHIP","THIP","SGIP","SHJP","SHIO"],
           correct: 0,
-          explanation: "Reverse +3: P+3=S, E+3=H, F+3=I, M+3=P = SHIP. Each letter in the word shifts by +3 positions in the alphabet. Tip: For bigger shifts like +3, use the EJOTY trick (E=5, J=10, O=15, T=20, Y=25) as anchor points. ✓"
+          explanation: "Reverse +3: P+3=S, E+3=H, F+3=I, M+3=P = SHIP. Each letter in the word shifts by +3 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         }
       ]
     },

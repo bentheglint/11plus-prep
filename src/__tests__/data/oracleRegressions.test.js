@@ -488,6 +488,29 @@ describe('Oracle Sweep — Structural Invariants', () => {
                                 content.indexOf('id: "brackets-colons-mistake"'));
     expect(block).not.toContain('v.testItems.join');
   });
+
+  // 2026-04-23 — Letter Codes tip audit.
+  // Mirror-code questions must carry the mirror tip, not a shift tip.
+  // Progressive-shift questions must carry the progressive tip, not a constant-shift tip.
+  it('Letter Codes mirror questions carry the mirror-appropriate tip', () => {
+    const qs = vrData.topics.letterCodes.questions;
+    const MIRROR_TIP_FRAG = 'In mirror codes, A=Z, B=Y';
+    const mirrorQs = qs.filter(q => q.explanation &&
+      /mirror|A=Z|reverse.*alphabet|reflected/i.test(q.explanation));
+    expect(mirrorQs.length).toBeGreaterThan(10);
+    const wrong = mirrorQs.filter(q => !q.explanation.includes(MIRROR_TIP_FRAG));
+    expect(wrong.map(q => q.id)).toEqual([]);
+  });
+
+  it('Letter Codes progressive-shift questions carry the progressive-shift tip', () => {
+    const qs = vrData.topics.letterCodes.questions;
+    const PROG_TIP_FRAG = 'When the shift changes each position';
+    const progQs = qs.filter(q => q.explanation &&
+      /\+1,\s*\+2,\s*\+3|\+2,\s*\+3,\s*\+4|progressive|increasing/i.test(q.explanation));
+    expect(progQs.length).toBeGreaterThan(10);
+    const wrong = progQs.filter(q => !q.explanation.includes(PROG_TIP_FRAG));
+    expect(wrong.map(q => q.id)).toEqual([]);
+  });
 });
 
 // ══════════════════════════════════════════════════════════════
