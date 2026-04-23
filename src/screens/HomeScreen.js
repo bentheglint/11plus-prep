@@ -37,15 +37,18 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
     <div className="app-bg p-4">
       <div className="max-w-4xl mx-auto">
         {/* Top bar */}
-        <div className="flex items-center justify-between mb-6">
-          {streaksAndPP ? (
-            <StreakDisplay
-              currentStreak={streaksAndPP.currentStreak}
-              longestStreak={streaksAndPP.longestStreak}
-              isActive={streaksAndPP.isStreakActive()}
-              practiceDays={streaksAndPP.getPracticeDays(56)}
-            />
-          ) : <div />}
+        <div className="flex items-center justify-between mb-6 gap-3">
+          <div className="flex items-center gap-3 md:gap-4 min-w-0">
+            <img src="/logo.svg" alt="PrepStep" className="h-8 md:h-10 shrink-0" />
+            {streaksAndPP && (
+              <StreakDisplay
+                currentStreak={streaksAndPP.currentStreak}
+                longestStreak={streaksAndPP.longestStreak}
+                isActive={streaksAndPP.isStreakActive()}
+                practiceDays={streaksAndPP.getPracticeDays(56)}
+              />
+            )}
+          </div>
           <AccountMenu currentUser={currentUser} />
         </div>
 
