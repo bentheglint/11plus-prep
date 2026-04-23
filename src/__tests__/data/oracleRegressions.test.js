@@ -429,12 +429,14 @@ describe('Oracle Sweep — Structural Invariants', () => {
     expect(q.explanation).toMatch(/D:.*6\.5/);
   });
 
-  // Import case sensitivity: letterSums import must use camelCase
-  it('lessonData.js imports letterSums-subconcepts with correct case', () => {
+  // Import case sensitivity: filename on disk is lowercase (lettersums-subconcepts.js).
+  // Import path must match exactly — Linux is case-sensitive and would fail to resolve
+  // ./staging/letterSums-subconcepts (the camelCase form).
+  it('lessonData.js imports lettersums-subconcepts with lowercase path matching filename', () => {
     const fs = require('fs');
     const content = fs.readFileSync('src/microLessons/lessonData.js', 'utf8');
-    expect(content).toContain("./staging/letterSums-subconcepts");
-    expect(content).not.toContain("./staging/lettersums-subconcepts");
+    expect(content).toContain("./staging/lettersums-subconcepts");
+    expect(content).not.toContain("./staging/letterSums-subconcepts");
   });
 });
 
