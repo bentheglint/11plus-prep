@@ -1,4 +1,4 @@
-// Achievement definitions for the 11+ Prep app
+// Achievement definitions for the PrepStep app
 // Each achievement has a check function that receives user stats
 // "Prep Points" is our points system name (placeholder for rebranding)
 

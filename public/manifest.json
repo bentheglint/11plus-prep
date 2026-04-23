@@ -1,7 +1,7 @@
 {
-  "short_name": "11+ Prep",
-  "name": "11+ Test Prep",
-  "description": "11+ exam preparation for GL Assessment — maths, English and verbal reasoning practice for children preparing for grammar school entrance.",
+  "short_name": "PrepStep",
+  "name": "PrepStep — 11+ Exam Practice",
+  "description": "Step-by-step 11+ exam practice for UK children. Maths, English and Verbal Reasoning prep for GL Assessment grammar school entrance.",
   "icons": [
     {
       "src": "favicon.ico",

@@ -57,7 +57,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           transition={{ type: 'spring', stiffness: 200, damping: 20 }}
         >
           <h1 className="font-heading text-fluid-xl font-bold text-slate-800">
-            {currentUser ? `Hey ${currentUser}!` : '11+ Test Prep'}
+            {currentUser ? `Hey ${currentUser}!` : 'PrepStep'}
           </h1>
           <p className="text-slate-500 text-sm mt-1">What shall we work on today?</p>
         </motion.div>
