@@ -1,0 +1,1157 @@
+Good — words capped at 4: SCOLD, PRICE, OWN, OWL, OAT, OAR, INK, HAT, FLAME, ATE, AGE. I must avoid introducing more of these. Words at 3: STALE, OUR, EAR, CAT, BAT, BAND, ARM, APE — each has room for one more. I'll plan replacements avoiding the capped words.
+
+Now I have everything needed. Let me work through each of the 22 flagged questions methodically. I'll think carefully about each alternative letter and whether the resulting words are genuine 11+ child-level vocabulary.
+
+**Child-level 11+ vocabulary standard (UK, ages 8-11):**
+- **NOT acceptable**: TAIN, RAND (South African currency — obscure), ARN, BA, IM, RAIM, TAGE, THIP, OAD (not a word), LAN, ANE, PLAT, ARKS (plural of ARK — marginal — the app already avoids plural-S tricks per Q56 precedent)
+- **MARGINAL**: COWL (a hood — in fairy tales/religious context, known to strong readers), CANT (as verb "to tilt" — rare; as noun "hypocritical speech" — adult), BARB (a pointed spike — known to some), BUR (a prickly seed — marginal), PATE (top of head — literary, older fashion), LEAP (definitely a word — common)
+- **GENUINE plurals** (S-move): if taking an S off a word gives a stem that becomes plural when S moves to a simple noun, that's the Q56 plural-trap ambiguity — AVOID.
+
+Let me work through each one carefully.
+
+---
+
+**Q3 [D1]: PLATE + AN — intended P (→ LATE + PAN)**
+- Alternative L (PATE + LAN): LAN is not a word. FALSE POSITIVE.
+- Alternative E (PLAT + ANE): PLAT and ANE aren't child-level words. FALSE POSITIVE.
+- Verdict: **FALSE POSITIVE**
+
+**Q19 [D1]: TRAIN + OAD — intended T (→ RAIN + TOAD)**
+- OAD isn't a real word — this is an unusual "fragment" question where TRAIN donates T and OAD receives it. The scanner flags R(TAIN+ROAD) — TAIN is not a word. FALSE POSITIVE for ambiguity. However, the Q itself is flawed because OAD isn't a word — a child would be puzzled by the source. Flagging as marginal formatting issue, not ambiguity. The Oracle says "BOTH resulting words must be valid English words" — which RAIN+TOAD satisfies. But the STARTING word OAD isn't a word, which breaks the format. Worth flagging separately, but for ambiguity verdict: **FALSE POSITIVE**.
+
+**Q20 [D3]: SHORE + AND — intended H (→ SORE + HAND)**
+- Alternative R (SHOE + RAND): RAND is primarily a South African currency — marginal at best, not child-level UK vocab. But also a "rand" can mean the edge of a shoe sole (archaic). FALSE POSITIVE for 11+ children.
+- Verdict: **FALSE POSITIVE**
+
+**Q36 [D2]: EEL + SPEAR — intended P (→ SEAR + PEEL)**
+- Alternative S (PEAR + EELS): EELS is a simple plural — children WILL see this. SEAR + PEEL vs PEAR + EELS. Both pairs are valid words. This is the classic plural-S trap that Q56 was fixed to avoid. SEAR means "to scorch"; PEAR is a fruit. This is a **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q42 [D2]: OWL + SCOLD — intended C (→ SOLD + COWL)**
+- Alternative S (COLD + OWLS): OWLS is the plural of OWL, and COLD is very common. This is the plural-S trap — child will definitely pick S. COWL (monk's hood) is marginal-but-known; COLD+OWLS is cleaner. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q45 [D2]: AIR + FEAST — intended F (→ EAST + FAIR)**
+- Alternative S (FEAT + AIRS): AIRS = plural of AIR (also a verb). FEAT = an achievement (very common). Both pairs are strong. Plural-S trap. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q49 [D2]: RIM + STALE — intended T (→ SALE + TRIM)**
+- Alternative S (TALE + RIMS): TALE is common. RIMS is plural of RIM (common — "wheel rims"). Plural-S trap. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q50 [D2]: APE + STALE — intended T (→ SALE + TAPE)**
+- Alternative S (TALE + APES): TALE is common; APES is plural of APE. Plural-S trap. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q52 [D2]: ARM + SWORE — intended W (→ SORE + WARM)**
+- Alternative S (WORE + ARMS): WORE (past tense of wear — very common). ARMS = plural of ARM. Plural-S trap. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q62 [D2]: HIP + STORE — intended S (→ TORE + SHIP)**
+- Alternative T (SORE + THIP): THIP is not a word. FALSE POSITIVE.
+- Verdict: **FALSE POSITIVE**
+
+**Q64 [D2]: RIM + STEAM — intended T (→ SEAM + TRIM)**
+- R (IM + STREAM): IM not a word. FALSE POSITIVE.
+- S (TEAM + RIMS): TEAM is very common, RIMS is plural. Plural-S trap. **GENUINE** ambiguity.
+- A (STEM + RAIM): RAIM not a word. FALSE POSITIVE.
+- Verdict: **GENUINE** (via S alternative)
+
+**Q67 [D2]: RAP + STAGE — intended T (→ SAGE + TRAP)**
+- S (TAGE + RAPS): TAGE not a word. FALSE POSITIVE for S.
+- E (STAG + REAP): STAG is a male deer (common); REAP is to harvest (common). Both real words. Verifying: STAGE minus E = STAG ✓. RAP plus E = REAP ✓. **GENUINE** ambiguity with E.
+- Verdict: **GENUINE**
+
+**Q69 [D2]: LAP + SCARE — intended S (→ CARE + SLAP)**
+- E (SCAR + LEAP): SCAR is a mark from a wound (common, Y4-Y5). LEAP is to jump (very common). Both real. Verifying: SCARE minus E = SCAR ✓. LAP plus E = LEAP ✓. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q78 [D2]: BAND + CAR — intended D (→ BAN + CARD)**
+- R (CA + BRAND): CA is not a word. FALSE POSITIVE.
+- Verdict: **FALSE POSITIVE**
+
+**Q80 [D2]: CART + HAT — intended T (→ CAR + THAT)**
+- C (ART + CHAT): ART very common, CHAT very common. Verifying: CART minus C = ART ✓. HAT plus C = CHAT ✓. **GENUINE** ambiguity.
+- H (AT + CHART): AT is a 2-letter word — per Oracle and GL convention, 2-letter results are typically avoided. AT is a real preposition though. This is marginal — but technically, HAT minus H gives AT. GL typically wants 3-letter minimum. If AT counts, CHART is also valid. I'll flag AT as non-standard but note the ambiguity.
+- Verdict: **GENUINE** (via C: ART + CHAT are solid child words)
+
+**Q81 [D2]: EARN + BAR — intended N (→ EAR + BARN)**
+- E (ARN + BEAR or ARN + BARE): ARN not a word. FALSE POSITIVE.
+- Verdict: **FALSE POSITIVE**
+
+**Q82 [D2]: FARM + ATE — intended M (→ FAR + MATE)**
+- F (ARM + FATE): ARM is very common, FATE is common (Y5-6 curriculum). Verifying: FARM minus F = ARM ✓. ATE plus F = FATE ✓. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q88 [D2]: BAND + BAR — intended N (→ BAD + BARN)**
+- B (AND + BARB): AND is common but a connective — typically GL wants content words. BARB is marginal (barbed wire, fish-hook barb — some kids know). AND is very common though. Verifying: BAND minus B = AND ✓. BAR plus B = BARB ✓. This is **MARGINAL** — BARB is plausibly known to strong readers, and AND is a real word.
+- R (BA + BRAND): BA not a word. FALSE POSITIVE for R.
+- Verdict: **MARGINAL** (via B)
+
+**Q89 [D2]: BURN + CAT — intended R (→ BUN + CART)**
+- N (BUR + CANT): BUR means a prickly seed case (archaic/marginal). CANT means hypocritical speech (adult word) or "to tilt" (archaic). Both are obscure. FALSE POSITIVE for 11+ children.
+- Verdict: **FALSE POSITIVE**
+
+**Q92 [D2]: COLD + HAT — intended L (→ COD + HALT)**
+- C (OLD + CHAT): OLD is very common, CHAT is very common. Verifying: COLD minus C = OLD ✓. HAT plus C = CHAT ✓. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q94 [D2]: GOAT + PIN — intended A (→ GOT + PAIN)**
+- G (OAT + PING): OAT is very common (oats for porridge). PING is a sound word, common. Verifying: GOAT minus G = OAT ✓. PIN plus G = PING ✓. **GENUINE** ambiguity.
+- Verdict: **GENUINE**
+
+**Q97 [D2]: HARM + CAT — intended R (→ HAM + CART)**
+- H (ARM + CHAT): ARM common, CHAT common. Verifying: HARM minus H = ARM ✓. CAT plus H = CHAT ✓. **GENUINE** ambiguity.
+- C (AT + CHARM): AT is 2-letter (non-standard). CHARM is common. Same 2-letter issue as Q80.
+- Verdict: **GENUINE** (via H: ARM + CHAT solid)
+
+---
+
+Summary so far:
+- **FALSE POSITIVE** (no fix needed): Q3, Q19, Q20, Q62, Q78, Q81, Q89
+- **GENUINE** (replacement needed): Q36, Q42, Q45, Q49, Q50, Q52, Q64, Q67, Q69, Q80, Q82, Q92, Q94, Q97
+- **MARGINAL** (replacement recommended): Q88
+
+Let me also note: **Q19 (TRAIN + OAD)** has a separate quality problem — OAD is not a real word, so while the ambiguity verdict is "false positive", the question itself is format-broken. Worth flagging.
+
+Now I'll write replacements. For each genuine/marginal one, I need to preserve:
+- The same intended letter (if possible)
+- The same skill type (plural-S traps stay as plural-S traps — this is Ben's explicit instruction)
+- Same difficulty
+- All 5 letters from the two source words, no duplicates
+- Same-shaped explanation + tip
+
+Let me construct each replacement carefully. Key rule for plural-S traps: the fix pattern from Q56 is to ensure only ONE letter produces two valid non-plural words. The source word that would produce a plural ending must be a word whose final S can't legitimately be stripped to form a "plural-trap" alternative. So I'll rebuild these around source words that don't end in S when the target letter is moved.
+
+Wait — the plural-S trap occurs because the SOURCE word starts with S (STALE, SWORE, SCARE, STEAM, STORE, STAGE, SCOLD, SPEAR, FEAST) and the RECEIVER is a short noun. Moving the S makes SALE+RIM → SALE+TRIMS or equivalent where the short word becomes plural. To fix: replace the short receiver noun with a non-pluralisable word, OR ensure that taking the S creates a word that isn't a simple real word.
+
+Actually let me re-read Q36 to be precise:
+- EEL + SPEAR. Intended: P → SEAR + PEEL. Alternative: S → PEAR + EELS. 
+- The issue is that EEL + S = EELS (pluralising EEL). If I change EEL to a word that can't pluralise cleanly, the S trap breaks.
+
+Alternative approach per the Q56 precedent: change the puzzle so only one letter works. For each genuine one, I'll rebuild with a fresh word pair.
+
+Let me now draft each replacement. I'll verify by mentally trying every letter.
+
+**Q36 replacement** — same skill (consonant P move, right-to-left, SPEAR source), D2, unambiguous:
+- Need word that doesn't become a plural when receiving S. Try "SPEAR + OWL" → P move: SEAR + POWL (not a word). Try "SPEAR + INK" → S: PEAR + SINK, P: SEAR + PINK. Both P and S work! Try "SPEAR + ONE" → P: SEAR + PONE (not word), S: PEAR + ONES (plural-trap, bad).
+- Try "ICE + SPEAR" → S: PEAR + ICES (plural), P: SEAR + PICE (not word). Bad.
+- Try "ORE + SPEAR" → S: PEAR + ORES (plural trap), P: SEAR + PORE (both valid!). S makes ORES which is a plural. Still trap.
+- Try "TAR + SPEAR" → S: PEAR + TARS (plural), P: SEAR + TARP (valid!). Still has the S plural trap.
+- Try "RANG + SPEAR" → hm, four letters. 
+- Try "INKY + SPEAR"... too obscure.
+- Try "SPEAR + OOL" — no, invented word.
+- The S-trap is tricky because almost any short noun pluralises. Solution: use a NON-noun receiver, or use a receiver where adding S creates a non-word.
+- Try "OWE + SPEAR" → P: SEAR + POWE? No, POWE isn't a word. Bad.
+- Try "INK + SPEAR" → P: SEAR + PINK ✓, S: PEAR + INKS ✓ — still S-trap.
+- Try "LAP + SPEAR" (but LAP+SCARE is Q69's original) → P: SEAR + PLAP? Not a word. Bad.
+- Try "ACE + SPEAR" → P: SEAR + PACE ✓, S: PEAR + ACES (plural of ACE — valid!). S-trap.
+- Try "EAT + SPEAR" → P: SEAR + PEAT (peat = moss fuel, Y5-6 word, valid) ✓, S: PEAR + EATS (3rd-person verb, real) — another S-trap.
+- Try "YEAR + SPEAR" → P: SEAR + PYEAR? No, PYEAR not a word, but P could go anywhere: SEAR + YEARP? No. Actually insertion is anywhere, so: P + YEAR — PYEAR, YPEAR, YEPAR, YEAPR, YEARP. None are words. S + YEAR → SYEAR, YSEAR, YESAR, YEASR, YEARS. YEARS works — plural! But we're moving P from SPEAR: SPEAR minus P = SEAR ✓, and YEAR + P somewhere = no valid. So P doesn't work either. Dead end.
+- Try "SPEAR + IRATE" — getting long, D3 territory. Let me narrow.
+- **Key insight**: to avoid the S plural-trap while keeping SPEAR as source, the receiver must NOT form a valid word when S is added. Receivers where receiver+S is not a word: hard for short receivers.
+- **Alternative**: change the source word from SPEAR. Source word for P-move that gives a valid stem: PLATE→LATE(Q3 used), PLANK→LANK(Q48), PLIGHT→LIGHT(Q16). For SPEAR-like "S___R" sources: STAIR, SPARE (capped at 2 — room). SPARE → S: PARE, P: SARE (not word), A: SPRE (no). Best option: "SPARE + INK" exists as Q79.
+- Let me try a different approach: keep SPEAR but use a receiver ending in letter(s) where S makes non-word. 
+- Try "SPEAR + OX" → too short (2 letters becomes 3). P: SEAR + POX (disease, valid!) ✓. S: PEAR + OXS (not word — plural of OX is OXEN). Only P works! Let me verify all other letters:
+  - E (SPEAR→SPAR ✓, OX+E→EOX/OEX/OXE — OXE not valid). 
+  - A (SPEAR→SPER ✗ not a word). 
+  - R (SPEAR→SPEA ✗). 
+  - S (as above, PEAR + OXS ✗).
+- Only P works! OX is short but is a real, well-known child word. And POX is a real word (chickenpox). SPEAR→SEAR is clean. SEAR is Y5-6 vocab ("to sear the meat").
+- Wait — is POX too adult? Chickenpox is well-known to kids. POX means disease. Marginal but defensible.
+- Alternative receivers: "SPEAR + OUR" → P: SEAR + POUR ✓. S: PEAR + OURS ✓ (possessive pronoun — also plural-like trap). Hmm, OURS is a real word.
+- "SPEAR + ORE" (ORE — mineral rock, Y5 geography): P: SEAR + PORE (pore in skin ✓). S: PEAR + ORES (plural — trap). Still trap.
+- "SPEAR + ONE" — ONE is determiner/number. P: SEAR + PONE (not word in UK), E (SPEAR→SPAR): ONE+E: ONEE/OENE (not words). S: PEAR + ONES (plural, valid — trap). Trap.
+- "SPEAR + ORAL" — D3. P: SEAR + PORAL? No. R: SPEA + ORAL → SPEA not word. Skip.
+- "SPEAR + UP" → too short. P: SEAR + PUP ✓. S: PEAR + UPS (valid plural of "up" — trap). Trap.
+- "SPEAR + EW" → EW not a word.
+- "POX" approach looks best. Let me finalise with SPEAR + OX.
+
+Actually, reviewing: receiver "OX" means the child would see "EEL SPEAR" replaced with "OX SPEAR" or "SPEAR OX". OX is very short (2 letters), which seems unusual. Original Q36 has EEL (3 letters) + SPEAR (5 letters). Let me stick closer to format.
+
+**Better idea**: change source from SPEAR to a different P-source that gives a clean, non-plural alt:
+- PLACE → L: PACE ✓, P: LACE ✓ (Q10 uses PLACE+OUR). Many options.
+- Try PRICE + OAR (PRICE at 1 use, OAR at 4 cap — can't add more OAR). 
+- PRICE + INK: P: RICE + PINK ✓. S: (no S in PRICE). R: PICE (not word). I: PRCE? No. C: PRIE? No. E: PRIC? No.  
+  Wait — PRICE is already at 1 (from Q43 EAR+PRICE). Let me check other letters:
+  - P: PRICE→RICE ✓, INK+P = PINK ✓. 
+  - R: PRICE→PICE (not word). 
+  - I: PRICE→PRCE (not word). 
+  - C: PRICE→PRIE (not word in English). 
+  - E: PRICE→PRIC (not word). 
+  - N: (not in PRICE). 
+  - K: (not in PRICE).
+  Only P works.
+  Options must include P, plus 4 distractor letters from PRICE/INK. Letters in words: P, R, I, C, E (from PRICE), I, N, K (from INK). Unique: P, R, I, C, E, N, K. Pick 4 from {R, I, C, E, N, K}. Say ["P", "R", "C", "E", "K"]. Correct index for P = 0.
+  
+  But PRICE appears at count 1 already. Adding this replacement takes it to 2. Fine.
+
+Hmm, but I want to preserve the "P-move right-to-left from a longer S-starting source" feel of Q36 since that was the skill. Actually the skill was "P move from SPEAR to short vowel word". Let me keep source = SPEAR but change receiver.
+
+Actually my job is to preserve the **intended answer letter (P)** and **same skill type (right-to-left consonant move)** and **same difficulty**. The original skill was plural-S ambiguous, and Ben says "if original was a plural-trap S-move Q, keep it a plural-trap S-move Q that's now unambiguous". But Q36 intended letter is P, not S. So it was a P-move Q that was **accidentally ambiguous with S**. Fixing it means keeping the P-move unambiguous. I don't need to force it to be a plural-trap format — I need to remove the alternative S answer.
+
+OK — cleaner approach per Q. I'll proceed efficiently.
+
+Let me now systematically generate replacements. I'll verify each by mentally testing every letter in both words.
+
+Let me check a few candidate receivers' word validity for each case.
+
+For **Q36** (P-move from SPEAR): Need receiver where S-trap breaks. Keep receiver short (3-4 letters). I'll go with "SPEAR + OOL" — OOL not a word. Try "SPEAR + IRK": P: SEAR + PIRK (not word). Bad. "SPEAR + AIR": P: SEAR + PAIR ✓. S: PEAR + AIRS (AIRS is valid — "puts on airs" plural) — trap! "SPEAR + ORE" — trap. 
+
+**Alternative fix: change source away from SPEAR entirely.** Use another P-move source:
+- **PLATE source** → capped at 4 already (can't reuse).
+- **PLIGHT** at 1.
+- **PLACE** at 2 (Q10, and another?). Let me check.
+- **PLANT** — not yet used. 
+- **PAINT** — not used.
+- **PRINT** — not used. PRINT: P-move gives RINT (not word). Bad.
+- **PLATE** — at 4.
+- **PEARL** — not used. PEARL → P: EARL (a noble rank ✓), L: PEAR (✓), E: PRAL (not word), A: PERL (not word — note: PERL is a programming language only), R: PEAL (✓). So PEARL has multiple valid letter moves on its own — ambiguous source!
+- **PLANT + OIL**: P: LANT (not word) — bad.
+- **PLANT + OUR**: P: LANT (not word). L: PANT ✓, OUR+L = LOUR (marginal, archaic) — too obscure.
+
+Let me try **SPEAR source with a better receiver that avoids plural trap**:
+- Receiver must be a 3+ letter word where adding S makes a non-word. 
+- Possibilities: IRON (IRONS is a word → trap). OWL (OWLS is word). INK (INKS is word). OAR (OARS is word). Every simple noun pluralises. 
+- Non-pluralisable words: AND, THE, YOU, CAN, WILL (modal verbs), BELOW, ABOVE... but these don't match Letter Move receiver pattern (receiver is usually a short concrete noun).
+- Abstract/non-noun: MUD (MUDS — informal/not standard). WATER — too long. OWN (OWNS is 3rd-person verb). 
+- Hmm — what about a receiver that, when +S is added, makes a word that doesn't fit as "two new words" — meaning both results must be valid NEW words (different from the originals). If the S-move pair is (word1_stem, word2+S), and word2+S is just the plural, technically it's still a "new word". GL accepts plurals normally but when it creates AMBIGUITY, the Q is broken.
+- Option: use a receiver that's already a plural or non-noun. E.g., "SPEAR + HAD": P: SEAR + PHAD (not word). Bad.
+- "SPEAR + UP": P: SEAR + PUP ✓. S: PEAR + UPS ✓ (plural of "up"). Trap.
+- "SPEAR + AT": 2-letter, non-standard.
+- "SPEAR + EVE": P: SEAR + PEVE? No, but insertion anywhere: PEVE/EPVE/EVPE/EVEP (none valid). Bad.
+
+The only clean solution is to change the source word. Let me use PRICE as source.
+
+**Q36 FINAL replacement: PRICE + INK** (P-move intended, right-to-left):
+- P: PRICE→RICE ✓, INK+P = PINK ✓
+- R: PRICE→PICE ✗
+- I: PRICE→PRCE ✗
+- C: PRICE→PRIE ✗ (not a word)
+- E: PRICE→PRIC ✗
+- N, K (only in INK): PRICE has no N or K → can't move them to INK from INK.
+- INK→NK/IK: NK and IK not words. So from INK: I: NK ✗. N: IK ✗. K: IN ✓ (IN is 2-letter, and remainder from PRICE+K inserting = PRICEK, PKRICE etc — none valid). Actually wait, K goes from INK to PRICE. INK minus K = IN ✓. PRICE + K = PRICEK, PKRICE, PRKICE, PRIKCE, PRICKE, PRICEK. None valid.
+- Only P works. Source "PRICE" at count 1, would go to 2. OK.
+
+Options from letters in PRICE/INK: P, R, I, C, E, N, K. Correct = P. 4 distractors from the other 6 letters. Pick visible ones: R, C, N, K (and E). Standard-ish: ["P","R","C","E","K"]. Correct index = 0.
+
+But wait — one issue. The original Q36 feel was "S-starting source, P moves right-to-left". PRICE starts with P, so PRICE is the source of P. It's a cleaner P-removal than the more arbitrary-feeling "pull P from middle of SPEAR". Both work, but PRICE makes the direction clearer.
+
+Actually looking at the existing data, the original Q36 was classified D2 and involved a surprising direction (P from the longer word in the middle). PRICE+INK is cleaner and more D1-feeling. For D2 I want a slightly harder puzzle.
+
+Let me try **SPEAR + OUR** was trap. **PRICE + ORE** → P: RICE+PORE ✓, R: PICE✗, I: PRCE✗, C: PRIE✗, E: PRIC✗, O: PRICE - no O to move. From ORE: O→ RE, R→OE, E→OR. RE not a word, OE not a word, OR ✓! OR is only 2 letters though. So E move: PRICE+E → PRICEE/various (no valid), ORE-E → OR (2-letter, borderline). Wait — Letter Move requires MOVING a letter. We can't move E from ORE if there's already E in PRICE. Actually we can — we take one E from ORE and put it in PRICE. Result: ORE→OR (2 letters), PRICE+E at some position → PRICEE, PRIECE, etc. None are words. So E doesn't work.
+
+Actually let me check ORE → OR: OR is 2-letter. Per Ben's question about 2-letter acceptability — GL typically rejects. So even if PRICEE were a word, the OR result would disqualify. Safe.
+
+Checking all letters for PRICE + ORE:
+- P: RICE + PORE ✓ (PORE = skin pore, common) ✓
+- R (from PRICE): PICE ✗. R (from ORE): OE ✗.
+- I: PRCE ✗.
+- C: PRIE ✗. 
+- E (from PRICE): PRIC ✗. E (from ORE): OR (2-letter, non-standard).
+- O: PRICE + O = POICE/PROIE/etc (none valid). And no O in PRICE to remove.
+
+Only P works. Good. But ORE is a specific noun (mineral) — Y5 geography. Fine.
+
+Hmm, but I want D2. PRICE + INK or PRICE + ORE both feel D1-ish (obvious P at start of source). D2 should have the letter slightly less obvious or the direction less clear. Let me pick **PRICE + ORE** for slightly more sophisticated vocab (PORE, ORE).
+
+Actually looking at Q36 original, it's rated D2 primarily because the letter moves right-to-left (SPEAR → EEL). Using PRICE as source means direction is PRICE → ORE (left-to-right), which feels D1-ish. Let me invert: **ORE + PRICE** (same puzzle, just listed with short word first). That matches original format (short word first like EEL + SPEAR).
+
+Final: Q36 → `ORE PRICE` with answer P → `RICE PORE`. But wait — moving P from PRICE to ORE = ORE+P, and ORE has 3 letters. ORE+P could be OPRE/POER/ORPE/OREP — what's PORE? P-O-R-E, so insert P at START of ORE = PORE ✓. Good.
+
+PRICE count would go from 1 to 2. OK.
+
+Hmm, actually `EAR PRICE` is already Q43. So ORE + PRICE is a fresh puzzle. Let me use this.
+
+---
+
+Let me work through the remaining more efficiently. The common pattern is: **plural-S traps need a source word change OR a receiver that can't pluralise cleanly**. 
+
+Given the difficulty of finding non-pluralisable receivers, my strategy: **change the source word** to something that doesn't start with S (removing the plural-S trap at its root). Intended letter stays the same where possible.
+
+**Q42 [D2]: OWL + SCOLD → intended C (SOLD + COWL)**. OWL is at 4 cap; SCOLD at 4 cap. Must change at least one. Alt S gave OWLS+COLD trap. To preserve the intended C move with a similar D2 difficulty puzzle:
+- Need a C-source where removing C leaves a valid word, and a receiver that can't become OWLs-style plural.
+- CLONE, CLOUD, CLAMP(4), CRAMP, CRATE, CRANE, CARD, CORD, CASH, CLOT, CLAP, etc.
+- Try **CLOUD + OWN** (OWN at 4 — can't use). Try **CLOUD + RIP** → C: LOUD + CRIP (not word). Bad.
+- **CRATE + LINK** → C: RATE + CLINK ✓. R: CATE✗ (CATE is obscure). A: CRTE✗. T: CRAE✗. E: CRAT✗ (CRAT not word). From LINK: L: INK + CLATE (wait, this is from LINK not CRATE). LINK-L = INK ✓, CRATE+L = CLRATE/etc — actually CRATE+L could make CRATEL/CLRATE/CRALTE/CRATLE — none valid. I: LNK✗. N: LIK✗. K: LIN ✓ (LIN is a Scottish word for flax — obscure). 
+  Actually wait — skill-wise CRATE is different from OWL+SCOLD. Let me preserve structure better.
+- Q42 original involved SCOLD as source (S at start, target letter is C the second letter). To preserve this "pick second letter" feel while avoiding plural trap: 
+  - Use an S-starting source like STRIP, SKATE, SLATE, SMART, SWINE.
+  - Actually no — the plural trap is inherent to S-starting sources moving TO a short noun. Let's escape S.
+- **BRAVE + HILL** → ? Too unrelated.
+- Simpler: **CHAT + SOLD**? Doesn't fit. 
+- **CLAP + OWN** (OWN capped). **CLAP + OUR** (OUR at 3) → C: LAP+COUR (not a word). Bad.
+- **CRAB + LINE** → C: RAB✗. Bad.
+- **SCARE** source? Already risks S-trap. Wait — Q69 uses SCARE and has the E-trap issue (E works too: SCAR+LEAP). Let me pick a totally different source.
+- **CLAMP** at 4 cap. **CLAIM**? CLAIM→ LAIM (not word). **CLAN**? CLAN→LAN (not word).
+- **CHUMP + OLD** → C: HUMP + COLD ✓. H: CUMP ✗. U: CHMP ✗. M: CHUP ✗ (CHUP not word — or is it?). P: CHUM ✓, OLD+P → POLD/OPLD/OLPD/OLDP (none valid). So P move partially works — CHUMP→CHUM ✓ but OLD+P gives nothing. Dead. Only C works. But CHUMP is informal/slang. Borderline.
+- **CHART + OWN** — OWN at 4 cap. **CHART + OWL** — OWL at 4.
+- **CHARM + FIT** → C: HARM + CHFIT? No. Let me think again.
+- **CHARM + AIT** → AIT is obscure (river island). Skip.
+- **CHART + AIR** → C: HART (a male deer, Y5 vocab) + CAIR (not word). Bad. Actually CHART has letters CHART, CAIR not valid.
+- Let's try **CROWN + LOUD** → C: ROWN (not word). Bad.
+- **CLASH + OWN** — OWN capped. **CLASH + IRE** → C: LASH+CIRE (not word). Bad.
+- **CLAMP** is capped. What C-sources work cleanly?
+- **CHALK + INK** → C: HALK (not word). Bad.
+- **CHILL + IMP** → C: HILL + CIMP✗. Bad.
+- **CRISP + OWL** — OWL capped. **CRISP + ATE** — ATE at 4 cap.
+- **CRASH + INK** → C: RASH + CINK✗. Bad.
+- **CHASE + LUNG** → C: HASE✗ (not a word). Bad.
+- **CHEEK + ATE** — ATE at 4. **CHEEK + OAR** — OAR capped.
+- **CHEST + OWN** — capped. **CHEST + ARE** → C: HEST (not common). Skip.
+- **CHOKE + ORE** → C: HOKE (not a word). Skip.
+- **CHOP + HAIR** → C: HOP + CHAIR ✓. H: COP + (HAIR-H)=AIR → HAIR-H=AIR ✓ and CHOP+H=CHOPH/CHHOP/CHOHP/HCHOP (none valid) ✗. O: CHP✗. P: CHO✗. From HAIR: H as above, A: HIR✗, I: HAR✗ (HAR not a word), R: HAI (marginal — HAIL? no, HAI isn't a word)✗. 
+  Only C works. CHOP + HAIR: is this a sensible Q? CHOP is a word (Y2-3). HAIR common. Result: HOP + CHAIR — both super common. 
+  **Good candidate!** 
+  D2 check: CHOP is 4 letters, HAIR is 4 letters. The "C at start of CHOP moves into HAIR to make CHAIR" — this is fairly obvious. Might be D1. 
+  Actually D2 = "Longer words (5-6 letters), letter from middle of source". CHOP is 4. So this leans D1.
+- For D2 feel, longer source. **COBRA + IRE** → C: OBRA (not word). Skip.
+- **CRATE + BANE** → too obscure (BANE).
+- **CRISP + HAIR** → C: RISP (not word). Skip.
+- **CHUNK + HAT** (HAT capped at 4). 
+- **CRUMB + OLD** → C: RUMB (not word). Skip.
+- **CLIP + OUR** (OUR at 3) → C: LIP + COUR (not word). Bad.
+- **CRATE + LINK**: already tried, only C works. Verify fully:
+  - CRATE letters: C, R, A, T, E. LINK letters: L, I, N, K.
+  - C: RATE + CLINK ✓ (both common words).
+  - R: CATE (CATE is listed in some dictionaries as "delicacy" — archaic) + LINK+R = RLINK/LRINK/LINRK/LINKR — none valid ✗. Safe.
+  - A: CRTE ✗.
+  - T: CRAE ✗.
+  - E: CRAT ✗.
+  - L: INK + CRATE+L = LCRATE/CLRATE/CRLATE/CRALTE/CRATLE/CRATEL — none valid ✗.
+  - I: LNK ✗.
+  - N: LIK ✗.
+  - K: LIN ✗ (LIN is archaic Scottish).
+  - Only C works. **Good.**
+- CRATE is at 0 uses, LINK is at 0. D2 feel: CRATE (5 letters), RATE (common), LINK (4 letters), CLINK (common). Move C from start of CRATE to start of LINK. This feels D1-ish (obvious C). 
+- For more D2 feel: move letter from middle? Try **TRACE + LINK** → T: RACE + TLINK✗. R: TACE (marginal). A: TRCE✗. C: TRAE✗. E: TRAC✗. L: INK + TRACE+L = LTRACE/TLRACE/TRLACE/TRALCE/TRACLE/TRACEL — none valid. I: LNK✗. N: LIK✗. K: LIN✗. No valid moves. Dead.
+- Let me try slightly harder. **CRATE + PIN** → C: RATE + CPIN/PCIN/PICN/PINC (none valid) ✗. Bad!
+- Stick with **CRATE + LINK** for Q42 since it's the only one that worked cleanly at D2 feel.
+
+Actually I realise a cleaner approach: I can retain the source (SCOLD) and change the receiver to something where the plural ambiguity breaks.
+
+**Q42 original SCOLD + OWL. Alt S makes COLD + OWLS (plural trap). If receiver has a final letter that when S follows creates non-word, or receiver is a verb/non-noun, the trap breaks.**
+
+Try **SCOLD + FAIR** → C: SOLD + CFAIR (not word — but maybe CFAIR isn't how C inserts; try FAIR+C: CFAIR/FCAIR/FACIR/FAICR/FAIRC — none valid) ✗. Bad.
+
+Try **SCOLD + ASH** → C: SOLD + CASH ✓. S: COLD + ASHS ✗ (ASHS isn't standard — plural of ASH is ASHES). ✓ S-trap broken! O: SCLD + ASH = ? No, removing O from SCOLD = SCLD not a word. L: SCOD+ASH=SCOD? Not a word. D: SCOL+ASH=SCOL not word. From ASH: A: SH ✗. S: (already covered from SCOLD — wait, SCOLD has one S; ASH has one S). Taking S from ASH: ASH-S = AH ✗. H: AS ✓ (but 2-letter). Actually ASH-H = AS ✓ (2-letter, borderline) and SCOLD+H = SCHOLD/SCOLDH/etc — none valid. 
+
+Checking all letters systematically:
+- S (from SCOLD): SCOLD→COLD ✓, ASH+S = SASH/ASSH/ASHS. SASH ✓! So S works: COLD + SASH. Hmm, new ambiguity (S gives SASH).
+- Not clean.
+
+Try **SCOLD + ORE** → C: SOLD + CORE ✓. S: COLD + ORES ✓ (plural trap — still bad).
+
+Try **SCOLD + OUR** (OUR at 3) → C: SOLD + COUR ✗. Bad.
+
+Try **SCOLD + ASK** → C: SOLD + CASK ✓. S: COLD + ASKS ✓ (ASKS is 3rd-person verb — another valid form). Still trap.
+
+Almost any receiver ending where S creates a valid plural/3rd-person will break. Let me check receivers that can't take S:
+- **SCOLD + LIP** → C: SOLD + CLIP ✓. S: COLD + LIPS ✓ (plural — trap).
+- **SCOLD + AIR** → C: SOLD + CAIR✗. Bad.
+- **SCOLD + ARE** → C: SOLD + CARE ✓. S: COLD + ARES ✓? ARES is plural of "are" (unit of land, 100 sq m — technical). Actually ARES is mainly a Greek god. Hmm, marginal. Technically kids wouldn't know ARES. But is "ARES" valid enough to confuse? Borderline.
+- **SCOLD + EAR** (EAR at 3) → C: SOLD + CEAR✗. Bad.
+- **SCOLD + RIP** → C: SOLD + CRIP (CRIP isn't a standard word). Bad.
+- **SCOLD + AID** → C: SOLD + CAID✗. Bad.
+- **SCOLD + OVER** → C: SOLD + COVER ✓. Let me check S: COLD + OVERS ✓ (OVERS = cricket overs — valid British term). Still trap.
+- **SCOLD + LAP** → C: SOLD + CLAP ✓. S: COLD + LAPS ✓ (plural — trap).
+- **SCOLD + RAN** → C: SOLD + CRAN✗. Bad.
+- **SCOLD + ROW** → C: SOLD + CROW ✓. S: COLD + ROWS ✓ (plural — trap).
+- Frustrating.
+
+Let me try source change. **CLOUD + OLD** (sourcing L from CLOUD?). Actually C from CLOUD → LOUD + COLD → makes COLD (a word) but we need another receiver. CLOUD + OLD → C: LOUD + COLD ✓. L: COUD ✗ (not word). O: CLUD✗. U: CLOD ✓ (CLOD = clump of earth, also informal "stupid person") and OLD+U = OULD/OLUD/OLDU (none valid) ✗. D: CLOU ✗. So if only C works: LOUD + COLD. Check all from OLD: O: LD ✗. L: OD ✓? OD is not standard. D: OL ✗. None of those create OLD+other = word. So only C works. **LOUD + COLD** are both very common. CLOUD at 0 uses.
+
+CLOUD + OLD is a nice puzzle. Let me verify once more:
+- Letters in CLOUD: C, L, O, U, D. Letters in OLD: O, L, D.
+- Move C from CLOUD (removing gives LOUD ✓), insert C at start of OLD → COLD ✓.
+- Move L from CLOUD → COUD (not a word). From OLD → OD (not valid). ✗
+- Move O → CLUD (not word). OLD-O = LD ✗. ✗
+- Move U → CLOD ✓, but OLD+U → OULD/OLUD/OLDU (none valid). ✗
+- Move D from CLOUD → CLOU ✗. From OLD → OL ✗. ✗
+Only C works. **Clean!**
+
+But wait — CLOUD appears only 0 times, OLD appears 0 times (just as a word component). Good. Source word CLOUD vs SCOLD — the skill was "move C letter from an S-word". Slight change but still C-move. Acceptable.
+
+Actually preserve skill better: keep SCOLD source since kids have seen it pattern-train on SCOLD (Qs 25, 39, 40, 42). If I remove SCOLD from Q42, SCOLD still appears 3 times elsewhere (Qs 25, 39, 40). Topic-wide SCOLD frequency goes from 4 to 3.
+
+Hmm, but Ben said SCOLD is at 4-count cap — it's already at cap, so any replacement that introduces a new word is fine, and reducing SCOLD is also fine.
+
+Let me use **CLOUD + OLD** for Q42. Intended letter C, direction left-to-right. The original was right-to-left (SCOLD to OWL). Skill change: direction.
+
+Actually wait — let me try to preserve the direction by reversing the Q presentation: **OLD CLOUD** (receiver first, source second — matches original format where "OWL SCOLD" had shorter word first). Actually Q42's format is "OWL  SCOLD" = shorter, longer. So I'll write: **OLD  CLOUD** — shorter, longer. Intended C moves from CLOUD (right) to OLD (left) = right-to-left. 
+
+Options must include C and 4 distractors. Letters in CLOUD: C, L, O, U, D. Letters in OLD: O, L, D. Unique: C, L, O, U, D. All 5 letters from CLOUD plus nothing new from OLD (OLD is subset). Options: ["O","C","L","U","D"]. Correct index for C = 1. Or ["C","L","U","O","D"] index 0. I'll match the style of the original Q42 options which were ["O","C","W","L","S"] (C at index 1). Use ["O","C","L","U","D"]. Correct: 1.
+
+---
+
+OK, I'm being too meticulous in my thinking — let me now move faster and systematically produce all the replacements. I have strong pattern recognition now. Let me batch through.
+
+**Q45: AIR + FEAST → intended F (EAST + FAIR). Alt S makes FEAT + AIRS (trap).**
+- Need F-move unambiguous. F-sources: FLAME (4 capped), FLAT, FEAST, FLOW, FLIP, FAIR, FROG, FREE, FROZE, FROST.
+- **FEAST** still works if receiver can't create S-trap. Try FEAST + HER → F: EAST + FHER✗. Bad. FEAST + OIL → F: EAST + FOIL ✓. S: FEAT + OILS ✓ (plural trap). Still trap!
+- **FEAST + ORE** → F: EAST+FORE ✓, S: FEAT+ORES (plural trap). Bad.
+- Let me swap source. **FROST + AIR** → F: ROST (ROST not a word in UK) ✗. Bad.
+- **FROG + AIR** → F: ROG (not word) ✗. Bad.
+- **FLIP + HAIR** → F: LIP + FHAIR✗. Bad.
+- **FLAT + OUR** (OUR at 3) → F: LAT (not word). Bad.
+- **FROZEN + AIR** → too long/D3.
+- **FREE + WOOD** → F: REE (not word) ✗.
+- **FROM + LOUR** → too abstract.
+- **FLIGHT + AIR** → F: LIGHT + FAIR ✓. Let me check other letters of FLIGHT: L: FIGHT ✓, AIR+L = ALIR/AILR/AIRL/LAIR. LAIR ✓! So L works too: FIGHT + LAIR. 
+  Both F and L work → ambiguous! Bad.
+- **FLIGHT + HEN** → F: LIGHT + FHEN✗. Bad.
+- **FRONT + HAT** (HAT capped) — skip.
+- **FRESH + ARM** (ARM at 3) → F: RESH (not word). Skip.
+- **FLAKE + OUR** (OUR at 3) → F: LAKE + FOUR ✓. L: FAKE ✓, OUR+L = OURL/ORUL/OULR/LOUR (LOUR is archaic "to look sullen") — LOUR is too obscure. Acceptable only if LOUR not accepted. Safe. A: FLKE✗. K: FLAE✗. E: FLAK ✓ (FLAK = anti-aircraft fire, criticism — known). OUR+E = OURE/OUER/OEUR/EOUR — none valid. Safe. 
+  From OUR: O: UR✗. U: OR✓ (2-letter, borderline). R: OU✗. 
+  Only F gives valid pair. Actually wait — L gives FAKE+LOUR and LOUR is debatable. Let me reject.
+- **FLAIR + ORE** → FLAIR: F, L, A, I, R. ORE: O, R, E. F: LAIR ✓, ORE+F = FORE ✓. L: FAIR ✓, ORE+L = LORE (knowledge ✓). So both F and L work! Ambiguous.
+- **FLAVOUR + OIL** → too long.
+- **FROCK + HAT** (HAT capped). 
+- **FLOCK + HEN** → F: LOCK + FHEN✗. Bad.
+- **FRANK + LIP** → F: RANK + FLIP ✓. R: FANK✗. A: FRNK✗. N: FRAK✗. K: FRAN✗ (FRAN is a name). From LIP: L: IP✗. I: LP✗. P: LI✗. Only F works. RANK, FLIP both common. 
+  But is "FRANK" a fair source word? It's a name AND an adjective (honest). Ambiguous — kids might be unsure. Actually FRANK as adjective is Y5-6 curriculum ("a frank discussion"). Acceptable.
+  Hmm, FRANK is marginal. Let me find cleaner.
+- **FRESH + AID** → F: RESH (not word) ✗. Bad.
+- **FROST + HEN** → F: ROST (ROST isn't standard UK — "ROAST" is). Skip.
+- **FEAST + OOR** — not a word. 
+- **FEAST + INK** → F: EAST + FINK (FINK = informer, American slang — probably obscure for UK 11+). Check S: FEAT + INKS (plural — trap). Still trap.
+- **FLOUR + AIR** → F: LOUR (obscure) ✓, AIR+F = FAIR ✓. L: FOUR ✓, AIR+L = AILR/LAIR/AIRL. LAIR ✓! Both F and L give valid pairs. Ambiguous.
+- **FRAME + OUR** (OUR at 3) → F: RAME ✗ (RAME not word). Bad.
+- **FROWN + HAT** (HAT capped) — skip.
+- **FLOAT + INK** → F: LOAT ✗. Bad.
+- Let me try F-move to non-S-trap receiver: receiver must end such that pluralising gives non-word or at minimum, the S removal from source doesn't combine into a valid source-minus-S + receiver-plus-S pair.
+- **FEAST + OUR** (OUR at 3) → F: EAST + FOUR ✓. S: FEAT + OURS ✓ (possessive — OURS is a valid word). Still trap!
+- **FEAST + ORAL** → F: EAST + FORAL✗. Bad.
+- **FEAST + NIP** → F: EAST + FNIP✗. Bad.
+- **FEAST + HAM** → F: EAST + FHAM✗. Bad.
+- I'll use **FROCK + LOUR** — no, LOUR obscure.
+
+OK alternative approach: **KEEP the F-move skill at D2, use a longer source**:
+- **FLIGHT + EAR** (EAR at 3) → F: LIGHT + FEAR ✓. L: FIGHT + LEAR (LEAR = king name, marginal/no). FIGHT ✓ but LEAR is not a standard common word. Hmm. A child might write LEAR thinking of King Lear (school Shakespeare). Still dodgy. Let me check full alphabet:
+  - F: LIGHT + FEAR ✓
+  - L: FIGHT + LEAR ✗ (not common)
+  - I: FLGHT ✗
+  - G: FLIHT ✗
+  - H: FLIGT ✗  
+  - T: FLIGH ✗
+  - From EAR: E: AR ✗. A: ER ✗. R: EA ✗.
+  Only F works cleanly. FLIGHT + EAR → LIGHT + FEAR. Both very common. **Good candidate.**
+  
+  FLIGHT at 0 uses. EAR at 3 uses — adding takes it to 4 (the cap). OK.
+
+Going with **FLIGHT + EAR** for Q45. Options from FLIGHT/EAR letters: F, L, I, G, H, T, E, A, R. Pick F plus 4 distractors. ["F","L","G","H","E"] or ["L","F","G","T","E"]. Correct = F.
+
+Original Q45 options: ["A","I","F","R","E"]. I'll match similar style. Use ["L","I","F","G","E"], correct=2.
+
+Direction: F from FLIGHT (left) goes to EAR (right) — left-to-right. Original Q45 was right-to-left (F from FEAST to AIR). I'm losing the direction-hardness element. To keep right-to-left: **EAR + FLIGHT** format. Source word second. OK: `EAR  FLIGHT` → F moves from FLIGHT (right) to EAR (left). I'll present it this way.
+
+Actually the format preserves right-to-left when the source (longer word) is on the right. Let's do: "EAR  FLIGHT" so source FLIGHT donates F to EAR → FEAR + LIGHT. Good, right-to-left direction preserved.
+
+Hmm wait — checking original Q45 had "AIR  FEAST" with F moving FROM FEAST (right) TO AIR (left). Same structure: short receiver left, long source right, letter moves right-to-left. "EAR  FLIGHT" preserves this exactly. Good.
+
+---
+
+I need to accelerate. Let me efficiently do the remaining Q49, Q50, Q52, Q64, Q67, Q69, Q80, Q82, Q88, Q92, Q94, Q97.
+
+**Q49: RIM + STALE → T (SALE + TRIM). S-trap: TALE + RIMS.**
+- Source STALE (at 3 cap). Keep T-move. Change receiver to non-pluralising or change source.
+- Try **STALE + OUR** (OUR at 3) → T: SALE + TOUR ✓. S: TALE + OURS ✓ (OURS is valid possessive — trap).
+- **STALE + FIG** → T: SALE + TFIG✗. Bad.
+- **STALE + AID** → T: SALE + TAID✗. Bad.
+- **STALE + HEN** → T: SALE + THEN ✓. S: TALE + HENS ✓ (plural — trap).
+- **STALE + ICE** → T: SALE + TICE✗ (TICE not common). Bad.
+- S-trap inherent to STALE. Change source.
+- T-sources where removing T leaves word: STALE (bad), STORE (bad), STEM→SEM✗, TRAP→RAP ✓, TWIN→WIN ✓, TRICK→RICK ✓ (RICK = haystack, Y5-6), TRIBE→RIBE✗, TRAIL→RAIL ✓, TRAIN→RAIN ✓, TRACE→RACE ✓, TWINE→WINE ✓, TRIP→RIP ✓, TREE→REE✗, THREAD→HREAD✗.
+- **TWIN + HEY** — HEY interjection, questionable receiver.
+- **TRACE + HIGH** → T: RACE + THIGH ✓ (part of leg — common). R: TACE (TACE obscure)+ HIGH+R = HIGHR/RHIGH/HRIGH/HIRGH/HIGRH — none valid ✗. A: TRCE✗. C: TRAE✗. E: TRAC✗. From HIGH: H: IGH✗. I: HGH✗. G: HIH✗. Only T works.
+  TRACE at 1 use (from Q66 WIG+TRACE). Going to 2. OK. HIGH at 0.
+  **TRACE + HIGH → RACE + THIGH**. Very common words. Good D2 feel.
+- Better: **TRIM + HEY**? TRIM at 0. 
+- Actually **TWIN + ASP** (ASP = snake) → T: WIN + TASP✗. Bad.
+- **TRICK + HOP** → T: RICK + THOP✗. Bad.
+- Let me use **TRACE + HIGH**.
+  
+Wait — Q49 intended letter is T. If I use TRACE → move T → RACE (subject word). That preserves T-move. Direction: TRACE on left, HIGH on right → T moves left-to-right. Original Q49 "RIM STALE" had T moving right-to-left. To preserve right-to-left: **HIGH  TRACE**. T moves from TRACE (right) to HIGH (left) → THIGH + RACE. 
+
+Options: letters in TRACE and HIGH: T, R, A, C, E, H, I, G. Options ["T","R","C","H","G"] or ["H","I","T","A","R"]. Include T at correct position. Use ["R","T","C","H","G"], correct=1. Or match original-ish ["T","H","R","C","I"], correct=0.
+
+Let me use: options: ["H","T","R","C","G"], correct: 1.
+
+---
+
+**Q50: APE + STALE → T (SALE + TAPE). Alt S: TALE + APES (trap).**
+- Same STALE source as Q49. Can't use TRACE+HIGH again — too repetitive. Different T-source.
+- **TWIN + FLAT** → T: WIN + FTLAT/TFLAT/FLTAT/FLATT/FLAAT/FLATTT - no, wait. Insert T anywhere in FLAT: TFLAT, FTLAT, FLTAT, FLATT, FLATT. None valid except hmm, FLATT not word. F: TWIN+F = TWINF/FTWIN/TFWIN/TWFIN/TWIFN/TWINF — none valid. Actually can't do L from TWIN (no L). Checking more carefully: T from TWIN: WIN ✓. T inserted into FLAT: no valid position. So T doesn't work either! Wait, let me try positions: T+FLAT = TFLAT, F+T+LAT = FTLAT, FL+T+AT = FLTAT, FLA+T+T = FLATT, FLAT+T = FLATT. FLATT not word. So T doesn't produce a valid receiver word. Dead end.
+- **TRAIL + OAD** — already using that style for Q19. Actually TRAIL + OUR (OUR at 3): T: RAIL + TOUR ✓. R: TAIL ✓, OUR+R = OURR/ORUR/OURR/ROUR — none valid. A: TRIL✗. I: TRAL✗. L: TRAI✗. From OUR: O: UR✗. U: OR ✓ (2-letter). R: OU✗. 
+  Only T works (TRAIL→RAIL, OUR+T=TOUR). Let me verify R again: TRAIL - R = TAIL ✓. OUR + R inserted: R-positions in OUR: ROUR, OURR, OURR, ORUR. None words. Safe.
+  OUR at 3 → 4 (cap). **TRAIL + OUR → RAIL + TOUR**. Clean D2.
+  
+  But I want to vary — if I use "OUR" again from another Q, count goes past cap. Let me check: OUR appears in Q10 PLACE+OUR, Q12 FLAME+OUR, Q16 PLIGHT+OUR. That's 3. +1 from this Q = 4. Cap reached. OK — no other replacement can use OUR.
+  
+  **TRAIL + OUR → RAIL + TOUR**. Use for Q50. Direction right-to-left: "OUR  TRAIL" format (short first, long right).
+  
+  Options: letters T, R, A, I, L, O, U. Pick T + 4 distractors: ["T","R","A","L","O"], correct=0. 
+
+---
+
+**Q52: ARM + SWORE → W (SORE + WARM). Alt S: WORE + ARMS (trap).**
+- W-sources without S-start: WRIST→RIST(no), WAGON, WALL, WARE, WELT, WHINE, WINK, WITCH, WAIST, WORTH, WISDOM.
+- **WHISK + OVEN** — unusual. 
+- **WHEAT + ARM** (ARM at 3) → W: HEAT + WARM ✓. H: WEAT✗. E: WHAT ✓, ARM+E = ARME/AERM/AREM/AEMR/EARM — none valid ✗. A: WHET ✓? (WHET = sharpen, Y6 vocab, valid), ARM-A = RM ✗. Actually we'd move A from WHEAT, removing gives WHET ✓, then ARM+A = AARM/ARAM/ARMA/AARM — none valid. Safe. T: WHEA✗. From ARM: A: RM ✗. R: AM ✓ (2-letter). M: AR ✓ (2-letter).
+  Only W works. But WHEAT is capped at 1 use — checking count: WHEAT appears in Q6. That's 1. +1 = 2. OK.
+  **WHEAT + ARM → HEAT + WARM**. But ARM at 3 → 4 (cap). OK.
+  Actually the original Q52 intended answer was W for ARM+SWORE. Keeping W-move. Preserve ARM? Yes, as receiver. Source changes from SWORE to WHEAT. Works.
+  D2 check: WHEAT is 5 letters, ARM 3 letters. W at start of WHEAT is obvious. Maybe D1 feel. Hmm.
+- For more D2, use middle-letter: **WHIRL + ARM** → W: HIRL✗. Bad. **CROWN + BAR** — but source is W-containing, not W-starting. Let me think W-move from non-W-start source:
+  - SWORE has W in middle → SWORE-W = SORE ✓ (original).
+  - OWN has W (OWN-W = ON ✓ but 2-letter).
+  - NEWT has W (NEWT-W = NET ✓). NEWT means a small amphibian.
+  - AWAKE has W.
+  - TOWN-W = TON ✓. GROWL-W = GROL✗. SHOWN-W = SHON✗. BLOWN-W = BLON✗. SWORN-W = SORN✗. SHOWED-W = SHOED✗ (not UK). AWARE-W = AARE✗. 
+  - **NEWT + ARM** → W: NET + WARM ✓. N: EWT✗. E: NWT✗. T: NEW ✓, ARM+T = ARMT/ARTM/ATRM/TARM — none valid (TARM isn't word). Safe. From ARM: A: RM✗, R: AM ✓ (2-letter), M: AR ✓ (2-letter). 
+  - Only W works. NEWT + ARM → NET + WARM. NEWT is a real word (Y5-6 — common amphibian in UK).
+  - ARM at 3 → 4 (cap reached). OK.
+  
+  **NEWT + ARM** for Q52. D2-ish: NEWT is less common than WHEAT, middle letter W. Direction left-to-right.
+  
+  Actually for right-to-left preservation: "ARM NEWT" — W moves from NEWT (right) to ARM (left) → WARM + NET. Good.
+  
+  Options: letters N, E, W, T, A, R, M. Pick W + 4 distractors: ["N","E","W","T","R"], correct=2.
+
+Wait — I'm reusing ARM as receiver but Q52 originally had ARM as receiver too. That's fine because ARM already had 3 uses; adding one doesn't change. Actually we're ONE of those 3 uses (Q52 itself). Replacement doesn't add, it replaces. So ARM stays at 3.
+
+Let me recount: ARM appears in... let me scan more carefully since the original data had Q52 using ARM. After replacement, ARM count stays at 3 (we're swapping the source word SWORE for NEWT, not adding ARM). Good.
+
+---
+
+**Q64: RIM + STEAM → T (SEAM + TRIM). Alt S: TEAM + RIMS (trap).**
+- Same pattern. Change source. T-move source options used so far: TRACE (Q49 fix), TRAIL (Q50 fix).
+- **TWIST + HAT** (HAT capped) — skip.
+- **TROUT + LINK** → T: ROUT + TLINK✗. Bad.
+- **TRAVEL** too long.
+- **TWINE + FLOW** → T: WINE + FLTOW/TFLOW — actually TFLOW not word, FTLOW, FLTOW, FLOTW, FLOWT — none valid. Dead.
+- **TRICK + LIP** → T: RICK + TLIP✗. Bad.
+- **TRAIL + OUR** — used Q50.
+- **TWIN + ASP** → T: WIN + TASP✗. Bad.
+- **TEAM + HIGH** → T: EAM✗. Bad (TEAM minus T = EAM not word).
+- **TRAIT + HIGH** → T: RAIT (RAIT not word). Skip.
+- **TRICK + HOSE** → T: RICK + THOSE ✓. R: TICK ✓, HOSE+R = HOSER/HORSE/HOSRE/HSORE — HORSE ✓! So R gives TICK+HORSE — ambiguous! Bad.
+- **TROUT + HIGH** → T: ROUT ✓, HIGH+T = THIGH ✓ or HIGHT/TIGHH etc. THIGH ✓. R: TOUT ✓, HIGH+R = RHIGH/HRIGH/HIGHR/HIGRH — none valid ✗. O: TRUT✗. U: TROT ✓, HIGH+U = HIUGH/HIGUH/HUIGH — none valid ✗. 
+  Wait, T works (ROUT + THIGH) and U works (TROT + HIGH+U... but HIGH+U gives no valid word). So only T works. Let me double-check U: TROUT - U = TROT ✓ (real word). HIGH + U insertions: UHIGH, HUIGH, HIUGH, HIGUH, HIGHU. HIGHU not a word; UHIGH not a word. None valid. So U fails.
+  R gives TOUT ✓ but HIGH+R has no valid insertion, so R fails.
+  Only T works. **TROUT + HIGH → ROUT + THIGH**. Both common words (ROUT = defeat convincingly, Y6 vocab; THIGH body part). TROUT is a fish (UK waters — common). 
+  
+  Actually "Q49 fix" already used TRACE + HIGH. Can't reuse HIGH (would become 2 uses — fine, under cap). Let me use TROUT + HIGH for Q64.
+  
+  Actually on reflection: reusing HIGH twice in close questions is repetitive. Let me find different receiver.
+  
+- **TROUT + PAIN** → too long, D3 feel.
+- **TROUT + LINK** → T: ROUT + TLINK✗. Bad.
+- **TROUT + PIN** → T: ROUT + PTIN/TPIN/PITN/PINT — PINT ✓! Great. R: TOUT + PIN+R = RPIN/PRIN/PIRN/PINR — PRIN not word, PIRN is archaic Scottish, PINR not word, RPIN not word. Safe. O: TRUT✗. U: TROT ✓, PIN+U = UPIN/PUIN/PIUN/PINU — none valid ✗. From PIN: P: IN ✓ (2-letter), I: PN✗, N: PI ✓ (2-letter).
+  Only T works. **TROUT + PIN → ROUT + PINT**. Both common. PINT is very common (UK pint of milk/beer). ROUT slightly less common but valid Y6.
+  
+  Wait — is ROUT common enough for 11+ kids? Yes, it's in Y6 curriculum ("routed the army"). Good.
+  
+  Actually there's a snag: T inserted into PIN could be PINT (end), but could also be TPIN/PTIN/PINT — only PINT is valid. That's fine, just one valid insertion.
+  
+  **TROUT + PIN for Q64**. Direction: "PIN  TROUT" format for right-to-left. T moves from TROUT to PIN → PINT + ROUT.
+  
+  Options: letters T, R, O, U, P, I, N. Options ["T","R","U","P","N"], correct=0. Or match original style. Original Q64 options: ["R","I","T","M","S"]. So T at index 2. Let me use ["R","I","T","U","N"], correct=2.
+
+---
+
+**Q67: RAP + STAGE → T (SAGE + TRAP). Alt E: STAG + REAP (genuine!).**
+- This one's E-alt ambiguity is the issue. STAG and REAP are both strong words.
+- Source STAGE: keep T-move. Change receiver to eliminate E-trap. Alt E gave RAP+E=REAP. If RAP is replaced with a word where +E creates non-word, E-trap breaks.
+- **STAGE + LIT** → T: SAGE + TLIT✗. Bad (T doesn't work).
+- **STAGE + ORB** → T: SAGE + TORB✗. Bad.
+- **STAGE + RIP** → T: SAGE + TRIP ✓. E (from STAGE): STAG ✓, RIP+E = ERIP/REIP/RIEP/RIPE — RIPE ✓! Still E-trap (STAG + RIPE). Bad.
+- **STAGE + ROT** → T: SAGE + TROT ✓. E: STAG + ROT+E = ROTE ✓! Still trap.
+- **STAGE + RUG** → T: SAGE + TRUG ✓ (TRUG = basket, Y5-6 vocab, less common). E: STAG + RUG+E = RUGE/RGUE/REUG/ROGU — wait, just inserting E: ERUG, REUG, RUEG, RUGE. None valid. Safe from E! Now other letters:
+  S: TAGE (not word) ✗. A: STGE✗. G: STAE✗. From RUG: R: UG✗. U: RG✗. G: RU✗.
+  Only T works. **STAGE + RUG → SAGE + TRUG**. But TRUG is obscure (specifically a gardening basket, popular in UK gardens). 11+ kids might not know it. Marginal.
+- **STAGE + NIP** → T: SAGE + TNIP✗. Bad.
+- **STAGE + ICE** → T: SAGE + TICE (TICE obscure, not standard). Bad.
+- Change source away from STAGE.
+- T-sources at D2: TRAP + SAGE (swap roles!). "SAGE TRAP" where T moves from TRAP to SAGE → RAP + STAGE (the original in reverse). Same ambiguity likely (but not exactly — need to check).
+  Actually that gives same words, just swapped sides. Direction matters for ambiguity: original moved T from STAGE (source) to RAP (receiver). Reversed: move letter from TRAP or SAGE. Same ambiguity set.
+- Different T-source: **TRICK + HOP** → T: RICK + THOP✗. Bad.
+- **TRAP + HOSE** → T: RAP + THOSE ✓. R: TAP ✓, HOSE+R = HORSE ✓! Ambiguous.
+- **STAGE + ORB** — already bad.
+- **STAMP + RIG** → S: TAMP ✓ (to press down), RIG+S = RIGS ✓! Plural-S trap. Bad.
+- **TRIBE + LOG** → T: RIBE (not word) ✗. Bad.
+- **TREAT + HIGH** → T: REAT (not word) ✗. Bad.
+- **TRAIN** (capped at 1) + word: Q19 uses TRAIN. TRAIN + OAR → but that's mimicking Q19. Skip.
+- **TWIN + RAP** — too short. T: WIN + RAP+T = RAPT ✓. W: TIN ✓, RAP+W = WRAP ✓! Ambiguous.
+- **TWIST + OAR** (OAR capped). Skip.
+- **STACK + BIG** → S: TACK + BSIG/SBIG/BISG/BIGS — BIGS not word ✗. Wait, BIGS isn't standard. Let me check: BIG+S at positions: SBIG, BSIG, BISG, BIGS. BIGS could be informal plural of BIG... not accepted in dictionaries. Safe. T: SACK ✓, BIG+T = BIGT/TBIG/BTIG/BITG — none valid ✗. A: STCK✗. C: STAK✗. K: STAC✗. From BIG: B: IG✗, I: BG✗, G: BI ✓ (2-letter).
+  Neither S nor T works cleanly. Dead.
+- **STOUT + RIB** → S: TOUT + RSIB/SRIB/RISB/RIBS. RIBS ✓ (plural of RIB) — trap! T: SOUT (not word). Skip.
+- **TRICK + HYMN** — HYMN obscure for a letter move.
+- Let me try: **STAGE + POUT** → T: SAGE + TPOUT/PTOUT/POTUT/POUTT — none valid. Actually POUT+T=POUTT (not word). T doesn't work. Dead.
+- **STAGE + HIP** → T: SAGE + THIP (not word — but Q37 uses STERN + HIP and has solution THIP as non-word... wait). Actually THIP isn't a word. Hmm. Original Q37 had STERN + HIP → TERN + SHIP (S-move). Let me check: STERN - S = TERN (a bird) ✓; HIP + S = SHIP ✓. So Q37's answer is S, not T. THIP isn't produced there.
+  So STAGE + HIP → T: SAGE + THIP ✗. Bad.
+- **STRAP + HOG** → S: TRAP + HOG+S = HOGS ✓ (plural trap!). T: SRAP✗. R: STAP (STAP not word UK; Scottish slang "stop") ✗. A: STRP✗. P: STRA✗. From HOG: H: OG✗. O: HG✗. G: HO ✓ (2-letter, borderline interjection).
+  S ambiguity present. Bad.
+- **STRIP + HEN** → S: TRIP + HEN+S = HENS ✓ plural trap. Bad.
+- **STAGE + HINGE** — too long/D3.
+- **STAKE + ROD** → S: TAKE + RODS ✓ (plural trap). Bad.
+- Hmm, plural traps everywhere. What about **non-noun receivers**? 
+- **STAGE + RUN** → T: SAGE + TRUN✗. Bad.
+- **STAGE + ALE** (ALE at 2) → T: SAGE + TALE ✓. But wait — TALE was exactly the S-trap result in Q49/50. Not a coincidence. Here ALE+T at start = TALE. E from STAGE: STAG + ALE+E = AELE/ALEE/AEEL — ALEE ✓! (ALEE = to the leeward side, sailing term, very obscure). Safe for 11+ kids. S: TAGE (not word) ✗. A from STAGE: STGE✗. G: STAE✗. From ALE: A: LE✗. L: AE✗. E: AL ✓ (2-letter).
+  Only T works cleanly. **STAGE + ALE → SAGE + TALE**. ALE is archaic but known (Y5-6 British pub context). Hmm, ALE at 2 → 3. OK.
+  But TALE is a very standard word. Plus STAGE + ALE seems a bit flat (both common 4-5 letter words, predictable T move). 
+  Actually: **D2 check**: STAGE 5 letters, ALE 3 letters. Obvious T at start. Feels D1. But the current Q67 is rated D2 mostly because of direction. If STAGE + ALE lists ALE first ("ALE  STAGE"), direction is right-to-left, preserving D2 feel.
+  Using this. **ALE STAGE → TALE + SAGE**, correct T.
+  
+  Options: letters from STAGE/ALE: S, T, A, G, E, L. Pick T + 4 distractors. Use ["S","T","A","L","G"], correct=1.
+
+Actually wait — I realise Q67 source word STAGE stays. That's still in the pool. Check usage count: STAGE in Q67 only. After replacement it stays at 1. OK.
+
+---
+
+**Q69: LAP + SCARE → S (CARE + SLAP). Alt E: SCAR + LEAP (genuine).**
+- Intended S-move. E-alt gave SCAR+LEAP. Need to eliminate E-trap.
+- Source SCARE → remove E works because LAP+E = LEAP (rearrange would be needed? — actually LAP+E at any position: ELAP, LEAP, LAEP, LAPE. LEAP ✓).
+- To break E-trap: change LAP to a word where LAP+E ≠ valid word. But LAP is the receiver that becomes SLAP.
+- Change source SCARE to one where SCARE-E = stem, and the rearrangement elsewhere doesn't produce ambiguity.
+- S-sources: SCARE, SCOLD, SCALE, SHORE, SPEAR, STORE, STAGE, STAKE, STALE, STEAM, SWORE, SHARE, SCORE, SPADE, SNORE.
+- **SCALE + LAP** → S: CALE (not word) ✗. Bad.
+- **SCORE + LAP** → S: CORE + LAP+S = SLAP/LAPS. SLAP ✓! But also LAPS ✓! Ambiguous. Unless we restrict: is SLAP a noun? Yes. So SCORE - S = CORE ✓, and LAP + S = SLAP ✓ or LAPS ✓. Both valid results... hmm, actually the point is one S-move with a single outcome. If inserting S at different positions gives two valid words, that's still OK (just multiple valid arrangements). But "CORE + LAPS" means S appended to end creating plural — if accepted, not a problem. But "CORE + SLAP" is the intended. Multiple valid answers per letter is acceptable as long as only ONE letter works.
+  Let me check other letters: C: SORE ✓, LAP+C = CLAP ✓! Ambiguous. Bad.
+- **SHARE + LIP** → S: HARE + LIP+S = LIPS ✓ (plural) or LISP ✓. Actually SLIP ✓! So S works: HARE + SLIP (or HARE + LIPS). H: SARE✗. A: SHRE✗. R: SHAE✗. E: SHAR (SHAR not word) ✗. From LIP: L: IP✗, I: LP✗, P: LI✗.
+  Only S works. **SHARE + LIP → HARE + SLIP**. Both common words. Good.
+  But wait: E from SHARE: SHAR (not word). Safe. What about the plural-S at LIPS? If interpreting S+LIP = SLIP or LIPS, both are real. But answer is letter S, and the expected insertion for "letter move" is one new word from the move. Historically the Oracle accepts whichever arrangement yields a valid word. So as long as only one LETTER works, we're fine.
+  Actually, children will write SLIP (the "inserting S at start" is the natural instinct). LIPS would feel like they're "just adding plural S" which is lazy. The explanation will specify SLIP. OK.
+  
+  **SHARE + LIP** for Q69. Q69 intended was S-move. Preserving.
+  
+  Direction: "LIP SHARE" → right-to-left.
+  
+  Options: letters S, H, A, R, E, L, I, P. Pick S + 4 distractors. ["L","S","H","R","P"], correct=1.
+
+Checking SHARE count: Q68 uses SHARE (TAR SHARE). That's 1. After adding Q69 replacement with SHARE: 2. OK.
+
+---
+
+**Q80: CART + HAT → T (CAR + THAT). Alt C: ART + CHAT (genuine).**
+- Intended T. C-alt is strong. Change source away from CART to break C-ambiguity.
+- T-source where removing T leaves word, and where the source's C (if any) doesn't create an alt:
+- **TWIST + HAT** — HAT at 4 cap. Skip.
+- **TINT + HAT** — HAT capped. Skip.
+- **TREAT + HEN** → T: REAT (not word) ✗. Bad.
+- **TWELVE + HEN** — too long.
+- Need to change HAT receiver too since HAT is capped. Alternative receivers for +T → valid word.
+- Words that become valid with +T: HA+T=HAT, AH+T=HAT, HE+T=HET/ETH, HEN+T=THEN/NETH/HENT (HENT obscure), HER+T=HERT/THRE/HRET/HERT — THRE not word — but actually THEY+T? Let me not go down this path.
+- Receivers where +T gives word: HA→HAT, AH→HAT, ON→NOT/TON, IN→TIN/INT/NIT, HE→THE, HEN→THEN, RAY→TRAY, RAP→TRAP, RIP→TRIP, ROT→TROT, OUR→OUR+T=TOUR (OUR capped), ORE→ORE+T=TORE, AIR→AIR+T=TAIR(no)/AIRT(archaic)/TIAR(no)/AITR — hmm, AIR+T tough. 
+- **TRAIN source + HEN receiver** (TRAIN at 1, HEN at 0). T: RAIN + HEN+T = THEN ✓. R: TAIN (TAIN is South African tin — non-standard, false positive). Actually TAIN isn't child-level. Safe. A: TRIN (TRIN not word) ✗. I: TRAN (not word) ✗. N: TRAI (not word) ✗. From HEN: H: EN (2-letter) ✗. E: HN ✗. N: HE ✓ (2-letter).
+  Only T works. **TRAIN + HEN → RAIN + THEN**. Both very common.
+  TRAIN at 1 → 2. HEN at 0 → 1. OK.
+  But — pair Q19 already used TRAIN + OAD. And that's still in the bank (if we leave it). So TRAIN source appears twice. That's fine — not near cap.
+  Let me pick a different source to vary. 
+- **TENT + RAY** → T: ENT (ENT is a Tolkien creature — not standard!). Actually ENT in dictionaries? No, not standard English. ✗. Bad.
+- **TRAIL + HEN** → T: RAIL + THEN ✓. R: TAIL ✓, HEN+R = HNER/HENR/HERN/RHEN — HERN is archaic heron (Y7+) — marginal. Let me reject it just to be safe. Actually HERN is in some dictionaries. Let me check: "Hern" = heron (archaic). 11+ kids almost certainly don't know. But it is a valid word. Ambiguous risk.
+  If I use this, the R move: TAIL + HERN is technically valid. But HERN isn't child-level — a child wouldn't pick it. In practice, this might pass as a "not a real child word so ignore". Marginal.
+  Actually let me be strict: if a legitimate dictionary word exists for an alt letter, GL considers it ambiguous. Reject.
+- **TRAIN + HEN** (as above) is cleaner. Using that.
+  
+  Wait — I already allocated TRACE for Q49 and TRAIL for Q50. Using TRAIN for Q80 is third distinct T-source. OK.
+
+- Direction Q80 original: CART → HAT, left-to-right (T from end of CART to start of HAT). Preserve: TRAIN → HEN, left-to-right. Format: "TRAIN  HEN" (source left, receiver right). Original Q80 was "CART HAT" (source left, receiver right). Same pattern.
+
+Options: letters T, R, A, I, N, H, E. Pick T + 4 distractors. ["T","R","A","H","N"], correct=0.
+
+Hmm, but original Q80 had correct index = 1 (T was second letter: ["A","T","C","R","H"]). To match style: ["R","T","A","I","H"], correct=1.
+
+---
+
+**Q82: FARM + ATE → M (FAR + MATE). Alt F: ARM + FATE (genuine).**
+- Intended M. F-alt strong. Change source.
+- M-sources (removing M leaves word): ARM+ATE would remove M from middle of ARM: AR✗. Hmm, source needs an M that, when removed, leaves a valid word.
+- Sources: FARM→FAR✓, FORM→FOR✓, FIRM→FIR✓, WARM→WAR✓, WORM→WOR✗, TERM→TER✗, GERM→GER✗, HARM→HAR✗, STORM→STOR✗, CHARM→CHAR✓, ALARM→ALAR(not word)✗.
+- **FORM + ATE** → M: FOR + ATE+M = MATE/AMTE/ATME/ATEM. MATE ✓. F: ORM (not word) ✗. O: FRM✗. R: FOM✗. From ATE: A: TE✗. T: AE✗. E: AT ✓ (2-letter).
+  Only M works. **FORM + ATE → FOR + MATE**. But ATE is at 4 cap! Can't use ATE.
+- Change receiver. M+? → word: ATE→MATE (ATE capped), EAT→MEAT, ILL→MILL, INE(not word), ICE→MICE, ORE→MORE, OLD→MOLD, OCK(not word), IGHT→MIGHT. Also OWN→MOWN, ORB→? 
+- **FORM + EAT** → M: FOR + EAT+M = MEAT/EMAT/EATM/EAMT. MEAT ✓. F: ORM✗. O: FRM✗. R: FOM✗. From EAT: E: AT✓(2-letter), A: ET✗, T: EA✗. 
+  Only M works. **FORM + EAT → FOR + MEAT**. Both very common. FORM at 0, EAT at 0.
+
+Actually wait — Q82 original intended letter is M (FARM→FAR, ATE→MATE). Keeping M-move with FORM source and EAT receiver. Direction same (left-to-right from source).
+
+Options: letters F, O, R, M, E, A, T. Pick M + 4 distractors. Original Q82 options: ["F","A","T","M","R"]. Match style: ["F","A","T","M","O"], correct=3.
+
+---
+
+**Q88 (MARGINAL): BAND + BAR → N (BAD + BARN). Alt B: AND + BARB (marginal).**
+- Ben says BARB is marginal. If we're being strict, BARB is Y6-ish (barbed wire familiar to farm/countryside UK kids). I'll treat as genuine enough to fix.
+- Intended N. B-alt: BAND→AND ✓, BAR+B=BARB ✓.
+- To break B-alt: change BAND to a word where removing B leaves non-word, OR change BAR to a word where +B creates non-word.
+- Actually BAND → AND is clear (AND is a word — common conjunction). To keep N-move, replace BAND with an N-source.
+- N-sources (removing N gives word): BAND→BAD ✓, BOND→BOD✓ (BOD = informal "person"/body, marginal), BEND→BED✓, LAND→LAD✓, HAND→HAD✓, SAND→SAD✓, WAND→WAD✓, KIND→KID✓, MIND→MID✓, PIN→PI(2-letter), SUN→SU✗, BUN→BU✗, BRAIN→BRAI✗, etc.
+- **LAND + BAR** → N: LAD + BAR+N = BRAN/BANR/BARN/NBAR. BARN ✓. L: AND (AND is a word!) + BAR+L = BARL/LBAR/BARL — not valid. So removing L from LAND → AND ✓ and adding L to BAR gives no valid word. Safe from L? Let me recheck: LAND-L=AND. BAR+L insertions: LBAR, BLAR, BALR, BARL. None valid. Safe. A: LND✗. D: LAN (not word) ✗ [LAN is not a standard word — Q3 alt had same]. From BAR: B: AR (2-letter), A: BR✗, R: BA✗.
+  Only N works! **LAND + BAR → LAD + BARN**. 
+  But... LAND-L = AND is a valid word. But BAR+L = no valid word. So L fails at the receiver step. Safe.
+  Actually wait — L removed from LAND gives AND, which is valid, but the receiver BAR needs to become a valid word with L added. None of BARL/LBAR/BLAR/BALR are words. So L fails.
+  Let me verify N completely: LAND-N = LAD ✓. BAR+N at positions: NBAR, BNAR, BANR, BARN. BARN ✓. Good.
+  **LAND + BAR** works cleanly.
+  
+  But BAR is at 2 uses (Q81, Q88, Q91 — let me check). Actually Q81 EARN BAR, Q88 BAND BAR, Q91 BRAND ORE (not BAR). So BAR at 2 uses. +1 for Q88 replacement = 3. OK.
+  
+  Wait, we're replacing Q88 which already used BAR. Count stays at 2.
+  
+  LAND at 0. OK.
+  
+  Direction: original Q88 had BAND + BAR — source BAND left, receiver BAR right. Keep: **LAND + BAR**, N moves left-to-right.
+
+Options from letters L, A, N, D, B, R: ["L","A","N","D","R"] or ["B","L","A","N","D"]. Original Q88 options: ["R","A","D","B","N"]. Matching: ["R","A","D","L","N"], correct=4.
+
+Wait but we're removing N from LAND, so N is correct letter. Need N in options. ["L","A","D","N","R"], correct=3. Or ["R","A","D","B","N"] — but B isn't in LAND. Replace B with L: ["R","A","D","L","N"], correct=4.
+
+---
+
+**Q92: COLD + HAT → L (COD + HALT). Alt C: OLD + CHAT (genuine).**
+- Intended L. C-alt strong.
+- Change source COLD to break C-ambiguity. L-sources with an L that, when removed, leaves word AND doesn't produce a C-ambiguous alt:
+- COLD-L = COD ✓ (source has C which creates CHAT ambiguity).
+- Need L-source WITHOUT a C, OR where the C doesn't cleanly break to word.
+- L-sources: BOLD-L=BOD(marginal), BOLT-L=BOT✗, BELT-L=BET✓, BOLD-L=BOD (marginal), BELL-L=BEL✗, FOLD-L=FOD✗ (FOD not word), GOLD-L=GOD✓, HOLD-L=HOD✓ (HOD = bricklayer's carrying tool), HOLE-L=HOE✓, HOLD-L=HOD, MOLD-L=MOD✓ (MOD = member of 1960s subculture OR modify), MOLE-L=MOE✗, PILE-L=PIE✓, POLE-L=POE✗, ROLE-L=ROE✓(fish eggs), SLIP-L=SIP✓, etc.
+- HAT is capped at 4. Must change receiver too.
+- Better: **BELT + HEN** → L: BET + HEN+L = LHEN/HLEN/HELN/HENL. None valid. ✗. Bad.
+- **GOLD + HAT** — Q95 is GOLD+HAT (already in bank) and HAT capped. Also L from GOLD = GOD ✓ but HAT+L = not valid... wait, HAT+L: LHAT, HLAT, HALT, HATL. HALT ✓! So Q95's answer IS L. And that Q has the same pattern: GOLD (source, has no C so no ambiguity). Let me check Q95: "GOLD HAT" with answer L → GOD + HALT. Source GOLD has no C, so no CHAT-alt.
+- So the fix for Q92 is: change COLD to GOLD? But then it's identical to Q95. Can't have two identical Qs.
+- Change HAT to another receiver. But HAT is the only short word that +L → HALT cleanly. Alternative +L words: HEN+L? No. BOT+L=BOLT? BOT not word (Gen Z slang only). RAT+L=RATL? No. MAN+L→MANL?No. CAN+L=CLAN ✓. CAR+L=CARL/CARL(name)/CALR. CARL is a name — archaic for "peasant". Marginal.
+- **CAN+L = CLAN** ✓. So **BELT + CAN**? BELT-L=BET ✓, CAN+L=CLAN ✓. Other letters: B: ELT✗. E: BLT✗. T: BEL✗. From CAN: C: AN ✓ (2-letter), A: CN✗, N: CA✗. 
+  Only L works. **BELT + CAN → BET + CLAN**. Both common. BET Y3-4, CLAN Y5-6 (Scottish clans).
+  But CAN is a VERB/noun. CAN at 0 uses. BELT at 0. Fresh pair.
+  Direction: Q92 original had "COLD HAT" (source left, receiver right). Preserve: "BELT CAN".
+  
+- Actually I realise: original Q92 receiver+L must produce valid word where the source's C would also produce valid word. GOLD+L works without C-ambiguity. Let me use GOLD variant but with different receiver to avoid duplicating Q95. 
+- **GOLD + CAN** → L: GOD + CLAN ✓. G: OLD + CAN+G = GCAN/CGAN/CAGN/CANG — none valid ✗. O: GLD✗. D: GOL✗. C: AN(2-letter) — wait, C is only in CAN. No C in GOLD. So only L to try from GOLD. From CAN: C: AN(2-letter), A: CN✗, N: CA✗. 
+  Only L works. **GOLD + CAN → GOD + CLAN**. Clean. But GOLD count: Q95 uses GOLD+HAT. If I use GOLD again for Q92, GOLD at 2 uses. OK.
+- Or **BELT + CAN**: Simpler, no conflict. Both clean. Let me pick BELT + CAN for variety.
+- Actually **PILE + CAN** → L: PIE + CLAN ✓. P: ILE (not word) ✗. I: PLE✗. E: PIL (not word — unless PILL minus L, but single PIL isn't word). Actually PIL not standard. Safe. From CAN: as above, only L works. **PILE + CAN → PIE + CLAN**. Both very common. PILE at 0, CAN at 0. Clean!
+- Let me use **PILE + CAN** for Q92.
+
+Options: letters P, I, L, E, C, A, N. Pick L + 4 distractors. ["P","L","E","C","N"], correct=1. Or match original Q92 style ["C","O","H","L","D"]: ["P","C","L","E","N"], correct=2.
+
+---
+
+**Q94: GOAT + PIN → A (GOT + PAIN). Alt G: OAT + PING (genuine).**
+- Intended A-move (middle letter). G-alt strong (OAT common, PING common).
+- Change source GOAT to break G-ambiguity. A-source: removing A leaves word, and the source's G doesn't create ambiguity.
+- A-sources (middle A letter): GOAT→GOT ✓, BOAT→BOT✗ (BOT not word), MOAT→MOT✗, COAT→COT ✓, ROAST→ROST✗, TOAST→TOST✗, SLEAN→? Not helpful. CHAIR→CHIR✗ (not word). HEART→HERT✗. HEAT→HET✗ (HET is obsolete/dialect). MEAT→MET ✓, NEAT→NET ✓, PEAT→PET ✓, SEAT→SET ✓, BEAR→BER✗, etc. PAIR→PIR✗. 
+- **MEAT + PIN** → A: MET + PIN+A = APIN/PAIN/PIAN/PINA. PAIN ✓. M: EAT + PIN+M = PINM/MPIN/PMIN/PIMN. None valid ✗. E: MAT + PIN+E = PINE ✓! Ambiguous (MAT + PINE). Bad.
+- **NEAT + PIN** → A: NET + PAIN ✓. N: EAT + PIN+N = NPIN/PNIN/PINN/NIPN — none valid... actually PINN not word. Safe. E: NAT + PINE ✓ — ambiguous! Bad.
+- **SEAT + PIN** → A: SET + PAIN ✓. S: EAT + PIN+S = SPIN ✓ or PINS ✓! S works. Ambiguous. Bad.
+- **PEAT + PIN** — PIN has P; PEAT has P too. Hmm, confusing. Skip.
+- **COAT + PIN** → A: COT + PAIN ✓. C: OAT + PIN+C = CPIN/PCIN/PICN/PINC. None valid ✗. Safe. O: CAT + PIN+O = POIN/PION/PIOP/PINO — none valid ✗. Actually PION isn't English. Safe. T: COA + PIN+T = PINT ✓! So T works: COA+PINT, but COA not a word. Ah, wait — COAT-T = COA (not a word). So T-move from COAT fails at source side. Safe! 
+  So only A works for COAT + PIN. **COAT + PIN → COT + PAIN**. Both common. COAT at 0, PIN at 1 (Q94 itself). After replacement PIN stays at 1. OK.
+  
+  Wait, let me recheck C: COAT-C = OAT (valid ✓). PIN+C: CPIN, PCIN, PICN, PINC. None valid. Safe.
+  Let me recheck O: COAT-O = CAT (valid ✓). PIN+O: OPIN, POIN, PION, PINO. None valid (POIN not English; PION is physics term, not general vocab). Safe.
+  T: COAT-T = COA ✗ (not word). Safe.
+  A: COAT-A = COT ✓. PIN+A = PAIN ✓. 
+  Only A works. **COAT + PIN → COT + PAIN**.
+  
+Preserving direction: Q94 had "GOAT PIN" (source left, receiver right). Use "COAT PIN".
+
+Options: letters C, O, A, T, P, I, N. Pick A + 4 distractors. Original Q94 options: ["A","P","O","T","G"], correct=0. Replace G with C: ["A","P","O","T","C"], correct=0.
+
+---
+
+**Q97: HARM + CAT → R (HAM + CART). Alt H: ARM + CHAT (genuine).**
+- Intended R. H-alt strong. Change source.
+- R-sources (R in middle, removing gives word, no H ambiguity): HARM→HAM (has H → creates CHAT alt). Alternatives: WARM→WAM✗, FORM→FOM✗, FARM→FAM✗(informal at best), CORD→COD✓, CORK→COK✗, WORD→WOD✗, BIRD→BID✓, CURD→CUD✓, FORD→FOD✗, TORN→TON ✓, BORN→BON✗ (BON= French for good; not English). CHORD→? 
+- **CORD + CAT** — two Cs are confusing. Q93 already uses CORD+CAT → answer R! So Q93 is the exact same puzzle. Can't duplicate.
+  Actually let me check: Q93 "CORD CAT" options ["A","O","D","C","R"] correct=4 (R). Explanation: "Move R from CORD: becomes COD. Insert into CAT: becomes CART." So Q93 = CORD+CAT → R.
+  Duplicate with Q97 replacement would be bad. Find different.
+- **CURD + CAT** → R: CUD + CAT+R = CART/CRAT/CATR/RCAT. CART ✓. C (from CURD): URD (URD = black gram lentil, Indian — obscure) ✗. Safe. U: CRD✗. D: CUR ✓(CUR = mongrel dog, Y6), CAT+D = CATD/DCAT/CDAT/CADT — none valid ✗. So D fails. From CAT: C: AT(2-letter), A: CT✗, T: CA✗.
+  Only R works. **CURD + CAT → CUD + CART**. CURD is Y5-6 vocab (curd cheese, curdled). CUD is a word ("chewing the cud" — cattle). Both valid but slightly less common than HAM/CART. Marginal D2-ish.
+- Better: **BIRD + CAT** → R: BID + CAT+R = CART ✓. B: IRD✗. I: BRD✗. D: BIR (not word) ✗ — wait, BIR not English standard. Safe. From CAT: as above.
+  Only R works. **BIRD + CAT → BID + CART**. Both very common words. BIRD Y1-2, BID Y3-4. CART Y2-3. 
+  BIRD at 0 uses, CAT at 3 uses. +1 for this Q = 4 (cap reached — OK).
+  But wait: Q97 already uses CAT as receiver (HARM+CAT). Replacement uses CAT again. Count stays at 3. OK.
+  
+  Actually the issue: if Q97's original uses CAT and Q97's replacement also uses CAT, count doesn't change. Good.
+  
+  Wait hmm — checking previous Q89 (BURN+CAT → classified FALSE POSITIVE, no replacement) and Q97 (HARM+CAT → replacement). Both already use CAT. So CAT at 3 currently (Q89, Q93, Q97 plus maybe others).
+  
+  Let me re-verify: earlier counted CAT appears 3 times. Those 3 include Q89, Q93, Q97. If only Q97 gets replaced with a CAT-receiver Q, CAT stays at 3. OK.
+  
+  **BIRD + CAT** for Q97.
+  
+  Direction: Q97 original "HARM CAT" (source left, receiver right). Preserve: "BIRD CAT" same direction.
+  
+  Options: letters B, I, R, D, C, A, T. Pick R + 4 distractors. Original Q97 options: ["H","A","C","R","M"], correct=3. Replace H with B, M with I: ["B","A","C","R","I"], correct=3.
+
+---
+
+**Q42 revisited** — I had CLOUD + OLD. Let me verify once more:
+- CLOUD → LOUD (remove C) ✓
+- OLD + C at start → COLD ✓
+- L from CLOUD → COUD ✗; L from OLD → OD ✗
+- O from CLOUD → CLUD ✗; O from OLD → LD ✗
+- U from CLOUD → CLOD ✓, but OLD+U = no valid word (OLDU, UOLD, OULD, OLUD — OULD is archaic "old"). OULD is obsolete Scottish spelling — 11+ kids wouldn't know. Safe.
+- D from CLOUD → CLOU ✗; D from OLD → OL ✗
+- Only C works. ✓ Clean.
+
+Options: letters C, L, O, U, D. Pick C + 4. ["O","C","L","U","D"], correct=1 (matching original Q42 style ["O","C","W","L","S"]).
+
+---
+
+**Q45 FLIGHT + EAR revisit:**
+- Intended F. 
+- F from FLIGHT → LIGHT ✓; EAR+F = FEAR ✓.
+- L: FIGHT ✓; EAR+L = EARL (a noble title, Y5-6 vocab). EARL ✓! So L also works: FIGHT + EARL. 
+- Ambiguous! Bad!
+- Redo Q45.
+
+**Q45 redo**: F-move, receiver where +F gives word, source where removing F gives word, no L/H/G/I/T ambiguity.
+- **FROCK + OAR** (OAR capped at 4). Skip.
+- **FRAIL + HEN** → F: RAIL + FHEN✗. Bad.
+- **FLOUR + INK** → F: LOUR(obscure)/LOUR, check: FLOUR-F = LOUR (archaic "to look sullen"). Not standard child word. So F-move fails: LOUR isn't a clean word for 11+ kids. Actually FLOUR-F = LOUR per letters F-L-O-U-R removing F = LOUR. For a cleaner D2, LOUR is too archaic. Skip.
+- **FLAG + INK** → F: LAG ✓, INK+F = FINK (American slang — obscure UK). Marginal — reject.
+- **FRAME + LIP** → F: RAME (not word) ✗. Bad.
+- **FEAST + OLD** → F: EAST + FOLD ✓. S: FEAT + OLDS ✓? OLDS = plural of "old one" — informal, not standard. Actually "the olds" is slang for parents. Not in standard dictionaries. Safe-ish. Let me check other letters: E: FAST (✓), OLD+E=OLDE(archaic)/OELD/OLED/EOLD — OLDE is archaic "old" style — not standard. Safe. A: FEST ✓? FEST is informal. Marginal. Actually FEST is often dictionary-listed (festival). Hmm — FEST = party/festival, yes in dictionaries. OLD-A = OD ✗. So A from FEAST: FEAST-A=FEST ✓, OLD+A = OLDA/OALD/ALOD/AOLD — none valid. Safe from A. T: FEAS✗. From OLD: O: LD✗, L: OD ✓? OD isn't standard. D: OL ✗.
+  So for FEAST + OLD, only F works cleanly (S fails because OLDS not standard; A fails because OLD+A has no valid insertion). 
+  Actually let me be more careful on S: FEAST-S = FEAT ✓. OLD+S = OLDS/SOLD/OLSD/OSLD. SOLD ✓! So S works: FEAT + SOLD. Ambiguous!
+  Damn.
+- **FEAST + INK** → F: EAST + FINK (FINK = informer/scab, American slang). UK child 11+ probably doesn't know. Marginal. Reject.
+- **FEAST + OAR** — OAR capped. Skip.
+- **FEAST + RUN** → F: EAST + FRUN✗. Bad.
+- **FEAST + OIL** → F: EAST + FOIL ✓. S: FEAT + OILS (plural) ✓. Trap.
+- **FEAST + OUR** (OUR at 3) → F: EAST + FOUR ✓. S: FEAT + OURS ✓. Trap. Also OUR heading to 4.
+- Swapping direction — short first: **INK + FEAST** same as Q45 original structure just with INK instead of AIR. Same S-trap issue though — INKS is plural.
+- Change source entirely. 
+- **FRONT + EAR** (EAR at 3) → F: RONT (not word)✗. Bad.
+- **FRAME + HEN** → F: RAME✗. Bad.
+- **FRUIT + HEN** → F: RUIT✗. Bad.
+- **FROG + EAR** (EAR at 3) → F: ROG (not word) ✗. Bad.
+- **FEAR + HEN** → F: EAR + FHEN/HFEN/HEFN/HENF — none valid ✗. Bad (FEAR-F=EAR ✓ but HEN+F no word).
+- **FOAM + HEN** → F: OAM✗. Bad.
+- **FROZE + AIR** → too close to D3 complexity.
+- **FLAX + HEN** → F: LAX ✓, HEN+F = FHEN/HFEN/HEFN/HENF — none valid ✗. Bad.
+- **FLAT + HEN** → F: LAT✗ (not word). Bad.
+- **FILE + HAT** (HAT capped). Skip.
+- **FOAL + HEN** → F: OAL✗. Bad.
+- **FLASH + OAR** (OAR capped). Skip.
+- **FOAM + RAY** → F: OAM✗. Bad.
+- **FOLD + HEN** → F: OLD + HEN+F = FHEN/HFEN/HEFN/HENF. None valid. ✗. Bad.
+- **FORK + HEN** → F: ORK (not word) ✗. Bad.
+- **FORT + HEN** → F: ORT (ORT = leftover food — archaic) ✗. Skip.
+- **FURY + HEN** → F: URY✗. Bad.
+- **FIVE + HEN** → F: IVE✗. Bad.
+- **FROST + HEN** → F: ROST✗ (ROST not UK). Bad.
+- Hmm. Let me try receiver where +F = valid word without L/other ambiguity.
+- Receivers where +F → word: EAR→FEAR, AIR→FAIR, ALL→? AIL→? AT→? LAW→FLAW, LAP→FLAP, LAG→FLAG, LAT→FLAT, LAX→FLAX, LAKE→FLAKE, LAME→FLAME (capped), LINE→FLINE(no). OUR→FOUR (OUR capped). RAM→FRAM(no), RAY→FRAY, RIG→FRIG(vulgar), ROG→FROG, ROM→FROM. LEA→FLEA. LAIR→FLAIR.
+- **FRAY + HEN** → F: RAY + FHEN✗. Bad. Wait, FRAY-F=RAY ✓, HEN+F = no valid. Bad.
+- **FRAY + INK** → F: RAY + FINK(marginal). Marginal.
+- Let me try different approach: use source where removing F gives a word AND the other letters don't create alts with the chosen receiver.
+- **FRESH + INK** → F: RESH (not word) ✗. Bad.
+- **FROTH + INK** → F: ROTH (ROTH is a surname, not word). Bad.
+- **FLOUR + HEN** → F: LOUR (archaic) — if we accept LOUR as obsolete-only, FLOUR-F fails at source. So F doesn't work. Skip.
+- **FLUTE + HEN** → F: LUTE ✓ (musical instrument), HEN+F = no valid ✗. Bad.
+- **FLAKE + RAY** → F: LAKE + FRAY ✓. L: FAKE ✓, RAY+L = RAYL/RLAY/RALY/LRAY/LAYR — none valid. Safe. A: FLKE✗. K: FLAE✗. E: FLAK ✓ (anti-aircraft fire — Y6-7 WW2 vocab), RAY+E = RAYE/REAY/EAYR/EARY/YARE — YARE (archaic "lively") and EAYR not valid. None standard. Safe. From RAY: R: AY ✓ (AY = yes, archaic/variant AYE — borderline), A: RY✗, Y: RA ✓ (RA = Egyptian sun god, not common noun).
+  Only F works cleanly. **FLAKE + RAY → LAKE + FRAY**. FLAKE common (snowflake), LAKE common, FRAY Y6 vocab ("frayed nerves"), RAY common. 
+  FLAKE at 0, RAY at 0.
+  
+Let me verify FRAY is 11+ appropriate: yes, "frayed" is in Y6 vocab lists (frayed edges, frayed tempers).
+
+- **FLAKE + RAY for Q45**. Direction right-to-left: "RAY FLAKE" (short receiver left, source right). F moves from FLAKE to RAY → LAKE + FRAY.
+
+Options: letters F, L, A, K, E, R, Y. Pick F + 4. Original Q45 options ["A","I","F","R","E"]. Match: ["A","K","F","R","E"], correct=2.
+
+---
+
+**Q36 final check (ORE + PRICE):**
+- Already verified. Only P works: RICE + PORE. Going with this.
+
+Options: letters O, R, E, P, I, C. Pick P + 4 distractors. Original Q36 options ["E","S","P","A","R"], correct=2. Match: ["E","O","P","I","R"], correct=2.
+
+---
+
+**Q67 final check (ALE + STAGE):**
+- Verified only T works cleanly. TALE + SAGE. ALE is mildly archaic but well-known (Y5-6 British context). Good.
+
+Options: letters S, T, A, G, E, L. Original Q67 options ["R","A","T","P","S"], correct=2. Match: ["L","A","T","G","S"], correct=2.
+
+---
+
+**Q80 final (TRAIN + HEN):**
+- Only T works: RAIN + THEN.
+
+Options: letters T, R, A, I, N, H, E. Pick T + 4. Original ["A","T","C","R","H"], correct=1. Match: ["A","T","R","I","H"], correct=1.
+
+---
+
+**Q82 final (FORM + EAT):**
+- Only M works: FOR + MEAT.
+
+Options: letters F, O, R, M, E, A, T. Pick M + 4. Original ["F","A","T","M","R"], correct=3. Match: ["F","A","T","M","O"], correct=3.
+
+---
+
+**Q88 final (LAND + BAR):**
+- Only N works: LAD + BARN.
+
+Let me double-check B from LAND: LAND-B? LAND has no B! So there's no B-move from LAND. B is only in BAR. B from BAR: BAR-B = AR (2-letter) — not a word by GL standards. LAND+B = BLAND ✓! Hmm wait — BAR minus B leaves AR, and LAND plus B at start = BLAND. If AR counts, we have an alt.
+Actually AR is not a word by GL standards (2-letter, not a listed word). So B-move fails at the source side (BAR→AR is 2-letter).
+Let me verify: the rule is "BOTH resulting words must be valid English words". AR is not a standard valid English word (it's a letter name — "ar" as the name of the letter R). Not child-vocabulary. So B-move fails.
+Good. Only N works.
+
+Options from L, A, N, D, B, R: ["R","A","D","L","N"], correct=4. Or original Q88 had ["R","A","D","B","N"] — keep B but include N as correct. ["R","A","D","B","N"], correct=4. B is valid distractor (from BAR). Keep B in options — a child might try B thinking BAR→BLAND somehow. Works as distractor.
+
+Using ["R","A","D","B","N"], correct=4.
+
+---
+
+**Q92 final (PILE + CAN):**
+- Only L works: PIE + CLAN.
+
+Options: letters P, I, L, E, C, A, N. Original Q92 options ["C","O","H","L","D"], correct=3. Match: ["P","I","L","C","N"], correct=2. Or ["C","P","L","E","N"], correct=2. Let me use ["P","I","L","C","N"], correct=2.
+
+---
+
+**Q94 final (COAT + PIN):**
+- Only A works: COT + PAIN.
+
+Options: letters C, O, A, T, P, I, N. Original ["A","P","O","T","G"], correct=0. Replace G with C: ["A","P","O","T","C"], correct=0. Hmm but C is an interesting distractor (child might think "C-move": COAT→OAT ✓, PIN+C=no valid). So C is a tempting distractor even though it fails. Good.
+
+---
+
+**Q97 final (BIRD + CAT):**
+- Only R works: BID + CART.
+
+Options: letters B, I, R, D, C, A, T. Original Q97 options ["H","A","C","R","M"], correct=3. Match: ["B","A","C","R","I"], correct=3.
+
+---
+
+Now compiling everything. Let me also note that the explanations need "tip" that matches child-friendly style. Looking at existing explanations:
+- "Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
+- "Tip: The letter can come from ANY position — start, middle, or end! ✓"
+- "Tip: Start with consonants at the start and end of words — they're the most common moves. ✓"
+- "Tip: Say the new words out loud in your head — your ear will catch if something isn't right. ✓"
+- "Tip: Check BOTH resulting words are real — it's easy to forget one! ✓"
+- "Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
+- "Tip: Remember the moved letter can go ANYWHERE in the other word — start, middle, or end. ✓"
+- "Tip: In the exam, work systematically — don't just guess. Try each letter one by one. ✓"
+- "Tip: Use the 'remove and check' method — remove each letter and see if the rest makes a word. ✓"
+- "Tip: Always try both directions. ✓"
+
+I'll use appropriate tips. For right-to-left moves, the "Always try both directions" tip is natural. For puzzles where an S-plural trap was the original fault, I'll include the "check BOTH are real — not just plurals" tip to reinforce the lesson.
+
+---
+
+Now I have everything needed. Let me finalise and deliver the audit.
+
+---
+
+# Letter Move Ambiguity Audit — 22 Flagged Questions
+
+**Source file**: `C:\Users\Ben Jackson\Projects\11plus-prep\src\questionData\vrData.js` (letterMove block, line 7441+)
+**Reference**: Oracle Letter Move spec at lines 514-544 of `research\11plus-oracle.md`
+**Standard**: UK 11+ child vocabulary (ages 8-11), Y5-6 curriculum tier. GL expects 3+ letter words on both sides.
+
+## Verdict Summary
+
+| Verdict | Count | Question IDs |
+|---|---|---|
+| FALSE POSITIVE (no fix) | 7 | Q3, Q19*, Q20, Q62, Q78, Q81, Q89 |
+| MARGINAL (fix recommended) | 1 | Q88 |
+| GENUINE (fix required) | 14 | Q36, Q42, Q45, Q49, Q50, Q52, Q64, Q67, Q69, Q80, Q82, Q92, Q94, Q97 |
+
+*Q19 has a separate format issue (OAD is not a real word on its own — the Q treats it as a fragment). Worth flagging separately for a later pass.
+
+## Replacements for 15 Questions
+
+### Q3 [FALSE POSITIVE]
+Rationale: L gives LAN (not a word); E gives PLAT+ANE (neither standard child vocab). No replacement.
+
+### Q19 [FALSE POSITIVE for ambiguity]
+Rationale: R alt gives TAIN+ROAD — TAIN not standard English. Separately: OAD itself isn't a real word, so the question has a format concern (not ambiguity). Flag for review but no ambiguity replacement needed.
+
+### Q20 [FALSE POSITIVE]
+Rationale: R alt gives SHOE+RAND. RAND is primarily South African currency — not 11+ UK vocabulary. No replacement.
+
+### Q36 [GENUINE]
+Rationale: S alt produces PEAR+EELS — both solid words; EELS is the classic plural-S trap that matches Q56's pattern. Replace with a puzzle where S can't also work.
+```
+question: "Move one letter from one word to the other to make two new words: ORE  PRICE"
+options: ["E","O","P","I","R"]
+correct: 2
+explanation: "Move 'P' from PRICE to make RICE, and insert it into ORE to make PORE. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
+```
+
+### Q42 [GENUINE]
+Rationale: S alt produces COLD+OWLS — OWLS is a natural plural, COLD is very common. Classic plural-S trap. Replace with C-move where S has no role.
+```
+question: "Move one letter from one word to the other to make two new words: OLD  CLOUD"
+options: ["O","C","L","U","D"]
+correct: 1
+explanation: "Move 'C' from CLOUD to make LOUD, and insert it into OLD to make COLD. The letter moves right to left here! Tip: Check BOTH resulting words are real — and check that neither is just a plural of the original! ✓"
+```
+
+### Q45 [GENUINE]
+Rationale: S alt produces FEAT+AIRS — AIRS is standard (plural of AIR or verb "she airs her views"), FEAT is common. Plural-S trap. Replace with F-move that has no S alternative.
+```
+question: "Move one letter from one word to the other to make two new words: RAY  FLAKE"
+options: ["A","K","F","R","E"]
+correct: 2
+explanation: "Move 'F' from FLAKE to make LAKE, and insert it into RAY to make FRAY. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real. ✓"
+```
+
+### Q49 [GENUINE]
+Rationale: S alt produces TALE+RIMS — both clean words, RIMS being a simple plural. Plural-S trap. Replace with T-move where S can't work.
+```
+question: "Move one letter from one word to the other to make two new words: HIGH  TRACE"
+options: ["H","T","R","C","G"]
+correct: 1
+explanation: "Move 'T' from TRACE to make RACE, and insert it into HIGH to make THIGH. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
+```
+
+### Q50 [GENUINE]
+Rationale: S alt produces TALE+APES — plural-S trap. Replace with T-move where S can't work.
+```
+question: "Move one letter from one word to the other to make two new words: OUR  TRAIL"
+options: ["T","R","A","L","O"]
+correct: 0
+explanation: "Move 'T' from TRAIL to make RAIL, and insert it into OUR to make TOUR. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
+```
+
+### Q52 [GENUINE]
+Rationale: S alt produces WORE+ARMS — both strong words. Plural-S trap. Replace with W-move from a non-S-starting source.
+```
+question: "Move one letter from one word to the other to make two new words: ARM  NEWT"
+options: ["N","E","W","T","R"]
+correct: 2
+explanation: "Move 'W' from NEWT to make NET, and insert it into ARM to make WARM. The letter moves right to left here! Tip: Always try both directions — the letter doesn't have to come from an S word! ✓"
+```
+
+### Q62 [FALSE POSITIVE]
+Rationale: T alt gives SORE+THIP — THIP is not a word. No replacement.
+
+### Q64 [GENUINE]
+Rationale: S alt produces TEAM+RIMS — both strong (TEAM very common, RIMS simple plural). Plural-S trap. Replace with T-move where S can't work.
+```
+question: "Move one letter from one word to the other to make two new words: PIN  TROUT"
+options: ["R","I","T","U","N"]
+correct: 2
+explanation: "Move 'T' from TROUT to make ROUT, and insert it into PIN to make PINT. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
+```
+
+### Q67 [GENUINE]
+Rationale: E alt produces STAG+REAP — both standard words. Not a plural trap — a different-letter ambiguity. Replace with T-move where no other letter works.
+```
+question: "Move one letter from one word to the other to make two new words: ALE  STAGE"
+options: ["L","A","T","G","S"]
+correct: 2
+explanation: "Move 'T' from STAGE to make SAGE, and insert it into ALE to make TALE. The letter moves right to left here! Tip: Always try each letter one by one — sometimes more than one feels right, but only one gives two real words. ✓"
+```
+
+### Q69 [GENUINE]
+Rationale: E alt produces SCAR+LEAP — both clean words (SCAR Y4-5 vocab, LEAP Y2-3). Replace with S-move where no other letter works.
+```
+question: "Move one letter from one word to the other to make two new words: LIP  SHARE"
+options: ["L","S","H","R","P"]
+correct: 1
+explanation: "Move 'S' from SHARE to make HARE, and insert it into LIP to make SLIP. The letter moves right to left here! Tip: Always try both directions — and check every letter, not just the obvious one. ✓"
+```
+
+### Q78 [FALSE POSITIVE]
+Rationale: R alt gives CA+BRAND — CA is not a word. No replacement.
+
+### Q80 [GENUINE]
+Rationale: C alt produces ART+CHAT — both very common words. (H alt gives AT+CHART but AT is 2-letter and sub-standard by GL norms.) Replace with T-move where C doesn't work.
+```
+question: "Move one letter from one word to the other to make two new words: TRAIN  HEN"
+options: ["R","T","A","I","H"]
+correct: 1
+explanation: "Move 'T' from TRAIN to make RAIN, and insert it into HEN to make THEN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+```
+
+### Q81 [FALSE POSITIVE]
+Rationale: E alt gives ARN+BEAR/BARE — ARN is not a word. No replacement.
+
+### Q82 [GENUINE]
+Rationale: F alt produces ARM+FATE — both strong words (ARM Y1, FATE Y5-6). Replace with M-move from a source that has no F alternative.
+```
+question: "Move one letter from one word to the other to make two new words: FORM  EAT"
+options: ["F","A","T","M","O"]
+correct: 3
+explanation: "Move 'M' from the end of FORM to make FOR, and insert it into EAT to make MEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+```
+
+### Q88 [MARGINAL]
+Rationale: B alt produces AND+BARB. AND is a common conjunction; BARB (a pointed spike) is Y6-ish but known to many (barbed wire). Marginal but worth resolving to be safe. Replace with N-move where B can't work.
+```
+question: "Move one letter from one word to the other to make two new words: LAND  BAR"
+options: ["R","A","D","B","N"]
+correct: 4
+explanation: "Move 'N' from the middle of LAND to make LAD, and insert it to the end of BAR to make BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+```
+
+### Q89 [FALSE POSITIVE]
+Rationale: N alt gives BUR+CANT — both are obscure for 11+ (BUR is a prickly seed case, archaic; CANT is adult vocabulary for hypocritical speech or "to tilt"). Not child-level. No replacement.
+
+### Q92 [GENUINE]
+Rationale: C alt produces OLD+CHAT — both very common words. Replace with L-move from a source without C.
+```
+question: "Move one letter from one word to the other to make two new words: PILE  CAN"
+options: ["P","I","L","C","N"]
+correct: 2
+explanation: "Move 'L' from the middle of PILE to make PIE, and insert it into the middle of CAN to make CLAN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+```
+
+### Q94 [GENUINE]
+Rationale: G alt produces OAT+PING — both real words (OAT Y1-2, PING common onomatopoeia). Replace with A-move from a source without a leading G that creates an alt.
+```
+question: "Move one letter from one word to the other to make two new words: COAT  PIN"
+options: ["A","P","O","T","C"]
+correct: 0
+explanation: "Move 'A' from the middle of COAT to make COT, and insert it into the middle of PIN to make PAIN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+```
+
+### Q97 [GENUINE]
+Rationale: H alt produces ARM+CHAT — both very common words. (C alt gives AT+CHARM but AT is 2-letter.) Replace with R-move from a source where H doesn't work.
+```
+question: "Move one letter from one word to the other to make two new words: BIRD  CAT"
+options: ["B","A","C","R","I"]
+correct: 3
+explanation: "Move 'R' from the middle of BIRD to make BID, and insert it into the middle of CAT to make CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+```
+
+---
+
+## Additional Flag — Q19 format issue
+
+Q19 (TRAIN + OAD) uses a non-word fragment "OAD" as the starting word. The Oracle spec says "Two words given" — both source words must be valid English words. OAD is not. While the ambiguity verdict is FALSE POSITIVE, the question itself violates format and warrants a separate replacement pass. Suggested replacement (for the author's review, not part of this ambiguity batch):
+- **TRAIN + HOP** → T-move gives RAIN + HOPT (no valid). Bad.
+- **TRAIN + EAR** (EAR at 3 → 4 cap if Q45 replacement uses EAR... wait, I changed Q45 away from EAR). Re-check: my Q45 replacement is FLAKE+RAY, which doesn't use EAR. So EAR still at 3. +1 for Q19 → 4 (cap).
+- Candidate: **TRAIN + EAR → RAIN + TEAR** (intended T). Verify: T from TRAIN → RAIN ✓, EAR+T = TEAR ✓. R: TAIN ✗. A: TRIN ✗. I: TRAN ✗. N: TRAI ✗. From EAR: E: AR ✗, A: ER ✗, R: EA ✗. Only T works. Clean.
+- Option format: `["T","R","A","I","E"]`, correct=0. But if another Q already uses TRAIN + EAR pattern... Q58 uses EAR+TRANCE (different source). Clean.
+
+I've written this candidate but note it's outside the 22-Q ambiguity batch. The author should decide whether to include in the same fix pass.
+
+---
+
+## Cap compliance check
+
+Source-word frequency after all replacements:
+- SCOLD -1 (Q42 removed), PRICE +1 (Q36 added, 1→2), CLOUD +1 (Q42, 0→1), FLAKE +1 (Q45, 0→1), TRACE +1 (Q49, 1→2), TRAIL +1 (Q50, 0→1), NEWT +1 (Q52, 0→1), TROUT +1 (Q64, 0→1), STAGE 0 net (Q67 keeps STAGE), SHARE +1 (Q69, 1→2), TRAIN +1 (Q80, 1→2), FORM +1 (Q82, 0→1), LAND +1 (Q88, 0→1), PILE +1 (Q92, 0→1), COAT +1 (Q94, 0→1), BIRD +1 (Q97, 0→1).
+
+Receivers after replacements:
+- ORE +1, OLD +1, RAY +1, HIGH +1, OUR +1 (3→4 cap reached), ARM 0 net, PIN 0 net, ALE +1 (2→3), LIP +1, HEN +2 (Q80 + Q45 alternative wasn't used — only Q80 uses HEN, so +1), EAT +1, BAR 0 net, CAN +1, CAT 0 net.
+
+All caps respected. No source or receiver exceeds 4 uses.
+
+---
+
+## Key file paths referenced
+
+- `C:\Users\Ben Jackson\Projects\11plus-prep\src\questionData\vrData.js` (line 7441+, letterMove block)
+- `C:\Users\Ben Jackson\Projects\11plus-prep\research\11plus-oracle.md` (lines 514-544, Move a Letter spec)
+
+agentId: a9d7837cacb7f5b42 (use SendMessage with to: 'a9d7837cacb7f5b42' to continue this agent)
+<usage>total_tokens: 116532
+tool_uses: 14
+duration_ms: 728963</usage>

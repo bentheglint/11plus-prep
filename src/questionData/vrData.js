@@ -7724,10 +7724,10 @@ const vrData = {
         {
           id: 36,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: EEL  SPEAR",
-          options: ["E","S","P","A","R"],
+          question: "Move one letter from one word to the other to make two new words: ORE  PRICE",
+          options: ["E","O","P","I","R"],
           correct: 2,
-          explanation: "Move 'P' from SPEAR to make SEAR, and insert it into EEL to make PEEL. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'P' from PRICE to make RICE, and insert it into ORE to make PORE. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
         },
         {
           id: 37,
@@ -7772,10 +7772,10 @@ const vrData = {
         {
           id: 42,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: OWL SCOLD",
-          options: ["O","C","W","L","S"],
+          question: "Move one letter from one word to the other to make two new words: OLD  CLOUD",
+          options: ["O","C","L","U","D"],
           correct: 1,
-          explanation: "Move 'C' from SCOLD to make SOLD, and insert it into OWL to make COWL. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'C' from CLOUD to make LOUD, and insert it into OLD to make COLD. The letter moves right to left here! Tip: Check BOTH resulting words are real — and check that neither is just a plural of the original! ✓"
         },
         {
           id: 43,
@@ -7796,10 +7796,10 @@ const vrData = {
         {
           id: 45,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: AIR  FEAST",
-          options: ["A","I","F","R","E"],
+          question: "Move one letter from one word to the other to make two new words: RAY  FLAKE",
+          options: ["A","K","F","R","E"],
           correct: 2,
-          explanation: "Move 'F' from FEAST to make EAST, and insert it into AIR to make FAIR. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'F' from FLAKE to make LAKE, and insert it into RAY to make FRAY. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real. ✓"
         },
         {
           id: 46,
@@ -7828,18 +7828,18 @@ const vrData = {
         {
           id: 49,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: RIM STALE",
-          options: ["T","S","R","I","M"],
-          correct: 0,
-          explanation: "Move 'T' from STALE to make SALE, and insert it into RIM to make TRIM. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: HIGH  TRACE",
+          options: ["H","T","R","C","G"],
+          correct: 1,
+          explanation: "Move 'T' from TRACE to make RACE, and insert it into HIGH to make THIGH. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
         },
         {
           id: 50,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: APE STALE",
-          options: ["A","T","P","E","S"],
-          correct: 1,
-          explanation: "Move 'T' from STALE to make SALE, and insert it into APE to make TAPE. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: OUR  TRAIL",
+          options: ["T","R","A","L","O"],
+          correct: 0,
+          explanation: "Move 'T' from TRAIL to make RAIL, and insert it into OUR to make TOUR. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
         },
         {
           id: 51,
@@ -7852,10 +7852,10 @@ const vrData = {
         {
           id: 52,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: ARM  SWORE",
-          options: ["A","R","W","M","S"],
+          question: "Move one letter from one word to the other to make two new words: ARM  NEWT",
+          options: ["N","E","W","T","R"],
           correct: 2,
-          explanation: "Move 'W' from SWORE to make SORE, and insert it into ARM to make WARM. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'W' from NEWT to make NET, and insert it into ARM to make WARM. The letter moves right to left here! Tip: Always try both directions — the letter doesn't have to come from an S word! ✓"
         },
         {
           id: 53,
@@ -7948,10 +7948,10 @@ const vrData = {
         {
           id: 64,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: RIM  STEAM",
-          options: ["R","I","T","M","S"],
+          question: "Move one letter from one word to the other to make two new words: PIN  TROUT",
+          options: ["R","I","T","U","N"],
           correct: 2,
-          explanation: "Move 'T' from STEAM to make SEAM, and insert it into RIM to make TRIM. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'T' from TROUT to make ROUT, and insert it into PIN to make PINT. The letter moves right to left here! Tip: Always try both directions — and check that BOTH resulting words are real (not just plurals). ✓"
         },
         {
           id: 65,
@@ -7972,10 +7972,10 @@ const vrData = {
         {
           id: 67,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: RAP  STAGE",
-          options: ["R","A","T","P","S"],
+          question: "Move one letter from one word to the other to make two new words: ALE  STAGE",
+          options: ["L","A","T","G","S"],
           correct: 2,
-          explanation: "Move 'T' from STAGE to make SAGE, and insert it into RAP to make TRAP. The letter moves right to left here! Tip: Always try both directions. ✓"
+          explanation: "Move 'T' from STAGE to make SAGE, and insert it into ALE to make TALE. The letter moves right to left here! Tip: Always try each letter one by one — sometimes more than one feels right, but only one gives two real words. ✓"
         },
         {
           id: 68,
@@ -7988,10 +7988,10 @@ const vrData = {
         {
           id: 69,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: LAP  SCARE",
-          options: ["L","A","S","P","C"],
-          correct: 2,
-          explanation: "Move 'S' from SCARE to make CARE, and insert it into LAP to make SLAP. The letter moves right to left here! Tip: Always try both directions. ✓"
+          question: "Move one letter from one word to the other to make two new words: LIP  SHARE",
+          options: ["L","S","H","R","P"],
+          correct: 1,
+          explanation: "Move 'S' from SHARE to make HARE, and insert it into LIP to make SLIP. The letter moves right to left here! Tip: Always try both directions — and check every letter, not just the obvious one. ✓"
         },
         {
           id: 70,
@@ -8076,10 +8076,10 @@ const vrData = {
         {
           id: 80,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: CART HAT",
-          options: ["A","T","C","R","H"],
+          question: "Move one letter from one word to the other to make two new words: TRAIN  HEN",
+          options: ["R","T","A","I","H"],
           correct: 1,
-          explanation: "Move 'T' from the end of CART: becomes CAR. Insert it to the front of HAT: becomes THAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'T' from TRAIN to make RAIN, and insert it into HEN to make THEN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 81,
@@ -8092,10 +8092,10 @@ const vrData = {
         {
           id: 82,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: FARM ATE",
-          options: ["F","A","T","M","R"],
+          question: "Move one letter from one word to the other to make two new words: FORM  EAT",
+          options: ["F","A","T","M","O"],
           correct: 3,
-          explanation: "Move 'M' from the end of FARM: becomes FAR. Insert it to the front of ATE: becomes MATE. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'M' from the end of FORM to make FOR, and insert it into EAT to make MEAT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 83,
@@ -8140,10 +8140,10 @@ const vrData = {
         {
           id: 88,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: BAND BAR",
+          question: "Move one letter from one word to the other to make two new words: LAND  BAR",
           options: ["R","A","D","B","N"],
           correct: 4,
-          explanation: "Move 'N' from the middle of BAND: becomes BAD. Insert it to the end of BAR: becomes BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'N' from the middle of LAND to make LAD, and insert it to the end of BAR to make BARN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 89,
@@ -8172,10 +8172,10 @@ const vrData = {
         {
           id: 92,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: COLD HAT",
-          options: ["C","O","H","L","D"],
-          correct: 3,
-          explanation: "Move 'L' from the middle of COLD: becomes COD. Insert it into the middle of HAT: becomes HALT. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          question: "Move one letter from one word to the other to make two new words: PILE  CAN",
+          options: ["P","I","L","C","N"],
+          correct: 2,
+          explanation: "Move 'L' from the middle of PILE to make PIE, and insert it into the middle of CAN to make CLAN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 93,
@@ -8188,10 +8188,10 @@ const vrData = {
         {
           id: 94,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: GOAT PIN",
-          options: ["A","P","O","T","G"],
+          question: "Move one letter from one word to the other to make two new words: COAT  PIN",
+          options: ["A","P","O","T","C"],
           correct: 0,
-          explanation: "Move 'A' from the middle of GOAT: becomes GOT. Insert it into the middle of PIN: becomes PAIN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'A' from the middle of COAT to make COT, and insert it into the middle of PIN to make PAIN. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 95,
@@ -8212,10 +8212,10 @@ const vrData = {
         {
           id: 97,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: HARM CAT",
-          options: ["H","A","C","R","M"],
+          question: "Move one letter from one word to the other to make two new words: BIRD  CAT",
+          options: ["B","A","C","R","I"],
           correct: 3,
-          explanation: "Move 'R' from the middle of HARM: becomes HAM. Insert it into the middle of CAT: becomes CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
+          explanation: "Move 'R' from the middle of BIRD to make BID, and insert it into the middle of CAT to make CART. Tip: The letter can come from ANY position — start, middle, or end! ✓"
         },
         {
           id: 98,

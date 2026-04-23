@@ -567,6 +567,84 @@ describe('Oracle Sweep — Structural Invariants', () => {
       });
     }
   });
+
+  // 2026-04-24 — Letter Move plural-trap sweep.
+  // Oracle audited 22 candidate ambiguous Qs and rewrote 15. Each
+  // rewrite has been verified to have exactly ONE letter that produces
+  // two valid child-vocabulary words.
+  describe('Letter Move — Oracle-rewritten ambiguity fixes', () => {
+    const qs = vrData.topics.letterMove.questions;
+
+    // Expected (word1, word2, correct letter) after 24 Apr rewrite.
+    // Locks in the specific fixes so a future edit can't silently
+    // revert to an ambiguous word pair.
+    const EXPECTED = {
+      36: { word1: 'ORE',   word2: 'PRICE', correctLetter: 'P' },
+      42: { word1: 'OLD',   word2: 'CLOUD', correctLetter: 'C' },
+      45: { word1: 'RAY',   word2: 'FLAKE', correctLetter: 'F' },
+      49: { word1: 'HIGH',  word2: 'TRACE', correctLetter: 'T' },
+      50: { word1: 'OUR',   word2: 'TRAIL', correctLetter: 'T' },
+      52: { word1: 'ARM',   word2: 'NEWT',  correctLetter: 'W' },
+      64: { word1: 'PIN',   word2: 'TROUT', correctLetter: 'T' },
+      67: { word1: 'ALE',   word2: 'STAGE', correctLetter: 'T' },
+      69: { word1: 'LIP',   word2: 'SHARE', correctLetter: 'S' },
+      80: { word1: 'TRAIN', word2: 'HEN',   correctLetter: 'T' },
+      82: { word1: 'FORM',  word2: 'EAT',   correctLetter: 'M' },
+      88: { word1: 'LAND',  word2: 'BAR',   correctLetter: 'N' },
+      92: { word1: 'PILE',  word2: 'CAN',   correctLetter: 'L' },
+      94: { word1: 'COAT',  word2: 'PIN',   correctLetter: 'A' },
+      97: { word1: 'BIRD',  word2: 'CAT',   correctLetter: 'R' },
+    };
+
+    for (const [id, exp] of Object.entries(EXPECTED)) {
+      it(`Q${id} uses ${exp.word1} + ${exp.word2} with correct letter ${exp.correctLetter}`, () => {
+        const q = qs.find(qq => qq.id === Number(id));
+        expect(q).toBeTruthy();
+        const wordMatch = q.question.match(/:\s+(\w+)\s+(\w+)$/);
+        expect(wordMatch).toBeTruthy();
+        expect(wordMatch[1].toUpperCase()).toBe(exp.word1);
+        expect(wordMatch[2].toUpperCase()).toBe(exp.word2);
+        expect(q.options[q.correct]).toBe(exp.correctLetter);
+      });
+    }
+  });
+
+  // 2026-04-24 — Letter Move structural invariant.
+  // Every Q's correct answer letter must appear in at least one of the
+  // two source words. Protects against silent data corruption where
+  // the correct index points at a letter that isn't in either word.
+  describe('Letter Move — structural invariants', () => {
+    const qs = vrData.topics.letterMove.questions;
+
+    it('every correct letter appears in one of the two source words', () => {
+      const violators = [];
+      for (const q of qs) {
+        const wordMatch = q.question.match(/:\s+(\w+)\s+(\w+)$/);
+        if (!wordMatch) continue;
+        const letters = (wordMatch[1] + wordMatch[2]).toUpperCase();
+        const correctLetter = q.options[q.correct];
+        if (!correctLetter || !letters.includes(correctLetter.toUpperCase())) {
+          violators.push({ id: q.id, correctLetter, source: `${wordMatch[1]} + ${wordMatch[2]}` });
+        }
+      }
+      expect(violators).toEqual([]);
+    });
+
+    it('every option letter appears in at least one of the two source words', () => {
+      const violators = [];
+      for (const q of qs) {
+        const wordMatch = q.question.match(/:\s+(\w+)\s+(\w+)$/);
+        if (!wordMatch) continue;
+        const letters = (wordMatch[1] + wordMatch[2]).toUpperCase();
+        for (const opt of q.options) {
+          if (!letters.includes(opt.toUpperCase())) {
+            violators.push({ id: q.id, opt, source: `${wordMatch[1]} + ${wordMatch[2]}` });
+          }
+        }
+      }
+      expect(violators).toEqual([]);
+    });
+  });
 });
 
 // ══════════════════════════════════════════════════════════════

@@ -1,0 +1,192 @@
+{
+  "ambiguous": [
+    {
+      "id": 3,
+      "difficulty": 1,
+      "word1": "PLATE",
+      "word2": "AN",
+      "correctLetter": "P",
+      "alternativeLetters": [
+        "L",
+        "E"
+      ],
+      "movesByLetter": {
+        "P": [
+          "P:PLATE->LATE|AN->PAN"
+        ],
+        "L": [
+          "L:PLATE->PATE|AN->LAN"
+        ],
+        "E": [
+          "E:PLATE->PLAT|AN->ANE"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "difficulty": 1,
+      "word1": "TRAIN",
+      "word2": "OAD",
+      "correctLetter": "T",
+      "alternativeLetters": [
+        "R"
+      ],
+      "movesByLetter": {
+        "T": [
+          "T:TRAIN->RAIN|OAD->TOAD"
+        ],
+        "R": [
+          "R:TRAIN->TAIN|OAD->ROAD"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "difficulty": 3,
+      "word1": "SHORE",
+      "word2": "AND",
+      "correctLetter": "H",
+      "alternativeLetters": [
+        "R"
+      ],
+      "movesByLetter": {
+        "H": [
+          "H:SHORE->SORE|AND->HAND"
+        ],
+        "R": [
+          "R:SHORE->SHOE|AND->RAND"
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "difficulty": 2,
+      "word1": "HIP",
+      "word2": "STORE",
+      "correctLetter": "S",
+      "alternativeLetters": [
+        "T"
+      ],
+      "movesByLetter": {
+        "S": [
+          "S:STORE->TORE|HIP->SHIP",
+          "S:STORE->TORE|HIP->HIPS"
+        ],
+        "T": [
+          "T:STORE->SORE|HIP->THIP"
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "difficulty": 2,
+      "word1": "ALE",
+      "word2": "STAGE",
+      "correctLetter": "T",
+      "alternativeLetters": [
+        "S"
+      ],
+      "movesByLetter": {
+        "S": [
+          "S:STAGE->TAGE|ALE->SALE",
+          "S:STAGE->TAGE|ALE->ALES"
+        ],
+        "T": [
+          "T:STAGE->SAGE|ALE->TALE"
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "difficulty": 2,
+      "word1": "BAND",
+      "word2": "CAR",
+      "correctLetter": "D",
+      "alternativeLetters": [
+        "R"
+      ],
+      "movesByLetter": {
+        "D": [
+          "D:BAND->BAN|CAR->CARD"
+        ],
+        "R": [
+          "R:CAR->CA|BAND->BRAND"
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "difficulty": 2,
+      "word1": "EARN",
+      "word2": "BAR",
+      "correctLetter": "N",
+      "alternativeLetters": [
+        "E"
+      ],
+      "movesByLetter": {
+        "E": [
+          "E:EARN->ARN|BAR->BEAR",
+          "E:EARN->ARN|BAR->BARE"
+        ],
+        "N": [
+          "N:EARN->EAR|BAR->BARN"
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "difficulty": 2,
+      "word1": "LAND",
+      "word2": "BAR",
+      "correctLetter": "N",
+      "alternativeLetters": [
+        "B"
+      ],
+      "movesByLetter": {
+        "N": [
+          "N:LAND->LAD|BAR->BARN"
+        ],
+        "B": [
+          "B:BAR->AR|LAND->BLAND"
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "difficulty": 2,
+      "word1": "BURN",
+      "word2": "CAT",
+      "correctLetter": "R",
+      "alternativeLetters": [
+        "N"
+      ],
+      "movesByLetter": {
+        "R": [
+          "R:BURN->BUN|CAT->CART"
+        ],
+        "N": [
+          "N:BURN->BUR|CAT->CANT"
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "difficulty": 2,
+      "word1": "PILE",
+      "word2": "CAN",
+      "correctLetter": "L",
+      "alternativeLetters": [
+        "I"
+      ],
+      "movesByLetter": {
+        "I": [
+          "I:PILE->PLE|CAN->CIAN"
+        ],
+        "L": [
+          "L:PILE->PIE|CAN->CLAN"
+        ]
+      }
+    }
+  ],
+  "unresolvable": []
+}
