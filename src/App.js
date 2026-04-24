@@ -63,7 +63,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -97,7 +97,7 @@ function App({ currentUser: authUser, getToken, loadedData }) {
   }, [authUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Per-user data isolation — all progress data keyed by user name
-  const userData = useD1Data(currentUser, getToken);
+  const userData = useD1Data(currentUser, getToken, activeChildId);
   const { quizHistory, topicPerformance, seenQuestions, lessonHistory, questionResults, practiceLog } = userData;
 
   // Mastery scoring engine (computed from question results)

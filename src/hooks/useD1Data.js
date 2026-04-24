@@ -286,7 +286,7 @@ function hasLegacyData(userName) {
 
 // ── The Hook ──
 
-export default function useD1Data(userName, getToken) {
+export default function useD1Data(userName, getToken, childId) {
   const prevUser = useRef(userName);
   const versionsRef = useRef({ streaks: 1, prepPoints: 1, preferences: 1 });
   const batchingRef = useRef(false);
@@ -311,11 +311,14 @@ export default function useD1Data(userName, getToken) {
   const seenTipIds = seenTips.map(t => t.id);
 
   // ── Initialize SyncQueue ──
+  // Keyed by childId (UUID) when available, falls back to userName for dev
+  // mode and legacy paths where childId hasn't been threaded yet.
   useEffect(() => {
-    if (userName) {
-      syncQueueRef.current = createSyncQueue(userName);
+    const queueKey = childId || userName;
+    if (queueKey) {
+      syncQueueRef.current = createSyncQueue(queueKey);
     }
-  }, [userName]);
+  }, [childId, userName]);
 
   // ── Populate state from a transformed data object ──
   const populateState = useCallback((data) => {
@@ -380,7 +383,8 @@ export default function useD1Data(userName, getToken) {
 
     async function loadData() {
       // 1. Try fetching from D1
-      const serverData = await apiFetch('/api/data/all', getToken);
+      const dataPath = childId ? `/api/data/all?child_id=${encodeURIComponent(childId)}` : '/api/data/all';
+      const serverData = await apiFetch(dataPath, getToken);
 
       if (cancelled) return;
 
@@ -474,7 +478,7 @@ export default function useD1Data(userName, getToken) {
     loadData();
 
     return () => { cancelled = true; };
-  }, [userName, getToken, populateState, resetToFreshUser]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [userName, getToken, childId, populateState, resetToFreshUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Online/offline listener ──
   useEffect(() => {
@@ -498,7 +502,10 @@ export default function useD1Data(userName, getToken) {
     const queue = syncQueueRef.current;
     if (!queue || queue.isEmpty() || !getToken || !API_URL || !userName) return;
 
-    const state = getFlushState(userName);
+    // Mutex keyed by childId when available so two children on the same
+    // account never share a flush lock.
+    const mutexKey = childId || userName;
+    const state = getFlushState(mutexKey);
 
     // If a flush is already running (same user, possibly another mount),
     // mark pending and bail — the running flush will re-drain.
@@ -516,7 +523,8 @@ export default function useD1Data(userName, getToken) {
       if (valid.length === 0) return;
 
       const ops = valid.slice(0, 50); // Batch up to 50 at a time
-      const result = await apiPost('/api/data/batch', { operations: ops }, getToken);
+      const batchBody = childId ? { child_id: childId, operations: ops } : { operations: ops };
+      const result = await apiPost('/api/data/batch', batchBody, getToken);
 
       if (result) {
         // Remove successfully processed operations
@@ -555,7 +563,7 @@ export default function useD1Data(userName, getToken) {
     if (shouldDrain) {
       setTimeout(() => flushQueue(), 100);
     }
-  }, [getToken, userName]);
+  }, [getToken, userName, childId]);
 
   // ── Batch Mode ──
   const startBatch = useCallback(() => { batchingRef.current = true; }, []);
