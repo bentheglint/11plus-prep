@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ArrowLeft, Plus, Users, BookOpen, Trash2, X, ChevronRight, CheckCircle, Clock, AlertCircle } from 'lucide-react';
 import { motion } from '../components/Motion';
+import PupilDetailScreen from './PupilDetailScreen';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -239,6 +240,7 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
   const [loading, setLoading] = useState(true);
   const [showAssignComposer, setShowAssignComposer] = useState(false);
   const [selectedAssignment, setSelectedAssignment] = useState(null);
+  const [selectedPupilId, setSelectedPupilId] = useState(null);
   const [error, setError] = useState(null);
 
   const load = useCallback(async () => {
@@ -378,9 +380,10 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
               </div>
             )}
             {roster.map(pupil => (
-              <motion.div
+              <motion.button
                 key={pupil.id}
-                className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-200"
+                onClick={() => setSelectedPupilId(pupil.id)}
+                className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-200 w-full text-left hover:border-[#A29BFE] transition-colors"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
               >
@@ -393,7 +396,8 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
                     {pupil.account_name} · {pupil.year_group ? `Year ${pupil.year_group}` : 'Year group not set'}
                   </p>
                 </div>
-              </motion.div>
+                <ChevronRight className="w-4 h-4 text-slate-400 flex-shrink-0" />
+              </motion.button>
             ))}
           </div>
         )}
@@ -486,6 +490,16 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
           onClose={() => setSelectedAssignment(null)}
           onClearLate={handleClearLate}
         />
+      )}
+
+      {selectedPupilId && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <PupilDetailScreen
+            childId={selectedPupilId}
+            getToken={getToken}
+            onBack={() => setSelectedPupilId(null)}
+          />
+        </div>
       )}
     </div>
   );
