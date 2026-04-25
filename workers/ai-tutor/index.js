@@ -10,6 +10,7 @@ import { handleTutorRoutes } from './routes/tutor.js';
 import { handleClassRoutes } from './routes/classes.js';
 import { handleAssignmentRoutes, runLateFlagJob } from './routes/assignments.js';
 import { handleNotesRoutes } from './routes/notes.js';
+import { handleReportRoutes } from './routes/report.js';
 
 // ── Clerk JWT Verification ──
 
@@ -324,6 +325,10 @@ export default {
         // Tutor private notes
         const notesResult = await handleNotesRoutes(request, env, userId, path);
         if (notesResult) return notesResult;
+
+        // Report generation
+        const reportResult = await handleReportRoutes(request, env, userId, path);
+        if (reportResult) return reportResult;
 
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);
