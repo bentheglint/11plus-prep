@@ -2122,6 +2122,8 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         streaksAndPP={streaksAndPP}
         userData={userData}
         currentUser={currentUser}
+        getToken={getToken}
+        activeChildId={activeChildId}
         onHome={handleHome}
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);

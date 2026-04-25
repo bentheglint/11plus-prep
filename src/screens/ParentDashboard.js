@@ -9,9 +9,10 @@ import MockTestHistory from '../components/progress/MockTestHistory';
 import SpeedTracking from '../components/progress/SpeedTracking';
 import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant';
 import ParentGuidance from '../components/progress/ParentGuidance';
+import TutorHomeworkCard from '../components/progress/TutorHomeworkCard';
 import parentGuides from '../data/parentGuides';
 
-function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopicClick, onHome }) {
+function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome }) {
   const practiceDays = streaksAndPP.getPracticeDays(84);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -20,6 +21,9 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, onTopic
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-4xl mx-auto">
         {/* Header handled by ProgressScreen tabs */}
+
+        {/* Tutor Homework card — dormant when no tutor has assigned anything */}
+        <TutorHomeworkCard activeChildId={activeChildId} getToken={getToken} />
 
         {/* The most important card — answers "Is my child on track?" */}
         <OnTrackCard
