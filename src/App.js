@@ -53,6 +53,7 @@ import MistakesScreen from './screens/MistakesScreen';
 import ChildrenScreen from './screens/ChildrenScreen';
 import JoinScreen from './screens/JoinScreen';
 import TutorSignupScreen from './screens/TutorSignupScreen';
+import TutorDashboardScreen from './screens/TutorDashboardScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
@@ -1637,6 +1638,18 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       <TutorSignupScreen
         getToken={getToken}
         onBack={() => setCurrentView('home')}
+        onOpenDashboard={() => setCurrentView('tutorDashboard')}
+      />
+    );
+  }
+
+  if (currentView === 'tutorDashboard') {
+    // TutorDashboardScreen needs the tutor profile — it fetches it internally via getToken
+    return (
+      <TutorDashboardScreen
+        tutor={null}
+        getToken={getToken}
+        onBack={() => setCurrentView('tutorSignup')}
       />
     );
   }

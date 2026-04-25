@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Copy, Check, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Copy, Check, ExternalLink, LayoutDashboard } from 'lucide-react';
 import { motion } from '../components/Motion';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
@@ -20,7 +20,7 @@ async function apiFetch(path, getToken, options = {}) {
 }
 
 // ── Tutor profile view (shown after signup) ──
-function TutorProfile({ tutor, onBack }) {
+function TutorProfile({ tutor, onBack, onOpenDashboard }) {
   const [copied, setCopied] = useState(false);
   const joinUrl = `${window.location.origin}/join/${tutor.tutor_code}`;
 
@@ -71,12 +71,20 @@ function TutorProfile({ tutor, onBack }) {
         </div>
       </motion.div>
 
+      <button
+        onClick={onOpenDashboard}
+        className="w-full flex items-center justify-center gap-2 py-3 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] transition-colors mb-4"
+      >
+        <LayoutDashboard className="w-4 h-4" />
+        Open Tutor Dashboard
+      </button>
+
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
-        <p className="font-medium mb-1">What happens next?</p>
+        <p className="font-medium mb-1">What's in the dashboard?</p>
         <ul className="space-y-1 text-amber-700">
-          <li>• Share your invite link with parents</li>
-          <li>• Once they sign up, they appear in your Tutor Dashboard</li>
-          <li>• You can create classes and assign homework from there</li>
+          <li>• Pupil roster — everyone who's joined via your link</li>
+          <li>• Classes — group pupils into named sessions</li>
+          <li>• Assignments — set homework with a due date</li>
         </ul>
       </div>
     </div>
@@ -160,7 +168,7 @@ function SignupForm({ getToken, onCreated }) {
   );
 }
 
-export default function TutorSignupScreen({ getToken, onBack }) {
+export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard }) {
   const [tutor, setTutor] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -182,7 +190,7 @@ export default function TutorSignupScreen({ getToken, onBack }) {
   return (
     <div className="app-bg min-h-screen p-4">
       {tutor ? (
-        <TutorProfile tutor={tutor} onBack={onBack} />
+        <TutorProfile tutor={tutor} onBack={onBack} onOpenDashboard={onOpenDashboard} />
       ) : (
         <div>
           <button onClick={onBack} className="flex items-center gap-2 text-sm text-slate-600 mb-6 hover:text-slate-800">
