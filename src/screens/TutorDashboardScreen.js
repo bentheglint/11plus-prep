@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ArrowLeft, Plus, Users, BookOpen, Trash2, X, ChevronRight, CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Plus, Users, BookOpen, Trash2, X, ChevronRight, CheckCircle, Clock, AlertCircle, MessageCircle } from 'lucide-react';
 import { motion } from '../components/Motion';
 import PupilDetailScreen from './PupilDetailScreen';
+import { TutorMessagingScreen } from './MessagingScreen';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -241,6 +242,7 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
   const [showAssignComposer, setShowAssignComposer] = useState(false);
   const [selectedAssignment, setSelectedAssignment] = useState(null);
   const [selectedPupilId, setSelectedPupilId] = useState(null);
+  const [showMessaging, setShowMessaging] = useState(false);
   const [error, setError] = useState(null);
 
   const load = useCallback(async () => {
@@ -327,6 +329,13 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
               Invite link: prepstep.co.uk/join/{tutor?.tutor_code}
             </p>
           </div>
+          <button
+            onClick={() => setShowMessaging(true)}
+            className="p-2 text-slate-600 hover:text-[#7C3AED] transition-colors"
+            title="Messages"
+          >
+            <MessageCircle className="w-5 h-5" />
+          </button>
           {tab === 'assignments' && (
             <button
               onClick={() => setShowAssignComposer(true)}
@@ -498,6 +507,15 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
             childId={selectedPupilId}
             getToken={getToken}
             onBack={() => setSelectedPupilId(null)}
+          />
+        </div>
+      )}
+
+      {showMessaging && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <TutorMessagingScreen
+            getToken={getToken}
+            onBack={() => setShowMessaging(false)}
           />
         </div>
       )}

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ArrowLeft, StickyNote, Plus, Edit2, Trash2, X, CheckCircle, AlertCircle, Clock, BookOpen, FileText } from 'lucide-react';
+import { ArrowLeft, StickyNote, Plus, Edit2, Trash2, X, CheckCircle, AlertCircle, Clock, BookOpen, FileText, MessageCircle } from 'lucide-react';
 import { motion } from '../components/Motion';
 import ReportScreen from './ReportScreen';
+import MessageThread from '../components/MessageThread';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -168,8 +169,9 @@ function RecipientBadge({ status }) {
 export default function PupilDetailScreen({ childId, getToken, onBack }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [tab, setTab] = useState('overview'); // overview | quizzes | assignments | notes
+  const [tab, setTab] = useState('overview'); // overview | quizzes | assignments | notes | messages
   const [showReport, setShowReport] = useState(false);
+  const [conversationId, setConversationId] = useState(null);
   const [error, setError] = useState(null);
 
   const load = useCallback(async () => {
@@ -220,7 +222,21 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
     { key: 'quizzes', label: `Quizzes (${quizResults.length})` },
     { key: 'assignments', label: `Homework (${assignmentRecipients.length})` },
     { key: 'notes', label: `Notes (${notesCount})` },
+    { key: 'messages', label: 'Messages' },
   ];
+
+  const handleOpenMessages = async () => {
+    if (conversationId) { setTab('messages'); return; }
+    try {
+      const token = await getToken();
+      const res = await fetch(`${process.env.REACT_APP_TUTOR_API_URL}/api/tutor/conversations/${childId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      });
+      const d = await res.json();
+      if (res.ok) { setConversationId(d.conversation.id); setTab('messages'); }
+    } catch (_) {}
+  };
 
   return (
     <div className="app-bg min-h-screen p-4">
@@ -253,11 +269,11 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
         </div>
 
         {/* Tabs */}
-        <div className="grid grid-cols-4 gap-1 mb-4 bg-white rounded-xl p-1 shadow-sm border border-gray-200">
+        <div className="grid grid-cols-5 gap-1 mb-4 bg-white rounded-xl p-1 shadow-sm border border-gray-200">
           {tabs.map(t => (
             <button
               key={t.key}
-              onClick={() => setTab(t.key)}
+              onClick={() => t.key === 'messages' ? handleOpenMessages() : setTab(t.key)}
               className={`py-2 text-xs font-bold rounded-lg transition-colors ${tab === t.key ? 'bg-[#7C3AED] text-white' : 'text-slate-600 hover:text-slate-800'}`}
             >
               {t.label}
@@ -376,6 +392,21 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
             </div>
             <NotesPanel childId={childId} getToken={getToken} />
           </div>
+        )}
+
+        {/* Messages tab */}
+        {tab === 'messages' && conversationId && (
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden" style={{ height: 420 }}>
+            <MessageThread
+              messagesPath={`/api/tutor/conversations/${conversationId}/messages`}
+              myRole="tutor"
+              getToken={getToken}
+              label={`${child.display_name}'s parent`}
+            />
+          </div>
+        )}
+        {tab === 'messages' && !conversationId && (
+          <div className="text-center py-8 text-slate-400">Opening conversation…</div>
         )}
       </div>
 
