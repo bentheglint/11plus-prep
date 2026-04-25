@@ -6,6 +6,7 @@ import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
 import { handleScheduled } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook } from './routes/stripe.js';
+import { handleTutorRoutes } from './routes/tutor.js';
 
 // ── Clerk JWT Verification ──
 
@@ -260,6 +261,11 @@ export default {
         return json({ ok: true });
       }
 
+      // Public tutor profile — no auth required (join page preview)
+      if (path.startsWith('/api/tutor/public/') && request.method === 'GET') {
+        return handleTutorRoutes(request, env, null, path);
+      }
+
       // AI tutor — backward compatible POST to root
       if (request.method === 'POST' && !path.startsWith('/api/')) {
         const limited = await checkRateLimit(env.TUTOR_LIMITER, request, 'tutor');
@@ -299,6 +305,10 @@ export default {
         // Account routes
         const accountResult = await handleAccountRoutes(request, env, userId, path);
         if (accountResult) return accountResult;
+
+        // Tutor routes
+        const tutorResult = await handleTutorRoutes(request, env, userId, path);
+        if (tutorResult) return tutorResult;
 
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);
