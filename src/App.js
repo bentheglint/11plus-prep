@@ -51,6 +51,8 @@ import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
 import MistakesScreen from './screens/MistakesScreen';
 import ChildrenScreen from './screens/ChildrenScreen';
+import JoinScreen from './screens/JoinScreen';
+import TutorSignupScreen from './screens/TutorSignupScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
@@ -153,7 +155,16 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
 
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
-  const [currentView, setCurrentView] = useState('home');
+  // Detect /join/<tutorCode> path on mount and redirect to the join view
+  const [joinTutorCode, setJoinTutorCode] = useState(() => {
+    const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+    return pathMatch ? pathMatch[1].toUpperCase() : null;
+  });
+
+  const [currentView, setCurrentView] = useState(() => {
+    const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+    return pathMatch ? 'join' : 'home';
+  });
 
   // Scroll to top whenever the view changes — otherwise new screens land
   // wherever the previous screen's scroll position was (flagged 15 Apr 2026
@@ -1601,6 +1612,35 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     );
   }
 
+  if (currentView === 'join') {
+    return (
+      <JoinScreen
+        tutorCode={joinTutorCode}
+        childrenList={childrenList}
+        getToken={getToken}
+        onJoined={(childId) => {
+          // Clear the join path from the URL, then go home
+          window.history.replaceState({}, '', '/');
+          setActiveChildId(childId);
+          setCurrentView('home');
+        }}
+        onBack={() => {
+          window.history.replaceState({}, '', '/');
+          setCurrentView('home');
+        }}
+      />
+    );
+  }
+
+  if (currentView === 'tutorSignup') {
+    return (
+      <TutorSignupScreen
+        getToken={getToken}
+        onBack={() => setCurrentView('home')}
+      />
+    );
+  }
+
   if (currentView === 'errors') {
     return <ErrorDashboardScreen onBack={() => setCurrentView('home')} />;
   }
@@ -1629,6 +1669,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         activeChildId={activeChildId}
         onSwitchChild={setActiveChildId}
         onManageChildren={() => setCurrentView('children')}
+        onTutorSignup={() => setCurrentView('tutorSignup')}
       />
     );
   }
