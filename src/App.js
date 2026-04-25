@@ -54,6 +54,7 @@ import ChildrenScreen from './screens/ChildrenScreen';
 import JoinScreen from './screens/JoinScreen';
 import TutorSignupScreen from './screens/TutorSignupScreen';
 import TutorDashboardScreen from './screens/TutorDashboardScreen';
+import { ParentMessagingScreen } from './screens/MessagingScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
@@ -1644,12 +1645,20 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
   }
 
   if (currentView === 'tutorDashboard') {
-    // TutorDashboardScreen needs the tutor profile — it fetches it internally via getToken
     return (
       <TutorDashboardScreen
-        tutor={null}
         getToken={getToken}
         onBack={() => setCurrentView('tutorSignup')}
+      />
+    );
+  }
+
+  if (currentView === 'parentMessages') {
+    return (
+      <ParentMessagingScreen
+        activeChildId={activeChildId}
+        getToken={getToken}
+        onBack={() => setCurrentView('progress')}
       />
     );
   }
@@ -2139,6 +2148,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           setCurrentView('quizDetail');
         }}
         onViewAllActivity={() => setCurrentView('allActivity')}
+        onOpenParentMessages={() => setCurrentView('parentMessages')}
       />
     );
   }

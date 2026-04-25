@@ -10,9 +10,10 @@ import SpeedTracking from '../components/progress/SpeedTracking';
 import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant';
 import ParentGuidance from '../components/progress/ParentGuidance';
 import TutorHomeworkCard from '../components/progress/TutorHomeworkCard';
+import TutorManagementCard from '../components/progress/TutorManagementCard';
 import parentGuides from '../data/parentGuides';
 
-function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome }) {
+function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome, onOpenParentMessages }) {
   const practiceDays = streaksAndPP.getPracticeDays(84);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -24,6 +25,13 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
 
         {/* Tutor Homework card — dormant when no tutor has assigned anything */}
         <TutorHomeworkCard activeChildId={activeChildId} getToken={getToken} />
+
+        {/* Tutor management — dormant when no tutors linked */}
+        <TutorManagementCard
+          activeChildId={activeChildId}
+          getToken={getToken}
+          onOpenMessages={onOpenParentMessages}
+        />
 
         {/* The most important card — answers "Is my child on track?" */}
         <OnTrackCard
