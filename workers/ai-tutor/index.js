@@ -11,6 +11,8 @@ import { handleClassRoutes } from './routes/classes.js';
 import { handleAssignmentRoutes, runLateFlagJob } from './routes/assignments.js';
 import { handleNotesRoutes } from './routes/notes.js';
 import { handleReportRoutes } from './routes/report.js';
+import { handleMessagingRoutes } from './routes/messaging.js';
+import { handleRelationshipRoutes } from './routes/relationships.js';
 
 // ── Clerk JWT Verification ──
 
@@ -329,6 +331,14 @@ export default {
         // Report generation
         const reportResult = await handleReportRoutes(request, env, userId, path);
         if (reportResult) return reportResult;
+
+        // Messaging (tutor ↔ parent, polled)
+        const messagingResult = await handleMessagingRoutes(request, env, userId, path);
+        if (messagingResult) return messagingResult;
+
+        // Relationship management + bulk invite
+        const relResult = await handleRelationshipRoutes(request, env, userId, path);
+        if (relResult) return relResult;
 
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);
