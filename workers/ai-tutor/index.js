@@ -9,6 +9,7 @@ import { handleStripeRoutes, handleWebhook } from './routes/stripe.js';
 import { handleTutorRoutes } from './routes/tutor.js';
 import { handleClassRoutes } from './routes/classes.js';
 import { handleAssignmentRoutes, runLateFlagJob } from './routes/assignments.js';
+import { handleNotesRoutes } from './routes/notes.js';
 
 // ── Clerk JWT Verification ──
 
@@ -319,6 +320,10 @@ export default {
         // Assignment routes (tutor-facing + parent-facing)
         const assignResult = await handleAssignmentRoutes(request, env, userId, path);
         if (assignResult) return assignResult;
+
+        // Tutor private notes
+        const notesResult = await handleNotesRoutes(request, env, userId, path);
+        if (notesResult) return notesResult;
 
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);
