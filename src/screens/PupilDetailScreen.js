@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ArrowLeft, StickyNote, Plus, Edit2, Trash2, X, CheckCircle, AlertCircle, Clock, BookOpen } from 'lucide-react';
+import { ArrowLeft, StickyNote, Plus, Edit2, Trash2, X, CheckCircle, AlertCircle, Clock, BookOpen, FileText } from 'lucide-react';
 import { motion } from '../components/Motion';
+import ReportScreen from './ReportScreen';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -168,6 +169,7 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState('overview'); // overview | quizzes | assignments | notes
+  const [showReport, setShowReport] = useState(false);
   const [error, setError] = useState(null);
 
   const load = useCallback(async () => {
@@ -236,8 +238,17 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
               {child.target_school ? ` · ${child.target_school}` : ''}
             </p>
           </div>
-          <div className="w-10 h-10 rounded-full bg-[#7C3AED] text-white font-bold flex items-center justify-center flex-shrink-0">
-            {child.display_name[0]}
+          <div className="flex items-center gap-2 flex-shrink-0">
+            <button
+              onClick={() => setShowReport(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#A29BFE] text-[#7C3AED] text-xs font-bold rounded-xl hover:bg-[#F8F7FF] transition-colors"
+            >
+              <FileText className="w-3.5 h-3.5" />
+              Report
+            </button>
+            <div className="w-10 h-10 rounded-full bg-[#7C3AED] text-white font-bold flex items-center justify-center">
+              {child.display_name[0]}
+            </div>
           </div>
         </div>
 
@@ -367,6 +378,16 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
           </div>
         )}
       </div>
+
+      {showReport && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <ReportScreen
+            childId={childId}
+            getToken={getToken}
+            onBack={() => setShowReport(false)}
+          />
+        </div>
+      )}
     </div>
   );
 }
