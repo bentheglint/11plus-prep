@@ -109,7 +109,12 @@ export async function handleAccountRoutes(request, env, userId, path) {
     delete account.comp_source;
     delete account.is_comped;
 
-    return json({ account, children: childrenResult.results, access });
+    const children = childrenResult.results;
+    // Keep legacy `child` field so existing frontend (master branch) doesn't break
+    // during the transition period before tutor-mode is deployed to production.
+    const child = children[0] || null;
+
+    return json({ account, children, child, access });
   }
 
   // DELETE /api/account — Delete account + ALL child data (GDPR right to erasure)
