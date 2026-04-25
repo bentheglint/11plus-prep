@@ -11,8 +11,16 @@
 // The cron runs every Sunday. If EMAIL_API_KEY is missing, it logs and exits.
 
 import { json } from '../helpers.js';
+import { runLateFlagJob } from './assignments.js';
 
 export async function handleScheduled(env) {
+  // Run late-flag job unconditionally — doesn't need email config
+  try {
+    await runLateFlagJob(env.DB);
+  } catch (err) {
+    console.error('[scheduled] Late-flag job error:', err.message);
+  }
+
   // Guard: don't send if email not configured
   if (!env.EMAIL_API_KEY || !env.EMAIL_FROM) {
     console.log('[email] Skipping weekly emails — EMAIL_API_KEY or EMAIL_FROM not configured');

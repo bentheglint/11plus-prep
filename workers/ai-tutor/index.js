@@ -8,6 +8,7 @@ import { handleScheduled } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook } from './routes/stripe.js';
 import { handleTutorRoutes } from './routes/tutor.js';
 import { handleClassRoutes } from './routes/classes.js';
+import { handleAssignmentRoutes, runLateFlagJob } from './routes/assignments.js';
 
 // ── Clerk JWT Verification ──
 
@@ -314,6 +315,10 @@ export default {
         // Class management routes
         const classResult = await handleClassRoutes(request, env, userId, path);
         if (classResult) return classResult;
+
+        // Assignment routes (tutor-facing + parent-facing)
+        const assignResult = await handleAssignmentRoutes(request, env, userId, path);
+        if (assignResult) return assignResult;
 
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);
