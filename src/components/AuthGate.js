@@ -262,6 +262,7 @@ function AuthGateReal({ children }) {
   const [onboardingStep, setOnboardingStep] = useState(null); // null | 'consent' | 'childName' | 'ready' | 'subscribe'
   const [childName, setChildName] = useState(null);
   const [activeChildId, setActiveChildId] = useState(null);
+  const [childrenList, setChildrenList] = useState([]);
   const [access, setAccess] = useState(null); // { hasAccess, inTrial, trialDaysRemaining, subscriptionStatus, isComped }
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -300,8 +301,10 @@ function AuthGateReal({ children }) {
       const token = await getToken();
       const data = await apiFetch('/api/account', token);
       if (data.access) setAccess(data.access);
-      const firstChild = data.children?.[0] || null;
+      const allChildren = data.children || [];
+      const firstChild = allChildren[0] || null;
       if (data.account && firstChild) {
+        setChildrenList(allChildren);
         setChildName(firstChild.display_name);
         setActiveChildId(firstChild.id);
         if (data.access && !data.access.hasAccess) {
@@ -389,7 +392,10 @@ function AuthGateReal({ children }) {
       });
 
       setChildName(displayName);
-      if (res?.childId) setActiveChildId(res.childId);
+      if (res?.childId) {
+        setActiveChildId(res.childId);
+        setChildrenList([{ id: res.childId, display_name: displayName }]);
+      }
       // Go straight to app — no migration step for new accounts.
       setOnboardingStep('ready');
     } catch (err) {
@@ -495,9 +501,9 @@ function AuthGateReal({ children }) {
     );
   }
 
-  // Ready — render the app with child name + access info + active child ID
+  // Ready — render the app with child name + access info + active child ID + children list
   if (onboardingStep === 'ready') {
-    return children(childName, getToken, access, activeChildId);
+    return children(childName, getToken, access, activeChildId, childrenList);
   }
 
   // Fallback loading

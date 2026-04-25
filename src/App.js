@@ -50,6 +50,7 @@ import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
 import MistakesScreen from './screens/MistakesScreen';
+import ChildrenScreen from './screens/ChildrenScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
@@ -63,7 +64,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData, activeChildId }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -95,6 +96,33 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId }) {
       localStorage.removeItem('current-user');
     }
   }, [authUser]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Active child state — persisted to localStorage so it survives reloads.
+  // On mount: use prop value (from AuthGate) as the source of truth.
+  // Falls back to stored value or the first child if prop isn't available.
+  const [activeChildId, setActiveChildIdState] = useState(() => {
+    return initialChildId || localStorage.getItem('active-child-id') || null;
+  });
+  const [childrenList, setChildrenList] = useState(() => initialChildrenList || []);
+
+  // Sync when AuthGate provides fresh data (login / page reload)
+  useEffect(() => {
+    if (initialChildId && initialChildId !== activeChildId) {
+      setActiveChildIdState(initialChildId);
+      localStorage.setItem('active-child-id', initialChildId);
+    }
+  }, [initialChildId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (initialChildrenList?.length) setChildrenList(initialChildrenList);
+  }, [initialChildrenList]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const setActiveChildId = (childId) => {
+    setActiveChildIdState(childId);
+    localStorage.setItem('active-child-id', childId);
+    // When switching children, bump back to home so we don't show stale data
+    setCurrentView('home');
+  };
 
   // Per-user data isolation — all progress data keyed by user name
   const userData = useD1Data(currentUser, getToken, activeChildId);
@@ -1560,6 +1588,19 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     );
   }
 
+  if (currentView === 'children') {
+    return (
+      <ChildrenScreen
+        childrenList={childrenList}
+        activeChildId={activeChildId}
+        getToken={getToken}
+        onBack={() => setCurrentView('home')}
+        onSwitchChild={setActiveChildId}
+        onChildrenUpdated={setChildrenList}
+      />
+    );
+  }
+
   if (currentView === 'errors') {
     return <ErrorDashboardScreen onBack={() => setCurrentView('home')} />;
   }
@@ -1584,6 +1625,10 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
         mastery={mastery}
         streaksAndPP={streaksAndPP}
+        childrenList={childrenList}
+        activeChildId={activeChildId}
+        onSwitchChild={setActiveChildId}
+        onManageChildren={() => setCurrentView('children')}
       />
     );
   }
