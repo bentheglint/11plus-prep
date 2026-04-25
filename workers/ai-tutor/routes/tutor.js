@@ -167,5 +167,81 @@ export async function handleTutorRoutes(request, env, userId, path) {
     return json({ ok: true, alreadyLinked: false }, 201);
   }
 
+  // GET /api/tutor/pupils/:childId — Full pupil drill-down (tutor's view)
+  // Returns: child profile, recent quizzes, topic mastery, assignment recipients, notes count
+  const drillDownMatch = path.match(/^\/api\/tutor\/pupils\/([^/]+)$/);
+  if (drillDownMatch && request.method === 'GET') {
+    const childId = drillDownMatch[1];
+    if (!userId) return json({ error: 'Unauthorized' }, 401);
+
+    const tutorId = userId;
+    const tutorRow = await db.prepare('SELECT id FROM tutors WHERE id = ?').bind(tutorId).first();
+    if (!tutorRow) return json({ error: 'No tutor profile found' }, 403);
+
+    // Verify relationship
+    const link = await db.prepare(
+      'SELECT joined_at FROM pupil_tutors WHERE tutor_id = ? AND child_id = ?'
+    ).bind(tutorId, childId).first();
+    if (!link) return json({ error: 'Child not on roster' }, 404);
+
+    const [child, quizResults, topicPerf, assignRecipients, notesCount] = await Promise.all([
+      // Child profile + parent account name
+      db.prepare(`
+        SELECT c.id, c.display_name, c.year_group, c.target_school, c.created_at,
+               a.name AS account_name, a.email AS account_email
+        FROM children c
+        JOIN accounts a ON a.id = c.account_id
+        WHERE c.id = ?
+      `).bind(childId).first(),
+
+      // Last 50 quiz results (newest first)
+      db.prepare(`
+        SELECT topic_key, subject, score, total, completed_at, session_id
+        FROM quiz_results
+        WHERE child_id = ?
+        ORDER BY completed_at DESC
+        LIMIT 50
+      `).bind(childId).all(),
+
+      // Topic mastery summary
+      db.prepare(`
+        SELECT topic_key, subject, data
+        FROM topic_performance
+        WHERE child_id = ?
+      `).bind(childId).all(),
+
+      // Assignment recipients for this (tutor × child) pair
+      db.prepare(`
+        SELECT ar.id, ar.status, ar.assigned_at, ar.completed_at, ar.score,
+               ai.item_type, ai.item_ref,
+               a.title AS assignment_title, a.due_date
+        FROM assignment_recipients ar
+        JOIN assignment_items ai ON ai.id = ar.assignment_item_id
+        JOIN assignments a ON a.id = ar.assignment_id
+        WHERE ar.child_id = ? AND ar.tutor_id = ?
+        ORDER BY a.due_date DESC
+        LIMIT 30
+      `).bind(childId, tutorId).all(),
+
+      // Note count (not the bodies — list notes via GET /api/tutor/notes/:childId)
+      db.prepare(
+        'SELECT COUNT(*) as n FROM tutor_notes WHERE tutor_id = ? AND child_id = ?'
+      ).bind(tutorId, childId).first(),
+    ]);
+
+    const parsedTopicPerf = topicPerf.results.map(r => ({
+      topicKey: r.topic_key, subject: r.subject,
+      data: typeof r.data === 'string' ? JSON.parse(r.data) : r.data,
+    }));
+
+    return json({
+      child: { ...child, joinedAt: link.joined_at },
+      quizResults: quizResults.results,
+      topicPerformance: parsedTopicPerf,
+      assignmentRecipients: assignRecipients.results,
+      notesCount: notesCount?.n || 0,
+    });
+  }
+
   return null;
 }
