@@ -1187,7 +1187,8 @@ export const longdivisionSubConcepts = [
             interactInterpretation: "round up",
             interactWhy: "You need an extra minibus for the remaining 15 pupils — you can't leave them behind!",
             interactUnit: "pupils",
-            interactResultUnit: "minibuses"
+            interactResultUnit: "minibuses",
+            interactGroupLabel: "each minibus holds"
           },
           {
             name: "Tom",
@@ -1211,7 +1212,8 @@ export const longdivisionSubConcepts = [
             interactInterpretation: "round down",
             interactWhy: "You can only make 6 full skipping ropes — the leftover 20 cm isn't long enough for another one.",
             interactUnit: "cm of rope",
-            interactResultUnit: "skipping ropes"
+            interactResultUnit: "skipping ropes",
+            interactGroupLabel: "each skipping rope needs"
           },
           {
             name: "Sophie",
@@ -1235,7 +1237,8 @@ export const longdivisionSubConcepts = [
             interactInterpretation: "round up",
             interactWhy: "You need an extra box for the remaining 2 cakes — you can't leave them unboxed!",
             interactUnit: "cakes",
-            interactResultUnit: "boxes"
+            interactResultUnit: "boxes",
+            interactGroupLabel: "each box holds"
           }
         ],
         screens: [
@@ -1308,7 +1311,7 @@ export const longdivisionSubConcepts = [
           {
             type: "interact",
             title: () => "Think about the context!",
-            body: (v) => `${v.name} is ${v.interactScenario}. There are **${v.interactTotal} ${v.interactUnit}** and each group holds **${v.interactDivisor}**. How many ${v.interactResultUnit} are needed?`,
+            body: (v) => `${v.name} is ${v.interactScenario}. There are **${v.interactTotal} ${v.interactUnit}** and ${v.interactGroupLabel || 'each group holds'} **${v.interactDivisor} ${v.interactUnit}**. How many ${v.interactResultUnit} are needed?`,
             visual: {
               component: "BusStopDiagram",
               props: (v) => {
@@ -1567,7 +1570,7 @@ export const longdivisionSubConcepts = [
         variableSets: [
           {
             name: "Emily",
-            scenario: "estimating how many bags of sweets to buy for a party",
+            scenario: "packing 372 sweets into bags of 6 for a party",
             dividend: 372,
             divisor: 6,
             quotient: 62,
@@ -1579,7 +1582,7 @@ export const longdivisionSubConcepts = [
           },
           {
             name: "Mr Shah",
-            scenario: "working out how many trips to carry chairs",
+            scenario: "carrying 485 chairs in loads of 8",
             dividend: 485,
             divisor: 8,
             quotient: 60,
@@ -1591,7 +1594,7 @@ export const longdivisionSubConcepts = [
           },
           {
             name: "Lauren",
-            scenario: "splitting beads into necklaces",
+            scenario: "splitting 294 beads into necklaces of 7",
             dividend: 294,
             divisor: 7,
             quotient: 42,

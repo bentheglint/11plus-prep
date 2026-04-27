@@ -493,7 +493,7 @@ export const hiddenWordsSubConcepts = [
             interactWordAfter: "changed",
             interactOptions: ["EACH", "ACHE", "ECHO", "EDGE", "INCH"],
             interactCorrectAnswer: "EACH",
-            interactExplanation: "The word EACH is hidden across 'ideA' and 'CHanged' — EA(2) + CH(2) = EACH, meaning 'every single one'. ✓"
+            interactExplanation: "The word EACH is hidden across 'idEA' and 'CHanged' — EA(2) + CH(2) = EACH, meaning 'every single one'. ✓"
           },
           {
             name: "Priya",

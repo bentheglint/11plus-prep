@@ -39,11 +39,11 @@ export const negativeNumbersSubConcepts = [
           },
           {
             name: "Oliver",
-            scenario: "looking at his piggy bank balance after buying a present",
+            scenario: "checking his pocket money app after spending more than he had saved",
             context: "money",
             negValue: -3,
-            zeroMeaning: "no money and no debt",
-            negMeaning: "owing £3",
+            zeroMeaning: "no money — breaking even",
+            negMeaning: "£3 in debt — he needs to earn £3 just to get back to zero",
             unit: "£",
             lineMin: -6,
             lineMax: 5
@@ -2037,7 +2037,7 @@ export const negativeNumbersSubConcepts = [
           {
             type: "teach",
             title: () => "Same maths, different context!",
-            body: (v) => `No matter the context — money, depth, or floors — the maths is always the same. Tap each step to see how adding works from a negative starting point.`,
+            body: (v) => `No matter the context — money, depth, or floors — the maths is always the same. Start at **${v.startNum}${v.unit}**, add **+${v.change}**, and you land on **${v.answer}${v.unit}**. The number line shows the jump — count right from the starting point.`,
             visual: {
               component: "NumberLine",
               props: (v) => ({
@@ -2056,7 +2056,7 @@ export const negativeNumbersSubConcepts = [
                 highlight: [Math.min(v.startNum, v.answer), Math.max(v.startNum, v.answer)]
               })
             },
-            interaction: { type: "tap-to-reveal" }
+            interaction: null
           },
           {
             type: "interact",
