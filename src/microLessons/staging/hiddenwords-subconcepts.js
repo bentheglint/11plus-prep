@@ -1684,7 +1684,6 @@ export const hiddenWordsSubConcepts = [
               { type: 'visual', component: 'WorkedExample', props: (v) => ({
                 steps: [
                   { text: `Look at: "${v.splitDisplay}"`, why: `These letters span the boundary` },
-              { type: 'text', content: (v) => `Find the hidden word — it reads BACKWARDS.\n\n**"${v.sentence}"**\n\nClue: ${v.clue}` },
                   { text: `Read the letters backwards`, why: `Reverse the order to reveal the word` },
                   { text: `Hidden word: ${v.hiddenWord} ✓`, why: v.explanation }
                 ],

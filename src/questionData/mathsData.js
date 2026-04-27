@@ -2844,7 +2844,7 @@ const mathsData = {
     {
       id: 142,
       difficulty: 3,
-      question: "Ella scores 7.5, 8.25 and 9.0 in three gymnastics rounds. What is her mean (average) score?",
+      question: "Ella scores 7.5, 8.25 and 9.0 in three gymnastics rounds. What is her mean score?",
       options: ["8.00", "8.15", "8.75", "8.50", "8.25"],
       correct: 4,
       explanation: "Total: 7.5 + 8.25 + 9.0 = 24.75. Mean: 24.75 ÷ 3 = 8.25. ✓"
