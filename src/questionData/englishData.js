@@ -11549,7 +11549,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "No mistake"
           ],
           "correct": 4,
-          "explanation": "There is no spelling mistake. 'Family', 'Bournemouth', 'lovely', and 'seaside' are all spelled correctly. This is a common exam word — worth practising! ✓"
+          "explanation": "There is no spelling mistake — every word is correct. Watch out for 'lovely' though: it's a word children often misspell as 'lovley' or 'lovly'. The rule is 'love' + 'ly', and the silent 'e' stays in 'lovely' because '-ly' starts with a consonant. Worth practising. ✓"
         },
         {
           "id": 241,
@@ -11681,7 +11681,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 247,
           "difficulty": 2,
           "questionType": "error-spotting",
-          "question": "Which section contains a spelling error?",
+          "question": "Which section contains a punctuation error?",
           "segments": [
             "The childrens' painting",
             "was displayed in the",
@@ -11696,7 +11696,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "No mistake"
           ],
           "correct": 0,
-          "explanation": "'childrens'' should be 'children's'. The possessive of 'children' (already plural) adds apostrophe + s: children's. Sound it out carefully — the spelling matches the sounds. ✓"
+          "explanation": "'childrens'' has the apostrophe in the wrong place. 'Children' is already plural (it's an irregular plural — no 's' on the end), so to show possession we add apostrophe + s: children's painting. The apostrophe-after-s pattern (dogs' leads) is only for plurals that end in 's'. ✓"
         },
         {
           "id": 248,
@@ -11765,7 +11765,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 251,
           "difficulty": 2,
           "questionType": "error-spotting",
-          "question": "Which section contains a spelling error?",
+          "question": "Which section contains a punctuation error?",
           "segments": [
             "The school nurse",
             "checked everyones",
@@ -11780,7 +11780,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "No mistake"
           ],
           "correct": 1,
-          "explanation": "'everyones' should be 'everyone's'. It needs an apostrophe to show possession: everyone's height. If unsure, try covering the options and spelling it yourself first. ✓"
+          "explanation": "'everyones' is missing an apostrophe. To show that the height and weight belong to everyone, we need apostrophe + s: everyone's height and weight. 'Everyone' is treated as a singular pronoun, so the rule is the same as 'the dog's bowl'. ✓"
         },
         {
           "id": 252,
@@ -17584,7 +17584,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The museum was","fascinating, we saw","Egyptian mummies and","Roman armour."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
         },
         {
@@ -22532,16 +22532,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 290,
           "difficulty": 3,
-          "question": "Choose the correct word to complete the sentence: 'The weather ___ affect whether the trip goes ahead.'",
+          "question": "Choose the correct word to complete the sentence: 'The new rules had a noticeable ___ on the team's performance.'",
           "options": [
-            "effect",
             "affect",
             "effects",
-            "effecting",
-            "affects"
+            "affected",
+            "effect",
+            "affecting"
           ],
-          "correct": 4,
-          "explanation": "'Affect' is a verb meaning 'to influence'. 'The weather affects' — with the third person singular 's'. 'Effect' is usually a noun (the effect of something). ✓"
+          "correct": 3,
+          "explanation": "'Effect' is the noun meaning 'a result or change'. The sentence needs a noun after 'a noticeable' — 'a noticeable effect'. 'Affect' is the verb meaning 'to influence'. Trick to remember: noun = effect, verb = affect. ✓"
         },
         {
           "id": 291,

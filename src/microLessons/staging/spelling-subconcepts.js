@@ -628,8 +628,8 @@ export const spellingSubConcepts = [
               component: "SentenceDisplay",
               props: (v) => ({
                 mode: "highlight",
-                text: `${v.wrongVersion}  or  ${v.correctVersion}?`,
-                highlightWords: [{ word: v.wrongVersion, color: "#e74c3c" }, { word: v.correctVersion, color: "#22c55e" }],
+                text: `${v.wrong}  or  ${v.correct}?`,
+                highlightWords: [{ word: v.wrong, color: "#e74c3c" }, { word: v.correct, color: "#22c55e" }],
                 label: "Which is correct?"
               })
             },
@@ -1493,8 +1493,8 @@ export const spellingSubConcepts = [
                 steps: [
                   { text: "-tion vs -sion: after L, N, R, S → use -sion", why: "expulsion, tension, version, expression" },
                   { text: "-tion for most other words", why: "education, invention, action, station" },
-                  { text: "-ent/-ence: different, excellent, confidence", why: "Learn these as a group" },
-                  { text: "-ant/-ance: important, pleasant, importance", why: "Learn these as a separate group ✓" }
+                  { text: "Still unsure? Think of a word from the same family", why: "If 'televise' uses S, then 'television' uses -sion ✓" },
+                  { text: "Other tricky pairs (-ent/-ant, -ence/-ance) are covered in the next lesson", why: "One rule at a time — master -tion/-sion first! ✓" }
                 ],
                 allRevealed: true
               })
@@ -2524,7 +2524,7 @@ export const spellingSubConcepts = [
             visual: null,
             interaction: {
               type: "multiple-choice",
-              question: (v) => `Which is the correct spelling of "${v.testWord}"?`,
+              question: (v) => `Which of these is spelled correctly?`,
               getOptions: (v) => v.testOptions,
               correctAnswer: (v) => v.testAnswer,
               feedback: {
@@ -3612,8 +3612,8 @@ export const spellingSubConcepts = [
               component: "SentenceDisplay",
               props: (v) => ({
                 mode: "highlight",
-                text: `${v.wrongVersion}  or  ${v.correctVersion}?`,
-                highlightWords: [{ word: v.wrongVersion, color: "#e74c3c" }, { word: v.correctVersion, color: "#22c55e" }],
+                text: `${v.wrong}  or  ${v.correct}?`,
+                highlightWords: [{ word: v.wrong, color: "#e74c3c" }, { word: v.correct, color: "#22c55e" }],
                 label: "Which is correct?"
               })
             },

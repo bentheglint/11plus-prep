@@ -15226,7 +15226,7 @@ negativenumbers: {
       question: "Which is larger: -40 or -35?",
       options: ["-40", "They are equal", "-35", "Cannot tell", "Neither"],
       correct: 2,
-      explanation: "-35 is larger (closer to zero) than -40. ✓"
+      explanation: "-35 is larger. The trap here is that 40 looks like a bigger number than 35 — and it is, when both are positive. But with negatives the rule flips: the closer a number is to zero, the larger it is. Picture a number line: -40 sits further to the left than -35, so -35 is greater. Quick check: which would you rather have in your bank account, -£40 or -£35? -£35 — because you owe less. ✓"
     },
     {
       id: 65,
@@ -27505,10 +27505,10 @@ speeddistancetime: {
     {
       id: 83,
       difficulty: 3,
-      question: "A removal van drives 270 km on the M3 in 3 hours, then 90 km through suburbs in 2 hours. Average speed?",
+      question: "A removal van drives 270 km on the M3 in 3 hours, then 90 km through suburbs in a further 2 hours. What is the average speed for the whole journey?",
       options: ["72 km/h", "70 km/h", "68 km/h", "74 km/h", "76 km/h"],
       correct: 0,
-      explanation: "Total = 270 + 90 = 360 km. Time = 3 + 2 = 5 hours. Average = 360 \u00f7 5 = 72 km/h. \u2713"
+      explanation: "Average speed for a whole journey = total distance \u00f7 total time. Total distance = 270 + 90 = 360 km. Total time = 3 + 2 = 5 hours. Average speed = 360 \u00f7 5 = 72 km/h. Watch the trap: averaging the two speeds (90 km/h and 45 km/h \u00f7 2 = 67.5 km/h) is wrong because the van spent unequal time at each speed. Always use total distance \u00f7 total time. \u2713"
     },
     {
       id: 84,

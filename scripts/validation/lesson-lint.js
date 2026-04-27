@@ -13,7 +13,7 @@ const path = require('path');
 // CONFIGURATION
 // ============================================================
 
-const STAGING_DIR = path.join(__dirname, '..', 'src', 'microLessons', 'staging');
+const STAGING_DIR = path.join(__dirname, '..', '..', 'src', 'microLessons', 'staging');
 const OUTPUT_FILE = path.join(__dirname, 'lint-report.json');
 
 // Topics where visual components should appear on hook/teach

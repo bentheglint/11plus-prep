@@ -6223,7 +6223,7 @@ const vrData = {
         },
         {
           id: 15,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
           question: "A 4-letter word meaning 'a grain eaten around the world' is hidden across two of these words. Find the two words.",
           options: ["broke","The","noisy","electric","engine"],
@@ -6250,7 +6250,7 @@ const vrData = {
         },
         {
           id: 18,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
           question: "A 4-letter word meaning 'weak or feeble' is hidden across two of these words. Find the two words.",
           options: ["tonight","Near","the","villa","menu"],
@@ -6277,7 +6277,7 @@ const vrData = {
         },
         {
           id: 21,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
           question: "A 4-letter word meaning 'a reddish-brown coating on metal' is hidden across two of these words. Find the two words.",
           options: ["Monday","He","left","Peru","starting"],
@@ -6747,10 +6747,10 @@ const vrData = {
           id: 73,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to kick a ball before it hits the ground' is hidden across two of these words. Find the two words.",
-          options: ["step","until","the","bell","rings"],
+          question: "A 4-letter word meaning 'unkind or nasty' is hidden across two of these words. Find the two words.",
+          options: ["Some","animals","like","dry","food"],
           correctPair: [0,1],
-          explanation: "The word PUNT is hidden across 'steP' and 'UNTil'. Take the last letter of 'step' (P) and the first three of 'until' (UNT) = PUNT. ✓"
+          explanation: "The word MEAN is hidden across 'soME' and 'ANimals'. Take the last two letters of 'Some' (ME) and the first two of 'animals' (AN) = MEAN. ✓"
         },
         {
           id: 74,
