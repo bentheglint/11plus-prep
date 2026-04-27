@@ -43,6 +43,7 @@ import { selectWeightedTopics } from './utils/spacedRepetition';
 import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
 import { checkAnswerCorrectness, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
 import { getQuizSaveKey, buildQuizSaveState, isQuizExpired, parseAndValidateQuiz } from './utils/quizPersistence';
+import { isTutorAllowlisted } from './utils/tutorAllowlist';
 import useLeitner from './hooks/useLeitner';
 import useTestingCoverage from './hooks/useTestingCoverage';
 import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMode';
@@ -68,7 +69,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -1691,7 +1692,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         activeChildId={activeChildId}
         onSwitchChild={setActiveChildId}
         onManageChildren={() => setCurrentView('children')}
-        onTutorSignup={() => setCurrentView('tutorSignup')}
+        onTutorSignup={isTutorAllowlisted(userEmail) ? () => setCurrentView('tutorSignup') : null}
       />
     );
   }

@@ -503,7 +503,8 @@ function AuthGateReal({ children }) {
 
   // Ready — render the app with child name + access info + active child ID + children list
   if (onboardingStep === 'ready') {
-    return children(childName, getToken, access, activeChildId, childrenList);
+    const userEmail = user?.primaryEmailAddress?.emailAddress || '';
+    return children(childName, getToken, access, activeChildId, childrenList, userEmail);
   }
 
   // Fallback loading
