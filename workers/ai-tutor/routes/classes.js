@@ -19,6 +19,10 @@ async function ownClass(db, classId, tutorId) {
 }
 
 export async function handleClassRoutes(request, env, userId, path) {
+  // Only handle class routes — fall through silently for everything else
+  // so non-tutor users hitting /api/data/* etc. aren't rejected here.
+  if (!path.startsWith('/api/tutor/classes')) return null;
+
   const db = env.DB;
   const tutorId = await requireTutor(db, userId);
   if (!tutorId) return json({ error: 'No tutor profile found' }, 403);
