@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PrepStep Recovery Export</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+      padding: 24px;
+    }
+    h1 { font-size: 22px; margin: 0 0 12px; }
+    p  { color: #475569; line-height: 1.5; margin: 12px 0; }
+    label {
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #334155;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    textarea {
+      height: 280px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      background: #f8fafc;
+      resize: vertical;
+    }
+    .actions { margin-top: 16px; }
+    button, .download-link {
+      display: inline-block;
+      padding: 12px 18px;
+      font-size: 16px;
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: inherit;
+    }
+    button.primary, .download-link { background: #2563eb; }
+    button.success { background: #16a34a; }
+    button.warn    { background: #b45309; }
+    button:disabled { background: #94a3b8; cursor: not-allowed; }
+    .stats { color: #475569; margin: 16px 0 0; }
+    .footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 12px;
+      color: #64748b;
+      word-break: break-all;
+    }
+    .error {
+      color: #b91c1c;
+      padding: 10px;
+      background: #fee2e2;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    #result {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+    }
+    #result[hidden] { display: none; }
+    .hint {
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>PrepStep Recovery Export</h1>
+    <p>
+      Emergency tool for recovering local app data after the 27 April incident.
+      This page reads <strong>only your own browser storage</strong> on this device.
+      Nothing is uploaded - you copy or download the result and send it to Ben yourself.
+    </p>
+
+    <label for="device">Device label (e.g. evies-ipad, toms-iphone)</label>
+    <input id="device" type="text" placeholder="evies-ipad" autocomplete="off" autocapitalize="off" spellcheck="false">
+
+    <div class="actions">
+      <button id="run" class="primary" type="button">Run Export</button>
+    </div>
+
+    <div id="error" class="error" hidden></div>
+
+    <div id="result" hidden>
+      <p class="stats" id="stats"></p>
+      <div class="actions">
+        <button id="copy" class="primary" type="button">Copy to clipboard</button>
+        <a id="download" class="download-link" download>Download JSON</a>
+      </div>
+      <p class="hint">Or long-press inside this text, Select All, Copy:</p>
+      <textarea id="output" readonly></textarea>
+    </div>
+
+    <div class="footer">
+      <strong>Origin:</strong> <span id="origin"></span><br>
+      <strong>Device:</strong> <span id="ua"></span>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var deviceInput = document.getElementById('device');
+      var runBtn      = document.getElementById('run');
+      var copyBtn     = document.getElementById('copy');
+      var dlLink      = document.getElementById('download');
+      var output      = document.getElementById('output');
+      var statsEl     = document.getElementById('stats');
+      var resultEl    = document.getElementById('result');
+      var errorEl     = document.getElementById('error');
+
+      document.getElementById('origin').textContent = location.origin;
+      document.getElementById('ua').textContent     = navigator.userAgent;
+
+      // Keep ALL previously created blob URLs alive so that an
+      // in-flight Safari download from a prior export is not invalidated
+      // by clicking Run Export again. Revoke them only when the page
+      // is being unloaded.
+      var blobUrls = [];
+      window.addEventListener('pagehide', function () {
+        for (var i = 0; i < blobUrls.length; i++) {
+          try { URL.revokeObjectURL(blobUrls[i]); } catch (e) {}
+        }
+      });
+
+      function showError(msg) {
+        errorEl.textContent = msg;
+        errorEl.hidden = false;
+      }
+      function clearError() {
+        errorEl.hidden = true;
+        errorEl.textContent = '';
+      }
+
+      function setStats(keyCount, byteSize) {
+        // Use DOM nodes instead of innerHTML for defence-in-depth.
+        statsEl.textContent = '';
+        var k = document.createElement('strong');
+        k.textContent = String(keyCount);
+        var b = document.createElement('strong');
+        b.textContent = byteSize.toLocaleString();
+        statsEl.appendChild(k);
+        statsEl.appendChild(document.createTextNode(' keys - '));
+        statsEl.appendChild(b);
+        statsEl.appendChild(document.createTextNode(' bytes'));
+      }
+
+      function buildPayload(deviceLabel) {
+        var data = {};
+        var len = 0;
+        try { len = localStorage.length; }
+        catch (e) { throw new Error('localStorage is not accessible: ' + e.message); }
+
+        for (var i = 0; i < len; i++) {
+          var k;
+          try { k = localStorage.key(i); }
+          catch (e) { continue; }
+          if (k == null) continue;
+          try { data[k] = localStorage.getItem(k); }
+          catch (e) { data[k] = null; }
+        }
+        return {
+          meta: {
+            device: deviceLabel || 'unlabelled',
+            exportedAt: new Date().toISOString(),
+            origin: location.origin,
+            userAgent: navigator.userAgent,
+            keyCount: Object.keys(data).length
+          },
+          localStorage: data
+        };
+      }
+
+      runBtn.addEventListener('click', function () {
+        clearError();
+        runBtn.disabled = true;
+        try {
+          var payload = buildPayload(deviceInput.value.trim());
+          var json    = JSON.stringify(payload, null, 2);
+          output.value = json;
+
+          // Compute actual byte size (json.length is UTF-16 code units;
+          // Blob.size is the real byte count).
+          var blob = null;
+          var blobSize = json.length;
+          try {
+            blob = new Blob([json], { type: 'application/json' });
+            blobSize = blob.size;
+          } catch (e) { /* keep json.length fallback */ }
+
+          setStats(payload.meta.keyCount, blobSize);
+
+          var fileName = 'prepstep-export-' + new Date().toISOString().slice(0, 10) + '.json';
+
+          // Reset download link visibility on every successful export so
+          // that a prior transient failure does not permanently hide it.
+          dlLink.style.display = '';
+
+          var blobOk = false;
+          if (blob) {
+            try {
+              var url = URL.createObjectURL(blob);
+              blobUrls.push(url); // kept alive; revoked on pagehide
+              dlLink.href = url;
+              dlLink.download = fileName;
+              blobOk = true;
+            } catch (e) { /* fall through */ }
+          }
+
+          if (!blobOk) {
+            try {
+              dlLink.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(json);
+              dlLink.download = fileName;
+            } catch (e2) {
+              dlLink.style.display = 'none';
+            }
+          }
+
+          copyBtn.textContent = 'Copy to clipboard';
+          copyBtn.className = 'primary';
+          resultEl.hidden = false;
+        } catch (err) {
+          showError('Export failed: ' + (err && err.message ? err.message : String(err)));
+        } finally {
+          runBtn.disabled = false;
+        }
+      });
+
+      copyBtn.addEventListener('click', function () {
+        if (!output.value) return;
+
+        function setCopied() {
+          copyBtn.textContent = 'Copied to clipboard';
+          copyBtn.className = 'success';
+        }
+        function setFailed() {
+          copyBtn.textContent = 'Copy failed - long-press the text below';
+          copyBtn.className = 'warn';
+        }
+
+        // Try the modern API first.
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(output.value).then(setCopied, function () {
+            // Modern API rejected (often happens on iOS Safari without focus).
+            tryExecCommand();
+          });
+          return;
+        }
+        tryExecCommand();
+
+        function tryExecCommand() {
+          var copied = false;
+          try {
+            output.focus();
+            output.setSelectionRange(0, output.value.length);
+            copied = document.execCommand('copy');
+          } catch (e) {}
+          if (copied) setCopied(); else setFailed();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
