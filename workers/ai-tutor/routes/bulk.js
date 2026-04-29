@@ -90,15 +90,21 @@ export async function handleMigrate(request, env, userId) {
   let totalImported = 0;
 
   // ── Import quiz history ──
+  // Bug fixed 29 Apr 2026: previously dropped session_id entirely. Without
+  // it, the partial UNIQUE index in migration 0007 can't dedupe future
+  // replays. Field-name fallbacks support legacy (sessionId) and modern
+  // (session_id) payloads.
   if (body.quizHistory && Array.isArray(body.quizHistory)) {
     const stmts = body.quizHistory.map(q =>
       db.prepare(
-        `INSERT INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode, completed_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        `INSERT INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode, completed_at, session_id)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
       ).bind(
         childId, q.topicKey || q.topic || '', q.category || q.subject || 'maths',
         q.score || 0, q.total || q.questions?.length || 10,
-        q.time || null, q.quizMode || null, q.date || new Date().toISOString()
+        q.time || q.timeSeconds || null, q.quizMode || q.mode || null,
+        q.date || q.completedAt || new Date().toISOString(),
+        q.sessionId || q.session_id || null
       )
     );
     if (stmts.length > 0) {
@@ -133,17 +139,32 @@ export async function handleMigrate(request, env, userId) {
   }
 
   // ── Import question results ──
+  // Bug fixed 29 Apr 2026: previously read q.timestamp (a field that legacy
+  // localStorage doesn't have — the real field is q.date), so all migrated
+  // rows got attempted_at = migration time instead of the real answer time.
+  // Same code also dropped session_id and selected_answer, and used wrong
+  // field names (q.isCorrect vs q.correct, q.timeMs vs q.timeSpentMs).
+  // Now reads with defensive fallbacks for both legacy and modern shapes.
   if (body.questionResults && Array.isArray(body.questionResults)) {
-    const stmts = body.questionResults.map(q =>
-      db.prepare(
-        `INSERT INTO question_results (child_id, question_id, topic_key, subject, is_correct, time_ms, difficulty, attempted_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+    const stmts = body.questionResults.map(q => {
+      const isCorrect = (q.isCorrect ?? q.correct) ? 1 : 0;
+      const timeMs = q.timeMs ?? q.timeSpentMs ?? null;
+      const attemptedAt = q.attempted_at || q.attemptedAt || q.date || q.timestamp || new Date().toISOString();
+      const sessionId = q.session_id ?? q.sessionId ?? null;
+      const selectedAnswer = q.selected_answer ?? q.selectedAnswer;
+      const selectedAnswerJson = selectedAnswer !== undefined && selectedAnswer !== null
+        ? (typeof selectedAnswer === 'string' ? selectedAnswer : JSON.stringify(selectedAnswer))
+        : null;
+      return db.prepare(
+        `INSERT INTO question_results (child_id, question_id, topic_key, subject, is_correct, time_ms, difficulty, attempted_at, session_id, selected_answer)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
       ).bind(
-        childId, q.questionId || 0, q.topicKey || '', q.subject || 'maths',
-        q.isCorrect ? 1 : 0, q.timeMs || null, q.difficulty || null,
-        q.timestamp || new Date().toISOString()
-      )
-    );
+        childId, q.questionId || q.question_id || 0,
+        q.topicKey || q.topic_key || '', q.subject || 'maths',
+        isCorrect, timeMs, q.difficulty || null,
+        attemptedAt, sessionId, selectedAnswerJson
+      );
+    });
     if (stmts.length > 0) {
       for (let i = 0; i < stmts.length; i += 100) {
         await db.batch(stmts.slice(i, i + 100));
@@ -171,13 +192,29 @@ export async function handleMigrate(request, env, userId) {
   }
 
   // ── Import topic performance ──
+  // Bug fixed 29 Apr 2026: previously hardcoded subject='maths' for every
+  // entry — English and VR topic_performance was being mislabelled. Now
+  // reads subject from the value (modern shape: { subject, correct, total })
+  // or from a (subject, topic_key) compound key (legacy: "maths:algebra"),
+  // falling back to 'maths' only as last resort.
   if (body.topicPerformance && typeof body.topicPerformance === 'object') {
-    const stmts = Object.entries(body.topicPerformance).map(([key, data]) =>
-      db.prepare(
+    const stmts = Object.entries(body.topicPerformance).map(([key, data]) => {
+      let topicKey = key;
+      let subject = 'maths';
+      // Compound-key form: "subject:topic"
+      if (typeof key === 'string' && key.includes(':')) {
+        const [s, t] = key.split(':', 2);
+        if (s && t) { subject = s; topicKey = t; }
+      }
+      // Modern shape: data carries subject directly
+      if (data && typeof data === 'object' && data.subject) {
+        subject = data.subject;
+      }
+      return db.prepare(
         `INSERT OR REPLACE INTO topic_performance (child_id, topic_key, subject, data, version)
          VALUES (?, ?, ?, ?, 1)`
-      ).bind(childId, key, 'maths', JSON.stringify(data))
-    );
+      ).bind(childId, topicKey, subject, JSON.stringify(data));
+    });
     if (stmts.length > 0) {
       for (let i = 0; i < stmts.length; i += 100) {
         await db.batch(stmts.slice(i, i + 100));
@@ -241,24 +278,45 @@ export async function handleMigrate(request, env, userId) {
   }
 
   // ── Import streaks ──
+  // Bug fixed 29 Apr 2026: previously used UPDATE only. Default rows are
+  // normally auto-created by POST /api/account/child, but if the children
+  // row was ever wiped + recreated without re-running that route (e.g.
+  // catastrophic migration recovery), the UPDATE matched zero rows and
+  // streaks data was silently lost. Now upserts.
   if (body.streaks && typeof body.streaks === 'object') {
     const s = body.streaks;
     await db.prepare(
-      `UPDATE streaks SET current_streak = ?, longest_streak = ?, last_quiz_date = ?,
-       streak_history = ?, version = 1 WHERE child_id = ?`
+      `INSERT INTO streaks (child_id, current_streak, longest_streak, last_quiz_date, streak_history, version)
+       VALUES (?, ?, ?, ?, ?, 1)
+       ON CONFLICT(child_id) DO UPDATE SET
+         current_streak = excluded.current_streak,
+         longest_streak = excluded.longest_streak,
+         last_quiz_date = excluded.last_quiz_date,
+         streak_history = excluded.streak_history,
+         version = 1,
+         updated_at = datetime('now')`
     ).bind(
-      s.currentStreak ?? 0, s.longestStreak ?? 0, s.lastQuizDate || null,
-      JSON.stringify(s.streakHistory || []), childId
+      childId, s.currentStreak ?? 0, s.longestStreak ?? 0,
+      s.lastQuizDate || null, JSON.stringify(s.streakHistory || [])
     ).run();
     totalImported++;
   }
 
   // ── Import prep points ──
+  // Same bug as streaks above — UPDATE-only would silently lose data.
   if (body.prepPoints && typeof body.prepPoints === 'object') {
     const p = body.prepPoints;
     await db.prepare(
-      `UPDATE prep_points SET total = ?, level = ?, today_pp = ?, today_date = ?, version = 1 WHERE child_id = ?`
-    ).bind(p.total ?? 0, p.level ?? 1, p.todayPP ?? 0, p.todayDate || null, childId).run();
+      `INSERT INTO prep_points (child_id, total, level, today_pp, today_date, version)
+       VALUES (?, ?, ?, ?, ?, 1)
+       ON CONFLICT(child_id) DO UPDATE SET
+         total = excluded.total,
+         level = excluded.level,
+         today_pp = excluded.today_pp,
+         today_date = excluded.today_date,
+         version = 1,
+         updated_at = datetime('now')`
+    ).bind(childId, p.total ?? 0, p.level ?? 1, p.todayPP ?? 0, p.todayDate || null).run();
     totalImported++;
   }
 
@@ -295,9 +353,16 @@ export async function handleMigrate(request, env, userId) {
   }
 
   // ── Import last session date ──
+  // Same UPDATE-only bug as streaks/PP — fixed via upsert.
   if (body.lastSessionDate) {
-    await db.prepare('UPDATE preferences SET last_session_date = ? WHERE child_id = ?')
-      .bind(body.lastSessionDate, childId).run();
+    await db.prepare(
+      `INSERT INTO preferences (child_id, last_session_date, version)
+       VALUES (?, ?, 1)
+       ON CONFLICT(child_id) DO UPDATE SET
+         last_session_date = excluded.last_session_date,
+         version = 1,
+         updated_at = datetime('now')`
+    ).bind(childId, body.lastSessionDate).run();
   }
 
   // Record migration
