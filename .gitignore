@@ -71,3 +71,6 @@ scripts/bias-batch-*
 scripts/oracle-batch-*
 scripts/comprehension-length-bias.json
 scripts/write-remaining-batches.js
+
+# Recovery toolkit generated artefacts (regenerable from scripts/recovery/*.py)
+/recovery-output

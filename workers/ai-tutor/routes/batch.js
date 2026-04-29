@@ -96,16 +96,22 @@ function buildAppendStatement(db, childId, type, payload) {
       const selectedAnswerJson = selectedAnswer !== undefined && selectedAnswer !== null
         ? JSON.stringify(selectedAnswer)
         : null;
+      // INSERT OR IGNORE so a stale SyncQueue replay (after the 27 April
+      // wipe + restore) silently no-ops on rows already restored. Backed by
+      // the partial UNIQUE INDEX in migration 0007 on
+      // (child_id, question_id, session_id, topic_key) WHERE session_id IS NOT NULL.
       return db.prepare(
-        `INSERT INTO question_results (child_id, question_id, topic_key, subject, is_correct, time_ms, difficulty, session_id, selected_answer) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        `INSERT OR IGNORE INTO question_results (child_id, question_id, topic_key, subject, is_correct, time_ms, difficulty, session_id, selected_answer) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
       ).bind(childId, questionId, topicKey, subject, isCorrect ? 1 : 0, timeMs || null, difficulty || null, sessionId || null, selectedAnswerJson);
     }
     case 'quiz-result': {
       const { subject, score, total, timeSeconds, quizMode, sessionId } = payload;
       const topicKey = normaliseTopicKey(payload.topicKey);
       if (!topicKey || !subject || score == null || !total) return null;
+      // INSERT OR IGNORE — see question-result above for rationale.
+      // Partial UNIQUE on (child_id, session_id, topic_key, subject) where session_id IS NOT NULL.
       return db.prepare(
-        `INSERT INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode, session_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        `INSERT OR IGNORE INTO quiz_results (child_id, topic_key, subject, score, total, time_seconds, quiz_mode, session_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
       ).bind(childId, topicKey, subject, score, total, timeSeconds || null, quizMode || null, sessionId || null);
     }
     case 'mock-result': {
@@ -244,11 +250,21 @@ export async function handleBatch(request, env, userId) {
     preferences: prefsRow?.version ?? 1,
   };
 
-  // Build per-operation batches so a UUID race on one op does not roll back others.
-  // Each opBatch carries the statements that MUST commit atomically together
-  // (data + marker), and the result slot to update after execution.
+  // Build per-operation execution plans. Two flavours:
+  //   - Append-only / idempotent: data stmt + marker run in a tiny atomic
+  //     batch (existing behaviour). INSERT OR IGNORE / ON CONFLICT means
+  //     replays of already-restored rows silently no-op. Marker write is
+  //     unconditional so the client stops retrying.
+  //   - Mutable with CAS (streaks/prep_points/preferences/topic_performance):
+  //     data stmt runs atomic compare-and-swap (UPDATE ... WHERE version = ?).
+  //     If meta.changes === 0, the update lost the race — return 'conflict'
+  //     and DO NOT write the UUID marker (so client can refetch + retry with
+  //     a fresh UUID). If meta.changes === 1, write the marker.
+  //
+  //   This addresses Codex review findings A (topic-performance had no version
+  //   check) and B (TOCTOU lost-update race on streaks/PP/prefs).
   const results = [];
-  const opBatches = []; // Array<{ uuid, resultIndex, stmts: Statement[] }>
+  const opPlans = []; // Array<{ uuid, resultIndex, kind: 'append' | 'cas', ... }>
 
   for (const op of operations) {
     // Skip already-processed (idempotent)
@@ -257,7 +273,7 @@ export async function handleBatch(request, env, userId) {
       continue;
     }
 
-    // Handle mutable operations with version checks
+    // Mutable operations — atomic compare-and-swap
     if (MUTABLE_TYPES.has(op.type)) {
       const versionKey = op.type;
       const clientVersion = op.payload.version;
@@ -268,31 +284,43 @@ export async function handleBatch(request, env, userId) {
       }
 
       if (versionKey === 'topic-performance') {
-        // Topic performance is keyed by topicKey+subject, handle separately
         const { subject, data } = op.payload;
         const topicKey = normaliseTopicKey(op.payload.topicKey);
         if (!topicKey || !subject || !data) {
           results.push({ uuid: op.uuid, status: 'error', error: 'Missing topicKey, subject, or data' });
           continue;
         }
-        // Upsert — no version conflict for topic-performance (it uses ON CONFLICT)
-        const stmt = db.prepare(
+        // Atomic upsert: INSERT a new row at version 1, OR (on conflict) UPDATE
+        // only if the existing row's version matches the client's claim.
+        // meta.changes === 0 means: a row existed with a different version → conflict.
+        const dataStmt = db.prepare(
           `INSERT INTO topic_performance (child_id, topic_key, subject, data, version)
            VALUES (?, ?, ?, ?, 1)
            ON CONFLICT(child_id, topic_key, subject) DO UPDATE SET
-             data = excluded.data, version = topic_performance.version + 1, updated_at = datetime('now')`
-        ).bind(childId, topicKey, subject, JSON.stringify(data));
+             data = excluded.data,
+             version = topic_performance.version + 1,
+             updated_at = datetime('now')
+           WHERE topic_performance.version = ?`
+        ).bind(childId, topicKey, subject, JSON.stringify(data), clientVersion);
         const resultIndex = results.length;
-        results.push({ uuid: op.uuid, status: 'ok' });
-        opBatches.push({
+        results.push({ uuid: op.uuid, status: 'pending' });
+        opPlans.push({
           uuid: op.uuid,
           resultIndex,
-          stmts: [stmt, buildUUIDMarker(db, childId, op.uuid, op.type)],
+          kind: 'cas',
+          versionKey,
+          clientVersion,
+          topicKey,
+          subject,
+          dataStmt,
+          markerStmt: buildUUIDMarker(db, childId, op.uuid, op.type),
         });
         continue;
       }
 
-      // Streaks, prep-points, preferences — check version
+      // Streaks / prep_points / preferences — pre-check, then atomic CAS UPDATE.
+      // Pre-check is best-effort (saves us building a stmt for an obvious
+      // mismatch); the SQL WHERE version=? is the real conflict gate.
       const currentVersion = currentVersions[versionKey];
       if (clientVersion !== currentVersion) {
         const currentData = versionKey === 'streaks' ? streaksRow
@@ -320,46 +348,48 @@ export async function handleBatch(request, env, userId) {
         }
       }
 
-      // Build the mutable UPDATE statement
-      let stmt;
+      // Build the atomic CAS UPDATE
+      let dataStmt;
       if (versionKey === 'streaks') {
         const { currentStreak, longestStreak, lastQuizDate, streakHistory } = op.payload;
-        stmt = db.prepare(
+        dataStmt = db.prepare(
           `UPDATE streaks SET current_streak = ?, longest_streak = ?, last_quiz_date = ?,
            streak_history = ?, version = version + 1, updated_at = datetime('now')
-           WHERE child_id = ?`
-        ).bind(currentStreak ?? 0, longestStreak ?? 0, lastQuizDate || null, JSON.stringify(streakHistory || []), childId);
-        currentVersions.streaks++;
+           WHERE child_id = ? AND version = ?`
+        ).bind(currentStreak ?? 0, longestStreak ?? 0, lastQuizDate || null,
+               JSON.stringify(streakHistory || []), childId, clientVersion);
       } else if (versionKey === 'prep-points') {
         const { total, level, todayPP, todayDate } = op.payload;
-        stmt = db.prepare(
+        dataStmt = db.prepare(
           `UPDATE prep_points SET total = ?, level = ?, today_pp = ?, today_date = ?,
            version = version + 1, updated_at = datetime('now')
-           WHERE child_id = ?`
-        ).bind(total ?? 0, level ?? 1, todayPP ?? 0, todayDate || null, childId);
-        currentVersions['prep-points']++;
+           WHERE child_id = ? AND version = ?`
+        ).bind(total ?? 0, level ?? 1, todayPP ?? 0, todayDate || null, childId, clientVersion);
       } else if (versionKey === 'preferences') {
         const { lastSessionDate } = op.payload;
-        stmt = db.prepare(
+        dataStmt = db.prepare(
           `UPDATE preferences SET last_session_date = ?, version = version + 1, updated_at = datetime('now')
-           WHERE child_id = ?`
-        ).bind(lastSessionDate || null, childId);
-        currentVersions.preferences++;
+           WHERE child_id = ? AND version = ?`
+        ).bind(lastSessionDate || null, childId, clientVersion);
       }
 
-      if (stmt) {
+      if (dataStmt) {
         const resultIndex = results.length;
-        results.push({ uuid: op.uuid, status: 'ok' });
-        opBatches.push({
+        results.push({ uuid: op.uuid, status: 'pending' });
+        opPlans.push({
           uuid: op.uuid,
           resultIndex,
-          stmts: [stmt, buildUUIDMarker(db, childId, op.uuid, op.type)],
+          kind: 'cas',
+          versionKey,
+          clientVersion,
+          dataStmt,
+          markerStmt: buildUUIDMarker(db, childId, op.uuid, op.type),
         });
       }
       continue;
     }
 
-    // Append-only operations
+    // Append-only operations (UUID dedup + table-level idempotency for quiz/question_results)
     const stmt = buildAppendStatement(db, childId, op.type, op.payload);
     if (!stmt) {
       results.push({ uuid: op.uuid, status: 'error', error: 'Invalid payload for type ' + op.type });
@@ -368,26 +398,96 @@ export async function handleBatch(request, env, userId) {
 
     const resultIndex = results.length;
     results.push({ uuid: op.uuid, status: 'ok' });
-    opBatches.push({
+    opPlans.push({
       uuid: op.uuid,
       resultIndex,
+      kind: 'append',
       stmts: [stmt, buildUUIDMarker(db, childId, op.uuid, op.type)],
     });
   }
 
-  // Execute each op as its own tiny atomic batch. If a UUID race loses, only
-  // that op rolls back — others in the same request still commit.
-  // (Codex Fix C-Worker)
-  for (const opBatch of opBatches) {
+  // Track the latest version we've actually committed for each scalar table
+  // (streaks/prep_points/preferences). Reflects real DB state, not optimistic
+  // bookkeeping. Used in the response so clients have a fresh post-batch
+  // version to optimistic-lock against next time.
+  const finalVersions = {
+    streaks: currentVersions.streaks,
+    'prep-points': currentVersions['prep-points'],
+    preferences: currentVersions.preferences,
+  };
+
+  // Execute. For 'append' ops we keep the atomic per-op batch (data + marker).
+  // For 'cas' ops we run sequentially: data stmt → check meta.changes →
+  // only commit marker if data update actually happened. This way a conflict
+  // (changes === 0) leaves processed_operations clean so the client can
+  // retry with a fresh UUID after refetching state.
+  for (const plan of opPlans) {
     try {
-      await db.batch(opBatch.stmts);
+      if (plan.kind === 'append') {
+        await db.batch(plan.stmts);
+        // status was set to 'ok' when the plan was queued; nothing to update
+      } else {
+        // CAS path
+        const dataResult = await plan.dataStmt.run();
+        if (dataResult?.meta?.changes === 0) {
+          // Lost the race or pre-check was stale. Fetch fresh state for the client.
+          let currentData = null;
+          let currentVersion = null;
+          if (plan.versionKey === 'topic-performance') {
+            const fresh = await db.prepare(
+              'SELECT version, data FROM topic_performance WHERE child_id = ? AND topic_key = ? AND subject = ?'
+            ).bind(childId, plan.topicKey, plan.subject).first();
+            if (fresh) {
+              currentVersion = fresh.version;
+              currentData = JSON.parse(fresh.data);
+            }
+          } else {
+            const tableMap = { 'streaks': 'streaks', 'prep-points': 'prep_points', 'preferences': 'preferences' };
+            const table = tableMap[plan.versionKey];
+            const fresh = await db.prepare(
+              `SELECT * FROM ${table} WHERE child_id = ?`
+            ).bind(childId).first();
+            if (fresh) {
+              currentVersion = fresh.version;
+              currentData = fresh;
+            }
+          }
+          // Update finalVersions to reflect what we just observed.
+          if (currentVersion != null && plan.versionKey in finalVersions) {
+            finalVersions[plan.versionKey] = currentVersion;
+          }
+          results[plan.resultIndex] = {
+            uuid: plan.uuid,
+            status: 'conflict',
+            currentVersion,
+            currentData,
+          };
+          continue;
+        }
+        // Data committed. Now mark the UUID. If marker insertion races
+        // (extremely rare), the client treats it as a duplicate response —
+        // the data was applied, retries will see CAS fail anyway.
+        try {
+          await plan.markerStmt.run();
+        } catch (err) {
+          if (!isUuidConflictError(err)) throw err;
+        }
+        const newVersion = plan.clientVersion + 1;
+        if (plan.versionKey in finalVersions) {
+          finalVersions[plan.versionKey] = newVersion;
+        }
+        results[plan.resultIndex] = {
+          uuid: plan.uuid,
+          status: 'ok',
+          newVersion,
+        };
+      }
     } catch (err) {
       if (isUuidConflictError(err)) {
-        // Concurrent duplicate — treat as 'duplicate' so client stops retrying
-        results[opBatch.resultIndex] = { uuid: opBatch.uuid, status: 'duplicate' };
+        results[plan.resultIndex] = { uuid: plan.uuid, status: 'duplicate' };
       } else {
-        results[opBatch.resultIndex] = {
-          uuid: opBatch.uuid,
+        results[plan.resultIndex] = {
+          uuid: plan.uuid,
           status: 'error',
           error: String(err?.message || err),
         };
@@ -411,9 +511,9 @@ export async function handleBatch(request, env, userId) {
     skipped,
     conflicts,
     versions: {
-      streaks: currentVersions.streaks,
-      prepPoints: currentVersions['prep-points'],
-      preferences: currentVersions.preferences,
+      streaks: finalVersions.streaks,
+      prepPoints: finalVersions['prep-points'],
+      preferences: finalVersions.preferences,
     },
     results,
   });
