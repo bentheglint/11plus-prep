@@ -208,19 +208,6 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
 
-    // ── EMERGENCY WRITE FREEZE — 27 April 2026 ──
-    // Blocks all writes to /api/data/* so devices cannot replay stale
-    // SyncQueue/localStorage data into the recovering D1. Read paths
-    // (GET /api/data/all, /api/account) still work so users see the
-    // current degraded state. Remove this block once recovery is done.
-    if (path.startsWith('/api/data/') && request.method !== 'GET') {
-      console.warn('[WRITE-FREEZE]', request.method, path);
-      return json({
-        error: 'Service temporarily in read-only mode',
-        detail: 'Data writes are paused for incident recovery. Your work is safe; please do not sign in/out repeatedly.',
-      }, 503);
-    }
-
     try {
       // ── Public routes (no auth) ──
 
