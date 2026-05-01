@@ -55,8 +55,10 @@ export function workerSourceFingerprint() {
   // shallow walk if not tracked yet.
   let files;
   try {
+    // Include tracked + untracked-but-not-gitignored, matching what
+    // precheck-worker-schema.mjs scans. Keeps fingerprint and scan in sync.
     files = execSync(
-      'git ls-files workers/ai-tutor',
+      'git ls-files --cached --others --exclude-standard workers/ai-tutor',
       { cwd: REPO_ROOT, encoding: 'utf8' }
     ).trim().split('\n').filter(f => f && !f.startsWith('workers/ai-tutor/docs/'));
   } catch {

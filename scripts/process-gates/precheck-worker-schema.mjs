@@ -28,10 +28,13 @@ const SCRIPT_PATH = 'scripts/process-gates/precheck-worker-schema.mjs';
 // ── 1. Walk worker source files via git ls-files ──
 
 function workerSourceFiles() {
-  const out = execSync('git ls-files workers/ai-tutor', {
-    cwd: repoRoot(),
-    encoding: 'utf8',
-  });
+  // Include both tracked AND untracked-but-not-gitignored files so the
+  // precheck reflects the working tree (a developer's not-yet-committed
+  // change should be scanned). --exclude-standard respects .gitignore.
+  const out = execSync(
+    'git ls-files --cached --others --exclude-standard workers/ai-tutor',
+    { cwd: repoRoot(), encoding: 'utf8' }
+  );
   return out
     .trim()
     .split('\n')
