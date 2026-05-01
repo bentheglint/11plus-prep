@@ -74,3 +74,8 @@ scripts/write-remaining-batches.js
 
 # Recovery toolkit generated artefacts (regenerable from scripts/recovery/*.py)
 /recovery-output
+
+# Process-gate artefacts (Plan A v2.1 — produced by scripts/process-gates/*.mjs)
+# Contain row counts, schema fingerprints, Worker SHA. Regenerable by re-running
+# the relevant script. Hooks read these locally; not needed in version control.
+/process-gate-artefacts
