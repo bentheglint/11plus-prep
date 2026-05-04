@@ -33,6 +33,7 @@ export async function authorize({ keyId, applicationKey }) {
   const storage = data.apiInfo?.storageApi ?? data;
   return {
     apiUrl: storage.apiUrl ?? data.apiUrl,
+    downloadUrl: storage.downloadUrl ?? data.downloadUrl,
     authorizationToken: data.authorizationToken,
     accountId: data.accountId,
     bucketId: storage.bucketId ?? data.allowed?.bucketId ?? null,
@@ -157,3 +158,29 @@ export async function uploadOnce({
 export function retainUntil(daysFromNow) {
   return Date.now() + daysFromNow * 24 * 60 * 60 * 1000;
 }
+
+// ── Download a file by name. Returns the body as a Uint8Array. ──
+//
+// The authorize() response includes downloadUrl. Files are fetched via:
+//   GET <downloadUrl>/file/<bucketName>/<fileName>
+// with Authorization: <authorizationToken>.
+
+export async function downloadFile({
+  downloadUrl,
+  authorizationToken,
+  bucketName,
+  fileName,
+}) {
+  const url = `${downloadUrl}/file/${bucketName}/${encodeURIComponent(fileName).replace(/%2F/g, '/')}`;
+  const res = await fetch(url, {
+    method: 'GET',
+    headers: { Authorization: authorizationToken },
+  });
+  if (!res.ok) {
+    const errBody = await res.text();
+    throw new Error(`download of ${fileName} failed (${res.status}): ${errBody}`);
+  }
+  const arrayBuffer = await res.arrayBuffer();
+  return new Uint8Array(arrayBuffer);
+}
+
