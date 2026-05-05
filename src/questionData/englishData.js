@@ -25847,14 +25847,14 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "In the sentence 'She felt compelled to tell the truth,' what does 'compelled' mean?",
           "options": [
-            "Afraid",
-            "Unable",
-            "Allowed",
-            "Forced or driven by a strong urge",
-            "Happy"
+            "Tempted",
+            "Forced by a strong urge",
+            "Hesitant",
+            "Permitted",
+            "Embarrassed"
           ],
-          "correct": 3,
-          "explanation": "'Compelled' means feeling a strong, irresistible urge to do something, as if you have no choice. She felt she absolutely had to tell the truth. Learning word families helps you decode new words. ✓"
+          "correct": 1,
+          "explanation": "'Compelled' means feeling a strong, almost unstoppable urge to do something. 'Tempted' is weaker, 'permitted' just means allowed, 'hesitant' means unsure, and 'embarrassed' is a feeling, not a force. ✓"
         },
         {
           "id": 210,
@@ -28217,10 +28217,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 414,
           "difficulty": 2,
-          "question": "Which word is in the same word family as 'sign'?",
-          "options": ["Signature", "Sing", "Single", "Sight", "Signal"],
+          "question": "Which word shares the same ROOT as 'sign'?",
+          "options": ["Signature", "Sing", "Single", "Sight", "Sigh"],
           "correct": 0,
-          "explanation": "'Signature' comes from 'sign' — it's a signed name. Both share the Latin root 'signum' meaning a mark. 'Signal' is also related! But 'sing', 'single', and 'sight' come from different roots. Learning word families helps you decode new words. ✓"
+          "explanation": "'Signature' shares the root of 'sign' — both come from the Latin 'signum', meaning a mark. A signature is the mark you write to identify yourself. 'Sing', 'single', 'sight' and 'sigh' all start with 'sig' but come from completely different roots, so they are not in the same family. ✓"
         },
         {
           "id": 415,
@@ -30950,16 +30950,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 173,
           "difficulty": 1,
-          "question": "Which word is the adjective in: 'The fierce dragon guarded the golden treasure.'?",
+          "question": "Which word is the adjective in: 'The brave knight rode his horse into battle.'?",
           "options": [
-            "fierce",
-            "treasure",
-            "guarded",
-            "golden",
-            "dragon"
+            "rode",
+            "knight",
+            "into",
+            "horse",
+            "brave"
           ],
-          "correct": 0,
-          "explanation": "'Fierce' is an adjective describing the dragon, telling us it was dangerous and aggressive. 'Golden' is also an adjective, but 'fierce' is the first one listed. ✓"
+          "correct": 4,
+          "explanation": "'Brave' is the adjective — it describes the knight, telling us he was courageous. 'Knight' and 'horse' are nouns, 'rode' is a verb, and 'into' is a preposition. Adjectives describe nouns. ✓"
         },
         {
           "id": 174,

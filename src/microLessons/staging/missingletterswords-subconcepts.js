@@ -481,7 +481,7 @@ export const missingLettersWordsSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Which consonant(s) complete **${v.interactTemplate}**?`,
+            body: (v) => `Which consonant(s) complete **${v.interactTemplate}**?\n\nClue: ${v.interactWordMeaning}.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -651,7 +651,7 @@ export const missingLettersWordsSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Which letters complete **${v.interactTemplate}**?`,
+            body: (v) => `Which letters complete **${v.interactTemplate}**?\n\nClue: ${v.interactWordMeaning}.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -834,7 +834,7 @@ export const missingLettersWordsSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Which letters go at the **start** of **${v.interactTemplate}**?`,
+            body: (v) => `Which letters go at the **start** of **${v.interactTemplate}**?\n\nClue: ${v.interactWordMeaning}.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -1187,7 +1187,7 @@ export const missingLettersWordsSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Which letters go in the **middle** of **${v.interactTemplate}**?`,
+            body: (v) => `Which letters go in the **middle** of **${v.interactTemplate}**?\n\nClue: ${v.interactWordMeaning}.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -1344,7 +1344,7 @@ export const missingLettersWordsSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Which letters complete **${v.interactTemplate}**?`,
+            body: (v) => `Which letters complete **${v.interactTemplate}**?\n\nClue: ${v.interactWordMeaning}.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -1506,21 +1506,15 @@ export const missingLettersWordsSubConcepts = [
                   { text: `Look at ${v.template} — which pattern fits?`, why: "Try each one until you find a real word" },
                   { text: `Answer: ${v.missingLetters} → ${v.completeWord}`, why: `${v.wordMeaning} ✓` }
                 ],
-                allRevealed: true
+                allRevealed: false
               })
             },
-            interaction: {
-              type: "true-false",
-              statements: () => [
-                { text: `The letter pattern PH makes the same sound as the letter F (e.g., PHONE, PHOTO, ELEPHANT).`, answer: true, explanation: `Correct! PH sounds like F — knowing this helps you spot words like PHONE, PHOTO, PHARMACY and ELEPHANT. ✓` },
-                { text: `The letter pattern GH always makes a hard G sound (e.g., GHOST, COUGH).`, answer: false, explanation: `Not always! GH can be silent (THOUGHT, NIGHT) or sound like F (COUGH, ENOUGH). ✓` }
-              ]
-            }
+            interaction: { type: "tap-to-reveal" }
           },
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `Which common letter pattern completes **${v.interactTemplate}**?`,
+            body: (v) => `Which common letter pattern completes **${v.interactTemplate}**?\n\nClue: ${v.interactWordMeaning}.`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({

@@ -8546,9 +8546,9 @@ const vrData = {
           id: 36,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ RAGE",
-          options: ["AGE","ATE","ACE","AVE","AXE"],
+          options: ["AGE","ATE","ACE","BAR","AXE"],
           correct: 3,
-          explanation: "The answer is AVE, making AVERAGE. 'Ave' is short for avenue, a wide street. Average means the typical or middle amount. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "The answer is BAR, making BARRAGE. A 'bar' is a long piece of wood or metal. A 'barrage' is a heavy continuous attack — for example, a barrage of questions. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 37,
@@ -8585,10 +8585,10 @@ const vrData = {
         {
           id: 41,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ASTER",
-          options: ["DIN","DIG","DIM","DIS","DIP"],
-          correct: 3,
-          explanation: "The answer is DIS, making DISASTER. 'Dis' means to show disrespect. A disaster is a sudden event causing great damage or suffering. Tip: Watch out for uncommon words that hide common three-letter words inside them! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ ENNA",
+          options: ["AGE","ANT","ARM","ACE","ART"],
+          correct: 1,
+          explanation: "The answer is ANT, making ANTENNA. An ant is a small insect. An antenna is a long thin part on the head of an insect that helps it sense its surroundings — or a metal rod used for picking up TV or radio signals. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 42,

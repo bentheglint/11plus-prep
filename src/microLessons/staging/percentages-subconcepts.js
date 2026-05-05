@@ -1627,7 +1627,7 @@ export const percentagesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `What is **${v.unit}${v.interactOriginal}** after a **${v.interactPercent}% increase**?`,
+            body: (v) => `A price tag shows **${v.unit}${v.interactOriginal}**.\n\nThe price goes up by **${v.interactPercent}%**. What's the new price?`,
             visual: {
               component: "BarModel",
               props: (v) => ({
@@ -1932,7 +1932,7 @@ export const percentagesSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `What is **${v.unit}${v.interactOriginal}** after **${v.interactPercent}% off**?`,
+            body: (v) => `A pair of trainers costs **${v.unit}${v.interactOriginal}**.\n\nThey go in the sale at **${v.interactPercent}% off**. What's the sale price?`,
             visual: {
               component: "BarModel",
               props: (v) => ({
@@ -2578,19 +2578,42 @@ export const percentagesSubConcepts = [
               type: "multiple-choice",
               question: (v) => `${v.interactPercent}% as a decimal = ?`,
               getOptions: (v) => {
-                const opts = [
-                  String(v.interactDecimal),
-                  String(v.interactWrongDecimal),
-                  String(v.interactDecimal * 10),
-                  String(v.interactDecimal / 10),
-                  String(v.interactPercent)
-                ];
-                return [...new Set(opts)].slice(0, 5);
+                // GL-pattern distractors for % to decimal. Bare-integer
+                // distractor (e.g. "6" alongside "0.06") removed per Jacqui's
+                // 2 May 2026 feedback — a child new to decimals reads "6"
+                // sat next to "0.06" as an incomplete decimal. All options
+                // now render with consistent decimal places.
+                const correct = v.interactDecimal;
+                const correctStr = correct.toFixed(correct < 0.1 ? 3 : (correct < 1 ? 2 : 1));
+                const wrong = v.interactWrongDecimal;
+                const wrongStr = wrong.toFixed(wrong < 1 ? 2 : 1);
+                const overDivStr = (correct / 10).toFixed(correct < 0.1 ? 4 : 3);
+                const underDivStr = (correct * 10).toFixed(correct < 0.1 ? 2 : 1);
+                const altStr = (v.interactPercent / 1000).toFixed(4);
+                const opts = [correctStr, wrongStr, overDivStr, underDivStr, altStr];
+                const unique = [...new Set(opts)];
+                while (unique.length < 5) {
+                  const filler = (v.interactPercent / 10).toFixed(1);
+                  if (!unique.includes(filler)) unique.push(filler);
+                  else unique.push((correct + 0.01).toFixed(correct < 0.1 ? 3 : 2));
+                }
+                return unique.slice(0, 5);
               },
-              correctAnswer: (v) => String(v.interactDecimal),
+              correctAnswer: (v) => {
+                const c = v.interactDecimal;
+                return c.toFixed(c < 0.1 ? 3 : (c < 1 ? 2 : 1));
+              },
               feedback: {
-                correct: (v) => `Yes! ${v.interactPercent}% \u00f7 100 = **${v.interactDecimal}**. Two places to the left! ✓`,
-                incorrect: (v) => `Not quite! Divide by 100: ${v.interactPercent} \u00f7 100 = **${v.interactDecimal}**. Move the decimal point two places left.`
+                correct: (v) => {
+                  const c = v.interactDecimal;
+                  const cStr = c.toFixed(c < 0.1 ? 3 : (c < 1 ? 2 : 1));
+                  return `Yes! ${v.interactPercent}% \u00f7 100 = **${cStr}** Two places to the left! ✓`;
+                },
+                incorrect: (v) => {
+                  const c = v.interactDecimal;
+                  const cStr = c.toFixed(c < 0.1 ? 3 : (c < 1 ? 2 : 1));
+                  return `Not quite. Divide by 100: ${v.interactPercent} \u00f7 100 = **${cStr}** Move the decimal point two places left.`;
+                }
               }
             }
           },
