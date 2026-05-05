@@ -10,6 +10,10 @@
 const RESEND_API_BASE = 'https://api.resend.com';
 const DEFAULT_FROM = 'Backup Alerts <onboarding@resend.dev>';
 
+// Per-fetch timeout. Resend should respond fast; if the API stalls we'd
+// rather error and let the caller try again than hang the workflow.
+const TIMEOUT_SEND_MS = 15_000;
+
 export async function sendEmail({
   apiKey,
   to,
@@ -26,6 +30,7 @@ export async function sendEmail({
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ from, to, subject, text }),
+    signal: AbortSignal.timeout(TIMEOUT_SEND_MS),
   });
   if (!res.ok) {
     const errBody = await res.text();

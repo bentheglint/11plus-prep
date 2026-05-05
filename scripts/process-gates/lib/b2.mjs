@@ -16,6 +16,18 @@ import { createHash } from 'node:crypto';
 
 const B2_API_BASE = 'https://api.backblazeb2.com';
 
+// Per-fetch timeouts. Native fetch has no default timeout — without these,
+// a stalled connection hangs the workflow until GitHub's job-level
+// timeout-minutes fires (and even then unreliably, per the 5 May 2026
+// heartbeat hang where a 5-min workflow timeout took 15 minutes to
+// enforce). With explicit AbortSignal.timeout, a stalled fetch errors
+// quickly enough that our own Resend alert path can fire instead of
+// us depending on GitHub's cancellation email.
+const TIMEOUT_AUTH_MS = 30_000;
+const TIMEOUT_LIST_MS = 30_000;
+const TIMEOUT_UPLOAD_MS = 60_000;
+const TIMEOUT_DOWNLOAD_MS = 60_000;
+
 // ── Authorize account: returns { apiUrl, authorizationToken, accountId } ──
 
 export async function authorize({ keyId, applicationKey }) {
@@ -23,6 +35,7 @@ export async function authorize({ keyId, applicationKey }) {
   const res = await fetch(`${B2_API_BASE}/b2api/v3/b2_authorize_account`, {
     method: 'GET',
     headers: { Authorization: `Basic ${credentials}` },
+    signal: AbortSignal.timeout(TIMEOUT_AUTH_MS),
   });
   if (!res.ok) {
     const body = await res.text();
@@ -51,6 +64,7 @@ export async function getUploadUrl({ apiUrl, authorizationToken, bucketId }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ bucketId }),
+    signal: AbortSignal.timeout(TIMEOUT_AUTH_MS),
   });
   if (!res.ok) {
     const body = await res.text();
@@ -86,6 +100,7 @@ export async function uploadFile({
     method: 'POST',
     headers,
     body,
+    signal: AbortSignal.timeout(TIMEOUT_UPLOAD_MS),
   });
   if (!res.ok) {
     const errBody = await res.text();
@@ -113,6 +128,7 @@ export async function listFileNames({
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(body),
+    signal: AbortSignal.timeout(TIMEOUT_LIST_MS),
   });
   if (!res.ok) {
     const errBody = await res.text();
@@ -175,6 +191,7 @@ export async function downloadFile({
   const res = await fetch(url, {
     method: 'GET',
     headers: { Authorization: authorizationToken },
+    signal: AbortSignal.timeout(TIMEOUT_DOWNLOAD_MS),
   });
   if (!res.ok) {
     const errBody = await res.text();

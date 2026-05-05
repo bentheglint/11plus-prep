@@ -20,7 +20,12 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # Drop from 5 to 3 — combined with per-fetch AbortSignal.timeout in
+    # b2.mjs/resend.mjs, even worst-case (auth 30s + list 30s + resend 15s
+    # = 75s) is comfortably under this. Lower upper bound = faster
+    # detection of stuck-network conditions, fewer 15-min auto-cancels
+    # like the 5 May 2026 incident.
+    timeout-minutes: 3
     env:
       B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
       B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
