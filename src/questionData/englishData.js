@@ -1790,7 +1790,7 @@ const englishData = {
           passageTitle: "The Last Dragon of Wales",
           passage: "Cadi had always loved the mountains. While other children in the village of Llanberis spent their weekends glued to screens, Cadi spent hers climbing the lower slopes of Snowdon with her border collie, Fflur, trotting at her heels. She knew every path, every stream, every hidden hollow. Or so she thought.\n\nOne misty October morning, Cadi followed a sheep track she had never noticed before. It wound between two enormous boulders and dipped sharply into a narrow ravine carpeted with ferns. At the far end, half-hidden by a curtain of moss, was the mouth of a cave. Warm air drifted out, carrying a strange scent — like a bonfire mixed with freshly baked bread.\n\nFflur whined and pressed against Cadi's leg, but Cadi crept forward. Inside the cave, the walls glowed a soft orange, as though lit from within. And there, curled on a bed of smooth river stones, lay a dragon.\n\nIt was smaller than she had imagined — about the size of a large horse — with scales the colour of dark emeralds and wings folded tight against its body like a sleeping bat. One amber eye opened and regarded her calmly.\n\n\"You can see me,\" the dragon said. Its voice was low and gravelly, like stones tumbling in a riverbed. \"That has not happened in over three hundred years.\"\n\nCadi's mouth opened and closed several times before words came out. \"Are you... the last one?\"\n\nThe dragon lifted its great head. \"I am Draig, and yes, I am the last. The others flew north centuries ago, beyond the reach of humans. I stayed because these mountains are my home.\" A thin ribbon of smoke curled from one nostril. \"I stayed because someone needed to remember.\"\n\nOver the weeks that followed, Cadi visited Draig every Saturday. She brought him books from the village library, and in return he told her stories of ancient Wales — of princes, battles, and a time when dragons filled the skies like starlings at dusk. She learned that he survived by sleeping for decades at a time, waking only when the mountain called him.\n\n\"Will you ever leave?\" she asked one afternoon, scratching the rough scales beneath his chin.\n\nDraig closed his eyes contentedly. \"Not while there is still someone who believes,\" he rumbled. \"And now there is you.\"",
           question: "Why does Draig say 'That has not happened in over three hundred years' when Cadi sees him?",
-          options: ["He has not eaten in three hundred years","He has not been able to fly for three hundred years","No human has been able to see him for over three hundred years","He has not spoken to another dragon in three hundred years","The cave has not had a visitor in three hundred years"],
+          options: ["He has not eaten in over three hundred years","He has not been able to fly for three hundred years","No human has been able to see him for three hundred years","He has not spoken to another dragon in three hundred years","No visitor has entered the cave in three hundred years"],
           correct: 2,
           explanation: "Draig says 'You can see me' and then 'That has not happened in over three hundred years.' This implies that other people have been nearby but could not see him — only Cadi has the ability to perceive him, and this has not happened for centuries. ✓"
         },
@@ -1842,7 +1842,7 @@ const englishData = {
           passageTitle: "Shipwrecked!",
           passage: "The sailing trip had been Mr Kapoor's idea. \"A weekend on the water will do you all good,\" their teacher had announced, beaming at the class. And for the first few hours, it had been brilliant. The yacht, a sleek white vessel called the Silver Gull, cut through the waves off the Cornish coast while Zara, Finn, Priya and Marcus took turns at the helm under the watchful eye of their skipper, Captain Trevelyan.\n\nThen the storm arrived.\n\nIt came from nowhere — a wall of charcoal cloud that swallowed the horizon in minutes. Rain lashed the deck. Waves the size of houses slammed against the hull. Captain Trevelyan barked orders, his voice barely audible above the howling wind. Then came a sickening crunch, and the Silver Gull lurched to one side. They had struck rocks.\n\nWhat happened next was a blur of shouting, life jackets and freezing seawater. When Zara opened her eyes, she was lying face down on a strip of wet sand, coughing up salt water. The storm had passed as quickly as it had arrived, leaving behind a sky washed clean and pale. She could see Finn and Priya huddled further up the beach, and Marcus was wading out of the shallows dragging a waterproof bag.\n\nCaptain Trevelyan was nowhere to be seen.\n\nThe island was tiny — no more than a few hundred metres across — with a cluster of wind-bent trees at its centre and rocky outcrops at either end. There was no sign of houses, roads, or people.\n\n\"Right,\" said Priya, wringing water from her hair. \"We need a plan.\"\n\nThey divided the tasks. Finn gathered driftwood for a fire and used the waterproof matches from the emergency bag to light it. Priya and Marcus explored the island, discovering a freshwater stream trickling down from the rocks and a sheltered hollow out of the wind. Zara, the calmest of the four, took charge of rationing the small supply of food bars from the bag — three each, to last until help arrived.\n\nAs the sun began to dip, painting the sea in shades of copper and rose, Zara spotted something on the horizon: a flashing light. A coastguard vessel.\n\n\"Over here!\" she screamed, waving her arms. Finn threw damp seaweed onto the fire, sending a thick column of white smoke spiralling into the sky.\n\nThe light turned towards them. By nightfall, all four were wrapped in foil blankets aboard the rescue boat, sipping hot chocolate and trying to stop their hands from shaking. Captain Trevelyan, they learned, had been picked up an hour earlier, clinging to a piece of the Silver Gull's mast.\n\n\"Best school trip ever,\" Marcus whispered, and despite everything, they all laughed.",
           question: "What was the name of the yacht they were sailing on?",
-          options: ["The Storm Chaser","The Silver Gull","The Cornish Maid","The White Falcon","The Sea Breeze"],
+          options: ["The Storm Chaser","The Silver Gull","The Cornish Maiden","The White Falcon","The Ocean Breeze"],
           correct: 1,
           explanation: "The passage says 'The yacht, a sleek white vessel called the Silver Gull, cut through the waves off the Cornish coast.' The yacht was called the Silver Gull. ✓"
         },
@@ -2241,13 +2241,7 @@ const englishData = {
           passageTitle: "The New Girl",
           passage: "Amira stood at the school gates, clutching the straps of her new rucksack so tightly that her knuckles had turned white. Around her, children streamed past in groups of two and three, laughing and chatting as though they had known each other for a hundred years. Which, Amira thought miserably, they probably had — or at least since Reception.\n\nHer family had moved from Birmingham to a small town on the Dorset coast during the summer. Her father's new job at the marine research centre had brought them here, and Amira knew she should be excited. She loved the sea. She loved the idea of living near rock pools and sandy beaches. But right now, standing outside Westcliffe Primary School on a grey Tuesday morning, all she felt was a tight knot of dread in her stomach.\n\n\"You must be Amira!\" A woman with short silver hair and a warm smile appeared beside her. \"I'm Mrs Okafor, your class teacher. Come with me — I'll show you where to put your things.\"\n\nThe classroom was bright and airy, with large windows that looked out over the school field towards the sea. Mrs Okafor introduced Amira to the class, and thirty pairs of eyes turned to stare at her. Amira's cheeks burned. She fixed her gaze on the floor and mumbled hello.\n\nAt break time, a girl with curly red hair and paint-stained fingers appeared at Amira's elbow. \"I'm Rosie,\" she said. \"Do you want to see the rock pool we found at the weekend? I've got photos on the classroom tablet.\" Before Amira could answer, Rosie had grabbed her hand and pulled her across the playground.\n\nBy lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded \"properly exciting.\" Amira found herself laughing for the first time all day.\n\nWalking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.",
           question: "What does the word 'streamed' suggest about how the other children moved past Amira at the school gates?",
-          options: [
-            "They walked past her slowly, carefully, and quietly",
-            "They ran past her as fast as they possibly could",
-            "They moved in a steady, continuous flow, like water in a river",
-            "They pushed past her rudely without saying sorry",
-            "They stopped suddenly to stand and look at her"
-          ],
+          options: ["They walked past her slowly, carefully, and quietly","They ran past her as fast as they possibly could","They moved in a steady, continuous flow past her","They pushed past her rudely without saying anything","They stopped suddenly and stood watching her closely"],
           correct: 2,
           explanation: "The word 'streamed' compares the movement of the children to a flowing stream of water — a continuous, natural flow of people moving steadily past. This makes Amira seem even more isolated, standing still whilst everyone else flows around her. ✓"
         },
@@ -2279,7 +2273,7 @@ const englishData = {
           passageTitle: "The New Girl",
           passage: "Amira stood at the school gates, clutching the straps of her new rucksack so tightly that her knuckles had turned white. Around her, children streamed past in groups of two and three, laughing and chatting as though they had known each other for a hundred years. Which, Amira thought miserably, they probably had — or at least since Reception.\n\nHer family had moved from Birmingham to a small town on the Dorset coast during the summer. Her father's new job at the marine research centre had brought them here, and Amira knew she should be excited. She loved the sea. She loved the idea of living near rock pools and sandy beaches. But right now, standing outside Westcliffe Primary School on a grey Tuesday morning, all she felt was a tight knot of dread in her stomach.\n\n\"You must be Amira!\" A woman with short silver hair and a warm smile appeared beside her. \"I'm Mrs Okafor, your class teacher. Come with me — I'll show you where to put your things.\"\n\nThe classroom was bright and airy, with large windows that looked out over the school field towards the sea. Mrs Okafor introduced Amira to the class, and thirty pairs of eyes turned to stare at her. Amira's cheeks burned. She fixed her gaze on the floor and mumbled hello.\n\nAt break time, a girl with curly red hair and paint-stained fingers appeared at Amira's elbow. \"I'm Rosie,\" she said. \"Do you want to see the rock pool we found at the weekend? I've got photos on the classroom tablet.\" Before Amira could answer, Rosie had grabbed her hand and pulled her across the playground.\n\nBy lunchtime, Amira had learned that Rosie wanted to be a marine biologist, that she had a Labrador called Seaweed, and that she thought Birmingham sounded \"properly exciting.\" Amira found herself laughing for the first time all day.\n\nWalking home that afternoon, Amira noticed something she had been too nervous to see that morning: the sunlight dancing on the harbour, the fishing boats bobbing gently, and the distant cry of gulls wheeling above the cliffs. Perhaps Dorset would be all right after all.",
           question: "What kind of person does Rosie seem to be, based on her actions in the passage?",
-          options: ["Shy and quiet, preferring to be alone","Interested only in animals and not people","Bossy and unkind to other children","Nervous about talking to people she does not know","Friendly, confident, and welcoming to newcomers"],
+          options: ["Shy and quiet, preferring her own company","Interested only in animals, not in people","Bossy and unkind to the other children","Nervous about meeting people she does not know","Friendly, confident, and welcoming to newcomers"],
           correct: 4,
           explanation: "Rosie approaches Amira without being asked, introduces herself, shares her interests, and physically takes her hand to show her something exciting. These actions show a confident, friendly, and welcoming personality — she makes the effort to include someone new. ✓"
         },
@@ -23586,7 +23580,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 5,
           difficulty: 2,
           question: "In the sentence 'The teacher gave a stern warning,' what does 'stern' mean?",
-          options: ["Gentle", "Strict and serious", "Funny", "Quiet", "Long"],
+          options: ["Gentle and kind","Strict and serious","Funny and lighthearted","Quiet and shy","Long and detailed"],
           correct: 1,
           explanation: "'Stern' means strict, serious, and showing disapproval. A stern warning is one that is given firmly and seriously. Words with similar meanings often have subtle differences. ✓"
         },
@@ -23610,7 +23604,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 8,
           difficulty: 3,
           question: "What does the word 'ominous' mean?",
-          options: ["Giving the impression something bad will happen", "Bright and cheerful", "Extremely large", "Very loud", "Moving quickly"],
+          options: ["Threatening","Cheerful","Enormous","Deafening","Speedy"],
           correct: 0,
           explanation: "'Ominous' means threatening or suggesting that something bad is going to happen. For example: 'Dark, ominous clouds gathered overhead.' Think about when you'd use this word versus its synonym. ✓"
         },
@@ -23682,7 +23676,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           id: 18, difficulty: 2,
           question: "What does the word 'persistent' mean?",
-          options: ["Very fast", "Continuing firmly despite difficulty", "Giving up easily", "Extremely careful", "Slightly worried"],
+          options: ["Very fast","Refusing to give up","Giving up easily","Extremely careful","Slightly worried"],
           correct: 1,
           explanation: "'Persistent' means refusing to give up, continuing steadily. A persistent person keeps trying even when things are difficult. Think about when you'd use this word versus its synonym. ✓"
         },
@@ -23814,7 +23808,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 36,
           difficulty: 1,
           question: "Which word is closest in meaning to 'brilliant'?",
-          options: ["Dull","Average","Extremely clever or bright","Terrible","Quiet"],
+          options: ["Dull","Average","Outstanding","Terrible","Quiet"],
           correct: 2,
           explanation: "'Brilliant' means outstandingly clever or talented. It can also mean very bright and shining, like brilliant sunshine. Context is your best friend — surrounding words give clues. ✓"
         },
@@ -23822,7 +23816,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 37,
           difficulty: 1,
           question: "Which word is closest in meaning to 'dreadful'?",
-          options: ["Wonderful","Ordinary","Exciting","Very bad or unpleasant","Odd"],
+          options: ["Wonderful","Ordinary","Exciting","Terrible","Odd"],
           correct: 3,
           explanation: "'Dreadful' means extremely bad, unpleasant, or of very poor quality. Dreadful weather would be terrible weather that nobody wants to go out in. This type of question comes up regularly in 11+ papers. ✓"
         },
@@ -23846,7 +23840,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 40,
           difficulty: 1,
           question: "In the sentence 'She was anxious about her first day at school,' what does 'anxious' mean?",
-          options: ["Excited","Worried and nervous","Bored","Proud","Annoyed"],
+          options: ["Excited and eager","Worried and nervous","Bored and restless","Proud and confident","Annoyed and grumpy"],
           correct: 1,
           explanation: "'Anxious' means feeling worried, nervous, or uneasy about something uncertain. Starting a new school is a common cause of anxiety. Building a strong vocabulary is one of the best exam skills. ✓"
         },
@@ -23854,7 +23848,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 41,
           difficulty: 1,
           question: "In the sentence 'The fierce dog barked loudly at the postman,' what does 'fierce' mean?",
-          options: ["Friendly","Small","Aggressive and frightening","Old","Playful"],
+          options: ["Gentle and timid","Small and harmless","Aggressive and frightening","Old and tired","Playful and friendly"],
           correct: 2,
           explanation: "'Fierce' means showing aggression or appearing dangerous and frightening. A fierce dog would scare people with its aggressive behaviour. A great word to use in your own writing! ✓"
         },
@@ -23942,7 +23936,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 52,
           difficulty: 2,
           question: "Which word is closest in meaning to 'absurd'?",
-          options: ["Clever","Shocking","Unfair","Completely ridiculous","Ordinary"],
+          options: ["Clever","Shocking","Unfair","Ridiculous","Ordinary"],
           correct: 3,
           explanation: "'Absurd' means wildly unreasonable or ridiculous. Something absurd is so silly or illogical that it seems laughable. Try using this word in a sentence today to make it stick. ✓"
         },
@@ -23982,7 +23976,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 57,
           difficulty: 2,
           question: "Which word is closest in meaning to 'jubilant'?",
-          options: ["Nervous","Bored","Angry","Confused","Overjoyed and triumphant"],
+          options: ["Nervous","Bored","Angry","Confused","Triumphant"],
           correct: 4,
           explanation: "'Jubilant' means feeling or expressing great happiness, especially after a success or victory. The jubilant crowd cheered when their team won. This type of question comes up regularly in 11+ papers. ✓"
         },
@@ -23990,7 +23984,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 58,
           difficulty: 2,
           question: "Which word is closest in meaning to 'meticulous'?",
-          options: ["Careless","Brave","Quick","Creative","Very careful and precise"],
+          options: ["Careless","Brave","Quick","Creative","Painstaking"],
           correct: 4,
           explanation: "'Meticulous' means showing great attention to detail and being very careful and precise. A meticulous person checks their work thoroughly. Think about when you'd use this word versus its synonym. ✓"
         },
@@ -23998,7 +23992,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 59,
           difficulty: 2,
           question: "Which word is closest in meaning to 'persistent'?",
-          options: ["Continuing firmly despite difficulty","Giving up easily","Angry","Quiet","Lucky"],
+          options: ["Determined","Quitting","Angry","Quiet","Lucky"],
           correct: 0,
           explanation: "'Persistent' means continuing firmly in a course of action despite difficulty or opposition. A persistent person never gives up. Learning word families helps you decode new words. ✓"
         },
@@ -24014,7 +24008,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 61,
           difficulty: 2,
           question: "In the sentence 'The defiant child refused to tidy her room,' what does 'defiant' mean?",
-          options: ["Tired","Polite","Openly resisting authority","Confused","Frightened"],
+          options: ["Exhausted from running","Polite and well-mannered","Openly resisting authority","Confused by instructions","Frightened of the dark"],
           correct: 2,
           explanation: "'Defiant' means openly resisting or challenging authority or rules. A defiant child boldly refuses to do what they are told. A great word to use in your own writing! ✓"
         },
@@ -24046,7 +24040,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 65,
           difficulty: 2,
           question: "In the sentence 'After lunch, the students felt lethargic,' what does 'lethargic' mean?",
-          options: ["Energetic","Sluggish and lacking energy","Hungry","Happy","Restless"],
+          options: ["Energetic and lively","Sluggish and tired","Hungry and irritable","Cheerful and chatty","Restless and fidgety"],
           correct: 1,
           explanation: "'Lethargic' means feeling sluggish, tired, and lacking energy or enthusiasm. People often feel lethargic after a big meal. Words with similar meanings often have subtle differences. ✓"
         },
@@ -24054,7 +24048,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 66,
           difficulty: 2,
           question: "In the sentence 'His impulsive decision led to trouble,' what does 'impulsive' mean?",
-          options: ["Well-planned","Slow","Acting suddenly without thinking","Careful","Wise"],
+          options: ["Carefully planned","Slow and steady","Sudden and unthinking","Cautious and careful","Wise and sensible"],
           correct: 2,
           explanation: "'Impulsive' means acting or done without forethought or consideration of consequences. Impulsive decisions are made on the spur of the moment. Context is your best friend — surrounding words give clues. ✓"
         },
@@ -24070,7 +24064,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 68,
           difficulty: 2,
           question: "In the sentence 'The obstinate mule refused to move,' what does 'obstinate' mean?",
-          options: ["Old","Hungry","Frightened","Large","Stubbornly refusing to change"],
+          options: ["Old and worn out","Hungry and weak","Frightened and uneasy","Large and powerful","Stubborn and unyielding"],
           correct: 4,
           explanation: "'Obstinate' means stubbornly refusing to change one's opinion or course of action. An obstinate person or animal will not budge no matter what you do. Think about when you'd use this word versus its synonym. ✓"
         },
@@ -24166,7 +24160,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 80,
           difficulty: 3,
           question: "Which word is closest in meaning to 'ambiguous'?",
-          options: ["Clear","Open to more than one meaning","Boring","Dangerous","Exciting"],
+          options: ["Clear","Unclear","Boring","Dangerous","Exciting"],
           correct: 1,
           explanation: "'Ambiguous' means open to more than one interpretation or having a double meaning. An ambiguous sentence can be understood in different ways. Building a strong vocabulary is one of the best exam skills. ✓"
         },
@@ -24174,7 +24168,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 81,
           difficulty: 3,
           question: "Which word is closest in meaning to 'clandestine'?",
-          options: ["Open","Noisy","Kept secret or hidden","Ancient","Beautiful"],
+          options: ["Open","Noisy","Secret","Ancient","Beautiful"],
           correct: 2,
           explanation: "'Clandestine' means kept secret or done secretly, especially because it is not officially allowed. A clandestine meeting is one held in secrecy. A great word to use in your own writing! ✓"
         },
@@ -24198,7 +24192,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 84,
           difficulty: 3,
           question: "Which word is closest in meaning to 'illustrious'?",
-          options: ["Widely admired and famous","Unknown","Ordinary","Illustrated","Confusing"],
+          options: ["Famous","Unknown","Ordinary","Illustrated","Confusing"],
           correct: 0,
           explanation: "'Illustrious' means widely known and esteemed, or famous and admired for past achievements. An illustrious career is one full of impressive accomplishments. Look for prefixes and suffixes you recognise in unfamiliar words. ✓"
         },
@@ -24214,7 +24208,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 86,
           difficulty: 3,
           question: "Which word is closest in meaning to 'sublime'?",
-          options: ["Underwater","Ordinary","Of outstanding beauty or grandeur","Sad","Small"],
+          options: ["Underwater","Ordinary","Magnificent","Trivial","Compact"],
           correct: 2,
           explanation: "'Sublime' means of outstanding beauty, grandeur, or excellence. A sublime sunset would be breathtakingly beautiful and awe-inspiring. Context is your best friend — surrounding words give clues. ✓"
         },
@@ -24222,7 +24216,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 87,
           difficulty: 3,
           question: "In the sentence 'She sat quietly to contemplate the difficult decision,' what does 'contemplate' mean?",
-          options: ["Ignore","Celebrate","Complain about","Think about deeply and carefully","Rush through"],
+          options: ["Ignore","Celebrate","Complain about","Ponder deeply","Rush through"],
           correct: 3,
           explanation: "'Contemplate' means to think about something carefully and at length, giving it deep consideration. It suggests thoughtful reflection before making a decision. This type of question comes up regularly in 11+ papers. ✓"
         },
@@ -24230,7 +24224,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           id: 88,
           difficulty: 3,
           question: "In the sentence 'The desolate landscape stretched for miles,' what does 'desolate' mean?",
-          options: ["Beautiful","Warm","Green","Flat","Bleak, empty, and uninhabited"],
+          options: ["Beautiful and lively","Warm and welcoming","Green and fertile","Flat and featureless","Bleak, empty, and barren"],
           correct: 4,
           explanation: "'Desolate' means bleak, empty, and without inhabitants or signs of life. A desolate landscape is barren, lonely, and gives a feeling of emptiness. Think about when you'd use this word versus its synonym. ✓"
         },
@@ -24965,7 +24959,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 1,
           "question": "Which word is closest in meaning to 'damp'?",
           "options": [
-            "Slightly wet",
+            "Moist",
             "Frozen",
             "Warm",
             "Dry",
@@ -25106,10 +25100,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "In the sentence 'The greedy squirrel hoarded acorns,' what does 'hoarded' mean?",
           "options": [
             "Collected and stored away",
-            "Ate",
-            "Threw away",
-            "Lost",
-            "Shared"
+            "Quickly ate up",
+            "Carelessly threw away",
+            "Accidentally lost track of",
+            "Generously shared with others"
           ],
           "correct": 0,
           "explanation": "'Hoarded' means collected and stored up a large amount of something, often more than you need. Squirrels hoard nuts for winter. Context is your best friend — surrounding words give clues. ✓"
@@ -25359,7 +25353,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "Brave",
             "Loud",
-            "Shy and nervous",
+            "Shy",
             "Strong",
             "Clever"
           ],
@@ -25652,7 +25646,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the word 'monotonous' mean?",
           "options": [
             "Exciting and varied",
-            "Dull and repetitive without any variety",
+            "Dull and repetitive",
             "Very loud",
             "Extremely fast",
             "Slightly dangerous"
@@ -25667,7 +25661,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "Hidden from view",
             "Very quiet",
-            "Clearly visible and attracting notice",
+            "Clearly visible and noticeable",
             "Slightly damaged",
             "Extremely old"
           ],
@@ -25697,7 +25691,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "A boring routine",
             "A pleasant surprise",
             "A quick solution",
-            "A difficult situation with two tough options"
+            "A tough either-or problem"
           ],
           "correct": 4,
           "explanation": "A 'dilemma' is a situation in which you must choose between two or more difficult alternatives. Neither option seems ideal. Think about when you'd use this word versus its synonym. ✓"
@@ -25848,7 +25842,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "In the sentence 'She felt compelled to tell the truth,' what does 'compelled' mean?",
           "options": [
             "Tempted",
-            "Forced by a strong urge",
+            "Pressured",
             "Hesitant",
             "Permitted",
             "Embarrassed"
@@ -25875,11 +25869,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "In the sentence 'The witness gave a vivid account of the accident,' what does 'vivid' mean?",
           "options": [
-            "Boring",
-            "Short",
-            "Confusing",
+            "Dull and lifeless",
+            "Short and rushed",
+            "Confusing and unclear",
             "Very clear and detailed",
-            "Quiet"
+            "Quiet and calm"
           ],
           "correct": 3,
           "explanation": "'Vivid' means producing powerful, clear images in the mind. A vivid account is so detailed and lively that you can almost picture the scene. ✓"
@@ -25891,7 +25885,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "Forbade",
             "Helped",
-            "Strongly encouraged",
+            "Pressed",
             "Prevented",
             "Allowed"
           ],
@@ -26113,7 +26107,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "What does the word 'substantial' mean?",
           "options": [
-            "Considerable in size or amount",
+            "Considerable in size",
             "Very tiny",
             "Completely free",
             "Slightly broken",
@@ -26157,7 +26151,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "A violent fight",
             "A polite discussion",
-            "A noisy argument about something unimportant",
+            "A petty noisy argument",
             "A long silence",
             "A happy celebration"
           ],
@@ -26215,7 +26209,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Enjoyed",
             "Ended",
             "Ignored",
-            "Caused or triggered"
+            "Triggered"
           ],
           "correct": 4,
           "explanation": "'Provoked' means caused or stimulated a reaction. The tiredness triggered the tantrum — it brought it about. Look for prefixes and suffixes you recognise in unfamiliar words. ✓"
@@ -26312,7 +26306,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "A pair of glasses",
             "A loud noise",
             "A written report",
-            "A visually striking performance or display",
+            "A striking visual display",
             "A difficult problem"
           ],
           "correct": 3,
@@ -26354,7 +26348,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Disproved",
             "Complicated",
             "Changed",
-            "Supported and confirmed",
+            "Confirmed",
             "Ignored"
           ],
           "correct": 3,
@@ -26507,7 +26501,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "Agreement",
             "Celebration",
-            "Disagreement or argument",
+            "Argument",
             "Conversation",
             "Solution"
           ],
@@ -26533,11 +26527,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "In the sentence 'The mayor pledged to improve local services,' what does 'pledged' mean?",
           "options": [
-            "Forgot",
-            "Refused",
-            "Pretended",
-            "Hoped",
-            "Made a serious promise"
+            "Forgot completely",
+            "Refused outright",
+            "Pretended falsely",
+            "Hoped quietly",
+            "Promised solemnly"
           ],
           "correct": 4,
           "explanation": "'Pledged' means made a solemn promise or commitment. When a mayor pledges something, they are formally promising to make it happen. This type of question comes up regularly in 11+ papers. ✓"
@@ -26576,7 +26570,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the word 'superfluous' mean?",
           "options": [
             "Essential",
-            "More than is needed; excessive",
+            "Unnecessary and excessive",
             "Very expensive",
             "Extremely fast",
             "Well organised"
@@ -26590,10 +26584,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which word is closest in meaning to 'meticulous'?",
           "options": [
             "Sloppy",
-            "Very fast",
-            "Slightly bored",
-            "Extremely careful and precise",
-            "Quite noisy"
+            "Hasty",
+            "Bored",
+            "Painstaking",
+            "Noisy"
           ],
           "correct": 3,
           "explanation": "'Meticulous' means showing great attention to detail and being very thorough and precise. A meticulous person checks every small detail. A great word to use in your own writing! ✓"
@@ -26645,11 +26639,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "question": "Which word is closest in meaning to 'apathetic'?",
           "options": [
-            "Extremely angry",
+            "Furious",
             "Passionate",
-            "Showing no interest or concern",
-            "Very cheerful",
-            "Deeply worried"
+            "Indifferent",
+            "Cheerful",
+            "Worried"
           ],
           "correct": 2,
           "explanation": "'Apathetic' means showing no interest, enthusiasm, or concern. An apathetic person simply does not care about what is happening. Words with similar meanings often have subtle differences. ✓"
@@ -26912,7 +26906,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the word 'precarious' mean?",
           "options": [
             "Perfectly safe",
-            "Not securely held; dangerously likely to fall",
+            "Dangerously unstable",
             "Extremely comfortable",
             "Very expensive",
             "Quite ordinary"
@@ -26957,7 +26951,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "To ignore completely",
             "To reward generously",
             "To whisper quietly",
-            "To express sharp disapproval; tell someone off"
+            "To scold sharply"
           ],
           "correct": 4,
           "explanation": "A 'reprimand' is a formal expression of disapproval — a severe telling off. The teacher reprimanded the pupils for their rude behaviour. This type of question comes up regularly in 11+ papers. ✓"
@@ -26967,9 +26961,9 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "question": "What does the word 'altruistic' mean?",
           "options": [
-            "Showing unselfish concern for others",
+            "Selflessly caring for others",
             "Very wealthy",
-            "Selfish",
+            "Selfish and greedy",
             "Physically strong",
             "Extremely clever"
           ],
@@ -26982,7 +26976,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "What does the word 'laborious' mean?",
           "options": [
             "Quick and easy",
-            "Requiring considerable time and effort",
+            "Requiring great effort",
             "Extremely enjoyable",
             "Slightly risky",
             "Very colourful"
@@ -26997,7 +26991,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "Shy and reserved",
             "Extremely generous",
-            "Failing to observe proper limits; too bold",
+            "Overstepping proper boundaries",
             "Quite forgetful",
             "Very intelligent"
           ],
@@ -27292,7 +27286,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Very talkative",
             "Extremely friendly",
             "Always laughing",
-            "Not revealing one's thoughts readily",
+            "Reserved and quiet",
             "Rather clumsy"
           ],
           "correct": 3,
@@ -27474,7 +27468,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Completely certain",
             "Very angry",
             "Extremely happy",
-            "Having mixed feelings about something",
+            "Having mixed feelings",
             "Rather tired"
           ],
           "correct": 3,
@@ -28146,7 +28140,13 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 405,
           "difficulty": 3,
           "question": "The root 'terra' means 'earth/land'. What is a 'terrace'?",
-          "options": ["A raised flat area of land", "A deep ocean", "A high cloud", "A strong wind", "A bright star"],
+          "options": [
+            "A raised flat platform",
+            "A deep ocean",
+            "A high cloud",
+            "A strong wind",
+            "A bright star"
+          ],
           "correct": 0,
           "explanation": "'Terra' means earth or land, so a 'terrace' is a raised flat area of land (or a row of houses built on a slope). Other 'terra' words: terrain (type of land), territory (area of land), terrestrial (relating to earth). A great word to use in your own writing! ✓"
         },
@@ -28378,7 +28378,13 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 434,
           "difficulty": 3,
           "question": "What does the idiom 'to be on thin ice' mean?",
-          "options": ["To be ice skating", "To be in a hurry", "To be very cold", "To be losing weight", "To be in a dangerous or risky situation"],
+          "options": [
+            "To be ice skating",
+            "To be in a hurry",
+            "To be very cold",
+            "To be losing weight",
+            "To be in a risky position"
+          ],
           "correct": 4,
           "explanation": "'On thin ice' means in a risky situation where something could go wrong at any moment — like walking on ice that might crack. If your teacher says 'You're on thin ice', they're warning you that you're close to being in serious trouble! Learning word families helps you decode new words. ✓"
         },

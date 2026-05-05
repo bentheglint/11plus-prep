@@ -8561,10 +8561,10 @@ const vrData = {
         {
           id: 38,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ CRET",
-          options: ["TIP","JAR","MOB","HUB","SEC"],
-          correct: 4,
-          explanation: "The answer is SEC, making SECRET. A secret is something that is kept hidden from others. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ NING",
+          options: ["EVE","ODE","EBB","EWE","EEL"],
+          correct: 0,
+          explanation: "The answer is EVE, making EVENING. An 'eve' is the day or night before an important event, like Christmas Eve. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 39,
@@ -8577,10 +8577,10 @@ const vrData = {
         {
           id: 40,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TUME",
-          options: ["COT","COW","COS","COB","COG"],
-          correct: 2,
-          explanation: "The answer is COS, making COSTUME. 'Cos' is a type of lettuce, or an informal way of saying 'because'. A costume is a set of clothes worn for a special occasion or performance. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ TUNE",
+          options: ["FOR","FAR","FUR","FIR","FAN"],
+          correct: 0,
+          explanation: "The answer is FOR, making FORTUNE. 'For' is a small, common word used to show purpose or reason. A fortune is a large amount of money or good luck. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
           id: 41,
@@ -8601,10 +8601,10 @@ const vrData = {
         {
           id: 43,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ MANENT",
-          options: ["MOB","TIP","JAR","HUB","PER"],
-          correct: 4,
-          explanation: "The answer is PER, making PERMANENT. Permanent means lasting for an indefinitely long time. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ TASTIC",
+          options: ["MAN","FAN","CAN","TAN","RAN"],
+          correct: 1,
+          explanation: "The answer is FAN, making FANTASTIC. A 'fan' is a device that moves air, or a person who admires something or someone. Fantastic means extraordinarily good or wonderful. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 44,
