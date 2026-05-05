@@ -341,7 +341,7 @@ function QuizScreen({
                           key={idx}
                           onClick={() => onPickFromSet('A', idx)}
                           disabled={showFeedback}
-                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
+                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 select-none ${
                             showFeedback
                               ? idx === currentQuestion.correctPair[0]
                                 ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'
@@ -366,7 +366,7 @@ function QuizScreen({
                           key={idx}
                           onClick={() => onPickFromSet('B', idx)}
                           disabled={showFeedback}
-                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
+                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 select-none ${
                             showFeedback
                               ? idx === currentQuestion.correctPair[1]
                                 ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'

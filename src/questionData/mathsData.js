@@ -18366,7 +18366,7 @@ areaperimeter: {
     {
       id: 71,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 23, width: 12, dimUnit: "cm" } },
+      visual: { component: "RectangleDiagram", props: { length: 23, width: 12, dimUnit: "cm", missingDim: "length" } },
       question: "A rectangle has a perimeter of 70 cm and a width of 12 cm. What is its length?",
       options: ["46 cm", "29 cm", "35 cm", "23 cm", "58 cm"],
       correct: 3,
@@ -18429,7 +18429,7 @@ areaperimeter: {
     {
       id: 78,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 10, width: 9, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: 10, width: 9, dimUnit: "m", missingDim: "length" } },
       question: "A rectangle has an area of 90 square metres and a width of 9 metres. What is its length?",
       options: ["10 metres", "9 metres", "11 metres", "12 metres", "81 metres"],
       correct: 0,
@@ -18753,7 +18753,7 @@ areaperimeter: {
     {
       id: 114,
       difficulty: 2,
-      visual: { component: "RectangleDiagram", props: { length: 14, width: 9, dimUnit: "m" } },
+      visual: { component: "RectangleDiagram", props: { length: 14, width: 9, dimUnit: "m", missingDim: "length" } },
       question: "A rectangle has an area of 126 square metres and a width of 9 metres. What is its length?",
       options: ["12 metres", "14 metres", "13 metres", "15 metres", "16 metres"],
       correct: 1,

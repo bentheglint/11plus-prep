@@ -469,7 +469,12 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
     const handleTfAnswer = (answer) => {
       if (tfShowFeedback) return;
       const current = statements[tfIndex];
-      const isCorrect = answer === current.answer;
+      // Accept both schemas: { answer: bool } (canonical) and { isTrue: bool }
+      // (wordclass + comprehension subconcept files were authored with the
+      // older field name). Bug reported by Jacqui 4 May 2026: every click
+      // was marked incorrect because current.answer was undefined.
+      const expected = current.answer ?? current.isTrue;
+      const isCorrect = answer === expected;
       const newAnswers = [...tfAnswers, { index: tfIndex, answer, correct: isCorrect }];
       setTfAnswers(newAnswers);
       setTfShowFeedback(true);
@@ -545,7 +550,21 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                   : 'bg-amber-50 border border-amber-300'
               }`}>
                 <p className="text-sm font-medium text-gray-700">
-                  {renderBoldText(statements[tfIndex].explanation)}
+                  {/* Per-statement explanation is the canonical source. Some
+                      older lesson files (wordclass, comprehension) put feedback
+                      at interaction-level — fall back so users see something
+                      either way. */}
+                  {renderBoldText(
+                    statements[tfIndex].explanation
+                    || (lastAnswer?.correct
+                          ? (typeof interaction.feedback?.correct === 'function'
+                              ? interaction.feedback.correct(variables)
+                              : interaction.feedback?.correct)
+                          : (typeof interaction.feedback?.incorrect === 'function'
+                              ? interaction.feedback.incorrect(variables)
+                              : interaction.feedback?.incorrect))
+                    || ''
+                  )}
                 </p>
               </div>
             )}
