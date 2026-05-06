@@ -49,6 +49,8 @@ import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMod
 import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
+import CookieBanner from './components/CookieBanner';
+import Footer from './components/Footer';
 import MistakesScreen from './screens/MistakesScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
@@ -2074,12 +2076,15 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
 
   } // end renderView
 
+  const FOOTER_VIEWS = new Set(['home', 'topics', 'results', 'progress', 'mistakes', 'allActivity', 'topicDrillDown']);
+
   // ── Animated view wrapper ──
   return (
     <>
       <AnimatePresence mode="wait">
         <motion.div key={viewKey} {...viewTransition}>
           {renderView()}
+          {FOOTER_VIEWS.has(currentView) && <Footer />}
         </motion.div>
       </AnimatePresence>
       {pendingAchievement && (
@@ -2095,6 +2100,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           onStartFresh={startFreshFromPrompt}
         />
       )}
+      <CookieBanner />
     </>
   );
 }
