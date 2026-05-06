@@ -8,7 +8,7 @@ import ParentDashboard from './ParentDashboard';
 // you came from. Flagged during 15 Apr walkthrough (Phase 11).
 const TAB_STORAGE_KEY = 'progressScreen:view';
 
-function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, currentUser, onHome, onStartTopic, onDrillDown, onViewQuiz, onViewAllActivity }) {
+function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, userData, currentUser, getToken, onHome, onStartTopic, onDrillDown, onViewQuiz, onViewAllActivity }) {
   const initialView = (() => {
     if (typeof window === 'undefined') return 'child';
     if (new URLSearchParams(window.location.search).get('view') === 'progress-parent') return 'parent';
@@ -66,6 +66,7 @@ function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, user
           streaksAndPP={streaksAndPP}
           userData={userData}
           currentUser={currentUser}
+          getToken={getToken}
           onTopicClick={onDrillDown || onStartTopic}
           onHome={onHome}
         />
