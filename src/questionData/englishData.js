@@ -26151,7 +26151,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "options": [
             "A violent fight",
             "A polite discussion",
-            "A petty noisy argument",
+            "A trivial noisy argument",
             "A long silence",
             "A happy celebration"
           ],
