@@ -1,7 +1,13 @@
 import React from 'react';
+import * as Sentry from '@sentry/react';
 import { RefreshCw, AlertTriangle } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
+
+// Module-level current view — updated by App.js so error reports include
+// which screen the user was on when the error occurred.
+let _currentView = 'unknown';
+export function setCurrentView(view) { _currentView = view; }
 
 // Throttle error reports so a render loop can't DoS the Worker.
 // Cap per session + dedupe by message+source so the same error burst
@@ -28,6 +34,7 @@ function reportError(error, context = {}) {
       userAgent: navigator.userAgent,
       timestamp: new Date().toISOString(),
       user: localStorage.getItem('current-user') || 'unknown',
+      view: _currentView,
       ...context,
     };
     // Fire-and-forget — don't block the UI
@@ -42,9 +49,11 @@ function reportError(error, context = {}) {
 // Global uncaught error handler
 if (typeof window !== 'undefined') {
   window.addEventListener('error', (event) => {
+    Sentry.captureException(event.error || event.message, { extra: { view: _currentView } });
     reportError(event.error || event.message, { source: 'window.onerror' });
   });
   window.addEventListener('unhandledrejection', (event) => {
+    Sentry.captureException(event.reason, { extra: { view: _currentView } });
     reportError(event.reason, { source: 'unhandledrejection' });
   });
 }
@@ -61,6 +70,12 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     console.error('[ErrorBoundary]', error, errorInfo);
+    Sentry.captureException(error, {
+      extra: {
+        componentStack: errorInfo?.componentStack,
+        view: _currentView,
+      },
+    });
     reportError(error, {
       source: 'ErrorBoundary',
       componentStack: errorInfo?.componentStack?.substring(0, 1000),

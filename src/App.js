@@ -51,6 +51,7 @@ import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
 import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
+import { setCurrentView as setErrorBoundaryView } from './components/ErrorBoundary';
 import MistakesScreen from './screens/MistakesScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
@@ -128,6 +129,9 @@ function App({ currentUser: authUser, getToken, loadedData }) {
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
   const [currentView, setCurrentView] = useState('home');
+
+  // Keep error boundary view context in sync for Sentry error reports
+  React.useEffect(() => { setErrorBoundaryView(currentView); }, [currentView]);
 
   // Scroll to top whenever the view changes — otherwise new screens land
   // wherever the previous screen's scroll position was (flagged 15 Apr 2026

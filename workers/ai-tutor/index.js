@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/cloudflare';
 import { CORS, BASE_HEADERS, json, checkRateLimit, checkOrigin } from './helpers.js';
 import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
@@ -193,7 +194,7 @@ async function handleTutor(request, env) {
 
 // ── Router ──
 
-export default {
+const worker = {
   async fetch(request, env) {
     // Origin allowlist gate — browser requests from unknown origins get
     // 403 before any routing. Skips silently for server-to-server calls
@@ -330,5 +331,24 @@ export default {
   // Cron trigger — weekly progress emails (Sunday 18:00 UTC)
   async scheduled(event, env, ctx) {
     ctx.waitUntil(handleScheduled(env));
+  },
+};
+
+// Wrap with Sentry if DSN is configured; fall back to bare worker otherwise.
+// No-ops cleanly when SENTRY_DSN is not set (local dev, pre-setup).
+export default {
+  async fetch(request, env, ctx) {
+    if (!env.SENTRY_DSN) return worker.fetch(request, env, ctx);
+    return Sentry.withSentry(
+      () => ({ dsn: env.SENTRY_DSN, tracesSampleRate: 0 }),
+      worker,
+    ).fetch(request, env, ctx);
+  },
+  async scheduled(event, env, ctx) {
+    if (!env.SENTRY_DSN) return worker.scheduled(event, env, ctx);
+    return Sentry.withSentry(
+      () => ({ dsn: env.SENTRY_DSN, tracesSampleRate: 0 }),
+      worker,
+    ).scheduled(event, env, ctx);
   },
 };
