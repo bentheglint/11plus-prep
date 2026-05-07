@@ -82,11 +82,14 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
             <Shield className="w-4 h-4 text-[#22C55E]" />
             <span>Your child's data is safe</span>
           </div>
-          <a href="/privacy.html" className="underline hover:text-[#7C3AED]">
+          <a href="/privacy" className="underline hover:text-[#7C3AED]">
             Privacy Policy
           </a>
-          <a href="/terms.html" className="underline hover:text-[#7C3AED]">
+          <a href="/terms" className="underline hover:text-[#7C3AED]">
             Terms
+          </a>
+          <a href="/help" className="underline hover:text-[#7C3AED]">
+            Help
           </a>
         </div>
       </main>
