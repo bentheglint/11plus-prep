@@ -297,10 +297,12 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
             <p className="text-gray-400 text-center py-2">Tap steps below to place them here</p>
           )}
           {orderedSteps.map((item, idx) => (
-            <div
+            <button
+              type="button"
               key={item.originalIndex}
-              onClick={() => !orderChecked && setOrderedSteps(prev => prev.filter((_, i) => i !== idx))}
-              className={`flex items-center gap-3 p-3 rounded-xl border-2 transition-all ${
+              disabled={orderChecked}
+              onClick={() => setOrderedSteps(prev => prev.filter((_, i) => i !== idx))}
+              className={`w-full text-left flex items-center gap-3 p-3 rounded-xl border-2 transition-all ${
                 orderChecked
                   ? item.originalIndex === idx
                     ? 'border-green-500 bg-green-50'
@@ -314,7 +316,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                   : 'bg-[#7C3AED] text-white'
               }`}>{idx + 1}</span>
               <span className="text-base font-medium">{renderBoldText(item.text)}</span>
-            </div>
+            </button>
           ))}
         </div>
 
@@ -622,9 +624,16 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
       </button>
 
       {showModal && (
-        <div className="fixed inset-0 bg-black/50 z-[10000] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" onClick={e => e.stopPropagation()}>
-            <h3 className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2 mb-1">
+        <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="flag-issue-title">
+          <button
+            type="button"
+            aria-label="Close flag issue dialog"
+            className="absolute inset-0 bg-black/50 cursor-default"
+            tabIndex={-1}
+            onClick={() => setShowModal(false)}
+          />
+          <div className="relative z-10 bg-white rounded-2xl shadow-2xl max-w-md w-full p-6">
+            <h3 id="flag-issue-title" className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2 mb-1">
               <Flag className="w-5 h-5 text-red-500" />
               Flag Issue
             </h3>
@@ -633,7 +642,7 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
             </p>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold text-slate-800 mb-2">What's wrong?</label>
+              <p className="block text-sm font-semibold text-slate-800 mb-2">What's wrong?</p>
               <div className="grid grid-cols-2 gap-2">
                 {categories.map(cat => (
                   <button
@@ -652,8 +661,9 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
             </div>
 
             <div className="mb-5">
-              <label className="block text-sm font-semibold text-slate-800 mb-1">Details (optional)</label>
+              <label htmlFor="flag-details" className="block text-sm font-semibold text-slate-800 mb-1">Details (optional)</label>
               <textarea
+                id="flag-details"
                 value={note}
                 onChange={e => setNote(e.target.value)}
                 placeholder="Describe what's wrong..."

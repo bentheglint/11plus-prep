@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronDown, X } from 'lucide-react';
 
 const USERS = ['Ben', 'Lauren', 'Daisy', 'Evie', 'Jacqui'];
@@ -13,6 +13,14 @@ const NAME_COLORS = {
 function UserAvatar({ currentUser, onSetCurrentUser }) {
   const [showPicker, setShowPicker] = useState(false);
   const color = NAME_COLORS[currentUser] || '#64748B';
+
+  // Close picker on Escape (keyboard a11y)
+  useEffect(() => {
+    if (!showPicker) return undefined;
+    const onKey = (e) => { if (e.key === 'Escape') setShowPicker(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [showPicker]);
 
   return (
     <div className="relative">
@@ -36,9 +44,12 @@ function UserAvatar({ currentUser, onSetCurrentUser }) {
       {/* Picker modal */}
       {showPicker && (
         <>
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 z-40"
+          {/* Backdrop — closes picker when clicked outside */}
+          <button
+            type="button"
+            aria-label="Close user picker"
+            className="fixed inset-0 z-40 cursor-default"
+            tabIndex={-1}
             onClick={() => setShowPicker(false)}
           />
           {/* Dropdown */}
