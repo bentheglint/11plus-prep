@@ -44,7 +44,7 @@ function TopicHeatMap({ mastery, onTopicClick }) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-4 mb-3 text-[10px] text-slate-500">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-3 text-[10px] text-slate-500">
         <div className="flex items-center gap-1">
           <div className="w-3 h-3 rounded-sm bg-gray-100 border border-gray-200" />
           Not started
