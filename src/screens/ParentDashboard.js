@@ -19,8 +19,46 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
   const { signOut } = useClerk();
   const [deleteState, setDeleteState] = useState('idle'); // idle | confirm | deleting | done
   const [downloadState, setDownloadState] = useState('idle'); // idle | downloading
+  const [emailOptIn, setEmailOptIn] = useState(null); // null = loading
+  const [emailPrefSaving, setEmailPrefSaving] = useState(false);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
+
+  // Load current email preference on mount
+  useEffect(() => {
+    if (!getToken || !API_URL) return;
+    (async () => {
+      try {
+        const token = await getToken();
+        const res = await fetch(`${API_URL}/api/account`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setEmailOptIn(!!data.account?.email_opt_in);
+        }
+      } catch (_) {}
+    })();
+  }, [getToken]);
+
+  async function handleEmailPrefToggle() {
+    if (!getToken || !API_URL || emailPrefSaving) return;
+    const newVal = !emailOptIn;
+    setEmailOptIn(newVal);
+    setEmailPrefSaving(true);
+    try {
+      const token = await getToken();
+      await fetch(`${API_URL}/api/account/email-preference`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ emailOptIn: newVal }),
+      });
+    } catch (_) {
+      setEmailOptIn(!newVal); // revert on error
+    } finally {
+      setEmailPrefSaving(false);
+    }
+  }
 
   async function handleDownload() {
     if (!getToken || !API_URL) return;
@@ -109,6 +147,24 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
           <p className="text-sm text-slate-500 mb-5">
             Under UK GDPR you can download or delete all data associated with this account at any time.
           </p>
+
+          {/* Email preference toggle */}
+          {emailOptIn !== null && (
+            <div className="flex items-center justify-between py-3 border-b border-slate-100 mb-4">
+              <div>
+                <p className="text-sm font-semibold text-slate-700">Weekly progress emails</p>
+                <p className="text-xs text-slate-400 mt-0.5">Sent every Sunday — {currentUser}'s quiz results and accuracy</p>
+              </div>
+              <button
+                onClick={handleEmailPrefToggle}
+                disabled={emailPrefSaving}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors shrink-0 ml-4 ${emailOptIn ? 'bg-[#7C3AED]' : 'bg-slate-200'}`}
+                aria-label={emailOptIn ? 'Unsubscribe from weekly emails' : 'Subscribe to weekly emails'}
+              >
+                <span className={`inline-block h-4 w-4 transform rounded-full bg-white shadow transition-transform ${emailOptIn ? 'translate-x-6' : 'translate-x-1'}`} />
+              </button>
+            </div>
+          )}
 
           <div className="flex flex-col sm:flex-row gap-3">
             {/* Download */}

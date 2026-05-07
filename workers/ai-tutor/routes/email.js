@@ -21,12 +21,12 @@ export async function handleScheduled(env) {
 
   const db = env.DB;
 
-  // Get all accounts with children
+  // Get all accounts with children where parent opted in to progress emails
   const { results: accounts } = await db.prepare(`
     SELECT a.id, a.email, a.name, c.id as child_id, c.display_name
     FROM accounts a
     JOIN children c ON c.account_id = a.id
-    WHERE a.last_login_at IS NOT NULL
+    WHERE a.last_login_at IS NOT NULL AND a.email_opt_in = 1
   `).all();
 
   if (accounts.length === 0) {
@@ -86,7 +86,7 @@ export async function handleScheduled(env) {
         .join('\n  ');
 
       // Build email
-      const subject = `${account.display_name}'s Weekly Progress — 11+ Prep`;
+      const subject = `${account.display_name}'s Weekly Progress — PrepStep`;
       const html = buildEmailHtml({
         parentName: account.name,
         childName: account.display_name,
@@ -113,6 +113,10 @@ export async function handleScheduled(env) {
           to: account.email,
           subject,
           html,
+          headers: {
+            'List-Unsubscribe': `<mailto:hello@prepstep.co.uk?subject=unsubscribe>`,
+            'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+          },
         }),
       });
 
@@ -142,7 +146,7 @@ function buildEmailHtml({ parentName, childName, quizCount, questionCount, accur
     <!-- Header -->
     <div style="background: #6C5CE7; border-radius: 16px 16px 0 0; padding: 24px; text-align: center;">
       <h1 style="color: white; margin: 0; font-size: 22px;">${childName}'s Week in Review</h1>
-      <p style="color: rgba(255,255,255,0.8); margin: 8px 0 0; font-size: 14px;">11+ Exam Prep</p>
+      <p style="color: rgba(255,255,255,0.8); margin: 8px 0 0; font-size: 14px;">PrepStep</p>
     </div>
 
     <!-- Body -->

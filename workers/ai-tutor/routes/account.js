@@ -1,11 +1,12 @@
 // ── Account Routes ──
-// POST   /api/account        — Create account (on first Clerk login)
-// GET    /api/account         — Get account details
-// DELETE /api/account         — Delete account + ALL child data (GDPR)
-// POST   /api/account/consent — Record consent with version
-// POST   /api/account/child   — Create child profile
-// GET    /api/account/child   — Get child profile
-// PATCH  /api/account/child   — Update child display name
+// POST   /api/account                  — Create account (on first Clerk login)
+// GET    /api/account                  — Get account details
+// DELETE /api/account                  — Delete account + ALL child data (GDPR)
+// POST   /api/account/consent          — Record consent with version
+// PATCH  /api/account/email-preference — Update email opt-in preference
+// POST   /api/account/child            — Create child profile
+// GET    /api/account/child            — Get child profile
+// PATCH  /api/account/child            — Update child display name
 
 import { json } from '../helpers.js';
 
@@ -14,7 +15,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
 
   // POST /api/account — Create account on first login
   if (path === '/api/account' && request.method === 'POST') {
-    const { email, name, consentVersion, inviteCode } = await request.json();
+    const { email, name, consentVersion, inviteCode, emailOptIn } = await request.json();
     if (!email || !name || !consentVersion) {
       return json({ error: 'Missing email, name, or consentVersion' }, 400);
     }
@@ -41,9 +42,9 @@ export async function handleAccountRoutes(request, env, userId, path) {
     }
 
     await db.prepare(
-      `INSERT INTO accounts (id, email, name, consent_given_at, consent_version, last_login_at, is_comped, comp_source)
-       VALUES (?, ?, ?, datetime('now'), ?, datetime('now'), ?, ?)`
-    ).bind(userId, email, name, consentVersion, isComped, compSource).run();
+      `INSERT INTO accounts (id, email, name, consent_given_at, consent_version, last_login_at, is_comped, comp_source, email_opt_in)
+       VALUES (?, ?, ?, datetime('now'), ?, datetime('now'), ?, ?, ?)`
+    ).bind(userId, email, name, consentVersion, isComped, compSource, emailOptIn ? 1 : 0).run();
 
     return json({ ok: true, accountId: userId, comped: !!isComped }, 201);
   }
@@ -53,7 +54,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
     const account = await db.prepare(
       `SELECT id, email, name, created_at, consent_given_at, consent_version, last_login_at,
               stripe_customer_id, subscription_status, subscription_current_period_end,
-              is_comped, comp_source
+              is_comped, comp_source, email_opt_in
        FROM accounts WHERE id = ?`
     ).bind(userId).first();
 
@@ -111,11 +112,32 @@ export async function handleAccountRoutes(request, env, userId, path) {
 
   // DELETE /api/account — Delete account + ALL child data (GDPR right to erasure)
   if (path === '/api/account' && request.method === 'DELETE') {
+    // Fetch email before deleting so we can send a confirmation
+    const acct = await db.prepare('SELECT email, name FROM accounts WHERE id = ?').bind(userId).first();
+
     // ON DELETE CASCADE handles all child data
     const result = await db.prepare('DELETE FROM accounts WHERE id = ?').bind(userId).run();
 
     if (result.meta.changes === 0) {
       return json({ error: 'Account not found' }, 404);
+    }
+
+    // Send deletion confirmation email (fire-and-forget — don't block the response)
+    if (acct && env.EMAIL_API_KEY && env.EMAIL_FROM) {
+      fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${env.EMAIL_API_KEY}` },
+        body: JSON.stringify({
+          from: env.EMAIL_FROM,
+          to: acct.email,
+          subject: 'Your PrepStep account has been deleted',
+          html: `<p>Hi ${acct.name},</p>
+<p>Your PrepStep account and all associated learning data have been permanently deleted, as you requested.</p>
+<p>If you didn't request this, please contact us at <a href="mailto:hello@prepstep.co.uk">hello@prepstep.co.uk</a> immediately.</p>
+<p>We're sorry to see you go. If you'd like to start again in the future, you're always welcome to create a new account.</p>
+<p>— The PrepStep team</p>`,
+        }),
+      }).catch(() => {}); // Fire-and-forget
     }
 
     return json({ ok: true, message: 'Account and all associated data deleted' });
@@ -132,6 +154,15 @@ export async function handleAccountRoutes(request, env, userId, path) {
       `UPDATE accounts SET consent_given_at = datetime('now'), consent_version = ? WHERE id = ?`
     ).bind(consentVersion, userId).run();
 
+    return json({ ok: true });
+  }
+
+  // PATCH /api/account/email-preference — Update email opt-in
+  if (path === '/api/account/email-preference' && request.method === 'PATCH') {
+    const { emailOptIn } = await request.json();
+    if (emailOptIn === undefined) return json({ error: 'Missing emailOptIn' }, 400);
+    await db.prepare('UPDATE accounts SET email_opt_in = ? WHERE id = ?')
+      .bind(emailOptIn ? 1 : 0, userId).run();
     return json({ ok: true });
   }
 

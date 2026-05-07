@@ -354,6 +354,7 @@ function AuthGateReal({ children }) {
           name: user.fullName || user.firstName || 'Parent',
           consentVersion: '1.0',
           inviteCode: inviteCode || undefined,
+          emailOptIn: emailOptIn ? true : false,
         }),
       });
 
