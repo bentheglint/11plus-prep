@@ -51,7 +51,15 @@ function stripeFormFlatten(obj, prefix) {
   for (const [k, v] of Object.entries(obj)) {
     if (v === null || v === undefined) continue;
     const key = `${prefix}[${k}]`;
-    if (typeof v === 'object' && !Array.isArray(v)) {
+    if (Array.isArray(v)) {
+      v.forEach((item, i) => {
+        if (typeof item === 'object' && item !== null) {
+          Object.assign(out, stripeFormFlatten(item, `${key}[${i}]`));
+        } else {
+          out[`${key}[${i}]`] = String(item);
+        }
+      });
+    } else if (typeof v === 'object') {
       Object.assign(out, stripeFormFlatten(v, key));
     } else {
       out[key] = String(v);
@@ -127,8 +135,9 @@ async function verifyStripeSignature(rawBody, sigHeader, secret, toleranceSec = 
 
 // POST /api/stripe/subscribe
 // Creates (or reuses) a Stripe Customer for the user, then creates a
-// Subscription at STRIPE_PRICE_ID with payment_behavior=default_incomplete.
-// Returns { subscriptionId, clientSecret } for the frontend to confirm.
+// Checkout Session in subscription mode. Returns { url } — the frontend
+// redirects to Stripe's hosted checkout page. On success, Stripe redirects
+// back to APP_URL with ?subscribed=1; on cancel, back to APP_URL.
 export async function handleSubscribe(request, env, userId) {
   const db = env.DB;
 
@@ -148,7 +157,7 @@ export async function handleSubscribe(request, env, userId) {
   }
 
   try {
-    // Step 1 — ensure customer
+    // Ensure customer (so subscription is associated with a known customer)
     let customerId = account.stripe_customer_id;
     if (!customerId) {
       const customer = await stripeCall(env, 'POST', '/customers', {
@@ -161,31 +170,24 @@ export async function handleSubscribe(request, env, userId) {
         .bind(customerId, userId).run();
     }
 
-    // Step 2 — create subscription. default_incomplete means Stripe
-    // creates the subscription as incomplete and returns a PaymentIntent
-    // on the first invoice for the frontend to confirm with Elements.
-    const subscription = await stripeCall(env, 'POST', '/subscriptions', {
+    const appUrl = env.APP_URL || 'https://prepstep.co.uk';
+    const body = await request.json().catch(() => ({}));
+    const returnBase = body.returnUrl || appUrl;
+
+    // Checkout Session — Stripe hosts the card form, 3DS, Apple Pay etc.
+    const session = await stripeCall(env, 'POST', '/checkout/sessions', {
+      mode: 'subscription',
       customer: customerId,
-      items: [{ price: env.STRIPE_PRICE_ID }],
-      payment_behavior: 'default_incomplete',
-      payment_settings: {
-        save_default_payment_method: 'on_subscription',
-        payment_method_types: ['card'],
-      },
-      expand: ['latest_invoice.payment_intent'],
+      line_items: [{ price: env.STRIPE_PRICE_ID, quantity: 1 }],
+      success_url: `${returnBase}?subscribed=1`,
+      cancel_url: returnBase,
       metadata: { clerk_user_id: userId },
+      subscription_data: {
+        metadata: { clerk_user_id: userId },
+      },
     });
 
-    const clientSecret = subscription.latest_invoice?.payment_intent?.client_secret;
-    if (!clientSecret) {
-      return json({ error: 'Stripe did not return a client secret' }, 502);
-    }
-
-    return json({
-      subscriptionId: subscription.id,
-      clientSecret,
-      customerId,
-    });
+    return json({ url: session.url });
   } catch (err) {
     console.error('[Stripe subscribe]', err.message, err.stripeCode);
     return json({ error: err.message, code: err.stripeCode }, err.status || 500);
@@ -270,7 +272,8 @@ export async function handleWebhook(request, env) {
         }
         break;
       }
-      case 'invoice.paid': {
+      case 'invoice.paid':
+      case 'invoice.payment_succeeded': {
         // Belt-and-braces: ensure status=active after a successful charge.
         // customer.subscription.updated should fire too, but payment events
         // are a stronger signal the user has live access.

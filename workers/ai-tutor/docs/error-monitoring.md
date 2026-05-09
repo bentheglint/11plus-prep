@@ -42,7 +42,7 @@ Re-deploy Worker: `wrangler deploy` from `workers/ai-tutor/`.
 In your Sentry project → Alerts → Create Alert Rule:
 
 - **Condition:** A new issue is created
-- **Action:** Send email to ben@venortech.com
+- **Action:** Send email to benjacko82@hotmail.com
 - **Frequency:** Once per issue (not per occurrence — avoids spam)
 
 This gives you one email per new error class, which is the right signal at 100 accounts.
