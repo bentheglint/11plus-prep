@@ -26,8 +26,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Claude Code config (user-specific, not project source)
-/.claude
+# Claude Code config (user-specific, not project source).
+# Ignore everything in .claude/ by default, then selectively re-include
+# project-portable content (skills + agents intended to travel with the repo).
+/.claude/*
+!/.claude/skills/
+/.claude/skills/*
+!/.claude/skills/pricing-advisor/
+!/.claude/agents/
+/.claude/agents/*
+!/.claude/agents/pricing-advisor.md
 
 # Cloudflare
 /.wrangler
