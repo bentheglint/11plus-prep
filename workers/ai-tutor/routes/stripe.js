@@ -242,6 +242,26 @@ export async function handleWebhook(request, env) {
 
   const db = env.DB;
 
+  // Idempotency check — Stripe delivers webhooks at-least-once. If we've
+  // already processed this event.id, return 200 immediately so Stripe
+  // stops retrying. INSERT OR IGNORE atomically claims the event; meta.changes
+  // tells us whether we won the race.
+  if (event.id) {
+    try {
+      const claim = await db.prepare(
+        'INSERT OR IGNORE INTO stripe_webhook_events (event_id, type) VALUES (?, ?)'
+      ).bind(event.id, event.type).run();
+      if (claim.meta?.changes === 0) {
+        console.log('[Stripe webhook] Duplicate event ignored:', event.id, event.type);
+        return json({ received: true, duplicate: true });
+      }
+    } catch (err) {
+      // If the dedup table is missing (pre-migration), log and continue —
+      // duplicate processing is harmless given idempotent UPDATEs below.
+      console.warn('[Stripe webhook] dedup insert failed, processing anyway:', err.message);
+    }
+  }
+
   try {
     switch (event.type) {
       case 'customer.subscription.created':
@@ -296,6 +316,70 @@ export async function handleWebhook(request, env) {
     // 500 so Stripe retries. Idempotent updates make retry safe.
     return json({ error: err.message }, 500);
   }
+}
+
+// ── Reconciliation cron ──
+//
+// Daily sanity check: pull active subscriptions from Stripe, compare to
+// what D1 has marked active, log drift. Catches edge cases where a
+// webhook was missed or the dedup table swallowed a real event.
+//
+// Strategy: Stripe is the source of truth for billing. If D1 disagrees,
+// we log it but DON'T auto-correct — better to surface drift to a human
+// than risk flipping access state without context. The webhook handler
+// already keeps D1 in sync; this is the safety net.
+export async function reconcileSubscriptions(env) {
+  const db = env.DB;
+
+  // Stripe-side: list all active subscriptions (paginate if >100).
+  let stripeActive = new Set();
+  let startingAfter = null;
+  for (let page = 0; page < 10; page++) {
+    const path = `/subscriptions?status=active&limit=100${startingAfter ? `&starting_after=${startingAfter}` : ''}`;
+    const data = await stripeCall(env, 'GET', path);
+    for (const sub of data.data || []) {
+      if (sub.customer) stripeActive.add(sub.customer);
+    }
+    if (!data.has_more) break;
+    startingAfter = data.data[data.data.length - 1]?.id;
+    if (!startingAfter) break;
+  }
+
+  // D1-side: every account with status=active or trialing.
+  const { results: d1Active } = await db.prepare(
+    `SELECT id, email, stripe_customer_id, subscription_status
+     FROM accounts
+     WHERE subscription_status IN ('active', 'trialing')
+       AND stripe_customer_id IS NOT NULL`
+  ).all();
+  const d1ActiveCustomers = new Set(d1Active.map(a => a.stripe_customer_id));
+
+  // Drift class A — D1 thinks active, Stripe says not.
+  // Likely cause: missed customer.subscription.deleted webhook.
+  const ghostActive = d1Active.filter(a => !stripeActive.has(a.stripe_customer_id));
+
+  // Drift class B — Stripe says active, D1 doesn't.
+  // Likely cause: missed customer.subscription.created/updated webhook.
+  const missedActive = [...stripeActive].filter(c => !d1ActiveCustomers.has(c));
+
+  const summary = {
+    stripe_active_count: stripeActive.size,
+    d1_active_count: d1Active.length,
+    drift_d1_says_active_stripe_doesnt: ghostActive.length,
+    drift_stripe_says_active_d1_doesnt: missedActive.length,
+  };
+
+  if (ghostActive.length || missedActive.length) {
+    console.error('[reconciliation] DRIFT DETECTED', JSON.stringify({
+      ...summary,
+      ghost_active: ghostActive.map(a => ({ id: a.id, email: a.email, customer: a.stripe_customer_id })),
+      missed_active_customers: missedActive,
+    }));
+  } else {
+    console.log('[reconciliation] OK', JSON.stringify(summary));
+  }
+
+  return summary;
 }
 
 // ── Dispatcher ──

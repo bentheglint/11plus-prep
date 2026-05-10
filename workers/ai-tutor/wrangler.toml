@@ -33,7 +33,8 @@ namespace_id = "1002"
   limit = 20
   period = 60
 
-# Weekly progress email — runs Sunday 18:00 UTC
-# Dormant until EMAIL_API_KEY secret is configured
+# Cron triggers
+#   Sun 18:00 UTC — weekly progress emails (dormant until EMAIL_API_KEY set)
+#   Daily 06:00 UTC — Stripe reconciliation drift check
 [triggers]
-crons = ["0 18 * * SUN"]
+crons = ["0 18 * * SUN", "0 6 * * *"]

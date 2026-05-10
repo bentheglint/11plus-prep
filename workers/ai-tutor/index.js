@@ -6,7 +6,7 @@ import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
 import { handleScheduled } from './routes/email.js';
-import { handleStripeRoutes, handleWebhook } from './routes/stripe.js';
+import { handleStripeRoutes, handleWebhook, reconcileSubscriptions } from './routes/stripe.js';
 
 // ── Clerk JWT Verification ──
 
@@ -328,9 +328,17 @@ const worker = {
     }
   },
 
-  // Cron trigger — weekly progress emails (Sunday 18:00 UTC)
+  // Cron triggers — dispatched on event.cron pattern.
+  //   "0 18 * * SUN" — weekly progress emails (Sunday 18:00 UTC)
+  //   "0 6 * * *"    — daily Stripe reconciliation (06:00 UTC)
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(handleScheduled(env));
+    if (event.cron === '0 18 * * SUN') {
+      ctx.waitUntil(handleScheduled(env));
+    } else if (event.cron === '0 6 * * *') {
+      ctx.waitUntil(reconcileSubscriptions(env).catch(err => {
+        console.error('[reconciliation] failed:', err.message);
+      }));
+    }
   },
 };
 
