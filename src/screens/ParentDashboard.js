@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useClerk } from '@clerk/clerk-react';
-import { Download, Trash2, AlertTriangle } from 'lucide-react';
+import { Download, Trash2, AlertTriangle, CreditCard } from 'lucide-react';
 import OnTrackCard from '../components/progress/OnTrackCard';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
 import TopicHeatMap from '../components/progress/TopicHeatMap';
@@ -21,10 +21,14 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
   const [downloadState, setDownloadState] = useState('idle'); // idle | downloading
   const [emailOptIn, setEmailOptIn] = useState(null); // null = loading
   const [emailPrefSaving, setEmailPrefSaving] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState(null);
+  const [portalState, setPortalState] = useState('idle'); // idle | loading | error
+  const [portalError, setPortalError] = useState(null);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
-  // Load current email preference on mount
+  // Load account state on mount: email preference + subscription status.
+  // Single fetch — the GET /api/account response carries both.
   useEffect(() => {
     if (!getToken || !API_URL) return;
     (async () => {
@@ -36,10 +40,32 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
         if (res.ok) {
           const data = await res.json();
           setEmailOptIn(!!data.account?.email_opt_in);
+          setSubscriptionStatus(data.access?.subscriptionStatus || null);
         }
       } catch (_) {}
     })();
   }, [getToken]);
+
+  async function handleManageSubscription() {
+    if (!getToken || !API_URL || portalState === 'loading') return;
+    setPortalState('loading');
+    setPortalError(null);
+    try {
+      const token = await getToken();
+      const res = await fetch(`${API_URL}/api/stripe/portal`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ returnUrl: window.location.origin + '/' }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `Portal failed: ${res.status}`);
+      if (!data.url) throw new Error('Stripe did not return a portal URL');
+      window.location.href = data.url;
+    } catch (err) {
+      setPortalError(err.message);
+      setPortalState('idle');
+    }
+  }
 
   async function handleEmailPrefToggle() {
     if (!getToken || !API_URL || emailPrefSaving) return;
@@ -140,6 +166,32 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
         <SpeedTracking questionResults={userData.questionResults} />
 
         <SpeedAccuracyQuadrant questionResults={userData.questionResults} />
+
+        {/* Subscription — only shown for paying customers (active/past_due/trialing).
+            Comped, trial-only, and cancelled accounts don't see this card. */}
+        {['active', 'past_due', 'trialing'].includes(subscriptionStatus) && (
+          <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
+            <h2 className="text-base font-bold text-slate-800 mb-1">Subscription</h2>
+            <p className="text-sm text-slate-500 mb-5">
+              Update your card, view invoices, or cancel your subscription.
+            </p>
+
+            {portalError && (
+              <div className="p-3 rounded-lg bg-red-50 text-red-700 text-sm mb-4">
+                {portalError}
+              </div>
+            )}
+
+            <button
+              onClick={handleManageSubscription}
+              disabled={portalState === 'loading'}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-50"
+            >
+              <CreditCard className="w-4 h-4" />
+              {portalState === 'loading' ? 'Opening secure portal…' : 'Manage subscription'}
+            </button>
+          </div>
+        )}
 
         {/* Data & Privacy */}
         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
