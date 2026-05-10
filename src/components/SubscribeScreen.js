@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { CreditCard, Shield, CheckCircle2, ArrowLeft } from 'lucide-react';
+import { useClerk } from '@clerk/clerk-react';
+import { CreditCard, Shield, CheckCircle2, LogOut, Mail } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -7,7 +8,12 @@ const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 // User clicks Subscribe → POST to Worker → Worker creates Checkout Session
 // → frontend redirects to session.url → user pays on Stripe → Stripe
 // redirects back to APP_URL?subscribed=1 → AuthGate re-fetches account.
-export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
+//
+// Escape routes for users who don't want to subscribe right now:
+//   - Sign out → returns to landing page (can sign in as a different account)
+//   - Email support → for refund/cancellation/access questions
+export default function SubscribeScreen({ getToken, trialExpired }) {
+  const { signOut } = useClerk();
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
 
@@ -29,7 +35,6 @@ export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
       if (!res.ok) throw new Error(data.error || `Error ${res.status}`);
       if (!data.url) throw new Error('Stripe did not return a checkout URL');
 
-      // Redirect to Stripe-hosted checkout page
       window.location.href = data.url;
     } catch (err) {
       setError(err.message);
@@ -92,15 +97,22 @@ export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
           {submitting ? 'Redirecting to secure checkout…' : 'Subscribe — £30/month'}
         </button>
 
-        {onBack && (
+        {/* Escape routes */}
+        <div className="mt-5 pt-5 border-t border-slate-100 flex flex-col sm:flex-row gap-3 justify-between">
+          <a
+            href="mailto:hello@prepstep.co.uk?subject=PrepStep%20support"
+            className="flex items-center justify-center gap-2 py-2 text-sm text-slate-500 hover:text-[#7C3AED]"
+          >
+            <Mail className="w-4 h-4" /> Need help?
+          </a>
           <button
             type="button"
-            onClick={onBack}
-            className="w-full flex items-center justify-center gap-2 py-2 mt-3 text-sm text-slate-500 hover:text-[#7C3AED]"
+            onClick={() => signOut({ redirectUrl: window.location.origin + '/' })}
+            className="flex items-center justify-center gap-2 py-2 text-sm text-slate-500 hover:text-[#7C3AED]"
           >
-            <ArrowLeft className="w-4 h-4" /> Back
+            <LogOut className="w-4 h-4" /> Sign out
           </button>
-        )}
+        </div>
 
         {/* Trust signals */}
         <div className="flex items-center justify-center gap-2 mt-6 text-xs text-slate-500">

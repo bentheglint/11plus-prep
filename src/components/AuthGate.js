@@ -485,14 +485,13 @@ function AuthGateReal({ children }) {
     return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
   }
 
-  // Paywall: no access (trial expired or subscription canceled)
+  // Paywall: no access (trial expired or subscription canceled).
+  // SubscribeScreen handles its own escape routes (sign out + email support).
   if (onboardingStep === 'subscribe') {
     return (
       <SubscribeScreen
         getToken={getToken}
         trialExpired={!access?.inTrial}
-        onSuccess={() => checkAccount()}
-        onBack={() => null /* no back from paywall — user must subscribe */}
       />
     );
   }
