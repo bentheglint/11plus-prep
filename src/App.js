@@ -204,7 +204,8 @@ function App({ currentUser: authUser, getToken, loadedData }) {
   const [showDidItHelp, setShowDidItHelp] = useState(false);
   const [drillDownTopic, setDrillDownTopic] = useState(null); // { subject, topicKey }
   const [selectedQuiz, setSelectedQuiz] = useState(null); // Quiz Detail View — selected row from Recent Activity
-  const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity'
+  const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity' | 'results'
+  const [lastCompletedQuiz, setLastCompletedQuiz] = useState(null); // post-quiz review entry
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
@@ -392,6 +393,65 @@ function App({ currentUser: authUser, getToken, loadedData }) {
       sessionId: quizSessionId.current, // correlates this quiz with its question_results rows
     };
     userData.saveQuizResult(newResult);
+    // Cache for ResultsScreen → QuizDetailScreen review jump
+    setLastCompletedQuiz(newResult);
+  };
+
+  // Find the lesson that teaches a given question, callable from anywhere
+  // that has the question + topicKey (live quiz uses this via handleFindLesson;
+  // review uses it via handleReviewFindLesson, no quiz round-trip).
+  const navigateToLessonFor = (question, topicKey) => {
+    if (!question || !topicKey) return false;
+    const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
+    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms'];
+    let mappingSource = 'maths';
+    if (englishTopics.includes(topicKey)) mappingSource = 'english';
+    if (vrTopics.includes(topicKey)) mappingSource = 'vr';
+
+    const topicMappings = questionMappings[mappingSource]?.[topicKey];
+    if (!topicMappings) return false;
+    const entries = Array.isArray(topicMappings) ? topicMappings : Object.values(topicMappings);
+    const mapping = entries.find(e => e.questionId === question.id);
+    if (!mapping || !mapping.subConceptId) return false;
+
+    const topicLessons = lessonBank[topicKey];
+    if (!topicLessons) return false;
+    const allSubConcepts = topicLessons.subConcepts || [];
+    const subConcept = allSubConcepts.find(sc => sc.id === mapping.subConceptId);
+    if (!subConcept || !subConcept.lessons || subConcept.lessons.length === 0) return false;
+
+    const teachingLesson = subConcept.lessons.find(l => l.templateType === 'step-by-step') || subConcept.lessons[0];
+    if (!teachingLesson || !teachingLesson.variableSets || teachingLesson.variableSets.length === 0) return false;
+
+    const varSet = teachingLesson.variableSets[Math.floor(Math.random() * teachingLesson.variableSets.length)];
+    const interactVarSet = teachingLesson.variableSets.length > 1
+      ? teachingLesson.variableSets.find(v => v !== varSet) || varSet
+      : varSet;
+
+    setForcedLessonResult({
+      lesson: teachingLesson,
+      variables: varSet,
+      interactVariables: interactVarSet,
+      subConceptId: mapping.subConceptId,
+      subConceptName: subConcept.name || mapping.subConceptId,
+      topicName: topicLessons.name || topicKey,
+    });
+    setCurrentView('lesson');
+    return true;
+  };
+
+  // Called from ResultsScreen "Review questions" button.
+  const handleReviewQuiz = () => {
+    if (!lastCompletedQuiz) return;
+    setSelectedQuiz(lastCompletedQuiz);
+    setQuizDetailReturnTo('results');
+    setCurrentView('quizDetail');
+  };
+
+  // Find Me a Lesson from inside the review screen — no quiz round-trip,
+  // user can use Back to return.
+  const handleReviewFindLesson = (question, topicKey) => {
+    navigateToLessonFor(question, topicKey);
   };
 
   const handleSubjectSelect = (subject) => {
@@ -1982,6 +2042,8 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onRetry={handleRetry}
         onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
         onHome={handleHome}
+        canReview={!!lastCompletedQuiz?.sessionId}
+        onReviewQuiz={handleReviewQuiz}
       />
     );
   }
@@ -2064,13 +2126,19 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
   }
 
   if (currentView === 'quizDetail') {
+    const isPostQuizReview = quizDetailReturnTo === 'results';
     return (
       <QuizDetailScreen
         quiz={selectedQuiz}
         questionResults={questionResults}
+        inMemoryResults={isPostQuizReview ? questionResults : undefined}
         questionData={mathsData}
         englishData={englishData}
         vrData={vrData}
+        quizVisualComponents={quizVisualComponents}
+        landOn={isPostQuizReview ? 'first-wrong' : undefined}
+        autoOpenTutor={isPostQuizReview}
+        onFindLesson={handleReviewFindLesson}
         onBack={() => {
           setSelectedQuiz(null);
           setCurrentView(quizDetailReturnTo);
