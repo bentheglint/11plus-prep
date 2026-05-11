@@ -1,0 +1,98 @@
+{
+  "generated": "2026-05-11",
+  "description": "Baseline ID manifest for content-gap-fill sprint. verify-answers.js diffs against this. Never hand-edit — regenerate only before any content is added.",
+  "vr": {
+    "numberSeries": {
+      "ceiling": 99,
+      "count": 99
+    },
+    "letterCodes": {
+      "ceiling": 166,
+      "count": 166
+    },
+    "logicAndLanguage": {
+      "ceiling": 163,
+      "count": 163
+    },
+    "numberWordCodes": {
+      "ceiling": 125,
+      "count": 125
+    },
+    "missingLettersWords": {
+      "ceiling": 125,
+      "count": 125
+    },
+    "synonyms": {
+      "ceiling": 125,
+      "count": 125
+    },
+    "wordCodeAnalogies": {
+      "ceiling": 125,
+      "count": 125
+    },
+    "compoundWords": {
+      "ceiling": 145,
+      "count": 145
+    },
+    "letterPairSeries": {
+      "ceiling": 128,
+      "count": 128
+    }
+  },
+  "maths": {
+    "decimals": {
+      "ceiling": 223,
+      "count": 223
+    },
+    "algebra": {
+      "ceiling": 252,
+      "count": 252
+    },
+    "sequences": {
+      "ceiling": 152,
+      "count": 152
+    },
+    "longdivision": {
+      "ceiling": 265,
+      "count": 265
+    },
+    "speeddistancetime": {
+      "ceiling": 125,
+      "count": 125
+    },
+    "ratio": {
+      "ceiling": 245,
+      "count": 245
+    },
+    "longmultiplication": {
+      "ceiling": 228,
+      "count": 228
+    },
+    "placevalue": {
+      "ceiling": 176,
+      "count": 176
+    },
+    "anglesshapes": {
+      "ceiling": 225,
+      "count": 225
+    },
+    "datahandling": {
+      "ceiling": 220,
+      "count": 220
+    },
+    "areaperimeter": {
+      "ceiling": 209,
+      "count": 209
+    },
+    "volume": {
+      "ceiling": 140,
+      "count": 140
+    }
+  },
+  "newTopics": {
+    "balanceEquations": {
+      "ceiling": 0,
+      "count": 0
+    }
+  }
+}

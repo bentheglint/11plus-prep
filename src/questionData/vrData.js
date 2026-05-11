@@ -13105,6 +13105,246 @@ const vrData = {
           options: ["65","63","66","62","64"],
           correct: 4,
           explanation: "The pattern is +9 each time. Also notice: digit sum is always 10 (1+9, 2+8, 3+7, 4+6, 5+5, 6+4). Tip: The digit sum staying constant is a bonus pattern — the main rule is still +9. ✓"
+        },
+        {
+          id: 100,
+          difficulty: 1,
+          question: "Find the missing number:\n\n3 (18) 6\n4 (20) 5\n2 ( ? ) 6",
+          options: ["8", "12", "10", "14", "11"],
+          correct: 1,
+          explanation: "Look at the first two triplets. 3 times 6 is 18, and 4 times 5 is 20 — so the middle number is always the two outer numbers multiplied together. For the third triplet, 2 times 6 is 12. ✓"
+        },
+        {
+          id: 101,
+          difficulty: 1,
+          question: "Find the missing number:\n\n2 (14) 7\n3 (15) 5\n4 ( ? ) 6",
+          options: ["22", "26", "24", "10", "25"],
+          correct: 2,
+          explanation: "2 times 7 is 14 and 3 times 5 is 15, so the rule is multiply the outers. 4 times 6 is 24. ✓"
+        },
+        {
+          id: 102,
+          difficulty: 1,
+          question: "Find the missing number:\n\n5 (10) 2\n3 (24) 8\n4 ( ? ) 7",
+          options: ["28", "27", "29", "26", "11"],
+          correct: 0,
+          explanation: "5 times 2 is 10 and 3 times 8 is 24, so the middle number is always the outers multiplied. 4 times 7 is 28. ✓"
+        },
+        {
+          id: 103,
+          difficulty: 1,
+          question: "Find the missing number:\n\n6 (18) 3\n4 (16) 4\n5 ( ? ) 6",
+          options: ["11", "25", "35", "28", "30"],
+          correct: 4,
+          explanation: "6 times 3 is 18 and 4 times 4 is 16, so the rule is to multiply the outer numbers. 5 times 6 is 30. ✓"
+        },
+        {
+          id: 104,
+          difficulty: 1,
+          question: "Find the missing number:\n\n2 (16) 8\n3 (27) 9\n7 ( ? ) 2",
+          options: ["9", "16", "12", "14", "15"],
+          correct: 3,
+          explanation: "2 times 8 is 16 and 3 times 9 is 27, so multiply the outers. 7 times 2 is 14. ✓"
+        },
+        {
+          id: 105,
+          difficulty: 1,
+          question: "Find the missing number:\n\n5 (12) 7\n4 (10) 6\n3 ( ? ) 8",
+          options: ["24", "10", "12", "13", "11"],
+          correct: 4,
+          explanation: "5 plus 7 is 12 and 4 plus 6 is 10, so the rule is to add the outers. 3 plus 8 is 11. ✓"
+        },
+        {
+          id: 106,
+          difficulty: 1,
+          question: "Find the missing number:\n\n8 (15) 7\n6 (14) 8\n9 ( ? ) 4",
+          options: ["36", "13", "12", "14", "15"],
+          correct: 1,
+          explanation: "8 plus 7 is 15 and 6 plus 8 is 14, so add the outers. 9 plus 4 is 13. ✓"
+        },
+        {
+          id: 107,
+          difficulty: 1,
+          question: "Find the missing number:\n\n6 (13) 7\n5 ( ? ) 9\n4 (12) 8",
+          options: ["45", "13", "14", "15", "12"],
+          correct: 2,
+          explanation: "The first and third triplets show the rule: 6 plus 7 is 13, and 4 plus 8 is 12. So the middle number is always the outers added. 5 plus 9 is 14. ✓"
+        },
+        {
+          id: 108,
+          difficulty: 1,
+          question: "Find the missing number:\n\n7 (16) 9\n5 (11) 6\n8 ( ? ) 6",
+          options: ["14", "13", "15", "48", "12"],
+          correct: 0,
+          explanation: "7 plus 9 is 16 and 5 plus 6 is 11, so add the outers. 8 plus 6 is 14. ✓"
+        },
+        {
+          id: 109,
+          difficulty: 1,
+          question: "Find the missing number:\n\n9 (17) 8\n6 ( ? ) 7\n5 (12) 7",
+          options: ["42", "14", "12", "13", "15"],
+          correct: 3,
+          explanation: "9 plus 8 is 17, and 5 plus 7 is 12, so the rule is to add the outers. 6 plus 7 is 13. ✓"
+        },
+        {
+          id: 110,
+          difficulty: 2,
+          question: "Find the missing number:\n\n9 (5) 4\n8 (3) 5\n10 ( ? ) 4",
+          options: ["14", "4", "7", "40", "6"],
+          correct: 4,
+          explanation: "9 take away 4 is 5, and 8 take away 5 is 3 — so the middle number is the difference between the outers. 10 take away 4 is 6. ✓"
+        },
+        {
+          id: 111,
+          difficulty: 2,
+          question: "Find the missing number:\n\n12 (4) 8\n15 (6) 9\n14 ( ? ) 5",
+          options: ["19", "8", "10", "9", "7"],
+          correct: 3,
+          explanation: "12 take away 8 is 4 and 15 take away 9 is 6, so the rule is to subtract. 14 take away 5 is 9. ✓"
+        },
+        {
+          id: 112,
+          difficulty: 2,
+          question: "Find the missing number:\n\n11 (3) 8\n13 (7) 6\n20 ( ? ) 12",
+          options: ["7", "8", "9", "32", "6"],
+          correct: 1,
+          explanation: "11 minus 8 is 3 and 13 minus 6 is 7, so subtract the smaller outer from the larger. 20 minus 12 is 8. ✓"
+        },
+        {
+          id: 113,
+          difficulty: 2,
+          question: "Find the missing number:\n\n16 (9) 7\n14 (8) 6\n17 ( ? ) 5",
+          options: ["12", "13", "11", "22", "10"],
+          correct: 0,
+          explanation: "16 take away 7 is 9 and 14 take away 6 is 8, so the rule is to subtract. 17 take away 5 is 12. ✓"
+        },
+        {
+          id: 114,
+          difficulty: 2,
+          question: "Find the missing number:\n\n6 (5) 4\n10 (8) 6\n12 ( ? ) 8",
+          options: ["20", "11", "9", "10", "4"],
+          correct: 3,
+          explanation: "6 plus 4 is 10, halved is 5. 10 plus 6 is 16, halved is 8. So add the outers and halve. For 12 and 8: 12 plus 8 is 20, halved is 10. ✓"
+        },
+        {
+          id: 115,
+          difficulty: 2,
+          question: "Find the missing number:\n\n8 (7) 6\n14 (11) 8\n16 ( ? ) 4",
+          options: ["20", "12", "11", "9", "10"],
+          correct: 4,
+          explanation: "8 plus 6 is 14, halved is 7. 14 plus 8 is 22, halved is 11. So add the outers then halve. 16 plus 4 is 20, halved is 10. ✓"
+        },
+        {
+          id: 116,
+          difficulty: 2,
+          question: "Find the missing number:\n\n20 (15) 10\n18 (13) 8\n22 ( ? ) 12",
+          options: ["34", "18", "17", "16", "19"],
+          correct: 2,
+          explanation: "20 plus 10 is 30, halved is 15. 18 plus 8 is 26, halved is 13. So add the outers and halve. 22 plus 12 is 34, halved is 17. ✓"
+        },
+        {
+          id: 117,
+          difficulty: 2,
+          question: "Find the missing number:\n\n12 (4) 3\n20 (5) 4\n18 ( ? ) 6",
+          options: ["4", "3", "6", "12", "9"],
+          correct: 1,
+          explanation: "12 divided by 3 is 4 and 20 divided by 4 is 5, so the rule is to divide the larger outer by the smaller. 18 divided by 6 is 3. ✓"
+        },
+        {
+          id: 118,
+          difficulty: 2,
+          question: "Find the missing number:\n\n24 (6) 4\n30 (5) 6\n28 ( ? ) 7",
+          options: ["4", "5", "3", "35", "21"],
+          correct: 0,
+          explanation: "24 divided by 4 is 6 and 30 divided by 6 is 5, so divide the larger outer by the smaller. 28 divided by 7 is 4. ✓"
+        },
+        {
+          id: 119,
+          difficulty: 2,
+          question: "Find the missing number:\n\n40 (8) 5\n36 (4) 9\n42 ( ? ) 7",
+          options: ["5", "7", "8", "49", "6"],
+          correct: 4,
+          explanation: "40 divided by 5 is 8 and 36 divided by 9 is 4, so divide the larger outer by the smaller. 42 divided by 7 is 6. ✓"
+        },
+        {
+          id: 120,
+          difficulty: 3,
+          question: "Find the missing number:\n\n3 (13) 4\n2 (11) 5\n4 ( ? ) 6",
+          options: ["24", "26", "23", "25", "27"],
+          correct: 3,
+          explanation: "3 times 4 is 12, plus 1 is 13. 2 times 5 is 10, plus 1 is 11. So multiply the outers then add 1. 4 times 6 is 24, plus 1 is 25. ✓"
+        },
+        {
+          id: 121,
+          difficulty: 3,
+          question: "Find the missing number:\n\n3 (17) 5\n4 (26) 6\n2 ( ? ) 7",
+          options: ["14", "15", "16", "17", "18"],
+          correct: 2,
+          explanation: "3 times 5 is 15, plus 2 is 17. 4 times 6 is 24, plus 2 is 26. So multiply the outers then add 2. 2 times 7 is 14, plus 2 is 16. ✓"
+        },
+        {
+          id: 122,
+          difficulty: 3,
+          question: "Find the missing number:\n\n5 (13) 2\n4 (15) 3\n6 ( ? ) 3",
+          options: ["18", "19", "22", "20", "21"],
+          correct: 4,
+          explanation: "5 times 2 is 10, plus 3 is 13. 4 times 3 is 12, plus 3 is 15. So multiply the outers then add 3. 6 times 3 is 18, plus 3 is 21. ✓"
+        },
+        {
+          id: 123,
+          difficulty: 3,
+          question: "Find the missing number:\n\n4 (22) 5\n3 (20) 6\n7 ( ? ) 3",
+          options: ["21", "23", "24", "25", "22"],
+          correct: 1,
+          explanation: "4 times 5 is 20, plus 2 is 22. 3 times 6 is 18, plus 2 is 20. So multiply the outers then add 2. 7 times 3 is 21, plus 2 is 23. ✓"
+        },
+        {
+          id: 124,
+          difficulty: 3,
+          question: "Find the missing number:\n\n3 (12) 2\n4 (24) 3\n5 ( ? ) 4",
+          options: ["20", "45", "40", "42", "38"],
+          correct: 2,
+          explanation: "3 times 2 is 6, doubled is 12. 4 times 3 is 12, doubled is 24. So multiply the outers, then double. 5 times 4 is 20, doubled is 40. ✓"
+        },
+        {
+          id: 125,
+          difficulty: 3,
+          question: "Find the missing number:\n\n2 (20) 5\n3 (18) 3\n6 ( ? ) 4",
+          options: ["48", "24", "46", "50", "44"],
+          correct: 0,
+          explanation: "2 times 5 is 10, doubled is 20. 3 times 3 is 9, doubled is 18. So multiply the outers, then double. 6 times 4 is 24, doubled is 48. ✓"
+        },
+        {
+          id: 126,
+          difficulty: 3,
+          question: "Find the missing number:\n\n4 (16) 2\n5 (30) 3\n7 ( ? ) 2",
+          options: ["26", "30", "27", "28", "14"],
+          correct: 3,
+          explanation: "4 times 2 is 8, doubled is 16. 5 times 3 is 15, doubled is 30. So multiply the outers, then double. 7 times 2 is 14, doubled is 28. ✓"
+        },
+        {
+          id: 127,
+          difficulty: 3,
+          question: "Find the missing number:\n\n7 (9) 4\n8 (4) 6\n10 ( ? ) 6",
+          options: ["4", "16", "14", "8", "18"],
+          correct: 1,
+          explanation: "7 take away 4 is 3, and 3 squared is 9. 8 take away 6 is 2, and 2 squared is 4. So find the difference between the outers, then square it. 10 take away 6 is 4, and 4 squared is 16. ✓"
+        },
+        {
+          id: 128,
+          difficulty: 3,
+          question: "Find the missing number:\n\n9 (16) 5\n8 (25) 3\n11 ( ? ) 5",
+          options: ["30", "24", "36", "49", "25"],
+          correct: 2,
+          explanation: "9 take away 5 is 4, and 4 squared is 16. 8 take away 3 is 5, and 5 squared is 25. So subtract the outers, then square the answer. 11 take away 5 is 6, and 6 squared is 36. ✓"
+        },
+        {
+          id: 129,
+          difficulty: 3,
+          question: "Find the missing number:\n\n10 (9) 7\n12 (25) 7\n13 ( ? ) 6",
+          options: ["49", "56", "42", "48", "64"],
+          correct: 0,
+          explanation: "10 take away 7 is 3, and 3 squared is 9. 12 take away 7 is 5, and 5 squared is 25. So subtract the outers, then square. 13 take away 6 is 7, and 7 squared is 49. ✓"
         }
       ]
     },
