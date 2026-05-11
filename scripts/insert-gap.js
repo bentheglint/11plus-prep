@@ -154,18 +154,30 @@ const afterTopic = dataContent.slice(topicMatch.index + 1);
 const nextTopicMatch = afterTopic.match(/\n\s*\w+:\s*\{\s*\n\s*name:/);
 const boundary = nextTopicMatch ? topicMatch.index + 1 + nextTopicMatch.index : dataContent.length;
 
-// Within the topic, find the last question block's closing }
+// Within the topic, find the questions array and insert at the end
 const topicSection = dataContent.slice(topicMatch.index, boundary);
 const lastBraceIdx = topicSection.lastIndexOf('        }');
-if (lastBraceIdx === -1) {
-  console.error(`Could not find last question closing brace in topic "${topicKey}"`);
-  process.exit(1);
-}
 
-const insertAt = topicMatch.index + lastBraceIdx + '        }'.length;
-dataContent = dataContent.slice(0, insertAt) + ',\n' + questionBlocks + dataContent.slice(insertAt);
-fs.writeFileSync(DATA_FILE, dataContent);
-console.log(`  ✓ Questions inserted into ${path.basename(DATA_FILE)}`);
+let insertAt;
+if (lastBraceIdx === -1) {
+  // Empty questions array — find "questions: []" and replace with populated array
+  const emptyArrayIdx = topicSection.indexOf('questions: []');
+  if (emptyArrayIdx === -1) {
+    console.error(`Could not find questions array in topic "${topicKey}"`);
+    process.exit(1);
+  }
+  const absIdx = topicMatch.index + emptyArrayIdx;
+  dataContent = dataContent.slice(0, absIdx) +
+    'questions: [\n' + questionBlocks + '\n      ]' +
+    dataContent.slice(absIdx + 'questions: []'.length);
+  fs.writeFileSync(DATA_FILE, dataContent);
+  console.log(`  ✓ Questions inserted into ${path.basename(DATA_FILE)}`);
+} else {
+  const insertAt = topicMatch.index + lastBraceIdx + '        }'.length;
+  dataContent = dataContent.slice(0, insertAt) + ',\n' + questionBlocks + dataContent.slice(insertAt);
+  fs.writeFileSync(DATA_FILE, dataContent);
+  console.log(`  ✓ Questions inserted into ${path.basename(DATA_FILE)}`);
+}
 
 // ── Insert map entries ────────────────────────────────────────────────────────
 
@@ -192,9 +204,10 @@ if (closingIdx === -1) {
   process.exit(1);
 }
 
-// Ensure the previous entry has a trailing comma
+// Ensure the previous entry has a trailing comma (but not if array is empty)
 const beforeClose = stagingContent.slice(0, closingIdx).trimEnd();
-const needsComma = !beforeClose.endsWith(',');
+const arrayIsEmpty = beforeClose.endsWith('[');
+const needsComma = !arrayIsEmpty && !beforeClose.endsWith(',');
 const separator = needsComma ? ',\n\n' : '\n\n';
 
 stagingContent = beforeClose + separator + lessonJs + '\n\n];\n';

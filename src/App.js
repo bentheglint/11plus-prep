@@ -403,7 +403,7 @@ function App({ currentUser: authUser, getToken, loadedData }) {
   const navigateToLessonFor = (question, topicKey) => {
     if (!question || !topicKey) return false;
     const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
-    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms'];
+    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms', 'balanceEquations'];
     let mappingSource = 'maths';
     if (englishTopics.includes(topicKey)) mappingSource = 'english';
     if (vrTopics.includes(topicKey)) mappingSource = 'vr';
@@ -884,7 +884,7 @@ function App({ currentUser: authUser, getToken, loadedData }) {
 
     // Determine which mapping file to use
     const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
-    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms'];
+    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms', 'balanceEquations'];
     let mappingSource = 'maths';
     if (englishTopics.includes(topicKey)) mappingSource = 'english';
     if (vrTopics.includes(topicKey)) mappingSource = 'vr';
@@ -1459,7 +1459,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         setSelectedTopic(topicKey);
         // Determine subject for the topic
         const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension', 'antonyms', 'synonyms'];
-        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords'];
+        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'balanceEquations'];
         if (englishTopics.includes(topicKey)) setSelectedSubject('english');
         else if (vrTopics.includes(topicKey)) setSelectedSubject('verbalreasoning');
         else setSelectedSubject('maths');
@@ -1480,7 +1480,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         const topicKey = topic;
         // Find the subject for this topic
         const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
-        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms'];
+        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms', 'balanceEquations'];
         let subject = 'maths';
         if (englishTopics.includes(topicKey)) subject = 'english';
         if (vrTopics.includes(topicKey)) subject = 'verbalreasoning';

@@ -63,10 +63,11 @@ function checkSubConceptScreens(stagingContent, subConceptId) {
   if (idx === -1) idx = stagingContent.indexOf(`"${subConceptId}"`);
   if (idx === -1) return { found: false, missing: REQUIRED_SCREEN_TYPES };
 
-  // Find the next lesson object boundary (another id: '...' at the same level)
+  // Search up to 30KB from the sub-concept ID for screen type declarations.
+  // We skip any nested lesson IDs (like "balance-equations-steps") to avoid
+  // cutting the window before the actual screens array.
   const rest = stagingContent.slice(idx + subConceptId.length + 2);
-  const nextIdMatch = rest.match(/\bid:\s*['"][^'"]+['"]/);
-  const windowEnd = nextIdMatch ? nextIdMatch.index : Math.min(rest.length, 25000);
+  const windowEnd = Math.min(rest.length, 30000);
   const window = rest.slice(0, windowEnd);
 
   // Look for screen type declarations: type: "hook" etc.

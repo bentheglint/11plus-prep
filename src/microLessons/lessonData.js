@@ -39,6 +39,7 @@ import { numberWordCodesSubConcepts } from './staging/numberwordcodes-subconcept
 import { numberSeriesSubConcepts } from './staging/numberseries-subconcepts';
 import { letterSumsSubConcepts } from './staging/lettersums-subconcepts';
 import { logicAndLanguageSubConcepts } from './staging/logicandlanguage-subconcepts';
+import { balanceEquationsSubConcepts } from './staging/balanceequations-subconcepts';
 
 // ============================================================
 // Micro-Lesson Data — Long Multiplication (Phase 1)
@@ -14528,6 +14529,14 @@ export const lessonBank = {
       ...logicAndLanguageSubConcepts
     ]
   },
+
+  // ---- VR TOPIC 17: Balance Equations ----
+  balanceEquations: {
+    name: "Balance Equations",
+    subConcepts: [
+      ...balanceEquationsSubConcepts
+    ]
+  },
 };
 
 // === MERGE STAGING SUB-CONCEPTS INTO LESSON BANK ===
@@ -14571,6 +14580,7 @@ const stagingMap = {
   numberSeries: numberSeriesSubConcepts,
   letterSums: letterSumsSubConcepts,
   logicAndLanguage: logicAndLanguageSubConcepts,
+  balanceEquations: balanceEquationsSubConcepts,
 };
 
 for (const [key, stagingSCs] of Object.entries(stagingMap)) {
@@ -14628,6 +14638,7 @@ export const testSubConceptBank = {
   numberSeries: numberSeriesSubConcepts,
   letterSums: letterSumsSubConcepts,
   logicAndLanguage: logicAndLanguageSubConcepts,
+  balanceEquations: balanceEquationsSubConcepts,
 };
 
 export function selectLesson(topicKey, topicPerformance, lessonHistory, currentUser) {

@@ -23,6 +23,7 @@ const topicNames = {
   numberSeries: 'Number Series', letterSums: 'Letter Sums',
   wordCodeAnalogies: 'Word Codes', numberWordCodes: 'Number Word Codes',
   logicAndLanguage: 'Logic & Language', sharedLetter: 'Shared Letter',
+  balanceEquations: 'Balance Equations',
   // Slug for the Daily Learning quiz mode (mixed topics)
   'daily-learning': 'Daily Learning',
 };
