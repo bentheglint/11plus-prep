@@ -7269,7 +7269,7 @@ const vrData = {
           id: 131,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'to cut with scissors' is hidden across two of these words. Find the two words.",
+          question: "A 3-letter word meaning 'to slice with a knife' is hidden across two of these words. Find the two words.",
           options: ["Music","utility","room","was","tidy"],
           correctPair: [0,1],
           explanation: "The word CUT is hidden across 'MusiC' and 'UTility'. Take the last 1 letter of 'Music' (C) and the first 2 of 'utility' (UT) = CUT. ✓"
@@ -7386,7 +7386,7 @@ const vrData = {
           id: 144,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'anger' is hidden across two of these words. Find the two words.",
+          question: "A 5-letter word meaning 'the feeling of rage or fury' is hidden across two of these words. Find the two words.",
           options: ["The","gang","errand","took","long"],
           correctPair: [1,2],
           explanation: "The word ANGER is hidden across 'gANG' and 'ERrand'. Take the last 3 letters of 'gang' (ANG) and the first 2 of 'errand' (ER) = ANGER. ✓"
@@ -7432,9 +7432,9 @@ const vrData = {
           difficulty: 2,
           questionType: "select-two",
           question: "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
-          options: ["entire","historic","The","lake","froze"],
-          correctPair: [0,1],
-          explanation: "The word RICE is hidden across 'histoRIC' and 'Entire'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'entire' (E) = RICE. ✓"
+          options: ["The","historic","event","delighted","everyone"],
+          correctPair: [1,2],
+          explanation: "The word RICE is hidden across 'histoRIC' and 'Event'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'event' (E) = RICE. ✓"
         }
       ]
     },
@@ -8386,7 +8386,7 @@ const vrData = {
           id: 16,
           difficulty: 1,
           question: "Which three-letter word completes this longer word? FORE _ _ _",
-          options: ["MAX","MEN","MAN","MAT","MAP"],
+          options: ["MAX","TAX","MAN","MAT","MAP"],
           correct: 2,
           explanation: "The answer is MAN, making FOREMAN. A foreman is a person in charge of a group of workers. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
@@ -8401,7 +8401,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ ROOM",
+          question: "Which three-letter word completes this longer word? _ _ _ HROOM",
           options: ["BIT","BET","BOT","BUT","BAT"],
           correct: 4,
           explanation: "The answer is BAT, making BATHROOM. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
@@ -8434,7 +8434,7 @@ const vrData = {
           id: 22,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ DEN",
-          options: ["BUR","RAN","JOR","GAR","TEN"],
+          options: ["FAR","RAN","JOR","GAR","TEN"],
           correct: 3,
           explanation: "The answer is GAR, making GARDEN. A garden is an area of ground used for growing flowers, fruit or vegetables. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
@@ -8450,7 +8450,7 @@ const vrData = {
           id: 24,
           difficulty: 1,
           question: "Which three-letter word completes this longer word? _ _ _ DLE",
-          options: ["CAN","TIL","MID","BIN","GRI"],
+          options: ["CAN","TIL","PAR","TAR","GRI"],
           correct: 0,
           explanation: "The answer is CAN, making CANDLE. A candle is a cylinder of wax with a wick that produces light when lit. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
@@ -8866,7 +8866,7 @@ const vrData = {
           id: 76,
           difficulty: 1,
           question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) MER",
-          options: ["CUP","JAM","SUM","TIP","HUB"],
+          options: ["CUP","PEN","SUM","TIP","HUB"],
           correct: 2,
           explanation: "The answer is SUM, making SUMMER. Summer is the warmest season of the year. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
@@ -9153,10 +9153,10 @@ const vrData = {
         {
           id: 112,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nCOT ( _ _ _ ) E",
-          options: ["TAB","TAN","TAP","TAR","TAG"],
+          question: "Which three-letter word completes this longer word?\n\nCAB ( _ _ _ ) E",
+          options: ["BAR","BAT","BUG","BIN","BAG"],
           correct: 4,
-          explanation: "The three missing letters are T, A, G making the word TAG. The complete word is COTTAGE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "The three missing letters are B, A, G making the word BAG. The complete word is CABBAGE. Tip: Double letters are common traps — CABBAGE has two B's! ✓"
         },
         {
           id: 113,

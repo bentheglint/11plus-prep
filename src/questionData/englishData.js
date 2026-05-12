@@ -7970,10 +7970,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           difficulty: 2,
           questionType: 'error-spotting',
           question: "Which section contains a spelling error?",
-          segments: ["Nobody could decide","which coat had","been left on","the classroom who's peg."],
+          segments: ["The teacher asked","the children to find out","which famous explorer","who's diary they were reading."],
           options: ["Section A","Section B","Section C","Section D","No mistake"],
           correct: 3,
-          explanation: "'who's' should be 'whose'. 'Whose' shows possession (whose peg). 'Who's' is short for 'who is' or 'who has'. Sound it out carefully — the spelling matches the sounds. ✓"
+          explanation: "Section D should be 'whose diary' (belonging to whom), not 'who's diary'. 'Who's' is a contraction of 'who is' or 'who has', so 'who's diary' would mean 'who is diary' — which does not make sense. Use 'whose' to show possession. ✓"
         },
         {
           id: 38,
@@ -15456,10 +15456,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 1,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["For the camping trip","we packed a tent","sleeping bags and","a portable stove."],
+          "segments": ["Before the long journey","Dad checked","the car's tyres","and the engine oil."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after the opening phrase. When a sentence starts with a 'when', 'where', or 'how' phrase before the main action, pop a comma after it. It's like a little pause to let the reader catch up before the main sentence starts. ✓"
+          "explanation": "Section A is a fronted adverbial ('Before the long journey') and needs a comma after it: 'Before the long journey, Dad checked...'. The possessive apostrophe in 'car's tyres' (Section C) is correct because the tyres belong to the car. ✓"
         },
         {
           "id": 70,
@@ -16908,7 +16908,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["Because the","road was icy","the bus arrived","late at school today."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 2,
+          "correct": 1,
           "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
         },
         {
@@ -17518,7 +17518,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The trip was","cancelled, however","the school promised","to rearrange it."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
         },
         {
@@ -17776,10 +17776,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The school concert","which took place","on Thursday was","attended by many parents."],
+          "segments": ["The school concert,","which took place","on Thursday","was attended by many parents."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after 'Thursday' to close off the extra information: 'The school concert, which took place on Thursday, was attended by many parents.' The phrase 'which took place on Thursday' is additional detail, so it needs commas at both ends — there's an opening comma after 'concert' but the closing one after 'Thursday' is missing. ✓"
+          "explanation": "Section C is missing the closing comma of the non-defining relative clause 'which took place on Thursday'. The clause needs commas at both ends, so it should read 'on Thursday,' to match the opening comma in Section A. ✓"
         },
         {
           "id": 303,
@@ -18388,7 +18388,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The recipe needs","flour, sugar, butter","eggs and vanilla","extract to work."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 2,
+          "correct": 1,
           "explanation": "A comma is needed after 'butter': 'butter, eggs and vanilla extract'. Every item except the last needs a comma. ✓"
         },
         {
@@ -18396,10 +18396,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 1,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["He likes football","cricket rugby and","swimming but his","favourite is cricket."],
+          "segments": ["For breakfast he ate","toast cereal and fruit,","then he drank","a glass of orange juice."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
-          "explanation": "Commas needed: 'football, cricket, rugby and swimming'. ✓"
+          "correct": 1,
+          "explanation": "Section B is missing a comma between the list items 'toast' and 'cereal'. In a list of three or more items, commas separate each item: 'toast, cereal and fruit'. ✓"
         },
         {
           "id": 365,
@@ -18416,10 +18416,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 1,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["Mum bought socks","shoes a hat and","a scarf for my","brother at the shops."],
+          "segments": ["At the market Mum bought","apples pears and bananas","before heading home","with the heavy shopping bags."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "explanation": "Section B is missing a comma between 'apples' and 'pears'. Items in a list need commas to separate them: 'apples, pears and bananas'. ✓"
         },
         {
           "id": 367,
@@ -18456,20 +18456,20 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 1,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["We visited the castle","the museum the park","and the beach on","our holiday."],
+          "segments": ["On our school trip","we visited the castle the museum","and the old harbour","before catching the coach home."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas needed: 'the museum, the park and the beach'. ✓"
+          "explanation": "Section B is missing a comma between 'the castle' and 'the museum'. List items must be separated by commas: 'the castle, the museum and the old harbour'. ✓"
         },
         {
           "id": 371,
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The old bridge which","was built in 1850","is now a protected","historical monument."],
+          "segments": ["The old bridge,","which was built in 1850","is now a protected","historical monument."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
-          "explanation": "A comma is needed after 'bridge': 'The old bridge, which was built in 1850, is now a protected historical monument.' The phrase 'which was built in 1850' is extra information — you could remove it and the sentence still works. Extra information like this needs commas at both ends, like brackets. ✓"
+          "correct": 1,
+          "explanation": "Section B is missing the closing comma of the non-defining relative clause. The clause 'which was built in 1850' needs commas at both ends, so it should read 'which was built in 1850,' to match the opening comma in Section A. ✓"
         },
         {
           "id": 372,
@@ -18486,10 +18486,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The library which","is near our house","has a wonderful","children's section."],
+          "segments": ["The library which","is near our house,","has a wonderful","children's section."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "The extra information in the middle of this sentence needs commas around it. Think of it like a bubble — the commas open and close the bubble. If you took out everything inside the bubble, the main sentence should still make perfect sense. ✓"
+          "explanation": "Section A is missing the opening comma of the non-defining relative clause. The clause 'which is near our house' needs commas at both ends, so 'library' should be followed by a comma to match the closing comma in Section B. ✓"
         },
         {
           "id": 374,
@@ -18518,7 +18518,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The dog which","belonged to our","neighbour, kept","barking all night."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 2,
+          "correct": 0,
           "explanation": "There's a comma missing! When you add extra information in the middle of a sentence (stuff you could take out and the sentence would still work), it needs commas at BOTH ends — like putting it in a little bubble. One comma opens the bubble, the other closes it. ✓"
         },
         {
@@ -18626,10 +18626,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["\"Come here\" called","Mum from the","kitchen, \"your dinner","is ready now.\""],
+          "segments": ["\"Come here\"","called Mum from the kitchen,","\"your dinner","is ready now.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "A comma is needed after 'here' inside the speech marks — it should be '\"Come here,\" called Mum'. When speech is interrupted by who is speaking, the first part of the speech needs a comma before the closing speech marks. ✓"
+          "explanation": "Section A is missing the comma inside the closing speech marks. When direct speech is followed by a reporting clause, the punctuation goes inside the speech marks: '\"Come here,\" called Mum'. ✓"
         },
         {
           "id": 388,
@@ -18758,7 +18758,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["Before the match","started the players","warmed up on","the football pitch."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "A comma is needed after the opening part of the sentence. When a sentence doesn't start with the main action (it starts with 'when' or 'where' or 'how' something happened), you need a comma before the main part kicks in. Think of it as a breathing space! ✓"
         },
         {
@@ -19028,7 +19028,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The swimming pool","(which is 25 metres","long is available","for school bookings."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 1,
+          "correct": 2,
           "explanation": "The closing bracket is missing! Brackets always come in pairs — if you open one, you must close it. Think of them like speech marks: you'd never open a speech mark without closing it, and brackets work the same way. ✓"
         },
         {
@@ -19088,7 +19088,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The garden was","overgrown, the lawn","needed mowing and","the hedges needed trimming."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
         }
       ]
