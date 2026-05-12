@@ -23,7 +23,7 @@ import vrData from '../../questionData/vrData';
 const APP_SUBJECT_TOPICS = {
   maths: ['percentages', 'decimals', 'longdivision', 'ratio', 'fractions', 'longmultiplication', 'algebra', 'placevalue', 'negativenumbers', 'primenumbersfactors', 'areaperimeter', 'volume', 'anglesshapes', 'sequences', 'datahandling', 'speeddistancetime'],
   english: ['comprehension', 'spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar'],
-  verbalreasoning: ['synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes', 'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies', 'numberWordCodes', 'logicAndLanguage', 'sharedLetter'],
+  verbalreasoning: ['synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes', 'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies', 'numberWordCodes', 'logicAndLanguage', 'sharedLetter', 'balanceEquations'],
 };
 
 // The display name lookup from RecommendationCard.js
@@ -42,7 +42,7 @@ const DISPLAY_TOPIC_NAMES = {
   letterCodes: 'Letter Codes', letterPairSeries: 'Letter Pairs',
   numberSeries: 'Number Series', letterSums: 'Letter Sums',
   wordCodeAnalogies: 'Word Codes', numberWordCodes: 'Number Word Codes',
-  logicAndLanguage: 'Logic & Language', sharedLetter: 'Shared Letter',
+  logicAndLanguage: 'Logic & Language', sharedLetter: 'Shared Letter', balanceEquations: 'Balance Equations',
 };
 
 const mathsMap = require('../../../public/maths-question-lesson-map.json');
@@ -125,9 +125,9 @@ describe('Topic Key Consistency', () => {
       expect(APP_SUBJECT_TOPICS.english.length).toBe(6);
     });
 
-    test('verbalreasoning: 16 topics', () => {
-      expect(dataKeys.verbalreasoning.length).toBe(16);
-      expect(APP_SUBJECT_TOPICS.verbalreasoning.length).toBe(16);
+    test('verbalreasoning: 17 topics', () => {
+      expect(dataKeys.verbalreasoning.length).toBe(17);
+      expect(APP_SUBJECT_TOPICS.verbalreasoning.length).toBe(17);
     });
   });
 });

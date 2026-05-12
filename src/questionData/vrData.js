@@ -11056,6 +11056,7 @@ const vrData = {
         {
           id: 167,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to CE\nEG is to GI\nIK is to ___",
           options: ["KM", "JL", "LN", "KN", "JM"],
           correct: 0,
@@ -11064,6 +11065,7 @@ const vrData = {
         {
           id: 168,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAB is to DE\nGH is to JK\nMN is to ___",
           options: ["OQ", "PQ", "OP", "QR", "NP"],
           correct: 1,
@@ -11072,6 +11074,7 @@ const vrData = {
         {
           id: 169,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBC is to DE\nFG is to HI\nJK is to ___",
           options: ["KM", "MN", "LM", "LN", "KL"],
           correct: 2,
@@ -11080,6 +11083,7 @@ const vrData = {
         {
           id: 170,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAD is to BE\nEH is to FI\nIL is to ___",
           options: ["JM", "JL", "KM", "JN", "KN"],
           correct: 0,
@@ -11088,6 +11092,7 @@ const vrData = {
         {
           id: 171,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBD is to DF\nFH is to HJ\nJL is to ___",
           options: ["KM", "LN", "MO", "LM", "KN"],
           correct: 1,
@@ -11096,6 +11101,7 @@ const vrData = {
         {
           id: 172,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAE is to CG\nBF is to DH\nCG is to ___",
           options: ["DH", "EH", "EI", "DI", "FJ"],
           correct: 2,
@@ -11104,6 +11110,7 @@ const vrData = {
         {
           id: 173,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to BD\nCE is to DF\nEG is to ___",
           options: ["FH", "GI", "EH", "FG", "DH"],
           correct: 0,
@@ -11112,6 +11119,7 @@ const vrData = {
         {
           id: 174,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBE is to DG\nFI is to HK\nJM is to ___",
           options: ["KN", "LO", "MP", "LN", "KO"],
           correct: 1,
@@ -11120,6 +11128,7 @@ const vrData = {
         {
           id: 175,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAB is to CD\nEF is to GH\nIJ is to ___",
           options: ["JL", "MN", "KL", "JK", "LM"],
           correct: 2,
@@ -11128,6 +11137,7 @@ const vrData = {
         {
           id: 176,
           difficulty: 1,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to DF\nBD is to EG\nCE is to ___",
           options: ["EG", "FG", "EH", "FH", "GI"],
           correct: 3,
@@ -11136,6 +11146,7 @@ const vrData = {
         {
           id: 177,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to CA\nBD is to DB\nEG is to ___",
           options: ["GE", "FH", "EH", "GF", "HG"],
           correct: 0,
@@ -11144,14 +11155,16 @@ const vrData = {
         {
           id: 178,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAB is to ZY\nCD is to XW\nEF is to ___",
           options: ["UV", "VU", "WV", "TU", "UT"],
           correct: 1,
-          explanation: "Each letter is mirrored across the alphabet using position → 27 − position. A(1) → Z(26), B(2) → Y(25), C(3) → X(24), D(4) → W(23). Apply to EF: E(5) → 27−5 = V(22), F(6) → 27−6 = U(21). The answer is VU. ✓"
+          explanation: "Each letter is mirrored across the alphabet using position → 27 − position. A(1) → Z(26), B(2) → Y(25), C(3) → X(24), D(4) → W(23). Apply to EF: E(5) → 27−5 = V(22), F(6) → 27−6 = U(21). The answer is VU. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 179,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAD is to BF\nCE is to DG\nEG is to ___",
           options: ["FH", "GI", "FI", "GH", "EI"],
           correct: 2,
@@ -11160,6 +11173,7 @@ const vrData = {
         {
           id: 180,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBD is to FH\nCE is to GI\nDF is to ___",
           options: ["HJ", "GH", "GJ", "HI", "IK"],
           correct: 0,
@@ -11168,6 +11182,7 @@ const vrData = {
         {
           id: 181,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAE is to BD\nBF is to CE\nCG is to ___",
           options: ["DH", "DG", "DF", "EF", "CF"],
           correct: 2,
@@ -11176,6 +11191,7 @@ const vrData = {
         {
           id: 182,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to BE\nBD is to CF\nCE is to ___",
           options: ["DG", "DF", "EG", "EF", "DH"],
           correct: 0,
@@ -11184,6 +11200,7 @@ const vrData = {
         {
           id: 183,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAB is to BD\nCD is to DF\nEF is to ___",
           options: ["GH", "FG", "GI", "FH", "EH"],
           correct: 3,
@@ -11192,6 +11209,7 @@ const vrData = {
         {
           id: 184,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBD is to DH\nCE is to FI\nDF is to ___",
           options: ["FK", "GH", "HJ", "HK", "GJ"],
           correct: 2,
@@ -11200,6 +11218,7 @@ const vrData = {
         {
           id: 185,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to EG\nBD is to FH\nCE is to ___",
           options: ["FH", "GH", "HJ", "FI", "GI"],
           correct: 4,
@@ -11208,6 +11227,7 @@ const vrData = {
         {
           id: 186,
           difficulty: 2,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAB is to CE\nBC is to DF\nCD is to ___",
           options: ["EG", "DF", "EF", "DG", "FH"],
           correct: 0,
@@ -11216,6 +11236,7 @@ const vrData = {
         {
           id: 187,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAD is to DA\nBE is to EB\nCF is to ___",
           options: ["DG", "GC", "CF", "FC", "FD"],
           correct: 3,
@@ -11224,6 +11245,7 @@ const vrData = {
         {
           id: 188,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBE is to DC\nCF is to ED\nDG is to ___",
           options: ["EF", "FE", "FH", "EH", "GE"],
           correct: 1,
@@ -11232,6 +11254,7 @@ const vrData = {
         {
           id: 189,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAF is to CD\nBG is to DE\nCH is to ___",
           options: ["DF", "EG", "DG", "FD", "EF"],
           correct: 4,
@@ -11240,6 +11263,7 @@ const vrData = {
         {
           id: 190,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBD is to EA\nCE is to FB\nDF is to ___",
           options: ["GD", "FC", "GC", "GB", "HC"],
           correct: 2,
@@ -11248,6 +11272,7 @@ const vrData = {
         {
           id: 191,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to FE\nBD is to GF\nCE is to ___",
           options: ["GG", "HF", "GF", "HG", "FG"],
           correct: 3,
@@ -11256,6 +11281,7 @@ const vrData = {
         {
           id: 192,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAE is to BJ\nCG is to DL\nEI is to ___",
           options: ["FJ", "FM", "FL", "GN", "FN"],
           correct: 4,
@@ -11264,6 +11290,7 @@ const vrData = {
         {
           id: 193,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBF is to DJ\nCG is to EK\nDH is to ___",
           options: ["FK", "EL", "GL", "FL", "EJ"],
           correct: 3,
@@ -11272,14 +11299,16 @@ const vrData = {
         {
           id: 194,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAC is to ZX\nBD is to YW\nCE is to ___",
           options: ["XW", "WV", "YV", "ZV", "XV"],
           correct: 4,
-          explanation: "Each letter mirrors across the alphabet: position → 27 − position. A(1)→Z(26), C(3)→X(24), B(2)→Y(25), D(4)→W(23). Apply to CE: C(3) → 27−3 = X(24), E(5) → 27−5 = V(22). The answer is XV. ✓"
+          explanation: "Each letter mirrors across the alphabet: position → 27 − position. A(1)→Z(26), C(3)→X(24), B(2)→Y(25), D(4)→W(23). Apply to CE: C(3) → 27−3 = X(24), E(5) → 27−5 = V(22). The answer is XV. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
         },
         {
           id: 195,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nAE is to DI\nBF is to EJ\nCG is to ___",
           options: ["EK", "FJ", "GK", "FK", "EL"],
           correct: 3,
@@ -11288,6 +11317,7 @@ const vrData = {
         {
           id: 196,
           difficulty: 3,
+          questionType: 'letter-codes',
           question: "Find the missing letter pair:\n\nBD is to FB\nCE is to GC\nDF is to ___",
           options: ["GE", "HE", "GD", "HC", "HD"],
           correct: 4,
