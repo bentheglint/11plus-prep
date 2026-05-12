@@ -144,7 +144,7 @@ function buildDay1Email(account, quizCount) {
     : `${child}'s 30-day trial has started — here's how to get the most out of it`;
 
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name},</p>
+    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
     ${hasActivity
       ? `<p style="color:#636E72;font-size:14px;">Great news — ${child} has already jumped in. PrepStep is now tracking their progress across every topic, so you'll be able to see exactly where they're strong and where they need more practice.</p>`
       : `<p style="color:#636E72;font-size:14px;">${child}'s 30-day trial just started. Here's the quickest way to see what PrepStep can do:</p>`
@@ -175,7 +175,7 @@ function buildDay7Email(account, quizCount, currentStreak, recentQuizzes) {
     : null;
 
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name},</p>
+    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
     ${quizCount > 0
       ? `<p style="color:#636E72;font-size:14px;">${child} has completed <strong>${quizCount} quiz${quizCount > 1 ? 'zes' : ''}</strong> in their first week${currentStreak > 1 ? ` and is on a <strong>${currentStreak}-day streak</strong>` : ''}. ${topTopicName ? `Most time spent on <strong>${topTopicName}</strong>.` : ''}</p>`
       : `<p style="color:#636E72;font-size:14px;">A week has passed since ${child}'s trial started. If you haven't had a chance to try PrepStep yet, there are still 23 days to explore it fully — no rush.</p>`
@@ -200,7 +200,7 @@ function buildDay14Email(account, quizCount, currentStreak) {
   const subject = `Two weeks in — how is ${child} getting on?`;
 
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name},</p>
+    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
     <p style="color:#636E72;font-size:14px;">Two weeks into ${child}'s trial. ${quizCount > 0
       ? `They've completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''}${currentStreak > 1 ? ` and kept a ${currentStreak}-day streak going` : ''}. The Parent Dashboard in the app shows a full breakdown of where they're strong and where to focus next.`
       : `If you haven't started yet, you've still got 16 days to try it properly — that's plenty of time to see whether it works for ${child}.`
@@ -221,7 +221,7 @@ function buildDay25Email(account, quizCount, currentStreak) {
   const subject = `5 days left in ${child}'s PrepStep trial`;
 
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name},</p>
+    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
     <p style="color:#636E72;font-size:14px;">Your free trial ends in 5 days. ${quizCount > 0
       ? `${child} has completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} and built up ${currentStreak > 0 ? `a ${currentStreak}-day streak and ` : ''}real learning data — all of which stays in the app when you subscribe.`
       : `If you haven't had a chance to try PrepStep yet, there are still 5 days of full access before the trial ends.`
@@ -432,4 +432,53 @@ function buildEmailHtml({ parentName, childName, quizCount, questionCount, accur
   </div>
 </body>
 </html>`;
+}
+
+// ── TEMPORARY: send a specific trial email to a specific account ──
+// Called from /api/dev/send-trial-email. Remove after testing.
+export async function handleTrialEmailForAccount(env, emailAddress, day) {
+  const db = env.DB;
+
+  const account = await db.prepare(`
+    SELECT a.id, a.email, a.name, a.email_opt_in,
+           c.id as child_id, c.display_name
+    FROM accounts a
+    JOIN children c ON c.account_id = a.id
+    WHERE a.email = ?
+    LIMIT 1
+  `).bind(emailAddress).first();
+
+  if (!account) return { error: `No account found for ${emailAddress}` };
+
+  const [recentQuizzes, streak] = await Promise.all([
+    db.prepare(
+      `SELECT topic_key, subject, score, total FROM quiz_results
+       WHERE child_id = ? ORDER BY completed_at DESC LIMIT 20`
+    ).bind(account.child_id).all(),
+    db.prepare(
+      'SELECT current_streak FROM streaks WHERE child_id = ?'
+    ).bind(account.child_id).first(),
+  ]);
+
+  const quizCount = recentQuizzes.results?.length || 0;
+  const currentStreak = streak?.current_streak || 0;
+
+  const topicCounts = {};
+  (recentQuizzes.results || []).forEach(q => {
+    topicCounts[q.topic_key] = (topicCounts[q.topic_key] || 0) + 1;
+  });
+  const topTopic = Object.entries(topicCounts).sort((a, b) => b[1] - a[1])[0];
+  const topTopicName = topTopic
+    ? topTopic[0].replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase())
+    : null;
+
+  let subject, html;
+  if (day === 1)       ({ subject, html } = buildDay1Email(account, quizCount));
+  else if (day === 7)  ({ subject, html } = buildDay7Email(account, quizCount, currentStreak, recentQuizzes.results || []));
+  else if (day === 14) ({ subject, html } = buildDay14Email(account, quizCount, currentStreak));
+  else if (day === 25) ({ subject, html } = buildDay25Email(account, quizCount, currentStreak));
+  else return { error: `Unknown day ${day}` };
+
+  await sendEmail(env, { to: emailAddress, subject, html });
+  return { ok: true, to: emailAddress, day, quizCount, currentStreak };
 }
