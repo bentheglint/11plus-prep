@@ -14948,7 +14948,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The shop sells:","bread, milk, eggs","cheese and","fresh vegetables."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 2,
+          "correct": 1,
           "explanation": "A comma is missing after 'eggs'. In a list, each item needs to be separated by a comma: 'bread, milk, eggs, cheese and fresh vegetables.' Without the comma, 'eggs cheese' runs together and looks like it could be one item. ✓"
         },
         {
@@ -15508,7 +15508,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The bag was packed","with all the supplies","for the school trip","but the teacher forgot her keys."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 3,
+          "correct": 2,
           "explanation": "A comma is needed before 'but' when it joins two complete sentences. 'The bag was packed with all the supplies for the school trip' is one sentence. 'The teacher forgot her keys' is another. Join them with: '...trip, but the teacher forgot her keys.' ✓"
         },
         {
@@ -15579,7 +15579,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Where are you going.\"","asked Mum as she","looked up from","her newspaper."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "The punctuation at the end of the speech needs to go INSIDE the speech marks. Whatever the person said (including the full stop, question mark, or exclamation mark) stays wrapped up inside the speech marks. ✓"
+          "explanation": "The full stop in section A should be a question mark: '\"Where are you going?\"' — it is a question being asked, so it needs a question mark, not a full stop. Always match the punctuation to what is actually being said. ✓"
         },
         {
           "id": 82,
