@@ -104,6 +104,161 @@ export async function handleTutorRoutes(request, env, userId, path) {
     return json({ ok: true, tutor });
   }
 
+  // GET /api/tutor/dashboard — Aggregated dashboard data (pulse + per-pupil)
+  if (path === '/api/tutor/dashboard' && request.method === 'GET') {
+    const tutor = await db.prepare(
+      'SELECT id, name, bio, tutor_code FROM tutors WHERE id = ?'
+    ).bind(userId).first();
+    if (!tutor) return json({ error: 'No tutor profile found' }, 404);
+
+    // Roster
+    const { results: roster } = await db.prepare(`
+      SELECT c.id, c.display_name, c.year_group, c.target_school,
+             pt.joined_at, a.name AS parent_name
+      FROM pupil_tutors pt
+      JOIN children c ON c.id = pt.child_id
+      JOIN accounts a ON a.id = c.account_id
+      WHERE pt.tutor_id = ?
+      ORDER BY pt.joined_at ASC
+    `).bind(userId).all();
+
+    if (roster.length === 0) {
+      return json({ tutor, roster: [], pulse: null });
+    }
+
+    // Fetch all per-pupil data in parallel
+    const [lastActiveRows, weeklyRows, topicRows, overdueRows] = await Promise.all([
+      // Last active (most recent quiz per child)
+      db.prepare(`
+        SELECT child_id, MAX(completed_at) as last_active
+        FROM quiz_results
+        WHERE child_id IN (SELECT child_id FROM pupil_tutors WHERE tutor_id = ?)
+        GROUP BY child_id
+      `).bind(userId).all(),
+
+      // This week's quizzes per child
+      db.prepare(`
+        SELECT child_id,
+               COUNT(*) as quiz_count,
+               SUM(score) * 1.0 / SUM(total) as accuracy
+        FROM quiz_results
+        WHERE child_id IN (SELECT child_id FROM pupil_tutors WHERE tutor_id = ?)
+          AND completed_at > datetime('now', '-7 days')
+          AND total > 0
+        GROUP BY child_id
+      `).bind(userId).all(),
+
+      // Weakest topic per child (last 30 days, ≥2 quizzes on topic)
+      db.prepare(`
+        SELECT child_id, topic_key, subject,
+               SUM(score) * 1.0 / SUM(total) as accuracy,
+               COUNT(*) as quiz_count
+        FROM quiz_results
+        WHERE child_id IN (SELECT child_id FROM pupil_tutors WHERE tutor_id = ?)
+          AND completed_at > datetime('now', '-30 days')
+          AND total > 0
+        GROUP BY child_id, topic_key
+        HAVING quiz_count >= 2
+        ORDER BY child_id, accuracy ASC
+      `).bind(userId).all(),
+
+      // Overdue assignment count per child
+      db.prepare(`
+        SELECT ar.child_id, COUNT(*) as overdue_count
+        FROM assignment_recipients ar
+        JOIN assignments a ON a.id = ar.assignment_id
+        WHERE a.tutor_id = ?
+          AND date(a.due_date) < date('now')
+          AND ar.status NOT IN ('completed', 'cleared')
+        GROUP BY ar.child_id
+      `).bind(userId).all(),
+    ]);
+
+    // Index by child_id for O(1) lookup
+    const lastActiveMap = Object.fromEntries((lastActiveRows.results || []).map(r => [r.child_id, r.last_active]));
+    const weeklyMap = Object.fromEntries((weeklyRows.results || []).map(r => [r.child_id, r]));
+    const overdueMap = Object.fromEntries((overdueRows.results || []).map(r => [r.child_id, r.overdue_count]));
+
+    // Weakest topic per child — topicRows already ordered ASC per child, take first per child
+    const weakestTopicMap = {};
+    for (const row of (topicRows.results || [])) {
+      if (!weakestTopicMap[row.child_id]) weakestTopicMap[row.child_id] = row;
+    }
+
+    const now = Date.now();
+    const enrichedRoster = roster.map(child => {
+      const lastActive = lastActiveMap[child.id] || null;
+      const daysInactive = lastActive
+        ? Math.floor((now - new Date(lastActive).getTime()) / 86400000)
+        : null;
+      const weekly = weeklyMap[child.id] || null;
+      const weakest = weakestTopicMap[child.id] || null;
+      const overdueCount = overdueMap[child.id] || 0;
+
+      return {
+        ...child,
+        last_active: lastActive,
+        days_inactive: daysInactive,
+        quizzes_this_week: weekly?.quiz_count || 0,
+        accuracy_this_week: weekly ? Math.round(weekly.accuracy * 100) : null,
+        weakest_topic: weakest?.topic_key || null,
+        weakest_subject: weakest?.subject || null,
+        weakest_accuracy: weakest ? Math.round(weakest.accuracy * 100) : null,
+        overdue_assignments: overdueCount,
+        assignment_status: overdueCount > 0 ? 'overdue' : weekly ? 'on_track' : 'none',
+      };
+    });
+
+    // Sort: most at-risk first (inactive longest, then by accuracy)
+    enrichedRoster.sort((a, b) => {
+      const aInactive = a.days_inactive ?? 999;
+      const bInactive = b.days_inactive ?? 999;
+      if (aInactive !== bInactive) return bInactive - aInactive;
+      return (a.accuracy_this_week ?? -1) - (b.accuracy_this_week ?? -1);
+    });
+
+    // Aggregate pulse stats
+    const activeThisWeek = enrichedRoster.filter(c => c.days_inactive !== null && c.days_inactive <= 7).length;
+    const totalOverdue = enrichedRoster.reduce((s, c) => s + c.overdue_assignments, 0);
+
+    const weeklyAccuracies = enrichedRoster.filter(c => c.accuracy_this_week !== null);
+    const avgAccuracy = weeklyAccuracies.length > 0
+      ? Math.round(weeklyAccuracies.reduce((s, c) => s + c.accuracy_this_week, 0) / weeklyAccuracies.length)
+      : null;
+
+    // Roster-wide weakest topic (aggregate across all pupils, ≥2 pupils struggling)
+    const topicAccuracies = {};
+    for (const row of (topicRows.results || [])) {
+      if (!topicAccuracies[row.topic_key]) {
+        topicAccuracies[row.topic_key] = { subject: row.subject, total: 0, count: 0 };
+      }
+      topicAccuracies[row.topic_key].total += row.accuracy;
+      topicAccuracies[row.topic_key].count += 1;
+    }
+    let weakestRosterTopic = null;
+    let weakestRosterAccuracy = 1;
+    for (const [key, val] of Object.entries(topicAccuracies)) {
+      if (val.count < 2) continue; // skip topics only 1 pupil has attempted
+      const avg = val.total / val.count;
+      if (avg < weakestRosterAccuracy) {
+        weakestRosterAccuracy = avg;
+        weakestRosterTopic = { topic_key: key, subject: val.subject, accuracy: Math.round(avg * 100), pupil_count: val.count };
+      }
+    }
+
+    return json({
+      tutor,
+      roster: enrichedRoster,
+      pulse: {
+        active_this_week: activeThisWeek,
+        total_pupils: roster.length,
+        overdue_assignments: totalOverdue,
+        avg_accuracy_this_week: avgAccuracy,
+        weakest_topic: weakestRosterTopic,
+      },
+    });
+  }
+
   // GET /api/tutor/roster — Get pupil list for this tutor
   if (path === '/api/tutor/roster' && request.method === 'GET') {
     const tutor = await db.prepare('SELECT id FROM tutors WHERE id = ?').bind(userId).first();

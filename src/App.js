@@ -166,7 +166,13 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
 
   const [currentView, setCurrentView] = useState(() => {
     const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
-    return pathMatch ? 'join' : 'home';
+    if (pathMatch) return 'join';
+    // Dev preview bypass — ?preview=tutor or ?preview=tutorDashboard
+    const previewParam = process.env.NODE_ENV === 'development'
+      && new URLSearchParams(window.location.search).get('preview');
+    if (previewParam === 'tutor') return 'tutorSignup';
+    if (previewParam === 'tutorDashboard' || previewParam === 'tutorEmpty') return 'tutorDashboard';
+    return 'home';
   });
 
   // Scroll to top whenever the view changes — otherwise new screens land
