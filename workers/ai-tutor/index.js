@@ -5,7 +5,7 @@ import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
-import { handleScheduled } from './routes/email.js';
+import { handleScheduled, handleTrialEmails } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook, reconcileSubscriptions } from './routes/stripe.js';
 
 // ── Clerk JWT Verification ──
@@ -335,9 +335,10 @@ const worker = {
     if (event.cron === '0 18 * * SUN') {
       ctx.waitUntil(handleScheduled(env));
     } else if (event.cron === '0 6 * * *') {
-      ctx.waitUntil(reconcileSubscriptions(env).catch(err => {
-        console.error('[reconciliation] failed:', err.message);
-      }));
+      ctx.waitUntil(Promise.all([
+        reconcileSubscriptions(env).catch(err => console.error('[reconciliation] failed:', err.message)),
+        handleTrialEmails(env).catch(err => console.error('[trial-email] failed:', err.message)),
+      ]));
     }
   },
 };
