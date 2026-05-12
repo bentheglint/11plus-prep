@@ -74,11 +74,11 @@ export async function handleAccountRoutes(request, env, userId, path) {
     //   1. Comped (grandfathered or invite code) → always hasAccess, no paywall
     //   2. Active/trialing subscription → hasAccess
     //   3. past_due (grace window) → hasAccess
-    //   4. Within 7-day free trial since account creation → hasAccess
+    //   4. Within 30-day free trial since account creation → hasAccess
     //   5. Otherwise → paywall
     const isComped = !!account.is_comped;
 
-    const trialDays = 7;
+    const trialDays = 30;
     const createdAtMs = new Date(account.created_at + 'Z').getTime();
     const msSinceCreate = Date.now() - createdAtMs;
     const daysSinceCreate = msSinceCreate / (1000 * 60 * 60 * 24);
