@@ -174,11 +174,18 @@ export async function handleSubscribe(request, env, userId) {
     const body = await request.json().catch(() => ({}));
     const returnBase = body.returnUrl || appUrl;
 
+    // Resolve price ID: annual → STRIPE_PRICE_ANNUAL, monthly → STRIPE_PRICE_MONTHLY.
+    // Fall back to STRIPE_PRICE_ID for backwards compatibility during rollout.
+    const plan = body.plan === 'monthly' ? 'monthly' : 'annual';
+    const priceId = plan === 'annual'
+      ? (env.STRIPE_PRICE_ANNUAL || env.STRIPE_PRICE_ID)
+      : (env.STRIPE_PRICE_MONTHLY || env.STRIPE_PRICE_ID);
+
     // Checkout Session — Stripe hosts the card form, 3DS, Apple Pay etc.
     const session = await stripeCall(env, 'POST', '/checkout/sessions', {
       mode: 'subscription',
       customer: customerId,
-      line_items: [{ price: env.STRIPE_PRICE_ID, quantity: 1 }],
+      line_items: [{ price: priceId, quantity: 1 }],
       success_url: `${returnBase}?subscribed=1`,
       cancel_url: returnBase,
       metadata: { clerk_user_id: userId },

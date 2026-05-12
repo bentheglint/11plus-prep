@@ -69,11 +69,11 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
           onClick={onSignUp}
           className="flex items-center gap-2 px-8 py-3.5 text-lg font-bold text-white bg-[#7C3AED] rounded-2xl hover:bg-[#5A4BD1] transition-colors shadow-md"
         >
-          Get Started Free
+          Try free for 30 days
           <ChevronRight className="w-5 h-5" />
         </button>
         <p className="text-sm text-slate-500 mt-4">
-          Free while in early access
+          No card required. Full access from day one.
         </p>
 
         {/* Trust signals */}

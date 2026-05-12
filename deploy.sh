@@ -15,22 +15,13 @@
 
 # ── Step 0: .env.local guard ──
 # CRA bakes REACT_APP_* env vars into the JS bundle at build time.
-# If .env.local exists, it overrides .env — and .env.local typically
-# contains localhost URLs for wrangler dev. Deploying with .env.local
-# present ships a bundle that points at 127.0.0.1, breaking the live
-# app. This rule has been broken 3 times. Hardening at the deploy
-# script so it cannot happen a 4th.
+# If .env.local exists, it overrides .env — localhost URLs would be
+# baked into the production bundle. Auto-rename it for the build and
+# restore it on exit regardless of outcome (success, failure, or Ctrl+C).
 if [ -f .env.local ]; then
-  echo "BLOCKED: .env.local is present in the project root."
-  echo ""
-  echo "If left in place, Create React App will bake the localhost URL"
-  echo "from .env.local into the production bundle, breaking the live app."
-  echo ""
-  echo "Rename it before deploying:"
-  echo "    mv .env.local .env.local.bak && bash deploy.sh && mv .env.local.bak .env.local"
-  echo ""
-  echo "Or delete it permanently if you don't need the local-dev override."
-  exit 1
+  mv .env.local .env.local.bak
+  trap 'mv .env.local.bak .env.local 2>/dev/null' EXIT
+  echo "(.env.local renamed for build — will be restored on exit)"
 fi
 
 echo "Running tests..."
