@@ -8,6 +8,13 @@ const subjects = [
   { key: 'verbalreasoning', name: 'VR', icon: Brain, colour: '#7C3AED', rgb: '108,92,231' },
 ];
 
+// Solid hex scale per subject: index 0=1★ Exploring … index 3=4★ Strong. Full colour at index 3.
+const masteryScale = {
+  '#3B82F6': ['#DBEAFE', '#BFDBFE', '#93C5FD', '#3B82F6'],
+  '#22C55E': ['#DCFCE7', '#BBF7D0', '#86EFAC', '#22C55E'],
+  '#7C3AED': ['#EDE9FE', '#DDD6FE', '#C4B5FD', '#7C3AED'],
+};
+
 function TopicHeatMap({ mastery, onTopicClick }) {
   const [selected, setSelected] = useState('maths');
   const subj = subjects.find(s => s.key === selected);
@@ -44,37 +51,41 @@ function TopicHeatMap({ mastery, onTopicClick }) {
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-3 text-[10px] text-slate-500">
-        <div className="flex items-center gap-1">
-          <div className="w-3 h-3 rounded-sm bg-gray-100 border border-gray-200" />
-          Not started
-        </div>
-        <div className="flex items-center gap-1">
-          <div className="w-3 h-3 rounded-sm" style={{ background: `rgba(${subj.rgb},0.15)` }} />
-          Exploring
-        </div>
-        <div className="flex items-center gap-1">
-          <div className="w-3 h-3 rounded-sm" style={{ background: `rgba(${subj.rgb},0.35)` }} />
-          Confident
-        </div>
-        <div className="flex items-center gap-1">
-          <div className="w-3 h-3 rounded-sm" style={{ background: `rgba(${subj.rgb},0.6)` }} />
-          Strong
-        </div>
-        <div className="flex items-center gap-1">
-          <div className="w-3 h-3 rounded-sm bg-[#FDCB6E]" />
-          Mastered
-        </div>
-      </div>
+      {(() => {
+        const scale = masteryScale[subj.colour] || masteryScale['#7C3AED'];
+        return (
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-3 text-[10px] text-slate-500">
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 rounded-sm bg-gray-100 border border-gray-200" />
+              Not started
+            </div>
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 rounded-sm" style={{ background: scale[0] }} />
+              Exploring
+            </div>
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 rounded-sm" style={{ background: scale[2] }} />
+              Confident
+            </div>
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 rounded-sm" style={{ background: scale[3] }} />
+              Strong
+            </div>
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 rounded-sm bg-[#FDCB6E]" />
+              Mastered
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Heat map grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
         {topics.map(topic => {
-          const intensity = topic.score >= 90 ? null : // gold for mastered
-            topic.score > 0 ? Math.min(0.6, topic.score / 150) : 0;
+          const scale = masteryScale[subj.colour] || masteryScale['#7C3AED'];
           const bg = topic.score >= 90 ? '#FDCB6E' :
-            topic.score > 0 ? `rgba(${subj.rgb},${intensity})` : '#F8F9FA';
-          const textCol = topic.score >= 70 ? '#fff' : '#1E293B';
+            topic.stars >= 1 ? scale[Math.min(topic.stars - 1, 3)] : '#F8F9FA';
+          const textCol = topic.stars === 4 ? '#fff' : '#1E293B';
           const needsReview = topic.daysSince > 14 && topic.stars > 0;
           const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
                            topic.trend?.direction === 'down' ? TrendingDown : null;
@@ -94,8 +105,8 @@ function TopicHeatMap({ mastery, onTopicClick }) {
               <div className="flex items-center gap-0.5">
                 {[1,2,3,4,5].map(i => (
                   <Star key={i} className="w-2.5 h-2.5"
-                    fill={i <= topic.stars ? (topic.score >= 70 ? '#fff' : '#FDCB6E') : 'none'}
-                    stroke={i <= topic.stars ? (topic.score >= 70 ? '#fff' : '#F59E0B') : (topic.score >= 70 ? 'rgba(255,255,255,0.4)' : '#DFE6E9')}
+                    fill={i <= topic.stars ? (topic.stars === 4 ? '#fff' : '#FDCB6E') : 'none'}
+                    stroke={i <= topic.stars ? (topic.stars === 4 ? '#fff' : '#F59E0B') : (topic.stars === 4 ? 'rgba(255,255,255,0.4)' : '#DFE6E9')}
                     strokeWidth={2}
                   />
                 ))}
