@@ -95,14 +95,17 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
           </h3>
           <div className="grid grid-cols-2 gap-2">
             {topicMasteries.map(topic => {
-              // Background intensity scales with mastery score (0-100 range typical).
-              // Divisor/cap tuned so a mastered topic reads as a clear tint, not a whisper.
-              const bgIntensity = topic.score > 0 ? Math.min(0.35, topic.score / 300) : 0;
               const colour = subjectConfig[selectedSubject]?.colour || '#7C3AED';
-              // RGB triples must match the subjectConfig hexes exactly for the tint to read correctly.
-              const colourRgb = colour === '#3B82F6' ? '7,112,194'
-                              : colour === '#22C55E' ? '0,125,98'
-                              : '108,92,231'; // VR purple #7C3AED
+              const masteryScale = {
+                '#3B82F6': ['#EFF6FF', '#BFDBFE', '#60A5FA', '#1D4ED8'],
+                '#22C55E': ['#F0FDF4', '#BBF7D0', '#4ADE80', '#15803D'],
+                '#7C3AED': ['#F5F3FF', '#DDD6FE', '#A78BFA', '#6D28D9'],
+              };
+              const scale = masteryScale[colour] || masteryScale['#7C3AED'];
+              const cardBg = topic.score >= 90 ? '#FDCB6E'
+                : topic.stars >= 1 ? scale[Math.min(topic.stars - 1, 3)]
+                : undefined;
+              const textOnDark = topic.stars === 4;
               const trendColour = topic.trend?.direction === 'up' ? '#22C55E' :
                                   topic.trend?.direction === 'down' ? '#FF6B6B' : null;
               const TrendIcon = topic.trend?.direction === 'up' ? TrendingUp :
@@ -113,21 +116,24 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                   key={topic.key}
                   onClick={() => onDrillDown ? onDrillDown(selectedSubject, topic.key) : onStartTopic(selectedSubject, topic.key)}
                   className="p-3 rounded-lg border border-gray-100 text-left hover:shadow-md transition-all relative overflow-hidden group"
-                  style={{ background: topic.score > 0 ? `rgba(${colourRgb},${bgIntensity})` : undefined }}
+                  style={{ background: cardBg }}
                 >
                   <div className="flex items-start justify-between mb-1">
-                    <p className="text-sm font-bold text-slate-800 leading-tight">{topic.name}</p>
+                    <p className={`text-sm font-bold leading-tight ${textOnDark ? 'text-white' : 'text-slate-800'}`}>{topic.name}</p>
                     {TrendIcon && (
-                      <TrendIcon className="w-3.5 h-3.5 flex-shrink-0" style={{ color: trendColour }} />
+                      <TrendIcon className="w-3.5 h-3.5 flex-shrink-0" style={{ color: textOnDark ? '#fff' : trendColour }} />
                     )}
                   </div>
                   <div className="flex items-center gap-0.5 mb-1">
                     {[1, 2, 3, 4, 5].map(i => (
-                      <Star key={i} className="w-3 h-3" fill={i <= topic.stars ? '#FDCB6E' : 'none'} stroke={i <= topic.stars ? '#F59E0B' : '#DFE6E9'} strokeWidth={2} />
+                      <Star key={i} className="w-3 h-3"
+                        fill={i <= topic.stars ? (textOnDark ? '#fff' : '#FDCB6E') : 'none'}
+                        stroke={i <= topic.stars ? (textOnDark ? '#fff' : '#F59E0B') : (textOnDark ? 'rgba(255,255,255,0.4)' : '#DFE6E9')}
+                        strokeWidth={2} />
                     ))}
                   </div>
                   {topic.totalQuestions > 0 ? (
-                    <p className="text-[10px] text-slate-500">
+                    <p className={`text-[10px] ${textOnDark ? 'text-white/70' : 'text-slate-500'}`}>
                       {topic.recentAccuracy}% accuracy
                       {topic.daysSince > 0 && ` · ${topic.daysSince}d ago`}
                     </p>
@@ -135,11 +141,11 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                     <p className="text-[10px] text-[#A29BFE] font-medium">Tap to start!</p>
                   )}
                   {topic.daysSince > 14 && topic.stars > 0 && (
-                    <span className="absolute top-1 right-1 text-[8px] font-bold text-amber-500 bg-amber-50 px-1 py-0.5 rounded">
+                    <span className={`absolute top-1 right-1 text-[8px] font-bold px-1 py-0.5 rounded ${textOnDark ? 'text-white/80 bg-white/20' : 'text-amber-500 bg-amber-50'}`}>
                       <RotateCcw className="w-2 h-2 inline mr-0.5" />Review
                     </span>
                   )}
-                  <ChevronRight className="absolute right-2 bottom-2 w-4 h-4 text-gray-200 group-hover:text-gray-400 transition-colors" />
+                  <ChevronRight className={`absolute right-2 bottom-2 w-4 h-4 transition-colors ${textOnDark ? 'text-white/30 group-hover:text-white/60' : 'text-gray-200 group-hover:text-gray-400'}`} />
                 </button>
               );
             })}

@@ -187,7 +187,7 @@ function EmptyState({ tutor, getToken, onViewMessages }) {
       </div>
       <h2 className="font-heading text-xl font-bold text-slate-800 mb-2">Share your invite link</h2>
       <p className="text-slate-500 text-sm max-w-xs mb-6">
-        Send this link to your pupils' parents. When they sign up via your link, they appear in your roster automatically.
+        Send this link to your pupils' parents. When they sign up via your link, they appear in your pupil list automatically.
       </p>
 
       <div className="w-full max-w-sm bg-[#F8F7FF] rounded-xl border border-[#E8E5FF] p-3 flex items-center gap-2 mb-4">
@@ -246,6 +246,7 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose }) {
   };
 
   const handleSend = async () => {
+    if (!getToken) { setError('Assignments cannot be sent in preview mode'); return; }
     if (!dueDate) { setError('Please set a due date'); return; }
     if (!targetId) { setError('Please select a class or pupil'); return; }
     const invalidItem = items.find(it => it.itemType === 'topic' && !it.topicKey);
@@ -484,7 +485,7 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
   if (activePupil) {
     return (
       <PupilDetailScreen
-        child={activePupil}
+        childId={activePupil.id}
         getToken={getToken}
         onBack={() => { setActivePupil(null); loadDashboard(); }}
       />
@@ -602,7 +603,7 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
                   <StatCard
                     icon={TrendingDown}
                     value={pulse.weakest_topic ? topicLabel(pulse.weakest_topic.topic_key) : null}
-                    label="Roster weak spot"
+                    label="Group weak spot"
                     sub={pulse.weakest_topic
                       ? `${pulse.weakest_topic.pupil_count} pupils · ${pulse.weakest_topic.accuracy}% avg`
                       : 'Not enough data yet'}

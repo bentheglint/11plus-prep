@@ -339,7 +339,7 @@ export async function handleTutorRoutes(request, env, userId, path) {
     ).bind(tutorId, childId).first();
     if (!link) return json({ error: 'Child not on roster' }, 404);
 
-    const [child, quizResults, topicPerf, assignRecipients, notesCount] = await Promise.all([
+    const [child, quizResults, topicPerf, assignRecipients, notesCount, questionResults, mockTestHistory] = await Promise.all([
       // Child profile + parent account name
       db.prepare(`
         SELECT c.id, c.display_name, c.year_group, c.target_school, c.created_at,
@@ -382,11 +382,44 @@ export async function handleTutorRoutes(request, env, userId, path) {
       db.prepare(
         'SELECT COUNT(*) as n FROM tutor_notes WHERE tutor_id = ? AND child_id = ?'
       ).bind(tutorId, childId).first(),
+
+      // Per-question results for useMastery (last 500, newest first)
+      db.prepare(`
+        SELECT topic_key, subject, is_correct, time_ms, attempted_at
+        FROM question_results
+        WHERE child_id = ?
+        ORDER BY attempted_at DESC
+        LIMIT 500
+      `).bind(childId).all(),
+
+      // Mock test history
+      db.prepare(`
+        SELECT subject, percentage, completed_at
+        FROM mock_test_results
+        WHERE child_id = ?
+        ORDER BY completed_at DESC
+      `).bind(childId).all(),
     ]);
 
     const parsedTopicPerf = topicPerf.results.map(r => ({
       topicKey: r.topic_key, subject: r.subject,
       data: typeof r.data === 'string' ? JSON.parse(r.data) : r.data,
+    }));
+
+    // Map question_results to the shape useMastery expects
+    const mappedQuestionResults = (questionResults.results || []).map(r => ({
+      date: r.attempted_at,
+      topicKey: r.topic_key,
+      subject: r.subject,
+      correct: !!r.is_correct,
+      timeSpentMs: r.time_ms || 0,
+    }));
+
+    // Map mock_test_results to the shape useMastery expects
+    const mappedMockHistory = (mockTestHistory.results || []).map(r => ({
+      subject: r.subject,
+      percentage: r.percentage,
+      date: r.completed_at,
     }));
 
     return json({
@@ -395,6 +428,8 @@ export async function handleTutorRoutes(request, env, userId, path) {
       topicPerformance: parsedTopicPerf,
       assignmentRecipients: assignRecipients.results,
       notesCount: notesCount?.n || 0,
+      questionResults: mappedQuestionResults,
+      mockTestHistory: mappedMockHistory,
     });
   }
 

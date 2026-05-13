@@ -5,7 +5,16 @@ import { topicNames } from '../RecommendationCard';
 const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
-function FocusAreas({ mastery, onTopicClick }) {
+function FocusAreas({ mastery, onTopicClick, pupilName }) {
+  const adaptReason = (reason) => {
+    if (!pupilName) return reason;
+    return reason
+      .replace("You haven't", `${pupilName} hasn't`)
+      .replace(' — give it a go!', '')
+      .replace('Your ', 'Their ')
+      .replace('your ', 'their ')
+      .trim();
+  };
   const focusAreas = mastery.getFocusAreas();
 
   if (focusAreas.length === 0) {
@@ -46,7 +55,7 @@ function FocusAreas({ mastery, onTopicClick }) {
                     {subjectNames[area.subject]}
                   </span>
                 </div>
-                <p className="text-xs text-slate-500">{area.reason}</p>
+                <p className="text-xs text-slate-500">{adaptReason(area.reason)}</p>
                 {area.mastery && area.mastery.totalQuestions > 0 && (
                   <div className="flex items-center gap-1 mt-1">
                     {[1,2,3,4,5].map(s => (

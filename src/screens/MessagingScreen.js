@@ -58,6 +58,7 @@ export function TutorMessagingScreen({ getToken, onBack }) {
   const [openConv, setOpenConv] = useState(null); // { id, childName }
 
   const load = useCallback(async () => {
+    if (!getToken) { setLoading(false); return; }
     try {
       const data = await apiFetch('/api/tutor/conversations', getToken);
       setConversations(data.conversations || []);
@@ -131,7 +132,7 @@ export function ParentMessagingScreen({ activeChildId, getToken, onBack }) {
   const [openConv, setOpenConv] = useState(null);
 
   const load = useCallback(async () => {
-    if (!activeChildId) { setLoading(false); return; }
+    if (!activeChildId || !getToken) { setLoading(false); return; }
     try {
       const data = await apiFetch(`/api/parent/conversations?child_id=${activeChildId}`, getToken);
       setConversations(data.conversations || []);

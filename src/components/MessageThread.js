@@ -69,6 +69,7 @@ export default function MessageThread({ messagesPath, myRole, getToken, label })
   const pollRef = useRef(null);
 
   const loadMessages = useCallback(async () => {
+    if (!getToken) { setLoading(false); return; }
     try {
       const data = await apiFetch(messagesPath, getToken);
       setMessages(data.messages || []);

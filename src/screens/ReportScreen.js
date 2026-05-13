@@ -3,6 +3,29 @@ import { ArrowLeft, Printer, Loader, AlertCircle } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
+const DEV_MOCK_REPORT = {
+  child: { name: 'Evie Mitchell', yearGroup: 5, targetSchool: 'Bournemouth School for Girls' },
+  tutorName: 'Sarah Mitchell',
+  generatedAt: new Date().toISOString(),
+  summary: { estimatedPercentile: 72, overallScore: 61, recentAccuracy: 67, topicsAssessed: 5 },
+  subjectMastery: { maths: 61, english: 74, verbalreasoning: 67 },
+  weakestTopics: [
+    { topicKey: 'longDivision', subject: 'maths', score: 48 },
+    { topicKey: 'fractions', subject: 'maths', score: 67 },
+    { topicKey: 'synonyms', subject: 'verbalreasoning', score: 67 },
+  ],
+  strongestTopics: [
+    { topicKey: 'sequences', subject: 'maths', score: 75 },
+    { topicKey: 'comprehension', subject: 'english', score: 74 },
+  ],
+  mockTests: [],
+  assignments: { total: 2, completed: 1, late: 0 },
+  recommendations: [
+    { topicKey: 'longDivision', subject: 'maths', score: 48 },
+    { topicKey: 'fractions', subject: 'maths', score: 67 },
+  ],
+};
+
 async function fetchReport(childId, getToken) {
   const token = await getToken();
   const res = await fetch(`${API_URL}/api/tutor/report/${childId}`, {
@@ -58,11 +81,19 @@ export default function ReportScreen({ childId, getToken, onBack }) {
   const [error, setError] = useState(null);
   const printRef = useRef(null);
 
+  const isPreview = process.env.NODE_ENV === 'development'
+    && new URLSearchParams(window.location.search).get('preview') === 'tutorDashboard';
+
   useEffect(() => {
+    if (isPreview || !getToken) {
+      setReport(DEV_MOCK_REPORT);
+      setLoading(false);
+      return;
+    }
     fetchReport(childId, getToken)
       .then(d => { setReport(d); setLoading(false); })
       .catch(err => { setError(err.message); setLoading(false); });
-  }, [childId, getToken]);
+  }, [childId, getToken, isPreview]);
 
   const handlePrint = () => window.print();
 
