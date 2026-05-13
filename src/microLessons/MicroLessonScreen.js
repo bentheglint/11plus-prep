@@ -1671,7 +1671,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       onKeyDown={(e) => e.key === 'Enter' && handleSendTutorMessage()}
                       placeholder={isListening ? "Listening..." : "Ask your question here..."}
                       disabled={isAiThinking}
-                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 text-sm ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
+                      className={`flex-1 min-w-0 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 text-sm ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
                     />
                     {speechSupported && (
                       <button

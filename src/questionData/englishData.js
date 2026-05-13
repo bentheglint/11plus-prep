@@ -15239,7 +15239,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["Thomas' pencil case","was left on the","desk after the","maths lesson ended."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 4,
-          "explanation": "This sentence is perfectly punctuated — well done if you spotted that! The apostrophe is in exactly the right place. ✓"
+          "explanation": "No mistake here — 'Thomas'' is the standard British English form for possession when the name ends in 's'. You may also see 'Thomas's', which is equally acceptable, but both are correct. There is no error in this sentence. ✓"
         },
         {
           "id": 48,
@@ -16946,10 +16946,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["I need pencils","a ruler a rubber","and a sharpener","for my pencil case."],
+          "segments": ["I need pencils,","a ruler a rubber","and a sharpener","for my pencil case."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 1,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "explanation": "Section B is missing a comma between the list items 'a ruler' and 'a rubber'. When listing three or more items, you separate each one with a comma: 'a ruler, a rubber'. Section A already has its comma after 'pencils', Section C uses 'and' before the final item (no comma needed there), and Section D is a correctly punctuated prepositional phrase. ✓"
         },
         {
           "id": 220,
@@ -22787,7 +22787,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "loudness"
           ],
           "correct": 2,
-          "explanation": "'Loudly' is the adverb form, describing HOW to speak. We need an adverb to modify the verb 'speak'. ✓"
+          "explanation": "'Loudly' is correct because we need an adverb to describe HOW someone should speak — adverbs modify verbs and usually end in -ly. 'Louder' is a comparative form, which means 'more loud than something else' — but the sentence is not comparing the speaker to anything, so 'louder' does not fit in formal English. 'Loud' is an adjective (it describes nouns, not verbs), and 'loudest' and 'loudness' are the wrong forms entirely. ✓"
         },
         {
           "id": 309,
@@ -24574,7 +24574,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Scary"
           ],
           "correct": 1,
-          "explanation": "'Dangerous' means likely to cause harm or injury. Its opposite is 'safe', meaning protected from or not exposed to danger. Think about when you'd use this word versus its synonym. ✓"
+          "explanation": "'Dangerous' means likely to cause harm or injury. Its opposite is 'safe', meaning protected from or not exposed to danger. ✓"
         },
         {
           "id": 119,
@@ -25554,7 +25554,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Disaster"
           ],
           "correct": 4,
-          "explanation": "'Triumph' means a great victory or achievement. Its opposite is 'disaster', meaning a sudden event causing great damage or failure. Think about when you'd use this word versus its synonym. ✓"
+          "explanation": "'Triumph' means a great victory or achievement. Its opposite is 'disaster', meaning a sudden event causing great damage or failure. ✓"
         },
         {
           "id": 189,
@@ -26177,14 +26177,14 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "In the sentence 'The council will demolish the unsafe building,' what does 'demolish' mean?",
           "options": [
-            "Inspect",
-            "Repair",
-            "Paint",
-            "Pull down and destroy",
-            "Sell"
+            "Inspect closely",
+            "Repair quickly",
+            "Paint over",
+            "Knock down completely",
+            "Sell off"
           ],
           "correct": 3,
-          "explanation": "'Demolish' means to pull down or destroy a building or structure completely. An unsafe building might be demolished for public safety. Try using this word in a sentence today to make it stick. ✓"
+          "explanation": "'Demolish' means to knock down or destroy something completely, usually a building. The council is removing the unsafe building because it is not safe to use. 'Inspect closely' means to examine, 'repair quickly' means to fix, 'paint over' means to cover with paint, and 'sell off' means to pass to another owner — none of these involve destruction. ✓"
         },
         {
           "id": 234,
@@ -26443,11 +26443,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "question": "In the sentence 'The brochure contained misleading information,' what does 'misleading' mean?",
           "options": [
-            "Detailed",
-            "Accurate",
-            "Interesting",
-            "Giving the wrong idea or impression",
-            "Colourful"
+            "Highly detailed account",
+            "Accurate description",
+            "Genuinely interesting",
+            "Giving a false impression",
+            "Bright and colourful"
           ],
           "correct": 3,
           "explanation": "'Misleading' means giving the wrong idea or impression, potentially causing someone to believe something that is not true. A great word to use in your own writing! ✓"
@@ -26828,7 +26828,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Abundant"
           ],
           "correct": 3,
-          "explanation": "'Lavish' means sumptuously rich, elaborate, or luxurious. Its opposite is 'meagre', meaning lacking in quantity or quality; inadequate and scanty. Think about when you'd use this word versus its synonym. ✓"
+          "explanation": "'Lavish' means sumptuously rich, elaborate, or luxurious. Its opposite is 'meagre', meaning lacking in quantity or quality; inadequate and scanty. ✓"
         },
         {
           "id": 280,
@@ -26877,11 +26877,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "question": "What does the word 'eloquent' mean?",
           "options": [
-            "Unable to speak",
-            "Very quiet",
-            "Extremely shy",
-            "Rather dull",
-            "Fluent and persuasive in speaking or writing"
+            "Completely unable to speak",
+            "Very quiet and reserved",
+            "Painfully shy in public",
+            "Rather dull and boring",
+            "Fluent and persuasive"
           ],
           "correct": 4,
           "explanation": "'Eloquent' means fluent, persuasive, and able to express ideas clearly and effectively. An eloquent speaker can move an audience with the power of their words. Try using this word in a sentence today to make it stick. ✓"
@@ -27144,10 +27144,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "In the sentence 'The philanthropist donated millions to local hospitals,' what does 'philanthropist' mean?",
           "options": [
             "A wealthy business owner",
-            "A person who collects art",
-            "A famous doctor",
-            "A person who promotes the welfare of others through generous donations",
-            "A government official"
+            "A serious art collector",
+            "A famous local doctor",
+            "A generous charity donor",
+            "A senior public official"
           ],
           "correct": 3,
           "explanation": "A 'philanthropist' is a person who seeks to promote the welfare of others, especially through generous donations of money. Building a strong vocabulary is one of the best exam skills. ✓"
@@ -27325,11 +27325,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "question": "What does the word 'dogmatic' mean?",
           "options": [
-            "Related to dogs",
-            "Asserting opinions as if they were undeniable facts",
-            "Very gentle",
-            "Extremely flexible",
-            "Quite uncertain"
+            "Friendly towards dogs",
+            "Stating opinions as facts",
+            "Very gentle and meek",
+            "Extremely flexible person",
+            "Quite uncertain in views"
           ],
           "correct": 1,
           "explanation": "'Dogmatic' means inclined to lay down principles as undeniably true, without consideration of evidence or others' opinions. A dogmatic person will not accept that they might be wrong. Try using this word in a sentence today to make it stick. ✓"
@@ -27550,7 +27550,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "The word 'happy' becomes its opposite when we add a prefix. Which prefix turns 'happy' into its antonym?",
           "options": ["dis-", "im-", "in-", "un-", "mis-"],
           "correct": 3,
-          "explanation": "Adding 'un-' gives us 'unhappy', which means the opposite of happy. The prefix 'un-' is one of the most common ways to make an antonym. Think about when you'd use this word versus its synonym. ✓"
+          "explanation": "Adding 'un-' gives us 'unhappy', which means the opposite of happy. The prefix 'un-' is one of the most common ways to make an antonym. ✓"
         },
         {
           "id": 332,
@@ -28400,7 +28400,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 436,
           "difficulty": 3,
           "question": "What does the expression 'to turn over a new leaf' mean?",
-          "options": ["To start gardening", "To make a fresh start and change behaviour", "To read a new book", "To flip a page", "To move to a new house"],
+          "options": ["To take up gardening", "To make a fresh start", "To read a brand new book", "To flip a page over", "To move to a new house"],
           "correct": 1,
           "explanation": "'Turn over a new leaf' means to make a fresh start — to change your behaviour for the better. The 'leaf' refers to a page in a book (not a tree leaf). You're starting a new, clean page in your life. Building a strong vocabulary is one of the best exam skills. ✓"
         },
@@ -28514,7 +28514,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Choose the word that best completes the sentence: 'The ___ old man shared fascinating stories about his travels around the world.'",
           "options": ["Mundane", "Elderly", "Eccentric", "Monotonous", "Tedious"],
           "correct": 2,
-          "explanation": "'Eccentric' means unusual and interesting in character — someone who has travelled the world and tells fascinating stories would likely be eccentric. 'Elderly' is too neutral, and 'mundane', 'monotonous', and 'tedious' all mean boring. Look for prefixes and suffixes you recognise in unfamiliar words. ✓"
+          "explanation": "'Eccentric' is correct because it means unusual or interesting in character — someone who has travelled the world and shares fascinating stories fits that picture perfectly. 'Elderly' does not work because the sentence already tells us the man is 'old' — adding 'elderly' would just repeat the same idea ('elderly old man' is redundant). 'Mundane', 'monotonous' and 'tedious' all mean dull or boring, which is the opposite of someone who tells fascinating stories. ✓"
         },
         {
           "id": 451,
