@@ -16690,10 +16690,10 @@ const vrData = {
         {
           id: 114,
           difficulty: 2,
-          question: "In a code, PLOD = 4927. What word does 7294 stand for?",
-          options: ["DLOP","DPOL","DOPL","DOLP","DOPLL"],
-          correct: 3,
-          explanation: "From PLOD = 4927: P=4, L=9, O=2, D=7. So 7=D, 2=O, 9=L, 4=P → 7294 = DOLP. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
+          question: "In a code, TRAP = 1234. What word does 4321 stand for?",
+          options: ["TRAP","PRAT","PART","TAPR","RAPT"],
+          correct: 2,
+          explanation: "From TRAP = 1234: T=1, R=2, A=3, P=4. So 4=P, 3=A, 2=R, 1=T → 4321 = PART. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
         },
         {
           id: 115,
