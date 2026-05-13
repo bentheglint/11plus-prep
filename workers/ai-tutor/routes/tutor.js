@@ -107,7 +107,7 @@ export async function handleTutorRoutes(request, env, userId, path) {
   // GET /api/tutor/dashboard — Aggregated dashboard data (pulse + per-pupil)
   if (path === '/api/tutor/dashboard' && request.method === 'GET') {
     const tutor = await db.prepare(
-      'SELECT id, name, bio, tutor_code FROM tutors WHERE id = ?'
+      'SELECT id, display_name AS name, bio, tutor_code FROM tutors WHERE id = ?'
     ).bind(userId).first();
     if (!tutor) return json({ error: 'No tutor profile found' }, 404);
 
