@@ -3,6 +3,7 @@
 # Usage: bash deploy.sh
 #
 # Sequence:
+#   0. Pre-flight: refuse to deploy if .env.local is present
 #   1. Unit + integration tests (358+ covering data, hooks, utils)
 #   2. Smoke build (REACT_APP_SMOKE_MODE=true — skips Clerk auth)
 #   3. Puppeteer smoke test through Evie's golden path +
@@ -10,7 +11,18 @@
 #   4. Production build (without smoke flag)
 #   5. Wrangler deploy to Pages
 #
-# Any failure in steps 1-3 blocks the deploy.
+# Any failure in steps 0-3 blocks the deploy.
+
+# ── Step 0: .env.local guard ──
+# CRA bakes REACT_APP_* env vars into the JS bundle at build time.
+# If .env.local exists, it overrides .env — localhost URLs would be
+# baked into the production bundle. Auto-rename it for the build and
+# restore it on exit regardless of outcome (success, failure, or Ctrl+C).
+if [ -f .env.local ]; then
+  mv .env.local .env.local.bak
+  trap 'mv .env.local.bak .env.local 2>/dev/null' EXIT
+  echo "(.env.local renamed for build — will be restored on exit)"
+fi
 
 echo "Running tests..."
 npx react-scripts test --watchAll=false 2>&1

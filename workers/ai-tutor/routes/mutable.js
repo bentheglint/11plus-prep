@@ -20,7 +20,11 @@ export async function handleMutableRoutes(request, env, userId, path) {
     return json({ results: parsed });
   }
 
-  // PATCH /api/data/topic-performance — Update one topic's performance
+  // PATCH /api/data/topic-performance — Update one topic's performance.
+  // Atomic compare-and-swap: a single INSERT...ON CONFLICT...WHERE version=?
+  // upserts a new row (version 1) or updates iff the existing row's version
+  // matches the client's claim. meta.changes === 0 means an existing row
+  // had a different version → 409.
   if (path.startsWith('/api/data/topic-performance/') && request.method === 'PATCH') {
     const segments = path.split('/');
     // /api/data/topic-performance/:topicKey/:subject
@@ -31,27 +35,31 @@ export async function handleMutableRoutes(request, env, userId, path) {
     const { version, data } = await request.json();
     if (version == null || !data) return json({ error: 'Missing version or data' }, 400);
 
-    // Upsert with version check
-    const existing = await db.prepare(
-      'SELECT version FROM topic_performance WHERE child_id = ? AND topic_key = ? AND subject = ?'
-    ).bind(childId, topicKey, subject).first();
+    const result = await db.prepare(
+      `INSERT INTO topic_performance (child_id, topic_key, subject, data, version)
+       VALUES (?, ?, ?, ?, 1)
+       ON CONFLICT(child_id, topic_key, subject) DO UPDATE SET
+         data = excluded.data,
+         version = topic_performance.version + 1,
+         updated_at = datetime('now')
+       WHERE topic_performance.version = ?`
+    ).bind(childId, topicKey, subject, JSON.stringify(data), version).run();
 
-    if (existing) {
-      if (existing.version !== version) {
-        return json({ error: 'Version conflict', currentVersion: existing.version }, 409);
-      }
-      await db.prepare(
-        `UPDATE topic_performance SET data = ?, version = version + 1, updated_at = datetime('now')
-         WHERE child_id = ? AND topic_key = ? AND subject = ?`
-      ).bind(JSON.stringify(data), childId, topicKey, subject).run();
-    } else {
-      await db.prepare(
-        `INSERT INTO topic_performance (child_id, topic_key, subject, data, version)
-         VALUES (?, ?, ?, ?, 1)`
-      ).bind(childId, topicKey, subject, JSON.stringify(data)).run();
+    if (result?.meta?.changes === 0) {
+      const fresh = await db.prepare(
+        'SELECT version FROM topic_performance WHERE child_id = ? AND topic_key = ? AND subject = ?'
+      ).bind(childId, topicKey, subject).first();
+      return json({ error: 'Version conflict', currentVersion: fresh?.version ?? null }, 409);
     }
 
-    return json({ ok: true, version: existing ? existing.version + 1 : 1 });
+    // We can't easily distinguish INSERT-of-new from UPDATE-of-existing here,
+    // but the client only cares about "what version is the row now". If the
+    // row was newly inserted, version=1; if updated, version=client_version+1.
+    // We need to read it back for accuracy. (One round-trip; rare path.)
+    const fresh = await db.prepare(
+      'SELECT version FROM topic_performance WHERE child_id = ? AND topic_key = ? AND subject = ?'
+    ).bind(childId, topicKey, subject).first();
+    return json({ ok: true, version: fresh?.version ?? null });
   }
 
   // ── Leitner Queue ──
@@ -105,26 +113,27 @@ export async function handleMutableRoutes(request, env, userId, path) {
     return json({ ...row, streak_history: JSON.parse(row.streak_history) });
   }
 
-  // PATCH /api/data/streaks — Update streak (versioned)
+  // PATCH /api/data/streaks — Update streak (atomic CAS by version).
   if (path === '/api/data/streaks' && request.method === 'PATCH') {
     const { version, currentStreak, longestStreak, lastQuizDate, streakHistory } = await request.json();
     if (version == null) return json({ error: 'Missing version' }, 400);
 
-    const existing = await db.prepare('SELECT version FROM streaks WHERE child_id = ?').bind(childId).first();
-    if (!existing) return json({ error: 'Streak data not found' }, 404);
-    if (existing.version !== version) {
-      return json({ error: 'Version conflict', currentVersion: existing.version }, 409);
-    }
-
-    await db.prepare(
+    const result = await db.prepare(
       `UPDATE streaks SET current_streak = ?, longest_streak = ?, last_quiz_date = ?,
        streak_history = ?, version = version + 1, updated_at = datetime('now')
-       WHERE child_id = ?`
+       WHERE child_id = ? AND version = ?`
     ).bind(
       currentStreak ?? 0, longestStreak ?? 0, lastQuizDate || null,
-      JSON.stringify(streakHistory || []), childId
+      JSON.stringify(streakHistory || []), childId, version
     ).run();
-    return json({ ok: true, version: existing.version + 1 });
+
+    if (result?.meta?.changes === 0) {
+      // Either the row doesn't exist or the version was stale. Disambiguate.
+      const fresh = await db.prepare('SELECT version FROM streaks WHERE child_id = ?').bind(childId).first();
+      if (!fresh) return json({ error: 'Streak data not found' }, 404);
+      return json({ error: 'Version conflict', currentVersion: fresh.version }, 409);
+    }
+    return json({ ok: true, version: version + 1 });
   }
 
   // ── Prep Points ──
@@ -138,23 +147,23 @@ export async function handleMutableRoutes(request, env, userId, path) {
     return json(row);
   }
 
-  // PATCH /api/data/prep-points — Update prep points (versioned)
+  // PATCH /api/data/prep-points — Update prep points (atomic CAS by version).
   if (path === '/api/data/prep-points' && request.method === 'PATCH') {
     const { version, total, level, todayPP, todayDate } = await request.json();
     if (version == null) return json({ error: 'Missing version' }, 400);
 
-    const existing = await db.prepare('SELECT version FROM prep_points WHERE child_id = ?').bind(childId).first();
-    if (!existing) return json({ error: 'Prep points data not found' }, 404);
-    if (existing.version !== version) {
-      return json({ error: 'Version conflict', currentVersion: existing.version }, 409);
-    }
-
-    await db.prepare(
+    const result = await db.prepare(
       `UPDATE prep_points SET total = ?, level = ?, today_pp = ?, today_date = ?,
        version = version + 1, updated_at = datetime('now')
-       WHERE child_id = ?`
-    ).bind(total ?? 0, level ?? 1, todayPP ?? 0, todayDate || null, childId).run();
-    return json({ ok: true, version: existing.version + 1 });
+       WHERE child_id = ? AND version = ?`
+    ).bind(total ?? 0, level ?? 1, todayPP ?? 0, todayDate || null, childId, version).run();
+
+    if (result?.meta?.changes === 0) {
+      const fresh = await db.prepare('SELECT version FROM prep_points WHERE child_id = ?').bind(childId).first();
+      if (!fresh) return json({ error: 'Prep points data not found' }, 404);
+      return json({ error: 'Version conflict', currentVersion: fresh.version }, 409);
+    }
+    return json({ ok: true, version: version + 1 });
   }
 
   // ── Preferences ──
@@ -168,22 +177,22 @@ export async function handleMutableRoutes(request, env, userId, path) {
     return json(row);
   }
 
-  // PATCH /api/data/preferences — Update preferences (versioned)
+  // PATCH /api/data/preferences — Update preferences (atomic CAS by version).
   if (path === '/api/data/preferences' && request.method === 'PATCH') {
     const { version, lastSessionDate } = await request.json();
     if (version == null) return json({ error: 'Missing version' }, 400);
 
-    const existing = await db.prepare('SELECT version FROM preferences WHERE child_id = ?').bind(childId).first();
-    if (!existing) return json({ error: 'Preferences not found' }, 404);
-    if (existing.version !== version) {
-      return json({ error: 'Version conflict', currentVersion: existing.version }, 409);
-    }
-
-    await db.prepare(
+    const result = await db.prepare(
       `UPDATE preferences SET last_session_date = ?, version = version + 1, updated_at = datetime('now')
-       WHERE child_id = ?`
-    ).bind(lastSessionDate || null, childId).run();
-    return json({ ok: true, version: existing.version + 1 });
+       WHERE child_id = ? AND version = ?`
+    ).bind(lastSessionDate || null, childId, version).run();
+
+    if (result?.meta?.changes === 0) {
+      const fresh = await db.prepare('SELECT version FROM preferences WHERE child_id = ?').bind(childId).first();
+      if (!fresh) return json({ error: 'Preferences not found' }, 404);
+      return json({ error: 'Version conflict', currentVersion: fresh.version }, 409);
+    }
+    return json({ ok: true, version: version + 1 });
   }
 
   return null; // Route not matched

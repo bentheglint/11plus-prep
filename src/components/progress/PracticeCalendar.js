@@ -47,10 +47,17 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
   const intensityColours = ['#F3F4F6', '#DDD6FE', '#A78BFA', '#7C3AED'];
   const getIntensity = (q) => q === 0 ? 0 : q <= 10 ? 1 : q <= 25 ? 2 : 3;
 
-  // Format date range label: "24 Mar - 30 Mar"
-  const formatRange = (start, end) => {
+  // Format date range label.
+  // Compact ("24-30 Mar") on mobile-narrow columns; full ("24 Mar – 30 Mar") on wider.
+  const formatRangeFull = (start, end) => {
     const opts = { day: 'numeric', month: 'short' };
     return `${start.toLocaleDateString('en-GB', opts)} – ${end.toLocaleDateString('en-GB', opts)}`;
+  };
+  const formatRangeCompact = (start, end) => {
+    const startMonth = start.toLocaleDateString('en-GB', { month: 'short' });
+    const endMonth = end.toLocaleDateString('en-GB', { month: 'short' });
+    if (startMonth === endMonth) return `${start.getDate()}-${end.getDate()} ${endMonth}`;
+    return `${start.getDate()} ${startMonth}-${end.getDate()} ${endMonth}`;
   };
 
   // Is this the current week?
@@ -68,7 +75,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
 
   return (
     <div className="card-elevated p-5 mb-6">
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
         <h3 className="font-heading font-bold text-slate-800">Practice Consistency</h3>
         <p className="text-sm font-bold text-slate-800">
           {thisWeekDays}/7 this week
@@ -78,13 +85,13 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
 
       {/* Column headers: Mon - Sun + Total */}
       <div className="flex items-center mb-2">
-        <div className="w-28 flex-shrink-0" />
+        <div className="w-16 sm:w-28 flex-shrink-0" />
         {dayNames.map(name => (
-          <div key={name} className="flex-1 text-center text-xs font-bold text-slate-500">
+          <div key={name} className="flex-1 text-center text-[10px] sm:text-xs font-bold text-slate-500">
             {name}
           </div>
         ))}
-        <div className="w-8 flex-shrink-0 text-center text-[10px] font-bold text-slate-500 pl-1">
+        <div className="w-7 sm:w-8 flex-shrink-0 text-center text-[10px] font-bold text-slate-500 pl-1">
           Total
         </div>
       </div>
@@ -96,10 +103,15 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
           const practicedCount = week.days.filter(d => d.practiced).length;
           return (
             <div key={wi} className={`flex items-center ${current ? 'bg-[#EDE8FF]/50 rounded-lg py-1 -mx-1 px-1' : ''}`}>
-              {/* Date range label */}
-              <div className="w-28 flex-shrink-0 text-[11px] text-slate-500 pr-2">
+              {/* Date range label — compact on mobile, full on wider */}
+              <div className="w-16 sm:w-28 flex-shrink-0 text-[10px] sm:text-[11px] text-slate-500 pr-1 sm:pr-2 leading-tight">
                 {current && <span className="text-[#7C3AED] font-bold">This week</span>}
-                {!current && formatRange(week.start, week.end)}
+                {!current && (
+                  <>
+                    <span className="sm:hidden">{formatRangeCompact(week.start, week.end)}</span>
+                    <span className="hidden sm:inline">{formatRangeFull(week.start, week.end)}</span>
+                  </>
+                )}
               </div>
               {/* Day cells */}
               {week.days.map((day) => {
@@ -109,7 +121,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
                 return (
                   <div key={day.date} className="flex-1 flex justify-center">
                     <div
-                      className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${isToday ? 'ring-2 ring-[#7C3AED] ring-offset-1' : ''}`}
+                      className={`w-6 h-6 sm:w-8 sm:h-8 rounded-md sm:rounded-lg flex items-center justify-center transition-colors ${isToday ? 'ring-2 ring-[#7C3AED] ring-offset-1' : ''}`}
                       style={{ background: isFuture ? 'transparent' : intensityColours[intensity] }}
                       title={`${day.date}: ${day.questions} questions`}
                     />
@@ -117,7 +129,7 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
                 );
               })}
               {/* Weekly count */}
-              <div className="w-8 flex-shrink-0 text-center text-xs font-bold text-slate-500 pl-1">
+              <div className="w-7 sm:w-8 flex-shrink-0 text-center text-xs font-bold text-slate-500 pl-1">
                 {practicedCount > 0 ? practicedCount : ''}
               </div>
             </div>
@@ -126,11 +138,11 @@ function PracticeCalendar({ practiceDays, practiceLog }) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-2 mt-3 text-xs text-slate-500">
-        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded border border-gray-300" style={{ background: '#F3F4F6' }} /> No practice</span>
-        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#DDD6FE' }} /> 1-10 Qs</span>
-        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#A78BFA' }} /> 11-25 Qs</span>
-        <span className="flex items-center gap-1"><span className="inline-block w-4 h-4 rounded" style={{ background: '#7C3AED' }} /> 25+ Qs</span>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-3 text-[11px] sm:text-xs text-slate-500">
+        <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 sm:w-4 sm:h-4 rounded border border-gray-300" style={{ background: '#F3F4F6' }} /> No practice</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 sm:w-4 sm:h-4 rounded" style={{ background: '#DDD6FE' }} /> 1-10 Qs</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 sm:w-4 sm:h-4 rounded" style={{ background: '#A78BFA' }} /> 11-25 Qs</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 sm:w-4 sm:h-4 rounded" style={{ background: '#7C3AED' }} /> 25+ Qs</span>
       </div>
 
       {/* Summary stats */}

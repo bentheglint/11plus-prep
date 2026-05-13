@@ -341,7 +341,7 @@ function QuizScreen({
                           key={idx}
                           onClick={() => onPickFromSet('A', idx)}
                           disabled={showFeedback}
-                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
+                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-xs sm:text-sm break-words min-w-0 select-none ${
                             showFeedback
                               ? idx === currentQuestion.correctPair[0]
                                 ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'
@@ -366,7 +366,7 @@ function QuizScreen({
                           key={idx}
                           onClick={() => onPickFromSet('B', idx)}
                           disabled={showFeedback}
-                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-sm sm:text-base break-words min-w-0 ${
+                          className={`p-2 sm:p-3 text-center rounded-xl border-2 transition-all font-medium text-xs sm:text-sm break-words min-w-0 select-none ${
                             showFeedback
                               ? idx === currentQuestion.correctPair[1]
                                 ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'
@@ -629,7 +629,7 @@ function QuizScreen({
                       onKeyPress={(e) => e.key === 'Enter' && onSendMessage()}
                       placeholder={isListening ? "Listening..." : "Ask your question here..."}
                       disabled={isAiThinking}
-                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
+                      className={`flex-1 min-w-0 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
                     />
                     {speechSupported && (
                       <button

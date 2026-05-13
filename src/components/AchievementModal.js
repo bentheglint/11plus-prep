@@ -3,15 +3,29 @@ import { motion } from './Motion';
 import { celebrateCorrect } from '../utils/confetti';
 
 function AchievementModal({ achievement, onDismiss }) {
+  // Close on Escape key (keyboard a11y)
+  useEffect(() => {
+    if (!achievement) return undefined;
+    const onKey = (e) => { if (e.key === 'Escape') onDismiss?.(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [achievement, onDismiss]);
+
   if (!achievement) return null;
 
   const Icon = achievement.icon;
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={onDismiss}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="achievement-title">
+      <button
+        type="button"
+        aria-label="Close achievement"
+        onClick={onDismiss}
+        className="absolute inset-0 bg-black/50 cursor-default"
+        tabIndex={-1}
+      />
       <motion.div
-        className="bg-white rounded-2xl p-8 max-w-sm w-full text-center"
-        onClick={e => e.stopPropagation()}
+        className="relative z-10 bg-white rounded-2xl p-8 max-w-sm w-full text-center"
         initial={{ opacity: 0, scale: 0.5, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
@@ -29,7 +43,7 @@ function AchievementModal({ achievement, onDismiss }) {
         </div>
 
         <p className="text-sm font-bold text-[#7C3AED] uppercase tracking-wider mb-1">Achievement Unlocked!</p>
-        <h2 className="text-2xl font-heading font-bold text-slate-800 mb-2">{achievement.name}</h2>
+        <h2 id="achievement-title" className="text-2xl font-heading font-bold text-slate-800 mb-2">{achievement.name}</h2>
         <p className="text-slate-500 mb-6">{achievement.description}</p>
 
         <motion.button

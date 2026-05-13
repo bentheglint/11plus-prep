@@ -203,7 +203,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
         )}
 
         {/* Dev/admin tools — only for specific users */}
-        {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui') && (
+        {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui' || currentUser === 'Dev') && (
           <div className="flex gap-3 mt-2">
             <button
               onClick={onSpeedReview}

@@ -2305,6 +2305,81 @@ export const letterCodesSubConcepts = [
         ]
       }
     ]
-  }
+  },
+
+{
+    id: "letter-position-analogy",
+    name: "Letter Position Analogies",
+    category: "core",
+    lessons: [
+      {
+        id: "letter-position-analogy-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "Crack 'X is to Y' letter puzzles by turning letters into their alphabet positions (A=1, B=2... Z=26)",
+          "Spot the rule from the first pair, double-check it on the second pair, then apply it confidently to the last one"
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "What's the missing pair?",
+            body: () => "Imagine you crack open a coded message and see this:\n\n**AC is to CE**\n**EG is to GI**\n**IK is to ___**\n\nLooks tricky! But here's the secret — every letter has a hidden number. A is 1, B is 2, C is 3... right up to Z which is 26. Once you turn the letters into numbers, the puzzle becomes simple maths.\n\nYour mission: find the rule, then apply it.",
+            visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } }
+          },
+          {
+            type: "teach",
+            title: () => "The 3-step recipe",
+            body: () => "Let's solve this together:\n\n**AC is to CE**\n**EG is to GI**\n**IK is to ___**\n\nThe trick: look at each letter separately. The first letter has its own rule, the second letter has its own rule. Spot the rule, check it on pair 2, then apply.",
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Step 1: Convert to positions. A=1, C=3 → C=3, E=5. So 1→3 and 3→5.", why: "Numbers are easier to compare than letters" },
+                  { text: "Step 2: Spot the rule. 1→3 is +2, and 3→5 is +2. Both letters move forward by 2.", why: "In harder puzzles the two letters can follow different rules — always check both" },
+                  { text: "Step 3: Check pair 2. E(5)→G(7) is +2 ✓ and G(7)→I(9) is +2 ✓. Rule confirmed.", why: "Never trust a rule until you've checked it on the second pair" },
+                  { text: "Step 4: Apply to IK. I(9)+2 = K(11), K(11)+2 = M(13). Answer: KM.", why: "Same rule, last pair — done!" }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: () => [
+                "Turn each letter into its alphabet position (A=1, B=2... Z=26)",
+                "Spot the rule that connects pair 1 to pair 2",
+                "Check the rule still works on the second pair",
+                "Apply the rule to the last pair to find the answer"
+              ],
+              feedback: {
+                correct: () => "Perfect! Convert → spot → check → apply. That's the recipe every time. ✓",
+                incorrect: () => "Almost — start by converting letters to numbers, then spot the rule, check it works, and only then apply it."
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn",
+            body: () => "Find the missing letter pair:\n\n**BD is to DF**\n**FH is to HJ**\n**JL is to ___**\n\nConvert to positions, spot the rule, check it, apply it.",
+            visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: () => ["KM", "LN", "MO", "LM", "KN"],
+              correctAnswer: () => "LN",
+              feedback: {
+                correct: () => "Brilliant! Both letters jump forward by 2. J(10)+2 = L(12), L(12)+2 = N(14). LN it is. ✓",
+                incorrect: () => "Not quite — both letters move forward by 2 in this puzzle. J(10)+2 = L, L(12)+2 = N. The answer is LN."
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Your position-analogy recipe",
+            body: () => "Every time you see an **'AB is to CD'** puzzle:\n\n**1. Convert** — turn every letter into its position (A=1 to Z=26). EJOTY helps: E=5, J=10, O=15, T=20, Y=25.\n\n**2. Spot** — how does the first letter change? How does the second? They may have different rules.\n\n**3. Check** — does the rule fit both pairs? If not, you've got the wrong rule.\n\n**4. Apply** — use the rule on the last pair for your answer.\n\nKeep the alphabet line in your head and you'll crack these every time.",
+            visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } }
+          }
+        ]
+      }
+    ]
+  },
 
 ];

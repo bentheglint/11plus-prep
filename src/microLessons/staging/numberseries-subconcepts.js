@@ -2034,6 +2034,198 @@ export const numberSeriesSubConcepts = [
         ]
       }
     ]
-  }
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: Middle Number Analogies
+  // Category: core
+  // Lesson: step-by-step
+  // Format: A (B) C  — three triplets share the same rule
+  // GL frequency: ~12 questions per 37-test CGP run (4-Q sections in 7 tests)
+  // D1 focus: multiply outers, add outers
+  // ==========================================
+  {
+    id: "middle-number-analogies",
+    name: "Middle Number Analogies",
+    category: "core",
+    lessons: [
+      {
+        id: "middle-number-analogies-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to spot the rule that connects the outer two numbers to the middle number — the heart of every middle-number puzzle",
+          "How to use the 'Check All Three' method: test your rule on every triplet before trusting it"
+        ],
+        variableSets: [
+          {
+            // RULE: multiply outers → middle
+            // 3×6=18 ✓, 4×5=20 ✓, 2×6=12 ✓ — interact 5×7=35 ✓
+            name: "Daisy",
+            scenario: "working through a VR practice paper",
+            teachLeft: [3, 4, 2],
+            teachMiddle: [18, 20, 12],
+            teachRight: [6, 5, 6],
+            rule: "multiply",
+            ruleSymbol: "×",
+            ruleDescription: "multiply the outer numbers together",
+            ruleRecipe: "outer × outer = middle",
+            interactLeft: 5,
+            interactRight: 7,
+            interactAnswer: 35,
+            interactOptions: ["30", "32", "35", "40", "42"],
+            interactCorrectAnswer: "35",
+            interactExplanation: "5 × 7 = 35. The rule is: multiply the two outer numbers to get the middle. ✓"
+          },
+          {
+            // RULE: add outers → middle
+            // 4+5=9 ✓, 7+3=10 ✓, 6+8=14 ✓ — interact 9+6=15 ✓
+            name: "Oliver",
+            scenario: "practising number puzzles at his desk",
+            teachLeft: [4, 7, 6],
+            teachMiddle: [9, 10, 14],
+            teachRight: [5, 3, 8],
+            rule: "add",
+            ruleSymbol: "+",
+            ruleDescription: "add the outer numbers together",
+            ruleRecipe: "outer + outer = middle",
+            interactLeft: 9,
+            interactRight: 6,
+            interactAnswer: 15,
+            interactOptions: ["12", "13", "15", "18", "21"],
+            interactCorrectAnswer: "15",
+            interactExplanation: "9 + 6 = 15. The rule is: add the two outer numbers to get the middle. ✓"
+          },
+          {
+            // RULE: multiply outers → middle (smaller numbers)
+            // 2×4=8 ✓, 3×5=15 ✓, 4×6=24 ✓ — interact 3×8=24 ✓
+            name: "Priya",
+            scenario: "solving VR questions before school",
+            teachLeft: [2, 3, 4],
+            teachMiddle: [8, 15, 24],
+            teachRight: [4, 5, 6],
+            rule: "multiply",
+            ruleSymbol: "×",
+            ruleDescription: "multiply the outer numbers together",
+            ruleRecipe: "outer × outer = middle",
+            interactLeft: 3,
+            interactRight: 8,
+            interactAnswer: 24,
+            interactOptions: ["18", "21", "24", "27", "32"],
+            interactCorrectAnswer: "24",
+            interactExplanation: "3 × 8 = 24. The rule is: multiply the two outer numbers to get the middle. ✓"
+          },
+          {
+            // RULE: add outers → middle (larger numbers)
+            // 8+7=15 ✓, 11+9=20 ✓, 6+13=19 ✓ — interact 12+7=19 ✓
+            name: "Finn",
+            scenario: "racing through a timed VR paper",
+            teachLeft: [8, 11, 6],
+            teachMiddle: [15, 20, 19],
+            teachRight: [7, 9, 13],
+            rule: "add",
+            ruleSymbol: "+",
+            ruleDescription: "add the outer numbers together",
+            ruleRecipe: "outer + outer = middle",
+            interactLeft: 12,
+            interactRight: 7,
+            interactAnswer: 19,
+            interactOptions: ["15", "17", "19", "21", "24"],
+            interactCorrectAnswer: "19",
+            interactExplanation: "12 + 7 = 19. The rule is: add the two outer numbers to get the middle. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => `What's hiding in the middle?`,
+            body: (v) => `${v.name} is ${v.scenario} and spots this curious puzzle:\n\n**${v.teachLeft[0]} ( ${v.teachMiddle[0]} ) ${v.teachRight[0]}**\n\nThree numbers — but the middle one isn't just sitting there for decoration. It's the **answer to a secret rule** that uses the two outer numbers.\n\nYour mission: crack the rule, then use it to fill in a missing middle. **You've got this!**`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Triplet 1:   ${v.teachLeft[0]}   (   ${v.teachMiddle[0]}   )   ${v.teachRight[0]}`, why: "The outer numbers somehow make the middle" },
+                  { text: `Triplet 2:   ${v.teachLeft[1]}   (   ${v.teachMiddle[1]}   )   ${v.teachRight[1]}`, why: "Same rule should work here too" },
+                  { text: `Triplet 3:   ${v.teachLeft[2]}   (   ${v.teachMiddle[2]}   )   ${v.teachRight[2]}`, why: "Confirm the pattern — then you're ready!" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Find the rule, then check all three",
+            body: (v) => `Let's crack triplet 1: **${v.teachLeft[0]} ( ${v.teachMiddle[0]} ) ${v.teachRight[0]}**. Could we **${v.ruleDescription}**? Let's test it — and if it works, we MUST check it on every triplet before we trust it.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Try the rule on triplet 1: ${v.teachLeft[0]} ${v.ruleSymbol} ${v.teachRight[0]} = ${v.teachMiddle[0]}`, why: `That matches the middle — promising!` },
+                  { text: `Check triplet 2: ${v.teachLeft[1]} ${v.ruleSymbol} ${v.teachRight[1]} = ${v.teachMiddle[1]}`, why: "Same rule, still works — getting confident!" },
+                  { text: `Check triplet 3: ${v.teachLeft[2]} ${v.ruleSymbol} ${v.teachRight[2]} = ${v.teachMiddle[2]}`, why: `Three out of three — the rule is confirmed: **${v.ruleRecipe}** ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: () => [
+                `Try a rule on the first triplet`,
+                `Check that the same rule works on the other triplets`,
+                `Apply the rule to find the missing middle number`
+              ],
+              feedback: {
+                correct: () => `Spot on! Find a rule, check it on all three, THEN apply it. ✓`,
+                incorrect: () => `Not quite — find a rule, check every triplet, then apply it last.`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn — find the middle!",
+            body: (v) => `Here are three triplets that all follow the same rule:\n\n**${v.teachLeft[0]} ( ${v.teachMiddle[0]} ) ${v.teachRight[0]}**\n**${v.teachLeft[1]} ( ${v.teachMiddle[1]} ) ${v.teachRight[1]}**\n**${v.interactLeft} ( ? ) ${v.interactRight}**\n\nThe rule is: **${v.ruleRecipe}**. What's the missing middle number?`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Triplet 1:   ${v.teachLeft[0]}   (   ${v.teachMiddle[0]}   )   ${v.teachRight[0]}`, why: `${v.teachLeft[0]} ${v.ruleSymbol} ${v.teachRight[0]} = ${v.teachMiddle[0]} ✓` },
+                  { text: `Triplet 2:   ${v.teachLeft[1]}   (   ${v.teachMiddle[1]}   )   ${v.teachRight[1]}`, why: `${v.teachLeft[1]} ${v.ruleSymbol} ${v.teachRight[1]} = ${v.teachMiddle[1]} ✓` },
+                  { text: `Triplet 3:   ${v.interactLeft}   (   ?   )   ${v.interactRight}`, why: `Apply the rule: ${v.interactLeft} ${v.ruleSymbol} ${v.interactRight} = ?` }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! The answer is ${v.interactCorrectAnswer}. ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The Middle Number Method — your recipe",
+            body: () => `Three triplets, one secret rule. Here's the recipe you'll use every time:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Look at the outer two numbers in triplet 1", why: "The middle is built from these" },
+                  { text: "2. Try a rule — start with × or +", why: "Multiply and add are the most common" },
+                  { text: "3. Check the rule on ALL three triplets", why: "If it works once, it must work every time ✓" },
+                  { text: "4. Apply the rule to find the missing middle", why: "Same rule, one more time — you've cracked it!" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
 
 ];

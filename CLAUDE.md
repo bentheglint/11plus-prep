@@ -120,6 +120,18 @@ See `Master_Brief_v7_0.md` for the full feature map.
 - When creating SVGs, follow the locked templates in memory files
 - **The Oracle writes ALL new question content.** Claude handles mechanical fixes (index corrections, formatting, file operations) but the 11plus-oracle agent must write any new questions, replacement questions, word sets, distractors, answer options, or explanations. The Oracle has the GL research library; Claude does not. This rule exists because Claude-written content has repeatedly needed correction.
 
+## D1 Migration Rules — Read Before Touching `workers/ai-tutor/migrations/`
+
+**Before any D1 schema change, read `workers/ai-tutor/docs/migration-playbook.md`.**
+
+The 27 April 2026 incident wiped six accounts' worth of data because a migration `DROP TABLE`d a foreign-key parent and `PRAGMA foreign_keys = OFF` is silently ignored by D1. The playbook codifies the hard-learned rules:
+
+- **Never `DROP TABLE accounts` or `DROP TABLE children`.** Both are FK parents. D1 will cascade-delete every downstream row regardless of `PRAGMA` settings.
+- **`PRAGMA foreign_keys = OFF` is a lie on D1.** Don't rely on it.
+- **Every migration must be staging-tested against a real snapshot first.** Build a SQLite copy from `wrangler d1 export`, apply the migration, run row-count assertions. If anything is unexpected, stop.
+- **Take a fresh production snapshot immediately before applying any migration to prod.** Cost: 30 seconds. It's your rollback point.
+- **Recovery toolkit in `scripts/recovery/`** has the merge-SQL pattern from the 27 April recovery, in case it ever happens again.
+
 ## Installed Skills
 
 ### Skill Creator (`.claude/skills/skill-creator/`)

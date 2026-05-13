@@ -2674,5 +2674,58 @@ export const logicAndLanguageSubConcepts = [
     ]
   },
 
-  
+{
+    id: "multi-attribute-logic",
+    name: "Multi-Attribute Logic",
+    category: "core",
+    lessons: [
+      {
+        id: "multi-attribute-logic-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to use clues to match people to attributes in a logic grid",
+          "How to use elimination to rule out impossible combinations"
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "Five friends, five mysteries",
+            body: () => "Imagine five friends standing in a line. Each one wears a different colour jumper. You don't know who wears what — but you have a handful of **clues**.\n\nYour job? Work it out like a detective. Match every clue to a person until only one answer fits.\n\nThis is **multi-attribute logic** — and it's one of the most satisfying puzzles in the whole 11+ paper.",
+            visual: null,
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The detective's three steps",
+            body: () => "Here's the trick the best 11+ pupils use:\n\n**Step 1 — Lock in the certainties.** Read every clue that says 'X is Y' first. Write those down straight away.\n\n**Step 2 — Use elimination.** When you know four out of five answers, the fifth person must get the leftover answer. No clue needed.\n\n**Step 3 — Check 'not' clues last.** A clue like 'Bea does not have the cat' doesn't tell you what Bea HAS — but it removes one option from her list. Use it to narrow things down.\n\nThe rule of thumb: if you're stuck, **write everything down**. Don't try to hold it in your head.",
+            visual: null,
+            interaction: null
+          },
+          {
+            type: "interact",
+            title: () => "Your turn, detective",
+            body: () => "Five children each chose a different fruit: **apple, banana, cherry, date, elderberry**.\n\nClue 1: Tom chose the apple.\nClue 2: Sara chose the banana.\nClue 3: Liam chose the cherry.\nClue 4: Mia did not choose the elderberry.\n\nWhich fruit did Noah choose?",
+            visual: null,
+            interaction: {
+              type: "multiple-choice",
+              getOptions: () => ["Apple", "Banana", "Cherry", "Date", "Elderberry"],
+              correctAnswer: () => "Elderberry",
+              feedback: {
+                correct: () => "Brilliant detective work. Tom, Sara and Liam are locked in. That leaves date and elderberry for Mia and Noah — and since Mia didn't pick elderberry, Noah did. ✓",
+                incorrect: () => "Nearly. Three children are already locked in (Tom=apple, Sara=banana, Liam=cherry). Only date and elderberry are left, for Mia and Noah. Mia didn't choose elderberry — so Noah must have. ✓"
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "You've cracked the code",
+            body: () => "Multi-attribute logic puzzles look scary at first — five people, six clues, three attributes — but they always reward the same approach:\n\n**Lock in the certainties. Eliminate the impossibilities. Use the leftovers.**\n\nWhen you see a logic puzzle in the exam, take a deep breath, grab your pencil, and write a tiny grid in the margin. The clues will do the work for you.\n\nReady to try a few on your own? Let's go. ✓",
+            visual: null,
+            interaction: null
+          }
+        ]
+      }
+    ]
+  },
+
 ];

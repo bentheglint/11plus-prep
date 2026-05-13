@@ -39,6 +39,7 @@ import { numberWordCodesSubConcepts } from './staging/numberwordcodes-subconcept
 import { numberSeriesSubConcepts } from './staging/numberseries-subconcepts';
 import { letterSumsSubConcepts } from './staging/lettersums-subconcepts';
 import { logicAndLanguageSubConcepts } from './staging/logicandlanguage-subconcepts';
+import { balanceEquationsSubConcepts } from './staging/balanceequations-subconcepts';
 
 // ============================================================
 // Micro-Lesson Data — Long Multiplication (Phase 1)
@@ -11817,6 +11818,7 @@ export const lessonBank = {
                 template: "CH _ _ TER",
                 missingLetters: "AP",
                 fullWord: "CHAPTER",
+                wordHint: "a section of a book",
                 letterCount: "2 missing letters",
                 options: ["AP", "AR", "AT", "AN", "AS"],
                 correctAnswer: "AP",
@@ -11833,6 +11835,7 @@ export const lessonBank = {
                 template: "PL _ _ TED",
                 missingLetters: "AN",
                 fullWord: "PLANTED",
+                wordHint: "put a seed in the ground",
                 letterCount: "2 missing letters",
                 options: ["AN", "AT", "OT", "AI", "EA"],
                 correctAnswer: "AN",
@@ -11849,6 +11852,7 @@ export const lessonBank = {
                 template: "S _ _ ING",
                 missingLetters: "PR",
                 fullWord: "SPRING",
+                wordHint: "the season after winter, when flowers bloom",
                 letterCount: "2 missing letters",
                 options: ["PR", "TR", "TI", "WI", "LI"],
                 correctAnswer: "PR",
@@ -11865,6 +11869,7 @@ export const lessonBank = {
                 template: "W _ _ DOW",
                 missingLetters: "IN",
                 fullWord: "WINDOW",
+                wordHint: "an opening in a wall, often filled with glass",
                 letterCount: "2 missing letters",
                 options: ["IN", "ID", "IS", "IL", "IT"],
                 correctAnswer: "IN",
@@ -11881,6 +11886,7 @@ export const lessonBank = {
                 template: "G _ _ DEN",
                 missingLetters: "AR",
                 fullWord: "GARDEN",
+                wordHint: "a piece of ground used for growing flowers or vegetables",
                 letterCount: "2 missing letters",
                 options: ["AR", "OL", "UR", "AI", "OR"],
                 correctAnswer: "AR",
@@ -11897,6 +11903,7 @@ export const lessonBank = {
                 template: "B _ _ KET",
                 missingLetters: "AS",
                 fullWord: "BASKET",
+                wordHint: "a container with a handle, used for carrying things",
                 letterCount: "2 missing letters",
                 options: ["AS", "UC", "LA", "IS", "AN"],
                 correctAnswer: "AS",
@@ -11913,6 +11920,7 @@ export const lessonBank = {
                 template: "T _ _ ASURE",
                 missingLetters: "RE",
                 fullWord: "TREASURE",
+                wordHint: "a hoard of valuable items, like gold and jewels",
                 letterCount: "2 missing letters",
                 options: ["RE", "RI", "RA", "RO", "RU"],
                 correctAnswer: "RE",
@@ -11930,6 +11938,7 @@ export const lessonBank = {
                 template: "K _ _ WLEDGE",
                 missingLetters: "NO",
                 fullWord: "KNOWLEDGE",
+                wordHint: "what you know — facts and understanding",
                 letterCount: "2 missing letters",
                 options: ["NO", "NA", "NI", "NU", "NE"],
                 correctAnswer: "NO",
@@ -12028,7 +12037,7 @@ export const lessonBank = {
               {
                 type: "interact",
                 title: () => "Your turn — fill in the blanks!",
-                body: (v) => `Use the 3 steps: **Read → Try → Say**\n\n**${v.template}**`,
+                body: (v) => `Use the 3 steps: **Read → Try → Say**\n\n**${v.template}**\n\nClue: ${v.wordHint}`,
                 visual: {
                   component: "LetterTiles",
                   props: (v) => ({
@@ -14520,6 +14529,14 @@ export const lessonBank = {
       ...logicAndLanguageSubConcepts
     ]
   },
+
+  // ---- VR TOPIC 17: Balance Equations ----
+  balanceEquations: {
+    name: "Balance Equations",
+    subConcepts: [
+      ...balanceEquationsSubConcepts
+    ]
+  },
 };
 
 // === MERGE STAGING SUB-CONCEPTS INTO LESSON BANK ===
@@ -14563,6 +14580,7 @@ const stagingMap = {
   numberSeries: numberSeriesSubConcepts,
   letterSums: letterSumsSubConcepts,
   logicAndLanguage: logicAndLanguageSubConcepts,
+  balanceEquations: balanceEquationsSubConcepts,
 };
 
 for (const [key, stagingSCs] of Object.entries(stagingMap)) {
@@ -14620,6 +14638,7 @@ export const testSubConceptBank = {
   numberSeries: numberSeriesSubConcepts,
   letterSums: letterSumsSubConcepts,
   logicAndLanguage: logicAndLanguageSubConcepts,
+  balanceEquations: balanceEquationsSubConcepts,
 };
 
 export function selectLesson(topicKey, topicPerformance, lessonHistory, currentUser) {

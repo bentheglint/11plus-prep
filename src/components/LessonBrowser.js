@@ -3,7 +3,7 @@ import { ChevronDown, ChevronRight, BookOpen, CheckCircle, Circle } from 'lucide
 
 // Subject-to-topic mapping
 const ENGLISH_TOPICS = new Set(['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension']);
-const VR_TOPICS = new Set(['synonyms', 'antonyms', 'oddTwoOut', 'verbalAnalogies', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'sharedLetter', 'letterCodes', 'letterPairSeries', 'wordCodeAnalogies', 'numberWordCodes', 'numberSeries', 'letterSums', 'logicAndLanguage']);
+const VR_TOPICS = new Set(['synonyms', 'antonyms', 'oddTwoOut', 'verbalAnalogies', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'sharedLetter', 'letterCodes', 'letterPairSeries', 'wordCodeAnalogies', 'numberWordCodes', 'numberSeries', 'letterSums', 'logicAndLanguage', 'balanceEquations']);
 
 function getSubjectForTopic(topicKey) {
   if (ENGLISH_TOPICS.has(topicKey)) return 'english';

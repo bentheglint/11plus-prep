@@ -50,6 +50,9 @@ import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMod
 import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
+import CookieBanner from './components/CookieBanner';
+import Footer from './components/Footer';
+import { setCurrentView as setErrorBoundaryView } from './components/ErrorBoundary';
 import MistakesScreen from './screens/MistakesScreen';
 import ChildrenScreen from './screens/ChildrenScreen';
 import JoinScreen from './screens/JoinScreen';
@@ -175,6 +178,9 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     return 'home';
   });
 
+  // Keep error boundary view context in sync for Sentry error reports
+  React.useEffect(() => { setErrorBoundaryView(currentView); }, [currentView]);
+
   // Scroll to top whenever the view changes — otherwise new screens land
   // wherever the previous screen's scroll position was (flagged 15 Apr 2026
   // during Phase 10 walkthrough: Quiz Detail opened mid-page).
@@ -246,7 +252,8 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   const [showDidItHelp, setShowDidItHelp] = useState(false);
   const [drillDownTopic, setDrillDownTopic] = useState(null); // { subject, topicKey }
   const [selectedQuiz, setSelectedQuiz] = useState(null); // Quiz Detail View — selected row from Recent Activity
-  const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity'
+  const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity' | 'results'
+  const [lastCompletedQuiz, setLastCompletedQuiz] = useState(null); // post-quiz review entry
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
@@ -434,6 +441,65 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
       sessionId: quizSessionId.current, // correlates this quiz with its question_results rows
     };
     userData.saveQuizResult(newResult);
+    // Cache for ResultsScreen → QuizDetailScreen review jump
+    setLastCompletedQuiz(newResult);
+  };
+
+  // Find the lesson that teaches a given question, callable from anywhere
+  // that has the question + topicKey (live quiz uses this via handleFindLesson;
+  // review uses it via handleReviewFindLesson, no quiz round-trip).
+  const navigateToLessonFor = (question, topicKey) => {
+    if (!question || !topicKey) return false;
+    const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
+    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms', 'balanceEquations'];
+    let mappingSource = 'maths';
+    if (englishTopics.includes(topicKey)) mappingSource = 'english';
+    if (vrTopics.includes(topicKey)) mappingSource = 'vr';
+
+    const topicMappings = questionMappings[mappingSource]?.[topicKey];
+    if (!topicMappings) return false;
+    const entries = Array.isArray(topicMappings) ? topicMappings : Object.values(topicMappings);
+    const mapping = entries.find(e => e.questionId === question.id);
+    if (!mapping || !mapping.subConceptId) return false;
+
+    const topicLessons = lessonBank[topicKey];
+    if (!topicLessons) return false;
+    const allSubConcepts = topicLessons.subConcepts || [];
+    const subConcept = allSubConcepts.find(sc => sc.id === mapping.subConceptId);
+    if (!subConcept || !subConcept.lessons || subConcept.lessons.length === 0) return false;
+
+    const teachingLesson = subConcept.lessons.find(l => l.templateType === 'step-by-step') || subConcept.lessons[0];
+    if (!teachingLesson || !teachingLesson.variableSets || teachingLesson.variableSets.length === 0) return false;
+
+    const varSet = teachingLesson.variableSets[Math.floor(Math.random() * teachingLesson.variableSets.length)];
+    const interactVarSet = teachingLesson.variableSets.length > 1
+      ? teachingLesson.variableSets.find(v => v !== varSet) || varSet
+      : varSet;
+
+    setForcedLessonResult({
+      lesson: teachingLesson,
+      variables: varSet,
+      interactVariables: interactVarSet,
+      subConceptId: mapping.subConceptId,
+      subConceptName: subConcept.name || mapping.subConceptId,
+      topicName: topicLessons.name || topicKey,
+    });
+    setCurrentView('lesson');
+    return true;
+  };
+
+  // Called from ResultsScreen "Review questions" button.
+  const handleReviewQuiz = () => {
+    if (!lastCompletedQuiz) return;
+    setSelectedQuiz(lastCompletedQuiz);
+    setQuizDetailReturnTo('results');
+    setCurrentView('quizDetail');
+  };
+
+  // Find Me a Lesson from inside the review screen — no quiz round-trip,
+  // user can use Back to return.
+  const handleReviewFindLesson = (question, topicKey) => {
+    navigateToLessonFor(question, topicKey);
   };
 
   const handleSubjectSelect = (subject) => {
@@ -866,7 +932,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
 
     // Determine which mapping file to use
     const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
-    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms'];
+    const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms', 'balanceEquations'];
     let mappingSource = 'maths';
     if (englishTopics.includes(topicKey)) mappingSource = 'english';
     if (vrTopics.includes(topicKey)) mappingSource = 'vr';
@@ -1441,7 +1507,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         setSelectedTopic(topicKey);
         // Determine subject for the topic
         const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension', 'antonyms', 'synonyms'];
-        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords'];
+        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'balanceEquations'];
         if (englishTopics.includes(topicKey)) setSelectedSubject('english');
         else if (vrTopics.includes(topicKey)) setSelectedSubject('verbalreasoning');
         else setSelectedSubject('maths');
@@ -1462,7 +1528,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         const topicKey = topic;
         // Find the subject for this topic
         const englishTopics = ['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension'];
-        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms'];
+        const vrTopics = ['hiddenWords', 'letterCodes', 'letterMove', 'letterPairSeries', 'letterSums', 'logicAndLanguage', 'missingLettersWords', 'numberSeries', 'numberWordCodes', 'oddTwoOut', 'sharedLetter', 'verbalAnalogies', 'wordCodeAnalogies', 'compoundWords', 'antonyms', 'synonyms', 'balanceEquations'];
         let subject = 'maths';
         if (englishTopics.includes(topicKey)) subject = 'english';
         if (vrTopics.includes(topicKey)) subject = 'verbalreasoning';
@@ -2091,6 +2157,8 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onRetry={handleRetry}
         onChooseTopic={() => setCurrentView(quizMode === 'daily' ? 'learningMode' : 'topics')}
         onHome={handleHome}
+        canReview={!!lastCompletedQuiz?.sessionId}
+        onReviewQuiz={handleReviewQuiz}
       />
     );
   }
@@ -2175,13 +2243,19 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
   }
 
   if (currentView === 'quizDetail') {
+    const isPostQuizReview = quizDetailReturnTo === 'results';
     return (
       <QuizDetailScreen
         quiz={selectedQuiz}
         questionResults={questionResults}
+        inMemoryResults={isPostQuizReview ? questionResults : undefined}
         questionData={mathsData}
         englishData={englishData}
         vrData={vrData}
+        quizVisualComponents={quizVisualComponents}
+        landOn={isPostQuizReview ? 'first-wrong' : undefined}
+        autoOpenTutor={isPostQuizReview}
+        onFindLesson={handleReviewFindLesson}
         onBack={() => {
           setSelectedQuiz(null);
           setCurrentView(quizDetailReturnTo);
@@ -2192,12 +2266,15 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
 
   } // end renderView
 
+  const FOOTER_VIEWS = new Set(['home', 'topics', 'results', 'progress', 'mistakes', 'allActivity', 'topicDrillDown']);
+
   // ── Animated view wrapper ──
   return (
     <>
       <AnimatePresence mode="wait">
         <motion.div key={viewKey} {...viewTransition}>
           {renderView()}
+          {FOOTER_VIEWS.has(currentView) && <Footer />}
         </motion.div>
       </AnimatePresence>
       {pendingAchievement && (
@@ -2213,6 +2290,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           onStartFresh={startFreshFromPrompt}
         />
       )}
+      <CookieBanner />
     </>
   );
 }

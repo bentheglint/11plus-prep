@@ -3,8 +3,8 @@
 **Purpose:** what you need to configure in the Stripe dashboard, Cloudflare Workers, and the React app to bring the subscription flow online.
 
 **Flow summary (Option B):**
-- New user signs up → 7 days free access, no card required
-- Day 7+: user hits paywall, enters card via embedded Stripe Elements
+- New user signs up → 30 days free access, no card required
+- Day 30+: user hits paywall
 - On success: subscribed at £15/month, charged immediately
 - Cancel any time via Stripe Customer Portal
 - 14-day UK statutory cooling-off refund available (manual via Stripe dashboard)
@@ -142,7 +142,7 @@ Full list: https://docs.stripe.com/testing#cards
 
 ### End-to-end test checklist
 
-- [ ] Sign up a fresh test user → should get 7 days free access (no paywall)
+- [ ] Sign up a fresh test user → should get 30 days free access (no paywall)
 - [ ] Force trial expiry: use `wrangler d1 execute` to backdate `created_at` to 8 days ago
 - [ ] Reload app → SubscribeScreen appears
 - [ ] Enter `4242 4242 4242 4242` → subscription should confirm inline
@@ -207,13 +207,13 @@ npx wrangler d1 execute 11plus-user-data --remote \
   --command="UPDATE accounts SET is_comped=0 WHERE email='person@example.com';"
 ```
 
-The user will fall back to normal access rules — if they're past day 7 of their account age with no subscription, they'll hit the paywall on next load.
+The user will fall back to normal access rules — if they're past day 30 of their account age with no subscription, they'll hit the paywall on next load.
 
 ---
 
 ## 8. Known TODOs for later
 
-- **Email reminders (task #6 follow-up)** — email system is dormant. When activated, add a daily cron that emails users on day 6 of trial: "Add a card by tomorrow to keep learning." Currently the paywall just appears on day 7 with no warning.
+- **Email reminders (task #6 follow-up)** — email system is dormant. When activated, add trial-end email comms sequence (Day 1, 7, 14, 25, 30). Currently the paywall just appears on day 30 with no warning.
 - **Promo codes / coupons** — not wired yet. If ever needed, add via Stripe dashboard and pass `discounts: [{ coupon: '...' }]` to subscription create.
 - **Tax (UK VAT)** — £15 is tax-inclusive for B2C; verify Stripe tax settings match how Terms present the price.
 - **Refund flow** — 14-day cooling-off refunds are manual via Stripe dashboard. If volume grows, automate with a self-service refund route.

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import * as Sentry from '@sentry/react';
 import { ClerkProvider } from '@clerk/clerk-react';
 import '@fontsource-variable/dm-sans';
 import '@fontsource-variable/outfit';
@@ -12,6 +13,25 @@ import AuthGate from './components/AuthGate';
 import ErrorBoundary from './components/ErrorBoundary';
 import OfflineBanner from './components/OfflineBanner';
 import reportWebVitals from './reportWebVitals';
+
+if (process.env.REACT_APP_SENTRY_DSN) {
+  Sentry.init({
+    dsn: process.env.REACT_APP_SENTRY_DSN,
+    environment: process.env.NODE_ENV || 'production',
+    release: process.env.REACT_APP_VERSION,
+    // Errors only — no performance tracing (not needed at this scale)
+    tracesSampleRate: 0,
+    beforeSend(event) {
+      // Scrub PII before sending to Sentry — no emails, no child names
+      if (event.user) {
+        delete event.user.email;
+        delete event.user.ip_address;
+        delete event.user.username;
+      }
+      return event;
+    },
+  });
+}
 
 const CLERK_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';

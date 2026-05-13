@@ -1,0 +1,67 @@
+# Daily off-Cloudflare backup (Layer 1 of the data resilience plan v2).
+#
+# Exports production D1, encrypts asymmetrically with `age` (only the public
+# key is in CI — the private key never enters GitHub Actions), and uploads
+# to Backblaze B2 with Object Lock retention. Manifest captured at backup
+# time travels with the encrypted dump.
+#
+# Required GitHub repository secrets:
+#   CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID — wrangler auth
+#   B2_KEY_ID, B2_APPLICATION_KEY               — Backblaze upload credentials
+#   RESEND_API_KEY, RESEND_TO_EMAIL             — failure alerts
+#
+# On any failure: the script sends a Resend alert to RESEND_TO_EMAIL and
+# exits non-zero. The summary artefact is uploaded either way so a human
+# can debug after the fact.
+
+name: Daily off-Cloudflare backup (Layer 1)
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 02:00 UTC daily — 1h before the existing weekly drill
+  workflow_dispatch:     # manual trigger for ad-hoc test runs
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+      B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      RESEND_TO_EMAIL: ${{ secrets.RESEND_TO_EMAIL }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install wrangler globally
+        run: npm install -g wrangler@4.70.0
+
+      - name: Verify wrangler authentication
+        run: wrangler whoami
+
+      - name: Run daily backup
+        run: node scripts/process-gates/daily-backup.mjs
+
+      - name: Upload summary artefact
+        if: always()  # capture summary even on failure
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-backup-summary-${{ github.run_id }}
+          path: process-gate-artefacts/daily-backup-*.json
+          retention-days: 90
+          if-no-files-found: warn

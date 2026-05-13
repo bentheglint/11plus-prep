@@ -7269,7 +7269,7 @@ const vrData = {
           id: 131,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'to cut with scissors' is hidden across two of these words. Find the two words.",
+          question: "A 3-letter word meaning 'to slice with a knife' is hidden across two of these words. Find the two words.",
           options: ["Music","utility","room","was","tidy"],
           correctPair: [0,1],
           explanation: "The word CUT is hidden across 'MusiC' and 'UTility'. Take the last 1 letter of 'Music' (C) and the first 2 of 'utility' (UT) = CUT. ✓"
@@ -7386,7 +7386,7 @@ const vrData = {
           id: 144,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'anger' is hidden across two of these words. Find the two words.",
+          question: "A 5-letter word meaning 'the feeling of rage or fury' is hidden across two of these words. Find the two words.",
           options: ["The","gang","errand","took","long"],
           correctPair: [1,2],
           explanation: "The word ANGER is hidden across 'gANG' and 'ERrand'. Take the last 3 letters of 'gang' (ANG) and the first 2 of 'errand' (ER) = ANGER. ✓"
@@ -7432,9 +7432,9 @@ const vrData = {
           difficulty: 2,
           questionType: "select-two",
           question: "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
-          options: ["entire","historic","The","lake","froze"],
-          correctPair: [0,1],
-          explanation: "The word RICE is hidden across 'histoRIC' and 'Entire'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'entire' (E) = RICE. ✓"
+          options: ["The","historic","event","delighted","everyone"],
+          correctPair: [1,2],
+          explanation: "The word RICE is hidden across 'histoRIC' and 'Event'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'event' (E) = RICE. ✓"
         }
       ]
     },
@@ -8386,7 +8386,7 @@ const vrData = {
           id: 16,
           difficulty: 1,
           question: "Which three-letter word completes this longer word? FORE _ _ _",
-          options: ["MAX","MEN","MAN","MAT","MAP"],
+          options: ["MAX","TAX","MAN","MAT","MAP"],
           correct: 2,
           explanation: "The answer is MAN, making FOREMAN. A foreman is a person in charge of a group of workers. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
@@ -8401,7 +8401,7 @@ const vrData = {
         {
           id: 18,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ ROOM",
+          question: "Which three-letter word completes this longer word? _ _ _ HROOM",
           options: ["BIT","BET","BOT","BUT","BAT"],
           correct: 4,
           explanation: "The answer is BAT, making BATHROOM. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
@@ -8434,7 +8434,7 @@ const vrData = {
           id: 22,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ DEN",
-          options: ["BUR","RAN","JOR","GAR","TEN"],
+          options: ["FAR","RAN","JOR","GAR","TEN"],
           correct: 3,
           explanation: "The answer is GAR, making GARDEN. A garden is an area of ground used for growing flowers, fruit or vegetables. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
@@ -8450,7 +8450,7 @@ const vrData = {
           id: 24,
           difficulty: 1,
           question: "Which three-letter word completes this longer word? _ _ _ DLE",
-          options: ["CAN","TIL","MID","BIN","GRI"],
+          options: ["CAN","TIL","PAR","TAR","GRI"],
           correct: 0,
           explanation: "The answer is CAN, making CANDLE. A candle is a cylinder of wax with a wick that produces light when lit. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
         },
@@ -8546,9 +8546,9 @@ const vrData = {
           id: 36,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? _ _ _ RAGE",
-          options: ["AGE","ATE","ACE","AVE","AXE"],
+          options: ["AGE","ATE","ACE","BAR","AXE"],
           correct: 3,
-          explanation: "The answer is AVE, making AVERAGE. 'Ave' is short for avenue, a wide street. Average means the typical or middle amount. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "The answer is BAR, making BARRAGE. A 'bar' is a long piece of wood or metal. A 'barrage' is a heavy continuous attack — for example, a barrage of questions. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 37,
@@ -8561,10 +8561,10 @@ const vrData = {
         {
           id: 38,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ CRET",
-          options: ["TIP","JAR","MOB","HUB","SEC"],
-          correct: 4,
-          explanation: "The answer is SEC, making SECRET. A secret is something that is kept hidden from others. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ NING",
+          options: ["EVE","ODE","EBB","EWE","EEL"],
+          correct: 0,
+          explanation: "The answer is EVE, making EVENING. An 'eve' is the day or night before an important event, like Christmas Eve. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
         {
           id: 39,
@@ -8577,18 +8577,18 @@ const vrData = {
         {
           id: 40,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TUME",
-          options: ["COT","COW","COS","COB","COG"],
-          correct: 2,
-          explanation: "The answer is COS, making COSTUME. 'Cos' is a type of lettuce, or an informal way of saying 'because'. A costume is a set of clothes worn for a special occasion or performance. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ TUNE",
+          options: ["FOR","FAR","FUR","FIR","FAN"],
+          correct: 0,
+          explanation: "The answer is FOR, making FORTUNE. 'For' is a small, common word used to show purpose or reason. A fortune is a large amount of money or good luck. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
         {
           id: 41,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ASTER",
-          options: ["DIN","DIG","DIM","DIS","DIP"],
-          correct: 3,
-          explanation: "The answer is DIS, making DISASTER. 'Dis' means to show disrespect. A disaster is a sudden event causing great damage or suffering. Tip: Watch out for uncommon words that hide common three-letter words inside them! ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ ENNA",
+          options: ["AGE","ANT","ARM","ACE","ART"],
+          correct: 1,
+          explanation: "The answer is ANT, making ANTENNA. An ant is a small insect. An antenna is a long thin part on the head of an insect that helps it sense its surroundings — or a metal rod used for picking up TV or radio signals. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
         },
         {
           id: 42,
@@ -8601,10 +8601,10 @@ const vrData = {
         {
           id: 43,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ MANENT",
-          options: ["MOB","TIP","JAR","HUB","PER"],
-          correct: 4,
-          explanation: "The answer is PER, making PERMANENT. Permanent means lasting for an indefinitely long time. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Which three-letter word completes this longer word? _ _ _ TASTIC",
+          options: ["MAN","FAN","CAN","TAN","RAN"],
+          correct: 1,
+          explanation: "The answer is FAN, making FANTASTIC. A 'fan' is a device that moves air, or a person who admires something or someone. Fantastic means extraordinarily good or wonderful. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
         {
           id: 44,
@@ -8866,7 +8866,7 @@ const vrData = {
           id: 76,
           difficulty: 1,
           question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) MER",
-          options: ["CUP","JAM","SUM","TIP","HUB"],
+          options: ["CUP","PEN","SUM","TIP","HUB"],
           correct: 2,
           explanation: "The answer is SUM, making SUMMER. Summer is the warmest season of the year. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
         },
@@ -9153,10 +9153,10 @@ const vrData = {
         {
           id: 112,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nCOT ( _ _ _ ) E",
-          options: ["TAB","TAN","TAP","TAR","TAG"],
+          question: "Which three-letter word completes this longer word?\n\nCAB ( _ _ _ ) E",
+          options: ["BAR","BAT","BUG","BIN","BAG"],
           correct: 4,
-          explanation: "The three missing letters are T, A, G making the word TAG. The complete word is COTTAGE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "The three missing letters are B, A, G making the word BAG. The complete word is CABBAGE. Tip: Double letters are common traps — CABBAGE has two B's! ✓"
         },
         {
           id: 113,
@@ -11052,6 +11052,276 @@ const vrData = {
           options: ["SHIP","THIP","SGIP","SHJP","SHIO"],
           correct: 0,
           explanation: "Reverse +3: P+3=S, E+3=H, F+3=I, M+3=P = SHIP. Each letter in the word shifts by +3 positions in the alphabet. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
+        },
+        {
+          id: 167,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to CE\nEG is to GI\nIK is to ___",
+          options: ["KM", "JL", "LN", "KN", "JM"],
+          correct: 0,
+          explanation: "Look at the positions: A(1)C(3) becomes C(3)E(5) — both letters move forward by 2. Check the next pair: E(5)G(7) becomes G(7)I(9) — yes, both +2. Apply the rule to IK: I(9)+2 = K(11), K(11)+2 = M(13). The answer is KM. ✓"
+        },
+        {
+          id: 168,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAB is to DE\nGH is to JK\nMN is to ___",
+          options: ["OQ", "PQ", "OP", "QR", "NP"],
+          correct: 1,
+          explanation: "Positions: A(1)B(2) → D(4)E(5) — both letters move forward by 3. Check: G(7)H(8) → J(10)K(11) — yes, both +3. Apply to MN: M(13)+3 = P(16), N(14)+3 = Q(17). The answer is PQ. ✓"
+        },
+        {
+          id: 169,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBC is to DE\nFG is to HI\nJK is to ___",
+          options: ["KM", "MN", "LM", "LN", "KL"],
+          correct: 2,
+          explanation: "B(2)C(3) → D(4)E(5): both letters move forward by 2. F(6)G(7) → H(8)I(9): also +2. Apply to JK: J(10)+2 = L(12), K(11)+2 = M(13). The answer is LM. ✓"
+        },
+        {
+          id: 170,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAD is to BE\nEH is to FI\nIL is to ___",
+          options: ["JM", "JL", "KM", "JN", "KN"],
+          correct: 0,
+          explanation: "A(1)D(4) → B(2)E(5): both letters move forward by 1. E(5)H(8) → F(6)I(9): also +1. Apply to IL: I(9)+1 = J(10), L(12)+1 = M(13). The answer is JM. ✓"
+        },
+        {
+          id: 171,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBD is to DF\nFH is to HJ\nJL is to ___",
+          options: ["KM", "LN", "MO", "LM", "KN"],
+          correct: 1,
+          explanation: "B(2)D(4) → D(4)F(6): both letters move forward by 2. F(6)H(8) → H(8)J(10): also +2. Apply to JL: J(10)+2 = L(12), L(12)+2 = N(14). The answer is LN. ✓"
+        },
+        {
+          id: 172,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAE is to CG\nBF is to DH\nCG is to ___",
+          options: ["DH", "EH", "EI", "DI", "FJ"],
+          correct: 2,
+          explanation: "A(1)E(5) → C(3)G(7): both letters move forward by 2. B(2)F(6) → D(4)H(8): also +2. Apply to CG: C(3)+2 = E(5), G(7)+2 = I(9). The answer is EI. ✓"
+        },
+        {
+          id: 173,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to BD\nCE is to DF\nEG is to ___",
+          options: ["FH", "GI", "EH", "FG", "DH"],
+          correct: 0,
+          explanation: "A(1)C(3) → B(2)D(4): both letters move forward by 1. C(3)E(5) → D(4)F(6): also +1. Apply to EG: E(5)+1 = F(6), G(7)+1 = H(8). The answer is FH. ✓"
+        },
+        {
+          id: 174,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBE is to DG\nFI is to HK\nJM is to ___",
+          options: ["KN", "LO", "MP", "LN", "KO"],
+          correct: 1,
+          explanation: "B(2)E(5) → D(4)G(7): both letters move forward by 2. F(6)I(9) → H(8)K(11): also +2. Apply to JM: J(10)+2 = L(12), M(13)+2 = O(15). The answer is LO. ✓"
+        },
+        {
+          id: 175,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAB is to CD\nEF is to GH\nIJ is to ___",
+          options: ["JL", "MN", "KL", "JK", "LM"],
+          correct: 2,
+          explanation: "A(1)B(2) → C(3)D(4): both letters move forward by 2. E(5)F(6) → G(7)H(8): also +2. Apply to IJ: I(9)+2 = K(11), J(10)+2 = L(12). The answer is KL. ✓"
+        },
+        {
+          id: 176,
+          difficulty: 1,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to DF\nBD is to EG\nCE is to ___",
+          options: ["EG", "FG", "EH", "FH", "GI"],
+          correct: 3,
+          explanation: "A(1)C(3) → D(4)F(6): both letters move forward by 3. B(2)D(4) → E(5)G(7): also +3. Apply to CE: C(3)+3 = F(6), E(5)+3 = H(8). The answer is FH. ✓"
+        },
+        {
+          id: 177,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to CA\nBD is to DB\nEG is to ___",
+          options: ["GE", "FH", "EH", "GF", "HG"],
+          correct: 0,
+          explanation: "Look carefully: A(1)C(3) becomes C(3)A(1) — the two letters have swapped places. Check BD → DB: yes, the letters are swapped. Apply to EG: swap the letters to get GE. The rule is a position swap, not a shift. ✓"
+        },
+        {
+          id: 178,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAB is to ZY\nCD is to XW\nEF is to ___",
+          options: ["UV", "VU", "WV", "TU", "UT"],
+          correct: 1,
+          explanation: "Each letter is mirrored across the alphabet using position → 27 − position. A(1) → Z(26), B(2) → Y(25), C(3) → X(24), D(4) → W(23). Apply to EF: E(5) → 27−5 = V(22), F(6) → 27−6 = U(21). The answer is VU. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
+        },
+        {
+          id: 179,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAD is to BF\nCE is to DG\nEG is to ___",
+          options: ["FH", "GI", "FI", "GH", "EI"],
+          correct: 2,
+          explanation: "Watch each letter separately. First letters: A(1)→B(2) is +1, C(3)→D(4) is +1. Second letters: D(4)→F(6) is +2, E(5)→G(7) is +2. The rule is first letter +1, second letter +2. Apply to EG: E(5)+1 = F(6), G(7)+2 = I(9). The answer is FI. ✓"
+        },
+        {
+          id: 180,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBD is to FH\nCE is to GI\nDF is to ___",
+          options: ["HJ", "GH", "GJ", "HI", "IK"],
+          correct: 0,
+          explanation: "B(2)D(4) → F(6)H(8): both letters move forward by 4. Check: C(3)E(5) → G(7)I(9), also +4. Apply to DF: D(4)+4 = H(8), F(6)+4 = J(10). The answer is HJ. The bigger jump (+4) is what makes this trickier than D1. ✓"
+        },
+        {
+          id: 181,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAE is to BD\nBF is to CE\nCG is to ___",
+          options: ["DH", "DG", "DF", "EF", "CF"],
+          correct: 2,
+          explanation: "First letters: A(1)→B(2) is +1, B(2)→C(3) is +1. Second letters: E(5)→D(4) is −1, F(6)→E(5) is −1. One letter goes forward, the other goes back. Apply to CG: C(3)+1 = D(4), G(7)−1 = F(6). The answer is DF. ✓"
+        },
+        {
+          id: 182,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to BE\nBD is to CF\nCE is to ___",
+          options: ["DG", "DF", "EG", "EF", "DH"],
+          correct: 0,
+          explanation: "First letters move +1: A(1)→B(2), B(2)→C(3). Second letters move +2: C(3)→E(5), D(4)→F(6). Apply to CE: C(3)+1 = D(4), E(5)+2 = G(7). The answer is DG. Don't assume both letters follow the same rule! ✓"
+        },
+        {
+          id: 183,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAB is to BD\nCD is to DF\nEF is to ___",
+          options: ["GH", "FG", "GI", "FH", "EH"],
+          correct: 3,
+          explanation: "First letters move +1: A(1)→B(2), C(3)→D(4). Second letters move +2: B(2)→D(4), D(4)→F(6). Apply to EF: E(5)+1 = F(6), F(6)+2 = H(8). The answer is FH. ✓"
+        },
+        {
+          id: 184,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBD is to DH\nCE is to FI\nDF is to ___",
+          options: ["FK", "GH", "HJ", "HK", "GJ"],
+          correct: 2,
+          explanation: "First letters double their position: B(2)→D(4), C(3)→F(6), D(4)→H(8). Second letters move +4: D(4)→H(8), E(5)→I(9), F(6)→J(10). Apply to DF: D(4)×2 = H(8), F(6)+4 = J(10). The answer is HJ. ✓"
+        },
+        {
+          id: 185,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to EG\nBD is to FH\nCE is to ___",
+          options: ["FH", "GH", "HJ", "FI", "GI"],
+          correct: 4,
+          explanation: "Both letters move forward by 4: A(1)→E(5), C(3)→G(7); B(2)→F(6), D(4)→H(8). Apply to CE: C(3)+4 = G(7), E(5)+4 = I(9). The answer is GI. ✓"
+        },
+        {
+          id: 186,
+          difficulty: 2,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAB is to CE\nBC is to DF\nCD is to ___",
+          options: ["EG", "DF", "EF", "DG", "FH"],
+          correct: 0,
+          explanation: "First letters move +2: A(1)→C(3), B(2)→D(4). Second letters move +3: B(2)→E(5), C(3)→F(6). Apply to CD: C(3)+2 = E(5), D(4)+3 = G(7). The answer is EG. ✓"
+        },
+        {
+          id: 187,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAD is to DA\nBE is to EB\nCF is to ___",
+          options: ["DG", "GC", "CF", "FC", "FD"],
+          correct: 3,
+          explanation: "This is a position swap — the letters change places. A(1)D(4) → D(4)A(1): same letters, reversed. Check: B(2)E(5) → E(5)B(2). Apply to CF: swap to get F(6)C(3) = FC. The trap is to add a shift on top — the rule is just a swap. ✓"
+        },
+        {
+          id: 188,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBE is to DC\nCF is to ED\nDG is to ___",
+          options: ["EF", "FE", "FH", "EH", "GE"],
+          correct: 1,
+          explanation: "Two different rules! First letters move +2: B(2)→D(4), C(3)→E(5). Second letters move −2: E(5)→C(3), F(6)→D(4). Apply to DG: D(4)+2 = F(6), G(7)−2 = E(5). The answer is FE. ✓"
+        },
+        {
+          id: 189,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAF is to CD\nBG is to DE\nCH is to ___",
+          options: ["DF", "EG", "DG", "FD", "EF"],
+          correct: 4,
+          explanation: "First letters move +2: A(1)→C(3), B(2)→D(4). Second letters move −2: F(6)→D(4), G(7)→E(5). Apply to CH: C(3)+2 = E(5), H(8)−2 = F(6). The answer is EF. ✓"
+        },
+        {
+          id: 190,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBD is to EA\nCE is to FB\nDF is to ___",
+          options: ["GD", "FC", "GC", "GB", "HC"],
+          correct: 2,
+          explanation: "First letters move +3: B(2)→E(5), C(3)→F(6). Second letters move −3: D(4)→A(1), E(5)→B(2). Apply to DF: D(4)+3 = G(7), F(6)−3 = C(3). The answer is GC. ✓"
+        },
+        {
+          id: 191,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to FE\nBD is to GF\nCE is to ___",
+          options: ["GG", "HF", "GF", "HG", "FG"],
+          correct: 3,
+          explanation: "Two rules: first letters move +5 — A(1)→F(6), B(2)→G(7). Second letters move +2 — C(3)→E(5), D(4)→F(6). Apply to CE: C(3)+5 = H(8), E(5)+2 = G(7). The answer is HG. ✓"
+        },
+        {
+          id: 192,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAE is to BJ\nCG is to DL\nEI is to ___",
+          options: ["FJ", "FM", "FL", "GN", "FN"],
+          correct: 4,
+          explanation: "First letters move +1: A(1)→B(2), C(3)→D(4). Second letters move +5: E(5)→J(10), G(7)→L(12). Apply to EI: E(5)+1 = F(6), I(9)+5 = N(14). The answer is FN. ✓"
+        },
+        {
+          id: 193,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBF is to DJ\nCG is to EK\nDH is to ___",
+          options: ["FK", "EL", "GL", "FL", "EJ"],
+          correct: 3,
+          explanation: "First letters move +2: B(2)→D(4), C(3)→E(5). Second letters move +4: F(6)→J(10), G(7)→K(11). Apply to DH: D(4)+2 = F(6), H(8)+4 = L(12). The answer is FL. ✓"
+        },
+        {
+          id: 194,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAC is to ZX\nBD is to YW\nCE is to ___",
+          options: ["XW", "WV", "YV", "ZV", "XV"],
+          correct: 4,
+          explanation: "Each letter mirrors across the alphabet: position → 27 − position. A(1)→Z(26), C(3)→X(24), B(2)→Y(25), D(4)→W(23). Apply to CE: C(3) → 27−3 = X(24), E(5) → 27−5 = V(22). The answer is XV. Tip: In mirror codes, A=Z, B=Y, C=X and so on. The trick is that encoding and decoding use exactly the same rule! ✓"
+        },
+        {
+          id: 195,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nAE is to DI\nBF is to EJ\nCG is to ___",
+          options: ["EK", "FJ", "GK", "FK", "EL"],
+          correct: 3,
+          explanation: "First letters move +3: A(1)→D(4), B(2)→E(5). Second letters move +4: E(5)→I(9), F(6)→J(10). Apply to CG: C(3)+3 = F(6), G(7)+4 = K(11). The answer is FK. ✓"
+        },
+        {
+          id: 196,
+          difficulty: 3,
+          questionType: 'letter-codes',
+          question: "Find the missing letter pair:\n\nBD is to FB\nCE is to GC\nDF is to ___",
+          options: ["GE", "HE", "GD", "HC", "HD"],
+          correct: 4,
+          explanation: "First letters move +4: B(2)→F(6), C(3)→G(7). Second letters move −2: D(4)→B(2), E(5)→C(3). Apply to DF: D(4)+4 = H(8), F(6)−2 = D(4). The answer is HD. ✓"
         }
       ]
     },
@@ -13105,6 +13375,246 @@ const vrData = {
           options: ["65","63","66","62","64"],
           correct: 4,
           explanation: "The pattern is +9 each time. Also notice: digit sum is always 10 (1+9, 2+8, 3+7, 4+6, 5+5, 6+4). Tip: The digit sum staying constant is a bonus pattern — the main rule is still +9. ✓"
+        },
+        {
+          id: 100,
+          difficulty: 1,
+          question: "Find the missing number:\n\n3 (18) 6\n4 (20) 5\n2 ( ? ) 6",
+          options: ["8", "12", "10", "14", "11"],
+          correct: 1,
+          explanation: "Look at the first two triplets. 3 times 6 is 18, and 4 times 5 is 20 — so the middle number is always the two outer numbers multiplied together. For the third triplet, 2 times 6 is 12. ✓"
+        },
+        {
+          id: 101,
+          difficulty: 1,
+          question: "Find the missing number:\n\n2 (14) 7\n3 (15) 5\n4 ( ? ) 6",
+          options: ["22", "26", "24", "10", "25"],
+          correct: 2,
+          explanation: "2 times 7 is 14 and 3 times 5 is 15, so the rule is multiply the outers. 4 times 6 is 24. ✓"
+        },
+        {
+          id: 102,
+          difficulty: 1,
+          question: "Find the missing number:\n\n5 (10) 2\n3 (24) 8\n4 ( ? ) 7",
+          options: ["28", "27", "29", "26", "11"],
+          correct: 0,
+          explanation: "5 times 2 is 10 and 3 times 8 is 24, so the middle number is always the outers multiplied. 4 times 7 is 28. ✓"
+        },
+        {
+          id: 103,
+          difficulty: 1,
+          question: "Find the missing number:\n\n6 (18) 3\n4 (16) 4\n5 ( ? ) 6",
+          options: ["11", "25", "35", "28", "30"],
+          correct: 4,
+          explanation: "6 times 3 is 18 and 4 times 4 is 16, so the rule is to multiply the outer numbers. 5 times 6 is 30. ✓"
+        },
+        {
+          id: 104,
+          difficulty: 1,
+          question: "Find the missing number:\n\n2 (16) 8\n3 (27) 9\n7 ( ? ) 2",
+          options: ["9", "16", "12", "14", "15"],
+          correct: 3,
+          explanation: "2 times 8 is 16 and 3 times 9 is 27, so multiply the outers. 7 times 2 is 14. ✓"
+        },
+        {
+          id: 105,
+          difficulty: 1,
+          question: "Find the missing number:\n\n5 (12) 7\n4 (10) 6\n3 ( ? ) 8",
+          options: ["24", "10", "12", "13", "11"],
+          correct: 4,
+          explanation: "5 plus 7 is 12 and 4 plus 6 is 10, so the rule is to add the outers. 3 plus 8 is 11. ✓"
+        },
+        {
+          id: 106,
+          difficulty: 1,
+          question: "Find the missing number:\n\n8 (15) 7\n6 (14) 8\n9 ( ? ) 4",
+          options: ["36", "13", "12", "14", "15"],
+          correct: 1,
+          explanation: "8 plus 7 is 15 and 6 plus 8 is 14, so add the outers. 9 plus 4 is 13. ✓"
+        },
+        {
+          id: 107,
+          difficulty: 1,
+          question: "Find the missing number:\n\n6 (13) 7\n5 ( ? ) 9\n4 (12) 8",
+          options: ["45", "13", "14", "15", "12"],
+          correct: 2,
+          explanation: "The first and third triplets show the rule: 6 plus 7 is 13, and 4 plus 8 is 12. So the middle number is always the outers added. 5 plus 9 is 14. ✓"
+        },
+        {
+          id: 108,
+          difficulty: 1,
+          question: "Find the missing number:\n\n7 (16) 9\n5 (11) 6\n8 ( ? ) 6",
+          options: ["14", "13", "15", "48", "12"],
+          correct: 0,
+          explanation: "7 plus 9 is 16 and 5 plus 6 is 11, so add the outers. 8 plus 6 is 14. ✓"
+        },
+        {
+          id: 109,
+          difficulty: 1,
+          question: "Find the missing number:\n\n9 (17) 8\n6 ( ? ) 7\n5 (12) 7",
+          options: ["42", "14", "12", "13", "15"],
+          correct: 3,
+          explanation: "9 plus 8 is 17, and 5 plus 7 is 12, so the rule is to add the outers. 6 plus 7 is 13. ✓"
+        },
+        {
+          id: 110,
+          difficulty: 2,
+          question: "Find the missing number:\n\n9 (5) 4\n8 (3) 5\n10 ( ? ) 4",
+          options: ["14", "4", "7", "40", "6"],
+          correct: 4,
+          explanation: "9 take away 4 is 5, and 8 take away 5 is 3 — so the middle number is the difference between the outers. 10 take away 4 is 6. ✓"
+        },
+        {
+          id: 111,
+          difficulty: 2,
+          question: "Find the missing number:\n\n12 (4) 8\n15 (6) 9\n14 ( ? ) 5",
+          options: ["19", "8", "10", "9", "7"],
+          correct: 3,
+          explanation: "12 take away 8 is 4 and 15 take away 9 is 6, so the rule is to subtract. 14 take away 5 is 9. ✓"
+        },
+        {
+          id: 112,
+          difficulty: 2,
+          question: "Find the missing number:\n\n11 (3) 8\n13 (7) 6\n20 ( ? ) 12",
+          options: ["7", "8", "9", "32", "6"],
+          correct: 1,
+          explanation: "11 minus 8 is 3 and 13 minus 6 is 7, so subtract the smaller outer from the larger. 20 minus 12 is 8. ✓"
+        },
+        {
+          id: 113,
+          difficulty: 2,
+          question: "Find the missing number:\n\n16 (9) 7\n14 (8) 6\n17 ( ? ) 5",
+          options: ["12", "13", "11", "22", "10"],
+          correct: 0,
+          explanation: "16 take away 7 is 9 and 14 take away 6 is 8, so the rule is to subtract. 17 take away 5 is 12. ✓"
+        },
+        {
+          id: 114,
+          difficulty: 2,
+          question: "Find the missing number:\n\n6 (5) 4\n10 (8) 6\n12 ( ? ) 8",
+          options: ["20", "11", "9", "10", "4"],
+          correct: 3,
+          explanation: "6 plus 4 is 10, halved is 5. 10 plus 6 is 16, halved is 8. So add the outers and halve. For 12 and 8: 12 plus 8 is 20, halved is 10. ✓"
+        },
+        {
+          id: 115,
+          difficulty: 2,
+          question: "Find the missing number:\n\n8 (7) 6\n14 (11) 8\n16 ( ? ) 4",
+          options: ["20", "12", "11", "9", "10"],
+          correct: 4,
+          explanation: "8 plus 6 is 14, halved is 7. 14 plus 8 is 22, halved is 11. So add the outers then halve. 16 plus 4 is 20, halved is 10. ✓"
+        },
+        {
+          id: 116,
+          difficulty: 2,
+          question: "Find the missing number:\n\n20 (15) 10\n18 (13) 8\n22 ( ? ) 12",
+          options: ["34", "18", "17", "16", "19"],
+          correct: 2,
+          explanation: "20 plus 10 is 30, halved is 15. 18 plus 8 is 26, halved is 13. So add the outers and halve. 22 plus 12 is 34, halved is 17. ✓"
+        },
+        {
+          id: 117,
+          difficulty: 2,
+          question: "Find the missing number:\n\n12 (4) 3\n20 (5) 4\n18 ( ? ) 6",
+          options: ["4", "3", "6", "12", "9"],
+          correct: 1,
+          explanation: "12 divided by 3 is 4 and 20 divided by 4 is 5, so the rule is to divide the larger outer by the smaller. 18 divided by 6 is 3. ✓"
+        },
+        {
+          id: 118,
+          difficulty: 2,
+          question: "Find the missing number:\n\n24 (6) 4\n30 (5) 6\n28 ( ? ) 7",
+          options: ["4", "5", "3", "35", "21"],
+          correct: 0,
+          explanation: "24 divided by 4 is 6 and 30 divided by 6 is 5, so divide the larger outer by the smaller. 28 divided by 7 is 4. ✓"
+        },
+        {
+          id: 119,
+          difficulty: 2,
+          question: "Find the missing number:\n\n40 (8) 5\n36 (4) 9\n42 ( ? ) 7",
+          options: ["5", "7", "8", "49", "6"],
+          correct: 4,
+          explanation: "40 divided by 5 is 8 and 36 divided by 9 is 4, so divide the larger outer by the smaller. 42 divided by 7 is 6. ✓"
+        },
+        {
+          id: 120,
+          difficulty: 3,
+          question: "Find the missing number:\n\n3 (13) 4\n2 (11) 5\n4 ( ? ) 6",
+          options: ["24", "26", "23", "25", "27"],
+          correct: 3,
+          explanation: "3 times 4 is 12, plus 1 is 13. 2 times 5 is 10, plus 1 is 11. So multiply the outers then add 1. 4 times 6 is 24, plus 1 is 25. ✓"
+        },
+        {
+          id: 121,
+          difficulty: 3,
+          question: "Find the missing number:\n\n3 (17) 5\n4 (26) 6\n2 ( ? ) 7",
+          options: ["14", "15", "16", "17", "18"],
+          correct: 2,
+          explanation: "3 times 5 is 15, plus 2 is 17. 4 times 6 is 24, plus 2 is 26. So multiply the outers then add 2. 2 times 7 is 14, plus 2 is 16. ✓"
+        },
+        {
+          id: 122,
+          difficulty: 3,
+          question: "Find the missing number:\n\n5 (13) 2\n4 (15) 3\n6 ( ? ) 3",
+          options: ["18", "19", "22", "20", "21"],
+          correct: 4,
+          explanation: "5 times 2 is 10, plus 3 is 13. 4 times 3 is 12, plus 3 is 15. So multiply the outers then add 3. 6 times 3 is 18, plus 3 is 21. ✓"
+        },
+        {
+          id: 123,
+          difficulty: 3,
+          question: "Find the missing number:\n\n4 (22) 5\n3 (20) 6\n7 ( ? ) 3",
+          options: ["21", "23", "24", "25", "22"],
+          correct: 1,
+          explanation: "4 times 5 is 20, plus 2 is 22. 3 times 6 is 18, plus 2 is 20. So multiply the outers then add 2. 7 times 3 is 21, plus 2 is 23. ✓"
+        },
+        {
+          id: 124,
+          difficulty: 3,
+          question: "Find the missing number:\n\n3 (12) 2\n4 (24) 3\n5 ( ? ) 4",
+          options: ["20", "45", "40", "42", "38"],
+          correct: 2,
+          explanation: "3 times 2 is 6, doubled is 12. 4 times 3 is 12, doubled is 24. So multiply the outers, then double. 5 times 4 is 20, doubled is 40. ✓"
+        },
+        {
+          id: 125,
+          difficulty: 3,
+          question: "Find the missing number:\n\n2 (20) 5\n3 (18) 3\n6 ( ? ) 4",
+          options: ["48", "24", "46", "50", "44"],
+          correct: 0,
+          explanation: "2 times 5 is 10, doubled is 20. 3 times 3 is 9, doubled is 18. So multiply the outers, then double. 6 times 4 is 24, doubled is 48. ✓"
+        },
+        {
+          id: 126,
+          difficulty: 3,
+          question: "Find the missing number:\n\n4 (16) 2\n5 (30) 3\n7 ( ? ) 2",
+          options: ["26", "30", "27", "28", "14"],
+          correct: 3,
+          explanation: "4 times 2 is 8, doubled is 16. 5 times 3 is 15, doubled is 30. So multiply the outers, then double. 7 times 2 is 14, doubled is 28. ✓"
+        },
+        {
+          id: 127,
+          difficulty: 3,
+          question: "Find the missing number:\n\n7 (9) 4\n8 (4) 6\n10 ( ? ) 6",
+          options: ["4", "16", "14", "8", "18"],
+          correct: 1,
+          explanation: "7 take away 4 is 3, and 3 squared is 9. 8 take away 6 is 2, and 2 squared is 4. So find the difference between the outers, then square it. 10 take away 6 is 4, and 4 squared is 16. ✓"
+        },
+        {
+          id: 128,
+          difficulty: 3,
+          question: "Find the missing number:\n\n9 (16) 5\n8 (25) 3\n11 ( ? ) 5",
+          options: ["30", "24", "36", "49", "25"],
+          correct: 2,
+          explanation: "9 take away 5 is 4, and 4 squared is 16. 8 take away 3 is 5, and 5 squared is 25. So subtract the outers, then square the answer. 11 take away 5 is 6, and 6 squared is 36. ✓"
+        },
+        {
+          id: 129,
+          difficulty: 3,
+          question: "Find the missing number:\n\n10 (9) 7\n12 (25) 7\n13 ( ? ) 6",
+          options: ["49", "56", "42", "48", "64"],
+          correct: 0,
+          explanation: "10 take away 7 is 3, and 3 squared is 9. 12 take away 7 is 5, and 5 squared is 25. So subtract the outers, then square. 13 take away 6 is 7, and 7 squared is 49. ✓"
         }
       ]
     },
@@ -16180,10 +16690,10 @@ const vrData = {
         {
           id: 114,
           difficulty: 2,
-          question: "In a code, PLOD = 4927. What word does 7294 stand for?",
-          options: ["DLOP","DPOL","DOPL","DOLP","DOPLL"],
-          correct: 3,
-          explanation: "From PLOD = 4927: P=4, L=9, O=2, D=7. So 7=D, 2=O, 9=L, 4=P → 7294 = DOLP. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
+          question: "In a code, TRAP = 1234. What word does 4321 stand for?",
+          options: ["TRAP","PRAT","PART","TAPR","RAPT"],
+          correct: 2,
+          explanation: "From TRAP = 1234: T=1, R=2, A=3, P=4. So 4=P, 3=A, 2=R, 1=T → 4321 = PART. Tip: Build a letter=number table as you go — cross-reference across all coded words. ✓"
         },
         {
           id: 115,
@@ -16272,6 +16782,246 @@ const vrData = {
           options: ["2635","2653","2365","2356","2563"],
           correct: 0,
           explanation: "From BROAD = 42635: B=4, R=2, O=6, A=3, D=5. Check BOARD: B(4) O(6) A(3) R(2) D(5) = 46325. Consistent! ROAD = R(2) O(6) A(3) D(5) = 2635. Tip: The codes are deliberately scrambled — never assume they match the word order! ✓"
+        },
+        {
+          id: 126,
+          difficulty: 1,
+          question: "In a code, CAT = 123. What word does 213 stand for?",
+          options: ["CAT", "TAC", "ACT", "ATC", "CTA"],
+          correct: 2,
+          explanation: "From CAT = 123: C=1, A=2, T=3. So 2=A, 1=C, 3=T and 213 = A,C,T = ACT. Tip: When decoding, write the letter under each digit before reading the word. ✓"
+        },
+        {
+          id: 127,
+          difficulty: 1,
+          question: "In a code, DOG = 456. What word does 654 stand for?",
+          options: ["DOG", "ODG", "GDO", "OGD", "GOD"],
+          correct: 4,
+          explanation: "From DOG = 456: D=4, O=5, G=6. So 6=G, 5=O, 4=D and 654 = G,O,D = GOD. Tip: Use elimination — if the first digit must give G, cross out options that do not start with G. ✓"
+        },
+        {
+          id: 128,
+          difficulty: 1,
+          question: "In a code, TAP = 234. What word does 432 stand for?",
+          options: ["TAP", "PAT", "APT", "ATP", "TPA"],
+          correct: 1,
+          explanation: "From TAP = 234: T=2, A=3, P=4. So 4=P, 3=A, 2=T and 432 = P,A,T = PAT. Tip: Check your answer by substituting back — does every letter match its number? ✓"
+        },
+        {
+          id: 129,
+          difficulty: 1,
+          question: "In a code, TOP = 678. What word does 876 stand for?",
+          options: ["TOP", "OPT", "OTP", "POT", "PTO"],
+          correct: 3,
+          explanation: "From TOP = 678: T=6, O=7, P=8. So 8=P, 7=O, 6=T and 876 = P,O,T = POT. Tip: Build a letter=number table as you go — the same letter always has the same number. ✓"
+        },
+        {
+          id: 130,
+          difficulty: 1,
+          question: "In a code, BUS = 159. What word does 951 stand for?",
+          options: ["SUB", "BUS", "USB", "BSU", "UBS"],
+          correct: 0,
+          explanation: "From BUS = 159: B=1, U=5, S=9. So 9=S, 5=U, 1=B and 951 = S,U,B = SUB. Tip: The codes are deliberately scrambled — never assume they match the word order. ✓"
+        },
+        {
+          id: 131,
+          difficulty: 1,
+          question: "In a code, NAP = 247. What word does 742 stand for?",
+          options: ["NAP", "APN", "PAN", "PNA", "ANP"],
+          correct: 2,
+          explanation: "From NAP = 247: N=2, A=4, P=7. So 7=P, 4=A, 2=N and 742 = P,A,N = PAN. Tip: Decode digit by digit — write the matching letter below each number. ✓"
+        },
+        {
+          id: 132,
+          difficulty: 1,
+          question: "In a code, TEA = 386. What word does 638 stand for?",
+          options: ["TEA", "EAT", "TAE", "AET", "ATE"],
+          correct: 4,
+          explanation: "From TEA = 386: T=3, E=8, A=6. So 6=A, 3=T, 8=E and 638 = A,T,E = ATE. Tip: Similar-looking options (ATE vs EAT) are deliberate traps — check each digit carefully. ✓"
+        },
+        {
+          id: 133,
+          difficulty: 1,
+          question: "In a code, WAR = 512. What word does 215 stand for?",
+          options: ["WAR", "RAW", "ARW", "RWA", "WRA"],
+          correct: 1,
+          explanation: "From WAR = 512: W=5, A=1, R=2. So 2=R, 1=A, 5=W and 215 = R,A,W = RAW. Tip: Start with the first digit — if the answer must begin with R, eliminate everything else. ✓"
+        },
+        {
+          id: 134,
+          difficulty: 1,
+          question: "In a code, CAR = 123. What word does 231 stand for?",
+          options: ["CAR", "RAC", "ACR", "ARC", "CRA"],
+          correct: 3,
+          explanation: "From CAR = 123: C=1, A=2, R=3. So 2=A, 3=R, 1=C and 231 = A,R,C = ARC. Tip: Substitute back to verify — A is 2, R is 3, C is 1, which gives 231. ✓"
+        },
+        {
+          id: 135,
+          difficulty: 2,
+          question: "In a code, STAR = 1234. What word does 4321 stand for?",
+          options: ["STAR", "RATS", "ARTS", "TARS", "TSAR"],
+          correct: 1,
+          explanation: "From STAR = 1234: S=1, T=2, A=3, R=4. So 4=R, 3=A, 2=T, 1=S and 4321 = R,A,T,S = RATS. Tip: Many anagrams of STAR are real words, so check the digit order carefully. ✓"
+        },
+        {
+          id: 136,
+          difficulty: 2,
+          question: "In a code, MEAT = 1234. What word does 4231 stand for?",
+          options: ["MEAT", "MATE", "TEAM", "TAME", "META"],
+          correct: 2,
+          explanation: "From MEAT = 1234: M=1, E=2, A=3, T=4. So 4=T, 2=E, 3=A, 1=M and 4231 = T,E,A,M = TEAM. Tip: The same four letters can spell several words — only the exact digit order gives the right one. ✓"
+        },
+        {
+          id: 137,
+          difficulty: 2,
+          question: "In a code, SLOW = 5712. What word does 1275 stand for?",
+          options: ["WOLS", "OWLS", "LOWS", "SLOW", "SOWL"],
+          correct: 1,
+          explanation: "From SLOW = 5712: S=5, L=7, O=1, W=2. So 1=O, 2=W, 7=L, 5=S and 1275 = O,W,L,S = OWLS. Tip: Look at the digits and find which letter each one represents before reading the word. ✓"
+        },
+        {
+          id: 138,
+          difficulty: 2,
+          question: "In a code, KEEP = 4886. What word does 6884 stand for?",
+          options: ["KEEP", "PEEK", "PEKE", "KEPE", "EPEK"],
+          correct: 1,
+          explanation: "From KEEP = 4886: K=4, E=8 (it appears twice), P=6. So 6=P, 8=E, 8=E, 4=K and 6884 = P,E,E,K = PEEK. Tip: Double letters in the clue word give you a double digit — a great anchor point. ✓"
+        },
+        {
+          id: 139,
+          difficulty: 2,
+          question: "In a code, NOSE = 1234. What word does 2143 stand for?",
+          options: ["NOSE", "ONES", "EONS", "NOES", "SONE"],
+          correct: 1,
+          explanation: "From NOSE = 1234: N=1, O=2, S=3, E=4. So 2=O, 1=N, 4=E, 3=S and 2143 = O,N,E,S = ONES. Tip: When two answers look close (ONES vs EONS), substitute the digits in order to be sure. ✓"
+        },
+        {
+          id: 140,
+          difficulty: 2,
+          question: "In a code, BRAIN = 12345. What word does 2345 stand for?",
+          options: ["BARN", "BRAN", "RAIN", "RANI", "NAIB"],
+          correct: 2,
+          explanation: "From BRAIN = 12345: B=1, R=2, A=3, I=4, N=5. So 2=R, 3=A, 4=I, 5=N and 2345 = R,A,I,N = RAIN. Tip: You do not need every letter from the clue word — only the digits in the target code. ✓"
+        },
+        {
+          id: 141,
+          difficulty: 2,
+          question: "In a code, PLANT = 12345. What word does 1345 stand for?",
+          options: ["PLAN", "PLAT", "PANT", "TANP", "PNAT"],
+          correct: 2,
+          explanation: "From PLANT = 12345: P=1, L=2, A=3, N=4, T=5. So 1=P, 3=A, 4=N, 5=T and 1345 = P,A,N,T = PANT. Tip: Skip the unused letter (L=2) — focus only on the digits that appear in your code. ✓"
+        },
+        {
+          id: 142,
+          difficulty: 2,
+          question: "In a code, STONE = 12345. What word does 23451 stand for?",
+          options: ["STONE", "TONES", "NOTES", "ONSET", "STEON"],
+          correct: 1,
+          explanation: "From STONE = 12345: S=1, T=2, O=3, N=4, E=5. So 2=T, 3=O, 4=N, 5=E, 1=S and 23451 = T,O,N,E,S = TONES. Tip: Other real words use the same letters (NOTES, ONSET) so check the order carefully. ✓"
+        },
+        {
+          id: 143,
+          difficulty: 2,
+          question: "In a code, SPOON = 12334. What word does 1334 stand for?",
+          options: ["OOPS", "SNOP", "SOON", "POOS", "PONS"],
+          correct: 2,
+          explanation: "From SPOON = 12334: S=1, P=2, O=3 (it appears twice), N=4. So 1=S, 3=O, 3=O, 4=N and 1334 = S,O,O,N = SOON. Tip: The repeated 3 in the code matches the repeated O in SPOON — a clear anchor. ✓"
+        },
+        {
+          id: 144,
+          difficulty: 2,
+          question: "In a code, TOOL = 1223. What word does 3221 stand for?",
+          options: ["TOOL", "LOOT", "OOLT", "TOLO", "OLOT"],
+          correct: 1,
+          explanation: "From TOOL = 1223: T=1, O=2 (it appears twice), L=3. So 3=L, 2=O, 2=O, 1=T and 3221 = L,O,O,T = LOOT. Tip: Reversing the digits of the clue often gives a real word — but always verify each digit. ✓"
+        },
+        {
+          id: 145,
+          difficulty: 2,
+          question: "In a code, FROST = 12345. What word does 4325 stand for?",
+          options: ["FORT", "SOFT", "SORT", "TORS", "ROTS"],
+          correct: 2,
+          explanation: "From FROST = 12345: F=1, R=2, O=3, S=4, T=5. So 4=S, 3=O, 2=R, 5=T and 4325 = S,O,R,T = SORT. Tip: All five options use letters from the clue word — only one matches the digits in the right order. ✓"
+        },
+        {
+          id: 146,
+          difficulty: 2,
+          question: "In a code, GRAPE = 12345. What word does 2315 stand for?",
+          options: ["PAGE", "RAGE", "GEAR", "PEAR", "REAP"],
+          correct: 1,
+          explanation: "From GRAPE = 12345: G=1, R=2, A=3, P=4, E=5. So 2=R, 3=A, 1=G, 5=E and 2315 = R,A,G,E = RAGE. Tip: Other anagrams (PAGE, REAP) are real words but match different digit orders — verify each digit. ✓"
+        },
+        {
+          id: 147,
+          difficulty: 2,
+          question: "In a code, BLAST = 12345 and BEAST = 16345. What word does 26345 stand for?",
+          options: ["BEATS", "BLEAT", "LEAST", "TABLE", "STEAL"],
+          correct: 2,
+          explanation: "Comparing BLAST and BEAST: B=1, A=3, S=4, T=5 are the same. Only the second letter changes (L vs E), so L=2 and E=6. Therefore 26345 = L,E,A,S,T = LEAST. Tip: When two clue words share most letters, the difference reveals new mappings. ✓"
+        },
+        {
+          id: 148,
+          difficulty: 3,
+          question: "In a code, SHARE = 72843 and SHEAR = 72384. What word does 23847 stand for?",
+          options: ["SHARE", "SHEAR", "HARES", "HEARS", "HARSE"],
+          correct: 3,
+          explanation: "From SHARE = 72843: S=7, H=2, A=8, R=4, E=3. Verify SHEAR = S(7) H(2) E(3) A(8) R(4) = 72384 ✓. So 2=H, 3=E, 8=A, 4=R, 7=S and 23847 = H,E,A,R,S = HEARS. Tip: Verify the mappings work for BOTH clue words before decoding. ✓"
+        },
+        {
+          id: 149,
+          difficulty: 3,
+          question: "In a code, PLATE = 24681 and PETAL = 21864. What word does 41628 stand for?",
+          options: ["PLATE", "PLEAT", "PETAL", "LEAPT", "TAPLE"],
+          correct: 3,
+          explanation: "From PLATE = 24681: P=2, L=4, A=6, T=8, E=1. Verify PETAL = P(2) E(1) T(8) A(6) L(4) = 21864 ✓. So 4=L, 1=E, 6=A, 2=P, 8=T and 41628 = L,E,A,P,T = LEAPT. Tip: The codes use non-sequential digits — never assume P is 1 just because it comes first. ✓"
+        },
+        {
+          id: 150,
+          difficulty: 3,
+          question: "In a code, SMART = 13579 and MARTS = 35791. What word does 3519 stand for?",
+          options: ["MARS", "MART", "RAMS", "MAST", "ARMS"],
+          correct: 3,
+          explanation: "From SMART = 13579: S=1, M=3, A=5, R=7, T=9. Verify MARTS = M(3) A(5) R(7) T(9) S(1) = 35791 ✓. So 3=M, 5=A, 1=S, 9=T and 3519 = M,A,S,T = MAST. Tip: All five options use only letters from the clue — the digits decide which one is correct. ✓"
+        },
+        {
+          id: 151,
+          difficulty: 3,
+          question: "In a code, TRAIN = 13524 and CORK = 6738. What is the code for CART?",
+          options: ["6135", "6513", "6531", "6351", "6315"],
+          correct: 2,
+          explanation: "From TRAIN = 13524: T=1, R=3, A=5, I=2, N=4. From CORK = 6738: C=6, O=7, K=8 (R=3 matches both clues). So CART = C(6) A(5) R(3) T(1) = 6531. Tip: When two clue words share a letter, its number must match in both — a useful consistency check. ✓"
+        },
+        {
+          id: 152,
+          difficulty: 3,
+          question: "In a code, FROST = 12345 and CLOUD = 67389. What is the code for COURT?",
+          options: ["63285", "63825", "63852", "63528", "62385"],
+          correct: 1,
+          explanation: "From FROST = 12345: F=1, R=2, O=3, S=4, T=5. From CLOUD = 67389: C=6, L=7, U=8, D=9 (O=3 matches both clues). So COURT = C(6) O(3) U(8) R(2) T(5) = 63825. Tip: Build the mapping table from BOTH clues before encoding the target word. ✓"
+        },
+        {
+          id: 153,
+          difficulty: 3,
+          question: "In a code, HORSE = 12345 and BAND = 6789. What word does 15739 stand for?",
+          options: ["HOARD", "BOARD", "HEARD", "BREAD", "HORDE"],
+          correct: 2,
+          explanation: "From HORSE = 12345: H=1, O=2, R=3, S=4, E=5. From BAND = 6789: B=6, A=7, N=8, D=9. So 1=H, 5=E, 7=A, 3=R, 9=D and 15739 = H,E,A,R,D = HEARD. Tip: Letters from different clue words combine — keep one master table for the whole question. ✓"
+        },
+        {
+          id: 154,
+          difficulty: 3,
+          question: "In a code, WATER = 39185 and POND = 4762. What word does 17385 stand for?",
+          options: ["POWER", "TOWER", "TREAD", "WATER", "ROWED"],
+          correct: 1,
+          explanation: "From WATER = 39185: W=3, A=9, T=1, E=8, R=5. From POND = 4762: P=4, O=7, N=6, D=2. So 1=T, 7=O, 3=W, 8=E, 5=R and 17385 = T,O,W,E,R = TOWER. Tip: Non-sequential codes feel awkward, but the mapping rules are the same — letter to digit, every time. ✓"
+        },
+        {
+          id: 155,
+          difficulty: 3,
+          question: "In a code, CHARM = 58372 and BRICK = 47156. What word does 23758 stand for?",
+          options: ["BIRCH", "CHARM", "CHAIR", "MARCH", "BRICK"],
+          correct: 3,
+          explanation: "From CHARM = 58372: C=5, H=8, A=3, R=7, M=2. Verify BRICK = B(4) R(7) I(1) C(5) K(6) = 47156 ✓ (R=7 and C=5 match both clues). So 2=M, 3=A, 7=R, 5=C, 8=H and 23758 = M,A,R,C,H = MARCH. Tip: Shared letters across clue words are anchors — they must give the same digit every time. ✓"
         }
       ]
     },
@@ -17863,6 +18613,246 @@ const vrData = {
           options: ["Red","Blue","Yellow","Green","Purple"],
           correct: 3,
           explanation: "Ben = blue, Dev = yellow. Remaining colours: red, green, purple for Amara, Cara, and Ella (5th child). Amara is not red or yellow, and blue and yellow are taken, so Amara = green or purple. Cara is not green, so if Amara = green, Cara gets red or purple, and the 5th child gets the other. Amara = green works. ✓"
+        },
+        {
+          id: 164,
+          difficulty: 1,
+          question: "Five children are standing in a line for lunch.\n\nClue 1: Amy is at the front of the line.\nClue 2: Ben is directly behind Amy.\nClue 3: Chloe is at the back of the line.\nClue 4: Dan is directly in front of Chloe.\n\nWho is in the middle of the line?",
+          options: ["Amy", "Ben", "Eve", "Dan", "Chloe"],
+          correct: 2,
+          explanation: "Amy is 1st and Ben is 2nd. Chloe is 5th and Dan is 4th. The only spot left is 3rd, and the only child unplaced is Eve, so Eve is in the middle. ✓"
+        },
+        {
+          id: 165,
+          difficulty: 1,
+          question: "Five friends each chose a different fruit: apple, banana, cherry, date and elderberry.\n\nClue 1: Tom chose the apple.\nClue 2: Sara chose the banana.\nClue 3: Liam chose the cherry.\nClue 4: Mia did not choose the elderberry.\n\nWhich fruit did Noah choose?",
+          options: ["Apple", "Banana", "Cherry", "Date", "Elderberry"],
+          correct: 4,
+          explanation: "Tom has apple, Sara has banana, Liam has cherry. That leaves date and elderberry for Mia and Noah. Mia did not choose elderberry, so Mia has the date. That means Noah chose the elderberry. ✓"
+        },
+        {
+          id: 166,
+          difficulty: 1,
+          question: "Five children each own a different colour bike: red, blue, green, yellow and white.\n\nClue 1: Holly owns the red bike.\nClue 2: Jack owns the blue bike.\nClue 3: Kate does not own the green bike.\nClue 4: Leo owns the yellow bike.\n\nWhat colour is Kate's bike?",
+          options: ["Red", "Blue", "Green", "Yellow", "White"],
+          correct: 4,
+          explanation: "Holly has red, Jack has blue, Leo has yellow. That leaves green and white for Kate and Max. Kate does not own green, so Kate owns white. ✓"
+        },
+        {
+          id: 167,
+          difficulty: 1,
+          question: "Five children each wear a different colour T-shirt: red, blue, green, yellow or white.\n\nClue 1: Amy wears the red T-shirt.\nClue 2: Ben wears the blue T-shirt.\nClue 3: Cara wears neither green nor yellow.\nClue 4: Dan wears the yellow T-shirt.\n\nWhat colour T-shirt does Eve wear?",
+          options: ["Red", "Blue", "Green", "Yellow", "White"],
+          correct: 2,
+          explanation: "Amy=red, Ben=blue, Dan=yellow. That leaves green and white for Cara and Eve. Cara is not green or yellow (clue 3), so Cara must wear white. The only colour left is green, so Eve wears green. Tip: When you cannot place someone directly, work out everyone else first — what is left must be theirs. ✓"
+        },
+        {
+          id: 168,
+          difficulty: 1,
+          question: "Five children each have a different pet: dog, cat, rabbit, hamster and fish.\n\nClue 1: Owen has the dog.\nClue 2: Phoebe has the cat.\nClue 3: Quinn has the rabbit.\nClue 4: Rosie does not have the fish.\n\nWhich pet does Seth have?",
+          options: ["Dog", "Cat", "Rabbit", "Hamster", "Fish"],
+          correct: 4,
+          explanation: "Owen has dog, Phoebe has cat, Quinn has rabbit. That leaves hamster and fish for Rosie and Seth. Rosie does not have the fish, so Rosie has the hamster. Seth has the fish. ✓"
+        },
+        {
+          id: 169,
+          difficulty: 1,
+          question: "Five girls each have a different favourite subject: maths, English, science, history and art.\n\nClue 1: Amelia loves maths.\nClue 2: Bea loves English.\nClue 3: Cara loves science.\nClue 4: Daisy does not love art.\n\nWhich subject does Ella love?",
+          options: ["Maths", "English", "Science", "History", "Art"],
+          correct: 4,
+          explanation: "Amelia has maths, Bea has English, Cara has science. That leaves history and art for Daisy and Ella. Daisy does not love art, so Daisy loves history. Ella loves art. ✓"
+        },
+        {
+          id: 170,
+          difficulty: 1,
+          question: "Five children finished a race in different positions: 1st, 2nd, 3rd, 4th and 5th.\n\nClue 1: Ivy came 1st.\nClue 2: Jed came 5th.\nClue 3: Kara came 2nd.\nClue 4: Lily came 4th.\n\nWho came 3rd?",
+          options: ["Ivy", "Jed", "Kara", "Lily", "Milo"],
+          correct: 4,
+          explanation: "Ivy is 1st, Kara is 2nd, Lily is 4th, Jed is 5th. The only position left is 3rd, and the only child unplaced is Milo. Milo came 3rd. ✓"
+        },
+        {
+          id: 171,
+          difficulty: 1,
+          question: "Five children each picked a different ice cream flavour: vanilla, chocolate, strawberry, mint and lemon.\n\nClue 1: Nina picked vanilla.\nClue 2: Otto picked chocolate.\nClue 3: Pia picked strawberry.\nClue 4: Rory did not pick lemon.\n\nWhich flavour did Tess pick?",
+          options: ["Vanilla", "Chocolate", "Strawberry", "Mint", "Lemon"],
+          correct: 4,
+          explanation: "Nina has vanilla, Otto has chocolate, Pia has strawberry. That leaves mint and lemon for Rory and Tess. Rory did not pick lemon, so Rory has mint. Tess has lemon. ✓"
+        },
+        {
+          id: 172,
+          difficulty: 1,
+          question: "Five children are different ages: 8, 9, 10, 11 and 12.\n\nClue 1: Alex is 8.\nClue 2: Beth is 12.\nClue 3: Cleo is 9.\nClue 4: Dex is older than Cleo but younger than Beth, and is not 10.\n\nHow old is Finn?",
+          options: ["8", "9", "10", "11", "12"],
+          correct: 2,
+          explanation: "Alex is 8, Cleo is 9, Beth is 12. Dex is older than 9, younger than 12, and not 10, so Dex is 11. The only age left is 10, so Finn is 10. ✓"
+        },
+        {
+          id: 173,
+          difficulty: 1,
+          question: "Five children each chose a different sport: football, tennis, swimming, cricket and rugby.\n\nClue 1: George chose football.\nClue 2: Harriet chose tennis.\nClue 3: Iris chose swimming.\nClue 4: Jasper did not choose rugby.\n\nWhich sport did Kit choose?",
+          options: ["Football", "Tennis", "Swimming", "Cricket", "Rugby"],
+          correct: 4,
+          explanation: "George has football, Harriet has tennis, Iris has swimming. That leaves cricket and rugby for Jasper and Kit. Jasper did not choose rugby, so Jasper chose cricket. Kit chose rugby. ✓"
+        },
+        {
+          id: 174,
+          difficulty: 2,
+          question: "Five children sit in a row, each wearing a different colour jumper: red, blue, green, yellow and white.\n\nClue 1: Anna sits in seat 1 and wears red.\nClue 2: The child in seat 3 wears blue.\nClue 3: Ben wears green and sits next to Anna.\nClue 4: Cleo sits in seat 5 and does not wear yellow.\nClue 5: Dan sits in seat 4.\n\nWhat colour jumper does Dan wear?",
+          options: ["Red", "Blue", "Green", "Yellow", "White"],
+          correct: 3,
+          explanation: "Anna is in seat 1 (red). Ben is next to Anna, so Ben is in seat 2 (green). Seat 3 is blue. Cleo is in seat 5 and does not wear yellow, so Cleo wears white. Dan is in seat 4. The fifth child, Eve, takes seat 3 (blue). Dan in seat 4 wears the remaining colour, yellow. ✓"
+        },
+        {
+          id: 175,
+          difficulty: 2,
+          question: "Five friends each have a different hat colour and a different scarf colour. The colours used are red, blue, green, yellow and purple for each item.\n\nClue 1: Fran's hat is red.\nClue 2: Gus's hat is the same colour as Fran's scarf.\nClue 3: Fran's scarf is blue.\nClue 4: Hugo's hat is green.\nClue 5: Iris's hat is yellow.\n\nWhat colour is Joe's hat?",
+          options: ["Red", "Blue", "Green", "Yellow", "Purple"],
+          correct: 4,
+          explanation: "Fran has red hat. Fran has blue scarf, so Gus has blue hat (clue 2). Hugo has green hat and Iris has yellow hat. Hats taken: red, blue, green, yellow. The only colour left is purple, so Joe has purple hat. ✓"
+        },
+        {
+          id: 176,
+          difficulty: 2,
+          question: "Five children stand in a line. Each has a different age: 8, 9, 10, 11 and 12.\n\nClue 1: Kira is at the front and is 10.\nClue 2: Leo is at the back and is 12.\nClue 3: The 8-year-old stands directly behind Kira.\nClue 4: Mia is 9 and stands directly in front of Leo.\nClue 5: Nico is older than the child in position 2.\n\nWhat is Nico's age?",
+          options: ["8", "9", "10", "11", "12"],
+          correct: 3,
+          explanation: "Kira is 1st (age 10). Leo is 5th (age 12). Position 2 is the 8-year-old (clue 3). Mia (age 9) is 4th, directly in front of Leo. Remaining positions 2 and 3 go to Nico and Owen. Nico is older than the 8-year-old in position 2, so Owen is 8 (position 2) and Nico is 11 (position 3). Nico is 11. ✓"
+        },
+        {
+          id: 177,
+          difficulty: 2,
+          question: "Five children each have a different drink (apple juice, orange juice, milk, water or lemonade) in a different coloured cup (red, blue, green, yellow or purple).\n\nClue 1: Holly has apple juice.\nClue 2: The child with the red cup has milk.\nClue 3: Imran has the green cup.\nClue 4: Jess has orange juice and the blue cup.\nClue 5: Kai has water in the yellow cup.\n\nWhat drink does Imran have?",
+          options: ["Apple juice", "Orange juice", "Milk", "Water", "Lemonade"],
+          correct: 4,
+          explanation: "Jess and Kai are pinned by clues 4 and 5. Imran has the green cup (clue 3), so the only cups left for Holly and Leo are red and purple. Holly has apple juice, but the red cup means milk (clue 2), so Holly cannot have red — Holly has the purple cup and Leo has the red cup (milk). The only drink not yet taken is lemonade, so Imran has lemonade. ✓"
+        },
+        {
+          id: 178,
+          difficulty: 2,
+          question: "Five children each own a different pet: a cat, a dog, a rabbit, a fish or a hamster.\n\nClue 1: Maya owns the rabbit.\nClue 2: Noah owns the fish.\nClue 3: Olive owns the dog.\nClue 4: Pip's pet is small, furry and lives in a cage.\nClue 5: Rose does not own the hamster.\n\nWhat pet does Rose own?",
+          options: ["Cat", "Dog", "Rabbit", "Fish", "Hamster"],
+          correct: 0,
+          explanation: "Clues 1, 2 and 3 give Maya=rabbit, Noah=fish and Olive=dog. That leaves the cat and the hamster for Pip and Rose. Pip has a small, furry, caged pet — that fits the hamster. So Pip has the hamster, which means Rose has the cat (clue 5 confirms Rose does not have the hamster). ✓"
+        },
+        {
+          id: 179,
+          difficulty: 2,
+          question: "Five children each have a different favourite subject: maths, English, science, history or art.\n\nClue 1: Sam's favourite is science.\nClue 2: Tara's favourite is a creative subject (art or English), but not art.\nClue 3: Uma does not like maths or history.\nClue 4: Vik likes history.\nClue 5: Will does not like art.\n\nWhat is Uma's favourite subject?",
+          options: ["Maths", "English", "Science", "History", "Art"],
+          correct: 4,
+          explanation: "Sam=science (clue 1) and Vik=history (clue 4). Tara has a creative favourite but not art (clue 2), so Tara=English. That leaves maths and art for Uma and Will. Uma does not like maths (clue 3), so Uma=art, and Will=maths (clue 5 confirms Will is not art). ✓"
+        },
+        {
+          id: 180,
+          difficulty: 2,
+          question: "Five children sit at a round table. Each has a different favourite biscuit: digestive, bourbon, custard cream, ginger and shortbread.\n\nClue 1: Fay likes digestive.\nClue 2: Greg likes ginger.\nClue 3: Hannah does not like bourbon or shortbread.\nClue 4: Ivan likes shortbread.\nClue 5: Jen likes bourbon.\n\nWhich biscuit does Hannah like?",
+          options: ["Digestive", "Bourbon", "Custard cream", "Ginger", "Shortbread"],
+          correct: 2,
+          explanation: "Fay: digestive. Greg: ginger. Ivan: shortbread. Jen: bourbon. The remaining biscuit is custard cream, and the remaining child is Hannah. Hannah does not like bourbon or shortbread, which is consistent. Hannah likes custard cream. ✓"
+        },
+        {
+          id: 181,
+          difficulty: 2,
+          question: "Five friends each visited a different city on holiday: London, Paris, Rome, Madrid and Berlin.\n\nClue 1: Kim visited Paris.\nClue 2: Lara did not visit London or Rome.\nClue 3: Max visited Rome.\nClue 4: Nia visited Madrid.\nClue 5: Owen visited London.\n\nWhich city did Lara visit?",
+          options: ["London", "Paris", "Rome", "Madrid", "Berlin"],
+          correct: 4,
+          explanation: "Kim: Paris. Max: Rome. Nia: Madrid. Owen: London. The remaining city is Berlin and the remaining child is Lara. Lara did not visit London or Rome, which is consistent. Lara visited Berlin. ✓"
+        },
+        {
+          id: 182,
+          difficulty: 2,
+          question: "Five children stand in a queue. Each wears a hat of a different colour: red, blue, green, yellow and pink.\n\nClue 1: Pam is at the front and wears pink.\nClue 2: Rex is at the back and wears red.\nClue 3: The child in the middle wears green.\nClue 4: Sara stands directly behind Pam and wears yellow.\nClue 5: Tom stands directly in front of Rex.\n\nWhat colour hat does Tom wear?",
+          options: ["Red", "Blue", "Green", "Yellow", "Pink"],
+          correct: 1,
+          explanation: "Pam is 1st (pink). Sara is 2nd (yellow, directly behind Pam). The middle (3rd) wears green. Rex is 5th (red). Tom is directly in front of Rex, so Tom is 4th. The 3rd position (green) belongs to the fifth child, Una. Tom in position 4 wears the remaining colour, blue. ✓"
+        },
+        {
+          id: 183,
+          difficulty: 2,
+          question: "Five children each love a different fruit: apple, banana, cherry, mango or pear.\n\nClue 1: Beth loves cherries.\nClue 2: Finn loves apples.\nClue 3: Cara does not love bananas.\nClue 4: Dom does not love mango or pear.\nClue 5: Ella does not love mango.\n\nWhat fruit does Cara love?",
+          options: ["Apple", "Banana", "Cherry", "Mango", "Pear"],
+          correct: 3,
+          explanation: "Beth=cherry and Finn=apple. That leaves banana, mango and pear for Cara, Dom and Ella. Dom is not mango or pear (clue 4), so Dom=banana. Now only mango and pear are left for Cara and Ella. Ella is not mango (clue 5), so Ella=pear and Cara=mango (clue 3 confirms Cara is not banana). ✓"
+        },
+        {
+          id: 184,
+          difficulty: 3,
+          question: "Six children (Alex, Bea, Cleo, Dean, Erin and Finn) each have a different age (7, 8, 9, 10, 11 or 12), play a different sport (football, tennis, swimming, cycling, basketball or hockey) and wear a different colour shirt (red, blue, green, yellow, white or black).\n\nClue 1: Alex plays football, wears red and is 8 years old.\nClue 2: The tennis player is 12 and wears blue.\nClue 3: Bea plays tennis.\nClue 4: Cleo wears green, is 10 years old and swims.\nClue 5: Dean is the youngest, wears yellow and cycles.\nClue 6: Erin plays basketball, wears white and is older than Finn.\n\nWhat sport does Finn play?",
+          options: ["Tennis", "Swimming", "Cycling", "Basketball", "Hockey"],
+          correct: 4,
+          explanation: "Alex=8, football, red (clue 1). Bea=tennis, 12, blue (clues 2 and 3). Cleo=10, green, swimming (clue 4). Ages used: 8, 10, 12 — the youngest remaining is 7, so Dean=7, yellow, cycling (clue 5). Erin=basketball, white (clue 6), leaving hockey for Finn. Ages left for Erin and Finn: 9 and 11. Erin is older than Finn, so Erin=11 and Finn=9. Finn plays hockey. ✓"
+        },
+        {
+          id: 185,
+          difficulty: 3,
+          question: "Six children each have a different favourite subject (maths, English, science, history, art, music), a different hair colour (brown, black, blonde, red, grey, white) and live in a different town (Poole, Bath, York, Hull, Leeds, Wells).\n\nClue 1: Gemma loves maths, has brown hair and lives in Poole.\nClue 2: Harry loves English and lives in Bath.\nClue 3: Ivy has black hair and lives in York.\nClue 4: Jed loves art and has blonde hair.\nClue 5: Kira has red hair and lives in Hull.\nClue 6: Liam lives in Leeds.\n\nWhich subject does Liam love?",
+          options: ["Maths", "English", "Science", "History", "Cannot be determined"],
+          correct: 4,
+          explanation: "Gemma: maths. Harry: English. Jed: art. Subjects left for Ivy, Kira and Liam: science, history, music. No clue links Liam to any specific remaining subject — he could have science, history or music. The subject for Liam cannot be determined from the given clues. ✓"
+        },
+        {
+          id: 186,
+          difficulty: 3,
+          question: "Six children each picked a different fruit (apple, banana, cherry, date, fig, grape), wear a different jumper colour (red, blue, green, yellow, purple, orange) and play a different sport (football, tennis, swimming, cricket, hockey, rugby).\n\nClue 1: Maya picked apple, wears red and plays football.\nClue 2: Noah picked banana and plays tennis.\nClue 3: Olive wears blue and swims.\nClue 4: Pat picked cherry and wears green.\nClue 5: Quinn picked date and plays cricket.\nClue 6: Reggie wears purple and plays hockey.\n\nWhat sport does Pat play?",
+          options: ["Football", "Swimming", "Hockey", "Rugby", "Cannot be determined"],
+          correct: 3,
+          explanation: "Maya: football. Noah: tennis. Olive: swimming. Quinn: cricket. Reggie: hockey. The remaining sport is rugby and the remaining child is Pat. Pat plays rugby. ✓"
+        },
+        {
+          id: 187,
+          difficulty: 3,
+          question: "Six pupils sit in a row of six desks (1 to 6 from left to right). Each has a different score (5, 6, 7, 8, 9, 10) and a different favourite colour (red, blue, green, yellow, pink, white).\n\nClue 1: Tara sits in desk 1, scored 5 and likes red.\nClue 2: Ula sits in desk 6, scored 10 and likes blue.\nClue 3: The pupil in desk 3 likes green.\nClue 4: Vince sits in desk 2 and scored 6.\nClue 5: Wynn sits in desk 4 and scored 9.\nClue 6: The pupil who likes pink scored 7.\n\nWho sits in desk 3?",
+          options: ["Yara", "Zac", "Tara", "Vince", "Cannot be determined"],
+          correct: 4,
+          explanation: "Tara: desk 1, score 5, red. Vince: desk 2, score 6. Wynn: desk 4, score 9. Ula: desk 6, score 10, blue. Desks 3 and 5 belong to Yara and Zac (the two remaining children), with scores 7 and 8. Desk 3 likes green; the pink lover scored 7. No clue specifies whether Yara or Zac sits in desk 3. The answer cannot be determined. ✓"
+        },
+        {
+          id: 188,
+          difficulty: 3,
+          question: "Six friends each have a different pet (dog, cat, rabbit, hamster, fish, bird) and a different favourite drink (water, juice, milk, tea, squash, lemonade).\n\nClue 1: Alf has the dog and drinks water.\nClue 2: Bea has the cat and drinks juice.\nClue 3: Cy has the rabbit and drinks milk.\nClue 4: Dee has the hamster and drinks tea.\nClue 5: Eli has the fish.\nClue 6: Fi drinks lemonade.\n\nWhich pet does Fi have?",
+          options: ["Hamster", "Fish", "Bird", "Cat", "Dog"],
+          correct: 2,
+          explanation: "Alf: dog, water. Bea: cat, juice. Cy: rabbit, milk. Dee: hamster, tea. Eli: fish. The remaining pet is bird and the remaining child is Fi. Fi drinks lemonade and has the bird. ✓"
+        },
+        {
+          id: 189,
+          difficulty: 3,
+          question: "Six children each have a different birthday month (January, March, May, July, September, November) and a different hobby (reading, drawing, baking, dancing, singing, coding).\n\nClue 1: Gail's birthday is in January.\nClue 2: Hugo's birthday is in March and he loves baking.\nClue 3: Iris's birthday is in May.\nClue 4: Jay's birthday is in July and he loves dancing.\nClue 5: Kit loves singing.\nClue 6: Lee's birthday is in November and he loves coding.\n\nWhat is Gail's hobby?",
+          options: ["Reading", "Drawing", "Baking", "Singing", "Cannot be determined"],
+          correct: 4,
+          explanation: "Hugo: baking. Jay: dancing. Lee: coding. Kit: singing. Gail and Iris share the remaining hobbies: reading and drawing. No clue tells us which one Gail has. The hobby for Gail cannot be determined. ✓"
+        },
+        {
+          id: 190,
+          difficulty: 3,
+          question: "Six children stand in a line. Each wears a different colour scarf (red, blue, green, yellow, purple, white) and carries a different colour bag (black, brown, grey, navy, cream, pink).\n\nClue 1: Mai is at the front; her scarf is red and her bag is black.\nClue 2: Ned is at the back; his scarf is white and his bag is pink.\nClue 3: The child in position 3 wears a green scarf.\nClue 4: Ozzie wears a blue scarf and carries a brown bag.\nClue 5: Pia is in position 4 and carries a grey bag.\nClue 6: Ross is in position 2 and carries a navy bag.\n\nWhat colour scarf does Pia wear?",
+          options: ["Red", "Blue", "Green", "Yellow", "Cannot be determined"],
+          correct: 4,
+          explanation: "Mai: pos 1, red, black. Ned: pos 6, white, pink. Pos 3: green scarf. Pia: pos 4, grey bag. Ross: pos 2, navy bag. Ozzie: blue scarf, brown bag. Since Ross is pos 2 and Pia is pos 4, the remaining positions (3 and 5) go to Ozzie and a sixth child. Ozzie has blue (not green), so the sixth child is in pos 3 (green scarf). Remaining scarves for Pia and Ross: yellow, purple, and Ozzie has blue (already taken). Pia could wear yellow or purple — no clue distinguishes them. The scarf colour for Pia cannot be determined. ✓"
+        },
+        {
+          id: 191,
+          difficulty: 3,
+          question: "Six children each have a different age (8, 9, 10, 11, 12, 13), a different favourite colour (red, blue, green, yellow, purple, orange) and live in a different street (Oak, Elm, Ash, Pine, Beech, Holly).\n\nClue 1: Sam is 8, loves red and lives on Oak.\nClue 2: Tia is 13, loves blue and lives on Elm.\nClue 3: The 10-year-old lives on Ash and loves green.\nClue 4: Uma is 9 and lives on Pine.\nClue 5: Vic is 11 and loves yellow.\nClue 6: Wes lives on Beech.\n\nWhat colour does Wes love?",
+          options: ["Red", "Green", "Purple", "Orange", "Cannot be determined"],
+          correct: 4,
+          explanation: "Sam: 8, red, Oak. Tia: 13, blue, Elm. Uma: 9, Pine. Vic: 11, yellow. Wes: Beech. Ages used: 8, 9, 11, 13. The 10-year-old lives on Ash — that must be the sixth child (Xen), who gets age 10, green, Ash. Wes gets age 12 and street Beech. Colours left for Uma and Wes: purple and orange. No clue links Wes to either colour. The colour for Wes cannot be determined. ✓"
+        },
+        {
+          id: 192,
+          difficulty: 3,
+          question: "Six friends each chose a different ice cream (vanilla, chocolate, strawberry, mint, lemon, toffee) and a different topping (sprinkles, sauce, nuts, fruit, marshmallow, wafer).\n\nClue 1: Yara chose vanilla with sprinkles.\nClue 2: Zac chose chocolate with sauce.\nClue 3: Ava chose strawberry with nuts.\nClue 4: Bo chose mint with fruit.\nClue 5: Cal chose lemon.\nClue 6: Di chose marshmallow.\n\nWhat ice cream did Di choose?",
+          options: ["Vanilla", "Mint", "Lemon", "Toffee", "Cannot be determined"],
+          correct: 3,
+          explanation: "Yara: vanilla. Zac: chocolate. Ava: strawberry. Bo: mint. Cal: lemon. The remaining ice cream is toffee — and the remaining child is Di. Di chose toffee with marshmallow. ✓"
+        },
+        {
+          id: 193,
+          difficulty: 3,
+          question: "Six pupils sit at a round table. Each has a different favourite book genre (mystery, fantasy, science, history, poetry, comic), a different pencil colour (red, blue, green, yellow, black, white) and a different snack (apple, crisps, raisins, biscuit, cheese, grapes).\n\nClue 1: Ed loves mystery, has a red pencil and eats an apple.\nClue 2: Fay loves fantasy, has a blue pencil and eats crisps.\nClue 3: Gus loves science and has a green pencil.\nClue 4: Hal loves history and has a yellow pencil.\nClue 5: Ines loves poetry.\nClue 6: Jo loves comics.\n\nWhat snack does Ines eat?",
+          options: ["Raisins", "Biscuit", "Cheese", "Grapes", "Cannot be determined"],
+          correct: 4,
+          explanation: "Ed: apple. Fay: crisps. Remaining snacks for Gus, Hal, Ines and Jo: raisins, biscuit, cheese, grapes. No clue links Ines to any specific snack — she could have any of the four remaining options. The snack for Ines cannot be determined. ✓"
         }
       ]
     },
@@ -18868,6 +19858,252 @@ const vrData = {
           options: ["T","S","D","N","R"],
           correct: 2,
           explanation: "The letter D completes both pairs: DIAMOND + DRUM, and CUSTARD + DRIFT. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
+        }
+      ]
+    },
+
+    balanceEquations: {
+      name: "Balance Equations",
+      questions: [
+        {
+          id: 1,
+          difficulty: 1,
+          question: "Solve the equation:\n\n3 + 7 = 20 ÷ ( )",
+          options: ["2", "3", "1", "10", "20"],
+          correct: 0,
+          explanation: "Step 1: Work out the left side: 3 + 7 = 10. Step 2: The equation now reads 10 = 20 ÷ ( ). Step 3: Ask 'what divides 20 to give 10?' — that's 2. So ( ) = 2. ✓"
+        },
+        {
+          id: 2,
+          difficulty: 1,
+          question: "Solve the equation:\n\n9 + 6 = 5 × ( )",
+          options: ["2", "3", "4", "5", "15"],
+          correct: 1,
+          explanation: "Step 1: Work out the left side: 9 + 6 = 15. Step 2: The equation now reads 15 = 5 × ( ). Step 3: Ask 'what times 5 makes 15?' — that's 3. So ( ) = 3. ✓"
+        },
+        {
+          id: 3,
+          difficulty: 1,
+          question: "Solve the equation:\n\n12 − 4 = 2 × ( )",
+          options: ["2", "3", "4", "5", "8"],
+          correct: 2,
+          explanation: "Step 1: Work out the left side: 12 − 4 = 8. Step 2: The equation now reads 8 = 2 × ( ). Step 3: Ask 'what times 2 makes 8?' — that's 4. So ( ) = 4. ✓"
+        },
+        {
+          id: 4,
+          difficulty: 1,
+          question: "Solve the equation:\n\n6 + 9 = 3 × ( )",
+          options: ["3", "4", "6", "5", "15"],
+          correct: 3,
+          explanation: "Step 1: Work out the left side: 6 + 9 = 15. Step 2: The equation now reads 15 = 3 × ( ). Step 3: Ask 'what times 3 makes 15?' — that's 5. So ( ) = 5. ✓"
+        },
+        {
+          id: 5,
+          difficulty: 1,
+          question: "Solve the equation:\n\n14 − 8 = 18 ÷ ( )",
+          options: ["2", "4", "6", "9", "3"],
+          correct: 4,
+          explanation: "Step 1: Work out the left side: 14 − 8 = 6. Step 2: The equation now reads 6 = 18 ÷ ( ). Step 3: Ask 'what divides 18 to give 6?' — that's 3. So ( ) = 3. ✓"
+        },
+        {
+          id: 6,
+          difficulty: 1,
+          question: "Solve the equation:\n\n11 + 5 = 4 × ( )",
+          options: ["4", "3", "5", "8", "16"],
+          correct: 0,
+          explanation: "Step 1: Work out the left side: 11 + 5 = 16. Step 2: The equation now reads 16 = 4 × ( ). Step 3: Ask 'what times 4 makes 16?' — that's 4. So ( ) = 4. ✓"
+        },
+        {
+          id: 7,
+          difficulty: 1,
+          question: "Solve the equation:\n\n7 + 8 = 30 ÷ ( )",
+          options: ["3", "2", "5", "15", "1"],
+          correct: 1,
+          explanation: "Step 1: Work out the left side: 7 + 8 = 15. Step 2: The equation now reads 15 = 30 ÷ ( ). Step 3: Ask 'what divides 30 to give 15?' — that's 2. So ( ) = 2. ✓"
+        },
+        {
+          id: 8,
+          difficulty: 1,
+          question: "Solve the equation:\n\n20 − 12 = 16 ÷ ( )",
+          options: ["4", "3", "2", "8", "1"],
+          correct: 2,
+          explanation: "Step 1: Work out the left side: 20 − 12 = 8. Step 2: The equation now reads 8 = 16 ÷ ( ). Step 3: Ask 'what divides 16 to give 8?' — that's 2. So ( ) = 2. ✓"
+        },
+        {
+          id: 9,
+          difficulty: 1,
+          question: "Solve the equation:\n\n5 + 4 = ( ) × 3",
+          options: ["2", "4", "9", "3", "6"],
+          correct: 3,
+          explanation: "Step 1: Work out the left side: 5 + 4 = 9. Step 2: The equation now reads 9 = ( ) × 3. Step 3: Ask 'what times 3 makes 9?' — that's 3. So ( ) = 3. ✓"
+        },
+        {
+          id: 10,
+          difficulty: 1,
+          question: "Solve the equation:\n\n13 − 6 = ( ) + 2",
+          options: ["4", "6", "7", "9", "5"],
+          correct: 4,
+          explanation: "Step 1: Work out the left side: 13 − 6 = 7. Step 2: The equation now reads 7 = ( ) + 2. Step 3: Ask 'what plus 2 makes 7?' — that's 5. So ( ) = 5. ✓"
+        },
+        {
+          id: 11,
+          difficulty: 2,
+          question: "Solve the equation:\n\n30 ÷ 5 + 12 = 2 × ( )",
+          options: ["9", "8", "21", "18", "10"],
+          correct: 0,
+          explanation: "Step 1: BODMAS — divide first: 30 ÷ 5 = 6, then 6 + 12 = 18. Step 2: The equation now reads 18 = 2 × ( ). Step 3: Ask 'what times 2 makes 18?' — that's 9. So ( ) = 9. ✓"
+        },
+        {
+          id: 12,
+          difficulty: 2,
+          question: "Solve the equation:\n\n4 × 3 − 2 = ( ) + 8",
+          options: ["4", "2", "3", "10", "8"],
+          correct: 1,
+          explanation: "Step 1: BODMAS — multiply first: 4 × 3 = 12, then 12 − 2 = 10. Step 2: The equation now reads 10 = ( ) + 8. Step 3: Ask 'what plus 8 makes 10?' — that's 2. So ( ) = 2. ✓"
+        },
+        {
+          id: 13,
+          difficulty: 2,
+          question: "Solve the equation:\n\n20 − 2 × 7 = ( ) × 2",
+          options: ["2", "9", "3", "4", "6"],
+          correct: 2,
+          explanation: "Step 1: BODMAS — multiply first: 2 × 7 = 14, then 20 − 14 = 6. Step 2: The equation now reads 6 = ( ) × 2. Step 3: Ask 'what times 2 makes 6?' — that's 3. So ( ) = 3. ✓"
+        },
+        {
+          id: 14,
+          difficulty: 2,
+          question: "Solve the equation:\n\n5 × 4 + 8 = 4 × ( )",
+          options: ["6", "8", "5", "7", "28"],
+          correct: 3,
+          explanation: "Step 1: BODMAS — multiply first: 5 × 4 = 20, then 20 + 8 = 28. Step 2: The equation now reads 28 = 4 × ( ). Step 3: Ask 'what times 4 makes 28?' — that's 7. So ( ) = 7. ✓"
+        },
+        {
+          id: 15,
+          difficulty: 2,
+          question: "Solve the equation:\n\n36 ÷ 4 − 3 = ( ) + 2",
+          options: ["6", "5", "8", "3", "4"],
+          correct: 4,
+          explanation: "Step 1: BODMAS — divide first: 36 ÷ 4 = 9, then 9 − 3 = 6. Step 2: The equation now reads 6 = ( ) + 2. Step 3: Ask 'what plus 2 makes 6?' — that's 4. So ( ) = 4. ✓"
+        },
+        {
+          id: 16,
+          difficulty: 2,
+          question: "Solve the equation:\n\n8 + 6 × 3 = ( ) × 2",
+          options: ["13", "21", "12", "14", "26"],
+          correct: 0,
+          explanation: "Step 1: BODMAS — multiply first: 6 × 3 = 18, then 8 + 18 = 26. Step 2: The equation now reads 26 = ( ) × 2. Step 3: Ask 'what times 2 makes 26?' — that's 13. So ( ) = 13. ✓"
+        },
+        {
+          id: 17,
+          difficulty: 2,
+          question: "Solve the equation:\n\n40 ÷ 8 + 7 = 2 × ( )",
+          options: ["8", "6", "12", "5", "7"],
+          correct: 1,
+          explanation: "Step 1: BODMAS — divide first: 40 ÷ 8 = 5, then 5 + 7 = 12. Step 2: The equation now reads 12 = 2 × ( ). Step 3: Ask 'what times 2 makes 12?' — that's 6. So ( ) = 6. ✓"
+        },
+        {
+          id: 18,
+          difficulty: 2,
+          question: "Solve the equation:\n\n7 × 3 − 5 = ( ) + 9",
+          options: ["8", "11", "7", "16", "9"],
+          correct: 2,
+          explanation: "Step 1: BODMAS — multiply first: 7 × 3 = 21, then 21 − 5 = 16. Step 2: The equation now reads 16 = ( ) + 9. Step 3: Ask 'what plus 9 makes 16?' — that's 7. So ( ) = 7. ✓"
+        },
+        {
+          id: 19,
+          difficulty: 2,
+          question: "Solve the equation:\n\n25 − 3 × 4 = 26 − ( )",
+          options: ["12", "14", "1", "13", "88"],
+          correct: 3,
+          explanation: "Step 1: BODMAS — multiply first: 3 × 4 = 12, then 25 − 12 = 13. Step 2: The equation now reads 13 = 26 − ( ). Step 3: Ask 'what subtracted from 26 gives 13?' — that's 13. So ( ) = 13. ✓"
+        },
+        {
+          id: 20,
+          difficulty: 2,
+          question: "Solve the equation:\n\n9 + 2 × 6 = 3 × ( )",
+          options: ["6", "22", "8", "11", "7"],
+          correct: 4,
+          explanation: "Step 1: BODMAS — multiply first: 2 × 6 = 12, then 9 + 12 = 21. Step 2: The equation now reads 21 = 3 × ( ). Step 3: Ask 'what times 3 makes 21?' — that's 7. So ( ) = 7. ✓"
+        },
+        {
+          id: 21,
+          difficulty: 3,
+          question: "Solve the equation:\n\n12 ÷ 4 × 6 = 2 × ( )",
+          options: ["9", "8", "18", "12", "10"],
+          correct: 0,
+          explanation: "Step 1: BODMAS — divide and multiply left to right: 12 ÷ 4 = 3, then 3 × 6 = 18. Step 2: The equation now reads 18 = 2 × ( ). Step 3: Ask 'what times 2 makes 18?' — that's 9. So ( ) = 9. ✓"
+        },
+        {
+          id: 22,
+          difficulty: 3,
+          question: "Solve the equation:\n\n5 + 3 × 4 = ( ) + 2 × 3",
+          options: ["32", "11", "10", "12", "17"],
+          correct: 1,
+          explanation: "Step 1: Left side, BODMAS — 3 × 4 = 12, then 5 + 12 = 17. Step 2: Right side, BODMAS — 2 × 3 = 6, so right side becomes ( ) + 6. Step 3: 17 = ( ) + 6, so ( ) = 17 − 6 = 11. ✓"
+        },
+        {
+          id: 23,
+          difficulty: 3,
+          question: "Solve the equation:\n\n4 × 5 − 2 = 3 × ( ) + 6",
+          options: ["6", "5", "4", "3", "18"],
+          correct: 2,
+          explanation: "Step 1: Left side, BODMAS — 4 × 5 = 20, then 20 − 2 = 18. Step 2: The equation reads 18 = 3 × ( ) + 6. Subtract 6: 12 = 3 × ( ). Step 3: 12 ÷ 3 = 4. So ( ) = 4. ✓"
+        },
+        {
+          id: 24,
+          difficulty: 3,
+          question: "Solve the equation:\n\n6 × 4 − 8 = 2 × ( ) + 4",
+          options: ["4", "8", "5", "6", "16"],
+          correct: 3,
+          explanation: "Step 1: Left side, BODMAS — 6 × 4 = 24, then 24 − 8 = 16. Step 2: The equation reads 16 = 2 × ( ) + 4. Subtract 4: 12 = 2 × ( ). Step 3: 12 ÷ 2 = 6. So ( ) = 6. ✓"
+        },
+        {
+          id: 25,
+          difficulty: 3,
+          question: "Solve the equation:\n\n20 − 8 ÷ 2 = 2 × ( )",
+          options: ["6", "16", "7", "9", "8"],
+          correct: 4,
+          explanation: "Step 1: Left side, BODMAS — divide first: 8 ÷ 2 = 4, then 20 − 4 = 16. Step 2: The equation reads 16 = 2 × ( ). Step 3: Ask 'what times 2 makes 16?' — that's 8. So ( ) = 8. ✓"
+        },
+        {
+          id: 26,
+          difficulty: 3,
+          question: "Solve the equation:\n\n2 × 6 + 8 = 4 × ( ) − 4",
+          options: ["6", "5", "7", "4", "20"],
+          correct: 0,
+          explanation: "Step 1: Left side, BODMAS — 2 × 6 = 12, then 12 + 8 = 20. Step 2: The equation reads 20 = 4 × ( ) − 4. Add 4: 24 = 4 × ( ). Step 3: 24 ÷ 4 = 6. So ( ) = 6. ✓"
+        },
+        {
+          id: 27,
+          difficulty: 3,
+          question: "Solve the equation:\n\n36 ÷ 6 + 4 = 2 × ( ) − 4",
+          options: ["5", "7", "6", "8", "10"],
+          correct: 1,
+          explanation: "Step 1: Left side, BODMAS — 36 ÷ 6 = 6, then 6 + 4 = 10. Step 2: The equation reads 10 = 2 × ( ) − 4. Add 4: 14 = 2 × ( ). Step 3: 14 ÷ 2 = 7. So ( ) = 7. ✓"
+        },
+        {
+          id: 28,
+          difficulty: 3,
+          question: "Solve the equation:\n\n50 − 4 × 9 = 2 × ( )",
+          options: ["8", "23", "7", "6", "14"],
+          correct: 2,
+          explanation: "Step 1: Left side, BODMAS — multiply first: 4 × 9 = 36, then 50 − 36 = 14. Step 2: The equation reads 14 = 2 × ( ). Step 3: Ask 'what times 2 makes 14?' — that's 7. So ( ) = 7. ✓"
+        },
+        {
+          id: 29,
+          difficulty: 3,
+          question: "Solve the equation:\n\n3 + 4 × 5 = ( ) × 2 + 9",
+          options: ["8", "9", "6", "7", "23"],
+          correct: 3,
+          explanation: "Step 1: Left side, BODMAS — 4 × 5 = 20, then 3 + 20 = 23. Step 2: Right side: ( ) × 2 + 9 = 23. Subtract 9: ( ) × 2 = 14. Step 3: 14 ÷ 2 = 7. So ( ) = 7. ✓"
+        },
+        {
+          id: 30,
+          difficulty: 3,
+          question: "Solve the equation:\n\n7 × 3 − 4 × 2 = ( ) + 5",
+          options: ["9", "13", "7", "26", "8"],
+          correct: 4,
+          explanation: "Step 1: Left side, BODMAS — both multiplications first: 7 × 3 = 21 and 4 × 2 = 8. Then 21 − 8 = 13. Step 2: The equation reads 13 = ( ) + 5. Step 3: Ask 'what plus 5 makes 13?' — that's 8. So ( ) = 8. ✓"
         }
       ]
     }

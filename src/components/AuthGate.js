@@ -69,11 +69,11 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
           onClick={onSignUp}
           className="flex items-center gap-2 px-8 py-3.5 text-lg font-bold text-white bg-[#7C3AED] rounded-2xl hover:bg-[#5A4BD1] transition-colors shadow-md"
         >
-          Get Started Free
+          Try free for 30 days
           <ChevronRight className="w-5 h-5" />
         </button>
         <p className="text-sm text-slate-500 mt-4">
-          Free while in early access
+          No card required. Full access from day one.
         </p>
 
         {/* Trust signals */}
@@ -82,11 +82,14 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
             <Shield className="w-4 h-4 text-[#22C55E]" />
             <span>Your child's data is safe</span>
           </div>
-          <a href="/privacy.html" className="underline hover:text-[#7C3AED]">
+          <a href="/privacy" className="underline hover:text-[#7C3AED]">
             Privacy Policy
           </a>
-          <a href="/terms.html" className="underline hover:text-[#7C3AED]">
+          <a href="/terms" className="underline hover:text-[#7C3AED]">
             Terms
+          </a>
+          <a href="/help" className="underline hover:text-[#7C3AED]">
+            Help
           </a>
         </div>
       </main>
@@ -358,6 +361,7 @@ function AuthGateReal({ children }) {
           name: user.fullName || user.firstName || 'Parent',
           consentVersion: '1.0',
           inviteCode: inviteCode || undefined,
+          emailOptIn: emailOptIn ? true : false,
         }),
       });
 
@@ -489,14 +493,13 @@ function AuthGateReal({ children }) {
     return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
   }
 
-  // Paywall: no access (trial expired or subscription canceled)
+  // Paywall: no access (trial expired or subscription canceled).
+  // SubscribeScreen handles its own escape routes (sign out + email support).
   if (onboardingStep === 'subscribe') {
     return (
       <SubscribeScreen
         getToken={getToken}
         trialExpired={!access?.inTrial}
-        onSuccess={() => checkAccount()}
-        onBack={() => null /* no back from paywall — user must subscribe */}
       />
     );
   }

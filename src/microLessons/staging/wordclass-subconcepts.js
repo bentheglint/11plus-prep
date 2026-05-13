@@ -1259,15 +1259,13 @@ export const wordClassSubConcepts = [
               })
             },
             interaction: {
-              type: "order-steps",
-              steps: (v) => [
-                `Find words that JOIN two ideas together — these are conjunctions`,
-                `Find words that sit BEFORE a noun and tell which one — these are determiners`,
-                `Check: does the conjunction join equal ideas (coordinating) or create dependence (subordinating)?`
-              ],
+              type: "multiple-choice",
+              question: () => `Which word in this sentence is a conjunction?\n\n"I brought my coat but I forgot the umbrella."`,
+              getOptions: () => ["my", "but", "the", "brought", "forgot"],
+              correctAnswer: () => "but",
               feedback: {
-                correct: (v) => `Perfect! Conjunctions join ideas, determiners sit before nouns, and the type depends on whether the ideas are equal. ✓`,
-                incorrect: (v) => `Not quite — start by finding joining words (conjunctions), then words before nouns (determiners).`
+                correct: () => `Spot on — 'but' joins two ideas together ('I brought my coat' and 'I forgot the umbrella'), which is exactly what a conjunction does. ✓`,
+                incorrect: () => `Look for the word that JOINS two ideas together. 'My' and 'the' sit before nouns (those are determiners), and 'brought' and 'forgot' are verbs. The joining word is 'but'.`
               }
             }
           },

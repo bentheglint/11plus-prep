@@ -1,0 +1,44 @@
+# Quarterly cold-restore handoff (Layer 1 long-tail bit-rot defence).
+#
+# Runs on the 1st of January, April, July, October at 04:00 UTC. Lists the
+# OLDEST monthly/ backup, verifies B2 can serve its bytes, then sends a
+# Resend notification asking Ben to complete the local decrypt drill.
+#
+# This workflow CANNOT decrypt — the private age key never enters CI. The
+# decrypt + integrity check happens locally via local-cold-restore.mjs.
+#
+# Required GitHub secrets:
+#   B2_KEY_ID, B2_APPLICATION_KEY, RESEND_API_KEY, RESEND_TO_EMAIL
+
+name: Quarterly cold-restore handoff (Layer 1)
+
+on:
+  schedule:
+    - cron: '0 4 1 1,4,7,10 *'  # 1st of Jan/Apr/Jul/Oct, 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  handoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+      B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      RESEND_TO_EMAIL: ${{ secrets.RESEND_TO_EMAIL }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # No npm install — handoff uses only built-in fetch + the b2/resend libs
+
+      - name: Run quarterly handoff
+        run: node scripts/process-gates/quarterly-cold-restore-handoff.mjs

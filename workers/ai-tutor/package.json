@@ -1,0 +1,9 @@
+{
+  "name": "11plus-ai-tutor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@sentry/cloudflare": "^9.0.0"
+  }
+}

@@ -51,7 +51,15 @@ function stripeFormFlatten(obj, prefix) {
   for (const [k, v] of Object.entries(obj)) {
     if (v === null || v === undefined) continue;
     const key = `${prefix}[${k}]`;
-    if (typeof v === 'object' && !Array.isArray(v)) {
+    if (Array.isArray(v)) {
+      v.forEach((item, i) => {
+        if (typeof item === 'object' && item !== null) {
+          Object.assign(out, stripeFormFlatten(item, `${key}[${i}]`));
+        } else {
+          out[`${key}[${i}]`] = String(item);
+        }
+      });
+    } else if (typeof v === 'object') {
       Object.assign(out, stripeFormFlatten(v, key));
     } else {
       out[key] = String(v);
@@ -127,8 +135,9 @@ async function verifyStripeSignature(rawBody, sigHeader, secret, toleranceSec = 
 
 // POST /api/stripe/subscribe
 // Creates (or reuses) a Stripe Customer for the user, then creates a
-// Subscription at STRIPE_PRICE_ID with payment_behavior=default_incomplete.
-// Returns { subscriptionId, clientSecret } for the frontend to confirm.
+// Checkout Session in subscription mode. Returns { url } — the frontend
+// redirects to Stripe's hosted checkout page. On success, Stripe redirects
+// back to APP_URL with ?subscribed=1; on cancel, back to APP_URL.
 export async function handleSubscribe(request, env, userId) {
   const db = env.DB;
 
@@ -148,7 +157,7 @@ export async function handleSubscribe(request, env, userId) {
   }
 
   try {
-    // Step 1 — ensure customer
+    // Ensure customer (so subscription is associated with a known customer)
     let customerId = account.stripe_customer_id;
     if (!customerId) {
       const customer = await stripeCall(env, 'POST', '/customers', {
@@ -161,31 +170,31 @@ export async function handleSubscribe(request, env, userId) {
         .bind(customerId, userId).run();
     }
 
-    // Step 2 — create subscription. default_incomplete means Stripe
-    // creates the subscription as incomplete and returns a PaymentIntent
-    // on the first invoice for the frontend to confirm with Elements.
-    const subscription = await stripeCall(env, 'POST', '/subscriptions', {
+    const appUrl = env.APP_URL || 'https://prepstep.co.uk';
+    const body = await request.json().catch(() => ({}));
+    const returnBase = body.returnUrl || appUrl;
+
+    // Resolve price ID: annual → STRIPE_PRICE_ANNUAL, monthly → STRIPE_PRICE_MONTHLY.
+    // Fall back to STRIPE_PRICE_ID for backwards compatibility during rollout.
+    const plan = body.plan === 'monthly' ? 'monthly' : 'annual';
+    const priceId = plan === 'annual'
+      ? (env.STRIPE_PRICE_ANNUAL || env.STRIPE_PRICE_ID)
+      : (env.STRIPE_PRICE_MONTHLY || env.STRIPE_PRICE_ID);
+
+    // Checkout Session — Stripe hosts the card form, 3DS, Apple Pay etc.
+    const session = await stripeCall(env, 'POST', '/checkout/sessions', {
+      mode: 'subscription',
       customer: customerId,
-      items: [{ price: env.STRIPE_PRICE_ID }],
-      payment_behavior: 'default_incomplete',
-      payment_settings: {
-        save_default_payment_method: 'on_subscription',
-        payment_method_types: ['card'],
-      },
-      expand: ['latest_invoice.payment_intent'],
+      line_items: [{ price: priceId, quantity: 1 }],
+      success_url: `${returnBase}?subscribed=1`,
+      cancel_url: returnBase,
       metadata: { clerk_user_id: userId },
+      subscription_data: {
+        metadata: { clerk_user_id: userId },
+      },
     });
 
-    const clientSecret = subscription.latest_invoice?.payment_intent?.client_secret;
-    if (!clientSecret) {
-      return json({ error: 'Stripe did not return a client secret' }, 502);
-    }
-
-    return json({
-      subscriptionId: subscription.id,
-      clientSecret,
-      customerId,
-    });
+    return json({ url: session.url });
   } catch (err) {
     console.error('[Stripe subscribe]', err.message, err.stripeCode);
     return json({ error: err.message, code: err.stripeCode }, err.status || 500);
@@ -240,6 +249,26 @@ export async function handleWebhook(request, env) {
 
   const db = env.DB;
 
+  // Idempotency check — Stripe delivers webhooks at-least-once. If we've
+  // already processed this event.id, return 200 immediately so Stripe
+  // stops retrying. INSERT OR IGNORE atomically claims the event; meta.changes
+  // tells us whether we won the race.
+  if (event.id) {
+    try {
+      const claim = await db.prepare(
+        'INSERT OR IGNORE INTO stripe_webhook_events (event_id, type) VALUES (?, ?)'
+      ).bind(event.id, event.type).run();
+      if (claim.meta?.changes === 0) {
+        console.log('[Stripe webhook] Duplicate event ignored:', event.id, event.type);
+        return json({ received: true, duplicate: true });
+      }
+    } catch (err) {
+      // If the dedup table is missing (pre-migration), log and continue —
+      // duplicate processing is harmless given idempotent UPDATEs below.
+      console.warn('[Stripe webhook] dedup insert failed, processing anyway:', err.message);
+    }
+  }
+
   try {
     switch (event.type) {
       case 'customer.subscription.created':
@@ -270,7 +299,8 @@ export async function handleWebhook(request, env) {
         }
         break;
       }
-      case 'invoice.paid': {
+      case 'invoice.paid':
+      case 'invoice.payment_succeeded': {
         // Belt-and-braces: ensure status=active after a successful charge.
         // customer.subscription.updated should fire too, but payment events
         // are a stronger signal the user has live access.
@@ -293,6 +323,70 @@ export async function handleWebhook(request, env) {
     // 500 so Stripe retries. Idempotent updates make retry safe.
     return json({ error: err.message }, 500);
   }
+}
+
+// ── Reconciliation cron ──
+//
+// Daily sanity check: pull active subscriptions from Stripe, compare to
+// what D1 has marked active, log drift. Catches edge cases where a
+// webhook was missed or the dedup table swallowed a real event.
+//
+// Strategy: Stripe is the source of truth for billing. If D1 disagrees,
+// we log it but DON'T auto-correct — better to surface drift to a human
+// than risk flipping access state without context. The webhook handler
+// already keeps D1 in sync; this is the safety net.
+export async function reconcileSubscriptions(env) {
+  const db = env.DB;
+
+  // Stripe-side: list all active subscriptions (paginate if >100).
+  let stripeActive = new Set();
+  let startingAfter = null;
+  for (let page = 0; page < 10; page++) {
+    const path = `/subscriptions?status=active&limit=100${startingAfter ? `&starting_after=${startingAfter}` : ''}`;
+    const data = await stripeCall(env, 'GET', path);
+    for (const sub of data.data || []) {
+      if (sub.customer) stripeActive.add(sub.customer);
+    }
+    if (!data.has_more) break;
+    startingAfter = data.data[data.data.length - 1]?.id;
+    if (!startingAfter) break;
+  }
+
+  // D1-side: every account with status=active or trialing.
+  const { results: d1Active } = await db.prepare(
+    `SELECT id, email, stripe_customer_id, subscription_status
+     FROM accounts
+     WHERE subscription_status IN ('active', 'trialing')
+       AND stripe_customer_id IS NOT NULL`
+  ).all();
+  const d1ActiveCustomers = new Set(d1Active.map(a => a.stripe_customer_id));
+
+  // Drift class A — D1 thinks active, Stripe says not.
+  // Likely cause: missed customer.subscription.deleted webhook.
+  const ghostActive = d1Active.filter(a => !stripeActive.has(a.stripe_customer_id));
+
+  // Drift class B — Stripe says active, D1 doesn't.
+  // Likely cause: missed customer.subscription.created/updated webhook.
+  const missedActive = [...stripeActive].filter(c => !d1ActiveCustomers.has(c));
+
+  const summary = {
+    stripe_active_count: stripeActive.size,
+    d1_active_count: d1Active.length,
+    drift_d1_says_active_stripe_doesnt: ghostActive.length,
+    drift_stripe_says_active_d1_doesnt: missedActive.length,
+  };
+
+  if (ghostActive.length || missedActive.length) {
+    console.error('[reconciliation] DRIFT DETECTED', JSON.stringify({
+      ...summary,
+      ghost_active: ghostActive.map(a => ({ id: a.id, email: a.email, customer: a.stripe_customer_id })),
+      missed_active_customers: missedActive,
+    }));
+  } else {
+    console.log('[reconciliation] OK', JSON.stringify(summary));
+  }
+
+  return summary;
 }
 
 // ── Dispatcher ──

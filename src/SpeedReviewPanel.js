@@ -149,7 +149,7 @@ function QuestionMapView({ questionMap, setQuestionMap, mergedBank, topicList, o
     // Get question text from app data
     const getSubject = (key) => {
       const eng = ['spelling','punctuation','grammar','vocabulary','wordClassGrammar','comprehension'];
-      const vr = ['hiddenWords','letterCodes','letterMove','letterPairSeries','letterSums','logicAndLanguage','missingLettersWords','numberSeries','numberWordCodes','oddTwoOut','sharedLetter','verbalAnalogies','wordCodeAnalogies','compoundWords','antonyms','synonyms'];
+      const vr = ['hiddenWords','letterCodes','letterMove','letterPairSeries','letterSums','logicAndLanguage','missingLettersWords','numberSeries','numberWordCodes','oddTwoOut','sharedLetter','verbalAnalogies','wordCodeAnalogies','compoundWords','antonyms','synonyms','balanceEquations'];
       if (eng.includes(key)) return 'english';
       if (vr.includes(key)) return 'vr';
       return 'maths';

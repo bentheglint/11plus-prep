@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useClerk, useAuth, useUser } from '@clerk/clerk-react';
 import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard, Users, GraduationCap } from 'lucide-react';
 
@@ -28,6 +28,18 @@ function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup }) {
   const [showMenu, setShowMenu] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  // Close menus on Escape (keyboard a11y)
+  useEffect(() => {
+    if (!showMenu && !showDeleteConfirm) return undefined;
+    const onKey = (e) => {
+      if (e.key !== 'Escape') return;
+      if (showDeleteConfirm) setShowDeleteConfirm(false);
+      else if (showMenu) setShowMenu(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [showMenu, showDeleteConfirm]);
 
   const parentEmail = user?.primaryEmailAddress?.emailAddress || '';
 
@@ -126,7 +138,13 @@ function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup }) {
       {/* Dropdown menu */}
       {showMenu && (
         <>
-          <div className="fixed inset-0 z-40" onClick={() => setShowMenu(false)} />
+          <button
+            type="button"
+            aria-label="Close account menu"
+            className="fixed inset-0 z-40 cursor-default"
+            tabIndex={-1}
+            onClick={() => setShowMenu(false)}
+          />
           <div className="absolute right-0 top-12 z-50 bg-white rounded-xl shadow-xl border border-gray-200 w-64 overflow-hidden">
             {/* User info */}
             <div className="px-4 py-3 border-b border-gray-100">
@@ -189,10 +207,17 @@ function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup }) {
 
       {/* Delete confirmation modal */}
       {showDeleteConfirm && (
-        <div className="fixed inset-0 bg-black/30 z-50 flex items-center justify-center p-4" onClick={() => setShowDeleteConfirm(false)}>
-          <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6" onClick={e => e.stopPropagation()}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="delete-confirm-title">
+          <button
+            type="button"
+            aria-label="Close confirmation"
+            className="absolute inset-0 bg-black/30 cursor-default"
+            tabIndex={-1}
+            onClick={() => setShowDeleteConfirm(false)}
+          />
+          <div className="relative z-10 bg-white rounded-2xl shadow-xl max-w-sm w-full p-6">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="font-heading font-bold text-lg text-slate-800">Delete Account?</h2>
+              <h2 id="delete-confirm-title" className="font-heading font-bold text-lg text-slate-800">Delete Account?</h2>
               <button
                 onClick={() => setShowDeleteConfirm(false)}
                 aria-label="Close delete confirmation"

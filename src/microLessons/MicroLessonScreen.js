@@ -297,10 +297,12 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
             <p className="text-gray-400 text-center py-2">Tap steps below to place them here</p>
           )}
           {orderedSteps.map((item, idx) => (
-            <div
+            <button
+              type="button"
               key={item.originalIndex}
-              onClick={() => !orderChecked && setOrderedSteps(prev => prev.filter((_, i) => i !== idx))}
-              className={`flex items-center gap-3 p-3 rounded-xl border-2 transition-all ${
+              disabled={orderChecked}
+              onClick={() => setOrderedSteps(prev => prev.filter((_, i) => i !== idx))}
+              className={`w-full text-left flex items-center gap-3 p-3 rounded-xl border-2 transition-all ${
                 orderChecked
                   ? item.originalIndex === idx
                     ? 'border-green-500 bg-green-50'
@@ -314,7 +316,7 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                   : 'bg-[#7C3AED] text-white'
               }`}>{idx + 1}</span>
               <span className="text-base font-medium">{renderBoldText(item.text)}</span>
-            </div>
+            </button>
           ))}
         </div>
 
@@ -469,7 +471,12 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
     const handleTfAnswer = (answer) => {
       if (tfShowFeedback) return;
       const current = statements[tfIndex];
-      const isCorrect = answer === current.answer;
+      // Accept both schemas: { answer: bool } (canonical) and { isTrue: bool }
+      // (wordclass + comprehension subconcept files were authored with the
+      // older field name). Bug reported by Jacqui 4 May 2026: every click
+      // was marked incorrect because current.answer was undefined.
+      const expected = current.answer ?? current.isTrue;
+      const isCorrect = answer === expected;
       const newAnswers = [...tfAnswers, { index: tfIndex, answer, correct: isCorrect }];
       setTfAnswers(newAnswers);
       setTfShowFeedback(true);
@@ -545,7 +552,21 @@ function InteractionArea({ interaction, variables, answer, submitted, correct, o
                   : 'bg-amber-50 border border-amber-300'
               }`}>
                 <p className="text-sm font-medium text-gray-700">
-                  {renderBoldText(statements[tfIndex].explanation)}
+                  {/* Per-statement explanation is the canonical source. Some
+                      older lesson files (wordclass, comprehension) put feedback
+                      at interaction-level — fall back so users see something
+                      either way. */}
+                  {renderBoldText(
+                    statements[tfIndex].explanation
+                    || (lastAnswer?.correct
+                          ? (typeof interaction.feedback?.correct === 'function'
+                              ? interaction.feedback.correct(variables)
+                              : interaction.feedback?.correct)
+                          : (typeof interaction.feedback?.incorrect === 'function'
+                              ? interaction.feedback.incorrect(variables)
+                              : interaction.feedback?.incorrect))
+                    || ''
+                  )}
                 </p>
               </div>
             )}
@@ -603,9 +624,16 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
       </button>
 
       {showModal && (
-        <div className="fixed inset-0 bg-black/50 z-[10000] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" onClick={e => e.stopPropagation()}>
-            <h3 className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2 mb-1">
+        <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="flag-issue-title">
+          <button
+            type="button"
+            aria-label="Close flag issue dialog"
+            className="absolute inset-0 bg-black/50 cursor-default"
+            tabIndex={-1}
+            onClick={() => setShowModal(false)}
+          />
+          <div className="relative z-10 bg-white rounded-2xl shadow-2xl max-w-md w-full p-6">
+            <h3 id="flag-issue-title" className="text-lg font-heading font-bold text-slate-800 flex items-center gap-2 mb-1">
               <Flag className="w-5 h-5 text-red-500" />
               Flag Issue
             </h3>
@@ -614,7 +642,7 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
             </p>
 
             <div className="mb-4">
-              <label className="block text-sm font-semibold text-slate-800 mb-2">What's wrong?</label>
+              <p className="block text-sm font-semibold text-slate-800 mb-2">What's wrong?</p>
               <div className="grid grid-cols-2 gap-2">
                 {categories.map(cat => (
                   <button
@@ -633,8 +661,9 @@ function TestingFlagButton({ onFlag, topicKey, topicName, subConceptId, subConce
             </div>
 
             <div className="mb-5">
-              <label className="block text-sm font-semibold text-slate-800 mb-1">Details (optional)</label>
+              <label htmlFor="flag-details" className="block text-sm font-semibold text-slate-800 mb-1">Details (optional)</label>
               <textarea
+                id="flag-details"
                 value={note}
                 onChange={e => setNote(e.target.value)}
                 placeholder="Describe what's wrong..."
@@ -1642,7 +1671,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       onKeyDown={(e) => e.key === 'Enter' && handleSendTutorMessage()}
                       placeholder={isListening ? "Listening..." : "Ask your question here..."}
                       disabled={isAiThinking}
-                      className={`flex-1 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 text-sm ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
+                      className={`flex-1 min-w-0 px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-[#7C3AED] disabled:bg-gray-100 text-sm ${isListening ? 'border-red-400 bg-red-50' : 'border-[#A29BFE]/30'}`}
                     />
                     {speechSupported && (
                       <button

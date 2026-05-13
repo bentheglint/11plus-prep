@@ -1,12 +1,12 @@
 import React, { useMemo, useEffect, useRef, useState } from 'react';
-import { Home, RotateCcw, Trophy, ThumbsUp, Zap, ArrowLeft, Clock } from 'lucide-react';
+import { Home, RotateCcw, Trophy, ThumbsUp, Zap, ArrowLeft, Clock, BookOpen } from 'lucide-react';
 import { motion } from '../components/Motion';
 import { animate as motionAnimate } from 'motion';
 import ResultsInsightCard from '../components/ResultsInsightCard';
 import { selectResultsInsightTip } from '../utils/tipSelection';
 import { celebrateHighScore } from '../utils/confetti';
 
-function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, onMarkTipSeen, onRetry, onChooseTopic, onHome }) {
+function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, onMarkTipSeen, onRetry, onChooseTopic, onHome, onReviewQuiz, canReview }) {
   const correctCount = answers.filter(a => a.correct).length;
   const totalCount = answers.length;
   const percentage = Math.round((correctCount / totalCount) * 100);
@@ -141,6 +141,33 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
 
           <ResultsInsightCard tip={insightTip} />
 
+          {canReview && onReviewQuiz && (
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.0, duration: 0.3 }}
+              className="w-full mb-4 bg-[#EDE8FF] rounded-2xl p-4"
+            >
+              <div className="mb-3">
+                <p className="font-heading font-bold text-slate-800 text-sm mb-1">
+                  You got {totalCount - correctCount} question{totalCount - correctCount !== 1 ? 's' : ''} wrong
+                </p>
+                <p className="text-slate-600 text-sm">
+                  Your tutor can explain {totalCount - correctCount === 1 ? 'it' : 'each one'} — find out why
+                </p>
+              </div>
+              <motion.button
+                onClick={onReviewQuiz}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                className="w-full py-3 btn-primary flex items-center justify-center"
+              >
+                <BookOpen className="w-5 h-5 mr-2" />
+                Review with tutor
+              </motion.button>
+            </motion.div>
+          )}
+
           <motion.div
             className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 12 }}
@@ -151,7 +178,7 @@ function ResultsScreen({ answers, quizMode, quizQuestions, allTips, seenTips, on
               onClick={onRetry}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-              className="flex-1 py-4 btn-primary flex items-center justify-center"
+              className={`flex-1 py-4 ${canReview ? 'bg-[#EDE8FF] hover:bg-[#DDD6FE] text-slate-800 font-heading font-bold rounded-xl transition-colors' : 'btn-primary'} flex items-center justify-center`}
             >
               <RotateCcw className="w-5 h-5 mr-2" />
               {quizMode === 'daily' ? 'New Daily Quiz' : quizMode === 'challenge' ? 'New Challenge' : 'Try Again'}
