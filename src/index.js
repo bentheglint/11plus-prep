@@ -43,11 +43,11 @@ const appTree = isDiagramViewer ? (
   <DiagramViewer />
 ) : (
   <AuthGate>
-    {(childName, getToken) => (
+    {(childName, getToken, access, activeChildId, childrenList, userEmail) => (
       <>
         <a href="#main-content" className="skip-to-content">Skip to content</a>
         <main id="main-content">
-          <AppLoader App={App} currentUser={childName} getToken={getToken} />
+          <AppLoader App={App} currentUser={childName} getToken={getToken} activeChildId={activeChildId} childrenList={childrenList || []} userEmail={userEmail || ''} />
           <DevReviewPanel />
         </main>
       </>

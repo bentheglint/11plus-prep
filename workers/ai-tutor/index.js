@@ -7,6 +7,13 @@ import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
 import { handleScheduled, handleTrialEmails } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook, reconcileSubscriptions } from './routes/stripe.js';
+import { handleTutorRoutes } from './routes/tutor.js';
+import { handleClassRoutes } from './routes/classes.js';
+import { handleAssignmentRoutes, runLateFlagJob } from './routes/assignments.js';
+import { handleNotesRoutes } from './routes/notes.js';
+import { handleReportRoutes } from './routes/report.js';
+import { handleMessagingRoutes } from './routes/messaging.js';
+import { handleRelationshipRoutes } from './routes/relationships.js';
 
 // ── Clerk JWT Verification ──
 
@@ -261,6 +268,11 @@ const worker = {
         return json({ ok: true });
       }
 
+      // Public tutor profile — no auth required (join page preview)
+      if (path.startsWith('/api/tutor/public/') && request.method === 'GET') {
+        return handleTutorRoutes(request, env, null, path);
+      }
+
       // AI tutor — backward compatible POST to root
       if (request.method === 'POST' && !path.startsWith('/api/')) {
         const limited = await checkRateLimit(env.TUTOR_LIMITER, request, 'tutor');
@@ -300,6 +312,34 @@ const worker = {
         // Account routes
         const accountResult = await handleAccountRoutes(request, env, userId, path);
         if (accountResult) return accountResult;
+
+        // Tutor routes
+        const tutorResult = await handleTutorRoutes(request, env, userId, path);
+        if (tutorResult) return tutorResult;
+
+        // Class management routes
+        const classResult = await handleClassRoutes(request, env, userId, path);
+        if (classResult) return classResult;
+
+        // Assignment routes (tutor-facing + parent-facing)
+        const assignResult = await handleAssignmentRoutes(request, env, userId, path);
+        if (assignResult) return assignResult;
+
+        // Tutor private notes
+        const notesResult = await handleNotesRoutes(request, env, userId, path);
+        if (notesResult) return notesResult;
+
+        // Report generation
+        const reportResult = await handleReportRoutes(request, env, userId, path);
+        if (reportResult) return reportResult;
+
+        // Messaging (tutor ↔ parent, polled)
+        const messagingResult = await handleMessagingRoutes(request, env, userId, path);
+        if (messagingResult) return messagingResult;
+
+        // Relationship management + bulk invite
+        const relResult = await handleRelationshipRoutes(request, env, userId, path);
+        if (relResult) return relResult;
 
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);

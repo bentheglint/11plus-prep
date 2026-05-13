@@ -1,11 +1,14 @@
 // ── Bulk Load, Migration, and Export Routes ──
 
-import { json, getChildId, BASE_HEADERS } from '../helpers.js';
+import { json, getChildId, resolveChildId, BASE_HEADERS } from '../helpers.js';
 
 // GET /api/data/all — Fetch ALL child data in one request (used on login)
+// Accepts optional ?child_id= query param to load a specific child's data.
 export async function handleBulkLoad(request, env, userId) {
   const db = env.DB;
-  const childId = await getChildId(db, userId);
+  const url = new URL(request.url);
+  const requestedChildId = url.searchParams.get('child_id') || null;
+  const childId = await resolveChildId(db, userId, requestedChildId);
   if (!childId) return json({ error: 'No child profile' }, 404);
 
   // Run all queries in parallel

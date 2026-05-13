@@ -26,8 +26,21 @@ export function json(data, status = 200) {
 
 // Get the child ID for an authenticated user. Returns null if no child profile.
 export async function getChildId(db, userId) {
-  const row = await db.prepare('SELECT id FROM children WHERE account_id = ?').bind(userId).first();
+  const row = await db.prepare('SELECT id FROM children WHERE account_id = ? ORDER BY created_at ASC').bind(userId).first();
   return row ? row.id : null;
+}
+
+// Resolve which child to use for a request. If requestedChildId is provided,
+// verifies it belongs to the userId and returns it. Otherwise falls back to
+// the first child (backwards-compat for single-child accounts).
+export async function resolveChildId(db, userId, requestedChildId) {
+  if (requestedChildId) {
+    const row = await db.prepare(
+      'SELECT id FROM children WHERE id = ? AND account_id = ?'
+    ).bind(requestedChildId, userId).first();
+    return row ? row.id : null;
+  }
+  return getChildId(db, userId);
 }
 
 // Origin allowlist check — blocks browser requests from unknown origins

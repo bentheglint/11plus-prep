@@ -1,11 +1,14 @@
-import React from 'react';
-import { BookOpen, Calculator, Brain, BarChart3, AlertCircle, Wrench, ClipboardCheck, ChevronRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, Calculator, Brain, BarChart3, AlertCircle, Wrench, ClipboardCheck, ChevronRight, ChevronDown, Users } from 'lucide-react';
 import { motion } from '../components/Motion';
 import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP }) {
+function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup }) {
+  const [showPicker, setShowPicker] = useState(false);
+  const hasMultipleChildren = childrenList.length > 1;
+  const activeChild = childrenList.find(c => c.id === activeChildId);
   // Get suggested topics — exactly one per subject (Maths, English, VR)
   const suggestions = (() => {
     if (!mastery) return [];
@@ -49,7 +52,45 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
               />
             )}
           </div>
-          <AccountMenu currentUser={currentUser} />
+          {/* Child picker — only shown when account has more than one child */}
+          {hasMultipleChildren && (
+            <div className="relative">
+              <button
+                onClick={() => setShowPicker(v => !v)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#F8F7FF] border border-[#A29BFE] text-[#7C3AED] text-sm font-bold hover:bg-[#EDE9FE] transition-colors"
+              >
+                <Users className="w-4 h-4" />
+                {activeChild?.display_name || currentUser}
+                <ChevronDown className="w-3 h-3" />
+              </button>
+              {showPicker && (
+                <>
+                  <div className="fixed inset-0 z-40" onClick={() => setShowPicker(false)} />
+                  <div className="absolute right-0 top-10 z-50 bg-white rounded-xl shadow-xl border border-gray-200 w-48 overflow-hidden">
+                    {childrenList.map(child => (
+                      <button
+                        key={child.id}
+                        onClick={() => { onSwitchChild(child.id); setShowPicker(false); }}
+                        className={`w-full flex items-center gap-2 px-4 py-2.5 text-sm text-left hover:bg-[#F8F7FF] transition-colors ${child.id === activeChildId ? 'font-bold text-[#7C3AED]' : 'text-slate-800'}`}
+                      >
+                        {child.display_name}
+                        {child.id === activeChildId && <span className="ml-auto text-[#7C3AED]">✓</span>}
+                      </button>
+                    ))}
+                    <div className="border-t border-gray-100">
+                      <button
+                        onClick={() => { onManageChildren(); setShowPicker(false); }}
+                        className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-slate-600 hover:bg-[#F8F7FF] transition-colors"
+                      >
+                        Manage children
+                      </button>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+          <AccountMenu currentUser={currentUser} onManageChildren={onManageChildren} onTutorSignup={onTutorSignup} />
         </div>
 
         {/* Greeting */}

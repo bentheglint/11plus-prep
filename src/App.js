@@ -43,6 +43,7 @@ import { selectWeightedTopics } from './utils/spacedRepetition';
 import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
 import { checkAnswerCorrectness, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
 import { getQuizSaveKey, buildQuizSaveState, isQuizExpired, parseAndValidateQuiz } from './utils/quizPersistence';
+import { isTutorAllowlisted } from './utils/tutorAllowlist';
 import useLeitner from './hooks/useLeitner';
 import useTestingCoverage from './hooks/useTestingCoverage';
 import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMode';
@@ -53,6 +54,11 @@ import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
 import { setCurrentView as setErrorBoundaryView } from './components/ErrorBoundary';
 import MistakesScreen from './screens/MistakesScreen';
+import ChildrenScreen from './screens/ChildrenScreen';
+import JoinScreen from './screens/JoinScreen';
+import TutorSignupScreen from './screens/TutorSignupScreen';
+import TutorDashboardScreen from './screens/TutorDashboardScreen';
+import { ParentMessagingScreen } from './screens/MessagingScreen';
 import { selectWelcomeBackTip } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
@@ -66,7 +72,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -99,8 +105,35 @@ function App({ currentUser: authUser, getToken, loadedData }) {
     }
   }, [authUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Active child state — persisted to localStorage so it survives reloads.
+  // On mount: use prop value (from AuthGate) as the source of truth.
+  // Falls back to stored value or the first child if prop isn't available.
+  const [activeChildId, setActiveChildIdState] = useState(() => {
+    return initialChildId || localStorage.getItem('active-child-id') || null;
+  });
+  const [childrenList, setChildrenList] = useState(() => initialChildrenList || []);
+
+  // Sync when AuthGate provides fresh data (login / page reload)
+  useEffect(() => {
+    if (initialChildId && initialChildId !== activeChildId) {
+      setActiveChildIdState(initialChildId);
+      localStorage.setItem('active-child-id', initialChildId);
+    }
+  }, [initialChildId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (initialChildrenList?.length) setChildrenList(initialChildrenList);
+  }, [initialChildrenList]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const setActiveChildId = (childId) => {
+    setActiveChildIdState(childId);
+    localStorage.setItem('active-child-id', childId);
+    // When switching children, bump back to home so we don't show stale data
+    setCurrentView('home');
+  };
+
   // Per-user data isolation — all progress data keyed by user name
-  const userData = useD1Data(currentUser, getToken);
+  const userData = useD1Data(currentUser, getToken, activeChildId);
   const { quizHistory, topicPerformance, seenQuestions, lessonHistory, questionResults, practiceLog } = userData;
 
   // Mastery scoring engine (computed from question results)
@@ -128,7 +161,22 @@ function App({ currentUser: authUser, getToken, loadedData }) {
 
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
-  const [currentView, setCurrentView] = useState('home');
+  // Detect /join/<tutorCode> path on mount and redirect to the join view
+  const [joinTutorCode, setJoinTutorCode] = useState(() => {
+    const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+    return pathMatch ? pathMatch[1].toUpperCase() : null;
+  });
+
+  const [currentView, setCurrentView] = useState(() => {
+    const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+    if (pathMatch) return 'join';
+    // Dev preview bypass — ?preview=tutor or ?preview=tutorDashboard
+    const previewParam = process.env.NODE_ENV === 'development'
+      && new URLSearchParams(window.location.search).get('preview');
+    if (previewParam === 'tutor') return 'tutorSignup';
+    if (previewParam === 'tutorDashboard' || previewParam === 'tutorEmpty') return 'tutorDashboard';
+    return 'home';
+  });
 
   // Keep error boundary view context in sync for Sentry error reports
   React.useEffect(() => { setErrorBoundaryView(currentView); }, [currentView]);
@@ -1626,6 +1674,68 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     );
   }
 
+  if (currentView === 'children') {
+    return (
+      <ChildrenScreen
+        childrenList={childrenList}
+        activeChildId={activeChildId}
+        getToken={getToken}
+        onBack={() => setCurrentView('home')}
+        onSwitchChild={setActiveChildId}
+        onChildrenUpdated={setChildrenList}
+      />
+    );
+  }
+
+  if (currentView === 'join') {
+    return (
+      <JoinScreen
+        tutorCode={joinTutorCode}
+        childrenList={childrenList}
+        getToken={getToken}
+        onJoined={(childId) => {
+          // Clear the join path from the URL, then go home
+          window.history.replaceState({}, '', '/');
+          setActiveChildId(childId);
+          setCurrentView('home');
+        }}
+        onBack={() => {
+          window.history.replaceState({}, '', '/');
+          setCurrentView('home');
+        }}
+      />
+    );
+  }
+
+  if (currentView === 'tutorSignup') {
+    return (
+      <TutorSignupScreen
+        getToken={getToken}
+        onBack={() => setCurrentView('home')}
+        onOpenDashboard={() => setCurrentView('tutorDashboard')}
+      />
+    );
+  }
+
+  if (currentView === 'tutorDashboard') {
+    return (
+      <TutorDashboardScreen
+        getToken={getToken}
+        onBack={() => setCurrentView('tutorSignup')}
+      />
+    );
+  }
+
+  if (currentView === 'parentMessages') {
+    return (
+      <ParentMessagingScreen
+        activeChildId={activeChildId}
+        getToken={getToken}
+        onBack={() => setCurrentView('progress')}
+      />
+    );
+  }
+
   if (currentView === 'errors') {
     return <ErrorDashboardScreen onBack={() => setCurrentView('home')} />;
   }
@@ -1650,6 +1760,11 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
         mastery={mastery}
         streaksAndPP={streaksAndPP}
+        childrenList={childrenList}
+        activeChildId={activeChildId}
+        onSwitchChild={setActiveChildId}
+        onManageChildren={() => setCurrentView('children')}
+        onTutorSignup={isTutorAllowlisted(userEmail) ? () => setCurrentView('tutorSignup') : null}
       />
     );
   }
@@ -2092,6 +2207,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         userData={userData}
         currentUser={currentUser}
         getToken={getToken}
+        activeChildId={activeChildId}
         onHome={handleHome}
         onStartTopic={(subject, topicKey) => {
           setSelectedSubject(subject);
@@ -2107,6 +2223,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           setCurrentView('quizDetail');
         }}
         onViewAllActivity={() => setCurrentView('allActivity')}
+        onOpenParentMessages={() => setCurrentView('parentMessages')}
       />
     );
   }

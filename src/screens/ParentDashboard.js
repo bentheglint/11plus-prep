@@ -10,11 +10,13 @@ import MockTestHistory from '../components/progress/MockTestHistory';
 import SpeedTracking from '../components/progress/SpeedTracking';
 import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant';
 import ParentGuidance from '../components/progress/ParentGuidance';
+import TutorHomeworkCard from '../components/progress/TutorHomeworkCard';
+import TutorManagementCard from '../components/progress/TutorManagementCard';
 import parentGuides from '../data/parentGuides';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
-function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, onTopicClick, onHome }) {
+function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome, onOpenParentMessages }) {
   const practiceDays = streaksAndPP.getPracticeDays(84);
   const { signOut } = useClerk();
   const [deleteState, setDeleteState] = useState('idle'); // idle | confirm | deleting | done
@@ -135,6 +137,16 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-4xl mx-auto">
         {/* Header handled by ProgressScreen tabs */}
+
+        {/* Tutor Homework card — dormant when no tutor has assigned anything */}
+        <TutorHomeworkCard activeChildId={activeChildId} getToken={getToken} />
+
+        {/* Tutor management — dormant when no tutors linked */}
+        <TutorManagementCard
+          activeChildId={activeChildId}
+          getToken={getToken}
+          onOpenMessages={onOpenParentMessages}
+        />
 
         {/* The most important card — answers "Is my child on track?" */}
         <OnTrackCard

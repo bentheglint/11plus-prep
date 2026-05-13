@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useClerk, useAuth, useUser } from '@clerk/clerk-react';
-import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard } from 'lucide-react';
+import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard, Users, GraduationCap } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
@@ -21,7 +21,7 @@ function AccountMenuSmoke({ currentUser }) {
   );
 }
 
-function AccountMenuReal({ currentUser }) {
+function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup }) {
   const { signOut } = useClerk();
   const { getToken } = useAuth();
   const { user } = useUser();
@@ -154,6 +154,24 @@ function AccountMenuReal({ currentUser }) {
 
             {/* Menu items */}
             <div className="py-1">
+              {onManageChildren && (
+                <button
+                  onClick={() => { setShowMenu(false); onManageChildren(); }}
+                  className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
+                >
+                  <Users className="w-4 h-4 text-[#7C3AED]" />
+                  Manage Children
+                </button>
+              )}
+              {onTutorSignup && (
+                <button
+                  onClick={() => { setShowMenu(false); onTutorSignup(); }}
+                  className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
+                >
+                  <GraduationCap className="w-4 h-4 text-[#7C3AED]" />
+                  Tutor profile
+                </button>
+              )}
               <button
                 onClick={handleManageSubscription}
                 className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"

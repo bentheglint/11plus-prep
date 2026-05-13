@@ -3,7 +3,7 @@
 // Each operation executes in its own tiny atomic db.batch() of
 // (data-stmt + uuid-marker) so a UUID race on one op never rolls back others.
 
-import { json, getChildId } from '../helpers.js';
+import { json, resolveChildId } from '../helpers.js';
 
 const MAX_OPS_PER_REQUEST = 100;
 const MAX_PP_DELTA_PER_OP = 500;
@@ -207,11 +207,11 @@ function isUuidConflictError(err) {
 
 export async function handleBatch(request, env, userId) {
   const db = env.DB;
-  const childId = await getChildId(db, userId);
-  if (!childId) return json({ error: 'No child profile. Create one first.' }, 404);
-
   const body = await request.json();
   const operations = body.operations;
+  const requestedChildId = body.child_id || null;
+  const childId = await resolveChildId(db, userId, requestedChildId);
+  if (!childId) return json({ error: 'No child profile. Create one first.' }, 404);
   if (!Array.isArray(operations) || operations.length === 0) {
     return json({ error: 'operations must be a non-empty array' }, 400);
   }

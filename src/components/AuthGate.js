@@ -264,6 +264,8 @@ function AuthGateReal({ children }) {
   const [authView, setAuthView] = useState('landing'); // landing | signin | signup
   const [onboardingStep, setOnboardingStep] = useState(null); // null | 'consent' | 'childName' | 'ready' | 'subscribe'
   const [childName, setChildName] = useState(null);
+  const [activeChildId, setActiveChildId] = useState(null);
+  const [childrenList, setChildrenList] = useState([]);
   const [access, setAccess] = useState(null); // { hasAccess, inTrial, trialDaysRemaining, subscriptionStatus, isComped }
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -302,16 +304,18 @@ function AuthGateReal({ children }) {
       const token = await getToken();
       const data = await apiFetch('/api/account', token);
       if (data.access) setAccess(data.access);
-      if (data.account && data.child) {
-        // D1 data loading is now handled by useD1Data hook — no seedLocalStorage needed
-        setChildName(data.child.display_name);
-        // Access gate — Option B trial: 7 days free without card, then paywall
+      const allChildren = data.children || [];
+      const firstChild = allChildren[0] || null;
+      if (data.account && firstChild) {
+        setChildrenList(allChildren);
+        setChildName(firstChild.display_name);
+        setActiveChildId(firstChild.id);
         if (data.access && !data.access.hasAccess) {
           setOnboardingStep('subscribe');
         } else {
           setOnboardingStep('ready');
         }
-      } else if (data.account && !data.child) {
+      } else if (data.account && !firstChild) {
         setOnboardingStep('childName');
       }
     } catch (err) {
@@ -386,12 +390,16 @@ function AuthGateReal({ children }) {
       setError(null);
       const token = await getToken();
 
-      await apiFetch('/api/account/child', token, {
+      const res = await apiFetch('/api/account/child', token, {
         method: 'POST',
         body: JSON.stringify({ displayName }),
       });
 
       setChildName(displayName);
+      if (res?.childId) {
+        setActiveChildId(res.childId);
+        setChildrenList([{ id: res.childId, display_name: displayName }]);
+      }
       // Go straight to app — no migration step for new accounts.
       setOnboardingStep('ready');
     } catch (err) {
@@ -496,9 +504,10 @@ function AuthGateReal({ children }) {
     );
   }
 
-  // Ready — render the app with child name + access info
+  // Ready — render the app with child name + access info + active child ID + children list
   if (onboardingStep === 'ready') {
-    return children(childName, getToken, access);
+    const userEmail = user?.primaryEmailAddress?.emailAddress || '';
+    return children(childName, getToken, access, activeChildId, childrenList, userEmail);
   }
 
   // Fallback loading
