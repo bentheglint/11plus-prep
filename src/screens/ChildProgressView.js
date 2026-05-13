@@ -97,9 +97,9 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
             {topicMasteries.map(topic => {
               const colour = subjectConfig[selectedSubject]?.colour || '#7C3AED';
               const masteryScale = {
-                '#3B82F6': ['#DBEAFE', '#BFDBFE', '#93C5FD', '#3B82F6'],
-                '#22C55E': ['#DCFCE7', '#BBF7D0', '#86EFAC', '#22C55E'],
-                '#7C3AED': ['#EDE9FE', '#DDD6FE', '#C4B5FD', '#7C3AED'],
+                '#3B82F6': ['#EFF6FF', '#BFDBFE', '#60A5FA', '#1D4ED8'],
+                '#22C55E': ['#F0FDF4', '#BBF7D0', '#4ADE80', '#15803D'],
+                '#7C3AED': ['#F5F3FF', '#DDD6FE', '#A78BFA', '#6D28D9'],
               };
               const scale = masteryScale[colour] || masteryScale['#7C3AED'];
               const cardBg = topic.score >= 90 ? '#FDCB6E'

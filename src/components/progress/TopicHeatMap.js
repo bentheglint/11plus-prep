@@ -8,11 +8,12 @@ const subjects = [
   { key: 'verbalreasoning', name: 'VR', icon: Brain, colour: '#7C3AED', rgb: '108,92,231' },
 ];
 
-// Solid hex scale per subject: index 0=1★ Exploring … index 3=4★ Strong. Full colour at index 3.
+// Solid hex scale per subject: index 0=1★ Exploring … index 3=4★ Strong.
+// Uses 50/200/400/700 Tailwind steps so each level is clearly distinct.
 const masteryScale = {
-  '#3B82F6': ['#DBEAFE', '#BFDBFE', '#93C5FD', '#3B82F6'],
-  '#22C55E': ['#DCFCE7', '#BBF7D0', '#86EFAC', '#22C55E'],
-  '#7C3AED': ['#EDE9FE', '#DDD6FE', '#C4B5FD', '#7C3AED'],
+  '#3B82F6': ['#EFF6FF', '#BFDBFE', '#60A5FA', '#1D4ED8'],
+  '#22C55E': ['#F0FDF4', '#BBF7D0', '#4ADE80', '#15803D'],
+  '#7C3AED': ['#F5F3FF', '#DDD6FE', '#A78BFA', '#6D28D9'],
 };
 
 function TopicHeatMap({ mastery, onTopicClick }) {
