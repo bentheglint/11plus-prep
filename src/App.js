@@ -161,15 +161,18 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
 
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
-  // Detect /join/<tutorCode> path on mount and redirect to the join view
+  // Detect /join/<tutorCode> path on mount — also check sessionStorage so the
+  // code survives Clerk's sign-in redirect (which lands on /, not /join/<code>).
   const [joinTutorCode, setJoinTutorCode] = useState(() => {
     const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
-    return pathMatch ? pathMatch[1].toUpperCase() : null;
+    if (pathMatch) return pathMatch[1].toUpperCase();
+    try { return sessionStorage.getItem('pending-join-code') || null; } catch { return null; }
   });
 
   const [currentView, setCurrentView] = useState(() => {
     const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
     if (pathMatch) return 'join';
+    try { if (sessionStorage.getItem('pending-join-code')) return 'join'; } catch {};
     // Dev preview bypass — ?preview=tutor or ?preview=tutorDashboard
     const previewParam = process.env.NODE_ENV === 'development'
       && new URLSearchParams(window.location.search).get('preview');
@@ -1694,8 +1697,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         childrenList={childrenList}
         getToken={getToken}
         onJoined={(childId) => {
-          // Clear the join path from the URL, then go home
+          // Clear the join path from the URL and any saved join code, then go home
           window.history.replaceState({}, '', '/');
+          try { sessionStorage.removeItem('pending-join-code'); } catch {}
           setActiveChildId(childId);
           setCurrentView('home');
         }}

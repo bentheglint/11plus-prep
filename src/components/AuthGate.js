@@ -270,6 +270,16 @@ function AuthGateReal({ children }) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  // Tutor join code — captured from /join/<code> path on first mount. Persists
+  // in sessionStorage so it survives Clerk's sign-in redirect (which lands on /).
+  // App.js reads it back after sign-in and routes to the join view.
+  useState(() => {
+    try {
+      const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+      if (pathMatch) sessionStorage.setItem('pending-join-code', pathMatch[1].toUpperCase());
+    } catch {}
+  });
+
   // Invite code — captured from URL ?invite=CODE on first mount. Persists
   // in localStorage so it survives the Clerk signup redirect round-trip and
   // is consumed when we POST /api/account after consent.
