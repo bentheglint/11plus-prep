@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, AlertCircle, ArrowUpRight, Clock, Target, TrendingUp, TrendingDown, BookOpen, Flame } from 'lucide-react';
+import { formatTopicKey } from '../../utils/topicLabels';
 
 // The "On Track" card — the most important visual on the parent dashboard.
 // Answers the one question every parent has: "Is my child on track?"
@@ -87,7 +88,7 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
     message = `${firstName} ${dayText}. Knowledge fades quickly without regular revision — ${decayedTopics.length > 0 ? `${decayedTopics.length} topic${decayedTopics.length !== 1 ? 's are' : ' is'} already losing mastery` : 'topics will start losing mastery soon'}. Getting back to 4-5 short sessions per week will make the biggest difference right now.`;
     details = [
       { icon: Flame, text: 'Consistency matters more than long sessions — little and often is key' },
-      { icon: Target, text: `Start with ${focusAreas[0] ? focusAreas[0].topicKey.replace(/([A-Z])/g, ' $1').trim() : 'any topic'} — it needs attention most` },
+      { icon: Target, text: `Start with ${focusAreas[0] ? formatTopicKey(focusAreas[0].topicKey) : 'any topic'} — it needs attention most` },
     ];
   } else {
     // Has data and is practising — evaluate quality
@@ -154,9 +155,7 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
 
       // Check declining topics
       if (decliningTopics.length > 0) {
-        const topicDisplayNames = decliningTopics.slice(0, 2).map(t =>
-          t.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()).trim()
-        );
+        const topicDisplayNames = decliningTopics.slice(0, 2).map(t => formatTopicKey(t));
         issues.push(`accuracy is dropping in ${topicDisplayNames.join(' and ')}`);
         actionDetails.push({ icon: TrendingDown, text: `Revisit ${topicDisplayNames.join(' and ')} to reverse the decline` });
       }

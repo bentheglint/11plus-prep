@@ -11,6 +11,7 @@ import SpeedTracking from '../components/progress/SpeedTracking';
 import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant';
 import ReportScreen from './ReportScreen';
 import MessageThread from '../components/MessageThread';
+import { formatTopicKey } from '../utils/topicLabels';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -384,7 +385,7 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
                   <div key={i} className="flex items-center gap-3 py-2 border-b border-slate-100 last:border-b-0">
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium text-slate-800 capitalize">
-                        {r.topic_key?.replace(/([A-Z])/g, ' $1').trim() || r.topic_key}
+                        {formatTopicKey(r.topic_key)}
                         <span className="text-slate-400 font-normal text-xs"> · {r.subject}</span>
                       </p>
                       <p className="text-xs text-slate-400">

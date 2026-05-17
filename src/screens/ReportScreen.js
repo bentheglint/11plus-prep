@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Printer, Loader, AlertCircle } from 'lucide-react';
+import { formatTopicKey } from '../utils/topicLabels';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -121,7 +122,7 @@ export default function ReportScreen({ childId, getToken, onBack }) {
   const { child, summary, subjectMastery, weakestTopics, strongestTopics, mockTests, assignments, recommendations, tutorName, generatedAt } = report;
 
   const subjectLabel = { maths: 'Maths', english: 'English', verbalreasoning: 'Verbal Reasoning' };
-  const topicLabel = (key) => key.replace(/([A-Z])/g, ' $1').trim();
+  const topicLabel = formatTopicKey;
   const completionRate = assignments.total > 0
     ? Math.round((assignments.completed / assignments.total) * 100)
     : null;

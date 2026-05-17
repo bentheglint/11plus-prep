@@ -100,8 +100,8 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
       // Insert items
       const itemRows = items.map(item => ({ id: crypto.randomUUID(), assignment_id: assignmentId, ...item }));
       const itemStmts = itemRows.map(item =>
-        db.prepare('INSERT INTO assignment_items (id, assignment_id, item_type, item_ref) VALUES (?, ?, ?, ?)')
-          .bind(item.id, assignmentId, item.itemType, item.itemRef)
+        db.prepare('INSERT INTO assignment_items (id, assignment_id, item_type, item_ref, subject) VALUES (?, ?, ?, ?, ?)')
+          .bind(item.id, assignmentId, item.itemType, item.itemRef, item.subject || null)
       );
       await db.batch(itemStmts);
 
@@ -195,7 +195,7 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
 
       const { results: recipients } = await db.prepare(`
         SELECT ar.*,
-               ai.item_type, ai.item_ref,
+               ai.item_type, ai.item_ref, ai.subject,
                a.title AS assignment_title, a.due_date,
                t.display_name AS tutor_name
         FROM assignment_recipients ar
@@ -237,12 +237,12 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
       }
 
       if (action === 'complete') {
-        const { score } = await request.json().catch(() => ({}));
+        const { score, questionResults } = await request.json().catch(() => ({}));
         await db.prepare(`
           UPDATE assignment_recipients
-          SET status = 'completed', completed_at = ?, score = ?
+          SET status = 'completed', completed_at = ?, score = ?, question_results = ?
           WHERE id = ? AND status IN ('assigned', 'in_progress')
-        `).bind(now, score ?? null, recipientId).run();
+        `).bind(now, score ?? null, questionResults ? JSON.stringify(questionResults) : null, recipientId).run();
       }
 
       const updated = await db.prepare('SELECT * FROM assignment_recipients WHERE id = ?').bind(recipientId).first();

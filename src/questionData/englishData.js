@@ -9295,7 +9295,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "'rane' should be 'rain'. The 'ai' vowel pair makes the long 'a' sound: R-AI-N. Say the word slowly — listen for each sound. ✓"
         },
         {
@@ -10912,7 +10912,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "'volcanos' should be 'volcanoes'. The correct plural adds '-es': volcano → volcanoes. This is a common exam word — worth practising! ✓"
         },
         {
@@ -12067,7 +12067,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "'consciense' should be 'conscience'. Remember: CON-SCI-ENCE — it ends in '-ence' with a 'c'. Break it into chunks to spot the tricky bit. ✓"
         },
         {
@@ -12739,7 +12739,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "'refurbishmant' should be 'refurbishment'. It ends in '-ment', not '-mant': refurbish-MENT. Sound it out carefully — the spelling matches the sounds. ✓"
         },
         {
@@ -13243,7 +13243,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "'facilty' should be 'facility'. Remember: fac-IL-I-TY — there are two 'i's. If unsure, try covering the options and spelling it yourself first. ✓"
         },
         {
@@ -13348,7 +13348,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "There is no spelling mistake. 'Thoroughly', 'professional', 'safeguarding', and 'acknowledged' are all correct. This one catches loads of people — now you know! ✓"
         },
         {
@@ -16916,10 +16916,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["We bought apples","and bananas from","the market oranges","grapes and pears."],
+          "segments": ["At the market we bought","apples bananas","oranges and pears","for the school picnic."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 2,
-          "explanation": "Commas are needed to separate the items in this list. Without them, the words all run together and it's hard to tell where one item ends and the next begins. Put a comma after each item except the last one (before 'and'). ✓"
+          "correct": 1,
+          "explanation": "A comma is needed between 'apples' and 'bananas' to separate them in the list. When you list three or more items, you put a comma after each one (except the last, which is joined with 'and'). The corrected list reads: 'apples, bananas, oranges and pears'. Without that first comma, the words run straight into each other. ✓"
         },
         {
           "id": 217,
@@ -17548,7 +17548,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["The results were","disappointing, moreover","several pupils had","not revised at all."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
         },
         {
@@ -17558,7 +17558,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["Some children liked","the quiet reading corner,","others preferred the","computer area."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
         },
         {
@@ -17726,10 +17726,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The old oak tree","which had stood","for centuries was","finally cut down."],
+          "segments": ["The old oak tree,","which had stood","for centuries was","finally cut down."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed after 'centuries' to close the relative clause. 'Which had stood for centuries' is extra information about the tree that could be removed, so it needs commas around it. The error in Section C is the missing closing comma. Corrected: 'The old oak tree, which had stood for centuries, was finally cut down.' ✓"
+          "explanation": "A comma is needed after 'centuries' to close off the relative clause. 'Which had stood for centuries' is extra information about the tree — the kind of detail you could lift straight out and the sentence would still make sense. Extra information like this needs commas at BOTH ends to fence it off. The opening comma after 'tree' is already there; the closing one after 'centuries' is missing. Corrected: 'The old oak tree, which had stood for centuries, was finally cut down.' ✓"
         },
         {
           "id": 298,
@@ -18689,7 +18689,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["\"Have you finished","your homework?\" asked Dad.","\"Not yet\" replied","Emma, \"but I will soon.\""],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "The comma (or full stop, or question mark) needs to go INSIDE the speech marks, not outside. Think of it this way: the punctuation belongs to the person speaking, so it stays inside their speech marks. ✓"
+          "explanation": "A comma is needed after 'yet' INSIDE the speech marks: '\"Not yet,\" replied Emma'. When speech comes before the reporting clause ('replied Emma'), a comma replaces the full stop and sits inside the closing speech marks. Without it, the speech and the reporting clause run straight into each other. ✓"
         },
         {
           "id": 394,
@@ -19059,7 +19059,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "segments": ["We adopted a two","year old rescue dog","from the shelter","on Saturday morning."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 0,
-          "explanation": "'Two year old' needs hyphens: 'two-year-old'. When a number-plus-unit phrase describes a noun ('two-year-old dog'), the hyphens glue the words together into one compound adjective. Without them, the reader might stumble over which words belong together. This rule works the same way for any age or measurement: 'a three-metre-long snake', 'a five-minute walk'. ✓"
+          "explanation": "'Two year old' needs hyphens to glue it into one describing phrase: 'two-year-old rescue dog'. The error begins in Section A (where 'two' should already be hyphenated to 'year'), and the hyphenation carries on into Section B as well — but in this question type, we mark the section where the error first appears. When a number-plus-unit phrase describes a noun, the hyphens hold the words together so the reader doesn't stumble. The same rule gives us 'a three-metre-long snake' and 'a five-minute walk'. ✓"
         },
         {
           "id": 431,
@@ -19186,10 +19186,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         },
         {
           id: 12, difficulty: 1,
-          question: "Choose the correct word to complete the sentence: 'She ___ her homework before dinner every day.'",
+          question: "Choose the correct word to complete the sentence: 'She always ___ her homework before dinner, then helps with the washing-up.'",
           options: ["do", "does", "done", "doing", "did"],
           correct: 1,
-          explanation: "With 'she' (third person singular, present tense), we use 'does'. 'Do' is for I/you/we/they. ✓"
+          explanation: "The word 'always' and the linked verb 'helps' tell us this sentence is in the present tense. With 'she' (third person singular) in the present, we add 's' to the verb: 'does'. 'Did' would only fit a past-tense sentence, but 'helps' here is present, so 'did' cannot work. ✓"
         },
         {
           id: 13, difficulty: 1,
@@ -19720,10 +19720,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           id: 81,
           difficulty: 1,
-          question: "Choose the correct word to complete the sentence: 'The windows ___ cleaned every Friday by the caretaker.'",
+          question: "Choose the correct word to complete the sentence: 'The windows ___ cleaned every Friday and the floors are polished every Monday.'",
           options: ["is","was","has","were","are"],
           correct: 4,
-          explanation: "'Windows' is plural and 'every Friday' tells us this is a regular present action. In the passive voice with a plural subject, we use 'are + past participle': 'The windows are cleaned.' ✓"
+          explanation: "The matching phrase 'are polished every Monday' tells us this sentence is in the present tense, so we need the present passive too. 'Windows' is plural, so we use 'are + past participle': 'are cleaned'. 'Were' would only fit a past-tense sentence, but 'are polished' fixes the tense as present. ✓"
         },
         {
           id: 82,
@@ -19832,7 +19832,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           id: 95,
           difficulty: 1,
-          question: "Choose the correct word to complete the sentence: '___ going to be late if we do not hurry.'",
+          question: "Choose the correct word to complete the sentence: '___ going to be late if they do not hurry.'",
           options: ["Their","There","Theirs","They're","Them"],
           correct: 3,
           explanation: "'They're' is short for 'they are'. The sentence means 'They are going to be late', so 'they're' is correct. 'Their' means belonging to them, and 'there' refers to a place. ✓"
@@ -20160,7 +20160,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 121,
           "difficulty": 1,
-          "question": "Choose the correct word to complete the sentence: 'She ___ her breakfast every morning before school.'",
+          "question": "Choose the correct word to complete the sentence: 'She ___ her breakfast every morning and always leaves the house at eight.'",
           "options": [
             "ate",
             "eats",
@@ -20169,7 +20169,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "eaten"
           ],
           "correct": 1,
-          "explanation": "'Every morning' tells us this is a regular habit in the present. With 'she' (third person singular), we add 's' to the verb: 'eats'. ✓"
+          "explanation": "The verb 'leaves' tells us this is a present-tense sentence about her daily routine. With 'she' (third person singular) in the present, we add 's' to the verb: 'eats'. 'Ate' would only fit a past-tense sentence, but 'leaves' here is present, so 'ate' cannot work. ✓"
         },
         {
           "id": 122,
@@ -20398,7 +20398,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 138,
           "difficulty": 1,
-          "question": "Choose the correct word to complete the sentence: 'Tom ___ his teeth every night before bed.'",
+          "question": "Choose the correct word to complete the sentence: 'Tom ___ his teeth every night and reads a book before he goes to sleep.'",
           "options": [
             "brush",
             "brushing",
@@ -20407,7 +20407,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "is brush"
           ],
           "correct": 2,
-          "explanation": "'Every night' tells us this is a regular habit. With 'Tom' (he, third person singular), we add 'es' to the verb: 'brushes'. ✓"
+          "explanation": "The verbs 'reads' and 'goes' tell us this sentence is in the present tense, describing what Tom does each night. With 'Tom' (he, third person singular), we add 'es' to the verb 'brush' to make 'brushes'. 'Brushed' would only fit a past-tense sentence. ✓"
         },
         {
           "id": 139,
@@ -22101,7 +22101,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "to open"
           ],
           "correct": 3,
-          "explanation": "'Will be opened' is the future passive. After 'will be', we need the past participle: 'opened'. This describes something that will happen in the future. ✓"
+          "explanation": "'Will be opened' is the future passive: someone (not named) will open the hall. After 'will be' we need the past participle, which is 'opened'. 'Opening' is the -ing form and only works after 'will be' when the subject is doing the action itself — e.g. 'The hall will be opening at 9am.' Here, the hall doesn't open itself; it is opened by people, so we need 'opened'. ✓"
         },
         {
           "id": 260,
@@ -30261,11 +30261,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "wind",
             "bitter",
             "howled",
-            "empty",
+            "through",
             "streets"
           ],
           "correct": 1,
-          "explanation": "'Bitter' is an adjective describing the wind (how it felt). Note that 'empty' is also an adjective describing the streets, but 'bitter' appears first and is the answer here. ✓"
+          "explanation": "'Bitter' is an adjective — it describes the wind, telling us how it felt. The other options test different word classes: 'wind' and 'streets' are nouns, 'howled' is a verb, and 'through' is a preposition. Look for the word that describes a noun. ✓"
         },
         {
           "id": 124,
@@ -31143,11 +31143,11 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "colourful",
             "butterfly",
             "landed",
-            "pink",
+            "on",
             "flower"
           ],
           "correct": 0,
-          "explanation": "'Colourful' is an adjective — it describes the butterfly, telling us it had many bright colours. 'Pink' is also an adjective, but 'colourful' is listed first. ✓"
+          "explanation": "'Colourful' is an adjective — it describes the butterfly, telling us it had many bright colours. The other options test different word classes: 'butterfly' and 'flower' are nouns, 'landed' is a verb, and 'on' is a preposition. Look for the word that describes a noun. ✓"
         },
         {
           "id": 187,
@@ -31460,7 +31460,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 209,
           "difficulty": 3,
-          "question": "In the sentence 'The which group should we join question was difficult', what type of word is 'which' in 'Which group should we join?'?",
+          "question": "In the question 'Which group should we join?', what type of word is 'which'?",
           "options": [
             "Pronoun",
             "Conjunction",
@@ -33306,8 +33306,8 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "question": "In 'Please round the corner carefully', what word class is 'round'?",
           "options": ["Adjective", "Adverb", "Noun", "Verb", "Preposition"],
-          "correct": 4,
-          "explanation": "'Round' is a PREPOSITION here — it shows the relationship between the action and 'the corner'. 'Round' can also be an adjective ('a round ball'), a noun ('the next round'), or a verb ('round the number up'). ✓"
+          "correct": 3,
+          "explanation": "'Round' is a VERB here — it is the action the sentence is telling someone to do. This is an imperative sentence: 'Please [you] round the corner carefully', meaning 'go around the corner carefully'. We can tell 'round' is the verb because 'carefully' is an adverb describing how to do the action, and adverbs describe verbs. 'Round' can also be an adjective ('a round ball'), a noun ('the next round'), or a preposition ('she walked round the corner') — but in this sentence it is the main verb. ✓"
         },
         {
           "id": 349,
@@ -33520,10 +33520,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 375,
           "difficulty": 3,
-          "question": "In 'His performance was incredible', is 'his' a pronoun or a determiner?",
+          "question": "In 'His performance was incredible', what word class is 'his'?",
           "options": ["Pronoun — it replaces a name", "Determiner — it comes before a noun", "Adjective — it describes the performance", "Adverb — it describes how he performed", "Conjunction — it joins two ideas"],
           "correct": 1,
-          "explanation": "'His' is a DETERMINER here because it comes before the noun 'performance'. It tells us whose performance. When 'his' stands alone ('The book is his'), it's a pronoun. The key test: is there a noun after it? ✓"
+          "explanation": "'His' is a DETERMINER here because it sits before the noun 'performance' and tells us whose performance. The quick test: is there a noun straight after it? If yes, it's a determiner. When 'his' stands alone — 'The book is his' — there's no noun after it, so it becomes a pronoun instead. Same word, different job depending on what follows. ✓"
         },
         {
           "id": 376,
@@ -33660,7 +33660,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which word is a preposition in: 'The cat jumped over the wall and through the hedge'?",
           "options": ["over", "wall", "and", "jumped", "cat"],
           "correct": 0,
-          "explanation": "'Over' is a preposition — it shows the relationship between 'jumped' and 'the wall'. 'Through' is also a preposition. Prepositions show position, direction, or time. ✓"
+          "explanation": "'Over' is a preposition — it shows the position of the cat in relation to the wall (the cat moved from one side to the other). Prepositions show position, direction, or time. Of the options here, 'cat' and 'wall' are nouns, 'jumped' is a verb, and 'and' is a conjunction — only 'over' is a preposition. ✓"
         },
         {
           "id": 393,
@@ -33716,7 +33716,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "In 'The very idea is absurd', what word class is 'very'?",
           "options": ["Adverb", "Adjective", "Noun", "Determiner", "Pronoun"],
           "correct": 1,
-          "explanation": "'Very' is an ADVERB here — but unusually, it's modifying a noun! This is a special emphatic use meaning 'the idea itself'. Usually 'very' modifies adjectives ('very tall') or other adverbs ('very quickly'). ✓"
+          "explanation": "'Very' is an ADJECTIVE here — this is a rare and tricky use that catches lots of people out! Normally 'very' is an adverb ('very tall', 'very quickly'). But in 'the very idea', it means 'the exact idea' or 'that idea itself' — and any word that describes a noun like that is an adjective. Try swapping it for another adjective: 'the exact idea is absurd' works perfectly. ✓"
         },
         {
           "id": 400,

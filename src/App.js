@@ -257,6 +257,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   const [selectedQuiz, setSelectedQuiz] = useState(null); // Quiz Detail View — selected row from Recent Activity
   const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity' | 'results'
   const [lastCompletedQuiz, setLastCompletedQuiz] = useState(null); // post-quiz review entry
+  const [activeAssignment, setActiveAssignment] = useState(null); // { recipientId, topic, subject } when child launches an assigned topic
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
@@ -815,6 +816,24 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
         // Quiz finished — drop the in-progress save so a later reload
         // doesn't auto-restore the completed quiz.
         if (quizSaveKey) localStorage.removeItem(quizSaveKey);
+
+        // Auto-complete assigned topic if this quiz matches an active assignment
+        if (activeAssignment && quizMode === 'focused' && activeAssignment.topic === quizQuestions[0]?.topicKey) {
+          const questionResults = answers.map((a, i) => ({
+            questionId: quizQuestions[i]?.question?.id,
+            correct: a.correct,
+            selectedIndex: a.selectedIndex,
+          }));
+          getToken().then(token =>
+            fetch(`${process.env.REACT_APP_TUTOR_API_URL}/api/pupil/assignments/${activeAssignment.recipientId}/complete`, {
+              method: 'POST',
+              headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+              body: JSON.stringify({ score: quizQuestions.length > 0 ? Math.round((correctCount / quizQuestions.length) * 100) : 0, questionResults }),
+            })
+          ).catch(() => {});
+          setActiveAssignment(null);
+        }
+
         setCurrentView('results');
       } finally {
         isSubmittingRef.current = false;
@@ -1762,6 +1781,12 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           setSelectedSubject(subject);
           handleTopicSelect(topicKey, subject);
         }}
+        onStartAssignment={(subject, topicKey, recipientId) => {
+          setActiveAssignment({ recipientId, topic: topicKey, subject });
+          setSelectedSubject(subject);
+          handleTopicSelect(topicKey, subject);
+        }}
+        getToken={getToken}
         mastery={mastery}
         streaksAndPP={streaksAndPP}
         childrenList={childrenList}

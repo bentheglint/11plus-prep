@@ -4,12 +4,16 @@ import { motion } from '../components/Motion';
 import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
+import AssignmentBanner from '../components/AssignmentBanner';
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup }) {
+function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, getToken, onStartAssignment }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
-  // Get suggested topics — exactly one per subject (Maths, English, VR)
+  // Get suggested topics — exactly one per subject (Maths, English, VR).
+  // getFocusAreas sorts by priority and slices to 3, so two subjects with
+  // multiple high-priority declining topics can crowd out the third subject.
+  // Fill any gap by calling getRecommendedNext directly for missing subjects.
   const suggestions = (() => {
     if (!mastery) return [];
     const all = mastery.getFocusAreas();
@@ -21,6 +25,13 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
         seenSubjects.add(rec.subject);
       }
       if (result.length >= 3) break;
+    }
+    // Fill any missing subject
+    for (const subject of ['maths', 'english', 'verbalreasoning']) {
+      if (!seenSubjects.has(subject)) {
+        const rec = mastery.getRecommendedNext(subject);
+        if (rec) result.push(rec);
+      }
     }
     return result;
   })();
@@ -105,6 +116,15 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
           </h1>
           <p className="text-slate-500 text-sm mt-1">What shall we work on today?</p>
         </motion.div>
+
+        {/* Assignment banner — only shown when a tutor has set an active assignment */}
+        {activeChildId && getToken && (
+          <AssignmentBanner
+            activeChildId={activeChildId}
+            getToken={getToken}
+            onStart={onStartAssignment || onStartTopic}
+          />
+        )}
 
         {/* Subject cards — 3-column bento */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">

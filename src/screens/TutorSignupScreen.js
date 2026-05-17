@@ -82,7 +82,7 @@ function TutorProfile({ tutor, onBack, onOpenDashboard }) {
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
         <p className="font-medium mb-1">What's in the dashboard?</p>
         <ul className="space-y-1 text-amber-700">
-          <li>• Pupil roster — everyone who's joined via your link</li>
+          <li>• Pupil group — everyone who's joined via your link</li>
           <li>• Classes — group pupils into named sessions</li>
           <li>• Assignments — set homework with a due date</li>
         </ul>

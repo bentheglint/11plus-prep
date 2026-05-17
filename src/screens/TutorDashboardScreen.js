@@ -257,7 +257,8 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose }) {
     try {
       const mappedItems = items.map(it => ({
         itemType: it.itemType,
-        itemRef: it.itemType === 'topic' ? it.topicKey : it.topicKey,
+        itemRef: it.topicKey,
+        subject: it.subject,
       }));
       const body = {
         title: title.trim() || null,

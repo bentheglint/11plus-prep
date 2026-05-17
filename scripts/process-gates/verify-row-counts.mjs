@@ -44,6 +44,11 @@ function findPriorVerification() {
   return null;
 }
 
+// Tables whose row counts fluctuate in normal operation and should not
+// trigger the unexpected-drop guard. processed_operations is a replay-
+// protection queue that is regularly purged by the scheduled worker.
+const DROP_EXEMPT_TABLES = new Set(['processed_operations']);
+
 // ── Compare current vs prior counts. Returns { diffs, unexpectedDrop }. ──
 
 function diffCounts(current, prior) {
@@ -63,8 +68,8 @@ function diffCounts(current, prior) {
     } else if (typeof before === 'number' && typeof after === 'number') {
       delta = after - before;
       if (after < before) {
-        flag = 'unexpected-drop';
-        unexpectedDrop = true;
+        flag = DROP_EXEMPT_TABLES.has(t) ? 'exempt-drop' : 'unexpected-drop';
+        if (!DROP_EXEMPT_TABLES.has(t)) unexpectedDrop = true;
       }
     }
     diffs.push({ table: t, before, after, delta, flag });

@@ -408,7 +408,7 @@ export async function handleTutorRoutes(request, env, userId, path) {
 
     // Map question_results to the shape useMastery expects
     const mappedQuestionResults = (questionResults.results || []).map(r => ({
-      date: r.attempted_at,
+      date: r.attempted_at ? r.attempted_at.replace(' ', 'T') : null,
       topicKey: r.topic_key,
       subject: r.subject,
       correct: !!r.is_correct,
