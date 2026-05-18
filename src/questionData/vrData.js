@@ -16806,7 +16806,7 @@ const vrData = {
           {
             id: 126,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nfrog (rode) dent\nflat (late) tent\nhope ( ? ) ends",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ncrab (rake) keep\nspin (pine) need\nhope ( ? ) ends",
             options: ["opes","ends","open","hope","hens"],
             correct: 2,
             explanation: "Letters 2–3 of hope = 'op'. Letters 1–2 of ends = 'en'. op + en = open. ✓",
@@ -16814,7 +16814,7 @@ const vrData = {
           {
             id: 127,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nslim (lime) medal\ntrap (rave) vent\nfrog ( ? ) pest",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nclip (lily) lynx\nsnap (name) merry\nfrog ( ? ) pest",
             options: ["frog","pest","rope","ropes","frop"],
             correct: 2,
             explanation: "Letters 2–3 of frog = 'ro'. Letters 1–2 of pest = 'pe'. ro + pe = rope. ✓",
@@ -16822,7 +16822,7 @@ const vrData = {
           {
             id: 128,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nfrog (rode) dent\nicon (come) menu\nidol ( ? ) melt",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nplot (lobe) bend\ngrew (real) ally\nidol ( ? ) melt",
             options: ["idol","melt","dome","demo","idme"],
             correct: 2,
             explanation: "Letters 2–3 of idol = 'do'. Letters 1–2 of melt = 'me'. do + me = dome. ✓",
@@ -16830,7 +16830,7 @@ const vrData = {
           {
             id: 129,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nblow (lone) neat\nflat (late) tent\ntrap ( ? ) vent",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nbrag (raid) idle\nbrim (ride) deny\ntrap ( ? ) vent",
             options: ["rave","trap","vent","rapt","trve"],
             correct: 0,
             explanation: "Letters 2–3 of trap = 'ra'. Letters 1–2 of vent = 've'. ra + ve = rave. ✓",
@@ -16838,7 +16838,7 @@ const vrData = {
           {
             id: 130,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nfrog (rode) dent\ntwig (wide) deer\nafar ( ? ) stay",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ndrum (rust) stem\ncrow (robe) best\nafar ( ? ) stay",
             options: ["afar","stay","feat","fast","asst"],
             correct: 3,
             explanation: "Letters 2–3 of afar = 'fa'. Letters 1–2 of stay = 'st'. fa + st = fast. ✓",
@@ -16846,7 +16846,7 @@ const vrData = {
           {
             id: 131,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ntwig (wide) deer\nsnob (note) tens\nflat ( ? ) tent",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nslot (load) adze\nswap (wash) shed\nflat ( ? ) tent",
             options: ["flat","tent","late","tale","flte"],
             correct: 2,
             explanation: "Letters 2–3 of flat = 'la'. Letters 1–2 of tent = 'te'. la + te = late. ✓",
@@ -16854,7 +16854,7 @@ const vrData = {
           {
             id: 132,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\namid (mire) rest\nsmog (mode) demo\nblow ( ? ) neat",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ndrip (rich) child\nsmile (mine) nest\nblow ( ? ) neat",
             options: ["blow","neat","bone","lone","blne"],
             correct: 3,
             explanation: "Letters 2–3 of blow = 'lo'. Letters 1–2 of neat = 'ne'. lo + ne = lone. ✓",
@@ -16862,7 +16862,7 @@ const vrData = {
           {
             id: 133,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nbird (iris) isle\nblot (lore) rein\nicon ( ? ) menu",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ngrip (rite) test\ncrust (rude) depth\nicon ( ? ) menu",
             options: ["icon","menu","come","icme","mice"],
             correct: 2,
             explanation: "Letters 2–3 of icon = 'co'. Letters 1–2 of menu = 'me'. co + me = come. ✓",
@@ -16870,7 +16870,7 @@ const vrData = {
           {
             id: 134,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nsnow (node) deaf\nspat (page) germ\ntwig ( ? ) deer",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nclue (lust) step\nsnug (nude) dean\ntwig ( ? ) deer",
             options: ["twig","deer","wide","weed","twde"],
             correct: 2,
             explanation: "Letters 2–3 of twig = 'wi'. Letters 1–2 of deer = 'de'. wi + de = wide. ✓",
@@ -16878,7 +16878,7 @@ const vrData = {
           {
             id: 135,
             difficulty: 1,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\namen (mete) team\nslim (lime) medal\nclap ( ? ) mesh",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nswim (wise) send\nspit (pies) escape\nclap ( ? ) mesh",
             options: ["clap","mesh","lame","male","clme"],
             correct: 2,
             explanation: "Letters 2–3 of clap = 'la'. Letters 1–2 of mesh = 'me'. la + me = lame. ✓",
@@ -16886,7 +16886,7 @@ const vrData = {
           {
             id: 136,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nfrog (rode) dent\nblow (lone) neat\namid ( ? ) rest",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nploy (love) verb\nbrat (rage) gear\namid ( ? ) rest",
             options: ["amid","rest","mire","rime","amre"],
             correct: 2,
             explanation: "Letters 2–3 of amid = 'mi'. Letters 1–2 of rest = 're'. mi + re = mire (meaning mud or to get stuck). ✓",
@@ -16894,7 +16894,7 @@ const vrData = {
           {
             id: 137,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ntrap (rave) vent\nflat (late) tent\nsmog ( ? ) demo",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ntrain (race) cell\ntrip (ripe) peat\nsmog ( ? ) demo",
             options: ["smog","demo","mode","dome","smde"],
             correct: 2,
             explanation: "Letters 2–3 of smog = 'mo'. Letters 1–2 of demo = 'de'. mo + de = mode. ✓",
@@ -16902,7 +16902,7 @@ const vrData = {
           {
             id: 138,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nicon (come) menu\nafar (fast) stay\namen ( ? ) team",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nflap (lava) vase\nslug (lure) reach\namen ( ? ) team",
             options: ["amen","team","meet","mete","amte"],
             correct: 3,
             explanation: "Letters 2–3 of amen = 'me'. Letters 1–2 of team = 'te'. me + te = mete (to give out, as in 'mete out punishment'). ✓",
@@ -16910,7 +16910,7 @@ const vrData = {
           {
             id: 139,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nclap (lame) mesh\ntwig (wide) deer\nbird ( ? ) isle",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nopine (pile) lemon\ngram (rare) recall\nbird ( ? ) isle",
             options: ["bird","isle","rise","iris","biis"],
             correct: 3,
             explanation: "Letters 2–3 of bird = 'ir'. Letters 1–2 of isle = 'is'. ir + is = iris (a flower, or part of the eye). ✓",
@@ -16918,7 +16918,7 @@ const vrData = {
           {
             id: 140,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nsnob (note) tens\namid (mire) rest\nblot ( ? ) rein",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ncrisp (risk) skip\nswirl (with) thorn\nblot ( ? ) rein",
             options: ["blot","rein","role","lore","blre"],
             correct: 3,
             explanation: "Letters 2–3 of blot = 'lo'. Letters 1–2 of rein = 're'. lo + re = lore (traditional knowledge or stories). ✓",
@@ -16926,7 +16926,7 @@ const vrData = {
           {
             id: 141,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nsmog (mode) demo\nbird (iris) isle\nsnow ( ? ) deaf",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ndrug (ruin) inch\nbrush (rush) ship\nsnow ( ? ) deaf",
             options: ["snow","deaf","done","node","snde"],
             correct: 3,
             explanation: "Letters 2–3 of snow = 'no'. Letters 1–2 of deaf = 'de'. no + de = node (a point or joining place). ✓",
@@ -16934,7 +16934,7 @@ const vrData = {
           {
             id: 142,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nblot (lore) rein\nsnow (node) deaf\nsnob ( ? ) tens",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ndrift (rile) less\ntrick (rice) cellar\nsnob ( ? ) tens",
             options: ["snob","tens","tone","note","snte"],
             correct: 3,
             explanation: "Letters 2–3 of snob = 'no'. Letters 1–2 of tens = 'te'. no + te = note. ✓",
@@ -16942,7 +16942,7 @@ const vrData = {
           {
             id: 143,
             difficulty: 2,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nslim (lime) medal\nblow (lone) neat\nspat ( ? ) germ",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nstick (tide) deli\naside (side) dean\nspat ( ? ) germ",
             options: ["spat","germ","gape","page","spge"],
             correct: 3,
             explanation: "Letters 2–3 of spat = 'pa'. Letters 1–2 of germ = 'ge'. pa + ge = page. ✓",
@@ -16950,7 +16950,7 @@ const vrData = {
           {
             id: 144,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nplan (lane) need\nicon (come) menu\nebony ( ? ) debt",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\novary (vase) season\nshake (haze) zest\nebony ( ? ) debt",
             options: ["ebony","debt","bode","bond","ebde"],
             correct: 2,
             explanation: "Letters 2–3 of ebony = 'bo'. Letters 1–2 of debt = 'de'. bo + de = bode (to be a sign of something to come). ✓",
@@ -16958,7 +16958,7 @@ const vrData = {
           {
             id: 145,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nslim (lime) medal\nclap (lame) mesh\navid ( ? ) lean",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ntweed (weep) epic\namend (menu) nutty\navid ( ? ) lean",
             options: ["avid","lean","live","vile","avle"],
             correct: 3,
             explanation: "Letters 2–3 of avid = 'vi'. Letters 1–2 of lean = 'le'. vi + le = vile (extremely unpleasant). ✓",
@@ -16966,7 +16966,7 @@ const vrData = {
           {
             id: 146,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nfrog (rode) dent\nsnob (note) tens\nsmug ( ? ) tear",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nozone (zone) nettle\nideal (deaf) after\nsmug ( ? ) tear",
             options: ["smug","tear","tame","mute","smte"],
             correct: 3,
             explanation: "Letters 2–3 of smug = 'mu'. Letters 1–2 of tear = 'te'. mu + te = mute (silent). ✓",
@@ -16974,7 +16974,7 @@ const vrData = {
           {
             id: 147,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\ntrap (rave) vent\nsmog (mode) demo\nprim ( ? ) feat",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nagain (gape) period\nusher (shed) edify\nprim ( ? ) feat",
             options: ["prim","feat","fire","rife","prfe"],
             correct: 3,
             explanation: "Letters 2–3 of prim = 'ri'. Letters 1–2 of feat = 'fe'. ri + fe = rife (widespread, very common). ✓",
@@ -16982,7 +16982,7 @@ const vrData = {
           {
             id: 148,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nblow (lone) neat\nbird (iris) isle\nusage ( ? ) gene",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nnaive (aide) decade\nprom (rosy) symbol\nusage ( ? ) gene",
             options: ["usage","gene","ages","sage","usne"],
             correct: 3,
             explanation: "Letters 2–3 of usage = 'sa'. Letters 1–2 of gene = 'ge'. sa + ge = sage (a wise person, or a herb). ✓",
@@ -16990,7 +16990,7 @@ const vrData = {
           {
             id: 149,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nflat (late) tent\nblot (lore) rein\nidol ( ? ) zero",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nabode (body) dye\nfatal (atom) omega\nidol ( ? ) zero",
             options: ["idol","zero","zone","doze","idze"],
             correct: 3,
             explanation: "Letters 2–3 of idol = 'do'. Letters 1–2 of zero = 'ze'. do + ze = doze (to sleep lightly). ✓",
@@ -16998,7 +16998,7 @@ const vrData = {
           {
             id: 150,
             difficulty: 3,
-            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nafar (fast) stay\nspat (page) germ\nedit ( ? ) redo",
+            question: "The word in brackets is made from letters taken from the two outer words. Find the missing word.\n\nmaple (apex) exit\ndemon (emit) item\nedit ( ? ) redo",
             options: ["edit","redo","ride","dire","edre"],
             correct: 3,
             explanation: "Letters 2–3 of edit = 'di'. Letters 1–2 of redo = 're'. di + re = dire (extremely serious or urgent). ✓",
