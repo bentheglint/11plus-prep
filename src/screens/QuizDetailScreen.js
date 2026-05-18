@@ -118,7 +118,7 @@ function QuizDetailScreen({
   }, [currentIndex, currentQuestion, currentIsWrong, autoOpenTutor]);
 
   const dateLabel = quiz
-    ? new Date(quiz.date).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
+    ? new Date(quiz.date?.includes('T') ? quiz.date : quiz.date?.replace(' ', 'T') + 'Z').toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
     : '';
 
   // Empty state for pre-feature quizzes
