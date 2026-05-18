@@ -402,6 +402,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
   const [error, setError] = useState(null);
   const [activePupil, setActivePupil] = useState(null);
   const [showComposer, setShowComposer] = useState(false);
+  const [isSplit, setIsSplit] = useState(() => typeof window !== 'undefined' && window.innerWidth >= 1024);
   const [showMessaging, setShowMessaging] = useState(false);
   const [classes, setClasses] = useState([]);
   const [copiedInvite, setCopiedInvite] = useState(false);
@@ -474,6 +475,12 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
 
   useEffect(() => { loadDashboard(); }, [loadDashboard]);
 
+  useEffect(() => {
+    const handler = () => setIsSplit(window.innerWidth >= 1024);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
+
   const copyInvite = () => {
     if (!data?.tutor?.tutor_code) return;
     navigator.clipboard.writeText(`https://prepstep.co.uk/join/${data.tutor.tutor_code}`).then(() => {
@@ -482,8 +489,8 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
     });
   };
 
-  // Pupil detail screen
-  if (activePupil) {
+  // Portrait/mobile: full-screen navigation (unchanged)
+  if (!isSplit && activePupil) {
     return (
       <PupilDetailScreen
         childId={activePupil.id}
@@ -495,13 +502,245 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
     );
   }
 
-  // Messaging
-  if (showMessaging) {
+  if (!isSplit && showMessaging) {
     return <TutorMessagingScreen getToken={getToken} onBack={() => setShowMessaging(false)} />;
   }
 
   const { tutor, roster = [], pulse } = data || {};
 
+  // ── Shared dashboard body (used in both layouts) ──────────────────────────
+  const dashboardBody = (
+    <>
+      {/* Loading skeleton */}
+      {loading && (
+        <div className="space-y-3 animate-pulse">
+          <div className="grid grid-cols-2 gap-3">
+            {[1,2,3,4].map(i => (
+              <div key={i} className="h-20 bg-white rounded-2xl border border-slate-100" />
+            ))}
+          </div>
+          <div className="h-4 bg-slate-100 rounded w-24 mt-4" />
+          {[1,2,3].map(i => (
+            <div key={i} className="h-16 bg-white rounded-2xl border border-slate-100" />
+          ))}
+        </div>
+      )}
+
+      {/* Error */}
+      {!loading && error && (
+        <div className="p-4 bg-red-50 rounded-2xl border border-red-100">
+          <p className="text-red-700 text-sm font-medium mb-1">Couldn't load dashboard</p>
+          <p className="text-red-500 text-xs mb-3">{error}</p>
+          <button type="button" onClick={loadDashboard}
+            className="text-xs font-medium text-red-700 underline">Try again</button>
+        </div>
+      )}
+
+      {/* Empty state */}
+      {!loading && !error && roster.length === 0 && tutor && (
+        <EmptyState tutor={tutor} getToken={getToken} onViewMessages={() => setShowMessaging(true)} />
+      )}
+
+      {/* Main content */}
+      {!loading && !error && roster.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 22 }}
+        >
+          {/* Pulse cards */}
+          {pulse && (
+            <div className="mb-5">
+              <div className="grid grid-cols-2 gap-3">
+                <StatCard
+                  icon={Activity}
+                  value={`${pulse.active_this_week}/${pulse.total_pupils}`}
+                  label="Active this week"
+                  sub={pulse.active_this_week < pulse.total_pupils
+                    ? `${pulse.total_pupils - pulse.active_this_week} haven't practised`
+                    : 'Everyone active'}
+                  accent={pulse.active_this_week === pulse.total_pupils ? 'green' : 'purple'}
+                />
+                <StatCard
+                  icon={pulse.avg_accuracy_this_week !== null && pulse.avg_accuracy_this_week < 60 ? TrendingDown : BookOpen}
+                  value={pulse.avg_accuracy_this_week !== null ? `${pulse.avg_accuracy_this_week}%` : null}
+                  label="Avg accuracy this week"
+                  sub={pulse.avg_accuracy_this_week === null ? 'No quizzes yet' : undefined}
+                  accent={
+                    pulse.avg_accuracy_this_week === null ? 'purple' :
+                    pulse.avg_accuracy_this_week >= 70 ? 'green' :
+                    pulse.avg_accuracy_this_week >= 50 ? 'amber' : 'red'
+                  }
+                />
+                <StatCard
+                  icon={AlertCircle}
+                  value={pulse.overdue_assignments}
+                  label="Overdue assignments"
+                  sub={pulse.overdue_assignments === 0 ? 'All up to date' : 'Need chasing'}
+                  accent={pulse.overdue_assignments > 0 ? 'red' : 'green'}
+                />
+                <StatCard
+                  icon={TrendingDown}
+                  value={pulse.weakest_topic ? topicLabel(pulse.weakest_topic.topic_key) : null}
+                  label="Group weak spot"
+                  sub={pulse.weakest_topic
+                    ? `${pulse.weakest_topic.pupil_count} pupils · ${pulse.weakest_topic.accuracy}% avg`
+                    : 'Not enough data yet'}
+                  accent="amber"
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Pupil list */}
+          <div className="mb-4">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="font-heading font-bold text-slate-800">
+                Pupils <span className="text-slate-400 font-normal text-sm">({roster.length})</span>
+              </h2>
+              <button
+                type="button"
+                onClick={() => setShowComposer(true)}
+                className="flex items-center gap-1.5 text-sm font-medium text-[#7C3AED] hover:bg-[#F8F7FF] px-3 py-1.5 rounded-xl transition-colors"
+              >
+                <Plus className="w-4 h-4" />
+                Assign
+              </button>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+              {roster.map(pupil => (
+                <button
+                  key={pupil.id}
+                  type="button"
+                  onClick={() => setActivePupil(pupil)}
+                  className={`w-full text-left transition-colors border-b border-slate-100 last:border-b-0
+                    ${activePupil?.id === pupil.id && isSplit
+                      ? 'bg-[#F8F7FF] border-l-[3px] border-l-[#7C3AED]'
+                      : 'hover:bg-slate-50'}`}
+                >
+                  <PupilRow pupil={pupil} onClick={() => {}} />
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-4 mt-2 px-1">
+              <div className="flex items-center gap-1.5 text-xs text-slate-400">
+                <div className="w-2 h-2 rounded-full bg-amber-400" /> Inactive 7+ days
+              </div>
+              <div className="flex items-center gap-1.5 text-xs text-slate-400">
+                <div className="w-2 h-2 rounded-full bg-green-400" /> Active today
+              </div>
+            </div>
+          </div>
+
+          {/* Classes */}
+          {classes.length > 0 && (
+            <div className="mb-4">
+              <h2 className="font-heading font-bold text-slate-800 mb-3">
+                Classes <span className="text-slate-400 font-normal text-sm">({classes.length})</span>
+              </h2>
+              <div className="bg-white rounded-2xl border border-slate-100 shadow-sm divide-y divide-slate-100">
+                {classes.map(cls => (
+                  <div key={cls.id} className="flex items-center justify-between p-4">
+                    <div>
+                      <p className="font-medium text-slate-800 text-sm">{cls.name}</p>
+                      <p className="text-xs text-slate-400">{cls.enrolment_count || 0} pupils</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </motion.div>
+      )}
+    </>
+  );
+
+  // ── Split layout (iPad landscape / desktop) ───────────────────────────────
+  if (isSplit) {
+    return (
+      <div className="flex h-screen bg-[#FAF9FF]">
+
+        {/* Left panel — roster */}
+        <div className="w-72 xl:w-80 flex-shrink-0 flex flex-col border-r border-slate-200 bg-white h-full overflow-hidden">
+
+          {/* Panel header */}
+          <div className="flex items-center justify-between px-4 py-4 border-b border-slate-100 flex-shrink-0">
+            <div className="flex items-center gap-3">
+              <button type="button" onClick={onBack} className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition-colors">
+                <ArrowLeft className="w-4 h-4" />
+              </button>
+              <div>
+                <h1 className="font-heading font-bold text-slate-800 text-base leading-tight">Tutor Dashboard</h1>
+                {tutor && roster.length > 0 && (
+                  <button type="button" onClick={copyInvite}
+                    className="flex items-center gap-1 text-xs text-slate-400 hover:text-[#7C3AED] transition-colors mt-0.5">
+                    {copiedInvite ? <Check className="w-3 h-3 text-green-500" /> : <Copy className="w-3 h-3" />}
+                    {copiedInvite ? 'Copied!' : `join/${tutor.tutor_code}`}
+                  </button>
+                )}
+              </div>
+            </div>
+            <button type="button" onClick={() => setShowMessaging(true)}
+              className="p-2 text-slate-400 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors">
+              <MessageCircle className="w-4 h-4" />
+            </button>
+          </div>
+
+          {/* Scrollable panel content */}
+          <div className="flex-1 overflow-y-auto p-4">
+            {dashboardBody}
+          </div>
+        </div>
+
+        {/* Right panel — detail */}
+        <div className="flex-1 overflow-y-auto bg-[#FAF9FF]">
+          {activePupil ? (
+            <PupilDetailScreen
+              key={activePupil.id}
+              childId={activePupil.id}
+              getToken={getToken}
+              panelMode
+              onBack={() => setActivePupil(null)}
+              onViewQuizDetail={onViewQuizDetail}
+              onViewAssignmentDetail={onViewAssignmentDetail}
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center h-full text-center p-8">
+              <div className="w-16 h-16 rounded-2xl bg-[#F8F7FF] border border-[#E8E5FF] flex items-center justify-center mb-4">
+                <Users className="w-8 h-8 text-[#7C3AED]" />
+              </div>
+              <h2 className="font-heading font-bold text-slate-800 text-lg mb-2">Select a pupil</h2>
+              <p className="text-slate-400 text-sm max-w-xs leading-relaxed">
+                Tap any pupil from the list on the left to see their progress, recent activity, and assignments.
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* Messaging overlay (full-screen on top) */}
+        {showMessaging && (
+          <div className="fixed inset-0 z-50 bg-[#FAF9FF]">
+            <TutorMessagingScreen getToken={getToken} onBack={() => setShowMessaging(false)} />
+          </div>
+        )}
+
+        {/* Assignment composer modal */}
+        {showComposer && (
+          <AssignmentComposer
+            roster={roster}
+            classes={classes}
+            getToken={getToken}
+            onCreated={() => { setShowComposer(false); loadDashboard(); }}
+            onClose={() => setShowComposer(false)}
+          />
+        )}
+      </div>
+    );
+  }
+
+  // ── Single-column layout (portrait / mobile) ──────────────────────────────
   return (
     <div className="app-bg min-h-screen">
       <div className="max-w-2xl mx-auto">
@@ -515,164 +754,23 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
             <div>
               <h1 className="font-heading font-bold text-slate-800 text-lg leading-tight">Tutor Dashboard</h1>
               {tutor && roster.length > 0 && (
-                <button
-                  type="button"
-                  onClick={copyInvite}
-                  className="flex items-center gap-1 text-xs text-slate-400 hover:text-[#7C3AED] transition-colors mt-0.5"
-                >
+                <button type="button" onClick={copyInvite}
+                  className="flex items-center gap-1 text-xs text-slate-400 hover:text-[#7C3AED] transition-colors mt-0.5">
                   {copiedInvite ? <Check className="w-3 h-3 text-green-500" /> : <Copy className="w-3 h-3" />}
                   {copiedInvite ? 'Link copied!' : `prepstep.co.uk/join/${tutor.tutor_code}`}
                 </button>
               )}
             </div>
           </div>
-          <button
-            type="button"
-            onClick={() => setShowMessaging(true)}
-            className="p-2 text-slate-500 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors"
-          >
+          <button type="button" onClick={() => setShowMessaging(true)}
+            className="p-2 text-slate-500 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors">
             <MessageCircle className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Loading skeleton */}
-        {loading && (
-          <div className="px-4 space-y-3 animate-pulse">
-            <div className="grid grid-cols-2 gap-3">
-              {[1,2,3,4].map(i => (
-                <div key={i} className="h-20 bg-white rounded-2xl border border-slate-100" />
-              ))}
-            </div>
-            <div className="h-4 bg-slate-100 rounded w-24 mt-4" />
-            {[1,2,3].map(i => (
-              <div key={i} className="h-16 bg-white rounded-2xl border border-slate-100" />
-            ))}
-          </div>
-        )}
-
-        {/* Error */}
-        {!loading && error && (
-          <div className="mx-4 p-4 bg-red-50 rounded-2xl border border-red-100">
-            <p className="text-red-700 text-sm font-medium mb-1">Couldn't load dashboard</p>
-            <p className="text-red-500 text-xs mb-3">{error}</p>
-            <button type="button" onClick={loadDashboard}
-              className="text-xs font-medium text-red-700 underline">Try again</button>
-          </div>
-        )}
-
-        {/* Empty state */}
-        {!loading && !error && roster.length === 0 && tutor && (
-          <EmptyState tutor={tutor} getToken={getToken} onViewMessages={() => setShowMessaging(true)} />
-        )}
-
-        {/* Main dashboard */}
-        {!loading && !error && roster.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: 'spring', stiffness: 200, damping: 22 }}
-          >
-            {/* Pulse cards */}
-            {pulse && (
-              <div className="px-4 mb-5">
-                <div className="grid grid-cols-2 gap-3">
-                  <StatCard
-                    icon={Activity}
-                    value={`${pulse.active_this_week}/${pulse.total_pupils}`}
-                    label="Active this week"
-                    sub={pulse.active_this_week < pulse.total_pupils
-                      ? `${pulse.total_pupils - pulse.active_this_week} haven't practised`
-                      : 'Everyone active'}
-                    accent={pulse.active_this_week === pulse.total_pupils ? 'green' : 'purple'}
-                  />
-                  <StatCard
-                    icon={pulse.avg_accuracy_this_week !== null && pulse.avg_accuracy_this_week < 60 ? TrendingDown : BookOpen}
-                    value={pulse.avg_accuracy_this_week !== null ? `${pulse.avg_accuracy_this_week}%` : null}
-                    label="Avg accuracy this week"
-                    sub={pulse.avg_accuracy_this_week === null ? 'No quizzes yet' : undefined}
-                    accent={
-                      pulse.avg_accuracy_this_week === null ? 'purple' :
-                      pulse.avg_accuracy_this_week >= 70 ? 'green' :
-                      pulse.avg_accuracy_this_week >= 50 ? 'amber' : 'red'
-                    }
-                  />
-                  <StatCard
-                    icon={AlertCircle}
-                    value={pulse.overdue_assignments}
-                    label="Overdue assignments"
-                    sub={pulse.overdue_assignments === 0 ? 'All up to date' : 'Need chasing'}
-                    accent={pulse.overdue_assignments > 0 ? 'red' : 'green'}
-                  />
-                  <StatCard
-                    icon={TrendingDown}
-                    value={pulse.weakest_topic ? topicLabel(pulse.weakest_topic.topic_key) : null}
-                    label="Group weak spot"
-                    sub={pulse.weakest_topic
-                      ? `${pulse.weakest_topic.pupil_count} pupils · ${pulse.weakest_topic.accuracy}% avg`
-                      : 'Not enough data yet'}
-                    accent="amber"
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* Pupil list */}
-            <div className="px-4 mb-4">
-              <div className="flex items-center justify-between mb-3">
-                <h2 className="font-heading font-bold text-slate-800">
-                  Your pupils <span className="text-slate-400 font-normal text-sm">({roster.length})</span>
-                </h2>
-                <button
-                  type="button"
-                  onClick={() => setShowComposer(true)}
-                  className="flex items-center gap-1.5 text-sm font-medium text-[#7C3AED] hover:bg-[#F8F7FF] px-3 py-1.5 rounded-xl transition-colors"
-                >
-                  <Plus className="w-4 h-4" />
-                  New assignment
-                </button>
-              </div>
-
-              <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
-                {roster.map(pupil => (
-                  <PupilRow
-                    key={pupil.id}
-                    pupil={pupil}
-                    onClick={() => setActivePupil(pupil)}
-                  />
-                ))}
-              </div>
-
-              {/* Legend */}
-              <div className="flex items-center gap-4 mt-2 px-1">
-                <div className="flex items-center gap-1.5 text-xs text-slate-400">
-                  <div className="w-2 h-2 rounded-full bg-amber-400" /> Inactive 7+ days
-                </div>
-                <div className="flex items-center gap-1.5 text-xs text-slate-400">
-                  <div className="w-2 h-2 rounded-full bg-green-400" /> Active today
-                </div>
-              </div>
-            </div>
-
-            {/* Classes section */}
-            {classes.length > 0 && (
-              <div className="px-4 mb-4">
-                <h2 className="font-heading font-bold text-slate-800 mb-3">
-                  Classes <span className="text-slate-400 font-normal text-sm">({classes.length})</span>
-                </h2>
-                <div className="bg-white rounded-2xl border border-slate-100 shadow-sm divide-y divide-slate-100">
-                  {classes.map(cls => (
-                    <div key={cls.id} className="flex items-center justify-between p-4">
-                      <div>
-                        <p className="font-medium text-slate-800 text-sm">{cls.name}</p>
-                        <p className="text-xs text-slate-400">{cls.enrolment_count || 0} pupils</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </motion.div>
-        )}
+        <div className="px-4 pb-8">
+          {dashboardBody}
+        </div>
 
         {/* Assignment composer modal */}
         {showComposer && (

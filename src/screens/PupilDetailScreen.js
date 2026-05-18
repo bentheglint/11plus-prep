@@ -201,7 +201,7 @@ const DEV_MOCK = {
   notesCount: 1,
 };
 
-export default function PupilDetailScreen({ childId, getToken, onBack, onViewQuizDetail, onViewAssignmentDetail }) {
+export default function PupilDetailScreen({ childId, getToken, onBack, panelMode = false, onViewQuizDetail, onViewAssignmentDetail }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showReport, setShowReport] = useState(false);
@@ -267,7 +267,7 @@ export default function PupilDetailScreen({ childId, getToken, onBack, onViewQui
 
   if (loading) {
     return (
-      <div className="min-h-screen app-bg flex items-center justify-center">
+      <div className={panelMode ? 'flex items-center justify-center py-16' : 'min-h-screen app-bg flex items-center justify-center'}>
         <div className="animate-pulse text-[#7C3AED] font-heading font-bold text-xl">Loading…</div>
       </div>
     );
@@ -275,11 +275,13 @@ export default function PupilDetailScreen({ childId, getToken, onBack, onViewQui
 
   if (error || !data) {
     return (
-      <div className="min-h-screen app-bg flex items-center justify-center p-4">
+      <div className={panelMode ? 'flex items-center justify-center p-8' : 'min-h-screen app-bg flex items-center justify-center p-4'}>
         <div className="bg-white rounded-2xl p-6 text-center max-w-sm shadow-sm border border-slate-100">
           <p className="text-red-500 font-medium mb-4">{error || 'Could not load pupil data'}</p>
-          <button type="button" onClick={onBack}
-            className="px-6 py-2 bg-[#7C3AED] text-white font-bold rounded-xl">Back</button>
+          {!panelMode && (
+            <button type="button" onClick={onBack}
+              className="px-6 py-2 bg-[#7C3AED] text-white font-bold rounded-xl">Back</button>
+          )}
         </div>
       </div>
     );
@@ -287,10 +289,10 @@ export default function PupilDetailScreen({ childId, getToken, onBack, onViewQui
 
   const { child, quizResults, assignmentRecipients } = data;
 
-  // Messages full-screen
+  // Messages screen
   if (showMessages && conversationId) {
     return (
-      <div className="app-bg min-h-screen">
+      <div className={panelMode ? 'flex flex-col h-full' : 'app-bg min-h-screen'}>
         <div className="flex items-center gap-3 p-4">
           <button type="button" onClick={() => setShowMessages(false)}
             className="p-2 rounded-xl hover:bg-white transition-colors text-slate-600">
@@ -298,7 +300,7 @@ export default function PupilDetailScreen({ childId, getToken, onBack, onViewQui
           </button>
           <h1 className="font-heading font-bold text-slate-800">{child.display_name}'s parent</h1>
         </div>
-        <div className="mx-4 bg-white rounded-2xl border border-slate-100 overflow-hidden" style={{ height: 'calc(100vh - 80px)' }}>
+        <div className={panelMode ? 'flex-1 mx-4 mb-4 bg-white rounded-2xl border border-slate-100 overflow-hidden' : 'mx-4 bg-white rounded-2xl border border-slate-100 overflow-hidden'} style={panelMode ? {} : { height: 'calc(100vh - 80px)' }}>
           <MessageThread
             messagesPath={`/api/tutor/conversations/${conversationId}/messages`}
             myRole="tutor"
@@ -320,15 +322,17 @@ export default function PupilDetailScreen({ childId, getToken, onBack, onViewQui
   }
 
   return (
-    <div className="app-bg min-h-screen pb-8">
-      <div className="max-w-2xl mx-auto">
+    <div className={panelMode ? 'pb-8' : 'app-bg min-h-screen pb-8'}>
+      <div className={panelMode ? '' : 'max-w-2xl mx-auto'}>
 
         {/* Header */}
         <div className="flex items-center gap-3 p-4 pt-5">
-          <button type="button" onClick={onBack}
-            className="p-2 rounded-xl hover:bg-white transition-colors text-slate-600">
-            <ArrowLeft className="w-5 h-5" />
-          </button>
+          {!panelMode && (
+            <button type="button" onClick={onBack}
+              className="p-2 rounded-xl hover:bg-white transition-colors text-slate-600">
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+          )}
           <div className="flex-1 min-w-0">
             <h1 className="font-heading font-bold text-xl text-slate-800">{child.display_name}</h1>
             <p className="text-xs text-slate-500">
