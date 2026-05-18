@@ -36,11 +36,11 @@ template, and dependencies. Check each box as the gap completes all 5 quality ga
 | 1.3 | V3 Balance-equation arithmetic | `balanceEquations` **(NEW TOPIC)** | 0 | 1 | `balance-equations` | No — entirely new topic | **No — must create** | No | 40 | [ ] |
 | 1.4 | V4 Multi-attribute logic grid | `logicAndLanguage` | 163 | 164 | `multi-attribute-logic` | No — existing covers ≤4 people, V4 needs 5+ with 4-6 conditions | Yes | No | 30 | [ ] |
 | 1.5 | V5 Number-word codes deduction | `numberWordCodes` | 125 | 126 | `code-deduction` | Partial — `elimination-method` covers deduction; add D2/D3 variant lesson | Yes | No | 30 | [ ] |
-| 1.6 | V6 Missing letters in sentence context | `missingLettersWords` | 125 | 126 | `sentence-context-missing` | No — existing SCs target gap position, not sentence context | Yes | No | 30 | [ ] |
-| 1.7 | V7 Three-letter word INSIDE capitals | `missingLettersWords` | 155* | 156* | `inside-word-3letter` | No — `ending-gaps` is closest but format is different | Yes | No | 30 | [ ] |
-| 1.8 | V8 Polyseme synonyms | `synonyms` | 125 | 126 | `polyseme-synonyms` | Partial — `context-dependent` is close; polyseme is specifically multi-meaning | Yes | No | 30 | [ ] |
-| 1.9 | V9 Word-pattern transformations | `wordCodeAnalogies` | 125 | 126 | Audit first | Audit: `combined-rules` may cover; check if format matches GL exactly | Yes | No | TBD | [ ] |
-| 1.10 | V10 Compound words 3-from-3 format | `compoundWords` | 145 | 146 | Audit first | `gl-compound-pairs` and `gl-compound-pairs-steps` exist — audit format compliance | Yes | No | TBD | [ ] |
+| 1.6 | V6 Missing letters in sentence context | `missingLettersWords` | 125 | 126 | `sentence-context-missing` | No — existing SCs target gap position, not sentence context | Yes | No | 30 | [x] commit 67b380f |
+| 1.7 | V7 Three-letter word INSIDE capitals | `missingLettersWords` | 155* | 156* | `inside-word-3letter` | No — `ending-gaps` is closest but format is different | Yes | No | 30 | [x] commit 4dac8de |
+| 1.8 | V8 Polyseme synonyms | `synonyms` | 125 | 126 | `polyseme-synonyms` | Partial — `context-dependent` is close; polyseme is specifically multi-meaning | Yes | No | 30 | [x] commit 67b380f |
+| 1.9 | V9 Word-pattern transformations | `wordCodeAnalogies` | 125 | 126 | `word-extraction` | Audit confirmed: frog(rode)dent format absent; added 25 questions + lesson | Yes | No | 25 | [x] commit 67b380f |
+| 1.10 | V10 Compound words 3-from-3 format | `compoundWords` | 145 | 146 | `gl-compound-pairs` (reuse) | Audit confirmed: 20 pick-from-sets existed; added 30 more IDs 146-175 | Yes | No | 30 | [x] commit 67b380f |
 | 1.11 | V11 Letter pair series variants | `letterPairSeries` | 128 | 129 | Audit first | 9 existing SCs — audit coverage of different-rule-per-letter variants | Yes | No | TBD | [ ] |
 
 **\* V6 adds IDs 126–155 to `missingLettersWords`. V7 therefore starts at 156 — not 126. Commit V6 before starting V7.**
@@ -205,7 +205,8 @@ One commit per gap. Format: `content(vr/numberSeries): add V1 middle-number anal
 
 | Commit | Gap | Hash | Date |
 |--------|-----|------|------|
-| — | — | — | — |
+| 1 | V6+V8+V9+V10 questions + lessons + map + lint fix | 67b380f | 2026-05-18 |
+| 2 | V7 questions + lesson + map | 4dac8de | 2026-05-18 |
 
 ---
 
