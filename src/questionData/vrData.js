@@ -16806,7 +16806,7 @@ const vrData = {
           {
             id: 126,
             difficulty: 1,
-            question: "plan (lane) need\nstop (top) open\nhope ( ? ) ends",
+            question: "frog (rode) dent\nflat (late) tent\nhope ( ? ) ends",
             options: ["opes","ends","open","hope","hens"],
             correct: 2,
             explanation: "Letters 2–3 of hope = 'op'. Letters 1–2 of ends = 'en'. op + en = open. ✓",
