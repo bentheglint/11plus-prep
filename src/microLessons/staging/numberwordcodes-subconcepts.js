@@ -1868,6 +1868,227 @@ export const numberWordCodesSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: Code Deduction (Decode + Cross-Reference)
+  // Fills GL gap V5: decode direction with two-clue cross-referencing
+  // ==========================================
+  {
+    id: "code-deduction",
+    name: "Code Deduction — Decode the Message",
+    category: "other",
+    lessons: [
+      {
+        id: "code-deduction-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to decode a mystery number back into a word using the clue you have been given",
+          "How to cross-reference two clue words when a shared letter unlocks the whole puzzle"
+        ],
+        variableSets: [
+          {
+            name: "Evie",
+            scenario: "decoding a mystery number with one clue word",
+            words: [{ word: "CAT", code: "123" }],
+            mapping: { C: 1, A: 2, T: 3 },
+            testCode: "213",
+            testWord: "ACT",
+            options: ["CAT", "TAC", "ACT", "ATC", "CTA"],
+            correctAnswer: "ACT",
+            explanation: "From CAT = 123: C=1, A=2, T=3. Flip it: 2=A, 1=C, 3=T. So 213 = A, C, T = ACT. ✓",
+            clueWords: [
+              { word: "TRAIN", code: "13524" },
+              { word: "CORK", code: "6738" }
+            ],
+            clueMapping: { T: 1, R: 3, A: 5, I: 2, N: 4, C: 6, O: 7, K: 8 },
+            sharedLetter: "R",
+            sharedNumber: 3,
+            targetWord: "CART",
+            targetCode: "6531",
+            interactWords: [{ word: "DOG", code: "456" }],
+            interactMapping: { D: 4, O: 5, G: 6 },
+            interactTestCode: "654",
+            interactTestWord: "GOD",
+            interactOptions: ["GOD", "DOG", "OGD", "DGO", "GDO"],
+            interactCorrectAnswer: "GOD",
+            interactExplanation: "From DOG = 456: D=4, O=5, G=6. Flip it: 6=G, 5=O, 4=D. So 654 = G, O, D = GOD. ✓"
+          },
+          {
+            name: "Noah",
+            scenario: "flipping a code back into a hidden word",
+            words: [{ word: "PIN", code: "472" }],
+            mapping: { P: 4, I: 7, N: 2 },
+            testCode: "274",
+            testWord: "NIP",
+            options: ["NIP", "PIN", "PNI", "INP", "NPI"],
+            correctAnswer: "NIP",
+            explanation: "From PIN = 472: P=4, I=7, N=2. Flip it: 2=N, 7=I, 4=P. So 274 = N, I, P = NIP. ✓",
+            clueWords: [
+              { word: "SHARP", code: "12345" },
+              { word: "CORK", code: "6748" }
+            ],
+            clueMapping: { S: 1, H: 2, A: 3, R: 4, P: 5, C: 6, O: 7, K: 8 },
+            sharedLetter: "R",
+            sharedNumber: 4,
+            targetWord: "CRASH",
+            targetCode: "64312",
+            interactWords: [{ word: "BAT", code: "385" }],
+            interactMapping: { B: 3, A: 8, T: 5 },
+            interactTestCode: "583",
+            interactTestWord: "TAB",
+            interactOptions: ["TAB", "BAT", "ATB", "BTA", "TBA"],
+            interactCorrectAnswer: "TAB",
+            interactExplanation: "From BAT = 385: B=3, A=8, T=5. Flip it: 5=T, 8=A, 3=B. So 583 = T, A, B = TAB. ✓"
+          },
+          {
+            name: "Priya",
+            scenario: "uncovering a word from its number disguise",
+            words: [{ word: "RAT", code: "519" }],
+            mapping: { R: 5, A: 1, T: 9 },
+            testCode: "159",
+            testWord: "ART",
+            options: ["ART", "RAT", "TAR", "ATR", "RTA"],
+            correctAnswer: "ART",
+            explanation: "From RAT = 519: R=5, A=1, T=9. Flip it: 1=A, 5=R, 9=T. So 159 = A, R, T = ART. ✓",
+            clueWords: [
+              { word: "PLANT", code: "21345" },
+              { word: "CAT", code: "635" }
+            ],
+            clueMapping: { P: 2, L: 1, A: 3, N: 4, T: 5, C: 6 },
+            sharedLetter: "A",
+            sharedNumber: 3,
+            targetWord: "CLAP",
+            targetCode: "6132",
+            interactWords: [{ word: "TAP", code: "825" }],
+            interactMapping: { T: 8, A: 2, P: 5 },
+            interactTestCode: "258",
+            interactTestWord: "APT",
+            interactOptions: ["APT", "TAP", "PAT", "ATP", "PTA"],
+            interactCorrectAnswer: "APT",
+            interactExplanation: "From TAP = 825: T=8, A=2, P=5. Flip it: 2=A, 5=P, 8=T. So 258 = A, P, T = APT. ✓"
+          },
+          {
+            name: "Finn",
+            scenario: "swapping numbers back into letters to reveal the word",
+            words: [{ word: "BUS", code: "394" }],
+            mapping: { B: 3, U: 9, S: 4 },
+            testCode: "493",
+            testWord: "SUB",
+            options: ["SUB", "BUS", "USB", "BSU", "SBU"],
+            correctAnswer: "SUB",
+            explanation: "From BUS = 394: B=3, U=9, S=4. Flip it: 4=S, 9=U, 3=B. So 493 = S, U, B = SUB. ✓",
+            clueWords: [
+              { word: "BRAIN", code: "14253" },
+              { word: "CORK", code: "6748" }
+            ],
+            clueMapping: { B: 1, R: 4, A: 2, I: 5, N: 3, C: 6, O: 7, K: 8 },
+            sharedLetter: "R",
+            sharedNumber: 4,
+            targetWord: "BACK",
+            targetCode: "1268",
+            interactWords: [{ word: "POT", code: "718" }],
+            interactMapping: { P: 7, O: 1, T: 8 },
+            interactTestCode: "817",
+            interactTestWord: "TOP",
+            interactOptions: ["TOP", "POT", "OPT", "TPO", "OTP"],
+            interactCorrectAnswer: "TOP",
+            interactExplanation: "From POT = 718: P=7, O=1, T=8. Flip it: 8=T, 1=O, 7=P. So 817 = T, O, P = TOP. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "Time to decode a hidden word!",
+            body: (v) => `${v.name} is ${v.scenario}.\n\nThe clue word is:\n\n**${v.words[0].word} = ${v.words[0].code}**\n\nNow the puzzle flips around: what word does **${v.testCode}** stand for?\n\nYou have cracked codes before — this time you are going the **other way**. The numbers are the disguise, and your job is to **unmask** the word hiding underneath!`,
+            visual: {
+              component: "CodeTable",
+              props: (v) => ({
+                headers: ["Word", "Code"],
+                rows: [
+                  ...v.words.map(w => ({ cells: [w.word, w.code] })),
+                  { cells: ["???", v.testCode], highlight: true }
+                ]
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "One clue word? Build, flip, read.",
+            body: (v) => `Start with one clue: **${v.words[0].word} = ${v.words[0].code}**.\n\nBuild your table, then **flip** it so each number points back to its letter. Now read **${v.testCode}** one digit at a time — that is your word!\n\nWhen a question gives you **two clue words**, look for the letter that appears in both. If you see **${v.sharedLetter}** in both clues, it must be **${v.sharedNumber}** in both — a built-in safety check!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Build from ${v.words[0].word} = ${v.words[0].code}: ${Object.entries(v.mapping).map(([l, n]) => `${l}=${n}`).join(", ")}`, why: "Line each letter up with its digit" },
+                  { text: `Flip it: ${Object.entries(v.mapping).map(([l, n]) => `${n}=${l}`).join(", ")}`, why: "Now numbers point back to letters" },
+                  { text: `Read ${v.testCode} digit by digit → ${v.testWord}`, why: "One digit at a time, in order" },
+                  { text: `Two-clue check: ${v.clueWords[0].word}=${v.clueWords[0].code} and ${v.clueWords[1].word}=${v.clueWords[1].code}`, why: `${v.sharedLetter} appears in both — and it is ${v.sharedNumber} each time. Consistency check!` },
+                  { text: `Find ${v.targetWord}: pull each letter from whichever clue contains it → ${v.targetCode}`, why: "Cross-reference both tables for the letters you need ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: (v) => [
+                `Build the letter-to-number table from the clue word`,
+                `Flip the table so each number points back to its letter`,
+                `Read the mystery code one digit at a time to spell the word`
+              ],
+              feedback: {
+                correct: (v) => `Spot on! Build, flip, read — that is how you decode. ✓`,
+                incorrect: (v) => `Not quite — build the table first, then flip it, then read off the letters!`
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn — unmask the word!",
+            body: (v) => `**${v.interactWords[0].word} = ${v.interactWords[0].code}**\n\nWhat word does **${v.interactTestCode}** stand for?\n\nBuild your table, flip it, then read off each digit.`,
+            visual: {
+              component: "CodeTable",
+              props: (v) => ({
+                headers: ["Word", "Code"],
+                rows: [
+                  ...v.interactWords.map(w => ({ cells: [w.word, w.code] })),
+                  { cells: ["???", v.interactTestCode], highlight: true }
+                ]
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `What word does ${v.interactTestCode} stand for?`,
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! The answer is ${v.interactCorrectAnswer}. ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Code deduction — you have cracked it!",
+            body: () => `Whether you have got **one clue word** or **two**, the recipe is always the same:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Build the letter-to-number table from every clue you have", why: "Two clues? Build both tables side by side" },
+                  { text: "2. Flip it — numbers point back to letters", why: "This is the move that turns a code back into a word" },
+                  { text: "3. If two clues share a letter, check the numbers match", why: "A shared letter must have the same number in both — your safety net!" },
+                  { text: "4. Read the mystery code one digit at a time", why: "Spell the word out, letter by letter ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];

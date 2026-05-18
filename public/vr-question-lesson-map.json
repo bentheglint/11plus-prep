@@ -9515,6 +9515,156 @@
       "subConceptId": "shared-letters",
       "confidence": "high",
       "note": "BROAD+BOARD share all letters, cross-reference then encode ROAD"
+    },
+    {
+      "questionId": 126,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 127,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 128,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 129,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 130,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 131,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 132,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 133,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 134,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 135,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 136,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 137,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 138,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 139,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 140,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 141,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 142,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 143,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 144,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 145,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 146,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 147,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 148,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 149,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 150,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 151,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 152,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 153,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 154,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 155,
+      "subConceptId": "code-deduction",
+      "confidence": "high"
     }
   ],
   "logicAndLanguage": [
