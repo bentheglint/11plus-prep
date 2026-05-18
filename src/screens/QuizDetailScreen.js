@@ -117,8 +117,9 @@ function QuizDetailScreen({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, currentQuestion, currentIsWrong, autoOpenTutor]);
 
-  const dateLabel = quiz
-    ? new Date(quiz.date?.includes('T') ? quiz.date : quiz.date?.replace(' ', 'T') + 'Z').toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
+  const rawDate = quiz?.date || quiz?.completedAt;
+  const dateLabel = rawDate
+    ? new Date(rawDate.includes('T') ? rawDate : rawDate.replace(' ', 'T') + 'Z').toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
     : '';
 
   // Empty state for pre-feature quizzes
