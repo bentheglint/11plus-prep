@@ -368,7 +368,8 @@ export async function handleTutorRoutes(request, env, userId, path) {
       // Assignment recipients for this (tutor × child) pair
       db.prepare(`
         SELECT ar.id, ar.status, ar.assigned_at, ar.completed_at, ar.score,
-               ai.item_type, ai.item_ref,
+               ar.question_results,
+               ai.item_type, ai.item_ref, ai.subject,
                a.title AS assignment_title, a.due_date
         FROM assignment_recipients ar
         JOIN assignment_items ai ON ai.id = ar.assignment_item_id
@@ -383,9 +384,10 @@ export async function handleTutorRoutes(request, env, userId, path) {
         'SELECT COUNT(*) as n FROM tutor_notes WHERE tutor_id = ? AND child_id = ?'
       ).bind(tutorId, childId).first(),
 
-      // Per-question results for useMastery (last 500, newest first)
+      // Per-question results for useMastery + quiz drill-down (last 500, newest first)
       db.prepare(`
-        SELECT topic_key, subject, is_correct, time_ms, attempted_at
+        SELECT id, question_id, topic_key, subject, is_correct, time_ms, attempted_at,
+               session_id, selected_answer
         FROM question_results
         WHERE child_id = ?
         ORDER BY attempted_at DESC
@@ -406,14 +408,24 @@ export async function handleTutorRoutes(request, env, userId, path) {
       data: typeof r.data === 'string' ? JSON.parse(r.data) : r.data,
     }));
 
-    // Map question_results to the shape useMastery expects
-    const mappedQuestionResults = (questionResults.results || []).map(r => ({
-      date: r.attempted_at ? r.attempted_at.replace(' ', 'T') : null,
-      topicKey: r.topic_key,
-      subject: r.subject,
-      correct: !!r.is_correct,
-      timeSpentMs: r.time_ms || 0,
-    }));
+    // Map question_results to the shape useMastery + QuizDetailScreen expect
+    const mappedQuestionResults = (questionResults.results || []).map(r => {
+      let selectedAnswer = null;
+      if (r.selected_answer) {
+        try { selectedAnswer = JSON.parse(r.selected_answer); } catch { selectedAnswer = null; }
+      }
+      return {
+        id: r.id,
+        date: r.attempted_at ? r.attempted_at.replace(' ', 'T') : null,
+        topicKey: r.topic_key,
+        subject: r.subject,
+        correct: !!r.is_correct,
+        timeSpentMs: r.time_ms || 0,
+        questionId: r.question_id,
+        sessionId: r.session_id || null,
+        selectedAnswer,
+      };
+    });
 
     // Map mock_test_results to the shape useMastery expects
     const mappedMockHistory = (mockTestHistory.results || []).map(r => ({
@@ -422,9 +434,18 @@ export async function handleTutorRoutes(request, env, userId, path) {
       date: r.completed_at,
     }));
 
+    const mappedQuizResults = (quizResults.results || []).map(r => ({
+      topicKey: r.topic_key,
+      subject: r.subject,
+      score: r.score,
+      total: r.total,
+      completedAt: r.completed_at ? r.completed_at.replace(' ', 'T') : null,
+      sessionId: r.session_id || null,
+    }));
+
     return json({
       child: { ...child, joinedAt: link.joined_at },
-      quizResults: quizResults.results,
+      quizResults: mappedQuizResults,
       topicPerformance: parsedTopicPerf,
       assignmentRecipients: assignRecipients.results,
       notesCount: notesCount?.n || 0,

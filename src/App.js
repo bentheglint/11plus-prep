@@ -24,6 +24,7 @@ import TopicsScreen from './screens/TopicsScreen';
 import TopicDrillDown from './screens/TopicDrillDown';
 import StudyToolkitScreen from './screens/StudyToolkitScreen';
 import MyLessonsScreen from './screens/MyLessonsScreen';
+import AssignmentDetailScreen from './screens/AssignmentDetailScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import ErrorDashboardScreen from './screens/ErrorDashboardScreen';
@@ -260,6 +261,8 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   const [quizDetailReturnTo, setQuizDetailReturnTo] = useState('progress'); // 'progress' | 'allActivity' | 'results'
   const [lastCompletedQuiz, setLastCompletedQuiz] = useState(null); // post-quiz review entry
   const [activeAssignment, setActiveAssignment] = useState(null); // { recipientId, topic, subject } when child launches an assigned topic
+  const [tutorQuizSession, setTutorQuizSession] = useState(null); // { quiz, questionResults } when tutor drills into a pupil quiz
+  const [tutorAssignmentSession, setTutorAssignmentSession] = useState(null); // { assignment, questionResultsBlob } when tutor drills into a pupil assignment
   const [questionMappings, setQuestionMappings] = useState({});
   const [testedSubConcepts, setTestedSubConcepts] = useState(() => {
     try { return JSON.parse(localStorage.getItem(currentUser ? `user:${currentUser}:tested-subconcepts` : 'tested-subconcepts')) || {}; } catch { return {}; }
@@ -1747,6 +1750,14 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       <TutorDashboardScreen
         getToken={getToken}
         onBack={() => setCurrentView('tutorSignup')}
+        onViewQuizDetail={(quiz, questionResults) => {
+          setTutorQuizSession({ quiz, questionResults });
+          setCurrentView('tutorQuizDetail');
+        }}
+        onViewAssignmentDetail={(assignment, questionResultsBlob) => {
+          setTutorAssignmentSession({ assignment, questionResultsBlob });
+          setCurrentView('tutorAssignmentDetail');
+        }}
       />
     );
   }
@@ -2290,6 +2301,41 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           setSelectedQuiz(quiz);
           setQuizDetailReturnTo('allActivity');
           setCurrentView('quizDetail');
+        }}
+      />
+    );
+  }
+
+  if (currentView === 'tutorAssignmentDetail' && tutorAssignmentSession) {
+    return (
+      <AssignmentDetailScreen
+        assignment={tutorAssignmentSession.assignment}
+        questionResultsBlob={tutorAssignmentSession.questionResultsBlob}
+        mathsData={mathsData}
+        englishData={englishData}
+        vrData={vrData}
+        onBack={() => {
+          setTutorAssignmentSession(null);
+          setCurrentView('tutorDashboard');
+        }}
+      />
+    );
+  }
+
+  if (currentView === 'tutorQuizDetail' && tutorQuizSession) {
+    return (
+      <QuizDetailScreen
+        quiz={tutorQuizSession.quiz}
+        questionResults={tutorQuizSession.questionResults}
+        questionData={mathsData}
+        englishData={englishData}
+        vrData={vrData}
+        quizVisualComponents={quizVisualComponents}
+        onFindLesson={null}
+        autoOpenTutor={false}
+        onBack={() => {
+          setTutorQuizSession(null);
+          setCurrentView('tutorDashboard');
         }}
       />
     );

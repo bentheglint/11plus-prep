@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { ArrowLeft, StickyNote, Edit2, Trash2, MessageCircle, BookOpen, CheckCircle, AlertCircle, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowLeft, StickyNote, Edit2, Trash2, MessageCircle, BookOpen, CheckCircle, AlertCircle, Clock, ChevronDown, ChevronUp, ChevronRight } from 'lucide-react';
 import { motion } from '../components/Motion';
 import useMastery from '../hooks/useMastery';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
@@ -181,10 +181,10 @@ function StatusBadge({ status }) {
 const DEV_MOCK = {
   child: { id: 'c1', display_name: 'Evie', account_name: 'Sarah Mitchell', year_group: 5, target_school: 'Bournemouth School for Girls' },
   quizResults: [
-    { topic_key: 'fractions', subject: 'maths', score: 5, total: 10, completed_at: new Date(Date.now() - 86400000).toISOString() },
-    { topic_key: 'longdivision', subject: 'maths', score: 4, total: 10, completed_at: new Date(Date.now() - 2 * 86400000).toISOString() },
-    { topic_key: 'comprehension', subject: 'english', score: 8, total: 10, completed_at: new Date(Date.now() - 3 * 86400000).toISOString() },
-    { topic_key: 'sequences', subject: 'maths', score: 3, total: 10, completed_at: new Date(Date.now() - 4 * 86400000).toISOString() },
+    { topicKey: 'fractions', subject: 'maths', score: 5, total: 10, completedAt: new Date(Date.now() - 86400000).toISOString(), sessionId: null },
+    { topicKey: 'longdivision', subject: 'maths', score: 4, total: 10, completedAt: new Date(Date.now() - 2 * 86400000).toISOString(), sessionId: null },
+    { topicKey: 'comprehension', subject: 'english', score: 8, total: 10, completedAt: new Date(Date.now() - 3 * 86400000).toISOString(), sessionId: null },
+    { topicKey: 'sequences', subject: 'maths', score: 3, total: 10, completedAt: new Date(Date.now() - 4 * 86400000).toISOString(), sessionId: null },
   ],
   questionResults: [
     ...Array.from({ length: 30 }, (_, i) => ({ date: new Date(Date.now() - i * 86400000).toISOString(), topicKey: 'fractions', subject: 'maths', correct: i % 3 !== 0, timeSpentMs: 8000 })),
@@ -201,7 +201,7 @@ const DEV_MOCK = {
   notesCount: 1,
 };
 
-export default function PupilDetailScreen({ childId, getToken, onBack }) {
+export default function PupilDetailScreen({ childId, getToken, onBack, onViewQuizDetail, onViewAssignmentDetail }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showReport, setShowReport] = useState(false);
@@ -381,26 +381,36 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
           {quizResults.length > 0 && (
             <Section title="Recent quizzes" count={quizResults.length} defaultOpen={false}>
               <div className="flex flex-col gap-2">
-                {quizResults.slice(0, 20).map((r, i) => (
-                  <div key={i} className="flex items-center gap-3 py-2 border-b border-slate-100 last:border-b-0">
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-slate-800 capitalize">
-                        {formatTopicKey(r.topic_key)}
-                        <span className="text-slate-400 font-normal text-xs"> · {r.subject}</span>
-                      </p>
-                      <p className="text-xs text-slate-400">
-                        {new Date(normaliseDate(r.completed_at)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
-                      </p>
-                    </div>
-                    <div className="text-right flex-shrink-0">
-                      <p className="text-sm font-bold text-slate-800">{r.score}/{r.total}</p>
-                      <p className={`text-xs font-medium ${
-                        r.total > 0 && r.score / r.total >= 0.8 ? 'text-green-600' :
-                        r.total > 0 && r.score / r.total >= 0.5 ? 'text-yellow-600' : 'text-red-500'
-                      }`}>{r.total > 0 ? `${Math.round((r.score / r.total) * 100)}%` : '—'}</p>
-                    </div>
-                  </div>
-                ))}
+                {quizResults.slice(0, 20).map((r, i) => {
+                  const canDrillDown = !!r.sessionId && !!onViewQuizDetail;
+                  const Row = canDrillDown ? 'button' : 'div';
+                  return (
+                    <Row
+                      key={i}
+                      type={canDrillDown ? 'button' : undefined}
+                      onClick={canDrillDown ? () => onViewQuizDetail(r, data.questionResults) : undefined}
+                      className={`w-full flex items-center gap-3 py-2 border-b border-slate-100 last:border-b-0 text-left ${canDrillDown ? 'hover:bg-slate-50 -mx-1 px-1 rounded-lg transition-colors cursor-pointer' : ''}`}
+                    >
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium text-slate-800 capitalize">
+                          {formatTopicKey(r.topicKey)}
+                          <span className="text-slate-400 font-normal text-xs"> · {r.subject}</span>
+                        </p>
+                        <p className="text-xs text-slate-400">
+                          {new Date(normaliseDate(r.completedAt)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                        </p>
+                      </div>
+                      <div className="text-right flex-shrink-0">
+                        <p className="text-sm font-bold text-slate-800">{r.score}/{r.total}</p>
+                        <p className={`text-xs font-medium ${
+                          r.total > 0 && r.score / r.total >= 0.8 ? 'text-green-600' :
+                          r.total > 0 && r.score / r.total >= 0.5 ? 'text-yellow-600' : 'text-red-500'
+                        }`}>{r.total > 0 ? `${Math.round((r.score / r.total) * 100)}%` : '—'}</p>
+                      </div>
+                      {canDrillDown && <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0" />}
+                    </Row>
+                  );
+                })}
               </div>
             </Section>
           )}
@@ -409,22 +419,36 @@ export default function PupilDetailScreen({ childId, getToken, onBack }) {
           <Section title="Homework" count={assignmentRecipients.length} defaultOpen={assignmentRecipients.length > 0}>
             {assignmentRecipients.length === 0
               ? <p className="text-sm text-slate-400 py-2">No homework assigned yet.</p>
-              : assignmentRecipients.map(r => (
-                <div key={r.id} className="flex items-start gap-3 py-3 border-b border-slate-100 last:border-b-0">
-                  <BookOpen className="w-4 h-4 text-[#7C3AED] mt-0.5 flex-shrink-0" />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-slate-800">
-                      {r.assignment_title || 'Assignment'}
-                      <span className="text-slate-400 font-normal text-xs"> · {r.item_ref}</span>
-                    </p>
-                    <p className="text-xs text-slate-400 mt-0.5">
-                      Due {new Date(r.due_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
-                      {r.score != null && ` · ${r.score}%`}
-                    </p>
-                  </div>
-                  <StatusBadge status={r.status} />
-                </div>
-              ))
+              : assignmentRecipients.map(r => {
+                let questionResultsBlob = null;
+                if (r.question_results) {
+                  try { questionResultsBlob = JSON.parse(r.question_results); } catch { questionResultsBlob = null; }
+                }
+                const canDrillDown = r.status === 'completed' && !!questionResultsBlob?.length && !!onViewAssignmentDetail;
+                const Row = canDrillDown ? 'button' : 'div';
+                return (
+                  <Row
+                    key={r.id}
+                    type={canDrillDown ? 'button' : undefined}
+                    onClick={canDrillDown ? () => onViewAssignmentDetail(r, questionResultsBlob) : undefined}
+                    className={`w-full flex items-start gap-3 py-3 border-b border-slate-100 last:border-b-0 text-left ${canDrillDown ? 'hover:bg-slate-50 -mx-1 px-1 rounded-lg transition-colors cursor-pointer' : ''}`}
+                  >
+                    <BookOpen className="w-4 h-4 text-[#7C3AED] mt-0.5 flex-shrink-0" />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-slate-800">
+                        {r.assignment_title || 'Assignment'}
+                        <span className="text-slate-400 font-normal text-xs"> · {formatTopicKey(r.item_ref)}</span>
+                      </p>
+                      <p className="text-xs text-slate-400 mt-0.5">
+                        Due {new Date(r.due_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                        {r.score != null && ` · ${r.score}%`}
+                      </p>
+                    </div>
+                    <StatusBadge status={r.status} />
+                    {canDrillDown && <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0 mt-0.5" />}
+                  </Row>
+                );
+              })
             }
           </Section>
 

@@ -396,7 +396,7 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose }) {
 }
 
 // ── Main dashboard ──
-export default function TutorDashboardScreen({ getToken, onBack }) {
+export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -489,6 +489,8 @@ export default function TutorDashboardScreen({ getToken, onBack }) {
         childId={activePupil.id}
         getToken={getToken}
         onBack={() => { setActivePupil(null); loadDashboard(); }}
+        onViewQuizDetail={onViewQuizDetail}
+        onViewAssignmentDetail={onViewAssignmentDetail}
       />
     );
   }
