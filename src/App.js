@@ -23,6 +23,7 @@ import LearningModeScreen from './screens/LearningModeScreen';
 import TopicsScreen from './screens/TopicsScreen';
 import TopicDrillDown from './screens/TopicDrillDown';
 import StudyToolkitScreen from './screens/StudyToolkitScreen';
+import MyLessonsScreen from './screens/MyLessonsScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import ErrorDashboardScreen from './screens/ErrorDashboardScreen';
@@ -234,6 +235,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   const welcomeBackChecked = React.useRef(false);
   // Lesson Browser state (Oracle: standalone lesson access from Study Toolkit)
   const [returnToToolkit, setReturnToToolkit] = useState(false);
+  const [returnToMyLessons, setReturnToMyLessons] = useState(false);
   const toolkitLessonsViewed = React.useRef(0);
   const [quizMode, setQuizMode] = useState(null);
   // Resume prompt — shown when user selects a Focused topic that already has
@@ -1775,6 +1777,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onSubjectSelect={handleSubjectSelect}
         onViewProgress={() => setCurrentView('progress')}
         onViewMistakes={() => setCurrentView('mistakes')}
+        onViewMyLessons={() => setCurrentView('myLessons')}
         onSpeedReview={() => setCurrentView('speedReview')}
         onTestingMode={() => setCurrentView('testingMode')}
         onStartTopic={(subject, topicKey) => {
@@ -1926,7 +1929,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
             body: JSON.stringify({ submitter: currentUser, type: 'lesson', ...flagData })
           }).catch(() => {});
         }}
-        backLabel={returnToTestingMode ? "Back to Testing Dashboard" : returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : "Back to Topics"}
+        backLabel={returnToTestingMode ? "Back to Testing Dashboard" : returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : returnToMyLessons ? "Back to My Lessons" : "Back to Topics"}
         onComplete={(lessonRecord) => {
           // Testing mode: mark tested, skip normal lesson history, return to dashboard
           if (returnToTestingMode) {
@@ -1958,6 +1961,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
             }
             setShowDidItHelp(true);
             setCurrentView('quiz');
+          } else if (returnToMyLessons) {
+            setReturnToMyLessons(false);
+            setCurrentView('myLessons');
           } else if (returnToToolkit) {
             setReturnToToolkit(false);
             setCurrentView('studyToolkit');
@@ -1977,6 +1983,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           if (returnToTestingMode) {
             setReturnToTestingMode(false);
             setCurrentView('testingMode');
+          } else if (returnToMyLessons) {
+            setReturnToMyLessons(false);
+            setCurrentView('myLessons');
           } else if (returnToToolkit) {
             setReturnToToolkit(false);
             setCurrentView('studyToolkit');
@@ -2205,6 +2214,21 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
         onBack={() => setCurrentView('progress')}
         onHome={handleHome}
+      />
+    );
+  }
+
+  if (currentView === 'myLessons') {
+    return (
+      <MyLessonsScreen
+        mastery={mastery}
+        onStartLesson={(topicKey, subject) => {
+          setSelectedTopic(topicKey);
+          setSelectedSubject(subject);
+          setReturnToMyLessons(true);
+          setCurrentView('lesson');
+        }}
+        onBack={handleHome}
       />
     );
   }

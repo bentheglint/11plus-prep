@@ -5,8 +5,9 @@ import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
 import AssignmentBanner from '../components/AssignmentBanner';
+import { BookOpen as LessonsIcon } from 'lucide-react';
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, getToken, onStartAssignment }) {
+function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, getToken, onStartAssignment }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
@@ -204,6 +205,17 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
               >
                 <AlertCircle className="w-5 h-5 text-[#FF6B6B]" />
                 <span className="font-heading font-bold text-slate-800 text-sm">My Mistakes</span>
+              </motion.button>
+            )}
+            {onViewMyLessons && (
+              <motion.button
+                onClick={onViewMyLessons}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                className="flex items-center gap-3 px-4 py-3 card hover:bg-[#F0FDF4]/60 rounded-xl transition-colors"
+              >
+                <LessonsIcon className="w-5 h-5 text-[#16A34A]" />
+                <span className="font-heading font-bold text-slate-800 text-sm">My Lessons</span>
               </motion.button>
             )}
           </div>
