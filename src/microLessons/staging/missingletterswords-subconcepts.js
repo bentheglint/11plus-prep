@@ -2034,6 +2034,193 @@ export const missingLettersWordsSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: inside-word-3letter
+  // Category: core
+  // ==========================================
+  {
+    id: "inside-word-3letter",
+    name: "Hidden Words — Three Letters Inside",
+    category: "core",
+    lessons: [
+      {
+        id: "inside-word-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to find the three letters hidden INSIDE a compressed word",
+          "The inside-word strategy: use the sentence meaning to guess the full word first, then work out which letters are missing"
+        ],
+        variableSets: [
+          {
+            name: "Evie",
+            scenario: "tackling a brand-new question type in her VR practice paper",
+            compressedWord: "BLET",
+            fullWord: "BLANKET",
+            hiddenLetters: "ANK",
+            insertionPosition: "between BL and ET",
+            sentence: "The BLET kept her warm on the freezing winter night.",
+            wordMeaning: "a soft covering used on a bed",
+            options: ["ANK","OLT","ART","RIM","EEN"],
+            correctAnswer: "ANK",
+            explanation: "Insert ANK into BLET: BL + ANK + ET = BLANKET. The sentence — warm on a freezing night — tells you the answer is a blanket.",
+            interactCompressedWord: "TRET",
+            interactFullWord: "TRUMPET",
+            interactHiddenLetters: "UMP",
+            interactInsertionPosition: "between TR and ET",
+            interactSentence: "The school band's TRET sounded loud and proud in the parade.",
+            interactWordMeaning: "a brass musical instrument",
+            interactOptions: ["UMP","AIN","OSS","ICK","END"],
+            interactCorrectAnswer: "UMP",
+            interactExplanation: "Insert UMP into TRET: TR + UMP + ET = TRUMPET. The parade and the loud, proud sound told you it was a trumpet."
+          },
+          {
+            name: "Jake",
+            scenario: "spotting a new style of missing-letter question in his workbook",
+            compressedWord: "STED",
+            fullWord: "STARTED",
+            hiddenLetters: "ART",
+            insertionPosition: "between ST and ED",
+            sentence: "The race STED the moment the starter fired the pistol.",
+            wordMeaning: "began",
+            options: ["ART","OPP","RAY","EAM","ILL"],
+            correctAnswer: "ART",
+            explanation: "Insert ART into STED: ST + ART + ED = STARTED. The pistol firing is the moment a race begins — so STARTED fits perfectly.",
+            interactCompressedWord: "BNING",
+            interactFullWord: "BURNING",
+            interactHiddenLetters: "URN",
+            interactInsertionPosition: "between B and NING",
+            interactSentence: "The small candle was BNING brightly in the window.",
+            interactWordMeaning: "on fire",
+            interactOptions: ["URN","RIG","ENI","OWI","AKI"],
+            interactCorrectAnswer: "URN",
+            interactExplanation: "Insert URN into BNING: B + URN + ING = BURNING. A candle with a flame is burning — the sentence gave it away."
+          },
+          {
+            name: "Priya",
+            scenario: "working through a tricky new VR puzzle before her mock test",
+            compressedWord: "FRION",
+            fullWord: "FRACTION",
+            hiddenLetters: "ACT",
+            insertionPosition: "between FR and ION",
+            sentence: "The maths teacher explained how to add one FRION to another.",
+            wordMeaning: "a part of a whole, like 1/2 or 3/4",
+            options: ["ACT","OST","USH","ENT","ICT"],
+            correctAnswer: "ACT",
+            explanation: "Insert ACT into FRION: FR + ACT + ION = FRACTION. Maths and adding parts together tells you it's a fraction.",
+            interactCompressedWord: "STARD",
+            interactFullWord: "STANDARD",
+            interactHiddenLetters: "AND",
+            interactInsertionPosition: "between ST and ARD",
+            interactSentence: "Her essay was below the usual STARD expected at this school.",
+            interactWordMeaning: "the expected level of quality",
+            interactOptions: ["AND","OUR","ITY","EAM","USE"],
+            interactCorrectAnswer: "AND",
+            interactExplanation: "Insert AND into STARD: ST + AND + ARD = STANDARD. 'Below what's expected' is the clue — standard means the expected level."
+          },
+          {
+            name: "Marcus",
+            scenario: "puzzling over a new type of question in his exam revision",
+            compressedWord: "CHION",
+            fullWord: "CHAMPION",
+            hiddenLetters: "AMP",
+            insertionPosition: "between CH and ION",
+            sentence: "The CHION lifted the heavy gold trophy above her head.",
+            wordMeaning: "the winner of a competition",
+            options: ["AMP","OOS","ILL","INI","ORD"],
+            correctAnswer: "AMP",
+            explanation: "Insert AMP into CHION: CH + AMP + ION = CHAMPION. Lifting a trophy is what winners do — so CHAMPION fits.",
+            interactCompressedWord: "CUSER",
+            interactFullWord: "CUSTOMER",
+            interactHiddenLetters: "TOM",
+            interactInsertionPosition: "between CUS and ER",
+            interactSentence: "The CUSER complained that her soup was cold and sent it back.",
+            interactWordMeaning: "someone who buys things at a shop or restaurant",
+            interactOptions: ["TOM","MAN","ITY","ORS","ARI"],
+            interactCorrectAnswer: "TOM",
+            interactExplanation: "Insert TOM into CUSER: CUS + TOM + ER = CUSTOMER. Someone complaining in a restaurant is a customer."
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `A word with three letters hiding INSIDE it!`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**Here's a brand-new twist** — sometimes a word in a sentence has had **three letters secretly removed from the middle**. Your job? Spot which three letters need to go back in.\n\n**Read this sentence:**\n\n"${v.sentence}"\n\nThe word **${v.compressedWord}** isn't quite right — three letters are missing from inside. Can you guess the real word from the sentence?`,
+            visual: {
+              component: "SentenceDisplay",
+              props: (v) => ({
+                mode: "highlight",
+                text: v.sentence,
+                highlightWords: [{ word: v.compressedWord, color: "#7C3AED" }],
+                label: `Three letters are hiding inside ${v.compressedWord}`
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Sentence first — then find the missing letters!",
+            body: (v) => `The compressed word is **${v.compressedWord}**. On its own, lots of three-letter combos might fit. But the sentence narrows it right down.\n\n"${v.sentence}"\n\nWhat kind of word fits? Tap to reveal the method.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Read the WHOLE sentence first — don't jump straight to the gap`, why: "The other words tell you what kind of word fits" },
+                  { text: `Picture what's happening — guess the FULL word`, why: `The sentence points to "${v.wordMeaning}"` },
+                  { text: `Check the visible letters of ${v.compressedWord} match your guess`, why: `${v.fullWord} starts and ends the same way as ${v.compressedWord}` },
+                  { text: `Work out what's missing: ${v.hiddenLetters} (${v.insertionPosition})`, why: `${v.compressedWord} + ${v.hiddenLetters} = ${v.fullWord} ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn — try one yourself!",
+            body: (v) => `Read this sentence carefully:\n\n"${v.interactSentence}"\n\nThree letters are hiding inside **${v.interactCompressedWord}**. Which three are they?\n\nClue: the full word means "${v.interactWordMeaning}".`,
+            visual: {
+              component: "SentenceDisplay",
+              props: (v) => ({
+                mode: "highlight",
+                text: v.interactSentence,
+                highlightWords: [{ word: v.interactCompressedWord, color: "#7C3AED" }],
+                label: "Use the sentence as your clue"
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Which three letters complete the word ${v.interactCompressedWord}?`,
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation} ✓`,
+                incorrect: (v) => `Not quite — the answer is "${v.interactCorrectAnswer}". ${v.interactExplanation} ✓`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Inside-word puzzles — sorted!",
+            body: () => `You've got it! When a word in a sentence has three letters missing from the middle, here's your unbeatable recipe:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Read the WHOLE sentence first", why: "The meaning tells you what kind of word should be there" },
+                  { text: "2. Picture the scene — guess the FULL word", why: "If you can guess the word, you're halfway there" },
+                  { text: "3. Compare the compressed word with your guess", why: "The visible letters confirm or rule out your idea" },
+                  { text: "4. Work out which three letters are missing", why: "Check each option — only one makes a real word and fits the sentence ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];
