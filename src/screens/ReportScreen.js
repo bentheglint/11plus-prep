@@ -37,6 +37,12 @@ async function fetchReport(childId, getToken) {
   return data;
 }
 
+function ordinal(n) {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return s[(v - 20) % 10] || s[v] || s[0];
+}
+
 function PercentileGauge({ pct }) {
   const label =
     pct >= 90 ? 'Excellent — well above expected standard' :
@@ -53,7 +59,7 @@ function PercentileGauge({ pct }) {
   return (
     <div className="text-center">
       <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border-4 mb-2" style={{ borderColor: color }}>
-        <span className="text-2xl font-bold" style={{ color }}>{pct}<sup className="text-sm">th</sup></span>
+        <span className="text-2xl font-bold" style={{ color }}>{pct}<sup className="text-sm">{ordinal(pct)}</sup></span>
       </div>
       <p className="text-xs text-slate-500">{label}</p>
     </div>
@@ -172,7 +178,7 @@ export default function ReportScreen({ childId, getToken, onBack }) {
           <PercentileGauge pct={summary.estimatedPercentile} />
           <div className="flex-1">
             <p className="font-heading font-bold text-slate-900 mb-1">
-              {child.name} is in the estimated <span className="text-[#7C3AED]">{summary.estimatedPercentile}th percentile</span>
+              {child.name} is in the estimated <span className="text-[#7C3AED]">{summary.estimatedPercentile}{ordinal(summary.estimatedPercentile)} percentile</span>
             </p>
             <p className="text-sm text-slate-600">
               Based on GL Assessment grade expectations.

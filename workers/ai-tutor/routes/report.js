@@ -1,28 +1,43 @@
 // ── Report Data Endpoint ──
 // GET /api/tutor/report/:childId — Structured report data for PDF generation
 //
-// Returns everything needed to render a per-pupil progress report:
-// - Child profile
-// - Overall mastery score + estimated GL percentile
-// - Per-subject breakdown
-// - 5 weakest + 5 strongest topics
-// - Recent assignment completion rate
-// - Mock test history summary
-// - Recommended practice topics (weakest not yet assigned)
+// Mastery scores use the SAME algorithm as the client-side useMastery hook
+// (recency decay × volume ramp × raw accuracy) so report numbers match
+// the scorecard the tutor already sees on the pupil detail screen.
 
 import { json } from '../helpers.js';
 
+// ── Mastery algorithm — mirrors src/hooks/useMastery.js exactly ──
+
+function getRecencyFactor(daysSince) {
+  if (daysSince <= 7) return 1.0;
+  if (daysSince <= 14) return 0.9;
+  if (daysSince <= 21) return 0.75;
+  if (daysSince <= 28) return 0.6;
+  return 0.4;
+}
+
+function computeTopicMastery(results, now) {
+  if (!results || results.length === 0) return null;
+  const sorted = [...results].sort((a, b) => new Date(b.date) - new Date(a.date));
+  const recent30 = sorted.slice(0, 30);
+  const rawAccuracy = recent30.filter(r => r.correct).length / recent30.length;
+  const daysSince = Math.floor((now - new Date(sorted[0].date).getTime()) / (1000 * 60 * 60 * 24));
+  const recencyFactor = getRecencyFactor(daysSince);
+  const volumeFactor = Math.min(1.0, results.length / 20);
+  return Math.round(rawAccuracy * recencyFactor * volumeFactor * 100);
+}
+
 // ── Rough GL calibration curve ──
-// Not school-specific (we don't have per-school data in v1).
 // Based on GL Assessment grade boundaries: top ~25-30% pass selective.
+// Not school-specific — a directional estimate, not a precise prediction.
 function estimatePercentile(masteryScore) {
-  // masteryScore is 0–1
-  const s = Math.max(0, Math.min(1, masteryScore));
-  // Linear interpolation across calibrated anchor points
+  // masteryScore is 0–100
+  const s = Math.max(0, Math.min(100, masteryScore));
   const anchors = [
-    [0.00, 5],  [0.30, 15], [0.45, 30], [0.55, 45],
-    [0.65, 58], [0.72, 68], [0.78, 76], [0.83, 83],
-    [0.88, 89], [0.92, 93], [0.96, 97], [1.00, 99],
+    [0, 5],  [30, 15], [45, 30], [55, 45],
+    [65, 58], [72, 68], [78, 76], [83, 83],
+    [88, 89], [92, 93], [96, 97], [100, 99],
   ];
   for (let i = 0; i < anchors.length - 1; i++) {
     const [x0, y0] = anchors[i];
@@ -52,25 +67,31 @@ export async function handleReportRoutes(request, env, userId, path) {
   ).bind(userId, childId).first();
   if (!link) return json({ error: 'Child not on roster' }, 404);
 
-  // Fetch all the data in parallel
-  const [child, quizResults, topicPerf, mockResults, assignStats] = await Promise.all([
+  // Fetch all data in parallel — question_results is the ground truth for mastery
+  const [child, questionResults, quizResults, mockResults, assignStats] = await Promise.all([
     db.prepare(`
-      SELECT c.id, c.display_name, c.year_group, c.target_school, c.created_at
+      SELECT c.id, c.display_name, c.year_group, c.target_school
       FROM children c WHERE c.id = ?
     `).bind(childId).first(),
 
+    // Per-question results — same query as tutor pupil endpoint
+    db.prepare(`
+      SELECT topic_key, subject, is_correct, attempted_at
+      FROM question_results
+      WHERE child_id = ?
+      ORDER BY attempted_at DESC
+      LIMIT 2000
+    `).bind(childId).all(),
+
+    // Quiz summaries for recent accuracy metric
     db.prepare(`
       SELECT topic_key, subject, score, total
       FROM quiz_results WHERE child_id = ?
-      ORDER BY completed_at DESC LIMIT 200
+      ORDER BY completed_at DESC LIMIT 20
     `).bind(childId).all(),
 
-    db.prepare(
-      'SELECT topic_key, subject, data FROM topic_performance WHERE child_id = ?'
-    ).bind(childId).all(),
-
     db.prepare(`
-      SELECT subject, total_correct, total_questions, percentage, completed_at
+      SELECT subject, percentage, completed_at
       FROM mock_test_results WHERE child_id = ?
       ORDER BY completed_at DESC LIMIT 10
     `).bind(childId).all(),
@@ -85,55 +106,65 @@ export async function handleReportRoutes(request, env, userId, path) {
     `).bind(childId, userId).first(),
   ]);
 
-  // ── Compute mastery metrics ──
-  const topicPerfParsed = topicPerf.results.map(r => ({
-    topicKey: r.topic_key, subject: r.subject,
-    data: typeof r.data === 'string' ? JSON.parse(r.data) : r.data,
-  })).filter(t => t.data?.score != null);
+  // ── Compute mastery using the same algorithm as useMastery ──
+  // Group question_results by topic, normalise date format
+  const byTopic = {};
+  (questionResults.results || []).forEach(r => {
+    const key = `${r.subject}:${r.topic_key}`;
+    if (!byTopic[key]) byTopic[key] = { topicKey: r.topic_key, subject: r.subject, results: [] };
+    byTopic[key].results.push({
+      correct: !!r.is_correct,
+      date: r.attempted_at ? r.attempted_at.replace(' ', 'T') : null,
+    });
+  });
 
-  // Overall mastery = mean of topic scores (weighted equally)
-  const overallScore = topicPerfParsed.length > 0
-    ? topicPerfParsed.reduce((sum, t) => sum + (t.data.score || 0), 0) / topicPerfParsed.length
+  const now = Date.now();
+  const topicData = Object.values(byTopic)
+    .map(t => {
+      const score = computeTopicMastery(t.results.filter(r => r.date), now);
+      return score !== null ? { topicKey: t.topicKey, subject: t.subject, score } : null;
+    })
+    .filter(Boolean);
+
+  // Overall mastery = mean of per-topic mastery scores (0-100)
+  const overallScore = topicData.length > 0
+    ? Math.round(topicData.reduce((sum, t) => sum + t.score, 0) / topicData.length)
     : 0;
 
   // Per-subject mastery
   const subjectScores = {};
-  topicPerfParsed.forEach(t => {
+  topicData.forEach(t => {
     if (!subjectScores[t.subject]) subjectScores[t.subject] = { total: 0, count: 0 };
-    subjectScores[t.subject].total += t.data.score || 0;
+    subjectScores[t.subject].total += t.score;
     subjectScores[t.subject].count++;
   });
   const subjectMastery = Object.fromEntries(
-    Object.entries(subjectScores).map(([s, v]) => [s, v.count > 0 ? v.total / v.count : 0])
+    Object.entries(subjectScores).map(([s, v]) => [s, v.count > 0 ? Math.round(v.total / v.count) : 0])
   );
 
-  // Sorted topics
-  const sorted = [...topicPerfParsed].sort((a, b) => (a.data.score || 0) - (b.data.score || 0));
+  // Sorted topics for weakest/strongest
+  const sorted = [...topicData].sort((a, b) => a.score - b.score);
   const weakestTopics = sorted.slice(0, 5).map(t => ({
-    topicKey: t.topicKey, subject: t.subject, score: Math.round((t.data.score || 0) * 100),
+    topicKey: t.topicKey, subject: t.subject, score: t.score,
   }));
   const strongestTopics = sorted.slice(-5).reverse().map(t => ({
-    topicKey: t.topicKey, subject: t.subject, score: Math.round((t.data.score || 0) * 100),
+    topicKey: t.topicKey, subject: t.subject, score: t.score,
   }));
 
-  // Recent quiz accuracy
-  const recentQuizzes = quizResults.results.slice(0, 20);
-  const recentAccuracy = recentQuizzes.length > 0
-    ? recentQuizzes.reduce((s, r) => s + (r.total > 0 ? r.score / r.total : 0), 0) / recentQuizzes.length
+  // Recent accuracy from last 20 quiz summaries (quick metric, not mastery)
+  const recentAccuracy = quizResults.results.length > 0
+    ? Math.round(quizResults.results.reduce((s, r) => s + (r.total > 0 ? r.score / r.total : 0), 0) / quizResults.results.length * 100)
     : 0;
 
   // Mock test summary
-  const mockSummary = mockResults.results.map(m => ({
-    subject: m.subject,
-    percentage: m.percentage,
-    date: m.completed_at,
-  }));
   const latestMockBySubject = {};
-  mockSummary.forEach(m => {
-    if (!latestMockBySubject[m.subject]) latestMockBySubject[m.subject] = m;
+  (mockResults.results || []).forEach(m => {
+    if (!latestMockBySubject[m.subject]) {
+      latestMockBySubject[m.subject] = { subject: m.subject, percentage: m.percentage, date: m.completed_at };
+    }
   });
 
-  // Recommended topics: weakest 3 that haven't been assigned recently
+  // Recommended topics: weakest 3 not recently assigned
   const recentlyAssigned = new Set(
     (await db.prepare(`
       SELECT DISTINCT ai.item_ref
@@ -156,14 +187,12 @@ export async function handleReportRoutes(request, env, userId, path) {
       targetSchool: child.target_school,
     },
     summary: {
-      overallScore: Math.round(overallScore * 100),
+      overallScore,
       estimatedPercentile: estimatePercentile(overallScore),
-      recentAccuracy: Math.round(recentAccuracy * 100),
-      topicsAssessed: topicPerfParsed.length,
+      recentAccuracy,
+      topicsAssessed: topicData.length,
     },
-    subjectMastery: Object.fromEntries(
-      Object.entries(subjectMastery).map(([s, v]) => [s, Math.round(v * 100)])
-    ),
+    subjectMastery,
     weakestTopics,
     strongestTopics,
     mockTests: Object.values(latestMockBySubject),
