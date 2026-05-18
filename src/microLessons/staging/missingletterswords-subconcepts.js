@@ -1891,6 +1891,149 @@ export const missingLettersWordsSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: sentence-context-missing
+  // Category: core
+  // ==========================================
+  {
+    id: "sentence-context-missing",
+    name: "Missing Letters in Sentences",
+    category: "core",
+    lessons: [
+      {
+        id: "sentence-context-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to use the sentence meaning to work out missing letters",
+          "Why context narrows down your options even when you don't know the word straight away"
+        ],
+        variableSets: [
+          {
+            name: "Evie",
+            scenario: "tackling a tricky sentence puzzle in her workbook",
+            sentence: "The doctor examined the _ _ _ _ _ nt very carefully.",
+            templateWord: "_ _ _ _ _ NT",
+            missingLetters: "PATIE",
+            completeWord: "PATIENT",
+            wordMeaning: "a person being treated by a doctor",
+            options: ["PATIE", "STUDE", "CLIEN", "FRIEN", "DOCUM"],
+            correctAnswer: "PATIE"
+          },
+          {
+            name: "Jake",
+            scenario: "working out the missing letters in his VR practice paper",
+            sentence: "Daisy felt very _ _ _ _ _ y when she opened her birthday present.",
+            templateWord: "_ _ _ _ _ Y",
+            missingLetters: "HAPP",
+            completeWord: "HAPPY",
+            wordMeaning: "feeling joyful and pleased",
+            options: ["HAPP", "ANGR", "SLEEP", "SHAK", "WORR"],
+            correctAnswer: "HAPP"
+          },
+          {
+            name: "Priya",
+            scenario: "puzzling out a sentence question before her mock test",
+            sentence: "The children were _ _ _ _ _ ing their way through the dark forest.",
+            templateWord: "_ _ _ _ _ ING",
+            missingLetters: "CREEP",
+            completeWord: "CREEPING",
+            wordMeaning: "moving slowly and quietly",
+            options: ["CREEP", "JUMPI", "SHOUT", "DANCI", "SPRIN"],
+            correctAnswer: "CREEP"
+          },
+          {
+            name: "Marcus",
+            scenario: "trying a brand-new question type in his exam practice",
+            sentence: "The trip to the museum was organised by the history _ _ _ _ _ _ ment.",
+            templateWord: "_ _ _ _ _ _ MENT",
+            missingLetters: "DEPART",
+            completeWord: "DEPARTMENT",
+            wordMeaning: "a section of a school, shop or organisation",
+            options: ["DEPART", "AMUSE", "GOVERN", "MOVE", "EQUIP"],
+            correctAnswer: "DEPART"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Use the sentence as your clue!`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**Here's a brilliant new trick** — when a word has letters missing INSIDE a sentence, the sentence itself is a giant clue. The other words tell you what kind of word fits.\n\n**Read this sentence:**\n\n"${v.sentence}"\n\nThe gap is part of a real word — and the sentence tells you what it must mean!`,
+            visual: {
+              component: "SentenceDisplay",
+              props: (v) => ({
+                mode: "highlight",
+                text: v.sentence,
+                highlightWords: [{ word: v.templateWord, color: "#7C3AED" }],
+                label: "Read the whole sentence first"
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Sentence first, letters second!",
+            body: (v) => `Look at the gap: **${v.templateWord}**. On its own, lots of letters could fit. But the sentence narrows it down massively.\n\n"${v.sentence}"\n\nWhat kind of word fits? Tap to reveal the method.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Read the WHOLE sentence first — don't jump to the gap`, why: "The other words tell you what kind of word is missing" },
+                  { text: `Picture what's happening: what word fits here?`, why: `Think: something that means "${v.wordMeaning}"` },
+                  { text: `Check the visible letters match your guess`, why: "The letters confirm or rule out your idea" },
+                  { text: `Answer: ${v.missingLetters} → ${v.completeWord}`, why: `${v.completeWord} means "${v.wordMeaning}" ✓` }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn — use the sentence!",
+            body: (v) => `Read this sentence carefully:\n\n"${v.sentence}"\n\nWhich letters complete the missing word **${v.templateWord}**?`,
+            visual: {
+              component: "SentenceDisplay",
+              props: (v) => ({
+                mode: "highlight",
+                text: v.sentence,
+                highlightWords: [{ word: v.templateWord, color: "#7C3AED" }],
+                label: "Look for the clue in the sentence"
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Which letters complete the gap?`,
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.missingLetters} makes ${v.completeWord} — ${v.wordMeaning}. The sentence was your clue. ✓`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}", making ${v.completeWord} — ${v.wordMeaning}. Reread the sentence: does your answer make sense there? ✓`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Sentence + letters = unbeatable combo!",
+            body: () => `You've cracked it! When a word is hidden inside a sentence, you've got TWO clues working together:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Read the WHOLE sentence first", why: "The meaning tells you what kind of word is missing" },
+                  { text: "2. Picture the scene — what word would fit?", why: "If you can guess the word, you're halfway there" },
+                  { text: "3. Check the visible letters match your guess", why: "The letters confirm or rule out your idea" },
+                  { text: "4. Try the options one by one in the sentence", why: "The right one will sound natural and make sense ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];

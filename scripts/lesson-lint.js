@@ -111,13 +111,13 @@ function extractQuestions(dataFilePath, topicKey) {
     const correctMatch = qBlock.match(/\bcorrect:\s*(\d+)/);
     const correct = correctMatch ? parseInt(correctMatch[1]) : null;
 
-    // explanation
-    const explMatch = qBlock.match(/explanation:\s*["'`]([\s\S]*?)["'`]/);
-    const explanation = explMatch ? explMatch[1] : null;
+    // explanation — handle double-quoted strings with internal single quotes
+    const explMatch = qBlock.match(/explanation:\s*"([^"]*)"|explanation:\s*'([^']*)'|explanation:\s*`([^`]*)`/);
+    const explanation = explMatch ? (explMatch[1] ?? explMatch[2] ?? explMatch[3]) : null;
 
-    // question text
-    const qTextMatch = qBlock.match(/\bquestion:\s*["'`]([\s\S]*?)["'`]/);
-    const questionText = qTextMatch ? qTextMatch[1] : null;
+    // question text — same pattern
+    const qTextMatch = qBlock.match(/\bquestion:\s*"([^"]*)"|question:\s*'([^']*)'|question:\s*`([^`]*)`/);
+    const questionText = qTextMatch ? (qTextMatch[1] ?? qTextMatch[2] ?? qTextMatch[3]) : null;
 
     questions.push({ id, optionCount, correct, explanation, questionText });
   });

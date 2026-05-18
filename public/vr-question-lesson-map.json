@@ -624,6 +624,156 @@
       "questionId": 125,
       "subConceptId": "hard-vocabulary",
       "confidence": "high"
+    },
+    {
+      "questionId": 126,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 127,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 128,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 129,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 130,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 131,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 132,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 133,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 134,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 135,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 136,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 137,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 138,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 139,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 140,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 141,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 142,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 143,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 144,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 145,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 146,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 147,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 148,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 149,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 150,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 151,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 152,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 153,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 154,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
+    },
+    {
+      "questionId": 155,
+      "subConceptId": "polyseme-synonyms",
+      "confidence": "high"
     }
   ],
   "antonyms": [
@@ -3212,6 +3362,156 @@
       "questionId": 145,
       "subConceptId": "gl-compound-pairs",
       "confidence": "high"
+    },
+    {
+      "questionId": 146,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 147,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 148,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 149,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 150,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 151,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 152,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 153,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 154,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 155,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 156,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 157,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 158,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 159,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 160,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 161,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 162,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 163,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 164,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 165,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 166,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 167,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 168,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 169,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 170,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 171,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 172,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 173,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 174,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
+    },
+    {
+      "questionId": 175,
+      "subConceptId": "gl-compound-pairs",
+      "confidence": "high"
     }
   ],
   "hiddenWords": [
@@ -5097,6 +5397,156 @@
     {
       "questionId": 125,
       "subConceptId": "middle-gaps",
+      "confidence": "high"
+    },
+    {
+      "questionId": 126,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 127,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 128,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 129,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 130,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 131,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 132,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 133,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 134,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 135,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 136,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 137,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 138,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 139,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 140,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 141,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 142,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 143,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 144,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 145,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 146,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 147,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 148,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 149,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 150,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 151,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 152,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 153,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 154,
+      "subConceptId": "sentence-context-missing",
+      "confidence": "high"
+    },
+    {
+      "questionId": 155,
+      "subConceptId": "sentence-context-missing",
       "confidence": "high"
     }
   ],
@@ -8763,6 +9213,131 @@
       "subConceptId": "position-change",
       "confidence": "high",
       "note": "Anagram: PEACH->CHEAP, MEATS->STEAM"
+    },
+    {
+      "questionId": 126,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 127,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 128,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 129,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 130,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 131,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 132,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 133,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 134,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 135,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 136,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 137,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 138,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 139,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 140,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 141,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 142,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 143,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 144,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 145,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 146,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 147,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 148,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 149,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
+    },
+    {
+      "questionId": 150,
+      "subConceptId": "word-extraction",
+      "confidence": "high"
     }
   ],
   "numberWordCodes": [

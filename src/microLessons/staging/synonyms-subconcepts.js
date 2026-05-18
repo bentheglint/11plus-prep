@@ -1637,6 +1637,162 @@ export const synonymsSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: polyseme-synonyms
+  // Category: core
+  // ==========================================
+  {
+    id: "polyseme-synonyms",
+    name: "One Word, Two Meanings",
+    category: "core",
+    lessons: [
+      {
+        id: "polyseme-synonyms-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to find a word that fits TWO meaning groups at once — like a word that's leading a double life!",
+          "Why some everyday words have completely different meanings — and how to spot them when the 11+ tries to catch you out"
+        ],
+        variableSets: [
+          {
+            name: "Evie",
+            scenario: "working through a tricky VR practice paper",
+            setA: ["role", "character"],
+            setB: ["separate", "divide"],
+            answer: "part",
+            answerMeaningA: "a 'part' in a play means a role or character",
+            answerMeaningB: "to 'part' the curtains means to separate or divide them",
+            decoyOption: "piece",
+            decoyReason: "'Piece' is close to 'separate' — like a piece broken off — but a piece isn't a role you'd play on stage",
+            options: ["part", "play", "piece", "split", "section"],
+            correctAnswer: "part",
+            explanation: "'Part' is the shape-shifter here! In a play, you 'play a part' (a role or character). And in the garden, you might 'part the leaves' (separate or divide them). One word, two meanings — that's a polyseme!"
+          },
+          {
+            name: "Jake",
+            scenario: "spotting double-meaning words in his 11+ revision",
+            setA: ["earth", "soil"],
+            setB: ["reason", "sense"],
+            answer: "ground",
+            answerMeaningA: "the 'ground' under your feet is earth or soil",
+            answerMeaningB: "the 'grounds' for a decision are reasons or sensible motives",
+            decoyOption: "dirt",
+            decoyReason: "'Dirt' matches earth and soil perfectly, but dirt has nothing to do with reasons — it only fits ONE group",
+            options: ["ground", "dirt", "land", "cause", "basis"],
+            correctAnswer: "ground",
+            explanation: "'Ground' is the secret double agent! It means earth or soil (the 'ground' is wet today). It also means reasons or sense ('the grounds for the argument'). Both meanings come together in this one word!"
+          },
+          {
+            name: "Priya",
+            scenario: "tackling a polyseme question in her mock test",
+            setA: ["healthy", "in good shape"],
+            setB: ["deep water hole", "shaft"],
+            answer: "well",
+            answerMeaningA: "feeling 'well' means healthy and in good shape",
+            answerMeaningB: "a 'well' is a deep shaft dug into the ground for water",
+            decoyOption: "fit",
+            decoyReason: "'Fit' fits healthy beautifully — but a 'fit' is NOT a deep water hole. It only matches one side of the question",
+            options: ["well", "fit", "spring", "fine", "pit"],
+            correctAnswer: "well",
+            explanation: "'Well' has two completely different jobs! It describes being healthy ('I feel well today'). It's also a deep shaft dug for water ('the village well'). Same word, totally different meanings — that's polysemy at work!"
+          },
+          {
+            name: "Marcus",
+            scenario: "training his eye for hidden word meanings",
+            setA: ["chilly", "frosty"],
+            setB: ["sniffles", "illness"],
+            answer: "cold",
+            answerMeaningA: "'cold' weather feels chilly and frosty",
+            answerMeaningB: "catching 'a cold' is a common illness with sniffles",
+            decoyOption: "freezing",
+            decoyReason: "'Freezing' nails chilly and frosty — but you don't 'catch the freezings' when you have sniffles. It misses the second meaning",
+            options: ["cold", "freezing", "flu", "icy", "bug"],
+            correctAnswer: "cold",
+            explanation: "'Cold' is a brilliant double-meaning word! It describes the temperature ('a cold morning'). And it's also that annoying winter illness ('I've caught a cold'). Same word — two totally separate jobs!"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Can ONE word fit BOTH of these meanings?`,
+            body: (v) => `${v.name} is ${v.scenario}. Look at these two groups of words:\n\n**Group 1:** ${v.setA[0]}, ${v.setA[1]}\n**Group 2:** ${v.setB[0]}, ${v.setB[1]}\n\nThe challenge? Find ONE word that fits both groups at the same time. Sounds impossible — but English is sneakier than you think! Some words are like shape-shifters with completely different meanings.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Group 1: ${v.setA[0]}, ${v.setA[1]}`, why: "What do these two words have in common?" },
+                  { text: `Group 2: ${v.setB[0]}, ${v.setB[1]}`, why: "What do these two mean? Completely different!" },
+                  { text: `Find ONE word that fits BOTH groups`, why: "This word has two different jobs — a shape-shifter!" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The Bridge Method",
+            body: (v) => `Here's the brilliant trick! A word that fits BOTH groups is called a **polyseme** — that's just a fancy word for "one word, many meanings". The answer is **"${v.answer}"** — and watch how it builds a bridge between the two groups!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Group 1 means: ${v.setA[0]} / ${v.setA[1]}`, why: `Try "${v.answer}" — yes! ${v.answerMeaningA}` },
+                  { text: `Group 2 means: ${v.setB[0]} / ${v.setB[1]}`, why: `Try "${v.answer}" again — yes! ${v.answerMeaningB}` },
+                  { text: `Watch out for "${v.decoyOption}"!`, why: v.decoyReason }
+                ],
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn — find the polyseme!",
+            body: (v) => `Which ONE word fits **both** groups below?\n\n**Group 1:** ${v.setA[0]}, ${v.setA[1]}\n**Group 2:** ${v.setB[0]}, ${v.setB[1]}\n\nRemember: it has to work for BOTH groups, not just one!`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: `Group 1: ${v.setA[0]}, ${v.setA[1]}`, why: "One meaning of the answer" },
+                  { text: `Group 2: ${v.setB[0]}, ${v.setB[1]}`, why: "A completely different meaning of the SAME word" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Which word fits both meaning groups?`,
+              getOptions: (v) => v.options,
+              correctAnswer: (v) => v.correctAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.explanation} ✓`,
+                incorrect: (v) => `Not quite! The answer is "${v.correctAnswer}". ${v.explanation} ✓`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The Polyseme Recipe — you've got it!",
+            body: () => `Fantastic work! Polyseme questions look scary, but with this three-step recipe you'll crack them every time:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Read both meaning groups carefully", why: "What does Group 1 mean? What does Group 2 mean? They'll be totally different topics." },
+                  { text: "2. Try each option in BOTH groups", why: "Does it fit Group 1? Does it ALSO fit Group 2? Only a true polyseme fits both." },
+                  { text: "3. Reject the one-group decoys", why: "Most distractors fit only one group — they're traps. The right answer always builds a bridge ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];

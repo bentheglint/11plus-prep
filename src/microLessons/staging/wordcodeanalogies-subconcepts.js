@@ -2087,6 +2087,226 @@ export const wordCodeAnalogiesSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: word-extraction
+  // Category: core
+  // ==========================================
+  {
+    id: "word-extraction",
+    name: "Hidden Words — Take From Both",
+    category: "core",
+    lessons: [
+      {
+        id: "word-extraction-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to find a hidden word by taking letters from TWO different words",
+          "The extraction rule: letters 2–3 of word 1 + letters 1–2 of word 3 = the hidden 4-letter word"
+        ],
+        variableSets: [
+          {
+            name: "Evie",
+            scenario: "tackling a tricky new VR puzzle her tutor set",
+            word1: "frog",
+            word3: "dent",
+            hiddenWord: "rode",
+            word1Positions: "letters 2–3",
+            word3Positions: "letters 1–2",
+            word1Extract: "ro",
+            word3Extract: "de",
+            ruleSteps: [
+              "Write out frog with positions: f(1) r(2) o(3) g(4)",
+              "Take letters 2–3 of frog: r + o = 'ro'",
+              "Write out dent with positions: d(1) e(2) n(3) t(4)",
+              "Take letters 1–2 of dent: d + e = 'de'",
+              "Combine: 'ro' + 'de' = rode ✓"
+            ],
+            interactWord1: "hope",
+            interactWord3: "ends",
+            interactHidden: "open",
+            interactWord1Extract: "op",
+            interactWord3Extract: "en",
+            interactOptions: ["hope", "ends", "open", "hens", "opes"],
+            interactCorrectAnswer: "open",
+            interactExplanation: "Letters 2–3 of hope = 'op'. Letters 1–2 of ends = 'en'. op + en = open. ✓",
+            options: ["rode", "frog", "dent", "redo", "ored"],
+            correctAnswer: "rode",
+            explanation: "Letters 2–3 of frog = 'ro'. Letters 1–2 of dent = 'de'. ro + de = rode. ✓"
+          },
+          {
+            name: "Jake",
+            scenario: "working through a VR puzzle book before bed",
+            word1: "slim",
+            word3: "medal",
+            hiddenWord: "lime",
+            word1Positions: "letters 2–3",
+            word3Positions: "letters 1–2",
+            word1Extract: "li",
+            word3Extract: "me",
+            ruleSteps: [
+              "Write out slim with positions: s(1) l(2) i(3) m(4)",
+              "Take letters 2–3 of slim: l + i = 'li'",
+              "Write out medal with positions: m(1) e(2) d(3) a(4) l(5)",
+              "Take letters 1–2 of medal: m + e = 'me'",
+              "Combine: 'li' + 'me' = lime ✓"
+            ],
+            interactWord1: "flat",
+            interactWord3: "tent",
+            interactHidden: "late",
+            interactWord1Extract: "la",
+            interactWord3Extract: "te",
+            interactOptions: ["flat", "tent", "late", "tale", "flte"],
+            interactCorrectAnswer: "late",
+            interactExplanation: "Letters 2–3 of flat = 'la'. Letters 1–2 of tent = 'te'. la + te = late. ✓",
+            options: ["lime", "slim", "medal", "mile", "lied"],
+            correctAnswer: "lime",
+            explanation: "Letters 2–3 of slim = 'li'. Letters 1–2 of medal = 'me'. li + me = lime. ✓"
+          },
+          {
+            name: "Priya",
+            scenario: "practising VR puzzles at the library",
+            word1: "trap",
+            word3: "vent",
+            hiddenWord: "rave",
+            word1Positions: "letters 2–3",
+            word3Positions: "letters 1–2",
+            word1Extract: "ra",
+            word3Extract: "ve",
+            ruleSteps: [
+              "Write out trap with positions: t(1) r(2) a(3) p(4)",
+              "Take letters 2–3 of trap: r + a = 'ra'",
+              "Write out vent with positions: v(1) e(2) n(3) t(4)",
+              "Take letters 1–2 of vent: v + e = 've'",
+              "Combine: 'ra' + 've' = rave ✓"
+            ],
+            interactWord1: "twig",
+            interactWord3: "deer",
+            interactHidden: "wide",
+            interactWord1Extract: "wi",
+            interactWord3Extract: "de",
+            interactOptions: ["twig", "deer", "wide", "weed", "twde"],
+            interactCorrectAnswer: "wide",
+            interactExplanation: "Letters 2–3 of twig = 'wi'. Letters 1–2 of deer = 'de'. wi + de = wide. ✓",
+            options: ["rave", "trap", "vent", "rapt", "trve"],
+            correctAnswer: "rave",
+            explanation: "Letters 2–3 of trap = 'ra'. Letters 1–2 of vent = 've'. ra + ve = rave. ✓"
+          },
+          {
+            name: "Marcus",
+            scenario: "solving hidden-word puzzles on his tablet",
+            word1: "icon",
+            word3: "menu",
+            hiddenWord: "come",
+            word1Positions: "letters 2–3",
+            word3Positions: "letters 1–2",
+            word1Extract: "co",
+            word3Extract: "me",
+            ruleSteps: [
+              "Write out icon with positions: i(1) c(2) o(3) n(4)",
+              "Take letters 2–3 of icon: c + o = 'co'",
+              "Write out menu with positions: m(1) e(2) n(3) u(4)",
+              "Take letters 1–2 of menu: m + e = 'me'",
+              "Combine: 'co' + 'me' = come ✓"
+            ],
+            interactWord1: "blow",
+            interactWord3: "neat",
+            interactHidden: "lone",
+            interactWord1Extract: "lo",
+            interactWord3Extract: "ne",
+            interactOptions: ["blow", "neat", "bone", "lone", "blne"],
+            interactCorrectAnswer: "lone",
+            interactExplanation: "Letters 2–3 of blow = 'lo'. Letters 1–2 of neat = 'ne'. lo + ne = lone. ✓",
+            options: ["come", "icon", "menu", "mice", "icme"],
+            correctAnswer: "come",
+            explanation: "Letters 2–3 of icon = 'co'. Letters 1–2 of menu = 'me'. co + me = come. ✓"
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: (v) => `Where is "${v.hiddenWord}" hiding?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\nLook at this puzzle:\n\n**${v.word1} ( ${v.hiddenWord} ) ${v.word3}**\n\nThe word in the middle — **${v.hiddenWord}** — is **hidden inside** the two outer words. It's made by **borrowing letters from both**!\n\nCan you see where the letters came from?`,
+            visual: {
+              component: "LetterTiles",
+              props: (v) => ({
+                mode: "compound",
+                group1: v.word1Extract.toUpperCase().split(""),
+                group2: v.word3Extract.toUpperCase().split(""),
+                resultWord: v.hiddenWord.toUpperCase(),
+                label: `From ${v.word1} (${v.word1Positions}) + From ${v.word3} (${v.word3Positions})`
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "The hidden-word rule — 5 steps",
+            body: (v) => `The rule is the same every time: **letters 2–3 of word 1** + **letters 1–2 of word 3** = the hidden word.\n\nLet's walk through **${v.word1} ( ? ) ${v.word3}** step by step:`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: v.ruleSteps.map((step, i) => ({
+                  text: `Step ${i + 1}: ${step}`,
+                  why: i === 0 ? "Numbering positions makes the rule visible" :
+                       i === 1 ? "These are the letters you 'borrow' from the first word" :
+                       i === 2 ? "Now do the same with the third word" :
+                       i === 3 ? "These are the letters you 'borrow' from the third word" :
+                       "Stick them together — does it spell a real word?"
+                })),
+                allRevealed: false
+              })
+            },
+            interaction: { type: "tap-to-reveal" }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn — find the hidden word!",
+            body: (v) => `Use the **same rule** (letters 2–3 of word 1 + letters 1–2 of word 3):\n\n**${v.interactWord1} ( ? ) ${v.interactWord3}**\n\nWhat word is hiding in the middle?`,
+            visual: {
+              component: "LetterTiles",
+              props: (v) => ({
+                mode: "compound",
+                group1: v.interactWord1Extract.toUpperCase().split(""),
+                group2: v.interactWord3Extract.toUpperCase().split(""),
+                resultWord: "????",
+                label: `From ${v.interactWord1} + From ${v.interactWord3}`
+              })
+            },
+            interaction: {
+              type: "multiple-choice",
+              question: (v) => `Which word is hidden in the middle?`,
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! The answer is "${v.interactCorrectAnswer}". ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Hidden-word extraction — your recipe",
+            body: () => `Here's the recipe you can use on every hidden-word puzzle:`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Number each letter of word 1 (1, 2, 3, 4...)", why: "This makes the positions easy to see" },
+                  { text: "2. Pick letters 2 and 3 from word 1", why: "These are the FIRST half of the hidden word" },
+                  { text: "3. Number each letter of word 3 (1, 2, 3, 4...)", why: "Do exactly the same on the third word" },
+                  { text: "4. Pick letters 1 and 2 from word 3", why: "These are the SECOND half of the hidden word" },
+                  { text: "5. Stick the four letters together — that's your answer ✓", why: "It should spell a real English word" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 
 ];
