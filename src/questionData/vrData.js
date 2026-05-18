@@ -1402,7 +1402,7 @@ const vrData = {
             options: ["goose","duck","dive","swerve","swan"],
             correct: 1,
             explanation: "'Duck' fits both groups: a 'duck' is a bird that quacks, and to 'duck' means to dodge or lower your head. ✓",
-            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: pond bird, quacks\nGroup 2: dodge, duck down",
+            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: pond bird, quacks\nGroup 2: dodge, lower your head",
           },
           {
             id: 144,
@@ -1418,7 +1418,7 @@ const vrData = {
             options: ["seal","dolphin","fasten","shut","whale"],
             correct: 0,
             explanation: "'Seal' fits both groups: a 'seal' is a sea creature, and to 'seal' an envelope means to close it tightly. ✓",
-            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: sea creature, ocean mammal\nGroup 2: close tightly, seal shut",
+            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: sea creature, ocean mammal\nGroup 2: close tightly, fasten firmly",
           },
           {
             id: 146,
@@ -1434,7 +1434,7 @@ const vrData = {
             options: ["drench","high","dunk","sheer","steep"],
             correct: 4,
             explanation: "'Steep' fits both groups: to 'steep' a tea bag means to soak it, and a 'steep' hill is sharply inclined. ✓",
-            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: soak, infuse\nGroup 2: sharply inclined, very steep slope",
+            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: soak, infuse\nGroup 2: sharply inclined, sheer hillside",
           },
           {
             id: 148,
