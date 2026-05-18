@@ -16806,7 +16806,7 @@ const vrData = {
           {
             id: 126,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nhope ( ? ) ends",
+            question: "plan (lane) need\nstop (top) open\nhope ( ? ) ends",
             options: ["opes","ends","open","hope","hens"],
             correct: 2,
             explanation: "Letters 2–3 of hope = 'op'. Letters 1–2 of ends = 'en'. op + en = open. ✓",
@@ -16814,7 +16814,7 @@ const vrData = {
           {
             id: 127,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nfrog ( ? ) pest",
+            question: "slim (lime) medal\ntrap (rave) vent\nfrog ( ? ) pest",
             options: ["frog","pest","rope","ropes","frop"],
             correct: 2,
             explanation: "Letters 2–3 of frog = 'ro'. Letters 1–2 of pest = 'pe'. ro + pe = rope. ✓",
@@ -16822,7 +16822,7 @@ const vrData = {
           {
             id: 128,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nidol ( ? ) melt",
+            question: "frog (rode) dent\nicon (come) menu\nidol ( ? ) melt",
             options: ["idol","melt","dome","demo","idme"],
             correct: 2,
             explanation: "Letters 2–3 of idol = 'do'. Letters 1–2 of melt = 'me'. do + me = dome. ✓",
@@ -16830,7 +16830,7 @@ const vrData = {
           {
             id: 129,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\ntrap ( ? ) vent",
+            question: "blow (lone) neat\nflat (late) tent\ntrap ( ? ) vent",
             options: ["rave","trap","vent","rapt","trve"],
             correct: 0,
             explanation: "Letters 2–3 of trap = 'ra'. Letters 1–2 of vent = 've'. ra + ve = rave. ✓",
@@ -16838,7 +16838,7 @@ const vrData = {
           {
             id: 130,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nafar ( ? ) stay",
+            question: "frog (rode) dent\ntwig (wide) deer\nafar ( ? ) stay",
             options: ["afar","stay","feat","fast","asst"],
             correct: 3,
             explanation: "Letters 2–3 of afar = 'fa'. Letters 1–2 of stay = 'st'. fa + st = fast. ✓",
@@ -16846,7 +16846,7 @@ const vrData = {
           {
             id: 131,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nflat ( ? ) tent",
+            question: "twig (wide) deer\nsnob (note) tens\nflat ( ? ) tent",
             options: ["flat","tent","late","tale","flte"],
             correct: 2,
             explanation: "Letters 2–3 of flat = 'la'. Letters 1–2 of tent = 'te'. la + te = late. ✓",
@@ -16854,7 +16854,7 @@ const vrData = {
           {
             id: 132,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nblow ( ? ) neat",
+            question: "amid (mire) rest\nsmog (mode) demo\nblow ( ? ) neat",
             options: ["blow","neat","bone","lone","blne"],
             correct: 3,
             explanation: "Letters 2–3 of blow = 'lo'. Letters 1–2 of neat = 'ne'. lo + ne = lone. ✓",
@@ -16862,7 +16862,7 @@ const vrData = {
           {
             id: 133,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nicon ( ? ) menu",
+            question: "bird (iris) isle\nblot (lore) rein\nicon ( ? ) menu",
             options: ["icon","menu","come","icme","mice"],
             correct: 2,
             explanation: "Letters 2–3 of icon = 'co'. Letters 1–2 of menu = 'me'. co + me = come. ✓",
@@ -16870,7 +16870,7 @@ const vrData = {
           {
             id: 134,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\ntwig ( ? ) deer",
+            question: "snow (node) deaf\nspat (page) germ\ntwig ( ? ) deer",
             options: ["twig","deer","wide","weed","twde"],
             correct: 2,
             explanation: "Letters 2–3 of twig = 'wi'. Letters 1–2 of deer = 'de'. wi + de = wide. ✓",
@@ -16878,7 +16878,7 @@ const vrData = {
           {
             id: 135,
             difficulty: 1,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nclap ( ? ) mesh",
+            question: "amen (mete) team\nslim (lime) medal\nclap ( ? ) mesh",
             options: ["clap","mesh","lame","male","clme"],
             correct: 2,
             explanation: "Letters 2–3 of clap = 'la'. Letters 1–2 of mesh = 'me'. la + me = lame. ✓",
@@ -16886,7 +16886,7 @@ const vrData = {
           {
             id: 136,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\namid ( ? ) rest",
+            question: "frog (rode) dent\nblow (lone) neat\namid ( ? ) rest",
             options: ["amid","rest","mire","rime","amre"],
             correct: 2,
             explanation: "Letters 2–3 of amid = 'mi'. Letters 1–2 of rest = 're'. mi + re = mire (meaning mud or to get stuck). ✓",
@@ -16894,7 +16894,7 @@ const vrData = {
           {
             id: 137,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nsmog ( ? ) demo",
+            question: "trap (rave) vent\nflat (late) tent\nsmog ( ? ) demo",
             options: ["smog","demo","mode","dome","smde"],
             correct: 2,
             explanation: "Letters 2–3 of smog = 'mo'. Letters 1–2 of demo = 'de'. mo + de = mode. ✓",
@@ -16902,7 +16902,7 @@ const vrData = {
           {
             id: 138,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\namen ( ? ) team",
+            question: "icon (come) menu\nafar (fast) stay\namen ( ? ) team",
             options: ["amen","team","meet","mete","amte"],
             correct: 3,
             explanation: "Letters 2–3 of amen = 'me'. Letters 1–2 of team = 'te'. me + te = mete (to give out, as in 'mete out punishment'). ✓",
@@ -16910,7 +16910,7 @@ const vrData = {
           {
             id: 139,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nbird ( ? ) isle",
+            question: "clap (lame) mesh\ntwig (wide) deer\nbird ( ? ) isle",
             options: ["bird","isle","rise","iris","biis"],
             correct: 3,
             explanation: "Letters 2–3 of bird = 'ir'. Letters 1–2 of isle = 'is'. ir + is = iris (a flower, or part of the eye). ✓",
@@ -16918,7 +16918,7 @@ const vrData = {
           {
             id: 140,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nblot ( ? ) rein",
+            question: "snob (note) tens\namid (mire) rest\nblot ( ? ) rein",
             options: ["blot","rein","role","lore","blre"],
             correct: 3,
             explanation: "Letters 2–3 of blot = 'lo'. Letters 1–2 of rein = 're'. lo + re = lore (traditional knowledge or stories). ✓",
@@ -16926,7 +16926,7 @@ const vrData = {
           {
             id: 141,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nsnow ( ? ) deaf",
+            question: "smog (mode) demo\nbird (iris) isle\nsnow ( ? ) deaf",
             options: ["snow","deaf","done","node","snde"],
             correct: 3,
             explanation: "Letters 2–3 of snow = 'no'. Letters 1–2 of deaf = 'de'. no + de = node (a point or joining place). ✓",
@@ -16934,7 +16934,7 @@ const vrData = {
           {
             id: 142,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nsnob ( ? ) tens",
+            question: "blot (lore) rein\nsnow (node) deaf\nsnob ( ? ) tens",
             options: ["snob","tens","tone","note","snte"],
             correct: 3,
             explanation: "Letters 2–3 of snob = 'no'. Letters 1–2 of tens = 'te'. no + te = note. ✓",
@@ -16942,7 +16942,7 @@ const vrData = {
           {
             id: 143,
             difficulty: 2,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nspat ( ? ) germ",
+            question: "slim (lime) medal\nblow (lone) neat\nspat ( ? ) germ",
             options: ["spat","germ","gape","page","spge"],
             correct: 3,
             explanation: "Letters 2–3 of spat = 'pa'. Letters 1–2 of germ = 'ge'. pa + ge = page. ✓",
@@ -16950,7 +16950,7 @@ const vrData = {
           {
             id: 144,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nebony ( ? ) debt",
+            question: "plan (lane) need\nicon (come) menu\nebony ( ? ) debt",
             options: ["ebony","debt","bode","bond","ebde"],
             correct: 2,
             explanation: "Letters 2–3 of ebony = 'bo'. Letters 1–2 of debt = 'de'. bo + de = bode (to be a sign of something to come). ✓",
@@ -16958,7 +16958,7 @@ const vrData = {
           {
             id: 145,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\navid ( ? ) lean",
+            question: "slim (lime) medal\nclap (lame) mesh\navid ( ? ) lean",
             options: ["avid","lean","live","vile","avle"],
             correct: 3,
             explanation: "Letters 2–3 of avid = 'vi'. Letters 1–2 of lean = 'le'. vi + le = vile (extremely unpleasant). ✓",
@@ -16966,7 +16966,7 @@ const vrData = {
           {
             id: 146,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nsmug ( ? ) tear",
+            question: "frog (rode) dent\nsnob (note) tens\nsmug ( ? ) tear",
             options: ["smug","tear","tame","mute","smte"],
             correct: 3,
             explanation: "Letters 2–3 of smug = 'mu'. Letters 1–2 of tear = 'te'. mu + te = mute (silent). ✓",
@@ -16974,7 +16974,7 @@ const vrData = {
           {
             id: 147,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nprim ( ? ) feat",
+            question: "trap (rave) vent\nsmog (mode) demo\nprim ( ? ) feat",
             options: ["prim","feat","fire","rife","prfe"],
             correct: 3,
             explanation: "Letters 2–3 of prim = 'ri'. Letters 1–2 of feat = 'fe'. ri + fe = rife (widespread, very common). ✓",
@@ -16982,7 +16982,7 @@ const vrData = {
           {
             id: 148,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nusage ( ? ) gene",
+            question: "blow (lone) neat\nbird (iris) isle\nusage ( ? ) gene",
             options: ["usage","gene","ages","sage","usne"],
             correct: 3,
             explanation: "Letters 2–3 of usage = 'sa'. Letters 1–2 of gene = 'ge'. sa + ge = sage (a wise person, or a herb). ✓",
@@ -16990,7 +16990,7 @@ const vrData = {
           {
             id: 149,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nidol ( ? ) zero",
+            question: "flat (late) tent\nblot (lore) rein\nidol ( ? ) zero",
             options: ["idol","zero","zone","doze","idze"],
             correct: 3,
             explanation: "Letters 2–3 of idol = 'do'. Letters 1–2 of zero = 'ze'. do + ze = doze (to sleep lightly). ✓",
@@ -16998,7 +16998,7 @@ const vrData = {
           {
             id: 150,
             difficulty: 3,
-            question: "Find the hidden word. Take letters 2–3 of the first word and letters 1–2 of the third word.\n\nedit ( ? ) redo",
+            question: "afar (fast) stay\nspat (page) germ\nedit ( ? ) redo",
             options: ["edit","redo","ride","dire","edre"],
             correct: 3,
             explanation: "Letters 2–3 of edit = 'di'. Letters 1–2 of redo = 're'. di + re = dire (extremely serious or urgent). ✓",
