@@ -219,9 +219,21 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
       if (m.totalQuestions < 10) priority += 15; // coverage gap
       if (m.totalQuestions === 0) priority += 30; // never tried
 
+      // Mode: topics with solid foundations benefit from Daily interleaved practice;
+      // topics that are new or weak need Focused blocked practice first.
+      const mode = (m.score >= 60 && m.totalQuestions >= 10) ? 'daily' : 'focused';
+
       // Build human-readable reason
       let reason;
-      if (m.totalQuestions === 0) {
+      if (mode === 'daily') {
+        if (m.daysSince > 14) {
+          reason = `Last practised ${m.daysSince} days ago — mix it in to keep it fresh!`;
+        } else if (m.trend.direction === 'down') {
+          reason = `Accuracy dipping slightly — mixed practice will reinforce it.`;
+        } else {
+          reason = `Good foundation here — mixed practice locks it in for the exam.`;
+        }
+      } else if (m.totalQuestions === 0) {
         reason = "You haven't tried this topic yet — give it a go!";
       } else if (m.daysSince > 14) {
         reason = `Last practised ${m.daysSince} days ago — time for a refresher before it fades!`;
@@ -235,7 +247,7 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
         reason = `Good progress, but there's room to improve!`;
       }
 
-      return { topicKey, subject, priority, reason, mastery: m };
+      return { topicKey, subject, priority, reason, mastery: m, mode };
     });
 
     scored.sort((a, b) => b.priority - a.priority);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Calculator, BookOpen, Brain, ChevronRight } from 'lucide-react';
+import { Zap, Calculator, BookOpen, Brain, ChevronRight, Shuffle, Target } from 'lucide-react';
 import { motion } from './Motion';
 
 const subjectIcons = { maths: Calculator, english: BookOpen, verbalreasoning: Brain };
@@ -31,11 +31,16 @@ const topicNames = {
 function RecommendationCard({ recommendation, onStart }) {
   if (!recommendation) return null;
 
-  const { topicKey, subject, reason } = recommendation;
+  const { topicKey, subject, reason, mode = 'focused' } = recommendation;
   const Icon = subjectIcons[subject] || Zap;
   const colour = subjectColours[subject] || '#7C3AED';
-  const displayName = topicNames[topicKey] || topicKey;
   const subjectLabel = subjectNames[subject] || subject;
+  const isDaily = mode === 'daily';
+
+  const displayName = isDaily ? `Mixed ${subjectLabel}` : (topicNames[topicKey] || topicKey);
+  const cardLabel = isDaily ? 'Keep it sharp' : 'What to practise next';
+  const ctaText = isDaily ? 'Start Daily Mix' : "Let's Go!";
+  const ModeIcon = isDaily ? Shuffle : Target;
 
   return (
     <motion.div
@@ -50,19 +55,25 @@ function RecommendationCard({ recommendation, onStart }) {
           <Icon className="w-6 h-6" style={{ color: colour }} />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-bold uppercase tracking-wider mb-0.5" style={{ color: colour }}>
-            What to practise next
-          </p>
+          <div className="flex items-center gap-2 mb-0.5">
+            <p className="text-xs font-bold uppercase tracking-wider" style={{ color: colour }}>
+              {cardLabel}
+            </p>
+            <span className="flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[10px] font-bold" style={{ background: `${colour}15`, color: colour }}>
+              <ModeIcon className="w-2.5 h-2.5" />
+              {isDaily ? 'Daily Mix' : 'Focused'}
+            </span>
+          </div>
           <h2 className="text-lg font-heading font-bold text-slate-800 mb-1">{displayName}</h2>
           <p className="text-sm text-slate-500 mb-3">{reason}</p>
           <motion.button
-            onClick={() => onStart(subject, topicKey)}
+            onClick={() => onStart(subject, topicKey, mode)}
             whileTap={{ scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
             className="flex items-center gap-2 px-5 py-2.5 font-bold text-white rounded-xl transition-colors text-sm"
             style={{ background: colour }}
           >
-            Let's Go!
+            {ctaText}
             <ChevronRight className="w-4 h-4" />
           </motion.button>
         </div>

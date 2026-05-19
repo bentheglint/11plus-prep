@@ -552,8 +552,9 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     setCurrentView('quiz');
   };
 
-  const handleStartDaily = () => {
-    const selected = selectDailyQuestions();
+  const handleStartDaily = (subjectOverride) => {
+    if (subjectOverride) setSelectedSubject(subjectOverride);
+    const selected = selectDailyQuestions(subjectOverride);
     setQuizQuestions(selected);
     setQuizMode('daily');
     setCurrentQuestionIndex(0);
@@ -1187,8 +1188,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     return valid.length > 0 ? valid[Math.floor(Math.random() * valid.length)] : questions[0];
   };
 
-  const selectDailyQuestions = () => {
-    const topics = questionData[selectedSubject].topics;
+  const selectDailyQuestions = (subjectOverride) => {
+    const subj = subjectOverride || selectedSubject;
+    const topics = questionData[subj].topics;
     const selected = [];
     const updatedSeen = { ...seenQuestions };
     const usedQuestionIds = new Set();
@@ -1791,9 +1793,13 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onViewMyLessons={() => setCurrentView('myLessons')}
         onSpeedReview={() => setCurrentView('speedReview')}
         onTestingMode={() => setCurrentView('testingMode')}
-        onStartTopic={(subject, topicKey) => {
-          setSelectedSubject(subject);
-          handleTopicSelect(topicKey, subject);
+        onStartTopic={(subject, topicKey, mode) => {
+          if (mode === 'daily') {
+            handleStartDaily(subject);
+          } else {
+            setSelectedSubject(subject);
+            handleTopicSelect(topicKey, subject);
+          }
         }}
         onStartAssignment={(subject, topicKey, recipientId) => {
           setActiveAssignment({ recipientId, topic: topicKey, subject });
