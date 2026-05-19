@@ -103,7 +103,7 @@ async function runGoldenPath(browser, viewport) {
       btn.click();
     });
     await page.waitForFunction(
-      () => /Daily|Focused|Mock|Challenge/i.test(document.body.innerText),
+      () => document.body.innerText.includes('Choose how'),
       { timeout: 10000 }
     );
     assert(true, 'learningMode screen shows practice modes');

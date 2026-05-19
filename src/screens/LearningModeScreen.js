@@ -50,7 +50,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            onClick={onStartDaily}
+            onClick={() => onStartDaily(subjectKey)}
             className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#3B82F6]/30 "
           >
             <div className="flex items-center justify-center w-16 h-16 bg-[#3B82F6]/10 rounded-2xl mb-4">
