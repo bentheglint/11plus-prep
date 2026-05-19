@@ -7,6 +7,8 @@
 
 import { json } from '../helpers.js';
 import { runLateFlagJob } from './assignments.js';
+import { formatTopicKey, SUBJECT_LABELS } from '../lib/topicLabels.js';
+import { buildMasterySummary, SUBJECT_TOPICS } from '../lib/mastery.js';
 
 const APP_URL = 'https://prepstep.co.uk';
 
@@ -37,8 +39,10 @@ async function sendEmail(env, { to, subject, html }) {
 
 // ── Trial Lifecycle Emails ──
 // Fires daily at 06:00 UTC. Sends one email per account per milestone.
-// Days 1/7/14 go to email_opt_in accounts only (engagement emails).
-// Day 25 goes to all accounts in trial (transactional — account access notice).
+// All trial milestones (Days 1/7/14/25/30) are now sent to every trial account
+// regardless of opt_in — these are activation-critical, not marketing.
+// Users who explicitly opt out via the Parent Dashboard toggle can stop the
+// weekly progress email but trial milestones still ship.
 export async function handleTrialEmails(env) {
   if (!env.EMAIL_API_KEY || !env.EMAIL_FROM) {
     console.log('[trial-email] Skipping — EMAIL_API_KEY or EMAIL_FROM not configured');
@@ -49,6 +53,7 @@ export async function handleTrialEmails(env) {
 
   // Find all accounts currently in their free trial (no subscription, not comped)
   // julianday arithmetic gives days since created_at (stored as UTC ISO string).
+  // Day 30 also goes out to recently-expired trials (capture window: 30-32 days).
   const { results: trialAccounts } = await db.prepare(`
     SELECT a.id, a.email, a.name, a.email_opt_in,
            CAST(julianday('now') - julianday(a.created_at || 'Z') AS INTEGER) as days_since_create,
@@ -59,184 +64,403 @@ export async function handleTrialEmails(env) {
       AND (a.subscription_status IS NULL OR a.subscription_status NOT IN ('active', 'trialing', 'past_due'))
   `).all();
 
-  const MILESTONES = [
-    { day: 1,  key: 'day1',  optInOnly: true  },
-    { day: 7,  key: 'day7',  optInOnly: true  },
-    { day: 14, key: 'day14', optInOnly: true  },
-    { day: 25, key: 'day25', optInOnly: false },
-  ];
+  // Trial email schedule:
+  //   Day 1  — welcome + first findings
+  //   Day 7  — week 1 milestone + weakest topic
+  //   Day 14 — mid-trial check + mock test push
+  //   Day 21 — weekly progress (rich data view — uses weeklyEmailHtml)
+  //   Day 25 — 5 days left conversion push
+  //   Day 28 — weekly progress (last full data view before paywall)
+  //   Day 30 — trial ended
+  const MILESTONES = [1, 7, 14, 21, 25, 28, 30];
+  const WEEKLY_DAYS = new Set([21, 28]);
 
   for (const account of trialAccounts) {
     const d = account.days_since_create;
-    const milestone = MILESTONES.find(m => m.day === d);
-    if (!milestone) continue;
-    if (milestone.optInOnly && !account.email_opt_in) continue;
+    if (!MILESTONES.includes(d)) continue;
 
     try {
-      // Fetch activity data for personalisation
-      const [recentQuizzes, streak] = await Promise.all([
-        db.prepare(
-          `SELECT topic_key, subject, score, total FROM quiz_results
-           WHERE child_id = ? ORDER BY completed_at DESC LIMIT 20`
-        ).bind(account.child_id).all(),
-        db.prepare(
-          'SELECT current_streak FROM streaks WHERE child_id = ?'
-        ).bind(account.child_id).first(),
-      ]);
-
-      const quizCount = recentQuizzes.results?.length || 0;
-      const currentStreak = streak?.current_streak || 0;
-
       let subject, html;
 
-      if (milestone.key === 'day1') {
-        ({ subject, html } = buildDay1Email(account, quizCount));
-      } else if (milestone.key === 'day7') {
-        ({ subject, html } = buildDay7Email(account, quizCount, currentStreak, recentQuizzes.results || []));
-      } else if (milestone.key === 'day14') {
-        ({ subject, html } = buildDay14Email(account, quizCount, currentStreak));
-      } else if (milestone.key === 'day25') {
-        ({ subject, html } = buildDay25Email(account, quizCount, currentStreak));
+      if (WEEKLY_DAYS.has(d)) {
+        // Day 21 / Day 28 — send the rich weekly progress email
+        html = await buildWeeklyProgressEmail(env.DB, account);
+        // If user has done nothing at all this week AND nothing historical, skip
+        if (!html) {
+          console.log(`[trial-email] Skipped day${d} (no activity) for ${account.email}`);
+          continue;
+        }
+        subject = `${account.display_name}'s week on PrepStep`;
+      } else {
+        // Standard trial milestone email — fetch personalisation data
+        const [recentQuizzes, streak, weakestTopic] = await Promise.all([
+          db.prepare(
+            `SELECT topic_key, subject, score, total FROM quiz_results
+             WHERE child_id = ? ORDER BY completed_at DESC LIMIT 50`
+          ).bind(account.child_id).all(),
+          db.prepare(
+            'SELECT current_streak FROM streaks WHERE child_id = ?'
+          ).bind(account.child_id).first(),
+          db.prepare(
+            `SELECT topic_key, subject,
+                    SUM(is_correct) * 1.0 / COUNT(*) as accuracy,
+                    COUNT(*) as attempts
+             FROM question_results
+             WHERE child_id = ?
+             GROUP BY topic_key, subject
+             HAVING COUNT(*) >= 5
+             ORDER BY accuracy ASC
+             LIMIT 1`
+          ).bind(account.child_id).first(),
+        ]);
+
+        const quizCount = recentQuizzes.results?.length || 0;
+        const currentStreak = streak?.current_streak || 0;
+        const weakest = weakestTopic
+          ? { topicKey: weakestTopic.topic_key, accuracy: Math.round(weakestTopic.accuracy * 100) }
+          : null;
+
+        if (d === 1) ({ subject, html } = buildDay1Email(account, quizCount, weakest));
+        else if (d === 7) ({ subject, html } = buildDay7Email(account, quizCount, currentStreak, recentQuizzes.results || [], weakest));
+        else if (d === 14) ({ subject, html } = buildDay14Email(account, quizCount, currentStreak, weakest));
+        else if (d === 25) ({ subject, html } = buildDay25Email(account, quizCount, currentStreak, weakest));
+        else if (d === 30) ({ subject, html } = buildDay30Email(account, quizCount, currentStreak));
       }
 
       await sendEmail(env, { to: account.email, subject, html });
-      console.log(`[trial-email] Sent ${milestone.key} to ${account.email}`);
+      console.log(`[trial-email] Sent day${d} to ${account.email}`);
     } catch (err) {
-      console.error(`[trial-email] Failed ${milestone.key} for ${account.email}:`, err.message);
+      console.error(`[trial-email] Failed day${d} for ${account.email}:`, err.message);
     }
   }
 }
 
-// ── Email template helpers ──
+// ── Design system ──
+// Single source of truth for all email styling. Mirrors the brand brief:
+// warm neutrals (not Atom-blue corporate-safe), distinctive typography
+// (Fraunces serif headings + Inter sans body), single accent purple.
+
+const FONTS_LINK = `
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">`;
+
+// Body font stack — Inter where available, system fallback otherwise (Outlook strips webfonts)
+const BODY_FONT = `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`;
+// Heading font stack — Fraunces where available, Georgia fallback
+const HEAD_FONT = `'Fraunces', Georgia, 'Times New Roman', serif`;
+
+// Colour tokens
+const C = {
+  bgPage: '#FAF7F2',          // warm cream page background
+  bgCard: '#FFFFFF',
+  bgCardSubtle: '#FCFAF6',    // off-white for nested elements
+  bgBrandSoft: '#F4F0FF',     // soft purple fill
+  brand: '#7C3AED',
+  brandDeep: '#6B21A8',
+  textPrimary: '#1C1A1F',     // warm near-black, not flat #000
+  textSecondary: '#5B5662',
+  textMuted: '#9B95A2',
+  border: '#ECE7E1',          // warm border
+  borderBrand: '#E5DDFA',     // purple-tinted border
+  // Mastery colours — toned-down, less heatmap-of-doom
+  bandMastered: '#15803D',
+  bandStrong: '#16A34A',
+  bandConfident: '#7C3AED',
+  bandDeveloping: '#A78BFA',
+  bandExploring: '#D97706',
+  bandNotStarted: '#E5E2DD',
+};
 
 function emailWrapper(childName, content) {
   return `<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8f7ff;">
-  <div style="max-width:520px;margin:0 auto;padding:32px 16px;">
-    <div style="background:#7C3AED;border-radius:16px 16px 0 0;padding:24px;text-align:center;">
-      <p style="color:white;margin:0;font-size:20px;font-weight:700;">PrepStep</p>
-      <p style="color:rgba(255,255,255,0.8);margin:8px 0 0;font-size:13px;">${childName}'s 11+ prep</p>
-    </div>
-    <div style="background:white;padding:28px 24px;border-radius:0 0 16px 16px;">
-      ${content}
-    </div>
-    <p style="text-align:center;font-size:11px;color:#aaa;margin-top:16px;">
-      PrepStep · Made in Bournemouth · Built by a parent<br>
-      <a href="mailto:hello@prepstep.co.uk?subject=unsubscribe" style="color:#aaa;">Unsubscribe</a>
-    </p>
-  </div>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+${FONTS_LINK}
+</head>
+<body style="margin:0;padding:0;font-family:${BODY_FONT};background:${C.bgPage};color:${C.textPrimary};-webkit-font-smoothing:antialiased;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.bgPage};">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
+          <!-- Brand header (no card, sits on cream background) -->
+          <tr>
+            <td style="padding:0 8px 24px;text-align:left;">
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="font-family:${BODY_FONT};font-size:22px;font-weight:800;color:${C.textPrimary};letter-spacing:-0.5px;padding-right:8px;">PrepStep</td>
+                  <td style="vertical-align:bottom;padding-bottom:5px;">
+                    <span style="display:inline-block;width:5px;height:7px;background:#3B82F6;margin-right:2px;border-radius:1px;"></span><span style="display:inline-block;width:5px;height:11px;background:${C.brand};margin-right:2px;border-radius:1px;"></span><span style="display:inline-block;width:5px;height:15px;background:#22C55E;border-radius:1px;"></span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main card -->
+          <tr>
+            <td style="background:${C.bgCard};border-radius:16px;padding:36px 32px;border:1px solid ${C.border};">
+              ${content}
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 8px 0;text-align:center;color:${C.textMuted};font-size:11px;font-family:${BODY_FONT};line-height:1.5;">
+              <p style="margin:0 0 4px;">${childName}'s 11+ prep · PrepStep · Made in Bournemouth</p>
+              <p style="margin:0;"><a href="mailto:hello@prepstep.co.uk?subject=unsubscribe" style="color:${C.textMuted};text-decoration:underline;">Unsubscribe</a> · <a href="${APP_URL}" style="color:${C.textMuted};text-decoration:underline;">prepstep.co.uk</a></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>`;
 }
 
 function ctaButton(text, url) {
-  return `<div style="text-align:center;margin:24px 0;">
-    <a href="${url}" style="background:#7C3AED;color:white;text-decoration:none;padding:14px 32px;border-radius:12px;font-weight:700;font-size:15px;display:inline-block;">${text}</a>
-  </div>`;
+  return `
+  <table role="presentation" cellpadding="0" cellspacing="0" style="margin:24px 0;">
+    <tr>
+      <td style="background:${C.brand};border-radius:10px;">
+        <a href="${url}" style="display:inline-block;padding:14px 28px;font-family:${BODY_FONT};font-size:15px;font-weight:600;color:#ffffff;text-decoration:none;letter-spacing:0.2px;">${text} →</a>
+      </td>
+    </tr>
+  </table>`;
 }
 
-function buildDay1Email(account, quizCount) {
+// Refined heading — serif, generous size, warm dark colour
+function heading(level, text, marginTop = 0) {
+  const sizes = { h1: 28, h2: 22, h3: 16 };
+  const size = sizes[level] || 18;
+  return `<p style="margin:${marginTop}px 0 8px;font-family:${HEAD_FONT};font-size:${size}px;font-weight:600;color:${C.textPrimary};line-height:1.25;letter-spacing:-0.3px;">${text}</p>`;
+}
+
+function bodyText(text, options = {}) {
+  const { muted = false, size = 15, marginTop = 0, marginBottom = 12 } = options;
+  const colour = muted ? C.textSecondary : C.textPrimary;
+  return `<p style="margin:${marginTop}px 0 ${marginBottom}px;font-family:${BODY_FONT};font-size:${size}px;font-weight:400;color:${colour};line-height:1.55;">${text}</p>`;
+}
+
+function smallLabel(text, colour = C.textMuted) {
+  return `<p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:11px;font-weight:600;color:${colour};letter-spacing:1.2px;text-transform:uppercase;">${text}</p>`;
+}
+
+// Info card — used for tips, focus areas, FSM hint, etc.
+function infoCard({ label, title, body, accent = 'brand' }) {
+  const palette = accent === 'amber'
+    ? { bg: '#FEF3E2', border: '#F9D7A8', labelColour: '#B45309', textColour: '#7C3F0A' }
+    : accent === 'green'
+    ? { bg: '#F0FDF4', border: '#BBF7D0', labelColour: '#15803D', textColour: '#14532D' }
+    : { bg: C.bgBrandSoft, border: C.borderBrand, labelColour: C.brand, textColour: C.textPrimary };
+
+  return `
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
+    <tr>
+      <td style="background:${palette.bg};border:1px solid ${palette.border};border-radius:12px;padding:18px 20px;">
+        ${label ? `<p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:11px;font-weight:700;color:${palette.labelColour};letter-spacing:1.2px;text-transform:uppercase;">${label}</p>` : ''}
+        ${title ? `<p style="margin:0 0 6px;font-family:${HEAD_FONT};font-size:17px;font-weight:600;color:${palette.textColour};line-height:1.3;">${title}</p>` : ''}
+        <p style="margin:0;font-family:${BODY_FONT};font-size:14px;color:${palette.textColour};line-height:1.55;">${body}</p>
+      </td>
+    </tr>
+  </table>`;
+}
+
+export function buildDay1Email(account, quizCount, weakest) {
   const child = account.display_name;
+  const parentFirst = account.name?.split(' ')[0] || account.name;
   const hasActivity = quizCount > 0;
   const subject = hasActivity
-    ? `${child} has already made a start — here's what PrepStep found`
-    : `${child}'s 30-day trial has started — here's how to get the most out of it`;
+    ? `${child} has already made a start on PrepStep`
+    : `${child}'s 30-day PrepStep trial has started`;
+
+  const intro = hasActivity
+    ? `Great news — ${child} has already jumped in. PrepStep is now tracking progress across every topic, so you'll see exactly where they're strong and where they need more practice.`
+    : `${child}'s 30-day trial just started. Here's the quickest way to see what PrepStep can do.`;
+
+  const weakestCard = weakest
+    ? infoCard({
+        label: 'First findings',
+        title: `${formatTopicKey(weakest.topicKey)} is the area with most room to grow`,
+        body: `${weakest.accuracy}% accuracy so far. A Focused Learning session — lesson first, then 10 questions — is the fastest way to shift it.`,
+        accent: 'amber',
+      })
+    : '';
+
+  const gettingStarted = !hasActivity ? `
+    ${heading('h3', 'Three ways to start')}
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 4px;">
+      <tr><td style="padding:10px 0;border-bottom:1px solid ${C.border};">
+        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Daily Learning</strong> — 10 mixed questions, around 8 minutes. The quickest way to see what ${child} knows.`, { size: 14, marginBottom: 0 })}
+      </td></tr>
+      <tr><td style="padding:10px 0;border-bottom:1px solid ${C.border};">
+        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Focused Learning</strong> — a short lesson then 10 questions on one topic. Builds real understanding.`, { size: 14, marginBottom: 0 })}
+      </td></tr>
+      <tr><td style="padding:10px 0;">
+        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Mock Test</strong> — a full timed paper, marked instantly. Shows you where ${child} stands today.`, { size: 14, marginBottom: 0 })}
+      </td></tr>
+    </table>
+  ` : '';
 
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
-    ${hasActivity
-      ? `<p style="color:#636E72;font-size:14px;">Great news — ${child} has already jumped in. PrepStep is now tracking their progress across every topic, so you'll be able to see exactly where they're strong and where they need more practice.</p>`
-      : `<p style="color:#636E72;font-size:14px;">${child}'s 30-day trial just started. Here's the quickest way to see what PrepStep can do:</p>`
-    }
-    <div style="background:#f8f7ff;border-radius:12px;padding:16px;margin:20px 0;">
-      <p style="color:#2D3436;font-size:14px;font-weight:600;margin:0 0 10px;">Three things to do in the first week:</p>
-      <p style="color:#636E72;font-size:13px;margin:6px 0;">1. <strong>Start a Daily Learning quiz</strong> — 10 questions across all subjects, takes about 8 minutes.</p>
-      <p style="color:#636E72;font-size:13px;margin:6px 0;">2. <strong>Try Focused Learning</strong> — pick a topic ${child} finds tricky and work through it with a lesson first.</p>
-      <p style="color:#636E72;font-size:13px;margin:6px 0;">3. <strong>Sit a Mock Test</strong> — timed, full-paper, instantly marked. Great for seeing where things stand.</p>
-    </div>
+    ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
+    ${bodyText(intro, { muted: true, size: 15 })}
+    ${weakestCard}
+    ${gettingStarted}
     ${ctaButton('Open PrepStep', APP_URL)}
-    <p style="color:#636E72;font-size:13px;">Any questions, just reply to this email. — Ben</p>
+    ${bodyText(`Any questions, just reply to this email.<br/>— Ben`, { muted: true, size: 13, marginTop: 20 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
 }
 
-function buildDay7Email(account, quizCount, currentStreak, recentQuizzes) {
+export function buildDay7Email(account, quizCount, currentStreak, recentQuizzes, weakest) {
   const child = account.display_name;
-  const subject = `${child}'s first week on PrepStep`;
+  const parentFirst = account.name?.split(' ')[0] || account.name;
+  const subject = weakest
+    ? `${child}'s first week — ${formatTopicKey(weakest.topicKey)} is the topic to focus on`
+    : `${child}'s first week on PrepStep`;
 
-  // Top topic by quiz count
   const topicCounts = {};
   recentQuizzes.forEach(q => { topicCounts[q.topic_key] = (topicCounts[q.topic_key] || 0) + 1; });
   const topTopic = Object.entries(topicCounts).sort((a, b) => b[1] - a[1])[0];
-  const topTopicName = topTopic
-    ? topTopic[0].replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase())
-    : null;
+  const topTopicName = topTopic ? formatTopicKey(topTopic[0]) : null;
+
+  const summary = quizCount > 0
+    ? `${child} has completed <strong>${quizCount} quiz${quizCount > 1 ? 'zes' : ''}</strong> in the first week${currentStreak > 1 ? ` and is on a <strong>${currentStreak}-day streak</strong>` : ''}.${topTopicName ? ` Most time spent on <strong>${topTopicName}</strong>.` : ''}`
+    : `A week has passed since ${child}'s trial started. If you haven't had a chance to try PrepStep yet, there are still 23 days to explore — no rush.`;
+
+  const weakestCard = weakest
+    ? infoCard({
+        label: 'This week\'s focus area',
+        title: `${formatTopicKey(weakest.topicKey)} · ${weakest.accuracy}% accuracy`,
+        body: `A Focused Learning session walks through the method first, then practises with 10 questions. The fastest way to shift a tricky topic.`,
+        accent: 'amber',
+      })
+    : '';
 
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
-    ${quizCount > 0
-      ? `<p style="color:#636E72;font-size:14px;">${child} has completed <strong>${quizCount} quiz${quizCount > 1 ? 'zes' : ''}</strong> in their first week${currentStreak > 1 ? ` and is on a <strong>${currentStreak}-day streak</strong>` : ''}. ${topTopicName ? `Most time spent on <strong>${topTopicName}</strong>.` : ''}</p>`
-      : `<p style="color:#636E72;font-size:14px;">A week has passed since ${child}'s trial started. If you haven't had a chance to try PrepStep yet, there are still 23 days to explore it fully — no rush.</p>`
-    }
-    <div style="background:#f8f7ff;border-radius:12px;padding:16px;margin:20px 0;">
-      <p style="color:#2D3436;font-size:13px;margin:0;">
-        ${quizCount > 0
-          ? `<strong>Tip for week 2:</strong> Try a Focused Learning session on a topic ${child} found tricky. The lesson before the quiz makes a real difference — it teaches the method, not just tests it.`
-          : `<strong>Where to start:</strong> Daily Learning is the easiest entry point — 10 questions, about 8 minutes, across all three subjects. It'll show you immediately where ${child} needs to focus.`
-        }
-      </p>
-    </div>
+    ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
+    ${bodyText(summary, { muted: true, size: 15 })}
+    ${weakestCard}
     ${ctaButton('Continue on PrepStep', APP_URL)}
-    <p style="color:#636E72;font-size:13px;">23 days left in your free trial.</p>
+    ${bodyText('23 days left in your free trial.', { muted: true, size: 13, marginTop: 16 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
 }
 
-function buildDay14Email(account, quizCount, currentStreak) {
+export function buildDay14Email(account, quizCount, currentStreak, weakest) {
   const child = account.display_name;
+  const parentFirst = account.name?.split(' ')[0] || account.name;
   const subject = `Two weeks in — how is ${child} getting on?`;
 
+  const summary = quizCount > 0
+    ? `Two weeks into ${child}'s trial. They've completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''}${currentStreak > 1 ? ` and kept a ${currentStreak}-day streak going` : ''}. The Parent Dashboard shows a full breakdown of where they're strong and where to focus next.`
+    : `Two weeks in. If you haven't started yet, you've still got 16 days to try PrepStep properly — that's plenty of time to see whether it works for ${child}.`;
+
+  const weakestLine = weakest
+    ? bodyText(`Right now <strong>${formatTopicKey(weakest.topicKey)}</strong> is the weakest area (${weakest.accuracy}% accuracy). A Focused Learning session this week would be worth it.`, { muted: true, size: 15 })
+    : '';
+
+  const mockCard = infoCard({
+    label: 'Worth trying',
+    title: 'A timed Mock Test',
+    body: `A full timed GL Assessment paper, marked instantly with a topic-by-topic breakdown. The best way to see how ${child} would perform on the day — and where to focus the last weeks of prep.`,
+    accent: 'brand',
+  });
+
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
-    <p style="color:#636E72;font-size:14px;">Two weeks into ${child}'s trial. ${quizCount > 0
-      ? `They've completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''}${currentStreak > 1 ? ` and kept a ${currentStreak}-day streak going` : ''}. The Parent Dashboard in the app shows a full breakdown of where they're strong and where to focus next.`
-      : `If you haven't started yet, you've still got 16 days to try it properly — that's plenty of time to see whether it works for ${child}.`
-    }</p>
-    <div style="background:#f8f7ff;border-radius:12px;padding:16px;margin:20px 0;">
-      <p style="color:#2D3436;font-size:14px;font-weight:600;margin:0 0 8px;">Have you tried a Mock Test yet?</p>
-      <p style="color:#636E72;font-size:13px;margin:0;">A full timed GL Assessment paper, marked instantly with a topic-by-topic breakdown. It's the best way to see how ${child} would perform on the day — and where to focus the last weeks of prep.</p>
-    </div>
+    ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
+    ${bodyText(summary, { muted: true, size: 15 })}
+    ${weakestLine}
+    ${mockCard}
     ${ctaButton('Try a Mock Test', APP_URL)}
-    <p style="color:#636E72;font-size:13px;">16 days left in your free trial.</p>
+    ${bodyText('16 days left in your free trial.', { muted: true, size: 13, marginTop: 16 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
 }
 
-function buildDay25Email(account, quizCount, currentStreak) {
+export function buildDay25Email(account, quizCount, currentStreak, weakest) {
   const child = account.display_name;
+  const parentFirst = account.name?.split(' ')[0] || account.name;
   const subject = `5 days left in ${child}'s PrepStep trial`;
 
+  const summary = quizCount > 0
+    ? `Your free trial ends in 5 days. ${child} has completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} and built up ${currentStreak > 0 ? `a ${currentStreak}-day streak and ` : ''}real learning data — all of which stays in the app when you subscribe.`
+    : `Your free trial ends in 5 days. If you haven't had a chance to try PrepStep yet, there are still 5 days of full access before the trial ends.`;
+
+  const weakestLine = weakest && quizCount > 0
+    ? bodyText(`${child} has more to do on <strong>${formatTopicKey(weakest.topicKey)}</strong> (${weakest.accuracy}% — the weakest area we've identified). Subscribing keeps that work going.`, { muted: true, size: 15 })
+    : '';
+
+  const priceCard = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
+      <tr>
+        <td style="background:${C.bgBrandSoft};border:1px solid ${C.borderBrand};border-radius:12px;padding:24px;text-align:center;">
+          <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:22px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.3px;">£24.99<span style="font-family:${BODY_FONT};font-size:14px;font-weight:400;color:${C.textSecondary};"> / month</span></p>
+          <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year — saves £101</p>
+          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Cancel any time. No refund policy — you've had 30 days free to decide.</p>
+        </td>
+      </tr>
+    </table>`;
+
+  const fsmCard = infoCard({
+    label: 'A note on access',
+    title: 'Free for FSM and Pupil Premium families',
+    body: `On Free School Meals or Pupil Premium? PrepStep is permanently free for your family. Email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:${C.brand};text-decoration:underline;">hello@prepstep.co.uk</a> and we'll set you up.`,
+    accent: 'green',
+  });
+
   const content = `
-    <p style="color:#2D3436;font-size:15px;margin-top:0;">Hi ${account.name.split(" ")[0]},</p>
-    <p style="color:#636E72;font-size:14px;">Your free trial ends in 5 days. ${quizCount > 0
-      ? `${child} has completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} and built up ${currentStreak > 0 ? `a ${currentStreak}-day streak and ` : ''}real learning data — all of which stays in the app when you subscribe.`
-      : `If you haven't had a chance to try PrepStep yet, there are still 5 days of full access before the trial ends.`
-    }</p>
-    <div style="background:#f8f7ff;border-radius:12px;padding:20px;margin:20px 0;">
-      <p style="color:#2D3436;font-size:15px;font-weight:700;margin:0 0 4px;">£24.99/month or £199/year</p>
-      <p style="color:#636E72;font-size:13px;margin:0 0 4px;">Annual saves £101 — over four months free.</p>
-      <p style="color:#636E72;font-size:13px;margin:0;">Cancel any time from your account page. No refund policy — you've had 30 days free to decide.</p>
-    </div>
+    ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
+    ${bodyText(summary, { muted: true, size: 15 })}
+    ${weakestLine}
+    ${priceCard}
     ${ctaButton('Subscribe now', APP_URL)}
-    <p style="color:#636E72;font-size:13px;">
-      On Free School Meals or Pupil Premium? PrepStep is free for your family.
-      Email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:#7C3AED;">hello@prepstep.co.uk</a> and we'll set you up.
-    </p>
+    ${fsmCard}
+  `;
+
+  return { subject, html: emailWrapper(child, content) };
+}
+
+export function buildDay30Email(account, quizCount, currentStreak) {
+  const child = account.display_name;
+  const parentFirst = account.name?.split(' ')[0] || account.name;
+  const subject = `${child}'s PrepStep trial has ended`;
+
+  const summary = quizCount > 0
+    ? `${child}'s 30-day free trial ended yesterday. Their progress so far — ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} completed${currentStreak > 0 ? `, a ${currentStreak}-day streak` : ''}, mastery data, mock test results — is all preserved. Pick up where you left off with a subscription.`
+    : `${child}'s 30-day free trial ended yesterday. No worries if you didn't get a chance to try it properly — life is busy. Their account stays open for 6 months in case you want to come back.`;
+
+  const priceCard = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
+      <tr>
+        <td style="background:${C.bgBrandSoft};border:1px solid ${C.borderBrand};border-radius:12px;padding:24px;text-align:center;">
+          <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:22px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.3px;">£24.99<span style="font-family:${BODY_FONT};font-size:14px;font-weight:400;color:${C.textSecondary};"> / month</span></p>
+          <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year — saves £101</p>
+          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Cancel any time. We've kept ${child}'s data for 6 months — sign in any time within that window to continue.</p>
+        </td>
+      </tr>
+    </table>`;
+
+  const fsmCard = infoCard({
+    label: 'A note on access',
+    title: 'Free for FSM and Pupil Premium families',
+    body: `Email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:${C.brand};text-decoration:underline;">hello@prepstep.co.uk</a> and we'll set you up — permanently, no card needed.`,
+    accent: 'green',
+  });
+
+  const content = `
+    ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
+    ${bodyText(summary, { muted: true, size: 15 })}
+    ${priceCard}
+    ${ctaButton('Subscribe and continue', APP_URL)}
+    ${fsmCard}
+    ${bodyText(`If PrepStep wasn't right for ${child}, I'd love to know why — just reply and tell me what could have been better.<br/>— Ben`, { muted: true, size: 13, marginTop: 20 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
@@ -258,12 +482,17 @@ export async function handleScheduled(env) {
 
   const db = env.DB;
 
-  // Get all accounts with children where parent opted in to progress emails
+  // Weekly progress emails: only sent to active subscribers (and comped accounts).
+  // Trial accounts get the rich weekly progress email at Days 21 and 28 of their
+  // trial via handleTrialEmails — that's intentional sales pacing, not Sunday cadence.
+  // Users on cancelled / expired / never-subscribed status don't get weekly emails.
   const { results: accounts } = await db.prepare(`
     SELECT a.id, a.email, a.name, c.id as child_id, c.display_name
     FROM accounts a
     JOIN children c ON c.account_id = a.id
-    WHERE a.last_login_at IS NOT NULL AND a.email_opt_in = 1
+    WHERE a.last_login_at IS NOT NULL
+      AND a.email_opt_in = 1
+      AND (a.is_comped = 1 OR a.subscription_status IN ('active', 'trialing', 'past_due'))
   `).all();
 
   if (accounts.length === 0) {
@@ -271,92 +500,15 @@ export async function handleScheduled(env) {
     return;
   }
 
-  const now = new Date();
-  const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
-
   for (const account of accounts) {
     try {
-      // Aggregate this week's data
-      const [quizzes, questions, streak] = await Promise.all([
-        db.prepare(
-          `SELECT topic_key, subject, score, total FROM quiz_results
-           WHERE child_id = ? AND completed_at > ? ORDER BY completed_at`
-        ).bind(account.child_id, weekAgo).all(),
-        db.prepare(
-          `SELECT COUNT(*) as total, SUM(is_correct) as correct FROM question_results
-           WHERE child_id = ? AND attempted_at > ?`
-        ).bind(account.child_id, weekAgo).first(),
-        db.prepare(
-          'SELECT current_streak, longest_streak FROM streaks WHERE child_id = ?'
-        ).bind(account.child_id).first(),
-      ]);
-
-      const quizCount = quizzes.results.length;
-      const questionCount = questions?.total || 0;
-      const correctCount = questions?.correct || 0;
-      const accuracy = questionCount > 0 ? Math.round((correctCount / questionCount) * 100) : 0;
-      const currentStreak = streak?.current_streak || 0;
-
-      // Skip if no activity this week
-      if (quizCount === 0 && questionCount === 0) {
+      const html = await buildWeeklyProgressEmail(db, account);
+      if (!html) {
         console.log(`[email] Skipping ${account.email} — no activity this week`);
         continue;
       }
-
-      // Group quizzes by topic
-      const topicSummary = {};
-      quizzes.results.forEach(q => {
-        if (!topicSummary[q.topic_key]) {
-          topicSummary[q.topic_key] = { quizzes: 0, totalScore: 0, totalQuestions: 0 };
-        }
-        topicSummary[q.topic_key].quizzes++;
-        topicSummary[q.topic_key].totalScore += q.score;
-        topicSummary[q.topic_key].totalQuestions += q.total;
-      });
-
-      const topicLines = Object.entries(topicSummary)
-        .map(([topic, data]) => {
-          const avg = Math.round((data.totalScore / data.totalQuestions) * 100);
-          const name = topic.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase());
-          return `${name}: ${data.quizzes} quiz${data.quizzes > 1 ? 'zes' : ''}, ${avg}% average`;
-        })
-        .join('\n  ');
-
-      // Build email
-      const subject = `${account.display_name}'s Weekly Progress — PrepStep`;
-      const html = buildEmailHtml({
-        parentName: account.name,
-        childName: account.display_name,
-        quizCount,
-        questionCount,
-        accuracy,
-        currentStreak,
-        topicLines: Object.entries(topicSummary).map(([topic, data]) => ({
-          name: topic.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()),
-          quizzes: data.quizzes,
-          average: Math.round((data.totalScore / data.totalQuestions) * 100),
-        })),
-      });
-
-      // Send via Resend API
-      await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${env.EMAIL_API_KEY}`,
-        },
-        body: JSON.stringify({
-          from: env.EMAIL_FROM,
-          to: account.email,
-          subject,
-          html,
-          headers: {
-            'List-Unsubscribe': `<mailto:hello@prepstep.co.uk?subject=unsubscribe>`,
-            'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
-          },
-        }),
-      });
-
+      const subject = `${account.display_name}'s week on PrepStep`;
+      await sendEmail(env, { to: account.email, subject, html });
       console.log(`[email] Sent weekly progress to ${account.email}`);
     } catch (err) {
       console.error(`[email] Failed for ${account.email}:`, err.message);
@@ -364,82 +516,244 @@ export async function handleScheduled(env) {
   }
 }
 
-// ── Email HTML Template ──
-function buildEmailHtml({ parentName, childName, quizCount, questionCount, accuracy, currentStreak, topicLines }) {
-  const topicRows = topicLines.map(t => `
-    <tr>
-      <td style="padding: 8px 12px; border-bottom: 1px solid #f0f0f0;">${t.name}</td>
-      <td style="padding: 8px 12px; border-bottom: 1px solid #f0f0f0; text-align: center;">${t.quizzes}</td>
-      <td style="padding: 8px 12px; border-bottom: 1px solid #f0f0f0; text-align: center;">${t.average}%</td>
-    </tr>
-  `).join('');
+// ── Weekly Progress Email ──
+// The single most important parent-facing email. For parents who don't open
+// the dashboard, this IS the dashboard. Mirrors the dashboard structure:
+// readiness band header, this-week stats, mock test (if any), full topic
+// heatmap, focus area, mock CTA.
+//
+// Returns null if there's no activity this week (skip send).
+async function buildWeeklyProgressEmail(db, account) {
+  const now = new Date();
+  const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
 
-  return `
-<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"></head>
-<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f7ff;">
-  <div style="max-width: 520px; margin: 0 auto; padding: 32px 16px;">
-    <!-- Header -->
-    <div style="background: #6C5CE7; border-radius: 16px 16px 0 0; padding: 24px; text-align: center;">
-      <h1 style="color: white; margin: 0; font-size: 22px;">${childName}'s Week in Review</h1>
-      <p style="color: rgba(255,255,255,0.8); margin: 8px 0 0; font-size: 14px;">PrepStep</p>
-    </div>
+  // Fetch everything in parallel
+  const [weeklyQuestions, weeklyQuizzes, weeklyMocks, streak, allQuestions] = await Promise.all([
+    db.prepare(
+      `SELECT COUNT(*) as total, SUM(is_correct) as correct
+       FROM question_results
+       WHERE child_id = ? AND attempted_at > ?`
+    ).bind(account.child_id, weekAgo).first(),
+    db.prepare(
+      `SELECT COUNT(*) as total FROM quiz_results
+       WHERE child_id = ? AND completed_at > ?`
+    ).bind(account.child_id, weekAgo).first(),
+    db.prepare(
+      `SELECT subject, percentage, completed_at FROM mock_test_results
+       WHERE child_id = ? AND completed_at > ?
+       ORDER BY completed_at DESC`
+    ).bind(account.child_id, weekAgo).all(),
+    db.prepare(
+      'SELECT current_streak, longest_streak FROM streaks WHERE child_id = ?'
+    ).bind(account.child_id).first(),
+    db.prepare(
+      `SELECT topic_key, subject, is_correct, attempted_at
+       FROM question_results
+       WHERE child_id = ?
+       ORDER BY attempted_at DESC
+       LIMIT 2000`
+    ).bind(account.child_id).all(),
+  ]);
 
-    <!-- Body -->
-    <div style="background: white; padding: 24px; border-radius: 0 0 16px 16px;">
-      <p style="color: #2D3436; font-size: 15px; margin-top: 0;">Hi ${parentName},</p>
-      <p style="color: #636E72; font-size: 14px;">Here's what ${childName} achieved this week:</p>
+  const weeklyQuestionCount = weeklyQuestions?.total || 0;
+  const weeklyQuizCount = weeklyQuizzes?.total || 0;
+  const weeklyAccuracy = weeklyQuestionCount > 0
+    ? Math.round(((weeklyQuestions.correct || 0) / weeklyQuestionCount) * 100)
+    : null;
+  const currentStreak = streak?.current_streak || 0;
+  const mocksThisWeek = weeklyMocks.results || [];
 
-      <!-- Stats -->
-      <div style="display: flex; gap: 12px; margin: 20px 0;">
-        <div style="flex: 1; background: #f8f7ff; border-radius: 12px; padding: 16px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: #6C5CE7;">${quizCount}</div>
-          <div style="font-size: 12px; color: #636E72;">Quizzes</div>
-        </div>
-        <div style="flex: 1; background: #f8f7ff; border-radius: 12px; padding: 16px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: #6C5CE7;">${accuracy}%</div>
-          <div style="font-size: 12px; color: #636E72;">Accuracy</div>
-        </div>
-        <div style="flex: 1; background: #f8f7ff; border-radius: 12px; padding: 16px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: #6C5CE7;">${currentStreak}</div>
-          <div style="font-size: 12px; color: #636E72;">Day Streak</div>
-        </div>
-      </div>
+  // Skip if no activity at all
+  if (weeklyQuestionCount === 0 && weeklyQuizCount === 0 && mocksThisWeek.length === 0) {
+    return null;
+  }
 
-      <!-- Topic breakdown -->
-      ${topicRows ? `
-      <h3 style="color: #2D3436; font-size: 14px; margin: 20px 0 8px;">Topics Practised</h3>
-      <table style="width: 100%; border-collapse: collapse; font-size: 13px; color: #2D3436;">
-        <tr style="background: #f8f7ff;">
-          <th style="padding: 8px 12px; text-align: left; font-weight: 600;">Topic</th>
-          <th style="padding: 8px 12px; text-align: center; font-weight: 600;">Quizzes</th>
-          <th style="padding: 8px 12px; text-align: center; font-weight: 600;">Avg Score</th>
-        </tr>
-        ${topicRows}
-      </table>
-      ` : ''}
+  // Full mastery summary across all-time question results
+  const summary = buildMasterySummary(allQuestions.results || [], now.getTime());
 
-      <!-- Encouragement -->
-      <div style="background: #f0fff4; border-radius: 12px; padding: 16px; margin: 20px 0;">
-        <p style="color: #2D3436; font-size: 14px; margin: 0;">
-          ${quizCount >= 5
-            ? `Brilliant week! ${childName} is putting in great effort.`
-            : quizCount >= 2
-              ? `Good progress this week. Every quiz counts!`
-              : `${childName} made a start this week. Even a little practice makes a difference.`
+  // Pull child name for personalisation
+  const childName = account.display_name;
+  const parentFirst = account.name?.split(' ')[0] || account.name;
+
+  // Build the email HTML
+  return weeklyEmailHtml({
+    parentFirst,
+    childName,
+    weeklyQuizCount,
+    weeklyQuestionCount,
+    weeklyAccuracy,
+    currentStreak,
+    mocksThisWeek,
+    summary,
+  });
+}
+
+export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weeklyQuestionCount, weeklyAccuracy, currentStreak, mocksThisWeek, summary }) {
+  const { readiness, coveredTopics, inProgressTopics, weakestCovered, coveredAccuracy } = summary;
+
+  // ── Encouragement based on activity level ──
+  let encouragement;
+  if (weeklyQuestionCount >= 50) {
+    encouragement = `Brilliant week — ${weeklyQuestionCount} questions is a strong amount of practice.`;
+  } else if (weeklyQuestionCount >= 20) {
+    encouragement = `Good consistency this week.`;
+  } else if (weeklyQuestionCount > 0) {
+    encouragement = `${childName} made a start this week — even a little practice keeps the streak alive.`;
+  } else {
+    encouragement = `${childName} didn't practise this week, but every other week's data is preserved. Pick up any time.`;
+  }
+
+  // ── Readiness band (hero element — large serif numeral feel) ──
+  const readinessBand = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0 28px;">
+      <tr>
+        <td style="background:${readiness.colour}0d;border:1.5px solid ${readiness.colour}40;border-radius:14px;padding:24px;">
+          <p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:11px;font-weight:700;color:${readiness.colour};letter-spacing:1.4px;text-transform:uppercase;">Current stage</p>
+          <p style="margin:0 0 8px;font-family:${HEAD_FONT};font-size:30px;font-weight:600;color:${readiness.colour};letter-spacing:-0.5px;line-height:1.1;">${readiness.band}</p>
+          <p style="margin:0;font-family:${BODY_FONT};font-size:14px;color:${C.textSecondary};line-height:1.5;">${readiness.description}</p>
+          ${coveredAccuracy != null
+            ? `<p style="margin:12px 0 0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">${coveredTopics.length} topic${coveredTopics.length === 1 ? '' : 's'} well-practised · ${coveredAccuracy}% average accuracy</p>`
+            : ''
           }
-        </p>
-      </div>
+        </td>
+      </tr>
+    </table>`;
 
-      <p style="color: #636E72; font-size: 12px; margin-top: 24px;">
-        This email is sent weekly. To stop receiving these, update your preferences in the app
-        or reply to this email.
-      </p>
-    </div>
-  </div>
-</body>
-</html>`;
+  // ── Stats row — three pill cards ──
+  const statsRow = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 16px;">
+      <tr>
+        <td style="width:33.33%;padding-right:6px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="background:${C.bgCardSubtle};border:1px solid ${C.border};border-radius:10px;padding:16px 8px;text-align:center;">
+            <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:26px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.5px;line-height:1;">${weeklyQuestionCount}</p>
+            <p style="margin:0;font-family:${BODY_FONT};font-size:11px;color:${C.textMuted};">Questions</p>
+          </td></tr></table>
+        </td>
+        <td style="width:33.33%;padding:0 3px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="background:${C.bgCardSubtle};border:1px solid ${C.border};border-radius:10px;padding:16px 8px;text-align:center;">
+            <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:26px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.5px;line-height:1;">${weeklyAccuracy != null ? `${weeklyAccuracy}%` : '—'}</p>
+            <p style="margin:0;font-family:${BODY_FONT};font-size:11px;color:${C.textMuted};">Accuracy</p>
+          </td></tr></table>
+        </td>
+        <td style="width:33.33%;padding-left:6px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="background:${C.bgCardSubtle};border:1px solid ${C.border};border-radius:10px;padding:16px 8px;text-align:center;">
+            <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:26px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.5px;line-height:1;">${currentStreak}</p>
+            <p style="margin:0;font-family:${BODY_FONT};font-size:11px;color:${C.textMuted};">Day streak</p>
+          </td></tr></table>
+        </td>
+      </tr>
+    </table>
+    <p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">${weeklyQuizCount} quiz${weeklyQuizCount === 1 ? '' : 'zes'} completed this week</p>
+  `;
+
+  // ── Mock test card (when a mock was sat this week) ──
+  const mockBlock = mocksThisWeek.length > 0
+    ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 0;">
+        ${mocksThisWeek.map(m => `
+          <tr><td style="background:${C.bgBrandSoft};border:1px solid ${C.borderBrand};border-radius:12px;padding:20px;text-align:center;margin:4px 0;">
+            <p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:11px;font-weight:700;color:${C.brand};letter-spacing:1.4px;text-transform:uppercase;">${SUBJECT_LABELS[m.subject] || m.subject} Mock Test</p>
+            <p style="margin:0;font-family:${HEAD_FONT};font-size:42px;font-weight:600;color:${C.brand};letter-spacing:-1px;line-height:1;">${m.percentage}%</p>
+          </td></tr>
+        `).join('<tr><td style="height:8px;"></td></tr>')}
+      </table>`
+    : '';
+
+  // ── Topic heatmap ──
+  // Each topic = a card with a coloured strip at the top (mastery indicator).
+  // Topic name + accuracy/q-count below in clean typography. Far less heatmap-y.
+  const subjectSections = Object.keys(SUBJECT_TOPICS).map(subject => {
+    const subjectTopics = summary.topics.filter(t => t.subject === subject);
+    const topicCells = subjectTopics.map(t => {
+      const b = t.band;
+      const detail = t.totalQuestions === 0
+        ? 'Not started'
+        : `${t.recentAccuracy}% · ${t.totalQuestions}q`;
+      return `
+        <td style="width:33.33%;padding:3px;vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="background:${C.bgCard};border:1px solid ${C.border};border-radius:8px;overflow:hidden;">
+            <div style="height:3px;background:${b.colour};line-height:3px;font-size:1px;">&nbsp;</div>
+            <div style="padding:10px 10px 8px;">
+              <p style="margin:0 0 2px;font-family:${BODY_FONT};font-size:12px;font-weight:600;color:${C.textPrimary};line-height:1.25;">${formatTopicKey(t.topicKey)}</p>
+              <p style="margin:0;font-family:${BODY_FONT};font-size:10px;color:${C.textMuted};">${detail}</p>
+            </div>
+          </td></tr></table>
+        </td>
+      `;
+    });
+
+    const rows = [];
+    for (let i = 0; i < topicCells.length; i += 3) {
+      const rowCells = topicCells.slice(i, i + 3);
+      while (rowCells.length < 3) rowCells.push('<td style="width:33.33%;padding:3px;"></td>');
+      rows.push(`<tr>${rowCells.join('')}</tr>`);
+    }
+
+    return `
+      <p style="margin:24px 0 6px;font-family:${HEAD_FONT};font-size:18px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.2px;">${SUBJECT_LABELS[subject]}</p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;">
+        ${rows.join('')}
+      </table>
+    `;
+  }).join('');
+
+  // ── Heatmap legend ──
+  const legendDot = (colour, label) => `<span style="display:inline-block;width:8px;height:8px;background:${colour};border-radius:50%;vertical-align:middle;margin-right:5px;"></span><span style="vertical-align:middle;">${label}</span>`;
+  const legend = `
+    <p style="margin:12px 0 0;font-family:${BODY_FONT};font-size:10px;color:${C.textMuted};text-align:center;line-height:1.8;">
+      ${legendDot(C.bandMastered, 'Mastered')}&nbsp;&nbsp;&nbsp;
+      ${legendDot(C.bandConfident, 'Confident')}&nbsp;&nbsp;&nbsp;
+      ${legendDot(C.bandDeveloping, 'Developing')}&nbsp;&nbsp;&nbsp;
+      ${legendDot(C.bandExploring, 'Exploring')}&nbsp;&nbsp;&nbsp;
+      ${legendDot(C.bandNotStarted, 'Not started')}
+    </p>
+  `;
+
+  // ── Focus area for next week ──
+  const focusBlock = weakestCovered
+    ? infoCard({
+        label: 'Focus for next week',
+        title: `${formatTopicKey(weakestCovered.topicKey)} · ${weakestCovered.recentAccuracy}% accuracy`,
+        body: `This is ${childName}'s weakest well-practised topic (${weakestCovered.totalQuestions} questions answered). Two Focused Learning sessions on it this week would make the biggest difference.`,
+        accent: 'amber',
+      })
+    : (inProgressTopics.length > 0
+      ? infoCard({
+          label: 'Building coverage',
+          title: `${inProgressTopics.length} topic${inProgressTopics.length > 1 ? 's' : ''} in progress`,
+          body: `5–19 questions answered. Once a topic hits 20 questions we can give you a reliable accuracy reading.`,
+          accent: 'brand',
+        })
+      : '');
+
+  const reviewPretext = `${childName}'s week on PrepStep — ${weeklyQuestionCount} questions, ${weeklyAccuracy != null ? `${weeklyAccuracy}% accuracy` : 'no quizzes yet'}, ${readiness.band}.`;
+
+  const content = `
+    <span style="display:none;font-size:1px;color:${C.bgCard};line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">${reviewPretext}</span>
+    ${smallLabel("This week's review", C.brand)}
+    ${heading('h1', `${childName}'s week`, 0)}
+    ${bodyText(`Hi ${parentFirst},`, { size: 16, marginTop: 4, marginBottom: 12 })}
+    ${bodyText(encouragement, { muted: true, size: 15 })}
+
+    ${readinessBand}
+
+    ${heading('h3', 'This week', 8)}
+    ${statsRow}
+
+    ${mocksThisWeek.length > 0 ? `${heading('h3', `Mock test${mocksThisWeek.length > 1 ? 's' : ''} this week`, 24)}${mockBlock}` : ''}
+
+    ${heading('h3', 'Full curriculum view', 28)}
+    ${bodyText(`Every topic ${childName} will face in the exam. The coloured strip shows current mastery.`, { muted: true, size: 13, marginBottom: 4 })}
+    ${subjectSections}
+    ${legend}
+
+    ${focusBlock}
+
+    ${ctaButton('Open full dashboard', APP_URL)}
+
+    ${bodyText(`Sent every Sunday. Turn off weekly emails any time from your <a href="${APP_URL}/?view=progress-parent" style="color:${C.brand};text-decoration:underline;">Parent Dashboard</a>.`, { muted: true, size: 11, marginTop: 20 })}
+  `;
+
+  return emailWrapper(childName, content);
 }
 
 // ── TEMPORARY: send a specific trial email to a specific account ──
@@ -458,33 +772,39 @@ export async function handleTrialEmailForAccount(env, emailAddress, day) {
 
   if (!account) return { error: `No account found for ${emailAddress}` };
 
-  const [recentQuizzes, streak] = await Promise.all([
+  const [recentQuizzes, streak, weakestTopic] = await Promise.all([
     db.prepare(
       `SELECT topic_key, subject, score, total FROM quiz_results
-       WHERE child_id = ? ORDER BY completed_at DESC LIMIT 20`
+       WHERE child_id = ? ORDER BY completed_at DESC LIMIT 50`
     ).bind(account.child_id).all(),
     db.prepare(
       'SELECT current_streak FROM streaks WHERE child_id = ?'
+    ).bind(account.child_id).first(),
+    db.prepare(
+      `SELECT topic_key, subject,
+              SUM(is_correct) * 1.0 / COUNT(*) as accuracy,
+              COUNT(*) as attempts
+       FROM question_results
+       WHERE child_id = ?
+       GROUP BY topic_key, subject
+       HAVING COUNT(*) >= 5
+       ORDER BY accuracy ASC
+       LIMIT 1`
     ).bind(account.child_id).first(),
   ]);
 
   const quizCount = recentQuizzes.results?.length || 0;
   const currentStreak = streak?.current_streak || 0;
-
-  const topicCounts = {};
-  (recentQuizzes.results || []).forEach(q => {
-    topicCounts[q.topic_key] = (topicCounts[q.topic_key] || 0) + 1;
-  });
-  const topTopic = Object.entries(topicCounts).sort((a, b) => b[1] - a[1])[0];
-  const topTopicName = topTopic
-    ? topTopic[0].replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase())
+  const weakest = weakestTopic
+    ? { topicKey: weakestTopic.topic_key, accuracy: Math.round(weakestTopic.accuracy * 100) }
     : null;
 
   let subject, html;
-  if (day === 1)       ({ subject, html } = buildDay1Email(account, quizCount));
-  else if (day === 7)  ({ subject, html } = buildDay7Email(account, quizCount, currentStreak, recentQuizzes.results || []));
-  else if (day === 14) ({ subject, html } = buildDay14Email(account, quizCount, currentStreak));
-  else if (day === 25) ({ subject, html } = buildDay25Email(account, quizCount, currentStreak));
+  if (day === 1)       ({ subject, html } = buildDay1Email(account, quizCount, weakest));
+  else if (day === 7)  ({ subject, html } = buildDay7Email(account, quizCount, currentStreak, recentQuizzes.results || [], weakest));
+  else if (day === 14) ({ subject, html } = buildDay14Email(account, quizCount, currentStreak, weakest));
+  else if (day === 25) ({ subject, html } = buildDay25Email(account, quizCount, currentStreak, weakest));
+  else if (day === 30) ({ subject, html } = buildDay30Email(account, quizCount, currentStreak));
   else return { error: `Unknown day ${day}` };
 
   await sendEmail(env, { to: emailAddress, subject, html });

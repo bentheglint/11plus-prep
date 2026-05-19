@@ -100,7 +100,7 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
 // ── Consent Screen ──
 function ConsentScreen({ onConsent, isLoading, inviteCode }) {
   const [consentChecked, setConsentChecked] = useState(false);
-  const [emailOptIn, setEmailOptIn] = useState(false);
+  const [emailOptIn, setEmailOptIn] = useState(true);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex flex-col">
@@ -170,8 +170,8 @@ function ConsentScreen({ onConsent, isLoading, inviteCode }) {
               className="mt-1 w-5 h-5 rounded accent-[#7C3AED]"
             />
             <span className="text-sm text-slate-500">
-              Send me weekly progress emails about my child's learning.
-              <span className="text-xs ml-1">(optional)</span>
+              Send me weekly progress emails so I can see how my child is getting on.
+              <span className="text-xs ml-1">You can turn these off any time.</span>
             </span>
           </label>
         </div>

@@ -44,10 +44,12 @@ export async function handleAccountRoutes(request, env, userId, path) {
       }
     }
 
+    // Email opt-in defaults to true (opt-out, not opt-in). Only explicit false opts out.
+    const optInValue = emailOptIn === false ? 0 : 1;
     await db.prepare(
       `INSERT INTO accounts (id, email, name, consent_given_at, consent_version, last_login_at, is_comped, comp_source, email_opt_in)
        VALUES (?, ?, ?, datetime('now'), ?, datetime('now'), ?, ?, ?)`
-    ).bind(userId, email, name, consentVersion, isComped, compSource, emailOptIn ? 1 : 0).run();
+    ).bind(userId, email, name, consentVersion, isComped, compSource, optInValue).run();
 
     return json({ ok: true, accountId: userId, comped: !!isComped }, 201);
   }
