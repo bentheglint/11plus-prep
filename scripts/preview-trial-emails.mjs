@@ -15,7 +15,7 @@ import {
   buildDay30Email,
   weeklyEmailHtml,
 } from '../workers/ai-tutor/routes/email.js';
-import { buildMasterySummary } from '../workers/ai-tutor/lib/mastery.js';
+import { buildMasterySummary, getAllSubjectReadiness } from '../workers/ai-tutor/lib/mastery.js';
 
 const DUMMY = {
   name: 'Sarah Mitchell',
@@ -121,11 +121,17 @@ function generateQuestionResults() {
 const outDir = path.join(process.cwd(), 'scripts', 'email-previews');
 fs.mkdirSync(outDir, { recursive: true });
 
-const fullSummary = buildMasterySummary(generateQuestionResults(), Date.now());
+const fullQuestions = generateQuestionResults();
+const fullMocks = [{ subject: 'maths', percentage: 78, completed_at: new Date().toISOString() }];
+const fullSummary = buildMasterySummary(fullQuestions, Date.now());
+const fullReadiness = getAllSubjectReadiness(fullQuestions, fullMocks, Date.now());
 const emptySummary = buildMasterySummary([], Date.now());
+const emptyReadiness = getAllSubjectReadiness([], [], Date.now());
 
 // Generate a moderate summary (used for Day 21 — less data than full)
-const moderateSummary = buildMasterySummary(generateQuestionResults().slice(0, 80), Date.now());
+const moderateQuestions = fullQuestions.slice(0, 80);
+const moderateSummary = buildMasterySummary(moderateQuestions, Date.now());
+const moderateReadiness = getAllSubjectReadiness(moderateQuestions, [], Date.now());
 
 const emails = [
   // ── Trial milestones ──
@@ -151,6 +157,7 @@ const emails = [
       currentStreak: 9,
       mocksThisWeek: [],
       summary: moderateSummary,
+      subjectReadiness: moderateReadiness,
     }),
   },
 
@@ -168,8 +175,9 @@ const emails = [
       weeklyQuestionCount: 76,
       weeklyAccuracy: 71,
       currentStreak: 14,
-      mocksThisWeek: [{ subject: 'maths', percentage: 78, completed_at: new Date().toISOString() }],
+      mocksThisWeek: fullMocks,
       summary: fullSummary,
+      subjectReadiness: fullReadiness,
     }),
   },
 
@@ -187,8 +195,9 @@ const emails = [
       weeklyQuestionCount: 76,
       weeklyAccuracy: 71,
       currentStreak: 31,
-      mocksThisWeek: [{ subject: 'maths', percentage: 78, completed_at: new Date().toISOString() }],
+      mocksThisWeek: fullMocks,
       summary: fullSummary,
+      subjectReadiness: fullReadiness,
     }),
   },
 ];

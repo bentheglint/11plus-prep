@@ -8,7 +8,12 @@ const DEV_MOCK_REPORT = {
   child: { name: 'Evie Mitchell', yearGroup: 5, targetSchool: 'Bournemouth School for Girls' },
   tutorName: 'Sarah Mitchell',
   generatedAt: new Date().toISOString(),
-  readiness: { band: 'Developing Well', description: 'Solid progress on practised topics. Building towards full curriculum coverage.', colour: '#7C3AED' },
+  readiness: { band: 'Exam Ready', description: 'Performing at or above the level expected for the GL Assessment across all subjects.', colour: '#22C55E' },
+  subjectReadiness: {
+    maths: { subject: 'maths', band: 'Exam Ready', colour: '#22C55E', description: '', score: 68 },
+    english: { subject: 'english', band: 'Exam Ready', colour: '#22C55E', description: '', score: 72 },
+    verbalreasoning: { subject: 'verbalreasoning', band: 'Excelling', colour: '#FDCB6E', description: '', score: 84 },
+  },
   trajectory: 'improving',
   coverage: { coveredCount: 4, inProgressCount: 3 },
   coveredAccuracy: 68,
@@ -115,7 +120,7 @@ export default function ReportScreen({ childId, getToken, onBack }) {
 
   const {
     child, tutorName, generatedAt,
-    readiness, trajectory, coverage,
+    readiness, subjectReadiness, trajectory, coverage,
     coveredAccuracy, recentAccuracy,
     subjectBreakdown, coveredTopics, inProgressTopics,
     mockTests, assignments, recommendations,
@@ -170,8 +175,8 @@ export default function ReportScreen({ childId, getToken, onBack }) {
           </div>
         </div>
 
-        {/* Readiness band — the headline */}
-        <div className="mb-5 rounded-2xl p-5 border-2" style={{ borderColor: readiness.colour, backgroundColor: readiness.colour + '0d' }}>
+        {/* Overall readiness — derived from per-subject average */}
+        <div className="mb-4 rounded-2xl p-5 border-2" style={{ borderColor: readiness.colour, backgroundColor: readiness.colour + '0d' }}>
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
@@ -188,6 +193,24 @@ export default function ReportScreen({ childId, getToken, onBack }) {
             </div>
           </div>
         </div>
+
+        {/* Per-subject readiness — uses the same algorithm as the in-app ExamReadinessCard */}
+        {subjectReadiness && (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-5">
+            {[subjectReadiness.maths, subjectReadiness.english, subjectReadiness.verbalreasoning].filter(Boolean).map(sr => {
+              const label = sr.subject === 'maths' ? 'Maths' : sr.subject === 'english' ? 'English' : 'Verbal Reasoning';
+              return (
+                <div key={sr.subject} className="rounded-xl p-3 border" style={{ borderColor: sr.colour + '40', backgroundColor: sr.colour + '0d' }}>
+                  <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: sr.colour }}>{label}</p>
+                  <div className="flex items-baseline justify-between mt-0.5">
+                    <p className="font-heading text-base font-bold" style={{ color: sr.colour }}>{sr.band}</p>
+                    <p className="text-sm font-bold text-slate-500">{sr.score}<span className="text-xs text-slate-400">/100</span></p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
 
         {/* Key metrics row */}
         <div className="grid grid-cols-3 gap-3 mb-5">

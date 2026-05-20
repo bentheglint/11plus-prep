@@ -11,6 +11,7 @@
 // - Trajectory from recent vs previous quiz accuracy tells parents direction of travel
 
 import { json } from '../helpers.js';
+import { getAllSubjectReadiness } from '../lib/mastery.js';
 
 // ── Mastery algorithm — mirrors src/hooks/useMastery.js ──
 
@@ -161,8 +162,29 @@ export async function handleReportRoutes(request, env, userId, path) {
     ? Math.round(coveredTopics.reduce((s, t) => s + t.score, 0) / coveredTopics.length)
     : null;
 
-  // ── Readiness band ──
-  const readiness = getReadinessBand(coveredAccuracy, coveredTopics.length);
+  // ── Per-subject readiness ──
+  // Uses the same algorithm as the in-app ExamReadinessCard and the weekly
+  // email so all three surfaces (app, email, tutor report) agree.
+  const subjectReadiness = getAllSubjectReadiness(
+    questionResults.results || [],
+    mockResults.results || [],
+    now
+  );
+
+  // Single overall readiness band derived from the per-subject scores —
+  // used by the report header as a one-glance summary.
+  const subjectArr = [subjectReadiness.maths, subjectReadiness.english, subjectReadiness.verbalreasoning].filter(Boolean);
+  const overallScore = subjectArr.length > 0
+    ? Math.round(subjectArr.reduce((s, sr) => s + sr.score, 0) / subjectArr.length)
+    : 0;
+  const overallBand = overallScore >= 81
+    ? { band: 'Excelling', colour: '#FDCB6E', description: 'Consistently strong across all three subjects.' }
+    : overallScore >= 61
+    ? { band: 'Exam Ready', colour: '#22C55E', description: 'Performing at or above the level expected for the GL Assessment across all subjects.' }
+    : overallScore >= 36
+    ? { band: 'Developing Well', colour: '#7C3AED', description: 'Steady progress across all subjects.' }
+    : { band: 'Building Foundations', colour: '#3B82F6', description: 'Early stage preparation across all subjects.' };
+  const readiness = overallBand;
 
   // ── Per-subject breakdown (covered topics only) ──
   const subjectMap = {};
@@ -237,6 +259,7 @@ export async function handleReportRoutes(request, env, userId, path) {
       targetSchool: child.target_school,
     },
     readiness,
+    subjectReadiness,
     trajectory,
     coverage: {
       coveredCount: coveredTopics.length,

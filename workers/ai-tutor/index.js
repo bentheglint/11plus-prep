@@ -5,7 +5,7 @@ import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
-import { handleScheduled, handleTrialEmails } from './routes/email.js';
+import { handleScheduled, handleTrialEmails, handlePreviewEmailForUser } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook, reconcileSubscriptions } from './routes/stripe.js';
 import { handleTutorRoutes } from './routes/tutor.js';
 import { handleClassRoutes } from './routes/classes.js';
@@ -344,6 +344,19 @@ const worker = {
         // Stripe subscribe + portal (auth-required)
         const stripeResult = await handleStripeRoutes(request, env, userId, path);
         if (stripeResult) return stripeResult;
+
+        // Dev: preview/send trial or weekly email to your own Gmail/Outlook for visual QA.
+        // Body: { day: 1|7|14|21|25|28|30, to?: "test@gmail.com" }
+        // Uses the authenticated user's account data; sends to `to` (default: own email).
+        if (path === '/api/dev/preview-email' && request.method === 'POST') {
+          const body = await request.json().catch(() => ({}));
+          const day = Number(body.day);
+          const to = body.to || null;
+          if (!day) return json({ error: 'Missing day' }, 400);
+          const result = await handlePreviewEmailForUser(env, userId, day, to);
+          if (result.error) return json(result, 400);
+          return json(result);
+        }
 
         // Batch write endpoint (D1-first architecture)
         if (path === '/api/data/batch' && request.method === 'POST') {

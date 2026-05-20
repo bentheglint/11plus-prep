@@ -58,6 +58,98 @@ export function getMasteryBand(score, totalQuestions) {
   return { label: 'Exploring', colour: '#fbbf24', textColour: '#000000' };
 }
 
+// ── Per-subject readiness — MIRRORS src/hooks/useMastery.js exactly ──
+//
+// This is the SAME algorithm as the in-app ExamReadinessCard. Use this for
+// any parent-facing surface (emails, future reports) where the metric must
+// agree with what the user sees in the app.
+//
+// Differs from getReadinessBand() above (which is the stricter Oracle-grounded
+// algorithm used by the tutor report card). The two surfaces have different
+// audiences and different appropriate thresholds.
+
+// Frontend's per-score readiness band — lower thresholds than the strict version
+function getAppReadinessBand(score) {
+  if (score >= 81) return { band: 'Excelling', colour: '#FDCB6E', description: 'Above the level expected for a top GL Assessment candidate.' };
+  if (score >= 61) return { band: 'Exam Ready', colour: '#22C55E', description: 'Performing at or above the level needed for the GL Assessment.' };
+  if (score >= 36) return { band: 'Developing Well', colour: '#7C3AED', description: 'Steady progress — keep building on these foundations.' };
+  return { band: 'Building Foundations', colour: '#3B82F6', description: 'Early stage. Focus on building accuracy and topic coverage.' };
+}
+
+// Compute exam readiness for a single subject — matches getExamReadiness in useMastery.js
+function getSubjectReadiness(subject, byTopic, mockTestRows, now) {
+  const topics = SUBJECT_TOPICS[subject] || [];
+  if (topics.length === 0) return null;
+
+  // Average mastery across ALL topics in subject (including 0 for unstarted)
+  const masteries = topics.map(topicKey => {
+    const data = byTopic[`${subject}:${topicKey}`];
+    return data ? computeTopicMastery(data.results, now) : { score: 0, totalQuestions: 0 };
+  });
+  const avgScore = Math.round(masteries.reduce((s, m) => s + m.score, 0) / topics.length);
+
+  // Consistency bonus — unique practice days in last 14 days for this subject (max +10)
+  const twoWeeksAgo = now - 14 * 24 * 60 * 60 * 1000;
+  const recentDays = new Set();
+  for (const topicKey of topics) {
+    const data = byTopic[`${subject}:${topicKey}`];
+    if (!data) continue;
+    for (const r of data.results) {
+      const t = new Date(r.date).getTime();
+      if (t >= twoWeeksAgo) recentDays.add(r.date.slice(0, 10));
+    }
+  }
+  const consistencyBonus = Math.min(10, recentDays.size);
+
+  // Mock bonus — most recent mock for this subject if >70%, max +5
+  const subjectMocks = (mockTestRows || [])
+    .filter(m => m.subject === subject)
+    .sort((a, b) => new Date(b.completed_at) - new Date(a.completed_at));
+  const mockBonus = subjectMocks.length > 0 && subjectMocks[0].percentage > 70
+    ? Math.min(5, Math.round((subjectMocks[0].percentage - 70) / 6))
+    : 0;
+
+  const readinessScore = Math.min(100, avgScore + consistencyBonus + mockBonus);
+  const { band, colour, description } = getAppReadinessBand(readinessScore);
+
+  // Topics covered (matches frontend: anything with at least 1 question)
+  const topicsCovered = masteries.filter(m => m.totalQuestions > 0).length;
+
+  return {
+    subject,
+    band,
+    colour,
+    description,
+    score: readinessScore,
+    avgScore,
+    consistencyBonus,
+    mockBonus,
+    topicsCovered,
+    topicsTotal: topics.length,
+  };
+}
+
+// Compute readiness for all three subjects from raw question + mock data
+export function getAllSubjectReadiness(questionResultsRows, mockTestRows, now = Date.now()) {
+  // Group question results by topic, normalise dates
+  const byTopic = {};
+  (questionResultsRows || []).forEach(r => {
+    if (!r.attempted_at) return;
+    const key = `${r.subject}:${r.topic_key}`;
+    if (!byTopic[key]) byTopic[key] = { topicKey: r.topic_key, subject: r.subject, results: [] };
+    byTopic[key].results.push({
+      correct: !!r.is_correct,
+      date: r.attempted_at.includes('T') ? r.attempted_at : r.attempted_at.replace(' ', 'T') + 'Z',
+    });
+  });
+
+  return {
+    maths: getSubjectReadiness('maths', byTopic, mockTestRows, now),
+    english: getSubjectReadiness('english', byTopic, mockTestRows, now),
+    verbalreasoning: getSubjectReadiness('verbalreasoning', byTopic, mockTestRows, now),
+  };
+}
+
 // Readiness band from covered-topic accuracy + coverage. Mirrors getReadinessBand
 // in report.js. Both depth (accuracy on covered topics) and breadth (number of
 // topics with ≥20 questions) are required to advance.

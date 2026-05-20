@@ -8,7 +8,7 @@
 import { json } from '../helpers.js';
 import { runLateFlagJob } from './assignments.js';
 import { formatTopicKey, SUBJECT_LABELS } from '../lib/topicLabels.js';
-import { buildMasterySummary, SUBJECT_TOPICS } from '../lib/mastery.js';
+import { buildMasterySummary, SUBJECT_TOPICS, getAllSubjectReadiness } from '../lib/mastery.js';
 
 const APP_URL = 'https://prepstep.co.uk';
 
@@ -528,7 +528,7 @@ async function buildWeeklyProgressEmail(db, account) {
   const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
 
   // Fetch everything in parallel
-  const [weeklyQuestions, weeklyQuizzes, weeklyMocks, streak, allQuestions] = await Promise.all([
+  const [weeklyQuestions, weeklyQuizzes, weeklyMocks, streak, allQuestions, allMocks] = await Promise.all([
     db.prepare(
       `SELECT COUNT(*) as total, SUM(is_correct) as correct
        FROM question_results
@@ -553,6 +553,12 @@ async function buildWeeklyProgressEmail(db, account) {
        ORDER BY attempted_at DESC
        LIMIT 2000`
     ).bind(account.child_id).all(),
+    // All-time mocks — needed for per-subject readiness (most recent per subject)
+    db.prepare(
+      `SELECT subject, percentage, completed_at FROM mock_test_results
+       WHERE child_id = ?
+       ORDER BY completed_at DESC`
+    ).bind(account.child_id).all(),
   ]);
 
   const weeklyQuestionCount = weeklyQuestions?.total || 0;
@@ -568,14 +574,21 @@ async function buildWeeklyProgressEmail(db, account) {
     return null;
   }
 
-  // Full mastery summary across all-time question results
+  // Full mastery summary (for heatmap + weakest topic)
   const summary = buildMasterySummary(allQuestions.results || [], now.getTime());
+
+  // Per-subject readiness using the SAME algorithm as the in-app
+  // ExamReadinessCard so the email and app always agree.
+  const subjectReadiness = getAllSubjectReadiness(
+    allQuestions.results || [],
+    allMocks.results || [],
+    now.getTime()
+  );
 
   // Pull child name for personalisation
   const childName = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
 
-  // Build the email HTML
   return weeklyEmailHtml({
     parentFirst,
     childName,
@@ -585,11 +598,12 @@ async function buildWeeklyProgressEmail(db, account) {
     currentStreak,
     mocksThisWeek,
     summary,
+    subjectReadiness,
   });
 }
 
-export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weeklyQuestionCount, weeklyAccuracy, currentStreak, mocksThisWeek, summary }) {
-  const { readiness, coveredTopics, inProgressTopics, weakestCovered, coveredAccuracy } = summary;
+export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weeklyQuestionCount, weeklyAccuracy, currentStreak, mocksThisWeek, summary, subjectReadiness }) {
+  const { inProgressTopics, weakestCovered } = summary;
 
   // ── Encouragement based on activity level ──
   let encouragement;
@@ -603,20 +617,38 @@ export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weekl
     encouragement = `${childName} didn't practise this week, but every other week's data is preserved. Pick up any time.`;
   }
 
-  // ── Readiness band (hero element — large serif numeral feel) ──
+  // ── Exam readiness, per subject (matches in-app ExamReadinessCard) ──
+  const renderSubjectBand = (sr) => {
+    if (!sr) return '';
+    return `
+      <tr><td style="padding:6px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="background:${sr.colour}0d;border:1px solid ${sr.colour}40;border-radius:12px;padding:14px 18px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="vertical-align:middle;">
+                    <p style="margin:0 0 2px;font-family:${BODY_FONT};font-size:11px;font-weight:700;color:${sr.colour};letter-spacing:1.2px;text-transform:uppercase;">${SUBJECT_LABELS[sr.subject] || sr.subject}</p>
+                    <p style="margin:0;font-family:${HEAD_FONT};font-size:20px;font-weight:600;color:${sr.colour};letter-spacing:-0.3px;line-height:1.15;">${sr.band}</p>
+                  </td>
+                  <td style="vertical-align:middle;text-align:right;width:60px;">
+                    <p style="margin:0;font-family:${HEAD_FONT};font-size:22px;font-weight:600;color:${sr.colour};letter-spacing:-0.5px;line-height:1;">${sr.score}</p>
+                    <p style="margin:0;font-family:${BODY_FONT};font-size:10px;color:${C.textMuted};letter-spacing:0.5px;">/ 100</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td></tr>`;
+  };
+
   const readinessBand = `
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0 28px;">
-      <tr>
-        <td style="background:${readiness.colour}0d;border:1.5px solid ${readiness.colour}40;border-radius:14px;padding:24px;">
-          <p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:11px;font-weight:700;color:${readiness.colour};letter-spacing:1.4px;text-transform:uppercase;">Current stage</p>
-          <p style="margin:0 0 8px;font-family:${HEAD_FONT};font-size:30px;font-weight:600;color:${readiness.colour};letter-spacing:-0.5px;line-height:1.1;">${readiness.band}</p>
-          <p style="margin:0;font-family:${BODY_FONT};font-size:14px;color:${C.textSecondary};line-height:1.5;">${readiness.description}</p>
-          ${coveredAccuracy != null
-            ? `<p style="margin:12px 0 0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">${coveredTopics.length} topic${coveredTopics.length === 1 ? '' : 's'} well-practised · ${coveredAccuracy}% average accuracy</p>`
-            : ''
-          }
-        </td>
-      </tr>
+    <p style="margin:24px 0 6px;font-family:${BODY_FONT};font-size:11px;font-weight:700;color:${C.textMuted};letter-spacing:1.4px;text-transform:uppercase;">Exam readiness</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;">
+      ${renderSubjectBand(subjectReadiness?.maths)}
+      ${renderSubjectBand(subjectReadiness?.english)}
+      ${renderSubjectBand(subjectReadiness?.verbalreasoning)}
     </table>`;
 
   // ── Stats row — three pill cards ──
@@ -725,7 +757,11 @@ export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weekl
         })
       : '');
 
-  const reviewPretext = `${childName}'s week on PrepStep — ${weeklyQuestionCount} questions, ${weeklyAccuracy != null ? `${weeklyAccuracy}% accuracy` : 'no quizzes yet'}, ${readiness.band}.`;
+  const bestBand = subjectReadiness
+    ? [subjectReadiness.maths, subjectReadiness.english, subjectReadiness.verbalreasoning]
+        .filter(Boolean).sort((a, b) => b.score - a.score)[0]?.band
+    : null;
+  const reviewPretext = `${childName}'s week on PrepStep — ${weeklyQuestionCount} questions, ${weeklyAccuracy != null ? `${weeklyAccuracy}% accuracy` : 'no quizzes yet'}${bestBand ? `, ${bestBand}` : ''}.`;
 
   const content = `
     <span style="display:none;font-size:1px;color:${C.bgCard};line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">${reviewPretext}</span>
@@ -754,6 +790,75 @@ export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weekl
   `;
 
   return emailWrapper(childName, content);
+}
+
+// ── Preview an email using the authenticated user's account data ──
+// Sends to `toOverride` if provided, else to the account's own email.
+// Used for testing how emails render in real clients (Gmail, Outlook).
+// Routed at POST /api/dev/preview-email — requires Clerk auth.
+export async function handlePreviewEmailForUser(env, userId, day, toOverride) {
+  const db = env.DB;
+
+  const account = await db.prepare(`
+    SELECT a.id, a.email, a.name, a.email_opt_in,
+           c.id as child_id, c.display_name
+    FROM accounts a
+    JOIN children c ON c.account_id = a.id
+    WHERE a.id = ?
+    LIMIT 1
+  `).bind(userId).first();
+
+  if (!account) return { error: 'No account found for authenticated user' };
+
+  const recipient = toOverride || account.email;
+
+  // Days 21 / 28 use the weekly progress builder (rich data view)
+  if (day === 21 || day === 28) {
+    const html = await buildWeeklyProgressEmail(db, account);
+    if (!html) return { error: 'No activity data to render weekly email — practise some quizzes first' };
+    const subject = `${account.display_name}'s week on PrepStep`;
+    await sendEmail(env, { to: recipient, subject, html });
+    return { ok: true, to: recipient, day, format: 'weekly-progress' };
+  }
+
+  // Fetch personalisation data for trial milestones
+  const [recentQuizzes, streak, weakestTopic] = await Promise.all([
+    db.prepare(
+      `SELECT topic_key, subject, score, total FROM quiz_results
+       WHERE child_id = ? ORDER BY completed_at DESC LIMIT 50`
+    ).bind(account.child_id).all(),
+    db.prepare(
+      'SELECT current_streak FROM streaks WHERE child_id = ?'
+    ).bind(account.child_id).first(),
+    db.prepare(
+      `SELECT topic_key, subject,
+              SUM(is_correct) * 1.0 / COUNT(*) as accuracy,
+              COUNT(*) as attempts
+       FROM question_results
+       WHERE child_id = ?
+       GROUP BY topic_key, subject
+       HAVING COUNT(*) >= 5
+       ORDER BY accuracy ASC
+       LIMIT 1`
+    ).bind(account.child_id).first(),
+  ]);
+
+  const quizCount = recentQuizzes.results?.length || 0;
+  const currentStreak = streak?.current_streak || 0;
+  const weakest = weakestTopic
+    ? { topicKey: weakestTopic.topic_key, accuracy: Math.round(weakestTopic.accuracy * 100) }
+    : null;
+
+  let subject, html;
+  if (day === 1) ({ subject, html } = buildDay1Email(account, quizCount, weakest));
+  else if (day === 7) ({ subject, html } = buildDay7Email(account, quizCount, currentStreak, recentQuizzes.results || [], weakest));
+  else if (day === 14) ({ subject, html } = buildDay14Email(account, quizCount, currentStreak, weakest));
+  else if (day === 25) ({ subject, html } = buildDay25Email(account, quizCount, currentStreak, weakest));
+  else if (day === 30) ({ subject, html } = buildDay30Email(account, quizCount, currentStreak));
+  else return { error: `Unknown day ${day}. Valid: 1, 7, 14, 21, 25, 28, 30` };
+
+  await sendEmail(env, { to: recipient, subject, html });
+  return { ok: true, to: recipient, day, quizCount, currentStreak };
 }
 
 // ── TEMPORARY: send a specific trial email to a specific account ──
