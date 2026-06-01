@@ -524,7 +524,7 @@ export const antonymsSubConcepts = [
                 steps: [
                   { text: "un- : unhappy, unkind, unfair, unlucky", why: "The most common 'opposite' prefix" },
                   { text: "dis- : disagree, disappear, disobey", why: "Often used with verbs" },
-                  { text: "im-/in-/ir- : impossible, invisible, irregular", why: "im- before b/m/p, ir- before r ✓" }
+                  { text: "im-/il-/in-/ir- : impossible, illegal, invisible, irregular", why: "im- before b/m/p, il- before l, ir- before r, in- before most other letters ✓" }
                 ],
                 allRevealed: true
               })

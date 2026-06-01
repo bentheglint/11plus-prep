@@ -419,12 +419,12 @@ export const verbalAnalogiesSubConcepts = [
             options: ["flower", "garden", "stem", "bee", "vase"],
             correctAnswer: "flower",
             explanation: "A wheel is a part of a car. A petal is a part of a flower. The relationship is part → the whole thing. ✓",
-            interactPair1: ["handle", "door"],
-            interactPair2word: "sleeve",
-            interactAnswer: "shirt",
-            interactOptions: ["shirt", "arm", "button", "jacket", "fabric"],
-            interactCorrectAnswer: "shirt",
-            interactExplanation: "A handle is part of a door. A sleeve is part of a shirt. Both pairs link a smaller part to the whole thing. ✓"
+            interactPair1: ["pedal", "bicycle"],
+            interactPair2word: "spoke",
+            interactAnswer: "wheel",
+            interactOptions: ["wheel", "axle", "tyre", "rim", "pedal"],
+            interactCorrectAnswer: "wheel",
+            interactExplanation: "A pedal is part of a bicycle. A spoke is part of a wheel — spokes are the thin rods that join the centre of a wheel to its edge. Both pairs link a smaller part to the one whole it belongs to. ✓"
           },
           {
             name: "Maisie",

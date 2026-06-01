@@ -3013,7 +3013,8 @@ export const fractionsSubConcepts = [
                 props: (v) => ({
                   steps: [
                     { text: `${v.numerator}/${v.denominator} — we need this out of 100`, why: "Percent = per hundred" },
-                    { text: `${v.denominator} × ${v.multiplier} = 100`, why: `Multiply top and bottom by ${v.multiplier}` },
+                    { text: `100 ÷ ${v.denominator} = ${v.multiplier}`, why: "To find what to multiply by, divide 100 by the bottom number" },
+                    { text: `${v.denominator} × ${v.multiplier} = 100`, why: `So multiply top and bottom by ${v.multiplier}` },
                     { text: `${v.numerator} × ${v.multiplier} = ${v.percentage}`, why: "Now we have the top number out of 100" },
                     { text: `${v.numerator}/${v.denominator} = ${v.percentage}%`, result: `${v.percentage}% ✓` },
                     { text: "Key pairs to memorise:", why: "These come up again and again!" },

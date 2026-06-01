@@ -2954,11 +2954,11 @@ const vrData = {
           id: 20,
           difficulty: 3,
           questionType: "pick-from-sets",
-          question: "___ is to flour as cow is to ___",
+          question: "___ is to flour as grape is to ___",
           setA: ["bread","wheat","baker"],
-          setB: ["milk","beef","farm"],
+          setB: ["wine","fruit","vine"],
           correctPair: [1,0],
-          explanation: "Wheat is processed to produce flour, just as a cow produces milk. Both are raw sources of a product. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+          explanation: "Wheat is the raw crop that is ground to make flour, just as grapes are the raw fruit that is pressed to make wine. Both are raw-material-to-product pairs. Tip: Check the relationship is the SAME on both sides — raw source then finished product. ✓"
         },
         {
           id: 21,
@@ -3154,11 +3154,11 @@ const vrData = {
           id: 40,
           difficulty: 3,
           questionType: "pick-from-sets",
-          question: "___ is to skeleton as stitch is to ___",
-          setA: ["bone","body","skull"],
-          setB: ["needle","fabric","thread"],
+          question: "___ is to skeleton as link is to ___",
+          setA: ["bone","doctor","x-ray"],
+          setB: ["metal","chain","fence"],
           correctPair: [0,1],
-          explanation: "A bone is part of a skeleton, just as a stitch is part of a fabric. Both are individual units forming a larger structure. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+          explanation: "A bone is one of the repeated units that make up a skeleton, just as a link is one of the repeated units that make up a chain. A 'doctor' studies skeletons but is not part of one, and an 'x-ray' is a picture of bones, not a part of the skeleton. ✓"
         },
         {
           id: 41,
@@ -3434,21 +3434,21 @@ const vrData = {
           id: 68,
           difficulty: 3,
           questionType: "pick-from-sets",
-          question: "___ is to terrified as dislike is to ___",
+          question: "___ is to terrified as annoyed is to ___",
           setA: ["scared","nervous","worried"],
-          setB: ["hate","loathe","detest"],
-          correctPair: [1,0],
-          explanation: "Nervous is a mild form of fear and terrified is the extreme, just as dislike is mild and hate is the extreme. Both show increasing intensity of feeling. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+          setB: ["calm","furious","bothered"],
+          correctPair: [1,1],
+          explanation: "Nervous is a mild fear and terrified is the extreme, just as annoyed is mild and furious is the extreme. Both pairs move from a mild feeling to an intense one. Tip: For intensity analogies, match the SIZE of the jump — mild to extreme on both sides. ✓"
         },
         {
           id: 69,
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "___ is to ancient as damp is to ___",
-          setA: ["old","new","aged"],
-          setB: ["wet","soaked","moist"],
-          correctPair: [0,1],
-          explanation: "Old is a mild form and ancient is extreme in terms of age, just as damp is mild and soaked is extreme in terms of wetness. Both show increasing degree. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+          setA: ["old","new","ruined"],
+          setB: ["soaked","dry","cloudy"],
+          correctPair: [0,0],
+          explanation: "Old is a mild form and ancient is the extreme in terms of age, just as damp is mild and soaked is the extreme in terms of wetness. Both pairs move from a mild state to an intense one. Tip: Watch for synonym traps — make sure your pair shows the SAME jump in degree on both sides, not two words that just mean the same thing. ✓"
         },
         {
           id: 70,
@@ -3456,9 +3456,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to blizzard as nibble is to ___",
           setA: ["snow","frost","flurry"],
-          setB: ["chew","bite","devour"],
-          correctPair: [2,2],
-          explanation: "A flurry is a light snowfall and a blizzard is an extreme one, just as a nibble is a small bite and devour means to eat ravenously. Both show increasing intensity. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+          setB: ["taste","devour","swallow"],
+          correctPair: [2,1],
+          explanation: "A flurry is a light snowfall and a blizzard is an extreme one, just as a nibble is a tiny mouthful and to devour is to eat hungrily and fast. Both pairs move from a small amount to an extreme. Tip: For intensity, the second word must be the EXTREME version, not just another word from the same family. ✓"
         },
         {
           id: 71,
@@ -3594,11 +3594,11 @@ const vrData = {
           id: 84,
           difficulty: 2,
           questionType: "pick-from-sets",
-          question: "___ is to paper as sand is to ___",
-          setA: ["pen","wood","book"],
-          setB: ["beach","castle","glass"],
-          correctPair: [1,2],
-          explanation: "Wood pulp is used to make paper, just as sand is used to make glass. Both are raw materials paired with their products. Tip: The key question is: what is the EXACT relationship between A and B? Apply that same relationship to C. ✓"
+          question: "___ is to jumper as clay is to ___",
+          setA: ["sheep","wool","knit"],
+          setB: ["mug","mud","river"],
+          correctPair: [1,0],
+          explanation: "Wool is the material used to make a jumper, just as clay is the material used to make a mug. Both are material-to-product pairs a child can picture. Tip: Name the relationship first — 'the material something is made from' — then apply it to the second pair. ✓"
         },
         {
           id: 85,
@@ -3704,11 +3704,11 @@ const vrData = {
           id: 95,
           difficulty: 3,
           questionType: "pick-from-sets",
-          question: "___ is to echo as sun is to ___",
-          setA: ["cave","noise","shout"],
-          setB: ["heat","shadow","light"],
-          correctPair: [2,1],
-          explanation: "A shout causes an echo, just as the sun causes a shadow (when it shines on an object). Both are cause-and-effect pairs. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+          question: "___ is to echo as fire is to ___",
+          setA: ["cave","sound","silence"],
+          setB: ["smoke","wood","match"],
+          correctPair: [1,0],
+          explanation: "A sound bouncing back creates an echo, just as something burning creates smoke. Both are cause-and-effect pairs where the first thing produces the second. Tip: For cause-and-effect, check the first thing DIRECTLY produces the second — pick the clearest effect, not just a related word. ✓"
         },
         {
           id: 96,
@@ -3792,13 +3792,13 @@ const vrData = {
         },
         {
           id: 104,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "pick-from-sets",
-          question: "___ is to book as actor is to ___",
+          question: "___ is to book as composer is to ___",
           setA: ["author","reader","library"],
-          setB: ["stage","film","costume"],
+          setB: ["concert","music","orchestra"],
           correctPair: [0,1],
-          explanation: "An author creates a book, just as an actor performs in a film. Both are creators in their field. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+          explanation: "An author creates a book, just as a composer creates music. Both are creator-to-creation pairs — the person and the work they make. Tip: Make sure the relationship runs the SAME way on both sides — creator then the thing they create. ✓"
         },
         {
           id: 105,
@@ -4602,9 +4602,9 @@ const vrData = {
           difficulty: 2,
           questionType: "select-two",
           question: "Find the two words that are the odd ones out.",
-          options: ["verse","chapter","chorus","paragraph","bridge"],
+          options: ["verse","chapter","chorus","paragraph","tune"],
           correctPair: [1,3],
-          explanation: "Verse, chorus, and bridge are all parts of a song. Chapter and paragraph are parts of a book, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
+          explanation: "Verse, chorus, and tune are all parts of a song. Chapter and paragraph are parts of a book, so they are the odd ones out. Tip: Read ALL five words before picking — do not jump at the first connection you spot. ✓"
         },
         {
           id: 70,
@@ -6554,13 +6554,13 @@ const vrData = {
           },
           {
             id: 168,
-            setA: ["tram","car","barge"],
-            setB: ["fare","toon","deck"],
-            correctPair: [1,1],
+            setA: ["goblin","imp","elf"],
+            setB: ["age","pair","air"],
+            correctPair: [1,2],
             difficulty: 3,
             questionType: "pick-from-sets",
             question: "Find two words, one from each group, that join together to make a new word. The word from the first group always comes first.",
-            explanation: "car + toon = cartoon. A cartoon is an animated film or drawing — the spelling hides 'car' and 'toon'. ✓",
+            explanation: "imp + air = impair. To impair something means to damage or weaken it — the spelling hides the two small words 'imp' and 'air', even though the meaning has nothing to do with either! ✓",
           },
           {
             id: 169,
@@ -8808,7 +8808,7 @@ const vrData = {
           id: 1,
           difficulty: 1,
           question: "Which three-letter word completes this longer word? CH _ _ _ ER",
-          options: ["OPT","ACT","APT","ART","APE"],
+          options: ["OPT","ACT","APT","OWN","APE"],
           correct: 2,
           explanation: "The answer is APT, making CHAPTER. 'Apt' means suitable or appropriate. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
@@ -8936,7 +8936,7 @@ const vrData = {
           id: 17,
           difficulty: 2,
           question: "Which three-letter word completes this longer word? W _ _ _ OW",
-          options: ["ALL","ELF","OWL","ILL","INN"],
+          options: ["ILK","ELF","OWL","ILL","ELM"],
           correct: 3,
           explanation: "The answer is ILL, making WILLOW. A willow is a type of tree often found near rivers. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
@@ -9640,7 +9640,7 @@ const vrData = {
           id: 105,
           difficulty: 1,
           question: "Which three-letter word completes this longer word?\n\nBAL ( _ _ _ ) S",
-          options: ["LIT","LOT","LET","LAP","LID"],
+          options: ["LIT","LIP","LET","LAP","LID"],
           correct: 2,
           explanation: "The three missing letters are L, E, T making the word LET. The complete word is BALLETS. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
         },
@@ -9736,7 +9736,7 @@ const vrData = {
           id: 117,
           difficulty: 2,
           question: "Which three-letter word completes this longer word?\n\nCOM ( _ _ _ ) E",
-          options: ["POT","PEN","PEW","PIE","PET"],
+          options: ["PAW","PEN","PEW","PIE","PET"],
           correct: 4,
           explanation: "The three missing letters are P, E, T making the word PET. The complete word is COMPETE. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
         },
@@ -9744,7 +9744,7 @@ const vrData = {
           id: 118,
           difficulty: 2,
           question: "Which three-letter word completes this longer word?\n\nPAL ( _ _ _ ) S",
-          options: ["ACE","AGE","ATE","APE","ARE"],
+          options: ["ACE","AGE","AWE","APE","ARE"],
           correct: 0,
           explanation: "The three missing letters are A, C, E making the word ACE. The complete word is PALACES. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
         },
@@ -10113,10 +10113,10 @@ const vrData = {
           {
             id: 164,
             difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nFinn GRED at the silly joke his little sister told him.",
+            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nFinn GRED proudly when he won first prize at the science fair.",
             options: ["OAN","OWN","ASP","INN","OUT"],
             correct: 3,
-            explanation: "Insert INN into GRED: GR + INN + ED = GRINNED. Grinned means smiled broadly. A silly joke makes you smile — that's the sentence clue. ✓",
+            explanation: "Insert INN into GRED: GR + INN + ED = GRINNED. Grinned means smiled broadly. Winning first prize made Finn smile proudly — only GRINNED fits a happy, proud moment. GROANED (a sound of pain or complaint) and GRASPED (took hold of) are real words but don't fit winning a prize. ✓",
           },
           {
             id: 165,
@@ -18278,10 +18278,10 @@ const vrData = {
         {
           id: 3,
           difficulty: 2,
-          question: "Rearrange these words to make a sentence: 'school walked to they morning every'. What is the last word of the correct sentence?",
-          options: ["they","school","every","morning","walked"],
-          correct: 3,
-          explanation: "The correct sentence is: 'They walked to school every morning.' The last word is 'morning'. Tip: Find the subject (who/what) and the verb (action) first — they anchor the sentence. ✓"
+          question: "Rearrange these words to make a sentence: 'the she door locked front'. What is the last word of the correct sentence?",
+          options: ["Locked","Front","Door","She","The"],
+          correct: 2,
+          explanation: "The correct sentence is: 'She locked the front door.' The last word is 'door'. Tip: Find the subject (who/what) and the verb (action) first — they anchor the sentence. ✓"
         },
         {
           id: 4,
@@ -18454,10 +18454,10 @@ const vrData = {
         {
           id: 22,
           difficulty: 3,
-          question: "Which word connects both 'bank' and 'match'?",
-          options: ["River","Light","Fire","Box","Money"],
-          correct: 3,
-          explanation: "'Box' connects with 'match' (a matchbox) and 'bank' (a cash box kept at a bank, or a safety deposit box). In both cases, 'box' means a container. Tip: If you can't prove it from the facts given, the answer is 'Cannot tell'. ✓"
+          question: "Which word can mean both 'the edge of a river' and 'a place that keeps your money'?",
+          options: ["Shore","Vault","Bank","Stream","Wallet"],
+          correct: 2,
+          explanation: "'Bank' has two meanings: the raised ground along the edge of a river, and a business that looks after people's money. This is a double-meaning word. Tip: Test each option against BOTH meanings — the answer is the only word that fits both clues. ✓"
         },
         {
           id: 23,
@@ -18942,10 +18942,10 @@ const vrData = {
         {
           id: 69,
           difficulty: 2,
-          question: "Rearrange these words to make a sentence: 'beautiful the sang bird a song morning every'. What is the last word?",
-          options: ["Beautiful","Morning","Song","Bird","Every"],
+          question: "Rearrange these words to make a sentence: 'bone its the dog buried hungry'. What is the last word?",
+          options: ["Hungry","Bone","Dog","Buried","Its"],
           correct: 1,
-          explanation: "The correct sentence is: 'The bird sang a beautiful song every morning.' The last word is 'morning'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
+          explanation: "The correct sentence is: 'The hungry dog buried its bone.' The last word is 'bone'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
         },
         {
           id: 70,
@@ -18966,10 +18966,10 @@ const vrData = {
         {
           id: 72,
           difficulty: 2,
-          question: "Rearrange these words to make a sentence: 'after stars the dark appeared it got'. What is the first word?",
-          options: ["After","Stars","Appeared","Dark","The"],
-          correct: 4,
-          explanation: "The correct sentence is: 'The stars appeared after it got dark.' The first word is 'The'. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
+          question: "Rearrange these words to make a sentence: 'broken her Maria bicycle fixed'. What is the first word?",
+          options: ["Broken","Fixed","Maria","Bicycle","Her"],
+          correct: 2,
+          explanation: "The correct sentence is: 'Maria fixed her broken bicycle.' The first word is 'Maria'. Tip: 'All A are B' does NOT mean 'All B are A' — watch for this trap! ✓"
         },
         {
           id: 78,
@@ -18982,18 +18982,18 @@ const vrData = {
         {
           id: 73,
           difficulty: 3,
-          question: "Rearrange these words to make a sentence: 'they outside played raining although was it'. What is the last word?",
-          options: ["They","Outside","Raining","It","Was"],
+          question: "Rearrange these words to make a sentence: 'a won medal the first runner who finished'. What is the last word?",
+          options: ["Runner","Medal","First","Won","Finished"],
           correct: 1,
-          explanation: "The correct sentence is: 'Although it was raining they played outside.' The last word is 'outside'. Tip: Process one clue at a time and build the ranking step by step. ✓"
+          explanation: "The correct sentence is: 'The runner who finished first won a medal.' The last word is 'medal'. Tip: Process one clue at a time and build the ranking step by step. ✓"
         },
         {
           id: 74,
           difficulty: 3,
-          question: "Rearrange these words to make a sentence: 'before the finished bell everyone the rang work their'. What is the third word?",
-          options: ["Before","Finished","Their","Everyone","Bell"],
+          question: "Rearrange these words to make a sentence: 'hungry the chickens the fed farmer'. What is the third word?",
+          options: ["Farmer","Hungry","Fed","Chickens","The"],
           correct: 2,
-          explanation: "The correct sentence is: 'Everyone finished their work before the bell rang.' Everyone(1) finished(2) their(3). The third word is 'their'. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
+          explanation: "The correct sentence is: 'The farmer fed the hungry chickens.' The(1) farmer(2) fed(3). The third word is 'fed'. Tip: 'Some' means 'at least one' — it does NOT mean 'all'. ✓"
         },
         {
           id: 75,
@@ -19006,18 +19006,18 @@ const vrData = {
         {
           id: 76,
           difficulty: 3,
-          question: "Rearrange these words to make a sentence: 'the crept fog slowly streets through the morning'. What is the second word?",
-          options: ["Crept","Fog","Slowly","Streets","Morning"],
-          correct: 4,
-          explanation: "The correct sentence is: 'The morning fog crept slowly through the streets.' The(1) morning(2). The second word is 'morning'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
+          question: "Rearrange these words to make a sentence: 'slipper the chewed puppy the excited'. What is the second word?",
+          options: ["Puppy","Excited","Chewed","Slipper","The"],
+          correct: 1,
+          explanation: "The correct sentence is: 'The excited puppy chewed the slipper.' The(1) excited(2). The second word is 'excited'. Tip: Watch out for direction words — 'fewer' is opposite to 'more'! ✓"
         },
         {
           id: 77,
           difficulty: 3,
-          question: "Rearrange these words to make a sentence: 'had packed she brought lunch the that she'. What is the fifth word?",
-          options: ["Lunch","Packed","She","Brought","Had"],
+          question: "Rearrange these words to make a sentence: 'broken grandfather the clock my repaired'. What is the fifth word?",
+          options: ["Broken","Grandfather","Clock","Repaired","My"],
           correct: 0,
-          explanation: "The correct sentence is: 'She brought the packed lunch that she had.' She(1) brought(2) the(3) packed(4) lunch(5). The fifth word is 'lunch'. Tip: For 4-5 person rankings, write ALL names before picking your answer. ✓"
+          explanation: "The correct sentence is: 'My grandfather repaired the broken clock.' My(1) grandfather(2) repaired(3) the(4) broken(5). The fifth word is 'broken'. Tip: Find the subject (who) and the verb (action) first — only a person can 'repair', so the clock must be the object, not the subject. ✓"
         },
         {
           id: 79,

@@ -1110,7 +1110,7 @@ export const numberWordCodesSubConcepts = [
           {
             type: "hook",
             title: () => "Crack the 4-letter code!",
-            body: (v) => `${v.name} is ${v.scenario}.\n\n**${v.words[0].word} = ${v.words[0].code}**\n\nFour letters, four pairs to track — but you've already done this with 3 letters, so you've got this! Can you decode **${v.testWord}**?`,
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**${v.words[0].word} = ${v.words[0].code}**\n\nFour letters, four pairs to track — same table method you've been using, just keep every pair lined up. You've got this! Can you decode **${v.testWord}**?`,
             visual: {
               component: "CodeTable",
               props: (v) => ({

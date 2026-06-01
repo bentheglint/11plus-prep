@@ -33753,10 +33753,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 404,
           "difficulty": 3,
-          "question": "In 'I'll just have a little', what word class is 'little'?",
+          "question": "In 'They worked hard all day', what word class is 'hard'?",
           "options": ["Adjective", "Adverb", "Determiner", "Pronoun", "Noun"],
-          "correct": 3,
-          "explanation": "'Little' is a PRONOUN here — it stands alone replacing a noun ('a little [bit of food]'). In 'a little dog', it's an adjective. In 'little did she know', it's an adverb. Context determines the class! ✓"
+          "correct": 1,
+          "explanation": "'Hard' is an ADVERB here — it tells you HOW they worked, so it modifies the verb 'worked'. The trap is that 'hard' is usually an adjective ('a hard rock', describing a noun). The test: does the word describe a noun (adjective) or the action/verb (adverb)? Here it describes the verb, so it's an adverb. 'Hard' is a flat adverb — an adverb with no -ly ending. ✓"
         }
       ]
     },}
