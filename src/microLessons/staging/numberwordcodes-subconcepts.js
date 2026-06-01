@@ -757,7 +757,7 @@ export const numberWordCodesSubConcepts = [
                 headers: ["Word", "Code"],
                 rows: [
                   ...v.words.map(w => ({ cells: [w.word, w.code] })),
-                  { cells: [v.testWord, "???"], highlight: true }
+                  { cells: ["???", v.testCode], highlight: true }
                 ]
               })
             },

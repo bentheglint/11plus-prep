@@ -2180,7 +2180,7 @@ const mathsData = {
     {
       id: 59,
       difficulty: 2,
-      question: "A cook uses 0.9 litres of cream but only needs 0.7 of that amount for a sauce. How many litres does the sauce need? (Hint: multiply 0.9 × 0.7)",
+      question: "A cook has 0.9 litres of cream but only needs 0.7 of that amount for a sauce. How many litres does the sauce need? (Hint: multiply 0.9 × 0.7)",
       options: ["0.16", "0.63", "6.3", "1.6", "0.063"],
       correct: 1,
       explanation: "9 × 7 = 63. Two decimal places total, so 0.63. ✓"
@@ -7708,7 +7708,7 @@ fractions: {
     {
       id: 5,
       difficulty: 1,
-      question: "A bowl is 5/8 full of flour. Jack uses 1/8 of the bowl for a recipe. What fraction of the bowl is left? Give your answer in its simplest form.",
+      question: "A bowl is 5/8 full of flour. Jack uses 1/8 of the flour for a recipe. What fraction of the bowl is left? Give your answer in its simplest form.",
       options: ["4/8", "1/2", "6/8", "3/4", "4/16"],
       correct: 1,
       explanation: "Jack has 5/8 and uses 1/8: 5/8 - 1/8 = 4/8. Simplify: 4/8 = 1/2 of the bowl left. ✓"
@@ -7910,7 +7910,7 @@ fractions: {
     {
       id: 30,
       difficulty: 1,
-      question: "A jug is 7/8 full of orange juice. Dad pours out 3/8 of the jug. What fraction of the jug still has juice? Give your answer in its simplest form.",
+      question: "A jug is 7/8 full of orange juice. Dad pours out 3/8 of the juice. What fraction of the jug still has juice? Give your answer in its simplest form.",
       options: ["4/8", "1/2", "3/8", "5/8", "4/16"],
       correct: 1,
       explanation: "The jug had 7/8 and Dad poured out 3/8: 7/8 - 3/8 = 4/8. Simplify: 4/8 = 1/2 of the jug left. ✓"
@@ -8856,7 +8856,7 @@ fractions: {
     {
       id: 148,
       difficulty: 2,
-      question: "A water tank is 5/6 full. Then 3/8 of the tank is drained. What fraction of the tank is still full?",
+      question: "A water tank is 5/6 full. Then water equal to 3/8 of a full tank is drained. What fraction of the tank is still full?",
       options: ["7/24", "1/3", "13/24", "1/2", "11/24"],
       correct: 4,
       explanation: "5/6 - 3/8: Find common denominator (24). 5/6 = 20/24 and 3/8 = 9/24. 20/24 - 9/24 = 11/24. \u2713"
@@ -9123,7 +9123,7 @@ fractions: {
       question: "What is 2 2/3 + 1 5/6?",
       options: ["4 1/2", "3 7/9", "4", "4 1/6", "3 1/2"],
       correct: 0,
-      explanation: "Convert to sixths: 2 2/3 = 2 4/6 and 1 5/6 = 1 5/6. Add: 2 + 1 = 3, and 4/6 + 5/6 = 9/6 = 1 3/6 = 1 1/2. Total: 3 + 1 1/2 = 4 1/2. ✓"
+      explanation: "Convert to sixths: 2 2/3 = 2 4/6. Now add: whole numbers 2 + 1 = 3, and fractions 4/6 + 5/6 = 9/6. 9/6 is an improper fraction — 6/6 makes one whole, leaving 3/6 = 1/2, so 9/6 = 1 1/2. Total: 3 + 1 1/2 = 4 1/2. ✓"
     },
     {
       id: 180,
@@ -9203,7 +9203,7 @@ fractions: {
     {
       id: 189,
       difficulty: 3,
-      question: "A bottle is 5/6 full of juice. Jack pours out 3/10 of the bottle. What fraction of the bottle still has juice?",
+      question: "A bottle is 5/6 full of juice. Jack pours out 3/10 of the juice. What fraction of the bottle still has juice?",
       options: ["8/15", "1/2", "2/3", "7/15", "11/30"],
       correct: 0,
       explanation: "Find a common denominator (30). 5/6 = 25/30 and 3/10 = 9/30. Then 25/30 − 9/30 = 16/30. Simplify: 16/30 = 8/15. ✓"

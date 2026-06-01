@@ -450,13 +450,13 @@ export const compoundWordsSubConcepts = [
             options: ["ball", "game", "match", "field", "team"],
             correctAnswer: "ball",
             explanation: "'Foot' + 'ball' = football, and 'basket' + 'ball' = basketball. Both are real compound words. ✓",
-            interactFirstWord: "snow",
-            interactSecondWord: "rain",
+            interactFirstWord: "night",
+            interactSecondWord: "down",
             interactSharedWord: "fall",
-            interactFullQuestion: "Which word goes after both 'snow' and 'rain' to make two compound words?",
+            interactFullQuestion: "Which word goes after both 'night' and 'down' to make two compound words?",
             interactOptions: ["fall", "flake", "storm", "cloud", "drop"],
             interactCorrectAnswer: "fall",
-            interactExplanation: "'Snow' + 'fall' = snowfall, and 'rain' + 'fall' = rainfall. Both are real compound words. ✓"
+            interactExplanation: "'Night' + 'fall' = nightfall, and 'down' + 'fall' = downfall. Both are real compound words. ✓"
           },
           {
             name: "Ella",
@@ -2118,7 +2118,7 @@ export const compoundWordsSubConcepts = [
             compoundA: "underground",
             compoundB: "underwater",
             fullQuestion: "Which word goes in front of both 'ground' and 'water' to make two compound words?",
-            options: ["under", "over", "above", "below", "back"],
+            options: ["under", "up", "above", "below", "out"],
             correctAnswer: "under",
             explanation: "'Under' + 'ground' = underground, and 'under' + 'water' = underwater. Under is very versatile! ✓"
           },
@@ -2126,15 +2126,15 @@ export const compoundWordsSubConcepts = [
             name: "Daisy",
             scenario: "working on direction compound words",
             directionWord: "out",
-            compounds: ["outside", "outdoor", "outline", "outright"],
-            targetA: "side",
-            targetB: "door",
-            compoundA: "outside",
-            compoundB: "outdoor",
-            fullQuestion: "Which word goes in front of both 'side' and 'door' to make two compound words?",
+            compounds: ["outbreak", "outgoing", "outline", "outright"],
+            targetA: "break",
+            targetB: "going",
+            compoundA: "outbreak",
+            compoundB: "outgoing",
+            fullQuestion: "Which word goes in front of both 'break' and 'going' to make two compound words?",
             options: ["out", "in", "up", "back", "down"],
             correctAnswer: "out",
-            explanation: "'Out' + 'side' = outside, and 'out' + 'door' = outdoor. Out forms many compound words! ✓"
+            explanation: "'Out' + 'break' = outbreak, and 'out' + 'going' = outgoing. Out forms many compound words! ✓"
           },
           {
             name: "Hugo",
@@ -2294,7 +2294,7 @@ export const compoundWordsSubConcepts = [
             explanation: "'Cross' + 'road' = crossroad, and 'cross' + 'word' = crossword. Both are real compound words. ✓",
             intTargetA: "fall",
             intTargetB: "proof",
-            intOptions: ["water", "rain", "snow", "cloud", "storm"],
+            intOptions: ["water", "light", "snow", "cloud", "storm"],
             intCorrectAnswer: "water",
             intCompound1: "waterfall",
             intCompound2: "waterproof",
@@ -2472,7 +2472,7 @@ export const compoundWordsSubConcepts = [
             correctB: "bow",
             compound: "rainbow",
             tryFirst: "rain + thread",
-            tryFirstResult: "rathread? Not a word.",
+            tryFirstResult: "rainthread? Not a word.",
             trySecond: "rain + ring",
             trySecondResult: "rainring? Not a word.",
             tryThird: "rain + bow",
@@ -2599,22 +2599,18 @@ export const compoundWordsSubConcepts = [
             interaction: {
               type: "multiple-choice",
               question: (v) => `Which combination makes a real compound word?`,
-              options: (v) => {
-                const correct = `${v.interactCorrectA} + ${v.interactCorrectB}`;
-                const distractors = [
-                  `${v.interactGroupA[1]} + ${v.interactGroupB[0]}`,
-                  `${v.interactGroupA[2]} + ${v.interactGroupB[1]}`,
-                  `${v.interactGroupA[0]} + ${v.interactGroupB[2]}`,
-                  `${v.interactGroupA[2]} + ${v.interactGroupB[2]}`
-                ];
-                const all = [correct, ...distractors];
-                // Shuffle but keep track of correct index
-                const shuffled = all.sort(() => Math.random() - 0.5);
-                return shuffled;
-              },
-              correctIndex: null, // Dynamic — handled by matching correct answer
-              correct: (v) => `Well done! ${v.interactCorrectA} + ${v.interactCorrectB} = ${v.interactCompound}. ${v.interactExplanation}`,
-              incorrect: (v) => `Not quite! The answer is ${v.interactCorrectA} + ${v.interactCorrectB} = ${v.interactCompound}. ${v.interactExplanation}`
+              getOptions: (v) => [
+                `${v.interactCorrectA} + ${v.interactCorrectB}`,
+                `${v.interactGroupA[1]} + ${v.interactGroupB[0]}`,
+                `${v.interactGroupA[2]} + ${v.interactGroupB[1]}`,
+                `${v.interactGroupA[0]} + ${v.interactGroupB[2]}`,
+                `${v.interactGroupA[2]} + ${v.interactGroupB[2]}`
+              ],
+              correctAnswer: (v) => `${v.interactCorrectA} + ${v.interactCorrectB}`,
+              feedback: {
+                correct: (v) => `Well done! ${v.interactCorrectA} + ${v.interactCorrectB} = ${v.interactCompound}. ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! The answer is ${v.interactCorrectA} + ${v.interactCorrectB} = ${v.interactCompound}. ${v.interactExplanation}`
+              }
             }
           },
           {

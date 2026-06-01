@@ -914,10 +914,10 @@ const vrData = {
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
-          setA: ["scrutinise","overlook","dismiss"],
-          setB: ["reject","discard","examine"],
-          correctPair: [0,2],
-          explanation: "'Scrutinise' and 'examine' both mean to look at something very carefully. 'Overlook' is the opposite — to miss or fail to notice. 'Dismiss' means to reject, 'reject' means to refuse, 'discard' means to throw away. ✓"
+          setA: ["scrutinise","glimpse","ignore"],
+          setB: ["examine","conceal","reveal"],
+          correctPair: [0,0],
+          explanation: "'Scrutinise' and 'examine' both mean to look at something very carefully. 'Glimpse' is a tempting trap — it means a quick look, the opposite of careful examination. 'Ignore' means to pay no attention. 'Conceal' means to hide and 'reveal' means to show — neither matches scrutinise. ✓"
         },
         {
           id: 92,
@@ -1386,7 +1386,7 @@ const vrData = {
             options: ["tusk","branch","trunk","snorkel","root"],
             correct: 2,
             explanation: "'Trunk' fits both groups: an elephant's 'trunk' is its long nose, and a tree's 'trunk' is its main stem. ✓",
-            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: elephant's nose, snout\nGroup 2: tree's main stem, trunk-line",
+            question: "Find one word that fits BOTH meaning groups.\n\nGroup 1: elephant's nose, snout\nGroup 2: tree's main stem, main telephone line",
           },
           {
             id: 142,
@@ -2816,9 +2816,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to book as verse is to ___",
           setA: ["page","chapter","cover"],
-          setB: ["rhyme","poem","song"],
+          setB: ["rhyme","poem","reader"],
           correctPair: [1,1],
-          explanation: "A chapter is a section of a book, just as a verse is a section of a poem. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+          explanation: "A chapter is a section of a book, just as a verse is a section of a poem. A 'rhyme' is a feature of a verse and a 'reader' enjoys the poem, but neither is the whole work a verse belongs to. Tip: both pairs should be part-to-whole. ✓"
         },
         {
           id: 7,
@@ -2832,13 +2832,13 @@ const vrData = {
         },
         {
           id: 8,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "pick-from-sets",
-          question: "___ is to car as wing is to ___",
-          setA: ["wheel","door","engine"],
-          setB: ["sky","bird","feather"],
-          correctPair: [0,1],
-          explanation: "A wheel helps a car move, just as a wing helps a bird fly. Both enable movement. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+          question: "___ is to bird as wheel is to ___",
+          setA: ["wing","feather","beak"],
+          setB: ["car","road","driver"],
+          correctPair: [0,0],
+          explanation: "A wing is the part a bird uses to move (to fly), just as a wheel is the part a car uses to move (to roll). A 'feather' covers a bird and a 'beak' feeds it, but only the wing moves it. The 'road' and 'driver' are not parts of the car. ✓"
         },
         {
           id: 9,
@@ -2946,9 +2946,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to grape as tree is to ___",
           setA: ["vine","wine","fruit"],
-          setB: ["leaf","apple","wood"],
-          correctPair: [0,1],
-          explanation: "A grape grows on a vine, just as an apple grows on a tree. Both are fruits and where they grow. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+          setB: ["apple","branch","orchard"],
+          correctPair: [0,0],
+          explanation: "A grape grows on a vine, just as an apple grows on a tree. A 'branch' is part of a tree and an 'orchard' is where trees grow, but only an apple is a fruit that grows ON the tree. Tip: match the SAME relationship — fruit and the plant it grows on. ✓"
         },
         {
           id: 20,
@@ -3146,9 +3146,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to sentence as brick is to ___",
           setA: ["word","full stop","paragraph"],
-          setB: ["cement","house","wall"],
-          correctPair: [0,2],
-          explanation: "A word is part of a sentence, just as a brick is part of a wall. Both are small units making up a larger whole. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
+          setB: ["cement","wall","builder"],
+          correctPair: [0,1],
+          explanation: "A word is a building block of a sentence, just as a brick is a building block of a wall. 'Cement' holds bricks together and a 'builder' lays them, but the wall is what the bricks build up into. Tip: small unit to the whole it forms. ✓"
         },
         {
           id: 40,
@@ -3156,9 +3156,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to skeleton as link is to ___",
           setA: ["bone","doctor","x-ray"],
-          setB: ["metal","chain","fence"],
+          setB: ["metal","chain","rust"],
           correctPair: [0,1],
-          explanation: "A bone is one of the repeated units that make up a skeleton, just as a link is one of the repeated units that make up a chain. A 'doctor' studies skeletons but is not part of one, and an 'x-ray' is a picture of bones, not a part of the skeleton. ✓"
+          explanation: "A bone is one of the repeated units that make up a skeleton, just as a link is one of the repeated units that make up a chain. 'Metal' is what a chain is made of and 'rust' attacks metal links, but neither is made OF the units. ✓"
         },
         {
           id: 41,
@@ -3175,7 +3175,7 @@ const vrData = {
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "___ is to chain as carriage is to ___",
-          setA: ["metal","fence","link"],
+          setA: ["metal","rust","link"],
           setB: ["horse","wheel","train"],
           correctPair: [2,2],
           explanation: "A link is part of a chain, just as a carriage is part of a train. Both are individual units in a connected series. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
@@ -3235,10 +3235,10 @@ const vrData = {
           difficulty: 2,
           questionType: "pick-from-sets",
           question: "___ is to shape as emerald is to ___",
-          setA: ["circle","triangle","square"],
+          setA: ["square","outline","corner"],
           setB: ["ring","gemstone","green"],
-          correctPair: [1,1],
-          explanation: "A triangle is a type of shape, just as an emerald is a type of gemstone. Both are specific examples of a category. Tip: For degree relationships (warm→hot), match the INTENSITY jump — mild→extreme, not mild→mild. ✓"
+          correctPair: [0,1],
+          explanation: "A square is a type of shape, just as an emerald is a type of gemstone. An 'outline' is the edge of a shape and a 'corner' is part of one, but neither is a type of shape. Tip: pick the word that IS an example of the category, not one merely linked to it. ✓"
         },
         {
           id: 49,
@@ -3344,11 +3344,11 @@ const vrData = {
           id: 59,
           difficulty: 2,
           questionType: "pick-from-sets",
-          question: "___ is to lock as anchor is to ___",
-          setA: ["key","door","safe"],
-          setB: ["hold","ship","chain"],
+          question: "___ is to fasten as anchor is to ___",
+          setA: ["lock","door","chain"],
+          setB: ["hold","ship","sea"],
           correctPair: [0,0],
-          explanation: "A key operates a lock, just as an anchor holds a ship in place. Both serve a securing function. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+          explanation: "A lock is used to fasten, just as an anchor is used to hold. Both are devices named with the job they do — fasten and hold are their purposes. A 'door' has a lock and a 'ship' uses an anchor, but those are not what the device DOES. ✓"
         },
         {
           id: 60,
@@ -3375,10 +3375,10 @@ const vrData = {
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "___ is to illuminate as microscope is to ___",
-          setA: ["candle","lantern","torch"],
+          setA: ["torch","shadow","switch"],
           setB: ["scientist","lens","enlarge"],
-          correctPair: [2,2],
-          explanation: "A torch is used to illuminate, just as a microscope is used to enlarge. Both are devices paired with their function. Tip: Read the full analogy back: does it sound parallel? Both pairs should feel like the same kind of link. ✓"
+          correctPair: [0,2],
+          explanation: "A torch is used to illuminate, just as a microscope is used to enlarge. A 'shadow' is the absence of light and a 'switch' turns a torch on, but only the torch does the illuminating. Both are devices paired with their function. ✓"
         },
         {
           id: 63,
@@ -3646,9 +3646,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to swim as pitch is to ___",
           setA: ["towel","pool","water"],
-          setB: ["football","grass","play"],
+          setB: ["referee","grass","play"],
           correctPair: [1,2],
-          explanation: "A pool is where you swim, just as a pitch is where you play. Both are places paired with their activities. Tip: Name the relationship BEFORE looking at options — predict the answer first! ✓"
+          explanation: "A pool is where you swim, just as a pitch is where you play. A 'referee' works on the pitch and 'grass' is what it is made of, but only 'play' is the activity you do there. Tip: match place to the activity done in it. ✓"
         },
         {
           id: 90,
@@ -3684,11 +3684,11 @@ const vrData = {
           id: 93,
           difficulty: 2,
           questionType: "pick-from-sets",
-          question: "___ is to flood as wind is to ___",
+          question: "___ is to flood as drought is to ___",
           setA: ["rain","river","dam"],
-          setB: ["kite","gale","storm"],
-          correctPair: [0,2],
-          explanation: "Heavy rain causes a flood, just as strong wind causes a storm. Both are cause-and-effect pairs in weather. Tip: If two options seem right, pick the one that matches the SAME TYPE of relationship, not just any connection. ✓"
+          setB: ["famine","desert","heat"],
+          correctPair: [0,0],
+          explanation: "Too much rain causes a flood, just as a drought (too little rain) causes a famine when crops fail. Both are cause-and-effect pairs. A 'desert' is a dry place and 'heat' can worsen a drought, but neither is the result a drought causes. ✓"
         },
         {
           id: 94,
@@ -3736,9 +3736,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to snatch as mend is to ___",
           setA: ["thief","steal","grab"],
-          setB: ["fix","broken","repair"],
-          correctPair: [2,2],
-          explanation: "Grab and snatch both mean to seize quickly, just as mend and repair both mean to fix something. Both are synonym pairs. Tip: Check the direction — if A is the young and B is the adult, C must also be the young. ✓"
+          setB: ["repair","broken","needle"],
+          correctPair: [2,0],
+          explanation: "Grab and snatch both mean to seize quickly, just as repair and mend both mean to fix something. 'Broken' is what you mend and a 'needle' is a tool for mending, but neither MEANS mend. Both keyed words are synonyms. ✓"
         },
         {
           id: 99,
@@ -3746,9 +3746,9 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to cunning as weary is to ___",
           setA: ["fox","clever","sly"],
-          setB: ["tired","sleepy","fatigued"],
+          setB: ["rest","yawn","fatigued"],
           correctPair: [2,2],
-          explanation: "Sly and cunning both mean crafty or devious, just as weary and fatigued both mean very tired. Both are synonym pairs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
+          explanation: "Sly and cunning both mean crafty or devious, just as fatigued and weary both mean worn out and very tired. 'Rest' is what a weary person needs and a 'yawn' is a sign of it, but neither MEANS weary. Both keyed words are synonyms. ✓"
         },
         {
           id: 100,
@@ -3886,7 +3886,7 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to fish as lungs are to ___",
           setA: ["scales","fin","gills"],
-          setB: ["human","breathe","chest"],
+          setB: ["human","water","feathers"],
           correctPair: [2,0],
           explanation: "Gills allow a fish to breathe underwater, just as lungs allow a human to breathe air. Both are breathing organs. Tip: Beware associative distractors — a word can be RELATED to C without matching the A→B relationship. ✓"
         },
@@ -3926,7 +3926,7 @@ const vrData = {
           questionType: "pick-from-sets",
           question: "___ is to word as brick is to ___",
           setA: ["sentence","pen","letter"],
-          setB: ["wall","cement","house"],
+          setB: ["wall","cement","mortar"],
           correctPair: [2,0],
           explanation: "A letter is the smallest building block of a word, just as a brick is the smallest building block of a wall. Tip: Common relationship types: opposite, young→adult, tool→user, part→whole, cause→effect. ✓"
         },
@@ -4001,7 +4001,7 @@ const vrData = {
           question: "Find the two words that are the odd ones out.",
           options: ["table","chair","lamp","sofa","wardrobe"],
           correctPair: [2,4],
-          explanation: "Table, chair, and sofa are all pieces of furniture designed for sitting. A lamp gives light and a wardrobe stores clothes — neither is for sitting. ✓"
+          explanation: "Table, chair, and sofa are all items you would find in a living room or dining room. A lamp provides light and a wardrobe stores clothes in a bedroom — so lamp and wardrobe are the two odd ones out. ✓"
         },
         {
           id: 3,
@@ -5253,10 +5253,10 @@ const vrData = {
         {
           id: 19,
           difficulty: 2,
-          question: "Which word can go in front of both 'time' and 'break' to make two new words?",
-          options: ["Day","Lunch","Play","Bed","Tea"],
-          correct: 0,
-          explanation: "Day + time = daytime, day + break = daybreak (meaning dawn). ✓"
+          question: "Which word can go in front of both 'work' and 'wood' to make two new words?",
+          options: ["Home","Drift","Fire","Net","Hard"],
+          correct: 2,
+          explanation: "Fire + work = firework, and fire + wood = firewood. 'Drift' works with 'wood' (driftwood) but not 'work'. 'Net' works with 'work' (network) but not 'wood'. Only 'Fire' works with BOTH. ✓"
         },
         {
           id: 20,
@@ -5390,9 +5390,9 @@ const vrData = {
           id: 36,
           difficulty: 1,
           question: "Which word can go in front of both 'ground' and 'time' to make two new words?",
-          options: ["Break","Lunch","Play","Half","Over"],
-          correct: 2,
-          explanation: "Play + ground = playground, and play + time = playtime. Both are common compound words. ✓"
+          options: ["Break","Lunch","Camp","Half","Play"],
+          correct: 4,
+          explanation: "Play + ground = playground, and play + time = playtime. 'Camp' works with 'ground' (campground) but not 'time'. 'Half' works with 'time' (halftime) but not 'ground'. Only 'Play' works with BOTH. ✓"
         },
         {
           id: 37,
@@ -5597,10 +5597,10 @@ const vrData = {
         {
           id: 62,
           difficulty: 2,
-          question: "Which word can go after both 'grand' and 'god' to make two new words?",
-          options: ["Child","Parent","Son","Father","Mother"],
-          correct: 3,
-          explanation: "Grand + father = grandfather, and god + father = godfather. Both are common compound words. ✓"
+          question: "Which word can go in front of both 'man' and 'flake' to make two new words?",
+          options: ["Corn","Hand","Snow","Fore","Mad"],
+          correct: 2,
+          explanation: "Snow + man = snowman, and snow + flake = snowflake. 'Fore' works with 'man' (foreman) but not 'flake'. 'Mad' works with 'man' (madman) but not 'flake'. Only 'Snow' works with BOTH. ✓"
         },
         {
           id: 63,
@@ -5710,17 +5710,17 @@ const vrData = {
           id: 76,
           difficulty: 2,
           question: "Which word can go in front of both 'bone' and 'fire' to make two new words?",
-          options: ["Wish","Cross","Back","Camp","Hell"],
+          options: ["Wish","Jaw","Back","Camp","Hell"],
           correct: 2,
-          explanation: "Back + bone = backbone, and back + fire = backfire. Both are common compound words. ✓"
+          explanation: "Back + bone = backbone, and back + fire = backfire. 'Wish' works with 'bone' (wishbone) but not 'fire'. 'Camp' works with 'fire' (campfire) but not 'bone'. Only 'Back' works with BOTH. ✓"
         },
         {
           id: 77,
           difficulty: 3,
           question: "Which word can go in front of both 'sight' and 'head' to make two new words?",
-          options: ["Hind","Over","Long","Fore","Near"],
+          options: ["Hind","Up","Down","Fore","Near"],
           correct: 3,
-          explanation: "Fore + sight = foresight, and fore + head = forehead. Both are common compound words. ✓"
+          explanation: "Fore + sight = foresight, and fore + head = forehead. 'Hind' works with 'sight' (hindsight) but not 'head'. Only 'Fore' works with BOTH. ✓"
         },
         {
           id: 78,
@@ -5861,10 +5861,10 @@ const vrData = {
         {
           id: 95,
           difficulty: 3,
-          question: "Which word can go after both 'where' and 'there' to make two new words?",
-          options: ["About","By","Upon","Ever","In"],
-          correct: 1,
-          explanation: "Where + by = whereby, and there + by = thereby. Both are common compound words. ✓"
+          question: "Which word can go after both 'stand' and 'near' to make two new words?",
+          options: ["Side","Pass","By","Out","Off"],
+          correct: 2,
+          explanation: "Stand + by = standby, and near + by = nearby. Both are common compound words. 'Out' works with 'stand' (standout) but not 'near'. 'Off' works with 'stand' (standoff) but not 'near'. Only 'By' works with BOTH. ✓"
         },
         {
           id: 96,
@@ -5910,7 +5910,7 @@ const vrData = {
           id: 101,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["rain","bow","grape","lamp","cork"],
           correctPair: [0,1],
           explanation: "'Rain' + 'bow' makes 'rainbow'. None of the other words (grape, lamp, cork) form compound words with each other or with rain/bow. ✓"
@@ -5919,7 +5919,7 @@ const vrData = {
           id: 102,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["fire","place","silk","wedge","grit"],
           correctPair: [0,1],
           explanation: "'Fire' + 'place' makes 'fireplace'. None of the other words (silk, wedge, grit) form compound words with each other or with fire/place. ✓"
@@ -5928,7 +5928,7 @@ const vrData = {
           id: 103,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["tea","pot","fern","squid","valve"],
           correctPair: [0,1],
           explanation: "'Tea' + 'pot' makes 'teapot'. None of the other words (fern, squid, valve) form compound words with each other or with tea/pot. ✓"
@@ -5937,7 +5937,7 @@ const vrData = {
           id: 104,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["snow","ball","thorn","silk","dusk"],
           correctPair: [0,1],
           explanation: "'Snow' + 'ball' makes 'snowball'. None of the other words (thorn, silk, dusk) form compound words with each other or with snow/ball. ✓"
@@ -5946,7 +5946,7 @@ const vrData = {
           id: 105,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["bed","room","prawn","cork","grit"],
           correctPair: [0,1],
           explanation: "'Bed' + 'room' makes 'bedroom'. None of the other words (prawn, cork, grit) form compound words with each other or with bed/room. ✓"
@@ -5955,7 +5955,7 @@ const vrData = {
           id: 106,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["play","ground","elk","hinge","quilt"],
           correctPair: [0,1],
           explanation: "'Play' + 'ground' makes 'playground'. None of the other words (elk, hinge, quilt) form compound words with each other or with play/ground. ✓"
@@ -5964,7 +5964,7 @@ const vrData = {
           id: 107,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["tooth","brush","pond","kelp","ridge"],
           correctPair: [0,1],
           explanation: "'Tooth' + 'brush' makes 'toothbrush'. None of the other words (pond, kelp, ridge) form compound words with each other or with tooth/brush. ✓"
@@ -5973,7 +5973,7 @@ const vrData = {
           id: 108,
           difficulty: 1,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["star","fish","chalk","crust","mesh"],
           correctPair: [0,1],
           explanation: "'Star' + 'fish' makes 'starfish'. None of the other words (chalk, crust, mesh) form compound words with each other or with star/fish. ✓"
@@ -5982,7 +5982,7 @@ const vrData = {
           id: 109,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["butter","fly","brick","frost","plum"],
           correctPair: [0,1],
           explanation: "'Butter' + 'fly' makes 'butterfly'. None of the other words (brick, frost, plum) form compound words with each other or with butter/fly. ✓"
@@ -5991,7 +5991,7 @@ const vrData = {
           id: 110,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["news","paper","drum","moth","wedge"],
           correctPair: [0,1],
           explanation: "'News' + 'paper' makes 'newspaper'. None of the other words (drum, moth, wedge) form compound words with each other or with news/paper. ✓"
@@ -6000,7 +6000,7 @@ const vrData = {
           id: 111,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["book","worm","toast","cliff","dusk"],
           correctPair: [0,1],
           explanation: "'Book' + 'worm' makes 'bookworm'. None of the other words (toast, cliff, dusk) form compound words with each other or with book/worm. ✓"
@@ -6009,7 +6009,7 @@ const vrData = {
           id: 112,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["water","fall","prawn","grit","lamp"],
           correctPair: [0,1],
           explanation: "'Water' + 'fall' makes 'waterfall'. None of the other words (prawn, grit, lamp) form compound words with each other or with water/fall. ✓"
@@ -6018,7 +6018,7 @@ const vrData = {
           id: 113,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["day","dream","squid","cork","fern"],
           correctPair: [0,1],
           explanation: "'Day' + 'dream' makes 'daydream'. None of the other words (squid, cork, fern) form compound words with each other or with day/dream. ✓"
@@ -6027,7 +6027,7 @@ const vrData = {
           id: 114,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["head","line","thorn","valve","silk"],
           correctPair: [0,1],
           explanation: "'Head' + 'line' makes 'headline'. None of the other words (thorn, valve, silk) form compound words with each other or with head/line. ✓"
@@ -6036,7 +6036,7 @@ const vrData = {
           id: 115,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["sea","horse","brick","dusk","kelp"],
           correctPair: [0,1],
           explanation: "'Sea' + 'horse' makes 'seahorse'. None of the other words (brick, dusk, kelp) form compound words with each other or with sea/horse. ✓"
@@ -6045,7 +6045,7 @@ const vrData = {
           id: 116,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["elbow","wrist","finger","bone","print"],
           correctPair: [2,4],
           explanation: "'Finger' + 'print' makes 'fingerprint'. 'Elbowprint', 'wristprint', and 'elbowbone' are not real compound words. ✓"
@@ -6054,7 +6054,7 @@ const vrData = {
           id: 117,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["drizzle","breeze","fog","thunder","storm"],
           correctPair: [3,4],
           explanation: "'Thunder' + 'storm' makes 'thunderstorm'. 'Drizzlestorm', 'breezestorm', and 'fogstorm' are not real compound words. ✓"
@@ -6063,7 +6063,7 @@ const vrData = {
           id: 118,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["arm","chair","pond","quilt","ridge"],
           correctPair: [0,1],
           explanation: "'Arm' + 'chair' makes 'armchair'. None of the other words (pond, quilt, ridge) form compound words with each other or with arm/chair. ✓"
@@ -6072,7 +6072,7 @@ const vrData = {
           id: 119,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["over","look","cliff","drum","plum"],
           correctPair: [0,1],
           explanation: "'Over' + 'look' makes 'overlook'. None of the other pairs form compound words. ✓"
@@ -6081,7 +6081,7 @@ const vrData = {
           id: 120,
           difficulty: 3,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["black","smith","chalk","hinge","elm"],
           correctPair: [0,1],
           explanation: "'Black' + 'smith' makes 'blacksmith'. None of the other words (chalk, hinge, elm) form compound words with each other or with black/smith. ✓"
@@ -6090,7 +6090,7 @@ const vrData = {
           id: 121,
           difficulty: 3,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["land","lord","frost","mesh","crust"],
           correctPair: [0,1],
           explanation: "'Land' + 'lord' makes 'landlord'. None of the other words (frost, mesh, crust) form compound words with each other or with land/lord. ✓"
@@ -6099,7 +6099,7 @@ const vrData = {
           id: 122,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["half","way","moth","cork","grit"],
           correctPair: [0,1],
           explanation: "'Half' + 'way' makes 'halfway'. None of the other words (moth, cork, grit) form compound words with each other or with half/way. ✓"
@@ -6108,7 +6108,7 @@ const vrData = {
           id: 123,
           difficulty: 2,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["no","where","plum","silk","valve"],
           correctPair: [0,1],
           explanation: "'No' + 'where' makes 'nowhere'. None of the other words (plum, silk, valve) form compound words with each other or with no/where. ✓"
@@ -6117,7 +6117,7 @@ const vrData = {
           id: 124,
           difficulty: 3,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["with","draw","elk","thorn","dusk"],
           correctPair: [0,1],
           explanation: "'With' + 'draw' makes 'withdraw'. None of the other words (elk, thorn, dusk) form compound words with each other or with with/draw. ✓"
@@ -6126,7 +6126,7 @@ const vrData = {
           id: 125,
           difficulty: 3,
           questionType: "select-two",
-          question: "Find two words, one from each group, that join together to make a new word.",
+          question: "Find the two words that join together to make a new word.",
           options: ["up","stream","wedge","hinge","prawn"],
           correctPair: [0,1],
           explanation: "'Up' + 'stream' makes 'upstream'. None of the other words (wedge, hinge, prawn) form compound words with each other or with up/stream. ✓"
@@ -8082,10 +8082,10 @@ const vrData = {
         {
           id: 13,
           difficulty: 2,
-          question: "Move one letter from one word to the other to make two new words: STARE  OWN",
-          options: ["T","A","S","R","E"],
-          correct: 2,
-          explanation: "Move the 'S' from STARE to make TARE, and insert it into OWN to make SOWN. 'S' from STARE to OWN: STARE becomes TARE, and OWN becomes SOWN. Both are real words. Tip: If the obvious letter doesn't work, try letters from the MIDDLE of the word. ✓"
+          question: "Move one letter from one word to the other to make two new words: SPARK  TONE",
+          options: ["S","P","A","R","K"],
+          correct: 0,
+          explanation: "Move the 'S' from SPARK to make PARK, and insert it into TONE to make STONE. Both are common words. Watch out for K — taking it gives SPAR (a real word), but TONE plus K makes no word, so K fails. Tip: check BOTH new words are real before you choose. ✓"
         },
         {
           id: 14,
@@ -9079,7 +9079,7 @@ const vrData = {
         {
           id: 35,
           difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ IAGE",
+          question: "Which three-letter word completes this longer word? _ _ _ RIAGE",
           options: ["MOB","MAR","TIP","HUB","JAR"],
           correct: 1,
           explanation: "The answer is MAR, making MARRIAGE. Marriage is the legal union of two people as partners. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
@@ -9936,7 +9936,7 @@ const vrData = {
           {
             id: 142,
             difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nDaisy followed the recipe to bake a delicious choc_ _ _ TE cake.",
+            question: "Which letters complete the missing word in this sentence?\n\nDaisy followed the recipe to bake a delicious CHOC _ _ _ TE cake.",
             options: ["LAT","LIK","REL","ORE","OLA"],
             correct: 4,
             explanation: "The answer is OLA, making CHOCOLATE. You bake a 'chocolate' cake. The other options don't form real words here. ✓",
@@ -9960,10 +9960,10 @@ const vrData = {
           {
             id: 145,
             difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nJake's grandfather told an ENT_ _ _ _ _ _ NG story about his childhood in Cornwall.",
+            question: "Which letters complete the missing word in this sentence?\n\nJake's grandfather told an ENT_ _ _ _ _ NG story about his childhood in Cornwall.",
             options: ["ERTAI","ITLEM","RUSTI","RANCI","HRALI"],
-            correct: 0,
-            explanation: "The answer is ERTAI, making ENTERTAINING. A good story is 'entertaining'. ENTITLEMENT and ENTRUSTING are real but don't match the gap length. Only ENTERTAINING fits. ✓",
+            correct: 3,
+            explanation: "The answer is RANCI, making ENTRANCING. An entrancing story is one that grips your attention completely. Only ENTRANCING fits the gap: ENT + RANCI + NG. ✓",
           },
           {
             id: 146,
@@ -10081,10 +10081,10 @@ const vrData = {
           {
             id: 160,
             difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe small candle was BNING brightly in the window.",
+            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe small candle was BING brightly in the window.",
             options: ["URN","RIG","ENI","OWI","AKI"],
             correct: 0,
-            explanation: "Insert URN into BNING: B + URN + ING = BURNING. Burning means on fire. The candle clue tells you the word is about flames. ✓",
+            explanation: "Insert URN into BING: B + URN + ING = BURNING. Burning means on fire. The candle clue tells you the word is about flames. ✓",
           },
           {
             id: 161,
@@ -16501,10 +16501,10 @@ const vrData = {
         {
           id: 88,
           difficulty: 2,
-          question: "Complete the third pair: (SEAT, ATE) (CLAM, LAM) (TRIP, ___)",
+          question: "Complete the third pair: (SEAT, EAT) (CLAM, LAM) (TRIP, ___)",
           options: ["TIP","IRP","RIT","TRI","RIP"],
           correct: 4,
-          explanation: "The pattern removes the first letter of each word. CLAM → LAM, TRIP → RIP. Apply the same rule to find the answer. ✓"
+          explanation: "The pattern removes the first letter: SEAT → EAT, CLAM → LAM, TRIP → RIP. ✓"
         },
         {
           id: 89,
@@ -16549,10 +16549,10 @@ const vrData = {
         {
           id: 94,
           difficulty: 3,
-          question: "Complete the third pair: (BEAT, BEET) (MAST, MIST) (BAND, ___)",
+          question: "Complete the third pair: (BEAT, BEET) (MASH, MESH) (BAND, ___)",
           options: ["BEND","BOND","BIND","BUND","BEAD"],
           correct: 0,
-          explanation: "The pattern changes the second letter: BEAT(EA)→BEET(EE), MAST(AS)→MIST(IS). In each case the vowel 'a' changes to another vowel. BEAT→BEET changes A to E. MAST→MIST changes A to I. Following the vowel sequence A→E→I, the next change is A→E. BAND→BEND changes A to E. Tip: If the rule seems complex, it might be two simple operations combined. ✓"
+          explanation: "The rule is the same every time: change the letter A to E. BEAT→BEET, MASH→MESH, and BAND→BEND all swap an A for an E. BOND (A→O), BIND (A→I) and BUND (A→U) change A to the wrong vowel, and BEAD is not an A→E change — so only BEND fits. ✓"
         },
         {
           id: 95,
@@ -16797,10 +16797,10 @@ const vrData = {
         {
           id: 125,
           difficulty: 3,
-          question: "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does MEATS become?",
-          options: ["STEAM","TEAMS","MATES","TAMES","SEAM"],
+          question: "Look at the pattern: PEACH → CHEAP, NIGHT → THING. What does OCEAN become?",
+          options: ["CANOE","OCEANS","CLEAN","CONES","SCONE"],
           correct: 0,
-          explanation: "The pattern rearranges the letters to make a new word (anagram). PEACH→CHEAP and NIGHT→THING both use the same letters rearranged. MEATS→STEAM uses the same five letters rearranged. Tip: For 3-letter words, reversal and first/last swap look the same — check with longer words if unsure. ✓"
+          explanation: "The pattern rearranges all the letters to make a new word (an anagram). PEACH→CHEAP and NIGHT→THING use the same letters in a new order. OCEAN→CANOE uses the same five letters (O, C, E, A, N) rearranged. OCEANS adds a letter, and CLEAN, CONES and SCONE each use a different set of letters — so CANOE is the only true anagram. ✓"
         }
 ,
           {
@@ -19214,10 +19214,10 @@ const vrData = {
         {
           id: 105,
           difficulty: 1,
-          question: "All pentagons have five sides. This shape is a pentagon. How many sides does it have?",
+          question: "All pentagons have five sides. A shape is described as a pentagon. How many sides does it have?",
           options: ["Three","Six","Five","Four","Seven"],
           correct: 2,
-          explanation: "All pentagons have five sides. This shape is a pentagon, so it has five sides. Tip: Draw a vertical line and place items in order — it makes the answer obvious! ✓"
+          explanation: "All pentagons have five sides. A pentagon must have five sides — that is what the word 'pentagon' means. ✓"
         },
         {
           id: 106,
@@ -19762,10 +19762,10 @@ const vrData = {
         {
           id: 154,
           difficulty: 3,
-          question: "Five children — Amy, Ben, Cal, Dee, and Eve — each live in a different-coloured house: red, blue, green, yellow, and white. Amy does not live in the red or blue house. Ben lives in the yellow house. Cal lives next door to Ben. The green house is at one end of the row and Amy lives in it. What colour is Dee's house?",
+          question: "Five children — Amy, Ben, Cal, Dee, and Eve — each live in a different-coloured house: red, blue, green, yellow, and white. Amy lives in the green house, which is at one end of the row. Ben lives in the yellow house. Eve lives in the white house. Cal lives next door to Ben, and Cal does not live in the red house. What colour is Dee's house?",
           options: ["White","Blue","Green","Yellow","Red"],
           correct: 4,
-          explanation: "Ben lives in yellow. Amy lives in green, which is at one end. Cal lives next to Ben. That leaves red, blue, and white for Cal, Dee, and Eve. Since we need to assign colours: Amy = green (end), Ben = yellow, and the remaining houses are red, blue, white for Cal, Dee, Eve. Since Amy is not in red or blue (confirmed — she's in green), and Cal is next to Ben, the arrangement works with Dee in red. ✓"
+          explanation: "Start with the houses we know: Amy = green, Ben = yellow, Eve = white. That leaves only red and blue for Cal and Dee. We are told Cal does not live in the red house, so Cal must be blue. The only colour left for Dee is red. ✓"
         },
         {
           id: 155,
@@ -20119,10 +20119,10 @@ const vrData = {
         {
           id: 5,
           difficulty: 1,
-          question: "Find the letter that completes both pairs of words:\n\nWI ( ? ) OT\nPI ( ? ) EST",
-          options: ["N","T","R","S","L"],
+          question: "Find the letter that completes both pairs of words:\n\nBAR ( ? ) EST\nTUR ( ? ) OON",
+          options: ["N","T","S","R","L"],
           correct: 0,
-          explanation: "The letter N completes both pairs: WIN + NOT, and PIN + NEST. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
+          explanation: "The letter N completes both pairs: BARN + NEST, and TURN + NOON. Tip: You only have 5 options — in the exam, systematically try each one if the answer is not obvious. ✓"
         },
         {
           id: 6,
@@ -20239,10 +20239,10 @@ const vrData = {
         {
           id: 20,
           difficulty: 1,
-          question: "Find the letter that completes both pairs of words:\n\nGO ( ? ) EN\nNO ( ? ) RIP",
+          question: "Find the letter that completes both pairs of words:\n\nMEA ( ? ) RAP\nBOA ( ? ) WIN",
           options: ["S","N","R","D","T"],
           correct: 4,
-          explanation: "The letter T completes both pairs: GOT + TEN, and NOT + TRIP. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
+          explanation: "The letter T completes both pairs: MEAT + TRAP, and BOAT + TWIN. Tip: If no consonant works, try vowels — A, E, I, O, U can also be the answer. ✓"
         },
         {
           id: 21,
@@ -20335,18 +20335,18 @@ const vrData = {
         {
           id: 32,
           difficulty: 1,
-          question: "Find the letter that completes both pairs of words:\n\nHU ( ? ) AP\nBI ( ? ) OLD",
-          options: ["T","N","G","S","R"],
+          question: "Find the letter that completes both pairs of words:\n\nBRA ( ? ) LAD\nSWI ( ? ) OLD",
+          options: ["T","B","G","D","P"],
           correct: 2,
-          explanation: "The letter G completes both pairs: HUG + GAP, and BIG + GOLD. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
+          explanation: "The letter G completes both pairs: BRAG + GLAD, and SWIG + GOLD. Tip: Short fragments like SK_ or QU_ are very restrictive — start with those to narrow down quickly. ✓"
         },
         {
           id: 33,
           difficulty: 1,
-          question: "Find the letter that completes both pairs of words:\n\nHE ( ? ) AP\nPE ( ? ) ICE",
-          options: ["N","T","S","R","D"],
+          question: "Find the letter that completes both pairs of words:\n\nLEMO ( ? ) EAR\nDOW ( ? ) OON",
+          options: ["N","R","S","T","P"],
           correct: 0,
-          explanation: "The letter N completes both pairs: HEN + NAP, and PEN + NICE. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
+          explanation: "The letter N completes both pairs: LEMON + NEAR, and DOWN + NOON. Tip: Start with the most restrictive fragment — the one where fewest letters could possibly work. ✓"
         },
         {
           id: 34,
@@ -20447,10 +20447,10 @@ const vrData = {
         {
           id: 46,
           difficulty: 2,
-          question: "Find the letter that completes both pairs of words:\n\nGRI ( ? ) EAR\nCOR ( ? ) OSE",
-          options: ["N","S","T","R","D"],
+          question: "Find the letter that completes both pairs of words:\n\nCROW ( ? ) OISE\nBROW ( ? ) EEDLE",
+          options: ["N","D","T","R","S"],
           correct: 0,
-          explanation: "The letter N completes both pairs: GRIN + NEAR, and CORN + NOSE. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
+          explanation: "The letter N completes both pairs: CROWN + NOISE, and BROWN + NEEDLE. Tip: Look for common word endings (-ANK, -OOL, -EST) to help identify the starting letter of the right-hand word. ✓"
         },
         {
           id: 47,

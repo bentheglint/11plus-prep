@@ -10918,9 +10918,9 @@ export const lessonBank = {
                 questionFormat: "Which word goes after both 'note' and 'text'?",
                 targetAnswer: "book",
                 fullQuestion: "Which word combines with NOTE to make a compound word?",
-                options: ["book", "pad", "page", "paper", "case"],
+                options: ["book", "pen", "shelf", "tray", "stand"],
                 correctAnswer: "book",
-                explanation: "'Note' + 'book' = **notebook** — one real compound word! 'Notepad' is two words, not a compound. ✓",
+                explanation: "'Note' + 'book' = **notebook** — one real compound word! 'Notepen', 'noteshelf', 'notetray' and 'notestand' are not real words. ✓",
                 steps: [
                   "Say combinations: note+book = notebook? Yes! That's a real word",
                   "Spell it out: N-O-T-E-B-O-O-K — one word, correct spelling",

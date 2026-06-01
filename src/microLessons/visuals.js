@@ -4995,7 +4995,7 @@ export function PieChart({
 
   return (
     <div className="flex justify-center">
-      <svg role="img" aria-label="Pie chart" viewBox={`0 0 ${size} ${size}`} className="w-full" style={{ maxWidth: 340 }}>
+      <svg role="img" aria-label="Pie chart" viewBox={`0 0 ${size} ${size}`} className="w-full" style={{ maxWidth: 340, overflow: 'visible' }}>
         {slices.map((s, i) => {
           const start = arcPoint(s.startAngle, r);
           const end = arcPoint(s.startAngle + s.sweep, r);
