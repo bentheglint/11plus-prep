@@ -1924,8 +1924,8 @@ export const missingLettersWordsSubConcepts = [
           {
             name: "Jake",
             scenario: "working out the missing letters in his VR practice paper",
-            sentence: "Daisy felt very _ _ _ _ _ y when she opened her birthday present.",
-            templateWord: "_ _ _ _ _ Y",
+            sentence: "Daisy felt very _ _ _ _ y when she opened her birthday present.",
+            templateWord: "_ _ _ _ Y",
             missingLetters: "HAPP",
             completeWord: "HAPPY",
             wordMeaning: "feeling joyful and pleased",
@@ -2087,15 +2087,15 @@ export const missingLettersWordsSubConcepts = [
             options: ["ART","OPP","RAY","EAM","ILL"],
             correctAnswer: "ART",
             explanation: "Insert ART into STED: ST + ART + ED = STARTED. The pistol firing is the moment a race begins — so STARTED fits perfectly.",
-            interactCompressedWord: "BNING",
+            interactCompressedWord: "BING",
             interactFullWord: "BURNING",
             interactHiddenLetters: "URN",
-            interactInsertionPosition: "between B and NING",
-            interactSentence: "The small candle was BNING brightly in the window.",
+            interactInsertionPosition: "between B and ING",
+            interactSentence: "The small candle was BING brightly in the window.",
             interactWordMeaning: "on fire",
             interactOptions: ["URN","RIG","ENI","OWI","AKI"],
             interactCorrectAnswer: "URN",
-            interactExplanation: "Insert URN into BNING: B + URN + ING = BURNING. A candle with a flame is burning — the sentence gave it away."
+            interactExplanation: "Insert URN into BING: B + URN + ING = BURNING. A candle with a flame is burning — the sentence gave it away."
           },
           {
             name: "Priya",

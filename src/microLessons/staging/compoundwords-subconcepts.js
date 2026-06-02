@@ -1546,8 +1546,8 @@ export const compoundWordsSubConcepts = [
         id: "common-traps-steps",
         templateType: "step-by-step",
         learningGoal: [
-          "The sneaky imposters: words that LOOK like compounds but totally aren't (is 'carpet' really 'car' + 'pet'?!)",
-          "A quick meaning test that tells you if a compound is real or fake"
+          "Two kinds of real compounds: 'see-through' ones where the meaning is obvious (carpark, buttercup) AND 'hidden' ones where two words join to make a brand-new word (message, pigeon)",
+          "The real test GL uses: do two smaller words join letter-for-letter to make a real word?"
         ],
         variableSets: [
           {
@@ -1600,15 +1600,15 @@ export const compoundWordsSubConcepts = [
             fakeCompound: "manage",
             fakePart1: "man",
             fakePart2: "age",
-            whyFake: "'Manage' is NOT 'man' + 'age' — it doesn't mean a man's age! The meaning doesn't come from the two parts.",
+            whyFake: "'Manage' looks like 'man' + 'age', but it isn't built from two joined words — it comes from one root word (it has nothing to do with a man's age). Joining the letters here doesn't give a compound.",
             realCompound: "manhole",
             realPart1: "man",
             realPart2: "hole",
-            whyReal: "'Manhole' IS a real compound: 'man' + 'hole' — a hole for a person to access underground pipes",
+            whyReal: "'Manhole' IS a real compound: 'man' + 'hole' join to make a real word — a hole for a person to climb through. Some compounds hide their meaning (message = mess + age), but this one shows it clearly.",
             fullQuestion: "Which of these is a REAL compound word made from 'man' + another word?",
             options: ["manhole", "manage", "manner", "mango", "mandate"],
             correctAnswer: "manhole",
-            explanation: "'Man' + 'hole' = manhole — a hole big enough for a person. 'Manage' contains 'man' and 'age' but isn't a compound word. ✓",
+            explanation: "'Man' + 'hole' = manhole — two real words joined to make a real word. 'Manage' just contains the letters 'man' and 'age'; it isn't built by joining two words. Remember: some real compounds, like message (mess + age), don't reveal their meaning — the test is whether two words JOIN to make a real word. ✓",
             interactFakeCompound: "carpet",
             interactRealPart1: "car",
             interactFullQuestion: "Which of these is a REAL compound word made from 'car' + another word?",
@@ -1658,34 +1658,34 @@ export const compoundWordsSubConcepts = [
           },
           {
             type: "teach",
-            title: () => "The meaning test — your fake-detector",
-            body: (v) => `So is **"${v.fakeCompound}"** a real compound word? Here's the test: a REAL compound word's meaning comes from BOTH its parts. If the meaning doesn't connect to both halves, it's an imposter!`,
+            title: () => "The join test — your fake-detector",
+            body: (v) => `So is **"${v.fakeCompound}"** a real compound word? Here's the real test GL uses: a compound word is two smaller words JOINED letter-for-letter to make a real word. Sometimes the meaning is obvious (a carpark IS for cars), and sometimes it's hidden (a message is 'mess' + 'age', but means something brand new). What matters is the JOIN — does putting two real words together make a real word?`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
                 steps: [
-                  { text: `FAKE: "${v.fakeCompound}" ≠ "${v.fakePart1}" + "${v.fakePart2}"`, why: v.whyFake },
+                  { text: `LOOK-ALIKE: "${v.fakeCompound}" only seems to be "${v.fakePart1}" + "${v.fakePart2}"`, why: v.whyFake },
                   { text: `REAL: "${v.realCompound}" = "${v.realPart1}" + "${v.realPart2}"`, why: v.whyReal },
-                  { text: "Real compounds: meaning comes from BOTH parts", why: "A seashell IS a shell from the sea ✓" }
+                  { text: "Some compounds hide their meaning: message = mess + age, pigeon = pig + eon", why: "Still real compounds — two words joined to make a real word ✓" }
                 ],
                 allRevealed: true
               })
             },
             interaction: {
               type: "fill-blank",
-              sentence: (v) => `A real compound word gets its meaning from ____ of its parts`,
-              options: (v) => ["both", "one", "neither", "the longest"],
+              sentence: (v) => `A compound word is two smaller words ____ together to make a real word`,
+              options: (v) => ["joined", "spelled", "rhymed", "shortened"],
               correctIndex: (v) => 0,
               feedback: {
-                correct: (v) => `Yes! A real compound word's meaning comes from BOTH parts. ✓`,
-                incorrect: (v) => `Not quite — a real compound word's meaning must come from BOTH of its parts!`
+                correct: (v) => `Yes! A compound word is two smaller words joined together to make a real word — even if the meaning is hidden. ✓`,
+                incorrect: (v) => `Not quite — a compound word is two smaller words JOINED together to make a real word.`
               }
             }
           },
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `${v.interactFullQuestion}\n\nRemember: the meaning must come from BOTH parts!`,
+            body: (v) => `${v.interactFullQuestion}\n\nRemember: look for two real words that JOIN to make a real word — the meaning might be obvious OR hidden!`,
             visual: {
               component: "LetterTiles",
               props: (v) => ({
@@ -1710,14 +1710,14 @@ export const compoundWordsSubConcepts = [
           {
             type: "consolidate",
             title: () => "You can spot the fakes now!",
-            body: () => `Well done — you've got the fake-detecting superpower! Here's how it works:`,
+            body: () => `Well done — you've got the compound-detecting superpower! Here's how it works:`,
             visual: {
               component: "WorkedExample",
               props: () => ({
                 steps: [
-                  { text: "Real: seashell = shell from the sea", why: "Meaning comes from BOTH parts" },
-                  { text: "Fake: carpet ≠ car + pet", why: "Nothing to do with cars or pets!" },
-                  { text: "The meaning test: do both halves contribute?", why: "If not, it just looks like a compound ✓" }
+                  { text: "See-through compound: carpark = car + park", why: "Two words joined — and the meaning is obvious" },
+                  { text: "Hidden compound: message = mess + age", why: "Two words joined to make a real word — meaning is brand new, but it still counts!" },
+                  { text: "Look-alike (not a compound): carpet ≠ car + pet", why: "'Pet' joins on, but 'carpet' isn't built from two words — it's one root word" }
                 ],
                 allRevealed: true
               })

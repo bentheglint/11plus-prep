@@ -3635,7 +3635,7 @@ export const decimalsSubConcepts = [
           {
             type: "interact",
             title: () => "Your turn!",
-            body: (v) => `What is **${v.numA_str} \u00d7 ${v.numB_str}**?`,
+            body: (v) => `What is **${v.interactNumA_str} \u00d7 ${v.interactNumB_str}**?`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({

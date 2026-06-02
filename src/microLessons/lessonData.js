@@ -12122,18 +12122,18 @@ export const lessonBank = {
               {
                 name: "Ben",
                 scenario: "working on shared-letter questions",
-                words: ["_OAT", "_OLD", "_OAL"],
-                sharedLetter: "G",
-                completedWords: ["GOAT", "GOLD", "GOAL"],
-                restrictiveWord: "_OAL",
-                restrictiveReason: "only G, C and F make real words (GOAL, COAL, FOAL)",
-                options: ["G", "B", "C", "F", "M"],
-                correctAnswer: "G",
-                explanation: "The letter **G** completes all three: GOAT, GOLD, GOAL. C gives COAT, COLD, COAL — but COAT, COLD, COAL all work too! However G is the intended answer as GOAT is clearer. ✓",
+                words: ["_NAP", "_LIP", "_TOP"],
+                sharedLetter: "S",
+                completedWords: ["SNAP", "SLIP", "STOP"],
+                restrictiveWord: "_NAP",
+                restrictiveReason: "_NAP is very restrictive — SNAP is really the only common word that fits, which points straight to S.",
+                options: ["S", "C", "F", "T", "G"],
+                correctAnswer: "S",
+                explanation: "The letter **S** completes all three: SNAP, SLIP, STOP. C gives CLIP but not CNAP; F gives FLIP but not FNAP — only S makes a real word for ALL three. ✓",
                 steps: [
-                  "Find the restrictive word: _OAL has fewer options (GOAL, COAL, FOAL)",
-                  "List candidates for all: G→GOAT/GOLD/GOAL, C→COAT/COLD/COAL",
-                  "Test G on ALL: GOAT ✓, GOLD ✓, GOAL ✓ — G works!"
+                  "Find the restrictive word: _NAP has the fewest options — SNAP is really the only one",
+                  "That points to S — now test S on the others: S→SNAP/SLIP/STOP",
+                  "Check S on ALL three: SNAP ✓, SLIP ✓, STOP ✓ — S works everywhere!"
                 ]
               },
               {

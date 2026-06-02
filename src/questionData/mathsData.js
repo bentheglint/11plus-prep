@@ -9120,7 +9120,7 @@ fractions: {
     {
       id: 179,
       difficulty: 3,
-      question: "What is 2 2/3 + 1 5/6?",
+      question: "What is 2 and 2/3 + 1 and 5/6?",
       options: ["4 1/2", "3 7/9", "4", "4 1/6", "3 1/2"],
       correct: 0,
       explanation: "Convert to sixths: 2 2/3 = 2 4/6. Now add: whole numbers 2 + 1 = 3, and fractions 4/6 + 5/6 = 9/6. 9/6 is an improper fraction — 6/6 makes one whole, leaving 3/6 = 1/2, so 9/6 = 1 1/2. Total: 3 + 1 1/2 = 4 1/2. ✓"

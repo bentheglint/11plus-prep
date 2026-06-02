@@ -4001,7 +4001,7 @@ const vrData = {
           question: "Find the two words that are the odd ones out.",
           options: ["table","chair","lamp","sofa","wardrobe"],
           correctPair: [2,4],
-          explanation: "Table, chair, and sofa are all items you would find in a living room or dining room. A lamp provides light and a wardrobe stores clothes in a bedroom — so lamp and wardrobe are the two odd ones out. ✓"
+          explanation: "Table, chair, and sofa are all furniture you use while sitting down — you sit on a chair or sofa, and sit at a table. A lamp gives light and a wardrobe stores clothes, so neither is for sitting — they are the two odd ones out. Tip: Name the link as exactly as you can — 'furniture for sitting' is sharper than just 'furniture'. ✓"
         },
         {
           id: 3,
@@ -16725,10 +16725,10 @@ const vrData = {
         {
           id: 116,
           difficulty: 2,
-          question: "Complete the third pair in the same way: (TEAM, MEAT) (PART, TRAP) (SNIP, ___)",
+          question: "Complete the third pair in the same way: (STAR, RATS) (PART, TRAP) (SNIP, ___)",
           options: ["PENS","SPIN","NIPS","PINS","SNIP"],
           correct: 3,
-          explanation: "The pattern reverses the word: TEAM→MEAT, PART→TRAP, SNIP→PINS. Tip: Check your answer by applying the rule backwards — does it produce the original code? ✓"
+          explanation: "The pattern reverses the word: STAR→RATS, PART→TRAP, SNIP→PINS. Tip: Check your answer by applying the rule backwards — does it produce the original word? ✓"
         },
         {
           id: 117,
