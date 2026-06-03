@@ -4717,7 +4717,7 @@ export const decimalsSubConcepts = [
         ]
       }
     ]
-  }
+  },
 
   // ==========================================
   // SUB-CONCEPT: Mixed Units Arithmetic
