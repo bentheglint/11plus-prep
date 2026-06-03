@@ -13522,6 +13522,246 @@ algebra: {
             options: ["Yes, the 15th", "Yes, the 17th", "Yes, the 16th", "No, not in the sequence", "Yes, the 18th"],
             correct: 1,
             explanation: "nth term = 7n + 1. 7n + 1 = 120. 7n = 119. n = 17. Yes, 17th term. ✓"
+          },
+          {
+            id: 253,
+            difficulty: 1,
+            question: "A shop sells stickers for 20p each. Write an expression for the cost, in pence, of buying s stickers.",
+            options: ["s + 20", "20s", "s − 20", "20 + s", "s ÷ 20"],
+            correct: 1,
+            explanation: "Each sticker costs 20p, so s stickers cost 20 × s = 20s pence. The changing part is s (how many stickers), and the rate is 20p each. ✓"
+          },
+          {
+            id: 254,
+            difficulty: 1,
+            question: "A pencil costs 15p. Write an expression for the total cost of buying n pencils.",
+            options: ["15 + n", "n ÷ 15", "15n", "n − 15", "15 − n"],
+            correct: 2,
+            explanation: "Each pencil costs 15p. To find the cost of n pencils, multiply: 15 × n = 15n pence. ✓"
+          },
+          {
+            id: 255,
+            difficulty: 1,
+            question: "Tom has 8 apples. He buys p more apples. Write an expression for the total number of apples he has.",
+            options: ["8p", "8 + p", "p − 8", "p ÷ 8", "8 − p"],
+            correct: 1,
+            explanation: "Tom starts with 8 apples and buys p more. The total is 8 + p apples. The fixed part is 8, the changing part is p. ✓"
+          },
+          {
+            id: 256,
+            difficulty: 1,
+            question: "Sarah drinks 250 ml of milk each day. Write an expression for the total amount she drinks in d days.",
+            options: ["250 + d", "d ÷ 250", "250d", "250 − d", "d − 250"],
+            correct: 2,
+            explanation: "Each day she drinks 250 ml. Over d days, that is 250 × d = 250d ml. The rate is 250 ml per day, and d is the number of days. ✓"
+          },
+          {
+            id: 257,
+            difficulty: 1,
+            question: "A DVD costs £7. Write an expression for the cost of buying w DVDs.",
+            options: ["7w", "w + 7", "w − 7", "7 + w", "7 ÷ w"],
+            correct: 0,
+            explanation: "Each DVD costs £7. The cost of w DVDs is 7 × w = 7w pounds. ✓"
+          },
+          {
+            id: 258,
+            difficulty: 1,
+            question: "A notebook has 50 blank pages. After writing on c pages, how many blank pages remain? Write an expression.",
+            options: ["c − 50", "50 + c", "50c", "50 − c", "c + 50"],
+            correct: 3,
+            explanation: "Starting with 50 blank pages, after using c of them, the number remaining is 50 − c. ✓"
+          },
+          {
+            id: 259,
+            difficulty: 1,
+            question: "A bottle contains 2 litres of water. Write an expression for the amount of water in m bottles.",
+            options: ["2 + m", "m − 2", "2m", "2 − m", "m ÷ 2"],
+            correct: 2,
+            explanation: "Each bottle holds 2 litres. m bottles hold 2 × m = 2m litres. ✓"
+          },
+          {
+            id: 260,
+            difficulty: 1,
+            question: "A recipe uses 3 eggs. Write an expression for the number of eggs needed to make the recipe t times.",
+            options: ["3 + t", "3t", "t − 3", "3 − t", "t ÷ 3"],
+            correct: 1,
+            explanation: "Each time you make the recipe, you use 3 eggs. For t batches, that is 3 × t = 3t eggs. ✓"
+          },
+          {
+            id: 261,
+            difficulty: 1,
+            question: "A bus holds 40 passengers. Write an expression for how many passengers are on b full buses.",
+            options: ["40 + b", "b − 40", "40b", "40 − b", "b ÷ 40"],
+            correct: 2,
+            explanation: "Each bus holds 40 passengers. b buses hold 40 × b = 40b passengers in total. ✓"
+          },
+          {
+            id: 262,
+            difficulty: 1,
+            question: "A child has £5. Write an expression for how much money remains after spending £k.",
+            options: ["5 + k", "5k", "5 − k", "k − 5", "5 ÷ k"],
+            correct: 2,
+            explanation: "Starting with £5, after spending £k, the child has 5 − k pounds left. The fixed part is £5, the changing part is k. ✓"
+          },
+          {
+            id: 263,
+            difficulty: 2,
+            question: "A plumber charges a call-out fee of £30 plus £25 per hour. Write an expression for the total cost for h hours of work.",
+            options: ["30h + 25", "55h", "30 + 25h", "h + 55", "30h − 25"],
+            correct: 2,
+            explanation: "The fixed call-out fee is £30. The charge per hour is £25, so for h hours that is 25h. The total cost is 30 + 25h pounds. ✓"
+          },
+          {
+            id: 264,
+            difficulty: 2,
+            question: "A taxi charges £2 per mile plus a starting fee of £3. Write an expression for the total fare for m miles.",
+            options: ["2m + 3", "3m + 2", "5m", "2 + 3m", "m + 5"],
+            correct: 0,
+            explanation: "The fixed starting fee is £3. The charge per mile is £2, so for m miles that is 2m. The total fare is 2m + 3 pounds. ✓"
+          },
+          {
+            id: 265,
+            difficulty: 2,
+            question: "A mobile phone contract costs £15 per month plus £0.10 per text message sent. Write an expression for the monthly cost if t texts are sent.",
+            options: ["15 + 0.1t", "15t + 0.1", "0.1m + 15", "15.1t", "0.1 + 15t"],
+            correct: 0,
+            explanation: "The fixed monthly charge is £15. Each text costs £0.10, so t texts cost 0.1t pounds. The total monthly cost is 15 + 0.1t pounds. ✓"
+          },
+          {
+            id: 266,
+            difficulty: 2,
+            question: "A box of chocolates costs £2, and gift wrap costs £0.50. Write the simplified expression for the total cost of buying b boxes where each box is wrapped.",
+            options: ["2b + 0.5b", "2.5b", "2b + 0.5", "3b", "2b − 0.5"],
+            correct: 1,
+            explanation: "Each box costs £2 and its wrap costs £0.50, so each wrapped box costs £2.50. For b boxes, the simplified total is 2.5b pounds. ✓"
+          },
+          {
+            id: 267,
+            difficulty: 2,
+            question: "A baker starts with 120 biscuits. She sells b biscuits. Write an expression for how many biscuits remain.",
+            options: ["b − 120", "120 + b", "120 − b", "120b", "b + 120"],
+            correct: 2,
+            explanation: "Starting with 120 biscuits, after selling b of them, she has 120 − b biscuits left. ✓"
+          },
+          {
+            id: 268,
+            difficulty: 2,
+            question: "A water tank starts full at 500 litres. A leak drains 3 litres per day. Write an expression for the amount of water after d days.",
+            options: ["500 − 3d", "500 + 3d", "500d − 3", "3d − 500", "500 − d ÷ 3"],
+            correct: 0,
+            explanation: "The tank starts with 500 litres. Each day 3 litres are lost, so after d days, 3d litres have drained. The amount remaining is 500 − 3d litres. ✓"
+          },
+          {
+            id: 269,
+            difficulty: 2,
+            question: "A car's fuel tank holds 60 litres. It uses 8 litres per 100 km. Write an expression for the fuel remaining after driving x km.",
+            options: ["60 − 8x", "60 − 0.08x", "60x − 8", "60 + 8x", "8 − 60x"],
+            correct: 1,
+            explanation: "The tank holds 60 litres. The car uses 8 litres per 100 km, which is 0.08 litres per km. After x km it has used 0.08x litres. Fuel remaining: 60 − 0.08x litres. ✓"
+          },
+          {
+            id: 270,
+            difficulty: 2,
+            question: "A subscription costs £5 per month plus a one-time setup fee of £10. Write an expression for the total cost after m months.",
+            options: ["5m + 10", "5m − 10", "5 + 10m", "15m", "10m + 5"],
+            correct: 0,
+            explanation: "The monthly cost is £5, so for m months that is 5m. The one-time setup fee is £10. Total cost: 5m + 10 pounds. ✓"
+          },
+          {
+            id: 271,
+            difficulty: 2,
+            question: "A pattern uses 3 red beads and 2 blue beads. Write an expression for the total number of beads if the pattern is repeated n times.",
+            options: ["3n + 2", "5n", "3 + 2n", "6n", "n + 5"],
+            correct: 1,
+            explanation: "Each pattern repeat has 3 + 2 = 5 beads. When repeated n times, the total is 5 × n = 5n beads. ✓"
+          },
+          {
+            id: 272,
+            difficulty: 2,
+            question: "A shop sells notebooks at £1.20 each with a £0.10 discount per notebook for bulk orders. Write an expression for the bulk cost of k notebooks.",
+            options: ["1.2k − 0.1", "1.1k", "1.2 − 0.1k", "1.2k + 0.1k", "0.1k + 1.2"],
+            correct: 1,
+            explanation: "Each notebook costs £1.20 minus a £0.10 discount, so £1.10 each. For k notebooks, the total is 1.1k pounds. ✓"
+          },
+          {
+            id: 273,
+            difficulty: 3,
+            question: "A rectangle's length is 3 cm more than its width. If the width is w cm, write an expression for the perimeter.",
+            options: ["4w + 6", "2w + 6", "2w + 3", "w + 3", "3w + 2"],
+            correct: 0,
+            explanation: "Width = w cm, length = (w + 3) cm. Perimeter = 2 × width + 2 × length = 2w + 2(w + 3) = 2w + 2w + 6 = 4w + 6 cm. ✓"
+          },
+          {
+            id: 274,
+            difficulty: 3,
+            question: "A two-digit number has a tens digit of t and a units digit of 5. Write an expression for the value of the number.",
+            options: ["t + 5", "5t + 10", "10t + 5", "t × 5", "10 + 5t"],
+            correct: 2,
+            explanation: "The tens digit t represents 10t, and the units digit 5 represents 5. The value of the number is 10t + 5. ✓"
+          },
+          {
+            id: 275,
+            difficulty: 3,
+            question: "A sweet costs p pence. A drink costs 3p pence (three times the price of a sweet). Write the simplified expression for the total cost of buying 2 sweets and 4 drinks.",
+            options: ["5p", "6p", "12p", "14p", "24p"],
+            correct: 3,
+            explanation: "2 sweets cost 2 × p = 2p pence. 4 drinks cost 4 × 3p = 12p pence. The total is 2p + 12p = 14p pence. ✓"
+          },
+          {
+            id: 276,
+            difficulty: 3,
+            question: "A garden is 2 metres wide and (2m + 5) metres long. Write the simplified expression for the area.",
+            options: ["4m + 10", "2m + 5", "4m + 20", "2(2m + 5)", "6m + 5"],
+            correct: 0,
+            explanation: "Area = width × length = 2 × (2m + 5) = 4m + 10 square metres. ✓"
+          },
+          {
+            id: 277,
+            difficulty: 3,
+            question: "A shop sells mugs at £m each and plates at £(m − 0.50) each. Write the simplified expression for the total cost of buying 3 mugs and 5 plates.",
+            options: ["8m − 2.5", "3m + 5(m − 0.5)", "3m − 5m", "8m − 5", "6m + 5m − 0.5"],
+            correct: 0,
+            explanation: "3 mugs cost 3m. 5 plates cost 5 × (m − 0.50) = 5m − 2.5. Total: 3m + 5m − 2.5 = 8m − 2.5 pounds. ✓"
+          },
+          {
+            id: 278,
+            difficulty: 3,
+            question: "Two consecutive numbers are n and (n + 1). Write an expression for their sum.",
+            options: ["n + 1", "2n + 1", "2n", "n(n + 1)", "2n − 1"],
+            correct: 1,
+            explanation: "The sum of n and (n + 1) is n + n + 1 = 2n + 1. ✓"
+          },
+          {
+            id: 279,
+            difficulty: 3,
+            question: "A pizza costs £(8 + 2t) where t is the number of toppings. Write the simplified expression for the cost of buying 2 pizzas with the same number of toppings.",
+            options: ["16 + 4t", "10 + 2t", "8 + 4t", "2(8 + 2t)", "16 + 2t"],
+            correct: 0,
+            explanation: "Each pizza costs £(8 + 2t). Two pizzas cost 2 × (8 + 2t) = 16 + 4t pounds. ✓"
+          },
+          {
+            id: 280,
+            difficulty: 3,
+            question: "A recipe calls for 2c cups of flour and (c − 1) cups of sugar. Write an expression for the total cups of dry ingredients.",
+            options: ["2c + c − 1", "3c − 1", "2c − 1", "c + 1", "2c + c"],
+            correct: 1,
+            explanation: "Total = 2c + (c − 1) = 2c + c − 1 = 3c − 1 cups. ✓"
+          },
+          {
+            id: 281,
+            difficulty: 3,
+            question: "A school buys h hectares of land at £15,000 per hectare, then spends an additional £50,000 on buildings. Write an expression for the total cost.",
+            options: ["15000h + 50000", "15000 + 50000h", "65000h", "65000 + h", "15000h − 50000"],
+            correct: 0,
+            explanation: "Land cost: 15000h pounds. Building cost: £50,000 (fixed). Total: 15000h + 50000 pounds. ✓"
+          },
+          {
+            id: 282,
+            difficulty: 3,
+            question: "A youth group has y members. Each member pays a membership fee of £(20 + n) where n is a variable activity cost. Write an expression for the total money collected.",
+            options: ["y(20 + n)", "20y + n", "20n + y", "20 + yn", "yn + 20"],
+            correct: 0,
+            explanation: "Each of the y members pays £(20 + n). The total collected is y × (20 + n) = y(20 + n) pounds. ✓"
           }
         ]
 }

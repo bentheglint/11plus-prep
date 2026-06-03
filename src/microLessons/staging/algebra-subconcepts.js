@@ -2163,5 +2163,163 @@ export const algebraSubConcepts = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // SUB-CONCEPT: Building Expressions from Stories
+  // Category: core
+  // Lesson: step-by-step
+  // ==========================================
+  {
+    id: "expression-construction",
+    name: "Building Expressions from Stories",
+    category: "core",
+    lessons: [
+      {
+        id: "expression-construction-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to translate a real-world story into an algebraic expression",
+          "How to spot the fixed part and the changing part in any scenario"
+        ],
+        variableSets: [
+          {
+            name: "Oliver",
+            scenario: "reading a taxi fare problem",
+            teachQ: "A taxi charges £3 flat rate plus 80p per mile. What is the total cost for d miles?",
+            teachConvert: "Fixed part: £3 (flat rate, never changes)",
+            teachCalc: "Changing part: 80p per mile = £0.8 per mile, so 0.8 × d = 0.8d",
+            teachAnswer: "3 + 0.8d",
+            interactQ: "Alice saves £2 from her pocket money every week. She already has £5. Write an expression for her total savings after w weeks.",
+            interactHint: "What is fixed (her starting amount) and what is changing (how much she adds each week)?",
+            interactOptions: ["5w + 2", "5 + 2w", "2w", "7w", "2 + 5w"],
+            interactCorrectAnswer: "5 + 2w",
+            interactExplanation: "The fixed part is £5 (she already has it). Each week adds £2, so after w weeks that is 2w. Together: **5 + 2w**. ✓",
+            interactFeedbackWrong: "The fixed part is £5 (her starting savings). Each week she adds £2 = 2w. So the expression is 5 + 2w."
+          },
+          {
+            name: "Daisy",
+            scenario: "solving a biscuit jar problem",
+            teachQ: "A jar has 30 biscuits. Each day 2 are eaten. Write an expression for how many are left after d days.",
+            teachConvert: "Fixed part: 30 (the starting amount)",
+            teachCalc: "Changing part: 2 eaten per day, so after d days, 2d have been eaten",
+            teachAnswer: "30 − 2d",
+            interactQ: "A water tank starts full at 50 litres. It loses 3 litres every hour. Write an expression for the water remaining after h hours.",
+            interactHint: "What is the starting amount, and how much is being lost each hour?",
+            interactOptions: ["50h − 3", "50 − 3h", "3h − 50", "47h", "50 − h"],
+            interactCorrectAnswer: "50 − 3h",
+            interactExplanation: "The fixed part is 50 litres (starting amount). Each hour, 3 litres are lost = 3h. Remaining: **50 − 3h**. ✓",
+            interactFeedbackWrong: "Start with 50 litres (fixed). Each hour removes 3 litres = 3h total. So the expression is 50 − 3h."
+          },
+          {
+            name: "Priya",
+            scenario: "working out an age puzzle",
+            teachQ: "Finn is f years old. His dad is 3 times Finn's age plus 2 more years. Write an expression for Dad's age.",
+            teachConvert: "Changing part: 3 times Finn's age = 3f",
+            teachCalc: "Fixed part: plus 2 extra years",
+            teachAnswer: "3f + 2",
+            interactQ: "A shop sells notebooks for £2 each and pencils for 50p each. Amira buys n notebooks and p pencils. Write an expression for her total spend in pounds.",
+            interactHint: "Two items, two variables — find the cost of each and add them together.",
+            interactOptions: ["2n + p", "2 + 0.5p", "2n + 0.5p", "2.5(n + p)", "n + p"],
+            interactCorrectAnswer: "2n + 0.5p",
+            interactExplanation: "n notebooks at £2 each = 2n. p pencils at 50p = £0.50 each = 0.5p. Together: **2n + 0.5p**. ✓",
+            interactFeedbackWrong: "n notebooks at £2 = 2n pounds. p pencils at £0.50 = 0.5p pounds. Total: 2n + 0.5p."
+          },
+          {
+            name: "Ethan",
+            scenario: "stacking cards in a tower",
+            teachQ: "Identical cards are stacked. The first card is 1 cm tall. Each extra card adds 0.5 cm because they overlap. Write the simplified expression for the height of s stacked cards.",
+            teachConvert: "First card: 1 cm (fixed base)",
+            teachCalc: "Each extra card adds 0.5 cm, so (s − 1) extra cards add 0.5(s − 1). Simplified: 0.5s + 0.5",
+            teachAnswer: "0.5s + 0.5",
+            interactQ: "Tom is t years old. His gran is 4 times Tom's age minus 3 years. Write an expression for Gran's age.",
+            interactHint: "Start with 4 times Tom's age, then adjust.",
+            interactOptions: ["t − 3", "4 + t − 3", "4(t − 3)", "4t − 3", "4t + 3"],
+            interactCorrectAnswer: "4t − 3",
+            interactExplanation: "4 times Tom's age = 4t. Then subtract 3 years. Gran's age: **4t − 3**. ✓",
+            interactFeedbackWrong: "4 times Tom's age is 4t. Subtract 3 years gives 4t − 3."
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "Can you write the maths for this story?",
+            body: () => `A taxi charges **£3 flat rate** plus **80p per mile**.\n\nYou need to write an **expression** for the total cost in pounds for any number of miles. Don't calculate it for a specific journey — write what the maths would be for **any** number of miles.\n\nThat's the algebra challenge — turning a real-world story into a maths expression!`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "Fixed part: £3 (the flat rate — always the same)", why: "This is just the number 3" },
+                  { text: "Changing part: 80p per mile = £0.8 × d miles = 0.8d", why: "This changes depending on how far you travel" },
+                  { text: "Expression: 3 + 0.8d", why: "Fixed + changing = the full story in algebra ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Fixed part + changing part",
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**${v.teachQ}**\n\nEvery expression-building problem has two parts: the **fixed part** (a number that never changes) and the **changing part** (a rate × a variable). Find both, then write them together.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: v.teachConvert, why: "The fixed part is always just a number" },
+                  { text: v.teachCalc, why: "The changing part = rate × variable" },
+                  { text: `Expression: ${v.teachAnswer}`, why: "Write them together ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: () => [
+                "Identify the fixed part — the number that never changes",
+                "Identify the changing part — the rate multiplied by the variable",
+                "Write them together as the expression"
+              ],
+              feedback: {
+                correct: () => "Perfect! Fixed part, then changing part — that is the recipe every time. ✓",
+                incorrect: () => "Almost! Always find the fixed part first, then the changing part, then combine them."
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `${v.interactQ}\n\n*(Hint: ${v.interactHint})*`,
+            visual: null,
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! ${v.interactFeedbackWrong} ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "The three-step recipe for any expression",
+            body: () => "It doesn't matter if it's a taxi, a biscuit jar, or an age puzzle — the same three steps work every time.",
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Spot the fixed part — the number that never changes", why: "Flat rate, starting amount, base price" },
+                  { text: "2. Spot the changing part — the rate × the variable", why: "Per mile, per day, per item — multiply by the letter" },
+                  { text: "3. Write them together: fixed + (rate × variable), or fixed − (rate × variable) if things are decreasing", why: "That is your expression ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
   }
 ];

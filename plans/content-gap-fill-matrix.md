@@ -66,7 +66,7 @@ Oracle has confirmed: 40 questions, D1/D2/D3 spread, covering simple balance, tw
 | # | Gap ID | Topic key | Baseline ceiling | Next ID | New sub-concept ID | Existing reuse? | Staging file? | Diagram? | Q count | Done? |
 |---|--------|-----------|------------------|---------|--------------------|-----------------|---------------|----------|---------|-------|
 | 2.1 | M1 Multi-unit arithmetic | `decimals` | 223 | 224 | `multi-unit-arithmetic` | No | Yes | No | 30 | [x] commit pending |
-| 2.2 | M2 Algebraic expression construction | `algebra` | 252 | 253 | `expression-construction` | Partial — `writing-expressions` exists; M2 is more complex construction | Yes | No | 30 | [ ] |
+| 2.2 | M2 Algebraic expression construction | `algebra` | 252 | 253 | `expression-construction` | Partial — `writing-expressions` exists; M2 is more complex construction | Yes | No | 30 | [x] commit pending |
 | 2.3 | M6 Reverse-operation puzzles | `algebra` | 282* | 283* | Reuse `inverse-operations` | **YES** — `inverse-operations` + `inverse-ops-mistake` cover this; map new questions to existing SC | Yes | No | 30 | [ ] |
 | 2.4 | M11 Nth-term expressions | `sequences` | 152 | 153 | Reuse `find-nth-term` | **YES** — `find-nth-term` + `nth-term-steps` exist; confirm expression-format questions covered | Yes | No | 30 | [ ] |
 | 2.5 | M12 Triangular/square sequences | `sequences` | 182* | 183* | Reuse `special-sequences` | **YES** — `special-sequences` + `special-visual` exist; audit that triangular + square patterns are covered | Yes | No | 30 | [ ] |
