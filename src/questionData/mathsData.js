@@ -13762,6 +13762,246 @@ algebra: {
             options: ["y(20 + n)", "20y + n", "20n + y", "20 + yn", "yn + 20"],
             correct: 0,
             explanation: "Each of the y members pays £(20 + n). The total collected is y × (20 + n) = y(20 + n) pounds. ✓"
+          },
+          {
+            id: 283,
+            difficulty: 1,
+            question: "Ruby thinks of a number. She adds 5, then adds 8. She gets 19. What was her number?",
+            options: ["4", "6", "8", "10", "12"],
+            correct: 1,
+            explanation: "Work backwards: 19 − 8 = 11, then 11 − 5 = 6. The starting number was 6. Check: 6 + 5 = 11, 11 + 8 = 19. ✓"
+          },
+          {
+            id: 284,
+            difficulty: 1,
+            question: "Marcus thinks of a number. He multiplies it by 3. He gets 18. What was his number?",
+            options: ["3", "4", "5", "6", "7"],
+            correct: 3,
+            explanation: "Work backwards: 18 ÷ 3 = 6. The starting number was 6. Check: 6 × 3 = 18. ✓"
+          },
+          {
+            id: 285,
+            difficulty: 1,
+            question: "Priya thinks of a number. She subtracts 4, then subtracts 3. She gets 7. What was her number?",
+            options: ["10", "12", "14", "16", "18"],
+            correct: 2,
+            explanation: "Work backwards: 7 + 3 = 10, then 10 + 4 = 14. The starting number was 14. Check: 14 − 4 = 10, 10 − 3 = 7. ✓"
+          },
+          {
+            id: 286,
+            difficulty: 1,
+            question: "Kal thinks of a number. He doubles it. He gets 16. What was his number?",
+            options: ["4", "6", "8", "10", "12"],
+            correct: 2,
+            explanation: "Work backwards: 16 ÷ 2 = 8. The starting number was 8. Check: 8 × 2 = 16. ✓"
+          },
+          {
+            id: 287,
+            difficulty: 1,
+            question: "Yasmin thinks of a number. She multiplies it by 5, then adds 2. She gets 27. What was her number?",
+            options: ["3", "4", "5", "6", "7"],
+            correct: 2,
+            explanation: "Work backwards: 27 − 2 = 25, then 25 ÷ 5 = 5. The starting number was 5. Check: 5 × 5 = 25, 25 + 2 = 27. ✓"
+          },
+          {
+            id: 288,
+            difficulty: 1,
+            question: "Diego thinks of a number. He adds 6, then multiplies by 2. He gets 24. What was his number?",
+            options: ["3", "4", "5", "6", "8"],
+            correct: 3,
+            explanation: "Work backwards: 24 ÷ 2 = 12, then 12 − 6 = 6. The starting number was 6. Check: 6 + 6 = 12, 12 × 2 = 24. ✓"
+          },
+          {
+            id: 289,
+            difficulty: 1,
+            question: "Tanya thinks of a number. She multiplies it by 4, then subtracts 5. She gets 15. What was her number?",
+            options: ["3", "4", "5", "6", "7"],
+            correct: 2,
+            explanation: "Work backwards: 15 + 5 = 20, then 20 ÷ 4 = 5. The starting number was 5. Check: 5 × 4 = 20, 20 − 5 = 15. ✓"
+          },
+          {
+            id: 290,
+            difficulty: 1,
+            question: "Connor thinks of a number. He divides it by 2, then adds 7. He gets 15. What was his number?",
+            options: ["12", "14", "16", "18", "20"],
+            correct: 2,
+            explanation: "Work backwards: 15 − 7 = 8, then 8 × 2 = 16. The starting number was 16. Check: 16 ÷ 2 = 8, 8 + 7 = 15. ✓"
+          },
+          {
+            id: 291,
+            difficulty: 1,
+            question: "Sofia thinks of a number. She subtracts 3, then multiplies by 4. She gets 28. What was her number?",
+            options: ["4", "5", "7", "8", "10"],
+            correct: 4,
+            explanation: "Work backwards: 28 ÷ 4 = 7, then 7 + 3 = 10. The starting number was 10. Check: 10 − 3 = 7, 7 × 4 = 28. ✓"
+          },
+          {
+            id: 292,
+            difficulty: 1,
+            question: "Amrit thinks of a number. He adds 2, then doubles it. He gets 20. What was his number?",
+            options: ["6", "7", "8", "9", "10"],
+            correct: 2,
+            explanation: "Work backwards: 20 ÷ 2 = 10, then 10 − 2 = 8. The starting number was 8. Check: 8 + 2 = 10, 10 × 2 = 20. ✓"
+          },
+          {
+            id: 293,
+            difficulty: 2,
+            question: "Bethany thinks of a number. She adds 4, multiplies by 3, then adds 6. She gets 36. What was her number?",
+            options: ["2", "3", "4", "5", "6"],
+            correct: 4,
+            explanation: "Work backwards: 36 − 6 = 30, then 30 ÷ 3 = 10, then 10 − 4 = 6. The starting number was 6. Check: 6 + 4 = 10, 10 × 3 = 30, 30 + 6 = 36. ✓"
+          },
+          {
+            id: 294,
+            difficulty: 2,
+            question: "Leo thinks of a number. He multiplies it by 2, adds 7, then multiplies by 2. He gets 38. What was his number?",
+            options: ["3", "4", "5", "6", "7"],
+            correct: 3,
+            explanation: "Work backwards: 38 ÷ 2 = 19, then 19 − 7 = 12, then 12 ÷ 2 = 6. The starting number was 6. Check: 6 × 2 = 12, 12 + 7 = 19, 19 × 2 = 38. ✓"
+          },
+          {
+            id: 295,
+            difficulty: 2,
+            question: "Harper thinks of a number. She subtracts 2, multiplies by 5, then subtracts 4. She gets 26. What was her number?",
+            options: ["4", "5", "6", "7", "8"],
+            correct: 4,
+            explanation: "Work backwards: 26 + 4 = 30, then 30 ÷ 5 = 6, then 6 + 2 = 8. The starting number was 8. Check: 8 − 2 = 6, 6 × 5 = 30, 30 − 4 = 26. ✓"
+          },
+          {
+            id: 296,
+            difficulty: 2,
+            question: "Sarah thinks of a number. She subtracts 3, then multiplies by 5. She gets 15. What was her number?",
+            options: ["3", "5", "6", "9", "12"],
+            correct: 2,
+            explanation: "Work backwards: 15 ÷ 5 = 3, then 3 + 3 = 6. The starting number was 6. Check: 6 − 3 = 3, 3 × 5 = 15. ✓"
+          },
+          {
+            id: 297,
+            difficulty: 2,
+            question: "Sienna thinks of a number. She multiplies it by 3, subtracts 6, then adds 9. She gets 24. What was her number?",
+            options: ["5", "6", "7", "8", "9"],
+            correct: 2,
+            explanation: "Work backwards: 24 − 9 = 15, then 15 + 6 = 21, then 21 ÷ 3 = 7. The starting number was 7. Check: 7 × 3 = 21, 21 − 6 = 15, 15 + 9 = 24. ✓"
+          },
+          {
+            id: 298,
+            difficulty: 2,
+            question: "Ezra thinks of a number. He adds 5, divides by 3, then multiplies by 2. He gets 16. What was his number?",
+            options: ["16", "17", "18", "19", "20"],
+            correct: 3,
+            explanation: "Work backwards: 16 ÷ 2 = 8, then 8 × 3 = 24, then 24 − 5 = 19. The starting number was 19. Check: 19 + 5 = 24, 24 ÷ 3 = 8, 8 × 2 = 16. ✓"
+          },
+          {
+            id: 299,
+            difficulty: 2,
+            question: "Nia thinks of a number. She divides it by 4, adds 3, then multiplies by 5. She gets 50. What was her number?",
+            options: ["20", "24", "28", "32", "36"],
+            correct: 2,
+            explanation: "Work backwards: 50 ÷ 5 = 10, then 10 − 3 = 7, then 7 × 4 = 28. The starting number was 28. Check: 28 ÷ 4 = 7, 7 + 3 = 10, 10 × 5 = 50. ✓"
+          },
+          {
+            id: 300,
+            difficulty: 2,
+            question: "Jonas thinks of a number. He subtracts 4, multiplies by 2, then subtracts 3. He gets 21. What was his number?",
+            options: ["13", "14", "15", "16", "17"],
+            correct: 3,
+            explanation: "Work backwards: 21 + 3 = 24, then 24 ÷ 2 = 12, then 12 + 4 = 16. The starting number was 16. Check: 16 − 4 = 12, 12 × 2 = 24, 24 − 3 = 21. ✓"
+          },
+          {
+            id: 301,
+            difficulty: 2,
+            question: "Nora thinks of a number. She multiplies it by 4, adds 8, then divides by 2. She gets 20. What was her number?",
+            options: ["6", "8", "10", "12", "14"],
+            correct: 1,
+            explanation: "Work backwards: 20 × 2 = 40, then 40 − 8 = 32, then 32 ÷ 4 = 8. The starting number was 8. Check: 8 × 4 = 32, 32 + 8 = 40, 40 ÷ 2 = 20. ✓"
+          },
+          {
+            id: 302,
+            difficulty: 2,
+            question: "Kai thinks of a number. He adds 3, multiplies by 2, then adds 10. He gets 30. What was his number?",
+            options: ["4", "5", "6", "7", "8"],
+            correct: 3,
+            explanation: "Work backwards: 30 − 10 = 20, then 20 ÷ 2 = 10, then 10 − 3 = 7. The starting number was 7. Check: 7 + 3 = 10, 10 × 2 = 20, 20 + 10 = 30. ✓"
+          },
+          {
+            id: 303,
+            difficulty: 3,
+            question: "Olivia thinks of a number. She multiplies it by 3, adds 6, divides by 5, then multiplies by 2. She gets 12. What was her number?",
+            options: ["6", "8", "10", "12", "14"],
+            correct: 1,
+            explanation: "Work backwards: 12 ÷ 2 = 6, then 6 × 5 = 30, then 30 − 6 = 24, then 24 ÷ 3 = 8. The starting number was 8. Check: 8 × 3 = 24, 24 + 6 = 30, 30 ÷ 5 = 6, 6 × 2 = 12. ✓"
+          },
+          {
+            id: 304,
+            difficulty: 3,
+            question: "Jordan thinks of a number. He adds 8, multiplies by 2, subtracts 6, then divides by 2. He gets 10. What was his number?",
+            options: ["3", "4", "5", "6", "8"],
+            correct: 2,
+            explanation: "Work backwards: 10 × 2 = 20, then 20 + 6 = 26, then 26 ÷ 2 = 13, then 13 − 8 = 5. The starting number was 5. Check: 5 + 8 = 13, 13 × 2 = 26, 26 − 6 = 20, 20 ÷ 2 = 10. ✓"
+          },
+          {
+            id: 305,
+            difficulty: 3,
+            question: "Lily thinks of a number. She adds 8, multiplies by 3, subtracts 12, then divides by 6. She gets 4. What was her number?",
+            options: ["4", "5", "6", "7", "8"],
+            correct: 0,
+            explanation: "Work backwards: 4 × 6 = 24, then 24 + 12 = 36, then 36 ÷ 3 = 12, then 12 − 8 = 4. The starting number was 4. Check: 4 + 8 = 12, 12 × 3 = 36, 36 − 12 = 24, 24 ÷ 6 = 4. ✓"
+          },
+          {
+            id: 306,
+            difficulty: 3,
+            question: "Priya thinks of a number. She multiplies it by 4, adds 10, divides by 2, then subtracts 3. She gets 16. What was her number?",
+            options: ["4", "5", "6", "7", "8"],
+            correct: 3,
+            explanation: "Work backwards: 16 + 3 = 19, then 19 × 2 = 38, then 38 − 10 = 28, then 28 ÷ 4 = 7. The starting number was 7. Check: 7 × 4 = 28, 28 + 10 = 38, 38 ÷ 2 = 19, 19 − 3 = 16. ✓"
+          },
+          {
+            id: 307,
+            difficulty: 3,
+            question: "Grace thinks of a number. She subtracts 6, multiplies by 2, adds 8, then divides by 4. She gets 5. What was her number?",
+            options: ["10", "12", "14", "16", "18"],
+            correct: 1,
+            explanation: "Work backwards: 5 × 4 = 20, then 20 − 8 = 12, then 12 ÷ 2 = 6, then 6 + 6 = 12. The starting number was 12. Check: 12 − 6 = 6, 6 × 2 = 12, 12 + 8 = 20, 20 ÷ 4 = 5. ✓"
+          },
+          {
+            id: 308,
+            difficulty: 3,
+            question: "Aiden thinks of a number. He adds 4, divides by 2, multiplies by 3, then subtracts 5. He gets 13. What was his number?",
+            options: ["6", "8", "10", "12", "14"],
+            correct: 1,
+            explanation: "Work backwards: 13 + 5 = 18, then 18 ÷ 3 = 6, then 6 × 2 = 12, then 12 − 4 = 8. The starting number was 8. Check: 8 + 4 = 12, 12 ÷ 2 = 6, 6 × 3 = 18, 18 − 5 = 13. ✓"
+          },
+          {
+            id: 309,
+            difficulty: 3,
+            question: "Zoe thinks of a number. She multiplies it by 5, subtracts 10, divides by 3, then adds 8. She gets 18. What was her number?",
+            options: ["8", "10", "12", "14", "16"],
+            correct: 0,
+            explanation: "Work backwards: 18 − 8 = 10, then 10 × 3 = 30, then 30 + 10 = 40, then 40 ÷ 5 = 8. The starting number was 8. Check: 8 × 5 = 40, 40 − 10 = 30, 30 ÷ 3 = 10, 10 + 8 = 18. ✓"
+          },
+          {
+            id: 310,
+            difficulty: 3,
+            question: "Marcus thinks of a number. He subtracts 2, multiplies by 3, adds 4, then divides by 2. He gets 11. What was his number?",
+            options: ["4", "5", "6", "8", "10"],
+            correct: 3,
+            explanation: "Work backwards: 11 × 2 = 22, then 22 − 4 = 18, then 18 ÷ 3 = 6, then 6 + 2 = 8. The starting number was 8. Check: 8 − 2 = 6, 6 × 3 = 18, 18 + 4 = 22, 22 ÷ 2 = 11. ✓"
+          },
+          {
+            id: 311,
+            difficulty: 3,
+            question: "Zara thinks of a number. She adds 6, divides by 3, multiplies by 4, then adds 2. She gets 22. What was her number?",
+            options: ["6", "7", "8", "9", "12"],
+            correct: 3,
+            explanation: "Work backwards: 22 − 2 = 20, then 20 ÷ 4 = 5, then 5 × 3 = 15, then 15 − 6 = 9. The starting number was 9. Check: 9 + 6 = 15, 15 ÷ 3 = 5, 5 × 4 = 20, 20 + 2 = 22. ✓"
+          },
+          {
+            id: 312,
+            difficulty: 3,
+            question: "Finn thinks of a number. He multiplies it by 3, adds 12, divides by 3, then multiplies by 2. He gets 20. What was his number?",
+            options: ["2", "3", "4", "5", "6"],
+            correct: 4,
+            explanation: "Work backwards: 20 ÷ 2 = 10, then 10 × 3 = 30, then 30 − 12 = 18, then 18 ÷ 3 = 6. The starting number was 6. Check: 6 × 3 = 18, 18 + 12 = 30, 30 ÷ 3 = 10, 10 × 2 = 20. ✓"
           }
         ]
 }
