@@ -15030,6 +15030,156 @@
       "questionId": 152,
       "subConceptId": "continue-sequence",
       "confidence": "high"
+    },
+    {
+      "questionId": 153,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 154,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 155,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 156,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 157,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 158,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 159,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 160,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 161,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 162,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 163,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 164,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 165,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 166,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 167,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 168,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 169,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 170,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 171,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 172,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 173,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 174,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 175,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 176,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 177,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 178,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 179,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 180,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 181,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
+    },
+    {
+      "questionId": 182,
+      "subConceptId": "find-nth-term",
+      "confidence": "high"
     }
   ],
   "datahandling": [

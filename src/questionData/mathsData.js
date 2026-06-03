@@ -24868,6 +24868,246 @@ sequences: {
       options: ["720", "480", "600", "240", "840"],
       correct: 0,
       explanation: "Each term is multiplied by an increasing number: ×2, ×3, ×4, ×5. These are factorial numbers! Next: 120 × 6 = 720. ✓"
+    },
+    {
+      id: 153,
+      difficulty: 1,
+      question: "What is the next number in the sequence: 4, 9, 14, 19, 24, ___?",
+      options: ["25", "28", "29", "30", "31"],
+      correct: 2,
+      explanation: "The sequence adds 5 each time. 24 + 5 = 29. ✓"
+    },
+    {
+      id: 154,
+      difficulty: 1,
+      question: "Find the missing number: 7, 13, ___, 25, 31",
+      options: ["18", "19", "20", "21", "22"],
+      correct: 1,
+      explanation: "The constant difference is +6. Check: 7 + 6 = 13, 13 + 6 = 19, 19 + 6 = 25, 25 + 6 = 31. ✓"
+    },
+    {
+      id: 155,
+      difficulty: 1,
+      question: "A sequence starts: 6, 12, 18, 24. What is the 5th term?",
+      options: ["28", "30", "32", "36", "42"],
+      correct: 1,
+      explanation: "The sequence adds 6 each time. The 5th term is 24 + 6 = 30. ✓"
+    },
+    {
+      id: 156,
+      difficulty: 1,
+      question: "What comes next in this sequence? 50, 43, 36, 29, ___",
+      options: ["20", "22", "24", "25", "26"],
+      correct: 1,
+      explanation: "The sequence decreases by 7 each time. 29 - 7 = 22. ✓"
+    },
+    {
+      id: 157,
+      difficulty: 1,
+      question: "Find the next two numbers: 3, 8, 13, 18, ___, ___",
+      options: ["23, 28", "23, 27", "22, 27", "24, 29", "25, 30"],
+      correct: 0,
+      explanation: "The difference is +5 each time. 18 + 5 = 23, 23 + 5 = 28. ✓"
+    },
+    {
+      id: 158,
+      difficulty: 1,
+      question: "A sequence starts at 25 and subtracts 3 each time: 25, 22, 19, 16, 13, ___. What comes next?",
+      options: ["8", "9", "10", "11", "12"],
+      correct: 2,
+      explanation: "The sequence subtracts 3 each time. 13 - 3 = 10. ✓"
+    },
+    {
+      id: 159,
+      difficulty: 1,
+      question: "A pattern of tiles: Row 1 has 5 tiles, Row 2 has 10, Row 3 has 15. How many tiles are in Row 4?",
+      options: ["20", "25", "30", "35", "45"],
+      correct: 0,
+      explanation: "Each row adds 5 more tiles than the last. Row 4 = 15 + 5 = 20. ✓"
+    },
+    {
+      id: 160,
+      difficulty: 1,
+      question: "What is the 6th term of the sequence: 2, 5, 8, 11, 14?",
+      options: ["15", "17", "18", "20", "24"],
+      correct: 1,
+      explanation: "The difference is +3. Continuing: 14 + 3 = 17. ✓"
+    },
+    {
+      id: 161,
+      difficulty: 1,
+      question: "Find the missing number: 40, 35, 30, ___, 20",
+      options: ["21", "22", "23", "24", "25"],
+      correct: 4,
+      explanation: "The sequence decreases by 5 each time. 30 - 5 = 25. Check: 25 - 5 = 20. ✓"
+    },
+    {
+      id: 162,
+      difficulty: 1,
+      question: "In the sequence 7, 14, 21, 28, what rule generates these numbers?",
+      options: ["Add 7 each time", "Add 8 each time", "Multiply by 2", "Multiply by 3", "Add 14 each time"],
+      correct: 0,
+      explanation: "The difference between consecutive terms is always 7. This is the 7 times table. ✓"
+    },
+    {
+      id: 163,
+      difficulty: 2,
+      question: "What is the next number in: 2, 5, 10, 17, 26, ___?",
+      options: ["35", "36", "37", "38", "39"],
+      correct: 2,
+      explanation: "The differences are 3, 5, 7, 9 — increasing by 2 each time. The next difference is 11. So 26 + 11 = 37. ✓"
+    },
+    {
+      id: 164,
+      difficulty: 2,
+      question: "The nth term of a sequence is 3n + 2. What is the 7th term?",
+      options: ["21", "22", "23", "24", "25"],
+      correct: 2,
+      explanation: "Substitute n = 7: 3 × 7 + 2 = 21 + 2 = 23. ✓"
+    },
+    {
+      id: 165,
+      difficulty: 2,
+      question: "A sequence is: 1, 4, 9, 16, 25, ___. What is the next number?",
+      options: ["30", "32", "34", "36", "40"],
+      correct: 3,
+      explanation: "These are square numbers: 1², 2², 3², 4², 5². The next is 6² = 36. ✓"
+    },
+    {
+      id: 166,
+      difficulty: 2,
+      question: "Find the missing number: 2, 3, 5, 8, 13, ___, 34",
+      options: ["19", "20", "21", "22", "23"],
+      correct: 2,
+      explanation: "Each term is the sum of the previous two. 8 + 13 = 21. Check: 13 + 21 = 34. ✓"
+    },
+    {
+      id: 167,
+      difficulty: 2,
+      question: "A sequence has the nth term rule 5n - 1. What are the first four terms?",
+      options: ["4, 9, 14, 19", "5, 10, 15, 20", "6, 11, 16, 21", "3, 8, 13, 18", "2, 7, 12, 17"],
+      correct: 0,
+      explanation: "n = 1: 5(1) - 1 = 4. n = 2: 5(2) - 1 = 9. n = 3: 14. n = 4: 19. ✓"
+    },
+    {
+      id: 168,
+      difficulty: 2,
+      question: "What is the 10th term of the sequence 4, 10, 16, 22, ...?",
+      options: ["52", "56", "58", "60", "64"],
+      correct: 2,
+      explanation: "The difference is +6 each time. The nth term is 6n - 2. When n = 10: 6 × 10 - 2 = 58. ✓"
+    },
+    {
+      id: 169,
+      difficulty: 2,
+      question: "The sequence 5, 9, 13, 17, 21 follows the rule 4n + 1. What is the 12th term?",
+      options: ["45", "48", "49", "50", "52"],
+      correct: 2,
+      explanation: "Substitute n = 12: 4 × 12 + 1 = 48 + 1 = 49. ✓"
+    },
+    {
+      id: 170,
+      difficulty: 2,
+      question: "Which term of the sequence 2, 9, 16, 23, 30 equals 37?",
+      options: ["5th", "6th", "7th", "8th", "It is not a term"],
+      correct: 1,
+      explanation: "The nth term rule is 7n - 5. If 7n - 5 = 37, then 7n = 42, so n = 6. The 6th term is 37. ✓"
+    },
+    {
+      id: 171,
+      difficulty: 2,
+      question: "What is the next number in: 3, 6, 12, 24, 48, ___?",
+      options: ["72", "84", "96", "108", "120"],
+      correct: 2,
+      explanation: "Each number is doubled (multiplied by 2). 48 × 2 = 96. ✓"
+    },
+    {
+      id: 172,
+      difficulty: 2,
+      question: "Find the next term: 1, 3, 7, 15, 31, ___",
+      options: ["47", "55", "63", "79", "95"],
+      correct: 2,
+      explanation: "The rule is: multiply by 2, then add 1. From 31: 31 × 2 + 1 = 63. ✓"
+    },
+    {
+      id: 173,
+      difficulty: 3,
+      question: "What is the next number in: 1, 8, 27, 64, 125, ___?",
+      options: ["180", "196", "216", "256", "343"],
+      correct: 2,
+      explanation: "These are cube numbers: 1³, 2³, 3³, 4³, 5³. The next is 6³ = 216. ✓"
+    },
+    {
+      id: 174,
+      difficulty: 3,
+      question: "What are the next two numbers in: 31, 17, 33, 15, 35, ___, ___?",
+      options: ["13, 37", "37, 13", "12, 38", "38, 12", "14, 36"],
+      correct: 0,
+      explanation: "This is an interleaved sequence. Odd positions: 31, 33, 35, 37 (add 2). Even positions: 17, 15, 13 (subtract 2). Next two are 13 and 37. ✓"
+    },
+    {
+      id: 175,
+      difficulty: 3,
+      question: "The nth term of a sequence is 2n + 3. Is 45 a term in this sequence?",
+      options: ["Yes, it is the 21st term", "Yes, it is the 22nd term", "No, it is not a term", "Yes, it is the 23rd term", "Cannot be determined"],
+      correct: 0,
+      explanation: "If 2n + 3 = 45, then 2n = 42, so n = 21. Check: 2(21) + 3 = 45. Yes, 45 is the 21st term. ✓"
+    },
+    {
+      id: 176,
+      difficulty: 3,
+      question: "Which sequence follows the rule 'multiply by 3 each time'?",
+      options: ["2, 5, 8, 11, 14", "2, 6, 18, 54, 162", "2, 6, 10, 14, 18", "2, 5, 14, 38, 107", "2, 6, 9, 12, 15"],
+      correct: 1,
+      explanation: "In option B: 2 × 3 = 6, 6 × 3 = 18, 18 × 3 = 54, 54 × 3 = 162. Constant multiplier of ×3. ✓"
+    },
+    {
+      id: 177,
+      difficulty: 3,
+      question: "The nth term of a sequence is 4n - 3. What is the 20th term?",
+      options: ["77", "78", "79", "80", "81"],
+      correct: 0,
+      explanation: "Substitute n = 20: 4 × 20 - 3 = 80 - 3 = 77. ✓"
+    },
+    {
+      id: 178,
+      difficulty: 3,
+      question: "Tiles are arranged in square patterns. Stage 1 is a 2×2 square (4 tiles), Stage 2 is a 3×3 square (9 tiles), Stage 3 is a 4×4 square (16 tiles). How many tiles in Stage 10?",
+      options: ["100", "110", "121", "132", "144"],
+      correct: 2,
+      explanation: "Each stage n uses (n+1)² tiles. Stage 10 = (10 + 1)² = 11² = 121. ✓"
+    },
+    {
+      id: 179,
+      difficulty: 3,
+      question: "A sequence decreases: 50, 42, 34, 26, ... What is the 8th term?",
+      options: ["-6", "-2", "0", "2", "8"],
+      correct: 0,
+      explanation: "The difference is -8 each time. Terms: 1st=50, 2nd=42, 3rd=34, 4th=26, 5th=18, 6th=10, 7th=2, 8th=-6. ✓"
+    },
+    {
+      id: 180,
+      difficulty: 3,
+      question: "Which of these numbers is NOT in the sequence with nth term = 4n + 1?",
+      options: ["9", "13", "18", "21", "25"],
+      correct: 2,
+      explanation: "The sequence gives: 5, 9, 13, 17, 21, 25... Check: 9 = 4(2)+1 ✓, 13 = 4(3)+1 ✓, 21 = 4(5)+1 ✓, 25 = 4(6)+1 ✓. But 4n+1 = 18 means n = 4.25 — not a whole number, so 18 is not in the sequence. ✓"
+    },
+    {
+      id: 181,
+      difficulty: 3,
+      question: "A sequence follows the rule 2n² - 1, giving: 1, 7, 17, 31, ___. What is the 5th term?",
+      options: ["45", "47", "49", "51", "53"],
+      correct: 2,
+      explanation: "Substitute n = 5: 2 × 5² - 1 = 2 × 25 - 1 = 50 - 1 = 49. ✓"
+    },
+    {
+      id: 182,
+      difficulty: 3,
+      question: "In the Fibonacci sequence 1, 1, 2, 3, 5, 8, 13, 21, what is the next number?",
+      options: ["29", "33", "34", "35", "36"],
+      correct: 2,
+      explanation: "Each term is the sum of the previous two. 13 + 21 = 34. ✓"
     }
   ]
 },
