@@ -4719,4 +4719,162 @@ export const decimalsSubConcepts = [
     ]
   }
 
+  // ==========================================
+  // SUB-CONCEPT: Mixed Units Arithmetic
+  // Category: core
+  // Lesson: step-by-step
+  // ==========================================
+  {
+    id: "multi-unit-arithmetic",
+    name: "Mixed Units Arithmetic",
+    category: "core",
+    lessons: [
+      {
+        id: "multi-unit-arithmetic-steps",
+        templateType: "step-by-step",
+        learningGoal: [
+          "How to add and subtract measurements when they are given in different units (like grams and kilograms, or millilitres and litres)",
+          "Why you must always change everything into the SAME unit before you do the maths"
+        ],
+        variableSets: [
+          {
+            name: "Daisy",
+            scenario: "weighing fruit for a smoothie",
+            teachQ: "Daisy puts 250 g of strawberries and 0.5 kg of bananas in the blender. How much fruit altogether, in grams?",
+            teachConvert: "Convert 0.5 kg to grams: 0.5 × 1000 = 500 g",
+            teachCalc: "Add: 250 g + 500 g = 750 g",
+            teachAnswer: "750 g",
+            interactQ: "Daisy's jug holds 1.5 litres of orange squash. She pours out 300 ml. How much squash is left, in millilitres?",
+            interactHint: "1 litre = 1000 ml — change the litres first!",
+            interactOptions: ["1200 ml", "1.2 ml", "1800 ml", "1500 ml", "200 ml"],
+            interactCorrectAnswer: "1200 ml",
+            interactExplanation: "1.5 litres = 1500 ml (× 1000). Then 1500 − 300 = **1200 ml** left. ✓",
+            interactFeedbackWrong: "First change 1.5 litres: 1.5 × 1000 = 1500 ml. Then subtract: 1500 − 300 = 1200 ml."
+          },
+          {
+            name: "Oliver",
+            scenario: "filling a paddling pool with a watering can",
+            teachQ: "Oliver pours in 2.4 litres of water, then adds another 600 ml from a bottle. How much water is that altogether, in millilitres?",
+            teachConvert: "Convert 2.4 litres to millilitres: 2.4 × 1000 = 2400 ml",
+            teachCalc: "Add: 2400 ml + 600 ml = 3000 ml",
+            teachAnswer: "3000 ml",
+            interactQ: "Oliver's pet snake is 1.2 m long. It grows another 40 cm. How long is the snake now, in centimetres?",
+            interactHint: "1 m = 100 cm — change the metres first!",
+            interactOptions: ["160 cm", "1.6 cm", "52 cm", "124 cm", "240 cm"],
+            interactCorrectAnswer: "160 cm",
+            interactExplanation: "1.2 m = 120 cm (× 100). Then 120 + 40 = **160 cm**. ✓",
+            interactFeedbackWrong: "Change 1.2 m first: 1.2 × 100 = 120 cm. Then add: 120 + 40 = 160 cm."
+          },
+          {
+            name: "Priya",
+            scenario: "building a guinea pig run in the garden",
+            teachQ: "Priya's fence panel is 3.5 m long. She joins on a smaller panel that is 85 cm. How long is the whole fence now, in centimetres?",
+            teachConvert: "Convert 3.5 m to centimetres: 3.5 × 100 = 350 cm",
+            teachCalc: "Add: 350 cm + 85 cm = 435 cm",
+            teachAnswer: "435 cm",
+            interactQ: "Priya's shopping bag has 0.75 kg of apples and 380 g of pears in it. What is the total weight, in grams?",
+            interactHint: "1 kg = 1000 g — change the kilograms first!",
+            interactOptions: ["1130 g", "455 g", "1.13 g", "4550 g", "1075 g"],
+            interactCorrectAnswer: "1130 g",
+            interactExplanation: "0.75 kg = 750 g (× 1000). Then 750 + 380 = **1130 g**. ✓",
+            interactFeedbackWrong: "Change 0.75 kg first: 0.75 × 1000 = 750 g. Then add: 750 + 380 = 1130 g."
+          },
+          {
+            name: "Finn",
+            scenario: "sharing out a bottle of homemade lemonade",
+            teachQ: "Finn's bottle holds 1.25 litres of lemonade. He pours 450 ml into a flask for the picnic. How much lemonade is left in the bottle, in millilitres?",
+            teachConvert: "Convert 1.25 litres to millilitres: 1.25 × 1000 = 1250 ml",
+            teachCalc: "Subtract: 1250 ml − 450 ml = 800 ml",
+            teachAnswer: "800 ml",
+            interactQ: "Finn has a 2.4 kg bag of flour. He uses 750 g to bake bread. How much flour is left, in grams?",
+            interactHint: "1 kg = 1000 g — change the kilograms first!",
+            interactOptions: ["1650 g", "1.65 g", "3150 g", "1700 g", "165 g"],
+            interactCorrectAnswer: "1650 g",
+            interactExplanation: "2.4 kg = 2400 g (× 1000). Then 2400 − 750 = **1650 g** left. ✓",
+            interactFeedbackWrong: "Change 2.4 kg first: 2.4 × 1000 = 2400 g. Then subtract: 2400 − 750 = 1650 g."
+          }
+        ],
+        screens: [
+          {
+            type: "hook",
+            title: () => "One recipe, two different units!",
+            body: () => `Imagine you're baking with a friend. The recipe says you need **350 g of flour** and **0.6 kg of sugar**. So... how much is that altogether?\n\nYou can't just add 350 and 0.6 — that would give a silly answer! Grams and kilograms are different sizes, like trying to add up apples and lorries.\n\nThe trick is to turn them into the **same unit first**. Once everything is in grams, the adding is easy: 350 g + 600 g = **950 g**. Sorted!`,
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "0.6 kg → 0.6 × 1000 = 600 g", why: "Convert to grams first" },
+                  { text: "350 g + 600 g = 950 g", why: "Now both are in grams — easy to add ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          },
+          {
+            type: "teach",
+            title: () => "Same unit first, then do the maths",
+            body: (v) => `${v.name} is ${v.scenario}.\n\n**${v.teachQ}**\n\nRemember: to go from a **big unit** to a **small unit** (kg → g, m → cm, litres → ml), you **multiply**. The question tells you which unit to give the answer in — convert everything to that unit first.`,
+            visual: {
+              component: "WorkedExample",
+              props: (v) => ({
+                steps: [
+                  { text: "Spot the units — one measurement needs converting", why: "The question asks for a specific unit, so everything else must match" },
+                  { text: v.teachConvert, why: "Big unit → small unit = multiply" },
+                  { text: `${v.teachCalc} → answer: ${v.teachAnswer}`, why: "Same units now, so the arithmetic is straightforward ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: {
+              type: "order-steps",
+              steps: () => [
+                "Decide which unit the answer needs to be in",
+                "Convert any measurements in a different unit",
+                "Do the addition or subtraction",
+                "Write the answer with the correct unit"
+              ],
+              feedback: {
+                correct: () => "Perfect order! Convert first, then calculate — that's the golden rule for mixed units. ✓",
+                incorrect: () => "Almost! Remember: you must convert everything into the **same unit** before you add or subtract."
+              }
+            }
+          },
+          {
+            type: "interact",
+            title: () => "Your turn!",
+            body: (v) => `${v.interactQ}\n\n*(Hint: ${v.interactHint})*`,
+            visual: null,
+            interaction: {
+              type: "multiple-choice",
+              getOptions: (v) => v.interactOptions,
+              correctAnswer: (v) => v.interactCorrectAnswer,
+              feedback: {
+                correct: (v) => `Brilliant! ${v.interactExplanation}`,
+                incorrect: (v) => `Not quite! ${v.interactFeedbackWrong} ${v.interactExplanation}`
+              }
+            }
+          },
+          {
+            type: "consolidate",
+            title: () => "Your 3-step plan for ANY mixed-unit question",
+            body: () => "It doesn't matter if it's grams, litres, or metres — the same three steps work every single time.",
+            visual: {
+              component: "WorkedExample",
+              props: () => ({
+                steps: [
+                  { text: "1. Match the units — pick the unit the question asks for, convert everything else into it", why: "Big → small = multiply; small → big = divide" },
+                  { text: "2. Do the maths — add for 'altogether/total', subtract for 'left/how much more'", why: "Now everything is in the same unit, so the arithmetic is simple" },
+                  { text: "3. Check the unit — is your answer in the unit the question asked for?", why: "Ask yourself: does this size make sense? ✓" }
+                ],
+                allRevealed: true
+              })
+            },
+            interaction: null
+          }
+        ]
+      }
+    ]
+  }
+
 ];  // end of decimalsSubConcepts

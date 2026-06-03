@@ -3521,6 +3521,246 @@ const mathsData = {
             correct: 4,
             explanation: "3/4 of the way from 0 to 1 is 0.75. This is because 3 ÷ 4 = 0.75. The arrow is closer to 1 than to 0.5. ✓",
             visual: {"component":"NumberLine","props":{"min":0,"max":1,"tickInterval":1,"points":[{"value":0.75,"label":"?"}],"showLabels":true}}
+          },
+          {
+            id: 224,
+            difficulty: 1,
+            question: "A jug holds 600 ml of orange juice. Tom pours in another 0.4 litres. How much juice is in the jug now, in millilitres?",
+            options: ["460 ml", "640 ml", "800 ml", "1000 ml", "1040 ml"],
+            correct: 3,
+            explanation: "Convert 0.4 litres to millilitres: 0.4 × 1000 = 400 ml. Then add: 600 + 400 = 1000 ml. ✓"
+          },
+          {
+            id: 225,
+            difficulty: 1,
+            question: "A puppy weighs 2 kg. A kitten weighs 800 g. How much heavier is the puppy than the kitten, in grams?",
+            options: ["600 g", "800 g", "1000 g", "1200 g", "2800 g"],
+            correct: 3,
+            explanation: "Convert 2 kg to grams: 2 × 1000 = 2000 g. Then subtract: 2000 − 800 = 1200 g. ✓"
+          },
+          {
+            id: 226,
+            difficulty: 1,
+            question: "A ribbon is 3 m long. Megan cuts off 50 cm. How much ribbon is left, in centimetres?",
+            options: ["47 cm", "250 cm", "253 cm", "300 cm", "350 cm"],
+            correct: 1,
+            explanation: "Convert 3 m to centimetres: 3 × 100 = 300 cm. Then subtract: 300 − 50 = 250 cm. ✓"
+          },
+          {
+            id: 227,
+            difficulty: 1,
+            question: "A bottle holds 1.5 litres of lemonade. Jack drinks 500 ml. How much lemonade is left, in millilitres?",
+            options: ["1000 ml", "1450 ml", "1495 ml", "1550 ml", "2000 ml"],
+            correct: 0,
+            explanation: "Convert 1.5 litres to millilitres: 1.5 × 1000 = 1500 ml. Then subtract: 1500 − 500 = 1000 ml. ✓"
+          },
+          {
+            id: 228,
+            difficulty: 1,
+            question: "A bag of flour weighs 750 g. Priya adds another 1 kg of flour to it. What is the total weight, in grams?",
+            options: ["751 g", "850 g", "1000 g", "1750 g", "7500 g"],
+            correct: 3,
+            explanation: "Convert 1 kg to grams: 1 × 1000 = 1000 g. Then add: 750 + 1000 = 1750 g. ✓"
+          },
+          {
+            id: 229,
+            difficulty: 1,
+            question: "A pencil is 8 cm long. A crayon is 60 mm long. How much longer is the pencil than the crayon, in millimetres?",
+            options: ["2 mm", "20 mm", "52 mm", "68 mm", "80 mm"],
+            correct: 1,
+            explanation: "Convert 8 cm to millimetres: 8 × 10 = 80 mm. Then subtract: 80 − 60 = 20 mm. ✓"
+          },
+          {
+            id: 230,
+            difficulty: 1,
+            question: "A runner jogs 2 km, then walks another 500 m. How far does she travel in total, in metres?",
+            options: ["700 m", "1500 m", "2000 m", "2050 m", "2500 m"],
+            correct: 4,
+            explanation: "Convert 2 km to metres: 2 × 1000 = 2000 m. Then add: 2000 + 500 = 2500 m. ✓"
+          },
+          {
+            id: 231,
+            difficulty: 1,
+            question: "A tub of yoghurt weighs 0.5 kg. Daisy eats 150 g of it. How much yoghurt is left, in grams?",
+            options: ["35 g", "145 g", "350 g", "500 g", "650 g"],
+            correct: 2,
+            explanation: "Convert 0.5 kg to grams: 0.5 × 1000 = 500 g. Then subtract: 500 − 150 = 350 g. ✓"
+          },
+          {
+            id: 232,
+            difficulty: 1,
+            question: "A watering can holds 900 ml of water. Ben tips in another 2 litres. How much water is in the can now, in millilitres?",
+            options: ["902 ml", "1100 ml", "2090 ml", "2900 ml", "3000 ml"],
+            correct: 3,
+            explanation: "Convert 2 litres to millilitres: 2 × 1000 = 2000 ml. Then add: 900 + 2000 = 2900 ml. ✓"
+          },
+          {
+            id: 233,
+            difficulty: 1,
+            question: "A plank of wood is 4 m long. A carpenter saws off 120 cm. How much wood is left, in centimetres?",
+            options: ["280 cm", "380 cm", "388 cm", "400 cm", "520 cm"],
+            correct: 0,
+            explanation: "Convert 4 m to centimetres: 4 × 100 = 400 cm. Then subtract: 400 − 120 = 280 cm. ✓"
+          },
+          {
+            id: 234,
+            difficulty: 2,
+            question: "A bag of apples weighs 1.25 kg. A bag of pears weighs 850 g. What is their total weight, in grams?",
+            options: ["875 g", "975 g", "1100 g", "2100 g", "2150 g"],
+            correct: 3,
+            explanation: "Convert 1.25 kg to grams: 1.25 × 1000 = 1250 g. Then add: 1250 + 850 = 2100 g. ✓"
+          },
+          {
+            id: 235,
+            difficulty: 2,
+            question: "A carton holds 1.75 litres of milk. Sophie uses 320 ml in a recipe. How much milk is left, in millilitres?",
+            options: ["1095 ml", "1430 ml", "1455 ml", "1530 ml", "2070 ml"],
+            correct: 1,
+            explanation: "Convert 1.75 litres to millilitres: 1.75 × 1000 = 1750 ml. Then subtract: 1750 − 320 = 1430 ml. ✓"
+          },
+          {
+            id: 236,
+            difficulty: 2,
+            question: "A skipping rope is 1.4 m long. Olivia ties on an extra piece 35 cm long. What is the total length, in centimetres?",
+            options: ["49 cm", "105 cm", "140 cm", "175 cm", "490 cm"],
+            correct: 3,
+            explanation: "Convert 1.4 m to centimetres: 1.4 × 100 = 140 cm. Then add: 140 + 35 = 175 cm. ✓"
+          },
+          {
+            id: 237,
+            difficulty: 2,
+            question: "A sack of potatoes weighs 3.5 kg. A chef uses 1250 g for chips. How much is left, in grams?",
+            options: ["2150 g", "2250 g", "2350 g", "3375 g", "4750 g"],
+            correct: 1,
+            explanation: "Convert 3.5 kg to grams: 3.5 × 1000 = 3500 g. Then subtract: 3500 − 1250 = 2250 g. ✓"
+          },
+          {
+            id: 238,
+            difficulty: 2,
+            question: "A bucket holds 4.2 litres of water. Harry pours away 1650 ml. How much water is left, in millilitres?",
+            options: ["2450 ml", "2550 ml", "2650 ml", "4035 ml", "5850 ml"],
+            correct: 1,
+            explanation: "Convert 4.2 litres to millilitres: 4.2 × 1000 = 4200 ml. Then subtract: 4200 − 1650 = 2550 ml. ✓"
+          },
+          {
+            id: 239,
+            difficulty: 2,
+            question: "A garden hose is 12.5 m long. A second hose is 4.75 m long. How much longer is the first hose, in centimetres?",
+            options: ["575 cm", "675 cm", "775 cm", "1725 cm", "8250 cm"],
+            correct: 2,
+            explanation: "Convert both to centimetres: 12.5 × 100 = 1250 cm and 4.75 × 100 = 475 cm. Then subtract: 1250 − 475 = 775 cm. ✓"
+          },
+          {
+            id: 240,
+            difficulty: 2,
+            question: "A jar of honey weighs 0.45 kg. Grandma adds 280 g more honey to it. What is the total weight, in grams?",
+            options: ["325 g", "530 g", "630 g", "730 g", "4780 g"],
+            correct: 3,
+            explanation: "Convert 0.45 kg to grams: 0.45 × 1000 = 450 g. Then add: 450 + 280 = 730 g. ✓"
+          },
+          {
+            id: 241,
+            difficulty: 2,
+            question: "A bottle holds 2.3 litres of squash. Amelia drinks 1450 ml. How much squash is left, in millilitres?",
+            options: ["850 ml", "950 ml", "1050 ml", "1185 ml", "3750 ml"],
+            correct: 0,
+            explanation: "Convert 2.3 litres to millilitres: 2.3 × 1000 = 2300 ml. Then subtract: 2300 − 1450 = 850 ml. ✓"
+          },
+          {
+            id: 242,
+            difficulty: 2,
+            question: "A roll of tape is 6.4 m long. Charlie uses 185 cm of it. How much tape is left, in centimetres?",
+            options: ["219 cm", "365 cm", "455 cm", "545 cm", "825 cm"],
+            correct: 2,
+            explanation: "Convert 6.4 m to centimetres: 6.4 × 100 = 640 cm. Then subtract: 640 − 185 = 455 cm. ✓"
+          },
+          {
+            id: 243,
+            difficulty: 2,
+            question: "A bag of dog food weighs 7.5 kg. A pet shop adds a 2350 g top-up bag. What is the total weight, in grams?",
+            options: ["5150 g", "9750 g", "9850 g", "9950 g", "10350 g"],
+            correct: 2,
+            explanation: "Convert 7.5 kg to grams: 7.5 × 1000 = 7500 g. Then add: 7500 + 2350 = 9850 g. ✓"
+          },
+          {
+            id: 244,
+            difficulty: 3,
+            question: "A baker uses 1.5 kg of flour for bread and 650 g for cakes. He started with 3 kg. How much flour is left, in grams?",
+            options: ["850 g", "1350 g", "2150 g", "2350 g", "5150 g"],
+            correct: 0,
+            explanation: "Convert to grams: 1.5 kg = 1500 g and 3 kg = 3000 g. Add what was used: 1500 + 650 = 2150 g. Then subtract from the total: 3000 − 2150 = 850 g. ✓"
+          },
+          {
+            id: 245,
+            difficulty: 3,
+            question: "A water tank holds 5 litres. Freya fills it with a 1.8 litre jug and then a 1250 ml bottle. How much more water is needed to fill the tank, in millilitres?",
+            options: ["1950 ml", "2050 ml", "3050 ml", "3950 ml", "6050 ml"],
+            correct: 0,
+            explanation: "Convert to millilitres: 5 litres = 5000 ml and 1.8 litres = 1800 ml. Add what was poured in: 1800 + 1250 = 3050 ml. Then find what is still needed: 5000 − 3050 = 1950 ml. ✓"
+          },
+          {
+            id: 246,
+            difficulty: 3,
+            question: "Three parcels weigh 1.4 kg, 750 g and 0.9 kg. What is their total weight, in grams?",
+            options: ["2150 g", "2900 g", "3050 g", "3150 g", "3950 g"],
+            correct: 2,
+            explanation: "Convert each to grams: 1.4 kg = 1400 g and 0.9 kg = 900 g. Then add: 1400 + 750 + 900 = 3050 g. ✓"
+          },
+          {
+            id: 247,
+            difficulty: 3,
+            question: "A relay team runs three legs of a race: 1.2 km, 800 m and 1.5 km. How far do they run altogether, in metres?",
+            options: ["2500 m", "3300 m", "3500 m", "4500 m", "5000 m"],
+            correct: 2,
+            explanation: "Convert to metres: 1.2 km = 1200 m and 1.5 km = 1500 m. Then add: 1200 + 800 + 1500 = 3500 m. ✓"
+          },
+          {
+            id: 248,
+            difficulty: 3,
+            question: "A jug holds 2 litres of custard. Mum pours 450 ml onto one pudding and 0.6 litres onto another. How much custard is left, in millilitres?",
+            options: ["950 ml", "1050 ml", "1450 ml", "1550 ml", "2950 ml"],
+            correct: 0,
+            explanation: "Convert to millilitres: 2 litres = 2000 ml and 0.6 litres = 600 ml. Add the two pours: 450 + 600 = 1050 ml. Then subtract: 2000 − 1050 = 950 ml. ✓"
+          },
+          {
+            id: 249,
+            difficulty: 3,
+            question: "Three books have widths of 4.5 cm, 28 mm and 5.2 cm. The shelf is 15 cm wide. How much spare space is left, in millimetres?",
+            options: ["30 mm", "50 mm", "75 mm", "122 mm", "150 mm"],
+            correct: 1,
+            explanation: "Convert to millimetres: 4.5 cm = 45 mm, 5.2 cm = 52 mm, shelf 15 cm = 150 mm. Add the book widths: 45 + 28 + 52 = 125 mm. Then subtract: 150 − 125 = 50 mm. ✓"
+          },
+          {
+            id: 250,
+            difficulty: 3,
+            question: "A recipe needs 1.25 kg of sugar. Liam has a 600 g bag and a 0.4 kg bag. How much more sugar does he need, in grams?",
+            options: ["250 g", "350 g", "650 g", "1000 g", "1850 g"],
+            correct: 0,
+            explanation: "Convert to grams: 1.25 kg = 1250 g and 0.4 kg = 400 g. Add what Liam has: 600 + 400 = 1000 g. Then find what is still needed: 1250 − 1000 = 250 g. ✓"
+          },
+          {
+            id: 251,
+            difficulty: 3,
+            question: "A barrel holds 6 litres of pond water. A gardener removes 1.4 litres, then another 950 ml. How much water is left, in millilitres?",
+            options: ["2650 ml", "3650 ml", "4350 ml", "4650 ml", "5650 ml"],
+            correct: 1,
+            explanation: "Convert to millilitres: 6 litres = 6000 ml and 1.4 litres = 1400 ml. Add the two amounts removed: 1400 + 950 = 2350 ml. Then subtract: 6000 − 2350 = 3650 ml. ✓"
+          },
+          {
+            id: 252,
+            difficulty: 3,
+            question: "Three lengths of rope measure 2.3 m, 175 cm and 1.45 m. What is their total length, in centimetres?",
+            options: ["455 cm", "525 cm", "550 cm", "600 cm", "650 cm"],
+            correct: 2,
+            explanation: "Convert to centimetres: 2.3 m = 230 cm and 1.45 m = 145 cm. Then add: 230 + 175 + 145 = 550 cm. ✓"
+          },
+          {
+            id: 253,
+            difficulty: 3,
+            question: "A bag of cement weighs 10 kg. A builder uses 3.5 kg on Monday and 2750 g on Tuesday. How much cement is left, in grams?",
+            options: ["3250 g", "3750 g", "4250 g", "6250 g", "6750 g"],
+            correct: 1,
+            explanation: "Convert to grams: 10 kg = 10000 g and 3.5 kg = 3500 g. Add the two amounts used: 3500 + 2750 = 6250 g. Then subtract: 10000 − 6250 = 3750 g. ✓"
           }
         ]
 }

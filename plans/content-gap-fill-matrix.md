@@ -31,11 +31,11 @@ template, and dependencies. Check each box as the gap completes all 5 quality ga
 
 | # | Gap ID | Topic key | Baseline ceiling | Next ID | New sub-concept ID | Existing reuse? | Staging file? | Diagram? | Q count | Done? |
 |---|--------|-----------|------------------|---------|--------------------|-----------------|---------------|----------|---------|-------|
-| 1.1 | V1 Middle-number analogies | `numberSeries` | 99 | 100 | `middle-number-analogies` | No — none of 19 existing SCs cover middle-value pattern | Yes | No | 30 | [ ] |
-| 1.2 | V2 Letter-position analogies | `letterCodes` | 166 | 167 | `letter-position-analogy` | No — existing SCs are all cipher-shift, none position-analogy | Yes | No | 30 | [ ] |
-| 1.3 | V3 Balance-equation arithmetic | `balanceEquations` **(NEW TOPIC)** | 0 | 1 | `balance-equations` | No — entirely new topic | **No — must create** | No | 40 | [ ] |
-| 1.4 | V4 Multi-attribute logic grid | `logicAndLanguage` | 163 | 164 | `multi-attribute-logic` | No — existing covers ≤4 people, V4 needs 5+ with 4-6 conditions | Yes | No | 30 | [ ] |
-| 1.5 | V5 Number-word codes deduction | `numberWordCodes` | 125 | 126 | `code-deduction` | Partial — `elimination-method` covers deduction; add D2/D3 variant lesson | Yes | No | 30 | [ ] |
+| 1.1 | V1 Middle-number analogies | `numberSeries` | 99 | 100 | `middle-number-analogies` | No — none of 19 existing SCs cover middle-value pattern | Yes | No | 30 | [x] verified 3 Jun 2026 |
+| 1.2 | V2 Letter-position analogies | `letterCodes` | 166 | 167 | `letter-position-analogy` | No — existing SCs are all cipher-shift, none position-analogy | Yes | No | 30 | [x] verified 3 Jun 2026 |
+| 1.3 | V3 Balance-equation arithmetic | `balanceEquations` **(NEW TOPIC)** | 0 | 1 | `balance-equations` | No — entirely new topic | **No — must create** | No | 40 | [x] verified 3 Jun 2026 |
+| 1.4 | V4 Multi-attribute logic grid | `logicAndLanguage` | 163 | 164 | `multi-attribute-logic` | No — existing covers ≤4 people, V4 needs 5+ with 4-6 conditions | Yes | No | 30 | [x] verified 3 Jun 2026 |
+| 1.5 | V5 Number-word codes deduction | `numberWordCodes` | 125 | 126 | `code-deduction` | Partial — `elimination-method` covers deduction; add D2/D3 variant lesson | Yes | No | 30 | [x] verified 3 Jun 2026 |
 | 1.6 | V6 Missing letters in sentence context | `missingLettersWords` | 125 | 126 | `sentence-context-missing` | No — existing SCs target gap position, not sentence context | Yes | No | 30 | [x] commit 67b380f |
 | 1.7 | V7 Three-letter word INSIDE capitals | `missingLettersWords` | 155* | 156* | `inside-word-3letter` | No — `ending-gaps` is closest but format is different | Yes | No | 30 | [x] commit 4dac8de |
 | 1.8 | V8 Polyseme synonyms | `synonyms` | 125 | 126 | `polyseme-synonyms` | Partial — `context-dependent` is close; polyseme is specifically multi-meaning | Yes | No | 30 | [x] commit 67b380f |
@@ -65,7 +65,7 @@ Oracle has confirmed: 40 questions, D1/D2/D3 spread, covering simple balance, tw
 
 | # | Gap ID | Topic key | Baseline ceiling | Next ID | New sub-concept ID | Existing reuse? | Staging file? | Diagram? | Q count | Done? |
 |---|--------|-----------|------------------|---------|--------------------|-----------------|---------------|----------|---------|-------|
-| 2.1 | M1 Multi-unit arithmetic | `decimals` | 223 | 224 | `multi-unit-arithmetic` | No | Yes | No | 30 | [ ] |
+| 2.1 | M1 Multi-unit arithmetic | `decimals` | 223 | 224 | `multi-unit-arithmetic` | No | Yes | No | 30 | [x] commit pending |
 | 2.2 | M2 Algebraic expression construction | `algebra` | 252 | 253 | `expression-construction` | Partial — `writing-expressions` exists; M2 is more complex construction | Yes | No | 30 | [ ] |
 | 2.3 | M6 Reverse-operation puzzles | `algebra` | 282* | 283* | Reuse `inverse-operations` | **YES** — `inverse-operations` + `inverse-ops-mistake` cover this; map new questions to existing SC | Yes | No | 30 | [ ] |
 | 2.4 | M11 Nth-term expressions | `sequences` | 152 | 153 | Reuse `find-nth-term` | **YES** — `find-nth-term` + `nth-term-steps` exist; confirm expression-format questions covered | Yes | No | 30 | [ ] |
