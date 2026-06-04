@@ -401,10 +401,10 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose }) {
   );
 }
 
-// Split (master-detail) layout only kicks in when there's genuine horizontal
-// room. 1180px keeps iPad portrait (incl. 12.9" Pro at 1024px) on the clean
-// single-column layout; landscape iPads and desktops get the split view.
-const SPLIT_BREAKPOINT = 1180;
+// Split (master-detail) layout: roster on the left, pupil detail on the right.
+// Kicks in at 1024px so iPad portrait (incl. 12.9" Pro at 1024px) keeps the
+// two-panel view; phones and small tablets fall back to single-column.
+const SPLIT_BREAKPOINT = 1024;
 
 // ── Main dashboard ──
 export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail }) {
