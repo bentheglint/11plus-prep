@@ -93,7 +93,7 @@ function StatCard({ icon: Icon, value, label, sub, accent }) {
         <Icon className="w-5 h-5" />
       </div>
       <div className="min-w-0">
-        <div className="text-2xl font-bold text-slate-800 leading-none mb-0.5">{value ?? '—'}</div>
+        <div className="text-2xl font-bold text-slate-800 leading-none mb-0.5 truncate">{value ?? '—'}</div>
         <div className="text-xs font-medium text-slate-600">{label}</div>
         {sub && <div className="text-xs text-slate-400 mt-0.5">{sub}</div>}
       </div>
@@ -102,7 +102,7 @@ function StatCard({ icon: Icon, value, label, sub, accent }) {
 }
 
 // ── Pupil row ──
-function PupilRow({ pupil, onClick }) {
+function PupilRow({ pupil, onClick, isActive }) {
   const inactive = pupil.days_inactive;
   const atRisk = inactive !== null && inactive > 6;
   const statusColor = pupil.overdue_assignments > 0
@@ -128,7 +128,13 @@ function PupilRow({ pupil, onClick }) {
     <button
       type="button"
       onClick={onClick}
-      className={`w-full flex items-center gap-3 p-4 text-left hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0 ${atRisk ? 'bg-amber-50/40' : ''}`}
+      className={`w-full flex items-center gap-3 p-4 text-left transition-colors border-b border-slate-100 last:border-b-0 ${
+        isActive
+          ? 'bg-[#F8F7FF] border-l-[3px] border-l-[#7C3AED]'
+          : atRisk
+          ? 'bg-amber-50/40 hover:bg-amber-50/60'
+          : 'hover:bg-slate-50'
+      }`}
     >
       {/* At-risk indicator */}
       <div className={`w-2 h-2 rounded-full flex-shrink-0 mt-0.5 ${
@@ -139,19 +145,19 @@ function PupilRow({ pupil, onClick }) {
 
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-0.5">
-          <span className="font-semibold text-slate-800 text-sm">{pupil.display_name}</span>
+          <span className="font-semibold text-slate-800 text-sm truncate">{pupil.display_name}</span>
           {pupil.year_group && (
-            <span className="text-xs text-slate-400">Y{pupil.year_group}</span>
+            <span className="text-xs text-slate-400 flex-shrink-0">Y{pupil.year_group}</span>
           )}
         </div>
-        <div className="flex items-center gap-3 text-xs text-slate-500">
-          <span className={atRisk ? 'text-amber-600 font-medium' : ''}>{lastActiveLabel}</span>
+        <div className="flex items-center gap-2 text-xs text-slate-500 min-w-0 overflow-hidden">
+          <span className={`flex-shrink-0 ${atRisk ? 'text-amber-600 font-medium' : ''}`}>{lastActiveLabel}</span>
           {pupil.weakest_topic && (
             <>
-              <span className="text-slate-300">·</span>
-              <span className="flex items-center gap-1">
-                <TrendingDown className="w-3 h-3 text-slate-400" />
-                {topicLabel(pupil.weakest_topic)} {pupil.weakest_accuracy !== null ? `(${pupil.weakest_accuracy}%)` : ''}
+              <span className="text-slate-300 flex-shrink-0">·</span>
+              <span className="flex items-center gap-1 min-w-0">
+                <TrendingDown className="w-3 h-3 text-slate-400 flex-shrink-0" />
+                <span className="truncate">{topicLabel(pupil.weakest_topic)}{pupil.weakest_accuracy !== null ? ` (${pupil.weakest_accuracy}%)` : ''}</span>
               </span>
             </>
           )}
@@ -610,17 +616,12 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
 
             <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
               {roster.map(pupil => (
-                <button
+                <PupilRow
                   key={pupil.id}
-                  type="button"
+                  pupil={pupil}
+                  isActive={activePupil?.id === pupil.id && isSplit}
                   onClick={() => setActivePupil(pupil)}
-                  className={`w-full text-left transition-colors border-b border-slate-100 last:border-b-0
-                    ${activePupil?.id === pupil.id && isSplit
-                      ? 'bg-[#F8F7FF] border-l-[3px] border-l-[#7C3AED]'
-                      : 'hover:bg-slate-50'}`}
-                >
-                  <PupilRow pupil={pupil} onClick={() => {}} />
-                </button>
+                />
               ))}
             </div>
 
