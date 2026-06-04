@@ -144,11 +144,16 @@ function PupilRow({ pupil, onClick, isActive }) {
       }`} />
 
       <div className="flex-1 min-w-0">
+        {/* Name line — status badge sits here (right-aligned) so it never
+            squeezes the activity/weak-topic line below it. */}
         <div className="flex items-center gap-2 mb-0.5">
           <span className="font-semibold text-slate-800 text-sm truncate">{pupil.display_name}</span>
           {pupil.year_group && (
             <span className="text-xs text-slate-400 flex-shrink-0">Y{pupil.year_group}</span>
           )}
+          <span className={`ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full ${statusColor}`}>
+            {statusLabel}
+          </span>
         </div>
         <div className="flex items-center gap-2 text-xs text-slate-500 min-w-0 overflow-hidden">
           <span className={`flex-shrink-0 ${atRisk ? 'text-amber-600 font-medium' : ''}`}>{lastActiveLabel}</span>
@@ -164,12 +169,7 @@ function PupilRow({ pupil, onClick, isActive }) {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 flex-shrink-0">
-        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${statusColor}`}>
-          {statusLabel}
-        </span>
-        <ChevronRight className="w-4 h-4 text-slate-300" />
-      </div>
+      <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0" />
     </button>
   );
 }

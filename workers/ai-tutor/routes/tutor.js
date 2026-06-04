@@ -127,11 +127,28 @@ export async function handleTutorRoutes(request, env, userId, path) {
     }
 
     // Fetch all per-pupil data in parallel
-    const [lastActiveRows, weeklyRows, topicRows, overdueRows] = await Promise.all([
-      // Last active (most recent quiz per child)
+    const [quizActiveRows, mockActiveRows, lessonActiveRows, weeklyRows, topicRows, overdueRows] = await Promise.all([
+      // Last active — pulled from every activity type, not just quizzes, so a
+      // pupil who did a mock test or micro-lesson (but no quiz) still counts as
+      // active. The three are merged in JS below (date formats differ across
+      // tables, so MAX is taken on parsed timestamps rather than in SQL).
       db.prepare(`
         SELECT child_id, MAX(completed_at) as last_active
         FROM quiz_results
+        WHERE child_id IN (SELECT child_id FROM pupil_tutors WHERE tutor_id = ?)
+        GROUP BY child_id
+      `).bind(userId).all(),
+
+      db.prepare(`
+        SELECT child_id, MAX(completed_at) as last_active
+        FROM mock_test_results
+        WHERE child_id IN (SELECT child_id FROM pupil_tutors WHERE tutor_id = ?)
+        GROUP BY child_id
+      `).bind(userId).all(),
+
+      db.prepare(`
+        SELECT child_id, MAX(completed_at) as last_active
+        FROM lesson_history
         WHERE child_id IN (SELECT child_id FROM pupil_tutors WHERE tutor_id = ?)
         GROUP BY child_id
       `).bind(userId).all(),
@@ -175,9 +192,22 @@ export async function handleTutorRoutes(request, env, userId, path) {
     ]);
 
     // Index by child_id for O(1) lookup
-    const lastActiveMap = Object.fromEntries((lastActiveRows.results || []).map(r => [r.child_id, r.last_active]));
+    const quizActiveMap = Object.fromEntries((quizActiveRows.results || []).map(r => [r.child_id, r.last_active]));
+    const mockActiveMap = Object.fromEntries((mockActiveRows.results || []).map(r => [r.child_id, r.last_active]));
+    const lessonActiveMap = Object.fromEntries((lessonActiveRows.results || []).map(r => [r.child_id, r.last_active]));
     const weeklyMap = Object.fromEntries((weeklyRows.results || []).map(r => [r.child_id, r]));
     const overdueMap = Object.fromEntries((overdueRows.results || []).map(r => [r.child_id, r.overdue_count]));
+
+    // Most recent activity timestamp (ms) across all activity types for a child,
+    // or null if they've never done anything. new Date() handles both the ISO
+    // strings quizzes/lessons store and the "YYYY-MM-DD HH:MM:SS" format.
+    const lastActiveTs = (childId) => {
+      const ts = [quizActiveMap[childId], mockActiveMap[childId], lessonActiveMap[childId]]
+        .filter(Boolean)
+        .map(d => new Date(d).getTime())
+        .filter(t => !Number.isNaN(t));
+      return ts.length ? Math.max(...ts) : null;
+    };
 
     // Weakest topic per child — topicRows already ordered ASC per child, take first per child
     const weakestTopicMap = {};
@@ -187,9 +217,10 @@ export async function handleTutorRoutes(request, env, userId, path) {
 
     const now = Date.now();
     const enrichedRoster = roster.map(child => {
-      const lastActive = lastActiveMap[child.id] || null;
-      const daysInactive = lastActive
-        ? Math.floor((now - new Date(lastActive).getTime()) / 86400000)
+      const lastActiveMs = lastActiveTs(child.id);
+      const lastActive = lastActiveMs !== null ? new Date(lastActiveMs).toISOString() : null;
+      const daysInactive = lastActiveMs !== null
+        ? Math.floor((now - lastActiveMs) / 86400000)
         : null;
       const weekly = weeklyMap[child.id] || null;
       const weakest = weakestTopicMap[child.id] || null;
