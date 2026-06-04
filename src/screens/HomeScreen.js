@@ -6,8 +6,9 @@ import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
 import AssignmentBanner from '../components/AssignmentBanner';
 import { BookOpen as LessonsIcon } from 'lucide-react';
+import { isSpeedReviewAllowlisted } from '../utils/tutorAllowlist';
 
-function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, getToken, onStartAssignment }) {
+function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, getToken, onStartAssignment }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
@@ -235,7 +236,7 @@ function HomeScreen({ currentUser, onSetCurrentUser, onSubjectSelect, onViewProg
         )}
 
         {/* Dev/admin tools — only for specific users */}
-        {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui' || currentUser === 'Dev') && (
+        {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui' || currentUser === 'Dev' || isSpeedReviewAllowlisted(userEmail)) && (
           <div className="flex gap-3 mt-2">
             <button
               onClick={onSpeedReview}

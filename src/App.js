@@ -1786,6 +1786,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     return (
       <HomeScreen
         currentUser={currentUser}
+        userEmail={userEmail}
         onSetCurrentUser={handleSetCurrentUser}
         onSubjectSelect={handleSubjectSelect}
         onViewProgress={() => setCurrentView('progress')}
