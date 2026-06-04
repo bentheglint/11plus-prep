@@ -630,7 +630,9 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
               ))}
             </div>
 
-            <div className="flex items-center gap-4 mt-2 px-1">
+            {/* Dot colour key — labelled so it reads as a legend, not a pupil's status */}
+            <div className="flex items-center flex-wrap gap-x-4 gap-y-1 mt-3 pt-3 px-1 border-t border-slate-100">
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Key</span>
               <div className="flex items-center gap-1.5 text-xs text-slate-400">
                 <div className="w-2 h-2 rounded-full bg-amber-400" /> Inactive 7+ days
               </div>
