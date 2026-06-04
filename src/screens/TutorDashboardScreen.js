@@ -401,6 +401,11 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose }) {
   );
 }
 
+// Split (master-detail) layout only kicks in when there's genuine horizontal
+// room. 1180px keeps iPad portrait (incl. 12.9" Pro at 1024px) on the clean
+// single-column layout; landscape iPads and desktops get the split view.
+const SPLIT_BREAKPOINT = 1180;
+
 // ── Main dashboard ──
 export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail }) {
   const [data, setData] = useState(null);
@@ -408,7 +413,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
   const [error, setError] = useState(null);
   const [activePupil, setActivePupil] = useState(null);
   const [showComposer, setShowComposer] = useState(false);
-  const [isSplit, setIsSplit] = useState(() => typeof window !== 'undefined' && window.innerWidth >= 1024);
+  const [isSplit, setIsSplit] = useState(() => typeof window !== 'undefined' && window.innerWidth >= SPLIT_BREAKPOINT);
   const [showMessaging, setShowMessaging] = useState(false);
   const [classes, setClasses] = useState([]);
   const [copiedInvite, setCopiedInvite] = useState(false);
@@ -482,7 +487,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
   useEffect(() => { loadDashboard(); }, [loadDashboard]);
 
   useEffect(() => {
-    const handler = () => setIsSplit(window.innerWidth >= 1024);
+    const handler = () => setIsSplit(window.innerWidth >= SPLIT_BREAKPOINT);
     window.addEventListener('resize', handler);
     return () => window.removeEventListener('resize', handler);
   }, []);
@@ -520,7 +525,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
       {/* Loading skeleton */}
       {loading && (
         <div className="space-y-3 animate-pulse">
-          <div className="grid grid-cols-2 gap-3">
+          <div className={`grid gap-3 ${isSplit ? 'grid-cols-1' : 'grid-cols-2'}`}>
             {[1,2,3,4].map(i => (
               <div key={i} className="h-20 bg-white rounded-2xl border border-slate-100" />
             ))}
@@ -557,7 +562,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
           {/* Pulse cards */}
           {pulse && (
             <div className="mb-5">
-              <div className="grid grid-cols-2 gap-3">
+              <div className={`grid gap-3 ${isSplit ? 'grid-cols-1' : 'grid-cols-2'}`}>
                 <StatCard
                   icon={Activity}
                   value={`${pulse.active_this_week}/${pulse.total_pupils}`}
