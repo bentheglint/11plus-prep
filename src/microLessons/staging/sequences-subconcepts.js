@@ -1679,8 +1679,21 @@ export const sequencesSubConcepts = [
               getOptions: (v) => generateDistractors(v.testAnswer),
               correctAnswer: (v) => v.testAnswer,
               feedback: {
-                correct: (v) => `Brilliant! **${v.testAnswer}** ✓`,
-                incorrect: (v) => `Not quite! The answer is **${v.testAnswer}**.`
+                correct: (v) => {
+                  const working = v.sequenceType === "square" ? `${v.testN} × ${v.testN}`
+                    : v.sequenceType === "cube" ? `${v.testN} × ${v.testN} × ${v.testN}`
+                    : `1 + 2 + 3 + ... + ${v.testN}`;
+                  return `Brilliant! ${working} = **${v.testAnswer}** ✓`;
+                },
+                incorrect: (v) => {
+                  const working = v.sequenceType === "square" ? `${v.testN} × ${v.testN}`
+                    : v.sequenceType === "cube" ? `${v.testN} × ${v.testN} × ${v.testN}`
+                    : `1 + 2 + 3 + ... + ${v.testN}`;
+                  const rule = v.sequenceType === "square" ? "multiply the number by itself"
+                    : v.sequenceType === "cube" ? "multiply the number by itself three times"
+                    : "add up every number from 1 to that one";
+                  return `Not quite! To find the ${v.testN}th ${v.sequenceType} number, ${rule}: ${working} = **${v.testAnswer}**.`;
+                }
               }
             }
           },

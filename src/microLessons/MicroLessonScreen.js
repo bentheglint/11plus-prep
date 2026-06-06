@@ -51,6 +51,14 @@ function getSubjectTheme(topicKey) {
   return { icon: Calculator, accent: 'blue', bg: 'bg-blue-100', text: 'text-blue-600', badge: 'bg-blue-50 text-blue-700', label: 'Maths' };
 }
 
+// ---- Lesson data resolver ----
+// Lesson screens may define props/content/body either as functions of the
+// variable set or as plain values. Resolve both forms safely — calling a
+// plain object as a function crashes the whole lesson (see divisibility-keyfact).
+function resolveValue(val, vars) {
+  return typeof val === 'function' ? val(vars) : val;
+}
+
 // ---- Bold text renderer: converts **text** to <strong> ----
 function renderBoldText(text) {
   if (!text) return null;
@@ -894,7 +902,7 @@ export default function MicroLessonScreen({
         : screenData.bodyParts;
       for (const part of parts) {
         if (part.type === 'visual' && part.component === 'WorkedExample') {
-          const vProps = part.props(activeVariables);
+          const vProps = resolveValue(part.props, activeVariables);
           if (!vProps.allRevealed) {
             return revealedSteps >= (vProps.steps?.length || 0);
           }
@@ -905,18 +913,18 @@ export default function MicroLessonScreen({
     if (screenData.interaction.type === 'tap-to-reveal') {
       // For grid: all cells must be revealed
       if (screenData.visual?.component === 'GridModel') {
-        const props = screenData.visual.props(activeVariables);
+        const props = resolveValue(screenData.visual.props, activeVariables);
         const totalCells = (props.rows || 2) * (props.cols || 2);
         return revealedCells.length >= totalCells;
       }
       // For worked example: all steps revealed
       if (screenData.visual?.component === 'WorkedExample') {
-        const props = screenData.visual.props(activeVariables);
+        const props = resolveValue(screenData.visual.props, activeVariables);
         return revealedSteps >= (props.steps?.length || 0);
       }
       // For column method: all steps revealed
       if (screenData.visual?.component === 'ColumnMethod') {
-        const props = screenData.visual.props(activeVariables);
+        const props = resolveValue(screenData.visual.props, activeVariables);
         return revealedSteps >= (props.steps?.length || 0);
       }
       return true;
@@ -941,7 +949,7 @@ export default function MicroLessonScreen({
         : screenData.bodyParts;
       for (const part of parts) {
         if (part.type === 'visual' && part.component === 'WorkedExample') {
-          const vProps = part.props(activeVariables);
+          const vProps = resolveValue(part.props, activeVariables);
           if (!vProps.allRevealed && revealedSteps < (vProps.steps?.length || 0)) {
             return 'Tap to reveal each step above';
           }
@@ -1237,7 +1245,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
     const Component = visualComponents[componentName];
     if (!Component) return null;
 
-    const props = screenData.visual.props(activeVariables);
+    const props = resolveValue(screenData.visual.props, activeVariables);
 
     // Add tap-to-reveal handlers
     if (componentName === 'GridModel') {
@@ -1489,7 +1497,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
 
               {/* Title */}
               <h2 className="text-2xl font-heading font-bold text-slate-800 mb-4">
-                {screenData.title(activeVariables)}
+                {resolveValue(screenData.title, activeVariables)}
               </h2>
 
               {screenData.bodyParts ? (
@@ -1497,7 +1505,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                 <div className="space-y-4 mb-6">
                   {(typeof screenData.bodyParts === 'function' ? screenData.bodyParts(activeVariables) : screenData.bodyParts).map((part, idx) => {
                     if (part.type === 'text') {
-                      const text = part.content(activeVariables);
+                      const text = resolveValue(part.content, activeVariables);
                       return (
                         <div key={idx} className="text-lg text-gray-600 leading-relaxed space-y-2 break-words">
                           {text.split('\n').filter(l => l.trim()).map((line, j) => (
@@ -1513,7 +1521,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                       if (screenData?.interaction?.type === 'match-pairs') return null;
                       const Component = visualComponents[part.component];
                       if (!Component) return null;
-                      const vProps = part.props(activeVariables);
+                      const vProps = resolveValue(part.props, activeVariables);
                       // Handle WorkedExample tap-to-reveal inside bodyParts
                       if (part.component === 'WorkedExample' && !vProps.allRevealed) {
                         return (
@@ -1540,7 +1548,7 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
                   {/* Body text (supports \n for multi-paragraph) */}
                   {screenData.body && (
                     <div className="text-lg text-gray-600 mb-6 leading-relaxed space-y-2 break-words">
-                      {screenData.body(activeVariables).split('\n').filter(line => line.trim()).map((line, i) => (
+                      {resolveValue(screenData.body, activeVariables).split('\n').filter(line => line.trim()).map((line, i) => (
                         <p key={i}>{renderBoldText(line)}</p>
                       ))}
                     </div>

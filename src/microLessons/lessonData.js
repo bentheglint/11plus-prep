@@ -435,11 +435,32 @@ export const lessonBank = {
                 visual: null,
                 interaction: null
               },
-              // ---- Screen 4: ADD + YOUR TURN ----
+              // ---- Screen 4: ADD THE ROWS (completes the worked example) ----
+              {
+                type: "teach",
+                title: () => "Step 3: Add the two rows!",
+                body: (v) => `You've worked out both rows: **${v.partial1}** and **${v.partial2}**.\nThe final step: **add them together**. ${v.partial1} + ${v.partial2} = **${v.product}** — so ${v.numA} × ${v.numB} = **${v.product}** ${v.unit} ✓`,
+                visual: {
+                  component: "ColumnMethod",
+                  props: (v) => ({
+                    topNumber: v.numA,
+                    bottomNumber: v.numB,
+                    steps: [
+                      { label: `${v.numA} × ${v.numBOnes}`, partial: v.partial1, carrying: v.carry1 },
+                      { label: `${v.numA} × ${v.numBTens}0`, partial: v.partial2, carrying: v.carry2 }
+                    ],
+                    answer: v.product,
+                    showCarrying: false,
+                    allRevealed: true
+                  })
+                },
+                interaction: null
+              },
+              // ---- Screen 5: YOUR TURN (fresh numbers — interact uses its own variable set) ----
               {
                 type: "interact",
-                title: () => "Step 3: Add the two rows!",
-                body: (v) => `Nearly there! You've worked out **${v.partial1}** and **${v.partial2}**.\nNow add them together to get the final answer!`,
+                title: () => "Your turn!",
+                body: (v) => `Here's a brand new one. ${v.name} ${v.scenario} — that's **${v.numA} × ${v.numB}**.\nThe two rows have been worked out for you: **${v.partial1}** and **${v.partial2}**. Add them together to get the final answer!`,
                 visual: {
                   component: "ColumnMethod",
                   props: (v) => ({
@@ -466,7 +487,7 @@ export const lessonBank = {
                   }
                 }
               },
-              // ---- Screen 5: SUMMARY ----
+              // ---- Screen 6: SUMMARY ----
               {
                 type: "consolidate",
                 title: () => "Three steps to remember!",
@@ -573,8 +594,8 @@ export const lessonBank = {
               },
               {
                 type: "interact",
-                title: (v) => "Now add them up!",
-                body: (v) => `You've found the four parts. Now add them together to get **${v.numA} × ${v.numB}**.`,
+                title: (v) => "Your turn — add them up!",
+                body: (v) => `Now try a new one! ${v.name} is ${v.scenario}. The grid shows **${v.numA} × ${v.numB}** already split into four parts. Add the four parts together to get the answer.`,
                 visual: {
                   component: "GridModel",
                   props: (v) => ({
@@ -1305,19 +1326,28 @@ export const lessonBank = {
                 name: "Lily", scenario: "A shop sells",
                 numA: 36, numB: 4, product: 144, unit: "T-shirts",
                 // 4×6=24 → write 4, carry 2; 4×3=12+2=14
-                carry: [{ col: 1, digit: 2 }]
+                carry: [{ col: 1, digit: 2 }],
+                onesA: 6, tensA: 3,
+                step1Multiply: "4 × 6 = 24", step1Write: 4, step1Carry: 2,
+                step2Multiply: "4 × 3 = 12", step2Add: "12 + 2 = 14", step2Write: 14
               },
               {
                 name: "Josh", scenario: "A class needs",
                 numA: 27, numB: 6, product: 162, unit: "pencils",
                 // 6×7=42 → write 2, carry 4; 6×2=12+4=16
-                carry: [{ col: 1, digit: 4 }]
+                carry: [{ col: 1, digit: 4 }],
+                onesA: 7, tensA: 2,
+                step1Multiply: "6 × 7 = 42", step1Write: 2, step1Carry: 4,
+                step2Multiply: "6 × 2 = 12", step2Add: "12 + 4 = 16", step2Write: 16
               },
               {
                 name: "Priya", scenario: "A baker makes",
                 numA: 53, numB: 8, product: 424, unit: "biscuits",
                 // 8×3=24 → write 4, carry 2; 8×5=40+2=42
-                carry: [{ col: 1, digit: 2 }]
+                carry: [{ col: 1, digit: 2 }],
+                onesA: 3, tensA: 5,
+                step1Multiply: "8 × 3 = 24", step1Write: 4, step1Carry: 2,
+                step2Multiply: "8 × 5 = 40", step2Add: "40 + 2 = 42", step2Write: 42
               }
             ],
             screens: [
@@ -1341,18 +1371,37 @@ export const lessonBank = {
               {
                 type: "teach",
                 title: () => "Multiply digit by digit",
-                body: (v) => `Start from the **right** (the last digit). Multiply each digit by ${v.numB}. If the answer is 10 or more, **write the last digit and carry the rest**. Tap to see!`,
-                visual: {
-                  component: "ColumnMethod",
-                  props: (v) => ({
-                    topNumber: v.numA,
-                    bottomNumber: v.numB,
-                    steps: [{ partial: v.product, carrying: v.carry }],
-                    answer: v.product,
-                    showCarrying: true,
-                    allRevealed: true
-                  })
-                },
+                bodyParts: (v) => [
+                  {
+                    type: 'text',
+                    content: (v) => `Start from the **right** (the last digit). Multiply each digit by ${v.numB}. If the answer is 10 or more, **write the last digit and carry the rest**. Tap to see each step!`
+                  },
+                  {
+                    type: 'visual',
+                    component: 'ColumnMethod',
+                    props: (v) => ({
+                      topNumber: v.numA,
+                      bottomNumber: v.numB,
+                      steps: [{ partial: v.product, carrying: v.carry }],
+                      answer: v.product,
+                      showCarrying: true,
+                      allRevealed: true
+                    })
+                  },
+                  {
+                    type: 'visual',
+                    component: 'WorkedExample',
+                    props: (v) => ({
+                      steps: [
+                        { text: `Start at the right: ${v.numB} × ${v.onesA} (ones digit of ${v.numA})`, why: v.step1Multiply, result: `Write ${v.step1Write}, carry ${v.step1Carry}` },
+                        { text: `Move left: ${v.numB} × ${v.tensA} (tens digit of ${v.numA})`, why: v.step2Multiply },
+                        { text: `Add the carry: ${v.step2Add}`, why: `Write ${v.step2Write}` },
+                        { text: `Done!`, result: `${v.numA} × ${v.numB} = ${v.product}` }
+                      ]
+                    })
+                  }
+                ],
+                visual: null,
                 interaction: { type: "tap-to-reveal" }
               },
               {
@@ -1364,10 +1413,9 @@ export const lessonBank = {
                   props: (v) => ({
                     topNumber: v.numA,
                     bottomNumber: v.numB,
-                    steps: [{ partial: v.product, carrying: v.carry }],
+                    steps: [],
                     answer: v.product,
-                    showCarrying: true,
-                    allRevealed: true,
+                    showCarrying: false,
                     hideAnswer: true
                   })
                 },
@@ -1474,10 +1522,9 @@ export const lessonBank = {
                   props: (v) => ({
                     topNumber: v.numA,
                     bottomNumber: v.numB,
-                    steps: [{ partial: v.product, carrying: v.carryCorrect }],
+                    steps: [],
                     answer: v.product,
-                    showCarrying: true,
-                    allRevealed: true,
+                    showCarrying: false,
                     hideAnswer: true
                   })
                 },
@@ -1614,10 +1661,9 @@ export const lessonBank = {
                   props: (v) => ({
                     topNumber: v.numA,
                     bottomNumber: v.onesDigit,
-                    steps: [{ partial: v.result, carrying: v.carry }],
+                    steps: [],
                     answer: v.result,
-                    showCarrying: true,
-                    allRevealed: true,
+                    showCarrying: false,
                     hideAnswer: true
                   })
                 },
@@ -1745,10 +1791,9 @@ export const lessonBank = {
                   props: (v) => ({
                     topNumber: v.numA,
                     bottomNumber: v.onesDigit,
-                    steps: [{ partial: v.result, carrying: v.carryCorrect }],
+                    steps: [],
                     answer: v.result,
-                    showCarrying: true,
-                    allRevealed: true,
+                    showCarrying: false,
                     hideAnswer: true
                   })
                 },
@@ -1887,10 +1932,9 @@ export const lessonBank = {
                   props: (v) => ({
                     topNumber: v.numA,
                     bottomNumber: v.tensValue,
-                    steps: [{ partial: v.result, carrying: v.carry }],
+                    steps: [],
                     answer: v.result,
-                    showCarrying: true,
-                    allRevealed: true,
+                    showCarrying: false,
                     hideAnswer: true
                   })
                 },
@@ -2388,7 +2432,7 @@ export const lessonBank = {
               {
                 type: "interact",
                 title: () => "Add the rows!",
-                body: (v) => `You've worked out **${v.partial1}** (×${v.numBOnes}) and **${v.partial2}** (×${v.numBTens}0). Now add them together!`,
+                body: (v) => `Here's a new one: **${v.numA} × ${v.numB}**. The two rows have been worked out for you — **${v.partial1}** (×${v.numBOnes}) and **${v.partial2}** (×${v.numBTens}0). Now add them together!`,
                 visual: {
                   component: "ColumnMethod",
                   props: (v) => ({
@@ -2989,17 +3033,23 @@ export const lessonBank = {
             templateType: "spot-the-mistake",
             learningGoal: ["How to check your multiplication using estimation", "Using estimation to catch big mistakes"],
             variableSets: [
+              // Each set demonstrates a distinct documented error type, and the
+              // rounded estimate lands close to the true product so the wrong
+              // answer clearly stands out (Oracle-verified, June 2026).
               {
-                name: "Kayla", numA: 24, numB: 13, product: 312,
-                wrongProduct: 932, roundA: 20, roundB: 10, estimate: 200,
-                numATens: 20, numAOnes: 4, numBTens: 10, numBOnes: 3
+                // Wrong answer = forgot the placeholder zero (29 + 29)
+                name: "Kayla", numA: 29, numB: 11, product: 319,
+                wrongProduct: 58, roundA: 30, roundB: 10, estimate: 300,
+                numATens: 20, numAOnes: 9, numBTens: 10, numBOnes: 1
               },
               {
-                name: "Jack", numA: 35, numB: 16, product: 560,
-                wrongProduct: 5600, roundA: 40, roundB: 20, estimate: 800,
-                numATens: 30, numAOnes: 5, numBTens: 10, numBOnes: 6
+                // Wrong answer = place-value slip (extra zero)
+                name: "Jack", numA: 38, numB: 21, product: 798,
+                wrongProduct: 7980, roundA: 40, roundB: 20, estimate: 800,
+                numATens: 30, numAOnes: 8, numBTens: 20, numBOnes: 1
               },
               {
+                // Wrong answer = added instead of multiplied (19 + 22)
                 name: "Ava", numA: 19, numB: 22, product: 418,
                 wrongProduct: 41, roundA: 20, roundB: 20, estimate: 400,
                 numATens: 10, numAOnes: 9, numBTens: 20, numBOnes: 2

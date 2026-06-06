@@ -863,6 +863,22 @@ export const placevalueSubConcepts = [
             bodyParts: [
               {
                 type: 'text',
+                content: (v) => `Before you compare, meet the **comparison symbols** (the signs that show which number is bigger). Here's the trick: picture the symbol as a **crocodile's mouth**. The crocodile is greedy — its open mouth always points at the **bigger** number!`
+              },
+              {
+                type: 'visual',
+                component: 'WorkedExample',
+                props: (v) => ({
+                  steps: [
+                    { text: "< means less than — the open mouth points RIGHT, so the first number is the smaller one", why: "34 < 51: the mouth opens towards 51 because 51 is bigger" },
+                    { text: "> means greater than — the open mouth points LEFT, so the first number is the bigger one", why: "85 > 62: the mouth opens towards 85 because 85 is bigger" },
+                    { text: "= means equal to — two level lines, perfectly balanced", why: "470 = 470: both numbers are worth exactly the same, so the crocodile can't choose!" }
+                  ],
+                  allRevealed: true
+                })
+              },
+              {
+                type: 'text',
                 content: (v) => `Line the numbers up in a place value chart. Then compare **column by column**, starting from the **left** (the biggest place).`
               },
               {
@@ -921,7 +937,8 @@ export const placevalueSubConcepts = [
             interaction: {
               type: "multiple-choice",
               question: (v) => `${v.interactNumberAFormatted}  ☐  ${v.interactNumberBFormatted} — which symbol fits?`,
-              getOptions: (v) => ["<", ">", "=", "≤", "≥"],
+              // Only the three taught symbols — ≤/≥ are not KS2 and were never taught
+              getOptions: (v) => ["<", ">", "="],
               correctAnswer: (v) => v.interactResult,
               feedback: {
                 correct: (v) => `That's right! **${v.interactNumberAFormatted} ${v.interactResult} ${v.interactNumberBFormatted}**. The ${v.interactFirstDiffPlace} digit decided it: ${v.interactDigitADiff} vs ${v.interactDigitBDiff} ✓`,

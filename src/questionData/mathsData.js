@@ -15855,10 +15855,10 @@ negativenumbers: {
     {
       id: 53,
       difficulty: 2,
-      question: "A cave is 24 metres below ground level. A climber ascends 19 metres. What is her position relative to ground level?",
-      options: ["-43", "-5", "5", "43", "-19"],
+      question: "A caver (someone who explores caves) is resting in a cave 24 metres below ground level. She climbs 19 metres up towards the surface. What is her position relative to ground level, in metres?",
+      options: ["-43", "-5", "5", "43", "-6"],
       correct: 1,
-      explanation: "Start at -24 and add 19: -24 + 19 = -5. ✓"
+      explanation: "The caver starts at -24 m because she is 24 metres below ground level. Climbing up means adding: -24 + 19 = -5. She is now 5 metres below ground level. ✓"
     },
     {
       id: 54,

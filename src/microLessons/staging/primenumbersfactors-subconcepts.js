@@ -1624,7 +1624,8 @@ export const primenumbersfactorsSubConcepts = [
                   { text: "Add up ALL the digits of the number", why: "e.g. 342 → 3 + 4 + 2 = 9" },
                   { text: "Does 3 go into that total? If yes → divides by 3", why: "9 ÷ 3 = 3 → yes, 342 divides by 3 ✓" },
                   { text: "Does 9 go into that total? If yes → divides by 9", why: "9 ÷ 9 = 1 → yes, 342 divides by 9 ✓" }
-                ]
+                ],
+                allRevealed: true
               }},
               { type: "text", content: "**Other quick checks:**" },
               { type: "visual", component: "WorkedExample", props: {
@@ -1633,7 +1634,8 @@ export const primenumbersfactorsSubConcepts = [
                   { text: "÷5 → does it end in 0 or 5?", why: "720 → ends in 0 → yes" },
                   { text: "÷4 → do the last two digits divide by 4?", why: "528 → 28 ÷ 4 = 7 → yes" },
                   { text: "÷6 → must pass BOTH the ÷2 AND ÷3 checks", why: "342 → even ✓ and digits add to 9 (÷3) ✓ → yes" }
-                ]
+                ],
+                allRevealed: true
               }}
             ],
             interaction: null
@@ -1773,7 +1775,7 @@ export const primenumbersfactorsSubConcepts = [
         variableSets: [
           {
             name: "Grace",
-            scenario: "has 24 red flowers and 36 white flowers to make identical bunches",
+            scenario: "has 24 red flowers and 36 white flowers, and wants to work out the greatest number of identical bunches she can make with no flowers left over",
             numberA: 24,
             numberB: 36,
             needHCF: true,
@@ -1784,28 +1786,30 @@ export const primenumbersfactorsSubConcepts = [
             interactB: 28,
             interactNeedHCF: true,
             interactAnswer: 4,
-            interactAnswerUnit: "equal groups",
-            interactScenario: "has 16 apples and 28 oranges to put into identical bags"
+            interactAnswerUnit: "bags",
+            interactScenario: "has 16 apples and 28 oranges to share into identical bags, with no fruit left over",
+            interactQuestion: "What is the greatest number of identical bags Grace can make?"
           },
           {
             name: "Oscar",
-            scenario: "works out when two gym classes will be on the same day",
+            scenario: "goes to one gym class every 3 days and another every 5 days — both are on today — and wants to work out when they will next fall on the same day",
             numberA: 3,
             numberB: 5,
             needHCF: false,
             answer: 15,
             answerUnit: "days",
-            explanation: "She needs to find when both events HAPPEN TOGETHER → use LCM. LCM(3, 5) = 15. They'll both be on the same day in 15 days",
+            explanation: "He needs to find when both events HAPPEN TOGETHER → use LCM. LCM(3, 5) = 15. They'll both be on the same day in 15 days",
             interactA: 4,
             interactB: 7,
             interactNeedHCF: false,
             interactAnswer: 28,
             interactAnswerUnit: "days",
-            interactScenario: "works out when two swimming lessons will fall on the same day"
+            interactScenario: "goes to two swimming lessons — one every 4 days and one every 7 days. Both lessons are on today",
+            interactQuestion: "In how many days will both swimming lessons next fall on the same day?"
           },
           {
             name: "Finn",
-            scenario: "cuts two ropes into equal pieces with no rope left over",
+            scenario: "has an 18 cm rope and a 30 cm rope, and wants to cut both into equal pieces with no rope left over — he needs to work out the longest each piece can be",
             numberA: 18,
             numberB: 30,
             needHCF: true,
@@ -1817,7 +1821,8 @@ export const primenumbersfactorsSubConcepts = [
             interactNeedHCF: false,
             interactAnswer: 30,
             interactAnswerUnit: "seconds",
-            interactScenario: "works out when two alarms will ring at the same time"
+            interactScenario: "sets two alarms — one rings every 6 seconds and the other every 10 seconds. They have just rung together",
+            interactQuestion: "In how many seconds will the two alarms next ring at the same time?"
           }
         ],
         screens: [
@@ -1854,7 +1859,7 @@ export const primenumbersfactorsSubConcepts = [
           {
             type: "interact",
             title: () => "Try a new problem!",
-            body: (v) => `${v.name} ${v.interactScenario}. The numbers are **${v.interactA}** and **${v.interactB}**. What's the answer?`,
+            body: (v) => `${v.name} ${v.interactScenario}.\n\n**${v.interactQuestion}**`,
             visual: {
               component: "WorkedExample",
               props: (v) => ({
@@ -1865,7 +1870,7 @@ export const primenumbersfactorsSubConcepts = [
             },
             interaction: {
               type: "multiple-choice",
-              question: (v) => `The answer is:`,
+              question: (v) => v.interactQuestion,
               getOptions: (v) => generateDistractors(v.interactAnswer),
               correctAnswer: (v) => v.interactAnswer,
               feedback: {
