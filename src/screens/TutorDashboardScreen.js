@@ -7,6 +7,9 @@ import {
 import { motion } from '../components/Motion';
 import PupilDetailScreen from './PupilDetailScreen';
 import { TutorMessagingScreen } from './MessagingScreen';
+import TutorPulseDetail from './TutorPulseDetail';
+import { SUBJECT_TOPICS, topicLabel } from '../utils/topicCatalogue';
+import { buildDashboardData } from '../utils/tutorPulse';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -21,64 +24,11 @@ async function apiFetch(path, getToken, options = {}) {
   return data;
 }
 
-// Subject + topic picker data for the assignment composer
-const SUBJECT_TOPICS = {
-  maths: {
-    label: 'Maths',
-    topics: [
-      { key: 'percentages', label: 'Percentages' },
-      { key: 'decimals', label: 'Decimals' },
-      { key: 'longdivision', label: 'Long Division' },
-      { key: 'ratio', label: 'Ratio & Proportion' },
-      { key: 'fractions', label: 'Fractions' },
-      { key: 'longmultiplication', label: 'Long Multiplication' },
-      { key: 'algebra', label: 'Algebra' },
-      { key: 'placevalue', label: 'Place Value' },
-      { key: 'negativenumbers', label: 'Negative Numbers' },
-      { key: 'primenumbersfactors', label: 'Prime Numbers & Factors' },
-      { key: 'areaperimeter', label: 'Area & Perimeter' },
-      { key: 'volume', label: 'Volume' },
-      { key: 'anglesshapes', label: 'Angles & Shapes' },
-      { key: 'sequences', label: 'Sequences' },
-      { key: 'datahandling', label: 'Data Handling' },
-      { key: 'speeddistancetime', label: 'Speed, Distance, Time' },
-    ],
-  },
-  english: {
-    label: 'English',
-    topics: [
-      { key: 'comprehension', label: 'Comprehension' },
-      { key: 'spelling', label: 'Spelling' },
-      { key: 'punctuation', label: 'Punctuation' },
-      { key: 'grammar', label: 'Grammar' },
-      { key: 'vocabulary', label: 'Vocabulary' },
-    ],
-  },
-  verbalreasoning: {
-    label: 'Verbal Reasoning',
-    topics: [
-      { key: 'synonyms', label: 'Synonyms' },
-      { key: 'antonyms', label: 'Antonyms' },
-      { key: 'verbalAnalogies', label: 'Verbal Analogies' },
-      { key: 'oddTwoOut', label: 'Odd Two Out' },
-      { key: 'compoundWords', label: 'Compound Words' },
-      { key: 'hiddenWords', label: 'Hidden Words' },
-      { key: 'letterCodes', label: 'Letter Codes' },
-      { key: 'numberSeries', label: 'Number Series' },
-      { key: 'letterSums', label: 'Letter Sums' },
-    ],
-  },
-};
-
-const TOPIC_LABELS = Object.values(SUBJECT_TOPICS).flatMap(s =>
-  s.topics.map(t => ({ key: t.key, label: t.label, subject: s.label }))
-);
-function topicLabel(key) {
-  return TOPIC_LABELS.find(t => t.key === key)?.label || key;
-}
+// Subject + topic picker data lives in utils/topicCatalogue (shared with
+// TutorPulseDetail).
 
 // ── Pulse stat card ──
-function StatCard({ icon: Icon, value, label, sub, accent }) {
+function StatCard({ icon: Icon, value, label, sub, accent, onClick, active }) {
   const accentMap = {
     purple: 'bg-[#F8F7FF] text-[#7C3AED]',
     green:  'bg-[#F0FDF4] text-[#16A34A]',
@@ -87,16 +37,42 @@ function StatCard({ icon: Icon, value, label, sub, accent }) {
   };
   const iconBg = accentMap[accent] || accentMap.purple;
 
-  return (
-    <div className="bg-white rounded-2xl p-4 flex items-start gap-3 shadow-sm border border-slate-100">
+  const borderClass = active
+    ? 'border-[#7C3AED]'
+    : onClick
+    ? 'border-slate-100 hover:border-slate-200 hover:shadow-md'
+    : 'border-slate-100';
+
+  const inner = (
+    <>
       <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${iconBg}`}>
         <Icon className="w-5 h-5" />
       </div>
-      <div className="min-w-0">
+      <div className="min-w-0 flex-1">
         <div className="text-2xl font-bold text-slate-800 leading-none mb-0.5 truncate">{value ?? '—'}</div>
         <div className="text-xs font-medium text-slate-600">{label}</div>
         {sub && <div className="text-xs text-slate-400 mt-0.5">{sub}</div>}
       </div>
+      {onClick && <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0 self-center" />}
+    </>
+  );
+
+  if (onClick) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label={label}
+        className={`bg-white rounded-2xl p-4 flex items-start gap-3 text-left shadow-sm border transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED] focus-visible:ring-offset-1 ${borderClass}`}
+      >
+        {inner}
+      </button>
+    );
+  }
+
+  return (
+    <div className={`bg-white rounded-2xl p-4 flex items-start gap-3 shadow-sm border ${borderClass}`}>
+      {inner}
     </div>
   );
 }
@@ -231,12 +207,12 @@ function EmptyState({ tutor, getToken, onViewMessages }) {
 }
 
 // ── Assignment composer (redesigned with topic picker) ──
-function AssignmentComposer({ roster, classes, getToken, onCreated, onClose }) {
-  const [title, setTitle] = useState('');
+function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, initialItems, initialTitle }) {
+  const [title, setTitle] = useState(initialTitle || '');
   const [dueDate, setDueDate] = useState('');
   const [targetType, setTargetType] = useState('class');
   const [targetId, setTargetId] = useState('');
-  const [items, setItems] = useState([{ itemType: 'topic', subject: 'maths', topicKey: '' }]);
+  const [items, setItems] = useState(initialItems?.length ? initialItems : [{ itemType: 'topic', subject: 'maths', topicKey: '' }]);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(null);
 
@@ -411,12 +387,37 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [activePupil, setActivePupil] = useState(null);
+  // One occupant for the detail pane — a pupil OR a pulse-card detail, never
+  // both. A single value makes the conflicting state unrepresentable.
+  // null | { type: 'pupil', pupil } | { type: 'card', key: 'activity'|'accuracy'|'overdue'|'weakspot' }
+  const [activePane, setActivePane] = useState(null);
   const [showComposer, setShowComposer] = useState(false);
+  const [composerPrefill, setComposerPrefill] = useState(null); // { initialItems, initialTitle } | null
   const [isSplit, setIsSplit] = useState(() => typeof window !== 'undefined' && window.innerWidth >= SPLIT_BREAKPOINT);
   const [showMessaging, setShowMessaging] = useState(false);
+  const [messagingChild, setMessagingChild] = useState(null); // { id, name, parentName } | null
   const [classes, setClasses] = useState([]);
   const [copiedInvite, setCopiedInvite] = useState(false);
+
+  const activePupil = activePane?.type === 'pupil' ? activePane.pupil : null;
+  const activeCardKey = activePane?.type === 'card' ? activePane.key : null;
+
+  const openMessaging = (child = null) => {
+    setMessagingChild(child);
+    setShowMessaging(true);
+  };
+  const closeMessaging = () => {
+    setShowMessaging(false);
+    setMessagingChild(null);
+  };
+  const openComposerForTopic = ({ subject, topicKey, title }) => {
+    setComposerPrefill({ initialItems: [{ itemType: 'topic', subject, topicKey }], initialTitle: title });
+    setShowComposer(true);
+  };
+  const closeComposer = () => {
+    setShowComposer(false);
+    setComposerPrefill(null);
+  };
 
   const loadDashboard = useCallback(async () => {
     // Dev preview: inject mock data when getToken is unavailable
@@ -429,37 +430,48 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
     }
     const IS_PREVIEW = previewParam === 'tutorDashboard';
     if (IS_PREVIEW) {
+      // The mock supplies RAW rows and derives roster + pulse through the same
+      // buildDashboardData the Worker uses, so the preview cannot drift from
+      // the real payload shape.
+      const now = Date.now();
+      const day = 86400000;
+      const mock = buildDashboardData({
+        roster: [
+          { id: 'c1', display_name: 'Evie', year_group: 5, target_school: 'Bournemouth School for Girls', parent_name: 'Sarah' },
+          { id: 'c2', display_name: 'James', year_group: 5, target_school: 'Parkstone Grammar', parent_name: 'Mark' },
+          { id: 'c3', display_name: 'Priya', year_group: 5, target_school: 'Poole Grammar', parent_name: 'Anita' },
+          { id: 'c4', display_name: 'Tom', year_group: 5, target_school: 'Bournemouth School', parent_name: 'Claire' },
+        ],
+        quizActiveRows: [
+          { child_id: 'c1', last_active: new Date(now).toISOString() },
+          { child_id: 'c2', last_active: new Date(now - 3 * day).toISOString() },
+          { child_id: 'c3', last_active: new Date(now - 9 * day).toISOString() },
+          { child_id: 'c4', last_active: new Date(now - 1 * day).toISOString() },
+        ],
+        mockActiveRows: [],
+        lessonActiveRows: [],
+        weeklyRows: [
+          { child_id: 'c1', quiz_count: 5, accuracy: 0.78 },
+          { child_id: 'c2', quiz_count: 2, accuracy: 0.61 },
+          { child_id: 'c4', quiz_count: 3, accuracy: 0.82 },
+        ],
+        // Ordered accuracy ASC per child, matching the Worker query
+        topicRows: [
+          { child_id: 'c1', topic_key: 'longdivision', subject: 'maths', accuracy: 0.52, quiz_count: 3 },
+          { child_id: 'c1', topic_key: 'fractions', subject: 'maths', accuracy: 0.55, quiz_count: 2 },
+          { child_id: 'c2', topic_key: 'fractions', subject: 'maths', accuracy: 0.44, quiz_count: 2 },
+          { child_id: 'c3', topic_key: 'sequences', subject: 'maths', accuracy: 0.38, quiz_count: 2 },
+          { child_id: 'c3', topic_key: 'fractions', subject: 'maths', accuracy: 0.45, quiz_count: 2 },
+          { child_id: 'c4', topic_key: 'anglesshapes', subject: 'maths', accuracy: 0.65, quiz_count: 4 },
+        ],
+        overdueRows: [
+          { child_id: 'c2', assignment_id: 'a1', title: 'Week 2 fractions', due_date: new Date(now - 3 * day).toISOString().slice(0, 10) },
+        ],
+        now,
+      });
       setData({
         tutor: { id: 'dev', name: 'Mary Jones', tutor_code: 'MARY-XZ7Q', bio: '11+ GL specialist, Bournemouth.' },
-        roster: [
-          { id: 'c1', display_name: 'Evie', year_group: 5, target_school: 'Bournemouth School for Girls',
-            last_active: new Date(Date.now() - 0).toISOString(), days_inactive: 0,
-            quizzes_this_week: 5, accuracy_this_week: 78,
-            weakest_topic: 'longdivision', weakest_subject: 'maths', weakest_accuracy: 52,
-            overdue_assignments: 0, assignment_status: 'on_track' },
-          { id: 'c2', display_name: 'James', year_group: 5, target_school: 'Parkstone Grammar',
-            last_active: new Date(Date.now() - 3 * 86400000).toISOString(), days_inactive: 3,
-            quizzes_this_week: 2, accuracy_this_week: 61,
-            weakest_topic: 'fractions', weakest_subject: 'maths', weakest_accuracy: 44,
-            overdue_assignments: 1, assignment_status: 'overdue' },
-          { id: 'c3', display_name: 'Priya', year_group: 5, target_school: 'Poole Grammar',
-            last_active: new Date(Date.now() - 9 * 86400000).toISOString(), days_inactive: 9,
-            quizzes_this_week: 0, accuracy_this_week: null,
-            weakest_topic: 'sequences', weakest_subject: 'maths', weakest_accuracy: 38,
-            overdue_assignments: 0, assignment_status: 'none' },
-          { id: 'c4', display_name: 'Tom', year_group: 5, target_school: 'Bournemouth School',
-            last_active: new Date(Date.now() - 1 * 86400000).toISOString(), days_inactive: 1,
-            quizzes_this_week: 3, accuracy_this_week: 82,
-            weakest_topic: 'anglesshapes', weakest_subject: 'maths', weakest_accuracy: 65,
-            overdue_assignments: 0, assignment_status: 'on_track' },
-        ],
-        pulse: {
-          active_this_week: 3,
-          total_pupils: 4,
-          overdue_assignments: 1,
-          avg_accuracy_this_week: 74,
-          weakest_topic: { topic_key: 'fractions', subject: 'maths', accuracy: 48, pupil_count: 3 },
-        },
+        ...mock,
       });
       setClasses([
         { id: 'cls1', name: 'Saturday group', enrolment_count: 3 },
@@ -500,21 +512,51 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
     });
   };
 
-  // Portrait/mobile: full-screen navigation (unchanged)
+  // Portrait/mobile: full-screen navigation
+  if (!isSplit && showMessaging) {
+    return <TutorMessagingScreen getToken={getToken} onBack={closeMessaging} initialChild={messagingChild} />;
+  }
+
   if (!isSplit && activePupil) {
     return (
       <PupilDetailScreen
         childId={activePupil.id}
         getToken={getToken}
-        onBack={() => { setActivePupil(null); loadDashboard(); }}
+        onBack={() => { setActivePane(null); loadDashboard(); }}
         onViewQuizDetail={onViewQuizDetail}
         onViewAssignmentDetail={onViewAssignmentDetail}
       />
     );
   }
 
-  if (!isSplit && showMessaging) {
-    return <TutorMessagingScreen getToken={getToken} onBack={() => setShowMessaging(false)} />;
+  if (!isSplit && activeCardKey) {
+    return (
+      <>
+        <TutorPulseDetail
+          detailKey={activeCardKey}
+          pulse={data?.pulse}
+          roster={data?.roster || []}
+          panelMode={false}
+          onBack={() => setActivePane(null)}
+          onOpenPupil={(pupil) => setActivePane({ type: 'pupil', pupil })}
+          onViewAssignmentDetail={onViewAssignmentDetail}
+          onMessageChild={openMessaging}
+          onAssignTopic={openComposerForTopic}
+        />
+        {showComposer && (
+          <AssignmentComposer
+            key={composerPrefill?.initialItems?.[0]?.topicKey || 'blank'}
+            roster={data?.roster || []}
+            classes={classes}
+            getToken={getToken}
+            initialItems={composerPrefill?.initialItems}
+            initialTitle={composerPrefill?.initialTitle}
+            onCreated={() => { closeComposer(); loadDashboard(); }}
+            onClose={closeComposer}
+          />
+        )}
+      </>
+    );
   }
 
   const { tutor, roster = [], pulse } = data || {};
@@ -571,17 +613,21 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
                     ? `${pulse.total_pupils - pulse.active_this_week} haven't practised`
                     : 'Everyone active'}
                   accent={pulse.active_this_week === pulse.total_pupils ? 'green' : 'purple'}
+                  onClick={() => setActivePane({ type: 'card', key: 'activity' })}
+                  active={activeCardKey === 'activity'}
                 />
                 <StatCard
                   icon={pulse.avg_accuracy_this_week !== null && pulse.avg_accuracy_this_week < 60 ? TrendingDown : BookOpen}
                   value={pulse.avg_accuracy_this_week !== null ? `${pulse.avg_accuracy_this_week}%` : null}
-                  label="Avg accuracy this week"
-                  sub={pulse.avg_accuracy_this_week === null ? 'No quizzes yet' : undefined}
+                  label="Avg accuracy per pupil"
+                  sub={pulse.avg_accuracy_this_week === null ? 'No quizzes yet' : 'this week'}
                   accent={
                     pulse.avg_accuracy_this_week === null ? 'purple' :
                     pulse.avg_accuracy_this_week >= 70 ? 'green' :
                     pulse.avg_accuracy_this_week >= 50 ? 'amber' : 'red'
                   }
+                  onClick={() => setActivePane({ type: 'card', key: 'accuracy' })}
+                  active={activeCardKey === 'accuracy'}
                 />
                 <StatCard
                   icon={AlertCircle}
@@ -589,15 +635,19 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
                   label="Overdue assignments"
                   sub={pulse.overdue_assignments === 0 ? 'All up to date' : 'Need chasing'}
                   accent={pulse.overdue_assignments > 0 ? 'red' : 'green'}
+                  onClick={() => setActivePane({ type: 'card', key: 'overdue' })}
+                  active={activeCardKey === 'overdue'}
                 />
                 <StatCard
                   icon={TrendingDown}
-                  value={pulse.weakest_topic ? topicLabel(pulse.weakest_topic.topic_key) : null}
+                  value={pulse.weak_topics?.[0] ? topicLabel(pulse.weak_topics[0].topic_key) : null}
                   label="Group weak spot"
-                  sub={pulse.weakest_topic
-                    ? `${pulse.weakest_topic.pupil_count} pupils · ${pulse.weakest_topic.accuracy}% avg`
+                  sub={pulse.weak_topics?.[0]
+                    ? `${pulse.weak_topics[0].pupil_count} pupils · ${pulse.weak_topics[0].accuracy}% avg`
                     : 'Not enough data yet'}
                   accent="amber"
+                  onClick={() => setActivePane({ type: 'card', key: 'weakspot' })}
+                  active={activeCardKey === 'weakspot'}
                 />
               </div>
             </div>
@@ -625,7 +675,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
                   key={pupil.id}
                   pupil={pupil}
                   isActive={activePupil?.id === pupil.id && isSplit}
-                  onClick={() => setActivePupil(pupil)}
+                  onClick={() => setActivePane({ type: 'pupil', pupil })}
                 />
               ))}
             </div>
@@ -702,7 +752,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
           </div>
         </div>
 
-        {/* Right panel — detail */}
+        {/* Right panel — detail (pupil OR pulse-card, one occupant) */}
         <div className="flex-1 overflow-y-auto bg-[#FAF9FF]">
           {activePupil ? (
             <PupilDetailScreen
@@ -710,9 +760,22 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
               childId={activePupil.id}
               getToken={getToken}
               panelMode
-              onBack={() => setActivePupil(null)}
+              onBack={() => setActivePane(null)}
               onViewQuizDetail={onViewQuizDetail}
               onViewAssignmentDetail={onViewAssignmentDetail}
+            />
+          ) : activeCardKey ? (
+            <TutorPulseDetail
+              key={activeCardKey}
+              detailKey={activeCardKey}
+              pulse={pulse}
+              roster={roster}
+              panelMode
+              onBack={() => setActivePane(null)}
+              onOpenPupil={(pupil) => setActivePane({ type: 'pupil', pupil })}
+              onViewAssignmentDetail={onViewAssignmentDetail}
+              onMessageChild={openMessaging}
+              onAssignTopic={openComposerForTopic}
             />
           ) : (
             <div className="flex flex-col items-center justify-center h-full text-center p-8">
@@ -730,18 +793,21 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
         {/* Messaging overlay (full-screen on top) */}
         {showMessaging && (
           <div className="fixed inset-0 z-50 bg-[#FAF9FF]">
-            <TutorMessagingScreen getToken={getToken} onBack={() => setShowMessaging(false)} />
+            <TutorMessagingScreen getToken={getToken} onBack={closeMessaging} initialChild={messagingChild} />
           </div>
         )}
 
         {/* Assignment composer modal */}
         {showComposer && (
           <AssignmentComposer
+            key={composerPrefill?.initialItems?.[0]?.topicKey || 'blank'}
             roster={roster}
             classes={classes}
             getToken={getToken}
-            onCreated={() => { setShowComposer(false); loadDashboard(); }}
-            onClose={() => setShowComposer(false)}
+            initialItems={composerPrefill?.initialItems}
+            initialTitle={composerPrefill?.initialTitle}
+            onCreated={() => { closeComposer(); loadDashboard(); }}
+            onClose={closeComposer}
           />
         )}
       </div>
@@ -783,11 +849,14 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
         {/* Assignment composer modal */}
         {showComposer && (
           <AssignmentComposer
+            key={composerPrefill?.initialItems?.[0]?.topicKey || 'blank'}
             roster={roster}
             classes={classes}
             getToken={getToken}
-            onCreated={() => { setShowComposer(false); loadDashboard(); }}
-            onClose={() => setShowComposer(false)}
+            initialItems={composerPrefill?.initialItems}
+            initialTitle={composerPrefill?.initialTitle}
+            onCreated={() => { closeComposer(); loadDashboard(); }}
+            onClose={closeComposer}
           />
         )}
       </div>

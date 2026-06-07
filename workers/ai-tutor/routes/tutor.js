@@ -10,6 +10,7 @@
 // GET    /api/tutor/public/:code — Public tutor profile (for join page preview)
 
 import { json } from '../helpers.js';
+import { buildDashboardData } from '../../../src/utils/tutorPulse.js';
 
 // ── Tutor code generation ──
 // 8 uppercase chars, no confusable characters (0, O, 1, I, L).
@@ -179,115 +180,32 @@ export async function handleTutorRoutes(request, env, userId, path) {
         ORDER BY child_id, accuracy ASC
       `).bind(userId).all(),
 
-      // Overdue assignment count per child
+      // Overdue assignments — row-level so the pulse can show which
+      // assignments are overdue, not just how many. Counts derive from
+      // these rows in buildDashboardData (one definition of "overdue").
       db.prepare(`
-        SELECT ar.child_id, COUNT(*) as overdue_count
+        SELECT ar.child_id, a.id AS assignment_id, a.title, a.due_date
         FROM assignment_recipients ar
         JOIN assignments a ON a.id = ar.assignment_id
         WHERE a.tutor_id = ?
           AND date(a.due_date) < date('now')
           AND ar.status NOT IN ('completed', 'cleared')
-        GROUP BY ar.child_id
+        ORDER BY a.due_date ASC
       `).bind(userId).all(),
     ]);
 
-    // Index by child_id for O(1) lookup
-    const quizActiveMap = Object.fromEntries((quizActiveRows.results || []).map(r => [r.child_id, r.last_active]));
-    const mockActiveMap = Object.fromEntries((mockActiveRows.results || []).map(r => [r.child_id, r.last_active]));
-    const lessonActiveMap = Object.fromEntries((lessonActiveRows.results || []).map(r => [r.child_id, r.last_active]));
-    const weeklyMap = Object.fromEntries((weeklyRows.results || []).map(r => [r.child_id, r]));
-    const overdueMap = Object.fromEntries((overdueRows.results || []).map(r => [r.child_id, r.overdue_count]));
-
-    // Most recent activity timestamp (ms) across all activity types for a child,
-    // or null if they've never done anything. new Date() handles both the ISO
-    // strings quizzes/lessons store and the "YYYY-MM-DD HH:MM:SS" format.
-    const lastActiveTs = (childId) => {
-      const ts = [quizActiveMap[childId], mockActiveMap[childId], lessonActiveMap[childId]]
-        .filter(Boolean)
-        .map(d => new Date(d).getTime())
-        .filter(t => !Number.isNaN(t));
-      return ts.length ? Math.max(...ts) : null;
-    };
-
-    // Weakest topic per child — topicRows already ordered ASC per child, take first per child
-    const weakestTopicMap = {};
-    for (const row of (topicRows.results || [])) {
-      if (!weakestTopicMap[row.child_id]) weakestTopicMap[row.child_id] = row;
-    }
-
-    const now = Date.now();
-    const enrichedRoster = roster.map(child => {
-      const lastActiveMs = lastActiveTs(child.id);
-      const lastActive = lastActiveMs !== null ? new Date(lastActiveMs).toISOString() : null;
-      const daysInactive = lastActiveMs !== null
-        ? Math.floor((now - lastActiveMs) / 86400000)
-        : null;
-      const weekly = weeklyMap[child.id] || null;
-      const weakest = weakestTopicMap[child.id] || null;
-      const overdueCount = overdueMap[child.id] || 0;
-
-      return {
-        ...child,
-        last_active: lastActive,
-        days_inactive: daysInactive,
-        quizzes_this_week: weekly?.quiz_count || 0,
-        accuracy_this_week: weekly ? Math.round(weekly.accuracy * 100) : null,
-        weakest_topic: weakest?.topic_key || null,
-        weakest_subject: weakest?.subject || null,
-        weakest_accuracy: weakest ? Math.round(weakest.accuracy * 100) : null,
-        overdue_assignments: overdueCount,
-        assignment_status: overdueCount > 0 ? 'overdue' : weekly ? 'on_track' : 'none',
-      };
+    const { roster: enrichedRoster, pulse } = buildDashboardData({
+      roster,
+      quizActiveRows: quizActiveRows.results || [],
+      mockActiveRows: mockActiveRows.results || [],
+      lessonActiveRows: lessonActiveRows.results || [],
+      weeklyRows: weeklyRows.results || [],
+      topicRows: topicRows.results || [],
+      overdueRows: overdueRows.results || [],
+      now: Date.now(),
     });
 
-    // Sort: most at-risk first (inactive longest, then by accuracy)
-    enrichedRoster.sort((a, b) => {
-      const aInactive = a.days_inactive ?? 999;
-      const bInactive = b.days_inactive ?? 999;
-      if (aInactive !== bInactive) return bInactive - aInactive;
-      return (a.accuracy_this_week ?? -1) - (b.accuracy_this_week ?? -1);
-    });
-
-    // Aggregate pulse stats
-    const activeThisWeek = enrichedRoster.filter(c => c.days_inactive !== null && c.days_inactive <= 7).length;
-    const totalOverdue = enrichedRoster.reduce((s, c) => s + c.overdue_assignments, 0);
-
-    const weeklyAccuracies = enrichedRoster.filter(c => c.accuracy_this_week !== null);
-    const avgAccuracy = weeklyAccuracies.length > 0
-      ? Math.round(weeklyAccuracies.reduce((s, c) => s + c.accuracy_this_week, 0) / weeklyAccuracies.length)
-      : null;
-
-    // Roster-wide weakest topic (aggregate across all pupils, ≥2 pupils struggling)
-    const topicAccuracies = {};
-    for (const row of (topicRows.results || [])) {
-      if (!topicAccuracies[row.topic_key]) {
-        topicAccuracies[row.topic_key] = { subject: row.subject, total: 0, count: 0 };
-      }
-      topicAccuracies[row.topic_key].total += row.accuracy;
-      topicAccuracies[row.topic_key].count += 1;
-    }
-    let weakestRosterTopic = null;
-    let weakestRosterAccuracy = 1;
-    for (const [key, val] of Object.entries(topicAccuracies)) {
-      if (val.count < 2) continue; // skip topics only 1 pupil has attempted
-      const avg = val.total / val.count;
-      if (avg < weakestRosterAccuracy) {
-        weakestRosterAccuracy = avg;
-        weakestRosterTopic = { topic_key: key, subject: val.subject, accuracy: Math.round(avg * 100), pupil_count: val.count };
-      }
-    }
-
-    return json({
-      tutor,
-      roster: enrichedRoster,
-      pulse: {
-        active_this_week: activeThisWeek,
-        total_pupils: roster.length,
-        overdue_assignments: totalOverdue,
-        avg_accuracy_this_week: avgAccuracy,
-        weakest_topic: weakestRosterTopic,
-      },
-    });
+    return json({ tutor, roster: enrichedRoster, pulse });
   }
 
   // GET /api/tutor/roster — Get pupil list for this tutor

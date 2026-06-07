@@ -52,10 +52,10 @@ function ConvRow({ conv, isTutor, onOpen }) {
 }
 
 // ── Tutor messaging — accessed from TutorDashboardScreen ──
-export function TutorMessagingScreen({ getToken, onBack }) {
+export function TutorMessagingScreen({ getToken, onBack, initialChild }) {
   const [conversations, setConversations] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [openConv, setOpenConv] = useState(null); // { id, childName }
+  const [openConv, setOpenConv] = useState(null); // { id, childName, parentName }
 
   const load = useCallback(async () => {
     if (!getToken) { setLoading(false); return; }
@@ -69,6 +69,24 @@ export function TutorMessagingScreen({ getToken, onBack }) {
 
   useEffect(() => { load(); }, [load]);
 
+  // When opened from a "Message" action, land directly in that child's thread.
+  // openConversation is an upsert, so this works even before any messages
+  // exist. Failure falls back to the inbox list silently.
+  useEffect(() => {
+    if (!initialChild?.id || !getToken) return;
+    let cancelled = false;
+    openConversation(null, initialChild.id, getToken)
+      .then(conv => {
+        if (!cancelled && conv) {
+          setOpenConv({ id: conv.id, childName: initialChild.name, parentName: initialChild.parentName || '' });
+        }
+      })
+      .catch(() => {});
+    return () => { cancelled = true; };
+    // Run once on mount only — initialChild is fixed for this screen instance
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   if (openConv) {
     return (
       <div className="flex flex-col h-screen app-bg">
@@ -78,7 +96,9 @@ export function TutorMessagingScreen({ getToken, onBack }) {
           </button>
           <div className="flex-1 min-w-0">
             <p className="font-bold text-slate-800 truncate">{openConv.childName}</p>
-            <p className="text-xs text-slate-400">via {openConv.parentName}</p>
+            {openConv.parentName ? (
+              <p className="text-xs text-slate-400">via {openConv.parentName}</p>
+            ) : null}
           </div>
         </div>
         <div className="flex-1 overflow-hidden">
