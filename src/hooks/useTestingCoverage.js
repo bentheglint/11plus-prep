@@ -1,9 +1,20 @@
 import { useState, useCallback, useEffect, useRef, useMemo } from 'react';
+import { createCoverageSyncQueue } from '../utils/coverageSyncQueue';
 
 // Testing coverage tracking for manual QA sessions (Ben + Jacqui)
 // Syncs to Worker KV for shared visibility — falls back to localStorage when offline
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
+
+// All mark uploads go through one debounced queue: each request costs a KV
+// write to a single shared key (~1 write/second allowed), so rapid marks and
+// the mount delta-upload must coalesce into one batched request.
+const syncQueue = createCoverageSyncQueue({ apiUrl: API_URL });
+if (typeof document !== 'undefined') {
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') syncQueue.flushNow();
+  });
+}
 
 function loadJSON(key, fallback) {
   try {
@@ -20,14 +31,9 @@ function saveJSON(key, value) {
 
 const EMPTY_COVERAGE = { questions: {}, lessons: {}, sessions: [] };
 
-// Fire-and-forget POST to Worker — never blocks UI
+// Fire-and-forget queue add — never blocks UI; the queue batches and retries
 function syncToWorker(type, topicKey, ids) {
-  if (!API_URL || !ids.length) return;
-  fetch(`${API_URL}/testing-coverage/mark`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ type, topicKey, ids }),
-  }).catch(() => {}); // Silently ignore — local is source of truth for this user
+  syncQueue.add(type, topicKey, ids);
 }
 
 // Merge remote combined coverage into local data (adds IDs we haven't seen)

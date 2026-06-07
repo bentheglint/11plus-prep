@@ -142,28 +142,44 @@ async function handleGetCoverage(env) {
 }
 
 async function handleMarkTested(request, env) {
-  const { type, topicKey, ids } = await request.json();
-  if (!type || !topicKey || !Array.isArray(ids) || ids.length === 0) {
-    return json({ error: 'Missing type, topicKey, or ids' }, 400);
-  }
-  if (type !== 'questions' && type !== 'lessons') {
-    return json({ error: 'type must be "questions" or "lessons"' }, 400);
+  const body = await request.json();
+  // Batched shape { marks: [{ type, topicKey, ids }] } applies any number of
+  // marks with a single KV write. The legacy single-topic shape still works.
+  const marks = Array.isArray(body.marks) ? body.marks : [body];
+
+  const valid = marks.filter(m =>
+    (m.type === 'questions' || m.type === 'lessons') &&
+    m.topicKey && Array.isArray(m.ids) && m.ids.length > 0
+  );
+  if (valid.length === 0) {
+    return json({ error: 'No valid marks — need type, topicKey and ids' }, 400);
   }
 
   const coverage = await getCoverage(env);
-  const existing = coverage[type][topicKey] || [];
-  // Merge — deduplicate via Set
-  const merged = [...new Set([...existing, ...ids])];
+  let changed = false;
+  for (const { type, topicKey, ids } of valid) {
+    const existing = coverage[type][topicKey] || [];
+    const merged = [...new Set([...existing, ...ids])];
+    if (merged.length !== existing.length) {
+      coverage[type][topicKey] = merged;
+      changed = true;
+    }
+  }
 
   // Skip the KV write if nothing changed — belt-and-braces against a
   // chatty client re-uploading IDs the store already has.
-  if (merged.length === existing.length) {
-    return json({ ok: true, count: merged.length, noop: true });
+  if (!changed) {
+    return json({ ok: true, noop: true });
   }
 
-  coverage[type][topicKey] = merged;
-  await env.TESTING_FLAGS.put(COVERAGE_KEY, JSON.stringify(coverage));
-  return json({ ok: true, count: merged.length });
+  try {
+    await env.TESTING_FLAGS.put(COVERAGE_KEY, JSON.stringify(coverage));
+  } catch (err) {
+    // KV allows ~1 write/second on this key. Tell the client cleanly so it
+    // requeues the batch, instead of throwing an unhandled 500.
+    return json({ ok: false, error: 'rate_limited' }, 429);
+  }
+  return json({ ok: true });
 }
 
 // ── AI Tutor (Anthropic proxy, no auth required) ──
