@@ -59,7 +59,7 @@ describe('recipient status transitions', () => {
     assigned: ['in_progress', 'late', 'cancelled'],
     in_progress: ['completed', 'late', 'cancelled'],
     completed: [],  // terminal
-    late: ['cleared', 'cancelled'],
+    late: ['completed', 'cleared', 'cancelled'],
     cleared: [],    // terminal
     cancelled: [],  // terminal
   };
@@ -82,7 +82,13 @@ describe('recipient status transitions', () => {
 
   it('complete action transitions in_progress → completed', () => {
     const status = 'in_progress';
-    const newStatus = ['assigned', 'in_progress'].includes(status) ? 'completed' : status;
+    const newStatus = ['assigned', 'in_progress', 'late'].includes(status) ? 'completed' : status;
+    expect(newStatus).toBe('completed');
+  });
+
+  it('complete action transitions late → completed (pupil completes after due date)', () => {
+    const status = 'late';
+    const newStatus = ['assigned', 'in_progress', 'late'].includes(status) ? 'completed' : status;
     expect(newStatus).toBe('completed');
   });
 

@@ -241,7 +241,7 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
         await db.prepare(`
           UPDATE assignment_recipients
           SET status = 'completed', completed_at = ?, score = ?, question_results = ?
-          WHERE id = ? AND status IN ('assigned', 'in_progress')
+          WHERE id = ? AND status IN ('assigned', 'in_progress', 'late')
         `).bind(now, score ?? null, questionResults ? JSON.stringify(questionResults) : null, recipientId).run();
       }
 
