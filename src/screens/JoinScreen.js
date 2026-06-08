@@ -171,7 +171,7 @@ export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined
               Connect your child to {tutor.display_name}?
             </h2>
             <p className="text-sm text-slate-500 mb-6">
-              {tutor.display_name} will be able to see your child's practice progress and set homework.
+              {tutor.display_name} will be able to see your child's quiz scores, topic performance, and learning history, and can set homework assignments.
             </p>
 
             <ChildSelector
