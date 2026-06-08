@@ -279,13 +279,29 @@ const worker = {
       // ── Public routes (no auth) ──
 
       if (path === '/flags' && request.method === 'GET') return handleGetFlags(env);
-      if (path === '/flags' && request.method === 'POST') return handlePostFlag(request, env);
-      if (path === '/flags/resolve' && request.method === 'POST') return handleResolveFlag(request, env);
-      if (path === '/flags/fix' && request.method === 'POST') return handleMarkFixed(request, env);
+      if (path === '/flags' && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        return handlePostFlag(request, env);
+      }
+      if (path === '/flags/resolve' && request.method === 'POST') {
+        const admin = await requireAdmin(request, env);
+        if (admin.error) return admin.error;
+        return handleResolveFlag(request, env);
+      }
+      if (path === '/flags/fix' && request.method === 'POST') {
+        const admin = await requireAdmin(request, env);
+        if (admin.error) return admin.error;
+        return handleMarkFixed(request, env);
+      }
 
       // Shared testing coverage
       if (path === '/testing-coverage' && request.method === 'GET') return handleGetCoverage(env);
-      if (path === '/testing-coverage/mark' && request.method === 'POST') return handleMarkTested(request, env);
+      if (path === '/testing-coverage/mark' && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        return handleMarkTested(request, env);
+      }
 
       // Error reporting — public (no auth required, fire-and-forget from client)
       if (path === '/api/error-report' && request.method === 'POST') {
@@ -323,6 +339,8 @@ const worker = {
         return json(raw ? JSON.parse(raw) : []);
       }
       if (path === '/errors/clear' && request.method === 'POST') {
+        const admin = await requireAdmin(request, env);
+        if (admin.error) return admin.error;
         await env.TESTING_FLAGS.put('recent-errors', '[]');
         return json({ ok: true });
       }

@@ -422,6 +422,7 @@ function FlaggedIssuesPanel({ testingCoverage, coverage, onViewQuestion, onViewL
 
 export default function TestingDashboard({
   questionData, lessonBank, testingCoverage,
+  getToken,
   onStartTestingQuiz, onStartTestingLesson,
   onViewQuestion, onViewLesson, onBack,
 }) {
@@ -444,15 +445,15 @@ export default function TestingDashboard({
   useEffect(() => { loadRemoteFlags(); }, [loadRemoteFlags]);
 
   const handleResolveRemote = useCallback((flagId) => {
-    if (!workerUrl) return;
-    fetch(`${workerUrl}/flags/resolve`, {
+    if (!workerUrl || !getToken) return;
+    getToken().then(token => fetch(`${workerUrl}/flags/resolve`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
       body: JSON.stringify({ flagId }),
-    })
+    }))
       .then(() => loadRemoteFlags())
       .catch(() => {});
-  }, [workerUrl, loadRemoteFlags]);
+  }, [workerUrl, getToken, loadRemoteFlags]);
 
   const coverage = useMemo(
     () => testingCoverage.getCoverage(questionData, lessonBank),

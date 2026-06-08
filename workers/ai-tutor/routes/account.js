@@ -104,6 +104,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
     const tutorRow = await db.prepare('SELECT 1 FROM tutor_allowlist WHERE email = ?')
       .bind(canonicalEmail(account.email)).first();
 
+    const adminIds = (env.ADMIN_USER_IDS || '').split(',').map(s => s.trim()).filter(Boolean);
     const access = {
       hasAccess: isComped || hasPaidAccess || hasGraceAccess || inTrial,
       isComped,
@@ -112,6 +113,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
       subscriptionStatus: subStatus || null,
       hasStripeCustomer: !!account.stripe_customer_id,
       tutorEligible: !!tutorRow,
+      isAdmin: adminIds.length > 0 && adminIds.includes(userId),
     };
 
     // Don't leak internal fields — comp_source is audit-only, stripe_customer_id

@@ -8,7 +8,7 @@ import AssignmentBanner from '../components/AssignmentBanner';
 import { BookOpen as LessonsIcon } from 'lucide-react';
 import { isSpeedReviewAllowlisted } from '../utils/tutorAllowlist';
 
-function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, getToken, onStartAssignment }) {
+function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
@@ -103,7 +103,7 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
               )}
             </div>
           )}
-          <AccountMenu currentUser={currentUser} onManageChildren={onManageChildren} onTutorSignup={onTutorSignup} />
+          <AccountMenu currentUser={currentUser} onManageChildren={onManageChildren} onTutorSignup={onTutorSignup} onAdmin={onAdmin} />
         </div>
 
         {/* Greeting */}

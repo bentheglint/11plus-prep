@@ -10,7 +10,7 @@ const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 // console.error — nobody read them. This screen reads the last 50 from
 // KV so Ben/Jacqui can spot crashes their users hit without having to
 // tell anyone.
-export default function ErrorDashboardScreen({ onBack }) {
+export default function ErrorDashboardScreen({ onBack, getToken }) {
   const [errors, setErrors] = useState(null);
   const [userFilter, setUserFilter] = useState('all');
   const [loading, setLoading] = useState(false);
@@ -40,7 +40,11 @@ export default function ErrorDashboardScreen({ onBack }) {
 
   const handleClear = async () => {
     if (!window.confirm('Clear all recorded errors?')) return;
-    await fetch(`${API_URL}/errors/clear`, { method: 'POST' });
+    const token = getToken ? await getToken() : null;
+    await fetch(`${API_URL}/errors/clear`, {
+      method: 'POST',
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+    });
     load();
   };
 

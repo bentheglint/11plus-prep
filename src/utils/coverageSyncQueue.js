@@ -11,6 +11,7 @@ export function createCoverageSyncQueue({ apiUrl, fetchFn = fetch, flushDelayMs 
   // 'type|topicKey' → Set of ids
   const pending = new Map();
   let timer = null;
+  let getTokenFn = null;
 
   function keyFor(type, topicKey) {
     return `${type}|${topicKey}`;
@@ -38,9 +39,13 @@ export function createCoverageSyncQueue({ apiUrl, fetchFn = fetch, flushDelayMs 
     const marks = buildMarks();
     pending.clear();
     try {
+      const token = getTokenFn ? await getTokenFn() : null;
       const res = await fetchFn(`${apiUrl}/testing-coverage/mark`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
         // keepalive lets a flush triggered by tab-hide complete in flight
         keepalive: true,
         body: JSON.stringify({ marks }),
@@ -57,6 +62,7 @@ export function createCoverageSyncQueue({ apiUrl, fetchFn = fetch, flushDelayMs 
   }
 
   return {
+    setGetToken(fn) { getTokenFn = fn; },
     add(type, topicKey, ids) {
       if (!apiUrl || !ids || ids.length === 0) return;
       const key = keyFor(type, topicKey);

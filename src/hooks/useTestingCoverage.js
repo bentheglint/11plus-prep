@@ -78,7 +78,7 @@ function uploadDeltaToWorker(local, remote) {
   }
 }
 
-export default function useTestingCoverage(userName) {
+export default function useTestingCoverage(userName, getToken) {
   const storageKey = `user:${userName}:testing-coverage`;
   const prevUser = useRef(userName);
   const hasSynced = useRef(false);
@@ -86,6 +86,10 @@ export default function useTestingCoverage(userName) {
   const [data, setData] = useState(() =>
     userName ? loadJSON(storageKey, EMPTY_COVERAGE) : EMPTY_COVERAGE
   );
+
+  useEffect(() => {
+    syncQueue.setGetToken(getToken || null);
+  }, [getToken]);
 
   // Reload when user changes
   useEffect(() => {

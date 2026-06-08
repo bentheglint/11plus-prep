@@ -74,7 +74,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -145,7 +145,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   const leitner = useLeitner(userData.leitnerQueue, userData.saveLeitnerQueue);
 
   // Testing coverage (Ben + Jacqui only — loaded lazily, empty for other users)
-  const testingCoverage = useTestingCoverage(currentUser);
+  const testingCoverage = useTestingCoverage(currentUser, getToken);
 
   // Streaks and Prep Points
   const streaksAndPP = useStreaksAndPP(
@@ -1601,6 +1601,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         questionData={questionData}
         lessonBank={lessonBank}
         testingCoverage={testingCoverage}
+        getToken={getToken}
         onStartTestingQuiz={handleStartTestingQuiz}
         onStartTestingLesson={(topicKey, subConcept) => {
           // Determine subject from questionData keys
@@ -1777,7 +1778,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
   }
 
   if (currentView === 'errors') {
-    return <ErrorDashboardScreen onBack={() => setCurrentView('home')} />;
+    return <ErrorDashboardScreen getToken={getToken} onBack={() => setCurrentView('home')} />;
   }
 
   if (currentView === 'flags') {
@@ -1821,6 +1822,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onSwitchChild={setActiveChildId}
         onManageChildren={() => setCurrentView('children')}
         onTutorSignup={tutorEligible ? () => setCurrentView('tutorSignup') : null}
+        onAdmin={isAdmin ? () => setCurrentView('admin') : null}
       />
     );
   }
@@ -1948,10 +1950,11 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onFlagLesson={(flagData) => {
           testingCoverage.flagLesson(flagData.topicKey, flagData.subConceptId, flagData.screenIndex, flagData.category, flagData.note);
           const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
-          if (workerUrl) fetch(`${workerUrl}/flags`, {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ submitter: currentUser, type: 'lesson', ...flagData })
-          }).catch(() => {});
+          if (workerUrl) getToken().then(token => fetch(`${workerUrl}/flags`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+            body: JSON.stringify({ submitter: currentUser, type: 'lesson', ...flagData }),
+          })).catch(() => {});
         }}
         backLabel={returnToTestingMode ? "Back to Testing Dashboard" : returnToToolkit ? "Back to Study Toolkit" : returnToSpeedReview ? "Back to Speed Review" : returnToMyLessons ? "Back to My Lessons" : "Back to Topics"}
         onComplete={(lessonRecord) => {
@@ -2166,10 +2169,11 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           testingCoverage.flagQuestion(flagData.topicKey, flagData.questionId, flagData.category, flagData.note);
           setTestingSessionFlags(prev => [...prev, flagWithSubject]);
           const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
-          if (workerUrl) fetch(`${workerUrl}/flags`, {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ submitter: currentUser, type: 'question', ...flagWithSubject })
-          }).catch(() => {});
+          if (workerUrl) getToken().then(token => fetch(`${workerUrl}/flags`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+            body: JSON.stringify({ submitter: currentUser, type: 'question', ...flagWithSubject }),
+          })).catch(() => {});
         }}
         onAnswerSelect={handleAnswerSelect}
         onSelectTwoToggle={handleSelectTwoToggle}

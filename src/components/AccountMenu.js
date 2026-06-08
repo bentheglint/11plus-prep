@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useClerk, useAuth, useUser } from '@clerk/clerk-react';
-import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard, Users, GraduationCap } from 'lucide-react';
+import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard, Users, GraduationCap, Settings } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
@@ -21,7 +21,7 @@ function AccountMenuSmoke({ currentUser }) {
   );
 }
 
-function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup }) {
+function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup, onAdmin }) {
   const { signOut } = useClerk();
   const { getToken } = useAuth();
   const { user } = useUser();
@@ -170,6 +170,15 @@ function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup }) {
                 >
                   <GraduationCap className="w-4 h-4 text-[#7C3AED]" />
                   Tutor profile
+                </button>
+              )}
+              {onAdmin && (
+                <button
+                  onClick={() => { setShowMenu(false); onAdmin(); }}
+                  className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
+                >
+                  <Settings className="w-4 h-4 text-[#7C3AED]" />
+                  Admin
                 </button>
               )}
               <button
