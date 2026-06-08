@@ -28,6 +28,7 @@ import AssignmentDetailScreen from './screens/AssignmentDetailScreen';
 import MockTestScreen from './screens/MockTestScreen';
 import MockTestResultsScreen from './screens/MockTestResultsScreen';
 import ErrorDashboardScreen from './screens/ErrorDashboardScreen';
+import AdminScreen from './screens/AdminScreen';
 import FeatureFlagsScreen from './screens/FeatureFlagsScreen';
 import useMockTest from './hooks/useMockTest';
 import useD1Data from './hooks/useD1Data';
@@ -45,7 +46,6 @@ import { selectWeightedTopics } from './utils/spacedRepetition';
 import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
 import { checkAnswerCorrectness, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
 import { getQuizSaveKey, buildQuizSaveState, isQuizExpired, parseAndValidateQuiz } from './utils/quizPersistence';
-import { isTutorAllowlisted } from './utils/tutorAllowlist';
 import useLeitner from './hooks/useLeitner';
 import useTestingCoverage from './hooks/useTestingCoverage';
 import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMode';
@@ -74,7 +74,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -1407,6 +1407,8 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       setCurrentView('errors');
     } else if (urlViewParam === 'flags') {
       setCurrentView('flags');
+    } else if (urlViewParam === 'admin') {
+      setCurrentView('admin');
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const previewTopic = urlParams.get('preview');
@@ -1782,6 +1784,10 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     return <FeatureFlagsScreen onBack={() => setCurrentView('home')} />;
   }
 
+  if (currentView === 'admin') {
+    return <AdminScreen getToken={getToken} onBack={() => setCurrentView('home')} />;
+  }
+
   if (currentView === 'home') {
     return (
       <HomeScreen
@@ -1814,7 +1820,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         activeChildId={activeChildId}
         onSwitchChild={setActiveChildId}
         onManageChildren={() => setCurrentView('children')}
-        onTutorSignup={isTutorAllowlisted(userEmail) ? () => setCurrentView('tutorSignup') : null}
+        onTutorSignup={tutorEligible ? () => setCurrentView('tutorSignup') : null}
       />
     );
   }

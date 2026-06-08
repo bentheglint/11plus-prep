@@ -1,16 +1,7 @@
-// Email allowlist for the Tutor Mode soft beta.
-// Only users whose primary email matches an entry here see the
-// "Tutor profile" link in the account menu. The /join/<code> route
-// remains public — invited parents can always accept an invite.
-const ALLOWLIST = [
-  'ben@venortech.com',
-  'suemedley65@gmail.com',
-];
-
-export function isTutorAllowlisted(email) {
-  if (!email) return false;
-  return ALLOWLIST.includes(email.toLowerCase().trim());
-}
+// Tutor eligibility is now DB-backed (tutor_allowlist table, managed from the
+// admin panel). The frontend reads it from /api/account as access.tutorEligible;
+// the server enforces it via requireTutor. This file now only holds the
+// separate Speed Review reviewer list.
 
 // Speed Review is a content QA tool — separate from tutor access.
 // Add emails here for trusted reviewers who should see it on the Home screen.

@@ -24,6 +24,13 @@ export function json(data, status = 200) {
   });
 }
 
+// Single source of truth for email normalisation. Every email compare/insert
+// (tutor allowlist, eligibility gate, seed migration) goes through this, so
+// grant/revoke never drift on case or whitespace.
+export function canonicalEmail(email) {
+  return (email || '').trim().toLowerCase();
+}
+
 // Get the child ID for an authenticated user. Returns null if no child profile.
 export async function getChildId(db, userId) {
   const row = await db.prepare('SELECT id FROM children WHERE account_id = ? ORDER BY created_at ASC').bind(userId).first();

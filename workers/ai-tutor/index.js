@@ -1,5 +1,5 @@
 import * as Sentry from '@sentry/cloudflare';
-import { CORS, BASE_HEADERS, json, checkRateLimit, checkOrigin } from './helpers.js';
+import { CORS, BASE_HEADERS, json, checkRateLimit, checkOrigin, canonicalEmail } from './helpers.js';
 import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
@@ -14,6 +14,7 @@ import { handleNotesRoutes } from './routes/notes.js';
 import { handleReportRoutes } from './routes/report.js';
 import { handleMessagingRoutes } from './routes/messaging.js';
 import { handleRelationshipRoutes } from './routes/relationships.js';
+import { handleAdminRoutes } from './routes/admin.js';
 
 // ── Clerk JWT Verification ──
 
@@ -71,18 +72,60 @@ async function verifyClerkJWT(request, env) {
       if (!allowed.includes(payload.azp)) return null;
     }
 
-    return payload.sub;
+    if (!payload.sub) return null;
+    // email / email_verified come from the custom Clerk session-token claims.
+    // Older tokens issued before the claim was added won't have them — callers
+    // that need a verified email must handle that explicitly.
+    return {
+      userId: payload.sub,
+      email: canonicalEmail(payload.email),
+      emailVerified: payload.email_verified === true || payload.email_verified === 'true',
+    };
   } catch {
     return null;
   }
 }
 
 async function requireAuth(request, env) {
-  const userId = await verifyClerkJWT(request, env);
-  if (!userId) {
+  const auth = await verifyClerkJWT(request, env);
+  if (!auth) {
     return { error: json({ error: 'Unauthorized' }, 401) };
   }
-  return { userId };
+  return auth; // { userId, email, emailVerified }
+}
+
+// Admin gate. Fails CLOSED: if ADMIN_USER_IDS is unset/empty, nobody is admin.
+// Keyed on the Clerk userId (the only unforgeable identity), never email.
+function parseAdminIds(env) {
+  return (env.ADMIN_USER_IDS || '').split(',').map(s => s.trim()).filter(Boolean);
+}
+
+async function requireAdmin(request, env) {
+  const auth = await requireAuth(request, env);
+  if (auth.error) return auth;
+  const admins = parseAdminIds(env);
+  if (admins.length === 0 || !admins.includes(auth.userId)) {
+    return { error: json({ error: 'Forbidden' }, 403) };
+  }
+  return auth;
+}
+
+// Tutor gate. Ongoing entitlement (not just a signup check), so revoking a
+// tutor from the allowlist immediately cuts access on every tutor route.
+// Requires a VERIFIED email from the JWT claim and membership in tutor_allowlist.
+async function requireTutor(request, env) {
+  const auth = await requireAuth(request, env);
+  if (auth.error) return auth;
+  if (!auth.email || !auth.emailVerified) {
+    return { error: json({ error: 'Forbidden' }, 403) };
+  }
+  const row = await env.DB.prepare(
+    'SELECT 1 FROM tutor_allowlist WHERE email = ?'
+  ).bind(auth.email).first();
+  if (!row) {
+    return { error: json({ error: 'Forbidden' }, 403) };
+  }
+  return auth;
 }
 
 // ── Testing Flags (KV-backed, no auth required) ──
@@ -303,6 +346,27 @@ const worker = {
         return handleWebhook(request, env);
       }
 
+      // ── Admin routes — owner-only, fail-closed (must precede the generic
+      //    /api/ gate since these paths also start with /api/). ──
+      if (path.startsWith('/api/admin/')) {
+        const admin = await requireAdmin(request, env);
+        if (admin.error) return admin.error;
+        const adminResult = await handleAdminRoutes(request, env, admin, path);
+        if (adminResult) return adminResult;
+        return json({ error: 'Admin route not found', path }, 404);
+      }
+
+      // ── Tutor routes — gated on ongoing allowlist eligibility (requireTutor),
+      //    so revoking a tutor immediately cuts access. Public tutor preview
+      //    (/api/tutor/public/*) is handled above, before any auth. ──
+      if (path.startsWith('/api/tutor')) {
+        const auth = await requireTutor(request, env);
+        if (auth.error) return auth.error;
+        const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
+        if (tutorResult) return tutorResult;
+        return json({ error: 'Tutor route not found', path }, 404);
+      }
+
       // ── Auth-protected routes (/api/*) ──
 
       if (path.startsWith('/api/')) {
@@ -329,9 +393,7 @@ const worker = {
         const accountResult = await handleAccountRoutes(request, env, userId, path);
         if (accountResult) return accountResult;
 
-        // Tutor routes
-        const tutorResult = await handleTutorRoutes(request, env, userId, path);
-        if (tutorResult) return tutorResult;
+        // Tutor routes (/api/tutor*) are handled above, behind requireTutor.
 
         // Class management routes
         const classResult = await handleClassRoutes(request, env, userId, path);
@@ -392,8 +454,10 @@ const worker = {
 
       return new Response('Not found', { status: 404, headers: BASE_HEADERS });
     } catch (err) {
+      // Detail goes to logs/Sentry only — never leak internals (stack, query
+      // text) to the client, especially on the admin surface.
       console.error('[Worker Error]', err.message, err.stack);
-      return json({ error: 'Internal server error', detail: err.message, stack: err.stack?.substring(0, 300) }, 500);
+      return json({ error: 'Internal server error' }, 500);
     }
   },
 

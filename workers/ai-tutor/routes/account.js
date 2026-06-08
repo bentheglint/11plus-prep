@@ -11,7 +11,7 @@
 // PATCH  /api/children/:id             — Update a child (displayName, yearGroup, targetSchool)
 // DELETE /api/children/:id             — Delete a child (blocked if only one remains)
 
-import { json } from '../helpers.js';
+import { json, canonicalEmail } from '../helpers.js';
 
 export async function handleAccountRoutes(request, env, userId, path) {
   const db = env.DB;
@@ -97,6 +97,13 @@ export async function handleAccountRoutes(request, env, userId, path) {
     const hasGraceAccess = subStatus === 'past_due';
     const inTrial = !isComped && !subStatus && trialDaysRemaining > 0;
 
+    // Tutor eligibility drives the "Tutor profile" menu item only (cosmetic).
+    // The real gate is server-side requireTutor (verified JWT email). Here we
+    // use the account email — worst case a non-eligible user sees a menu item
+    // that the server then refuses.
+    const tutorRow = await db.prepare('SELECT 1 FROM tutor_allowlist WHERE email = ?')
+      .bind(canonicalEmail(account.email)).first();
+
     const access = {
       hasAccess: isComped || hasPaidAccess || hasGraceAccess || inTrial,
       isComped,
@@ -104,6 +111,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
       trialDaysRemaining: inTrial ? trialDaysRemaining : 0,
       subscriptionStatus: subStatus || null,
       hasStripeCustomer: !!account.stripe_customer_id,
+      tutorEligible: !!tutorRow,
     };
 
     // Don't leak internal fields — comp_source is audit-only, stripe_customer_id
