@@ -119,6 +119,7 @@ See `Master_Brief_v7_0.md` for the full feature map.
 - SVG diagrams verified visually in browser (File Explorer → double-click)
 - When creating SVGs, follow the locked templates in memory files
 - **The Oracle writes ALL new question content.** Claude handles mechanical fixes (index corrections, formatting, file operations) but the 11plus-oracle agent must write any new questions, replacement questions, word sets, distractors, answer options, or explanations. The Oracle has the GL research library; Claude does not. This rule exists because Claude-written content has repeatedly needed correction.
+- **Always `git fetch` before any production deploy** (`wrangler deploy`, `bash deploy.sh`, Pages deploy). The SessionStart auto-pull only runs on a real Claude Code restart, so a long-lived session goes stale and deploying from stale local silently reverts work pushed/deployed from the other machine. On 8 June 2026 this reverted 6 laptop commits in prod. Check `git log --oneline HEAD..origin/master`; if behind, rebase and redeploy from merged code.
 
 ## D1 Migration Rules — Read Before Touching `workers/ai-tutor/migrations/`
 
