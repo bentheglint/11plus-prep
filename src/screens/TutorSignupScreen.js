@@ -95,11 +95,13 @@ function TutorProfile({ tutor, onBack, onOpenDashboard }) {
 function SignupForm({ getToken, onCreated }) {
   const [displayName, setDisplayName] = useState('');
   const [bio, setBio] = useState('');
+  const [termsAccepted, setTermsAccepted] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(null);
 
   const handleSubmit = async () => {
     if (!displayName.trim()) { setError('Please enter your name'); return; }
+    if (!termsAccepted) { setError('Please agree to the Tutor Terms to continue'); return; }
     setSaving(true);
     setError(null);
     try {
@@ -146,6 +148,22 @@ function SignupForm({ getToken, onCreated }) {
           <p className="text-xs text-slate-400 mt-1 text-right">{bio.length}/200</p>
         </div>
 
+        <label className="flex items-start gap-3 mb-4 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={termsAccepted}
+            onChange={e => setTermsAccepted(e.target.checked)}
+            className="mt-0.5 w-4 h-4 rounded accent-[#7C3AED] flex-shrink-0"
+          />
+          <span className="text-sm text-slate-600">
+            I agree to the{' '}
+            <a href="/tutor-terms.html" target="_blank" rel="noopener noreferrer" className="text-[#7C3AED] underline">
+              PrepStep Tutor Terms
+            </a>
+            , including the commission arrangement and data handling obligations.
+          </span>
+        </label>
+
         {error && (
           <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-xl text-sm text-red-600">
             {error}
@@ -154,7 +172,7 @@ function SignupForm({ getToken, onCreated }) {
 
         <button
           onClick={handleSubmit}
-          disabled={saving || !displayName.trim()}
+          disabled={saving || !displayName.trim() || !termsAccepted}
           className="w-full py-3.5 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] disabled:opacity-50 transition-colors"
         >
           {saving ? 'Creating profile…' : 'Create tutor profile'}

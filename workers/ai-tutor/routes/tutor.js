@@ -69,9 +69,9 @@ export async function handleTutorRoutes(request, env, userId, path) {
     if (!tutorCode) return json({ error: 'Could not generate a unique tutor code. Try again.' }, 500);
 
     await db.prepare(
-      `INSERT INTO tutors (id, email, display_name, bio, photo_url, tutor_code)
-       VALUES (?, ?, ?, ?, ?, ?)`
-    ).bind(userId, account.email, displayName.trim(), bio?.trim() || null, photoUrl?.trim() || null, tutorCode).run();
+      `INSERT INTO tutors (id, email, display_name, bio, photo_url, tutor_code, terms_version, terms_agreed_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, datetime('now'))`
+    ).bind(userId, account.email, displayName.trim(), bio?.trim() || null, photoUrl?.trim() || null, tutorCode, '1.0').run();
 
     const tutor = await db.prepare('SELECT * FROM tutors WHERE id = ?').bind(userId).first();
     return json({ ok: true, tutor }, 201);
