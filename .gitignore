@@ -67,10 +67,11 @@ _tmp_*
 _diagram-audit/
 dev-review-notes.json
 
-# D1 backups — contain sensitive user data, never commit
+# D1 backups + staging copies — contain sensitive user data, never commit
 /backups/*.sql
 /backups/*.sql.gpg
 /backups/*.sql.gz
+/backups/*.db
 
 # Wrangler local state (nested)
 workers/**/.wrangler
