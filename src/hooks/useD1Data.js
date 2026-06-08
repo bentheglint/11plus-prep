@@ -286,7 +286,7 @@ function hasLegacyData(userName) {
 
 // ── The Hook ──
 
-export default function useD1Data(userName, getToken, childId) {
+export default function useD1Data(userName, getToken, childId, previewMode = false) {
   const prevUser = useRef(userName);
   const versionsRef = useRef({ streaks: 1, prepPoints: 1, preferences: 1 });
   const batchingRef = useRef(false);
@@ -375,6 +375,15 @@ export default function useD1Data(userName, getToken, childId) {
 
     if (!userName) {
       // Logged out — state is now fresh, nothing to load.
+      setLoaded(true);
+      return;
+    }
+
+    if (previewMode) {
+      // Tutor preview — sandbox. Start from clean defaults and never touch the
+      // network (no fetch, no legacy migration). Combined with the enqueue/flush
+      // guards below, nothing a preview tutor does is read from or written to D1.
+      resetToFreshUser();
       setLoaded(true);
       return;
     }
@@ -478,7 +487,7 @@ export default function useD1Data(userName, getToken, childId) {
     loadData();
 
     return () => { cancelled = true; };
-  }, [userName, getToken, childId, populateState, resetToFreshUser]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [userName, getToken, childId, previewMode, populateState, resetToFreshUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Online/offline listener ──
   useEffect(() => {
@@ -499,6 +508,7 @@ export default function useD1Data(userName, getToken, childId) {
   // same ops, causing UNIQUE constraint failures on processed_operations.
   // (Codex Fix C-Client; belt-and-braces with the per-op batching in the Worker.)
   const flushQueue = useCallback(async () => {
+    if (previewMode) return; // preview sandbox never persists to D1
     const queue = syncQueueRef.current;
     if (!queue || queue.isEmpty() || !getToken || !API_URL || !userName) return;
 
@@ -563,7 +573,7 @@ export default function useD1Data(userName, getToken, childId) {
     if (shouldDrain) {
       setTimeout(() => flushQueue(), 100);
     }
-  }, [getToken, userName, childId]);
+  }, [getToken, userName, childId, previewMode]);
 
   // ── Batch Mode ──
   const startBatch = useCallback(() => { batchingRef.current = true; }, []);
@@ -574,12 +584,13 @@ export default function useD1Data(userName, getToken, childId) {
 
   // ── Enqueue helper (enqueues + optionally flushes) ──
   const enqueue = useCallback((type, payload) => {
+    if (previewMode) return; // preview sandbox: update local state only, never persist
     if (!syncQueueRef.current) return;
     syncQueueRef.current.enqueue(type, payload);
     if (!batchingRef.current) {
       flushQueue();
     }
-  }, [flushQueue]);
+  }, [flushQueue, previewMode]);
 
   // ── Save Methods (same signatures as useUserData) ──
 

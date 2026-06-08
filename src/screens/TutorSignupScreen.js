@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Copy, Check, ExternalLink, LayoutDashboard } from 'lucide-react';
+import { ArrowLeft, Copy, Check, ExternalLink, LayoutDashboard, Share2, Users, ClipboardList } from 'lucide-react';
 import { motion } from '../components/Motion';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
@@ -92,8 +92,8 @@ function TutorProfile({ tutor, onBack, onOpenDashboard }) {
 }
 
 // ── Signup form ──
-function SignupForm({ getToken, onCreated }) {
-  const [displayName, setDisplayName] = useState('');
+function SignupForm({ getToken, onCreated, defaultName }) {
+  const [displayName, setDisplayName] = useState(defaultName || '');
   const [bio, setBio] = useState('');
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [saving, setSaving] = useState(false);
@@ -186,9 +186,105 @@ function SignupForm({ getToken, onCreated }) {
   );
 }
 
-export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard }) {
+// ── Post-signup walkthrough (shown once, right after profile creation) ──
+function TutorWalkthrough({ tutor, onDone }) {
+  const [step, setStep] = useState(0);
+  const [copied, setCopied] = useState(false);
+  const joinUrl = `${window.location.origin}/join/${tutor.tutor_code}`;
+
+  const copyLink = () => {
+    navigator.clipboard.writeText(joinUrl).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  const steps = [
+    {
+      icon: Share2,
+      title: 'Share your invite link',
+      body: 'Send this link to the parents of pupils you tutor. When they sign up through it, their child is added to your roster automatically.',
+      showLink: true,
+    },
+    {
+      icon: Users,
+      title: 'Your pupils appear here',
+      body: 'Every child who joins via your link shows up in your dashboard — with their quiz scores, topic strengths, and practice history.',
+      showLink: false,
+    },
+    {
+      icon: ClipboardList,
+      title: 'Set homework & track progress',
+      body: 'Group pupils into classes, set homework assignments with due dates, and see at a glance who needs a nudge.',
+      showLink: false,
+    },
+  ];
+
+  const current = steps[step];
+  const isLast = step === steps.length - 1;
+  const Icon = current.icon;
+
+  return (
+    <div className="max-w-lg mx-auto">
+      <motion.div
+        className="bg-white rounded-2xl shadow-md overflow-hidden"
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+      >
+        <div className="bg-gradient-to-br from-[#7C3AED] to-[#5A4BD1] p-6 text-white text-center">
+          <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-3">
+            <Icon className="w-7 h-7" />
+          </div>
+          <p className="text-white/80 text-sm">You're all set up, {tutor.display_name.split(' ')[0]}!</p>
+          <h1 className="font-heading font-bold text-xl mt-1">{current.title}</h1>
+        </div>
+        <div className="p-6">
+          <p className="text-slate-600 text-sm mb-4">{current.body}</p>
+
+          {current.showLink && (
+            <div className="flex items-center gap-2 p-3 bg-[#F8F7FF] rounded-xl border border-[#A29BFE] mb-4">
+              <span className="text-sm text-[#7C3AED] font-medium flex-1 truncate">{joinUrl}</span>
+              <button onClick={copyLink} className="p-1 text-[#7C3AED] hover:text-[#5A4BD1] transition-colors flex-shrink-0">
+                {copied ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4" />}
+              </button>
+            </div>
+          )}
+
+          {/* Step dots */}
+          <div className="flex items-center justify-center gap-2 mb-5">
+            {steps.map((_, i) => (
+              <span
+                key={i}
+                className={`h-2 rounded-full transition-all ${i === step ? 'w-6 bg-[#7C3AED]' : 'w-2 bg-[#E8E5FF]'}`}
+              />
+            ))}
+          </div>
+
+          <button
+            onClick={() => (isLast ? onDone() : setStep(step + 1))}
+            className="w-full py-3 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] transition-colors"
+          >
+            {isLast ? 'Go to my profile' : 'Next'}
+          </button>
+          {!isLast && (
+            <button
+              onClick={onDone}
+              className="w-full py-2 mt-2 text-sm text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              Skip
+            </button>
+          )}
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard, defaultName }) {
   const [tutor, setTutor] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [justCreated, setJustCreated] = useState(false);
 
   // Check if already a tutor
   useEffect(() => {
@@ -196,6 +292,13 @@ export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard })
       .then(data => { setTutor(data.tutor); setLoading(false); })
       .catch(() => { setLoading(false); });
   }, [getToken]);
+
+  // A freshly created profile completes tutor onboarding — clear the intent flag.
+  const handleCreated = (newTutor) => {
+    try { sessionStorage.removeItem('signup-intent'); } catch {}
+    setTutor(newTutor);
+    setJustCreated(true);
+  };
 
   if (loading) {
     return (
@@ -207,7 +310,9 @@ export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard })
 
   return (
     <div className="app-bg min-h-screen p-4">
-      {tutor ? (
+      {tutor && justCreated ? (
+        <TutorWalkthrough tutor={tutor} onDone={() => setJustCreated(false)} />
+      ) : tutor ? (
         <TutorProfile tutor={tutor} onBack={onBack} onOpenDashboard={onOpenDashboard} />
       ) : (
         <div>
@@ -215,7 +320,7 @@ export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard })
             <ArrowLeft className="w-4 h-4" />
             Back
           </button>
-          <SignupForm getToken={getToken} onCreated={setTutor} />
+          <SignupForm getToken={getToken} onCreated={handleCreated} defaultName={defaultName} />
         </div>
       )}
     </div>

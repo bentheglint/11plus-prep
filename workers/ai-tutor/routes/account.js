@@ -104,6 +104,12 @@ export async function handleAccountRoutes(request, env, userId, path) {
     const tutorRow = await db.prepare('SELECT 1 FROM tutor_allowlist WHERE email = ?')
       .bind(canonicalEmail(account.email)).first();
 
+    // Does this account already have a tutor profile? Drives onboarding routing:
+    // a pure tutor (profile, no child) should land on their dashboard, not the
+    // child-name screen. Cheap existence check by account id.
+    const tutorProfileRow = await db.prepare('SELECT 1 FROM tutors WHERE id = ?')
+      .bind(userId).first();
+
     const adminIds = (env.ADMIN_USER_IDS || '').split(',').map(s => s.trim()).filter(Boolean);
     const access = {
       hasAccess: isComped || hasPaidAccess || hasGraceAccess || inTrial,
@@ -113,6 +119,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
       subscriptionStatus: subStatus || null,
       hasStripeCustomer: !!account.stripe_customer_id,
       tutorEligible: !!tutorRow,
+      hasTutorProfile: !!tutorProfileRow,
       isAdmin: adminIds.length > 0 && adminIds.includes(userId),
     };
 

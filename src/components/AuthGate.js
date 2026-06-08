@@ -36,7 +36,7 @@ function InviteBanner({ code }) {
 }
 
 // ── Landing Page (shown when signed out) ──
-function LandingPage({ onSignIn, onSignUp, inviteCode }) {
+function LandingPage({ onSignIn, onSignUp, onTutorSignup, inviteCode }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-[#E8E5FF] flex flex-col">
       <InviteBanner code={inviteCode} />
@@ -92,6 +92,14 @@ function LandingPage({ onSignIn, onSignUp, inviteCode }) {
             Help
           </a>
         </div>
+
+        {/* Tutor entry point */}
+        <p className="text-sm text-slate-500 mt-8">
+          Are you a tutor?{' '}
+          <button onClick={onTutorSignup} className="text-[#7C3AED] font-bold underline hover:text-[#5A4BD1]">
+            Sign up here
+          </button>
+        </p>
       </main>
     </div>
   );
@@ -232,6 +240,51 @@ function ChildNameScreen({ onSubmit, isLoading }) {
   );
 }
 
+// ── Tutor Name Screen ──
+function TutorNameScreen({ onSubmit, isLoading }) {
+  const [name, setName] = useState('');
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
+      <div className="max-w-md w-full bg-white rounded-2xl shadow-lg p-8 text-center">
+        <h1 className="font-heading text-2xl font-bold text-slate-800 mb-2">
+          Welcome! What's your name?
+        </h1>
+        <p className="text-slate-500 mb-6">
+          This is how you'll appear to the parents you invite.
+          You can add a short bio on the next step.
+        </p>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="e.g. Mary Jones"
+          maxLength={50}
+          className="w-full px-4 py-3 text-lg text-center border-2 border-gray-200 rounded-xl focus:border-[#7C3AED] focus:outline-none mb-4"
+          autoFocus
+        />
+        <button
+          onClick={() => onSubmit(name.trim())}
+          disabled={!name.trim() || isLoading}
+          className={`w-full py-3 rounded-xl font-bold text-white transition-colors ${
+            name.trim() && !isLoading
+              ? 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
+              : 'bg-gray-300 cursor-not-allowed'
+          }`}
+        >
+          {isLoading ? 'Setting up...' : 'Continue'}
+        </button>
+        <p className="text-xs text-slate-400 mt-4">
+          By continuing you agree to our{' '}
+          <a href="/terms.html" target="_blank" rel="noopener noreferrer" className="text-[#7C3AED] underline">terms</a>
+          {' '}and{' '}
+          <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-[#7C3AED] underline">privacy policy</a>.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 // ── Dev bypass: skip auth on localhost with ?dev-auth=true ──
 const DEV_BYPASS = process.env.NODE_ENV === 'development'
   && typeof window !== 'undefined'
@@ -280,6 +333,28 @@ function AuthGateReal({ children }) {
     } catch {}
   });
 
+  // Tutor signup intent — set when a visitor takes the "I'm a tutor" path
+  // (landing-page link or a ?tutor=1 direct link). Persists in sessionStorage
+  // so it survives Clerk's signup redirect. Drives the tutor onboarding fork
+  // (own-name screen, no child) and where they land afterwards.
+  const [signupIntent, setSignupIntent] = useState(() => {
+    try {
+      const param = new URLSearchParams(window.location.search).get('tutor');
+      if (param === '1') {
+        sessionStorage.setItem('signup-intent', 'tutor');
+        // Clean the URL so ?tutor=1 doesn't linger after onboarding
+        const params = new URLSearchParams(window.location.search);
+        params.delete('tutor');
+        const q = params.toString();
+        window.history.replaceState({}, '', window.location.pathname + (q ? '?' + q : ''));
+        return 'tutor';
+      }
+      return sessionStorage.getItem('signup-intent') || null;
+    } catch {
+      return null;
+    }
+  });
+
   // Invite code — captured from URL ?invite=CODE on first mount. Persists
   // in localStorage so it survives the Clerk signup redirect round-trip and
   // is consumed when we POST /api/account after consent.
@@ -317,6 +392,9 @@ function AuthGateReal({ children }) {
       const allChildren = data.children || [];
       const firstChild = allChildren[0] || null;
       if (data.account && firstChild) {
+        // Has a child → parent (or dual-role tutor-parent). Unchanged flow:
+        // land on the child home; tutors with a child reach their dashboard
+        // via the account menu.
         setChildrenList(allChildren);
         setChildName(firstChild.display_name);
         setActiveChildId(firstChild.id);
@@ -325,25 +403,48 @@ function AuthGateReal({ children }) {
         } else {
           setOnboardingStep('ready');
         }
+      } else if (data.account && data.access?.hasTutorProfile) {
+        // Pure tutor (profile, no child) → land on their dashboard. No paywall
+        // for tutors. Their own account name flows through as currentUser.
+        try { sessionStorage.setItem('tutor-landing', 'dashboard'); } catch {}
+        setChildName(data.account.name || 'Tutor');
+        setOnboardingStep('ready');
+      } else if (data.account && (signupIntent === 'tutor' || data.access?.tutorEligible)) {
+        // Tutor account created but no profile yet (fresh signup, or returning
+        // after abandoning before profile creation) → send to profile setup.
+        try { sessionStorage.setItem('tutor-landing', 'signup'); } catch {}
+        setChildName(data.account.name || 'Tutor');
+        setOnboardingStep('ready');
       } else if (data.account && !firstChild) {
+        // Parent who hasn't named their child yet.
         setOnboardingStep('childName');
       }
     } catch (err) {
       if (err.message.includes('not found') || err.message.includes('404')) {
-        setOnboardingStep('consent');
+        // No account yet → onboarding. Tutors take their own fork (own name,
+        // no child); everyone else gets the parent consent + child-name flow.
+        setOnboardingStep(signupIntent === 'tutor' ? 'tutorName' : 'consent');
       } else {
         setError(err.message);
       }
     } finally {
       setIsLoading(false);
     }
-  }, [isSignedIn, getToken]);
+  }, [isSignedIn, getToken, signupIntent]);
 
   useEffect(() => {
     if (authLoaded && isSignedIn) {
       checkAccount();
     }
   }, [authLoaded, isSignedIn, checkAccount]);
+
+  // A ?tutor=1 direct link (or lingering tutor intent) jumps straight to the
+  // signup form rather than the parent-oriented landing hero.
+  useEffect(() => {
+    if (authLoaded && !isSignedIn && signupIntent === 'tutor') {
+      setAuthView((v) => (v === 'landing' ? 'signup' : v));
+    }
+  }, [authLoaded, isSignedIn, signupIntent]);
 
   // Stripe redirect return — 3DS flow sends the user back to /?subscribed=1.
   // Clear the param and re-fetch account so we see the new subscription_status.
@@ -386,6 +487,35 @@ function AuthGateReal({ children }) {
       setInviteCode(null);
 
       setOnboardingStep('childName');
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Handle tutor name submission — creates the account with the tutor's own
+  // name and NO child record, then sends them to profile setup. The meaningful
+  // commercial agreement (Tutor Terms clickwrap) is captured at profile creation.
+  const handleTutorName = async (tutorName) => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      const token = await getToken();
+
+      await apiFetch('/api/account', token, {
+        method: 'POST',
+        body: JSON.stringify({
+          email: user.primaryEmailAddress?.emailAddress || '',
+          name: tutorName,
+          consentVersion: '1.0',
+          emailOptIn: false, // tutors don't need child-progress emails
+        }),
+      });
+
+      setChildName(tutorName);
+      try { sessionStorage.setItem('tutor-landing', 'signup'); } catch {}
+      setOnboardingStep('ready');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -463,7 +593,18 @@ function AuthGateReal({ children }) {
         </div>
       );
     }
-    return <LandingPage onSignIn={() => setAuthView('signin')} onSignUp={() => setAuthView('signup')} inviteCode={inviteCode} />;
+    return (
+      <LandingPage
+        onSignIn={() => setAuthView('signin')}
+        onSignUp={() => setAuthView('signup')}
+        onTutorSignup={() => {
+          try { sessionStorage.setItem('signup-intent', 'tutor'); } catch {}
+          setSignupIntent('tutor');
+          setAuthView('signup');
+        }}
+        inviteCode={inviteCode}
+      />
+    );
   }
 
   // Signed in but checking/loading account
@@ -501,6 +642,11 @@ function AuthGateReal({ children }) {
   // Onboarding: child name
   if (onboardingStep === 'childName') {
     return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
+  }
+
+  // Onboarding: tutor name (their own name, no child)
+  if (onboardingStep === 'tutorName') {
+    return <TutorNameScreen onSubmit={handleTutorName} isLoading={isLoading} />;
   }
 
   // Paywall: no access (trial expired or subscription canceled).

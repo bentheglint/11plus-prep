@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import {
   ArrowLeft, Users, BookOpen, Clock, AlertCircle, CheckCircle2,
   ChevronRight, Copy, Check, Plus, X, Trash2, MessageCircle,
-  TrendingDown, Activity, Calendar,
+  TrendingDown, Activity, Calendar, Eye,
 } from 'lucide-react';
 import { motion } from '../components/Motion';
 import PupilDetailScreen from './PupilDetailScreen';
@@ -383,7 +383,7 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
 const SPLIT_BREAKPOINT = 1024;
 
 // ── Main dashboard ──
-export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail }) {
+export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail, onPreview }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -564,6 +564,25 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
   // ── Shared dashboard body (used in both layouts) ──────────────────────────
   const dashboardBody = (
     <>
+      {/* Preview the pupil experience — lets a tutor wander the full quiz/lesson
+          flow sandboxed (nothing saved) so they can evaluate and demo it. */}
+      {!loading && onPreview && (
+        <button
+          type="button"
+          onClick={onPreview}
+          className="w-full flex items-center gap-3 mb-4 p-3.5 bg-white rounded-2xl border border-[#A29BFE] hover:border-[#7C3AED] hover:bg-[#F8F7FF] transition-colors text-left"
+        >
+          <div className="w-10 h-10 rounded-xl bg-[#F0EDFF] flex items-center justify-center flex-shrink-0">
+            <Eye className="w-5 h-5 text-[#7C3AED]" />
+          </div>
+          <div className="min-w-0">
+            <p className="font-bold text-slate-800 text-sm">Preview the pupil experience</p>
+            <p className="text-xs text-slate-500">See exactly what your pupils see — nothing is saved.</p>
+          </div>
+          <ChevronRight className="w-4 h-4 text-slate-300 ml-auto flex-shrink-0" />
+        </button>
+      )}
+
       {/* Loading skeleton */}
       {loading && (
         <div className="space-y-3 animate-pulse">

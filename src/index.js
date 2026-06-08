@@ -12,6 +12,7 @@ import DiagramViewer from './DiagramViewer';
 import AuthGate from './components/AuthGate';
 import ErrorBoundary from './components/ErrorBoundary';
 import OfflineBanner from './components/OfflineBanner';
+import TutorPreviewBanner from './components/TutorPreviewBanner';
 import reportWebVitals from './reportWebVitals';
 
 if (process.env.REACT_APP_SENTRY_DSN) {
@@ -60,6 +61,7 @@ root.render(
   <React.StrictMode>
     <ErrorBoundary>
       <OfflineBanner />
+      <TutorPreviewBanner />
       {SMOKE_MODE ? (
         // Smoke test harness: skip ClerkProvider so the app boots without
         // needing a live Clerk key. Never true in production builds.

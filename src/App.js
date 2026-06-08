@@ -134,8 +134,17 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     setCurrentView('home');
   };
 
+  // Tutor preview ("explore mode") — a tutor with no child can wander the full
+  // pupil experience (quizzes, lessons) sandboxed: nothing is read from or
+  // written to D1. Flag lives in sessionStorage so it survives the reload used
+  // to enter/exit preview, and so the persistence guard is active from the very
+  // first render (before any quiz can fire a write).
+  const [previewMode] = useState(() => {
+    try { return sessionStorage.getItem('tutor-preview') === '1'; } catch { return false; }
+  });
+
   // Per-user data isolation — all progress data keyed by user name
-  const userData = useD1Data(currentUser, getToken, activeChildId);
+  const userData = useD1Data(currentUser, getToken, activeChildId, previewMode);
   const { quizHistory, topicPerformance, seenQuestions, lessonHistory, questionResults, practiceLog } = userData;
 
   // Mastery scoring engine (computed from question results)
@@ -175,6 +184,17 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
     if (pathMatch) return 'join';
     try { if (sessionStorage.getItem('pending-join-code')) return 'join'; } catch {};
+    // Tutor preview takes precedence — a tutor exploring the pupil experience
+    // boots straight into the child home (sandboxed by previewMode).
+    try { if (sessionStorage.getItem('tutor-preview') === '1') return 'home'; } catch {};
+    // Tutor landing — set by AuthGate after a tutor signs in. 'signup' sends a
+    // fresh tutor to profile setup; 'dashboard' sends a returning tutor home.
+    // Read-once: cleared in a mount effect below.
+    try {
+      const tl = sessionStorage.getItem('tutor-landing');
+      if (tl === 'signup') return 'tutorSignup';
+      if (tl === 'dashboard') return 'tutorDashboard';
+    } catch {};
     // Dev preview bypass — ?preview=tutor or ?preview=tutorDashboard
     const previewParam = process.env.NODE_ENV === 'development'
       && new URLSearchParams(window.location.search).get('preview');
@@ -182,6 +202,12 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     if (previewParam === 'tutorDashboard' || previewParam === 'tutorEmpty') return 'tutorDashboard';
     return 'home';
   });
+
+  // Clear the one-shot tutor-landing flag once consumed, so a later refresh or
+  // manual navigation isn't forced back to the tutor surface.
+  useEffect(() => {
+    try { sessionStorage.removeItem('tutor-landing'); } catch {}
+  }, []);
 
   // Keep error boundary view context in sync for Sentry error reports
   React.useEffect(() => { setErrorBoundaryView(currentView); }, [currentView]);
@@ -1744,6 +1770,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     return (
       <TutorSignupScreen
         getToken={getToken}
+        defaultName={currentUser}
         onBack={() => setCurrentView('home')}
         onOpenDashboard={() => setCurrentView('tutorDashboard')}
       />
@@ -1755,6 +1782,12 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       <TutorDashboardScreen
         getToken={getToken}
         onBack={() => setCurrentView('tutorSignup')}
+        onPreview={() => {
+          // Enter preview by flag + reload: guarantees the persistence guard is
+          // live from first render and clears any prior in-memory state.
+          try { sessionStorage.setItem('tutor-preview', '1'); } catch {}
+          window.location.reload();
+        }}
         onViewQuizDetail={(quiz, questionResults) => {
           setTutorQuizSession({ quiz, questionResults });
           setCurrentView('tutorQuizDetail');
