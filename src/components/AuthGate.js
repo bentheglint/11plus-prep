@@ -334,14 +334,17 @@ function AuthGateReal({ children }) {
   });
 
   // Tutor signup intent — set when a visitor takes the "I'm a tutor" path
-  // (landing-page link or a ?tutor=1 direct link). Persists in sessionStorage
-  // so it survives Clerk's signup redirect. Drives the tutor onboarding fork
-  // (own-name screen, no child) and where they land afterwards.
+  // (landing-page link or a ?tutor=1 direct link). Stored in localStorage (not
+  // sessionStorage) so it survives BOTH Clerk's signup redirect AND opening a
+  // new tab — e.g. the Tutor Terms link (target=_blank) whose "Back to app"
+  // would otherwise land an intent-less new tab on the child-name screen.
+  // Cleared once the user commits to a path (tutor profile created, or parent
+  // consent / parent CTA) so it can never misroute a later parent signup.
   const [signupIntent, setSignupIntent] = useState(() => {
     try {
       const param = new URLSearchParams(window.location.search).get('tutor');
       if (param === '1') {
-        sessionStorage.setItem('signup-intent', 'tutor');
+        localStorage.setItem('signup-intent', 'tutor');
         // Clean the URL so ?tutor=1 doesn't linger after onboarding
         const params = new URLSearchParams(window.location.search);
         params.delete('tutor');
@@ -349,11 +352,18 @@ function AuthGateReal({ children }) {
         window.history.replaceState({}, '', window.location.pathname + (q ? '?' + q : ''));
         return 'tutor';
       }
-      return sessionStorage.getItem('signup-intent') || null;
+      return localStorage.getItem('signup-intent') || null;
     } catch {
       return null;
     }
   });
+
+  // Clear tutor intent — called when a user commits to the parent path so a
+  // stale flag can't push a parent into tutor onboarding.
+  const clearTutorIntent = useCallback(() => {
+    try { localStorage.removeItem('signup-intent'); } catch {}
+    setSignupIntent(null);
+  }, []);
 
   // Invite code — captured from URL ?invite=CODE on first mount. Persists
   // in localStorage so it survives the Clerk signup redirect round-trip and
@@ -486,6 +496,7 @@ function AuthGateReal({ children }) {
       }
       setInviteCode(null);
 
+      clearTutorIntent(); // parent account created — drop any stale tutor intent
       setOnboardingStep('childName');
     } catch (err) {
       setError(err.message);
@@ -595,10 +606,10 @@ function AuthGateReal({ children }) {
     }
     return (
       <LandingPage
-        onSignIn={() => setAuthView('signin')}
-        onSignUp={() => setAuthView('signup')}
+        onSignIn={() => { clearTutorIntent(); setAuthView('signin'); }}
+        onSignUp={() => { clearTutorIntent(); setAuthView('signup'); }}
         onTutorSignup={() => {
-          try { sessionStorage.setItem('signup-intent', 'tutor'); } catch {}
+          try { localStorage.setItem('signup-intent', 'tutor'); } catch {}
           setSignupIntent('tutor');
           setAuthView('signup');
         }}

@@ -295,7 +295,7 @@ export default function TutorSignupScreen({ getToken, onBack, onOpenDashboard, d
 
   // A freshly created profile completes tutor onboarding — clear the intent flag.
   const handleCreated = (newTutor) => {
-    try { sessionStorage.removeItem('signup-intent'); } catch {}
+    try { localStorage.removeItem('signup-intent'); } catch {}
     setTutor(newTutor);
     setJustCreated(true);
   };
