@@ -47,8 +47,10 @@ yarn-error.log*
 # API keys and secrets
 /Master Brief Document and Working Instructions/Claude API Key
 
-# Research library (reference material, not app code)
-/research
+# Research library — track text (.md) only; scan/binary subfolders stay ignored below
+/research/**
+!/research/**/
+!/research/**/*.md
 
 # Scanned reference materials (large binary files)
 /Examples for English and VR
