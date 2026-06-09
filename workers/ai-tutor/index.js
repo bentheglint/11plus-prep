@@ -110,21 +110,13 @@ async function requireAdmin(request, env) {
   return auth;
 }
 
-// Tutor gate. Ongoing entitlement (not just a signup check), so revoking a
-// tutor from the allowlist immediately cuts access on every tutor route.
-// Requires a VERIFIED email from the JWT claim and membership in tutor_allowlist.
-async function requireTutor(request, env) {
+// Tutor gate. Checks that the caller has an existing tutors row (i.e. has
+// completed signup). Revoking a tutor = deleting their tutors row.
+async function requireTutorProfile(request, env) {
   const auth = await requireAuth(request, env);
   if (auth.error) return auth;
-  if (!auth.email || !auth.emailVerified) {
-    return { error: json({ error: 'Forbidden' }, 403) };
-  }
-  const row = await env.DB.prepare(
-    'SELECT 1 FROM tutor_allowlist WHERE email = ?'
-  ).bind(auth.email).first();
-  if (!row) {
-    return { error: json({ error: 'Forbidden' }, 403) };
-  }
+  const row = await env.DB.prepare('SELECT 1 FROM tutors WHERE id = ?').bind(auth.userId).first();
+  if (!row) return { error: json({ error: 'Forbidden' }, 403) };
   return auth;
 }
 
@@ -374,11 +366,27 @@ const worker = {
         return json({ error: 'Admin route not found', path }, 404);
       }
 
-      // ── Tutor routes — gated on ongoing allowlist eligibility (requireTutor),
-      //    so revoking a tutor immediately cuts access. Public tutor preview
-      //    (/api/tutor/public/*) is handled above, before any auth. ──
+      // ── Tutor routes ──
+      // Signup (POST /api/tutor) and parent join (POST /api/tutor/join) only
+      // need a valid Clerk session — no tutor profile required yet.
+      // All other tutor routes require requireTutorProfile (has a tutors row).
+      // Public preview (/api/tutor/public/*) is handled above, before any auth.
+      if (path === '/api/tutor' && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
+        if (tutorResult) return tutorResult;
+        return json({ error: 'Tutor route not found', path }, 404);
+      }
+      if (path === '/api/tutor/join' && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
+        if (tutorResult) return tutorResult;
+        return json({ error: 'Tutor route not found', path }, 404);
+      }
       if (path.startsWith('/api/tutor')) {
-        const auth = await requireTutor(request, env);
+        const auth = await requireTutorProfile(request, env);
         if (auth.error) return auth.error;
         const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
         if (tutorResult) return tutorResult;

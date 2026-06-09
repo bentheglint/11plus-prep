@@ -97,16 +97,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
     const hasGraceAccess = subStatus === 'past_due';
     const inTrial = !isComped && !subStatus && trialDaysRemaining > 0;
 
-    // Tutor eligibility drives the "Tutor profile" menu item only (cosmetic).
-    // The real gate is server-side requireTutor (verified JWT email). Here we
-    // use the account email — worst case a non-eligible user sees a menu item
-    // that the server then refuses.
-    const tutorRow = await db.prepare('SELECT 1 FROM tutor_allowlist WHERE email = ?')
-      .bind(canonicalEmail(account.email)).first();
-
-    // Does this account already have a tutor profile? Drives onboarding routing:
-    // a pure tutor (profile, no child) should land on their dashboard, not the
-    // child-name screen. Cheap existence check by account id.
+    // Tutor signup is open — any authenticated user can create a tutor profile.
     const tutorProfileRow = await db.prepare('SELECT 1 FROM tutors WHERE id = ?')
       .bind(userId).first();
 
@@ -118,7 +109,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
       trialDaysRemaining: inTrial ? trialDaysRemaining : 0,
       subscriptionStatus: subStatus || null,
       hasStripeCustomer: !!account.stripe_customer_id,
-      tutorEligible: !!tutorRow,
+      tutorEligible: true,
       hasTutorProfile: !!tutorProfileRow,
       isAdmin: adminIds.length > 0 && adminIds.includes(userId),
     };

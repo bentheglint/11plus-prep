@@ -419,7 +419,7 @@ function AuthGateReal({ children }) {
         try { sessionStorage.setItem('tutor-landing', 'dashboard'); } catch {}
         setChildName(data.account.name || 'Tutor');
         setOnboardingStep('ready');
-      } else if (data.account && (signupIntent === 'tutor' || data.access?.tutorEligible)) {
+      } else if (data.account && signupIntent === 'tutor') {
         // Tutor account created but no profile yet (fresh signup, or returning
         // after abandoning before profile creation) → send to profile setup.
         try { sessionStorage.setItem('tutor-landing', 'signup'); } catch {}
