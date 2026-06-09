@@ -24,13 +24,21 @@ if [ -f .env.local ]; then
   echo "(.env.local renamed for build — will be restored on exit)"
 fi
 
-echo "Running tests..."
+echo "Running frontend tests..."
 npx react-scripts test --watchAll=false 2>&1
 if [ $? -ne 0 ]; then
-  echo "Tests failed. Fix failing tests before deploying."
+  echo "Frontend tests failed. Fix failing tests before deploying."
   exit 1
 fi
-echo "Tests passed."
+echo "Frontend tests passed."
+
+echo "Running Worker tests..."
+(cd workers/ai-tutor && npm test)
+if [ $? -ne 0 ]; then
+  echo "Worker tests failed. Fix failing tests before deploying."
+  exit 1
+fi
+echo "Worker tests passed."
 
 echo "Building smoke bundle..."
 REACT_APP_SMOKE_MODE=true npx react-scripts build

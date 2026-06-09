@@ -30,13 +30,17 @@ async function verifyClerkJWT(request, env) {
     const kid = header.kid;
     if (!kid) return null;
 
-    const jwksUrl = `https://${env.CLERK_DOMAIN}/.well-known/jwks.json`;
-    const jwksResponse = await fetch(jwksUrl, {
-      cf: { cacheTtl: 3600, cacheEverything: true },
-    });
-    if (!jwksResponse.ok) return null;
-
-    const jwks = await jwksResponse.json();
+    let jwks;
+    if (env.TEST_JWKS) {
+      jwks = JSON.parse(env.TEST_JWKS);
+    } else {
+      const jwksUrl = `https://${env.CLERK_DOMAIN}/.well-known/jwks.json`;
+      const jwksResponse = await fetch(jwksUrl, {
+        cf: { cacheTtl: 3600, cacheEverything: true },
+      });
+      if (!jwksResponse.ok) return null;
+      jwks = await jwksResponse.json();
+    }
     const key = jwks.keys.find(k => k.kid === kid);
     if (!key) return null;
 

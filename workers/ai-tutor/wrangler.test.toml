@@ -1,0 +1,17 @@
+name = "11plus-ai-tutor"
+main = "index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "TESTING_FLAGS"
+id = "test-kv-id"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "test-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+CLERK_DOMAIN = "test.clerk.11plus.dev"
+TEST_JWKS = "{\"keys\":[{\"key_ops\":[\"verify\"],\"ext\":true,\"alg\":\"RS256\",\"kty\":\"RSA\",\"n\":\"mZzeJSdohOqsEjDRys1u94WJtW7VtpE5GeA5aT9EjcDG1r1ZUdIUBKIWlrVvjGepqgdX7ymIfNTIZnZzAvJn0Vfo55jZt55Pd6J2U-p7cAEXUC7-nTViS2YJaAY4CTcnih1OzOjIe5InKdNxJi1L6ex0y7BUOunbVe8lI_j4fUPg9Od2hD87bHJVNIVjdacKLT9rwiD-3f97MwLlqhdvrM-Jqg3K4o9X31dxzSEhkbD1qwPEkwf3rMUz7PvuNcm-aT5mfFWC0_wyfdfaI_OCzphDiQhIVSVcRmmAIJSVUil-WZIXkwCVH-D72JbOq6XK-mtY4fk9PUlrgR93Id3uFw\",\"e\":\"AQAB\",\"kid\":\"test-key-1\"}]}"
