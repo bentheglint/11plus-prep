@@ -109,7 +109,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
       trialDaysRemaining: inTrial ? trialDaysRemaining : 0,
       subscriptionStatus: subStatus || null,
       hasStripeCustomer: !!account.stripe_customer_id,
-      tutorEligible: true,
+      tutorEligible: !!tutorProfileRow,
       hasTutorProfile: !!tutorProfileRow,
       isAdmin: adminIds.length > 0 && adminIds.includes(userId),
     };
