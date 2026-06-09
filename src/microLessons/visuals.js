@@ -2473,8 +2473,12 @@ export function SentenceDisplay({
 
   // ── Evidence mode ──
   if (mode === "evidence") {
-    // Split passage into sentences, highlight the evidence one
-    const sentences = passage.split(/(?<=[.!?])\s+/);
+    // Split passage into sentences, highlight the evidence one.
+    // NOTE: avoid regex lookbehind here — Safari < 16.4 (e.g. iOS 15 iPads)
+    // throws a SyntaxError parsing lookbehind, which kills the whole bundle
+    // and shows users a blank screen. Sentinel-split is an equivalent that
+    // parses everywhere: mark sentence boundaries, then split on the marker.
+    const sentences = passage.replace(/([.!?])\s+/g, '$1\u0000').split('\u0000');
     return (
       <div>
         {label && <p className="text-sm font-bold text-[#7C3AED] mb-1">{label}</p>}
