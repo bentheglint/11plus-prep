@@ -141,6 +141,48 @@ CREATE TABLE IF NOT EXISTS tutor_allowlist (
   added_by TEXT NOT NULL,
   added_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+CREATE TABLE IF NOT EXISTS classes (
+  id TEXT PRIMARY KEY,
+  tutor_id TEXT NOT NULL REFERENCES tutors(id) ON DELETE CASCADE,
+  name TEXT NOT NULL,
+  schedule_note TEXT,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS class_enrolments (
+  class_id TEXT NOT NULL REFERENCES classes(id) ON DELETE CASCADE,
+  child_id TEXT NOT NULL REFERENCES children(id) ON DELETE CASCADE,
+  enrolled_at TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (class_id, child_id)
+);
+
+CREATE TABLE IF NOT EXISTS tutor_notes (
+  id TEXT PRIMARY KEY,
+  tutor_id TEXT NOT NULL,
+  child_id TEXT NOT NULL,
+  note TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS conversations (
+  id TEXT PRIMARY KEY,
+  tutor_id TEXT NOT NULL,
+  child_id TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  UNIQUE (tutor_id, child_id)
+);
+
+CREATE TABLE IF NOT EXISTS messages (
+  id TEXT PRIMARY KEY,
+  conversation_id TEXT NOT NULL REFERENCES conversations(id) ON DELETE CASCADE,
+  sender_type TEXT NOT NULL,
+  sender_id TEXT NOT NULL,
+  body TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  read_at TEXT
+);
 `;
 
 export async function createSchema(db) {
@@ -154,6 +196,11 @@ export async function createSchema(db) {
 
 export async function cleanDb(db) {
   await db.batch([
+    db.prepare('DELETE FROM messages'),
+    db.prepare('DELETE FROM conversations'),
+    db.prepare('DELETE FROM tutor_notes'),
+    db.prepare('DELETE FROM class_enrolments'),
+    db.prepare('DELETE FROM classes'),
     db.prepare('DELETE FROM assignment_recipients'),
     db.prepare('DELETE FROM assignment_items'),
     db.prepare('DELETE FROM assignments'),
@@ -194,6 +241,26 @@ export const seed = {
          VALUES (?, ?, 'Test Tutor', 'TEST-CODE')`
       )
       .bind(userId, email)
+      .run();
+  },
+
+  async pupilTutor(db, childId, tutorId) {
+    await db
+      .prepare(
+        `INSERT OR IGNORE INTO pupil_tutors (child_id, tutor_id)
+         VALUES (?, ?)`
+      )
+      .bind(childId, tutorId)
+      .run();
+  },
+
+  async class_(db, classId, tutorId, name = 'Test Class') {
+    await db
+      .prepare(
+        `INSERT INTO classes (id, tutor_id, name)
+         VALUES (?, ?, ?)`
+      )
+      .bind(classId, tutorId, name)
       .run();
   },
 

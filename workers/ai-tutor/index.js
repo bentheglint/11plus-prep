@@ -394,6 +394,29 @@ const worker = {
         if (auth.error) return auth.error;
         const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
         if (tutorResult) return tutorResult;
+
+        // Sub-routes not handled by handleTutorRoutes — dispatch here so they
+        // are still covered by the requireTutorProfile gate above. These handlers
+        // do their own internal tutor-existence checks as defence-in-depth but
+        // the outer gate is the primary auth boundary.
+        const classResult = await handleClassRoutes(request, env, auth.userId, path);
+        if (classResult) return classResult;
+
+        const assignResult = await handleAssignmentRoutes(request, env, auth.userId, path);
+        if (assignResult) return assignResult;
+
+        const notesResult = await handleNotesRoutes(request, env, auth.userId, path);
+        if (notesResult) return notesResult;
+
+        const reportResult = await handleReportRoutes(request, env, auth.userId, path);
+        if (reportResult) return reportResult;
+
+        const messagingResult = await handleMessagingRoutes(request, env, auth.userId, path);
+        if (messagingResult) return messagingResult;
+
+        const relResult = await handleRelationshipRoutes(request, env, auth.userId, path);
+        if (relResult) return relResult;
+
         return json({ error: 'Tutor route not found', path }, 404);
       }
 

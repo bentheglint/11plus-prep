@@ -108,13 +108,23 @@ export async function handleClassRoutes(request, env, userId, path) {
       const { childIds } = await request.json();
       if (!Array.isArray(childIds) || childIds.length === 0) return json({ error: 'childIds must be a non-empty array' }, 400);
 
-      // Verify each child is on this tutor's roster
-      const stmts = childIds.map(cid =>
-        db.prepare('INSERT OR IGNORE INTO class_enrolments (class_id, child_id) VALUES (?, ?)')
-          .bind(classId, cid)
-      );
-      await db.batch(stmts);
-      return json({ ok: true, added: childIds.length });
+      // Verify each child is on this tutor's roster — silently drop any that are not.
+      // This prevents a tutor from enroling children who have removed them (or were
+      // never linked). Consistent with INSERT OR IGNORE semantics elsewhere.
+      const { results: rosterRows } = await db.prepare(
+        `SELECT child_id FROM pupil_tutors WHERE tutor_id = ? AND child_id IN (${childIds.map(() => '?').join(',')})`
+      ).bind(tutorId, ...childIds).all();
+      const onRoster = new Set(rosterRows.map(r => r.child_id));
+      const eligible = childIds.filter(cid => onRoster.has(cid));
+
+      if (eligible.length > 0) {
+        const stmts = eligible.map(cid =>
+          db.prepare('INSERT OR IGNORE INTO class_enrolments (class_id, child_id) VALUES (?, ?)')
+            .bind(classId, cid)
+        );
+        await db.batch(stmts);
+      }
+      return json({ ok: true, added: eligible.length });
     }
 
     // DELETE /api/tutor/classes/:id/pupils/:childId
