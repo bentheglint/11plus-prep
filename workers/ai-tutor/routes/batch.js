@@ -417,14 +417,22 @@ export async function handleBatch(request, env, userId) {
         continue;
       }
 
-      // Additive UPDATE, CASE on todayDate for today_pp reset, INSERT if no row yet
+      // Additive UPDATE, INSERT if no row yet. today_date only moves FORWARD:
+      // a stale device flushing yesterday's op after today's writes must not
+      // regress today_pp/today_date (total is still added — that's the point).
+      // ISO YYYY-MM-DD strings compare correctly as text.
       const dataStmt = db.prepare(`
         INSERT INTO prep_points (child_id, total, level, today_pp, today_date, version)
         VALUES (?, ?, 0, ?, ?, 1)
         ON CONFLICT(child_id) DO UPDATE SET
           total     = prep_points.total + ?,
-          today_pp  = CASE WHEN prep_points.today_date = ? THEN prep_points.today_pp + ? ELSE ? END,
-          today_date = ?,
+          today_pp  = CASE
+            WHEN prep_points.today_date = ? THEN prep_points.today_pp + ?
+            WHEN prep_points.today_date IS NULL OR prep_points.today_date < ? THEN ?
+            ELSE prep_points.today_pp END,
+          today_date = CASE
+            WHEN prep_points.today_date IS NULL OR prep_points.today_date < ? THEN ?
+            ELSE prep_points.today_date END,
           version   = prep_points.version + 1,
           updated_at = datetime('now')
       `).bind(
@@ -433,10 +441,12 @@ export async function handleBatch(request, env, userId) {
         todayDelta,    // INSERT today_pp
         todayDate,     // INSERT today_date
         delta,         // UPDATE total +
-        todayDate,     // UPDATE CASE today_date comparison
-        todayDelta,    // UPDATE today_pp same-day branch (+)
-        todayDelta,    // UPDATE today_pp new-day branch (reset to todayDelta)
-        todayDate,     // UPDATE today_date
+        todayDate,     // today_pp CASE: same-day comparison
+        todayDelta,    // today_pp same-day branch (+)
+        todayDate,     // today_pp CASE: newer-day comparison
+        todayDelta,    // today_pp newer-day branch (reset to todayDelta)
+        todayDate,     // today_date CASE: newer-day comparison
+        todayDate,     // today_date newer-day branch (advance)
       );
 
       const resultIndex = results.length;

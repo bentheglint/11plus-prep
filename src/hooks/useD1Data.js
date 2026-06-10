@@ -18,11 +18,11 @@ const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 // ops, causing UNIQUE constraint failures on processed_operations.
 // Keyed by userName so different children never block each other.
 // Exported for testing — do not import from app code.
-export const flushState = new Map(); // userName → { flushing: boolean, pending: boolean, backoffMs: number, lastFailedAt: number|null }
+export const flushState = new Map(); // userName → { flushing: boolean, pending: boolean, backoffMs: number, lastFailedAt: number|null, permFailures: number }
 
 export function getFlushState(userName) {
   if (!flushState.has(userName)) {
-    flushState.set(userName, { flushing: false, pending: false, backoffMs: 0, lastFailedAt: null });
+    flushState.set(userName, { flushing: false, pending: false, backoffMs: 0, lastFailedAt: null, permFailures: 0 });
   }
   return flushState.get(userName);
 }
@@ -292,9 +292,15 @@ export function transformServerData(serverData) {
     if (!lessonHistory[topicKey]) {
       lessonHistory[topicKey] = { shown: [], lastSubConcept: null, lastTemplateType: null };
     }
-    if (!lessonHistory[topicKey].shown.includes(subConceptId)) {
-      lessonHistory[topicKey].shown.push(subConceptId);
-    }
+    // shown entries are OBJECTS — selectLesson reads h.subConcept/h.date for
+    // rotation and cooldown; LessonBrowser reads h.subConcept. One entry per
+    // row, no dedupe (the server's INSERT OR IGNORE on lesson_id already caps
+    // repeats at one per (topic, subConcept, template) — a known fidelity limit).
+    lessonHistory[topicKey].shown.push({
+      subConcept: subConceptId,
+      templateType,
+      date: r.completed_at || null,
+    });
     lessonHistory[topicKey].lastSubConcept = subConceptId;
     lessonHistory[topicKey].lastTemplateType = templateType;
   }
@@ -506,6 +512,14 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const seenQuestionsRef = useRef({});
   const leitnerQueueRef = useRef([]);
   const lastSyncedRef = useRef(null); // { prepPoints: {total, todayPP, todayDate}, streaks: {...}, preferences: {...} }
+  // PP total already covered by lastSynced PLUS deltas sitting in the queue.
+  // savePrepPoints must delta against THIS, not lastSynced alone — otherwise two
+  // saves between flushes (e.g. two quizzes offline) double-count: the second
+  // delta would re-include the first, still-queued delta. Initialised on load
+  // as lastSynced.total + sum of queued prep-points-delta ops; advanced on every
+  // enqueue. Never decremented (a dead-lettered PP op loses points conservatively
+  // rather than risking double-award).
+  const enqueuedPPTotalRef = useRef(0);
 
   // ── State (same shape as old useUserData) ──
   const [quizHistory, setQuizHistory] = useState(DEFAULTS.quizHistory);
@@ -533,6 +547,12 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
       syncQueueRef.current = createSyncQueue(queueKey);
       // Load lastSynced snapshot for this child
       lastSyncedRef.current = readLastSynced(queueKey);
+      // Initialise the enqueued-PP baseline: synced total + deltas already queued
+      const syncedTotal = lastSyncedRef.current?.prepPoints?.total ?? 0;
+      const queuedPPDelta = syncQueueRef.current.getAll()
+        .filter(op => op.type === 'prep-points-delta')
+        .reduce((sum, op) => sum + (op.payload?.delta || 0), 0);
+      enqueuedPPTotalRef.current = syncedTotal + queuedPPDelta;
     }
   }, [childId, userName]);
 
@@ -582,6 +602,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     setLoaded(false);
     versionsRef.current = { streaks: 1, prepPoints: 1, preferences: 1 };
     lastSyncedRef.current = null;
+    enqueuedPPTotalRef.current = 0;
   }, []);
 
   // ── Load from D1 on mount / user change / logout ──
@@ -672,6 +693,10 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
             };
             lastSyncedRef.current = snapshot;
             writeLastSynced(queueKey, snapshot);
+            enqueuedPPTotalRef.current = (snapshot.prepPoints?.total ?? 0) +
+              (syncQueueRef.current?.getAll() || [])
+                .filter(op => op.type === 'prep-points-delta')
+                .reduce((sum, op) => sum + (op.payload?.delta || 0), 0);
             setLoaded(true);
             return;
           }
@@ -691,6 +716,10 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         };
         lastSyncedRef.current = snapshot;
         writeLastSynced(queueKey, snapshot);
+        enqueuedPPTotalRef.current = (snapshot.prepPoints?.total ?? 0) +
+          (syncQueueRef.current?.getAll() || [])
+            .filter(op => op.type === 'prep-points-delta')
+            .reduce((sum, op) => sum + (op.payload?.delta || 0), 0);
 
         setLoaded(true);
 
@@ -818,6 +847,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         // Reset backoff on any successful flush
         state.backoffMs = 0;
         state.lastFailedAt = null;
+        state.permFailures = 0;
         resetConflictRounds(mutexKey);
 
         const queueKey = childId || userName;
@@ -864,18 +894,17 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
             conflictRounds.set(logicalKey, round);
 
             if (round > 3) {
-              // Loop guard: give up and accept server state, dead-letter the unmerged local value
+              // Loop guard: accept server state. Dead-letter the op (off-device
+              // record of the unmerged local value via its payload) instead of
+              // letting toRemove discard it silently — deadLetterErrors both
+              // removes from the queue and writes the dead-letter + Sentry report.
+              queue.deadLetterErrors([opResult.uuid]);
               try {
                 Sentry.captureMessage('[useD1Data] Conflict loop guard triggered — accepting server state', {
                   level: 'warning',
                   extra: { type: op.type, round, uuid: opResult.uuid },
                 });
               } catch { /* never throw from reporting */ }
-              if (queue.deadLetterErrors) {
-                // Re-use deadLetterErrors mechanism by temporarily marking as error
-                // Actually use the queue's dead-letter mechanism directly
-                queue.deadLetterErrors([]);
-              }
               continue; // accept server state — don't re-enqueue
             }
 
@@ -961,20 +990,21 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         queue.incrementRetries(ops.map(op => op.uuid));
         state.backoffMs = nextBackoffMs(state.backoffMs);
         state.lastFailedAt = Date.now();
+        state.permFailures = 0; // a transient failure breaks any 4xx streak
       } else if (permanent) {
         // ── Permanent 4xx failure ──
-        // Treat as transient ONCE to allow re-formation of the batch (e.g. server
-        // just returned 400 — could be a transient schema mismatch). If backoff is
-        // already set (meaning we already tried once after a 4xx), dead-letter
-        // these specific ops instead of silently dropping or infinite-looping.
-        if (state.backoffMs > 0) {
-          // Already retried once after a 4xx — dead-letter these ops
-          const errorUuids = ops.map(op => op.uuid);
-          queue.deadLetterErrors(errorUuids);
+        // Retry ONCE (a 400 could be a transient schema mismatch mid-deploy);
+        // on the second CONSECUTIVE 4xx, dead-letter the batch. Tracked with a
+        // dedicated counter — NOT backoffMs, which an unrelated 5xx also sets
+        // and would wrongly dead-letter good ops after one 400.
+        state.permFailures += 1;
+        if (state.permFailures >= 2) {
+          queue.deadLetterErrors(ops.map(op => op.uuid));
+          state.permFailures = 0;
         } else {
-          // First 4xx — treat like transient (retry once)
+          // First consecutive 4xx — retry once with backoff
           queue.incrementRetries(ops.map(op => op.uuid));
-          state.backoffMs = nextBackoffMs(0);
+          state.backoffMs = nextBackoffMs(state.backoffMs);
           state.lastFailedAt = Date.now();
         }
       }
@@ -1083,12 +1113,16 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     const lessonId = `${topicKey}::${subConceptId}::${templateType}`;
     setLessonHistory(prev => {
       const updated = { ...prev };
-      if (!updated[topicKey]) updated[topicKey] = { shown: [], lastSubConcept: null, lastTemplateType: null };
-      if (!updated[topicKey].shown.includes(subConceptId)) {
-        updated[topicKey].shown.push(subConceptId);
-      }
-      updated[topicKey].lastSubConcept = subConceptId;
-      updated[topicKey].lastTemplateType = templateType;
+      const topic = updated[topicKey]
+        ? { ...updated[topicKey], shown: [...updated[topicKey].shown] }
+        : { shown: [], lastSubConcept: null, lastTemplateType: null };
+      // shown entries are OBJECTS — selectLesson reads h.subConcept and h.date
+      // for rotation/cooldown scoring, and LessonBrowser reads h.subConcept.
+      // Every showing is pushed (no dedupe): repeat counts feed timesShown.
+      topic.shown.push({ subConcept: subConceptId, templateType, date: new Date().toISOString() });
+      topic.lastSubConcept = subConceptId;
+      topic.lastTemplateType = templateType;
+      updated[topicKey] = topic;
       return updated;
     });
     enqueue('lesson-complete', { lessonId });
@@ -1140,15 +1174,17 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     if (!userName) return;
     setPrepPointsData(data);
 
-    // Compute delta from lastSynced (never from closed-over state — use ref)
-    const lastSynced = lastSyncedRef.current;
-    const syncedTotal = lastSynced?.prepPoints?.total ?? 0;
-    const delta = (data.total || 0) - syncedTotal;
+    // Compute delta against the enqueued baseline (synced total + deltas already
+    // queued), never against lastSynced alone — two saves between flushes would
+    // otherwise double-count the still-queued first delta. Ref, not closed-over
+    // state (stale-closure history in this file).
+    const delta = (data.total || 0) - enqueuedPPTotalRef.current;
 
     if (delta <= 0) {
-      // Total hasn't increased — nothing to enqueue (PP can only increase)
+      // Total hasn't increased beyond what's already queued/synced — nothing to enqueue
       return;
     }
+    enqueuedPPTotalRef.current += delta;
 
     // Split deltas > MAX_PP_DELTA_PER_ENQUEUE into multiple ops
     let remaining = delta;

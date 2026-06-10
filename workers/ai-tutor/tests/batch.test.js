@@ -363,6 +363,35 @@ describe('prep-points-delta op', () => {
     expect(row.total).toBe(1075); // 1000 + 75
   });
 
+  it('stale todayDate (older than stored) — total adds but today_pp/today_date do not regress', async () => {
+    // A device that was offline yesterday flushing AFTER another device already
+    // wrote today's date must not drag today_pp/today_date backwards.
+    const userId = 'user-pp-stale-day';
+    const email = `${userId}@test.com`;
+    const childId = await seedAccount(env.DB, userId, email);
+    const token = await makeAuthToken({ userId, email });
+
+    await env.DB.prepare(
+      `INSERT INTO prep_points (child_id, total, level, today_pp, today_date, version)
+       VALUES (?, 1000, 4, 300, '2026-06-10', 1)`
+    ).bind(childId).run();
+
+    const res = await postBatch(token, childId, [
+      {
+        uuid: makeUUID(),
+        type: 'prep-points-delta',
+        payload: { delta: 75, todayDelta: 75, todayDate: '2026-06-09' }, // stale day
+        childId,
+      },
+    ]);
+
+    expect(res.status).toBe(200);
+    const row = await env.DB.prepare('SELECT * FROM prep_points WHERE child_id = ?').bind(childId).first();
+    expect(row.total).toBe(1075);          // the points still count
+    expect(row.today_pp).toBe(300);        // unchanged — not reset by the stale op
+    expect(row.today_date).toBe('2026-06-10'); // unchanged — never moves backwards
+  });
+
   it('delta = 0 is rejected (must be >= 1)', async () => {
     const userId = 'user-pp-zero';
     const email = `${userId}@test.com`;

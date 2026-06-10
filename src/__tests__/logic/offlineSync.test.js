@@ -548,12 +548,19 @@ describe('lesson_id encoding and topic-keyed rebuild', () => {
     const { lessonHistory } = transformServerData(serverData);
 
     expect(lessonHistory.percentages).toBeDefined();
-    expect(lessonHistory.percentages.shown).toEqual(['find-percentage', 'percentage-increase']);
+    // shown entries are OBJECTS — selectLesson reads h.subConcept and h.date
+    // for rotation/cooldown scoring; LessonBrowser reads h.subConcept.
+    expect(lessonHistory.percentages.shown).toEqual([
+      { subConcept: 'find-percentage', templateType: 'worked-example', date: '2026-06-01T10:00:00Z' },
+      { subConcept: 'percentage-increase', templateType: 'practice', date: '2026-06-01T10:01:00Z' },
+    ]);
     expect(lessonHistory.percentages.lastSubConcept).toBe('percentage-increase');
     expect(lessonHistory.percentages.lastTemplateType).toBe('practice');
 
     expect(lessonHistory.algebra).toBeDefined();
-    expect(lessonHistory.algebra.shown).toEqual(['solve-linear']);
+    expect(lessonHistory.algebra.shown).toEqual([
+      { subConcept: 'solve-linear', templateType: 'worked-example', date: '2026-06-01T10:02:00Z' },
+    ]);
     expect(lessonHistory.algebra.lastSubConcept).toBe('solve-linear');
   });
 
