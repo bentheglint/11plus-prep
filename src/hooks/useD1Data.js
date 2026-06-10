@@ -514,6 +514,28 @@ function subjectFromTopicKey(topicKey) {
 // ── PP delta constants ──
 const MAX_PP_DELTA_PER_ENQUEUE = 2500; // max delta per single 'prep-points-delta' op
 
+// ── Fold queued topic-performance-delta ops onto a topicPerformance snapshot ──
+// Queued-but-unflushed deltas must not show regressed stats after an
+// offline-quiz reload. Called in loadData after each transformServerData() so
+// the initial state already reflects in-flight ops.
+// Exported as a pure function for direct unit testing (same pattern as
+// transformServerData).
+export function foldQueuedTopicDeltas(topicPerformance, queuedOps) {
+  const result = { ...topicPerformance };
+  for (const op of queuedOps) {
+    if (op.type !== 'topic-performance-delta') continue;
+    const { topicKey, correctDelta, totalDelta } = op.payload || {};
+    if (!topicKey || typeof totalDelta !== 'number') continue;
+    const prev = result[topicKey] || { correct: 0, total: 0 };
+    result[topicKey] = {
+      ...prev,
+      correct: (prev.correct || 0) + (correctDelta || 0),
+      total: (prev.total || 0) + totalDelta,
+    };
+  }
+  return result;
+}
+
 // ── The Hook ──
 
 export default function useD1Data(userName, getToken, childId, previewMode = false) {
@@ -698,6 +720,12 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
           if (cancelled) return;
           if (freshData) {
             const transformed = transformServerData(freshData);
+            // Fold queued-but-unflushed topic deltas so stats never appear
+            // to regress immediately after an offline-quiz reload.
+            transformed.topicPerformance = foldQueuedTopicDeltas(
+              transformed.topicPerformance,
+              syncQueueRef.current?.getAll() || []
+            );
             populateState(transformed);
             writeCache(userName, freshData);
             // Initialise lastSynced from server data
@@ -720,6 +748,12 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
         // Normal path: D1 has data
         const transformed = transformServerData(serverData);
+        // Fold queued-but-unflushed topic deltas so stats never appear
+        // to regress immediately after an offline-quiz reload.
+        transformed.topicPerformance = foldQueuedTopicDeltas(
+          transformed.topicPerformance,
+          syncQueueRef.current?.getAll() || []
+        );
         populateState(transformed);
         writeCache(userName, serverData);
 
@@ -751,6 +785,12 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
       if (cached) {
         console.log('[useD1Data] D1 unavailable, loading from cache');
         const transformed = transformServerData(cached);
+        // Fold queued-but-unflushed topic deltas so stats never appear
+        // to regress immediately after an offline-quiz reload.
+        transformed.topicPerformance = foldQueuedTopicDeltas(
+          transformed.topicPerformance,
+          syncQueueRef.current?.getAll() || []
+        );
         populateState(transformed);
         setLoaded(true);
         return;
@@ -1077,14 +1117,30 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     });
   }, [userName, quizHistory, enqueue]);
 
-  const saveTopicPerformance = useCallback((updated) => {
+  // applyTopicPerformanceDeltas — optimistically update state and enqueue
+  // 'topic-performance-delta' ops for each topic. Replaces saveTopicPerformance.
+  // deltas: { [topicKey]: { correctDelta, totalDelta } }
+  const applyTopicPerformanceDeltas = useCallback((deltas) => {
     if (!userName) return;
-    setTopicPerformance(updated);
-    // topicPerformance is local-only (server-side readers exist in tutor.js and mutable.js,
-    // but there is no clean per-(topicKey, subject) version tracking returned from bulk load
-    // and the data can be derived from questionResults). Keeping local-only per spec branch
-    // decision (see OUTPUT section). Nothing to enqueue here.
-  }, [userName]);
+    setTopicPerformance(prev => {
+      const next = { ...prev };
+      for (const [key, { correctDelta, totalDelta }] of Object.entries(deltas)) {
+        if (typeof totalDelta !== 'number' || totalDelta <= 0) continue;
+        const existing = next[key] || { correct: 0, total: 0 };
+        next[key] = {
+          ...existing,
+          correct: (existing.correct || 0) + (correctDelta || 0),
+          total: (existing.total || 0) + totalDelta,
+        };
+      }
+      return next;
+    });
+    for (const [topicKey, { correctDelta, totalDelta }] of Object.entries(deltas)) {
+      if (typeof totalDelta !== 'number' || totalDelta <= 0) continue;
+      const subject = subjectFromTopicKey(topicKey);
+      enqueue('topic-performance-delta', { topicKey, subject, correctDelta, totalDelta });
+    }
+  }, [userName, enqueue]);
 
   const saveSeenQuestions = useCallback((updated) => {
     if (!userName) return;
@@ -1310,7 +1366,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     achievements,
     // Save methods
     saveQuizResult,
-    saveTopicPerformance,
+    applyTopicPerformanceDeltas,
     saveSeenQuestions,
     saveMockTestResult,
     saveLessonHistory,

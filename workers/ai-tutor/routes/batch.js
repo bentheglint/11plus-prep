@@ -15,7 +15,7 @@ const VALID_TYPES = new Set([
   'question-result', 'quiz-result', 'mock-result', 'practice-session',
   'lesson-complete', 'seen-question', 'achievement', 'seen-tip',
   'streaks', 'prep-points', 'preferences', 'topic-performance',
-  'leitner-entry', 'prep-points-delta',
+  'leitner-entry', 'prep-points-delta', 'topic-performance-delta',
 ]);
 
 // Mutable types that need version checks (CAS path).
@@ -447,6 +447,80 @@ export async function handleBatch(request, env, userId) {
         todayDelta,    // today_pp newer-day branch (reset to todayDelta)
         todayDate,     // today_date CASE: newer-day comparison
         todayDate,     // today_date newer-day branch (advance)
+      );
+
+      const resultIndex = results.length;
+      results.push({ uuid: op.uuid, status: 'ok' });
+      opPlans.push({
+        uuid: op.uuid,
+        resultIndex,
+        kind: 'delta',
+        dataStmt,
+        markerStmt: buildUUIDMarker(db, childId, op.uuid, op.type),
+      });
+      continue;
+    }
+
+    // ── topic-performance-delta: additive, commutative, UUID-deduped ──
+    // Payload: { topicKey, subject, correctDelta, totalDelta }
+    // No version check — addition commutes and the UUID marker prevents double-apply.
+    // The json_valid CASE guards against NULL or non-JSON legacy data values:
+    // json_extract(NULL, ...) returns NULL and COALESCE turns that into 0,
+    // but json_set's first arg must also be a valid object to avoid erroring —
+    // a bad first arg would roll back the op and cause infinite client retries.
+    if (op.type === 'topic-performance-delta') {
+      const { topicKey: rawTopicKey, subject, correctDelta, totalDelta } = op.payload || {};
+
+      // Validate totalDelta: integer 1..100
+      if (typeof totalDelta !== 'number' || !Number.isInteger(totalDelta) || totalDelta < 1 || totalDelta > 100) {
+        results.push({ uuid: op.uuid, status: 'error', error: 'topic-performance-delta: totalDelta must be integer 1..100' });
+        continue;
+      }
+      // Validate correctDelta: integer 0..totalDelta
+      if (typeof correctDelta !== 'number' || !Number.isInteger(correctDelta) || correctDelta < 0 || correctDelta > totalDelta) {
+        results.push({ uuid: op.uuid, status: 'error', error: 'topic-performance-delta: correctDelta must be integer 0..totalDelta' });
+        continue;
+      }
+      // Validate topicKey
+      if (!rawTopicKey) {
+        results.push({ uuid: op.uuid, status: 'error', error: 'topic-performance-delta: topicKey is required' });
+        continue;
+      }
+      // Validate subject
+      if (!subject || typeof subject !== 'string' || !subject.trim()) {
+        results.push({ uuid: op.uuid, status: 'error', error: 'topic-performance-delta: subject is required' });
+        continue;
+      }
+
+      const topicKey = normaliseTopicKey(rawTopicKey);
+
+      // The json_valid CASE guards all three json_* calls: the first arg to
+      // json_set must be valid JSON (otherwise the statement errors and the
+      // marker never commits, causing infinite retries on the client), and
+      // json_extract on a malformed string also raises SQLITE_ERROR in D1.
+      // We therefore gate all three on the same json_valid check and fall
+      // back to zero-based arithmetic when the stored data is not valid JSON.
+      const dataStmt = db.prepare(`
+        INSERT INTO topic_performance (child_id, topic_key, subject, data, version)
+        VALUES (?, ?, ?, json_object('correct', ?, 'total', ?), 1)
+        ON CONFLICT(child_id, topic_key, subject) DO UPDATE SET
+          data = json_set(
+            CASE WHEN json_valid(topic_performance.data) THEN topic_performance.data
+                 ELSE json_object('correct', 0, 'total', 0) END,
+            '$.correct', CASE WHEN json_valid(topic_performance.data)
+                              THEN COALESCE(CAST(json_extract(topic_performance.data, '$.correct') AS INTEGER), 0) + ?
+                              ELSE ? END,
+            '$.total',   CASE WHEN json_valid(topic_performance.data)
+                              THEN COALESCE(CAST(json_extract(topic_performance.data, '$.total')   AS INTEGER), 0) + ?
+                              ELSE ? END
+          ),
+          version = topic_performance.version + 1,
+          updated_at = datetime('now')
+      `).bind(
+        childId, topicKey, subject,
+        correctDelta, totalDelta,                  // INSERT values
+        correctDelta, correctDelta,                // UPDATE correct: existing + delta | fallback = delta
+        totalDelta,   totalDelta,                  // UPDATE total:   existing + delta | fallback = delta
       );
 
       const resultIndex = results.length;

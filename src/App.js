@@ -831,11 +831,11 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
       try {
         const correctCount = answers.filter(a => a.correct).length;
         markQuestionsAsSeen(quizQuestions);
-        updateTopicPerformance(quizQuestions, answers);
-        // Atomic batch: per-question rows, quiz row, streak, PP, practice session, last-session-date
-        // all commit together or not at all.
+        // Atomic batch: per-question rows, quiz row, topic deltas, streak, PP,
+        // practice session, last-session-date — all commit together or not at all.
         userData.startBatch();
         try {
+          updateTopicPerformance(quizQuestions, answers);
           recordQuizResults(quizQuestions, answers);
           // Codex Fix B: store slug in quiz_results.topic_key (not the display
           // name) so the column aligns with question_results.topic_key.
@@ -1402,15 +1402,17 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     userData.saveSeenQuestions(updatedSeen);
   };
 
+  // Compute per-topic deltas purely from session data — never from topicPerformance
+  // state, which risks stale-closure double-count on rapid quiz completions.
   const updateTopicPerformance = (sessionQuestions, sessionAnswers) => {
-    const updated = { ...topicPerformance };
+    const deltas = {};
     sessionQuestions.forEach((q, i) => {
       const key = q.topicKey;
-      if (!updated[key]) updated[key] = { correct: 0, total: 0 };
-      updated[key].total += 1;
-      if (sessionAnswers[i]?.correct) updated[key].correct += 1;
+      if (!deltas[key]) deltas[key] = { correctDelta: 0, totalDelta: 0 };
+      deltas[key].totalDelta += 1;
+      if (sessionAnswers[i]?.correct) deltas[key].correctDelta += 1;
     });
-    userData.saveTopicPerformance(updated);
+    userData.applyTopicPerformanceDeltas(deltas);
   };
 
   // Save per-question results and update streaks/PP after quiz completion.
