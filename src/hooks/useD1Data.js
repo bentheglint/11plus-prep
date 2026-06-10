@@ -443,17 +443,33 @@ function writeLastSynced(childId, snapshot) {
 
 // ── API Helpers ──
 
-async function apiFetch(path, getToken) {
+// Timeout for load-path fetches. A HANGING fetch (e.g. iOS radio recovery
+// after airplane mode) otherwise never resolves, so the cache fallback in
+// loadData never runs and the user sees a blank screen. On abort the fetch
+// rejects, the catch returns null, and loadData falls back to cache.
+const API_FETCH_TIMEOUT_MS = 10000;
+
+export async function apiFetch(path, getToken, timeoutMs = API_FETCH_TIMEOUT_MS) {
   if (!getToken) { console.warn('[useD1Data] apiFetch: no getToken'); return null; }
   if (!API_URL) { console.warn('[useD1Data] apiFetch: no API_URL'); return null; }
   try {
     const token = await getToken();
     if (!token) { console.warn('[useD1Data] apiFetch: getToken returned null'); return null; }
-    const res = await fetch(`${API_URL}${path}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    if (!res.ok) { console.warn(`[useD1Data] apiFetch ${path}: ${res.status}`); return null; }
-    return res.json();
+    // Manual AbortController, not AbortSignal.timeout — browser floor is
+    // Safari 15.6 (iOS 15 iPads) and AbortSignal.timeout needs Safari 16+.
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const res = await fetch(`${API_URL}${path}`, {
+        headers: { Authorization: `Bearer ${token}` },
+        signal: controller.signal,
+      });
+      if (!res.ok) { console.warn(`[useD1Data] apiFetch ${path}: ${res.status}`); return null; }
+      // json() inside the timer's scope: the abort also cancels a stalled body read
+      return await res.json();
+    } finally {
+      clearTimeout(timer);
+    }
   } catch (err) {
     console.warn(`[useD1Data] apiFetch ${path} error:`, err.message);
     return null;
