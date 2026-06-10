@@ -6,7 +6,8 @@
 import { json, resolveChildId } from '../helpers.js';
 
 const MAX_OPS_PER_REQUEST = 100;
-const MAX_PP_DELTA_PER_OP = 500;
+const MAX_PP_DELTA_PER_OP = 500;     // legacy absolute 'prep-points' op guard (unchanged)
+const MAX_PP_DELTA = 2500;            // new 'prep-points-delta' op per-op cap
 const DEDUP_TTL_DAYS = 7;
 
 // Valid operation types
@@ -14,10 +15,12 @@ const VALID_TYPES = new Set([
   'question-result', 'quiz-result', 'mock-result', 'practice-session',
   'lesson-complete', 'seen-question', 'achievement', 'seen-tip',
   'streaks', 'prep-points', 'preferences', 'topic-performance',
-  'leitner-entry',
+  'leitner-entry', 'prep-points-delta',
 ]);
 
-// Mutable types that need version checks
+// Mutable types that need version checks (CAS path).
+// prep-points-delta is NOT in this set — addition commutes and UUID dedup
+// prevents double-apply, so no version check is needed.
 const MUTABLE_TYPES = new Set(['streaks', 'prep-points', 'preferences', 'topic-performance']);
 
 // ── Topic-key normalisation (Codex Fix B-Worker) ──
@@ -389,6 +392,65 @@ export async function handleBatch(request, env, userId) {
       continue;
     }
 
+    // ── prep-points-delta: additive, commutative, UUID-deduped ──
+    // Payload: { delta: integer 1..2500, todayDelta: integer, todayDate: string }
+    // No version check — addition commutes and the UUID marker prevents double-apply.
+    // Level is stored client-side (derived from total via calculateLevel); the server
+    // stores it as well but we do NOT recompute server-side here to avoid importing
+    // the level formula. Instead, the client includes the level in savePrepPoints and
+    // reads it back on the next bulk load. The max(level, expectedLevel) approach was
+    // considered but rejected — level is always derived, so storing it client-driven
+    // and letting the next load recalibrate is simpler and equally correct.
+    // Handle the no-row case: INSERT ... ON CONFLICT DO UPDATE with additive logic.
+    if (op.type === 'prep-points-delta') {
+      const { delta, todayDelta, todayDate } = op.payload;
+      if (typeof delta !== 'number' || !Number.isInteger(delta) || delta < 1 || delta > MAX_PP_DELTA) {
+        results.push({ uuid: op.uuid, status: 'error', error: `prep-points-delta: delta must be integer 1..${MAX_PP_DELTA}, got ${delta}` });
+        continue;
+      }
+      if (typeof todayDelta !== 'number' || todayDelta < 0) {
+        results.push({ uuid: op.uuid, status: 'error', error: 'prep-points-delta: todayDelta must be a non-negative number' });
+        continue;
+      }
+      if (!todayDate) {
+        results.push({ uuid: op.uuid, status: 'error', error: 'prep-points-delta: todayDate is required' });
+        continue;
+      }
+
+      // Additive UPDATE, CASE on todayDate for today_pp reset, INSERT if no row yet
+      const dataStmt = db.prepare(`
+        INSERT INTO prep_points (child_id, total, level, today_pp, today_date, version)
+        VALUES (?, ?, 0, ?, ?, 1)
+        ON CONFLICT(child_id) DO UPDATE SET
+          total     = prep_points.total + ?,
+          today_pp  = CASE WHEN prep_points.today_date = ? THEN prep_points.today_pp + ? ELSE ? END,
+          today_date = ?,
+          version   = prep_points.version + 1,
+          updated_at = datetime('now')
+      `).bind(
+        childId,
+        delta,         // INSERT total
+        todayDelta,    // INSERT today_pp
+        todayDate,     // INSERT today_date
+        delta,         // UPDATE total +
+        todayDate,     // UPDATE CASE today_date comparison
+        todayDelta,    // UPDATE today_pp same-day branch (+)
+        todayDelta,    // UPDATE today_pp new-day branch (reset to todayDelta)
+        todayDate,     // UPDATE today_date
+      );
+
+      const resultIndex = results.length;
+      results.push({ uuid: op.uuid, status: 'ok' });
+      opPlans.push({
+        uuid: op.uuid,
+        resultIndex,
+        kind: 'delta',
+        dataStmt,
+        markerStmt: buildUUIDMarker(db, childId, op.uuid, op.type),
+      });
+      continue;
+    }
+
     // Append-only operations (UUID dedup + table-level idempotency for quiz/question_results)
     const stmt = buildAppendStatement(db, childId, op.type, op.payload);
     if (!stmt) {
@@ -417,6 +479,8 @@ export async function handleBatch(request, env, userId) {
   };
 
   // Execute. For 'append' ops we keep the atomic per-op batch (data + marker).
+  // For 'delta' ops (prep-points-delta) we run data stmt + marker in a batch —
+  // additive update is safe to retry (UUID marker prevents double-apply).
   // For 'cas' ops we run sequentially: data stmt → check meta.changes →
   // only commit marker if data update actually happened. This way a conflict
   // (changes === 0) leaves processed_operations clean so the client can
@@ -426,6 +490,10 @@ export async function handleBatch(request, env, userId) {
       if (plan.kind === 'append') {
         await db.batch(plan.stmts);
         // status was set to 'ok' when the plan was queued; nothing to update
+      } else if (plan.kind === 'delta') {
+        // prep-points-delta: run data + marker atomically (like append)
+        await db.batch([plan.dataStmt, plan.markerStmt]);
+        // status was set to 'ok' when the plan was queued
       } else {
         // CAS path
         const dataResult = await plan.dataStmt.run();

@@ -54,7 +54,8 @@ describe('User Data Isolation', () => {
     });
 
     expect(result.current.questionResults.length).toBe(5000);
-    expect(result.current.questionResults[result.current.questionResults.length - 1].id).toBe(9999);
+    // saveQuestionResult prepends (newest-first) — new item is at index 0
+    expect(result.current.questionResults[0].id).toBe(9999);
   });
 
   it('loads user-prefixed legacy data as fallback when D1 unavailable', async () => {

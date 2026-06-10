@@ -83,18 +83,19 @@ describe('SyncQueue', () => {
     expect(queue.getAll()[0].retryCount).toBe(2);
   });
 
-  it('incrementRetries drops operations exceeding maxRetries', () => {
+  it('incrementRetries keeps ops indefinitely — retryCount is telemetry only, never deletes', () => {
+    // Spec change: ops are NEVER deleted on transient failure (section 1c).
+    // retryCount is telemetry only. Age-out to dead-letter happens via peek()
+    // after 7 days, not via retry count.
     const queue = createSyncQueue(CHILD_ID);
     const uuid = queue.enqueue('streaks', {});
 
-    // Set retry count to max
-    for (let i = 0; i < 10; i++) {
+    // Increment 100 times — op must still be in the queue
+    for (let i = 0; i < 100; i++) {
       queue.incrementRetries([uuid]);
     }
-    expect(queue.size()).toBe(1); // retryCount=10, still at limit
-
-    queue.incrementRetries([uuid]); // retryCount=11, exceeds limit
-    expect(queue.size()).toBe(0); // dropped
+    expect(queue.size()).toBe(1); // still in queue
+    expect(queue.getAll()[0].retryCount).toBe(100); // telemetry count correct
   });
 
   it('caps at 500 operations, dropping oldest', () => {

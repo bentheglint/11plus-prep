@@ -14,30 +14,106 @@ function ppForNextLevel(currentLevel) {
   return ((currentLevel + 1) ** 2) * 50;
 }
 
+// Returns today's date as YYYY-MM-DD in LOCAL time.
+// Previously used toISOString() which is UTC — a child practising at 23:30 BST
+// would land on the wrong (previous) day. Fixed to use local date components.
+// Legacy UTC-recorded history rows are tolerated; a one-hour boundary shift on
+// old rows is acceptable per spec.
 function getToday() {
-  return new Date().toISOString().split('T')[0];
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
 }
 
 function getDaysAgo(n) {
   const d = new Date();
   d.setDate(d.getDate() - n);
-  return d.toISOString().split('T')[0];
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+// Count practice days in a rolling 7-day window ending on a given date.
+// Pure function — exported for testing.
+export function countPracticeDaysInWeek(endDate, history) {
+  const end = new Date(endDate);
+  let count = 0;
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(end);
+    d.setDate(d.getDate() - i);
+    const y = d.getFullYear();
+    const mo = String(d.getMonth() + 1).padStart(2, '0');
+    const dy = String(d.getDate()).padStart(2, '0');
+    const ds = `${y}-${mo}-${dy}`;
+    if (history.includes(ds)) count++;
+  }
+  return count;
+}
+
+/**
+ * Recompute ALL streak fields from a history array (pure function, no side effects).
+ * Used for conflict merging on Device B when Device A has different practice days.
+ *
+ * The algorithm walks history ascending and applies the same 5-of-7 rolling window
+ * rule as recordQuizCompletion, producing:
+ *   currentStreak — streak value as of the last day in history
+ *   longestStreak — historical maximum (pass prevLongest to carry forward
+ *                   any longest streak that predates the retained history window)
+ *   lastQuizDate  — most recent date in history
+ *
+ * @param {string[]} history   — array of YYYY-MM-DD strings (may be unsorted)
+ * @param {number}   [prevLongest=0] — longest streak known before this history window
+ * @returns {{ currentStreak: number, longestStreak: number, lastQuizDate: string|null }}
+ */
+export function recomputeStreakFromHistory(history, prevLongest = 0) {
+  if (!history || history.length === 0) {
+    return { currentStreak: 0, longestStreak: prevLongest, lastQuizDate: null };
+  }
+
+  // Sort ascending (chronological order for sequential processing)
+  const sorted = [...new Set(history)].sort();
+  let currentStreak = 0;
+  let longestStreak = prevLongest;
+  let lastProcessed = null;
+
+  for (const date of sorted) {
+    // Determine how many practice days are in the 7-day window ending on this date
+    const last7 = countPracticeDaysInWeek(date, sorted);
+
+    let newStreak;
+    if (currentStreak === 0 || lastProcessed === null) {
+      newStreak = 1;
+    } else {
+      const daysSinceLast = Math.floor(
+        (new Date(date) - new Date(lastProcessed)) / 86400000
+      );
+      if (daysSinceLast > 2) {
+        // Gap too long — 3+ days off breaks the 5/7 rule
+        newStreak = 1;
+      } else if (sorted.length >= 7 && last7 < 5) {
+        // Established user: rolling 7-day window dropped below 5 → streak resets
+        newStreak = 1;
+      } else {
+        newStreak = currentStreak + 1;
+      }
+    }
+
+    currentStreak = newStreak;
+    longestStreak = Math.max(longestStreak, currentStreak);
+    lastProcessed = date;
+  }
+
+  return {
+    currentStreak,
+    longestStreak,
+    lastQuizDate: sorted[sorted.length - 1],
+  };
 }
 
 export default function useStreaksAndPP(streakData, prepPointsData, saveStreakData, savePrepPoints) {
-
-  // Count practice days in a rolling 7-day window ending on a given date
-  const countPracticeDaysInWeek = useCallback((endDate, history) => {
-    const end = new Date(endDate);
-    let count = 0;
-    for (let i = 0; i < 7; i++) {
-      const d = new Date(end);
-      d.setDate(d.getDate() - i);
-      const ds = d.toISOString().split('T')[0];
-      if (history.includes(ds)) count++;
-    }
-    return count;
-  }, []);
 
   // Update streak when a quiz is completed
   // Streak rule: grows every practice day; resets only if:
@@ -86,7 +162,7 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
 
     saveStreakData(updated);
     return updated;
-  }, [streakData, saveStreakData, countPracticeDaysInWeek]);
+  }, [streakData, saveStreakData]);
 
   // Check if streak is still active (not broken)
   // Active if practised at least 5 of the last 7 days
@@ -96,7 +172,7 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
     const history = streakData.streakHistory || [];
     const last7 = countPracticeDaysInWeek(today, history);
     return last7 >= 5 || streakData.lastQuizDate === today;
-  }, [streakData, countPracticeDaysInWeek]);
+  }, [streakData]);
 
   // Award Prep Points for various activities
   const awardPP = useCallback((points, reason) => {
@@ -163,7 +239,7 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
     }
 
     // Practice day bonus: flat +25 for practising today (not tied to streak length)
-    const todayStr = new Date().toISOString().split('T')[0];
+    const todayStr = getToday();
     const practicedToday = streakData.lastQuizDate === todayStr;
     if (practicedToday) {
       total += 25;
@@ -195,7 +271,10 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
   const getPracticeDays = useCallback((days = 84) => {
     const cutoff = new Date();
     cutoff.setDate(cutoff.getDate() - days);
-    const cutoffStr = cutoff.toISOString().split('T')[0];
+    const y = cutoff.getFullYear();
+    const m = String(cutoff.getMonth() + 1).padStart(2, '0');
+    const d = String(cutoff.getDate()).padStart(2, '0');
+    const cutoffStr = `${y}-${m}-${d}`;
     return (streakData.streakHistory || []).filter(d => d >= cutoffStr);
   }, [streakData]);
 
@@ -216,4 +295,4 @@ export default function useStreaksAndPP(streakData, prepPointsData, saveStreakDa
   };
 }
 
-export { calculateLevel, ppForNextLevel };
+export { calculateLevel, ppForNextLevel, getToday };

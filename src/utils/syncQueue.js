@@ -2,8 +2,13 @@
 // Stores pending operations in localStorage, replays when online.
 // Namespaced per child to prevent cross-user contamination.
 
+import * as Sentry from '@sentry/react';
+
 const MAX_QUEUE_SIZE = 500;
 const QUEUE_PREFIX = 'sync-queue:';
+const DEAD_LETTER_PREFIX = 'sync-dead-letter:';
+const MAX_DEAD_LETTER = 100;
+const AGE_OUT_MS = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // UUID generation — use crypto.randomUUID() in browsers, fallback for test environments
 function generateUUID() {
@@ -21,6 +26,10 @@ function getKey(childId) {
   return `${QUEUE_PREFIX}${childId}`;
 }
 
+function getDeadLetterKey(childId) {
+  return `${DEAD_LETTER_PREFIX}${childId}`;
+}
+
 function readQueue(childId) {
   try {
     const raw = localStorage.getItem(getKey(childId));
@@ -30,8 +39,88 @@ function readQueue(childId) {
   }
 }
 
+// Find the d1-cache key pattern so writeQueue can evict it on QuotaExceededError
+function findCacheKey() {
+  // Cache keys follow pattern d1-cache:${userName} — find any matching key
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith('d1-cache:')) return k;
+  }
+  return null;
+}
+
 function writeQueue(childId, queue) {
-  localStorage.setItem(getKey(childId), JSON.stringify(queue));
+  const key = getKey(childId);
+  const serialised = JSON.stringify(queue);
+  try {
+    localStorage.setItem(key, serialised);
+  } catch (err) {
+    if (err && (err.name === 'QuotaExceededError' || err.code === 22)) {
+      // Evict the d1-cache entry (offline fallback, can be re-fetched) and retry once
+      const cacheKey = findCacheKey();
+      if (cacheKey) {
+        try { localStorage.removeItem(cacheKey); } catch { /* ignore */ }
+        try {
+          localStorage.setItem(key, serialised);
+          return; // retry succeeded
+        } catch { /* fall through to error report */ }
+      }
+      // Still failing — report and bail without throwing (quiz completion must not crash)
+      console.error('[SyncQueue] QuotaExceededError: could not write queue after cache eviction');
+      try {
+        Sentry.captureMessage('[SyncQueue] QuotaExceededError persisted after cache eviction', {
+          level: 'error',
+          extra: { childId, queueLength: queue.length },
+        });
+      } catch { /* never throw from error reporting */ }
+    } else {
+      throw err; // unexpected error, let it propagate
+    }
+  }
+}
+
+function readDeadLetter(childId) {
+  try {
+    const raw = localStorage.getItem(getDeadLetterKey(childId));
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Move an op to the dead-letter store and report to Sentry.
+ * Caps the dead-letter store at MAX_DEAD_LETTER entries (evicts oldest first).
+ * Reports to Sentry BEFORE eviction so a dropped op always has an off-device record.
+ */
+function deadLetter(childId, op, reason) {
+  const entry = { ...op, deadLetteredAt: new Date().toISOString(), reason };
+
+  // Report to Sentry first — before any potential eviction
+  try {
+    Sentry.captureMessage('[SyncQueue] Dead-lettered operation', {
+      level: 'warning',
+      extra: {
+        uuid: op.uuid,
+        type: op.type,
+        childId: op.childId,
+        createdAt: op.createdAt,
+        ageMs: op.createdAt ? Date.now() - new Date(op.createdAt).getTime() : null,
+        reason,
+      },
+    });
+  } catch { /* never throw from error reporting */ }
+
+  const store = readDeadLetter(childId);
+  store.push(entry);
+
+  // Evict oldest if over cap
+  const trimmed = store.length > MAX_DEAD_LETTER ? store.slice(store.length - MAX_DEAD_LETTER) : store;
+  try {
+    localStorage.setItem(getDeadLetterKey(childId), JSON.stringify(trimmed));
+  } catch {
+    // Best-effort — the Sentry report above is the true safety net
+  }
 }
 
 /**
@@ -74,12 +163,35 @@ export function createSyncQueue(childId) {
     },
 
     /**
-     * Return the oldest operations (up to limit).
-     * Does NOT remove them — call remove() after server confirms.
+     * Return the oldest operations (up to limit), after age-outing stale ops.
+     * Ops older than 7 days are moved to the dead-letter store.
+     * Does NOT remove remaining ops — call remove() after server confirms.
      */
     peek(limit = 50) {
+      const now = Date.now();
       const queue = readQueue(childId);
-      return queue.slice(0, limit);
+
+      // Separate stale ops from live ops
+      const live = [];
+      const stale = [];
+      for (const op of queue) {
+        const age = op.createdAt ? now - new Date(op.createdAt).getTime() : 0;
+        if (age > AGE_OUT_MS) {
+          stale.push(op);
+        } else {
+          live.push(op);
+        }
+      }
+
+      // Age-out stale ops to dead-letter before returning live batch
+      if (stale.length > 0) {
+        for (const op of stale) {
+          deadLetter(childId, op, 'age-out: op older than 7 days');
+        }
+        writeQueue(childId, live);
+      }
+
+      return live.slice(0, limit);
     },
 
     /**
@@ -94,15 +206,33 @@ export function createSyncQueue(childId) {
 
     /**
      * Increment retry count for specific operations (on transient failure).
-     * Drops operations that exceed maxRetries.
+     * retryCount is telemetry only — does NOT delete ops.
      */
-    incrementRetries(uuids, maxRetries = 10) {
+    incrementRetries(uuids) {
       const uuidSet = new Set(uuids);
       const queue = readQueue(childId);
-      const updated = queue
-        .map(op => uuidSet.has(op.uuid) ? { ...op, retryCount: op.retryCount + 1 } : op)
-        .filter(op => op.retryCount <= maxRetries);
+      const updated = queue.map(op =>
+        uuidSet.has(op.uuid) ? { ...op, retryCount: op.retryCount + 1 } : op
+      );
       writeQueue(childId, updated);
+    },
+
+    /**
+     * Move ops with per-op server status 'error' to dead-letter store.
+     * These are server-rejected (bad payload, invalid op) — retrying won't help.
+     */
+    deadLetterErrors(errorUuids) {
+      const uuidSet = new Set(errorUuids);
+      const queue = readQueue(childId);
+      const live = [];
+      for (const op of queue) {
+        if (uuidSet.has(op.uuid)) {
+          deadLetter(childId, op, 'server-rejected: per-op status was error');
+        } else {
+          live.push(op);
+        }
+      }
+      writeQueue(childId, live);
     },
 
     /**
@@ -152,6 +282,13 @@ export function createSyncQueue(childId) {
       }
 
       return { valid, quarantined };
+    },
+
+    /**
+     * Read the dead-letter store (for debugging / admin UI).
+     */
+    getDeadLetters() {
+      return readDeadLetter(childId);
     },
   };
 }

@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import * as Sentry from '@sentry/react';
 import { createSyncQueue } from '../utils/syncQueue';
+import { recomputeStreakFromHistory } from './useStreaksAndPP';
 
 // ── D1-First Data Hook ──
 // Replaces useUserData. Same return API, different internals.
@@ -16,11 +18,11 @@ const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 // ops, causing UNIQUE constraint failures on processed_operations.
 // Keyed by userName so different children never block each other.
 // Exported for testing — do not import from app code.
-export const flushState = new Map(); // userName → { flushing: boolean, pending: boolean }
+export const flushState = new Map(); // userName → { flushing: boolean, pending: boolean, backoffMs: number, lastFailedAt: number|null }
 
 export function getFlushState(userName) {
   if (!flushState.has(userName)) {
-    flushState.set(userName, { flushing: false, pending: false });
+    flushState.set(userName, { flushing: false, pending: false, backoffMs: 0, lastFailedAt: null });
   }
   return flushState.get(userName);
 }
@@ -33,6 +35,135 @@ export function _resetFlushStateForTests(userName) {
   } else {
     flushState.clear();
   }
+}
+
+// ── Cross-Tab Flush Lease ──
+// Prevents two browser tabs from double-flushing the same queue.
+// Uses a simple localStorage lease (no navigator.locks — not available on iOS 15.6 Safari).
+// TabId is randomly generated once per tab load (module scope = stable per page lifecycle).
+const TAB_ID = Math.random().toString(36).slice(2);
+const LEASE_TTL_MS = 30000; // 30 seconds
+
+function leaseKey(childId) {
+  return `sync-flush-lease:${childId}`;
+}
+
+function acquireLease(childId) {
+  const key = leaseKey(childId);
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const lease = JSON.parse(raw);
+      if (lease.tabId !== TAB_ID && lease.expiresAt > Date.now()) {
+        // Another tab holds a valid lease — skip flush, they'll drain it
+        return false;
+      }
+    }
+    // Either no lease, expired lease, or this tab already holds it — acquire/renew
+    localStorage.setItem(key, JSON.stringify({ tabId: TAB_ID, expiresAt: Date.now() + LEASE_TTL_MS }));
+    return true;
+  } catch {
+    // localStorage failure — proceed without lease (single-tab behaviour)
+    return true;
+  }
+}
+
+function renewLease(childId) {
+  const key = leaseKey(childId);
+  try {
+    localStorage.setItem(key, JSON.stringify({ tabId: TAB_ID, expiresAt: Date.now() + LEASE_TTL_MS }));
+  } catch { /* non-critical */ }
+}
+
+function releaseLease(childId) {
+  const key = leaseKey(childId);
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const lease = JSON.parse(raw);
+      if (lease.tabId === TAB_ID) {
+        localStorage.removeItem(key);
+      }
+    }
+  } catch { /* non-critical */ }
+}
+
+// ── Backoff schedule ──
+// On transient failure: exponential backoff 2s → 4s → 8s … capped at 5 minutes.
+// Resets to 0 on any successful flush.
+const BACKOFF_MIN_MS = 2000;
+const BACKOFF_MAX_MS = 5 * 60 * 1000; // 5 minutes
+
+function nextBackoffMs(currentBackoffMs) {
+  if (currentBackoffMs === 0) return BACKOFF_MIN_MS;
+  return Math.min(currentBackoffMs * 2, BACKOFF_MAX_MS);
+}
+
+// ── Failure classification ──
+// TRANSIENT: network error / HTTP 5xx / 429 — retry with backoff
+// PERMANENT: HTTP 4xx — batch-level hard failure (rare; treat as transient ONCE,
+//            dead-letter if 4xx repeats — a malformed batch must not silently delete ops)
+const TRANSIENT_STATUS_THRESHOLD = 500; // >= 500 or no HTTP (network error)
+
+/**
+ * Returns { data, transient, permanent, statusCode }
+ * - data: parsed JSON response or null
+ * - transient: true = retry-able failure
+ * - permanent: true = batch-level permanent failure (do not retry this specific batch)
+ * - statusCode: HTTP status code or null if network error
+ */
+async function apiPostClassified(path, body, getToken) {
+  if (!getToken || !API_URL) return { data: null, transient: true, permanent: false, statusCode: null };
+  let token;
+  try {
+    token = await getToken();
+    if (!token) return { data: null, transient: true, permanent: false, statusCode: null };
+  } catch {
+    return { data: null, transient: true, permanent: false, statusCode: null };
+  }
+
+  let res;
+  try {
+    res = await fetch(`${API_URL}${path}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify(body),
+    });
+  } catch (err) {
+    // Network error — transient
+    console.warn(`[useD1Data] POST ${path} network error:`, err.message);
+    return { data: null, transient: true, permanent: false, statusCode: null };
+  }
+
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    console.warn(`[useD1Data] POST ${path} failed:`, data.error || res.status);
+
+    if (res.status >= TRANSIENT_STATUS_THRESHOLD || res.status === 429) {
+      // 5xx or 429 — transient, retry with backoff
+      return { data: null, transient: true, permanent: false, statusCode: res.status };
+    } else {
+      // 4xx — permanent batch-level failure
+      return { data: null, transient: false, permanent: true, statusCode: res.status };
+    }
+  }
+
+  const data = await res.json().catch(() => null);
+  return { data, transient: false, permanent: false, statusCode: res.status };
+}
+
+// ── Conflict retry round tracking (loop guard for section 3d) ──
+// Keyed by a "logical record key" (e.g. 'streaks', 'preferences') per flush session
+// not per uuid — so Device A conflict → merge → re-enqueue → re-conflict counts as round 2.
+const conflictRoundsRef = new Map(); // mutexKey → Map<logicalKey, number>
+
+function getConflictRounds(mutexKey) {
+  if (!conflictRoundsRef.has(mutexKey)) conflictRoundsRef.set(mutexKey, new Map());
+  return conflictRoundsRef.get(mutexKey);
+}
+
+function resetConflictRounds(mutexKey) {
+  conflictRoundsRef.delete(mutexKey);
 }
 
 
@@ -136,8 +267,37 @@ export function transformServerData(serverData) {
   const topicPerformance = {};
   (serverData.topicPerformance || []).forEach(r => { topicPerformance[r.topic_key] = r.data; });
 
+  // lessonHistory — rebuilt from lesson_history rows into topic-keyed shape:
+  // { topicKey: { shown: [subConceptId, ...], lastSubConcept, lastTemplateType } }
+  // Rows are ordered by completed_at ASC with id as tiebreaker for same-second
+  // completions (bulk.js SELECT needs to include id and ORDER BY completed_at ASC, id ASC).
+  // Legacy rows whose lesson_id doesn't contain '::' are silently skipped.
   const lessonHistory = {};
-  (serverData.lessonHistory || []).forEach(r => { lessonHistory[r.lesson_id] = { completedAt: r.completed_at }; });
+  const lessonRows = serverData.lessonHistory || [];
+  // Sort ascending by completed_at, then id (rowid tiebreaker for same-second completions)
+  const sortedLessonRows = [...lessonRows].sort((a, b) => {
+    const ta = a.completed_at || '';
+    const tb = b.completed_at || '';
+    if (ta < tb) return -1;
+    if (ta > tb) return 1;
+    // Same timestamp — use id (rowid) as tiebreaker
+    return (a.id || 0) - (b.id || 0);
+  });
+  for (const r of sortedLessonRows) {
+    const lessonId = r.lesson_id;
+    if (!lessonId || !lessonId.includes('::')) continue; // skip legacy format
+    const parts = lessonId.split('::');
+    if (parts.length < 3) continue; // malformed — needs topicKey::subConceptId::templateType
+    const [topicKey, subConceptId, templateType] = parts;
+    if (!lessonHistory[topicKey]) {
+      lessonHistory[topicKey] = { shown: [], lastSubConcept: null, lastTemplateType: null };
+    }
+    if (!lessonHistory[topicKey].shown.includes(subConceptId)) {
+      lessonHistory[topicKey].shown.push(subConceptId);
+    }
+    lessonHistory[topicKey].lastSubConcept = subConceptId;
+    lessonHistory[topicKey].lastTemplateType = templateType;
+  }
 
   const seenQuestions = {};
   (serverData.seenQuestions || []).forEach(r => {
@@ -176,7 +336,21 @@ export function transformServerData(serverData) {
 
   const lastSessionDate = serverData.preferences?.last_session_date || null;
 
-  const leitnerQueue = serverData.leitnerQueue || [];
+  // leitnerQueue — transform snake_case server columns to camelCase client shape.
+  // The bulk.js SELECT returns snake_case (question_id, topic_key, last_reviewed, etc.)
+  // which was previously passed through RAW as serverData.leitnerQueue — this is a
+  // latent shape mismatch fixed here. Graduated entries (level < 0 is not used;
+  // the leitner system uses level 0..5) — no server-level filtering needed.
+  const leitnerQueue = (serverData.leitnerQueue || []).map(r => ({
+    questionId: r.question_id ?? r.questionId,
+    topicKey: r.topic_key ?? r.topicKey,
+    subject: r.subject || '',
+    level: r.level ?? 0,
+    lastReviewed: r.last_reviewed ?? r.lastReviewed ?? null,
+    nextReview: r.next_review ?? r.nextReview ?? null,
+    timesCorrect: r.times_correct ?? r.timesCorrect ?? 0,
+    timesIncorrect: r.times_incorrect ?? r.timesIncorrect ?? 0,
+  }));
 
   // Extract versions for mutable records
   const versions = {
@@ -234,6 +408,33 @@ function readCache(userName) {
   }
 }
 
+// ── lastSynced snapshot ──
+// Per-child snapshot of last server-confirmed mutable values.
+// Used by savePrepPoints to compute delta (PP delta op needs: delta = new total - last synced total).
+// Stored in localStorage: sync-lastsynced:${childId}.
+// Updated synchronously alongside queue.remove() in the flush response handler.
+
+function lastSyncedKey(childId) {
+  return `sync-lastsynced:${childId}`;
+}
+
+function readLastSynced(childId) {
+  if (!childId) return null;
+  try {
+    const raw = localStorage.getItem(lastSyncedKey(childId));
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeLastSynced(childId, snapshot) {
+  if (!childId) return;
+  try {
+    localStorage.setItem(lastSyncedKey(childId), JSON.stringify(snapshot));
+  } catch { /* non-critical */ }
+}
+
 // ── API Helpers ──
 
 async function apiFetch(path, getToken) {
@@ -253,28 +454,6 @@ async function apiFetch(path, getToken) {
   }
 }
 
-async function apiPost(path, body, getToken) {
-  if (!getToken || !API_URL) return null;
-  try {
-    const token = await getToken();
-    if (!token) return null;
-    const res = await fetch(`${API_URL}${path}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-      body: JSON.stringify(body),
-    });
-    if (!res.ok) {
-      const data = await res.json().catch(() => ({}));
-      console.warn(`[useD1Data] POST ${path} failed:`, data.error || res.status);
-      return null;
-    }
-    return res.json();
-  } catch (err) {
-    console.warn(`[useD1Data] POST ${path} error:`, err.message);
-    return null;
-  }
-}
-
 // Check if legacy localStorage has data that hasn't been migrated to D1
 function hasLegacyData(userName) {
   return !!(
@@ -284,6 +463,35 @@ function hasLegacyData(userName) {
   );
 }
 
+// ── Topic→Subject mapping ──
+// Used by saveSeenQuestions and saveLeitnerQueue to derive subject from topicKey.
+// Derived from CLAUDE.md topic key lists.
+const MATHS_TOPICS = new Set([
+  'percentages', 'decimals', 'longdivision', 'ratio', 'fractions',
+  'longmultiplication', 'algebra', 'placevalue', 'negativenumbers',
+  'primenumbersfactors', 'areaperimeter', 'volume', 'anglesshapes',
+  'sequences', 'datahandling', 'speeddistancetime',
+]);
+const ENGLISH_TOPICS = new Set([
+  'comprehension', 'grammar', 'vocabulary', 'spelling', 'punctuation', 'writingTechniques',
+]);
+const VR_TOPICS = new Set([
+  'synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords',
+  'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes',
+  'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies',
+  'numberWordCodes', 'logicAndLanguage', 'sharedLetter',
+]);
+
+function subjectFromTopicKey(topicKey) {
+  if (MATHS_TOPICS.has(topicKey)) return 'maths';
+  if (ENGLISH_TOPICS.has(topicKey)) return 'english';
+  if (VR_TOPICS.has(topicKey)) return 'verbal-reasoning';
+  return 'maths'; // fallback
+}
+
+// ── PP delta constants ──
+const MAX_PP_DELTA_PER_ENQUEUE = 2500; // max delta per single 'prep-points-delta' op
+
 // ── The Hook ──
 
 export default function useD1Data(userName, getToken, childId, previewMode = false) {
@@ -292,6 +500,12 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const batchingRef = useRef(false);
   const syncQueueRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
+
+  // Refs for current state values — used to compute deltas without stale-closure risk.
+  // Updated synchronously alongside setState calls.
+  const seenQuestionsRef = useRef({});
+  const leitnerQueueRef = useRef([]);
+  const lastSyncedRef = useRef(null); // { prepPoints: {total, todayPP, todayDate}, streaks: {...}, preferences: {...} }
 
   // ── State (same shape as old useUserData) ──
   const [quizHistory, setQuizHistory] = useState(DEFAULTS.quizHistory);
@@ -317,6 +531,8 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     const queueKey = childId || userName;
     if (queueKey) {
       syncQueueRef.current = createSyncQueue(queueKey);
+      // Load lastSynced snapshot for this child
+      lastSyncedRef.current = readLastSynced(queueKey);
     }
   }, [childId, userName]);
 
@@ -324,7 +540,9 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const populateState = useCallback((data) => {
     setQuizHistory(data.quizHistory || DEFAULTS.quizHistory);
     setTopicPerformance(data.topicPerformance || DEFAULTS.topicPerformance);
-    setSeenQuestions(data.seenQuestions || DEFAULTS.seenQuestions);
+    const sq = data.seenQuestions || DEFAULTS.seenQuestions;
+    setSeenQuestions(sq);
+    seenQuestionsRef.current = sq;
     setMockTestHistory(data.mockTestHistory || DEFAULTS.mockTestHistory);
     setLessonHistory(data.lessonHistory || DEFAULTS.lessonHistory);
     setQuestionResults(data.questionResults || DEFAULTS.questionResults);
@@ -334,7 +552,9 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     setAchievements(data.achievements || DEFAULTS.achievements);
     setSeenTips(data.seenTips || DEFAULTS.seenTips);
     setLastSessionDate(data.lastSessionDate || DEFAULTS.lastSessionDate);
-    setLeitnerQueue(data.leitnerQueue || DEFAULTS.leitnerQueue);
+    const lq = data.leitnerQueue || DEFAULTS.leitnerQueue;
+    setLeitnerQueue(lq);
+    leitnerQueueRef.current = lq;
     if (data.versions) versionsRef.current = data.versions;
   }, []);
 
@@ -347,6 +567,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     setQuizHistory(DEFAULTS.quizHistory);
     setTopicPerformance(DEFAULTS.topicPerformance);
     setSeenQuestions(DEFAULTS.seenQuestions);
+    seenQuestionsRef.current = {};
     setMockTestHistory(DEFAULTS.mockTestHistory);
     setLessonHistory(DEFAULTS.lessonHistory);
     setQuestionResults(DEFAULTS.questionResults);
@@ -357,8 +578,10 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     setSeenTips(DEFAULTS.seenTips);
     setLastSessionDate(DEFAULTS.lastSessionDate);
     setLeitnerQueue(DEFAULTS.leitnerQueue);
+    leitnerQueueRef.current = [];
     setLoaded(false);
     versionsRef.current = { streaks: 1, prepPoints: 1, preferences: 1 };
+    lastSyncedRef.current = null;
   }, []);
 
   // ── Load from D1 on mount / user change / logout ──
@@ -421,7 +644,17 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
             seenTips: legacyRead(userName, 'seen-tips', []),
             lastSessionDate: legacyRead(userName, 'last-session-date', null),
           };
-          await apiPost('/api/data/migrate', migrationPayload, getToken);
+          // Use basic apiPost for migration (not the classified one — migration failures are non-critical)
+          try {
+            const token = await getToken();
+            if (token) {
+              await fetch(`${API_URL}/api/data/migrate`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+                body: JSON.stringify(migrationPayload),
+              });
+            }
+          } catch { /* non-critical */ }
 
           // Re-fetch after migration
           const freshData = await apiFetch('/api/data/all', getToken);
@@ -430,6 +663,15 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
             const transformed = transformServerData(freshData);
             populateState(transformed);
             writeCache(userName, freshData);
+            // Initialise lastSynced from server data
+            const queueKey = childId || userName;
+            const snapshot = {
+              prepPoints: transformed.prepPointsData,
+              streaks: transformed.streakData,
+              preferences: { lastSessionDate: transformed.lastSessionDate },
+            };
+            lastSyncedRef.current = snapshot;
+            writeLastSynced(queueKey, snapshot);
             setLoaded(true);
             return;
           }
@@ -439,6 +681,17 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         const transformed = transformServerData(serverData);
         populateState(transformed);
         writeCache(userName, serverData);
+
+        // Initialise lastSynced from server data
+        const queueKey = childId || userName;
+        const snapshot = {
+          prepPoints: transformed.prepPointsData,
+          streaks: transformed.streakData,
+          preferences: { lastSessionDate: transformed.lastSessionDate },
+        };
+        lastSyncedRef.current = snapshot;
+        writeLastSynced(queueKey, snapshot);
+
         setLoaded(true);
 
         // Flush any pending SyncQueue operations
@@ -492,6 +745,13 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   // ── Online/offline listener ──
   useEffect(() => {
     const handleOnline = () => {
+      const mutexKey = childId || userName;
+      if (mutexKey) {
+        // Reset backoff on reconnect — device is now online, retry promptly
+        const state = getFlushState(mutexKey);
+        state.backoffMs = 0;
+        state.lastFailedAt = null;
+      }
       if (syncQueueRef.current && !syncQueueRef.current.isEmpty()) {
         flushQueue();
       }
@@ -510,7 +770,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const flushQueue = useCallback(async () => {
     if (previewMode) return; // preview sandbox never persists to D1
     const queue = syncQueueRef.current;
-    if (!queue || queue.isEmpty() || !getToken || !API_URL || !userName) return;
+    if (!queue || !getToken || !API_URL || !userName) return;
 
     // Mutex keyed by childId when available so two children on the same
     // account never share a flush lock.
@@ -524,26 +784,164 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
       return;
     }
 
+    // Check cross-tab flush lease — skip if another tab is actively flushing
+    if (!acquireLease(mutexKey)) {
+      // Another tab holds the lease; they will drain the queue. Schedule a
+      // check after lease TTL so we don't starve if the other tab crashes.
+      setTimeout(() => flushQueue(), LEASE_TTL_MS + 1000);
+      return;
+    }
+
     state.flushing = true;
+
     try {
+      // Check queue after mutex to avoid pointless POST
+      if (queue.isEmpty()) return;
+
       const { valid, quarantined } = queue.validateOwnership();
       if (quarantined.length > 0) {
         queue.remove(quarantined.map(op => op.uuid));
       }
-      if (valid.length === 0) return;
 
-      const ops = valid.slice(0, 50); // Batch up to 50 at a time
+      // peek() performs age-out to dead-letter — side effect is intentional
+      const ops = queue.peek(50);
+      if (ops.length === 0) return;
+
+      // Renew lease between batches (in case we have many batches)
+      renewLease(mutexKey);
+
       const batchBody = childId ? { child_id: childId, operations: ops } : { operations: ops };
-      const result = await apiPost('/api/data/batch', batchBody, getToken);
+      const { data: result, transient, permanent } = await apiPostClassified('/api/data/batch', batchBody, getToken);
 
       if (result) {
-        // Remove successfully processed operations
-        const processed = (result.results || [])
-          .filter(r => r.status === 'ok' || r.status === 'duplicate')
-          .map(r => r.uuid);
-        queue.remove(processed);
+        // ── Success path ──
+        // Reset backoff on any successful flush
+        state.backoffMs = 0;
+        state.lastFailedAt = null;
+        resetConflictRounds(mutexKey);
 
-        // Update version cache from response
+        const queueKey = childId || userName;
+        const toRemove = [];
+        let lastSyncedUpdated = false;
+        const currentLastSynced = lastSyncedRef.current || {
+          prepPoints: DEFAULTS.prepPointsData,
+          streaks: DEFAULTS.streakData,
+          preferences: { lastSessionDate: null },
+        };
+        const updatedLastSynced = {
+          prepPoints: { ...currentLastSynced.prepPoints },
+          streaks: { ...currentLastSynced.streaks },
+          preferences: { ...currentLastSynced.preferences },
+        };
+
+        // Process per-op results
+        const errorUuids = [];
+        const conflictRounds = getConflictRounds(mutexKey);
+
+        for (const opResult of (result.results || [])) {
+          if (opResult.status === 'ok' || opResult.status === 'duplicate') {
+            toRemove.push(opResult.uuid);
+            // Update lastSynced for delta ops
+            const op = ops.find(o => o.uuid === opResult.uuid);
+            if (op && op.type === 'prep-points-delta' && opResult.status === 'ok') {
+              updatedLastSynced.prepPoints = {
+                ...updatedLastSynced.prepPoints,
+                total: (updatedLastSynced.prepPoints.total || 0) + (op.payload.delta || 0),
+              };
+              lastSyncedUpdated = true;
+            }
+          } else if (opResult.status === 'error') {
+            // Server-rejected op — dead-letter it, do NOT retry
+            errorUuids.push(opResult.uuid);
+          } else if (opResult.status === 'conflict') {
+            // Merge conflict — remove original, compute merged state, re-enqueue
+            toRemove.push(opResult.uuid);
+            const op = ops.find(o => o.uuid === opResult.uuid);
+            if (!op) continue;
+
+            const logicalKey = op.type; // 'streaks' | 'preferences'
+            const round = (conflictRounds.get(logicalKey) || 0) + 1;
+            conflictRounds.set(logicalKey, round);
+
+            if (round > 3) {
+              // Loop guard: give up and accept server state, dead-letter the unmerged local value
+              try {
+                Sentry.captureMessage('[useD1Data] Conflict loop guard triggered — accepting server state', {
+                  level: 'warning',
+                  extra: { type: op.type, round, uuid: opResult.uuid },
+                });
+              } catch { /* never throw from reporting */ }
+              if (queue.deadLetterErrors) {
+                // Re-use deadLetterErrors mechanism by temporarily marking as error
+                // Actually use the queue's dead-letter mechanism directly
+                queue.deadLetterErrors([]);
+              }
+              continue; // accept server state — don't re-enqueue
+            }
+
+            if (op.type === 'streaks') {
+              // Merge streak histories
+              const serverHistory = opResult.currentData?.streak_history
+                ? (typeof opResult.currentData.streak_history === 'string'
+                    ? JSON.parse(opResult.currentData.streak_history)
+                    : opResult.currentData.streak_history)
+                : [];
+              const localHistory = op.payload.streakHistory || [];
+              // Union deduped by date string
+              const mergedHistory = [...new Set([...localHistory, ...serverHistory])];
+              const serverLongest = opResult.currentData?.longest_streak || 0;
+              const localLongest = op.payload.longestStreak || 0;
+              const prevLongest = Math.max(serverLongest, localLongest);
+              // Derive ALL fields from merged history — never take max(currentStreak) directly
+              const { currentStreak, longestStreak, lastQuizDate } = recomputeStreakFromHistory(mergedHistory, prevLongest);
+
+              const merged = {
+                currentStreak,
+                longestStreak,
+                lastQuizDate,
+                streakHistory: mergedHistory,
+              };
+              setStreakData(merged);
+
+              // Re-enqueue with server version and fresh UUID
+              const newVersion = opResult.currentVersion;
+              versionsRef.current = { ...versionsRef.current, streaks: newVersion };
+              queue.enqueue('streaks', {
+                version: newVersion,
+                currentStreak: merged.currentStreak,
+                longestStreak: merged.longestStreak,
+                lastQuizDate: merged.lastQuizDate,
+                streakHistory: merged.streakHistory,
+              });
+            } else if (op.type === 'preferences') {
+              // Merge preferences: lastSessionDate = max(local, server)
+              const serverDate = opResult.currentData?.last_session_date || null;
+              const localDate = op.payload.lastSessionDate || null;
+              const mergedDate = serverDate && localDate
+                ? (serverDate > localDate ? serverDate : localDate)
+                : (serverDate || localDate);
+
+              setLastSessionDate(mergedDate);
+
+              const newVersion = opResult.currentVersion;
+              versionsRef.current = { ...versionsRef.current, preferences: newVersion };
+              queue.enqueue('preferences', {
+                version: newVersion,
+                lastSessionDate: mergedDate,
+              });
+            }
+          }
+        }
+
+        // Remove processed + conflict-resolved ops synchronously with lastSynced update
+        if (toRemove.length > 0) {
+          queue.remove(toRemove);
+        }
+        if (errorUuids.length > 0) {
+          queue.deadLetterErrors(errorUuids);
+        }
+
+        // Update versions from response
         if (result.versions) {
           versionsRef.current = {
             streaks: result.versions.streaks ?? versionsRef.current.streaks,
@@ -552,17 +950,36 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
           };
         }
 
-        // Handle conflicts — update local state with server data
-        const conflicts = (result.results || []).filter(r => r.status === 'conflict');
-        for (const conflict of conflicts) {
-          queue.remove([conflict.uuid]); // Don't retry conflicts
-          // Could re-fetch specific data here, but for now trust the version update
+        // Write lastSynced transactionally with the queue remove
+        if (lastSyncedUpdated) {
+          lastSyncedRef.current = updatedLastSynced;
+          writeLastSynced(queueKey, updatedLastSynced);
         }
-      } else {
-        // Network failure — increment retry counts
+
+      } else if (transient) {
+        // ── Transient failure — ops stay queued, apply backoff ──
         queue.incrementRetries(ops.map(op => op.uuid));
+        state.backoffMs = nextBackoffMs(state.backoffMs);
+        state.lastFailedAt = Date.now();
+      } else if (permanent) {
+        // ── Permanent 4xx failure ──
+        // Treat as transient ONCE to allow re-formation of the batch (e.g. server
+        // just returned 400 — could be a transient schema mismatch). If backoff is
+        // already set (meaning we already tried once after a 4xx), dead-letter
+        // these specific ops instead of silently dropping or infinite-looping.
+        if (state.backoffMs > 0) {
+          // Already retried once after a 4xx — dead-letter these ops
+          const errorUuids = ops.map(op => op.uuid);
+          queue.deadLetterErrors(errorUuids);
+        } else {
+          // First 4xx — treat like transient (retry once)
+          queue.incrementRetries(ops.map(op => op.uuid));
+          state.backoffMs = nextBackoffMs(0);
+          state.lastFailedAt = Date.now();
+        }
       }
     } finally {
+      releaseLease(mutexKey);
       state.flushing = false;
     }
 
@@ -571,9 +988,16 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     const shouldDrain = state.pending || !queue.isEmpty();
     state.pending = false;
     if (shouldDrain) {
-      setTimeout(() => flushQueue(), 100);
+      let drainDelay = 100; // fast drain for remaining ops after a success
+      if (state.lastFailedAt !== null) {
+        // Compute remaining backoff from when the failure was recorded
+        const elapsed = Date.now() - state.lastFailedAt;
+        const remaining = state.backoffMs - elapsed;
+        drainDelay = Math.max(100, remaining);
+      }
+      setTimeout(() => flushQueue(), drainDelay);
     }
-  }, [getToken, userName, childId, previewMode]);
+  }, [getToken, userName, childId, previewMode]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Batch Mode ──
   const startBatch = useCallback(() => { batchingRef.current = true; }, []);
@@ -596,9 +1020,8 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
   const saveQuizResult = useCallback((result) => {
     if (!userName) return;
-    // Preserve sessionId in local state so Recent Activity is immediately clickable
-    // without waiting for a page reload (Codex review #3).
-    const updated = [...quizHistory, result];
+    // Newest-first — prepend (server arrays are newest-first per convention)
+    const updated = [result, ...quizHistory];
     setQuizHistory(updated);
     enqueue('quiz-result', {
       topicKey: result.topic, subject: result.subject,
@@ -611,17 +1034,35 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const saveTopicPerformance = useCallback((updated) => {
     if (!userName) return;
     setTopicPerformance(updated);
-    // Topic performance is synced per-key elsewhere; nothing to enqueue here.
+    // topicPerformance is local-only (server-side readers exist in tutor.js and mutable.js,
+    // but there is no clean per-(topicKey, subject) version tracking returned from bulk load
+    // and the data can be derived from questionResults). Keeping local-only per spec branch
+    // decision (see OUTPUT section). Nothing to enqueue here.
   }, [userName]);
 
   const saveSeenQuestions = useCallback((updated) => {
     if (!userName) return;
+    // Diff against the ref to find newly seen questions
+    const prev = seenQuestionsRef.current;
     setSeenQuestions(updated);
-  }, [userName]);
+    seenQuestionsRef.current = updated;
+
+    // Enqueue 'seen-question' for each newly seen entry
+    for (const [topicKey, ids] of Object.entries(updated)) {
+      const prevIds = prev[topicKey] || [];
+      for (const questionId of ids) {
+        if (!prevIds.includes(questionId)) {
+          const subject = subjectFromTopicKey(topicKey);
+          enqueue('seen-question', { questionId, topicKey, subject });
+        }
+      }
+    }
+  }, [userName, enqueue]);
 
   const saveMockTestResult = useCallback((result) => {
     if (!userName) return;
-    setMockTestHistory(prev => [...prev, result]);
+    // Newest-first — prepend
+    setMockTestHistory(prev => [result, ...prev]);
     enqueue('mock-result', {
       subject: result.subject, totalQuestions: result.totalQuestions,
       totalCorrect: result.totalCorrect, percentage: result.percentage,
@@ -630,14 +1071,40 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     });
   }, [userName, enqueue]);
 
+  // recordLessonComplete — updates topic-keyed lessonHistory state AND enqueues
+  // 'lesson-complete' op. Called from App.js lesson completion handler.
+  // lessonId format: "${topicKey}::${subConceptId}::${templateType}"
+  // Validates that no component contains '::' (these are slugs).
+  const recordLessonComplete = useCallback(({ topicKey, subConceptId, templateType }) => {
+    if (!userName) return;
+    if (topicKey.includes('::') || subConceptId.includes('::') || templateType.includes('::')) {
+      console.warn('[useD1Data] recordLessonComplete: component contains "::" separator — lessonId will be malformed', { topicKey, subConceptId, templateType });
+    }
+    const lessonId = `${topicKey}::${subConceptId}::${templateType}`;
+    setLessonHistory(prev => {
+      const updated = { ...prev };
+      if (!updated[topicKey]) updated[topicKey] = { shown: [], lastSubConcept: null, lastTemplateType: null };
+      if (!updated[topicKey].shown.includes(subConceptId)) {
+        updated[topicKey].shown.push(subConceptId);
+      }
+      updated[topicKey].lastSubConcept = subConceptId;
+      updated[topicKey].lastTemplateType = templateType;
+      return updated;
+    });
+    enqueue('lesson-complete', { lessonId });
+  }, [userName, enqueue]);
+
   const saveLessonHistory = useCallback((updated) => {
     if (!userName) return;
     setLessonHistory(updated);
+    // Note: saveLessonHistory is for the legacy path (direct object update).
+    // New code should use recordLessonComplete instead.
   }, [userName]);
 
   const saveQuestionResult = useCallback((result) => {
     if (!userName) return;
-    setQuestionResults(prev => [...prev, result].slice(-5000));
+    // Newest-first — prepend
+    setQuestionResults(prev => [result, ...prev].slice(0, 5000));
     enqueue('question-result', {
       questionId: result.questionId, topicKey: result.topicKey,
       subject: result.subject, isCorrect: result.correct,
@@ -649,7 +1116,8 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
   const savePracticeSession = useCallback((session) => {
     if (!userName) return;
-    setPracticeLog(prev => [...prev, session]);
+    // Newest-first — prepend
+    setPracticeLog(prev => [session, ...prev]);
     enqueue('practice-session', {
       sessionDate: session.date || new Date().toISOString().slice(0, 10),
       data: session,
@@ -671,11 +1139,34 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const savePrepPoints = useCallback((data) => {
     if (!userName) return;
     setPrepPointsData(data);
-    enqueue('prep-points', {
-      version: versionsRef.current.prepPoints,
-      total: data.total, level: data.level,
-      todayPP: data.todayPP, todayDate: data.todayDate,
-    });
+
+    // Compute delta from lastSynced (never from closed-over state — use ref)
+    const lastSynced = lastSyncedRef.current;
+    const syncedTotal = lastSynced?.prepPoints?.total ?? 0;
+    const delta = (data.total || 0) - syncedTotal;
+
+    if (delta <= 0) {
+      // Total hasn't increased — nothing to enqueue (PP can only increase)
+      return;
+    }
+
+    // Split deltas > MAX_PP_DELTA_PER_ENQUEUE into multiple ops
+    let remaining = delta;
+    let todayDeltaRemaining = data.todayPP || 0;
+    let firstOp = true;
+
+    while (remaining > 0) {
+      const opDelta = Math.min(remaining, MAX_PP_DELTA_PER_ENQUEUE);
+      // todayDelta goes entirely on the first op
+      const todayDelta = firstOp ? todayDeltaRemaining : 0;
+      enqueue('prep-points-delta', {
+        delta: opDelta,
+        todayDelta,
+        todayDate: data.todayDate,
+      });
+      remaining -= opDelta;
+      firstOp = false;
+    }
   }, [userName, enqueue]);
 
   const saveAchievements = useCallback((data) => {
@@ -717,8 +1208,40 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
   const saveLeitnerQueue = useCallback((queue) => {
     if (!userName) return;
+
+    // Diff against the ref to find new/changed entries
+    const prevMap = new Map(
+      leitnerQueueRef.current.map(e => [`${e.questionId}:${e.topicKey}`, e])
+    );
+
     setLeitnerQueue(queue);
-  }, [userName]);
+    leitnerQueueRef.current = queue;
+
+    for (const entry of queue) {
+      const key = `${entry.questionId}:${entry.topicKey}`;
+      const prev = prevMap.get(key);
+      const changed = !prev
+        || prev.level !== entry.level
+        || prev.lastReviewed !== entry.lastReviewed
+        || prev.nextReview !== entry.nextReview
+        || prev.timesCorrect !== entry.timesCorrect
+        || prev.timesIncorrect !== entry.timesIncorrect;
+
+      if (changed) {
+        const subject = entry.subject || subjectFromTopicKey(entry.topicKey);
+        enqueue('leitner-entry', {
+          questionId: entry.questionId,
+          topicKey: entry.topicKey,
+          subject,
+          level: entry.level,
+          lastReviewed: entry.lastReviewed || null,
+          nextReview: entry.nextReview || null,
+          timesCorrect: entry.timesCorrect ?? 0,
+          timesIncorrect: entry.timesIncorrect ?? 0,
+        });
+      }
+    }
+  }, [userName, enqueue]);
 
   // ── Return (identical to old useUserData) ──
   return {
@@ -739,6 +1262,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     saveSeenQuestions,
     saveMockTestResult,
     saveLessonHistory,
+    recordLessonComplete,
     saveQuestionResult,
     savePracticeSession,
     saveStreakData,

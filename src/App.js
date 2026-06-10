@@ -886,6 +886,10 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     } else if (quizMode === 'focused' && selectedTopic) {
       setQuizQuestions(selectFocusedQuestions(selectedTopic));
     }
+    // Reset session identifiers — matches the pattern in beginFocusedQuiz
+    quizSessionId.current = Date.now();
+    questionStartTime.current = Date.now();
+    setSavedTimerSecs(0);
     setCurrentQuestionIndex(0);
     setAnswers([]);
     wrongAnswerCount.current = 0;
@@ -2003,13 +2007,12 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
             return;
           }
           if (lessonRecord) {
-            const updated = { ...lessonHistory };
-            if (!updated[selectedTopic]) updated[selectedTopic] = {};
-            if (!updated[selectedTopic].shown) updated[selectedTopic].shown = [];
-            updated[selectedTopic].shown.push(lessonRecord);
-            updated[selectedTopic].lastSubConcept = lessonRecord.subConcept;
-            updated[selectedTopic].lastTemplateType = lessonRecord.templateType;
-            userData.saveLessonHistory(updated);
+            // Use recordLessonComplete to update state + enqueue 'lesson-complete' op
+            userData.recordLessonComplete({
+              topicKey: selectedTopic,
+              subConceptId: lessonRecord.subConcept,
+              templateType: lessonRecord.templateType,
+            });
           }
           setForcedLessonResult(null);
           // If launched from quiz "Find Me a Lesson", show "Did that help?" screen
