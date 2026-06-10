@@ -715,7 +715,8 @@ export default function MicroLessonScreen({
   onFlagLesson,
   onComplete,
   onBack,
-  backLabel
+  backLabel,
+  getToken
 }) {
   const [currentScreen, setCurrentScreen] = useState(0);
   const [lesson, setLesson] = useState(null);
@@ -1207,9 +1208,18 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       const tutorApiUrl = process.env.REACT_APP_TUTOR_API_URL;
       if (!tutorApiUrl) throw new Error('Tutor API URL not configured');
 
+      // Attach the auth token if available — the Worker requires it.
+      const tutorHeaders = { 'Content-Type': 'application/json' };
+      if (getToken) {
+        try {
+          const authToken = await getToken();
+          if (authToken) tutorHeaders['Authorization'] = `Bearer ${authToken}`;
+        } catch { /* proceed without auth — server will 401 */ }
+      }
+
       const response = await fetch(tutorApiUrl, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: tutorHeaders,
         body: JSON.stringify({
           system: buildTutorSystemPrompt(),
           messages: updatedMessages
@@ -1217,6 +1227,15 @@ Remember: This is a child learning, so be warm, supportive, and make learning fu
       });
 
       const data = await response.json();
+
+      if (response.status === 429 && data.friendly) {
+        setChatMessages([...updatedMessages, {
+          role: 'assistant',
+          content: "You've used up today's tutor questions — come back tomorrow!"
+        }]);
+        return;
+      }
+
       if (data.error) throw new Error(data.error);
 
       const aiResponse = data.content?.find(item => item.type === 'text')?.text ||

@@ -1158,11 +1158,16 @@ If the child pushes for the answer before submitting, respond with something lik
 
 Remember: This is a child learning. Be warm and make learning fun — but the learning only happens if they do the thinking themselves.`;
 
+      // Attach the auth token if available.
+      const tutorHeaders = { "Content-Type": "application/json" };
+      try {
+        const authToken = await getToken();
+        if (authToken) tutorHeaders["Authorization"] = `Bearer ${authToken}`;
+      } catch { /* proceed without auth — server will 401 */ }
+
       const response = await fetch(tutorApiUrl, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: tutorHeaders,
         body: JSON.stringify({
           system: systemPrompt,
           messages: updatedMessages,
@@ -1170,6 +1175,14 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       });
 
       const data = await response.json();
+
+      if (response.status === 429 && data.friendly) {
+        setChatMessages([...updatedMessages, {
+          role: 'assistant',
+          content: "You've used up today's tutor questions — come back tomorrow!"
+        }]);
+        return;
+      }
 
       if (data.error) {
         throw new Error(data.error);
@@ -1984,6 +1997,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onSheetSubmit={submitToGoogleSheet}
         forcedLessonResult={forcedLessonResult}
         isTestingMode={returnToTestingMode}
+        getToken={getToken}
         onFlagLesson={(flagData) => {
           testingCoverage.flagLesson(flagData.topicKey, flagData.subConceptId, flagData.screenIndex, flagData.category, flagData.note);
           const workerUrl = process.env.REACT_APP_TUTOR_API_URL;
@@ -2386,6 +2400,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         quizVisualComponents={quizVisualComponents}
         onFindLesson={null}
         autoOpenTutor={false}
+        getToken={getToken}
         onBack={() => {
           setTutorQuizSession(null);
           setCurrentView('tutorDashboard');
@@ -2408,6 +2423,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         landOn={isPostQuizReview ? 'first-wrong' : undefined}
         autoOpenTutor={isPostQuizReview}
         onFindLesson={handleReviewFindLesson}
+        getToken={getToken}
         onBack={() => {
           setSelectedQuiz(null);
           setCurrentView(quizDetailReturnTo);

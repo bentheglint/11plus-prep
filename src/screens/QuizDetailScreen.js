@@ -35,6 +35,7 @@ function QuizDetailScreen({
   onFindLesson,
   landOn,
   autoOpenTutor,
+  getToken,
 }) {
   // Build a question lookup map across all subjects.
   const questionLookup = useMemo(() => {
@@ -89,6 +90,7 @@ function QuizDetailScreen({
   // conversation. Hook resets on unmount so Exit→Re-enter starts fresh.
   const tutor = useTutorChat({
     apiUrl: TUTOR_API_URL,
+    getToken,
     buildSystemPrompt: ({ key }) => {
       const result = quizQuestions[Number(key)];
       const lookup = result ? `${result.subject}-${result.topicKey}-${result.questionId}` : null;

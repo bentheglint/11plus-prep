@@ -7,6 +7,10 @@ compatibility_flags = ["nodejs_compat"]
 binding = "TESTING_FLAGS"
 id = "test-kv-id"
 
+[[kv_namespaces]]
+binding = "TUTOR_QUOTA"
+id = "test-quota-kv-id"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "test-db"

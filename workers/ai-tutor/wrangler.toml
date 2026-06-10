@@ -7,6 +7,10 @@ compatibility_flags = ["nodejs_compat"]
 binding = "TESTING_FLAGS"
 id = "4002f528b09b4352a5f42f0396645116"
 
+[[kv_namespaces]]
+binding = "TUTOR_QUOTA"
+id = "c5bd05a6c8284bfc9f420b22f52ce0f7"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "11plus-user-data"

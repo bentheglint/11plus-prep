@@ -221,34 +221,100 @@ async function handleMarkTested(request, env) {
   return json({ ok: true });
 }
 
-// ── AI Tutor (Anthropic proxy, no auth required) ──
+// ── AI Tutor (Anthropic proxy, auth-gated with per-account daily quota) ──
 
-async function handleTutor(request, env) {
-  const { system, messages } = await request.json();
+const TUTOR_MSG_LIMIT = 20;
+const TUTOR_SYSTEM_LIMIT = 8000;
+const TUTOR_BODY_LIMIT = 50000;
 
-  if (!system || !messages || !Array.isArray(messages)) {
-    return json({ error: 'Missing system or messages' }, 400);
+async function checkTutorQuota(env, userId) {
+  // Fail open when KV is absent (local dev, test without binding) —
+  // mirrors the pattern in helpers.js checkRateLimit.
+  if (!env.TUTOR_QUOTA) return null;
+
+  const limit = parseInt(env.TUTOR_DAILY_LIMIT) || 100;
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD UTC
+  const key = `tutor-quota:${userId}:${today}`;
+
+  const raw = await env.TUTOR_QUOTA.get(key);
+  const count = raw ? parseInt(raw, 10) : 0;
+
+  if (count >= limit) {
+    return json({ error: 'Daily tutor limit reached', friendly: true }, 429);
   }
 
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': env.ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
-    },
-    body: JSON.stringify({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 500,
-      system,
-      messages,
-    }),
-  });
+  // Increment with a 2-day TTL. Read-before-write race is acceptable per spec.
+  await env.TUTOR_QUOTA.put(key, String(count + 1), { expirationTtl: 172800 });
+  return null;
+}
 
-  const data = await response.json();
+async function handleTutor(request, env) {
+  // ── Auth gate ──
+  const auth = await requireAuth(request, env);
+  if (auth.error) return auth.error;
+
+  // ── Input validation ──
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return json({ error: 'Invalid JSON body' }, 400);
+  }
+
+  const { system, messages } = body;
+
+  if (!system || typeof system !== 'string' || !messages || !Array.isArray(messages)) {
+    return json({ error: 'Missing system or messages' }, 400);
+  }
+  if (system.length > TUTOR_SYSTEM_LIMIT) {
+    return json({ error: `system must be ≤ ${TUTOR_SYSTEM_LIMIT} characters` }, 400);
+  }
+  if (messages.length > TUTOR_MSG_LIMIT) {
+    return json({ error: `messages must be ≤ ${TUTOR_MSG_LIMIT} entries` }, 400);
+  }
+  if (JSON.stringify(body).length > TUTOR_BODY_LIMIT) {
+    return json({ error: `Request body must be ≤ ${TUTOR_BODY_LIMIT} bytes` }, 400);
+  }
+
+  // ── Per-account daily quota ──
+  const quotaBlock = await checkTutorQuota(env, auth.userId);
+  if (quotaBlock) return quotaBlock;
+
+  // ── Proxy to Anthropic ──
+  let response;
+  try {
+    response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': env.ANTHROPIC_API_KEY,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 500,
+        system,
+        messages,
+      }),
+    });
+  } catch {
+    return json({ error: 'Tutor service unavailable' }, 502);
+  }
 
   if (!response.ok) {
-    return json({ error: data.error?.message || 'API error' }, response.status);
+    let errMsg = 'Tutor service unavailable';
+    try {
+      const errData = await response.json();
+      errMsg = errData.error?.message || errMsg;
+    } catch { /* non-JSON upstream error — use default message */ }
+    return json({ error: errMsg }, 502);
+  }
+
+  let data;
+  try {
+    data = await response.json();
+  } catch {
+    return json({ error: 'Tutor service unavailable' }, 502);
   }
 
   return json(data);

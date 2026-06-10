@@ -11,7 +11,7 @@ import { useCallback, useRef, useState } from 'react';
 // The system prompt is built by the caller (passed as `buildSystemPrompt`)
 // so live-quiz "no spoilers" mode and review-mode "explain freely" mode can
 // share this hook without the hook knowing about quiz semantics.
-export function useTutorChat({ apiUrl, buildSystemPrompt, errorMessage } = {}) {
+export function useTutorChat({ apiUrl, buildSystemPrompt, errorMessage, getToken } = {}) {
   const [showTutorChat, setShowTutorChat] = useState(false);
   const [currentKey, setCurrentKey] = useState('default');
   const [chatByKey, setChatByKey] = useState(() => new Map());
@@ -71,9 +71,18 @@ export function useTutorChat({ apiUrl, buildSystemPrompt, errorMessage } = {}) {
         ? buildSystemPrompt({ key, messages: newMessages })
         : '';
 
+      // Attach the auth token if a getToken function was provided.
+      const headers = { 'Content-Type': 'application/json' };
+      if (getToken) {
+        try {
+          const token = await getToken();
+          if (token) headers['Authorization'] = `Bearer ${token}`;
+        } catch { /* proceed without auth — server will 401 */ }
+      }
+
       const response = await fetch(apiUrl, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ system: systemPrompt, messages: newMessages }),
       });
       const data = await response.json();
@@ -82,6 +91,9 @@ export function useTutorChat({ apiUrl, buildSystemPrompt, errorMessage } = {}) {
       // response is stale — discard it without touching state.
       if (pendingByKey.current.get(key) !== requestId) return;
 
+      if (response.status === 429 && data.friendly) {
+        throw new Error('__quota__');
+      }
       if (data.error) throw new Error(data.error);
       const aiResponse = data.content?.find(item => item.type === 'text')?.text
         || "I'm here to help! Could you ask that in a different way?";
@@ -89,9 +101,12 @@ export function useTutorChat({ apiUrl, buildSystemPrompt, errorMessage } = {}) {
       setMessagesForKey(key, prev => [...prev, { role: 'assistant', content: aiResponse }]);
     } catch (err) {
       if (pendingByKey.current.get(key) !== requestId) return;
+      const isQuotaExhausted = err.message === '__quota__';
       setMessagesForKey(key, prev => [...prev, {
         role: 'assistant',
-        content: errorMessage || "Oops! I had trouble connecting. Could you try asking again?",
+        content: isQuotaExhausted
+          ? "You've used up today's tutor questions — come back tomorrow!"
+          : (errorMessage || "Oops! I had trouble connecting. Could you try asking again?"),
       }]);
     } finally {
       if (pendingByKey.current.get(key) === requestId) {
@@ -99,7 +114,7 @@ export function useTutorChat({ apiUrl, buildSystemPrompt, errorMessage } = {}) {
         pendingByKey.current.delete(key);
       }
     }
-  }, [apiUrl, buildSystemPrompt, chatByKey, errorMessage, setMessagesForKey, setThinkingForKey]);
+  }, [apiUrl, buildSystemPrompt, chatByKey, errorMessage, getToken, setMessagesForKey, setThinkingForKey]);
 
   const sendMessage = useCallback(async () => {
     const text = userMessage.trim();
