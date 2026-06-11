@@ -10,7 +10,7 @@ The full project brief lives in `Master Brief Document and Working Instructions/
 
 ## Tech Stack
 - **Framework:** React 19 (Create React App)
-- **Styling:** Tailwind CSS 4
+- **Styling:** Tailwind CSS 3, compiled at build time via PostCSS (`tailwind.config.js` + `postcss.config.js`). **Do NOT upgrade to Tailwind 4** — v4 requires Safari 16.4+ and the app supports iOS 15.6 iPads (9 Jun 2026 browser-floor incident). Replaced the runtime Play CDN on 12 Jun 2026.
 - **Icons:** lucide-react
 - **Build:** react-scripts 5 (`npm start` / `npm run build`)
 - **No router** — state-driven views (`home` → `topics` → `quiz` → `results`)
@@ -106,7 +106,7 @@ See `Master_Brief_v7_0.md` for the full feature map.
 | Micro-lessons | `src/microLessons/staging/*-subconcepts.js` |
 | SVG diagrams | `public/images/questions/[topic]/` |
 | Entry point | `src/index.js` |
-| Tailwind config | `postcss.config.js` (Tailwind 4 style) |
+| Tailwind config | `tailwind.config.js` + `postcss.config.js` (Tailwind 3, build-time) |
 | Worker | `workers/ai-tutor/index.js` |
 | Smoke test | `scripts/smoke.js` + `bash deploy.sh` |
 | Master brief (latest) | `Master Brief Document and Working Instructions/Master_Brief_v7_0.md` |
