@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import * as Sentry from '@sentry/react';
 import { createSyncQueue } from '../utils/syncQueue';
-import { recomputeStreakFromHistory } from './useStreaksAndPP';
+import { recomputeStreakFromHistory, calculateLevel } from './useStreaksAndPP';
 
 // ── D1-First Data Hook ──
 // Replaces useUserData. Same return API, different internals.
@@ -327,7 +327,11 @@ export function transformServerData(serverData) {
 
   const prepPointsData = serverData.prepPoints ? {
     total: serverData.prepPoints.total,
-    level: serverData.prepPoints.level,
+    // level is DERIVED from total — never trust the stored value. The
+    // prep-points-delta op's INSERT case writes a level=0 placeholder that is
+    // never recalculated server-side, so a stored level can be stale forever;
+    // loading it makes awardPP fire a spurious "level up!" after every reload.
+    level: calculateLevel(serverData.prepPoints.total || 0),
     todayPP: serverData.prepPoints.today_pp,
     todayDate: serverData.prepPoints.today_date,
   } : DEFAULTS.prepPointsData;

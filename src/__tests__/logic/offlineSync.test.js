@@ -622,6 +622,38 @@ describe('lesson_id encoding and topic-keyed rebuild', () => {
 // 11. LEITNER QUEUE SHAPE TRANSFORMATION
 // ─────────────────────────────────────────────
 
+describe('transformServerData: prepPoints level derived from total', () => {
+  const baseServerData = {
+    quizResults: [], mockTestResults: [], questionResults: [], topicPerformance: [],
+    leitnerQueue: [], seenQuestions: [], practiceSessions: [], achievements: [], seenTips: [],
+    streaks: null, preferences: null, lessonHistory: [],
+  };
+
+  it('recomputes level from total, ignoring the stored level=0 placeholder left by prep-points-delta INSERT', () => {
+    const { prepPointsData } = transformServerData({
+      ...baseServerData,
+      // delta-op INSERT case writes level=0 and never recalculates it
+      prepPoints: { total: 450, level: 0, today_pp: 50, today_date: '2026-06-11' },
+    });
+    // floor(sqrt(450/50)) = 3
+    expect(prepPointsData.level).toBe(3);
+    expect(prepPointsData.total).toBe(450);
+  });
+
+  it('matches the stored level when it is already consistent with total', () => {
+    const { prepPointsData } = transformServerData({
+      ...baseServerData,
+      prepPoints: { total: 1250, level: 5, today_pp: 0, today_date: '2026-06-11' },
+    });
+    expect(prepPointsData.level).toBe(5);
+  });
+
+  it('falls back to defaults (level 0) when prepPoints row is absent', () => {
+    const { prepPointsData } = transformServerData({ ...baseServerData, prepPoints: null });
+    expect(prepPointsData).toEqual({ total: 0, level: 0, todayPP: 0, todayDate: null });
+  });
+});
+
 describe('transformServerData: leitnerQueue camelCase transform', () => {
   it('transforms snake_case server columns to camelCase client shape', () => {
     const serverData = {
