@@ -11,6 +11,7 @@
 // POST   /api/pupil/assignments/:id/complete — Mark recipient completed + score
 
 import { json } from '../helpers.js';
+import { quizSubjectForTopic } from './batch.js';
 
 // ── Tutor assignment routes ──────────────────────────────────────────────────
 
@@ -101,7 +102,10 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
       const itemRows = items.map(item => ({ id: crypto.randomUUID(), assignment_id: assignmentId, ...item }));
       const itemStmts = itemRows.map(item =>
         db.prepare('INSERT INTO assignment_items (id, assignment_id, item_type, item_ref, subject) VALUES (?, ?, ?, ?, ?)')
-          .bind(item.id, assignmentId, item.itemType, item.itemRef, item.subject || null)
+          // Derive a missing subject for topic items — a NULL subject hid the
+          // assignment from the child's homepage banner (legacy bug, 11 Jun 2026).
+          .bind(item.id, assignmentId, item.itemType, item.itemRef,
+            item.subject || (item.itemType === 'topic' ? quizSubjectForTopic(item.itemRef) : null))
       );
       await db.batch(itemStmts);
 

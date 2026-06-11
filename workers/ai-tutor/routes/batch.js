@@ -85,6 +85,28 @@ export function normaliseTopicKey(key) {
   return TOPIC_NAME_TO_SLUG[key] || key;
 }
 
+// Topic-key → quiz-flow subject ('maths' | 'english' | 'verbalreasoning').
+// Mirrors src/utils/topicSubjects.js on the client. Used by the assignment
+// create route to derive a missing subject — a NULL subject hides the
+// assignment from the child's homepage banner (legacy rows had exactly this).
+const SUBJECT_BY_TOPIC = new Map([
+  ...['percentages', 'decimals', 'longdivision', 'ratio', 'fractions',
+    'longmultiplication', 'algebra', 'placevalue', 'negativenumbers',
+    'primenumbersfactors', 'areaperimeter', 'volume', 'anglesshapes',
+    'sequences', 'datahandling', 'speeddistancetime'].map(t => [t, 'maths']),
+  ...['comprehension', 'grammar', 'vocabulary', 'spelling', 'punctuation',
+    'wordClassGrammar'].map(t => [t, 'english']),
+  ...['synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords',
+    'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes',
+    'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies',
+    'numberWordCodes', 'logicAndLanguage', 'sharedLetter',
+    'balanceEquations'].map(t => [t, 'verbalreasoning']),
+]);
+
+export function quizSubjectForTopic(topicKey) {
+  return SUBJECT_BY_TOPIC.get(normaliseTopicKey(topicKey)) || null;
+}
+
 /**
  * Build a D1 prepared statement for an append-only operation.
  * Returns the statement or null if invalid.

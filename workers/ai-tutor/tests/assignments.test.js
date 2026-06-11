@@ -64,6 +64,60 @@ describe('Assignment completion', () => {
   });
 });
 
+// Regression: assignment_items.subject was stored as NULL when the tutor UI
+// didn't send it (Evie's first homework, 11 Jun 2026) — a NULL subject hid
+// the assignment from the child's homepage banner while the tutor profile
+// showed it as overdue. The create route now derives subject from the topic
+// key for 'topic' items.
+describe('Assignment creation derives missing subject', () => {
+  async function createAssignment(items) {
+    const accountId = `acct-${crypto.randomUUID().slice(0, 8)}`;
+    const childId = `child-${crypto.randomUUID().slice(0, 8)}`;
+    const tutorId = `tutor-${crypto.randomUUID().slice(0, 8)}`;
+
+    await seed.account(env.DB, accountId, `${accountId}@test.com`);
+    await seed.child(env.DB, childId, accountId);
+    await seed.tutor(env.DB, tutorId, `${tutorId}@test.com`);
+    await seed.pupilTutor(env.DB, childId, tutorId);
+
+    const token = await makeAuthToken({ userId: tutorId });
+    return worker.fetch(
+      makeRequest('POST', '/api/tutor/assignments', {
+        auth: token,
+        body: { dueDate: '2026-07-01', targetChildId: childId, items },
+      }),
+      env
+    );
+  }
+
+  async function itemSubjects() {
+    const { results } = await env.DB.prepare(
+      'SELECT item_ref, subject FROM assignment_items'
+    ).all();
+    return Object.fromEntries(results.map(r => [r.item_ref, r.subject]));
+  }
+
+  it('REGRESSION: topic item without subject gets it derived from the topic key', async () => {
+    const res = await createAssignment([{ itemType: 'topic', itemRef: 'fractions' }]);
+    expect(res.status).toBe(201);
+    expect((await itemSubjects()).fractions).toBe('maths');
+  });
+
+  it('derives the quiz vocabulary for VR topics (verbalreasoning, no hyphen)', async () => {
+    const res = await createAssignment([{ itemType: 'topic', itemRef: 'synonyms' }]);
+    expect(res.status).toBe(201);
+    expect((await itemSubjects()).synonyms).toBe('verbalreasoning');
+  });
+
+  it('keeps an explicitly supplied subject', async () => {
+    const res = await createAssignment([
+      { itemType: 'topic', itemRef: 'comprehension', subject: 'english' },
+    ]);
+    expect(res.status).toBe(201);
+    expect((await itemSubjects()).comprehension).toBe('english');
+  });
+});
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 async function buildScenario(status) {

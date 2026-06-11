@@ -1,8 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { GraduationCap, ChevronRight } from 'lucide-react';
 import { motion } from './Motion';
+import { quizSubjectForTopic } from '../utils/topicSubjects';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
+
+// Pick the most urgent incomplete topic assignment. Subject missing on the
+// row (legacy rows predate the server setting it) is derived from the topic
+// key rather than hiding the assignment — Evie's first homework sat invisible
+// on the homepage for three weeks because of a NULL subject (11 Jun 2026).
+// Exported for testing.
+export function selectActiveAssignment(recipients) {
+  return (recipients || [])
+    .filter(r => r.item_type === 'topic' && !['completed', 'cleared', 'cancelled'].includes(r.status))
+    .map(r => ({ ...r, subject: r.subject || quizSubjectForTopic(r.item_ref) }))
+    .filter(r => r.subject) // unknown topic AND no stored subject — can't start a quiz
+    .sort((a, b) => new Date(a.due_date) - new Date(b.due_date))[0] || null;
+}
 
 async function fetchAssignments(childId, getToken) {
   const token = await getToken();
@@ -63,12 +77,7 @@ export default function AssignmentBanner({ activeChildId, getToken, onStart }) {
     if (!activeChildId || !getToken) { setLoading(false); return; }
     fetchAssignments(activeChildId, getToken)
       .then(data => {
-        const recipients = data?.recipients || [];
-        // Find the most urgent incomplete topic assignment with a subject
-        const active = recipients
-          .filter(r => r.item_type === 'topic' && r.subject && !['completed', 'cleared', 'cancelled'].includes(r.status))
-          .sort((a, b) => new Date(a.due_date) - new Date(b.due_date));
-        setItem(active[0] || null);
+        setItem(selectActiveAssignment(data?.recipients));
         setLoading(false);
       })
       .catch(() => setLoading(false));
