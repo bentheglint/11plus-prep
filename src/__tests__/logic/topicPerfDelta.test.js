@@ -7,7 +7,7 @@
  * 3. transformServerData topicPerformance shape: server rows → client map
  */
 
-import { transformServerData, foldQueuedTopicDeltas } from '../../hooks/useD1Data';
+import { transformServerData, foldQueuedTopicDeltas, subjectFromTopicKey } from '../../hooks/useD1Data';
 
 // ── Sentry mock (syncQueue and useD1Data import Sentry) ──
 jest.mock('@sentry/react', () => ({
@@ -99,6 +99,33 @@ describe('Topic delta computation from session', () => {
     expect(Object.keys(deltas)).toHaveLength(1);
     expect(deltas.ratio.totalDelta).toBe(10);
     expect(deltas.ratio.correctDelta).toBe(5);
+  });
+});
+
+// ─────────────────────────────────────────────
+// 1b. subjectFromTopicKey — the delta op's subject vocabulary
+// ─────────────────────────────────────────────
+// The 2026-06-11 topic_performance backfill derives each row's subject from
+// this mapping; delta ops must produce identical values or they create
+// duplicate (child, topic, subject) rows instead of updating backfilled ones.
+
+describe('subjectFromTopicKey', () => {
+  it('maps maths, english and VR topics to the delta-op vocabulary', () => {
+    expect(subjectFromTopicKey('percentages')).toBe('maths');
+    expect(subjectFromTopicKey('comprehension')).toBe('english');
+    expect(subjectFromTopicKey('synonyms')).toBe('verbal-reasoning');
+  });
+
+  it('maps wordClassGrammar to english (was wrongly falling back to maths)', () => {
+    expect(subjectFromTopicKey('wordClassGrammar')).toBe('english');
+  });
+
+  it('maps balanceEquations to verbal-reasoning (was wrongly falling back to maths)', () => {
+    expect(subjectFromTopicKey('balanceEquations')).toBe('verbal-reasoning');
+  });
+
+  it('falls back to maths for unknown keys', () => {
+    expect(subjectFromTopicKey('no-such-topic')).toBe('maths');
   });
 });
 

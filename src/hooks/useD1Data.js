@@ -499,16 +499,24 @@ const MATHS_TOPICS = new Set([
   'sequences', 'datahandling', 'speeddistancetime',
 ]);
 const ENGLISH_TOPICS = new Set([
-  'comprehension', 'grammar', 'vocabulary', 'spelling', 'punctuation', 'writingTechniques',
+  // 'wordClassGrammar' is the real key — 'writingTechniques' (from a stale
+  // CLAUDE.md list) never existed in the question bank and silently fell
+  // through to the 'maths' fallback.
+  'comprehension', 'grammar', 'vocabulary', 'spelling', 'punctuation', 'wordClassGrammar',
 ]);
 const VR_TOPICS = new Set([
   'synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords',
   'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes',
   'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies',
-  'numberWordCodes', 'logicAndLanguage', 'sharedLetter',
+  'numberWordCodes', 'logicAndLanguage', 'sharedLetter', 'balanceEquations',
 ]);
+// The 2026-06-11 topic_performance backfill (scripts/recovery/) derives each
+// row's subject from THIS mapping. If these sets change, delta ops will start
+// writing NEW (child, topic, subject) rows instead of updating existing ones —
+// the client merges by topic_key alone, but keep the vocabulary stable anyway.
 
-function subjectFromTopicKey(topicKey) {
+// Exported for testing — pure function, same pattern as transformServerData.
+export function subjectFromTopicKey(topicKey) {
   if (MATHS_TOPICS.has(topicKey)) return 'maths';
   if (ENGLISH_TOPICS.has(topicKey)) return 'english';
   if (VR_TOPICS.has(topicKey)) return 'verbal-reasoning';
