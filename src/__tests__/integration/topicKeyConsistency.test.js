@@ -130,4 +130,48 @@ describe('Topic Key Consistency', () => {
       expect(APP_SUBJECT_TOPICS.verbalreasoning.length).toBe(17);
     });
   });
+
+  // Live-registry checks — import the REAL registries instead of copies.
+  // Four independent topic lists shipped without balanceEquations across
+  // 11-12 Jun 2026 (useMastery, MicroLessonScreen badge sets, both
+  // topicLabels, the Worker's mastery mirror). Each was a copied list with
+  // a "keep in sync" comment. These tests make that drift a test failure.
+  describe('Live registries cover every data-file topic key', () => {
+    const { ALL_TOPIC_KEYS } = require('../../hooks/useMastery');
+    const { quizSubjectForTopic } = require('../../utils/topicSubjects');
+    const { TOPIC_LABELS } = require('../../utils/topicLabels');
+    const { ENGLISH_TOPICS, VR_TOPICS } = require('../../microLessons/MicroLessonScreen');
+
+    const canonical = [
+      ...dataKeys.maths, ...dataKeys.english, ...dataKeys.verbalreasoning,
+    ];
+
+    test('useMastery ALL_TOPIC_KEYS matches the data files exactly', () => {
+      expect([...ALL_TOPIC_KEYS].sort()).toEqual([...canonical].sort());
+    });
+
+    test('quizSubjectForTopic maps every topic to its data-file subject', () => {
+      const expected = {};
+      dataKeys.maths.forEach(k => { expected[k] = 'maths'; });
+      dataKeys.english.forEach(k => { expected[k] = 'english'; });
+      dataKeys.verbalreasoning.forEach(k => { expected[k] = 'verbalreasoning'; });
+      const wrong = canonical.filter(k => quizSubjectForTopic(k) !== expected[k]);
+      expect(wrong).toEqual([]);
+    });
+
+    test('TOPIC_LABELS has an explicit label for every topic (no camelCase fallback)', () => {
+      const missing = canonical.filter(k => !TOPIC_LABELS[k]);
+      expect(missing).toEqual([]);
+    });
+
+    test('MicroLessonScreen badge sets cover every English and VR topic', () => {
+      const missingEnglish = dataKeys.english.filter(k => !ENGLISH_TOPICS.has(k));
+      const missingVR = dataKeys.verbalreasoning.filter(k => !VR_TOPICS.has(k));
+      expect(missingEnglish).toEqual([]);
+      expect(missingVR).toEqual([]);
+      // and no English/VR topic may leak into the maths fallback
+      const mathsLeaks = dataKeys.maths.filter(k => ENGLISH_TOPICS.has(k) || VR_TOPICS.has(k));
+      expect(mathsLeaks).toEqual([]);
+    });
+  });
 });

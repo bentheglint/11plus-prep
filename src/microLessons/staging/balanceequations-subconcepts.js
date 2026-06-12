@@ -15,6 +15,9 @@ export const balanceEquationsSubConcepts = [
       {
         id: "balance-equations-steps",
         templateType: "step-by-step",
+        // Screens take no variables (worked examples are written inline),
+        // but selectLesson expects a variableSets array — one empty set.
+        variableSets: [{}],
         learningGoal: [
           "How to solve 'find the missing number' equations where both sides must balance",
           "How to use BODMAS on the left side first, then back-solve to find the missing number"

@@ -42,8 +42,10 @@ const visualComponents = {
 };
 
 // ---- Subject detection from topicKey ----
-const ENGLISH_TOPICS = new Set(['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension']);
-const VR_TOPICS = new Set(['synonyms', 'antonyms', 'oddTwoOut', 'verbalAnalogies', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'sharedLetter', 'letterCodes', 'letterPairSeries', 'wordCodeAnalogies', 'numberWordCodes', 'numberSeries', 'letterSums', 'logicAndLanguage']);
+// Exported for the topic-key consistency test — these sets must cover every
+// English/VR topic in the data files or lessons get the wrong subject badge.
+export const ENGLISH_TOPICS = new Set(['spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar', 'comprehension']);
+export const VR_TOPICS = new Set(['synonyms', 'antonyms', 'oddTwoOut', 'verbalAnalogies', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'sharedLetter', 'letterCodes', 'letterPairSeries', 'wordCodeAnalogies', 'numberWordCodes', 'numberSeries', 'letterSums', 'logicAndLanguage', 'balanceEquations']);
 
 function getSubjectTheme(topicKey) {
   if (ENGLISH_TOPICS.has(topicKey)) return { icon: BookOpen, accent: 'green', bg: 'bg-green-100', text: 'text-green-600', badge: 'bg-green-50 text-green-700', label: 'English' };

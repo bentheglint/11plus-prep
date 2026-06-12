@@ -2315,6 +2315,9 @@ export const letterCodesSubConcepts = [
       {
         id: "letter-position-analogy-steps",
         templateType: "step-by-step",
+        // Screens take no variables (worked examples inline) — selectLesson
+        // expects a variableSets array; one empty set. (12 Jun 2026 crash class.)
+        variableSets: [{}],
         learningGoal: [
           "Crack 'X is to Y' letter puzzles by turning letters into their alphabet positions (A=1, B=2... Z=26)",
           "Spot the rule from the first pair, double-check it on the second pair, then apply it confidently to the last one"

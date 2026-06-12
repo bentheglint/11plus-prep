@@ -14788,10 +14788,15 @@ export function selectLesson(topicKey, topicPerformance, lessonHistory, currentU
 
   // Pick two distinct variable sets: one for teach screens, one for interact screens
   // Difficulty-aware selection: newer learners see only easy sets, experienced learners see harder ones
-  const allSets = chosenLesson.variableSets;
+  // Defensive: a lesson authored without variableSets (screens take no variables)
+  // must degrade to a null set, not crash the lesson screen for a child.
+  // (balanceEquations shipped without one — undefined.filter blanked the screen, 12 Jun 2026.)
+  const allSets = (chosenLesson.variableSets && chosenLesson.variableSets.length > 0)
+    ? chosenLesson.variableSets
+    : [null];
   const topicVisits = history.length;
   const allowHard = topicVisits >= 5 && (topicVisits >= 9 ? Math.random() < 0.5 : Math.random() < 0.25);
-  const sets = allowHard ? allSets : allSets.filter(s => !s.difficulty || s.difficulty <= 1);
+  const sets = allowHard ? allSets : allSets.filter(s => !s || !s.difficulty || s.difficulty <= 1);
   const effectiveSets = sets.length > 0 ? sets : allSets;
   const idx1 = Math.floor(Math.random() * effectiveSets.length);
   let idx2 = idx1;

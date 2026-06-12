@@ -1,7 +1,7 @@
 // Topic key → display label. Mirrors src/utils/topicLabels.js (Worker can't
 // import from /src/). Keep these two files in sync when adding new topics.
 
-const TOPIC_LABELS = {
+export const TOPIC_LABELS = {
   // Maths
   percentages: 'Percentages',
   decimals: 'Decimals',
@@ -25,7 +25,7 @@ const TOPIC_LABELS = {
   vocabulary: 'Vocabulary',
   spelling: 'Spelling',
   punctuation: 'Punctuation',
-  writingTechniques: 'Writing Techniques',
+  wordClassGrammar: 'Word Class & Grammar',
   // Verbal Reasoning
   synonyms: 'Synonyms',
   antonyms: 'Antonyms',
@@ -43,6 +43,7 @@ const TOPIC_LABELS = {
   numberWordCodes: 'Number & Word Codes',
   logicAndLanguage: 'Logic & Language',
   sharedLetter: 'Shared Letter',
+  balanceEquations: 'Balance Equations',
   // Special
   'daily-learning': 'Daily Learning',
 };

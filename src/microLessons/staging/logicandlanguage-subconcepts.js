@@ -2682,6 +2682,9 @@ export const logicAndLanguageSubConcepts = [
       {
         id: "multi-attribute-logic-steps",
         templateType: "step-by-step",
+        // Screens take no variables (worked examples inline) — selectLesson
+        // expects a variableSets array; one empty set. (12 Jun 2026 crash class.)
+        variableSets: [{}],
         learningGoal: [
           "How to use clues to match people to attributes in a logic grid",
           "How to use elimination to rule out impossible combinations"
