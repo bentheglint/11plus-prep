@@ -87,30 +87,32 @@ CREATE TABLE IF NOT EXISTS practice_sessions (
   UNIQUE(child_id, session_date)
 );
 
+-- MUST mirror migrations/0001_initial_schema.sql EXACTLY: no id column,
+-- PK (child_id, lesson_id). The test copy of this table once had an
+-- id INTEGER PRIMARY KEY that prod lacked — bulk.js selected it, tests
+-- passed, and prod's bulk load 500'd for every user (11-12 Jun 2026).
 CREATE TABLE IF NOT EXISTS lesson_history (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
   child_id TEXT NOT NULL REFERENCES children(id) ON DELETE CASCADE,
   lesson_id TEXT NOT NULL,
   completed_at TEXT NOT NULL DEFAULT (datetime('now')),
-  UNIQUE(child_id, lesson_id)
+  PRIMARY KEY (child_id, lesson_id)
 );
 
 CREATE TABLE IF NOT EXISTS seen_questions (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
   child_id TEXT NOT NULL REFERENCES children(id) ON DELETE CASCADE,
   question_id INTEGER NOT NULL,
   topic_key TEXT NOT NULL,
   subject TEXT NOT NULL,
   first_seen_at TEXT NOT NULL DEFAULT (datetime('now')),
-  UNIQUE(child_id, question_id, topic_key)
+  PRIMARY KEY (child_id, question_id, topic_key)
 );
 
 CREATE TABLE IF NOT EXISTS achievements (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
   child_id TEXT NOT NULL REFERENCES children(id) ON DELETE CASCADE,
   achievement_id TEXT NOT NULL,
   unlocked_at TEXT NOT NULL DEFAULT (datetime('now')),
-  UNIQUE(child_id, achievement_id)
+  seen INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (child_id, achievement_id)
 );
 
 CREATE TABLE IF NOT EXISTS seen_tips (
@@ -144,10 +146,9 @@ CREATE TABLE IF NOT EXISTS topic_performance (
 );
 
 CREATE TABLE IF NOT EXISTS migrations (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  child_id TEXT NOT NULL REFERENCES children(id) ON DELETE CASCADE,
+  child_id TEXT PRIMARY KEY REFERENCES children(id) ON DELETE CASCADE,
   migrated_at TEXT NOT NULL DEFAULT (datetime('now')),
-  source TEXT NOT NULL DEFAULT 'localStorage',
+  source TEXT NOT NULL,
   items_imported INTEGER NOT NULL DEFAULT 0
 );
 

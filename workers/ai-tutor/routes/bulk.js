@@ -33,7 +33,11 @@ export async function handleBulkLoad(request, env, userId) {
     db.prepare('SELECT id, question_id, topic_key, subject, is_correct, time_ms, difficulty, attempted_at, session_id, selected_answer FROM question_results WHERE child_id = ? ORDER BY attempted_at DESC').bind(childId).all(),
     db.prepare('SELECT topic_key, subject, data, version FROM topic_performance WHERE child_id = ?').bind(childId).all(),
     db.prepare('SELECT question_id, topic_key, subject, level, last_reviewed, next_review, times_correct, times_incorrect FROM leitner_queue WHERE child_id = ?').bind(childId).all(),
-    db.prepare('SELECT id, lesson_id, completed_at FROM lesson_history WHERE child_id = ?').bind(childId).all(),
+    // rowid AS id: prod lesson_history (migration 0001) has NO id column —
+    // PK is (child_id, lesson_id). rowid gives the same insertion-order
+    // tiebreak the client sort needs. Selecting a literal `id` column took
+    // down the entire bulk load for every user, 11-12 Jun 2026.
+    db.prepare('SELECT rowid AS id, lesson_id, completed_at FROM lesson_history WHERE child_id = ?').bind(childId).all(),
     db.prepare('SELECT question_id, topic_key, subject, first_seen_at FROM seen_questions WHERE child_id = ?').bind(childId).all(),
     db.prepare('SELECT session_date, data, created_at FROM practice_sessions WHERE child_id = ? ORDER BY session_date DESC').bind(childId).all(),
     db.prepare('SELECT achievement_id, unlocked_at FROM achievements WHERE child_id = ?').bind(childId).all(),
