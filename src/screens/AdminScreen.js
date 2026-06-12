@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ArrowLeft, ShieldCheck, UserPlus, Trash2, Gift, RefreshCw } from 'lucide-react';
+import { ArrowLeft, ShieldCheck, UserPlus, Trash2, Gift, RefreshCw, ChevronDown, ChevronUp, Check, X } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -19,6 +19,129 @@ function inactivityLabel(days) {
   if (days === 0) return 'today';
   if (days === 1) return 'yesterday';
   return `${days}d ago`;
+}
+
+// ── Bulk invite review card ──
+function BulkInviteReviews({ getToken }) {
+  const [batches, setBatches] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [expanded, setExpanded] = useState({}); // batchId → bool
+  const [approveTutor, setApproveTutor] = useState({}); // batchId → bool
+  const [busy, setBusy] = useState(null); // batchId being actioned
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    try {
+      const d = await apiFetch('/api/admin/bulk-invite-reviews', getToken);
+      setBatches(d.batches || []);
+    } catch {
+      setBatches([]);
+    } finally {
+      setLoading(false);
+    }
+  }, [getToken]);
+
+  useEffect(() => { load(); }, [load]);
+
+  const act = async (batchId, action) => {
+    const msg = action === 'approve'
+      ? `Approve this batch and send the invite emails?${approveTutor[batchId] ? '\n\nThis will also trust this tutor to skip review for future batches.' : ''}`
+      : 'Reject this batch? The invites will be revoked.';
+    if (!window.confirm(msg)) return; // eslint-disable-line no-alert
+    setBusy(batchId);
+    try {
+      await apiFetch('/api/admin/bulk-invite-reviews', getToken, {
+        method: 'POST',
+        body: JSON.stringify({ batchId, action, ...(action === 'approve' && approveTutor[batchId] ? { approveTutor: true } : {}) }),
+      });
+      await load();
+    } catch (err) {
+      alert(err.message); // eslint-disable-line no-alert
+    } finally {
+      setBusy(null);
+    }
+  };
+
+  if (loading) return <p className="text-slate-400 text-sm px-1 mt-2">Loading reviews…</p>;
+  if (!batches || batches.length === 0) return null;
+
+  return (
+    <div className="mb-6">
+      <h2 className="font-heading font-bold text-slate-800 mb-2 px-1">
+        Bulk invite reviews <span className="text-slate-400 font-normal text-sm">({batches.length})</span>
+      </h2>
+      <div className="space-y-3">
+        {batches.map(batch => {
+          const isExpanded = !!expanded[batch.batchId];
+          const isBusy = busy === batch.batchId;
+          const date = batch.createdAt ? new Date(batch.createdAt).toLocaleDateString('en-GB') : '';
+
+          return (
+            <div key={batch.batchId} className="bg-white rounded-2xl border border-amber-200 shadow-sm p-4">
+              <div className="flex items-start justify-between gap-3 mb-2">
+                <div className="min-w-0">
+                  <p className="font-semibold text-slate-800 text-sm">{batch.tutor.displayName}</p>
+                  <p className="text-xs text-slate-400 truncate">{batch.tutor.email}</p>
+                  <p className="text-xs text-slate-400 mt-0.5">{batch.rowCount} pupils · submitted {date}</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setExpanded(e => ({ ...e, [batch.batchId]: !isExpanded }))}
+                  className="p-1 text-slate-400 hover:text-slate-700 flex-shrink-0"
+                  aria-expanded={isExpanded}
+                  aria-label={isExpanded ? 'Collapse rows' : 'Expand rows'}
+                >
+                  {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                </button>
+              </div>
+
+              {isExpanded && (
+                <div className="border-t border-slate-100 pt-2 mb-3 space-y-1">
+                  {batch.rows.map((row, i) => (
+                    <div key={row.id || i} className="flex items-center gap-2 text-xs">
+                      <span className="text-slate-600 truncate">{row.child_name}</span>
+                      <span className="text-slate-400 truncate">{row.parent_email}</span>
+                      {row.year_group && <span className="text-slate-400">Y{row.year_group}</span>}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <div className="flex items-center gap-3 flex-wrap">
+                <label className="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={!!approveTutor[batch.batchId]}
+                    onChange={e => setApproveTutor(prev => ({ ...prev, [batch.batchId]: e.target.checked }))}
+                    className="rounded accent-[#7C3AED]"
+                  />
+                  Also trust this tutor for future batches
+                </label>
+                <div className="flex gap-2 ml-auto">
+                  <button
+                    type="button"
+                    onClick={() => act(batch.batchId, 'reject')}
+                    disabled={isBusy}
+                    className="flex items-center gap-1.5 text-xs font-medium text-red-500 hover:text-red-700 px-3 py-1.5 border border-red-200 rounded-lg disabled:opacity-50"
+                  >
+                    <X className="w-3.5 h-3.5" /> Reject
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => act(batch.batchId, 'approve')}
+                    disabled={isBusy}
+                    className="flex items-center gap-1.5 text-xs font-medium text-white bg-[#7C3AED] hover:bg-[#6D28D9] px-3 py-1.5 rounded-lg disabled:opacity-50"
+                  >
+                    <Check className="w-3.5 h-3.5" /> Approve
+                  </button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default function AdminScreen({ getToken, onBack }) {
@@ -113,6 +236,9 @@ export default function AdminScreen({ getToken, onBack }) {
 
         {!loading && !error && data && (
           <>
+            {/* Bulk invite reviews — top priority admin action */}
+            <BulkInviteReviews getToken={getToken} />
+
             {/* Grant a new tutor */}
             <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-4 mb-4">
               <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2 flex items-center gap-1.5">

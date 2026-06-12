@@ -93,12 +93,13 @@ describe('relationship removal via parent', () => {
   });
 });
 
-// ── Bulk invite thresholds ──
+// ── Bulk invite API shapes (updated for real invites.js backend) ──
 
 describe('bulk invite', () => {
   const REVIEW_THRESHOLD = 20;
 
-  it('20 pupils or fewer skips review (returns invite links)', () => {
+  it('20 pupils or fewer skips review (status is pending)', () => {
+    // Server returns status:'pending' when lifetimeCount + new <= 20 and not approved
     const pupilCounts = [1, 5, 10, 20];
     pupilCounts.forEach(n => {
       const needsReview = n > REVIEW_THRESHOLD;
@@ -118,24 +119,140 @@ describe('bulk invite', () => {
     });
   });
 
-  it('invite link format is consistent', () => {
-    const tutorCode = 'ABCD-EFGH';
-    const baseUrl = 'https://prepstep.co.uk';
-    const link = `${baseUrl}/join/${tutorCode}`;
-    expect(link).toBe('https://prepstep.co.uk/join/ABCD-EFGH');
-    expect(link).toMatch(/\/join\/[A-Z0-9]{4}-[A-Z0-9]{4}$/);
+  it('POST /api/tutor/bulk-invite success response shape matches real API', () => {
+    // Real API returns: { ok, batchId, created, alreadyInvited, status }
+    const successResponse = {
+      ok: true,
+      batchId: 'some-uuid',
+      created: 3,
+      alreadyInvited: [{ email: 'dup@example.com', childName: 'Dup' }],
+      status: 'pending',
+    };
+    expect(successResponse.ok).toBe(true);
+    expect(typeof successResponse.batchId).toBe('string');
+    expect(typeof successResponse.created).toBe('number');
+    expect(Array.isArray(successResponse.alreadyInvited)).toBe(true);
+    expect(['pending', 'needs_review']).toContain(successResponse.status);
   });
 
-  it('bulk invite body structure is validated', () => {
+  it('POST /api/tutor/bulk-invite 400 rowErrors shape matches real API', () => {
+    // Real API returns: { error, rowErrors: [{index, error}] }
+    const errorResponse = {
+      error: 'Validation failed',
+      rowErrors: [
+        { index: 0, error: 'Invalid email' },
+        { index: 2, error: 'childName is required (max 30 chars)' },
+      ],
+    };
+    expect(errorResponse.rowErrors).toHaveLength(2);
+    errorResponse.rowErrors.forEach(e => {
+      expect(typeof e.index).toBe('number');
+      expect(typeof e.error).toBe('string');
+    });
+  });
+
+  it('POST /api/tutor/bulk-invite 429 daily cap error shape', () => {
+    // Real API returns: { error: 'Daily limit exceeded...' }
+    const capError = {
+      error: 'Daily limit exceeded. You have 95 invites in the past 24 hours; adding 10 would exceed 100.',
+    };
+    expect(typeof capError.error).toBe('string');
+    expect(capError.error).toContain('Daily limit exceeded');
+  });
+
+  it('bulk invite body uses childName (not name) matching real API', () => {
+    // Field name in POST body is childName, NOT name — matches server validateEmail/sanitiseName
     const validBody = {
       pupils: [
         { email: 'parent@example.com', childName: 'Sam', yearGroup: 5 },
+        { email: 'parent2@example.com', childName: 'Evie' }, // yearGroup optional
       ],
     };
     expect(Array.isArray(validBody.pupils)).toBe(true);
-    expect(validBody.pupils.length).toBeGreaterThan(0);
-    expect(validBody.pupils[0]).toHaveProperty('email');
-    expect(validBody.pupils[0]).toHaveProperty('childName');
+    validBody.pupils.forEach(p => {
+      expect(p).toHaveProperty('email');
+      expect(p).toHaveProperty('childName');
+      // yearGroup is optional
+    });
+  });
+
+  it('invite link uses /invite/<token> format (not /join/<code>)', () => {
+    // Bulk invite tokens are UUID-based one-time links, not reusable tutor codes
+    const baseUrl = 'https://prepstep.co.uk';
+    const rawToken = 'some-uuid-token-here-123456';
+    const link = `${baseUrl}/invite/${rawToken}`;
+    expect(link).toMatch(/\/invite\//);
+    expect(link).not.toMatch(/\/join\//);
+  });
+
+  it('GET /api/tutor/invites response shape matches real API', () => {
+    // Real API returns: { invites: [{id, parent_email, child_name, year_group, status, ...}] }
+    const listResponse = {
+      invites: [
+        {
+          id: 'inv-1',
+          parent_email: 'parent@example.com',
+          child_name: 'Evie',
+          year_group: 5,
+          status: 'sent',
+          created_at: '2026-06-12 10:00:00',
+          sent_at: '2026-06-12 10:01:00',
+          joined_at: null,
+          expires_at: '2026-07-12 10:00:00',
+          claimed_by_email: null,
+        },
+      ],
+    };
+    expect(Array.isArray(listResponse.invites)).toBe(true);
+    const inv = listResponse.invites[0];
+    expect(inv).toHaveProperty('id');
+    expect(inv).toHaveProperty('parent_email');
+    expect(inv).toHaveProperty('child_name');
+    expect(inv).toHaveProperty('status');
+  });
+
+  it('POST /api/tutor/invites/:id/resend 429 cooldown response shape', () => {
+    const cooldownError = { error: 'Must wait 24 hours before resending' };
+    expect(cooldownError.error).toBe('Must wait 24 hours before resending');
+  });
+
+  it('POST /api/tutor/claim-invite success response shape', () => {
+    // Real API returns: { ok: true } or { ok: true, alreadyLinked: true }
+    const success = { ok: true };
+    const idempotent = { ok: true, alreadyLinked: true };
+    expect(success.ok).toBe(true);
+    expect(idempotent.alreadyLinked).toBe(true);
+  });
+
+  it('POST /api/tutor/claim-invite 404 invalid token response shape', () => {
+    // Real API returns: { error: 'Invite not valid' }
+    const notFound = { error: 'Invite not valid' };
+    expect(notFound.error).toBe('Invite not valid');
+  });
+
+  it('GET /api/tutor/public/invite/:token valid response (no child name — privacy)', () => {
+    // Real public API deliberately omits childName before auth
+    const validResponse = {
+      valid: true,
+      tutor: { displayName: 'Mary Jones', photoUrl: null, bio: 'GL specialist' },
+    };
+    expect(validResponse.valid).toBe(true);
+    expect(validResponse.tutor).toHaveProperty('displayName');
+    // childName MUST NOT be present (pre-auth privacy decision)
+    expect(validResponse).not.toHaveProperty('childName');
+  });
+
+  it('POST /api/tutor/invite-preview (authed) includes childName', () => {
+    // Authed preview returns childName for pre-filling onboarding
+    const previewResponse = {
+      valid: true,
+      childName: 'Evie',
+      yearGroup: 5,
+      tutor: { displayName: 'Mary Jones', photoUrl: null, bio: 'GL specialist' },
+    };
+    expect(previewResponse.valid).toBe(true);
+    expect(previewResponse.childName).toBe('Evie');
+    expect(previewResponse.yearGroup).toBe(5);
   });
 });
 

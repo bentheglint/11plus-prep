@@ -202,8 +202,19 @@ function ConsentScreen({ onConsent, isLoading, inviteCode }) {
 }
 
 // ── Child Name Screen ──
-function ChildNameScreen({ onSubmit, isLoading }) {
-  const [name, setName] = useState('');
+// prefillName: optionally pre-filled from the invite-preview call (still editable)
+function ChildNameScreen({ onSubmit, isLoading, prefillName }) {
+  const [name, setName] = useState(prefillName || '');
+
+  // If prefillName arrives asynchronously (after initial render), sync it in
+  // once — but don't overwrite a value the user has already typed.
+  const [prefillApplied, setPrefillApplied] = useState(!!prefillName);
+  React.useEffect(() => {
+    if (prefillName && !prefillApplied) {
+      setName(prefillName);
+      setPrefillApplied(true);
+    }
+  }, [prefillName, prefillApplied]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
@@ -333,6 +344,24 @@ function AuthGateReal({ children }) {
     } catch {}
   });
 
+  // Bulk invite token — captured from /invite/<token> path on first mount,
+  // BEFORE Clerk can wipe the path on redirect. Stored in sessionStorage (not
+  // localStorage) — token is one-time use and must not survive across sessions.
+  // SEPARATE from the ?invite= comp-code (localStorage 'pending-invite') which
+  // grants free access; an invite token grants NO free access.
+  // App.js reads it post-auth and routes to 'inviteClaim'.
+  const [inviteBanner, setInviteBanner] = useState(null); // { displayName } | null
+  useState(() => {
+    try {
+      const tokenMatch = window.location.pathname.match(/^\/invite\/([A-Za-z0-9-]{10,64})$/);
+      if (tokenMatch) {
+        sessionStorage.setItem('pending-invite-token', tokenMatch[1]);
+        // Clean the path so Clerk doesn't redirect to /invite/<token>
+        window.history.replaceState({}, '', '/');
+      }
+    } catch {}
+  });
+
   // Tutor signup intent — set when a visitor takes the "I'm a tutor" path
   // (landing-page link or a ?tutor=1 direct link). Stored in localStorage (not
   // sessionStorage) so it survives BOTH Clerk's signup redirect AND opening a
@@ -388,6 +417,36 @@ function AuthGateReal({ children }) {
 
   // seedLocalStorage REMOVED — D1 data loading now handled by useD1Data hook directly.
   // The hook fetches from /api/data/all on mount, with offline fallback to d1-cache.
+
+  // Child name pre-fill from invite-preview (fetched once during consent→childName step)
+  const [childNamePrefill, setChildNamePrefill] = useState(null);
+
+  // Fetch the public invite-token lookup to show a landing banner.
+  // Does NOT reveal the child's name (pre-auth privacy decision).
+  // Only runs when a pending-invite-token is in sessionStorage AND the user is not
+  // yet signed in, so the banner is visible on the landing/consent screen.
+  useEffect(() => {
+    if (isSignedIn) return; // banner only for signed-out visitors
+    let cancelled = false;
+    try {
+      const token = sessionStorage.getItem('pending-invite-token');
+      if (!token) return;
+      const url = `${API_URL}/api/tutor/public/invite/${encodeURIComponent(token)}`;
+      fetch(url)
+        .then(r => r.json())
+        .then(data => {
+          if (cancelled) return;
+          if (data.valid && data.tutor?.displayName) {
+            setInviteBanner({ displayName: data.tutor.displayName });
+          } else if (!data.valid) {
+            // Token expired or revoked — clear it now, silently
+            try { sessionStorage.removeItem('pending-invite-token'); } catch {}
+          }
+        })
+        .catch(() => {}); // non-critical — banner is cosmetic
+    } catch {}
+    return () => { cancelled = true; };
+  }, [isSignedIn]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Check if user has a D1 account + child when they sign in
   const checkAccount = useCallback(async () => {
@@ -497,6 +556,26 @@ function AuthGateReal({ children }) {
       setInviteCode(null);
 
       clearTutorIntent(); // parent account created — drop any stale tutor intent
+
+      // If an invite token is pending, call invite-preview now (authed) to
+      // pre-fill the child name. Cache result in sessionStorage for InviteClaimScreen.
+      try {
+        const pendingToken = sessionStorage.getItem('pending-invite-token');
+        if (pendingToken) {
+          const freshToken = await getToken();
+          const previewRes = await fetch(`${API_URL}/api/tutor/invite-preview`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${freshToken}` },
+            body: JSON.stringify({ token: pendingToken }),
+          });
+          const previewData = await previewRes.json().catch(() => ({}));
+          if (previewData.valid) {
+            try { sessionStorage.setItem('invite-preview', JSON.stringify(previewData)); } catch {}
+            if (previewData.childName) setChildNamePrefill(previewData.childName);
+          }
+        }
+      } catch {} // non-critical — child-name screen is still usable without prefill
+
       setOnboardingStep('childName');
     } catch (err) {
       setError(err.message);
@@ -541,15 +620,41 @@ function AuthGateReal({ children }) {
       setError(null);
       const token = await getToken();
 
-      const res = await apiFetch('/api/account/child', token, {
-        method: 'POST',
-        body: JSON.stringify({ displayName }),
-      });
+      let childId = null;
+      try {
+        const res = await apiFetch('/api/account/child', token, {
+          method: 'POST',
+          body: JSON.stringify({ displayName }),
+        });
+        childId = res?.childId || null;
+        if (childId) {
+          setChildrenList([{ id: childId, display_name: displayName }]);
+        }
+      } catch (err) {
+        // 409 means the child was already created (two-tab race). When an invite
+        // token is pending, continue idempotently by re-fetching the account.
+        // Outside the invite flow, surface the error as normal.
+        const hasPendingInvite = (() => {
+          try { return !!sessionStorage.getItem('pending-invite-token'); } catch { return false; }
+        })();
+
+        if (err.message.includes('409') && hasPendingInvite) {
+          const accountData = await apiFetch('/api/account', token);
+          const existing = accountData.children?.[0];
+          if (existing) {
+            childId = existing.id;
+            setChildrenList(accountData.children);
+          } else {
+            throw err; // unexpected — re-surface
+          }
+        } else {
+          throw err;
+        }
+      }
 
       setChildName(displayName);
-      if (res?.childId) {
-        setActiveChildId(res.childId);
-        setChildrenList([{ id: res.childId, display_name: displayName }]);
+      if (childId) {
+        setActiveChildId(childId);
       }
       // Go straight to app — no migration step for new accounts.
       setOnboardingStep('ready');
@@ -605,16 +710,24 @@ function AuthGateReal({ children }) {
       );
     }
     return (
-      <LandingPage
-        onSignIn={() => { clearTutorIntent(); setAuthView('signin'); }}
-        onSignUp={() => { clearTutorIntent(); setAuthView('signup'); }}
-        onTutorSignup={() => {
-          try { localStorage.setItem('signup-intent', 'tutor'); } catch {}
-          setSignupIntent('tutor');
-          setAuthView('signup');
-        }}
-        inviteCode={inviteCode}
-      />
+      <>
+        {/* Invite token banner — shown when a /invite/<token> link was followed */}
+        {inviteBanner && (
+          <div className="bg-[#7C3AED] text-white text-sm text-center py-2 px-4">
+            <span className="font-bold">{inviteBanner.displayName}</span> has invited your child to PrepStep — create an account to connect.
+          </div>
+        )}
+        <LandingPage
+          onSignIn={() => { clearTutorIntent(); setAuthView('signin'); }}
+          onSignUp={() => { clearTutorIntent(); setAuthView('signup'); }}
+          onTutorSignup={() => {
+            try { localStorage.setItem('signup-intent', 'tutor'); } catch {}
+            setSignupIntent('tutor');
+            setAuthView('signup');
+          }}
+          inviteCode={inviteCode}
+        />
+      </>
     );
   }
 
@@ -652,7 +765,7 @@ function AuthGateReal({ children }) {
 
   // Onboarding: child name
   if (onboardingStep === 'childName') {
-    return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} />;
+    return <ChildNameScreen onSubmit={handleChildName} isLoading={isLoading} prefillName={childNamePrefill} />;
   }
 
   // Onboarding: tutor name (their own name, no child)

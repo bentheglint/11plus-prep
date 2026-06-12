@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   ArrowLeft, Users, BookOpen, Clock, AlertCircle, CheckCircle2,
-  ChevronRight, Copy, Check, Plus, X, Trash2, MessageCircle,
-  TrendingDown, Activity, Calendar, Eye,
+  ChevronRight, ChevronDown, ChevronUp, Copy, Check, Plus, X, Trash2, MessageCircle,
+  TrendingDown, Activity, Calendar, Eye, Mail, MailPlus, RefreshCw, Link2,
 } from 'lucide-react';
 import { motion } from '../components/Motion';
 import PupilDetailScreen from './PupilDetailScreen';
@@ -150,8 +150,276 @@ function PupilRow({ pupil, onClick, isActive }) {
   );
 }
 
+// ── Status chip label + colour mappings ──
+const INVITE_STATUS_MAP = {
+  needs_review: { label: 'Awaiting approval', colour: 'bg-amber-100 text-amber-800' },
+  pending:      { label: 'Queued',             colour: 'bg-slate-100 text-slate-600' },
+  sent:         { label: 'Invited',            colour: 'bg-blue-100 text-blue-700' },
+  send_failed:  { label: 'Email failed',       colour: 'bg-red-100 text-red-700' },
+  joined:       { label: 'Joined',             colour: 'bg-green-100 text-green-700' },
+  revoked:      { label: 'Revoked',            colour: 'bg-slate-100 text-slate-500' },
+  expired:      { label: 'Expired',            colour: 'bg-slate-100 text-slate-500' },
+};
+
+const LIVE_STATUSES = new Set(['needs_review', 'pending', 'sent', 'send_failed']);
+
+// ── Invites panel ──
+function InvitesPanel({ getToken, onBulkInvite }) {
+  const [invites, setInvites] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [actionBusy, setActionBusy] = useState(null); // invite id being actioned
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    try {
+      const data = await apiFetch('/api/tutor/invites', getToken);
+      setInvites(data.invites || []);
+    } catch {
+      setInvites([]);
+    } finally {
+      setLoading(false);
+    }
+  }, [getToken]);
+
+  // Load lazily when panel opens
+  useEffect(() => {
+    if (open && invites === null) load();
+  }, [open, invites, load]);
+
+  const doResend = async (id) => {
+    setActionBusy(id);
+    try {
+      const token = await getToken();
+      const res = await fetch(`${process.env.REACT_APP_TUTOR_API_URL}/api/tutor/invites/${id}/resend`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 429) {
+        alert('You can resend tomorrow — the 24-hour cooldown hasn\'t passed yet.'); // eslint-disable-line no-alert
+        return;
+      }
+      if (!res.ok) {
+        alert(data.error || 'Couldn\'t resend. Please try again.'); // eslint-disable-line no-alert
+        return;
+      }
+      await load();
+    } finally {
+      setActionBusy(null);
+    }
+  };
+
+  const doCopyLink = async (id) => {
+    setActionBusy(id);
+    try {
+      const token = await getToken();
+      const res = await fetch(`${process.env.REACT_APP_TUTOR_API_URL}/api/tutor/invites/${id}/link`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        alert(data.error || 'Couldn\'t get the link. Please try again.'); // eslint-disable-line no-alert
+        return;
+      }
+      // The link is returned exactly once (the server wipes its copy after this
+      // call), so a failed clipboard write must surface the link, never claim success.
+      const copiedOk = await navigator.clipboard.writeText(data.link).then(() => true).catch(() => false);
+      if (copiedOk) {
+        alert('Link copied! Note: this replaces the emailed link — share it only with the parent.'); // eslint-disable-line no-alert
+      } else {
+        window.prompt('Copy this link by hand (it replaces the emailed one):', data.link); // eslint-disable-line no-alert
+      }
+      await load();
+    } finally {
+      setActionBusy(null);
+    }
+  };
+
+  const doRevoke = async (invite) => {
+    if (!window.confirm(`Revoke the invitation for ${invite.child_name} (${invite.parent_email})?`)) return; // eslint-disable-line no-alert
+    setActionBusy(invite.id);
+    try {
+      const token = await getToken();
+      const res = await fetch(`${process.env.REACT_APP_TUTOR_API_URL}/api/tutor/invites/${invite.id}`, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || 'Couldn\'t revoke. Please try again.'); // eslint-disable-line no-alert
+        return;
+      }
+      await load();
+    } finally {
+      setActionBusy(null);
+    }
+  };
+
+  // Pre-load invite count to decide whether to show the panel toggle
+  const [hasAny, setHasAny] = useState(false);
+  useEffect(() => {
+    if (!getToken) return;
+    apiFetch('/api/tutor/invites', getToken)
+      .then(d => { if ((d.invites || []).length > 0) { setHasAny(true); setInvites(d.invites); } })
+      .catch(() => {});
+  }, [getToken]);
+
+  if (!hasAny && !onBulkInvite) return null;
+
+  const needsReviewInvites = invites?.filter(i => i.status === 'needs_review') || [];
+
+  return (
+    <div className="mt-4">
+      {/* Invite pupils button */}
+      {onBulkInvite && (
+        <button
+          type="button"
+          onClick={onBulkInvite}
+          className="w-full flex items-center gap-3 mb-3 p-3.5 bg-white rounded-2xl border border-[#A29BFE] hover:border-[#7C3AED] hover:bg-[#F8F7FF] transition-colors text-left"
+        >
+          <div className="w-10 h-10 rounded-xl bg-[#F0EDFF] flex items-center justify-center flex-shrink-0">
+            <MailPlus className="w-5 h-5 text-[#7C3AED]" />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="font-bold text-slate-800 text-sm">Invite pupils by email</p>
+            <p className="text-xs text-slate-500">Send personalised invite links directly to parents.</p>
+          </div>
+          <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0" />
+        </button>
+      )}
+
+      {/* Collapsible invites panel — only shown when there are invites */}
+      {hasAny && (
+        <div className="bg-white rounded-2xl border border-slate-100 shadow-sm">
+          <button
+            type="button"
+            onClick={() => setOpen(v => !v)}
+            className="w-full flex items-center justify-between p-4 text-left"
+            aria-expanded={open}
+          >
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-slate-400" />
+              <span className="font-semibold text-slate-800 text-sm">Invitations</span>
+              {invites && (
+                <span className="text-xs text-slate-400">({invites.length})</span>
+              )}
+            </div>
+            <div className="flex items-center gap-2">
+              {!open && (
+                <button
+                  type="button"
+                  onClick={e => { e.stopPropagation(); load(); }}
+                  className="p-1 text-slate-400 hover:text-[#7C3AED] rounded"
+                  aria-label="Refresh invitations"
+                >
+                  <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
+                </button>
+              )}
+              {open ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
+            </div>
+          </button>
+
+          {open && (
+            <div className="border-t border-slate-100">
+              {loading && (
+                <div className="p-4 text-center">
+                  <RefreshCw className="w-4 h-4 text-slate-400 animate-spin mx-auto" />
+                </div>
+              )}
+
+              {!loading && invites && invites.length === 0 && (
+                <p className="p-4 text-sm text-slate-400 text-center">No invitations yet.</p>
+              )}
+
+              {!loading && needsReviewInvites.length > 0 && (
+                <div className="px-4 pt-3 pb-1">
+                  <p className="text-xs text-amber-700 bg-amber-50 rounded-lg px-3 py-2 border border-amber-100">
+                    Batches over 20 pupils are checked by PrepStep before sending — usually within 24 hours.
+                  </p>
+                </div>
+              )}
+
+              {!loading && invites && invites.map(invite => {
+                const { label, colour } = INVITE_STATUS_MAP[invite.status] || { label: invite.status, colour: 'bg-slate-100 text-slate-600' };
+                const isLive = LIVE_STATUSES.has(invite.status);
+                const canLink = ['pending', 'sent', 'send_failed'].includes(invite.status);
+                const canResend = invite.status === 'send_failed' || invite.status === 'sent';
+                const busy = actionBusy === invite.id;
+
+                return (
+                  <div key={invite.id} className="flex items-start gap-3 p-4 border-t border-slate-50">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap mb-0.5">
+                        <span className="font-medium text-slate-800 text-sm">{invite.child_name}</span>
+                        <span
+                          className={`inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full ${colour}`}
+                          role="status"
+                        >
+                          {label}
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-500 truncate">{invite.parent_email}</p>
+                      {invite.claimed_by_email && invite.claimed_by_email !== invite.parent_email && (
+                        <p className="text-xs text-amber-700 mt-0.5">
+                          Joined with a different email: {invite.claimed_by_email}
+                        </p>
+                      )}
+                    </div>
+
+                    {/* Row actions */}
+                    <div className="flex items-center gap-1 flex-shrink-0">
+                      {canLink && (
+                        <button
+                          type="button"
+                          onClick={() => doCopyLink(invite.id)}
+                          disabled={busy}
+                          className="p-1.5 text-slate-400 hover:text-[#7C3AED] rounded-lg transition-colors"
+                          title="Copy invite link"
+                          aria-label="Copy invite link"
+                        >
+                          <Link2 className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                      {canResend && (
+                        <button
+                          type="button"
+                          onClick={() => doResend(invite.id)}
+                          disabled={busy}
+                          className="p-1.5 text-slate-400 hover:text-[#7C3AED] rounded-lg transition-colors"
+                          title="Resend invitation"
+                          aria-label="Resend invitation"
+                        >
+                          <Mail className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                      {isLive && (
+                        <button
+                          type="button"
+                          onClick={() => doRevoke(invite)}
+                          disabled={busy}
+                          className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg transition-colors"
+                          title="Revoke invitation"
+                          aria-label="Revoke invitation"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Empty state ──
-function EmptyState({ tutor, getToken, onViewMessages }) {
+function EmptyState({ tutor, getToken, onViewMessages, onBulkInvite }) {
   const [copied, setCopied] = useState(false);
   const inviteUrl = `https://prepstep.co.uk/join/${tutor?.tutor_code}`;
 
@@ -171,6 +439,22 @@ function EmptyState({ tutor, getToken, onViewMessages }) {
       <p className="text-slate-500 text-sm max-w-xs mb-6">
         Send this link to your pupils' parents. When they sign up via your link, they appear in your pupil list automatically.
       </p>
+
+      {/* Bulk invite entry point — primary action in empty state */}
+      {onBulkInvite && (
+        <button
+          type="button"
+          onClick={onBulkInvite}
+          className="w-full max-w-sm flex items-center gap-3 mb-4 p-3.5 bg-[#7C3AED] text-white rounded-2xl hover:bg-[#6D28D9] transition-colors text-left"
+        >
+          <MailPlus className="w-5 h-5 flex-shrink-0" />
+          <div className="min-w-0">
+            <p className="font-bold text-sm">Invite pupils by email</p>
+            <p className="text-white/80 text-xs">Send personalised links directly to parents</p>
+          </div>
+          <ChevronRight className="w-4 h-4 flex-shrink-0 ml-auto" />
+        </button>
+      )}
 
       <div className="w-full max-w-sm bg-[#F8F7FF] rounded-xl border border-[#E8E5FF] p-3 flex items-center gap-2 mb-4">
         <span className="flex-1 text-sm text-[#7C3AED] font-mono truncate">{inviteUrl}</span>
@@ -383,7 +667,7 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
 const SPLIT_BREAKPOINT = 1024;
 
 // ── Main dashboard ──
-export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail, onPreview }) {
+export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetail, onViewAssignmentDetail, onPreview, onBulkInvite }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -610,7 +894,7 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
 
       {/* Empty state */}
       {!loading && !error && roster.length === 0 && tutor && (
-        <EmptyState tutor={tutor} getToken={getToken} onViewMessages={() => setShowMessaging(true)} />
+        <EmptyState tutor={tutor} getToken={getToken} onViewMessages={() => setShowMessaging(true)} onBulkInvite={onBulkInvite} />
       )}
 
       {/* Main content */}
@@ -729,6 +1013,11 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
               </div>
             </div>
           )}
+
+          {/* Invites panel — collapsible, lazy-loaded */}
+          {getToken && (
+            <InvitesPanel getToken={getToken} onBulkInvite={onBulkInvite} />
+          )}
         </motion.div>
       )}
     </>
@@ -759,10 +1048,20 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
                 )}
               </div>
             </div>
-            <button type="button" onClick={() => setShowMessaging(true)}
-              className="p-2 text-slate-400 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors">
-              <MessageCircle className="w-4 h-4" />
-            </button>
+            <div className="flex items-center gap-1">
+              {onBulkInvite && (
+                <button type="button" onClick={onBulkInvite}
+                  className="p-2 text-slate-400 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors"
+                  title="Invite pupils by email"
+                  aria-label="Invite pupils by email">
+                  <MailPlus className="w-4 h-4" />
+                </button>
+              )}
+              <button type="button" onClick={() => setShowMessaging(true)}
+                className="p-2 text-slate-400 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors">
+                <MessageCircle className="w-4 h-4" />
+              </button>
+            </div>
           </div>
 
           {/* Scrollable panel content */}
@@ -855,10 +1154,20 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
               )}
             </div>
           </div>
-          <button type="button" onClick={() => setShowMessaging(true)}
-            className="p-2 text-slate-500 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors">
-            <MessageCircle className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-1">
+            {onBulkInvite && (
+              <button type="button" onClick={onBulkInvite}
+                className="p-2 text-slate-500 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors"
+                title="Invite pupils by email"
+                aria-label="Invite pupils by email">
+                <MailPlus className="w-5 h-5" />
+              </button>
+            )}
+            <button type="button" onClick={() => setShowMessaging(true)}
+              className="p-2 text-slate-500 hover:text-[#7C3AED] hover:bg-[#F8F7FF] rounded-xl transition-colors">
+              <MessageCircle className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         <div className="px-4 pb-8">
