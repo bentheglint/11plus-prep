@@ -35,7 +35,7 @@ import useD1Data from './hooks/useD1Data';
 import useAchievements from './hooks/useAchievements';
 import AchievementModal from './components/AchievementModal';
 import { topicNames } from './components/RecommendationCard';
-import useMastery from './hooks/useMastery';
+import useMastery, { ALL_TOPIC_KEYS } from './hooks/useMastery';
 import useStreaksAndPP from './hooks/useStreaksAndPP';
 // Question data for maths/English/VR is lazy-loaded by AppLoader and passed
 // in as the `loadedData` prop — keeps each subject's ~1–2 MB payload out of
@@ -61,7 +61,7 @@ import JoinScreen from './screens/JoinScreen';
 import TutorSignupScreen from './screens/TutorSignupScreen';
 import TutorDashboardScreen from './screens/TutorDashboardScreen';
 import { ParentMessagingScreen } from './screens/MessagingScreen';
-import { selectWelcomeBackTip } from './utils/tipSelection';
+import { selectWelcomeBackTip, buildMasteryMap } from './utils/tipSelection';
 
 // Visual component map for rendering diagrams on quiz question screens
 const quizVisualComponents = {
@@ -455,7 +455,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
       return;
     }
     // 2+ days away: find a tip to resurface
-    const tip = selectWelcomeBackTip(allTips, userData.seenTips, topicPerformance);
+    const tip = selectWelcomeBackTip(allTips, userData.seenTips, buildMasteryMap(mastery, ALL_TOPIC_KEYS));
     if (tip) {
       setWelcomeBackTip(tip);
       setShowWelcomeBack(true);
@@ -1907,6 +1907,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         seenTips={userData.seenTipIds}
         onMarkSeen={userData.markTipSeen}
         topicPerformance={topicPerformance}
+        mastery={mastery}
         lessonBank={lessonBank}
         lessonHistory={lessonHistory}
         onLaunchLesson={handleToolkitLessonLaunch}
@@ -1926,6 +1927,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       <TopicsScreen
         subject={questionData[selectedSubject]}
         topicPerformance={topicPerformance}
+        mastery={mastery}
         onTopicSelect={handleTopicSelect}
         onBack={() => setCurrentView('learningMode')}
         onHome={handleHome}

@@ -3,12 +3,15 @@ import { useMemo } from 'react';
 // Mastery scoring engine with decay, trends, exam readiness, and recommendations
 // Computed on every render from questionResults — no background process needed
 
-// All 38 topic keys grouped by subject
+// All 39 topic keys grouped by subject
 const SUBJECT_TOPICS = {
   maths: ['percentages', 'decimals', 'longdivision', 'ratio', 'fractions', 'longmultiplication', 'algebra', 'placevalue', 'negativenumbers', 'primenumbersfactors', 'areaperimeter', 'volume', 'anglesshapes', 'sequences', 'datahandling', 'speeddistancetime'],
   english: ['comprehension', 'spelling', 'punctuation', 'grammar', 'vocabulary', 'wordClassGrammar'],
-  verbalreasoning: ['synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes', 'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies', 'numberWordCodes', 'logicAndLanguage', 'sharedLetter'],
+  verbalreasoning: ['synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut', 'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords', 'letterCodes', 'letterPairSeries', 'numberSeries', 'letterSums', 'wordCodeAnalogies', 'numberWordCodes', 'logicAndLanguage', 'sharedLetter', 'balanceEquations'],
 };
+
+// Flat list of all topic keys — single source of truth for consumers iterating topics
+export const ALL_TOPIC_KEYS = Object.values(SUBJECT_TOPICS).flat();
 
 function getSubjectForTopic(topicKey) {
   for (const [subject, topics] of Object.entries(SUBJECT_TOPICS)) {
@@ -67,6 +70,8 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
         trend: { direction: 'stable', delta: 0 },
         lastPracticed: null, daysSince: Infinity,
         totalQuestions: 0, recentAccuracy: 0,
+        recentCount: 0,
+        bestStars: 0, bestLabel: 'Not started',
       };
     }
 
@@ -122,6 +127,26 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
       }
     });
 
+    // High-water mastery band: replay chronological, rolling window of last 30,
+    // compute score decay-free (no recency factor), track the best stars ever reached.
+    const chronological = [...results].sort((a, b) => new Date(a.date) - new Date(b.date));
+    let hwWindow = [];
+    let hwBestStars = 0;
+    let hwBestLabel = 'Not started';
+    for (let i = 0; i < chronological.length; i++) {
+      hwWindow.push(chronological[i]);
+      if (hwWindow.length > 30) hwWindow.shift();
+      const hwCorrect = hwWindow.filter(r => r.correct).length;
+      const hwAccuracy = hwCorrect / hwWindow.length;
+      const hwVolume = Math.min(1.0, (i + 1) / 20);
+      const hwScore = Math.round(hwAccuracy * hwVolume * 100);
+      const hwLevel = getMasteryLevel(hwScore);
+      if (hwLevel.stars > hwBestStars) {
+        hwBestStars = hwLevel.stars;
+        hwBestLabel = hwLevel.label;
+      }
+    }
+
     return {
       score,
       ...level,
@@ -130,6 +155,9 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
       daysSince,
       totalQuestions: results.length,
       recentAccuracy: Math.round(rawAccuracy * 100),
+      recentCount: recent30.length,
+      bestStars: hwBestStars,
+      bestLabel: hwBestLabel,
       avgTimeMs,
       diffBreakdown,
     };

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { ALL_TOPIC_KEYS } from '../../hooks/useMastery';
 import { BookOpen, ChevronDown, ChevronRight, ArrowLeft } from 'lucide-react';
 
 // Category display config
@@ -51,18 +52,25 @@ function ParentGuidance({ guides, mastery, userData }) {
     if (!guides || guides.length === 0) return null;
 
     // Check contextual triggers
-    const topicPerformance = userData?.topicPerformance || {};
     const practiceLog = userData?.practiceLog || [];
+    const topicPerformance = userData?.topicPerformance || {};
 
-    // Check for low-scoring topics (any topic below 50%)
-    const hasLowScore = Object.values(topicPerformance).some(
-      t => t.total >= 5 && (t.correct / t.total) < 0.5
-    );
+    // Check for low-scoring topics: any topic with recentCount >= 10 and recent accuracy < 50%
+    // Gate is on the recent window to avoid noise from a few wrong answers in a large history.
+    const hasLowScore = mastery
+      ? ALL_TOPIC_KEYS.some(key => {
+          const m = mastery.getTopicMastery(key);
+          return m.recentCount >= 10 && (m.recentAccuracy / 100) < 0.5;
+        })
+      : false;
 
-    // Check for high-scoring topics (any topic above 90%)
-    const hasHighScore = Object.values(topicPerformance).some(
-      t => t.total >= 10 && (t.correct / t.total) > 0.9
-    );
+    // Check for high-scoring topics: any topic with recentCount >= 10 and recent accuracy > 90%
+    const hasHighScore = mastery
+      ? ALL_TOPIC_KEYS.some(key => {
+          const m = mastery.getTopicMastery(key);
+          return m.recentCount >= 10 && (m.recentAccuracy / 100) > 0.9;
+        })
+      : false;
 
     // Check for inactivity (no practice in last 5 days)
     const lastPractice = practiceLog.length > 0
@@ -101,7 +109,7 @@ function ParentGuidance({ guides, mastery, userData }) {
 
     // Fallback: random guide
     return guides[Math.floor(Math.random() * guides.length)];
-  }, [guides, userData]);
+  }, [guides, userData, mastery]);
 
   // Group guides by category for browsing
   const groupedGuides = useMemo(() => {

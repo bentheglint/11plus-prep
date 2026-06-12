@@ -163,10 +163,10 @@ describe('useMastery hook', () => {
     expect(result.current.getTopicMastery('percentages').trend.direction).toBe('down');
   });
 
-  it('getAllMastery returns entries for all 38 topics', () => {
+  it('getAllMastery returns entries for all 39 topics', () => {
     const { result } = renderHook(() => useMastery([], [], []));
     const all = result.current.getAllMastery();
-    expect(Object.keys(all).length).toBe(38);
+    expect(Object.keys(all).length).toBe(39);
   });
 
   it('getSubjectMastery averages across all subject topics', () => {

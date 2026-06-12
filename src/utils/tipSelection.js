@@ -2,15 +2,53 @@
 // Used by: ResultsScreen, QuizScreen (post-question), PreQuizTip, WelcomeBack, StudyToolkit
 
 /**
- * Get the user's weakest topics by performance percentage.
- * Only considers topics with at least `minAttempts` questions answered.
+ * Build a mastery map suitable for tip-selection from a mastery hook return.
+ * masteryHook = the return value of useMastery (has getTopicMastery).
+ * allTopicKeys = ALL_TOPIC_KEYS from useMastery.
  */
-export function getWeakTopics(topicPerformance, count = 3, minAttempts = 5) {
-  return Object.entries(topicPerformance || {})
-    .filter(([, data]) => data.total >= minAttempts)
-    .sort((a, b) => (a[1].correct / a[1].total) - (b[1].correct / b[1].total))
-    .slice(0, count)
-    .map(([key]) => key);
+export function buildMasteryMap(masteryHook, allTopicKeys) {
+  const map = {};
+  for (const key of allTopicKeys) {
+    const m = masteryHook.getTopicMastery(key);
+    map[key] = {
+      recentAccuracy: m.recentAccuracy / 100,   // normalise to 0-1
+      recentCount: m.recentCount,
+      daysSince: m.daysSince,
+      bestStars: m.bestStars,
+    };
+  }
+  return map;
+}
+
+/**
+ * Get the user's weakest / stale-but-once-strong topics from mastery data.
+ *
+ * masteryByTopic: { [topicKey]: { recentAccuracy, recentCount, daysSince, bestStars } }
+ * count: max topics to return (default 3)
+ *
+ * A topic qualifies ONLY if:
+ *   - struggling: recentCount >= 5 && recentAccuracy < 0.6, OR
+ *   - stale-once-strong: daysSince > 14 && bestStars >= 3
+ *
+ * Ranking: struggling first (ascending recentAccuracy), then stale (descending daysSince).
+ * An empty result is valid — early-journey children must not see spurious weak topics.
+ */
+export function getWeakTopics(masteryByTopic, count = 3) {
+  const struggling = [];
+  const stale = [];
+
+  for (const [key, m] of Object.entries(masteryByTopic || {})) {
+    if (m.recentCount >= 5 && m.recentAccuracy < 0.6) {
+      struggling.push([key, m]);
+    } else if (m.daysSince > 14 && m.bestStars >= 3) {
+      stale.push([key, m]);
+    }
+  }
+
+  struggling.sort((a, b) => a[1].recentAccuracy - b[1].recentAccuracy);
+  stale.sort((a, b) => b[1].daysSince - a[1].daysSince);
+
+  return [...struggling, ...stale].slice(0, count).map(([key]) => key);
 }
 
 /**
@@ -151,8 +189,11 @@ export function selectPreQuizTip(mode, topicKey, allTips, seenTips) {
 /**
  * Select a tip for the Welcome Back screen.
  * Finds tips seen 7+ days ago, prioritised by overlap with weakest topics.
+ *
+ * masteryByTopic: { [topicKey]: { recentAccuracy, recentCount, daysSince, bestStars } }
+ * (build with buildMasteryMap — same shape accepted by getWeakTopics)
  */
-export function selectWelcomeBackTip(allTips, seenTips, topicPerformance) {
+export function selectWelcomeBackTip(allTips, seenTips, masteryByTopic) {
   // Find tips seen at least 7 days ago
   const now = Date.now();
   const oldEnough = seenTips.filter(entry => {
@@ -171,7 +212,7 @@ export function selectWelcomeBackTip(allTips, seenTips, topicPerformance) {
   if (oldTips.length === 0) return null;
 
   // Prioritise by weak topics
-  const weakTopics = getWeakTopics(topicPerformance, 3);
+  const weakTopics = getWeakTopics(masteryByTopic, 3);
   const weakSet = new Set(weakTopics);
 
   const weakRelevant = oldTips.filter(t =>

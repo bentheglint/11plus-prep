@@ -1,39 +1,98 @@
 import React from 'react';
-import { ChevronRight, Star, Crown, Rocket, Target, Wrench, ArrowLeft, Home } from 'lucide-react';
+import { ChevronRight, Star, ArrowLeft, Home } from 'lucide-react';
 
-function getTopicBadge(pct) {
-  if (pct >= 90) return { label: 'Jedi Master', icon: Crown, color: 'text-[#F59E0B]', bg: 'bg-[#FDCB6E]/20' };
-  if (pct >= 70) return { label: 'Space Captain', icon: Rocket, color: 'text-[#3B82F6]', bg: 'bg-[#3B82F6]/10' };
-  if (pct >= 50) return { label: 'Star Cadet', icon: Star, color: 'text-[#7C3AED]', bg: 'bg-[#7C3AED]/10' };
-  if (pct >= 30) return { label: 'Rocket Rookie', icon: Wrench, color: 'text-[#F59E0B]', bg: 'bg-[#F59E0B]/10' };
-  return { label: 'Launch Pad', icon: Target, color: 'text-slate-500', bg: 'bg-gray-100' };
+function StarRow({ count, label }) {
+  return (
+    <div className="flex items-center gap-1.5 mt-1">
+      {Array.from({ length: 5 }, (_, i) => (
+        <Star
+          key={i}
+          className={`w-4 h-4 ${i < count ? 'text-[#F59E0B] fill-[#F59E0B]' : 'text-slate-200 fill-slate-200'}`}
+        />
+      ))}
+      <span className="text-sm font-semibold text-slate-600 ml-1">{label}</span>
+    </div>
+  );
 }
 
-function TopicCard({ title, performance, onClick }) {
-  let perfDisplay = null;
-  let perfPct = null;
-  let perfBarColor = '#EDE8FF';
-  if (performance) {
-    if (performance.total >= 5) {
-      const pct = Math.round((performance.correct / performance.total) * 100);
-      perfPct = pct;
-      perfBarColor = pct >= 70 ? '#22C55E' : pct >= 40 ? '#FDCB6E' : '#FF6B6B';
-      const pctColor = pct >= 70 ? 'text-[#22C55E]' : pct >= 40 ? 'text-[#F59E0B]' : 'text-[#FF6B6B]';
-      const badge = getTopicBadge(pct);
-      const BadgeIcon = badge.icon;
-      perfDisplay = (
-        <div className="flex items-center gap-2 mt-1">
-          <span className={`text-sm font-bold ${pctColor}`}>{pct}%</span>
-          <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${badge.bg} ${badge.color} flex items-center gap-1`}>
-            <BadgeIcon className="w-3 h-3" />
-            {badge.label}
-          </span>
-        </div>
-      );
-    } else {
-      perfDisplay = <p className="text-sm text-slate-500 mt-1">Not enough data</p>;
-    }
+/**
+ * Derive the display state for a topic card given mastery + topicPerformance data.
+ * Exported as a pure function so it can be unit-tested independently.
+ *
+ * Returns one of:
+ *   { state: 'not-started' }
+ *   { state: 'has-mastery', bestStars, bestLabel, daysSince, volume }
+ *   { state: 'lifetime-only', daysSince, volume }   ← lifetime>0, no recent rows
+ *   { state: 'mastery-no-volume', bestStars, bestLabel, daysSince }
+ */
+export function deriveTopicCardState(m, tp) {
+  const hasRecentRows = m.totalQuestions > 0;
+  const hasLifetimeVolume = tp && tp.total > 0;
+
+  if (!hasRecentRows && !hasLifetimeVolume) {
+    return { state: 'not-started' };
   }
+
+  // Lifetime tally can lag behind local rows while the sync queue is offline —
+  // never show a smaller count than the questions we can see locally.
+  const volume = Math.max(tp ? tp.total : 0, hasRecentRows ? m.totalQuestions : 0);
+
+  if (hasRecentRows && tp) {
+    return { state: 'has-mastery', bestStars: m.bestStars, bestLabel: m.bestLabel, daysSince: m.daysSince, volume };
+  }
+
+  if (hasRecentRows && !tp) {
+    return { state: 'mastery-no-volume', bestStars: m.bestStars, bestLabel: m.bestLabel, daysSince: m.daysSince };
+  }
+
+  // !hasRecentRows but hasLifetimeVolume — precedence rule: never show 'Not started'
+  return { state: 'lifetime-only', daysSince: m.daysSince, volume: tp.total };
+}
+
+function RevisitChip() {
+  return (
+    <span className="inline-flex items-center text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 mt-1.5">
+      Time to revisit
+    </span>
+  );
+}
+
+function TopicCard({ title, mastery, topicPerf, onClick }) {
+  const cardState = deriveTopicCardState(mastery, topicPerf);
+  const stale = cardState.daysSince !== undefined && cardState.daysSince > 14;
+
+  let perfDisplay = null;
+  let accentColor = '#EDE8FF';
+
+  if (cardState.state === 'not-started') {
+    perfDisplay = <p className="text-sm text-slate-500 mt-1">Not started</p>;
+  } else if (cardState.state === 'has-mastery') {
+    accentColor = cardState.bestStars >= 4 ? '#22C55E' : cardState.bestStars >= 3 ? '#FDCB6E' : '#A29BFE';
+    perfDisplay = (
+      <div>
+        <StarRow count={cardState.bestStars} label={cardState.bestLabel} />
+        {stale && <RevisitChip />}
+        <p className="text-xs text-slate-500 mt-1">{cardState.volume} questions answered</p>
+      </div>
+    );
+  } else if (cardState.state === 'mastery-no-volume') {
+    accentColor = cardState.bestStars >= 4 ? '#22C55E' : cardState.bestStars >= 3 ? '#FDCB6E' : '#A29BFE';
+    perfDisplay = (
+      <div>
+        <StarRow count={cardState.bestStars} label={cardState.bestLabel} />
+        {stale && <RevisitChip />}
+      </div>
+    );
+  } else if (cardState.state === 'lifetime-only') {
+    accentColor = '#FDCB6E';
+    perfDisplay = (
+      <div>
+        <RevisitChip />
+        <p className="text-xs text-slate-500 mt-1">{cardState.volume} questions answered</p>
+      </div>
+    );
+  }
+
   return (
     <button
       onClick={onClick}
@@ -41,7 +100,7 @@ function TopicCard({ title, performance, onClick }) {
     >
       <div
         className="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl"
-        style={{ background: perfPct !== null ? perfBarColor : '#EDE8FF' }}
+        style={{ background: accentColor }}
       />
       <div className="text-left pl-3">
         <h4 className="text-xl font-heading font-bold text-slate-800 mb-1">{title}</h4>
@@ -52,18 +111,9 @@ function TopicCard({ title, performance, onClick }) {
   );
 }
 
-function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack, onHome }) {
+function TopicsScreen({ subject, topicPerformance, mastery, onTopicSelect, onBack, onHome }) {
+  // Canonical definition order — stable spatial layout for the child
   const topicEntries = Object.entries(subject.topics);
-  const sortedTopics = [...topicEntries].sort((a, b) => {
-    const perfA = topicPerformance[a[0]];
-    const perfB = topicPerformance[b[0]];
-    const tierOf = (p) => !p ? 0 : p.total < 5 ? 1 : 2;
-    const tierA = tierOf(perfA);
-    const tierB = tierOf(perfB);
-    if (tierA !== tierB) return tierA - tierB;
-    if (tierA === 2) return (perfA.correct / perfA.total) - (perfB.correct / perfB.total);
-    return 0;
-  });
 
   return (
     <div className="app-bg p-4">
@@ -92,11 +142,12 @@ function TopicsScreen({ subject, topicPerformance, onTopicSelect, onBack, onHome
         </div>
 
         <div className="space-y-4">
-          {sortedTopics.map(([key, topic]) => (
+          {topicEntries.map(([key, topic]) => (
             <TopicCard
               key={key}
               title={topic.name}
-              performance={topicPerformance[key]}
+              mastery={mastery ? mastery.getTopicMastery(key) : { totalQuestions: 0, daysSince: Infinity, bestStars: 0, bestLabel: 'Not started' }}
+              topicPerf={topicPerformance ? topicPerformance[key] : undefined}
               onClick={() => onTopicSelect(key)}
             />
           ))}

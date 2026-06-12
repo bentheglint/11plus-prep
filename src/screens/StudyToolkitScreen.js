@@ -2,9 +2,10 @@ import React, { useState, useMemo } from 'react';
 import { ArrowLeft, Lightbulb, Sparkles, BookOpen, Home } from 'lucide-react';
 import TipCard from '../components/TipCard';
 import LessonBrowser from '../components/LessonBrowser';
-import { getWeakTopics } from '../utils/tipSelection';
+import { getWeakTopics, buildMasteryMap } from '../utils/tipSelection';
+import { ALL_TOPIC_KEYS } from '../hooks/useMastery';
 
-function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerformance, lessonBank, lessonHistory, onLaunchLesson, toolkitLessonsViewed, onStartQuiz, onBack, onHome }) {
+function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerformance, mastery, lessonBank, lessonHistory, onLaunchLesson, toolkitLessonsViewed, onStartQuiz, onBack, onHome }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showIntro, setShowIntro] = useState(true);
   const [activeTab, setActiveTab] = useState('tips');
@@ -20,7 +21,8 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
     const seenSet = new Set(seenTips || []);
 
     // Find child's weakest topics for relevance-based sorting
-    const weakTopics = getWeakTopics(topicPerformance, 3);
+    const masteryMap = mastery ? buildMasteryMap(mastery, ALL_TOPIC_KEYS) : {};
+    const weakTopics = getWeakTopics(masteryMap, 3);
     const weakSet = new Set(weakTopics);
 
     // 3-tier sort: unseen+weak-relevant (3), unseen (2), seen+weak-relevant (1), seen (0)
@@ -36,7 +38,7 @@ function StudyToolkitScreen({ subject, tips, seenTips, onMarkSeen, topicPerforma
 
     scored.sort((a, b) => b.score - a.score);
     return scored.map(s => s.tip);
-  }, [tips, subject, seenTips, topicPerformance]);
+  }, [tips, subject, seenTips, mastery]);
 
   const unseenCount = useMemo(() => {
     const seenSet = new Set(seenTips || []);
