@@ -114,6 +114,16 @@ async function requireAdmin(request, env) {
   return auth;
 }
 
+// Client-reported strings can carry bearer secrets in URLs: /invite/<token>
+// and /join/<code> path segments, and ?invite=CODE comp codes. Redact before
+// any logging or persistence — the error dashboard must never hold a live link.
+export function redactSecretUrls(value) {
+  if (typeof value !== 'string') return value;
+  return value
+    .replace(/\/(invite|join)\/[^/?#\s]+/gi, '/$1/[redacted]')
+    .replace(/([?&]invite=)[^&#\s]*/gi, '$1[redacted]');
+}
+
 // Tutor gate. Checks that the caller has an existing tutors row (i.e. has
 // completed signup). Revoking a tutor = deleting their tutors row.
 async function requireTutorProfile(request, env) {
@@ -371,9 +381,9 @@ const worker = {
         if (limited) return limited;
         const body = await request.json();
         const entry = {
-          message: body.message,
-          stack: body.stack?.substring(0, 500),
-          url: body.url,
+          message: redactSecretUrls(body.message),
+          stack: redactSecretUrls(body.stack?.substring(0, 500)),
+          url: redactSecretUrls(body.url),
           user: body.user,
           source: body.source,
           timestamp: body.timestamp,
@@ -395,8 +405,12 @@ const worker = {
         return json({ ok: true });
       }
 
-      // Recent errors read — public (dashboard surfaces this)
+      // Recent errors read — admin only. Reports carry full client URLs,
+      // which can include bearer secrets; serving them unauthenticated
+      // would leak live invite/join links to anyone.
       if (path === '/errors' && request.method === 'GET') {
+        const admin = await requireAdmin(request, env);
+        if (admin.error) return admin.error;
         const raw = await env.TESTING_FLAGS.get('recent-errors');
         return json(raw ? JSON.parse(raw) : []);
       }

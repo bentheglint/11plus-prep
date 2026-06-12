@@ -14,15 +14,29 @@ export default function ErrorDashboardScreen({ onBack, getToken }) {
   const [errors, setErrors] = useState(null);
   const [userFilter, setUserFilter] = useState('all');
   const [loading, setLoading] = useState(false);
+  const [denied, setDenied] = useState(false);
 
-  const load = () => {
+  const load = async () => {
     if (!API_URL) return;
     setLoading(true);
-    fetch(`${API_URL}/errors`)
-      .then(r => r.json())
-      .then(data => setErrors(Array.isArray(data) ? data : []))
-      .catch(() => setErrors([]))
-      .finally(() => setLoading(false));
+    setDenied(false);
+    try {
+      const token = getToken ? await getToken() : null;
+      const r = await fetch(`${API_URL}/errors`, {
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+      });
+      if (r.status === 401 || r.status === 403) {
+        setDenied(true);
+        setErrors([]);
+        return;
+      }
+      const data = await r.json();
+      setErrors(Array.isArray(data) ? data : []);
+    } catch {
+      setErrors([]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => { load(); }, []);
@@ -99,7 +113,14 @@ export default function ErrorDashboardScreen({ onBack, getToken }) {
           </div>
         )}
 
-        {errors === null ? (
+        {denied ? (
+          <div className="text-center py-12">
+            <p className="text-slate-700 font-medium">Admin sign-in required</p>
+            <p className="text-sm text-gray-500 mt-1">
+              Error reports can contain sensitive URLs, so this dashboard is restricted to admin accounts.
+            </p>
+          </div>
+        ) : errors === null ? (
           <div className="text-center py-12 text-gray-400">Loading...</div>
         ) : filtered.length === 0 ? (
           <div className="text-center py-12">

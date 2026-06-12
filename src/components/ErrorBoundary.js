@@ -16,6 +16,15 @@ const MAX_REPORTS_PER_SESSION = 10;
 let reportCount = 0;
 const seenErrors = new Set();
 
+// URLs can carry bearer secrets (/invite/<token>, /join/<code>, ?invite=CODE).
+// Redact before they leave the device — the Worker redacts again on receipt.
+export function redactSecretUrls(value) {
+  if (typeof value !== 'string') return value;
+  return value
+    .replace(/\/(invite|join)\/[^/?#\s]+/gi, '/$1/[redacted]')
+    .replace(/([?&]invite=)[^&#\s]*/gi, '$1[redacted]');
+}
+
 // Report errors to the Worker for monitoring (fire-and-forget).
 // Exported so the load-path fallback in useD1Data can call it directly.
 export function reportError(error, context = {}) {
@@ -29,9 +38,9 @@ export function reportError(error, context = {}) {
     reportCount += 1;
 
     const payload = {
-      message,
-      stack: error?.stack?.substring(0, 2000),
-      url: window.location.href,
+      message: redactSecretUrls(message),
+      stack: redactSecretUrls(error?.stack?.substring(0, 2000)),
+      url: redactSecretUrls(window.location.href),
       userAgent: navigator.userAgent,
       timestamp: new Date().toISOString(),
       user: localStorage.getItem('current-user') || 'unknown',
