@@ -16,8 +16,9 @@ const MAX_REPORTS_PER_SESSION = 10;
 let reportCount = 0;
 const seenErrors = new Set();
 
-// Report errors to the Worker for monitoring (fire-and-forget)
-function reportError(error, context = {}) {
+// Report errors to the Worker for monitoring (fire-and-forget).
+// Exported so the load-path fallback in useD1Data can call it directly.
+export function reportError(error, context = {}) {
   if (!API_URL) return;
   if (reportCount >= MAX_REPORTS_PER_SESSION) return;
   try {

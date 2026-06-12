@@ -7,8 +7,9 @@ import RecommendationCard from '../components/RecommendationCard';
 import AssignmentBanner from '../components/AssignmentBanner';
 import { BookOpen as LessonsIcon } from 'lucide-react';
 import { isSpeedReviewAllowlisted } from '../utils/tutorAllowlist';
+import OfflineDataBanner from '../components/OfflineDataBanner';
 
-function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment }) {
+function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment, loadState, onRetry }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
@@ -118,6 +119,9 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
           </h1>
           <p className="text-slate-500 text-sm mt-1">What shall we work on today?</p>
         </motion.div>
+
+        {/* Offline data banner — shown when the load path fell back to cache or failed */}
+        <OfflineDataBanner loadState={loadState} onRetry={onRetry} />
 
         {/* Assignment banner — only shown when a tutor has set an active assignment */}
         {activeChildId && getToken && (

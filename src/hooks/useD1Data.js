@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import * as Sentry from '@sentry/react';
 import { createSyncQueue } from '../utils/syncQueue';
 import { recomputeStreakFromHistory, calculateLevel } from './useStreaksAndPP';
+import { reportError } from '../components/ErrorBoundary';
 
 // ── D1-First Data Hook ──
 // Replaces useUserData. Same return API, different internals.
@@ -480,6 +481,54 @@ export async function apiFetch(path, getToken, timeoutMs = API_FETCH_TIMEOUT_MS)
   }
 }
 
+// ── Classified fetch for the load path ──
+// Returns { data, failureClass, status } where:
+//   failureClass: 'http-4xx' | 'http-5xx' | 'network' | 'timeout' | 'exception' | null
+//   status: HTTP status number or null
+//   data: parsed JSON or null
+// 4xx → failureClass 'http-4xx' (auth/permission — must NOT trigger cache fallback banner)
+// 5xx → failureClass 'http-5xx'
+// AbortError (timeout) → 'timeout'
+// Other network error → 'network'
+// Exception getting token / JSON parse → 'exception'
+export async function apiFetchClassified(path, getToken, timeoutMs = API_FETCH_TIMEOUT_MS) {
+  if (!getToken) return { data: null, failureClass: 'exception', status: null };
+  if (!API_URL) return { data: null, failureClass: 'exception', status: null };
+  let token;
+  try {
+    token = await getToken();
+    if (!token) return { data: null, failureClass: 'exception', status: null };
+  } catch {
+    return { data: null, failureClass: 'exception', status: null };
+  }
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    let res;
+    try {
+      res = await fetch(`${API_URL}${path}`, {
+        headers: { Authorization: `Bearer ${token}` },
+        signal: controller.signal,
+      });
+    } catch (err) {
+      const isAbort = err && (err.name === 'AbortError' || err.name === 'TimeoutError');
+      return { data: null, failureClass: isAbort ? 'timeout' : 'network', status: null };
+    }
+    if (!res.ok) {
+      const failureClass = res.status >= 500 ? 'http-5xx' : 'http-4xx';
+      console.warn(`[useD1Data] apiFetchClassified ${path}: ${res.status}`);
+      return { data: null, failureClass, status: res.status };
+    }
+    const data = await res.json().catch(() => null);
+    return { data, failureClass: null, status: res.status };
+  } catch (err) {
+    const isAbort = err && (err.name === 'AbortError' || err.name === 'TimeoutError');
+    return { data: null, failureClass: isAbort ? 'timeout' : 'exception', status: null };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 // Check if legacy localStorage has data that hasn't been migrated to D1
 function hasLegacyData(userName) {
   return !!(
@@ -556,6 +605,16 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const batchingRef = useRef(false);
   const syncQueueRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
+  // 'server' | 'cache' | 'failed-no-cache' | null
+  // null = not yet resolved; set at the end of the first loadData run.
+  const [loadState, setLoadState] = useState(null);
+  // Stable ref so the online listener can read the latest value without
+  // needing to be in the effect dependency array.
+  const loadStateRef = useRef(null);
+  // Stable ref to the latest loadData function — set inside the load effect
+  // so retryLoad() always re-runs the current closure (correct userName, getToken etc.)
+  // without loadDataRef itself being a dep of the online listener effect.
+  const loadDataRef = useRef(null);
 
   // Refs for current state values — used to compute deltas without stale-closure risk.
   // Updated synchronously alongside setState calls.
@@ -650,6 +709,8 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     setLeitnerQueue(DEFAULTS.leitnerQueue);
     leitnerQueueRef.current = [];
     setLoaded(false);
+    setLoadState(null);
+    loadStateRef.current = null;
     versionsRef.current = { streaks: 1, prepPoints: 1, preferences: 1 };
     lastSyncedRef.current = null;
     enqueuedPPTotalRef.current = 0;
@@ -684,10 +745,28 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
     let cancelled = false;
 
+    // ── reportFallback: fire-once-per-session error report for load-path failures ──
+    // Uses sessionStorage so StrictMode double-mount only fires one report.
+    // 4xx failures are excluded — they indicate auth/permission issues that
+    // are expected (e.g. no active session) and must not trigger the banner.
+    function reportFallback(failureClass, status, newLoadState) {
+      try {
+        const storageKey = `load-fallback-reported:${failureClass}`;
+        if (sessionStorage.getItem(storageKey)) return; // already reported this session
+        sessionStorage.setItem(storageKey, '1'); // set BEFORE firing (idempotent under StrictMode)
+        reportError(new Error(`Load-path fallback: ${failureClass}`), {
+          source: 'load-path-fallback',
+          failureClass,
+          status: status ?? null,
+          loadState: newLoadState,
+        });
+      } catch { /* never throw from reporting */ }
+    }
+
     async function loadData() {
-      // 1. Try fetching from D1
+      // 1. Try fetching from D1 using the classified fetch helper
       const dataPath = childId ? `/api/data/all?child_id=${encodeURIComponent(childId)}` : '/api/data/all';
-      const serverData = await apiFetch(dataPath, getToken);
+      const { data: serverData, failureClass, status } = await apiFetchClassified(dataPath, getToken);
 
       if (cancelled) return;
 
@@ -728,7 +807,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
           } catch { /* non-critical */ }
 
           // Re-fetch after migration
-          const freshData = await apiFetch('/api/data/all', getToken);
+          const { data: freshData } = await apiFetchClassified('/api/data/all', getToken);
           if (cancelled) return;
           if (freshData) {
             const transformed = transformServerData(freshData);
@@ -753,6 +832,8 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
               (syncQueueRef.current?.getAll() || [])
                 .filter(op => op.type === 'prep-points-delta')
                 .reduce((sum, op) => sum + (op.payload?.delta || 0), 0);
+            setLoadState('server');
+            loadStateRef.current = 'server';
             setLoaded(true);
             return;
           }
@@ -783,6 +864,8 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
             .filter(op => op.type === 'prep-points-delta')
             .reduce((sum, op) => sum + (op.payload?.delta || 0), 0);
 
+        setLoadState('server');
+        loadStateRef.current = 'server';
         setLoaded(true);
 
         // Flush any pending SyncQueue operations
@@ -791,6 +874,10 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         }
         return;
       }
+
+      // Server fetch failed. 4xx = auth/permission — do NOT expose fallback states.
+      // For 5xx / network / timeout / exception: proceed to fallback and report.
+      const is4xx = failureClass === 'http-4xx';
 
       // 2. D1 fetch failed — try D1 cache
       const cached = readCache(userName);
@@ -804,7 +891,13 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
           syncQueueRef.current?.getAll() || []
         );
         populateState(transformed);
+        const newLoadState = is4xx ? null : 'cache';
+        setLoadState(newLoadState);
+        loadStateRef.current = newLoadState;
         setLoaded(true);
+        if (!is4xx) {
+          reportFallback(failureClass, status, 'cache');
+        }
         return;
       }
 
@@ -826,18 +919,46 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
           lastSessionDate: legacyRead(userName, 'last-session-date', null),
           leitnerQueue: legacyRead(userName, 'leitner-queue', []),
         });
+        // Legacy data = effectively cached — treat same as 'cache' state
+        const newLoadState = is4xx ? null : 'cache';
+        setLoadState(newLoadState);
+        loadStateRef.current = newLoadState;
         setLoaded(true);
+        if (!is4xx) {
+          reportFallback(failureClass, status, 'cache');
+        }
         return;
       }
 
-      // 4. Truly empty — new user
+      // 4. Truly empty — new user (or failed + no data at all)
+      const newLoadState = is4xx ? null : (serverData === null ? 'failed-no-cache' : null);
+      setLoadState(newLoadState);
+      loadStateRef.current = newLoadState;
       setLoaded(true);
+      if (!is4xx && newLoadState === 'failed-no-cache') {
+        reportFallback(failureClass, status, 'failed-no-cache');
+      }
     }
 
+    loadDataRef.current = loadData;
     loadData();
 
     return () => { cancelled = true; };
   }, [userName, getToken, childId, previewMode, populateState, resetToFreshUser]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Stable retryLoad callback ──
+  // Calls the latest loadData closure stored in loadDataRef. Deliberately does
+  // NOT reset loadState first: clearing it would unmount the banner the moment
+  // the child taps "Try again" (false hope if the server is still down, and the
+  // banner's own "Still can't connect" feedback could never show). loadState
+  // only transitions when the load RESOLVES — 'server' on success (banner
+  // unmounts), unchanged on failure (banner stays, shows its gentle message).
+  const retryLoad = useCallback(() => {
+    if (!userName || previewMode) return;
+    if (loadDataRef.current) {
+      return loadDataRef.current();
+    }
+  }, [userName, previewMode]);
 
   // ── Online/offline listener ──
   useEffect(() => {
@@ -849,8 +970,17 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         state.backoffMs = 0;
         state.lastFailedAt = null;
       }
+      // Flush the write queue regardless
       if (syncQueueRef.current && !syncQueueRef.current.isEmpty()) {
         flushQueue();
+      }
+      // Re-run the load if we're still on a fallback state (i.e. last load
+      // failed to reach the server). This catches the case where the Worker
+      // was down for hours and the tab is still open. Like retryLoad, do NOT
+      // clear loadState here — the banner should only disappear when a load
+      // actually succeeds, not flicker on every reconnect attempt.
+      if (loadStateRef.current !== 'server' && loadDataRef.current && userName && !previewMode) {
+        loadDataRef.current();
       }
     };
     window.addEventListener('online', handleOnline);
@@ -1401,5 +1531,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     enqueue,
     // New metadata
     loaded,
+    loadState,
+    retryLoad,
   };
 }

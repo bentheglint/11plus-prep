@@ -273,10 +273,74 @@ function scanSource(source, filename) {
   return findings;
 }
 
+// ── Inline-script ES5 scanner ────────────────────────────────────────────────
+
+/**
+ * Extract inline <script> bodies from an HTML string and parse each with
+ * acorn at ES5 / sourceType 'script'.  Returns findings with rule
+ * 'index-inline-es5' for any block that fails to parse.
+ *
+ * Applies ONLY the ES5 parse rule — NOT the dev-url rule.
+ * Reason: the boot watchdog legitimately contains:
+ *   • the prod workers.dev URL (hardcoded — index.html cannot read env vars)
+ *   • the string 'localhost' in its dev-origin guard
+ * Flagging those would produce false positives for a correct implementation.
+ *
+ * Skips:
+ *   • <script src="…"> — external scripts
+ *   • <script type="application/json"> — data blocks (e.g. CF beacon)
+ *
+ * @param  {string} html      — contents of build/index.html
+ * @param  {string} filename  — display name for findings
+ * @returns {Array<{rule, file, index, message, snippet}>}
+ */
+function scanInlineScripts(html, filename) {
+  const findings = [];
+  const file = filename || 'index.html';
+
+  // Match <script> tags that have no src attribute and are not type=application/json.
+  // The regex captures the body between opening and closing tags.
+  // Flags: case-insensitive, dotAll so body can span lines.
+  const TAG_RE = /<script([^>]*)>([\s\S]*?)<\/script>/gi;
+  let tagMatch;
+
+  while ((tagMatch = TAG_RE.exec(html)) !== null) {
+    const attrs = tagMatch[1] || '';
+    const body  = tagMatch[2] || '';
+
+    // Skip external scripts (have a src attribute)
+    if (/\bsrc\s*=/i.test(attrs)) { continue; }
+    // Skip data blocks
+    if (/type\s*=\s*['"]application\/json['"]/i.test(attrs)) { continue; }
+    // Skip empty bodies
+    if (!body.trim()) { continue; }
+
+    try {
+      acorn.parse(body, {
+        ecmaVersion: 5,
+        sourceType:  'script',
+        locations:   false,
+        ranges:      false,
+      });
+    } catch (err) {
+      findings.push({
+        rule:    'index-inline-es5',
+        file,
+        index:   err.pos || 0,
+        message: 'Inline <script> in index.html is not valid ES5: ' + err.message,
+        snippet: snippet(body, err.pos || 0),
+      });
+    }
+  }
+
+  return findings;
+}
+
 // ── CLI runner ───────────────────────────────────────────────────────────────
 
 function run() {
   const buildDir  = path.join(process.cwd(), 'build', 'static', 'js');
+  const indexPath = path.join(process.cwd(), 'build', 'index.html');
   let   files;
 
   try {
@@ -323,6 +387,23 @@ function run() {
     }
   }
 
+  // ── Check inline scripts in build/index.html ─────────────────────────────
+  if (fs.existsSync(indexPath)) {
+    const htmlSource   = fs.readFileSync(indexPath, 'utf8');
+    const inlineFound  = scanInlineScripts(htmlSource, indexPath);
+
+    if (inlineFound.length === 0) {
+      console.log('  ✔ PASS  index.html (inline scripts — ES5)');
+    } else {
+      totalFindings += inlineFound.length;
+      for (const f of inlineFound) {
+        console.error(`\n  ✖ ${f.rule.toUpperCase()}  index.html  (offset ${f.index})`);
+        console.error(`    ${f.message}`);
+        console.error(`    Snippet: …${f.snippet}…`);
+      }
+    }
+  }
+
   if (totalFindings === 0) {
     console.log(
       `\n  ✔ Bundle compat check passed — ${files.length} file(s) scanned, no findings.\n`
@@ -338,8 +419,9 @@ function run() {
 
 // ── Exports ──────────────────────────────────────────────────────────────────
 
-exports.scanSource = scanSource;
-exports.run        = run;
+exports.scanSource      = scanSource;
+exports.scanInlineScripts = scanInlineScripts;
+exports.run             = run;
 
 // ── Entry point ──────────────────────────────────────────────────────────────
 

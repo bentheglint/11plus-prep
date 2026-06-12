@@ -42,6 +42,115 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>PrepStep — 11+ Exam Practice</title>
+
+    <!--
+      Boot watchdog — ES5 only. Must run before the React bundle.
+      INVARIANT: the ONLY trigger for takeover is:
+        window.__APP_BOOTED !== true  AND  #root has no children.
+      Once React mounts and sets window.__APP_BOOTED = true, this watchdog is
+      permanently inert. Noisy extension errors are captured but never trigger
+      a takeover on their own — a working app is never replaced.
+      index.html cannot read env vars, so the Worker URL is hardcoded below.
+    -->
+    <script>
+    (function() {
+      'use strict';
+      try {
+        // ── Error capture — record only, never trigger takeover alone ──
+        window.__BOOT_ERRORS = [];
+        window.addEventListener('error', function(e) {
+          window.__BOOT_ERRORS.push(e.message || 'unknown error');
+        });
+
+        // ── Takeover helper — called only after double-check confirms no mount ──
+        function showFallback() {
+          // Render the screen FIRST — must never depend on the XHR.
+          document.body.innerHTML =
+            '<div style="font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;' +
+            'max-width: 480px; margin: 60px auto; padding: 24px 20px; text-align: center;' +
+            'color: #1a1a2e;">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"' +
+            ' fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"' +
+            ' stroke-linejoin="round" style="margin-bottom:16px;">' +
+            '<circle cx="12" cy="12" r="10"/>' +
+            '<line x1="12" y1="8" x2="12" y2="12"/>' +
+            '<line x1="12" y1="16" x2="12.01" y2="16"/>' +
+            '</svg>' +
+            '<h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px; color: #1a1a2e;">' +
+            'We couldn’t start PrepStep</h1>' +
+            '<p style="font-size: 16px; line-height: 1.6; color: #444; margin: 0 0 20px;">' +
+            'Sorry about that. Here are a few things to try:</p>' +
+            '<ul style="text-align: left; font-size: 15px; line-height: 1.8; color: #444;' +
+            'padding-left: 20px; margin: 0 0 24px;">' +
+            '<li>Refresh the page</li>' +
+            '<li>Check your internet connection</li>' +
+            '<li>If this keeps happening, this device’s software may be too old —' +
+            ' PrepStep needs iOS 15.6 / Safari 15.6 or newer.</li>' +
+            '</ul>' +
+            '<button onclick="location.reload()" style="background: #7C3AED; color: #fff;' +
+            'border: none; border-radius: 10px; padding: 12px 28px; font-size: 16px;' +
+            'font-weight: 600; cursor: pointer;">Refresh</button>' +
+            '</div>';
+
+          // ── Reporting — fire-and-forget, only in production ──
+          try {
+            var isLocal = (
+              location.hostname === 'localhost' ||
+              location.hostname === '127.0.0.1'
+            );
+            if (!isLocal) {
+              var firstErr = (window.__BOOT_ERRORS && window.__BOOT_ERRORS.length > 0)
+                ? window.__BOOT_ERRORS[0]
+                : 'boot-timeout';
+              var xhr = new XMLHttpRequest();
+              // Hardcoded — index.html cannot read env vars:
+              xhr.open('POST', 'https://11plus-ai-tutor.benjacko82.workers.dev/api/error-report', true);
+              xhr.setRequestHeader('Content-Type', 'application/json');
+              xhr.send(JSON.stringify({
+                error: firstErr,
+                source: 'boot-watchdog',
+                userAgent: navigator.userAgent,
+                timestamp: new Date().toISOString()
+              }));
+            }
+          } catch (_reportErr) {
+            // Reporting failed — the screen is already shown, nothing to do.
+          }
+        }
+
+        // ── Mount check ──
+        function isMounted() {
+          // React is mounted when __APP_BOOTED is set (see src/index.js) AND
+          // #root has children. Both conditions required — belt and braces.
+          if (window.__APP_BOOTED === true) { return true; }
+          var root = document.getElementById('root');
+          return root && root.children && root.children.length > 0;
+        }
+
+        // ── Timings — generous so slow iPads on slow connections are never killed.
+        //    window.__WATCHDOG_TEST_FAST shortens them for automated tests only;
+        //    it cannot enable takeover when the app is already mounted.
+        var T1 = window.__WATCHDOG_TEST_FAST ? 1500 : 20000;
+        var T2 = window.__WATCHDOG_TEST_FAST ? 500  : 5000;
+
+        var timer1 = setTimeout(function() {
+          timer1 = null;
+          if (isMounted()) { return; }  // App is up — watchdog is done forever.
+          // First check failed — wait T2 and do one final check before acting.
+          var timer2 = setTimeout(function() {
+            timer2 = null;
+            if (isMounted()) { return; }  // Slow load — app made it, stand down.
+            showFallback();
+          }, T2);
+        }, T1);
+
+      } catch (_watchdogErr) {
+        // The watchdog itself threw — do nothing. The app still has a chance to
+        // boot on its own; silencing errors here prevents a broken safety net
+        // from breaking the main app.
+      }
+    }());
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

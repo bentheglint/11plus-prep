@@ -104,6 +104,33 @@ See `Master_Brief_v7_0.md` for the full feature map.
 - **Deploy the frontend ONLY via `bash deploy.sh`** — never a manual `npm run build` + `npx wrangler pages deploy build/`. CRA bakes `REACT_APP_*` vars into the bundle at build time, and `.env.local` (a local-dev override pointing the frontend at the local Worker `127.0.0.1:8787` + test keys) **overrides `.env` in production builds too**. `deploy.sh` moves `.env.local` aside before building (and runs tests + smoke); a manual build does not. On 8 June 2026 a manual build shipped the localhost Worker URL to prepstep.co.uk and took the site down. A `prebuild` guard (`scripts/check-no-env-local.js`) now also blocks `npm run build` while `.env.local` is present (override: `ALLOW_ENV_LOCAL_BUILD=1`). The Worker deploys separately via `npx wrangler deploy` from `workers/ai-tutor/` and is unaffected by `.env.local`.
 - **Deploy guards (12 Jun 2026):** `deploy.sh` now (a) aborts if local is behind origin/master (git-freshness, fail-closed — escape hatches `ALLOW_OFFLINE_DEPLOY=1` / `SKIP_FRESHNESS_CHECK=1`), and (b) runs `scripts/check-bundle-compat.js` on the built bundle before upload (also wired as npm `postbuild`). The compat guard catches parse-time syntax Safari 15.6 can't parse (regex lookbehind, static blocks, private-in, d/v regex flags, ES2023+) plus localhost/127.0.0.1 leaks. **Known limits:** it does NOT catch missing runtime APIs (a library calling a method iOS 15.6 lacks still breaks at call time), and a manual `npx react-scripts build` + manual `wrangler pages deploy` bypasses every guard — never deploy that way.
 
+## Duplicated-Truth Rules (12 Jun 2026 — bulk-load outage + ghost-key sweep)
+
+Every serious bug in the 10–12 Jun period had the same anatomy: a
+hand-maintained COPY of some truth (test schema, topic-key list, label map)
+drifting behind a "keep in sync" comment. Three rules now apply:
+
+1. **No load-bearing "keep in sync" comments.** Any duplicated registry,
+   schema, or list must be guarded by a test that DERIVES from or PINS to
+   the real source. Patterns to copy:
+   - `src/__tests__/integration/topicKeyConsistency.test.js` (live-registry
+     checks derived from the question data files)
+   - `workers/ai-tutor/tests/schemaParity.test.js` (test schema pinned to a
+     prod-columns snapshot; regeneration command in-file)
+2. **Any new or changed SQL against prod D1 — not just migrations — must be
+   checked against prod's real schema before deploy:**
+   `npx wrangler d1 execute 11plus-user-data --remote --command "PRAGMA table_info(<table>)"`.
+   The worker test schema is hand-written and HAS diverged from prod (the
+   12 Jun bulk-load outage: tests passed against a column prod doesn't
+   have; every user's data load 500'd for ~2 days, masked by the silent
+   cache fallback). Prod also carries at least one column that exists in
+   NO migration file (`achievements.seen`) — never assume migrations ==
+   prod schema.
+3. **Silent fallbacks hide outages.** Any catch/fallback that degrades the
+   experience (e.g. stale-cache load fallback) must be observable: a
+   user-visible indicator and/or a client error report. If you add a
+   fallback, add its observability in the same change.
+
 ## D1 Migration Rules — Read Before Touching `workers/ai-tutor/migrations/`
 
 **Before any D1 schema change, read `workers/ai-tutor/docs/migration-playbook.md`.**

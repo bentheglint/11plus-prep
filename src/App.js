@@ -1875,6 +1875,8 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onManageChildren={() => setCurrentView('children')}
         onTutorSignup={tutorEligible ? () => setCurrentView('tutorSignup') : null}
         onAdmin={isAdmin ? () => setCurrentView('admin') : null}
+        loadState={userData.loadState}
+        onRetry={userData.retryLoad}
       />
     );
   }

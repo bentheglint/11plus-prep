@@ -17,9 +17,15 @@
  * 9.  Known-good prod Worker URL → NO findings
  * 10. Safe-modern syntax (optional chaining, nullish coalescing, class fields)
  *     → NO findings (Safari 15.6 supports these; guard must not over-block)
+ * 11. Inline script ES5 check (scanInlineScripts):
+ *     a. Valid ES5 body → NO findings
+ *     b. Body with `const x = 1` → index-inline-es5 finding
+ *     c. Body with arrow function → index-inline-es5 finding
+ *     d. Body with prod workers.dev URL or 'localhost' string → NO findings
+ *        (dev-url rule intentionally not applied to inline scripts)
  */
 
-const { scanSource } = require('../../../scripts/check-bundle-compat');
+const { scanSource, scanInlineScripts } = require('../../../scripts/check-bundle-compat');
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Helpers
@@ -188,6 +194,89 @@ describe('safe-modern syntax: no findings', () => {
   it('does not flag standard arrow functions or template literals', () => {
     const source = 'const f = (x) => `hello ${x}`;';
     const findings = scanSource(source, 'test.js');
+    expect(findings).toHaveLength(0);
+  });
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 11. Inline script ES5 check (scanInlineScripts)
+//     Tests the new rule that validates <script> bodies in build/index.html
+//     against ES5. The dev-url rule is intentionally NOT applied here because
+//     the boot watchdog legitimately embeds the prod workers.dev URL and the
+//     string 'localhost' (for its dev-origin guard).
+// ─────────────────────────────────────────────────────────────────────────────
+
+describe('scanInlineScripts: ES5 compliance', () => {
+  it('passes a valid ES5 inline script body', () => {
+    const html =
+      '<!DOCTYPE html><html><head>' +
+      '<script>(function(){ var x = 1; alert(x); }());</script>' +
+      '</head><body></body></html>';
+    const findings = scanInlineScripts(html, 'index.html');
+    expect(findings).toHaveLength(0);
+  });
+
+  it('flags an inline script body containing `const`', () => {
+    const html =
+      '<!DOCTYPE html><html><head>' +
+      '<script>(function(){ const x = 1; }());</script>' +
+      '</head><body></body></html>';
+    const findings = scanInlineScripts(html, 'index.html');
+    expect(findings).toHaveLength(1);
+    expect(findings[0].rule).toBe('index-inline-es5');
+  });
+
+  it('flags an inline script body containing an arrow function', () => {
+    const html =
+      '<!DOCTYPE html><html><head>' +
+      '<script>var f = function() { return [1,2].map(function(x){ return x + 1; }); };</script>' +
+      '</head><body></body></html>';
+    // Baseline: map with ordinary function is ES5-clean
+    const goodFindings = scanInlineScripts(html, 'index.html');
+    expect(goodFindings).toHaveLength(0);
+
+    const htmlArrow =
+      '<!DOCTYPE html><html><head>' +
+      '<script>var f = (x) => x + 1;</script>' +
+      '</head><body></body></html>';
+    const findings = scanInlineScripts(htmlArrow, 'index.html');
+    expect(findings).toHaveLength(1);
+    expect(findings[0].rule).toBe('index-inline-es5');
+  });
+
+  it('does NOT flag prod workers.dev URL or localhost string in an ES5 inline body', () => {
+    // The dev-url rule must NOT be applied to inline scripts.
+    // The boot watchdog legitimately contains both strings.
+    const html =
+      '<!DOCTYPE html><html><head>' +
+      '<script>(function(){\n' +
+      '  var isLocal = (location.hostname === "localhost");\n' +
+      '  if (!isLocal) {\n' +
+      '    var xhr = new XMLHttpRequest();\n' +
+      '    xhr.open("POST", "https://11plus-ai-tutor.benjacko82.workers.dev/api/error-report", true);\n' +
+      '  }\n' +
+      '}());\n' +
+      '</script>' +
+      '</head><body></body></html>';
+    const findings = scanInlineScripts(html, 'index.html');
+    expect(findings).toHaveLength(0);
+  });
+
+  it('skips external scripts (with src attribute)', () => {
+    const html =
+      '<!DOCTYPE html><html><head>' +
+      '<script src="/static/js/main.abc123.js"></script>' +
+      '</head><body></body></html>';
+    const findings = scanInlineScripts(html, 'index.html');
+    expect(findings).toHaveLength(0);
+  });
+
+  it('skips type=application/json script blocks', () => {
+    const html =
+      '<!DOCTYPE html><html><head>' +
+      '<script type="application/json">{"token":"abc123"}</script>' +
+      '</head><body></body></html>';
+    const findings = scanInlineScripts(html, 'index.html');
     expect(findings).toHaveLength(0);
   });
 });

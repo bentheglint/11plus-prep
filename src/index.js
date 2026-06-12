@@ -74,6 +74,8 @@ root.render(
     </ErrorBoundary>
   </React.StrictMode>
 );
+// Cancels the boot watchdog in public/index.html — must be set after render().
+window.__APP_BOOTED = true;
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
