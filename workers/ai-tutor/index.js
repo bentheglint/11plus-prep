@@ -19,6 +19,7 @@ import {
   handleInviteRoutes,
   handlePublicInviteLookup,
   handleClaimInvite,
+  handleInvitePreview,
   handleInviteAdminRoutes,
   sweepInvites,
 } from './routes/invites.js';
@@ -481,11 +482,16 @@ const worker = {
         if (tutorResult) return tutorResult;
         return json({ error: 'Tutor route not found', path }, 404);
       }
-      // Claim invite — auth only (no tutor profile required)
+      // Claim invite + authed preview — auth only (no tutor profile required)
       if (path === '/api/tutor/claim-invite' && request.method === 'POST') {
         const auth = await requireAuth(request, env);
         if (auth.error) return auth.error;
         return handleClaimInvite(request, env, auth.userId);
+      }
+      if (path === '/api/tutor/invite-preview' && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        return handleInvitePreview(request, env);
       }
       if (path.startsWith('/api/tutor')) {
         const auth = await requireTutorProfile(request, env);

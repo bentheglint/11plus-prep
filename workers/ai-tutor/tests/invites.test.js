@@ -420,6 +420,62 @@ describe('GET /api/tutor/public/invite/:token', () => {
 
 // ── POST /api/tutor/claim-invite ──────────────────────────────────────────────
 
+describe('POST /api/tutor/invite-preview', () => {
+  it('requires auth', async () => {
+    const res = await worker.fetch(
+      makeRequest('POST', '/api/tutor/invite-preview', { body: { token: 'x' } }),
+      env
+    );
+    expect(res.status).toBe(401);
+  });
+
+  it('returns child name + year group for a valid sent invite (authed)', async () => {
+    const tutorId = 'tutor-preview';
+    const raw = crypto.randomUUID();
+    await seed.account(env.DB, tutorId, 'preview-tutor@test.com');
+    await seed.tutor(env.DB, tutorId, 'preview-tutor@test.com');
+    await seed.invite(env.DB, {
+      id: 'inv-preview',
+      tokenHash: await hashToken(raw),
+      tutorId,
+      parentEmail: 'p@e.com',
+      childName: 'Amelia',
+      yearGroup: 5,
+      status: 'sent',
+    });
+
+    const claimerId = 'parent-preview';
+    await seed.account(env.DB, claimerId, 'parent-preview@test.com');
+    const token = await makeAuthToken({ userId: claimerId, email: 'parent-preview@test.com' });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/api/tutor/invite-preview', { auth: token, body: { token: raw } }),
+      env
+    );
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.valid).toBe(true);
+    expect(body.childName).toBe('Amelia');
+    expect(body.yearGroup).toBe(5);
+    expect(body.tutor.displayName).toBeTruthy();
+  });
+
+  it('returns valid:false for revoked/expired/unknown tokens (no detail)', async () => {
+    const claimerId = 'parent-preview-2';
+    await seed.account(env.DB, claimerId, 'parent-preview-2@test.com');
+    const token = await makeAuthToken({ userId: claimerId, email: 'parent-preview-2@test.com' });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/api/tutor/invite-preview', { auth: token, body: { token: 'nope' } }),
+      env
+    );
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.valid).toBe(false);
+    expect(body.childName).toBeUndefined();
+  });
+});
+
 describe('POST /api/tutor/claim-invite', () => {
   async function setupClaimFixture({ tokenStatus = 'sent', childYearGroup = null, inviteYearGroup = 3 } = {}) {
     const tutorId = 'tutor-claim-' + Math.random().toString(36).slice(2);

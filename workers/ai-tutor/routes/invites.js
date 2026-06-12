@@ -441,6 +441,43 @@ export async function handlePublicInviteLookup(request, env, path) {
   return json({ valid: false });
 }
 
+// ── Authed invite preview (auth only, no tutor gate) ─────────────────────────
+// The public lookup deliberately omits the child's name (pre-auth privacy).
+// Signed-in claimants need it to pre-fill onboarding, so this authed twin
+// returns the full invite details. Token travels in the body, not the URL,
+// so it can't end up in request logs or Sentry breadcrumbs.
+
+export async function handleInvitePreview(request, env) {
+  if (request.method !== 'POST') return null;
+
+  let body;
+  try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400); }
+  if (!body.token) return json({ error: 'Missing token' }, 400);
+
+  const tokenHash = await hashToken(body.token);
+  const invite = await env.DB.prepare(`
+    SELECT ti.child_name, ti.year_group, t.display_name, t.photo_url, t.bio
+    FROM tutor_invites ti
+    JOIN tutors t ON t.id = ti.tutor_id
+    WHERE ti.token_hash = ?
+      AND ti.status IN ('sent','send_failed')
+      AND ti.expires_at > datetime('now')
+  `).bind(tokenHash).first();
+
+  if (!invite) return json({ valid: false });
+
+  return json({
+    valid: true,
+    childName: invite.child_name,
+    yearGroup: invite.year_group,
+    tutor: {
+      displayName: invite.display_name,
+      photoUrl: invite.photo_url,
+      bio: invite.bio,
+    },
+  });
+}
+
 // ── Claim invite (auth only, no tutor gate) ───────────────────────────────────
 
 export async function handleClaimInvite(request, env, userId) {
