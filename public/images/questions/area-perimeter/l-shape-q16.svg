@@ -1,8 +1,0 @@
-<svg width="350" height="280" xmlns="http://www.w3.org/2000/svg">
-  <rect x="50" y="50" width="180" height="80" fill="lightskyblue" fill-opacity="0.4" stroke="black" stroke-width="2"/>
-  <text x="140" y="35" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">6m</text>
-  <text x="30" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">4m</text>
-  <rect x="50" y="130" width="120" height="100" fill="lightskyblue" fill-opacity="0.4" stroke="black" stroke-width="2"/>
-  <text x="110" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">4m</text>
-  <text x="30" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">3m</text>
-</svg>

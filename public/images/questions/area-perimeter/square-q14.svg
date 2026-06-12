@@ -1,5 +1,0 @@
-<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
-  <rect x="50" y="50" width="150" height="150" fill="lightskyblue" fill-opacity="0.3" stroke="black" stroke-width="2"/>
-  <text x="125" y="125" text-anchor="middle" font-family="Arial" font-size="16" fill="dimgray">Area = 64m²</text>
-  <text x="125" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="red">Find perimeter</text>
-</svg>

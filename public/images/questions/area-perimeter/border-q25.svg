@@ -1,8 +1,0 @@
-<svg width="360" height="280" xmlns="http://www.w3.org/2000/svg">
-  <rect x="40" y="40" width="280" height="200" fill="pink" fill-opacity="0.4" stroke="black" stroke-width="2"/>
-  <text x="180" y="30" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">20m</text>
-  <text x="20" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="dimgray">15m</text>
-  <rect x="70" y="70" width="220" height="140" fill="lightgreen" fill-opacity="0.6" stroke="black" stroke-width="2" stroke-dasharray="3,3"/>
-  <text x="180" y="145" text-anchor="middle" font-family="Arial" font-size="12" fill="dimgray">Lawn</text>
-  <text x="55" y="85" text-anchor="middle" font-family="Arial" font-size="10" fill="dimgray">1m</text>
-</svg>

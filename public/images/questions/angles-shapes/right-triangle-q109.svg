@@ -1,6 +1,0 @@
-<svg width="380" height="300" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="35.0,30.0 35.0,265.0 218.6,265.0" fill="lightskyblue" fill-opacity="0.15" stroke="black" stroke-width="2"/>
-  <polyline points="35.0,247.0 53.0,247.0 53.0,265.0" fill="none" stroke="black" stroke-width="1.5"/>
-  <text x="54.2" y="90.7" font-family="Arial" font-size="16" fill="red" text-anchor="middle">?</text>
-  <text x="172.9" y="247.7" font-family="Arial" font-size="16" fill="dimgray" text-anchor="middle">52°</text>
-</svg>

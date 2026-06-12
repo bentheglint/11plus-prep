@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 310">
-  <rect x="70" y="60" width="320" height="210" fill="lightskyblue" fill-opacity="0.3" stroke="black" stroke-width="2"/>
-  <rect x="92" y="82" width="276" height="166" fill="lightgreen" fill-opacity="0.4" stroke="black" stroke-width="2" stroke-dasharray="3,3"/>
-  <text x="230" y="285" font-size="14" fill="dimgray" text-anchor="middle">30 m</text>
-  <text x="55" y="170" font-size="14" fill="dimgray" text-anchor="middle">22 m</text>
-  <text x="80" y="75" font-size="10" fill="red" text-anchor="middle">Border 1.5 m</text>
-</svg>

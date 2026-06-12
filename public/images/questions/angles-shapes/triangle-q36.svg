@@ -1,6 +1,0 @@
-<svg width="380" height="280" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="231.5,48.5 35.0,245.0 345.0,245.0" fill="lightskyblue" fill-opacity="0.15" stroke="black" stroke-width="2"/>
-  <text x="225.4" y="99.9" font-family="Arial" font-size="16" fill="red" text-anchor="middle">5y°</text>
-  <text x="93.6" y="225.7" font-family="Arial" font-size="16" fill="red" text-anchor="middle">3y°</text>
-  <text x="297.8" y="222.8" font-family="Arial" font-size="16" fill="red" text-anchor="middle">4y°</text>
-</svg>

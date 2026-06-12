@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
-  <rect x="80" y="70" width="240" height="240" fill="lightgray" fill-opacity="0.3" stroke="black" stroke-width="2"/>
-  <rect x="100" y="90" width="200" height="200" fill="lightskyblue" fill-opacity="0.4" stroke="black" stroke-width="2"/>
-  <text x="200" y="200" font-size="14" fill="dimgray" text-anchor="middle">12 m</text>
-  <text x="90" y="60" font-size="12" fill="red" text-anchor="middle">Path 1 m</text>
-</svg>

@@ -63,12 +63,14 @@ describe('selectWeightedTopics', () => {
     });
 
     let decimalsPicked = 0;
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 1000; i++) {
       const result = selectWeightedTopics(topics, mastery, 1);
       if (result[0] === 'decimals') decimalsPicked++;
     }
-    // With weight 330 vs ~20-30 for others, decimals should be picked >50% of the time
-    expect(decimalsPicked).toBeGreaterThan(40);
+    // With weight 330 vs ~20-30 for others, decimals should be picked >50% of the
+    // time. 1000 iterations keeps the threshold several standard deviations clear
+    // of the expected rate — at 100 iterations this flaked roughly 1 run in 100.
+    expect(decimalsPicked).toBeGreaterThan(400);
   });
 
   // Weight behaviour: stale topics (>14 days) get 2.5x boost
@@ -79,12 +81,12 @@ describe('selectWeightedTopics', () => {
     });
 
     let algebraPicked = 0;
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 1000; i++) {
       const result = selectWeightedTopics(['fractions', 'algebra'], mastery, 1);
       if (result[0] === 'algebra') algebraPicked++;
     }
     // algebra (stale) should be picked much more often than fractions
-    expect(algebraPicked).toBeGreaterThan(55);
+    expect(algebraPicked).toBeGreaterThan(550);
   });
 
   // Weight behaviour: declining trend gets 1.8x boost
@@ -95,11 +97,13 @@ describe('selectWeightedTopics', () => {
     });
 
     let algebraPicked = 0;
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 1000; i++) {
       const result = selectWeightedTopics(['fractions', 'algebra'], mastery, 1);
       if (result[0] === 'algebra') algebraPicked++;
     }
-    expect(algebraPicked).toBeGreaterThan(55);
+    // declining boost is 1.8x → expected ~64% pick rate; at 100 iterations the
+    // 55% threshold sat only ~2.6σ away and flaked (observed 52 on 12 Jun 2026)
+    expect(algebraPicked).toBeGreaterThan(550);
   });
 
   // Floor weight: even mastered topics can be selected (weight >= 5)

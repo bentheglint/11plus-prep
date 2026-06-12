@@ -1,9 +1,9 @@
 # 11+ Exam Prep App
 
 ## What This Project Is
-A React web app to help a 9-year-old prepare for the GL Assessment 11+ exam (target: September 2026). Targeting Bournemouth Grammar School and Parkstone Grammar School. It presents multiple-choice maths questions across 16 topics, tracks progress via localStorage, and includes an AI tutor chat feature (Claude API).
+A React web app to help a 9-year-old prepare for the GL Assessment 11+ exam (target: September 2026). Targeting Bournemouth Grammar School and Parkstone Grammar School. It presents multiple-choice questions across Maths, English, and Verbal Reasoning, tracks progress in D1 (localStorage as offline cache), and includes an AI tutor chat feature (Claude API).
 
-**NOT a git repository.** No version control is set up.
+Git repository, dual-machine (PC + laptop) via github.com/bentheglint/11plus-prep.
 
 ## Master Brief
 The full project brief lives in `Master Brief Document and Working Instructions/Master_Brief_v7_0.md` (16 Apr 2026). v6 and the old Working Instructions are archived under `archive/` for historical diagram breakdowns and platform-transition notes.
@@ -21,7 +21,7 @@ The full project brief lives in `Master Brief Document and Working Instructions/
 `src/App.js` is the orchestrator (~2,100 lines), supported by:
 - `src/screens/` — one file per view (Home, Quiz, Results, Progress, Mistakes, TestingMode, ErrorDashboard, FeatureFlags, AllActivity, etc.)
 - `src/hooks/` — `useD1Data`, `useMastery`, `useStreaksAndPP`, `useMockTest`, `useTestingCoverage`, `useAchievements`
-- `src/questionData/` — `mathsData.js` (2,061 Qs), `englishData.js` (2,505 Qs), `vrData.js` (2,116 Qs)
+- `src/questionData/` — `mathsData.js` (3,376 Qs), `englishData.js` (2,497 Qs), `vrData.js` (2,371 Qs)
 - `src/microLessons/` — `MicroLessonScreen`, `lessonData`, `visuals`, and per-topic `staging/` files
 - `src/components/` — shared UI (AccountMenu, QuizHistoryRow, ErrorBoundary, Motion, FlagModal, etc.)
 - `src/utils/` — `featureFlags`, `confetti`, `quizPersistence`, `tipSelection`, etc.
@@ -32,57 +32,39 @@ Auth via Clerk (AuthGate). User data in D1 via Worker (`workers/ai-tutor/`), wit
 ```js
 {
   id: 1,
+  difficulty: 2,                        // 1-3
   question: "Question text here",
-  image: "topic-folder/filename.svg",  // optional - path relative to /images/questions/
-  options: ["A", "B", "C", "D", "E"],  // always 5 options
+  visual: {                             // optional — rendered React component
+    component: "BarModel",              // key into the quiz visual registry
+    props: { /* component props */ }    // defined in src/microLessons/visuals.js
+  },
+  options: ["A", "B", "C", "D", "E"],  // always 5 options (standard MC)
   correct: 2,                           // 0-indexed
   explanation: "Step-by-step explanation. ✓"
 }
 ```
+Some VR/English types use other shapes (`questionType: 'pick-from-sets'` with `setA`/`setB`/`correctPair`, `'passage'` with `passage`/`passageId`, `'error-spotting'`, `'letter-codes'`) — see the data files.
 
-### Content bank (total 6,682 questions)
+### Content bank (total 8,244 questions — counts verified 12 Jun 2026 via `node scripts/count-content.js`)
 | Subject | Topics | Questions | File |
 |---|---|---|---|
-| Maths | 16 | 2,061 | `src/questionData/mathsData.js` |
-| English | 6 | 2,505 | `src/questionData/englishData.js` |
-| Verbal Reasoning | 16 | 2,116 | `src/questionData/vrData.js` |
+| Maths | 16 | 3,376 | `src/questionData/mathsData.js` |
+| English | 6 | 2,497 | `src/questionData/englishData.js` |
+| Verbal Reasoning | 17 | 2,371 | `src/questionData/vrData.js` |
 
-Plus 584 micro-lessons (compulsory before every Focused Learning quiz in Maths/English) in `src/microLessons/staging/`.
+Plus 614 micro-lessons (compulsory before every Focused Learning quiz in Maths/English) across 38 files in `src/microLessons/staging/`.
 
 **Maths topic keys:** percentages, decimals, longdivision, ratio, fractions, longmultiplication, algebra, placevalue, negativenumbers, primenumbersfactors, areaperimeter, volume, anglesshapes, sequences, datahandling, speeddistancetime.
 
-**English topic keys:** comprehension, grammar, vocabulary, spelling, punctuation, writingTechniques.
+**English topic keys:** comprehension, spelling, punctuation, grammar, vocabulary, wordClassGrammar. (NOT "writingTechniques" — that key never existed; using it caused a topic→subject mapping bug fixed 11 Jun 2026.)
 
-**VR topic keys:** synonyms, antonyms, verbalAnalogies, oddTwoOut, compoundWords, hiddenWords, letterMove, missingLettersWords, letterCodes, letterPairSeries, numberSeries, letterSums, wordCodeAnalogies, numberWordCodes, logicAndLanguage, sharedLetter.
+**VR topic keys:** synonyms, antonyms, verbalAnalogies, oddTwoOut, compoundWords, hiddenWords, letterMove, missingLettersWords, letterCodes, letterPairSeries, numberSeries, letterSums, wordCodeAnalogies, numberWordCodes, logicAndLanguage, sharedLetter, balanceEquations.
 
-## SVG Diagrams
+## Visuals (diagrams)
 
-### Location
-`public/images/questions/[topic-folder]/` — referenced in questions via the `image` property.
+All question and lesson diagrams are **React SVG components**, not static files. A question's `visual: { component, props }` is rendered via the `quizVisualComponents` registry; components live in `src/microLessons/visuals.js`. 1,137 questions carry visuals (616 maths, 521 VR).
 
-### Current diagram counts
-| Folder | SVGs | Status |
-|--------|------|--------|
-| area-perimeter | 74 | Complete |
-| volume | 74 | Complete |
-| angles-shapes | 17 | In progress |
-| data-handling | 10 | In progress |
-
-### Diagram standards (for Volume 3D cuboids)
-- See `.claude/projects/*/memory/diagram-rules.md` for dimension line placement rules
-- See `.claude/projects/*/memory/volume-diagram-template.md` for the locked SVG template
-- ViewBox: `0 0 400 300`
-- Colours: lightskyblue (front), lightcyan (top), skyblue (right)
-- Cubes use 120x120 square front face; cuboids use the standard template
-- Dimension lines: length (bottom horizontal), height (left vertical), width (bottom-right angled)
-- Unknown values shown in red with "? cm"
-
-### Diagram backlog (from Master Brief v6.0)
-- **Angles & Shapes:** ~72 diagrams needed (Q23-Q122 v2)
-- **Data Handling:** ~55 diagrams needed (Q26-Q125 v2)
-- **Volume (remaining v2):** Cuboids (17), Cubes (20), Tanks (5), Pools (6), Rooms (4), Storage (2), Comparisons (4), Algebraic (4) = ~62 total
-
-See `Master Brief Document and Working Instructions/archive/Master_Brief_v6_0.md` lines 104-116 for the exact question numbers per shape type (archived, but still the canonical list).
+The old static-SVG system (`public/images/questions/`) was retired and the orphaned files deleted on 12 Jun 2026 (recoverable from git history; audit tool: `node scripts/scan-orphan-images.js`). The diagram-design skill's design tokens still govern all SVG component output.
 
 ## App Features
 - **Quiz modes:** Daily Learning (10 Qs mixed), Focused Learning (pre-quiz micro-lesson + topic quiz), Mock Test (timed full paper), Challenge Mode
@@ -104,7 +86,7 @@ See `Master_Brief_v7_0.md` for the full feature map.
 | Hooks | `src/hooks/*.js` |
 | Question data | `src/questionData/{mathsData,englishData,vrData}.js` |
 | Micro-lessons | `src/microLessons/staging/*-subconcepts.js` |
-| SVG diagrams | `public/images/questions/[topic]/` |
+| Visual components | `src/microLessons/visuals.js` |
 | Entry point | `src/index.js` |
 | Tailwind config | `tailwind.config.js` + `postcss.config.js` (Tailwind 3, build-time) |
 | Worker | `workers/ai-tutor/index.js` |
@@ -116,8 +98,7 @@ See `Master_Brief_v7_0.md` for the full feature map.
 - Questions always have exactly 5 options (A–E), 0-indexed correct answer
 - Explanations end with ✓
 - British English and UK context (£, metres, British names)
-- SVG diagrams verified visually in browser (File Explorer → double-click)
-- When creating SVGs, follow the locked templates in memory files
+- Visual components verified via the Visual QA skill (Chrome DevTools MCP screenshots); follow the diagram-design skill's design tokens when creating or editing any SVG component
 - **The Oracle writes ALL new question content.** Claude handles mechanical fixes (index corrections, formatting, file operations) but the 11plus-oracle agent must write any new questions, replacement questions, word sets, distractors, answer options, or explanations. The Oracle has the GL research library; Claude does not. This rule exists because Claude-written content has repeatedly needed correction.
 - **Always `git fetch` before any production deploy** (`wrangler deploy`, `bash deploy.sh`, Pages deploy). The SessionStart auto-pull only runs on a real Claude Code restart, so a long-lived session goes stale and deploying from stale local silently reverts work pushed/deployed from the other machine. On 8 June 2026 this reverted 6 laptop commits in prod. Check `git log --oneline HEAD..origin/master`; if behind, rebase and redeploy from merged code.
 - **Deploy the frontend ONLY via `bash deploy.sh`** — never a manual `npm run build` + `npx wrangler pages deploy build/`. CRA bakes `REACT_APP_*` vars into the bundle at build time, and `.env.local` (a local-dev override pointing the frontend at the local Worker `127.0.0.1:8787` + test keys) **overrides `.env` in production builds too**. `deploy.sh` moves `.env.local` aside before building (and runs tests + smoke); a manual build does not. On 8 June 2026 a manual build shipped the localhost Worker URL to prepstep.co.uk and took the site down. A `prebuild` guard (`scripts/check-no-env-local.js`) now also blocks `npm run build` while `.env.local` is present (override: `ALLOW_ENV_LOCAL_BUILD=1`). The Worker deploys separately via `npx wrangler deploy` from `workers/ai-tutor/` and is unaffected by `.env.local`.
