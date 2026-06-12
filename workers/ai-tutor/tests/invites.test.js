@@ -714,6 +714,76 @@ describe('DELETE /api/tutor/invites/:id', () => {
     );
     expect(res.status).toBe(200);
   });
+
+  it('revoked → permanently deleted (bin: second delete removes the row)', async () => {
+    const { inviteId, token } = await tutorWithInvite('revoked');
+    const res = await worker.fetch(
+      makeRequest('DELETE', `/api/tutor/invites/${inviteId}`, { auth: token }),
+      env
+    );
+    expect(res.status).toBe(200);
+    expect((await res.json()).deleted).toBe(true);
+    const row = await env.DB.prepare('SELECT id FROM tutor_invites WHERE id = ?').bind(inviteId).first();
+    expect(row).toBeNull();
+  });
+
+  it('expired → permanently deleted', async () => {
+    const { inviteId, token } = await tutorWithInvite('expired');
+    const res = await worker.fetch(
+      makeRequest('DELETE', `/api/tutor/invites/${inviteId}`, { auth: token }),
+      env
+    );
+    expect(res.status).toBe(200);
+    const row = await env.DB.prepare('SELECT id FROM tutor_invites WHERE id = ?').bind(inviteId).first();
+    expect(row).toBeNull();
+  });
+
+  it('joined row survives a delete attempt untouched', async () => {
+    const { inviteId, token } = await tutorWithInvite('joined');
+    await worker.fetch(makeRequest('DELETE', `/api/tutor/invites/${inviteId}`, { auth: token }), env);
+    const row = await env.DB.prepare('SELECT status FROM tutor_invites WHERE id = ?').bind(inviteId).first();
+    expect(row.status).toBe('joined');
+  });
+
+  it("cannot delete another tutor's binned invite", async () => {
+    const { inviteId } = await tutorWithInvite('revoked');
+    const { token: otherToken } = await tutorWithInvite('revoked');
+    const res = await worker.fetch(
+      makeRequest('DELETE', `/api/tutor/invites/${inviteId}`, { auth: otherToken }),
+      env
+    );
+    expect(res.status).toBe(409);
+    const row = await env.DB.prepare('SELECT id FROM tutor_invites WHERE id = ?').bind(inviteId).first();
+    expect(row).not.toBeNull();
+  });
+});
+
+// ── DELETE /api/tutor/invites/bin ─────────────────────────────────────────────
+
+describe('DELETE /api/tutor/invites/bin (empty bin)', () => {
+  it('deletes own revoked+expired only; live rows and other tutors untouched', async () => {
+    const tutorId = 'tutor-bin';
+    const otherId = 'tutor-bin-other';
+    await seed.account(env.DB, tutorId, 'bin@test.com');
+    await seed.tutor(env.DB, tutorId, 'bin@test.com');
+    await seed.account(env.DB, otherId, 'bin-other@test.com');
+    await seed.tutor(env.DB, otherId, 'bin-other@test.com');
+
+    await seed.invite(env.DB, { id: 'bin-1', tokenHash: 'h-bin-1', tutorId, parentEmail: 'a@e.com', childName: 'A', status: 'revoked' });
+    await seed.invite(env.DB, { id: 'bin-2', tokenHash: 'h-bin-2', tutorId, parentEmail: 'b@e.com', childName: 'B', status: 'expired' });
+    await seed.invite(env.DB, { id: 'bin-3', tokenHash: 'h-bin-3', tutorId, parentEmail: 'c@e.com', childName: 'C', status: 'sent' });
+    await seed.invite(env.DB, { id: 'bin-4', tokenHash: 'h-bin-4', tutorId: otherId, parentEmail: 'd@e.com', childName: 'D', status: 'revoked' });
+
+    const token = await makeAuthToken({ userId: tutorId, email: 'bin@test.com' });
+    const res = await worker.fetch(makeRequest('DELETE', '/api/tutor/invites/bin', { auth: token }), env);
+    expect(res.status).toBe(200);
+    expect((await res.json()).deleted).toBe(2);
+
+    const { results } = await env.DB.prepare(
+      "SELECT id FROM tutor_invites WHERE id IN ('bin-1','bin-2','bin-3','bin-4') ORDER BY id"
+    ).all();
+    expect(results.map(r => r.id)).toEqual(['bin-3', 'bin-4']);
+  });
 });
 
 // ── POST /api/tutor/invites/:id/resend ────────────────────────────────────────

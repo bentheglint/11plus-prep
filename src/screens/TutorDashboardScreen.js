@@ -163,6 +163,10 @@ const INVITE_STATUS_MAP = {
 
 const LIVE_STATUSES = new Set(['needs_review', 'pending', 'sent', 'send_failed']);
 
+// Binned = revoked/expired. Deleting one of these is permanent ("empty the
+// bin"); 'joined' is roster history and is never deletable from this panel.
+const BINNED_STATUSES = new Set(['revoked', 'expired']);
+
 // ── Invites panel ──
 function InvitesPanel({ getToken, onBulkInvite }) {
   const [invites, setInvites] = useState(null);
@@ -237,8 +241,14 @@ function InvitesPanel({ getToken, onBulkInvite }) {
     }
   };
 
-  const doRevoke = async (invite) => {
-    if (!window.confirm(`Revoke the invitation for ${invite.child_name} (${invite.parent_email})?`)) return; // eslint-disable-line no-alert
+  // One action, two meanings (bin semantics): removing a live invite revokes
+  // it; removing a revoked/expired one deletes it permanently.
+  const doRemove = async (invite) => {
+    const isBinned = BINNED_STATUSES.has(invite.status);
+    const message = isBinned
+      ? `Delete the invitation for ${invite.child_name} (${invite.parent_email}) permanently?`
+      : `Revoke the invitation for ${invite.child_name} (${invite.parent_email})?`;
+    if (!window.confirm(message)) return; // eslint-disable-line no-alert
     setActionBusy(invite.id);
     try {
       const token = await getToken();
@@ -248,7 +258,27 @@ function InvitesPanel({ getToken, onBulkInvite }) {
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
-        alert(data.error || 'Couldn\'t revoke. Please try again.'); // eslint-disable-line no-alert
+        alert(data.error || 'Couldn\'t remove the invitation. Please try again.'); // eslint-disable-line no-alert
+        return;
+      }
+      await load();
+    } finally {
+      setActionBusy(null);
+    }
+  };
+
+  const doEmptyBin = async (count) => {
+    if (!window.confirm(`Delete all ${count} revoked and expired invitations permanently?`)) return; // eslint-disable-line no-alert
+    setActionBusy('bin');
+    try {
+      const token = await getToken();
+      const res = await fetch(`${process.env.REACT_APP_TUTOR_API_URL}/api/tutor/invites/bin`, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || 'Couldn\'t empty the bin. Please try again.'); // eslint-disable-line no-alert
         return;
       }
       await load();
@@ -341,9 +371,24 @@ function InvitesPanel({ getToken, onBulkInvite }) {
                 </div>
               )}
 
+              {!loading && invites && invites.filter(i => BINNED_STATUSES.has(i.status)).length > 0 && (
+                <div className="px-4 pt-3 pb-1 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => doEmptyBin(invites.filter(i => BINNED_STATUSES.has(i.status)).length)}
+                    disabled={actionBusy === 'bin'}
+                    className="flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-red-600 transition-colors"
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                    Empty bin ({invites.filter(i => BINNED_STATUSES.has(i.status)).length})
+                  </button>
+                </div>
+              )}
+
               {!loading && invites && invites.map(invite => {
                 const { label, colour } = INVITE_STATUS_MAP[invite.status] || { label: invite.status, colour: 'bg-slate-100 text-slate-600' };
                 const isLive = LIVE_STATUSES.has(invite.status);
+                const isBinned = BINNED_STATUSES.has(invite.status);
                 const canLink = ['pending', 'sent', 'send_failed'].includes(invite.status);
                 const canResend = invite.status === 'send_failed' || invite.status === 'sent';
                 const busy = actionBusy === invite.id;
@@ -394,14 +439,14 @@ function InvitesPanel({ getToken, onBulkInvite }) {
                           <Mail className="w-3.5 h-3.5" />
                         </button>
                       )}
-                      {isLive && (
+                      {(isLive || isBinned) && (
                         <button
                           type="button"
-                          onClick={() => doRevoke(invite)}
+                          onClick={() => doRemove(invite)}
                           disabled={busy}
                           className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg transition-colors"
-                          title="Revoke invitation"
-                          aria-label="Revoke invitation"
+                          title={isBinned ? 'Delete permanently' : 'Revoke invitation'}
+                          aria-label={isBinned ? 'Delete permanently' : 'Revoke invitation'}
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>

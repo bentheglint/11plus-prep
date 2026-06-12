@@ -255,12 +255,15 @@ export const seed = {
   },
 
   async tutor(db, userId, email = 'tutor@test.com') {
+    // tutor_code is UNIQUE — derive it from userId so tests can seed
+    // multiple tutors without colliding.
+    const code = `TC-${userId}`.slice(0, 32);
     await db
       .prepare(
         `INSERT INTO tutors (id, email, display_name, tutor_code)
-         VALUES (?, ?, 'Test Tutor', 'TEST-CODE')`
+         VALUES (?, ?, 'Test Tutor', ?)`
       )
-      .bind(userId, email)
+      .bind(userId, email, code)
       .run();
   },
 

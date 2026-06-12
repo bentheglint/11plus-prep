@@ -386,7 +386,22 @@ export async function handleInviteRoutes(request, env, userId, path, ctx) {
     return json({ link: `${APP_BASE_URL}/invite/${rawToken}` });
   }
 
+  // ── DELETE /api/tutor/invites/bin ────────────────────────────────────────
+  // Empty the bin: permanently delete every revoked/expired invite for this
+  // tutor. Must be matched BEFORE the :id route below, which would otherwise
+  // capture "bin" as an invite id. The cron sweeper purges these at 90 days
+  // anyway; this lets a tutor tidy up immediately.
+  if (path === '/api/tutor/invites/bin' && request.method === 'DELETE') {
+    const result = await db.prepare(
+      `DELETE FROM tutor_invites WHERE tutor_id=? AND status IN ('revoked','expired')`
+    ).bind(userId).run();
+    return json({ ok: true, deleted: result.meta.changes });
+  }
+
   // ── DELETE /api/tutor/invites/:id ────────────────────────────────────────
+  // Bin semantics, one verb: deleting a live invite revokes it (moves it to
+  // the bin); deleting a revoked/expired invite removes it permanently.
+  // 'joined' is roster history and is never deletable here.
   const deleteMatch = path.match(/^\/api\/tutor\/invites\/([^/]+)$/);
   if (deleteMatch && request.method === 'DELETE') {
     const inviteId = deleteMatch[1];
@@ -397,11 +412,19 @@ export async function handleInviteRoutes(request, env, userId, path, ctx) {
       WHERE id=? AND tutor_id=? AND status IN ('needs_review','pending','sent','send_failed')
     `).bind(inviteId, userId).run();
 
-    if (result.meta.changes === 0) {
-      return json({ error: 'Invite not found or not revocable' }, 409);
+    if (result.meta.changes === 1) {
+      return json({ ok: true, binned: true });
     }
 
-    return json({ ok: true });
+    const purged = await db.prepare(
+      `DELETE FROM tutor_invites WHERE id=? AND tutor_id=? AND status IN ('revoked','expired')`
+    ).bind(inviteId, userId).run();
+
+    if (purged.meta.changes === 1) {
+      return json({ ok: true, deleted: true });
+    }
+
+    return json({ error: 'Invite not found or not deletable' }, 409);
   }
 
   return null;
