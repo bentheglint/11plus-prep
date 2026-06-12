@@ -5255,18 +5255,18 @@ longdivision: {
     {
       id: 185,
       difficulty: 1,
-      question: "A teacher says the answer to 891 ÷ 9 is 89. Without calculating, explain why this must be wrong.",
-      options: ["89 × 9 = 801, not 891", "891 ÷ 9 should be close to 100", "The answer should be 99", "9 × 89 = 711", "The answer must be less than 89"],
+      question: "A teacher says the answer to 891 ÷ 9 is 89. Without doing the division, which check shows this must be wrong?",
+      options: ["89 × 9 = 801, which is not 891", "89 is close to 100, so it looks about right", "891 is an odd number", "9 × 89 = 711", "The answer should be smaller than 9"],
       correct: 0,
-      explanation: "Check by multiplying: 89 × 9 = 801, which is not 891. The correct answer is 99 (9 × 99 = 891). The multiplication check quickly shows the teacher's answer is wrong. ✓"
+      explanation: "Use the inverse: if 891 ÷ 9 were 89, then 89 × 9 would equal 891. But 89 × 9 = 801, not 891, so 89 must be wrong. (The correct answer is 99, because 99 × 9 = 891.) ✓"
     },
     {
       id: 186,
       difficulty: 2,
-      question: "Estimate 1176 ÷ 28 by rounding both numbers to the nearest ten.",
+      question: "Estimate 1176 ÷ 28 by rounding 1176 to the nearest hundred and 28 to the nearest ten.",
       options: ["36", "40", "38", "42", "44"],
       correct: 1,
-      explanation: "Round 1176 to 1200 and 28 to 30. 1200 ÷ 30 = 40. The actual answer is 42, so 40 is a good estimate. ✓"
+      explanation: "Round 1176 to the nearest hundred: 1200. Round 28 to the nearest ten: 30. Then 1200 ÷ 30 = 40. The exact answer is 42, so 40 is a good estimate. ✓"
     },
     {
       id: 187,
@@ -21570,7 +21570,7 @@ anglesshapes: {
     {
       id: 5,
       difficulty: 1,
-      visual: { component: "AngleDiagram", props: { angle1: 60, angle2: 60, angle3: 60, showAngle3: false } },
+      visual: { component: "AngleDiagram", props: { angle1: 60, angle2: 60, angle3: 60, labels: ["?°", "?°", "?°"] } },
       question: "An equilateral triangle has all three sides equal. What is each angle in an equilateral triangle?",
       options: ["45°", "60°", "75°", "90°", "120°"],
       correct: 1,
@@ -21587,7 +21587,7 @@ anglesshapes: {
     {
       id: 7,
       difficulty: 1,
-      visual: { component: "AngleDiagram", props: { angle1: 45, angle2: 90, angle3: 45 } },
+      visual: { component: "AngleDiagram", props: { angle1: 30, angle2: 90, angle3: 60, showAngle3: false } },
       question: "Two angles in a triangle are 30° and 90°. What type of triangle is this?",
       options: ["Equilateral", "Isosceles", "Obtuse", "Right-angled", "Scalene"],
       correct: 3,
@@ -22732,7 +22732,7 @@ anglesshapes: {
     {
       id: 133,
       difficulty: 2,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 125, label: "125°", color: "#7C3AED"}, {value: 55, label: "?", color: "#FDCB6E"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 125, label: "125°", color: "#7C3AED"}, {value: 55, label: "", color: "#E2E8F0"}, {value: 125, label: "?", color: "#FDCB6E"}, {value: 55, label: "", color: "#E2E8F0"}], size: 200 } },
       question: "Two straight lines cross each other. One of the angles formed is 125°. What is the angle vertically opposite to it?",
       options: ["45°", "55°", "65°", "115°", "125°"],
       correct: 4,
@@ -22838,7 +22838,7 @@ anglesshapes: {
       question: "Angle p and angle q are on a straight line. Angle r is vertically opposite to angle q. If p = 68°, what is angle r?",
       options: ["112°", "68°", "102°", "22°", "122°"],
       correct: 0,
-      explanation: "Angles on a straight line add up to 180°. So angle q = 180° − 68° = 112°. Vertically opposite angles are equal, so angle r = 112°. ✓"
+      explanation: "Angles on a straight line add up to 180°, so angle q = 180° − 68° = 112°. \"Vertically opposite\" angles are the pair that sit directly across from each other where two straight lines cross — they are always equal. So angle r = angle q = 112°. ✓"
     },
 
     // ============================================
@@ -22869,7 +22869,7 @@ anglesshapes: {
     {
       id: 147,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "?°", color: "#7C3AED"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "", color: "#7C3AED"}], size: 200 } },
       question: "Which of these is a right angle?",
       options: ["45°", "60°", "180°", "90°", "270°"],
       correct: 3,
@@ -22973,7 +22973,7 @@ anglesshapes: {
     {
       id: 158,
       difficulty: 1,
-      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "120°", color: "#7C3AED"}], size: 200 } },
+      visual: { component: "AngleDisplay", props: { angles: [{value: 120, label: "?°", color: "#7C3AED"}], size: 200 } },
       question: "An obtuse angle is exactly 3 times the size of a 40° angle. What is the obtuse angle?",
       options: ["80°", "100°", "160°", "140°", "120°"],
       correct: 4,
@@ -26881,10 +26881,10 @@ datahandling: {
           showTotals: false
         }
       },
-      question: "The table shows how many library books each class borrowed last week. How many books did Class 5B borrow in total?",
-      options: ["15", "18", "19", "22", "20"],
-      correct: 4,
-      explanation: "Class 5B: Fiction = 7, Non-fiction = 8, Comics = 5. Total = 7 + 8 + 5 = 20 books. ✓"
+      question: "The table shows how many items each class borrowed from the library last week. How many items did Class 5B borrow in total?",
+      options: ["18", "19", "21", "20", "22"],
+      correct: 3,
+      explanation: "Class 5B borrowed Fiction = 7, Non-fiction = 8 and Comics = 5. Add all three: 7 + 8 + 5 = 20 items. ✓"
     },
     {
       id: 165,
