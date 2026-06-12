@@ -1,4 +1,5 @@
 import { TEST_KID, TEST_PRIVATE_JWK } from './test-keys.js';
+import migration0016 from '../migrations/0016_tutor_invites.sql?raw';
 
 export const CLERK_DOMAIN = 'test.clerk.11plus.dev';
 
@@ -192,6 +193,24 @@ export async function createSchema(db) {
     .map(s => s.trim())
     .filter(Boolean);
   await db.batch(stmts.map(sql => db.prepare(sql)));
+
+  // Import the REAL migration for tutor_invites so the test schema is always
+  // derived from the source of truth, not a hand-maintained copy.
+  // Strip comment lines within each chunk (don't filter whole chunks by their
+  // first line — the CREATE TABLE chunk starts with a comment block).
+  const migrationStmts = migration0016
+    .split(/;\s*\n/)
+    .map(s =>
+      s
+        .split('\n')
+        .filter(line => !line.trim().startsWith('--'))
+        .join('\n')
+        .trim()
+    )
+    .filter(Boolean);
+  for (const sql of migrationStmts) {
+    await db.prepare(sql).run();
+  }
 }
 
 export async function cleanDb(db) {
@@ -204,6 +223,7 @@ export async function cleanDb(db) {
     db.prepare('DELETE FROM assignment_recipients'),
     db.prepare('DELETE FROM assignment_items'),
     db.prepare('DELETE FROM assignments'),
+    db.prepare('DELETE FROM tutor_invites'),
     db.prepare('DELETE FROM pupil_tutors'),
     db.prepare('DELETE FROM tutors'),
     db.prepare('DELETE FROM children'),
@@ -242,6 +262,22 @@ export const seed = {
       )
       .bind(userId, email)
       .run();
+  },
+
+  async invite(db, { id, tokenHash, tokenPlain = null, tutorId, batchId = 'test-batch', parentEmail, childName, yearGroup = null, status = 'pending', expiresAt = null, sentAt = null, joinedAt = null, joinedChildId = null, claimedByEmail = null }) {
+    const expires = expiresAt || "datetime('now','+30 days')";
+    await db.prepare(`
+      INSERT INTO tutor_invites
+        (id, token_hash, token_plain, tutor_id, batch_id, parent_email,
+         child_name, year_group, status, expires_at, sent_at, joined_at,
+         joined_child_id, claimed_by_email)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ${expiresAt ? '?' : "datetime('now','+30 days')"}, ?, ?, ?, ?)
+    `).bind(
+      id, tokenHash, tokenPlain, tutorId, batchId, parentEmail,
+      childName, yearGroup, status,
+      ...(expiresAt ? [expiresAt] : []),
+      sentAt, joinedAt, joinedChildId, claimedByEmail
+    ).run();
   },
 
   async pupilTutor(db, childId, tutorId) {

@@ -133,6 +133,14 @@ export async function handleAccountRoutes(request, env, userId, path) {
     // Fetch email before deleting so we can send a confirmation
     const acct = await db.prepare('SELECT email, name FROM accounts WHERE id = ?').bind(userId).first();
 
+    // Delete invite rows for this parent's email and their children before
+    // the account CASCADE fires (the email-based rows have no FK to accounts).
+    const canonEmail = canonicalEmail(acct?.email ?? '');
+    await db.prepare(
+      `DELETE FROM tutor_invites WHERE parent_email = ?
+         OR joined_child_id IN (SELECT id FROM children WHERE account_id = ?)`
+    ).bind(canonEmail, userId).run();
+
     // ON DELETE CASCADE handles all child data
     const result = await db.prepare('DELETE FROM accounts WHERE id = ?').bind(userId).run();
 

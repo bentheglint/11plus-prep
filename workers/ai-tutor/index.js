@@ -15,6 +15,13 @@ import { handleReportRoutes } from './routes/report.js';
 import { handleMessagingRoutes } from './routes/messaging.js';
 import { handleRelationshipRoutes } from './routes/relationships.js';
 import { handleAdminRoutes } from './routes/admin.js';
+import {
+  handleInviteRoutes,
+  handlePublicInviteLookup,
+  handleClaimInvite,
+  handleInviteAdminRoutes,
+  sweepInvites,
+} from './routes/invites.js';
 
 // ── Clerk JWT Verification ──
 
@@ -333,7 +340,7 @@ async function handleTutor(request, env) {
 // ── Router ──
 
 const worker = {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     // Origin allowlist gate — browser requests from unknown origins get
     // 403 before any routing. Skips silently for server-to-server calls
     // (no Origin header).
@@ -423,6 +430,9 @@ const worker = {
 
       // Public tutor profile — no auth required (join page preview)
       if (path.startsWith('/api/tutor/public/') && request.method === 'GET') {
+        // Public invite token lookup takes precedence over the generic tutor profile lookup
+        const invitePublicResult = await handlePublicInviteLookup(request, env, path);
+        if (invitePublicResult) return invitePublicResult;
         return handleTutorRoutes(request, env, null, path);
       }
 
@@ -447,6 +457,8 @@ const worker = {
         if (admin.error) return admin.error;
         const adminResult = await handleAdminRoutes(request, env, admin, path);
         if (adminResult) return adminResult;
+        const inviteAdminResult = await handleInviteAdminRoutes(request, env, admin, path, ctx);
+        if (inviteAdminResult) return inviteAdminResult;
         return json({ error: 'Admin route not found', path }, 404);
       }
 
@@ -468,6 +480,12 @@ const worker = {
         const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
         if (tutorResult) return tutorResult;
         return json({ error: 'Tutor route not found', path }, 404);
+      }
+      // Claim invite — auth only (no tutor profile required)
+      if (path === '/api/tutor/claim-invite' && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        return handleClaimInvite(request, env, auth.userId);
       }
       if (path.startsWith('/api/tutor')) {
         const auth = await requireTutorProfile(request, env);
@@ -496,6 +514,9 @@ const worker = {
 
         const relResult = await handleRelationshipRoutes(request, env, auth.userId, path);
         if (relResult) return relResult;
+
+        const inviteResult = await handleInviteRoutes(request, env, auth.userId, path, ctx);
+        if (inviteResult) return inviteResult;
 
         return json({ error: 'Tutor route not found', path }, 404);
       }
@@ -604,6 +625,7 @@ const worker = {
       ctx.waitUntil(Promise.all([
         reconcileSubscriptions(env).catch(err => console.error('[reconciliation] failed:', err.message)),
         handleTrialEmails(env).catch(err => console.error('[trial-email] failed:', err.message)),
+        sweepInvites(env).catch(err => console.error('[invite-sweep] failed:', err.message)),
       ]));
     }
   },
