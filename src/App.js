@@ -1465,6 +1465,10 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
       setCurrentView('flags');
     } else if (urlViewParam === 'admin') {
       setCurrentView('admin');
+    } else if (urlViewParam === 'bulkInvite') {
+      setCurrentView('bulkInvite');
+    } else if (urlViewParam === 'inviteClaim') {
+      setCurrentView('inviteClaim');
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const previewTopic = urlParams.get('preview');

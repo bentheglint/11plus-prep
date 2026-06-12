@@ -6,7 +6,7 @@ const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
 // ── Child selector (mirrors JoinScreen's ChildSelector) ──
 function ChildSelector({ children, selected, onSelect }) {
-  if (children.length === 1) return null;
+  if (children.length <= 1) return null;
   return (
     <div className="mb-6">
       <p className="text-sm font-medium text-slate-700 mb-3">Which child should be connected?</p>
@@ -276,14 +276,20 @@ export default function InviteClaimScreen({ inviteToken, childrenList, getToken,
               </div>
             )}
 
-            <button
-              type="button"
-              onClick={handleClaim}
-              disabled={!selectedChildId || claiming}
-              className="w-full py-3.5 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] disabled:opacity-50 transition-colors"
-            >
-              {claiming ? 'Connecting…' : `Connect to ${tutor?.displayName || 'tutor'}`}
-            </button>
+            {(childrenList || []).length === 0 ? (
+              <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-700" role="alert">
+                There's no child profile on this account yet. Add a child first, then open this invitation link again.
+              </div>
+            ) : (
+              <button
+                type="button"
+                onClick={handleClaim}
+                disabled={!selectedChildId || claiming}
+                className="w-full py-3.5 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] disabled:opacity-50 transition-colors"
+              >
+                {claiming ? 'Connecting…' : `Connect to ${tutor?.displayName || 'tutor'}`}
+              </button>
+            )}
           </div>
         </motion.div>
       </div>
