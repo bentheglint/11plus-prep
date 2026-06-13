@@ -39,4 +39,39 @@ describe('lesson bank integrity', () => {
       expect(() => selectLesson('balanceEquations', {}, history, 'integrity-test')).not.toThrow();
     }
   });
+
+  // MicroLessonScreen calls screen.interaction.getOptions(vars) and
+  // .correctAnswer(vars) DIRECTLY, with no typeof guard (MicroLessonScreen.js
+  // ~817/824). A multiple-choice screen authored without those as functions
+  // throws "getOptions is not a function" and blanks the lesson the moment a
+  // child reaches the interact screen (Sentry JAVASCRIPT-REACT-3, 24 May 2026).
+  // Walk every screen of every lesson and pin the contract.
+  const everyLesson = [];
+  for (const key of topicKeys) {
+    for (const sc of lessonBank[key].subConcepts) {
+      for (const lesson of sc.lessons || []) {
+        everyLesson.push([`${key}/${sc.id}/${lesson.id}`, lesson]);
+      }
+    }
+  }
+
+  test.each(everyLesson)('multiple-choice screens in %s expose getOptions + correctAnswer as functions', (_label, lesson) => {
+    const sampleVars = (lesson.variableSets && lesson.variableSets[0]) || {};
+    for (const screen of lesson.screens || []) {
+      const interaction = screen?.interaction;
+      if (interaction?.type !== 'multiple-choice') continue;
+
+      expect(typeof interaction.getOptions).toBe('function');
+      expect(typeof interaction.correctAnswer).toBe('function');
+
+      // Exercise both against a real variable set — must not throw, and
+      // getOptions must yield a non-empty, spreadable array (the screen does
+      // [...getOptions(vars)] then shuffles).
+      let options;
+      expect(() => { options = interaction.getOptions(sampleVars); }).not.toThrow();
+      expect(Array.isArray(options)).toBe(true);
+      expect(options.length).toBeGreaterThan(0);
+      expect(() => interaction.correctAnswer(sampleVars)).not.toThrow();
+    }
+  });
 });

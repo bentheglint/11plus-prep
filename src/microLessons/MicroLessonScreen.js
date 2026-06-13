@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import * as Sentry from '@sentry/react';
 import { ArrowLeft, ChevronLeft, Sparkles, Flag, BookOpen, Calculator, Brain, MessageCircle, Mic, MicOff } from 'lucide-react';
 import { GridModel, WorkedExample, NumberLine, BarModel, PlaceValueChart, ColumnMethod, AngleDiagram, BusStopDiagram, RectangleDiagram, TriangleAreaDiagram, ParallelogramDiagram, CuboidDiagram, LShapeDiagram, SentenceDisplay, LetterTiles, AlphabetLine, SlidingWindow, LogicDiagram, CodeTable, SequenceChain, AnalogyDisplay, WordChipsDisplay, SDTTriangle, AngleDisplay, QuadShape, ParallelLines, ExteriorAngle, RegularPolygon, FunctionMachine, LineGraph, PathBorderDiagram, BarChart, PieChart, TwoWayTable } from './visuals';
 import { selectLesson } from './lessonData';
@@ -814,14 +815,30 @@ export default function MicroLessonScreen({
     const screen = lesson.screens[lessonScreenIndex];
     const varsForScreen = (screen?.type === 'interact' && interactVariables) ? interactVariables : variables;
     if (screen?.interaction?.type === 'multiple-choice') {
-      const options = [...screen.interaction.getOptions(varsForScreen)];
+      const { getOptions, correctAnswer } = screen.interaction;
+      // Defence-in-depth: a multiple-choice screen authored without these as
+      // functions used to throw "getOptions is not a function" and blank the
+      // whole lesson (Sentry JAVASCRIPT-REACT-3). lessonBankIntegrity now gates
+      // that at build time; if one ever slips through, report it and degrade to
+      // no-options (InteractionArea renders nothing) rather than white-screen a
+      // child mid-lesson. The report keeps the failure observable, not silent.
+      if (typeof getOptions !== 'function' || typeof correctAnswer !== 'function') {
+        Sentry.captureMessage('Malformed multiple-choice interaction: getOptions/correctAnswer not a function', {
+          level: 'error',
+          extra: { lessonId: lesson.id, subConcept: subConceptName, screenIndex: lessonScreenIndex },
+        });
+        setCachedOptions(null);
+        setCachedCorrectAnswer(null);
+        return;
+      }
+      const options = [...getOptions(varsForScreen)];
       // Shuffle options so correct answer position varies each time
       for (let i = options.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [options[i], options[j]] = [options[j], options[i]];
       }
       setCachedOptions(options);
-      setCachedCorrectAnswer(screen.interaction.correctAnswer(varsForScreen));
+      setCachedCorrectAnswer(correctAnswer(varsForScreen));
     } else {
       setCachedOptions(null);
       setCachedCorrectAnswer(null);
