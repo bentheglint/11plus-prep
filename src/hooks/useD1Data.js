@@ -1130,8 +1130,11 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
               };
               setStreakData(merged);
 
-              // Re-enqueue with server version and fresh UUID
-              const newVersion = opResult.currentVersion;
+              // Re-enqueue with server version and fresh UUID. Guard (JS-REACT-7):
+              // a null server version means no row exists — re-enqueue at version 1
+              // so the server upsert INSERTs it, never at null (which dead-letters).
+              const newVersion = opResult.currentVersion
+                ?? (opResult.currentData == null ? 1 : versionsRef.current.streaks);
               versionsRef.current = { ...versionsRef.current, streaks: newVersion };
               queue.enqueue('streaks', {
                 version: newVersion,
@@ -1150,7 +1153,10 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
               setLastSessionDate(mergedDate);
 
-              const newVersion = opResult.currentVersion;
+              // Guard (JS-REACT-7): null server version = no row → re-enqueue at
+              // version 1 so the server upsert INSERTs it, never at null.
+              const newVersion = opResult.currentVersion
+                ?? (opResult.currentData == null ? 1 : versionsRef.current.preferences);
               versionsRef.current = { ...versionsRef.current, preferences: newVersion };
               queue.enqueue('preferences', {
                 version: newVersion,

@@ -395,3 +395,137 @@ describe('Legacy prep-points op (absolute) still works', () => {
     expect(body.results[0].currentVersion).toBe(5);
   });
 });
+
+// ─────────────────────────────────────────────
+// preferences / streaks no-row upsert (JS-REACT-7 dead-letter fix)
+// These FAIL on the pre-fix UPDATE-only CAS code (no-row → 'conflict' → null
+// re-enqueue → dead-letter) and pass after the version-gated upsert.
+// ─────────────────────────────────────────────
+
+describe('preferences/streaks no-row upsert (JS-REACT-7)', () => {
+  it('preferences op for a child with NO row creates the row and returns ok', async () => {
+    const userId = 'user-prefs-norow';
+    const email = `${userId}@test.com`;
+    const childId = await seedAccount(env.DB, userId, email);
+    const token = await makeAuthToken({ userId, email });
+
+    const res = await postBatch(token, childId, [
+      { uuid: makeUUID(), type: 'preferences', payload: { version: 1, lastSessionDate: '2026-06-15' }, childId },
+    ]);
+
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.results[0].status).toBe('ok'); // was 'conflict' on the buggy code
+
+    const row = await env.DB.prepare('SELECT * FROM preferences WHERE child_id = ?').bind(childId).first();
+    expect(row).not.toBeNull();
+    expect(row.last_session_date).toBe('2026-06-15');
+    expect(row.version).toBe(1);
+  });
+
+  it('streaks op for a child with NO row creates the row and returns ok', async () => {
+    const userId = 'user-streaks-norow';
+    const email = `${userId}@test.com`;
+    const childId = await seedAccount(env.DB, userId, email);
+    const token = await makeAuthToken({ userId, email });
+
+    const res = await postBatch(token, childId, [
+      {
+        uuid: makeUUID(),
+        type: 'streaks',
+        payload: { version: 1, currentStreak: 3, longestStreak: 5, lastQuizDate: '2026-06-15', streakHistory: ['2026-06-13', '2026-06-14', '2026-06-15'] },
+        childId,
+      },
+    ]);
+
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.results[0].status).toBe('ok');
+
+    const row = await env.DB.prepare('SELECT * FROM streaks WHERE child_id = ?').bind(childId).first();
+    expect(row).not.toBeNull();
+    expect(row.current_streak).toBe(3);
+    expect(row.longest_streak).toBe(5);
+    expect(row.version).toBe(1);
+  });
+
+  it('no version disagreement: insert reports true version 1, follow-up write at v1 succeeds (not dead-letter)', async () => {
+    // Guards the Codex-found blocker: an insert must report newVersion 1, NOT
+    // clientVersion+1 (2), or the next client write conflicts forever.
+    const userId = 'user-prefs-seq';
+    const email = `${userId}@test.com`;
+    const childId = await seedAccount(env.DB, userId, email);
+    const token = await makeAuthToken({ userId, email });
+
+    const res1 = await postBatch(token, childId, [
+      { uuid: makeUUID(), type: 'preferences', payload: { version: 1, lastSessionDate: '2026-06-15' }, childId },
+    ]);
+    const body1 = await res1.json();
+    expect(body1.results[0].status).toBe('ok');
+    expect(body1.results[0].newVersion).toBe(1);   // true row version, not 2
+    expect(body1.versions.preferences).toBe(1);
+
+    // Client now holds version 1; a subsequent write at version 1 must succeed.
+    const res2 = await postBatch(token, childId, [
+      { uuid: makeUUID(), type: 'preferences', payload: { version: 1, lastSessionDate: '2026-06-16' }, childId },
+    ]);
+    const body2 = await res2.json();
+    expect(body2.results[0].status).toBe('ok');
+    expect(body2.results[0].newVersion).toBe(2);
+
+    const row = await env.DB.prepare('SELECT version, last_session_date FROM preferences WHERE child_id = ?').bind(childId).first();
+    expect(row.version).toBe(2);
+    expect(row.last_session_date).toBe('2026-06-16');
+  });
+
+  it('existing preferences row with mismatched version still returns conflict (optimistic lock preserved)', async () => {
+    const userId = 'user-prefs-conflict';
+    const email = `${userId}@test.com`;
+    const childId = await seedAccount(env.DB, userId, email);
+    const token = await makeAuthToken({ userId, email });
+
+    await env.DB.prepare(
+      `INSERT INTO preferences (child_id, last_session_date, version) VALUES (?, '2026-06-10', 5)`
+    ).bind(childId).run();
+
+    const res = await postBatch(token, childId, [
+      { uuid: makeUUID(), type: 'preferences', payload: { version: 1, lastSessionDate: '2026-06-15' }, childId },
+    ]);
+    const body = await res.json();
+    expect(body.results[0].status).toBe('conflict');
+    expect(body.results[0].currentVersion).toBe(5);
+
+    // Row must be untouched by the rejected write.
+    const row = await env.DB.prepare('SELECT version, last_session_date FROM preferences WHERE child_id = ?').bind(childId).first();
+    expect(row.version).toBe(5);
+    expect(row.last_session_date).toBe('2026-06-10');
+  });
+
+  it('existing streaks row with matching version updates and advances version', async () => {
+    const userId = 'user-streaks-update';
+    const email = `${userId}@test.com`;
+    const childId = await seedAccount(env.DB, userId, email);
+    const token = await makeAuthToken({ userId, email });
+
+    await env.DB.prepare(
+      `INSERT INTO streaks (child_id, current_streak, longest_streak, last_quiz_date, streak_history, version)
+       VALUES (?, 2, 2, '2026-06-14', '["2026-06-13","2026-06-14"]', 1)`
+    ).bind(childId).run();
+
+    const res = await postBatch(token, childId, [
+      {
+        uuid: makeUUID(),
+        type: 'streaks',
+        payload: { version: 1, currentStreak: 3, longestStreak: 3, lastQuizDate: '2026-06-15', streakHistory: ['2026-06-13', '2026-06-14', '2026-06-15'] },
+        childId,
+      },
+    ]);
+    const body = await res.json();
+    expect(body.results[0].status).toBe('ok');
+    expect(body.results[0].newVersion).toBe(2);
+
+    const row = await env.DB.prepare('SELECT current_streak, version FROM streaks WHERE child_id = ?').bind(childId).first();
+    expect(row.current_streak).toBe(3);
+    expect(row.version).toBe(2);
+  });
+});

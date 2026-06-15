@@ -343,19 +343,23 @@ export async function handleBatch(request, env, userId) {
         continue;
       }
 
-      // Streaks / prep_points / preferences — pre-check, then atomic CAS UPDATE.
+      // Streaks / prep_points / preferences — pre-check, then atomic CAS/upsert.
       // Pre-check is best-effort (saves us building a stmt for an obvious
       // mismatch); the SQL WHERE version=? is the real conflict gate.
       const currentVersion = currentVersions[versionKey];
-      if (clientVersion !== currentVersion) {
-        const currentData = versionKey === 'streaks' ? streaksRow
-          : versionKey === 'prep-points' ? ppRow
-          : prefsRow;
+      const existingRow = versionKey === 'streaks' ? streaksRow
+        : versionKey === 'prep-points' ? ppRow
+        : prefsRow;
+      // streaks/preferences use an upsert: a MISSING row must fall through to the
+      // INSERT branch, NOT short-circuit on the version default (1). That default
+      // short-circuit is the second half of the JS-REACT-7 dead-letter trap.
+      const upsertEnabled = versionKey === 'streaks' || versionKey === 'preferences';
+      if (!(upsertEnabled && !existingRow) && clientVersion !== currentVersion) {
         results.push({
           uuid: op.uuid,
           status: 'conflict',
           currentVersion,
-          currentData,
+          currentData: existingRow,
         });
         continue;
       }
@@ -373,16 +377,28 @@ export async function handleBatch(request, env, userId) {
         }
       }
 
-      // Build the atomic CAS UPDATE
+      // Build the atomic data statement. streaks/preferences use a version-gated
+      // UPSERT (INSERT…ON CONFLICT) so a MISSING row self-heals instead of
+      // dead-lettering (JS-REACT-7); prep-points keeps the UPDATE-only CAS.
       let dataStmt;
+      let returnsVersion = false; // upsert paths read the true version via RETURNING
       if (versionKey === 'streaks') {
         const { currentStreak, longestStreak, lastQuizDate, streakHistory } = op.payload;
         dataStmt = db.prepare(
-          `UPDATE streaks SET current_streak = ?, longest_streak = ?, last_quiz_date = ?,
-           streak_history = ?, version = version + 1, updated_at = datetime('now')
-           WHERE child_id = ? AND version = ?`
-        ).bind(currentStreak ?? 0, longestStreak ?? 0, lastQuizDate || null,
-               JSON.stringify(streakHistory || []), childId, clientVersion);
+          `INSERT INTO streaks (child_id, current_streak, longest_streak, last_quiz_date, streak_history, version)
+           VALUES (?, ?, ?, ?, ?, 1)
+           ON CONFLICT(child_id) DO UPDATE SET
+             current_streak = excluded.current_streak,
+             longest_streak = excluded.longest_streak,
+             last_quiz_date = excluded.last_quiz_date,
+             streak_history = excluded.streak_history,
+             version = streaks.version + 1,
+             updated_at = datetime('now')
+           WHERE streaks.version = ?
+           RETURNING version`
+        ).bind(childId, currentStreak ?? 0, longestStreak ?? 0, lastQuizDate || null,
+               JSON.stringify(streakHistory || []), clientVersion);
+        returnsVersion = true;
       } else if (versionKey === 'prep-points') {
         const { total, level, todayPP, todayDate } = op.payload;
         dataStmt = db.prepare(
@@ -393,9 +409,16 @@ export async function handleBatch(request, env, userId) {
       } else if (versionKey === 'preferences') {
         const { lastSessionDate } = op.payload;
         dataStmt = db.prepare(
-          `UPDATE preferences SET last_session_date = ?, version = version + 1, updated_at = datetime('now')
-           WHERE child_id = ? AND version = ?`
-        ).bind(lastSessionDate || null, childId, clientVersion);
+          `INSERT INTO preferences (child_id, last_session_date, version)
+           VALUES (?, ?, 1)
+           ON CONFLICT(child_id) DO UPDATE SET
+             last_session_date = excluded.last_session_date,
+             version = preferences.version + 1,
+             updated_at = datetime('now')
+           WHERE preferences.version = ?
+           RETURNING version`
+        ).bind(childId, lastSessionDate || null, clientVersion);
+        returnsVersion = true;
       }
 
       if (dataStmt) {
@@ -407,6 +430,7 @@ export async function handleBatch(request, env, userId) {
           kind: 'cas',
           versionKey,
           clientVersion,
+          returnsVersion,
           dataStmt,
           markerStmt: buildUUIDMarker(db, childId, op.uuid, op.type),
         });
@@ -601,8 +625,11 @@ export async function handleBatch(request, env, userId) {
         await db.batch([plan.dataStmt, plan.markerStmt]);
         // status was set to 'ok' when the plan was queued
       } else {
-        // CAS path
-        const dataResult = await plan.dataStmt.run();
+        // CAS path. Upsert paths (returnsVersion) use .all() so RETURNING rows
+        // come back; UPDATE-only paths use .run(). Both expose meta.changes.
+        const dataResult = plan.returnsVersion
+          ? await plan.dataStmt.all()
+          : await plan.dataStmt.run();
         if (dataResult?.meta?.changes === 0) {
           // Lost the race or pre-check was stale. Fetch fresh state for the client.
           let currentData = null;
@@ -646,7 +673,12 @@ export async function handleBatch(request, env, userId) {
         } catch (err) {
           if (!isUuidConflictError(err)) throw err;
         }
-        const newVersion = plan.clientVersion + 1;
+        // Upsert paths report the TRUE resulting version via RETURNING (1 on a
+        // fresh insert, clientVersion+1 on update) so client and server never
+        // disagree; UPDATE-only paths always advance by one.
+        const newVersion = plan.returnsVersion
+          ? (dataResult.results?.[0]?.version ?? (plan.clientVersion + 1))
+          : (plan.clientVersion + 1);
         if (plan.versionKey in finalVersions) {
           finalVersions[plan.versionKey] = newVersion;
         }
