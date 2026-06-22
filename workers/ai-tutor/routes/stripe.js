@@ -8,9 +8,9 @@
 // POST /api/stripe/webhook    — public (signature-verified). Syncs D1
 //                               subscription state from Stripe events.
 //
-// Trial Option B: the 7-day free period is tracked client-side from
+// Trial Option B: the 30-day free period is tracked client-side from
 // accounts.created_at. Stripe subscriptions start with no trial — the
-// user only enters card details when they want to keep access past day 7.
+// user only enters card details when they want to keep access past day 30.
 
 import { json, BASE_HEADERS } from '../helpers.js';
 
