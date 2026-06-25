@@ -256,16 +256,23 @@ Word class questions sit within the **comprehension section** of the GL English 
 ### Word Length Distribution
 | Length | Frequency | Difficulty |
 |--------|-----------|------------|
-| 3 letters | ~20% | D1 only |
-| 4 letters | ~60% | Core GL length (D1-D3) |
-| 5 letters | ~20% | D3 only |
-| 6+ letters | Rare/never | — |
+| 3 letters | ~15% | D1–D2 (rare) |
+| 4 letters | ~85% | Core GL length (D1–D3) |
+| 5+ letters | None | **Not authentic GL — do not generate** |
+
+> **Correction (25 Jun 2026):** an earlier version of this table claimed
+> 5-letter hidden words at ~20% (D3). That was an uncorroborated estimate,
+> contradicted by every practitioner source (`vr-english-strategies.md`,
+> `GL-11plus-English-VR-Research.md` "Hidden **Four**-Letter Word",
+> `exam-strategy-tips.md` "almost always 4 letters") and by tutor field
+> feedback (Sue Medley). Authentic GL hidden-words items are 4-letter
+> dominant, 3-letter occasionally, never 5+. See the deep-dive in
+> `gl-topic-research/hidden-words.md`.
 
 ### Split Patterns
 - **2+2** (4-letter): most common, easiest to spot
 - **1+3 or 3+1**: harder — child must consider single-letter starts
-- **1+4 or 4+1** (5-letter): very hard to spot
-- GL favours **uneven splits** for harder questions
+- GL favours **uneven splits** (1+3 / 3+1) for harder questions
 
 ### Difficulty Criteria
 
@@ -284,12 +291,11 @@ Word class questions sit within the **comprehension section** of the GL English 
 - One near-miss distractor possible
 
 **D3 (Hard ~30%):**
-- 4-5 letter less common/abstract words (plume, ember, agent, lemon)
+- 4-letter less common/abstract words (wane, fret, mead, gild, rust)
 - Longer sentences (10-14 words) with many boundaries to scan
 - Buried at start or end of sentence
-- Uneven splits (1+4, 4+1)
-- Multiple red herring letter combinations
-- Word length may not be given
+- Uneven splits (1+3, 3+1)
+- Multiple red herring letter combinations (shorter incidental words at other boundaries)
 
 ### Common GL Traps
 1. **Words within single words** — "every" contains "ever"/"very" but these aren't across two words

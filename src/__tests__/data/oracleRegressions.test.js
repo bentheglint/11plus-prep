@@ -879,25 +879,68 @@ describe('Cross-Question Analysis — VR-wide Word Repetition', () => {
     expect(overused).toEqual([]);
   });
 
-  // Hidden Words: no hidden answer word appears more than twice
-  it('Hidden Words — no hidden answer word appears more than twice', () => {
+  // 2026-06-25: Hidden Words regenerated to authentic GL (Sue Medley feedback).
+  // Stems carry NO meaning clue; words are 3-4 letters (never 5+); the answer is
+  // the two ADJACENT tiles whose boundary hides the word. This guards all of that.
+  // The old test parsed "meaning 'CLUE'" — gone now, so it was rewritten to derive
+  // the hidden word from the explanation and pin the real invariants. (Word-validity
+  // and same-length-collision were checked at authoring time against a 274k-word
+  // dictionary; those need a dep we don't ship, so this pins structure only.)
+  describe('Hidden Words — authentic GL invariants', () => {
     const questions = getTopicQuestions(vrData, 'hiddenWords');
-    const wordCounts = {};
-    questions.forEach(q => {
-      if (!q.question) return;
-      // Extract the described hidden word from the question text
-      // Pattern: "A X-letter word meaning 'CLUE'" or "meaning 'CLUE' is hidden"
-      const match = q.question.match(/meaning\s+['"]([^'"]+)['"]/i);
-      if (match) {
-        const clue = match[1].toUpperCase();
-        wordCounts[clue] = (wordCounts[clue] || 0) + 1;
-      }
+
+    it('has a full bank', () => {
+      expect(questions.length).toBeGreaterThan(100);
     });
-    const overused = Object.entries(wordCounts)
-      .filter(([, c]) => c > 2)
-      .map(([w, c]) => `${w}: ${c}`);
-    if (overused.length) console.log('HiddenWords overused clues:', overused);
-    expect(overused).toEqual([]);
+
+    it('every stem is the neutral 3/4-letter stem with NO meaning clue', () => {
+      const NEUTRAL = [
+        'A 3-letter word is hidden across two of these adjacent words. Find the two words.',
+        'A 4-letter word is hidden across two of these adjacent words. Find the two words.',
+      ];
+      const bad = questions.filter(q => !NEUTRAL.includes(q.question) || /meaning|means|word for/i.test(q.question));
+      expect(bad.map(q => `${q.id}: ${q.question}`)).toEqual([]);
+    });
+
+    it('every correctPair is two ADJACENT tile indices (j === i + 1)', () => {
+      const bad = questions.filter(q => {
+        if (!Array.isArray(q.correctPair) || q.correctPair.length !== 2) return true;
+        const [i, j] = q.correctPair;
+        return j !== i + 1 || i < 0 || j >= q.options.length;
+      });
+      expect(bad.map(q => `${q.id}: ${JSON.stringify(q.correctPair)}`)).toEqual([]);
+    });
+
+    it('hidden word is 3 or 4 letters (never 5+) and STRADDLES the answer boundary', () => {
+      const bad = [];
+      questions.forEach(q => {
+        const m = q.explanation && q.explanation.match(/word\s+([A-Za-z]+)\s+is hidden/i);
+        if (!m) { bad.push(`${q.id}: cannot parse hidden word`); return; }
+        const hidden = m[1].toUpperCase();
+        const L = hidden.length;
+        if (L < 3 || L > 4) { bad.push(`${q.id}: "${hidden}" length ${L}`); return; }
+        const [i, j] = q.correctPair || [];
+        const a = (q.options[i] || '').toUpperCase();
+        const b = (q.options[j] || '').toUpperCase();
+        let straddles = false;
+        for (let k = 1; k <= L - 1; k++) {
+          if (k <= a.length && (L - k) <= b.length &&
+              a.slice(a.length - k) + b.slice(0, L - k) === hidden) straddles = true;
+        }
+        if (!straddles) bad.push(`${q.id}: "${hidden}" does not straddle '${a}'+'${b}'`);
+      });
+      expect(bad).toEqual([]);
+    });
+
+    it('no hidden word appears more than twice', () => {
+      const counts = {};
+      questions.forEach(q => {
+        const m = q.explanation && q.explanation.match(/word\s+([A-Za-z]+)\s+is hidden/i);
+        if (m) counts[m[1].toUpperCase()] = (counts[m[1].toUpperCase()] || 0) + 1;
+      });
+      const overused = Object.entries(counts).filter(([, c]) => c > 2).map(([w, c]) => `${w}: ${c}`);
+      expect(overused).toEqual([]);
+    });
   });
 });
 

@@ -6641,1342 +6641,1351 @@ const vrData = {
           id: 1,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'not closed' is hidden across two of these words. Find the two words.",
-          options: ["The","top","end","was","closed"],
-          correctPair: [1,2],
-          explanation: "The word OPEN is hidden across 'tOP' and 'ENd'. Take the last two letters of 'top' (OP) and the first two of 'end' (EN) = OPEN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["My","top","envelope","fell","off"],
+          correctPair: [1, 2],
+          explanation: "The word OPEN is hidden across 'tOP' and 'ENvelope'. Take the last 2 letters of 'top' (OP) and the first 2 letters of 'envelope' (EN) = OPEN. ✓"
         },
         {
           id: 2,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'warmth' is hidden across two of these words. Find the two words.",
-          options: ["something","Each","time","she","ate"],
-          correctPair: [3,4],
-          explanation: "The word HEAT is hidden across 'sHE' and 'ATe'. Take the last two letters of 'she' (HE) and the first two of 'ate' (AT) = HEAT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Some","always","arrive","on","time"],
+          correctPair: [0, 1],
+          explanation: "The word MEAL is hidden across 'soME' and 'ALways'. Take the last 2 letters of 'some' (ME) and the first 2 letters of 'always' (AL) = MEAL. ✓"
         },
         {
           id: 3,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'part of the body' is hidden across two of these words. Find the two words.",
-          options: ["sea","Near","the","beach","and"],
-          correctPair: [3,4],
-          explanation: "The word HAND is hidden across 'beacH' and 'AND'. Take the last 1 letter of 'beach' (H) and all 3 letters of 'and' (AND) = HAND. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","think","these","attic","stairs"],
+          correctPair: [2, 3],
+          explanation: "The word SEAT is hidden across 'theSE' and 'ATtic'. Take the last 2 letters of 'these' (SE) and the first 2 letters of 'attic' (AT) = SEAT. ✓"
         },
         {
           id: 4,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to care for deeply' is hidden across two of these words. Find the two words.",
-          options: ["there","Go","to","school","over"],
-          correctPair: [3,4],
-          explanation: "The word LOVE is hidden across 'schooL' and 'OVEr'. Take the last letter of 'school' (L) and the first three of 'over' (OVE) = LOVE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","heard","a","solo","venue"],
+          correctPair: [3, 4],
+          explanation: "The word LOVE is hidden across 'soLO' and 'VEnue'. Take the last 2 letters of 'solo' (LO) and the first 2 letters of 'venue' (VE) = LOVE. ✓"
         },
         {
           id: 5,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a brave person' is hidden across two of these words. Find the two words.",
-          options: ["away","Just","before","she","rode"],
-          correctPair: [3,4],
-          explanation: "The word HERO is hidden across 'sHE' and 'ROde'. Take the last two letters of 'she' (HE) and the first two of 'rode' (RO) = HERO. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","read","the","atlantic","map"],
+          correctPair: [2, 3],
+          explanation: "The word HEAT is hidden across 'tHE' and 'ATlantic'. Take the last 2 letters of 'the' (HE) and the first 2 letters of 'atlantic' (AT) = HEAT. ✓"
         },
         {
           id: 6,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'water falling from clouds' is hidden across two of these words. Look where two words join together.",
-          options: ["carefully","Pack","your","camera","inside"],
-          correctPair: [3,4],
-          explanation: "The word RAIN is hidden across 'cameRA' and 'INside'. Take the last two letters of 'camera' (RA) and the first two of 'inside' (IN) = RAIN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","huge","tornado","veered","north"],
+          correctPair: [2, 3],
+          explanation: "The word DOVE is hidden across 'tornaDO' and 'VEered'. Take the last 2 letters of 'tornado' (DO) and the first 2 letters of 'veered' (VE) = DOVE. ✓"
         },
         {
           id: 7,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a curved structure' is hidden across two of these words. Find the two words.",
-          options: ["He","saw","the","clear","chance"],
-          correctPair: [3,4],
-          explanation: "The word ARCH is hidden across 'cleAR' and 'CHance'. Take the last two letters of 'clear' (AR) and the first two of 'chance' (CH) = ARCH. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","slow","orders","arrived","late"],
+          correctPair: [1, 2],
+          explanation: "The word WORD is hidden across 'sloW' and 'ORDers'. Take the last letter of 'slow' (W) and the first 3 letters of 'orders' (ORD) = WORD. ✓"
         },
         {
           id: 8,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'slim or not thick' is hidden across two of these words. Find the two words.",
-          options: ["The","warmth","inside","felt","good"],
-          correctPair: [1,2],
-          explanation: "The word THIN is hidden across 'warmTH' and 'INside'. Take the last two letters of 'warmth' (TH) and the first two of 'inside' (IN) = THIN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Flea","charms","rarely","work","well"],
+          correctPair: [0, 1],
+          explanation: "The word EACH is hidden across 'flEA' and 'CHarms'. Take the last 2 letters of 'flea' (EA) and the first 2 letters of 'charms' (CH) = EACH. ✓"
         },
         {
           id: 9,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'capable' is hidden across two of these words. Find the two words.",
-          options: ["here","Find","the","extra","blend"],
-          correctPair: [3,4],
-          explanation: "The word ABLE is hidden across 'extrA' and 'BLEnd'. Take the last letter of 'extra' (A) and the first three of 'blend' (BLE) = ABLE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","saw","an","anchor","nestled"],
+          correctPair: [3, 4],
+          explanation: "The word HORN is hidden across 'ancHOR' and 'Nestled'. Take the last 3 letters of 'anchor' (HOR) and the first letter of 'nestled' (N) = HORN. ✓"
         },
         {
           id: 10,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a magic stick' is hidden across two of these words. Find the two words.",
-          options: ["leave","He","finally","saw","Andrew"],
-          correctPair: [3,4],
-          explanation: "The word WAND is hidden across 'saW' and 'ANDrew'. Take the last letter of 'saw' (W) and the first three of 'Andrew' (AND) = WAND. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","small","panda","tends","gardens"],
+          correctPair: [2, 3],
+          explanation: "The word DATE is hidden across 'panDA' and 'TEnds'. Take the last 2 letters of 'panda' (DA) and the first 2 letters of 'tends' (TE) = DATE. ✓"
         },
         {
           id: 11,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to practise boxing' is hidden across two of these words. Find the two words.",
-          options: ["well","Play","your","chess","partner"],
-          correctPair: [3,4],
-          explanation: "The word SPAR is hidden across 'chesS' and 'PARtner'. Take the last letter of 'chess' (S) and the first three of 'partner' (PAR) = SPAR. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","found","extra","temple","ruins"],
+          correctPair: [2, 3],
+          explanation: "The word RATE is hidden across 'extRA' and 'TEmple'. Take the last 2 letters of 'extra' (RA) and the first 2 letters of 'temple' (TE) = RATE. ✓"
         },
         {
           id: 12,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a large black bird' is hidden across two of these words. Find the two words.",
-          options: ["That","epic","row","angered","everyone"],
-          correctPair: [1,2],
-          explanation: "The word CROW is hidden across 'epiC' and 'ROW'. Take the last letter of 'epic' (C) and all of 'row' (ROW) = CROW. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","know","a","koala","tells"],
+          correctPair: [3, 4],
+          explanation: "The word LATE is hidden across 'koaLA' and 'TElls'. Take the last 2 letters of 'koala' (LA) and the first 2 letters of 'tells' (TE) = LATE. ✓"
         },
         {
           id: 13,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a wheeled vehicle pulled by a horse' is hidden across two of these words. Find the two words.",
-          options: ["perform","See","the","magic","artist"],
-          correctPair: [3,4],
-          explanation: "The word CART is hidden across 'magiC' and 'ARTist'. Take the last letter of 'magic' (C) and the first three of 'artist' (ART) = CART. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","puma","terrified","the","crowd"],
+          correctPair: [1, 2],
+          explanation: "The word MATE is hidden across 'puMA' and 'TErrified'. Take the last 2 letters of 'puma' (MA) and the first 2 letters of 'terrified' (TE) = MATE. ✓"
         },
         {
           id: 14,
-          difficulty: 3,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'an irritating feeling on the skin' is hidden across two of these words. Find the two words.",
-          options: ["wisely","The","small","rabbit","chose"],
-          correctPair: [3,4],
-          explanation: "The word ITCH is hidden across 'rabbIT' and 'CHose'. Take the last two letters of 'rabbit' (IT) and the first two of 'chose' (CH) = ITCH. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","top","inevitably","slipped","off"],
+          correctPair: [1, 2],
+          explanation: "The word PINE is hidden across 'toP' and 'INEvitably'. Take the last letter of 'top' (P) and the first 3 letters of 'inevitably' (INE) = PINE. ✓"
         },
         {
           id: 15,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a grain eaten around the world' is hidden across two of these words. Find the two words.",
-          options: ["broke","The","noisy","electric","engine"],
-          correctPair: [3,4],
-          explanation: "The word RICE is hidden across 'electRIC' and 'Engine'. Take the last three letters of 'electric' (RIC) and the first letter of 'engine' (E) = RICE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Polar","children","sledge","every","winter"],
+          correctPair: [0, 1],
+          explanation: "The word ARCH is hidden across 'polAR' and 'CHildren'. Take the last 2 letters of 'polar' (AR) and the first 2 letters of 'children' (CH) = ARCH. ✓"
         },
         {
           id: 16,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a small hollow or damage' is hidden across two of these words. Find the two words.",
-          options: ["The","garden","tools","were","rusty"],
-          correctPair: [1,2],
-          explanation: "The word DENT is hidden across 'garDEN' and 'Tools'. Take the last three letters of 'garden' (DEN) and the first letter of 'tools' (T) = DENT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","ate","salami","never","once"],
+          correctPair: [2, 3],
+          explanation: "The word MINE is hidden across 'salaMI' and 'NEver'. Take the last 2 letters of 'salami' (MI) and the first 2 letters of 'never' (NE) = MINE. ✓"
         },
         {
           id: 17,
-          difficulty: 3,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a military position' is hidden across two of these words. Find the two words.",
-          options: ["Thick","rubber","ankle","supports","helped"],
-          correctPair: [1,2],
-          explanation: "The word RANK is hidden across 'rubbeR' and 'ANKle'. Take the last letter of 'rubber' (R) and the first three of 'ankle' (ANK) = RANK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","kiwi","never","grew","here"],
+          correctPair: [1, 2],
+          explanation: "The word WINE is hidden across 'kiWI' and 'NEver'. Take the last 2 letters of 'kiwi' (WI) and the first 2 letters of 'never' (NE) = WINE. ✓"
         },
         {
           id: 18,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'weak or feeble' is hidden across two of these words. Find the two words.",
-          options: ["tonight","Near","the","villa","menu"],
-          correctPair: [3,4],
-          explanation: "The word LAME is hidden across 'vilLA' and 'MEnu'. Take the last two letters of 'villa' (LA) and the first two of 'menu' (ME) = LAME. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","wifi","rested","all","weekend"],
+          correctPair: [1, 2],
+          explanation: "The word FIRE is hidden across 'wiFI' and 'REsted'. Take the last 2 letters of 'wifi' (FI) and the first 2 letters of 'rested' (RE) = FIRE. ✓"
         },
         {
           id: 19,
-          difficulty: 3,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'high in height' is hidden across two of these words. Find the two words.",
-          options: ["Their","great","allies","arrived","today"],
-          correctPair: [1,2],
-          explanation: "The word TALL is hidden across 'greaT' and 'ALLies'. Take the last letter of 'great' (T) and the first three of 'allies' (ALL) = TALL. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","kiwi","reminded","Tom","instantly"],
+          correctPair: [1, 2],
+          explanation: "The word WIRE is hidden across 'kiWI' and 'REminded'. Take the last 2 letters of 'kiwi' (WI) and the first 2 letters of 'reminded' (RE) = WIRE. ✓"
         },
         {
           id: 20,
-          difficulty: 3,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a bundle of hay or straw' is hidden across two of these words. Find the two words.",
-          options: ["Her","tuba","lesson","went","well"],
-          correctPair: [1,2],
-          explanation: "The word BALE is hidden across 'tuBA' and 'LEsson'. Take the last two letters of 'tuba' (BA) and the first two of 'lesson' (LE) = BALE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","jumbo","needs","cleaning","again"],
+          correctPair: [1, 2],
+          explanation: "The word BONE is hidden across 'jumBO' and 'NEeds'. Take the last 2 letters of 'jumbo' (BO) and the first 2 letters of 'needs' (NE) = BONE. ✓"
         },
         {
           id: 21,
-          difficulty: 2,
+          difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a reddish-brown coating on metal' is hidden across two of these words. Find the two words.",
-          options: ["Monday","He","left","Peru","starting"],
-          correctPair: [3,4],
-          explanation: "The word RUST is hidden across 'peRU' and 'STarting'. Take the last two letters of 'Peru' (RU) and the first two of 'starting' (ST) = RUST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","heard","the","disco","never"],
+          correctPair: [3, 4],
+          explanation: "The word CONE is hidden across 'disCO' and 'NEver'. Take the last 2 letters of 'disco' (CO) and the first 2 letters of 'never' (NE) = CONE. ✓"
         },
         {
           id: 22,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a small body of still water' is hidden across two of these words. Find the two words.",
-          options: ["Read","upon","damp","those","early"],
-          correctPair: [1,2],
-          explanation: "The word POND is hidden across 'uPON' and 'Damp'. Take the last three letters of 'upon' (PON) and the first letter of 'damp' (D) = POND. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","jazz","one","played","loudly"],
+          correctPair: [1, 2],
+          explanation: "The word ZONE is hidden across 'jazZ' and 'ONE'. Take the last letter of 'jazz' (Z) and the first 3 letters of 'one' (ONE) = ZONE. ✓"
         },
         {
           id: 23,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'an entrance in a fence or wall' is hidden across two of these words. Find the two words.",
-          options: ["Bring","yoga","test","while","group"],
-          correctPair: [1,2],
-          explanation: "The word GATE is hidden across 'yoGA' and 'TEst'. Take the last two letters of 'yoga' (GA) and the first two of 'test' (TE) = GATE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","quiet","unexpectedly","began","outside"],
+          correctPair: [1, 2],
+          explanation: "The word TUNE is hidden across 'quieT' and 'UNExpectedly'. Take the last letter of 'quiet' (T) and the first 3 letters of 'unexpectedly' (UNE) = TUNE. ✓"
         },
         {
           id: 24,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a device that gives light' is hidden across two of these words. Find the two words.",
-          options: ["school","ample","bring","those","quiet"],
-          correctPair: [0,1],
-          explanation: "The word LAMP is hidden across 'schooL' and 'AMPle'. Take the last letter of 'school' (L) and the first three of 'ample' (AMP) = LAMP. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","hindu","needed","extra","help"],
+          correctPair: [1, 2],
+          explanation: "The word DUNE is hidden across 'hinDU' and 'NEeded'. Take the last 2 letters of 'hindu' (DU) and the first 2 letters of 'needed' (NE) = DUNE. ✓"
         },
         {
           id: 25,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'where a bird lays its eggs' is hidden across two of these words. Find the two words.",
-          options: ["grew","That","big","moon","estate"],
-          correctPair: [3,4],
-          explanation: "The word NEST is hidden across 'mooN' and 'ESTate'. Take the last letter of 'moon' (N) and the first three of 'estate' (EST) = NEST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","flap","aged","very","badly"],
+          correctPair: [1, 2],
+          explanation: "The word PAGE is hidden across 'flaP' and 'AGEd'. Take the last letter of 'flap' (P) and the first 3 letters of 'aged' (AGE) = PAGE. ✓"
         },
         {
           id: 26,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a bright object in the night sky' is hidden across two of these words. Find the two words.",
-          options: ["plenty","Most","with","fast","argue"],
-          correctPair: [3,4],
-          explanation: "The word STAR is hidden across 'faST' and 'ARgue'. Take the last two letters of 'fast' (ST) and the first two of 'argue' (AR) = STAR. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","flora","gem","glittered","nicely"],
+          correctPair: [1, 2],
+          explanation: "The word RAGE is hidden across 'floRA' and 'GEm'. Take the last 2 letters of 'flora' (RA) and the first 2 letters of 'gem' (GE) = RAGE. ✓"
         },
         {
           id: 27,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a hollow metal object that rings' is hidden across two of these words. Find the two words.",
-          options: ["happy","Take","your","grab","ellipse"],
-          correctPair: [3,4],
-          explanation: "The word BELL is hidden across 'graB' and 'ELLipse'. Take the last letter of 'grab' (B) and the first three of 'ellipse' (ELL) = BELL. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","gas","android","beeped","twice"],
+          correctPair: [1, 2],
+          explanation: "The word SAND is hidden across 'gaS' and 'ANDroid'. Take the last letter of 'gas' (S) and the first 3 letters of 'android' (AND) = SAND. ✓"
         },
         {
           id: 28,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a sweet baked treat' is hidden across two of these words. Find the two words.",
-          options: ["That","orca","kept","his","friend"],
-          correctPair: [1,2],
-          explanation: "The word CAKE is hidden across 'orCA' and 'KEpt'. Take the last two letters of 'orca' (CA) and the first two of 'kept' (KE) = CAKE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","saw","a","crab","android"],
+          correctPair: [3, 4],
+          explanation: "The word BAND is hidden across 'craB' and 'ANDroid'. Take the last letter of 'crab' (B) and the first 3 letters of 'android' (AND) = BAND. ✓"
         },
         {
           id: 29,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'tiny dry particles found on surfaces' is hidden across two of these words. Find the two words.",
-          options: ["Some","big","Hindu","still","paper"],
-          correctPair: [2,3],
-          explanation: "The word DUST is hidden across 'hinDU' and 'STill'. Take the last two letters of 'Hindu' (DU) and the first two of 'still' (ST) = DUST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","watched","the","final","android"],
+          correctPair: [3, 4],
+          explanation: "The word LAND is hidden across 'finaL' and 'ANDroid'. Take the last letter of 'final' (L) and the first 3 letters of 'android' (AND) = LAND. ✓"
         },
         {
           id: 30,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'thick strong cord used for tying' is hidden across two of these words. Find the two words.",
-          options: ["Keep","your","hero","peak","under"],
-          correctPair: [2,3],
-          explanation: "The word ROPE is hidden across 'heRO' and 'PEak'. Take the last two letters of 'hero' (RO) and the first two of 'peak' (PE) = ROPE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","visited","the","safari","central"],
+          correctPair: [3, 4],
+          explanation: "The word RICE is hidden across 'safaRI' and 'CEntral'. Take the last 2 letters of 'safari' (RI) and the first 2 letters of 'central' (CE) = RICE. ✓"
         },
         {
           id: 31,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a male ruler of a country' is hidden across two of these words. Find the two words.",
-          options: ["thick","ingot","was","old","heavy"],
-          correctPair: [0,1],
-          explanation: "The word KING is hidden across 'thicK' and 'INGot'. Take the last letter of 'thick' (K) and the first three of 'ingot' (ING) = KING. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","passed","a","sofa","centre"],
+          correctPair: [3, 4],
+          explanation: "The word FACE is hidden across 'soFA' and 'CEntre'. Take the last 2 letters of 'sofa' (FA) and the first 2 letters of 'centre' (CE) = FACE. ✓"
         },
         {
           id: 32,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a group of musicians' is hidden across two of these words. Find the two words.",
-          options: ["That","old","climb","android","field"],
-          correctPair: [2,3],
-          explanation: "The word BAND is hidden across 'climB' and 'ANDroid'. Take the last letter of 'climb' (B) and the first three of 'android' (AND) = BAND. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","hope","arrives","before","noon"],
+          correctPair: [1, 2],
+          explanation: "The word PEAR is hidden across 'hoPE' and 'ARrives'. Take the last 2 letters of 'hope' (PE) and the first 2 letters of 'arrives' (AR) = PEAR. ✓"
         },
         {
           id: 33,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'having a low temperature' is hidden across two of these words. Find the two words.",
-          options: ["Some","music","older","than","before"],
-          correctPair: [1,2],
-          explanation: "The word COLD is hidden across 'musiC' and 'OLDer'. Take the last letter of 'music' (C) and the first three of 'older' (OLD) = COLD. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","tube","answered","every","query"],
+          correctPair: [1, 2],
+          explanation: "The word BEAN is hidden across 'tuBE' and 'ANswered'. Take the last 2 letters of 'tube' (BE) and the first 2 letters of 'answered' (AN) = BEAN. ✓"
         },
         {
           id: 34,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a circular band worn on a finger' is hidden across two of these words. Find the two words.",
-          options: ["Keep","your","floor","ingest","safe"],
-          correctPair: [2,3],
-          explanation: "The word RING is hidden across 'flooR' and 'INGest'. Take the last letter of 'floor' (R) and the first three of 'ingest' (ING) = RING. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","willow","earned","loud","praise"],
+          correctPair: [1, 2],
+          explanation: "The word WEAR is hidden across 'willoW' and 'EARned'. Take the last letter of 'willow' (W) and the first 3 letters of 'earned' (EAR) = WEAR. ✓"
         },
         {
           id: 35,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a vertical structure around a garden' is hidden across two of these words. Find the two words.",
-          options: ["She","could","draw","allow","them"],
-          correctPair: [2,3],
-          explanation: "The word WALL is hidden across 'draW' and 'ALLow'. Take the last letter of 'draw' (W) and the first three of 'allow' (ALL) = WALL. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","saw","the","apple","tree"],
+          correctPair: [2, 3],
+          explanation: "The word HEAP is hidden across 'tHE' and 'APple'. Take the last 2 letters of 'the' (HE) and the first 2 letters of 'apple' (AP) = HEAP. ✓"
         },
         {
           id: 36,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a shelter made of canvas for camping' is hidden across two of these words. Find the two words.",
-          options: ["bright","enter","my","small","house"],
-          correctPair: [0,1],
-          explanation: "The word TENT is hidden across 'brighT' and 'ENTer'. Take the last letter of 'bright' (T) and the first three of 'enter' (ENT) = TENT. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","cleaned","the","cabin","kettle"],
+          correctPair: [3, 4],
+          explanation: "The word INK is hidden across 'cabIN' and 'Kettle'. Take the last 2 letters of 'cabin' (IN) and the first letter of 'kettle' (K) = INK. ✓"
         },
         {
           id: 37,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'tiny grains found on a beach' is hidden across two of these words. Find the two words.",
-          options: ["Take","the","long","grass","android"],
-          correctPair: [3,4],
-          explanation: "The word SAND is hidden across 'grasS' and 'ANDroid'. Take the last letter of 'grass' (S) and the first three of 'android' (AND) = SAND. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","kind","human","tower","wobbled"],
+          correctPair: [2, 3],
+          explanation: "The word ANT is hidden across 'humAN' and 'Tower'. Take the last 2 letters of 'human' (AN) and the first letter of 'tower' (T) = ANT. ✓"
         },
         {
           id: 38,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a white drink from cows' is hidden across two of these words. Find the two words.",
-          options: ["Every","dream","ilk","was","golden"],
-          correctPair: [1,2],
-          explanation: "The word MILK is hidden across 'dreaM' and 'ILK'. Take the last letter of 'dream' (M) and all three letters of 'ilk' (ILK) = MILK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","other","dusty","books","stayed"],
+          correctPair: [1, 2],
+          explanation: "The word HERD is hidden across 'otHER' and 'Dusty'. Take the last 3 letters of 'other' (HER) and the first letter of 'dusty' (D) = HERD. ✓"
         },
         {
           id: 39,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to eat an evening meal' is hidden across two of these words. Find the two words.",
-          options: ["laid","inert","from","quite","slowly"],
-          correctPair: [0,1],
-          explanation: "The word DINE is hidden across 'laiD' and 'INErt'. Take the last letter of 'laid' (D) and the first three of 'inert' (INE) = DINE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","saw","ago","atlas","nearby"],
+          correctPair: [2, 3],
+          explanation: "The word GOAT is hidden across 'ago' and 'atlas'. Take the last 2 letters of 'ago' and the first 2 of 'atlas' = GOAT. ✓"
         },
         {
           id: 40,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a strong building used for defence' is hidden across two of these words. Find the two words.",
-          options: ["Her","old","loaf","orthodox","view"],
-          correctPair: [2,3],
-          explanation: "The word FORT is hidden across 'loaF' and 'ORThodox'. Take the last letter of 'loaf' (F) and the first three of 'orthodox' (ORT) = FORT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Is","this","hippo","escaped","outside"],
+          correctPair: [1, 2],
+          explanation: "The word SHIP is hidden across 'this' and 'hippo'. Take the last 1 letters of 'this' and the first 3 of 'hippo' = SHIP. ✓"
         },
         {
           id: 41,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a hard part of a skeleton' is hidden across two of these words. Find the two words.",
-          options: ["New","club","one","with","many"],
-          correctPair: [1,2],
-          explanation: "The word BONE is hidden across 'cluB' and 'ONE'. Take the last 1 letter of 'club' (B) and the first 3 of 'one' (ONE) = BONE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","jumbo","okay","sign","glowed"],
+          correctPair: [1, 2],
+          explanation: "The word BOOK is hidden across 'jumbo' and 'okay'. Take the last 2 letters of 'jumbo' and the first 2 of 'okay' = BOOK. ✓"
         },
         {
           id: 42,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a large area of fresh water' is hidden across two of these words. Find the two words.",
-          options: ["His","formula","keep","the","prize"],
-          correctPair: [1,2],
-          explanation: "The word LAKE is hidden across 'formuLA' and 'KEep'. Take the last two letters of 'formula' (LA) and the first two of 'keep' (KE) = LAKE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","mega","teacher","helped","everyone"],
+          correctPair: [1, 2],
+          explanation: "The word GATE is hidden across 'mega' and 'teacher'. Take the last 2 letters of 'mega' and the first 2 of 'teacher' = GATE. ✓"
         },
         {
           id: 43,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to want or hope for something' is hidden across two of these words. Find the two words.",
-          options: ["The","tasty","big","kiwi","shelf"],
-          correctPair: [3,4],
-          explanation: "The word WISH is hidden across 'kiWI' and 'SHelf'. Take the last two letters of 'kiwi' (WI) and the first two of 'shelf' (SH) = WISH. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","also","apples","like","greatly"],
+          correctPair: [1, 2],
+          explanation: "The word SOAP is hidden across 'also' and 'apples'. Take the last 2 letters of 'also' and the first 2 of 'apples' = SOAP. ✓"
         },
         {
           id: 44,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to search for something' is hidden across two of these words. Find the two words.",
-          options: ["match","until","from","quite","slowly"],
-          correctPair: [0,1],
-          explanation: "The word HUNT is hidden across 'matcH' and 'UNTil'. Take the last letter of 'match' (H) and the first three of 'until' (UNT) = HUNT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Each","stone","study","felt","heavy"],
+          correctPair: [1, 2],
+          explanation: "The word NEST is hidden across 'stone' and 'study'. Take the last 2 letters of 'stone' and the first 2 of 'study' = NEST. ✓"
         },
         {
           id: 45,
           difficulty: 1,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a pale red colour' is hidden across two of these words. Find the two words.",
-          options: ["Her","big","fancy","tulip","inkwell"],
-          correctPair: [3,4],
-          explanation: "The word PINK is hidden across 'tuliP' and 'INKwell'. Take the last letter of 'tulip' (P) and the first three of 'inkwell' (INK) = PINK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","need","extra","income","soon"],
+          correctPair: [2, 3],
+          explanation: "The word RAIN is hidden across 'extra' and 'income'. Take the last 2 letters of 'extra' and the first 2 of 'income' = RAIN. ✓"
         },
         {
           id: 46,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a tall pole on a sailing ship' is hidden across two of these words. Find the two words.",
-          options: ["The","llama","stop","when","ready"],
-          correctPair: [1,2],
-          explanation: "The word MAST is hidden across 'llaMA' and 'STop'. Take the last two letters of 'llama' (MA) and the first two of 'stop' (ST) = MAST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ripe","oven","door","creaked"],
+          correctPair: [2, 3],
+          explanation: "The word VEND is hidden where \"oven\" meets \"door\": the last 3 letters of oVEN and the first 1 letter of Door join to spell VEND. ✓"
         },
         {
           id: 47,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to repair something broken' is hidden across two of these words. Find the two words.",
-          options: ["They","both","swam","endless","miles"],
-          correctPair: [2,3],
-          explanation: "The word MEND is hidden across 'swaM' and 'ENDless'. Take the last letter of 'swam' (M) and the first three of 'endless' (END) = MEND. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","memo","arrived","early"],
+          correctPair: [3, 4],
+          explanation: "The word DEAR is hidden where \"arrived\" meets \"early\": the last 1 letter of arriveD and the first 3 letters of EARly join to spell DEAR. ✓"
         },
         {
           id: 48,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'the time just before nightfall' is hidden across two of these words. Find the two words.",
-          options: ["Hindu","skate","on","the","river"],
-          correctPair: [0,1],
-          explanation: "The word DUSK is hidden across 'hinDU' and 'SKate'. Take the last two letters of 'Hindu' (DU) and the first two of 'skate' (SK) = DUSK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","wee","midi","skirt","twirled"],
+          correctPair: [2, 3],
+          explanation: "The word DISK is hidden where \"midi\" meets \"skirt\": the last 2 letters of miDI and the first 2 letters of SKirt join to spell DISK. ✓"
         },
         {
           id: 49,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'the wheel or tiller used to steer a ship' is hidden across two of these words. Find the two words.",
-          options: ["Very","much","elms","grow","tall"],
-          correctPair: [1,2],
-          explanation: "The word HELM is hidden across 'mucH' and 'ELMs'. Take the last letter of 'much' (H) and the first three of 'elms' (ELM) = HELM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","sharp","map","ended","creased"],
+          correctPair: [2, 3],
+          explanation: "The word PEND is hidden where \"map\" meets \"ended\": the last 1 letter of maP and the first 3 letters of ENDed join to spell PEND. ✓"
         },
         {
           id: 50,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a room or space under the roof' is hidden across two of these words. Find the two words.",
-          options: ["Her","big","pedal","often","broke"],
-          correctPair: [2,3],
-          explanation: "The word LOFT is hidden across 'pedaL' and 'OFTen'. Take the last letter of 'pedal' (L) and the first three of 'often' (OFT) = LOFT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","one","cap","landed","safely"],
+          correctPair: [2, 3],
+          explanation: "The word PLAN is hidden where \"cap\" meets \"landed\": the last 1 letter of caP and the first 3 letters of LANded join to spell PLAN. ✓"
         },
         {
           id: 51,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a very small brown bird' is hidden across two of these words. Find the two words.",
-          options: ["The","brew","rental","was","cheap"],
-          correctPair: [1,2],
-          explanation: "The word WREN is hidden across 'breW' and 'RENtal'. Take the last letter of 'brew' (W) and the first three of 'rental' (REN) = WREN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","tame","elf","lagged","behind"],
+          correctPair: [2, 3],
+          explanation: "The word FLAG is hidden where \"elf\" meets \"lagged\": the last 1 letter of elF and the first 3 letters of LAGged join to spell FLAG. ✓"
         },
         {
           id: 52,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a metal fastener or to run quickly' is hidden across two of these words. Find the two words.",
-          options: ["The","old","symbol","tank","rusted"],
-          correctPair: [2,3],
-          explanation: "The word BOLT is hidden across 'symBOL' and 'Tank'. Take the last three letters of 'symbol' (BOL) and the first letter of 'tank' (T) = BOLT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","good","isle","dweller","waved"],
+          correctPair: [2, 3],
+          explanation: "The word SLED is hidden where \"isle\" meets \"dweller\": the last 3 letters of iSLE and the first 1 letter of Dweller join to spell SLED. ✓"
         },
         {
           id: 53,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a young deer' is hidden across two of these words. Find the two words.",
-          options: ["That","loaf","awning","near","garden"],
-          correctPair: [1,2],
-          explanation: "The word FAWN is hidden across 'loaF' and 'AWNing'. Take the last letter of 'loaf' (F) and the first three of 'awning' (AWN) = FAWN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","wee","yoga","shawl","draped"],
+          correctPair: [2, 3],
+          explanation: "The word GASH is hidden where \"yoga\" meets \"shawl\": the last 2 letters of yoGA and the first 2 letters of SHawl join to spell GASH. ✓"
         },
         {
           id: 54,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a ridge of rock or coral near the sea surface' is hidden across two of these words. Find the two words.",
-          options: ["sure","effort","brings","good","marks"],
-          correctPair: [0,1],
-          explanation: "The word REEF is hidden across 'suRE' and 'EFfort'. Take the last two letters of 'sure' (RE) and the first two of 'effort' (EF) = REEF. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ripe","gas","nowhere","leaked"],
+          correctPair: [2, 3],
+          explanation: "The word SNOW is hidden where \"gas\" meets \"nowhere\": the last 1 letter of gaS and the first 3 letters of NOWhere join to spell SNOW. ✓"
         },
         {
           id: 55,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'the smallest piece in chess' is hidden across two of these words. Find the two words.",
-          options: ["His","big","steep","awning","broke"],
-          correctPair: [2,3],
-          explanation: "The word PAWN is hidden across 'steeP' and 'AWNing'. Take the last letter of 'steep' (P) and the first three of 'awning' (AWN) = PAWN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","brave","scout","ended","searching"],
+          correctPair: [2, 3],
+          explanation: "The word TEND is hidden where \"scout\" meets \"ended\": the last 1 letter of scouT and the first 3 letters of ENDed join to spell TEND. ✓"
         },
         {
           id: 56,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a thick flat piece of stone or concrete' is hidden across two of these words. Find the two words.",
-          options: ["His","plus","label","for","lunch"],
-          correctPair: [1,2],
-          explanation: "The word SLAB is hidden across 'pluS' and 'LABel'. Take the last letter of 'plus' (S) and the first three of 'label' (LAB) = SLAB. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","sad","rump","cooled"],
+          correctPair: [2, 3],
+          explanation: "The word DRUM is hidden where \"sad\" meets \"rump\": the last 1 letter of saD and the first 3 letters of RUMp join to spell DRUM. ✓"
         },
         {
           id: 57,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a fastening made by tying string' is hidden across two of these words. Find the two words.",
-          options: ["That","old","drink","note","faded"],
-          correctPair: [2,3],
-          explanation: "The word KNOT is hidden across 'drinK' and 'NOTe'. Take the last letter of 'drink' (K) and the first three of 'note' (NOT) = KNOT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","one","bad","rope","frayed"],
+          correctPair: [2, 3],
+          explanation: "The word DROP is hidden where \"bad\" meets \"rope\": the last 1 letter of baD and the first 3 letters of ROPe join to spell DROP. ✓"
         },
         {
           id: 58,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a shellfish with two hinged shells' is hidden across two of these words. Find the two words.",
-          options: ["magic","lamb","for","the","party"],
-          correctPair: [0,1],
-          explanation: "The word CLAM is hidden across 'magiC' and 'LAMb'. Take the last letter of 'magic' (C) and the first three of 'lamb' (LAM) = CLAM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ripe","glen","dweller","waved"],
+          correctPair: [2, 3],
+          explanation: "The word LEND is hidden where \"glen\" meets \"dweller\": the last 3 letters of gLEN and the first 1 letter of Dweller join to spell LEND. ✓"
         },
         {
           id: 59,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a thin branch of a tree' is hidden across two of these words. Find the two words.",
-          options: ["The","first","post","wiggle","began"],
-          correctPair: [2,3],
-          explanation: "The word TWIG is hidden across 'posT' and 'WIGgle'. Take the last letter of 'post' (T) and the first three of 'wiggle' (WIG) = TWIG. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","mica","sheet","glittered"],
+          correctPair: [2, 3],
+          explanation: "The word CASH is hidden where \"mica\" meets \"sheet\": the last 2 letters of miCA and the first 2 letters of SHeet join to spell CASH. ✓"
         },
         {
           id: 60,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a hollow in a hard surface' is hidden across two of these words. Find the two words.",
-          options: ["Her","old","wand","entry","shone"],
-          correctPair: [2,3],
-          explanation: "The word DENT is hidden across 'wanD' and 'ENTry'. Take the last 1 letter of 'wand' (D) and the first 3 of 'entry' (ENT) = DENT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","golden","crown","sat","high"],
+          correctPair: [2, 3],
+          explanation: "The word OWNS is hidden where \"crown\" meets \"sat\": the last 3 letters of crOWN and the first 1 letter of Sat join to spell OWNS. ✓"
         },
         {
           id: 61,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a sudden strong rush of wind' is hidden across two of these words. Find the two words.",
-          options: ["The","old","fungus","took","hold"],
-          correctPair: [2,3],
-          explanation: "The word GUST is hidden across 'funGUS' and 'Took'. Take the last three letters of 'fungus' (GUS) and the first letter of 'took' (T) = GUST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","sleepy","owl","hooted","once"],
+          correctPair: [1, 2],
+          explanation: "The word YOWL is hidden where \"sleepy\" meets \"owl\": the last 1 letter of sleepY and the first 3 letters of OWL join to spell YOWL. ✓"
         },
         {
           id: 62,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a stopper for a bottle, or a city in Ireland' is hidden across two of these words. Find the two words.",
-          options: ["The","decor","kept","them","happy"],
-          correctPair: [1,2],
-          explanation: "The word CORK is hidden across 'deCOR' and 'Kept'. Take the last three letters of 'decor' (COR) and the first letter of 'kept' (K) = CORK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","best","arch","framed","doors"],
+          correctPair: [1, 2],
+          explanation: "The word STAR is hidden where \"best\" meets \"arch\": the last 2 letters of beST and the first 2 letters of ARch join to spell STAR. ✓"
         },
         {
           id: 63,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to beat or sell something' is hidden across two of these words. Find the two words.",
-          options: ["dwarf","logic","from","the","hill"],
-          correctPair: [0,1],
-          explanation: "The word FLOG is hidden across 'dwarF' and 'LOGic'. Take the last letter of 'dwarf' (F) and the first three of 'logic' (LOG) = FLOG. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","cast","emblem","shone","gold"],
+          correctPair: [1, 2],
+          explanation: "The word STEM is hidden where \"cast\" meets \"emblem\": the last 2 letters of caST and the first 2 letters of EMblem join to spell STEM. ✓"
         },
         {
           id: 64,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'an aromatic herb or a place where coins are made' is hidden across two of these words. Find the two words.",
-          options: ["We","all","swim","into","rivers"],
-          correctPair: [2,3],
-          explanation: "The word MINT is hidden across 'swiM' and 'INTo'. Take the last letter of 'swim' (M) and the first three of 'into' (INT) = MINT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ride","aboard","thrilled","kids"],
+          correctPair: [1, 2],
+          explanation: "The word IDEA is hidden where \"ride\" meets \"aboard\": the last 3 letters of rIDE and the first 1 letter of Aboard join to spell IDEA. ✓"
         },
         {
           id: 65,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a sharp curved nail on an animal's foot' is hidden across two of these words. Find the two words.",
-          options: ["The","music","lawn","is","green"],
-          correctPair: [1,2],
-          explanation: "The word CLAW hides across 'music' and 'lawn': musi|C + LAW|n → CLAW. The last letter of 'music' (C) joins the first three letters of 'lawn' (LAW). ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","akin","gull","circled"],
+          correctPair: [2, 3],
+          explanation: "The word KING is hidden where \"akin\" meets \"gull\": the last 3 letters of aKIN and the first 1 letter of Gull join to spell KING. ✓"
         },
         {
           id: 66,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a soft round purple fruit' is hidden across two of these words. Find the two words.",
-          options: ["help","lump","in","the","basket"],
-          correctPair: [0,1],
-          explanation: "The word PLUM is hidden across 'helP' and 'LUMp'. Take the last letter of 'help' (P) and the first three of 'lump' (LUM) = PLUM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","sharp","bog","rippled","once"],
+          correctPair: [2, 3],
+          explanation: "The word GRIP is hidden where \"bog\" meets \"rippled\": the last 1 letter of boG and the first 3 letters of RIPpled join to spell GRIP. ✓"
         },
         {
           id: 67,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a broad smile' is hidden across two of these words. Find the two words.",
-          options: ["Big","red","shag","rinse","foam"],
-          correctPair: [2,3],
-          explanation: "The word GRIN is hidden across 'shaG' and 'RINse'. Take the last letter of 'shag' (G) and the first three of 'rinse' (RIN) = GRIN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","dig","rinsed","clean"],
+          correctPair: [2, 3],
+          explanation: "The word GRIN is hidden where \"dig\" meets \"rinsed\": the last 1 letter of diG and the first 3 letters of RINsed join to spell GRIN. ✓"
         },
         {
           id: 68,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a narrow opening or gap' is hidden across two of these words. Find the two words.",
-          options: ["The","girls","lotion","was","smooth"],
-          correctPair: [1,2],
-          explanation: "The word SLOT is hidden across 'girlS' and 'LOTion'. Take the last letter of 'girls' (S) and the first three of 'lotion' (LOT) = SLOT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","tired","crew","ended","rowing"],
+          correctPair: [2, 3],
+          explanation: "The word WEND is hidden where \"crew\" meets \"ended\": the last 1 letter of creW and the first 3 letters of ENDed join to spell WEND. ✓"
         },
         {
           id: 69,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to move wings up and down' is hidden across two of these words. Find the two words.",
-          options: ["One","half","laptop","was","broken"],
-          correctPair: [1,2],
-          explanation: "The word FLAP is hidden across 'halF' and 'LAPtop'. Take the last letter of 'half' (F) and the first three of 'laptop' (LAP) = FLAP. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","plump","artist","sketched","fast"],
+          correctPair: [1, 2],
+          explanation: "The word PART is hidden where \"plump\" meets \"artist\": the last 1 letter of plumP and the first 3 letters of ARTist join to spell PART. ✓"
         },
         {
           id: 70,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a dish of meat and vegetables cooked slowly' is hidden across two of these words. Find the two words.",
-          options: ["frost","ewe","grazed","the","field"],
-          correctPair: [0,1],
-          explanation: "The word STEW is hidden across 'froST' and 'EWe'. Take the last two letters of 'frost' (ST) and the first two of 'ewe' (EW) = STEW. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","calm","article","explained","tides"],
+          correctPair: [1, 2],
+          explanation: "The word MART is hidden where \"calm\" meets \"article\": the last 1 letter of calM and the first 3 letters of ARTicle join to spell MART. ✓"
         },
         {
           id: 71,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a fastener or to cut with scissors' is hidden across two of these words. Find the two words.",
-          options: ["Her","big","music","lips","moved"],
-          correctPair: [2,3],
-          explanation: "The word CLIP is hidden across 'musiC' and 'LIPs'. Take the last letter of 'music' (C) and the first three of 'lips' (LIP) = CLIP. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","crisp","arch","spanned","brooks"],
+          correctPair: [1, 2],
+          explanation: "The word SPAR is hidden where \"crisp\" meets \"arch\": the last 2 letters of criSP and the first 2 letters of ARch join to spell SPAR. ✓"
         },
         {
           id: 72,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a narrow valley' is hidden across two of these words. Find the two words.",
-          options: ["The","big","shrug","lend","itself"],
-          correctPair: [2,3],
-          explanation: "The word GLEN is hidden across 'shruG' and 'LENd'. Take the last letter of 'shrug' (G) and the first three of 'lend' (LEN) = GLEN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","one","calf","ended","grazing"],
+          correctPair: [2, 3],
+          explanation: "The word FEND is hidden where \"calf\" meets \"ended\": the last 1 letter of calF and the first 3 letters of ENDed join to spell FEND. ✓"
         },
         {
           id: 73,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'unkind or nasty' is hidden across two of these words. Find the two words.",
-          options: ["Some","animals","like","dry","food"],
-          correctPair: [0,1],
-          explanation: "The word MEAN is hidden across 'soME' and 'ANimals'. Take the last two letters of 'Some' (ME) and the first two of 'animals' (AN) = MEAN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","cat","ripped","cloth"],
+          correctPair: [2, 3],
+          explanation: "The word TRIP is hidden where \"cat\" meets \"ripped\": the last 1 letter of caT and the first 3 letters of RIPped join to spell TRIP. ✓"
         },
         {
           id: 74,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a short funny performance' is hidden across two of these words. Find the two words.",
-          options: ["The","old","brisk","item","waited"],
-          correctPair: [2,3],
-          explanation: "The word SKIT is hidden across 'briSK' and 'ITem'. Take the last two letters of 'brisk' (SK) and the first two of 'item' (IT) = SKIT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ripe","cut","rimmed","plates"],
+          correctPair: [2, 3],
+          explanation: "The word TRIM is hidden where \"cut\" meets \"rimmed\": the last 1 letter of cuT and the first 3 letters of RIMmed join to spell TRIM. ✓"
         },
         {
           id: 75,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to walk with difficulty' is hidden across two of these words. Find the two words.",
-          options: ["Each","trial","import","grew","well"],
-          correctPair: [1,2],
-          explanation: "The word LIMP is hidden across 'triaL' and 'IMPort'. Take the last letter of 'trial' (L) and the first three of 'import' (IMP) = LIMP. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","barn","owl","screeched","once"],
+          correctPair: [2, 3],
+          explanation: "The word OWLS is hidden where \"owl\" meets \"screeched\": the last 3 letters of OWL and the first 1 letter of Screeched join to spell OWLS. ✓"
         },
         {
           id: 76,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'serious and gloomy' is hidden across two of these words. Find the two words.",
-          options: ["Her","old","debug","rim","broke"],
-          correctPair: [2,3],
-          explanation: "The word GRIM is hidden across 'debuG' and 'RIM'. Take the last letter of 'debug' (G) and all three letters of 'rim' (RIM) = GRIM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","sob","lottoed","numbers"],
+          correctPair: [2, 3],
+          explanation: "The word BLOT is hidden where \"sob\" meets \"lottoed\": the last 1 letter of soB and the first 3 letters of LOTtoed join to spell BLOT. ✓"
         },
         {
           id: 77,
           difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a piece of cloth worn to cover the face' is hidden across two of these words. Find the two words.",
-          options: ["The","grave","illness","was","brief"],
-          correctPair: [1,2],
-          explanation: "The word VEIL is hidden across 'graVE' and 'ILlness'. Take the last two letters of 'grave' (VE) and the first two of 'illness' (IL) = VEIL. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ripe","cad","raged","loudly"],
+          correctPair: [2, 3],
+          explanation: "The word DRAG is hidden where \"cad\" meets \"raged\": the last 1 letter of caD and the first 3 letters of RAGed join to spell DRAG. ✓"
         },
         {
           id: 78,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a clever trick or deception' is hidden across two of these words. Find the two words.",
-          options: ["guru","seed","from","the","garden"],
-          correctPair: [0,1],
-          explanation: "The word RUSE is hidden across 'guRU' and 'SEed'. Take the last two letters of 'guru' (RU) and the first two of 'seed' (SE) = RUSE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","one","its","hopper","jammed"],
+          correctPair: [2, 3],
+          explanation: "The word SHOP is hidden where \"its\" meets \"hopper\": the last 1 letter of itS and the first 3 letters of HOPper join to spell SHOP. ✓"
         },
         {
           id: 79,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a cause of great distress' is hidden across two of these words. Find the two words.",
-          options: ["Her","old","tuba","next","played"],
-          correctPair: [2,3],
-          explanation: "The word BANE is hidden across 'tuBA' and 'NExt'. Take the last two letters of 'tuba' (BA) and the first two of 'next' (NE) = BANE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","its","topic","mattered"],
+          correctPair: [2, 3],
+          explanation: "The word STOP is hidden where \"its\" meets \"topic\": the last 1 letter of itS and the first 3 letters of TOPic join to spell STOP. ✓"
         },
         {
           id: 80,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a large fire for burning a dead body' is hidden across two of these words. Find the two words.",
-          options: ["His","copy","realm","grew","wide"],
-          correctPair: [1,2],
-          explanation: "The word PYRE is hidden across 'coPY' and 'REalm'. Take the last two letters of 'copy' (PY) and the first two of 'realm' (RE) = PYRE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","one","gas","nape","tightened"],
+          correctPair: [2, 3],
+          explanation: "The word SNAP is hidden where \"gas\" meets \"nape\": the last 1 letter of gaS and the first 3 letters of NAPe join to spell SNAP. ✓"
         },
         {
           id: 81,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to gradually decrease or decline' is hidden across two of these words. Find the two words.",
-          options: ["Build","with","long","straw","anew"],
-          correctPair: [3,4],
-          explanation: "The word WANE is hidden across 'straW' and 'ANEw'. Take the last letter of 'straw' (W) and the first three of 'anew' (ANE) = WANE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","arc","rabbit","hopped"],
+          correctPair: [2, 3],
+          explanation: "The word CRAB is hidden where \"arc\" meets \"rabbit\": the last 1 letter of arC and the first 3 letters of RABbit join to spell CRAB. ✓"
         },
         {
           id: 82,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a very strong wind' is hidden across two of these words. Find the two words.",
-          options: ["The","drag","alert","came","first"],
-          correctPair: [1,2],
-          explanation: "The word GALE is hidden across 'draG' and 'ALErt'. Take the last letter of 'drag' (G) and the first three of 'alert' (ALE) = GALE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","sob","stubbed","toes"],
+          correctPair: [2, 3],
+          explanation: "The word SOBS is hidden where \"sob\" meets \"stubbed\": the last 3 letters of SOB and the first 1 letter of Stubbed join to spell SOBS. ✓"
         },
         {
           id: 83,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'an urgent request or appeal' is hidden across two of these words. Find the two words.",
-          options: ["The","steeple","afoot","was","grand"],
-          correctPair: [1,2],
-          explanation: "The word PLEA is hidden across 'steePLE' and 'Afoot'. Take the last three letters of 'steeple' (PLE) and the first letter of 'afoot' (A) = PLEA. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","ripe","cob","ledger","showed"],
+          correctPair: [2, 3],
+          explanation: "The word BLED is hidden where \"cob\" meets \"ledger\": the last 1 letter of coB and the first 3 letters of LEDger join to spell BLED. ✓"
         },
         {
           id: 84,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'the upper edge of a cup or hat' is hidden across two of these words. Find the two words.",
-          options: ["Each","small","club","rim","shone"],
-          correctPair: [2,3],
-          explanation: "The word BRIM is hidden across 'cluB' and 'RIM'. Take the last letter of 'club' (B) and all three letters of 'rim' (RIM) = BRIM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","gas","wimped","out"],
+          correctPair: [2, 3],
+          explanation: "The word SWIM is hidden where \"gas\" meets \"wimped\": the last 1 letter of gaS and the first 3 letters of WIMped join to spell SWIM. ✓"
         },
         {
           id: 85,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a wise person, or an aromatic herb' is hidden across two of these words. Find the two words.",
-          options: ["mesa","get","from","the","market"],
-          correctPair: [0,1],
-          explanation: "The word SAGE is hidden across 'meSA' and 'GEt'. Take the last two letters of 'mesa' (SA) and the first two of 'get' (GE) = SAGE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","sob","lobbed","high"],
+          correctPair: [2, 3],
+          explanation: "The word BLOB is hidden where \"sob\" meets \"lobbed\": the last 1 letter of soB and the first 3 letters of LOBbed join to spell BLOB. ✓"
         },
         {
           id: 86,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a precious stone that shimmers with colours' is hidden across two of these words. Find the two words.",
-          options: ["Walk","into","palace","with","pride"],
-          correctPair: [1,2],
-          explanation: "The word OPAL is hidden across 'intO' and 'PALace'. Take the last letter of 'into' (O) and the first three of 'palace' (PAL) = OPAL. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","gas","planked","decks"],
+          correctPair: [2, 3],
+          explanation: "The word GASP is hidden where \"gas\" meets \"planked\": the last 3 letters of GAS and the first 1 letter of Planked join to spell GASP. ✓"
         },
         {
           id: 87,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'skilful and quick in movement' is hidden across two of these words. Find the two words.",
-          options: ["The","bored","efts","swam","slowly"],
-          correctPair: [1,2],
-          explanation: "The word DEFT is hidden across 'boreD' and 'EFTs'. Take the last letter of 'bored' (D) and the first three of 'efts' (EFT) = DEFT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","big","oldster","waited"],
+          correctPair: [2, 3],
+          explanation: "The word GOLD is hidden where \"big\" meets \"oldster\": the last 1 letter of biG and the first 3 letters of OLDster join to spell GOLD. ✓"
         },
         {
           id: 88,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'great enthusiasm or passion' is hidden across two of these words. Find the two words.",
-          options: ["froze","altar","near","the","church"],
-          correctPair: [0,1],
-          explanation: "The word ZEAL is hidden across 'froZE' and 'ALtar'. Take the last two letters of 'froze' (ZE) and the first two of 'altar' (AL) = ZEAL. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","good","arc","landed","wide"],
+          correctPair: [2, 3],
+          explanation: "The word CLAN is hidden where \"arc\" meets \"landed\": the last 1 letter of arC and the first 3 letters of LANded join to spell CLAN. ✓"
         },
         {
           id: 89,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a major musical composition' is hidden across two of these words. Find the two words.",
-          options: ["The","old","bishop","usher","smiled"],
-          correctPair: [2,3],
-          explanation: "The word OPUS is hidden across 'bishOP' and 'USher'. Take the last two letters of 'bishop' (OP) and the first two of 'usher' (US) = OPUS. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","one","disc","lapsed","quietly"],
+          correctPair: [2, 3],
+          explanation: "The word CLAP is hidden where \"disc\" meets \"lapsed\": the last 1 letter of disC and the first 3 letters of LAPsed join to spell CLAP. ✓"
         },
         {
           id: 90,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a mound of sand shaped by wind' is hidden across two of these words. Find the two words.",
-          options: ["Big","old","Hindu","never","forgot"],
-          correctPair: [2,3],
-          explanation: "The word DUNE is hidden across 'hinDU' and 'NEver'. Take the last two letters of 'Hindu' (DU) and the first two of 'never' (NE) = DUNE. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["She","drew","his","uncle","quickly"],
+          correctPair: [2, 3],
+          explanation: "The word SUN is hidden where \"his\" meets \"uncle\": the last 1 letter of hiS and the first 2 letters of UNcle join to spell SUN. ✓"
         },
         {
           id: 91,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'an ancient stringed musical instrument' is hidden across two of these words. Find the two words.",
-          options: ["In","July","read","some","books"],
-          correctPair: [1,2],
-          explanation: "The word LYRE is hidden across 'juLY' and 'REad'. Take the last two letters of 'July' (LY) and the first two of 'read' (RE) = LYRE. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["She","drew","her","idea","clearly"],
+          correctPair: [2, 3],
+          explanation: "The word RID is hidden where \"her\" meets \"idea\": the last 1 letter of heR and the first 2 letters of IDea join to spell RID. ✓"
         },
         {
           id: 92,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'traditional knowledge passed down through stories' is hidden across two of these words. Find the two words.",
-          options: ["pool","oregano","with","fresh","taste"],
-          correctPair: [0,1],
-          explanation: "The word LORE is hidden across 'pooL' and 'OREgano'. Take the last letter of 'pool' (L) and the first three of 'oregano' (ORE) = LORE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","panda","cheese","tasted","odd"],
+          correctPair: [1, 2],
+          explanation: "The word ACHE is hidden across 'panda' and 'cheese'. Take the last 1 letters of 'panda' and the first 3 of 'cheese' = ACHE. ✓"
         },
         {
           id: 93,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a soothing ointment or something that comforts' is hidden across two of these words. Find the two words.",
-          options: ["His","old","verb","almond","tasted"],
-          correctPair: [2,3],
-          explanation: "The word BALM is hidden across 'verB' and 'ALMond'. Take the last letter of 'verb' (B) and the first three of 'almond' (ALM) = BALM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","radio","vendor","appeared","quietly"],
+          correctPair: [1, 2],
+          explanation: "The word OVEN is hidden across 'radio' and 'vendor'. Take the last 1 letters of 'radio' and the first 3 of 'vendor' = OVEN. ✓"
         },
         {
           id: 94,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'extremely serious or urgent' is hidden across two of these words. Find the two words.",
-          options: ["The","grand","ire","brought","chaos"],
-          correctPair: [1,2],
-          explanation: "The word DIRE is hidden across 'granD' and 'IRE'. Take the last letter of 'grand' (D) and all three letters of 'ire' (IRE) = DIRE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","studio","palace","felt","grand"],
+          correctPair: [1, 2],
+          explanation: "The word OPAL is hidden across 'studio' and 'palace'. Take the last 1 letters of 'studio' and the first 3 of 'palace' = OPAL. ✓"
         },
         {
           id: 95,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a green plant with feathery leaves' is hidden across two of these words. Find the two words.",
-          options: ["Big","old","offer","night","walks"],
-          correctPair: [2,3],
-          explanation: "The word FERN is hidden across 'ofFER' and 'Night'. Take the last three letters of 'offer' (FER) and the first letter of 'night' (N) = FERN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","liked","the","chorus","most"],
+          correctPair: [2, 3],
+          explanation: "The word ECHO is hidden across 'the' and 'chorus'. Take the last 1 letters of 'the' and the first 3 of 'chorus' = ECHO. ✓"
         },
         {
           id: 96,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a device that shows wind direction' is hidden across two of these words. Find the two words.",
-          options: ["The","larva","never","grew","much"],
-          correctPair: [1,2],
-          explanation: "The word VANE is hidden across 'larVA' and 'NEver'. Take the last two letters of 'larva' (VA) and the first two of 'never' (NE) = VANE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","halo","mitten","glowed","faintly"],
+          correctPair: [1, 2],
+          explanation: "The word OMIT is hidden across 'halo' and 'mitten'. Take the last 1 letters of 'halo' and the first 3 of 'mitten' = OMIT. ✓"
         },
         {
           id: 97,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'the back of the neck' is hidden across two of these words. Find the two words.",
-          options: ["turn","apex","from","this","angle"],
-          correctPair: [0,1],
-          explanation: "The word NAPE is hidden across 'turN' and 'APEx'. Take the last letter of 'turn' (N) and the first three of 'apex' (APE) = NAPE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Two","crab","legs","snapped","off"],
+          correctPair: [1, 2],
+          explanation: "The word ABLE is hidden across 'crab' and 'legs'. Take the last 2 letters of 'crab' and the first 2 of 'legs' = ABLE. ✓"
         },
         {
           id: 98,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a formal written legal document' is hidden across two of these words. Find the two words.",
-          options: ["His","old","brew","ritual","began"],
-          correctPair: [2,3],
-          explanation: "The word WRIT is hidden across 'breW' and 'RITual'. Take the last letter of 'brew' (W) and the first three of 'ritual' (RIT) = WRIT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","bacon","tortilla","smelled","good"],
+          correctPair: [1, 2],
+          explanation: "The word ONTO is hidden across 'bacon' and 'tortilla'. Take the last 2 letters of 'bacon' and the first 2 of 'tortilla' = ONTO. ✓"
         },
         {
           id: 99,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a cunning plan or scheme' is hidden across two of these words. Find the two words.",
-          options: ["Her","big","tulip","loyal","friend"],
-          correctPair: [2,3],
-          explanation: "The word PLOY is hidden across 'tuliP' and 'LOYal'. Take the last letter of 'tulip' (P) and the first three of 'loyal' (LOY) = PLOY. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","rabbit","emblem","looked","royal"],
+          correctPair: [1, 2],
+          explanation: "The word ITEM is hidden across 'rabbit' and 'emblem'. Take the last 2 letters of 'rabbit' and the first 2 of 'emblem' = ITEM. ✓"
         },
         {
           id: 100,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a large heavy book' is hidden across two of these words. Find the two words.",
-          options: ["The","veto","meant","very","little"],
-          correctPair: [1,2],
-          explanation: "The word TOME is hidden across 'veTO' and 'MEant'. Take the last two letters of 'veto' (TO) and the first two of 'meant' (ME) = TOME. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Quietly","she","vented","her","worries"],
+          correctPair: [1, 2],
+          explanation: "The word EVEN is hidden across 'she' and 'vented'. Take the last 1 letters of 'she' and the first 3 of 'vented' = EVEN. ✓"
         },
         {
           id: 101,
-          difficulty: 3,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to stare at in a rude or admiring way' is hidden across two of these words. Find the two words.",
-          options: ["shoo","gleam","from","that","lamp"],
-          correctPair: [0,1],
-          explanation: "The word OGLE is hidden across 'shoO' and 'GLEam'. Take the last letter of 'shoo' (O) and the first three of 'gleam' (GLE) = OGLE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","metal","soldier","stood","guarding"],
+          correctPair: [1, 2],
+          explanation: "The word ALSO is hidden across 'metal' and 'soldier'. Take the last 2 letters of 'metal' and the first 2 of 'soldier' = ALSO. ✓"
         },
         {
           id: 102,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a bird's home' is hidden across two of these words. Find the two words.",
-          options: ["The","old","clean","estate","gardens"],
-          correctPair: [2,3],
-          explanation: "The word NEST is hidden across 'cleaN' and 'ESTate'. Take the last letter of 'clean' (N) and the first three of 'estate' (EST) = NEST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","sofa","tomato","stain","spread"],
+          correctPair: [1, 2],
+          explanation: "The word ATOM is hidden across 'sofa' and 'tomato'. Take the last 1 letters of 'sofa' and the first 3 of 'tomato' = ATOM. ✓"
         },
         {
           id: 103,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a green fruit' is hidden across two of these words. Find the two words.",
-          options: ["That","odd","shape","around","here"],
-          correctPair: [2,3],
-          explanation: "The word PEAR is hidden across 'shaPE' and 'ARound'. Take the last two letters of 'shape' (PE) and the first two of 'around' (AR) = PEAR. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","puma","riddle","puzzled","everyone"],
+          correctPair: [1, 2],
+          explanation: "The word ARID is hidden across 'puma' and 'riddle'. Take the last 1 letters of 'puma' and the first 3 of 'riddle' = ARID. ✓"
         },
         {
           id: 104,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to hurt or damage' is hidden across two of these words. Find the two words.",
-          options: ["The","knight","with","armour","rode"],
-          correctPair: [2,3],
-          explanation: "The word HARM is hidden across 'witH' and 'ARMour'. Take the last letter of 'with' (H) and the first three of 'armour' (ARM) = HARM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","lemon","usual","amount","changed"],
+          correctPair: [1, 2],
+          explanation: "The word ONUS is hidden across 'lemon' and 'usual'. Take the last 2 letters of 'lemon' and the first 2 of 'usual' = ONUS. ✓"
         },
         {
           id: 105,
-          difficulty: 1,
+          difficulty: 2,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'part of a bird or aeroplane' is hidden across two of these words. Find the two words.",
-          options: ["She","could","brew","ingredients","well"],
-          correctPair: [2,3],
-          explanation: "The word WING is hidden across 'breW' and 'INGredients'. Take the last letter of 'brew' (W) and the first three of 'ingredients' (ING) = WING. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["An","angel","sermon","moved","listeners"],
+          correctPair: [1, 2],
+          explanation: "The word ELSE is hidden across 'angel' and 'sermon'. Take the last 2 letters of 'angel' and the first 2 of 'sermon' = ELSE. ✓"
         },
         {
           id: 106,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to get money by working' is hidden across two of these words. Find the two words.",
-          options: ["It","was","quite","true","Arnold"],
-          correctPair: [3,4],
-          explanation: "The word EARN is hidden across 'truE' and 'ARNold'. Take the last letter of 'true' (E) and the first three of 'Arnold' (ARN) = EARN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","cirrus","trails","drifted","slowly"],
+          correctPair: [1, 2],
+          explanation: "The word RUST is hidden across 'cirrus' and 'trails'. Take the last 3 letters of 'cirrus' and the first 1 letter of 'trails' = RUST. ✓"
         },
         {
           id: 107,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'as well' or 'too' is hidden across two of these words. Find the two words.",
-          options: ["Mum","bought","metal","some","ago"],
-          correctPair: [2,3],
-          explanation: "The word ALSO is hidden across 'metAL' and 'SOme'. Take the last two letters of 'metal' (AL) and the first two of 'some' (SO) = ALSO. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["I","gave","some","advice","freely"],
+          correctPair: [2, 3],
+          explanation: "The word MEAD is hidden across 'some' and 'advice'. Take the last 2 letters of 'some' and the first 2 letters of 'advice' = MEAD. ✓"
         },
         {
           id: 108,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a decorative fabric' is hidden across two of these words. Find the two words.",
-          options: ["Her","signal","aced","the","test"],
-          correctPair: [1,2],
-          explanation: "The word LACE is hidden across 'signaL' and 'ACEd'. Take the last letter of 'signal' (L) and the first three of 'aced' (ACE) = LACE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","deaf","retiree","waved","back"],
+          correctPair: [1, 2],
+          explanation: "The word FRET is hidden across 'deaf' and 'retiree'. Take the last 1 letter of 'deaf' and the first 3 letters of 'retiree' = FRET. ✓"
         },
         {
           id: 109,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'something you cook food in' is hidden across two of these words. Find the two words.",
-          options: ["They","went","into","venture","funds"],
-          correctPair: [2,3],
-          explanation: "The word OVEN is hidden across 'intO' and 'VENture'. Take the last letter of 'into' (O) and the first three of 'venture' (VEN) = OVEN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Our","priests","held","vigil","dimly"],
+          correctPair: [3, 4],
+          explanation: "The word GILD is hidden across 'vigil' and 'dimly'. Take the last 3 letters of 'vigil' and the first 1 letter of 'dimly' = GILD. ✓"
         },
         {
           id: 110,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a soft, steady light' is hidden across two of these words. Find the two words.",
-          options: ["She","gave","shrug","lower","expected"],
-          correctPair: [2,3],
-          explanation: "The word GLOW is hidden across 'shruG' and 'LOWer'. Take the last letter of 'shrug' (G) and the first three of 'lower' (LOW) = GLOW. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["They","saw","anew","method","emerge"],
+          correctPair: [1, 2],
+          explanation: "The word WANE is hidden across 'saw' and 'anew'. Take the last 1 letter of 'saw' and the first 3 letters of 'anew' = WANE. ✓"
         },
         {
           id: 111,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'every one' is hidden across two of these words. Find the two words.",
-          options: ["The","race","achieved","new","record"],
-          correctPair: [1,2],
-          explanation: "The word EACH is hidden across 'racE' and 'ACHieved'. Take the last letter of 'race' (E) and the first three of 'achieved' (ACH) = EACH. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["This","cheese","is","aged","well"],
+          correctPair: [2, 3],
+          explanation: "The word SAGE is hidden across 'is' and 'aged'. Take the last 1 letter of 'is' and the first 3 letters of 'aged' = SAGE. ✓"
         },
         {
           id: 112,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a small singing bird' is hidden across two of these words. Find the two words.",
-          options: ["The","solar","kind","warmth","spread"],
-          correctPair: [1,2],
-          explanation: "The word LARK is hidden across 'soLAR' and 'Kind'. Take the last three letters of 'solar' (LAR) and the first letter of 'kind' (K) = LARK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["She","folded","three","fluffy","towels"],
+          correctPair: [2, 3],
+          explanation: "The word REEF is hidden across 'three' and 'fluffy'. Take the last 3 letters of 'three' and the first 1 letter of 'fluffy' = REEF. ✓"
         },
         {
           id: 113,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to eat a meal' is hidden across two of these words. Find the two words.",
-          options: ["The","board","inedible","food","remained"],
-          correctPair: [1,2],
-          explanation: "The word DINE is hidden across 'boarD' and 'INEdible'. Take the last letter of 'board' (D) and the first three of 'inedible' (INE) = DINE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","pure","edges","gleamed","brightly"],
+          correctPair: [1, 2],
+          explanation: "The word REED is hidden across 'pure' and 'edges'. Take the last 2 letters of 'pure' and the first 2 letters of 'edges' = REED. ✓"
         },
         {
           id: 114,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to wander freely' is hidden across two of these words. Find the two words.",
-          options: ["The","hero","among","the","crowd"],
-          correctPair: [1,2],
-          explanation: "The word ROAM is hidden across 'heRO' and 'AMong'. Take the last two letters of 'hero' (RO) and the first two of 'among' (AM) = ROAM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","cooled","lava","nestled","below"],
+          correctPair: [2, 3],
+          explanation: "The word VANE is hidden across 'lava' and 'nestled'. Take the last 2 letters of 'lava' and the first 2 letters of 'nestled' = VANE. ✓"
         },
         {
           id: 115,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'an annoying insect or creature' is hidden across two of these words. Find the two words.",
-          options: ["One","tulip","estate","garden","bloomed"],
-          correctPair: [1,2],
-          explanation: "The word PEST is hidden across 'tuliP' and 'ESTate'. Take the last letter of 'tulip' (P) and the first three of 'estate' (EST) = PEST. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","must","renew","tickets","today"],
+          correctPair: [2, 3],
+          explanation: "The word NEWT is hidden across 'renew' and 'tickets'. Take the last 3 letters of 'renew' and the first 1 letter of 'tickets' = NEWT. ✓"
         },
         {
           id: 116,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a covering for the face' is hidden across two of these words. Find the two words.",
-          options: ["Her","drama","sketch","was","brilliant"],
-          correctPair: [1,2],
-          explanation: "The word MASK is hidden across 'draMA' and 'SKetch'. Take the last two letters of 'drama' (MA) and the first two of 'sketch' (SK) = MASK. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","tiny","satchel","made","noise"],
+          correctPair: [2, 3],
+          explanation: "The word HELM is hidden across 'satchel' and 'made'. Take the last 3 letters of 'satchel' and the first 1 letter of 'made' = HELM. ✓"
         },
         {
           id: 117,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a long flowing garment' is hidden across two of these words. Find the two words.",
-          options: ["The","old","manor","obeyed","traditions"],
-          correctPair: [2,3],
-          explanation: "The word ROBE is hidden across 'manoR' and 'OBEyed'. Take the last letter of 'manor' (R) and the first three of 'obeyed' (OBE) = ROBE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["It","became","big","national","news"],
+          correctPair: [2, 3],
+          explanation: "The word GNAT is hidden across 'big' and 'national'. Take the last 1 letter of 'big' and the first 3 letters of 'national' = GNAT. ✓"
         },
         {
           id: 118,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a wide valley' is hidden across two of these words. Find the two words.",
-          options: ["That","larva","left","nothing","behind"],
-          correctPair: [1,2],
-          explanation: "The word VALE hides across 'larva' and 'left': lar|VA + LE|ft → VALE. The last two letters of 'larva' (VA) join the first two letters of 'left' (LE). ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["They","kept","warm","other","nights"],
+          correctPair: [2, 3],
+          explanation: "The word MOTH is hidden across 'warm' and 'other'. Take the last 1 letter of 'warm' and the first 3 letters of 'other' = MOTH. ✓"
         },
         {
           id: 119,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a sudden sharp feeling' is hidden across two of these words. Find the two words.",
-          options: ["That","cheap","anger","grew","inside"],
-          correctPair: [1,2],
-          explanation: "The word PANG is hidden across 'cheaP' and 'ANGer'. Take the last letter of 'cheap' (P) and the first three of 'anger' (ANG) = PANG. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","saw","his","labrador","sleeping"],
+          correctPair: [2, 3],
+          explanation: "The word SLAB is hidden across 'his' and 'labrador'. Take the last 1 letter of 'his' and the first 3 letters of 'labrador' = SLAB. ✓"
         },
         {
           id: 120,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to manage or deal with something' is hidden across two of these words. Find the two words.",
-          options: ["The","disco","performed","brilliantly","tonight"],
-          correctPair: [1,2],
-          explanation: "The word COPE is hidden across 'disCO' and 'PErformed'. Take the last two letters of 'disco' (CO) and the first two of 'performed' (PE) = COPE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","heroic","layup","won","everything"],
+          correctPair: [1, 2],
+          explanation: "The word CLAY is hidden across 'heroic' and 'layup'. Take the last 1 letter of 'heroic' and the first 3 letters of 'layup' = CLAY. ✓"
         },
         {
           id: 121,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'to gain a victory' is hidden across two of these words. Find the two words.",
-          options: ["The","new","inner","coat","fits"],
-          correctPair: [1,2],
-          explanation: "The word WIN is hidden across 'neW' and 'INner'. Take the last 1 letter of 'new' (W) and the first 2 of 'inner' (IN) = WIN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","cinema","reopened","near","us"],
+          correctPair: [1, 2],
+          explanation: "The word MARE is hidden across 'cinema' and 'reopened'. Take the last 2 letters of 'cinema' and the first 2 letters of 'reopened' = MARE. ✓"
         },
         {
           id: 122,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'an animal that barks' is hidden across two of these words. Find the two words.",
-          options: ["The","old","ogre","sat","down"],
-          correctPair: [1,2],
-          explanation: "The word DOG is hidden across 'olD' and 'OGre'. Take the last 1 letter of 'old' (D) and the first 2 of 'ogre' (OG) = DOG. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","careless","slur","escaped","quietly"],
+          correctPair: [2, 3],
+          explanation: "The word LURE is hidden across 'slur' and 'escaped'. Take the last 3 letters of 'slur' and the first 1 letter of 'escaped' = LURE. ✓"
         },
         {
           id: 123,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a rodent' is hidden across two of these words. Find the two words.",
-          options: ["Her","atlas","held","the","key"],
-          correctPair: [0,1],
-          explanation: "The word RAT is hidden across 'HeR' and 'ATlas'. Take the last 1 letter of 'Her' (R) and the first 2 of 'atlas' (AT) = RAT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","clever","promo","organised","everything"],
+          correctPair: [2, 3],
+          explanation: "The word MOOR is hidden across 'promo' and 'organised'. Take the last 2 letters of 'promo' and the first 2 letters of 'organised' = MOOR. ✓"
         },
         {
           id: 124,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a head covering' is hidden across two of these words. Find the two words.",
-          options: ["Each","athlete","ran","the","race"],
-          correctPair: [0,1],
-          explanation: "The word HAT is hidden across 'EacH' and 'AThlete'. Take the last 1 letter of 'Each' (H) and the first 2 of 'athlete' (AT) = HAT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","also","others","invited","along"],
+          correctPair: [1, 2],
+          explanation: "The word SOOT is hidden across 'also' and 'others'. Take the last 2 letters of 'also' and the first 2 letters of 'others' = SOOT. ✓"
         },
         {
           id: 125,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
-          options: ["The","crisp","envelope","held","news"],
-          correctPair: [1,2],
-          explanation: "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last 1 letter of 'crisp' (P) and the first 2 of 'envelope' (EN) = PEN. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","ripe","atoll","sheltered","birds"],
+          correctPair: [1, 2],
+          explanation: "The word PEAT is hidden across 'ripe' and 'atoll'. Take the last 2 letters of 'ripe' and the first 2 letters of 'atoll' = PEAT. ✓"
         },
         {
           id: 126,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a floor covering' is hidden across two of these words. Find the two words.",
-          options: ["Our","ugly","green","car","broke"],
-          correctPair: [0,1],
-          explanation: "The word RUG is hidden across 'OuR' and 'UGly'. Take the last 1 letter of 'Our' (R) and the first 2 of 'ugly' (UG) = RUG. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["He","forgot","two","menacing","clues"],
+          correctPair: [2, 3],
+          explanation: "The word OMEN is hidden across 'two' and 'menacing'. Take the last 1 letter of 'two' and the first 3 letters of 'menacing' = OMEN. ✓"
         },
         {
           id: 127,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a large vehicle' is hidden across two of these words. Find the two words.",
-          options: ["The","hub","used","to","squeak"],
-          correctPair: [1,2],
-          explanation: "The word BUS is hidden across 'huB' and 'USed'. Take the last 1 letter of 'hub' (B) and the first 2 of 'used' (US) = BUS. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","heroic","oven","saved","dinner"],
+          correctPair: [1, 2],
+          explanation: "The word COVE is hidden across 'heroic' and 'oven'. Take the last 1 letter of 'heroic' and the first 3 letters of 'oven' = COVE. ✓"
         },
         {
           id: 128,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a body part used for seeing' is hidden across two of these words. Find the two words.",
-          options: ["She","yelled","loudly","at","him"],
-          correctPair: [0,1],
-          explanation: "The word EYE is hidden across 'ShE' and 'YElled'. Take the last 1 letter of 'She' (E) and the first 2 of 'yelled' (YE) = EYE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","niche","winery","opened","downtown"],
+          correctPair: [1, 2],
+          explanation: "The word CHEW is hidden across 'niche' and 'winery'. Take the last 3 letters of 'niche' and the first 1 letter of 'winery' = CHEW. ✓"
         },
         {
           id: 129,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'something you sleep on' is hidden across two of these words. Find the two words.",
-          options: ["The","lamb","edged","closer","now"],
-          correctPair: [1,2],
-          explanation: "The word BED is hidden across 'lamB' and 'EDged'. Take the last 1 letter of 'lamb' (B) and the first 2 of 'edged' (ED) = BED. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["He","ranked","books","luggage","aside"],
+          correctPair: [2, 3],
+          explanation: "The word SLUG is hidden across 'books' and 'luggage'. Take the last 1 letter of 'books' and the first 3 letters of 'luggage' = SLUG. ✓"
         },
         {
           id: 130,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'to attempt' is hidden across two of these words. Find the two words.",
-          options: ["Short","rye","bread","is","tasty"],
-          correctPair: [0,1],
-          explanation: "The word TRY is hidden across 'ShorT' and 'RYe'. Take the last 1 letter of 'Short' (T) and the first 2 of 'rye' (RY) = TRY. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["She","ranked","books","candidly","afterwards"],
+          correctPair: [2, 3],
+          explanation: "The word SCAN is hidden across 'books' and 'candidly'. Take the last 1 letter of 'books' and the first 3 letters of 'candidly' = SCAN. ✓"
         },
         {
           id: 131,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'to slice with a knife' is hidden across two of these words. Find the two words.",
-          options: ["Music","utility","room","was","tidy"],
-          correctPair: [0,1],
-          explanation: "The word CUT is hidden across 'MusiC' and 'UTility'. Take the last 1 letter of 'Music' (C) and the first 2 of 'utility' (UT) = CUT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["His","pinata","swung","wildly","today"],
+          correctPair: [0, 1],
+          explanation: "The word SPIN is hidden across 'His' and 'pinata'. Take the last 1 letter of 'His' and the first 3 letters of 'pinata' = SPIN. ✓"
         },
         {
           id: 132,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'an insect that makes honey' is hidden across two of these words. Find the two words.",
-          options: ["The","tube","enters","the","ground"],
-          correctPair: [1,2],
-          explanation: "The word BEE is hidden across 'tuBE' and 'Enters'. Take the last 2 letters of 'tube' (BE) and the first 1 of 'enters' (E) = BEE. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","sharp","leaflet","arrived","late"],
+          correctPair: [1, 2],
+          explanation: "The word PLEA is hidden across 'sharp' and 'leaflet'. Take the last 1 letter of 'sharp' and the first 3 letters of 'leaflet' = PLEA. ✓"
         },
         {
           id: 133,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'a writing tool' is hidden across two of these words. Find the two words.",
-          options: ["The","crisp","envelope","was","sealed"],
-          correctPair: [1,2],
-          explanation: "The word PEN is hidden across 'crisP' and 'ENvelope'. Take the last letter of 'crisp' (P) and the first two letters of 'envelope' (EN) = PEN. A pen is a writing tool. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","spotted","a","big","alert"],
+          correctPair: [3, 4],
+          explanation: "The word GALE is hidden across 'big' and 'alert'. Take the last 1 letter of 'big' and the first 3 letters of 'alert' = GALE. ✓"
         },
         {
           id: 134,
-          difficulty: 1,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'to pull something' is hidden across two of these words. Find the two words.",
-          options: ["Get","owls","from","the","barn"],
-          correctPair: [0,1],
-          explanation: "The word TOW is hidden across 'GeT' and 'OWls'. Take the last 1 letter of 'Get' (T) and the first 2 of 'owls' (OW) = TOW. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","cleaned","and","entirely","repaired"],
+          correctPair: [2, 3],
+          explanation: "The word DENT is hidden across 'and' and 'entirely'. Take the last 1 letter of 'and' and the first 3 letters of 'entirely' = DENT. ✓"
         },
         {
           id: 135,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'a large feather' is hidden across two of these words. Find the two words.",
-          options: ["The","crisp","lumen","shone","brightly"],
-          correctPair: [1,2],
-          explanation: "The word PLUME is hidden across 'crisP' and 'LUMEn'. Take the last 1 letter of 'crisp' (P) and the first 4 of 'lumen' (LUME) = PLUME. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["They","sold","nickel","plates","cheaply"],
+          correctPair: [2, 3],
+          explanation: "The word KELP is hidden across 'nickel' and 'plates'. Take the last 3 letters of 'nickel' and the first 1 letter of 'plates' = KELP. ✓"
         },
         {
           id: 136,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'the speed of music' is hidden across two of these words. Find the two words.",
-          options: ["The","temp","often","changes","fast"],
-          correctPair: [1,2],
-          explanation: "The word TEMPO is hidden across 'TEMP' and 'Often'. Take the last 4 letters of 'temp' (TEMP) and the first 1 of 'often' (O) = TEMPO. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["She","tried","salami","recipes","abroad"],
+          correctPair: [2, 3],
+          explanation: "The word MIRE is hidden across 'salami' and 'recipes'. Take the last 2 letters of 'salami' and the first 2 letters of 'recipes' = MIRE. ✓"
         },
         {
           id: 137,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'a secret worker' is hidden across two of these words. Find the two words.",
-          options: ["Each","flag","entered","the","room"],
-          correctPair: [1,2],
-          explanation: "The word AGENT is hidden across 'flAG' and 'ENTered'. Take the last 2 letters of 'flag' (AG) and the first 3 of 'entered' (ENT) = AGENT. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","waited","for","overdue","parcels"],
+          correctPair: [2, 3],
+          explanation: "The word ROVE is hidden across 'for' and 'overdue'. Take the last 1 letter of 'for' and the first 3 letters of 'overdue' = ROVE. ✓"
         },
         {
           id: 138,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'to change' is hidden across two of these words. Find the two words.",
-          options: ["The","metal","terrified","him","greatly"],
-          correctPair: [1,2],
-          explanation: "The word ALTER is hidden across 'metAL' and 'TERrified'. Take the last 2 letters of 'metal' (AL) and the first 3 of 'terrified' (TER) = ALTER. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Their","igloo","melted","by","noon"],
+          correctPair: [1, 2],
+          explanation: "The word LOOM is hidden across 'igloo' and 'melted'. Take the last 3 letters of 'igloo' and the first 1 letter of 'melted' = LOOM. ✓"
         },
         {
           id: 139,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'a yellow fruit' is hidden across two of these words. Find the two words.",
-          options: ["There","camel","on","the","road"],
-          correctPair: [1,2],
-          explanation: "The word MELON is hidden across 'caMEL' and 'ON'. Take the last 3 letters of 'camel' (MEL) and the first 2 of 'on' (ON) = MELON. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["The","whole","team","oath","mattered"],
+          correctPair: [2, 3],
+          explanation: "The word MOAT is hidden across 'team' and 'oath'. Take the last 1 letter of 'team' and the first 3 letters of 'oath' = MOAT. ✓"
         },
         {
           id: 140,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'soft and smooth' is hidden across two of these words. Find the two words.",
-          options: ["The","music","reams","of","paper"],
-          correctPair: [1,2],
-          explanation: "The word CREAM is hidden across 'musiC' and 'REAMs'. Take the last 1 letter of 'music' (C) and the first 4 of 'reams' (REAM) = CREAM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["They","saw","rented","cabins","nearby"],
+          correctPair: [1, 2],
+          explanation: "The word WREN is hidden across 'saw' and 'rented'. Take the last 1 letter of 'saw' and the first 3 letters of 'rented' = WREN. ✓"
         },
         {
           id: 141,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'a wooden seat' is hidden across two of these words. Find the two words.",
-          options: ["The","bench","aired","its","views"],
-          correctPair: [1,2],
-          explanation: "The word CHAIR is hidden across 'benCH' and 'AIRed'. Take the last 2 letters of 'bench' (CH) and the first 3 of 'aired' (AIR) = CHAIR. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["A","local","club","rewards","members"],
+          correctPair: [2, 3],
+          explanation: "The word BREW is hidden across 'club' and 'rewards'. Take the last 1 letter of 'club' and the first 3 letters of 'rewards' = BREW. ✓"
         },
         {
           id: 142,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'a tool for sweeping' is hidden across two of these words. Find the two words.",
-          options: ["The","club","roomed","with","others"],
-          correctPair: [1,2],
-          explanation: "The word BROOM is hidden across 'cluB' and 'ROOMed'. Take the last 1 letter of 'club' (B) and the first 4 of 'roomed' (ROOM) = BROOM. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Please","stop","and","rewind","it"],
+          correctPair: [2, 3],
+          explanation: "The word DREW is hidden across 'and' and 'rewind'. Take the last 1 letter of 'and' and the first 3 letters of 'rewind' = DREW. ✓"
         },
         {
           id: 143,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'a citrus fruit' is hidden across two of these words. Find the two words.",
-          options: ["Her","rule","monsters","hide","well"],
-          correctPair: [1,2],
-          explanation: "The word LEMON is hidden across 'ruLE' and 'MONsters'. Take the last 2 letters of 'rule' (LE) and the first 3 of 'monsters' (MON) = LEMON. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["His","purple","kites","flew","high"],
+          correctPair: [0, 1],
+          explanation: "The word SPUR is hidden across 'His' and 'purple'. Take the last 1 letter of 'His' and the first 3 letters of 'purple' = SPUR. ✓"
         },
         {
           id: 144,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'the feeling of rage or fury' is hidden across two of these words. Find the two words.",
-          options: ["The","gang","errand","took","long"],
-          correctPair: [1,2],
-          explanation: "The word ANGER is hidden across 'gANG' and 'ERrand'. Take the last 3 letters of 'gang' (ANG) and the first 2 of 'errand' (ER) = ANGER. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["They","gave","half","leeway","today"],
+          correctPair: [2, 3],
+          explanation: "The word FLEE is hidden across 'half' and 'leeway'. Take the last 1 letter of 'half' and the first 3 letters of 'leeway' = FLEE. ✓"
         },
         {
           id: 145,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 5-letter word meaning 'to begin' is hidden across two of these words. Find the two words.",
-          options: ["The","mast","article","was","long"],
-          correctPair: [1,2],
-          explanation: "The word START is hidden across 'maST' and 'ARTicle'. Take the last 2 letters of 'mast' (ST) and the first 3 of 'article' (ART) = START. ✓"
+          question: "A 4-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["We","kept","half","lawful","claims"],
+          correctPair: [2, 3],
+          explanation: "The word FLAW is hidden across 'half' and 'lawful'. Take the last 1 letter of 'half' and the first 3 letters of 'lawful' = FLAW. ✓"
         },
         {
           id: 146,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a loud noise' is hidden across two of these words. Find the two words.",
-          options: ["The","crab","anger","made","waves"],
-          correctPair: [1,2],
-          explanation: "The word BANG is hidden across 'craB' and 'ANGer'. Take the last 1 letter of 'crab' (B) and the first 3 of 'anger' (ANG) = BANG. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["That","greedy","squirrel","fidgeted","coyly"],
+          correctPair: [2, 3],
+          explanation: "The word ELF is hidden across 'squirrel' and 'fidgeted'. Take the last 2 letters of 'squirrel' and the first 1 letter of 'fidgeted' = ELF. ✓"
         },
         {
           id: 147,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'to break suddenly' is hidden across two of these words. Find the two words.",
-          options: ["The","lens","napped","in","half"],
-          correctPair: [1,2],
-          explanation: "The word SNAP is hidden across 'lenS' and 'NAPped'. Take the last 1 letter of 'lens' (S) and the first 3 of 'napped' (NAP) = SNAP. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Our","mighty","squirrel","mumbled","grimly"],
+          correctPair: [2, 3],
+          explanation: "The word ELM is hidden across 'squirrel' and 'mumbled'. Take the last 2 letters of 'squirrel' and the first 1 letter of 'mumbled' = ELM. ✓"
         },
         {
           id: 148,
           difficulty: 3,
           questionType: "select-two",
-          question: "A 3-letter word meaning 'frozen water' is hidden across two of these words. Find the two words.",
-          options: ["A","basic","energy","heats","well"],
-          correctPair: [1,2],
-          explanation: "The word ICE is hidden across 'basIC' and 'Energy'. Take the last 2 letters of 'basic' (IC) and the first 1 of 'energy' (E) = ICE. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["That","lucky","beetle","mumbled","gladly"],
+          correctPair: [2, 3],
+          explanation: "The word EMU is hidden across 'beetle' and 'mumbled'. Take the last 1 letter of 'beetle' and the first 2 letters of 'mumbled' = EMU. ✓"
         },
         {
           id: 149,
-          difficulty: 2,
+          difficulty: 3,
           questionType: "select-two",
-          question: "A 4-letter word meaning 'a type of grain' is hidden across two of these words. Find the two words.",
-          options: ["The","historic","event","delighted","everyone"],
-          correctPair: [1,2],
-          explanation: "The word RICE is hidden across 'histoRIC' and 'Event'. Take the last 3 letters of 'historic' (RIC) and the first 1 of 'event' (E) = RICE. ✓"
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["My","feeble","kitten","dozed","wildly"],
+          correctPair: [2, 3],
+          explanation: "The word END is hidden across 'kitten' and 'dozed'. Take the last 2 letters of 'kitten' and the first 1 letter of 'dozed' = END. ✓"
+        },
+        {
+          id: 150,
+          difficulty: 3,
+          questionType: "select-two",
+          question: "A 3-letter word is hidden across two of these adjacent words. Find the two words.",
+          options: ["Our","brave","rabbit","fidgeted","crossly"],
+          correctPair: [1, 2],
+          explanation: "The word ERA is hidden across 'brave' and 'rabbit'. Take the last 1 letter of 'brave' and the first 2 letters of 'rabbit' = ERA. ✓"
         }
       ]
     },
