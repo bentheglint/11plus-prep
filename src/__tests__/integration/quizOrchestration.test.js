@@ -8,6 +8,7 @@
 
 import {
   checkAnswerCorrectness,
+  buildTutorContext,
   shouldShowPostQuestionTip,
   recordQuizResults,
   saveMockTestResults,
@@ -551,5 +552,81 @@ describe('saveMockTestResults', () => {
     // PP was already awarded before saveMockTestResult threw
     expect(sp.awardPP).toHaveBeenCalledTimes(1);
     expect(ud.savePracticeSession).toHaveBeenCalledTimes(1);
+  });
+});
+
+// ──────────────────────────────────────────────
+// buildTutorContext — AI tutor question context per question type.
+// Regression: select-two questions used to hit the generic options/correct branch
+// and feed the tutor "options[undefined]" as the correct answer + "not yet answered".
+// ──────────────────────────────────────────────
+describe('buildTutorContext', () => {
+  const hiddenWords = {
+    questionType: 'select-two',
+    question: 'A 4-letter word is hidden across two of these adjacent words. Find the two words.',
+    options: ['The', 'top', 'end', 'is', 'gone'],
+    correctPair: [1, 2], // 'top' + 'end' hide OPEN
+    explanation: "The word OPEN is hidden across 'tOP' and 'ENd'. ✓",
+  };
+
+  it('select-two: never emits "undefined" and names the correct pair (the bug)', () => {
+    const { questionContext } = buildTutorContext(hiddenWords, null, [1, 2]);
+    expect(questionContext).not.toMatch(/undefined/);
+    expect(questionContext).toContain('"top" and "end"');
+  });
+
+  it('select-two: child answered correctly → CORRECT + flags set', () => {
+    const r = buildTutorContext(hiddenWords, null, [1, 2]);
+    expect(r.hasAnswered).toBe(true);
+    expect(r.wasAnsweredCorrect).toBe(true);
+    expect(r.questionContext).toContain('CORRECT');
+    expect(r.questionContext).toContain('The child selected: "top" and "end"');
+  });
+
+  it('select-two: order-insensitive correct answer', () => {
+    expect(buildTutorContext(hiddenWords, null, [2, 1]).wasAnsweredCorrect).toBe(true);
+  });
+
+  it('select-two: child answered wrong → wrong + answered', () => {
+    const r = buildTutorContext(hiddenWords, null, [0, 1]);
+    expect(r.hasAnswered).toBe(true);
+    expect(r.wasAnsweredCorrect).toBe(false);
+    expect(r.questionContext).toContain('wrong');
+  });
+
+  it('select-two: not answered → hasAnswered false, not yet answered', () => {
+    const r = buildTutorContext(hiddenWords, null, []);
+    expect(r.hasAnswered).toBe(false);
+    expect(r.wasAnsweredCorrect).toBe(false);
+    expect(r.questionContext).toContain('not yet answered');
+    expect(r.questionContext).toContain('has not answered yet');
+  });
+
+  it('standard MCQ: unchanged behaviour (regression)', () => {
+    const mcq = { question: 'What is 2+2?', options: ['3', '4', '5', '6', '7'], correct: 1 };
+    const correct = buildTutorContext(mcq, 1, []);
+    expect(correct.hasAnswered).toBe(true);
+    expect(correct.wasAnsweredCorrect).toBe(true);
+    expect(correct.questionContext).toContain('The correct answer is: B) 4');
+    expect(correct.questionContext).toContain('CORRECT');
+
+    const wrong = buildTutorContext(mcq, 0, []);
+    expect(wrong.wasAnsweredCorrect).toBe(false);
+    expect(wrong.questionContext).toContain('wrong');
+
+    const unanswered = buildTutorContext(mcq, null, []);
+    expect(unanswered.hasAnswered).toBe(false);
+    expect(unanswered.questionContext).toContain('not yet answered');
+  });
+
+  it('pick-from-sets: detects answer in selectedPair + names the pair', () => {
+    const pfs = { questionType: 'pick-from-sets', setA: ['big', 'small'], setB: ['tiny', 'huge'], correctPair: [0, 1] };
+    const r = buildTutorContext(pfs, null, [0, 1]);
+    expect(r.hasAnswered).toBe(true);
+    expect(r.wasAnsweredCorrect).toBe(true);
+    expect(r.questionContext).toContain('"big" and "huge"');
+    expect(r.questionContext).not.toMatch(/undefined/);
+
+    expect(buildTutorContext(pfs, null, []).hasAnswered).toBe(false);
   });
 });

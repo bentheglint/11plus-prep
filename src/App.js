@@ -44,7 +44,7 @@ import allTips from './data/studyTips';
 import { selectPostQuestionTip, selectPreQuizTip } from './utils/tipSelection';
 import { selectWeightedTopics } from './utils/spacedRepetition';
 import { getAdaptiveDifficulty } from './utils/adaptiveDifficulty';
-import { checkAnswerCorrectness, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
+import { checkAnswerCorrectness, buildTutorContext, shouldShowPostQuestionTip, recordQuizResults as recordQuizResultsOrch, saveMockTestResults } from './utils/quizOrchestration';
 import { getQuizSaveKey, buildQuizSaveState, isQuizExpired, parseAndValidateQuiz } from './utils/quizPersistence';
 import useLeitner from './hooks/useLeitner';
 import useTestingCoverage from './hooks/useTestingCoverage';
@@ -1115,25 +1115,11 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
         throw new Error('Tutor API URL not configured');
       }
 
-      // Build question context — handle both standard (options/correct) and VR (setA/setB/correctPair) formats
-      let questionContext;
-      if (currentQuestion.options) {
-        const optionsList = currentQuestion.options.map((opt, idx) => `${String.fromCharCode(65 + idx)}) ${opt}`).join(', ');
-        const correctAns = `${String.fromCharCode(65 + currentQuestion.correct)}) ${currentQuestion.options[currentQuestion.correct]}`;
-        const childAns = selectedAnswer !== null ? `${String.fromCharCode(65 + selectedAnswer)}) ${currentQuestion.options[selectedAnswer]}` : 'not yet answered';
-        const wasCorrect = selectedAnswer !== null && selectedAnswer === currentQuestion.correct;
-        questionContext = `The options were: ${optionsList}\nThe correct answer is: ${correctAns}\nThe child selected: ${childAns}\n${wasCorrect ? 'The child got this question CORRECT!' : selectedAnswer !== null ? 'The child got this question wrong.' : 'The child has not answered yet.'}`;
-      } else if (currentQuestion.setA && currentQuestion.setB) {
-        const correctA = currentQuestion.setA[currentQuestion.correctPair?.[0]];
-        const correctB = currentQuestion.setB[currentQuestion.correctPair?.[1]];
-        questionContext = `Group A: ${currentQuestion.setA.join(', ')}\nGroup B: ${currentQuestion.setB.join(', ')}\nThe correct pair is: "${correctA}" and "${correctB}" (they are opposites).`;
-      } else {
-        questionContext = 'This is a practice question.';
-      }
-
-      const wasAnsweredCorrect = selectedAnswer !== null && currentQuestion.options && selectedAnswer === currentQuestion.correct;
-      const wasAnsweredWrong = selectedAnswer !== null && currentQuestion.options && selectedAnswer !== currentQuestion.correct;
-      const hasAnswered = selectedAnswer !== null;
+      // Build tutor context + answer flags for any question type. select-two and
+      // pick-from-sets store the child's answer in selectedPair (not selectedAnswer)
+      // and have no `correct` index — buildTutorContext handles all three correctly.
+      const { questionContext, hasAnswered, wasAnsweredCorrect } =
+        buildTutorContext(currentQuestion, selectedAnswer, selectedPair);
 
       const answerRules = hasAnswered
         ? `The child has ALREADY submitted an answer (${wasAnsweredCorrect ? 'correct' : 'incorrect'}), so you CAN discuss the correct answer to help them learn from the explanation.`

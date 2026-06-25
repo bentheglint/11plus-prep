@@ -25,6 +25,51 @@ export function checkAnswerCorrectness(question, selectedAnswer, selectedPair) {
 }
 
 /**
+ * Build the AI-tutor question context + answer flags for any question type.
+ *
+ * select-two (Hidden Words / Odd-Two-Out / Compound Words) and pick-from-sets store
+ * the child's answer in `selectedPair`, NOT `selectedAnswer`, and have no `correct`
+ * index. Handling them explicitly stops the tutor being fed a garbage "correct answer"
+ * (options[undefined]) and being wrongly told an answered child has not answered.
+ *
+ * Returns { questionContext, hasAnswered, wasAnsweredCorrect }.
+ */
+export function buildTutorContext(question, selectedAnswer, selectedPair) {
+  const isDual = question.questionType === 'select-two' || question.questionType === 'pick-from-sets';
+  const dualAnswered = Array.isArray(selectedPair) &&
+    selectedPair[0] !== undefined && selectedPair[1] !== undefined &&
+    (question.questionType !== 'select-two' || selectedPair.length === 2);
+  const hasAnswered = isDual ? dualAnswered : (selectedAnswer !== null && selectedAnswer !== undefined);
+  const wasAnsweredCorrect = hasAnswered && checkAnswerCorrectness(question, selectedAnswer, selectedPair);
+
+  let questionContext;
+  if (question.questionType === 'select-two' && Array.isArray(question.options) && Array.isArray(question.correctPair)) {
+    const [ci, cj] = question.correctPair;
+    const optionsList = question.options.map((opt, idx) => `${idx + 1}) ${opt}`).join(', ');
+    const correctWords = `"${question.options[ci]}" and "${question.options[cj]}"`;
+    const childWords = hasAnswered
+      ? `"${question.options[selectedPair[0]]}" and "${question.options[selectedPair[1]]}"`
+      : 'not yet answered';
+    questionContext = `The words were: ${optionsList}\nThe correct answer is the two words: ${correctWords}\nThe child selected: ${childWords}\n${!hasAnswered ? 'The child has not answered yet.' : wasAnsweredCorrect ? 'The child got this question CORRECT!' : 'The child got this question wrong.'}`;
+  } else if (question.setA && question.setB) {
+    const correctA = question.setA[question.correctPair?.[0]];
+    const correctB = question.setB[question.correctPair?.[1]];
+    questionContext = `Group A: ${question.setA.join(', ')}\nGroup B: ${question.setB.join(', ')}\nThe correct pair is: "${correctA}" and "${correctB}".`;
+  } else if (question.options) {
+    const optionsList = question.options.map((opt, idx) => `${String.fromCharCode(65 + idx)}) ${opt}`).join(', ');
+    const correctAns = `${String.fromCharCode(65 + question.correct)}) ${question.options[question.correct]}`;
+    const childAns = (selectedAnswer !== null && selectedAnswer !== undefined)
+      ? `${String.fromCharCode(65 + selectedAnswer)}) ${question.options[selectedAnswer]}`
+      : 'not yet answered';
+    questionContext = `The options were: ${optionsList}\nThe correct answer is: ${correctAns}\nThe child selected: ${childAns}\n${wasAnsweredCorrect ? 'The child got this question CORRECT!' : hasAnswered ? 'The child got this question wrong.' : 'The child has not answered yet.'}`;
+  } else {
+    questionContext = 'This is a practice question.';
+  }
+
+  return { questionContext, hasAnswered, wasAnsweredCorrect };
+}
+
+/**
  * Normalise a selected answer into the typed shape stored in D1.
  * The Quiz Detail View relies on reading this back correctly per question type.
  *
