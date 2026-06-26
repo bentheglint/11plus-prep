@@ -830,7 +830,7 @@ describe('Cross-Question Analysis — VR-wide Word Repetition', () => {
     questions.forEach(q => {
       if (!q.explanation) return;
       // Extract target word: "make/makes WORD" — must be 5+ letters (the full word)
-      const match = q.explanation.match(/makes?\s+([A-Z][A-Z]+)/);
+      const match = q.explanation.match(/(?:makes?|rebuilds?)\s+([A-Z][A-Z]+)/);
       if (match && match[1].length >= 5) {
         wordCounts[match[1]] = (wordCounts[match[1]] || 0) + 1;
       }
@@ -986,7 +986,9 @@ describe('Missing Letters & Words — authentic GL invariants', () => {
   it('the keyed 3-letter answer reconstructs the host word into the mutilated word', () => {
     const bad = [];
     questions.forEach(q => {
-      const m = q.explanation && q.explanation.match(/makes?\s+([A-Z]{4,})/);
+      // D1 phrases it "...makes FARMER"; D2/D3 lead with "ALL rebuilds FOOTBALL...".
+      // First match is always the keyed answer's host (trap rebuilds come later in the sentence).
+      const m = q.explanation && q.explanation.match(/(?:makes?|rebuilds?)\s+([A-Z]{4,})/);
       if (!m) { bad.push(`${q.id}: cannot parse host word from explanation`); return; }
       const host = m[1].toUpperCase();
       const answer = (q.options?.[q.correct] || '').toUpperCase();
@@ -1007,7 +1009,9 @@ describe('Missing Letters & Words — authentic GL invariants', () => {
   it('no host word appears more than twice', () => {
     const counts = {};
     questions.forEach(q => {
-      const m = q.explanation && q.explanation.match(/makes?\s+([A-Z]{4,})/);
+      // D1 phrases it "...makes FARMER"; D2/D3 lead with "ALL rebuilds FOOTBALL...".
+      // First match is always the keyed answer's host (trap rebuilds come later in the sentence).
+      const m = q.explanation && q.explanation.match(/(?:makes?|rebuilds?)\s+([A-Z]{4,})/);
       if (m) counts[m[1].toUpperCase()] = (counts[m[1].toUpperCase()] || 0) + 1;
     });
     const overused = Object.entries(counts).filter(([, c]) => c > 2).map(([w, c]) => `${w}: ${c}`);

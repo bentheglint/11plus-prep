@@ -9176,842 +9176,842 @@ const vrData = {
         {
           id: 46,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He kicked the muddy FOOTB straight into the back of the net.\"",
-          options: ["ALL","NET","MUD","CUP","TOE"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He kicked the muddy FOOTB hard into the back of the net.\"",
+          options: ["ALL","ATH","NET","MUD","CUP"],
           correct: 0,
-          explanation: "The answer is ALL, a real word. Add it to the end of FOOTB to make FOOTBALL. NET, MUD, CUP and TOE all suit football, but only ALL rebuilds the word. ✓"
+          explanation: "ALL rebuilds FOOTBALL, which is kicked into a net. The trap is ATH: it rebuilds FOOTBATH (a basin for soaking feet), but ATH is not a word on its own and a footbath is not kicked into a net. NET, MUD and CUP rebuild nothing. ✓"
         },
         {
           id: 47,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mum chopped up a big green CABE to make some soup.\"",
-          options: ["PEA","NUT","JAM","BAG","EGG"],
-          correct: 3,
-          explanation: "Putting BAG back into CABE makes CABBAGE — Mum made soup with a cabbage. BAG is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mum chopped up a big green MAR to make a pot of vegetable soup.\"",
+          options: ["TEN","NUT","ROW","JAM","POD"],
+          correct: 2,
+          explanation: "ROW rebuilds MARROW, a green vegetable for soup. The trap is TEN: it rebuilds MARTEN, a real word and a real animal — but a marten is a wild creature, not something chopped into soup, so the sentence rules it out. NUT, JAM and POD rebuild nothing. ✓"
         },
         {
           id: 48,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad keeps all the food and snacks tidy in the PRY.\"",
-          options: ["ANT","JAR","TIN","POT","BIN"],
-          correct: 0,
-          explanation: "Putting ANT back into PRY makes PANTRY — Dad keeps the food in the pantry. ANT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad keeps all the tins and jars neatly in the PRY.\"",
+          options: ["AST","JAR","TIN","POT","ANT"],
+          correct: 4,
+          explanation: "ANT rebuilds PANTRY, the cupboard where food is kept. The trap is AST: it rebuilds PASTRY (a real word), but AST is not a word on its own and pastry is dough, not a place to store tins and jars. JAR, TIN and POT rebuild nothing. ✓"
         },
         {
           id: 49,
           difficulty: 2,
           question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer led the stubborn DON slowly along the muddy lane.\"",
-          options: ["KEY","HAY","OAT","MUD","LEG"],
-          correct: 0,
-          explanation: "The answer is KEY, a real word. Add it to DON to make DONKEY. HAY, OAT, MUD and LEG suit a farm but only KEY rebuilds the word. ✓"
+          options: ["ATE","KEY","HAY","OAT","MUD"],
+          correct: 1,
+          explanation: "KEY rebuilds DONKEY, the animal led along the lane. The trap is ATE: it rebuilds DONATE, a real word — but to donate means to give money, which makes no sense here, so the sentence rules it out. HAY, OAT and MUD rebuild nothing. ✓"
         },
         {
           id: 50,
           difficulty: 2,
           question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A glossy black SLING perched on the wire and began to sing.\"",
-          options: ["TIT","JAY","HEN","BUG","TAR"],
-          correct: 4,
-          explanation: "Putting TAR back into SLING makes STARLING — a glossy starling perched on the wire. TAR is a real word too. ✓"
+          options: ["TER","JAY","HEN","TAR","BUG"],
+          correct: 3,
+          explanation: "TAR rebuilds STARLING, a bird that perches and sings. The trap is TER: it rebuilds STERLING (as in sterling silver), but TER is not a word on its own and sterling does not perch and sing. JAY, HEN and BUG rebuild nothing. ✓"
         },
         {
           id: 51,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A cheeky brown SPAR pecked at the crumbs on the path.\"",
-          options: ["ROW","HEN","BEE","BUG","CAT"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A cheeky brown SPAR pecked at the crumbs on the garden path.\"",
+          options: ["ROW","KLE","HEN","BEE","BUG"],
           correct: 0,
-          explanation: "Putting ROW back into SPAR makes SPARROW — a brown sparrow pecked at the crumbs. ROW is a real word too. ✓"
+          explanation: "ROW rebuilds SPARROW, the bird pecking crumbs. The trap is KLE: it rebuilds SPARKLE (a real word), but KLE is not a word on its own and a sparkle cannot peck at crumbs. HEN, BEE and BUG rebuild nothing. ✓"
         },
         {
           id: 52,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The little STER stuffed seeds into its bulging cheeks.\"",
-          options: ["PUP","CUB","RAT","HAM","COW"],
-          correct: 3,
-          explanation: "The answer is HAM, a real word (a type of cooked meat). Put it at the front of STER to make HAMSTER. PUP, CUB, RAT and COW are all animals, but only HAM rebuilds the word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The little STER stuffed seeds into its bulging cheeks and scurried off.\"",
+          options: ["MON","PUP","HAM","CUB","RAT"],
+          correct: 2,
+          explanation: "HAM rebuilds HAMSTER, the small pet stuffing seeds in its cheeks. The trap is MON: it rebuilds MONSTER, but MON is not a word on its own and a monster does not store seeds in its cheeks. PUP, CUB and RAT rebuild nothing. ✓"
         },
         {
           id: 53,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We carved a spooky face into the big orange PUMP.\"",
-          options: ["BAT","RAT","KIN","BUG","ANT"],
-          correct: 2,
-          explanation: "Putting KIN back into PUMP makes PUMPKIN — we carved a face into the pumpkin. KIN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We carved a spooky face into the big orange PUMP for Halloween.\"",
+          options: ["ING","BAT","RAT","BUG","KIN"],
+          correct: 4,
+          explanation: "KIN rebuilds PUMPKIN, carved for Halloween. The trap is ING: it rebuilds PUMPING (a real word), but ING is not a word on its own and you cannot carve a face into 'pumping'. BAT, RAT and BUG rebuild nothing. ✓"
         },
         {
           id: 54,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please put all the clean cups and plates back in the CUPRD.\"",
-          options: ["TIN","JAR","MUG","POT","BOA"],
-          correct: 4,
-          explanation: "Putting BOA back into CUPRD makes CUPBOARD — the cups go back in the cupboard. BOA is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She poured the last drops of orange juice from the big CAR.\"",
+          options: ["ROT","TON","JUG","MUG","JAR"],
+          correct: 1,
+          explanation: "TON rebuilds CARTON, which juice is poured from. The trap is ROT: it rebuilds CARROT, a real word — but you do not pour juice from a carrot, so the sentence rules it out. JUG, MUG and JAR rebuild nothing. ✓"
         },
         {
           id: 55,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grey smoke curled out of the old cottage CNEY into the sky.\"",
-          options: ["BAT","HIM","RAT","FOX","JAY"],
-          correct: 1,
-          explanation: "Putting HIM back into CNEY makes CHIMNEY — smoke curled from the chimney. HIM is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grey smoke curled out of the old cottage CNEY into the evening sky.\"",
+          options: ["HUT","BAT","RAT","HIM","FOX"],
+          correct: 3,
+          explanation: "HIM rebuilds CHIMNEY, which smoke curls from. The trap is HUT: it rebuilds CHUTNEY, a real word (a spicy relish) — but smoke does not curl out of chutney, so the sentence rules it out. BAT, RAT and FOX rebuild nothing. ✓"
         },
         {
           id: 56,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After the storm a beautiful RAIN curved right over the hills.\"",
-          options: ["FOG","SUN","BOW","SKY","DEW"],
-          correct: 2,
-          explanation: "Putting BOW back into RAIN makes RAINBOW — a rainbow curved over the hills. BOW is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After the storm a beautiful RAIN curved high over the green hills.\"",
+          options: ["BOW","ING","FOG","SUN","DEW"],
+          correct: 0,
+          explanation: "BOW rebuilds RAINBOW, which curves over the hills. The trap is ING: it rebuilds RAINING (a real word), but ING is not a word on its own and 'raining' does not curve over hills. FOG, SUN and DEW rebuild nothing. ✓"
         },
         {
           id: 57,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children worked hard all morning to build a friendly SNOW.\"",
-          options: ["FOG","HUT","FOX","MAN","BUG"],
-          correct: 3,
-          explanation: "Putting MAN back into SNOW makes SNOWMAN — the children built a snowman. MAN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children rolled three big balls of snow and built a friendly SNOW.\"",
+          options: ["CAP","FOG","MAN","FOX","BUG"],
+          correct: 2,
+          explanation: "MAN rebuilds SNOWMAN, which the children built. The trap is CAP: it rebuilds SNOWCAP, a real word (snow on a mountain top) — but children rolling balls of snow build a snowman, not a snowcap, so the sentence rules it out. FOG, FOX and BUG rebuild nothing. ✓"
         },
         {
           id: 58,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The sleepy cat lazily twitched one long white WKER.\"",
-          options: ["PAW","FUR","HIS","CAT","PUP"],
-          correct: 2,
-          explanation: "Putting HIS back into WKER makes WHISKER — the cat twitched a whisker. HIS is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The big ginger TOM prowled silently along the top of the garden wall at night.\"",
+          options: ["BOY","FUR","PAW","RAT","CAT"],
+          correct: 4,
+          explanation: "CAT rebuilds TOMCAT, a male cat prowling the wall. The trap is BOY: it rebuilds TOMBOY, a real word — but a tomboy is a child, not something that prowls a wall at night, so the sentence rules it out. FUR, PAW and RAT rebuild nothing. ✓"
         },
         {
           id: 59,
           difficulty: 2,
           question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A soft white FEAR floated gently down from the swan's wing.\"",
-          options: ["TIT","JAY","OAK","THE","BEE"],
-          correct: 3,
-          explanation: "Putting THE back into FEAR makes FEATHER — a feather floated from the swan's wing. THE is a real word too. ✓"
+          options: ["FUL","THE","JAY","OAK","BEE"],
+          correct: 1,
+          explanation: "THE rebuilds FEATHER, which floats from the swan's wing. The trap is FUL: it rebuilds FEARFUL (a real word), but FUL is not a word on its own and 'fearful' means scared, which does not float from a wing. JAY, OAK and BEE rebuild nothing. ✓"
         },
         {
           id: 60,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We watered the small DLING every morning before school.\"",
-          options: ["SEE","HOE","SOW","DIG","POT"],
-          correct: 0,
-          explanation: "The answer is SEE, a real word (to look at something). Add it to the front of DLING to make SEEDLING, a tiny new plant. Read for meaning first, then find the hidden three-letter word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We watered the tiny DLING in its pot every morning before school.\"",
+          options: ["KIN","HOE","SOW","SEE","DIG"],
+          correct: 3,
+          explanation: "SEE rebuilds SEEDLING, the baby plant in the pot. The trap is KIN: it rebuilds KINDLING, a real word (small sticks for a fire) — but you do not water kindling in a pot, so the sentence rules it out. HOE, SOW and DIG rebuild nothing. ✓"
         },
         {
           id: 61,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He ate a sizzling hot SAUS tucked inside a soft bread roll.\"",
-          options: ["JAM","AGE","EGG","BUN","PEA"],
-          correct: 1,
-          explanation: "Putting AGE back into SAUS makes SAUSAGE — he ate a hot sausage in a roll. AGE is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny handed each of us a chewy, sticky TEE to eat after dinner.\"",
+          options: ["OFF","OUP","JAM","BUN","NUT"],
+          correct: 0,
+          explanation: "OFF rebuilds TOFFEE, the chewy sweet to eat. The trap is OUP: it rebuilds TOUPEE (a real word for a wig), but OUP is not a word on its own and you do not eat a toupee. JAM, BUN and NUT rebuild nothing. ✓"
         },
         {
           id: 62,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On cold mornings he loves a warm bowl of creamy PORGE.\"",
-          options: ["OAT","JAM","BUN","EGG","RID"],
-          correct: 4,
-          explanation: "Putting RID back into PORGE makes PORRIDGE — he loves a warm bowl of porridge. RID is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On cold mornings he loves a warm, creamy bowl of PORGE for breakfast.\"",
+          options: ["TAG","OAT","RID","JAM","EGG"],
+          correct: 2,
+          explanation: "RID rebuilds PORRIDGE, the warm breakfast. The trap is TAG: it rebuilds PORTAGE, a real word (carrying boats over land) — but you cannot eat a warm bowl of portage, so the sentence rules it out. OAT, JAM and EGG rebuild nothing. ✓"
         },
         {
           id: 63,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Warm the tomato soup gently in a SAUCE on the cooker.\"",
-          options: ["PAN","LID","MUG","JUG","JAR"],
-          correct: 0,
-          explanation: "Putting PAN back into SAUCE makes SAUCEPAN — warm the soup in a saucepan. PAN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Through the telescope we could clearly see a distant red PLA shining at night.\"",
+          options: ["GUE","FOG","SKY","SUN","NET"],
+          correct: 4,
+          explanation: "NET rebuilds PLANET, seen through the telescope. The trap is GUE: it rebuilds PLAGUE (a real word for a disease), but GUE is not a word on its own and a plague is not seen shining through a telescope. FOG, SKY and SUN rebuild nothing. ✓"
         },
         {
           id: 64,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny poured the boiling water into her flowery brown TEA.\"",
-          options: ["MUG","JUG","JAR","URN","POT"],
-          correct: 4,
-          explanation: "Putting POT back into TEA makes TEAPOT — Granny poured water into the teapot. POT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny poured the boiling water into her big brown TEA to brew the leaves.\"",
+          options: ["CUP","POT","JUG","URN","JAR"],
+          correct: 1,
+          explanation: "POT rebuilds TEAPOT, which the leaves are brewed in. The trap is CUP: it rebuilds TEACUP, a real word — but you brew the leaves in a teapot, not a teacup, so the sentence rules it out. JUG, URN and JAR rebuild nothing. ✓"
         },
         {
           id: 65,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Roast the PARS in the hot oven until it turns golden brown.\"",
-          options: ["POD","OAT","NIP","PEA","BUD"],
-          correct: 2,
-          explanation: "Putting NIP back into PARS makes PARSNIP — roast the parsnip until golden. NIP is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Roast the PARS in the hot oven until it turns soft and golden brown.\"",
+          options: ["ING","OAT","POD","NIP","PEA"],
+          correct: 3,
+          explanation: "NIP rebuilds PARSNIP, the vegetable that is roasted. The trap is ING: it rebuilds PARSING (a real word), but ING is not a word on its own and 'parsing' means analysing sentences, not roasting. OAT, POD and PEA rebuild nothing. ✓"
         },
         {
           id: 66,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Add a big handful of fresh green SACH leaves to the salad.\"",
-          options: ["POD","NUT","PEA","PIN","COB"],
-          correct: 3,
-          explanation: "Putting PIN back into SACH makes SPINACH — add fresh spinach to the salad. PIN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Add a big handful of fresh green SACH leaves to the bowl of salad.\"",
+          options: ["PIN","TOM","POD","NUT","COB"],
+          correct: 0,
+          explanation: "PIN rebuilds SPINACH, the green salad leaves. The trap is TOM: it rebuilds STOMACH, a real word — but your stomach is a body part, not green leaves added to a salad, so the sentence rules it out. POD, NUT and COB rebuild nothing. ✓"
         },
         {
           id: 67,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They found a HEDGE snuffling around the garden at dusk.\"",
-          options: ["RAT","HOG","CUB","BUG","BAT"],
-          correct: 1,
-          explanation: "The answer is HOG, a real word (a kind of pig). Add it to HEDGE to make HEDGEHOG. The other animals are real words but only HOG completes the word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They found a spiky little HEDGE snuffling around the garden at dusk.\"",
+          options: ["ROW","RAT","HOG","CUB","BAT"],
+          correct: 2,
+          explanation: "HOG rebuilds HEDGEHOG, the spiky animal snuffling about. The trap is ROW: it rebuilds HEDGEROW, a real word — but a hedgerow is a line of bushes, it does not snuffle, so the sentence rules it out. RAT, CUB and BAT rebuild nothing. ✓"
         },
         {
           id: 68,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A tiny black POLE wriggled busily about in the warm pond.\"",
-          options: ["FIN","EEL","BUG","FLY","TAD"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A tiny black POLE wriggled busily about in the warm pond water.\"",
+          options: ["MAY","EEL","FLY","BUG","TAD"],
           correct: 4,
-          explanation: "Putting TAD back into POLE makes TADPOLE — a tiny tadpole wriggled in the pond. TAD is a real word too. ✓"
+          explanation: "TAD rebuilds TADPOLE, which wriggles in the pond. The trap is MAY: it rebuilds MAYPOLE, a real word — but a maypole is a tall pole for dancing round, it does not wriggle in a pond, so the sentence rules it out. EEL, FLY and BUG rebuild nothing. ✓"
         },
         {
           id: 69,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A striped GER crept quietly out of its burrow after dark.\"",
-          options: ["BAD","FOX","CUB","DOE","RAM"],
-          correct: 0,
-          explanation: "Putting BAD back into GER makes BADGER — a striped badger crept from its burrow. BAD is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A striped GER crept quietly out of its woodland burrow after dark.\"",
+          options: ["FIN","BAD","FOX","CUB","DOE"],
+          correct: 1,
+          explanation: "BAD rebuilds BADGER, the striped animal from the burrow. The trap is FIN: it rebuilds FINGER, a real word — but a finger is part of your hand, not a striped animal in a burrow, so the sentence rules it out. FOX, CUB and DOE rebuild nothing. ✓"
         },
         {
           id: 70,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The little black-and-white GUIN waddled slowly across the ice.\"",
-          options: ["COW","EWE","BAT","PEN","FOX"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A colourful little PUF nested high on the steep, rocky sea cliff.\"",
+          options: ["FED","OWL","BAT","FIN","HEN"],
           correct: 3,
-          explanation: "Putting PEN back into GUIN makes PENGUIN — the penguin waddled across the ice. PEN is a real word too. ✓"
+          explanation: "FIN rebuilds PUFFIN, the seabird on the cliff. The trap is FED: it rebuilds PUFFED, a real word — but 'puffed' means out of breath, not a seabird nesting on a cliff, so the sentence rules it out. OWL, BAT and HEN rebuild nothing. ✓"
         },
         {
           id: 71,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children played out in the garden all day in the warm SHINE.\"",
-          options: ["FOG","RAY","SUN","SKY","DEW"],
-          correct: 2,
-          explanation: "Putting SUN back into SHINE makes SUNSHINE — they played all day in the sunshine. SUN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children played out in the garden all afternoon in the warm SHINE.\"",
+          options: ["SUN","OUT","RAY","SKY","DEW"],
+          correct: 0,
+          explanation: "SUN rebuilds SUNSHINE, the warm light to play in. The trap is OUT: it rebuilds OUTSHINE, a real word — but to outshine means to do better than someone, not warm light to play in, so the sentence rules it out. RAY, SKY and DEW rebuild nothing. ✓"
         },
         {
           id: 72,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Bright orange MARIG flowers bloomed all along the sunny path.\"",
-          options: ["FIR","BUD","BEE","IVY","OLD"],
-          correct: 4,
-          explanation: "Putting OLD back into MARIG makes MARIGOLD — orange marigold flowers bloomed by the path. OLD is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Bright butterflies drifted over the wild flowers in the sunny MEW.\"",
+          options: ["LLO","BEE","ADO","IVY","BUD"],
+          correct: 2,
+          explanation: "ADO rebuilds MEADOW, the field of wild flowers. The trap is LLO: it rebuilds MELLOW (a real word), but LLO is not a word on its own and 'mellow' means calm and gentle, not a field of flowers. BEE, IVY and BUD rebuild nothing. ✓"
         },
         {
           id: 73,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Tall pink GLOVE flowers swayed gently in the country lane.\"",
-          options: ["FOX","BEE","POD","BUD","IVY"],
-          correct: 0,
-          explanation: "Putting FOX back into GLOVE makes FOXGLOVE — tall pink foxglove flowers swayed in the lane. FOX is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Clumps of purple HEAR covered the wild Scottish moor for miles.\"",
+          options: ["VIE","BEE","POD","IVY","THE"],
+          correct: 4,
+          explanation: "THE rebuilds HEATHER, the purple plant on the moor. The trap is VIE: it rebuilds HEAVIER, a real word — but 'heavier' means more heavy, which is not a moorland plant, so the sentence rules it out. BEE, POD and IVY rebuild nothing. ✓"
         },
         {
           id: 74,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We finished our meal with sticky toffee PUDG and warm custard.\"",
-          options: ["JAM","EGG","DIN","BUN","NUT"],
-          correct: 2,
-          explanation: "Putting DIN back into PUDG makes PUDDING — we had sticky toffee pudding. DIN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A graceful WIL trailed its long, drooping branches into the slow river.\"",
+          options: ["LED","LOW","OAK","FIR","IVY"],
+          correct: 1,
+          explanation: "LOW rebuilds WILLOW, the tree by the river. The trap is LED: it rebuilds WILLED, a real word — but 'willed' means wanted strongly or left in a will, not a tree by a river, so the sentence rules it out. OAK, FIR and IVY rebuild nothing. ✓"
         },
         {
           id: 75,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Hang your school coat neatly inside the big bedroom WARDE.\"",
-          options: ["ROB","BED","RUG","MAT","COT"],
-          correct: 0,
-          explanation: "Putting ROB back into WARDE makes WARDROBE — hang your coat in the wardrobe. ROB is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny packed the sandwiches and cake into the wicker picnic HER.\"",
+          options: ["OLD","MAT","RUG","AMP","PEG"],
+          correct: 3,
+          explanation: "AMP rebuilds HAMPER, the wicker picnic basket. The trap is OLD: it rebuilds HOLDER, a real word — but a holder grips things like pens, not sandwiches packed for a picnic, so the sentence rules it out. MAT, RUG and PEG rebuild nothing. ✓"
         },
         {
           id: 76,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They planted rows of carrots in the GAR behind the cottage.\"",
-          options: ["DEN","HOE","POT","MUD","TUB"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They planted long rows of carrots in the GAR behind the cottage.\"",
+          options: ["DEN","AGE","HOE","POT","MUD"],
           correct: 0,
-          explanation: "The answer is DEN, a real word (an animal's home). Add it to GAR to make GARDEN. HOE, POT, MUD and TUB suit a garden but only DEN completes the word. ✓"
+          explanation: "DEN rebuilds GARDEN, where the carrots are planted. The trap is AGE: it rebuilds GARAGE, a real word — but a garage is where you park a car, not where you plant carrots, so the sentence rules it out. HOE, POT and MUD rebuild nothing. ✓"
         },
         {
           id: 77,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every pupil must wear the correct school UNIM each morning.\"",
-          options: ["FOR","TIE","CAP","BAG","HAT"],
-          correct: 0,
-          explanation: "Putting FOR back into UNIM makes UNIFORM — pupils wear a school uniform. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We learned all about the Romans in our history LES this morning.\"",
+          options: ["SEN","OWL","SON","ART","KIN"],
+          correct: 2,
+          explanation: "SON rebuilds LESSON, what we learn in. The trap is SEN: it rebuilds LESSEN (a real word), but SEN is not a word on its own and 'lessen' means to make smaller, not a class about the Romans. OWL, ART and KIN rebuild nothing. ✓"
         },
         {
           id: 78,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every STUT in our class passed the spelling test.\"",
-          options: ["RUB","NIB","JOT","DEN","SUM"],
-          correct: 3,
-          explanation: "Putting DEN back into STUT makes STUDENT — every student passed the test. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The kind judge granted the sorry thief a full PAR and set him free.\"",
+          options: ["ROT","MAP","BAR","OWL","DON"],
+          correct: 4,
+          explanation: "DON rebuilds PARDON, which the judge granted. The trap is ROT: it rebuilds PARROT, a real word — but a parrot is a bird, not something a judge grants a thief, so the sentence rules it out. MAP, BAR and OWL rebuild nothing. ✓"
         },
         {
           id: 79,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We learned about Roman Britain in our HISY lesson today.\"",
-          options: ["WAR","TOR","MAP","ART","KIN"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The baker rolled out the buttery PAS to make a golden pie crust.\"",
+          options: ["TOR","TRY","JAM","EGG","OAT"],
           correct: 1,
-          explanation: "Putting TOR back into HISY makes HISTORY — we learned about Roman Britain in history. ✓"
+          explanation: "TRY rebuilds PASTRY, rolled out for the pie crust. The trap is TOR: it rebuilds PASTOR, a real word — but a pastor is a church minister, not something rolled out for a pie, so the sentence rules it out. JAM, EGG and OAT rebuild nothing. ✓"
         },
         {
           id: 80,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"I finished my maths HOORK before tea this evening.\"",
-          options: ["NAG","DUE","MEW","SET","BIN"],
-          correct: 2,
-          explanation: "Putting MEW back into HOORK makes HOMEWORK — I finished my maths homework. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The archer fired her arrow straight at the round TAR in the field.\"",
+          options: ["TAN","MAP","BOW","GET","MUD"],
+          correct: 3,
+          explanation: "GET rebuilds TARGET, what the archer aims at. The trap is TAN: it rebuilds TARTAN, a real word — but tartan is checked Scottish cloth, not something you fire arrows at, so the sentence rules it out. MAP, BOW and MUD rebuild nothing. ✓"
         },
         {
           id: 81,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We wrote two long ESS about our summer break.\"",
-          options: ["SAY","TWO","TEN","RED","ZIP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grandpa often takes a short CAT in his comfy armchair after lunch.\"",
+          options: ["NAP","KIN","FUR","PAW","RUG"],
           correct: 0,
-          explanation: "Putting SAY back into ESS makes ESSAYS — we wrote two long essays. ✓"
+          explanation: "NAP rebuilds CATNAP, the short sleep Grandpa takes. The trap is KIN: it rebuilds CATKIN, a real word — but a catkin is a fluffy flower spike on a tree, not a short sleep, so the sentence rules it out. FUR, PAW and RUG rebuild nothing. ✓"
         },
         {
           id: 82,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"My sister is really good at DING cartoon characters.\"",
-          options: ["TOY","CUP","MAP","RAW","PIG"],
-          correct: 3,
-          explanation: "Putting RAW back into DING makes DRAWING — she is good at drawing cartoons. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"My sister is really very good at DING colourful cartoon characters.\"",
+          options: ["BED","TOY","RAW","CUP","MAP"],
+          correct: 2,
+          explanation: "RAW rebuilds DRAWING, what my sister is good at. The trap is BED: it rebuilds BEDDING, a real word — but bedding is the sheets and blankets on a bed, not something you do to cartoon characters, so the sentence rules it out. TOY, CUP and MAP rebuild nothing. ✓"
         },
         {
           id: 83,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every summer our family goes CING in the New Forest.\"",
-          options: ["LOG","POT","VAN","MAP","AMP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every summer our whole family goes CING in the New Forest.\"",
+          options: ["OAT","LOG","POT","MAP","AMP"],
           correct: 4,
-          explanation: "Putting AMP back into CING makes CAMPING — the family goes camping. ✓"
+          explanation: "AMP rebuilds CAMPING, the family holiday. The trap is OAT: it rebuilds COATING, a real word — but a coating is a layer that covers something, not a summer holiday, so the sentence rules it out. LOG, POT and MAP rebuild nothing. ✓"
         },
         {
           id: 84,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On Fridays we go BING at the leisure centre.\"",
-          options: ["PIN","OWL","BAG","HIT","RUN"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On Fridays we all go BING at the busy leisure centre.\"",
+          options: ["ARK","OWL","PIN","BAG","HIT"],
           correct: 1,
-          explanation: "Putting OWL back into BING makes BOWLING — we go bowling. ✓"
+          explanation: "OWL rebuilds BOWLING, what we do at the leisure centre. The trap is ARK: it rebuilds BARKING, a real word — but barking is the sound a dog makes, not something you do at a leisure centre, so the sentence rules it out. PIN, BAG and HIT rebuild nothing. ✓"
         },
         {
           id: 85,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He earned his black belt in KAE last year.\"",
-          options: ["MAT","GYM","RAT","BOW","TOE"],
-          correct: 2,
-          explanation: "Putting RAT back into KAE makes KARATE — he earned his black belt in karate. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The masked BIT galloped off into the hills with the stolen gold.\"",
+          options: ["SEC","MAP","GUN","AND","BOW"],
+          correct: 3,
+          explanation: "AND rebuilds BANDIT, the masked robber. The trap is SEC: it rebuilds BISECT, a real word — but to bisect means to cut something in half, not a masked robber, so the sentence rules it out. MAP, GUN and BOW rebuild nothing. ✓"
         },
         {
           id: 86,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grandma is SEG a patch onto my torn jeans.\"",
-          options: ["HEM","DYE","RAG","TOP","WIN"],
-          correct: 4,
-          explanation: "Putting WIN back into SEG makes SEWING — Grandma is sewing a patch. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grandma is SEG a colourful patch onto my torn jeans.\"",
+          options: ["WIN","EIN","HEM","DYE","RAG"],
+          correct: 0,
+          explanation: "WIN rebuilds SEWING, what Grandma is doing to the jeans. The trap is EIN: it rebuilds SEEING (a real word), but EIN is not a word on its own and 'seeing' means using your eyes, not stitching a patch. HEM, DYE and RAG rebuild nothing. ✓"
         },
         {
           id: 87,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She loves RIG her pony across the open fields.\"",
-          options: ["DIN","HAT","JOG","BIT","HAY"],
-          correct: 0,
-          explanation: "Putting DIN back into RIG makes RIDING — she loves riding her pony. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She absolutely loves RIG her grey pony across the open fields.\"",
+          options: ["SIN","HAT","DIN","JOG","HAY"],
+          correct: 2,
+          explanation: "DIN rebuilds RIDING, what she loves doing on her pony. The trap is SIN: it rebuilds RISING, a real word — but 'rising' means going up, like the sun, not riding a pony, so the sentence rules it out. HAT, JOG and HAY rebuild nothing. ✓"
         },
         {
           id: 88,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Our train JOEY to London took almost three hours.\"",
-          options: ["BUS","CAB","VAN","URN","MAP"],
-          correct: 3,
-          explanation: "Putting URN back into JOEY makes JOURNEY — our train journey to London. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The weary soldiers prepared for fierce COM on the open battlefield.\"",
+          options: ["ICS","GUN","MAP","FOG","BAT"],
+          correct: 4,
+          explanation: "BAT rebuilds COMBAT, the fighting on the battlefield. The trap is ICS: it rebuilds COMICS (a real word), but ICS is not a word on its own and comics are funny picture stories, not fighting on a battlefield. GUN, MAP and FOG rebuild nothing. ✓"
         },
         {
           id: 89,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We loaded our heavy LUGG into the car boot.\"",
-          options: ["BAG","AGE","MAP","TAG","BIN"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The heavy rucksack was a real BUR to carry up the steep mountain path.\"",
+          options: ["ROW","DEN","BAG","MAP","TUB"],
           correct: 1,
-          explanation: "Putting AGE back into LUGG makes LUGGAGE — we loaded our heavy luggage. ✓"
+          explanation: "DEN rebuilds BURDEN, the heavy load to carry. The trap is ROW: it rebuilds BURROW, a real word — but a burrow is an animal's underground home, not a heavy load, so the sentence rules it out. BAG, MAP and TUB rebuild nothing. ✓"
         },
         {
           id: 90,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The fishing boats returned to the HARB at dusk.\"",
-          options: ["SEA","BAY","COD","NET","OUR"],
-          correct: 4,
-          explanation: "Putting OUR back into HARB makes HARBOUR — the boats returned to the harbour. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children had to be home before the strict nine o'clock CUR.\"",
+          options: ["LED","TIP","MAP","FEW","FOG"],
+          correct: 3,
+          explanation: "FEW rebuilds CURFEW, the time the children must be home by. The trap is LED: it rebuilds CURLED, a real word — but 'curled' means twisted into a curl, not a time to be home, so the sentence rules it out. TIP, MAP and FOG rebuild nothing. ✓"
         },
         {
           id: 91,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer drove his big red TROR across the field.\"",
-          options: ["ACT","BUS","COW","HAY","MUD"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer drove his big red TROR slowly across the muddy field.\"",
+          options: ["ACT","AIT","COW","HAY","MUD"],
           correct: 0,
-          explanation: "Putting ACT back into TROR makes TRACTOR — the farmer drove his tractor. ✓"
+          explanation: "ACT rebuilds TRACTOR, what the farmer drives. The trap is AIT: it rebuilds TRAITOR — but a traitor is someone who betrays their side, not a vehicle driven across a field, so the sentence rules it out. COW, HAY and MUD rebuild nothing. ✓"
         },
         {
           id: 92,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We booked our SEAG on the early morning coach.\"",
-          options: ["ROW","CAB","TIN","AIR","MAP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We booked our SEAG on the early morning coach to London.\"",
+          options: ["LIN","ROW","TIN","CAB","MAP"],
           correct: 2,
-          explanation: "Putting TIN back into SEAG makes SEATING — we booked our seating on the coach. ✓"
+          explanation: "TIN rebuilds SEATING, what we booked on the coach. The trap is LIN: it rebuilds SEALING (a real word), but LIN is not a word on its own and 'sealing' means closing something tightly, not booking a place on a coach. ROW, CAB and MAP rebuild nothing. ✓"
         },
         {
           id: 93,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Thick smoke poured from the top of the VOLO during the eruption.\"",
-          options: ["CAN","JAR","MUD","FOG","TAP"],
-          correct: 0,
-          explanation: "The answer is CAN, a real word (a metal tin). Add it to VOLO to make VOLCANO. JAR, MUD, FOG and TAP are real words but only CAN rebuilds the word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The river had carved a deep, rocky CON through the desert over millions of years.\"",
+          options: ["RAY","FOG","MUD","TAP","ANY"],
+          correct: 4,
+          explanation: "ANY rebuilds CANYON, the deep gorge carved by the river. The trap is RAY: it rebuilds CRAYON, a real word — but a crayon is for colouring, not a deep gorge carved by a river, so the sentence rules it out. FOG, MUD and TAP rebuild nothing. ✓"
         },
         {
           id: 94,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He kept his pound coins safe inside his WET.\"",
-          options: ["PAY","ALL","TIP","FEE","OWE"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He kept all his shiny pound coins safe inside his leather WET.\"",
+          options: ["IGH","ALL","PAY","TIP","FEE"],
           correct: 1,
-          explanation: "Putting ALL back into WET makes WALLET — he kept his coins in his wallet. ✓"
+          explanation: "ALL rebuilds WALLET, where he keeps his coins. The trap is IGH: it rebuilds WEIGHT (a real word), but IGH is not a word on its own and a weight is how heavy something is, not where you keep coins. PAY, TIP and FEE rebuild nothing. ✓"
         },
         {
           id: 95,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The huge grey ELEPH sprayed water over its back with its trunk.\"",
-          options: ["ANT","PEA","OWL","ICE","RUG"],
-          correct: 0,
-          explanation: "The answer is ANT, a real word (a tiny insect). Add it to the end of ELEPH to make ELEPHANT. PEA, OWL, ICE and RUG are real words but none rebuild a proper word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A noisy black-and-white MAG snatched the shiny ring from the windowsill.\"",
+          options: ["GOT","OWL","BUG","PIE","FOX"],
+          correct: 3,
+          explanation: "PIE rebuilds MAGPIE, the bird that snatched the ring. The trap is GOT: it rebuilds MAGGOT, a real word — but a maggot is a small grub, not a bird that snatches shiny things, so the sentence rules it out. OWL, BUG and FOX rebuild nothing. ✓"
         },
         {
           id: 96,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We made the final PAYT for our new sofa.\"",
-          options: ["MEN","TAX","OWE","SUM","TIP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please wait just a MOT while I quickly find the missing keys.\"",
+          options: ["MEN","ARM","TAX","OWE","TIP"],
           correct: 0,
-          explanation: "Putting MEN back into PAYT makes PAYMENT — we made the final payment. ✓"
+          explanation: "MEN rebuilds MOMENT, a short while to wait. The trap is ARM: it rebuilds MARMOT, a real word (a furry mountain animal) — but a marmot is not a short space of time, so the sentence rules it out. TAX, OWE and TIP rebuild nothing. ✓"
         },
         {
           id: 97,
           difficulty: 2,
           question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The shop gave us a full RED for the faulty kettle.\"",
-          options: ["PAY","CUT","VAT","FUN","TIP"],
-          correct: 3,
-          explanation: "Putting FUN back into RED makes REFUND — the shop gave us a refund. ✓"
+          options: ["WAR","PAY","FUN","CUT","TIP"],
+          correct: 2,
+          explanation: "FUN rebuilds REFUND, the money back for the faulty kettle. The trap is WAR: it rebuilds REWARD, a real word — but a reward is a prize for doing something good, not money back for faulty goods, so the sentence rules it out. PAY, CUT and TIP rebuild nothing. ✓"
         },
         {
           id: 98,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He is very careful with his pocket-money SPING each week.\"",
-          options: ["BUY","FEE","END","TAX","CUT"],
-          correct: 2,
-          explanation: "Putting END back into SPING makes SPENDING — careful with his pocket-money spending. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He is very careful with his weekly pocket-money SPING.\"",
+          options: ["EED","BUY","FEE","TAX","END"],
+          correct: 4,
+          explanation: "END rebuilds SPENDING, what he is careful with. The trap is EED: it rebuilds SPEEDING (a real word), but EED is not a word on its own and 'speeding' means going too fast, not using pocket money. BUY, FEE and TAX rebuild nothing. ✓"
         },
         {
           id: 99,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We are going on HOAY to Cornwall next summer.\"",
-          options: ["SEA","LID","SUN","BAY","TAN"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The old minstrel sang a sad BAL about a brave lost knight.\"",
+          options: ["LET","LAD","MAP","RAG","TIP"],
           correct: 1,
-          explanation: "Putting LID back into HOAY makes HOLIDAY — going on holiday to Cornwall. ✓"
+          explanation: "LAD rebuilds BALLAD, the sad song the minstrel sang. The trap is LET: it rebuilds BALLET, a real word — but ballet is a kind of dance, not a song you sing, so the sentence rules it out. MAP, RAG and TIP rebuild nothing. ✓"
         },
         {
           id: 100,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She wore her new leather SALS down to the beach.\"",
-          options: ["SUN","HAT","TOE","BAG","AND"],
-          correct: 4,
-          explanation: "Putting AND back into SALS makes SANDALS — she wore her new sandals. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She wore her brand-new leather SALS down to the sandy beach.\"",
+          options: ["IGN","SUN","HAT","AND","TOE"],
+          correct: 3,
+          explanation: "AND rebuilds SANDALS, the shoes she wore to the beach. The trap is IGN: it rebuilds SIGNALS (a real word), but IGN is not a word on its own and signals are messages or lights, not beach shoes. SUN, HAT and TOE rebuild nothing. ✓"
         },
         {
           id: 101,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She spread butter on the warm CRUM at teatime.\"",
-          options: ["PET","JAM","TEA","POT","LID"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She spread melting butter on the warm CRUM at teatime.\"",
+          options: ["PET","BLE","JAM","TEA","POT"],
           correct: 0,
-          explanation: "The answer is PET, a real word (a tame animal). Add it to CRUM to make CRUMPET. JAM, TEA, POT and LID fit teatime but only PET completes the word. ✓"
+          explanation: "PET rebuilds CRUMPET, the teacake she buttered. The trap is BLE: it rebuilds CRUMBLE (a real word), but BLE is not a word on its own and a crumble is a baked fruit pudding, not something you butter at teatime. JAM, TEA and POT rebuild nothing. ✓"
         },
         {
           id: 102,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He found a pretty pink SEALL down on the sand.\"",
-          options: ["SUN","NET","BAY","SHE","OAR"],
-          correct: 3,
-          explanation: "Putting SHE back into SEALL makes SEASHELL — he found a pink seashell. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A little stone CHE with tiny wings smiled down from the church ceiling.\"",
+          options: ["WED","BUG","RUB","OWL","FOX"],
+          correct: 2,
+          explanation: "RUB rebuilds CHERUB, the chubby winged angel on the ceiling. The trap is WED: it rebuilds CHEWED, a real word — but 'chewed' means bitten and ground with the teeth, not a winged carving on a ceiling, so the sentence rules it out. BUG, OWL and FOX rebuild nothing. ✓"
         },
         {
           id: 103,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Slippery green SEED covered the rocks near the shore.\"",
-          options: ["MUD","NET","AWE","TAN","BAY"],
-          correct: 2,
-          explanation: "Putting AWE back into SEED makes SEAWEED — green seaweed covered the rocks. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Slippery green SEED clung to the rocks all along the shore.\"",
+          options: ["CUR","MUD","NET","BAY","AWE"],
+          correct: 4,
+          explanation: "AWE rebuilds SEAWEED, the green plant clinging to the rocks. The trap is CUR: it rebuilds SECURED, a real word — but 'secured' means fastened tightly, not green plants on rocks, so the sentence rules it out. MUD, NET and BAY rebuild nothing. ✓"
         },
         {
           id: 104,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad likes to SUNHE on the beach all afternoon.\"",
-          options: ["SEA","BAT","TAN","DIP","HOT"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After two weeks in Spain she came home with a deep golden SUN.\"",
+          options: ["SET","TAN","SEA","BAY","OAR"],
           correct: 1,
-          explanation: "Putting BAT back into SUNHE makes SUNBATHE — Dad likes to sunbathe on the beach. ✓"
+          explanation: "TAN rebuilds SUNTAN, the golden-brown skin from the sun. The trap is SET: it rebuilds SUNSET, a real word — but a sunset is when the sun goes down in the evening, not brown skin, so the sentence rules it out. SEA, BAY and OAR rebuild nothing. ✓"
         },
         {
           id: 105,
           difficulty: 2,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The teenagers went SURG on the big Atlantic waves.\"",
-          options: ["SEA","WAX","BAY","TOW","FIN"],
-          correct: 4,
-          explanation: "Putting FIN back into SURG makes SURFING — the teenagers went surfing. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The majestic eagle was SING high above the rocky mountain peaks.\"",
+          options: ["AIL","FIN","SKY","OAR","JET"],
+          correct: 3,
+          explanation: "OAR rebuilds SOARING, the eagle flying high. The trap is AIL: it rebuilds SAILING, a real word — but sailing is moving a boat across water, not an eagle flying in the sky, so the sentence rules it out. FIN, SKY and JET rebuild nothing. ✓"
         },
         {
           id: 106,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Deep in the rainforest, a sleek black PANT stalked silently between the tangled vines at dusk.\"",
-          options: ["PAW","CUB","HER","FUR","JAW"],
-          correct: 2,
-          explanation: "Putting HER back into PANT makes PANTHER — the big wild cat stalking the forest. HER is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Deep in the steamy jungle a sleek and powerful black PANT crept through the tangled undergrowth, hunting alone in the fading evening light.\"",
+          options: ["HER","END","AGE","CUB","JAW"],
+          correct: 0,
+          explanation: "HER rebuilds PANTHER, the big cat hunting in the jungle. Two traps also make real words but the sentence rules them out: END rebuilds PENDANT (a jewelled necklace charm, which cannot creep through undergrowth), and AGE rebuilds PAGEANT (a grand public show, which does not stalk prey). CUB and JAW rebuild nothing. ✓"
         },
         {
           id: 107,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The skilled CARTER measured each wooden plank twice before sawing it to build the new staircase.\"",
-          options: ["SAW","PEG","MUD","PEN","RIB"],
-          correct: 3,
-          explanation: "Putting PEN back into CARTER makes CARPENTER — the woodworker building the staircase. PEN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the museum the Victorian lady's gown was displayed beside the tightly laced COR that had once pinched her waist painfully thin.\"",
+          options: ["NET","DON","SET","MAP","TIE"],
+          correct: 2,
+          explanation: "SET rebuilds CORSET, the laced undergarment beside the gown. Two traps also make real words but the sentence rules them out: NET rebuilds CORNET (an ice-cream cone or brass instrument, not a laced garment), and DON rebuilds CORDON (a line of guards or barrier, not something worn under a dress). MAP and TIE rebuild nothing. ✓"
         },
         {
           id: 108,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She fastened the sparkling silver BRACE carefully around her slim wrist before the party.\"",
-          options: ["LET","GEM","ARM","TIE","WAX"],
-          correct: 0,
-          explanation: "The answer is LET, a real word (to allow). Add it to the end of BRACE to make BRACELET. BRACE is itself a word, so the sentence about her wrist points to the answer. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the old fairy tale, a beautiful young MEN with long golden hair was locked away at the very top of the tall stone tower.\"",
+          options: ["ART","ACE","OWL","FOX","AID"],
+          correct: 4,
+          explanation: "AID rebuilds MAIDEN, the young woman in the tower. Two traps also make real words but the sentence rules them out: ART rebuilds MARTEN (a small wild forest animal, not a girl with golden hair), and ACE rebuilds MENACE (a dangerous threat, not a girl in a tower). OWL and FOX rebuild nothing. ✓"
         },
         {
           id: 109,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The emperor wore a flowing SCAR robe trimmed with gold thread at the grand ceremony.\"",
-          options: ["TAN","DYE","LET","FOG","HUM"],
-          correct: 2,
-          explanation: "Putting LET back into SCAR makes SCARLET — the bright red robe. LET is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The antique ring in the museum case held a single deep-red GAR that sparkled brilliantly under the bright display lights.\"",
+          options: ["DEN","NET","AGE","MUD","TIP"],
+          correct: 1,
+          explanation: "NET rebuilds GARNET, the deep-red gem set in the ring. Two traps also make real words but the sentence rules them out: DEN rebuilds GARDEN (where flowers grow, not a gem in a ring), and AGE rebuilds GARAGE (where you park a car, not a sparkling jewel). MUD and TIP rebuild nothing. ✓"
         },
         {
           id: 110,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A ferocious TORN swept across the open plains, hurling barn roofs and fences high into the sky.\"",
-          options: ["SKY","FOG","RAG","DEN","ADO"],
-          correct: 4,
-          explanation: "Putting ADO back into TORN makes TORNADO — the violent spinning storm. ADO is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"As dusk fell across the meadow, the frightened rabbit darted underground into its deep BUR to hide from the circling hawk.\"",
+          options: ["DEN","LAP","FOX","ROW","OWL"],
+          correct: 3,
+          explanation: "ROW rebuilds BURROW, the rabbit's underground tunnel. Two traps also make real words but the sentence rules them out: DEN rebuilds BURDEN (a heavy load to carry, not an underground tunnel), and LAP rebuilds BURLAP (rough sacking cloth, not where a rabbit hides). FOX and OWL rebuild nothing. ✓"
         },
         {
           id: 111,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"As the sun sank, the evening sky glowed a deep CRIM above the silent hills.\"",
-          options: ["RED","TAN","SON","DYE","HUE"],
-          correct: 2,
-          explanation: "Putting SON back into CRIM makes CRIMSON — the deep red evening sky. SON is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"For the grand Highland wedding, the proud groom wore a traditional kilt woven in his family's bright red-and-green TAR.\"",
+          options: ["TAN","GET","RED","MAP","BIB"],
+          correct: 0,
+          explanation: "TAN rebuilds TARTAN, the checked cloth of the kilt. Two traps also make real words but the sentence rules them out: GET rebuilds TARGET (what you aim an arrow at, not a woven cloth), and RED rebuilds TARRED (covered in sticky black tar, not a colourful kilt). MAP and BIB rebuild nothing. ✓"
         },
         {
           id: 112,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The tiny KIT chased a ball of wool right across the kitchen floor.\"",
-          options: ["TEN","PAW","FUR","MEW","LAP"],
-          correct: 0,
-          explanation: "The answer is TEN, the number. Add it to KIT to make KITTEN. KIT is itself a word, so read the sentence for meaning — a baby cat is a kitten. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The contented cat stretched and curled up to sleep on the warm, SUN windowsill where the bright morning rays came pouring in.\"",
+          options: ["SET","DAY","LIT","SEA","FOG"],
+          correct: 2,
+          explanation: "LIT rebuilds SUNLIT, the windowsill lit by morning rays. Two traps also make real words but the sentence rules them out: SET rebuilds SUNSET (the evening sky as the sun goes down, but the rays here are morning), and DAY rebuilds SUNDAY (a day of the week, not a description of a windowsill). SEA and FOG rebuild nothing. ✓"
         },
         {
           id: 113,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Everyone hoped the WEAR would stay calm for the village fair on Saturday.\"",
-          options: ["THE","SUN","FOG","DRY","PEG"],
-          correct: 0,
-          explanation: "The answer is THE, a very common word. Slot it into WEAR to make WEATHER. WEAR is itself a word, so use the sentence's meaning to spot the real answer. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny carefully lifted the dainty china TEA right up to her lips and took a tiny, delicate sip of her hot, milky drink.\"",
+          options: ["BAG","POT","MUG","JAR","CUP"],
+          correct: 4,
+          explanation: "CUP rebuilds TEACUP, which Granny lifts to her lips to sip. Two traps also make real words but the sentence rules them out: BAG rebuilds TEABAG (which holds the leaves for brewing, not something you sip from), and POT rebuilds TEAPOT (which you brew and pour from, far too big to sip from). MUG and JAR rebuild nothing. ✓"
         },
         {
           id: 114,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the ancient legend, a fearsome DON guarded the mountain cave where the treasure lay hidden.\"",
-          options: ["WIG","RAG","MOP","SOB","FIB"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the ancient legend, a fearsome fire-breathing DON guarded a glittering hoard of gold deep inside the dark mountain cave.\"",
+          options: ["KEY","RAG","ATE","FOG","WEB"],
           correct: 1,
-          explanation: "Putting RAG back into DON makes DRAGON — the fearsome beast guarding the cave. RAG is a real word too. ✓"
+          explanation: "RAG rebuilds DRAGON, the fire-breathing guardian of the gold. Two traps also make real words but the sentence rules them out: KEY rebuilds DONKEY (a stubborn farm animal, not a fire-breathing beast), and ATE rebuilds DONATE (to give money to charity, not to guard a cave). FOG and WEB rebuild nothing. ✓"
         },
         {
           id: 115,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The medieval knight polished his gleaming ARM before riding bravely into the fierce morning battle.\"",
-          options: ["TOE","OUR","HIP","JAW","LEG"],
-          correct: 1,
-          explanation: "Putting OUR back into ARM makes ARMOUR — the knight's metal protection. OUR is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Wearing pink satin shoes, the young dancer rose gracefully onto her toes and twirled across the stage in the school BAL.\"",
+          options: ["LAD","LOT","MAP","LET","RUG"],
+          correct: 3,
+          explanation: "LET rebuilds BALLET, the graceful dance the dancer performs. Two traps also make real words but the sentence rules them out: LAD rebuilds BALLAD (a slow story-song you sing, not a dance in satin shoes), and LOT rebuilds BALLOT (a slip of paper for voting, not a dance on a stage). MAP and RUG rebuild nothing. ✓"
         },
         {
           id: 116,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"When the bright headlights flashed across his face, he BLED quickly and turned away.\"",
-          options: ["CUT","FOG","INK","SOB","NAP"],
-          correct: 2,
-          explanation: "The answer is INK, a real word (the dark liquid in a pen). Slot it into BLED to make BLINKED. Notice that BLED is itself a word, so let the sentence's meaning guide you, not the look of the capital word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"When the bright torchlight suddenly shone straight into her face in the dark, she BLED several times and quickly shielded her dazzled eyes.\"",
+          options: ["INK","END","ATE","NAP","SOB"],
+          correct: 0,
+          explanation: "INK rebuilds BLINKED, what her eyes did in the bright light. Two traps also make real words but the sentence rules them out: END rebuilds BLENDED (mixed together smoothly, like a smoothie, not what eyes do), and ATE rebuilds BLEATED (the sound a sheep makes, not what eyes do). NAP and SOB rebuild nothing. ✓"
         },
         {
           id: 117,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"According to an old Cornish LEG, a giant once hurled boulders across the stormy sea.\"",
-          options: ["TOE","RIB","END","HIP","JAW"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every spring the bare hazel branches down by the river are covered in soft, dangling yellow CAT that sway gently in the breeze.\"",
+          options: ["NAP","GUT","KIN","FUR","PAW"],
           correct: 2,
-          explanation: "Putting END back into LEG makes LEGEND — the old story about the giant. END is a real word too. ✓"
+          explanation: "KIN rebuilds CATKIN, the soft dangling spring flower on the branches. Two traps also make real words but the sentence rules them out: NAP rebuilds CATNAP (a short sleep, which cannot cover a branch), and GUT rebuilds CATGUT (tough cord once used for racket strings, not soft yellow flowers). FUR and PAW rebuild nothing. ✓"
         },
         {
           id: 118,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"From the top of the hill the explorer SHED loudly, hoping his lost companions would hear.\"",
-          options: ["HUT","OUT","PEG","LOG","BIN"],
-          correct: 1,
-          explanation: "Putting OUT back into SHED makes SHOUTED — calling loudly from the hill. OUT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The contented kitten CUR itself into a tight, cosy little ball in front of the crackling fire and soon fell fast asleep.\"",
+          options: ["FEW","ATE","MAP","OIL","LED"],
+          correct: 4,
+          explanation: "LED rebuilds CURLED, how the kitten settled into a ball by the fire. Two traps also make real words but the sentence rules them out: FEW rebuilds CURFEW (a time you must be home by, not what a kitten does), and ATE rebuilds CURATE (a junior parish priest, not how a kitten settles). MAP and OIL rebuild nothing. ✓"
         },
         {
           id: 119,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After selling all her homemade jam at the village fair, Grandma counted a tidy PRO.\"",
-          options: ["WIN","ACE","FIT","CUP","GYM"],
-          correct: 2,
-          explanation: "Putting FIT back into PRO makes PROFIT — the money left after selling the jam. FIT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After paying for all the flour, eggs and sugar, the school cake stall counted up its coins and was delighted to make a tidy PRO.\"",
+          options: ["TON","FIT","PER","PAY","SUM"],
+          correct: 1,
+          explanation: "FIT rebuilds PROFIT, the money the cake stall made. Two traps also make real words but the sentence rules them out: TON rebuilds PROTON (a tiny particle inside an atom, not money from a stall), and PER rebuilds PROPER (meaning correct or genuine, not money counted up). PAY and SUM rebuild nothing. ✓"
         },
         {
           id: 120,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The cheeky monkey cracked open a salty PEA and popped it straight into its eager mouth.\"",
-          options: ["NUT","BUG","JAM","COB","FIG"],
-          correct: 0,
-          explanation: "Putting NUT back into PEA makes PEANUT — the salty snack the monkey ate. NUT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The patient angler opened his little tin, picked out a wriggling pale MAG and carefully threaded it onto his sharp hook.\"",
+          options: ["NET","PIE","BUG","GOT","FLY"],
+          correct: 3,
+          explanation: "GOT rebuilds MAGGOT, the wriggling bait the angler threads onto his hook. Two traps also make real words but the sentence rules them out: NET rebuilds MAGNET (a metal object that attracts iron, not bait on a hook), and PIE rebuilds MAGPIE (a black-and-white bird, far too big to thread onto a hook). BUG and FLY rebuild nothing. ✓"
         },
         {
           id: 121,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"With fresh determination the team REED their efforts and finally hauled the heavy boat ashore.\"",
-          options: ["MUD","NEW","FOG","DEN","BOG"],
-          correct: 1,
-          explanation: "Putting NEW back into REED makes RENEWED — the team trying again with fresh effort. NEW is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Deep in her gloomy candlelit cellar the old witch carefully stirred the bubbling green ION in her iron cauldron and muttered a magic spell.\"",
+          options: ["POT","LOT","NOT","BUG","FOG"],
+          correct: 0,
+          explanation: "POT rebuilds POTION, the magic brew in the cauldron. Two traps also make real words but the sentence rules them out: LOT rebuilds LOTION (a cream you rub on your skin, not brewed in a cauldron), and NOT rebuilds NOTION (an idea in your head, not something stirred over a fire). BUG and FOG rebuild nothing. ✓"
         },
         {
           id: 122,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please try not to FOR your packed lunch and water bottle tomorrow morning.\"",
-          options: ["GET","JOB","PUB","HUM","SKY"],
-          correct: 0,
-          explanation: "The answer is GET, a real word. Add it to FOR to make FORGET. FOR is itself a word, so read the whole sentence — 'try not to forget'. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mum reminded me three separate times this morning not to FOR my swimming kit and my packed lunch on the kitchen table.\"",
+          options: ["BID","AGE","GET","PEG","HUM"],
+          correct: 2,
+          explanation: "GET rebuilds FORGET, to fail to remember the kit and lunch. Two traps also make real words but the sentence rules them out: BID rebuilds FORBID (to refuse to allow something, not to fail to remember it), and AGE rebuilds FORAGE (to hunt around for food, not to fail to remember). PEG and HUM rebuild nothing. ✓"
         },
         {
           id: 123,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The brightly coloured PAR squawked loudly and flapped its wings whenever a stranger entered the room.\"",
-          options: ["EGG","ROT","NUT","WAX","FIG"],
-          correct: 1,
-          explanation: "Putting ROT back into PAR makes PARROT — the colourful squawking bird. ROT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The brightly coloured PAR perched on the old pirate's shoulder and squawked the very same cheeky phrase over and over all afternoon.\"",
+          options: ["DON","SON","EGG","FIG","ROT"],
+          correct: 4,
+          explanation: "ROT rebuilds PARROT, the squawking bird on the pirate's shoulder. Two traps also make real words but the sentence rules them out: DON rebuilds PARDON (being officially forgiven for a crime, not a bird), and SON rebuilds PARSON (a village priest, not a bird on a shoulder). EGG and FIG rebuild nothing. ✓"
         },
         {
           id: 124,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The stern prison WAR jangled his heavy keys as he marched along the echoing stone corridor.\"",
-          options: ["GUN","BOW","DEN","AXE","FOE"],
-          correct: 2,
-          explanation: "Putting DEN back into WAR makes WARDEN — the officer guarding the prison. DEN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Wearing his green uniform, the park GER strode through the forest checking that none of the campers had lit any dangerous fires.\"",
+          options: ["LED","RAN","FIN","OWL","FOX"],
+          correct: 1,
+          explanation: "RAN rebuilds RANGER, the warden who patrols the forest. Two traps also make real words but the sentence rules them out: LED rebuilds LEDGER (a book for recording money, not a person in a uniform), and FIN rebuilds FINGER (part of your hand, not a person patrolling a forest). OWL and FOX rebuild nothing. ✓"
         },
         {
           id: 125,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ancient spell was WRIT in faded ink across the brittle pages of the leather book.\"",
-          options: ["BUG","MAP","COD","FOX","TEN"],
-          correct: 4,
-          explanation: "Putting TEN back into WRIT makes WRITTEN — the spell set down in ink. TEN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The cheerful baby gripped her brightly coloured plastic TLE and shook it hard, laughing happily at the jingling noise it made.\"",
+          options: ["BAT","NET","POD","RAT","JAM"],
+          correct: 3,
+          explanation: "RAT rebuilds RATTLE, the baby's noisy shaking toy. Two traps also make real words but the sentence rules them out: BAT rebuilds BATTLE (a big fight between armies, not a baby's toy), and NET rebuilds NETTLE (a plant that stings you, not a toy a baby shakes). POD and JAM rebuild nothing. ✓"
         },
         {
           id: 126,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The notorious OUT robbed wealthy travellers on the moonlit road before vanishing into the dark forest.\"",
-          options: ["FOG","LAW","JAM","WEB","MUD"],
-          correct: 1,
-          explanation: "Putting LAW back into OUT makes OUTLAW — the robber on the moonlit road. LAW is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The notorious masked OUT galloped away across the moonlit moor with the stolen gold while the furious sheriff gave chase.\"",
+          options: ["LAW","FIT","LET","FOG","WEB"],
+          correct: 0,
+          explanation: "LAW rebuilds OUTLAW, the robber fleeing the sheriff. Two traps also make real words but the sentence rules them out: FIT rebuilds OUTFIT (a set of clothes you wear, not a robber on the run), and LET rebuilds OUTLET (a shop or an electrical socket, not someone fleeing across a moor). FOG and WEB rebuild nothing. ✓"
         },
         {
           id: 127,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The scientist typed the final results into her COMER and waited for the screen to respond.\"",
-          options: ["TAP","BUG","PUT","LOG","FAN"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ancient Roman coins dug up in the muddy field were made of a dull, reddish-brown PER that had slowly turned green with age.\"",
+          options: ["PEP","ZIP","COP","FOG","MAT"],
           correct: 2,
-          explanation: "Putting PUT back into COMER makes COMPUTER — the machine showing the results. PUT is a real word too. ✓"
+          explanation: "COP rebuilds COPPER, the reddish-brown metal of the coins. Two traps also make real words but the sentence rules them out: PEP rebuilds PEPPER (a spice that makes you sneeze, not a metal), and ZIP rebuilds ZIPPER (a fastener on a coat, not an ancient coin). FOG and MAT rebuild nothing. ✓"
         },
         {
           id: 128,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The nurse gently wrapped a clean white BAND around the boy's badly grazed and bleeding knee.\"",
-          options: ["POP","GIG","FAN","HUM","AGE"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The grand staircase in the museum was carved from cool, smooth white BLE that gleamed softly under the bright crystal chandeliers.\"",
+          options: ["RAM","HUM","FOG","TAP","MAR"],
           correct: 4,
-          explanation: "Putting AGE back into BAND makes BANDAGE — the dressing wrapped round the knee. AGE is a real word too. ✓"
+          explanation: "MAR rebuilds MARBLE, the polished white stone of the staircase. Two traps also make real words but the sentence rules them out: RAM rebuilds RAMBLE (a long country walk, not a stone), and HUM rebuilds HUMBLE (meaning modest and not proud, not a kind of stone). FOG and TAP rebuild nothing. ✓"
         },
         {
           id: 129,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A sudden clap of thunder START the grazing deer, which bolted swiftly across the open meadow.\"",
-          options: ["RUN","GUN","LED","LAP","WIN"],
-          correct: 2,
-          explanation: "Putting LED back into START makes STARTLED — how the thunder left the deer. LED is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"When the electricity suddenly failed during the storm, Grandma lit a tall wax DLE so that we could still see across the dark room.\"",
+          options: ["SAD","CAN","RID","OWL","FOG"],
+          correct: 1,
+          explanation: "CAN rebuilds CANDLE, the wax light Grandma lit. Two traps also make real words but the sentence rules them out: SAD rebuilds SADDLE (the seat you put on a horse, not a source of light), and RID rebuilds RIDDLE (a puzzling question, not something you light in the dark). OWL and FOG rebuild nothing. ✓"
         },
         {
           id: 130,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The wise old professor shared his vast KLEDGE of ancient history with the eager young students.\"",
-          options: ["OWN","NOW","LOT","FAN","BUG"],
-          correct: 1,
-          explanation: "Putting NOW back into KLEDGE makes KNOWLEDGE — the professor's learning. NOW is a real word too (mind the silent K!). ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The window cleaner leaned his tall metal DER carefully against the wall and climbed up rung by rung to reach the very top floor.\"",
+          options: ["POW","TEN","FOG","LAD","MUG"],
+          correct: 3,
+          explanation: "LAD rebuilds LADDER, the frame of rungs the cleaner climbs. Two traps also make real words but the sentence rules them out: POW rebuilds POWDER (a fine dust, not something you lean against a wall and climb), and TEN rebuilds TENDER (meaning soft and gentle, not a climbing frame). FOG and MUG rebuild nothing. ✓"
         },
         {
           id: 131,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Deep in the Egyptian desert, explorers discovered a vast stone PYID hiding the pharaoh's golden tomb.\"",
-          options: ["COD","RAM","MAP","TUB","WIG"],
-          correct: 1,
-          explanation: "Putting RAM back into PYID makes PYRAMID — the great stone tomb in the desert. RAM is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"One small round TON had worked loose from the cuff of his grey school shirt, so Mum quickly sewed it firmly back into place.\"",
+          options: ["BUT","COT","PRO","BAG","RUG"],
+          correct: 0,
+          explanation: "BUT rebuilds BUTTON, the fastener loose on the shirt cuff. Two traps also make real words but the sentence rules them out: COT rebuilds COTTON (the soft material the shirt is made from, not the round fastener), and PRO rebuilds PROTON (a tiny particle inside an atom, not part of a shirt). BAG and RUG rebuild nothing. ✓"
         },
         {
           id: 132,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The old harbour wall was built from huge blocks of grey GITE that resisted the crashing waves.\"",
-          options: ["ORE","RAN","BOG","TIN","COD"],
-          correct: 1,
-          explanation: "Putting RAN back into GITE makes GRANITE — the hard grey rock of the harbour wall. RAN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The two old friends greeted each other warmly and spent the whole sunny afternoon swapping cheerful TER and friendly jokes over their tea.\"",
+          options: ["LET","BET","BAN","FOG","MUD"],
+          correct: 2,
+          explanation: "BAN rebuilds BANTER, the cheerful joking between the friends. Two traps also make real words but the sentence rules them out: LET rebuilds LETTER (a written message you post, not spoken joking), and BET rebuilds BETTER (meaning improved or of higher quality, not friendly teasing). FOG and MUD rebuild nothing. ✓"
         },
         {
           id: 133,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The museum displayed the enormous SKELE of a dinosaur that roamed the earth millions of years ago.\"",
-          options: ["RIB","JAW","HIP","TON","TOE"],
-          correct: 3,
-          explanation: "Putting TON back into SKELE makes SKELETON — the dinosaur's bones in the museum. TON is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"At the busy circus the brightly dressed clown could cleverly GLE five coloured balls high in the air without ever dropping a single one.\"",
+          options: ["GIG","MAN","OWL","FOX","JUG"],
+          correct: 4,
+          explanation: "JUG rebuilds JUGGLE, throwing and catching the balls in the air. Two traps also make real words but the sentence rules them out: GIG rebuilds GIGGLE (to laugh in a silly way, not to throw and catch balls), and MAN rebuilds MANGLE (to crush or twist something badly, not to keep balls in the air). OWL and FOX rebuild nothing. ✓"
         },
         {
           id: 134,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The busy bee drank sweet NEC from deep inside the brightly coloured foxglove flowers.\"",
-          options: ["BEE","BUD","TAR","SAP","POD"],
-          correct: 2,
-          explanation: "Putting TAR back into NEC makes NECTAR — the sweet liquid in the flowers. TAR is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the old story a brave young knight rode through the dark forest to rescue the frightened SEL trapped high in the dragon's tower.\"",
+          options: ["TIN","DAM","DIE","OWL","FOG"],
+          correct: 1,
+          explanation: "DAM rebuilds DAMSEL, the young woman the knight rescues. Two traps also make real words but the sentence rules them out: TIN rebuilds TINSEL (the shiny strips you drape on a Christmas tree, not a person), and DIE rebuilds DIESEL (a fuel for lorries and trains, not someone trapped in a tower). OWL and FOG rebuild nothing. ✓"
         },
         {
           id: 135,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The mighty SUL ruled his desert kingdom from a magnificent palace filled with silk and treasure.\"",
-          options: ["OIL","RUG","TAN","JAR","POT"],
-          correct: 2,
-          explanation: "Putting TAN back into SUL makes SULTAN — the ruler of the desert kingdom. TAN is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The wicked older brother loved to MENT his little sister by hiding all her favourite toys and refusing to tell her where they were.\"",
+          options: ["GAR","PIG","OWL","TOR","MAP"],
+          correct: 3,
+          explanation: "TOR rebuilds TORMENT, to tease the sister cruelly. Two traps also make real words but the sentence rules them out: GAR rebuilds GARMENT (a piece of clothing, not a way of treating someone), and PIG rebuilds PIGMENT (the colouring in paint, not a way of teasing). OWL and MAP rebuild nothing. ✓"
         },
         {
           id: 136,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer pulled a fat purple TUR from the muddy soil and tossed it into the cart.\"",
-          options: ["POD","HOE","NIP","BUG","SOW"],
-          correct: 2,
-          explanation: "Putting NIP back into TUR makes TURNIP — the purple vegetable from the soil. NIP is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The hungry farmer bent down and tugged a big round purple TUR out of the cold, muddy ground for his winter stew.\"",
+          options: ["NIP","KEY","BAN","POD","HOE"],
+          correct: 0,
+          explanation: "NIP rebuilds TURNIP, the root vegetable pulled from the ground. Two traps also make real words but the sentence rules them out: KEY rebuilds TURKEY (a large bird eaten at Christmas, not pulled from the soil), and BAN rebuilds TURBAN (a cloth wrapped around the head, not a vegetable). POD and HOE rebuild nothing. ✓"
         },
         {
           id: 137,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ballerina gave an ELEG bow before gliding gracefully across the polished wooden stage.\"",
-          options: ["OWN","ANT","RIB","FAN","COB"],
-          correct: 1,
-          explanation: "Putting ANT back into ELEG makes ELEGANT — the graceful bow of the ballerina. ANT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"At the grand medieval feast the king raised his jewelled golden LET high and drank a hearty toast to all his loyal knights.\"",
+          options: ["TAB","PIG","GOB","OWL","FOG"],
+          correct: 2,
+          explanation: "GOB rebuilds GOBLET, the metal cup the king drinks from. Two traps also make real words but the sentence rules them out: TAB rebuilds TABLET (a small pill or a flat computer, not something you drink a toast from), and PIG rebuilds PIGLET (a baby pig, not a cup). OWL and FOG rebuild nothing. ✓"
         },
         {
           id: 138,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In her BOT lesson, Priya learned how plants absorb water through their tangled underground roots.\"",
-          options: ["POD","ANY","SAP","BUD","FIG"],
-          correct: 1,
-          explanation: "Putting ANY back into BOT makes BOTANY — the lesson about how plants grow. ANY is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In her favourite science lesson on BOT, Priya learned exactly how plants soak up water through their long, tangled underground roots.\"",
+          options: ["HER","TOM","POD","SAP","ANY"],
+          correct: 4,
+          explanation: "ANY rebuilds BOTANY, the study of plants. Two traps also make real words but the sentence rules them out: HER rebuilds BOTHER (to annoy or trouble someone, not a science lesson), and TOM rebuilds BOTTOM (the lowest part of something, not the study of plants). POD and SAP rebuild nothing. ✓"
         },
         {
           id: 139,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The brightly coloured BUTTER landed gently on a flower at the bottom of the garden.\"",
-          options: ["FLY","BUG","BEE","WEB","PEN"],
-          correct: 0,
-          explanation: "The answer is FLY, a real word (a small insect, or to move through the air). Add it to the end of BUTTER to make BUTTERFLY. BUTTER is itself a word, so let the sentence's meaning lead you to the answer. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A beautiful red-and-orange BUTTER fluttered lazily from flower to flower right across the warm, sunny summer meadow.\"",
+          options: ["CUP","FLY","NUT","BEE","WEB"],
+          correct: 1,
+          explanation: "FLY rebuilds BUTTERFLY, the winged insect among the flowers. Two traps also make real words but the sentence rules them out: CUP rebuilds BUTTERCUP (a small yellow flower, which cannot flutter between flowers), and NUT rebuilds BUTTERNUT (a kind of squash you cook, not a winged insect). BEE and WEB rebuild nothing. ✓"
         },
         {
           id: 140,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We waited patiently at the station for a QUER of an hour before the delayed train arrived.\"",
-          options: ["BUG","ART","MAP","TOY","DEN"],
-          correct: 1,
-          explanation: "Putting ART back into QUER makes QUARTER — fifteen minutes of waiting. ART is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The teacher reminded the children to use a soft grey BER to erase any mistakes neatly from their maths workbooks.\"",
+          options: ["ROB","JAB","MAP","RUB","FOG"],
+          correct: 3,
+          explanation: "RUB rebuilds RUBBER, what the children use to erase mistakes. Two traps also make real words but the sentence rules them out: ROB rebuilds ROBBER (someone who steals, not something you erase pencil with), and JAB rebuilds JABBER (to chatter quickly, not to rub out mistakes). MAP and FOG rebuild nothing. ✓"
         },
         {
           id: 141,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A plump PARTGE burst suddenly from the hedgerow and whirred low across the frosty winter field.\"",
-          options: ["HEN","JAY","RID","EGG","NUT"],
-          correct: 2,
-          explanation: "Putting RID back into PARTGE makes PARTRIDGE — the plump bird from the hedgerow. RID is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every year the children look forward to the long, hot days of MER, when school is closed and they can play outside until late.\"",
+          options: ["SUM","DIM","HAM","FOG","TAP"],
+          correct: 0,
+          explanation: "SUM rebuilds SUMMER, the warm season the children look forward to. Two traps also make real words but the sentence rules them out: DIM rebuilds DIMMER (meaning less bright, or a light switch, not a season), and HAM rebuilds HAMMER (a tool for banging nails, not a time of year). FOG and TAP rebuild nothing. ✓"
         },
         {
           id: 142,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A triumphant FANE of trumpets announced the queen's arrival at the glittering royal banquet.\"",
-          options: ["GIG","FAR","HUM","POP","JOY"],
-          correct: 1,
-          explanation: "Putting FAR back into FANE makes FANFARE — the burst of trumpets for the queen. FAR is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The old treasure map showed that the pirate's gold lay safely DEN inside a deep cave, far from any prying eyes.\"",
+          options: ["SOD","RID","HID","MAP","OWL"],
+          correct: 2,
+          explanation: "HID rebuilds HIDDEN, the gold concealed far from prying eyes. Two traps also make real words but the sentence rules them out: SOD rebuilds SODDEN (meaning soaking wet, not concealed), and RID rebuilds RIDDEN (meaning having been ridden, like a horse, not hidden away). MAP and OWL rebuild nothing. ✓"
         },
         {
           id: 143,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad poured himself a steaming mug of strong black COF before driving to the early meeting.\"",
-          options: ["TEA","CUP","MUG","FEE","JUG"],
-          correct: 3,
-          explanation: "Putting FEE back into COF makes COFFEE — Dad's steaming morning drink. FEE is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The lost hikers wandered for hours among the tall dark trees of the ancient EST before they finally found the path back home.\"",
+          options: ["MOD","DIG","MAP","OWL","FOR"],
+          correct: 4,
+          explanation: "FOR rebuilds FOREST, the woodland of tall trees the hikers wander through. Two traps also make real words but the sentence rules them out: MOD rebuilds MODEST (meaning humble or small in amount, not a place full of trees), and DIG rebuilds DIGEST (to break down food in your stomach, not a woodland). MAP and OWL rebuild nothing. ✓"
         },
         {
           id: 144,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please telephone the hotel to CONM our booking before we set off on the long holiday.\"",
-          options: ["TUB","FIR","HAT","WIG","BUG"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Through the thick swirling fog the frightened children could just make out a tall, shadowy URE moving slowly towards them.\"",
+          options: ["SEC","FIG","MAN","MAP","FOG"],
           correct: 1,
-          explanation: "Putting FIR back into CONM makes CONFIRM — making the booking certain. FIR is a real word too. ✓"
+          explanation: "FIG rebuilds FIGURE, the shadowy shape moving through the fog. Two traps also make real words but the sentence rules them out: SEC rebuilds SECURE (meaning safe and firmly fastened, not a shadowy shape), and MAN rebuilds MANURE (animal dung spread on fields, not a shape in the fog). MAP and FOG rebuild nothing. ✓"
         },
         {
           id: 145,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The blacksmith thrust the iron bar deep into the roaring NACE until it glowed bright orange.\"",
-          options: ["FUR","GAS","ASH","LOG","TAR"],
-          correct: 0,
-          explanation: "Putting FUR back into NACE makes FURNACE — the roaring fire heating the iron. FUR is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Pounding along the track in her bright spikes, the young NER pushed hard to overtake the others on the very last lap.\"",
+          options: ["DIN","WIN","MAP","RUN","FOG"],
+          correct: 3,
+          explanation: "RUN rebuilds RUNNER, the person racing along the track. Two traps also make real words but the sentence rules them out: DIN rebuilds DINNER (the main meal of the day, not a person on a track), and WIN rebuilds WINNER (the one who comes first, but she is still racing and trying to overtake, not yet first). MAP and FOG rebuild nothing. ✓"
         },
         {
           id: 146,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The charity built schools across the region to EDUE thousands of children who could not read.\"",
-          options: ["BUG","MAP","CAT","TOY","FAN"],
-          correct: 2,
-          explanation: "Putting CAT back into EDUE makes EDUCATE — teaching the children to read. CAT is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"While exploring the long grass at the bottom of the garden, the poor dog was badly TEN on the nose by an angry wasp.\"",
+          options: ["BIT","ROT","FAT","MAP","OWL"],
+          correct: 0,
+          explanation: "BIT rebuilds BITTEN, what the wasp did to the dog's nose. Two traps also make real words but the sentence rules them out: ROT rebuilds ROTTEN (meaning gone bad and decayed, not stung or nipped), and FAT rebuilds FATTEN (to make fatter, not to be stung on the nose). MAP and OWL rebuild nothing. ✓"
         },
         {
           id: 147,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The rescuers feared the old mine tunnel might COLSE and trap the trembling workers deep underground.\"",
-          options: ["RUG","TIN","LAP","BUG","MAP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the busy ancient market the traders would happily TER sacks of golden grain for cloth and tools instead of paying with coins.\"",
+          options: ["WIN","LET","BAR","MAP","FOG"],
           correct: 2,
-          explanation: "Putting LAP back into COLSE makes COLLAPSE — the tunnel falling in. LAP is a real word too. ✓"
+          explanation: "BAR rebuilds BARTER, to trade goods by swapping them. Two traps also make real words but the sentence rules them out: WIN rebuilds WINTER (the cold season of the year, not a way of trading), and LET rebuilds LETTER (a written message you post, not a way of swapping grain for tools). MAP and FOG rebuild nothing. ✓"
         },
         {
           id: 148,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Exhausted after the long mountain hike, she rested her aching head on the soft feather PIL.\"",
-          options: ["BED","NAP","LOW","COT","RUG"],
-          correct: 2,
-          explanation: "Putting LOW back into PIL makes PILLOW — the soft cushion for her head. LOW is a real word too. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On the very last day of term the whole class was in a bright and FUL mood, singing and laughing as they tidied out their messy desks.\"",
+          options: ["USE","SIN","MAP","OWL","JOY"],
+          correct: 4,
+          explanation: "JOY rebuilds JOYFUL, the happy mood of the class. Two traps also make real words but the sentence rules them out: USE rebuilds USEFUL (meaning helpful and handy, not a mood), and SIN rebuilds SINFUL (meaning wicked or very bad, not a happy, cheerful mood). MAP and OWL rebuild nothing. ✓"
         },
         {
           id: 149,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She rummaged through her heavy leather HAND looking for the missing bus tickets.\"",
-          options: ["BAG","RIM","FOG","TUB","PEW"],
-          correct: 0,
-          explanation: "The answer is BAG, a real word. Add it to HAND to make HANDBAG. HAND is itself a word, so let the sentence guide you — she searched it for tickets. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny rummaged around deep inside her big brown leather HAND, searching everywhere for the missing bus tickets and her reading glasses.\"",
+          options: ["OUT","BAG","SAW","RIM","PEW"],
+          correct: 1,
+          explanation: "BAG rebuilds HANDBAG, the bag Granny rummages inside. Two traps also make real words but the sentence rules them out: OUT rebuilds HANDOUT (a free sheet or gift given out, not something you rummage inside), and SAW rebuilds HANDSAW (a tool for cutting wood, not something that holds tickets and glasses). RIM and PEW rebuild nothing. ✓"
         },
         {
           id: 150,
           difficulty: 3,
-          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The workmen rolled out a thick new CAR across the whole landing floor.\"",
-          options: ["PET","GET","PAD","HUM","JOG"],
-          correct: 0,
-          explanation: "The answer is PET, a real word (a tame animal). Add it to CAR to make CARPET. CAR is itself a word, so use the sentence — the workmen rolled out a carpet. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The workmen carefully unrolled a thick new bright-red CAR all the way along the upstairs landing and down the wide wooden staircase.\"",
+          options: ["ROT","TON","HUM","PET","JOG"],
+          correct: 3,
+          explanation: "PET rebuilds CARPET, the floor covering the workmen unroll. Two traps also make real words but the sentence rules them out: ROT rebuilds CARROT (an orange vegetable, not something unrolled along a landing), and TON rebuilds CARTON (a small cardboard box, not unrolled down a staircase). HUM and JOG rebuild nothing. ✓"
         }
       ]
     },
