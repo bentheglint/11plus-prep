@@ -69,13 +69,11 @@ const MANIFEST = [
   { topics: vr, key: 'logicAndLanguage', id: 74, answer: 'Fed' },
   { topics: vr, key: 'logicAndLanguage', id: 76, answer: 'Excited' },
   { topics: vr, key: 'logicAndLanguage', id: 77, answer: 'Broken', notText: 'her mother made' },
-  // missingLettersWords — double-valid-word items disambiguated
-  { topics: vr, key: 'missingLettersWords', id: 1,   answer: 'APT' },
-  { topics: vr, key: 'missingLettersWords', id: 17,  answer: 'ILL' },
-  { topics: vr, key: 'missingLettersWords', id: 105, answer: 'LET' },
-  { topics: vr, key: 'missingLettersWords', id: 117, answer: 'PET' },
-  { topics: vr, key: 'missingLettersWords', id: 118, answer: 'ACE' },
-  { topics: vr, key: 'missingLettersWords', id: 164, answer: 'INN', notText: 'silly joke his little sister' },
+  // (missingLettersWords manifest entries removed 26 Jun 2026: the bank was
+  // regenerated to the authentic sentence-embedded GL format, so these old
+  // isolated-format ids/answers no longer exist. Structural + key↔explanation
+  // consistency for the topic are still enforced below, and the new-format
+  // invariants live in src/__tests__/data/oracleRegressions.test.js.)
   // compoundWords — "toon" (not a real word) replaced with imp+air=impair
   { topics: vr, key: 'compoundWords', id: 168, setAans: 'imp', setBans: 'air', notText: 'toon' },
   // oddTwoOut — obscure "bridge" swapped for "tune"

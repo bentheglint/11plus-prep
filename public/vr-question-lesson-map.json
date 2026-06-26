@@ -4776,927 +4776,752 @@
   "missingLettersWords": [
     {
       "questionId": 1,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 2,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 3,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 4,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 5,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 6,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 7,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 8,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 9,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 10,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 11,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 12,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 13,
-      "subConceptId": "consonant-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 14,
-      "subConceptId": "ending-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 15,
-      "subConceptId": "consonant-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 16,
-      "subConceptId": "ending-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 17,
-      "subConceptId": "double-letters",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 18,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 19,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 20,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 21,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 22,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 23,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 24,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 25,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 26,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 27,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 28,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 29,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 30,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 31,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 32,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 33,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 34,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 35,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 36,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 37,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 38,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 39,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 40,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 41,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 42,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 43,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 44,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 45,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 46,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 47,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 48,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 49,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 50,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 51,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 52,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 53,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 54,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 55,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 56,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 57,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 58,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 59,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 60,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 61,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 62,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 63,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 64,
-      "subConceptId": "double-letters",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 65,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 66,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 67,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 68,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 69,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 70,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 71,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 72,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 73,
-      "subConceptId": "vowel-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 74,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 75,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 76,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 77,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 78,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 79,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 80,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 81,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 82,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 83,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 84,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 85,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 86,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 87,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 88,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 89,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 90,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 91,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 92,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 93,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 94,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 95,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 96,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 97,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 98,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 99,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 100,
-      "subConceptId": "beginning-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 101,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 102,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 103,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 104,
-      "subConceptId": "double-letters",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 105,
-      "subConceptId": "double-letters",
+      "subConceptId": "find-missing-word-master",
       "confidence": "high"
     },
     {
       "questionId": 106,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 107,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 108,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 109,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 110,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 111,
-      "subConceptId": "double-letters",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 112,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 113,
-      "subConceptId": "double-letters",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 114,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 115,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 116,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 117,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 118,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 119,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 120,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 121,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 122,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 123,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 124,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 125,
-      "subConceptId": "middle-gaps",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 126,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 127,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 128,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 129,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 130,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 131,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 132,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 133,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 134,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 135,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 136,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 137,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 138,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 139,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 140,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 141,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 142,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 143,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 144,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 145,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 146,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 147,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 148,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "check-both-and-eliminate",
       "confidence": "high"
     },
     {
       "questionId": 149,
-      "subConceptId": "sentence-context-missing",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     },
     {
       "questionId": 150,
-      "subConceptId": "sentence-context-missing",
-      "confidence": "high"
-    },
-    {
-      "questionId": 151,
-      "subConceptId": "sentence-context-missing",
-      "confidence": "high"
-    },
-    {
-      "questionId": 152,
-      "subConceptId": "sentence-context-missing",
-      "confidence": "high"
-    },
-    {
-      "questionId": 153,
-      "subConceptId": "sentence-context-missing",
-      "confidence": "high"
-    },
-    {
-      "questionId": 154,
-      "subConceptId": "sentence-context-missing",
-      "confidence": "high"
-    },
-    {
-      "questionId": 155,
-      "subConceptId": "sentence-context-missing",
-      "confidence": "high"
-    },
-    {
-      "questionId": 156,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 157,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 158,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 159,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 160,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 161,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 162,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 163,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 164,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 165,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 166,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 167,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 168,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 169,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 170,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 171,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 172,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 173,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 174,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 175,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 176,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 177,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 178,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 179,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 180,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 181,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 182,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 183,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 184,
-      "subConceptId": "inside-word-3letter",
-      "confidence": "high"
-    },
-    {
-      "questionId": 185,
-      "subConceptId": "inside-word-3letter",
+      "subConceptId": "sentence-clue-first",
       "confidence": "high"
     }
   ],

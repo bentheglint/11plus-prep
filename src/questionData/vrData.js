@@ -8816,1485 +8816,1203 @@ const vrData = {
         {
           id: 1,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? CH _ _ _ ER",
-          options: ["OPT","ACT","APT","OWN","APE"],
-          correct: 2,
-          explanation: "The answer is APT, making CHAPTER. 'Apt' means suitable or appropriate. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The FER milked the cows at dawn.\"",
+          options: ["ARM","COW","HAY","PIG","OAT"],
+          correct: 0,
+          explanation: "Putting ARM back into FER makes FARMER — the farmer milked the cows at dawn. ARM is a real word too. ✓"
         },
         {
           id: 2,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? PL _ _ _ ED",
-          options: ["AND","ATE","ACE","ANT","AGE"],
-          correct: 3,
-          explanation: "The answer is ANT, making PLANTED. 'Ant' is a small insect. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She filled the BET with red apples.\"",
+          options: ["BAG","ASK","BIN","JAR","BOX"],
+          correct: 1,
+          explanation: "Putting ASK back into BET makes BASKET — she filled the basket with red apples. ASK is a real word too. ✓"
         },
         {
           id: 3,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? CAR _ _ _ S",
-          options: ["PEN","PIE","PEW","PUT","PET"],
-          correct: 4,
-          explanation: "The answer is PET, making CARPETS. 'Pet' means a tame animal kept for companionship. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We bought fresh fish at the MET.\"",
+          options: ["BUY","FEE","TIN","ARK","CAN"],
+          correct: 3,
+          explanation: "Putting ARK back into MET makes MARKET — we bought fresh fish at the market. ARK is a real word too. ✓"
         },
         {
           id: 4,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? MAN _ _ _ D",
-          options: ["ACE","AGE","ATE","ARE","APE"],
-          correct: 1,
-          explanation: "The answer is AGE, making MANAGED. 'Age' means a period of time. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The rabbit nibbled a long orange CAR.\"",
+          options: ["PEA","MUD","DIG","BUD","ROT"],
+          correct: 4,
+          explanation: "Putting ROT back into CAR makes CARROT — the rabbit nibbled a long orange carrot. ROT is a real word too. ✓"
         },
         {
           id: 5,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? CON _ _ _ T",
-          options: ["TIN","TEN","TON","TAN","TUN"],
-          correct: 1,
-          explanation: "The answer is TEN, making CONTENT. 'Ten' is the number 10. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The cheeky MON swung through the trees.\"",
+          options: ["APE","ZOO","KEY","NUT","FUR"],
+          correct: 2,
+          explanation: "Putting KEY back into MON makes MONKEY — the cheeky monkey swung through the trees. KEY is a real word too. ✓"
         },
         {
           id: 6,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? PAS _ _ _ E",
-          options: ["SAT","SAD","SAG","SAP","SAW"],
-          correct: 2,
-          explanation: "The answer is SAG, making PASSAGE. 'Sag' means to droop or sink. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Our TEAC marked all the homework.\"",
+          options: ["BOY","KID","PEN","HER","MUM"],
+          correct: 3,
+          explanation: "Putting HER back into TEAC makes TEACHER — our teacher marked all the homework. HER is a real word too. ✓"
         },
         {
           id: 7,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? H _ _ _ SOME",
-          options: ["ARM","ANT","ANY","AND","ARC"],
-          correct: 3,
-          explanation: "The answer is AND, making HANDSOME. 'And' is a joining word. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They live in a little COTT by the sea.\"",
+          options: ["HUT","AGE","INN","DEN","BED"],
+          correct: 1,
+          explanation: "Putting AGE back into COTT makes COTTAGE — they live in a little cottage by the sea. AGE is a real word too. ✓"
         },
         {
           id: 8,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? C _ _ _ AIN",
-          options: ["ART","AMP","ACT","ANT","APT"],
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Turn the HLE to open the door.\"",
+          options: ["KEY","BAR","LID","PEG","AND"],
           correct: 4,
-          explanation: "The answer is APT, making CAPTAIN. 'Apt' means suitable or appropriate. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "Putting AND back into HLE makes HANDLE — turn the handle to open the door. AND is a real word too. ✓"
         },
         {
           id: 9,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? PAR _ _ _ T",
-          options: ["APE","AGE","ATE","ACE","ARE"],
-          correct: 0,
-          explanation: "The answer is APE, making PARAPET. 'Ape' is a large primate. A parapet is a low wall along the edge of a roof or bridge. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He felt very SED when the lights went out.\"",
+          options: ["SAD","BAD","CAR","MAD","ILL"],
+          correct: 2,
+          explanation: "Putting CAR back into SED makes SCARED — he felt very scared when the lights went out. CAR is a real word too. ✓"
         },
         {
           id: 10,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ TERN",
-          options: ["PAD","PAN","PAT","PAW","PEA"],
-          correct: 2,
-          explanation: "The answer is PAT, making PATTERN. 'Pat' means to touch gently. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She played a loud tune on her TRUM.\"",
+          options: ["BOW","PET","HUM","TAP","PEG"],
+          correct: 1,
+          explanation: "Putting PET back into TRUM makes TRUMPET — she played a loud tune on her trumpet. PET is a real word too. ✓"
         },
         {
           id: 11,
           difficulty: 1,
-          question: "Which single letter completes this word? B _ AUTY",
-          options: ["A","E","I","O","U"],
-          correct: 1,
-          explanation: "The answer is E, making BEAUTY. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She is learning to speak GER at school.\"",
+          options: ["PIE","TUB","NAP","JAM","MAN"],
+          correct: 4,
+          explanation: "Putting MAN back into GER makes GERMAN — she is learning to speak German at school. MAN is a real word too. ✓"
         },
         {
           id: 12,
           difficulty: 1,
-          question: "Which single letter completes this word? SC _ ENCE",
-          options: ["A","E","O","I","U"],
-          correct: 3,
-          explanation: "The answer is I, making SCIENCE. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The shiny MAG on the fridge held up the drawing.\"",
+          options: ["PIN","NET","ROD","CAP","LID"],
+          correct: 1,
+          explanation: "The answer is NET, a real word (used to catch fish or score a goal). Slot it onto MAG to make MAGNET, which held the drawing on the fridge. Always check both: the new word is real AND the three letters make a word. ✓"
         },
         {
           id: 13,
-          difficulty: 2,
-          question: "Which single letter completes this word? _ NOWLEDGE",
-          options: ["G","H","J","N","K"],
-          correct: 4,
-          explanation: "The answer is K, making KNOWLEDGE. The K is silent at the start of the word. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She stopped all of a SUD when the bell rang.\"",
+          options: ["DEN","BIG","HOT","RED","FUN"],
+          correct: 0,
+          explanation: "Putting DEN back into SUD makes SUDDEN — she stopped all of a sudden when the bell rang. DEN is a real word too. ✓"
         },
         {
           id: 14,
-          difficulty: 2,
-          question: "Which single letter completes this word? RHYTH _",
-          options: ["M","T","S","N","X"],
-          correct: 0,
-          explanation: "The answer is M, making RHYTHM. This is a commonly misspelt word with no obvious vowels. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Use a stone to SHAR the blade.\"",
+          options: ["CUT","FIX","OIL","PEN","RUB"],
+          correct: 3,
+          explanation: "Putting PEN back into SHAR makes SHARPEN — use a stone to sharpen the blade. PEN is a real word too. ✓"
         },
         {
           id: 15,
-          difficulty: 3,
-          question: "Which single letter completes this word? NECE _ SARY",
-          options: ["C","L","R","S","T"],
-          correct: 3,
-          explanation: "The answer is S, making NECESSARY. A common spelling rule: one C, two S's — 'necessary'. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The strong wind began to STER the dry leaves.\"",
+          options: ["TOP","FAN","CAT","AIR","DRY"],
+          correct: 2,
+          explanation: "Putting CAT back into STER makes SCATTER — the strong wind began to scatter the dry leaves. CAT is a real word too. ✓"
         },
         {
           id: 16,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? FORE _ _ _",
-          options: ["MAX","TAX","MAN","MAT","MAP"],
-          correct: 2,
-          explanation: "The answer is MAN, making FOREMAN. A foreman is a person in charge of a group of workers. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mum cooked dinner in the KITC.\"",
+          options: ["PAN","HEN","POT","MUG","CUP"],
+          correct: 1,
+          explanation: "Putting HEN back into KITC makes KITCHEN — Mum cooked dinner in the kitchen. HEN is a real word too. ✓"
         },
         {
           id: 17,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? W _ _ _ OW",
-          options: ["ILK","ELF","OWL","ILL","ELM"],
-          correct: 3,
-          explanation: "The answer is ILL, making WILLOW. A willow is a type of tree often found near rivers. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A bright rainbow began to APR in the sky.\"",
+          options: ["FOG","SUN","PEA","DIM","FLY"],
+          correct: 2,
+          explanation: "Putting PEA back into APR makes APPEAR — a bright rainbow began to appear in the sky. PEA is a real word too. ✓"
         },
         {
           id: 18,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ HROOM",
-          options: ["BIT","BET","BOT","BUT","BAT"],
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Strawberry is my favourite CHO of pudding.\"",
+          options: ["ONE","TWO","FEW","ANY","ICE"],
           correct: 4,
-          explanation: "The answer is BAT, making BATHROOM. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "Putting ICE back into CHO makes CHOICE — strawberry is my favourite choice of pudding. ICE is a real word too. ✓"
         },
         {
           id: 19,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TAGE",
-          options: ["COT","CUT","CAT","CAN","CAP"],
-          correct: 0,
-          explanation: "The answer is COT, making COTTAGE. A cottage is a small house, typically in the countryside. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The tiny INF cried for its bottle.\"",
+          options: ["BOY","ANT","COT","NAP","BIB"],
+          correct: 1,
+          explanation: "Putting ANT back into INF makes INFANT — the tiny infant cried for its bottle. ANT is a real word too. ✓"
         },
         {
           id: 20,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ITAL",
-          options: ["CAN","CAP","CUP","COP","CAR"],
-          correct: 1,
-          explanation: "The answer is CAP, making CAPITAL. A capital can mean the main city of a country or an uppercase letter. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The prisoners tried to ESC from the castle.\"",
+          options: ["RUN","HID","FLY","APE","JOG"],
+          correct: 3,
+          explanation: "Putting APE back into ESC makes ESCAPE — the prisoners tried to escape from the castle. APE is a real word too. ✓"
         },
         {
           id: 21,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ PET",
-          options: ["TIP","MOP","CAR","COP","TAP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The CLIM in the desert is very hot and dry.\"",
+          options: ["SUN","WET","ATE","AIR","FOG"],
           correct: 2,
-          explanation: "The answer is CAR, making CARPET. A carpet is a thick textile floor covering. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          explanation: "Putting ATE back into CLIM makes CLIMATE — the climate in the desert is very hot and dry. ATE is a real word too. ✓"
         },
         {
           id: 22,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ DEN",
-          options: ["FAR","RAN","JOR","GAR","TEN"],
-          correct: 3,
-          explanation: "The answer is GAR, making GARDEN. A garden is an area of ground used for growing flowers, fruit or vegetables. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The king lived in a grand PAL.\"",
+          options: ["HUT","ACE","INN","DEN","COT"],
+          correct: 1,
+          explanation: "Putting ACE back into PAL makes PALACE — the king lived in a grand palace. ACE is a real word too. ✓"
         },
         {
           id: 23,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ KET",
-          options: ["MAR","JAR","TAR","BAR","CAR"],
-          correct: 0,
-          explanation: "The answer is MAR, making MARKET. 'Mar' means to damage or spoil something. A market is a place where goods are bought and sold. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The queen sat on her golden THR.\"",
+          options: ["BED","RUG","CAP","MAT","ONE"],
+          correct: 4,
+          explanation: "Putting ONE back into THR makes THRONE — the queen sat on her golden throne. ONE is a real word too. ✓"
         },
         {
           id: 24,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ DLE",
-          options: ["CAN","TIL","PAR","TAR","GRI"],
-          correct: 0,
-          explanation: "The answer is CAN, making CANDLE. A candle is a cylinder of wax with a wick that produces light when lit. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She lost one woolly MIT in the snow.\"",
+          options: ["HAT","CAP","TEN","BAG","FUR"],
+          correct: 2,
+          explanation: "Putting TEN back into MIT makes MITTEN — she lost one woolly mitten in the snow. TEN is a real word too. ✓"
         },
         {
           id: 25,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ TEN",
-          options: ["WAL","KIT","JAM","DOT","CUR"],
-          correct: 1,
-          explanation: "The answer is KIT, making KITTEN. A kitten is a young cat. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The blacksmith hit the metal with a MER.\"",
+          options: ["ROD","PIN","TAP","HAM","JAR"],
+          correct: 3,
+          explanation: "Putting HAM back into MER makes HAMMER — the blacksmith hit the metal with a hammer. HAM is a real word too. ✓"
         },
         {
           id: 26,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ LET",
-          options: ["HUB","GOB","JOB","COB","MOB"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ACRO did a backflip at the circus.\"",
+          options: ["ACT","BAT","JOG","HOP","TOP"],
           correct: 1,
-          explanation: "The answer is GOB, making GOBLET. A 'gob' is a lump or mouthful. A goblet is a drinking cup with a stem and base. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "Putting BAT back into ACRO makes ACROBAT — the acrobat did a backflip at the circus. BAT is a real word too. ✓"
         },
         {
           id: 27,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ DIT",
-          options: ["BAT","BAD","BAN","BAG","BIN"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ship's TAIN gave the orders.\"",
+          options: ["MAP","OAR","CAP","NET","ROW"],
           correct: 2,
-          explanation: "The answer is BAN, making BANDIT. 'Ban' means to forbid something. A bandit is a robber or outlaw. Tip: Try common three-letter words first — many of them hide inside longer words! ✓"
+          explanation: "Putting CAP back into TAIN makes CAPTAIN — the ship's captain gave the orders. CAP is a real word too. ✓"
         },
         {
           id: 28,
           difficulty: 1,
-          question: "Which three-letter word completes this longer word? _ _ _ ROT",
-          options: ["DOG","FIN","JAM","TIP","CAR"],
-          correct: 4,
-          explanation: "The answer is CAR, making CARROT. A carrot is an orange root vegetable. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We hung shiny silver SEL on the tree.\"",
+          options: ["GEM","TIN","BOW","RED","FUR"],
+          correct: 1,
+          explanation: "Putting TIN back into SEL makes TINSEL — we hung shiny silver tinsel on the tree. TIN is a real word too. ✓"
         },
         {
           id: 29,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TAIN",
-          options: ["CAP","JAR","HOP","TIN","MOB"],
-          correct: 0,
-          explanation: "The answer is CAP, making CAPTAIN. A captain is the leader of a team or the commander of a ship. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"There were over a HUND people at the fair.\"",
+          options: ["TEN","FEW","LOT","RED","BIG"],
+          correct: 3,
+          explanation: "Putting RED back into HUND makes HUNDRED — there were over a hundred people at the fair. RED is a real word too. ✓"
         },
         {
           id: 30,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ LTER",
-          options: ["SHE","THE","HER","SET","SEW"],
-          correct: 0,
-          explanation: "The answer is SHE, making SHELTER. 'She' is a pronoun for a female person. A shelter is a place giving protection from bad weather or danger. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Strawberry is a really delicious FLAV.\"",
+          options: ["JAM","NUT","OUR","EGG","TEA"],
+          correct: 2,
+          explanation: "Putting OUR back into FLAV makes FLAVOUR — strawberry is a really delicious flavour. OUR is a real word too. ✓"
         },
         {
           id: 31,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ THER",
-          options: ["PAN","PIN","PEN","PAD","PIG"],
-          correct: 0,
-          explanation: "The answer is PAN, making PANTHER. A 'pan' is a cooking vessel. A panther is a large wild cat, usually black. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mum cooked one green SPR for my dinner.\"",
+          options: ["PEA","OUT","NUT","EGG","HAM"],
+          correct: 1,
+          explanation: "Putting OUT back into SPR makes SPROUT — Mum cooked one green sprout for my dinner. OUT is a real word too. ✓"
         },
         {
           id: 32,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ PTER",
-          options: ["JAR","MOB","TIP","CHA","HUB"],
-          correct: 3,
-          explanation: "The answer is CHA, making CHAPTER. A chapter is a main division of a book. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We dug up a big muddy ATO from the soil.\"",
+          options: ["PEA","CAB","NUT","DIG","POT"],
+          correct: 4,
+          explanation: "Putting POT back into ATO makes POTATO — we dug up a big muddy potato from the soil. POT is a real word too. ✓"
         },
         {
           id: 33,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ MENT",
-          options: ["MOB","HUB","TIP","JAR","PAY"],
-          correct: 4,
-          explanation: "The answer is PAY, making PAYMENT. A payment is the act of giving money in exchange for goods or services. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She ate too fast and got a loud HIC.\"",
+          options: ["FLU","BUG","CUP","SOB","COT"],
+          correct: 2,
+          explanation: "Putting CUP back into HIC makes HICCUP — she ate too fast and got a loud hiccup. CUP is a real word too. ✓"
         },
         {
           id: 34,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TURE",
-          options: ["CUT","CUP","CUR","CAP","CAT"],
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The cider was stored in a big wooden REL.\"",
+          options: ["TUB","JUG","KEG","BAR","POT"],
           correct: 3,
-          explanation: "The answer is CAP, making CAPTURE. A 'cap' is a type of hat. Capture means to catch or take by force. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "Putting BAR back into REL makes BARREL — the cider was stored in a big wooden barrel. BAR is a real word too. ✓"
         },
         {
           id: 35,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ RIAGE",
-          options: ["MOB","MAR","TIP","HUB","JAR"],
-          correct: 1,
-          explanation: "The answer is MAR, making MARRIAGE. Marriage is the legal union of two people as partners. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She cracked open a hard brown WAL.\"",
+          options: ["NUT","JAM","FIG","PEA","COB"],
+          correct: 0,
+          explanation: "Putting NUT back into WAL makes WALNUT — she cracked open a hard brown walnut. NUT is a real word too. ✓"
         },
         {
           id: 36,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ RAGE",
-          options: ["AGE","ATE","ACE","BAR","AXE"],
-          correct: 3,
-          explanation: "The answer is BAR, making BARRAGE. A 'bar' is a long piece of wood or metal. A 'barrage' is a heavy continuous attack — for example, a barrage of questions. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She looked out of the DOW at the rain.\"",
+          options: ["MAT","RUG","JUG","BIN","WIN"],
+          correct: 4,
+          explanation: "Putting WIN back into DOW makes WINDOW — she looked out of the window at the rain. WIN is a real word too. ✓"
         },
         {
           id: 37,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ LISH",
-          options: ["TIP","MOB","JAR","PUB","HUB"],
-          correct: 3,
-          explanation: "The answer is PUB, making PUBLISH. Publish means to produce and distribute a book, newspaper or other written work. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She baked a tasty blueberry MUF for breakfast.\"",
+          options: ["JAM","FIN","EGG","BUN","PIE"],
+          correct: 1,
+          explanation: "Putting FIN back into MUF makes MUFFIN — she baked a tasty blueberry muffin for breakfast. FIN is a real word too. ✓"
         },
         {
           id: 38,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ NING",
-          options: ["EVE","ODE","EBB","EWE","EEL"],
-          correct: 0,
-          explanation: "The answer is EVE, making EVENING. An 'eve' is the day or night before an important event, like Christmas Eve. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She ate a juicy orange APRI from the bowl.\"",
+          options: ["FIG","NUT","JAM","COT","PEA"],
+          correct: 3,
+          explanation: "Putting COT back into APRI makes APRICOT — she ate a juicy orange apricot from the bowl. COT is a real word too. ✓"
         },
         {
           id: 39,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ THER",
-          options: ["LET","LAP","LEA","LED","LEG"],
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She built the entire den all by MYS this afternoon.\"",
+          options: ["OWN","TWO","ELF","FEW","FLY"],
           correct: 2,
-          explanation: "The answer is LEA, making LEATHER. A 'lea' is an open area of grassy land, or a meadow. Leather is a material made from animal skin. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          explanation: "The answer is ELF, a real word (a small magical creature). Add it to MYS to make MYSELF — 'all by myself'. The other words are real but none rebuild a proper word inside MYS. ✓"
         },
         {
           id: 40,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word? _ _ _ TUNE",
-          options: ["FOR","FAR","FUR","FIR","FAN"],
-          correct: 0,
-          explanation: "The answer is FOR, making FORTUNE. 'For' is a small, common word used to show purpose or reason. A fortune is a large amount of money or good luck. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The mechanic will REP the broken car.\"",
+          options: ["FIX","AIR","OIL","NUT","TOW"],
+          correct: 1,
+          explanation: "Putting AIR back into REP makes REPAIR — the mechanic will repair the broken car. AIR is a real word too. ✓"
         },
         {
           id: 41,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ENNA",
-          options: ["AGE","ANT","ARM","ACE","ART"],
-          correct: 1,
-          explanation: "The answer is ANT, making ANTENNA. An ant is a small insect. An antenna is a long thin part on the head of an insect that helps it sense its surroundings — or a metal rod used for picking up TV or radio signals. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"An ant is much SMER than an elephant.\"",
+          options: ["BIG","TOP","FEW","ALL","LOW"],
+          correct: 3,
+          explanation: "Putting ALL back into SMER makes SMALLER — an ant is much smaller than an elephant. ALL is a real word too. ✓"
         },
         {
           id: 42,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ SKIRTS",
-          options: ["OUR","OAR","OAT","OUT","OWE"],
-          correct: 3,
-          explanation: "The answer is OUT, making OUTSKIRTS. 'Out' means the opposite of in. Outskirts are the outer parts of a town or city. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"It was cold and CHY out in the frost.\"",
+          options: ["ILL","WET","FOG","ICY","DRY"],
+          correct: 0,
+          explanation: "Putting ILL back into CHY makes CHILLY — it was cold and chilly out in the frost. ILL is a real word too. ✓"
         },
         {
           id: 43,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ TASTIC",
-          options: ["MAN","FAN","CAN","TAN","RAN"],
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She put on a warm woolly SWER.\"",
+          options: ["CAP","EAT","HAT","FUR","BAG"],
           correct: 1,
-          explanation: "The answer is FAN, making FANTASTIC. A 'fan' is a device that moves air, or a person who admires something or someone. Fantastic means extraordinarily good or wonderful. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "Putting EAT back into SWER makes SWEATER — she put on a warm woolly sweater. EAT is a real word too. ✓"
         },
         {
           id: 44,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ NITURE",
-          options: ["FUR","MOB","HUB","TIP","JAR"],
-          correct: 0,
-          explanation: "The answer is FUR, making FURNITURE. Furniture refers to movable items such as tables, chairs and beds used in a home. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He took a photo with his brand new CAM.\"",
+          options: ["BOX","TAP","ZIP","FOG","ERA"],
+          correct: 4,
+          explanation: "Putting ERA back into CAM makes CAMERA — he took a photo with his brand new camera. ERA is a real word too. ✓"
         },
         {
           id: 45,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ ERATE",
-          options: ["GEL","GEM","GET","GEN","GEE"],
-          correct: 3,
-          explanation: "The answer is GEN, making GENERATE. 'Gen' means useful information. Generate means to produce or create something. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 1,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We went camping in our CARA by the lake.\"",
+          options: ["COT","VAN","BED","INN","HUT"],
+          correct: 1,
+          explanation: "Putting VAN back into CARA makes CARAVAN — we went camping in our caravan by the lake. VAN is a real word too. ✓"
         },
         {
           id: 46,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ TACLE",
-          options: ["TIN","TEN","TAN","TON","TUN"],
-          correct: 1,
-          explanation: "The answer is TEN, making TENTACLE. 'Ten' is the number 10. A tentacle is a long, flexible arm of an animal like an octopus. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He kicked the muddy FOOTB straight into the back of the net.\"",
+          options: ["ALL","NET","MUD","CUP","TOE"],
+          correct: 0,
+          explanation: "The answer is ALL, a real word. Add it to the end of FOOTB to make FOOTBALL. NET, MUD, CUP and TOE all suit football, but only ALL rebuilds the word. ✓"
         },
         {
           id: 47,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ IDOTE",
-          options: ["AND","ANY","ANT","ARC","APE"],
-          correct: 2,
-          explanation: "The answer is ANT, making ANTIDOTE. An 'ant' is a small insect. An antidote is a medicine that counteracts the effects of a poison. Tip: Watch out for silent letters and unusual spellings — they won't sound right but they're correct! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mum chopped up a big green CABE to make some soup.\"",
+          options: ["PEA","NUT","JAM","BAG","EGG"],
+          correct: 3,
+          explanation: "Putting BAG back into CABE makes CABBAGE — Mum made soup with a cabbage. BAG is a real word too. ✓"
         },
         {
           id: 48,
-          difficulty: 3,
-          question: "Which three-letter word completes this longer word? _ _ _ PAGE",
-          options: ["RAG","RAT","RAN","RAM","RAP"],
-          correct: 3,
-          explanation: "The answer is RAM, making RAMPAGE. A 'ram' is a male sheep. A rampage is a period of violent or reckless behaviour. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad keeps all the food and snacks tidy in the PRY.\"",
+          options: ["ANT","JAR","TIN","POT","BIN"],
+          correct: 0,
+          explanation: "Putting ANT back into PRY makes PANTRY — Dad keeps the food in the pantry. ANT is a real word too. ✓"
         },
         {
           id: 49,
-          difficulty: 1,
-          question: "Which letter completes this word? G _ F T",
-          options: ["I","A","R","N","L"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer led the stubborn DON slowly along the muddy lane.\"",
+          options: ["KEY","HAY","OAT","MUD","LEG"],
           correct: 0,
-          explanation: "The letter is I, making GIFT. A gift is a present given to someone. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "The answer is KEY, a real word. Add it to DON to make DONKEY. HAY, OAT, MUD and LEG suit a farm but only KEY rebuilds the word. ✓"
         },
         {
           id: 50,
-          difficulty: 1,
-          question: "Which letter completes this word? H _ L P",
-          options: ["A","E","U","O","I"],
-          correct: 1,
-          explanation: "The letter is E, making HELP. Help means to assist or aid someone. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A glossy black SLING perched on the wire and began to sing.\"",
+          options: ["TIT","JAY","HEN","BUG","TAR"],
+          correct: 4,
+          explanation: "Putting TAR back into SLING makes STARLING — a glossy starling perched on the wire. TAR is a real word too. ✓"
         },
         {
           id: 51,
-          difficulty: 1,
-          question: "Which letter completes this word? G _ L D",
-          options: ["A","Y","E","O","U"],
-          correct: 3,
-          explanation: "The letter is O, making GOLD. Gold is a precious yellow metal used in jewellery and coins. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A cheeky brown SPAR pecked at the crumbs on the path.\"",
+          options: ["ROW","HEN","BEE","BUG","CAT"],
+          correct: 0,
+          explanation: "Putting ROW back into SPAR makes SPARROW — a brown sparrow pecked at the crumbs. ROW is a real word too. ✓"
         },
         {
           id: 52,
-          difficulty: 1,
-          question: "Which letter completes this word? J _ M P",
-          options: ["A","I","O","U","E"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The little STER stuffed seeds into its bulging cheeks.\"",
+          options: ["PUP","CUB","RAT","HAM","COW"],
           correct: 3,
-          explanation: "The letter is U, making JUMP. Jump means to push yourself off the ground using your legs. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          explanation: "The answer is HAM, a real word (a type of cooked meat). Put it at the front of STER to make HAMSTER. PUP, CUB, RAT and COW are all animals, but only HAM rebuilds the word. ✓"
         },
         {
           id: 53,
-          difficulty: 1,
-          question: "Which letter completes this word? N _ S T",
-          options: ["A","O","U","I","E"],
-          correct: 4,
-          explanation: "The letter is E, making NEST. A nest is a structure built by a bird to lay its eggs in. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We carved a spooky face into the big orange PUMP.\"",
+          options: ["BAT","RAT","KIN","BUG","ANT"],
+          correct: 2,
+          explanation: "Putting KIN back into PUMP makes PUMPKIN — we carved a face into the pumpkin. KIN is a real word too. ✓"
         },
         {
           id: 54,
-          difficulty: 1,
-          question: "Which letter completes this word? M _ L K",
-          options: ["I","O","A","U","E"],
-          correct: 0,
-          explanation: "The letter is I, making MILK. Milk is a white liquid produced by cows, often used as a drink. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please put all the clean cups and plates back in the CUPRD.\"",
+          options: ["TIN","JAR","MUG","POT","BOA"],
+          correct: 4,
+          explanation: "Putting BOA back into CUPRD makes CUPBOARD — the cups go back in the cupboard. BOA is a real word too. ✓"
         },
         {
           id: 55,
-          difficulty: 1,
-          question: "Which letter completes this word? S _ F T",
-          options: ["U","O","A","Y","E"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grey smoke curled out of the old cottage CNEY into the sky.\"",
+          options: ["BAT","HIM","RAT","FOX","JAY"],
           correct: 1,
-          explanation: "The letter is O, making SOFT. Soft means easy to press or bend, not hard or firm. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          explanation: "Putting HIM back into CNEY makes CHIMNEY — smoke curled from the chimney. HIM is a real word too. ✓"
         },
         {
           id: 56,
           difficulty: 2,
-          question: "Which letter completes this word? G R _ S P",
-          options: ["U","E","A","O","I"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After the storm a beautiful RAIN curved right over the hills.\"",
+          options: ["FOG","SUN","BOW","SKY","DEW"],
           correct: 2,
-          explanation: "The letter is A, making GRASP. Grasp means to seize and hold firmly. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "Putting BOW back into RAIN makes RAINBOW — a rainbow curved over the hills. BOW is a real word too. ✓"
         },
         {
           id: 57,
           difficulty: 2,
-          question: "Which letter completes this word? S C _ L P",
-          options: ["O","U","E","A","I"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children worked hard all morning to build a friendly SNOW.\"",
+          options: ["FOG","HUT","FOX","MAN","BUG"],
           correct: 3,
-          explanation: "The letter is A, making SCALP. The scalp is the skin covering the top of the head. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "Putting MAN back into SNOW makes SNOWMAN — the children built a snowman. MAN is a real word too. ✓"
         },
         {
           id: 58,
           difficulty: 2,
-          question: "Which letter completes this word? S T _ M P",
-          options: ["Y","A","E","X","I"],
-          correct: 1,
-          explanation: "The letter is A, making STAMP. A stamp is a small adhesive label placed on a letter to pay for postage. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The sleepy cat lazily twitched one long white WKER.\"",
+          options: ["PAW","FUR","HIS","CAT","PUP"],
+          correct: 2,
+          explanation: "Putting HIS back into WKER makes WHISKER — the cat twitched a whisker. HIS is a real word too. ✓"
         },
         {
           id: 59,
           difficulty: 2,
-          question: "Which letter completes this word? F R _ G H T",
-          options: ["A","I","O","E","U"],
-          correct: 1,
-          explanation: "The letter is I, making FRIGHT. Fright means a sudden feeling of fear. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A soft white FEAR floated gently down from the swan's wing.\"",
+          options: ["TIT","JAY","OAK","THE","BEE"],
+          correct: 3,
+          explanation: "Putting THE back into FEAR makes FEATHER — a feather floated from the swan's wing. THE is a real word too. ✓"
         },
         {
           id: 60,
           difficulty: 2,
-          question: "Which letter completes this word? S P L _ S H",
-          options: ["E","I","U","A","Y"],
-          correct: 3,
-          explanation: "The letter is A, making SPLASH. A splash is a sound made by something striking water. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We watered the small DLING every morning before school.\"",
+          options: ["SEE","HOE","SOW","DIG","POT"],
+          correct: 0,
+          explanation: "The answer is SEE, a real word (to look at something). Add it to the front of DLING to make SEEDLING, a tiny new plant. Read for meaning first, then find the hidden three-letter word. ✓"
         },
         {
           id: 61,
           difficulty: 2,
-          question: "Which letter completes this word? C L _ T C H",
-          options: ["A","E","O","U","I"],
-          correct: 3,
-          explanation: "The letter is U, making CLUTCH. Clutch means to grasp something tightly. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He ate a sizzling hot SAUS tucked inside a soft bread roll.\"",
+          options: ["JAM","AGE","EGG","BUN","PEA"],
+          correct: 1,
+          explanation: "Putting AGE back into SAUS makes SAUSAGE — he ate a hot sausage in a roll. AGE is a real word too. ✓"
         },
         {
           id: 62,
           difficulty: 2,
-          question: "Which letter completes this word? S C R _ T C H",
-          options: ["A","I","O","U","E"],
-          correct: 0,
-          explanation: "The letter is A, making SCRATCH. Scratch means to score or mark a surface with a sharp object. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On cold mornings he loves a warm bowl of creamy PORGE.\"",
+          options: ["OAT","JAM","BUN","EGG","RID"],
+          correct: 4,
+          explanation: "Putting RID back into PORGE makes PORRIDGE — he loves a warm bowl of porridge. RID is a real word too. ✓"
         },
         {
           id: 63,
           difficulty: 2,
-          question: "Which letter completes this word? S T R _ T C H",
-          options: ["E","I","O","U","A"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Warm the tomato soup gently in a SAUCE on the cooker.\"",
+          options: ["PAN","LID","MUG","JUG","JAR"],
           correct: 0,
-          explanation: "The letter is E, making STRETCH. Stretch means to extend something to its full length. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          explanation: "Putting PAN back into SAUCE makes SAUCEPAN — warm the soup in a saucepan. PAN is a real word too. ✓"
         },
         {
           id: 64,
-          difficulty: 3,
-          question: "Which letter completes this word? S Q U _ L L",
-          options: ["E","I","O","U","A"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Granny poured the boiling water into her flowery brown TEA.\"",
+          options: ["MUG","JUG","JAR","URN","POT"],
           correct: 4,
-          explanation: "The letter is A, making SQUALL. A squall is a sudden strong gust of wind, often with rain or snow. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "Putting POT back into TEA makes TEAPOT — Granny poured water into the teapot. POT is a real word too. ✓"
         },
         {
           id: 65,
-          difficulty: 3,
-          question: "Which letter completes this word? S T R _ N G T H",
-          options: ["I","E","O","A","U"],
-          correct: 1,
-          explanation: "The letter is E, making STRENGTH. Strength is the quality of being physically powerful. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Roast the PARS in the hot oven until it turns golden brown.\"",
+          options: ["POD","OAT","NIP","PEA","BUD"],
+          correct: 2,
+          explanation: "Putting NIP back into PARS makes PARSNIP — roast the parsnip until golden. NIP is a real word too. ✓"
         },
         {
           id: 66,
-          difficulty: 3,
-          question: "Which letter completes this word? T H R _ U G H",
-          options: ["A","E","U","O","I"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Add a big handful of fresh green SACH leaves to the salad.\"",
+          options: ["POD","NUT","PEA","PIN","COB"],
           correct: 3,
-          explanation: "The letter is O, making THROUGH. Through means moving in one side and out of the other. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "Putting PIN back into SACH makes SPINACH — add fresh spinach to the salad. PIN is a real word too. ✓"
         },
         {
           id: 67,
-          difficulty: 3,
-          question: "Which letter completes this word? R H _ T H M",
-          options: ["A","O","I","Y","E"],
-          correct: 3,
-          explanation: "The letter is Y, making RHYTHM. Rhythm is a strong, regular repeated pattern of movement or sound. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They found a HEDGE snuffling around the garden at dusk.\"",
+          options: ["RAT","HOG","CUB","BUG","BAT"],
+          correct: 1,
+          explanation: "The answer is HOG, a real word (a kind of pig). Add it to HEDGE to make HEDGEHOG. The other animals are real words but only HOG completes the word. ✓"
         },
         {
           id: 68,
-          difficulty: 3,
-          question: "Which letter completes this word? T W _ L F T H",
-          options: ["I","E","O","A","U"],
-          correct: 1,
-          explanation: "The letter is E, making TWELFTH. Twelfth means the ordinal number for twelve, coming after eleventh. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A tiny black POLE wriggled busily about in the warm pond.\"",
+          options: ["FIN","EEL","BUG","FLY","TAD"],
+          correct: 4,
+          explanation: "Putting TAD back into POLE makes TADPOLE — a tiny tadpole wriggled in the pond. TAD is a real word too. ✓"
         },
         {
           id: 69,
-          difficulty: 3,
-          question: "Which letter completes this word? K N _ W L E D G E",
-          options: ["A","E","I","O","U"],
-          correct: 3,
-          explanation: "The letter is O, making KNOWLEDGE. Knowledge is information, understanding and skills gained through experience or education. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A striped GER crept quietly out of its burrow after dark.\"",
+          options: ["BAD","FOX","CUB","DOE","RAM"],
+          correct: 0,
+          explanation: "Putting BAD back into GER makes BADGER — a striped badger crept from its burrow. BAD is a real word too. ✓"
         },
         {
           id: 70,
-          difficulty: 3,
-          question: "Which letter completes this word? S M _ D G E",
-          options: ["O","I","E","A","U"],
-          correct: 4,
-          explanation: "The letter is U, making SMUDGE. A smudge is a blurred or smeared mark on a surface. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The little black-and-white GUIN waddled slowly across the ice.\"",
+          options: ["COW","EWE","BAT","PEN","FOX"],
+          correct: 3,
+          explanation: "Putting PEN back into GUIN makes PENGUIN — the penguin waddled across the ice. PEN is a real word too. ✓"
         },
         {
           id: 71,
-          difficulty: 3,
-          question: "Which letter completes this word? W R _ S T L E",
-          options: ["A","O","I","U","E"],
-          correct: 4,
-          explanation: "The letter is E, making WRESTLE. Wrestle means to struggle or fight by grappling with an opponent. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The children played out in the garden all day in the warm SHINE.\"",
+          options: ["FOG","RAY","SUN","SKY","DEW"],
+          correct: 2,
+          explanation: "Putting SUN back into SHINE makes SUNSHINE — they played all day in the sunshine. SUN is a real word too. ✓"
         },
         {
           id: 72,
-          difficulty: 3,
-          question: "Which letter completes this word? S C H _ D U L E",
-          options: ["A","I","E","U","O"],
-          correct: 2,
-          explanation: "The letter is E, making SCHEDULE. A schedule is a plan that lists events or tasks and the times they will happen. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Bright orange MARIG flowers bloomed all along the sunny path.\"",
+          options: ["FIR","BUD","BEE","IVY","OLD"],
+          correct: 4,
+          explanation: "Putting OLD back into MARIG makes MARIGOLD — orange marigold flowers bloomed by the path. OLD is a real word too. ✓"
         },
         {
           id: 73,
-          difficulty: 3,
-          question: "Which letter completes this word? P L _ D G E",
-          options: ["A","O","I","E","U"],
-          correct: 3,
-          explanation: "The letter is E, making PLEDGE. A pledge is a solemn promise or undertaking. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Tall pink GLOVE flowers swayed gently in the country lane.\"",
+          options: ["FOX","BEE","POD","BUD","IVY"],
+          correct: 0,
+          explanation: "Putting FOX back into GLOVE makes FOXGLOVE — tall pink foxglove flowers swayed in the lane. FOX is a real word too. ✓"
         },
         {
           id: 74,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RING",
-          options: ["HER","HIS","HIM","HIT","HID"],
-          correct: 0,
-          explanation: "The answer is HER, making HERRING. 'Her' is a pronoun for a female person. A herring is a type of silver fish found in the sea. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We finished our meal with sticky toffee PUDG and warm custard.\"",
+          options: ["JAM","EGG","DIN","BUN","NUT"],
+          correct: 2,
+          explanation: "Putting DIN back into PUDG makes PUDDING — we had sticky toffee pudding. DIN is a real word too. ✓"
         },
         {
           id: 75,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) STER",
-          options: ["HIM","HIT","HAM","HAS","HAD"],
-          correct: 2,
-          explanation: "The answer is HAM, making HAMSTER. 'Ham' is a type of meat from a pig. A hamster is a small furry pet animal with pouchy cheeks. Tip: Try common three-letter words first — many of them hide inside longer words! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Hang your school coat neatly inside the big bedroom WARDE.\"",
+          options: ["ROB","BED","RUG","MAT","COT"],
+          correct: 0,
+          explanation: "Putting ROB back into WARDE makes WARDROBE — hang your coat in the wardrobe. ROB is a real word too. ✓"
         },
         {
           id: 76,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) MER",
-          options: ["CUP","PEN","SUM","TIP","HUB"],
-          correct: 2,
-          explanation: "The answer is SUM, making SUMMER. Summer is the warmest season of the year. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"They planted rows of carrots in the GAR behind the cottage.\"",
+          options: ["DEN","HOE","POT","MUD","TUB"],
+          correct: 0,
+          explanation: "The answer is DEN, a real word (an animal's home). Add it to GAR to make GARDEN. HOE, POT, MUD and TUB suit a garden but only DEN completes the word. ✓"
         },
         {
           id: 77,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) BER",
-          options: ["ROB","ROD","ROT","ROW","RUN"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every pupil must wear the correct school UNIM each morning.\"",
+          options: ["FOR","TIE","CAP","BAG","HAT"],
           correct: 0,
-          explanation: "The answer is ROB, making ROBBER. 'Rob' means to steal from someone. A robber is a person who commits robbery. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "Putting FOR back into UNIM makes UNIFORM — pupils wear a school uniform. ✓"
         },
         {
           id: 78,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) NER",
-          options: ["CUP","JAM","TIP","HUB","DIN"],
-          correct: 4,
-          explanation: "The answer is DIN, making DINNER. Dinner is the main meal of the day. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every STUT in our class passed the spelling test.\"",
+          options: ["RUB","NIB","JOT","DEN","SUM"],
+          correct: 3,
+          explanation: "Putting DEN back into STUT makes STUDENT — every student passed the test. ✓"
         },
         {
           id: 79,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) ET",
-          options: ["OWL","OAK","OAR","OWE","ODD"],
-          correct: 0,
-          explanation: "The answer is OWL, making OWLET. An 'owl' is a bird of prey that hunts at night. An owlet is a young owl. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We learned about Roman Britain in our HISY lesson today.\"",
+          options: ["WAR","TOR","MAP","ART","KIN"],
+          correct: 1,
+          explanation: "Putting TOR back into HISY makes HISTORY — we learned about Roman Britain in history. ✓"
         },
         {
           id: 80,
-          difficulty: 1,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) PEN",
-          options: ["CUP","HAP","TIP","JAM","HUB"],
-          correct: 1,
-          explanation: "The answer is HAP, making HAPPEN. Happen means to take place or occur. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"I finished my maths HOORK before tea this evening.\"",
+          options: ["NAG","DUE","MEW","SET","BIN"],
+          correct: 2,
+          explanation: "Putting MEW back into HOORK makes HOMEWORK — I finished my maths homework. ✓"
         },
         {
           id: 81,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TURE",
-          options: ["PIG","PIN","PIC","PIE","PIT"],
-          correct: 2,
-          explanation: "The answer is PIC, making PICTURE. A 'pic' is an informal word for a photograph. A picture is an image or painting. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We wrote two long ESS about our summer break.\"",
+          options: ["SAY","TWO","TEN","RED","ZIP"],
+          correct: 0,
+          explanation: "Putting SAY back into ESS makes ESSAYS — we wrote two long essays. ✓"
         },
         {
           id: 82,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TORY",
-          options: ["HIT","HIM","HIS","HID","HIP"],
-          correct: 2,
-          explanation: "The answer is HIS, making HISTORY. 'His' is a possessive pronoun for a male. History is the study of past events. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"My sister is really good at DING cartoon characters.\"",
+          options: ["TOY","CUP","MAP","RAW","PIG"],
+          correct: 3,
+          explanation: "Putting RAW back into DING makes DRAWING — she is good at drawing cartoons. ✓"
         },
         {
           id: 83,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OUR",
-          options: ["ARC","ARE","ARM","ART","ARK"],
-          correct: 2,
-          explanation: "The answer is ARM, making ARMOUR. An 'arm' is a part of the body. Armour is a protective metal covering worn by knights. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Every summer our family goes CING in the New Forest.\"",
+          options: ["LOG","POT","VAN","MAP","AMP"],
+          correct: 4,
+          explanation: "Putting AMP back into CING makes CAMPING — the family goes camping. ✓"
         },
         {
           id: 84,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TUNE",
-          options: ["FOR","FIG","FIN","FIT","FOX"],
-          correct: 0,
-          explanation: "The answer is FOR, making FORTUNE. 'For' is a common preposition. A fortune is a large amount of money or good luck. Tip: Try common three-letter words first — many of them hide inside longer words! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"On Fridays we go BING at the leisure centre.\"",
+          options: ["PIN","OWL","BAG","HIT","RUN"],
+          correct: 1,
+          explanation: "Putting OWL back into BING makes BOWLING — we go bowling. ✓"
         },
         {
           id: 85,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) NON",
-          options: ["CAN","CUP","CUT","CAR","COT"],
-          correct: 0,
-          explanation: "The answer is CAN, making CANNON. A 'can' is a metal container. A cannon is a large, heavy weapon that fires metal balls. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He earned his black belt in KAE last year.\"",
+          options: ["MAT","GYM","RAT","BOW","TOE"],
+          correct: 2,
+          explanation: "Putting RAT back into KAE makes KARATE — he earned his black belt in karate. ✓"
         },
         {
           id: 86,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) DON",
-          options: ["PAN","PAT","PAR","PAD","PAW"],
-          correct: 2,
-          explanation: "The answer is PAR, making PARDON. 'Par' means equal or the expected standard. Pardon means to forgive or excuse someone. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Grandma is SEG a patch onto my torn jeans.\"",
+          options: ["HEM","DYE","RAG","TOP","WIN"],
+          correct: 4,
+          explanation: "Putting WIN back into SEG makes SEWING — Grandma is sewing a patch. ✓"
         },
         {
           id: 87,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LACE",
-          options: ["CUP","HUB","TIP","REP","MOB"],
-          correct: 3,
-          explanation: "The answer is REP, making REPLACE. Replace means to put something back or to substitute one thing for another. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She loves RIG her pony across the open fields.\"",
+          options: ["DIN","HAT","JOG","BIT","HAY"],
+          correct: 0,
+          explanation: "Putting DIN back into RIG makes RIDING — she loves riding her pony. ✓"
         },
         {
           id: 88,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RATE",
-          options: ["CUP","TIP","MOB","HUB","OPE"],
-          correct: 4,
-          explanation: "The answer is OPE, making OPERATE. Operate means to control the functioning of a machine or to perform surgery. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Our train JOEY to London took almost three hours.\"",
+          options: ["BUS","CAB","VAN","URN","MAP"],
+          correct: 3,
+          explanation: "Putting URN back into JOEY makes JOURNEY — our train journey to London. ✓"
         },
         {
           id: 89,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) ADE",
-          options: ["ARC","TIP","HUB","CUP","MOB"],
-          correct: 0,
-          explanation: "The answer is ARC, making ARCADE. An arcade is a covered passage with shops along one or both sides. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We loaded our heavy LUGG into the car boot.\"",
+          options: ["BAG","AGE","MAP","TAG","BIN"],
+          correct: 1,
+          explanation: "Putting AGE back into LUGG makes LUGGAGE — we loaded our heavy luggage. ✓"
         },
         {
           id: 90,
           difficulty: 2,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) TAIN",
-          options: ["CUP","CUT","CUR","CUB","CUD"],
-          correct: 2,
-          explanation: "The answer is CUR, making CURTAIN. A 'cur' is a mongrel or aggressive dog. A curtain is a piece of fabric hung to cover a window. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The fishing boats returned to the HARB at dusk.\"",
+          options: ["SEA","BAY","COD","NET","OUR"],
+          correct: 4,
+          explanation: "Putting OUR back into HARB makes HARBOUR — the boats returned to the harbour. ✓"
         },
         {
           id: 91,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) IOSITY",
-          options: ["MOB","TIP","CUR","HUB","JAR"],
-          correct: 2,
-          explanation: "The answer is CUR, making CURIOSITY. Curiosity is a strong desire to know or learn something. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer drove his big red TROR across the field.\"",
+          options: ["ACT","BUS","COW","HAY","MUD"],
+          correct: 0,
+          explanation: "Putting ACT back into TROR makes TRACTOR — the farmer drove his tractor. ✓"
         },
         {
           id: 92,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) OSSIBLE",
-          options: ["INN","ILL","IMP","INK","IRE"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We booked our SEAG on the early morning coach.\"",
+          options: ["ROW","CAB","TIN","AIR","MAP"],
           correct: 2,
-          explanation: "The answer is IMP, making IMPOSSIBLE. An 'imp' is a mischievous little devil or child. Impossible means not able to be done. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          explanation: "Putting TIN back into SEAG makes SEATING — we booked our seating on the coach. ✓"
         },
         {
           id: 93,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) USCRIPT",
-          options: ["MAP","MAD","MAN","MAT","MAR"],
-          correct: 2,
-          explanation: "The answer is MAN, making MANUSCRIPT. A 'man' is an adult male. A manuscript is a handwritten or typed document, especially an author's original text. Tip: Watch out for uncommon words that hide common three-letter words inside them! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Thick smoke poured from the top of the VOLO during the eruption.\"",
+          options: ["CAN","JAR","MUD","FOG","TAP"],
+          correct: 0,
+          explanation: "The answer is CAN, a real word (a metal tin). Add it to VOLO to make VOLCANO. JAR, MUD, FOG and TAP are real words but only CAN rebuilds the word. ✓"
         },
         {
           id: 94,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) ICIENT",
-          options: ["EFF","HUB","MOB","TIP","JAR"],
-          correct: 0,
-          explanation: "The answer is EFF, making EFFICIENT (EFF + ICIENT). Efficient means achieving maximum results with minimum waste. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He kept his pound coins safe inside his WET.\"",
+          options: ["PAY","ALL","TIP","FEE","OWE"],
+          correct: 1,
+          explanation: "Putting ALL back into WET makes WALLET — he kept his coins in his wallet. ✓"
         },
         {
           id: 95,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) EBRATE",
-          options: ["TIP","CEL","MOB","JAR","HUB"],
-          correct: 1,
-          explanation: "The answer is CEL, making CELEBRATE. Celebrate means to mark a special occasion with enjoyable activities. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The huge grey ELEPH sprayed water over its back with its trunk.\"",
+          options: ["ANT","PEA","OWL","ICE","RUG"],
+          correct: 0,
+          explanation: "The answer is ANT, a real word (a tiny insect). Add it to the end of ELEPH to make ELEPHANT. PEA, OWL, ICE and RUG are real words but none rebuild a proper word. ✓"
         },
         {
           id: 96,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) INSULA",
-          options: ["PEW","PEA","PEN","PEG","PET"],
-          correct: 2,
-          explanation: "The answer is PEN, making PENINSULA. A 'pen' is a writing instrument. A peninsula is a piece of land almost surrounded by water, like Italy. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We made the final PAYT for our new sofa.\"",
+          options: ["MEN","TAX","OWE","SUM","TIP"],
+          correct: 0,
+          explanation: "Putting MEN back into PAYT makes PAYMENT — we made the final payment. ✓"
         },
         {
           id: 97,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) FORMANCE",
-          options: ["PEA","PER","PEW","PEG","PET"],
-          correct: 1,
-          explanation: "The answer is PER, making PERFORMANCE. 'Per' means for each (as in 'per hour'). A performance is an act of presenting a play, concert, or other entertainment. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The shop gave us a full RED for the faulty kettle.\"",
+          options: ["PAY","CUT","VAT","FUN","TIP"],
+          correct: 3,
+          explanation: "Putting FUN back into RED makes REFUND — the shop gave us a refund. ✓"
         },
         {
           id: 98,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) LLENGE",
-          options: ["TIP","HUB","JAR","MOB","CHA"],
-          correct: 4,
-          explanation: "The answer is CHA, making CHALLENGE. A challenge is a task or situation that tests someone's abilities. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He is very careful with his pocket-money SPING each week.\"",
+          options: ["BUY","FEE","END","TAX","CUT"],
+          correct: 2,
+          explanation: "Putting END back into SPING makes SPENDING — careful with his pocket-money spending. ✓"
         },
         {
           id: 99,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) RICADE",
-          options: ["BAD","BAG","BAR","BAT","BAN"],
-          correct: 2,
-          explanation: "The answer is BAR, making BARRICADE. A 'bar' is a rod or a place that serves drinks. A barricade is a barrier erected to block a passage. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We are going on HOAY to Cornwall next summer.\"",
+          options: ["SEA","LID","SUN","BAY","TAN"],
+          correct: 1,
+          explanation: "Putting LID back into HOAY makes HOLIDAY — going on holiday to Cornwall. ✓"
         },
         {
           id: 100,
-          difficulty: 3,
-          question: "Which three-letter word goes in front to make a longer word? ( _ _ _ ) DERER",
-          options: ["MOB","WAN","TIP","JAR","HUB"],
-          correct: 1,
-          explanation: "The answer is WAN, making WANDERER. A wanderer is a person who travels from place to place without a fixed home. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She wore her new leather SALS down to the beach.\"",
+          options: ["SUN","HAT","TOE","BAG","AND"],
+          correct: 4,
+          explanation: "Putting AND back into SALS makes SANDALS — she wore her new sandals. ✓"
         },
         {
           id: 101,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nF ( _ _ _ ) YARD",
-          options: ["OAR","ART","ARK","ARM","AIR"],
-          correct: 3,
-          explanation: "The three missing letters are A, R, M making the word ARM. The complete word is FARMYARD. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She spread butter on the warm CRUM at teatime.\"",
+          options: ["PET","JAM","TEA","POT","LID"],
+          correct: 0,
+          explanation: "The answer is PET, a real word (a tame animal). Add it to CRUM to make CRUMPET. JAM, TEA, POT and LID fit teatime but only PET completes the word. ✓"
         },
         {
           id: 102,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nWAR ( _ _ _ ) S",
-          options: ["MEN","TEN","HEN","PEN","DEN"],
-          correct: 4,
-          explanation: "The three missing letters are D, E, N making the word DEN. The complete word is WARDENS. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"He found a pretty pink SEALL down on the sand.\"",
+          options: ["SUN","NET","BAY","SHE","OAR"],
+          correct: 3,
+          explanation: "Putting SHE back into SEALL makes SEASHELL — he found a pink seashell. ✓"
         },
         {
           id: 103,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nGAR ( _ _ _ ) ER",
-          options: ["DEN","TEN","HEN","NET","PEN"],
-          correct: 0,
-          explanation: "The three missing letters are D, E, N making the word DEN. The complete word is GARDENER. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Slippery green SEED covered the rocks near the shore.\"",
+          options: ["MUD","NET","AWE","TAN","BAY"],
+          correct: 2,
+          explanation: "Putting AWE back into SEED makes SEAWEED — green seaweed covered the rocks. ✓"
         },
         {
           id: 104,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nPAR ( _ _ _ ) S",
-          options: ["ROD","ROT","ROW","RAN","RAT"],
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad likes to SUNHE on the beach all afternoon.\"",
+          options: ["SEA","BAT","TAN","DIP","HOT"],
           correct: 1,
-          explanation: "The three missing letters are R, O, T making the word ROT. The complete word is PARROTS. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          explanation: "Putting BAT back into SUNHE makes SUNBATHE — Dad likes to sunbathe on the beach. ✓"
         },
         {
           id: 105,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nBAL ( _ _ _ ) S",
-          options: ["LIT","LIP","LET","LAP","LID"],
-          correct: 2,
-          explanation: "The three missing letters are L, E, T making the word LET. The complete word is BALLETS. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          difficulty: 2,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The teenagers went SURG on the big Atlantic waves.\"",
+          options: ["SEA","WAX","BAY","TOW","FIN"],
+          correct: 4,
+          explanation: "Putting FIN back into SURG makes SURFING — the teenagers went surfing. ✓"
         },
         {
           id: 106,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nHAM ( _ _ _ ) S",
-          options: ["FOR","HER","FUR","PER","OUR"],
-          correct: 3,
-          explanation: "The three missing letters are P, E, R making the word PER. The complete word is HAMPERS. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Deep in the rainforest, a sleek black PANT stalked silently between the tangled vines at dusk.\"",
+          options: ["PAW","CUB","HER","FUR","JAW"],
+          correct: 2,
+          explanation: "Putting HER back into PANT makes PANTHER — the big wild cat stalking the forest. HER is a real word too. ✓"
         },
         {
           id: 107,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nDAM ( _ _ _ ) D",
-          options: ["ARE","ACE","ATE","APE","AGE"],
-          correct: 4,
-          explanation: "The three missing letters are A, G, E making the word AGE. The complete word is DAMAGED. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The skilled CARTER measured each wooden plank twice before sawing it to build the new staircase.\"",
+          options: ["SAW","PEG","MUD","PEN","RIB"],
+          correct: 3,
+          explanation: "Putting PEN back into CARTER makes CARPENTER — the woodworker building the staircase. PEN is a real word too. ✓"
         },
         {
           id: 108,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nMUS ( _ _ _ ) D",
-          options: ["TAR","TAN","TAP","TAB","TAG"],
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She fastened the sparkling silver BRACE carefully around her slim wrist before the party.\"",
+          options: ["LET","GEM","ARM","TIE","WAX"],
           correct: 0,
-          explanation: "The three missing letters are T, A, R making the word TAR. The complete word is MUSTARD. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          explanation: "The answer is LET, a real word (to allow). Add it to the end of BRACE to make BRACELET. BRACE is itself a word, so the sentence about her wrist points to the answer. ✓"
         },
         {
           id: 109,
-          difficulty: 1,
-          question: "Which three-letter word completes this longer word?\n\nCUS ( _ _ _ ) S",
-          options: ["TOP","TOM","TON","TOW","TOE"],
-          correct: 1,
-          explanation: "The three missing letters are T, O, M making the word TOM. The complete word is CUSTOMS. A tom is a male cat. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The emperor wore a flowing SCAR robe trimmed with gold thread at the grand ceremony.\"",
+          options: ["TAN","DYE","LET","FOG","HUM"],
+          correct: 2,
+          explanation: "Putting LET back into SCAR makes SCARLET — the bright red robe. LET is a real word too. ✓"
         },
         {
           id: 110,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nHOS ( _ _ _ ) E",
-          options: ["TAN","TAB","TAG","TAP","TAR"],
-          correct: 2,
-          explanation: "The three missing letters are T, A, G making the word TAG. The complete word is HOSTAGE. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A ferocious TORN swept across the open plains, hurling barn roofs and fences high into the sky.\"",
+          options: ["SKY","FOG","RAG","DEN","ADO"],
+          correct: 4,
+          explanation: "Putting ADO back into TORN makes TORNADO — the violent spinning storm. ADO is a real word too. ✓"
         },
         {
           id: 111,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nBUT ( _ _ _ ) S",
-          options: ["TEN","TIN","TAN","TON","TUN"],
-          correct: 3,
-          explanation: "The three missing letters are T, O, N making the word TON. The complete word is BUTTONS. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"As the sun sank, the evening sky glowed a deep CRIM above the silent hills.\"",
+          options: ["RED","TAN","SON","DYE","HUE"],
+          correct: 2,
+          explanation: "Putting SON back into CRIM makes CRIMSON — the deep red evening sky. SON is a real word too. ✓"
         },
         {
           id: 112,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nCAB ( _ _ _ ) E",
-          options: ["BAR","BAT","BUG","BIN","BAG"],
-          correct: 4,
-          explanation: "The three missing letters are B, A, G making the word BAG. The complete word is CABBAGE. Tip: Double letters are common traps — CABBAGE has two B's! ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The tiny KIT chased a ball of wool right across the kitchen floor.\"",
+          options: ["TEN","PAW","FUR","MEW","LAP"],
+          correct: 0,
+          explanation: "The answer is TEN, the number. Add it to KIT to make KITTEN. KIT is itself a word, so read the sentence for meaning — a baby cat is a kitten. ✓"
         },
         {
           id: 113,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nWAL ( _ _ _ ) S",
-          options: ["LET","LAP","LED","LEG","LID"],
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Everyone hoped the WEAR would stay calm for the village fair on Saturday.\"",
+          options: ["THE","SUN","FOG","DRY","PEG"],
           correct: 0,
-          explanation: "The three missing letters are L, E, T making the word LET. The complete word is WALLETS. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          explanation: "The answer is THE, a very common word. Slot it into WEAR to make WEATHER. WEAR is itself a word, so use the sentence's meaning to spot the real answer. ✓"
         },
         {
           id: 114,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nFOR ( _ _ _ ) DEN",
-          options: ["BAD","BID","BED","BUD","BOD"],
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In the ancient legend, a fearsome DON guarded the mountain cave where the treasure lay hidden.\"",
+          options: ["WIG","RAG","MOP","SOB","FIB"],
           correct: 1,
-          explanation: "The three missing letters are B, I, D making the word BID. The complete word is FORBIDDEN. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          explanation: "Putting RAG back into DON makes DRAGON — the fearsome beast guarding the cave. RAG is a real word too. ✓"
         },
         {
           id: 115,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nMAN ( _ _ _ ) R",
-          options: ["ATE","ACE","AGE","APE","ARE"],
-          correct: 2,
-          explanation: "The three missing letters are A, G, E making the word AGE. The complete word is MANAGER. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The medieval knight polished his gleaming ARM before riding bravely into the fierce morning battle.\"",
+          options: ["TOE","OUR","HIP","JAW","LEG"],
+          correct: 1,
+          explanation: "Putting OUR back into ARM makes ARMOUR — the knight's metal protection. OUR is a real word too. ✓"
         },
         {
           id: 116,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nDOC ( _ _ _ ) S",
-          options: ["TOW","TOP","TON","TOR","TOE"],
-          correct: 3,
-          explanation: "The three missing letters are T, O, R making the word TOR. The complete word is DOCTORS. A tor is a high rocky hill. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"When the bright headlights flashed across his face, he BLED quickly and turned away.\"",
+          options: ["CUT","FOG","INK","SOB","NAP"],
+          correct: 2,
+          explanation: "The answer is INK, a real word (the dark liquid in a pen). Slot it into BLED to make BLINKED. Notice that BLED is itself a word, so let the sentence's meaning guide you, not the look of the capital word. ✓"
         },
         {
           id: 117,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nCOM ( _ _ _ ) E",
-          options: ["PAW","PEN","PEW","PIE","PET"],
-          correct: 4,
-          explanation: "The three missing letters are P, E, T making the word PET. The complete word is COMPETE. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"According to an old Cornish LEG, a giant once hurled boulders across the stormy sea.\"",
+          options: ["TOE","RIB","END","HIP","JAW"],
+          correct: 2,
+          explanation: "Putting END back into LEG makes LEGEND — the old story about the giant. END is a real word too. ✓"
         },
         {
           id: 118,
-          difficulty: 2,
-          question: "Which three-letter word completes this longer word?\n\nPAL ( _ _ _ ) S",
-          options: ["ACE","AGE","AWE","APE","ARE"],
-          correct: 0,
-          explanation: "The three missing letters are A, C, E making the word ACE. The complete word is PALACES. Tip: For tricky words, try saying the word aloud with different letters — your ear will catch the right one! ✓"
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"From the top of the hill the explorer SHED loudly, hoping his lost companions would hear.\"",
+          options: ["HUT","OUT","PEG","LOG","BIN"],
+          correct: 1,
+          explanation: "Putting OUT back into SHED makes SHOUTED — calling loudly from the hill. OUT is a real word too. ✓"
         },
         {
           id: 119,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nMAG ( _ _ _ ) IC",
-          options: ["NIT","NET","NOT","NUT","NAT"],
-          correct: 1,
-          explanation: "The three missing letters are N, E, T making the word NET. The complete word is MAGNETIC. Tip: Watch out for silent letters (K in KNOWLEDGE, W in WRONG) — they won't sound right but they're correct! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"After selling all her homemade jam at the village fair, Grandma counted a tidy PRO.\"",
+          options: ["WIN","ACE","FIT","CUP","GYM"],
+          correct: 2,
+          explanation: "Putting FIT back into PRO makes PROFIT — the money left after selling the jam. FIT is a real word too. ✓"
         },
         {
           id: 120,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nTEM ( _ _ _ ) ATURE",
-          options: ["FOR","PAR","PER","HER","OUR"],
-          correct: 2,
-          explanation: "The three missing letters are P, E, R making the word PER. The complete word is TEMPERATURE. Tip: Double letters are common traps — NECESSARY has one C and two S's! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The cheeky monkey cracked open a salty PEA and popped it straight into its eager mouth.\"",
+          options: ["NUT","BUG","JAM","COB","FIG"],
+          correct: 0,
+          explanation: "Putting NUT back into PEA makes PEANUT — the salty snack the monkey ate. NUT is a real word too. ✓"
         },
         {
           id: 121,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nCAR ( _ _ _ ) TER",
-          options: ["PUN","PIN","PAN","PEN","PON"],
-          correct: 3,
-          explanation: "The three missing letters are P, E, N making the word PEN. The complete word is CARPENTER. Tip: Sound out the complete word — if it sounds right and the three letters make a word, you've got it! ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"With fresh determination the team REED their efforts and finally hauled the heavy boat ashore.\"",
+          options: ["MUD","NEW","FOG","DEN","BOG"],
+          correct: 1,
+          explanation: "Putting NEW back into REED makes RENEWED — the team trying again with fresh effort. NEW is a real word too. ✓"
         },
         {
           id: 122,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nDIS ( _ _ _ ) CE",
-          options: ["TUN","TIN","TON","TEN","TAN"],
-          correct: 4,
-          explanation: "The three missing letters are T, A, N making the word TAN. The complete word is DISTANCE. Tip: Check BOTH things — the complete word is real AND the stolen letters form a real word. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please try not to FOR your packed lunch and water bottle tomorrow morning.\"",
+          options: ["GET","JOB","PUB","HUM","SKY"],
+          correct: 0,
+          explanation: "The answer is GET, a real word. Add it to FOR to make FORGET. FOR is itself a word, so read the whole sentence — 'try not to forget'. ✓"
         },
         {
           id: 123,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nMIS ( _ _ _ ) TUNE",
-          options: ["FOR","FUR","FAR","FAN","FIN"],
-          correct: 0,
-          explanation: "The three missing letters are F, O, R making the word FOR. The complete word is MISFORTUNE. Tip: Try common three-letter words first: THE, AND, FOR, BUT, NOT, ALL, CAN, HER, HAS, HIM. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The brightly coloured PAR squawked loudly and flapped its wings whenever a stranger entered the room.\"",
+          options: ["EGG","ROT","NUT","WAX","FIG"],
+          correct: 1,
+          explanation: "Putting ROT back into PAR makes PARROT — the colourful squawking bird. ROT is a real word too. ✓"
         },
         {
           id: 124,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nVOL ( _ _ _ ) O",
-          options: ["CAR","CAN","CAT","CAP","CUP"],
-          correct: 1,
-          explanation: "The three missing letters are C, A, N making the word CAN. The complete word is VOLCANO. Tip: Look at the letters around the gap — they give strong clues about what fits. ✓"
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The stern prison WAR jangled his heavy keys as he marched along the echoing stone corridor.\"",
+          options: ["GUN","BOW","DEN","AXE","FOE"],
+          correct: 2,
+          explanation: "Putting DEN back into WAR makes WARDEN — the officer guarding the prison. DEN is a real word too. ✓"
         },
         {
           id: 125,
           difficulty: 3,
-          question: "Which three-letter word completes this longer word?\n\nNEWS ( _ _ _ ) ER",
-          options: ["PAP","POP","PIP","PEP","PUP"],
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ancient spell was WRIT in faded ink across the brittle pages of the leather book.\"",
+          options: ["BUG","MAP","COD","FOX","TEN"],
+          correct: 4,
+          explanation: "Putting TEN back into WRIT makes WRITTEN — the spell set down in ink. TEN is a real word too. ✓"
+        },
+        {
+          id: 126,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The notorious OUT robbed wealthy travellers on the moonlit road before vanishing into the dark forest.\"",
+          options: ["FOG","LAW","JAM","WEB","MUD"],
+          correct: 1,
+          explanation: "Putting LAW back into OUT makes OUTLAW — the robber on the moonlit road. LAW is a real word too. ✓"
+        },
+        {
+          id: 127,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The scientist typed the final results into her COMER and waited for the screen to respond.\"",
+          options: ["TAP","BUG","PUT","LOG","FAN"],
+          correct: 2,
+          explanation: "Putting PUT back into COMER makes COMPUTER — the machine showing the results. PUT is a real word too. ✓"
+        },
+        {
+          id: 128,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The nurse gently wrapped a clean white BAND around the boy's badly grazed and bleeding knee.\"",
+          options: ["POP","GIG","FAN","HUM","AGE"],
+          correct: 4,
+          explanation: "Putting AGE back into BAND makes BANDAGE — the dressing wrapped round the knee. AGE is a real word too. ✓"
+        },
+        {
+          id: 129,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A sudden clap of thunder START the grazing deer, which bolted swiftly across the open meadow.\"",
+          options: ["RUN","GUN","LED","LAP","WIN"],
+          correct: 2,
+          explanation: "Putting LED back into START makes STARTLED — how the thunder left the deer. LED is a real word too. ✓"
+        },
+        {
+          id: 130,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The wise old professor shared his vast KLEDGE of ancient history with the eager young students.\"",
+          options: ["OWN","NOW","LOT","FAN","BUG"],
+          correct: 1,
+          explanation: "Putting NOW back into KLEDGE makes KNOWLEDGE — the professor's learning. NOW is a real word too (mind the silent K!). ✓"
+        },
+        {
+          id: 131,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Deep in the Egyptian desert, explorers discovered a vast stone PYID hiding the pharaoh's golden tomb.\"",
+          options: ["COD","RAM","MAP","TUB","WIG"],
+          correct: 1,
+          explanation: "Putting RAM back into PYID makes PYRAMID — the great stone tomb in the desert. RAM is a real word too. ✓"
+        },
+        {
+          id: 132,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The old harbour wall was built from huge blocks of grey GITE that resisted the crashing waves.\"",
+          options: ["ORE","RAN","BOG","TIN","COD"],
+          correct: 1,
+          explanation: "Putting RAN back into GITE makes GRANITE — the hard grey rock of the harbour wall. RAN is a real word too. ✓"
+        },
+        {
+          id: 133,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The museum displayed the enormous SKELE of a dinosaur that roamed the earth millions of years ago.\"",
+          options: ["RIB","JAW","HIP","TON","TOE"],
+          correct: 3,
+          explanation: "Putting TON back into SKELE makes SKELETON — the dinosaur's bones in the museum. TON is a real word too. ✓"
+        },
+        {
+          id: 134,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The busy bee drank sweet NEC from deep inside the brightly coloured foxglove flowers.\"",
+          options: ["BEE","BUD","TAR","SAP","POD"],
+          correct: 2,
+          explanation: "Putting TAR back into NEC makes NECTAR — the sweet liquid in the flowers. TAR is a real word too. ✓"
+        },
+        {
+          id: 135,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The mighty SUL ruled his desert kingdom from a magnificent palace filled with silk and treasure.\"",
+          options: ["OIL","RUG","TAN","JAR","POT"],
+          correct: 2,
+          explanation: "Putting TAN back into SUL makes SULTAN — the ruler of the desert kingdom. TAN is a real word too. ✓"
+        },
+        {
+          id: 136,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The farmer pulled a fat purple TUR from the muddy soil and tossed it into the cart.\"",
+          options: ["POD","HOE","NIP","BUG","SOW"],
+          correct: 2,
+          explanation: "Putting NIP back into TUR makes TURNIP — the purple vegetable from the soil. NIP is a real word too. ✓"
+        },
+        {
+          id: 137,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The ballerina gave an ELEG bow before gliding gracefully across the polished wooden stage.\"",
+          options: ["OWN","ANT","RIB","FAN","COB"],
+          correct: 1,
+          explanation: "Putting ANT back into ELEG makes ELEGANT — the graceful bow of the ballerina. ANT is a real word too. ✓"
+        },
+        {
+          id: 138,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"In her BOT lesson, Priya learned how plants absorb water through their tangled underground roots.\"",
+          options: ["POD","ANY","SAP","BUD","FIG"],
+          correct: 1,
+          explanation: "Putting ANY back into BOT makes BOTANY — the lesson about how plants grow. ANY is a real word too. ✓"
+        },
+        {
+          id: 139,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The brightly coloured BUTTER landed gently on a flower at the bottom of the garden.\"",
+          options: ["FLY","BUG","BEE","WEB","PEN"],
           correct: 0,
-          explanation: "The three missing letters are P, A, P making the word PAP. The complete word is NEWSPAPER. Tip: If you're stuck, work through the vowels: try A, E, I, O, U in the gap position. ✓"
+          explanation: "The answer is FLY, a real word (a small insect, or to move through the air). Add it to the end of BUTTER to make BUTTERFLY. BUTTER is itself a word, so let the sentence's meaning lead you to the answer. ✓"
+        },
+        {
+          id: 140,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"We waited patiently at the station for a QUER of an hour before the delayed train arrived.\"",
+          options: ["BUG","ART","MAP","TOY","DEN"],
+          correct: 1,
+          explanation: "Putting ART back into QUER makes QUARTER — fifteen minutes of waiting. ART is a real word too. ✓"
+        },
+        {
+          id: 141,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A plump PARTGE burst suddenly from the hedgerow and whirred low across the frosty winter field.\"",
+          options: ["HEN","JAY","RID","EGG","NUT"],
+          correct: 2,
+          explanation: "Putting RID back into PARTGE makes PARTRIDGE — the plump bird from the hedgerow. RID is a real word too. ✓"
+        },
+        {
+          id: 142,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"A triumphant FANE of trumpets announced the queen's arrival at the glittering royal banquet.\"",
+          options: ["GIG","FAR","HUM","POP","JOY"],
+          correct: 1,
+          explanation: "Putting FAR back into FANE makes FANFARE — the burst of trumpets for the queen. FAR is a real word too. ✓"
+        },
+        {
+          id: 143,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Dad poured himself a steaming mug of strong black COF before driving to the early meeting.\"",
+          options: ["TEA","CUP","MUG","FEE","JUG"],
+          correct: 3,
+          explanation: "Putting FEE back into COF makes COFFEE — Dad's steaming morning drink. FEE is a real word too. ✓"
+        },
+        {
+          id: 144,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Please telephone the hotel to CONM our booking before we set off on the long holiday.\"",
+          options: ["TUB","FIR","HAT","WIG","BUG"],
+          correct: 1,
+          explanation: "Putting FIR back into CONM makes CONFIRM — making the booking certain. FIR is a real word too. ✓"
+        },
+        {
+          id: 145,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The blacksmith thrust the iron bar deep into the roaring NACE until it glowed bright orange.\"",
+          options: ["FUR","GAS","ASH","LOG","TAR"],
+          correct: 0,
+          explanation: "Putting FUR back into NACE makes FURNACE — the roaring fire heating the iron. FUR is a real word too. ✓"
+        },
+        {
+          id: 146,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The charity built schools across the region to EDUE thousands of children who could not read.\"",
+          options: ["BUG","MAP","CAT","TOY","FAN"],
+          correct: 2,
+          explanation: "Putting CAT back into EDUE makes EDUCATE — teaching the children to read. CAT is a real word too. ✓"
+        },
+        {
+          id: 147,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The rescuers feared the old mine tunnel might COLSE and trap the trembling workers deep underground.\"",
+          options: ["RUG","TIN","LAP","BUG","MAP"],
+          correct: 2,
+          explanation: "Putting LAP back into COLSE makes COLLAPSE — the tunnel falling in. LAP is a real word too. ✓"
+        },
+        {
+          id: 148,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Exhausted after the long mountain hike, she rested her aching head on the soft feather PIL.\"",
+          options: ["BED","NAP","LOW","COT","RUG"],
+          correct: 2,
+          explanation: "Putting LOW back into PIL makes PILLOW — the soft cushion for her head. LOW is a real word too. ✓"
+        },
+        {
+          id: 149,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"She rummaged through her heavy leather HAND looking for the missing bus tickets.\"",
+          options: ["BAG","RIM","FOG","TUB","PEW"],
+          correct: 0,
+          explanation: "The answer is BAG, a real word. Add it to HAND to make HANDBAG. HAND is itself a word, so let the sentence guide you — she searched it for tickets. ✓"
+        },
+        {
+          id: 150,
+          difficulty: 3,
+          question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"The workmen rolled out a thick new CAR across the whole landing floor.\"",
+          options: ["PET","GET","PAD","HUM","JOG"],
+          correct: 0,
+          explanation: "The answer is PET, a real word (a tame animal). Add it to CAR to make CARPET. CAR is itself a word, so use the sentence — the workmen rolled out a carpet. ✓"
         }
-,
-          {
-            id: 126,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nDaisy felt very HA_ _ _ when she opened her birthday present.",
-            options: ["RDY","STY","PPY","ZEL","ZED"],
-            correct: 2,
-            explanation: "The answer is PPY, making HAPPY. The sentence is about opening a birthday present, so 'happy' fits perfectly. HARDY, HASTY, HAZEL and HAZED are real words but don't make sense here. ✓",
-          },
-          {
-            id: 127,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nThe sun was shining and the sky was very BR_ _ _ T.",
-            options: ["EAS","ASS","AIN","ICK","IGH"],
-            correct: 4,
-            explanation: "The answer is IGH, making BRIGHT. The sentence talks about a sunny sky, so 'bright' makes sense. BREAST, BRASST, BRAINT and BRICKT either don't fit or aren't real words. ✓",
-          },
-          {
-            id: 128,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nWe took the dog for a long WA_ _ in the park.",
-            options: ["SH","LK","RD","NT","VE"],
-            correct: 1,
-            explanation: "The answer is LK, making WALK. You take a dog for a 'walk' in the park. WASH, WARD, WANT and WAVE are real words but don't fit this sentence. ✓",
-          },
-          {
-            id: 129,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nJake was so TI_ _ _ that he fell asleep on the sofa.",
-            options: ["DAL","GER","MED","RED","PED"],
-            correct: 3,
-            explanation: "The answer is RED, making TIRED. Falling asleep on the sofa tells you he was 'tired'. TIDAL, TIGER, TIMED and TIPED don't fit. ✓",
-          },
-          {
-            id: 130,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nEvie poured cold milk into her bowl of CER_ _ _.",
-            options: ["EAL","TAIN","AMIC","EBRO","OUSE"],
-            correct: 0,
-            explanation: "The answer is EAL, making CEREAL. You eat cereal with milk in a bowl. CERTAIN and CERAMIC are real words but don't fit, and CEREBRO/CEROUSE aren't standard English words. ✓",
-          },
-          {
-            id: 131,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nThe children played in the GAR_ _ _ until it got dark.",
-            options: ["LIC","BLE","DEN","ISH","GLE"],
-            correct: 2,
-            explanation: "The answer is DEN, making GARDEN. Children play in a 'garden' before dark. GARLIC, GARBLE, GARISH and GARGLE are real words but don't fit the sentence. ✓",
-          },
-          {
-            id: 132,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nPriya wrote her name carefully at the top of the PAP_ _.",
-            options: ["AL","AS","OE","UM","ER"],
-            correct: 4,
-            explanation: "The answer is ER, making PAPER. You write your name on 'paper'. PAPAL is a real word, and the others don't form sensible words here. ✓",
-          },
-          {
-            id: 133,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nMarcus kicked the FOO_ _ _ _ _ straight into the goal.",
-            options: ["TPATH","TBALL","TWEAR","THILL","TSORE"],
-            correct: 1,
-            explanation: "The answer is TBALL, making FOOTBALL. You kick a 'football' into a goal. FOOTPATH, FOOTWEAR, FOOTHILL and FOOTSORE are real words but don't fit. ✓",
-          },
-          {
-            id: 134,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nFinn opened his umbrella because it had started to RA_ _.",
-            options: ["CE","GE","KE","IN","ID"],
-            correct: 3,
-            explanation: "The answer is IN, making RAIN. You open an umbrella when it starts to 'rain'. RACE, RAGE, RAKE and RAID are real words but don't make sense in this sentence. ✓",
-          },
-          {
-            id: 135,
-            difficulty: 1,
-            question: "Which letters complete the missing word in this sentence?\n\nThe baby SMI_ _ _ when she saw her grandma.",
-            options: ["LED","THY","RKS","TES","DGE"],
-            correct: 0,
-            explanation: "The answer is LED, making SMILED. A baby 'smiled' when she saw her grandma. SMITHY is a real word (a blacksmith's workshop), and SMIRKS doesn't fit a happy baby. ✓",
-          },
-          {
-            id: 136,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nThe museum trip was organised by the history DEP_ _ _ _ _ NT.",
-            options: ["ENDEN","OSITI","ARTME","LETIO","RIVAT"],
-            correct: 2,
-            explanation: "The answer is ARTME, making DEPARTMENT. Trips are organised by a 'department'. DEPENDENT, DEPOSITION, DEPLETION and DEPRIVATION are real words but don't fit. ✓",
-          },
-          {
-            id: 137,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nAisha read the INST_ _ _ _ _ ONS carefully before starting the puzzle.",
-            options: ["ALLAT","IGATI","RUMEN","ANTAN","RUCTI"],
-            correct: 4,
-            explanation: "The answer is RUCTI, making INSTRUCTIONS. You read 'instructions' before starting a puzzle. INSTALLATIONS and INSTIGATIONS are real words but don't fit. ✓",
-          },
-          {
-            id: 138,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nThe teacher gave a clear EXPL_ _ _ _ _ ON of the maths problem.",
-            options: ["OSITI","ANATI","OITAT","ORATI","ICATI"],
-            correct: 1,
-            explanation: "The answer is ANATI, making EXPLANATION. Teachers give an 'explanation' of a problem. EXPLORATION is real but doesn't fit the gap. Only EXPLANATION works. ✓",
-          },
-          {
-            id: 139,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nCharlie made a small MIST_ _ _ in his spelling test but corrected it quickly.",
-            options: ["RAL","OOK","IER","AKE","ESS"],
-            correct: 3,
-            explanation: "The answer is AKE, making MISTAKE. You make a 'mistake' in a spelling test. MISTRAL, MISTOOK, MISTIER and MISTRESS are real words but don't fit. ✓",
-          },
-          {
-            id: 140,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nThe doctor examined the PAT_ _ _ T very carefully.",
-            options: ["IEN","TER","ROL","HWA","ROY"],
-            correct: 0,
-            explanation: "The answer is IEN, making PATIENT. Doctors examine a 'patient'. PATROL and the others don't form valid words with the ending T here. ✓",
-          },
-          {
-            id: 141,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nThe library was so QUI_ _ that you could hear a pin drop.",
-            options: ["CK","LL","ET","TE","RK"],
-            correct: 2,
-            explanation: "The answer is ET, making QUIET. Libraries are 'quiet' — quiet enough to hear a pin drop. QUICK, QUILL, QUITE and QUIRK are real words but don't fit this sentence. ✓",
-          },
-          {
-            id: 142,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nDaisy followed the recipe to bake a delicious CHOC _ _ _ TE cake.",
-            options: ["LAT","LIK","REL","ORE","OLA"],
-            correct: 4,
-            explanation: "The answer is OLA, making CHOCOLATE. You bake a 'chocolate' cake. The other options don't form real words here. ✓",
-          },
-          {
-            id: 143,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nOliver was AMBI_ _ _ _ S and wanted to become a doctor when he grew up.",
-            options: ["VALE","TIOU","GUOU","ENCE","ENTL"],
-            correct: 1,
-            explanation: "The answer is TIOU, making AMBITIOUS. Wanting to become a doctor shows you are 'ambitious'. AMBIVALENT is real but doesn't end in S, and AMBIGUOUS means unclear. Only AMBITIOUS works. ✓",
-          },
-          {
-            id: 144,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nThe magician's TR_ _ _ amazed everyone in the audience.",
-            options: ["AIL","OUT","AMP","ICK","IBE"],
-            correct: 3,
-            explanation: "The answer is ICK, making TRICK. A magician performs a 'trick' that amazes the audience. TRAIL, TROUT, TRAMP and TRIBE are real words but don't fit. ✓",
-          },
-          {
-            id: 145,
-            difficulty: 2,
-            question: "Which letters complete the missing word in this sentence?\n\nJake's grandfather told an ENT_ _ _ _ _ NG story about his childhood in Cornwall.",
-            options: ["ERTAI","ITLEM","RUSTI","RANCI","HRALI"],
-            correct: 3,
-            explanation: "The answer is RANCI, making ENTRANCING. An entrancing story is one that grips your attention completely. Only ENTRANCING fits the gap: ENT + RANCI + NG. ✓",
-          },
-          {
-            id: 146,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe REN_ _ _ _ _ ON of the old town hall took nearly two years to complete.",
-            options: ["UNCIA","DERIN","OVATI","DEZVO","OWNED"],
-            correct: 2,
-            explanation: "The answer is OVATI, making RENOVATION. Restoring an old building takes a 'renovation'. RENUNCIATION and RENDERING are real but don't fit the gap or context. ✓",
-          },
-          {
-            id: 147,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nMarcus felt APP_ _ _ _ _ _ _ VE about his first day at the new school.",
-            options: ["RECIATI","ROACHIN","ROPRIAT","ALLINGL","REHENSI"],
-            correct: 4,
-            explanation: "The answer is REHENSI, making APPREHENSIVE. Feeling nervous about a new school is being 'apprehensive'. APPRECIATIVE and APPROPRIATE are real but don't fit the meaning of nervousness. ✓",
-          },
-          {
-            id: 148,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe scientist conducted a careful EXP_ _ _ _ _ _ NT in the laboratory.",
-            options: ["ONENT","ERIME","LOITM","ENDAB","ANSIO"],
-            correct: 1,
-            explanation: "The answer is ERIME, making EXPERIMENT. Scientists conduct an 'experiment' in a laboratory. EXPONENT is a real word but doesn't fit. ✓",
-          },
-          {
-            id: 149,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe judge listened to the witness's TEST_ _ _ _ _ before making a decision.",
-            options: ["IFIES","ABLES","OSTER","IMONY","AMENT"],
-            correct: 3,
-            explanation: "The answer is IMONY, making TESTIMONY. A witness gives 'testimony' in court. TESTIFIES doesn't fit the gap shape, and TESTAMENT means a will. ✓",
-          },
-          {
-            id: 150,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nEvie's curiosity was UN_ _ _ _ _ _ _ BLE — she had to know how the trick worked.",
-            options: ["QUENCHA","DERSTAN","RAVELLI","FORTUNE","EXPECTE"],
-            correct: 0,
-            explanation: "The answer is QUENCHA, making UNQUENCHABLE. Curiosity that can't be satisfied is 'unquenchable'. UNDERSTANDABLE, UNRAVELLING, UNFORTUNATE and UNEXPECTED are all real but don't carry this meaning. ✓",
-          },
-          {
-            id: 151,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe ancient manuscript was almost INDE_ _ _ _ _ _ _ _ LE — the writing had faded over the centuries.",
-            options: ["PENDABLE","FATIGABL","CIPHERAB","STRUCTAB","SCRIBABL"],
-            correct: 2,
-            explanation: "The answer is CIPHERAB, making INDECIPHERABLE. Faded writing that can't be read is 'indecipherable'. INDESTRUCTIBLE and INDESCRIBABLE are real but don't match the meaning of unreadable. ✓",
-          },
-          {
-            id: 152,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe athlete's performance was EXC_ _ _ _ _ _ AL — no one had ever run that fast before.",
-            options: ["AVATIO","RUCIAT","LAMATO","LUSIVI","EPTION"],
-            correct: 4,
-            explanation: "The answer is EPTION, making EXCEPTIONAL. A record-breaking performance is 'exceptional'. EXCAVATIONAL and EXCRUCIATAL aren't real, and EXCLAMATORY doesn't end in -AL. ✓",
-          },
-          {
-            id: 153,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nPriya gave a PER_ _ _ _ _ _ VE argument that convinced the whole class to change their minds.",
-            options: ["CEPTI","SUASI","FORMA","SISTE","MANEN"],
-            correct: 1,
-            explanation: "The answer is SUASI, making PERSUASIVE. An argument that convinces people is 'persuasive'. PERCEPTIVE, PERSISTENT and PERMANENT are real but don't mean 'convincing'. ✓",
-          },
-          {
-            id: 154,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe view from the mountain top was BR_ _ _ _ _ _ _ _ NG — Finn had never seen anything like it.",
-            options: ["OADCASTI","ANDISHIN","ISTLINGL","EATHTAKI","ANCHINGT"],
-            correct: 3,
-            explanation: "The answer is EATHTAKI, making BREATHTAKING. A stunning view is 'breathtaking'. BROADCASTING and BRANDISHING are real words but don't match the awe-inspiring meaning. ✓",
-          },
-          {
-            id: 155,
-            difficulty: 3,
-            question: "Which letters complete the missing word in this sentence?\n\nThe detective found a CON_ _ _ _ _ _ G clue that finally solved the mystery.",
-            options: ["VINCIN","DEMNIN","FRONTI","STRAIN","STITUT"],
-            correct: 0,
-            explanation: "The answer is VINCIN, making CONVINCING. A clue that solves a mystery is 'convincing'. CONDEMNING, CONFRONTING, CONSTRAINING and CONSTITUTING are all real but don't fit. ✓",
-          }
-,
-          {
-            id: 156,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe BLET kept Daisy warm on the freezing winter night.",
-            options: ["OLT","ART","ANK","RIM","EEN"],
-            correct: 2,
-            explanation: "Insert ANK into BLET: BL + ANK + ET = BLANKET. A blanket is a soft covering used on a bed. The sentence gives the clue — warm on a freezing night. ✓",
-          },
-          {
-            id: 157,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe school band's TRET sounded loud and proud in the parade.",
-            options: ["AIN","OSS","ICK","END","UMP"],
-            correct: 4,
-            explanation: "Insert UMP into TRET: TR + UMP + ET = TRUMPET. A trumpet is a brass musical instrument. The parade and the loud, proud sound told you it was a trumpet. ✓",
-          },
-          {
-            id: 158,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nDad fixed the BRET to the wall to hold up the heavy bookshelf.",
-            options: ["ICK","ACK","OOK","OIL","EEN"],
-            correct: 1,
-            explanation: "Insert ACK into BRET: BR + ACK + ET = BRACKET. A bracket is an L-shaped support fixed to a wall. The clue — holding up a shelf — narrows it down. ✓",
-          },
-          {
-            id: 159,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nIt was the DEST night of the year — no moon and no stars in sight.",
-            options: ["AMP","EEP","ULL","ARK","OZY"],
-            correct: 3,
-            explanation: "Insert ARK into DEST: D + ARK + EST = DARKEST. Darkest means most lacking in light. The sentence describes a night with no moon — the perfect clue. ✓",
-          },
-          {
-            id: 160,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe small candle was BING brightly in the window.",
-            options: ["URN","RIG","ENI","OWI","AKI"],
-            correct: 0,
-            explanation: "Insert URN into BING: B + URN + ING = BURNING. Burning means on fire. The candle clue tells you the word is about flames. ✓",
-          },
-          {
-            id: 161,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe race STED the moment the starter fired the pistol.",
-            options: ["OPP","RAY","ART","EAM","ILL"],
-            correct: 2,
-            explanation: "Insert ART into STED: ST + ART + ED = STARTED. Started means began. The pistol firing is the moment a race begins. ✓",
-          },
-          {
-            id: 162,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe snake CHED a flute player, swaying gently in the basket.",
-            options: ["OOS","UMP","AIN","EAS","ARM"],
-            correct: 4,
-            explanation: "Insert ARM into CHED: CH + ARM + ED = CHARMED. Charmed means fascinated or enchanted. Snake charmers use music to calm cobras — that's the clue. ✓",
-          },
-          {
-            id: 163,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nMaya CPED her front tooth biting into the hard toffee apple.",
-            options: ["LAS","HIP","RIS","OOK","EAM"],
-            correct: 1,
-            explanation: "Insert HIP into CPED: C + HIP + PED = CHIPPED. Chipped means a small piece has broken off. Biting hard toffee can chip a tooth — that's the clue. ✓",
-          },
-          {
-            id: 164,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nFinn GRED proudly when he won first prize at the science fair.",
-            options: ["OAN","OWN","ASP","INN","OUT"],
-            correct: 3,
-            explanation: "Insert INN into GRED: GR + INN + ED = GRINNED. Grinned means smiled broadly. Winning first prize made Finn smile proudly — only GRINNED fits a happy, proud moment. GROANED (a sound of pain or complaint) and GRASPED (took hold of) are real words but don't fit winning a prize. ✓",
-          },
-          {
-            id: 165,
-            difficulty: 1,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nDad works at the car FORY just outside town.",
-            options: ["ACT","EST","ARM","OOL","USH"],
-            correct: 0,
-            explanation: "Insert ACT into FORY: F + ACT + ORY = FACTORY. A factory is a large building where things are made. Cars are built in factories — that's the clue. ✓",
-          },
-          {
-            id: 166,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nGran kept all her old photographs in a small wooden CNET by the fireplace.",
-            options: ["ORO","OVE","ABI","ENO","UMI"],
-            correct: 2,
-            explanation: "Insert ABI into CNET: C + ABI + NET = CABINET. A cabinet is a piece of furniture with shelves or drawers for storage. The wooden storage clue points to a cabinet. ✓",
-          },
-          {
-            id: 167,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nDad asked his boss for a TSFER to the office closer to home.",
-            options: ["EME","ALI","OUS","ICI","RAN"],
-            correct: 4,
-            explanation: "Insert RAN into TSFER: T + RAN + SFER = TRANSFER. A transfer is a move from one place to another. Moving to a closer office is a transfer. ✓",
-          },
-          {
-            id: 168,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe archaeologist held up a tiny FRAGT of Roman pottery from the dig site.",
-            options: ["MAN","MEN","ILE","ANT","ORM"],
-            correct: 1,
-            explanation: "Insert MEN into FRAGT: FRAG + MEN + T = FRAGMENT. A fragment is a small broken piece. A tiny piece of pottery is a fragment. ✓",
-          },
-          {
-            id: 169,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe maths teacher explained how to add one FRION to another.",
-            options: ["OST","USH","ENT","ACT","ICT"],
-            correct: 3,
-            explanation: "Insert ACT into FRION: FR + ACT + ION = FRACTION. A fraction is a part of a whole, like 1/2 or 3/4. Adding fractions is a key maths skill. ✓",
-          },
-          {
-            id: 170,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe train to London leaves from PLATM 9 in three minutes.",
-            options: ["FOR","ONE","INU","EST","AIR"],
-            correct: 0,
-            explanation: "Insert FOR into PLATM: PLAT + FOR + M = PLATFORM. A platform is the raised area at a train station where you board. ✓",
-          },
-          {
-            id: 171,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nHer essay was below the usual STARD expected at this school.",
-            options: ["OUR","ITY","AND","EAM","USE"],
-            correct: 2,
-            explanation: "Insert AND into STARD: ST + AND + ARD = STANDARD. Standard means the expected level of quality. The clue — below what's expected — points to standard. ✓",
-          },
-          {
-            id: 172,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe CHION lifted the heavy gold trophy above her head.",
-            options: ["OOS","ILL","INI","ORD","AMP"],
-            correct: 4,
-            explanation: "Insert AMP into CHION: CH + AMP + ION = CHAMPION. A champion is the winner of a competition. Lifting a trophy is what winners do. ✓",
-          },
-          {
-            id: 173,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe CUSER complained that her soup was cold and sent it back.",
-            options: ["MAN","TOM","ITY","ORS","ARI"],
-            correct: 1,
-            explanation: "Insert TOM into CUSER: CUS + TOM + ER = CUSTOMER. A customer is someone who buys things at a shop or restaurant. The complaint clue tells you it's a customer. ✓",
-          },
-          {
-            id: 174,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe puddle was SHRING quickly in the bright afternoon sun.",
-            options: ["IFT","OUT","ELL","INK","ARP"],
-            correct: 3,
-            explanation: "Insert INK into SHRING: SHR + INK + ING = SHRINKING. Shrinking means getting smaller. Puddles shrink as they dry up — that's the sunny clue. ✓",
-          },
-          {
-            id: 175,
-            difficulty: 2,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nGran spent two nights in HOSAL after her fall on the icy path.",
-            options: ["PIT","TEL","OUS","ANT","ORN"],
-            correct: 0,
-            explanation: "Insert PIT into HOSAL: HOS + PIT + AL = HOSPITAL. A hospital is where people go to be treated by doctors. After a fall, you might need hospital care. ✓",
-          },
-          {
-            id: 176,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nShe drew an EORATE map of the treasure island with every cove and cave marked.",
-            options: ["VAL","ACC","LAB","ABS","RES"],
-            correct: 2,
-            explanation: "Insert LAB into EORATE: E + LAB + ORATE = ELABORATE. Elaborate means highly detailed and complex. A map with every cove and cave is elaborate. ✓",
-          },
-          {
-            id: 177,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe museum displayed AUNTIC Roman pottery dating back nearly two thousand years.",
-            options: ["OMA","IDE","ROM","ENG","THE"],
-            correct: 4,
-            explanation: "Insert THE into AUNTIC: AU + THE + NTIC = AUTHENTIC. Authentic means real and genuine, not a copy. Genuine Roman pottery is authentic. ✓",
-          },
-          {
-            id: 178,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe stream was so TRANRENT that Priya could count the pebbles on the bed below.",
-            options: ["QUI","SPA","LUC","STA","FOR"],
-            correct: 1,
-            explanation: "Insert SPA into TRANRENT: TRAN + SPA + RENT = TRANSPARENT. Transparent means clear enough to see through. Counting pebbles through water means it's transparent. ✓",
-          },
-          {
-            id: 179,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe total eclipse was an extraordinary PHENOON that drew crowds from across the country.",
-            options: ["ATI","OMI","AST","MEN","OZO"],
-            correct: 3,
-            explanation: "Insert MEN into PHENOON: PHENO + MEN + ON = PHENOMENON. A phenomenon is a remarkable event or occurrence in nature. An eclipse is a famous phenomenon. ✓",
-          },
-          {
-            id: 180,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nMarcus didn't RENISE his old primary school teacher when he bumped into her in town.",
-            options: ["COG","MEM","ARR","IGN","ACT"],
-            correct: 0,
-            explanation: "Insert COG into RENISE: RE + COG + NISE = RECOGNISE. Recognise means to know someone or something on sight. Not knowing his old teacher means he didn't recognise her. ✓",
-          },
-          {
-            id: 181,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe scientific APATUS gleamed under the bright laboratory lights.",
-            options: ["ARA","ENT","PAR","OST","INI"],
-            correct: 2,
-            explanation: "Insert PAR into APATUS: AP + PAR + ATUS = APPARATUS. Apparatus means equipment used for a specific purpose. Lab apparatus is the gear scientists use. ✓",
-          },
-          {
-            id: 182,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe school play had a DRAIC ending that left the whole audience in tears.",
-            options: ["MIC","OST","AST","ENT","MAT"],
-            correct: 4,
-            explanation: "Insert MAT into DRAIC: DRA + MAT + IC = DRAMATIC. Dramatic means exciting and full of emotion. An ending that makes people cry is dramatic. ✓",
-          },
-          {
-            id: 183,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nA crystal CHELIER hung from the centre of the grand ballroom ceiling.",
-            options: ["OLI","AND","INI","IST","EVE"],
-            correct: 1,
-            explanation: "Insert AND into CHELIER: CH + AND + ELIER = CHANDELIER. A chandelier is a decorative hanging light, often with crystals. Ballrooms famously have chandeliers. ✓",
-          },
-          {
-            id: 184,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe author wove a thrilling NARIVE about pirates, storms, and buried treasure.",
-            options: ["EAR","ATA","IST","RAT","EFF"],
-            correct: 3,
-            explanation: "Insert RAT into NARIVE: NAR + RAT + IVE = NARRATIVE. A narrative is a story or account of events. A thrilling pirate story is a narrative. ✓",
-          },
-          {
-            id: 185,
-            difficulty: 3,
-            question: "Which three letters complete the word in this sentence? Insert them in the right place.\n\nThe DELIE petals of the rose wilted in the strong afternoon sun.",
-            options: ["CAT","FRA","GIL","ETH","ORN"],
-            correct: 0,
-            explanation: "Insert CAT into DELIE: DELI + CAT + E = DELICATE. Delicate means fragile and easily damaged. Petals that wilt easily are delicate. ✓",
-          }
       ]
     },
     letterCodes: {

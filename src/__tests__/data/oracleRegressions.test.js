@@ -238,30 +238,11 @@ describe('Oracle Sweep — Wrong Answer Fixes (2026-04-03)', () => {
     expect(q.options[q.correct]).toBe('Blue');
   });
 
-  // Missing Letters: 4 off-by-index errors
-  it('Missing Letters Q59 (FR_GHT) answer is "I"', () => {
-    const q = findQuestion(vrData, 'missingLettersWords', 59);
-    expect(q).toBeTruthy();
-    expect(q.options[q.correct]).toBe('I');
-  });
-
-  it('Missing Letters Q62 (SCR_TCH) answer is "A"', () => {
-    const q = findQuestion(vrData, 'missingLettersWords', 62);
-    expect(q).toBeTruthy();
-    expect(q.options[q.correct]).toBe('A');
-  });
-
-  it('Missing Letters Q71 (WR_STLE) answer is "E"', () => {
-    const q = findQuestion(vrData, 'missingLettersWords', 71);
-    expect(q).toBeTruthy();
-    expect(q.options[q.correct]).toBe('E');
-  });
-
-  it('Missing Letters Q72 (SCH_DULE) answer is "E"', () => {
-    const q = findQuestion(vrData, 'missingLettersWords', 72);
-    expect(q).toBeTruthy();
-    expect(q.options[q.correct]).toBe('E');
-  });
+  // (Missing Letters single-letter/isolated-format regression tests removed
+  // 26 Jun 2026: the whole missingLettersWords bank was regenerated to the
+  // authentic sentence-embedded GL format. Old ids 59/62/71/72 no longer exist
+  // in that form. New-format invariants are pinned in the "Missing Letters &
+  // Words — authentic GL invariants" block below.)
 
   // Number Word Codes Q30: code changed to 514 so answer is POT
   it('Number Word Codes Q30 answer is "POT"', () => {
@@ -848,8 +829,8 @@ describe('Cross-Question Analysis — VR-wide Word Repetition', () => {
     const wordCounts = {};
     questions.forEach(q => {
       if (!q.explanation) return;
-      // Extract target word: "making WORD" or "making WORD." — must be 5+ letters (the full word)
-      const match = q.explanation.match(/making\s+([A-Z][A-Z]+)/);
+      // Extract target word: "make/makes WORD" — must be 5+ letters (the full word)
+      const match = q.explanation.match(/makes?\s+([A-Z][A-Z]+)/);
       if (match && match[1].length >= 5) {
         wordCounts[match[1]] = (wordCounts[match[1]] || 0) + 1;
       }
@@ -950,52 +931,87 @@ describe('Cross-Question Analysis — VR-wide Word Repetition', () => {
 // tests missed. Each test targets a PATTERN, not a single instance.
 // ══════════════════════════════════════════════════════════════
 
-describe('Content Integrity — Missing Letters fragment + stem = real word', () => {
-  // Found via feedback: Q94 had "CIENT" but efficient needs "ICIENT"
-  // This test reconstructs every 3-letter stolen word question and
-  // checks the result is a plausible word (6+ letters, no weird chars)
-
+// 2026-06-26: missingLettersWords regenerated to authentic GL Type 7 (Sue
+// Medley + Evie feedback; web-confirmed format in
+// research/gl-topic-research/missing-letters-words.md). The authentic item is a
+// SENTENCE with ONE word in FULL CAPITALS that has had three consecutive letters
+// removed (NO gap markers). The child finds the removed three-letter word. These
+// invariants derive the host word from the explanation ("...make HOSTWORD...")
+// and the mutilated word from the single ALL-CAPS token in the question, then
+// pin the reconstruction. (Real-word validity + no-second-answer were verified
+// at authoring time against a 274k-word dictionary by
+// scripts/validation/validate-missing-letters.js — that needs a dep we don't
+// ship, so this pins structure only.)
+describe('Missing Letters & Words — authentic GL invariants', () => {
   const questions = getTopicQuestions(vrData, 'missingLettersWords');
 
-  it('every 3-letter stolen word question produces a valid-looking complete word', () => {
-    const problems = [];
-    questions.forEach(q => {
-      if (!q.question) return;
-      // Match pattern: ( _ _ _ ) STEM or STEM ( _ _ _ )
-      const frontMatch = q.question.match(/\( _ _ _ \)\s*([A-Z]+)/);
-      const backMatch = q.question.match(/([A-Z]+)\s*\( _ _ _ \)/);
-      if (!frontMatch && !backMatch) return;
+  // Pull the ONE all-caps (>=2 letters) token from the question = the mutilated word.
+  const capsToken = (str) => {
+    const m = String(str || '').match(/\b[A-Z]{2,}\b/g) || [];
+    return m;
+  };
 
-      const stem = frontMatch ? frontMatch[1] : backMatch[1];
-      const answer = q.options?.[q.correct];
-      if (!answer || answer.length !== 3) return;
-      // Skip if stem is too short (single-letter gap questions use different format)
-      if (stem.length < 4) return;
+  it('has a full bank', () => {
+    expect(questions.length).toBeGreaterThan(100);
+  });
 
-      const fullWord = frontMatch
-        ? answer.toUpperCase() + stem
-        : stem + answer.toUpperCase();
+  it('every question is sentence-embedded with NO gap markers', () => {
+    const bad = questions.filter(q =>
+      !q.question || /[_]|\( ?_/.test(q.question) || !/CAPITALS/.test(q.question)
+    );
+    expect(bad.map(q => `${q.id}: ${q.question}`)).toEqual([]);
+  });
 
-      // Basic checks: should be 6+ letters, all alpha, no repeated fragments
-      if (fullWord.length < 6) {
-        problems.push(`Q${q.id}: ${answer} + ${stem} = ${fullWord} (too short)`);
-      }
-      if (/(.)\1{3,}/.test(fullWord)) {
-        problems.push(`Q${q.id}: ${answer} + ${stem} = ${fullWord} (suspicious repeated chars)`);
-      }
-
-      // Check the explanation mentions the full word
-      if (q.explanation) {
-        const fullWordLower = fullWord.toLowerCase();
-        const explanationLower = q.explanation.toLowerCase();
-        if (!explanationLower.includes(fullWordLower) &&
-            !explanationLower.includes(fullWordLower.charAt(0).toUpperCase() + fullWordLower.slice(1))) {
-          problems.push(`Q${q.id}: ${fullWord} not found in explanation`);
-        }
-      }
+  it('every question has exactly one ALL-CAPS mutilated word', () => {
+    // The stem itself contains "CAPITALS" — strip that token before counting.
+    const bad = questions.filter(q => {
+      const toks = capsToken(q.question).filter(t => t !== 'CAPITALS');
+      return toks.length !== 1;
     });
-    if (problems.length) console.log('Fragment+stem issues:', problems);
-    expect(problems).toEqual([]);
+    expect(bad.map(q => `${q.id}: ${JSON.stringify(capsToken(q.question))}`)).toEqual([]);
+  });
+
+  it('every item has 5 three-letter options, valid correct index, ✓ explanation', () => {
+    const bad = questions.filter(q => {
+      if (!Array.isArray(q.options) || q.options.length !== 5) return true;
+      if (q.options.some(o => !/^[A-Z]{3}$/.test(o))) return true;
+      if (new Set(q.options).size !== 5) return true;
+      if (typeof q.correct !== 'number' || q.correct < 0 || q.correct > 4) return true;
+      if (!/✓\s*$/.test(q.explanation || '')) return true;
+      return false;
+    });
+    expect(bad.map(q => `${q.id}`)).toEqual([]);
+  });
+
+  it('the keyed 3-letter answer reconstructs the host word into the mutilated word', () => {
+    const bad = [];
+    questions.forEach(q => {
+      const m = q.explanation && q.explanation.match(/makes?\s+([A-Z]{4,})/);
+      if (!m) { bad.push(`${q.id}: cannot parse host word from explanation`); return; }
+      const host = m[1].toUpperCase();
+      const answer = (q.options?.[q.correct] || '').toUpperCase();
+      const caps = capsToken(q.question).filter(t => t !== 'CAPITALS')[0] || '';
+      if (answer.length !== 3) { bad.push(`${q.id}: answer "${answer}" not 3 letters`); return; }
+      if (host.length !== caps.length + 3) { bad.push(`${q.id}: len(${host})!=len(${caps})+3`); return; }
+      if (!host.includes(answer)) { bad.push(`${q.id}: "${answer}" not in "${host}"`); return; }
+      // removing `answer` at some position of host yields the mutilated caps word
+      let ok = false;
+      for (let i = 0; i + 3 <= host.length; i++) {
+        if (host.slice(i, i + 3) === answer && host.slice(0, i) + host.slice(i + 3) === caps) ok = true;
+      }
+      if (!ok) bad.push(`${q.id}: removing "${answer}" from "${host}" does not give "${caps}"`);
+    });
+    expect(bad).toEqual([]);
+  });
+
+  it('no host word appears more than twice', () => {
+    const counts = {};
+    questions.forEach(q => {
+      const m = q.explanation && q.explanation.match(/makes?\s+([A-Z]{4,})/);
+      if (m) counts[m[1].toUpperCase()] = (counts[m[1].toUpperCase()] || 0) + 1;
+    });
+    const overused = Object.entries(counts).filter(([, c]) => c > 2).map(([w, c]) => `${w}: ${c}`);
+    expect(overused).toEqual([]);
   });
 });
 

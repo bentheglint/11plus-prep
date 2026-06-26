@@ -442,7 +442,7 @@ const vrTips = [
     explanation: "If vowels didn't work, these five consonants appear in more words than any others. 'S' especially — it can turn almost any word into a plural! Try these before rare letters like X or Q.",
     tryThis: "Make a mental list: A-E-I-O-U then T-S-R-N-L. Go through them in that order every time. You'll rarely need to go further!",
     colour: '#7C3AED',
-    topicKeys: ['sharedLetter', 'missingLettersWords'],
+    topicKeys: ['sharedLetter'],
   },
   {
     id: 'vr-synonym-multiple-meanings',
