@@ -584,6 +584,57 @@ details[open] .faq-item__icon{
 ._ps-bar-last-no-border-r:last-child{border-right-width:0}
 ._ps-bar-text-primary{color:#7C3AED}
 
+/* ── Passage questions ─────────────────────────────────────────────── */
+.q-passage{
+  margin:0 1.25rem 0.85rem;
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-left:3px solid var(--primary-light);
+  border-radius:0.75rem;
+  padding:1rem 1.25rem;
+}
+.q-passage__title{
+  font-size:0.8rem;
+  font-weight:700;
+  color:var(--primary);
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  margin-bottom:0.6rem;
+}
+.q-passage p{
+  font-size:0.9rem;
+  color:var(--text-secondary);
+  line-height:1.7;
+}
+.q-passage p+p{margin-top:0.6rem}
+
+/* ── Error-spotting segments ──────────────────────────────────────── */
+.q-segments{
+  margin:0 1.25rem 0.85rem;
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-radius:0.75rem;
+  padding:0.85rem 1.25rem;
+  font-size:0.975rem;
+  line-height:2;
+  color:var(--text);
+}
+.q-segment{display:inline}
+.q-segment__label{
+  font-size:0.65rem;
+  font-weight:700;
+  color:var(--primary);
+  vertical-align:super;
+  margin-right:0.1rem;
+}
+.seg--error{
+  background:rgba(239,68,68,0.1);
+  border-bottom:2px solid #EF4444;
+  border-radius:2px;
+  padding:0 2px;
+}
+.seg--error .q-segment__label{color:#DC2626}
+
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media(max-width:480px){
   .hero__cta{display:block;text-align:center}
@@ -742,6 +793,11 @@ details[open] .faq-item__icon{
         "@type": "WebPage",
         "name": "11+ Maths Practice (GL Assessment)",
         "url": "https://prepstep.co.uk/practice/maths"
+      },
+      {
+        "@type": "WebPage",
+        "name": "11+ English Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/english"
       }
     ]
   },
@@ -798,7 +854,7 @@ details[open] .faq-item__icon{
           <span class="section-label__line"></span>
         </p>
         <h2 class="section-heading" id="subjects-heading">Choose a Subject</h2>
-        <p class="skills-intro">GL Assessment 11+ papers cover three subjects. Maths practice is available now, with English and Verbal Reasoning coming soon.</p>
+        <p class="skills-intro">GL Assessment 11+ papers cover three subjects. Maths and English practice are available now, with Verbal Reasoning coming soon.</p>
         <div class="subject-grid">
 
           <!-- Maths (live) -->
@@ -809,13 +865,13 @@ details[open] .faq-item__icon{
             <span class="subject-card__badge subject-card__badge--live">Live &middot; 16 topics</span>
           </a>
 
-          <!-- English (coming soon) -->
-          <div class="subject-card subject-card--disabled" aria-label="11+ English practice questions, coming soon" role="article">
+          <!-- English (live) -->
+          <a class="subject-card" href="/practice/english" aria-label="11+ English practice questions">
             <p class="subject-card__eyebrow subject-card__eyebrow--english">English</p>
             <h3 class="subject-card__title">11+ English</h3>
             <p class="subject-card__desc">Comprehension, vocabulary, grammar, spelling and punctuation in GL Assessment format. Worked explanations for every question.</p>
-            <span class="subject-card__badge subject-card__badge--soon">Coming soon</span>
-          </div>
+            <span class="subject-card__badge subject-card__badge--live">Live &middot; 6 topics</span>
+          </a>
 
           <!-- Verbal Reasoning (coming soon) -->
           <div class="subject-card subject-card--disabled" aria-label="11+ Verbal Reasoning practice questions, coming soon" role="article">

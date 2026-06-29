@@ -584,6 +584,57 @@ details[open] .faq-item__icon{
 ._ps-bar-last-no-border-r:last-child{border-right-width:0}
 ._ps-bar-text-primary{color:#7C3AED}
 
+/* ── Passage questions ─────────────────────────────────────────────── */
+.q-passage{
+  margin:0 1.25rem 0.85rem;
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-left:3px solid var(--primary-light);
+  border-radius:0.75rem;
+  padding:1rem 1.25rem;
+}
+.q-passage__title{
+  font-size:0.8rem;
+  font-weight:700;
+  color:var(--primary);
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  margin-bottom:0.6rem;
+}
+.q-passage p{
+  font-size:0.9rem;
+  color:var(--text-secondary);
+  line-height:1.7;
+}
+.q-passage p+p{margin-top:0.6rem}
+
+/* ── Error-spotting segments ──────────────────────────────────────── */
+.q-segments{
+  margin:0 1.25rem 0.85rem;
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-radius:0.75rem;
+  padding:0.85rem 1.25rem;
+  font-size:0.975rem;
+  line-height:2;
+  color:var(--text);
+}
+.q-segment{display:inline}
+.q-segment__label{
+  font-size:0.65rem;
+  font-weight:700;
+  color:var(--primary);
+  vertical-align:super;
+  margin-right:0.1rem;
+}
+.seg--error{
+  background:rgba(239,68,68,0.1);
+  border-bottom:2px solid #EF4444;
+  border-radius:2px;
+  padding:0 2px;
+}
+.seg--error .q-segment__label{color:#DC2626}
+
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media(max-width:480px){
   .hero__cta{display:block;text-align:center}

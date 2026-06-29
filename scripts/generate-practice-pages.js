@@ -41,7 +41,14 @@ registerJSX();
 const React          = require('react');
 const ReactDOMServer = require('react-dom/server');
 const mathsData      = require(path.join(ROOT, 'src/questionData/mathsData')).default;
+const englishData    = require(path.join(ROOT, 'src/questionData/englishData')).default;
 const visuals        = require(path.join(ROOT, 'src/microLessons/visuals'));
+
+// Dataset registry: keyed by the subject string used in TOPICS_CONFIG entries.
+const DATASETS = {
+  maths:   mathsData,
+  english: englishData,
+};
 
 // ── 4. Topic configuration ────────────────────────────────────────────────────
 //    Each entry defines which questions to show and the Oracle-written content.
@@ -1361,6 +1368,487 @@ The reassuring part is that ratio rests on one core routine: add the parts, divi
       ogDescription: 'Free ratio and proportion practice for the GL Assessment 11+: sharing, simplifying, scaling and recipes. Five-option questions with worked answers.',
     },
   },
+
+  // ── ENGLISH: COMPREHENSION ────────────────────────────────────────────────
+  comprehension: {
+    subject:      'english',
+    subjectLabel: 'English',
+    topicKey:     'comprehension',
+    slug:         'comprehension',
+    topicLabel:   'Comprehension',
+    canonical:    'https://prepstep.co.uk/practice/english/comprehension',
+    questionIds:  [48],
+
+    intro: `Reading comprehension is the single biggest part of the GL Assessment 11+ English paper, worth around half of all the marks. In a typical paper your child reads one continuous passage of roughly 500 words (about two pages) and then answers somewhere between 13 and 18 questions on it, so strong comprehension does more to lift an English score than any other skill.
+
+GL tests comprehension entirely through multiple choice, with five options (A to E) marked on a separate answer sheet. The questions are mixed deliberately rather than grouped by type: a retrieval question about a single fact might sit right next to one asking your child to read between the lines, work out what a word means in context, or spot a simile. The passage is usually pitched a year or two above your child's age, often drawn from published fiction, non-fiction or poetry, which is why wide reading matters so much.
+
+On this page your child practises the real thing: one passage with one carefully built question at a time, in the exact five-option format GL uses. That is a gentler, more focused way to grow the skill than a full timed paper, and every question comes with a worked explanation so your child learns why the right answer is right, not just what it is.`,
+
+    topicBreakdown: {
+      intro: `A GL comprehension section mixes several reading skills together; GL does not publish exact weightings, so the order below is our research estimate from analysing practice papers, in rough order of how often each appears:`,
+      items: [
+        `Information retrieval (finding facts directly stated in the passage): the most common skill, an estimated 35 to 45% of questions`,
+        `Inference and deduction (reading between the lines, working out what is implied): an estimated 20 to 30%, and the skill that most separates the strongest candidates`,
+        `Vocabulary in context (working out what a word means from the surrounding text): an estimated 15 to 20%`,
+        `Literary devices and language (spotting similes, metaphors, personification and their effect): an estimated 5 to 10%`,
+        `Word class identification (naming a word as a noun, verb, adjective, adverb and so on): an estimated 5 to 10%`,
+        `Author's purpose and tone (why the author wrote it a certain way, the overall mood): an estimated 3 to 5%`,
+        `Summary and main idea (capturing the key point of a section or the whole passage): an estimated 2 to 5%`,
+      ],
+      footnote: `Difficulty runs from straightforward retrieval, where the answer is almost quoted in the text, up to deep inference and author's-craft questions that need your child to weigh several "best answer" options, all pitched at a reading level above Year 6.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Picking an option just because it contains words from the passage.`,
+        tip:  `GL deliberately uses familiar passage words in wrong answers that actually reply to a different question. Teach your child to check the option answers the exact question asked, not just that it "looks like" the text.`,
+      },
+      {
+        lead: `Reading inference questions too literally.`,
+        tip:  `When a question asks how a character feels or what something suggests, the surface fact is rarely the answer. Encourage your child to ask "what does this tell me that the text does not say outright?" before choosing.`,
+      },
+      {
+        lead: `Answering from outside knowledge instead of the passage.`,
+        tip:  `Every answer must be provable from the text in front of them. If a child knows something is true in real life but the passage does not support it, it is the wrong choice here.`,
+      },
+      {
+        lead: `Grabbing the first answer that looks right.`,
+        tip:  `GL often hides a more precise option further down the list and places a tempting "too obvious" answer first. Train your child to read all five options before committing and pick the best supported one.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is reading comprehension in the GL 11+ English exam?`,
+        a: `It is the part of the GL Assessment 11+ English paper where your child reads a passage of around 500 words and answers multiple-choice questions on it. The questions test whether they can find facts, infer meaning, understand vocabulary in context, and recognise the author's techniques. It is worth roughly half of all the marks in the English paper.`,
+      },
+      {
+        q: `How is comprehension tested in the GL 11+ exam?`,
+        a: `Entirely through multiple choice, with five options (A to E) marked on a separate answer sheet. Your child reads one passage and then answers between 13 and 18 questions on it. The question types are mixed together rather than grouped, so a child has to switch between finding facts, inferring meaning and spotting language techniques as they go.`,
+      },
+      {
+        q: `How many comprehension questions are in the GL 11+ English paper?`,
+        a: `A typical paper has between 13 and 18 comprehension questions on a single passage, out of about 49 questions in the whole 45-minute English paper. That makes comprehension the largest single block and the one most worth practising. The exact number varies from one sitting to the next.`,
+      },
+      {
+        q: `What is the hardest part of GL comprehension?`,
+        a: `Inference is the most challenging and the most discriminating skill. These questions are never answered word-for-word in the text, so your child has to combine clues from different sentences to reach a conclusion. Children who can find facts but cannot read between the lines tend to plateau, which is why inference deserves the most practice.`,
+      },
+      {
+        q: `How can my child improve at comprehension for the 11+?`,
+        a: `Wide, regular reading of fiction, non-fiction and poetry is the single most effective preparation, ideally a little above their comfortable level. Alongside that, practising GL-format multiple-choice questions builds familiarity with the distractor traps and the "best answer" style. Free PrepStep practice gives one passage and question at a time with a worked explanation, so understanding grows steadily.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Reading Comprehension Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ reading comprehension practice for the GL Assessment. Passage-based five-option questions with worked explanations. Around half the English paper.`,
+      ogTitle:       `11+ Reading Comprehension Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ comprehension practice: real passages, five-option questions, worked explanations. The biggest part of the English paper, made approachable.`,
+    },
+  },
+
+  // ── ENGLISH: SPELLING ─────────────────────────────────────────────────────
+  spelling: {
+    subject:      'english',
+    subjectLabel: 'English',
+    topicKey:     'spelling',
+    slug:         'spelling',
+    topicLabel:   'Spelling',
+    canonical:    'https://prepstep.co.uk/practice/english/spelling',
+    questionIds:  [11, 14, 3, 17, 7],
+
+    intro: `Spelling makes up roughly 4 to 8 questions in a typical GL Assessment 11+ English paper, and sits inside the Technical English section (spelling, punctuation and grammar) that is worth around half of the whole paper. Those marks are some of the most winnable in the exam, because spelling rewards steady, systematic practice more than any other English skill.
+
+GL almost never asks a child to spell a word from scratch. Instead it uses an error-spotting format: a sentence is split into four labelled sections (A, B, C and D), with a fifth option for "No mistake". Your child reads the whole sentence and decides which section contains the misspelled word, or chooses "No mistake" if every word is correct. The mistakes are always realistic ones children genuinely make, never random jumbles, so the skill is careful proof-reading rather than guesswork.
+
+This is a very learnable format. Once a child knows the high-frequency tricky words and the common spelling patterns GL tests, they spot the errors quickly and confidently. Every question on this page follows that exact four-section structure with a worked explanation, so your child learns the rule behind each answer.`,
+
+    topicBreakdown: {
+      intro: `GL spelling questions cluster around a handful of patterns; GL does not publish exact weightings, so the order below is our research estimate from analysing practice papers and tutor materials, in rough order of frequency:`,
+      items: [
+        `Homophones and near-homophones (their/there/they're, practice/practise, complement/compliment): an estimated 20%`,
+        `Suffixes and word endings (-tion/-sion/-cian, -ible/-able, -ous, -ence/-ance): an estimated 20%`,
+        `Silent or unstressed letters (Wednesday, February, parliament, government): an estimated 12%`,
+        `Double letters (accommodate, recommend, necessary, embarrass): an estimated 12%`,
+        `The ie/ei patterns (receive, believe, achieve, plus the "weird" exceptions): an estimated 8%`,
+        `Prefixes (dis-, mis-, un-, in-, il-, ir-, im-): an estimated 8%`,
+        `Commonly misspelled words (separate, definitely, occurrence): an estimated 8%`,
+        `Plurals and verb forms (-ies/-eys, irregular plurals, dropping or keeping the e): an estimated 7%`,
+      ],
+      footnote: `Difficulty runs from high-frequency Year 3 to 4 words with an obvious error, up to less common Year 5 to 6 words where the wrong spelling is a genuine real-world slip and several correct words look tricky on purpose.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Assuming there must always be an error.`,
+        tip:  `Around 15 to 20% of GL spelling questions are correctly spelled, with "No mistake" as the right answer. Teach your child that "No mistake" is a real, common answer, so they check every section rather than forcing an error that is not there.`,
+      },
+      {
+        lead: `Only checking the longest or hardest-looking word.`,
+        tip:  `GL often hides the error in an ordinary word and surrounds it with tricky but correct ones to create doubt. Encourage your child to proof-read all four sections word by word, not just the one that looks difficult.`,
+      },
+      {
+        lead: `Spelling by ear and dropping unstressed syllables.`,
+        tip:  `Words like interesting, temperature and February are misspelled because the middle sound is swallowed in speech (intresting, Febuary). Get your child to sound out every syllable, especially the quiet middle ones.`,
+      },
+      {
+        lead: `Confusing homophones because the spelling sounds correct.`,
+        tip:  `their/there/they're, practice/practise and complement/compliment all sound right but mean different things. Teach your child to check the meaning in the sentence, not just whether the word sounds like the one intended.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `How is spelling tested in the GL 11+ English exam?`,
+        a: `GL uses an error-spotting format. A sentence is split into four sections (A to D), with a fifth option for "No mistake". Your child decides which section contains a misspelled word, or chooses "No mistake" if all the spellings are correct. It is multiple choice, marked on a separate answer sheet, and there is one misspelling per sentence at most.`,
+      },
+      {
+        q: `What does "No mistake" mean in GL spelling questions?`,
+        a: `It is the fifth option, used when every word in the sentence is spelled correctly. Roughly 15 to 20% of GL spelling questions have "No mistake" as the correct answer, and it appears more often in the harder questions. It exists to stop children assuming there is always an error to find, so it is worth practising deliberately.`,
+      },
+      {
+        q: `Which words are most commonly tested in GL 11+ spelling?`,
+        a: `GL leans on a well-known set of tricky Year 5 to 6 words, including accommodate, necessary, separate, definitely, embarrass, government, environment, immediately, occurrence, rhythm, mischievous, pronunciation and parliament. Homophones such as their/there/they're and practice/practise come up regularly too. Learning these high-frequency words gives the quickest gains.`,
+      },
+      {
+        q: `How hard is spelling in the GL 11+ exam?`,
+        a: `Difficulty ranges from common words with an obvious error, which a child who reads regularly spots instantly, up to less common words where just one letter is wrong and the misspelling is a genuine common slip. The hardest questions surround the error with correctly spelled but tricky-looking words to create doubt, and use "No mistake" more often.`,
+      },
+      {
+        q: `How can my child practise spelling for the 11+?`,
+        a: `Practise in the real GL error-spotting format rather than just writing out spelling lists, so your child gets used to proof-reading four sections and considering "No mistake". Focus first on the highest-frequency patterns: homophones, common word endings, and the well-known tricky words. Free PrepStep practice presents each question in the exact GL format with a worked explanation.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Spelling Practice for the GL Assessment | PrepStep`,
+      description:   `Free 11+ spelling practice for the GL Assessment in the real error-spotting format: four sections plus "No mistake", five options, worked explanations.`,
+      ogTitle:       `11+ Spelling Practice for the GL Assessment | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ spelling practice in the real error-spotting format (four sections plus "No mistake"). Worked explanations on every question.`,
+    },
+  },
+
+  // ── ENGLISH: PUNCTUATION ──────────────────────────────────────────────────
+  punctuation: {
+    subject:      'english',
+    subjectLabel: 'English',
+    topicKey:     'punctuation',
+    slug:         'punctuation',
+    topicLabel:   'Punctuation',
+    canonical:    'https://prepstep.co.uk/practice/english/punctuation',
+    questionIds:  [1, 2, 3, 10, 20],
+
+    intro: `Punctuation accounts for roughly 4 to 8 questions in a typical GL Assessment 11+ English paper, about 16% of the total English marks, and sits within the Technical English section alongside spelling and grammar. Like spelling, these are highly winnable marks because punctuation rewards knowing a clear set of rules and applying them carefully.
+
+GL tests punctuation with the same error-spotting format as spelling: a sentence is split into four labelled sections (A, B, C and D), with a fifth option for "No mistake". Your child reads the whole sentence and identifies which section contains a punctuation error, or chooses "No mistake" if it is all correct. There is at most one error per sentence, and the mistakes are always ones children genuinely make, such as a missing apostrophe, a misplaced comma or speech punctuation in the wrong place.
+
+The skill here is careful proof-reading combined with knowing the rules, and that is very teachable. Once a child is secure on apostrophes, commas and speech punctuation, the great majority of GL questions become straightforward. Every question on this page uses the exact four-section format with a worked explanation, so your child learns the rule behind each answer.`,
+
+    topicBreakdown: {
+      intro: `GL punctuation questions concentrate on a few high-value areas; GL does not publish exact weightings, so the order below is our research estimate from analysing practice papers and tutor materials, in rough order of frequency:`,
+      items: [
+        `Apostrophes (possession, contractions, and the its/it's trap): the most common area, an estimated 25 to 30%`,
+        `Commas (lists, fronted adverbials, subordinate clauses, comma splices): an estimated 20 to 25%`,
+        `Speech punctuation (speech marks, the comma before speech, capitals and punctuation inside the marks): an estimated 15 to 20%`,
+        `Sentence-ending punctuation (full stops, question marks, exclamation marks in the right place): an estimated 10 to 12%`,
+        `Capital letters (sentence starts, proper nouns, the pronoun "I", days and months): an estimated 8 to 10%`,
+        `Colons and semicolons (introducing a list, joining two complete sentences): an estimated 5 to 8%`,
+        `Brackets, dashes and hyphens (parenthesis, and hyphens that remove ambiguity): an estimated 3 to 5%`,
+      ],
+      footnote: `Difficulty runs from Year 2 to 4 basics, such as a missing capital or full stop, up to Year 5 to 6 punctuation (colons, semicolons, hyphens and parenthetical dashes) that the National Curriculum only introduces, so even strong children can be unsure, and "No mistake" appears more often at this level.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Putting an apostrophe in "its" to show possession.`,
+        tip:  `its (the dog wagged its tail) never takes an apostrophe; it's always and only means "it is" or "it has". Children over-apply the "apostrophe equals possession" rule. Teach the one fixed test: replace it's with "it is" and see if the sentence still works.`,
+      },
+      {
+        lead: `Adding an apostrophe to an ordinary plural.`,
+        tip:  `"The dogs ran" needs no apostrophe; "the dog's ran" is wrong. GL deliberately places plain plurals near possessive constructions to trigger this slip. Encourage your child to ask whether the word shows ownership before adding an apostrophe.`,
+      },
+      {
+        lead: `Joining two sentences with just a comma.`,
+        tip:  `"She was tired, she went to bed" is a comma splice and a common GL error. Two complete sentences need a conjunction (so, and, but), a semicolon, or a full stop. Warn your child off the "comma wherever you pause" habit, which causes this.`,
+      },
+      {
+        lead: `Assuming every sentence contains an error.`,
+        tip:  `Around 15 to 20% of GL punctuation questions are correct, with "No mistake" as the answer, often a sentence with a correctly used semicolon or possessive pronoun (theirs, whose) that looks suspicious. Teach your child that correctly placed tricky punctuation is not an error.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `How is punctuation tested in the GL 11+ English exam?`,
+        a: `GL uses an error-spotting format. A sentence is split into four sections (A to D), with a fifth option for "No mistake". Your child decides which section contains a punctuation error, or chooses "No mistake" if the sentence is correctly punctuated. It is multiple choice on a separate answer sheet, with at most one error per sentence.`,
+      },
+      {
+        q: `What punctuation does my child need to know for the GL 11+?`,
+        a: `The biggest areas are apostrophes (possession, contractions and the its/it's trap) and commas (lists, fronted adverbials, subordinate clauses and comma splices), followed by speech punctuation. Capital letters and sentence-ending marks come up too. The hardest questions test Year 6 marks such as colons, semicolons and hyphens, which schools only introduce.`,
+      },
+      {
+        q: `What is the most common punctuation mistake GL tests?`,
+        a: `Apostrophe errors are the most heavily tested, and the its/it's confusion is the classic trap. "Its" (possessive) never takes an apostrophe, while "it's" always means "it is" or "it has". GL also frequently tests apostrophes wrongly added to plain plurals and missing from possessives, so apostrophes are the highest-value area to master.`,
+      },
+      {
+        q: `How hard is punctuation in the GL 11+ exam, and what year is it from?`,
+        a: `It spans the curriculum. Easier questions test Year 2 to 4 basics that should be automatic, such as a missing capital or full stop. Harder questions test Year 5 to 6 marks (colons, semicolons, hyphens and parenthetical dashes) that the National Curriculum only introduces rather than expects mastery of, so GL uses them to stretch the strongest children.`,
+      },
+      {
+        q: `How can my child practise punctuation for the 11+?`,
+        a: `Practise in the real GL error-spotting format, including "No mistake" questions, rather than just learning rules in isolation. Prioritise apostrophes, commas and speech punctuation, since together they make up most of the marks. Free PrepStep practice presents each question in the exact GL four-section format with a worked explanation of the rule.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Punctuation Practice for the GL Assessment | PrepStep`,
+      description:   `Free 11+ punctuation practice for the GL Assessment in the real error-spotting format: four sections plus "No mistake", five options, worked explanations.`,
+      ogTitle:       `11+ Punctuation Practice for the GL Assessment | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ punctuation practice in the real error-spotting format (four sections plus "No mistake"). Worked explanations on every question.`,
+    },
+  },
+
+  // ── ENGLISH: GRAMMAR ──────────────────────────────────────────────────────
+  grammar: {
+    subject:      'english',
+    subjectLabel: 'English',
+    topicKey:     'grammar',
+    slug:         'grammar',
+    topicLabel:   'Grammar',
+    canonical:    'https://prepstep.co.uk/practice/english/grammar',
+    questionIds:  [1, 2, 3, 6, 8],
+
+    intro: `In the GL Assessment 11+ English paper, applied grammar is tested most directly in the cloze, or sentence-completion, section, where your child picks the single grammatically correct word to fill each gap. We estimate around 8 of the paper's roughly 49 questions take this form. Counted right across the paper (those gap-fill questions, the grammar-terminology questions, and grammar tested through punctuation), grammar is arguably the single largest skill area in GL English, close to two questions in every five. These weightings are our research estimates from analysing GL practice papers, not figures GL publishes.
+
+This page focuses on general grammar: choosing the correct verb tense, keeping the subject and verb in agreement, picking the right connecting word, and getting homophones right in context. That makes it different from our vocabulary page, which tests what words mean, and from our word class page, which tests naming the job a word does. Grammar is about how words fit together correctly. The English paper runs to about 45 to 50 minutes and is entirely multiple choice, with five options (A to E) for every gap-fill question, and answers marked on a separate bubble sheet.
+
+The reassuring news for parents is that grammar rewards clear rules over guesswork. GL reuses the same handful of traps year after year (its versus it's, could have versus could of, irregular past tenses), so once a child learns to test rather than rely on what simply sounds right, these become some of the most dependable marks on the paper.`,
+
+    topicBreakdown: {
+      intro: `Grammar gap-fill questions are always multiple-choice, five options (A to E). GL does not publish category breakdowns, so the order below is our informed estimate from analysing practice papers. In rough order of frequency, expect:`,
+      items: [
+        `Homophones in context (around 25%): their/there/they're, to/too/two, its/it's, who's/whose, where/were/wear, chosen by meaning, not sound.`,
+        `Verb tenses and forms (around 25%): keeping tense consistent, and irregular past tenses and past participles (chose/chosen, wrote/written, did/done).`,
+        `Modal and auxiliary verbs (around 12 to 15%): should have not "should of", might have, could have.`,
+        `Conjunctions and connectives (around 10 to 12%): but, because, although, so, however, choosing the one that fits the logical link.`,
+        `Prepositions (around 8 to 10%): of, off, from, to, by, the subtle choices inside fixed phrases (for example "different from").`,
+        `Comparatives and superlatives (around 5 to 8%): good/better/best, taller (two things) versus tallest (three or more).`,
+        `Subject-verb agreement: a fundamental skill that surfaces across the whole paper (for example "the box of chocolates is", not "are").`,
+        `Passive voice, formal register and the subjunctive: Year 6 content that appears only in the hardest questions.`,
+      ],
+      footnote: `Difficulty runs from easy single-gap homophones (D1) through irregular tenses and connective choices (D2) up to passive voice, the subjunctive and tense consistency across a whole passage (D3). Most of this is Year 5 and Year 6 curriculum, with passive voice and the subjunctive sitting at the top of the Year 6 expectations.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Confusing its and it's.`,
+        tip:  `This is the single most common grammar trap across GL papers. "It's" only ever means "it is" or "it has"; "its" shows possession and never takes an apostrophe. Tell your child to read the sentence with "it is" swapped in: if it still makes sense, choose "it's".`,
+      },
+      {
+        lead: `Writing "could of" instead of "could have".`,
+        tip:  `"Could of" is never correct, it just sounds like the contraction "could've". The same goes for "should of" and "would of". The rule is always could have, should have, would have, followed by the past participle.`,
+      },
+      {
+        lead: `Treating each gap on its own.`,
+        tip:  `The cloze passage is one continuous story, usually in the past tense. A child who answers each blank in isolation slips into the present tense partway through. Encourage reading the whole passage first to lock in the tense before choosing any answers.`,
+      },
+      {
+        lead: `Muddling past simple and past participle.`,
+        tip:  `"I done it" and "I seen it" sound normal in speech but are wrong in writing (did, saw). GL loves irregular verbs where the two forms differ (do/did/done, see/saw/seen, write/wrote/written). Learn these as a trio so the right form comes automatically.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What grammar is tested in the GL 11+ English exam?`,
+        a: `GL tests homophones in context, verb tenses and forms, subject-verb agreement, modal verbs, conjunctions, prepositions, comparatives and superlatives, and at the hardest level the passive voice and subjunctive. Most of it appears in the cloze (sentence-completion) section, where children choose the one correct word to fill a gap. Every question is multiple choice with five options (A to E).`,
+      },
+      {
+        q: `What is a cloze or sentence-completion question?`,
+        a: `It is a short passage with words missing, where each gap offers five options and the child picks the grammatically correct one. The options are usually all real words, so the child has to apply a rule rather than guess. Because the passage reads as one continuous story, the tense and meaning of earlier sentences often decide the right answer later on.`,
+      },
+      {
+        q: `Why does my child keep getting its and it's wrong?`,
+        a: `It is the most common grammar error in the whole paper, because children are taught that an apostrophe shows possession and then wrongly add one to "its". In fact "it's" only ever means "it is" or "it has". The quickest fix is the swap test: read the sentence with "it is" in place, and if it makes sense the answer is "it's".`,
+      },
+      {
+        q: `What year is this grammar taught for the 11+?`,
+        a: `Most of it is Year 5 and Year 6 curriculum content, covered in school as part of grammar, punctuation and spelling (GPS). Homophones, tenses and agreement are taught earlier and consolidated by Year 6, while the passive voice and subjunctive are new in Year 6. As GL exams are often sat at the start of Year 6, a little practice ahead of school teaching helps.`,
+      },
+      {
+        q: `How can my child practise grammar for the GL 11+?`,
+        a: `Use timed, five-option questions that mirror the real cloze format, and target the highest-frequency skills first: homophones in context and verb tenses. Drill the famous traps (its/it's, could have not could of, did/done) until the correct form is automatic, and teach the habit of testing a sentence rather than relying on what sounds right.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Grammar Practice Questions (GL Assessment) | PrepStep`,
+      description:   `Free GL Assessment 11+ grammar practice: tenses, agreement, homophones and connectives in five-option format, with worked answers and the traps GL repeats.`,
+      ogTitle:       `11+ Grammar Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ grammar practice: tenses, agreement, homophones and connectives in five-option format, with worked answers and the traps GL repeats.`,
+    },
+  },
+
+  // ── ENGLISH: VOCABULARY ───────────────────────────────────────────────────
+  vocabulary: {
+    subject:      'english',
+    subjectLabel: 'English',
+    topicKey:     'vocabulary',
+    slug:         'vocabulary',
+    topicLabel:   'Vocabulary',
+    canonical:    'https://prepstep.co.uk/practice/english/vocabulary',
+    questionIds:  [1, 2, 4, 8, 10],
+
+    intro: `Vocabulary is one of the few skills the GL Assessment 11+ tests across two of the three papers, both the English paper and the Verbal Reasoning paper, and synonym (closest-meaning) questions are the most common vocabulary type of all, an estimated 30 to 35% of vocabulary marks. That makes a strong, wide vocabulary one of the highest-yield things a child can build, because it lifts scores on two papers at once. These weightings are our research estimates from analysing GL papers and tutor resources, not figures GL publishes.
+
+This page is about what words mean: finding the closest synonym, the opposite (antonym), the best word to fill a sentence, and the meaning of a word as it is used in a passage. That makes it different from our grammar page, which tests how words fit together correctly, and from our word class page, which tests naming the job a word does. In the English paper, vocabulary appears inside the comprehension section (for example "which word is closest in meaning to X as used in line Y?") and in gap-fill questions; in Verbal Reasoning it appears as closest-meaning, opposite-meaning and double-meaning questions. Every question on PrepStep uses the standard five options (A to E), matching the real exam format.
+
+The reassuring part for parents is that vocabulary grows steadily with the right habits. Wide reading, learning words in families (prefixes, suffixes and roots), and practising the specific GL traps (like picking a word merely associated with the answer rather than its true synonym) turn vocabulary from a worry into a quiet, reliable strength.`,
+
+    topicBreakdown: {
+      intro: `Vocabulary questions are always multiple-choice, five options (A to E). GL does not publish exact weightings, so the order below is our informed estimate, and the categories overlap (one question can test more than one skill). In rough order of frequency:`,
+      items: [
+        `Synonyms and closest meaning (around 30 to 35%): the single most common type, choosing the word nearest in meaning. Tested in both English and Verbal Reasoning.`,
+        `Words in context (around 20 to 25%): the meaning of a word as it is used in a specific line of a passage, where context decides between possible meanings.`,
+        `Cloze and contextual gap-fill (around 15 to 20%): choosing the best word to complete a sentence so it reads naturally and precisely.`,
+        `Antonyms and opposite meaning (around 10 to 15%): choosing the word that means the opposite, mostly in Verbal Reasoning.`,
+        `Double meanings and polysemy (around 5 to 10%): a single word that fits two different contexts (for example "bank", "light", "trunk").`,
+        `Figurative language (around 5%): recognising similes, metaphors and personification, and reading them as meaning rather than literally.`,
+      ],
+      footnote: `Difficulty runs from common, everyday words (D1) through Year 5 and Year 6 curriculum vocabulary that needs nuance (D2, for example reluctant versus unable) up to sophisticated words, polysemy traps and fine distinctions between near-synonyms (D3, for example benevolent, ominous, understate versus undermine). The hardest questions often reward knowledge of Latin and Greek roots.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Picking a word that is merely associated, not a synonym.`,
+        tip:  `This is the classic GL vocabulary trap. For "monarch", a child grabs "crown" (associated) instead of "ruler" (the true synonym). Teach the test: a synonym should be able to replace the word in a sentence and keep the same meaning. "Crown" cannot.`,
+      },
+      {
+        lead: `Ignoring the context with multiple-meaning words.`,
+        tip:  `Words like "bark", "bank" and "light" have more than one meaning, and GL chooses the less obvious one. Always read the surrounding sentence before deciding which meaning is in play, rather than reaching for the most familiar one.`,
+      },
+      {
+        lead: `Getting the strength of a word wrong.`,
+        tip:  `"Annoyed", "cross" and "furious" all relate to anger, but they differ in degree. GL exploits this gradient. Encourage your child to match the intensity, not just the general feeling, so "furious" pairs with "enraged", not "irritated".`,
+      },
+      {
+        lead: `Settling for "close enough" instead of the best fit.`,
+        tip:  `GL often lists two options that both seem to work, and only one is the most precise. Tell your child to check every option before committing, because the answer is the closest match, not simply a reasonable one.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What vocabulary is tested in the GL 11+ exam?`,
+        a: `GL tests synonyms (closest meaning), antonyms (opposite meaning), words in context, sentence gap-fill, double meanings, and recognising figurative language. Synonyms are the most common type. Vocabulary appears in both the English paper (inside comprehension and gap-fill) and the Verbal Reasoning paper, always in multiple-choice form with five options (A to E).`,
+      },
+      {
+        q: `How can my child build vocabulary for the 11+?`,
+        a: `Wide reading is the single most powerful tool, especially classic and contemporary fiction at or slightly above your child's reading age. Alongside that, learn words in families using common prefixes, suffixes and Latin and Greek roots, and keep a notebook of new words met in reading. Regular short practice on synonym and antonym questions then turns recognition into exam speed.`,
+      },
+      {
+        q: `Is vocabulary different in the English and Verbal Reasoning papers?`,
+        a: `The underlying knowledge is the same, but the presentation differs. In English, vocabulary is usually tied to a passage ("which word is closest in meaning to X as used here?"), so context does much of the work. In Verbal Reasoning it is more often standalone (closest-meaning and opposite-meaning groups), testing whether the child simply knows the word. Practising both formats covers all of it.`,
+      },
+      {
+        q: `How important is vocabulary for the 11+?`,
+        a: `Very. It is one of the few skills tested across two of the three papers, and synonym questions alone are an estimated 30 to 35% of vocabulary marks. A strong vocabulary also speeds up comprehension, because a child who recognises difficult words reads passages faster and with more understanding, so the benefit reaches well beyond the obvious vocabulary questions.`,
+      },
+      {
+        q: `Why does my child choose the wrong word when they know what it means?`,
+        a: `Usually they have fallen for an associated word rather than a true synonym (picking "crown" for "monarch" instead of "ruler"), or they have grabbed the most familiar meaning of a word that has two. The fix is the substitution test: a correct synonym can replace the word in the sentence without changing the meaning. Reading every option before answering also catches the "close enough" trap.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Vocabulary Practice Questions (GL Assessment) | PrepStep`,
+      description:   `Free GL Assessment 11+ vocabulary practice: synonyms, antonyms and words in context in five-option format, with worked answers and the traps GL uses.`,
+      ogTitle:       `11+ Vocabulary Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ vocabulary practice: synonyms, antonyms and words in context in five-option format, with worked answers and the traps GL uses.`,
+    },
+  },
+
+  // ── ENGLISH: WORD CLASSES ─────────────────────────────────────────────────
+  wordClassGrammar: {
+    subject:      'english',
+    subjectLabel: 'English',
+    topicKey:     'wordClassGrammar',
+    slug:         'word-classes',
+    topicLabel:   'Word Classes',
+    canonical:    'https://prepstep.co.uk/practice/english/word-classes',
+    questionIds:  [2, 6, 9, 12, 14],
+
+    intro: `In the GL Assessment 11+ English paper, word class questions ask your child to name the job a word is doing: is it a noun, a verb, an adjective, an adverb, a preposition, and so on? They sit inside the comprehension section, always testing words in context rather than in isolation, and we estimate two to three of these per paper. Nouns (including sub-types such as common, proper, collective and abstract) are the most frequently tested class, an estimated 25 to 30% of word class questions. These weightings are our research estimates from analysing GL papers, not figures GL publishes.
+
+This page is about identifying and labelling parts of speech, which makes it different from our two neighbouring pages. Our grammar page tests whether words are used correctly (tenses, agreement, sentence structure), and our vocabulary page tests what words mean. Word class is the labelling skill: working out the function of a word in this particular sentence. GL asks it three ways: "what type of words are these?" (a shared class across several words), "which word is a [class]?" (pick the word from a quoted line), and occasionally identifying a sentence type. All are multiple choice with five options (A to E).
+
+The reassuring news for parents is that word class rewards a single, teachable habit: ask "what job is this word doing here?" rather than "what does this word usually look like?" GL's traps almost all spring from surface appearances (an "-ly" word that turns out to be an adjective, a state verb that does not feel like a doing word), so a child who checks function over appearance handles them calmly.`,
+
+    topicBreakdown: {
+      intro: `Word class questions are always multiple-choice, five options (A to E), and always set in the context of the comprehension passage. GL does not publish exact weightings, so the order below is our informed estimate. In rough order of frequency:`,
+      items: [
+        `Nouns, including sub-types (around 25 to 30%): common, proper, collective, abstract and concrete. GL loves making children tell these sub-types apart.`,
+        `Verbs (around 20 to 25%): including state and linking verbs (was, seemed, appeared) that do not feel like doing words.`,
+        `Adjectives (around 15 to 20%): including "-ly" adjectives such as friendly, lovely and lonely that look like adverbs.`,
+        `Adverbs (around 15 to 20%): including non-"-ly" adverbs such as soon, often, very and quite.`,
+        `Prepositions (around 10 to 15%): one of the hardest areas, especially dual-function words (round, before, by).`,
+        `Pronouns, conjunctions and determiners (around 5 to 10% combined): the less commonly tested classes.`,
+      ],
+      footnote: `Difficulty runs from obvious cases (a clear action verb, a "-ly" adverb) at D1, through abstract nouns, state verbs and prepositions at D2, up to dual-function words used in their less common class at D3 (for example "run" as a noun, "light" as an adjective, "the running water" as a participle acting like an adjective). The terminology is built up across Years 2 to 6 of the National Curriculum.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Thinking verbs are only "doing" words.`,
+        tip:  `State and linking verbs (is, was, seemed, appeared, became) are still verbs, even though nothing is being "done". Teach your child that a verb can describe a state of being, not just an action, so "seemed" is a verb, not an adjective.`,
+      },
+      {
+        lead: `Assuming any "-ly" word is an adverb.`,
+        tip:  `Many "-ly" words are adjectives: friendly, lovely, lonely, lively, likely, costly. The ending is not the test. Ask what the word is describing: if it describes a noun (a friendly dog) it is an adjective, if it describes a verb (ran quickly) it is an adverb.`,
+      },
+      {
+        lead: `Not recognising abstract nouns as nouns.`,
+        tip:  `Words like joy, freedom, courage and sadness name ideas and feelings rather than objects, so children mistake them for adjectives. The test is whether you can put "the" in front and treat it as a thing ("the courage"), which marks it as a noun.`,
+      },
+      {
+        lead: `Judging a word by its usual class, not its job here.`,
+        tip:  `Many words change class with context: "run" is usually a verb but is a noun in "a quick run", and "light" can be a noun, a verb or an adjective. Always decide the class from the word's job in this exact sentence, not from how it normally behaves.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are word class questions in the GL 11+?`,
+        a: `They ask your child to identify the job a word is doing in a sentence, such as noun, verb, adjective, adverb, pronoun, preposition or conjunction. In GL papers they sit within the comprehension section and always use words taken from the passage, so the word must be judged in context. Each question is multiple choice with five options (A to E).`,
+      },
+      {
+        q: `Which word classes does GL test most?`,
+        a: `Nouns are the most frequently tested, including sub-types such as common, proper, collective and abstract, an estimated 25 to 30% of word class questions. Verbs come next, especially state verbs that do not feel like doing words, followed by adjectives and adverbs. Prepositions are less frequent but among the hardest, because so many are dual-function words.`,
+      },
+      {
+        q: `Why is "friendly" an adjective and not an adverb?`,
+        a: `Because it describes a noun, not a verb. We say "a friendly dog" (describing the dog), so "friendly" is an adjective, even though it ends in "-ly". The "-ly" ending is a common trap: many "-ly" words (lovely, lonely, lively, costly) are adjectives. The reliable test is what the word is describing, not how it ends.`,
+      },
+      {
+        q: `What year are word classes taught for the 11+?`,
+        a: `The terminology is built up across the National Curriculum from Year 2 onwards: nouns, verbs, adjectives and adverbs early on, prepositions and conjunctions in Year 3, determiners and pronouns in Year 4, and modal and relative terms in Years 5 and 6. By the 11+ year all of it is assumed knowledge, so word class questions are fair game in full.`,
+      },
+      {
+        q: `How is this different from the grammar questions in the GL 11+?`,
+        a: `Word class is about labelling: naming the job a word does (noun, verb, adjective, and so on). The grammar questions are about correctness: choosing the right tense, agreement or connecting word to make a sentence work. They are closely related, and word class knowledge does help with grammar, but the skills are tested separately, so it is worth practising both.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Word Class Practice (GL Assessment) | PrepStep`,
+      description:   `Free GL Assessment 11+ word class practice: identify nouns, verbs, adjectives and adverbs in five-option format, with worked answers and the traps GL uses.`,
+      ogTitle:       `11+ Word Class Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ word class practice: identify nouns, verbs, adjectives and adverbs in five-option format, with worked answers and the traps GL uses.`,
+    },
+  },
+
 };
 
 // ── 5. Helpers ────────────────────────────────────────────────────────────────
@@ -1371,6 +1859,12 @@ function escHtml(str) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+/** Return the English word for small counts (1–10), otherwise the digit string. */
+function numberWord(n) {
+  const words = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+  return (n >= 1 && n <= 10) ? words[n] : String(n);
 }
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E'];
@@ -1416,8 +1910,14 @@ function renderVisual(visual) {
 
 /**
  * Render a single question card as HTML.
+ * Dispatches to a specialised renderer for non-standard question shapes.
  */
 function renderQuestionCard(q, index) {
+  // Dispatch by question shape
+  if (q.questionType === 'passage')       return renderPassageCard(q, index);
+  if (q.questionType === 'error-spotting') return renderErrorSpottingCard(q, index);
+
+  // Standard 5-option MC (incl. 'letter-codes' which is standard+optional visual)
   const visualHtml = renderVisual(q.visual);
   const visualBlock = visualHtml
     ? `<div class="q-diagram" aria-label="Diagram for question ${index + 1}">${visualHtml}</div>`
@@ -1436,8 +1936,96 @@ function renderQuestionCard(q, index) {
         <span class="q-card__num">Question ${index + 1}</span>
         <span class="diff-pill ${DIFFICULTY_CLASS[q.difficulty]}" aria-label="Difficulty: ${DIFFICULTY_LABEL[q.difficulty]}">${DIFFICULTY_LABEL[q.difficulty]}</span>
       </header>
-      <p class="q-card__stem">${escHtml(q.question)}</p>
+      <p class="q-card__stem">${escHtml(q.question).replace(/\n/g, '<br>')}</p>
       ${visualBlock}
+      <ol class="q-options" role="list">
+        ${optionsHtml}
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>${escHtml(q.explanation)}</p>
+        </div>
+      </details>
+    </article>`;
+}
+
+/**
+ * Render a passage (comprehension) question card.
+ * Shape: { id, difficulty, questionType:'passage', passageId, passageTitle,
+ *          passage (string with \n\n paragraph breaks), question, options[5],
+ *          correct (0-indexed), explanation }
+ */
+function renderPassageCard(q, index) {
+  const passTitleHtml = q.passageTitle
+    ? `<p class="q-passage__title">${escHtml(q.passageTitle)}</p>`
+    : '';
+
+  const passageParagraphsHtml = (q.passage || '')
+    .split(/\n\n+/)
+    .map(para => `<p>${escHtml(para.trim())}</p>`)
+    .join('\n        ');
+
+  const optionsHtml = q.options.map((opt, i) => {
+    const isCorrect = i === q.correct;
+    return `<li class="q-option${isCorrect ? ' q-option--correct' : ''}" ${isCorrect ? 'aria-current="true"' : ''}>
+          <span class="q-option__letter" aria-hidden="true">${LETTERS[i]}</span>
+          <span class="q-option__text">${escHtml(opt)}</span>${isCorrect ? '<span class="q-option__tick" aria-label="Correct answer">&#10003;</span>' : ''}
+        </li>`;
+  }).join('\n        ');
+
+  return `<article class="q-card" aria-label="Sample question ${index + 1}">
+      <header class="q-card__header">
+        <span class="q-card__num">Question ${index + 1}</span>
+        <span class="diff-pill ${DIFFICULTY_CLASS[q.difficulty]}" aria-label="Difficulty: ${DIFFICULTY_LABEL[q.difficulty]}">${DIFFICULTY_LABEL[q.difficulty]}</span>
+      </header>
+      <div class="q-passage">
+        ${passTitleHtml}
+        ${passageParagraphsHtml}
+      </div>
+      <p class="q-card__stem">${escHtml(q.question).replace(/\n/g, '<br>')}</p>
+      <ol class="q-options" role="list">
+        ${optionsHtml}
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>${escHtml(q.explanation)}</p>
+        </div>
+      </details>
+    </article>`;
+}
+
+/**
+ * Render an error-spotting question card.
+ * Shape: { id, difficulty, questionType:'error-spotting', question, segments[4],
+ *          options[5] (Section A/B/C/D/No mistake), correct (0-3 = that section;
+ *          4 = no mistake), explanation }
+ */
+function renderErrorSpottingCard(q, index) {
+  const SEGMENT_LETTERS = ['A', 'B', 'C', 'D'];
+  const segmentsHtml = (q.segments || []).map((seg, i) => {
+    const isError = i === q.correct;
+    return `<span class="q-segment${isError ? ' seg--error' : ''}"><sup class="q-segment__label">${SEGMENT_LETTERS[i]}</sup>${escHtml(seg)}</span>`;
+  }).join(' ');
+
+  const optionsHtml = q.options.map((opt, i) => {
+    const isCorrect = i === q.correct;
+    return `<li class="q-option${isCorrect ? ' q-option--correct' : ''}" ${isCorrect ? 'aria-current="true"' : ''}>
+          <span class="q-option__letter" aria-hidden="true">${LETTERS[i]}</span>
+          <span class="q-option__text">${escHtml(opt)}</span>${isCorrect ? '<span class="q-option__tick" aria-label="Correct answer">&#10003;</span>' : ''}
+        </li>`;
+  }).join('\n        ');
+
+  return `<article class="q-card" aria-label="Sample question ${index + 1}">
+      <header class="q-card__header">
+        <span class="q-card__num">Question ${index + 1}</span>
+        <span class="diff-pill ${DIFFICULTY_CLASS[q.difficulty]}" aria-label="Difficulty: ${DIFFICULTY_LABEL[q.difficulty]}">${DIFFICULTY_LABEL[q.difficulty]}</span>
+      </header>
+      <p class="q-card__stem">${escHtml(q.question).replace(/\n/g, '<br>')}</p>
+      <div class="q-segments">
+        ${segmentsHtml}
+      </div>
       <ol class="q-options" role="list">
         ${optionsHtml}
       </ol>
@@ -2070,6 +2658,57 @@ details[open] .faq-item__icon{
 ._ps-bar-last-no-border-r:last-child{border-right-width:0}
 ._ps-bar-text-primary{color:#7C3AED}
 
+/* ── Passage questions ─────────────────────────────────────────────── */
+.q-passage{
+  margin:0 1.25rem 0.85rem;
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-left:3px solid var(--primary-light);
+  border-radius:0.75rem;
+  padding:1rem 1.25rem;
+}
+.q-passage__title{
+  font-size:0.8rem;
+  font-weight:700;
+  color:var(--primary);
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  margin-bottom:0.6rem;
+}
+.q-passage p{
+  font-size:0.9rem;
+  color:var(--text-secondary);
+  line-height:1.7;
+}
+.q-passage p+p{margin-top:0.6rem}
+
+/* ── Error-spotting segments ──────────────────────────────────────── */
+.q-segments{
+  margin:0 1.25rem 0.85rem;
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-radius:0.75rem;
+  padding:0.85rem 1.25rem;
+  font-size:0.975rem;
+  line-height:2;
+  color:var(--text);
+}
+.q-segment{display:inline}
+.q-segment__label{
+  font-size:0.65rem;
+  font-weight:700;
+  color:var(--primary);
+  vertical-align:super;
+  margin-right:0.1rem;
+}
+.seg--error{
+  background:rgba(239,68,68,0.1);
+  border-bottom:2px solid #EF4444;
+  border-radius:2px;
+  padding:0 2px;
+}
+.seg--error .q-segment__label{color:#DC2626}
+
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media(max-width:480px){
   .hero__cta{display:block;text-align:center}
@@ -2098,6 +2737,13 @@ const TOPIC_DESCRIPTORS = {
   anglesshapes:        'Angle rules, shape properties, symmetry, nets and coordinates',
   datahandling:        'Charts, graphs, averages, pie charts and pictograms',
   speeddistancetime:   'Speed, distance and time formula, unit conversions and multi-leg journeys',
+  // English topics
+  comprehension:       'Passage-based reading: retrieval, inference, vocabulary in context and author\'s language',
+  vocabulary:          'Synonyms, antonyms, words in context and figurative language across English and VR',
+  grammar:             'Verb tenses, homophones in context, agreement and connectives in cloze format',
+  wordClassGrammar:    'Identifying nouns, verbs, adjectives, adverbs and prepositions from context',
+  spelling:            'Error-spotting across four labelled sections plus "No mistake" option',
+  punctuation:         'Apostrophes, commas, speech marks and sentence punctuation in error-spotting format',
 };
 
 // Display order for the maths hub topic grid
@@ -2106,6 +2752,11 @@ const MATHS_TOPIC_ORDER = [
   'longdivision', 'longmultiplication', 'algebra', 'ratio',
   'negativenumbers', 'primenumbersfactors', 'areaperimeter', 'volume',
   'anglesshapes', 'sequences', 'datahandling', 'speeddistancetime',
+];
+
+// Display order for the English hub topic grid
+const ENGLISH_TOPIC_ORDER = [
+  'comprehension', 'vocabulary', 'grammar', 'wordClassGrammar', 'spelling', 'punctuation',
 ];
 
 // ── 7. Hub page CSS ───────────────────────────────────────────────────────────
@@ -2407,7 +3058,183 @@ ${jsonLd}
 </html>`;
 }
 
-// ── 9. Practice hub page builder ──────────────────────────────────────────────
+// ── 9. English hub page builder ───────────────────────────────────────────────
+
+function buildEnglishHubPage() {
+  const canonical    = 'https://prepstep.co.uk/practice/english';
+  const year         = new Date().getFullYear();
+  const dateModified = new Date().toISOString().slice(0, 10);
+  const title        = '11+ English Practice Questions (GL Assessment) | PrepStep';
+  const description  = 'Free GL Assessment 11+ English practice questions across all 6 topics: comprehension, vocabulary, grammar, spelling, punctuation and word classes. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6.';
+  const ogTitle      = '11+ English Practice (GL Assessment) | PrepStep';
+  const ogDescription = 'Free GL Assessment 11+ English practice across all 6 topics. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6 preparation.';
+
+  const topicCardsHtml = ENGLISH_TOPIC_ORDER.map(key => {
+    const cfg  = TOPICS_CONFIG[key];
+    const slug = cfg.slug || key;
+    const desc = TOPIC_DESCRIPTORS[key] || '';
+    return `<a class="topic-card" href="/practice/english/${slug}" aria-label="${escHtml(cfg.topicLabel)} practice questions">
+          <p class="topic-card__label">${escHtml(cfg.topicLabel)}</p>
+          <p class="topic-card__desc">${escHtml(desc)}</p>
+        </a>`;
+  }).join('\n        ');
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type':    'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home',     item: 'https://prepstep.co.uk' },
+      { '@type': 'ListItem', position: 2, name: 'Practice', item: 'https://prepstep.co.uk/practice' },
+      { '@type': 'ListItem', position: 3, name: 'English',  item: canonical },
+    ],
+  };
+
+  const collectionLd = {
+    '@context':    'https://schema.org',
+    '@type':       'CollectionPage',
+    name:          ogTitle,
+    description,
+    url:           canonical,
+    inLanguage:    'en-GB',
+    dateModified,
+    hasPart: ENGLISH_TOPIC_ORDER.map(key => ({
+      '@type': 'WebPage',
+      name:    `${TOPICS_CONFIG[key].topicLabel} 11+ Practice (GL Assessment)`,
+      url:     `https://prepstep.co.uk/practice/english/${TOPICS_CONFIG[key].slug || key}`,
+    })),
+  };
+
+  const orgLd = {
+    '@context':  'https://schema.org',
+    '@type':     'Organization',
+    name:        'PrepStep',
+    url:         'https://prepstep.co.uk',
+    description: 'PrepStep is a free 11+ exam preparation app for GL Assessment, covering Maths, English and Verbal Reasoning.',
+  };
+
+  const jsonLd = JSON.stringify([breadcrumbLd, collectionLd, orgLd], null, 2);
+  const css    = buildHubCss();
+
+  return `<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>${escHtml(title)}</title>
+  <meta name="description" content="${escHtml(description)}">
+  <link rel="canonical" href="${canonical}">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="${escHtml(ogTitle)}">
+  <meta property="og:description" content="${escHtml(ogDescription)}">
+  <meta property="og:url"         content="${canonical}">
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="${escHtml(ogTitle)}">
+  <meta name="twitter:description" content="${escHtml(ogDescription)}">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>${css}</style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+${jsonLd}
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+      <a href="/" class="site-header__cta">Start practising free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice">Practice</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">English</span>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Practice</p>
+        <h1 id="hero-heading">11+ <em>English</em> Practice<br>(GL Assessment)</h1>
+        <div class="hub-intro">
+          <p>Free practice questions for all 6 English topics tested in the GL Assessment 11+, in the real five-option multiple-choice format with worked explanations. The GL English paper is 45 minutes with around 49 questions covering comprehension, vocabulary, grammar, spelling and punctuation.</p>
+          <p>Choose any topic below to see sample questions, a GL topic guide, and the common mistakes children make under exam pressure. All content is built for Year 5 and Year 6 preparation, covering difficulty levels from Foundation to Challenging.</p>
+        </div>
+        <a href="/" class="hero__cta">
+          Start practising free
+          <span class="hero__cta-sub">All 6 English topics &middot; No sign-up needed</span>
+        </a>
+      </section>
+
+      <!-- Topic grid -->
+      <section class="content-section" aria-labelledby="topics-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>All English topics</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="topics-heading">All 6 GL Assessment English Topics</h2>
+        <p class="skills-intro">Each topic has sample questions, a GL exam guide, and common mistakes to avoid. Click any topic to practise.</p>
+        <nav aria-label="English practice topics" class="topic-grid">
+          ${topicCardsHtml}
+        </nav>
+      </section>
+
+    </div><!-- /page-wrap -->
+
+    <!-- Closing CTA band -->
+    <section class="cta-band" aria-labelledby="cta-hub-heading">
+      <h2 id="cta-hub-heading">Ready to start practising?</h2>
+      <p class="cta-band__sub">
+        PrepStep has over 2,400 English questions in GL Assessment format:
+        comprehension passages, error-spotting, gap-fill and more. Free to start.
+      </p>
+      <a href="/" class="btn-primary">
+        Start practising free
+        <span class="btn-primary__sub">No sign-up needed &middot; Works on phone, tablet, and desktop</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <strong><a href="/">PrepStep</a></strong> &middot;
+      11+ exam preparation for GL Assessment &middot;
+      <a href="/practice">All practice topics</a>
+    </div>
+    <div style="margin-top:0.5rem">
+      &copy; ${year} PrepStep &middot;
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a>
+    </div>
+  </footer>
+
+</body>
+</html>`;
+}
+
+// ── 10. Practice hub page builder ─────────────────────────────────────────────
 
 function buildPracticeHubPage() {
   const canonical    = 'https://prepstep.co.uk/practice';
@@ -2440,6 +3267,11 @@ function buildPracticeHubPage() {
         '@type': 'WebPage',
         name:    '11+ Maths Practice (GL Assessment)',
         url:     'https://prepstep.co.uk/practice/maths',
+      },
+      {
+        '@type': 'WebPage',
+        name:    '11+ English Practice (GL Assessment)',
+        url:     'https://prepstep.co.uk/practice/english',
       },
     ],
   };
@@ -2531,7 +3363,7 @@ ${jsonLd}
           <span class="section-label__line"></span>
         </p>
         <h2 class="section-heading" id="subjects-heading">Choose a Subject</h2>
-        <p class="skills-intro">GL Assessment 11+ papers cover three subjects. Maths practice is available now, with English and Verbal Reasoning coming soon.</p>
+        <p class="skills-intro">GL Assessment 11+ papers cover three subjects. Maths and English practice are available now, with Verbal Reasoning coming soon.</p>
         <div class="subject-grid">
 
           <!-- Maths (live) -->
@@ -2542,13 +3374,13 @@ ${jsonLd}
             <span class="subject-card__badge subject-card__badge--live">Live &middot; 16 topics</span>
           </a>
 
-          <!-- English (coming soon) -->
-          <div class="subject-card subject-card--disabled" aria-label="11+ English practice questions, coming soon" role="article">
+          <!-- English (live) -->
+          <a class="subject-card" href="/practice/english" aria-label="11+ English practice questions">
             <p class="subject-card__eyebrow subject-card__eyebrow--english">English</p>
             <h3 class="subject-card__title">11+ English</h3>
             <p class="subject-card__desc">Comprehension, vocabulary, grammar, spelling and punctuation in GL Assessment format. Worked explanations for every question.</p>
-            <span class="subject-card__badge subject-card__badge--soon">Coming soon</span>
-          </div>
+            <span class="subject-card__badge subject-card__badge--live">Live &middot; 6 topics</span>
+          </a>
 
           <!-- Verbal Reasoning (coming soon) -->
           <div class="subject-card subject-card--disabled" aria-label="11+ Verbal Reasoning practice questions, coming soon" role="article">
@@ -2601,13 +3433,19 @@ ${jsonLd}
 function generateSitemap() {
   const today = new Date().toISOString().slice(0, 10);
 
-  // All public URLs in priority order (19 total)
+  // All public URLs in priority order (26 total: root + /practice + /practice/maths + 16 maths topics + /practice/english + 6 English topics)
   const urls = [
-    { loc: 'https://prepstep.co.uk/',               priority: '1.0', freq: 'daily'  },
-    { loc: 'https://prepstep.co.uk/practice',        priority: '0.9', freq: 'weekly' },
-    { loc: 'https://prepstep.co.uk/practice/maths',  priority: '0.9', freq: 'weekly' },
+    { loc: 'https://prepstep.co.uk/',                priority: '1.0', freq: 'daily'  },
+    { loc: 'https://prepstep.co.uk/practice',         priority: '0.9', freq: 'weekly' },
+    { loc: 'https://prepstep.co.uk/practice/maths',   priority: '0.9', freq: 'weekly' },
     ...MATHS_TOPIC_ORDER.map(key => ({
       loc:      `https://prepstep.co.uk/practice/maths/${key}`,
+      priority: '0.8',
+      freq:     'weekly',
+    })),
+    { loc: 'https://prepstep.co.uk/practice/english', priority: '0.9', freq: 'weekly' },
+    ...ENGLISH_TOPIC_ORDER.map(key => ({
+      loc:      `https://prepstep.co.uk/practice/english/${TOPICS_CONFIG[key].slug || key}`,
       priority: '0.8',
       freq:     'weekly',
     })),
@@ -2623,9 +3461,13 @@ function generateSitemap() {
 // ── 11. Main page builder ─────────────────────────────────────────────────────
 
 function buildPage(config) {
-  const topicData = mathsData.topics[config.topicKey];
+  const dataset = DATASETS[config.subject];
+  if (!dataset) {
+    throw new Error(`Subject '${config.subject}' not found in DATASETS (valid subjects: ${Object.keys(DATASETS).join(', ')})`);
+  }
+  const topicData = dataset.topics[config.topicKey];
   if (!topicData) {
-    throw new Error(`Topic '${config.topicKey}' not found in mathsData`);
+    throw new Error(`Topic '${config.topicKey}' not found in ${config.subject}Data`);
   }
 
   console.log(`\nBuilding: ${config.topicLabel} (${config.subject})`);
@@ -2667,6 +3509,13 @@ function buildPage(config) {
   const skillsListHtml = config.topicBreakdown.items
     .map(item => `<li>${escHtml(item)}</li>`)
     .join('\n        ');
+
+  // Build the sample-questions intro copy, count-aware
+  const questionsIntroHtml = questions.length === 1
+    ? `Read the passage below, then try the question. Tap &ldquo;Show worked explanation&rdquo; to see the full method, and the correct answer is highlighted so you can check as you go.`
+    : `${numberWord(questions.length)} questions drawn from PrepStep&rsquo;s ${escHtml(config.topicLabel.toLowerCase())} bank, spanning Foundation to Challenging.
+          Tap &ldquo;Show worked explanation&rdquo; to see the full method after you&rsquo;ve had a go.
+          The correct answer is highlighted on each question so you can check immediately.`;
 
   const jsonLd = buildJsonLd(config, questions);
   const css    = buildCss();
@@ -2733,7 +3582,7 @@ ${jsonLd}
 
       <!-- Hero -->
       <section class="hero" aria-labelledby="hero-heading">
-        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Maths</p>
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ ${escHtml(config.subjectLabel)}</p>
         <h1 id="hero-heading">11+ <em>${escHtml(config.topicLabel)}</em> Practice<br>(GL Assessment)</h1>
         <div class="hero__intro">
           ${config.intro.split('\n\n').map(p => `<p>${escHtml(p)}</p>`).join('\n          ')}
@@ -2766,9 +3615,7 @@ ${jsonLd}
         </p>
         <h2 class="section-heading" id="sample-questions-heading">Sample ${escHtml(config.topicLabel)} Questions</h2>
         <p class="questions-intro">
-          Five questions drawn from PrepStep&rsquo;s ${config.topicLabel.toLowerCase()} bank, spanning Foundation to Challenging.
-          Tap &ldquo;Show worked explanation&rdquo; to see the full method after you&rsquo;ve had a go.
-          The correct answer is highlighted on each question so you can check immediately.
+          ${questionsIntroHtml}
         </p>
         <div class="questions-grid">
           ${questionCardsHtml}
@@ -2864,7 +3711,7 @@ for (const topicKey of topicsToGenerate) {
   }
 
   const outDir  = path.join(ROOT, 'public/practice', config.subject);
-  const outPath = path.join(outDir, `${config.topicKey}.html`);
+  const outPath = path.join(outDir, `${config.slug || config.topicKey}.html`);
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(outPath, result.html, 'utf8');
   console.log(`  Wrote: ${outPath}`);
@@ -2930,6 +3777,28 @@ if (generateAll) {
   console.log(`  [${mathsHubCheck.includes('skip-link') ? 'PASS' : 'FAIL'}] Skip link present`);
   console.log(`  [${!mathsHubCheck.match(/<link[^>]+stylesheet[^>]+https?:\/\//) ? 'PASS' : 'FAIL'}] No external CSS`);
 
+  // English hub
+  console.log('\nBuilding: English hub (public/practice/english/index.html)');
+  const englishHubHtml = buildEnglishHubPage();
+  const englishHubDir  = path.join(ROOT, 'public/practice/english');
+  const englishHubPath = path.join(englishHubDir, 'index.html');
+  fs.mkdirSync(englishHubDir, { recursive: true });
+  fs.writeFileSync(englishHubPath, englishHubHtml, 'utf8');
+  const englishHubCheck = fs.readFileSync(englishHubPath, 'utf8');
+  const englishTopicLinks = (englishHubCheck.match(/href="\/practice\/english\/[a-z-]+"/g) || []).length;
+  const englishJsonLdValid = (() => {
+    const m = englishHubCheck.match(/<script type="application\/ld\+json">([\s\S]+?)<\/script>/);
+    if (!m) return false;
+    try { JSON.parse(m[1]); return true; } catch { return false; }
+  })();
+  console.log(`  Wrote: ${englishHubPath} (${(englishHubCheck.length / 1024).toFixed(1)} KB)`);
+  console.log(`  [${englishJsonLdValid ? 'PASS' : 'FAIL'}] JSON-LD valid`);
+  console.log(`  [${englishHubCheck.includes('"BreadcrumbList"') ? 'PASS' : 'FAIL'}] BreadcrumbList in JSON-LD`);
+  console.log(`  [${englishHubCheck.includes('"CollectionPage"') ? 'PASS' : 'FAIL'}] CollectionPage in JSON-LD`);
+  console.log(`  [${englishTopicLinks === 6 ? 'PASS' : 'FAIL'}] Topic links: ${englishTopicLinks} (expected 6)`);
+  console.log(`  [${englishHubCheck.includes('skip-link') ? 'PASS' : 'FAIL'}] Skip link present`);
+  console.log(`  [${!englishHubCheck.match(/<link[^>]+stylesheet[^>]+https?:\/\//) ? 'PASS' : 'FAIL'}] No external CSS`);
+
   // Practice hub
   console.log('\nBuilding: Practice hub (public/practice/index.html)');
   const practiceHubHtml = buildPracticeHubPage();
@@ -2941,12 +3810,14 @@ if (generateAll) {
     if (!m) return false;
     try { JSON.parse(m[1]); return true; } catch { return false; }
   })();
-  const comingSoonCards = (practiceHubCheck.match(/subject-card--disabled/g) || []).length;
+  // Count only HTML card elements (not the CSS class definitions which also contain the string)
+  const comingSoonCards = (practiceHubCheck.match(/class="subject-card subject-card--disabled"/g) || []).length;
   console.log(`  Wrote: ${practiceHubPath} (${(practiceHubCheck.length / 1024).toFixed(1)} KB)`);
   console.log(`  [${practiceJsonLdValid ? 'PASS' : 'FAIL'}] JSON-LD valid`);
   console.log(`  [${practiceHubCheck.includes('"BreadcrumbList"') ? 'PASS' : 'FAIL'}] BreadcrumbList in JSON-LD`);
   console.log(`  [${practiceHubCheck.includes('href="/practice/maths"') ? 'PASS' : 'FAIL'}] Maths card links to /practice/maths`);
-  console.log(`  [${comingSoonCards >= 2 ? 'PASS' : 'FAIL'}] Coming-soon cards: ${comingSoonCards} (expected at least 2)`);
+  console.log(`  [${practiceHubCheck.includes('href="/practice/english"') ? 'PASS' : 'FAIL'}] English card links to /practice/english`);
+  console.log(`  [${comingSoonCards === 1 ? 'PASS' : 'FAIL'}] Coming-soon cards: ${comingSoonCards} (expected exactly 1)`);
   console.log(`  [${practiceHubCheck.includes('skip-link') ? 'PASS' : 'FAIL'}] Skip link present`);
 
   // Sitemap
@@ -2956,7 +3827,7 @@ if (generateAll) {
   fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
   const urlCount = (sitemapXml.match(/<url>/g) || []).length;
   console.log(`  Wrote: ${sitemapPath}`);
-  console.log(`  [${urlCount === 19 ? 'PASS' : 'FAIL'}] URL count: ${urlCount} (expected 19: root + /practice + /practice/maths + 16 topics)`);
+  console.log(`  [${urlCount === 26 ? 'PASS' : 'FAIL'}] URL count: ${urlCount} (expected 26: root + /practice + /practice/maths + 16 maths topics + /practice/english + 6 English topics)`);
   console.log(`  [${sitemapXml.includes('prepstep.co.uk/') ? 'PASS' : 'FAIL'}] Root URL present`);
 }
 
