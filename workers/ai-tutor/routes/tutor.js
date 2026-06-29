@@ -334,14 +334,17 @@ export async function handleTutorRoutes(request, env, userId, path) {
         'SELECT COUNT(*) as n FROM tutor_notes WHERE tutor_id = ? AND child_id = ?'
       ).bind(tutorId, childId).first(),
 
-      // Per-question results for useMastery + quiz drill-down (last 500, newest first)
+      // Per-question results for useMastery + quiz drill-down (newest first).
+      // NO LIMIT: exam readiness must score over the pupil's FULL history, exactly
+      // like the child's own app (bulk load is unbounded). A LIMIT here truncates
+      // older topics to zero and drags every subject's readiness down a band, so
+      // the tutor view disagreed with the parent/child view (fixed 29 Jun 2026).
       db.prepare(`
         SELECT id, question_id, topic_key, subject, is_correct, time_ms, attempted_at,
                session_id, selected_answer
         FROM question_results
         WHERE child_id = ?
         ORDER BY attempted_at DESC
-        LIMIT 500
       `).bind(childId).all(),
 
       // Mock test history
