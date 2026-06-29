@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>Area &amp; Perimeter 11+ Practice | GL Assessment | PrepStep</title>
+  <meta name="description" content="Free GL Assessment 11+ area and perimeter practice questions, with the formulae, common traps and the sub-skills GL actually tests.">
+  <link rel="canonical" href="https://prepstep.co.uk/practice/maths/areaperimeter">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Area &amp; Perimeter 11+ Practice | GL Assessment | PrepStep">
+  <meta property="og:description" content="Free GL Assessment 11+ area and perimeter practice questions, with the formulae, common traps and the sub-skills GL actually tests.">
+  <meta property="og:url"         content="https://prepstep.co.uk/practice/maths/areaperimeter">
+  <meta property="og:type"        content="article">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Area &amp; Perimeter 11+ Practice | GL Assessment | PrepStep">
+  <meta name="twitter:description" content="Free GL Assessment 11+ area and perimeter practice questions, with the formulae, common traps and the sub-skills GL actually tests.">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>/* ── Reset & box model ───────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+/* ── Brand tokens (mirrors PrepStep src/index.css) ──────────────────── */
+:root{
+  --primary:#7C3AED;
+  --primary-light:#A29BFE;
+  --primary-surface:#EDE8FF;
+  --primary-dark:#5A4BD1;
+  --accent:#FDCB6E;
+  --accent-dark:#F59E0B;
+  --success:#22C55E;
+  --maths:#3B82F6;
+  --maths-surface:#EFF6FF;
+  --surface:#FEFDFB;
+  --surface-alt:#FBF9F6;
+  --text:#1E293B;
+  --text-secondary:#64748B;
+  --border-subtle:rgba(0,0,0,0.06);
+  --card-shadow:0 1px 3px rgba(108,92,231,0.05),0 4px 16px rgba(108,92,231,0.08);
+}
+
+/* ── Typography ─────────────────────────────────────────────────────── */
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--text);
+  line-height:1.65;
+  background:linear-gradient(145deg,#EDE8FF 0%,#FFF8E8 100%) fixed;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Heading font (Outfit fallback) */
+h1,h2,h3,.font-heading{
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  line-height:1.25;
+  letter-spacing:-0.01em;
+}
+
+/* ── Skip link ─────────────────────────────────────────────────────── */
+.skip-link{
+  position:absolute;top:0;left:0;z-index:9999;
+  background:var(--primary);color:#fff;
+  padding:0.6rem 1rem;border-radius:0 0 6px 0;
+  font-weight:700;text-decoration:none;
+  transform:translateY(-100%);
+  transition:transform 0.15s;
+}
+.skip-link:focus{transform:translateY(0)}
+
+/* ── Layout ────────────────────────────────────────────────────────── */
+.page-wrap{
+  max-width:780px;
+  margin:0 auto;
+  padding:0 1.25rem;
+}
+
+/* ── Site header ───────────────────────────────────────────────────── */
+.site-header{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border-subtle);
+  position:sticky;top:0;z-index:100;
+}
+.site-header__inner{
+  max-width:780px;
+  margin:0 auto;
+  padding:0.85rem 1.25rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.site-header__brand{
+  font-size:1.2rem;
+  font-weight:800;
+  color:var(--primary);
+  text-decoration:none;
+  letter-spacing:-0.02em;
+}
+.site-header__cta{
+  background:var(--primary);
+  color:#fff;
+  padding:0.45rem 1.1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:0.875rem;
+  white-space:nowrap;
+  transition:background 0.2s;
+}
+.site-header__cta:hover{background:var(--primary-dark)}
+
+/* ── Breadcrumb ────────────────────────────────────────────────────── */
+.breadcrumb{
+  margin:1.5rem 0 0;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.breadcrumb a{
+  color:var(--text-secondary);
+  text-decoration:none;
+  transition:color 0.15s;
+}
+.breadcrumb a:hover{color:var(--primary)}
+.breadcrumb__sep{margin:0 0.35rem;opacity:0.5}
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
+.hero{
+  padding:2.5rem 0 2rem;
+  border-bottom:1px solid var(--border-subtle);
+}
+.hero__eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  background:var(--maths-surface);
+  color:var(--maths);
+  border:1px solid rgba(59,130,246,0.2);
+  padding:0.3rem 0.75rem;
+  border-radius:100px;
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(1.75rem,3vw + 1rem,2.6rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--primary);
+}
+.hero__intro{
+  font-size:1.025rem;
+  color:var(--text-secondary);
+  max-width:640px;
+  margin-bottom:1.75rem;
+}
+.hero__intro p+p{margin-top:0.85rem}
+.hero__stat{
+  display:inline-block;
+  background:var(--primary-surface);
+  color:var(--primary-dark);
+  font-weight:700;
+  border-radius:6px;
+  padding:0.1rem 0.45rem;
+  font-size:0.95em;
+}
+.hero__cta{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.85rem 2rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.hero__cta:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.hero__cta:active{transform:translateY(0) scale(0.98)}
+.hero__cta-sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Content sections ──────────────────────────────────────────────── */
+.content-section{
+  padding:2.75rem 0;
+  border-bottom:1px solid var(--border-subtle);
+}
+.section-label{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--primary);
+  margin-bottom:0.6rem;
+}
+.section-label__line{
+  flex:1;height:1px;background:currentColor;opacity:0.2;
+}
+h2.section-heading{
+  font-size:clamp(1.2rem,1rem + 1vw,1.55rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+  scroll-margin-top:4rem;
+}
+
+/* ── "What GL tests" list ──────────────────────────────────────────── */
+.skills-intro{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1rem;
+}
+.skills-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.55rem;
+  margin-bottom:1rem;
+}
+.skills-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:0.6rem;
+  font-size:0.975rem;
+  line-height:1.5;
+}
+.skills-list li::before{
+  content:'';
+  display:block;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--maths);
+  flex-shrink:0;
+  margin-top:0.55em;
+}
+.skills-footnote{
+  font-size:0.825rem;
+  color:var(--text-secondary);
+  border-left:3px solid var(--border-subtle);
+  padding-left:0.75rem;
+  margin-top:1rem;
+  font-style:italic;
+}
+
+/* ── Question cards ────────────────────────────────────────────────── */
+.questions-intro{
+  font-size:0.975rem;
+  color:var(--text-secondary);
+  margin-bottom:1.5rem;
+}
+.questions-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+}
+.q-card{
+  background:var(--surface);
+  border-radius:1rem;
+  border:1px solid var(--border-subtle);
+  box-shadow:var(--card-shadow);
+  overflow:hidden;
+  transition:box-shadow 0.2s;
+}
+.q-card:hover{box-shadow:0 2px 8px rgba(108,92,231,0.1),0 8px 24px rgba(108,92,231,0.12)}
+.q-card__header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 1.25rem 0;
+  gap:0.75rem;
+}
+.q-card__num{
+  font-size:0.82rem;
+  font-weight:700;
+  color:var(--maths);
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff-pill{
+  font-size:0.72rem;
+  font-weight:700;
+  padding:0.2rem 0.6rem;
+  border-radius:100px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff--foundation{background:#DCFCE7;color:#166534}
+.diff--intermediate{background:#FEF9C3;color:#854D0E}
+.diff--challenging{background:var(--primary-surface);color:var(--primary-dark)}
+.q-card__stem{
+  font-size:1.025rem;
+  font-weight:600;
+  color:var(--text);
+  padding:0.75rem 1.25rem 0.85rem;
+  line-height:1.5;
+}
+.q-diagram{
+  margin:0 1.25rem 0.85rem;
+  background:#F8F7FF;
+  border:1px solid rgba(162,155,254,0.25);
+  border-radius:0.75rem;
+  padding:1rem;
+  overflow:hidden;
+}
+.q-options{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+  padding:0 1.25rem 0.85rem;
+}
+.q-option{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  background:#F8F7FF;
+  font-size:0.96rem;
+  line-height:1.4;
+  border:1px solid transparent;
+}
+.q-option--correct{
+  background:#F0FDF4;
+  border-color:#86EFAC;
+  font-weight:600;
+}
+.q-option__letter{
+  font-weight:700;
+  color:var(--primary-light);
+  min-width:1.2rem;
+  flex-shrink:0;
+  font-size:0.9rem;
+}
+.q-option--correct .q-option__letter{color:#16A34A}
+.q-option__text{flex:1}
+.q-option__tick{
+  margin-left:auto;
+  color:#16A34A;
+  font-size:1rem;
+  flex-shrink:0;
+}
+
+/* Explanation accordion */
+.q-explanation{
+  border-top:1px solid var(--border-subtle);
+}
+.q-explanation__toggle{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  cursor:pointer;
+  padding:0.75rem 1.25rem;
+  font-size:0.875rem;
+  font-weight:700;
+  color:var(--primary);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.q-explanation__toggle::-webkit-details-marker{display:none}
+.q-explanation__toggle:hover{background:var(--primary-surface)}
+.q-explanation__toggle::before{
+  content:'';
+  display:inline-block;
+  width:0;height:0;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:7px solid currentColor;
+  transition:transform 0.2s;
+}
+details[open] .q-explanation__toggle::before{transform:rotate(90deg)}
+.q-explanation__body{
+  padding:0.75rem 1.25rem 1rem;
+}
+.q-explanation__body p{
+  font-size:0.92rem;
+  background:#F0FDF4;
+  border-left:3px solid #4ADE80;
+  padding:0.85rem 1rem;
+  border-radius:6px;
+  color:#14532D;
+  line-height:1.6;
+}
+
+/* ── Common pitfalls ───────────────────────────────────────────────── */
+.pitfalls-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.pitfall-card{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  padding:1.1rem 1.25rem;
+  box-shadow:var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+}
+.pitfall-card__num{
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent-dark);
+}
+.pitfall-card__lead{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text);
+}
+.pitfall-card__tip{
+  font-size:0.93rem;
+  color:var(--text-secondary);
+  line-height:1.55;
+}
+.pitfall-tip-label{
+  font-weight:700;
+  color:var(--text);
+}
+
+/* ── FAQ accordion ─────────────────────────────────────────────────── */
+.faq-list{
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+}
+.faq-item{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  overflow:hidden;
+  box-shadow:var(--card-shadow);
+}
+.faq-item__question{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.75rem;
+  cursor:pointer;
+  padding:1rem 1.25rem;
+  font-size:0.975rem;
+  font-weight:700;
+  color:var(--text);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.faq-item__question::-webkit-details-marker{display:none}
+.faq-item__question:hover{background:var(--primary-surface)}
+.faq-item__icon{
+  width:20px;height:20px;flex-shrink:0;
+  border:2px solid var(--primary-light);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--primary);
+  font-size:0.9rem;
+  font-weight:700;
+  transition:transform 0.2s,background 0.15s;
+  line-height:1;
+}
+details[open] .faq-item__icon{
+  transform:rotate(45deg);
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff;
+}
+.faq-item__answer{
+  padding:0 1.25rem 1rem;
+  font-size:0.95rem;
+  color:var(--text-secondary);
+  line-height:1.65;
+  border-top:1px solid var(--border-subtle);
+}
+
+/* ── Closing CTA band ──────────────────────────────────────────────── */
+.cta-band{
+  padding:3rem 0;
+  text-align:center;
+}
+.cta-band h2{
+  font-size:clamp(1.4rem,2vw + 0.5rem,2rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:0.6rem;
+}
+.cta-band__sub{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1.75rem;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btn-primary{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.9rem 2.25rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.05rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(0) scale(0.98)}
+.btn-primary__sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.site-footer{
+  background:rgba(255,255,255,0.7);
+  border-top:1px solid var(--border-subtle);
+  padding:1.5rem 1.25rem;
+  text-align:center;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.site-footer a{color:var(--text-secondary);text-decoration:none}
+.site-footer a:hover{color:var(--primary)}
+
+/* ── Focus states ──────────────────────────────────────────────────── */
+*:focus-visible{
+  outline:2px solid var(--primary);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   Tailwind utility stubs for BarModel (div-based diagram component).
+   These replace the normalised class names produced by normaliseTailwindClasses().
+   ──────────────────────────────────────────────────────────────────── */
+.space-y-3>:not([hidden])~:not([hidden]){margin-top:0.75rem}
+.relative{position:relative}
+.rounded-xl{border-radius:0.75rem}
+.overflow-hidden{overflow:hidden}
+.border-2{border-width:2px;border-style:solid}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-center{justify-content:center}
+.font-bold{font-weight:700}
+.text-base{font-size:1rem;line-height:1.5rem}
+.border-r{border-right-width:1px;border-right-style:solid}
+.transition-all{transition:all 150ms cubic-bezier(0.4,0,0.2,1)}
+.text-center{text-align:center}
+.text-sm{font-size:0.875rem;line-height:1.25rem}
+
+/* Normalised arbitrary-value class replacements */
+._ps-bar-border{border-color:rgba(162,155,254,0.4)}
+._ps-bar-border-seg{border-color:rgba(255,255,255,0.3)}
+._ps-bar-last-no-border-r:last-child{border-right-width:0}
+._ps-bar-text-primary{color:#7C3AED}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media(max-width:480px){
+  .hero__cta{display:block;text-align:center}
+  .site-header__cta{display:none}
+}</style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What area and perimeter topics come up in the GL 11+ maths exam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GL tests perimeter and area of rectangles, squares, triangles and parallelograms, plus compound L-shapes, reverse problems (find a missing side from the area), and real-world contexts like gardens and fencing. Questions range from single-step calculations to multi-step \"path around a shape\" problems. All are five-option multiple choice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many area and perimeter questions are in the GL 11+ maths paper?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Expect roughly two to four questions in a 50-question paper. Area and perimeter sit inside the wider Shape and Space strand, which makes up around 8 to 12 questions in total. Number topics dominate the paper, so geometry is a smaller but reliable component."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between area and perimeter for the 11+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Perimeter is the total distance around the outside of a shape, measured in linear units like cm or m. Area is the space inside, measured in square units like cm2 or m2. Confusing the two is the most common mistake, so children should decide \"inside or around?\" before calculating."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are circle questions (area and circumference) in the GL 11+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Circles using pi are not part of the Key Stage 2 curriculum and are very unlikely in a standard GL 11+ paper. They are secondary-school content. Children should focus on rectangles, squares, triangles, parallelograms and compound shapes. A rare super-selective paper might include a basic circle question, but it is not expected."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What formulae does my child need to remember for area and perimeter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rectangle area is length x width; rectangle perimeter is 2 x (length + width). Square area is side x side. Triangle area is half x base x perpendicular height. Parallelogram area is base x perpendicular height. These are not provided in the exam, so they must be memorised and fluent."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://prepstep.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Practice",
+        "item": "https://prepstep.co.uk/practice"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Maths",
+        "item": "https://prepstep.co.uk/practice/maths"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Area & Perimeter",
+        "item": "https://prepstep.co.uk/practice/maths/areaperimeter"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Area & Perimeter 11+ Practice | GL Assessment | PrepStep",
+    "description": "Free GL Assessment 11+ area and perimeter practice questions, with the formulae, common traps and the sub-skills GL actually tests.",
+    "url": "https://prepstep.co.uk/practice/maths/areaperimeter",
+    "author": {
+      "@type": "Organization",
+      "name": "PrepStep"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PrepStep",
+      "url": "https://prepstep.co.uk"
+    },
+    "dateModified": "2026-06-29",
+    "inLanguage": "en-GB"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PrepStep",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "inLanguage": "en-GB",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    },
+    "description": "PrepStep is a free 11+ exam preparation app with Area & Perimeter practice questions for the GL Assessment.",
+    "url": "https://prepstep.co.uk"
+  }
+]
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+      <a href="/" class="site-header__cta">Start practising free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice">Practice</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice/maths">Maths</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Area &amp; Perimeter</span>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Maths</p>
+        <h1 id="hero-heading">11+ <em>Area &amp; Perimeter</em> Practice<br>(GL Assessment)</h1>
+        <div class="hero__intro">
+          <p>In the GL Assessment 11+ maths paper, area and perimeter sit within the Shape and Space strand, and a typical 50-question paper contains roughly two to four questions that test them directly. Every question is multiple choice with five options (A to E), and no marks are deducted for a wrong answer, so a sensible guess is always worth making.</p>
+          <p>These questions ask your child to find the distance around a shape (the perimeter) or the space inside it (the area). Early questions deal with a single rectangle or square. Later ones build up to compound L-shapes, triangles, and &quot;path around a garden&quot; problems that need two or three steps. The paper is broadly arranged in increasing difficulty, so the harder area questions tend to appear deeper in.</p>
+          <p>If your child mixes up area and perimeter, you are in very good company. It is the single most common confusion in this topic, and it is completely fixable with focused practice. The formulae are short, the methods are repeatable, and confidence comes quickly once the two ideas are clearly separated.</p>
+        </div>
+        <a href="/" class="hero__cta">
+          Start practising free
+          <span class="hero__cta-sub">209 area & perimeter questions &middot; No sign-up needed</span>
+        </a>
+      </section>
+
+      <!-- What GL tests on fractions -->
+      <section class="content-section" aria-labelledby="what-tested-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Exam guide</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="what-tested-heading">What the GL 11+ Tests on Area &amp; Perimeter</h2>
+        <p class="skills-intro">GL tests a fairly predictable set of sub-skills. In rough order of how often they appear:</p>
+        <ul class="skills-list" aria-label="Area &amp; Perimeter sub-skills tested by GL">
+          <li>Perimeter of rectangles and squares, including working out a missing side (~15%).</li>
+        <li>Area of rectangles and squares, direct calculation (~15%).</li>
+        <li>Compound shapes (L, T and H shapes), found either by splitting into rectangles and adding, or by subtracting a cut-out (~30% across perimeter and area combined).</li>
+        <li>Area of triangles using base x height / 2, and parallelograms using base x perpendicular height (~20% combined).</li>
+        <li>Reverse problems (given the area, find a missing length) and real-world contexts such as gardens, fencing, frames and carpet (~15% combined).</li>
+        <li>Same-area / different-perimeter reasoning, a Year 6 curriculum point (~5%).</li>
+        </ul>
+        <p class="skills-footnote">Difficulty spans the full D1 to D3 range: one-step rectangle sums at the easy end, multi-step compound shapes and path-border problems at the hard end. Format is always five-option multiple choice. Note: the weightings above are drawn from analysis of GL practice papers and tutor resources, so treat them as well-grounded estimates rather than figures GL publishes.</p>
+      </section>
+
+      <!-- Sample questions -->
+      <section class="content-section" aria-labelledby="sample-questions-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Practice</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="sample-questions-heading">Sample Area &amp; Perimeter Questions</h2>
+        <p class="questions-intro">
+          Five questions drawn from PrepStep&rsquo;s area & perimeter bank, spanning Foundation to Challenging.
+          Tap &ldquo;Show worked explanation&rdquo; to see the full method after you&rsquo;ve had a go.
+          The correct answer is highlighted on each question so you can check immediately.
+        </p>
+        <div class="questions-grid">
+          <article class="q-card" aria-label="Sample question 1">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 1</span>
+        <span class="diff-pill diff--foundation" aria-label="Difficulty: Foundation">Foundation</span>
+      </header>
+      <p class="q-card__stem">Emily's rectangular garden is 8 metres long and 5 metres wide. What is the perimeter of her garden?</p>
+      <div class="q-diagram" aria-label="Diagram for question 1"><div class="flex justify-center"><svg role="img" aria-label="Rectangle with dimensions" viewBox="0 0 400 280" class="w-full" style="max-width:380px"><rect x="70" y="36.25" width="300" height="187.5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5" rx="4"></rect><line x1="70" y1="243.75" x2="370" y2="243.75" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-l)" marker-end="url(#rd-arrow-r)"></line><text x="220" y="265.75" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="bold">8 m</text><line x1="50" y1="36.25" x2="50" y2="223.75" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-u)" marker-end="url(#rd-arrow-d)"></line><text x="32" y="135" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="bold" transform="rotate(-90, 32, 135)">5 m</text><defs><marker id="rd-arrow-r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-l" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0, 0 3, 8 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-d" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto"><polygon points="0 0, 3 8, 6 0" fill="#6366f1"></polygon></marker><marker id="rd-arrow-u" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto"><polygon points="0 8, 3 0, 6 8" fill="#6366f1"></polygon></marker></defs></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">13 metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">18 metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">40 metres</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">26 metres</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">21 metres</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>To find the perimeter of a rectangle, add all four sides together. The formula is: Perimeter = 2 × (length + width). So: 2 × (8 + 5) = 2 × 13 = 26 metres. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 2">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 2</span>
+        <span class="diff-pill diff--foundation" aria-label="Difficulty: Foundation">Foundation</span>
+      </header>
+      <p class="q-card__stem">A rectangular swimming pool is 12 metres long and 6 metres wide. What is its area?</p>
+      <div class="q-diagram" aria-label="Diagram for question 2"><div class="flex justify-center"><svg role="img" aria-label="Rectangle with dimensions" viewBox="0 0 400 280" class="w-full" style="max-width:380px"><rect x="70" y="55" width="300" height="150" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5" rx="4"></rect><line x1="70" y1="225" x2="370" y2="225" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-l)" marker-end="url(#rd-arrow-r)"></line><text x="220" y="247" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="bold">12 m</text><line x1="50" y1="55" x2="50" y2="205" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-u)" marker-end="url(#rd-arrow-d)"></line><text x="32" y="135" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="bold" transform="rotate(-90, 32, 135)">6 m</text><defs><marker id="rd-arrow-r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-l" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0, 0 3, 8 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-d" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto"><polygon points="0 0, 3 8, 6 0" fill="#6366f1"></polygon></marker><marker id="rd-arrow-u" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto"><polygon points="0 8, 3 0, 6 8" fill="#6366f1"></polygon></marker></defs></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">18 square metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">36 square metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">48 square metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">24 square metres</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">72 square metres</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>To find the area of a rectangle, multiply length by width. Area = length × width = 12 × 6 = 72 square metres. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 3">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 3</span>
+        <span class="diff-pill diff--intermediate" aria-label="Difficulty: Intermediate">Intermediate</span>
+      </header>
+      <p class="q-card__stem">A rectangle has a perimeter of 24 cm. Its length is 8 cm. What is its width?</p>
+      <div class="q-diagram" aria-label="Diagram for question 3"><div class="flex justify-center"><svg role="img" aria-label="Rectangle with dimensions" viewBox="0 0 400 300" class="w-full" style="max-width:380px"><rect x="77.14285714285714" y="30" width="285.7142857142857" height="200" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5" rx="4"></rect><line x1="77.14285714285714" y1="250" x2="362.8571428571429" y2="250" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-l)" marker-end="url(#rd-arrow-r)"></line><text x="220" y="272" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="bold">8 cm</text><line x1="57.14285714285714" y1="30" x2="57.14285714285714" y2="230" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-u)" marker-end="url(#rd-arrow-d)"></line><text x="39.14285714285714" y="135" text-anchor="middle" fill="#dc2626" font-size="18" font-weight="bold" transform="rotate(-90, 39.14285714285714, 135)">?</text><text x="200" y="290" text-anchor="middle" fill="#6366f1" font-size="16" font-weight="bold">Perimeter = 24 cm</text><defs><marker id="rd-arrow-r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-l" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0, 0 3, 8 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-d" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto"><polygon points="0 0, 3 8, 6 0" fill="#6366f1"></polygon></marker><marker id="rd-arrow-u" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto"><polygon points="0 8, 3 0, 6 8" fill="#6366f1"></polygon></marker></defs></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">4 cm</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">3 cm</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">6 cm</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">8 cm</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">16 cm</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Perimeter = 2 × (length + width), so 24 = 2 × (8 + width). Divide both sides by 2: 12 = 8 + width. Therefore width = 12 - 8 = 4 cm. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 4">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 4</span>
+        <span class="diff-pill diff--intermediate" aria-label="Difficulty: Intermediate">Intermediate</span>
+      </header>
+      <p class="q-card__stem">Emma's rectangular garden has an area of 48 square metres and a width of 6 metres. What is the length?</p>
+      <div class="q-diagram" aria-label="Diagram for question 4"><div class="flex justify-center"><svg role="img" aria-label="Rectangle with dimensions" viewBox="0 0 400 300" class="w-full" style="max-width:380px"><rect x="70" y="30" width="300" height="200" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5" rx="4"></rect><line x1="70" y1="250" x2="370" y2="250" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-l)" marker-end="url(#rd-arrow-r)"></line><text x="220" y="272" text-anchor="middle" fill="#dc2626" font-size="18" font-weight="bold">?</text><line x1="50" y1="30" x2="50" y2="230" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-u)" marker-end="url(#rd-arrow-d)"></line><text x="32" y="135" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="bold" transform="rotate(-90, 32, 135)">6 m</text><text x="200" y="290" text-anchor="middle" fill="#6366f1" font-size="16" font-weight="bold">Area = 48 m²</text><defs><marker id="rd-arrow-r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-l" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0, 0 3, 8 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-d" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto"><polygon points="0 0, 3 8, 6 0" fill="#6366f1"></polygon></marker><marker id="rd-arrow-u" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto"><polygon points="0 8, 3 0, 6 8" fill="#6366f1"></polygon></marker></defs></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">6 metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">12 metres</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">8 metres</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">42 metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">54 metres</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Area = length × width, so 48 = length × 6. To find length, divide: 48 ÷ 6 = 8 metres. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 5">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 5</span>
+        <span class="diff-pill diff--challenging" aria-label="Difficulty: Challenging">Challenging</span>
+      </header>
+      <p class="q-card__stem">A square garden has an area of 225 square metres. What is its perimeter?</p>
+      <div class="q-diagram" aria-label="Diagram for question 5"><div class="flex justify-center"><svg role="img" aria-label="Rectangle with dimensions" viewBox="0 0 400 280" class="w-full" style="max-width:380px"><rect x="120" y="30" width="200" height="200" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5" rx="4"></rect><text x="220" y="136" text-anchor="middle" fill="#1e40af" font-size="22" font-weight="bold">225 m²</text><line x1="120" y1="250" x2="320" y2="250" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-l)" marker-end="url(#rd-arrow-r)"></line><text x="220" y="272" text-anchor="middle" fill="#dc2626" font-size="18" font-weight="bold">? m</text><line x1="100" y1="30" x2="100" y2="230" stroke="#6366f1" stroke-width="2" marker-start="url(#rd-arrow-u)" marker-end="url(#rd-arrow-d)"></line><text x="82" y="135" text-anchor="middle" fill="#dc2626" font-size="18" font-weight="bold" transform="rotate(-90, 82, 135)">? m</text><defs><marker id="rd-arrow-r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-l" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0, 0 3, 8 6" fill="#6366f1"></polygon></marker><marker id="rd-arrow-d" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto"><polygon points="0 0, 3 8, 6 0" fill="#6366f1"></polygon></marker><marker id="rd-arrow-u" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto"><polygon points="0 8, 3 0, 6 8" fill="#6366f1"></polygon></marker></defs></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">15 metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">30 metres</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">60 metres</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">45 metres</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">75 metres</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Side × side = 225, so side = 15 m. Perimeter = 4 × 15 = 60 metres. ✓</p>
+        </div>
+      </details>
+    </article>
+        </div>
+      </section>
+
+      <!-- Common pitfalls -->
+      <section class="content-section" aria-labelledby="pitfalls-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Watch out for</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="pitfalls-heading">Common Mistakes to Avoid</h2>
+        <div class="pitfalls-grid">
+          <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 1 of 4</p>
+        <p class="pitfall-card__lead">Calculating area when the question asks for perimeter (or the reverse).</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> Train your child to ask &quot;inside or around?&quot; before they pick up the pencil. GL deliberately offers both answers as options.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 2 of 4</p>
+        <p class="pitfall-card__lead">Forgetting that a path or border eats into both sides.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> A 2 m path running inside a garden reduces each dimension by 4 m, not 2 m. This is the most common slip on border problems.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 3 of 4</p>
+        <p class="pitfall-card__lead">Forgetting to halve when finding a triangle's area.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> Base x height gives the surrounding rectangle; the triangle is half of that. The un-halved answer is always sitting there as a tempting wrong option.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 4 of 4</p>
+        <p class="pitfall-card__lead">Using the slant side instead of the perpendicular height.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> For triangles and parallelograms, the area needs the straight-up height, not the sloping edge. GL labels both to tempt the wrong choice.</p>
+      </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="content-section" aria-labelledby="faq-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>FAQ</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-list" role="list">
+          <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What area and perimeter topics come up in the GL 11+ maths exam?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>GL tests perimeter and area of rectangles, squares, triangles and parallelograms, plus compound L-shapes, reverse problems (find a missing side from the area), and real-world contexts like gardens and fencing. Questions range from single-step calculations to multi-step &quot;path around a shape&quot; problems. All are five-option multiple choice.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>How many area and perimeter questions are in the GL 11+ maths paper?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Expect roughly two to four questions in a 50-question paper. Area and perimeter sit inside the wider Shape and Space strand, which makes up around 8 to 12 questions in total. Number topics dominate the paper, so geometry is a smaller but reliable component.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What is the difference between area and perimeter for the 11+?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Perimeter is the total distance around the outside of a shape, measured in linear units like cm or m. Area is the space inside, measured in square units like cm2 or m2. Confusing the two is the most common mistake, so children should decide &quot;inside or around?&quot; before calculating.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>Are circle questions (area and circumference) in the GL 11+?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Circles using pi are not part of the Key Stage 2 curriculum and are very unlikely in a standard GL 11+ paper. They are secondary-school content. Children should focus on rectangles, squares, triangles, parallelograms and compound shapes. A rare super-selective paper might include a basic circle question, but it is not expected.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What formulae does my child need to remember for area and perimeter?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Rectangle area is length x width; rectangle perimeter is 2 x (length + width). Square area is side x side. Triangle area is half x base x perpendicular height. Parallelogram area is base x perpendicular height. These are not provided in the exam, so they must be memorised and fluent.</p>
+        </div>
+      </details>
+        </div>
+      </section>
+
+    </div><!-- /page-wrap -->
+
+    <!-- Closing CTA band -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to build real area & perimeter confidence?</h2>
+      <p class="cta-band__sub">
+        PrepStep has 209 area & perimeter questions in GL Assessment format:
+        five options, instant feedback, and step-by-step explanations. Free to start.
+      </p>
+      <a href="/" class="btn-primary">
+        Start practising free
+        <span class="btn-primary__sub">No sign-up needed &middot; Works on phone, tablet, and desktop</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <strong><a href="/">PrepStep</a></strong> &middot;
+      11+ exam preparation for GL Assessment &middot;
+      <a href="/practice">All practice topics</a> &middot;
+      <a href="/practice/maths">Maths topics</a>
+    </div>
+    <div style="margin-top:0.5rem">
+      &copy; 2026 PrepStep &middot;
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a>
+    </div>
+    <div style="margin-top:0.5rem;font-size:0.75rem;opacity:0.6">
+      Note: /practice, /practice/maths, /privacy and /terms links will resolve once
+      those pages are published. This page&rsquo;s canonical URL is
+      <a href="https://prepstep.co.uk/practice/maths/areaperimeter">https://prepstep.co.uk/practice/maths/areaperimeter</a>.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,3 +1,41 @@
+# PrepStep public practice pages - open to all crawlers
 # https://www.robotstxt.org/robotstxt.html
+
+# All bots welcome - the public practice surface is open
 User-agent: *
+Allow: /
 Disallow:
+
+# Standard search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# AI answer-engine and training crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://prepstep.co.uk/sitemap.xml

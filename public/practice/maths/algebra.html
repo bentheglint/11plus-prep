@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>Algebra 11+ Practice | GL Assessment Questions | PrepStep</title>
+  <meta name="description" content="Free GL Assessment 11+ algebra practice questions, with the skills tested, common equals-sign traps, and parent tips for confident, anxiety-free learning.">
+  <link rel="canonical" href="https://prepstep.co.uk/practice/maths/algebra">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Algebra 11+ Practice | GL Assessment | PrepStep">
+  <meta property="og:description" content="Free GL Assessment 11+ algebra practice questions, with the skills tested, common equals-sign traps, and parent tips for confident, anxiety-free learning.">
+  <meta property="og:url"         content="https://prepstep.co.uk/practice/maths/algebra">
+  <meta property="og:type"        content="article">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Algebra 11+ Practice | GL Assessment | PrepStep">
+  <meta name="twitter:description" content="Free GL Assessment 11+ algebra practice questions, with the skills tested, common equals-sign traps, and parent tips for confident, anxiety-free learning.">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>/* ── Reset & box model ───────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+/* ── Brand tokens (mirrors PrepStep src/index.css) ──────────────────── */
+:root{
+  --primary:#7C3AED;
+  --primary-light:#A29BFE;
+  --primary-surface:#EDE8FF;
+  --primary-dark:#5A4BD1;
+  --accent:#FDCB6E;
+  --accent-dark:#F59E0B;
+  --success:#22C55E;
+  --maths:#3B82F6;
+  --maths-surface:#EFF6FF;
+  --surface:#FEFDFB;
+  --surface-alt:#FBF9F6;
+  --text:#1E293B;
+  --text-secondary:#64748B;
+  --border-subtle:rgba(0,0,0,0.06);
+  --card-shadow:0 1px 3px rgba(108,92,231,0.05),0 4px 16px rgba(108,92,231,0.08);
+}
+
+/* ── Typography ─────────────────────────────────────────────────────── */
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--text);
+  line-height:1.65;
+  background:linear-gradient(145deg,#EDE8FF 0%,#FFF8E8 100%) fixed;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Heading font (Outfit fallback) */
+h1,h2,h3,.font-heading{
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  line-height:1.25;
+  letter-spacing:-0.01em;
+}
+
+/* ── Skip link ─────────────────────────────────────────────────────── */
+.skip-link{
+  position:absolute;top:0;left:0;z-index:9999;
+  background:var(--primary);color:#fff;
+  padding:0.6rem 1rem;border-radius:0 0 6px 0;
+  font-weight:700;text-decoration:none;
+  transform:translateY(-100%);
+  transition:transform 0.15s;
+}
+.skip-link:focus{transform:translateY(0)}
+
+/* ── Layout ────────────────────────────────────────────────────────── */
+.page-wrap{
+  max-width:780px;
+  margin:0 auto;
+  padding:0 1.25rem;
+}
+
+/* ── Site header ───────────────────────────────────────────────────── */
+.site-header{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border-subtle);
+  position:sticky;top:0;z-index:100;
+}
+.site-header__inner{
+  max-width:780px;
+  margin:0 auto;
+  padding:0.85rem 1.25rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.site-header__brand{
+  font-size:1.2rem;
+  font-weight:800;
+  color:var(--primary);
+  text-decoration:none;
+  letter-spacing:-0.02em;
+}
+.site-header__cta{
+  background:var(--primary);
+  color:#fff;
+  padding:0.45rem 1.1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:0.875rem;
+  white-space:nowrap;
+  transition:background 0.2s;
+}
+.site-header__cta:hover{background:var(--primary-dark)}
+
+/* ── Breadcrumb ────────────────────────────────────────────────────── */
+.breadcrumb{
+  margin:1.5rem 0 0;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.breadcrumb a{
+  color:var(--text-secondary);
+  text-decoration:none;
+  transition:color 0.15s;
+}
+.breadcrumb a:hover{color:var(--primary)}
+.breadcrumb__sep{margin:0 0.35rem;opacity:0.5}
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
+.hero{
+  padding:2.5rem 0 2rem;
+  border-bottom:1px solid var(--border-subtle);
+}
+.hero__eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  background:var(--maths-surface);
+  color:var(--maths);
+  border:1px solid rgba(59,130,246,0.2);
+  padding:0.3rem 0.75rem;
+  border-radius:100px;
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(1.75rem,3vw + 1rem,2.6rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--primary);
+}
+.hero__intro{
+  font-size:1.025rem;
+  color:var(--text-secondary);
+  max-width:640px;
+  margin-bottom:1.75rem;
+}
+.hero__intro p+p{margin-top:0.85rem}
+.hero__stat{
+  display:inline-block;
+  background:var(--primary-surface);
+  color:var(--primary-dark);
+  font-weight:700;
+  border-radius:6px;
+  padding:0.1rem 0.45rem;
+  font-size:0.95em;
+}
+.hero__cta{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.85rem 2rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.hero__cta:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.hero__cta:active{transform:translateY(0) scale(0.98)}
+.hero__cta-sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Content sections ──────────────────────────────────────────────── */
+.content-section{
+  padding:2.75rem 0;
+  border-bottom:1px solid var(--border-subtle);
+}
+.section-label{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--primary);
+  margin-bottom:0.6rem;
+}
+.section-label__line{
+  flex:1;height:1px;background:currentColor;opacity:0.2;
+}
+h2.section-heading{
+  font-size:clamp(1.2rem,1rem + 1vw,1.55rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+  scroll-margin-top:4rem;
+}
+
+/* ── "What GL tests" list ──────────────────────────────────────────── */
+.skills-intro{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1rem;
+}
+.skills-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.55rem;
+  margin-bottom:1rem;
+}
+.skills-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:0.6rem;
+  font-size:0.975rem;
+  line-height:1.5;
+}
+.skills-list li::before{
+  content:'';
+  display:block;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--maths);
+  flex-shrink:0;
+  margin-top:0.55em;
+}
+.skills-footnote{
+  font-size:0.825rem;
+  color:var(--text-secondary);
+  border-left:3px solid var(--border-subtle);
+  padding-left:0.75rem;
+  margin-top:1rem;
+  font-style:italic;
+}
+
+/* ── Question cards ────────────────────────────────────────────────── */
+.questions-intro{
+  font-size:0.975rem;
+  color:var(--text-secondary);
+  margin-bottom:1.5rem;
+}
+.questions-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+}
+.q-card{
+  background:var(--surface);
+  border-radius:1rem;
+  border:1px solid var(--border-subtle);
+  box-shadow:var(--card-shadow);
+  overflow:hidden;
+  transition:box-shadow 0.2s;
+}
+.q-card:hover{box-shadow:0 2px 8px rgba(108,92,231,0.1),0 8px 24px rgba(108,92,231,0.12)}
+.q-card__header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 1.25rem 0;
+  gap:0.75rem;
+}
+.q-card__num{
+  font-size:0.82rem;
+  font-weight:700;
+  color:var(--maths);
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff-pill{
+  font-size:0.72rem;
+  font-weight:700;
+  padding:0.2rem 0.6rem;
+  border-radius:100px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff--foundation{background:#DCFCE7;color:#166534}
+.diff--intermediate{background:#FEF9C3;color:#854D0E}
+.diff--challenging{background:var(--primary-surface);color:var(--primary-dark)}
+.q-card__stem{
+  font-size:1.025rem;
+  font-weight:600;
+  color:var(--text);
+  padding:0.75rem 1.25rem 0.85rem;
+  line-height:1.5;
+}
+.q-diagram{
+  margin:0 1.25rem 0.85rem;
+  background:#F8F7FF;
+  border:1px solid rgba(162,155,254,0.25);
+  border-radius:0.75rem;
+  padding:1rem;
+  overflow:hidden;
+}
+.q-options{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+  padding:0 1.25rem 0.85rem;
+}
+.q-option{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  background:#F8F7FF;
+  font-size:0.96rem;
+  line-height:1.4;
+  border:1px solid transparent;
+}
+.q-option--correct{
+  background:#F0FDF4;
+  border-color:#86EFAC;
+  font-weight:600;
+}
+.q-option__letter{
+  font-weight:700;
+  color:var(--primary-light);
+  min-width:1.2rem;
+  flex-shrink:0;
+  font-size:0.9rem;
+}
+.q-option--correct .q-option__letter{color:#16A34A}
+.q-option__text{flex:1}
+.q-option__tick{
+  margin-left:auto;
+  color:#16A34A;
+  font-size:1rem;
+  flex-shrink:0;
+}
+
+/* Explanation accordion */
+.q-explanation{
+  border-top:1px solid var(--border-subtle);
+}
+.q-explanation__toggle{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  cursor:pointer;
+  padding:0.75rem 1.25rem;
+  font-size:0.875rem;
+  font-weight:700;
+  color:var(--primary);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.q-explanation__toggle::-webkit-details-marker{display:none}
+.q-explanation__toggle:hover{background:var(--primary-surface)}
+.q-explanation__toggle::before{
+  content:'';
+  display:inline-block;
+  width:0;height:0;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:7px solid currentColor;
+  transition:transform 0.2s;
+}
+details[open] .q-explanation__toggle::before{transform:rotate(90deg)}
+.q-explanation__body{
+  padding:0.75rem 1.25rem 1rem;
+}
+.q-explanation__body p{
+  font-size:0.92rem;
+  background:#F0FDF4;
+  border-left:3px solid #4ADE80;
+  padding:0.85rem 1rem;
+  border-radius:6px;
+  color:#14532D;
+  line-height:1.6;
+}
+
+/* ── Common pitfalls ───────────────────────────────────────────────── */
+.pitfalls-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.pitfall-card{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  padding:1.1rem 1.25rem;
+  box-shadow:var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+}
+.pitfall-card__num{
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent-dark);
+}
+.pitfall-card__lead{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text);
+}
+.pitfall-card__tip{
+  font-size:0.93rem;
+  color:var(--text-secondary);
+  line-height:1.55;
+}
+.pitfall-tip-label{
+  font-weight:700;
+  color:var(--text);
+}
+
+/* ── FAQ accordion ─────────────────────────────────────────────────── */
+.faq-list{
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+}
+.faq-item{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  overflow:hidden;
+  box-shadow:var(--card-shadow);
+}
+.faq-item__question{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.75rem;
+  cursor:pointer;
+  padding:1rem 1.25rem;
+  font-size:0.975rem;
+  font-weight:700;
+  color:var(--text);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.faq-item__question::-webkit-details-marker{display:none}
+.faq-item__question:hover{background:var(--primary-surface)}
+.faq-item__icon{
+  width:20px;height:20px;flex-shrink:0;
+  border:2px solid var(--primary-light);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--primary);
+  font-size:0.9rem;
+  font-weight:700;
+  transition:transform 0.2s,background 0.15s;
+  line-height:1;
+}
+details[open] .faq-item__icon{
+  transform:rotate(45deg);
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff;
+}
+.faq-item__answer{
+  padding:0 1.25rem 1rem;
+  font-size:0.95rem;
+  color:var(--text-secondary);
+  line-height:1.65;
+  border-top:1px solid var(--border-subtle);
+}
+
+/* ── Closing CTA band ──────────────────────────────────────────────── */
+.cta-band{
+  padding:3rem 0;
+  text-align:center;
+}
+.cta-band h2{
+  font-size:clamp(1.4rem,2vw + 0.5rem,2rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:0.6rem;
+}
+.cta-band__sub{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1.75rem;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btn-primary{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.9rem 2.25rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.05rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(0) scale(0.98)}
+.btn-primary__sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.site-footer{
+  background:rgba(255,255,255,0.7);
+  border-top:1px solid var(--border-subtle);
+  padding:1.5rem 1.25rem;
+  text-align:center;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.site-footer a{color:var(--text-secondary);text-decoration:none}
+.site-footer a:hover{color:var(--primary)}
+
+/* ── Focus states ──────────────────────────────────────────────────── */
+*:focus-visible{
+  outline:2px solid var(--primary);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   Tailwind utility stubs for BarModel (div-based diagram component).
+   These replace the normalised class names produced by normaliseTailwindClasses().
+   ──────────────────────────────────────────────────────────────────── */
+.space-y-3>:not([hidden])~:not([hidden]){margin-top:0.75rem}
+.relative{position:relative}
+.rounded-xl{border-radius:0.75rem}
+.overflow-hidden{overflow:hidden}
+.border-2{border-width:2px;border-style:solid}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-center{justify-content:center}
+.font-bold{font-weight:700}
+.text-base{font-size:1rem;line-height:1.5rem}
+.border-r{border-right-width:1px;border-right-style:solid}
+.transition-all{transition:all 150ms cubic-bezier(0.4,0,0.2,1)}
+.text-center{text-align:center}
+.text-sm{font-size:0.875rem;line-height:1.25rem}
+
+/* Normalised arbitrary-value class replacements */
+._ps-bar-border{border-color:rgba(162,155,254,0.4)}
+._ps-bar-border-seg{border-color:rgba(255,255,255,0.3)}
+._ps-bar-last-no-border-r:last-child{border-right-width:0}
+._ps-bar-text-primary{color:#7C3AED}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media(max-width:480px){
+  .hero__cta{display:block;text-align:center}
+  .site-header__cta{display:none}
+}</style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does the GL 11+ test algebra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, though lightly. Practice-paper analysis suggests roughly 3 to 6 algebra questions per paper, covering substitution, simple equations, function machines, and sequences. Many other \"number\" questions also use algebraic thinking, so the reasoning shows up more often than the raw count implies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of algebra is on the 11+ exam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Year 6 level algebra: substituting a value into an expression, solving one-step and two-step equations, following number machines forwards and backwards, continuing sequences, and simple \"think of a number\" problems. It does not require advanced techniques, just secure understanding of letters as numbers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is 11+ algebra hard for a 10-year-old?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually less hard than parents expect. The maths is gentle; the real hurdles are conceptual, mainly understanding that a letter represents a number and that the equals sign means \"balance\". Once those click, most children handle 11+ algebra confidently."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the most common algebra mistake in the 11+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Treating the equals sign as \"the answer goes here\" rather than as a balance, and misreading \"3a\" as \"3 and a\" instead of \"3 times a\". GL builds wrong answers directly around these two misconceptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I teach my child algebra for the 11+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with missing-number problems (7 + ? = 12) before introducing letters, use a balance-scale picture for equations, and practise function machines both forwards and backwards. Building from arithmetic they already understand removes most of the anxiety around the word \"algebra\"."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://prepstep.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Practice",
+        "item": "https://prepstep.co.uk/practice"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Maths",
+        "item": "https://prepstep.co.uk/practice/maths"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Algebra",
+        "item": "https://prepstep.co.uk/practice/maths/algebra"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Algebra 11+ Practice | GL Assessment Questions | PrepStep",
+    "description": "Free GL Assessment 11+ algebra practice questions, with the skills tested, common equals-sign traps, and parent tips for confident, anxiety-free learning.",
+    "url": "https://prepstep.co.uk/practice/maths/algebra",
+    "author": {
+      "@type": "Organization",
+      "name": "PrepStep"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PrepStep",
+      "url": "https://prepstep.co.uk"
+    },
+    "dateModified": "2026-06-29",
+    "inLanguage": "en-GB"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PrepStep",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "inLanguage": "en-GB",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    },
+    "description": "PrepStep is a free 11+ exam preparation app with Algebra practice questions for the GL Assessment.",
+    "url": "https://prepstep.co.uk"
+  }
+]
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+      <a href="/" class="site-header__cta">Start practising free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice">Practice</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice/maths">Maths</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Algebra</span>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Maths</p>
+        <h1 id="hero-heading">11+ <em>Algebra</em> Practice<br>(GL Assessment)</h1>
+        <div class="hero__intro">
+          <p>Algebra accounts for roughly 3 to 6 questions on a typical GL 11+ maths paper, around 6 to 12 percent, but its true reach is wider because sequences, missing-number problems, and function machines all rely on algebraic thinking without being labelled &quot;algebra&quot;. (GL does not publish official topic weightings, so these figures are careful estimates from practice-paper analysis, flagged here for honesty.)</p>
+          <p>For many parents, &quot;algebra&quot; sounds advanced for a ten-year-old. In the 11+ it is gentler than it sounds: substituting a value into an expression, solving a simple equation, following a number machine, or continuing a sequence. Every question is multiple choice with five options, and a child who understands the idea can usually reach the answer in under a minute.</p>
+          <p>The biggest barrier is rarely the maths itself. It is the idea that a letter stands for a number, and that the equals sign means &quot;both sides balance&quot;, not &quot;the answer is&quot;. Get those two ideas secure and 11+ algebra becomes very approachable.</p>
+        </div>
+        <a href="/" class="hero__cta">
+          Start practising free
+          <span class="hero__cta-sub">312 algebra questions &middot; No sign-up needed</span>
+        </a>
+      </section>
+
+      <!-- What GL tests on fractions -->
+      <section class="content-section" aria-labelledby="what-tested-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Exam guide</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="what-tested-heading">What the GL 11+ Tests on Algebra</h2>
+        <p class="skills-intro">Every question is multiple choice with five options (A to E), spanning D1 to D3. Based on practice-paper analysis (GL publishes no official weightings, so treat the order as indicative), GL tests:</p>
+        <ul class="skills-list" aria-label="Algebra sub-skills tested by GL">
+          <li>Substituting values into expressions (the most frequent type)</li>
+        <li>Solving one-step equations (4x = 28, x + 15 = 42)</li>
+        <li>Solving two-step equations (3x + 5 = 20)</li>
+        <li>Function or number machines, forwards and backwards</li>
+        <li>Continuing linear sequences and finding a distant term</li>
+        <li>&quot;Think of a number&quot; word problems</li>
+        <li>Finding the rule (nth term) of a sequence</li>
+        <li>Shape or picture equations, and pairs of unknowns</li>
+        </ul>
+        <p class="skills-footnote">These map directly onto the Year 6 curriculum: using simple formulae, generating linear sequences, expressing missing-number problems with letters, and finding pairs of numbers that satisfy an equation with two unknowns. D3 questions occasionally stretch into early Year 7 territory.</p>
+      </section>
+
+      <!-- Sample questions -->
+      <section class="content-section" aria-labelledby="sample-questions-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Practice</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="sample-questions-heading">Sample Algebra Questions</h2>
+        <p class="questions-intro">
+          Five questions drawn from PrepStep&rsquo;s algebra bank, spanning Foundation to Challenging.
+          Tap &ldquo;Show worked explanation&rdquo; to see the full method after you&rsquo;ve had a go.
+          The correct answer is highlighted on each question so you can check immediately.
+        </p>
+        <div class="questions-grid">
+          <article class="q-card" aria-label="Sample question 1">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 1</span>
+        <span class="diff-pill diff--foundation" aria-label="Difficulty: Foundation">Foundation</span>
+      </header>
+      <p class="q-card__stem">Emma thinks of a number, adds 7, and gets 15. What number did Emma think of?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">8</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">7</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">6</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">9</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">22</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Let Emma's number be x. So x + 7 = 15. To find x, subtract 7 from both sides: x = 15 - 7 = 8. Emma thought of 8. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 2">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 2</span>
+        <span class="diff-pill diff--foundation" aria-label="Difficulty: Foundation">Foundation</span>
+      </header>
+      <p class="q-card__stem">Jack is j years old. His sister Sophie is 3 years younger. Which expression shows Sophie's age?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">j + 3</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">3j</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">j - 3</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">j ÷ 3</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">3 - j</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>If Jack is j years old and Sophie is 3 years younger, then Sophie's age = j - 3. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 3">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 3</span>
+        <span class="diff-pill diff--intermediate" aria-label="Difficulty: Intermediate">Intermediate</span>
+      </header>
+      <p class="q-card__stem">A number machine multiplies by 3 then adds 2. If you put 5 into the machine, what comes out?</p>
+      <div class="q-diagram" aria-label="Diagram for question 3"><div class="flex flex-col items-center gap-2"><div class="flex items-center gap-1 flex-wrap justify-center"><div class="flex flex-col items-center"><div class="w-14 h-14 rounded-full border-3 flex items-center justify-center font-bold text-lg shadow-sm bg-white border-[#7C3AED] text-[#5A4BD1]">5</div><span class="text-xs mt-1 font-medium text-[#A29BFE]">Input</span></div><div class="flex items-center px-0.5"><svg aria-hidden="true" width="24" height="20" viewBox="0 0 24 20"><defs><marker id="arrowhead-1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#A29BFE"></polygon></marker></defs><line x1="2" y1="10" x2="18" y2="10" stroke="#A29BFE" stroke-width="2" marker-end="url(#arrowhead-1)"></line></svg></div><div class="flex flex-col items-center"><div class="px-4 py-3 rounded-xl bg-[#EDE8FF] border-2 border-[#A29BFE] text-[#5A4BD1] font-bold text-base shadow-sm min-w-[56px] text-center">× 3</div></div><div class="flex items-center px-0.5"><svg aria-hidden="true" width="24" height="20" viewBox="0 0 24 20"><defs><marker id="arrowhead-3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#A29BFE"></polygon></marker></defs><line x1="2" y1="10" x2="18" y2="10" stroke="#A29BFE" stroke-width="2" marker-end="url(#arrowhead-3)"></line></svg></div><div class="flex items-center px-0.5"><svg aria-hidden="true" width="24" height="20" viewBox="0 0 24 20"><defs><marker id="arrowhead-4" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#A29BFE"></polygon></marker></defs><line x1="2" y1="10" x2="18" y2="10" stroke="#A29BFE" stroke-width="2" marker-end="url(#arrowhead-4)"></line></svg></div><div class="flex flex-col items-center"><div class="px-4 py-3 rounded-xl bg-[#EDE8FF] border-2 border-[#A29BFE] text-[#5A4BD1] font-bold text-base shadow-sm min-w-[56px] text-center">+ 2</div></div><div class="flex items-center px-0.5"><svg aria-hidden="true" width="24" height="20" viewBox="0 0 24 20"><defs><marker id="arrowhead-6" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#A29BFE"></polygon></marker></defs><line x1="2" y1="10" x2="18" y2="10" stroke="#A29BFE" stroke-width="2" marker-end="url(#arrowhead-6)"></line></svg></div><div class="flex flex-col items-center"><div class="w-14 h-14 rounded-full border-3 flex items-center justify-center font-bold text-lg shadow-sm bg-amber-50 border-amber-400 text-amber-600 border-dashed">?</div><span class="text-xs mt-1 font-medium text-amber-500">Output</span></div></div></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">13</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">15</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">17</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">19</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">21</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Input = 5. First multiply by 3: 5 × 3 = 15. Then add 2: 15 + 2 = 17. Output = 17. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 4">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 4</span>
+        <span class="diff-pill diff--intermediate" aria-label="Difficulty: Intermediate">Intermediate</span>
+      </header>
+      <p class="q-card__stem">Lily thinks of a number, multiplies it by 4, then adds 5 to get 29. What was Lily's number?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">4</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">5</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">8</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">7</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">6</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Let the number be x. So 4x + 5 = 29. First subtract 5: 4x = 24. Then divide by 4: x = 6. Lily's number was 6. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 5">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 5</span>
+        <span class="diff-pill diff--challenging" aria-label="Difficulty: Challenging">Challenging</span>
+      </header>
+      <p class="q-card__stem">Lucy is n years old. Her mum is 28 years older. In 5 years' time, how old will Lucy's mum be?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">n + 23</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">n + 33</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">n + 28</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">n + 5</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">28n + 5</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Lucy's mum is now n + 28. In 5 years she'll be (n + 28) + 5 = n + 33 years old. ✓</p>
+        </div>
+      </details>
+    </article>
+        </div>
+      </section>
+
+      <!-- Common pitfalls -->
+      <section class="content-section" aria-labelledby="pitfalls-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Watch out for</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="pitfalls-heading">Common Mistakes to Avoid</h2>
+        <div class="pitfalls-grid">
+          <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 1 of 4</p>
+        <p class="pitfall-card__lead">Misreading the equals sign.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> Many children think &quot;=&quot; means &quot;write the answer&quot;. In 8 + 4 = __ + 5 the answer is 7, not 12. Both sides must weigh the same.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 2 of 4</p>
+        <p class="pitfall-card__lead">Reading &quot;3a&quot; as &quot;3 and a&quot;.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> The hidden multiplication sign trips children up; 3a means 3 times a. When substituting a = 5, that is 15, not 8 and not 35.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 3 of 4</p>
+        <p class="pitfall-card__lead">Reversing a number machine in the wrong order.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> To undo &quot;times 3 then add 5&quot;, subtract 5 first, then divide by 3. List the steps and reverse them bottom to top.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 4 of 4</p>
+        <p class="pitfall-card__lead">Translating words backwards.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> &quot;5 less than a number&quot; is n minus 5, not 5 minus n. GL deliberately offers both, so slow, careful translation matters more than speed here.</p>
+      </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="content-section" aria-labelledby="faq-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>FAQ</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-list" role="list">
+          <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>Does the GL 11+ test algebra?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Yes, though lightly. Practice-paper analysis suggests roughly 3 to 6 algebra questions per paper, covering substitution, simple equations, function machines, and sequences. Many other &quot;number&quot; questions also use algebraic thinking, so the reasoning shows up more often than the raw count implies.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What kind of algebra is on the 11+ exam?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Year 6 level algebra: substituting a value into an expression, solving one-step and two-step equations, following number machines forwards and backwards, continuing sequences, and simple &quot;think of a number&quot; problems. It does not require advanced techniques, just secure understanding of letters as numbers.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>Is 11+ algebra hard for a 10-year-old?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Usually less hard than parents expect. The maths is gentle; the real hurdles are conceptual, mainly understanding that a letter represents a number and that the equals sign means &quot;balance&quot;. Once those click, most children handle 11+ algebra confidently.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What is the most common algebra mistake in the 11+?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Treating the equals sign as &quot;the answer goes here&quot; rather than as a balance, and misreading &quot;3a&quot; as &quot;3 and a&quot; instead of &quot;3 times a&quot;. GL builds wrong answers directly around these two misconceptions.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>How do I teach my child algebra for the 11+?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Start with missing-number problems (7 + ? = 12) before introducing letters, use a balance-scale picture for equations, and practise function machines both forwards and backwards. Building from arithmetic they already understand removes most of the anxiety around the word &quot;algebra&quot;.</p>
+        </div>
+      </details>
+        </div>
+      </section>
+
+    </div><!-- /page-wrap -->
+
+    <!-- Closing CTA band -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to build real algebra confidence?</h2>
+      <p class="cta-band__sub">
+        PrepStep has 312 algebra questions in GL Assessment format:
+        five options, instant feedback, and step-by-step explanations. Free to start.
+      </p>
+      <a href="/" class="btn-primary">
+        Start practising free
+        <span class="btn-primary__sub">No sign-up needed &middot; Works on phone, tablet, and desktop</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <strong><a href="/">PrepStep</a></strong> &middot;
+      11+ exam preparation for GL Assessment &middot;
+      <a href="/practice">All practice topics</a> &middot;
+      <a href="/practice/maths">Maths topics</a>
+    </div>
+    <div style="margin-top:0.5rem">
+      &copy; 2026 PrepStep &middot;
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a>
+    </div>
+    <div style="margin-top:0.5rem;font-size:0.75rem;opacity:0.6">
+      Note: /practice, /practice/maths, /privacy and /terms links will resolve once
+      those pages are published. This page&rsquo;s canonical URL is
+      <a href="https://prepstep.co.uk/practice/maths/algebra">https://prepstep.co.uk/practice/maths/algebra</a>.
+    </div>
+  </footer>
+
+</body>
+</html>

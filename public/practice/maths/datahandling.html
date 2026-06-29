@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>Data Handling 11+ Practice | GL Assessment | PrepStep</title>
+  <meta name="description" content="Free data handling practice for the GL Assessment 11+: charts, averages, pie charts and pictograms. Five-option questions with worked answers.">
+  <link rel="canonical" href="https://prepstep.co.uk/practice/maths/datahandling">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Data Handling 11+ Practice | GL Assessment | PrepStep">
+  <meta property="og:description" content="Free data handling practice for the GL Assessment 11+: charts, averages, pie charts and pictograms. Five-option questions with worked answers.">
+  <meta property="og:url"         content="https://prepstep.co.uk/practice/maths/datahandling">
+  <meta property="og:type"        content="article">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Data Handling 11+ Practice | GL Assessment | PrepStep">
+  <meta name="twitter:description" content="Free data handling practice for the GL Assessment 11+: charts, averages, pie charts and pictograms. Five-option questions with worked answers.">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>/* ── Reset & box model ───────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+/* ── Brand tokens (mirrors PrepStep src/index.css) ──────────────────── */
+:root{
+  --primary:#7C3AED;
+  --primary-light:#A29BFE;
+  --primary-surface:#EDE8FF;
+  --primary-dark:#5A4BD1;
+  --accent:#FDCB6E;
+  --accent-dark:#F59E0B;
+  --success:#22C55E;
+  --maths:#3B82F6;
+  --maths-surface:#EFF6FF;
+  --surface:#FEFDFB;
+  --surface-alt:#FBF9F6;
+  --text:#1E293B;
+  --text-secondary:#64748B;
+  --border-subtle:rgba(0,0,0,0.06);
+  --card-shadow:0 1px 3px rgba(108,92,231,0.05),0 4px 16px rgba(108,92,231,0.08);
+}
+
+/* ── Typography ─────────────────────────────────────────────────────── */
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--text);
+  line-height:1.65;
+  background:linear-gradient(145deg,#EDE8FF 0%,#FFF8E8 100%) fixed;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Heading font (Outfit fallback) */
+h1,h2,h3,.font-heading{
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  line-height:1.25;
+  letter-spacing:-0.01em;
+}
+
+/* ── Skip link ─────────────────────────────────────────────────────── */
+.skip-link{
+  position:absolute;top:0;left:0;z-index:9999;
+  background:var(--primary);color:#fff;
+  padding:0.6rem 1rem;border-radius:0 0 6px 0;
+  font-weight:700;text-decoration:none;
+  transform:translateY(-100%);
+  transition:transform 0.15s;
+}
+.skip-link:focus{transform:translateY(0)}
+
+/* ── Layout ────────────────────────────────────────────────────────── */
+.page-wrap{
+  max-width:780px;
+  margin:0 auto;
+  padding:0 1.25rem;
+}
+
+/* ── Site header ───────────────────────────────────────────────────── */
+.site-header{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border-subtle);
+  position:sticky;top:0;z-index:100;
+}
+.site-header__inner{
+  max-width:780px;
+  margin:0 auto;
+  padding:0.85rem 1.25rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.site-header__brand{
+  font-size:1.2rem;
+  font-weight:800;
+  color:var(--primary);
+  text-decoration:none;
+  letter-spacing:-0.02em;
+}
+.site-header__cta{
+  background:var(--primary);
+  color:#fff;
+  padding:0.45rem 1.1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:0.875rem;
+  white-space:nowrap;
+  transition:background 0.2s;
+}
+.site-header__cta:hover{background:var(--primary-dark)}
+
+/* ── Breadcrumb ────────────────────────────────────────────────────── */
+.breadcrumb{
+  margin:1.5rem 0 0;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.breadcrumb a{
+  color:var(--text-secondary);
+  text-decoration:none;
+  transition:color 0.15s;
+}
+.breadcrumb a:hover{color:var(--primary)}
+.breadcrumb__sep{margin:0 0.35rem;opacity:0.5}
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
+.hero{
+  padding:2.5rem 0 2rem;
+  border-bottom:1px solid var(--border-subtle);
+}
+.hero__eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  background:var(--maths-surface);
+  color:var(--maths);
+  border:1px solid rgba(59,130,246,0.2);
+  padding:0.3rem 0.75rem;
+  border-radius:100px;
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(1.75rem,3vw + 1rem,2.6rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--primary);
+}
+.hero__intro{
+  font-size:1.025rem;
+  color:var(--text-secondary);
+  max-width:640px;
+  margin-bottom:1.75rem;
+}
+.hero__intro p+p{margin-top:0.85rem}
+.hero__stat{
+  display:inline-block;
+  background:var(--primary-surface);
+  color:var(--primary-dark);
+  font-weight:700;
+  border-radius:6px;
+  padding:0.1rem 0.45rem;
+  font-size:0.95em;
+}
+.hero__cta{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.85rem 2rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.hero__cta:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.hero__cta:active{transform:translateY(0) scale(0.98)}
+.hero__cta-sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Content sections ──────────────────────────────────────────────── */
+.content-section{
+  padding:2.75rem 0;
+  border-bottom:1px solid var(--border-subtle);
+}
+.section-label{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--primary);
+  margin-bottom:0.6rem;
+}
+.section-label__line{
+  flex:1;height:1px;background:currentColor;opacity:0.2;
+}
+h2.section-heading{
+  font-size:clamp(1.2rem,1rem + 1vw,1.55rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+  scroll-margin-top:4rem;
+}
+
+/* ── "What GL tests" list ──────────────────────────────────────────── */
+.skills-intro{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1rem;
+}
+.skills-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.55rem;
+  margin-bottom:1rem;
+}
+.skills-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:0.6rem;
+  font-size:0.975rem;
+  line-height:1.5;
+}
+.skills-list li::before{
+  content:'';
+  display:block;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--maths);
+  flex-shrink:0;
+  margin-top:0.55em;
+}
+.skills-footnote{
+  font-size:0.825rem;
+  color:var(--text-secondary);
+  border-left:3px solid var(--border-subtle);
+  padding-left:0.75rem;
+  margin-top:1rem;
+  font-style:italic;
+}
+
+/* ── Question cards ────────────────────────────────────────────────── */
+.questions-intro{
+  font-size:0.975rem;
+  color:var(--text-secondary);
+  margin-bottom:1.5rem;
+}
+.questions-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+}
+.q-card{
+  background:var(--surface);
+  border-radius:1rem;
+  border:1px solid var(--border-subtle);
+  box-shadow:var(--card-shadow);
+  overflow:hidden;
+  transition:box-shadow 0.2s;
+}
+.q-card:hover{box-shadow:0 2px 8px rgba(108,92,231,0.1),0 8px 24px rgba(108,92,231,0.12)}
+.q-card__header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 1.25rem 0;
+  gap:0.75rem;
+}
+.q-card__num{
+  font-size:0.82rem;
+  font-weight:700;
+  color:var(--maths);
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff-pill{
+  font-size:0.72rem;
+  font-weight:700;
+  padding:0.2rem 0.6rem;
+  border-radius:100px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff--foundation{background:#DCFCE7;color:#166534}
+.diff--intermediate{background:#FEF9C3;color:#854D0E}
+.diff--challenging{background:var(--primary-surface);color:var(--primary-dark)}
+.q-card__stem{
+  font-size:1.025rem;
+  font-weight:600;
+  color:var(--text);
+  padding:0.75rem 1.25rem 0.85rem;
+  line-height:1.5;
+}
+.q-diagram{
+  margin:0 1.25rem 0.85rem;
+  background:#F8F7FF;
+  border:1px solid rgba(162,155,254,0.25);
+  border-radius:0.75rem;
+  padding:1rem;
+  overflow:hidden;
+}
+.q-options{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+  padding:0 1.25rem 0.85rem;
+}
+.q-option{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  background:#F8F7FF;
+  font-size:0.96rem;
+  line-height:1.4;
+  border:1px solid transparent;
+}
+.q-option--correct{
+  background:#F0FDF4;
+  border-color:#86EFAC;
+  font-weight:600;
+}
+.q-option__letter{
+  font-weight:700;
+  color:var(--primary-light);
+  min-width:1.2rem;
+  flex-shrink:0;
+  font-size:0.9rem;
+}
+.q-option--correct .q-option__letter{color:#16A34A}
+.q-option__text{flex:1}
+.q-option__tick{
+  margin-left:auto;
+  color:#16A34A;
+  font-size:1rem;
+  flex-shrink:0;
+}
+
+/* Explanation accordion */
+.q-explanation{
+  border-top:1px solid var(--border-subtle);
+}
+.q-explanation__toggle{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  cursor:pointer;
+  padding:0.75rem 1.25rem;
+  font-size:0.875rem;
+  font-weight:700;
+  color:var(--primary);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.q-explanation__toggle::-webkit-details-marker{display:none}
+.q-explanation__toggle:hover{background:var(--primary-surface)}
+.q-explanation__toggle::before{
+  content:'';
+  display:inline-block;
+  width:0;height:0;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:7px solid currentColor;
+  transition:transform 0.2s;
+}
+details[open] .q-explanation__toggle::before{transform:rotate(90deg)}
+.q-explanation__body{
+  padding:0.75rem 1.25rem 1rem;
+}
+.q-explanation__body p{
+  font-size:0.92rem;
+  background:#F0FDF4;
+  border-left:3px solid #4ADE80;
+  padding:0.85rem 1rem;
+  border-radius:6px;
+  color:#14532D;
+  line-height:1.6;
+}
+
+/* ── Common pitfalls ───────────────────────────────────────────────── */
+.pitfalls-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.pitfall-card{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  padding:1.1rem 1.25rem;
+  box-shadow:var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+}
+.pitfall-card__num{
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent-dark);
+}
+.pitfall-card__lead{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text);
+}
+.pitfall-card__tip{
+  font-size:0.93rem;
+  color:var(--text-secondary);
+  line-height:1.55;
+}
+.pitfall-tip-label{
+  font-weight:700;
+  color:var(--text);
+}
+
+/* ── FAQ accordion ─────────────────────────────────────────────────── */
+.faq-list{
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+}
+.faq-item{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  overflow:hidden;
+  box-shadow:var(--card-shadow);
+}
+.faq-item__question{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.75rem;
+  cursor:pointer;
+  padding:1rem 1.25rem;
+  font-size:0.975rem;
+  font-weight:700;
+  color:var(--text);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.faq-item__question::-webkit-details-marker{display:none}
+.faq-item__question:hover{background:var(--primary-surface)}
+.faq-item__icon{
+  width:20px;height:20px;flex-shrink:0;
+  border:2px solid var(--primary-light);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--primary);
+  font-size:0.9rem;
+  font-weight:700;
+  transition:transform 0.2s,background 0.15s;
+  line-height:1;
+}
+details[open] .faq-item__icon{
+  transform:rotate(45deg);
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff;
+}
+.faq-item__answer{
+  padding:0 1.25rem 1rem;
+  font-size:0.95rem;
+  color:var(--text-secondary);
+  line-height:1.65;
+  border-top:1px solid var(--border-subtle);
+}
+
+/* ── Closing CTA band ──────────────────────────────────────────────── */
+.cta-band{
+  padding:3rem 0;
+  text-align:center;
+}
+.cta-band h2{
+  font-size:clamp(1.4rem,2vw + 0.5rem,2rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:0.6rem;
+}
+.cta-band__sub{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1.75rem;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btn-primary{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.9rem 2.25rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.05rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(0) scale(0.98)}
+.btn-primary__sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.site-footer{
+  background:rgba(255,255,255,0.7);
+  border-top:1px solid var(--border-subtle);
+  padding:1.5rem 1.25rem;
+  text-align:center;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.site-footer a{color:var(--text-secondary);text-decoration:none}
+.site-footer a:hover{color:var(--primary)}
+
+/* ── Focus states ──────────────────────────────────────────────────── */
+*:focus-visible{
+  outline:2px solid var(--primary);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   Tailwind utility stubs for BarModel (div-based diagram component).
+   These replace the normalised class names produced by normaliseTailwindClasses().
+   ──────────────────────────────────────────────────────────────────── */
+.space-y-3>:not([hidden])~:not([hidden]){margin-top:0.75rem}
+.relative{position:relative}
+.rounded-xl{border-radius:0.75rem}
+.overflow-hidden{overflow:hidden}
+.border-2{border-width:2px;border-style:solid}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-center{justify-content:center}
+.font-bold{font-weight:700}
+.text-base{font-size:1rem;line-height:1.5rem}
+.border-r{border-right-width:1px;border-right-style:solid}
+.transition-all{transition:all 150ms cubic-bezier(0.4,0,0.2,1)}
+.text-center{text-align:center}
+.text-sm{font-size:0.875rem;line-height:1.25rem}
+
+/* Normalised arbitrary-value class replacements */
+._ps-bar-border{border-color:rgba(162,155,254,0.4)}
+._ps-bar-border-seg{border-color:rgba(255,255,255,0.3)}
+._ps-bar-last-no-border-r:last-child{border-right-width:0}
+._ps-bar-text-primary{color:#7C3AED}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media(max-width:480px){
+  .hero__cta{display:block;text-align:center}
+  .site-header__cta{display:none}
+}</style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is data handling in the 11+ maths exam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data handling is the part of the GL 11+ maths paper that uses charts, graphs and tables. Children read values from bar charts, pie charts, line graphs, pictograms and tables, calculate totals and differences, work out averages (mean, median, mode and range), and interpret what the data shows. It is always multiple-choice with five options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many data handling questions are in the GL 11+ maths paper?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Roughly three to six questions per paper, about 6 to 12 per cent of the 50 questions. Number questions dominate a GL maths paper (around five times more common than any other category), so data handling is a smaller but still regular and very winnable part of the exam."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the GL 11+ test mean, median, mode and range?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Although the Year 5 to 6 National Curriculum focuses mainly on the mean, GL papers expect children to handle all four. Mean is add and divide, median is the middle value once ordered, mode is the most common value, and range is highest minus lowest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the hardest type of data handling question in the 11+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The \"backwards mean\" is one of the trickiest: children are given the average and all but one value, then have to find the missing one. Pie chart calculations and Venn diagram \"only\" questions (counting one group while excluding the overlap) are also common stumbling blocks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can my child practise data handling for the GL 11+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use timed, five-option questions that show real charts, graphs and tables, just like the exam. Drill the highest-frequency skills first: reading non-unit scales, finding totals and differences, and calculating the mean. Then add pie charts, pictogram keys and the backwards mean. Always check the scale before reading any value."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://prepstep.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Practice",
+        "item": "https://prepstep.co.uk/practice"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Maths",
+        "item": "https://prepstep.co.uk/practice/maths"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Data Handling",
+        "item": "https://prepstep.co.uk/practice/maths/datahandling"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Data Handling 11+ Practice | GL Assessment | PrepStep",
+    "description": "Free data handling practice for the GL Assessment 11+: charts, averages, pie charts and pictograms. Five-option questions with worked answers.",
+    "url": "https://prepstep.co.uk/practice/maths/datahandling",
+    "author": {
+      "@type": "Organization",
+      "name": "PrepStep"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PrepStep",
+      "url": "https://prepstep.co.uk"
+    },
+    "dateModified": "2026-06-29",
+    "inLanguage": "en-GB"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PrepStep",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "inLanguage": "en-GB",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    },
+    "description": "PrepStep is a free 11+ exam preparation app with Data Handling practice questions for the GL Assessment.",
+    "url": "https://prepstep.co.uk"
+  }
+]
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+      <a href="/" class="site-header__cta">Start practising free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice">Practice</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice/maths">Maths</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Data Handling</span>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Maths</p>
+        <h1 id="hero-heading">11+ <em>Data Handling</em> Practice<br>(GL Assessment)</h1>
+        <div class="hero__intro">
+          <p>Data handling makes up roughly three to six questions on a typical GL Assessment 11+ maths paper, around 6 to 12 per cent of the 50 questions. It covers reading and interpreting charts, graphs and tables, working with averages (mean, median, mode and range), and pulling answers out of pictograms, pie charts and Venn diagrams. Almost every question shows a real chart or dataset, then asks your child to read a value off it or calculate something from it.</p>
+          <p>The GL maths paper is 50 multiple-choice questions in 50 minutes, about a minute each, with five answer options (A to E) every time. Data questions nearly always begin with a picture or table, so your child has to take in the information quickly before the clock counts against them.</p>
+          <p>The reassuring part is that these are some of the most predictable questions on the whole paper. The chart types repeat, the question styles repeat, and focused practice turns them into reliable marks.</p>
+        </div>
+        <a href="/" class="hero__cta">
+          Start practising free
+          <span class="hero__cta-sub">220 data handling questions &middot; No sign-up needed</span>
+        </a>
+      </section>
+
+      <!-- What GL tests on fractions -->
+      <section class="content-section" aria-labelledby="what-tested-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Exam guide</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="what-tested-heading">What the GL 11+ Tests on Data Handling</h2>
+        <p class="skills-intro">Data handling questions are always multiple-choice with five options (A to E). Across a paper, expect these sub-skills in roughly this order of frequency:</p>
+        <ul class="skills-list" aria-label="Data Handling sub-skills tested by GL">
+          <li>Reading values from charts and graphs (the most common): bar charts, line graphs, pictograms and tables, including reading between the scale markings.</li>
+        <li>Calculating from data: finding totals, differences (&quot;how many more&quot;), and fractions or percentages of a total.</li>
+        <li>Averages: mean, median, mode and range, usually from a small dataset.</li>
+        <li>Interpreting trends and comparisons: comparing categories or time periods, spotting rises and falls.</li>
+        <li>Pie chart interpretation: converting between fractions, percentages and amounts.</li>
+        <li>Critical data evaluation (less common, usually the hardest): deciding what the data does or does not actually show.</li>
+        </ul>
+        <p class="skills-footnote">Difficulty spans easy single-value reading through to multi-step problems such as the &quot;backwards mean&quot; (finding a missing value from the average). Note: median, mode and range are not strictly in the Year 5 to 6 National Curriculum but GL tests them regularly.</p>
+      </section>
+
+      <!-- Sample questions -->
+      <section class="content-section" aria-labelledby="sample-questions-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Practice</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="sample-questions-heading">Sample Data Handling Questions</h2>
+        <p class="questions-intro">
+          Five questions drawn from PrepStep&rsquo;s data handling bank, spanning Foundation to Challenging.
+          Tap &ldquo;Show worked explanation&rdquo; to see the full method after you&rsquo;ve had a go.
+          The correct answer is highlighted on each question so you can check immediately.
+        </p>
+        <div class="questions-grid">
+          <article class="q-card" aria-label="Sample question 1">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 1</span>
+        <span class="diff-pill diff--foundation" aria-label="Difficulty: Foundation">Foundation</span>
+      </header>
+      <p class="q-card__stem">This bar chart shows Lucy's test scores. What was her score in Science?</p>
+      <div class="q-diagram" aria-label="Diagram for question 1"><div class="w-full"><svg role="img" aria-label="Bar chart" viewBox="0 0 560 300" class="w-full block"><line x1="70" y1="235" x2="530" y2="235" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="213.5" x2="530" y2="213.5" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="192" x2="530" y2="192" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="170.5" x2="530" y2="170.5" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="149" x2="530" y2="149" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="127.5" x2="530" y2="127.5" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="106" x2="530" y2="106" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="84.5" x2="530" y2="84.5" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="63" x2="530" y2="63" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="41.5" x2="530" y2="41.5" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="20" x2="530" y2="20" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"></line><line x1="70" y1="20" x2="70" y2="235" stroke="#374151" stroke-width="2"></line><g><line x1="64" y1="235" x2="70" y2="235" stroke="#374151" stroke-width="2"></line><text x="60" y="240" text-anchor="end" fill="#374151" font-size="14" font-weight="500">0</text></g><g><line x1="64" y1="213.5" x2="70" y2="213.5" stroke="#374151" stroke-width="2"></line><text x="60" y="218.5" text-anchor="end" fill="#374151" font-size="14" font-weight="500">1</text></g><g><line x1="64" y1="192" x2="70" y2="192" stroke="#374151" stroke-width="2"></line><text x="60" y="197" text-anchor="end" fill="#374151" font-size="14" font-weight="500">2</text></g><g><line x1="64" y1="170.5" x2="70" y2="170.5" stroke="#374151" stroke-width="2"></line><text x="60" y="175.5" text-anchor="end" fill="#374151" font-size="14" font-weight="500">3</text></g><g><line x1="64" y1="149" x2="70" y2="149" stroke="#374151" stroke-width="2"></line><text x="60" y="154" text-anchor="end" fill="#374151" font-size="14" font-weight="500">4</text></g><g><line x1="64" y1="127.5" x2="70" y2="127.5" stroke="#374151" stroke-width="2"></line><text x="60" y="132.5" text-anchor="end" fill="#374151" font-size="14" font-weight="500">5</text></g><g><line x1="64" y1="106" x2="70" y2="106" stroke="#374151" stroke-width="2"></line><text x="60" y="111" text-anchor="end" fill="#374151" font-size="14" font-weight="500">6</text></g><g><line x1="64" y1="84.5" x2="70" y2="84.5" stroke="#374151" stroke-width="2"></line><text x="60" y="89.5" text-anchor="end" fill="#374151" font-size="14" font-weight="500">7</text></g><g><line x1="64" y1="63" x2="70" y2="63" stroke="#374151" stroke-width="2"></line><text x="60" y="68" text-anchor="end" fill="#374151" font-size="14" font-weight="500">8</text></g><g><line x1="64" y1="41.5" x2="70" y2="41.5" stroke="#374151" stroke-width="2"></line><text x="60" y="46.5" text-anchor="end" fill="#374151" font-size="14" font-weight="500">9</text></g><g><line x1="64" y1="20" x2="70" y2="20" stroke="#374151" stroke-width="2"></line><text x="60" y="25" text-anchor="end" fill="#374151" font-size="14" font-weight="500">10</text></g><text x="16" y="127.5" text-anchor="middle" fill="#6b7280" font-size="13" font-weight="600" transform="rotate(-90, 16, 127.5)">Score</text><line x1="70" y1="235" x2="530" y2="235" stroke="#374151" stroke-width="2"></line><g><rect x="138.6" y="84.5" width="60" height="150.5" fill="#818cf8" rx="3" ry="3" stroke="none" stroke-width="0" opacity="0.85"></rect><text x="168.6" y="255" text-anchor="middle" fill="#374151" font-size="15" font-weight="500">Maths</text></g><g><rect x="226.2" y="41.5" width="60" height="193.5" fill="#38bdf8" rx="3" ry="3" stroke="none" stroke-width="0" opacity="0.85"></rect><text x="256.2" y="255" text-anchor="middle" fill="#374151" font-size="15" font-weight="500">English</text></g><g><rect x="313.79999999999995" y="63" width="60" height="172" fill="#c084fc" rx="3" ry="3" stroke="none" stroke-width="0" opacity="0.85"></rect><text x="343.79999999999995" y="255" text-anchor="middle" fill="#374151" font-size="15" font-weight="500">Science</text></g><g><rect x="401.4" y="106" width="60" height="129" fill="#34d399" rx="3" ry="3" stroke="none" stroke-width="0" opacity="0.85"></rect><text x="431.4" y="255" text-anchor="middle" fill="#374151" font-size="15" font-weight="500">History</text></g><text x="300" y="292" text-anchor="middle" fill="#6b7280" font-size="13" font-weight="600">Subject</text></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">8</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">7</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">6</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">9</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">10</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Reading from the bar chart, the Science bar reaches up to 8. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 2">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 2</span>
+        <span class="diff-pill diff--foundation" aria-label="Difficulty: Foundation">Foundation</span>
+      </header>
+      <p class="q-card__stem">Emma scores these marks in five tests: 8, 9, 7, 9, 9. What is the mode?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">7</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">9</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">8</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">8.5</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">No mode</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>The mode is the value that appears most often. Count each: 7 appears once, 8 appears once, 9 appears three times. The mode is 9. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 3">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 3</span>
+        <span class="diff-pill diff--intermediate" aria-label="Difficulty: Intermediate">Intermediate</span>
+      </header>
+      <p class="q-card__stem">Tom records the temperatures: 12°C, 15°C, 18°C, 14°C, 16°C. What is the mean temperature?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">14°C</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">16°C</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">15°C</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">17°C</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">18°C</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Mean = sum of all values ÷ number of values. Sum = 12 + 15 + 18 + 14 + 16 = 75. Mean = 75 ÷ 5 = 15°C. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 4">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 4</span>
+        <span class="diff-pill diff--challenging" aria-label="Difficulty: Challenging">Challenging</span>
+      </header>
+      <p class="q-card__stem">The mean of four numbers is 12. Three of the numbers are 10, 11, and 15. What is the fourth number?</p>
+      
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">10</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">11</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">14</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">13</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">12</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>If the mean is 12 and there are 4 numbers, the total sum must be 12 × 4 = 48. The three known numbers add up to 10 + 11 + 15 = 36. So the fourth number = 48 - 36 = 12. ✓</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="q-card" aria-label="Sample question 5">
+      <header class="q-card__header">
+        <span class="q-card__num">Question 5</span>
+        <span class="diff-pill diff--challenging" aria-label="Difficulty: Challenging">Challenging</span>
+      </header>
+      <p class="q-card__stem">This pie chart shows favorite sports. If 120 children were surveyed, how many chose Football?</p>
+      <div class="q-diagram" aria-label="Diagram for question 5"><div class="flex justify-center"><svg role="img" aria-label="Pie chart" viewBox="0 0 300 300" class="w-full" style="max-width:340px;overflow:visible"><g><path d="M 150 150 L 150 40 A 110 110 0 0 1 245.26279441628827 205 Z" fill="#818cf8" stroke="white" stroke-width="2" opacity="0.85"></path><text x="207.15767664977295" y="121" text-anchor="middle" fill="white" font-size="13" font-weight="bold" style="text-shadow:0 1px 3px rgba(0,0,0,0.4)">120°</text><text x="271.24355652982143" y="84.00000000000001" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">Football</text></g><g><path d="M 150 150 L 245.26279441628827 205 A 110 110 0 0 1 95.00000000000003 245.26279441628827 Z" fill="#38bdf8" stroke="white" stroke-width="2" opacity="0.85"></path><text x="167.08205697676635" y="217.75110453507853" text-anchor="middle" fill="white" font-size="13" font-weight="bold" style="text-shadow:0 1px 3px rgba(0,0,0,0.4)">90°</text><text x="186.23466631435292" y="289.2296156804696" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">Basketball</text></g><g><path d="M 150 150 L 95.00000000000003 245.26279441628827 A 110 110 0 0 1 42.403763919281374 127.1297140100465 Z" fill="#c084fc" stroke="white" stroke-width="2" opacity="0.85"></path><text x="89.70599979558835" y="180.84461844300284" text-anchor="middle" fill="white" font-size="13" font-weight="bold" style="text-shadow:0 1px 3px rgba(0,0,0,0.4)">72°</text><text x="22.103635930035892" y="210.94313003061205" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">Swimming</text></g><g><path d="M 150 150 L 42.403763919281374 127.1297140100465 A 110 110 0 0 1 105.25896926166199 49.50999965931389 Z" fill="#34d399" stroke="white" stroke-width="2" opacity="0.85"></path><text x="98.70836654383993" y="112.46485419071072" text-anchor="middle" fill="white" font-size="10" font-weight="bold" style="text-shadow:0 1px 3px rgba(0,0,0,0.4)">54°</text><text x="41.199565396024084" y="65.89514525302273" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">Tennis</text></g><g><path d="M 150 150 L 105.25896926166199 49.50999965931389 A 110 110 0 0 1 149.99999999999997 40 Z" fill="#fbbf24" stroke="white" stroke-width="2" opacity="0.85"></path><text x="136.27782840602785" y="89.44225835156884" text-anchor="middle" fill="white" font-size="10" font-weight="bold" style="text-shadow:0 1px 3px rgba(0,0,0,0.4)">24°</text><text x="120.89236328551362" y="17.059335897267232" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">Rugby</text></g><circle cx="150" cy="150" r="22" fill="white" opacity="0.85"></circle><text x="150" y="156" text-anchor="middle" fill="#7C3AED" font-size="16" font-weight="bold">120</text></svg></div></div>
+      <ol class="q-options" role="list">
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">A</span>
+          <span class="q-option__text">30</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">B</span>
+          <span class="q-option__text">70</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">C</span>
+          <span class="q-option__text">50</span>
+        </li>
+        <li class="q-option" >
+          <span class="q-option__letter" aria-hidden="true">D</span>
+          <span class="q-option__text">60</span>
+        </li>
+        <li class="q-option q-option--correct" aria-current="true">
+          <span class="q-option__letter" aria-hidden="true">E</span>
+          <span class="q-option__text">40</span><span class="q-option__tick" aria-label="Correct answer">&#10003;</span>
+        </li>
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>Football takes up 120° of the circle. 120° out of 360° = 1/3. So 1/3 of 120 = 40 children. ✓</p>
+        </div>
+      </details>
+    </article>
+        </div>
+      </section>
+
+      <!-- Common pitfalls -->
+      <section class="content-section" aria-labelledby="pitfalls-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>Watch out for</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="pitfalls-heading">Common Mistakes to Avoid</h2>
+        <div class="pitfalls-grid">
+          <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 1 of 4</p>
+        <p class="pitfall-card__lead">Not checking the scale interval first.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> A y-axis often goes up in 2s, 5s, 10s or more, so the third line up can mean 15, not 3. Read the numbers on both axes before reading any bar or point.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 2 of 4</p>
+        <p class="pitfall-card__lead">Misreading half-symbols on a pictogram.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> If each symbol stands for 10, two and a half symbols mean 25, not 2.5 or 20. Read the key first, then count whole and half symbols and multiply.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 3 of 4</p>
+        <p class="pitfall-card__lead">Giving the total instead of the mean (and the highest value instead of the range).</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> For the mean, always ask &quot;did I divide?&quot;; for the range, remember it is highest minus lowest, always a subtraction.</p>
+      </div>
+      <div class="pitfall-card">
+        <p class="pitfall-card__num">Common mistake 4 of 4</p>
+        <p class="pitfall-card__lead">Finding the median without ordering the data first.</p>
+        <p class="pitfall-card__tip"><span class="pitfall-tip-label">Tip:</span> GL deliberately lists numbers out of order. Make &quot;median means order it first&quot; an automatic habit before picking the middle value.</p>
+      </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="content-section" aria-labelledby="faq-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>FAQ</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-list" role="list">
+          <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What is data handling in the 11+ maths exam?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Data handling is the part of the GL 11+ maths paper that uses charts, graphs and tables. Children read values from bar charts, pie charts, line graphs, pictograms and tables, calculate totals and differences, work out averages (mean, median, mode and range), and interpret what the data shows. It is always multiple-choice with five options.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>How many data handling questions are in the GL 11+ maths paper?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Roughly three to six questions per paper, about 6 to 12 per cent of the 50 questions. Number questions dominate a GL maths paper (around five times more common than any other category), so data handling is a smaller but still regular and very winnable part of the exam.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>Does the GL 11+ test mean, median, mode and range?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Yes. Although the Year 5 to 6 National Curriculum focuses mainly on the mean, GL papers expect children to handle all four. Mean is add and divide, median is the middle value once ordered, mode is the most common value, and range is highest minus lowest.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>What is the hardest type of data handling question in the 11+?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>The &quot;backwards mean&quot; is one of the trickiest: children are given the average and all but one value, then have to find the missing one. Pie chart calculations and Venn diagram &quot;only&quot; questions (counting one group while excluding the overlap) are also common stumbling blocks.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-item__question">
+          <span>How can my child practise data handling for the GL 11+?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>Use timed, five-option questions that show real charts, graphs and tables, just like the exam. Drill the highest-frequency skills first: reading non-unit scales, finding totals and differences, and calculating the mean. Then add pie charts, pictogram keys and the backwards mean. Always check the scale before reading any value.</p>
+        </div>
+      </details>
+        </div>
+      </section>
+
+    </div><!-- /page-wrap -->
+
+    <!-- Closing CTA band -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to build real data handling confidence?</h2>
+      <p class="cta-band__sub">
+        PrepStep has 220 data handling questions in GL Assessment format:
+        five options, instant feedback, and step-by-step explanations. Free to start.
+      </p>
+      <a href="/" class="btn-primary">
+        Start practising free
+        <span class="btn-primary__sub">No sign-up needed &middot; Works on phone, tablet, and desktop</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <strong><a href="/">PrepStep</a></strong> &middot;
+      11+ exam preparation for GL Assessment &middot;
+      <a href="/practice">All practice topics</a> &middot;
+      <a href="/practice/maths">Maths topics</a>
+    </div>
+    <div style="margin-top:0.5rem">
+      &copy; 2026 PrepStep &middot;
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a>
+    </div>
+    <div style="margin-top:0.5rem;font-size:0.75rem;opacity:0.6">
+      Note: /practice, /practice/maths, /privacy and /terms links will resolve once
+      those pages are published. This page&rsquo;s canonical URL is
+      <a href="https://prepstep.co.uk/practice/maths/datahandling">https://prepstep.co.uk/practice/maths/datahandling</a>.
+    </div>
+  </footer>
+
+</body>
+</html>

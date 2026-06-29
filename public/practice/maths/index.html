@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>11+ Maths Practice Questions (GL Assessment) | PrepStep</title>
+  <meta name="description" content="Free GL Assessment 11+ maths practice questions across all 16 topics: fractions, percentages, algebra, geometry and more. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6.">
+  <link rel="canonical" href="https://prepstep.co.uk/practice/maths">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="11+ Maths Practice (GL Assessment) | PrepStep">
+  <meta property="og:description" content="Free GL Assessment 11+ maths practice across all 16 topics. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6 preparation.">
+  <meta property="og:url"         content="https://prepstep.co.uk/practice/maths">
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="11+ Maths Practice (GL Assessment) | PrepStep">
+  <meta name="twitter:description" content="Free GL Assessment 11+ maths practice across all 16 topics. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6 preparation.">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>/* ── Reset & box model ───────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+/* ── Brand tokens (mirrors PrepStep src/index.css) ──────────────────── */
+:root{
+  --primary:#7C3AED;
+  --primary-light:#A29BFE;
+  --primary-surface:#EDE8FF;
+  --primary-dark:#5A4BD1;
+  --accent:#FDCB6E;
+  --accent-dark:#F59E0B;
+  --success:#22C55E;
+  --maths:#3B82F6;
+  --maths-surface:#EFF6FF;
+  --surface:#FEFDFB;
+  --surface-alt:#FBF9F6;
+  --text:#1E293B;
+  --text-secondary:#64748B;
+  --border-subtle:rgba(0,0,0,0.06);
+  --card-shadow:0 1px 3px rgba(108,92,231,0.05),0 4px 16px rgba(108,92,231,0.08);
+}
+
+/* ── Typography ─────────────────────────────────────────────────────── */
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--text);
+  line-height:1.65;
+  background:linear-gradient(145deg,#EDE8FF 0%,#FFF8E8 100%) fixed;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Heading font (Outfit fallback) */
+h1,h2,h3,.font-heading{
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  line-height:1.25;
+  letter-spacing:-0.01em;
+}
+
+/* ── Skip link ─────────────────────────────────────────────────────── */
+.skip-link{
+  position:absolute;top:0;left:0;z-index:9999;
+  background:var(--primary);color:#fff;
+  padding:0.6rem 1rem;border-radius:0 0 6px 0;
+  font-weight:700;text-decoration:none;
+  transform:translateY(-100%);
+  transition:transform 0.15s;
+}
+.skip-link:focus{transform:translateY(0)}
+
+/* ── Layout ────────────────────────────────────────────────────────── */
+.page-wrap{
+  max-width:780px;
+  margin:0 auto;
+  padding:0 1.25rem;
+}
+
+/* ── Site header ───────────────────────────────────────────────────── */
+.site-header{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border-subtle);
+  position:sticky;top:0;z-index:100;
+}
+.site-header__inner{
+  max-width:780px;
+  margin:0 auto;
+  padding:0.85rem 1.25rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.site-header__brand{
+  font-size:1.2rem;
+  font-weight:800;
+  color:var(--primary);
+  text-decoration:none;
+  letter-spacing:-0.02em;
+}
+.site-header__cta{
+  background:var(--primary);
+  color:#fff;
+  padding:0.45rem 1.1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:0.875rem;
+  white-space:nowrap;
+  transition:background 0.2s;
+}
+.site-header__cta:hover{background:var(--primary-dark)}
+
+/* ── Breadcrumb ────────────────────────────────────────────────────── */
+.breadcrumb{
+  margin:1.5rem 0 0;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.breadcrumb a{
+  color:var(--text-secondary);
+  text-decoration:none;
+  transition:color 0.15s;
+}
+.breadcrumb a:hover{color:var(--primary)}
+.breadcrumb__sep{margin:0 0.35rem;opacity:0.5}
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
+.hero{
+  padding:2.5rem 0 2rem;
+  border-bottom:1px solid var(--border-subtle);
+}
+.hero__eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  background:var(--maths-surface);
+  color:var(--maths);
+  border:1px solid rgba(59,130,246,0.2);
+  padding:0.3rem 0.75rem;
+  border-radius:100px;
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(1.75rem,3vw + 1rem,2.6rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--primary);
+}
+.hero__intro{
+  font-size:1.025rem;
+  color:var(--text-secondary);
+  max-width:640px;
+  margin-bottom:1.75rem;
+}
+.hero__intro p+p{margin-top:0.85rem}
+.hero__stat{
+  display:inline-block;
+  background:var(--primary-surface);
+  color:var(--primary-dark);
+  font-weight:700;
+  border-radius:6px;
+  padding:0.1rem 0.45rem;
+  font-size:0.95em;
+}
+.hero__cta{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.85rem 2rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.hero__cta:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.hero__cta:active{transform:translateY(0) scale(0.98)}
+.hero__cta-sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Content sections ──────────────────────────────────────────────── */
+.content-section{
+  padding:2.75rem 0;
+  border-bottom:1px solid var(--border-subtle);
+}
+.section-label{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--primary);
+  margin-bottom:0.6rem;
+}
+.section-label__line{
+  flex:1;height:1px;background:currentColor;opacity:0.2;
+}
+h2.section-heading{
+  font-size:clamp(1.2rem,1rem + 1vw,1.55rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:1.25rem;
+  scroll-margin-top:4rem;
+}
+
+/* ── "What GL tests" list ──────────────────────────────────────────── */
+.skills-intro{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1rem;
+}
+.skills-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.55rem;
+  margin-bottom:1rem;
+}
+.skills-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:0.6rem;
+  font-size:0.975rem;
+  line-height:1.5;
+}
+.skills-list li::before{
+  content:'';
+  display:block;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--maths);
+  flex-shrink:0;
+  margin-top:0.55em;
+}
+.skills-footnote{
+  font-size:0.825rem;
+  color:var(--text-secondary);
+  border-left:3px solid var(--border-subtle);
+  padding-left:0.75rem;
+  margin-top:1rem;
+  font-style:italic;
+}
+
+/* ── Question cards ────────────────────────────────────────────────── */
+.questions-intro{
+  font-size:0.975rem;
+  color:var(--text-secondary);
+  margin-bottom:1.5rem;
+}
+.questions-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+}
+.q-card{
+  background:var(--surface);
+  border-radius:1rem;
+  border:1px solid var(--border-subtle);
+  box-shadow:var(--card-shadow);
+  overflow:hidden;
+  transition:box-shadow 0.2s;
+}
+.q-card:hover{box-shadow:0 2px 8px rgba(108,92,231,0.1),0 8px 24px rgba(108,92,231,0.12)}
+.q-card__header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 1.25rem 0;
+  gap:0.75rem;
+}
+.q-card__num{
+  font-size:0.82rem;
+  font-weight:700;
+  color:var(--maths);
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff-pill{
+  font-size:0.72rem;
+  font-weight:700;
+  padding:0.2rem 0.6rem;
+  border-radius:100px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+.diff--foundation{background:#DCFCE7;color:#166534}
+.diff--intermediate{background:#FEF9C3;color:#854D0E}
+.diff--challenging{background:var(--primary-surface);color:var(--primary-dark)}
+.q-card__stem{
+  font-size:1.025rem;
+  font-weight:600;
+  color:var(--text);
+  padding:0.75rem 1.25rem 0.85rem;
+  line-height:1.5;
+}
+.q-diagram{
+  margin:0 1.25rem 0.85rem;
+  background:#F8F7FF;
+  border:1px solid rgba(162,155,254,0.25);
+  border-radius:0.75rem;
+  padding:1rem;
+  overflow:hidden;
+}
+.q-options{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+  padding:0 1.25rem 0.85rem;
+}
+.q-option{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  background:#F8F7FF;
+  font-size:0.96rem;
+  line-height:1.4;
+  border:1px solid transparent;
+}
+.q-option--correct{
+  background:#F0FDF4;
+  border-color:#86EFAC;
+  font-weight:600;
+}
+.q-option__letter{
+  font-weight:700;
+  color:var(--primary-light);
+  min-width:1.2rem;
+  flex-shrink:0;
+  font-size:0.9rem;
+}
+.q-option--correct .q-option__letter{color:#16A34A}
+.q-option__text{flex:1}
+.q-option__tick{
+  margin-left:auto;
+  color:#16A34A;
+  font-size:1rem;
+  flex-shrink:0;
+}
+
+/* Explanation accordion */
+.q-explanation{
+  border-top:1px solid var(--border-subtle);
+}
+.q-explanation__toggle{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  cursor:pointer;
+  padding:0.75rem 1.25rem;
+  font-size:0.875rem;
+  font-weight:700;
+  color:var(--primary);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.q-explanation__toggle::-webkit-details-marker{display:none}
+.q-explanation__toggle:hover{background:var(--primary-surface)}
+.q-explanation__toggle::before{
+  content:'';
+  display:inline-block;
+  width:0;height:0;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:7px solid currentColor;
+  transition:transform 0.2s;
+}
+details[open] .q-explanation__toggle::before{transform:rotate(90deg)}
+.q-explanation__body{
+  padding:0.75rem 1.25rem 1rem;
+}
+.q-explanation__body p{
+  font-size:0.92rem;
+  background:#F0FDF4;
+  border-left:3px solid #4ADE80;
+  padding:0.85rem 1rem;
+  border-radius:6px;
+  color:#14532D;
+  line-height:1.6;
+}
+
+/* ── Common pitfalls ───────────────────────────────────────────────── */
+.pitfalls-grid{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.pitfall-card{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  padding:1.1rem 1.25rem;
+  box-shadow:var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+}
+.pitfall-card__num{
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent-dark);
+}
+.pitfall-card__lead{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text);
+}
+.pitfall-card__tip{
+  font-size:0.93rem;
+  color:var(--text-secondary);
+  line-height:1.55;
+}
+.pitfall-tip-label{
+  font-weight:700;
+  color:var(--text);
+}
+
+/* ── FAQ accordion ─────────────────────────────────────────────────── */
+.faq-list{
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+}
+.faq-item{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  overflow:hidden;
+  box-shadow:var(--card-shadow);
+}
+.faq-item__question{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.75rem;
+  cursor:pointer;
+  padding:1rem 1.25rem;
+  font-size:0.975rem;
+  font-weight:700;
+  color:var(--text);
+  list-style:none;
+  user-select:none;
+  transition:background 0.15s;
+}
+.faq-item__question::-webkit-details-marker{display:none}
+.faq-item__question:hover{background:var(--primary-surface)}
+.faq-item__icon{
+  width:20px;height:20px;flex-shrink:0;
+  border:2px solid var(--primary-light);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--primary);
+  font-size:0.9rem;
+  font-weight:700;
+  transition:transform 0.2s,background 0.15s;
+  line-height:1;
+}
+details[open] .faq-item__icon{
+  transform:rotate(45deg);
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff;
+}
+.faq-item__answer{
+  padding:0 1.25rem 1rem;
+  font-size:0.95rem;
+  color:var(--text-secondary);
+  line-height:1.65;
+  border-top:1px solid var(--border-subtle);
+}
+
+/* ── Closing CTA band ──────────────────────────────────────────────── */
+.cta-band{
+  padding:3rem 0;
+  text-align:center;
+}
+.cta-band h2{
+  font-size:clamp(1.4rem,2vw + 0.5rem,2rem);
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:0.6rem;
+}
+.cta-band__sub{
+  font-size:1rem;
+  color:var(--text-secondary);
+  margin-bottom:1.75rem;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btn-primary{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.9rem 2.25rem;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.05rem;
+  transition:background 0.2s,transform 0.15s;
+  box-shadow:0 4px 14px rgba(124,58,237,0.3);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(0) scale(0.98)}
+.btn-primary__sub{
+  display:block;
+  font-size:0.8rem;
+  font-weight:400;
+  margin-top:0.25rem;
+  opacity:0.85;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.site-footer{
+  background:rgba(255,255,255,0.7);
+  border-top:1px solid var(--border-subtle);
+  padding:1.5rem 1.25rem;
+  text-align:center;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+}
+.site-footer a{color:var(--text-secondary);text-decoration:none}
+.site-footer a:hover{color:var(--primary)}
+
+/* ── Focus states ──────────────────────────────────────────────────── */
+*:focus-visible{
+  outline:2px solid var(--primary);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   Tailwind utility stubs for BarModel (div-based diagram component).
+   These replace the normalised class names produced by normaliseTailwindClasses().
+   ──────────────────────────────────────────────────────────────────── */
+.space-y-3>:not([hidden])~:not([hidden]){margin-top:0.75rem}
+.relative{position:relative}
+.rounded-xl{border-radius:0.75rem}
+.overflow-hidden{overflow:hidden}
+.border-2{border-width:2px;border-style:solid}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-center{justify-content:center}
+.font-bold{font-weight:700}
+.text-base{font-size:1rem;line-height:1.5rem}
+.border-r{border-right-width:1px;border-right-style:solid}
+.transition-all{transition:all 150ms cubic-bezier(0.4,0,0.2,1)}
+.text-center{text-align:center}
+.text-sm{font-size:0.875rem;line-height:1.25rem}
+
+/* Normalised arbitrary-value class replacements */
+._ps-bar-border{border-color:rgba(162,155,254,0.4)}
+._ps-bar-border-seg{border-color:rgba(255,255,255,0.3)}
+._ps-bar-last-no-border-r:last-child{border-right-width:0}
+._ps-bar-text-primary{color:#7C3AED}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media(max-width:480px){
+  .hero__cta{display:block;text-align:center}
+  .site-header__cta{display:none}
+}
+
+/* ── Hub-specific styles ─────────────────────────────────────────── */
+.hub-intro{
+  font-size:1.025rem;
+  color:var(--text-secondary);
+  max-width:640px;
+  margin-bottom:1.75rem;
+}
+.hub-intro p+p{margin-top:0.85rem}
+
+/* Topic grid (maths hub) */
+.topic-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+.topic-card{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:0.875rem;
+  padding:1.1rem 1.25rem;
+  box-shadow:var(--card-shadow);
+  text-decoration:none;
+  display:block;
+  transition:box-shadow 0.2s,transform 0.15s;
+  color:inherit;
+}
+.topic-card:hover{
+  box-shadow:0 2px 8px rgba(108,92,231,0.1),0 8px 24px rgba(108,92,231,0.12);
+  transform:translateY(-2px);
+}
+.topic-card__label{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:0.35rem;
+  line-height:1.3;
+}
+.topic-card__desc{
+  font-size:0.85rem;
+  color:var(--text-secondary);
+  line-height:1.45;
+}
+
+/* Subject grid (practice hub) */
+.subject-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:1.25rem;
+  margin-top:1rem;
+}
+.subject-card{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:1rem;
+  padding:1.5rem 1.5rem 1.25rem;
+  box-shadow:var(--card-shadow);
+  text-decoration:none;
+  display:block;
+  transition:box-shadow 0.2s,transform 0.15s;
+  color:inherit;
+}
+.subject-card:not(.subject-card--disabled):hover{
+  box-shadow:0 2px 8px rgba(108,92,231,0.1),0 8px 24px rgba(108,92,231,0.12);
+  transform:translateY(-2px);
+}
+.subject-card--disabled{
+  opacity:0.65;
+  cursor:default;
+}
+.subject-card__eyebrow{
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.07em;
+  text-transform:uppercase;
+  margin-bottom:0.5rem;
+}
+.subject-card__eyebrow--maths{color:var(--maths)}
+.subject-card__eyebrow--english{color:#10B981}
+.subject-card__eyebrow--vr{color:#F59E0B}
+.subject-card__title{
+  font-size:1.2rem;
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:0.5rem;
+  line-height:1.2;
+}
+.subject-card__desc{
+  font-size:0.9rem;
+  color:var(--text-secondary);
+  line-height:1.5;
+  margin-bottom:0.85rem;
+}
+.subject-card__badge{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  font-size:0.78rem;
+  font-weight:700;
+  padding:0.25rem 0.65rem;
+  border-radius:100px;
+  letter-spacing:0.03em;
+}
+.subject-card__badge--live{background:#DCFCE7;color:#166534}
+.subject-card__badge--soon{
+  background:var(--surface-alt);
+  color:var(--text-secondary);
+  border:1px solid var(--border-subtle);
+}
+
+@media(max-width:600px){
+  .topic-grid{grid-template-columns:1fr 1fr}
+  .subject-grid{grid-template-columns:1fr}
+}
+@media(max-width:380px){
+  .topic-grid{grid-template-columns:1fr}
+}</style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://prepstep.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Practice",
+        "item": "https://prepstep.co.uk/practice"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Maths",
+        "item": "https://prepstep.co.uk/practice/maths"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "11+ Maths Practice (GL Assessment) | PrepStep",
+    "description": "Free GL Assessment 11+ maths practice questions across all 16 topics: fractions, percentages, algebra, geometry and more. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6.",
+    "url": "https://prepstep.co.uk/practice/maths",
+    "inLanguage": "en-GB",
+    "dateModified": "2026-06-29",
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "Percentages 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/percentages"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Decimals 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/decimals"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Place Value 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/placevalue"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Fractions 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/fractions"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Long Division 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/longdivision"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Long Multiplication 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/longmultiplication"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Algebra 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/algebra"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Ratio & Proportion 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/ratio"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Negative Numbers 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/negativenumbers"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Prime Numbers & Factors 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/primenumbersfactors"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Area & Perimeter 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/areaperimeter"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Volume 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/volume"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Angles & Shapes 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/anglesshapes"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Sequences 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/sequences"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Data Handling 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/datahandling"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Speed, Distance & Time 11+ Practice (GL Assessment)",
+        "url": "https://prepstep.co.uk/practice/maths/speeddistancetime"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PrepStep",
+    "url": "https://prepstep.co.uk",
+    "description": "PrepStep is a free 11+ exam preparation app for GL Assessment, covering Maths, English and Verbal Reasoning."
+  }
+]
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+      <a href="/" class="site-header__cta">Start practising free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice">Practice</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Maths</span>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Practice</p>
+        <h1 id="hero-heading">11+ <em>Maths</em> Practice<br>(GL Assessment)</h1>
+        <div class="hub-intro">
+          <p>Free practice questions for all 16 maths topics tested in the GL Assessment 11+, in the real five-option multiple-choice format with worked explanations. The GL maths paper is 50 questions in 50 minutes, with no calculator. Questions cover Number, Algebra, Geometry, Measurement and Statistics.</p>
+          <p>Choose any topic below to see sample questions, a GL topic guide, and the common mistakes children make under exam pressure. All content is built for Year 5 and Year 6 preparation, covering difficulty levels from Foundation to Challenging.</p>
+        </div>
+        <a href="/" class="hero__cta">
+          Start practising free
+          <span class="hero__cta-sub">All 16 maths topics &middot; No sign-up needed</span>
+        </a>
+      </section>
+
+      <!-- Topic grid -->
+      <section class="content-section" aria-labelledby="topics-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>All maths topics</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="topics-heading">All 16 GL Assessment Maths Topics</h2>
+        <p class="skills-intro">Each topic has sample questions, a GL exam guide, and common mistakes to avoid. Click any topic to practise.</p>
+        <nav aria-label="Maths practice topics" class="topic-grid">
+          <a class="topic-card" href="/practice/maths/percentages" aria-label="Percentages practice questions">
+          <p class="topic-card__label">Percentages</p>
+          <p class="topic-card__desc">Finding percentages, FDP conversion, percentage increase and decrease, and reverse percentages</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/decimals" aria-label="Decimals practice questions">
+          <p class="topic-card__label">Decimals</p>
+          <p class="topic-card__desc">Place value, ordering, the four operations, converting and rounding decimals</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/placevalue" aria-label="Place Value practice questions">
+          <p class="topic-card__label">Place Value</p>
+          <p class="topic-card__desc">Digit values, rounding, ordering and Roman numerals in context</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/fractions" aria-label="Fractions practice questions">
+          <p class="topic-card__label">Fractions</p>
+          <p class="topic-card__desc">Finding fractions of amounts, equivalent fractions, FDP conversion and multi-step problems</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/longdivision" aria-label="Long Division practice questions">
+          <p class="topic-card__label">Long Division</p>
+          <p class="topic-card__desc">Dividing by 2-digit numbers, interpreting remainders and word problems</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/longmultiplication" aria-label="Long Multiplication practice questions">
+          <p class="topic-card__label">Long Multiplication</p>
+          <p class="topic-card__desc">Multiplying up to 4 digits by 2 digits, column method and word problems</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/algebra" aria-label="Algebra practice questions">
+          <p class="topic-card__label">Algebra</p>
+          <p class="topic-card__desc">Substitution, simple equations, function machines and linear sequences</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/ratio" aria-label="Ratio &amp; Proportion practice questions">
+          <p class="topic-card__label">Ratio &amp; Proportion</p>
+          <p class="topic-card__desc">Sharing in a ratio, simplifying, scaling recipes and proportion problems</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/negativenumbers" aria-label="Negative Numbers practice questions">
+          <p class="topic-card__label">Negative Numbers</p>
+          <p class="topic-card__desc">Ordering, crossing zero, temperature problems and sign rules</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/primenumbersfactors" aria-label="Prime Numbers &amp; Factors practice questions">
+          <p class="topic-card__label">Prime Numbers &amp; Factors</p>
+          <p class="topic-card__desc">Primes, factors, multiples, HCF, LCM and square numbers</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/areaperimeter" aria-label="Area &amp; Perimeter practice questions">
+          <p class="topic-card__label">Area &amp; Perimeter</p>
+          <p class="topic-card__desc">Perimeter and area of rectangles, triangles and compound shapes</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/volume" aria-label="Volume practice questions">
+          <p class="topic-card__label">Volume</p>
+          <p class="topic-card__desc">Volume of cuboids and cubes, missing dimensions and capacity conversion</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/anglesshapes" aria-label="Angles &amp; Shapes practice questions">
+          <p class="topic-card__label">Angles &amp; Shapes</p>
+          <p class="topic-card__desc">Angle rules, shape properties, symmetry, nets and coordinates</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/sequences" aria-label="Sequences practice questions">
+          <p class="topic-card__label">Sequences</p>
+          <p class="topic-card__desc">Number patterns, nth term, square numbers and interleaved sequences</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/datahandling" aria-label="Data Handling practice questions">
+          <p class="topic-card__label">Data Handling</p>
+          <p class="topic-card__desc">Charts, graphs, averages, pie charts and pictograms</p>
+        </a>
+        <a class="topic-card" href="/practice/maths/speeddistancetime" aria-label="Speed, Distance &amp; Time practice questions">
+          <p class="topic-card__label">Speed, Distance &amp; Time</p>
+          <p class="topic-card__desc">Speed, distance and time formula, unit conversions and multi-leg journeys</p>
+        </a>
+        </nav>
+      </section>
+
+    </div><!-- /page-wrap -->
+
+    <!-- Closing CTA band -->
+    <section class="cta-band" aria-labelledby="cta-hub-heading">
+      <h2 id="cta-hub-heading">Ready to start practising?</h2>
+      <p class="cta-band__sub">
+        PrepStep has over 3,000 maths questions in GL Assessment format:
+        five options, instant feedback, and step-by-step explanations. Free to start.
+      </p>
+      <a href="/" class="btn-primary">
+        Start practising free
+        <span class="btn-primary__sub">No sign-up needed &middot; Works on phone, tablet, and desktop</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <strong><a href="/">PrepStep</a></strong> &middot;
+      11+ exam preparation for GL Assessment &middot;
+      <a href="/practice">All practice topics</a>
+    </div>
+    <div style="margin-top:0.5rem">
+      &copy; 2026 PrepStep &middot;
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a>
+    </div>
+  </footer>
+
+</body>
+</html>
