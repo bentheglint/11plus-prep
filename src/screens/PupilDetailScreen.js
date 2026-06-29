@@ -194,6 +194,26 @@ const DEV_MOCK = {
     ...Array.from({ length: 15 }, (_, i) => ({ date: new Date(Date.now() - i * 86400000).toISOString(), topicKey: 'synonyms', subject: 'verbalreasoning', correct: i % 3 < 2, timeSpentMs: 7000 })),
   ],
   mockTestHistory: [],
+  // Representative practice sessions so the consistency bonus fires in dev preview.
+  // Dates are derived from Date.now() — no hardcoded values that will age out.
+  practiceLog: [
+    ...Array.from({ length: 5 }, (_, i) => ({
+      date: new Date(Date.now() - i * 2 * 86400000).toISOString().split('T')[0],
+      mode: 'focused',
+      subject: 'maths',
+      topicKey: 'fractions',
+      questionsAttempted: 10,
+      questionsCorrect: 6,
+    })),
+    ...Array.from({ length: 3 }, (_, i) => ({
+      date: new Date(Date.now() - (i + 1) * 3 * 86400000).toISOString().split('T')[0],
+      mode: 'focused',
+      subject: 'english',
+      topicKey: 'comprehension',
+      questionsAttempted: 10,
+      questionsCorrect: 7,
+    })),
+  ],
   assignmentRecipients: [
     { id: 'a1', assignment_title: 'Week 3 practice', item_type: 'topic', item_ref: 'fractions', due_date: '2026-05-10', status: 'completed', completed_at: new Date(Date.now() - 2 * 86400000).toISOString(), score: 52 },
     { id: 'a2', assignment_title: 'Mock test', item_type: 'mock', item_ref: 'maths', due_date: '2026-05-17', status: 'assigned', completed_at: null, score: null },
@@ -230,10 +250,11 @@ export default function PupilDetailScreen({ childId, getToken, onBack, panelMode
 
   useEffect(() => { load(); }, [load]);
 
-  // Compute mastery from the pupil's question results (same hook ParentDashboard uses)
+  // Compute mastery from the pupil's question results and practice log (mirrors the child app)
+  // practiceLog drives the consistency bonus in getExamReadiness — passing [] suppressed it
   const mastery = useMastery(
     data?.questionResults || [],
-    [],
+    data?.practiceLog || [],
     data?.mockTestHistory || []
   );
 

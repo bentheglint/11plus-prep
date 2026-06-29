@@ -272,7 +272,8 @@ export async function handleTutorRoutes(request, env, userId, path) {
   }
 
   // GET /api/tutor/pupils/:childId — Full pupil drill-down (tutor's view)
-  // Returns: child profile, recent quizzes, topic mastery, assignment recipients, notes count
+  // Returns: child profile, recent quizzes, topic mastery, assignment recipients, notes count,
+  //          question results, mock test history, and practiceLog for exam readiness consistency bonus
   const drillDownMatch = path.match(/^\/api\/tutor\/pupils\/([^/]+)$/);
   if (drillDownMatch && request.method === 'GET') {
     const childId = drillDownMatch[1];
@@ -288,7 +289,7 @@ export async function handleTutorRoutes(request, env, userId, path) {
     ).bind(tutorId, childId).first();
     if (!link) return json({ error: 'Child not on roster' }, 404);
 
-    const [child, quizResults, topicPerf, assignRecipients, notesCount, questionResults, mockTestHistory] = await Promise.all([
+    const [child, quizResults, topicPerf, assignRecipients, notesCount, questionResults, mockTestHistory, practiceSessions] = await Promise.all([
       // Child profile + parent account name
       db.prepare(`
         SELECT c.id, c.display_name, c.year_group, c.target_school, c.created_at,
@@ -350,6 +351,14 @@ export async function handleTutorRoutes(request, env, userId, path) {
         WHERE child_id = ?
         ORDER BY completed_at DESC
       `).bind(childId).all(),
+
+      // Practice sessions — needed for the consistency bonus in useMastery.getExamReadiness
+      db.prepare(`
+        SELECT session_date, data
+        FROM practice_sessions
+        WHERE child_id = ?
+        ORDER BY session_date DESC
+      `).bind(childId).all(),
     ]);
 
     const parsedTopicPerf = topicPerf.results.map(r => ({
@@ -383,6 +392,14 @@ export async function handleTutorRoutes(request, env, userId, path) {
       date: r.completed_at,
     }));
 
+    // Map practice_sessions to the practiceLog shape useMastery expects
+    // (mirrors useD1Data: spread data JSON, override date with session_date)
+    const mappedPracticeLog = (practiceSessions.results || []).map(r => {
+      let parsed = {};
+      if (r.data) { try { parsed = JSON.parse(r.data); } catch { parsed = {}; } }
+      return { ...parsed, date: r.session_date };
+    });
+
     const mappedQuizResults = (quizResults.results || []).map(r => ({
       topicKey: r.topic_key,
       subject: r.subject,
@@ -400,6 +417,7 @@ export async function handleTutorRoutes(request, env, userId, path) {
       notesCount: notesCount?.n || 0,
       questionResults: mappedQuestionResults,
       mockTestHistory: mappedMockHistory,
+      practiceLog: mappedPracticeLog,
     });
   }
 
