@@ -42,12 +42,14 @@ const React          = require('react');
 const ReactDOMServer = require('react-dom/server');
 const mathsData      = require(path.join(ROOT, 'src/questionData/mathsData')).default;
 const englishData    = require(path.join(ROOT, 'src/questionData/englishData')).default;
+const vrData         = require(path.join(ROOT, 'src/questionData/vrData')).default;
 const visuals        = require(path.join(ROOT, 'src/microLessons/visuals'));
 
 // Dataset registry: keyed by the subject string used in TOPICS_CONFIG entries.
 const DATASETS = {
   maths:   mathsData,
   english: englishData,
+  vr:      vrData,
 };
 
 // ── 4. Topic configuration ────────────────────────────────────────────────────
@@ -1849,6 +1851,1360 @@ The reassuring news for parents is that word class rewards a single, teachable h
     },
   },
 
+  // ── VERBAL REASONING ──────────────────────────────────────────────────────────
+
+  // ── VR: SYNONYMS ─────────────────────────────────────────────────────────────
+  synonyms: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'synonyms',
+    slug:         'synonyms',
+    topicLabel:   'Synonyms',
+    canonical:    'https://prepstep.co.uk/practice/vr/synonyms',
+    questionIds:  [6, 20, 47, 80, 8],
+
+    intro: `Synonyms, which GL phrases as "closest in meaning", are one of the most dependable scoring opportunities in the GL Assessment 11+ Verbal Reasoning paper. Your child is shown two small groups of words and has to pick one word from the first group and one from the second that mean almost the same thing. It is pure vocabulary, so a child who reads widely and knows the shades of meaning behind everyday words tends to find these very rewarding.
+
+The GL Verbal Reasoning paper is fast, packing roughly 80 questions into about 50 to 60 minutes, with questions grouped into blocks by type and answers marked on a separate answer sheet. Closest-in-meaning questions usually form one of those blocks. GL does not publish how many appear, but our research estimate from analysing practice papers is somewhere around 5 to 10 in a typical paper, enough to make a real difference to a final standardised score.
+
+On this page your child practises the genuine format: two word groups at a time, choosing the matching pair, with a worked explanation after every question. Because the explanations spell out why the other words do not fit, your child builds the precise vocabulary that the harder questions demand, rather than just guessing at a vague "near enough" answer.`,
+
+    topicBreakdown: {
+      intro: `Closest-in-meaning questions draw on several layers of vocabulary knowledge. GL does not publish a breakdown, so the order below is our research estimate, listed roughly from most to least common:`,
+      items: [
+        `Everyday synonyms (begin and start, rich and wealthy, happy and joyful): the bread and butter of easier questions`,
+        `Shades of meaning (peculiar and strange, tranquil and peaceful), where two words must share the same precise sense`,
+        `Abstract qualities and character words (obstinate and stubborn, diligent and hardworking) drawn from Year 5 and 6 vocabulary`,
+        `Formal and informal pairs (economical and thrifty, commence and begin), where the matching word sits in a different register`,
+        `Near-synonyms that demand precision, where two words are close but only one truly matches the target`,
+        `Words with more than one meaning, where your child must hold the right sense in mind to find its match`,
+      ],
+      footnote: `Difficulty climbs from common Year 4 words at the easy end, through curriculum vocabulary in the middle, up to sophisticated words such as tranquil, obstinate and diligent at the hard end, where one group often plants a tempting opposite as a trap.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Choosing a word that is related but not actually the same meaning.`,
+        tip:  `GL fills the groups with words from the same topic, so famous sits next to wealthy and rich. Teach your child to ask "could one word genuinely replace the other in a sentence?", not just "are these about similar things?".`,
+      },
+      {
+        lead: `Falling for the opposite hiding in the group.`,
+        tip:  `A favourite GL trap places an antonym in plain sight, such as reveal in a group where conceal is the answer. Remind your child that closest in meaning never means opposite, however neat the pairing looks.`,
+      },
+      {
+        lead: `Matching on intensity rather than meaning.`,
+        tip:  `Angry, furious and irritated share a feeling but differ in strength. Encourage your child to match words at the same level, not just within the same family of emotions.`,
+      },
+      {
+        lead: `Picking the first plausible word and stopping.`,
+        tip:  `Both groups must work together, so the best pair is the one where each word clearly matches the other. Train your child to test their chosen word against every option in the second group before committing.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are synonym questions in the GL 11+ Verbal Reasoning exam?`,
+        a: `They are "closest in meaning" questions. Your child sees two small groups of words and has to choose one word from each group that mean almost the same thing, for example begin from one group and start from the other. They test the depth and precision of your child's vocabulary.`,
+      },
+      {
+        q: `How are synonyms tested in the GL 11+ exam?`,
+        a: `Through multiple choice with answers marked on a separate answer sheet. Each question shows two groups of words, and your child selects the matching pair, one word from each group. The words are chosen so that several look related, which is what makes the task more than simply knowing the words.`,
+      },
+      {
+        q: `How many synonym questions are in the GL 11+ paper?`,
+        a: `GL does not publish exact numbers, but our research estimate from practice papers is around 5 to 10 closest-in-meaning questions in a typical Verbal Reasoning paper of roughly 80 questions. They usually appear together as one block within the paper.`,
+      },
+      {
+        q: `What is the hardest part of synonym questions?`,
+        a: `Telling apart words that are close but not quite the same, and ignoring the opposite that GL likes to slip into the group. The toughest questions use Year 5 and 6 vocabulary such as obstinate or tranquil, where your child needs a confident grasp of the exact meaning rather than a rough idea.`,
+      },
+      {
+        q: `How can my child improve at synonyms for the 11+?`,
+        a: `Wide reading is the foundation, because it exposes your child to words used in real context with their precise meaning. On top of that, free PrepStep practice gives one closest-in-meaning question at a time with a worked explanation, so your child learns why the matching pair works and why the tempting distractors do not.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Synonyms Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ synonyms practice for the GL Assessment. Closest-in-meaning Verbal Reasoning questions with worked explanations. Build precise vocabulary for the exam.`,
+      ogTitle:       `11+ Synonyms Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ synonyms practice: choose the matching pair, worked explanations, real Verbal Reasoning format. Strengthen vocabulary the easy way.`,
+    },
+  },
+
+  // ── VR: ANTONYMS ─────────────────────────────────────────────────────────────
+  antonyms: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'antonyms',
+    slug:         'antonyms',
+    topicLabel:   'Antonyms',
+    canonical:    'https://prepstep.co.uk/practice/vr/antonyms',
+    questionIds:  [1, 8, 3, 9, 4],
+
+    intro: `Antonym questions, labelled "most opposite in meaning" by GL, ask your child to do the reverse of a synonym question: from two groups of words, pick the one word in each that points in opposite directions. They reward a child who not only knows what words mean but can feel the contrast between them, such as the gap between generous and mean, or expand and shrink.
+
+These questions sit in the GL Assessment 11+ Verbal Reasoning paper, a brisk test of around 80 questions in roughly 50 to 60 minutes where each question type appears as its own block and answers go on a separate answer sheet. GL keeps the exact count private, so our research estimate, based on analysing practice papers, is that opposite-in-meaning questions make up a smaller block than synonyms, perhaps in the region of 4 to 8 per paper.
+
+Here your child works through the real task one pair of groups at a time, choosing the opposite pair, with a full explanation afterwards. The explanations are deliberate about pointing out the synonyms and the merely related words GL packs in alongside the true opposite, so your child learns to spot the trap rather than be caught by it.`,
+
+    topicBreakdown: {
+      intro: `Opposite-in-meaning questions test several kinds of contrast. There is no published GL weighting, so the following is our research estimate, ordered roughly from most to least common:`,
+      items: [
+        `Clear everyday opposites (brave and cowardly, ancient and modern, noisy and silent), the staple of the easier questions`,
+        `Quality and character opposites (arrogant and humble, generous and mean) drawn from Year 5 and 6 vocabulary`,
+        `Action opposites (expand and shrink, create and destroy), where verbs pull in opposite directions`,
+        `Prefix opposites, where un, dis, in or im flips a word's sense (visible and invisible, honest and dishonest)`,
+        `Gradable opposites, where your child must find the true contrast rather than a slightly weaker version`,
+        `Sophisticated near-opposites (abundant and scarce, moderate and excessive), where the groups are stacked with near-synonyms to confuse`,
+      ],
+      footnote: `Difficulty rises from concrete, obvious opposites at the easy end to abstract, advanced pairs at the hard end, where most of the other words in the groups are similar in meaning and only one true opposite exists.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Picking a synonym by mistake instead of an opposite.`,
+        tip:  `Under time pressure children sometimes match words that go together rather than words that clash. Teach your child to pause and confirm "do these two words mean the reverse of each other?" before answering.`,
+      },
+      {
+        lead: `Choosing a word that is merely different, not opposite.`,
+        tip:  `GL loves to offer words from the same topic, such as fork and spoon, that are related but not opposite. Remind your child that an opposite must sit at the far end of the same idea, not just be another word from the set.`,
+      },
+      {
+        lead: `Settling for a weak opposite when a stronger one exists.`,
+        tip:  `Cool is a mild opposite of hot, but freezing or cold may be the truer contrast offered. Encourage your child to scan both whole groups for the strongest, cleanest opposite before deciding.`,
+      },
+      {
+        lead: `Being thrown by near-synonyms crowded into the groups.`,
+        tip:  `In harder questions, four of the six words may mean roughly the same thing. Teach your child to find the single pair that genuinely contrasts and treat the rest as deliberate noise.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are antonym questions in the GL 11+ Verbal Reasoning exam?`,
+        a: `They are "most opposite in meaning" questions. Your child is shown two groups of words and must pick one word from each group that mean the opposite of each other, such as generous from one group and mean from the other. They test whether your child understands words well enough to recognise their true contrast.`,
+      },
+      {
+        q: `How are antonyms tested in the GL 11+ exam?`,
+        a: `As multiple choice, with the answer marked on a separate answer sheet. Each question presents two groups of words, and your child selects the opposite pair, one word from each group. GL deliberately includes synonyms and related words as distractors, so simply knowing the words is not always enough.`,
+      },
+      {
+        q: `How many antonym questions are in the GL 11+ paper?`,
+        a: `GL does not release exact figures. Our research estimate from practice papers is roughly 4 to 8 opposite-in-meaning questions in a typical Verbal Reasoning paper of about 80 questions, usually grouped together as a single block.`,
+      },
+      {
+        q: `What is the hardest part of antonym questions?`,
+        a: `The advanced questions, where the two groups are filled with near-synonyms and only one true opposite pair exists, for instance abundant against scarce among words that all mean "enough" or "plenty". Spotting the genuine contrast in a sea of similar words is what separates the strongest candidates.`,
+      },
+      {
+        q: `How can my child improve at antonyms for the 11+?`,
+        a: `Talking about opposites in everyday reading helps, as does learning common prefixes such as un, dis and in that flip a word's meaning. Free PrepStep practice then gives one opposite-in-meaning question at a time with a worked explanation that names the synonyms and related-word traps, so your child learns to avoid them under exam conditions.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Antonyms Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ antonyms practice for the GL Assessment. Opposite-in-meaning Verbal Reasoning questions with worked explanations. Spot the contrast and dodge the traps.`,
+      ogTitle:       `11+ Antonyms Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ antonyms practice: find the opposite pair, worked explanations, real Verbal Reasoning format. Learn to beat GL's synonym distractors.`,
+    },
+  },
+
+  // ── VR: VERBAL ANALOGIES ─────────────────────────────────────────────────────
+  verbalAnalogies: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'verbalAnalogies',
+    slug:         'verbal-analogies',
+    topicLabel:   'Verbal Analogies',
+    canonical:    'https://prepstep.co.uk/practice/vr/verbal-analogies',
+    questionIds:  [4, 6, 7, 28, 5],
+
+    intro: `Verbal analogies are the question type that asks your child to think like a detective. The pattern is always "A is to B as C is to ?", and the job is to work out the exact relationship in the first pair, then apply that same relationship to complete the second. On this page each question gives the sentence with two blanks and two short groups of words, and your child chooses one word from each group to fill the gaps.
+
+Analogies are a favourite of GL Assessment because they test reasoning and vocabulary at the same time, which makes them a strong predictor of overall ability. They appear in the Verbal Reasoning paper, a quick-moving test of around 80 questions in roughly 50 to 60 minutes, with each type in its own block and answers recorded on a separate answer sheet. GL does not publish the count, but our research estimate from practice papers is somewhere around 5 to 10 analogy questions per paper.
+
+Every question on this page comes with a worked explanation that names the relationship in plain words, such as "young animal to adult" or "tool to the person who uses it". That habit of naming the link before choosing is the single most powerful analogy strategy, and seeing it modelled question after question is how your child makes it automatic.`,
+
+    topicBreakdown: {
+      intro: `GL builds analogies on a wide range of relationship types. There is no official weighting, so this is our research estimate of the relationships your child meets most often, ordered roughly by frequency:`,
+      items: [
+        `Tool to user or object to function (brush to painter, scalpel to surgeon), a GL favourite`,
+        `Part to whole (toe to foot, chapter to book), where one thing is a piece of a larger thing`,
+        `Young animal to adult (cub to bear, cygnet to swan), which leans on specific vocabulary`,
+        `Synonyms and antonyms expressed as a relationship (large is to big as tiny is to small)`,
+        `Category to member (instrument to violin) and the everyday "belongs to" link (paw to cat, hoof to horse)`,
+        `Collective nouns and group words (sheep to flock, wolves to pack)`,
+        `Cause and effect, sequence, and object to characteristic for the harder questions`,
+      ],
+      footnote: `Difficulty grows with both the vocabulary and the relationship. Easy questions use common words and obvious links, while hard ones rely on words such as cygnet or leveret and on subtler relationships, with two or three distractors that are related to C but match the wrong link.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Choosing a word just because it is connected to C.`,
+        tip:  `If the link is "tool to user", a word that is merely about C will tempt your child. Teach them to name the exact relationship first, then test each option against that precise link rather than against a loose connection.`,
+      },
+      {
+        lead: `Getting the direction of the relationship the wrong way round.`,
+        tip:  `Young to adult is not the same as adult to young. Encourage your child to check that the second pair runs in the same direction as the first, so cub to bear means cygnet to swan, never swan to cygnet.`,
+      },
+      {
+        lead: `Matching the wrong level on a degree relationship.`,
+        tip:  `When the link is about intensity, cool and freezing are not interchangeable. Remind your child to match the strength of the relationship, not just its general theme.`,
+      },
+      {
+        lead: `Settling before checking both blanks work together.`,
+        tip:  `Because two words must be chosen, the right answer is the pair where both gaps share one clear relationship. Train your child to read the finished sentence back to confirm the two pairs truly mirror each other.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are verbal analogies in the GL 11+ exam?`,
+        a: `They are reasoning questions in the shape "A is to B as C is to ?". Your child works out the relationship between the first two words, then applies the same relationship to finish the second pair. They test vocabulary and logical thinking together, which is why GL values them so highly.`,
+      },
+      {
+        q: `How are verbal analogies tested in the GL 11+ exam?`,
+        a: `As multiple choice on a separate answer sheet. On PrepStep your child sees the analogy sentence with two blanks alongside two short groups of words, and chooses one word from each group to complete it. The wrong options are usually related to the words involved but match a different relationship.`,
+      },
+      {
+        q: `How many verbal analogy questions are in the GL 11+ paper?`,
+        a: `GL does not publish exact numbers. Our research estimate from practice papers is around 5 to 10 analogy questions in a typical Verbal Reasoning paper of roughly 80 questions, normally appearing together as one block.`,
+      },
+      {
+        q: `What is the hardest part of verbal analogies?`,
+        a: `The combination of advanced vocabulary and a subtle relationship. Hard questions use words such as cygnet or leveret and offer two or three plausible distractors, so your child has to pin down the precise link and resist words that are simply associated with the topic.`,
+      },
+      {
+        q: `How can my child improve at verbal analogies for the 11+?`,
+        a: `The best habit is to name the relationship in words before looking at the options, and then predict the answer. Wide reading builds the vocabulary that hard analogies need. Free PrepStep practice gives one analogy at a time with a worked explanation that names the link, so your child rehearses exactly the right thinking process.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Verbal Analogies Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ verbal analogies practice for the GL Assessment. "A is to B as C is to ?" reasoning questions with worked explanations. Master the relationship every time.`,
+      ogTitle:       `11+ Verbal Analogies Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ verbal analogies practice: spot the relationship, complete the pair, worked explanations. Build reasoning and vocabulary together.`,
+    },
+  },
+
+  // ── VR: ODD TWO OUT ──────────────────────────────────────────────────────────
+  oddTwoOut: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'oddTwoOut',
+    slug:         'odd-two-out',
+    topicLabel:   'Odd Two Out',
+    canonical:    'https://prepstep.co.uk/practice/vr/odd-two-out',
+    questionIds:  [4, 10, 12, 18, 7],
+
+    intro: `Odd Two Out flips the usual instinct on its head. Your child is given five words and has to find the two that do not belong, which means the real work is spotting the three that share a hidden link. The clever twist is that the two odd words do not need anything in common with each other; they are simply the leftovers once the group of three is found.
+
+This question type lives in the GL Assessment 11+ Verbal Reasoning paper, a fast test of about 80 questions in roughly 50 to 60 minutes, organised into blocks by type with answers marked on a separate answer sheet. Finding two odd words rather than one makes this a step harder than a classic odd-one-out, and GL knows it. Our research estimate from analysing practice papers is that it appears as a block of perhaps 4 to 8 questions, though GL does not publish the figure.
+
+On this page your child practises the genuine select-two format, with a worked explanation that names the connecting link as exactly as possible after every question. Learning to say "trees, not just plants" or "racquet sports, not just sports" is the heart of this skill, and the explanations train that precision one question at a time.`,
+
+    topicBreakdown: {
+      intro: `The hidden link in an Odd Two Out question can be drawn from many kinds of category. GL publishes no weighting, so the following is our research estimate, ordered roughly from most to least common:`,
+      items: [
+        `Concrete semantic groups (fruits against vegetables, colours against shapes, birds against other creatures), the staple of the easier questions`,
+        `Functional groups, where things share a use (furniture for sitting, racquet sports, cutlery against cooking pans)`,
+        `More specialist knowledge groups (oak, willow and beech are trees; daisy and tulip are flowers), which test general knowledge`,
+        `Meaning relationships among words, such as synonyms or degrees of an action grouped together`,
+        `Word class groups, where three words are one part of speech and two are another`,
+        `Material or natural-versus-made groups, separating metals from fabrics or natural from synthetic`,
+        `Abstract or homonym traps for the hardest questions, where a double meaning creates a false grouping`,
+      ],
+      footnote: `Difficulty climbs from clearly different everyday categories at the easy end to advanced vocabulary, narrow sub-categories and double-meaning traps at the hard end, where all five words appear to belong to one broad group and only a sharper, more specific link separates the three.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Hunting for the two odd words instead of the group of three.`,
+        tip:  `It is far easier to find what links three words than to spot two unrelated leftovers. Teach your child to ask "which three clearly belong together?" and let the odd two fall out naturally.`,
+      },
+      {
+        lead: `Settling for a link that is too broad.`,
+        tip:  `If all five words fit a wide group such as "animals" or "furniture", the answer needs a tighter link. Encourage your child to name the connection as precisely as possible, for example "furniture for sitting" rather than just "furniture".`,
+      },
+      {
+        lead: `Assuming the two odd words must relate to each other.`,
+        tip:  `GL builds questions where the leftovers have nothing in common, which makes children doubt a correct answer. Remind your child that the odd two are simply whatever is left once the group of three is settled.`,
+      },
+      {
+        lead: `Being caught by a word with two meanings.`,
+        tip:  `In harder questions a homonym can seem to fit the wrong group, such as lamb as a young animal or as meat. Teach your child to test both meanings of a tricky word before deciding which group it belongs to.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is Odd Two Out in the GL 11+ Verbal Reasoning exam?`,
+        a: `It is a question that gives your child five words and asks them to find the two that do not belong. The other three share a specific link, and the two odd words are simply the leftovers. It tests vocabulary, category knowledge and careful reasoning all at once.`,
+      },
+      {
+        q: `How is Odd Two Out tested in the GL 11+ exam?`,
+        a: `Your child reads the five words and selects the two odd ones out, marking them on a separate answer sheet. The challenge comes from GL choosing words where the connecting link is specific rather than obvious, so a child has to look past the first broad category they notice.`,
+      },
+      {
+        q: `How many Odd Two Out questions are in the GL 11+ paper?`,
+        a: `GL does not publish the exact count. Our research estimate from practice papers is roughly 4 to 8 Odd Two Out questions in a typical Verbal Reasoning paper of about 80 questions, usually grouped together as one block.`,
+      },
+      {
+        q: `What is the hardest part of Odd Two Out?`,
+        a: `The questions where all five words seem to belong to one broad group, so your child must find a sharper, more specific link that only three of them share. Advanced vocabulary and words with double meanings make these the most demanding, because the obvious grouping is often a deliberate red herring.`,
+      },
+      {
+        q: `How can my child improve at Odd Two Out for the 11+?`,
+        a: `The key habit is to look for the three that link rather than the two that are odd, and to name that link as precisely as they can. Building general knowledge of categories such as trees, instruments and sports also helps. Free PrepStep practice gives one Odd Two Out question at a time with a worked explanation that names the exact link, so your child sharpens that precision steadily.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Odd Two Out Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ Odd Two Out practice for the GL Assessment. Find the two words that do not belong, with worked explanations. Spot the hidden link in Verbal Reasoning.`,
+      ogTitle:       `11+ Odd Two Out Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ Odd Two Out practice: find the odd pair, worked explanations, real select-two format. Learn to spot the precise connecting link.`,
+    },
+  },
+
+  // ── VR: COMPOUND WORDS ───────────────────────────────────────────────────────
+  compoundWords: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'compoundWords',
+    slug:         'compound-words',
+    topicLabel:   'Compound Words',
+    canonical:    'https://prepstep.co.uk/practice/vr/compound-words',
+    questionIds:  [1, 10, 109, 101, 127],
+
+    intro: `Compound words are one of the word-building question types in the GL Assessment 11+ Verbal Reasoning paper, where two smaller words click together to make a single bigger one (sun + flower, foot + ball, water + fall). Your child is asked to find the word that bridges two others, or to spot the pair that joins, rather than simply to recognise a compound they already know.
+
+GL does not publish how many of each VR type appear, but our research estimate is that when a word-building section like this shows up it runs to a short block of roughly five to ten questions. Like the rest of the paper it is multiple choice with five options (A to E) marked on a separate answer sheet, so a confident, quick approach here protects time for the heavier reasoning sections later on.
+
+PrepStep practises compound words in the three shapes GL actually uses: choosing one word that fits in front of (or after) two given words, finding the two words in a list of five that join together, and picking one word from each of two groups to build a new word. Every question comes with a worked explanation, so your child learns to test a candidate against both halves rather than settling for the first word that sounds familiar.`,
+
+    topicBreakdown: {
+      intro: `Compound words are tested through several closely related shapes. GL does not break the type down publicly, so the spread below is our research estimate drawn from the question shapes that appear in practice material:`,
+      items: [
+        `Front-linking words (one word that goes before two others): for example a word that makes sense before both "light" and "rise" (sun gives sunlight and sunrise)`,
+        `End-linking words (one word that goes after two others): for example a word that follows both "book" and "suit" (case gives bookcase and suitcase)`,
+        `Find-the-pair (two words in a list of five that join): spotting that "fire" and "place" make fireplace while the other three are decoys`,
+        `Pick-one-from-each-group (build a compound across two columns), where the first-group word always comes first`,
+        `Meaning-linked sets (the compounds share a theme such as weather, the home, or sport), which helps confirm a sensible answer`,
+        `Direction sensitivity (knowing that "bow" works after "rain" but the reverse does not make a word), which is the heart of the harder items`,
+      ],
+      footnote: `Difficulty climbs from everyday compounds a Year 4 child uses daily (bedroom, football) up to less obvious or slightly old-fashioned compounds such as landscape, uproar and household, where one half is far less common than the other.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Choosing a word that only fits one of the two targets.`,
+        tip:  `GL stocks the options with a word that joins the first target beautifully but fails the second. "Day" makes daylight but there is no "dayrise". Teach your child to test the candidate against both targets before committing, not just the one they read first.`,
+      },
+      {
+        lead: `Joining the words in the wrong order.`,
+        tip:  `Compounds are directional: "rainbow" is a word but "bowrain" is not. In the pick-from-groups shape the first-group word always leads. Encourage your child to read the join out loud in the stated order to hear whether it is a real word.`,
+      },
+      {
+        lead: `Accepting an American or near-compound that is not standard British English.`,
+        tip:  `Options sometimes include forms like "anyplace" that sound plausible but are not the British compound GL rewards. If a more natural everyday compound also fits, that is almost always the intended answer.`,
+      },
+      {
+        lead: `Stopping at the first valid pair in find-the-pair questions.`,
+        tip:  `The five-word lists are built so that two unrelated words can look tempting together. Train your child to scan all five and confirm that the other three genuinely form no compound, rather than grabbing the first pairing that catches the eye.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is a compound word question in the 11+ Verbal Reasoning exam?`,
+        a: `It is a word-building question where two smaller words join to make one bigger word. In the GL Assessment 11+ your child might be asked for a word that fits in front of or after two given words, to find the two words in a list that join together, or to build a compound by picking one word from each of two groups. It tests vocabulary and the ability to test a word against more than one partner.`,
+      },
+      {
+        q: `How are compound words tested in the GL 11+ paper?`,
+        a: `Through multiple choice with five options (A to E) marked on a separate answer sheet. The questions appear in a few shapes (front-linking, end-linking, find-the-pair and pick-from-two-groups) but all reward the same instinct: checking that a candidate word genuinely makes a real compound with both targets, in the correct order.`,
+      },
+      {
+        q: `How many compound word questions are in the 11+ Verbal Reasoning paper?`,
+        a: `GL does not publish a fixed number, and the question types rotate from one paper to the next. Our research estimate is that when a word-building section appears it is a short block of roughly five to ten questions. Because each one is quick to solve, it is worth banking these marks confidently and early.`,
+      },
+      {
+        q: `What makes a compound word question hard?`,
+        a: `The hardest items use a compound where one half is rare or slightly old-fashioned, such as landscape, uproar or household, so the answer does not jump out. They also lean on direction (rainbow works, bowrain does not) and stock the options with a word that fits only one of the two targets. Careful testing beats first instinct here.`,
+      },
+      {
+        q: `How can my child get better at compound words for the 11+?`,
+        a: `Wide reading builds the bank of compounds a child recognises instantly, and a quick daily habit of spotting compounds in everyday text helps. Beyond that, practising in the exact GL shapes teaches the test-both-halves discipline that the trickier questions demand. Free PrepStep practice covers all three compound-word shapes with worked explanations, so your child learns why an answer works rather than just which one to pick.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Compound Words Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ compound words practice for the GL Assessment Verbal Reasoning paper. Front-link, end-link and find-the-pair questions, five options, worked explanations.`,
+      ogTitle:       `11+ Compound Words Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ compound words practice: build words across three real question shapes, five-option format, worked explanations for every answer.`,
+    },
+  },
+
+  // ── VR: HIDDEN WORDS ─────────────────────────────────────────────────────────
+  hiddenWords: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'hiddenWords',
+    slug:         'hidden-words',
+    topicLabel:   'Hidden Words',
+    canonical:    'https://prepstep.co.uk/practice/vr/hidden-words',
+    questionIds:  [1, 46, 47, 106, 2],
+
+    intro: `Hidden words ask your child to find a small word camouflaged at the join between two side-by-side words in a sentence. The hidden word always straddles a word boundary, taking the last letters of one word and the first letters of the next, so in "the attic stairs" the word SEAT is waiting at the join of theSE and ATtic. Crucially the hidden word is never tucked inside a single word, only across the gap between two.
+
+GL does not publish how many hidden-word items each Verbal Reasoning paper carries, but our research estimate is a block of roughly five to ten when this type appears. On PrepStep this is a select-two question: your child is shown five words and taps the two adjacent words that, joined at the boundary, conceal the target. The hidden word is almost always four letters long, which matches the authentic GL pattern far better than the longer hidden words some practice books invent.
+
+Every question tells your child the length to look for and comes with a worked explanation that shows exactly where the split falls. That trains the systematic left-to-right boundary scan that turns a slow, lucky guess into a fast, reliable method.`,
+
+    topicBreakdown: {
+      intro: `Hidden-word questions vary mainly by where the split falls and how busy the sentence is. GL does not break the type down publicly, so the spread below is our research estimate:`,
+      items: [
+        `Even 2+2 splits (two letters from the first word, two from the second): the most common and easiest to spot, such as soME + ALways hiding MEAL`,
+        `Uneven 1+3 splits (one letter ends the first word, three start the second), such as sloW + ORDers hiding WORD`,
+        `Uneven 3+1 splits (three letters end the first word, one starts the second), such as ancHOR + Nestled hiding HORN`,
+        `Hidden words placed mid-sentence (easier) versus buried near the start or end (harder)`,
+        `Short sentences with few boundaries to check versus longer sentences with many tempting near-misses`,
+        `Decoy boundaries that form a short incidental word of the wrong length, designed to slow a hurried reader down`,
+      ],
+      footnote: `Difficulty rises with sentence length and the use of uneven splits: easy items use a common four-letter word at an even 2+2 join in a short sentence, while the hardest bury a less obvious word at a 1+3 or 3+1 join with several distracting boundaries nearby.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Looking for the hidden word inside a single word.`,
+        tip:  `The word always crosses the gap between two adjacent words, never sits within one. If your child finds "ever" inside "every", that does not count. Teach them to read each pair of neighbours as a join, ignoring what lives inside any one word.`,
+      },
+      {
+        lead: `Only checking 2+2 splits.`,
+        tip:  `Even splits are the most common, so children stop there and miss the answer. Roughly a third of items use a 1+3 or 3+1 split. Encourage your child, when a clean 2+2 does not appear, to try one-letter and three-letter starts before moving on.`,
+      },
+      {
+        lead: `Being misled by the sentence's meaning.`,
+        tip:  `GL writes sentences whose subject has nothing to do with the hidden word, so a sentence about cooking might hide RAIN. Remind your child that meaning is a decoy here; only the letters at the boundaries matter.`,
+      },
+      {
+        lead: `Skipping boundaries in a long sentence.`,
+        tip:  `A twelve-word sentence has eleven boundaries, and the answer is often near the end where attention fades. Train a left-to-right scan that checks every join in order rather than jumping to the words that look interesting.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is a hidden word question in the 11+ Verbal Reasoning exam?`,
+        a: `It is a question where a small word is hidden across the join between two side-by-side words in a sentence. Your child finds it by taking the last letters of one word and the first letters of the next, for example LOVE hidden in "solo venue" (soLO + VEnue). In the GL Assessment 11+ the hidden word is almost always four letters long.`,
+      },
+      {
+        q: `How are hidden words tested in the GL 11+ paper?`,
+        a: `Your child is given a sentence and told how many letters the hidden word has, then identifies where it sits. On PrepStep this is a tap-two-words (select-two) format, matching the way GL asks children to pinpoint the boundary. The hidden word always crosses a gap between two words and never sits inside a single word.`,
+      },
+      {
+        q: `How long is the hidden word in 11+ questions?`,
+        a: `Almost always four letters, occasionally three. This matches the authentic GL pattern, which practitioner sources consistently describe as a four-letter hidden word. Some practice books invent five-letter or longer hidden words, but those are not representative of the real GL paper, so PrepStep keeps to four-letter items with the occasional three.`,
+      },
+      {
+        q: `What is the best strategy for hidden word questions?`,
+        a: `A systematic left-to-right boundary scan. Your child checks each pair of neighbouring words in turn, trying the even 2+2 split first, then 1+3 and 3+1 if needed, and ignores what the sentence is actually about. Saying the candidate letters quietly often helps the word jump out, and skipping tiny words like "a" and "I" speeds things up.`,
+      },
+      {
+        q: `How can my child improve at hidden words for the 11+?`,
+        a: `The skill responds quickly to drilling, because it is a method more than a knowledge test. Regular short bursts build the habit of scanning every boundary and trying uneven splits. Free PrepStep practice gives sentences across easy and hard difficulties with worked explanations that show exactly where each split falls, so the technique becomes automatic.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Hidden Words Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ hidden words practice for the GL Assessment Verbal Reasoning paper. Find the four-letter word across two words, with worked explanations of every split.`,
+      ogTitle:       `11+ Hidden Words Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ hidden words practice: spot the four-letter word hidden across two adjacent words. Tap-two format, worked explanations, easy to hard.`,
+    },
+  },
+
+  // ── VR: MOVE A LETTER ────────────────────────────────────────────────────────
+  letterMove: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'letterMove',
+    slug:         'move-a-letter',
+    topicLabel:   'Move a Letter',
+    canonical:    'https://prepstep.co.uk/practice/vr/move-a-letter',
+    questionIds:  [5, 25, 26, 31, 37],
+
+    intro: `Move a Letter hands your child two words and asks them to lend a single letter from one to the other so that both become new, real words. Take SPINE and OAR: move the S across and SPINE becomes PINE while OAR becomes SOAR. The letters that stay behind keep their original order in both words, and the borrowed letter can drop in anywhere in the receiving word, not just at the start.
+
+This is one of the letter-manipulation types in the GL Assessment 11+ Verbal Reasoning paper. GL does not publish a per-type count, but our research estimate is a block of roughly five to ten questions when it appears. On PrepStep the answer options are the five candidate letters (A to E), and the catch is that only one of them leaves two genuine words behind, which is what makes the type a real test of checking rather than guessing.
+
+Every question shows the two starting words and explains which letter moves, what each word becomes, and why the others fail. That builds the double-check habit GL rewards: a child has not finished until both new words are confirmed real.`,
+
+    topicBreakdown: {
+      intro: `Move a Letter items vary by which letter moves, where it lands, and how familiar the resulting words are. GL does not publish a breakdown, so the spread below is our research estimate, and the bank itself leans heavily toward the medium band:`,
+      items: [
+        `Start-or-end consonant moves (the most approachable), such as moving the B from BLAND to OAR to give LAND and BOAR`,
+        `Middle-letter moves, where the travelling letter comes from inside the source word rather than its edge`,
+        `Insertion anywhere in the receiver, so the borrowed letter may land at the front, middle or end of the second word`,
+        `Either-direction problems, where the letter might travel left-to-right or right-to-left and the child must work out which`,
+        `Less common resulting words (such as BOAR, COWL or TERN) that a child must recognise as genuine`,
+        `Double-letter and near-word traps, where removing a letter seems to work but leaves something that is not actually a word`,
+      ],
+      footnote: `Difficulty is driven by how hidden the moving letter is and how familiar the results are: easy items move an edge consonant to make two everyday words, while the hardest hide the move in the middle, run right-to-left, or hinge on a less common word that a child must be sure is real.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Confirming one new word but not the other.`,
+        tip:  `The single most common slip. A letter that makes the first word work may leave the second word as nonsense. Teach your child the rule that the question is only solved when BOTH results are real words, and to check the second every time.`,
+      },
+      {
+        lead: `Assuming the letter always moves left to right.`,
+        tip:  `GL tests both directions without telling the child which to use. The answer might mean taking a letter from the second word and giving it to the first. Encourage your child to try the move in both directions before deciding a letter does not work.`,
+      },
+      {
+        lead: `Only trying the first and last letters.`,
+        tip:  `Edge letters are the common case, so children stop there. The intended answer is sometimes a letter from the middle of the source word. If no edge letter produces two real words, prompt your child to test the inner letters too.`,
+      },
+      {
+        lead: `Accepting a word that looks right but is not real.`,
+        tip:  `Near-words such as BRANE or TRALE feel plausible under time pressure. Reading both results aloud quietly helps the ear reject a non-word. If a child is unsure a result is genuine, that option is probably the trap.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is a Move a Letter question in the 11+ Verbal Reasoning exam?`,
+        a: `It is a question where your child moves one letter from one word to another so that both become new, real words. For example, moving the P from PLATE to AN gives LATE and PAN. The remaining letters keep their order, and the moved letter can be inserted anywhere in the receiving word. It tests spelling, vocabulary and careful checking.`,
+      },
+      {
+        q: `How is Move a Letter tested in the GL 11+ paper?`,
+        a: `Through multiple choice with five options (A to E) on a separate answer sheet. On PrepStep the options are the five candidate letters that might move, and only one of them leaves two genuine words behind. The child has to work out both which letter travels and, often, in which direction.`,
+      },
+      {
+        q: `Can the letter move in either direction in these questions?`,
+        a: `Yes. GL does not tell the child which way the letter travels, so the answer might involve taking a letter from the first word or from the second. This is a deliberate trap: many children assume left-to-right only. The reliable approach is to test a candidate letter in both directions before ruling it out.`,
+      },
+      {
+        q: `What makes Move a Letter questions tricky?`,
+        a: `Three things: the moving letter is sometimes hidden in the middle of a word rather than at an edge, the direction is not stated, and the result can be a less common word such as TERN or COWL that a child must recognise as real. The biggest single error is confirming one new word and forgetting to check the other.`,
+      },
+      {
+        q: `How can my child improve at Move a Letter for the 11+?`,
+        a: `A clear method beats trial and error: remove each candidate letter, check the remainder is a word, then try inserting that letter at every position in the other word, in both directions. Building everyday vocabulary helps a child trust the less common results. Free PrepStep practice provides graded questions with worked explanations that model this remove-and-check routine.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Move a Letter Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ Move a Letter practice for the GL Assessment Verbal Reasoning paper. Shift one letter between two words to make two new words, with worked explanations.`,
+      ogTitle:       `11+ Move a Letter Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ Move a Letter practice: lend one letter between two words so both become real. Five-option format, worked explanations, easy to hard.`,
+    },
+  },
+
+  // ── VR: MISSING LETTERS ──────────────────────────────────────────────────────
+  missingLettersWords: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'missingLettersWords',
+    slug:         'missing-letters',
+    topicLabel:   'Missing Letters',
+    canonical:    'https://prepstep.co.uk/practice/vr/missing-letters',
+    questionIds:  [12, 46, 91, 47, 106],
+
+    intro: `Missing Letters takes a small three-letter word and steals it out of the middle of a longer word, leaving a gap your child has to fill. In the sentence "The FER milked the cows at dawn", the answer is ARM: drop it back in and FER becomes FARMER. The twist GL builds in is that the three stolen letters must themselves spell a real word, so your child is solving two puzzles at once.
+
+This is one of the word-completion types in the GL Assessment 11+ Verbal Reasoning paper. GL does not publish how many appear, but our research estimate is a block of roughly five to ten when the type is included. It is multiple choice with five options (A to E) on a separate answer sheet, and on PrepStep the question is wrapped in a short sentence so the surrounding meaning helps confirm the right longer word.
+
+Each question explains how the chosen three letters rebuild the longer word and why that little word is genuine in its own right. That trains the two-part check at the heart of the type: the completed word must be real, and so must the three letters you put back.`,
+
+    topicBreakdown: {
+      intro: `Missing Letters questions vary by where the gap sits in the longer word and how common both words are. GL does not publish a breakdown, so the spread below is our research estimate:`,
+      items: [
+        `Letters stolen from the start of the word, such as ARM rebuilding FARMER from FER`,
+        `Letters stolen from the middle, the most common and often trickiest position, such as ASK rebuilding BASKET from BET`,
+        `Letters stolen from the end, such as AGE rebuilding COTTAGE from COTT`,
+        `Sentence-context items, where the surrounding sentence tells your child which longer word is meant`,
+        `Look-alike option sets (ARM, ART, ACT, ANT), where only one three-letter word both is real and rebuilds a real longer word`,
+        `Tricky spellings in the completed word (silent letters or double letters), which can disguise where the gap belongs`,
+      ],
+      footnote: `Difficulty grows from short, common words with an obvious gap up to longer, less familiar words where the stolen letters land in the middle and the option set is full of near-identical three-letter words.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Picking three letters that rebuild the long word but are not a real word themselves.`,
+        tip:  `Both halves of the puzzle must hold. The three letters you insert have to spell a genuine word on their own, not just patch the gap. Teach your child to confirm the little word is real before accepting it.`,
+      },
+      {
+        lead: `Choosing a real three-letter word that does not complete a real longer word.`,
+        tip:  `The reverse trap: an option like CAT is obviously a word, but it may not rebuild anything sensible. Remind your child to slot the letters in and read the full longer word back to check it actually exists.`,
+      },
+      {
+        lead: `Being caught out by look-alike options.`,
+        tip:  `GL clusters options such as APT, ART, ACT and ANT that differ by a single letter. Under time pressure these blur together. Encourage your child to test each candidate fully rather than settling on the one that looks roughly right.`,
+      },
+      {
+        lead: `Ignoring the sentence's meaning.`,
+        tip:  `In the sentence version, the surrounding words are a clue, not decoration. A child who guesses purely from the letters may build a real word that makes no sense in context. Reading the finished sentence back confirms the answer fits.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is a Missing Letters question in the 11+ Verbal Reasoning exam?`,
+        a: `It is a question where three letters in a row have been removed from a longer word, and your child finds the three-letter word that fits back in. For example, ARK rebuilds MARKET from MET. The clever part is that the three missing letters must spell a real word on their own, so two conditions have to be met at once.`,
+      },
+      {
+        q: `How is Missing Letters tested in the GL 11+ paper?`,
+        a: `Through multiple choice with five options (A to E) marked on a separate answer sheet. The options are three-letter words, and on PrepStep the gapped word sits inside a short sentence so the meaning helps your child confirm the intended longer word. Only one option both is a real word and rebuilds a real longer word.`,
+      },
+      {
+        q: `Where do the missing letters appear in the word?`,
+        a: `They can be taken from the beginning, the middle or the end of the longer word. The middle position is the most common and usually the hardest, because the gap is less obvious than at the edges. Recognising that the stolen letters can sit anywhere stops a child fixating only on the start of the word.`,
+      },
+      {
+        q: `What is the difference between Missing Letters and similar VR question types?`,
+        a: `Missing Letters removes three consecutive letters that themselves form a word. That is distinct from Shared Letter, which inserts a single letter to complete two pairs of words, and from Move a Letter, which transfers one letter between two existing words. Knowing which type is in front of them helps a child apply the right method quickly.`,
+      },
+      {
+        q: `How can my child improve at Missing Letters for the 11+?`,
+        a: `The most reliable habit is the two-part check: confirm the completed longer word is real and that the three inserted letters also spell a word, then read the sentence back to be sure it makes sense. Wider reading expands the longer words a child recognises instantly. Free PrepStep practice offers graded sentence-based questions with worked explanations that model both checks.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Missing Letters Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ Missing Letters practice for the GL Assessment Verbal Reasoning paper. Find the three-letter word that rebuilds a longer word, with worked explanations.`,
+      ogTitle:       `11+ Missing Letters Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ Missing Letters practice: restore the three stolen letters so both words are real. Five-option format, worked explanations, easy to hard.`,
+    },
+  },
+
+  // ── VR: LETTER CODES ─────────────────────────────────────────────────────────
+  letterCodes: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'letterCodes',
+    slug:         'letter-codes',
+    topicLabel:   'Letter Codes',
+    canonical:    'https://prepstep.co.uk/practice/vr/letter-codes',
+    questionIds:  [2, 98, 109, 4, 8],
+
+    intro: `Letter codes hand your child a secret rule and ask them to crack it. A worked example is given (for instance, COLD is coded as DPME), and from that single clue your child has to work out exactly how each letter was shifted along the alphabet. Then they either encode a brand new word or decode a mystery one back into real English. It is one of the most satisfying question types in the GL Assessment 11+ Verbal Reasoning paper, because every answer can be checked and proved.
+
+Letter codes do not appear in every GL paper. When they do, our research estimate is a block of around 6 questions, and the type tends to rotate with other code and letter puzzles from one sitting to the next. As with the rest of the VR paper, each question gives five options (A to E) and the answer is marked on a separate answer sheet. GL prints an alphabet line on the page, and your child is expected to use it, counting the gaps between letters rather than trying to hold the whole alphabet in their head.
+
+On this page your child practises with a printed alphabet line just like the real exam, working through one code at a time. Every question carries a worked explanation that shows the shift letter by letter, so your child learns to verify each step instead of guessing the rule from the first letter alone.`,
+
+    topicBreakdown: {
+      intro: `Letter codes are built from a small set of shift rules. GL does not publish how often each appears, so the order below is our research estimate from analysing practice papers, roughly from most to least common:`,
+      items: [
+        `Constant forward shift (every letter moves the same number of places forward, such as +1 or +2): the most common rule and the foundation of the whole type`,
+        `Constant backward shift (every letter moves the same number of places back, such as -1 or -2): just as common, and the source of most direction mix-ups`,
+        `Decoding back to a real word (given the code, find the original word): a step harder than encoding because the answer must spell something sensible`,
+        `Larger shifts of +3 or +4 (and their backward versions): more counting per letter, so more chance of slipping`,
+        `Wrap-around at the ends of the alphabet (a forward shift past Z loops to A, a backward shift past A loops to Z): often combined with any of the rules above`,
+        `Variable or progressive shifts (the shift changes for each position, such as -1 then -2 then -3): the trickiest pattern and a classic harder question`,
+        `Mirror codes (A pairs with Z, B with Y, C with X, and so on): occasional, and a different kind of thinking from a simple shift`,
+      ],
+      footnote: `Difficulty runs from a stated +1 rule on a three-letter word, through four-letter words where your child must discover the rule themselves, up to decoding five-letter words with wrap-around or a shift that changes at every position.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Working out the rule from only the first letter.`,
+        tip:  `A code can look like a simple +1 shift on its first letter, then change. Teach your child to check every single letter against the example before deciding on the rule, then apply that proven rule to the new word.`,
+      },
+      {
+        lead: `Mixing up encoding and decoding.`,
+        tip:  `If the example moves letters forward to make the code, then turning a code back into a word means moving the same number of places backward. Encourage your child to read carefully whether they are being asked for the code or for the word, and to flip the direction when decoding.`,
+      },
+      {
+        lead: `Forgetting that the alphabet wraps round.`,
+        tip:  `Shifting Y forward by 3 lands on B, not on a letter past Z. Shifting B back by 3 lands on Y. Remind your child to picture the alphabet as a circle, so after Z comes A again and before A comes Z.`,
+      },
+      {
+        lead: `Getting caught by near-miss options.`,
+        tip:  `GL designs wrong answers that differ from the correct code by just one letter, so a single miscount picks the wrong one. The fix is to count each shift on the alphabet line and verify the finished answer letter by letter before committing.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are letter codes in the GL 11+ exam?`,
+        a: `Letter codes are a Verbal Reasoning question type where your child is shown a word and its coded version, then has to work out the rule that turned one into the other. The rule is almost always a shift along the alphabet, such as moving every letter two places forward. Your child then uses that rule to encode a new word or decode a mystery one, choosing from five options (A to E).`,
+      },
+      {
+        q: `What is the EJOTY trick for letter codes?`,
+        a: `EJOTY is a memory aid for the position of certain letters: E is the 5th letter, J is the 10th, O is the 15th, T is the 20th and Y is the 25th. These act as signposts along the alphabet, so instead of counting from A every time, your child jumps to the nearest anchor and counts on from there. It makes shifting letters much faster and more accurate.`,
+      },
+      {
+        q: `Are letter codes in every GL Assessment paper?`,
+        a: `Not always. Letter codes appear in some GL Verbal Reasoning papers and not others, and our research estimate is a block of around 6 questions when they do feature. The type tends to rotate with other code-style puzzles, so it is worth preparing for even if it does not turn up every time. GL provides a printed alphabet line on the page to help.`,
+      },
+      {
+        q: `What is the hardest kind of letter code?`,
+        a: `The trickiest are variable shifts, where the amount each letter moves changes with its position, for example the first letter moves one place, the second moves two, the third moves three. Mirror codes and decoding longer words with wrap-around are also demanding. These reward children who check every letter rather than assuming the same shift applies throughout.`,
+      },
+      {
+        q: `How can my child get better at letter codes?`,
+        a: `The fastest gains come from learning the EJOTY anchors, practising small shifts until they are automatic, and always verifying every letter against the example before answering. Free PrepStep practice gives your child a printed alphabet line and one code at a time, with a worked explanation that shows the shift letter by letter, so the method becomes second nature.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Letter Codes Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ letter codes practice for the GL Assessment. Five-option questions with a printed alphabet line and worked explanations. Crack the alphabet shift rule.`,
+      ogTitle:       `11+ Letter Codes Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ letter codes practice: alphabet-shift puzzles, five options, worked explanations. Learn to encode and decode with confidence.`,
+    },
+  },
+
+  // ── VR: LETTER PAIR SERIES ───────────────────────────────────────────────────
+  letterPairSeries: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'letterPairSeries',
+    slug:         'letter-pair-series',
+    topicLabel:   'Letter Pair Series',
+    canonical:    'https://prepstep.co.uk/practice/vr/letter-pair-series',
+    questionIds:  [1, 36, 39, 5, 3],
+
+    intro: `Letter pair series turn your child into a pattern detective. A line of letter pairs is shown, such as AC, BD, CE, DF, and your child has to spot the hidden rule and supply the pair that comes next. The clever part is that each pair holds two patterns running side by side: the first letters follow one rule and the second letters follow another, and the two rules can be completely different. Cracking both at once is what the question rewards.
+
+Letter pair series sit within the GL Assessment 11+ Verbal Reasoning paper, where this kind of sequence reasoning is a regular feature. Our research estimate, since GL does not publish exact weightings, is a small block of questions in papers that include the type. As everywhere in the VR paper, your child picks from five options (A to E) and marks the answer on a separate sheet. GL prints an alphabet line on the page, and counting the gap between letters on that line is exactly the skill being tested.
+
+On this page your child works through these sequences one at a time, with the same alphabet line they will meet in the exam. Every question comes with a worked explanation that splits the pair into its two patterns, so your child learns to track each letter separately rather than guessing from the look of the sequence.`,
+
+    topicBreakdown: {
+      intro: `Letter pair series are built from a handful of pattern shapes. GL does not publish their frequency, so this order is our research estimate, roughly from most common to least:`,
+      items: [
+        `Both letters following the same simple rule (each pair adds the same small step, such as +1 or +2 to both letters): the gentlest starting point`,
+        `A different step for each letter (the first letter moves by one amount, the second by another): the heart of the type`,
+        `Opposite directions (the first letter moves forward while the second moves backward, as in AZ, BY, CX): a favourite GL pattern`,
+        `Repeated letters in a pair moving together (ZZ, YY, XX), where both letters share one rule`,
+        `Asymmetric step sizes (one letter jumps by three, the other slips back by two): a harder mix`,
+        `Wrap-around across the Z to A boundary (a sequence that runs off the end of the alphabet and loops round): a real test of care`,
+        `Accelerating or converging gaps (the jump grows each step, or the two letters drift towards each other): the most demanding shapes`,
+      ],
+      footnote: `Difficulty climbs from both letters sharing one easy rule, through pairs where each letter follows its own rule or runs in the opposite direction, up to asymmetric steps, wrap-around and gaps that change size as the sequence goes on.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Assuming both letters obey the same rule.`,
+        tip:  `In many pairs the first and second letters move differently, and one of the wrong options is usually built on the false idea that they match. Teach your child to read the first letters as one sequence and the second letters as a separate sequence, then solve each on its own.`,
+      },
+      {
+        lead: `Checking only the last two pairs.`,
+        tip:  `A rule that fits the final two pairs might not fit the whole line. Encourage your child to confirm the pattern works for every pair from the start before choosing, which rules out the tempting near-miss answers.`,
+      },
+      {
+        lead: `Slipping by one place when counting.`,
+        tip:  `Off-by-one errors are the most common mistake here, and GL builds options that are exactly one letter away from correct. Counting each gap on the alphabet line, rather than from memory, keeps your child on the right letter.`,
+      },
+      {
+        lead: `Getting the direction wrong near Z and A.`,
+        tip:  `When a sequence runs backward, or wraps past the ends of the alphabet, it is easy to reverse the move by mistake. Remind your child that after Z comes A again, before A comes Z, and to write the direction of each pattern down before extending it.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is a letter pair series in the 11+?`,
+        a: `It is a Verbal Reasoning question that shows a line of letter pairs, such as AC, BD, CE, DF, and asks for the pair that comes next. Each pair contains two patterns at once: the first letters follow one rule and the second letters follow another. Your child works out both rules and chooses the correct next pair from five options (A to E).`,
+      },
+      {
+        q: `How do you solve letter pair series questions?`,
+        a: `The reliable method is to split the pair in two. Read all the first letters as one sequence and work out their rule, then read all the second letters as a separate sequence and work out theirs. Converting letters to their alphabet positions (A is 1, B is 2, and so on) makes the gaps easy to see. Finally, check the rule fits every pair before answering.`,
+      },
+      {
+        q: `Why do the two letters follow different rules?`,
+        a: `That is exactly what the question type is designed to test. GL wants to see whether your child can hold two patterns in mind at the same time, so the first and second letters often move by different amounts or even in opposite directions. Treating them as one combined rule is the most common reason children pick a wrong answer.`,
+      },
+      {
+        q: `What makes a letter pair series hard?`,
+        a: `The hardest versions use asymmetric steps (each letter jumping by a different amount), wrap-around past Z or A, or gaps that grow or shrink as the sequence continues. Sequences where the two letters converge towards each other, or where two patterns are interleaved, are also demanding and reward careful, step-by-step checking.`,
+      },
+      {
+        q: `How can my child improve at letter pair series?`,
+        a: `Practice that trains the split-the-pair habit is the key, along with comfort converting letters to numbers and counting on the alphabet line. Free PrepStep practice gives your child these sequences one at a time with the alphabet line on screen, and each worked explanation separates the pair into its two patterns, so the method sticks.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Letter Pair Series Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ letter pair series practice for the GL Assessment. Five-option questions with an alphabet line and worked explanations. Find the next pair every time.`,
+      ogTitle:       `11+ Letter Pair Series Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ letter pair series practice: two-pattern sequences, five options, worked explanations. Learn to split the pair and crack the rule.`,
+    },
+  },
+
+  // ── VR: NUMBER SERIES ────────────────────────────────────────────────────────
+  numberSeries: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'numberSeries',
+    slug:         'number-series',
+    topicLabel:   'Number Series',
+    canonical:    'https://prepstep.co.uk/practice/vr/number-series',
+    questionIds:  [5, 32, 33, 71, 6],
+
+    intro: `Number series sit right at the meeting point of maths and reasoning. Your child is shown a run of numbers, usually five to seven of them, such as 3, 7, 11, 15, 19, and has to work out the rule and give the number that comes next. The skill is not arithmetic for its own sake. It is spotting the hidden relationship between the numbers, whether that is a steady step, a times table, growing gaps or something more inventive.
+
+Number series are a dependable feature of the GL Assessment 11+ Verbal Reasoning paper. Our research estimate is roughly 3 to 5 questions per paper, with the missing number almost always at the end of the run. The numbers are whole numbers; decimals and fractions are essentially absent and negatives are rare. Your child chooses from five options (A to E) and marks the answer on a separate sheet, so quick, accurate pattern-spotting matters as much as the maths itself.
+
+On this page your child practises these sequences one at a time, building the instinct to write down the gaps between numbers and read the pattern from there. Every question has a worked explanation that names the rule and shows the final step, so your child learns to verify the answer against the whole series rather than trusting the first idea.`,
+
+    topicBreakdown: {
+      intro: `Number series are built from a wide range of patterns. GL does not publish how often each appears, so this order is our research estimate, grouped roughly from most approachable to most demanding:`,
+      items: [
+        `Constant addition or subtraction (the same amount is added or taken away each step, such as +4 or -7): the most common and most reliable pattern`,
+        `Times tables and multiples (the numbers count up in a familiar table, such as 6, 12, 18, 24): quick to spot once the tables are secure`,
+        `Doubling and halving (each number is twice or half the one before): a frequent middle-difficulty pattern`,
+        `Increasing or decreasing differences (the gap itself grows or shrinks, such as +2, +3, +4, +5): the step up from constant patterns`,
+        `Square, cube and other special numbers (1, 4, 9, 16, 25 or 1, 8, 27, 64), and prime numbers (2, 3, 5, 7, 11): rewards recognising known sequences`,
+        `Fibonacci-style rules (each number is the sum of the two before it) and triangular numbers (1, 3, 6, 10, 15): patterns hidden in the relationships`,
+        `Interleaved and compound rules (two patterns woven together, or a rule such as times two then add one): the hardest type to unpick`,
+      ],
+      footnote: `Difficulty rises from a single constant gap on small numbers, through growing differences, squares and doubling, up to interleaved sequences where odd and even positions follow different rules and answers can occasionally be negative.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Writing the gap instead of the next number.`,
+        tip:  `After finding that the series goes up by 7, it is easy to write 7 rather than the actual next term. Remind your child that the gap is a clue, not the answer, and that the final step is to add (or subtract) that gap to the last number shown.`,
+      },
+      {
+        lead: `Assuming a steady gap when the gaps are growing.`,
+        tip:  `Some series add a little more each step, so a child who spots the first gap and stops there gets caught. Teach your child to write the gap under every pair of numbers, then check whether those gaps are constant or changing before deciding the rule.`,
+      },
+      {
+        lead: `Missing an interleaved pattern.`,
+        tip:  `When a series looks chaotic, it is often two patterns woven together, with the odd positions following one rule and the even positions another. Encourage your child to split the series into alternate numbers and look at each strand separately before giving up.`,
+      },
+      {
+        lead: `Slipping on the arithmetic with larger numbers.`,
+        tip:  `Off-by-one and simple addition errors are common, and GL builds wrong options that sit one or two away from the correct number. The fix is to work the final calculation carefully on paper and confirm the rule fits every number in the run.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What is a number series in the GL 11+ exam?`,
+        a: `It is a Verbal Reasoning question that shows a run of numbers, usually five to seven of them, with the last one missing. Your child works out the rule linking the numbers, such as adding the same amount each time or following a times table, and chooses the number that comes next from five options (A to E). The missing number is almost always at the end of the series.`,
+      },
+      {
+        q: `How many number series questions are in the GL paper?`,
+        a: `Our research estimate is around 3 to 5 number series questions in a typical GL Assessment 11+ Verbal Reasoning paper, since GL does not publish exact counts. They use whole numbers, with decimals and fractions essentially absent and negative answers rare, so the focus is firmly on spotting the pattern quickly and adding up accurately.`,
+      },
+      {
+        q: `How do you work out a number series pattern?`,
+        a: `The most reliable method is to write the difference between each pair of numbers. If the differences are all the same, it is a constant add or subtract. If the differences themselves form a pattern, the gaps are growing or shrinking. If the series still looks random, try splitting it into alternate numbers, since two patterns may be woven together. Always check your rule works for every number shown.`,
+      },
+      {
+        q: `What are the hardest number series questions?`,
+        a: `The toughest are interleaved sequences, where odd and even positions follow different rules, and compound rules such as times two then add one. Cube numbers and doubling differences are also demanding. These reward children who can recognise known sequences like squares, cubes, primes and Fibonacci, and who check the rule against the whole series rather than just the last two numbers.`,
+      },
+      {
+        q: `How can my child get better at number series?`,
+        a: `Secure times tables, quick recall of square and cube numbers, and the habit of writing down the gaps all make a big difference. Free PrepStep practice gives your child these sequences one at a time with worked explanations that name the rule and show the final step, so the pattern-spotting becomes faster and more confident with each attempt.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Number Series Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ number series practice for the GL Assessment. Five-option questions with worked explanations. Spot the pattern and find the next number every time.`,
+      ogTitle:       `11+ Number Series Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ number series practice: sequences, times tables, growing gaps and more, with five options and worked explanations.`,
+    },
+  },
+
+  // ── VR: LETTER SUMS ──────────────────────────────────────────────────────────
+  letterSums: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'letterSums',
+    slug:         'letter-sums',
+    topicLabel:   'Letter Sums',
+    canonical:    'https://prepstep.co.uk/practice/vr/letter-sums',
+    questionIds:  [1, 7, 9, 31, 3],
+
+    intro: `Letter sums turn the alphabet into a set of numbers. With A worth 1, B worth 2, C worth 3 and so on up to Z worth 26, your child adds up the value of the letters in a word, or works through a short calculation written in letters. A question might ask for the total value of FACE, or which of five words scores highest, or what a small letter equation comes to. The reasoning is simple to describe but easy to fumble, because it relies on knowing exactly where each letter sits in the alphabet.
+
+Letter sums feature in the GL Assessment 11+ Verbal Reasoning paper as part of its number-and-letter reasoning. The A equals 1 mapping is always stated explicitly, and GL prints an alphabet reference line, often with the position numbers, on the page. Our research estimate, since GL does not publish weightings, is a modest block of questions when the type appears. As across the paper, your child chooses from five options (A to E) and marks the answer on a separate sheet, so careful counting and tidy adding up win marks.
+
+On this page your child practises with that same numbered alphabet line, working through one letter sum at a time. Every question comes with a worked explanation that lists each letter's value before adding them, so your child builds both the alphabet knowledge and the careful arithmetic the type demands.`,
+
+    topicBreakdown: {
+      intro: `Letter sums come in several shapes. GL does not publish their frequency, so this order is our research estimate, roughly from the gentlest to the most involved:`,
+      items: [
+        `Word value (add the alphabet positions of the letters in a word, such as the total of CAT): the core skill everything else builds on`,
+        `Letter arithmetic (a short sum written in letters, such as A plus B plus C): straightforward once the values are known`,
+        `Comparison (work out several words and decide which scores highest or lowest): more adding up, and a test of accuracy under pressure`,
+        `Same-value pairs (calculate a set of words and find the two that match): rewards organised, methodical working`,
+        `Mixed operations with multiplication or subtraction (a line such as D times E minus C, where BODMAS applies): the order of operations becomes the trap`,
+        `Letter equations (find the missing letter that completes a sum, such as B plus something equals J): reasoning backwards to a letter`,
+        `Word difference (the gap between the values of two words): two totals, then a subtraction`,
+      ],
+      footnote: `Difficulty grows from short words using early-alphabet letters and a single addition, through subtraction and comparison across the full alphabet, up to mixed operations with BODMAS, multi-word comparisons and reverse mappings where A is worth 26 down to Z worth 1.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Miscounting letters in the middle of the alphabet.`,
+        tip:  `Letters like M, N and O are easy to misplace by one, and GL builds wrong options exactly one or two away from correct. Teach your child to anchor on EJOTY (E is 5, J is 10, O is 15, T is 20, Y is 25) and count on from the nearest anchor using the alphabet line.`,
+      },
+      {
+        lead: `Forgetting to count a repeated letter twice.`,
+        tip:  `In a word like BELL the L appears twice and must be added twice. Remind your child to tick off each letter as they go, so a doubled letter is never quietly dropped from the total.`,
+      },
+      {
+        lead: `Adding when the line mixes operations.`,
+        tip:  `When a question uses multiplication alongside addition or subtraction, BODMAS applies, so the multiplication is done first. For example B plus C times D is 2 plus 12, which is 14, not 20. Encourage your child to do any times step before adding or subtracting.`,
+      },
+      {
+        lead: `Underestimating the high-value letters.`,
+        tip:  `Letters near the end of the alphabet are worth a lot (W is 23, X is 24, Y is 25, Z is 26), and children often guess them too low in comparison questions. The fix is to count those letters carefully and, for comparisons, estimate first by noticing which words carry late-alphabet letters.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are letter sums in the 11+?`,
+        a: `Letter sums are a Verbal Reasoning question type where each letter is given a number, almost always A equals 1 up to Z equals 26. Your child adds the values of the letters in a word, compares words, or solves a short calculation written in letters. The answer is chosen from five options (A to E), and GL prints a numbered alphabet line on the page to help.`,
+      },
+      {
+        q: `What does each letter equal in a letter sum?`,
+        a: `In the standard GL letter sum, A equals 1, B equals 2, C equals 3 and so on up to Z equals 26, and this mapping is always stated in the question. Occasionally a harder question uses a different rule, such as A equals 26 counting down to Z equals 1, or each letter worth its position doubled, but the question will always tell your child the values to use.`,
+      },
+      {
+        q: `What is the EJOTY trick for letter sums?`,
+        a: `EJOTY names five evenly spaced signposts in the alphabet: E is 5, J is 10, O is 15, T is 20 and Y is 25. Rather than counting from A every time, your child jumps to the nearest signpost and counts on. For example, to find P, start from O (15) and add one to get 16. It makes finding letter values much faster and cuts down counting errors.`,
+      },
+      {
+        q: `Why do children lose marks on letter sums?`,
+        a: `The maths is simple, so most marks are lost to small slips: miscounting a letter in the middle of the alphabet, forgetting to add a repeated letter twice, or breaking BODMAS in a mixed calculation. High-value letters near Z are often guessed too low. Careful counting on the alphabet line and tidy written totals prevent nearly all of these.`,
+      },
+      {
+        q: `How can my child improve at letter sums?`,
+        a: `Knowing the alphabet positions quickly is the foundation, helped by the EJOTY anchors and learning the alphabet in groups of five. Writing down each letter's value before adding keeps the working tidy. Free PrepStep practice gives your child a numbered alphabet line and one letter sum at a time, with worked explanations that show every value, so accuracy and speed grow together.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Letter Sums Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ letter sums practice for the GL Assessment. Five-option questions with a numbered alphabet line and worked explanations. Turn letters into totals accurately.`,
+      ogTitle:       `11+ Letter Sums Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ letter sums practice: word values, comparisons and letter equations, with a numbered alphabet line and worked explanations.`,
+    },
+  },
+
+  // ── VR: WORD CODE ANALOGIES ──────────────────────────────────────────────────
+  wordCodeAnalogies: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'wordCodeAnalogies',
+    slug:         'word-code-analogies',
+    topicLabel:   'Word Code Analogies',
+    canonical:    'https://prepstep.co.uk/practice/vr/word-code-analogies',
+    questionIds:  [6, 2, 10, 14, 18],
+
+    intro: `Word code analogies are the detective work of the GL Assessment 11+ Verbal Reasoning paper. Your child is shown a worked example, such as "big becomes dig", and has to spot exactly what the letters did, then apply that same hidden rule to a brand new word. The trick is to ignore what the words mean completely and watch only the letters: which one changed, where it sat, and how far it moved.
+
+In a typical GL Verbal Reasoning paper the questions are grouped into short blocks of one type, with every answer marked A to E on a separate answer sheet. Code and pattern questions are a regular feature, and our research estimate, based on analysing GL practice papers, is that letter pattern and word code questions together account for roughly 8 to 12 per cent of a paper. GL rotates its question types, so the exact mix changes from one sitting to the next, but code-breaking of some kind almost always appears.
+
+On this page your child meets the real format one question at a time: a model transformation, a new word to convert, and five answer options where every choice is a genuine English word or a tidy letter sequence. Each question comes with a worked explanation that names the rule in plain steps, so your child builds the habit of defining what changed before they choose.`,
+
+    topicBreakdown: {
+      intro: `GL bundles several letter-manipulation rules under this heading. GL does not publish how often each appears, so the order below is our research estimate from practice papers, with the most common rules first:`,
+      items: [
+        `Single letter change (one letter swapped for another, often the first or last): the most common starting point, frequently the easier questions`,
+        `Letter removal (stripping the first, last or middle letter, as in "ship" to "hip")`,
+        `Reversal (spelling the word backwards, as in "BIG" to "GIB")`,
+        `Letter addition or suffix patterns (adding "-er", "-y" or "-our" to build a new word)`,
+        `Alphabet shift codes (moving every letter forward or back a fixed number of places, as in "FISH" to "GJTI")`,
+        `Letter and number sequences (paired patterns such as A1, B2, C3 where letter and number advance together)`,
+        `Compound rules (two operations combined, the hardest variety, such as change then reverse)`,
+      ],
+      footnote: `Difficulty runs from a single obvious change on a three-letter word up to compound rules on five-letter words and backwards alphabet shifts, where more than one rule can seem to fit and only careful letter-by-letter checking settles it.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Reading the words for meaning instead of looking at the letters.`,
+        tip:  `Code questions reward letter spotting, not vocabulary. Teach your child to cover the meaning and ask only "which letter moved, and how far?" The words being unrelated in sense is the whole point.`,
+      },
+      {
+        lead: `Confusing a reversal with a first-and-last swap on short words.`,
+        tip:  `For a three-letter word, reversing it and swapping the outer letters give the same result, so the rule looks ambiguous. Tell your child to test the rule on the longer word in the question, where the two rules give different answers.`,
+      },
+      {
+        lead: `Miscounting the alphabet jump in a shift code.`,
+        tip:  `When letters move forward or back a fixed number of places, an off-by-one slip changes every letter. Encourage your child to say the alphabet aloud quietly and count on their fingers rather than guessing the gap.`,
+      },
+      {
+        lead: `Choosing a real word that fits a different rule.`,
+        tip:  `GL builds wrong answers that are correct for the wrong interpretation of the example. Once your child has an answer, they should work the rule backwards on it to check it returns the original word.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are word code analogies in the GL 11+ Verbal Reasoning exam?`,
+        a: `They are questions that show your child a worked example of a word being transformed by a letter rule, such as "big becomes dig", and ask them to apply the same rule to a new word. The skill is pure letter manipulation: spotting which letter changed, where, and by how much. Meaning is irrelevant, which is what makes these questions different from verbal analogies.`,
+      },
+      {
+        q: `How are word code questions tested in the GL 11+ exam?`,
+        a: `Through multiple choice with five options (A to E) marked on a separate answer sheet. The questions usually appear in a short block of the same type, and every answer choice is a real English word or a neat letter sequence, so a child who lands on something that is not a word knows they have the rule wrong.`,
+      },
+      {
+        q: `What is the difference between word code analogies and verbal analogies?`,
+        a: `Verbal analogies are about meaning, for example "kitten is to cat as puppy is to dog". Word code analogies are about letters, for example "cat is to bat as dog is to bog". They use a similar layout but test completely different skills, so children must not apply meaning-based reasoning to a code question.`,
+      },
+      {
+        q: `Why does my child keep getting word codes wrong even when they understand the rule?`,
+        a: `Usually it is one of three slips: counting the alphabet jump incorrectly, confusing a reversal with a letter swap on short words, or being lured by an answer that fits a different rule. The fix is a habit, not more knowledge: define the rule precisely in words, then check the chosen answer by reversing the rule.`,
+      },
+      {
+        q: `How can my child improve at word code analogies for the 11+?`,
+        a: `Short, regular practice that builds the routine of naming the rule before choosing an answer is far more effective than occasional long sessions. Free PrepStep practice gives one question at a time in the real five-option format, with a worked explanation that states exactly what changed and where, so the method becomes automatic.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Word Code Analogies Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ word code analogy practice for the GL Assessment. Spot the letter rule and apply it, five-option questions with worked explanations.`,
+      ogTitle:       `11+ Word Code Analogies Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ word code practice: letter-manipulation rules, five-option questions, worked explanations. Crack the code, ignore the meaning.`,
+    },
+  },
+
+  // ── VR: NUMBER WORD CODES ────────────────────────────────────────────────────
+  numberWordCodes: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'numberWordCodes',
+    slug:         'number-word-codes',
+    topicLabel:   'Number Word Codes',
+    canonical:    'https://prepstep.co.uk/practice/vr/number-word-codes',
+    questionIds:  [126, 135, 137, 148, 152],
+
+    intro: `Number word codes turn the GL Assessment 11+ Verbal Reasoning paper into a secret cipher. Each letter is given a number, and your child has to work out the hidden mapping from the clues provided, then use it to code a new word or decode a number back into letters. The catch that trips children up is that the numbers are assigned arbitrarily, never by alphabet position, so every question set has its own private code that must be deduced from scratch.
+
+These questions sit among the coding and logic types in a GL Verbal Reasoning paper, with answers marked A to E on a separate answer sheet. Our research estimate, drawn from analysing GL practice papers, is that number and letter coding questions together make up somewhere around 8 to 12 per cent of a paper, though GL rotates its types and the exact share varies between sittings. When the type appears it usually comes as a short block, so getting the method right pays off several times in a row.
+
+On this page your child practises the genuine article: a worked code such as "SPOT is 1234", a target to convert, and five tightly built options where the wrong answers are deliberately near misses. Every question is explained step by step, including how to build a letter-equals-number table and check the answer by substituting it back.`,
+
+    topicBreakdown: {
+      intro: `GL presents number word codes in a few recognisable shapes. GL does not publish exact frequencies, so the order below is our research estimate from practice papers, easier formats first:`,
+      items: [
+        `Direct coding (an explicit pair is given, such as "CAR is 312", and your child codes a rearranged word like ARC)`,
+        `Letter-to-number lookup ("which number represents the letter U?" from a coded word)`,
+        `Reverse and rearrange (code a word that uses the same letters in a different order)`,
+        `Cross-referencing two codes (two coded words share letters, such as LAMP and PALM, and the overlap confirms each mapping)`,
+        `Double-letter entry points (a repeated letter shows up as a repeated digit, the fastest way in)`,
+        `Building a new word from combined letters (gather mappings from several words to code a fresh one)`,
+        `Find the word (given a number code, decide which word it spells)`,
+      ],
+      footnote: `Difficulty rises from a single explicit pair on a three-letter word, through scrambled codes that need cross-referencing, up to longer words with no repeated letters where the wrong answers are simply the right digits in the wrong order.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Assuming the code follows the order of the word.`,
+        tip:  `GL often scrambles the code so it does not line up with the letters left to right. Teach your child to match each letter to its number deliberately rather than reading straight across, especially when two coded words are given to cross-check.`,
+      },
+      {
+        lead: `Being fooled by near-identical number options.`,
+        tip:  `Wrong answers are frequently the correct digits in a slightly different order, such as 346 against 364. Your child should write out their answer digit by digit and compare each position, not just glance at the shape of the number.`,
+      },
+      {
+        lead: `Decoding more of the word than the question needs.`,
+        tip:  `There is no prize for cracking every letter. Train your child to find only the mappings for the letters in the target word, which saves time and reduces the chance of a copying slip.`,
+      },
+      {
+        lead: `Forgetting to verify with a second clue.`,
+        tip:  `When two coded words are supplied, the second one is a built-in checker. Encourage your child to confirm every mapping against both words before committing, since a value that fits one word may be contradicted by the other.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are number word codes in the GL 11+ Verbal Reasoning exam?`,
+        a: `They are questions where each letter of a word is given a number, and your child works out the hidden code from the clues, then uses it to write the code for a new word or to decode a number back into a word. The numbers are arbitrary, not based on alphabet position, so the mapping has to be deduced fresh for every question set.`,
+      },
+      {
+        q: `How are number word codes tested in the GL 11+ exam?`,
+        a: `Through multiple choice with five options (A to E) on a separate answer sheet. The questions ask in two directions: "what is the code for this word?" and "what letter does this number stand for?" They usually appear as a short block of the same type within the Verbal Reasoning paper.`,
+      },
+      {
+        q: `How is this different from letter shift codes?`,
+        a: `Letter shift codes move each letter a fixed number of places along the alphabet, so they are calculated. Number word codes use an arbitrary substitution that has to be deduced by cross-referencing the given words. They look similar on the page but use entirely different thinking, so it helps to know which one you are facing before you start.`,
+      },
+      {
+        q: `What is the quickest way to crack a number word code?`,
+        a: `Look first for a repeated letter that shows up as a repeated digit, because that pins a mapping instantly. After that, find letters shared between the given words and match them to the shared digits in the codes, building a small letter-equals-number table as you go. Then decode only the letters your target word actually needs.`,
+      },
+      {
+        q: `How can my child improve at number word codes for the 11+?`,
+        a: `Regular short practice that drills the build-a-table-and-check-it routine is what turns these from slow puzzles into reliable marks. Free PrepStep practice offers one coded set at a time in the real five-option format, with explanations that show the cross-referencing step by step, so the deduction habit sticks.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Number Word Codes Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ number word code practice for the GL Assessment. Deduce the hidden letter-to-number code, five-option questions with worked explanations.`,
+      ogTitle:       `11+ Number Word Codes Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ number word code practice: crack the substitution cipher, five-option questions, step-by-step explanations.`,
+    },
+  },
+
+  // ── VR: LOGIC AND LANGUAGE ───────────────────────────────────────────────────
+  logicAndLanguage: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'logicAndLanguage',
+    slug:         'logic-and-language',
+    topicLabel:   'Logic and Language',
+    canonical:    'https://prepstep.co.uk/practice/vr/logic-and-language',
+    questionIds:  [8, 4, 32, 19, 6],
+
+    intro: `Logic and language questions ask your child to reason carefully with words rather than recall facts. A few short statements are given, and from them your child must work out who is tallest, what must be true, or which word completes a jumbled sentence. The reward goes to clear, step-by-step thinking, and the punishment goes to jumping at the answer that simply feels right.
+
+This is an umbrella group within the GL Assessment 11+ Verbal Reasoning paper, covering ordering puzzles, logical deductions, sentence rearrangements and a sprinkling of rhyming-word and simple number puzzles. Everything is multiple choice with five options (A to E) on a separate answer sheet. Our research estimate, based on GL practice papers, is that reasoning questions of this family account for roughly 10 to 15 per cent of a paper, though GL varies the mix and not every sub-type appears every time. Notably, one of the five options is sometimes "Cannot tell", and knowing when that is the right answer is a genuine skill in itself.
+
+On this page your child works through these puzzles one at a time, with explanations that model the method: order the people on a line, test whether a conclusion truly follows, or find the subject and verb before rebuilding a sentence. The aim is a calm, checkable routine rather than a lucky guess.`,
+
+    topicBreakdown: {
+      intro: `This heading gathers several reasoning sub-types. GL does not publish their relative frequency, so the order below is our research estimate from practice papers:`,
+      items: [
+        `Ordering puzzles (placing three to five people or things in sequence from comparison clues, such as tallest to shortest)`,
+        `Simple syllogisms ("all dogs have four legs, Rover is a dog, therefore Rover has four legs")`,
+        `Reverse syllogism traps ("all roses have thorns, this plant has thorns, is it a rose?", where the answer is no)`,
+        `Sentence rearrangement (jumbled words to reorder, then name the first or last word)`,
+        `Negation and "cannot tell" judgements (deciding what can and cannot be proven from the clues)`,
+        `Rhyming-word puzzles (two short rhyming words that match a clue, such as "fat cat" for an overweight feline)`,
+        `Short number reasoning (simple word problems woven into the verbal section)`,
+      ],
+      footnote: `Difficulty climbs from a three-person ordering with extreme positions, through four and five-person chains and reverse syllogisms, up to multi-step deductions where the correct answer is sometimes that nothing can be determined.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Falling for the reverse syllogism.`,
+        tip:  `"All A are B" does not mean "all B are A". Holly and cacti have thorns without being roses. Teach your child to ask whether the conclusion absolutely must follow, not whether it sounds plausible.`,
+      },
+      {
+        lead: `Tripping over direction words.`,
+        tip:  `"Fewer", "shorter", "slower" and "younger" reverse the ordering, and a child running on autopilot reads them as their opposites. Encourage drawing a vertical line and placing each name on it as the clue is read.`,
+      },
+      {
+        lead: `Refusing to choose "Cannot tell".`,
+        tip:  `Children feel they must commit to a definite answer, so they reject "Cannot tell" even when the clues genuinely do not prove anything. Remind your child that "Cannot tell" is a real, correct option when nothing in the statements settles the question.`,
+      },
+      {
+        lead: `Answering ordering questions for the wrong position.`,
+        tip:  `GL often asks for the second or third in line rather than the first or last, which is where a half-built ranking gives a wrong answer. Tell your child to write out every name in order before reading off the one the question asks for.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are logic and language questions in the GL 11+ Verbal Reasoning exam?`,
+        a: `They are reasoning questions that give a few short statements and ask your child to deduce a conclusion: who is tallest, what must be true, or which word completes a rearranged sentence. They test careful, step-by-step thinking with words rather than memorised knowledge, and they sit within the GL Verbal Reasoning paper.`,
+      },
+      {
+        q: `How are logic and language questions tested in the GL 11+ exam?`,
+        a: `Through multiple choice with five options (A to E) on a separate answer sheet. The sub-types are mixed, so a child may move from an ordering puzzle to a syllogism to a jumbled sentence, and one of the options is sometimes "Cannot tell", which is occasionally the correct answer.`,
+      },
+      {
+        q: `What is the most common trap in GL logic questions?`,
+        a: `The reverse syllogism. Children read "all roses have thorns, this plant has thorns" and conclude the plant is a rose, but the statement does not say only roses have thorns. The cure is to ask "does this have to be true?" rather than "could this be true?", because logic questions reward only what is proven.`,
+      },
+      {
+        q: `When is "Cannot tell" the right answer?`,
+        a: `Whenever the statements do not give enough to prove a single answer. If a conclusion is merely likely rather than certain, "Cannot tell" is correct. Many children avoid it because it feels like giving up, so it is worth practising the judgement of when a puzzle genuinely has no determined answer.`,
+      },
+      {
+        q: `How can my child improve at logic and language for the 11+?`,
+        a: `Building a habit of slowing down, drawing a quick ordering line and testing whether a conclusion must follow is the key, and it comes from regular short practice rather than cramming. Free PrepStep practice presents one reasoning puzzle at a time with an explanation that models the method, so careful thinking becomes second nature.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Logic and Language Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ logic and language practice for the GL Assessment. Ordering puzzles, syllogisms and sentence reasoning, five-option questions with explanations.`,
+      ogTitle:       `11+ Logic and Language Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ logic practice: ordering puzzles, syllogisms and "cannot tell" judgements, five-option questions with worked explanations.`,
+    },
+  },
+
+  // ── VR: SHARED LETTER ────────────────────────────────────────────────────────
+  sharedLetter: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'sharedLetter',
+    slug:         'shared-letter',
+    topicLabel:   'Shared Letter',
+    canonical:    'https://prepstep.co.uk/practice/vr/shared-letter',
+    questionIds:  [6, 46, 54, 94, 14],
+
+    intro: `Shared letter questions hand your child a small bridge-building puzzle. Two pairs of word fragments are shown with a gap in the middle of each, and a single letter has to slot into all of them at once. That letter ends the left fragment and begins the right one, so in "CA ( ? ) EN" and "BU ( ? ) ANK" the letter T builds CAT and TEN, then BUT and TANK. Four real words from one letter.
+
+This type belongs to the GL Assessment 11+ Verbal Reasoning paper and rotates with the related missing-letter questions, so it does not appear in every single paper. When it does, it comes as a block of the same format, answered A to E on a separate answer sheet, choosing from five candidate letters. Our research estimate, from analysing GL practice papers, is that letter-completion questions of this kind make up around 5 to 8 per cent of a paper when present. The single biggest source of marks lost here is settling for a letter that works on one pair but quietly fails on the other.
+
+On this page your child practises the exact layout, with the fragments stacked over two lines just as GL prints them, and five single-letter options to choose between. Every explanation spells out all four finished words, reinforcing the rule that the chosen letter must complete every one of them.`,
+
+    topicBreakdown: {
+      intro: `The format is fixed, but the challenge varies with the words and the letter. GL does not publish a breakdown, so the points below are our research estimate of what makes a shared letter question harder or easier:`,
+      items: [
+        `Common consonant answers (T, S, N and R complete the most word pairs and turn up most often in the easier questions)`,
+        `Short fragments (two or three letters either side, which keep the resulting words familiar)`,
+        `Less common letter answers (K, W, B and G, which fit fewer pairs and need more testing)`,
+        `Vowel answers (A, E, I, O or U, harder to eliminate because several can seem to fit)`,
+        `Restrictive fragments (an unusual cluster such as SK or QU, where very few letters can possibly work, a useful starting point)`,
+        `Longer or less familiar resulting words, where a vocabulary gap can hide the right answer`,
+      ],
+      footnote: `Difficulty rises from common short words completed by an obvious consonant, up to uncommon vocabulary and vowel answers where a strong wrong option completes one pair perfectly but breaks the other.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Checking only one pair before committing.`,
+        tip:  `A letter that builds both words in the first pair can still fail the second. Insist your child confirms all four words every time, because the correct answer is the one letter that satisfies every fragment.`,
+      },
+      {
+        lead: `Overlooking vowel answers.`,
+        tip:  `Children try T, S, N and R first and stop, but the answer is sometimes A, E, I, O or U. If no consonant works on all four words, your child should run through the vowels rather than assume they have misread the question.`,
+      },
+      {
+        lead: `Accepting a near-word under time pressure.`,
+        tip:  `In a hurry a child may accept something that looks almost right but is not a real word. Encourage a quick mental check that each of the four results is a genuine English word before moving on.`,
+      },
+      {
+        lead: `Starting with the easiest fragment instead of the hardest.`,
+        tip:  `The fastest route is to begin with the most restrictive fragment, the one where the fewest letters could possibly fit, and test that letter across all four words. Starting with an easy fragment lets too many candidates survive.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are shared letter questions in the GL 11+ Verbal Reasoning exam?`,
+        a: `They show two pairs of word fragments with a gap in each, and your child finds the single letter that completes all four words at once. The letter ends the first fragment of a pair and begins the second, so "CA ( ? ) EN" with the letter T makes CAT and TEN. The same letter must work for both pairs.`,
+      },
+      {
+        q: `How are shared letter questions tested in the GL 11+ exam?`,
+        a: `Through multiple choice with five single-letter options (A to E) on a separate answer sheet. The fragments are usually printed on two stacked lines. This type rotates with missing-letter questions in GL papers, so it does not appear every time, but when it does it comes as a block of the same format.`,
+      },
+      {
+        q: `What is the difference between shared letter and missing letter questions?`,
+        a: `A shared letter question uses one letter to complete two word pairs, creating four words. A missing letter question removes three consecutive letters from a single word, and those three letters must form a word of their own. They are related but distinct, so it helps your child to recognise which one they are looking at.`,
+      },
+      {
+        q: `Which letters are most often the answer?`,
+        a: `T, S, N and R complete the most word pairs and are worth trying first when a child is stuck. However, GL deliberately sets some questions where the answer is a less common consonant or a vowel, so trying the popular letters is a starting tactic, not a guarantee. Every answer still has to be checked against all four words.`,
+      },
+      {
+        q: `How can my child improve at shared letter questions for the 11+?`,
+        a: `The winning habit is to start with the most restrictive fragment and then verify all four words before choosing, and that habit grows with regular short practice. Free PrepStep practice presents the questions in the real stacked format with explanations that name all four finished words, so the check-everything routine becomes automatic.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Shared Letter Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ shared letter practice for the GL Assessment. Find the one letter that completes both word pairs, five-option questions with explanations.`,
+      ogTitle:       `11+ Shared Letter Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ shared letter practice: one letter, four words, five options. Worked explanations that check every word.`,
+    },
+  },
+
+  // ── VR: BALANCE EQUATIONS ────────────────────────────────────────────────────
+  balanceEquations: {
+    subject:      'vr',
+    subjectLabel: 'Verbal Reasoning',
+    topicKey:     'balanceEquations',
+    slug:         'balance-equations',
+    topicLabel:   'Balance Equations',
+    canonical:    'https://prepstep.co.uk/practice/vr/balance-equations',
+    questionIds:  [1, 5, 11, 14, 21],
+
+    intro: `Balance equation questions bring a flash of arithmetic into the GL Assessment 11+ Verbal Reasoning paper. Your child is given a sum with a missing number inside brackets, and they have to work out the value that makes both sides equal. A question such as "9 + 6 = 5 times the gap" is solved by finding the left side, which is 15, then asking what times 5 makes 15, which is 3.
+
+This is part of the numerical reasoning strand that GL threads through Verbal Reasoning. GL does not label this exact type by name, so we group it, in our research, with the number-based VR questions, and our estimate from analysing practice papers is that numerical reasoning of this kind accounts for somewhere around 8 to 12 per cent of a paper. As with everything else in the paper, answers are multiple choice with five options (A to E) on a separate answer sheet. The mental skill being tested is solid: read both sides, calculate the fixed side, then reverse the remaining operation to find the gap.
+
+On this page your child practises the genuine format, with the equation laid out clearly and five number options to choose from. Each explanation follows the same dependable three steps: work out the side you can, restate the equation, then solve the small piece that remains. Where the harder questions need the order of operations, the explanation makes the BODMAS step explicit.`,
+
+    topicBreakdown: {
+      intro: `These questions stay within familiar arithmetic, but the demands grow. GL does not publish a breakdown, so the points below are our research estimate of what raises the difficulty:`,
+      items: [
+        `Single-operation balances (one calculation on each side, such as "12 minus 4 equals 2 times the gap")`,
+        `The four operations (addition, subtraction, multiplication and division all appear on either side)`,
+        `Missing number on the right (the bracket sits after the operator, as in "equals 5 times the gap")`,
+        `Missing number on the left (the bracket comes first, as in "the gap plus 2 equals 7")`,
+        `Order of operations (BODMAS), where one side has two steps and the multiply or divide must be done first`,
+        `Larger numbers and tighter answer options that punish a careless calculation`,
+      ],
+      footnote: `Difficulty rises from a single operation on each side with small numbers, up to two-step sides that require BODMAS, where doing the operations in the wrong order produces a tempting but wrong answer.`,
+    },
+
+    pitfalls: [
+      {
+        lead: `Ignoring the order of operations.`,
+        tip:  `When one side has two steps, such as "30 divided by 5 plus 12", the multiply or divide must come before the add or subtract. Teach your child to underline the multiply or divide and do it first, because working left to right gives the wrong total.`,
+      },
+      {
+        lead: `Solving the wrong side first.`,
+        tip:  `The smart move is to fully calculate the side that has no missing number, then balance against it. A child who tries to work with the bracketed side first often gets tangled. Find the fixed value, then reverse the operation to fill the gap.`,
+      },
+      {
+        lead: `Choosing the value of the fixed side instead of the gap.`,
+        tip:  `If the left side comes to 15, a child may pick 15 from the options rather than the number that goes in the bracket. The fixed total is usually planted among the choices as a trap, so your child must answer the actual question, which is the missing number.`,
+      },
+      {
+        lead: `Rushing the final reverse step.`,
+        tip:  `Once the equation reads, for example, "15 equals 5 times the gap", the answer is found by dividing, not multiplying. Encourage your child to say the reverse step in words ("what times 5 makes 15?") so the right operation is obvious.`,
+      },
+    ],
+
+    faq: [
+      {
+        q: `What are balance equation questions in the GL 11+ Verbal Reasoning exam?`,
+        a: `They are arithmetic questions with a missing number inside brackets, where your child finds the value that makes both sides of the equation equal. For example, "9 + 6 = 5 times the gap" is solved by working out 15, then finding what times 5 makes 15, which is 3. They test mental calculation and the order of operations within the numerical part of Verbal Reasoning.`,
+      },
+      {
+        q: `How are balance equations tested in the GL 11+ exam?`,
+        a: `Through multiple choice with five number options (A to E) on a separate answer sheet. The equation is printed clearly with the gap shown in brackets, and the missing number can sit on either side. Harder questions place two operations on one side, so the order of operations matters.`,
+      },
+      {
+        q: `Do these questions need BODMAS?`,
+        a: `The harder ones do. When one side has two steps, such as "20 minus 2 times 7", the multiplication is done before the subtraction, giving 6 rather than 126. Getting the order right is the single most common dividing line between a correct and an incorrect answer on the tougher balance equations.`,
+      },
+      {
+        q: `Why does my child pick the wrong option when their working is right?`,
+        a: `Most often they answer with the value of the fixed side instead of the missing number in the bracket, because that total is usually planted among the choices. The remedy is to reread the question after calculating and confirm they are giving the number that fills the gap, not the side they worked out on the way.`,
+      },
+      {
+        q: `How can my child improve at balance equations for the 11+?`,
+        a: `A steady three-step routine, calculate the fixed side, restate the equation, then reverse the last operation, makes these reliable marks, and it is built through regular short practice rather than occasional bursts. Free PrepStep practice gives one equation at a time with five options and an explanation that walks through each step, including the BODMAS move where it is needed.`,
+      },
+    ],
+
+    meta: {
+      title:         `11+ Balance Equations Practice (GL Assessment) | PrepStep`,
+      description:   `Free 11+ balance equation practice for the GL Assessment. Find the missing number that makes both sides equal, five-option questions with explanations.`,
+      ogTitle:       `11+ Balance Equations Practice (GL Assessment) | PrepStep`,
+      ogDescription: `Free GL Assessment 11+ balance equation practice: numerical reasoning with BODMAS, five-option questions and step-by-step explanations.`,
+    },
+  },
+
 };
 
 // ── 5. Helpers ────────────────────────────────────────────────────────────────
@@ -1916,6 +3272,8 @@ function renderQuestionCard(q, index) {
   // Dispatch by question shape
   if (q.questionType === 'passage')       return renderPassageCard(q, index);
   if (q.questionType === 'error-spotting') return renderErrorSpottingCard(q, index);
+  if (q.questionType === 'pick-from-sets') return renderPickFromSetsCard(q, index);
+  if (q.questionType === 'select-two')     return renderSelectTwoCard(q, index);
 
   // Standard 5-option MC (incl. 'letter-codes' which is standard+optional visual)
   const visualHtml = renderVisual(q.visual);
@@ -2039,6 +3397,89 @@ function renderErrorSpottingCard(q, index) {
 }
 
 /**
+ * Render a pick-from-sets question card.
+ * Shape: { id, difficulty, questionType:'pick-from-sets', question,
+ *          setA[3], setB[3], correctPair [indexA, indexB], explanation }
+ * No `options` / `correct` fields — answer is the pair from each group.
+ */
+function renderPickFromSetsCard(q, index) {
+  const correctA = Array.isArray(q.correctPair) ? q.correctPair[0] : -1;
+  const correctB = Array.isArray(q.correctPair) ? q.correctPair[1] : -1;
+
+  const setAHtml = (q.setA || []).map((word, i) =>
+    `<span class="set-word${i === correctA ? ' set-word--correct' : ''}">${escHtml(word)}</span>`
+  ).join('\n          ');
+
+  const setBHtml = (q.setB || []).map((word, i) =>
+    `<span class="set-word${i === correctB ? ' set-word--correct' : ''}">${escHtml(word)}</span>`
+  ).join('\n          ');
+
+  return `<article class="q-card" aria-label="Sample question ${index + 1}">
+      <header class="q-card__header">
+        <span class="q-card__num">Question ${index + 1}</span>
+        <span class="diff-pill ${DIFFICULTY_CLASS[q.difficulty]}" aria-label="Difficulty: ${DIFFICULTY_LABEL[q.difficulty]}">${DIFFICULTY_LABEL[q.difficulty]}</span>
+      </header>
+      <p class="q-card__stem">${escHtml(q.question).replace(/\n/g, '<br>')}</p>
+      <div class="q-sets">
+        <div class="q-set">
+          <p class="q-set__label">Group A</p>
+          <div class="q-set__words">
+          ${setAHtml}
+          </div>
+        </div>
+        <div class="q-set">
+          <p class="q-set__label q-set__label--b">Group B</p>
+          <div class="q-set__words">
+          ${setBHtml}
+          </div>
+        </div>
+      </div>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>${escHtml(q.explanation)}</p>
+        </div>
+      </details>
+    </article>`;
+}
+
+/**
+ * Render a select-two question card.
+ * Shape: { id, difficulty, questionType:'select-two', question,
+ *          options[5], correctPair [indexI, indexJ], explanation }
+ * Two correct answers from the five options.
+ */
+function renderSelectTwoCard(q, index) {
+  const correctPair = Array.isArray(q.correctPair) ? q.correctPair : [];
+
+  const optionsHtml = (q.options || []).map((opt, i) => {
+    const isCorrect = correctPair.includes(i);
+    return `<li class="q-option${isCorrect ? ' q-option--correct' : ''}" ${isCorrect ? 'aria-current="true"' : ''}>
+          <span class="q-option__letter" aria-hidden="true">${LETTERS[i]}</span>
+          <span class="q-option__text">${escHtml(opt)}</span>${isCorrect ? '<span class="q-option__tick" aria-label="Correct answer">&#10003;</span>' : ''}
+        </li>`;
+  }).join('\n        ');
+
+  return `<article class="q-card" aria-label="Sample question ${index + 1}">
+      <header class="q-card__header">
+        <span class="q-card__num">Question ${index + 1}</span>
+        <span class="diff-pill ${DIFFICULTY_CLASS[q.difficulty]}" aria-label="Difficulty: ${DIFFICULTY_LABEL[q.difficulty]}">${DIFFICULTY_LABEL[q.difficulty]}</span>
+      </header>
+      <p class="q-card__stem">${escHtml(q.question).replace(/\n/g, '<br>')}</p>
+      <p class="q-select-two-hint">Select the two correct answers.</p>
+      <ol class="q-options" role="list">
+        ${optionsHtml}
+      </ol>
+      <details class="q-explanation">
+        <summary class="q-explanation__toggle">Show worked explanation</summary>
+        <div class="q-explanation__body">
+          <p>${escHtml(q.explanation)}</p>
+        </div>
+      </details>
+    </article>`;
+}
+
+/**
  * Build the full JSON-LD block for the page.
  */
 function buildJsonLd(config, questions) {
@@ -2096,7 +3537,60 @@ function buildJsonLd(config, questions) {
 /**
  * Build the complete inline CSS string.
  */
-function buildCss() {
+function buildCss(subject) {
+  const vrCss = subject === 'vr' ? `
+/* ── Pick-from-sets questions ─────────────────────────────────────── */
+.q-sets{
+  margin:0 1.25rem 0.85rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.85rem;
+}
+.q-set{
+  background:var(--surface-alt);
+  border:1px solid var(--border-subtle);
+  border-radius:0.75rem;
+  padding:0.85rem 1.25rem;
+}
+.q-set__label{
+  font-size:0.8rem;
+  font-weight:700;
+  color:var(--primary);
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  margin-bottom:0.6rem;
+}
+.q-set__label--b{color:#4338CA}
+.q-set__words{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+}
+.set-word{
+  display:inline-block;
+  padding:0.3rem 0.75rem;
+  background:#F3F4F6;
+  border:1px solid var(--border-subtle);
+  border-radius:0.5rem;
+  font-size:0.95rem;
+  color:var(--text);
+}
+.set-word--correct{
+  background:#DCFCE7;
+  border-color:#4ADE80;
+  color:#14532D;
+  font-weight:700;
+}
+
+/* ── Select-two questions ──────────────────────────────────────────── */
+.q-select-two-hint{
+  margin:0 1.25rem 0.5rem;
+  font-size:0.8rem;
+  color:var(--text-secondary);
+  font-style:italic;
+}
+` : '';
+
   return `
 /* ── Reset & box model ───────────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -2714,7 +4208,7 @@ details[open] .faq-item__icon{
   .hero__cta{display:block;text-align:center}
   .site-header__cta{display:none}
 }
-`.trim();
+`.trim() + vrCss;
 }
 
 // ── 6. Hub page constants ─────────────────────────────────────────────────────
@@ -2744,6 +4238,24 @@ const TOPIC_DESCRIPTORS = {
   wordClassGrammar:    'Identifying nouns, verbs, adjectives, adverbs and prepositions from context',
   spelling:            'Error-spotting across four labelled sections plus "No mistake" option',
   punctuation:         'Apostrophes, commas, speech marks and sentence punctuation in error-spotting format',
+  // VR topics
+  synonyms:            'Choose the pair of words, one from each group, that are closest in meaning',
+  antonyms:            'Choose the pair of words, one from each group, that are most opposite in meaning',
+  verbalAnalogies:     '"A is to B as C is to ?" — complete the analogy by choosing one word from each group',
+  oddTwoOut:           'Five words: find the two that do not belong once the group of three is spotted',
+  compoundWords:       'Build a compound word by linking, bridging or joining two halves together',
+  hiddenWords:         'Find the four-letter word hidden across the join between two adjacent words',
+  letterMove:          'Move one letter from one word to another so that both become new real words',
+  missingLettersWords: 'Restore the three missing letters that complete both the gap and a word of their own',
+  letterCodes:         'Crack the alphabet-shift rule from the example, then encode or decode a new word',
+  letterPairSeries:    'Two patterns run side by side — find the next pair in the sequence',
+  numberSeries:        'Work out the number rule and give the next term in the sequence',
+  letterSums:          'Each letter equals its alphabet position (A=1 … Z=26) — calculate the value or compare',
+  wordCodeAnalogies:   'Spot the letter-manipulation rule from the example, then apply it to a new word',
+  numberWordCodes:     'Deduce the private letter-to-number substitution, then code or decode a word',
+  logicAndLanguage:    'Ordering, syllogisms, sentence rearrangement and "cannot tell" reasoning',
+  sharedLetter:        'One letter ends the left fragment and starts the right — find it for both pairs at once',
+  balanceEquations:    'Find the missing number that makes both sides of the equation equal',
 };
 
 // Display order for the maths hub topic grid
@@ -2757,6 +4269,15 @@ const MATHS_TOPIC_ORDER = [
 // Display order for the English hub topic grid
 const ENGLISH_TOPIC_ORDER = [
   'comprehension', 'vocabulary', 'grammar', 'wordClassGrammar', 'spelling', 'punctuation',
+];
+
+// Display order for the VR hub topic grid
+const VR_TOPIC_ORDER = [
+  'synonyms', 'antonyms', 'verbalAnalogies', 'oddTwoOut',
+  'compoundWords', 'hiddenWords', 'letterMove', 'missingLettersWords',
+  'letterCodes', 'letterPairSeries', 'numberSeries', 'letterSums',
+  'wordCodeAnalogies', 'numberWordCodes', 'logicAndLanguage', 'sharedLetter',
+  'balanceEquations',
 ];
 
 // ── 7. Hub page CSS ───────────────────────────────────────────────────────────
@@ -3234,7 +4755,183 @@ ${jsonLd}
 </html>`;
 }
 
-// ── 10. Practice hub page builder ─────────────────────────────────────────────
+// ── 10. VR hub page builder ───────────────────────────────────────────────────
+
+function buildVrHubPage() {
+  const canonical    = 'https://prepstep.co.uk/practice/vr';
+  const year         = new Date().getFullYear();
+  const dateModified = new Date().toISOString().slice(0, 10);
+  const title        = '11+ Verbal Reasoning Practice Questions (GL Assessment) | PrepStep';
+  const description  = 'Free GL Assessment 11+ Verbal Reasoning practice questions across all 17 topics: synonyms, antonyms, analogies, codes, sequences and more. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6.';
+  const ogTitle      = '11+ Verbal Reasoning Practice (GL Assessment) | PrepStep';
+  const ogDescription = 'Free GL Assessment 11+ Verbal Reasoning practice across all 17 topics. Five-option multiple-choice format with worked explanations, built for Year 5 and Year 6 preparation.';
+
+  const topicCardsHtml = VR_TOPIC_ORDER.map(key => {
+    const cfg  = TOPICS_CONFIG[key];
+    const slug = cfg.slug || key;
+    const desc = TOPIC_DESCRIPTORS[key] || '';
+    return `<a class="topic-card" href="/practice/vr/${slug}" aria-label="${escHtml(cfg.topicLabel)} practice questions">
+          <p class="topic-card__label">${escHtml(cfg.topicLabel)}</p>
+          <p class="topic-card__desc">${escHtml(desc)}</p>
+        </a>`;
+  }).join('\n        ');
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type':    'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home',              item: 'https://prepstep.co.uk' },
+      { '@type': 'ListItem', position: 2, name: 'Practice',          item: 'https://prepstep.co.uk/practice' },
+      { '@type': 'ListItem', position: 3, name: 'Verbal Reasoning',  item: canonical },
+    ],
+  };
+
+  const collectionLd = {
+    '@context':    'https://schema.org',
+    '@type':       'CollectionPage',
+    name:          ogTitle,
+    description,
+    url:           canonical,
+    inLanguage:    'en-GB',
+    dateModified,
+    hasPart: VR_TOPIC_ORDER.map(key => ({
+      '@type': 'WebPage',
+      name:    `${TOPICS_CONFIG[key].topicLabel} 11+ Practice (GL Assessment)`,
+      url:     `https://prepstep.co.uk/practice/vr/${TOPICS_CONFIG[key].slug || key}`,
+    })),
+  };
+
+  const orgLd = {
+    '@context':  'https://schema.org',
+    '@type':     'Organization',
+    name:        'PrepStep',
+    url:         'https://prepstep.co.uk',
+    description: 'PrepStep is a free 11+ exam preparation app for GL Assessment, covering Maths, English and Verbal Reasoning.',
+  };
+
+  const jsonLd = JSON.stringify([breadcrumbLd, collectionLd, orgLd], null, 2);
+  const css    = buildHubCss();
+
+  return `<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>${escHtml(title)}</title>
+  <meta name="description" content="${escHtml(description)}">
+  <link rel="canonical" href="${canonical}">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="${escHtml(ogTitle)}">
+  <meta property="og:description" content="${escHtml(ogDescription)}">
+  <meta property="og:url"         content="${canonical}">
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="${escHtml(ogTitle)}">
+  <meta name="twitter:description" content="${escHtml(ogDescription)}">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>${css}</style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+${jsonLd}
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+      <a href="/" class="site-header__cta">Start practising free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/practice">Practice</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Verbal Reasoning</span>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="hero__eyebrow" aria-hidden="true">GL Assessment &middot; 11+ Practice</p>
+        <h1 id="hero-heading">11+ <em>Verbal Reasoning</em> Practice<br>(GL Assessment)</h1>
+        <div class="hub-intro">
+          <p>Free practice questions for all 17 Verbal Reasoning topics tested in the GL Assessment 11+, in the real five-option multiple-choice format with worked explanations. GL Verbal Reasoning papers run at roughly 80 questions in 50 to 60 minutes, covering codes, sequences, analogies, word patterns and logical reasoning.</p>
+          <p>Choose any topic below to see sample questions, a GL topic guide, and the common mistakes children make under exam pressure. All content is built for Year 5 and Year 6 preparation, covering difficulty levels from Foundation to Challenging.</p>
+        </div>
+        <a href="/" class="hero__cta">
+          Start practising free
+          <span class="hero__cta-sub">All 17 Verbal Reasoning topics &middot; No sign-up needed</span>
+        </a>
+      </section>
+
+      <!-- Topic grid -->
+      <section class="content-section" aria-labelledby="topics-heading">
+        <p class="section-label" aria-hidden="true">
+          <span>All Verbal Reasoning topics</span>
+          <span class="section-label__line"></span>
+        </p>
+        <h2 class="section-heading" id="topics-heading">All 17 GL Assessment Verbal Reasoning Topics</h2>
+        <p class="skills-intro">Each topic has sample questions, a GL exam guide, and common mistakes to avoid. Click any topic to practise.</p>
+        <nav aria-label="Verbal Reasoning practice topics" class="topic-grid">
+          ${topicCardsHtml}
+        </nav>
+      </section>
+
+    </div><!-- /page-wrap -->
+
+    <!-- Closing CTA band -->
+    <section class="cta-band" aria-labelledby="cta-hub-heading">
+      <h2 id="cta-hub-heading">Ready to start practising?</h2>
+      <p class="cta-band__sub">
+        PrepStep has over 2,300 Verbal Reasoning questions in GL Assessment format:
+        codes, analogies, sequences, hidden words and more. Free to start.
+      </p>
+      <a href="/" class="btn-primary">
+        Start practising free
+        <span class="btn-primary__sub">No sign-up needed &middot; Works on phone, tablet, and desktop</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <strong><a href="/">PrepStep</a></strong> &middot;
+      11+ exam preparation for GL Assessment &middot;
+      <a href="/practice">All practice topics</a>
+    </div>
+    <div style="margin-top:0.5rem">
+      &copy; ${year} PrepStep &middot;
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a>
+    </div>
+  </footer>
+
+</body>
+</html>`;
+}
+
+// ── 11. Practice hub page builder ─────────────────────────────────────────────
 
 function buildPracticeHubPage() {
   const canonical    = 'https://prepstep.co.uk/practice';
@@ -3272,6 +4969,11 @@ function buildPracticeHubPage() {
         '@type': 'WebPage',
         name:    '11+ English Practice (GL Assessment)',
         url:     'https://prepstep.co.uk/practice/english',
+      },
+      {
+        '@type': 'WebPage',
+        name:    '11+ Verbal Reasoning Practice (GL Assessment)',
+        url:     'https://prepstep.co.uk/practice/vr',
       },
     ],
   };
@@ -3363,7 +5065,7 @@ ${jsonLd}
           <span class="section-label__line"></span>
         </p>
         <h2 class="section-heading" id="subjects-heading">Choose a Subject</h2>
-        <p class="skills-intro">GL Assessment 11+ papers cover three subjects. Maths and English practice are available now, with Verbal Reasoning coming soon.</p>
+        <p class="skills-intro">GL Assessment 11+ papers cover three subjects. Maths, English and Verbal Reasoning practice are all available now.</p>
         <div class="subject-grid">
 
           <!-- Maths (live) -->
@@ -3382,13 +5084,13 @@ ${jsonLd}
             <span class="subject-card__badge subject-card__badge--live">Live &middot; 6 topics</span>
           </a>
 
-          <!-- Verbal Reasoning (coming soon) -->
-          <div class="subject-card subject-card--disabled" aria-label="11+ Verbal Reasoning practice questions, coming soon" role="article">
+          <!-- Verbal Reasoning (live) -->
+          <a class="subject-card" href="/practice/vr" aria-label="11+ Verbal Reasoning practice questions">
             <p class="subject-card__eyebrow subject-card__eyebrow--vr">Verbal Reasoning</p>
             <h3 class="subject-card__title">11+ Verbal Reasoning</h3>
             <p class="subject-card__desc">All GL Assessment VR question types: codes, analogies, word patterns, missing letters and more. Five-option format with full explanations.</p>
-            <span class="subject-card__badge subject-card__badge--soon">Coming soon</span>
-          </div>
+            <span class="subject-card__badge subject-card__badge--live">Live &middot; 17 topics</span>
+          </a>
 
         </div>
       </section>
@@ -3433,7 +5135,7 @@ ${jsonLd}
 function generateSitemap() {
   const today = new Date().toISOString().slice(0, 10);
 
-  // All public URLs in priority order (26 total: root + /practice + /practice/maths + 16 maths topics + /practice/english + 6 English topics)
+  // All public URLs in priority order (44 total: root + /practice + /practice/maths + 16 maths topics + /practice/english + 6 English topics + /practice/vr + 17 VR topics)
   const urls = [
     { loc: 'https://prepstep.co.uk/',                priority: '1.0', freq: 'daily'  },
     { loc: 'https://prepstep.co.uk/practice',         priority: '0.9', freq: 'weekly' },
@@ -3446,6 +5148,12 @@ function generateSitemap() {
     { loc: 'https://prepstep.co.uk/practice/english', priority: '0.9', freq: 'weekly' },
     ...ENGLISH_TOPIC_ORDER.map(key => ({
       loc:      `https://prepstep.co.uk/practice/english/${TOPICS_CONFIG[key].slug || key}`,
+      priority: '0.8',
+      freq:     'weekly',
+    })),
+    { loc: 'https://prepstep.co.uk/practice/vr',      priority: '0.9', freq: 'weekly' },
+    ...VR_TOPIC_ORDER.map(key => ({
+      loc:      `https://prepstep.co.uk/practice/vr/${TOPICS_CONFIG[key].slug || key}`,
       priority: '0.8',
       freq:     'weekly',
     })),
@@ -3518,7 +5226,7 @@ function buildPage(config) {
           The correct answer is highlighted on each question so you can check immediately.`;
 
   const jsonLd = buildJsonLd(config, questions);
-  const css    = buildCss();
+  const css    = buildCss(config.subject);
   const year   = new Date().getFullYear();
 
   const html = `<!DOCTYPE html>
@@ -3693,7 +5401,10 @@ ${jsonLd}
 
 const args = process.argv.slice(2);
 const generateAll = args.includes('--all');
-const topicsToGenerate = generateAll ? Object.keys(TOPICS_CONFIG) : ['fractions'];
+const positionalArgs = args.filter(a => !a.startsWith('--'));
+const topicsToGenerate = generateAll
+  ? Object.keys(TOPICS_CONFIG)
+  : (positionalArgs.length ? positionalArgs : ['fractions']);
 
 for (const topicKey of topicsToGenerate) {
   const config = TOPICS_CONFIG[topicKey];
@@ -3720,7 +5431,12 @@ for (const topicKey of topicsToGenerate) {
   const written = fs.readFileSync(outPath, 'utf8');
 
   const checks = {
-    'Q text in raw HTML':    written.includes(result.questions[0].question.substring(0, 30)),
+    'Q text in raw HTML':    (() => {
+      // Use the longest line before any newline (newlines become <br> in HTML)
+      const qText = result.questions[0].question;
+      const firstLine = qText.split('\n').map(s => s.trim()).filter(Boolean)[0] || qText.substring(0, 30);
+      return written.includes(firstLine.substring(0, 30));
+    })(),
     'Explanation in HTML':   written.includes(result.questions[0].explanation.substring(0, 30)),
     'Five-option format':    written.includes('five options') || written.includes('(A to E)'),
     'JSON-LD valid':         (() => {
@@ -3799,6 +5515,28 @@ if (generateAll) {
   console.log(`  [${englishHubCheck.includes('skip-link') ? 'PASS' : 'FAIL'}] Skip link present`);
   console.log(`  [${!englishHubCheck.match(/<link[^>]+stylesheet[^>]+https?:\/\//) ? 'PASS' : 'FAIL'}] No external CSS`);
 
+  // VR hub
+  console.log('\nBuilding: VR hub (public/practice/vr/index.html)');
+  const vrHubHtml = buildVrHubPage();
+  const vrHubDir  = path.join(ROOT, 'public/practice/vr');
+  const vrHubPath = path.join(vrHubDir, 'index.html');
+  fs.mkdirSync(vrHubDir, { recursive: true });
+  fs.writeFileSync(vrHubPath, vrHubHtml, 'utf8');
+  const vrHubCheck = fs.readFileSync(vrHubPath, 'utf8');
+  const vrTopicLinks = (vrHubCheck.match(/href="\/practice\/vr\/[a-z-]+"/g) || []).length;
+  const vrJsonLdValid = (() => {
+    const m = vrHubCheck.match(/<script type="application\/ld\+json">([\s\S]+?)<\/script>/);
+    if (!m) return false;
+    try { JSON.parse(m[1]); return true; } catch { return false; }
+  })();
+  console.log(`  Wrote: ${vrHubPath} (${(vrHubCheck.length / 1024).toFixed(1)} KB)`);
+  console.log(`  [${vrJsonLdValid ? 'PASS' : 'FAIL'}] JSON-LD valid`);
+  console.log(`  [${vrHubCheck.includes('"BreadcrumbList"') ? 'PASS' : 'FAIL'}] BreadcrumbList in JSON-LD`);
+  console.log(`  [${vrHubCheck.includes('"CollectionPage"') ? 'PASS' : 'FAIL'}] CollectionPage in JSON-LD`);
+  console.log(`  [${vrTopicLinks === 17 ? 'PASS' : 'FAIL'}] Topic links: ${vrTopicLinks} (expected 17)`);
+  console.log(`  [${vrHubCheck.includes('skip-link') ? 'PASS' : 'FAIL'}] Skip link present`);
+  console.log(`  [${!vrHubCheck.match(/<link[^>]+stylesheet[^>]+https?:\/\//) ? 'PASS' : 'FAIL'}] No external CSS`);
+
   // Practice hub
   console.log('\nBuilding: Practice hub (public/practice/index.html)');
   const practiceHubHtml = buildPracticeHubPage();
@@ -3817,7 +5555,8 @@ if (generateAll) {
   console.log(`  [${practiceHubCheck.includes('"BreadcrumbList"') ? 'PASS' : 'FAIL'}] BreadcrumbList in JSON-LD`);
   console.log(`  [${practiceHubCheck.includes('href="/practice/maths"') ? 'PASS' : 'FAIL'}] Maths card links to /practice/maths`);
   console.log(`  [${practiceHubCheck.includes('href="/practice/english"') ? 'PASS' : 'FAIL'}] English card links to /practice/english`);
-  console.log(`  [${comingSoonCards === 1 ? 'PASS' : 'FAIL'}] Coming-soon cards: ${comingSoonCards} (expected exactly 1)`);
+  console.log(`  [${practiceHubCheck.includes('href="/practice/vr"') ? 'PASS' : 'FAIL'}] VR card links to /practice/vr`);
+  console.log(`  [${comingSoonCards === 0 ? 'PASS' : 'FAIL'}] Coming-soon cards: ${comingSoonCards} (expected exactly 0)`);
   console.log(`  [${practiceHubCheck.includes('skip-link') ? 'PASS' : 'FAIL'}] Skip link present`);
 
   // Sitemap
@@ -3827,7 +5566,7 @@ if (generateAll) {
   fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
   const urlCount = (sitemapXml.match(/<url>/g) || []).length;
   console.log(`  Wrote: ${sitemapPath}`);
-  console.log(`  [${urlCount === 26 ? 'PASS' : 'FAIL'}] URL count: ${urlCount} (expected 26: root + /practice + /practice/maths + 16 maths topics + /practice/english + 6 English topics)`);
+  console.log(`  [${urlCount === 44 ? 'PASS' : 'FAIL'}] URL count: ${urlCount} (expected 44: root + /practice + /practice/maths + 16 maths topics + /practice/english + 6 English topics + /practice/vr + 17 VR topics)`);
   console.log(`  [${sitemapXml.includes('prepstep.co.uk/') ? 'PASS' : 'FAIL'}] Root URL present`);
 }
 
