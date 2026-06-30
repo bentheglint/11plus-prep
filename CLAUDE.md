@@ -45,12 +45,12 @@ Auth via Clerk (AuthGate). User data in D1 via Worker (`workers/ai-tutor/`), wit
 ```
 Some VR/English types use other shapes (`questionType: 'pick-from-sets'` with `setA`/`setB`/`correctPair`, `'passage'` with `passage`/`passageId`, `'error-spotting'`, `'letter-codes'`) — see the data files.
 
-### Content bank (total 8,244 questions — counts verified 12 Jun 2026 via `node scripts/count-content.js`)
+### Content bank (total 8,210 questions — counts verified 30 Jun 2026 via `node scripts/count-content.js`)
 | Subject | Topics | Questions | File |
 |---|---|---|---|
 | Maths | 16 | 3,376 | `src/questionData/mathsData.js` |
 | English | 6 | 2,497 | `src/questionData/englishData.js` |
-| Verbal Reasoning | 17 | 2,371 | `src/questionData/vrData.js` |
+| Verbal Reasoning | 17 | 2,337 | `src/questionData/vrData.js` |
 
 Plus 614 micro-lessons (compulsory before every Focused Learning quiz in Maths/English) across 38 files in `src/microLessons/staging/`.
 
