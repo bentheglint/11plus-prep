@@ -4,6 +4,7 @@
 // (data-stmt + uuid-marker) so a UUID race on one op never rolls back others.
 
 import { json, resolveChildId } from '../helpers.js';
+import { loadEntitlement } from '../lib/entitlementGate.js';
 
 const MAX_OPS_PER_REQUEST = 100;
 const MAX_PP_DELTA_PER_OP = 500;     // legacy absolute 'prep-points' op guard (unchanged)
@@ -288,6 +289,16 @@ export async function handleBatch(request, env, userId) {
   //
   //   This addresses Codex review findings A (topic-performance had no version
   //   check) and B (TOCTOU lost-update race on streaks/PP/prefs).
+  // Mock tests are a paid-tier feature (Phase 0 Step 4). Resolve the
+  // entitlement ONCE per batch, and only if the batch actually contains a
+  // mock-result op — avoids the extra DB read on the common (non-mock)
+  // batch path.
+  const hasMock = operations.some(o => o.type === 'mock-result');
+  let mockEnt = null;
+  if (hasMock) {
+    mockEnt = await loadEntitlement(db, userId);
+  }
+
   const results = [];
   const opPlans = []; // Array<{ uuid, resultIndex, kind: 'append' | 'cas', ... }>
 
@@ -579,6 +590,22 @@ export async function handleBatch(request, env, userId) {
         markerStmt: buildUUIDMarker(db, childId, op.uuid, op.type),
       });
       continue;
+    }
+
+    // Mock tests are gated behind the paid tier (Phase 0 Step 4). Refuse
+    // BEFORE the op reaches opPlans / buildAppendStatement so no
+    // processed_operations marker is written — a retry after upgrading
+    // must be able to process cleanly, not be silently swallowed as a
+    // 'duplicate'. Other ops in the same batch are unaffected.
+    if (op.type === 'mock-result') {
+      if (mockEnt === null) {
+        results.push({ uuid: op.uuid, status: 'error', code: 'upgrade_required', error: 'Account not found' });
+        continue;
+      }
+      if (!mockEnt.entitlements.mockTests) {
+        results.push({ uuid: op.uuid, status: 'error', code: 'upgrade_required', error: 'Upgrade required' });
+        continue;
+      }
     }
 
     // Append-only operations (UUID dedup + table-level idempotency for quiz/question_results)

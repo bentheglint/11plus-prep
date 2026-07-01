@@ -1,10 +1,12 @@
 import * as Sentry from '@sentry/cloudflare';
 import { CORS, BASE_HEADERS, json, checkRateLimit, checkOrigin, canonicalEmail } from './helpers.js';
+import { loadEntitlement, upgradeRequiredResponse } from './lib/entitlementGate.js';
 import { handleAccountRoutes } from './routes/account.js';
 import { handleDataRoutes } from './routes/data.js';
 import { handleMutableRoutes } from './routes/mutable.js';
 import { handleBulkLoad, handleMigrate, handleExport } from './routes/bulk.js';
 import { handleBatch } from './routes/batch.js';
+import { handleEntitlementRoutes } from './routes/entitlements.js';
 import { handleScheduled, handleTrialEmails, handlePreviewEmailForUser } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook, reconcileSubscriptions } from './routes/stripe.js';
 import { handleTutorRoutes } from './routes/tutor.js';
@@ -270,6 +272,13 @@ async function handleTutor(request, env) {
   // ── Auth gate ──
   const auth = await requireAuth(request, env);
   if (auth.error) return auth.error;
+
+  // ── Entitlement gate — refuse before spending a KV quota write or a
+  // Claude token. Comped/paid/trial/grace all have aiTutor=true and pass
+  // through unaffected; only the free tier (post-trial, no sub) is walled.
+  const ent = await loadEntitlement(env.DB, auth.userId);
+  if (!ent) return json({ error: 'Account not found' }, 404);
+  if (!ent.entitlements.aiTutor) return upgradeRequiredResponse(ent);
 
   // ── Input validation ──
   let body;
@@ -552,6 +561,10 @@ const worker = {
         // Account routes
         const accountResult = await handleAccountRoutes(request, env, userId, path);
         if (accountResult) return accountResult;
+
+        // Entitlement routes (daily-set claim, etc.)
+        const entitlementResult = await handleEntitlementRoutes(request, env, userId, path);
+        if (entitlementResult) return entitlementResult;
 
         // Tutor routes (/api/tutor*) are handled above, behind requireTutor.
 
