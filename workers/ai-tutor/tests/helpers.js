@@ -1,5 +1,6 @@
 import { TEST_KID, TEST_PRIVATE_JWK } from './test-keys.js';
 import migration0016 from '../migrations/0016_tutor_invites.sql?raw';
+import migration0017 from '../migrations/0017_daily_claims.sql?raw';
 
 export const CLERK_DOMAIN = 'test.clerk.11plus.dev';
 
@@ -217,6 +218,22 @@ export async function createSchema(db) {
   for (const sql of migrationStmts) {
     await db.prepare(sql).run();
   }
+
+  // Same pattern for 0017: derive the daily_claims test table from the real
+  // migration file rather than a hand-copy.
+  const migration0017Stmts = migration0017
+    .split(/;\s*\n/)
+    .map(s =>
+      s
+        .split('\n')
+        .filter(line => !line.trim().startsWith('--'))
+        .join('\n')
+        .trim()
+    )
+    .filter(Boolean);
+  for (const sql of migration0017Stmts) {
+    await db.prepare(sql).run();
+  }
 }
 
 export async function cleanDb(db) {
@@ -233,6 +250,7 @@ export async function cleanDb(db) {
     db.prepare('DELETE FROM tutor_invites'),
     db.prepare('DELETE FROM pupil_tutors'),
     db.prepare('DELETE FROM tutors'),
+    db.prepare('DELETE FROM daily_claims'),
     db.prepare('DELETE FROM children'),
     db.prepare('DELETE FROM accounts'),
     db.prepare('DELETE FROM admin_audit'),
