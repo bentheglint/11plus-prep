@@ -48,6 +48,7 @@ const FULL_ENTITLEMENTS = {
   mockTests: true,
   deepProgress: true,
   aiTutor: true,
+  challenge: true,
 };
 
 const FREE_ENTITLEMENTS = {
@@ -56,6 +57,7 @@ const FREE_ENTITLEMENTS = {
   mockTests: false,
   deepProgress: false,
   aiTutor: false,
+  challenge: false,
 };
 
 describe('isFutureEpoch', () => {
@@ -274,6 +276,7 @@ describe('parity pin — reason codes and entitlement keys', () => {
     'mockTests',
     'deepProgress',
     'aiTutor',
+    'challenge',
   ];
 
   it('ENTITLEMENT_REASONS values match the expected reason-code set exactly', () => {

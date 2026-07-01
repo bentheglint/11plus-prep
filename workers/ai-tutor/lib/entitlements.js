@@ -50,6 +50,7 @@ export const ENTITLEMENT_KEYS = Object.freeze([
   'mockTests',
   'deepProgress',
   'aiTutor',
+  'challenge',
 ]);
 
 const TRIAL_DAYS = 30;
@@ -61,6 +62,7 @@ const FULL_ENTITLEMENTS = Object.freeze({
   mockTests: true,
   deepProgress: true,
   aiTutor: true,
+  challenge: true,
 });
 
 const FREE_ENTITLEMENTS = Object.freeze({
@@ -69,6 +71,7 @@ const FREE_ENTITLEMENTS = Object.freeze({
   mockTests: false,
   deepProgress: false,
   aiTutor: false,
+  challenge: false,
 });
 
 function fullPayload() {

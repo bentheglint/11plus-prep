@@ -63,7 +63,10 @@ import TutorSignupScreen from './screens/TutorSignupScreen';
 import TutorDashboardScreen from './screens/TutorDashboardScreen';
 import BulkInviteScreen from './screens/BulkInviteScreen';
 import { ParentMessagingScreen } from './screens/MessagingScreen';
+import SubscribeScreen from './components/SubscribeScreen';
 import { selectWelcomeBackTip, buildMasteryMap } from './utils/tipSelection';
+import { isFeatureEnabled } from './utils/featureFlags';
+import { resolveQaTierOverride, interpretDailyClaimResponse } from './utils/entitlementGating';
 
 // Visual component map for rendering diagrams on quiz question screens
 const quizVisualComponents = {
@@ -76,7 +79,7 @@ const quizVisualComponents = {
   RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
 };
 
-function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin, entitlement }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -145,6 +148,23 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     try { return sessionStorage.getItem('tutor-preview') === '1'; } catch { return false; }
   });
 
+  // Freemium gating (Phase 0, Step 5) — entitlement is read-only truth from
+  // the server (access.entitlement, threaded via index.js → AppLoader).
+  // A dev-only ?qa-tier override can force what the CLIENT displays/gates
+  // on for QA, but it never reaches the server — see entitlementGating.js.
+  const freeTierFlagOn = isFeatureEnabled('freeTier');
+  const effectiveEntitlement = useMemo(() => {
+    const qaOverride = resolveQaTierOverride(window.location.search, process.env.NODE_ENV);
+    return qaOverride || entitlement || null;
+  }, [entitlement]);
+  // The view to return to after the in-app Upgrade screen. Defaults to
+  // 'learningMode' since that's where every gated card lives today.
+  const [preUpgradeView, setPreUpgradeView] = useState('learningMode');
+  const handleUpgrade = () => {
+    setPreUpgradeView(currentView);
+    setCurrentView('upgrade');
+  };
+
   // Per-user data isolation — all progress data keyed by user name
   const userData = useD1Data(currentUser, getToken, activeChildId, previewMode);
   const { quizHistory, topicPerformance, seenQuestions, lessonHistory, questionResults, practiceLog } = userData;
@@ -171,6 +191,19 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     userData.mockTestHistory, mastery.getTopicMastery
   );
   const [pendingAchievement, setPendingAchievement] = useState(null);
+  // Free-tier daily-set cap nudge (Phase 0, Step 5) — set when the server's
+  // claim-daily-set endpoint returns an explicit daily_cap_reached.
+  const [dailyCapReached, setDailyCapReached] = useState(false);
+
+  // Observe useD1Data's upgradeRequiredEvent (a batch op — e.g. a mock test
+  // result — was refused because the account isn't entitled to it) and show
+  // a one-time nudge rather than letting the refusal pass silently.
+  const [showUpgradeNudge, setShowUpgradeNudge] = useState(false);
+  useEffect(() => {
+    if (userData.upgradeRequiredEvent) {
+      setShowUpgradeNudge(true);
+    }
+  }, [userData.upgradeRequiredEvent]);
 
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
@@ -589,7 +622,40 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     setCurrentView('quiz');
   };
 
-  const handleStartDaily = (subjectOverride) => {
+  // Claims the free tier's one-set-per-day cap before starting Daily
+  // Learning. A no-op (zero new prod writes) when the freeTier flag is off.
+  // Enforces ONLY on an explicit daily_cap_reached — any network error, 5xx,
+  // or unexpected response shape fails open and the set starts anyway
+  // (see interpretDailyClaimResponse in utils/entitlementGating.js).
+  const claimDailySetIfNeeded = async () => {
+    if (!freeTierFlagOn || !activeChildId) return 'allowed';
+    try {
+      const token = await getToken();
+      const tutorApiUrl = process.env.REACT_APP_TUTOR_API_URL;
+      const res = await fetch(`${tutorApiUrl}/api/entitlements/claim-daily-set`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        body: JSON.stringify({ childId: activeChildId, sessionId: `daily-${Date.now()}` }),
+      });
+      let data = null;
+      try { data = await res.json(); } catch { data = null; }
+      return interpretDailyClaimResponse({ ok: res.ok, data });
+    } catch {
+      // Network error — fail open, never block practice on a plumbing fault.
+      return 'allowed';
+    }
+  };
+
+  const handleStartDaily = async (subjectOverride) => {
+    const decision = await claimDailySetIfNeeded();
+    if (decision === 'cap_reached') {
+      setDailyCapReached(true);
+      return;
+    }
+
     if (subjectOverride) setSelectedSubject(subjectOverride);
     const selected = selectDailyQuestions(subjectOverride);
     setQuizQuestions(selected);
@@ -1177,6 +1243,14 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         setChatMessages([...updatedMessages, {
           role: 'assistant',
           content: "You've used up today's tutor questions — come back tomorrow!"
+        }]);
+        return;
+      }
+
+      if (response.status === 403 && (data.code === 'upgrade_required' || data.upgradeRequired)) {
+        setChatMessages([...updatedMessages, {
+          role: 'assistant',
+          content: "The AI Tutor is a premium feature. Upgrade to unlock unlimited tutoring."
         }]);
         return;
       }
@@ -1911,6 +1985,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onAdmin={isAdmin ? () => setCurrentView('admin') : null}
         loadState={userData.loadState}
         onRetry={userData.retryLoad}
+        entitlement={effectiveEntitlement}
+        freeTierActive={freeTierFlagOn}
+        onUpgrade={handleUpgrade}
       />
     );
   }
@@ -1931,6 +2008,19 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onChallengeMode={handleChallengeMode}
         onStudyToolkit={() => setCurrentView('studyToolkit')}
         onBack={handleHome}
+        entitlement={effectiveEntitlement}
+        freeTierActive={freeTierFlagOn}
+        onUpgrade={handleUpgrade}
+      />
+    );
+  }
+
+  if (currentView === 'upgrade') {
+    return (
+      <SubscribeScreen
+        getToken={getToken}
+        trialExpired={false}
+        onBack={() => setCurrentView(preUpgradeView)}
       />
     );
   }
@@ -2498,8 +2588,96 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           onStartFresh={startFreshFromPrompt}
         />
       )}
+      {dailyCapReached && (
+        <DailyCapModal
+          onUpgrade={() => { setDailyCapReached(false); handleUpgrade(); }}
+          onDismiss={() => setDailyCapReached(false)}
+        />
+      )}
+      {showUpgradeNudge && (
+        <UpgradeNudgeToast
+          onUpgrade={() => {
+            setShowUpgradeNudge(false);
+            userData.clearUpgradeRequiredEvent();
+            handleUpgrade();
+          }}
+          onDismiss={() => {
+            setShowUpgradeNudge(false);
+            userData.clearUpgradeRequiredEvent();
+          }}
+        />
+      )}
       <CookieBanner />
     </>
+  );
+}
+
+// A background write (e.g. a mock test result) was refused by the server
+// because the account isn't entitled to it. The optimistic local entry has
+// already been rolled back (see useD1Data's upgrade_required handling) —
+// this is just the visible half of that: tell the user why, rather than
+// leaving the refusal silent.
+function UpgradeNudgeToast({ onUpgrade, onDismiss }) {
+  return (
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-md">
+      <div className="bg-white rounded-2xl shadow-xl border border-[#A29BFE]/40 p-4 flex items-start gap-3">
+        <div className="flex-1">
+          <p className="text-sm font-bold text-slate-800 mb-0.5">That result needs an upgrade to save</p>
+          <p className="text-xs text-gray-500">Mock tests are a premium feature. Upgrade to save every result.</p>
+        </div>
+        <div className="flex flex-col gap-1.5 flex-shrink-0">
+          <button
+            type="button"
+            onClick={onUpgrade}
+            className="text-xs font-bold text-white bg-[#7C3AED] hover:bg-[#5A4BD1] rounded-lg px-3 py-1.5 transition-colors whitespace-nowrap"
+          >
+            Upgrade
+          </button>
+          <button
+            type="button"
+            onClick={onDismiss}
+            className="text-xs font-medium text-gray-400 hover:text-gray-600 transition-colors"
+          >
+            Dismiss
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Free-tier daily-set cap nudge — shown when claim-daily-set returns an
+// explicit daily_cap_reached. Nothing is recorded; the child simply hasn't
+// started a set yet, so there's nothing to roll back.
+function DailyCapModal({ onUpgrade, onDismiss }) {
+  return (
+    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
+      <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6 text-center">
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
+          <Calendar className="w-8 h-8 text-[#7C3AED]" />
+        </div>
+        <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">You've finished today's set</h2>
+        <p className="text-sm text-gray-600 mb-6">
+          Come back tomorrow for another free Daily Learning set, or upgrade for unlimited practice every day.
+        </p>
+        <div className="flex flex-col gap-2">
+          <button
+            type="button"
+            onClick={onUpgrade}
+            className="w-full py-3 rounded-xl font-bold text-white bg-[#7C3AED] hover:bg-[#5A4BD1] transition-colors"
+          >
+            Upgrade for unlimited practice
+          </button>
+          <button
+            type="button"
+            onClick={onDismiss}
+            className="w-full py-3 rounded-xl font-medium text-slate-500 hover:text-slate-700 transition-colors"
+          >
+            Maybe later
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 

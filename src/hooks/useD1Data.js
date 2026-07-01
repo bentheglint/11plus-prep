@@ -659,6 +659,10 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   const [seenTips, setSeenTips] = useState(DEFAULTS.seenTips);
   const [lastSessionDate, setLastSessionDate] = useState(DEFAULTS.lastSessionDate);
   const [leitnerQueue, setLeitnerQueue] = useState(DEFAULTS.leitnerQueue);
+  // Fires once per refused op so App can show a first-class upgrade nudge
+  // (not silence). Consumer clears it via clearUpgradeRequiredEvent after
+  // showing the prompt. See the upgrade_required branch in flushQueue.
+  const [upgradeRequiredEvent, setUpgradeRequiredEvent] = useState(null);
 
   const seenTipIds = seenTips.map(t => t.id);
 
@@ -729,6 +733,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     setLastSessionDate(DEFAULTS.lastSessionDate);
     setLeitnerQueue(DEFAULTS.leitnerQueue);
     leitnerQueueRef.current = [];
+    setUpgradeRequiredEvent(null);
     setLoaded(false);
     setLoadState(null);
     loadStateRef.current = null;
@@ -1085,6 +1090,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
         // Process per-op results
         const errorUuids = [];
+        const upgradeRefusedUuids = [];
         const conflictRounds = getConflictRounds(mutexKey);
 
         for (const opResult of (result.results || [])) {
@@ -1099,6 +1105,14 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
               };
               lastSyncedUpdated = true;
             }
+          } else if (opResult.status === 'error' && opResult.code === 'upgrade_required') {
+            // Entitlement wall (e.g. a mock-result op from a free-tier
+            // account — see routes/batch.js). This can NEVER succeed until
+            // the account upgrades, so it is NOT the same failure class as a
+            // malformed payload: drop it outright rather than dead-lettering
+            // it as generic corruption, report it as its own distinct
+            // Sentry signal, and surface a first-class upgrade nudge.
+            upgradeRefusedUuids.push(opResult.uuid);
           } else if (opResult.status === 'error') {
             // Server-rejected op — dead-letter it, do NOT retry
             errorUuids.push(opResult.uuid);
@@ -1194,6 +1208,33 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         if (errorUuids.length > 0) {
           queue.deadLetterErrors(errorUuids);
         }
+        if (upgradeRefusedUuids.length > 0) {
+          // Drop, don't dead-letter — a dead-letter entry implies "we lost
+          // this, here's a record for support to recover it", but an
+          // upgrade_required op was never lost, it was correctly refused.
+          queue.remove(upgradeRefusedUuids);
+
+          // Observability (project rule: silent fallbacks hide outages) — a
+          // distinct signal from the generic dead-letter report, so this
+          // doesn't get lost in the noise of real server-rejected payloads.
+          try {
+            Sentry.captureMessage('entitlement_op_refused', {
+              level: 'info',
+              extra: { uuids: upgradeRefusedUuids, mutexKey },
+            });
+          } catch { /* never throw from reporting */ }
+
+          // Roll back the matching optimistic local entries so the user
+          // never sees a "saved" result the server actually refused.
+          // mockTestHistory entries are tagged with the op's UUID at
+          // creation time (see saveMockTestResult) specifically for this.
+          const refusedSet = new Set(upgradeRefusedUuids);
+          setMockTestHistory(prev => prev.filter(entry => !refusedSet.has(entry._syncUuid)));
+
+          // First-class nudge — App observes this and shows an upgrade
+          // prompt once, rather than the user just seeing nothing happen.
+          setUpgradeRequiredEvent({ uuids: upgradeRefusedUuids, at: Date.now() });
+        }
 
         // Update versions from response
         if (result.versions) {
@@ -1262,13 +1303,18 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   }, [flushQueue]);
 
   // ── Enqueue helper (enqueues + optionally flushes) ──
+  // Returns the generated op UUID (or null when nothing was enqueued) so
+  // callers that hold an optimistic local entry can tag it and roll it
+  // back later if the server refuses the op (see saveMockTestResult +
+  // the upgrade_required handling in flushQueue below).
   const enqueue = useCallback((type, payload) => {
-    if (previewMode) return; // preview sandbox: update local state only, never persist
-    if (!syncQueueRef.current) return;
-    syncQueueRef.current.enqueue(type, payload);
+    if (previewMode) return null; // preview sandbox: update local state only, never persist
+    if (!syncQueueRef.current) return null;
+    const uuid = syncQueueRef.current.enqueue(type, payload);
     if (!batchingRef.current) {
       flushQueue();
     }
+    return uuid;
   }, [flushQueue, previewMode]);
 
   // ── Save Methods (same signatures as useUserData) ──
@@ -1332,14 +1378,17 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
 
   const saveMockTestResult = useCallback((result) => {
     if (!userName) return;
-    // Newest-first — prepend
-    setMockTestHistory(prev => [result, ...prev]);
-    enqueue('mock-result', {
+    const uuid = enqueue('mock-result', {
       subject: result.subject, totalQuestions: result.totalQuestions,
       totalCorrect: result.totalCorrect, percentage: result.percentage,
       timeTaken: result.timeTaken, timeLimit: result.timeLimit,
       sectionResults: result.sectionResults, questionTimes: result.questionTimes,
     });
+    // Tag the optimistic entry with the op's UUID (local-only field, never
+    // sent to the server) so a later upgrade_required refusal can find and
+    // remove this exact entry — see the flushQueue error branch below.
+    // Newest-first — prepend
+    setMockTestHistory(prev => [{ ...result, _syncUuid: uuid }, ...prev]);
   }, [userName, enqueue]);
 
   // recordLessonComplete — updates topic-keyed lessonHistory state AND enqueues
@@ -1572,5 +1621,9 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     loaded,
     loadState,
     retryLoad,
+    // Entitlement-refusal nudge (Phase 0, Step 5) — see the upgrade_required
+    // branch in flushQueue. App observes this to show a one-time prompt.
+    upgradeRequiredEvent,
+    clearUpgradeRequiredEvent: () => setUpgradeRequiredEvent(null),
   };
 }

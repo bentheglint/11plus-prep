@@ -8,8 +8,9 @@ import AssignmentBanner from '../components/AssignmentBanner';
 import { BookOpen as LessonsIcon } from 'lucide-react';
 import { isSpeedReviewAllowlisted } from '../utils/tutorAllowlist';
 import OfflineDataBanner from '../components/OfflineDataBanner';
+import { trialBanner } from '../utils/entitlementGating';
 
-function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment, loadState, onRetry }) {
+function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment, loadState, onRetry, entitlement, freeTierActive, onUpgrade }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
@@ -49,6 +50,12 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
     { key: 'english', title: 'English', icon: BookOpen, gradient: 'from-[#22C55E] to-[#16A34A]', mastery: englishMastery },
     { key: 'verbalreasoning', title: 'Verbal Reasoning', icon: Brain, gradient: 'from-[#7C3AED] to-[#5A4BD1]', mastery: vrMastery },
   ];
+
+  // Trial countdown — only meaningful while the freeTier flag is on, and
+  // trialBanner() itself only ever says "show" for a genuine running trial
+  // with days actually left (never comped/paid/free, never "0 days left").
+  const trialBannerState = trialBanner(entitlement);
+  const showTrialBanner = !!freeTierActive && trialBannerState.show;
 
   return (
     <div className="app-bg p-4">
@@ -122,6 +129,22 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
 
         {/* Offline data banner — shown when the load path fell back to cache or failed */}
         <OfflineDataBanner loadState={loadState} onRetry={onRetry} />
+
+        {/* Trial countdown banner — free-tier flag only, and only while a
+            genuine trial with days remaining is running. Never shown for
+            comped, paid, or already-free accounts. */}
+        {showTrialBanner && (
+          <button
+            type="button"
+            onClick={onUpgrade}
+            className="w-full flex items-center justify-between gap-3 mb-4 px-4 py-3 rounded-xl bg-[#F8F7FF] border border-[#A29BFE]/40 text-left hover:bg-[#EDE9FE] transition-colors"
+          >
+            <span className="text-sm text-slate-700">
+              <span className="font-bold text-[#7C3AED]">{trialBannerState.daysRemaining} day{trialBannerState.daysRemaining === 1 ? '' : 's'} left</span> in your free trial
+            </span>
+            <span className="text-xs font-bold text-[#7C3AED] whitespace-nowrap">Upgrade now</span>
+          </button>
+        )}
 
         {/* Assignment banner — only shown when a tutor has set an active assignment */}
         {activeChildId && getToken && (
