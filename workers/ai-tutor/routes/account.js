@@ -12,6 +12,7 @@
 // DELETE /api/children/:id             — Delete a child (blocked if only one remains)
 
 import { json, canonicalEmail } from '../helpers.js';
+import { resolveEntitlements } from '../lib/entitlements.js';
 
 export async function handleAccountRoutes(request, env, userId, path) {
   const db = env.DB;
@@ -113,6 +114,14 @@ export async function handleAccountRoutes(request, env, userId, path) {
       hasTutorProfile: !!tutorProfileRow,
       isAdmin: adminIds.length > 0 && adminIds.includes(userId),
     };
+
+    // Phase 0 Step 1 — additive only, nothing reads or enforces on this yet.
+    // Nested under `access.entitlement` so every existing `access.*` field
+    // above is untouched. Uses the same `account` row (before the internal
+    // fields below are stripped) and the same tutor-profile lookup.
+    const entitlement = resolveEntitlements(account, { tutorProfile: tutorProfileRow });
+    console.log(JSON.stringify({ evt: 'entitlement_resolved', tier: entitlement.tier, reason: entitlement.reason }));
+    access.entitlement = entitlement;
 
     // Don't leak internal fields — comp_source is audit-only, stripe_customer_id
     // is needed server-side for portal/subscribe routes but not client-side.
