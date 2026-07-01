@@ -14,6 +14,7 @@ import {
   makeRequest,
   createSchema,   // creates tutors, accounts, children, assignments, etc.
   cleanDb,
+  seed,
 } from './helpers.js';
 import { createDataSchema, cleanDataDb, seedAccount } from './data-helpers.js';
 
@@ -527,5 +528,81 @@ describe('preferences/streaks no-row upsert (JS-REACT-7)', () => {
     const row = await env.DB.prepare('SELECT current_streak, version FROM streaks WHERE child_id = ?').bind(childId).first();
     expect(row.current_streak).toBe(3);
     expect(row.version).toBe(2);
+  });
+});
+
+// ─────────────────────────────────────────────
+// mock-result op gate — Phase 0 Step 4 (server-side enforcement)
+// ─────────────────────────────────────────────
+
+describe('mock-result op gate (free tier refused, paid/comped recorded)', () => {
+  it('free tier: mock-result op errors upgrade_required, quiz-result in the same batch still succeeds, no marker written', async () => {
+    const userId = 'user-mock-gate-free';
+    const email = `${userId}@test.com`;
+    const childId = 'child-mock-gate-free';
+    await seed.freeAccount(env.DB, userId, email);
+    await seed.child(env.DB, childId, userId);
+    const token = await makeAuthToken({ userId, email });
+
+    const mockUuid = makeUUID();
+    const quizUuid = makeUUID();
+
+    const res = await postBatch(token, childId, [
+      {
+        uuid: quizUuid,
+        type: 'quiz-result',
+        payload: { topicKey: 'percentages', subject: 'maths', score: 8, total: 10, timeSeconds: 300, quizMode: 'daily' },
+      },
+      {
+        uuid: mockUuid,
+        type: 'mock-result',
+        payload: { subject: 'maths', totalQuestions: 50, totalCorrect: 40, percentage: 80 },
+      },
+    ]);
+
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    const mockResult = body.results.find(r => r.uuid === mockUuid);
+    const quizResult = body.results.find(r => r.uuid === quizUuid);
+    expect(mockResult.status).toBe('error');
+    expect(mockResult.code).toBe('upgrade_required');
+    expect(quizResult.status).toBe('ok');
+
+    const mockCount = await env.DB.prepare('SELECT COUNT(*) AS n FROM mock_test_results WHERE child_id = ?').bind(childId).first();
+    expect(mockCount.n).toBe(0);
+
+    const quizCount = await env.DB.prepare('SELECT COUNT(*) AS n FROM quiz_results WHERE child_id = ?').bind(childId).first();
+    expect(quizCount.n).toBe(1);
+
+    // No processed_operations marker for the refused op — a retry after
+    // upgrading must be able to process cleanly, not be swallowed as a
+    // silent 'duplicate'.
+    const marker = await env.DB.prepare('SELECT COUNT(*) AS n FROM processed_operations WHERE operation_uuid = ?').bind(mockUuid).first();
+    expect(marker.n).toBe(0);
+  });
+
+  it('comped tier: mock-result op is recorded', async () => {
+    const userId = 'user-mock-gate-comped';
+    const email = `${userId}@test.com`;
+    const childId = 'child-mock-gate-comped';
+    await seed.compedAccount(env.DB, userId, email);
+    await seed.child(env.DB, childId, userId);
+    const token = await makeAuthToken({ userId, email });
+
+    const mockUuid = makeUUID();
+    const res = await postBatch(token, childId, [
+      {
+        uuid: mockUuid,
+        type: 'mock-result',
+        payload: { subject: 'maths', totalQuestions: 50, totalCorrect: 40, percentage: 80 },
+      },
+    ]);
+
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.results[0].status).toBe('ok');
+
+    const mockCount = await env.DB.prepare('SELECT COUNT(*) AS n FROM mock_test_results WHERE child_id = ?').bind(childId).first();
+    expect(mockCount.n).toBe(1);
   });
 });

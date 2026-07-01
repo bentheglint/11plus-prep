@@ -1,6 +1,7 @@
 // ── Learning Data Routes (append-only — no conflicts possible) ──
 
 import { json, getChildId } from '../helpers.js';
+import { loadEntitlement, upgradeRequiredResponse } from '../lib/entitlementGate.js';
 
 export async function handleDataRoutes(request, env, userId, path) {
   const db = env.DB;
@@ -34,6 +35,13 @@ export async function handleDataRoutes(request, env, userId, path) {
 
   // POST /api/data/mock-result — Save mock test result
   if (path === '/api/data/mock-result' && request.method === 'POST') {
+    // Mock tests are a paid-tier feature (Phase 0 Step 4). This legacy
+    // (non-batch) route is still reachable so it needs the same gate as
+    // routes/batch.js's mock-result op.
+    const ent = await loadEntitlement(env.DB, userId);
+    if (!ent) return json({ error: 'Account not found' }, 404);
+    if (!ent.entitlements.mockTests) return upgradeRequiredResponse(ent);
+
     const { subject, totalQuestions, totalCorrect, percentage, timeTaken, timeLimit, sectionResults, questionTimes } = await request.json();
     if (!subject || totalQuestions == null || totalCorrect == null) {
       return json({ error: 'Missing required fields' }, 400);

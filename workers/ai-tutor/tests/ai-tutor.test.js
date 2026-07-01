@@ -72,6 +72,78 @@ describe('AI tutor auth gate', () => {
   });
 });
 
+// ── Entitlement gate (Phase 0 Step 4) ──────────────────────────────────────
+// The gate sits between auth and checkTutorQuota/the Claude fetch. A free
+// (post-trial) account must be refused with 403 upgrade_required before any
+// quota KV write or upstream fetch; a comped account must pass the gate
+// (the request may still fail further downstream at the Anthropic fetch in
+// this test env — that's fine, we only assert it's not the 403 gate).
+
+describe('AI tutor entitlement gate', () => {
+  it('free (post-trial) account → 403 upgrade_required, before quota/fetch', async () => {
+    const userId = 'tutor-gate-free';
+    await seed.freeAccount(env.DB, userId, `${userId}@test.com`);
+    const token = await makeAuthToken({ userId, email: `${userId}@test.com` });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/', {
+        auth: token,
+        body: {
+          system: 'You are a tutor.',
+          messages: [{ role: 'user', content: 'Hello' }],
+        },
+      }),
+      env
+    );
+    expect(res.status).toBe(403);
+    const body = await res.json();
+    expect(body.code).toBe('upgrade_required');
+    expect(body.upgradeRequired).toBe(true);
+    expect(body.entitlement.tier).toBe('free');
+
+    // No quota KV write should have happened for a request refused before
+    // checkTutorQuota runs.
+    if (env.TUTOR_QUOTA) {
+      const today = new Date().toISOString().slice(0, 10);
+      const raw = await env.TUTOR_QUOTA.get(`tutor-quota:${userId}:${today}`);
+      expect(raw).toBeNull();
+    }
+  });
+
+  it('comped account → passes the gate (not a 403 upgrade_required)', async () => {
+    const userId = 'tutor-gate-comped';
+    await seed.compedAccount(env.DB, userId, `${userId}@test.com`);
+    const token = await makeAuthToken({ userId, email: `${userId}@test.com` });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/', {
+        auth: token,
+        body: {
+          system: 'You are a tutor.',
+          messages: [{ role: 'user', content: 'Hello' }],
+        },
+      }),
+      env
+    );
+    expect(res.status).not.toBe(403);
+  });
+
+  it('account not found (no accounts row) → 404, not the 403 gate', async () => {
+    const token = await makeAuthToken({ userId: 'tutor-gate-noaccount' });
+    const res = await worker.fetch(
+      makeRequest('POST', '/', {
+        auth: token,
+        body: {
+          system: 'You are a tutor.',
+          messages: [{ role: 'user', content: 'Hello' }],
+        },
+      }),
+      env
+    );
+    expect(res.status).toBe(404);
+  });
+});
+
 // ── (b) Input caps ─────────────────────────────────────────────────────────
 
 describe('AI tutor input caps', () => {

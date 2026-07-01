@@ -269,6 +269,31 @@ export const seed = {
       .run();
   },
 
+  // Free-tier account for entitlement-gate tests (Phase 0 Step 4): created
+  // well outside the 30-day app trial window, no subscription, not comped —
+  // resolves to tier 'free' / dailySetCap 1 per lib/entitlements.js.
+  async freeAccount(db, userId, email = 'test@test.com') {
+    await db
+      .prepare(
+        `INSERT INTO accounts (id, email, name, created_at, consent_given_at, consent_version, email_opt_in)
+         VALUES (?, ?, 'Test User', datetime('now', '-60 days'), datetime('now'), '1.0', 1)`
+      )
+      .bind(userId, email)
+      .run();
+  },
+
+  // Comped account for entitlement-gate tests: is_comped wins the
+  // resolution ladder regardless of created_at/subscription fields.
+  async compedAccount(db, userId, email = 'test@test.com') {
+    await db
+      .prepare(
+        `INSERT INTO accounts (id, email, name, consent_given_at, consent_version, email_opt_in, is_comped, comp_source)
+         VALUES (?, ?, 'Test User', datetime('now'), '1.0', 1, 1, 'invite:TEST')`
+      )
+      .bind(userId, email)
+      .run();
+  },
+
   async child(db, childId, accountId) {
     await db
       .prepare(
