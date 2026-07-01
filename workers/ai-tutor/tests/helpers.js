@@ -184,6 +184,12 @@ CREATE TABLE IF NOT EXISTS messages (
   created_at TEXT NOT NULL DEFAULT (datetime('now')),
   read_at TEXT
 );
+
+CREATE TABLE IF NOT EXISTS stripe_webhook_events (
+  event_id TEXT PRIMARY KEY,
+  type TEXT NOT NULL,
+  processed_at INTEGER NOT NULL DEFAULT (unixepoch())
+);
 `;
 
 export async function createSchema(db) {
@@ -215,6 +221,7 @@ export async function createSchema(db) {
 
 export async function cleanDb(db) {
   await db.batch([
+    db.prepare('DELETE FROM stripe_webhook_events'),
     db.prepare('DELETE FROM messages'),
     db.prepare('DELETE FROM conversations'),
     db.prepare('DELETE FROM tutor_notes'),

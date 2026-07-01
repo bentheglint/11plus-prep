@@ -131,6 +131,85 @@ async function verifyStripeSignature(rawBody, sigHeader, secret, toleranceSec = 
   return false;
 }
 
+// ── Webhook data helpers ──
+
+// Stripe moved `current_period_end` OFF the Subscription object and onto
+// each SubscriptionItem as of API version 2025-03-31.basil (accounts
+// created/upgraded on or after that pin no longer have a top-level
+// current_period_end at all). We check both locations, preferring the
+// legacy top-level field where it's still present, falling back to the
+// first subscription item. Kept RAW as Stripe unix seconds — do NOT
+// convert to ms or ISO here; lib/entitlements.js (isFutureEpoch) expects
+// seconds.
+export function getPeriodEnd(sub) {
+  return sub?.current_period_end ?? sub?.items?.data?.[0]?.current_period_end ?? null;
+}
+
+// invoice.paid/invoice.payment_succeeded carry no subscription-level
+// current_period_end at all — the closest signal is each invoice line's
+// billing period. Best-effort only: returns the latest line period.end
+// found, or undefined if the invoice has no usable period data (caller
+// should then leave subscription_current_period_end untouched).
+function maxInvoiceLinePeriodEnd(invoice) {
+  const lines = invoice?.lines?.data || [];
+  let max;
+  for (const line of lines) {
+    const end = line?.period?.end;
+    if (typeof end === 'number' && Number.isFinite(end) && (max === undefined || end > max)) {
+      max = end;
+    }
+  }
+  return max;
+}
+
+// Writes accounts.subscription_status / subscription_current_period_end
+// for a given Stripe customer. `status` is only written when provided;
+// `periodEnd` is only written when NOT undefined (so status-only events —
+// e.g. invoice.payment_failed — never clobber a good date; passing
+// `periodEnd: null` is a deliberate, explicit clear).
+//
+// Primary match is stripe_customer_id. If that matches zero rows — the
+// customer was created outside our checkout flow (Stripe dashboard), or
+// there was a race between Checkout completing and handleSubscribe's own
+// `UPDATE accounts SET stripe_customer_id = ...` (L169-170) landing — we
+// retry by Clerk user id (subscription/checkout metadata.clerk_user_id,
+// set at L191-193) and backfill stripe_customer_id onto that row so the
+// fast path works next time. If NEITHER matches, we log a loud error
+// (an account exists with paid access that D1 can't locate) but still
+// return normally so the caller can 200 the webhook — Stripe would
+// otherwise retry a genuinely unmatchable event forever.
+export async function updateAccountBilling(db, { customerId, clerkUserId, status, periodEnd }) {
+  const setParts = [];
+  const params = [];
+  if (status !== undefined) {
+    setParts.push('subscription_status = ?');
+    params.push(status);
+  }
+  if (periodEnd !== undefined) {
+    setParts.push('subscription_current_period_end = ?');
+    params.push(periodEnd);
+  }
+  if (setParts.length === 0) return 0;
+
+  const byCustomer = await db.prepare(
+    `UPDATE accounts SET ${setParts.join(', ')} WHERE stripe_customer_id = ?`
+  ).bind(...params, customerId).run();
+  let changes = byCustomer.meta?.changes || 0;
+
+  if (changes === 0 && clerkUserId) {
+    const byUser = await db.prepare(
+      `UPDATE accounts SET ${setParts.join(', ')}, stripe_customer_id = ? WHERE id = ?`
+    ).bind(...params, customerId, clerkUserId).run();
+    changes = byUser.meta?.changes || 0;
+  }
+
+  if (changes === 0) {
+    console.error('[Stripe webhook] UNMATCHED account', JSON.stringify({ customerId, clerkUserId, status }));
+  }
+
+  return changes;
+}
+
 // ── Route handlers ──
 
 // POST /api/stripe/subscribe
@@ -274,28 +353,34 @@ export async function handleWebhook(request, env) {
       case 'customer.subscription.created':
       case 'customer.subscription.updated': {
         const sub = event.data.object;
-        await db.prepare(
-          `UPDATE accounts
-           SET subscription_status = ?, subscription_current_period_end = ?
-           WHERE stripe_customer_id = ?`
-        ).bind(sub.status, sub.current_period_end || null, sub.customer).run();
+        await updateAccountBilling(db, {
+          customerId: sub.customer,
+          clerkUserId: sub.metadata?.clerk_user_id,
+          status: sub.status,
+          periodEnd: getPeriodEnd(sub),
+        });
         break;
       }
       case 'customer.subscription.deleted': {
         const sub = event.data.object;
-        await db.prepare(
-          `UPDATE accounts
-           SET subscription_status = 'canceled', subscription_current_period_end = ?
-           WHERE stripe_customer_id = ?`
-        ).bind(sub.current_period_end || null, sub.customer).run();
+        await updateAccountBilling(db, {
+          customerId: sub.customer,
+          clerkUserId: sub.metadata?.clerk_user_id,
+          status: 'canceled',
+          periodEnd: getPeriodEnd(sub),
+        });
         break;
       }
       case 'invoice.payment_failed': {
         const invoice = event.data.object;
         if (invoice.customer) {
-          await db.prepare(
-            `UPDATE accounts SET subscription_status = 'past_due' WHERE stripe_customer_id = ?`
-          ).bind(invoice.customer).run();
+          await updateAccountBilling(db, {
+            customerId: invoice.customer,
+            status: 'past_due',
+            // periodEnd intentionally omitted (undefined) — a failed
+            // payment doesn't tell us anything new about the period end,
+            // and invoices carry no subscription-level date to write.
+          });
         }
         break;
       }
@@ -303,12 +388,17 @@ export async function handleWebhook(request, env) {
       case 'invoice.payment_succeeded': {
         // Belt-and-braces: ensure status=active after a successful charge.
         // customer.subscription.updated should fire too, but payment events
-        // are a stronger signal the user has live access.
+        // are a stronger signal the user has live access. Also refreshes
+        // period_end best-effort from the invoice's line items, so a
+        // dropped subscription.updated doesn't leave the date stale
+        // through a renewal (Gap 3).
         const invoice = event.data.object;
         if (invoice.customer && invoice.subscription) {
-          await db.prepare(
-            `UPDATE accounts SET subscription_status = 'active' WHERE stripe_customer_id = ?`
-          ).bind(invoice.customer).run();
+          await updateAccountBilling(db, {
+            customerId: invoice.customer,
+            status: 'active',
+            periodEnd: maxInvoiceLinePeriodEnd(invoice),
+          });
         }
         break;
       }
