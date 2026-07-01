@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
 import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
 import SubscribeScreen from './SubscribeScreen';
+import { isFeatureEnabled } from '../utils/featureFlags';
+import { resolveAccessAdmission } from '../utils/entitlementGating';
 // apiSync imports removed — D1 data loading moved to useD1Data hook
 // fetchAllData, setTokenProvider, setVersions no longer needed here
 // MigrationScreen removed — the localStorage→D1 migration was a one-time
@@ -467,11 +469,14 @@ function AuthGateReal({ children }) {
         setChildrenList(allChildren);
         setChildName(firstChild.display_name);
         setActiveChildId(firstChild.id);
-        if (data.access && !data.access.hasAccess) {
-          setOnboardingStep('subscribe');
-        } else {
-          setOnboardingStep('ready');
-        }
+        // Phase 0 freemium (Step 5): when the freeTier flag is on, a
+        // would-be-walled user is admitted to the app's free floor instead
+        // of hitting the paywall. Flag off keeps today's behaviour exactly
+        // (walled → subscribe). comped/paid/trial/grace unchanged either way.
+        setOnboardingStep(resolveAccessAdmission({
+          hasAccess: !!(data.access && data.access.hasAccess),
+          freeTierOn: isFeatureEnabled('freeTier'),
+        }));
       } else if (data.account && data.access?.hasTutorProfile) {
         // Pure tutor (profile, no child) → land on their dashboard. No paywall
         // for tutors. Their own account name flows through as currentUser.

@@ -22,6 +22,10 @@ export const FLAGS = {
     description: 'Catch-all flag for ad-hoc experiments',
     default: false,
   },
+  freeTier: {
+    description: 'Client-side free-tier gating (Phase 0 freemium): locked cards, daily-set cap, upgrade prompts',
+    default: false,
+  },
 };
 
 function readEnvFlag(name) {

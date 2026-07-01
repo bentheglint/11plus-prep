@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useClerk } from '@clerk/clerk-react';
-import { CheckCircle2, LogOut, Mail, Shield, ChevronDown, ChevronUp } from 'lucide-react';
+import { CheckCircle2, LogOut, Mail, Shield, ChevronDown, ChevronUp, ArrowLeft } from 'lucide-react';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -59,7 +59,7 @@ const FAQS = [
   },
 ];
 
-export default function SubscribeScreen({ getToken, trialExpired }) {
+export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
   const { signOut } = useClerk();
   const [plan, setPlan] = useState('annual');
   const [submitting, setSubmitting] = useState(false);
@@ -95,7 +95,19 @@ export default function SubscribeScreen({ getToken, trialExpired }) {
     <div className="min-h-screen bg-[#F8F7FF]">
       {/* Top bar — escape routes always visible */}
       <div className="flex justify-between items-center px-4 py-3 bg-white border-b border-slate-100 sticky top-0 z-10">
-        <img src="/logo.svg" alt="PrepStep" className="h-7" />
+        {onBack ? (
+          <button
+            type="button"
+            onClick={onBack}
+            className="flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-[#7C3AED] transition-colors"
+            aria-label="Back"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span className="hidden sm:inline">Back</span>
+          </button>
+        ) : (
+          <img src="/logo.svg" alt="PrepStep" className="h-7" />
+        )}
         <div className="flex items-center gap-4">
           <a
             href="mailto:hello@prepstep.co.uk?subject=PrepStep%20support"
