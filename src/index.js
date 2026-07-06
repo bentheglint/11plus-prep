@@ -56,7 +56,18 @@ const appTree = isDiagramViewer ? (
   </AuthGate>
 );
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Mount into #root. If the container is missing — seen in prod from bots,
+// prefetchers, and DOM-mangling browser extensions (Sentry JAVASCRIPT-REACT-A)
+// — recreate it rather than throwing "Target container is not a DOM element",
+// so a real user with a tampered DOM still gets a working app instead of a
+// blank page. The normal path (container present) is unchanged.
+let container = document.getElementById('root');
+if (!container) {
+  container = document.createElement('div');
+  container.id = 'root';
+  document.body.appendChild(container);
+}
+const root = ReactDOM.createRoot(container);
 root.render(
   <React.StrictMode>
     <ErrorBoundary>
