@@ -12,6 +12,22 @@
 
 import { json } from '../helpers.js';
 import { quizSubjectForTopic } from './batch.js';
+import { loadEntitlement, pupilPlanMarker } from '../lib/entitlementGate.js';
+import { resolveEntitlements } from '../lib/entitlements.js';
+
+// Build the plain account row resolveEntitlements() expects from a joined
+// query's flat columns. Shared by every batch-resolution site in this file
+// (GET :id recipients, POST create eligibility) so the two never drift.
+function acctRowFromJoin(row) {
+  return {
+    id: row.account_id,
+    created_at: row.account_created_at,
+    is_comped: row.is_comped,
+    comp_source: row.comp_source,
+    subscription_status: row.subscription_status,
+    subscription_current_period_end: row.subscription_current_period_end,
+  };
+}
 
 // ── Tutor assignment routes ──────────────────────────────────────────────────
 
@@ -20,20 +36,10 @@ async function requireTutor(db, userId) {
   return t ? t.id : null;
 }
 
-async function expandRecipients(db, assignment, items) {
-  // Collect the child IDs who should receive this assignment
-  let childIds = [];
-
-  if (assignment.target_class_id) {
-    const { results } = await db.prepare(
-      'SELECT child_id FROM class_enrolments WHERE class_id = ?'
-    ).bind(assignment.target_class_id).all();
-    childIds = results.map(r => r.child_id);
-  } else {
-    childIds = [assignment.target_child_id];
-  }
-
-  if (childIds.length === 0) return 0;
+async function expandRecipients(db, assignment, items, childIds) {
+  // childIds is the ELIGIBLE set, already resolved (and entitlement-filtered)
+  // by the caller before any row was written — see the POST handler below.
+  if (!childIds || childIds.length === 0) return 0;
 
   // Insert one recipient row per (child × item)
   const stmts = [];
@@ -90,6 +96,64 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
         if (!link) return json({ error: 'Child not on roster' }, 404);
       }
 
+      // Resolve the recipient set — WITH each pupil's billing columns, in ONE
+      // query — BEFORE writing anything. Focused Learning homework is a
+      // paid-tier feature (§11-C-8/9): a free pupil must never be assigned
+      // it, and we must never create an orphan assignment with zero
+      // recipients if every candidate turns out to be free. Batch (pure)
+      // resolution — no per-pupil DB read (avoids N+1 for a class target).
+      let recipientRows;
+      if (targetClassId) {
+        const { results } = await db.prepare(`
+          SELECT c.id AS child_id, c.display_name AS child_name,
+                 acc.id AS account_id, acc.created_at AS account_created_at,
+                 acc.is_comped, acc.comp_source, acc.subscription_status,
+                 acc.subscription_current_period_end
+          FROM class_enrolments ce
+          JOIN children c ON c.id = ce.child_id
+          JOIN accounts acc ON acc.id = c.account_id
+          WHERE ce.class_id = ?
+        `).bind(targetClassId).all();
+        recipientRows = results;
+      } else {
+        const row = await db.prepare(`
+          SELECT c.id AS child_id, c.display_name AS child_name,
+                 acc.id AS account_id, acc.created_at AS account_created_at,
+                 acc.is_comped, acc.comp_source, acc.subscription_status,
+                 acc.subscription_current_period_end
+          FROM children c
+          JOIN accounts acc ON acc.id = c.account_id
+          WHERE c.id = ?
+        `).bind(targetChildId).first();
+        recipientRows = row ? [row] : [];
+      }
+
+      // No candidates at all (e.g. an empty class) is a distinct case from
+      // "everyone's on the free plan" — don't mislabel it as the latter.
+      if (recipientRows.length === 0) {
+        return json({ error: 'No pupils to assign to', code: 'empty_target' }, 422);
+      }
+
+      const entitlementNow = new Date();
+      const eligibleChildIds = [];
+      const skipped = [];
+      for (const row of recipientRows) {
+        const marker = pupilPlanMarker(resolveEntitlements(acctRowFromJoin(row), { now: entitlementNow }));
+        if (marker.focusedLearningLocked) {
+          skipped.push({ childId: row.child_id, childName: row.child_name, pupilPlan: marker.pupilPlan });
+        } else {
+          eligibleChildIds.push(row.child_id);
+        }
+      }
+
+      if (eligibleChildIds.length === 0) {
+        return json({
+          error: 'All selected pupils are on the free plan',
+          code: 'no_eligible_recipients',
+          skipped,
+        }, 422);
+      }
+
       const assignmentId = crypto.randomUUID();
       const createdAt = new Date().toISOString().replace('T', ' ').slice(0, 19);
 
@@ -109,11 +173,14 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
       );
       await db.batch(itemStmts);
 
+      // Recipients ONLY for the eligible (non-free) pupils — a skipped free
+      // pupil gets no assignment_recipients row at all, so no locked
+      // homework can ever dangle in front of them.
       const assignment = { id: assignmentId, tutor_id: tutorId, target_class_id: targetClassId || null, target_child_id: targetChildId || null };
-      const recipientCount = await expandRecipients(db, assignment, itemRows);
+      const recipientCount = await expandRecipients(db, assignment, itemRows, eligibleChildIds);
 
       const result = await db.prepare('SELECT * FROM assignments WHERE id = ?').bind(assignmentId).first();
-      return json({ ok: true, assignment: result, recipientCount }, 201);
+      return json({ ok: true, assignment: result, recipientCount, skipped }, 201);
     }
 
     // GET /api/tutor/assignments — list with stats
@@ -165,15 +232,40 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
           'SELECT * FROM assignment_items WHERE assignment_id = ? ORDER BY created_at ASC'
         ).bind(assignmentId).all();
 
+        // ar.* includes question_results — the deep per-question blob —
+        // for EVERY recipient. A free pupil's deep data must never leak to
+        // their tutor (N3), so pull each recipient's billing columns in the
+        // SAME query (no N+1) and strip both the blob and the billing
+        // columns themselves before the row leaves this route.
         const { results: recipients } = await db.prepare(`
-          SELECT ar.*, c.display_name AS child_name
+          SELECT ar.*, c.display_name AS child_name,
+                 acc.id AS account_id, acc.created_at AS account_created_at,
+                 acc.is_comped, acc.comp_source, acc.subscription_status,
+                 acc.subscription_current_period_end
           FROM assignment_recipients ar
           JOIN children c ON c.id = ar.child_id
+          JOIN accounts acc ON acc.id = c.account_id
           WHERE ar.assignment_id = ?
           ORDER BY c.display_name ASC
         `).bind(assignmentId).all();
 
-        return json({ assignment: a, items, recipients });
+        const entitlementNow = new Date();
+        const mappedRecipients = recipients.map(r => {
+          const marker = pupilPlanMarker(resolveEntitlements(acctRowFromJoin(r), { now: entitlementNow }));
+          const {
+            account_id, account_created_at, is_comped, comp_source,
+            subscription_status, subscription_current_period_end,
+            question_results, ...basic
+          } = r;
+          return {
+            ...basic,
+            ...(marker.deepProgressLocked ? {} : { question_results }),
+            pupilPlan: marker.pupilPlan,
+            deepProgressLocked: marker.deepProgressLocked,
+          };
+        });
+
+        return json({ assignment: a, items, recipients: mappedRecipients });
       }
 
       // DELETE
@@ -211,7 +303,18 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
         ORDER BY a.due_date ASC, ai.created_at ASC
       `).bind(childId).all();
 
-      return json({ recipients });
+      // A free pupil cannot do Focused Learning homework, so their list must
+      // never dangle a locked item in front of them (child-first — never
+      // show, never let them tap through to a refusal). Resolve the
+      // CALLER's (parent's) own entitlement once — no per-item DB read —
+      // and hide the whole list rather than flagging individual items:
+      // every entitlement is false on the free plan, so blocking on the
+      // free-plan marker is correct for topic/mock/lesson/custom_quiz alike.
+      const entitlement = await loadEntitlement(db, userId);
+      const marker = pupilPlanMarker(entitlement);
+      const visibleRecipients = marker.focusedLearningLocked ? [] : recipients;
+
+      return json({ recipients: visibleRecipients });
     }
 
     const recipientMatch = path.match(/^\/api\/pupil\/assignments\/([^/]+)\/(start|complete)$/);
@@ -229,6 +332,16 @@ export async function handleAssignmentRoutes(request, env, userId, path) {
 
       if (!rec) return json({ error: 'Assignment item not found' }, 404);
       if (rec.account_id !== userId) return json({ error: 'Forbidden' }, 403);
+
+      // Defense-in-depth: a pupil who was eligible when this was assigned
+      // may have since dropped to the free plan. Refuse to record progress
+      // on Focused homework rather than trusting the assignment's mere
+      // existence as proof of current entitlement.
+      const entitlement = await loadEntitlement(db, userId);
+      const marker = pupilPlanMarker(entitlement);
+      if (marker.focusedLearningLocked) {
+        return json({ error: 'Upgrade required', code: 'upgrade_required', upgradeRequired: true }, 403);
+      }
 
       const now = new Date().toISOString().replace('T', ' ').slice(0, 19);
 
