@@ -695,6 +695,16 @@ describe('normaliseVersions: no scalar version can ever be null/undefined', () =
     }
   });
 
+  it('returns exactly the known scalar version keys (tripwire for a future 4th type)', () => {
+    // normaliseVersions must cover every scalar mutable op that carries a single
+    // version (streaks, prepPoints, preferences — see batch.js MUTABLE_TYPES minus
+    // the topic-keyed topic-performance). If a new scalar version type is added,
+    // update BOTH normaliseVersions AND this list — otherwise the new type is
+    // silently dropped and reintroduces the JS-REACT-7 null-version dead-letter.
+    expect(Object.keys(normaliseVersions({})).sort())
+      .toEqual(['preferences', 'prepPoints', 'streaks']);
+  });
+
   it('transformServerData routes through normaliseVersions (no preferences row → 1, not undefined)', () => {
     const out = transformServerData({
       quizResults: [], mockTestResults: [], questionResults: [], topicPerformance: [],

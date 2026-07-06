@@ -701,7 +701,11 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     leitnerQueueRef.current = lq;
     // Normalise so a partial/stale snapshot can never leave a version undefined
     // (JS-REACT-7: an undefined preferences version was sent as null → rejected).
-    if (data.versions) versionsRef.current = normaliseVersions(data.versions);
+    // Skip a truthy-but-empty {} so it can't clobber a good in-memory version with 1s
+    // (a partial map like { streaks: 5 } still normalises — the missing keys default).
+    if (data.versions && Object.keys(data.versions).length > 0) {
+      versionsRef.current = normaliseVersions(data.versions);
+    }
   }, []);
 
   // Synchronously reset to fresh-user defaults. Fires at the TOP of the load
@@ -1113,7 +1117,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
               // record of the unmerged local value via its payload) instead of
               // letting toRemove discard it silently — deadLetterErrors both
               // removes from the queue and writes the dead-letter + Sentry report.
-              queue.deadLetterErrors([opResult.uuid]);
+              queue.deadLetterErrors([opResult.uuid], 'conflict-loop: accepted server state after 3 rounds');
               try {
                 Sentry.captureMessage('[useD1Data] Conflict loop guard triggered — accepting server state', {
                   level: 'warning',
