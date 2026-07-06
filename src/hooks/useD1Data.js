@@ -215,6 +215,21 @@ function normaliseDate(d) {
 // order for display, sort explicitly by date — don't rely on source order.
 // See: ChildProgressView Recent Activity bug (fixed 14 Apr 2026).
 
+// Coerce a raw versions map (from a server load, cached snapshot, or offline
+// restore) into the canonical scalar-version shape with every key guaranteed
+// to be a usable integer. A partial or stale snapshot that omits or nulls a key
+// (e.g. a cache-fallback load missing `preferences`) must never leave a version
+// undefined: that value is sent to the server as a null version and rejected as
+// "Missing version", dead-lettering the op (Sentry JAVASCRIPT-REACT-7).
+export function normaliseVersions(raw) {
+  const v = raw || {};
+  return {
+    streaks: v.streaks ?? 1,
+    prepPoints: v.prepPoints ?? 1,
+    preferences: v.preferences ?? 1,
+  };
+}
+
 export function transformServerData(serverData) {
   // quizHistory — newest-first (ORDER BY completed_at DESC)
   const quizHistory = (serverData.quizResults || []).map(r => ({
@@ -363,12 +378,12 @@ export function transformServerData(serverData) {
     timesIncorrect: r.times_incorrect ?? r.timesIncorrect ?? 0,
   }));
 
-  // Extract versions for mutable records
-  const versions = {
-    streaks: serverData.streaks?.version ?? 1,
-    prepPoints: serverData.prepPoints?.version ?? 1,
-    preferences: serverData.preferences?.version ?? 1,
-  };
+  // Extract versions for mutable records (normalised so no key is ever null)
+  const versions = normaliseVersions({
+    streaks: serverData.streaks?.version,
+    prepPoints: serverData.prepPoints?.version,
+    preferences: serverData.preferences?.version,
+  });
 
   return {
     quizHistory, topicPerformance, seenQuestions, mockTestHistory,
@@ -684,7 +699,9 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     const lq = data.leitnerQueue || DEFAULTS.leitnerQueue;
     setLeitnerQueue(lq);
     leitnerQueueRef.current = lq;
-    if (data.versions) versionsRef.current = data.versions;
+    // Normalise so a partial/stale snapshot can never leave a version undefined
+    // (JS-REACT-7: an undefined preferences version was sent as null → rejected).
+    if (data.versions) versionsRef.current = normaliseVersions(data.versions);
   }, []);
 
   // Synchronously reset to fresh-user defaults. Fires at the TOP of the load
@@ -1203,7 +1220,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
         // and would wrongly dead-letter good ops after one 400.
         state.permFailures += 1;
         if (state.permFailures >= 2) {
-          queue.deadLetterErrors(ops.map(op => op.uuid));
+          queue.deadLetterErrors(ops.map(op => op.uuid), 'server-rejected: batch permanent 4xx');
           state.permFailures = 0;
         } else {
           // First consecutive 4xx — retry once with backoff
@@ -1394,7 +1411,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     if (!userName) return;
     setStreakData(data);
     enqueue('streaks', {
-      version: versionsRef.current.streaks,
+      version: versionsRef.current.streaks ?? 1,
       currentStreak: data.currentStreak,
       longestStreak: data.longestStreak,
       lastQuizDate: data.lastQuizDate,
@@ -1469,7 +1486,7 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
     if (!userName) return;
     setLastSessionDate(date);
     enqueue('preferences', {
-      version: versionsRef.current.preferences,
+      version: versionsRef.current.preferences ?? 1,
       lastSessionDate: date,
     });
   }, [userName, enqueue]);
