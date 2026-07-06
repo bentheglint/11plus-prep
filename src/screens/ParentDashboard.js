@@ -12,11 +12,18 @@ import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant'
 import ParentGuidance from '../components/progress/ParentGuidance';
 import TutorHomeworkCard from '../components/progress/TutorHomeworkCard';
 import TutorManagementCard from '../components/progress/TutorManagementCard';
+import LockedFeatureCard from '../components/LockedFeatureCard';
 import parentGuides from '../data/parentGuides';
+import { canUseFeature } from '../utils/entitlementGating';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
-function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome, onOpenParentMessages }) {
+function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome, onOpenParentMessages, entitlement, freeTierActive, onUpgrade }) {
+  // Deep progress analytics (exam readiness, topic heat map, focus areas,
+  // speed/practice history) are a paid-tier feature (spec §4 / §11-E-14).
+  // Tutor linking, subscription management, and GDPR data rights below are
+  // NOT part of this gate — they stay available to every tier.
+  const deepProgressLocked = !!freeTierActive && !canUseFeature(entitlement, 'deepProgress');
   const practiceDays = streaksAndPP.getPracticeDays(84);
   const { signOut } = useClerk();
   const [deleteState, setDeleteState] = useState('idle'); // idle | confirm | deleting | done
@@ -148,36 +155,50 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
           onOpenMessages={onOpenParentMessages}
         />
 
-        {/* The most important card — answers "Is my child on track?" */}
-        <OnTrackCard
-          mastery={mastery}
-          streaksAndPP={streaksAndPP}
-          userData={userData}
-          currentUser={currentUser}
-        />
+        {/* Deep progress analytics — locked for free-tier children. The
+            underlying data already lives on the client (§9); this is a UI
+            lock only, driven by the server entitlement, never a client flag. */}
+        {deepProgressLocked ? (
+          <LockedFeatureCard
+            className="mb-6"
+            title="Deep Progress Analytics"
+            description="Exam readiness scores, topic heat maps, focus areas, speed tracking, mock test history and the practice calendar — upgrade to see the full picture of how your child is progressing."
+            onUpgrade={onUpgrade}
+          />
+        ) : (
+          <>
+            {/* The most important card — answers "Is my child on track?" */}
+            <OnTrackCard
+              mastery={mastery}
+              streaksAndPP={streaksAndPP}
+              userData={userData}
+              currentUser={currentUser}
+            />
 
-        <ExamReadinessCard mastery={mastery} />
+            <ExamReadinessCard mastery={mastery} />
 
-        <TopicHeatMap mastery={mastery} onTopicClick={onTopicClick} />
+            <TopicHeatMap mastery={mastery} onTopicClick={onTopicClick} />
 
-        <FocusAreas mastery={mastery} onTopicClick={onTopicClick} />
+            <FocusAreas mastery={mastery} onTopicClick={onTopicClick} />
 
-        <ParentGuidance
-          guides={parentGuides}
-          mastery={mastery}
-          userData={userData}
-        />
+            <ParentGuidance
+              guides={parentGuides}
+              mastery={mastery}
+              userData={userData}
+            />
 
-        <PracticeCalendar
-          practiceDays={practiceDays}
-          practiceLog={userData.practiceLog}
-        />
+            <PracticeCalendar
+              practiceDays={practiceDays}
+              practiceLog={userData.practiceLog}
+            />
 
-        <MockTestHistory mockTestHistory={userData.mockTestHistory} />
+            <MockTestHistory mockTestHistory={userData.mockTestHistory} />
 
-        <SpeedTracking questionResults={userData.questionResults} />
+            <SpeedTracking questionResults={userData.questionResults} />
 
-        <SpeedAccuracyQuadrant questionResults={userData.questionResults} />
+            <SpeedAccuracyQuadrant questionResults={userData.questionResults} />
+          </>
+        )}
 
         {/* Subscription — only shown for paying customers (active/past_due/trialing).
             Comped, trial-only, and cancelled accounts don't see this card. */}

@@ -1,11 +1,16 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw, BookOpen } from 'lucide-react';
+import { ArrowLeft, XCircle, ChevronDown, ChevronRight, Target, Sparkles, CheckCircle2, X, RotateCcw, BookOpen, Lock } from 'lucide-react';
 import { topicNames } from '../components/RecommendationCard';
+import { canUseFeature } from '../utils/entitlementGating';
 
 const subjectColours = { maths: '#3B82F6', english: '#22C55E', verbalreasoning: '#7C3AED' };
 const subjectNames = { maths: 'Maths', english: 'English', verbalreasoning: 'VR' };
 
-function MistakesScreen({ questionResults, questionData, englishData, vrData, onPractiseTopic, onRecordResult, onBack }) {
+function MistakesScreen({ questionResults, questionData, englishData, vrData, onPractiseTopic, onRecordResult, onBack, entitlement, freeTierActive, onUpgrade }) {
+  // "Practise this mistake" re-quiz is a paid-tier feature (spec §4 /
+  // §11-E-14). The mistakes LIST itself stays fully visible and free —
+  // only the re-quiz action is gated.
+  const practiceLocked = !!freeTierActive && !canUseFeature(entitlement, 'unlimitedPractice');
   const [expandedTopic, setExpandedTopic] = useState(null);
   const [subjectFilter, setSubjectFilter] = useState('all'); // 'all' | 'maths' | 'english' | 'verbalreasoning'
   // Practice mode state
@@ -127,8 +132,15 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
     : allTopicEntries.filter(([, g]) => g.subject === subjectFilter);
   const totalMistakes = topicEntries.reduce((sum, [, g]) => sum + g.mistakes.length, 0);
 
-  // Start practice mode for a topic
+  // Start practice mode for a topic. Single choke point for all three
+  // practice entry points below, so the free-tier gate only needs to live
+  // in one place: a locked tap shows the upgrade nudge instead of starting
+  // the quiz, never a silent no-op or an error toast.
   const startPractice = useCallback((topicKey, subject, mistakes) => {
+    if (practiceLocked) {
+      onUpgrade?.();
+      return;
+    }
     // Filter out questions no longer in the bank
     const practiceable = mistakes.filter(m => m.questionType !== 'missing');
     if (practiceable.length === 0) return;
@@ -138,7 +150,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
     setSelectedPair([]);
     setShowFeedback(false);
     setPracticeResults([]);
-  }, []);
+  }, [practiceLocked, onUpgrade]);
 
   // Record a practice result and persist it
   const recordResult = useCallback((currentMistake, isCorrect) => {
@@ -593,7 +605,8 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
           </div>
         )}
 
-        {/* Practice All button */}
+        {/* Practice All button — greyed out with a lock affordance for a
+            free-tier child, same as a locked mode card elsewhere in the app. */}
         {totalMistakes > 0 && (
           <div className="mb-4">
             <button
@@ -603,10 +616,14 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 );
                 startPractice('all', 'mixed', allMistakes);
               }}
-              className="w-full py-3 bg-[#FF6B6B] text-white font-bold rounded-xl hover:bg-[#E55A5A] transition-colors flex items-center justify-center gap-2"
+              className={`w-full py-3 font-bold rounded-xl transition-colors flex items-center justify-center gap-2 ${
+                practiceLocked
+                  ? 'bg-gray-100 text-gray-400 hover:bg-gray-200 border-2 border-gray-200'
+                  : 'bg-[#FF6B6B] text-white hover:bg-[#E55A5A]'
+              }`}
             >
-              <RotateCcw className="w-5 h-5" />
-              Practice All Mistakes ({totalMistakes})
+              {practiceLocked ? <Lock className="w-5 h-5" /> : <RotateCcw className="w-5 h-5" />}
+              {practiceLocked ? 'Upgrade to practise mistakes' : `Practice All Mistakes (${totalMistakes})`}
             </button>
           </div>
         )}
@@ -693,11 +710,13 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                               </div>
                               {canPractise && (
                                 <span
-                                  className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full flex-shrink-0 self-center"
-                                  style={{ background: `${colour}15`, color: colour }}
+                                  className={`flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full flex-shrink-0 self-center ${
+                                    practiceLocked ? 'bg-gray-100 text-gray-400' : ''
+                                  }`}
+                                  style={practiceLocked ? undefined : { background: `${colour}15`, color: colour }}
                                 >
-                                  <Target className="w-3 h-3" />
-                                  Practise
+                                  {practiceLocked ? <Lock className="w-3 h-3" /> : <Target className="w-3 h-3" />}
+                                  {practiceLocked ? 'Upgrade' : 'Practise'}
                                 </span>
                               )}
                             </>
@@ -726,11 +745,13 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                       {group.mistakes.some(m => m.questionType !== 'missing') && (
                         <button
                           onClick={() => startPractice(topicKey, group.subject, group.mistakes)}
-                          className="mt-3 w-full flex items-center justify-center gap-2 py-2.5 text-white font-bold rounded-xl text-sm transition-colors"
-                          style={{ background: colour }}
+                          className={`mt-3 w-full flex items-center justify-center gap-2 py-2.5 font-bold rounded-xl text-sm transition-colors ${
+                            practiceLocked ? 'bg-gray-100 text-gray-400 border-2 border-gray-200 hover:bg-gray-200' : 'text-white'
+                          }`}
+                          style={practiceLocked ? undefined : { background: colour }}
                         >
-                          <Target className="w-4 h-4" />
-                          Practice These ({group.mistakes.filter(m => m.questionType !== 'missing').length})
+                          {practiceLocked ? <Lock className="w-4 h-4" /> : <Target className="w-4 h-4" />}
+                          {practiceLocked ? 'Upgrade to practise' : `Practice These (${group.mistakes.filter(m => m.questionType !== 'missing').length})`}
                         </button>
                       )}
                     </div>

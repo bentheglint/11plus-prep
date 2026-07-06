@@ -2470,6 +2470,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
         onRecordResult={(result) => userData.saveQuestionResult(result)}
         onBack={handleHome}
+        entitlement={effectiveEntitlement}
+        freeTierActive={freeTierRolloutOn}
+        onUpgrade={handleUpgrade}
       />
     );
   }
@@ -2501,6 +2504,9 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         }}
         onViewAllActivity={() => setCurrentView('allActivity')}
         onOpenParentMessages={() => setCurrentView('parentMessages')}
+        entitlement={effectiveEntitlement}
+        freeTierActive={freeTierRolloutOn}
+        onUpgrade={handleUpgrade}
       />
     );
   }

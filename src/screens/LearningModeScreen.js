@@ -3,35 +3,13 @@ import { Calendar, Target, ArrowLeft, Clock, Lightbulb, Flame, Lock } from 'luci
 import { motion } from '../components/Motion';
 import { SUBJECT_TOPICS } from '../hooks/useMastery';
 import { canUseFeature } from '../utils/entitlementGating';
+import LockedModeCard from '../components/LockedFeatureCard';
 
 const mockTestInfo = {
   maths: { questions: 50, time: 50 },
   english: { questions: 49, time: 50 },
   verbalreasoning: { questions: 85, time: 50 },
 };
-
-// A gated mode card — same footprint as an unlocked card, but locked with
-// an "Upgrade to unlock" call to action instead of the normal action.
-function LockedModeCard({ title, description, onUpgrade }) {
-  return (
-    <div className="card rounded-2xl p-8 text-left flex flex-col border-2 border-gray-200">
-      <div className="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-2xl mb-4">
-        <Lock className="w-8 h-8 text-gray-400" />
-      </div>
-      <h3 className="text-xl font-heading font-bold text-gray-400 mb-2">{title}</h3>
-      <p className="text-gray-400 flex-1 mb-4">{description}</p>
-      <motion.button
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-        type="button"
-        onClick={onUpgrade}
-        className="self-start text-sm font-bold text-[#7C3AED] bg-[#7C3AED]/10 hover:bg-[#7C3AED]/20 rounded-full px-4 py-2 transition-colors"
-      >
-        Upgrade to unlock
-      </motion.button>
-    </div>
-  );
-}
 
 function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, onFocusedLearning, onMockTest, onChallengeMode, onStudyToolkit, onBack, entitlement, freeTierActive, onUpgrade }) {
   const testInfo = mockTestInfo[subjectKey] || { questions: 50, time: 50 };
