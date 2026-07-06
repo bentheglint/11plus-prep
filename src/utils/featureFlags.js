@@ -25,6 +25,12 @@ export const FLAGS = {
   freeTier: {
     description: 'Client-side free-tier gating (Phase 0 freemium): locked cards, daily-set cap, upgrade prompts',
     default: false,
+    // Rollout-only flag: in production this is purely a build-time switch
+    // for turning the free-tier UI on/off. URL/localStorage overrides must
+    // never be able to weaken gating in production — per-user gating is the
+    // server entitlement's job (see effectiveEntitlement in App.js), not
+    // this flag. Overrides still work in development for QA.
+    productionLocked: true,
   },
 };
 
@@ -54,10 +60,16 @@ function readStorageFlag(name) {
 }
 
 export function isFeatureEnabled(name) {
-  const urlFlag = readUrlFlag(name);
-  if (urlFlag !== null) return urlFlag;
-  const storageFlag = readStorageFlag(name);
-  if (storageFlag !== null) return storageFlag;
+  // Production-locked flags can't be weakened by a shareable URL param or a
+  // localStorage write — those overrides are skipped entirely in production,
+  // and only the build-time env var / default are consulted.
+  const locked = FLAGS[name]?.productionLocked && process.env.NODE_ENV === 'production';
+  if (!locked) {
+    const urlFlag = readUrlFlag(name);
+    if (urlFlag !== null) return urlFlag;
+    const storageFlag = readStorageFlag(name);
+    if (storageFlag !== null) return storageFlag;
+  }
   const envFlag = readEnvFlag(name);
   if (envFlag !== null) return envFlag;
   return FLAGS[name]?.default ?? false;

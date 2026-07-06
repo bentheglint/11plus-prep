@@ -152,7 +152,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   // the server (access.entitlement, threaded via index.js → AppLoader).
   // A dev-only ?qa-tier override can force what the CLIENT displays/gates
   // on for QA, but it never reaches the server — see entitlementGating.js.
-  const freeTierFlagOn = isFeatureEnabled('freeTier');
+  const freeTierRolloutOn = isFeatureEnabled('freeTier');
   const effectiveEntitlement = useMemo(() => {
     const qaOverride = resolveQaTierOverride(window.location.search, process.env.NODE_ENV);
     return qaOverride || entitlement || null;
@@ -623,12 +623,17 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   };
 
   // Claims the free tier's one-set-per-day cap before starting Daily
-  // Learning. A no-op (zero new prod writes) when the freeTier flag is off.
+  // Learning. A no-op (zero new prod writes) when the rollout flag is off.
+  // Also requires the SERVER entitlement to actually be free-tier: the
+  // rollout flag only turns the free-tier UI on for a build, it must never
+  // be what decides a real user is capped — that's server truth via
+  // effectiveEntitlement, so trial/paid/comped users never hit the claim
+  // path even once the flag is on everywhere.
   // Enforces ONLY on an explicit daily_cap_reached — any network error, 5xx,
   // or unexpected response shape fails open and the set starts anyway
   // (see interpretDailyClaimResponse in utils/entitlementGating.js).
   const claimDailySetIfNeeded = async () => {
-    if (!freeTierFlagOn || !activeChildId) return 'allowed';
+    if (!freeTierRolloutOn || !activeChildId || effectiveEntitlement?.tier !== 'free') return 'allowed';
     try {
       const token = await getToken();
       const tutorApiUrl = process.env.REACT_APP_TUTOR_API_URL;
@@ -956,7 +961,18 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     setPreQuizTip(null);
   };
 
-  const handleRetry = () => {
+  const handleRetry = async () => {
+    // Daily sets are capped for free-tier users. Retry (from the Results
+    // screen) must go through the same claim gate as handleStartDaily —
+    // otherwise it's a second, unlimited route to fresh daily sets that
+    // never touches the cap. Focused-mode retries are unaffected.
+    if (quizMode === 'daily') {
+      const decision = await claimDailySetIfNeeded();
+      if (decision === 'cap_reached') {
+        setDailyCapReached(true);
+        return;
+      }
+    }
     // Generate fresh questions for a new session
     if (quizMode === 'daily') {
       setQuizQuestions(selectDailyQuestions());
@@ -1986,7 +2002,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         loadState={userData.loadState}
         onRetry={userData.retryLoad}
         entitlement={effectiveEntitlement}
-        freeTierActive={freeTierFlagOn}
+        freeTierActive={freeTierRolloutOn}
         onUpgrade={handleUpgrade}
       />
     );
@@ -2009,7 +2025,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onStudyToolkit={() => setCurrentView('studyToolkit')}
         onBack={handleHome}
         entitlement={effectiveEntitlement}
-        freeTierActive={freeTierFlagOn}
+        freeTierActive={freeTierRolloutOn}
         onUpgrade={handleUpgrade}
       />
     );
