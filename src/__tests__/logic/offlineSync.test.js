@@ -17,7 +17,7 @@
 
 import { createSyncQueue } from '../../utils/syncQueue';
 import { recomputeStreakFromHistory, countPracticeDaysInWeek, getToday } from '../../hooks/useStreaksAndPP';
-import { transformServerData } from '../../hooks/useD1Data';
+import { transformServerData, normaliseVersions } from '../../hooks/useD1Data';
 
 // ── Sentry mock (syncQueue imports Sentry) ──
 jest.mock('@sentry/react', () => ({
@@ -646,6 +646,74 @@ describe('lesson_id encoding and topic-keyed rebuild', () => {
       expect.any(Object)
     );
     consoleSpy.mockRestore();
+  });
+});
+
+// ─────────────────────────────────────────────
+// normaliseVersions — scalar version-map safety (JS-REACT-7)
+// ─────────────────────────────────────────────
+
+describe('normaliseVersions: no scalar version can ever be null/undefined', () => {
+  // Regression for Sentry JAVASCRIPT-REACT-7. Root cause: a partial/stale load
+  // (e.g. a cache-fallback snapshot lacking `preferences`) was assigned to the
+  // version map wholesale, leaving versionsRef.current.preferences === undefined.
+  // That undefined was enqueued as the op version and the server rejected it as
+  // "Missing version", dead-lettering the preferences write every session.
+
+  it('fills a missing key with 1 (the exact bug: versions without preferences)', () => {
+    const result = normaliseVersions({ streaks: 4, prepPoints: 7 }); // no preferences key
+    expect(result.preferences).toBe(1);
+    expect(result.streaks).toBe(4);
+    expect(result.prepPoints).toBe(7);
+  });
+
+  it('coerces an explicit null or undefined value to 1', () => {
+    expect(normaliseVersions({ preferences: null, streaks: undefined, prepPoints: 2 }))
+      .toEqual({ streaks: 1, prepPoints: 2, preferences: 1 });
+  });
+
+  it('preserves valid version numbers (uses ?? so a real 0 is never clobbered)', () => {
+    expect(normaliseVersions({ streaks: 12, prepPoints: 0, preferences: 9 }))
+      .toEqual({ streaks: 12, prepPoints: 0, preferences: 9 });
+  });
+
+  it('returns all-1 defaults for null/undefined/empty input', () => {
+    const expected = { streaks: 1, prepPoints: 1, preferences: 1 };
+    expect(normaliseVersions(null)).toEqual(expected);
+    expect(normaliseVersions(undefined)).toEqual(expected);
+    expect(normaliseVersions({})).toEqual(expected);
+  });
+
+  it('every returned value is a usable number — never null/undefined', () => {
+    for (const input of [null, undefined, {}, { streaks: 5 }, { preferences: null }]) {
+      const r = normaliseVersions(input);
+      for (const key of ['streaks', 'prepPoints', 'preferences']) {
+        expect(r[key]).not.toBeNull();
+        expect(r[key]).not.toBeUndefined();
+        expect(typeof r[key]).toBe('number');
+      }
+    }
+  });
+
+  it('returns exactly the known scalar version keys (tripwire for a future 4th type)', () => {
+    // normaliseVersions must cover every scalar mutable op that carries a single
+    // version (streaks, prepPoints, preferences — see batch.js MUTABLE_TYPES minus
+    // the topic-keyed topic-performance). If a new scalar version type is added,
+    // update BOTH normaliseVersions AND this list — otherwise the new type is
+    // silently dropped and reintroduces the JS-REACT-7 null-version dead-letter.
+    expect(Object.keys(normaliseVersions({})).sort())
+      .toEqual(['preferences', 'prepPoints', 'streaks']);
+  });
+
+  it('transformServerData routes through normaliseVersions (no preferences row → 1, not undefined)', () => {
+    const out = transformServerData({
+      quizResults: [], mockTestResults: [], questionResults: [], topicPerformance: [],
+      leitnerQueue: [], seenQuestions: [], practiceSessions: [], achievements: [], seenTips: [],
+      streaks: { version: 6 }, prepPoints: null, preferences: null, lessonHistory: [],
+    });
+    expect(out.versions.preferences).toBe(1);
+    expect(out.versions.prepPoints).toBe(1);
+    expect(out.versions.streaks).toBe(6);
   });
 });
 

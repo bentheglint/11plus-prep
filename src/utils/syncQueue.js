@@ -221,13 +221,13 @@ export function createSyncQueue(childId) {
      * Move ops with per-op server status 'error' to dead-letter store.
      * These are server-rejected (bad payload, invalid op) — retrying won't help.
      */
-    deadLetterErrors(errorUuids) {
+    deadLetterErrors(errorUuids, reason = 'server-rejected: per-op status was error') {
       const uuidSet = new Set(errorUuids);
       const queue = readQueue(childId);
       const live = [];
       for (const op of queue) {
         if (uuidSet.has(op.uuid)) {
-          deadLetter(childId, op, 'server-rejected: per-op status was error');
+          deadLetter(childId, op, reason);
         } else {
           live.push(op);
         }

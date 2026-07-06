@@ -138,3 +138,35 @@ Per `CLAUDE.md` Duplicated-Truth rules and `migration-playbook.md`:
 - `src/hooks/useD1Data.js` — null-version re-enqueue guard (~line 1153)
 - `workers/ai-tutor/tests/` — reproduction test + schemaParity coverage
 - backfill: one-off SQL (staging-tested), not a tracked migration unless wanted
+
+---
+
+## RESOLUTION (6 Jul 2026) — root cause was CLIENT-side, not the server CAS
+
+The 15 Jun fix (`8e0929f`) landed the server self-healing upsert + client
+null-version conflict-guard proposed above, but JS-REACT-7 kept firing — 22 of
+its 24 events post-date that commit (28 Jun–4 Jul). Re-investigation **with prod
+D1 access** proved the residual cause was different from the theory above:
+
+- Prod `preferences` is pristine: schema matches migrations exactly (`child_id`
+  PRIMARY KEY), **no** duplicate rows, **no** null-version rows, **every** child
+  has a preferences row, and all accounts are single-child. So no server
+  exception is possible — the upsert can only return `ok`/`conflict`/`duplicate`.
+  The **only** server path to `status:'error'` for preferences is
+  `clientVersion == null` → "Missing version" (`batch.js:306`).
+- **Client root cause:** `useD1Data.js` `populateState` assigned the version map
+  wholesale (`versionsRef.current = data.versions`). A partial/stale-cache load
+  lacking a `preferences` key left `versionsRef.current.preferences === undefined`;
+  the next session-start `saveLastSessionDate` enqueued `version: undefined` →
+  server "Missing version" → dead-letter, every session.
+- The Sentry reason string was **misleading**: `deadLetterErrors` hardcoded
+  "server-rejected: per-op status was error" and the permanent-4xx batch path
+  reused it — so it read like a per-op DB rejection when it was a null version.
+
+**Fix** (branch `fix/js-react-7-preferences-null-version`): exported
+`normaliseVersions` helper coerces every scalar version to an integer (`?? 1`),
+used in both `transformServerData` and `populateState`; `?? 1` guards at the
+preferences + streaks enqueue sites; de-overloaded the dead-letter reason
+(batch-4xx now distinct). Regression tests in `offlineSync.test.js`. Server code
+is unchanged — its null-version rejection is correct behaviour. Deploy still
+requires the safety protocol above (snapshot + staging + adversarial review).
