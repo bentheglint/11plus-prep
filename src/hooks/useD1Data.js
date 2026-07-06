@@ -1327,6 +1327,18 @@ export default function useD1Data(userName, getToken, childId, previewMode = fal
   // Validates that no component contains '::' (these are slugs).
   const recordLessonComplete = useCallback(({ topicKey, subConceptId, templateType }) => {
     if (!userName) return;
+    // Every component must be a non-empty string: the lessonId format below
+    // ("${topicKey}::${subConceptId}::${templateType}") depends on all three.
+    // In prod, subConceptId can arrive null (MicroLessonScreen initialises it to
+    // null and only sets it from a lesson result) — calling .includes on null
+    // threw and aborted the whole completion handler, leaving the child stuck on
+    // the lesson screen (Sentry JAVASCRIPT-REACT-C). Even if it hadn't thrown, a
+    // missing component would persist a malformed "topic::null::type" lessonId and
+    // corrupt lessonHistory. Bail cleanly so navigation still proceeds.
+    if (!topicKey || !subConceptId || !templateType) {
+      console.warn('[useD1Data] recordLessonComplete: missing component — skipping (lesson not recorded)', { topicKey, subConceptId, templateType });
+      return;
+    }
     if (topicKey.includes('::') || subConceptId.includes('::') || templateType.includes('::')) {
       console.warn('[useD1Data] recordLessonComplete: component contains "::" separator — lessonId will be malformed', { topicKey, subConceptId, templateType });
     }

@@ -616,6 +616,37 @@ describe('lesson_id encoding and topic-keyed rebuild', () => {
     );
     consoleSpy.mockRestore();
   });
+
+  // Mirrors the null-guard added to recordLessonComplete (useD1Data.js).
+  // Regression cover for Sentry JAVASCRIPT-REACT-C: subConceptId arrived null
+  // and null.includes('::') threw, aborting the completion handler. The guard
+  // must warn and bail (skip recording) rather than crash or persist a
+  // malformed "topic::null::type" lessonId.
+  it('warns and bails if a lessonId component is null/undefined/empty', () => {
+    const consoleSpy = jest.spyOn(console, 'warn').mockImplementation();
+
+    const record = ({ topicKey, subConceptId, templateType }) => {
+      if (!topicKey || !subConceptId || !templateType) {
+        console.warn('[useD1Data] recordLessonComplete: missing component — skipping (lesson not recorded)', { topicKey, subConceptId, templateType });
+        return false; // bailed — no lessonId formed, nothing enqueued
+      }
+      return true; // would proceed to build lessonId + enqueue
+    };
+
+    // The prod crash case: subConceptId null must not throw, must bail
+    expect(() => record({ topicKey: 'percentages', subConceptId: null, templateType: 'practice' })).not.toThrow();
+    expect(record({ topicKey: 'percentages', subConceptId: null, templateType: 'practice' })).toBe(false);
+    expect(record({ topicKey: 'percentages', subConceptId: undefined, templateType: 'practice' })).toBe(false);
+    expect(record({ topicKey: '', subConceptId: 'concept-a', templateType: 'practice' })).toBe(false);
+    // A fully-populated record still proceeds
+    expect(record({ topicKey: 'percentages', subConceptId: 'concept-a', templateType: 'practice' })).toBe(true);
+
+    expect(consoleSpy).toHaveBeenCalledWith(
+      expect.stringContaining('missing component'),
+      expect.any(Object)
+    );
+    consoleSpy.mockRestore();
+  });
 });
 
 // ─────────────────────────────────────────────
