@@ -20,6 +20,34 @@ export async function loadEntitlement(db, userId, now = new Date()) {
   return resolveEntitlements(account, { now });
 }
 
+// Loads + resolves the entitlement for an ARBITRARY account (a pupil a tutor
+// is viewing), not the caller's own. accounts.id IS the account_id a child's
+// row references (children.account_id → accounts.id), so this is the same
+// query as loadEntitlement, named to document that the id is a pupil's
+// account, resolved on the tutor's behalf. Underpins all tutor-side gating.
+export async function loadEntitlementForAccount(db, accountId, now = new Date()) {
+  return loadEntitlement(db, accountId, now);
+}
+
+// Tutor-side gating marker for one pupil, derived from their resolved
+// entitlement. FAIL OPEN: a genuine resolution failure (null entitlement —
+// broken/missing account row, never a real free pupil, who always resolves
+// cleanly to tier 'free') locks NOTHING, so a transient fault can never tell
+// a tutor that a PAYING pupil is on the free plan. A real free pupil resolves
+// deterministically to deepProgress:false / focusedLearning:false and IS
+// withheld — the leak stays closed. Attach this to tutor route payloads.
+export function pupilPlanMarker(entitlement) {
+  if (!entitlement) {
+    return { pupilPlan: 'unknown', deepProgressLocked: false, focusedLearningLocked: false };
+  }
+  const ent = entitlement.entitlements || {};
+  return {
+    pupilPlan: entitlement.tier,
+    deepProgressLocked: ent.deepProgress === false,
+    focusedLearningLocked: ent.focusedLearning === false,
+  };
+}
+
 // Standard 403 for an entitlement wall (AI Tutor, Mock). code is the stable
 // machine field the client branches on — never the human string.
 export function upgradeRequiredResponse(entitlement) {

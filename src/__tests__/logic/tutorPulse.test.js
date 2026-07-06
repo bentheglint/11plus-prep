@@ -161,3 +161,111 @@ describe('buildDashboardData — weak topics', () => {
     expect(roster.find(p => p.id === 'c1').weakest_accuracy).toBe(55);
   });
 });
+
+// ── Phase 0 Unit A: entitlement allow-list ──
+//
+// A free-tier pupil's deep performance data (accuracy, weakest topic) must
+// never reach their tutor's dashboard. entitledDeepChildIds is a Set of
+// child_ids resolved from billing state (see routes/tutor.js); anyone not
+// in the set gets those fields nulled and is excluded from cross-pupil
+// aggregates. undefined (the pre-Phase-0 shape) must keep treating everyone
+// as entitled so every test above (and every existing caller) is unaffected.
+describe('buildDashboardData — entitlement allow-list (deepProgressLocked)', () => {
+  const topicRows = [
+    { child_id: 'c1', topic_key: 'fractions', subject: 'maths', accuracy: 0.55, quiz_count: 2 },
+    { child_id: 'c2', topic_key: 'fractions', subject: 'maths', accuracy: 0.45, quiz_count: 2 },
+  ];
+
+  it('nulls accuracy_this_week and weakest_* for a non-entitled child, marks deepProgressLocked', () => {
+    const { roster } = buildDashboardData(baseInput({
+      topicRows,
+      entitledDeepChildIds: new Set(['c1']), // c2, c3 excluded
+    }));
+
+    const c1 = roster.find(p => p.id === 'c1');
+    expect(c1.deepProgressLocked).toBe(false);
+    expect(c1.accuracy_this_week).toBe(75);
+    expect(c1.weakest_topic).toBe('fractions');
+
+    const c2 = roster.find(p => p.id === 'c2');
+    expect(c2.deepProgressLocked).toBe(true);
+    expect(c2.accuracy_this_week).toBeNull();
+    expect(c2.weakest_topic).toBeNull();
+    expect(c2.weakest_subject).toBeNull();
+    expect(c2.weakest_accuracy).toBeNull();
+  });
+
+  it('excludes a non-entitled child from weak_topics[].pupils[] and the group accuracy', () => {
+    const { pulse } = buildDashboardData(baseInput({
+      topicRows,
+      entitledDeepChildIds: new Set(['c1']),
+    }));
+
+    // c2's row is dropped before the ≥2-pupil threshold is applied, so the
+    // topic no longer qualifies as a "weak topic" at all.
+    expect(pulse.weak_topics.map(t => t.topic_key)).not.toContain('fractions');
+  });
+
+  it('excludes a non-entitled child from avg_accuracy_this_week', () => {
+    const { pulse } = buildDashboardData(baseInput({
+      weeklyRows: [
+        { child_id: 'c1', quiz_count: 4, accuracy: 0.9 },
+        { child_id: 'c2', quiz_count: 1, accuracy: 0.1 }, // would drag the average down if counted
+      ],
+      entitledDeepChildIds: new Set(['c1']),
+    }));
+    expect(pulse.avg_accuracy_this_week).toBe(90);
+  });
+
+  it('a null accuracy_this_week (locked or no data) does not get sorted as worst', () => {
+    // Same days_inactive for both — only the accuracy tiebreaker differs.
+    const { roster } = buildDashboardData({
+      roster: [
+        { id: 'locked', display_name: 'Locked Pupil' },
+        { id: 'active', display_name: 'Active Pupil' },
+      ],
+      quizActiveRows: [
+        { child_id: 'locked', last_active: new Date(NOW - 2 * DAY).toISOString() },
+        { child_id: 'active', last_active: new Date(NOW - 2 * DAY).toISOString() },
+      ],
+      mockActiveRows: [],
+      lessonActiveRows: [],
+      weeklyRows: [{ child_id: 'active', quiz_count: 3, accuracy: 0.5 }],
+      topicRows: [],
+      overdueRows: [],
+      now: NOW,
+      entitledDeepChildIds: new Set(['active']),
+    });
+    const locked = roster.find(p => p.id === 'locked');
+    expect(locked.accuracy_this_week).toBeNull();
+    expect(locked.deepProgressLocked).toBe(true);
+  });
+
+  it('drift guard: an unentitled child never carries a raw billing column', () => {
+    // Simulates the real Worker query, which projects billing columns onto
+    // the roster rows so entitlement can be resolved with zero extra DB
+    // reads (see routes/tutor.js). Those must never reach the client.
+    const rosterWithBilling = [
+      {
+        id: 'c1', display_name: 'Evie', parent_name: 'Sarah',
+        account_id: 'acct-1', is_comped: 0, comp_source: null,
+        subscription_status: null, subscription_current_period_end: null,
+      },
+    ];
+    const { roster } = buildDashboardData(baseInput({
+      roster: rosterWithBilling,
+      entitledDeepChildIds: new Set(), // c1 locked
+    }));
+    const keys = Object.keys(roster[0]);
+    for (const billingKey of ['account_id', 'is_comped', 'comp_source', 'subscription_status', 'subscription_current_period_end']) {
+      expect(keys).not.toContain(billingKey);
+    }
+  });
+
+  it('entitledDeepChildIds undefined ⇒ everyone entitled (pre-Phase-0 behaviour preserved)', () => {
+    const { roster } = buildDashboardData(baseInput({ topicRows }));
+    expect(roster.find(p => p.id === 'c1').deepProgressLocked).toBe(false);
+    expect(roster.find(p => p.id === 'c2').deepProgressLocked).toBe(false);
+    expect(roster.find(p => p.id === 'c3').deepProgressLocked).toBe(false);
+  });
+});

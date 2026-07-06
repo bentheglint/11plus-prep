@@ -11,6 +11,8 @@
 
 import { json } from '../helpers.js';
 import { buildDashboardData } from '../../../src/utils/tutorPulse.js';
+import { loadEntitlementForAccount, pupilPlanMarker } from '../lib/entitlementGate.js';
+import { resolveEntitlements } from '../lib/entitlements.js';
 
 // ── Tutor code generation ──
 // 8 uppercase chars, no confusable characters (0, O, 1, I, L).
@@ -112,10 +114,16 @@ export async function handleTutorRoutes(request, env, userId, path) {
     ).bind(userId).first();
     if (!tutor) return json({ error: 'No tutor profile found' }, 404);
 
-    // Roster
+    // Roster — also project the billing columns resolveEntitlements() needs
+    // so each pupil's entitlement can be resolved in-JS with ZERO extra DB
+    // reads (this is a roster of many pupils; loadEntitlementForAccount's
+    // one-read-per-pupil pattern would be an N+1 here).
     const { results: roster } = await db.prepare(`
       SELECT c.id, c.display_name, c.year_group, c.target_school,
-             pt.joined_at, a.name AS parent_name
+             pt.joined_at, a.name AS parent_name,
+             a.id AS account_id, a.created_at AS account_created_at,
+             a.is_comped, a.comp_source, a.subscription_status,
+             a.subscription_current_period_end
       FROM pupil_tutors pt
       JOIN children c ON c.id = pt.child_id
       JOIN accounts a ON a.id = c.account_id
@@ -125,6 +133,27 @@ export async function handleTutorRoutes(request, env, userId, path) {
 
     if (roster.length === 0) {
       return json({ tutor, roster: [], pulse: null });
+    }
+
+    // Batch-resolve which pupils are entitled to deep progress data. Pure
+    // (no DB read) — buildDashboardData nulls out accuracy/weakest-topic
+    // fields and excludes non-entitled children from cross-pupil aggregates
+    // for anyone not in this set. tutorPulse.js builds the roster response
+    // from an explicit field allow-list, so the billing columns above never
+    // reach the client.
+    const entitlementNow = new Date();
+    const entitledDeepChildIds = new Set();
+    for (const row of roster) {
+      const acct = {
+        id: row.account_id,
+        created_at: row.account_created_at,
+        is_comped: row.is_comped,
+        comp_source: row.comp_source,
+        subscription_status: row.subscription_status,
+        subscription_current_period_end: row.subscription_current_period_end,
+      };
+      const marker = pupilPlanMarker(resolveEntitlements(acct, { now: entitlementNow }));
+      if (!marker.deepProgressLocked) entitledDeepChildIds.add(row.id);
     }
 
     // Fetch all per-pupil data in parallel
@@ -203,6 +232,7 @@ export async function handleTutorRoutes(request, env, userId, path) {
       topicRows: topicRows.results || [],
       overdueRows: overdueRows.results || [],
       now: Date.now(),
+      entitledDeepChildIds,
     });
 
     return json({ tutor, roster: enrichedRoster, pulse });
@@ -289,33 +319,25 @@ export async function handleTutorRoutes(request, env, userId, path) {
     ).bind(tutorId, childId).first();
     if (!link) return json({ error: 'Child not on roster' }, 404);
 
-    const [child, quizResults, topicPerf, assignRecipients, notesCount, questionResults, mockTestHistory, practiceSessions] = await Promise.all([
-      // Child profile + parent account name
-      db.prepare(`
-        SELECT c.id, c.display_name, c.year_group, c.target_school, c.created_at,
-               a.name AS account_name, a.email AS account_email
-        FROM children c
-        JOIN accounts a ON a.id = c.account_id
-        WHERE c.id = ?
-      `).bind(childId).first(),
+    // Child profile + parent account name + the account_id needed to resolve
+    // THIS pupil's own entitlement — a free pupil's deep performance data
+    // must never reach their tutor. See lib/entitlementGate.js.
+    const childRow = await db.prepare(`
+      SELECT c.id, c.display_name, c.year_group, c.target_school, c.created_at,
+             a.id AS account_id, a.name AS account_name, a.email AS account_email
+      FROM children c
+      JOIN accounts a ON a.id = c.account_id
+      WHERE c.id = ?
+    `).bind(childId).first();
 
-      // Last 50 quiz results (newest first)
-      db.prepare(`
-        SELECT topic_key, subject, score, total, completed_at, session_id
-        FROM quiz_results
-        WHERE child_id = ?
-        ORDER BY completed_at DESC
-        LIMIT 50
-      `).bind(childId).all(),
+    const entitlement = await loadEntitlementForAccount(db, childRow?.account_id);
+    const marker = pupilPlanMarker(entitlement);
+    const deepAllowed = !marker.deepProgressLocked;
 
-      // Topic mastery summary
-      db.prepare(`
-        SELECT topic_key, subject, data
-        FROM topic_performance
-        WHERE child_id = ?
-      `).bind(childId).all(),
-
-      // Assignment recipients for this (tutor × child) pair
+    // Basic data — fetched regardless of plan. assignRecipients needs the
+    // row-level status/dates even for a locked pupil; its question_results
+    // column (deep) is stripped below.
+    const [assignRecipients, notesCount] = await Promise.all([
       db.prepare(`
         SELECT ar.id, ar.status, ar.assigned_at, ar.completed_at, ar.score,
                ar.question_results,
@@ -333,95 +355,147 @@ export async function handleTutorRoutes(request, env, userId, path) {
       db.prepare(
         'SELECT COUNT(*) as n FROM tutor_notes WHERE tutor_id = ? AND child_id = ?'
       ).bind(tutorId, childId).first(),
-
-      // Per-question results for useMastery + quiz drill-down (newest first).
-      // NO LIMIT: exam readiness must score over the pupil's FULL history, exactly
-      // like the child's own app (bulk load is unbounded). A LIMIT here truncates
-      // older topics to zero and drags every subject's readiness down a band, so
-      // the tutor view disagreed with the parent/child view (fixed 29 Jun 2026).
-      db.prepare(`
-        SELECT id, question_id, topic_key, subject, is_correct, time_ms, attempted_at,
-               session_id, selected_answer
-        FROM question_results
-        WHERE child_id = ?
-        ORDER BY attempted_at DESC
-      `).bind(childId).all(),
-
-      // Mock test history
-      db.prepare(`
-        SELECT subject, percentage, completed_at
-        FROM mock_test_results
-        WHERE child_id = ?
-        ORDER BY completed_at DESC
-      `).bind(childId).all(),
-
-      // Practice sessions — needed for the consistency bonus in useMastery.getExamReadiness
-      db.prepare(`
-        SELECT session_date, data
-        FROM practice_sessions
-        WHERE child_id = ?
-        ORDER BY session_date DESC
-      `).bind(childId).all(),
     ]);
 
-    const parsedTopicPerf = topicPerf.results.map(r => ({
-      topicKey: r.topic_key, subject: r.subject,
-      data: typeof r.data === 'string' ? JSON.parse(r.data) : r.data,
-    }));
+    // Deep data — only fetched for an entitled pupil. Skipping the queries
+    // entirely for a free pupil is both the privacy fix and a small perf win
+    // (never fetch what we won't return).
+    let quizResults = { results: [] };
+    let topicPerf = { results: [] };
+    let questionResults = { results: [] };
+    let mockTestHistory = { results: [] };
+    let practiceSessions = { results: [] };
 
-    // Map question_results to the shape useMastery + QuizDetailScreen expect
-    const mappedQuestionResults = (questionResults.results || []).map(r => {
-      let selectedAnswer = null;
-      if (r.selected_answer) {
-        try { selectedAnswer = JSON.parse(r.selected_answer); } catch { selectedAnswer = null; }
-      }
-      return {
-        id: r.id,
-        date: r.attempted_at ? r.attempted_at.replace(' ', 'T') : null,
+    if (deepAllowed) {
+      [quizResults, topicPerf, questionResults, mockTestHistory, practiceSessions] = await Promise.all([
+        // Last 50 quiz results (newest first)
+        db.prepare(`
+          SELECT topic_key, subject, score, total, completed_at, session_id
+          FROM quiz_results
+          WHERE child_id = ?
+          ORDER BY completed_at DESC
+          LIMIT 50
+        `).bind(childId).all(),
+
+        // Topic mastery summary
+        db.prepare(`
+          SELECT topic_key, subject, data
+          FROM topic_performance
+          WHERE child_id = ?
+        `).bind(childId).all(),
+
+        // Per-question results for useMastery + quiz drill-down (newest first).
+        // NO LIMIT: exam readiness must score over the pupil's FULL history, exactly
+        // like the child's own app (bulk load is unbounded). A LIMIT here truncates
+        // older topics to zero and drags every subject's readiness down a band, so
+        // the tutor view disagreed with the parent/child view (fixed 29 Jun 2026).
+        db.prepare(`
+          SELECT id, question_id, topic_key, subject, is_correct, time_ms, attempted_at,
+                 session_id, selected_answer
+          FROM question_results
+          WHERE child_id = ?
+          ORDER BY attempted_at DESC
+        `).bind(childId).all(),
+
+        // Mock test history
+        db.prepare(`
+          SELECT subject, percentage, completed_at
+          FROM mock_test_results
+          WHERE child_id = ?
+          ORDER BY completed_at DESC
+        `).bind(childId).all(),
+
+        // Practice sessions — needed for the consistency bonus in useMastery.getExamReadiness
+        db.prepare(`
+          SELECT session_date, data
+          FROM practice_sessions
+          WHERE child_id = ?
+          ORDER BY session_date DESC
+        `).bind(childId).all(),
+      ]);
+    }
+
+    // Assignment recipients minus question_results (deep) for a locked pupil
+    const mappedAssignmentRecipients = (assignRecipients.results || []).map(r => {
+      if (deepAllowed) return r;
+      const { question_results, ...basic } = r;
+      return basic;
+    });
+
+    const response = {
+      child: childRow ? {
+        id: childRow.id,
+        display_name: childRow.display_name,
+        year_group: childRow.year_group,
+        target_school: childRow.target_school,
+        created_at: childRow.created_at,
+        account_name: childRow.account_name,
+        account_email: childRow.account_email,
+        joinedAt: link.joined_at,
+      } : null,
+      assignmentRecipients: mappedAssignmentRecipients,
+      notesCount: notesCount?.n || 0,
+      pupilPlan: marker.pupilPlan,
+      deepProgressLocked: marker.deepProgressLocked,
+    };
+
+    if (deepAllowed) {
+      const parsedTopicPerf = topicPerf.results.map(r => ({
+        topicKey: r.topic_key, subject: r.subject,
+        data: typeof r.data === 'string' ? JSON.parse(r.data) : r.data,
+      }));
+
+      // Map question_results to the shape useMastery + QuizDetailScreen expect
+      const mappedQuestionResults = (questionResults.results || []).map(r => {
+        let selectedAnswer = null;
+        if (r.selected_answer) {
+          try { selectedAnswer = JSON.parse(r.selected_answer); } catch { selectedAnswer = null; }
+        }
+        return {
+          id: r.id,
+          date: r.attempted_at ? r.attempted_at.replace(' ', 'T') : null,
+          topicKey: r.topic_key,
+          subject: r.subject,
+          correct: !!r.is_correct,
+          timeSpentMs: r.time_ms || 0,
+          questionId: r.question_id,
+          sessionId: r.session_id || null,
+          selectedAnswer,
+        };
+      });
+
+      // Map mock_test_results to the shape useMastery expects
+      const mappedMockHistory = (mockTestHistory.results || []).map(r => ({
+        subject: r.subject,
+        percentage: r.percentage,
+        date: r.completed_at,
+      }));
+
+      // Map practice_sessions to the practiceLog shape useMastery expects
+      // (mirrors useD1Data: spread data JSON, override date with session_date)
+      const mappedPracticeLog = (practiceSessions.results || []).map(r => {
+        let parsed = {};
+        if (r.data) { try { parsed = JSON.parse(r.data); } catch { parsed = {}; } }
+        return { ...parsed, date: r.session_date };
+      });
+
+      const mappedQuizResults = (quizResults.results || []).map(r => ({
         topicKey: r.topic_key,
         subject: r.subject,
-        correct: !!r.is_correct,
-        timeSpentMs: r.time_ms || 0,
-        questionId: r.question_id,
+        score: r.score,
+        total: r.total,
+        completedAt: r.completed_at ? r.completed_at.replace(' ', 'T') : null,
         sessionId: r.session_id || null,
-        selectedAnswer,
-      };
-    });
+      }));
 
-    // Map mock_test_results to the shape useMastery expects
-    const mappedMockHistory = (mockTestHistory.results || []).map(r => ({
-      subject: r.subject,
-      percentage: r.percentage,
-      date: r.completed_at,
-    }));
+      response.quizResults = mappedQuizResults;
+      response.topicPerformance = parsedTopicPerf;
+      response.questionResults = mappedQuestionResults;
+      response.mockTestHistory = mappedMockHistory;
+      response.practiceLog = mappedPracticeLog;
+    }
 
-    // Map practice_sessions to the practiceLog shape useMastery expects
-    // (mirrors useD1Data: spread data JSON, override date with session_date)
-    const mappedPracticeLog = (practiceSessions.results || []).map(r => {
-      let parsed = {};
-      if (r.data) { try { parsed = JSON.parse(r.data); } catch { parsed = {}; } }
-      return { ...parsed, date: r.session_date };
-    });
-
-    const mappedQuizResults = (quizResults.results || []).map(r => ({
-      topicKey: r.topic_key,
-      subject: r.subject,
-      score: r.score,
-      total: r.total,
-      completedAt: r.completed_at ? r.completed_at.replace(' ', 'T') : null,
-      sessionId: r.session_id || null,
-    }));
-
-    return json({
-      child: { ...child, joinedAt: link.joined_at },
-      quizResults: mappedQuizResults,
-      topicPerformance: parsedTopicPerf,
-      assignmentRecipients: assignRecipients.results,
-      notesCount: notesCount?.n || 0,
-      questionResults: mappedQuestionResults,
-      mockTestHistory: mappedMockHistory,
-      practiceLog: mappedPracticeLog,
-    });
+    return json(response);
   }
 
   return null;

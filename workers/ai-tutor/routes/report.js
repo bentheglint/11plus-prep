@@ -12,6 +12,7 @@
 
 import { json } from '../helpers.js';
 import { getAllSubjectReadiness } from '../lib/mastery.js';
+import { loadEntitlementForAccount, pupilPlanMarker } from '../lib/entitlementGate.js';
 
 // ── Mastery algorithm — mirrors src/hooks/useMastery.js ──
 
@@ -89,12 +90,34 @@ export async function handleReportRoutes(request, env, userId, path) {
   ).bind(userId, childId).first();
   if (!link) return json({ error: 'Child not on roster' }, 404);
 
-  const [child, questionResults, quizResults, mockResults, assignStats] = await Promise.all([
-    db.prepare(`
-      SELECT c.id, c.display_name, c.year_group, c.target_school
-      FROM children c WHERE c.id = ?
-    `).bind(childId).first(),
+  // Child profile + account_id, resolved BEFORE any deep query runs — a free
+  // pupil's report must short-circuit here so the expensive per-question
+  // history queries below never execute. See lib/entitlementGate.js.
+  const child = await db.prepare(`
+    SELECT c.id, c.display_name, c.year_group, c.target_school, a.id AS account_id
+    FROM children c
+    JOIN accounts a ON a.id = c.account_id
+    WHERE c.id = ?
+  `).bind(childId).first();
 
+  const entitlement = await loadEntitlementForAccount(db, child?.account_id);
+  const marker = pupilPlanMarker(entitlement);
+
+  if (marker.deepProgressLocked) {
+    return json({
+      locked: true,
+      code: 'deep_progress_locked',
+      pupilPlan: marker.pupilPlan,
+      child: child ? {
+        id: child.id,
+        displayName: child.display_name,
+        yearGroup: child.year_group,
+        targetSchool: child.target_school,
+      } : null,
+    });
+  }
+
+  const [questionResults, quizResults, mockResults, assignStats] = await Promise.all([
     db.prepare(`
       SELECT topic_key, subject, is_correct, attempted_at
       FROM question_results
@@ -252,6 +275,7 @@ export async function handleReportRoutes(request, env, userId, path) {
 
   return json({
     generatedAt: new Date().toISOString(),
+    locked: false,
     tutorName: tutor.display_name,
     child: {
       name: child.display_name,

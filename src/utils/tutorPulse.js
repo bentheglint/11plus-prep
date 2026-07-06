@@ -29,7 +29,16 @@ export function buildDashboardData({
   topicRows,
   overdueRows,
   now,
+  // Set of child_ids entitled to deep progress data (accuracy, weakest
+  // topic). undefined ⇒ treat everyone as entitled — this is the pre-Phase-0
+  // behaviour and keeps every existing caller/test (which doesn't know about
+  // entitlements) unchanged. A free pupil's tutor must not see their
+  // performance data — see lib/entitlementGate.js / routes/tutor.js.
+  entitledDeepChildIds,
 }) {
+  const isEntitled = (childId) =>
+    entitledDeepChildIds === undefined || entitledDeepChildIds.has(childId);
+
   const quizActiveMap = Object.fromEntries((quizActiveRows || []).map(r => [r.child_id, r.last_active]));
   const mockActiveMap = Object.fromEntries((mockActiveRows || []).map(r => [r.child_id, r.last_active]));
   const lessonActiveMap = Object.fromEntries((lessonActiveRows || []).map(r => [r.child_id, r.last_active]));
@@ -43,9 +52,15 @@ export function buildDashboardData({
     overdueCountMap[row.child_id] = (overdueCountMap[row.child_id] || 0) + 1;
   }
 
+  // Deep field: drop non-entitled children's rows before they ever reach the
+  // weakest-topic map or the cross-pupil weak-topics aggregation below, so a
+  // free pupil's topic accuracy can't leak either per-pupil or via a group
+  // average.
+  const entitledTopicRows = (topicRows || []).filter(row => isEntitled(row.child_id));
+
   // Weakest topic per child — topicRows ordered accuracy ASC per child, take first
   const weakestTopicMap = {};
-  for (const row of (topicRows || [])) {
+  for (const row of entitledTopicRows) {
     if (!weakestTopicMap[row.child_id]) weakestTopicMap[row.child_id] = row;
   }
 
@@ -58,27 +73,43 @@ export function buildDashboardData({
     const weekly = weeklyMap[child.id] || null;
     const weakest = weakestTopicMap[child.id] || null;
     const overdueCount = overdueCountMap[child.id] || 0;
+    const entitled = isEntitled(child.id);
 
+    // Explicit allow-list, not a `...child` spread — the roster query in
+    // routes/tutor.js also carries billing columns (is_comped,
+    // subscription_status, ...) needed to resolve entitlements in JS; those
+    // must never reach the client, entitled pupil or not.
     return {
-      ...child,
+      id: child.id,
+      display_name: child.display_name,
+      year_group: child.year_group,
+      target_school: child.target_school,
+      joined_at: child.joined_at,
+      parent_name: child.parent_name,
       last_active: lastActive,
       days_inactive: daysInactive,
       quizzes_this_week: weekly?.quiz_count || 0,
-      accuracy_this_week: weekly ? Math.round(weekly.accuracy * 100) : null,
-      weakest_topic: weakest?.topic_key || null,
-      weakest_subject: weakest?.subject || null,
-      weakest_accuracy: weakest ? Math.round(weakest.accuracy * 100) : null,
+      accuracy_this_week: entitled && weekly ? Math.round(weekly.accuracy * 100) : null,
+      weakest_topic: entitled ? (weakest?.topic_key || null) : null,
+      weakest_subject: entitled ? (weakest?.subject || null) : null,
+      weakest_accuracy: entitled && weakest ? Math.round(weakest.accuracy * 100) : null,
       overdue_assignments: overdueCount,
       assignment_status: overdueCount > 0 ? 'overdue' : weekly ? 'on_track' : 'none',
+      deepProgressLocked: !entitled,
     };
   });
 
-  // Sort: most at-risk first (inactive longest, then by accuracy)
+  // Sort: most at-risk first (inactive longest, then by accuracy). A null
+  // accuracy_this_week (no quizzes yet, OR a locked free pupil) must not be
+  // treated as "worst possible" — it just means there's no reliable accuracy
+  // signal, so fall through to the existing order rather than forcing it to
+  // the top.
   enrichedRoster.sort((a, b) => {
     const aInactive = a.days_inactive ?? 999;
     const bInactive = b.days_inactive ?? 999;
     if (aInactive !== bInactive) return bInactive - aInactive;
-    return (a.accuracy_this_week ?? -1) - (b.accuracy_this_week ?? -1);
+    if (a.accuracy_this_week === null || b.accuracy_this_week === null) return 0;
+    return a.accuracy_this_week - b.accuracy_this_week;
   });
 
   const activeThisWeek = enrichedRoster.filter(c => c.days_inactive !== null && c.days_inactive <= 7).length;
@@ -108,7 +139,7 @@ export function buildDashboardData({
   // keep topics ≥2 pupils have attempted, weakest 3 first, each with its
   // per-pupil breakdown (names resolve from the roster client-side by id).
   const byTopic = {};
-  for (const row of (topicRows || [])) {
+  for (const row of entitledTopicRows) {
     if (!byTopic[row.topic_key]) {
       byTopic[row.topic_key] = { subject: row.subject, total: 0, pupils: [] };
     }
