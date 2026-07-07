@@ -245,20 +245,32 @@ describe('buildDashboardData — entitlement allow-list (deepProgressLocked)', (
     // Simulates the real Worker query, which projects billing columns onto
     // the roster rows so entitlement can be resolved with zero extra DB
     // reads (see routes/tutor.js). Those must never reach the client.
+    // Column set matches the SELECT in routes/tutor.js exactly (id,
+    // account_id, account_created_at, is_comped, comp_source,
+    // subscription_status, subscription_current_period_end).
     const rosterWithBilling = [
       {
         id: 'c1', display_name: 'Evie', parent_name: 'Sarah',
-        account_id: 'acct-1', is_comped: 0, comp_source: null,
+        account_id: 'acct-1', account_created_at: '2026-01-01 00:00:00',
+        is_comped: 0, comp_source: null,
         subscription_status: null, subscription_current_period_end: null,
       },
+      // A normal pupil alongside, to prove the allow-list isn't just
+      // stripping fields off the locked row specifically.
+      { id: 'c2', display_name: 'James', parent_name: 'Mark' },
     ];
     const { roster } = buildDashboardData(baseInput({
       roster: rosterWithBilling,
-      entitledDeepChildIds: new Set(), // c1 locked
+      entitledDeepChildIds: new Set(), // both locked
     }));
-    const keys = Object.keys(roster[0]);
-    for (const billingKey of ['account_id', 'is_comped', 'comp_source', 'subscription_status', 'subscription_current_period_end']) {
-      expect(keys).not.toContain(billingKey);
+    const billingKeys = ['account_id', 'account_created_at', 'is_comped', 'comp_source', 'subscription_status', 'subscription_current_period_end'];
+    for (const row of roster) {
+      const keys = Object.keys(row);
+      for (const billingKey of billingKeys) {
+        expect(keys).not.toContain(billingKey);
+      }
+      // The one entitlement-derived field that IS meant to reach the client.
+      expect(keys).toContain('deepProgressLocked');
     }
   });
 
