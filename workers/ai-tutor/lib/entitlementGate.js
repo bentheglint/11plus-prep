@@ -7,17 +7,26 @@
 // routes/batch.js, routes/data.js for the call sites this step wires up.
 
 import { resolveEntitlements } from './entitlements.js';
+import { isEnforcementActive } from './killSwitch.js';
 import { json } from '../helpers.js';
 
 // Loads the account row and resolves its entitlement. Returns null if no
 // account row (caller returns 404, consistent with GET /api/account).
+//
+// Also reads the freemium kill-switch flag (lib/killSwitch.js) off the SAME
+// db handle and threads it through to resolveEntitlements() — this is the
+// ONE place that decision is made, so every one of this module's ~9 route
+// call sites reverts to pre-freemium behaviour automatically the moment the
+// switch is flipped, with no per-route change needed. No env threading
+// required: the flag lives in D1, and the loader already has the db handle.
 export async function loadEntitlement(db, userId, now = new Date()) {
   const account = await db.prepare(
     `SELECT id, created_at, is_comped, comp_source, subscription_status, subscription_current_period_end
        FROM accounts WHERE id = ?`
   ).bind(userId).first();
   if (!account) return null;
-  return resolveEntitlements(account, { now });
+  const enforcementActive = await isEnforcementActive(db);
+  return resolveEntitlements(account, { now, enforcementActive });
 }
 
 // Loads + resolves the entitlement for an ARBITRARY account (a pupil a tutor

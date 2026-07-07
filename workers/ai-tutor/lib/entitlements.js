@@ -11,6 +11,10 @@
 // the existing (untouched) `access.*` fields. No gating logic changes.
 //
 // Resolution ladder — FIRST MATCH WINS:
+//   0. enforcementActive === false (kill-switch)          → unrestricted (FULL)
+//      Short-circuits ABOVE every other step — see lib/killSwitch.js. This
+//      is the emergency escape hatch: when ops has flipped the D1 flag off,
+//      NOTHING below matters, not even is_comped/subscription/trial state.
 //   1. is_comped                                          → comped   (FULL)
 //   2. subscription_status === 'active'                   → paid     (FULL)
 //   3. subscription_status === 'trialing'                 → paid     (FULL)
@@ -76,6 +80,7 @@ export const ENTITLEMENT_REASONS = Object.freeze({
   APP_TRIAL: 'app_trial',
   FREE_POST_TRIAL: 'free_post_trial',
   CREATED_AT_UNPARSEABLE: 'created_at_unparseable',
+  ENFORCEMENT_DISABLED: 'enforcement_disabled',
 });
 
 export const ENTITLEMENT_KEYS = Object.freeze([
@@ -137,9 +142,35 @@ function freePayload() {
  * @param {object|null} [options.tutorProfile] - truthy if the account has a
  *   tutor profile row. Tutor Mode is free/independent of the practice tier.
  * @param {Date} [options.now] - injected clock, defaults to `new Date()`.
+ * @param {boolean} [options.enforcementActive] - the freemium kill-switch
+ *   flag (lib/killSwitch.js), PASSED IN — this function stays pure and never
+ *   reads the flag itself. Defaults to true (enforce) so any caller that
+ *   forgets to pass it gets today's behaviour, never an accidental giveaway.
+ *   false short-circuits the entire ladder below and grants full access.
  * @returns {object} entitlement resolution — see module doc for shape.
  */
-export function resolveEntitlements(account, { tutorProfile = null, now = new Date() } = {}) {
+export function resolveEntitlements(account, { tutorProfile = null, now = new Date(), enforcementActive = true } = {}) {
+  // Ladder step 0 — kill-switch. Sits ABOVE everything else, including
+  // is_comped: when ops has disengaged enforcement, every account is fully
+  // entitled regardless of billing state. Tier 'unrestricted' is deliberate
+  // (not 'free', so the client's daily-claim gate — which keys off
+  // tier === 'free' — treats this as uncapped; not 'trial', so no trial
+  // banner shows).
+  if (enforcementActive === false) {
+    return {
+      tier: 'unrestricted',
+      reason: ENTITLEMENT_REASONS.ENFORCEMENT_DISABLED,
+      billingNote: null,
+      fullAccess: true,
+      dailySetCap: null,
+      entitlements: { ...FULL_ENTITLEMENTS },
+      tutorProductAccess: !!tutorProfile,
+      trialDaysRemaining: 0,
+      subscriptionStatus: (account && account.subscription_status) || null,
+      enforcementActive: false,
+    };
+  }
+
   const isComped = !!(account && account.is_comped);
   const subStatus = (account && account.subscription_status) || null;
   const periodEnd = account ? account.subscription_current_period_end : null;
@@ -219,5 +250,6 @@ export function resolveEntitlements(account, { tutorProfile = null, now = new Da
     tutorProductAccess,
     trialDaysRemaining,
     subscriptionStatus: subStatus,
+    enforcementActive: true,
   };
 }

@@ -13,6 +13,7 @@
 
 import { json, canonicalEmail } from '../helpers.js';
 import { resolveEntitlements } from '../lib/entitlements.js';
+import { isEnforcementActive } from '../lib/killSwitch.js';
 
 export async function handleAccountRoutes(request, env, userId, path) {
   const db = env.DB;
@@ -88,8 +89,12 @@ export async function handleAccountRoutes(request, env, userId, path) {
     const tutorProfileRow = await db.prepare('SELECT 1 FROM tutors WHERE id = ?')
       .bind(userId).first();
 
-    const entitlement = resolveEntitlements(account, { tutorProfile: tutorProfileRow });
-    console.log(JSON.stringify({ evt: 'entitlement_resolved', tier: entitlement.tier, reason: entitlement.reason }));
+    // Freemium kill-switch (lib/killSwitch.js) — read on the SAME db handle
+    // used above. Fail-safe: any error/missing row/missing table reads as
+    // enforcing (true), so this can never accidentally grant full access.
+    const enforcementActive = await isEnforcementActive(db);
+    const entitlement = resolveEntitlements(account, { tutorProfile: tutorProfileRow, enforcementActive });
+    console.log(JSON.stringify({ evt: 'entitlement_resolved', tier: entitlement.tier, reason: entitlement.reason, enforcementActive }));
 
     const adminIds = (env.ADMIN_USER_IDS || '').split(',').map(s => s.trim()).filter(Boolean);
     const access = {

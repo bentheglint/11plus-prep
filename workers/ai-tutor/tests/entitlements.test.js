@@ -340,6 +340,52 @@ describe('resolveEntitlements — tutorProductAccess is independent of practice 
   });
 });
 
+describe('resolveEntitlements — enforcementActive short-circuit (kill-switch)', () => {
+  it('enforcementActive: false → tier unrestricted, full access, even for a would-be-free account', () => {
+    const freeAccount = baseAccount({ subscription_status: null, created_at: daysAgoISO(60) });
+    // Sanity: this account would resolve to free under normal enforcement.
+    expect(resolveEntitlements(freeAccount, { now: NOW }).tier).toBe('free');
+
+    const result = resolveEntitlements(freeAccount, { now: NOW, enforcementActive: false });
+    expect(result.tier).toBe('unrestricted');
+    expect(result.reason).toBe(ENTITLEMENT_REASONS.ENFORCEMENT_DISABLED);
+    expect(result.fullAccess).toBe(true);
+    expect(result.dailySetCap).toBeNull();
+    expect(result.entitlements).toEqual(FULL_ENTITLEMENTS);
+    expect(result.enforcementActive).toBe(false);
+    expect(result.trialDaysRemaining).toBe(0);
+    expect(result.billingNote).toBeNull();
+  });
+
+  it('enforcementActive: false short-circuits ABOVE is_comped too — still tier unrestricted, not comped', () => {
+    const compedAccount = baseAccount({ is_comped: 1, comp_source: 'invite:FOO' });
+    const result = resolveEntitlements(compedAccount, { now: NOW, enforcementActive: false });
+    expect(result.tier).toBe('unrestricted');
+    expect(result.reason).toBe(ENTITLEMENT_REASONS.ENFORCEMENT_DISABLED);
+  });
+
+  it('enforcementActive: false still passes through tutorProductAccess and subscriptionStatus', () => {
+    const account = baseAccount({ subscription_status: 'past_due', created_at: daysAgoISO(60) });
+    const result = resolveEntitlements(account, { now: NOW, enforcementActive: false, tutorProfile: { id: 't1' } });
+    expect(result.tutorProductAccess).toBe(true);
+    expect(result.subscriptionStatus).toBe('past_due');
+  });
+
+  it('enforcementActive omitted → defaults to true (normal ladder), and normal-path results carry enforcementActive: true', () => {
+    const account = baseAccount({ subscription_status: 'active' });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).toBe('paid');
+    expect(result.enforcementActive).toBe(true);
+  });
+
+  it('enforcementActive: true is explicitly the same as the default', () => {
+    const account = baseAccount({ subscription_status: null, created_at: daysAgoISO(60) });
+    const explicit = resolveEntitlements(account, { now: NOW, enforcementActive: true });
+    const defaulted = resolveEntitlements(account, { now: NOW });
+    expect(explicit).toEqual(defaulted);
+  });
+});
+
 describe('resolveEntitlements — subscriptionStatus passthrough', () => {
   it('passes through the raw status, or null when absent', () => {
     expect(resolveEntitlements(baseAccount({ subscription_status: 'active' }), { now: NOW }).subscriptionStatus).toBe('active');
@@ -363,6 +409,7 @@ describe('parity pin — reason codes and entitlement keys', () => {
     'app_trial',
     'free_post_trial',
     'created_at_unparseable',
+    'enforcement_disabled',
   ];
 
   const EXPECTED_ENTITLEMENT_KEYS = [

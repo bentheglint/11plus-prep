@@ -1,6 +1,7 @@
 import { TEST_KID, TEST_PRIVATE_JWK } from './test-keys.js';
 import migration0016 from '../migrations/0016_tutor_invites.sql?raw';
 import migration0017 from '../migrations/0017_daily_claims.sql?raw';
+import migration0018 from '../migrations/0018_app_settings.sql?raw';
 
 export const CLERK_DOMAIN = 'test.clerk.11plus.dev';
 
@@ -234,10 +235,27 @@ export async function createSchema(db) {
   for (const sql of migration0017Stmts) {
     await db.prepare(sql).run();
   }
+
+  // Same pattern for 0018: derive the app_settings test table (the freemium
+  // kill-switch flag row lives here) from the real migration file.
+  const migration0018Stmts = migration0018
+    .split(/;\s*\n/)
+    .map(s =>
+      s
+        .split('\n')
+        .filter(line => !line.trim().startsWith('--'))
+        .join('\n')
+        .trim()
+    )
+    .filter(Boolean);
+  for (const sql of migration0018Stmts) {
+    await db.prepare(sql).run();
+  }
 }
 
 export async function cleanDb(db) {
   await db.batch([
+    db.prepare('DELETE FROM app_settings'),
     db.prepare('DELETE FROM stripe_webhook_events'),
     db.prepare('DELETE FROM messages'),
     db.prepare('DELETE FROM conversations'),

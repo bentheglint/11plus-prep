@@ -14,6 +14,7 @@ import { describe, it, expect, beforeAll, afterEach } from 'vitest';
 import { env } from 'cloudflare:test';
 import worker from '../index.js';
 import { loadEntitlement } from '../lib/entitlementGate.js';
+import { _resetEnforcementCache } from '../lib/killSwitch.js';
 import {
   makeAuthToken,
   makeRequest,
@@ -28,6 +29,7 @@ beforeAll(async () => {
 
 afterEach(async () => {
   await cleanDb(env.DB);
+  _resetEnforcementCache();
 });
 
 // ── loadEntitlement ──────────────────────────────────────────────────────
@@ -52,6 +54,35 @@ describe('loadEntitlement', () => {
     expect(result.tier).toBe('free');
     expect(result.entitlements.aiTutor).toBe(false);
     expect(result.dailySetCap).toBe(1);
+  });
+});
+
+// ── loadEntitlement × kill-switch integration ──────────────────────────
+//
+// Confirms the loader reads app_settings on the SAME db handle and threads
+// the flag through — this is what makes every one of loadEntitlement's ~9
+// route call sites revert automatically with no per-route change.
+describe('loadEntitlement — freemium kill-switch integration', () => {
+  it("app_settings 'free_tier_enforcement' = off → a would-be-free account comes back fully entitled", async () => {
+    await seed.freeAccount(env.DB, 'user-free-killswitch');
+    await env.DB.prepare(
+      `INSERT INTO app_settings (key, value) VALUES ('free_tier_enforcement', 'off')`
+    ).run();
+
+    const result = await loadEntitlement(env.DB, 'user-free-killswitch');
+    expect(result.tier).toBe('unrestricted');
+    expect(result.fullAccess).toBe(true);
+    expect(result.dailySetCap).toBeNull();
+    expect(result.entitlements.aiTutor).toBe(true);
+    expect(result.entitlements.deepProgress).toBe(true);
+    expect(result.enforcementActive).toBe(false);
+  });
+
+  it('no app_settings row at all → still enforces (free account stays free)', async () => {
+    await seed.freeAccount(env.DB, 'user-free-noflag');
+    const result = await loadEntitlement(env.DB, 'user-free-noflag');
+    expect(result.tier).toBe('free');
+    expect(result.enforcementActive).toBe(true);
   });
 });
 

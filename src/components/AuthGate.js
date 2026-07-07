@@ -570,6 +570,54 @@ function AuthGateReal({ children }) {
     }
   }, [authLoaded, isSignedIn, checkAccount]);
 
+  // ── Quiet background entitlement refresh (kill-switch N9) ──
+  //
+  // A server-side flip of the freemium kill-switch (or any other billing
+  // change) won't reach an already-open tab — access.entitlement was fetched
+  // once at sign-in and every client-side lock reads off that stale copy.
+  // refreshAccess re-fetches /api/account and updates ONLY `access`; it must
+  // never touch onboardingStep or isLoading, or every tab focus would flash
+  // "Loading your data..." over the app. On any failure it does nothing —
+  // fail open, keep whatever access the app already has, never lock a child
+  // out because of a transient network blip on a background refresh.
+  const refreshAccess = useCallback(async () => {
+    if (!isSignedIn) return;
+    try {
+      const token = await getToken();
+      const data = await apiFetch('/api/account', token);
+      if (data.access) setAccess(data.access);
+    } catch {
+      // Silent — keep current access, never lock on a background failure.
+    }
+  }, [isSignedIn, getToken]);
+
+  // Throttled to at most once per ~10s so rapid tab-switching doesn't spam
+  // the endpoint. Fires on the two signals that mean "the user just came
+  // back to this tab": document visibility and window focus.
+  const lastRefreshRef = useRef(0);
+  useEffect(() => {
+    if (!isSignedIn) return undefined;
+
+    const REFRESH_THROTTLE_MS = 10_000;
+    const maybeRefresh = () => {
+      const now = Date.now();
+      if (now - lastRefreshRef.current < REFRESH_THROTTLE_MS) return;
+      lastRefreshRef.current = now;
+      refreshAccess();
+    };
+
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'visible') maybeRefresh();
+    };
+
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    window.addEventListener('focus', maybeRefresh);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+      window.removeEventListener('focus', maybeRefresh);
+    };
+  }, [isSignedIn, refreshAccess]);
+
   // A ?tutor=1 direct link (or lingering tutor intent) jumps straight to the
   // signup form rather than the parent-oriented landing hero.
   useEffect(() => {
