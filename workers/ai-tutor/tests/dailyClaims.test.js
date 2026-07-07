@@ -15,7 +15,7 @@
 import { describe, it, expect, beforeAll, beforeEach } from 'vitest';
 import { env } from 'cloudflare:test';
 import { createSchema, cleanDb, seed } from './helpers.js';
-import { londonDay, claimDailySet } from '../lib/dailyClaims.js';
+import { londonDay, claimDailySet, purgeOldDailyClaims } from '../lib/dailyClaims.js';
 
 beforeAll(async () => {
   await createSchema(env.DB);
@@ -144,5 +144,39 @@ describe('claimDailySet', () => {
     expect(cols).toEqual(
       ['child_id', 'claimed_at', 'entitlement_type', 'id', 'local_day', 'owner_session_id'].sort()
     );
+  });
+});
+
+describe('purgeOldDailyClaims', () => {
+  beforeEach(async () => {
+    await seed.account(env.DB, 'acct-1');
+    await seed.child(env.DB, 'child-1', 'acct-1');
+  });
+
+  async function countRows(childId) {
+    const { results } = await env.DB.prepare(
+      'SELECT * FROM daily_claims WHERE child_id = ?'
+    ).bind(childId).all();
+    return results;
+  }
+
+  it('deletes rows older than the TTL and keeps recent ones', async () => {
+    await env.DB.prepare(
+      `INSERT INTO daily_claims (child_id, entitlement_type, local_day, owner_session_id, claimed_at)
+       VALUES (?, 'daily_set', '2026-03-01', 's1', datetime('now', '-100 days'))`
+    ).bind('child-1').run();
+    await env.DB.prepare(
+      `INSERT INTO daily_claims (child_id, entitlement_type, local_day, owner_session_id, claimed_at)
+       VALUES (?, 'free_mock', '2026-07-01', 's1', datetime('now'))`
+    ).bind('child-1').run();
+
+    expect(await countRows('child-1')).toHaveLength(2);
+
+    const deleted = await purgeOldDailyClaims(env.DB);
+    expect(deleted).toBe(1);
+
+    const remaining = await countRows('child-1');
+    expect(remaining).toHaveLength(1);
+    expect(remaining[0].entitlement_type).toBe('free_mock');
   });
 });

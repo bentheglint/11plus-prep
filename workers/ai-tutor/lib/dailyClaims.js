@@ -83,3 +83,19 @@ export async function claimDailySet(db, { childId, entitlementType = 'daily_set'
   const owned = sessionId != null && existing && existing.owner_session_id === sessionId;
   return { allowed: !!owned, alreadyClaimed: true, ownedByThisSession: !!owned };
 }
+
+// Retention purge (GDPR minimisation). A daily_claims row's only purpose
+// is to enforce that day's cap; once its local_day has passed it is dead
+// weight. Erasure on account deletion is already automatic via the
+// children -> daily_claims ON DELETE CASCADE (see migration 0017); this
+// purge covers old rows for accounts that still exist. Runs from the
+// daily cron, mirroring the processed_operations lazy purge in
+// routes/batch.js.
+export const DAILY_CLAIMS_TTL_DAYS = 90;
+
+export async function purgeOldDailyClaims(db, ttlDays = DAILY_CLAIMS_TTL_DAYS) {
+  const r = await db.prepare(
+    `DELETE FROM daily_claims WHERE claimed_at < datetime('now', '-${ttlDays} days')`
+  ).run();
+  return r.meta?.changes ?? 0;
+}

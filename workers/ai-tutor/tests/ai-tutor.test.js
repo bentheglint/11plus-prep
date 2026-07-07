@@ -144,6 +144,65 @@ describe('AI tutor entitlement gate', () => {
   });
 });
 
+// ── Tutor bypass (N16) ─────────────────────────────────────────────────────
+// Tutor Mode, including the AI-tutor preview, is free. A tutor must never
+// hit the practice-tier entitlement wall: their own practice account
+// resolves to `free` 30 days post-signup, or may not exist at all, and
+// neither case should 403/404 them. We prove the gate let them through by
+// sending an invalid body and asserting the 400 from input validation
+// (which only runs after the gate) rather than a real Anthropic call.
+
+describe('AI tutor entitlement gate — tutor bypass', () => {
+  it('a tutor with no practice account at all is not blocked by the entitlement wall', async () => {
+    const userId = 'tutor-bypass-no-account';
+    await seed.tutor(env.DB, userId, `${userId}@test.com`);
+    const token = await makeAuthToken({ userId, email: `${userId}@test.com` });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/', { auth: token, body: {} }),
+      env
+    );
+    expect(res.status).toBe(400);
+    const body = await res.json();
+    expect(body.error).toMatch(/missing system or messages/i);
+  });
+
+  it('a tutor whose own practice account has gone free (post-trial) is not blocked', async () => {
+    const userId = 'tutor-bypass-free-account';
+    await seed.tutor(env.DB, userId, `${userId}@test.com`);
+    await seed.freeAccount(env.DB, userId, `${userId}@test.com`);
+    const token = await makeAuthToken({ userId, email: `${userId}@test.com` });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/', { auth: token, body: {} }),
+      env
+    );
+    expect(res.status).toBe(400);
+    const body = await res.json();
+    expect(body.error).toMatch(/missing system or messages/i);
+  });
+
+  it('a free non-tutor still gets 403 upgrade_required (unchanged)', async () => {
+    const userId = 'nontutor-bypass-free';
+    await seed.freeAccount(env.DB, userId, `${userId}@test.com`);
+    const token = await makeAuthToken({ userId, email: `${userId}@test.com` });
+
+    const res = await worker.fetch(
+      makeRequest('POST', '/', {
+        auth: token,
+        body: {
+          system: 'You are a tutor.',
+          messages: [{ role: 'user', content: 'Hello' }],
+        },
+      }),
+      env
+    );
+    expect(res.status).toBe(403);
+    const body = await res.json();
+    expect(body.code).toBe('upgrade_required');
+  });
+});
+
 // ── (b) Input caps ─────────────────────────────────────────────────────────
 
 describe('AI tutor input caps', () => {

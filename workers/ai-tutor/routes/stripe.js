@@ -531,7 +531,7 @@ export async function reconcileSubscriptions(env) {
   // (past_due widened in for N5.4 — bounded grace means a stuck past_due
   // row can still be granting access, so it needs the same drift check).
   const { results: d1Rows } = await db.prepare(
-    `SELECT id, email, stripe_customer_id, subscription_status
+    `SELECT id, stripe_customer_id, subscription_status
      FROM accounts
      WHERE subscription_status IN ('active', 'trialing', 'past_due')
        AND stripe_customer_id IS NOT NULL`
@@ -572,9 +572,9 @@ export async function reconcileSubscriptions(env) {
   if (ghostActive.length || missedActive.length || stuckPastDue.length) {
     console.error('[reconciliation] DRIFT DETECTED', JSON.stringify({
       ...summary,
-      ghost_active: ghostActive.map(a => ({ id: a.id, email: a.email, customer: a.stripe_customer_id })),
+      ghost_active: ghostActive.map(a => ({ id: a.id, customer: a.stripe_customer_id })),
       missed_active_customers: missedActive,
-      stuck_past_due_accounts: stuckPastDue.map(a => ({ id: a.id, email: a.email, customer: a.stripe_customer_id })),
+      stuck_past_due_accounts: stuckPastDue.map(a => ({ id: a.id, customer: a.stripe_customer_id })),
     }));
   } else {
     console.log('[reconciliation] OK', JSON.stringify(summary));

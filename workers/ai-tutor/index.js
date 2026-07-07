@@ -9,6 +9,7 @@ import { handleBatch } from './routes/batch.js';
 import { handleEntitlementRoutes } from './routes/entitlements.js';
 import { handleScheduled, handleTrialEmails, handlePreviewEmailForUser } from './routes/email.js';
 import { handleStripeRoutes, handleWebhook, reconcileSubscriptions } from './routes/stripe.js';
+import { purgeOldDailyClaims } from './lib/dailyClaims.js';
 import { handleTutorRoutes } from './routes/tutor.js';
 import { handleClassRoutes } from './routes/classes.js';
 import { handleAssignmentRoutes, runLateFlagJob } from './routes/assignments.js';
@@ -276,9 +277,17 @@ async function handleTutor(request, env) {
   // ── Entitlement gate — refuse before spending a KV quota write or a
   // Claude token. Comped/paid/trial/grace all have aiTutor=true and pass
   // through unaffected; only the free tier (post-trial, no sub) is walled.
-  const ent = await loadEntitlement(env.DB, auth.userId);
-  if (!ent) return json({ error: 'Account not found' }, 404);
-  if (!ent.entitlements.aiTutor) return upgradeRequiredResponse(ent);
+  //
+  // Tutor Mode (including the AI-tutor preview) is free, so a tutor is
+  // gated on tutor status, not practice tier — their own practice account
+  // resolves to `free` 30 days post-signup (or may not exist at all), which
+  // must not 403/404 the preview. The daily quota below still bounds cost.
+  const isTutor = await env.DB.prepare('SELECT 1 FROM tutors WHERE id = ?').bind(auth.userId).first();
+  if (!isTutor) {
+    const ent = await loadEntitlement(env.DB, auth.userId);
+    if (!ent) return json({ error: 'Account not found' }, 404);
+    if (!ent.entitlements.aiTutor) return upgradeRequiredResponse(ent);
+  }
 
   // ── Input validation ──
   let body;
@@ -636,7 +645,8 @@ const worker = {
 
   // Cron triggers — dispatched on event.cron pattern.
   //   "0 18 * * SUN" — weekly progress emails (Sunday 18:00 UTC)
-  //   "0 6 * * *"    — daily Stripe reconciliation (06:00 UTC)
+  //   "0 6 * * *"    — daily Stripe reconciliation, trial emails, invite
+  //                    sweep, and daily_claims retention purge (06:00 UTC)
   async scheduled(event, env, ctx) {
     if (event.cron === '0 18 * * SUN') {
       ctx.waitUntil(handleScheduled(env));
@@ -645,6 +655,7 @@ const worker = {
         reconcileSubscriptions(env).catch(err => console.error('[reconciliation] failed:', err.message)),
         handleTrialEmails(env).catch(err => console.error('[trial-email] failed:', err.message)),
         sweepInvites(env).catch(err => console.error('[invite-sweep] failed:', err.message)),
+        purgeOldDailyClaims(env.DB).catch(err => console.error('[daily-claims-purge] failed:', err.message)),
       ]));
     }
   },
