@@ -194,6 +194,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   // Free-tier daily-set cap nudge (Phase 0, Step 5) — set when the server's
   // claim-daily-set endpoint returns an explicit daily_cap_reached.
   const [dailyCapReached, setDailyCapReached] = useState(false);
+  const [showFreeWelcome, setShowFreeWelcome] = useState(false);
 
   // Observe useD1Data's upgradeRequiredEvent (a batch op — e.g. a mock test
   // result — was refused because the account isn't entitled to it) and show
@@ -262,6 +263,25 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [currentView]);
+
+  // One-time "welcome to your free plan" moment when a trial lapses to free.
+  // Keyed per account (userEmail) so it shows once per family, never repeats,
+  // and never pops over an active quiz/lesson/upgrade flow.
+  useEffect(() => {
+    if (!freeTierRolloutOn) return;
+    if (effectiveEntitlement?.tier !== 'free') return;
+    if (!userEmail) return;
+    const seenKey = `prepstep:free-plan-welcome-seen:${userEmail}`;
+    if (localStorage.getItem(seenKey)) return;
+    if (currentView === 'quiz' || currentView === 'lesson' || currentView === 'upgrade') return;
+    setShowFreeWelcome(true);
+  }, [freeTierRolloutOn, effectiveEntitlement, userEmail, currentView]);
+
+  const dismissFreeWelcome = () => {
+    if (userEmail) localStorage.setItem(`prepstep:free-plan-welcome-seen:${userEmail}`, '1');
+    setShowFreeWelcome(false);
+  };
+
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -2672,6 +2692,7 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           onDismiss={() => setDailyCapReached(false)}
         />
       )}
+      {showFreeWelcome && <FreePlanWelcomeModal onDismiss={dismissFreeWelcome} />}
       {showUpgradeNudge && (
         <UpgradeNudgeToast
           onUpgrade={() => {
@@ -2752,6 +2773,37 @@ function DailyCapModal({ onUpgrade, onDismiss }) {
             className="w-full py-3 rounded-xl font-medium text-slate-500 hover:text-slate-700 transition-colors"
           >
             Maybe later
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// One-time "welcome to your free plan" moment (Phase 0, N8) — shown once per
+// account when the trial lapses to the free tier. Child-safe: no upgrade CTA,
+// no sell — Plus is mentioned only as neutral info pointed at a grown-up.
+function FreePlanWelcomeModal({ onDismiss }) {
+  return (
+    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
+      <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6 text-center">
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
+          <BookOpen className="w-8 h-8 text-[#7C3AED]" />
+        </div>
+        <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">Welcome to your free plan</h2>
+        <p className="text-sm text-gray-600 mb-6">
+          Your free trial's finished — and PrepStep stays free from here. You'll get a fresh Daily Learning
+          set every day, and you keep all your games, streaks, rewards and your progress so far. Unlimited
+          practice, every topic, mock tests and the full progress dashboard are part of PrepStep Plus — a
+          grown-up can unlock those any time from the parent menu.
+        </p>
+        <div className="flex flex-col gap-2">
+          <button
+            type="button"
+            onClick={onDismiss}
+            className="w-full py-3 rounded-xl font-bold text-white bg-[#7C3AED] hover:bg-[#5A4BD1] transition-colors"
+          >
+            Let's go
           </button>
         </div>
       </div>

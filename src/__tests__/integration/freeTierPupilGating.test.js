@@ -169,7 +169,7 @@ describe('MistakesScreen — unlimitedPractice gate', () => {
   const questionData = makeQuestionData('percentages', 1);
   const questionResults = [makeMistakeResult(1)];
 
-  it('keeps the mistakes list visible and redirects "practise this" to the upgrade nudge when locked', () => {
+  it('keeps the mistakes list visible and shows a calm "Part of PrepStep Plus" label with no sell when locked (child surface — N8)', () => {
     const onUpgrade = jest.fn();
     render(
       <MistakesScreen
@@ -190,12 +190,17 @@ describe('MistakesScreen — unlimitedPractice gate', () => {
     expect(screen.getByText(/1 mistake/i)).toBeInTheDocument();
 
     // Expand the topic group, then tap "practise this" for the single mistake.
-    // Exact string (not a substring regex) — "Upgrade to practise mistakes"
-    // (the "Practice All" button, also locked) is a distinct string above it.
+    // Both the "Practice All" button above the list and the per-topic
+    // "Practice These" button now share the same locked label, so grab all
+    // matches and click the topic-level one (rendered second, inside the
+    // expanded panel).
     fireEvent.click(screen.getByText(/Percentages/i));
-    fireEvent.click(screen.getByText('Upgrade to practise'));
+    const lockedLabels = screen.getAllByText('Part of PrepStep Plus');
+    expect(lockedLabels.length).toBe(2);
+    fireEvent.click(lockedLabels[1]);
 
-    expect(onUpgrade).toHaveBeenCalledTimes(1);
+    // Child surfaces never sell — no upgrade flow is triggered by a locked tap.
+    expect(onUpgrade).not.toHaveBeenCalled();
     // Practice mode never starts — its "Exit" header button (only rendered
     // once practiceMode is set) is absent. The question text itself isn't a
     // safe signal here: it also appears as the mistake row's own preview.

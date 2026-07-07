@@ -134,11 +134,12 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
 
   // Start practice mode for a topic. Single choke point for all three
   // practice entry points below, so the free-tier gate only needs to live
-  // in one place: a locked tap shows the upgrade nudge instead of starting
-  // the quiz, never a silent no-op or an error toast.
+  // in one place. This is a child surface (Option A, N8): a locked tap is a
+  // silent no-op — the "Part of PrepStep Plus" label already told the child
+  // it's locked, and there's no upgrade sell here (that stays on parent
+  // surfaces and the daily-cap modal).
   const startPractice = useCallback((topicKey, subject, mistakes) => {
     if (practiceLocked) {
-      onUpgrade?.();
       return;
     }
     // Filter out questions no longer in the bank
@@ -150,7 +151,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
     setSelectedPair([]);
     setShowFeedback(false);
     setPracticeResults([]);
-  }, [practiceLocked, onUpgrade]);
+  }, [practiceLocked]);
 
   // Record a practice result and persist it
   const recordResult = useCallback((currentMistake, isCorrect) => {
@@ -616,6 +617,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                 );
                 startPractice('all', 'mixed', allMistakes);
               }}
+              disabled={practiceLocked}
               className={`w-full py-3 font-bold rounded-xl transition-colors flex items-center justify-center gap-2 ${
                 practiceLocked
                   ? 'bg-gray-100 text-gray-400 hover:bg-gray-200 border-2 border-gray-200'
@@ -623,7 +625,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
               }`}
             >
               {practiceLocked ? <Lock className="w-5 h-5" /> : <RotateCcw className="w-5 h-5" />}
-              {practiceLocked ? 'Upgrade to practise mistakes' : `Practice All Mistakes (${totalMistakes})`}
+              {practiceLocked ? 'Part of PrepStep Plus' : `Practice All Mistakes (${totalMistakes})`}
             </button>
           </div>
         )}
@@ -716,7 +718,7 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                                   style={practiceLocked ? undefined : { background: `${colour}15`, color: colour }}
                                 >
                                   {practiceLocked ? <Lock className="w-3 h-3" /> : <Target className="w-3 h-3" />}
-                                  {practiceLocked ? 'Upgrade' : 'Practise'}
+                                  {practiceLocked ? 'Plus' : 'Practise'}
                                 </span>
                               )}
                             </>
@@ -745,13 +747,14 @@ function MistakesScreen({ questionResults, questionData, englishData, vrData, on
                       {group.mistakes.some(m => m.questionType !== 'missing') && (
                         <button
                           onClick={() => startPractice(topicKey, group.subject, group.mistakes)}
+                          disabled={practiceLocked}
                           className={`mt-3 w-full flex items-center justify-center gap-2 py-2.5 font-bold rounded-xl text-sm transition-colors ${
                             practiceLocked ? 'bg-gray-100 text-gray-400 border-2 border-gray-200 hover:bg-gray-200' : 'text-white'
                           }`}
                           style={practiceLocked ? undefined : { background: colour }}
                         >
                           {practiceLocked ? <Lock className="w-4 h-4" /> : <Target className="w-4 h-4" />}
-                          {practiceLocked ? 'Upgrade to practise' : `Practice These (${group.mistakes.filter(m => m.questionType !== 'missing').length})`}
+                          {practiceLocked ? 'Part of PrepStep Plus' : `Practice These (${group.mistakes.filter(m => m.questionType !== 'missing').length})`}
                         </button>
                       )}
                     </div>

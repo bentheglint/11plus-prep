@@ -79,6 +79,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
               title="Focused Learning"
               description="Pick a topic and practise 10 questions to build your confidence."
               onUpgrade={onUpgrade}
+              showCta={false}
             />
           ) : (
             <motion.button
@@ -101,6 +102,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
               title="Mock Test"
               description={`Full practice paper — ${testInfo.questions} questions in ${testInfo.time} minutes. Timed, just like the real exam!`}
               onUpgrade={onUpgrade}
+              showCta={false}
             />
           ) : (
             <motion.button
@@ -141,10 +143,10 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            onClick={challengeUnlocked ? onChallengeMode : (challengePaidLocked ? onUpgrade : undefined)}
-            disabled={!challengeUnlocked && !challengePaidLocked}
+            onClick={challengeUnlocked ? onChallengeMode : undefined}
+            disabled={!challengeUnlocked}
             className={`w-full card rounded-2xl p-6 text-left flex items-center gap-5 transition-all border-2 ${
-              challengeUnlocked || challengePaidLocked
+              challengeUnlocked
                 ? 'hover:scale-[1.01] border-transparent hover:border-[#E17055]/30 cursor-pointer'
                 : 'opacity-60 cursor-not-allowed border-gray-200'
             }`}
@@ -169,7 +171,7 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
                 </p>
               ) : challengePaidLocked ? (
                 <p className="text-sm text-gray-400">
-                  A premium feature. Upgrade to take on your strongest topics at their hardest.
+                  Part of PrepStep Plus — your strongest topics at their very hardest.
                 </p>
               ) : (
                 <p className="text-sm text-gray-400">
@@ -183,8 +185,9 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
               </div>
             )}
             {challengePaidLocked && (
-              <div className="text-xs font-bold text-[#7C3AED] bg-[#7C3AED]/10 px-3 py-1.5 rounded-full flex-shrink-0">
-                Upgrade to unlock
+              <div className="text-xs font-bold text-gray-400 bg-gray-100 px-3 py-1.5 rounded-full flex-shrink-0 flex items-center gap-1">
+                <Lock className="w-3.5 h-3.5" />
+                Part of PrepStep Plus
               </div>
             )}
           </motion.button>
