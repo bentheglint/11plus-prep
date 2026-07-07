@@ -19,6 +19,11 @@
 //      (paid-through backstop — grants access even if status failed to
 //      populate or is 'canceled' but the period hasn't ended; never removes)
 //   6. within the 30-day app trial window since created_at → trial    (FULL)
+//   6a. created_at missing/unparseable (NaN)                → trial    (FULL, fail-open)
+//      (a malformed date must never lock a real account out — we can't
+//      compute days remaining, so we grant full access and surface it via
+//      a distinct reason code for observability rather than silently
+//      pretending it's a normal trial)
 //   7. otherwise                                            → free     (capped)
 
 // subscription_current_period_end stores Stripe's raw `current_period_end`
@@ -42,6 +47,7 @@ export const ENTITLEMENT_REASONS = Object.freeze({
   PAID_THROUGH_BACKSTOP: 'paid_through_backstop',
   APP_TRIAL: 'app_trial',
   FREE_POST_TRIAL: 'free_post_trial',
+  CREATED_AT_UNPARSEABLE: 'created_at_unparseable',
 });
 
 export const ENTITLEMENT_KEYS = Object.freeze([
@@ -134,20 +140,34 @@ export function resolveEntitlements(account, { tutorProfile = null, now = new Da
     payload = fullPayload();
   } else {
     const createdAtMs = new Date(String(account && account.created_at) + 'Z').getTime();
-    const daysSinceCreate = (now.getTime() - createdAtMs) / MS_PER_DAY;
-    const daysLeft = Math.max(0, Math.ceil(TRIAL_DAYS - daysSinceCreate));
 
-    if (daysLeft > 0) {
+    if (Number.isNaN(createdAtMs)) {
+      // created_at is missing/garbage — we cannot compute a trial window at
+      // all. Fail OPEN to full access rather than defaulting to `free`: a
+      // real user must never be locked out by a data-quality problem. The
+      // distinct reason code makes this show up in logs as its own case
+      // instead of masquerading as a normal trial.
       tier = 'trial';
-      reason = ENTITLEMENT_REASONS.APP_TRIAL;
+      reason = ENTITLEMENT_REASONS.CREATED_AT_UNPARSEABLE;
       billingNote = subStatus || null;
       payload = fullPayload();
-      trialDaysRemaining = daysLeft;
+      trialDaysRemaining = 0;
     } else {
-      tier = 'free';
-      reason = ENTITLEMENT_REASONS.FREE_POST_TRIAL;
-      billingNote = subStatus || null;
-      payload = freePayload();
+      const daysSinceCreate = (now.getTime() - createdAtMs) / MS_PER_DAY;
+      const daysLeft = Math.max(0, Math.ceil(TRIAL_DAYS - daysSinceCreate));
+
+      if (daysLeft > 0) {
+        tier = 'trial';
+        reason = ENTITLEMENT_REASONS.APP_TRIAL;
+        billingNote = subStatus || null;
+        payload = fullPayload();
+        trialDaysRemaining = daysLeft;
+      } else {
+        tier = 'free';
+        reason = ENTITLEMENT_REASONS.FREE_POST_TRIAL;
+        billingNote = subStatus || null;
+        payload = freePayload();
+      }
     }
   }
 

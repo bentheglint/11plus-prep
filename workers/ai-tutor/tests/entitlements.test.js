@@ -223,6 +223,47 @@ describe('resolveEntitlements — app trial window', () => {
     expect(result.tier).toBe('free');
     expect(result.reason).toBe(ENTITLEMENT_REASONS.FREE_POST_TRIAL);
   });
+
+  it('created_at 31 days ago → free (just past the boundary)', () => {
+    const account = baseAccount({ subscription_status: null, created_at: daysAgoISO(31) });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).toBe('free');
+    expect(result.reason).toBe(ENTITLEMENT_REASONS.FREE_POST_TRIAL);
+    expect(result.fullAccess).toBe(false);
+  });
+
+  it('created_at 29 days ago → trial, 1 day remaining (just inside the boundary)', () => {
+    const account = baseAccount({ subscription_status: null, created_at: daysAgoISO(29) });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).toBe('trial');
+    expect(result.reason).toBe(ENTITLEMENT_REASONS.APP_TRIAL);
+    expect(result.trialDaysRemaining).toBe(1);
+    expect(result.fullAccess).toBe(true);
+  });
+});
+
+describe('resolveEntitlements — unparseable created_at fails OPEN (N-A-4)', () => {
+  it.each([
+    ['null', null],
+    ['undefined', undefined],
+    ['garbage string', 'not-a-date'],
+    ['empty string', ''],
+  ])('created_at=%s → tier trial, reason created_at_unparseable, fullAccess true (never free)', (_label, badCreatedAt) => {
+    const account = baseAccount({ subscription_status: null, created_at: badCreatedAt });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).toBe('trial');
+    expect(result.reason).toBe(ENTITLEMENT_REASONS.CREATED_AT_UNPARSEABLE);
+    expect(result.fullAccess).toBe(true);
+    expect(result.entitlements).toEqual(FULL_ENTITLEMENTS);
+    expect(result.dailySetCap).toBeNull();
+  });
+
+  it('is a PURE function even with a bad date — no reliance on a real clock', () => {
+    const account = baseAccount({ subscription_status: null, created_at: 'garbage' });
+    const resultA = resolveEntitlements(account, { now: NOW });
+    const resultB = resolveEntitlements(account, { now: NOW });
+    expect(resultA).toEqual(resultB);
+  });
 });
 
 describe('resolveEntitlements — tutorProductAccess is independent of practice tier', () => {
@@ -268,6 +309,7 @@ describe('parity pin — reason codes and entitlement keys', () => {
     'paid_through_backstop',
     'app_trial',
     'free_post_trial',
+    'created_at_unparseable',
   ];
 
   const EXPECTED_ENTITLEMENT_KEYS = [

@@ -76,52 +76,34 @@ export async function handleAccountRoutes(request, env, userId, path) {
     // Update last_login_at
     await db.prepare('UPDATE accounts SET last_login_at = datetime(\'now\') WHERE id = ?').bind(userId).run();
 
-    // Compute access gate, in priority order:
-    //   1. Comped (grandfathered or invite code) → always hasAccess, no paywall
-    //   2. Active/trialing subscription → hasAccess
-    //   3. past_due (grace window) → hasAccess
-    //   4. Within 30-day free trial since account creation → hasAccess
-    //   5. Otherwise → paywall
+    // Compute access gate. Admission fields (hasAccess/inTrial/
+    // trialDaysRemaining/subscriptionStatus) are DERIVED from
+    // resolveEntitlements() — the single source of truth for "what does
+    // this account get" (lib/entitlements.js). We used to compute these
+    // with a second, parallel calculation here; the two could disagree
+    // (N-A-3), so admission now reads straight off the resolver's result.
     const isComped = !!account.is_comped;
-
-    const trialDays = 30;
-    const createdAtMs = new Date(account.created_at + 'Z').getTime();
-    const msSinceCreate = Date.now() - createdAtMs;
-    const daysSinceCreate = msSinceCreate / (1000 * 60 * 60 * 24);
-    const trialDaysRemaining = Math.max(0, Math.ceil(trialDays - daysSinceCreate));
-
-    const subStatus = account.subscription_status;
-    const hasPaidAccess = ['active', 'trialing'].includes(subStatus);
-    // past_due: we keep access during Stripe's smart retry window. Stripe
-    // will flip to 'unpaid' or 'canceled' when retries exhaust — then access
-    // closes. This matches consumer expectations (card bounce ≠ instant lockout).
-    const hasGraceAccess = subStatus === 'past_due';
-    const inTrial = !isComped && !subStatus && trialDaysRemaining > 0;
 
     // Tutor signup is open — any authenticated user can create a tutor profile.
     const tutorProfileRow = await db.prepare('SELECT 1 FROM tutors WHERE id = ?')
       .bind(userId).first();
 
+    const entitlement = resolveEntitlements(account, { tutorProfile: tutorProfileRow });
+    console.log(JSON.stringify({ evt: 'entitlement_resolved', tier: entitlement.tier, reason: entitlement.reason }));
+
     const adminIds = (env.ADMIN_USER_IDS || '').split(',').map(s => s.trim()).filter(Boolean);
     const access = {
-      hasAccess: isComped || hasPaidAccess || hasGraceAccess || inTrial,
+      hasAccess: entitlement.fullAccess,
       isComped,
-      inTrial,
-      trialDaysRemaining: inTrial ? trialDaysRemaining : 0,
-      subscriptionStatus: subStatus || null,
+      inTrial: entitlement.tier === 'trial',
+      trialDaysRemaining: entitlement.tier === 'trial' ? entitlement.trialDaysRemaining : 0,
+      subscriptionStatus: entitlement.subscriptionStatus || null,
       hasStripeCustomer: !!account.stripe_customer_id,
       tutorEligible: !!tutorProfileRow,
       hasTutorProfile: !!tutorProfileRow,
       isAdmin: adminIds.length > 0 && adminIds.includes(userId),
+      entitlement,
     };
-
-    // Phase 0 Step 1 — additive only, nothing reads or enforces on this yet.
-    // Nested under `access.entitlement` so every existing `access.*` field
-    // above is untouched. Uses the same `account` row (before the internal
-    // fields below are stripped) and the same tutor-profile lookup.
-    const entitlement = resolveEntitlements(account, { tutorProfile: tutorProfileRow });
-    console.log(JSON.stringify({ evt: 'entitlement_resolved', tier: entitlement.tier, reason: entitlement.reason }));
-    access.entitlement = entitlement;
 
     // Don't leak internal fields — comp_source is audit-only, stripe_customer_id
     // is needed server-side for portal/subscribe routes but not client-side.
