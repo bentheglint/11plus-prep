@@ -6,6 +6,7 @@ import {
   resolveQaTierOverride,
   interpretDailyClaimResponse,
   resolveAccessAdmission,
+  isPaymentConfirmed,
   FREE_TIER_FLAG,
 } from './entitlementGating';
 
@@ -265,5 +266,35 @@ describe('resolveAccessAdmission — flag on/off x hasAccess matrix', () => {
 
   it('hasAccess false, flag on → ready (admitted to the free floor)', () => {
     expect(resolveAccessAdmission({ hasAccess: false, freeTierOn: true })).toBe('ready');
+  });
+});
+
+describe('isPaymentConfirmed — the Stripe-return poll predicate', () => {
+  it('tier "paid" → confirmed', () => {
+    expect(isPaymentConfirmed({ entitlement: { tier: 'paid' } })).toBe(true);
+  });
+
+  it('tier "trial" (app trial, not the subscription) → not yet confirmed', () => {
+    expect(isPaymentConfirmed({ entitlement: { tier: 'trial' } })).toBe(false);
+  });
+
+  it('tier "free" → not yet confirmed', () => {
+    expect(isPaymentConfirmed({ entitlement: { tier: 'free' } })).toBe(false);
+  });
+
+  it('tier "grace" (past_due) → not yet confirmed — a genuinely lapsed card must keep polling, not be waved through', () => {
+    expect(isPaymentConfirmed({ entitlement: { tier: 'grace' } })).toBe(false);
+  });
+
+  it('tier "comped" → not "paid" so the predicate reads false, but comped accounts never hit this path (resolveAccessAdmission already admits hasAccess=true unconditionally)', () => {
+    expect(isPaymentConfirmed({ entitlement: { tier: 'comped' } })).toBe(false);
+  });
+
+  it('missing/malformed access → false, never throws (poll just keeps going, never fails open here — this predicate only decides when to STOP waiting)', () => {
+    expect(isPaymentConfirmed(null)).toBe(false);
+    expect(isPaymentConfirmed(undefined)).toBe(false);
+    expect(isPaymentConfirmed({})).toBe(false);
+    expect(isPaymentConfirmed({ entitlement: null })).toBe(false);
+    expect(() => isPaymentConfirmed(42)).not.toThrow();
   });
 });

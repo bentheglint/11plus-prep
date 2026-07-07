@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
-import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft } from 'lucide-react';
+import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft, Loader2 } from 'lucide-react';
 import SubscribeScreen from './SubscribeScreen';
 import { isFeatureEnabled } from '../utils/featureFlags';
-import { resolveAccessAdmission } from '../utils/entitlementGating';
+import { resolveAccessAdmission, isPaymentConfirmed } from '../utils/entitlementGating';
 // apiSync imports removed — D1 data loading moved to useD1Data hook
 // fetchAllData, setTokenProvider, setVersions no longer needed here
 // MigrationScreen removed — the localStorage→D1 migration was a one-time
@@ -11,6 +11,15 @@ import { resolveAccessAdmission } from '../utils/entitlementGating';
 // localStorage data to import and should go straight from onboarding to app.
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
+
+// Poll delays (ms) for confirming a Stripe checkout return (?subscribed=1).
+// Stripe's webhook that flips subscription_status to 'active' can land a
+// few seconds after the redirect, so the first /api/account fetch after
+// landing back may still read the OLD (free) status. This short backoff
+// gives the webhook room to land — total budget ~25s — before AuthGate
+// falls back to a manual-refresh state. See the confirmingPayment flow in
+// AuthGateReal below; N-A-1/A1 in freemium-phase0-completion-design.md.
+const CONFIRM_POLL_DELAYS_MS = [0, 1000, 2000, 3000, 4000, 5000, 5000, 5000];
 
 // ── API helper ──
 async function apiFetch(path, token, options = {}) {
@@ -298,6 +307,48 @@ function TutorNameScreen({ onSubmit, isLoading }) {
   );
 }
 
+// ── Confirming Payment Screen ──
+// Shown after a Stripe checkout return (?subscribed=1) while AuthGate polls
+// /api/account waiting for the webhook to land. Renders INSTEAD of both the
+// paywall and the app itself — never SubscribeScreen, never children(...) —
+// so a real payer can never be shown a free-tier lock or the paywall while
+// their subscription is still catching up server-side.
+function ConfirmingPaymentScreen({ exhausted, onRefresh }) {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex items-center justify-center p-4">
+      <div className="max-w-md w-full bg-white rounded-2xl shadow-lg p-8 text-center">
+        <Loader2 className="w-10 h-10 text-[#7C3AED] animate-spin mx-auto mb-4" />
+        {exhausted ? (
+          <>
+            <h1 className="font-heading text-xl font-bold text-slate-800 mb-2">
+              This is taking longer than usual
+            </h1>
+            <p className="text-slate-500 mb-6">
+              Your payment went through — we're just waiting for Stripe to confirm it on our end.
+              This can occasionally take a minute or two.
+            </p>
+            <button
+              onClick={onRefresh}
+              className="px-6 py-2.5 bg-[#7C3AED] text-white rounded-xl font-bold hover:bg-[#5A4BD1] transition-colors"
+            >
+              Refresh
+            </button>
+          </>
+        ) : (
+          <>
+            <h1 className="font-heading text-xl font-bold text-slate-800 mb-2">
+              Confirming your payment…
+            </h1>
+            <p className="text-slate-500">
+              Just a moment while we confirm your subscription with Stripe.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // ── Dev bypass: skip auth on localhost with ?dev-auth=true ──
 const DEV_BYPASS = process.env.NODE_ENV === 'development'
   && typeof window !== 'undefined'
@@ -335,6 +386,13 @@ function AuthGateReal({ children }) {
   const [access, setAccess] = useState(null); // { hasAccess, inTrial, trialDaysRemaining, subscriptionStatus, isComped }
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  // Stripe-return payment confirmation (N-A-1 / A1) — while true, AuthGate
+  // renders ConfirmingPaymentScreen INSTEAD of the paywall or the app, so a
+  // payer whose webhook hasn't landed yet is never shown a free-tier lock.
+  // See the ?subscribed=1 handling further down.
+  const [confirmingPayment, setConfirmingPayment] = useState(false);
+  const [confirmExhausted, setConfirmExhausted] = useState(false);
 
   // Tutor join code — captured from /join/<code> path on first mount. Persists
   // in sessionStorage so it survives Clerk's sign-in redirect (which lands on /).
@@ -520,17 +578,114 @@ function AuthGateReal({ children }) {
     }
   }, [authLoaded, isSignedIn, signupIntent]);
 
-  // Stripe redirect return — 3DS flow sends the user back to /?subscribed=1.
-  // Clear the param and re-fetch account so we see the new subscription_status.
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('subscribed') === '1') {
-      params.delete('subscribed');
-      const newSearch = params.toString();
-      window.history.replaceState({}, '', window.location.pathname + (newSearch ? '?' + newSearch : ''));
-      if (isSignedIn) checkAccount();
+  // Stripe redirect return — checkout (and the 3DS flow within it) sends the
+  // user back to /?subscribed=1. Captured SYNCHRONOUSLY on first mount (same
+  // pattern as inviteCode/signupIntent above) so it survives the moment
+  // before Clerk finishes loading, rather than living inside an effect that
+  // could run before isSignedIn is actually known.
+  const [awaitingPaymentConfirmation, setAwaitingPaymentConfirmation] = useState(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('subscribed') === '1') {
+        params.delete('subscribed');
+        const newSearch = params.toString();
+        window.history.replaceState({}, '', window.location.pathname + (newSearch ? '?' + newSearch : ''));
+        return true;
+      }
+      return false;
+    } catch {
+      return false;
     }
-  }, [isSignedIn, checkAccount]);
+  });
+
+  // Timers for the confirmation poll below, plus a token that invalidates any
+  // in-flight attempt from a superseded poll (unmount, or the user hitting
+  // Refresh mid-poll) so a stale timeout can never clobber fresher state.
+  const confirmTimersRef = useRef([]);
+  const confirmPollTokenRef = useRef(0);
+  const paymentPollStartedRef = useRef(false); // guards against double-start (StrictMode)
+
+  const clearConfirmTimers = useCallback(() => {
+    confirmTimersRef.current.forEach(clearTimeout);
+    confirmTimersRef.current = [];
+  }, []);
+
+  // Cancel any pending poll attempts on unmount.
+  useEffect(() => clearConfirmTimers, [clearConfirmTimers]);
+
+  // Poll /api/account on a short backoff until isPaymentConfirmed() is true,
+  // or the schedule is exhausted. After EACH fetch (success or not) we push
+  // the fresh access into state, so whichever way this ends, App renders off
+  // real data. Never falls back to the paywall or the free floor — on
+  // exhaustion it just switches the confirming screen to a manual-refresh
+  // state (see ConfirmingPaymentScreen) and keeps confirmingPayment true.
+  const pollForPaymentConfirmation = useCallback(() => {
+    clearConfirmTimers();
+    const myToken = ++confirmPollTokenRef.current;
+    setConfirmExhausted(false);
+
+    const attempt = (index) => {
+      const timerId = setTimeout(async () => {
+        if (confirmPollTokenRef.current !== myToken) return; // superseded
+
+        let confirmed = false;
+        try {
+          const token = await getToken();
+          const data = await apiFetch('/api/account', token);
+          if (confirmPollTokenRef.current !== myToken) return; // superseded mid-fetch
+          if (data.access) setAccess(data.access);
+          confirmed = isPaymentConfirmed(data.access);
+        } catch {
+          // Transient failure (network blip, cold worker, etc.) — try again
+          // on the next scheduled attempt. Never drop to the paywall or the
+          // free floor mid-confirmation.
+        }
+
+        if (confirmPollTokenRef.current !== myToken) return;
+
+        if (confirmed) {
+          setConfirmingPayment(false);
+          setConfirmExhausted(false);
+          // Re-run the normal account resolution (child/tutor branching,
+          // onboardingStep) off fresh data — keeps that logic in one place
+          // (checkAccount) rather than duplicating it here.
+          checkAccount();
+          return;
+        }
+
+        if (index + 1 < CONFIRM_POLL_DELAYS_MS.length) {
+          attempt(index + 1);
+        } else {
+          setConfirmExhausted(true);
+        }
+      }, CONFIRM_POLL_DELAYS_MS[index]);
+      confirmTimersRef.current.push(timerId);
+    };
+
+    attempt(0);
+  }, [getToken, checkAccount, clearConfirmTimers]);
+
+  // Kick off the confirmation poll once we actually know the user is signed
+  // in. Guarded by a ref so React 18 StrictMode's dev double-invoke (or any
+  // later re-run of this effect) can't start a second overlapping poll.
+  useEffect(() => {
+    if (!authLoaded || !awaitingPaymentConfirmation || paymentPollStartedRef.current) return;
+    paymentPollStartedRef.current = true;
+    if (isSignedIn) {
+      setConfirmingPayment(true);
+      pollForPaymentConfirmation();
+    } else {
+      // Session was somehow lost between checkout and returning — nothing to
+      // confirm. Fall through to the normal signed-out landing.
+      setAwaitingPaymentConfirmation(false);
+    }
+  }, [authLoaded, isSignedIn, awaitingPaymentConfirmation, pollForPaymentConfirmation]);
+
+  // Manual "Refresh" on the exhausted confirming screen — just restarts the
+  // same poll from attempt 0.
+  const handleConfirmRefresh = useCallback(() => {
+    pollForPaymentConfirmation();
+  }, [pollForPaymentConfirmation]);
 
   // Handle consent submission
   const handleConsent = async (emailOptIn) => {
@@ -734,6 +889,15 @@ function AuthGateReal({ children }) {
         />
       </>
     );
+  }
+
+  // Confirming a Stripe payment return (N-A-1 / A1) — HIGHEST precedence
+  // among the signed-in branches below. Never falls through to the paywall
+  // (onboardingStep === 'subscribe') or into the app (children(...)) while a
+  // just-completed payment is still waiting on the webhook — that combination
+  // is exactly how a real payer would get shown free-tier locks.
+  if (confirmingPayment) {
+    return <ConfirmingPaymentScreen exhausted={confirmExhausted} onRefresh={handleConfirmRefresh} />;
   }
 
   // Signed in but checking/loading account

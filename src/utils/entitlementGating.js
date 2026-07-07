@@ -162,6 +162,25 @@ export function interpretDailyClaimResponse({ ok, data } = {}) {
   return 'allowed';
 }
 
+// ── Stripe-return payment confirmation ──
+//
+// Pure predicate AuthGate polls against after a Stripe checkout return
+// (?subscribed=1). Stripe's webhook that flips subscription_status to
+// 'active' can land a few seconds after the redirect, so the client must
+// not trust the FIRST /api/account response after landing back — it may
+// still carry the OLD (free) status. This is the single "is it now safe to
+// stop waiting and show the app" signal.
+//
+// tier === 'paid' is the correct high-level check: resolveEntitlements
+// (workers/ai-tutor/lib/entitlements.js) maps subscription_status 'active'
+// AND 'trialing' AND the future-period-end backstop all to tier 'paid' —
+// so this one comparison covers every "the subscription is now recognised"
+// case without re-deriving that branching here. Anything else (missing
+// access, still 'free'/'trial'/'grace') → not yet confirmed, keep polling.
+export function isPaymentConfirmed(access) {
+  return access?.entitlement?.tier === 'paid';
+}
+
 // Pure by design (takes the query string + NODE_ENV as plain args, never
 // reads window itself) so it can be exhaustively unit tested.
 export function resolveQaTierOverride(search, nodeEnv) {
