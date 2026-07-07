@@ -151,13 +151,22 @@ export function resolveAccessAdmission({ hasAccess, freeTierOn }) {
 // ── Daily-set claim response interpretation ──
 //
 // Pure decision function for POST /api/entitlements/claim-daily-set
-// (workers/ai-tutor/routes/entitlements.js). Enforces ONLY on the explicit,
-// decisive "daily_cap_reached" signal. Anything else — a genuine allow, a
-// network error, a 5xx, a malformed body, an unexpected shape — fails open
-// so a plumbing wobble never stops a child practising.
+// (workers/ai-tutor/routes/entitlements.js). Three outcomes:
+//   'cap_reached' — the explicit, decisive daily_cap_reached signal: today's
+//     row belongs to someone/something else, no fresh set may start.
+//   'resume'      — the row already belongs to THIS device's session (the
+//     resend was idempotent). The caller must restore the saved in-progress
+//     daily quiz, never generate a new one — if there's nothing saved to
+//     restore, that means today's set is already used up.
+//   'allowed'     — a genuine fresh claim, or anything not decisive enough
+//     to act on (network error, 5xx, malformed body, unexpected shape).
+//     Fails open so a plumbing wobble never stops a child practising.
 export function interpretDailyClaimResponse({ ok, data } = {}) {
   if (ok && data && data.allowed === false && data.code === 'daily_cap_reached') {
     return 'cap_reached';
+  }
+  if (ok && data && data.allowed === true && data.alreadyClaimed === true && data.ownedByThisSession === true) {
+    return 'resume';
   }
   return 'allowed';
 }

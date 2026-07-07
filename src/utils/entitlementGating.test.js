@@ -229,6 +229,18 @@ describe('interpretDailyClaimResponse — enforce ONLY on explicit daily_cap_rea
     expect(interpretDailyClaimResponse({ ok: true, data: { allowed: true, unlimited: true, tier: 'paid' } })).toBe('allowed');
   });
 
+  it('ok + allowed true + alreadyClaimed false → allowed — a genuine fresh claim, not a resume', () => {
+    expect(interpretDailyClaimResponse({ ok: true, data: { allowed: true, alreadyClaimed: false, ownedByThisSession: true, tier: 'free' } })).toBe('allowed');
+  });
+
+  it('ok + allowed true + alreadyClaimed true + ownedByThisSession true → resume — the same device re-sent its own token', () => {
+    expect(interpretDailyClaimResponse({ ok: true, data: { allowed: true, alreadyClaimed: true, ownedByThisSession: true, tier: 'free' } })).toBe('resume');
+  });
+
+  it('ok + allowed true + alreadyClaimed true but ownedByThisSession false → allowed, NOT resume — a different session owns today\'s row, this call never claimed anything', () => {
+    expect(interpretDailyClaimResponse({ ok: true, data: { allowed: true, alreadyClaimed: true, ownedByThisSession: false, tier: 'free' } })).toBe('allowed');
+  });
+
   it('ok + allowed false but WITHOUT the specific code → fails open to allowed (not decisive enough to block)', () => {
     expect(interpretDailyClaimResponse({ ok: true, data: { allowed: false } })).toBe('allowed');
   });

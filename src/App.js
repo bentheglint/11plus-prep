@@ -293,6 +293,9 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   // when handleNextQuestion fires twice (rapid double-click, StrictMode remount,
   // any async re-entry). Codex Fix E.
   const isSubmittingRef = React.useRef(false);
+  // Re-entry guard for starting Daily Learning — prevents a rapid double-tap
+  // from firing two overlapping claim-daily-set requests (N12).
+  const isStartingDailyRef = React.useRef(false);
   // Post-question tip state (Oracle: show tip ~every 3rd wrong answer)
   const wrongAnswerCount = React.useRef(0);
   const sessionShownTipIds = React.useRef(new Set());
@@ -433,6 +436,14 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
       localStorage.setItem(quizSaveKey, JSON.stringify(saveState));
     }
   }, [quizSaveKey, currentView, quizQuestions, currentQuestionIndex, answers, selectedAnswer, selectedPair, showFeedback, selectedSubject, selectedTopic, quizMode]);
+
+  // Returns the in-progress saved quiz ONLY if it's a Daily set for the
+  // current child — the one the free-tier daily claim can resume.
+  const getSavedDailyQuiz = () => {
+    if (!quizSaveKey) return null;
+    const saved = parseAndValidateQuiz(localStorage.getItem(quizSaveKey));
+    return saved && saved.quizMode === 'daily' ? saved : null;
+  };
 
   // Keep Dev Review panel context updated
   useEffect(() => {
@@ -632,7 +643,11 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   // Enforces ONLY on an explicit daily_cap_reached — any network error, 5xx,
   // or unexpected response shape fails open and the set starts anyway
   // (see interpretDailyClaimResponse in utils/entitlementGating.js).
-  const claimDailySetIfNeeded = async () => {
+  // `sessionId` is the caller's claim-ownership token: the saved daily
+  // quiz's own sessionId when resuming, or a fresh one for a genuinely new
+  // set — the server's idempotent-resume path only recognises a resend of
+  // the SAME token, so callers must pass the right one deliberately.
+  const claimDailySetIfNeeded = async (sessionId) => {
     if (!freeTierRolloutOn || !activeChildId || effectiveEntitlement?.tier !== 'free') return 'allowed';
     try {
       const token = await getToken();
@@ -643,7 +658,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
           'Content-Type': 'application/json',
           ...(token ? { Authorization: `Bearer ${token}` } : {}),
         },
-        body: JSON.stringify({ childId: activeChildId, sessionId: `daily-${Date.now()}` }),
+        body: JSON.stringify({ childId: activeChildId, sessionId }),
       });
       let data = null;
       try { data = await res.json(); } catch { data = null; }
@@ -655,33 +670,55 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   };
 
   const handleStartDaily = async (subjectOverride) => {
-    const decision = await claimDailySetIfNeeded();
-    if (decision === 'cap_reached') {
-      setDailyCapReached(true);
-      return;
-    }
+    if (isStartingDailyRef.current) return; // N12 double-tap guard
+    isStartingDailyRef.current = true;
+    try {
+      // The claim-ownership token is the saved daily set's sessionId when one
+      // exists (so re-entry is an idempotent resume), else a fresh id for a
+      // genuinely new set. A "resume" signal may ONLY restore the saved set —
+      // never start a fresh one — or the daily cap leaks.
+      const savedDaily = getSavedDailyQuiz();
+      const claimToken = savedDaily ? savedDaily.sessionId : Date.now();
+      const decision = await claimDailySetIfNeeded(claimToken);
+      if (decision === 'cap_reached') {
+        setDailyCapReached(true);
+        return;
+      }
+      if (decision === 'resume') {
+        if (savedDaily) {
+          resumeSavedQuiz(savedDaily);
+        } else {
+          // Owns today's row but nothing saved to resume — today's set is used up.
+          setDailyCapReached(true);
+        }
+        return;
+      }
 
-    if (subjectOverride) setSelectedSubject(subjectOverride);
-    const selected = selectDailyQuestions(subjectOverride);
-    setQuizQuestions(selected);
-    setQuizMode('daily');
-    setCurrentQuestionIndex(0);
-    setAnswers([]);
-    setSavedTimerSecs(0);
-    questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    quizSessionId.current = Date.now();
-    wrongAnswerCount.current = 0;
-    sessionShownTipIds.current = new Set();
-    setPostQuestionTip(null);
-    setSelectedAnswer(null);
-    setSelectedPair([]);
-    setShowFeedback(false);
-    setShowTutorChat(false);
-    setChatMessages([]);
-    // Pre-quiz tip for Daily: general strategy tip
-    const tip = selectPreQuizTip('daily', null, allTips, userData.seenTips);
-    setPreQuizTip(tip);
-    setShowPreQuizTip(!!tip);
-    setCurrentView('quiz');
+      // decision === 'allowed' → genuine fresh set for today
+      if (subjectOverride) setSelectedSubject(subjectOverride);
+      const selected = selectDailyQuestions(subjectOverride);
+      setQuizQuestions(selected);
+      setQuizMode('daily');
+      setCurrentQuestionIndex(0);
+      setAnswers([]);
+      setSavedTimerSecs(0);
+      questionStartTime.current = Date.now(); pausedTimeMs.current = 0; pauseStartTime.current = null;    quizSessionId.current = claimToken;
+      wrongAnswerCount.current = 0;
+      sessionShownTipIds.current = new Set();
+      setPostQuestionTip(null);
+      setSelectedAnswer(null);
+      setSelectedPair([]);
+      setShowFeedback(false);
+      setShowTutorChat(false);
+      setChatMessages([]);
+      // Pre-quiz tip for Daily: general strategy tip
+      const tip = selectPreQuizTip('daily', null, allTips, userData.seenTips);
+      setPreQuizTip(tip);
+      setShowPreQuizTip(!!tip);
+      setCurrentView('quiz');
+    } finally {
+      isStartingDailyRef.current = false;
+    }
   };
 
   // Begin a fresh Focused quiz — the original body of handleTopicSelect
@@ -966,10 +1003,26 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     // screen) must go through the same claim gate as handleStartDaily —
     // otherwise it's a second, unlimited route to fresh daily sets that
     // never touches the cap. Focused-mode retries are unaffected.
+    // "Retry" means start a NEW set, so there's normally no saved daily
+    // quiz left to resume (the save was cleared on completion) — but the
+    // same resume/cap handling applies if there somehow is one, for the
+    // same reason it applies in handleStartDaily: a "resume" signal may
+    // ONLY restore a saved set, never start a fresh one.
+    let dailyClaimToken = null;
     if (quizMode === 'daily') {
-      const decision = await claimDailySetIfNeeded();
+      const savedDaily = getSavedDailyQuiz();
+      dailyClaimToken = savedDaily ? savedDaily.sessionId : Date.now();
+      const decision = await claimDailySetIfNeeded(dailyClaimToken);
       if (decision === 'cap_reached') {
         setDailyCapReached(true);
+        return;
+      }
+      if (decision === 'resume') {
+        if (savedDaily) {
+          resumeSavedQuiz(savedDaily);
+        } else {
+          setDailyCapReached(true);
+        }
         return;
       }
     }
@@ -979,8 +1032,11 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
     } else if (quizMode === 'focused' && selectedTopic) {
       setQuizQuestions(selectFocusedQuestions(selectedTopic));
     }
-    // Reset session identifiers — matches the pattern in beginFocusedQuiz
-    quizSessionId.current = Date.now();
+    // Reset session identifiers — matches the pattern in beginFocusedQuiz.
+    // Daily keeps its claim token aligned with what the server just
+    // recognised, so a later re-entry resumes correctly; focused is
+    // unaffected and keeps a fresh id.
+    quizSessionId.current = quizMode === 'daily' ? dailyClaimToken : Date.now();
     questionStartTime.current = Date.now();
     setSavedTimerSecs(0);
     setCurrentQuestionIndex(0);
@@ -2678,7 +2734,7 @@ function DailyCapModal({ onUpgrade, onDismiss }) {
         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#EDE8FF] flex items-center justify-center">
           <Calendar className="w-8 h-8 text-[#7C3AED]" />
         </div>
-        <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">You've finished today's set</h2>
+        <h2 className="text-xl font-heading font-bold text-slate-800 mb-2">You've used today's free set</h2>
         <p className="text-sm text-gray-600 mb-6">
           Come back tomorrow for another free Daily Learning set, or upgrade for unlimited practice every day.
         </p>
