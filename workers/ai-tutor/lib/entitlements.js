@@ -14,10 +14,18 @@
 //   1. is_comped                                          → comped   (FULL)
 //   2. subscription_status === 'active'                   → paid     (FULL)
 //   3. subscription_status === 'trialing'                 → paid     (FULL)
-//   4. subscription_status === 'past_due'                 → grace    (FULL)
-//   5. subscription_current_period_end in the future       → paid     (FULL)
+//   4. subscription_status === 'past_due'                  → grace    (FULL)
+//      AND within PAST_DUE_GRACE_DAYS of periodEnd (see isWithinPastDueGrace)
+//      — a past_due sub whose grace has expired falls through to the rest
+//      of the ladder instead of granting indefinite access.
+//   5. subscription_current_period_end in the future        → paid     (FULL)
+//      AND subStatus is NOT in BACKSTOP_EXCLUDED_STATUSES
 //      (paid-through backstop — grants access even if status failed to
-//      populate or is 'canceled' but the period hasn't ended; never removes)
+//      populate or is 'canceled' but the period hasn't ended; never removes.
+//      Excludes 'unpaid'/'incomplete'/'incomplete_expired'/'paused' — these
+//      mean Stripe never successfully collected payment for that period, so
+//      a future period_end on those statuses doesn't mean "paid through";
+//      'canceled' and null/unknown statuses remain covered.)
 //   6. within the 30-day app trial window since created_at → trial    (FULL)
 //   6a. created_at missing/unparseable (NaN)                → trial    (FULL, fail-open)
 //      (a malformed date must never lock a real account out — we can't
@@ -36,6 +44,26 @@ export function isFutureEpoch(value, now) {
   const n = Number(value);
   if (!Number.isFinite(n)) return false;
   return n * 1000 > now.getTime();
+}
+
+// past_due means Stripe is actively retrying the charge — it resolves on
+// its own (flips to 'active' on eventual success, or 'unpaid'/'canceled'
+// once Stripe exhausts retries per the dashboard's retry schedule). So this
+// bound isn't really "how long do we tolerate a failed payment" — it's a
+// safety net for a MISSED terminal webhook (the retry-exhaustion event
+// never arrived). 14 days past period end is payer-friendly but finite;
+// tunable if Stripe's retry schedule changes.
+const PAST_DUE_GRACE_DAYS = 14;
+
+// Returns true when `periodEnd` (raw Stripe unix seconds) is still within
+// PAST_DUE_GRACE_DAYS of "now". A null/missing/unparseable periodEnd
+// returns false — with no date to check we cannot prove the account is
+// within grace, so we conservatively decline rather than grant indefinite
+// access.
+export function isWithinPastDueGrace(periodEnd, now) {
+  const n = Number(periodEnd);
+  if (!Number.isFinite(n)) return false;
+  return n * 1000 + PAST_DUE_GRACE_DAYS * MS_PER_DAY > now.getTime();
 }
 
 export const ENTITLEMENT_REASONS = Object.freeze({
@@ -61,6 +89,16 @@ export const ENTITLEMENT_KEYS = Object.freeze([
 
 const TRIAL_DAYS = 30;
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+// Statuses on which a future subscription_current_period_end must NOT be
+// read as "paid through" by the backstop (ladder step 5). Each of these
+// means Stripe never successfully collected payment for the current
+// period — 'unpaid' (retries exhausted, still unpaid), 'incomplete'/
+// 'incomplete_expired' (initial payment never completed), 'paused'
+// (collection deliberately paused). 'canceled' and null/unknown statuses
+// are deliberately NOT in this set — the backstop's whole purpose is
+// covering the paid-through-after-cancellation case.
+const BACKSTOP_EXCLUDED_STATUSES = new Set(['unpaid', 'incomplete', 'incomplete_expired', 'paused']);
 
 const FULL_ENTITLEMENTS = Object.freeze({
   unlimitedPractice: true,
@@ -126,12 +164,12 @@ export function resolveEntitlements(account, { tutorProfile = null, now = new Da
     tier = 'paid';
     reason = ENTITLEMENT_REASONS.SUB_TRIALING;
     payload = fullPayload();
-  } else if (subStatus === 'past_due') {
+  } else if (subStatus === 'past_due' && isWithinPastDueGrace(periodEnd, now)) {
     tier = 'grace';
     reason = ENTITLEMENT_REASONS.SUB_PAST_DUE;
     billingNote = 'past_due';
     payload = fullPayload();
-  } else if (isFutureEpoch(periodEnd, now)) {
+  } else if (isFutureEpoch(periodEnd, now) && !BACKSTOP_EXCLUDED_STATUSES.has(subStatus)) {
     tier = 'paid';
     reason = subStatus === 'canceled'
       ? ENTITLEMENT_REASONS.SUB_CANCELED_PAID_THROUGH

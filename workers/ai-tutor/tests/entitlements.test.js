@@ -111,13 +111,38 @@ describe('resolveEntitlements — subscription status branches', () => {
     expect(result.fullAccess).toBe(true);
   });
 
-  it('past_due → grace / sub_past_due, billingNote past_due', () => {
-    const account = baseAccount({ subscription_status: 'past_due' });
+  it('past_due WITHIN the 14-day grace window (period_end 2 days ago) → grace / sub_past_due, billingNote past_due', () => {
+    const account = baseAccount({ subscription_status: 'past_due', subscription_current_period_end: secondsFromNow(-2) });
     const result = resolveEntitlements(account, { now: NOW });
     expect(result.tier).toBe('grace');
     expect(result.reason).toBe(ENTITLEMENT_REASONS.SUB_PAST_DUE);
     expect(result.billingNote).toBe('past_due');
     expect(result.fullAccess).toBe(true);
+  });
+
+  it('past_due BEYOND the 14-day grace window (period_end 20 days ago) → grace NOT granted, falls through (free once trial also expired)', () => {
+    const account = baseAccount({
+      subscription_status: 'past_due',
+      subscription_current_period_end: secondsFromNow(-20),
+      created_at: daysAgoISO(60), // outside trial window too, so the fall-through resolves to free
+    });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).not.toBe('grace');
+    expect(result.reason).not.toBe(ENTITLEMENT_REASONS.SUB_PAST_DUE);
+    expect(result.tier).toBe('free');
+    expect(result.fullAccess).toBe(false);
+  });
+
+  it('past_due with NULL period_end → grace NOT granted (no date to prove it is within grace)', () => {
+    const account = baseAccount({
+      subscription_status: 'past_due',
+      subscription_current_period_end: null,
+      created_at: daysAgoISO(60),
+    });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).not.toBe('grace');
+    expect(result.tier).toBe('free');
+    expect(result.fullAccess).toBe(false);
   });
 });
 
@@ -171,6 +196,34 @@ describe('resolveEntitlements — paid-through backstop', () => {
     expect(result.tier).toBe('paid');
     expect(result.reason).toBe(ENTITLEMENT_REASONS.PAID_THROUGH_BACKSTOP);
     expect(result.billingNote).toBeNull();
+    expect(result.fullAccess).toBe(true);
+  });
+
+  it.each(['unpaid', 'incomplete', 'incomplete_expired', 'paused'])(
+    'status %s + period_end FUTURE → backstop does NOT grant access (payment was never actually collected for that period)',
+    (status) => {
+      const account = baseAccount({
+        subscription_status: status,
+        subscription_current_period_end: secondsFromNow(10),
+        created_at: daysAgoISO(60), // outside trial window — isolates the backstop, not the trial
+      });
+      const result = resolveEntitlements(account, { now: NOW });
+      expect(result.tier).not.toBe('paid');
+      expect(result.reason).not.toBe(ENTITLEMENT_REASONS.PAID_THROUGH_BACKSTOP);
+      expect(result.fullAccess).toBe(false);
+      expect(result.tier).toBe('free');
+    }
+  );
+
+  it('status canceled + period_end FUTURE → still full access (paid-through preserved, canceled not excluded)', () => {
+    const account = baseAccount({
+      subscription_status: 'canceled',
+      subscription_current_period_end: secondsFromNow(10),
+      created_at: daysAgoISO(60),
+    });
+    const result = resolveEntitlements(account, { now: NOW });
+    expect(result.tier).toBe('paid');
+    expect(result.reason).toBe(ENTITLEMENT_REASONS.SUB_CANCELED_PAID_THROUGH);
     expect(result.fullAccess).toBe(true);
   });
 });

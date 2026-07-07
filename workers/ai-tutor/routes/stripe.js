@@ -145,6 +145,17 @@ export function getPeriodEnd(sub) {
   return sub?.current_period_end ?? sub?.items?.data?.[0]?.current_period_end ?? null;
 }
 
+// Stripe moved `invoice.subscription` to
+// `invoice.parent.subscription_details.subscription` as of API version
+// 2025-03-31.basil. We read both locations so the subscription-linked guard
+// below keeps working regardless of which API version the Stripe dashboard
+// has pinned — on basil+ dashboards the old `invoice.subscription` field is
+// always null, which had silently turned the Gap-3 period-end refresh (see
+// invoice.paid handling) into dead code.
+export function invoiceSubscriptionId(invoice) {
+  return invoice?.subscription ?? invoice?.parent?.subscription_details?.subscription ?? null;
+}
+
 // invoice.paid/invoice.payment_succeeded carry no subscription-level
 // current_period_end at all — the closest signal is each invoice line's
 // billing period. Best-effort only: returns the latest line period.end
@@ -174,11 +185,29 @@ function maxInvoiceLinePeriodEnd(invoice) {
 // `UPDATE accounts SET stripe_customer_id = ...` (L169-170) landing — we
 // retry by Clerk user id (subscription/checkout metadata.clerk_user_id,
 // set at L191-193) and backfill stripe_customer_id onto that row so the
-// fast path works next time. If NEITHER matches, we log a loud error
-// (an account exists with paid access that D1 can't locate) but still
-// return normally so the caller can 200 the webhook — Stripe would
-// otherwise retry a genuinely unmatchable event forever.
-export async function updateAccountBilling(db, { customerId, clerkUserId, status, periodEnd }) {
+// fast path works next time. If NEITHER matches, we log a loud UNMATCHED
+// error (an account exists with paid access that D1 can't locate) but
+// still return normally so the caller can 200 the webhook — Stripe would
+// otherwise retry a genuinely unmatchable event forever. UNMATCHED now
+// means genuinely-no-row-matched: a guard refusal (below) is disambiguated
+// on the zero-changes path and logs its own benign line instead.
+//
+// `refuseWhenStatusIn` (optional array) adds a conservative guard: rows
+// whose CURRENT subscription_status is in that list are left untouched by
+// this write. This exists for the invoice.paid/payment_succeeded handler
+// (N6): out-of-order delivery can land a late-retried invoice.paid AFTER
+// customer.subscription.deleted already wrote 'canceled', and without this
+// guard the invoice-inferred 'active' write would permanently resurrect a
+// subscription the account holder genuinely cancelled. When the guard
+// refuses (a row matched but was in the refused-status list), we log a
+// distinct benign line rather than the UNMATCHED error. We deliberately do
+// NOT compare event timestamps here (no per-account last-event-time column
+// exists, and we're not adding one for this) — a genuine reactivation
+// always arrives via customer.subscription.created/updated, which carries
+// Stripe's authoritative current status and is NOT guarded, so it writes
+// through regardless. reconcileSubscriptions() is the safety net that
+// surfaces the rare case where the cancellation itself was the stale event.
+export async function updateAccountBilling(db, { customerId, clerkUserId, status, periodEnd, refuseWhenStatusIn }) {
   const setParts = [];
   const params = [];
   if (status !== undefined) {
@@ -191,20 +220,54 @@ export async function updateAccountBilling(db, { customerId, clerkUserId, status
   }
   if (setParts.length === 0) return 0;
 
+  const guardActive = Array.isArray(refuseWhenStatusIn) && refuseWhenStatusIn.length > 0;
+  const guardClause = guardActive
+    ? ` AND (subscription_status IS NULL OR subscription_status NOT IN (${refuseWhenStatusIn.map(() => '?').join(', ')}))`
+    : '';
+  const guardParams = guardActive ? refuseWhenStatusIn : [];
+
   const byCustomer = await db.prepare(
-    `UPDATE accounts SET ${setParts.join(', ')} WHERE stripe_customer_id = ?`
-  ).bind(...params, customerId).run();
+    `UPDATE accounts SET ${setParts.join(', ')} WHERE stripe_customer_id = ?${guardClause}`
+  ).bind(...params, customerId, ...guardParams).run();
   let changes = byCustomer.meta?.changes || 0;
 
   if (changes === 0 && clerkUserId) {
     const byUser = await db.prepare(
-      `UPDATE accounts SET ${setParts.join(', ')}, stripe_customer_id = ? WHERE id = ?`
-    ).bind(...params, customerId, clerkUserId).run();
+      `UPDATE accounts SET ${setParts.join(', ')}, stripe_customer_id = ? WHERE id = ?${guardClause}`
+    ).bind(...params, customerId, clerkUserId, ...guardParams).run();
     changes = byUser.meta?.changes || 0;
   }
 
   if (changes === 0) {
-    console.error('[Stripe webhook] UNMATCHED account', JSON.stringify({ customerId, clerkUserId, status }));
+    // Zero rows changed. This can mean two very different things when a
+    // status guard is active: either (a) no account matched at all
+    // (genuinely UNMATCHED — worth a loud error), or (b) a row DID match
+    // but the guard deliberately refused the write — e.g. a late-retried
+    // invoice.paid correctly declined against an already-canceled account
+    // (N6). (b) is expected, benign behaviour and must NOT masquerade as an
+    // unmatched-account alert. We run ONE targeted SELECT to tell them
+    // apart — this only ever executes on the already-rare zero-changes
+    // path, never on the normal webhook success path, so there is no
+    // hot-path cost.
+    let refusedByGuard = false;
+    if (guardActive) {
+      // Match by customer OR (when present) clerk id, restricted to the
+      // guarded statuses. clerkUserId falls back to customerId as a
+      // harmless duplicate bind when absent (never matches an id column).
+      const probe = await db.prepare(
+        `SELECT 1 FROM accounts
+         WHERE (stripe_customer_id = ? OR id = ?)
+           AND subscription_status IN (${refuseWhenStatusIn.map(() => '?').join(', ')})
+         LIMIT 1`
+      ).bind(customerId, clerkUserId ?? customerId, ...refuseWhenStatusIn).first();
+      refusedByGuard = !!probe;
+    }
+
+    if (refusedByGuard) {
+      console.log('[Stripe webhook] write refused by status guard', JSON.stringify({ customerId, status, refusedWhenIn: refuseWhenStatusIn }));
+    } else {
+      console.error('[Stripe webhook] UNMATCHED account', JSON.stringify({ customerId, clerkUserId, status }));
+    }
   }
 
   return changes;
@@ -373,7 +436,13 @@ export async function handleWebhook(request, env) {
       }
       case 'invoice.payment_failed': {
         const invoice = event.data.object;
-        if (invoice.customer) {
+        // N5.3: only flip to past_due when the failed invoice is actually
+        // subscription-linked. A one-off, non-subscription invoice (e.g. a
+        // manually issued invoice, or a future add-on purchase) failing
+        // must not mark the account's subscription as past_due — that
+        // would wrongly gate access on something unrelated to the sub.
+        const subId = invoiceSubscriptionId(invoice);
+        if (invoice.customer && subId) {
           await updateAccountBilling(db, {
             customerId: invoice.customer,
             status: 'past_due',
@@ -393,11 +462,17 @@ export async function handleWebhook(request, env) {
         // dropped subscription.updated doesn't leave the date stale
         // through a renewal (Gap 3).
         const invoice = event.data.object;
-        if (invoice.customer && invoice.subscription) {
+        const subId = invoiceSubscriptionId(invoice); // N7: reads both legacy and basil+ locations
+        if (invoice.customer && subId) {
           await updateAccountBilling(db, {
             customerId: invoice.customer,
             status: 'active',
             periodEnd: maxInvoiceLinePeriodEnd(invoice),
+            // N6: never let an out-of-order/late-retried invoice.paid
+            // resurrect a subscription that customer.subscription.deleted
+            // already marked canceled. See updateAccountBilling's doc
+            // comment for the full reasoning.
+            refuseWhenStatusIn: ['canceled'],
           });
         }
         break;
@@ -417,9 +492,10 @@ export async function handleWebhook(request, env) {
 
 // ── Reconciliation cron ──
 //
-// Daily sanity check: pull active subscriptions from Stripe, compare to
-// what D1 has marked active, log drift. Catches edge cases where a
-// webhook was missed or the dedup table swallowed a real event.
+// Daily sanity check: pull active + past_due subscriptions from Stripe,
+// compare to what D1 has marked active/trialing/past_due, log drift.
+// Catches edge cases where a webhook was missed or the dedup table
+// swallowed a real event.
 //
 // Strategy: Stripe is the source of truth for billing. If D1 disagrees,
 // we log it but DON'T auto-correct — better to surface drift to a human
@@ -428,27 +504,40 @@ export async function handleWebhook(request, env) {
 export async function reconcileSubscriptions(env) {
   const db = env.DB;
 
-  // Stripe-side: list all active subscriptions (paginate if >100).
-  let stripeActive = new Set();
-  let startingAfter = null;
-  for (let page = 0; page < 10; page++) {
-    const path = `/subscriptions?status=active&limit=100${startingAfter ? `&starting_after=${startingAfter}` : ''}`;
-    const data = await stripeCall(env, 'GET', path);
-    for (const sub of data.data || []) {
-      if (sub.customer) stripeActive.add(sub.customer);
+  // Stripe-side: list all subscriptions in each status (paginate if >100
+  // per status). Kept as two clean per-status passes rather than one
+  // combined query — Stripe's list endpoint only accepts a single status
+  // filter value.
+  async function listCustomersByStatus(status) {
+    const customers = new Set();
+    let startingAfter = null;
+    for (let page = 0; page < 10; page++) {
+      const path = `/subscriptions?status=${status}&limit=100${startingAfter ? `&starting_after=${startingAfter}` : ''}`;
+      const data = await stripeCall(env, 'GET', path);
+      for (const sub of data.data || []) {
+        if (sub.customer) customers.add(sub.customer);
+      }
+      if (!data.has_more) break;
+      startingAfter = data.data[data.data.length - 1]?.id;
+      if (!startingAfter) break;
     }
-    if (!data.has_more) break;
-    startingAfter = data.data[data.data.length - 1]?.id;
-    if (!startingAfter) break;
+    return customers;
   }
 
-  // D1-side: every account with status=active or trialing.
-  const { results: d1Active } = await db.prepare(
+  const stripeActive = await listCustomersByStatus('active');
+  const stripePastDue = await listCustomersByStatus('past_due');
+
+  // D1-side: every account with status=active, trialing, or past_due
+  // (past_due widened in for N5.4 — bounded grace means a stuck past_due
+  // row can still be granting access, so it needs the same drift check).
+  const { results: d1Rows } = await db.prepare(
     `SELECT id, email, stripe_customer_id, subscription_status
      FROM accounts
-     WHERE subscription_status IN ('active', 'trialing')
+     WHERE subscription_status IN ('active', 'trialing', 'past_due')
        AND stripe_customer_id IS NOT NULL`
   ).all();
+  const d1Active = d1Rows.filter(a => a.subscription_status === 'active' || a.subscription_status === 'trialing');
+  const d1PastDue = d1Rows.filter(a => a.subscription_status === 'past_due');
   const d1ActiveCustomers = new Set(d1Active.map(a => a.stripe_customer_id));
 
   // Drift class A — D1 thinks active, Stripe says not.
@@ -459,18 +548,33 @@ export async function reconcileSubscriptions(env) {
   // Likely cause: missed customer.subscription.created/updated webhook.
   const missedActive = [...stripeActive].filter(c => !d1ActiveCustomers.has(c));
 
+  // Drift class C — D1 has a past_due row (possibly still inside its
+  // bounded grace window per lib/entitlements.js) that Stripe no longer
+  // recognises as active OR retrying (i.e. not in either status set).
+  // Genuinely stuck/gone: Stripe has moved on (succeeded, exhausted
+  // retries, or the sub was deleted) but D1 never got the terminal
+  // webhook. A past_due row that IS in stripePastDue is consistent —
+  // Stripe is still retrying — and must NOT be flagged as drift.
+  const stuckPastDue = d1PastDue.filter(
+    a => !stripeActive.has(a.stripe_customer_id) && !stripePastDue.has(a.stripe_customer_id)
+  );
+
   const summary = {
     stripe_active_count: stripeActive.size,
+    stripe_past_due_count: stripePastDue.size,
     d1_active_count: d1Active.length,
+    d1_past_due_count: d1PastDue.length,
     drift_d1_says_active_stripe_doesnt: ghostActive.length,
     drift_stripe_says_active_d1_doesnt: missedActive.length,
+    stuck_past_due: stuckPastDue.length,
   };
 
-  if (ghostActive.length || missedActive.length) {
+  if (ghostActive.length || missedActive.length || stuckPastDue.length) {
     console.error('[reconciliation] DRIFT DETECTED', JSON.stringify({
       ...summary,
       ghost_active: ghostActive.map(a => ({ id: a.id, email: a.email, customer: a.stripe_customer_id })),
       missed_active_customers: missedActive,
+      stuck_past_due_accounts: stuckPastDue.map(a => ({ id: a.id, email: a.email, customer: a.stripe_customer_id })),
     }));
   } else {
     console.log('[reconciliation] OK', JSON.stringify(summary));
