@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Printer, Loader, AlertCircle, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { formatTopicKey } from '../utils/topicLabels';
+import FreePlanNudge from '../components/tutor/FreePlanNudge';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
@@ -113,6 +114,33 @@ export default function ReportScreen({ childId, getToken, onBack }) {
           <AlertCircle className="w-10 h-10 text-red-400 mx-auto mb-3" />
           <p className="font-medium text-slate-700 mb-4">{error}</p>
           <button onClick={onBack} className="px-6 py-2 bg-[#7C3AED] text-white font-bold rounded-xl">Back</button>
+        </div>
+      </div>
+    );
+  }
+
+  // Free-plan pupil: the server sends a minimal { locked, code, pupilPlan,
+  // child } payload with none of the full-report fields — return before the
+  // destructure below, which would otherwise crash on assignments.total.
+  if (report.locked) {
+    return (
+      <div className="app-bg min-h-screen p-4">
+        <div className="max-w-2xl mx-auto flex items-center mb-4">
+          <button onClick={onBack} className="flex items-center gap-2 text-sm text-slate-600 hover:text-slate-800">
+            <ArrowLeft className="w-4 h-4" /> Back
+          </button>
+        </div>
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-md p-6">
+          <div className="border-b border-gray-100 pb-4 mb-5">
+            <h1 className="font-heading text-2xl font-bold text-slate-900">{report.child?.displayName || 'Pupil'}</h1>
+            <p className="text-slate-500 text-sm mt-0.5">
+              {report.child?.yearGroup ? `Year ${report.child.yearGroup}` : ''}
+              {report.child?.targetSchool ? ` · ${report.child.targetSchool}` : ''}
+            </p>
+          </div>
+          <FreePlanNudge title="Progress report needs PrepStep Plus">
+            {report.child?.displayName || 'This pupil'} is on the free PrepStep plan. A full printable progress report is part of PrepStep Plus. Ask their parent to upgrade to unlock it.
+          </FreePlanNudge>
         </div>
       </div>
     );

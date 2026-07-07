@@ -11,6 +11,7 @@ import SpeedTracking from '../components/progress/SpeedTracking';
 import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant';
 import ReportScreen from './ReportScreen';
 import MessageThread from '../components/MessageThread';
+import FreePlanNudge from '../components/tutor/FreePlanNudge';
 import { formatTopicKey } from '../utils/topicLabels';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
@@ -308,7 +309,13 @@ export default function PupilDetailScreen({ childId, getToken, onBack, panelMode
     );
   }
 
-  const { child, quizResults, assignmentRecipients } = data;
+  const { child, assignmentRecipients } = data;
+  // Free-plan pupils: the server withholds quizResults/questionResults/
+  // topicPerformance/mockTestHistory/practiceLog entirely and marks the
+  // payload with deepProgressLocked — default quizResults so the render
+  // below never dereferences .length on undefined.
+  const locked = !!data.deepProgressLocked;
+  const quizResults = data.quizResults || [];
 
   // Messages screen
   if (showMessages && conversationId) {
@@ -391,53 +398,61 @@ export default function PupilDetailScreen({ childId, getToken, onBack, panelMode
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', stiffness: 200, damping: 22 }}
         >
-          <ExamReadinessCard mastery={mastery} />
-          <TopicHeatMap mastery={mastery} onTopicClick={() => {}} />
-          <FocusAreas mastery={mastery} onTopicClick={() => {}} pupilName={child.display_name} />
-          {data.mockTestHistory?.length > 0 && (
-            <MockTestHistory mockTestHistory={data.mockTestHistory} />
-          )}
+          {locked ? (
+            <FreePlanNudge title="Full analytics need PrepStep Plus" className="mb-4">
+              {child.display_name} is on the free PrepStep plan, so detailed progress, topic analytics and mock results aren't shared with tutors. Ask their parent to upgrade to PrepStep Plus to unlock the full picture.
+            </FreePlanNudge>
+          ) : (
+            <>
+              <ExamReadinessCard mastery={mastery} />
+              <TopicHeatMap mastery={mastery} onTopicClick={() => {}} />
+              <FocusAreas mastery={mastery} onTopicClick={() => {}} pupilName={child.display_name} />
+              {data.mockTestHistory?.length > 0 && (
+                <MockTestHistory mockTestHistory={data.mockTestHistory} />
+              )}
 
-          <PracticeCalendar practiceDays={practiceDays} practiceLog={practiceLog} />
-          <SpeedTracking questionResults={data?.questionResults || []} />
-          <SpeedAccuracyQuadrant questionResults={data?.questionResults || []} />
+              <PracticeCalendar practiceDays={practiceDays} practiceLog={practiceLog} />
+              <SpeedTracking questionResults={data?.questionResults || []} />
+              <SpeedAccuracyQuadrant questionResults={data?.questionResults || []} />
 
-          {/* Recent quizzes */}
-          {quizResults.length > 0 && (
-            <Section title="Recent quizzes" count={quizResults.length} defaultOpen={false}>
-              <div className="flex flex-col gap-2">
-                {quizResults.slice(0, 20).map((r, i) => {
-                  const canDrillDown = !!r.sessionId && !!onViewQuizDetail;
-                  const Row = canDrillDown ? 'button' : 'div';
-                  return (
-                    <Row
-                      key={i}
-                      type={canDrillDown ? 'button' : undefined}
-                      onClick={canDrillDown ? () => onViewQuizDetail(r, data.questionResults) : undefined}
-                      className={`w-full flex items-center gap-3 py-2 border-b border-slate-100 last:border-b-0 text-left ${canDrillDown ? 'hover:bg-slate-50 -mx-1 px-1 rounded-lg transition-colors cursor-pointer' : ''}`}
-                    >
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium text-slate-800 capitalize">
-                          {formatTopicKey(r.topicKey)}
-                          <span className="text-slate-400 font-normal text-xs"> · {r.subject}</span>
-                        </p>
-                        <p className="text-xs text-slate-400">
-                          {new Date(normaliseDate(r.completedAt)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
-                        </p>
-                      </div>
-                      <div className="text-right flex-shrink-0">
-                        <p className="text-sm font-bold text-slate-800">{r.score}/{r.total}</p>
-                        <p className={`text-xs font-medium ${
-                          r.total > 0 && r.score / r.total >= 0.8 ? 'text-green-600' :
-                          r.total > 0 && r.score / r.total >= 0.5 ? 'text-yellow-600' : 'text-red-500'
-                        }`}>{r.total > 0 ? `${Math.round((r.score / r.total) * 100)}%` : '—'}</p>
-                      </div>
-                      {canDrillDown && <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0" />}
-                    </Row>
-                  );
-                })}
-              </div>
-            </Section>
+              {/* Recent quizzes */}
+              {quizResults.length > 0 && (
+                <Section title="Recent quizzes" count={quizResults.length} defaultOpen={false}>
+                  <div className="flex flex-col gap-2">
+                    {quizResults.slice(0, 20).map((r, i) => {
+                      const canDrillDown = !!r.sessionId && !!onViewQuizDetail;
+                      const Row = canDrillDown ? 'button' : 'div';
+                      return (
+                        <Row
+                          key={i}
+                          type={canDrillDown ? 'button' : undefined}
+                          onClick={canDrillDown ? () => onViewQuizDetail(r, data.questionResults) : undefined}
+                          className={`w-full flex items-center gap-3 py-2 border-b border-slate-100 last:border-b-0 text-left ${canDrillDown ? 'hover:bg-slate-50 -mx-1 px-1 rounded-lg transition-colors cursor-pointer' : ''}`}
+                        >
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm font-medium text-slate-800 capitalize">
+                              {formatTopicKey(r.topicKey)}
+                              <span className="text-slate-400 font-normal text-xs"> · {r.subject}</span>
+                            </p>
+                            <p className="text-xs text-slate-400">
+                              {new Date(normaliseDate(r.completedAt)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                            </p>
+                          </div>
+                          <div className="text-right flex-shrink-0">
+                            <p className="text-sm font-bold text-slate-800">{r.score}/{r.total}</p>
+                            <p className={`text-xs font-medium ${
+                              r.total > 0 && r.score / r.total >= 0.8 ? 'text-green-600' :
+                              r.total > 0 && r.score / r.total >= 0.5 ? 'text-yellow-600' : 'text-red-500'
+                            }`}>{r.total > 0 ? `${Math.round((r.score / r.total) * 100)}%` : '—'}</p>
+                          </div>
+                          {canDrillDown && <ChevronRight className="w-4 h-4 text-slate-300 flex-shrink-0" />}
+                        </Row>
+                      );
+                    })}
+                  </div>
+                </Section>
+              )}
+            </>
           )}
 
           {/* Assignments */}

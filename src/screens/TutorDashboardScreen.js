@@ -20,7 +20,16 @@ async function apiFetch(path, getToken, options = {}) {
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}`, ...options.headers },
   });
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.error || `Error ${res.status}`);
+  if (!res.ok) {
+    // Attach the parsed body + status so callers that need the machine
+    // detail (e.g. AssignmentComposer reading .code/.skipped off a 422) can
+    // get at it. The message itself is unchanged, so every existing caller
+    // that only reads err.message is unaffected.
+    const err = new Error(data.error || `Error ${res.status}`);
+    err.data = data;
+    err.status = res.status;
+    throw err;
+  }
   return data;
 }
 
@@ -126,6 +135,11 @@ function PupilRow({ pupil, onClick, isActive }) {
           <span className="font-semibold text-slate-800 text-sm truncate">{pupil.display_name}</span>
           {pupil.year_group && (
             <span className="text-xs text-slate-400 flex-shrink-0">Y{pupil.year_group}</span>
+          )}
+          {pupil.deepProgressLocked && (
+            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 flex-shrink-0">
+              Free plan
+            </span>
           )}
           <span className={`ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full ${statusColor}`}>
             {statusLabel}
@@ -544,6 +558,10 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
   const [items, setItems] = useState(initialItems?.length ? initialItems : [{ itemType: 'topic', subject: 'maths', topicKey: '' }]);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(null);
+  // Free pupils dropped from a mixed-class assignment (server-side skip).
+  // Non-null keeps the modal open with a summary banner instead of closing
+  // it, since a tutor sending to a class needs to see who was left out.
+  const [skippedInfo, setSkippedInfo] = useState(null);
 
   const addItem = () => setItems(prev => [...prev, { itemType: 'topic', subject: 'maths', topicKey: '' }]);
   const removeItem = (i) => setItems(prev => prev.filter((_, idx) => idx !== i));
@@ -581,16 +599,37 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
         method: 'POST',
         body: JSON.stringify(body),
       });
-      onCreated(data.assignment);
+      if (data.skipped && data.skipped.length) {
+        // Some recipients were free-plan pupils dropped server-side. Refresh
+        // the roster/list in the background but keep the modal open so the
+        // tutor can see who was skipped, rather than closing straight away.
+        onCreated(data.assignment);
+        setSkippedInfo(data.skipped);
+        setSaving(false);
+      } else {
+        onCreated(data.assignment);
+        onClose();
+      }
     } catch (err) {
-      setError(err.message);
+      const code = err.data?.code;
+      if (code === 'no_eligible_recipients') {
+        setError("Everyone you selected is on the free plan. Upgrade them to PrepStep Plus to assign Focused Learning homework.");
+      } else if (code === 'empty_target') {
+        setError('That class has no pupils to assign to yet.');
+      } else {
+        setError(err.message);
+      }
       setSaving(false);
     }
   };
 
   const targetOptions = targetType === 'class'
-    ? classes.map(c => ({ id: c.id, label: c.name }))
-    : roster.map(p => ({ id: p.id, label: p.display_name }));
+    ? classes.map(c => ({ id: c.id, label: c.name, disabled: false }))
+    : roster.map(p => ({
+        id: p.id,
+        label: p.deepProgressLocked ? `${p.display_name} · Free plan` : p.display_name,
+        disabled: !!p.deepProgressLocked,
+      }));
 
   return (
     <div className="fixed inset-0 bg-black/30 z-50 flex items-end sm:items-center justify-center p-4" onClick={onClose}>
@@ -641,8 +680,13 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
               value={targetId} onChange={e => setTargetId(e.target.value)}
             >
               <option value="">Select…</option>
-              {targetOptions.map(o => <option key={o.id} value={o.id}>{o.label}</option>)}
+              {targetOptions.map(o => <option key={o.id} value={o.id} disabled={o.disabled}>{o.label}</option>)}
             </select>
+            {targetType === 'child' && (
+              <p className="text-xs text-slate-400 mt-1.5">
+                Pupils on the free plan can't be set Focused Learning homework. Upgrade them to PrepStep Plus to assign work.
+              </p>
+            )}
           </div>
 
           <div>
@@ -690,16 +734,32 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
             <div className="p-3 rounded-lg bg-red-50 text-red-700 text-sm">{error}</div>
           )}
 
-          <button
-            type="button"
-            onClick={handleSend}
-            disabled={saving}
-            className={`w-full py-3 rounded-xl font-bold text-white text-sm transition-colors ${
-              saving ? 'bg-slate-300 cursor-not-allowed' : 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
-            }`}
-          >
-            {saving ? 'Saving…' : 'Send assignment'}
-          </button>
+          {skippedInfo && (
+            <div className="p-3 rounded-lg bg-amber-50 text-amber-700 text-sm">
+              {skippedInfo.length} pupil{skippedInfo.length !== 1 ? 's' : ''} on the free plan {skippedInfo.length !== 1 ? 'were' : 'was'} skipped: {skippedInfo.map(s => s.childName).join(', ')}. Upgrade them to PrepStep Plus to include them.
+            </div>
+          )}
+
+          {skippedInfo ? (
+            <button
+              type="button"
+              onClick={onClose}
+              className="w-full py-3 rounded-xl font-bold text-white text-sm bg-[#7C3AED] hover:bg-[#5A4BD1] transition-colors"
+            >
+              Done
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={handleSend}
+              disabled={saving}
+              className={`w-full py-3 rounded-xl font-bold text-white text-sm transition-colors ${
+                saving ? 'bg-slate-300 cursor-not-allowed' : 'bg-[#7C3AED] hover:bg-[#5A4BD1]'
+              }`}
+            >
+              {saving ? 'Saving…' : 'Send assignment'}
+            </button>
+          )}
         </div>
       </div>
     </div>
@@ -880,7 +940,10 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
             getToken={getToken}
             initialItems={composerPrefill?.initialItems}
             initialTitle={composerPrefill?.initialTitle}
-            onCreated={() => { closeComposer(); loadDashboard(); }}
+            // AssignmentComposer now closes itself on a clean send (so it can
+            // stay open instead when pupils were skipped for being on the
+            // free plan) — onCreated here only needs to refresh the roster.
+            onCreated={() => { loadDashboard(); }}
             onClose={closeComposer}
           />
         )}
@@ -1169,7 +1232,10 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
             getToken={getToken}
             initialItems={composerPrefill?.initialItems}
             initialTitle={composerPrefill?.initialTitle}
-            onCreated={() => { closeComposer(); loadDashboard(); }}
+            // AssignmentComposer now closes itself on a clean send (so it can
+            // stay open instead when pupils were skipped for being on the
+            // free plan) — onCreated here only needs to refresh the roster.
+            onCreated={() => { loadDashboard(); }}
             onClose={closeComposer}
           />
         )}
@@ -1228,7 +1294,10 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
             getToken={getToken}
             initialItems={composerPrefill?.initialItems}
             initialTitle={composerPrefill?.initialTitle}
-            onCreated={() => { closeComposer(); loadDashboard(); }}
+            // AssignmentComposer now closes itself on a clean send (so it can
+            // stay open instead when pupils were skipped for being on the
+            // free plan) — onCreated here only needs to refresh the roster.
+            onCreated={() => { loadDashboard(); }}
             onClose={closeComposer}
           />
         )}
