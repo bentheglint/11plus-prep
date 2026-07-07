@@ -387,11 +387,11 @@ export function buildDay14Email(account, quizCount, currentStreak, weakest) {
 export function buildDay25Email(account, quizCount, currentStreak, weakest) {
   const child = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
-  const subject = `5 days left in ${child}'s PrepStep trial`;
+  const subject = `${child}'s full-access trial ends in 5 days`;
 
   const summary = quizCount > 0
-    ? `Your free trial ends in 5 days. ${child} has completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} and built up ${currentStreak > 0 ? `a ${currentStreak}-day streak and ` : ''}real learning data — all of which stays in the app when you subscribe.`
-    : `Your free trial ends in 5 days. If you haven't had a chance to try PrepStep yet, there are still 5 days of full access before the trial ends.`;
+    ? `In 5 days ${child}'s full-access trial becomes the free PrepStep plan — they'll keep a Daily Learning set each day plus all their progress and streaks. Subscribe to PrepStep Plus to keep everything unlocked: the ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} of learning data${currentStreak > 0 ? ` and ${currentStreak}-day streak` : ''} they've built stays either way, but Plus keeps unlimited practice, every topic and mock tests open.`
+    : `In 5 days ${child}'s full-access trial becomes the free PrepStep plan. There are still 5 days of full access to explore everything — and after that the free plan keeps a Daily Learning set open every day.`;
 
   const weakestLine = weakest && quizCount > 0
     ? bodyText(`${child} has more to do on <strong>${formatTopicKey(weakest.topicKey)}</strong> (${weakest.accuracy}% — the weakest area we've identified). Subscribing keeps that work going.`, { muted: true, size: 15 })
@@ -430,11 +430,11 @@ export function buildDay25Email(account, quizCount, currentStreak, weakest) {
 export function buildDay30Email(account, quizCount, currentStreak) {
   const child = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
-  const subject = `${child}'s PrepStep trial has ended`;
+  const subject = `${child} has moved to the free PrepStep plan`;
 
   const summary = quizCount > 0
-    ? `${child}'s 30-day free trial ended yesterday. Their progress so far — ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} completed${currentStreak > 0 ? `, a ${currentStreak}-day streak` : ''}, mastery data, mock test results — is all preserved. Pick up where you left off with a subscription.`
-    : `${child}'s 30-day free trial ended yesterday. No worries if you didn't get a chance to try it properly — life is busy. Their account stays open for 6 months in case you want to come back.`;
+    ? `${child}'s 30-day full-access trial has finished — and they've now moved onto the free PrepStep plan, so they keep learning every day at no cost. Everything they've built — ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} completed${currentStreak > 0 ? `, a ${currentStreak}-day streak` : ''}, their mastery and mock results — all stays put. On the free plan ${child} gets a Daily Learning set every day, plus every game, streak and reward. PrepStep Plus opens up unlimited practice, Focused Learning on every topic, mock tests, and your full progress dashboard.`
+    : `${child}'s 30-day full-access trial has finished, and they've moved onto the free PrepStep plan — so PrepStep stays open and free for them whenever they're ready. It's not too late to start: the free plan gives a Daily Learning set every day, and PrepStep Plus opens up unlimited practice and the full toolkit.`;
 
   const priceCard = `
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
@@ -442,7 +442,7 @@ export function buildDay30Email(account, quizCount, currentStreak) {
         <td style="background:${C.bgBrandSoft};border:1px solid ${C.borderBrand};border-radius:12px;padding:24px;text-align:center;">
           <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:22px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.3px;">£24.99<span style="font-family:${BODY_FONT};font-size:14px;font-weight:400;color:${C.textSecondary};"> / month</span></p>
           <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year — saves £101</p>
-          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Cancel any time. We've kept ${child}'s data for 6 months — sign in any time within that window to continue.</p>
+          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Cancel any time. The free plan stays free — Plus just unlocks the rest.</p>
         </td>
       </tr>
     </table>`;
@@ -458,7 +458,7 @@ export function buildDay30Email(account, quizCount, currentStreak) {
     ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
     ${bodyText(summary, { muted: true, size: 15 })}
     ${priceCard}
-    ${ctaButton('Subscribe and continue', APP_URL)}
+    ${ctaButton('Unlock PrepStep Plus', APP_URL)}
     ${fsmCard}
     ${bodyText(`If PrepStep wasn't right for ${child}, I'd love to know why — just reply and tell me what could have been better.<br/>— Ben`, { muted: true, size: 13, marginTop: 20 })}
   `;
