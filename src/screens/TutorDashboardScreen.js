@@ -575,7 +575,18 @@ function AssignmentComposer({ roster, classes, getToken, onCreated, onClose, ini
   };
 
   const handleSend = async () => {
-    if (!getToken) { setError('Assignments cannot be sent in preview mode'); return; }
+    if (!getToken) {
+      // Dev preview only (getToken is always present for a real tutor).
+      // Simulate the two server responses so the demo can show both the
+      // mixed-class skip banner and the individual-pupil confirmation,
+      // without ever calling the API.
+      if (targetType === 'class') {
+        setSkippedInfo([{ childId: 'c5', childName: 'Amara', pupilPlan: 'free' }]);
+      } else {
+        setError('Preview mode: assignment not actually sent.');
+      }
+      return;
+    }
     if (!dueDate) { setError('Please set a due date'); return; }
     if (!targetId) { setError('Please select a class or pupil'); return; }
     const invalidItem = items.find(it => it.itemType === 'topic' && !it.topicKey);
@@ -824,18 +835,23 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
       // the real payload shape.
       const now = Date.now();
       const day = 86400000;
+      // Amara (c5) is a free-plan pupil so the demo shows the Unit C locked
+      // tutor states (Free plan chip, locked pupil detail, locked report,
+      // composer skip). Dev preview only.
       const mock = buildDashboardData({
         roster: [
           { id: 'c1', display_name: 'Evie', year_group: 5, target_school: 'Bournemouth School for Girls', parent_name: 'Sarah' },
           { id: 'c2', display_name: 'James', year_group: 5, target_school: 'Parkstone Grammar', parent_name: 'Mark' },
           { id: 'c3', display_name: 'Priya', year_group: 5, target_school: 'Poole Grammar', parent_name: 'Anita' },
           { id: 'c4', display_name: 'Tom', year_group: 5, target_school: 'Bournemouth School', parent_name: 'Claire' },
+          { id: 'c5', display_name: 'Amara', year_group: 5, target_school: 'Talbot Heath', parent_name: 'Deepa' },
         ],
         quizActiveRows: [
           { child_id: 'c1', last_active: new Date(now).toISOString() },
           { child_id: 'c2', last_active: new Date(now - 3 * day).toISOString() },
           { child_id: 'c3', last_active: new Date(now - 9 * day).toISOString() },
           { child_id: 'c4', last_active: new Date(now - 1 * day).toISOString() },
+          { child_id: 'c5', last_active: new Date(now - 2 * day).toISOString() },
         ],
         mockActiveRows: [],
         lessonActiveRows: [],
@@ -857,6 +873,10 @@ export default function TutorDashboardScreen({ getToken, onBack, onViewQuizDetai
           { child_id: 'c2', assignment_id: 'a1', title: 'Week 2 fractions', due_date: new Date(now - 3 * day).toISOString().slice(0, 10) },
         ],
         now,
+        // c5 (Amara) deliberately excluded — this is what makes buildDashboardData
+        // set deepProgressLocked:true for her, driving the "Free plan" chip on her
+        // roster row and disabling her in the assignment composer's pupil picker.
+        entitledDeepChildIds: new Set(['c1', 'c2', 'c3', 'c4']),
       });
       setData({
         tutor: { id: 'dev', name: 'Mary Jones', tutor_code: 'MARY-XZ7Q', bio: '11+ GL specialist, Bournemouth.' },

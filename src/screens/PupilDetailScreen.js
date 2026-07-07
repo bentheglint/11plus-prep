@@ -222,6 +222,20 @@ const DEV_MOCK = {
   notesCount: 1,
 };
 
+// Locked-pupil mock for the dev preview — mirrors the shape the real server
+// returns for a free-plan pupil (see routes/tutor.js): the account/plan
+// fields are present, but all progress data is withheld, exactly as it is
+// for a real free pupil. Dev preview only.
+const DEV_MOCK_LOCKED = {
+  child: { id: 'c5', display_name: 'Amara', account_name: 'Deepa', year_group: 5, target_school: 'Talbot Heath' },
+  assignmentRecipients: [],
+  notesCount: 0,
+  pupilPlan: 'free',
+  deepProgressLocked: true,
+  // Deliberately no quizResults/questionResults/topicPerformance/mockTestHistory/practiceLog,
+  // exactly like the real server withholds for a free pupil.
+};
+
 export default function PupilDetailScreen({ childId, getToken, onBack, panelMode = false, onViewQuizDetail, onViewAssignmentDetail }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -235,7 +249,10 @@ export default function PupilDetailScreen({ childId, getToken, onBack, panelMode
 
   const load = useCallback(async () => {
     if (IS_PREVIEW || !getToken) {
-      setData(DEV_MOCK);
+      // Amara (c5) is the demo's free-plan pupil — return the locked payload
+      // shape for her so Unit C's locked pupil detail state renders. Dev
+      // preview only.
+      setData(childId === 'c5' ? DEV_MOCK_LOCKED : DEV_MOCK);
       setLoading(false);
       return;
     }

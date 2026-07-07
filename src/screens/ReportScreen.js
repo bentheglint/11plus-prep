@@ -43,6 +43,15 @@ const DEV_MOCK_REPORT = {
   ],
 };
 
+// Locked-report mock for the dev preview — mirrors the shape the real
+// server returns for a free-plan pupil's report request. Dev preview only.
+const DEV_MOCK_REPORT_LOCKED = {
+  locked: true,
+  code: 'deep_progress_locked',
+  pupilPlan: 'free',
+  child: { id: 'c5', displayName: 'Amara', yearGroup: 5, targetSchool: 'Talbot Heath' },
+};
+
 async function fetchReport(childId, getToken) {
   const token = await getToken();
   const res = await fetch(`${API_URL}/api/tutor/report/${childId}`, {
@@ -89,7 +98,9 @@ export default function ReportScreen({ childId, getToken, onBack }) {
 
   useEffect(() => {
     if (isPreview || !getToken) {
-      setReport(DEV_MOCK_REPORT);
+      // Amara (c5) is the demo's free-plan pupil — return the locked report
+      // shape for her so Unit C's locked report state renders. Dev preview only.
+      setReport(childId === 'c5' ? DEV_MOCK_REPORT_LOCKED : DEV_MOCK_REPORT);
       setLoading(false);
       return;
     }
