@@ -844,10 +844,10 @@ const vrData = {
           difficulty: 3,
           questionType: "pick-from-sets",
           question: "Choose one word from each group that are closest in meaning.",
-          setA: ["gregarious","solitary","anxious"],
+          setA: ["gregarious","solitary","meticulous"],
           setB: ["nervous","stubborn","sociable"],
           correctPair: [0,2],
-          explanation: "'Gregarious' and 'sociable' both mean enjoying the company of others. 'Solitary' is the opposite — preferring to be alone. 'Anxious' means worried, 'nervous' means uneasy, 'stubborn' means refusing to change. ✓"
+          explanation: "'Gregarious' and 'sociable' both mean enjoying the company of others. 'Solitary' is the opposite, preferring to be alone. 'Meticulous' means very careful and precise, 'nervous' means uneasy, and 'stubborn' means refusing to change. ✓"
         },
         {
           id: 85,

@@ -17496,10 +17496,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 3,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The building which","dated back to","Tudor times, was","now a museum."],
+          "segments": ["Windsor Castle, which","was built by the","Normans was a","royal home."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
-          "explanation": "A comma is needed after 'building' to open the relative clause. 'Which dated back to Tudor times' is extra information about the building that could be removed, so it needs commas around it. Corrected: 'The building, which dated back to Tudor times, was now a museum.' ✓"
+          "correct": 2,
+          "explanation": "'Windsor Castle' is already fully identified by its name, so 'which was built by the Normans' is extra information that should be wrapped in a pair of commas. The opening comma after 'Castle' is correct, but the closing comma is missing: it should read 'Normans, was'. Corrected: 'Windsor Castle, which was built by the Normans, was a royal home.' ✓"
         },
         {
           "id": 275,
@@ -18818,7 +18818,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "question": "Which section contains a punctuation error?",
           "segments": ["It was raining","heavily, we decided","to stay indoors","and play board games."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
-          "correct": 0,
+          "correct": 1,
           "explanation": "That comma isn't strong enough! You've got two complete sentences here, and a comma on its own can't hold them together. You need something stronger: a semicolon (;), a full stop, or a joining word like 'and' or 'but'. Think of it like this: a comma is a speed bump, but two sentences need a proper junction! ✓"
         },
         {
