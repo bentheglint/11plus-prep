@@ -146,6 +146,30 @@ Note the day-25 "weakest topic" hook (naming Long Division at 58%) is a delibera
 conversion lever and should stay: at day 25 the parent still has trial access, so the email shows
 them the exact diagnostic they are about to lose. Keep it.
 
+## Change 6 — Trial-end plan-choice interstitial (AGREED 8 Jul, the conversion engine)
+
+**Problem:** at trial end the app SILENTLY switched the family to free (gentle child welcome
+modal, no CTA) and relied on the day-30 email + ambient nudges for conversion. Ben: most people
+don't read email and forget. No in-app parent-facing decision moment, the single highest-value
+conversion point in a reverse-trial model.
+
+**Fix (built 8 Jul):** a HARD, full-screen, non-dismissible interstitial on first app open after
+the trial expires, which SUPERSEDES the FreePlanWelcomeModal. Framed as a grown-up decision: it
+tells the child to go and fetch a parent before choosing. Two clear cards, PrepStep Plus (full
+feature list + £24.99/mo or £199/yr, button to the existing checkout via handleUpgrade) and Free
+plan (what they keep, "Continue on the free plan"). "Continue free" is prominent and safe so a
+child tapping it comes to no harm; "Choose Plus" goes to Stripe, which only a parent can complete
+(that IS the parent gate). New `src/components/TrialEndedChoiceModal.js`; trigger mirrors the old
+welcome-modal effect keyed on localStorage `prepstep:trial-choice-made:${userEmail}`. Choosing
+free persists the key + dismisses; choosing Plus routes to checkout and does NOT persist (abandon
++ return still free → re-prompts; only completing payment or choosing free ends it).
+
+**Decisions locked with Ben:** hard interstitial (not a banner); easy free option; explicitly a
+PARENT decision that pushes the child to get a grown-up. **Trade-off accepted:** persistence is
+per-account localStorage (mirrors the welcome modal), so it re-prompts on a new device/browser
+(acceptable, arguably good). A server-side flag would need another migration; deferred. Copy is
+Claude-drafted in the approved email voice, no em dashes, AWAITS Ben's read (like the emails).
+
 ---
 
 ## What is NOT changing (confirmed working as designed during the walkthrough)
