@@ -248,6 +248,21 @@ function smallLabel(text, colour = C.textMuted) {
   return `<p style="margin:0 0 4px;font-family:${BODY_FONT};font-size:11px;font-weight:600;color:${colour};letter-spacing:1.2px;text-transform:uppercase;">${text}</p>`;
 }
 
+// Hidden preheader text — shows in the inbox preview line, never in the body.
+function preheaderSpan(text) {
+  return `<span style="display:none;font-size:1px;color:${C.bgCard};line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">${text}</span>`;
+}
+
+// Simple bullet list — table rows for Outlook-safe rendering (mirrors the
+// "Three ways to start" pattern used in buildDay1Email).
+function bulletList(items) {
+  const rows = items.map((item, i) => `
+      <tr><td style="padding:10px 0;${i < items.length - 1 ? `border-bottom:1px solid ${C.border};` : ''}">
+        ${bodyText(item, { size: 14, marginBottom: 0 })}
+      </td></tr>`).join('');
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 4px;">${rows}</table>`;
+}
+
 // Info card — used for tips, focus areas, FSM hint, etc.
 function infoCard({ label, title, body, accent = 'brand' }) {
   const palette = accent === 'amber'
@@ -320,7 +335,7 @@ export function buildDay7Email(account, quizCount, currentStreak, recentQuizzes,
   const child = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
   const subject = weakest
-    ? `${child}'s first week — ${formatTopicKey(weakest.topicKey)} is the topic to focus on`
+    ? `${child}'s first week: ${formatTopicKey(weakest.topicKey)} is the topic to focus on`
     : `${child}'s first week on PrepStep`;
 
   const topicCounts = {};
@@ -330,7 +345,7 @@ export function buildDay7Email(account, quizCount, currentStreak, recentQuizzes,
 
   const summary = quizCount > 0
     ? `${child} has completed <strong>${quizCount} quiz${quizCount > 1 ? 'zes' : ''}</strong> in the first week${currentStreak > 1 ? ` and is on a <strong>${currentStreak}-day streak</strong>` : ''}.${topTopicName ? ` Most time spent on <strong>${topTopicName}</strong>.` : ''}`
-    : `A week has passed since ${child}'s trial started. If you haven't had a chance to try PrepStep yet, there are still 23 days to explore — no rush.`;
+    : `A week has passed since ${child}'s trial started. If you haven't had a chance to try PrepStep yet, there are still 23 days to explore, no rush.`;
 
   const weakestCard = weakest
     ? infoCard({
@@ -355,11 +370,11 @@ export function buildDay7Email(account, quizCount, currentStreak, recentQuizzes,
 export function buildDay14Email(account, quizCount, currentStreak, weakest) {
   const child = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
-  const subject = `Two weeks in — how is ${child} getting on?`;
+  const subject = `Two weeks in: how is ${child} getting on?`;
 
   const summary = quizCount > 0
     ? `Two weeks into ${child}'s trial. They've completed ${quizCount} quiz${quizCount > 1 ? 'zes' : ''}${currentStreak > 1 ? ` and kept a ${currentStreak}-day streak going` : ''}. The Parent Dashboard shows a full breakdown of where they're strong and where to focus next.`
-    : `Two weeks in. If you haven't started yet, you've still got 16 days to try PrepStep properly — that's plenty of time to see whether it works for ${child}.`;
+    : `Two weeks in. If you haven't started yet, you've still got 16 days to try PrepStep properly, which is plenty of time to see whether it works for ${child}.`;
 
   const weakestLine = weakest
     ? bodyText(`Right now <strong>${formatTopicKey(weakest.topicKey)}</strong> is the weakest area (${weakest.accuracy}% accuracy). A Focused Learning session this week would be worth it.`, { muted: true, size: 15 })
@@ -368,7 +383,7 @@ export function buildDay14Email(account, quizCount, currentStreak, weakest) {
   const mockCard = infoCard({
     label: 'Worth trying',
     title: 'A timed Mock Test',
-    body: `A full timed GL Assessment paper, marked instantly with a topic-by-topic breakdown. The best way to see how ${child} would perform on the day — and where to focus the last weeks of prep.`,
+    body: `A full timed GL Assessment paper, marked instantly with a topic-by-topic breakdown. The best way to see how ${child} would perform on the day, and where to focus the last weeks of prep.`,
     accent: 'brand',
   });
 
@@ -388,22 +403,55 @@ export function buildDay25Email(account, quizCount, currentStreak, weakest) {
   const child = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
   const subject = `${child}'s full-access trial ends in 5 days`;
+  const preheader = `After your trial ends, you will see the overall score, but not the topic holding ${child} back.`;
 
-  const summary = quizCount > 0
-    ? `In 5 days ${child}'s full-access trial becomes the free PrepStep plan — they'll keep a Daily Learning set each day plus all their progress and streaks. Subscribe to PrepStep Plus to keep everything unlocked: the ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} of learning data${currentStreak > 0 ? ` and ${currentStreak}-day streak` : ''} they've built stays either way, but Plus keeps unlimited practice, every topic and mock tests open.`
-    : `In 5 days ${child}'s full-access trial becomes the free PrepStep plan. There are still 5 days of full access to explore everything — and after that the free plan keeps a Daily Learning set open every day.`;
+  // Personalised block covers two source paragraphs: the quizzes/streak
+  // momentum line, and the weakest-topic "part most parents want to hold
+  // on to" line (which also carries the "deep view is part of Plus"
+  // explanation, since it leans on the same weakest-topic data). Falls
+  // back to a generic five-days-left nudge when there's nothing to
+  // personalise with yet.
+  let personalisedBlock;
+  if (quizCount > 0 && weakest) {
+    const momentumLine = currentStreak > 1
+      ? `${child} has completed <strong>${quizCount} quiz${quizCount > 1 ? 'zes' : ''}</strong> and is on a <strong>${currentStreak}-day streak</strong>. That is real momentum, and none of it goes anywhere.`
+      : `${child} has completed <strong>${quizCount} quiz${quizCount > 1 ? 'zes' : ''}</strong> so far. That is real momentum, and none of it goes anywhere.`;
 
-  const weakestLine = weakest && quizCount > 0
-    ? bodyText(`${child} has more to do on <strong>${formatTopicKey(weakest.topicKey)}</strong> (${weakest.accuracy}% — the weakest area we've identified). Subscribing keeps that work going.`, { muted: true, size: 15 })
-    : '';
+    const holdingBackPhrase = weakest.accuracy > 80 ? 'their next area to sharpen up' : 'holding them back';
+    const weakestTopicName = formatTopicKey(weakest.topicKey);
+
+    const weakestLine = `Here is the part most parents want to hold on to. Right now you can see that ${child}'s weakest topic is <strong>${weakestTopicName}</strong>, where they are answering around ${weakest.accuracy}% correctly. That one insight, knowing the exact topic that is ${holdingBackPhrase}, is the whole point of proper 11+ prep. It is the difference between practising harder and practising the right thing.`;
+
+    const deepViewLine = `When the trial ends, ${child} moves to the free plan and keeps learning every day. But the deep view (the per-topic strong-and-weak breakdown, the "what to work on next" recommendations, and how each topic is trending over time) is part of PrepStep Plus. On free, you will see one overall accuracy figure. You will not see that ${weakestTopicName} is where the help is needed.`;
+
+    personalisedBlock = `
+      ${bodyText(momentumLine, { muted: true, size: 15 })}
+      ${bodyText(weakestLine, { muted: true, size: 15 })}
+      ${bodyText(deepViewLine, { muted: true, size: 15 })}
+    `;
+  } else {
+    personalisedBlock = bodyText(
+      `There are still five days of full access left, and it is the best time for ${child} to try a Focused Learning lesson or a timed Mock Test. Those are the tools that show you exactly which topics need work, and they are part of PrepStep Plus once the trial ends.`,
+      { muted: true, size: 15 }
+    );
+  }
+
+  const featureList = bulletList([
+    'The full Parent Dashboard: exactly which topics are strong, which are weak, and what to do next',
+    'Unlimited practice, not one set a day',
+    'Focused Learning on every topic (a short lesson, then a 10-question quiz)',
+    'Timed Mock Tests and Challenge Mode',
+    `The AI Tutor, on hand the moment ${child} gets stuck`,
+    'Per-question drill-down and printable progress reports',
+  ]);
 
   const priceCard = `
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
       <tr>
         <td style="background:${C.bgBrandSoft};border:1px solid ${C.borderBrand};border-radius:12px;padding:24px;text-align:center;">
           <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:22px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.3px;">£24.99<span style="font-family:${BODY_FONT};font-size:14px;font-weight:400;color:${C.textSecondary};"> / month</span></p>
-          <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year — saves £101</p>
-          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Cancel any time. No refund policy — you've had 30 days free to decide.</p>
+          <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year (you save £101)</p>
+          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">That is less than the cost of a single hour with a private tutor. Cancel any time, and the free plan always stays free.</p>
         </td>
       </tr>
     </table>`;
@@ -411,17 +459,21 @@ export function buildDay25Email(account, quizCount, currentStreak, weakest) {
   const fsmCard = infoCard({
     label: 'A note on access',
     title: 'Free for FSM and Pupil Premium families',
-    body: `On Free School Meals or Pupil Premium? PrepStep is permanently free for your family. Email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:${C.brand};text-decoration:underline;">hello@prepstep.co.uk</a> and we'll set you up.`,
+    body: `On Free School Meals or Pupil Premium? PrepStep Plus is free for your family, permanently. Just email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:${C.brand};text-decoration:underline;">hello@prepstep.co.uk</a> and we will sort it. No card needed.`,
     accent: 'green',
   });
 
   const content = `
+    ${preheaderSpan(preheader)}
     ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
-    ${bodyText(summary, { muted: true, size: 15 })}
-    ${weakestLine}
+    ${bodyText(`In five days, ${child}'s 30-day full-access trial ends. I wanted to give you plenty of notice, and show you what ${child} has built up so far.`, { muted: true, size: 15 })}
+    ${personalisedBlock}
+    ${bodyText('PrepStep Plus keeps the full picture, and unlocks:', { size: 15, marginBottom: 4 })}
+    ${featureList}
     ${priceCard}
-    ${ctaButton('Subscribe now', APP_URL)}
+    ${ctaButton(`Keep ${child}'s full access`, APP_URL)}
     ${fsmCard}
+    ${bodyText('Thanks for giving PrepStep a proper try.<br/>Ben', { muted: true, size: 13, marginTop: 20 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
@@ -431,18 +483,23 @@ export function buildDay30Email(account, quizCount, currentStreak) {
   const child = account.display_name;
   const parentFirst = account.name?.split(' ')[0] || account.name;
   const subject = `${child} has moved to the free PrepStep plan`;
+  const preheader = 'Every quiz and every streak is kept. Here is what free includes, and what comes next.';
 
-  const summary = quizCount > 0
-    ? `${child}'s 30-day full-access trial has finished — and they've now moved onto the free PrepStep plan, so they keep learning every day at no cost. Everything they've built — ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} completed${currentStreak > 0 ? `, a ${currentStreak}-day streak` : ''}, their mastery and mock results — all stays put. On the free plan ${child} gets a Daily Learning set every day, plus every game, streak and reward. PrepStep Plus opens up unlimited practice, Focused Learning on every topic, mock tests, and your full progress dashboard.`
-    : `${child}'s 30-day full-access trial has finished, and they've moved onto the free PrepStep plan — so PrepStep stays open and free for them whenever they're ready. It's not too late to start: the free plan gives a Daily Learning set every day, and PrepStep Plus opens up unlimited practice and the full toolkit.`;
+  const reassuranceLine = quizCount > 0
+    ? `Reassurance first, because it matters: ${child}'s trial has ended, and nothing has been lost. Every quiz, every badge, the streak, and all ${quizCount} quiz${quizCount > 1 ? 'zes' : ''} of history are exactly where you left them.`
+    : `Reassurance first: ${child}'s trial has ended, but nothing is lost and nothing is deleted. The moment ${child} is ready, a fresh set of 10 questions is waiting, free every day.`;
+
+  const freePlanLine = currentStreak > 1
+    ? `${child} is now on the free PrepStep plan, and will keep learning every single day: a fresh set of 10 mixed questions daily, with streaks, prep points and badges all still going. Their current <strong>${currentStreak}-day streak</strong> carries straight on.`
+    : `${child} is now on the free PrepStep plan, and will keep learning every single day: a fresh set of 10 mixed questions daily, with streaks, prep points and badges all still going.`;
 
   const priceCard = `
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0;">
       <tr>
         <td style="background:${C.bgBrandSoft};border:1px solid ${C.borderBrand};border-radius:12px;padding:24px;text-align:center;">
           <p style="margin:0 0 4px;font-family:${HEAD_FONT};font-size:22px;font-weight:600;color:${C.textPrimary};letter-spacing:-0.3px;">£24.99<span style="font-family:${BODY_FONT};font-size:14px;font-weight:400;color:${C.textSecondary};"> / month</span></p>
-          <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year — saves £101</p>
-          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Cancel any time. The free plan stays free — Plus just unlocks the rest.</p>
+          <p style="margin:0 0 12px;font-family:${BODY_FONT};font-size:13px;color:${C.textSecondary};">or £199 a year (you save £101)</p>
+          <p style="margin:0;font-family:${BODY_FONT};font-size:12px;color:${C.textMuted};">Less than the cost of a single hour with a private tutor. Cancel any time.</p>
         </td>
       </tr>
     </table>`;
@@ -450,17 +507,22 @@ export function buildDay30Email(account, quizCount, currentStreak) {
   const fsmCard = infoCard({
     label: 'A note on access',
     title: 'Free for FSM and Pupil Premium families',
-    body: `Email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:${C.brand};text-decoration:underline;">hello@prepstep.co.uk</a> and we'll set you up — permanently, no card needed.`,
+    body: `On Free School Meals or Pupil Premium? PrepStep Plus is free for your family, permanently. Just email <a href="mailto:hello@prepstep.co.uk?subject=FSM access" style="color:${C.brand};text-decoration:underline;">hello@prepstep.co.uk</a>. No card needed, and no awkward questions.`,
     accent: 'green',
   });
 
   const content = `
+    ${preheaderSpan(preheader)}
     ${bodyText(`Hi ${parentFirst},`, { size: 16, marginBottom: 16 })}
-    ${bodyText(summary, { muted: true, size: 15 })}
+    ${bodyText(reassuranceLine, { muted: true, size: 15 })}
+    ${bodyText(freePlanLine, { muted: true, size: 15 })}
+    ${bodyText('Free is genuinely free, and it stays that way. We built it so no child is ever locked out of practising, whatever a family can spend. That is a promise, not an offer that expires.', { muted: true, size: 15 })}
+    ${bodyText(`When you are ready for more, PrepStep Plus is there. The biggest thing it gives you back is the full Parent Dashboard: the per-topic breakdown that shows exactly where ${child} is strong, where they are weak, and what to work on next. It is the difference between knowing ${child}'s overall score and knowing the one topic that is quietly costing them marks.`, { muted: true, size: 15 })}
+    ${bodyText('Plus also reopens unlimited practice, Focused Learning on every topic, timed Mock Tests, Challenge Mode, the AI Tutor, and printable progress reports you can bring to a parents\' evening.', { muted: true, size: 15 })}
     ${priceCard}
-    ${ctaButton('Unlock PrepStep Plus', APP_URL)}
+    ${ctaButton(`See ${child}'s full progress`, APP_URL)}
     ${fsmCard}
-    ${bodyText(`If PrepStep wasn't right for ${child}, I'd love to know why — just reply and tell me what could have been better.<br/>— Ben`, { muted: true, size: 13, marginTop: 20 })}
+    ${bodyText(`One more thing, ${parentFirst}. I am Ben, PrepStep's founder. I would love to know how ${child} has got on: what worked, what did not, and anything you would change. Hit reply and it comes straight to me, and I read every message.<br/>Ben`, { muted: true, size: 13, marginTop: 20 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
