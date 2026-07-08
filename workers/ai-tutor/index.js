@@ -30,6 +30,26 @@ import {
 // ── Clerk JWT Verification ──
 
 async function verifyClerkJWT(request, env) {
+  // ── DEV-ONLY auth bypass ──────────────────────────────────────────────
+  // Active ONLY when env.DEV_AUTH_BYPASS === 'enabled'. That var is NEVER set
+  // in production: it is not in wrangler.toml and is passed only to
+  // `wrangler dev` locally (e.g. via .dev.vars or --var). With it unset the
+  // block is skipped entirely and normal Clerk verification runs, so it fails
+  // closed. It lets local verification scripts act as a seeded test user
+  // without a real Clerk token. DO NOT add DEV_AUTH_BYPASS to wrangler.toml,
+  // prod secrets, or any deployed environment.
+  if (env.DEV_AUTH_BYPASS === 'enabled') {
+    const devUser = request.headers.get('X-Dev-Auth-User');
+    if (devUser) {
+      return {
+        userId: devUser,
+        email: canonicalEmail(request.headers.get('X-Dev-Auth-Email') || ''),
+        emailVerified: true,
+      };
+    }
+  }
+  // ──────────────────────────────────────────────────────────────────────
+
   const authHeader = request.headers.get('Authorization');
   if (!authHeader || !authHeader.startsWith('Bearer ')) return null;
 

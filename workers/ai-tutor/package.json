@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "predeploy": "node scripts/check-no-dev-bypass.mjs",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@sentry/cloudflare": "^9.0.0"
