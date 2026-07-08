@@ -295,14 +295,14 @@ export function buildDay1Email(account, quizCount, weakest) {
     : `${child}'s 30-day PrepStep trial has started`;
 
   const intro = hasActivity
-    ? `Great news — ${child} has already jumped in. PrepStep is now tracking progress across every topic, so you'll see exactly where they're strong and where they need more practice.`
+    ? `Great news: ${child} has already jumped in. PrepStep is now tracking progress across every topic, so you'll see exactly where they're strong and where they need more practice.`
     : `${child}'s 30-day trial just started. Here's the quickest way to see what PrepStep can do.`;
 
   const weakestCard = weakest
     ? infoCard({
         label: 'First findings',
         title: `${formatTopicKey(weakest.topicKey)} is the area with most room to grow`,
-        body: `${weakest.accuracy}% accuracy so far. A Focused Learning session — lesson first, then 10 questions — is the fastest way to shift it.`,
+        body: `${weakest.accuracy}% accuracy so far. A Focused Learning session (lesson first, then 10 questions) is the fastest way to shift it.`,
         accent: 'amber',
       })
     : '';
@@ -311,13 +311,13 @@ export function buildDay1Email(account, quizCount, weakest) {
     ${heading('h3', 'Three ways to start')}
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 4px;">
       <tr><td style="padding:10px 0;border-bottom:1px solid ${C.border};">
-        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Daily Learning</strong> — 10 mixed questions, around 8 minutes. The quickest way to see what ${child} knows.`, { size: 14, marginBottom: 0 })}
+        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Daily Learning</strong>: 10 mixed questions, around 8 minutes. The quickest way to see what ${child} knows.`, { size: 14, marginBottom: 0 })}
       </td></tr>
       <tr><td style="padding:10px 0;border-bottom:1px solid ${C.border};">
-        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Focused Learning</strong> — a short lesson then 10 questions on one topic. Builds real understanding.`, { size: 14, marginBottom: 0 })}
+        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Focused Learning</strong>: a short lesson then 10 questions on one topic. Builds real understanding.`, { size: 14, marginBottom: 0 })}
       </td></tr>
       <tr><td style="padding:10px 0;">
-        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Mock Test</strong> — a full timed paper, marked instantly. Shows you where ${child} stands today.`, { size: 14, marginBottom: 0 })}
+        ${bodyText(`<strong style="color:${C.textPrimary};font-weight:600;">Mock Test</strong>: a full timed paper, marked instantly. Shows you where ${child} stands today.`, { size: 14, marginBottom: 0 })}
       </td></tr>
     </table>
   ` : '';
@@ -328,7 +328,7 @@ export function buildDay1Email(account, quizCount, weakest) {
     ${weakestCard}
     ${gettingStarted}
     ${ctaButton('Open PrepStep', APP_URL)}
-    ${bodyText(`Any questions, just reply to this email.<br/>— Ben`, { muted: true, size: 13, marginTop: 20 })}
+    ${bodyText(`Any questions, just reply to this email.<br/>Ben`, { muted: true, size: 13, marginTop: 20 })}
   `;
 
   return { subject, html: emailWrapper(child, content) };
@@ -673,11 +673,11 @@ export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weekl
   // ── Encouragement based on activity level ──
   let encouragement;
   if (weeklyQuestionCount >= 50) {
-    encouragement = `Brilliant week — ${weeklyQuestionCount} questions is a strong amount of practice.`;
+    encouragement = `Brilliant week: ${weeklyQuestionCount} questions is a strong amount of practice.`;
   } else if (weeklyQuestionCount >= 20) {
     encouragement = `Good consistency this week.`;
   } else if (weeklyQuestionCount > 0) {
-    encouragement = `${childName} made a start this week — even a little practice keeps the streak alive.`;
+    encouragement = `${childName} made a start this week, and even a little practice keeps the streak alive.`;
   } else {
     encouragement = `${childName} didn't practise this week, but every other week's data is preserved. Pick up any time.`;
   }
@@ -817,7 +817,7 @@ export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weekl
       ? infoCard({
           label: 'Building coverage',
           title: `${inProgressTopics.length} topic${inProgressTopics.length > 1 ? 's' : ''} in progress`,
-          body: `5–19 questions answered. Once a topic hits 20 questions we can give you a reliable accuracy reading.`,
+          body: `5 to 19 questions answered. Once a topic hits 20 questions we can give you a reliable accuracy reading.`,
           accent: 'brand',
         })
       : '');
@@ -826,7 +826,7 @@ export function weeklyEmailHtml({ parentFirst, childName, weeklyQuizCount, weekl
     ? [subjectReadiness.maths, subjectReadiness.english, subjectReadiness.verbalreasoning]
         .filter(Boolean).sort((a, b) => b.score - a.score)[0]?.band
     : null;
-  const reviewPretext = `${childName}'s week on PrepStep — ${weeklyQuestionCount} questions, ${weeklyAccuracy != null ? `${weeklyAccuracy}% accuracy` : 'no quizzes yet'}${bestBand ? `, ${bestBand}` : ''}.`;
+  const reviewPretext = `${childName}'s week on PrepStep: ${weeklyQuestionCount} questions, ${weeklyAccuracy != null ? `${weeklyAccuracy}% accuracy` : 'no quizzes yet'}${bestBand ? `, ${bestBand}` : ''}.`;
 
   const content = `
     <span style="display:none;font-size:1px;color:${C.bgCard};line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">${reviewPretext}</span>
