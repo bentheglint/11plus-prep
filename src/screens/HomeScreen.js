@@ -7,7 +7,7 @@ import RecommendationCard from '../components/RecommendationCard';
 import TodaysPracticeCard from '../components/TodaysPracticeCard';
 import AssignmentBanner from '../components/AssignmentBanner';
 import { BookOpen as LessonsIcon } from 'lucide-react';
-import { isSpeedReviewAllowlisted } from '../utils/tutorAllowlist';
+import { isSpeedReviewAllowlisted, isTestingModeAllowlisted } from '../utils/tutorAllowlist';
 import OfflineDataBanner from '../components/OfflineDataBanner';
 import { trialBanner, canUseFeature } from '../utils/entitlementGating';
 
@@ -288,8 +288,9 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
           </div>
         )}
 
-        {/* Dev/admin tools — only for specific users */}
-        {(currentUser === 'Ben' || currentUser === 'Lauren' || currentUser === 'Daisy' || currentUser === 'Jacqui' || currentUser === 'Dev' || isSpeedReviewAllowlisted(userEmail)) && (
+        {/* Dev/admin tools — gated by EMAIL allowlist only. Never key off
+            display name: a child named "Ben"/"Jacqui" must never see these. */}
+        {isSpeedReviewAllowlisted(userEmail) && (
           <div className="flex gap-3 mt-2">
             <button
               onClick={onSpeedReview}
@@ -298,7 +299,7 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
               <Wrench className="w-4 h-4" />
               Speed Review
             </button>
-            {(currentUser === 'Ben' || currentUser === 'Jacqui') && (
+            {isTestingModeAllowlisted(userEmail) && (
               <button
                 onClick={onTestingMode}
                 className="flex items-center gap-2 px-4 py-2 text-sm text-rose-700 bg-rose-50 hover:bg-rose-100 rounded-lg border border-rose-200 transition-colors"
