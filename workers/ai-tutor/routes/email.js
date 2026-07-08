@@ -137,31 +137,34 @@ export async function handleTrialEmails(env) {
 
 // ── Design system ──
 // Single source of truth for all email styling. Mirrors the brand brief:
-// warm neutrals (not Atom-blue corporate-safe), distinctive typography
-// (Fraunces serif headings + Inter sans body), single accent purple.
+// Mirrors the PrepStep app's design system: Outfit headings + DM Sans body
+// (the app's exact fonts), app purple #7C3AED, slate text, soft lavender-to-
+// cream backdrop, rounded white cards, pill button.
 
 const FONTS_LINK = `
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">`;
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">`;
 
-// Body font stack — Inter where available, system fallback otherwise (Outlook strips webfonts)
-const BODY_FONT = `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`;
-// Heading font stack — Fraunces where available, Georgia fallback
-const HEAD_FONT = `'Fraunces', Georgia, 'Times New Roman', serif`;
+// Body font — DM Sans (the app's body font) where webfonts load, clean system
+// sans fallback otherwise (Gmail/Outlook strip webfonts).
+const BODY_FONT = `'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`;
+// Heading font — Outfit (the app's heading font). Fallback is deliberately
+// SANS (never serif), so no client ever renders a serif heading.
+const HEAD_FONT = `'Outfit', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif`;
 
 // Colour tokens
 const C = {
-  bgPage: '#FAF7F2',          // warm cream page background
-  bgCard: '#FFFFFF',
-  bgCardSubtle: '#FCFAF6',    // off-white for nested elements
-  bgBrandSoft: '#F4F0FF',     // soft purple fill
-  brand: '#7C3AED',
-  brandDeep: '#6B21A8',
-  textPrimary: '#1C1A1F',     // warm near-black, not flat #000
-  textSecondary: '#5B5662',
-  textMuted: '#9B95A2',
-  border: '#ECE7E1',          // warm border
+  bgPage: '#F1ECFB',          // app backdrop fallback (lavender end of the app gradient)
+  bgCard: '#FEFDFB',          // app --surface
+  bgCardSubtle: '#FBF9F6',    // app --surface-alt for nested elements
+  bgBrandSoft: '#EDE8FF',     // app --primary-surface
+  brand: '#7C3AED',           // app --primary
+  brandDeep: '#5A4BD1',       // app --primary-dark
+  textPrimary: '#1E293B',     // app --text (slate)
+  textSecondary: '#64748B',   // app --text-secondary (slate)
+  textMuted: '#94A3B8',       // slate-400, same family as the app text
+  border: '#ECEAF0',          // subtle neutral border
   borderBrand: '#E5DDFA',     // purple-tinted border
   // Mastery colours — toned-down, less heatmap-of-doom
   bandMastered: '#15803D',
@@ -182,16 +185,16 @@ function emailWrapper(childName, content) {
 ${FONTS_LINK}
 </head>
 <body style="margin:0;padding:0;font-family:${BODY_FONT};background:${C.bgPage};color:${C.textPrimary};-webkit-font-smoothing:antialiased;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.bgPage};">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="${C.bgPage}" style="background:${C.bgPage};background:linear-gradient(160deg, #EDE8FF 0%, #FBF3EA 55%, #FFF8E8 100%);">
     <tr>
       <td align="center" style="padding:32px 16px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
-          <!-- Brand header (no card, sits on cream background) -->
+          <!-- Brand header (no card, sits on the app-style gradient background) -->
           <tr>
             <td style="padding:0 8px 24px;text-align:left;">
               <table role="presentation" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td style="font-family:${BODY_FONT};font-size:22px;font-weight:800;color:${C.textPrimary};letter-spacing:-0.5px;padding-right:8px;">PrepStep</td>
+                  <td style="font-family:${HEAD_FONT};font-size:22px;font-weight:700;color:${C.textPrimary};letter-spacing:-0.5px;padding-right:8px;">PrepStep</td>
                   <td style="vertical-align:bottom;padding-bottom:5px;">
                     <span style="display:inline-block;width:5px;height:7px;background:#3B82F6;margin-right:2px;border-radius:1px;"></span><span style="display:inline-block;width:5px;height:11px;background:${C.brand};margin-right:2px;border-radius:1px;"></span><span style="display:inline-block;width:5px;height:15px;background:#22C55E;border-radius:1px;"></span>
                   </td>
@@ -224,14 +227,14 @@ function ctaButton(text, url) {
   return `
   <table role="presentation" cellpadding="0" cellspacing="0" style="margin:24px 0;">
     <tr>
-      <td style="background:${C.brand};border-radius:10px;">
-        <a href="${url}" style="display:inline-block;padding:14px 28px;font-family:${BODY_FONT};font-size:15px;font-weight:600;color:#ffffff;text-decoration:none;letter-spacing:0.2px;">${text} →</a>
+      <td style="background:${C.brand};border-radius:12px;">
+        <a href="${url}" style="display:inline-block;padding:14px 28px;font-family:${HEAD_FONT};font-size:15px;font-weight:600;color:#ffffff;text-decoration:none;letter-spacing:0.2px;">${text} →</a>
       </td>
     </tr>
   </table>`;
 }
 
-// Refined heading — serif, generous size, warm dark colour
+// Refined heading — Outfit (app heading font), generous size, slate colour
 function heading(level, text, marginTop = 0) {
   const sizes = { h1: 28, h2: 22, h3: 16 };
   const size = sizes[level] || 18;
