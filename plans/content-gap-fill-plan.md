@@ -10,6 +10,50 @@ non-goals: English gaps are deferred (one structural cloze gap is the only major
 
 # Content Gap-Fill Sprint — Maths + VR
 
+## 0. STATUS UPDATE (8 Jul 2026) — read first
+
+Two items logged here for later. **We are deliberately NOT actioning these now.**
+
+### 0a. ⚠ MAJOR — Bournemouth 11+ moving GL Assessment → Quest Assessment (Sept 2026)
+The Bournemouth grammar schools (our targets: Bournemouth Grammar + Parkstone
+Grammar) are switching exam board from **GL Assessment to Quest Assessment** from
+September 2026. This reframes the entire content strategy:
+
+- **This whole sprint plan is built on GL specs** (CGP GL mock gap analysis). Every
+  gap, difficulty band, and format assumption below is GL. Before doing any more
+  GL-spec content work, we need to know how much of it still holds under Quest.
+- **Unknowns to research (deep, not now):** how widely Quest Assessment will actually
+  be adopted across our target schools/region; what question types, formats, and
+  difficulty conventions Quest uses; how far they diverge from GL; which of our 8,210
+  existing questions transfer as-is, need tweaking, or don't fit Quest at all.
+- **Likely large body of work ahead:** re-researching the spec (Oracle research
+  library is currently GL-only), then auditing and reworking the question library
+  against Quest. Treat this as its own research-then-rework project, ahead of / above
+  this GL gap-fill sprint.
+- **Downstream docs to revisit once scoped:** project `CLAUDE.md` and the Master Brief
+  both state the target as "GL Assessment"; they'll need updating once we understand
+  Quest's footprint.
+
+### 0b. Content-correctness backlog — letterMove direction convention
+Tutor feedback (Sue, 8 Jul) is adamant that "Move a Letter" only ever goes one
+direction (first word → second word). Our content bank has ~40 reverse-direction
+(right-to-left) items in the `letterMove` VR topic, and their explanations already
+teach "always try both directions." The Oracle research library (`research/11plus-oracle.md`
+lines 531/542) is emphatic that GL uses BOTH directions and calls "assuming
+left-to-right only" the #1 trap. The three Sue-adjacent items (Q57 AGE/STREAM,
+Q58 EAR/TRANCE, Q74 ACE/BREACH) are NOT mis-keyed — each has exactly one valid
+answer because the short word can't shed a letter, forcing the reverse move.
+- **The fork:** either GL/Quest genuinely use both directions (keep all ~40, add a
+  one-line teaching tip) OR they're one-way (rework ~40 questions, which would gut the
+  D3 tier). Cannot safely stay in the current middle (reverse items shipped, no upfront
+  teaching).
+- **Tie-breaker needed:** a PRIMARY source (an actual GL/Quest paper or familiarisation
+  example showing a right-to-left move), not the Oracle's own distilled doc.
+- **Note:** this now folds into 0a — the direction convention should be settled against
+  **Quest** specs, not just GL, since Quest is the new target.
+
+---
+
 ## 1. Background
 
 The CGP GL Mock Test Paper 1 (10 May 2026) and the CGP 10-Minute Tests series (Maths + VR, 11 May 2026) were scanned into the past-papers database and reviewed by the Oracle. Output: **45 confirmed coverage gaps** — see `research/past-papers/oracle-gap-report-CGP-full-11may2026.md`.
