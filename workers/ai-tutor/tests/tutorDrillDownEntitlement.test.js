@@ -1,5 +1,6 @@
 /**
- * GET /api/tutor/pupils/:childId — entitlement allow-list (Phase 0 Unit A)
+ * GET /api/tutor/pupils/:childId — entitlement allow-list (Phase 0 Unit A,
+ * extended for Change 4b)
  *
  * A free-tier pupil's deep performance data (quiz history, topic mastery,
  * per-question results, mock test history, practice log, and per-recipient
@@ -7,6 +8,14 @@
  * built as an ALLOW-LIST: basic fields are always present, deep fields are
  * added only when the pupil is entitled. See lib/entitlementGate.js and the
  * handler in routes/tutor.js.
+ *
+ * Change 4b widens what a LOCKED pupil's response carries: a `basic`
+ * aggregate (one overall accuracy %, one accuracy % per subject, and
+ * engagement counts), computed server-side from quiz_results ONLY — never
+ * topic_performance, question_results, mock_test_results, or
+ * practice_sessions. The tests below pin the `basic` object's own
+ * allow-listed key set as well as the top-level one, so a future change
+ * can't quietly widen either without a deliberate update here.
  */
 
 import { describe, it, expect, beforeAll, afterEach } from 'vitest';
@@ -39,7 +48,13 @@ const DEEP_KEYS = ['quizResults', 'topicPerformance', 'questionResults', 'mockTe
 // change lets a new key leak into the locked response, the drift guard test
 // fails — update this set deliberately, only after confirming the new field
 // is genuinely basic (not deep performance data).
-const BASIC_ALLOWED_KEYS = ['child', 'assignmentRecipients', 'notesCount', 'pupilPlan', 'deepProgressLocked'];
+const BASIC_ALLOWED_KEYS = ['child', 'assignmentRecipients', 'notesCount', 'pupilPlan', 'deepProgressLocked', 'basic'];
+
+// The allow-listed key set of the `basic` aggregate itself (Change 4b). Kept
+// separate from BASIC_ALLOWED_KEYS above so a drift into the nested object
+// is caught with the same rigour as a drift into the top-level response.
+const BASIC_AGGREGATE_ALLOWED_KEYS = ['overallAccuracy', 'totalQuestions', 'questionsThisWeek', 'subjectAccuracy'];
+const SUBJECT_ACCURACY_ALLOWED_KEYS = ['subject', 'label', 'accuracy'];
 
 async function seedDeepData(db, childId) {
   await db.prepare(
@@ -127,6 +142,19 @@ describe('GET /api/tutor/pupils/:childId — entitlement allow-list', () => {
     expect(recipient).not.toHaveProperty('question_results');
     expect(recipient.status).toBe('completed');
     expect(recipient.assignment_title).toBe('Week 1');
+
+    // Basic aggregate (Change 4b) — seedDeepData inserts one quiz_results
+    // row (fractions/maths, 8/10, completed just now): overall and maths
+    // accuracy are both 80%, both subjects with no data resolve to null
+    // (never omitted — the three subjects are always all present).
+    expect(body.basic.overallAccuracy).toBe(80);
+    expect(body.basic.totalQuestions).toBe(10);
+    expect(body.basic.questionsThisWeek).toBe(10);
+    expect(body.basic.subjectAccuracy).toEqual([
+      { subject: 'maths', label: 'Maths', accuracy: 80 },
+      { subject: 'english', label: 'English', accuracy: null },
+      { subject: 'verbalreasoning', label: 'Verbal Reasoning', accuracy: null },
+    ]);
   });
 
   it('drift guard: a locked pupil response never carries an unlisted key', async () => {
@@ -148,6 +176,26 @@ describe('GET /api/tutor/pupils/:childId — entitlement allow-list', () => {
     for (const key of Object.keys(body)) {
       expect(BASIC_ALLOWED_KEYS).toContain(key);
     }
+
+    // Same drift guard, one level deeper: the `basic` aggregate itself must
+    // never carry more than the pinned aggregate fields, and each
+    // subjectAccuracy entry must never carry more than subject/label/accuracy
+    // (e.g. never a raw score/total pair, which would let a tutor back out
+    // question counts finer than the intended engagement figures).
+    for (const key of Object.keys(body.basic)) {
+      expect(BASIC_AGGREGATE_ALLOWED_KEYS).toContain(key);
+    }
+    for (const entry of body.basic.subjectAccuracy) {
+      for (const key of Object.keys(entry)) {
+        expect(SUBJECT_ACCURACY_ALLOWED_KEYS).toContain(key);
+      }
+    }
+
+    // The deep aggregate sources stay untouched for a locked pupil — the
+    // basic aggregate is computed from quiz_results only.
+    for (const key of DEEP_KEYS) {
+      expect(body).not.toHaveProperty(key);
+    }
   });
 
   it('paid/trial pupil: deep fields present, deepProgressLocked false', async () => {
@@ -166,6 +214,11 @@ describe('GET /api/tutor/pupils/:childId — entitlement allow-list', () => {
 
     expect(body.deepProgressLocked).toBe(false);
     expect(body.pupilPlan).toBe('trial');
+
+    // An entitled pupil gets the full deep payload, never the locked
+    // pupil's `basic` aggregate (Change 4b is additive to the locked
+    // branch only — the entitled branch is unchanged).
+    expect(body).not.toHaveProperty('basic');
 
     expect(body.quizResults).toHaveLength(1);
     expect(body.topicPerformance).toHaveLength(1);

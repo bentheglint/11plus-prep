@@ -1,13 +1,14 @@
 /**
- * Free-tier gating on the TUTOR side (Phase 0 freemium, Unit C).
+ * Free-tier gating on the TUTOR side (Phase 0 freemium, Unit C + Change 4b).
  *
  * The server withholds deep pupil data and blocks Focused Learning
  * assignment for free-plan pupils, marking each response with a stable
  * machine marker (deepProgressLocked / report.locked / assignment
  * `skipped`). These tests cover the two known crash guards
  * (PupilDetailScreen destructuring an absent quizResults, ReportScreen
- * destructuring an absent `assignments.total`) plus the AssignmentComposer
- * skipped-pupil banner.
+ * destructuring an absent `assignments.total`), the AssignmentComposer
+ * skipped-pupil banner, and (Change 4b) that a locked pupil's `basic`
+ * aggregate now renders above the reworded nudge.
  */
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
@@ -36,6 +37,19 @@ describe('PupilDetailScreen — locked (free-plan) pupil payload', () => {
     notesCount: 0,
     pupilPlan: 'free',
     deepProgressLocked: true,
+    // The basic aggregate the server computes for a locked pupil (Change
+    // 4b) — engagement + one overall accuracy number + the three subject
+    // accuracy figures.
+    basic: {
+      overallAccuracy: 75,
+      totalQuestions: 40,
+      questionsThisWeek: 8,
+      subjectAccuracy: [
+        { subject: 'maths', label: 'Maths', accuracy: 80 },
+        { subject: 'english', label: 'English', accuracy: null },
+        { subject: 'verbalreasoning', label: 'Verbal Reasoning', accuracy: null },
+      ],
+    },
     // Deliberately no quizResults / questionResults / topicPerformance /
     // mockTestHistory / practiceLog — this is exactly the shape the server
     // sends for a free pupil, and is what used to crash on
@@ -54,7 +68,7 @@ describe('PupilDetailScreen — locked (free-plan) pupil payload', () => {
     });
   });
 
-  it('renders the free-plan nudge instead of crashing on the missing quizResults', async () => {
+  it('renders the basic progress summary + reworded nudge instead of crashing on the missing quizResults', async () => {
     render(
       <PupilDetailScreen
         childId="c1"
@@ -68,8 +82,19 @@ describe('PupilDetailScreen — locked (free-plan) pupil payload', () => {
     // Header still renders from the fields the locked payload does carry.
     expect(await screen.findByText('Evie')).toBeInTheDocument();
 
-    // The nudge replaces the analytics stack.
-    expect(screen.getByText(/Full analytics need PrepStep Plus/i)).toBeInTheDocument();
+    // The basic set (Change 4b) renders above the nudge: overall accuracy,
+    // engagement counts, and the three subject accuracy figures.
+    expect(screen.getByText('Progress at a glance')).toBeInTheDocument();
+    expect(screen.getByText('75%')).toBeInTheDocument(); // overall accuracy
+    expect(screen.getByText('40')).toBeInTheDocument(); // total questions
+    expect(screen.getByText('8')).toBeInTheDocument(); // this week
+    expect(screen.getByText('80%')).toBeInTheDocument(); // maths accuracy
+    expect(screen.getAllByText('—').length).toBeGreaterThanOrEqual(2); // english + VR, no data
+
+    // The reworded nudge names the topic-level/mock/report detail that's
+    // still withheld — no longer implies no data at all.
+    expect(screen.getByText(/Topic-level detail needs PrepStep Plus/i)).toBeInTheDocument();
+    expect(screen.getByText(/topic-level breakdown, mock test results and full printable report/i)).toBeInTheDocument();
     expect(screen.getByText(/is on the free PrepStep plan/i)).toBeInTheDocument();
 
     // The deep-analytics cards are gone.

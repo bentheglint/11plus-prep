@@ -13,6 +13,7 @@ import { json } from '../helpers.js';
 import { buildDashboardData } from '../../../src/utils/tutorPulse.js';
 import { loadEntitlementForAccount, pupilPlanMarker } from '../lib/entitlementGate.js';
 import { resolveEntitlements } from '../lib/entitlements.js';
+import { SUBJECT_LABELS } from '../lib/topicLabels.js';
 
 // ── Tutor code generation ──
 // 8 uppercase chars, no confusable characters (0, O, 1, I, L).
@@ -304,6 +305,9 @@ export async function handleTutorRoutes(request, env, userId, path) {
   // GET /api/tutor/pupils/:childId — Full pupil drill-down (tutor's view)
   // Returns: child profile, recent quizzes, topic mastery, assignment recipients, notes count,
   //          question results, mock test history, and practiceLog for exam readiness consistency bonus
+  //          — full deep data for an entitled pupil, or (for a locked/free pupil) the `basic`
+  //          aggregate instead: one overall accuracy %, one accuracy % per subject, and
+  //          engagement counts (freemium phase-0 Change 4b).
   const drillDownMatch = path.match(/^\/api\/tutor\/pupils\/([^/]+)$/);
   if (drillDownMatch && request.method === 'GET') {
     const childId = drillDownMatch[1];
@@ -365,6 +369,13 @@ export async function handleTutorRoutes(request, env, userId, path) {
     let questionResults = { results: [] };
     let mockTestHistory = { results: [] };
     let practiceSessions = { results: [] };
+    // Basic aggregate — only computed for a LOCKED (free) pupil. This is the
+    // tutor's equivalent of the basic-vs-deep progress line: one overall
+    // accuracy %, one accuracy % per subject, and two engagement counts.
+    // Deliberately a SUM/GROUP BY against quiz_results ONLY — never
+    // topic_performance, question_results, mock_test_results, or
+    // practice_sessions, which stay untouched for a locked pupil.
+    let basic = null;
 
     if (deepAllowed) {
       [quizResults, topicPerf, questionResults, mockTestHistory, practiceSessions] = await Promise.all([
@@ -413,13 +424,58 @@ export async function handleTutorRoutes(request, env, userId, path) {
           ORDER BY session_date DESC
         `).bind(childId).all(),
       ]);
+    } else {
+      const [overallRow, subjectRows, weekRow] = await Promise.all([
+        // All-time overall: SUM(score)/SUM(total) across every quiz.
+        db.prepare(`
+          SELECT SUM(score) AS score_sum, SUM(total) AS total_sum
+          FROM quiz_results
+          WHERE child_id = ?
+        `).bind(childId).first(),
+
+        // All-time per-subject: SUM(score)/SUM(total) GROUP BY subject.
+        // Topic-level rows are never selected — subject is the finest grain returned.
+        db.prepare(`
+          SELECT subject, SUM(score) AS score_sum, SUM(total) AS total_sum
+          FROM quiz_results
+          WHERE child_id = ?
+          GROUP BY subject
+        `).bind(childId).all(),
+
+        // Engagement: questions attempted in the last 7 days.
+        db.prepare(`
+          SELECT SUM(total) AS week_total
+          FROM quiz_results
+          WHERE child_id = ? AND completed_at > datetime('now', '-7 days')
+        `).bind(childId).first(),
+      ]);
+
+      const overallTotal = overallRow?.total_sum || 0;
+      const overallScore = overallRow?.score_sum || 0;
+      const subjectRowBySubject = new Map((subjectRows.results || []).map(r => [r.subject, r]));
+
+      basic = {
+        overallAccuracy: overallTotal > 0 ? Math.round((overallScore / overallTotal) * 100) : null,
+        totalQuestions: overallTotal,
+        questionsThisWeek: weekRow?.week_total || 0,
+        subjectAccuracy: Object.keys(SUBJECT_LABELS).map(subject => {
+          const row = subjectRowBySubject.get(subject);
+          const subjectTotal = row?.total_sum || 0;
+          const subjectScore = row?.score_sum || 0;
+          return {
+            subject,
+            label: SUBJECT_LABELS[subject],
+            accuracy: subjectTotal > 0 ? Math.round((subjectScore / subjectTotal) * 100) : null,
+          };
+        }),
+      };
     }
 
     // Assignment recipients minus question_results (deep) for a locked pupil
     const mappedAssignmentRecipients = (assignRecipients.results || []).map(r => {
       if (deepAllowed) return r;
-      const { question_results, ...basic } = r;
-      return basic;
+      const { question_results, ...basicFields } = r;
+      return basicFields;
     });
 
     const response = {
@@ -438,6 +494,21 @@ export async function handleTutorRoutes(request, env, userId, path) {
       pupilPlan: marker.pupilPlan,
       deepProgressLocked: marker.deepProgressLocked,
     };
+
+    // Basic aggregates — only present for a locked (free) pupil. An
+    // explicit allow-listed object, never a spread of a DB row.
+    if (!deepAllowed) {
+      response.basic = {
+        overallAccuracy: basic.overallAccuracy,
+        totalQuestions: basic.totalQuestions,
+        questionsThisWeek: basic.questionsThisWeek,
+        subjectAccuracy: basic.subjectAccuracy.map(s => ({
+          subject: s.subject,
+          label: s.label,
+          accuracy: s.accuracy,
+        })),
+      };
+    }
 
     if (deepAllowed) {
       const parsedTopicPerf = topicPerf.results.map(r => ({

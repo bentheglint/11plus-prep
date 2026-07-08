@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { ArrowLeft, StickyNote, Edit2, Trash2, MessageCircle, BookOpen, CheckCircle, AlertCircle, Clock, ChevronDown, ChevronUp, ChevronRight } from 'lucide-react';
+import { ArrowLeft, StickyNote, Edit2, Trash2, MessageCircle, BookOpen, Calculator, Brain, CheckCircle, AlertCircle, Clock, ChevronDown, ChevronUp, ChevronRight } from 'lucide-react';
 import { motion } from '../components/Motion';
 import useMastery from '../hooks/useMastery';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
@@ -178,6 +178,57 @@ function StatusBadge({ status }) {
   );
 }
 
+// ── Basic progress summary — locked (free-plan) pupil only ──
+// Built from the tutor route's `basic` aggregate (freemium phase-0 Change
+// 4b, routes/tutor.js), NOT from raw per-question data — a locked pupil's
+// question-level and topic-level results are withheld from the tutor
+// entirely, so this renders only what the server actually sent: one overall
+// accuracy %, one accuracy % per subject, and two engagement counts.
+const SUBJECT_DISPLAY = {
+  maths: { icon: Calculator, colour: '#3B82F6' },
+  english: { icon: BookOpen, colour: '#22C55E' },
+  verbalreasoning: { icon: Brain, colour: '#7C3AED' },
+};
+
+function BasicPupilSummary({ basic }) {
+  if (!basic) return null;
+  const { overallAccuracy, totalQuestions, questionsThisWeek, subjectAccuracy = [] } = basic;
+  return (
+    <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5 mb-4">
+      <h3 className="font-heading font-bold text-slate-800 text-sm mb-4">Progress at a glance</h3>
+      <div className="grid grid-cols-3 gap-4 mb-5">
+        <div className="text-center">
+          <p className="text-xl font-heading font-bold text-slate-800">
+            {overallAccuracy !== null && overallAccuracy !== undefined ? `${overallAccuracy}%` : '—'}
+          </p>
+          <p className="text-[10px] text-slate-500 mt-0.5">Overall accuracy</p>
+        </div>
+        <div className="text-center">
+          <p className="text-xl font-heading font-bold text-slate-800">{totalQuestions ?? 0}</p>
+          <p className="text-[10px] text-slate-500 mt-0.5">Questions answered</p>
+        </div>
+        <div className="text-center">
+          <p className="text-xl font-heading font-bold text-slate-800">{questionsThisWeek ?? 0}</p>
+          <p className="text-[10px] text-slate-500 mt-0.5">This week</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-3">
+        {subjectAccuracy.map(s => {
+          const display = SUBJECT_DISPLAY[s.subject] || {};
+          const Icon = display.icon;
+          return (
+            <div key={s.subject} className="rounded-xl border border-slate-100 bg-slate-50 p-3 text-center">
+              {Icon && <Icon className="w-4 h-4 mx-auto mb-1" style={{ color: display.colour }} />}
+              <p className="text-sm font-bold text-slate-800">{s.accuracy !== null ? `${s.accuracy}%` : '—'}</p>
+              <p className="text-[10px] text-slate-500 mt-0.5">{s.label}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 // ── Mock data for dev preview ──
 const DEV_MOCK = {
   child: { id: 'c1', display_name: 'Evie', account_name: 'Sarah Mitchell', year_group: 5, target_school: 'Bournemouth School for Girls' },
@@ -232,6 +283,19 @@ const DEV_MOCK_LOCKED = {
   notesCount: 0,
   pupilPlan: 'free',
   deepProgressLocked: true,
+  // The basic aggregate the server now computes for a locked pupil
+  // (freemium phase-0 Change 4b) — engagement + one overall accuracy number
+  // + the three subject accuracy figures.
+  basic: {
+    overallAccuracy: 68,
+    totalQuestions: 142,
+    questionsThisWeek: 12,
+    subjectAccuracy: [
+      { subject: 'maths', label: 'Maths', accuracy: 71 },
+      { subject: 'english', label: 'English', accuracy: 62 },
+      { subject: 'verbalreasoning', label: 'Verbal Reasoning', accuracy: 65 },
+    ],
+  },
   // Deliberately no quizResults/questionResults/topicPerformance/mockTestHistory/practiceLog,
   // exactly like the real server withholds for a free pupil.
 };
@@ -416,9 +480,12 @@ export default function PupilDetailScreen({ childId, getToken, onBack, panelMode
           transition={{ type: 'spring', stiffness: 200, damping: 22 }}
         >
           {locked ? (
-            <FreePlanNudge title="Full analytics need PrepStep Plus" className="mb-4">
-              {child.display_name} is on the free PrepStep plan, so detailed progress, topic analytics and mock results aren't shared with tutors. Ask their parent to upgrade to PrepStep Plus to unlock the full picture.
-            </FreePlanNudge>
+            <>
+              <BasicPupilSummary basic={data.basic} />
+              <FreePlanNudge title="Topic-level detail needs PrepStep Plus" className="mb-4">
+                {child.display_name} is on the free PrepStep plan, so the topic-level breakdown, mock test results and full printable report aren't shared with tutors. Ask their parent to upgrade to PrepStep Plus to unlock the full picture.
+              </FreePlanNudge>
+            </>
           ) : (
             <>
               <ExamReadinessCard mastery={mastery} />
