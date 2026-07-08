@@ -212,12 +212,13 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
 
   const mockTest = useMockTest();
   const mockResultsSaved = React.useRef(false);
-  // Detect /join/<tutorCode> path on mount — also check sessionStorage so the
-  // code survives Clerk's sign-in redirect (which lands on /, not /join/<code>).
+  // Detect /join/<tutorCode> path on mount — also check localStorage so the
+  // code survives Clerk's sign-in/sign-up redirect (which lands on /, not
+  // /join/<code>), including a fresh-tab email verification handoff.
   const [joinTutorCode, setJoinTutorCode] = useState(() => {
     const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
     if (pathMatch) return pathMatch[1].toUpperCase();
-    try { return sessionStorage.getItem('pending-join-code') || null; } catch { return null; }
+    try { return localStorage.getItem('pending-join-code') || null; } catch { return null; }
   });
 
   // Detect pending invite token (captured by AuthGate before Clerk redirect).
@@ -230,7 +231,7 @@ function App({ currentUser: authUser, getToken, loadedData, activeChildId: initi
   const [currentView, setCurrentView] = useState(() => {
     const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
     if (pathMatch) return 'join';
-    try { if (sessionStorage.getItem('pending-join-code')) return 'join'; } catch {};
+    try { if (localStorage.getItem('pending-join-code')) return 'join'; } catch {};
     // Invite claim — check AFTER join so /join/ always wins if both somehow coexist
     try { if (sessionStorage.getItem('pending-invite-token')) return 'inviteClaim'; } catch {};
     // Tutor preview takes precedence — a tutor exploring the pupil experience
@@ -1957,12 +1958,16 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onJoined={(childId) => {
           // Clear the join path from the URL and any saved join code, then go home
           window.history.replaceState({}, '', '/');
-          try { sessionStorage.removeItem('pending-join-code'); } catch {}
+          try { localStorage.removeItem('pending-join-code'); } catch {}
           setActiveChildId(childId);
           setCurrentView('home');
         }}
         onBack={() => {
+          // Parent declined — clear the saved code so it can never linger
+          // (localStorage persists across sessions, unlike sessionStorage)
+          // and silently re-route or mislink a later child.
           window.history.replaceState({}, '', '/');
+          try { localStorage.removeItem('pending-join-code'); } catch {}
           setCurrentView('home');
         }}
       />

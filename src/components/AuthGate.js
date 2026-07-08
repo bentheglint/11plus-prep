@@ -395,12 +395,16 @@ function AuthGateReal({ children }) {
   const [confirmExhausted, setConfirmExhausted] = useState(false);
 
   // Tutor join code — captured from /join/<code> path on first mount. Persists
-  // in sessionStorage so it survives Clerk's sign-in redirect (which lands on /).
-  // App.js reads it back after sign-in and routes to the join view.
+  // in localStorage (not sessionStorage) so it survives Clerk's sign-in/sign-up
+  // redirect EVEN when the email verification / OTP handoff opens a fresh tab
+  // or browser context — sessionStorage is scoped to a single tab and was lost
+  // on that path. App.js reads it back after sign-in and routes to the join view;
+  // it is cleared on a successful join or when the parent declines (JoinScreen
+  // onBack), so an abandoned code can never linger and mislink a later child.
   useState(() => {
     try {
       const pathMatch = window.location.pathname.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
-      if (pathMatch) sessionStorage.setItem('pending-join-code', pathMatch[1].toUpperCase());
+      if (pathMatch) localStorage.setItem('pending-join-code', pathMatch[1].toUpperCase());
     } catch {}
   });
 
@@ -889,6 +893,15 @@ function AuthGateReal({ children }) {
 
   // Not signed in
   if (!isSignedIn) {
+    // Pending tutor join code, if any — read at render so Clerk's SignIn/SignUp
+    // can send the parent straight back to /join/<code> after auth completes.
+    // Belt-and-braces on top of the localStorage persistence above: covers the
+    // case where verification happens in a browser/profile that doesn't share
+    // localStorage with the tab that started signup. No code → falls back to "/".
+    let pendingJoinCode = null;
+    try { pendingJoinCode = localStorage.getItem('pending-join-code') || null; } catch {}
+    const joinRedirectUrl = pendingJoinCode ? `/join/${pendingJoinCode}` : '/';
+
     if (authView === 'signin') {
       return (
         <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-white flex flex-col items-center justify-center p-4">
@@ -899,7 +912,7 @@ function AuthGateReal({ children }) {
             <ArrowLeft className="w-4 h-4" />
             Back
           </button>
-          <SignIn fallbackRedirectUrl="/" />
+          <SignIn fallbackRedirectUrl={joinRedirectUrl} />
         </div>
       );
     }
@@ -913,7 +926,7 @@ function AuthGateReal({ children }) {
             <ArrowLeft className="w-4 h-4" />
             Back
           </button>
-          <SignUp fallbackRedirectUrl="/" />
+          <SignUp fallbackRedirectUrl={joinRedirectUrl} />
         </div>
       );
     }

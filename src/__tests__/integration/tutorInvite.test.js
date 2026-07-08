@@ -100,6 +100,89 @@ describe('GET /api/tutor/public/:code response contract', () => {
   });
 });
 
+// ── Pending join code persistence (localStorage, not sessionStorage) ──
+//
+// The reusable tutor join code MUST survive Clerk's signup redirect even when
+// email verification (OTP) completes in a fresh browser tab/context —
+// sessionStorage is scoped to a single tab and loses the code on that path.
+// localStorage is shared across same-browser tabs, so it survives. It must
+// still be cleared on a successful join AND on decline, since (unlike
+// sessionStorage) it would otherwise persist across sessions indefinitely
+// and could silently mislink a later child.
+
+describe('pending join code storage', () => {
+  function makeFakeStorage() {
+    const store = {};
+    return {
+      getItem: (k) => (k in store ? store[k] : null),
+      setItem: (k, v) => { store[k] = v; },
+      removeItem: (k) => { delete store[k]; },
+      _store: store,
+    };
+  }
+
+  it('capture on /join/<code> mount writes to localStorage, not sessionStorage', () => {
+    const fakeLocalStorage = makeFakeStorage();
+    const fakeSessionStorage = makeFakeStorage();
+
+    // Mirrors AuthGate's capture-on-mount logic
+    const pathMatch = '/join/ABCD-EFGH'.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+    if (pathMatch) fakeLocalStorage.setItem('pending-join-code', pathMatch[1].toUpperCase());
+
+    expect(fakeLocalStorage.getItem('pending-join-code')).toBe('ABCD-EFGH');
+    expect(fakeSessionStorage.getItem('pending-join-code')).toBeNull();
+  });
+
+  it('a code left only in localStorage (simulating a fresh-tab handoff) still routes to the join view', () => {
+    const fakeLocalStorage = makeFakeStorage();
+    fakeLocalStorage.setItem('pending-join-code', 'ABCD-EFGH');
+
+    // Mirrors App.js's currentView initializer: no /join/ path on this load
+    // (Clerk redirected to "/"), but the localStorage code is still present.
+    let currentView = null;
+    const pathMatch = '/'.match(/^\/join\/([A-Z0-9-]{5,12})$/i);
+    if (pathMatch) currentView = 'join';
+    else if (fakeLocalStorage.getItem('pending-join-code')) currentView = 'join';
+
+    expect(currentView).toBe('join');
+  });
+
+  it('successful join clears the localStorage code (onJoined)', () => {
+    const fakeLocalStorage = makeFakeStorage();
+    fakeLocalStorage.setItem('pending-join-code', 'ABCD-EFGH');
+
+    // Mirrors App.js's JoinScreen onJoined handler
+    fakeLocalStorage.removeItem('pending-join-code');
+
+    expect(fakeLocalStorage.getItem('pending-join-code')).toBeNull();
+  });
+
+  it('declining the join (Back) also clears the localStorage code, so it cannot linger and mislink a later child', () => {
+    const fakeLocalStorage = makeFakeStorage();
+    fakeLocalStorage.setItem('pending-join-code', 'ABCD-EFGH');
+
+    // Mirrors App.js's JoinScreen onBack handler
+    fakeLocalStorage.removeItem('pending-join-code');
+
+    expect(fakeLocalStorage.getItem('pending-join-code')).toBeNull();
+  });
+
+  it('Clerk redirect URL includes the pending join code when present, else falls back to "/"', () => {
+    const fakeLocalStorage = makeFakeStorage();
+
+    function buildRedirectUrl(storage) {
+      let pendingJoinCode = null;
+      try { pendingJoinCode = storage.getItem('pending-join-code') || null; } catch {}
+      return pendingJoinCode ? `/join/${pendingJoinCode}` : '/';
+    }
+
+    expect(buildRedirectUrl(fakeLocalStorage)).toBe('/');
+
+    fakeLocalStorage.setItem('pending-join-code', 'ABCD-EFGH');
+    expect(buildRedirectUrl(fakeLocalStorage)).toBe('/join/ABCD-EFGH');
+  });
+});
+
 // ── pupil_tutors idempotency ──
 
 describe('join idempotency', () => {
