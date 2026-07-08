@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Crown, CheckCircle2 } from 'lucide-react';
 
 // Hard, full-screen, non-dismissible trial-end interstitial (Phase 0
@@ -15,6 +15,15 @@ import { Crown, CheckCircle2 } from 'lucide-react';
 // payment prompt and no dead end.
 export default function TrialEndedChoiceModal({ childName, onChoosePlus, onContinueFree }) {
   const child = childName || 'Your child';
+
+  // Lock the background from scrolling while this full-screen gate is open, so
+  // only the interstitial scrolls (otherwise the page behind adds a second
+  // scrollbar). Restored on unmount.
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prev; };
+  }, []);
 
   return (
     <div className="fixed inset-0 z-[60] bg-[#F8F7FF] overflow-y-auto">
