@@ -16,7 +16,10 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
 
   // Paid-tier gates — only meaningful when the freeTier flag is on. Off
   // (default), every gate below evaluates to "unlocked" so behaviour is
-  // pixel-identical to before this feature existed.
+  // pixel-identical to before this feature existed. Study Toolkit reuses
+  // focusedLearningLocked rather than a gate of its own — the micro-lessons
+  // in it are also the pre-quiz lessons for Focused Learning, so the two
+  // lock together deliberately (freemium phase-0 Change 2).
   const focusedLearningLocked = !!freeTierActive && !canUseFeature(entitlement, 'focusedLearning');
   const mockTestLocked = !!freeTierActive && !canUseFeature(entitlement, 'mockTests');
   const challengePaidLocked = !!freeTierActive && !canUseFeature(entitlement, 'challenge');
@@ -122,19 +125,28 @@ function LearningModeScreen({ subjectName, subjectKey, mastery, onStartDaily, on
             </motion.button>
           )}
 
-          <motion.button
-            whileHover={{ scale: 1.02, y: -2 }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            onClick={onStudyToolkit}
-            className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#FDCB6E]/30 "
-          >
-            <div className="flex items-center justify-center w-16 h-16 bg-[#FDCB6E]/10 rounded-2xl mb-4">
-              <Lightbulb className="w-8 h-8 text-[#F59E0B]" />
-            </div>
-            <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Study Toolkit</h3>
-            <p className="text-slate-500 flex-1">Tips, strategies, and lessons to help you ace the exam!</p>
-          </motion.button>
+          {focusedLearningLocked ? (
+            <LockedModeCard
+              title="Study Toolkit"
+              description="Tips, strategies, and lessons to help you ace the exam!"
+              onUpgrade={onUpgrade}
+              showCta={false}
+            />
+          ) : (
+            <motion.button
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+              onClick={onStudyToolkit}
+              className="card rounded-2xl p-8 text-left flex flex-col border-2 border-transparent hover:border-[#FDCB6E]/30 "
+            >
+              <div className="flex items-center justify-center w-16 h-16 bg-[#FDCB6E]/10 rounded-2xl mb-4">
+                <Lightbulb className="w-8 h-8 text-[#F59E0B]" />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-slate-800 mb-2">Study Toolkit</h3>
+              <p className="text-slate-500 flex-1">Tips, strategies, and lessons to help you ace the exam!</p>
+            </motion.button>
+          )}
         </div>
 
         {/* Challenge Mode — full-width banner below the grid */}

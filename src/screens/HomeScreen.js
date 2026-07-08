@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { BookOpen, Calculator, Brain, BarChart3, AlertCircle, Wrench, ClipboardCheck, ChevronRight, ChevronDown, Users } from 'lucide-react';
+import { BookOpen, Calculator, Brain, BarChart3, AlertCircle, Wrench, ClipboardCheck, ChevronRight, ChevronDown, Users, Lock } from 'lucide-react';
 import { motion } from '../components/Motion';
 import AccountMenu from '../components/AccountMenu';
 import StreakDisplay from '../components/StreakDisplay';
 import RecommendationCard from '../components/RecommendationCard';
+import TodaysPracticeCard from '../components/TodaysPracticeCard';
 import AssignmentBanner from '../components/AssignmentBanner';
 import { BookOpen as LessonsIcon } from 'lucide-react';
 import { isSpeedReviewAllowlisted } from '../utils/tutorAllowlist';
 import OfflineDataBanner from '../components/OfflineDataBanner';
-import { trialBanner } from '../utils/entitlementGating';
+import { trialBanner, canUseFeature } from '../utils/entitlementGating';
 
 function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment, loadState, onRetry, entitlement, freeTierActive, onUpgrade }) {
   const [showPicker, setShowPicker] = useState(false);
@@ -56,6 +57,17 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
   // with days actually left (never comped/paid/free, never "0 days left").
   const trialBannerState = trialBanner(entitlement);
   const showTrialBanner = !!freeTierActive && trialBannerState.show;
+
+  // Paid-tier gates — only meaningful when the freeTier flag is on. Off
+  // (default), both evaluate to "unlocked" so behaviour is pixel-identical
+  // to before this feature existed. "What to practise next" is a deep-
+  // progress insight (basic-vs-deep line, freemium phase 0), so it's gated
+  // on the same entitlement as ParentDashboard's deep analytics lock.
+  // Study Toolkit reuses the focusedLearning gate — the micro-lessons in
+  // it are also the pre-quiz lessons for Focused Learning, which is
+  // already locked, so the two stay in step deliberately.
+  const deepProgressLocked = !!freeTierActive && !canUseFeature(entitlement, 'deepProgress');
+  const studyToolkitLocked = !!freeTierActive && !canUseFeature(entitlement, 'focusedLearning');
 
   return (
     <div className="app-bg p-4">
@@ -190,7 +202,9 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           {/* Suggestion card — spans 2 columns on desktop */}
           <div className="md:col-span-2">
-            {suggestions.length > 0 ? (
+            {deepProgressLocked ? (
+              <TodaysPracticeCard onStart={() => onStartTopic(undefined, undefined, 'daily')} />
+            ) : suggestions.length > 0 ? (
               <RecommendationCard
                 recommendation={suggestions[0]}
                 onStart={onStartTopic}
@@ -236,21 +250,33 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
               </motion.button>
             )}
             {onViewMyLessons && (
-              <motion.button
-                onClick={onViewMyLessons}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-                className="flex items-center gap-3 px-4 py-3 card hover:bg-[#F0FDF4]/60 rounded-xl transition-colors"
-              >
-                <LessonsIcon className="w-5 h-5 text-[#16A34A]" />
-                <span className="font-heading font-bold text-slate-800 text-sm">My Lessons</span>
-              </motion.button>
+              studyToolkitLocked ? (
+                <div className="flex items-center gap-3 px-4 py-3 card border-2 border-gray-200 rounded-xl cursor-default">
+                  <LessonsIcon className="w-5 h-5 text-gray-300" />
+                  <span className="font-heading font-bold text-gray-400 text-sm flex-1">My Lessons</span>
+                  <span className="flex items-center gap-1 text-[10px] font-bold text-gray-400 bg-gray-100 rounded-full px-2 py-1 shrink-0">
+                    <Lock className="w-3 h-3" />
+                    Plus
+                  </span>
+                </div>
+              ) : (
+                <motion.button
+                  onClick={onViewMyLessons}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                  className="flex items-center gap-3 px-4 py-3 card hover:bg-[#F0FDF4]/60 rounded-xl transition-colors"
+                >
+                  <LessonsIcon className="w-5 h-5 text-[#16A34A]" />
+                  <span className="font-heading font-bold text-slate-800 text-sm">My Lessons</span>
+                </motion.button>
+              )
             )}
           </div>
         </div>
 
-        {/* Additional suggestions (2nd and 3rd) */}
-        {suggestions.length > 1 && (
+        {/* Additional suggestions (2nd and 3rd) — deep-progress recommendations,
+            so suppressed entirely for a free child alongside the primary card. */}
+        {!deepProgressLocked && suggestions.length > 1 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             {suggestions.slice(1).map(rec => (
               <RecommendationCard

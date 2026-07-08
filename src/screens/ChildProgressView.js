@@ -4,7 +4,11 @@ import StreakDisplay from '../components/StreakDisplay';
 import PrepPointsBar from '../components/PrepPointsBar';
 import TopicStarRating from '../components/TopicStarRating';
 import RecommendationCard, { topicNames } from '../components/RecommendationCard';
+import TodaysPracticeCard from '../components/TodaysPracticeCard';
+import BasicProgressSummary from '../components/progress/BasicProgressSummary';
 import QuizHistoryRow from '../components/QuizHistoryRow';
+import LockedFeatureCard from '../components/LockedFeatureCard';
+import { canUseFeature } from '../utils/entitlementGating';
 
 const subjectConfig = {
   maths: { key: 'maths', name: 'Maths', icon: Calculator, colour: '#3B82F6', gradient: 'from-[#3B82F6] to-[#2563EB]' },
@@ -12,11 +16,17 @@ const subjectConfig = {
   verbalreasoning: { key: 'verbalreasoning', name: 'Verbal Reasoning', icon: Brain, colour: '#7C3AED', gradient: 'from-[#7C3AED] to-[#5A4BD1]' },
 };
 
-function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, onDrillDown, onHome, onViewQuiz, onViewAllActivity }) {
+function ChildProgressView({ mastery, streaksAndPP, quizHistory, userData, onStartTopic, onDrillDown, onHome, onViewQuiz, onViewAllActivity, entitlement, freeTierActive, onUpgrade }) {
   const [selectedSubject, setSelectedSubject] = useState('maths');
 
   const levelInfo = streaksAndPP.getLevelInfo();
   const allMastery = mastery.getAllMastery();
+
+  // Deep-progress diagnostics (topic star grid + trends, weakest-topic
+  // call-out, "what to practise next") are a paid-tier feature — same gate
+  // as ParentDashboard's deep analytics lock (basic-vs-deep progress line,
+  // freemium phase 0 Change 3). Child surface: no upgrade CTA (Option A).
+  const deepProgressLocked = !!freeTierActive && !canUseFeature(entitlement, 'deepProgress');
 
   // Get recommendation for the selected subject
   const recommendation = mastery.getRecommendedNext(selectedSubject);
@@ -55,12 +65,24 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
           </div>
         </div>
 
-        {/* What to Practise Next */}
+        {/* Basic progress — always visible (streak/PP above cover the rest
+            of the "keep" set), freemium phase-0 Change 3 */}
+        {userData && (
+          <BasicProgressSummary streaksAndPP={streaksAndPP} userData={userData} title="Your progress" showStreak={false} />
+        )}
+
+        {/* What to Practise Next — a deep-progress insight, locked for a
+            free child and replaced with the calm Daily Learning card
+            (freemium phase-0 Changes 1 & 3) */}
         <div className="mb-6">
-          <RecommendationCard
-            recommendation={recommendation}
-            onStart={onStartTopic}
-          />
+          {deepProgressLocked ? (
+            <TodaysPracticeCard onStart={() => onStartTopic(undefined, undefined, 'daily')} />
+          ) : (
+            <RecommendationCard
+              recommendation={recommendation}
+              onStart={onStartTopic}
+            />
+          )}
         </div>
 
         {/* Subject Mastery Cards */}
@@ -88,13 +110,24 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
           })}
         </div>
 
-        {/* Topic Star Grid for Selected Subject */}
-        <div className="card-elevated p-5 mb-6">
-          <h3 className="font-heading font-bold text-slate-800 mb-4">
-            {subjectConfig[selectedSubject]?.name} Topics
-          </h3>
-          <div className="grid grid-cols-2 gap-2">
-            {topicMasteries.map(topic => {
+        {/* Topic Star Grid for Selected Subject — the per-topic strong/weak
+            map + trend arrows, locked for a free child (freemium phase-0
+            Change 3). Child surface: no upgrade CTA (Option A). */}
+        {deepProgressLocked ? (
+          <LockedFeatureCard
+            className="mb-6"
+            title="Topic Breakdown"
+            description="See exactly how you're doing on every topic, with stars and trends for each one."
+            onUpgrade={onUpgrade}
+            showCta={false}
+          />
+        ) : (
+          <div className="card-elevated p-5 mb-6">
+            <h3 className="font-heading font-bold text-slate-800 mb-4">
+              {subjectConfig[selectedSubject]?.name} Topics
+            </h3>
+            <div className="grid grid-cols-2 gap-2">
+              {topicMasteries.map(topic => {
               const colour = subjectConfig[selectedSubject]?.colour || '#7C3AED';
               const masteryScale = {
                 '#3B82F6': ['#EFF6FF', '#BFDBFE', '#60A5FA', '#1D4ED8'],
@@ -148,9 +181,10 @@ function ChildProgressView({ mastery, streaksAndPP, quizHistory, onStartTopic, o
                   <ChevronRight className={`absolute right-2 bottom-2 w-4 h-4 transition-colors ${textOnDark ? 'text-white/30 group-hover:text-white/60' : 'text-gray-200 group-hover:text-gray-400'}`} />
                 </button>
               );
-            })}
+              })}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Recent Activity */}
         {recentQuizzes.length > 0 && (

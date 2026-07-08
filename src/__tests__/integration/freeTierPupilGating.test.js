@@ -95,14 +95,21 @@ beforeEach(() => {
 });
 
 describe('ProgressScreen — deepProgress gate', () => {
-  it('shows the upgrade nudge instead of deep analytics when free-tier and locked', () => {
+  it('shows the basic set plus an upgrade nudge for the deep diagnosis when free-tier and locked', () => {
     const onUpgrade = jest.fn();
     render(<ProgressHarness entitlement={FREE_ENTITLEMENT} freeTierActive={true} onUpgrade={onUpgrade} />);
     goToParentTab();
 
-    expect(screen.getByText(/Deep Progress Analytics/i)).toBeInTheDocument();
+    // Deep diagnosis (topic-level) stays locked with the upgrade CTA — the
+    // parent surface keeps selling (freemium phase-0 Change 4a).
+    expect(screen.getByText(/Topic-by-Topic Diagnosis/i)).toBeInTheDocument();
     expect(screen.getByText(/Upgrade to unlock/i)).toBeInTheDocument();
-    expect(screen.queryByRole('heading', { name: 'Exam Readiness' })).not.toBeInTheDocument();
+
+    // The basic set (basic-vs-deep progress line) stays visible even when
+    // the deep diagnosis is locked: the three subject readiness bars plus
+    // engagement/overall accuracy.
+    expect(screen.getByRole('heading', { name: 'Exam Readiness' })).toBeInTheDocument();
+    expect(screen.getByText(/Progress at a glance/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getByText(/Upgrade to unlock/i));
     expect(onUpgrade).toHaveBeenCalledTimes(1);
@@ -113,7 +120,7 @@ describe('ProgressScreen — deepProgress gate', () => {
     goToParentTab();
 
     expect(screen.getByRole('heading', { name: 'Exam Readiness' })).toBeInTheDocument();
-    expect(screen.queryByText(/Deep Progress Analytics/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Topic-by-Topic Diagnosis/i)).not.toBeInTheDocument();
   });
 
   it('renders normally when the free-tier rollout flag is off, regardless of entitlement', () => {
@@ -121,13 +128,23 @@ describe('ProgressScreen — deepProgress gate', () => {
     goToParentTab();
 
     expect(screen.getByRole('heading', { name: 'Exam Readiness' })).toBeInTheDocument();
-    expect(screen.queryByText(/Deep Progress Analytics/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Topic-by-Topic Diagnosis/i)).not.toBeInTheDocument();
   });
 
-  it('"My Journey" (basic) stays fully visible and free regardless of tier', () => {
+  it('"My Journey" shows the basic set for a free child and locks the deep diagnosis with no upgrade sell (Change 3)', () => {
     render(<ProgressHarness entitlement={FREE_ENTITLEMENT} freeTierActive={true} onUpgrade={jest.fn()} />);
     // Default view is 'child' (My Journey) — never navigate to the parent tab.
-    expect(screen.queryByText(/Deep Progress Analytics/i)).not.toBeInTheDocument();
+
+    // Basic set (streak/PP header + this summary) stays visible.
+    expect(screen.getByText(/Your progress/i)).toBeInTheDocument();
+
+    // The per-topic star grid is locked, child surface — no upgrade CTA.
+    expect(screen.getByText(/Topic Breakdown/i)).toBeInTheDocument();
+    expect(screen.queryByText(/Upgrade to unlock/i)).not.toBeInTheDocument();
+
+    // The recommendation card is replaced with the calm Daily Learning card.
+    expect(screen.getByText('Daily Practice Set')).toBeInTheDocument();
+
     expect(screen.getByRole('button', { name: /parent dashboard/i })).toBeInTheDocument();
   });
 });

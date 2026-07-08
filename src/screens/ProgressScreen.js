@@ -80,11 +80,15 @@ function ProgressScreen({ quizHistory, questionData, mastery, streaksAndPP, user
           mastery={mastery}
           streaksAndPP={streaksAndPP}
           quizHistory={quizHistory}
+          userData={userData}
           onStartTopic={onStartTopic}
           onDrillDown={onDrillDown}
           onHome={onHome}
           onViewQuiz={onViewQuiz}
           onViewAllActivity={onViewAllActivity}
+          entitlement={entitlement}
+          freeTierActive={freeTierActive}
+          onUpgrade={onUpgrade}
         />
       )}
     </div>

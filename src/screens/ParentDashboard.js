@@ -3,6 +3,7 @@ import { useClerk } from '@clerk/clerk-react';
 import { Download, Trash2, AlertTriangle, CreditCard } from 'lucide-react';
 import OnTrackCard from '../components/progress/OnTrackCard';
 import ExamReadinessCard from '../components/progress/ExamReadinessCard';
+import BasicProgressSummary from '../components/progress/BasicProgressSummary';
 import TopicHeatMap from '../components/progress/TopicHeatMap';
 import PracticeCalendar from '../components/progress/PracticeCalendar';
 import FocusAreas from '../components/progress/FocusAreas';
@@ -19,10 +20,14 @@ import { canUseFeature } from '../utils/entitlementGating';
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
 function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToken, activeChildId, onTopicClick, onHome, onOpenParentMessages, entitlement, freeTierActive, onUpgrade }) {
-  // Deep progress analytics (exam readiness, topic heat map, focus areas,
-  // speed/practice history) are a paid-tier feature (spec §4 / §11-E-14).
-  // Tutor linking, subscription management, and GDPR data rights below are
-  // NOT part of this gate — they stay available to every tier.
+  // Deep progress analytics (topic heat map, focus areas, mock history,
+  // speed/accuracy detail) are a paid-tier feature (spec §4 / §11-E-14).
+  // The basic set (overall accuracy, the three subject-level readiness
+  // bars, and engagement) stays visible either way — only the diagnostic
+  // half is behind this gate (basic-vs-deep progress line, freemium
+  // phase-0 Change 4a). Tutor linking, subscription management, and GDPR
+  // data rights below are NOT part of this gate — they stay available to
+  // every tier.
   const deepProgressLocked = !!freeTierActive && !canUseFeature(entitlement, 'deepProgress');
   const practiceDays = streaksAndPP.getPracticeDays(84);
   const { signOut } = useClerk();
@@ -155,14 +160,24 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
           onOpenMessages={onOpenParentMessages}
         />
 
-        {/* Deep progress analytics — locked for free-tier children. The
-            underlying data already lives on the client (§9); this is a UI
-            lock only, driven by the server entitlement, never a client flag. */}
+        {/* Basic progress — always visible, free or paid (basic-vs-deep
+            progress line, freemium phase-0 Change 4a): the three subject
+            readiness bars plus engagement and one overall accuracy number. */}
+        <ExamReadinessCard mastery={mastery} />
+
+        {deepProgressLocked && (
+          <BasicProgressSummary streaksAndPP={streaksAndPP} userData={userData} />
+        )}
+
+        {/* Deep progress analytics — the topic-level diagnosis, locked for
+            free-tier children. The underlying data already lives on the
+            client (§9); this is a UI lock only, driven by the server
+            entitlement, never a client flag. */}
         {deepProgressLocked ? (
           <LockedFeatureCard
             className="mb-6"
-            title="Deep Progress Analytics"
-            description="Exam readiness scores, topic heat maps, focus areas, speed tracking, mock test history and the practice calendar — upgrade to see the full picture of how your child is progressing."
+            title="Topic-by-Topic Diagnosis"
+            description="See exactly which topics need work, track trends over time, and review mock test results and speed data."
             onUpgrade={onUpgrade}
           />
         ) : (
@@ -174,8 +189,6 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
               userData={userData}
               currentUser={currentUser}
             />
-
-            <ExamReadinessCard mastery={mastery} />
 
             <TopicHeatMap mastery={mastery} onTopicClick={onTopicClick} />
 

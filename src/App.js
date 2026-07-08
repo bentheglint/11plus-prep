@@ -2565,9 +2565,13 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         getToken={getToken}
         activeChildId={activeChildId}
         onHome={handleHome}
-        onStartTopic={(subject, topicKey) => {
-          setSelectedSubject(subject);
-          handleTopicSelect(topicKey, subject);
+        onStartTopic={(subject, topicKey, mode) => {
+          if (mode === 'daily') {
+            handleStartDaily(subject);
+          } else {
+            setSelectedSubject(subject);
+            handleTopicSelect(topicKey, subject);
+          }
         }}
         onDrillDown={(subject, topicKey) => {
           setDrillDownTopic({ subject, topicKey });
