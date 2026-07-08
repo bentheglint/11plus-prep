@@ -23413,6 +23413,7 @@ anglesshapes: {
     {
       id: 205,
       difficulty: 3,
+      visual: { component: "RightTriangleExteriorAngle", props: { apexAngle: 35, exteriorLabel: "?" } },
       question: "A right-angled triangle sits on a straight line. The right angle is at the bottom-left corner. The angle at the top of the triangle is 35°. What is the angle between the sloping side and the straight line, outside the triangle?",
       options: ["35°", "125°", "55°", "135°", "145°"],
       correct: 1,

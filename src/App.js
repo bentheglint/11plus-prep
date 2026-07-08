@@ -11,7 +11,8 @@ import {
   TriangleAreaDiagram, ParallelogramDiagram, LShapeDiagram,
   NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
   ClockFace, ThermometerDiagram, BuildingDiagram,
-  RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
+  RectangleComparison, RectangleGrid, DotPattern, CuboidComparison,
+  RightTriangleExteriorAngle
 } from './microLessons/visuals';
 import ResultsScreen from './screens/ResultsScreen';
 import ProgressScreen from './screens/ProgressScreen';
@@ -77,7 +78,8 @@ const quizVisualComponents = {
   TriangleAreaDiagram, ParallelogramDiagram, LShapeDiagram,
   NumberLine, BarModel, GridModel, PathBorderDiagram, PlaceValueChart,
   ClockFace, ThermometerDiagram, BuildingDiagram,
-  RectangleComparison, RectangleGrid, DotPattern, CuboidComparison
+  RectangleComparison, RectangleGrid, DotPattern, CuboidComparison,
+  RightTriangleExteriorAngle
 };
 
 function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin, entitlement }) {

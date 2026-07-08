@@ -4340,6 +4340,111 @@ export function ExteriorAngle({
 }
 
 // ============================================================
+// RightTriangleExteriorAngle — right-angled triangle sitting on a
+// straight line, right angle at bottom-left (square marker), given
+// angle at the top (apex), and the UNKNOWN exterior angle at the
+// bottom-right — between the sloping side and the line, outside the
+// triangle. Only the apex angle is labelled with a value; the
+// exterior angle is always shown as "?" (or a custom label) so the
+// diagram never gives away the answer.
+// Props:
+//   apexAngle     — the given angle at the top vertex (default 35)
+//   exteriorLabel — label for the unknown exterior angle (default "?")
+// ============================================================
+export function RightTriangleExteriorAngle({
+  apexAngle = 35,
+  exteriorLabel = "?"
+}) {
+  const DEG = Math.PI / 180;
+  const vw = 400, vh = 240;
+  const baseY = 175;
+
+  // Right-angle vertex (bottom-left) — the vertical side runs up to the
+  // apex, the base runs right along the line to the bottom-right vertex.
+  const B = { x: 115, y: baseY };
+  const apexHeight = 130;
+  const A = { x: B.x, y: baseY - apexHeight };
+  const baseLen = apexHeight * Math.tan(apexAngle * DEG);
+  const C = { x: B.x + baseLen, y: baseY };
+
+  // The straight line the triangle sits on, extended both ways so it
+  // clearly reads as a line (not just the triangle's base edge).
+  const lineStart = { x: B.x - 55, y: baseY };
+  const lineEnd = { x: C.x + 95, y: baseY };
+
+  // Arc drawing helper (same convention as ExteriorAngle above)
+  const arcR = 24;
+  const drawAngleArc = (cx, cy, startDeg, sweepDeg, color, label, r = arcR) => {
+    const s = startDeg * DEG;
+    const e = (startDeg + sweepDeg) * DEG;
+    const sx = cx + r * Math.cos(s), sy = cy - r * Math.sin(s);
+    const ex = cx + r * Math.cos(e), ey = cy - r * Math.sin(e);
+    const large = sweepDeg > 180 ? 1 : 0;
+    const mid = (startDeg + sweepDeg / 2) * DEG;
+    const labelR = sweepDeg < 30 ? r + 30 : sweepDeg < 50 ? r + 22 : r + 16;
+    const lx = cx + labelR * Math.cos(mid), ly = cy - labelR * Math.sin(mid);
+
+    return (
+      <g key={`${cx.toFixed(0)}-${startDeg}`}>
+        <path
+          d={`M ${cx},${cy} L ${sx},${sy} A ${r},${r} 0 ${large},0 ${ex},${ey} Z`}
+          fill={`${color}30`} stroke={color} strokeWidth={2}
+        />
+        {label && (
+          <text x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
+            fontSize={13} fontWeight="700" fill={color}>
+            {label}
+          </text>
+        )}
+      </g>
+    );
+  };
+
+  // Right-angle square marker at B (corner between the vertical side
+  // up to A and the base along the line toward C)
+  const sq = 18;
+  const squarePoints = `${B.x},${B.y - sq} ${B.x + sq},${B.y - sq} ${B.x + sq},${B.y}`;
+
+  // Apex arc: sweeps from the direction down to B (-90°) round to the
+  // direction down to C (apexAngle - 90°) — a sweep of exactly apexAngle.
+  // Exterior arc at C: sweeps from the line continuing right (0°) round
+  // to the sloping side toward A (apexAngle + 90°) — the exterior angle
+  // theorem (exterior = sum of the two remote interior angles, 90 +
+  // apexAngle) — but NEVER labelled with its value, only exteriorLabel.
+  const exteriorSweep = 90 + apexAngle;
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
+      <svg role="img" aria-label="Right-angled triangle on a straight line, with the exterior angle marked" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 420, height: 'auto' }}>
+        {/* The straight line the triangle sits on, extended both sides */}
+        <line x1={lineStart.x} y1={lineStart.y} x2={lineEnd.x} y2={lineEnd.y}
+          stroke="#6366f1" strokeWidth={2.5} strokeLinecap="round" />
+
+        {/* Triangle */}
+        <polygon
+          points={`${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`}
+          fill="#f0f0ff" stroke="#6366f1" strokeWidth={2.5} strokeLinejoin="round"
+        />
+
+        {/* Right-angle square at the bottom-left corner */}
+        <polyline points={squarePoints} fill="none" stroke="#6366f1" strokeWidth={1.5} />
+
+        {/* Given angle at the apex (top) */}
+        {drawAngleArc(A.x, A.y, -90, apexAngle, "#38bdf8", `${apexAngle}°`)}
+
+        {/* Unknown exterior angle at the bottom-right — always "?" */}
+        {drawAngleArc(C.x, C.y, 0, exteriorSweep, "#f59e0b", exteriorLabel, arcR + 6)}
+
+        {/* Vertex dots */}
+        <circle cx={A.x} cy={A.y} r={3} fill="#1e293b" />
+        <circle cx={B.x} cy={B.y} r={3} fill="#1e293b" />
+        <circle cx={C.x} cy={C.y} r={3} fill="#1e293b" />
+      </svg>
+    </div>
+  );
+}
+
+// ============================================================
 // ClockFace — clock diagram for angle questions
 // Props: hourHand (1-12), minuteHand (1-12), showAngle (boolean),
 //        angleLabel (string, e.g. "120°" or "?")
