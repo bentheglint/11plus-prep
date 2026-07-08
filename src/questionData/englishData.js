@@ -15506,10 +15506,10 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "difficulty": 2,
           "questionType": "error-spotting",
           "question": "Which section contains a punctuation error?",
-          "segments": ["The bag was packed","with all the supplies","for the school trip","but the teacher forgot her keys."],
+          "segments": ["The bag was packed", "with all the supplies for", "the school trip but the teacher", "forgot her keys."],
           "options": ["Section A","Section B","Section C","Section D","No mistake"],
           "correct": 2,
-          "explanation": "A comma is needed before 'but' when it joins two complete sentences. 'The bag was packed with all the supplies for the school trip' is one sentence. 'The teacher forgot her keys' is another. Join them with: '...trip, but the teacher forgot her keys.' ✓"
+          "explanation": "When 'but' joins two complete sentences, it needs a comma before it. 'The bag was packed with all the supplies for the school trip' and 'the teacher forgot her keys' are both complete sentences, so it should read '...the school trip, but the teacher...'. Both the gap and the word 'but' sit in Section C, so that is where the mistake is. ✓"
         },
         {
           "id": 75,

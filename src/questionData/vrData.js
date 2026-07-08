@@ -3999,9 +3999,9 @@ const vrData = {
           difficulty: 2,
           questionType: "select-two",
           question: "Find the two words that are the odd ones out.",
-          options: ["table","chair","lamp","sofa","wardrobe"],
+          options: ["stool", "chair", "lamp", "sofa", "wardrobe"],
           correctPair: [2,4],
-          explanation: "Table, chair, and sofa are all furniture you use while sitting down — you sit on a chair or sofa, and sit at a table. A lamp gives light and a wardrobe stores clothes, so neither is for sitting — they are the two odd ones out. Tip: Name the link as exactly as you can — 'furniture for sitting' is sharper than just 'furniture'. ✓"
+          explanation: "You sit on a chair, a sofa and a stool, so those three go together. A lamp gives light and a wardrobe stores clothes, so they are the two odd ones out. ✓"
         },
         {
           id: 3,
@@ -9873,9 +9873,9 @@ const vrData = {
           id: 133,
           difficulty: 3,
           question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"When Tom tripped on the playground and grazed his knee badly, the school nurse cleaned the cut and wound a clean white BAGE carefully around it.\"",
-          options: ["GAG","CAB","GAR","AND","OAK"],
+          options: ["GAR", "CAB", "PEN", "AND", "OAK"],
           correct: 3,
-          explanation: "AND rebuilds BANDAGE — a strip of cloth wound around a wound. CAB makes CABBAGE (a leafy green vegetable): you do not wrap a cabbage around a grazed knee. GAR makes GARBAGE (rubbish) and GAG makes BAGGAGE (the luggage you take on a journey) — neither is what a nurse winds around a cut. OAK rebuilds no word. ✓"
+          explanation: "AND rebuilds BANDAGE, the clean white dressing you wind around a cut. Watch the traps: GAR would make GARBAGE and CAB would make CABBAGE, both real words, but you would never wind garbage or a cabbage around a wound. Only BANDAGE fits the sentence, so the answer is AND. ✓"
         },
         {
           id: 134,
@@ -9931,7 +9931,7 @@ const vrData = {
           question: "Three letters in a row have been taken out of the word in CAPITALS. Find the three-letter word that completes it so the sentence makes sense: \"Mrs Akhtar signed for the three PELS the driver had left at the door, then carried them inside to open later.\"",
           options: ["ARC","LET","CHA","HEN","JIG"],
           correct: 0,
-          explanation: "ARC rebuilds PARCELS — packages dropped off by a delivery driver to be opened later. LET rebuilds PELLETS (tiny balls of food or metal): you do not sign for a single pellet at the door. CHA rebuilds CHAPELS (small churches): a church cannot be carried inside and opened. HEN and JIG rebuild no word. ✓"
+          explanation: "ARC rebuilds PARCELS, the deliveries a driver leaves at the door for you to sign for. Watch the traps: LET would make PELLETS and CHA would make CHAPELS, both real words, but a driver doesn't leave pellets or chapels at the door to sign for. Only PARCELS fits the sentence, so the answer is ARC. ✓"
         },
         {
           id: 141,

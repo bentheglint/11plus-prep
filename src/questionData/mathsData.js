@@ -15384,9 +15384,9 @@ placevalue: {
       id: 172,
       difficulty: 3,
       question: "Tom uses each of the digits 1, 3, 5, 7 and 9 once to make one 3-digit and one 2-digit number. He multiplies them together. What is the largest possible product?",
-      options: ["95 × 731 = 69,445", "97 × 531 = 51,507", "91 × 753 = 68,523", "93 × 751 = 69,843", "95 × 713 = 67,735"],
+      options: ["95 × 731", "97 × 531", "91 × 753", "93 × 751", "95 × 713"],
       correct: 3,
-      explanation: "To get the largest product, the two-digit number should have the largest possible tens digit. Try 9_ × ___ and 7_ × ___. Checking: 93 × 751 = 69,843; 95 × 731 = 69,445; 91 × 753 = 68,523; 97 × 531 = 51,507. The largest is 93 × 751 = 69,843. ✓"
+      explanation: "The leading digits matter most, so put the two biggest digits, 9 and 7, at the front: 9 as the tens of the two-digit number and 7 as the hundreds of the three-digit number. Give the next biggest digit, 5, the tens of the three-digit number to make 75_. That leaves 3 and 1, and the larger one (3) does more work in the two-digit number. Now multiply the close ones to check: 93 × 751 = 69,843, which beats 95 × 731 = 69,445 and 91 × 753 = 68,523. So the largest product is 93 × 751 = 69,843. ✓"
     },
     // === ADDING/SUBTRACTING POWERS OF 10 (Q173–Q176) ===
     {
