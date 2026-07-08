@@ -9379,7 +9379,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "'beech' should be 'beach'. 'Beach' is the sandy shore. 'Beech' is a type of tree. Sound it out carefully — the spelling matches the sounds. ✓"
         },
         {
@@ -11857,7 +11857,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "'magnificient' should be 'magnificent'. There is no 'i' before the 'ent': magnif-I-CENT. Break it into chunks to spot the tricky bit. ✓"
         },
         {
@@ -12634,7 +12634,7 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
             "Section D",
             "No mistake"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "'gaurantee' should be 'guarantee'. Remember: GUA-ran-tee — 'gua' at the start, not 'gau'. Look out for this one in the exam! ✓"
         },
         {
