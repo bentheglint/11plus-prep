@@ -5,8 +5,8 @@ import { CheckCircle2, LogOut, Mail, Shield, ChevronDown, ChevronUp, ArrowLeft }
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
 const FEATURES = [
-  '6,682 GL-pattern questions — 2,061 Maths, 2,505 English, 2,116 Verbal Reasoning',
-  '584 micro-lessons that teach the method before every quiz, not after',
+  'Thousands of GL-pattern questions across Maths, English and Verbal Reasoning',
+  'Hundreds of micro-lessons that teach the method before every quiz, not after',
   'AI Tutor on every quiz and lesson — your child asks, it explains',
   'Quiz Review with AI Tutor — go over every wrong answer with a tutor that talks them through it',
   'Mock tests — timed, full-paper, marked instantly with detailed feedback',
@@ -43,7 +43,7 @@ const FAQS = [
   },
   {
     q: 'What about Verbal Reasoning?',
-    a: 'Fully covered. 2,116 VR questions across 16 question types — synonyms, antonyms, letter codes, number series, hidden words, and the rest.',
+    a: 'Fully covered. Every VR question type: synonyms, antonyms, letter codes, number series, hidden words, and the rest.',
   },
   {
     q: 'What about CEM or Pre-Test exams?',
@@ -139,7 +139,7 @@ export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
           <p className="text-slate-500 text-base max-w-md mx-auto">
             {trialExpired
               ? "Subscribe to keep your child's progress and continue practising."
-              : 'Built by a parent of a Year 5 daughter sitting the GL Assessment in September 2026 — because nothing else did the job.'}
+              : 'We teach the method first, then practise it, with a patient tutor on hand whenever your child gets stuck.'}
           </p>
         </div>
 
@@ -161,7 +161,7 @@ export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
               <div className="text-2xl font-bold text-[#7C3AED]">
                 £199 <span className="text-sm font-normal text-slate-500">/year</span>
               </div>
-              <div className="text-xs text-slate-500 mt-1">Save £101 — over four months free</div>
+              <div className="text-xs text-slate-500 mt-1">Save £101, over four months free</div>
             </button>
 
             {/* Monthly */}
@@ -195,8 +195,8 @@ export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
             {submitting
               ? 'Redirecting to secure checkout…'
               : isAnnual
-              ? 'Subscribe — £199/year'
-              : 'Subscribe — £24.99/month'}
+              ? 'Subscribe for £199/year'
+              : 'Subscribe for £24.99/month'}
           </button>
 
           <div className="flex items-center justify-center gap-2 mt-4 text-xs text-slate-500">
@@ -260,17 +260,17 @@ export default function SubscribeScreen({ getToken, trialExpired, onBack }) {
 
         {/* Founder note */}
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 mb-6">
-          <h2 className="font-heading font-bold text-slate-800 mb-4">A note from the parent who built this</h2>
+          <h2 className="font-heading font-bold text-slate-800 mb-4">Why we built PrepStep</h2>
           <p className="text-slate-700 text-sm leading-relaxed">
-            I'm Ben. My daughter is in Year 5 and sitting the 11+ in September 2026, hoping to win a place at one of two local grammar schools.
+            I've been through the 11+ as a parent, and spent years looking closely at how these exams work. One thing stands out: the questions fall into a set of recurring patterns, and every child is strong at some and quietly losing marks on others. The whole game is finding exactly where a child is losing marks, and learning how to turn those areas around.
           </p>
           <p className="text-slate-700 text-sm leading-relaxed mt-3">
-            When we started prep, we tried everything — books, online apps, tutors. The books were repetitive. The apps drilled but didn't teach. The tutor was £55 an hour and saw her once a week.
+            That is the hard part, and it is where most prep falls down. Books and apps drill away without pinpointing the weak spots or teaching a way through them. And when a child gets something wrong, they need someone there to explain why, so they can fix it. Parents cannot sit alongside every session, and a tutor, as good as they are, is an hour a week and expensive.
           </p>
           <p className="text-slate-700 text-sm leading-relaxed mt-3">
-            So I built PrepStep. It does what I wished any of them did: teaches the method before testing it, explains every wrong answer, tracks progress so we know what to work on next.
+            PrepStep is built to close that gap. It surfaces where a child is losing marks, teaches the method behind each one, and has a patient tutor built in to explain any answer, any time. We built the 11+ tool we always wished existed, and we built it properly.
           </p>
-          <p className="text-slate-700 text-sm font-medium mt-3">— Ben</p>
+          <p className="text-slate-700 text-sm font-medium mt-3">Ben, founder of PrepStep</p>
         </div>
 
         {/* FAQ */}
