@@ -1,0 +1,1189 @@
+<!-- PrepStep landing page - Direction B: "Warm & Human" -->
+<!-- Single self-contained file. British English. No em dashes in copy. -->
+<title>PrepStep | 11+ prep that teaches before it tests</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="11+ prep that teaches before it tests. Every session starts with a short lesson, with a patient tutor on hand. For the 11+ for grammar schools in the Bournemouth and Poole area." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    /* Warm palette */
+    --cream: #FCF6EC;
+    --cream-deep: #F6EBDB;
+    --paper: #FFFDF9;
+    --clay: #C4623E;
+    --clay-deep: #A94E2E;
+    --honey: #E4A13C;
+    --sage: #6E8B6A;
+    --sage-deep: #4F6C4C;
+    --espresso: #3B2E26;
+    --espresso-soft: #6B5B50;
+    --peach: #F7E4D2;
+    --peach-2: #FBEEDD;
+    --line: #EAD9C4;
+
+    --shadow-sm: 0 2px 10px rgba(93, 58, 30, 0.06);
+    --shadow-md: 0 14px 34px -14px rgba(93, 58, 30, 0.22);
+    --shadow-lg: 0 34px 70px -28px rgba(93, 58, 30, 0.30);
+
+    --r-lg: 30px;
+    --r-md: 20px;
+    --r-sm: 14px;
+
+    --display: "Fraunces", Georgia, serif;
+    --body: "Nunito Sans", -apple-system, sans-serif;
+
+    --maxw: 1120px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: var(--body);
+    color: var(--espresso);
+    background: var(--cream);
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* soft grain + warm ambient glow behind everything */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+      radial-gradient(60% 45% at 82% 8%, rgba(228, 161, 60, 0.16), transparent 60%),
+      radial-gradient(55% 40% at 12% 22%, rgba(196, 98, 62, 0.10), transparent 55%),
+      radial-gradient(50% 50% at 50% 100%, rgba(110, 139, 106, 0.10), transparent 60%),
+      var(--cream);
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--display);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--espresso);
+  }
+
+  p { margin: 0 0 1rem; }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+  section { position: relative; }
+
+  .eyebrow {
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--clay-deep);
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px; height: 2px;
+    background: var(--clay);
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 1.02rem;
+    padding: 16px 28px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .btn-primary {
+    background: linear-gradient(180deg, var(--clay) 0%, var(--clay-deep) 100%);
+    color: #fff;
+    box-shadow: 0 12px 26px -10px rgba(169, 78, 46, 0.65);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 34px -12px rgba(169, 78, 46, 0.7); }
+  .btn-primary .arrow { transition: transform .18s ease; }
+  .btn-primary:hover .arrow { transform: translateX(4px); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--espresso);
+    border: 1.5px solid var(--line);
+    padding: 12px 22px;
+    font-size: 0.98rem;
+  }
+  .btn-ghost:hover { border-color: var(--clay); color: var(--clay-deep); }
+
+  .micro-trust {
+    font-size: 0.9rem;
+    color: var(--espresso-soft);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .micro-trust svg { flex: none; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    backdrop-filter: blur(10px);
+    background: rgba(252, 246, 236, 0.82);
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s ease, box-shadow .3s ease;
+  }
+  header.scrolled { border-color: var(--line); box-shadow: var(--shadow-sm); }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px;
+  }
+  .brand { display: inline-flex; align-items: center; gap: 11px; font-family: var(--display); font-weight: 600; font-size: 1.32rem; letter-spacing: -0.02em; }
+  .brand .logo-steps { display: block; }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a.navlink { font-weight: 600; font-size: 0.96rem; color: var(--espresso-soft); transition: color .16s; }
+  .nav-links a.navlink:hover { color: var(--clay-deep); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 66px 0 40px; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 54px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 5.4vw, 4rem);
+    font-weight: 600;
+    margin: 20px 0 0;
+  }
+  .hero h1 .accent { color: var(--clay); font-style: italic; }
+  .hero .sub {
+    font-size: 1.16rem;
+    color: var(--espresso-soft);
+    max-width: 30em;
+    margin: 22px 0 30px;
+  }
+  .hero-cta { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+
+  /* ---------- Hero product cluster ---------- */
+  .hero-visual { position: relative; }
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-md);
+  }
+  .chat-card {
+    padding: 22px 22px 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .chat-head {
+    display: flex; align-items: center; gap: 12px;
+    padding-bottom: 14px; margin-bottom: 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  .tutor-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--honey), var(--clay));
+    display: grid; place-items: center; color: #fff; flex: none;
+    box-shadow: inset 0 -4px 8px rgba(0,0,0,0.12);
+  }
+  .chat-head .who { font-weight: 700; font-size: 0.98rem; }
+  .chat-head .status { font-size: 0.8rem; color: var(--sage-deep); display: flex; align-items: center; gap: 6px; }
+  .chat-head .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sage); box-shadow: 0 0 0 3px rgba(110,139,106,0.2); }
+
+  .bubble {
+    max-width: 84%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 0.96rem;
+    line-height: 1.5;
+    margin-top: 12px;
+    position: relative;
+  }
+  .bubble.child {
+    margin-left: auto;
+    background: var(--peach);
+    border-bottom-right-radius: 6px;
+    color: var(--espresso);
+  }
+  .bubble.tutor {
+    background: var(--cream-deep);
+    border-bottom-left-radius: 6px;
+    color: var(--espresso);
+  }
+  .bubble .tag {
+    display: inline-block;
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--sage-deep);
+    margin-bottom: 3px;
+  }
+  .bubble.child .tag { color: var(--clay-deep); }
+
+  .float-badge {
+    position: absolute;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 12px 15px;
+    display: flex; align-items: center; gap: 11px;
+    font-weight: 700; font-size: 0.9rem;
+    z-index: 3;
+  }
+  .float-badge .ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; flex: none; }
+  .fb-lesson { top: -26px; left: -26px; }
+  .fb-lesson .ic { background: var(--peach-2); color: var(--clay); }
+  .fb-mock { bottom: -22px; right: -20px; }
+  .fb-mock .ic { background: rgba(110,139,106,0.16); color: var(--sage-deep); }
+  .fb-mock small { display: block; font-weight: 600; font-size: 0.76rem; color: var(--espresso-soft); }
+
+  /* ---------- generic section spacing ---------- */
+  .band { padding: 78px 0; }
+  .band-tight { padding: 56px 0; }
+  .section-head { max-width: 40rem; margin: 0 auto 46px; text-align: center; }
+  .section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); margin: 14px 0 0; }
+  .section-head p { font-size: 1.1rem; color: var(--espresso-soft); margin-top: 14px; }
+  .section-head .eyebrow { justify-content: center; }
+
+  /* ---------- Trust strip ---------- */
+  .trust {
+    background: var(--espresso);
+    color: #F4E9DA;
+    border-radius: 28px;
+    padding: 32px 34px;
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1.15fr;
+    gap: 30px;
+    align-items: center;
+    box-shadow: var(--shadow-lg);
+  }
+  .trust .divider { background: rgba(244,233,218,0.16); width: 1px; height: 100%; }
+  .trust .local-eyebrow { color: var(--honey); font-weight: 700; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  .trust h3 { color: #FBF3E7; font-size: 1.28rem; margin-top: 10px; font-weight: 500; }
+  .trust h3 b { color: var(--honey); font-weight: 600; }
+  .trust .quote { font-family: var(--display); font-style: italic; font-size: 1.16rem; line-height: 1.5; color: #FBF3E7; }
+  .trust .attrib { font-family: var(--body); font-style: normal; font-size: 0.86rem; color: rgba(244,233,218,0.7); margin-top: 10px; font-weight: 600; }
+  .stars { color: var(--honey); letter-spacing: 2px; font-size: 0.95rem; margin-bottom: 4px; }
+
+  /* ---------- Problem (empathy) ---------- */
+  .problem { background: linear-gradient(180deg, transparent, var(--cream-deep) 40%, var(--cream-deep)); }
+  .problem-inner { max-width: 46rem; margin: 0 auto; text-align: center; }
+  .problem h2 { font-size: clamp(1.9rem, 3.8vw, 2.7rem); }
+  .problem .lead { font-size: 1.2rem; color: var(--espresso-soft); margin-top: 18px; }
+  .problem .reassure {
+    margin-top: 30px;
+    display: inline-block;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--sage);
+    border-radius: 16px;
+    padding: 18px 24px;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1.14rem;
+    color: var(--espresso);
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+  }
+
+  /* ---------- Step motif: how it works ---------- */
+  .steps-wrap { position: relative; }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    align-items: end;
+  }
+  .step {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 30px 26px 32px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+  }
+  /* ascending: each step sits higher than the last */
+  .step-1 { margin-top: 72px; }
+  .step-2 { margin-top: 36px; }
+  .step-3 { margin-top: 0; }
+  .step::after {
+    /* soft tread shadow along the bottom, reinforcing the "step" */
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0; height: 6px;
+  }
+  .step-1::after { background: var(--peach); }
+  .step-2::after { background: var(--honey); }
+  .step-3::after { background: var(--sage); }
+  .step .num {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    background: var(--cream-deep);
+    color: var(--clay-deep);
+    margin-bottom: 18px;
+  }
+  .step h3 { font-size: 1.42rem; margin-bottom: 10px; }
+  .step p { color: var(--espresso-soft); font-size: 0.98rem; margin: 0; }
+  .step .kicker { font-weight: 700; color: var(--clay-deep); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .step-visual {
+    margin-top: 20px;
+    border-radius: var(--r-sm);
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 14px;
+    font-size: 0.88rem;
+  }
+  /* mini lesson visual */
+  .mini-lesson-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .mini-lesson-row:last-child { margin-bottom: 0; }
+  .mini-lesson-row .chip { background: var(--peach-2); color: var(--clay-deep); font-weight: 700; padding: 3px 9px; border-radius: 8px; font-size: 0.78rem; flex: none; }
+  .mini-lesson-row span { color: var(--espresso-soft); }
+  /* mini quiz visual */
+  .mini-opt { display: flex; align-items: center; gap: 9px; padding: 7px 10px; border-radius: 10px; border: 1px solid var(--line); margin-bottom: 7px; background: var(--paper); font-weight: 600; }
+  .mini-opt:last-child { margin-bottom: 0; }
+  .mini-opt.correct { border-color: var(--sage); background: rgba(110,139,106,0.1); }
+  .mini-opt .box { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid var(--line); flex: none; display: grid; place-items: center; }
+  .mini-opt.correct .box { background: var(--sage); border-color: var(--sage); color: #fff; }
+  /* mini tutor visual */
+  .mini-chat .mb { padding: 8px 11px; border-radius: 12px; font-size: 0.84rem; margin-bottom: 7px; }
+  .mini-chat .mb.c { background: var(--peach); border-bottom-right-radius: 4px; margin-left: 22px; }
+  .mini-chat .mb.t { background: var(--cream-deep); border-bottom-left-radius: 4px; margin-right: 22px; }
+  .mini-chat .mb:last-child { margin-bottom: 0; }
+
+  .step-connector {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--espresso-soft);
+    font-size: 0.98rem;
+  }
+
+  /* ---------- What's inside (feature grid) ---------- */
+  .feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .feat {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    padding: 26px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .feat:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .feat .ic {
+    width: 48px; height: 48px; border-radius: 14px;
+    display: grid; place-items: center;
+    background: var(--peach-2); color: var(--clay);
+    margin-bottom: 16px;
+  }
+  .feat.g .ic { background: rgba(110,139,106,0.15); color: var(--sage-deep); }
+  .feat.h .ic { background: rgba(228,161,60,0.18); color: #B77C1E; }
+  .feat h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .feat p { color: var(--espresso-soft); font-size: 0.95rem; margin: 0; }
+
+  /* ---------- No-spoiler tutor demo ---------- */
+  .demo { background: var(--cream-deep); }
+  .demo-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 50px; align-items: center; }
+  .demo-copy h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); margin: 14px 0 0; }
+  .demo-copy p { font-size: 1.08rem; color: var(--espresso-soft); margin-top: 16px; }
+  .demo-steps { list-style: none; padding: 0; margin: 22px 0 0; }
+  .demo-steps li { display: flex; gap: 13px; align-items: flex-start; margin-bottom: 14px; font-weight: 600; }
+  .demo-steps li .n { width: 26px; height: 26px; border-radius: 8px; background: var(--paper); border: 1px solid var(--line); color: var(--clay-deep); display: grid; place-items: center; font-size: 0.82rem; flex: none; font-family: var(--display); }
+
+  .demo-phone {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    box-shadow: var(--shadow-lg);
+    padding: 20px 20px 22px;
+    max-width: 440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .demo-phone .chat-head { margin-bottom: 6px; }
+  .demo-thread { min-height: 300px; }
+  .demo-thread .bubble { opacity: 0; transform: translateY(10px); animation: rise .5s ease forwards; }
+  .demo-note { text-align: center; font-size: 0.82rem; color: var(--espresso-soft); margin-top: 14px; font-style: italic; }
+  @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+  /* ---------- Parent dashboard ---------- */
+  .parent-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; }
+  .dash {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 24px;
+    overflow: hidden;
+  }
+  .dash-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+  .dash-top .who { display: flex; align-items: center; gap: 11px; }
+  .dash-top .who .av { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--honey), var(--clay)); color: #fff; display: grid; place-items: center; font-weight: 700; font-family: var(--display); }
+  .dash-top .who b { display: block; }
+  .dash-top .who small { color: var(--espresso-soft); }
+  .dash-pill { font-size: 0.78rem; font-weight: 700; color: var(--sage-deep); background: rgba(110,139,106,0.13); padding: 6px 12px; border-radius: 999px; }
+  .dash-row { margin-bottom: 15px; }
+  .dash-row:last-child { margin-bottom: 0; }
+  .dash-row .lab { display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; }
+  .dash-row .lab .val { color: var(--espresso-soft); font-weight: 700; }
+  .bar { height: 12px; border-radius: 999px; background: var(--cream-deep); overflow: hidden; }
+  .bar span { display: block; height: 100%; border-radius: 999px; }
+  .bar .fill-strong { background: linear-gradient(90deg, var(--sage), var(--sage-deep)); }
+  .bar .fill-mid { background: linear-gradient(90deg, var(--honey), #C88824); }
+  .bar .fill-focus { background: linear-gradient(90deg, var(--clay), var(--clay-deep)); }
+  .dash-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: 8px; vertical-align: middle; }
+  .dash-tag.focus { background: var(--peach-2); color: var(--clay-deep); }
+
+  /* ---------- Testimonials ---------- */
+  .tcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .tcard {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    padding: 28px 26px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .tcard .qm { font-family: var(--display); font-size: 3rem; line-height: 0.6; color: var(--peach); position: absolute; top: 22px; right: 24px; }
+  .tcard .stars { margin-bottom: 12px; }
+  .tcard blockquote { margin: 0; font-family: var(--display); font-size: 1.1rem; line-height: 1.5; color: var(--espresso); font-weight: 500; }
+  .tcard .who { margin-top: 18px; display: flex; align-items: center; gap: 12px; }
+  .tcard .who .av { width: 40px; height: 40px; border-radius: 50%; background: var(--cream-deep); color: var(--clay-deep); display: grid; place-items: center; font-weight: 700; flex: none; }
+  .tcard .who small { color: var(--espresso-soft); font-size: 0.86rem; font-weight: 600; }
+
+  /* ---------- Pricing ---------- */
+  .pricing { background: var(--cream-deep); }
+  .anchor-note { text-align: center; color: var(--espresso-soft); font-size: 1rem; max-width: 44rem; margin: 0 auto 40px; }
+  .anchor-note b { color: var(--espresso); }
+  .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+  .plan {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 30px 28px;
+    display: flex; flex-direction: column;
+    box-shadow: var(--shadow-sm);
+  }
+  .plan.featured {
+    border: 2px solid var(--clay);
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+  .plan .flag { position: absolute; top: -13px; left: 28px; background: var(--clay); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 13px; border-radius: 999px; }
+  .plan h3 { font-size: 1.28rem; }
+  .plan .desc { color: var(--espresso-soft); font-size: 0.92rem; min-height: 42px; margin: 6px 0 12px; }
+  .plan .price { font-family: var(--display); font-weight: 600; font-size: 2.4rem; line-height: 1; }
+  .plan .price small { font-family: var(--body); font-size: 0.92rem; font-weight: 600; color: var(--espresso-soft); }
+  .plan .save { font-size: 0.84rem; font-weight: 700; color: var(--sage-deep); margin-top: 6px; }
+  .plan ul { list-style: none; padding: 0; margin: 20px 0 24px; }
+  .plan ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.94rem; margin-bottom: 10px; color: var(--espresso); }
+  .plan ul li svg { flex: none; margin-top: 3px; color: var(--sage); }
+  .plan .btn { width: 100%; justify-content: center; margin-top: auto; }
+  .fsm-note {
+    margin-top: 30px;
+    text-align: center;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 22px;
+    color: var(--espresso-soft);
+    font-size: 0.96rem;
+  }
+  .fsm-note b { color: var(--sage-deep); }
+
+  /* ---------- FAQ ---------- */
+  .faq-list { max-width: 46rem; margin: 0 auto; }
+  details.faq {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    margin-bottom: 14px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  details.faq summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 24px;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.12rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary .plus { flex: none; width: 26px; height: 26px; border-radius: 8px; background: var(--cream-deep); color: var(--clay-deep); display: grid; place-items: center; font-size: 1.2rem; transition: transform .25s ease; }
+  details.faq[open] summary .plus { transform: rotate(45deg); }
+  details.faq .faq-body { padding: 0 24px 22px; color: var(--espresso-soft); font-size: 0.98rem; }
+
+  /* ---------- Final CTA ---------- */
+  .final { padding: 30px 0 90px; }
+  .final-card {
+    background: var(--espresso);
+    color: #FBF3E7;
+    border-radius: 34px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+  .final-card::before {
+    content: "";
+    position: absolute; inset: 0; z-index: 0;
+    background:
+      radial-gradient(50% 60% at 85% 15%, rgba(228,161,60,0.28), transparent 60%),
+      radial-gradient(50% 60% at 10% 90%, rgba(196,98,62,0.28), transparent 60%);
+  }
+  .final-card > * { position: relative; z-index: 1; }
+  .final-card h2 { color: #FCF6EC; font-size: clamp(2rem, 4.4vw, 3.1rem); }
+  .final-card h2 .accent { color: var(--honey); font-style: italic; }
+  .final-card p { color: rgba(251,243,231,0.82); font-size: 1.14rem; max-width: 34rem; margin: 18px auto 30px; }
+  .final-card .micro-trust { color: rgba(251,243,231,0.7); justify-content: center; }
+  .final-card .micro-trust svg { color: var(--honey); }
+
+  /* the ascending steps decoration inside final card */
+  .final-steps { display: flex; justify-content: center; align-items: flex-end; gap: 8px; margin-bottom: 26px; height: 46px; }
+  .final-steps i { display: block; width: 30px; border-radius: 8px 8px 0 0; background: rgba(251,243,231,0.16); }
+  .final-steps i:nth-child(1) { height: 40%; }
+  .final-steps i:nth-child(2) { height: 68%; background: rgba(228,161,60,0.5); }
+  .final-steps i:nth-child(3) { height: 100%; background: var(--honey); }
+
+  /* ---------- Footer ---------- */
+  footer { background: var(--espresso); color: rgba(244,233,218,0.72); padding: 56px 0 34px; font-size: 0.92rem; }
+  .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 34px; }
+  footer .brand { color: #FBF3E7; margin-bottom: 12px; }
+  footer h4 { color: #FBF3E7; font-family: var(--body); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; font-weight: 700; }
+  footer a.fl { display: block; color: rgba(244,233,218,0.72); margin-bottom: 9px; transition: color .15s; }
+  footer a.fl:hover { color: var(--honey); }
+  footer .safe-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(244,233,218,0.08); border: 1px solid rgba(244,233,218,0.14); padding: 8px 13px; border-radius: 10px; font-size: 0.82rem; margin-top: 6px; color: rgba(244,233,218,0.85); }
+  .foot-bottom { border-top: 1px solid rgba(244,233,218,0.14); margin-top: 40px; padding-top: 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 0.84rem; color: rgba(244,233,218,0.55); }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 60px; }
+    .hero-visual { max-width: 460px; margin: 0 auto; }
+    .trust { grid-template-columns: 1fr; gap: 24px; }
+    .trust .divider { display: none; }
+    .steps-grid { grid-template-columns: 1fr; gap: 20px; }
+    .step-1, .step-2, .step-3 { margin-top: 0; }
+    .feat-grid { grid-template-columns: 1fr 1fr; }
+    .demo-grid { grid-template-columns: 1fr; gap: 34px; }
+    .parent-grid { grid-template-columns: 1fr; gap: 34px; }
+    .tcards { grid-template-columns: 1fr; }
+    .price-grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  }
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 72px; left: 0; right: 0;
+      background: var(--paper); border-bottom: 1px solid var(--line);
+      padding: 22px; gap: 18px; align-items: flex-start;
+      box-shadow: var(--shadow-md);
+    }
+    .nav-links.open .btn { width: 100%; justify-content: center; }
+    .band { padding: 56px 0; }
+    .feat-grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr; }
+    .float-badge { display: none; }
+    .final-card { padding: 44px 24px; }
+    .hero h1 { font-size: clamp(2.2rem, 9vw, 2.9rem); }
+    .btn { width: 100%; justify-content: center; }
+    .hero-cta { align-items: stretch; }
+  }
+</style>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="PrepStep home">
+      <svg class="logo-steps" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <rect x="2" y="20" width="8" height="8" rx="2" fill="#F7E4D2"/>
+        <rect x="11" y="12" width="8" height="16" rx="2" fill="#E4A13C"/>
+        <rect x="20" y="4" width="8" height="24" rx="2" fill="#C4623E"/>
+      </svg>
+      PrepStep
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a class="navlink" href="#how">How it works</a>
+      <a class="navlink" href="#inside">What's inside</a>
+      <a class="navlink" href="#pricing">Pricing</a>
+      <a class="navlink" href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#start">Start free</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3B2E26" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">For grammar school hopefuls in Bournemouth &amp; Poole</span>
+      <h1>11+ prep that <span class="accent">teaches</span> before it tests.</h1>
+      <p class="sub">Every session starts with a short lesson, and a patient tutor is on hand to explain anything your child finds tricky.</p>
+      <div class="hero-cta">
+        <a href="#start" class="btn btn-primary">Start free, no card needed <span class="arrow">&rarr;</span></a>
+        <span class="micro-trust">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6E8B6A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Free to start. Cancel any time. No card to begin.
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="float-badge fb-lesson">
+        <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>
+        Lesson first
+      </div>
+
+      <div class="card chat-card">
+        <div class="chat-head">
+          <div class="tutor-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
+          <div>
+            <div class="who">PrepStep Tutor</div>
+            <div class="status"><span class="dot"></span> Here to help, never to spoil</div>
+          </div>
+        </div>
+        <div class="bubble child"><span class="tag">Your child</span>Is the answer 40%?</div>
+        <div class="bubble tutor"><span class="tag">Tutor</span>Good instinct. Before I say, what is 3 out of 5 as a fraction? Start there and tell me what you get.</div>
+        <div class="bubble child"><span class="tag">Your child</span>Oh. 3 over 5, so 60%!</div>
+        <div class="bubble tutor"><span class="tag">Tutor</span>That is it. You turned the fraction into a percentage all by yourself. Well done.</div>
+      </div>
+
+      <div class="float-badge fb-mock">
+        <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <div>Mock tests<small>Timed, full papers</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="band-tight">
+  <div class="wrap">
+    <div class="trust reveal">
+      <div>
+        <span class="local-eyebrow">Built for local families</span>
+        <h3>Focused on the <b>11+ for grammar schools in the Bournemouth and Poole area</b>, so the practice fits the exam your child is actually sitting.</h3>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <div class="stars" aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <!-- [PLACEHOLDER - swap real quote] -->
+        <p class="quote">&ldquo;The lesson before each quiz was the thing that finally made it click. Homework stopped being a battle.&rdquo;</p>
+        <p class="attrib">Parent of a Year 5 pupil, Poole</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE PROBLEM (empathy, zero guilt) ============ -->
+<section class="band problem">
+  <div class="wrap problem-inner reveal">
+    <span class="eyebrow" style="justify-content:center;">You are doing this right</span>
+    <h2 style="margin-top:14px;">Most practice hands children a test and hopes they work it out.</h2>
+    <p class="lead">So the sums that already make sense get ticked, and the ones that do not stay a mystery. Worksheets pile up, evenings get tense, and it is hard to tell what has genuinely landed and what is being guessed.</p>
+    <p class="reassure">Your child is bright and curious. They have simply not been shown the method yet. That is a teaching gap, not a talent gap, and it is a very fixable one.</p>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS: 3 STEPS (the step motif) ============ -->
+<section class="band" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Three steps, one calm rhythm</span>
+      <h2>Teach, then practise, then really understand.</h2>
+      <p>The name says it. Every focused session climbs the same three steps, so nothing is tested before it has been taught.</p>
+    </div>
+
+    <div class="steps-wrap">
+      <div class="steps-grid">
+        <div class="step step-1 reveal">
+          <div class="num">01</div>
+          <span class="kicker">Teach</span>
+          <h3>A short lesson first</h3>
+          <p>Every focused-learning quiz opens with a compulsory mini lesson that shows the method in plain steps. The idea goes in before a single question is asked.</p>
+          <div class="step-visual">
+            <div class="mini-lesson-row"><span class="chip">Step 1</span><span>Line up the place values</span></div>
+            <div class="mini-lesson-row"><span class="chip">Step 2</span><span>Multiply one column at a time</span></div>
+            <div class="mini-lesson-row"><span class="chip">Step 3</span><span>Add the parts together</span></div>
+          </div>
+        </div>
+
+        <div class="step step-2 reveal">
+          <div class="num">02</div>
+          <span class="kicker">Practise</span>
+          <h3>Questions that build it in</h3>
+          <p>Now your child practises the exact method they have just learned, across Maths, English and Verbal Reasoning, with clear feedback on every answer.</p>
+          <div class="step-visual">
+            <div class="mini-opt"><span class="box"></span> 24</div>
+            <div class="mini-opt correct"><span class="box"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> 36</div>
+            <div class="mini-opt"><span class="box"></span> 42</div>
+          </div>
+        </div>
+
+        <div class="step step-3 reveal">
+          <div class="num">03</div>
+          <span class="kicker">Understand</span>
+          <h3>The tutor explains the misses</h3>
+          <p>When something is wrong, the tutor does not just hand over the answer. It nudges your child to think, then explains it in words a nine year old understands.</p>
+          <div class="step-visual mini-chat">
+            <div class="mb c">Why is it not 42?</div>
+            <div class="mb t">Look at the tens column again. What is 3 times 1?</div>
+            <div class="mb c">Ohh, I forgot to carry.</div>
+          </div>
+        </div>
+      </div>
+      <p class="step-connector reveal">Understanding, not guessing. That is the whole point.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE ============ -->
+<section class="band" id="inside" style="background:var(--cream-deep);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What's inside</span>
+      <h2>Everything the 11+ asks of them, in one calm place.</h2>
+      <p>Real tools that do the quiet work of finding weak spots and turning them around.</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></div>
+        <h3>Lesson before every quiz</h3>
+        <p>A compulsory short lesson teaches the method first, so focused learning always starts with understanding.</p>
+      </div>
+
+      <div class="feat g reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
+        <h3>A tutor that will not spoil it</h3>
+        <p>While your child is still trying, the tutor nudges them to work it out. Once they commit, it explains the answer in plain words.</p>
+      </div>
+
+      <div class="feat h reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h3>Finds the lost marks</h3>
+        <p>PrepStep spots where marks are slipping, topic by topic, and brings those exact mistakes back to practise until they stick.</p>
+      </div>
+
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Timed mock tests</h3>
+        <p>Full, timed papers that build exam stamina and take the fear out of the real thing before the day arrives.</p>
+      </div>
+
+      <div class="feat g reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h3>Three subjects covered</h3>
+        <p>Thousands of questions across Maths, English and Verbal Reasoning, with the library growing all the time.</p>
+      </div>
+
+      <div class="feat h reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>A parent dashboard</h3>
+        <p>See strengths and gaps at a glance, without hovering over their shoulder or marking a single page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NO-SPOILER TUTOR DEMO ============ -->
+<section class="band demo" id="demo">
+  <div class="wrap demo-grid">
+    <div class="demo-copy reveal">
+      <span class="eyebrow">See it in action</span>
+      <h2>A tutor that lets the penny drop.</h2>
+      <p>The best tutors never blurt out the answer. Nor does this one. When your child is stuck, it asks the right small question, waits, and only explains once they have had a proper go. The thinking stays theirs.</p>
+      <ol class="demo-steps">
+        <li><span class="n">1</span> Your child tries and gets it wrong</li>
+        <li><span class="n">2</span> The tutor nudges, it does not tell</li>
+        <li><span class="n">3</span> Your child works out the answer</li>
+        <li><span class="n">4</span> The tutor explains why, in plain words</li>
+      </ol>
+    </div>
+
+    <div class="demo-phone reveal">
+      <div class="chat-head">
+        <div class="tutor-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
+        <div>
+          <div class="who">PrepStep Tutor</div>
+          <div class="status"><span class="dot"></span> No-spoiler mode</div>
+        </div>
+      </div>
+      <div class="demo-thread" id="demoThread" aria-live="polite">
+        <!-- bubbles injected by JS, staggered -->
+      </div>
+      <p class="demo-note">A gentle walk to the answer, every time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR PARENTS: DASHBOARD ============ -->
+<section class="band" id="parents">
+  <div class="wrap parent-grid">
+    <div class="dash reveal">
+      <div class="dash-top">
+        <div class="who">
+          <div class="av">M</div>
+          <div>
+            <b>Maya's progress</b>
+            <small>Year 5 &middot; this week</small>
+          </div>
+        </div>
+        <span class="dash-pill">On track</span>
+      </div>
+
+      <div class="dash-row">
+        <div class="lab"><span>Verbal Reasoning</span><span class="val">Strong</span></div>
+        <div class="bar"><span class="fill-strong" style="width:86%"></span></div>
+      </div>
+      <div class="dash-row">
+        <div class="lab"><span>English</span><span class="val">Coming along</span></div>
+        <div class="bar"><span class="fill-mid" style="width:64%"></span></div>
+      </div>
+      <div class="dash-row">
+        <div class="lab"><span>Maths: fractions <span class="dash-tag focus">Focus</span></span><span class="val">Practising</span></div>
+        <div class="bar"><span class="fill-focus" style="width:38%"></span></div>
+      </div>
+      <div class="dash-row" style="margin-top:20px; background:var(--cream); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:0;">
+        <div class="lab" style="margin-bottom:2px;"><span>This week's win</span></div>
+        <p style="margin:0; font-size:0.92rem; color:var(--espresso-soft);">Turned around 7 of last week's fraction slips. The method is sticking.</p>
+      </div>
+    </div>
+
+    <div class="demo-copy reveal">
+      <span class="eyebrow">For parents</span>
+      <h2 style="font-size:clamp(1.9rem,3.6vw,2.6rem);margin-top:14px;">Know where they stand, without the hovering.</h2>
+      <p style="font-size:1.08rem;color:var(--espresso-soft);margin-top:16px;">You do not need to mark worksheets or become the exam expert. The dashboard shows you what is strong, what needs work, and what improved this week, in a glance you can take with your morning coffee.</p>
+      <p style="font-size:1.08rem;color:var(--espresso-soft);">Less nagging, fewer arguments, and the quiet reassurance of seeing real progress build up over time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="band" style="background:var(--cream-deep);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">From parents like you</span>
+      <h2>The relief of a calmer household.</h2>
+    </div>
+    <div class="tcards">
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <div class="tcard reveal">
+        <span class="qm">&rdquo;</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Homework used to end in tears. Now she does her session before I even ask, because the lesson means she actually knows what to do.</blockquote>
+        <div class="who"><span class="av">S</span><div><b>Sarah</b><br><small>Parent of a Year 5 pupil, Poole</small></div></div>
+      </div>
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <div class="tcard reveal">
+        <span class="qm">&rdquo;</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>I stopped hovering. The dashboard tells me exactly where he is losing marks, so we can just focus on those bits calmly.</blockquote>
+        <div class="who"><span class="av">D</span><div><b>David</b><br><small>Parent of a Year 4 pupil, Bournemouth</small></div></div>
+      </div>
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <div class="tcard reveal">
+        <span class="qm">&rdquo;</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>The tutor never just gives the answer, which drove her mad at first and then she started getting them herself. That was the moment for us.</blockquote>
+        <div class="who"><span class="av">P</span><div><b>Priya</b><br><small>Parent of a Year 5 pupil, Poole</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="band pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Simple, honest pricing</span>
+      <h2>Serious preparation, gentle on the budget.</h2>
+    </div>
+    <p class="anchor-note reveal">A private tutor typically costs <b>around &pound;30 to &pound;40 an hour</b>. Atom Learning is <b>around &pound;69.99 a month</b>. PrepStep gives your child a lesson-led programme and an always-available tutor for a fraction of that, and you can begin without paying a penny.</p>
+
+    <div class="price-grid">
+      <div class="plan reveal">
+        <h3>Free</h3>
+        <p class="desc">Try the whole idea, no card needed.</p>
+        <div class="price">&pound;0</div>
+        <div class="save">Free to start, forever</div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Daily lesson-led practice</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> A taste of the no-spoiler tutor</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> No card, no commitment</li>
+        </ul>
+        <a href="#start" class="btn btn-ghost">Start free</a>
+      </div>
+
+      <div class="plan featured reveal">
+        <span class="flag">Best value</span>
+        <h3>Annual</h3>
+        <p class="desc">The full programme, all the way to exam day.</p>
+        <div class="price">&pound;199 <small>/ year</small></div>
+        <div class="save">Works out under &pound;17 a month</div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything, unlimited</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Full tutor, mock tests, dashboard</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Mistakes brought back until they stick</li>
+        </ul>
+        <a href="#start" class="btn btn-primary">Start free, no card needed</a>
+      </div>
+
+      <div class="plan reveal">
+        <h3>Monthly</h3>
+        <p class="desc">The full programme, month by month.</p>
+        <div class="price">&pound;24.99 <small>/ month</small></div>
+        <div class="save">Cancel any time</div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything, unlimited</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Full tutor, mock tests, dashboard</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Stop whenever you like</li>
+        </ul>
+        <a href="#start" class="btn btn-ghost">Start free</a>
+      </div>
+    </div>
+
+    <div class="fsm-note reveal">
+      <b>Free for families on Free School Meals or Pupil Premium.</b> Cost should never be the reason a bright child misses out. Just ask, and we will sort it, quietly.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="band" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good questions</span>
+      <h2>The things parents ask us.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq reveal">
+        <summary>What makes PrepStep different from other 11+ practice? <span class="plus">+</span></summary>
+        <div class="faq-body">Most tools test first and explain later, if at all. PrepStep teaches the method before every focused quiz, then keeps a patient tutor on hand for anything tricky. Your child learns how to do it, rather than guessing and hoping.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Is it right for the exam my child is sitting? <span class="plus">+</span></summary>
+        <div class="faq-body">PrepStep is built for the 11+ for grammar schools in the Bournemouth and Poole area, covering Maths, English and Verbal Reasoning. The practice is shaped around the kind of questions those exams ask.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Will the tutor just give my child the answers? <span class="plus">+</span></summary>
+        <div class="faq-body">No. While your child is still working on a question, the tutor will not reveal the answer. It nudges them with a smaller question to get them thinking. Only once they have committed to an answer does it explain, in plain, friendly words.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Do I need to be there to help? <span class="plus">+</span></summary>
+        <div class="faq-body">Not at all. The lessons do the teaching and the tutor handles the tricky moments. The parent dashboard lets you keep an eye on progress in a glance, so you can step back and let them get on with it.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Is it safe and private for my child? <span class="plus">+</span></summary>
+        <div class="faq-body">Yes. PrepStep is built for children, with a safe tutor, no advertising, and no data sold on. We handle personal data in line with UK GDPR. Your child's work is theirs and yours, and no one else's.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>How much does it cost, and can I try it first? <span class="plus">+</span></summary>
+        <div class="faq-body">You can start completely free, with no card needed. If you carry on, it is &pound;199 a year or &pound;24.99 a month, and you can cancel any time. Families on Free School Meals or Pupil Premium can have it free, just ask.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="start">
+  <div class="wrap">
+    <div class="final-card reveal">
+      <div class="final-steps" aria-hidden="true"><i></i><i></i><i></i></div>
+      <h2>Give them the step up they <span class="accent">deserve</span>.</h2>
+      <p>Start today with a short lesson and a patient tutor. See the difference a calmer, teach-first approach makes, before you spend a thing.</p>
+      <a href="https://prepstep.co.uk" class="btn btn-primary" style="font-size:1.08rem;padding:18px 34px;">Start free, no card needed <span class="arrow">&rarr;</span></a>
+      <div class="micro-trust" style="margin-top:18px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        Free to start. Cancel any time. No card to begin.
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="font-family:var(--display);font-size:1.3rem;">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true" style="margin-right:8px;vertical-align:middle;">
+            <rect x="2" y="20" width="8" height="8" rx="2" fill="#F7E4D2"/>
+            <rect x="11" y="12" width="8" height="16" rx="2" fill="#E4A13C"/>
+            <rect x="20" y="4" width="8" height="24" rx="2" fill="#C4623E"/>
+          </svg>PrepStep
+        </div>
+        <p style="max-width:22em;margin-top:4px;">11+ prep that teaches before it tests, for grammar school hopefuls in the Bournemouth and Poole area.</p>
+        <div class="safe-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E4A13C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          UK GDPR &middot; No ads &middot; A safe tutor built for children
+        </div>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a class="fl" href="#how">How it works</a>
+        <a class="fl" href="#inside">What's inside</a>
+        <a class="fl" href="#parents">For parents</a>
+        <a class="fl" href="#pricing">Pricing</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a class="fl" href="#">Our story</a>
+        <a class="fl" href="#faq">FAQ</a>
+        <a class="fl" href="mailto:hello@prepstep.co.uk">Contact</a>
+        <a class="fl" href="#">Free School Meals access</a>
+      </div>
+
+      <div>
+        <h4>Trust &amp; safety</h4>
+        <a class="fl" href="#">Privacy policy</a>
+        <a class="fl" href="#">Safeguarding</a>
+        <a class="fl" href="#">Terms of service</a>
+        <a class="fl" href="mailto:hello@prepstep.co.uk">hello@prepstep.co.uk</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>&copy; 2026 PrepStep. All rights reserved.</span>
+      <span>Made with care in Dorset for local families.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header shadow on scroll
+  var header = document.getElementById('site-header');
+  window.addEventListener('scroll', function () {
+    header.classList.toggle('scrolled', window.scrollY > 12);
+  }, { passive: true });
+
+  // Mobile nav
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navlinks');
+  toggle.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Scroll reveal
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revs = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    revs.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revs.forEach(function (el) { io.observe(el); });
+  }
+
+  // No-spoiler tutor demo: staggered bubble reveal, plays when scrolled into view
+  var demoData = [
+    { who: 'child', tag: 'Your child', text: 'The answer is B, isn’t it?' },
+    { who: 'tutor', tag: 'Tutor', text: 'You might be right. Before I say, which two words in the sentence give you the biggest clue?' },
+    { who: 'child', tag: 'Your child', text: 'Hmm… "although" and "however"?' },
+    { who: 'tutor', tag: 'Tutor', text: 'Lovely spotting. Those words signal a contrast. So which answer shows two opposite ideas?' },
+    { who: 'child', tag: 'Your child', text: 'Then it’s D!' },
+    { who: 'tutor', tag: 'Tutor', text: 'Exactly D. You used the clue words to reason it out yourself. That’s the skill that wins marks.' }
+  ];
+  var thread = document.getElementById('demoThread');
+  function playDemo() {
+    thread.innerHTML = '';
+    demoData.forEach(function (m, i) {
+      var b = document.createElement('div');
+      b.className = 'bubble ' + m.who;
+      b.style.animationDelay = (i * 0.7) + 's';
+      b.innerHTML = '<span class="tag">' + m.tag + '</span>' + m.text;
+      thread.appendChild(b);
+    });
+  }
+  if (reduce) {
+    // render statically, no animation
+    demoData.forEach(function (m) {
+      var b = document.createElement('div');
+      b.className = 'bubble ' + m.who;
+      b.style.opacity = 1; b.style.transform = 'none';
+      b.innerHTML = '<span class="tag">' + m.tag + '</span>' + m.text;
+      thread.appendChild(b);
+    });
+  } else if ('IntersectionObserver' in window) {
+    var played = false;
+    var dio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && !played) { played = true; playDemo(); }
+      });
+    }, { threshold: 0.35 });
+    dio.observe(document.getElementById('demoThread'));
+  } else {
+    playDemo();
+  }
+</script>

@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrepStep: 11+ prep that teaches before it tests</title>
+<meta name="description" content="11+ prep that teaches before it tests. Every session starts with a short lesson, and a patient tutor is on hand to explain anything your child finds tricky. Free to start, no card needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F0E2;
+    --paper-2:#F0E8D6;
+    --paper-3:#EBE1CC;
+    --ink:#221D15;
+    --ink-2:#4C4438;
+    --ink-3:#6E6556;
+    --rule:rgba(34,29,21,.16);
+    --rule-soft:rgba(34,29,21,.10);
+    --claret:#7C2A20;
+    --claret-2:#611E16;
+    --gold:#9B7A2E;
+    --shadow:0 22px 60px -32px rgba(34,29,21,.45);
+    --measure:66rem;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background-color:var(--paper);
+    background-image:
+      radial-gradient(120% 90% at 82% -10%, rgba(155,122,46,.10), transparent 55%),
+      radial-gradient(110% 80% at 0% 100%, rgba(124,42,32,.06), transparent 55%);
+    color:var(--ink);
+    font-family:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:clamp(1rem,0.96rem + 0.2vw,1.12rem);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  /* faint paper grain */
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    z-index:-1; pointer-events:none;
+    opacity:.42; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  h1,h2,h3,h4{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:500;
+    line-height:1.04;
+    letter-spacing:-0.012em;
+    margin:0;
+  }
+
+  .wrap{width:100%;max-width:74rem;margin:0 auto;padding:0 clamp(1.25rem,5vw,3.25rem);}
+  .rule{height:1px;background:var(--rule);border:0;margin:0;}
+
+  .eyebrow{
+    font-family:"Hanken Grotesk",sans-serif;
+    font-weight:600;
+    font-size:.72rem;
+    letter-spacing:.26em;
+    text-transform:uppercase;
+    color:var(--claret);
+    margin:0 0 1.4rem;
+    display:inline-flex; align-items:center; gap:.7rem;
+  }
+  .eyebrow::before{content:"";width:1.9rem;height:1px;background:var(--claret);opacity:.55;}
+
+  .lede{color:var(--ink-2);font-size:clamp(1.08rem,1rem + 0.5vw,1.32rem);line-height:1.6;}
+
+  /* ---------- header ---------- */
+  header.masthead{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,240,226,.86);
+    backdrop-filter:saturate(1.1) blur(9px);
+    border-bottom:1px solid var(--rule);
+  }
+  .masthead-in{display:flex; align-items:center; justify-content:space-between; gap:1.5rem; height:4.6rem;}
+  .brand{font-family:"Fraunces",serif;font-weight:600;font-size:1.42rem;letter-spacing:-0.01em;display:inline-flex;align-items:baseline;gap:.05rem;}
+  .brand .up{color:var(--claret);}
+  .brand::after{content:"";}
+  nav.mainnav{display:none; gap:2.1rem; font-size:.86rem; font-weight:500; color:var(--ink-2);}
+  nav.mainnav a{position:relative;padding:.2rem 0;transition:color .2s;}
+  nav.mainnav a:hover{color:var(--ink);}
+  nav.mainnav a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--claret);transition:width .25s;}
+  nav.mainnav a:hover::after{width:100%;}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
+    font-family:"Hanken Grotesk",sans-serif; font-weight:600; font-size:.94rem;
+    padding:.85rem 1.5rem; border-radius:2px; cursor:pointer;
+    border:1px solid var(--claret); background:var(--claret); color:#FBF6EC;
+    transition:transform .18s ease, background .2s ease, box-shadow .2s ease;
+    box-shadow:0 10px 26px -16px rgba(124,42,32,.9);
+    text-align:center;
+  }
+  .btn:hover{background:var(--claret-2);border-color:var(--claret-2);transform:translateY(-1px);}
+  .btn .arw{transition:transform .2s;}
+  .btn:hover .arw{transform:translateX(3px);}
+  .btn--sm{padding:.62rem 1.05rem;font-size:.85rem;}
+  .btn--ghost{background:transparent;color:var(--ink);border-color:var(--rule);box-shadow:none;}
+  .btn--ghost:hover{background:transparent;border-color:var(--ink);transform:translateY(-1px);}
+  .header-cta{display:none;}
+
+  .microtrust{font-size:.82rem;color:var(--ink-3);margin-top:1rem;letter-spacing:.01em;}
+  .microtrust b{color:var(--ink-2);font-weight:600;}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:clamp(3.5rem,7vw,6rem) 0 clamp(2.5rem,5vw,4rem);}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:end;}
+  .hero h1{
+    font-size:clamp(2.7rem,2rem + 6vw,5.4rem);
+    font-weight:500;
+    letter-spacing:-0.022em;
+    line-height:1.0;
+  }
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--claret);}
+  .hero .lede{margin:1.6rem 0 2.1rem;max-width:34rem;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;}
+  .hero-aside{
+    border-top:1px solid var(--rule);
+    padding-top:1.5rem;
+    font-size:.9rem; color:var(--ink-2); max-width:22rem;
+  }
+  .hero-aside .k{font-family:"Fraunces",serif;font-style:italic;color:var(--ink);font-size:1.05rem;}
+
+  /* decorative stepped ornament */
+  .stair-ornament{display:flex;align-items:flex-end;gap:.42rem;height:2.2rem;margin-bottom:1.7rem;}
+  .stair-ornament span{width:.7rem;background:var(--claret);opacity:.85;border-radius:1px;}
+  .stair-ornament span:nth-child(1){height:33%;opacity:.35;}
+  .stair-ornament span:nth-child(2){height:62%;opacity:.6;}
+  .stair-ornament span:nth-child(3){height:100%;}
+
+  /* ---------- trust strip ---------- */
+  .trust{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--paper-2);}
+  .trust-in{display:grid;grid-template-columns:1fr;gap:1.6rem;padding:2.3rem 0;}
+  .trust-schools .lbl{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:.7rem;}
+  .trust-schools p{margin:0;font-family:"Fraunces",serif;font-size:1.2rem;line-height:1.35;max-width:26rem;}
+  .trust-quote{border-left:2px solid var(--claret);padding-left:1.3rem;}
+  .trust-quote blockquote{margin:0;font-family:"Fraunces",serif;font-style:italic;font-size:1.12rem;line-height:1.45;color:var(--ink);}
+  .trust-quote cite{display:block;margin-top:.8rem;font-style:normal;font-size:.8rem;letter-spacing:.03em;color:var(--ink-3);}
+
+  /* ---------- section frame ---------- */
+  section{padding:clamp(3.6rem,7vw,6.5rem) 0;}
+  .sec-head{max-width:var(--measure);}
+  .sec-head h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3.1rem);}
+  .sec-head p{margin:1.2rem 0 0;max-width:38rem;}
+
+  /* ---------- problem ---------- */
+  .problem{background:transparent;}
+  .problem-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;}
+  .problem-body p{font-size:clamp(1.1rem,1.02rem + 0.4vw,1.28rem);line-height:1.62;color:var(--ink-2);margin:0 0 1.2rem;max-width:38rem;}
+  .problem-body p:last-child{margin-bottom:0;}
+  .dropcap::first-letter{
+    font-family:"Fraunces",serif; font-weight:600;
+    float:left; font-size:4.5rem; line-height:.72;
+    padding:.42rem .55rem 0 0; color:var(--claret);
+  }
+  .founder{
+    border:1px solid var(--rule);
+    background:var(--paper-2);
+    padding:2rem;
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+  .founder .tag{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--claret);font-weight:600;margin-bottom:1rem;}
+  .founder h3{font-size:1.55rem;margin-bottom:.9rem;}
+  .founder p{margin:0;color:var(--ink-2);font-size:1.02rem;line-height:1.6;}
+
+  /* ---------- how it works: the steps ---------- */
+  .steps{background:var(--paper-3);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .steps-grid{display:grid;grid-template-columns:1fr;gap:2.2rem;margin-top:3rem;}
+  .step{
+    background:var(--paper);
+    border:1px solid var(--rule);
+    padding:2rem 1.9rem 2.1rem;
+    position:relative;
+  }
+  .step .num{
+    font-family:"Fraunces",serif;
+    font-weight:500; font-style:italic;
+    font-size:clamp(3.6rem,3rem + 3vw,5.2rem);
+    line-height:.8;
+    color:var(--claret);
+    letter-spacing:-0.02em;
+    display:block;
+    margin-bottom:1.1rem;
+  }
+  .step .num small{font-size:.9rem;font-style:normal;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3);display:block;margin-top:.9rem;font-family:"Hanken Grotesk",sans-serif;font-weight:600;}
+  .step h3{font-size:1.5rem;margin-bottom:.75rem;}
+  .step p{margin:0;color:var(--ink-2);font-size:.98rem;line-height:1.58;}
+  .step-verb{font-family:"Fraunces",serif;font-style:italic;color:var(--claret);}
+
+  /* ---------- tutor in action ---------- */
+  .tutor{background:var(--ink);color:var(--paper);position:relative;overflow:hidden;}
+  .tutor::after{
+    content:"";position:absolute;right:-8%;top:-20%;width:44%;height:140%;
+    background:radial-gradient(closest-side, rgba(155,122,46,.16), transparent 70%);
+    pointer-events:none;
+  }
+  .tutor .eyebrow{color:#D8A24A;}
+  .tutor .eyebrow::before{background:#D8A24A;}
+  .tutor h2{color:var(--paper);font-size:clamp(1.9rem,1.4rem + 2.4vw,3rem);}
+  .tutor .sub{color:rgba(246,240,226,.72);margin:1.1rem 0 0;max-width:34rem;}
+  .transcript{
+    margin-top:2.8rem;
+    display:grid;grid-template-columns:1fr;gap:1.6rem;
+    align-items:start;
+  }
+  .prompt-card{
+    border:1px solid rgba(246,240,226,.18);
+    background:rgba(246,240,226,.04);
+    padding:1.5rem 1.6rem;
+    border-radius:3px;
+  }
+  .prompt-card .lbl{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:#D8A24A;font-weight:600;margin-bottom:.7rem;}
+  .prompt-card .q{font-family:"Fraunces",serif;font-size:1.18rem;line-height:1.4;color:var(--paper);}
+  .prompt-card .caption{margin-top:1.4rem;font-size:.86rem;color:rgba(246,240,226,.6);line-height:1.5;border-top:1px solid rgba(246,240,226,.14);padding-top:1.1rem;}
+
+  .chat{display:flex;flex-direction:column;gap:.85rem;}
+  .msg{opacity:0;transform:translateY(10px);transition:opacity .5s ease, transform .5s ease;max-width:85%;}
+  .chat.is-visible .msg{opacity:1;transform:none;}
+  .chat.is-visible .msg:nth-child(1){transition-delay:.05s;}
+  .chat.is-visible .msg:nth-child(2){transition-delay:.55s;}
+  .chat.is-visible .msg:nth-child(3){transition-delay:1.05s;}
+  .chat.is-visible .msg:nth-child(4){transition-delay:1.55s;}
+  .chat.is-visible .msg:nth-child(5){transition-delay:2.05s;}
+  .msg .who{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-bottom:.32rem;opacity:.7;}
+  .msg .bubble{padding:.8rem 1.05rem;border-radius:12px;line-height:1.45;font-size:.96rem;}
+  .msg.child{align-self:flex-end;text-align:right;}
+  .msg.child .who{color:#D8A24A;}
+  .msg.child .bubble{background:rgba(246,240,226,.10);border:1px solid rgba(246,240,226,.14);border-bottom-right-radius:3px;}
+  .msg.tutor-msg .who{color:#E6B764;}
+  .msg.tutor-msg .bubble{background:#7C2A20;border:1px solid #93362a;border-bottom-left-radius:3px;color:#FBEFE0;}
+
+  /* ---------- inside (features) ---------- */
+  .inside-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:2.8rem;border-top:1px solid var(--rule);}
+  .feat{
+    padding:2rem 0;
+    border-bottom:1px solid var(--rule);
+    display:grid;grid-template-columns:1fr;gap:.6rem;
+  }
+  .feat .fnum{font-family:"Fraunces",serif;font-style:italic;color:var(--claret);font-size:1.05rem;}
+  .feat h3{font-size:1.32rem;}
+  .feat p{margin:0;color:var(--ink-2);font-size:.98rem;max-width:34rem;}
+
+  /* ---------- parents ---------- */
+  .parents{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .parents-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center;}
+  .dash{
+    border:1px solid var(--rule);
+    background:var(--paper);
+    box-shadow:var(--shadow);
+    padding:1.6rem;
+  }
+  .dash .dash-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule);padding-bottom:.9rem;margin-bottom:1.2rem;}
+  .dash .dash-top .t{font-family:"Fraunces",serif;font-size:1.15rem;}
+  .dash .dash-top .s{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);}
+  .bar-row{display:grid;grid-template-columns:7.5rem 1fr auto;gap:.9rem;align-items:center;margin-bottom:.95rem;font-size:.86rem;}
+  .bar-row .name{color:var(--ink-2);}
+  .bar{height:.5rem;background:var(--paper-3);border-radius:99px;overflow:hidden;}
+  .bar span{display:block;height:100%;border-radius:99px;background:var(--claret);}
+  .bar.solid span{background:#3E6A4E;}
+  .bar-row .pct{font-variant-numeric:tabular-nums;color:var(--ink-3);font-weight:600;}
+  .dash .foot{margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.8rem;color:var(--ink-3);}
+
+  /* ---------- testimonials ---------- */
+  .tstm-grid{display:grid;grid-template-columns:1fr;gap:1.6rem;margin-top:2.8rem;}
+  .tstm{
+    border:1px solid var(--rule);
+    background:var(--paper-2);
+    padding:1.9rem 1.8rem;
+    position:relative;
+    display:flex;flex-direction:column;
+  }
+  .tstm .mark{font-family:"Fraunces",serif;font-size:3rem;line-height:.5;color:var(--claret);opacity:.4;margin-bottom:.6rem;height:1.4rem;}
+  .tstm blockquote{margin:0 0 1.3rem;font-family:"Fraunces",serif;font-size:1.12rem;line-height:1.5;color:var(--ink);flex:1;}
+  .tstm cite{font-style:normal;font-size:.8rem;letter-spacing:.03em;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:1rem;}
+
+  /* ---------- pricing ---------- */
+  .pricing{background:var(--paper-3);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .price-grid{display:grid;grid-template-columns:1fr;gap:1.6rem;margin-top:2.8rem;align-items:stretch;}
+  .plan{
+    border:1px solid var(--rule);
+    background:var(--paper);
+    padding:2rem 1.9rem 2.1rem;
+    display:flex;flex-direction:column;
+  }
+  .plan.feature{border-color:var(--claret);box-shadow:var(--shadow);position:relative;}
+  .plan.feature::before{
+    content:"Most chosen";position:absolute;top:-.72rem;left:1.9rem;
+    background:var(--claret);color:#FBF6EC;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+    padding:.32rem .7rem;border-radius:2px;
+  }
+  .plan .pname{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:1rem;}
+  .plan .amt{font-family:"Fraunces",serif;font-size:2.5rem;line-height:1;letter-spacing:-0.02em;}
+  .plan .amt small{font-family:"Hanken Grotesk",sans-serif;font-size:.92rem;color:var(--ink-3);font-weight:500;letter-spacing:0;}
+  .plan .alt{font-size:.86rem;color:var(--ink-3);margin-top:.5rem;}
+  .plan ul{list-style:none;margin:1.5rem 0 1.8rem;padding:0;display:flex;flex-direction:column;gap:.7rem;font-size:.94rem;color:var(--ink-2);}
+  .plan li{display:flex;gap:.65rem;align-items:flex-start;line-height:1.45;}
+  .plan li::before{content:"";flex:none;width:.9rem;height:.9rem;margin-top:.28rem;border-radius:50%;border:1.5px solid var(--claret);background:radial-gradient(circle at 50% 50%, var(--claret) 0 42%, transparent 46%);}
+  .plan .btn{width:100%;margin-top:auto;}
+
+  .anchor-note{
+    margin-top:2.4rem;border:1px dashed var(--rule);background:var(--paper);
+    padding:1.5rem 1.7rem;font-size:.98rem;color:var(--ink-2);line-height:1.6;max-width:44rem;
+  }
+  .anchor-note b{color:var(--ink);font-weight:600;}
+  .fsm{margin-top:1.4rem;font-family:"Fraunces",serif;font-style:italic;font-size:1.1rem;color:var(--claret);max-width:40rem;line-height:1.4;}
+
+  /* ---------- faq ---------- */
+  .faq-list{margin-top:2.4rem;border-top:1px solid var(--rule);max-width:var(--measure);}
+  .faq-item{border-bottom:1px solid var(--rule);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:0;cursor:pointer;
+    padding:1.35rem 2.5rem 1.35rem 0;position:relative;
+    font-family:"Fraunces",serif;font-size:1.16rem;color:var(--ink);line-height:1.3;
+  }
+  .faq-q .ic{position:absolute;right:.2rem;top:50%;transform:translateY(-50%);width:1.1rem;height:1.1rem;}
+  .faq-q .ic::before,.faq-q .ic::after{content:"";position:absolute;background:var(--claret);left:0;top:50%;width:100%;height:1.5px;transition:transform .28s;}
+  .faq-q .ic::after{transform:rotate(90deg);}
+  .faq-item.open .faq-q .ic::after{transform:rotate(0);}
+  .faq-a{overflow:hidden;max-height:0;transition:max-height .32s ease;}
+  .faq-a p{margin:0;padding:0 0 1.5rem;color:var(--ink-2);font-size:1rem;line-height:1.62;max-width:44rem;}
+
+  /* ---------- final CTA ---------- */
+  .final{background:var(--ink);color:var(--paper);text-align:center;position:relative;overflow:hidden;}
+  .final::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(80% 120% at 50% -10%, rgba(155,122,46,.18), transparent 60%);
+  }
+  .final .inner{position:relative;max-width:44rem;margin:0 auto;}
+  .final .stair-ornament{justify-content:center;margin-bottom:2rem;}
+  .final .stair-ornament span{background:#D8A24A;}
+  .final h2{color:var(--paper);font-size:clamp(2.1rem,1.6rem + 3vw,3.6rem);}
+  .final h2 em{font-style:italic;color:#E6B764;}
+  .final p{color:rgba(246,240,226,.75);margin:1.4rem auto 2.2rem;max-width:32rem;}
+  .final .btn{background:#D8A24A;border-color:#D8A24A;color:#221D15;box-shadow:0 14px 34px -18px rgba(216,162,74,.9);}
+  .final .btn:hover{background:#E6B764;border-color:#E6B764;}
+  .final .microtrust{color:rgba(246,240,226,.6);}
+  .final .microtrust b{color:rgba(246,240,226,.85);}
+
+  /* ---------- footer ---------- */
+  footer.site{background:var(--paper);border-top:1px solid var(--rule);padding:3.5rem 0 2.5rem;}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:2.2rem;}
+  .foot-brand .brand{font-size:1.6rem;}
+  .foot-brand p{margin:1rem 0 0;color:var(--ink-3);font-size:.9rem;max-width:24rem;line-height:1.55;}
+  .foot-col h4{font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:1rem;}
+  .foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.65rem;font-size:.92rem;color:var(--ink-2);}
+  .foot-col a:hover{color:var(--claret);}
+  .foot-safe{margin-top:2.5rem;padding-top:1.6rem;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--ink-3);}
+  .foot-safe .badges{display:flex;flex-wrap:wrap;gap:.55rem;}
+  .badge{border:1px solid var(--rule);border-radius:99px;padding:.32rem .8rem;font-size:.72rem;letter-spacing:.04em;color:var(--ink-2);}
+
+  /* reveal */
+  [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  [data-reveal].is-visible{opacity:1;transform:none;}
+
+  /* ---------- responsive ---------- */
+  @media(min-width:620px){
+    .trust-in{grid-template-columns:1fr 1.15fr;align-items:center;gap:3rem;}
+    .tstm-grid{grid-template-columns:1fr 1fr;}
+    .price-grid{grid-template-columns:1fr 1fr;}
+    .foot-grid{grid-template-columns:1.6fr 1fr 1fr;}
+    .transcript{grid-template-columns:.9fr 1.1fr;gap:2.4rem;}
+    .inside-grid{grid-template-columns:1fr 1fr;column-gap:3rem;}
+    .feat{border-bottom:1px solid var(--rule);}
+  }
+  @media(min-width:900px){
+    nav.mainnav{display:flex;}
+    .header-cta{display:inline-flex;}
+    .hero-grid{grid-template-columns:1.55fr .9fr;gap:3.5rem;}
+    .problem-grid{grid-template-columns:1.15fr .85fr;gap:4rem;}
+    .steps-grid{grid-template-columns:repeat(3,1fr);gap:1.5rem;align-items:start;}
+    .step:nth-child(2){transform:translateY(-1.6rem);}
+    .step:nth-child(3){transform:translateY(-3.2rem);}
+    .parents-grid{grid-template-columns:.95fr 1.05fr;gap:4rem;}
+    .tstm-grid{grid-template-columns:repeat(3,1fr);}
+    .price-grid{grid-template-columns:1fr 1fr;max-width:52rem;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;}
+    [data-reveal],.msg{opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="masthead">
+  <div class="wrap masthead-in">
+    <a class="brand" href="#top" aria-label="PrepStep home">Prep<span class="up">Step</span></a>
+    <nav class="mainnav" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#inside">What's inside</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="btn btn--sm header-cta" href="https://prepstep.co.uk">Start free <span class="arw">&rarr;</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="stair-ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+        <span class="eyebrow">The 11+, taught properly</span>
+        <h1>11+ prep that <em>teaches</em> before it tests.</h1>
+        <p class="lede">Every session starts with a short lesson, and a patient tutor is on hand to explain anything your child finds tricky.</p>
+        <div class="hero-cta">
+          <a class="btn" href="https://prepstep.co.uk">Start free, no card needed <span class="arw">&rarr;</span></a>
+        </div>
+        <p class="microtrust"><b>Free to start.</b> Cancel any time. No card to begin.</p>
+      </div>
+      <aside class="hero-aside">
+        <p class="k">Most children are strong in some corners of the exam and quietly losing marks in others.</p>
+        <p style="margin:.9rem 0 0;">PrepStep finds those weak spots and turns them around, with someone on hand to explain the wrong answers. Built for the 11+ for grammar schools in the Bournemouth and Poole area.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <div class="trust">
+    <div class="wrap trust-in">
+      <div class="trust-schools">
+        <div class="lbl">Prep for local grammar schools</div>
+        <p>For the 11+ for grammar schools in the Bournemouth and Poole area, including Bournemouth and Parkstone.</p>
+      </div>
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <div class="trust-quote">
+        <blockquote>&ldquo;For the first time she isn&rsquo;t in tears over the maths. She knows what to do before the questions even begin.&rdquo;</blockquote>
+        <cite>Parent of a Year 5 pupil, Poole</cite>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PROBLEM + FOUNDER ============ -->
+  <section class="problem" id="why">
+    <div class="wrap">
+      <div class="problem-grid">
+        <div class="problem-body" data-reveal>
+          <span class="eyebrow">The quiet gap</span>
+          <h2 class="sec-head" style="font-size:clamp(1.9rem,1.4rem + 2.4vw,3.1rem);margin-bottom:1.8rem;">The marks slip away quietly.</h2>
+          <p class="dropcap">Most children are strong in some corners of the 11+ and quietly losing marks in others. The trouble is rarely effort. It is that a handful of question types keep catching them out, and a wrong answer on a worksheet often stays a mystery.</p>
+          <p>Nobody is there to explain why it was wrong, so the same gap turns up again the following week. Practice without understanding just rehearses the mistake.</p>
+          <p>PrepStep is built the other way round. It teaches the method first, then shows you exactly where the marks are going, and stays patient while your child works it out.</p>
+        </div>
+        <div class="founder" data-reveal>
+          <div class="tag">Why we built PrepStep</div>
+          <h3>Made by a parent who studied the exams closely.</h3>
+          <p>PrepStep was built by a parent who has been through the 11+ and looked hard at how the questions work. Two things stood out. The questions fall into recurring patterns, and every child is strong at some and quietly losing marks on others. The whole game is finding those weak spots, turning them around, and having someone on hand to explain the wrong answers. We built PrepStep to close that gap, properly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS: THE STEPS ============ -->
+  <section class="steps" id="how">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">How it works</span>
+        <h2>Three steps, in the right order.</h2>
+        <p>The clue is in the name. Every focused session climbs the same three steps: teach the method, practise it where it matters, then understand every miss.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step" data-reveal>
+          <span class="num">01<small>Teach</small></span>
+          <h3>A lesson comes first.</h3>
+          <p>Every focused session opens with a short, compulsory lesson. Your child learns the method in plain words, <span class="step-verb">before</span> a single question is asked.</p>
+        </article>
+        <article class="step" data-reveal>
+          <span class="num">02<small>Practise</small></span>
+          <h3>Then they put it to work.</h3>
+          <p>PrepStep finds where the marks are slipping, topic by topic, and brings those mistakes back to <span class="step-verb">practise</span> until they truly stick.</p>
+        </article>
+        <article class="step" data-reveal>
+          <span class="num">03<small>Understand</small></span>
+          <h3>The tutor explains the misses.</h3>
+          <p>When something is tricky, a patient tutor steps in. It never hands over the answer. It nudges, waits, then <span class="step-verb">explains</span> once your child commits.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TUTOR IN ACTION ============ -->
+  <section class="tutor">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">The tutor, in practice</span>
+        <h2>It won&rsquo;t just give the answer.</h2>
+        <p class="sub">The built-in tutor follows one firm rule: no spoilers. While your child is still trying, it nudges them towards the answer rather than handing it over. Once they commit, it explains in plain words.</p>
+      </div>
+      <div class="transcript">
+        <div class="prompt-card" data-reveal>
+          <div class="lbl">The question</div>
+          <div class="q">A coat costs &pound;48. In a sale it is reduced by 25%. What is the sale price?</div>
+          <div class="caption">Child tries, the tutor nudges, your child answers, then the tutor explains. That order is the whole point.</div>
+        </div>
+        <div class="chat" data-reveal>
+          <div class="msg child">
+            <div class="who">Child</div>
+            <div class="bubble">I don&rsquo;t get it. What&rsquo;s the answer?</div>
+          </div>
+          <div class="msg tutor-msg">
+            <div class="who">Tutor</div>
+            <div class="bubble">I won&rsquo;t give it away just yet. Start with this: what is 25% of &pound;48?</div>
+          </div>
+          <div class="msg child">
+            <div class="who">Child</div>
+            <div class="bubble">Um&hellip; &pound;12?</div>
+          </div>
+          <div class="msg tutor-msg">
+            <div class="who">Tutor</div>
+            <div class="bubble">Exactly right. Now take that &pound;12 off &pound;48. What&rsquo;s left?</div>
+          </div>
+          <div class="msg child">
+            <div class="who">Child</div>
+            <div class="bubble">&pound;36!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INSIDE ============ -->
+  <section class="inside" id="inside">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">What&rsquo;s inside</span>
+        <h2>Everything, built to teach.</h2>
+        <p>Not a wall of worksheets. A calm, ordered way to learn each method, practise the weak spots, and understand every miss.</p>
+      </div>
+      <div class="inside-grid">
+        <div class="feat" data-reveal>
+          <span class="fnum">i.</span>
+          <h3>A lesson before every quiz</h3>
+          <p>Short, clear and compulsory before focused practice. The method always comes first, so questions build on understanding rather than guesswork.</p>
+        </div>
+        <div class="feat" data-reveal>
+          <span class="fnum">ii.</span>
+          <h3>A tutor that won&rsquo;t spoil it</h3>
+          <p>Built for children. It nudges your child to work it out, then explains the answer in plain words once they commit. No spoilers while they are still thinking.</p>
+        </div>
+        <div class="feat" data-reveal>
+          <span class="fnum">iii.</span>
+          <h3>Finds where marks are lost</h3>
+          <p>Sees which topics are slipping, one by one, and brings those mistakes back to practise until they stick. No more guessing where the trouble is.</p>
+        </div>
+        <div class="feat" data-reveal>
+          <span class="fnum">iv.</span>
+          <h3>Full mock tests</h3>
+          <p>Timed, full papers, so the shape and pace of the real thing feels familiar long before the day itself.</p>
+        </div>
+        <div class="feat" data-reveal>
+          <span class="fnum">v.</span>
+          <h3>A calm parent view</h3>
+          <p>See strengths and gaps at a glance, without hovering over their shoulder or marking a single page yourself.</p>
+        </div>
+        <div class="feat" data-reveal>
+          <span class="fnum">vi.</span>
+          <h3>Thousands of questions</h3>
+          <p>Across Maths, English and Verbal Reasoning, with more added all the time, so there is always fresh ground to cover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOR PARENTS ============ -->
+  <section class="parents">
+    <div class="wrap">
+      <div class="parents-grid">
+        <div data-reveal>
+          <span class="eyebrow">For parents</span>
+          <h2 class="sec-head" style="font-size:clamp(1.9rem,1.4rem + 2.4vw,3.1rem);">See the whole picture, calmly.</h2>
+          <p class="sec-head" style="margin-top:1.2rem;">The parent dashboard puts strengths and gaps in one place. You will know which topics are solid and which need another look, without sitting beside them for every question. It is a quiet lens on their progress, not another thing to police.</p>
+          <p style="margin-top:1.6rem;"><a class="btn btn--ghost" href="https://prepstep.co.uk">Start free, no card needed <span class="arw">&rarr;</span></a></p>
+        </div>
+        <div class="dash" data-reveal aria-hidden="true">
+          <div class="dash-top">
+            <span class="t">This week</span>
+            <span class="s">Topic strength</span>
+          </div>
+          <div class="bar-row"><span class="name">Fractions</span><span class="bar solid"><span style="width:88%"></span></span><span class="pct">88%</span></div>
+          <div class="bar-row"><span class="name">Comprehension</span><span class="bar solid"><span style="width:81%"></span></span><span class="pct">81%</span></div>
+          <div class="bar-row"><span class="name">Verbal analogies</span><span class="bar"><span style="width:54%"></span></span><span class="pct">54%</span></div>
+          <div class="bar-row"><span class="name">Percentages</span><span class="bar"><span style="width:47%"></span></span><span class="pct">47%</span></div>
+          <div class="foot">Two topics need another look. PrepStep is already bringing them back into practice.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="tstm-sec">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">From parents</span>
+        <h2>Words from the kitchen table.</h2>
+      </div>
+      <div class="tstm-grid">
+        <!-- [PLACEHOLDER - swap real quote] -->
+        <figure class="tstm" data-reveal>
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>The lesson at the start means she actually knows what to do before the questions begin. The evenings are calmer, and so is she.</blockquote>
+          <cite>Parent of a Year 5 pupil, Poole</cite>
+        </figure>
+        <!-- [PLACEHOLDER - swap real quote] -->
+        <figure class="tstm" data-reveal>
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>I could finally see which topics were the problem, instead of guessing. We stopped wasting evenings on the bits he already knew.</blockquote>
+          <cite>Parent of a Year 5 pupil, Bournemouth</cite>
+        </figure>
+        <!-- [PLACEHOLDER - swap real quote] -->
+        <figure class="tstm" data-reveal>
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>The tutor talking him through a wrong answer, without just handing it over, is the thing that changed how he practises.</blockquote>
+          <cite>Parent of a Year 4 pupil, Poole</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">Pricing</span>
+        <h2>Start free. Pay only if it&rsquo;s working.</h2>
+        <p>Try a lesson, some practice, and the tutor before you decide anything. No card needed to begin.</p>
+      </div>
+      <div class="price-grid">
+        <div class="plan" data-reveal>
+          <div class="pname">Free</div>
+          <div class="amt">&pound;0<small> to start</small></div>
+          <div class="alt">No card needed</div>
+          <ul>
+            <li>A lesson before focused practice</li>
+            <li>Practice across all three subjects</li>
+            <li>Meet the no-spoiler tutor</li>
+            <li>A first look at the parent view</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://prepstep.co.uk">Start free <span class="arw">&rarr;</span></a>
+        </div>
+        <div class="plan feature" data-reveal>
+          <div class="pname">Full access</div>
+          <div class="amt">&pound;199<small> / year</small></div>
+          <div class="alt">or &pound;24.99 a month</div>
+          <ul>
+            <li>Everything in Free, unlocked</li>
+            <li>Full mock tests, timed</li>
+            <li>Weak-spot practice that keeps going</li>
+            <li>The complete parent dashboard</li>
+            <li>Cancel any time</li>
+          </ul>
+          <a class="btn" href="https://prepstep.co.uk">Start free, no card needed <span class="arw">&rarr;</span></a>
+        </div>
+      </div>
+
+      <div class="anchor-note" data-reveal>
+        <b>A fraction of the usual cost.</b> Private 11+ tuition runs at around &pound;30 to &pound;40 an hour. Atom is around &pound;69.99 a month. PrepStep gives your child a lesson before every quiz and a patient tutor on hand, for far less than either.
+      </div>
+      <p class="fsm" data-reveal>Free for families on Free School Meals or Pupil Premium, on request. Just ask.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">Good questions</span>
+        <h2>The things parents ask first.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do I need to pay to start?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>No. PrepStep is free to start and needs no card. You only pay if you choose to carry on with full access.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What ages is it for?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>It is built for children preparing for the 11+, usually in Year 4 and Year 5.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Which schools is it for?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>The 11+ for grammar schools in the Bournemouth and Poole area, including Bournemouth and Parkstone.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is the tutor safe for my child?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Yes. It is built for children, follows a firm no-spoiler rule, shows no ads, and is designed to keep your child working things out for themselves rather than being handed answers.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What happens to our data?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>We follow UK GDPR. There is no advertising, and we do not sell your data. The tutor is designed to be a safe space for children to learn.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I cancel any time?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Yes. You can cancel any time, and there is no card needed to begin, so there is nothing to lose by trying it.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is it a replacement for a private tutor?<span class="ic" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>PrepStep is not a replacement for a teacher. It gives your child a lesson before every quiz, patient explanations of wrong answers, and practice aimed squarely at their weak spots, for a fraction of tuition prices.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final">
+    <div class="wrap">
+      <div class="inner">
+        <div class="stair-ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+        <h2>Teach first. <em>Then</em> test.</h2>
+        <p>Give your child a lesson before every quiz, a tutor who explains rather than spoils, and practice aimed at exactly the marks they are losing.</p>
+        <a class="btn" href="https://prepstep.co.uk">Start free, no card needed <span class="arw">&rarr;</span></a>
+        <p class="microtrust"><b>Free to start.</b> Cancel any time. No card to begin.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">Prep<span class="up">Step</span></a>
+        <p>11+ prep that teaches before it tests. For the 11+ for grammar schools in the Bournemouth and Poole area. Based in Dorset.</p>
+      </div>
+      <div class="foot-col">
+        <h4>PrepStep</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#inside">What&rsquo;s inside</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">Questions</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="mailto:hello@prepstep.co.uk">hello@prepstep.co.uk</a></li>
+          <li><a href="https://prepstep.co.uk/privacy">Privacy</a></li>
+          <li><a href="https://prepstep.co.uk/safeguarding">Safeguarding</a></li>
+          <li><a href="https://prepstep.co.uk/terms">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-safe">
+      <span>&copy; 2026 PrepStep. All rights reserved.</span>
+      <div class="badges">
+        <span class="badge">UK GDPR compliant</span>
+        <span class="badge">No ads</span>
+        <span class="badge">A safe tutor built for children</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  (function(){
+    var els = document.querySelectorAll('[data-reveal], .chat');
+    if(!('IntersectionObserver' in window)){
+      els.forEach(function(el){el.classList.add('is-visible');});
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    },{threshold:0.16, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){io.observe(el);});
+  })();
+
+  // FAQ accordion
+  (function(){
+    document.querySelectorAll('.faq-q').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var item = btn.closest('.faq-item');
+        var panel = item.querySelector('.faq-a');
+        var open = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        panel.style.maxHeight = open ? (panel.scrollHeight + 'px') : '0px';
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrepStep | 11+ prep that teaches before it tests</title>
+<meta name="description" content="PrepStep is 11+ prep for children in the Bournemouth and Poole area. Every session starts with a short lesson, and a patient tutor explains anything your child finds tricky. Free to start, no card needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F172A;
+    --ink-2:#1E293B;
+    --slate:#64748B;
+    --slate-2:#94A3B8;
+    --paper:#F8F7FF;
+    --paper-2:#EDE8FF;
+    --card:#ffffff;
+    --line:#E8E4F5;
+    --line-2:#D9D2F0;
+    --brand:#7C3AED; --brand-deep:#5A4BD1; --brand-soft:#EDE8FF; --brand-ghost:#F5F2FF;
+    --good:#22C55E; --good-deep:#16A34A; --good-soft:#DCFCE7; --good-ghost:#F0FDF4;
+    --warm:#F59E0B; --warm-soft:#FEF3C7;
+    --shadow-sm:0 1px 2px rgba(15,23,42,.05), 0 2px 8px rgba(15,23,42,.04);
+    --shadow-md:0 8px 30px rgba(15,23,42,.08), 0 2px 8px rgba(15,23,42,.04);
+    --shadow-lg:0 24px 60px rgba(15,23,42,.14), 0 6px 18px rgba(15,23,42,.08);
+    --r-sm:12px; --r-md:18px; --r-lg:26px; --r-xl:34px;
+    --maxw:1120px;
+    --sans:"DM Sans", system-ui, -apple-system, sans-serif;
+    --display:"Outfit", system-ui, -apple-system, sans-serif;
+  }
+
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden;max-width:100%}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.05;letter-spacing:-.02em;margin:0;color:var(--ink)}
+  p{margin:0}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%}
+
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--brand);
+  }
+  .eyebrow .num{
+    font-family:var(--display);font-size:.78rem;font-weight:700;
+    color:#fff;background:var(--brand);
+    width:26px;height:26px;border-radius:8px;
+    display:inline-flex;align-items:center;justify-content:center;
+    box-shadow:0 3px 0 var(--brand-deep);letter-spacing:0;
+  }
+  .lede{color:var(--slate);font-size:1.06rem;max-width:44ch}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--display);font-weight:600;font-size:1.02rem;letter-spacing:-.01em;
+    padding:15px 26px;border-radius:14px;border:0;cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .btn-primary{
+    color:#fff;background:var(--brand);
+    box-shadow:0 4px 0 var(--brand-deep), var(--shadow-sm);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--brand-deep), var(--shadow-md)}
+  .btn-primary:active{transform:translateY(2px);box-shadow:0 1px 0 var(--brand-deep)}
+  .btn-primary .arrow{transition:transform .2s ease}
+  .btn-primary:hover .arrow{transform:translateX(4px)}
+  .btn-ghost{
+    color:var(--ink);background:transparent;border:1.5px solid var(--line-2);
+    padding:13px 22px;font-size:.98rem;
+  }
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep)}
+  .micro{color:var(--slate-2);font-size:.86rem;font-weight:500}
+
+  /* ---------- Nav ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:40;
+    background:rgba(248,247,255,.82);
+    backdrop-filter:saturate(140%) blur(12px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease, background .3s ease;
+  }
+  header.nav.scrolled{border-color:var(--line);background:rgba(248,247,255,.94)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--display);font-weight:800;font-size:1.28rem;letter-spacing:-.03em}
+  .brand .mark{width:34px;height:34px;flex:none}
+  .nav-links{display:none;gap:30px;align-items:center}
+  .nav-links a{color:var(--slate);font-weight:600;font-size:.95rem;transition:color .15s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .nav-cta .btn{padding:11px 20px;font-size:.94rem;border-radius:12px}
+  @media(min-width:900px){.nav-links{display:flex}}
+
+  /* ---------- Staircase spine background ---------- */
+  .stair-rule{display:block;width:100%;height:auto;color:var(--brand)}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:56px 0 40px;overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(80% 55% at 88% 6%, var(--brand-ghost) 0%, transparent 60%),
+      radial-gradient(70% 60% at 6% 40%, #F3EEFF 0%, transparent 55%);
+    pointer-events:none;
+  }
+  .hero-grid{position:relative;z-index:1;display:grid;gap:44px;grid-template-columns:1fr;align-items:center}
+  @media(min-width:960px){.hero-grid{grid-template-columns:1.02fr .98fr;gap:52px}}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:9px;
+    background:var(--card);border:1px solid var(--line);
+    padding:7px 14px 7px 9px;border-radius:100px;font-size:.83rem;font-weight:600;color:var(--slate);
+    box-shadow:var(--shadow-sm);margin-bottom:22px;
+  }
+  .hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
+  h1.hero-h{font-size:clamp(2.5rem,7.4vw,4.2rem);line-height:1.0}
+  h1.hero-h .grad{
+    color:var(--brand-deep);
+    position:relative;white-space:nowrap;
+  }
+  h1.hero-h .grad::after{
+    content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;
+    background:var(--brand-soft);z-index:-1;border-radius:3px;
+  }
+  .hero-sub{margin-top:22px;font-size:1.15rem;color:var(--slate);max-width:46ch}
+  .hero-actions{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+  .hero-microrow{margin-top:16px;display:flex;align-items:center;gap:9px;color:var(--slate-2);font-size:.88rem;font-weight:500}
+  .hero-microrow svg{color:var(--good);flex:none}
+
+  /* staggered load */
+  .rise{opacity:0;transform:translateY(16px);animation:rise .7s cubic-bezier(.2,.7,.25,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .d1{animation-delay:.05s}.d2{animation-delay:.14s}.d3{animation-delay:.23s}.d4{animation-delay:.32s}.d5{animation-delay:.42s}
+  @media(prefers-reduced-motion:reduce){.rise{animation:none;opacity:1;transform:none}}
+
+  /* ---------- Tutor demo card ---------- */
+  .demo{
+    position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--r-xl);box-shadow:var(--shadow-lg);padding:22px;
+  }
+  .demo-tab{
+    position:absolute;top:-15px;left:24px;
+    background:var(--ink);color:#fff;font-family:var(--display);font-weight:600;
+    font-size:.74rem;letter-spacing:.04em;padding:7px 14px;border-radius:100px;
+    display:inline-flex;align-items:center;gap:8px;box-shadow:var(--shadow-md);
+  }
+  .demo-tab .pulse{width:7px;height:7px;border-radius:50%;background:var(--brand);animation:pulse 1.8s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.4;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+  .q-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:16px 16px 18px;margin-top:10px}
+  .q-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--slate-2)}
+  .q-text{font-family:var(--display);font-weight:600;font-size:1.12rem;margin-top:7px;color:var(--ink);line-height:1.25}
+  .opts{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+  .opt{
+    flex:1 1 auto;min-width:78px;text-align:center;
+    background:var(--card);border:1.5px solid var(--line-2);border-radius:12px;
+    padding:11px 8px;font-family:var(--display);font-weight:600;font-size:1rem;color:var(--ink-2);
+    cursor:pointer;transition:all .15s ease;
+  }
+  .opt:hover:not(:disabled){border-color:var(--brand);background:var(--brand-ghost);transform:translateY(-1px)}
+  .opt:disabled{cursor:default;opacity:.55}
+  .opt.correct{border-color:var(--good);background:var(--good-soft);color:var(--good-deep);box-shadow:0 0 0 3px var(--good-ghost)}
+  .opt.wrong{border-color:#e7b4b4;background:#fbeeee;color:#b4494a}
+
+  .tutor{display:flex;gap:11px;align-items:flex-start;margin-top:16px}
+  .tutor-av{
+    width:38px;height:38px;flex:none;border-radius:12px;
+    background:linear-gradient(150deg,var(--warm),#D97706);
+    display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);
+  }
+  .tutor-bubble{
+    background:var(--warm-soft);border:1px solid #f2ddb4;border-radius:14px;border-top-left-radius:5px;
+    padding:12px 14px;font-size:.94rem;color:#7a5410;min-height:20px;flex:1;
+    transition:opacity .2s ease;
+  }
+  .tutor-bubble strong{color:#5f3f08}
+  .demo-controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+  .chip{
+    background:var(--card);border:1.5px solid var(--line-2);border-radius:100px;
+    padding:9px 15px;font-weight:600;font-size:.88rem;color:var(--slate);cursor:pointer;
+    transition:all .15s ease;font-family:var(--sans);
+  }
+  .chip:hover:not(:disabled){border-color:var(--warm);color:#8a6115;background:var(--warm-soft)}
+  .chip:disabled{opacity:.4;cursor:default}
+  .demo-foot{margin-top:14px;font-size:.78rem;color:var(--slate-2);display:flex;align-items:center;gap:7px}
+  .demo-foot svg{color:var(--brand);flex:none}
+  .demo-reset{background:none;border:0;color:var(--brand-deep);font-weight:600;font-size:.82rem;cursor:pointer;text-decoration:underline;font-family:var(--sans);padding:0}
+
+  /* ---------- Trust strip ---------- */
+  .trust{background:var(--ink);color:#eaf0f8;padding:34px 0}
+  .trust-grid{display:grid;gap:26px;grid-template-columns:1fr}
+  @media(min-width:860px){.trust-grid{grid-template-columns:1.1fr 1.4fr auto;align-items:center;gap:36px}}
+  .trust-lead{font-family:var(--display);font-weight:600;font-size:1.06rem;line-height:1.35;letter-spacing:-.01em}
+  .trust-lead .hl{color:#C4B5FD}
+  .trust-quote{border-left:2px solid rgba(34,197,94,.5);padding-left:18px}
+  .trust-quote p{font-size:.98rem;color:#d3dced;font-style:italic}
+  .trust-quote cite{display:block;margin-top:8px;font-style:normal;font-size:.82rem;color:#9fb0c8;font-weight:600}
+  .trust-chips{display:flex;flex-wrap:wrap;gap:10px}
+  .tchip{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:600;color:#bcccdf;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:8px 13px;border-radius:100px;white-space:nowrap}
+  .tchip svg{color:var(--good);flex:none}
+
+  /* ---------- Section shell ---------- */
+  section{position:relative}
+  .sec{padding:76px 0}
+  .sec-head{max-width:60ch}
+  .sec-head h2{font-size:clamp(1.9rem,4.4vw,2.8rem);margin-top:16px}
+  .sec-head p{margin-top:16px;color:var(--slate);font-size:1.08rem}
+
+  /* ---------- Problem ---------- */
+  .problem{background:linear-gradient(180deg,var(--paper),var(--paper-2))}
+  .problem-body{display:grid;gap:38px;grid-template-columns:1fr;align-items:center}
+  @media(min-width:920px){.problem-body{grid-template-columns:1.15fr .85fr;gap:56px}}
+  .problem-body h2{font-size:clamp(1.9rem,4.6vw,2.9rem)}
+  .problem-body .big{margin-top:20px;font-size:1.14rem;color:var(--ink-2);line-height:1.65}
+  .problem-body .big b{color:var(--brand-deep);font-weight:700}
+  .marks-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;box-shadow:var(--shadow-md)}
+  .marks-card h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-2);font-family:var(--sans);font-weight:700}
+  .bar-row{display:flex;align-items:center;gap:12px;margin-top:16px}
+  .bar-row .topic{width:104px;flex:none;font-size:.9rem;font-weight:600;color:var(--ink-2)}
+  .bar-track{flex:1;height:12px;background:var(--paper-2);border-radius:100px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:100px;background:var(--good);width:0;transition:width 1.1s cubic-bezier(.2,.7,.25,1)}
+  .bar-fill.warm{background:var(--warm)}
+  .bar-val{width:34px;flex:none;text-align:right;font-size:.84rem;font-weight:700;color:var(--slate)}
+  .marks-note{margin-top:18px;font-size:.86rem;color:var(--slate-2);display:flex;gap:8px;align-items:flex-start}
+  .marks-note svg{color:var(--brand);flex:none;margin-top:2px}
+
+  /* ---------- How it works (the staircase) ---------- */
+  .steps-wrap{margin-top:52px}
+  .stairs{display:flex;flex-direction:column;gap:20px}
+  .step{
+    position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--r-lg);padding:28px 26px;box-shadow:var(--shadow-md);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .step-num{
+    font-family:var(--display);font-weight:800;font-size:2.6rem;letter-spacing:-.04em;
+    color:var(--brand);line-height:1;
+  }
+  .step-tag{display:inline-block;margin-top:6px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--slate-2)}
+  .step h3{font-size:1.4rem;margin-top:14px}
+  .step p{margin-top:11px;color:var(--slate);font-size:1rem}
+  .step-ico{
+    position:absolute;top:26px;right:24px;width:46px;height:46px;border-radius:13px;
+    background:var(--brand-ghost);display:flex;align-items:center;justify-content:center;color:var(--brand-deep);
+  }
+  .step.warm .step-num{color:var(--warm)}
+  .step.warm .step-ico{background:var(--warm-soft);color:#b7791f}
+  .step-shot{margin-top:20px;display:flex;justify-content:center}
+  .step-shot .phone{width:100%;max-width:180px}
+
+  @media(min-width:900px){
+    .stairs{flex-direction:row;align-items:stretch;gap:22px}
+    .step{flex:1}
+    .step:nth-child(1){margin-top:86px}
+    .step:nth-child(2){margin-top:43px}
+    .step:nth-child(3){margin-top:0}
+    /* connective riser between climbing cards */
+    .step:not(:last-child)::after{
+      content:"";position:absolute;top:-43px;right:-22px;width:22px;height:43px;
+      border-left:2px dashed var(--line-2);border-top:2px dashed var(--line-2);
+      border-top-left-radius:8px;z-index:-1;
+    }
+  }
+  .stairs-cap{margin-top:30px;text-align:center;font-size:.94rem;color:var(--slate-2)}
+  .stairs-cap b{color:var(--brand-deep)}
+
+  /* ---------- What's inside ---------- */
+  .inside{background:var(--ink);color:#e8eef7}
+  .inside .eyebrow{color:#C4B5FD}
+  .inside .eyebrow .num{background:var(--brand);box-shadow:0 3px 0 var(--brand-deep)}
+  .inside .sec-head h2{color:#fff}
+  .inside .sec-head p{color:#a9b8cd}
+  .feat-grid{margin-top:48px;display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:640px){.feat-grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:980px){.feat-grid{grid-template-columns:repeat(3,1fr)}}
+  .feat{
+    background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);
+    border-radius:var(--r-md);padding:24px 22px;transition:background .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .feat:hover{background:rgba(255,255,255,.07);border-color:rgba(124,58,237,.4);transform:translateY(-3px)}
+  .feat-ico{width:44px;height:44px;border-radius:12px;background:rgba(124,58,237,.18);display:flex;align-items:center;justify-content:center;color:#C4B5FD;margin-bottom:16px}
+  .feat.star{border-color:rgba(124,58,237,.45);background:linear-gradient(160deg,rgba(124,58,237,.16),rgba(255,255,255,.03))}
+  .feat.star .feat-ico{background:var(--brand);color:#fff}
+  .feat h4{color:#fff;font-size:1.14rem}
+  .feat p{margin-top:9px;color:#a9b8cd;font-size:.95rem}
+  .feat .flag{display:inline-block;margin-bottom:12px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#052e12;background:var(--good);padding:4px 9px;border-radius:6px}
+
+  /* ---------- A look inside (screenshot gallery) ---------- */
+  .gallery{background:var(--paper)}
+  .gallery-grid{margin-top:48px;display:grid;gap:36px;grid-template-columns:1fr}
+  @media(min-width:860px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}}
+  .gallery-item{text-align:center}
+  .gallery-item .phone{max-width:230px;margin:0 auto}
+  .gallery-cap{margin-top:16px;font-size:.95rem;color:var(--slate);font-weight:500}
+
+  /* ---------- Phone frame (real screenshots) ---------- */
+  .phone{
+    display:block;background:var(--ink);border-radius:32px;
+    padding:9px;box-shadow:var(--shadow-lg);overflow:hidden;
+  }
+  .phone img{display:block;width:100%;border-radius:24px}
+
+  /* ---------- Parents ---------- */
+  .parents-grid{display:grid;gap:40px;grid-template-columns:1fr;align-items:center}
+  @media(min-width:920px){.parents-grid{grid-template-columns:.9fr 1.1fr;gap:56px}}
+  .parents-copy h2{font-size:clamp(1.9rem,4.4vw,2.7rem);margin-top:16px}
+  .parents-copy p{margin-top:16px;color:var(--slate);font-size:1.08rem}
+  .parents-list{margin-top:24px;list-style:none;padding:0;display:flex;flex-direction:column;gap:13px}
+  .parents-list li{display:flex;gap:12px;align-items:flex-start;font-size:1rem;color:var(--ink-2)}
+  .parents-list .tick{width:24px;height:24px;flex:none;border-radius:7px;background:var(--good-soft);color:var(--good-deep);display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .parents-shot{display:flex;justify-content:center}
+  .parents-shot .phone{width:100%;max-width:300px}
+
+  /* ---------- Testimonials ---------- */
+  .quotes{background:linear-gradient(180deg,var(--paper-2),var(--paper))}
+  .quote-grid{margin-top:46px;display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:760px){.quote-grid{grid-template-columns:repeat(3,1fr)}}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;box-shadow:var(--shadow-md);display:flex;flex-direction:column}
+  .stars{display:flex;gap:3px;color:var(--warm);margin-bottom:14px}
+  .quote p{font-size:1.02rem;color:var(--ink-2);line-height:1.55;flex:1}
+  .quote cite{display:flex;align-items:center;gap:11px;margin-top:20px;font-style:normal}
+  .q-av{width:38px;height:38px;flex:none;border-radius:50%;background:var(--brand-soft);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:.9rem}
+  .quote cite .meta b{display:block;font-family:var(--display);font-size:.9rem;color:var(--ink)}
+  .quote cite .meta span{font-size:.8rem;color:var(--slate-2)}
+
+  /* ---------- Founder ---------- */
+  .founder{padding:70px 0}
+  .founder-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);
+    box-shadow:var(--shadow-md);padding:44px 36px;position:relative;overflow:hidden;max-width:800px;margin:0 auto;
+  }
+  .founder-card::before{content:"";position:absolute;top:0;left:0;width:6px;height:100%;background:var(--brand)}
+  .founder-card .k{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-deep)}
+  .founder-card h3{font-size:clamp(1.5rem,3.4vw,2rem);margin-top:14px}
+  .founder-card p{margin-top:18px;color:var(--slate);font-size:1.08rem;line-height:1.65}
+  .founder-card p b{color:var(--ink-2);font-weight:600}
+
+  /* ---------- Pricing ---------- */
+  .pricing{background:linear-gradient(180deg,var(--paper),var(--paper-2))}
+  .anchor{margin:38px auto 0;max-width:660px;text-align:center;background:var(--card);border:1px dashed var(--line-2);border-radius:var(--r-md);padding:18px 22px;color:var(--slate);font-size:.98rem}
+  .anchor b{color:var(--ink);font-family:var(--display);font-weight:700}
+  .price-grid{margin-top:34px;display:grid;gap:20px;grid-template-columns:1fr;max-width:840px;margin-left:auto;margin-right:auto}
+  @media(min-width:760px){.price-grid{grid-template-columns:1fr 1fr}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:32px 28px;position:relative;display:flex;flex-direction:column}
+  .plan.feature{border:2px solid var(--brand);box-shadow:var(--shadow-lg)}
+  .plan-flag{position:absolute;top:-13px;left:28px;background:var(--brand);color:#fff;font-family:var(--display);font-weight:600;font-size:.78rem;padding:6px 14px;border-radius:100px;box-shadow:var(--shadow-sm)}
+  .plan h3{font-size:1.3rem}
+  .plan .price{font-family:var(--display);font-weight:800;font-size:2.7rem;letter-spacing:-.03em;margin-top:14px;color:var(--ink);line-height:1}
+  .plan .price small{font-size:1rem;font-weight:600;color:var(--slate-2);letter-spacing:0}
+  .plan .price-note{margin-top:6px;font-size:.88rem;color:var(--slate-2);font-weight:500}
+  .plan ul{list-style:none;padding:0;margin:22px 0 26px;display:flex;flex-direction:column;gap:12px}
+  .plan li{display:flex;gap:11px;align-items:flex-start;font-size:.98rem;color:var(--ink-2)}
+  .plan li .tick{width:22px;height:22px;flex:none;border-radius:6px;background:var(--good-soft);color:var(--good-deep);display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .plan .btn{width:100%;justify-content:center;margin-top:auto}
+  .plan.free .btn{background:transparent;color:var(--brand-deep);border:1.5px solid var(--brand);box-shadow:none}
+  .plan.free .btn:hover{background:var(--brand-ghost);transform:translateY(-2px)}
+  .fsm{margin:26px auto 0;max-width:660px;text-align:center;font-size:.96rem;color:var(--slate);display:flex;gap:9px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .fsm svg{color:var(--good);flex:none}
+  .fsm b{color:var(--ink)}
+
+  /* ---------- Safety line ---------- */
+  .safety{margin:34px auto 0;max-width:760px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .safety .s{display:inline-flex;align-items:center;gap:8px;font-size:.86rem;font-weight:600;color:var(--slate);background:var(--card);border:1px solid var(--line);padding:9px 15px;border-radius:100px}
+  .safety .s svg{color:var(--good);flex:none}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{margin-top:40px;max-width:780px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:12px}
+  details.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:4px 22px;transition:border-color .2s ease, box-shadow .2s ease}
+  details.faq[open]{border-color:var(--line-2);box-shadow:var(--shadow-sm)}
+  details.faq summary{list-style:none;cursor:pointer;padding:18px 0;font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:16px}
+  details.faq summary::-webkit-details-marker{display:none}
+  .faq .plus{width:26px;height:26px;flex:none;border-radius:8px;background:var(--brand-ghost);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;transition:transform .25s ease, background .2s ease;font-size:1.2rem;line-height:1}
+  details.faq[open] .plus{transform:rotate(45deg);background:var(--brand);color:#fff}
+  .faq-a{padding:0 0 20px;color:var(--slate);font-size:1rem;line-height:1.6;max-width:64ch}
+
+  /* ---------- Final CTA ---------- */
+  .final{position:relative;background:var(--ink);color:#fff;text-align:center;padding:88px 0;overflow:hidden}
+  .final::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 0%,rgba(124,58,237,.28),transparent 60%);pointer-events:none}
+  .final-in{position:relative;z-index:1;max-width:640px;margin:0 auto}
+  .final h2{font-size:clamp(2.1rem,5vw,3.1rem);color:#fff}
+  .final p{margin-top:18px;color:#b6c4d8;font-size:1.14rem}
+  .final .btn{margin-top:32px;font-size:1.1rem;padding:17px 32px}
+  .final .micro{margin-top:16px;color:#8ea0ba}
+  /* final staircase decoration */
+  .final-stairs{display:flex;justify-content:center;gap:6px;margin-bottom:28px}
+  .final-stairs i{display:block;width:34px;background:rgba(196,181,253,.22);border:1px solid rgba(196,181,253,.35);border-radius:6px}
+  .final-stairs i:nth-child(1){height:22px}
+  .final-stairs i:nth-child(2){height:38px}
+  .final-stairs i:nth-child(3){height:54px;background:rgba(34,197,94,.55);border-color:transparent}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:var(--ink);color:#93a3ba;padding:56px 0 34px;font-size:.92rem}
+  .foot-grid{display:grid;gap:32px;grid-template-columns:1fr}
+  @media(min-width:760px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr 1fr}}
+  .foot-brand .brand{color:#fff;margin-bottom:14px}
+  .foot-brand p{max-width:34ch;line-height:1.6}
+  .foot-col h5{color:#cdd8e8;font-family:var(--display);font-size:.94rem;font-weight:600;margin-bottom:14px}
+  .foot-col a{display:block;margin-bottom:10px;color:#93a3ba;transition:color .15s}
+  .foot-col a:hover{color:#fff}
+  .foot-bottom{margin-top:42px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font-size:.84rem;color:#6f819b}
+  .foot-safe{display:flex;flex-wrap:wrap;gap:8px}
+  .foot-safe span{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.04);padding:6px 12px;border-radius:100px;font-size:.78rem}
+  .foot-safe svg{color:var(--good)}
+
+  @media(max-width:560px){
+    .sec{padding:60px 0}
+    .hero{padding:36px 0 24px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="PrepStep home">
+      <svg class="mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <rect x="1" y="24" width="10" height="9" rx="2.5" fill="#3B82F6"/>
+        <rect x="12" y="15" width="10" height="18" rx="2.5" fill="#7C3AED"/>
+        <rect x="23" y="4" width="10" height="29" rx="2.5" fill="#22C55E"/>
+      </svg>
+      <span>PrepStep</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#inside">What's inside</a>
+      <a href="#parents">For parents</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#start">Start free</a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-badge rise d1"><span class="dot"></span> Built for the 11+ in the Bournemouth &amp; Poole area</div>
+      <h1 class="hero-h rise d2">11+ prep that <span class="grad">teaches</span> before it tests.</h1>
+      <p class="hero-sub rise d3">Every session starts with a short lesson, and a patient tutor is on hand to explain anything your child finds tricky.</p>
+      <div class="hero-actions rise d4">
+        <a class="btn btn-primary" href="#start">Start free, no card needed <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-microrow rise d4">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        Free to start. Cancel any time. No card to begin.
+      </div>
+    </div>
+
+    <!-- Interactive no-spoiler tutor demo -->
+    <div class="demo rise d5" id="demo" aria-label="A live example of the no-spoiler tutor">
+      <span class="demo-tab"><span class="pulse"></span> See the tutor in action</span>
+      <div class="q-card">
+        <div class="q-label">Maths · Percentages</div>
+        <div class="q-text">A jumper costs &pound;40. In a sale it is 25% off. What is the new price?</div>
+        <div class="opts" id="opts">
+          <button class="opt" data-i="0">&pound;10</button>
+          <button class="opt" data-i="1">&pound;30</button>
+          <button class="opt" data-i="2">&pound;35</button>
+        </div>
+      </div>
+      <div class="tutor">
+        <div class="tutor-av" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M9 13v2M15 13v2"/></svg>
+        </div>
+        <div class="tutor-bubble" id="bubble">Give it a go. Tap an answer when you are ready, or ask me for a hint.</div>
+      </div>
+      <div class="demo-controls">
+        <button class="chip" id="hintBtn">Ask for a hint</button>
+        <button class="chip" id="tellBtn">Just tell me the answer</button>
+        <button class="demo-reset" id="resetBtn" hidden>Try again</button>
+      </div>
+      <div class="demo-foot">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        No-spoiler rule: it nudges while your child is working, and explains once they commit.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-lead">Prep for the 11+ for grammar schools in the <span class="hl">Bournemouth and Poole area.</span></div>
+    <!-- [PLACEHOLDER - swap real quote] -->
+    <div class="trust-quote">
+      <p>"For the first time she is not scared of the questions she gets wrong. She actually wants to see why."</p>
+      <cite>Parent of a Year 5 pupil, Poole</cite>
+    </div>
+    <div class="trust-chips">
+      <span class="tchip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> No card to begin</span>
+      <span class="tchip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Cancel any time</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="sec problem">
+  <div class="wrap problem-body">
+    <div>
+      <span class="eyebrow"><span class="num">01</span> The idea</span>
+      <h2>The 11+ rewards knowing the patterns.</h2>
+      <p class="big">The questions fall into recurring types. Most children are strong at some of them and quietly lose a few marks on others. <b>The whole game is finding those soft spots early and turning them around</b>, calmly, one at a time. That is exactly what PrepStep is built to do.</p>
+    </div>
+    <div class="marks-card" id="marks">
+      <h4>Where the marks are going</h4>
+      <div class="bar-row"><span class="topic">Fractions</span><div class="bar-track"><div class="bar-fill" data-w="88"></div></div><span class="bar-val">88%</span></div>
+      <div class="bar-row"><span class="topic">Comprehension</span><div class="bar-track"><div class="bar-fill" data-w="81"></div></div><span class="bar-val">81%</span></div>
+      <div class="bar-row"><span class="topic">Ratio</span><div class="bar-track"><div class="bar-fill warm" data-w="54"></div></div><span class="bar-val">54%</span></div>
+      <div class="bar-row"><span class="topic">Letter codes</span><div class="bar-track"><div class="bar-fill warm" data-w="47"></div></div><span class="bar-val">47%</span></div>
+      <div class="marks-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+        PrepStep spots the two topics costing marks, and brings those questions back until they are secure.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS (STAIRCASE) ===================== -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="num">02</span> How it works</span>
+      <h2>Three steps, and each one lifts the next.</h2>
+      <p>PrepStep climbs in the same order a good tutor would: teach the method, practise it, then explain anything that did not land. That climb is where the name comes from.</p>
+    </div>
+
+    <div class="steps-wrap">
+      <div class="stairs">
+        <div class="step">
+          <div class="step-num">01</div>
+          <span class="step-tag">Teach</span>
+          <div class="step-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 9v5c0 1.5 3 3 6 3s6-1.5 6-3V9"/></svg>
+          </div>
+          <h3>A short lesson first</h3>
+          <p>Before every focused practice, your child learns the method in a couple of minutes. The lesson is built in and compulsory, so there is no cold testing.</p>
+          <div class="step-shot">
+            <div class="phone"><img src="shots/05-microlesson-hook.png" alt="PrepStep micro-lesson screen showing a common trap warning, a coloured fraction bar model, and a Talk to AI Tutor button" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <span class="step-tag">Practise</span>
+          <div class="step-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+          </div>
+          <h3>Then they practise it</h3>
+          <p>Questions in the same style, so the method sticks. PrepStep notices which topics are costing marks and brings those questions back until they are secure.</p>
+          <div class="step-shot">
+            <div class="phone"><img src="shots/06-quiz.png" alt="PrepStep quiz question on fractions with five multiple-choice options" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="step warm">
+          <div class="step-num">03</div>
+          <span class="step-tag">Understand</span>
+          <div class="step-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg>
+          </div>
+          <h3>A tutor explains it</h3>
+          <p>When something is tricky, the built-in tutor nudges your child to work it out, then explains the answer in plain words once they commit. It never just hands over the answer.</p>
+          <div class="step-shot">
+            <div class="phone"><img src="shots/07-quiz-tutor.png" alt="PrepStep AI Tutor panel coaching the method without giving away the answer" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+      <p class="stairs-cap">Teach, then practise, then understand. That is <b>one step at a time</b>, all the way up.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT'S INSIDE ===================== -->
+<section class="sec inside" id="inside">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="num">03</span> What's inside</span>
+      <h2>Everything a focused prep routine needs.</h2>
+      <p>Built around one belief: children do better when they understand the method before they are marked on it.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat star">
+        <span class="flag">The differentiator</span>
+        <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 9v5c0 1.5 3 3 6 3s6-1.5 6-3V9"/></svg></div>
+        <h4>A lesson before every quiz</h4>
+        <p>Focused practice always begins with a short, compulsory lesson that teaches the method. No cold starts.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h4>A no-spoiler tutor</h4>
+        <p>It will not give the answer while your child is still trying. It nudges them to work it out, then explains it plainly once they commit.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h4>Finds the weak spots</h4>
+        <p>PrepStep tracks marks topic by topic, spots where they are slipping, and brings those exact questions back until they stick.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h4>Timed mock tests</h4>
+        <p>Full papers under real time pressure, so exam day feels familiar rather than daunting.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h4>Thousands of questions</h4>
+        <p>A growing library across Maths, English and Verbal Reasoning, covering the question types the 11+ keeps coming back to.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <h4>Works in any browser</h4>
+        <p>Runs on the family iPad or a laptop, nothing to install. Sit together or let them get on with it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== A LOOK INSIDE (SCREENSHOT GALLERY) ===================== -->
+<section class="sec gallery" id="look-inside">
+  <div class="wrap">
+    <div class="sec-head" style="margin:0 auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center">A look inside</span>
+      <h2>The app your child will actually use.</h2>
+      <p style="margin-left:auto;margin-right:auto">No mockups here. Every screen below is the real app, exactly as your child will see it.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <div class="phone"><img src="shots/01-home.png" alt="PrepStep child home screen showing subject mastery bars for Maths, English and Verbal Reasoning, a streak, and what to practise next" loading="lazy"></div>
+        <p class="gallery-cap">Their daily home, and what to practise next</p>
+      </div>
+      <div class="gallery-item">
+        <div class="phone"><img src="shots/02-progress-journey.png" alt="PrepStep child progress screen showing level, prep points, per-topic star accuracy and recent activity" loading="lazy"></div>
+        <p class="gallery-cap">Progress they can see building</p>
+      </div>
+      <div class="gallery-item">
+        <div class="phone"><img src="shots/04-mistakes.png" alt="PrepStep My Mistakes list showing real questions with practise buttons" loading="lazy"></div>
+        <p class="gallery-cap">Mistakes turned into practice</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOR PARENTS ===================== -->
+<section class="sec" id="parents">
+  <div class="wrap parents-grid">
+    <div class="parents-copy">
+      <span class="eyebrow"><span class="num">04</span> For parents</span>
+      <h2>See how it is going, without hovering.</h2>
+      <p>A parent dashboard shows strengths and gaps topic by topic, so you always know where the marks are going and where a little focus will help most.</p>
+      <ul class="parents-list">
+        <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Strengths and gaps, laid out clearly by topic</li>
+        <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Which topics are secure, and which need another look</li>
+        <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> A calm overview, so you can support without looking over shoulders</li>
+      </ul>
+    </div>
+
+    <div class="parents-shot">
+      <div class="phone">
+        <img src="shots/03-parent-readiness.png" alt="PrepStep parent view showing exam-readiness by subject and a plain-English next-step summary" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="sec quotes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="num">05</span> From parents</span>
+      <h2>The relief of watching it click.</h2>
+    </div>
+    <div class="quote-grid">
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <figure class="quote">
+        <div class="stars" aria-label="Five stars">★★★★★</div>
+        <p>"The lesson first made all the difference. He stopped guessing and started actually working things out. I wish we had found it sooner."</p>
+        <cite><span class="q-av">A</span><span class="meta"><b>Anna</b><span>Parent of a Year 5 pupil, Poole</span></span></cite>
+      </figure>
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <figure class="quote">
+        <div class="stars" aria-label="Five stars">★★★★★</div>
+        <p>"I could finally see where she was losing marks instead of guessing. The dashboard took the worry out of it for me."</p>
+        <cite><span class="q-av">J</span><span class="meta"><b>James</b><span>Parent of a Year 4 pupil, Bournemouth</span></span></cite>
+      </figure>
+      <!-- [PLACEHOLDER - swap real quote] -->
+      <figure class="quote">
+        <div class="stars" aria-label="Five stars">★★★★★</div>
+        <p>"What won me over is that the tutor never just gives the answer. He has to think, and then it explains it in words he understands."</p>
+        <cite><span class="q-av">S</span><span class="meta"><b>Sarah</b><span>Parent of a Year 5 pupil, Christchurch</span></span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOUNDER ===================== -->
+<section class="founder">
+  <div class="wrap">
+    <div class="founder-card">
+      <span class="k">Why we built PrepStep</span>
+      <h3>We kept seeing the same gap, so we closed it.</h3>
+      <p>PrepStep was built by a parent who has been through the 11+ and studied the exams closely. The same thing kept showing up: <b>the questions fall into recurring patterns</b>, every child is strong at some and quietly losing marks on others, and the whole game is finding those weak spots and turning them around, with someone on hand to explain the wrong answers. We built PrepStep to close that gap, properly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section class="sec pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head" style="margin:0 auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center"><span class="num">06</span> Pricing</span>
+      <h2>Start free. Pay only if it helps.</h2>
+      <p style="margin-left:auto;margin-right:auto">No card to begin, and you can cancel any time.</p>
+    </div>
+
+    <div class="anchor">
+      A private tutor is typically <b>&pound;30 to &pound;40 an hour</b>. Atom is around <b>&pound;69.99 a month</b>. PrepStep is <b>&pound;24.99 a month</b>, or <b>&pound;199 for the year</b>.
+    </div>
+
+    <div class="price-grid">
+      <div class="plan free">
+        <h3>Free</h3>
+        <div class="price">&pound;0 <small>to start</small></div>
+        <div class="price-note">No card needed</div>
+        <ul>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Try the teach-then-test approach</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Lessons, practice and the no-spoiler tutor</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> See how your child gets on before you pay</li>
+        </ul>
+        <a class="btn" href="#start">Start free, no card needed</a>
+      </div>
+
+      <div class="plan feature">
+        <span class="plan-flag">Best value</span>
+        <h3>Full access</h3>
+        <div class="price">&pound;199 <small>/ year</small></div>
+        <div class="price-note">or &pound;24.99 a month · cancel any time</div>
+        <ul>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Everything in Free, unlimited</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Full timed mock tests</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> The whole growing question library</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> The full parent dashboard</li>
+        </ul>
+        <a class="btn btn-primary" href="#start">Start free, no card needed</a>
+      </div>
+    </div>
+
+    <div class="fsm">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-8 11-8 11z"/></svg>
+      <span><b>Free for families on Free School Meals or Pupil Premium.</b> Just ask, and we will sort it.</span>
+    </div>
+
+    <div class="safety">
+      <span class="s"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> UK GDPR compliant</span>
+      <span class="s"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M5 5l14 14"/></svg> No ads, ever</span>
+      <span class="s"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> A safe tutor built for children</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head" style="margin:0 auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center"><span class="num">07</span> Questions</span>
+      <h2>The things parents ask first.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq" open>
+        <summary>Do I need a card to start? <span class="plus" aria-hidden="true">+</span></summary>
+        <div class="faq-a">No. You can start free with no card at all, and see how your child gets on before deciding whether to pay.</div>
+      </details>
+      <details class="faq">
+        <summary>What ages is it for? <span class="plus" aria-hidden="true">+</span></summary>
+        <div class="faq-a">Children preparing for the 11+, typically in Year 4 and Year 5 (around ages 9 to 10).</div>
+      </details>
+      <details class="faq">
+        <summary>Which schools is it for? <span class="plus" aria-hidden="true">+</span></summary>
+        <div class="faq-a">The 11+ for grammar schools in the Bournemouth and Poole area. The content is built around the question types those exams keep returning to.</div>
+      </details>
+      <details class="faq">
+        <summary>Does the tutor just give the answer? <span class="plus" aria-hidden="true">+</span></summary>
+        <div class="faq-a">No, and that is the point. While your child is still working, it nudges them towards the method. It only explains the answer, in plain words, once they have committed to one.</div>
+      </details>
+      <details class="faq">
+        <summary>Is it safe for my child? <span class="plus" aria-hidden="true">+</span></summary>
+        <div class="faq-a">Yes. PrepStep is UK GDPR compliant, carries no ads, and the tutor is built for children: it stays on the lesson and will not wander off topic or hand over answers.</div>
+      </details>
+      <details class="faq">
+        <summary>Can I cancel any time? <span class="plus" aria-hidden="true">+</span></summary>
+        <div class="faq-a">Yes. There is no lock-in. You can cancel whenever you like, and there is no card needed to begin.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final" id="start">
+  <div class="wrap final-in">
+    <div class="final-stairs" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h2>Start where your child actually needs it.</h2>
+    <p>Teach first, practise the method, then explain anything that did not land. That is the climb, one step at a time.</p>
+    <a class="btn btn-primary" href="https://prepstep.co.uk">Start free, no card needed <span class="arrow" aria-hidden="true">→</span></a>
+    <div class="micro">Free to start. Cancel any time. No card to begin.</div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+            <rect x="1" y="24" width="10" height="9" rx="2.5" fill="#3B82F6"/>
+            <rect x="12" y="15" width="10" height="18" rx="2.5" fill="#7C3AED"/>
+            <rect x="23" y="4" width="10" height="29" rx="2.5" fill="#22C55E"/>
+          </svg>
+          <span>PrepStep</span>
+        </div>
+        <p>11+ prep that teaches before it tests, for grammar schools in the Bournemouth and Poole area.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <a href="#how">How it works</a>
+        <a href="#inside">What's inside</a>
+        <a href="#parents">For parents</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="mailto:hello@prepstep.co.uk">hello@prepstep.co.uk</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://prepstep.co.uk">prepstep.co.uk</a>
+      </div>
+      <div class="foot-col">
+        <h5>Trust</h5>
+        <a href="#">Privacy policy</a>
+        <a href="#">Safeguarding</a>
+        <a href="#">Terms of service</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 PrepStep. Made in the UK.</span>
+      <div class="foot-safe">
+        <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> UK GDPR</span>
+        <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M5 5l14 14"/></svg> No ads</span>
+        <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Safe for children</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Nav shadow on scroll */
+  var nav = document.getElementById('nav');
+  var onScroll = function(){
+    if(window.scrollY > 8){ nav.classList.add('scrolled'); }
+    else{ nav.classList.remove('scrolled'); }
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- Interactive no-spoiler tutor demo ---------- */
+  var CORRECT = 1; // £30
+  var bubble = document.getElementById('bubble');
+  var opts = Array.prototype.slice.call(document.querySelectorAll('#opts .opt'));
+  var hintBtn = document.getElementById('hintBtn');
+  var tellBtn = document.getElementById('tellBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var committed = false;
+
+  function say(html){ bubble.style.opacity = 0; setTimeout(function(){ bubble.innerHTML = html; bubble.style.opacity = 1; }, 140); }
+
+  hintBtn.addEventListener('click', function(){
+    if(committed) return;
+    say("<strong>Here is a nudge.</strong> 25% off means you keep three quarters of the price. So, what is a quarter of &pound;40?");
+  });
+
+  tellBtn.addEventListener('click', function(){
+    if(committed) return;
+    say("<strong>Not while you are still working it out.</strong> Have a go first. Here is a nudge: 25% off means you keep three quarters of the price.");
+  });
+
+  opts.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(committed) return;
+      committed = true;
+      var i = parseInt(btn.getAttribute('data-i'), 10);
+      opts.forEach(function(b){ b.disabled = true; });
+      hintBtn.disabled = true; tellBtn.disabled = true;
+      resetBtn.hidden = false;
+
+      if(i === CORRECT){
+        btn.classList.add('correct');
+        say("<strong>That is it, &pound;30.</strong> A quarter of &pound;40 is &pound;10, so 25% off takes &pound;10 away. Keep three quarters and you keep &pound;30. Nicely worked out.");
+      } else {
+        btn.classList.add('wrong');
+        opts[CORRECT].classList.add('correct');
+        say("<strong>Good try. The answer is &pound;30.</strong> A quarter of &pound;40 is &pound;10, so 25% off takes &pound;10 away, leaving &pound;30. Now you have seen it, the next one will feel easier.");
+      }
+    });
+  });
+
+  resetBtn.addEventListener('click', function(){
+    committed = false;
+    opts.forEach(function(b){ b.disabled = false; b.classList.remove('correct','wrong'); });
+    hintBtn.disabled = false; tellBtn.disabled = false;
+    resetBtn.hidden = true;
+    say("Give it a go. Tap an answer when you are ready, or ask me for a hint.");
+  });
+
+  /* ---------- Reveal-on-scroll for progress bars ---------- */
+  function fillBars(container){
+    container.querySelectorAll('.bar-fill').forEach(function(el){
+      el.style.width = el.getAttribute('data-w') + '%';
+    });
+  }
+  var marks = document.getElementById('marks');
+  if('IntersectionObserver' in window && marks){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ fillBars(marks); io.disconnect(); } });
+    }, {threshold:.4});
+    io.observe(marks);
+  } else if(marks){
+    fillBars(marks);
+  }
+
+  /* ---------- Smooth anchor focus for accessibility ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length > 1){
+        var t = document.querySelector(id);
+        if(t){ /* native smooth scroll via CSS handles motion */ }
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -323,6 +323,30 @@ breakpoint, and a cold-parent read-through at the end.
 
 ---
 
+## 12b. Design chosen (9 Jul, post-arena)
+
+Ran a 4-way arena of full HTML landing mockups (design-mockups/landing/):
+A editorial (Opus), B warm (Opus), C product-led (Opus), D "exercise book" (Fable).
+- **Ben chose C by a distance.** Build BASE = C (its structure + live interactive
+  no-spoiler tutor demo + conversion flow are the hardest-won parts).
+- **Re-skin C into the REAL app brand**, NOT C's navy/teal: app brand is violet
+  `#7C3AED` primary + green `#22C55E` success, real logo + real fonts. Keep D's
+  compatible ideas (paper warmth, the green marking tick maps onto the app's real
+  green "correct/mastered" signal). Graft B's "calmer household" testimonial
+  framing and a touch of A's headline typographic craft.
+- **HARD RULE (Ben): the final page must be based on what the app ACTUALLY is
+  and does** (real brand tokens, real logo, real screens, real flows). Mockups
+  had invented details/errors; the real build must not. Ground truth is being
+  extracted to `plans/landing-brand-truth.md` before building.
+- **Product imagery — LOCKED (Ben, 9 Jul):** use REAL SCREENSHOTS of the app
+  (static images of actual screens), NOT a live embedded app for visitors to use.
+  Capture by running the app locally (dev-auth to skip Clerk) and screenshotting
+  real screens; run a little sample practice first so progress screens (dashboard,
+  mastery, mistakes) show populated data, not empty states. PLUS one bespoke,
+  purpose-built INTERACTIVE tutor demo on the page (scripted, matching the real
+  tutor's no-spoiler behaviour + styling) so a parent can feel it, without
+  embedding the live app.
+
 ## 13. Recommended build sequence
 
 1. Fix the stale numbers in `SubscribeScreen.js` (prep hygiene, low risk).
