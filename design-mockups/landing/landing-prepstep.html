@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PrepStep | 11+ prep that teaches before it tests</title>
-<meta name="description" content="PrepStep is 11+ prep for children in the Bournemouth and Poole area. Every session starts with a short lesson, and a patient tutor explains anything your child finds tricky. Free to start, no card needed.">
+<meta name="description" content="PrepStep is 11+ preparation that teaches before it tests. Every session starts with a short lesson, and a patient tutor explains anything your child finds tricky. Full access free for 30 days, no card needed.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -158,44 +158,50 @@
   }
   .demo-tab .pulse{width:7px;height:7px;border-radius:50%;background:var(--brand);animation:pulse 1.8s ease-in-out infinite}
   @keyframes pulse{0%,100%{opacity:.4;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
-  .q-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:16px 16px 18px;margin-top:10px}
-  .q-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--slate-2)}
-  .q-text{font-family:var(--display);font-weight:600;font-size:1.12rem;margin-top:7px;color:var(--ink);line-height:1.25}
-  .opts{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
-  .opt{
-    flex:1 1 auto;min-width:78px;text-align:center;
-    background:var(--card);border:1.5px solid var(--line-2);border-radius:12px;
-    padding:11px 8px;font-family:var(--display);font-weight:600;font-size:1rem;color:var(--ink-2);
-    cursor:pointer;transition:all .15s ease;
-  }
-  .opt:hover:not(:disabled){border-color:var(--brand);background:var(--brand-ghost);transform:translateY(-1px)}
-  .opt:disabled{cursor:default;opacity:.55}
-  .opt.correct{border-color:var(--good);background:var(--good-soft);color:var(--good-deep);box-shadow:0 0 0 3px var(--good-ghost)}
-  .opt.wrong{border-color:#e7b4b4;background:#fbeeee;color:#b4494a}
+  /* chat header */
+  .chat-head{display:flex;align-items:center;gap:10px;margin-top:14px}
+  .chat-head .tutor-av{width:36px;height:36px;flex:none;border-radius:11px;background:linear-gradient(150deg,var(--warm),#D97706);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm)}
+  .chat-head .who{font-family:var(--display);font-weight:700;font-size:.98rem;color:var(--ink);line-height:1.2}
+  .chat-head .who span{display:block;font-family:var(--sans);font-weight:500;font-size:.77rem;color:var(--slate-2);letter-spacing:0}
 
-  .tutor{display:flex;gap:11px;align-items:flex-start;margin-top:16px}
-  .tutor-av{
-    width:38px;height:38px;flex:none;border-radius:12px;
-    background:linear-gradient(150deg,var(--warm),#D97706);
-    display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);
+  /* chat thread */
+  .chat{
+    margin-top:12px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:14px;height:286px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;
   }
-  .tutor-bubble{
-    background:var(--warm-soft);border:1px solid #f2ddb4;border-radius:14px;border-top-left-radius:5px;
-    padding:12px 14px;font-size:.94rem;color:#7a5410;min-height:20px;flex:1;
-    transition:opacity .2s ease;
+  .chat::-webkit-scrollbar{width:6px}
+  .chat::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:100px}
+  .msg{
+    max-width:88%;font-size:.92rem;line-height:1.42;padding:11px 13px;border-radius:16px;
+    opacity:0;transform:translateY(6px);animation:pop .3s cubic-bezier(.2,.7,.25,1) forwards;
   }
-  .tutor-bubble strong{color:#5f3f08}
-  .demo-controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
-  .chip{
+  @keyframes pop{to{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){.msg,.choice{animation:none;opacity:1;transform:none}}
+  .msg.tutor{align-self:flex-start;background:var(--warm-soft);border:1px solid #f2ddb4;color:#7a5410;border-bottom-left-radius:5px}
+  .msg.tutor b{color:#5f3f08}
+  .msg.child{align-self:flex-end;background:var(--brand);color:#fff;border-bottom-right-radius:5px}
+  .msg.typing{padding:13px 15px}
+  .typing-dots{display:inline-flex;gap:4px}
+  .typing-dots i{width:6px;height:6px;border-radius:50%;background:#c9a24a;display:inline-block;animation:blink 1.2s infinite}
+  .typing-dots i:nth-child(2){animation-delay:.2s}.typing-dots i:nth-child(3){animation-delay:.4s}
+  @keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
+
+  /* reply chips (what the child taps) */
+  .choices{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;min-height:42px}
+  .choice{
     background:var(--card);border:1.5px solid var(--line-2);border-radius:100px;
-    padding:9px 15px;font-weight:600;font-size:.88rem;color:var(--slate);cursor:pointer;
-    transition:all .15s ease;font-family:var(--sans);
+    padding:9px 15px;font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--ink-2);cursor:pointer;
+    transition:border-color .15s ease, background .15s ease, color .15s ease, transform .15s ease;
+    opacity:0;animation:pop .28s ease forwards;
   }
-  .chip:hover:not(:disabled){border-color:var(--warm);color:#8a6115;background:var(--warm-soft)}
-  .chip:disabled{opacity:.4;cursor:default}
-  .demo-foot{margin-top:14px;font-size:.78rem;color:var(--slate-2);display:flex;align-items:center;gap:7px}
-  .demo-foot svg{color:var(--brand);flex:none}
-  .demo-reset{background:none;border:0;color:var(--brand-deep);font-weight:600;font-size:.82rem;cursor:pointer;text-decoration:underline;font-family:var(--sans);padding:0}
+  .choice:hover{border-color:var(--brand);background:var(--brand-ghost);color:var(--brand-deep);transform:translateY(-1px)}
+  .choice.tell{border-color:#e6c68a;color:#8a6115}
+  .choice.tell:hover{background:var(--warm-soft);border-color:var(--warm);color:#7a5410}
+  .choice.reset{border-style:dashed;color:var(--brand-deep)}
+  .choice.next{background:var(--brand);border-color:var(--brand);color:#fff}
+  .choice.next:hover{background:var(--brand-deep);border-color:var(--brand-deep);color:#fff}
+  .demo-foot{margin-top:14px;padding-top:13px;border-top:1px solid var(--line);font-size:.78rem;color:var(--slate-2);display:flex;align-items:flex-start;gap:7px}
+  .demo-foot svg{color:var(--brand);flex:none;margin-top:1px}
 
   /* ---------- Trust strip ---------- */
   .trust{background:var(--ink);color:#eaf0f8;padding:34px 0}
@@ -221,7 +227,7 @@
   .problem{background:linear-gradient(180deg,var(--paper),var(--paper-2))}
   .problem-body{display:grid;gap:38px;grid-template-columns:1fr;align-items:center}
   @media(min-width:920px){.problem-body{grid-template-columns:1.15fr .85fr;gap:56px}}
-  .problem-body h2{font-size:clamp(1.9rem,4.6vw,2.9rem)}
+  .problem-body h2{font-size:clamp(1.9rem,4.6vw,2.9rem);margin-top:16px}
   .problem-body .big{margin-top:20px;font-size:1.14rem;color:var(--ink-2);line-height:1.65}
   .problem-body .big b{color:var(--brand-deep);font-weight:700}
   .marks-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;box-shadow:var(--shadow-md)}
@@ -273,6 +279,13 @@
       border-top-left-radius:8px;z-index:-1;
     }
   }
+  @media(max-width:899px){
+    /* keep the climb visible on phones: a short dashed riser between stacked cards */
+    .step:not(:last-child)::after{
+      content:"";position:absolute;left:50%;bottom:-21px;transform:translateX(-50%);
+      width:2px;height:20px;border-left:2px dashed var(--line-2);z-index:0;
+    }
+  }
   .stairs-cap{margin-top:30px;text-align:center;font-size:.94rem;color:var(--slate-2)}
   .stairs-cap b{color:var(--brand-deep)}
 
@@ -303,6 +316,8 @@
   @media(min-width:860px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}}
   .gallery-item{text-align:center}
   .gallery-item .phone{max-width:230px;margin:0 auto}
+  /* uniform phone-fold tiles regardless of source screenshot height */
+  .gallery-item .phone img{aspect-ratio:9/16;object-fit:cover;object-position:top}
   .gallery-cap{margin-top:16px;font-size:.95rem;color:var(--slate);font-weight:500}
 
   /* ---------- Phone frame (real screenshots) ---------- */
@@ -313,15 +328,23 @@
   .phone img{display:block;width:100%;border-radius:24px}
 
   /* ---------- Parents ---------- */
-  .parents-grid{display:grid;gap:40px;grid-template-columns:1fr;align-items:center}
-  @media(min-width:920px){.parents-grid{grid-template-columns:.9fr 1.1fr;gap:56px}}
-  .parents-copy h2{font-size:clamp(1.9rem,4.4vw,2.7rem);margin-top:16px}
-  .parents-copy p{margin-top:16px;color:var(--slate);font-size:1.08rem}
-  .parents-list{margin-top:24px;list-style:none;padding:0;display:flex;flex-direction:column;gap:13px}
-  .parents-list li{display:flex;gap:12px;align-items:flex-start;font-size:1rem;color:var(--ink-2)}
-  .parents-list .tick{width:24px;height:24px;flex:none;border-radius:7px;background:var(--good-soft);color:var(--good-deep);display:flex;align-items:center;justify-content:center;margin-top:1px}
-  .parents-shot{display:flex;justify-content:center}
-  .parents-shot .phone{width:100%;max-width:300px}
+  .p-carousel-wrap{margin-top:44px;position:relative}
+  .p-carousel{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:6px 2px 4px;align-items:flex-start;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .p-carousel::-webkit-scrollbar{display:none}
+  .p-slide{flex:0 0 auto;width:min(342px,82vw);scroll-snap-align:center;margin:0;text-align:center}
+  .p-slide figcaption{margin-top:15px;font-size:.96rem;color:var(--slate);font-weight:500;max-width:30ch;margin-left:auto;margin-right:auto}
+  .p-arrow{position:absolute;top:40%;transform:translateY(-50%);z-index:5;width:46px;height:46px;border-radius:50%;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow-md);color:var(--ink);cursor:pointer;display:none;align-items:center;justify-content:center;transition:color .15s,border-color .15s,transform .15s}
+  .p-arrow:hover{color:var(--brand-deep);border-color:var(--brand);transform:translateY(-50%) scale(1.06)}
+  .p-arrow.prev{left:-8px}.p-arrow.next{right:-8px}
+  @media(min-width:820px){.p-arrow{display:flex}}
+  .p-dots{display:flex;gap:9px;justify-content:center;margin-top:24px}
+  .p-dot{width:9px;height:9px;border-radius:50%;background:var(--line-2);border:0;cursor:pointer;padding:0;transition:background .2s ease,width .2s ease}
+  .p-dot.active{background:var(--brand);width:26px;border-radius:100px}
+  .panel-shot{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+  .panel-shot img{display:block;width:100%}
+  /* crop the empty app-background / extra rows so the two panels balance */
+  .panel-shot.tight img{aspect-ratio:750/735;object-fit:cover;object-position:top}
+  .panel-shot.tight-topics img{aspect-ratio:726/630;object-fit:cover;object-position:top}
 
   /* ---------- Testimonials ---------- */
   .quotes{background:linear-gradient(180deg,var(--paper-2),var(--paper))}
@@ -346,11 +369,29 @@
   .founder-card h3{font-size:clamp(1.5rem,3.4vw,2rem);margin-top:14px}
   .founder-card p{margin-top:18px;color:var(--slate);font-size:1.08rem;line-height:1.65}
   .founder-card p b{color:var(--ink-2);font-weight:600}
+  .founder-card .signoff{margin-top:20px;font-family:var(--display);font-weight:700;color:var(--ink);font-size:1.02rem}
+  .founder-card .signoff span{display:block;font-family:var(--sans);font-weight:500;font-size:.9rem;color:var(--slate-2);margin-top:2px}
 
   /* ---------- Pricing ---------- */
   .pricing{background:linear-gradient(180deg,var(--paper),var(--paper-2))}
-  .anchor{margin:38px auto 0;max-width:660px;text-align:center;background:var(--card);border:1px dashed var(--line-2);border-radius:var(--r-md);padding:18px 22px;color:var(--slate);font-size:.98rem}
+  .anchor{margin:26px auto 0;max-width:640px;text-align:center;background:var(--card);border:1px dashed var(--line-2);border-radius:var(--r-md);padding:16px 22px;color:var(--slate);font-size:.96rem}
   .anchor b{color:var(--ink);font-family:var(--display);font-weight:700}
+
+  /* three-state timeline (the 5-second no-brainer) */
+  .timeline{margin:40px auto 0;max-width:900px;display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:760px){.timeline{grid-template-columns:repeat(3,1fr);gap:26px}}
+  .tl-step{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:22px 20px;position:relative;box-shadow:var(--shadow-sm)}
+  .tl-ico{width:40px;height:40px;border-radius:11px;background:var(--brand-ghost);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .tl-step b{display:block;font-family:var(--display);font-size:1.06rem;color:var(--ink)}
+  .tl-step span{display:block;margin-top:6px;color:var(--slate);font-size:.94rem;line-height:1.5}
+  .tl-step:nth-child(2) .tl-ico{background:var(--warm-soft);color:#b7791f}
+  .tl-step:nth-child(3) .tl-ico{background:var(--good-soft);color:var(--good-deep)}
+  @media(min-width:760px){
+    .tl-step:not(:last-child)::after{content:"";position:absolute;right:-16px;top:50%;transform:translateY(-50%);width:8px;height:8px;border-top:2px solid var(--line-2);border-right:2px solid var(--line-2);rotate:45deg}
+  }
+  .pricing-cta{margin-top:30px;text-align:center}
+  .pricing-cta .micro{margin-top:12px}
+  .plan .keeps{margin-top:18px;font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--slate-2)}
   .price-grid{margin-top:34px;display:grid;gap:20px;grid-template-columns:1fr;max-width:840px;margin-left:auto;margin-right:auto}
   @media(min-width:760px){.price-grid{grid-template-columns:1fr 1fr}}
   .plan{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:32px 28px;position:relative;display:flex;flex-direction:column}
@@ -394,11 +435,11 @@
   .final .btn{margin-top:32px;font-size:1.1rem;padding:17px 32px}
   .final .micro{margin-top:16px;color:#8ea0ba}
   /* final staircase decoration */
-  .final-stairs{display:flex;justify-content:center;gap:6px;margin-bottom:28px}
-  .final-stairs i{display:block;width:34px;background:rgba(196,181,253,.22);border:1px solid rgba(196,181,253,.35);border-radius:6px}
-  .final-stairs i:nth-child(1){height:22px}
-  .final-stairs i:nth-child(2){height:38px}
-  .final-stairs i:nth-child(3){height:54px;background:rgba(34,197,94,.55);border-color:transparent}
+  .final-stairs{display:flex;align-items:flex-end;justify-content:center;gap:6px;margin-bottom:28px}
+  .final-stairs i{display:block;width:34px;border-radius:6px}
+  .final-stairs i:nth-child(1){height:22px;background:#3B82F6}
+  .final-stairs i:nth-child(2){height:38px;background:#7C3AED}
+  .final-stairs i:nth-child(3){height:54px;background:#22C55E}
 
   /* ---------- Footer ---------- */
   footer.site{background:var(--ink);color:#93a3ba;padding:56px 0 34px;font-size:.92rem}
@@ -441,7 +482,7 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-primary" href="#start">Start free</a>
+      <a class="btn btn-primary" href="https://prepstep.co.uk">Start free</a>
     </div>
   </div>
 </header>
@@ -452,44 +493,31 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="hero-badge rise d1"><span class="dot"></span> Built for the 11+ in the Bournemouth &amp; Poole area</div>
-      <h1 class="hero-h rise d2">11+ prep that <span class="grad">teaches</span> before it tests.</h1>
-      <p class="hero-sub rise d3">Every session starts with a short lesson, and a patient tutor is on hand to explain anything your child finds tricky.</p>
+      <h1 class="hero-h rise d1">11+ prep that <span class="grad">teaches</span> before it tests.</h1>
+      <p class="hero-sub rise d3">Every session starts with a short lesson, so your child stops guessing and starts working things out, with a patient tutor on hand for anything tricky.</p>
       <div class="hero-actions rise d4">
-        <a class="btn btn-primary" href="#start">Start free, no card needed <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-primary" href="https://prepstep.co.uk">Start free <span class="arrow" aria-hidden="true">→</span></a>
       </div>
       <div class="hero-microrow rise d4">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        Free to start. Cancel any time. No card to begin.
+        Full access, free for 30 days. No card needed.
       </div>
     </div>
 
     <!-- Interactive no-spoiler tutor demo -->
     <div class="demo rise d5" id="demo" aria-label="A live example of the no-spoiler tutor">
-      <span class="demo-tab"><span class="pulse"></span> See the tutor in action</span>
-      <div class="q-card">
-        <div class="q-label">Maths · Percentages</div>
-        <div class="q-text">A jumper costs &pound;40. In a sale it is 25% off. What is the new price?</div>
-        <div class="opts" id="opts">
-          <button class="opt" data-i="0">&pound;10</button>
-          <button class="opt" data-i="1">&pound;30</button>
-          <button class="opt" data-i="2">&pound;35</button>
-        </div>
-      </div>
-      <div class="tutor">
+      <span class="demo-tab"><span class="pulse"></span> Watch: it won't just give the answer</span>
+      <div class="chat-head">
         <div class="tutor-av" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M9 13v2M15 13v2"/></svg>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M9 13v2M15 13v2"/></svg>
         </div>
-        <div class="tutor-bubble" id="bubble">Give it a go. Tap an answer when you are ready, or ask me for a hint.</div>
+        <div class="who">PrepStep Tutor <span>Here to help your child work it out</span></div>
       </div>
-      <div class="demo-controls">
-        <button class="chip" id="hintBtn">Ask for a hint</button>
-        <button class="chip" id="tellBtn">Just tell me the answer</button>
-        <button class="demo-reset" id="resetBtn" hidden>Try again</button>
-      </div>
+      <div class="chat" id="chat" role="log" aria-live="polite"></div>
+      <div class="choices" id="choices"></div>
       <div class="demo-foot">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        No-spoiler rule: it nudges while your child is working, and explains once they commit.
+        This is the real behaviour: the tutor coaches while your child is working, and never just hands over the answer.
       </div>
     </div>
   </div>
@@ -498,15 +526,15 @@
 <!-- ===================== TRUST STRIP ===================== -->
 <section class="trust">
   <div class="wrap trust-grid">
-    <div class="trust-lead">Prep for the 11+ for grammar schools in the <span class="hl">Bournemouth and Poole area.</span></div>
+    <div class="trust-lead">Children do their best work when they <span class="hl">understand the method first.</span> That is the whole idea behind PrepStep.</div>
     <!-- [PLACEHOLDER - swap real quote] -->
     <div class="trust-quote">
       <p>"For the first time she is not scared of the questions she gets wrong. She actually wants to see why."</p>
-      <cite>Parent of a Year 5 pupil, Poole</cite>
+      <cite>Parent of a Year 5 pupil</cite>
     </div>
     <div class="trust-chips">
-      <span class="tchip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> No card to begin</span>
-      <span class="tchip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Cancel any time</span>
+      <span class="tchip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> No ads, ever</span>
+      <span class="tchip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> A tutor built for children</span>
     </div>
   </div>
 </section>
@@ -517,7 +545,7 @@
     <div>
       <span class="eyebrow"><span class="num">01</span> The idea</span>
       <h2>The 11+ rewards knowing the patterns.</h2>
-      <p class="big">The questions fall into recurring types. Most children are strong at some of them and quietly lose a few marks on others. <b>The whole game is finding those soft spots early and turning them around</b>, calmly, one at a time. That is exactly what PrepStep is built to do.</p>
+      <p class="big">The 11+ asks the same handful of question types again and again. Most children are strong on some and quietly dropping marks on others, often before anyone has noticed which. <b>PrepStep finds the few weak spots early, and keeps practising them until they click</b>, one calm step at a time.</p>
     </div>
     <div class="marks-card" id="marks">
       <h4>Where the marks are going</h4>
@@ -568,7 +596,7 @@
             <div class="phone"><img src="shots/06-quiz.png" alt="PrepStep quiz question on fractions with five multiple-choice options" loading="lazy"></div>
           </div>
         </div>
-        <div class="step warm">
+        <div class="step">
           <div class="step-num">03</div>
           <span class="step-tag">Understand</span>
           <div class="step-ico" aria-hidden="true">
@@ -596,7 +624,6 @@
     </div>
     <div class="feat-grid">
       <div class="feat star">
-        <span class="flag">The differentiator</span>
         <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 9v5c0 1.5 3 3 6 3s6-1.5 6-3V9"/></svg></div>
         <h4>A lesson before every quiz</h4>
         <p>Focused practice always begins with a short, compulsory lesson that teaches the method. No cold starts.</p>
@@ -623,8 +650,8 @@
       </div>
       <div class="feat">
         <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
-        <h4>Works in any browser</h4>
-        <p>Runs on the family iPad or a laptop, nothing to install. Sit together or let them get on with it.</p>
+        <h4>Any device, any browser</h4>
+        <p>Runs on a phone, tablet or laptop, with nothing to download. Sit together, or let them get on with it.</p>
       </div>
     </div>
   </div>
@@ -635,8 +662,8 @@
   <div class="wrap">
     <div class="sec-head" style="margin:0 auto;text-align:center">
       <span class="eyebrow" style="justify-content:center">A look inside</span>
-      <h2>The app your child will actually use.</h2>
-      <p style="margin-left:auto;margin-right:auto">No mockups here. Every screen below is the real app, exactly as your child will see it.</p>
+      <h2>Your child always knows what to do next.</h2>
+      <p style="margin-left:auto;margin-right:auto">A clear next step, progress they can watch building, and every mistake turned into another go.</p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item">
@@ -657,22 +684,42 @@
 
 <!-- ===================== FOR PARENTS ===================== -->
 <section class="sec" id="parents">
-  <div class="wrap parents-grid">
-    <div class="parents-copy">
-      <span class="eyebrow"><span class="num">04</span> For parents</span>
+  <div class="wrap">
+    <div class="sec-head" style="margin:0 auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center"><span class="num">04</span> For parents</span>
       <h2>See how it is going, without hovering.</h2>
-      <p>A parent dashboard shows strengths and gaps topic by topic, so you always know where the marks are going and where a little focus will help most.</p>
-      <ul class="parents-list">
-        <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Strengths and gaps, laid out clearly by topic</li>
-        <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Which topics are secure, and which need another look</li>
-        <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> A calm overview, so you can support without looking over shoulders</li>
-      </ul>
+      <p style="margin-left:auto;margin-right:auto">The dashboard lays out every topic by strength, and names the exact few to focus on next. No guesswork about where the marks are going, and no looking over shoulders.</p>
     </div>
-
-    <div class="parents-shot">
-      <div class="phone">
-        <img src="shots/03-parent-readiness.png" alt="PrepStep parent view showing exam-readiness by subject and a plain-English next-step summary" loading="lazy">
+    <div class="p-carousel-wrap">
+      <button class="p-arrow prev" id="pPrev" aria-label="Previous panel"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="p-carousel" id="pCarousel">
+        <figure class="p-slide">
+          <div class="panel-shot"><img src="shots/p-headline.png" alt="PrepStep parent dashboard headline card reading Maya is making progress, here is how to improve, with a suggested focus and streak and question-count stats" loading="lazy"></div>
+          <figcaption>A plain-English read on how they are doing, and what to do next</figcaption>
+        </figure>
+        <figure class="p-slide">
+          <div class="panel-shot"><img src="shots/p-readiness.png" alt="PrepStep parent dashboard Exam Readiness panel showing a readiness band for Maths, English and Verbal Reasoning with topic coverage" loading="lazy"></div>
+          <figcaption>How ready they are in each subject, at a glance</figcaption>
+        </figure>
+        <figure class="p-slide">
+          <div class="panel-shot tight"><img src="shots/03b-parent-focus.png" alt="PrepStep parent dashboard Focus Areas panel naming the three topics that need the most attention: Word Class, Letter Codes and Long Multiplication, each with a star rating and accuracy" loading="lazy"></div>
+          <figcaption>The exact topics to focus on next, named for you</figcaption>
+        </figure>
+        <figure class="p-slide">
+          <div class="panel-shot tight-topics"><img src="shots/03-parent-topics.png" alt="PrepStep parent dashboard Topic Mastery panel showing every maths topic colour-coded by mastery level with stars and accuracy" loading="lazy"></div>
+          <figcaption>Every topic, colour-coded from mastered to needs work</figcaption>
+        </figure>
+        <figure class="p-slide">
+          <div class="panel-shot"><img src="shots/p-consistency.png" alt="PrepStep parent dashboard Practice Consistency heatmap showing practice days week by week with weekly and monthly totals" loading="lazy"></div>
+          <figcaption>The practice habit, building week by week</figcaption>
+        </figure>
+        <figure class="p-slide">
+          <div class="panel-shot"><img src="shots/p-speed-accuracy.png" alt="PrepStep parent dashboard Accuracy versus Speed chart plotting each maths topic by accuracy and pace against exam targets" loading="lazy"></div>
+          <figcaption>Accuracy and pace, topic by topic, against exam targets</figcaption>
+        </figure>
       </div>
+      <button class="p-arrow next" id="pNext" aria-label="Next panel"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      <div class="p-dots" id="pDots"></div>
     </div>
   </div>
 </section>
@@ -689,19 +736,19 @@
       <figure class="quote">
         <div class="stars" aria-label="Five stars">★★★★★</div>
         <p>"The lesson first made all the difference. He stopped guessing and started actually working things out. I wish we had found it sooner."</p>
-        <cite><span class="q-av">A</span><span class="meta"><b>Anna</b><span>Parent of a Year 5 pupil, Poole</span></span></cite>
+        <cite><span class="q-av">A</span><span class="meta"><b>Anna</b><span>Parent of a Year 5 pupil</span></span></cite>
       </figure>
       <!-- [PLACEHOLDER - swap real quote] -->
       <figure class="quote">
         <div class="stars" aria-label="Five stars">★★★★★</div>
         <p>"I could finally see where she was losing marks instead of guessing. The dashboard took the worry out of it for me."</p>
-        <cite><span class="q-av">J</span><span class="meta"><b>James</b><span>Parent of a Year 4 pupil, Bournemouth</span></span></cite>
+        <cite><span class="q-av">J</span><span class="meta"><b>James</b><span>Parent of a Year 4 pupil</span></span></cite>
       </figure>
       <!-- [PLACEHOLDER - swap real quote] -->
       <figure class="quote">
         <div class="stars" aria-label="Five stars">★★★★★</div>
         <p>"What won me over is that the tutor never just gives the answer. He has to think, and then it explains it in words he understands."</p>
-        <cite><span class="q-av">S</span><span class="meta"><b>Sarah</b><span>Parent of a Year 5 pupil, Christchurch</span></span></cite>
+        <cite><span class="q-av">S</span><span class="meta"><b>Sarah</b><span>Parent of a Year 5 pupil</span></span></cite>
       </figure>
     </div>
   </div>
@@ -713,7 +760,8 @@
     <div class="founder-card">
       <span class="k">Why we built PrepStep</span>
       <h3>We kept seeing the same gap, so we closed it.</h3>
-      <p>PrepStep was built by a parent who has been through the 11+ and studied the exams closely. The same thing kept showing up: <b>the questions fall into recurring patterns</b>, every child is strong at some and quietly losing marks on others, and the whole game is finding those weak spots and turning them around, with someone on hand to explain the wrong answers. We built PrepStep to close that gap, properly.</p>
+      <p>I have taken two children through the 11+, and spent a long time studying the papers along the way. The same thing kept surfacing: <b>the exams reward knowing the patterns</b>, every child has a few topics quietly costing them marks, and the quickest way forward is to catch those early and have someone patient explain the ones they get wrong. A good tutor does this beautifully, but they cost a fortune and they are gone by Tuesday. We built PrepStep to put that same teach-then-explain approach in every family's hands, for less than the cost of a single hour with a tutor.</p>
+      <p class="signoff">Ben<span>Founder, PrepStep</span></p>
     </div>
   </div>
 </section>
@@ -723,40 +771,64 @@
   <div class="wrap">
     <div class="sec-head" style="margin:0 auto;text-align:center">
       <span class="eyebrow" style="justify-content:center"><span class="num">06</span> Pricing</span>
-      <h2>Start free. Pay only if it helps.</h2>
-      <p style="margin-left:auto;margin-right:auto">No card to begin, and you can cancel any time.</p>
+      <h2>Full access, free for 30 days.</h2>
+      <p style="margin-left:auto;margin-right:auto">Every new account gets everything, free for a month. We never ask for a card, so nothing is charged when it ends. You simply keep going free, or upgrade if it is helping.</p>
     </div>
 
-    <div class="anchor">
-      A private tutor is typically <b>&pound;30 to &pound;40 an hour</b>. Atom is around <b>&pound;69.99 a month</b>. PrepStep is <b>&pound;24.99 a month</b>, or <b>&pound;199 for the year</b>.
+    <div class="timeline">
+      <div class="tl-step">
+        <div class="tl-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg></div>
+        <b>Today</b>
+        <span>Everything unlocked, free. No card needed to begin.</span>
+      </div>
+      <div class="tl-step">
+        <div class="tl-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <b>For 30 days</b>
+        <span>Lessons, the tutor, mock tests and the full parent dashboard. All of it.</span>
+      </div>
+      <div class="tl-step">
+        <div class="tl-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-8 11-8 11z"/></svg></div>
+        <b>After that</b>
+        <span>Keep everything for &pound;24.99 a month, or stay free with ten questions a day. You choose.</span>
+      </div>
+    </div>
+
+    <div class="pricing-cta">
+      <a class="btn btn-primary" href="https://prepstep.co.uk">Start free, no card needed <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="micro">Full access from day one. You are never charged automatically.</div>
     </div>
 
     <div class="price-grid">
       <div class="plan free">
-        <h3>Free</h3>
-        <div class="price">&pound;0 <small>to start</small></div>
-        <div class="price-note">No card needed</div>
+        <h3>Free Forever</h3>
+        <div class="price">&pound;0 <small>a month</small></div>
+        <div class="price-note">No card, no time limit</div>
+        <div class="keeps">What everyone keeps</div>
         <ul>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Try the teach-then-test approach</li>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Lessons, practice and the no-spoiler tutor</li>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> See how your child gets on before you pay</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> A fresh 10-question quiz, every day</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Streaks, progress and mistakes, all saved</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Never locked out, and never charged</li>
         </ul>
-        <a class="btn" href="#start">Start free, no card needed</a>
       </div>
 
       <div class="plan feature">
-        <span class="plan-flag">Best value</span>
-        <h3>Full access</h3>
-        <div class="price">&pound;199 <small>/ year</small></div>
-        <div class="price-note">or &pound;24.99 a month · cancel any time</div>
+        <span class="plan-flag">Recommended</span>
+        <h3>Full Access</h3>
+        <div class="price">&pound;24.99 <small>a month</small></div>
+        <div class="price-note">Cancel any time. Pay for the year instead and it drops to &pound;16.58 a month (&pound;199), saving you over &pound;100.</div>
+        <div class="keeps">Everything from your free month, kept for good</div>
         <ul>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Everything in Free, unlimited</li>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Full timed mock tests</li>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> The whole growing question library</li>
-          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> The full parent dashboard</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Unlimited practice across all three subjects</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> A short lesson before every focused quiz</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> The no-spoiler AI tutor on every question</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Timed mock tests, marked instantly</li>
+          <li><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> The full parent dashboard, topic by topic</li>
         </ul>
-        <a class="btn btn-primary" href="#start">Start free, no card needed</a>
       </div>
+    </div>
+
+    <div class="anchor">
+      For comparison: a private 11+ tutor is typically <b>&pound;30 to &pound;40 an hour</b>. Full access to PrepStep is <b>&pound;199 for the whole year</b>.
     </div>
 
     <div class="fsm">
@@ -782,7 +854,7 @@
     <div class="faq-list">
       <details class="faq" open>
         <summary>Do I need a card to start? <span class="plus" aria-hidden="true">+</span></summary>
-        <div class="faq-a">No. You can start free with no card at all, and see how your child gets on before deciding whether to pay.</div>
+        <div class="faq-a">No. Every new account gets full access free for 30 days with no card at all. Because we never take card details up front, nothing is charged when the trial ends. You simply move to the free plan, and can upgrade whenever it suits you.</div>
       </details>
       <details class="faq">
         <summary>What ages is it for? <span class="plus" aria-hidden="true">+</span></summary>
@@ -790,7 +862,7 @@
       </details>
       <details class="faq">
         <summary>Which schools is it for? <span class="plus" aria-hidden="true">+</span></summary>
-        <div class="faq-a">The 11+ for grammar schools in the Bournemouth and Poole area. The content is built around the question types those exams keep returning to.</div>
+        <div class="faq-a">Any child preparing for the 11+ for grammar or independent school entrance. The practice is built around the question types these exams keep coming back to, across Maths, English and Verbal Reasoning.</div>
       </details>
       <details class="faq">
         <summary>Does the tutor just give the answer? <span class="plus" aria-hidden="true">+</span></summary>
@@ -815,7 +887,6 @@
     <h2>Start where your child actually needs it.</h2>
     <p>Teach first, practise the method, then explain anything that did not land. That is the climb, one step at a time.</p>
     <a class="btn btn-primary" href="https://prepstep.co.uk">Start free, no card needed <span class="arrow" aria-hidden="true">→</span></a>
-    <div class="micro">Free to start. Cancel any time. No card to begin.</div>
   </div>
 </section>
 
@@ -832,7 +903,7 @@
           </svg>
           <span>PrepStep</span>
         </div>
-        <p>11+ prep that teaches before it tests, for grammar schools in the Bournemouth and Poole area.</p>
+        <p>11+ prep that teaches before it tests. Lessons, practice and a patient tutor, in one place.</p>
       </div>
       <div class="foot-col">
         <h5>Product</h5>
@@ -878,54 +949,217 @@
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
-  /* ---------- Interactive no-spoiler tutor demo ---------- */
-  var CORRECT = 1; // £30
-  var bubble = document.getElementById('bubble');
-  var opts = Array.prototype.slice.call(document.querySelectorAll('#opts .opt'));
-  var hintBtn = document.getElementById('hintBtn');
-  var tellBtn = document.getElementById('tellBtn');
-  var resetBtn = document.getElementById('resetBtn');
-  var committed = false;
+  /* ---------- Interactive no-spoiler tutor demo (guided chat) ---------- */
+  var chat = document.getElementById('chat');
+  var choicesEl = document.getElementById('choices');
 
-  function say(html){ bubble.style.opacity = 0; setTimeout(function(){ bubble.innerHTML = html; bubble.style.opacity = 1; }, 140); }
+  var NODES = {
+    start: {
+      tutor: [
+        "Here's one to try: a jumper costs <b>&pound;40</b>, and in a sale it's <b>25% off</b>. What's the new price?",
+        "Have a go, or ask me for help if you get stuck."
+      ],
+      choices: [
+        {label:"I think it's &pound;30", next:"correct"},
+        {label:"I think it's &pound;35", next:"wrong35"},
+        {label:"Give me a hint", next:"hint"},
+        {label:"Just tell me the answer", next:"refuse", cls:"tell"}
+      ]
+    },
+    refuse: {
+      tutor: [
+        "Nice try! I'm not going to just hand it over, that's how it stops sticking.",
+        "But I'll get you there. 25% off means you keep <b>three quarters</b> of the price. What's a quarter of &pound;40?"
+      ],
+      choices: [
+        {label:"A quarter of &pound;40 is &pound;10", next:"quarter"},
+        {label:"I'm not sure", next:"hint"},
+        {label:"Just tell me!", next:"refuse2", cls:"tell"}
+      ]
+    },
+    refuse2: {
+      tutor: ["Still not a chance, and you're closer than you think. A quarter of &pound;40 is <b>&pound;10</b>. Take that off, and what's left?"],
+      choices: [
+        {label:"&pound;30", next:"correct"},
+        {label:"&pound;35", next:"wrong35"}
+      ]
+    },
+    hint: {
+      tutor: ["Of course. Here's the trick: <b>25% is the same as a quarter.</b> So find a quarter of &pound;40, then take it off. What's a quarter of &pound;40?"],
+      choices: [
+        {label:"&pound;10", next:"quarter"},
+        {label:"&pound;4", next:"quarterWrong"}
+      ]
+    },
+    quarterWrong: {
+      tutor: ["Not quite. A quarter means splitting into four equal parts, and &pound;40 shared into 4 is &pound;10. So take &pound;10 off &pound;40. What's the new price?"],
+      choices: [
+        {label:"&pound;30", next:"correct"},
+        {label:"&pound;35", next:"wrong35"}
+      ]
+    },
+    quarter: {
+      tutor: ["Exactly. So 25% off takes that &pound;10 away. &pound;40 with &pound;10 off leaves...?"],
+      choices: [
+        {label:"&pound;30", next:"correct"},
+        {label:"&pound;35", next:"wrong35"}
+      ]
+    },
+    wrong35: {
+      tutor: ["Good try, and a really common one. &pound;35 is taking off &pound;5, but 25% of &pound;40 is <b>&pound;10</b>, not &pound;5. Take &pound;10 off instead. What do you get?"],
+      choices: [
+        {label:"&pound;30", next:"correct"}
+      ]
+    },
+    correct: {
+      tutor: [
+        "That's it, <b>&pound;30</b> &check;",
+        "A quarter of &pound;40 is &pound;10, so 25% off takes &pound;10 away and leaves &pound;30. And you worked it out yourself. That's the bit that sticks on exam day."
+      ],
+      choices: [ {label:"Next question &rarr;", next:"q2", cls:"next"} ]
+    },
 
-  hintBtn.addEventListener('click', function(){
-    if(committed) return;
-    say("<strong>Here is a nudge.</strong> 25% off means you keep three quarters of the price. So, what is a quarter of &pound;40?");
-  });
+    /* ---- Q2: sharing in a ratio (harder) ---- */
+    q2: {
+      fresh: true,
+      tutor: [
+        "Great. Let's step it up a bit.",
+        "Sophie and Jack share <b>&pound;48</b> in the ratio <b>3:5</b>. How much does <b>Jack</b> get?"
+      ],
+      choices: [
+        {label:"I think &pound;30", next:"q2correct"},
+        {label:"I think &pound;18", next:"q2wrong18"},
+        {label:"Give me a hint", next:"q2hint"}
+      ]
+    },
+    q2hint: {
+      tutor: ["Start by adding the ratio numbers: 3 + 5 = <b>8</b> equal parts. Share the money out: &pound;48 &divide; 8 = &pound;6 each. Jack has 5 parts, so what is 5 &times; &pound;6?"],
+      choices: [ {label:"&pound;30", next:"q2correct"}, {label:"&pound;18", next:"q2wrong18"} ]
+    },
+    q2wrong18: {
+      tutor: ["So close, but &pound;18 is <b>Sophie's</b> share, her 3 parts. Jack has the bigger number, 5 parts. Each part is &pound;6, so what do Jack's 5 parts come to?"],
+      choices: [ {label:"&pound;30", next:"q2correct"}, {label:"&pound;24", next:"q2wrong24"} ]
+    },
+    q2wrong24: {
+      tutor: ["Careful, &pound;24 would be splitting it equally, but 3:5 means Jack gets more than Sophie. Five parts at &pound;6 each is...?"],
+      choices: [ {label:"&pound;30", next:"q2correct"} ]
+    },
+    q2correct: {
+      tutor: [
+        "Exactly, <b>&pound;30</b> &check;",
+        "8 parts, &pound;6 each, and Jack's 5 parts make &pound;30. Sophie's 3 make &pound;18, and &pound;30 and &pound;18 together give &pound;48. It checks out. Lovely working."
+      ],
+      choices: [ {label:"One more &rarr;", next:"q3", cls:"next"} ]
+    },
 
-  tellBtn.addEventListener('click', function(){
-    if(committed) return;
-    say("<strong>Not while you are still working it out.</strong> Have a go first. Here is a nudge: 25% off means you keep three quarters of the price.");
-  });
+    /* ---- Q3: reverse percentage (hardest) ---- */
+    q3: {
+      fresh: true,
+      tutor: [
+        "Last one, and it's a proper brain-bender.",
+        "In a sale, a coat is reduced by <b>20%</b>. It now costs <b>&pound;60</b>. What was the <b>original</b> price?"
+      ],
+      choices: [
+        {label:"I think &pound;75", next:"q3correct"},
+        {label:"I think &pound;72", next:"q3wrong72"},
+        {label:"Give me a hint", next:"q3hint"}
+      ]
+    },
+    q3hint: {
+      tutor: ["Here's the clever bit: the &pound;60 already has the discount taken off, so &pound;60 is <b>80%</b> of the original, not 100%. Find 1%: &pound;60 &divide; 80 = &pound;0.75. So what is 100%?"],
+      choices: [ {label:"&pound;75", next:"q3correct"}, {label:"&pound;72", next:"q3wrong72"} ]
+    },
+    q3wrong72: {
+      tutor: ["I can see the thinking, but that's the classic trap. You took 20% of &pound;60 and added it on. The 20% came off the <b>original</b>, which was bigger than &pound;60. So if &pound;60 is 80% of the original, what is 100%?"],
+      choices: [ {label:"&pound;75", next:"q3correct"}, {label:"&pound;48", next:"q3wrong48"} ]
+    },
+    q3wrong48: {
+      tutor: ["Careful, that takes another 20% off. The &pound;60 is the price <b>after</b> the discount, so the original must be more than &pound;60. If &pound;60 is 80%, then 100% is...?"],
+      choices: [ {label:"&pound;75", next:"q3correct"} ]
+    },
+    q3correct: {
+      tutor: [
+        "Yes! <b>&pound;75</b> &check;",
+        "&pound;60 was 80% of the original, so 1% is &pound;0.75 and 100% is &pound;75. A quick check: 20% of &pound;75 is &pound;15, and taking that off leaves &pound;60. That's the trickiest percentage there is, and you got there."
+      ],
+      end: true
+    }
+  };
 
-  opts.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      if(committed) return;
-      committed = true;
-      var i = parseInt(btn.getAttribute('data-i'), 10);
-      opts.forEach(function(b){ b.disabled = true; });
-      hintBtn.disabled = true; tellBtn.disabled = true;
-      resetBtn.hidden = false;
+  var busy = false;
 
-      if(i === CORRECT){
-        btn.classList.add('correct');
-        say("<strong>That is it, &pound;30.</strong> A quarter of &pound;40 is &pound;10, so 25% off takes &pound;10 away. Keep three quarters and you keep &pound;30. Nicely worked out.");
-      } else {
-        btn.classList.add('wrong');
-        opts[CORRECT].classList.add('correct');
-        say("<strong>Good try. The answer is &pound;30.</strong> A quarter of &pound;40 is &pound;10, so 25% off takes &pound;10 away, leaving &pound;30. Now you have seen it, the next one will feel easier.");
-      }
+  function addMsg(who, html){
+    var d = document.createElement('div');
+    d.className = 'msg ' + who;
+    d.innerHTML = html;
+    chat.appendChild(d);
+    chat.scrollTop = chat.scrollHeight;
+    return d;
+  }
+
+  function showTyping(){
+    var t = document.createElement('div');
+    t.className = 'msg tutor typing';
+    t.innerHTML = '<span class="typing-dots"><i></i><i></i><i></i></span>';
+    chat.appendChild(t);
+    chat.scrollTop = chat.scrollHeight;
+    return t;
+  }
+
+  function renderChoices(list){
+    choicesEl.innerHTML = '';
+    list.forEach(function(c, idx){
+      var b = document.createElement('button');
+      b.className = 'choice' + (c.cls ? ' ' + c.cls : '');
+      b.style.animationDelay = (idx * 0.05) + 's';
+      b.innerHTML = c.label;
+      b.addEventListener('click', function(){ if(!busy) choose(c); });
+      choicesEl.appendChild(b);
     });
-  });
+  }
 
-  resetBtn.addEventListener('click', function(){
-    committed = false;
-    opts.forEach(function(b){ b.disabled = false; b.classList.remove('correct','wrong'); });
-    hintBtn.disabled = false; tellBtn.disabled = false;
-    resetBtn.hidden = true;
-    say("Give it a go. Tap an answer when you are ready, or ask me for a hint.");
-  });
+  function choose(c){
+    if(c.reset){ resetChat(); return; }
+    addMsg('child', c.label);
+    choicesEl.innerHTML = '';
+    goNode(c.next);
+  }
+
+  function goNode(id){
+    var node = NODES[id];
+    if(!node){ return; }
+    if(node.fresh){ chat.innerHTML = ''; }
+    busy = true;
+    var msgs = node.tutor.slice();
+    var i = 0;
+    (function step(){
+      if(i >= msgs.length){
+        busy = false;
+        if(node.end){
+          renderChoices([{label:"Try it again &circlearrowleft;", cls:"reset", reset:true}]);
+        } else {
+          renderChoices(node.choices);
+        }
+        return;
+      }
+      var typing = showTyping();
+      var delay = 460 + Math.min(msgs[i].replace(/<[^>]+>/g,'').length * 9, 680);
+      setTimeout(function(){
+        typing.parentNode && typing.parentNode.removeChild(typing);
+        addMsg('tutor', msgs[i]);
+        i++;
+        setTimeout(step, 240);
+      }, delay);
+    })();
+  }
+
+  function resetChat(){
+    chat.innerHTML = '';
+    choicesEl.innerHTML = '';
+    goNode('start');
+  }
+
+  if(chat && choicesEl){ goNode('start'); }
 
   /* ---------- Reveal-on-scroll for progress bars ---------- */
   function fillBars(container){
@@ -953,6 +1187,47 @@
       }
     });
   });
+
+  /* ---------- Parent dashboard carousel ---------- */
+  var pCar = document.getElementById('pCarousel');
+  if(pCar){
+    var pSlides = Array.prototype.slice.call(pCar.querySelectorAll('.p-slide'));
+    var pDotsEl = document.getElementById('pDots');
+    var pPaused = false;
+
+    pSlides.forEach(function(s, i){
+      var d = document.createElement('button');
+      d.className = 'p-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', 'Show panel ' + (i + 1));
+      d.addEventListener('click', function(){ pPaused = true; pGo(i); });
+      pDotsEl.appendChild(d);
+    });
+    var pDots = Array.prototype.slice.call(pDotsEl.children);
+
+    function pCurrent(){
+      var center = pCar.scrollLeft + pCar.clientWidth / 2, best = 0, bd = Infinity;
+      pSlides.forEach(function(s, i){
+        var c = s.offsetLeft + s.offsetWidth / 2, d = Math.abs(c - center);
+        if(d < bd){ bd = d; best = i; }
+      });
+      return best;
+    }
+    function pSetActive(i){ pDots.forEach(function(d, j){ d.classList.toggle('active', j === i); }); }
+    function pGo(i){
+      var s = pSlides[i];
+      pCar.scrollTo({ left: s.offsetLeft - (pCar.clientWidth - s.offsetWidth) / 2, behavior: 'smooth' });
+    }
+    pCar.addEventListener('scroll', function(){ pSetActive(pCurrent()); }, { passive: true });
+    document.getElementById('pPrev').addEventListener('click', function(){ pPaused = true; pGo(Math.max(0, pCurrent() - 1)); });
+    document.getElementById('pNext').addEventListener('click', function(){ pPaused = true; pGo(Math.min(pSlides.length - 1, pCurrent() + 1)); });
+
+    setInterval(function(){
+      if(pPaused) return;
+      var i = pCurrent();
+      pGo(i >= pSlides.length - 1 ? 0 : i + 1);
+    }, 5000);
+    ['mouseenter', 'touchstart'].forEach(function(ev){ pCar.addEventListener(ev, function(){ pPaused = true; }, { passive: true }); });
+  }
 })();
 </script>
 </body>
