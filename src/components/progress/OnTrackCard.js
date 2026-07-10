@@ -85,10 +85,10 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
     headline = `${firstName} needs to practise more regularly`;
     const dayText = daysLast2Weeks === 0 ? "hasn't practised in the last 2 weeks" :
       `has only practised ${daysLast2Weeks} day${daysLast2Weeks !== 1 ? 's' : ''} in the last 2 weeks`;
-    message = `${firstName} ${dayText}. Knowledge fades quickly without regular revision — ${decayedTopics.length > 0 ? `${decayedTopics.length} topic${decayedTopics.length !== 1 ? 's are' : ' is'} already losing mastery` : 'topics will start losing mastery soon'}. Getting back to 4-5 short sessions per week will make the biggest difference right now.`;
+    message = `${firstName} ${dayText}. Knowledge fades quickly without regular revision, and ${decayedTopics.length > 0 ? `${decayedTopics.length} topic${decayedTopics.length !== 1 ? 's are' : ' is'} already losing mastery` : 'topics will start losing mastery soon'}. Getting back to 4-5 short sessions per week will make the biggest difference right now.`;
     details = [
-      { icon: Flame, text: 'Consistency matters more than long sessions — little and often is key' },
-      { icon: Target, text: `Start with ${focusAreas[0] ? formatTopicKey(focusAreas[0].topicKey) : 'any topic'} — it needs attention most` },
+      { icon: Flame, text: 'Consistency matters more than long sessions. Little and often is key' },
+      { icon: Target, text: `Start with ${focusAreas[0] ? formatTopicKey(focusAreas[0].topicKey) : 'any topic'}, as it needs attention most` },
     ];
   } else {
     // Has data and is practising — evaluate quality
@@ -120,10 +120,10 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
         details.push({ icon: TrendingUp, text: `Strong in ${strongSubjects.map(s => subjectNames[s]).join(' and ')}` });
       }
       if (greatConsistency) {
-        details.push({ icon: Flame, text: `${daysLast2Weeks} practice days in the last 2 weeks — excellent consistency` });
+        details.push({ icon: Flame, text: `${daysLast2Weeks} practice days in the last 2 weeks, excellent consistency` });
       }
       if (avgSpeed && avgSpeed <= 60) {
-        details.push({ icon: Clock, text: `Averaging ${avgSpeed}s per question — good pace for the exam` });
+        details.push({ icon: Clock, text: `Averaging ${avgSpeed}s per question, good pace for the exam` });
       }
 
     } else {
@@ -140,7 +140,7 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
 
       // Check consistency
       if (!goodConsistency) {
-        issues.push(`needs more regular practice (${daysLast2Weeks} days in the last 2 weeks — aim for 8-10)`);
+        issues.push(`needs more regular practice (${daysLast2Weeks} days in the last 2 weeks, aim for 8-10)`);
         actionDetails.push({ icon: Flame, text: 'Increase practice to 4-5 days per week for best results' });
       }
 
@@ -148,7 +148,7 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
       if (weakestSubject && readiness[weakestSubject].score < readiness[subjects.find(s => s !== weakestSubject)].score - 15) {
         const strongOnes = subjects.filter(s => s !== weakestSubject && readiness[s].score > readiness[weakestSubject].score + 10);
         if (strongOnes.length > 0) {
-          issues.push(`${subjectNames[weakestSubject]} needs more attention — it's behind ${strongOnes.map(s => subjectNames[s]).join(' and ')}`);
+          issues.push(`${subjectNames[weakestSubject]} needs more attention, as it's behind ${strongOnes.map(s => subjectNames[s]).join(' and ')}`);
           actionDetails.push({ icon: Target, text: `Focus the next few sessions on ${subjectNames[weakestSubject]}` });
         }
       }
@@ -162,19 +162,19 @@ function OnTrackCard({ mastery, streaksAndPP, userData, currentUser }) {
 
       // Check decayed topics
       if (decayedTopics.length >= 3) {
-        actionDetails.push({ icon: Clock, text: `${decayedTopics.length} topics haven't been practised in 2+ weeks — knowledge may be fading` });
+        actionDetails.push({ icon: Clock, text: `${decayedTopics.length} topics haven't been practised in 2+ weeks, so knowledge may be fading` });
       }
 
       // Check speed
       if (speedSlow) {
-        actionDetails.push({ icon: Clock, text: `Averaging ${avgSpeed}s per question — working on speed will help in timed exams` });
+        actionDetails.push({ icon: Clock, text: `Averaging ${avgSpeed}s per question, so working on speed will help in timed exams` });
       }
 
       if (issues.length === 0) {
         issues.push('could improve with more focused practice on weaker areas');
       }
 
-      headline = `${firstName} is making progress — here's how to improve`;
+      headline = `${firstName} is making progress. Here's how to improve`;
       message = `${firstName} is doing well overall but ${issues.join(', and ')}. A few targeted changes will make a real difference.`;
       details = actionDetails.slice(0, 3);
     }

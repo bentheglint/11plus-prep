@@ -263,7 +263,7 @@ function SpeedAccuracyQuadrant({ questionResults }) {
         <h3 className="font-heading font-bold text-slate-800">Accuracy vs Speed</h3>
       </div>
       <p className="text-xs text-slate-500 mb-4">
-        How each topic compares on accuracy and speed against GL exam targets
+        How each topic compares on accuracy and speed against exam pace targets
       </p>
 
       <div className="space-y-6">
@@ -355,7 +355,7 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
           {/* Threshold labels */}
           <text x={threshX} y={pad.top - 8} textAnchor="middle"
             fontSize={11} fill="#9ca3af" fontWeight="600">
-            GL: {speedTarget}s
+            Target: {speedTarget}s
           </text>
           <text x={pad.left - 6} y={threshY + 4} textAnchor="end"
             fontSize={11} fill="#9ca3af" fontWeight="600">
@@ -365,7 +365,7 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
           {/* Axis labels */}
           <text x={pad.left + plotW / 2} y={H - 6} textAnchor="middle"
             fontSize={12} fill="#64748B" fontWeight="500">
-            ← Faster — Seconds per question — Slower →
+            ← Faster · Seconds per question · Slower →
           </text>
           <text x={14} y={pad.top + plotH / 2} textAnchor="middle"
             fontSize={12} fill="#64748B" fontWeight="500"
@@ -456,7 +456,7 @@ function QuadrantChart({ subjectName, colour, speedTarget, topics }) {
           <span className="inline-block w-3 h-3 rounded-full opacity-35" style={{ background: colour }} /> Not practised recently
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="inline-block w-5 border-t-2 border-dashed border-gray-300" /> GL exam pace
+          <span className="inline-block w-5 border-t-2 border-dashed border-gray-300" /> Target pace
         </span>
       </div>
     </div>

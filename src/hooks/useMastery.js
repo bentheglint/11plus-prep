@@ -255,22 +255,22 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
       let reason;
       if (mode === 'daily') {
         if (m.daysSince > 14) {
-          reason = `Last practised ${m.daysSince} days ago — mix it in to keep it fresh!`;
+          reason = `Last practised ${m.daysSince} days ago, so mix it in to keep it fresh!`;
         } else if (m.trend.direction === 'down') {
-          reason = `Accuracy dipping slightly — mixed practice will reinforce it.`;
+          reason = `Accuracy dipping slightly, so mixed practice will reinforce it.`;
         } else {
-          reason = `Good foundation here — mixed practice locks it in for the exam.`;
+          reason = `Good foundation here, and mixed practice locks it in for the exam.`;
         }
       } else if (m.totalQuestions === 0) {
-        reason = "You haven't tried this topic yet — give it a go!";
+        reason = "You haven't tried this topic yet, so give it a go!";
       } else if (m.daysSince > 14) {
-        reason = `Last practised ${m.daysSince} days ago — time for a refresher before it fades!`;
+        reason = `Last practised ${m.daysSince} days ago, time for a refresher before it fades!`;
       } else if (m.trend.direction === 'down') {
-        reason = `Your accuracy has been dropping recently — let's sharpen this up!`;
+        reason = `Your accuracy has been dropping recently, so let's sharpen this up!`;
       } else if (m.score < 40) {
         reason = `This needs more practice to build your confidence.`;
       } else if (m.totalQuestions < 10) {
-        reason = `Only ${m.totalQuestions} questions attempted — more practice will help.`;
+        reason = `Only ${m.totalQuestions} questions attempted, so more practice will help.`;
       } else {
         reason = `Good progress, but there's room to improve!`;
       }
@@ -297,7 +297,7 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
           topicKey,
           subject: getSubjectForTopic(topicKey),
           priority: (100 - m.score) * 2 + 20,
-          reason: `Accuracy declining — was ${m.recentAccuracy + m.trend.delta}%, now ${m.recentAccuracy}%.`,
+          reason: `Accuracy declining, was ${m.recentAccuracy + m.trend.delta}%, now ${m.recentAccuracy}%.`,
           mastery: m,
         });
       }
