@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useUser, useAuth, SignIn, SignUp } from '@clerk/clerk-react';
-import { BookOpen, Shield, ChevronRight, LogIn, UserPlus, ArrowLeft, Loader2 } from 'lucide-react';
+import { ArrowLeft, Loader2 } from 'lucide-react';
 import SubscribeScreen from './SubscribeScreen';
+import LandingPage from './landing/LandingPage';
 import { isFeatureEnabled } from '../utils/featureFlags';
 import { resolveAccessAdmission, isPaymentConfirmed } from '../utils/entitlementGating';
 // apiSync imports removed — D1 data loading moved to useD1Data hook
@@ -41,77 +42,7 @@ function InviteBanner({ code }) {
   if (!code) return null;
   return (
     <div className="bg-[#7C3AED] text-white text-sm text-center py-2 px-4">
-      <span className="font-bold">Invite accepted!</span> You\u2019ll get free access — no card needed. Code: <span className="font-mono opacity-80">{code}</span>
-    </div>
-  );
-}
-
-// ── Landing Page (shown when signed out) ──
-function LandingPage({ onSignIn, onSignUp, onTutorSignup, inviteCode }) {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F8F7FF] to-[#E8E5FF] flex flex-col">
-      <InviteBanner code={inviteCode} />
-      {/* Header */}
-      <header className="p-6 flex justify-end gap-3">
-        <button
-          onClick={onSignIn}
-          className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-[#7C3AED] border-2 border-[#7C3AED] rounded-xl hover:bg-[#7C3AED] hover:text-white transition-colors"
-        >
-          <LogIn className="w-4 h-4" />
-          Sign In
-        </button>
-        <button
-          onClick={onSignUp}
-          className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-[#7C3AED] rounded-xl hover:bg-[#5A4BD1] transition-colors"
-        >
-          <UserPlus className="w-4 h-4" />
-          Create Account
-        </button>
-      </header>
-
-      {/* Hero */}
-      <main className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-        <img src="/logo.svg" alt="PrepStep" className="w-80 max-w-full mb-6" />
-        <p className="text-lg text-slate-500 max-w-md mb-8">
-          Step-by-step practice for the GL Assessment 11+ exam.
-          Maths, English, and Verbal Reasoning — with smart revision that adapts to your child.
-        </p>
-        <button
-          onClick={onSignUp}
-          className="flex items-center gap-2 px-8 py-3.5 text-lg font-bold text-white bg-[#7C3AED] rounded-2xl hover:bg-[#5A4BD1] transition-colors shadow-md"
-        >
-          Try free for 30 days
-          <ChevronRight className="w-5 h-5" />
-        </button>
-        <p className="text-sm text-slate-500 mt-4">
-          No card required. Full access from day one.
-        </p>
-
-        {/* Trust signals */}
-        <div className="flex items-center gap-6 mt-10 text-sm text-slate-500">
-          <div className="flex items-center gap-1.5">
-            <Shield className="w-4 h-4 text-[#22C55E]" />
-            <span>Your child's data is safe</span>
-          </div>
-          <a href="/privacy" className="underline hover:text-[#7C3AED]">
-            Privacy Policy
-          </a>
-          <a href="/terms" className="underline hover:text-[#7C3AED]">
-            Terms
-          </a>
-          <a href="/help" className="underline hover:text-[#7C3AED]">
-            Help
-          </a>
-        </div>
-
-        {/* Tutor entry point */}
-        <p className="text-sm text-slate-500 mt-8">
-          Are you a tutor?{' '}
-          <button onClick={onTutorSignup} className="text-[#7C3AED] font-bold underline hover:text-[#5A4BD1]">
-            Sign up here
-          </button>
-        </p>
-      </main>
+      <span className="font-bold">Invite accepted!</span> You’ll get free access, no card needed. Code: <span className="font-mono opacity-80">{code}</span>
     </div>
   );
 }
