@@ -9,6 +9,7 @@ import App from './App';
 import AppLoader from './components/AppLoader';
 import DevReviewPanel from './DevReviewPanel';
 import DiagramViewer from './DiagramViewer';
+import TutorLandingPage from './components/landing/TutorLandingPage';
 import AuthGate from './components/AuthGate';
 import ErrorBoundary from './components/ErrorBoundary';
 import OfflineBanner from './components/OfflineBanner';
@@ -38,10 +39,13 @@ const CLERK_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
 
 const isDiagramViewer = new URLSearchParams(window.location.search).has('diagram-viewer');
+const isTutorLanding = window.location.pathname === '/for-tutors';
 
 // Shared app tree — rendered with or without ClerkProvider depending on mode.
 const appTree = isDiagramViewer ? (
   <DiagramViewer />
+) : isTutorLanding ? (
+  <TutorLandingPage />
 ) : (
   <AuthGate>
     {(childName, getToken, access, activeChildId, childrenList, userEmail) => (

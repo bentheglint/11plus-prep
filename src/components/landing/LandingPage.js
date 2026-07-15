@@ -778,11 +778,18 @@ export default function LandingPage({ onSignIn, onSignUp, onTutorSignup, inviteC
               <a href="mailto:hello@prepstep.co.uk">hello@prepstep.co.uk</a>
               <a href="#faq">FAQ</a>
               <a href="https://prepstep.co.uk">prepstep.co.uk</a>
-              {/* Tutor entry point (must-fix 1) — not in the mockup. Rendered
-                  as a real <button> (not an <a>) since it opens the in-app
-                  sign-up flow rather than navigating; styled to match the
-                  other footer links via .foot-link-btn in landing.css. */}
-              <button type="button" className="foot-link-btn" onClick={onTutorSignup}>
+              {/* Tutor entry point (must-fix 1) — not in the mockup. Now
+                  routes to the dedicated /for-tutors marketing page (the
+                  approved tutor-landing.html port, see TutorLandingPage.js)
+                  rather than jumping straight into sign-up: that page now
+                  precedes sign-up in the tutor funnel. onTutorSignup is left
+                  wired through AuthGate for the ?tutor=1 direct-link path,
+                  it's just not used by this particular button any more. */}
+              <button
+                type="button"
+                className="foot-link-btn"
+                onClick={() => window.location.assign('/for-tutors')}
+              >
                 For tutors
               </button>
             </div>

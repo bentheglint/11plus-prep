@@ -41,14 +41,19 @@ describe('LandingPage CTAs', () => {
     expect(signInBtn.closest('.nav-links')).toBeNull();
   });
 
-  test('tutor entry point in the footer calls onTutorSignup', () => {
-    const onTutorSignup = jest.fn();
-    render(<LandingPage onSignIn={jest.fn()} onSignUp={jest.fn()} onTutorSignup={onTutorSignup} inviteCode={null} />);
+  test('tutor entry point in the footer navigates to the /for-tutors marketing page', () => {
+    const originalLocation = window.location;
+    delete window.location;
+    window.location = { ...originalLocation, assign: jest.fn() };
+
+    render(<LandingPage onSignIn={jest.fn()} onSignUp={jest.fn()} onTutorSignup={jest.fn()} inviteCode={null} />);
 
     const tutorLink = screen.getByRole('button', { name: /for tutors/i });
     userEvent.click(tutorLink);
-    expect(onTutorSignup).toHaveBeenCalledTimes(1);
+    expect(window.location.assign).toHaveBeenCalledWith('/for-tutors');
     expect(tutorLink.closest('footer')).not.toBeNull();
+
+    window.location = originalLocation;
   });
 
   test('invite banner renders with a supplied inviteCode, and is absent without one', () => {
