@@ -1,7 +1,7 @@
 # 11+ Exam Prep App
 
 ## What This Project Is
-A React web app to help a 9-year-old prepare for the GL Assessment 11+ exam (target: September 2026). Targeting Bournemouth Grammar School and Parkstone Grammar School. It presents multiple-choice questions across Maths, English, and Verbal Reasoning, tracks progress in D1 (localStorage as offline cache), and includes an AI tutor chat feature (Claude API).
+A React web app that prepares children for the GL-style 11+ grammar-school exam. **Audience is NATIONAL (UK-wide), not a single region.** Bournemouth Grammar School and Parkstone Grammar School were the founding story (Ben's own child, target Sept 2026), NOT the addressable market: GL-style 11+ is used across most of the country and all marketing (landing page, tutor page, SEO practice pages) must be positioned nationally, not Dorset-local. (Note the Dorset grammars are moving GL -> Quest for 2026 entry; see the Quest transition notes. Treat that as an honest local exception in copy, not the frame.) The app presents multiple-choice questions across Maths, English, and Verbal Reasoning, tracks progress in D1 (localStorage as offline cache), and includes an AI tutor chat feature (Claude API).
 
 Git repository, dual-machine (PC + laptop) via github.com/bentheglint/11plus-prep.
 
