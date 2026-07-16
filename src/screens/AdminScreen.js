@@ -144,6 +144,110 @@ function BulkInviteReviews({ getToken }) {
   );
 }
 
+// ── Tutor attribution visibility (layer 4) ──
+// Read-only v1: answers "is this signup a tutor referral, and to whom?" in
+// one screen, without messaging the tutor. See
+// plans/tutor-attribution-durability.md.
+
+function statusChipClasses(status) {
+  if (status === 'joined') return 'bg-green-100 text-green-700';
+  if (status === 'declined') return 'bg-slate-100 text-slate-500';
+  return 'bg-amber-100 text-amber-700'; // pending
+}
+
+function formatDate(value) {
+  if (!value) return '—';
+  const d = new Date(value.includes(' ') && !value.includes('T') ? `${value}Z` : value);
+  if (Number.isNaN(d.getTime())) return value;
+  return d.toLocaleDateString('en-GB');
+}
+
+function TutorAttributionSection({ getToken }) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      setData(await apiFetch('/api/admin/join-intents', getToken));
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }, [getToken]);
+
+  useEffect(() => { load(); }, [load]);
+
+  if (loading) return <p className="text-slate-400 text-sm px-1 mt-2">Loading tutor referrals…</p>;
+  if (error) {
+    return (
+      <div className="mx-1 p-4 bg-red-50 rounded-2xl border border-red-100 mb-6">
+        <p className="text-red-700 text-sm font-medium mb-1">Couldn't load tutor referrals</p>
+        <p className="text-red-500 text-xs">{error}</p>
+      </div>
+    );
+  }
+  if (!data) return null;
+
+  const { intents, unlinked } = data;
+
+  return (
+    <>
+      {/* Tutor referrals */}
+      <h2 className="font-heading font-bold text-slate-800 mb-2 px-1">
+        Tutor referrals <span className="text-slate-400 font-normal text-sm">({intents.length})</span>
+      </h2>
+      {intents.length === 0 ? (
+        <p className="text-xs text-slate-400 px-1 mb-6">No tutor referrals yet.</p>
+      ) : (
+        <div className="bg-white rounded-2xl border border-slate-100 shadow-sm divide-y divide-slate-100 mb-6">
+          {intents.map(intent => (
+            <div key={intent.id} className="p-3">
+              <div className="flex items-start justify-between gap-3 mb-1">
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-slate-800 truncate">{intent.parentEmail}</p>
+                  <p className="text-xs text-slate-400 truncate">
+                    {intent.childrenNames.length > 0 ? intent.childrenNames.join(', ') : 'No children yet'}
+                  </p>
+                </div>
+                <span className={`text-xs font-medium px-2 py-0.5 rounded-full flex-shrink-0 ${statusChipClasses(intent.status)}`}>
+                  {intent.status}
+                </span>
+              </div>
+              <p className="text-xs text-slate-400">
+                via {intent.tutorName} · signed up {formatDate(intent.signupDate)}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Unlinked signups */}
+      <h2 className="font-heading font-bold text-slate-800 mb-2 px-1">
+        Unlinked signups <span className="text-slate-400 font-normal text-sm">({unlinked.length})</span>
+      </h2>
+      {unlinked.length === 0 ? (
+        <p className="text-xs text-slate-400 px-1 mb-6">No unlinked signups.</p>
+      ) : (
+        <div className="bg-white rounded-2xl border border-slate-100 shadow-sm divide-y divide-slate-100 mb-6">
+          {unlinked.map(acct => (
+            <div key={acct.accountId} className="p-3">
+              <p className="text-sm font-semibold text-slate-800 truncate">{acct.parentEmail}</p>
+              <p className="text-xs text-slate-400 truncate">
+                {acct.childrenNames.length > 0 ? acct.childrenNames.join(', ') : 'No children yet'}
+                {' · signed up '}{formatDate(acct.signupDate)}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+    </>
+  );
+}
+
 export default function AdminScreen({ getToken, onBack }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -238,6 +342,9 @@ export default function AdminScreen({ getToken, onBack }) {
           <>
             {/* Bulk invite reviews — top priority admin action */}
             <BulkInviteReviews getToken={getToken} />
+
+            {/* Tutor attribution — is this signup a tutor referral? */}
+            <TutorAttributionSection getToken={getToken} />
 
             {/* Grant a new tutor */}
             <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-4 mb-4">

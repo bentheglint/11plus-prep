@@ -8,6 +8,7 @@
 //   POST   /api/admin/comp                   — comp / uncomp an account
 //   GET    /api/admin/remove-pupil-impact    — preview what remove-pupil deletes
 //   POST   /api/admin/remove-pupil           — unlink a pupil from a tutor (scoped purge)
+//   GET    /api/admin/join-intents           — tutor-attribution visibility (layer 4)
 //
 // Every mutation is wrapped with its admin_audit insert in one db.batch so the
 // log can never disagree with what happened. target/detail hold opaque IDs and
@@ -222,6 +223,85 @@ export async function handleAdminRoutes(request, env, admin, path) {
     const enrolmentsRemoved = results[0]?.meta?.changes ?? null;
     const linkRemoved = results[1]?.meta?.changes ?? null;
     return json({ ok: true, tutorId, childId, enrolments_removed: enrolmentsRemoved, link_removed: linkRemoved });
+  }
+
+  // ── GET /api/admin/join-intents — tutor-attribution visibility (layer 4) ──
+  // Answers "is this signup a tutor referral, and to whom?" in one screen, so
+  // Ben stops having to ask tutors directly (see
+  // plans/tutor-attribution-durability.md). Two lists:
+  //   intents  — every join_intents row (pending/joined/declined), newest
+  //              first, joined to the account, its children, and the tutor.
+  //   unlinked — accounts with at least one child that have NEITHER a
+  //              pupil_tutors link NOR a join_intents row: candidates for
+  //              organic signup OR the unbridgeable cross-browser case
+  //              (link clicked in browser A, signup completed in browser B).
+  // No pagination at current scale (~40 accounts); both lists are capped at
+  // 200 newest-first so this can never balloon.
+  if (path === '/api/admin/join-intents' && request.method === 'GET') {
+    const CAP = 200;
+
+    const [intentsRes, unlinkedRes, childrenRes] = await Promise.all([
+      db.prepare(`
+        SELECT ji.id, ji.status, ji.created_at, ji.updated_at, ji.tutor_code,
+               a.id AS account_id, a.email AS parent_email, a.name AS parent_name,
+               a.created_at AS signup_date,
+               t.display_name AS tutor_name, t.tutor_code AS tutor_current_code
+        FROM join_intents ji
+        JOIN accounts a ON a.id = ji.account_id
+        JOIN tutors t ON t.id = ji.tutor_id
+        ORDER BY ji.created_at DESC
+        LIMIT ?
+      `).bind(CAP).all(),
+      // Accounts with >=1 child, no child linked via pupil_tutors, and no
+      // join_intents row at all (a declined/pending/joined intent still
+      // counts as "has an intent" — it belongs in the intents list instead).
+      db.prepare(`
+        SELECT a.id AS account_id, a.email AS parent_email, a.name AS parent_name,
+               a.created_at AS signup_date
+        FROM accounts a
+        WHERE EXISTS (SELECT 1 FROM children c WHERE c.account_id = a.id)
+          AND NOT EXISTS (
+            SELECT 1 FROM children c
+            JOIN pupil_tutors pt ON pt.child_id = c.id
+            WHERE c.account_id = a.id
+          )
+          AND NOT EXISTS (SELECT 1 FROM join_intents ji WHERE ji.account_id = a.id)
+        ORDER BY a.created_at DESC
+        LIMIT ?
+      `).bind(CAP).all(),
+      // All children, name-only, grouped in JS below — cheap at this scale
+      // and avoids building a dynamic IN(...) placeholder list.
+      db.prepare('SELECT account_id, display_name FROM children ORDER BY created_at ASC').all(),
+    ]);
+
+    const childrenByAccount = new Map();
+    for (const c of (childrenRes.results || [])) {
+      if (!childrenByAccount.has(c.account_id)) childrenByAccount.set(c.account_id, []);
+      childrenByAccount.get(c.account_id).push(c.display_name);
+    }
+
+    const intents = (intentsRes.results || []).map(r => ({
+      id: r.id,
+      status: r.status,
+      createdAt: r.created_at,
+      updatedAt: r.updated_at,
+      tutorCode: r.tutor_code,
+      tutorName: r.tutor_name,
+      parentEmail: r.parent_email,
+      parentName: r.parent_name,
+      signupDate: r.signup_date,
+      childrenNames: childrenByAccount.get(r.account_id) || [],
+    }));
+
+    const unlinked = (unlinkedRes.results || []).map(r => ({
+      accountId: r.account_id,
+      parentEmail: r.parent_email,
+      parentName: r.parent_name,
+      signupDate: r.signup_date,
+      childrenNames: childrenByAccount.get(r.account_id) || [],
+    }));
+
+    return json({ intents, unlinked });
   }
 
   return null; // not an admin route this handler knows
