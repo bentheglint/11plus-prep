@@ -74,6 +74,23 @@ export async function handleAccountRoutes(request, env, userId, path) {
       'SELECT id, display_name, year_group, target_school, created_at FROM children WHERE account_id = ? ORDER BY created_at ASC'
     ).bind(userId).all();
 
+    // Most recent still-pending tutor join intent, if any (tutor-attribution
+    // durability layer 3 re-offer — see plans/tutor-attribution-durability.md).
+    // A 'declined' intent is never surfaced here (declined = not re-offered);
+    // a 'joined' one is irrelevant once Connect has actually fired. Indexed
+    // on (account_id, status, created_at) — see migration 0019.
+    const pendingIntentRow = await db.prepare(`
+      SELECT ji.tutor_code, t.display_name AS tutor_name
+      FROM join_intents ji
+      JOIN tutors t ON t.id = ji.tutor_id
+      WHERE ji.account_id = ? AND ji.status = 'pending'
+      ORDER BY ji.created_at DESC
+      LIMIT 1
+    `).bind(userId).first();
+    const pendingJoinIntent = pendingIntentRow
+      ? { tutorCode: pendingIntentRow.tutor_code, tutorName: pendingIntentRow.tutor_name }
+      : null;
+
     // Update last_login_at
     await db.prepare('UPDATE accounts SET last_login_at = datetime(\'now\') WHERE id = ?').bind(userId).run();
 
@@ -121,7 +138,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
     // during the transition period before tutor-mode is deployed to production.
     const child = children[0] || null;
 
-    return json({ account, children, child, access });
+    return json({ account, children, child, access, pendingJoinIntent });
   }
 
   // DELETE /api/account — Delete account + ALL child data (GDPR right to erasure)

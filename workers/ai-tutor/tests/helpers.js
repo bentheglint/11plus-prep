@@ -2,6 +2,7 @@ import { TEST_KID, TEST_PRIVATE_JWK } from './test-keys.js';
 import migration0016 from '../migrations/0016_tutor_invites.sql?raw';
 import migration0017 from '../migrations/0017_daily_claims.sql?raw';
 import migration0018 from '../migrations/0018_app_settings.sql?raw';
+import migration0019 from '../migrations/0019_join_intents.sql?raw';
 
 export const CLERK_DOMAIN = 'test.clerk.11plus.dev';
 
@@ -251,6 +252,22 @@ export async function createSchema(db) {
   for (const sql of migration0018Stmts) {
     await db.prepare(sql).run();
   }
+
+  // Same pattern for 0019: derive the join_intents test table (tutor
+  // attribution durability, layer 2) from the real migration file.
+  const migration0019Stmts = migration0019
+    .split(/;\s*\n/)
+    .map(s =>
+      s
+        .split('\n')
+        .filter(line => !line.trim().startsWith('--'))
+        .join('\n')
+        .trim()
+    )
+    .filter(Boolean);
+  for (const sql of migration0019Stmts) {
+    await db.prepare(sql).run();
+  }
 }
 
 export async function cleanDb(db) {
@@ -266,6 +283,7 @@ export async function cleanDb(db) {
     db.prepare('DELETE FROM assignment_items'),
     db.prepare('DELETE FROM assignments'),
     db.prepare('DELETE FROM tutor_invites'),
+    db.prepare('DELETE FROM join_intents'),
     db.prepare('DELETE FROM pupil_tutors'),
     db.prepare('DELETE FROM tutors'),
     db.prepare('DELETE FROM daily_claims'),
@@ -358,6 +376,20 @@ export const seed = {
          VALUES (?, ?)`
       )
       .bind(childId, tutorId)
+      .run();
+  },
+
+  async joinIntent(db, { id, accountId, tutorId, tutorCode, status = 'pending', createdAt = null, updatedAt = null }) {
+    await db
+      .prepare(
+        `INSERT INTO join_intents (id, account_id, tutor_id, tutor_code, status, created_at, updated_at)
+         VALUES (?, ?, ?, ?, ?, ${createdAt ? '?' : "datetime('now')"}, ${updatedAt ? '?' : "datetime('now')"})`
+      )
+      .bind(
+        id, accountId, tutorId, tutorCode, status,
+        ...(createdAt ? [createdAt] : []),
+        ...(updatedAt ? [updatedAt] : []),
+      )
       .run();
   },
 

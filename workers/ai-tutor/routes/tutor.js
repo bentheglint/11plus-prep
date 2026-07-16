@@ -1,10 +1,14 @@
 // ── Tutor Routes (Phase 2) ──
-// POST   /api/tutor              — Create tutor profile (open signup)
-// GET    /api/tutor              — Get own tutor profile
-// PATCH  /api/tutor              — Update profile (name, bio, photo)
-// GET    /api/tutor/roster       — Get this tutor's pupil list
-// DELETE /api/tutor/roster/:id   — Remove a pupil from roster
-// POST   /api/tutor/join         — Parent accepts invite (auth-protected)
+// POST   /api/tutor                     — Create tutor profile (open signup)
+// GET    /api/tutor                     — Get own tutor profile
+// PATCH  /api/tutor                     — Update profile (name, bio, photo)
+// GET    /api/tutor/roster              — Get this tutor's pupil list
+// DELETE /api/tutor/roster/:id          — Remove a pupil from roster
+// POST   /api/tutor/join                — Parent accepts invite (auth-protected)
+// POST   /api/tutor/join-intent         — Parent's authed session holds a
+//                                          pending code (auth-protected) —
+//                                          see plans/tutor-attribution-durability.md
+// POST   /api/tutor/join-intent/decline — Parent explicitly declines (auth-protected)
 //
 // Public (no auth):
 // GET    /api/tutor/public/:code — Public tutor profile (for join page preview)
@@ -289,6 +293,24 @@ export async function handleTutorRoutes(request, env, userId, path) {
     const tutor = await db.prepare('SELECT id FROM tutors WHERE tutor_code = ?').bind(tutorCode.toUpperCase()).first();
     if (!tutor) return json({ error: 'Tutor not found' }, 404);
 
+    // A successful join must always leave a server-side trace, even if the
+    // client never posted a join-intent first (older client build, or the
+    // parent typing the code straight into a Connect screen). This upsert
+    // is the durable answer to "is this signup a tutor referral?" — see
+    // plans/tutor-attribution-durability.md layer 2. It runs BEFORE the
+    // idempotent-already-linked check below so a repeat join call also
+    // repairs a missing/stale intent row for an already-connected pupil.
+    // 'joined' is a one-way state here: it always wins over whatever the
+    // row previously held (including a prior 'declined').
+    const normalisedCode = tutorCode.toUpperCase();
+    await db.prepare(`
+      INSERT INTO join_intents (id, account_id, tutor_id, tutor_code, status)
+      VALUES (?, ?, ?, ?, 'joined')
+      ON CONFLICT(account_id, tutor_id) DO UPDATE SET
+        status = 'joined',
+        updated_at = datetime('now')
+    `).bind(crypto.randomUUID(), userId, tutor.id, normalisedCode).run();
+
     // Idempotent — silently succeed if already linked
     const existing = await db.prepare(
       'SELECT 1 FROM pupil_tutors WHERE child_id = ? AND tutor_id = ?'
@@ -300,6 +322,74 @@ export async function handleTutorRoutes(request, env, userId, path) {
     ).bind(childId, tutor.id).run();
 
     return json({ ok: true, alreadyLinked: false }, 201);
+  }
+
+  // POST /api/tutor/join-intent — record that this parent's authed session
+  // is holding a pending tutor code, BEFORE they decide to Connect or not.
+  // Fire-and-forget from the client; idempotent; safe to call repeatedly.
+  // See plans/tutor-attribution-durability.md layer 2 — this is what makes
+  // a failed/abandoned/declined referral visible instead of silently
+  // indistinguishable from an organic signup.
+  if (path === '/api/tutor/join-intent' && request.method === 'POST') {
+    const { tutorCode } = await request.json();
+    if (!tutorCode || typeof tutorCode !== 'string') return json({ error: 'Missing tutorCode' }, 400);
+
+    // Unknown code: write NOTHING. We don't create junk rows for typos or
+    // probing, and the client already treats 404 here as "not a real code".
+    const tutor = await db.prepare('SELECT id FROM tutors WHERE tutor_code = ?').bind(tutorCode.toUpperCase()).first();
+    if (!tutor) return json({ error: 'Tutor not found' }, 404);
+
+    // This is a fire-and-forget call from the client and may race the
+    // account-creation POST on a brand-new signup. account_id has an FK to
+    // accounts(id), so without this guard a not-yet-created account would
+    // surface as an unhandled 500 instead of a clean, retryable response.
+    const account = await db.prepare('SELECT id FROM accounts WHERE id = ?').bind(userId).first();
+    if (!account) return json({ error: 'Account not found' }, 404);
+
+    // Atomic upsert (never read-then-write — D1 is eventually consistent).
+    // A fresh row is INSERTed as 'pending'. On conflict, updated_at always
+    // bumps; status only moves 'declined' -> 'pending' (a returning parent
+    // re-using the link is re-considering). 'pending' stays 'pending', and
+    // 'joined' is NEVER downgraded — real consent, once recorded, is final.
+    const normalisedCode = tutorCode.toUpperCase();
+    await db.prepare(`
+      INSERT INTO join_intents (id, account_id, tutor_id, tutor_code, status)
+      VALUES (?, ?, ?, ?, 'pending')
+      ON CONFLICT(account_id, tutor_id) DO UPDATE SET
+        updated_at = datetime('now'),
+        status = CASE WHEN join_intents.status = 'declined' THEN 'pending' ELSE join_intents.status END
+    `).bind(crypto.randomUUID(), userId, tutor.id, normalisedCode).run();
+
+    return json({ ok: true });
+  }
+
+  // POST /api/tutor/join-intent/decline — parent explicitly taps "Not now"
+  // on JoinScreen. Records the decline so the parent is never re-offered
+  // the same tutor's JoinScreen again UNLESS they revisit the join link
+  // (which flips it back to 'pending' via the create endpoint above).
+  if (path === '/api/tutor/join-intent/decline' && request.method === 'POST') {
+    const { tutorCode } = await request.json();
+    if (!tutorCode || typeof tutorCode !== 'string') return json({ error: 'Missing tutorCode' }, 400);
+
+    const tutor = await db.prepare('SELECT id FROM tutors WHERE tutor_code = ?').bind(tutorCode.toUpperCase()).first();
+    if (!tutor) return json({ error: 'Tutor not found' }, 404);
+
+    const existing = await db.prepare(
+      'SELECT status FROM join_intents WHERE account_id = ? AND tutor_id = ?'
+    ).bind(userId, tutor.id).first();
+    if (!existing) return json({ error: 'No join intent found' }, 404);
+
+    // 'joined' is never downgraded. A decline posted for an
+    // already-connected pupil (e.g. a stale "Not now" tap that lands after
+    // Connect already fired) is a harmless no-op, not an error.
+    if (existing.status === 'joined') return json({ ok: true, alreadyJoined: true });
+
+    await db.prepare(
+      `UPDATE join_intents SET status = 'declined', updated_at = datetime('now')
+       WHERE account_id = ? AND tutor_id = ?`
+    ).bind(userId, tutor.id).run();
+
+    return json({ ok: true });
   }
 
   // GET /api/tutor/pupils/:childId — Full pupil drill-down (tutor's view)

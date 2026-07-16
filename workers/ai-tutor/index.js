@@ -520,6 +520,16 @@ const worker = {
         if (tutorResult) return tutorResult;
         return json({ error: 'Tutor route not found', path }, 404);
       }
+      // Join-intent create + decline — a PARENT'S account calls these, never
+      // a tutor, so (like /api/tutor/join above) auth only, no tutor profile
+      // required. See plans/tutor-attribution-durability.md layer 2.
+      if ((path === '/api/tutor/join-intent' || path === '/api/tutor/join-intent/decline') && request.method === 'POST') {
+        const auth = await requireAuth(request, env);
+        if (auth.error) return auth.error;
+        const tutorResult = await handleTutorRoutes(request, env, auth.userId, path);
+        if (tutorResult) return tutorResult;
+        return json({ error: 'Tutor route not found', path }, 404);
+      }
       // Claim invite + authed preview — auth only (no tutor profile required)
       if (path === '/api/tutor/claim-invite' && request.method === 'POST') {
         const auth = await requireAuth(request, env);
