@@ -470,7 +470,8 @@ export default function LandingPage({ onSignIn, onSignUp, onTutorSignup, inviteC
             <span className="k">Why we built PrepStep</span>
             <h3>We kept seeing the same gap, so we closed it.</h3>
             <p>
-              I have taken two children through the 11+, and spent a long time studying the papers along the way. The same
+              One of my children is through the 11+, the second sits it this September, and I have spent a long time
+              studying the papers along the way. The same
               thing kept surfacing: <b>the exams reward knowing the patterns</b>, every child has a few topics quietly
               costing them marks, and the quickest way forward is to catch those early and have someone patient explain the
               ones they get wrong. A good tutor does this beautifully, but they cost a fortune and they are gone by Tuesday.
@@ -772,6 +773,19 @@ export default function LandingPage({ onSignIn, onSignUp, onTutorSignup, inviteC
               <a href="#inside">What&apos;s inside</a>
               <a href="#parents">For parents</a>
               <a href="#pricing">Pricing</a>
+            </div>
+            {/* Free practice — real crawlable links into the SSR'd /practice
+                pages (public/practice/*). The React landing previously never
+                linked out to them, leaving the whole practice tree an island
+                with no internal link equity. The three subject hubs each link
+                every topic page, so linking the hubs gives crawlers a path
+                into the entire tree from the homepage. */}
+            <div className="foot-col">
+              <h5>Free practice</h5>
+              <a href="/practice">All practice questions</a>
+              <a href="/practice/maths">Maths practice</a>
+              <a href="/practice/english">English practice</a>
+              <a href="/practice/vr">Verbal reasoning</a>
             </div>
             <div className="foot-col">
               <h5>Company</h5>

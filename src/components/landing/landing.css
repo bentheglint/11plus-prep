@@ -445,7 +445,8 @@
 /* ---------- Footer ---------- */
 .landing-root footer.site{background:var(--ink);color:#93a3ba;padding:56px 0 34px;font-size:.92rem}
 .landing-root .foot-grid{display:grid;gap:32px;grid-template-columns:1fr}
-@media(min-width:760px){.landing-root .foot-grid{grid-template-columns:1.5fr 1fr 1fr 1fr}}
+@media(min-width:760px){.landing-root .foot-grid{grid-template-columns:1.5fr 1fr 1fr;}}
+@media(min-width:1000px){.landing-root .foot-grid{grid-template-columns:1.5fr repeat(4,1fr)}}
 .landing-root .foot-brand .brand{color:#fff;margin-bottom:14px}
 .landing-root .foot-brand p{max-width:34ch;line-height:1.6}
 .landing-root .foot-col h5{color:#cdd8e8;font-family:var(--display);font-size:.94rem;font-weight:600;margin-bottom:14px}

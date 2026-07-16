@@ -599,8 +599,9 @@ export default function TutorLandingPage() {
               <span className="k">Why tutors trust PrepStep</span>
               <h3>We built this having sat where you sit.</h3>
               <p>
-                I&apos;ve taken two children through the 11+ myself, and studied the papers closely enough to know exactly
-                which patterns keep costing marks. A good tutor is the best thing going for a child sitting this exam.{' '}
+                One of my children is through the 11+ and the second sits it this September, so I&apos;ve studied the papers
+                closely enough to know exactly which patterns keep costing marks. A good tutor is the best thing going for a
+                child sitting this exam.{' '}
                 <b>PrepStep is simply the bit that keeps working between your sessions</b>, built by people who rate what you
                 do and wanted to back it up.
               </p>
