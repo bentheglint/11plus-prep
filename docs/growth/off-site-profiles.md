@@ -36,31 +36,37 @@ VenorTech Ltd, per the live terms/privacy pages.
 | Founder | Ben Jackson | confirmed |
 | Contact email | hello@prepstep.co.uk | confirmed |
 | Number of employees | 1–10 | confirmed (solo) |
-| Headquarters | Bournemouth, Dorset, United Kingdom | ⚠ **CONFIRM** exact town |
-| Founded date | (month / year PrepStep started) | ⚠ **CONFIRM** |
-| Legal structure | Sole trader (Ben Jackson) trading as PrepStep | ⚠ **CONFIRM** — list as sole trader, or attach VenorTech Ltd? |
-| Funding status | Bootstrapped / self-funded | ⚠ **CONFIRM** |
+| Headquarters | Bournemouth, United Kingdom | confirmed (Ben, 16 Jul) |
+| Founded date | 2026 | confirmed (Ben, 16 Jul) |
+| Legal structure | Sole trader (Ben Jackson) trading as PrepStep | confirmed — sole trader, NOT the Companies House "11 PLUS PREP LIMITED" entity |
+| Funding status | Bootstrapped / self-funded | confirmed (sole trader, no external investment) |
 | Social links | LinkedIn / X / Facebook | ⚠ **CONFIRM** — any exist yet? |
 
 ### Short description (one line)
 PrepStep is a UK online learning platform that helps children aged 9 to 11
-prepare for the GL Assessment 11+ grammar school entrance exam.
+prepare for the GL Assessment 11+ grammar school entrance exam, teaching each
+topic before testing it across Maths, English and Verbal Reasoning.
 
-### Full "About" description (front-loaded for AEO)
+### Full "About" description (front-loaded for AEO) — upgraded 16 Jul 2026
 PrepStep (prepstep.co.uk) is a United Kingdom 11+ exam preparation web app for
 children aged 9 to 11 who are sitting the GL Assessment 11+ grammar school
-entrance exam. It covers the three GL subjects (Maths, English and Verbal
-Reasoning) through a bank of more than 8,000 practice questions with step-by-step
-worked explanations, structured micro-lessons, timed mock tests, progress
-tracking, and an AI study tutor.
+entrance exam. Unlike most 11+ tools, which drill questions, PrepStep teaches
+each topic with a short lesson before testing it, so children learn the method
+rather than practising questions nobody showed them how to answer.
 
-PrepStep also includes a free Tutor Mode, letting private tutors set work, track
-pupils, manage classes, and share progress reports with parents. Families begin
-with a 30-day full-access free trial.
+It covers the three GL subjects (Maths, English and Verbal Reasoning) with more
+than 8,000 practice questions and step-by-step worked explanations, timed mock
+tests, and a built-in AI tutor that explains any question a child gets stuck on.
+A parent dashboard shows which topics are costing marks and what to practise next.
 
-PrepStep was created by Ben Jackson and is based in Bournemouth, Dorset. It is
-independent and is not affiliated with GL Assessment, any school, or any
-examination board.
+Every family gets free daily practice, plus a 30-day full-access trial; the full
+plan is £24.99 per month or £199 per year. PrepStep also includes a free Tutor
+Mode, letting private tutors set work, track pupils, manage classes, and share
+progress reports with parents.
+
+PrepStep was founded in 2026 by Ben Jackson and is based in Bournemouth. It is
+independent and self-funded, and is not affiliated with GL Assessment, any
+school, or any examination board.
 
 ### AEO keyword coverage (woven into the prose above, for reference)
 GL Assessment · 11 plus / 11+ · grammar school entrance exam · UK · ages 9 to 11
@@ -93,11 +99,13 @@ proof that disambiguates from EBSCO's PrepSTEP.
 | Contact email | hello@prepstep.co.uk |
 | Country | United Kingdom |
 
-### Company description (short, for the profile bio)
-PrepStep is a UK online learning platform that helps children aged 9 to 11
-prepare for the GL Assessment 11+ grammar school entrance exam, with practice
-across Maths, English and Verbal Reasoning, mock tests, progress tracking, and
-an AI study tutor. Families start with a 30-day full-access free trial.
+### Company description (short, for the profile bio) — upgraded 16 Jul 2026
+PrepStep is a UK online learning platform for children aged 9 to 11 preparing for
+the GL Assessment 11+ grammar school entrance exam. It teaches each topic with a
+short lesson before testing it, across Maths, English and Verbal Reasoning, with
+mock tests, a built-in AI tutor, and a parent dashboard that shows what to
+practise next. Every family gets free daily practice, plus a 30-day full-access
+trial.
 
 ### Review-invitation email (to send to consenting trial/paid parents)
 Subject: How are you finding PrepStep?
