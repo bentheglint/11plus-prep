@@ -32,9 +32,12 @@ Two things about the offer:
 | 7 | Project HappyChild | Directory | caroline.taylor@happychild.org | MEDIUM | A (free) | ☐ verify scope first |
 
 **Status 16 Jul 2026:** Rows 4, 6, 7 (Parents in Touch, Home Ed Life, Project HappyChild)
-✅ SENT (from prepstepapp@gmail.com as hello@prepstep.co.uk). STILL TO DO: rows 1, 2
-(Educational App Store, EdTech Impact — directory submission forms, HIGHEST yield) and
-rows 3, 5 (eParenting, 11 Plus Guide — web contact forms). All copy below.
+✅ SENT (from prepstepapp@gmail.com as hello@prepstep.co.uk). ✅ Row 1 (Educational App
+Store) SUBMITTED 16 Jul. ❌ Row 2 (EdTech Impact) ABANDONED 16 Jul — the "free" listing
+is a massive form with MANDATORY screenshots to save, and the website-link field (the
+whole point, for AEO) is a PAID premium feature. Not worth it; do not retry. STILL
+OPTIONAL (all quick): rows 3, 5 (eParenting, 11 Plus Guide — short contact-form messages)
++ paste upgraded copy into live Crunchbase + Trustpilot.
 
 ---
 
@@ -76,9 +79,10 @@ Free submission; certification review ~10 working days. Paste these into the for
 ---
 
 ## 2. EdTech Impact — DIRECTORY (free Evidence Profile)
-Route: https://edtechimpact.com/list-your-product/ — free self-service listing (product
-profile + review collection). IGNORE the paid "Evidence Report" upsell; the free listing
-is all we want. Use the same short + long descriptions as target 1. Extra fields:
+Route (verified 16 Jul): https://edtechimpact.com/providers/ → click "Start your Evidence
+Profile →" (Free / self-service) → onboarding at /account/product-onboarding/. IGNORE the
+paid "Evidence Report" (£3k) + "Evidence Engine" (£5k) buttons. Use the same short + long
+descriptions as target 1. Extra fields:
 
 - **Region:** United Kingdom (national)
 - **Audience:** Parents and tutors of children aged 9 to 11 (Year 5) sitting the 11+
