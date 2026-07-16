@@ -443,6 +443,28 @@ function AuthGateReal({ children }) {
     return () => { cancelled = true; };
   }, [isSignedIn]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Fire-and-forget tutor join-intent trace (attribution durability layer 2 —
+  // plans/tutor-attribution-durability.md). Records that this authed session
+  // is holding a pending tutor code, BEFORE the parent decides to Connect or
+  // not, so an abandoned/declined/failed referral leaves a server trace
+  // instead of being silently indistinguishable from an organic signup.
+  // MUST only be called once an account row is confirmed to exist (the
+  // endpoint 404s otherwise) — callers below gate on data.account. Idempotent
+  // on the server, so double-firing (this call + JoinScreen's own mount-time
+  // fire) is fine; never retried here on failure.
+  const fireJoinIntent = useCallback(async () => {
+    let code = null;
+    try { code = localStorage.getItem('pending-join-code') || null; } catch {}
+    if (!code) return;
+    try {
+      const token = await getToken();
+      await apiFetch('/api/tutor/join-intent', token, {
+        method: 'POST',
+        body: JSON.stringify({ tutorCode: code }),
+      });
+    } catch {} // fire-and-forget — never surfaces, never retries
+  }, [getToken]);
+
   // Check if user has a D1 account + child when they sign in
   const checkAccount = useCallback(async () => {
     if (!isSignedIn) return;
@@ -455,6 +477,27 @@ function AuthGateReal({ children }) {
       if (data.access) setAccess(data.access);
       const allChildren = data.children || [];
       const firstChild = allChildren[0] || null;
+
+      // Layer 3 re-offer: the server is the durable record of a still-pending
+      // tutor join (see routes/account.js pendingJoinIntent). If this account
+      // has one and the local carrier lost it (browser switch, storage
+      // cleared, etc.), restore it so App.js boots straight into the join
+      // view. A declined intent is never returned here, so a decline never
+      // re-appears unless the parent revisits the join link.
+      if (data.pendingJoinIntent?.tutorCode) {
+        try {
+          if (!localStorage.getItem('pending-join-code')) {
+            localStorage.setItem('pending-join-code', data.pendingJoinIntent.tutorCode);
+          }
+        } catch {}
+      }
+
+      // Layer 2 (server trace): /api/account has just confirmed the account
+      // row exists, so it's now safe to fire the join-intent POST — the
+      // endpoint 404s on a not-yet-created account. Fire-and-forget; never
+      // blocks or delays onboarding.
+      if (data.account) fireJoinIntent();
+
       if (data.account && firstChild) {
         // Has a child → parent (or dual-role tutor-parent). Unchanged flow:
         // land on the child home; tutors with a child reach their dashboard
@@ -497,7 +540,27 @@ function AuthGateReal({ children }) {
     } finally {
       setIsLoading(false);
     }
-  }, [isSignedIn, getToken, signupIntent]);
+  }, [isSignedIn, getToken, signupIntent, fireJoinIntent]);
+
+  // Post-auth restore (layer 1 hybrid, amended 16 Jul spike): unsafeMetadata
+  // on <SignUp> below survives the same-tab OAuth hop, but a fresh browser
+  // context (e.g. email verification opening in a different profile) can
+  // still lose the localStorage carrier. If that's happened — signed in, but
+  // no pending-join-code locally — fall back to what Clerk's user object
+  // carries. Tamperable by design (unsafe metadata): this only ever seeds the
+  // consent screen at JoinScreen, never triggers an auto-join. Declared
+  // BEFORE the checkAccount effect below so it runs first when both fire on
+  // the same sign-in, restoring the code before the join-intent trace fires.
+  useEffect(() => {
+    if (!authLoaded || !isSignedIn || !user) return;
+    try {
+      if (localStorage.getItem('pending-join-code')) return; // already have it
+      const metaCode = user.unsafeMetadata?.joinCode;
+      if (metaCode && typeof metaCode === 'string') {
+        localStorage.setItem('pending-join-code', metaCode.toUpperCase());
+      }
+    } catch {}
+  }, [authLoaded, isSignedIn, user]);
 
   useEffect(() => {
     if (authLoaded && isSignedIn) {
@@ -857,7 +920,19 @@ function AuthGateReal({ children }) {
             <ArrowLeft className="w-4 h-4" />
             Back
           </button>
-          <SignUp fallbackRedirectUrl={joinRedirectUrl} />
+          <SignUp
+            fallbackRedirectUrl={joinRedirectUrl}
+            // Layer 1 hybrid (amended 16 Jul spike): fallbackRedirectUrl above
+            // is the primary cross-browser carrier (code rides the URL). This
+            // unsafeMetadata stamp is the secondary carrier for the same-tab
+            // OAuth hop, which authenticateWithRedirect carries through but
+            // the URL redirect doesn't survive until AFTER the provider round
+            // trip. Only set when a code is actually pending — never sends an
+            // empty/stale joinCode. Restored to localStorage post-auth above
+            // if the primary carrier didn't make it; drives the consent
+            // screen only, never an auto-join.
+            unsafeMetadata={pendingJoinCode ? { joinCode: pendingJoinCode } : undefined}
+          />
         </div>
       );
     }

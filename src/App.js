@@ -1965,9 +1965,21 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           setCurrentView('home');
         }}
         onBack={() => {
-          // Parent declined — clear the saved code so it can never linger
-          // (localStorage persists across sessions, unlike sessionStorage)
-          // and silently re-route or mislink a later child.
+          // Parent isn't deciding now, not declining — bare Back must never
+          // wipe the code (that was the 8 Jul "decline-by-misclick" bug; see
+          // plans/tutor-attribution-durability.md). The code and the
+          // server-side join-intent both stay pending, and the parent is
+          // re-offered this JoinScreen on their next login (AuthGate restores
+          // it from GET /api/account's pendingJoinIntent). Only JoinScreen's
+          // explicit "Not now" button (onDecline below) actually clears it.
+          window.history.replaceState({}, '', '/');
+          setCurrentView('home');
+        }}
+        onDecline={() => {
+          // Parent explicitly declined ("Not now") — JoinScreen has already
+          // recorded the decline server-side (tolerating failure). This is
+          // the only path besides a successful join that wipes the code, so
+          // it can never linger and mislink a later child.
           window.history.replaceState({}, '', '/');
           try { localStorage.removeItem('pending-join-code'); } catch {}
           setCurrentView('home');
@@ -2099,6 +2111,17 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
         onManageChildren={() => setCurrentView('children')}
         onTutorSignup={tutorEligible ? () => setCurrentView('tutorSignup') : null}
         onAdmin={isAdmin ? () => setCurrentView('admin') : null}
+        onTutorCodeResolved={(tutorCode) => {
+          // Layer 3b (attribution durability plan) — a code typed in via
+          // "Have a tutor code?" has already been validated (TutorCodeEntryModal
+          // resolved it against the public profile lookup). Set the same
+          // carrier the /join/<code> path and OAuth-hop restore use, then
+          // route into the existing JoinScreen flow — its own mount-time
+          // fire records the join-intent trace.
+          try { localStorage.setItem('pending-join-code', tutorCode); } catch {}
+          setJoinTutorCode(tutorCode);
+          setCurrentView('join');
+        }}
         loadState={userData.loadState}
         onRetry={userData.retryLoad}
         entitlement={effectiveEntitlement}

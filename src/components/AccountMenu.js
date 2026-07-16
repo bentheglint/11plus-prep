@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useClerk, useAuth, useUser } from '@clerk/clerk-react';
-import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard, Users, GraduationCap, Settings } from 'lucide-react';
+import { LogOut, Download, Trash2, X, User, ChevronDown, CreditCard, Users, GraduationCap, Settings, KeyRound } from 'lucide-react';
+import TutorCodeEntryModal from './TutorCodeEntryModal';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 const SMOKE_MODE = process.env.REACT_APP_SMOKE_MODE === 'true';
@@ -21,13 +22,19 @@ function AccountMenuSmoke({ currentUser }) {
   );
 }
 
-function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup, onAdmin }) {
+function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup, onAdmin, onTutorCodeResolved }) {
   const { signOut } = useClerk();
   const { getToken } = useAuth();
   const { user } = useUser();
   const [showMenu, setShowMenu] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+  // Layer 3b (attribution durability plan) — "Have a tutor code?" entry
+  // point. Parent-surface only (this menu never renders on child surfaces),
+  // least-intrusive placement: an occasional account-level action alongside
+  // Tutor profile / Manage Subscription, rather than a permanent dashboard
+  // fixture that would need to handle the zero-linked-tutors empty state.
+  const [showTutorCodeEntry, setShowTutorCodeEntry] = useState(false);
 
   // Close menus on Escape (keyboard a11y)
   useEffect(() => {
@@ -181,6 +188,15 @@ function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup, onAdmin
                   Admin
                 </button>
               )}
+              {onTutorCodeResolved && (
+                <button
+                  onClick={() => { setShowMenu(false); setShowTutorCodeEntry(true); }}
+                  className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
+                >
+                  <KeyRound className="w-4 h-4 text-[#7C3AED]" />
+                  Have a tutor code?
+                </button>
+              )}
               <button
                 onClick={handleManageSubscription}
                 className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-slate-800 hover:bg-[#F8F7FF] transition-colors"
@@ -258,6 +274,17 @@ function AccountMenuReal({ currentUser, onManageChildren, onTutorSignup, onAdmin
             </div>
           </div>
         </div>
+      )}
+
+      {/* Layer 3b — manual tutor-code entry (see plans/tutor-attribution-durability.md) */}
+      {showTutorCodeEntry && (
+        <TutorCodeEntryModal
+          onClose={() => setShowTutorCodeEntry(false)}
+          onCodeResolved={(tutorCode) => {
+            setShowTutorCodeEntry(false);
+            onTutorCodeResolved(tutorCode);
+          }}
+        />
       )}
     </div>
   );

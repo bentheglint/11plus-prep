@@ -4,12 +4,48 @@ import { motion } from '../components/Motion';
 
 const API_URL = process.env.REACT_APP_TUTOR_API_URL;
 
-// Fetch public tutor profile — no auth needed
-async function fetchTutorProfile(tutorCode) {
+// Fetch public tutor profile — no auth needed. Exported so the manual
+// tutor-code entry point (layer 3b — TutorCodeEntryModal) can validate a
+// typed-in code against the same lookup, rather than duplicating it.
+export async function fetchTutorProfile(tutorCode) {
   const res = await fetch(`${API_URL}/api/tutor/public/${encodeURIComponent(tutorCode)}`);
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || 'Tutor not found');
   return data.tutor;
+}
+
+// Record the join-intent trace (attribution durability layer 2 — see
+// plans/tutor-attribution-durability.md) the moment this screen mounts with
+// an authed session, BEFORE the parent decides. The account is guaranteed to
+// exist by the time JoinScreen renders (post-auth, past onboarding), so this
+// is safe alongside AuthGate's own fire — the endpoint is idempotent, so
+// double-firing is harmless. Fire-and-forget: never blocks the screen, never
+// retried on failure.
+async function postJoinIntent(tutorCode, getToken) {
+  try {
+    const token = await getToken();
+    await fetch(`${API_URL}/api/tutor/join-intent`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ tutorCode }),
+    });
+  } catch {} // fire-and-forget — swallow silently
+}
+
+// Record an explicit decline ("Not now"). Awaited by the caller so the
+// localStorage clear + navigation only happen once this has had its chance
+// to land, but a failure here must never trap the parent on this screen —
+// caller tolerates rejection and proceeds regardless.
+async function postJoinIntentDecline(tutorCode, getToken) {
+  const token = await getToken();
+  const res = await fetch(`${API_URL}/api/tutor/join-intent/decline`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+    body: JSON.stringify({ tutorCode }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || 'Decline failed');
+  return data;
 }
 
 async function joinTutor(tutorCode, childId, getToken) {
@@ -56,13 +92,14 @@ function ChildSelector({ children, selected, onSelect }) {
   );
 }
 
-export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined, onBack }) {
+export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined, onBack, onDecline }) {
   const [tutor, setTutor] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedChildId, setSelectedChildId] = useState(childrenList?.[0]?.id || null);
   const [joining, setJoining] = useState(false);
   const [joined, setJoined] = useState(false);
+  const [declining, setDeclining] = useState(false);
 
   useEffect(() => {
     if (!tutorCode) { setError('Invalid invite link'); setLoading(false); return; }
@@ -70,6 +107,12 @@ export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined
       .then(t => { setTutor(t); setLoading(false); })
       .catch(err => { setError(err.message); setLoading(false); });
   }, [tutorCode]);
+
+  // Mount-time join-intent fire (layer 2) — see postJoinIntent above.
+  useEffect(() => {
+    if (!tutorCode || !getToken) return;
+    postJoinIntent(tutorCode, getToken);
+  }, [tutorCode, getToken]);
 
   const handleJoin = async () => {
     if (!selectedChildId) return;
@@ -83,6 +126,20 @@ export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined
       setError(err.message);
       setJoining(false);
     }
+  };
+
+  // "Not now" — the only path besides a successful join that wipes the
+  // pending code. Records the decline server-side first (tolerating failure —
+  // a parent must never be trapped on this screen by a network blip), then
+  // hands off to onDecline, which clears localStorage and returns home.
+  const handleDecline = async () => {
+    if (declining) return;
+    setDeclining(true);
+    try {
+      await postJoinIntentDecline(tutorCode, getToken);
+    } catch {} // tolerate failure — still proceed to clear locally and leave
+    setDeclining(false);
+    onDecline();
   };
 
   if (loading) {
@@ -134,6 +191,9 @@ export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined
   return (
     <div className="min-h-screen app-bg p-4">
       <div className="max-w-md mx-auto">
+        {/* "Not deciding now" — the code and server-side intent stay pending
+            and are re-offered next login. Only the explicit "Not now" button
+            below actually declines. */}
         <button onClick={onBack} className="flex items-center gap-2 text-sm text-slate-600 mb-6 hover:text-slate-800">
           <ArrowLeft className="w-4 h-4" />
           Back
@@ -192,6 +252,17 @@ export default function JoinScreen({ tutorCode, childrenList, getToken, onJoined
               className="w-full py-3.5 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] disabled:opacity-50 transition-colors"
             >
               {joining ? 'Linking…' : `Connect to ${tutor.display_name}`}
+            </button>
+
+            {/* Explicit decline — calm, not alarming. The only path (besides
+                a successful join) that wipes the pending code; a bare Back
+                leaves it pending so it can be re-offered next login. */}
+            <button
+              onClick={handleDecline}
+              disabled={joining || declining}
+              className="w-full py-2.5 mt-2 text-sm text-slate-500 font-medium rounded-xl hover:bg-gray-50 disabled:opacity-50 transition-colors"
+            >
+              {declining ? 'One moment…' : 'Not now'}
             </button>
           </div>
         </motion.div>

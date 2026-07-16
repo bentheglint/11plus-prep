@@ -11,7 +11,7 @@ import { isSpeedReviewAllowlisted, isTestingModeAllowlisted } from '../utils/tut
 import OfflineDataBanner from '../components/OfflineDataBanner';
 import { trialBanner, canUseFeature } from '../utils/entitlementGating';
 
-function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, getToken, onStartAssignment, loadState, onRetry, entitlement, freeTierActive, onUpgrade }) {
+function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect, onViewProgress, onViewMistakes, onViewMyLessons, onSpeedReview, onTestingMode, onStartTopic, mastery, streaksAndPP, childrenList = [], activeChildId, onSwitchChild, onManageChildren, onTutorSignup, onAdmin, onTutorCodeResolved, getToken, onStartAssignment, loadState, onRetry, entitlement, freeTierActive, onUpgrade }) {
   const [showPicker, setShowPicker] = useState(false);
   const hasMultipleChildren = childrenList.length > 1;
   const activeChild = childrenList.find(c => c.id === activeChildId);
@@ -123,7 +123,7 @@ function HomeScreen({ currentUser, userEmail, onSetCurrentUser, onSubjectSelect,
               )}
             </div>
           )}
-          <AccountMenu currentUser={currentUser} onManageChildren={onManageChildren} onTutorSignup={onTutorSignup} onAdmin={onAdmin} />
+          <AccountMenu currentUser={currentUser} onManageChildren={onManageChildren} onTutorSignup={onTutorSignup} onAdmin={onAdmin} onTutorCodeResolved={onTutorCodeResolved} />
         </div>
 
         {/* Greeting */}
