@@ -32,12 +32,9 @@ Two things about the offer:
 | 7 | Project HappyChild | Directory | caroline.taylor@happychild.org | MEDIUM | A (free) | ☐ verify scope first |
 
 **Status 16 Jul 2026:** Rows 4, 6, 7 (Parents in Touch, Home Ed Life, Project HappyChild)
-DRAFTED as Gmail drafts in prepstepapp@gmail.com — Ben to review + send AS
-hello@prepstep.co.uk (pick the alias in the From dropdown). Rows 3, 5 (eParenting,
-11 Plus Guide) are WEB CONTACT FORMS, no email — submit on their sites using the copy
-below. Rows 1, 2 (Educational App Store, EdTech Impact) are directory submission forms.
-⚠ Row 7 (HappyChild): verify the directory lists sites/apps (not just worksheets) AND
-the caroline.taylor@happychild.org address in a browser BEFORE sending.
+✅ SENT (from prepstepapp@gmail.com as hello@prepstep.co.uk). STILL TO DO: rows 1, 2
+(Educational App Store, EdTech Impact — directory submission forms, HIGHEST yield) and
+rows 3, 5 (eParenting, 11 Plus Guide — web contact forms). All copy below.
 
 ---
 
