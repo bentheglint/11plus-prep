@@ -297,29 +297,43 @@ export async function handleTutorRoutes(request, env, userId, path) {
     // client never posted a join-intent first (older client build, or the
     // parent typing the code straight into a Connect screen). This upsert
     // is the durable answer to "is this signup a tutor referral?" — see
-    // plans/tutor-attribution-durability.md layer 2. It runs BEFORE the
-    // idempotent-already-linked check below so a repeat join call also
-    // repairs a missing/stale intent row for an already-connected pupil.
-    // 'joined' is a one-way state here: it always wins over whatever the
-    // row previously held (including a prior 'declined').
+    // plans/tutor-attribution-durability.md layer 2. 'joined' is a one-way
+    // state: it always wins over whatever the row previously held
+    // (including a prior 'declined').
+    //
+    // ORDERING MATTERS (review fix): 'joined' must never be recorded unless
+    // the pupil_tutors link actually exists — intent-says-joined with no
+    // roster row is the misleading failure shape this table exists to
+    // eliminate. So the already-linked branch repairs the trace before
+    // returning, and the new-link branch lands the link INSERT and the
+    // intent upsert in ONE ATOMIC BATCH (both commit or neither). The
+    // benign inverse (link exists, intent stale) self-heals on any retry
+    // via the repair branch.
     const normalisedCode = tutorCode.toUpperCase();
-    await db.prepare(`
+    const joinedUpsert = db.prepare(`
       INSERT INTO join_intents (id, account_id, tutor_id, tutor_code, status)
       VALUES (?, ?, ?, ?, 'joined')
       ON CONFLICT(account_id, tutor_id) DO UPDATE SET
         status = 'joined',
         updated_at = datetime('now')
-    `).bind(crypto.randomUUID(), userId, tutor.id, normalisedCode).run();
+    `).bind(crypto.randomUUID(), userId, tutor.id, normalisedCode);
 
-    // Idempotent — silently succeed if already linked
+    // Idempotent — silently succeed if already linked (repairing a
+    // missing/stale intent row for the already-connected pupil first)
     const existing = await db.prepare(
       'SELECT 1 FROM pupil_tutors WHERE child_id = ? AND tutor_id = ?'
     ).bind(childId, tutor.id).first();
-    if (existing) return json({ ok: true, alreadyLinked: true });
+    if (existing) {
+      await joinedUpsert.run();
+      return json({ ok: true, alreadyLinked: true });
+    }
 
-    await db.prepare(
-      'INSERT INTO pupil_tutors (child_id, tutor_id) VALUES (?, ?)'
-    ).bind(childId, tutor.id).run();
+    await db.batch([
+      db.prepare(
+        'INSERT INTO pupil_tutors (child_id, tutor_id) VALUES (?, ?)'
+      ).bind(childId, tutor.id),
+      joinedUpsert,
+    ]);
 
     return json({ ok: true, alreadyLinked: false }, 201);
   }
