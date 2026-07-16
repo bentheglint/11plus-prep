@@ -5,6 +5,22 @@ A React web app that prepares children for the GL-style 11+ grammar-school exam.
 
 Git repository, dual-machine (PC + laptop) via github.com/bentheglint/11plus-prep.
 
+## Accounts, Services & Infrastructure (operational source of truth)
+
+**Read this before answering ANY question about accounts, email, hosting, payments, or "what's already set up". These are operational facts, not to be guessed. If something you need is not here, ASK Ben — do NOT assume and present a guess as "likely". Keep this CURRENT: when a service is set up or changed, update this section in the same session.** (Guessing has been wrong repeatedly: hello@ was assumed a non-mailbox when it exists; Trustpilot/Crunchbase were assumed absent when live.)
+
+- **Domain / DNS:** prepstep.co.uk, DNS on Cloudflare. ⚠ registrar: Ben unsure (16 Jul) — check Cloudflare Registrar or the domain's WHOIS if needed.
+- **Frontend:** Cloudflare Pages, project `11plus-prep`, prod branch `main`. Deploy ONLY via `bash deploy.sh`. Live: prepstep.co.uk (+ 11plus-prep.pages.dev).
+- **Worker/API:** Cloudflare Worker `11plus-ai-tutor` (`workers/ai-tutor/`), deploy `npx wrangler deploy`. D1 `11plus-user-data` (id 11c21cbc-441a-4af0-b9ec-0151663393ab). KV: TESTING_FLAGS, TUTOR_QUOTA.
+- **Email (outbound):** Resend (api.resend.com); Worker secrets EMAIL_API_KEY + EMAIL_FROM; unsubscribe/replies → hello@prepstep.co.uk.
+- **Email (mailboxes):** hello@prepstep.co.uk = Google Workspace mailbox (Ben, 16 Jul 2026). Ben says it "sends from prepstepapp@gmail.com". ⚠ CLARIFY the account structure (matters for which account to auth the Gmail MCP to): is prepstepapp@gmail.com the Google account you log into, with hello@prepstep.co.uk as a send-as alias — or are they separate? ⚠ Whether the app's Resend `EMAIL_FROM` is prepstepapp@gmail.com or an @prepstep.co.uk address: CONFIRM (Resend can't verify a gmail.com sender, so likely a prepstep.co.uk address).
+- **Auth:** Clerk. ⚠ Still a DEV instance in prod (production-instance move pending — see memory project_11plus_clerk_session_decision).
+- **Payments:** Stripe LIVE. Plans £24.99/mo, £199/yr; webhooks live. Test-tutor code 47BP-K563 for signup tests (NEVER Colette's VHJ5-DRN3).
+- **Analytics:** Cloudflare Web Analytics (cookieless), prepstep.co.uk token 798fdc073ac94bf78ad203532c516838. NOT GA4.
+- **Off-site profiles:** Crunchbase LIVE (crunchbase.com/organization/prepstep); Trustpilot claimed but EMPTY (review drive parked until first paid conversion). Operator = Ben Jackson, SOLE TRADER, HQ Bournemouth (NOT the Companies House "11 PLUS PREP LIMITED" entity). Founded 2026.
+- **MCP connectors (machine-specific):** "claude.ai Gmail" authed for ben@venortech.com on BOTH home PC and work PC (Ben, 16 Jul); NOT on the laptop. Draft/read/label only, NO send tool; token can expire → `/mcp` re-auth. Chrome DevTools MCP (Visual QA). ⚠ No Gmail connector for the PrepStep account (prepstepapp@gmail.com / hello@prepstep.co.uk) yet on any machine — set up when we want branded PrepStep drafts.
+- **Anthropic API:** account benjacko82 (memory reference_anthropic_api_account); powers AI tutor (Claude Haiku 4.5 via Worker).
+
 ## Master Brief
 The full project brief lives in `Master Brief Document and Working Instructions/Master_Brief_v7_0.md` (16 Apr 2026). v6 and the old Working Instructions are archived under `archive/` for historical diagram breakdowns and platform-transition notes.
 
