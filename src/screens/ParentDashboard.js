@@ -13,6 +13,7 @@ import SpeedAccuracyQuadrant from '../components/progress/SpeedAccuracyQuadrant'
 import ParentGuidance from '../components/progress/ParentGuidance';
 import TutorHomeworkCard from '../components/progress/TutorHomeworkCard';
 import TutorManagementCard from '../components/progress/TutorManagementCard';
+import ProgressCardSection from '../components/progress/ProgressCardSection';
 import LockedFeatureCard from '../components/LockedFeatureCard';
 import parentGuides from '../data/parentGuides';
 import { canUseFeature } from '../utils/entitlementGating';
@@ -168,6 +169,19 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
         {deepProgressLocked && (
           <BasicProgressSummary streaksAndPP={streaksAndPP} userData={userData} />
         )}
+
+        {/* Shareable Progress Card (growth loop 2) — effort/consistency only,
+            never scores or rankings. Available to every tier. Keyed on
+            activeChildId so switching children fully remounts it: no stale
+            name-toggle state or blob URL can bleed from one child to another
+            (plans/shareable-progress-card.md, adversarial review outcome #7). */}
+        <ProgressCardSection
+          key={activeChildId}
+          questionResults={userData.questionResults}
+          firstName={currentUser}
+          loadState={userData.loadState}
+          activeChildId={activeChildId}
+        />
 
         {/* Deep progress analytics — the topic-level diagnosis, locked for
             free-tier children. The underlying data already lives on the
