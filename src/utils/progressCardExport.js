@@ -93,10 +93,17 @@ export function svgMarkupToPngBlob(svgMarkup, size = CARD_SIZE) {
  * only (adversarial review outcome #3 — WhatsApp and others may drop
  * text/url on a file share; the on-card footer URL is the durable carrier).
  * British English, no em dash (CLAUDE.md copy rule).
+ *
+ * Reframed (Ben, 17 Jul afternoon) as an answer to a friend's "what are you
+ * using for 11+?" — one-to-one, not a group broadcast: "This is what
+ * {Name}'s last month of 11+ prep looked like. We're using PrepStep." The
+ * link itself is appended separately by callers (copyProgressCardMessage
+ * concatenates PROGRESS_CARD_SHARE_URL; shareProgressCard passes it as its
+ * own `url` field to navigator.share) so it isn't duplicated here.
  */
 export function progressCardShareText(firstName) {
-  const name = firstName || 'my child';
-  return `A little celebration of ${name}'s steady 11+ practice this month.`;
+  const possessive = firstName ? `${firstName}'s` : "my child's";
+  return `This is what ${possessive} last month of 11+ prep looked like. We're using PrepStep.`;
 }
 
 /**

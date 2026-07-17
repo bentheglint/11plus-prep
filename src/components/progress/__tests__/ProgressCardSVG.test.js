@@ -1,6 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ProgressCardSVG, { CARD_SIZE, FOOTER_FONT_SIZE, titleFontSize, progressCardDateStamp } from '../ProgressCardSVG';
+import ProgressCardSVG, {
+  CARD_SIZE,
+  FOOTER_FONT_SIZE,
+  titleFontSize,
+  progressCardDateStamp,
+} from '../ProgressCardSVG';
 
 const BASE_PROPS = {
   firstName: 'Evie',
@@ -22,6 +27,11 @@ describe('ProgressCardSVG — self-contained SVG (adversarial review outcome #2)
     expect(container.querySelector('mask')).toBeNull();
   });
 
+  it('allows linearGradient/radialGradient in defs (core SVG paint servers, not filters)', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(container.querySelector('defs linearGradient')).not.toBeNull();
+  });
+
   it('uses a fixed 1080x1080 viewBox regardless of props', () => {
     const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
     const svg = container.querySelector('svg');
@@ -41,14 +51,35 @@ describe('ProgressCardSVG — self-contained SVG (adversarial review outcome #2)
   });
 });
 
+describe('ProgressCardSVG — real PrepStep logo lockup (brand rule, CLAUDE.md 17 Jul)', () => {
+  it('renders the three BrandMark bars in the exact brand hex colours, ascending staircase heights', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    const rects = Array.from(container.querySelectorAll('rect')).filter(r =>
+      ['#3B82F6', '#7C3AED', '#22C55E'].includes(r.getAttribute('fill'))
+    );
+    expect(rects).toHaveLength(3);
+    const blue = rects.find(r => r.getAttribute('fill') === '#3B82F6');
+    const purple = rects.find(r => r.getAttribute('fill') === '#7C3AED');
+    const green = rects.find(r => r.getAttribute('fill') === '#22C55E');
+    const h = (r) => parseFloat(r.getAttribute('height'));
+    // Staircase: blue shortest, purple mid, green tallest (matches BrandMark).
+    expect(h(blue)).toBeLessThan(h(purple));
+    expect(h(purple)).toBeLessThan(h(green));
+  });
+
+  it('renders the "PrepStep" wordmark in mixed case, not an invented all-caps eyebrow', () => {
+    const { getByText, queryByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(getByText('PrepStep')).toBeInTheDocument();
+    expect(queryByText('PREPSTEP')).toBeNull();
+  });
+});
+
 describe('ProgressCardSVG — content', () => {
-  it('renders the three hero numbers and labels', () => {
+  it('renders the questions-answered and topics-explored stats and labels', () => {
     const { getByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
     expect(getByText('214')).toBeInTheDocument();
-    expect(getByText('18/30')).toBeInTheDocument();
     expect(getByText('7')).toBeInTheDocument();
     expect(getByText('questions answered')).toBeInTheDocument();
-    expect(getByText('days practised')).toBeInTheDocument();
     expect(getByText('topics explored')).toBeInTheDocument();
   });
 
@@ -81,6 +112,110 @@ describe('ProgressCardSVG — content', () => {
   });
 });
 
+describe('ProgressCardSVG — days chip (arena stat-display rule: never a slash-fraction)', () => {
+  it('renders the plain days number and an "of the last / 30 days" caption, never "18/30"', () => {
+    const { container, getByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(getByText('18')).toBeInTheDocument();
+    expect(getByText('of the last')).toBeInTheDocument();
+    expect(getByText('30 days')).toBeInTheDocument();
+    expect(container.innerHTML).not.toMatch(/18\s*\/\s*30/);
+    expect(container.innerHTML).not.toMatch(/>\d+\/30</);
+  });
+
+  it('clamps an out-of-range daysPractised into 0-30 for display', () => {
+    const { getByText } = render(<ProgressCardSVG {...BASE_PROPS} daysPractised={45} />);
+    expect(getByText('30')).toBeInTheDocument();
+  });
+});
+
+describe('ProgressCardSVG — mountain-trail scene (lit stones = daysPractised)', () => {
+  function stoneEls(container) {
+    return Array.from(container.querySelectorAll('[data-role="stone"]'));
+  }
+
+  it('lights exactly daysPractised stones out of 30, honest at a low count', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} daysPractised={3} />);
+    const stones = stoneEls(container);
+    expect(stones).toHaveLength(30);
+    const lit = stones.filter(s => s.getAttribute('data-lit') === 'true');
+    expect(lit).toHaveLength(3);
+  });
+
+  it('lights all 30 stones at the full window (glorious at 30)', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} daysPractised={30} />);
+    const stones = stoneEls(container);
+    const lit = stones.filter(s => s.getAttribute('data-lit') === 'true');
+    expect(lit).toHaveLength(30);
+  });
+
+  it('lights zero stones gracefully at zero practice days', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} daysPractised={0} />);
+    const stones = stoneEls(container);
+    const lit = stones.filter(s => s.getAttribute('data-lit') === 'true');
+    expect(lit).toHaveLength(0);
+  });
+
+  it('renders the summit flag (pole + pennant)', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(container.querySelector('[data-role="flag-pole"]')).not.toBeNull();
+    expect(container.querySelector('[data-role="flag-pennant"]')).not.toBeNull();
+  });
+});
+
+describe('ProgressCardSVG — growth band (Ben, 17 Jul revision)', () => {
+  it('renders no growth band and falls back to the quiet tagline when neither prop is given', () => {
+    const { getByText, queryByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(getByText('A month of steady effort, one question at a time')).toBeInTheDocument();
+    expect(queryByText(/clicked this month/)).toBeNull();
+    expect(queryByText(/up \d+% this month/)).toBeNull();
+  });
+
+  it('renders a single clicked-topics line, joining two names with "and"', () => {
+    const { getByText, queryByText } = render(
+      <ProgressCardSVG {...BASE_PROPS} clickedTopics={['Fractions', 'Letter Codes']} />
+    );
+    expect(getByText('Fractions and Letter Codes clicked this month')).toBeInTheDocument();
+    expect(queryByText('A month of steady effort, one question at a time')).toBeNull();
+  });
+
+  it('joins three clicked topics Oxford-style', () => {
+    const { getByText } = render(
+      <ProgressCardSVG {...BASE_PROPS} clickedTopics={['Fractions', 'Letter Codes', 'Synonyms']} />
+    );
+    expect(getByText('Fractions, Letter Codes and Synonyms clicked this month')).toBeInTheDocument();
+  });
+
+  it('renders a single subject-improvement line containing the word "up" and an arrow motif', () => {
+    const { getByText, container } = render(
+      <ProgressCardSVG {...BASE_PROPS} subjectImprovement={{ subject: 'Maths', upPercent: 25 }} />
+    );
+    expect(getByText('Maths up 25% this month')).toBeInTheDocument();
+    // The arrow motif is a plain polygon (no filter/emoji) rendered alongside the line.
+    expect(container.querySelectorAll('polygon').length).toBeGreaterThan(0);
+  });
+
+  it('renders BOTH growth lines together when both qualify', () => {
+    const { getByText } = render(
+      <ProgressCardSVG
+        {...BASE_PROPS}
+        clickedTopics={['Fractions']}
+        subjectImprovement={{ subject: 'Maths', upPercent: 25 }}
+      />
+    );
+    expect(getByText('Fractions clicked this month')).toBeInTheDocument();
+    expect(getByText('Maths up 25% this month')).toBeInTheDocument();
+  });
+
+  it('defensively never renders a non-positive subjectImprovement (belt-and-braces vs the derivation guard)', () => {
+    const { queryByText, getByText } = render(
+      <ProgressCardSVG {...BASE_PROPS} subjectImprovement={{ subject: 'Maths', upPercent: -10 }} />
+    );
+    expect(queryByText(/Maths/)).toBeNull();
+    // Falls back to the tagline since there's no OTHER qualifying growth line.
+    expect(getByText('A month of steady effort, one question at a time')).toBeInTheDocument();
+  });
+});
+
 describe('ProgressCardSVG — date stamp (self-dating screenshots)', () => {
   it('renders the London month + year, uppercased, derived from the now prop', () => {
     const { getByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
@@ -95,10 +230,7 @@ describe('ProgressCardSVG — date stamp (self-dating screenshots)', () => {
   });
 
   it('progressCardDateStamp reads the month in Europe/London across the BST midnight boundary', () => {
-    // 2026-07-31T23:30:00Z is already 1 August 00:30 in BST — the stamp must
-    // say AUGUST, not July, for a UK parent.
     expect(progressCardDateStamp(new Date('2026-07-31T23:30:00Z'))).toBe('AUGUST 2026');
-    // In GMT (winter) the same UTC clock time stays in the same month.
     expect(progressCardDateStamp(new Date('2026-01-15T23:30:00Z'))).toBe('JANUARY 2026');
   });
 });
@@ -120,57 +252,6 @@ describe('ProgressCardSVG — name toggle (adversarial review outcome #5)', () =
       <ProgressCardSVG {...BASE_PROPS} useChildName={false} now={new Date('2026-01-10T12:00:00Z')} />
     );
     expect(getByText('My child’s month of prep')).toBeInTheDocument();
-  });
-});
-
-describe('ProgressCardSVG — composition (Fable review, 17 Jul)', () => {
-  // The three hero numeral <text> elements share the same y; assert they sit
-  // at the card's visual centre band rather than the top half (fix 1), and
-  // that the date stamp sits between them and the footer.
-  function textByContent(container, content) {
-    return Array.from(container.querySelectorAll('text')).find(el => el.textContent === content);
-  }
-
-  it('places the stats row at the visual centre of the 1080-high canvas', () => {
-    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
-    const statValue = textByContent(container, '18/30');
-    const y = parseFloat(statValue.getAttribute('y'));
-    // Numeral baseline within the middle band (canvas centre 540 +/- 100)
-    expect(y).toBeGreaterThan(440);
-    expect(y).toBeLessThan(640);
-  });
-
-  it('places the date stamp between the stats row and the footer', () => {
-    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
-    const statValue = textByContent(container, '18/30');
-    const stamp = textByContent(container, 'JULY 2026');
-    const footer = textByContent(container, 'prepstep.co.uk/card');
-    const statY = parseFloat(statValue.getAttribute('y'));
-    const stampY = parseFloat(stamp.getAttribute('y'));
-    const footerY = parseFloat(footer.getAttribute('y'));
-    expect(stampY).toBeGreaterThan(statY);
-    expect(footerY).toBeGreaterThan(stampY);
-  });
-
-  it('the star motif is horizontally symmetric about the card centre line (no lopsided ornament)', () => {
-    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
-    const polygons = Array.from(container.querySelectorAll('polygon'));
-    expect(polygons.length).toBeGreaterThan(0);
-
-    // Each polygon's horizontal centre = mean of its point x-coordinates.
-    // For every star left of the centre line there must be a mirror star at
-    // the reflected x (within a rounding tolerance) — true symmetry, not a
-    // laurel that "roughly" balances.
-    const centres = polygons.map(p => {
-      const xs = p.getAttribute('points').split(' ').map(pt => parseFloat(pt.split(',')[0]));
-      return xs.reduce((a, b) => a + b, 0) / xs.length;
-    });
-    const MID = 540;
-    for (const cx of centres) {
-      const mirrored = 2 * MID - cx;
-      const hasMirror = centres.some(other => Math.abs(other - mirrored) < 1);
-      expect(hasMirror).toBe(true);
-    }
   });
 });
 
@@ -196,7 +277,6 @@ describe('titleFontSize — long-name step-down rule', () => {
     expect(medium).toBeLessThanOrEqual(short);
     expect(long).toBeLessThanOrEqual(medium);
     expect(veryLong).toBeLessThanOrEqual(long);
-    // Genuinely different, not just a flat clamp for these lengths
     expect(veryLong).toBeLessThan(short);
   });
 

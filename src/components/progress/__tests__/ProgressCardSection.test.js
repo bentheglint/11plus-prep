@@ -107,6 +107,20 @@ describe('ProgressCardSection — gating', () => {
     );
     expect(screen.getByText('Celebrate their progress')).toBeInTheDocument();
   });
+
+  it('uses the "friend who asks" supporting copy (Ben, 17 Jul revision), not the old "school-year group" framing', () => {
+    render(
+      <ProgressCardSection
+        questionResults={practiceDays(10)}
+        firstName="Evie"
+        loadState="server"
+        activeChildId="child-1"
+        now={NOW}
+      />
+    );
+    expect(screen.getByText("Made for the friend who asks how prep's going. Send it, or keep it for the fridge door.")).toBeInTheDocument();
+    expect(screen.queryByText(/school-year group/)).toBeNull();
+  });
 });
 
 describe('ProgressCardSection — preview is the export', () => {

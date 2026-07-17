@@ -1,3 +1,6 @@
+import { SUBJECT_TOPICS, computeTopicMastery } from '../hooks/useMastery';
+import { formatTopicKey } from './topicLabels';
+
 // ── Shareable Progress Card — derivation ──
 // plans/shareable-progress-card.md (growth loop 2).
 //
@@ -25,9 +28,42 @@
 // Intl.DateTimeFormat with an explicit timeZone is DST-safe by construction
 // (the browser's ICU tables own the March/October transition dates; no
 // manual offset maths here) — see the DST-boundary test.
+//
+// ── Growth band (Ben, 17 Jul afternoon revision) ──
+// Two OPTIONAL additions to the payload, both POSITIVE-ONLY deltas (never
+// absolute ability data — see the updated forbidden-fields tests):
+//
+//   clickedTopics — topic display names that crossed a mastery STAR threshold
+//   within the 30-day window. Computed by calling useMastery's own pure
+//   scoring core (computeTopicMastery, imported from ../hooks/useMastery — a
+//   deliberate reuse, not a duplicate: this file does not know or encode the
+//   90/76/56/31/1 score bands itself) twice per topic: once with only the
+//   results dated on/before the window start (the "before" snapshot) and
+//   once with results on/before "now" (the "after" snapshot). If the derived
+//   star count increased, that topic "clicked" this window. This is an
+//   honest simulation of "what the app would have shown a parent 30 days
+//   ago", not a new metric — it reuses the exact thresholds already visible
+//   elsewhere in the app (mastery stars). Capped at 3, ranked by the size of
+//   the star jump.
+//
+//   subjectImprovement — at most one { subject, upPercent }: the RELATIVE
+//   accuracy improvement of this 30-day window vs the previous 30-day
+//   window, gated on minimum sample sizes and a minimum previous-window
+//   accuracy (guards against tiny-base absurd relative jumps). Never shown
+//   as an absolute score — only ever the delta.
 
 export const PROGRESS_CARD_WINDOW_DAYS = 30;
 export const MIN_PRACTICE_DAYS_TO_SHOW = 3;
+export const MAX_CLICKED_TOPICS = 3;
+export const MIN_SUBJECT_WINDOW_ATTEMPTS = 30;
+export const MIN_PREVIOUS_WINDOW_ACCURACY = 0.30;
+export const MIN_RELATIVE_IMPROVEMENT = 0.10;
+
+const SUBJECT_DISPLAY_LABELS = {
+  maths: 'Maths',
+  english: 'English',
+  verbalreasoning: 'Verbal Reasoning',
+};
 
 const LONDON_TZ = 'Europe/London';
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
@@ -57,6 +93,126 @@ export function londonDateString(isoDate) {
   return londonDayFormatter.format(d);
 }
 
+function topicKeyToSubject(topicKey) {
+  for (const [subject, topics] of Object.entries(SUBJECT_TOPICS)) {
+    if (topics.includes(topicKey)) return subject;
+  }
+  return null;
+}
+
+/**
+ * The mastery star count useMastery's own scoring core would have reported
+ * for this topic's results, as of `asOfDate` — i.e. only counting rows dated
+ * on/before that instant. Reused (not duplicated) thresholds: computeTopicMastery
+ * already applies getMasteryLevel internally.
+ */
+function starsAsOf(resultsForTopic, asOfDate) {
+  const filtered = resultsForTopic.filter(r => {
+    const d = new Date(r.date);
+    return !Number.isNaN(d.getTime()) && d <= asOfDate;
+  });
+  return computeTopicMastery(filtered, asOfDate.getTime()).stars;
+}
+
+/**
+ * Topic display names that crossed a mastery STAR threshold within the
+ * rolling window — Ben's "clicked this month" concept. Compares the star
+ * count useMastery would derive as of the window start vs as of now, per
+ * topic, using ALL history available for that topic (not just in-window
+ * rows) so the "before" snapshot reflects genuine prior mastery, not a
+ * reset. Capped at MAX_CLICKED_TOPICS, ranked by the size of the jump.
+ *
+ * @param {Array} questionResults - full per-question history for the active
+ *   child (same input as deriveProgressCardData).
+ * @param {{ now?: Date }} [options]
+ * @returns {string[]} display names, e.g. ['Fractions', 'Letter Codes']
+ */
+export function deriveClickedTopics(questionResults, options = {}) {
+  const now = options.now instanceof Date ? options.now : new Date();
+  const cutoff = new Date(now.getTime() - PROGRESS_CARD_WINDOW_DAYS * MS_PER_DAY);
+
+  const byTopic = {};
+  for (const r of (questionResults || [])) {
+    if (!r || !r.date || !r.topicKey) continue;
+    const d = new Date(r.date);
+    if (Number.isNaN(d.getTime()) || d > now) continue;
+    if (!byTopic[r.topicKey]) byTopic[r.topicKey] = [];
+    byTopic[r.topicKey].push(r);
+  }
+
+  const crossings = [];
+  for (const topicKey of Object.keys(byTopic)) {
+    const results = byTopic[topicKey];
+    const beforeStars = starsAsOf(results, cutoff);
+    const afterStars = starsAsOf(results, now);
+    if (afterStars > beforeStars) {
+      crossings.push({ topicKey, delta: afterStars - beforeStars, afterStars });
+    }
+  }
+
+  crossings.sort((a, b) => (b.delta - a.delta) || (b.afterStars - a.afterStars));
+  return crossings.slice(0, MAX_CLICKED_TOPICS).map(c => formatTopicKey(c.topicKey));
+}
+
+/**
+ * At most one { subject, upPercent } — the best-qualifying subject's RELATIVE
+ * accuracy improvement, this 30-day window vs the previous 30-day window.
+ * Guards (all required to qualify): >=30 attempted questions in BOTH windows
+ * for that subject; previous-window accuracy >=30% (so a tiny-base subject
+ * can't report an absurd relative jump); relative improvement >=10%. Never
+ * an absolute accuracy figure — only ever the delta, and only when positive.
+ *
+ * @param {Array} questionResults - full per-question history for the active child.
+ * @param {{ now?: Date }} [options]
+ * @returns {{ subject: string, upPercent: number } | null}
+ */
+export function deriveSubjectImprovement(questionResults, options = {}) {
+  const now = options.now instanceof Date ? options.now : new Date();
+  const windowStart = new Date(now.getTime() - PROGRESS_CARD_WINDOW_DAYS * MS_PER_DAY);
+  const prevWindowStart = new Date(now.getTime() - 2 * PROGRESS_CARD_WINDOW_DAYS * MS_PER_DAY);
+
+  const bySubject = {};
+  for (const subjectKey of Object.keys(SUBJECT_TOPICS)) {
+    bySubject[subjectKey] = { thisTotal: 0, thisCorrect: 0, prevTotal: 0, prevCorrect: 0 };
+  }
+
+  for (const r of (questionResults || [])) {
+    if (!r || !r.date || !r.topicKey) continue;
+    const d = new Date(r.date);
+    if (Number.isNaN(d.getTime()) || d > now) continue;
+    const subjectKey = topicKeyToSubject(r.topicKey);
+    if (!subjectKey) continue;
+
+    if (d >= windowStart) {
+      bySubject[subjectKey].thisTotal += 1;
+      if (r.correct) bySubject[subjectKey].thisCorrect += 1;
+    } else if (d >= prevWindowStart) {
+      bySubject[subjectKey].prevTotal += 1;
+      if (r.correct) bySubject[subjectKey].prevCorrect += 1;
+    }
+  }
+
+  let best = null;
+  for (const [subjectKey, stats] of Object.entries(bySubject)) {
+    if (stats.thisTotal < MIN_SUBJECT_WINDOW_ATTEMPTS) continue;
+    if (stats.prevTotal < MIN_SUBJECT_WINDOW_ATTEMPTS) continue;
+
+    const thisAccuracy = stats.thisCorrect / stats.thisTotal;
+    const prevAccuracy = stats.prevCorrect / stats.prevTotal;
+    if (prevAccuracy < MIN_PREVIOUS_WINDOW_ACCURACY) continue;
+
+    const relativeImprovement = (thisAccuracy - prevAccuracy) / prevAccuracy;
+    if (relativeImprovement < MIN_RELATIVE_IMPROVEMENT) continue;
+
+    const upPercent = Math.round(relativeImprovement * 100);
+    if (upPercent <= 0) continue; // positive-only, belt and braces
+    if (!best || upPercent > best.upPercent) {
+      best = { subject: SUBJECT_DISPLAY_LABELS[subjectKey], upPercent };
+    }
+  }
+  return best;
+}
+
 /**
  * Derive the progress-card payload for the active child from questionResults
  * (as loaded by useD1Data / userData.questionResults), over a rolling
@@ -72,7 +228,12 @@ export function londonDateString(isoDate) {
  *   the active child's name, not the parent's — see App.js/AuthGate.js).
  * @param {{ now?: Date }} [options] - `now` is injectable for deterministic
  *   testing; defaults to the real current time.
- * @returns {{ firstName: string, questionsAnswered: number, daysPractised: number, topicsExplored: number }}
+ * @returns {{ firstName: string, questionsAnswered: number, daysPractised: number,
+ *   topicsExplored: number, clickedTopics?: string[], subjectImprovement?:
+ *   { subject: string, upPercent: number } }} clickedTopics and
+ *   subjectImprovement are OMITTED entirely (not present as empty/null keys)
+ *   when nothing qualifies — the forbidden-fields test asserts the base
+ *   shape and that no ability-shaped field can ever appear.
  */
 export function deriveProgressCardData(questionResults, firstName, options = {}) {
   const now = options.now instanceof Date ? options.now : new Date();
@@ -93,11 +254,16 @@ export function deriveProgressCardData(questionResults, firstName, options = {})
     if (r.topicKey) topicSet.add(r.topicKey);
   }
 
+  const clickedTopics = deriveClickedTopics(questionResults, { now });
+  const subjectImprovement = deriveSubjectImprovement(questionResults, { now });
+
   return {
     firstName,
     questionsAnswered,
     daysPractised: daySet.size,
     topicsExplored: topicSet.size,
+    ...(clickedTopics.length > 0 ? { clickedTopics } : {}),
+    ...(subjectImprovement ? { subjectImprovement } : {}),
   };
 }
 

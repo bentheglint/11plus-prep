@@ -127,13 +127,17 @@ describe('svgMarkupToPngBlob — the Image -> canvas -> PNG pipeline (no html-to
   });
 });
 
-describe('progressCardShareText — copy (CLAUDE.md: no em dash, warm, plain)', () => {
-  it('mentions the child by name', () => {
-    expect(progressCardShareText('Evie')).toContain('Evie');
+describe('progressCardShareText — the answer-to-a-friend reframe (Ben, 17 Jul afternoon)', () => {
+  it('reads as an answer to "what are you using for 11+?", mentioning the child by name', () => {
+    expect(progressCardShareText('Evie')).toBe(
+      "This is what Evie's last month of 11+ prep looked like. We're using PrepStep."
+    );
   });
 
-  it('falls back to "my child" with no firstName', () => {
-    expect(progressCardShareText(null)).toContain('my child');
+  it('falls back to a grammatical "my child\'s" with no firstName', () => {
+    expect(progressCardShareText(null)).toBe(
+      "This is what my child's last month of 11+ prep looked like. We're using PrepStep."
+    );
   });
 
   it('never contains an em dash', () => {

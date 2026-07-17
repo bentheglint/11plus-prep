@@ -111,6 +111,11 @@ See `Master_Brief_v7_0.md` for the full feature map.
 | Brief archive | `Master Brief Document and Working Instructions/archive/` (v6 + old Working Instructions) |
 
 ## Working Conventions
+- **All marketing/outward content uses PrepStep branding** (Ben's rule, 17 Jul 2026):
+  shareable artefacts, landing pages, emails, social images, and any consumer-facing
+  marketing surface must use the real PrepStep brand palette, typography, and logo
+  (source of truth: `src/components/landing/landing.css` tokens + the landing-header
+  logo lockup) — never an invented palette for a one-off artefact.
 - Questions always have exactly 5 options (A–E), 0-indexed correct answer
 - Explanations end with ✓
 - British English and UK context (£, metres, British names)

@@ -113,6 +113,41 @@ directions):
 - iOS 15.6 export path must be verified on a real device before calling
   done (bundle-compat guard does not catch runtime API gaps).
 
+## Design + content revision (Ben, 17 Jul afternoon — supersedes §1 details above)
+
+Ben rejected the first shipped design ("plain and boring... numbers run
+together"); a 3-way design arena ran (celebration poster / rosette / lit-trail
+scene). Final direction, per Ben:
+
+- **Design = A-frame + C-scene in TRUE BRAND**: poster energy (bold name
+  treatment, sticker-style stat chips) framing the lit mountain-trail
+  illustration (daysPractised drives lit stones climbing to a summit flag),
+  all in the real PrepStep brand palette with the real logo lockup. NO
+  invented palettes — see the new branding rule in CLAUDE.md.
+- **Content grows a GROWTH BAND** (Ben: effort alone answers "is she
+  working?", not "how's she getting on?"):
+  1. "Clicked this month" line — topics that crossed a mastery threshold
+     within the window (e.g. "Fractions and Letter Codes clicked this
+     month"). Ben approved the "clicked" concept explicitly.
+  2. Subject improvement line — "Maths up 25% this month": RELATIVE
+     accuracy improvement, this 30-day window vs the previous one. Ben's
+     framing: "not showing scores that they are getting but just the level
+     of improvement."
+  - Guards: deltas only (never absolute accuracy/scores), positive only
+    (no declines, line omitted if nothing improved), min-sample floors on
+    both windows, phrasing + arrow motif must make "up X%" unmistakable as
+    a delta (the n/30-reads-as-a-score lesson). Forbidden-fields tests
+    updated: absolute ability data still banned; positive growth deltas
+    allowed.
+- **Stat display rule** (from the arena): never format days as "26/30" —
+  reads as a mark. Plain number + "of the last 30 days" caption.
+- **Share-mechanics reframe** (Ben challenged group-broadcast realism): the
+  share moment is answering a friend's "what are you using for 11+?" —
+  one-to-one, not group broadcast. Share text reads as an answer: "This is
+  what Evie's last month of 11+ prep looked like, we're using PrepStep" +
+  link. Dashboard section framed "send it to a friend who's also prepping".
+  Family shares = volume; fine. Expectations: slow seeded channel.
+
 ## Adversarial review outcomes (Codex, 17 Jul — all accepted)
 
 1. **Preview IS the export.** The dashboard preview renders the SAME

@@ -47,6 +47,114 @@ function getReadinessBand(score) {
   return { band: 'Building Foundations', colour: '#3B82F6' };
 }
 
+// ── Pure, hook-free mastery scoring core ──
+// Extracted so any other consumer (e.g. the Shareable Progress Card's growth-
+// band derivation, src/utils/progressCard.js) can compute "what would this
+// topic's mastery have read as of some past instant" WITHOUT duplicating the
+// thresholds/formula (duplicated-truth rule, CLAUDE.md) — it calls this exact
+// function with a truncated results array and an earlier `now`. Logic is
+// byte-for-byte the same as the pre-refactor inline body of getTopicMastery;
+// `now` is a timestamp number (Date.now()-shaped), not a Date.
+export function computeTopicMastery(results, now) {
+  if (!results || results.length === 0) {
+    return {
+      score: 0, ...getMasteryLevel(0),
+      trend: { direction: 'stable', delta: 0 },
+      lastPracticed: null, daysSince: Infinity,
+      totalQuestions: 0, recentAccuracy: 0,
+      recentCount: 0,
+      bestStars: 0, bestLabel: 'Not started',
+    };
+  }
+
+  // Sort by date descending
+  const sorted = [...results].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Last 30 questions for accuracy
+  const recent30 = sorted.slice(0, 30);
+  const recentCorrect = recent30.filter(r => r.correct).length;
+  const rawAccuracy = recentCorrect / recent30.length;
+
+  // Days since last practice
+  const lastDate = new Date(sorted[0].date);
+  const daysSince = Math.floor((now - lastDate.getTime()) / (1000 * 60 * 60 * 24));
+  const recencyFactor = getRecencyFactor(daysSince);
+
+  // Volume factor — ramps from 0 to 1 over first 20 questions
+  const volumeFactor = Math.min(1.0, results.length / 20);
+
+  // Mastery score
+  const score = Math.round(rawAccuracy * recencyFactor * volumeFactor * 100);
+  const level = getMasteryLevel(score);
+
+  // Trend: compare last 10 vs previous 10
+  const last10 = sorted.slice(0, 10);
+  const prev10 = sorted.slice(10, 20);
+  let trend = { direction: 'stable', delta: 0 };
+  if (last10.length >= 5 && prev10.length >= 5) {
+    const lastAcc = last10.filter(r => r.correct).length / last10.length;
+    const prevAcc = prev10.filter(r => r.correct).length / prev10.length;
+    const delta = Math.round((lastAcc - prevAcc) * 100);
+    if (delta > 5) trend = { direction: 'up', delta };
+    else if (delta < -5) trend = { direction: 'down', delta };
+    else trend = { direction: 'stable', delta };
+  }
+
+  // Average time per question (if time data exists)
+  const withTime = recent30.filter(r => r.timeSpentMs > 0);
+  const avgTimeMs = withTime.length > 0
+    ? Math.round(withTime.reduce((s, r) => s + r.timeSpentMs, 0) / withTime.length)
+    : null;
+
+  // Difficulty breakdown
+  const diffBreakdown = {};
+  [1, 2, 3].forEach(d => {
+    const atDiff = recent30.filter(r => r.difficulty === d);
+    if (atDiff.length > 0) {
+      diffBreakdown[d] = {
+        total: atDiff.length,
+        correct: atDiff.filter(r => r.correct).length,
+        pct: Math.round((atDiff.filter(r => r.correct).length / atDiff.length) * 100),
+      };
+    }
+  });
+
+  // High-water mastery band: replay chronological, rolling window of last 30,
+  // compute score decay-free (no recency factor), track the best stars ever reached.
+  const chronological = [...results].sort((a, b) => new Date(a.date) - new Date(b.date));
+  let hwWindow = [];
+  let hwBestStars = 0;
+  let hwBestLabel = 'Not started';
+  for (let i = 0; i < chronological.length; i++) {
+    hwWindow.push(chronological[i]);
+    if (hwWindow.length > 30) hwWindow.shift();
+    const hwCorrect = hwWindow.filter(r => r.correct).length;
+    const hwAccuracy = hwCorrect / hwWindow.length;
+    const hwVolume = Math.min(1.0, (i + 1) / 20);
+    const hwScore = Math.round(hwAccuracy * hwVolume * 100);
+    const hwLevel = getMasteryLevel(hwScore);
+    if (hwLevel.stars > hwBestStars) {
+      hwBestStars = hwLevel.stars;
+      hwBestLabel = hwLevel.label;
+    }
+  }
+
+  return {
+    score,
+    ...level,
+    trend,
+    lastPracticed: sorted[0].date,
+    daysSince,
+    totalQuestions: results.length,
+    recentAccuracy: Math.round(rawAccuracy * 100),
+    recentCount: recent30.length,
+    bestStars: hwBestStars,
+    bestLabel: hwBestLabel,
+    avgTimeMs,
+    diffBreakdown,
+  };
+}
+
 export default function useMastery(questionResults, practiceLog, mockTestHistory) {
   const now = Date.now();
   const today = new Date().toISOString().split('T')[0];
@@ -63,104 +171,7 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
 
   // Get mastery data for a single topic
   const getTopicMastery = useMemo(() => (topicKey) => {
-    const results = byTopic[topicKey] || [];
-    if (results.length === 0) {
-      return {
-        score: 0, ...getMasteryLevel(0),
-        trend: { direction: 'stable', delta: 0 },
-        lastPracticed: null, daysSince: Infinity,
-        totalQuestions: 0, recentAccuracy: 0,
-        recentCount: 0,
-        bestStars: 0, bestLabel: 'Not started',
-      };
-    }
-
-    // Sort by date descending
-    const sorted = [...results].sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    // Last 30 questions for accuracy
-    const recent30 = sorted.slice(0, 30);
-    const recentCorrect = recent30.filter(r => r.correct).length;
-    const rawAccuracy = recentCorrect / recent30.length;
-
-    // Days since last practice
-    const lastDate = new Date(sorted[0].date);
-    const daysSince = Math.floor((now - lastDate.getTime()) / (1000 * 60 * 60 * 24));
-    const recencyFactor = getRecencyFactor(daysSince);
-
-    // Volume factor — ramps from 0 to 1 over first 20 questions
-    const volumeFactor = Math.min(1.0, results.length / 20);
-
-    // Mastery score
-    const score = Math.round(rawAccuracy * recencyFactor * volumeFactor * 100);
-    const level = getMasteryLevel(score);
-
-    // Trend: compare last 10 vs previous 10
-    const last10 = sorted.slice(0, 10);
-    const prev10 = sorted.slice(10, 20);
-    let trend = { direction: 'stable', delta: 0 };
-    if (last10.length >= 5 && prev10.length >= 5) {
-      const lastAcc = last10.filter(r => r.correct).length / last10.length;
-      const prevAcc = prev10.filter(r => r.correct).length / prev10.length;
-      const delta = Math.round((lastAcc - prevAcc) * 100);
-      if (delta > 5) trend = { direction: 'up', delta };
-      else if (delta < -5) trend = { direction: 'down', delta };
-      else trend = { direction: 'stable', delta };
-    }
-
-    // Average time per question (if time data exists)
-    const withTime = recent30.filter(r => r.timeSpentMs > 0);
-    const avgTimeMs = withTime.length > 0
-      ? Math.round(withTime.reduce((s, r) => s + r.timeSpentMs, 0) / withTime.length)
-      : null;
-
-    // Difficulty breakdown
-    const diffBreakdown = {};
-    [1, 2, 3].forEach(d => {
-      const atDiff = recent30.filter(r => r.difficulty === d);
-      if (atDiff.length > 0) {
-        diffBreakdown[d] = {
-          total: atDiff.length,
-          correct: atDiff.filter(r => r.correct).length,
-          pct: Math.round((atDiff.filter(r => r.correct).length / atDiff.length) * 100),
-        };
-      }
-    });
-
-    // High-water mastery band: replay chronological, rolling window of last 30,
-    // compute score decay-free (no recency factor), track the best stars ever reached.
-    const chronological = [...results].sort((a, b) => new Date(a.date) - new Date(b.date));
-    let hwWindow = [];
-    let hwBestStars = 0;
-    let hwBestLabel = 'Not started';
-    for (let i = 0; i < chronological.length; i++) {
-      hwWindow.push(chronological[i]);
-      if (hwWindow.length > 30) hwWindow.shift();
-      const hwCorrect = hwWindow.filter(r => r.correct).length;
-      const hwAccuracy = hwCorrect / hwWindow.length;
-      const hwVolume = Math.min(1.0, (i + 1) / 20);
-      const hwScore = Math.round(hwAccuracy * hwVolume * 100);
-      const hwLevel = getMasteryLevel(hwScore);
-      if (hwLevel.stars > hwBestStars) {
-        hwBestStars = hwLevel.stars;
-        hwBestLabel = hwLevel.label;
-      }
-    }
-
-    return {
-      score,
-      ...level,
-      trend,
-      lastPracticed: sorted[0].date,
-      daysSince,
-      totalQuestions: results.length,
-      recentAccuracy: Math.round(rawAccuracy * 100),
-      recentCount: recent30.length,
-      bestStars: hwBestStars,
-      bestLabel: hwBestLabel,
-      avgTimeMs,
-      diffBreakdown,
-    };
+    return computeTopicMastery(byTopic[topicKey] || [], now);
   }, [byTopic, now]);
 
   // Get mastery for all topics
@@ -318,3 +329,4 @@ export default function useMastery(questionResults, practiceLog, mockTestHistory
 }
 
 export { SUBJECT_TOPICS, getReadinessBand, getMasteryLevel };
+// computeTopicMastery is already exported at its declaration above.

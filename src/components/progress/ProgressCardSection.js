@@ -125,7 +125,7 @@ function ProgressCardSection({ questionResults, firstName, loadState, activeChil
         </button>
       </div>
       <p className="text-sm text-slate-500 mb-4">
-        A shareable moment of steady practice, ready for the school-year group. No scores, no rankings, just the effort.
+        Made for the friend who asks how prep's going. Send it, or keep it for the fridge door.
       </p>
 
       {previewUrl && (
