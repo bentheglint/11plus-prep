@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { Share2, Download, Copy, Check } from 'lucide-react';
+import { Share2, Download, Copy, Check, MessageCircle } from 'lucide-react';
 import { deriveProgressCardData, shouldShowProgressCard } from '../../utils/progressCard';
 import {
   serialiseProgressCard,
@@ -8,6 +8,8 @@ import {
   shareProgressCard,
   downloadProgressCardPng,
   copyProgressCardMessage,
+  canShareFile,
+  progressCardFullMessage,
 } from '../../utils/progressCardExport';
 
 // ── Parent Dashboard — "Celebrate their progress" ──
@@ -41,6 +43,21 @@ function ProgressCardSection({ questionResults, firstName, loadState, activeChil
 
   const isFresh = loadState === 'server';
   const show = !!activeChildId && isFresh && shouldShowProgressCard(cardData);
+
+  // Fallback-branch gating (no-file-share): whether this browser can share a
+  // PNG via the native Web Share API at all. Decided once from a lightweight
+  // probe File via the SAME canShareFile check shareProgressCard itself uses
+  // for the real share attempt — see progressCardExport.js. Where the native
+  // sheet isn't available (most desktop browsers), "Send on WhatsApp" is
+  // offered as the highest-intent fallback action.
+  const supportsNativeFileShare = useMemo(() => {
+    try {
+      const probeFile = new File([''], 'probe.png', { type: 'image/png' });
+      return canShareFile(probeFile);
+    } catch (_) {
+      return false;
+    }
+  }, []);
 
   const markup = useMemo(() => {
     if (!show) return null;
@@ -139,6 +156,16 @@ function ProgressCardSection({ questionResults, firstName, loadState, activeChil
       {error && <p className="text-sm text-red-600 mb-3">{error}</p>}
 
       <div className="flex flex-wrap gap-3">
+        {!supportsNativeFileShare && (
+          <a
+            href={`https://wa.me/?text=${encodeURIComponent(progressCardFullMessage(displayName))}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" /> Send on WhatsApp
+          </a>
+        )}
         <button
           type="button"
           onClick={handleShare}

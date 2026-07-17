@@ -89,6 +89,20 @@ export function svgMarkupToPngBlob(svgMarkup, size = CARD_SIZE) {
 }
 
 /**
+ * Whether this browser can share a given File via the native Web Share API
+ * (Level 2's navigator.canShare({files})). Centralised so shareProgressCard's
+ * real share attempt and the UI's fallback-branch gating (whether to show
+ * the WhatsApp/Download/Copy fallback buttons in place of relying on the
+ * native share sheet) ask the exact same question rather than each encoding
+ * their own copy of "what counts as file-share support".
+ */
+export function canShareFile(file) {
+  return typeof navigator !== 'undefined'
+    && typeof navigator.canShare === 'function'
+    && navigator.canShare({ files: [file] });
+}
+
+/**
  * One warm sentence for the share text / copy-message fallback. Best-effort
  * only (adversarial review outcome #3 — WhatsApp and others may drop
  * text/url on a file share; the on-card footer URL is the durable carrier).
@@ -107,6 +121,17 @@ export function progressCardShareText(firstName) {
 }
 
 /**
+ * The single full share message (warm sentence + link) — the ONE string
+ * every text-based share surface (Copy message, Send on WhatsApp) presents,
+ * so there is exactly one place that knows how the sentence and link are
+ * joined. Reused by copyProgressCardMessage below and by
+ * ProgressCardSection's WhatsApp button — never re-built independently.
+ */
+export function progressCardFullMessage(firstName) {
+  return `${progressCardShareText(firstName)} ${PROGRESS_CARD_SHARE_URL}`;
+}
+
+/**
  * Attempt a native share (image + text + link). Returns a result object
  * rather than throwing on an unsupported browser or a user cancel, so
  * callers can fall back to download/copy without special-casing errors.
@@ -117,11 +142,7 @@ export async function shareProgressCard(pngBlob, firstName, fileNamePrefix = 'pr
   const file = new File([pngBlob], `${fileNamePrefix}.png`, { type: 'image/png' });
   const text = progressCardShareText(firstName);
 
-  const canShareFiles = typeof navigator !== 'undefined'
-    && typeof navigator.canShare === 'function'
-    && navigator.canShare({ files: [file] });
-
-  if (!canShareFiles) {
+  if (!canShareFile(file)) {
     return { method: 'unsupported' };
   }
 
@@ -151,7 +172,7 @@ export function downloadProgressCardPng(pngBlob, fileNamePrefix = 'prepstep-prog
 
 /** Copy the warm sentence + link to the clipboard. Throws if unsupported — caller shows a friendly error. */
 export async function copyProgressCardMessage(firstName) {
-  const message = `${progressCardShareText(firstName)} ${PROGRESS_CARD_SHARE_URL}`;
+  const message = progressCardFullMessage(firstName);
   if (typeof navigator === 'undefined' || !navigator.clipboard || !navigator.clipboard.writeText) {
     throw new Error('Clipboard not available');
   }

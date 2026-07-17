@@ -102,6 +102,17 @@ describe('deriveClickedTopics — mastery star-crossing within the window', () =
     expect(names).toContain('Fractions');
   });
 
+  it('does NOT report a topic that only reached 1 star (0 -> 1 crossing) — Ben\'s tightened rule', () => {
+    // A single recent correct answer is enough for useMastery to award 1
+    // star (volumeFactor ramps from 0, so even one question yields a
+    // non-zero score) — but the app's "clicked" concept requires landing at
+    // 2+ stars, so this must never appear however real the 0->1 crossing is.
+    const results = [resultAt(2, 'algebra', true)];
+    const names = deriveClickedTopics(results, { now: NOW });
+    expect(names).not.toContain('Algebra');
+    expect(names).toEqual([]);
+  });
+
   it('does NOT report a topic that only decayed (stars went down, not up)', () => {
     // 20 correct answers dated 40 days ago: as of the window start (30 days
     // ago) this topic reads as fresh (daysSince=10 => high score/stars); as

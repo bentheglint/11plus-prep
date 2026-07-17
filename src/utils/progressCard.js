@@ -33,18 +33,22 @@ import { formatTopicKey } from './topicLabels';
 // Two OPTIONAL additions to the payload, both POSITIVE-ONLY deltas (never
 // absolute ability data — see the updated forbidden-fields tests):
 //
-//   clickedTopics — topic display names that crossed a mastery STAR threshold
-//   within the 30-day window. Computed by calling useMastery's own pure
-//   scoring core (computeTopicMastery, imported from ../hooks/useMastery — a
+//   clickedTopics — topic display names that crossed INTO 2-or-more mastery
+//   stars within the 30-day window (Ben's tightened rule, 17 Jul evening: the
+//   app awards 1 star for as little as one correct answer, so a 0->1
+//   crossing is a topic touched for the first time this month, not a topic
+//   that genuinely "clicked" — it must not count). 1->2, 2->3 and 0->2 all
+//   count; 0->1 does not. Computed by calling useMastery's own pure scoring
+//   core (computeTopicMastery, imported from ../hooks/useMastery — a
 //   deliberate reuse, not a duplicate: this file does not know or encode the
 //   90/76/56/31/1 score bands itself) twice per topic: once with only the
 //   results dated on/before the window start (the "before" snapshot) and
 //   once with results on/before "now" (the "after" snapshot). If the derived
-//   star count increased, that topic "clicked" this window. This is an
-//   honest simulation of "what the app would have shown a parent 30 days
-//   ago", not a new metric — it reuses the exact thresholds already visible
-//   elsewhere in the app (mastery stars). Capped at 3, ranked by the size of
-//   the star jump.
+//   star count increased AND landed at 2 or more stars, that topic "clicked"
+//   this window. This is an honest simulation of "what the app would have
+//   shown a parent 30 days ago", not a new metric — it reuses the exact
+//   thresholds already visible elsewhere in the app (mastery stars). Capped
+//   at 3, ranked by the size of the star jump.
 //
 //   subjectImprovement — at most one { subject, upPercent }: the RELATIVE
 //   accuracy improvement of this 30-day window vs the previous 30-day
@@ -115,12 +119,14 @@ function starsAsOf(resultsForTopic, asOfDate) {
 }
 
 /**
- * Topic display names that crossed a mastery STAR threshold within the
- * rolling window — Ben's "clicked this month" concept. Compares the star
- * count useMastery would derive as of the window start vs as of now, per
- * topic, using ALL history available for that topic (not just in-window
- * rows) so the "before" snapshot reflects genuine prior mastery, not a
- * reset. Capped at MAX_CLICKED_TOPICS, ranked by the size of the jump.
+ * Topic display names that crossed INTO 2-or-more mastery stars within the
+ * rolling window — Ben's "clicked this month" concept, tightened so a topic
+ * touched for the first time this month (0->1 star, trivially reached with
+ * a single correct answer) never qualifies. Compares the star count
+ * useMastery would derive as of the window start vs as of now, per topic,
+ * using ALL history available for that topic (not just in-window rows) so
+ * the "before" snapshot reflects genuine prior mastery, not a reset. Capped
+ * at MAX_CLICKED_TOPICS, ranked by the size of the jump.
  *
  * @param {Array} questionResults - full per-question history for the active
  *   child (same input as deriveProgressCardData).
@@ -145,7 +151,10 @@ export function deriveClickedTopics(questionResults, options = {}) {
     const results = byTopic[topicKey];
     const beforeStars = starsAsOf(results, cutoff);
     const afterStars = starsAsOf(results, now);
-    if (afterStars > beforeStars) {
+    // Crossed INTO 2-or-more stars: an increase that lands at >=2 stars.
+    // A 0->1 crossing (afterStars === 1) is excluded even though it's an
+    // increase — see the file header and Ben's approved rule.
+    if (afterStars > beforeStars && afterStars >= 2) {
       crossings.push({ topicKey, delta: afterStars - beforeStars, afterStars });
     }
   }
