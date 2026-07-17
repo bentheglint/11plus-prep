@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>A month of real 11+ practice | PrepStep</title>
+  <meta name="description" content="See what a shared PrepStep card means: real, steady 11+ practice. Try genuine GL-style questions yourself, free and with no account needed.">
+  <link rel="canonical" href="https://prepstep.co.uk/card">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="A month of real 11+ practice">
+  <meta property="og:description" content="See what a shared PrepStep card means: real, steady 11+ practice. Try genuine GL-style questions yourself, free and with no account needed.">
+  <meta property="og:image"       content="https://prepstep.co.uk/landing-shots/01-home.webp">
+  <meta property="og:url"         content="https://prepstep.co.uk/card">
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="PrepStep">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="A month of real 11+ practice">
+  <meta name="twitter:description" content="See what a shared PrepStep card means: real, steady 11+ practice. Try genuine GL-style questions yourself, free and with no account needed.">
+  <meta name="twitter:image"       content="https://prepstep.co.uk/landing-shots/01-home.webp">
+  <meta name="twitter:site"        content="@prepstepapp">
+
+  <!-- Inline styles - no external dependencies, works in file:// -->
+  <style>/* ── Reset & box model ───────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ── Brand tokens (mirrors PrepStep landing.css, calmer variant) ─────── */
+:root{
+  --brand:#7C3AED;
+  --brand-deep:#5A4BD1;
+  --brand-soft:#EDE8FF;
+  --brand-ghost:#F5F2FF;
+  --good:#22C55E;
+  --ink:#0F172A;
+  --slate:#64748B;
+  --slate-2:#94A3B8;
+  --paper:#F8F7FF;
+  --card:#FFFFFF;
+  --line:#E8E4F5;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.05), 0 2px 8px rgba(15,23,42,.04);
+  --shadow-md:0 8px 30px rgba(15,23,42,.08), 0 2px 8px rgba(15,23,42,.04);
+}
+
+/* ── Typography ─────────────────────────────────────────────────────── */
+/* System font stack throughout - no @font-face, so the page renders
+   identically over file:// and on first paint with zero network requests. */
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+  line-height:1.65;
+  background:linear-gradient(145deg,#EDE8FF 0%,#FFF8E8 100%) fixed;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,.font-heading{
+  /* Outfit fallback - the display font is not loaded on this static page */
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-0.01em;
+  color:var(--ink);
+}
+
+/* ── Skip link ─────────────────────────────────────────────────────── */
+.skip-link{
+  position:absolute;top:0;left:0;z-index:9999;
+  background:var(--brand);color:#fff;
+  padding:0.6rem 1rem;border-radius:0 0 6px 0;
+  font-weight:700;text-decoration:none;
+  transform:translateY(-100%);
+  transition:transform 0.15s;
+}
+.skip-link:focus{transform:translateY(0)}
+
+/* ── Layout ────────────────────────────────────────────────────────── */
+.page-wrap{
+  max-width:600px;
+  margin:0 auto;
+  padding:0 1.25rem;
+}
+
+/* ── Site header ───────────────────────────────────────────────────── */
+.site-header{
+  background:rgba(255,255,255,0.8);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:100;
+}
+.site-header__inner{
+  max-width:600px;
+  margin:0 auto;
+  padding:0.85rem 1.25rem;
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+}
+.site-header__mark{width:26px;height:26px;flex:none}
+.site-header__brand{
+  font-size:1.1rem;
+  font-weight:800;
+  color:var(--brand);
+  text-decoration:none;
+  letter-spacing:-0.02em;
+}
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
+.hero{
+  padding:2.25rem 0 1.5rem;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:0.45rem;
+  background:var(--card);
+  border:1px solid var(--line);
+  color:var(--slate);
+  padding:0.35rem 0.8rem;
+  border-radius:100px;
+  font-size:0.78rem;
+  font-weight:600;
+  box-shadow:var(--shadow-sm);
+  margin-bottom:1.1rem;
+}
+.eyebrow__dot{width:7px;height:7px;border-radius:50%;background:var(--brand);flex:none;box-shadow:0 0 0 3px var(--brand-soft)}
+.hero h1{
+  font-size:clamp(1.75rem,5vw + 1rem,2.35rem);
+  margin-bottom:1.1rem;
+}
+.hero__lead{
+  font-size:1.05rem;
+  color:var(--slate);
+  max-width:52ch;
+  margin-bottom:1.6rem;
+}
+
+/* ── Buttons ───────────────────────────────────────────────────────── */
+.btn-primary{
+  display:block;
+  width:100%;
+  text-align:center;
+  background:var(--brand);
+  color:#fff;
+  padding:1rem 1.5rem;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.02rem;
+  box-shadow:0 4px 0 var(--brand-deep), var(--shadow-sm);
+  transition:transform 0.15s,box-shadow 0.15s;
+}
+.btn-primary:hover{box-shadow:0 6px 0 var(--brand-deep), var(--shadow-md);transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(2px);box-shadow:0 1px 0 var(--brand-deep)}
+.btn-secondary{
+  display:block;
+  width:100%;
+  text-align:center;
+  background:transparent;
+  color:var(--ink);
+  border:1.5px solid var(--line);
+  padding:0.95rem 1.5rem;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:0.98rem;
+  transition:border-color 0.15s,color 0.15s;
+}
+.btn-secondary:hover{border-color:var(--brand);color:var(--brand-deep)}
+
+/* ── Sections ──────────────────────────────────────────────────────── */
+.content-section{
+  padding:1.75rem 0;
+  border-top:1px solid var(--line);
+}
+.content-section h2{
+  font-size:1.2rem;
+  margin-bottom:0.75rem;
+}
+.content-section p{
+  font-size:0.98rem;
+  color:var(--slate);
+  max-width:56ch;
+}
+
+/* ── Proof points ──────────────────────────────────────────────────── */
+.proof-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.9rem;
+}
+.proof-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:0.75rem;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:0.85rem 1rem;
+  box-shadow:var(--shadow-sm);
+  font-size:0.95rem;
+  line-height:1.5;
+  color:var(--ink);
+}
+.proof-list__icon{
+  flex:none;
+  width:22px;height:22px;
+  border-radius:50%;
+  background:var(--brand-ghost);
+  color:var(--good);
+  display:flex;align-items:center;justify-content:center;
+  margin-top:0.05rem;
+}
+
+/* ── CTA bands ─────────────────────────────────────────────────────── */
+.cta-band{
+  padding:1.5rem 0;
+}
+.cta-band--closing{
+  padding-top:2rem;
+  padding-bottom:2.25rem;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:1.5rem 1.25rem 2rem;
+  text-align:center;
+  font-size:0.85rem;
+  color:var(--slate);
+}
+.site-footer a{color:var(--slate);text-decoration:none;font-weight:600}
+.site-footer a:hover{color:var(--brand)}
+
+/* ── Focus states ──────────────────────────────────────────────────── */
+*:focus-visible{
+  outline:2px solid var(--brand);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media(min-width:480px){
+  .cta-band .btn-primary,
+  .cta-band .btn-secondary{width:auto;display:inline-block;min-width:320px}
+}</style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <svg class="site-header__mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <rect x="1" y="24" width="10" height="9" rx="2.5" fill="#3B82F6" />
+        <rect x="12" y="15" width="10" height="18" rx="2.5" fill="#7C3AED" />
+        <rect x="23" y="4" width="10" height="29" rx="2.5" fill="#22C55E" />
+      </svg>
+      <a href="/" class="site-header__brand" aria-label="PrepStep home">PrepStep</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-wrap">
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Shared with you</p>
+        <h1 id="hero-heading">You've just seen a month of real work.</h1>
+        <p class="hero__lead">That card celebrates something quietly rare: a child who kept showing up. A few minutes of 11+ practice on most days adds up faster than anyone expects, and it is the single habit that separates calm September children from anxious ones.</p>
+        <a href="/practice" class="btn-primary">Try real questions now, free, no account</a>
+      </section>
+
+      <!-- What made it -->
+      <section class="content-section" aria-labelledby="made-it-heading">
+        <h2 id="made-it-heading">What made it</h2>
+        <p>The card came from PrepStep, an 11+ practice app built by a parent taking his own children through the exam. Every focused session starts with a short lesson that teaches the method, then questions in the same style, with a patient tutor on hand for anything tricky. It never just hands over the answer.</p>
+      </section>
+
+      <!-- Proof points -->
+      <section class="content-section" aria-label="Why parents trust PrepStep">
+        <ul class="proof-list">
+          <li>
+            <span class="proof-list__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+            </span>
+            <span>More than 8,000 GL-style questions across Maths, English and Verbal Reasoning</span>
+          </li>
+          <li>
+            <span class="proof-list__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+            </span>
+            <span>A short lesson before every focused quiz, so there is no cold testing</span>
+          </li>
+          <li>
+            <span class="proof-list__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+            </span>
+            <span>A parent dashboard that names the exact topics to work on next</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Secondary CTA -->
+      <section class="cta-band" aria-label="Start a free trial">
+        <a href="/" class="btn-secondary">Start free with full access for 30 days, no card needed</a>
+      </section>
+
+      <!-- Closing primary CTA -->
+      <section class="cta-band cta-band--closing" aria-label="Try free practice questions">
+        <a href="/practice" class="btn-primary">Try real questions now, free, no account</a>
+      </section>
+
+    </div><!-- /page-wrap -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <p>PrepStep, made in the UK. <a href="/">prepstep.co.uk</a></p>
+  </footer>
+
+  <!-- Cloudflare Web Analytics, deliberately included here even though the
+       generated /practice pages omit it: /card is the whole point of the
+       Loop 2 attribution story (plan: "path IS the attribution"), so its
+       pageviews must be visible in CF Analytics. Matches public/index.html. -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "798fdc073ac94bf78ad203532c516838"}'></script>
+
+</body>
+</html>
