@@ -115,11 +115,18 @@ export function shouldShowProgressCard(cardData) {
  * Seasonal title skin (plan §1): "Summer of Prep" June-September inclusive,
  * evaluated in Europe/London so the skin doesn't flip a day early/late for
  * a UK reader relative to a server or device clock in another timezone.
+ *
+ * The possessive uses a typographic (curly) apostrophe — this string is a
+ * designed artefact rendered large on the card, where a straight ASCII
+ * quote reads cheap (Fable review fix 5). The fallback is "My child",
+ * capitalised, because this string always opens the title line (fix 4);
+ * mid-sentence copy (the share text) has its own lowercase "my child"
+ * fallback in progressCardExport.js.
  */
 export function progressCardTitle(firstName, options = {}) {
   const now = options.now instanceof Date ? options.now : new Date();
   const month = parseInt(londonMonthFormatter.format(now), 10); // 1-12
   const isSummer = month >= 6 && month <= 9;
-  const name = firstName || 'my child';
-  return isSummer ? `${name}'s Summer of Prep` : `${name}'s month of prep`;
+  const name = firstName || 'My child';
+  return isSummer ? `${name}’s Summer of Prep` : `${name}’s month of prep`;
 }

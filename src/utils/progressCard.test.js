@@ -166,21 +166,28 @@ describe('shouldShowProgressCard — minimum practice-day threshold', () => {
 
 describe('progressCardTitle — seasonal skin', () => {
   it('uses the Summer of Prep title June through September inclusive', () => {
-    expect(progressCardTitle('Evie', { now: new Date('2026-06-01T12:00:00Z') })).toBe("Evie's Summer of Prep");
-    expect(progressCardTitle('Evie', { now: new Date('2026-07-15T12:00:00Z') })).toBe("Evie's Summer of Prep");
-    expect(progressCardTitle('Evie', { now: new Date('2026-09-30T12:00:00Z') })).toBe("Evie's Summer of Prep");
+    expect(progressCardTitle('Evie', { now: new Date('2026-06-01T12:00:00Z') })).toBe('Evie’s Summer of Prep');
+    expect(progressCardTitle('Evie', { now: new Date('2026-07-15T12:00:00Z') })).toBe('Evie’s Summer of Prep');
+    expect(progressCardTitle('Evie', { now: new Date('2026-09-30T12:00:00Z') })).toBe('Evie’s Summer of Prep');
   });
 
   it('uses the neutral title outside June-September', () => {
-    expect(progressCardTitle('Evie', { now: new Date('2026-10-01T12:00:00Z') })).toBe("Evie's month of prep");
-    expect(progressCardTitle('Evie', { now: new Date('2026-01-15T12:00:00Z') })).toBe("Evie's month of prep");
+    expect(progressCardTitle('Evie', { now: new Date('2026-10-01T12:00:00Z') })).toBe('Evie’s month of prep');
+    expect(progressCardTitle('Evie', { now: new Date('2026-01-15T12:00:00Z') })).toBe('Evie’s month of prep');
   });
 
-  it('supports the "my child" name toggle', () => {
-    expect(progressCardTitle('my child', { now: new Date('2026-07-01T12:00:00Z') })).toBe("my child's Summer of Prep");
+  it('uses a typographic (curly) apostrophe in the possessive, never the straight ASCII quote', () => {
+    const title = progressCardTitle('Evie', { now: new Date('2026-07-01T12:00:00Z') });
+    expect(title).toContain('’');
+    expect(title).not.toContain("'");
   });
 
-  it('falls back to "my child" if no firstName is given', () => {
-    expect(progressCardTitle(null, { now: new Date('2026-07-01T12:00:00Z') })).toBe("my child's Summer of Prep");
+  it('supports the "My child" name toggle, capitalised because it opens the title line', () => {
+    expect(progressCardTitle('My child', { now: new Date('2026-07-01T12:00:00Z') })).toBe('My child’s Summer of Prep');
+    expect(progressCardTitle('My child', { now: new Date('2026-01-15T12:00:00Z') })).toBe('My child’s month of prep');
+  });
+
+  it('falls back to a capitalised "My child" if no firstName is given', () => {
+    expect(progressCardTitle(null, { now: new Date('2026-07-01T12:00:00Z') })).toBe('My child’s Summer of Prep');
   });
 });

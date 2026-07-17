@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ProgressCardSVG, { CARD_SIZE, FOOTER_FONT_SIZE, titleFontSize } from '../ProgressCardSVG';
+import ProgressCardSVG, { CARD_SIZE, FOOTER_FONT_SIZE, titleFontSize, progressCardDateStamp } from '../ProgressCardSVG';
 
 const BASE_PROPS = {
   firstName: 'Evie',
@@ -59,14 +59,20 @@ describe('ProgressCardSVG — content', () => {
 
   it('renders the seasonal Summer of Prep title in Jun-Sep', () => {
     const { getByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
-    expect(getByText("Evie's Summer of Prep")).toBeInTheDocument();
+    expect(getByText('Evie’s Summer of Prep')).toBeInTheDocument();
   });
 
   it('renders the neutral title outside Jun-Sep', () => {
     const { getByText } = render(
       <ProgressCardSVG {...BASE_PROPS} now={new Date('2026-01-10T12:00:00Z')} />
     );
-    expect(getByText("Evie's month of prep")).toBeInTheDocument();
+    expect(getByText('Evie’s month of prep')).toBeInTheDocument();
+  });
+
+  it('uses a typographic (curly) apostrophe in the rendered title, never the straight ASCII quote', () => {
+    const { getByText, queryByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(getByText('Evie’s Summer of Prep')).toBeInTheDocument();
+    expect(queryByText("Evie's Summer of Prep")).toBeNull();
   });
 
   it('renders the quiet footer URL', () => {
@@ -75,16 +81,96 @@ describe('ProgressCardSVG — content', () => {
   });
 });
 
+describe('ProgressCardSVG — date stamp (self-dating screenshots)', () => {
+  it('renders the London month + year, uppercased, derived from the now prop', () => {
+    const { getByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    expect(getByText('JULY 2026')).toBeInTheDocument();
+  });
+
+  it('tracks a different month via the now prop', () => {
+    const { getByText } = render(
+      <ProgressCardSVG {...BASE_PROPS} now={new Date('2026-01-10T12:00:00Z')} />
+    );
+    expect(getByText('JANUARY 2026')).toBeInTheDocument();
+  });
+
+  it('progressCardDateStamp reads the month in Europe/London across the BST midnight boundary', () => {
+    // 2026-07-31T23:30:00Z is already 1 August 00:30 in BST — the stamp must
+    // say AUGUST, not July, for a UK parent.
+    expect(progressCardDateStamp(new Date('2026-07-31T23:30:00Z'))).toBe('AUGUST 2026');
+    // In GMT (winter) the same UTC clock time stays in the same month.
+    expect(progressCardDateStamp(new Date('2026-01-15T23:30:00Z'))).toBe('JANUARY 2026');
+  });
+});
+
 describe('ProgressCardSVG — name toggle (adversarial review outcome #5)', () => {
   it('shows the real first name by default', () => {
     const { getByText } = render(<ProgressCardSVG {...BASE_PROPS} />);
-    expect(getByText("Evie's Summer of Prep")).toBeInTheDocument();
+    expect(getByText('Evie’s Summer of Prep')).toBeInTheDocument();
   });
 
-  it('shows "my child" when useChildName is false, never the real name', () => {
+  it('shows a capitalised "My child" when useChildName is false, never the real name', () => {
     const { getByText, queryByText } = render(<ProgressCardSVG {...BASE_PROPS} useChildName={false} />);
-    expect(getByText("my child's Summer of Prep")).toBeInTheDocument();
+    expect(getByText('My child’s Summer of Prep')).toBeInTheDocument();
     expect(queryByText(/Evie/)).toBeNull();
+  });
+
+  it('capitalises "My child" in the neutral skin too', () => {
+    const { getByText } = render(
+      <ProgressCardSVG {...BASE_PROPS} useChildName={false} now={new Date('2026-01-10T12:00:00Z')} />
+    );
+    expect(getByText('My child’s month of prep')).toBeInTheDocument();
+  });
+});
+
+describe('ProgressCardSVG — composition (Fable review, 17 Jul)', () => {
+  // The three hero numeral <text> elements share the same y; assert they sit
+  // at the card's visual centre band rather than the top half (fix 1), and
+  // that the date stamp sits between them and the footer.
+  function textByContent(container, content) {
+    return Array.from(container.querySelectorAll('text')).find(el => el.textContent === content);
+  }
+
+  it('places the stats row at the visual centre of the 1080-high canvas', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    const statValue = textByContent(container, '18/30');
+    const y = parseFloat(statValue.getAttribute('y'));
+    // Numeral baseline within the middle band (canvas centre 540 +/- 100)
+    expect(y).toBeGreaterThan(440);
+    expect(y).toBeLessThan(640);
+  });
+
+  it('places the date stamp between the stats row and the footer', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    const statValue = textByContent(container, '18/30');
+    const stamp = textByContent(container, 'JULY 2026');
+    const footer = textByContent(container, 'prepstep.co.uk/card');
+    const statY = parseFloat(statValue.getAttribute('y'));
+    const stampY = parseFloat(stamp.getAttribute('y'));
+    const footerY = parseFloat(footer.getAttribute('y'));
+    expect(stampY).toBeGreaterThan(statY);
+    expect(footerY).toBeGreaterThan(stampY);
+  });
+
+  it('the star motif is horizontally symmetric about the card centre line (no lopsided ornament)', () => {
+    const { container } = render(<ProgressCardSVG {...BASE_PROPS} />);
+    const polygons = Array.from(container.querySelectorAll('polygon'));
+    expect(polygons.length).toBeGreaterThan(0);
+
+    // Each polygon's horizontal centre = mean of its point x-coordinates.
+    // For every star left of the centre line there must be a mirror star at
+    // the reflected x (within a rounding tolerance) — true symmetry, not a
+    // laurel that "roughly" balances.
+    const centres = polygons.map(p => {
+      const xs = p.getAttribute('points').split(' ').map(pt => parseFloat(pt.split(',')[0]));
+      return xs.reduce((a, b) => a + b, 0) / xs.length;
+    });
+    const MID = 540;
+    for (const cx of centres) {
+      const mirrored = 2 * MID - cx;
+      const hasMirror = centres.some(other => Math.abs(other - mirrored) < 1);
+      expect(hasMirror).toBe(true);
+    }
   });
 });
 
@@ -102,10 +188,10 @@ describe('ProgressCardSVG — footer legibility floor (adversarial review outcom
 
 describe('titleFontSize — long-name step-down rule', () => {
   it('shrinks monotonically as the title gets longer', () => {
-    const short = titleFontSize("Evie's Summer of Prep");
-    const medium = titleFontSize("Maximilian's Summer of Prep");
-    const long = titleFontSize("Persephone-Alexandra's Summer of Prep");
-    const veryLong = titleFontSize("Christopher-Alexander-Montgomery's Summer of Prep");
+    const short = titleFontSize('Evie’s Summer of Prep');
+    const medium = titleFontSize('Maximilian’s Summer of Prep');
+    const long = titleFontSize('Persephone-Alexandra’s Summer of Prep');
+    const veryLong = titleFontSize('Christopher-Alexander-Montgomery’s Summer of Prep');
 
     expect(medium).toBeLessThanOrEqual(short);
     expect(long).toBeLessThanOrEqual(medium);
@@ -121,13 +207,13 @@ describe('titleFontSize — long-name step-down rule', () => {
 
   it('a rendered card with a long name uses a visibly smaller title font-size than a short name', () => {
     const shortRender = render(<ProgressCardSVG {...BASE_PROPS} firstName="Jo" />);
-    const shortTitle = shortRender.getByText("Jo's Summer of Prep");
+    const shortTitle = shortRender.getByText('Jo’s Summer of Prep');
     const shortSize = parseFloat(shortTitle.getAttribute('font-size'));
 
     const longRender = render(
       <ProgressCardSVG {...BASE_PROPS} firstName="Christopher-Alexander-Montgomery" />
     );
-    const longTitle = longRender.getByText("Christopher-Alexander-Montgomery's Summer of Prep");
+    const longTitle = longRender.getByText('Christopher-Alexander-Montgomery’s Summer of Prep');
     const longSize = parseFloat(longTitle.getAttribute('font-size'));
 
     expect(longSize).toBeLessThan(shortSize);

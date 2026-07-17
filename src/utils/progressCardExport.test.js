@@ -74,7 +74,7 @@ describe('serialiseProgressCard — preview IS the export (adversarial review ou
     const anonymised = serialiseProgressCard({ ...BASE_PROPS, useChildName: false });
     expect(named).toContain('Evie');
     expect(anonymised).not.toContain('Evie');
-    expect(anonymised).toContain('my child');
+    expect(anonymised).toContain('My child'); // capitalised — it opens the title line
   });
 });
 
