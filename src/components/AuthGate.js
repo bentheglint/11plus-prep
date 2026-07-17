@@ -562,6 +562,27 @@ function AuthGateReal({ children }) {
     } catch {}
   }, [authLoaded, isSignedIn, user]);
 
+  // Clear the tutor join code from unsafeMetadata (attribution durability fix,
+  // 17 Jul): nothing previously cleared this field once stamped by <SignUp>
+  // above, so after a parent explicitly declined ("Not now"), the NEXT page
+  // load hit the restore effect above — localStorage empty, metadata still
+  // carrying the code — which re-seeded localStorage and routed straight back
+  // into JoinScreen, which then re-fired a join-intent POST and flipped the
+  // server's 'declined' record back to 'pending'. Endless re-offer loop.
+  // Only ever called at a TERMINAL decision (join or decline) — never on
+  // restore/consume, since an undecided parent's metadata must keep working
+  // as a cross-browser carrier (see fallbackRedirectUrl/unsafeMetadata comment
+  // on <SignUp> above). Clerk's user.update({ unsafeMetadata }) REPLACES the
+  // whole object, so we spread-remove just the joinCode key to avoid
+  // clobbering any other metadata the account may carry. Fire-and-forget —
+  // must never block or surface to the UI — and a safe no-op with no Clerk
+  // user (e.g. the ?dev-auth=true bypass, which never reaches this hook tree).
+  const clearJoinCodeMetadata = useCallback(() => {
+    if (!user?.unsafeMetadata?.joinCode) return;
+    const { joinCode, ...rest } = user.unsafeMetadata;
+    user.update({ unsafeMetadata: rest }).catch(() => {});
+  }, [user]);
+
   useEffect(() => {
     if (authLoaded && isSignedIn) {
       checkAccount();
@@ -1023,7 +1044,7 @@ function AuthGateReal({ children }) {
   // Ready — render the app with child name + access info + active child ID + children list
   if (onboardingStep === 'ready') {
     const userEmail = user?.primaryEmailAddress?.emailAddress || '';
-    return children(childName, getToken, access, activeChildId, childrenList, userEmail);
+    return children(childName, getToken, access, activeChildId, childrenList, userEmail, clearJoinCodeMetadata);
   }
 
   // Fallback loading

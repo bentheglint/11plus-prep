@@ -48,11 +48,11 @@ const appTree = isDiagramViewer ? (
   <TutorLandingPage />
 ) : (
   <AuthGate>
-    {(childName, getToken, access, activeChildId, childrenList, userEmail) => (
+    {(childName, getToken, access, activeChildId, childrenList, userEmail, clearJoinCodeMetadata) => (
       <>
         <a href="#main-content" className="skip-to-content">Skip to content</a>
         <main id="main-content">
-          <AppLoader App={App} currentUser={childName} getToken={getToken} activeChildId={activeChildId} childrenList={childrenList || []} userEmail={userEmail || ''} tutorEligible={access?.tutorEligible || false} isAdmin={access?.isAdmin || false} entitlement={access?.entitlement || null} />
+          <AppLoader App={App} currentUser={childName} getToken={getToken} activeChildId={activeChildId} childrenList={childrenList || []} userEmail={userEmail || ''} tutorEligible={access?.tutorEligible || false} isAdmin={access?.isAdmin || false} entitlement={access?.entitlement || null} clearJoinCodeMetadata={clearJoinCodeMetadata} />
           <DevReviewPanel />
         </main>
       </>

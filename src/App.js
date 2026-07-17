@@ -82,7 +82,7 @@ const quizVisualComponents = {
   RightTriangleExteriorAngle
 };
 
-function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin, entitlement }) {
+function App({ currentUser: authUser, getToken, loadedData, activeChildId: initialChildId, childrenList: initialChildrenList, userEmail, tutorEligible, isAdmin, entitlement, clearJoinCodeMetadata }) {
   // Destructure the lazy-loaded question data into the same names the rest
   // of this file used to import statically. Keeps every downstream reference
   // to mathsData/englishData/vrData working without further edits.
@@ -1961,6 +1961,12 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           // Clear the join path from the URL and any saved join code, then go home
           window.history.replaceState({}, '', '/');
           try { localStorage.removeItem('pending-join-code'); } catch {}
+          // Also clear the unsafeMetadata carrier (attribution durability fix,
+          // 17 Jul) — a terminal decision (joined), so the code must stop
+          // acting as a carrier. See AuthGate.js's clearJoinCodeMetadata for
+          // why this is required: without it, stale metadata re-seeds
+          // localStorage on a later page load and re-shows this screen.
+          clearJoinCodeMetadata?.();
           setActiveChildId(childId);
           setCurrentView('home');
         }}
@@ -1982,6 +1988,14 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
           // it can never linger and mislink a later child.
           window.history.replaceState({}, '', '/');
           try { localStorage.removeItem('pending-join-code'); } catch {}
+          // Also clear the unsafeMetadata carrier (attribution durability fix,
+          // 17 Jul). Without this, nothing ever cleared it: the NEXT page
+          // load's restore effect in AuthGate.js found localStorage empty but
+          // metadata still holding the code, re-seeded localStorage, routed
+          // straight back into JoinScreen, and re-fired a join-intent POST —
+          // flipping the server's 'declined' record back to 'pending' in an
+          // endless re-offer loop.
+          clearJoinCodeMetadata?.();
           setCurrentView('home');
         }}
       />

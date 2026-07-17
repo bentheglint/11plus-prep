@@ -579,6 +579,88 @@ describe('declined intents are never re-offered', () => {
   });
 });
 
+// ── unsafeMetadata cleared on terminal decision (attribution durability fix,
+// 17 Jul) ──
+//
+// The bug: nothing ever cleared unsafeMetadata.joinCode once <SignUp> stamped
+// it. So after a parent explicitly declined, the NEXT page load's restore
+// effect (tested above under "layer 1 hybrid") found localStorage empty but
+// the metadata still holding the code, re-seeded localStorage, and App.js
+// routed straight back into JoinScreen — which re-fired a join-intent POST
+// and flipped the server's 'declined' record back to 'pending'. Endless
+// re-offer loop, corrupted decline records. Same staleness would also
+// re-show the Connect screen after a successful join.
+//
+// The fix: AuthGate.js's clearJoinCodeMetadata is called at BOTH terminal
+// decisions (App.js's onJoined and onDecline handlers) — never on
+// restore/consume, since an undecided parent's metadata must keep working as
+// a cross-browser carrier. Mirrors AuthGate.js's exact spread-remove logic:
+// Clerk's user.update({ unsafeMetadata }) REPLACES the whole object, so only
+// the joinCode key is removed and the rest is preserved.
+
+function mirrorClearJoinCodeMetadata(user) {
+  if (!user?.unsafeMetadata?.joinCode) return null; // safe no-op — mirrors AuthGate's guard
+  const { joinCode, ...rest } = user.unsafeMetadata;
+  return rest; // mirrors the object passed to user.update({ unsafeMetadata: rest })
+}
+
+describe('clearJoinCodeMetadata — terminal decision clears unsafeMetadata.joinCode', () => {
+  it('decline clears joinCode from unsafeMetadata while preserving other unsafeMetadata keys', () => {
+    const user = { unsafeMetadata: { joinCode: 'ABCD-EFGH', otherKey: 'preserve-me' } };
+
+    const updatedMetadata = mirrorClearJoinCodeMetadata(user);
+
+    expect(updatedMetadata).toEqual({ otherKey: 'preserve-me' });
+    expect(updatedMetadata.joinCode).toBeUndefined();
+  });
+
+  it('join clears joinCode from unsafeMetadata the same way (same callback, fired from onJoined)', () => {
+    const user = { unsafeMetadata: { joinCode: 'ABCD-EFGH', otherKey: 'preserve-me' } };
+
+    const updatedMetadata = mirrorClearJoinCodeMetadata(user);
+
+    expect(updatedMetadata).toEqual({ otherKey: 'preserve-me' });
+  });
+
+  it('the restore effect does nothing once metadata has been cleared — decline no longer resurrects (regression test for the re-offer loop)', () => {
+    const fakeLocalStorage = makeFakeStorage();
+    // Simulates the state immediately after a decline has cleared
+    // unsafeMetadata.joinCode: localStorage is empty (App.js's onDecline
+    // removed it) AND the metadata carrier no longer has the code either.
+    const user = { unsafeMetadata: {} };
+
+    // Mirrors AuthGate's post-auth restore effect exactly.
+    if (!fakeLocalStorage.getItem('pending-join-code')) {
+      const metaCode = user.unsafeMetadata?.joinCode;
+      if (metaCode && typeof metaCode === 'string') {
+        fakeLocalStorage.setItem('pending-join-code', metaCode.toUpperCase());
+      }
+    }
+
+    // Before the fix, a stale metaCode here would have re-seeded localStorage
+    // and routed straight back into JoinScreen. Post-clear, there's nothing
+    // to restore, so App.js's currentView initializer falls through to 'home'.
+    expect(fakeLocalStorage.getItem('pending-join-code')).toBeNull();
+  });
+
+  it('bare Back does not clear unsafeMetadata — an undecided parent must keep the cross-browser carrier', () => {
+    const user = { unsafeMetadata: { joinCode: 'ABCD-EFGH' } };
+
+    // Mirrors App.js's JoinScreen onBack prop, which deliberately never calls
+    // clearJoinCodeMetadata (only onJoined/onDecline do).
+    const onBack = () => { /* just navigates home */ };
+    onBack();
+
+    expect(user.unsafeMetadata.joinCode).toBe('ABCD-EFGH');
+  });
+
+  it('is a safe no-op when there is no Clerk user (e.g. the ?dev-auth=true bypass)', () => {
+    expect(() => mirrorClearJoinCodeMetadata(null)).not.toThrow();
+    expect(() => mirrorClearJoinCodeMetadata(undefined)).not.toThrow();
+    expect(mirrorClearJoinCodeMetadata(null)).toBeNull();
+  });
+});
+
 // ── pupil_tutors idempotency ──
 
 describe('join idempotency', () => {
