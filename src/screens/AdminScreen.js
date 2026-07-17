@@ -144,6 +144,74 @@ function BulkInviteReviews({ getToken }) {
   );
 }
 
+// ── "How parents heard" tally (Shareable Progress Card growth loop) ──
+// Read-only count-by-value fed by GET /api/admin/heard-about (routes/admin.js),
+// itself fed by the one-shot survey chip on the parent dashboard
+// (src/components/HeardAboutChip.js). See plans/shareable-progress-card.md.
+// 'dismissed' is shown too (not hidden) — it's the take-up signal for the
+// chip itself, not something to bury.
+const HEARD_ABOUT_LABELS = {
+  'progress-card': 'Shared progress card',
+  'tutor': 'Tutor',
+  'search-or-ai': 'Search or AI answer',
+  'word-of-mouth': 'Word of mouth',
+  'other': 'Somewhere else',
+  'dismissed': 'Dismissed without answering',
+};
+
+function HeardAboutTallySection({ getToken }) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      setData(await apiFetch('/api/admin/heard-about', getToken));
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }, [getToken]);
+
+  useEffect(() => { load(); }, [load]);
+
+  if (loading) return <p className="text-slate-400 text-sm px-1 mt-2">Loading survey results…</p>;
+  if (error) {
+    return (
+      <div className="mx-1 p-4 bg-red-50 rounded-2xl border border-red-100 mb-6">
+        <p className="text-red-700 text-sm font-medium mb-1">Couldn't load the heard-about tally</p>
+        <p className="text-red-500 text-xs">{error}</p>
+      </div>
+    );
+  }
+  if (!data) return null;
+
+  const entries = Object.entries(data.counts || {}).sort((a, b) => b[1] - a[1]);
+
+  return (
+    <>
+      <h2 className="font-heading font-bold text-slate-800 mb-2 px-1">
+        How parents heard <span className="text-slate-400 font-normal text-sm">({data.total} response{data.total === 1 ? '' : 's'})</span>
+      </h2>
+      {entries.length === 0 ? (
+        <p className="text-xs text-slate-400 px-1 mb-6">No responses yet.</p>
+      ) : (
+        <div className="bg-white rounded-2xl border border-slate-100 shadow-sm divide-y divide-slate-100 mb-6">
+          {entries.map(([value, count]) => (
+            <div key={value} className="flex items-center justify-between p-3">
+              <p className="text-sm text-slate-700">{HEARD_ABOUT_LABELS[value] || value}</p>
+              <p className="text-sm font-semibold text-slate-800">{count}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </>
+  );
+}
+
 // ── Tutor attribution visibility (layer 4) ──
 // Read-only v1: answers "is this signup a tutor referral, and to whom?" in
 // one screen, without messaging the tutor. See
@@ -342,6 +410,9 @@ export default function AdminScreen({ getToken, onBack }) {
           <>
             {/* Bulk invite reviews — top priority admin action */}
             <BulkInviteReviews getToken={getToken} />
+
+            {/* How parents heard — Shareable Progress Card growth-loop survey */}
+            <HeardAboutTallySection getToken={getToken} />
 
             {/* Tutor attribution — is this signup a tutor referral? */}
             <TutorAttributionSection getToken={getToken} />

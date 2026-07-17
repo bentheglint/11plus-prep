@@ -14,6 +14,7 @@ import ParentGuidance from '../components/progress/ParentGuidance';
 import TutorHomeworkCard from '../components/progress/TutorHomeworkCard';
 import TutorManagementCard from '../components/progress/TutorManagementCard';
 import ProgressCardSection from '../components/progress/ProgressCardSection';
+import HeardAboutChip from '../components/HeardAboutChip';
 import LockedFeatureCard from '../components/LockedFeatureCard';
 import parentGuides from '../data/parentGuides';
 import { canUseFeature } from '../utils/entitlementGating';
@@ -39,11 +40,16 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
   const [subscriptionStatus, setSubscriptionStatus] = useState(null);
   const [portalState, setPortalState] = useState('idle'); // idle | loading | error
   const [portalError, setPortalError] = useState(null);
+  // null = not yet answered/dismissed (chip shows); any string = answered or
+  // the 'dismissed' sentinel (chip stays hidden forever — see
+  // src/components/HeardAboutChip.js and routes/account.js's heardAbout field).
+  const [heardAbout, setHeardAbout] = useState(null);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
-  // Load account state on mount: email preference + subscription status.
-  // Single fetch — the GET /api/account response carries both.
+  // Load account state on mount: email preference + subscription status +
+  // the heard-about survey state. Single fetch — the GET /api/account
+  // response carries all three.
   useEffect(() => {
     if (!getToken || !API_URL) return;
     (async () => {
@@ -56,6 +62,7 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
           const data = await res.json();
           setEmailOptIn(!!data.account?.email_opt_in);
           setSubscriptionStatus(data.access?.subscriptionStatus || null);
+          setHeardAbout(data.heardAbout || null);
         }
       } catch (_) {}
     })();
@@ -150,6 +157,11 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
     <div className="app-bg p-4 min-h-screen">
       <div className="max-w-4xl mx-auto">
         {/* Header handled by ProgressScreen tabs */}
+
+        {/* "How did you hear about PrepStep?" — dismissible, one-tap, gone
+            forever once answered or dismissed. Parent dashboard only, never
+            a modal, never onboarding, never the child view. */}
+        <HeardAboutChip heardAbout={heardAbout} getToken={getToken} onAnswered={setHeardAbout} />
 
         {/* Tutor Homework card — dormant when no tutor has assigned anything */}
         <TutorHomeworkCard activeChildId={activeChildId} getToken={getToken} />

@@ -1,0 +1,31 @@
+-- 0020: accounts.heard_about — one-shot "how did you hear about PrepStep?"
+-- attribution survey, added for the Shareable Progress Card growth loop
+-- (plans/shareable-progress-card.md). Answers the question CF Web Analytics
+-- and the /card pageview signal cannot: a screenshot share carries no link,
+-- so this self-report is the only trace of that path ever reaching the app.
+--
+-- Playbook-safe class (docs/migration-playbook.md): a single additive
+-- `ALTER TABLE ... ADD COLUMN` on an existing table, nullable, no DEFAULT
+-- needed (NULL means "not answered yet" — the natural default for every
+-- existing row). No DROP, no rebuild, no FK parent touched beyond the
+-- ADD COLUMN itself (accounts already IS the FK parent everything else
+-- hangs off — this migration does not change any FK or cascade behaviour).
+-- Full ceremony still applies before this touches prod: staging-tested
+-- against a snapshot, fresh pre-apply snapshot taken immediately before,
+-- tracked via `wrangler d1 migrations apply` (see docs/migration-playbook.md).
+--
+-- Values are validated application-side (routes/account.js) against a fixed
+-- vocabulary — 'progress-card' | 'tutor' | 'search-or-ai' | 'word-of-mouth' |
+-- 'other' | 'dismissed' — not a SQL CHECK constraint, so a future option can
+-- be added without another migration. 'dismissed' is a sentinel (the chip's
+-- quiet "no thanks" reuses this same column so the dismissal is durable
+-- across devices too, not just a local flag) rather than a real answer.
+-- Write-once semantics (never overwrite a non-null value) are also enforced
+-- application-side, not by the schema.
+--
+-- The accepting endpoint must keep working even before this migration has
+-- been applied (deploy-order resilience, adversarial review outcome #9 in
+-- the plan doc): it catches "no such column" and answers 200 {stored:false}
+-- rather than a 500 that could be mistaken for a real outage.
+
+ALTER TABLE accounts ADD COLUMN heard_about TEXT;

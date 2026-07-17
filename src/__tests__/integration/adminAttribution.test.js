@@ -14,6 +14,7 @@ import AdminScreen from '../../screens/AdminScreen';
 
 const TUTORS_RESPONSE = { tutors: [], pending_invites: [] };
 const BULK_INVITE_REVIEWS_RESPONSE = { batches: [] };
+const HEARD_ABOUT_RESPONSE = { counts: {}, total: 0 };
 
 const JOIN_INTENTS_RESPONSE = {
   intents: [
@@ -60,6 +61,9 @@ function mockAdminFetch({ joinIntents = JOIN_INTENTS_RESPONSE, joinIntentsOk = t
     }
     if (typeof url === 'string' && url.endsWith('/api/admin/bulk-invite-reviews')) {
       return Promise.resolve({ ok: true, json: () => Promise.resolve(BULK_INVITE_REVIEWS_RESPONSE) });
+    }
+    if (typeof url === 'string' && url.endsWith('/api/admin/heard-about')) {
+      return Promise.resolve({ ok: true, json: () => Promise.resolve(HEARD_ABOUT_RESPONSE) });
     }
     if (typeof url === 'string' && url.endsWith('/api/admin/join-intents')) {
       return Promise.resolve({

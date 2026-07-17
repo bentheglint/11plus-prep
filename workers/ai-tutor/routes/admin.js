@@ -9,6 +9,7 @@
 //   GET    /api/admin/remove-pupil-impact    — preview what remove-pupil deletes
 //   POST   /api/admin/remove-pupil           — unlink a pupil from a tutor (scoped purge)
 //   GET    /api/admin/join-intents           — tutor-attribution visibility (layer 4)
+//   GET    /api/admin/heard-about            — "how parents heard" survey tally
 //
 // Every mutation is wrapped with its admin_audit insert in one db.batch so the
 // log can never disagree with what happened. target/detail hold opaque IDs and
@@ -302,6 +303,33 @@ export async function handleAdminRoutes(request, env, admin, path) {
     }));
 
     return json({ intents, unlinked });
+  }
+
+  // ── GET /api/admin/heard-about — "how parents heard" survey tally ──
+  // Read-only count-by-value for the Shareable Progress Card growth-loop
+  // survey (migration 0020, plans/shareable-progress-card.md) — otherwise
+  // the free-text-shaped answers are a silent grave nobody looks at. Same
+  // column-absent tolerance as the write endpoint (routes/account.js) so
+  // this card can ship in the same release as the migration without caring
+  // which lands on prod first.
+  if (path === '/api/admin/heard-about' && request.method === 'GET') {
+    try {
+      const { results } = await db.prepare(
+        `SELECT heard_about, COUNT(*) AS n FROM accounts WHERE heard_about IS NOT NULL GROUP BY heard_about`
+      ).all();
+      const counts = {};
+      let total = 0;
+      for (const r of (results || [])) {
+        counts[r.heard_about] = r.n;
+        total += r.n;
+      }
+      return json({ counts, total });
+    } catch (err) {
+      if (String(err?.message || '').includes('no such column')) {
+        return json({ counts: {}, total: 0 });
+      }
+      throw err;
+    }
   }
 
   return null; // not an admin route this handler knows

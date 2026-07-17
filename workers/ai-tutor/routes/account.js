@@ -4,6 +4,7 @@
 // DELETE /api/account                  — Delete account + ALL child data (GDPR)
 // POST   /api/account/consent          — Record consent with version
 // PATCH  /api/account/email-preference — Update email opt-in preference
+// POST   /api/account/heard-about      — One-shot "how did you hear about us?" survey answer
 // POST   /api/account/child            — Create first child on signup (kept for backwards compat)
 // GET    /api/account/child            — Get first child profile (backwards compat)
 // PATCH  /api/account/child            — Update first child display name (backwards compat)
@@ -91,6 +92,27 @@ export async function handleAccountRoutes(request, env, userId, path) {
       ? { tutorCode: pendingIntentRow.tutor_code, tutorName: pendingIntentRow.tutor_name }
       : null;
 
+    // heard_about — Shareable Progress Card growth-loop survey (migration
+    // 0020). Read as an ISOLATED query (never folded into the main `account`
+    // SELECT above) so a not-yet-applied migration 0020 can never 500 the
+    // whole account bootstrap — every user's login depends on this endpoint,
+    // so this is the highest-blast-radius place in the app for the
+    // column-absent tolerance rule to matter (see the 10-12 Jun bulk-load
+    // outage this pattern exists to prevent). Same soft-fail as
+    // routes/account.js's POST /heard-about and routes/admin.js's tally.
+    let heardAbout = null;
+    try {
+      const heardAboutRow = await db.prepare('SELECT heard_about FROM accounts WHERE id = ?').bind(userId).first();
+      heardAbout = heardAboutRow ? heardAboutRow.heard_about : null;
+    } catch (err) {
+      if (!String(err?.message || '').includes('no such column')) throw err;
+      // Migration 0020 not yet applied. heardAbout reads as null either way
+      // (unanswered), so the client-side chip may resurface on every visit
+      // until the migration ships and a real answer/dismiss can persist —
+      // harmless nagging, never a bootstrap failure.
+      heardAbout = null;
+    }
+
     // Update last_login_at
     await db.prepare('UPDATE accounts SET last_login_at = datetime(\'now\') WHERE id = ?').bind(userId).run();
 
@@ -138,7 +160,7 @@ export async function handleAccountRoutes(request, env, userId, path) {
     // during the transition period before tutor-mode is deployed to production.
     const child = children[0] || null;
 
-    return json({ account, children, child, access, pendingJoinIntent });
+    return json({ account, children, child, access, pendingJoinIntent, heardAbout });
   }
 
   // DELETE /api/account — Delete account + ALL child data (GDPR right to erasure)
@@ -203,6 +225,49 @@ export async function handleAccountRoutes(request, env, userId, path) {
     await db.prepare('UPDATE accounts SET email_opt_in = ? WHERE id = ?')
       .bind(emailOptIn ? 1 : 0, userId).run();
     return json({ ok: true });
+  }
+
+  // POST /api/account/heard-about — one-shot growth-attribution survey answer
+  // (Shareable Progress Card, growth loop 2 — plans/shareable-progress-card.md).
+  // Validates against the fixed option list, writes once (never overwrites an
+  // existing non-null answer — the chip is a one-tap-then-gone UI, not an
+  // editable preference), and tolerates migration 0020 not being applied yet:
+  // a missing column must never 500 (that could be mistaken for a real
+  // outage — CLAUDE.md's silent-fallback-observability rule cuts the other
+  // way here, since a soft 200 is the CORRECT behaviour, not a hidden one —
+  // the client simply never shows the thank-you state and the chip stays
+  // dismissible next time).
+  //
+  // 'dismissed' is a sentinel, not a real answer: the chip's quiet "no
+  // thanks" dismiss reuses this SAME write-once column/endpoint (rather than
+  // a separate local-only flag) so "never re-shows" is durable across
+  // devices exactly like a real answer is — see GET /api/account's
+  // `heardAbout` field, which the client reads to decide whether to render
+  // the chip at all. The admin tally (routes/admin.js) still counts it, so
+  // it's visible as "how many parents actively declined" rather than being
+  // silently discarded.
+  if (path === '/api/account/heard-about' && request.method === 'POST') {
+    const HEARD_ABOUT_VALUES = new Set(['progress-card', 'tutor', 'search-or-ai', 'word-of-mouth', 'other', 'dismissed']);
+    const body = await request.json().catch(() => ({}));
+    const value = body.value;
+    if (!HEARD_ABOUT_VALUES.has(value)) {
+      return json({ error: 'Invalid value' }, 400);
+    }
+
+    try {
+      const result = await db.prepare(
+        'UPDATE accounts SET heard_about = ? WHERE id = ? AND heard_about IS NULL'
+      ).bind(value, userId).run();
+      // changes === 0 covers two harmless cases from the client's point of
+      // view: no account row (shouldn't happen for an authed user, but never
+      // worth a 500 over), or an answer is already stored — first-write-wins.
+      return json({ ok: true, stored: result.meta.changes > 0 });
+    } catch (err) {
+      if (String(err?.message || '').includes('no such column')) {
+        return json({ ok: true, stored: false });
+      }
+      throw err;
+    }
   }
 
   // POST /api/account/child — Create child profile
