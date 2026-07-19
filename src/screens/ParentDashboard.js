@@ -182,19 +182,6 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
           <BasicProgressSummary streaksAndPP={streaksAndPP} userData={userData} />
         )}
 
-        {/* Shareable Progress Card (growth loop 2) — effort/consistency only,
-            never scores or rankings. Available to every tier. Keyed on
-            activeChildId so switching children fully remounts it: no stale
-            name-toggle state or blob URL can bleed from one child to another
-            (plans/shareable-progress-card.md, adversarial review outcome #7). */}
-        <ProgressCardSection
-          key={activeChildId}
-          questionResults={userData.questionResults}
-          firstName={currentUser}
-          loadState={userData.loadState}
-          activeChildId={activeChildId}
-        />
-
         {/* Deep progress analytics — the topic-level diagnosis, locked for
             free-tier children. The underlying data already lives on the
             client (§9); this is a UI lock only, driven by the server
@@ -264,6 +251,22 @@ function ParentDashboard({ mastery, streaksAndPP, userData, currentUser, getToke
             </button>
           </div>
         )}
+
+        {/* Shareable Progress Card (growth loop 2) — effort/consistency only,
+            never scores or rankings. Available to every tier, so it sits
+            OUTSIDE the deepProgressLocked gate above. Placed low on the
+            dashboard (below Subscription, above Data & Privacy) — it's a
+            keepsake, not a headline metric. Keyed on activeChildId so
+            switching children fully remounts it: no stale name-toggle state
+            or blob URL can bleed from one child to another
+            (plans/shareable-progress-card.md, adversarial review outcome #7). */}
+        <ProgressCardSection
+          key={activeChildId}
+          questionResults={userData.questionResults}
+          firstName={currentUser}
+          loadState={userData.loadState}
+          activeChildId={activeChildId}
+        />
 
         {/* Data & Privacy */}
         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
