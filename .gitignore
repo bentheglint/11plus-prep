@@ -33,6 +33,25 @@ yarn-error.log*
 !/.claude/skills/
 /.claude/skills/*
 !/.claude/skills/pricing-advisor/
+# Marketing operating layer (curated from Corey Haines' marketingskills, MIT) — 20 Jul 2026
+!/.claude/skills/product-marketing/
+!/.claude/skills/marketing-plan/
+!/.claude/skills/customer-research/
+!/.claude/skills/marketing-psychology/
+!/.claude/skills/content-strategy/
+!/.claude/skills/seo-audit/
+!/.claude/skills/programmatic-seo/
+!/.claude/skills/ai-seo/
+!/.claude/skills/community-marketing/
+!/.claude/skills/public-relations/
+!/.claude/skills/copywriting/
+!/.claude/skills/cro/
+!/.claude/skills/signup/
+!/.claude/skills/onboarding/
+!/.claude/skills/emails/
+!/.claude/skills/churn-prevention/
+!/.claude/skills/referrals/
+!/.claude/skills/pricing/
 !/.claude/agents/
 /.claude/agents/*
 !/.claude/agents/pricing-advisor.md
@@ -98,3 +117,4 @@ scripts/write-remaining-batches.js
 
 # Dev-only rendered email previews (scripts/preview-emails.mjs) — regenerable, never committed
 /demo-preview
+scripts/.metrics.env
