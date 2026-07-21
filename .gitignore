@@ -72,10 +72,12 @@ yarn-error.log*
 !/research/**/*.md
 
 # Scanned reference materials (large binary files)
+# NOTE: /research/past-papers is deliberately NOT ignored here. Parsed paper
+# TEXT (.md) is tracked via the /research/** + !*.md rules above so it syncs
+# across machines for the Oracle; only its scanned image binaries stay ignored.
 /Examples for English and VR
 /research/kingsbury
 /research/maths-reference
-/research/past-papers
 /Micro-Lesson Research
 /Lesson Plan Examples
 /difficulty-scores
