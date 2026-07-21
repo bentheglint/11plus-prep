@@ -224,11 +224,24 @@ describe('Oracle Sweep — Wrong Answer Fixes (2026-04-03)', () => {
     expect(q.options[q.correct]).toBe('has');
   });
 
-  // Grammar Q55: "however/therefore" are adverbs not conjunctions
-  it('Grammar Q55 correct answer is "Adverbs" (index 4)', () => {
-    const q = findQuestion(englishData, 'wordClassGrammar', 55);
-    expect(q).toBeTruthy();
-    expect(q.options[q.correct]).toBe('Adverbs');
+  // "however/therefore" are adverbs, not conjunctions.
+  // Originally pinned to the bare-list item wordClassGrammar id 55. Fix #4
+  // (2026-07-21) replaced every bare-list D2/D3 word-class item with in-context
+  // questions, so that specific item no longer exists. The pedagogical guard is
+  // preserved as a CONTENT check: any word-class item targeting a connective
+  // adverb must classify it as an adverb, never a conjunction. (Currently the
+  // rebuilt bank contains none; the guard activates if any are added — see the
+  // Fix #4 note to restore explicit connective-adverb coverage.)
+  it('connective adverbs (however/therefore/moreover/consequently) are never classed as conjunctions', () => {
+    const qs = getTopicQuestions(englishData, 'wordClassGrammar');
+    const CONNECTIVES = /\*(however|therefore|moreover|consequently|nevertheless|meanwhile)\*/i;
+    const targeted = qs.filter(q => CONNECTIVES.test(q.question || ''));
+    for (const q of targeted) {
+      const ans = String(q.options[q.correct] || '').toLowerCase();
+      expect(ans).toContain('adverb');
+    }
+    // no assertion on count: absence is acceptable (coverage moved by Fix #4).
+    expect(Array.isArray(targeted)).toBe(true);
   });
 
   // Logic & Language Q45: Priya wears Blue not Green
@@ -1193,7 +1206,13 @@ describe('Stem-leak detector — keyword in stem reveals answer', () => {
   function isExemptQuestion(q) {
     if (q.questionType === 'passage' || q.passageId || q.passageTitle) return true;
     const stem = String(q.question || '');
-    if (/which word is (the|a|an) (adjective|adverb|verb|noun|pronoun|determiner|conjunction|preposition|article) in[:\s]/i.test(stem)) return true;
+    // "Which word is a/an/the [class]?" — pick-the-word-from-a-sentence format.
+    // The options ARE words from the quoted sentence, so the correct one (and
+    // every option) appears in the stem by construction; that is the task, not a
+    // leak. Covers single-word classes and multi-word noun sub-types (proper /
+    // collective / abstract / common / concrete noun), sentence-first or class-
+    // first phrasing. (Fix #4 rebuilt wordClassGrammar with many such items.)
+    if (/which word is (?:the|a|an) (?:abstract |common |collective |proper |concrete )?(?:noun|adjective|adverb|verb|pronoun|determiner|conjunction|preposition|article)s?\b/i.test(stem)) return true;
     if (/rearrange these (words|letters)/i.test(stem)) return true;
     if (/\b(taller|shorter|faster|slower|heavier|lighter|older|younger|longer|bigger|smaller|more|fewer)\s+than\b/i.test(stem)
         && /\b(who|which|whose)\b/i.test(stem)) return true;

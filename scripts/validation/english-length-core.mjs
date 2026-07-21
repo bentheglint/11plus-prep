@@ -131,12 +131,27 @@ export const GATE = {
                              // signal, which is the goal. >50% approaches artificial
                              // uniformity. The real tell gates are single-longest + rank.
   diffMaxPct: 40,            // looser per-difficulty ceiling (smaller samples)
+  minGradeN: 20,             // MIN phrase-option sample needed to grade DISTRIBUTION shape.
+                             // The rank histogram demands every rank >=8% (rankMinPct);
+                             // that is meaningless below ~20 samples, where ranks quantise
+                             // into coarse chunks (n=4 -> 25% steps -> some rank unavoidably
+                             // 0%). Below this we cannot tell a real tell from sampling
+                             // noise, so we skip grading rather than throw a false failure.
+                             // Does NOT weaken the large in-scope buckets (vocab/mock have
+                             // hundreds of phrase items); it only stops a topic whose options
+                             // became short labels (Fix #4 rebuilt wordClassGrammar into
+                             // class-label answers, leaving just 4 D1 definitional phrase
+                             // items) from failing on an unmeasurable sample. wordClass-
+                             // Grammar's real tell vectors (in-context format + answer
+                             // position) are guarded by the Fix #4 gate.
 };
 
 // Evaluate an in-scope bucket against the gate. Returns {pass, failures[]}.
 export function gradeBucket(name, m) {
   const f = [];
   if (m.n === 0) return { pass: true, failures: [] }; // nothing to grade
+  // Too few phrase-options to grade distribution shape without false failures.
+  if (m.n < GATE.minGradeN) return { pass: true, failures: [], skipped: `n=${m.n} < minGradeN=${GATE.minGradeN}` };
   if (m.singleLongestPct > GATE.singleLongestMaxPct) f.push(`single-longest ${m.singleLongestPct}% > ${GATE.singleLongestMaxPct}%`);
   if (m.singleLongestPct < GATE.singleLongestMinPct) f.push(`single-longest ${m.singleLongestPct}% < ${GATE.singleLongestMinPct}% (inverse tell)`);
   m.rankHistPct.forEach((r, i) => {

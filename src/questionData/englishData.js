@@ -28660,128 +28660,128 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 9,
           "difficulty": 2,
-          "question": "What type of words are these: January, Easter, Christmas, Diwali?",
+          "question": "The teacher praised Aisha for her *honesty* when she owned up to the broken cup. What type of word is *honesty*?",
           "options": [
-            "Verbs",
-            "Common nouns",
-            "Adjectives",
-            "Adverbs",
-            "Proper nouns"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are all proper nouns. Months and festivals are specific names, so they are proper nouns and always start with a capital letter. ✓"
+          "correct": 0,
+          "explanation": "The word 'her' points to *honesty* as a thing Aisha has, so it names a quality and is a noun. It is tempting to answer adjective because honesty is a good quality, but an adjective would describe a noun (an *honest* girl); *honesty* is the quality itself, so it is a noun. ✓"
         },
         {
           "id": 10,
           "difficulty": 2,
-          "question": "Which word class do 'Thames', 'Snowdon', 'Loch Ness' and 'Ben Nevis' belong to?",
+          "question": "After months in the tiny cage, the rescued fox finally tasted *freedom*. What type of word is *freedom*?",
           "options": [
-            "Proper nouns",
-            "Common nouns",
-            "Adjectives",
-            "Verbs",
-            "Prepositions"
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition",
+            "Adverb"
           ],
-          "correct": 0,
-          "explanation": "These are all proper nouns — the specific names of famous geographical features in the United Kingdom. The Thames is a river, Snowdon and Ben Nevis are mountains, and Loch Ness is a lake. ✓"
+          "correct": 1,
+          "explanation": "*Freedom* names an idea the fox now has; you can put 'the' or 'its' in front of it, which marks a noun. Children pick adjective because it describes something good, but adjectives describe nouns (a *free* fox); *freedom* is the thing itself, a noun. ✓"
         },
         {
           "id": 11,
           "difficulty": 2,
-          "question": "Which word class do 'happiness', 'freedom', 'courage' and 'beauty' belong to?",
+          "question": "It took great *courage* for Owen to leap from the highest diving board. What type of word is *courage*?",
           "options": [
-            "Adjectives",
-            "Verbs",
-            "Adverbs",
-            "Nouns",
-            "Prepositions"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are all abstract nouns — nouns that name feelings, ideas, or qualities you cannot touch or see. Happiness, freedom, courage, and beauty are all things we can think about but cannot hold. ✓"
+          "correct": 2,
+          "explanation": "The word 'great' describes *courage*, and only a noun can be described by an adjective like that, so *courage* is a noun. The trap answer adjective is wrong: a *courageous* boy uses the adjective, while *courage* names the quality itself. ✓"
         },
         {
           "id": 12,
           "difficulty": 3,
-          "question": "What type of words are these: kindness, honesty, patience, wisdom?",
+          "question": "Please remember to *water* the tomato plants every evening. What type of word is *water*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Verbs",
-            "Prepositions",
-            "Nouns"
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are all abstract nouns. They name qualities or ideas that you cannot physically touch. Abstract nouns often end in suffixes like -ness, -ty, -ence, or -dom. ✓"
+          "correct": 0,
+          "explanation": "'Water' is usually a noun (a glass of water), but here it names the action you do to the plants, so in this sentence it is a verb. ✓"
         },
         {
           "id": 13,
           "difficulty": 3,
-          "question": "Which word class do 'anger', 'jealousy', 'excitement' and 'sorrow' belong to?",
+          "question": "The teacher will *record* every pupil's score in her register. What type of word is *record*?",
           "options": [
-            "Verbs",
-            "Adverbs",
-            "Adjectives",
-            "Nouns",
-            "Conjunctions"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Pronoun"
           ],
-          "correct": 3,
-          "explanation": "These are all abstract nouns — they name emotions. Even though you can feel anger or excitement, you cannot touch them, which makes them abstract nouns. ✓"
+          "correct": 1,
+          "explanation": "'A record' is normally a noun, but here *record* is the action the teacher performs (writing the scores down), so it works as a verb. ✓"
         },
         {
           "id": 14,
           "difficulty": 3,
-          "question": "What type of words are these: loyalty, generosity, bravery, intelligence?",
+          "question": "Dad promised to *book* our tickets for the football match. What type of word is *book*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Verbs",
-            "Nouns",
-            "Prepositions"
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are all abstract nouns naming personal qualities. They cannot be seen or touched. Notice the suffixes: -ty, -ity, -ery, and -ence are common endings for abstract nouns. ✓"
+          "correct": 2,
+          "explanation": "'Book' is usually a noun (a book to read), but here it means to reserve the tickets, an action, so it is a verb. ✓"
         },
         {
           "id": 15,
           "difficulty": 2,
-          "question": "Which word class do 'flock', 'herd', 'swarm' and 'pack' belong to?",
+          "question": "A heavy *silence* fell across the hall as the head teacher stood up. What type of word is *silence*?",
           "options": [
-            "Verbs",
-            "Adjectives",
-            "Prepositions",
-            "Adverbs",
-            "Collective nouns"
+            "Adverb",
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are collective nouns — nouns that name a group of things. A flock of birds, a herd of cows, a swarm of bees, and a pack of wolves are all groups. ✓"
+          "correct": 3,
+          "explanation": "*Silence* is the thing that 'fell' and is described by 'heavy', so it is a noun. It is not an adjective: a *silent* hall would use the adjective, but here the word names the stillness itself, which makes it a noun. ✓"
         },
         {
           "id": 16,
           "difficulty": 2,
-          "question": "What type of words are these: team, crowd, audience, choir?",
+          "question": "Grandad still remembers his *childhood* on a farm near Ludlow. What type of word is *childhood*?",
           "options": [
-            "Pronouns",
-            "Verbs",
-            "Adverbs",
-            "Collective nouns",
-            "Adjectives"
+            "Verb",
+            "Adjective",
+            "Preposition",
+            "Adverb",
+            "Noun"
           ],
-          "correct": 3,
-          "explanation": "These are collective nouns — words that name groups of people. A team plays together, a crowd gathers, an audience watches, and a choir sings. ✓"
+          "correct": 4,
+          "explanation": "'His *childhood*' names a period of Grandad's life, a thing you can talk about, so it is a noun. Some pick adjective because it sounds descriptive, but nothing here is being described; the word names the time itself, so it is a noun. ✓"
         },
         {
           "id": 17,
           "difficulty": 3,
-          "question": "Which word class do 'litter', 'shoal', 'colony' and 'troop' belong to?",
+          "question": "The sergeant ordered his men to *fire* the signal rocket. What type of word is *fire*?",
           "options": [
-            "Collective nouns",
-            "Adjectives",
-            "Common nouns",
-            "Verbs",
-            "Adverbs"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 0,
-          "explanation": "These are collective nouns for groups of animals: a litter of kittens, a shoal of fish, a colony of ants, and a troop of monkeys. Collective nouns describe a collection or group. ✓"
+          "correct": 3,
+          "explanation": "'Fire' is usually a noun (a warm fire), but here it names the action of setting off the rocket, so it is a verb. ✓"
         },
         {
           "id": 18,
@@ -28870,44 +28870,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 24,
           "difficulty": 2,
-          "question": "Which word class do 'is', 'am', 'are', 'was' and 'were' belong to?",
+          "question": "The villagers valued the old woman's *wisdom* above gold. What type of word is *wisdom*?",
           "options": [
-            "Pronouns",
-            "Adjectives",
-            "Adverbs",
-            "Conjunctions",
-            "Verbs"
+            "Abstract noun",
+            "Adjective",
+            "Common noun",
+            "Verb",
+            "Adverb"
           ],
-          "correct": 4,
-          "explanation": "These are all verbs — specifically forms of the verb 'to be'. Not all verbs are action words; some describe a state of being. 'I am happy' uses 'am' as the verb. ✓"
+          "correct": 0,
+          "explanation": "*Wisdom* names an idea you cannot see or touch, so it is an abstract noun. Adjective is the trap because it names a good quality, but a *wise* woman uses the adjective; and 'common noun' is less precise because this word names an idea, not a physical thing, which makes abstract noun the best answer. ✓"
         },
         {
           "id": 25,
           "difficulty": 2,
-          "question": "What type of words are these: seem, appear, become, remain?",
+          "question": "Teaching a puppy to sit takes a lot of *patience*. What type of word is *patience*?",
           "options": [
-            "Nouns",
-            "Adjectives",
-            "Adverbs",
-            "Verbs",
-            "Prepositions"
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are all verbs, but they are not action verbs. They are 'being' or 'state' verbs that describe how something is or seems, rather than what it does. ✓"
+          "correct": 1,
+          "explanation": "'A lot of *patience*' treats the word as a thing you can have, so it is a noun. It is tempting to say adjective because patience is a good quality, but a *patient* teacher uses the adjective; *patience* is the quality itself, a noun. ✓"
         },
         {
           "id": 26,
           "difficulty": 2,
-          "question": "Which word class do 'have', 'has', 'had' and 'having' belong to?",
+          "question": "The coach could not hide his *fury* after the careless mistake. What type of word is *fury*?",
           "options": [
-            "Adjectives",
-            "Prepositions",
-            "Nouns",
-            "Verbs",
-            "Adverbs"
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are all forms of the verb 'to have'. Verbs can describe possession (having something) as well as actions. 'Have', 'has', and 'had' are different tenses of the same verb. ✓"
+          "correct": 2,
+          "explanation": "'His *fury*' names a strong feeling the coach has, so it is a noun. Children may choose adjective because it describes an emotion, but a *furious* coach uses the adjective; *fury* names the feeling itself and is a noun. ✓"
         },
         {
           "id": 27,
@@ -28996,30 +28996,30 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 33,
           "difficulty": 2,
-          "question": "Which word class do 'enormous', 'tiny', 'gigantic' and 'miniature' belong to?",
+          "question": "The young diver was praised for her *bravery* in the rough sea. What type of word is *bravery*?",
           "options": [
-            "Nouns",
-            "Adverbs",
-            "Prepositions",
-            "Verbs",
-            "Adjectives"
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are all adjectives describing size. Enormous and gigantic mean very large, while tiny and miniature mean very small. They are more powerful versions of 'big' and 'small'. ✓"
+          "correct": 3,
+          "explanation": "'Her *bravery*' names a quality the diver showed, so it is a noun. The trap is adjective, but a *brave* diver uses the adjective; *bravery* is the quality itself, which makes it a noun. ✓"
         },
         {
           "id": 34,
           "difficulty": 2,
-          "question": "What part of speech are the words: rough, smooth, soft, bumpy?",
+          "question": "When her best friend moved away, Grace felt a great *loneliness*. What type of word is *loneliness*?",
           "options": [
-            "Verbs",
-            "Adjectives",
-            "Adverbs",
-            "Nouns",
-            "Prepositions"
+            "Adjective",
+            "Verb",
+            "Preposition",
+            "Adverb",
+            "Noun"
           ],
-          "correct": 1,
-          "explanation": "These are all adjectives describing texture — how something feels when you touch it. A rough surface, smooth skin, soft fabric, bumpy road. ✓"
+          "correct": 4,
+          "explanation": "'A great *loneliness*' is described by 'great', and only a noun can be described that way, so *loneliness* is a noun. It is not an adjective: a *lonely* girl uses the adjective, while this word names the feeling itself. ✓"
         },
         {
           "id": 35,
@@ -29052,86 +29052,86 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 37,
           "difficulty": 2,
-          "question": "What part of speech are the words: always, never, sometimes, often?",
+          "question": "In the end, *curiosity* got the better of Sam and he opened the dusty chest. What type of word is *curiosity*?",
           "options": [
-            "Prepositions",
-            "Adverbs",
-            "Conjunctions",
-            "Adjectives",
-            "Nouns"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "These are adverbs of frequency — they tell us how often something happens. 'I always brush my teeth' tells us it happens every time. Not all adverbs end in '-ly'. ✓"
+          "correct": 0,
+          "explanation": "*Curiosity* is the thing that gets the better of Sam, so it acts like a thing and is a noun. Adjective is the trap because it names a trait, but a *curious* boy uses the adjective; here the word names the feeling itself, a noun. ✓"
         },
         {
           "id": 38,
           "difficulty": 2,
-          "question": "Which word class do 'yesterday', 'today', 'tomorrow' and 'soon' belong to?",
+          "question": "Nothing could spoil the *happiness* Meera felt on results day. What type of word is *happiness*?",
           "options": [
-            "Nouns",
-            "Prepositions",
-            "Adjectives",
-            "Adverbs",
-            "Verbs"
+            "Common noun",
+            "Abstract noun",
+            "Adjective",
+            "Verb",
+            "Adverb"
           ],
-          "correct": 3,
-          "explanation": "These are adverbs of time — they tell us when something happens. 'She arrived yesterday' and 'We leave tomorrow' use these words to show timing. ✓"
+          "correct": 1,
+          "explanation": "*Happiness* names a feeling you cannot see or touch, so it is an abstract noun. Adjective is the trap (a *happy* girl uses the adjective), and 'common noun' is less precise because the word names an idea rather than a physical object, so abstract noun fits best. ✓"
         },
         {
           "id": 39,
           "difficulty": 2,
-          "question": "What type of words are these: here, there, everywhere, nowhere?",
+          "question": "He tried to swallow his *anger* when the referee ignored the foul. What type of word is *anger*?",
           "options": [
-            "Prepositions",
-            "Nouns",
-            "Adverbs",
-            "Verbs",
-            "Adjectives"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
           "correct": 2,
-          "explanation": "These are adverbs of place — they tell us where something happens. 'Come here', 'Look there', 'It was everywhere'. Adverbs can describe place as well as manner. ✓"
+          "explanation": "'His *anger*' names a feeling he has, so it is a noun. It is tempting to say adjective because it describes an emotion, but an *angry* player uses the adjective; *anger* is the feeling itself, a noun. ✓"
         },
         {
           "id": 40,
           "difficulty": 2,
-          "question": "Which word class do 'extremely', 'very', 'quite' and 'rather' belong to?",
+          "question": "The old sheepdog was loved for its *loyalty* to the whole family. What type of word is *loyalty*?",
           "options": [
-            "Adjectives",
-            "Prepositions",
-            "Nouns",
-            "Conjunctions",
-            "Adverbs"
+            "Adverb",
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are adverbs of degree — they tell us how much or to what extent. 'It was extremely cold' or 'She was quite tired'. They modify adjectives or other adverbs. ✓"
+          "correct": 3,
+          "explanation": "'Its *loyalty*' names a quality the dog has, so it is a noun. The trap is adjective, but a *loyal* dog uses the adjective; *loyalty* names the quality itself, which makes it a noun. ✓"
         },
         {
           "id": 41,
           "difficulty": 2,
-          "question": "What type of words are these: neatly, messily, elegantly, clumsily?",
+          "question": "She could not hide her *pride* as her son crossed the finish line. What type of word is *pride*?",
           "options": [
-            "Adjectives",
-            "Adverbs",
-            "Nouns",
-            "Prepositions",
-            "Verbs"
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Preposition",
+            "Noun"
           ],
-          "correct": 1,
-          "explanation": "These are all adverbs of manner ending in '-ly'. They describe how an action is performed: she wrote neatly, he ate messily. ✓"
+          "correct": 4,
+          "explanation": "'Her *pride*' names a feeling she has, so it is a noun. Children may say adjective because it names an emotion, but a *proud* mother uses the adjective; here the word is the feeling itself, a noun. ✓"
         },
         {
           "id": 42,
           "difficulty": 3,
-          "question": "Which word class do 'reluctantly', 'enthusiastically', 'cautiously' and 'furiously' belong to?",
+          "question": "Each morning the farmer must *milk* the cows before breakfast. What type of word is *milk*?",
           "options": [
-            "Adjectives",
-            "Verbs",
-            "Nouns",
-            "Adverbs",
-            "Conjunctions"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Preposition",
+            "Verb"
           ],
-          "correct": 3,
-          "explanation": "These are all adverbs of manner. They describe the way an action is done: he agreed reluctantly, she cheered enthusiastically. They are formed by adding '-ly' to adjectives. ✓"
+          "correct": 4,
+          "explanation": "'Milk' is normally a noun (a jug of milk), but here it is the action the farmer does to the cows, so it is a verb. ✓"
         },
         {
           "id": 43,
@@ -29164,30 +29164,30 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 45,
           "difficulty": 2,
-          "question": "What part of speech are the words: who, which, that, whose?",
+          "question": "The sound of *laughter* drifted from the party next door. What type of word is *laughter*?",
           "options": [
-            "Conjunctions",
-            "Prepositions",
-            "Determiners",
-            "Adverbs",
-            "Pronouns"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are relative pronouns — they introduce extra information about a noun. 'The boy who scored the goal' uses 'who' to connect information about the boy. ✓"
+          "correct": 0,
+          "explanation": "'The sound of *laughter*' treats the word as a thing you can hear, so it is a noun. It is not a verb: 'to *laugh*' is the verb, while *laughter* names the thing that laughing produces, a noun. ✓"
         },
         {
           "id": 46,
           "difficulty": 2,
-          "question": "Which word class do 'myself', 'yourself', 'himself' and 'herself' belong to?",
+          "question": "Their *friendship* had survived arguments, distance and time. What type of word is *friendship*?",
           "options": [
-            "Nouns",
-            "Adjectives",
-            "Verbs",
-            "Adverbs",
-            "Pronouns"
+            "Adjective",
+            "Abstract noun",
+            "Common noun",
+            "Verb",
+            "Adverb"
           ],
-          "correct": 4,
-          "explanation": "These are reflexive pronouns — a special type of pronoun used when the subject and object are the same person. 'She taught herself to swim.' ✓"
+          "correct": 1,
+          "explanation": "*Friendship* names a bond you cannot see or touch, so it is an abstract noun. 'Common noun' is less precise because the word names an idea rather than a physical thing, and adjective is wrong because *friendly* neighbours would use the adjective; the answer is abstract noun. ✓"
         },
         {
           "id": 47,
@@ -29206,212 +29206,212 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 48,
           "difficulty": 2,
-          "question": "What part of speech are the words: in, on, under, behind?",
+          "question": "By mid-afternoon a sharp *hunger* set in among the walkers. What type of word is *hunger*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Nouns",
-            "Prepositions",
-            "Verbs"
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are all prepositions — words that show the position or relationship between things. The cat is in the box, on the table, under the bed, behind the curtain. ✓"
+          "correct": 2,
+          "explanation": "'A sharp *hunger*' is described by 'sharp', which only works on a noun, so *hunger* is a noun. The trap is adjective, but *hungry* walkers would use the adjective; *hunger* names the feeling itself. ✓"
         },
         {
           "id": 49,
           "difficulty": 2,
-          "question": "Which word class do 'through', 'beneath', 'across' and 'beside' belong to?",
+          "question": "Tourists cross the country to see the *beauty* of Snowdonia. What type of word is *beauty*?",
           "options": [
-            "Adverbs",
-            "Prepositions",
-            "Adjectives",
-            "Verbs",
-            "Conjunctions"
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "These are all prepositions showing position or movement. 'Through the tunnel', 'beneath the bridge', 'across the road', 'beside the lake'. ✓"
+          "correct": 3,
+          "explanation": "'The *beauty* of Snowdonia' names a quality of the place, so it is a noun. Adjective is the trap because it describes something lovely, but a *beautiful* view uses the adjective; *beauty* is the quality itself, a noun. ✓"
         },
         {
           "id": 50,
           "difficulty": 2,
-          "question": "What type of words are these: above, below, between, among?",
+          "question": "With a little *imagination*, the empty box became a pirate ship. What type of word is *imagination*?",
           "options": [
-            "Nouns",
-            "Adverbs",
-            "Verbs",
-            "Adjectives",
-            "Prepositions"
+            "Adjective",
+            "Common noun",
+            "Verb",
+            "Adverb",
+            "Abstract noun"
           ],
           "correct": 4,
-          "explanation": "These are all prepositions that describe where something is in relation to something else: above the clouds, below the surface, between two trees. ✓"
+          "explanation": "*Imagination* names a power of the mind you cannot touch, so it is an abstract noun. 'Common noun' is less precise because the word names an idea, not a physical object, and adjective is wrong because an *imaginative* child would use the adjective; abstract noun is best. ✓"
         },
         {
           "id": 51,
           "difficulty": 2,
-          "question": "Which word class do 'before', 'after', 'during' and 'until' belong to?",
+          "question": "The whole village shared in his *sorrow* after the terrible storm. What type of word is *sorrow*?",
           "options": [
-            "Prepositions",
-            "Conjunctions",
-            "Adverbs",
-            "Nouns",
-            "Verbs"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Preposition"
           ],
           "correct": 0,
-          "explanation": "These are prepositions of time. They show when something happens in relation to something else: before lunch, after school, during the match, until Friday. ✓"
+          "explanation": "'His *sorrow*' names a deep sadness he feels, so it is a noun. It is tempting to answer adjective because it names a feeling, but a *sorrowful* man uses the adjective; *sorrow* is the feeling itself, a noun. ✓"
         },
         {
           "id": 52,
           "difficulty": 3,
-          "question": "What part of speech are the words: towards, alongside, throughout, within?",
+          "question": "You should *brush* your hair before the photograph is taken. What type of word is *brush*?",
           "options": [
-            "Adverbs",
-            "Conjunctions",
-            "Adjectives",
-            "Prepositions",
-            "Verbs"
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Determiner"
           ],
-          "correct": 3,
-          "explanation": "These are all prepositions. They show relationships of direction, position, or time: walking towards the door, sitting alongside a friend, throughout the day, within the walls. ✓"
+          "correct": 0,
+          "explanation": "'A brush' is usually a noun, but here *brush* is the action you do to your hair, so it works as a verb. ✓"
         },
         {
           "id": 53,
           "difficulty": 2,
-          "question": "What type of words are these: and, but, or, so?",
+          "question": "The animal shelter thanked shoppers for their *generosity* over Christmas. What type of word is *generosity*?",
           "options": [
-            "Conjunctions",
-            "Verbs",
-            "Prepositions",
-            "Pronouns",
-            "Adverbs"
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 0,
-          "explanation": "These are coordinating conjunctions — joining words that connect words, phrases, or clauses of equal importance. 'Fish and chips', 'tired but happy'. ✓"
+          "correct": 1,
+          "explanation": "'Their *generosity*' names a quality the shoppers showed, so it is a noun. Adjective is the trap, but a *generous* shopper uses the adjective; *generosity* names the quality itself, a noun. ✓"
         },
         {
           "id": 54,
           "difficulty": 2,
-          "question": "Which word class do 'because', 'although', 'while' and 'unless' belong to?",
+          "question": "A buzz of *excitement* spread through the coach on the way to Alton Towers. What type of word is *excitement*?",
           "options": [
-            "Adjectives",
-            "Adverbs",
-            "Prepositions",
-            "Pronouns",
-            "Conjunctions"
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are subordinating conjunctions — they introduce a less important clause and join it to the main clause. 'I stayed inside because it was raining.' ✓"
+          "correct": 2,
+          "explanation": "'A buzz of *excitement*' treats the word as a feeling you can have, so it is a noun. Children pick adjective because it names an emotion, but an *excited* class uses the adjective; *excitement* is the feeling itself, a noun. ✓"
         },
         {
           "id": 55,
           "difficulty": 2,
-          "question": "What part of speech are the words: however, therefore, meanwhile, furthermore?",
+          "question": "It was a great *honour* to shake hands with the Olympic champion. What type of word is *honour*?",
           "options": [
-            "Conjunctions",
-            "Prepositions",
-            "Nouns",
-            "Adjectives",
-            "Adverbs"
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "These are adverbs (sometimes called conjunctive adverbs). They modify the whole sentence and show how ideas connect: 'It rained all day. However, the match continued.' Unlike conjunctions (and, but, because), they can't join two clauses in a single sentence — they need a full stop or semicolon before them. ✓"
+          "correct": 3,
+          "explanation": "'A great *honour*' is described by 'great', which only works on a noun, so *honour* is a noun. It is not a verb here: although you can *honour* someone, in this sentence the word names the privilege itself, a noun. ✓"
         },
         {
           "id": 56,
           "difficulty": 2,
-          "question": "Which word class do 'yet', 'nor', 'for' (meaning 'because') and 'so' belong to?",
+          "question": "In the end, the *truth* about the missing money came out. What type of word is *truth*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Pronouns",
-            "Conjunctions",
-            "Prepositions"
+            "Adjective",
+            "Common noun",
+            "Verb",
+            "Adverb",
+            "Abstract noun"
           ],
-          "correct": 3,
-          "explanation": "These are all coordinating conjunctions. They join two parts of a sentence together: 'She tried hard, yet she could not finish.' A useful way to remember them is FANBOYS: For, And, Nor, But, Or, Yet, So. ✓"
+          "correct": 4,
+          "explanation": "*Truth* names an idea you cannot see or touch, so it is an abstract noun. 'Common noun' is less precise because the word names a concept rather than a physical thing, and adjective is wrong because a *true* story uses the adjective; abstract noun is the best answer. ✓"
         },
         {
           "id": 57,
           "difficulty": 3,
-          "question": "What type of words are these: since, whenever, whereas, provided?",
+          "question": "Three soldiers were chosen to *guard* the palace gate. What type of word is *guard*?",
           "options": [
-            "Prepositions",
-            "Conjunctions",
-            "Adverbs",
-            "Adjectives",
-            "Pronouns"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
           "correct": 1,
-          "explanation": "These are subordinating conjunctions. They introduce a subordinate clause: 'Since you asked nicely, I will help.' 'Whenever it rains, the garden floods.' ✓"
+          "explanation": "'A guard' is normally a noun (a person on duty), but here *guard* names the action the soldiers perform, so it is a verb. ✓"
         },
         {
           "id": 58,
           "difficulty": 3,
-          "question": "Which word class do 'the', 'a', 'an', 'this' and 'those' belong to?",
+          "question": "Thick hedges *shelter* the cottage from the winter gales. What type of word is *shelter*?",
           "options": [
-            "Determiners",
-            "Conjunctions",
-            "Adjectives",
-            "Pronouns",
-            "Prepositions"
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Pronoun"
           ],
-          "correct": 0,
-          "explanation": "These are determiners — words that come before a noun to show which one we mean. 'The cat' (a specific cat), 'a cat' (any cat), 'this cat' (the one near me). ✓"
+          "correct": 2,
+          "explanation": "'Shelter' is usually a noun (a bus shelter), but here it means the hedges protect the cottage, an action, so it is a verb. ✓"
         },
         {
           "id": 59,
           "difficulty": 3,
-          "question": "What type of words are these: every, each, some, any?",
+          "question": "Could you *hand* me the scissors from the top drawer? What type of word is *hand*?",
           "options": [
-            "Adjectives",
-            "Pronouns",
-            "Adverbs",
-            "Determiners",
-            "Prepositions"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Preposition"
           ],
           "correct": 3,
-          "explanation": "These are determiners — they go before nouns to tell us how many or which ones. 'Every child', 'each page', 'some sweets', 'any colour'. ✓"
+          "explanation": "'Hand' is normally a noun (your hand), but here it means to pass the scissors, an action, so it is a verb. ✓"
         },
         {
           "id": 60,
           "difficulty": 3,
-          "question": "Which word class do 'my', 'your', 'his', 'her' and 'our' belong to?",
+          "question": "Next term she will *head* the school debating team. What type of word is *head*?",
           "options": [
-            "Pronouns",
-            "Determiners",
-            "Adjectives",
-            "Nouns",
-            "Adverbs"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Conjunction",
+            "Verb"
           ],
-          "correct": 1,
-          "explanation": "These are possessive determiners — they come before a noun to show who owns it. 'My book', 'your coat', 'his bike'. They are sometimes called possessive adjectives. ✓"
+          "correct": 4,
+          "explanation": "'Head' is usually a noun (your head), but here it means to lead the team, an action, so it works as a verb. ✓"
         },
         {
           "id": 61,
           "difficulty": 3,
-          "question": "What part of speech are the words: many, few, several, much?",
+          "question": "Leave the pie on the windowsill to *cool* before you serve it. What type of word is *cool*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Nouns",
-            "Determiners",
-            "Conjunctions"
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are determiners of quantity. They go before nouns to tell us about amount: 'many people', 'few chances', 'several days', 'much time'. ✓"
+          "correct": 0,
+          "explanation": "'Cool' is usually an adjective (a cool breeze), but here it names the action of letting the pie lose its heat, so it is a verb. ✓"
         },
         {
           "id": 62,
           "difficulty": 3,
-          "question": "Which word class do 'first', 'second', 'next' and 'last' belong to when used before a noun?",
+          "question": "Volunteers arrived early to *clear* the litter from the beach. What type of word is *clear*?",
           "options": [
-            "Adverbs",
-            "Verbs",
-            "Nouns",
-            "Determiners",
-            "Prepositions"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Determiner"
           ],
-          "correct": 3,
-          "explanation": "When placed before a noun, these work as determiners showing order: 'the first page', 'the next stop', 'the last biscuit'. They tell us which one we mean. ✓"
+          "correct": 1,
+          "explanation": "'Clear' is usually an adjective (a clear sky), but here it means to remove the litter, an action, so in this sentence it is a verb. ✓"
         },
         {
           "id": 63,
@@ -29500,86 +29500,86 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 69,
           "difficulty": 2,
-          "question": "Which word class do 'ancient', 'modern', 'brand-new' and 'elderly' belong to?",
+          "question": "In this sentence — 'A flash of jealousy crossed his face during the match.' — which word is an abstract noun?",
           "options": [
-            "Nouns",
-            "Prepositions",
-            "Verbs",
-            "Adjectives",
-            "Adverbs"
+            "jealousy",
+            "flash",
+            "crossed",
+            "during",
+            "match"
           ],
-          "correct": 3,
-          "explanation": "These are all adjectives describing age. Ancient means very old, modern means current, brand-new means completely new, and elderly means quite old. ✓"
+          "correct": 0,
+          "explanation": "*Jealousy* names a feeling you cannot see or touch, so it is the abstract noun. 'Flash' and 'match' are nouns too, but they name things you can picture, so they are concrete, not abstract. ✓"
         },
         {
           "id": 70,
           "difficulty": 2,
-          "question": "What type of words are these: whisper, scream, mumble, yell?",
+          "question": "In this sentence — 'Her quiet kindness made the new pupil feel welcome.' — which word is an abstract noun?",
           "options": [
-            "Nouns",
-            "Verbs",
-            "Adjectives",
-            "Prepositions",
-            "Adverbs"
+            "quiet",
+            "kindness",
+            "made",
+            "new",
+            "pupil"
           ],
           "correct": 1,
-          "explanation": "These are all verbs describing different ways of speaking. Whispering is very quiet, screaming is very loud, mumbling is unclear, and yelling is shouting. ✓"
+          "explanation": "*Kindness* names a quality you cannot touch, so it is the abstract noun. 'Pupil' is a noun as well, but it is a person you can see, so it is concrete, not abstract. ✓"
         },
         {
           "id": 71,
           "difficulty": 2,
-          "question": "Which word class do 'silently', 'nervously', 'gracefully' and 'fiercely' belong to?",
+          "question": "In this sentence — 'A deep sadness filled the room when the letter arrived.' — which word is an abstract noun?",
           "options": [
-            "Verbs",
-            "Adjectives",
-            "Conjunctions",
-            "Adverbs",
-            "Nouns"
+            "deep",
+            "filled",
+            "sadness",
+            "room",
+            "letter"
           ],
-          "correct": 3,
-          "explanation": "These are all adverbs of manner ending in '-ly'. They describe how an action is performed: moved silently, waited nervously, danced gracefully. ✓"
+          "correct": 2,
+          "explanation": "*Sadness* names a feeling you cannot see or touch, so it is the abstract noun. 'Room' and 'letter' are nouns too, but they are physical things you can point to, so they are concrete. ✓"
         },
         {
           "id": 72,
           "difficulty": 2,
-          "question": "What part of speech are the words: by, from, with, without?",
+          "question": "In this sentence — 'With growing confidence, Leo answered every question.' — which word is an abstract noun?",
           "options": [
-            "Adverbs",
-            "Conjunctions",
-            "Adjectives",
-            "Prepositions",
-            "Verbs"
+            "growing",
+            "answered",
+            "Leo",
+            "confidence",
+            "every"
           ],
           "correct": 3,
-          "explanation": "These are all prepositions. They show relationships between words: 'painted by the artist', 'a gift from Grandma', 'tea with milk', 'chips without salt'. ✓"
+          "explanation": "*Confidence* names an inner quality you cannot touch, so it is the abstract noun. 'Leo' is also a noun, but it is a proper noun naming one boy, not an abstract idea. ✓"
         },
         {
           "id": 73,
           "difficulty": 2,
-          "question": "Which word class do 'if', 'when', 'that' and 'after' belong to when they join clauses together?",
+          "question": "In this sentence — 'A sudden fear made her freeze on the dark path.' — which word is an abstract noun?",
           "options": [
-            "Prepositions",
-            "Pronouns",
-            "Adverbs",
-            "Conjunctions",
-            "Determiners"
+            "sudden",
+            "made",
+            "dark",
+            "path",
+            "fear"
           ],
-          "correct": 3,
-          "explanation": "When joining clauses, these are subordinating conjunctions. 'If it rains, we stay inside.' 'When the bell rings, line up.' They link a main clause to a subordinate clause. ✓"
+          "correct": 4,
+          "explanation": "*Fear* names an emotion you cannot see or touch, so it is the abstract noun. 'Path' is a noun as well, but it is a real thing you can walk along, so it is concrete, not abstract. ✓"
         },
         {
           "id": 74,
           "difficulty": 3,
-          "question": "What type of words are these: neither...nor, either...or, both...and, not only...but also?",
+          "question": "The batsman scored a single *run* off the very last ball. What type of word is *run*?",
           "options": [
-            "Adjectives",
-            "Adverbs",
-            "Prepositions",
-            "Correlative conjunctions",
-            "Pronouns"
+            "Verb",
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "These are correlative conjunctions — pairs of conjunctions that work together to join ideas. 'Both James and Lucy came.' 'Neither the cat nor the dog was hungry.' ✓"
+          "correct": 2,
+          "explanation": "'Run' is usually a verb (to run fast), but here it names a single score in cricket, a thing, so it is a noun. ✓"
         },
         {
           "id": 75,
@@ -29626,72 +29626,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 78,
           "difficulty": 2,
-          "question": "Which word class do 'stroll', 'sprint', 'trudge' and 'march' belong to?",
+          "question": "A *flock* of starlings swirled above the pier at dusk. What type of word is *flock*?",
           "options": [
-            "Nouns",
-            "Verbs",
-            "Adjectives",
-            "Adverbs",
-            "Prepositions"
+            "Collective noun",
+            "Common noun",
+            "Proper noun",
+            "Abstract noun",
+            "Adjective"
           ],
-          "correct": 1,
-          "explanation": "These are all verbs describing different ways of walking. Strolling is slow and relaxed, sprinting is very fast, trudging is heavy and tired, and marching is rhythmic and purposeful. ✓"
+          "correct": 0,
+          "explanation": "*Flock* names a whole group of birds as a single unit, so it is a collective noun. 'Common noun' is too general here because it ignores that the word stands for a group; collective noun is the precise answer. ✓"
         },
         {
           "id": 79,
           "difficulty": 2,
-          "question": "What type of words are these: courage, fear, hope, despair?",
+          "question": "The farmer guided his *herd* of cattle back to the barn. What type of word is *herd*?",
           "options": [
-            "Abstract nouns",
-            "Adjectives",
-            "Prepositions",
-            "Adverbs",
-            "Verbs"
+            "Common noun",
+            "Collective noun",
+            "Abstract noun",
+            "Proper noun",
+            "Adjective"
           ],
-          "correct": 0,
-          "explanation": "These are all abstract nouns — they name emotions and feelings you cannot physically touch. Abstract nouns name ideas, qualities, and states of mind. ✓"
+          "correct": 1,
+          "explanation": "*Herd* names many cattle gathered as one group, so it is a collective noun. Calling it a common noun is less precise because it misses that the word stands for a group; collective noun fits best. ✓"
         },
         {
           "id": 80,
           "difficulty": 2,
-          "question": "Which word class do 'cautiously', 'boldly', 'timidly' and 'confidently' belong to?",
+          "question": "The lifeboat *crew* launched into the crashing waves. What type of word is *crew*?",
           "options": [
-            "Adjectives",
-            "Nouns",
-            "Verbs",
-            "Adverbs",
-            "Prepositions"
+            "Common noun",
+            "Abstract noun",
+            "Collective noun",
+            "Proper noun",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "These are all adverbs of manner. They describe how someone does something: stepped cautiously, spoke boldly, crept timidly, answered confidently. ✓"
+          "correct": 2,
+          "explanation": "*Crew* names a team of people working together as one unit, so it is a collective noun. 'Common noun' is too general; the precise label for a word naming a group is collective noun. ✓"
         },
         {
           "id": 81,
           "difficulty": 2,
-          "question": "What part of speech are the words: into, onto, out of, away from?",
+          "question": "At dawn a *fleet* of trawlers slipped out of Brixham harbour. What type of word is *fleet*?",
           "options": [
-            "Prepositions",
-            "Conjunctions",
-            "Adjectives",
-            "Verbs",
-            "Adverbs"
+            "Common noun",
+            "Proper noun",
+            "Adjective",
+            "Collective noun",
+            "Abstract noun"
           ],
-          "correct": 0,
-          "explanation": "These are prepositions showing movement and direction: 'jumped into the pool', 'climbed onto the wall', 'ran out of the house', 'walked away from the school'. ✓"
+          "correct": 3,
+          "explanation": "*Fleet* names a whole group of boats as one unit, so it is a collective noun. 'Common noun' is not precise enough because it hides that the word stands for a group; collective noun is the answer. ✓"
         },
         {
           "id": 82,
           "difficulty": 3,
-          "question": "Which word class do 'whose', 'whom', 'which' and 'that' belong to when they introduce extra information about a noun?",
+          "question": "After the storm, an eerie *calm* fell over the harbour. What type of word is *calm*?",
           "options": [
-            "Adverbs",
-            "Conjunctions",
-            "Determiners",
-            "Relative pronouns",
-            "Prepositions"
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Conjunction"
           ],
           "correct": 3,
-          "explanation": "These are relative pronouns. They introduce a relative clause giving more information about a noun: 'The girl whose bag was lost' or 'The book that I read'. ✓"
+          "explanation": "'Calm' is usually an adjective (a calm sea), but here it names the stillness itself, a thing, so it is a noun. ✓"
         },
         {
           "id": 83,
@@ -29724,58 +29724,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 85,
           "difficulty": 2,
-          "question": "What type of words are these: terrified, exhausted, thrilled, bewildered?",
+          "question": "A *pack* of wolves circled silently at the treeline. What type of word is *pack*?",
           "options": [
-            "Adverbs",
-            "Verbs",
-            "Nouns",
-            "Prepositions",
-            "Adjectives"
+            "Common noun",
+            "Proper noun",
+            "Abstract noun",
+            "Adjective",
+            "Collective noun"
           ],
           "correct": 4,
-          "explanation": "These are all adjectives describing strong emotions or states. 'Terrified' means very scared, 'exhausted' means extremely tired, 'thrilled' means very excited, 'bewildered' means very confused. ✓"
+          "explanation": "*Pack* names many wolves grouped together as one unit, so it is a collective noun. The trap 'common noun' is too general because it ignores that the word names a group; collective noun is precise. ✓"
         },
         {
           "id": 86,
           "difficulty": 2,
-          "question": "Which word class do 'despite', 'except', 'apart from' and 'instead of' belong to?",
+          "question": "A noisy *crowd* filled the square before the parade. What type of word is *crowd*?",
           "options": [
-            "Prepositions",
-            "Adverbs",
-            "Verbs",
-            "Adjectives",
-            "Conjunctions"
+            "Collective noun",
+            "Common noun",
+            "Adjective",
+            "Abstract noun",
+            "Proper noun"
           ],
           "correct": 0,
-          "explanation": "These are all prepositions. 'Despite the rain', 'except me', 'apart from Tuesdays', 'instead of walking'. They show the relationship between words in a sentence. ✓"
+          "explanation": "*Crowd* names a large group of people as a single unit, so it is a collective noun. 'Common noun' is less precise because it does not show that the word stands for a group; collective noun is the best answer. ✓"
         },
         {
           "id": 87,
           "difficulty": 3,
-          "question": "What type of words are these: democracy, justice, equality, heritage?",
+          "question": "The nurse gently helped the elderly *patient* to sit up. What type of word is *patient*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Verbs",
-            "Abstract nouns",
-            "Prepositions"
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Pronoun",
+            "Noun"
           ],
-          "correct": 3,
-          "explanation": "These are all abstract nouns — they name concepts and ideas that cannot be physically touched. Democracy is a system of government, justice means fairness, equality means being equal. ✓"
+          "correct": 4,
+          "explanation": "'Patient' is usually an adjective (a patient teacher), but here it names the person the nurse is helping, so it is a noun. ✓"
         },
         {
           "id": 88,
           "difficulty": 3,
-          "question": "Which word class do 'these', 'those', 'that' and 'this' belong to when placed before a noun?",
+          "question": "The town's new leisure *complex* opens to families next Saturday. What type of word is *complex*?",
           "options": [
-            "Pronouns",
-            "Adjectives",
-            "Adverbs",
-            "Determiners",
-            "Conjunctions"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "When placed before a noun ('these books', 'that chair'), they are demonstrative determiners. They point out which specific thing we mean. 'This' and 'these' refer to nearby things; 'that' and 'those' to farther things. ✓"
+          "correct": 0,
+          "explanation": "'Complex' is usually an adjective (a complex puzzle), but here it names the building, a thing, so it is a noun. ✓"
         },
         {
           "id": 89,
@@ -29822,44 +29822,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 92,
           "difficulty": 2,
-          "question": "Which word class do 'aboard', 'amid', 'against' and 'beyond' belong to?",
+          "question": "A shimmering *shoal* of mackerel turned beneath the boat. What type of word is *shoal*?",
           "options": [
-            "Conjunctions",
-            "Adverbs",
-            "Verbs",
-            "Adjectives",
-            "Prepositions"
+            "Common noun",
+            "Collective noun",
+            "Abstract noun",
+            "Proper noun",
+            "Adjective"
           ],
-          "correct": 4,
-          "explanation": "These are all prepositions showing position or direction: 'aboard the ship', 'amid the crowd', 'against the wall', 'beyond the hills'. ✓"
+          "correct": 1,
+          "explanation": "*Shoal* names a whole group of fish moving together as one, so it is a collective noun. 'Common noun' is too general; the precise term for a word that names a group is collective noun. ✓"
         },
         {
           "id": 93,
           "difficulty": 2,
-          "question": "What type of words are these: friendly, lovely, lonely, lively?",
+          "question": "Every August the whole family drives down to *Cornwall*. What type of word is *Cornwall*?",
           "options": [
-            "Adjectives",
-            "Adverbs",
-            "Nouns",
-            "Verbs",
-            "Pronouns"
+            "Common noun",
+            "Collective noun",
+            "Proper noun",
+            "Abstract noun",
+            "Adjective"
           ],
-          "correct": 0,
-          "explanation": "These are all adjectives, even though they end in '-ly'. Not all words ending in '-ly' are adverbs! 'A friendly neighbour', 'a lovely day', 'a lonely child', 'a lively puppy'. ✓"
+          "correct": 2,
+          "explanation": "*Cornwall* is the specific name of one place and always begins with a capital letter, so it is a proper noun. 'Common noun' is wrong because that label is for general places like 'county'; a particular named place is a proper noun. ✓"
         },
         {
           "id": 94,
           "difficulty": 3,
-          "question": "Which word class do 'whose', 'what' and 'which' belong to when used at the start of a question before a noun?",
+          "question": "She unwrapped her birthday *present* with great excitement. What type of word is *present*?",
           "options": [
-            "Interrogative determiners",
-            "Conjunctions",
-            "Pronouns",
-            "Adverbs",
-            "Prepositions"
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Determiner"
           ],
-          "correct": 0,
-          "explanation": "When used before a noun in a question, these are interrogative determiners: 'Whose coat is this?', 'What time is it?', 'Which flavour do you prefer?' They determine which noun we are asking about. ✓"
+          "correct": 1,
+          "explanation": "'Present' can be a verb (to present a prize) or an adjective (all pupils present), but here it names the gift she unwraps, so it is a noun. ✓"
         },
         {
           "id": 95,
@@ -29892,58 +29892,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 97,
           "difficulty": 2,
-          "question": "What type of words are these: rarely, frequently, occasionally, regularly?",
+          "question": "The highest peak in the British Isles is *Ben Nevis*. What type of word is *Ben Nevis*?",
           "options": [
-            "Nouns",
-            "Adjectives",
-            "Conjunctions",
-            "Verbs",
-            "Adverbs"
+            "Common noun",
+            "Collective noun",
+            "Adjective",
+            "Proper noun",
+            "Abstract noun"
           ],
-          "correct": 4,
-          "explanation": "These are adverbs of frequency. They tell us how often something happens: 'She rarely complains', 'He frequently visits', 'We occasionally swim'. ✓"
+          "correct": 3,
+          "explanation": "*Ben Nevis* is the particular name of one mountain and is capitalised, so it is a proper noun. The trap 'common noun' fits a general word like 'mountain', not the specific name of one, so proper noun is correct. ✓"
         },
         {
           "id": 98,
           "difficulty": 2,
-          "question": "Which word class do 'or', 'and', 'but' and 'so' belong to?",
+          "question": "The River *Thames* flows right through the middle of London. What type of word is *Thames*?",
           "options": [
-            "Prepositions",
-            "Conjunctions",
-            "Adverbs",
-            "Pronouns",
-            "Determiners"
+            "Common noun",
+            "Collective noun",
+            "Abstract noun",
+            "Adjective",
+            "Proper noun"
           ],
-          "correct": 1,
-          "explanation": "These are coordinating conjunctions — small words that join words or clauses of equal importance together: 'bread and butter', 'small but fierce'. ✓"
+          "correct": 4,
+          "explanation": "*Thames* names one particular river and is always capitalised, so it is a proper noun. 'Common noun' would fit the general word 'river', but the specific name of a river is a proper noun. ✓"
         },
         {
           "id": 99,
           "difficulty": 3,
-          "question": "What type of words are these: somebody, anything, everyone, nothing?",
+          "question": "A strange metal *object* lay half-buried in the wet sand. What type of word is *object*?",
           "options": [
-            "Determiners",
-            "Pronouns",
-            "Nouns",
-            "Adjectives",
-            "Adverbs"
+            "Verb",
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "These are indefinite pronouns — they refer to non-specific people or things. 'Somebody left their bag', 'Anything could happen', 'Everyone cheered', 'Nothing was missing'. ✓"
+          "correct": 2,
+          "explanation": "'Object' is often a verb (to object to a rule), but here it names the thing lying in the sand, so it is a noun. ✓"
         },
         {
           "id": 100,
           "difficulty": 3,
-          "question": "Which word class do 'although', 'whereas', 'even though' and 'whilst' belong to?",
+          "question": "The captain gave a firm *order* to advance at dawn. What type of word is *order*?",
           "options": [
-            "Conjunctions",
-            "Adverbs",
-            "Prepositions",
-            "Pronouns",
-            "Determiners"
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 0,
-          "explanation": "These are subordinating conjunctions showing contrast. 'Although it was cold, they went swimming.' 'She smiled, whereas he frowned.' They link a subordinate clause to a main clause. ✓"
+          "correct": 3,
+          "explanation": "'Order' is usually a verb (to order someone about), but here it names the command the captain gives, a thing, so it is a noun. ✓"
         },
         {
           "id": 101,
@@ -29976,16 +29976,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 103,
           "difficulty": 2,
-          "question": "What part of speech are the words: magnificent, dreadful, spectacular, hideous?",
+          "question": "The whole class returns from half term on *Wednesday*. What type of word is *Wednesday*?",
           "options": [
-            "Verbs",
-            "Adverbs",
-            "Nouns",
-            "Adjectives",
-            "Prepositions"
+            "Proper noun",
+            "Common noun",
+            "Abstract noun",
+            "Collective noun",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "These are all strong adjectives. Magnificent means extremely beautiful, dreadful means very bad, spectacular means impressively beautiful, and hideous means extremely ugly. ✓"
+          "correct": 0,
+          "explanation": "*Wednesday* is the specific name of one day of the week and always takes a capital letter, so it is a proper noun. 'Common noun' suits a general word like 'day', not the particular name, so proper noun is correct. ✓"
         },
         {
           "id": 104,
@@ -30004,16 +30004,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 105,
           "difficulty": 3,
-          "question": "What type of words are these: well, fast, hard, late?",
+          "question": "The mayor gave a rousing *address* to the waiting crowd. What type of word is *address*?",
           "options": [
-            "Both adjectives and adverbs",
-            "Only adverbs",
-            "Only adjectives",
-            "Nouns",
-            "Prepositions"
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Pronoun",
+            "Noun"
           ],
-          "correct": 0,
-          "explanation": "These words can be both adjectives and adverbs depending on how they are used. 'A fast car' (adjective) vs 'She ran fast' (adverb). 'A hard test' (adjective) vs 'He worked hard' (adverb). ✓"
+          "correct": 4,
+          "explanation": "'Address' can be a verb (to address a crowd), but here it names the speech itself, a thing, so it is a noun. ✓"
         },
         {
           "id": 106,
@@ -30032,58 +30032,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 107,
           "difficulty": 2,
-          "question": "What type of words are these: behind, in front of, next to, opposite?",
+          "question": "The new science museum in *Manchester* opens next spring. What type of word is *Manchester*?",
           "options": [
-            "Prepositions",
-            "Adjectives",
-            "Conjunctions",
-            "Verbs",
-            "Adverbs"
+            "Common noun",
+            "Proper noun",
+            "Adjective",
+            "Collective noun",
+            "Abstract noun"
           ],
-          "correct": 0,
-          "explanation": "These are prepositions of place. They tell us where something is in relation to something else: 'behind the tree', 'in front of the shop', 'next to the park'. ✓"
+          "correct": 1,
+          "explanation": "*Manchester* is the particular name of one city and is capitalised, so it is a proper noun. 'Common noun' fits a general word like 'city'; the specific name of a city is a proper noun. ✓"
         },
         {
           "id": 108,
           "difficulty": 3,
-          "question": "Which word class do 'enough', 'such', 'quite' and 'rather' belong to when used before adjectives?",
+          "question": "In the *still* of the night, a distant owl hooted. What type of word is *still*?",
           "options": [
-            "Adjectives",
-            "Nouns",
-            "Prepositions",
-            "Conjunctions",
-            "Adverbs"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "When modifying adjectives, these words act as adverbs of degree. 'Quite tall', 'rather cold', 'such a lovely day'. They tell us to what extent or degree the adjective applies. ✓"
+          "correct": 0,
+          "explanation": "'Still' is usually an adverb (still waiting) or an adjective, but here 'the *still* of the night' names the quietness, a thing, so it is a noun. ✓"
         },
         {
           "id": 109,
           "difficulty": 2,
-          "question": "What type of words are these: imagine, believe, wonder, remember?",
+          "question": "My baby brother was born in *July*, during the summer holidays. What type of word is *July*?",
           "options": [
-            "Adverbs",
-            "Adjectives",
-            "Nouns",
-            "Verbs",
-            "Pronouns"
+            "Common noun",
+            "Abstract noun",
+            "Proper noun",
+            "Adjective",
+            "Collective noun"
           ],
-          "correct": 3,
-          "explanation": "These are all verbs describing mental actions — things that happen inside your mind. You imagine a scene, believe a story, wonder about something, and remember a memory. Not all verbs describe physical actions. ✓"
+          "correct": 2,
+          "explanation": "*July* is the specific name of one month and always begins with a capital, so it is a proper noun. 'Common noun' would fit the general word 'month', not the particular name, so proper noun is right. ✓"
         },
         {
           "id": 110,
           "difficulty": 3,
-          "question": "Which word class do 'less', 'fewer', 'more' and 'most' belong to when placed before a noun?",
+          "question": "What *kind* of bird makes that unusual call? What type of word is *kind*?",
           "options": [
-            "Determiners",
-            "Adverbs",
-            "Adjectives",
-            "Conjunctions",
-            "Prepositions"
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Determiner"
           ],
-          "correct": 0,
-          "explanation": "When placed before a noun, these are determiners of quantity: 'less sugar', 'fewer people', 'more time', 'most children'. They determine how much or how many of the noun we mean. ✓"
+          "correct": 1,
+          "explanation": "'Kind' is usually an adjective (a kind person), but here 'what *kind* of bird' means a type or sort, a thing, so it is a noun. ✓"
         },
         {
           "id": 111,
@@ -30144,58 +30144,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 115,
           "difficulty": 2,
-          "question": "Which word is the verb in: 'The enormous whale surfaced gracefully beside the boat.'?",
+          "question": "The final whistle brought a well-earned *victory* for the home side. What type of word is *victory*?",
           "options": [
-            "enormous",
-            "gracefully",
-            "boat",
-            "whale",
-            "surfaced"
+            "Common noun",
+            "Collective noun",
+            "Proper noun",
+            "Abstract noun",
+            "Adjective"
           ],
-          "correct": 4,
-          "explanation": "'Surfaced' is the verb — it describes the action of coming to the surface. Even though 'gracefully' describes how it happened, the verb is the doing word itself. ✓"
+          "correct": 3,
+          "explanation": "*Victory* names an idea of winning that you cannot see or touch, so it is an abstract noun. 'Common noun' is too broad here; because the word names a concept rather than a physical thing, abstract noun is the precise answer. ✓"
         },
         {
           "id": 116,
           "difficulty": 2,
-          "question": "Which word is the verb in: 'Lightning flickered across the dark sky.'?",
+          "question": "The warm blanket gave the shivering child real *comfort*. What type of word is *comfort*?",
           "options": [
-            "sky",
-            "flickered",
-            "across",
-            "dark",
-            "Lightning"
+            "Common noun",
+            "Collective noun",
+            "Adjective",
+            "Proper noun",
+            "Abstract noun"
           ],
-          "correct": 1,
-          "explanation": "'Flickered' is the verb. It describes what the lightning did — it flashed on and off quickly. ✓"
+          "correct": 4,
+          "explanation": "*Comfort* names a feeling of ease you cannot touch, so it is an abstract noun. The trap 'common noun' is less precise because the word stands for an idea, not a physical object; abstract noun fits best. ✓"
         },
         {
           "id": 117,
           "difficulty": 2,
-          "question": "Which word is the verb in: 'The exhausted runner collapsed at the finish line.'?",
+          "question": "Days of rain brought nothing but *misery* to the campers. What type of word is *misery*?",
           "options": [
-            "runner",
-            "collapsed",
-            "exhausted",
-            "finish",
-            "line"
+            "Abstract noun",
+            "Common noun",
+            "Collective noun",
+            "Proper noun",
+            "Adjective"
           ],
-          "correct": 1,
-          "explanation": "'Collapsed' is the verb — it tells us what the runner did. Collapsing means falling down suddenly from tiredness. ✓"
+          "correct": 0,
+          "explanation": "*Misery* names a feeling of great unhappiness you cannot see or touch, so it is an abstract noun. 'Common noun' is too general because the word names an idea rather than a physical thing; abstract noun is precise. ✓"
         },
         {
           "id": 118,
           "difficulty": 3,
-          "question": "Which word is the verb in: 'Happiness radiated from her bright smile.'?",
+          "question": "We spent the whole afternoon at the summer *fair*. What type of word is *fair*?",
           "options": [
-            "radiated",
-            "Happiness",
-            "from",
-            "bright",
-            "smile"
+            "Verb",
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 0,
-          "explanation": "'Radiated' is the verb — it describes what happiness did. Even though happiness is not a physical thing, the verb tells us it spread outward like rays of light. ✓"
+          "correct": 2,
+          "explanation": "'Fair' is often an adjective (a fair decision), but here it names the event in the park, a thing, so it is a noun. ✓"
         },
         {
           "id": 119,
@@ -30256,30 +30256,30 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 123,
           "difficulty": 2,
-          "question": "Which word is the adjective in: 'The bitter wind howled through the empty streets.'?",
+          "question": "She wrote a letter full of *gratitude* to the firefighters. What type of word is *gratitude*?",
           "options": [
-            "wind",
-            "bitter",
-            "howled",
-            "through",
-            "streets"
+            "Adjective",
+            "Abstract noun",
+            "Common noun",
+            "Proper noun",
+            "Collective noun"
           ],
           "correct": 1,
-          "explanation": "'Bitter' is an adjective — it describes the wind, telling us how it felt. The other options test different word classes: 'wind' and 'streets' are nouns, 'howled' is a verb, and 'through' is a preposition. Look for the word that describes a noun. ✓"
+          "explanation": "*Gratitude* names a feeling of thankfulness you cannot touch, so it is an abstract noun. 'Common noun' is less precise because the word stands for an idea, not a physical object; abstract noun is the best answer. ✓"
         },
         {
           "id": 124,
           "difficulty": 2,
-          "question": "Which word is an adjective in: 'The mysterious parcel arrived on a rainy afternoon.'?",
+          "question": "The brass *clock* on the mantelpiece chimed midnight. What type of word is *clock*?",
           "options": [
-            "mysterious",
-            "parcel",
-            "afternoon",
-            "rainy",
-            "arrived"
+            "Abstract noun",
+            "Collective noun",
+            "Common noun",
+            "Proper noun",
+            "Adjective"
           ],
-          "correct": 0,
-          "explanation": "'Mysterious' is an adjective — it describes the parcel, suggesting something unknown or puzzling about it. 'Rainy' is also an adjective describing the afternoon. ✓"
+          "correct": 2,
+          "explanation": "A *clock* is an ordinary physical object you can see and touch, and it is a general thing rather than a specific name, so it is a common noun. It is not an abstract noun, because abstract nouns name ideas you cannot touch, and a clock is very much a real object. ✓"
         },
         {
           "id": 125,
@@ -30312,44 +30312,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 127,
           "difficulty": 2,
-          "question": "Which word is the adverb in: 'The fox crept silently through the undergrowth.'?",
+          "question": "An old *lantern* swung from a hook beside the stable door. What type of word is *lantern*?",
           "options": [
-            "crept",
-            "silently",
-            "fox",
-            "through",
-            "undergrowth"
+            "Abstract noun",
+            "Proper noun",
+            "Collective noun",
+            "Common noun",
+            "Adjective"
           ],
-          "correct": 1,
-          "explanation": "'Silently' is the adverb — it describes how the fox crept. It tells us the fox made no noise while moving. ✓"
+          "correct": 3,
+          "explanation": "A *lantern* is a real object you can see and hold, and it is a general word rather than a particular name, so it is a common noun. Abstract noun is wrong because that label is for ideas you cannot touch, whereas a lantern is a solid thing. ✓"
         },
         {
           "id": 128,
           "difficulty": 2,
-          "question": "Which word is the adverb in: 'He eagerly opened the birthday present.'?",
+          "question": "In this sentence — 'The whole team celebrated wildly after the final whistle.' — which word is a collective noun?",
           "options": [
-            "He",
-            "present",
-            "opened",
-            "birthday",
-            "eagerly"
+            "whole",
+            "celebrated",
+            "wildly",
+            "whistle",
+            "team"
           ],
           "correct": 4,
-          "explanation": "'Eagerly' is the adverb — it tells us how he opened the present. He was excited and keen, which is what 'eagerly' means. ✓"
+          "explanation": "*Team* names a group of players acting as one unit, so it is the collective noun. 'Whistle' is a noun too, but it names a single object, not a group, so it is not collective. ✓"
         },
         {
           "id": 129,
           "difficulty": 2,
-          "question": "Which word is the adverb in: 'The gymnast leapt gracefully over the beam.'?",
+          "question": "In this sentence — 'On Sunday the choir practised in the old stone church.' — which word is a collective noun?",
           "options": [
-            "gymnast",
-            "beam",
-            "leapt",
-            "over",
-            "gracefully"
+            "choir",
+            "Sunday",
+            "practised",
+            "stone",
+            "church"
           ],
-          "correct": 4,
-          "explanation": "'Gracefully' is the adverb — it describes how the gymnast leapt, meaning in a smooth and elegant way. ✓"
+          "correct": 0,
+          "explanation": "*Choir* names a group of singers as one unit, so it is the collective noun. 'Church' is a noun as well, but it names a single building, not a group, so it is not collective. ✓"
         },
         {
           "id": 130,
@@ -30382,100 +30382,100 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 132,
           "difficulty": 2,
-          "question": "Which word is a noun in: 'Her determination impressed all the judges.'?",
+          "question": "In this sentence — 'Yesterday Sarah cycled all the way to the harbour.' — which word is a proper noun?",
           "options": [
-            "Her",
-            "determination",
-            "impressed",
-            "all",
-            "the"
+            "Yesterday",
+            "Sarah",
+            "cycled",
+            "way",
+            "harbour"
           ],
           "correct": 1,
-          "explanation": "'Determination' is an abstract noun — it names a quality. Even though you cannot touch or see determination, it is still a noun because it names something. ✓"
+          "explanation": "*Sarah* is the specific name of one person and always takes a capital letter, so it is the proper noun. 'Harbour' is a noun too, but it is a general place, a common noun, not a particular name. ✓"
         },
         {
           "id": 133,
           "difficulty": 2,
-          "question": "Which word is the preposition in: 'The cat hid under the bed during the thunderstorm.'?",
+          "question": "In this sentence — 'After the long climb, they reached the summit in glory.' — which word is an abstract noun?",
           "options": [
-            "under",
-            "thunderstorm",
-            "cat",
-            "bed",
-            "hid"
+            "long",
+            "climb",
+            "glory",
+            "reached",
+            "summit"
           ],
-          "correct": 0,
-          "explanation": "'Under' is a preposition — it tells us where the cat hid in relation to the bed. Prepositions show position or direction. ✓"
+          "correct": 2,
+          "explanation": "*Glory* names a feeling of triumph you cannot see or touch, so it is the abstract noun. 'Summit' is a noun as well, but it is a real place you can stand on, so it is concrete, not abstract. ✓"
         },
         {
           "id": 134,
           "difficulty": 2,
-          "question": "Which word is the preposition in: 'The squirrel ran along the garden fence.'?",
+          "question": "In this sentence — 'There was real warmth in the way she greeted every guest.' — which word is an abstract noun?",
           "options": [
-            "fence",
-            "ran",
-            "squirrel",
-            "garden",
-            "along"
+            "real",
+            "greeted",
+            "every",
+            "warmth",
+            "guest"
           ],
-          "correct": 4,
-          "explanation": "'Along' is the preposition — it shows the direction the squirrel ran in relation to the fence. ✓"
+          "correct": 3,
+          "explanation": "*Warmth* here names a friendly quality you cannot touch, so it is the abstract noun. 'Guest' is a noun too, but it is a person you can see, a concrete common noun, not an abstract idea. ✓"
         },
         {
           "id": 135,
           "difficulty": 2,
-          "question": "Which word is the preposition in: 'She placed the flowers between the two candles.'?",
+          "question": "In this sentence — 'During the fair, Emma won a goldfish at the coconut stall.' — which word is a proper noun?",
           "options": [
-            "between",
-            "flowers",
-            "placed",
-            "two",
-            "candles"
+            "fair",
+            "won",
+            "goldfish",
+            "stall",
+            "Emma"
           ],
-          "correct": 0,
-          "explanation": "'Between' is the preposition — it tells us where the flowers were placed in relation to the candles. ✓"
+          "correct": 4,
+          "explanation": "*Emma* is the specific name of one girl and is always capitalised, so it is the proper noun. 'Goldfish' and 'stall' are nouns as well, but they are general things, common nouns, not particular names. ✓"
         },
         {
           "id": 136,
           "difficulty": 2,
-          "question": "Which word is the conjunction in: 'I wanted to play outside, but it was raining.'?",
+          "question": "The old lighthouse on the cliff *is* ancient. What type of word is *is*?",
           "options": [
-            "wanted",
-            "play",
-            "outside",
-            "but",
-            "raining"
+            "Verb",
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "'But' is the conjunction — it joins two clauses together and shows a contrast. The speaker wanted to play, however it was raining. ✓"
+          "correct": 0,
+          "explanation": "*Is* is a linking verb: it joins the subject 'lighthouse' to the word describing it, 'ancient'. It shows a state of being, not a visible action, so it is still a verb. The trap is 'ancient' (the adjective): because 'is' has no obvious action, children copy the class of the describing word beside it. ✓"
         },
         {
           "id": 137,
           "difficulty": 2,
-          "question": "Which word is the conjunction in: 'We packed an umbrella because the forecast said rain.'?",
+          "question": "Your brother always *seems* nervous before a big match. What type of word is *seems*?",
           "options": [
-            "forecast",
-            "umbrella",
-            "rain",
-            "packed",
-            "because"
+            "Adverb",
+            "Verb",
+            "Adjective",
+            "Noun",
+            "Pronoun"
           ],
-          "correct": 4,
-          "explanation": "'Because' is the conjunction — it joins two clauses and explains the reason. We packed an umbrella for the reason that rain was forecast. ✓"
+          "correct": 1,
+          "explanation": "*Seems* is a linking verb telling us the state your brother is in; it links him to 'nervous'. It is not a visible action, but every sentence's main word about the subject's state is a verb. The trap is 'nervous', the adjective, which children pick because 'seems' shows no action. ✓"
         },
         {
           "id": 138,
           "difficulty": 2,
-          "question": "Which word is the conjunction in: 'Tom likes football and cricket.'?",
+          "question": "After the long climb, Priya *became* exhausted. What type of word is *became*?",
           "options": [
-            "Tom",
-            "and",
-            "football",
-            "likes",
-            "cricket"
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Preposition",
+            "Noun"
           ],
-          "correct": 1,
-          "explanation": "'And' is the conjunction — it joins two nouns (football and cricket) together. Conjunctions are joining words. ✓"
+          "correct": 2,
+          "explanation": "*Became* is a linking verb showing the change in Priya's state; it links her to 'exhausted'. Becoming something is a verb even though you cannot see an action. The trap is the adjective 'exhausted', which children choose because 'became' names a state rather than a movement. ✓"
         },
         {
           "id": 139,
@@ -30508,16 +30508,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 141,
           "difficulty": 2,
-          "question": "Which word is the pronoun in: 'The teacher asked him to read the next chapter.'?",
+          "question": "The woollen blanket *felt* scratchy against her skin. What type of word is *felt*?",
           "options": [
-            "him",
-            "asked",
-            "teacher",
-            "chapter",
-            "read"
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 0,
-          "explanation": "'Him' is a pronoun — it takes the place of a boy's or man's name. It is an object pronoun used when the person is receiving the action. ✓"
+          "correct": 3,
+          "explanation": "*Felt* here is a linking verb describing the blanket's quality; it links 'blanket' to 'scratchy'. It reports a state, not a physical action of feeling something. The trap is 'scratchy', the adjective, which children copy because 'felt' seems to have no visible action. ✓"
         },
         {
           "id": 142,
@@ -30578,72 +30578,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 146,
           "difficulty": 2,
-          "question": "In the sentence 'The train arrived late at the station', what type of word is 'late'?",
+          "question": "Despite the noise, the librarian *remained* calm. What type of word is *remained*?",
           "options": [
-            "Noun",
-            "Verb",
-            "Adjective",
             "Adverb",
-            "Preposition"
+            "Adjective",
+            "Noun",
+            "Preposition",
+            "Verb"
           ],
-          "correct": 3,
-          "explanation": "'Late' is an adverb here — it tells us when the train arrived. Not all adverbs end in '-ly'; 'late' modifies the verb 'arrived'. ✓"
+          "correct": 4,
+          "explanation": "*Remained* is a linking verb: it joins the librarian to the state 'calm'. Staying in a state is still a verb, even without a visible action. The trap is the adjective 'calm', which children pick because 'remained' shows no movement. ✓"
         },
         {
           "id": 147,
           "difficulty": 2,
-          "question": "In the sentence 'We hid behind the old garden wall', what type of word is 'behind'?",
+          "question": "In the fading light, the moor *looked* eerie. What type of word is *looked*?",
           "options": [
-            "Adverb",
+            "Verb",
             "Adjective",
+            "Adverb",
             "Noun",
-            "Conjunction",
-            "Preposition"
+            "Pronoun"
           ],
-          "correct": 4,
-          "explanation": "'Behind' is a preposition — it tells us where we hid in relation to the wall. Prepositions show the position of one thing compared to another. ✓"
+          "correct": 0,
+          "explanation": "*Looked* here is a linking verb describing the moor's appearance; it links 'moor' to 'eerie'. It is not the action of using your eyes but a state. The trap is 'eerie', the adjective, chosen because 'looked' has no obvious action in this sentence. ✓"
         },
         {
           "id": 148,
           "difficulty": 2,
-          "question": "In the sentence 'Although she was tired, she finished the race', what type of word is 'although'?",
+          "question": "Through the thick wall, the music *sounded* faint. What type of word is *sounded*?",
           "options": [
-            "Conjunction",
-            "Pronoun",
-            "Preposition",
+            "Noun",
+            "Verb",
+            "Adjective",
             "Adverb",
-            "Adjective"
+            "Preposition"
           ],
-          "correct": 0,
-          "explanation": "'Although' is a subordinating conjunction — it joins two clauses together and shows a contrast. The first clause (she was tired) is the subordinate clause. ✓"
+          "correct": 1,
+          "explanation": "*Sounded* is a linking verb joining 'music' to the describing word 'faint'. It reports how the music seemed, a state rather than a visible action. The trap is the adjective 'faint', which children copy because 'sounded' names no clear action. ✓"
         },
         {
           "id": 149,
           "difficulty": 2,
-          "question": "In the sentence 'The children shared the sweets equally', what type of word is 'equally'?",
+          "question": "As autumn arrived, the evenings *grew* chilly. What type of word is *grew*?",
           "options": [
             "Adjective",
-            "Noun",
             "Adverb",
             "Verb",
+            "Noun",
             "Conjunction"
           ],
           "correct": 2,
-          "explanation": "'Equally' is an adverb — it tells us how the sweets were shared. It modifies the verb 'shared'. ✓"
+          "explanation": "*Grew* is a linking verb here, showing the evenings changing state; it links them to 'chilly'. It means 'became', not the physical growing of a plant. The trap is 'chilly', the adjective, picked because 'grew' shows no obvious action. ✓"
         },
         {
           "id": 150,
           "difficulty": 2,
-          "question": "In the sentence 'Every pupil must wear the correct uniform', what type of word is 'every'?",
+          "question": "The homemade lemonade *tasted* sour. What type of word is *tasted*?",
           "options": [
             "Adjective",
-            "Determiner",
-            "Pronoun",
             "Adverb",
-            "Conjunction"
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "'Every' is a determiner — it comes before the noun 'pupil' and tells us which pupils (all of them). Determiners specify which or how many. ✓"
+          "correct": 3,
+          "explanation": "*Tasted* is a linking verb joining 'lemonade' to 'sour'; it describes a quality of the drink, not the action of a person tasting. It is still a verb. The trap is 'sour', the adjective, chosen because 'tasted' has no visible action. ✓"
         },
         {
           "id": 151,
@@ -30690,72 +30690,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 154,
           "difficulty": 2,
-          "question": "In the sentence 'The boat sailed smoothly across the calm lake', what type of word is 'calm'?",
+          "question": "Even after the argument, Tom *stayed* silent. What type of word is *stayed*?",
           "options": [
             "Adverb",
-            "Verb",
             "Adjective",
             "Noun",
-            "Preposition"
+            "Pronoun",
+            "Verb"
           ],
-          "correct": 2,
-          "explanation": "'Calm' is an adjective — it describes the lake, telling us the water was still and peaceful. ✓"
+          "correct": 4,
+          "explanation": "*Stayed* is a linking verb: it joins Tom to the state 'silent'. Remaining in a state is a verb even though nothing visibly happens. The trap is the adjective 'silent', which children pick because 'stayed' shows no action. ✓"
         },
         {
           "id": 155,
           "difficulty": 2,
-          "question": "In the sentence 'She hid the present inside the wardrobe', what type of word is 'inside'?",
+          "question": "The freshly baked bread *smelled* delicious. What type of word is *smelled*?",
           "options": [
-            "Preposition",
+            "Verb",
             "Adjective",
-            "Adverb",
             "Noun",
-            "Verb"
+            "Adverb",
+            "Preposition"
           ],
           "correct": 0,
-          "explanation": "'Inside' is a preposition — it tells us where the present was hidden in relation to the wardrobe. ✓"
+          "explanation": "*Smelled* here is a linking verb joining 'bread' to 'delicious'; it describes the bread's quality, not a person sniffing. It is still a verb. The trap is 'delicious', the adjective, copied because 'smelled' names no clear action. ✓"
         },
         {
           "id": 156,
           "difficulty": 2,
-          "question": "In the sentence 'The museum was fascinating, so we stayed all afternoon', what type of word is 'so'?",
+          "question": "By late October the oak leaves *turned* golden. What type of word is *turned*?",
           "options": [
-            "Conjunction",
-            "Preposition",
             "Adverb",
+            "Verb",
             "Adjective",
-            "Pronoun"
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 0,
-          "explanation": "'So' is a conjunction — it joins two clauses and shows that one thing led to another (cause and effect). Because the museum was fascinating, the result was that they stayed. ✓"
+          "correct": 1,
+          "explanation": "*Turned* is a linking verb here, meaning 'became'; it links 'leaves' to 'golden'. It is not the action of turning around but a change of state. The trap is 'golden', the adjective, chosen because 'turned' shows no visible action here. ✓"
         },
         {
           "id": 157,
           "difficulty": 3,
-          "question": "In the sentence 'Her kindness towards others was remarkable', what type of word is 'kindness'?",
+          "question": "The parcel was small and surprisingly *light* to carry. What type of word is *light*?",
           "options": [
-            "Adjective",
+            "Noun",
             "Verb",
-            "Pronoun",
             "Adverb",
-            "Abstract noun"
+            "Adjective",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "'Kindness' is an abstract noun — it names a quality you cannot physically touch. It is formed by adding the suffix '-ness' to the adjective 'kind'. ✓"
+          "correct": 3,
+          "explanation": "'Light' is usually a noun (a bright light), but here it describes the parcel (how heavy it is), so it is an adjective. ✓"
         },
         {
           "id": 158,
           "difficulty": 3,
-          "question": "In the sentence 'Those biscuits belong to me', what type of word is 'those'?",
+          "question": "The cat slipped quietly out through the *back* door. What type of word is *back*?",
           "options": [
-            "Determiner",
-            "Conjunction",
-            "Pronoun",
+            "Noun",
+            "Verb",
             "Adverb",
+            "Pronoun",
             "Adjective"
           ],
-          "correct": 0,
-          "explanation": "'Those' is a demonstrative determiner — it comes before the noun 'biscuits' and points out which specific biscuits are meant (the ones over there, not nearby). ✓"
+          "correct": 4,
+          "explanation": "'Back' is usually a noun (your back), but here it describes which door it is (the *back* door), so it is an adjective. ✓"
         },
         {
           "id": 159,
@@ -30788,72 +30788,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 161,
           "difficulty": 2,
-          "question": "In the sentence 'The owl hooted mysteriously in the darkness', what type of word is 'mysteriously'?",
+          "question": "At dusk the distant hill *appears* purple. What type of word is *appears*?",
           "options": [
             "Adjective",
             "Adverb",
+            "Verb",
             "Noun",
-            "Conjunction",
-            "Verb"
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "'Mysteriously' is an adverb — it tells us how the owl hooted. It creates a sense of mystery and the unknown. ✓"
+          "correct": 2,
+          "explanation": "*Appears* is a linking verb joining 'hill' to the describing word 'purple'; it tells us how the hill looks, a state not an action. It is still a verb. The trap is 'purple', the adjective, picked because 'appears' has no obvious action. ✓"
         },
         {
           "id": 162,
           "difficulty": 2,
-          "question": "In the sentence 'James waited patiently for his turn', what type of word is 'patiently'?",
+          "question": "The referee's final decision *was* unfair. What type of word is *was*?",
           "options": [
-            "Adverb",
-            "Verb",
             "Adjective",
             "Noun",
+            "Adverb",
+            "Verb",
             "Pronoun"
           ],
-          "correct": 0,
-          "explanation": "'Patiently' is an adverb — it describes how James waited. Being patient means waiting without complaining. ✓"
+          "correct": 3,
+          "explanation": "*Was* is a linking verb joining 'decision' to 'unfair'. It shows a state of being, not an action, but it is still a verb. The trap is the adjective 'unfair', which children copy because 'was' shows nothing happening. ✓"
         },
         {
           "id": 163,
           "difficulty": 2,
-          "question": "In the sentence 'The children crept through the dark tunnel', what type of word is 'through'?",
+          "question": "These printed instructions *are* confusing. What type of word is *are*?",
           "options": [
+            "Adjective",
             "Adverb",
-            "Verb",
-            "Conjunction",
+            "Noun",
             "Preposition",
-            "Adjective"
+            "Verb"
           ],
-          "correct": 3,
-          "explanation": "'Through' is a preposition — it shows the direction of movement in relation to the tunnel. The children went into one end and out the other. ✓"
+          "correct": 4,
+          "explanation": "*Are* is a linking verb joining 'instructions' to 'confusing'. It expresses a state of being rather than an action, but it is still a verb. The trap is 'confusing', the adjective, chosen because 'are' has no visible action. ✓"
         },
         {
           "id": 164,
           "difficulty": 3,
-          "question": "In the sentence 'Several children forgot their homework', what type of word is 'several'?",
+          "question": "Despite its great age, the old bridge was perfectly *sound*. What type of word is *sound*?",
           "options": [
             "Adjective",
-            "Adverb",
-            "Pronoun",
             "Noun",
-            "Determiner"
+            "Verb",
+            "Adverb",
+            "Conjunction"
           ],
-          "correct": 4,
-          "explanation": "'Several' is a determiner — it comes before the noun 'children' and tells us the quantity (more than two but not very many). ✓"
+          "correct": 0,
+          "explanation": "'Sound' is usually a noun (a loud sound), but here it describes the bridge (solid and safe), so it is an adjective. ✓"
         },
         {
           "id": 165,
           "difficulty": 3,
-          "question": "In the sentence 'Whoever finishes first can choose a prize', what type of word is 'whoever'?",
+          "question": "Check carefully that the picture frame is completely *level*. What type of word is *level*?",
           "options": [
-            "Pronoun",
+            "Noun",
+            "Adjective",
+            "Verb",
             "Adverb",
-            "Determiner",
-            "Conjunction",
             "Preposition"
           ],
-          "correct": 0,
-          "explanation": "'Whoever' is a pronoun — specifically an indefinite relative pronoun. It refers to any person who finishes first, without naming them specifically. ✓"
+          "correct": 1,
+          "explanation": "'Level' can be a noun (a water level), but here it describes the frame (perfectly flat and even), so it is an adjective. ✓"
         },
         {
           "id": 166,
@@ -30886,44 +30886,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 168,
           "difficulty": 2,
-          "question": "In the sentence 'She reluctantly handed over her pocket money', what type of word is 'reluctantly'?",
+          "question": "The velvet cushion *feels* soft. What type of word is *feels*?",
           "options": [
-            "Adjective",
-            "Conjunction",
-            "Noun",
             "Verb",
-            "Adverb"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Conjunction"
           ],
-          "correct": 4,
-          "explanation": "'Reluctantly' is an adverb — it tells us how she handed over the money. Reluctantly means she did not want to do it. ✓"
+          "correct": 0,
+          "explanation": "*Feels* here is a linking verb joining 'cushion' to 'soft'; it describes the cushion's quality, not a person feeling it. It is still a verb. The trap is 'soft', the adjective, picked because 'feels' shows no clear action. ✓"
         },
         {
           "id": 169,
           "difficulty": 2,
-          "question": "In the sentence 'The letter arrived before breakfast', what type of word is 'before'?",
+          "question": "At midnight the empty castle *seemed* spooky. What type of word is *seemed*?",
           "options": [
-            "Conjunction",
             "Adverb",
+            "Verb",
             "Adjective",
             "Noun",
-            "Preposition"
+            "Pronoun"
           ],
-          "correct": 4,
-          "explanation": "'Before' is a preposition here — it shows when the letter arrived in relation to breakfast. It comes before a noun (breakfast), which makes it a preposition. ✓"
+          "correct": 1,
+          "explanation": "*Seemed* is a linking verb joining 'castle' to 'spooky'; it tells us the impression the castle gave, a state not an action. It is still a verb. The trap is 'spooky', the adjective, copied because 'seemed' names no action. ✓"
         },
         {
           "id": 170,
           "difficulty": 2,
-          "question": "In the sentence 'Oliver tripped because his shoelaces were undone', what type of word is 'because'?",
+          "question": "In her new winter coat, Grandma *looks* elegant. What type of word is *looks*?",
           "options": [
-            "Preposition",
+            "Adjective",
             "Adverb",
-            "Pronoun",
-            "Conjunction",
-            "Adjective"
+            "Verb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "'Because' is a conjunction — it joins two clauses and tells us the reason why Oliver tripped. It introduces a clause of reason. ✓"
+          "correct": 2,
+          "explanation": "*Looks* here is a linking verb joining 'Grandma' to 'elegant'; it describes her appearance, not the action of looking at something. It is still a verb. The trap is 'elegant', the adjective, chosen because 'looks' shows no visible action. ✓"
         },
         {
           "id": 171,
@@ -30970,58 +30970,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 174,
           "difficulty": 2,
-          "question": "Which word is the adverb in: 'The athlete sprinted effortlessly towards the finish.'?",
+          "question": "That feeble excuse *sounds* ridiculous to me. What type of word is *sounds*?",
           "options": [
-            "finish",
-            "sprinted",
-            "athlete",
-            "towards",
-            "effortlessly"
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 4,
-          "explanation": "'Effortlessly' is the adverb — it tells us how the athlete sprinted, meaning without apparent effort or difficulty. ✓"
+          "correct": 3,
+          "explanation": "*Sounds* is a linking verb joining 'excuse' to 'ridiculous'; it tells us the impression the excuse gives, a state not an action. It is still a verb. The trap is 'ridiculous', the adjective, picked because 'sounds' shows nothing happening. ✓"
         },
         {
           "id": 175,
           "difficulty": 2,
-          "question": "In the sentence 'She nervously opened the exam results envelope', what type of word is 'nervously'?",
+          "question": "Every winter the village pond *grows* icy. What type of word is *grows*?",
           "options": [
-            "Adverb",
-            "Verb",
             "Adjective",
+            "Adverb",
             "Noun",
-            "Preposition"
+            "Pronoun",
+            "Verb"
           ],
-          "correct": 0,
-          "explanation": "'Nervously' is an adverb — it describes how she opened the envelope. She was anxious and worried about what was inside. ✓"
+          "correct": 4,
+          "explanation": "*Grows* is a linking verb meaning 'becomes'; it links 'pond' to 'icy'. It is a change of state, not physical growing. The trap is 'icy', the adjective, chosen because 'grows' shows no obvious action here. ✓"
         },
         {
           "id": 176,
           "difficulty": 2,
-          "question": "In the sentence 'The ancient oak tree towered above the cottage', what type of word is 'above'?",
+          "question": "Even under great pressure, the captain *remains* steady. What type of word is *remains*?",
           "options": [
-            "Adverb",
-            "Preposition",
+            "Verb",
             "Adjective",
-            "Conjunction",
-            "Noun"
+            "Adverb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "'Above' is a preposition — it shows the position of the tree in relation to the cottage. The tree was higher up than the cottage. ✓"
+          "correct": 0,
+          "explanation": "*Remains* is a linking verb joining 'captain' to the state 'steady'. Staying in a state is a verb even without a visible action. The trap is 'steady', the adjective, picked because 'remains' shows no movement. ✓"
         },
         {
           "id": 177,
           "difficulty": 3,
-          "question": "In the sentence 'Neither team scored in the first half', what type of word is 'neither'?",
+          "question": "The gardener pressed the soil down until it was *firm*. What type of word is *firm*?",
           "options": [
-            "Conjunction",
-            "Pronoun",
-            "Preposition",
+            "Noun",
+            "Verb",
+            "Adjective",
             "Adverb",
             "Determiner"
           ],
-          "correct": 4,
-          "explanation": "'Neither' is a determiner here — it comes before the noun 'team' and tells us that not one and not the other team scored. ✓"
+          "correct": 2,
+          "explanation": "'Firm' can be a noun (a law firm), but here it describes the soil (pressed hard and solid), so it is an adjective. ✓"
         },
         {
           "id": 178,
@@ -31054,72 +31054,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 180,
           "difficulty": 2,
-          "question": "In the sentence 'Amira spoke confidently during her class presentation', what type of word is 'confidently'?",
+          "question": "During thunderstorms the little dog *stays* frightened. What type of word is *stays*?",
           "options": [
             "Adjective",
+            "Verb",
             "Adverb",
             "Noun",
-            "Verb",
             "Conjunction"
           ],
           "correct": 1,
-          "explanation": "'Confidently' is an adverb — it tells us how Amira spoke. Being confident means feeling sure of yourself. ✓"
+          "explanation": "*Stays* is a linking verb joining 'dog' to 'frightened'; it shows the state the dog remains in, not an action. It is still a verb. The trap is 'frightened', the adjective, chosen because 'stays' shows nothing happening. ✓"
         },
         {
           "id": 181,
           "difficulty": 2,
-          "question": "In the sentence 'We sheltered beneath the railway bridge', what type of word is 'beneath'?",
+          "question": "When the tide rises, the causeway *becomes* dangerous. What type of word is *becomes*?",
           "options": [
             "Adverb",
-            "Conjunction",
             "Adjective",
-            "Preposition",
-            "Noun"
+            "Verb",
+            "Noun",
+            "Pronoun"
           ],
-          "correct": 3,
-          "explanation": "'Beneath' is a preposition — it tells us where we sheltered in relation to the bridge. Beneath means underneath or below. ✓"
+          "correct": 2,
+          "explanation": "*Becomes* is a linking verb showing the causeway's change of state; it links it to 'dangerous'. Becoming something is a verb even without a visible action. The trap is 'dangerous', the adjective, picked because 'becomes' names a state. ✓"
         },
         {
           "id": 182,
           "difficulty": 2,
-          "question": "In the sentence 'The match was cancelled because the pitch was waterlogged', what type of word is 'because'?",
+          "question": "In the thick fog, the old map *proved* useless. What type of word is *proved*?",
           "options": [
-            "Adverb",
-            "Preposition",
-            "Pronoun",
             "Adjective",
-            "Conjunction"
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "'Because' is a conjunction — it joins two clauses and gives the reason why the match was cancelled. ✓"
+          "correct": 3,
+          "explanation": "*Proved* is a linking verb here, joining 'map' to 'useless'; it means 'turned out to be', a state not an action. It is still a verb. The trap is 'useless', the adjective, chosen because 'proved' shows no visible action. ✓"
         },
         {
           "id": 183,
           "difficulty": 3,
-          "question": "In the sentence 'Each student received a certificate', what type of word is 'each'?",
+          "question": "You have chosen exactly the *right* answer this time. What type of word is *right*?",
           "options": [
-            "Determiner",
-            "Pronoun",
-            "Adjective",
+            "Noun",
+            "Verb",
             "Adverb",
-            "Conjunction"
+            "Adjective",
+            "Preposition"
           ],
-          "correct": 0,
-          "explanation": "'Each' is a determiner — it comes before the noun 'student' and means every single one individually. ✓"
+          "correct": 3,
+          "explanation": "'Right' can be a noun (a legal right) or an adverb (turn right), but here it describes the answer (correct), so it is an adjective. ✓"
         },
         {
           "id": 184,
           "difficulty": 3,
-          "question": "In the sentence 'The excitement was almost unbearable', what type of word is 'excitement'?",
+          "question": "After a week in bed, she finally felt *well* again. What type of word is *well*?",
           "options": [
-            "Adjective",
-            "Adverb",
+            "Noun",
             "Verb",
-            "Abstract noun",
-            "Pronoun"
+            "Adverb",
+            "Pronoun",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "'Excitement' is an abstract noun — it names an emotion that you cannot physically see or touch. It is formed from the verb 'excite' plus the suffix '-ment'. ✓"
+          "correct": 4,
+          "explanation": "'Well' is usually an adverb (she sang well), but here it describes how she feels (healthy), so it is an adjective. ✓"
         },
         {
           "id": 185,
@@ -31152,72 +31152,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 187,
           "difficulty": 2,
-          "question": "In the sentence 'The river flowed gently between the green hills', what type of word is 'gently'?",
+          "question": "The open bottle of milk *went* sour overnight. What type of word is *went*?",
           "options": [
-            "Noun",
             "Adjective",
-            "Verb",
-            "Preposition",
-            "Adverb"
+            "Adverb",
+            "Noun",
+            "Conjunction",
+            "Verb"
           ],
           "correct": 4,
-          "explanation": "'Gently' is an adverb — it tells us how the river flowed. Gently means in a soft, calm way. ✓"
+          "explanation": "*Went* here is a linking verb meaning 'became'; it links 'milk' to 'sour'. It is a change of state, not travelling anywhere. The trap is 'sour', the adjective, picked because 'went' shows no visible movement in this sentence. ✓"
         },
         {
           "id": 188,
           "difficulty": 2,
-          "question": "In the sentence 'The kite soared high above the cliffs', what type of word is 'above'?",
+          "question": "This cough medicine *tastes* horrible. What type of word is *tastes*?",
           "options": [
+            "Verb",
             "Adverb",
-            "Noun",
             "Adjective",
-            "Preposition",
-            "Verb"
+            "Noun",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "'Above' is a preposition — it shows where the kite was in relation to the cliffs (higher than them). ✓"
+          "correct": 0,
+          "explanation": "*Tastes* is a linking verb joining 'medicine' to 'horrible'; it describes the medicine's quality, not a person tasting. It is still a verb. The trap is 'horrible', the adjective, chosen because 'tastes' shows no visible action. ✓"
         },
         {
           "id": 189,
           "difficulty": 2,
-          "question": "In the sentence 'Lily practised hard, yet she still made mistakes', what type of word is 'yet'?",
+          "question": "The old stone cellar *smells* damp. What type of word is *smells*?",
           "options": [
-            "Pronoun",
-            "Preposition",
+            "Adjective",
+            "Verb",
             "Adverb",
-            "Conjunction",
-            "Adjective"
+            "Noun",
+            "Pronoun"
           ],
-          "correct": 3,
-          "explanation": "'Yet' is a conjunction here — it joins two contrasting clauses. Lily practised hard (positive) yet still made mistakes (negative). ✓"
+          "correct": 1,
+          "explanation": "*Smells* here is a linking verb joining 'cellar' to 'damp'; it describes the cellar's quality, not a person sniffing. It is still a verb. The trap is 'damp', the adjective, picked because 'smells' shows no clear action. ✓"
         },
         {
           "id": 190,
           "difficulty": 3,
-          "question": "In the sentence 'His behaviour towards the younger children was exemplary', what type of word is 'behaviour'?",
+          "question": "He was too *mean* to share even a single sweet. What type of word is *mean*?",
           "options": [
-            "Abstract noun",
-            "Verb",
             "Adjective",
-            "Pronoun",
-            "Adverb"
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Conjunction"
           ],
           "correct": 0,
-          "explanation": "'Behaviour' is an abstract noun — it names how someone acts, which is something you can observe but not physically touch. ✓"
+          "explanation": "'Mean' is often a verb (to mean something), but here it describes the boy (unkind and selfish), so it is an adjective. ✓"
         },
         {
           "id": 191,
           "difficulty": 3,
-          "question": "In the sentence 'Whose pencil case is this on the floor?', what type of word is 'whose'?",
+          "question": "Everyone agreed she was a *model* pupil, always polite and hard-working. What type of word is *model*?",
           "options": [
-            "Pronoun",
-            "Conjunction",
-            "Preposition",
-            "Interrogative determiner",
-            "Adverb"
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "'Whose' is an interrogative determiner — it comes before the noun 'pencil case' and asks a question about possession (who owns it). ✓"
+          "correct": 1,
+          "explanation": "'Model' is usually a noun (a model aeroplane), but here it describes the pupil (a perfect example), so it is an adjective. ✓"
         },
         {
           "id": 192,
@@ -31250,58 +31250,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 194,
           "difficulty": 2,
-          "question": "In the sentence 'Marcus politely asked for another helping', what type of word is 'politely'?",
+          "question": "The very last question *is* tricky. What type of word is *is*?",
           "options": [
             "Adjective",
-            "Adverb",
-            "Verb",
             "Noun",
-            "Conjunction"
+            "Verb",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "'Politely' is an adverb — it tells us how Marcus asked. He was well-mannered and respectful. ✓"
+          "correct": 2,
+          "explanation": "*Is* is a linking verb joining 'question' to 'tricky'. It expresses a state of being, not an action, but it is still a verb. The trap is 'tricky', the adjective, copied because 'is' shows nothing happening. ✓"
         },
         {
           "id": 195,
           "difficulty": 2,
-          "question": "In the sentence 'The tortoise crawled across the dusty road', what type of word is 'across'?",
+          "question": "For days after the flu, Grandpa *felt* weak. What type of word is *felt*?",
           "options": [
-            "Adverb",
-            "Preposition",
-            "Conjunction",
             "Adjective",
-            "Verb"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 1,
-          "explanation": "'Across' is a preposition — it shows the direction of movement from one side of the road to the other. ✓"
+          "correct": 3,
+          "explanation": "*Felt* is a linking verb joining 'Grandpa' to the state 'weak'; it describes how he was, not an action of touching. It is still a verb. The trap is 'weak', the adjective, chosen because 'felt' shows no visible action. ✓"
         },
         {
           "id": 196,
           "difficulty": 2,
-          "question": "In the sentence 'Hannah likes tennis, but she prefers swimming', what type of word is 'but'?",
+          "question": "The abandoned farmhouse *looked* gloomy in the rain. What type of word is *looked*?",
           "options": [
-            "Preposition",
-            "Conjunction",
+            "Adjective",
             "Adverb",
+            "Noun",
             "Pronoun",
-            "Adjective"
+            "Verb"
           ],
-          "correct": 1,
-          "explanation": "'But' is a coordinating conjunction — it joins two clauses that contrast with each other. Tennis is liked, but swimming is preferred more. ✓"
+          "correct": 4,
+          "explanation": "*Looked* here is a linking verb joining 'farmhouse' to 'gloomy'; it describes its appearance, not the action of looking. It is still a verb. The trap is 'gloomy', the adjective, picked because 'looked' shows no visible action. ✓"
         },
         {
           "id": 197,
           "difficulty": 3,
-          "question": "In the sentence 'The children themselves organised the charity event', what type of word is 'themselves'?",
+          "question": "The umpire's ruling seemed perfectly *fair* to both teams. What type of word is *fair*?",
           "options": [
             "Noun",
-            "Determiner",
+            "Verb",
             "Adjective",
             "Adverb",
-            "Reflexive pronoun"
+            "Determiner"
           ],
-          "correct": 4,
-          "explanation": "'Themselves' is a reflexive pronoun — it emphasises that the children did it on their own, without adult help. Reflexive pronouns end in '-self' or '-selves'. ✓"
+          "correct": 2,
+          "explanation": "'Fair' can be a noun (a summer fair), but here it describes the ruling (just and equal), so it is an adjective. ✓"
         },
         {
           "id": 198,
@@ -31334,72 +31334,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 200,
           "difficulty": 2,
-          "question": "In the sentence 'The magician vanished mysteriously behind the curtain', what type of word is 'mysteriously'?",
+          "question": "We often visit the seaside during the summer holidays. What type of word is *often*?",
           "options": [
-            "Adjective",
-            "Preposition",
-            "Noun",
             "Adverb",
-            "Verb"
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "'Mysteriously' is an adverb — it tells us how the magician vanished, in a way that was puzzling and hard to explain. ✓"
+          "correct": 0,
+          "explanation": "*Often* tells us how frequently we visit, so it modifies the verb 'visit' and is an adverb of frequency. It has no -ly ending, which tempts children to call it an adjective, but it is not describing a noun. Adverbs like 'often' never need -ly. ✓"
         },
         {
           "id": 201,
           "difficulty": 2,
-          "question": "In the sentence 'She slipped her hand inside the old glove', what type of word is 'inside'?",
+          "question": "She always finishes her homework before dinner. What type of word is *always*?",
           "options": [
-            "Adverb",
-            "Preposition",
             "Adjective",
-            "Conjunction",
-            "Noun"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction"
           ],
           "correct": 1,
-          "explanation": "'Inside' is a preposition here — it tells us where she put her hand in relation to the glove. ✓"
+          "explanation": "*Always* tells us how often she finishes, so it modifies the verb 'finishes' and is an adverb of frequency. The lack of an -ly ending makes children guess adjective, but it describes no noun. Many common adverbs have no -ly. ✓"
         },
         {
           "id": 202,
           "difficulty": 2,
-          "question": "In the sentence 'Tom enjoys football whereas his sister prefers netball', what type of word is 'whereas'?",
+          "question": "The children searched everywhere for the missing kitten. What type of word is *everywhere*?",
           "options": [
-            "Preposition",
-            "Adverb",
             "Adjective",
-            "Pronoun",
-            "Conjunction"
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "'Whereas' is a conjunction — it joins two contrasting clauses. It shows that Tom and his sister have different preferences. ✓"
+          "correct": 2,
+          "explanation": "*Everywhere* tells us where they searched, so it modifies the verb 'searched' and is an adverb of place. Having no -ly ending tempts children to say adjective, but it describes no noun. Adverbs of place do not use -ly. ✓"
         },
         {
           "id": 203,
           "difficulty": 3,
-          "question": "In the sentence 'Some biscuits were left on the plate', what type of word is 'some'?",
+          "question": "The surface of the pond lay flat and *still* at dawn. What type of word is *still*?",
           "options": [
-            "Determiner",
-            "Conjunction",
-            "Adjective",
+            "Noun",
+            "Verb",
             "Adverb",
-            "Pronoun"
+            "Adjective",
+            "Preposition"
           ],
-          "correct": 0,
-          "explanation": "'Some' is a determiner — it comes before the noun 'biscuits' and tells us an unspecified quantity. It does not say exactly how many, just that there were a few. ✓"
+          "correct": 3,
+          "explanation": "'Still' is usually an adverb (still here), but here it describes the pond (not moving), so it is an adjective. ✓"
         },
         {
           "id": 204,
           "difficulty": 3,
-          "question": "In the sentence 'Her perseverance paid off in the end', what type of word is 'perseverance'?",
+          "question": "By morning the once-raging sea had grown *calm*. What type of word is *calm*?",
           "options": [
-            "Pronoun",
-            "Adjective",
+            "Noun",
             "Verb",
             "Adverb",
-            "Abstract noun"
+            "Pronoun",
+            "Adjective"
           ],
           "correct": 4,
-          "explanation": "'Perseverance' is an abstract noun — it names the quality of keeping going despite difficulties. You cannot touch or see perseverance, but you can admire it. ✓"
+          "explanation": "'Calm' can be a noun (a sudden calm), but here it describes the sea (peaceful and settled), so it is an adjective. ✓"
         },
         {
           "id": 205,
@@ -31432,44 +31432,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 207,
           "difficulty": 2,
-          "question": "In the sentence 'The fireworks exploded spectacularly above the harbour', what type of word is 'spectacularly'?",
+          "question": "The documentary was quite boring in places. What type of word is *quite*?",
           "options": [
             "Adjective",
             "Noun",
             "Verb",
-            "Preposition",
-            "Adverb"
+            "Adverb",
+            "Pronoun"
           ],
-          "correct": 4,
-          "explanation": "'Spectacularly' is an adverb — it tells us how the fireworks exploded, meaning in a dramatic and impressive way. ✓"
+          "correct": 3,
+          "explanation": "*Quite* tells us to what degree it was boring, so it modifies the adjective 'boring' and is an adverb of degree. Children pick adjective because it has no -ly, but 'boring' is the adjective and 'quite' describes how boring, not the noun. ✓"
         },
         {
           "id": 208,
           "difficulty": 2,
-          "question": "In the sentence 'We waited until the rain stopped before leaving', what type of word is 'until'?",
+          "question": "The path grew very steep near the summit. What type of word is *very*?",
           "options": [
-            "Conjunction",
-            "Pronoun",
-            "Adverb",
             "Adjective",
-            "Preposition"
+            "Verb",
+            "Noun",
+            "Preposition",
+            "Adverb"
           ],
-          "correct": 0,
-          "explanation": "'Until' is a conjunction here — it joins two clauses and tells us how long we waited. We waited (main clause) until the rain stopped (subordinate clause). ✓"
+          "correct": 4,
+          "explanation": "*Very* tells us to what degree the path was steep, so it modifies the adjective 'steep' and is an adverb of degree. It has no -ly ending, so children guess adjective, but 'steep' is the adjective; 'very' describes how steep. ✓"
         },
         {
           "id": 209,
           "difficulty": 3,
-          "question": "In the question 'Which group should we join?', what type of word is 'which'?",
+          "question": "The explorers edged past the *crumbling* wall of the ancient castle. What type of word is *crumbling*?",
           "options": [
-            "Pronoun",
-            "Conjunction",
+            "Adjective",
+            "Verb",
+            "Noun",
             "Adverb",
-            "Preposition",
-            "Interrogative determiner"
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "'Which' is an interrogative determiner when it comes before a noun in a question. It asks us to specify one particular group from the available options. ✓"
+          "correct": 0,
+          "explanation": "Here *crumbling* stands before the noun 'wall' and tells us what kind of wall it is, so it works as an adjective. Its -ing ending makes it look like a verb, but it names no action being carried out in this sentence; it simply describes the noun, which is an adjective's job. ✓"
         },
         {
           "id": 210,
@@ -31488,44 +31488,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 211,
           "difficulty": 2,
-          "question": "In the sentence 'The audience clapped enthusiastically when the curtain fell', what type of word is 'enthusiastically'?",
+          "question": "He almost missed the bus this morning. What type of word is *almost*?",
           "options": [
-            "Conjunction",
             "Adverb",
+            "Adjective",
             "Noun",
             "Verb",
-            "Adjective"
+            "Conjunction"
           ],
-          "correct": 1,
-          "explanation": "'Enthusiastically' is an adverb — it tells us how the audience clapped, with great excitement and energy. ✓"
+          "correct": 0,
+          "explanation": "*Almost* tells us to what extent he missed the bus, so it modifies the verb 'missed' and is an adverb of degree. The missing -ly ending tempts children to say adjective, but it describes no noun. ✓"
         },
         {
           "id": 212,
           "difficulty": 2,
-          "question": "In the sentence 'The mouse scurried behind the kitchen cupboard', what type of word is 'behind'?",
+          "question": "The map's directions were rather confusing. What type of word is *rather*?",
           "options": [
             "Adjective",
-            "Preposition",
             "Adverb",
-            "Conjunction",
-            "Noun"
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
           "correct": 1,
-          "explanation": "'Behind' is a preposition — it tells us where the mouse went in relation to the cupboard (to the back of it). ✓"
+          "explanation": "*Rather* tells us to what degree the directions were confusing, so it modifies the adjective 'confusing' and is an adverb of degree. Children say adjective because it lacks -ly, but 'confusing' is the adjective; 'rather' describes how confusing. ✓"
         },
         {
           "id": 213,
           "difficulty": 3,
-          "question": "In the sentence 'She could not decide whether to have cake or fruit', what type of word is 'whether'?",
+          "question": "Dust rose from beneath the *galloping* horses as they crossed the field. What type of word is *galloping*?",
           "options": [
-            "Preposition",
-            "Determiner",
+            "Verb",
+            "Adjective",
             "Adverb",
-            "Pronoun",
+            "Noun",
             "Conjunction"
           ],
-          "correct": 4,
-          "explanation": "'Whether' is a conjunction — it introduces two possible choices. 'Whether...or' presents alternatives. ✓"
+          "correct": 1,
+          "explanation": "In this sentence *galloping* comes before the noun 'horses' and describes them, so it is an adjective. The main verb of the horses is 'crossed'; *galloping* is not the action word here but a describer of the noun, so verb is wrong despite the -ing ending. ✓"
         },
         {
           "id": 214,
@@ -31544,86 +31544,86 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 215,
           "difficulty": 2,
-          "question": "In the sentence 'The knight fought bravely against the fierce dragon', what type of word is 'bravely'?",
+          "question": "This suitcase is too heavy for me to lift. What type of word is *too*?",
           "options": [
             "Adjective",
-            "Noun",
-            "Verb",
+            "Preposition",
             "Adverb",
-            "Preposition"
+            "Noun",
+            "Verb"
           ],
-          "correct": 3,
-          "explanation": "'Bravely' is an adverb — it tells us how the knight fought. Bravely means with courage and without fear. ✓"
+          "correct": 2,
+          "explanation": "*Too* tells us to what degree the suitcase is heavy, so it modifies the adjective 'heavy' and is an adverb of degree. The lack of -ly makes children choose adjective, but 'heavy' is the adjective; 'too' describes how heavy. ✓"
         },
         {
           "id": 216,
           "difficulty": 2,
-          "question": "In the sentence 'We could not go swimming since the pool was closed', what type of word is 'since'?",
+          "question": "We finished our lunch and then walked into town. What type of word is *then*?",
           "options": [
-            "Preposition",
-            "Pronoun",
-            "Conjunction",
             "Adjective",
-            "Adverb"
+            "Conjunction",
+            "Noun",
+            "Adverb",
+            "Verb"
           ],
-          "correct": 2,
-          "explanation": "'Since' is a conjunction here — it joins two clauses and gives the reason. We could not swim because the pool was closed. ✓"
+          "correct": 3,
+          "explanation": "*Then* tells us when we walked, so it modifies the verb 'walked' and is an adverb of time. It has no -ly ending, so children guess adjective, but it describes no noun. ✓"
         },
         {
           "id": 217,
           "difficulty": 3,
-          "question": "In the sentence 'That experiment proved his theory completely wrong', what type of word is 'completely'?",
+          "question": "She carefully swept up the *shattered* glass from the kitchen floor. What type of word is *shattered*?",
           "options": [
-            "Conjunction",
-            "Adverb",
             "Noun",
+            "Verb",
             "Adjective",
-            "Preposition"
+            "Pronoun",
+            "Adverb"
           ],
-          "correct": 1,
-          "explanation": "'Completely' is an adverb of degree — it tells us how wrong the theory was. It modifies the adjective 'wrong', intensifying it to mean totally wrong. ✓"
+          "correct": 2,
+          "explanation": "Here *shattered* sits before the noun 'glass' and tells us what kind of glass it is, so it acts as an adjective. Its -ed ending makes it resemble a past-tense verb, but the sentence's verb is 'swept'; *shattered* is doing no action here, only describing the noun. ✓"
         },
         {
           "id": 218,
           "difficulty": 3,
-          "question": "In the sentence 'Any pupil who is late must report to the office', what type of word is 'any'?",
+          "question": "A *whispering* breeze moved through the tall summer grass. What type of word is *whispering*?",
           "options": [
-            "Pronoun",
-            "Determiner",
-            "Conjunction",
+            "Verb",
+            "Noun",
+            "Adverb",
             "Adjective",
-            "Adverb"
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "'Any' is a determiner — it comes before the noun 'pupil' and means it does not matter which pupil, the rule applies to all of them. ✓"
+          "correct": 3,
+          "explanation": "In this sentence *whispering* comes before the noun 'breeze' and describes it, so it functions as an adjective. The verb telling us what the breeze does is 'moved'; *whispering* names no action here but modifies the noun, so it is not a verb. ✓"
         },
         {
           "id": 219,
           "difficulty": 2,
-          "question": "In the sentence 'The ancient castle stood proudly on the hill', what type of word is 'proudly'?",
+          "question": "I once met a famous author at our local library. What type of word is *once*?",
           "options": [
             "Adjective",
             "Noun",
             "Verb",
-            "Adverb",
-            "Preposition"
+            "Preposition",
+            "Adverb"
           ],
-          "correct": 3,
-          "explanation": "'Proudly' is an adverb — it tells us how the castle stood. Describing a building as standing proudly is personification, giving it a human quality. ✓"
+          "correct": 4,
+          "explanation": "*Once* tells us when (on one occasion) I met the author, so it modifies the verb 'met' and is an adverb of time. The missing -ly ending tempts children to say adjective, but it describes no noun. ✓"
         },
         {
           "id": 220,
           "difficulty": 3,
-          "question": "In the sentence 'Whichever route you choose, you will arrive on time', what type of word is 'whichever'?",
+          "question": "The pilots wore ear protectors against the *deafening* roar of the engines. What type of word is *deafening*?",
           "options": [
-            "Conjunction",
             "Adverb",
+            "Verb",
+            "Noun",
             "Pronoun",
-            "Determiner",
-            "Preposition"
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "'Whichever' is a determiner here — it comes before the noun 'route' and means 'it does not matter which one'. It determines which noun we are talking about without specifying a particular one. ✓"
+          "correct": 4,
+          "explanation": "Here *deafening* stands before the noun 'roar' and describes how loud it is, so it works as an adjective. Although it ends in -ing like a verb, it performs no action in the sentence; it modifies the noun, which is an adjective's role. ✓"
         },
         {
           "id": 221,
@@ -31712,72 +31712,72 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 227,
           "difficulty": 2,
-          "question": "'Could there ever be a more beautiful sunset?' What type of sentence is this?",
+          "question": "The shy badger seldom leaves its sett during the day. What type of word is *seldom*?",
           "options": [
-            "Question",
-            "Statement",
-            "Command",
-            "Exclamation",
-            "Rhetorical question"
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 4,
-          "explanation": "This is a rhetorical question — a question asked for effect, not expecting a real answer. The speaker is not genuinely asking; they are expressing that the sunset is incredibly beautiful. ✓"
+          "correct": 0,
+          "explanation": "*Seldom* tells us how often the badger leaves, so it modifies the verb 'leaves' and is an adverb of frequency. It has no -ly ending, so children guess adjective, but it describes no noun. ✓"
         },
         {
           "id": 228,
           "difficulty": 2,
-          "question": "'Who would want to miss such an exciting opportunity?' What type of sentence is this?",
+          "question": "Please wait here until the coach arrives. What type of word is *here*?",
           "options": [
-            "Statement",
-            "Command",
-            "Rhetorical question",
-            "Exclamation",
-            "Standard question"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 2,
-          "explanation": "This is a rhetorical question — the expected answer is 'nobody', but the speaker is not genuinely asking. It is used for dramatic effect to emphasise how great the opportunity is. ✓"
+          "correct": 1,
+          "explanation": "*Here* tells us where to wait, so it modifies the verb 'wait' and is an adverb of place. Having no -ly ending tempts children to say adjective, but it describes no noun. Adverbs of place do not need -ly. ✓"
         },
         {
           "id": 229,
           "difficulty": 2,
-          "question": "'Sit down and open your textbooks to page forty-two.' What type of sentence is this?",
+          "question": "Your muddy boots are there by the back door. What type of word is *there*?",
           "options": [
-            "Statement",
-            "Question",
-            "Exclamation",
-            "Command",
-            "Rhetorical question"
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Pronoun"
           ],
-          "correct": 3,
-          "explanation": "This is a command — it gives instructions to sit down and open textbooks. Commands start with a verb (or an implied 'you') and tell someone what to do. ✓"
+          "correct": 2,
+          "explanation": "*There* tells us where the boots are, so it modifies the verb 'are' and is an adverb of place. Children guess adjective because it lacks -ly, but it describes no noun. ✓"
         },
         {
           "id": 230,
           "difficulty": 2,
-          "question": "'The Roman Empire lasted for hundreds of years.' What type of sentence is this?",
+          "question": "You must leave now before the storm arrives. What type of word is *now*?",
           "options": [
-            "Question",
-            "Command",
-            "Statement",
-            "Exclamation",
-            "Rhetorical question"
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 2,
-          "explanation": "This is a statement — it gives factual information. Statements declare something and end with a full stop. ✓"
+          "correct": 3,
+          "explanation": "*Now* tells us when you must leave, so it modifies the verb 'leave' and is an adverb of time. The missing -ly ending makes children choose adjective, but it describes no noun. ✓"
         },
         {
           "id": 231,
           "difficulty": 3,
-          "question": "'Do you really think that is a good idea?' What type of sentence is this likely to be?",
+          "question": "Foxes had made their home in the *abandoned* factory by the canal. What type of word is *abandoned*?",
           "options": [
-            "Statement",
-            "Genuine question",
-            "Exclamation",
-            "Command",
-            "Rhetorical question"
+            "Adjective",
+            "Verb",
+            "Preposition",
+            "Noun",
+            "Adverb"
           ],
-          "correct": 4,
-          "explanation": "This is most likely a rhetorical question — the speaker is suggesting they do not think it is a good idea, rather than genuinely asking for an opinion. The tone implies doubt. ✓"
+          "correct": 0,
+          "explanation": "In this sentence *abandoned* comes before the noun 'factory' and tells us what kind of factory it is, so it is an adjective. Its -ed ending looks like a verb, but the verb here is 'had made'; *abandoned* carries out no action and only describes the noun. ✓"
         },
         {
           "id": 232,
@@ -31796,16 +31796,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 233,
           "difficulty": 2,
-          "question": "'What a mess you have made of your bedroom!' What type of sentence is this?",
+          "question": "The school bell rang twice during the assembly. What type of word is *twice*?",
           "options": [
-            "Statement",
-            "Question",
-            "Command",
-            "Exclamation",
-            "Rhetorical question"
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Conjunction",
+            "Adverb"
           ],
-          "correct": 3,
-          "explanation": "This is an exclamation — it expresses a strong feeling (annoyance or shock) about the mess. It starts with 'What' and ends with an exclamation mark. ✓"
+          "correct": 4,
+          "explanation": "*Twice* tells us how many times the bell rang, so it modifies the verb 'rang' and is an adverb of frequency. It has no -ly ending, so children guess adjective, but it describes no noun. ✓"
         },
         {
           "id": 234,
@@ -31866,156 +31866,156 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 238,
           "difficulty": 2,
-          "question": "What is the name of this punctuation mark: ' ?",
+          "question": "The frightened cat quickly hid upstairs. What type of word is *upstairs*?",
           "options": [
-            "Comma",
-            "Full stop",
-            "Apostrophe",
-            "Speech mark",
-            "Hyphen"
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 2,
-          "explanation": "This is an apostrophe — it has two uses: to show missing letters (contractions like don't) and to show possession (the dog's bone). ✓"
+          "correct": 0,
+          "explanation": "*Upstairs* tells us where the cat hid, so it modifies the verb 'hid' and is an adverb of place. Its lack of an -ly ending tempts children to say adjective, but it describes no noun. ✓"
         },
         {
           "id": 239,
           "difficulty": 2,
-          "question": "What is the name of the punctuation mark used in the following: ... ?",
+          "question": "Grandad often forgets where he left his umbrella. What type of word is *often*?",
           "options": [
-            "Dash",
-            "Ellipsis",
-            "Colon",
-            "Hyphen",
-            "Semi-colon"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction"
           ],
           "correct": 1,
-          "explanation": "This is an ellipsis — three dots used to show a pause, trailing off, or that something has been left out. For example: 'She opened the box and inside was...' ✓"
+          "explanation": "*Often* tells us how frequently Grandad forgets, so it modifies the verb 'forgets' and is an adverb of frequency. Children guess adjective because it has no -ly, but it describes no noun. ✓"
         },
         {
           "id": 240,
           "difficulty": 2,
-          "question": "What is the name of this punctuation mark: : ?",
+          "question": "The evening trains are always late in the winter. What type of word is *always*?",
           "options": [
-            "Semi-colon",
-            "Full stop",
-            "Colon",
-            "Comma",
-            "Dash"
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Preposition"
           ],
           "correct": 2,
-          "explanation": "This is a colon — it is used to introduce a list, an explanation, or a quote. For example: 'You will need: flour, eggs, butter and sugar.' ✓"
+          "explanation": "*Always* tells us how often the trains are late, modifying the phrase 'are late', so it is an adverb of frequency. The missing -ly ending tempts children to say adjective, but 'late' is the adjective here; 'always' describes how often. ✓"
         },
         {
           "id": 241,
           "difficulty": 2,
-          "question": "What is the name of this punctuation mark: ; ?",
+          "question": "This year's spelling test was very difficult. What type of word is *very*?",
           "options": [
-            "Colon",
-            "Semi-colon",
-            "Comma",
-            "Full stop",
-            "Apostrophe"
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Pronoun"
           ],
-          "correct": 1,
-          "explanation": "This is a semi-colon — it is used to join two closely related sentences without a conjunction. For example: 'The sun was setting; the sky turned orange.' ✓"
+          "correct": 3,
+          "explanation": "*Very* tells us to what degree the test was difficult, so it modifies the adjective 'difficult' and is an adverb of degree. Children pick adjective because it lacks -ly, but 'difficult' is the adjective; 'very' describes how difficult. ✓"
         },
         {
           "id": 242,
           "difficulty": 2,
-          "question": "Which punctuation is placed around the exact words a character says aloud?",
+          "question": "She spoke too quickly for us to follow. What type of word is *too*?",
           "options": [
-            "Brackets",
-            "Apostrophes",
-            "Hyphens",
-            "Inverted commas (speech marks)",
-            "Semicolons"
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Preposition",
+            "Adverb"
           ],
-          "correct": 3,
-          "explanation": "Inverted commas (also called speech marks or quotation marks) are placed around the exact words someone says. For example: \"Hello,\" said Mrs Brown. Apostrophes show possession or contractions, not speech. ✓"
+          "correct": 4,
+          "explanation": "*Too* tells us to what degree she spoke quickly, so it modifies the adverb 'quickly' and is itself an adverb of degree. The lack of -ly makes children guess adjective, but it describes no noun; it strengthens another adverb. ✓"
         },
         {
           "id": 243,
           "difficulty": 2,
-          "question": "What is the name of punctuation marks that look like this: ( ) ?",
+          "question": "It was quite dark inside the old cave. What type of word is *quite*?",
           "options": [
-            "Speech marks",
-            "Brackets (parentheses)",
-            "Inverted commas",
-            "Apostrophes",
-            "Hyphens"
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 1,
-          "explanation": "These are brackets (also called parentheses) — they are used to add extra information to a sentence. The text inside brackets could be removed without changing the main meaning. ✓"
+          "correct": 0,
+          "explanation": "*Quite* tells us to what degree it was dark, so it modifies the adjective 'dark' and is an adverb of degree. Children choose adjective because it has no -ly, but 'dark' is the adjective; 'quite' describes how dark. ✓"
         },
         {
           "id": 244,
           "difficulty": 2,
-          "question": "What is the name of this punctuation mark: - (used to join two words together)?",
+          "question": "Litter was scattered everywhere after the fair. What type of word is *everywhere*?",
           "options": [
-            "Dash",
-            "Hyphen",
-            "Minus sign",
-            "Ellipsis",
-            "Semi-colon"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
           "correct": 1,
-          "explanation": "This is a hyphen — a short line used to join two words into one compound word: well-known, ice-cream, ten-year-old. It is shorter than a dash. ✓"
+          "explanation": "*Everywhere* tells us where the litter was scattered, so it modifies the verb 'scattered' and is an adverb of place. The missing -ly ending tempts children to say adjective, but it describes no noun. ✓"
         },
         {
           "id": 245,
           "difficulty": 3,
-          "question": "What is the name of a long horizontal line — like this — used to add extra information or create a pause?",
+          "question": "The children admired the *glistening* frost on the playground railings. What type of word is *glistening*?",
           "options": [
-            "Hyphen",
-            "Semi-colon",
-            "Dash",
-            "Ellipsis",
-            "Colon"
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Conjunction"
           ],
-          "correct": 2,
-          "explanation": "This is a dash (also called an em dash) — it is longer than a hyphen and is used to add a dramatic pause or extra information. 'The door opened — and there stood the headmaster.' ✓"
+          "correct": 1,
+          "explanation": "Here *glistening* sits before the noun 'frost' and describes it, so it acts as an adjective. The verb in the sentence is 'admired'; the -ing form *glistening* is not an action being done but a describer of the noun, so verb is wrong. ✓"
         },
         {
           "id": 246,
           "difficulty": 2,
-          "question": "An apostrophe in the word 'didn't' shows what?",
+          "question": "Please sign your name here on the form. What type of word is *here*?",
           "options": [
-            "Possession",
-            "A missing letter",
-            "Emphasis",
-            "The start of speech",
-            "A plural"
+            "Noun",
+            "Adjective",
+            "Adverb",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "The apostrophe in 'didn't' shows a missing letter — it is a contraction of 'did not'. The apostrophe replaces the missing 'o'. ✓"
+          "correct": 2,
+          "explanation": "*Here* tells us where to sign, so it modifies the verb 'sign' and is an adverb of place. Children guess adjective because it lacks -ly, but it describes no noun. ✓"
         },
         {
           "id": 247,
           "difficulty": 2,
-          "question": "An apostrophe in 'the girl's bag' shows what?",
+          "question": "First mix the flour, then add the eggs. What type of word is *then*?",
           "options": [
-            "A plural",
-            "A missing letter",
-            "Possession",
-            "A contraction",
-            "Emphasis"
+            "Adjective",
+            "Conjunction",
+            "Noun",
+            "Adverb",
+            "Verb"
           ],
-          "correct": 2,
-          "explanation": "The apostrophe in 'the girl's bag' shows possession — the bag belongs to the girl. When we add 's after a noun, it shows that noun owns something. ✓"
+          "correct": 3,
+          "explanation": "*Then* tells us when to add the eggs, so it modifies the verb 'add' and is an adverb of time. It has no -ly ending, so children guess adjective, but it describes no noun. ✓"
         },
         {
           "id": 248,
           "difficulty": 3,
-          "question": "What is the difference between a colon and a semi-colon?",
+          "question": "The vet gently examined the *wounded* badger they had found. What type of word is *wounded*?",
           "options": [
-            "There is no difference",
-            "A colon introduces a list or explanation; a semi-colon joins related sentences",
-            "A semi-colon introduces a list; a colon joins sentences",
-            "Colons are used in speech; semi-colons are used in writing",
-            "A colon comes before speech; a semi-colon comes after"
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Pronoun",
+            "Adverb"
           ],
-          "correct": 1,
-          "explanation": "A colon (:) introduces what follows — a list, explanation, or quote. A semi-colon (;) joins two closely related complete sentences without a conjunction. They have different jobs. ✓"
+          "correct": 2,
+          "explanation": "In this sentence *wounded* comes before the noun 'badger' and tells us what kind of badger it is, so it functions as an adjective. Its -ed ending makes it look like a verb, but the verb here is 'examined'; *wounded* does no action and only describes the noun. ✓"
         },
         {
           "id": 249,
@@ -32048,30 +32048,30 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 251,
           "difficulty": 2,
-          "question": "'The classroom was a zoo.' What figure of speech is this?",
+          "question": "By the end of the day the jar was almost empty. What type of word is *almost*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Onomatopoeia",
-            "Personification"
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition",
+            "Adverb"
           ],
-          "correct": 1,
-          "explanation": "This is a metaphor — it says the classroom IS a zoo, not that it is LIKE a zoo. A metaphor says something is something else to create a strong image. It does not use 'like' or 'as'. ✓"
+          "correct": 4,
+          "explanation": "*Almost* tells us to what degree the jar was empty, so it modifies the adjective 'empty' and is an adverb of degree. Children pick adjective because it lacks -ly, but 'empty' is the adjective; 'almost' describes how empty. ✓"
         },
         {
           "id": 252,
           "difficulty": 2,
-          "question": "'The wind howled angrily through the trees.' Which literary device is used?",
+          "question": "The new pupil had a *friendly* smile that put everyone at ease. What type of word is *friendly*?",
           "options": [
-            "Alliteration",
-            "Metaphor",
-            "Simile",
-            "Personification",
-            "Hyperbole"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 3,
-          "explanation": "This is personification — giving human qualities to something that is not human. Wind cannot actually howl angrily — only people can. Making the wind seem angry gives it a human personality. ✓"
+          "correct": 0,
+          "explanation": "Here *friendly* comes before the noun \"smile\" and describes what kind it was, so it is an adjective. The -ly ending tempts children to pick adverb, but it is not telling us how an action was done. ✓"
         },
         {
           "id": 253,
@@ -32090,100 +32090,100 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 254,
           "difficulty": 2,
-          "question": "'The bees buzzed busily around the bright blossoms.' Which TWO literary devices are used?",
+          "question": "A single *lonely* lighthouse stood at the edge of the cliff. What type of word is *lonely*?",
           "options": [
-            "Simile and metaphor",
-            "Alliteration and onomatopoeia",
-            "Personification and simile",
-            "Hyperbole and metaphor",
-            "Onomatopoeia and personification"
+            "Adverb",
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Conjunction"
           ],
           "correct": 1,
-          "explanation": "This uses alliteration (the repeated 'b' sound in bees, buzzed, busily, bright, blossoms) and onomatopoeia ('buzzed' sounds like the noise bees actually make). ✓"
+          "explanation": "*Lonely* describes the noun \"lighthouse\", telling us what it was like, so it is an adjective. It ends in -ly but does not modify a verb, so it is not an adverb. ✓"
         },
         {
           "id": 255,
           "difficulty": 2,
-          "question": "'The thunder crashed and the rain pattered on the roof.' Which literary device do 'crashed' and 'pattered' use?",
+          "question": "The market was full of *lively* music and cheerful chatter. What type of word is *lively*?",
           "options": [
-            "Simile",
-            "Personification",
-            "Onomatopoeia",
-            "Metaphor",
-            "Alliteration"
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Preposition",
+            "Verb"
           ],
           "correct": 2,
-          "explanation": "This is onomatopoeia — words that sound like the noise they describe. 'Crashed' sounds like thunder and 'pattered' sounds like light rain falling. ✓"
+          "explanation": "*Lively* describes the noun \"music\", so it is an adjective. Although it ends in -ly, it is not describing how something was done, so it is not an adverb. ✓"
         },
         {
           "id": 256,
           "difficulty": 2,
-          "question": "'He is the Einstein of our class.' What figure of speech is this?",
+          "question": "Grandma baked a *lovely* Victoria sponge for the village fete. What type of word is *lovely*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Onomatopoeia",
-            "Personification"
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Determiner"
           ],
-          "correct": 1,
-          "explanation": "This is a metaphor — it says he IS Einstein rather than saying he is LIKE Einstein. It compares the boy directly to the famous genius to show he is very clever. ✓"
+          "correct": 3,
+          "explanation": "*Lovely* sits before the noun \"sponge\" and describes it, so it is an adjective. The -ly ending makes some choose adverb, but no action is being described here. ✓"
         },
         {
           "id": 257,
           "difficulty": 2,
-          "question": "'The stars danced playfully in the night sky.' Which literary device is this?",
+          "question": "A large *ugly* stain spread across the carpet. What type of word is *ugly*?",
           "options": [
-            "Hyperbole",
-            "Metaphor",
-            "Alliteration",
-            "Personification",
-            "Simile"
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Pronoun",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "This is personification — stars cannot actually dance or be playful. Giving human actions (dancing) and qualities (playfulness) to non-human things is personification. ✓"
+          "correct": 4,
+          "explanation": "*Ugly* describes the noun \"stain\", telling us what kind it was, so it is an adjective. It ends in -ly yet does not modify a verb, so it is not an adverb. ✓"
         },
         {
           "id": 258,
           "difficulty": 2,
-          "question": "'I have told you a million times to tidy your room!' Which literary device is this?",
+          "question": "Repairing the roof turned out to be a *costly* mistake. What type of word is *costly*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Personification",
-            "Hyperbole"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction"
           ],
-          "correct": 4,
-          "explanation": "This is hyperbole — a deliberate exaggeration used for emphasis. The speaker has not literally said it a million times, but uses the extreme number to show frustration. ✓"
+          "correct": 0,
+          "explanation": "*Costly* describes the noun \"mistake\", so it is an adjective. The -ly ending suggests adverb to some children, but it is not saying how anything was done. ✓"
         },
         {
           "id": 259,
           "difficulty": 2,
-          "question": "'Her smile was like sunshine on a rainy day.' What figure of speech is this?",
+          "question": "An *elderly* gentleman offered his seat on the bus. What type of word is *elderly*?",
           "options": [
-            "Metaphor",
-            "Simile",
-            "Alliteration",
-            "Personification",
-            "Hyperbole"
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
           "correct": 1,
-          "explanation": "This is a simile — it uses 'like' to compare her smile to sunshine. It suggests her smile was warm, bright, and cheering. ✓"
+          "explanation": "*Elderly* comes before the noun \"gentleman\" and describes him, so it is an adjective. It ends in -ly but does not modify a verb, so it is not an adverb. ✓"
         },
         {
           "id": 260,
           "difficulty": 3,
-          "question": "'The old floorboards groaned under his weight.' Which literary device is this?",
+          "question": "We stared up at the *towering* cliffs above the beach. What type of word is *towering*?",
           "options": [
-            "Simile",
-            "Hyperbole",
-            "Alliteration",
-            "Personification",
-            "Onomatopoeia"
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Preposition"
           ],
           "correct": 3,
-          "explanation": "This is personification — floorboards cannot actually groan (that is a human sound expressing discomfort). Giving the floorboards a human reaction makes the description more vivid. ✓"
+          "explanation": "Here *towering* stands before the noun 'cliffs' and describes how tall they are, so it is an adjective. Despite its -ing ending, it names no action in the sentence; the verb is 'stared', and *towering* simply modifies the noun. ✓"
         },
         {
           "id": 261,
@@ -32202,296 +32202,296 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 262,
           "difficulty": 2,
-          "question": "'Life is a journey.' What figure of speech is this?",
+          "question": "The adder is a *deadly* snake found on British heathland. What type of word is *deadly*?",
           "options": [
-            "Alliteration",
-            "Metaphor",
-            "Simile",
-            "Personification",
-            "Onomatopoeia"
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Determiner"
           ],
-          "correct": 1,
-          "explanation": "This is a metaphor — it says life IS a journey, not that life is LIKE a journey. It directly compares life to a journey to suggest we travel through experiences and have adventures along the way. ✓"
+          "correct": 2,
+          "explanation": "*Deadly* describes the noun \"snake\", so it is an adjective. Despite the -ly ending, it is not telling us how an action happened, so it is not an adverb. ✓"
         },
         {
           "id": 263,
           "difficulty": 2,
-          "question": "'Sally sells sea shells by the sea shore.' Which literary device is this?",
+          "question": "The children formed an *orderly* queue outside the classroom. What type of word is *orderly*?",
           "options": [
-            "Simile",
-            "Personification",
-            "Alliteration",
-            "Metaphor",
-            "Hyperbole"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Pronoun"
           ],
-          "correct": 2,
-          "explanation": "This is alliteration — the repeated 's' sound at the start of Sally, sells, sea, shells, sea, and shore. Alliteration makes phrases catchy and memorable. ✓"
+          "correct": 3,
+          "explanation": "*Orderly* describes the noun \"queue\", so it is an adjective. The -ly ending tempts a guess of adverb, but no verb is being modified. ✓"
         },
         {
           "id": 264,
           "difficulty": 3,
-          "question": "'The trees whispered secrets to each other in the breeze.' Which literary device is this?",
+          "question": "By the *flickering* candlelight, she read the last page. What type of word is *flickering*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Hyperbole",
-            "Personification",
-            "Alliteration"
+            "Verb",
+            "Noun",
+            "Preposition",
+            "Adverb",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "This is personification — trees cannot whisper or share secrets. These are human actions given to the trees to create an atmospheric, magical description. ✓"
+          "correct": 4,
+          "explanation": "In this sentence *flickering* comes before the noun 'candlelight' and describes it, so it works as an adjective. The verb telling us what she did is 'read'; the -ing form *flickering* is not an action here but a describer of the noun, so it is not a verb. ✓"
         },
         {
           "id": 265,
           "difficulty": 3,
-          "question": "'I was so hungry I could eat a horse.' Which literary device is this?",
+          "question": "The skaters glided across the *frozen* pond behind the church. What type of word is *frozen*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Personification",
-            "Alliteration",
-            "Hyperbole"
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Pronoun"
           ],
-          "correct": 4,
-          "explanation": "This is hyperbole — a deliberate exaggeration. Nobody could actually eat a horse; the speaker exaggerates to show just how extremely hungry they are. ✓"
+          "correct": 0,
+          "explanation": "Here *frozen* sits before the noun 'pond' and tells us what kind of pond it is, so it acts as an adjective. Its -en ending resembles a past participle verb, but the verb here is 'glided'; *frozen* performs no action and only modifies the noun. ✓"
         },
         {
           "id": 266,
           "difficulty": 2,
-          "question": "'The snake slithered silently across the sandy surface.' Which literary device is this?",
+          "question": "Her *worldly* wisdom came from years of travelling. What type of word is *worldly*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Personification",
-            "Onomatopoeia"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction",
+            "Adjective"
           ],
-          "correct": 2,
-          "explanation": "This is alliteration — the 's' sound is repeated at the beginning of snake, slithered, silently, sandy, and surface. This creates a hissing effect that suits the subject. ✓"
+          "correct": 4,
+          "explanation": "*Worldly* describes the noun \"wisdom\", so it is an adjective. It ends in -ly but is not describing how something was done, so it is not an adverb. ✓"
         },
         {
           "id": 267,
           "difficulty": 2,
-          "question": "'The door creaked open slowly.' Which literary device does 'creaked' use?",
+          "question": "The clown wore a bright *curly* wig. What type of word is *curly*?",
           "options": [
-            "Metaphor",
-            "Simile",
-            "Alliteration",
-            "Personification",
-            "Onomatopoeia"
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 4,
-          "explanation": "'Creaked' is onomatopoeia — the word sounds like the noise a stiff door makes when it opens. Onomatopoeia words imitate real sounds. ✓"
+          "correct": 0,
+          "explanation": "*Curly* describes the noun \"wig\", telling us what it looked like, so it is an adjective. The -ly ending is misleading, but it is not modifying a verb. ✓"
         },
         {
           "id": 268,
           "difficulty": 3,
-          "question": "'Time is money.' What figure of speech is this?",
+          "question": "Their new neighbour had a *charming* smile and a friendly wave. What type of word is *charming*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Personification",
-            "Hyperbole"
+            "Adverb",
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Conjunction"
           ],
           "correct": 1,
-          "explanation": "This is a metaphor — it says time IS money, directly comparing the two. It suggests that time is as valuable as money and should not be wasted. ✓"
+          "explanation": "In this sentence *charming* comes before the noun 'smile' and describes it, so it functions as an adjective. Although it ends in -ing like a verb, it names no action here; the verb is 'had', and *charming* simply describes the noun. ✓"
         },
         {
           "id": 269,
           "difficulty": 3,
-          "question": "Which of the following sentences contains a simile?",
+          "question": "The *exhausted* runners collapsed onto the grass after the marathon. What type of word is *exhausted*?",
           "options": [
-            "The river was a silver ribbon.",
-            "He fought like a tiger.",
-            "The sun smiled down on us.",
-            "The leaves danced in the wind.",
-            "I have a mountain of homework."
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "'He fought like a tiger' is a simile because it uses the word 'like' to compare his fighting to a tiger's. The others are metaphors (silver ribbon, mountain of homework) or personification (sun smiled, leaves danced). ✓"
+          "correct": 2,
+          "explanation": "Here *exhausted* stands before the noun 'runners' and tells us how they felt, so it works as an adjective. Its -ed ending makes it look like a verb, but the verb in the sentence is 'collapsed'; *exhausted* does no action and only describes the noun. ✓"
         },
         {
           "id": 270,
           "difficulty": 3,
-          "question": "Which of the following sentences contains personification?",
+          "question": "Travellers crossed the desert under the *blazing* sun. What type of word is *blazing*?",
           "options": [
-            "She glided through the pool as smoothly as a darting silver fish.",
-            "The overgrown back garden was a lush green paradise of tangled colour.",
-            "The alarm clock screamed at me to wake up.",
-            "He was as tall as a giraffe.",
-            "I was so embarrassed that I very nearly died of shame on the spot."
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Adjective",
+            "Pronoun"
           ],
-          "correct": 2,
-          "explanation": "'The alarm clock screamed at me' is personification — alarm clocks cannot scream (that is a human action). Giving a non-human thing a human quality or action is personification. ✓"
+          "correct": 3,
+          "explanation": "In this sentence *blazing* comes before the noun 'sun' and describes it, so it is an adjective. The verb here is 'crossed'; the -ing form *blazing* is not an action being carried out but a describer of the noun, so verb is wrong. ✓"
         },
         {
           "id": 271,
           "difficulty": 2,
-          "question": "'The sausages sizzled in the pan.' Which literary device does 'sizzled' use?",
+          "question": "A *chilly* wind blew across the moor. What type of word is *chilly*?",
           "options": [
-            "Simile",
-            "Alliteration",
-            "Personification",
-            "Onomatopoeia",
-            "Metaphor"
+            "Adverb",
+            "Adjective",
+            "Verb",
+            "Noun",
+            "Determiner"
           ],
-          "correct": 3,
-          "explanation": "'Sizzled' is onomatopoeia — the word sounds like the hissing, crackling noise food makes when it fries in a hot pan. ✓"
+          "correct": 1,
+          "explanation": "*Chilly* describes the noun \"wind\", so it is an adjective. Even though it ends in -ly, it is not saying how something was done, so it is not an adverb. ✓"
         },
         {
           "id": 272,
           "difficulty": 2,
-          "question": "'The moon was a ghostly galleon tossed upon cloudy seas.' What figure of speech is this?",
+          "question": "The café had one *wobbly* table by the window. What type of word is *wobbly*?",
           "options": [
-            "Onomatopoeia",
-            "Metaphor",
-            "Alliteration",
-            "Simile",
-            "Hyperbole"
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Preposition",
+            "Verb"
           ],
-          "correct": 1,
-          "explanation": "This is a metaphor — it says the moon WAS a galleon (ship). It does not use 'like' or 'as'. The metaphor creates a picture of the moon sailing through clouds like a ship through waves. ✓"
+          "correct": 2,
+          "explanation": "*Wobbly* describes the noun \"table\", so it is an adjective. The -ly ending suggests adverb to some, but no verb is being modified here. ✓"
         },
         {
           "id": 273,
           "difficulty": 3,
-          "question": "'Again and again, she tried. Again and again, she failed.' Which literary device is used?",
+          "question": "With *trembling* hands, the actor opened the envelope. What type of word is *trembling*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Repetition",
-            "Hyperbole"
+            "Noun",
+            "Verb",
+            "Preposition",
+            "Adverb",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "This is repetition — the phrase 'again and again' is deliberately repeated for emphasis. Repetition draws attention to an idea and makes it more powerful and memorable. ✓"
+          "correct": 4,
+          "explanation": "Here *trembling* sits before the noun 'hands' and describes them, so it acts as an adjective. Although it ends in -ing, it names no action in the sentence; the verb is 'opened', and *trembling* simply modifies the noun. ✓"
         },
         {
           "id": 274,
           "difficulty": 2,
-          "question": "'His feet were blocks of ice.' What figure of speech is this?",
+          "question": "The cliff was made of soft, *crumbly* rock. What type of word is *crumbly*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Personification",
-            "Onomatopoeia"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Adjective",
+            "Pronoun"
           ],
-          "correct": 1,
-          "explanation": "This is a metaphor — it says his feet WERE blocks of ice, not that they were LIKE ice. It directly compares his cold feet to ice to emphasise how frozen they felt. ✓"
+          "correct": 3,
+          "explanation": "*Crumbly* describes the noun \"rock\", so it is an adjective. It ends in -ly yet is not telling us how an action was done, so it is not an adverb. ✓"
         },
         {
           "id": 275,
           "difficulty": 2,
-          "question": "'The dog barked.' What type of sentence structure is this?",
+          "question": "A *kindly* neighbour watered our plants while we were away. What type of word is *kindly*?",
           "options": [
-            "Compound sentence",
-            "Compound-complex sentence",
-            "Simple sentence",
-            "Complex sentence",
-            "Fragment"
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Preposition",
+            "Adjective"
           ],
-          "correct": 2,
-          "explanation": "This is a simple sentence — it contains just one clause with a subject (the dog) and a verb (barked). A simple sentence expresses one complete idea. ✓"
+          "correct": 4,
+          "explanation": "Here *kindly* describes the noun \"neighbour\", so it is an adjective. It can be an adverb elsewhere (\"she kindly helped\"), but in this sentence it is describing a person, not an action. ✓"
         },
         {
           "id": 276,
           "difficulty": 2,
-          "question": "'The dog barked and the cat hissed.' What type of sentence structure is this?",
+          "question": "A *ghastly* smell drifted from the drains. What type of word is *ghastly*?",
           "options": [
-            "Simple sentence",
-            "Compound sentence",
-            "Complex sentence",
-            "Fragment",
-            "Minor sentence"
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Determiner"
           ],
-          "correct": 1,
-          "explanation": "This is a compound sentence — it contains two complete sentences (the dog barked + the cat hissed) joined by the coordinating conjunction 'and'. Both clauses could stand alone as sentences. ✓"
+          "correct": 0,
+          "explanation": "*Ghastly* describes the noun \"smell\", so it is an adjective. The -ly ending tempts a guess of adverb, but it is not modifying a verb. ✓"
         },
         {
           "id": 277,
           "difficulty": 2,
-          "question": "'Although it was raining, the children still played outside.' What type of sentence structure is this?",
+          "question": "The nurse spoke with a *motherly* warmth. What type of word is *motherly*?",
           "options": [
-            "Simple sentence",
-            "Compound sentence",
-            "Minor sentence",
-            "Fragment",
-            "Complex sentence"
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Pronoun"
           ],
-          "correct": 4,
-          "explanation": "This is a complex sentence — it has a main clause ('the children still played outside') and a subordinate clause ('although it was raining'). The subordinate clause cannot stand alone as a sentence. ✓"
+          "correct": 1,
+          "explanation": "*Motherly* describes the noun \"warmth\", so it is an adjective. Although it ends in -ly, it is not describing how an action was done, so it is not an adverb. ✓"
         },
         {
           "id": 278,
           "difficulty": 3,
-          "question": "What is a clause?",
+          "question": "She kept the *faded* photograph of her grandmother in a drawer. What type of word is *faded*?",
           "options": [
-            "A group of words that contains a subject and a verb",
-            "A group of words without a verb",
-            "Another name for a sentence",
-            "A single word that names a person, a place, an object, or a feeling.",
-            "A punctuation mark you place at the end of a sentence to close it."
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Conjunction"
           ],
           "correct": 0,
-          "explanation": "A clause is a group of words that contains a subject and a verb. 'The cat sat' is a clause. A main clause makes sense on its own; a subordinate clause needs the main clause to make sense. ✓"
+          "explanation": "In this sentence *faded* comes before the noun 'photograph' and tells us what kind of photograph it is, so it functions as an adjective. Its -ed ending looks like a verb, but the verb here is 'kept'; *faded* performs no action and only describes the noun. ✓"
         },
         {
           "id": 279,
           "difficulty": 3,
-          "question": "What is a phrase?",
+          "question": "The pilot pointed out the *soaring* eagle to the passengers. What type of word is *soaring*?",
           "options": [
-            "A complete sentence that expresses a whole idea and can stand entirely on its own.",
-            "A group of words without a subject-verb pair that forms part of a sentence",
-            "A group of words with a subject and verb",
-            "A literary device, such as a simile or metaphor, that a writer uses to create imagery.",
-            "Simply another word for a clause, since both must always contain a subject and a matching main verb."
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Preposition"
           ],
           "correct": 1,
-          "explanation": "A phrase is a group of words that works together as a unit but does not contain both a subject and a verb. 'In the garden', 'the big dog', and 'very quickly' are all phrases. ✓"
+          "explanation": "Here *soaring* stands before the noun 'eagle' and describes it, so it is an adjective. The verb telling us what the pilot did is 'pointed'; the -ing form *soaring* is not an action here but a describer of the noun, so it is not a verb. ✓"
         },
         {
           "id": 280,
           "difficulty": 3,
-          "question": "In the sentence 'When the bell rang, the pupils lined up', which part is the subordinate clause?",
+          "question": "The gardener cleared the *withered* leaves from the flowerbed. What type of word is *withered*?",
           "options": [
-            "the pupils",
-            "lined up",
-            "When the bell rang",
-            "the pupils lined up",
-            "the bell"
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Pronoun",
+            "Adverb"
           ],
           "correct": 2,
-          "explanation": "'When the bell rang' is the subordinate clause — it starts with the subordinating conjunction 'when' and cannot make sense on its own. It depends on the main clause ('the pupils lined up'). ✓"
+          "explanation": "In this sentence *withered* comes before the noun 'leaves' and tells us what kind of leaves they are, so it works as an adjective. Its -ed ending makes it resemble a verb, but the verb here is 'cleared'; *withered* does no action and only describes the noun. ✓"
         },
         {
           "id": 281,
           "difficulty": 3,
-          "question": "In the sentence 'She ran quickly because she was late', which is the main clause?",
+          "question": "After a long climb, the temperature slowly crept *up*. What type of word is *up*?",
           "options": [
-            "quickly",
-            "was late",
-            "She ran",
-            "She ran quickly",
-            "because she was late"
+            "Preposition",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Conjunction"
           ],
           "correct": 3,
-          "explanation": "'She ran quickly' is the main clause — it makes complete sense on its own. 'Because she was late' is the subordinate clause, giving the reason. ✓"
+          "explanation": "Here *up* has no noun after it; it joins the verb to make the phrasal verb 'crept up' and adds to the meaning of the action, so it is an adverb (particle). As a preposition, *up* would need a noun to link to (as in 'up the hill'), but there is none here, so preposition is wrong. ✓"
         },
         {
           "id": 282,
           "difficulty": 2,
-          "question": "'She likes dancing but he prefers singing.' How many clauses does this sentence have?",
+          "question": "The professor wrote a *scholarly* article for the journal. What type of word is *scholarly*?",
           "options": [
-            "Three",
-            "Two",
-            "One",
-            "Four",
-            "Five"
+            "Adverb",
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Preposition"
           ],
-          "correct": 1,
-          "explanation": "This sentence has two clauses: 'She likes dancing' and 'he prefers singing'. They are joined by the conjunction 'but'. Each clause has its own subject and verb. ✓"
+          "correct": 2,
+          "explanation": "*Scholarly* describes the noun \"article\", so it is an adjective. The -ly ending is a trap, but it is not telling us how something was done. ✓"
         },
         {
           "id": 283,
@@ -32538,30 +32538,30 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 286,
           "difficulty": 2,
-          "question": "What is a rhetorical question?",
+          "question": "The choir made a *heavenly* sound in the cathedral. What type of word is *heavenly*?",
           "options": [
-            "A question asked in a rude way",
-            "A question that expects a written answer",
-            "A question asked for effect, not expecting an answer",
-            "A question about grammar",
-            "A question in a quiz"
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Determiner"
           ],
-          "correct": 2,
-          "explanation": "A rhetorical question is asked for dramatic effect — the speaker does not expect a real answer. 'Who doesn't love chocolate?' is rhetorical because the expected answer is obvious. ✓"
+          "correct": 3,
+          "explanation": "*Heavenly* describes the noun \"sound\", so it is an adjective. It ends in -ly but is not modifying a verb, so it is not an adverb. ✓"
         },
         {
           "id": 287,
           "difficulty": 2,
-          "question": "'Never in all my years have I seen such rudeness!' What type of sentence is this?",
+          "question": "Her *timely* warning stopped the accident from happening. What type of word is *timely*?",
           "options": [
-            "Command",
-            "Question",
-            "Statement",
-            "Rhetorical question",
-            "Exclamation"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction",
+            "Adjective"
           ],
           "correct": 4,
-          "explanation": "This is an exclamation — it expresses a strong feeling (shock and disapproval) and ends with an exclamation mark. ✓"
+          "explanation": "*Timely* describes the noun \"warning\", so it is an adjective. The -ly ending suggests adverb to some children, but no verb is being described here. ✓"
         },
         {
           "id": 288,
@@ -32580,16 +32580,16 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 289,
           "difficulty": 2,
-          "question": "'Has anyone ever scored ten goals in one match? Of course not.' The first sentence is best described as what?",
+          "question": "In this sentence — 'My cousin quickly told a silly joke.' — which word is an adjective?",
           "options": [
-            "A genuine question",
-            "A command",
-            "A statement",
-            "A rhetorical question",
-            "An exclamation"
+            "silly",
+            "quickly",
+            "told",
+            "joke",
+            "cousin"
           ],
-          "correct": 3,
-          "explanation": "This is a rhetorical question — the speaker immediately answers it themselves ('Of course not'), showing they did not expect anyone else to answer. It is used for emphasis. ✓"
+          "correct": 0,
+          "explanation": "*Silly* describes the noun \"joke\", so it is the adjective. \"Quickly\" also ends in -ly, but it tells us how he told the joke, making it an adverb, not the answer. ✓"
         },
         {
           "id": 290,
@@ -32608,58 +32608,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 291,
           "difficulty": 2,
-          "question": "'He had a heart of gold.' What figure of speech is this?",
+          "question": "In this sentence — 'Snow is the likely outcome, sadly.' — which word is an adjective?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Alliteration",
-            "Onomatopoeia",
-            "Personification"
+            "Snow",
+            "likely",
+            "outcome",
+            "sadly",
+            "is"
           ],
           "correct": 1,
-          "explanation": "This is a metaphor — it says his heart IS gold rather than LIKE gold. It means he was a very kind and generous person. A metaphor directly compares two unlike things. ✓"
+          "explanation": "*Likely* describes the noun \"outcome\", so it is the adjective. \"Sadly\" ends in -ly too, but it comments on the whole situation as an adverb, so it is not the answer. ✓"
         },
         {
           "id": 292,
           "difficulty": 2,
-          "question": "'The flowers nodded their colourful heads in the breeze.' Which literary device is used?",
+          "question": "In this sentence — 'The cactus grows slowly into a prickly plant.' — which word is an adjective?",
           "options": [
-            "Hyperbole",
-            "Metaphor",
-            "Alliteration",
-            "Personification",
-            "Simile"
+            "cactus",
+            "grows",
+            "prickly",
+            "slowly",
+            "plant"
           ],
-          "correct": 3,
-          "explanation": "This is personification — flowers cannot nod because they do not have conscious control of their movements. 'Nodding' is a human action given to the flowers. ✓"
+          "correct": 2,
+          "explanation": "*Prickly* describes the noun \"plant\", so it is the adjective. \"Slowly\" ends in -ly but tells us how it grows, making it an adverb, not the answer. ✓"
         },
         {
           "id": 293,
           "difficulty": 3,
-          "question": "'The queue was so long it stretched to the moon and back.' Which literary device is this?",
+          "question": "As it neared the corner, the runner gradually slowed *down*. What type of word is *down*?",
           "options": [
-            "Simile",
-            "Personification",
-            "Metaphor",
-            "Alliteration",
-            "Hyperbole"
+            "Preposition",
+            "Verb",
+            "Adjective",
+            "Noun",
+            "Adverb"
           ],
           "correct": 4,
-          "explanation": "This is hyperbole — a wild exaggeration used for emphasis. The queue obviously did not reach the moon; the speaker exaggerates to show it was extremely long. ✓"
+          "explanation": "In this sentence *down* is followed by no noun; it completes the phrasal verb 'slowed down' and describes the action, so it acts as an adverb. A preposition would need a noun after it (as in 'down the stairs'), but none follows, so preposition is incorrect. ✓"
         },
         {
           "id": 294,
           "difficulty": 3,
-          "question": "Which sentence contains a metaphor (not a simile)?",
+          "question": "The teacher smiled warmly and told the pupils to come *in*. What type of word is *in*?",
           "options": [
-            "She sang like an angel.",
-            "His voice was as deep as thunder.",
-            "The world is a stage.",
-            "The child ran like a cheetah.",
-            "Her smile was as warm as summer."
+            "Adverb",
+            "Verb",
+            "Preposition",
+            "Noun",
+            "Pronoun"
           ],
-          "correct": 2,
-          "explanation": "'The world is a stage' is a metaphor — it says the world IS a stage, directly comparing the two without using 'like' or 'as'. The others all use 'like' or 'as', making them similes. ✓"
+          "correct": 0,
+          "explanation": "Here *in* has no noun following it; it joins the verb to form the phrasal verb 'come in' and adds to the meaning of the action, so it is an adverb. Usually *in* is a preposition (as in 'in the room'), but a preposition must be followed by a noun, and there is none here. ✓"
         },
         {
           "id": 295,
@@ -32678,44 +32678,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 296,
           "difficulty": 2,
-          "question": "'Big brown bears basked by the babbling brook.' Which literary device is this?",
+          "question": "In this sentence — 'The sailor cheerfully sang a jolly song.' — which word is an adjective?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Hyperbole",
-            "Personification",
-            "Alliteration"
+            "sailor",
+            "cheerfully",
+            "sang",
+            "jolly",
+            "song"
           ],
-          "correct": 4,
-          "explanation": "This is alliteration — the 'b' sound is repeated at the start of big, brown, bears, basked, babbling, and brook. Alliteration makes writing musical and memorable. ✓"
+          "correct": 3,
+          "explanation": "*Jolly* describes the noun \"song\", so it is the adjective. \"Cheerfully\" ends in -ly but describes how he sang, making it an adverb, not the answer. ✓"
         },
         {
           "id": 297,
           "difficulty": 3,
-          "question": "'Not a sound could be heard. Not a whisper. Not a breath.' Which literary device is used?",
+          "question": "After hours of steady drizzle, the campfire finally went *out*. What type of word is *out*?",
           "options": [
-            "Metaphor",
-            "Simile",
-            "Repetition",
-            "Personification",
-            "Hyperbole"
+            "Preposition",
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 2,
-          "explanation": "This is repetition — the word 'Not' is deliberately repeated at the start of each sentence. This builds emphasis and creates a sense of complete, eerie silence. ✓"
+          "correct": 1,
+          "explanation": "In this sentence *out* is followed by no noun; it completes the phrasal verb 'went out' and tells us more about the action, so it works as an adverb. As a preposition, *out* would need a noun to link to, but none follows, so preposition is wrong. ✓"
         },
         {
           "id": 298,
           "difficulty": 3,
-          "question": "What is the difference between a simile and a metaphor?",
+          "question": "Even as the rain poured down, the marching band played *on*. What type of word is *on*?",
           "options": [
-            "They mean the same thing",
-            "A simile uses 'like' or 'as' to compare; a metaphor says something IS something else",
-            "A metaphor uses 'like'; a simile uses 'as'",
-            "Similes are only about people; metaphors are about objects",
-            "Similes are positive; metaphors are negative"
+            "Preposition",
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Adjective"
           ],
-          "correct": 1,
-          "explanation": "A simile compares using 'like' or 'as' (brave AS a lion, swims LIKE a fish). A metaphor says something IS something else directly (he IS a lion, life IS a journey). Both compare, but in different ways. ✓"
+          "correct": 2,
+          "explanation": "Here *on* has no noun after it; it joins the verb to make the phrasal verb 'played on' and adds to the meaning of the action, so it is an adverb. A preposition would need a noun following it (as in 'on the stage'), but there is none, so preposition is incorrect. ✓"
         },
         {
           "id": 299,
@@ -32734,86 +32734,86 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 300,
           "difficulty": 2,
-          "question": "What is a contraction?",
+          "question": "In this sentence — 'We calmly enjoyed a leisurely picnic.' — which word is an adjective?",
           "options": [
-            "An unusually long and complicated word that is difficult to spell correctly.",
-            "A describing word that tells you more about a noun in a sentence.",
-            "A shortened form of two words using an apostrophe",
-            "A word at the end of a sentence",
-            "A word that joins two sentences"
+            "calmly",
+            "enjoyed",
+            "picnic",
+            "We",
+            "leisurely"
           ],
-          "correct": 2,
-          "explanation": "A contraction is a shortened form of two words joined with an apostrophe. For example: do not → don't, I am → I'm, they have → they've. The apostrophe shows where letters have been removed. ✓"
+          "correct": 4,
+          "explanation": "*Leisurely* describes the noun \"picnic\", so it is the adjective. \"Calmly\" ends in -ly but tells us how we enjoyed it, making it an adverb, not the answer. ✓"
         },
         {
           "id": 301,
           "difficulty": 2,
-          "question": "Which of these is a contraction?",
+          "question": "The ferry sailed *across* the harbour. What type of word is *across*?",
           "options": [
-            "beautiful",
-            "children",
-            "between",
-            "they're",
-            "quickly"
+            "Preposition",
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "'They're' is a contraction of 'they are'. The apostrophe replaces the letter 'a' from 'are'. ✓"
+          "correct": 0,
+          "explanation": "*Across* introduces the noun \"harbour\" and shows direction, so it is a preposition. Some choose adverb, but a preposition always has a noun after it, and \"harbour\" is that noun. ✓"
         },
         {
           "id": 302,
           "difficulty": 2,
-          "question": "A comma is used to separate items in a what?",
+          "question": "She ran *towards* the finish line in the race. What type of word is *towards*?",
           "options": [
-            "Book",
-            "Chapter",
-            "List",
-            "Paragraph",
-            "Sentence type"
+            "Adverb",
+            "Preposition",
+            "Verb",
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 2,
-          "explanation": "A comma separates items in a list. For example: 'I bought apples, bananas, grapes, and oranges.' Commas help keep the items clear and separate. ✓"
+          "correct": 1,
+          "explanation": "*Towards* comes before the noun \"line\" and shows direction, so it is a preposition. It is not an adverb, because a noun follows it. ✓"
         },
         {
           "id": 303,
           "difficulty": 2,
-          "question": "What punctuation mark comes at the end of a statement?",
+          "question": "The farm stretched *beyond* the winding river. What type of word is *beyond*?",
           "options": [
-            "Question mark",
-            "Comma",
-            "Exclamation mark",
-            "Full stop",
-            "Colon"
+            "Adverb",
+            "Noun",
+            "Preposition",
+            "Verb",
+            "Adjective"
           ],
-          "correct": 3,
-          "explanation": "A full stop comes at the end of a statement. Statements give information and always end with a full stop. ✓"
+          "correct": 2,
+          "explanation": "*Beyond* comes before the noun \"river\" and shows position, so it is a preposition. Children sometimes pick adverb, but here a noun follows it, which marks a preposition. ✓"
         },
         {
           "id": 304,
           "difficulty": 3,
-          "question": "What is a subordinate clause?",
+          "question": "On the icy road, the little car skidded and tipped *over*. What type of word is *over*?",
           "options": [
-            "The main part of a sentence",
-            "A clause that makes complete sense on its own",
-            "A clause that depends on the main clause and cannot stand alone",
-            "A type of punctuation",
-            "A sentence with no verb"
+            "Preposition",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Pronoun"
           ],
-          "correct": 2,
-          "explanation": "A subordinate clause (also called a dependent clause) cannot make sense on its own. It needs the main clause to be complete. 'Because it was cold' is a subordinate clause — it needs a main clause like 'we stayed inside'. ✓"
+          "correct": 3,
+          "explanation": "In this sentence *over* is followed by no noun; it completes the phrasal verb 'tipped over' and describes the action, so it acts as an adverb. Usually *over* is a preposition (as in 'over the fence'), but a preposition must have a noun after it, and none appears here. ✓"
         },
         {
           "id": 305,
           "difficulty": 3,
-          "question": "What is a main clause?",
+          "question": "After months of difficult talks, the business deal fell *through*. What type of word is *through*?",
           "options": [
-            "A clause that does not make sense on its own",
-            "A clause that contains only adjectives",
-            "A clause that makes complete sense on its own",
-            "A clause with a conjunction",
-            "A clause that starts with 'because'"
+            "Verb",
+            "Preposition",
+            "Noun",
+            "Conjunction",
+            "Adverb"
           ],
-          "correct": 2,
-          "explanation": "A main clause (also called an independent clause) makes complete sense on its own. 'The dog barked' is a main clause — it has a subject and a verb and expresses a complete thought. ✓"
+          "correct": 4,
+          "explanation": "Here *through* has no noun following it; it joins the verb to form the phrasal verb 'fell through' and adds to the meaning of the action, so it is an adverb. As a preposition, *through* would need a noun to link to (as in 'through the door'), but there is none here. ✓"
         },
         {
           "id": 306,
@@ -32846,58 +32846,58 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 308,
           "difficulty": 2,
-          "question": "'The ocean was a vast blue carpet stretching to the horizon.' Which literary device is used?",
+          "question": "A willow tree grew *beside* the pond. What type of word is *beside*?",
           "options": [
-            "Simile",
-            "Alliteration",
-            "Metaphor",
-            "Personification",
-            "Onomatopoeia"
+            "Adverb",
+            "Verb",
+            "Adjective",
+            "Preposition",
+            "Noun"
           ],
-          "correct": 2,
-          "explanation": "This is a metaphor — the ocean IS described as a carpet. It does not say the ocean is LIKE a carpet; it directly calls it one to help us picture the flat, blue expanse. ✓"
+          "correct": 3,
+          "explanation": "*Beside* introduces the noun \"pond\" and shows position, so it is a preposition. It is not an adverb, because it has a noun after it. ✓"
         },
         {
           "id": 309,
           "difficulty": 2,
-          "question": "'Drip, drip, drip went the leaky tap.' Which TWO literary devices are used?",
+          "question": "The lights flickered *during* the storm. What type of word is *during*?",
           "options": [
-            "Simile and metaphor",
-            "Alliteration and simile",
-            "Onomatopoeia and repetition",
-            "Personification and metaphor",
-            "Hyperbole and alliteration"
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Conjunction",
+            "Preposition"
           ],
-          "correct": 2,
-          "explanation": "'Drip' is onomatopoeia (it sounds like falling water) and it is repeated three times for emphasis (repetition). Together they create a vivid sense of the annoying, continuous sound. ✓"
+          "correct": 4,
+          "explanation": "*During* comes before the noun \"storm\" and shows time, so it is a preposition. It always needs a noun after it, which is why it is not an adverb. ✓"
         },
         {
           "id": 310,
           "difficulty": 3,
-          "question": "'The fog crept in on little cat feet.' Which literary device is used?",
+          "question": "The rumble of the departing train slowly faded *away*. What type of word is *away*?",
           "options": [
-            "Simile",
-            "Alliteration",
-            "Metaphor",
-            "Onomatopoeia",
-            "Personification"
+            "Adverb",
+            "Preposition",
+            "Noun",
+            "Verb",
+            "Adjective"
           ],
-          "correct": 2,
-          "explanation": "This is a metaphor (with elements of personification). The fog is compared directly to a cat — it does not say the fog is LIKE a cat. Fog cannot creep or have feet; it is given cat-like qualities. ✓"
+          "correct": 0,
+          "explanation": "In this sentence *away* is not followed by any noun; it completes the phrasal verb 'faded away' and tells us more about the action, so it works as an adverb. A preposition would need a noun after it, but none follows *away*, so preposition is wrong. ✓"
         },
         {
           "id": 311,
           "difficulty": 2,
-          "question": "'Tick tock, tick tock went the grandfather clock.' Which literary device does 'tick tock' use?",
+          "question": "They played on *despite* the pouring rain. What type of word is *despite*?",
           "options": [
-            "Simile",
-            "Metaphor",
-            "Onomatopoeia",
-            "Personification",
-            "Alliteration"
+            "Preposition",
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Adjective"
           ],
-          "correct": 2,
-          "explanation": "'Tick tock' is onomatopoeia — the words imitate the actual sound a clock makes. The sound of the words matches the sound they describe. ✓"
+          "correct": 0,
+          "explanation": "*Despite* comes before the noun \"rain\" and links it to the action, so it is a preposition. A noun follows it, so it is not an adverb. ✓"
         },
         {
           "id": 312,
@@ -32916,44 +32916,44 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 313,
           "difficulty": 3,
-          "question": "What is the term for a sentence that contains a main clause and at least one subordinate clause?",
+          "question": "As evening came, the tide quietly drew *back*. What type of word is *back*?",
           "options": [
-            "Simple sentence",
-            "Compound sentence",
-            "Complex sentence",
-            "Fragment",
-            "Run-on sentence"
+            "Preposition",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Pronoun"
           ],
-          "correct": 2,
-          "explanation": "A complex sentence has a main clause and at least one subordinate clause. 'When the music started, everyone danced' — 'When the music started' is subordinate and 'everyone danced' is the main clause. ✓"
+          "correct": 1,
+          "explanation": "Here *back* has no noun after it; it joins the verb to make the phrasal verb 'drew back' and adds to the meaning of the action, so it is an adverb. Although *back* can be a noun elsewhere, here it is not naming a thing but describing the movement of the tide. ✓"
         },
         {
           "id": 314,
           "difficulty": 3,
-          "question": "What is the term for a sentence that joins two complete sentences using a coordinating conjunction?",
+          "question": "The instructor asked the whole class to turn *round*. What type of word is *round*?",
           "options": [
-            "Simple sentence",
-            "Compound sentence",
-            "Complex sentence",
-            "Subordinate sentence",
-            "Fragment"
+            "Preposition",
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 1,
-          "explanation": "A compound sentence joins two complete sentences with a coordinating conjunction (and, but, or, so, yet, for, nor). Both clauses can stand alone: 'It rained hard, but we still went out.' ✓"
+          "correct": 2,
+          "explanation": "In this sentence *round* is followed by no noun; it completes the phrasal verb 'turn round' and describes the action, so it acts as an adverb. As a preposition, *round* would need a noun to link to (as in 'round the corner'), but there is none here. ✓"
         },
         {
           "id": 315,
           "difficulty": 2,
-          "question": "'How dare you speak to me like that!' What type of sentence is this?",
+          "question": "The train sped *through* the long tunnel. What type of word is *through*?",
           "options": [
-            "Question",
-            "Statement",
-            "Command",
-            "Exclamation",
-            "Rhetorical question"
+            "Adverb",
+            "Preposition",
+            "Adjective",
+            "Noun",
+            "Verb"
           ],
-          "correct": 3,
-          "explanation": "This is an exclamation — it expresses a strong feeling of outrage. Even though it starts with 'how', the exclamation mark and the strong emotion make it an exclamation, not a question. ✓"
+          "correct": 1,
+          "explanation": "*Through* comes before the noun \"tunnel\" and shows direction, so it is a preposition. Some pick adverb, but here a noun follows it. ✓"
         },
         {
           "id": 316,
@@ -32972,86 +32972,86 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 317,
           "difficulty": 2,
-          "question": "What is an ellipsis (...) often used for in creative writing?",
+          "question": "The spare keys were *within* the drawer. What type of word is *within*?",
           "options": [
-            "To bring a sentence to a normal, complete stop like any full stop.",
-            "To show someone is shouting",
-            "To create suspense or show a trailing thought",
-            "To introduce a list of items before you name each one.",
-            "To show that something belongs to a particular person or thing."
+            "Adverb",
+            "Verb",
+            "Preposition",
+            "Noun",
+            "Adjective"
           ],
           "correct": 2,
-          "explanation": "An ellipsis (three dots) is used to create suspense, show a pause, or indicate a trailing thought. 'She opened the door and saw...' leaves the reader in suspense, wondering what was there. ✓"
+          "explanation": "*Within* comes before the noun \"drawer\" and shows position, so it is a preposition. A noun follows it, so it is not an adverb. ✓"
         },
         {
           "id": 318,
           "difficulty": 3,
-          "question": "What is a compound sentence?",
+          "question": "At the sound of the starting whistle, the cyclists set *off*. What type of word is *off*?",
           "options": [
-            "Two or more complete sentences joined by a conjunction",
-            "A sentence with a main clause and a subordinate clause",
-            "A sentence with only one clause",
-            "A sentence that asks a question",
-            "A sentence with no verb"
+            "Preposition",
+            "Verb",
+            "Noun",
+            "Adverb",
+            "Adjective"
           ],
-          "correct": 0,
-          "explanation": "A compound sentence joins two or more complete sentences using coordinating conjunctions (and, but, or, so). For example: 'I like tennis and my brother likes football.' Both clauses could be separate sentences. ✓"
+          "correct": 3,
+          "explanation": "Here *off* has no noun after it; it joins the verb to form the phrasal verb 'set off' and adds to the meaning of the action, so it is an adverb. Usually *off* would be a preposition needing a noun (as in 'off the path'), but none follows it here. ✓"
         },
         {
           "id": 319,
           "difficulty": 2,
-          "question": "'The pen scratched across the paper.' Which literary device does 'scratched' use?",
+          "question": "The cat curled up *underneath* the radiator. What type of word is *underneath*?",
           "options": [
-            "Simile",
-            "Onomatopoeia",
-            "Personification",
-            "Alliteration",
-            "Metaphor"
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Preposition",
+            "Conjunction"
           ],
-          "correct": 1,
-          "explanation": "'Scratched' is onomatopoeia — the word sounds like the noise a pen nib makes when it scrapes across paper. ✓"
+          "correct": 3,
+          "explanation": "*Underneath* comes before the noun \"radiator\" and shows position, so it is a preposition. Children may pick adverb, but here a noun follows it. ✓"
         },
         {
           "id": 320,
           "difficulty": 3,
-          "question": "'The lonely lighthouse kept watch over the stormy sea.' Which literary device is used?",
+          "question": "Throughout the long winter, food prices kept creeping *up*. What type of word is *up*?",
           "options": [
-            "Simile",
-            "Hyperbole",
-            "Personification",
-            "Alliteration",
-            "Onomatopoeia"
+            "Preposition",
+            "Verb",
+            "Noun",
+            "Pronoun",
+            "Adverb"
           ],
-          "correct": 2,
-          "explanation": "This is personification — a lighthouse cannot be 'lonely' or 'keep watch', because these are human feelings and actions. Giving human qualities to the lighthouse makes the description more vivid. ✓"
+          "correct": 4,
+          "explanation": "In this sentence *up* is followed by no noun; it completes the phrasal verb 'creeping up' and describes the action, so it works as an adverb. As a preposition, *up* would need a noun to link to, but none follows here, so preposition is wrong. ✓"
         },
         {
           "id": 321,
           "difficulty": 2,
-          "question": "'Roald stormed in, slammed the door, and threw his bag on the floor.' How many verbs are in this sentence?",
+          "question": "A kestrel hovered *above* the ploughed field. What type of word is *above*?",
           "options": [
-            "One",
-            "Two",
-            "Five",
-            "Four",
-            "Three"
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition"
           ],
           "correct": 4,
-          "explanation": "There are three verbs: 'stormed', 'slammed', and 'threw'. Each one describes an action that Roald performed. ✓"
+          "explanation": "*Above* comes before the noun \"field\" and shows position, so it is a preposition. A noun follows it, so it is not an adverb. ✓"
         },
         {
           "id": 322,
           "difficulty": 3,
-          "question": "What type of word is 'although' when it begins a clause?",
+          "question": "In thick fog, the aeroplane safely touched *down*. What type of word is *down*?",
           "options": [
             "Adverb",
             "Preposition",
-            "Subordinating conjunction",
-            "Pronoun",
-            "Determiner"
+            "Verb",
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 2,
-          "explanation": "'Although' is a subordinating conjunction — it introduces a subordinate clause. 'Although it was late, they kept playing.' It shows a contrast between the two ideas. ✓"
+          "correct": 0,
+          "explanation": "Here *down* has no noun after it; it joins the verb to make the phrasal verb 'touched down' and adds to the meaning of the action, so it is an adverb. A preposition would need a noun following it (as in 'down the runway'), but there is none, so preposition is incorrect. ✓"
         },
         {
           "id": 323,
@@ -33070,106 +33070,112 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
         {
           "id": 324,
           "difficulty": 2,
-          "question": "What is the purpose of speech marks (inverted commas) in writing?",
+          "question": "The wooden shed stood *behind* the greenhouse. What type of word is *behind*?",
           "options": [
-            "To join two shorter sentences into one longer sentence.",
-            "To add strong emphasis to an important word or idea.",
-            "To show the exact words someone said",
-            "To introduce a list",
-            "To show a pause"
+            "Preposition",
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Conjunction"
           ],
-          "correct": 2,
-          "explanation": "Speech marks (inverted commas) go around the exact words a person says. They show where direct speech begins and ends. 'Hello,' said Tom. ✓"
+          "correct": 0,
+          "explanation": "*Behind* comes before the noun \"greenhouse\" and shows position, so it is a preposition. Some choose adverb, but here a noun follows it. ✓"
         },
         {
           "id": 325,
           "difficulty": 3,
-          "question": "'She was exhausted; she had been running for hours.' Why is a semi-colon used here?",
+          "question": "Under the weight of the heavy snow, the old shed caved *in*. What type of word is *in*?",
           "options": [
-            "To introduce a list",
-            "To mark the exact words that a person speaks aloud.",
-            "To join two closely related complete sentences",
-            "To show that something belongs to a named person or object.",
-            "To build suspense by letting a sentence trail off into silence."
+            "Verb",
+            "Adverb",
+            "Preposition",
+            "Noun",
+            "Adjective"
           ],
-          "correct": 2,
-          "explanation": "The semi-colon joins two closely related complete sentences without using a conjunction. The second clause explains the first — she was exhausted because she had been running. ✓"
+          "correct": 1,
+          "explanation": "In this sentence *in* is followed by no noun; it completes the phrasal verb 'caved in' and tells us more about the action, so it acts as an adverb. Usually *in* is a preposition needing a noun after it, but none appears here, so preposition is wrong. ✓"
         },
         {
           "id": 326,
           "difficulty": 2,
-          "question": "'His homework was as neat as a pin.' What figure of speech is this?",
+          "question": "The ball rolled *between* the two goalposts. What type of word is *between*?",
           "options": [
-            "Metaphor",
-            "Personification",
-            "Alliteration",
-            "Hyperbole",
-            "Simile"
+            "Adverb",
+            "Preposition",
+            "Noun",
+            "Verb",
+            "Adjective"
           ],
-          "correct": 4,
-          "explanation": "This is a simile — it uses 'as...as' to compare the neatness of the homework to a pin. The phrase 'as neat as a pin' is a common saying meaning very tidy and precise. ✓"
+          "correct": 1,
+          "explanation": "*Between* comes before the noun \"goalposts\" and shows position, so it is a preposition. A noun follows it, so it is not an adverb. ✓"
         },
         {
           "id": 327,
           "difficulty": 3,
-          "question": "What is alliteration?",
+          "question": "From the heat and the crush of the crowd, one spectator blacked *out*. What type of word is *out*?",
           "options": [
-            "Comparing two things using 'like' or 'as'",
-            "Giving human qualities to non-human things",
-            "A deliberate exaggeration",
-            "The repetition of the same sound at the start of nearby words",
-            "A word that sounds like the noise it describes"
+            "Preposition",
+            "Verb",
+            "Adverb",
+            "Noun",
+            "Pronoun"
           ],
-          "correct": 3,
-          "explanation": "Alliteration is when the same sound is repeated at the beginning of words that are close together. 'Slippery snakes slithered slowly' repeats the 's' sound. It makes writing catchy and memorable. ✓"
+          "correct": 2,
+          "explanation": "Here *out* has no noun following it; it joins the verb to form the phrasal verb 'blacked out' and adds to the meaning of the action, so it is an adverb. As a preposition, *out* would need a noun to link to, but there is none here, so preposition is wrong. ✓"
         },
         {
           "id": 328,
           "difficulty": 3,
-          "question": "What is onomatopoeia?",
+          "question": "Despite the sudden interruption, the performance went *on*. What type of word is *on*?",
           "options": [
-            "A word that sounds like the noise it describes",
-            "A comparison using 'like' or 'as'",
-            "Giving human feelings to objects",
-            "Repeating the same word several times to create a strong effect.",
-            "A wild overstatement that stretches the truth far beyond what is real."
+            "Preposition",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Conjunction"
           ],
-          "correct": 0,
-          "explanation": "Onomatopoeia is when a word sounds like the noise it describes. Buzz, crash, hiss, splash, pop, and sizzle are all examples — say them aloud and you can hear the sounds they represent. ✓"
+          "correct": 3,
+          "explanation": "In this sentence *on* is followed by no noun; it completes the phrasal verb 'went on' and describes the action, so it works as an adverb. A preposition would need a noun after it (as in 'on the stage'), but none follows here, so preposition is incorrect. ✓"
         },
         {
           "id": 329,
           "difficulty": 3,
-          "question": "What is personification?",
+          "question": "Left on the hob far too long, the pan of milk boiled *over*. What type of word is *over*?",
           "options": [
-            "Comparing two different things using the words 'like' or 'as'.",
-            "Giving human qualities or actions to non-human things",
-            "Repeating sounds at the start of words",
-            "Saying that one thing actually is another, without using 'like'.",
-            "An over-the-top exaggeration used purely for dramatic effect and comic emphasis."
+            "Preposition",
+            "Verb",
+            "Noun",
+            "Adjective",
+            "Adverb"
           ],
-          "correct": 1,
-          "explanation": "Personification gives human qualities, feelings, or actions to something that is not human. 'The sun smiled down' gives the sun a human expression. It makes descriptions more vivid and imaginative. ✓"
+          "correct": 4,
+          "explanation": "Here *over* has no noun after it; it joins the verb to make the phrasal verb 'boiled over' and adds to the meaning of the action, so it is an adverb. Usually *over* is a preposition needing a noun (as in 'over the edge'), but none follows it here. ✓"
         },
         {
           "id": 330,
           "difficulty": 3,
-          "question": "What is hyperbole?",
+          "question": "After digging for hours through solid rock, the miners finally broke *through*. What type of word is *through*?",
           "options": [
-            "A comparison between two things using the linking word 'as'.",
-            "A word that imitates a sound",
-            "A deliberate exaggeration not meant to be taken literally",
-            "Giving human feelings and human actions to lifeless objects or animals.",
-            "Repeating the same word for emphasis"
+            "Adverb",
+            "Verb",
+            "Preposition",
+            "Noun",
+            "Pronoun"
           ],
-          "correct": 2,
-          "explanation": "Hyperbole is a deliberate exaggeration used for emphasis or humour, not meant to be taken literally. 'I'm so hungry I could eat a horse' or 'This bag weighs a tonne' are hyperbole — they exaggerate to make a point. ✓"
+          "correct": 0,
+          "explanation": "In this sentence *through* is followed by no noun; it completes the phrasal verb 'broke through' and tells us more about the action, so it acts as an adverb. As a preposition, *through* would need a noun to link to (as in 'through the tunnel'), but there is none here. ✓"
         },
         {
           "id": 331,
           "difficulty": 1,
           "question": "In the sentence 'She gave him the book', which word is a pronoun?",
-          "options": ["gave", "sentence", "book", "him", "the"],
+          "options": [
+            "gave",
+            "sentence",
+            "book",
+            "him",
+            "the"
+          ],
           "correct": 3,
           "explanation": "'Him' is a pronoun — it stands in place of a person's name. Instead of saying 'She gave Tom the book', we use 'him'. Pronouns replace nouns to avoid repetition. ✓"
         },
@@ -33177,191 +33183,335 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 332,
           "difficulty": 1,
           "question": "Which of these is a personal pronoun?",
-          "options": ["under", "they", "quickly", "beautiful", "and"],
+          "options": [
+            "under",
+            "they",
+            "quickly",
+            "beautiful",
+            "and"
+          ],
           "correct": 1,
           "explanation": "'They' is a personal pronoun — it replaces the names of people or things (they = the children, the dogs, etc.). Personal pronouns include: I, you, he, she, it, we, they. ✓"
         },
         {
           "id": 333,
           "difficulty": 2,
-          "question": "In the sentence 'I can do it myself', what type of pronoun is 'myself'?",
-          "options": ["Personal pronoun", "Possessive pronoun", "Reflexive pronoun", "Relative pronoun", "Demonstrative pronoun"],
+          "question": "The ladder leaned *against* the garden wall. What type of word is *against*?",
+          "options": [
+            "Adverb",
+            "Conjunction",
+            "Preposition",
+            "Noun",
+            "Verb"
+          ],
           "correct": 2,
-          "explanation": "'Myself' is a reflexive pronoun — it refers back to the subject 'I'. Reflexive pronouns end in '-self' or '-selves': myself, yourself, himself, herself, itself, ourselves, themselves. ✓"
+          "explanation": "*Against* comes before the noun \"wall\" and shows position, so it is a preposition. It needs a noun after it, so it is not an adverb. ✓"
         },
         {
           "id": 334,
           "difficulty": 2,
-          "question": "In 'The dog that chased the cat was ours', which word is a relative pronoun?",
-          "options": ["dog", "that", "cat", "chased", "ours"],
-          "correct": 1,
-          "explanation": "'That' is a relative pronoun — it introduces a relative clause ('that chased the cat') which tells us more about the dog. Other relative pronouns: who, which, whom, whose. ✓"
+          "question": "A neat hedge grew *around* the garden. What type of word is *around*?",
+          "options": [
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition",
+            "Adjective"
+          ],
+          "correct": 3,
+          "explanation": "*Around* comes before the noun \"garden\" and shows position, so it is a preposition. Children sometimes pick adverb, but here a noun follows it. ✓"
         },
         {
           "id": 335,
           "difficulty": 2,
-          "question": "Which word is a possessive pronoun in: 'That jacket is mine, not yours'?",
-          "options": ["That", "jacket", "is", "mine", "not"],
-          "correct": 3,
-          "explanation": "'Mine' is a possessive pronoun — it shows ownership without needing a noun after it. Possessive pronouns: mine, yours, his, hers, its, ours, theirs. Compare with possessive determiners: my, your, his, her. ✓"
+          "question": "Cheerful music played *throughout* the house. What type of word is *throughout*?",
+          "options": [
+            "Adverb",
+            "Verb",
+            "Noun",
+            "Conjunction",
+            "Preposition"
+          ],
+          "correct": 4,
+          "explanation": "*Throughout* comes before the noun \"house\" and shows place, so it is a preposition. A noun follows it, so it is not an adverb. ✓"
         },
         {
           "id": 336,
           "difficulty": 2,
-          "question": "What type of pronoun is 'who' in the sentence 'The girl who won the prize was delighted'?",
-          "options": ["Personal pronoun", "Possessive pronoun", "Interrogative pronoun", "Relative pronoun", "Reflexive pronoun"],
-          "correct": 3,
-          "explanation": "'Who' is a relative pronoun here — it introduces a relative clause ('who won the prize') that gives more information about the girl. When 'who' starts a question ('Who did it?'), it's an interrogative pronoun instead. ✓"
+          "question": "A wooden bench sits *near* the fountain. What type of word is *near*?",
+          "options": [
+            "Preposition",
+            "Adverb",
+            "Adjective",
+            "Verb",
+            "Noun"
+          ],
+          "correct": 0,
+          "explanation": "*Near* comes before the noun \"fountain\" and shows position, so it is a preposition. It can act differently elsewhere, but here a noun follows it, so it is not an adverb. ✓"
         },
         {
           "id": 337,
           "difficulty": 2,
-          "question": "In 'These are better than those', what type of word is 'those'?",
-          "options": ["Demonstrative pronoun", "Adverb", "Adjective", "Personal pronoun", "Conjunction"],
-          "correct": 0,
-          "explanation": "'Those' is a demonstrative pronoun — it points to specific things. The demonstrative pronouns are: this, that, these, those. They demonstrate (point out) which thing you mean. ✓"
+          "question": "In this sentence — 'The badgers came out among the trees.' — which word is a preposition?",
+          "options": [
+            "badgers",
+            "among",
+            "came",
+            "out",
+            "trees"
+          ],
+          "correct": 1,
+          "explanation": "*Among* sits before the noun \"trees\" and shows position, so it is the preposition. \"Out\" has no noun after it here, so it is an adverb, not the answer. ✓"
         },
         {
           "id": 338,
           "difficulty": 3,
-          "question": "In 'Nobody knew the answer', what type of pronoun is 'nobody'?",
-          "options": ["Relative pronoun", "Personal pronoun", "Indefinite pronoun", "Possessive pronoun", "Reflexive pronoun"],
-          "correct": 2,
-          "explanation": "'Nobody' is an indefinite pronoun — it refers to an unspecified person. Indefinite pronouns don't point to a particular person or thing: nobody, somebody, everyone, anything, nothing, each, several. ✓"
+          "question": "We caught the train home after the concert. What type of word is *after*?",
+          "options": [
+            "Conjunction",
+            "Preposition",
+            "Adverb",
+            "Verb",
+            "Noun"
+          ],
+          "correct": 1,
+          "explanation": "Here *after* is followed by the noun phrase 'the concert', which it links into the sentence, so it is a preposition. It is not a conjunction because no clause (subject + verb) follows it, and not an adverb because it does not stand alone. ✓"
         },
         {
           "id": 339,
           "difficulty": 3,
-          "question": "Which sentence uses a pronoun incorrectly?",
-          "options": ["Her and I went to the shop.", "She and I went to the shop.", "They gave it to him.", "We asked them to help.", "She told us the answer."],
-          "correct": 0,
-          "explanation": "'Her and I went to the shop' is incorrect — 'her' is an object pronoun but should be 'she' (subject pronoun) because it's doing the action. The correct sentence is 'She and I went to the shop.' ✓"
+          "question": "The storm passed, and calm returned shortly after. What type of word is *after*?",
+          "options": [
+            "Preposition",
+            "Conjunction",
+            "Adverb",
+            "Adjective",
+            "Verb"
+          ],
+          "correct": 2,
+          "explanation": "Here *after* stands alone at the end of the sentence with no noun or clause following it, telling us when calm returned, so it is an adverb. It is not a preposition (no object follows) or a conjunction (no clause follows). ✓"
         },
         {
           "id": 340,
           "difficulty": 3,
-          "question": "In 'Whose coat is this?', what type of pronoun is 'whose'?",
-          "options": ["Relative pronoun", "Possessive pronoun", "Interrogative pronoun", "Personal pronoun", "Reflexive pronoun"],
-          "correct": 2,
-          "explanation": "'Whose' is an interrogative pronoun here — it asks a question about possession. Interrogative pronouns ask questions: who, whom, whose, which, what. When 'whose' introduces a clause instead ('the boy whose bag was lost'), it's a relative pronoun. ✓"
+          "question": "Hand your permission slips in before assembly. What type of word is *before*?",
+          "options": [
+            "Conjunction",
+            "Adverb",
+            "Noun",
+            "Preposition",
+            "Verb"
+          ],
+          "correct": 3,
+          "explanation": "*Before* is followed by the noun 'assembly', which it links into the sentence, so it is a preposition. It is not a conjunction because no clause follows it, and not an adverb because it is not standing alone. ✓"
         },
         {
           "id": 341,
           "difficulty": 3,
-          "question": "In 'Each of the children brought their own lunch', what type of pronoun is 'each'?",
-          "options": ["Personal pronoun", "Reflexive pronoun", "Demonstrative pronoun", "Indefinite pronoun", "Relative pronoun"],
-          "correct": 3,
-          "explanation": "'Each' is an indefinite pronoun — it refers to every individual one without naming them specifically. Other indefinite pronouns: all, any, both, few, many, most, none, some, several. ✓"
+          "question": "Wash your hands before you sit down to eat. What type of word is *before*?",
+          "options": [
+            "Preposition",
+            "Adverb",
+            "Verb",
+            "Adjective",
+            "Conjunction"
+          ],
+          "correct": 4,
+          "explanation": "Here *before* introduces the clause 'you sit down to eat' (subject 'you' + verb 'sit'), joining it to the main clause, so it is a conjunction. It is not a preposition because a whole clause, not just a noun, follows, and it is not an adverb. ✓"
         },
         {
           "id": 342,
           "difficulty": 2,
-          "question": "In 'They went for a run', what word class is 'run'?",
-          "options": ["Adjective", "Verb", "Noun", "Adverb", "Preposition"],
+          "question": "In this sentence — 'The hikers walked up along the ridge.' — which word is a preposition?",
+          "options": [
+            "hikers",
+            "walked",
+            "along",
+            "up",
+            "ridge"
+          ],
           "correct": 2,
-          "explanation": "Here 'run' is a NOUN — 'a run' is a thing (they went for it). Usually 'run' is a verb ('I run every day'), but many words can change class depending on how they're used. Context is everything! ✓"
+          "explanation": "*Along* comes before the noun \"ridge\" and shows direction, so it is the preposition. \"Up\" has no noun after it here, so it works as an adverb, not the answer. ✓"
         },
         {
           "id": 343,
           "difficulty": 2,
-          "question": "In 'She had a long drink of water', what word class is 'drink'?",
-          "options": ["Verb", "Adjective", "Noun", "Adverb", "Conjunction"],
-          "correct": 2,
-          "explanation": "Here 'drink' is a NOUN — 'a drink' is a thing. In 'I drink water every day', it would be a verb. The word 'a' before it is a big clue that it's being used as a noun. ✓"
+          "question": "In this sentence — 'Divers swam down below the wreck.' — which word is a preposition?",
+          "options": [
+            "Divers",
+            "swam",
+            "down",
+            "below",
+            "wreck"
+          ],
+          "correct": 3,
+          "explanation": "*Below* introduces the noun \"wreck\" and shows position, so it is the preposition. \"Down\" has no noun after it here, so it is an adverb, not the answer. ✓"
         },
         {
           "id": 344,
           "difficulty": 2,
-          "question": "In 'We need to book a table', what word class is 'book'?",
-          "options": ["Noun", "Adjective", "Adverb", "Verb", "Pronoun"],
-          "correct": 3,
-          "explanation": "Here 'book' is a VERB — it means to reserve. 'We need to book' tells us it's an action. In 'I read a book', it would be a noun. Same word, different job! ✓"
+          "question": "In this sentence — 'The runners jogged on past the church.' — which word is a preposition?",
+          "options": [
+            "runners",
+            "jogged",
+            "on",
+            "church",
+            "past"
+          ],
+          "correct": 4,
+          "explanation": "*Past* comes before the noun \"church\" and shows direction, so it is the preposition. \"On\" has no noun after it here, so it is an adverb, not the answer. ✓"
         },
         {
           "id": 345,
           "difficulty": 2,
-          "question": "In 'He is a fast runner', what word class is 'fast'?",
-          "options": ["Adverb", "Noun", "Adjective", "Verb", "Pronoun"],
-          "correct": 2,
-          "explanation": "'Fast' is an ADJECTIVE here — it describes the noun 'runner'. But in 'He runs fast', it would be an adverb (describing how he runs). 'Fast' is one of those tricky words that keeps the same form as both adjective and adverb. ✓"
+          "question": "*That* castle has stood for a thousand years. What type of word is *that*?",
+          "options": [
+            "Determiner",
+            "Pronoun",
+            "Adjective",
+            "Noun",
+            "Verb"
+          ],
+          "correct": 0,
+          "explanation": "Here *that* sits directly before the noun \"castle\" and tells us which one, so it is a determiner. It can be a pronoun elsewhere (\"I like that\"), but here a noun follows it. ✓"
         },
         {
           "id": 346,
           "difficulty": 2,
-          "question": "In 'He runs fast', what word class is 'fast'?",
-          "options": ["Adjective", "Noun", "Conjunction", "Verb", "Adverb"],
-          "correct": 4,
-          "explanation": "'Fast' is an ADVERB here — it describes how he runs. Compare with 'He is a fast runner' where 'fast' is an adjective describing 'runner'. These are called flat adverbs — they look identical to the adjective form. ✓"
+          "question": "*These* biscuits are freshly baked. What type of word is *these*?",
+          "options": [
+            "Pronoun",
+            "Determiner",
+            "Adjective",
+            "Verb",
+            "Noun"
+          ],
+          "correct": 1,
+          "explanation": "*These* comes directly before the noun \"biscuits\" and tells us which ones, so it is a determiner. It can be a pronoun when it stands alone, but here it introduces a noun. ✓"
         },
         {
           "id": 347,
           "difficulty": 3,
-          "question": "In 'She gave a light tap on the door', what word class is 'light'?",
-          "options": ["Preposition", "Verb", "Adjective", "Adverb", "Noun"],
-          "correct": 2,
-          "explanation": "'Light' is an ADJECTIVE here — it describes the noun 'tap' (a gentle tap). 'Light' can also be a noun ('turn on the light') or a verb ('light the candle'). Three different word classes for one word! ✓"
+          "question": "The old mill has stood empty since the war. What type of word is *since*?",
+          "options": [
+            "Preposition",
+            "Conjunction",
+            "Adverb",
+            "Noun",
+            "Adjective"
+          ],
+          "correct": 0,
+          "explanation": "*Since* is followed by the noun phrase 'the war', marking a starting point in time, so it is a preposition. It is not a conjunction because no clause follows it, and not an adverb because it does not stand alone. ✓"
         },
         {
           "id": 348,
           "difficulty": 3,
-          "question": "In 'Please round the corner carefully', what word class is 'round'?",
-          "options": ["Adjective", "Adverb", "Noun", "Verb", "Preposition"],
-          "correct": 3,
-          "explanation": "'Round' is a VERB here — it is the action the sentence is telling someone to do. This is an imperative sentence: 'Please [you] round the corner carefully', meaning 'go around the corner carefully'. We can tell 'round' is the verb because 'carefully' is an adverb describing how to do the action, and adverbs describe verbs. 'Round' can also be an adjective ('a round ball'), a noun ('the next round'), or a preposition ('she walked round the corner') — but in this sentence it is the main verb. ✓"
+          "question": "Since the road was flooded, the coach took a long detour. What type of word is *since*?",
+          "options": [
+            "Adverb",
+            "Conjunction",
+            "Preposition",
+            "Verb",
+            "Determiner"
+          ],
+          "correct": 1,
+          "explanation": "Here *since* introduces the clause 'the road was flooded' and means 'because', joining it to the main clause, so it is a conjunction. It is not a preposition because a clause, not a noun, follows, and it is not an adverb. ✓"
         },
         {
           "id": 349,
           "difficulty": 3,
-          "question": "In 'The well was very deep', what word class is 'well'?",
-          "options": ["Adverb", "Adjective", "Verb", "Noun", "Conjunction"],
-          "correct": 3,
-          "explanation": "'Well' is a NOUN here — it means a deep hole for water. In 'She played well', it's an adverb. In 'I feel well', it's an adjective. This is an 11+ favourite — testing whether you can read the context! ✓"
+          "question": "The swimming pool stays open until nine o'clock. What type of word is *until*?",
+          "options": [
+            "Conjunction",
+            "Adverb",
+            "Preposition",
+            "Noun",
+            "Verb"
+          ],
+          "correct": 2,
+          "explanation": "*Until* is followed by the noun phrase 'nine o'clock', showing an end point in time, so it is a preposition. It is not a conjunction because no clause follows it, and not an adverb because it does not stand alone. ✓"
         },
         {
           "id": 350,
           "difficulty": 3,
-          "question": "In 'The play was excellent', what word class is 'play'?",
-          "options": ["Verb", "Adjective", "Noun", "Adverb", "Preposition"],
-          "correct": 2,
-          "explanation": "'Play' is a NOUN here — it means a theatrical performance ('the play'). In 'They play football', it would be a verb. The word 'the' before it is a strong clue that it's being used as a noun. ✓"
+          "question": "The dog barked until its owner finally came back. What type of word is *until*?",
+          "options": [
+            "Preposition",
+            "Adverb",
+            "Adjective",
+            "Conjunction",
+            "Noun"
+          ],
+          "correct": 3,
+          "explanation": "Here *until* introduces the clause 'its owner finally came back' (subject + verb), joining it to the main clause, so it is a conjunction. It is not a preposition because a clause, not just a noun, follows, and it is not an adverb. ✓"
         },
         {
           "id": 351,
           "difficulty": 3,
-          "question": "Which word changes class between these two sentences? 'I work hard' and 'The work is difficult'",
-          "options": ["I", "difficult", "work", "is", "hard"],
-          "correct": 2,
-          "explanation": "'Work' changes class! In 'I work hard', it's a VERB (the action). In 'The work is difficult', it's a NOUN (the thing). Many common words can function as different word classes — always check how they're used in the sentence. ✓"
+          "question": "As the referee blew the whistle, the players stopped at once. What type of word is *as*?",
+          "options": [
+            "Preposition",
+            "Adverb",
+            "Pronoun",
+            "Verb",
+            "Conjunction"
+          ],
+          "correct": 4,
+          "explanation": "Here *as* introduces the clause 'the referee blew the whistle' (subject + verb), showing when the players stopped, so it is a conjunction. It is not a preposition because a clause, not a noun, follows, and it is not an adverb. ✓"
         },
         {
           "id": 352,
           "difficulty": 2,
-          "question": "In 'The friendly dog wagged its tail', what word class is 'friendly'?",
-          "options": ["Noun", "Adjective", "Adverb", "Verb", "Pronoun"],
-          "correct": 1,
-          "explanation": "'Friendly' is an ADJECTIVE — it describes the dog. Even though it ends in '-ly' (which usually signals an adverb), 'friendly' is actually an adjective. Other -ly adjectives: lonely, lovely, lively, costly, cowardly. Don't let the ending fool you! ✓"
+          "question": "*Each* pupil received a certificate. What type of word is *each*?",
+          "options": [
+            "Pronoun",
+            "Adjective",
+            "Determiner",
+            "Noun",
+            "Conjunction"
+          ],
+          "correct": 2,
+          "explanation": "*Each* sits directly before the noun \"pupil\" and tells us about it, so it is a determiner. It can be a pronoun on its own (\"each of them\"), but here a noun follows it. ✓"
         },
         {
           "id": 353,
           "difficulty": 3,
-          "question": "In 'The running water was ice cold', what word class is 'running'?",
-          "options": ["Verb", "Noun", "Adjective", "Adverb", "Pronoun"],
-          "correct": 2,
-          "explanation": "'Running' is an ADJECTIVE here — it describes the water. Even though 'running' looks like a verb form (-ing), it's functioning as an adjective because it tells us what kind of water. Other examples: 'the falling leaves', 'an interesting book'. ✓"
+          "question": "Every seat but one had already been taken. What type of word is *but*?",
+          "options": [
+            "Preposition",
+            "Conjunction",
+            "Adverb",
+            "Noun",
+            "Verb"
+          ],
+          "correct": 0,
+          "explanation": "Here *but* means 'except' and is followed by the noun 'one', so it acts as a preposition. It is not the usual joining conjunction here because it marks an exception to 'every seat' rather than linking two clauses, and it is not an adverb. ✓"
         },
         {
           "id": 354,
           "difficulty": 3,
-          "question": "In 'She works hard' and 'She hardly works', do 'hard' and 'hardly' mean the same thing?",
-          "options": ["Yes — both words mean exactly the same, so the two sentences say the same thing.", "No — 'hard' means with great effort; 'hardly' means almost not at all", "Yes — 'hardly' is simply a more formal or polite way of saying the very same thing.", "No — 'hard' is an adjective; 'hardly' is a noun", "'Hardly' is not a proper word at all, so only the first sentence makes real sense."],
+          "question": "The garden looked bare, for winter had stripped every tree. What type of word is *for*?",
+          "options": [
+            "Preposition",
+            "Conjunction",
+            "Adverb",
+            "Adjective",
+            "Noun"
+          ],
           "correct": 1,
-          "explanation": "They mean very different things! 'She works hard' = she puts in lots of effort. 'She hardly works' = she barely does any work at all. Adding '-ly' to 'hard' completely changes the meaning — one of English's sneakiest traps! ✓"
+          "explanation": "Here *for* means 'because' and joins the clause 'winter had stripped every tree' to the first clause, so it is a conjunction. It is not a preposition because a full clause, not a noun, follows it, and it is not an adverb. ✓"
         },
         {
           "id": 355,
           "difficulty": 1,
           "question": "Which of these is a complete sentence (main clause)?",
-          "options": ["Because it was raining", "Although she tried hard", "The dog barked loudly", "When the bell rang", "If you come early"],
+          "options": [
+            "Because it was raining",
+            "Although she tried hard",
+            "The dog barked loudly",
+            "When the bell rang",
+            "If you come early"
+          ],
           "correct": 2,
           "explanation": "'The dog barked loudly' is a main clause — it makes complete sense on its own. The others all start with subordinating conjunctions (because, although, when, if) and need more information to be complete. ✓"
         },
@@ -33369,103 +33519,181 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 356,
           "difficulty": 1,
           "question": "What is a clause?",
-          "options": ["A single word", "A group of words containing a verb", "A type of noun", "A paragraph", "A type of punctuation mark"],
+          "options": [
+            "A single word",
+            "A group of words containing a verb",
+            "A type of noun",
+            "A paragraph",
+            "A type of punctuation mark"
+          ],
           "correct": 1,
           "explanation": "A clause is a group of words that contains a verb. 'The cat sat on the mat' is a clause because it has a verb ('sat'). Sentences are built from one or more clauses. ✓"
         },
         {
           "id": 357,
           "difficulty": 2,
-          "question": "In 'I stayed inside because it was raining', which part is the subordinate clause?",
-          "options": ["I stayed", "I stayed inside", "because it was raining", "it was raining", "inside because"],
-          "correct": 2,
-          "explanation": "'Because it was raining' is the subordinate clause — it starts with 'because' (a subordinating conjunction) and can't stand alone as a sentence. 'I stayed inside' is the main clause — it makes sense on its own. ✓"
+          "question": "*Every* window was decorated for the summer fair. What type of word is *every*?",
+          "options": [
+            "Pronoun",
+            "Adjective",
+            "Verb",
+            "Determiner",
+            "Noun"
+          ],
+          "correct": 3,
+          "explanation": "*Every* comes directly before the noun \"window\" and tells us how much, so it is a determiner. Children may say pronoun, but a noun follows it here. ✓"
         },
         {
           "id": 358,
           "difficulty": 2,
-          "question": "In 'The girl who lives next door is my friend', what is the relative clause?",
-          "options": ["The girl", "is my friend", "who lives next door", "next door", "my friend"],
-          "correct": 2,
-          "explanation": "'Who lives next door' is a relative clause — it starts with the relative pronoun 'who' and gives extra information about 'the girl'. Relative clauses begin with who, which, that, whose, or where. ✓"
+          "question": "*Many* houses lost power in the gale. What type of word is *many*?",
+          "options": [
+            "Pronoun",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Determiner"
+          ],
+          "correct": 4,
+          "explanation": "*Many* comes directly before the noun \"houses\" and tells us roughly how many, so it is a determiner. It can be a pronoun alone (\"many were lost\"), but here it introduces a noun. ✓"
         },
         {
           "id": 359,
           "difficulty": 2,
-          "question": "Which sentence has TWO clauses?",
-          "options": ["The tall boy ran quickly.", "I went home because I felt ill.", "She quickly ate her entire packed lunch in the busy playground.", "Please open the heavy wooden door very quietly now.", "The beautiful summer garden bloomed with bright red and yellow flowers."],
-          "correct": 1,
-          "explanation": "'I went home because I felt ill' has two clauses: 'I went home' (main clause) and 'because I felt ill' (subordinate clause). The others all have just one clause each. ✓"
+          "question": "*His* bicycle had a flat tyre this morning. What type of word is *his*?",
+          "options": [
+            "Determiner",
+            "Pronoun",
+            "Noun",
+            "Verb",
+            "Adjective"
+          ],
+          "correct": 0,
+          "explanation": "*His* comes directly before the noun \"bicycle\" and shows whose it is, so it is a possessive determiner. It can be a pronoun elsewhere (\"the book is his\"), but here a noun follows it. ✓"
         },
         {
           "id": 360,
           "difficulty": 2,
-          "question": "What is the difference between a main clause and a subordinate clause?",
-          "options": ["Main clauses are always longer than the subordinate clauses beside them.", "Main clauses make sense alone; subordinate clauses don't", "Subordinate clauses always come first", "Main clauses have adjectives; subordinate clauses don't", "There is really no difference; the two terms mean the same thing."],
+          "question": "*Their* garden won first prize at the show. What type of word is *their*?",
+          "options": [
+            "Pronoun",
+            "Determiner",
+            "Adjective",
+            "Verb",
+            "Noun"
+          ],
           "correct": 1,
-          "explanation": "A main clause makes complete sense on its own ('The dog barked'). A subordinate clause depends on the main clause — it can't stand alone ('because it heard a noise'). Together: 'The dog barked because it heard a noise.' ✓"
+          "explanation": "*Their* comes directly before the noun \"garden\" and shows whose it is, so it is a possessive determiner. It is not a pronoun here, because a noun follows it. ✓"
         },
         {
           "id": 361,
           "difficulty": 3,
-          "question": "In 'Although she practised daily, she still lost the match', which is the main clause?",
-          "options": ["Although she practised", "she practised daily", "Although she practised daily", "she still lost the match", "lost the match"],
-          "correct": 3,
-          "explanation": "'She still lost the match' is the main clause — it makes sense on its own. 'Although she practised daily' is the subordinate clause (starts with 'although'). The subordinate clause comes first here, but the main clause is still the independent one. ✓"
+          "question": "The exam results have not been announced yet. What type of word is *yet*?",
+          "options": [
+            "Conjunction",
+            "Preposition",
+            "Adverb",
+            "Adjective",
+            "Verb"
+          ],
+          "correct": 2,
+          "explanation": "Here *yet* stands alone and tells us about the timing of the verb 'been announced', meaning 'up to now', so it is an adverb. It is not a conjunction because it joins nothing, and not a preposition because no noun follows it. ✓"
         },
         {
           "id": 362,
           "difficulty": 3,
-          "question": "Which sentence contains an embedded relative clause?",
-          "options": ["The boy ran to school.", "I like chocolate cake.", "It started to rain.", "Close the window please.", "The woman, who was wearing a hat, smiled."],
-          "correct": 4,
-          "explanation": "'The woman, who was wearing a hat, smiled' has an embedded relative clause — 'who was wearing a hat' is tucked inside the main clause, between commas. It adds extra information but could be removed without breaking the sentence. ✓"
+          "question": "Hearing her name called, she spun round in surprise. What type of word is *round*?",
+          "options": [
+            "Preposition",
+            "Conjunction",
+            "Noun",
+            "Adverb",
+            "Adjective"
+          ],
+          "correct": 3,
+          "explanation": "Here *round* stands alone after the verb 'spun', describing how she moved, with no noun following it, so it is an adverb. It is not a preposition (there is no object such as 'round the corner') and not a conjunction. ✓"
         },
         {
           "id": 363,
           "difficulty": 3,
-          "question": "How many clauses are in: 'When the sun set, the birds stopped singing and the sky turned orange'?",
-          "options": ["Three", "Four", "One", "Two", "Five"],
-          "correct": 0,
-          "explanation": "Three clauses: 'When the sun set' (subordinate), 'the birds stopped singing' (main clause 1), and 'the sky turned orange' (main clause 2). The two main clauses are joined by 'and'. ✓"
+          "question": "The mountain path was so narrow that we walked in single file. What type of word is *so*?",
+          "options": [
+            "Conjunction",
+            "Preposition",
+            "Determiner",
+            "Verb",
+            "Adverb"
+          ],
+          "correct": 4,
+          "explanation": "Here *so* comes before the adjective 'narrow' and intensifies it, meaning 'to such a degree', so it is an adverb. It is not the linking conjunction 'so' (which would mean 'therefore' and join two clauses) and not a preposition. ✓"
         },
         {
           "id": 364,
           "difficulty": 1,
           "question": "Which word starts a subordinate clause in: 'We went to the park after school finished'?",
-          "options": ["We", "went", "park", "after", "school"],
+          "options": [
+            "We",
+            "went",
+            "park",
+            "after",
+            "school"
+          ],
           "correct": 3,
           "explanation": "'After' starts the subordinate clause 'after school finished'. Words like after, because, when, if, although, unless, until, before, and while are subordinating conjunctions — they introduce subordinate clauses. ✓"
         },
         {
           "id": 365,
           "difficulty": 3,
-          "question": "Which sentence uses a subordinate clause at the START?",
-          "options": ["The cat slept on the sofa.", "She smiled because she was happy.", "Before the match started, the team warmed up.", "I like apples and oranges.", "He ran quickly to school."],
-          "correct": 2,
-          "explanation": "'Before the match started' is a subordinate clause placed at the start of the sentence, followed by a comma. When the subordinate clause comes first, you must use a comma before the main clause. ✓"
+          "question": "The referee waved the substitutes over. What type of word is *over*?",
+          "options": [
+            "Adverb",
+            "Preposition",
+            "Conjunction",
+            "Noun",
+            "Adjective"
+          ],
+          "correct": 0,
+          "explanation": "Here *over* stands alone after 'waved the substitutes', telling us the direction of the movement, with no noun following it, so it is an adverb. It is not a preposition (there is no object such as 'over the line') and not a conjunction. ✓"
         },
         {
           "id": 366,
           "difficulty": 2,
-          "question": "What type of clause is 'which was very exciting' in: 'The trip, which was very exciting, lasted all day'?",
-          "options": ["Main clause", "Subordinate clause", "Conditional clause", "Adverbial clause", "Relative clause"],
-          "correct": 4,
-          "explanation": "'Which was very exciting' is a relative clause — it starts with the relative pronoun 'which' and gives extra information about 'the trip'. It's surrounded by commas because it could be removed without changing the core meaning. ✓"
+          "question": "*Her* umbrella blew inside out in the wind. What type of word is *her*?",
+          "options": [
+            "Pronoun",
+            "Adjective",
+            "Determiner",
+            "Noun",
+            "Verb"
+          ],
+          "correct": 2,
+          "explanation": "*Her* comes directly before the noun \"umbrella\" and shows whose it is, so it is a possessive determiner. Children may say pronoun, but here it introduces a noun. ✓"
         },
         {
           "id": 367,
           "difficulty": 2,
-          "question": "In 'The cat sat on the mat', what type of word is 'the'?",
-          "options": ["Preposition", "Pronoun", "Adjective", "Determiner", "Noun"],
+          "question": "*Our* teacher read us a poem after lunch. What type of word is *our*?",
+          "options": [
+            "Pronoun",
+            "Noun",
+            "Adjective",
+            "Determiner",
+            "Verb"
+          ],
           "correct": 3,
-          "explanation": "'The' is a determiner — it comes before a noun to tell us which one we mean. 'The cat' = a specific cat. Determiners include: the, a, an, this, that, these, those, my, your, his, her, some, any, every. ✓"
+          "explanation": "*Our* comes directly before the noun \"teacher\" and shows whose it is, so it is a possessive determiner. It is not a pronoun here, because a noun follows it. ✓"
         },
         {
           "id": 368,
           "difficulty": 1,
           "question": "Which word is a determiner in: 'My brother has a new bike'?",
-          "options": ["brother", "new", "has", "bike", "My"],
+          "options": [
+            "brother",
+            "new",
+            "has",
+            "bike",
+            "My"
+          ],
           "correct": 4,
           "explanation": "'My' is a determiner — it comes before the noun 'brother' to show possession. Possessive determiners include: my, your, his, her, its, our, their. They're different from possessive pronouns (mine, yours, his, hers). ✓"
         },
@@ -33473,290 +33701,505 @@ The phrase 'Blitz spirit' came to describe this attitude of carrying on bravely 
           "id": 369,
           "difficulty": 1,
           "question": "What is the job of a determiner?",
-          "options": ["To describe an action", "To join two sentences", "To introduce or identify a noun", "To replace a noun", "To describe how something is done"],
+          "options": [
+            "To describe an action",
+            "To join two sentences",
+            "To introduce or identify a noun",
+            "To replace a noun",
+            "To describe how something is done"
+          ],
           "correct": 2,
           "explanation": "A determiner introduces or identifies a noun — it tells us which one, how many, or whose. 'A dog' (any dog), 'the dog' (a specific dog), 'my dog' (belonging to me), 'three dogs' (how many). ✓"
         },
         {
           "id": 370,
           "difficulty": 2,
-          "question": "In 'Those children are playing outside', what type of word is 'those'?",
-          "options": ["Pronoun", "Adjective", "Adverb", "Determiner", "Conjunction"],
-          "correct": 3,
-          "explanation": "'Those' is a determiner here because it comes before the noun 'children'. It tells us WHICH children. But be careful — in 'Those are mine', 'those' would be a pronoun (standing alone, replacing a noun). Context matters! ✓"
+          "question": "*Your* answer to the puzzle was correct. What type of word is *your*?",
+          "options": [
+            "Pronoun",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Determiner"
+          ],
+          "correct": 4,
+          "explanation": "*Your* comes directly before the noun \"answer\" and shows whose it is, so it is a possessive determiner. It is not a pronoun here, because a noun follows it. ✓"
         },
         {
           "id": 371,
           "difficulty": 2,
-          "question": "How many determiners are in: 'Some children ate their lunch before the bell rang'?",
-          "options": ["One", "Two", "None", "Four", "Three"],
-          "correct": 4,
-          "explanation": "Three determiners: 'some' (before 'children'), 'their' (before 'lunch'), and 'the' (before 'bell'). Determiners sit before a noun to introduce it. Words like adjectives (e.g. 'big') describe nouns but don't introduce them. ✓"
+          "question": "*My* trainers are covered in thick mud. What type of word is *my*?",
+          "options": [
+            "Determiner",
+            "Pronoun",
+            "Adjective",
+            "Verb",
+            "Noun"
+          ],
+          "correct": 0,
+          "explanation": "*My* comes directly before the noun \"trainers\" and shows whose they are, so it is a possessive determiner. A noun follows it, so it is not a pronoun. ✓"
         },
         {
           "id": 372,
           "difficulty": 2,
-          "question": "Which of these is NOT a determiner?",
-          "options": ["some", "a", "quickly", "the", "every"],
-          "correct": 2,
-          "explanation": "'Quickly' is an adverb, not a determiner. All the others (the, a, some, every) come before nouns to introduce them. Determiners always sit before a noun; adverbs modify verbs, adjectives, or other adverbs. ✓"
+          "question": "*Both* teams played well in the final. What type of word is *both*?",
+          "options": [
+            "Pronoun",
+            "Determiner",
+            "Conjunction",
+            "Adjective",
+            "Noun"
+          ],
+          "correct": 1,
+          "explanation": "*Both* comes directly before the noun \"teams\" and tells us about them, so it is a determiner. It can be a pronoun alone (\"both agreed\"), but here it introduces a noun. ✓"
         },
         {
           "id": 373,
           "difficulty": 2,
-          "question": "What type of determiner is 'some' in 'Would you like some cake?'?",
-          "options": ["Article", "Demonstrative determiner", "Possessive determiner", "Quantifier", "Interrogative determiner"],
-          "correct": 3,
-          "explanation": "'Some' is a quantifier — it tells us about quantity (an unspecified amount of cake). Other quantifiers: any, many, few, several, all, both, each, every, no, enough. ✓"
+          "question": "In this sentence — 'They watched those dolphins leap.' — which word is a determiner?",
+          "options": [
+            "They",
+            "watched",
+            "those",
+            "dolphins",
+            "leap"
+          ],
+          "correct": 2,
+          "explanation": "*Those* comes directly before the noun \"dolphins\" and tells us which ones, so it is the determiner. \"They\" stands in place of a noun, so it is a pronoun, not the answer. ✓"
         },
         {
           "id": 374,
           "difficulty": 2,
-          "question": "What are 'a', 'an', and 'the' called?",
-          "options": ["Pronouns", "Articles", "Conjunctions", "Prepositions", "Adverbs"],
-          "correct": 1,
-          "explanation": "'A', 'an', and 'the' are articles — a special type of determiner. 'A' and 'an' are indefinite articles (any one of something). 'The' is the definite article (a specific one). ✓"
+          "question": "In this sentence — 'She gave me some sweets.' — which word is a determiner?",
+          "options": [
+            "She",
+            "gave",
+            "me",
+            "some",
+            "sweets"
+          ],
+          "correct": 3,
+          "explanation": "*Some* comes directly before the noun \"sweets\" and tells us how many, so it is the determiner. \"She\" and \"me\" replace nouns, so they are pronouns, not the answer. ✓"
         },
         {
           "id": 375,
           "difficulty": 3,
-          "question": "In 'His performance was incredible', what word class is 'his'?",
-          "options": ["Pronoun — it replaces a name", "Determiner — it comes before a noun", "Adjective — it describes the performance", "Adverb — it describes how he performed", "Conjunction — it joins two ideas"],
+          "question": "She finished the crossword surprisingly fast. What type of word is *fast*?",
+          "options": [
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
+          ],
           "correct": 1,
-          "explanation": "'His' is a DETERMINER here because it sits before the noun 'performance' and tells us whose performance. The quick test: is there a noun straight after it? If yes, it's a determiner. When 'his' stands alone — 'The book is his' — there's no noun after it, so it becomes a pronoun instead. Same word, different job depending on what follows. ✓"
+          "explanation": "Here *fast* tells us how she 'finished' the crossword, so it modifies the verb and is an adverb. It only looks like an adjective because 'fast' usually describes nouns (a fast car), but here it is not describing a noun. ✓"
         },
         {
           "id": 376,
           "difficulty": 3,
-          "question": "In 'Which flavour would you like?', what type of determiner is 'which'?",
-          "options": ["Article", "Possessive determiner", "Quantifier", "Interrogative determiner", "Demonstrative determiner"],
-          "correct": 3,
-          "explanation": "'Which' is an interrogative determiner — it asks a question about which specific noun. Other interrogative determiners: what, whose. Compare: 'Which cake?' (determiner before noun) vs 'Which do you want?' (pronoun standing alone). ✓"
+          "question": "The frustrated striker kicked the ball hard. What type of word is *hard*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Preposition",
+            "Verb"
+          ],
+          "correct": 2,
+          "explanation": "Here *hard* describes how the striker 'kicked' the ball, so it modifies the verb and is an adverb. It looks like an adjective because 'hard' often describes nouns (a hard surface), but it is not describing a noun here. ✓"
         },
         {
           "id": 377,
           "difficulty": 3,
-          "question": "Why is 'the' classified as a determiner rather than an adjective?",
-          "options": ["Because it describes what the noun is actually like, like an adjective.", "Because it replaces a noun completely, working just like a pronoun does.", "Because it identifies which noun, not what it's like", "Because it comes after the noun", "Because it shows an action"],
-          "correct": 2,
-          "explanation": "'The' identifies WHICH noun you mean (the specific one), but it doesn't describe what the noun is LIKE. Adjectives describe qualities (big, red, happy). Determiners specify identity (the, a, this, my, every). Different jobs! ✓"
+          "question": "Because of the traffic, the coach arrived late. What type of word is *late*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Conjunction"
+          ],
+          "correct": 3,
+          "explanation": "Here *late* tells us when the coach 'arrived', so it modifies the verb and is an adverb. It resembles an adjective (a late train), but here it is not describing a noun. ✓"
         },
         {
           "id": 378,
           "difficulty": 1,
           "question": "In 'An elephant walked through the jungle', which words are determiners?",
-          "options": ["An, the", "through, the", "elephant, jungle", "walked, through", "An, walked"],
+          "options": [
+            "An, the",
+            "through, the",
+            "elephant, jungle",
+            "walked, through",
+            "An, walked"
+          ],
           "correct": 0,
           "explanation": "'An' and 'the' are both determiners (articles). 'An' introduces 'elephant' and 'the' introduces 'jungle'. They tell us we mean any elephant but a specific jungle. ✓"
         },
         {
           "id": 379,
           "difficulty": 3,
-          "question": "In 'No child was left behind', what type of word is 'no'?",
-          "options": ["Adverb", "Adjective", "Conjunction", "Determiner", "Pronoun"],
-          "correct": 3,
-          "explanation": "'No' is a determiner here — it comes before the noun 'child' and tells us about quantity (zero children). Other negative determiners: no, neither. Compare with 'no' as an interjection: 'No! Don't do that!' ✓"
+          "question": "The experienced pilot flew straight through the storm. What type of word is *straight*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Preposition",
+            "Verb",
+            "Adverb"
+          ],
+          "correct": 4,
+          "explanation": "Here *straight* describes how the pilot 'flew', so it modifies the verb and is an adverb. It looks like an adjective because 'straight' often describes nouns (a straight line), but it is not describing a noun here. ✓"
         },
         {
           "id": 380,
           "difficulty": 2,
-          "question": "Which sentence contains a demonstrative determiner?",
-          "options": ["The dog barked.", "My coat is blue.", "This cake is delicious.", "A bird sang.", "Some people arrived."],
-          "correct": 2,
-          "explanation": "'This' in 'This cake is delicious' is a demonstrative determiner — it points out a specific cake. Demonstrative determiners: this, that, these, those. They come before a noun and demonstrate which one you mean. ✓"
+          "question": "In this sentence — 'We planted several young trees.' — which word is a determiner?",
+          "options": [
+            "We",
+            "planted",
+            "young",
+            "trees",
+            "several"
+          ],
+          "correct": 4,
+          "explanation": "*Several* comes directly before the noun \"trees\" and tells us roughly how many, so it is the determiner. \"We\" is a pronoun and \"young\" is an adjective, so neither is the answer. ✓"
         },
         {
           "id": 381,
           "difficulty": 1,
           "question": "When do you use 'an' instead of 'a'?",
-          "options": ["Before long words", "Before words starting with a vowel sound", "Before verbs", "Before proper nouns", "Before plural nouns"],
+          "options": [
+            "Before long words",
+            "Before words starting with a vowel sound",
+            "Before verbs",
+            "Before proper nouns",
+            "Before plural nouns"
+          ],
           "correct": 1,
           "explanation": "Use 'an' before words that START WITH A VOWEL SOUND: an apple, an elephant, an hour (silent h). Use 'a' before consonant sounds: a dog, a university (starts with 'yoo' sound). It's about the sound, not the letter! ✓"
         },
         {
           "id": 382,
           "difficulty": 3,
-          "question": "In 'The meeting was held before lunch', what word class is 'before'?",
-          "options": ["Preposition", "Conjunction", "Adverb", "Adjective", "Noun"],
+          "question": "We set off early to avoid the crowds. What type of word is *early*?",
+          "options": [
+            "Adverb",
+            "Adjective",
+            "Preposition",
+            "Noun",
+            "Verb"
+          ],
           "correct": 0,
-          "explanation": "'Before' is a PREPOSITION here — it shows the relationship between 'held' and 'lunch'. Before a noun = preposition. Before a clause = conjunction ('before she left'). Standing alone = adverb ('I've heard it before'). Three classes for one word! ✓"
+          "explanation": "Here *early* tells us when we 'set off', so it modifies the verb and is an adverb. It looks like an adjective (an early start), but here it is not describing a noun. ✓"
         },
         {
           "id": 383,
           "difficulty": 3,
-          "question": "In 'She left before I arrived', what word class is 'before'?",
-          "options": ["Preposition", "Conjunction", "Adverb", "Adjective", "Pronoun"],
+          "question": "The golden eagle soared high above the valley. What type of word is *high*?",
+          "options": [
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Preposition"
+          ],
           "correct": 1,
-          "explanation": "'Before' is a CONJUNCTION here — it joins two clauses ('she left' and 'I arrived'). Compare: 'before lunch' (preposition — before a noun) vs 'before I arrived' (conjunction — before a clause). ✓"
+          "explanation": "Here *high* describes how the eagle 'soared', so it modifies the verb and is an adverb. It resembles an adjective (a high fence), but it is not describing a noun here. ✓"
         },
         {
           "id": 384,
           "difficulty": 3,
-          "question": "Which word is an adverb in: 'The boy worked hard on his very difficult homework'?",
-          "options": ["boy", "worked", "hard", "difficult", "homework"],
+          "question": "The fighter jet flew low over the rooftops. What type of word is *low*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Preposition",
+            "Determiner"
+          ],
           "correct": 2,
-          "explanation": "'Hard' is an adverb here — it describes HOW the boy worked. It's a flat adverb (same form as the adjective). 'Very' is also an adverb (modifying 'difficult'), but the question asks which of the listed words is an adverb. ✓"
+          "explanation": "Here *low* describes how the jet 'flew', so it modifies the verb and is an adverb. It looks like an adjective (a low wall), but here it is not describing a noun. ✓"
         },
         {
           "id": 385,
           "difficulty": 3,
-          "question": "In 'The early bird catches the worm', what word class is 'early'?",
-          "options": ["Adverb", "Noun", "Verb", "Adjective", "Preposition"],
+          "question": "The tunnellers dug deep into the earth. What type of word is *deep*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Conjunction"
+          ],
           "correct": 3,
-          "explanation": "'Early' is an ADJECTIVE here — it describes the noun 'bird' (which bird? the early one). In 'She arrived early', it would be an adverb (when did she arrive? early). Like 'fast' and 'hard', 'early' can be both adjective and adverb with no change in form. ✓"
-        }
-      ,
+          "explanation": "Here *deep* describes how the tunnellers 'dug', so it modifies the verb and is an adverb. It looks like an adjective (a deep lake), but it is not describing a noun here. ✓"
+        },
         {
           "id": 386,
           "difficulty": 3,
-          "question": "In 'The sleeping baby smiled', what word class is 'sleeping'?",
-          "options": ["Verb", "Pronoun", "Adjective", "Adverb", "Noun"],
-          "correct": 2,
-          "explanation": "'Sleeping' is an ADJECTIVE here — it describes the baby (which baby? the sleeping one). Even though 'sleeping' comes from the verb 'to sleep', it's functioning as an adjective because it modifies a noun. ✓"
+          "question": "You have spelt my surname wrong again. What type of word is *wrong*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition",
+            "Adverb"
+          ],
+          "correct": 4,
+          "explanation": "Here *wrong* tells us how you 'spelt' the surname, meaning 'wrongly', so it modifies the verb and is an adverb. It looks like an adjective (a wrong answer), but here it is not describing a noun. ✓"
         },
         {
           "id": 387,
           "difficulty": 3,
-          "question": "In 'She felt well after her rest', what word class is 'well'?",
-          "options": ["Noun", "Adjective", "Adverb", "Verb", "Conjunction"],
-          "correct": 1,
-          "explanation": "'Well' is an ADJECTIVE here — it describes how she felt (her state of health). In 'She played well', it would be an adverb. After 'feel/seem/look', 'well' is usually an adjective. ✓"
+          "question": "As the carnival procession drew near, the children cheered. What type of word is *near*?",
+          "options": [
+            "Adverb",
+            "Preposition",
+            "Adjective",
+            "Noun",
+            "Conjunction"
+          ],
+          "correct": 0,
+          "explanation": "Here *near* describes how the procession 'drew', meaning it came closer, so it modifies the verb and is an adverb. It can be a preposition ('near the school') or an adjective ('the near side'), but here no noun follows and it is modifying a verb. ✓"
         },
         {
           "id": 388,
           "difficulty": 3,
-          "question": "In 'He arrived late', what word class is 'late'?",
-          "options": ["Adjective", "Adverb", "Noun", "Preposition", "Conjunction"],
+          "question": "At the end of the lane, turn right by the postbox. What type of word is *right*?",
+          "options": [
+            "Adjective",
+            "Adverb",
+            "Noun",
+            "Verb",
+            "Determiner"
+          ],
           "correct": 1,
-          "explanation": "'Late' is an ADVERB here — it describes WHEN he arrived. In 'the late train', it would be an adjective. 'Late' is a flat adverb — same form as the adjective. Don't add '-ly'! ✓"
+          "explanation": "Here *right* tells us which way to 'turn', so it modifies the verb and is an adverb. It can be a noun ('know right from wrong') or an adjective ('the right answer'), but here it is describing a verb. ✓"
         },
         {
           "id": 389,
           "difficulty": 3,
-          "question": "In 'Since Monday, it has rained every day', what word class is 'since'?",
-          "options": ["Conjunction", "Adverb", "Adjective", "Preposition", "Pronoun"],
-          "correct": 3,
-          "explanation": "'Since' is a PREPOSITION here — it's followed by a noun ('Monday'). In 'Since she left, I've been lonely', it would be a conjunction (followed by a clause). In 'I haven't seen him since', it's an adverb (standing alone). Three classes! ✓"
+          "question": "The nervous puppy pressed close against its owner. What type of word is *close*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Adverb",
+            "Verb",
+            "Preposition"
+          ],
+          "correct": 2,
+          "explanation": "Here *close* describes how the puppy 'pressed', so it modifies the verb and is an adverb. It looks like an adjective ('a close friend'), but here it is not describing a noun. ✓"
         },
         {
           "id": 390,
           "difficulty": 3,
-          "question": "In 'The daily paper arrived', what word class is 'daily'?",
-          "options": ["Adverb", "Noun", "Verb", "Adjective", "Preposition"],
+          "question": "If you want to be respected, you must play fair. What type of word is *fair*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Conjunction"
+          ],
           "correct": 3,
-          "explanation": "'Daily' is an ADJECTIVE here — it describes the noun 'paper'. In 'It happens daily', it would be an adverb. Words ending in '-ly' aren't always adverbs — 'daily', 'early', 'friendly', 'lonely' can all be adjectives. ✓"
+          "explanation": "Here *fair* tells us how you must 'play', meaning 'fairly', so it modifies the verb and is an adverb. It looks like an adjective ('a fair decision') or a noun ('the summer fair'), but here it is describing a verb. ✓"
         },
         {
           "id": 391,
           "difficulty": 3,
-          "question": "In 'She set a fast pace', what word class is 'fast'?",
-          "options": ["Adverb", "Verb", "Noun", "Pronoun", "Adjective"],
+          "question": "Thankfully, we did not have to wait long for help. What type of word is *long*?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition",
+            "Adverb"
+          ],
           "correct": 4,
-          "explanation": "'Fast' is an ADJECTIVE — it describes the noun 'pace'. In 'She ran fast', it would be an adverb. 'Fast' never changes form between adjective and adverb — no 'fastly'! ✓"
+          "explanation": "Here *long* tells us for how much time we 'wait', so it modifies the verb and is an adverb. It looks like an adjective ('a long road'), but here it is not describing a noun. ✓"
         },
         {
           "id": 392,
           "difficulty": 3,
-          "question": "Which word is a preposition in: 'The cat jumped over the wall and through the hedge'?",
-          "options": ["over", "wall", "and", "jumped", "cat"],
+          "question": "Under pressure, the striker shot wide of the goal. What type of word is *wide*?",
+          "options": [
+            "Adverb",
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Preposition"
+          ],
           "correct": 0,
-          "explanation": "'Over' is a preposition — it shows the position of the cat in relation to the wall (the cat moved from one side to the other). Prepositions show position, direction, or time. Of the options here, 'cat' and 'wall' are nouns, 'jumped' is a verb, and 'and' is a conjunction — only 'over' is a preposition. ✓"
+          "explanation": "Here *wide* describes how the striker 'shot', so it modifies the verb and is an adverb. It looks like an adjective ('a wide river'), but here it is not describing a noun. ✓"
         },
         {
           "id": 393,
           "difficulty": 3,
-          "question": "In 'I need to iron my shirt before school', what word class is 'iron'?",
-          "options": ["Noun", "Adverb", "Adjective", "Verb", "Preposition"],
-          "correct": 3,
-          "explanation": "'Iron' is a VERB here — the action of pressing clothes. In 'the iron gate', it's an adjective. In 'I bought an iron', it's a noun. Same word, three different classes depending on the sentence! ✓"
+          "question": "Of all his feeble excuses, that was the worst. What type of word is *that*?",
+          "options": [
+            "Determiner",
+            "Pronoun",
+            "Conjunction",
+            "Adjective",
+            "Adverb"
+          ],
+          "correct": 1,
+          "explanation": "Here *that* stands alone as the subject of 'was', standing in for the idea of the excuse, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'that excuse'), but none does. ✓"
         },
         {
           "id": 394,
           "difficulty": 3,
-          "question": "In 'That sounds right to me', what word class is 'right'?",
-          "options": ["Noun", "Verb", "Adverb", "Adjective", "Conjunction"],
-          "correct": 3,
-          "explanation": "'Right' is an ADJECTIVE here — it describes what it sounds like (correct). After verbs like 'sounds', 'feels', 'looks', 'seems', we use adjectives not adverbs. ✓"
+          "question": "This is exactly what I had been dreading. What type of word is *this*?",
+          "options": [
+            "Determiner",
+            "Conjunction",
+            "Pronoun",
+            "Adverb",
+            "Verb"
+          ],
+          "correct": 2,
+          "explanation": "Here *this* stands alone as the subject of 'is', with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'this problem'), but here it is doing the naming job itself. ✓"
         },
         {
           "id": 395,
           "difficulty": 3,
-          "question": "In 'They left after the show', what word class is 'after'?",
-          "options": ["Adverb", "Conjunction", "Preposition", "Adjective", "Pronoun"],
-          "correct": 2,
-          "explanation": "'After' is a PREPOSITION here — followed by the noun 'the show'. In 'They left after she sang', it would be a conjunction (followed by a clause). Same test as 'before' and 'since' — what follows determines the class. ✓"
+          "question": "The plums in the bowl looked ripe, but these were sour. What type of word is *these*?",
+          "options": [
+            "Determiner",
+            "Adjective",
+            "Conjunction",
+            "Pronoun",
+            "Adverb"
+          ],
+          "correct": 3,
+          "explanation": "Here *these* stands alone as the subject of 'were', standing in for the plums, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'these plums'), but none does. ✓"
         },
         {
           "id": 396,
           "difficulty": 3,
-          "question": "In 'The outside wall needs painting', what word class is 'outside'?",
-          "options": ["Preposition", "Noun", "Adjective", "Adverb", "Verb"],
-          "correct": 2,
-          "explanation": "'Outside' is an ADJECTIVE here — it describes which wall. In 'go outside', it's an adverb. In 'the outside of the box', it's a noun. In 'outside the door', it's a preposition. Four possible classes! ✓"
+          "question": "She had baked trays of scones, and those were the finest. What type of word is *those*?",
+          "options": [
+            "Determiner",
+            "Verb",
+            "Adjective",
+            "Adverb",
+            "Pronoun"
+          ],
+          "correct": 4,
+          "explanation": "Here *those* stands alone as the subject of 'were', standing in for the scones, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'those scones'), but none does. ✓"
         },
         {
           "id": 397,
           "difficulty": 3,
-          "question": "In 'She can still come if she wants', what word class is 'still'?",
-          "options": ["Conjunction", "Noun", "Verb", "Adjective", "Adverb"],
-          "correct": 4,
-          "explanation": "'Still' is an ADVERB here — it modifies the verb 'come' (meaning even now, despite something). In 'still water', it's an adjective (not moving). In 'the still of the night', it's a noun. ✓"
+          "question": "I honestly did not expect that. What type of word is *that*?",
+          "options": [
+            "Pronoun",
+            "Determiner",
+            "Conjunction",
+            "Adverb",
+            "Adjective"
+          ],
+          "correct": 0,
+          "explanation": "Here *that* stands alone as the object of 'expect', with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'that result'), and it is not the conjunction 'that' joining clauses. ✓"
         },
         {
           "id": 398,
           "difficulty": 3,
-          "question": "What word class is 'like' in: 'She swims like a fish'?",
-          "options": ["Verb", "Adjective", "Conjunction", "Preposition", "Adverb"],
-          "correct": 3,
-          "explanation": "'Like' is a PREPOSITION here — it introduces a comparison with the noun 'a fish'. In 'I like cake', it's a verb. In 'like-minded' it's an adjective. In informal speech, 'like' is also used as a conjunction ('do it like I showed you'). ✓"
+          "question": "Nobody could explain how this had happened. What type of word is *this*?",
+          "options": [
+            "Determiner",
+            "Pronoun",
+            "Adverb",
+            "Conjunction",
+            "Verb"
+          ],
+          "correct": 1,
+          "explanation": "Here *this* stands alone as the subject of 'had happened', with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'this mistake'), but none does. ✓"
         },
         {
           "id": 399,
           "difficulty": 3,
-          "question": "In 'The very idea is absurd', what word class is 'very'?",
-          "options": ["Adverb", "Adjective", "Noun", "Determiner", "Pronoun"],
-          "correct": 1,
-          "explanation": "'Very' is an ADJECTIVE here — this is a rare and tricky use that catches lots of people out! Normally 'very' is an adverb ('very tall', 'very quickly'). But in 'the very idea', it means 'the exact idea' or 'that idea itself' — and any word that describes a noun like that is an adjective. Try swapping it for another adjective: 'the exact idea is absurd' works perfectly. ✓"
+          "question": "Among all the paintings in the gallery, those caught her eye. What type of word is *those*?",
+          "options": [
+            "Determiner",
+            "Adjective",
+            "Pronoun",
+            "Preposition",
+            "Adverb"
+          ],
+          "correct": 2,
+          "explanation": "Here *those* stands alone as the subject of 'caught', standing in for particular paintings, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'those paintings'), but none does. ✓"
         },
         {
           "id": 400,
           "difficulty": 3,
-          "question": "In 'Please sit down', what word class is 'down'?",
-          "options": ["Adverb", "Noun", "Adjective", "Preposition", "Verb"],
-          "correct": 0,
-          "explanation": "'Down' is an ADVERB here — it modifies the verb 'sit' (telling us where/how to sit). In 'down the road', it's a preposition. In 'he has downs', it's a noun. In 'down feathers', it's an adjective. ✓"
+          "question": "Borrow whichever pens you need; these are only spares. What type of word is *these*?",
+          "options": [
+            "Determiner",
+            "Verb",
+            "Conjunction",
+            "Pronoun",
+            "Adverb"
+          ],
+          "correct": 3,
+          "explanation": "Here *these* stands alone as the subject of 'are', standing in for the pens, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'these pens'), but none does. ✓"
         },
         {
           "id": 401,
           "difficulty": 3,
-          "question": "In 'The record was broken yesterday', is 'broken' a verb or adjective?",
-          "options": ["Verb — it's the past participle of 'break'", "Adjective — it simply describes what the record is like, nothing more.", "Both interpretations are valid depending on reading", "Noun — it names the thing that got damaged here.", "Adverb — it tells you how the verb 'was' happened here."],
-          "correct": 0,
-          "explanation": "'Broken' is a VERB here — part of the passive voice ('was broken' = someone broke it). In 'a broken window', it would be an adjective (describing the window's state). The passive voice uses 'was/were + past participle'. ✓"
+          "question": "'Who on earth told you that?' asked the headteacher. What type of word is *that*?",
+          "options": [
+            "Conjunction",
+            "Determiner",
+            "Adverb",
+            "Adjective",
+            "Pronoun"
+          ],
+          "correct": 4,
+          "explanation": "Here *that* stands alone as the object of 'told', standing in for the information, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'that rumour'), and it is not the conjunction 'that'. ✓"
         },
         {
           "id": 402,
           "difficulty": 3,
-          "question": "In 'The more the merrier', what word class is 'more'?",
-          "options": ["Determiner", "Adverb", "Adjective", "Pronoun", "Noun"],
-          "correct": 4,
-          "explanation": "'More' is a NOUN here — 'the more' means 'the greater number of people'. It's acting as a thing. In 'more cake', it's a determiner. In 'more beautiful', it's an adverb. In 'I want more', it's a pronoun. ✓"
+          "question": "The front seats were already taken, so we sat behind those. What type of word is *those*?",
+          "options": [
+            "Pronoun",
+            "Determiner",
+            "Adjective",
+            "Conjunction",
+            "Adverb"
+          ],
+          "correct": 0,
+          "explanation": "Here *those* stands alone after the preposition 'behind', standing in for the seats, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'those seats'), but none does. ✓"
         },
         {
           "id": 403,
           "difficulty": 3,
-          "question": "In 'That is a pretty difficult question', what word class is 'pretty'?",
-          "options": ["Adjective", "Verb", "Adverb", "Noun", "Conjunction"],
-          "correct": 2,
-          "explanation": "'Pretty' is an ADVERB here — it modifies the adjective 'difficult' (meaning fairly or quite). In 'a pretty girl', it's an adjective. This catches many people — 'pretty' as an adverb is informal but correct! ✓"
+          "question": "That was the most frightening moment of the whole trip. What type of word is *that*?",
+          "options": [
+            "Determiner",
+            "Pronoun",
+            "Adverb",
+            "Conjunction",
+            "Verb"
+          ],
+          "correct": 1,
+          "explanation": "Here *that* stands alone as the subject of 'was', with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed directly (as in 'that moment'), but here the verb follows instead. ✓"
         },
         {
           "id": 404,
           "difficulty": 3,
-          "question": "In 'They worked hard all day', what word class is 'hard'?",
-          "options": ["Adjective", "Adverb", "Determiner", "Pronoun", "Noun"],
-          "correct": 1,
-          "explanation": "'Hard' is an ADVERB here — it tells you HOW they worked, so it modifies the verb 'worked'. The trap is that 'hard' is usually an adjective ('a hard rock', describing a noun). The test: does the word describe a noun (adjective) or the action/verb (adverb)? Here it describes the verb, so it's an adverb. 'Hard' is a flat adverb — an adverb with no -ly ending. ✓"
+          "question": "The strawberries look delicious; I'll take two of these, please. What type of word is *these*?",
+          "options": [
+            "Determiner",
+            "Adjective",
+            "Pronoun",
+            "Verb",
+            "Adverb"
+          ],
+          "correct": 2,
+          "explanation": "Here *these* stands alone after 'two of', standing in for the strawberries, with no noun following it, so it is a pronoun. It would be a determiner only if a noun followed (as in 'these strawberries'), but none does. ✓"
         }
       ]
     },}

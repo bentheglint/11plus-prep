@@ -32,6 +32,18 @@ describe('English length-tell gate (Fix #3)', () => {
     expect(GATE.singleLongestMinPct).toBe(10);
     expect(GATE.singleLongestMaxPct).toBe(30);
     expect(GATE.rankMaxPct).toBe(35);
+    // minimum phrase-option sample to grade distribution shape (added with Fix #4:
+    // wordClassGrammar's rebuild left too few phrase-items to grade meaningfully).
+    expect(GATE.minGradeN).toBe(20);
+  });
+
+  test('wordClassGrammar is skipped by the length gate (too few phrase-options post Fix #4)', () => {
+    // After Fix #4 the topic answers are class labels, not phrases; its real tell
+    // vectors are covered by the wordClassGrammarInContext (Fix #4) gate instead.
+    const m = report['MAIN-wordClassGrammar'];
+    const g = gradeBucket('MAIN-wordClassGrammar', m);
+    expect(g.pass).toBe(true);
+    expect(m.n).toBeLessThan(GATE.minGradeN);
   });
 
   test('out-of-scope buckets remain measured (proves we did not touch them)', () => {
