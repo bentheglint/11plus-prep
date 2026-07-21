@@ -178,6 +178,13 @@ context ("cheeky MON swung through the trees" → MONKEY).
 
 ---
 
+## ⚠️ Hard rule for all content work (see `_USAGE-GUARDRAIL.md`)
+Real papers are a reference for **style, format, difficulty and distractor
+design ONLY**. Never copy a real-paper question verbatim or as a light reword;
+never reproduce their passages, word lists, codes or options. Every authored
+question must be entirely original and checked for verbatim/near-verbatim
+overlap before entering the bank.
+
 ## Notes for whoever implements
 - Fixes #1 (ramp) and #2/#3 (tells) are the highest realism-per-effort.
 - #1 is a small code change; #2/#3/#8 are distractor-regeneration passes that
