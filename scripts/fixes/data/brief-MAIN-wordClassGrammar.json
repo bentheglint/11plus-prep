@@ -1,0 +1,884 @@
+[
+  {
+    "ref": "MAIN-wordClassGrammar#1",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 242,
+      "correctIndex": 3,
+      "questionHead": "Which punctuation is placed around the"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "Which punctuation is placed around the exact words a character says aloud?",
+    "correctAnswer": "Inverted commas (speech marks)",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Brackets",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Apostrophes",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": true
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Hyphens"
+      },
+      {
+        "index": 4,
+        "text": "Semicolons"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#2",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 270,
+      "correctIndex": 2,
+      "questionHead": "Which of the following sentences contains"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which of the following sentences contains personification?",
+    "correctAnswer": "The alarm clock screamed at me to wake up.",
+    "correctWords": 9,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "She swam like a fish.",
+        "currentWords": 5,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "The garden was a paradise.",
+        "currentWords": 5,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "I nearly died of embarrassment.",
+        "currentWords": 5,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "He was as tall as a giraffe."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#3",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 278,
+      "correctIndex": 0,
+      "questionHead": "What is a clause?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What is a clause?",
+    "correctAnswer": "A group of words that contains a subject and a verb",
+    "correctWords": 11,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "A single word",
+        "currentWords": 3,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "A type of punctuation",
+        "currentWords": 4,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Another name for a sentence"
+      },
+      {
+        "index": 1,
+        "text": "A group of words without a verb"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#4",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 279,
+      "correctIndex": 1,
+      "questionHead": "What is a phrase?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What is a phrase?",
+    "correctAnswer": "A group of words without a subject-verb pair that forms part of a sentence",
+    "correctWords": 14,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A complete sentence",
+        "currentWords": 3,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "A type of literary device",
+        "currentWords": 5,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Another name for a clause",
+        "currentWords": 5,
+        "targetMinWords": 17,
+        "targetMaxWords": 19,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "A group of words with a subject and verb"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#5",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 300,
+      "correctIndex": 2,
+      "questionHead": "What is a contraction?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What is a contraction?",
+    "correctAnswer": "A shortened form of two words using an apostrophe",
+    "correctWords": 9,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A very long word",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "A word that describes a noun",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "A word that joins two sentences"
+      },
+      {
+        "index": 3,
+        "text": "A word at the end of a sentence"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#6",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 317,
+      "correctIndex": 2,
+      "questionHead": "What is an ellipsis (...) often"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What is an ellipsis (...) often used for in creative writing?",
+    "correctAnswer": "To create suspense or show a trailing thought",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "To show possession",
+        "currentWords": 3,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To introduce a list",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "To end a sentence normally",
+        "currentWords": 5,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "To show someone is shouting"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#7",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 324,
+      "correctIndex": 2,
+      "questionHead": "What is the purpose of speech"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What is the purpose of speech marks (inverted commas) in writing?",
+    "correctAnswer": "To show the exact words someone said",
+    "correctWords": 7,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "To show emphasis",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "To show a title",
+        "currentWords": 4,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "To introduce a list"
+      },
+      {
+        "index": 4,
+        "text": "To show a pause"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#8",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 325,
+      "correctIndex": 2,
+      "questionHead": "'She was exhausted; she had been"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "'She was exhausted; she had been running for hours.' Why is a semi-colon used here?",
+    "correctAnswer": "To join two closely related complete sentences",
+    "correctWords": 7,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "To show speech",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To show possession",
+        "currentWords": 3,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "To create suspense",
+        "currentWords": 3,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 0,
+        "text": "To introduce a list"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#9",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 328,
+      "correctIndex": 0,
+      "questionHead": "What is onomatopoeia?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What is onomatopoeia?",
+    "correctAnswer": "A word that sounds like the noise it describes",
+    "correctWords": 9,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Repeating words for effect",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "A very big exaggeration",
+        "currentWords": 4,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Giving human feelings to objects"
+      },
+      {
+        "index": 1,
+        "text": "A comparison using 'like' or 'as'"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#10",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 329,
+      "correctIndex": 1,
+      "questionHead": "What is personification?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What is personification?",
+    "correctAnswer": "Giving human qualities or actions to non-human things",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Comparing two things using 'like'",
+        "currentWords": 5,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Saying something IS something else",
+        "currentWords": 5,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "A deliberate exaggeration for effect",
+        "currentWords": 5,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Repeating sounds at the start of words"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#11",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 330,
+      "correctIndex": 2,
+      "questionHead": "What is hyperbole?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What is hyperbole?",
+    "correctAnswer": "A deliberate exaggeration not meant to be taken literally",
+    "correctWords": 9,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A comparison using 'as'",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Giving objects human feelings",
+        "currentWords": 4,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "A word that imitates a sound"
+      },
+      {
+        "index": 4,
+        "text": "Repeating the same word for emphasis"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#12",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 354,
+      "correctIndex": 1,
+      "questionHead": "In 'She works hard' and 'She"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In 'She works hard' and 'She hardly works', do 'hard' and 'hardly' mean the same thing?",
+    "correctAnswer": "No — 'hard' means with great effort; 'hardly' means almost not at all",
+    "correctWords": 13,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Yes, they mean exactly the same",
+        "currentWords": 6,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "'Hardly' is not a real word",
+        "currentWords": 6,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Yes, 'hardly' is just a more formal version",
+        "currentWords": 8,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "No — 'hard' is an adjective; 'hardly' is a noun"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#13",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 357,
+      "correctIndex": 2,
+      "questionHead": "In 'I stayed inside because it"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "In 'I stayed inside because it was raining', which part is the subordinate clause?",
+    "correctAnswer": "because it was raining",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "I stayed",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "inside because",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "I stayed inside"
+      },
+      {
+        "index": 3,
+        "text": "it was raining"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#14",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 359,
+      "correctIndex": 1,
+      "questionHead": "Which sentence has TWO clauses?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "Which sentence has TWO clauses?",
+    "correctAnswer": "I went home because I felt ill.",
+    "correctWords": 7,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Open the door.",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "She ate her lunch.",
+        "currentWords": 4,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "The beautiful garden bloomed.",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 0,
+        "text": "The tall boy ran quickly."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#15",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 360,
+      "correctIndex": 1,
+      "questionHead": "What is the difference between a"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What is the difference between a main clause and a subordinate clause?",
+    "correctAnswer": "Main clauses make sense alone; subordinate clauses don't",
+    "correctWords": 8,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Main clauses are longer",
+        "currentWords": 4,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "There is no difference",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Subordinate clauses always come first"
+      },
+      {
+        "index": 3,
+        "text": "Main clauses have adjectives; subordinate clauses don't"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#16",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 361,
+      "correctIndex": 3,
+      "questionHead": "In 'Although she practised daily, she"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In 'Although she practised daily, she still lost the match', which is the main clause?",
+    "correctAnswer": "she still lost the match",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Although she practised",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": true
+      },
+      {
+        "index": 1,
+        "currentText": "she practised daily",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": true
+      },
+      {
+        "index": 4,
+        "currentText": "lost the match",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": true
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Although she practised daily"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#17",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 377,
+      "correctIndex": 2,
+      "questionHead": "Why is 'the' classified as a"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Why is 'the' classified as a determiner rather than an adjective?",
+    "correctAnswer": "Because it identifies which noun, not what it's like",
+    "correctWords": 9,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Because it describes a noun",
+        "currentWords": 5,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Because it replaces a noun",
+        "currentWords": 5,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Because it shows an action"
+      },
+      {
+        "index": 3,
+        "text": "Because it comes after the noun"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-wordClassGrammar#18",
+    "key": {
+      "file": "englishData.js",
+      "container": "wordClassGrammar",
+      "arr": "topics.wordClassGrammar.questions",
+      "id": 401,
+      "correctIndex": 0,
+      "questionHead": "In 'The record was broken yesterday',"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In 'The record was broken yesterday', is 'broken' a verb or adjective?",
+    "correctAnswer": "Verb — it's the past participle of 'break'",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Noun — it names something",
+        "currentWords": 5,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Adverb — it modifies 'was'",
+        "currentWords": 5,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Adjective — it describes the record",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Both interpretations are valid depending on reading"
+      }
+    ]
+  }
+]

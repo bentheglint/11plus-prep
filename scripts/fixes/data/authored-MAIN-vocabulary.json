@@ -1,0 +1,199 @@
+[
+  { "ref": "MAIN-vocabulary#1", "rewrites": [
+    { "index": 0, "newText": "Decided by a single person", "newWords": 5, "targetsMisreading": "misreads the 'uni-' prefix as 'one person decided'", "wrongnessReason": "unanimous means everyone agrees, not that one person alone decided" },
+    { "index": 2, "newText": "Causing great surprise in the courtroom", "newWords": 6, "targetsMisreading": "reads it as the reaction to the verdict rather than the agreement", "wrongnessReason": "unanimous describes the jury all agreeing, not the courtroom's surprise" } ] },
+  { "ref": "MAIN-vocabulary#2", "rewrites": [
+    { "index": 0, "newText": "Warm and full of cheerful life", "newWords": 6, "targetsMisreading": "antonym, opposite emotional register", "wrongnessReason": "bleak means cold and unwelcoming, the exact opposite of warm and cheerful" },
+    { "index": 2, "newText": "Enormous, grand and richly decorated inside", "newWords": 6, "targetsMisreading": "surface assumption that a big house is grand", "wrongnessReason": "bleak means bare and plain, nothing to do with grandeur" } ] },
+  { "ref": "MAIN-vocabulary#3", "rewrites": [
+    { "index": 0, "newText": "Moving at great speed throughout", "newWords": 5, "targetsMisreading": "near-synonym wrong shade, reads persistent as fast", "wrongnessReason": "persistent means refusing to give up, not moving quickly" },
+    { "index": 3, "newText": "Paying very close attention to detail", "newWords": 6, "targetsMisreading": "confuses persistent with meticulous", "wrongnessReason": "persistent is about determination, not carefulness" } ] },
+  { "ref": "MAIN-vocabulary#4", "rewrites": [
+    { "index": 2, "newText": "Definitely false and containing an obvious mistake", "newWords": 7, "targetsMisreading": "confuses ambiguous with erroneous", "wrongnessReason": "ambiguous means unclear or open to interpretation, not simply wrong" },
+    { "index": 1, "newText": "Perfectly clear and simple for anyone to follow", "newWords": 8, "targetsMisreading": "antonym", "wrongnessReason": "ambiguous means unclear, the opposite of perfectly clear" } ] },
+  { "ref": "MAIN-vocabulary#5", "rewrites": [
+    { "index": 0, "newText": "Extremely fashionable and used by almost everyone right now", "newWords": 9, "targetsMisreading": "antonym, reads it as still in wide use", "wrongnessReason": "obsolete means no longer used, the opposite of currently popular" },
+    { "index": 2, "newText": "Recently invented and only just released onto the open market", "newWords": 10, "targetsMisreading": "antonym, newly made", "wrongnessReason": "obsolete means out of date, not brand new" },
+    { "index": 3, "newText": "So costly that only a few wealthy people can afford it", "newWords": 11, "targetsMisreading": "surface, assumes obsolete equals precious", "wrongnessReason": "obsolete refers to being out of date and has nothing to do with price" } ] },
+  { "ref": "MAIN-vocabulary#6", "rewrites": [
+    { "index": 0, "newText": "Anxious and full of doubt", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "confident means sure of oneself, the opposite of anxious and doubtful" },
+    { "index": 1, "newText": "Uncertain about his own ability", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "confident means self-assured, not uncertain" } ] },
+  { "ref": "MAIN-vocabulary#7", "rewrites": [
+    { "index": 1, "newText": "Wishing serious harm on others", "newWords": 5, "targetsMisreading": "confuses benevolent with malevolent", "wrongnessReason": "benevolent means kind and generous, the opposite of wishing harm" },
+    { "index": 2, "newText": "Caring only about personal gain", "newWords": 5, "targetsMisreading": "antonym of generous", "wrongnessReason": "benevolent means generous towards others, not selfish" },
+    { "index": 3, "newText": "Ruling with great strength and authority", "newWords": 6, "targetsMisreading": "confuses benevolent with a mighty ruler", "wrongnessReason": "benevolent describes kindness, not power" } ] },
+  { "ref": "MAIN-vocabulary#8", "rewrites": [
+    { "index": 0, "newText": "Very unlikely ever to occur", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "inevitable means certain to happen, not unlikely" },
+    { "index": 2, "newText": "Coming as a complete surprise", "newWords": 5, "targetsMisreading": "reads inevitable as unexpected", "wrongnessReason": "an inevitable event is expected and certain, not a surprise" } ] },
+  { "ref": "MAIN-vocabulary#9", "rewrites": [
+    { "index": 0, "newText": "Beautiful and full of life", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "desolate means bleak and empty, the opposite of beautiful and lively" },
+    { "index": 1, "newText": "Warm, cosy and full of visitors", "newWords": 6, "targetsMisreading": "antonym, welcoming register", "wrongnessReason": "desolate means empty and barren, not warm and full of people" },
+    { "index": 2, "newText": "Lush, green and richly covered in crops", "newWords": 7, "targetsMisreading": "antonym, fertile land", "wrongnessReason": "desolate land is barren, the opposite of lush and fertile" } ] },
+  { "ref": "MAIN-vocabulary#10", "rewrites": [
+    { "index": 3, "newText": "Well known and celebrated for his earlier journeys", "newWords": 8, "targetsMisreading": "confuses audacious with renowned", "wrongnessReason": "audacious means boldly daring, not famous" },
+    { "index": 0, "newText": "Nervous and completely unwilling to take any real risks", "newWords": 9, "targetsMisreading": "antonym", "wrongnessReason": "audacious means willing to take risks, the opposite of risk-averse" } ] },
+  { "ref": "MAIN-vocabulary#11", "rewrites": [
+    { "index": 0, "newText": "Extremely clever at outwitting each of the hero's allies", "newWords": 9, "targetsMisreading": "confuses malevolence with cunning", "wrongnessReason": "malevolent means wishing to do evil, not merely being clever" },
+    { "index": 1, "newText": "Deeply lonely and bitter after long years spent in exile", "newWords": 10, "targetsMisreading": "confuses malevolent with melancholy", "wrongnessReason": "malevolent means wishing harm, nothing to do with loneliness" },
+    { "index": 2, "newText": "Strong enough in body to threaten and conquer the whole kingdom", "newWords": 11, "targetsMisreading": "confuses evil intent with physical power", "wrongnessReason": "malevolence is about evil intention, not physical strength" } ] },
+  { "ref": "MAIN-vocabulary#12", "rewrites": [
+    { "index": 0, "newText": "Worth almost no money", "newWords": 4, "targetsMisreading": "antonym", "wrongnessReason": "precious means of great value, the opposite of nearly worthless" },
+    { "index": 2, "newText": "Extremely heavy and hard to lift", "newWords": 6, "targetsMisreading": "surface, precious metals are heavy", "wrongnessReason": "precious refers to value, not physical weight" } ] },
+  { "ref": "MAIN-vocabulary#13", "rewrites": [
+    { "index": 0, "newText": "Feeling cross and irritable", "newWords": 4, "targetsMisreading": "wrong emotional register", "wrongnessReason": "weary means tired, not angry" },
+    { "index": 1, "newText": "In need of a meal", "newWords": 5, "targetsMisreading": "sound-alike confusion with hungry", "wrongnessReason": "weary means tired, not hungry" },
+    { "index": 3, "newText": "Feeling nervous, frightened and on edge", "newWords": 6, "targetsMisreading": "wrong emotional register", "wrongnessReason": "weary means tired, not scared" } ] },
+  { "ref": "MAIN-vocabulary#14", "rewrites": [
+    { "index": 0, "newText": "To keep something completely secret", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "reveal means to make known, the opposite of keeping secret" },
+    { "index": 1, "newText": "To smash something into small pieces", "newWords": 6, "targetsMisreading": "unrelated destructive action", "wrongnessReason": "reveal means to disclose, not to destroy" } ] },
+  { "ref": "MAIN-vocabulary#15", "rewrites": [
+    { "index": 1, "newText": "Sprinted quickly across the ground", "newWords": 5, "targetsMisreading": "near action but wrong, reads ventured as running", "wrongnessReason": "ventured means dared to go cautiously, not to run" },
+    { "index": 2, "newText": "Soared high through the air", "newWords": 5, "targetsMisreading": "wrong manner of movement", "wrongnessReason": "ventured means dared to go on foot, not to fly" },
+    { "index": 3, "newText": "Tumbled suddenly down to the ground", "newWords": 6, "targetsMisreading": "wrong action", "wrongnessReason": "ventured means dared to go, not to fall" } ] },
+  { "ref": "MAIN-vocabulary#16", "rewrites": [
+    { "index": 1, "newText": "Hard to make any sense of", "newWords": 6, "targetsMisreading": "wrong sense entirely", "wrongnessReason": "magnificent means impressive, not confusing" },
+    { "index": 2, "newText": "Dull and far worse than expected", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "magnificent means very impressive, the opposite of disappointing" } ] },
+  { "ref": "MAIN-vocabulary#17", "rewrites": [
+    { "index": 0, "newText": "A long and very tiring journey", "newWords": 6, "targetsMisreading": "unrelated meaning", "wrongnessReason": "triumph means a great victory, not a journey" },
+    { "index": 1, "newText": "A crushing and humiliating defeat in battle", "newWords": 7, "targetsMisreading": "antonym", "wrongnessReason": "triumph means victory, the opposite of a defeat" },
+    { "index": 2, "newText": "A sudden loud blast of trumpets and cheering", "newWords": 8, "targetsMisreading": "sound-alike confusion with trumpet", "wrongnessReason": "triumph means a victory, not the sound of trumpets" } ] },
+  { "ref": "MAIN-vocabulary#18", "rewrites": [
+    { "index": 4, "newText": "Available in huge amounts", "newWords": 4, "targetsMisreading": "antonym", "wrongnessReason": "scarce means in short supply, the opposite of plentiful" },
+    { "index": 1, "newText": "Huge in size and weight", "newWords": 5, "targetsMisreading": "confuses scarce with large size", "wrongnessReason": "scarce refers to quantity being low, not to size" } ] },
+  { "ref": "MAIN-vocabulary#19", "rewrites": [
+    { "index": 0, "newText": "Bright, cheerful and full of joy", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "solemn means serious and dignified, the opposite of cheerful" },
+    { "index": 1, "newText": "Amusing and quick to make jokes", "newWords": 6, "targetsMisreading": "antonym of serious", "wrongnessReason": "solemn means grave and serious, not funny" },
+    { "index": 2, "newText": "Noisy, rowdy and full of loud shouting", "newWords": 7, "targetsMisreading": "opposite atmosphere", "wrongnessReason": "solemn implies quiet dignity, not loud rowdiness" } ] },
+  { "ref": "MAIN-vocabulary#20", "rewrites": [
+    { "index": 0, "newText": "Struggling with very little money", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "prosperous means wealthy, the opposite of poor" },
+    { "index": 1, "newText": "Isolated and with few friends", "newWords": 5, "targetsMisreading": "wrong register, unrelated meaning", "wrongnessReason": "prosperous means successful and wealthy, not lonely" } ] },
+  { "ref": "MAIN-vocabulary#21", "rewrites": [
+    { "index": 0, "newText": "Brief and quickly over", "newWords": 4, "targetsMisreading": "antonym of 'long'", "wrongnessReason": "tedious means long and boring, the opposite of brief" },
+    { "index": 1, "newText": "Scary and full of danger", "newWords": 5, "targetsMisreading": "wrong register", "wrongnessReason": "tedious means dull, not frightening" },
+    { "index": 2, "newText": "Thrilling and full of great excitement", "newWords": 6, "targetsMisreading": "antonym of 'boring'", "wrongnessReason": "tedious means boring, the opposite of exciting" } ] },
+  { "ref": "MAIN-vocabulary#22", "rewrites": [
+    { "index": 1, "newText": "Be completely different from", "newWords": 4, "targetsMisreading": "antonym", "wrongnessReason": "resemble means to look similar, the opposite of differing" },
+    { "index": 2, "newText": "Look up to with respect", "newWords": 5, "targetsMisreading": "confuses resemble with admire", "wrongnessReason": "resemble means to look alike, not to admire" } ] },
+  { "ref": "MAIN-vocabulary#23", "rewrites": [
+    { "index": 4, "newText": "Unable to happen at all", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "plausible means seeming probable, the opposite of impossible" },
+    { "index": 1, "newText": "Utterly foolish and impossible to believe", "newWords": 6, "targetsMisreading": "antonym, absurd vs believable", "wrongnessReason": "plausible means believable, not foolish and unbelievable" },
+    { "index": 2, "newText": "Complicated and very hard to properly understand", "newWords": 7, "targetsMisreading": "confuses plausible with complex", "wrongnessReason": "plausible means reasonable-sounding, not complicated" } ] },
+  { "ref": "MAIN-vocabulary#24", "rewrites": [
+    { "index": 1, "newText": "Making almost no sound at all", "newWords": 6, "targetsMisreading": "confuses conspicuous with silent", "wrongnessReason": "conspicuous means clearly visible, nothing to do with sound" },
+    { "index": 3, "newText": "Marked with a few small scratches", "newWords": 6, "targetsMisreading": "unrelated surface property", "wrongnessReason": "conspicuous means noticeable, not damaged" } ] },
+  { "ref": "MAIN-vocabulary#25", "rewrites": [
+    { "index": 0, "newText": "To lose bit by bit", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "accumulate means to gather, the opposite of losing" },
+    { "index": 1, "newText": "To break down into many separate pieces", "newWords": 7, "targetsMisreading": "unrelated destructive action", "wrongnessReason": "accumulate means to build up, not break apart" },
+    { "index": 2, "newText": "To scatter something widely and thinly in every direction", "newWords": 9, "targetsMisreading": "antonym, scatter vs gather", "wrongnessReason": "accumulate means to gather together, the opposite of scattering" } ] },
+  { "ref": "MAIN-vocabulary#26", "rewrites": [
+    { "index": 0, "newText": "A simple and obvious choice", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "a dilemma is a difficult choice, the opposite of an easy one" },
+    { "index": 1, "newText": "A dull and repetitive daily routine", "newWords": 6, "targetsMisreading": "unrelated meaning", "wrongnessReason": "a dilemma is a hard decision, not a routine" } ] },
+  { "ref": "MAIN-vocabulary#27", "rewrites": [
+    { "index": 0, "newText": "To put something firmly in", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "omit means to leave out, the opposite of including" },
+    { "index": 2, "newText": "To explain something in full detail", "newWords": 6, "targetsMisreading": "unrelated meaning", "wrongnessReason": "omit means to leave out, not to explain" },
+    { "index": 3, "newText": "To make something much better than before", "newWords": 7, "targetsMisreading": "unrelated meaning", "wrongnessReason": "omit means to leave out, not to improve" } ] },
+  { "ref": "MAIN-vocabulary#28", "rewrites": [
+    { "index": 0, "newText": "Likely to cause serious harm", "newWords": 5, "targetsMisreading": "literal harmful-disease sense of the figurative word", "wrongnessReason": "here infectious means spreading easily to others, not causing harm" },
+    { "index": 2, "newText": "Irritating and hard to put up with", "newWords": 7, "targetsMisreading": "wrong emotional register", "wrongnessReason": "infectious enthusiasm spreads to others, it is not annoying" } ] },
+  { "ref": "MAIN-vocabulary#29", "rewrites": [
+    { "index": 0, "newText": "Clearly biased towards one particular side", "newWords": 6, "targetsMisreading": "misreads the 'im-' prefix, thinks impartial means biased", "wrongnessReason": "impartial means treating both sides equally, the opposite of biased" } ] },
+  { "ref": "MAIN-vocabulary#30", "rewrites": [
+    { "index": 1, "newText": "Extremely small and slight", "newWords": 4, "targetsMisreading": "antonym", "wrongnessReason": "substantial means considerable in size, the opposite of tiny" },
+    { "index": 2, "newText": "Available completely free of charge", "newWords": 5, "targetsMisreading": "unrelated meaning", "wrongnessReason": "substantial refers to size, not to cost" },
+    { "index": 3, "newText": "Damaged in one or two places", "newWords": 6, "targetsMisreading": "unrelated property", "wrongnessReason": "substantial means large, nothing to do with being broken" } ] },
+  { "ref": "MAIN-vocabulary#31", "rewrites": [
+    { "index": 0, "newText": "To climb slowly and steadily upward", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "plummet means to fall rapidly, the opposite of rising" },
+    { "index": 1, "newText": "To drift down gently and very slowly", "newWords": 7, "targetsMisreading": "wrong manner, gentle vs rapid", "wrongnessReason": "plummet means to drop rapidly, not to float gently" } ] },
+  { "ref": "MAIN-vocabulary#32", "rewrites": [
+    { "index": 0, "newText": "Left entirely up to personal choice", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "compulsory means required, the opposite of optional" } ] },
+  { "ref": "MAIN-vocabulary#33", "rewrites": [
+    { "index": 0, "newText": "Carefully examine every part", "newWords": 4, "targetsMisreading": "confuses demolishing with inspecting", "wrongnessReason": "demolish means to knock down, not to examine" },
+    { "index": 1, "newText": "Fix and make it safe", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "demolish means to destroy, the opposite of repairing" },
+    { "index": 2, "newText": "Cover the outside with fresh paint", "newWords": 6, "targetsMisreading": "surface improvement rather than destruction", "wrongnessReason": "demolish means to knock down completely, not to paint over" } ] },
+  { "ref": "MAIN-vocabulary#34", "rewrites": [
+    { "index": 1, "newText": "Drooping and beginning to die off", "newWords": 6, "targetsMisreading": "describes the roses' state rather than their smell", "wrongnessReason": "fragrant refers to a pleasant smell, not to wilting" },
+    { "index": 2, "newText": "Covered all over in bright vivid colours", "newWords": 7, "targetsMisreading": "wrong sense, sight instead of smell", "wrongnessReason": "fragrant refers to smell, not to colour" } ] },
+  { "ref": "MAIN-vocabulary#35", "rewrites": [
+    { "index": 1, "newText": "A truthful and accurate account", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "misleading means giving a false impression, the opposite of accurate" } ] },
+  { "ref": "MAIN-vocabulary#36", "rewrites": [
+    { "index": 0, "newText": "Lazy and unwilling to make effort", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "diligent means hardworking, the opposite of lazy" },
+    { "index": 1, "newText": "Fast at working but careless and untidy", "newWords": 7, "targetsMisreading": "fast-but-not-careful", "wrongnessReason": "diligent means careful and thorough, not careless" },
+    { "index": 2, "newText": "Very clever but likely to forget things easily", "newWords": 8, "targetsMisreading": "confuses diligent with intelligent", "wrongnessReason": "diligent means hardworking, not clever" } ] },
+  { "ref": "MAIN-vocabulary#37", "rewrites": [
+    { "index": 1, "newText": "To thoroughly enjoy each and every moment", "newWords": 7, "targetsMisreading": "antonym", "wrongnessReason": "endure means to suffer through, the opposite of enjoying" },
+    { "index": 2, "newText": "To escape from something completely and avoid it", "newWords": 8, "targetsMisreading": "opposite, escaping vs going through", "wrongnessReason": "endure means to go through hardship, not to avoid it" } ] },
+  { "ref": "MAIN-vocabulary#38", "rewrites": [
+    { "index": 0, "newText": "Absolutely necessary and important", "newWords": 4, "targetsMisreading": "antonym", "wrongnessReason": "superfluous means unnecessary, the opposite of essential" } ] },
+  { "ref": "MAIN-vocabulary#39", "rewrites": [
+    { "index": 0, "newText": "Timid and rather withdrawn", "newWords": 4, "targetsMisreading": "reads candid as reserved/shy", "wrongnessReason": "candid means frank and open, the opposite of shy and withdrawn" },
+    { "index": 1, "newText": "Keeping thoughts carefully hidden away", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "candid means openly honest, the opposite of secretive" },
+    { "index": 2, "newText": "Having a great deal of money", "newWords": 6, "targetsMisreading": "unrelated meaning", "wrongnessReason": "candid means honest, nothing to do with wealth" } ] },
+  { "ref": "MAIN-vocabulary#40", "rewrites": [
+    { "index": 0, "newText": "Using very few short words", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "verbose means using too many words, the opposite of brief" },
+    { "index": 1, "newText": "Speaking softly and hardly at all", "newWords": 6, "targetsMisreading": "confuses verbose with quiet", "wrongnessReason": "verbose means wordy, not quiet" } ] },
+  { "ref": "MAIN-vocabulary#41", "rewrites": [
+    { "index": 0, "newText": "Quick to forgive and forget any wrong", "newWords": 7, "targetsMisreading": "antonym", "wrongnessReason": "vindictive means seeking revenge, the opposite of forgiving" } ] },
+  { "ref": "MAIN-vocabulary#42", "rewrites": [
+    { "index": 0, "newText": "Certain to succeed in the end", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "futile means pointless and without effect, the opposite of successful" },
+    { "index": 1, "newText": "Very hard but still ultimately worthwhile", "newWords": 6, "targetsMisreading": "reads futile as merely difficult yet effective", "wrongnessReason": "futile means having no effect, so it cannot be worthwhile" },
+    { "index": 2, "newText": "Great fun and thoroughly enjoyable to do", "newWords": 7, "targetsMisreading": "unrelated positive meaning", "wrongnessReason": "futile means pointless, not enjoyable" } ] },
+  { "ref": "MAIN-vocabulary#43", "rewrites": [
+    { "index": 1, "newText": "Having a great deal of wealth", "newWords": 6, "targetsMisreading": "confuses selfless generosity with being rich", "wrongnessReason": "altruistic means selflessly caring for others, not being wealthy" },
+    { "index": 3, "newText": "Very powerful and strong in body", "newWords": 6, "targetsMisreading": "unrelated physical meaning", "wrongnessReason": "altruistic describes selfless character, not physical strength" } ] },
+  { "ref": "MAIN-vocabulary#44", "rewrites": [
+    { "index": 0, "newText": "Rich, beautiful and highly poetic throughout", "newWords": 6, "targetsMisreading": "antonym, ornate vs plain", "wrongnessReason": "austere means severe and plain, the opposite of rich and poetic" } ] },
+  { "ref": "MAIN-vocabulary#45", "rewrites": [
+    { "index": 1, "newText": "Passing quickly and soon forgotten", "newWords": 5, "targetsMisreading": "reads acute as fleeting rather than intense", "wrongnessReason": "here acute means very strong and intense, not brief" },
+    { "index": 2, "newText": "Faint, mild and hardly even noticeable", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "acute means intense, the opposite of mild and faint" },
+    { "index": 3, "newText": "Warm, pleasant and thoroughly agreeable to feel", "newWords": 7, "targetsMisreading": "wrong emotional register", "wrongnessReason": "an acute sense of injustice is intense and distressing, not pleasant" } ] },
+  { "ref": "MAIN-vocabulary#46", "rewrites": [
+    { "index": 1, "newText": "Light-hearted and amusing despite its very dark subject matter", "newWords": 9, "targetsMisreading": "antonym, cheerful vs moving", "wrongnessReason": "poignant means evoking sadness, the opposite of light-hearted" },
+    { "index": 0, "newText": "Dull and rather difficult to read all the way through", "newWords": 10, "targetsMisreading": "confuses poignant with tedious", "wrongnessReason": "poignant means emotionally moving, not boring" } ] },
+  { "ref": "MAIN-vocabulary#47", "rewrites": [
+    { "index": 0, "newText": "Warm, kind and genuinely friendly", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "sardonic means grimly mocking, the opposite of warm and friendly" } ] },
+  { "ref": "MAIN-vocabulary#48", "rewrites": [
+    { "index": 0, "newText": "Full of unrealistic ideas that would never work", "newWords": 8, "targetsMisreading": "antonym", "wrongnessReason": "pragmatic means practical and realistic, the opposite of unrealistic" },
+    { "index": 1, "newText": "Highly artistic and concerned mainly with beauty and appearance", "newWords": 9, "targetsMisreading": "latches onto 'innovative' and reads it as artistic", "wrongnessReason": "pragmatic means practical, not focused on artistic beauty" },
+    { "index": 2, "newText": "Costing a very large amount of money to build it", "newWords": 10, "targetsMisreading": "unrelated meaning", "wrongnessReason": "pragmatic means practical, nothing to do with cost" } ] },
+  { "ref": "MAIN-vocabulary#49", "rewrites": [
+    { "index": 0, "newText": "Chatty and always talking", "newWords": 4, "targetsMisreading": "antonym", "wrongnessReason": "reticent means reserved and quiet, the opposite of talkative" },
+    { "index": 1, "newText": "Warm, outgoing and very sociable", "newWords": 5, "targetsMisreading": "opposite social manner", "wrongnessReason": "reticent means reserved, not outgoing" } ] },
+  { "ref": "MAIN-vocabulary#50", "rewrites": [
+    { "index": 1, "newText": "Idle and producing very little", "newWords": 5, "targetsMisreading": "antonym", "wrongnessReason": "prolific means producing a great deal, the opposite of unproductive" } ] },
+  { "ref": "MAIN-vocabulary#51", "rewrites": [
+    { "index": 0, "newText": "Recently built and in perfect, brand new condition", "newWords": 8, "targetsMisreading": "antonym", "wrongnessReason": "dilapidated means in ruin and disrepair, the opposite of newly built" },
+    { "index": 1, "newText": "Beautifully decorated and carefully kept in excellent condition throughout", "newWords": 9, "targetsMisreading": "antonym", "wrongnessReason": "dilapidated means run down, the opposite of well kept" },
+    { "index": 2, "newText": "Extremely large, with many wide and spacious rooms inside it", "newWords": 10, "targetsMisreading": "confuses dilapidated with size", "wrongnessReason": "dilapidated refers to disrepair, not to being large" } ] },
+  { "ref": "MAIN-vocabulary#52", "rewrites": [
+    { "index": 0, "newText": "Lasting only briefly and easily changed later on", "newWords": 8, "targetsMisreading": "antonym", "wrongnessReason": "irrevocable means unable to be changed, the opposite of temporary" },
+    { "index": 2, "newText": "Extremely popular and welcomed warmly by all the people", "newWords": 9, "targetsMisreading": "unrelated meaning", "wrongnessReason": "irrevocable means unchangeable, nothing to do with popularity" } ] },
+  { "ref": "MAIN-vocabulary#53", "rewrites": [
+    { "index": 3, "newText": "To copy the exact way that another person behaves", "newWords": 9, "targetsMisreading": "sound-alike confusion (placate/imitate)", "wrongnessReason": "placate means to soothe someone upset, not to copy them" } ] },
+  { "ref": "MAIN-vocabulary#54", "rewrites": [
+    { "index": 0, "newText": "Recently retired after a long and successful public career", "newWords": 8, "targetsMisreading": "swaps distinction for retirement", "wrongnessReason": "eminent means famous and respected, not retired" },
+    { "index": 1, "newText": "Nervously getting ready to give the important speech soon", "newWords": 9, "targetsMisreading": "sound-alike confusion with 'imminent'", "wrongnessReason": "eminent means distinguished, not about to happen soon" },
+    { "index": 3, "newText": "Visiting here from a distant foreign university somewhere far overseas", "newWords": 10, "targetsMisreading": "plausible but unrelated detail", "wrongnessReason": "eminent means renowned, nothing to do with being foreign" } ] },
+  { "ref": "MAIN-vocabulary#55", "rewrites": [
+    { "index": 3, "newText": "A total lack of any agreement", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "consensus means general agreement, the opposite of disagreement" },
+    { "index": 1, "newText": "A long and bitterly heated public argument", "newWords": 7, "targetsMisreading": "seizes on the debate rather than the agreement", "wrongnessReason": "consensus is the agreement reached, not the argument itself" } ] },
+  { "ref": "MAIN-vocabulary#56", "rewrites": [
+    { "index": 3, "newText": "A towering yellow crane lifted the heavy concrete slabs high onto the unfinished roof.", "newWords": 14, "targetsMisreading": "uses 'crane' as the machinery noun, not the verb", "wrongnessReason": "here crane is a construction machine, not the verb meaning to stretch forward to see" } ] },
+  { "ref": "MAIN-vocabulary#57", "rewrites": [
+    { "index": 0, "newText": "Very easy for anyone to see", "newWords": 6, "targetsMisreading": "antonym", "wrongnessReason": "invisible means not able to be seen, the opposite of easy to see" },
+    { "index": 2, "newText": "Difficult but still just about possible to see", "newWords": 8, "targetsMisreading": "reads invisible as barely visible", "wrongnessReason": "invisible means impossible to see at all, not merely hard to see" },
+    { "index": 4, "newText": "Clearly seen by each and every single person", "newWords": 8, "targetsMisreading": "antonym", "wrongnessReason": "invisible means unseen, the opposite of seen by everyone" } ] },
+  { "ref": "MAIN-vocabulary#58", "rewrites": [
+    { "index": 2, "newText": "To hide something away safely in a secret place", "newWords": 9, "targetsMisreading": "unrelated meaning", "wrongnessReason": "transport means to carry across, not to hide" },
+    { "index": 3, "newText": "To break something completely apart into many separate small pieces", "newWords": 10, "targetsMisreading": "unrelated destructive meaning", "wrongnessReason": "transport means to carry from place to place, not to break apart" } ] },
+  { "ref": "MAIN-vocabulary#59", "rewrites": [
+    { "index": 0, "newText": "To say something only afterwards", "newWords": 5, "targetsMisreading": "reads the 'pre-' prefix as 'after' instead of 'before'", "wrongnessReason": "predict means to say before, not after" } ] },
+  { "ref": "MAIN-vocabulary#60", "rewrites": [
+    { "index": 0, "newText": "To work perfectly without any faults", "newWords": 6, "targetsMisreading": "antonym, ignores the 'mal' prefix", "wrongnessReason": "malfunction means to work badly or fail, the opposite of working perfectly" },
+    { "index": 1, "newText": "To work very loudly and make noise", "newWords": 7, "targetsMisreading": "unrelated meaning", "wrongnessReason": "malfunction means to fail, nothing to do with loudness" },
+    { "index": 2, "newText": "To work slowly but still get things done", "newWords": 8, "targetsMisreading": "reads malfunction as merely sluggish", "wrongnessReason": "malfunction means to fail or work badly, not simply to work slowly" } ] },
+  { "ref": "MAIN-vocabulary#61", "rewrites": [
+    { "index": 4, "newText": "To create trouble and stir up an argument", "newWords": 8, "targetsMisreading": "wrong idiomatic meaning", "wrongnessReason": "break the ice means to start a conversation, not to cause trouble" },
+    { "index": 0, "newText": "To smash apart a thick sheet of frozen water", "newWords": 9, "targetsMisreading": "literal reading of the figurative idiom", "wrongnessReason": "break the ice is figurative, not literally smashing ice" } ] },
+  { "ref": "MAIN-vocabulary#62", "rewrites": [
+    { "index": 3, "newText": "Someone had attacked her with a real sharp weapon", "newWords": 9, "targetsMisreading": "literal reading of the metaphor", "wrongnessReason": "the dagger is a metaphor for emotional pain, not a literal attack" } ] }
+]

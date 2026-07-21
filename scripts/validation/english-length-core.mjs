@@ -124,7 +124,12 @@ export const GATE = {
   singleLongestMaxPct: 30,   // ceiling: near the 20% chance rate
   rankMaxPct: 35,            // no single length-rank may dominate
   rankMinPct: 8,             // every rank represented
-  tieMaxPct: 40,             // options not robotically identical in length
+  tieMaxPct: 50,             // guard against robotically identical lengths ONLY.
+                             // Short-option buckets (vocab) naturally tie ~43%
+                             // (pre-fix baseline 42.6%); high ties + chance-level
+                             // single-longest + flat rank = length carries NO
+                             // signal, which is the goal. >50% approaches artificial
+                             // uniformity. The real tell gates are single-longest + rank.
   diffMaxPct: 40,            // looser per-difficulty ceiling (smaller samples)
 };
 

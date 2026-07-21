@@ -1,0 +1,1421 @@
+[
+  {
+    "ref": "MAIN-vocabulary#1",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 10,
+    "correctIndex": 1,
+    "question": "In the sentence 'The judge's verdict was unanimous,' what does 'unanimous' mean?",
+    "correctText": "Agreed by everyone",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Unfair",
+        "newText": "Decided by a single person"
+      },
+      {
+        "index": 2,
+        "currentText": "Surprising",
+        "newText": "Causing great surprise in the courtroom"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#2",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 15,
+    "correctIndex": 1,
+    "question": "In the sentence 'The abandoned house looked very bleak,' what does 'bleak' mean?",
+    "correctText": "Cold, bare, and unwelcoming",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Colourful and cheerful",
+        "newText": "Warm and full of cheerful life"
+      },
+      {
+        "index": 2,
+        "currentText": "Large and impressive",
+        "newText": "Enormous, grand and richly decorated inside"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#3",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 18,
+    "correctIndex": 1,
+    "question": "What does the word 'persistent' mean?",
+    "correctText": "Refusing to give up",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Very fast",
+        "newText": "Moving at great speed throughout"
+      },
+      {
+        "index": 3,
+        "currentText": "Extremely careful",
+        "newText": "Paying very close attention to detail"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#4",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 21,
+    "correctIndex": 3,
+    "question": "What does the word 'ambiguous' mean?",
+    "correctText": "Open to more than one interpretation",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "Completely wrong",
+        "newText": "Definitely false and containing an obvious mistake"
+      },
+      {
+        "index": 1,
+        "currentText": "Easy to understand",
+        "newText": "Perfectly clear and simple for anyone to follow"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#5",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 28,
+    "correctIndex": 1,
+    "question": "What does the word 'obsolete' mean?",
+    "correctText": "No longer in use or out of date",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Very popular",
+        "newText": "Extremely fashionable and used by almost everyone right now"
+      },
+      {
+        "index": 2,
+        "currentText": "Brand new",
+        "newText": "Recently invented and only just released onto the open market"
+      },
+      {
+        "index": 3,
+        "currentText": "Extremely expensive",
+        "newText": "So costly that only a few wealthy people can afford it"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#6",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 43,
+    "correctIndex": 4,
+    "question": "In the sentence 'He was confident he would win the race,' what does 'confident' mean?",
+    "correctText": "Sure of himself",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Nervous",
+        "newText": "Anxious and full of doubt"
+      },
+      {
+        "index": 1,
+        "currentText": "Unsure",
+        "newText": "Uncertain about his own ability"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#7",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 54,
+    "correctIndex": 0,
+    "question": "Which word is closest in meaning to 'benevolent'?",
+    "correctText": "Kind and generous",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Dangerous",
+        "newText": "Wishing serious harm on others"
+      },
+      {
+        "index": 2,
+        "currentText": "Selfish",
+        "newText": "Caring only about personal gain"
+      },
+      {
+        "index": 3,
+        "currentText": "Powerful",
+        "newText": "Ruling with great strength and authority"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#8",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 85,
+    "correctIndex": 1,
+    "question": "Which word is closest in meaning to 'inevitable'?",
+    "correctText": "Certain to happen",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Unlikely",
+        "newText": "Very unlikely ever to occur"
+      },
+      {
+        "index": 2,
+        "currentText": "Surprising",
+        "newText": "Coming as a complete surprise"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#9",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 88,
+    "correctIndex": 4,
+    "question": "In the sentence 'The desolate landscape stretched for miles,' what does 'desolate' mean?",
+    "correctText": "Bleak, empty, and barren",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Beautiful and lively",
+        "newText": "Beautiful and full of life"
+      },
+      {
+        "index": 1,
+        "currentText": "Warm and welcoming",
+        "newText": "Warm, cosy and full of visitors"
+      },
+      {
+        "index": 2,
+        "currentText": "Green and fertile",
+        "newText": "Lush, green and richly covered in crops"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#10",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 91,
+    "correctIndex": 2,
+    "question": "In the sentence 'The audacious explorer crossed the desert alone,' what does 'audacious' mean?",
+    "correctText": "Showing a bold willingness to take risks",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Famous from previous expeditions abroad",
+        "newText": "Well known and celebrated for his earlier journeys"
+      },
+      {
+        "index": 0,
+        "currentText": "Frightened of being far from civilisation",
+        "newText": "Nervous and completely unwilling to take any real risks"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#11",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 93,
+    "correctIndex": 4,
+    "question": "In the sentence 'The malevolent villain plotted against the hero,' what does 'malevolent' mean?",
+    "correctText": "Having a wish to do evil to others",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Clever at outwitting the hero's allies",
+        "newText": "Extremely clever at outwitting each of the hero's allies"
+      },
+      {
+        "index": 1,
+        "currentText": "Lonely from years spent in exile",
+        "newText": "Deeply lonely and bitter after long years spent in exile"
+      },
+      {
+        "index": 2,
+        "currentText": "Powerful enough to threaten the kingdom",
+        "newText": "Strong enough in body to threaten and conquer the whole kingdom"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#12",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 125,
+    "correctIndex": 1,
+    "question": "What does the word 'precious' mean?",
+    "correctText": "Of great value",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Very cheap",
+        "newText": "Worth almost no money"
+      },
+      {
+        "index": 2,
+        "currentText": "Very heavy",
+        "newText": "Extremely heavy and hard to lift"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#13",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 126,
+    "correctIndex": 2,
+    "question": "What does the word 'weary' mean?",
+    "correctText": "Feeling very tired",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Angry",
+        "newText": "Feeling cross and irritable"
+      },
+      {
+        "index": 1,
+        "currentText": "Hungry",
+        "newText": "In need of a meal"
+      },
+      {
+        "index": 3,
+        "currentText": "Feeling scared",
+        "newText": "Feeling nervous, frightened and on edge"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#14",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 130,
+    "correctIndex": 3,
+    "question": "What does the word 'reveal' mean?",
+    "correctText": "To make something known",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To hide something",
+        "newText": "To keep something completely secret"
+      },
+      {
+        "index": 1,
+        "currentText": "To destroy something",
+        "newText": "To smash something into small pieces"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#15",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 136,
+    "correctIndex": 0,
+    "question": "In the sentence 'The explorer ventured deep into the jungle,' what does 'ventured' mean?",
+    "correctText": "Dared to go",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Ran",
+        "newText": "Sprinted quickly across the ground"
+      },
+      {
+        "index": 2,
+        "currentText": "Flew",
+        "newText": "Soared high through the air"
+      },
+      {
+        "index": 3,
+        "currentText": "Fell",
+        "newText": "Tumbled suddenly down to the ground"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#16",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 138,
+    "correctIndex": 0,
+    "question": "In the sentence 'The view from the hilltop was magnificent,' what does 'magnificent' mean?",
+    "correctText": "Extremely impressive and beautiful",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Confusing",
+        "newText": "Hard to make any sense of"
+      },
+      {
+        "index": 2,
+        "currentText": "Disappointing",
+        "newText": "Dull and far worse than expected"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#17",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 152,
+    "correctIndex": 3,
+    "question": "What does the word 'triumph' mean?",
+    "correctText": "A great victory or achievement",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "A long journey",
+        "newText": "A long and very tiring journey"
+      },
+      {
+        "index": 1,
+        "currentText": "A big loss",
+        "newText": "A crushing and humiliating defeat in battle"
+      },
+      {
+        "index": 2,
+        "currentText": "A loud noise",
+        "newText": "A sudden loud blast of trumpets and cheering"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#18",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 153,
+    "correctIndex": 0,
+    "question": "What does the word 'scarce' mean?",
+    "correctText": "In short supply",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "Plentiful",
+        "newText": "Available in huge amounts"
+      },
+      {
+        "index": 1,
+        "currentText": "Very large",
+        "newText": "Huge in size and weight"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#19",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 172,
+    "correctIndex": 3,
+    "question": "Which word is closest in meaning to 'solemn'?",
+    "correctText": "Very serious and dignified",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Cheerful",
+        "newText": "Bright, cheerful and full of joy"
+      },
+      {
+        "index": 1,
+        "currentText": "Funny",
+        "newText": "Amusing and quick to make jokes"
+      },
+      {
+        "index": 2,
+        "currentText": "Loud",
+        "newText": "Noisy, rowdy and full of loud shouting"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#20",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 177,
+    "correctIndex": 3,
+    "question": "Which word is closest in meaning to 'prosperous'?",
+    "correctText": "Successful and wealthy",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Poor",
+        "newText": "Struggling with very little money"
+      },
+      {
+        "index": 1,
+        "currentText": "Lonely",
+        "newText": "Isolated and with few friends"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#21",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 180,
+    "correctIndex": 4,
+    "question": "Which word is closest in meaning to 'tedious'?",
+    "correctText": "Long and boring",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Short",
+        "newText": "Brief and quickly over"
+      },
+      {
+        "index": 1,
+        "currentText": "Frightening",
+        "newText": "Scary and full of danger"
+      },
+      {
+        "index": 2,
+        "currentText": "Exciting",
+        "newText": "Thrilling and full of great excitement"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#22",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 181,
+    "correctIndex": 0,
+    "question": "Which word is closest in meaning to 'resemble'?",
+    "correctText": "Look similar to",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Differ from",
+        "newText": "Be completely different from"
+      },
+      {
+        "index": 2,
+        "currentText": "Admire greatly",
+        "newText": "Look up to with respect"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#23",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 194,
+    "correctIndex": 0,
+    "question": "What does the word 'plausible' mean?",
+    "correctText": "Seeming reasonable or probable",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "Impossible",
+        "newText": "Unable to happen at all"
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely silly",
+        "newText": "Utterly foolish and impossible to believe"
+      },
+      {
+        "index": 2,
+        "currentText": "Very complicated",
+        "newText": "Complicated and very hard to properly understand"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#24",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 196,
+    "correctIndex": 2,
+    "question": "What does the word 'conspicuous' mean?",
+    "correctText": "Clearly visible and noticeable",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Very quiet",
+        "newText": "Making almost no sound at all"
+      },
+      {
+        "index": 3,
+        "currentText": "Slightly damaged",
+        "newText": "Marked with a few small scratches"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#25",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 197,
+    "correctIndex": 3,
+    "question": "What does the word 'accumulate' mean?",
+    "correctText": "To gather together over time",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To lose gradually",
+        "newText": "To lose bit by bit"
+      },
+      {
+        "index": 1,
+        "currentText": "To break apart",
+        "newText": "To break down into many separate pieces"
+      },
+      {
+        "index": 2,
+        "currentText": "To spread thinly",
+        "newText": "To scatter something widely and thinly in every direction"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#26",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 198,
+    "correctIndex": 4,
+    "question": "What does the word 'dilemma' mean?",
+    "correctText": "A tough either-or problem",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "An easy choice",
+        "newText": "A simple and obvious choice"
+      },
+      {
+        "index": 1,
+        "currentText": "A boring routine",
+        "newText": "A dull and repetitive daily routine"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#27",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 200,
+    "correctIndex": 1,
+    "question": "What does the word 'omit' mean?",
+    "correctText": "To leave something out",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To include something",
+        "newText": "To put something firmly in"
+      },
+      {
+        "index": 2,
+        "currentText": "To explain something",
+        "newText": "To explain something in full detail"
+      },
+      {
+        "index": 3,
+        "currentText": "To improve something",
+        "newText": "To make something much better than before"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#28",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 205,
+    "correctIndex": 1,
+    "question": "In the sentence 'Her enthusiasm for reading was infectious,' what does 'infectious' mean?",
+    "correctText": "Spreading easily to others",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Dangerous",
+        "newText": "Likely to cause serious harm"
+      },
+      {
+        "index": 2,
+        "currentText": "Annoying",
+        "newText": "Irritating and hard to put up with"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#29",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 215,
+    "correctIndex": 1,
+    "question": "In the sentence 'The referee's decision was impartial,' what does 'impartial' mean?",
+    "correctText": "Treating both sides equally",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Unfair",
+        "newText": "Clearly biased towards one particular side"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#30",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 228,
+    "correctIndex": 0,
+    "question": "What does the word 'substantial' mean?",
+    "correctText": "Considerable in size",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Very tiny",
+        "newText": "Extremely small and slight"
+      },
+      {
+        "index": 2,
+        "currentText": "Completely free",
+        "newText": "Available completely free of charge"
+      },
+      {
+        "index": 3,
+        "currentText": "Slightly broken",
+        "newText": "Damaged in one or two places"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#31",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 229,
+    "correctIndex": 4,
+    "question": "What does the word 'plummet' mean?",
+    "correctText": "To fall or drop rapidly",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To rise slowly",
+        "newText": "To climb slowly and steadily upward"
+      },
+      {
+        "index": 1,
+        "currentText": "To float gently",
+        "newText": "To drift down gently and very slowly"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#32",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 230,
+    "correctIndex": 2,
+    "question": "What does the word 'compulsory' mean?",
+    "correctText": "Required by law or rule",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Optional",
+        "newText": "Left entirely up to personal choice"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#33",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 233,
+    "correctIndex": 3,
+    "question": "In the sentence 'The council will demolish the unsafe building,' what does 'demolish' mean?",
+    "correctText": "Knock down completely",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Inspect closely",
+        "newText": "Carefully examine every part"
+      },
+      {
+        "index": 1,
+        "currentText": "Repair quickly",
+        "newText": "Fix and make it safe"
+      },
+      {
+        "index": 2,
+        "currentText": "Paint over",
+        "newText": "Cover the outside with fresh paint"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#34",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 249,
+    "correctIndex": 0,
+    "question": "In the sentence 'The fragrant roses filled the room with scent,' what does 'fragrant' mean?",
+    "correctText": "Having a pleasant sweet smell",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Wilting",
+        "newText": "Drooping and beginning to die off"
+      },
+      {
+        "index": 2,
+        "currentText": "Brightly coloured",
+        "newText": "Covered all over in bright vivid colours"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#35",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 252,
+    "correctIndex": 3,
+    "question": "In the sentence 'The brochure contained misleading information,' what does 'misleading' mean?",
+    "correctText": "Giving a false impression",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Accurate description",
+        "newText": "A truthful and accurate account"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#36",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 254,
+    "correctIndex": 3,
+    "question": "What does the word 'diligent' mean?",
+    "correctText": "Hardworking and showing careful effort",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Lazy and careless",
+        "newText": "Lazy and unwilling to make effort"
+      },
+      {
+        "index": 1,
+        "currentText": "Quick but sloppy",
+        "newText": "Fast at working but careless and untidy"
+      },
+      {
+        "index": 2,
+        "currentText": "Clever but forgetful",
+        "newText": "Very clever but likely to forget things easily"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#37",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 257,
+    "correctIndex": 3,
+    "question": "What does the word 'endure' mean?",
+    "correctText": "To suffer through something patiently",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "To enjoy thoroughly",
+        "newText": "To thoroughly enjoy each and every moment"
+      },
+      {
+        "index": 2,
+        "currentText": "To avoid completely",
+        "newText": "To escape from something completely and avoid it"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#38",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 261,
+    "correctIndex": 1,
+    "question": "What does the word 'superfluous' mean?",
+    "correctText": "Unnecessary and excessive",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Essential",
+        "newText": "Absolutely necessary and important"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#39",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 263,
+    "correctIndex": 3,
+    "question": "Which word is closest in meaning to 'candid'?",
+    "correctText": "Frank and honest",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Shy",
+        "newText": "Timid and rather withdrawn"
+      },
+      {
+        "index": 1,
+        "currentText": "Secretive",
+        "newText": "Keeping thoughts carefully hidden away"
+      },
+      {
+        "index": 2,
+        "currentText": "Wealthy",
+        "newText": "Having a great deal of money"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#40",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 264,
+    "correctIndex": 2,
+    "question": "Which word is closest in meaning to 'verbose'?",
+    "correctText": "Using too many words",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Brief",
+        "newText": "Using very few short words"
+      },
+      {
+        "index": 1,
+        "currentText": "Quiet",
+        "newText": "Speaking softly and hardly at all"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#41",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 267,
+    "correctIndex": 3,
+    "question": "Which word is closest in meaning to 'vindictive'?",
+    "correctText": "Having a strong desire for revenge",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Forgiving",
+        "newText": "Quick to forgive and forget any wrong"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#42",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 271,
+    "correctIndex": 4,
+    "question": "Which word is closest in meaning to 'futile'?",
+    "correctText": "Pointless and without effect",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Successful",
+        "newText": "Certain to succeed in the end"
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely difficult",
+        "newText": "Very hard but still ultimately worthwhile"
+      },
+      {
+        "index": 2,
+        "currentText": "Very enjoyable",
+        "newText": "Great fun and thoroughly enjoyable to do"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#43",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 289,
+    "correctIndex": 0,
+    "question": "What does the word 'altruistic' mean?",
+    "correctText": "Selflessly caring for others",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Very wealthy",
+        "newText": "Having a great deal of wealth"
+      },
+      {
+        "index": 3,
+        "currentText": "Physically strong",
+        "newText": "Very powerful and strong in body"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#44",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 293,
+    "correctIndex": 4,
+    "question": "In the sentence 'The author's prose was deliberately austere,' what does 'austere' mean?",
+    "correctText": "Severe and plain in style",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Beautifully poetic",
+        "newText": "Rich, beautiful and highly poetic throughout"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#45",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 294,
+    "correctIndex": 0,
+    "question": "In the sentence 'She felt an acute sense of injustice at the unfair punishment,' what does 'acute' mean?",
+    "correctText": "Very strong and intense",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Brief",
+        "newText": "Passing quickly and soon forgotten"
+      },
+      {
+        "index": 2,
+        "currentText": "Mild",
+        "newText": "Faint, mild and hardly even noticeable"
+      },
+      {
+        "index": 3,
+        "currentText": "Pleasant",
+        "newText": "Warm, pleasant and thoroughly agreeable to feel"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#46",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 299,
+    "correctIndex": 4,
+    "question": "In the sentence 'The novel provides a poignant account of life during wartime,' what does 'poignant' mean?",
+    "correctText": "Evoking a keen sense of sadness or pity",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Cheerful despite the dark subject",
+        "newText": "Light-hearted and amusing despite its very dark subject matter"
+      },
+      {
+        "index": 0,
+        "currentText": "Boring and difficult to read through",
+        "newText": "Dull and rather difficult to read all the way through"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#47",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 300,
+    "correctIndex": 4,
+    "question": "In the sentence 'Her sardonic smile suggested she did not believe a word,' what does 'sardonic' mean?",
+    "correctText": "Grimly mocking or cynical",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Warm",
+        "newText": "Warm, kind and genuinely friendly"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#48",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 301,
+    "correctIndex": 4,
+    "question": "In the sentence 'The architect's design was both innovative and pragmatic,' what does 'pragmatic' mean?",
+    "correctText": "Dealing with things in a practical way",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Unrealistic",
+        "newText": "Full of unrealistic ideas that would never work"
+      },
+      {
+        "index": 1,
+        "currentText": "Very artistic",
+        "newText": "Highly artistic and concerned mainly with beauty and appearance"
+      },
+      {
+        "index": 2,
+        "currentText": "Extremely expensive",
+        "newText": "Costing a very large amount of money to build it"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#49",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 312,
+    "correctIndex": 3,
+    "question": "What does the word 'reticent' mean?",
+    "correctText": "Reserved and quiet",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Very talkative",
+        "newText": "Chatty and always talking"
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely friendly",
+        "newText": "Warm, outgoing and very sociable"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#50",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 313,
+    "correctIndex": 0,
+    "question": "Which word is closest in meaning to 'prolific'?",
+    "correctText": "Producing a great deal",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Lazy",
+        "newText": "Idle and producing very little"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#51",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 314,
+    "correctIndex": 4,
+    "question": "In the sentence 'The dilapidated cottage had been empty for years,' what does 'dilapidated' mean?",
+    "correctText": "In a state of disrepair and ruin",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Newly built",
+        "newText": "Recently built and in perfect, brand new condition"
+      },
+      {
+        "index": 1,
+        "currentText": "Beautifully decorated",
+        "newText": "Beautifully decorated and carefully kept in excellent condition throughout"
+      },
+      {
+        "index": 2,
+        "currentText": "Very large",
+        "newText": "Extremely large, with many wide and spacious rooms inside it"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#52",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 320,
+    "correctIndex": 1,
+    "question": "In the sentence 'The monarch's decree was absolute and irrevocable,' what does 'irrevocable' mean?",
+    "correctText": "Not able to be changed or reversed",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Temporary",
+        "newText": "Lasting only briefly and easily changed later on"
+      },
+      {
+        "index": 2,
+        "currentText": "Very popular",
+        "newText": "Extremely popular and welcomed warmly by all the people"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#53",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 323,
+    "correctIndex": 1,
+    "question": "In the sentence 'He brought flowers to placate his mother after forgetting her birthday,' what does 'placate' mean?",
+    "correctText": "To calm or soothe someone who is upset",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "To copy someone's behaviour",
+        "newText": "To copy the exact way that another person behaves"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#54",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 326,
+    "correctIndex": 2,
+    "question": "In the sentence 'The eminent professor was invited to give the keynote speech,' what does 'eminent' mean?",
+    "correctText": "Famous and respected in a particular field",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Recently retired from public speaking",
+        "newText": "Recently retired after a long and successful public career"
+      },
+      {
+        "index": 1,
+        "currentText": "Nervously preparing for the speech",
+        "newText": "Nervously getting ready to give the important speech soon"
+      },
+      {
+        "index": 3,
+        "currentText": "From a foreign university overseas",
+        "newText": "Visiting here from a distant foreign university somewhere far overseas"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#55",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 329,
+    "correctIndex": 0,
+    "question": "In the sentence 'The committee reached a consensus after lengthy debate,' what does 'consensus' mean?",
+    "correctText": "General agreement among a group",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Complete disagreement",
+        "newText": "A total lack of any agreement"
+      },
+      {
+        "index": 1,
+        "currentText": "A heated argument",
+        "newText": "A long and bitterly heated public argument"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#56",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 375,
+    "correctIndex": 2,
+    "question": "In which sentence is 'crane' used as a verb meaning 'to stretch forward to see something'?",
+    "correctText": "Dad had to crane over the fence to watch the parade go past.",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "The construction crane towered above the new building.",
+        "newText": "A towering yellow crane lifted the heavy concrete slabs high onto the unfinished roof."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#57",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 382,
+    "correctIndex": 1,
+    "question": "If 'visible' means 'able to be seen', what does 'invisible' mean?",
+    "correctText": "Not able to be seen",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Easy to see",
+        "newText": "Very easy for anyone to see"
+      },
+      {
+        "index": 2,
+        "currentText": "Hard to see",
+        "newText": "Difficult but still just about possible to see"
+      },
+      {
+        "index": 4,
+        "currentText": "Seen by everyone",
+        "newText": "Clearly seen by each and every single person"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#58",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 396,
+    "correctIndex": 0,
+    "question": "The root 'port' means 'to carry'. What does 'transport' mean?",
+    "correctText": "To carry across from one place to another",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "To hide something",
+        "newText": "To hide something away safely in a secret place"
+      },
+      {
+        "index": 3,
+        "currentText": "To break something apart",
+        "newText": "To break something completely apart into many separate small pieces"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#59",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 397,
+    "correctIndex": 2,
+    "question": "The root 'dict' means 'to say or speak'. What does 'predict' mean?",
+    "correctText": "To say before (foretell)",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To say after",
+        "newText": "To say something only afterwards"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#60",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 403,
+    "correctIndex": 3,
+    "question": "Using your knowledge that 'mal' means 'bad', what does 'malfunction' most likely mean?",
+    "correctText": "To work badly or fail",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To work perfectly",
+        "newText": "To work perfectly without any faults"
+      },
+      {
+        "index": 1,
+        "currentText": "To work loudly",
+        "newText": "To work very loudly and make noise"
+      },
+      {
+        "index": 2,
+        "currentText": "To work slowly",
+        "newText": "To work slowly but still get things done"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#61",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 432,
+    "correctIndex": 1,
+    "question": "What does the expression 'break the ice' mean?",
+    "correctText": "To start a conversation with someone new",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "To cause trouble",
+        "newText": "To create trouble and stir up an argument"
+      },
+      {
+        "index": 0,
+        "currentText": "To smash something frozen",
+        "newText": "To smash apart a thick sheet of frozen water"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#62",
+    "file": "englishData.js",
+    "container": "vocabulary",
+    "arr": "topics.vocabulary.questions",
+    "id": 435,
+    "correctIndex": 0,
+    "question": "'The news was a dagger to her heart.' What does this metaphor suggest?",
+    "correctText": "The news was extremely painful and upsetting",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Someone attacked her",
+        "newText": "Someone had attacked her with a real sharp weapon"
+      }
+    ]
+  }
+]

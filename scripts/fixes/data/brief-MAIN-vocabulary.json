@@ -1,0 +1,2960 @@
+[
+  {
+    "ref": "MAIN-vocabulary#1",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 10,
+      "correctIndex": 1,
+      "questionHead": "In the sentence 'The judge's verdict"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The judge's verdict was unanimous,' what does 'unanimous' mean?",
+    "correctAnswer": "Agreed by everyone",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Unfair",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Surprising",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Announced publicly"
+      },
+      {
+        "index": 4,
+        "text": "Given reluctantly"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#2",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 15,
+      "correctIndex": 1,
+      "questionHead": "In the sentence 'The abandoned house"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "In the sentence 'The abandoned house looked very bleak,' what does 'bleak' mean?",
+    "correctAnswer": "Cold, bare, and unwelcoming",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Colourful and cheerful",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Large and impressive",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Old but charming"
+      },
+      {
+        "index": 4,
+        "text": "Bright and clean"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#3",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 18,
+      "correctIndex": 1,
+      "questionHead": "What does the word 'persistent' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'persistent' mean?",
+    "correctAnswer": "Refusing to give up",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Very fast",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Extremely careful",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Slightly worried"
+      },
+      {
+        "index": 2,
+        "text": "Giving up easily"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#4",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 21,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'ambiguous' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What does the word 'ambiguous' mean?",
+    "correctAnswer": "Open to more than one interpretation",
+    "correctWords": 6,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 2,
+        "currentText": "Completely wrong",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Easy to understand",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Exciting and dramatic"
+      },
+      {
+        "index": 0,
+        "text": "Very large and impressive"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#5",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 28,
+      "correctIndex": 1,
+      "questionHead": "What does the word 'obsolete' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'obsolete' mean?",
+    "correctAnswer": "No longer in use or out of date",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Very popular",
+        "currentWords": 2,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Brand new",
+        "currentWords": 2,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Extremely expensive",
+        "currentWords": 2,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Beautifully designed"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#6",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 43,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'He was confident"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "In the sentence 'He was confident he would win the race,' what does 'confident' mean?",
+    "correctAnswer": "Sure of himself",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Nervous",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Unsure",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Careless"
+      },
+      {
+        "index": 3,
+        "text": "Surprised"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#7",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 54,
+      "correctIndex": 0,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'benevolent'?",
+    "correctAnswer": "Kind and generous",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Dangerous",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Selfish",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Powerful",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Intelligent"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#8",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 85,
+      "correctIndex": 1,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'inevitable'?",
+    "correctAnswer": "Certain to happen",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Unlikely",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Surprising",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Avoidable"
+      },
+      {
+        "index": 4,
+        "text": "Invisible"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#9",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 88,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'The desolate landscape"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The desolate landscape stretched for miles,' what does 'desolate' mean?",
+    "correctAnswer": "Bleak, empty, and barren",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Beautiful and lively",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Warm and welcoming",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Green and fertile",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Flat and featureless"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#10",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 91,
+      "correctIndex": 2,
+      "questionHead": "In the sentence 'The audacious explorer"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The audacious explorer crossed the desert alone,' what does 'audacious' mean?",
+    "correctAnswer": "Showing a bold willingness to take risks",
+    "correctWords": 7,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Famous from previous expeditions abroad",
+        "currentWords": 5,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "Frightened of being far from civilisation",
+        "currentWords": 6,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Lost in unfamiliar and shifting terrain"
+      },
+      {
+        "index": 4,
+        "text": "Experienced from many years of travel"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#11",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 93,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'The malevolent villain"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The malevolent villain plotted against the hero,' what does 'malevolent' mean?",
+    "correctAnswer": "Having a wish to do evil to others",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Clever at outwitting the hero's allies",
+        "currentWords": 6,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Lonely from years spent in exile",
+        "currentWords": 6,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Powerful enough to threaten the kingdom",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Mysterious and rarely seen by anyone"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#12",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 125,
+      "correctIndex": 1,
+      "questionHead": "What does the word 'precious' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "What does the word 'precious' mean?",
+    "correctAnswer": "Of great value",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Very cheap",
+        "currentWords": 2,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Very heavy",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Very old"
+      },
+      {
+        "index": 4,
+        "text": "Very large"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#13",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 126,
+      "correctIndex": 2,
+      "questionHead": "What does the word 'weary' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "What does the word 'weary' mean?",
+    "correctAnswer": "Feeling very tired",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Angry",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Hungry",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Feeling scared",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Feeling ill"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#14",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 130,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'reveal' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "What does the word 'reveal' mean?",
+    "correctAnswer": "To make something known",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To hide something",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To destroy something",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "To protect something"
+      },
+      {
+        "index": 4,
+        "text": "To create something"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#15",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 136,
+      "correctIndex": 0,
+      "questionHead": "In the sentence 'The explorer ventured"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "In the sentence 'The explorer ventured deep into the jungle,' what does 'ventured' mean?",
+    "correctAnswer": "Dared to go",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Ran",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Flew",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Fell",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Looked"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#16",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 138,
+      "correctIndex": 0,
+      "questionHead": "In the sentence 'The view from"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "In the sentence 'The view from the hilltop was magnificent,' what does 'magnificent' mean?",
+    "correctAnswer": "Extremely impressive and beautiful",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Confusing",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Disappointing",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Ordinary"
+      },
+      {
+        "index": 4,
+        "text": "Frightening"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#17",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 152,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'triumph' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "What does the word 'triumph' mean?",
+    "correctAnswer": "A great victory or achievement",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A long journey",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "A big loss",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "A loud noise",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "A terrible mistake"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#18",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 153,
+      "correctIndex": 0,
+      "questionHead": "What does the word 'scarce' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "What does the word 'scarce' mean?",
+    "correctAnswer": "In short supply",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "Plentiful",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Very large",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Extremely cheap"
+      },
+      {
+        "index": 3,
+        "text": "Completely broken"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#19",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 172,
+      "correctIndex": 3,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'solemn'?",
+    "correctAnswer": "Very serious and dignified",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Cheerful",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Funny",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Loud",
+        "currentWords": 1,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Confused"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#20",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 177,
+      "correctIndex": 3,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'prosperous'?",
+    "correctAnswer": "Successful and wealthy",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Poor",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Lonely",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Elderly"
+      },
+      {
+        "index": 4,
+        "text": "Nervous"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#21",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 180,
+      "correctIndex": 4,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'tedious'?",
+    "correctAnswer": "Long and boring",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Short",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Frightening",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Exciting",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Dangerous"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#22",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 181,
+      "correctIndex": 0,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'resemble'?",
+    "correctAnswer": "Look similar to",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Differ from",
+        "currentWords": 2,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Admire greatly",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Replace completely"
+      },
+      {
+        "index": 4,
+        "text": "Forget about"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#23",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 194,
+      "correctIndex": 0,
+      "questionHead": "What does the word 'plausible' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'plausible' mean?",
+    "correctAnswer": "Seeming reasonable or probable",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "Impossible",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely silly",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Very complicated",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Completely true"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#24",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 196,
+      "correctIndex": 2,
+      "questionHead": "What does the word 'conspicuous' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'conspicuous' mean?",
+    "correctAnswer": "Clearly visible and noticeable",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Very quiet",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Slightly damaged",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Extremely old"
+      },
+      {
+        "index": 0,
+        "text": "Hidden from view"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#25",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 197,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'accumulate' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'accumulate' mean?",
+    "correctAnswer": "To gather together over time",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To lose gradually",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To break apart",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "To spread thinly",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "To clean thoroughly"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#26",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 198,
+      "correctIndex": 4,
+      "questionHead": "What does the word 'dilemma' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'dilemma' mean?",
+    "correctAnswer": "A tough either-or problem",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "An easy choice",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "A boring routine",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "A pleasant surprise"
+      },
+      {
+        "index": 3,
+        "text": "A quick solution"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#27",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 200,
+      "correctIndex": 1,
+      "questionHead": "What does the word 'omit' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'omit' mean?",
+    "correctAnswer": "To leave something out",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To include something",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "To explain something",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To improve something",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "To repeat something"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#28",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 205,
+      "correctIndex": 1,
+      "questionHead": "In the sentence 'Her enthusiasm for"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "In the sentence 'Her enthusiasm for reading was infectious,' what does 'infectious' mean?",
+    "correctAnswer": "Spreading easily to others",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Dangerous",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Annoying",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Unusual"
+      },
+      {
+        "index": 4,
+        "text": "Fading quickly"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#29",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 215,
+      "correctIndex": 1,
+      "questionHead": "In the sentence 'The referee's decision"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The referee's decision was impartial,' what does 'impartial' mean?",
+    "correctAnswer": "Treating both sides equally",
+    "correctWords": 4,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Unfair",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Incorrect"
+      },
+      {
+        "index": 3,
+        "text": "Delayed"
+      },
+      {
+        "index": 4,
+        "text": "Surprising"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#30",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 228,
+      "correctIndex": 0,
+      "questionHead": "What does the word 'substantial' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'substantial' mean?",
+    "correctAnswer": "Considerable in size",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Very tiny",
+        "currentWords": 2,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Completely free",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Slightly broken",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Quite ordinary"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#31",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 229,
+      "correctIndex": 4,
+      "questionHead": "What does the word 'plummet' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'plummet' mean?",
+    "correctAnswer": "To fall or drop rapidly",
+    "correctWords": 5,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To rise slowly",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To float gently",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "To stay level"
+      },
+      {
+        "index": 3,
+        "text": "To spin around"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#32",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 230,
+      "correctIndex": 2,
+      "questionHead": "What does the word 'compulsory' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'compulsory' mean?",
+    "correctAnswer": "Required by law or rule",
+    "correctWords": 5,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Optional",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Very popular"
+      },
+      {
+        "index": 3,
+        "text": "Extremely enjoyable"
+      },
+      {
+        "index": 4,
+        "text": "Slightly unusual"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#33",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 233,
+      "correctIndex": 3,
+      "questionHead": "In the sentence 'The council will"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "In the sentence 'The council will demolish the unsafe building,' what does 'demolish' mean?",
+    "correctAnswer": "Knock down completely",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Inspect closely",
+        "currentWords": 2,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": true
+      },
+      {
+        "index": 1,
+        "currentText": "Repair quickly",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Paint over",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Sell off"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#34",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 249,
+      "correctIndex": 0,
+      "questionHead": "In the sentence 'The fragrant roses"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "In the sentence 'The fragrant roses filled the room with scent,' what does 'fragrant' mean?",
+    "correctAnswer": "Having a pleasant sweet smell",
+    "correctWords": 5,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Wilting",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Brightly coloured",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Extremely large"
+      },
+      {
+        "index": 4,
+        "text": "Freshly picked"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#35",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 252,
+      "correctIndex": 3,
+      "questionHead": "In the sentence 'The brochure contained"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "In the sentence 'The brochure contained misleading information,' what does 'misleading' mean?",
+    "correctAnswer": "Giving a false impression",
+    "correctWords": 4,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Accurate description",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Genuinely interesting"
+      },
+      {
+        "index": 0,
+        "text": "Highly detailed account"
+      },
+      {
+        "index": 4,
+        "text": "Bright and colourful"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#36",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 254,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'diligent' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'diligent' mean?",
+    "correctAnswer": "Hardworking and showing careful effort",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Lazy and careless",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Quick but sloppy",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Clever but forgetful",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Strong but clumsy"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#37",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 257,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'endure' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'endure' mean?",
+    "correctAnswer": "To suffer through something patiently",
+    "correctWords": 5,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "To enjoy thoroughly",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "To avoid completely",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "To forget quickly"
+      },
+      {
+        "index": 0,
+        "text": "To give up immediately"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#38",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 261,
+      "correctIndex": 1,
+      "questionHead": "What does the word 'superfluous' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the word 'superfluous' mean?",
+    "correctAnswer": "Unnecessary and excessive",
+    "correctWords": 3,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Essential",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Very expensive"
+      },
+      {
+        "index": 3,
+        "text": "Extremely fast"
+      },
+      {
+        "index": 4,
+        "text": "Well organised"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#39",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 263,
+      "correctIndex": 3,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'candid'?",
+    "correctAnswer": "Frank and honest",
+    "correctWords": 3,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Shy",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Secretive",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Wealthy",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Graceful"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#40",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 264,
+      "correctIndex": 2,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'verbose'?",
+    "correctAnswer": "Using too many words",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Brief",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Quiet",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Clever"
+      },
+      {
+        "index": 4,
+        "text": "Musical"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#41",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 267,
+      "correctIndex": 3,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'vindictive'?",
+    "correctAnswer": "Having a strong desire for revenge",
+    "correctWords": 6,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Forgiving",
+        "currentWords": 1,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Extremely generous"
+      },
+      {
+        "index": 2,
+        "text": "Very quiet"
+      },
+      {
+        "index": 4,
+        "text": "Slightly confused"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#42",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 271,
+      "correctIndex": 4,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'futile'?",
+    "correctAnswer": "Pointless and without effect",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Successful",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely difficult",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Very enjoyable",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Slightly dangerous"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#43",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 289,
+      "correctIndex": 0,
+      "questionHead": "What does the word 'altruistic' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What does the word 'altruistic' mean?",
+    "correctAnswer": "Selflessly caring for others",
+    "correctWords": 4,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Very wealthy",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Physically strong",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Extremely clever"
+      },
+      {
+        "index": 2,
+        "text": "Selfish and greedy"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#44",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 293,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'The author's prose"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The author's prose was deliberately austere,' what does 'austere' mean?",
+    "correctAnswer": "Severe and plain in style",
+    "correctWords": 5,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Beautifully poetic",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Very funny"
+      },
+      {
+        "index": 3,
+        "text": "Extremely long"
+      },
+      {
+        "index": 1,
+        "text": "Flowery and elaborate"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#45",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 294,
+      "correctIndex": 0,
+      "questionHead": "In the sentence 'She felt an"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'She felt an acute sense of injustice at the unfair punishment,' what does 'acute' mean?",
+    "correctAnswer": "Very strong and intense",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Brief",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Mild",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Pleasant",
+        "currentWords": 1,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Slight"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#46",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 299,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'The novel provides"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The novel provides a poignant account of life during wartime,' what does 'poignant' mean?",
+    "correctAnswer": "Evoking a keen sense of sadness or pity",
+    "correctWords": 8,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Cheerful despite the dark subject",
+        "currentWords": 5,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "Boring and difficult to read through",
+        "currentWords": 6,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Factual and based on real events"
+      },
+      {
+        "index": 3,
+        "text": "Lengthy and full of unnecessary detail"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#47",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 300,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'Her sardonic smile"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'Her sardonic smile suggested she did not believe a word,' what does 'sardonic' mean?",
+    "correctAnswer": "Grimly mocking or cynical",
+    "correctWords": 4,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Warm",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Shy"
+      },
+      {
+        "index": 2,
+        "text": "Nervous"
+      },
+      {
+        "index": 3,
+        "text": "Beautiful"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#48",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 301,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'The architect's design"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The architect's design was both innovative and pragmatic,' what does 'pragmatic' mean?",
+    "correctAnswer": "Dealing with things in a practical way",
+    "correctWords": 7,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Unrealistic",
+        "currentWords": 1,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Very artistic",
+        "currentWords": 2,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Extremely expensive",
+        "currentWords": 2,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Rather old-fashioned"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#49",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 312,
+      "correctIndex": 3,
+      "questionHead": "What does the word 'reticent' mean?"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "What does the word 'reticent' mean?",
+    "correctAnswer": "Reserved and quiet",
+    "correctWords": 3,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Very talkative",
+        "currentWords": 2,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely friendly",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Always laughing"
+      },
+      {
+        "index": 4,
+        "text": "Rather clumsy"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#50",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 313,
+      "correctIndex": 0,
+      "questionHead": "Which word is closest in meaning"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Which word is closest in meaning to 'prolific'?",
+    "correctAnswer": "Producing a great deal",
+    "correctWords": 4,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Lazy",
+        "currentWords": 1,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Quiet"
+      },
+      {
+        "index": 3,
+        "text": "Wasteful"
+      },
+      {
+        "index": 4,
+        "text": "Clumsy"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#51",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 314,
+      "correctIndex": 4,
+      "questionHead": "In the sentence 'The dilapidated cottage"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The dilapidated cottage had been empty for years,' what does 'dilapidated' mean?",
+    "correctAnswer": "In a state of disrepair and ruin",
+    "correctWords": 7,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Newly built",
+        "currentWords": 2,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Beautifully decorated",
+        "currentWords": 2,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Very large",
+        "currentWords": 2,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Freshly painted"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#52",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 320,
+      "correctIndex": 1,
+      "questionHead": "In the sentence 'The monarch's decree"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The monarch's decree was absolute and irrevocable,' what does 'irrevocable' mean?",
+    "correctAnswer": "Not able to be changed or reversed",
+    "correctWords": 7,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Temporary",
+        "currentWords": 1,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Very popular",
+        "currentWords": 2,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Slightly confusing"
+      },
+      {
+        "index": 4,
+        "text": "Extremely generous"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#53",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 323,
+      "correctIndex": 1,
+      "questionHead": "In the sentence 'He brought flowers"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'He brought flowers to placate his mother after forgetting her birthday,' what does 'placate' mean?",
+    "correctAnswer": "To calm or soothe someone who is upset",
+    "correctWords": 8,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "To copy someone's behaviour",
+        "currentWords": 4,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 0,
+        "text": "To avoid speaking to someone"
+      },
+      {
+        "index": 4,
+        "text": "To embarrass someone in public"
+      },
+      {
+        "index": 2,
+        "text": "To blame someone for a mistake"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#54",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 326,
+      "correctIndex": 2,
+      "questionHead": "In the sentence 'The eminent professor"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The eminent professor was invited to give the keynote speech,' what does 'eminent' mean?",
+    "correctAnswer": "Famous and respected in a particular field",
+    "correctWords": 7,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Recently retired from public speaking",
+        "currentWords": 5,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Nervously preparing for the speech",
+        "currentWords": 5,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "From a foreign university overseas",
+        "currentWords": 5,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Young and just starting their career"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#55",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 329,
+      "correctIndex": 0,
+      "questionHead": "In the sentence 'The committee reached"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In the sentence 'The committee reached a consensus after lengthy debate,' what does 'consensus' mean?",
+    "correctAnswer": "General agreement among a group",
+    "correctWords": 5,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Complete disagreement",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "A heated argument",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "A formal vote"
+      },
+      {
+        "index": 4,
+        "text": "A quick decision"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#56",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 375,
+      "correctIndex": 2,
+      "questionHead": "In which sentence is 'crane' used"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "In which sentence is 'crane' used as a verb meaning 'to stretch forward to see something'?",
+    "correctAnswer": "Dad had to crane over the fence to watch the parade go past.",
+    "correctWords": 13,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "The construction crane towered above the new building.",
+        "currentWords": 8,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "A crane stood perfectly still in the shallow water."
+      },
+      {
+        "index": 4,
+        "text": "We spotted a beautiful crane wading by the lake."
+      },
+      {
+        "index": 0,
+        "text": "The enormous crane lifted the steel beams onto the roof."
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#57",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 382,
+      "correctIndex": 1,
+      "questionHead": "If 'visible' means 'able to be"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "If 'visible' means 'able to be seen', what does 'invisible' mean?",
+    "correctAnswer": "Not able to be seen",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Easy to see",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Hard to see",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Seen by everyone",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Seen from far away"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#58",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 396,
+      "correctIndex": 0,
+      "questionHead": "The root 'port' means 'to carry'."
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 1,
+    "subtype": null,
+    "question": "The root 'port' means 'to carry'. What does 'transport' mean?",
+    "correctAnswer": "To carry across from one place to another",
+    "correctWords": 8,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 2,
+        "currentText": "To hide something",
+        "currentWords": 3,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To break something apart",
+        "currentWords": 4,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "To build something new"
+      },
+      {
+        "index": 1,
+        "text": "To stay in one place"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#59",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 397,
+      "correctIndex": 2,
+      "questionHead": "The root 'dict' means 'to say"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "The root 'dict' means 'to say or speak'. What does 'predict' mean?",
+    "correctAnswer": "To say before (foretell)",
+    "correctWords": 4,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To say after",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "To say quietly"
+      },
+      {
+        "index": 3,
+        "text": "To say loudly"
+      },
+      {
+        "index": 4,
+        "text": "To say again"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#60",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 403,
+      "correctIndex": 3,
+      "questionHead": "Using your knowledge that 'mal' means"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "Using your knowledge that 'mal' means 'bad', what does 'malfunction' most likely mean?",
+    "correctAnswer": "To work badly or fail",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To work perfectly",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To work loudly",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "To work slowly",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "To work automatically"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#61",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 432,
+      "correctIndex": 1,
+      "questionHead": "What does the expression 'break the"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 2,
+    "subtype": null,
+    "question": "What does the expression 'break the ice' mean?",
+    "correctAnswer": "To start a conversation with someone new",
+    "correctWords": 7,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "To cause trouble",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "To smash something frozen",
+        "currentWords": 4,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "To ruin a party"
+      },
+      {
+        "index": 3,
+        "text": "To go ice skating"
+      }
+    ]
+  },
+  {
+    "ref": "MAIN-vocabulary#62",
+    "key": {
+      "file": "englishData.js",
+      "container": "vocabulary",
+      "arr": "topics.vocabulary.questions",
+      "id": 435,
+      "correctIndex": 0,
+      "questionHead": "'The news was a dagger to"
+    },
+    "passageTitle": null,
+    "passage": null,
+    "difficulty": 3,
+    "subtype": null,
+    "question": "'The news was a dagger to her heart.' What does this metaphor suggest?",
+    "correctAnswer": "The news was extremely painful and upsetting",
+    "correctWords": 7,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Someone attacked her",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "She was physically injured"
+      },
+      {
+        "index": 2,
+        "text": "She was brave and strong"
+      },
+      {
+        "index": 4,
+        "text": "She didn't care about the news"
+      }
+    ]
+  }
+]

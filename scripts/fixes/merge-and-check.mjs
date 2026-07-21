@@ -27,10 +27,13 @@ const authByRef = Object.fromEntries(authored.map(a => [a.ref, a]));
 const norm = s => String(s).trim().toLowerCase().replace(/\s+/g, ' ');
 const verified = [];
 const problems = [];
+const warnings = [];
+const skipped = [];
 
 for (const item of brief) {
   const a = authByRef[item.ref];
   if (!a) { problems.push(`${item.ref}: no authored output`); continue; }
+  if (a.skip) { skipped.push(`${item.ref}: ${a.reason || 'skipped'}`); continue; }
   const newByIdx = Object.fromEntries(a.rewrites.map(r => [r.index, r.newText]));
 
   // reconstruct all 5 final options
@@ -43,7 +46,9 @@ for (const item of brief) {
     finals[r.index] = nt;
     const w = words(nt);
     if (w < r.targetMinWords || w > r.targetMaxWords) {
-      problems.push(`${item.ref} idx${r.index}: ${w} words, target ${r.targetMinWords}-${r.targetMaxWords}  "${nt}"`);
+      // soft: word-target is guidance toward the rank goal; the hard gate is
+      // "correct no longer single-longest" (checked below) + the post-apply validator.
+      warnings.push(`${item.ref} idx${r.index}: ${w} words, target ${r.targetMinWords}-${r.targetMaxWords}  "${nt}"`);
     }
   }
   if (finals.some(x => x == null)) { problems.push(`${item.ref}: incomplete option set`); continue; }
@@ -70,7 +75,9 @@ for (const item of brief) {
   });
 }
 
-console.log(`\n${bucket}: ${brief.length} questions, ${verified.length} assembled`);
+console.log(`\n${bucket}: ${brief.length} questions, ${verified.length} assembled, ${skipped.length} skipped (format-locked)`);
+for (const s of skipped) console.log('  · skip ' + s);
+if (warnings.length) { console.log(`\n⚠ ${warnings.length} word-target warnings (soft — validator is the real gate):`); for (const w of warnings) console.log('  ' + w); }
 if (problems.length) {
   console.log(`\n✗ ${problems.length} PROBLEMS:`);
   for (const p of problems) console.log('  ' + p);

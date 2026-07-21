@@ -24,6 +24,7 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E'];
 const payload = [], key = [];
 for (const item of brief) {
   const a = authByRef[item.ref];
+  if (a?.skip) continue; // format-locked, not rewritten — nothing to verify
   const newByIdx = Object.fromEntries((a?.rewrites || []).map(r => [r.index, r.newText]));
   const finals = [];
   finals[item.key.correctIndex] = item.correctAnswer;
