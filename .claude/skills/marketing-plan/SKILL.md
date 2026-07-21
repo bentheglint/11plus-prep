@@ -32,7 +32,18 @@ Examples:
 - `/marketing-plan acme-saas`
 - `/marketing-plan` (will prompt for client name)
 
-On invocation, the skill reads `~/marketing-plans/{client-slug}/progress.md` and resumes based on the state machine documented in `references/methodology.md` Step 1.1.2 (fresh → INIT → REVIEW → FINALIZE → finalized). Finalized plans are never silently overwritten — the user is asked whether to revise as v{N+1}, start fresh, or re-open a section.
+On invocation, the skill reads the plan's `progress.md` (see "Where plans are stored" below) and resumes based on the state machine documented in `references/methodology.md` Step 1.1.2 (fresh → INIT → REVIEW → FINALIZE → finalized). Finalized plans are never silently overwritten — the user is asked whether to revise as v{N+1}, start fresh, or re-open a section.
+
+## Where plans are stored (must be sync-safe)
+
+**If the client is a project with its own git repo** (it has an `.agents/` dir — e.g. PrepStep → the `11plus-prep` repo), store the plan **inside that repo** so it version-controls and syncs across machines like every other project doc:
+
+- `<repo>/.agents/marketing-plan.md` — the compiled deliverable (the `final_plan.md` output)
+- `<repo>/.agents/marketing-plan/` — working files (`progress.md`, `research.md`, `sections/`) while the plan is in progress
+
+**Only if there is no project repo**, fall back to `~/marketing-plans/{client-slug}/`.
+
+⚠ **Never leave a project's plan only in `~/marketing-plans/`.** That folder sits outside every git repo and does NOT sync between machines — the other machine can then see all the marketing *skills* but not the *plan itself*. (This exact gap stranded PrepStep's plan on one laptop, 20 Jul 2026.)
 
 ## The three phases
 
@@ -207,7 +218,7 @@ What separates a good plan from a generic one:
 
 ## Output format
 
-The final deliverable is a single markdown file: `~/marketing-plans/{client-slug}/final_plan.md`.
+The final deliverable is a single markdown file — stored per "Where plans are stored (must be sync-safe)" above: `<repo>/.agents/marketing-plan.md` for a project with its own repo, else `~/marketing-plans/{client-slug}/final_plan.md`.
 
 Headers (`## 1. Executive summary`, etc.) are H2 for clean Notion paste. Tables for any structured comparison (RACI, idea bank, ops stack). Status legend for the idea bank. Internal references to other sections use `§N` (e.g., "see §5 for Activation detail").
 
