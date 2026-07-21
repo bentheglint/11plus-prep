@@ -1,0 +1,222 @@
+{
+  "MOCK-vocabulary": {
+    "inScope": true,
+    "n": 40,
+    "eligible": 40,
+    "phraseCount": 40,
+    "shortWordCount": 0,
+    "singleLongestPct": 75,
+    "tiePct": 20,
+    "rankHistPct": [
+      7.5,
+      2.5,
+      7.5,
+      7.5,
+      75
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 0,
+        "singleLongestPct": null
+      },
+      "2": {
+        "n": 20,
+        "singleLongestPct": 85
+      },
+      "3": {
+        "n": 20,
+        "singleLongestPct": 65
+      }
+    }
+  },
+  "MOCK-comprehension": {
+    "inScope": true,
+    "n": 163,
+    "eligible": 180,
+    "phraseCount": 163,
+    "shortWordCount": 17,
+    "singleLongestPct": 58.9,
+    "tiePct": 31.9,
+    "rankHistPct": [
+      7.4,
+      7.4,
+      10.4,
+      16,
+      58.9
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 45,
+        "singleLongestPct": 37.8
+      },
+      "2": {
+        "n": 59,
+        "singleLongestPct": 67.8
+      },
+      "3": {
+        "n": 59,
+        "singleLongestPct": 66.1
+      }
+    }
+  },
+  "MAIN-vocabulary": {
+    "inScope": true,
+    "n": 188,
+    "eligible": 453,
+    "phraseCount": 188,
+    "shortWordCount": 265,
+    "singleLongestPct": 53.2,
+    "tiePct": 42.6,
+    "rankHistPct": [
+      25.5,
+      5.9,
+      3.7,
+      11.7,
+      53.2
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 36,
+        "singleLongestPct": 44.4
+      },
+      "2": {
+        "n": 79,
+        "singleLongestPct": 50.6
+      },
+      "3": {
+        "n": 73,
+        "singleLongestPct": 60.3
+      }
+    }
+  },
+  "MAIN-wordClassGrammar": {
+    "inScope": true,
+    "n": 55,
+    "eligible": 404,
+    "phraseCount": 55,
+    "shortWordCount": 349,
+    "singleLongestPct": 52.7,
+    "tiePct": 38.2,
+    "rankHistPct": [
+      23.6,
+      3.6,
+      1.8,
+      18.2,
+      52.7
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 4,
+        "singleLongestPct": 50
+      },
+      "2": {
+        "n": 20,
+        "singleLongestPct": 45
+      },
+      "3": {
+        "n": 31,
+        "singleLongestPct": 58.1
+      }
+    }
+  },
+  "MAIN-comprehension": {
+    "inScope": false,
+    "n": 346,
+    "eligible": 405,
+    "phraseCount": 346,
+    "shortWordCount": 59,
+    "singleLongestPct": 20.8,
+    "tiePct": 53.5,
+    "rankHistPct": [
+      44.2,
+      9.8,
+      11.6,
+      13.6,
+      20.8
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 91,
+        "singleLongestPct": 11
+      },
+      "2": {
+        "n": 148,
+        "singleLongestPct": 20.3
+      },
+      "3": {
+        "n": 107,
+        "singleLongestPct": 29.9
+      }
+    }
+  },
+  "MOCK-wordClass": {
+    "inScope": false,
+    "n": 6,
+    "eligible": 30,
+    "phraseCount": 6,
+    "shortWordCount": 24,
+    "singleLongestPct": 50,
+    "tiePct": 50,
+    "rankHistPct": [
+      33.3,
+      16.7,
+      0,
+      0,
+      50
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 0,
+        "singleLongestPct": null
+      },
+      "2": {
+        "n": 2,
+        "singleLongestPct": 50
+      },
+      "3": {
+        "n": 4,
+        "singleLongestPct": 50
+      }
+    }
+  },
+  "MAIN-grammar": {
+    "inScope": false,
+    "n": 5,
+    "eligible": 385,
+    "phraseCount": 5,
+    "shortWordCount": 380,
+    "singleLongestPct": 20,
+    "tiePct": 80,
+    "rankHistPct": [
+      60,
+      0,
+      20,
+      0,
+      20
+    ],
+    "byDifficulty": {
+      "1": {
+        "n": 0,
+        "singleLongestPct": null
+      },
+      "2": {
+        "n": 1,
+        "singleLongestPct": 0
+      },
+      "3": {
+        "n": 4,
+        "singleLongestPct": 25
+      }
+    }
+  },
+  "MAIN-spelling": {
+    "inScope": false,
+    "n": 0,
+    "eligible": 420
+  },
+  "MAIN-punctuation": {
+    "inScope": false,
+    "n": 0,
+    "eligible": 430
+  }
+}

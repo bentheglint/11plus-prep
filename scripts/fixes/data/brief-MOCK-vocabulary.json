@@ -1,0 +1,1079 @@
+[
+  {
+    "ref": "MOCK-vocabulary#1",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "vocabularyQuestions",
+      "id": 19,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 3, what does the"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 3, what does the word 'electrified' mean?",
+    "correctAnswer": "Filled with great excitement",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Shocked by electricity",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Made extremely angry",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Confused and bewildered",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Made deeply worried"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#2",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "vocabularyQuestions",
+      "id": 20,
+      "correctIndex": 0,
+      "questionHead": "In paragraph 5, what does 'undeterred'"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 5, what does 'undeterred' mean?",
+    "correctAnswer": "Not discouraged or put off",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Not interested",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Not educated",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Not believed",
+        "currentWords": 2,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Not invited"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#3",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "vocabularyQuestions",
+      "id": 21,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 8, what does 'teetered"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 8, what does 'teetered on the edge of financial ruin' suggest?",
+    "correctAnswer": "The family was dangerously close to having no money at all",
+    "correctWords": 11,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "The family was saving money carefully",
+        "currentWords": 6,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "The family lived on a cliff edge",
+        "currentWords": 7,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "The family had recently lost some money",
+        "currentWords": 7,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "The family was about to become very wealthy",
+        "currentWords": 8,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-vocabulary#4",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "vocabularyQuestions",
+      "id": 22,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 10, what does the"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 10, what does the word 'elusive' mean in 'public recognition remained elusive'?",
+    "correctAnswer": "Difficult to obtain or find",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Unnecessary",
+        "currentWords": 1,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Unwanted",
+        "currentWords": 1,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Forgotten",
+        "currentWords": 1,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Impossible to achieve"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#5",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "vocabularyQuestions",
+      "id": 19,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 2, what does the"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 2, what does the word 'consortium' mean?",
+    "correctAnswer": "A group of companies working together",
+    "correctWords": 6,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A government department",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "A financial penalty",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "A legal agreement"
+      },
+      {
+        "index": 2,
+        "text": "A type of construction machine"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#6",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "vocabularyQuestions",
+      "id": 20,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 7, what does 'nerve-wracking'"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 7, what does 'nerve-wracking' mean?",
+    "correctAnswer": "Causing great anxiety or tension",
+    "correctWords": 5,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Physically exhausting",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Extremely boring"
+      },
+      {
+        "index": 3,
+        "text": "Surprisingly easy"
+      },
+      {
+        "index": 4,
+        "text": "Dangerously cold"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#7",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "vocabularyQuestions",
+      "id": 19,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 3, what does 'bioluminescence'"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 3, what does 'bioluminescence' mean?",
+    "correctAnswer": "The ability to produce light from within the body",
+    "correctWords": 9,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "The ability to see in darkness",
+        "currentWords": 6,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "The ability to change shape underwater",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "The ability to glow when touched",
+        "currentWords": 6,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "The ability to detect heat from other creatures",
+        "currentWords": 8,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-vocabulary#8",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "vocabularyQuestions",
+      "id": 20,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 4, what does 'captivated'"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 4, what does 'captivated' mean?",
+    "correctAnswer": "Fascinated and held the attention of",
+    "correctWords": 6,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Frightened",
+        "currentWords": 1,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Captured and imprisoned",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Confused and puzzled",
+        "currentWords": 3,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Bored and disappointed"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#9",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "vocabularyQuestions",
+      "id": 21,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 5, what does the"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 5, what does the word 'sobering' suggest about the discovery of the plastic bag?",
+    "correctAnswer": "It made people think seriously about a worrying issue",
+    "correctWords": 9,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "It was exciting and unexpected",
+        "currentWords": 5,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "It helped scientists understand deep-sea pressure",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "It was amusing but not important"
+      },
+      {
+        "index": 3,
+        "text": "It proved that plastic is very strong"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#10",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "vocabularyQuestions",
+      "id": 21,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 5, what does 'haunting'"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 5, what does 'haunting' mean when describing the plaster casts?",
+    "correctAnswer": "Deeply moving and impossible to forget",
+    "correctWords": 6,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "Scientifically valuable",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Beautiful and delicate"
+      },
+      {
+        "index": 3,
+        "text": "Old and crumbling"
+      },
+      {
+        "index": 0,
+        "text": "Frightening like a ghost"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#11",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "vocabularyQuestions",
+      "id": 22,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 10, what does 'intricate'"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 10, what does 'intricate' mean?",
+    "correctAnswer": "Containing very fine, detailed patterns",
+    "correctWords": 5,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Very old",
+        "currentWords": 2,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Extremely large",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Made from expensive materials",
+        "currentWords": 4,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Hidden beneath the floor",
+        "currentWords": 4,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-vocabulary#12",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "new-neighbourhood",
+      "arr": "vocabularyQuestions",
+      "id": 19,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 1, what does 'dread'"
+    },
+    "passageTitle": "The New Neighbourhood",
+    "passage": "(1) The removal van pulled away with a belch of grey exhaust, leaving Aisha standing on the unfamiliar pavement with a cardboard box of books and a growing sense of dread. Number fourteen Linden Close looked exactly like every other house on the street — red brick, white-framed windows, a square of lawn barely larger than a bath towel. It was nothing like their old flat above the launderette on Keighley Road, where the rumble of washing machines had been the soundtrack to her entire life. That flat had been cramped, noisy, and perpetually warm from the dryers below. She missed it already.\n\n(2) \"It's going to be brilliant, love,\" her mum said, appearing in the doorway with a mug of tea balanced on a stack of plates. She had been saying this for weeks, with the relentless cheerfulness of someone trying to convince herself as much as anyone else. Aisha's dad had started a new job at the hospital in town, which was the reason for the move, but knowing the reason did not make the reality any easier. Aisha was twelve years old, and every person she had ever known — every friend, every teacher, every shopkeeper who knew her name — was now forty-three miles away.\n\n(3) School started on Monday. Aisha spent the weekend unpacking boxes and arranging her bedroom, placing her books in alphabetical order on the new shelves her dad had put up, slightly crooked, on Saturday afternoon. She laid out her new uniform on the chair: a maroon blazer that smelled of plastic packaging, a striped tie she had not yet learned to knot properly, and shoes so stiff they squeaked when she walked. Everything about it felt wrong — as though she was putting on a costume for a part she had not auditioned for.\n\n(4) Westfield Academy was a sprawling modern building surrounded by playing fields that seemed to stretch to the horizon. The corridors hummed with the noise of six hundred students who all appeared to know exactly where they were going. Aisha did not. She clutched her timetable like a life raft and navigated from room to room with the cautious alertness of someone crossing a minefield. By lunchtime, she had been to the wrong classroom twice, dropped her pencil case in front of the entire maths group, and been asked by three separate people whether she was lost.\n\n(5) She ate her lunch alone on a bench near the science block, unwrapping the cheese sandwich her mum had packed with a note tucked inside: \"You're braver than you think. Love, Mum x.\" Aisha folded the note carefully and slipped it into her blazer pocket. She was not feeling particularly brave. She was feeling invisible — or worse, visible in all the wrong ways. The new girl. The one who did not know anyone. The one eating alone.\n\n(6) It was during afternoon registration that everything shifted. A girl with a mass of curly red hair and paint-stained fingers dropped into the seat beside Aisha and said, without any preamble whatsoever: \"You're new. I'm Meg. Do you like art?\" Before Aisha could formulate a proper answer, Meg had already launched into a breathless description of the mural she was painting for the school's reception area — a rainforest scene featuring a jaguar that, according to Meg, currently looked more like a startled cat.\n\n(7) \"I need someone to do the leaves,\" Meg continued, as though they had known each other for years. \"There are about four hundred leaves and I cannot face painting them all myself. Do you paint?\" Aisha did not paint. She had never painted anything more ambitious than a birthday card. But something about Meg's completely unselfconscious enthusiasm was impossible to resist, and before she knew what was happening, Aisha had agreed to spend Tuesday lunchtime in the art room with a palette of greens and absolutely no idea what she was doing.\n\n(8) Tuesday arrived, and Aisha found herself cross-legged on a dust sheet in front of an enormous canvas, dabbing tentative spots of emerald and lime onto branches that Meg had sketched in charcoal. The art room smelled of turpentine and damp clay and something indefinably creative. Meg painted beside her, chattering constantly — about her three cats, her disastrous attempt to learn the violin, the geography teacher who apparently looked exactly like a parrot, and a hundred other things that tumbled out of her without pause or filter.\n\n(9) Aisha listened, smiled, and gradually found herself talking too. She told Meg about the flat above the launderette, about how the vibration of the spin cycle had been strangely soothing at night, about her dad's new job and her mum's relentless optimism. Meg listened with genuine interest, asked questions that showed she was actually paying attention, and did not once say anything as meaningless as \"You'll settle in soon.\" Instead, she said: \"My family moved here when I was nine. The first month was absolutely rubbish. Then I found the art room, and it sort of became my place. Maybe it can be yours too.\"\n\n(10) Over the following weeks, the art room became exactly that. Aisha discovered that painting leaves was surprisingly meditative — the repetitive motion of brush on canvas quietened the anxious chatter in her head. She also discovered that Meg came with a wider circle of friends: Omar, who was obsessed with chess and terrible jokes; Priya, who wrote poetry and carried a different book every day; and Lucas, who could solve a Rubik's cube in under a minute and claimed to have once eaten fourteen custard creams in a single sitting.\n\n(11) They were not the loudest group in the year, nor the most popular by whatever mysterious criteria determined such things. But they were warm, funny, and entirely unbothered by the fact that Aisha was new. She started to look forward to lunchtimes rather than dreading them. She learned to knot her tie properly. She stopped getting lost in the corridors. The maroon blazer began to feel less like a costume and more like something that actually belonged to her.\n\n(12) One evening in late October, Aisha was sitting at her desk doing homework when her mum appeared in the doorway. \"Everything alright, love?\" she asked, with the careful tone she had been using since the move — as though Aisha were made of something breakable. Aisha looked up from her history textbook and realised, with a small jolt of surprise, that the answer was genuinely yes. She thought of the art room, of Meg's laugh, of the mural that now featured a jaguar that looked convincingly like a jaguar. She thought of the note still folded in her blazer pocket. \"Yeah, Mum,\" she said. \"It actually is.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 1, what does 'dread' mean?",
+    "correctAnswer": "Great fear or anxiety about something",
+    "correctWords": 6,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Excitement",
+        "currentWords": 1,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Curiosity",
+        "currentWords": 1,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Tiredness",
+        "currentWords": 1,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Confusion"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#13",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "cave-waterfall",
+      "arr": "vocabularyQuestions",
+      "id": 20,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 4, what does 'translucent'"
+    },
+    "passageTitle": "The Cave Beyond the Waterfall",
+    "passage": "(1) The waterfall roared like a living thing. It tumbled over the lip of the cliff in a great white curtain, crashing into the pool below with a force that sent plumes of spray drifting across the rocks. Sam could feel the vibration through the soles of his boots, a deep, constant tremor that seemed to come from the earth itself. He tightened his grip on the mossy ledge and tried not to look down.\n\n(2) \"Just three more metres,\" called his sister Jess, who was already perched on a narrow shelf of rock behind the falls. She had scrambled across the ledge as casually as if she were walking along a garden path. Jess was like that — she approached everything with the unshakeable confidence of someone who had never once considered that things might go wrong. Sam, two years younger at eleven, approached everything with a detailed mental catalogue of exactly how wrong things could go.\n\n(3) The ledge that ran behind the waterfall was barely thirty centimetres wide, slick with spray, and bordered on one side by a wall of wet rock and on the other by a thundering column of water. If he slipped, he would fall four metres into the pool below — which was deep enough to cushion the impact, probably, but that single word 'probably' occupied a very large and uncomfortable space in Sam's imagination. He pressed his back against the rock wall, edged sideways, and tried to focus on Jess's outstretched hand rather than the roaring void beside him.\n\n(4) \"Got you,\" Jess said, pulling him onto the wider ledge behind the falls. Sam exhaled a breath he had not realised he was holding. The noise here was extraordinary — not louder, exactly, but different. The water formed a translucent curtain barely a metre from where they stood, and the sound was all around them, above and below and behind, as though they were standing inside the throat of some enormous creature. Light filtered through the falling water in rippling, greenish patterns that danced across the rock walls like something from a dream.\n\n(5) And there, exactly where their grandfather's map had said it would be, was the cave. It was little more than a crack in the rock at first — a dark fissure about a metre wide and two metres tall, just large enough for a person to squeeze through sideways. But beyond the entrance, the crack widened rapidly, and Sam could see the passage opening out into what appeared to be a much larger space beyond.\n\n(6) Their grandfather, Arthur Hargreaves, had been a geologist who had spent his career mapping the cave systems of the Yorkshire Dales. He had died the previous winter, leaving behind a house full of books, a shed full of rock samples, and — tucked inside a battered leather journal — a hand-drawn map of a cave he claimed to have discovered in 1967 but had never told anyone about. \"Behind the falls at Thorndale Beck\" was written in his careful, sloping handwriting, followed by: \"Remarkable formations. Must return with proper equipment. Note: passage continues beyond the main chamber — have not explored.\"\n\n(7) Jess had found the journal while helping to sort Grandpa Arthur's belongings. She had shown it to Sam with shining eyes and the unmistakeable expression of someone who had already decided what they were going to do. Sam had pointed out, reasonably, that exploring an unmapped cave behind a waterfall was exactly the sort of thing their parents would forbid. Jess had pointed out, less reasonably but more persuasively, that it was exactly the sort of thing Grandpa Arthur would have wanted them to do.\n\n(8) They squeezed through the entrance one at a time, Jess first with the torch, Sam following with the map sealed in a plastic wallet. The passage was cool and dry — a sharp contrast to the drenching spray outside. The rock beneath their feet was smooth, worn by water that must have flowed here thousands of years ago but had long since found a different route. After about ten metres, the passage opened into a chamber that made both of them stop and stare.\n\n(9) The cave was roughly circular, perhaps fifteen metres across, with a ceiling that arched overhead like the inside of a cathedral dome. But it was the formations that took their breath away. Stalactites hung from the ceiling in dense clusters, some as thin as drinking straws, others as thick as Sam's arm, their surfaces glistening with moisture in the torchlight. Stalagmites rose from the floor to meet them, creating pillars where the two had joined over millennia. The colours were astonishing — bands of cream, amber, and russet, with veins of pale blue where mineral deposits had seeped through the limestone.\n\n(10) \"It's like a palace,\" Jess whispered. Her voice echoed softly off the walls, returning to them as a gentle murmur. She moved the torch beam slowly across the chamber, and the light caught a frozen waterfall of calcite flowing down one wall — a cascade of stone that had taken tens of thousands of years to form, each layer deposited grain by grain by water carrying dissolved limestone from the surface above.\n\n(11) Sam unfolded the map and held it up to the torchlight. His grandfather's careful annotations marked the positions of key formations: \"organ pipes\" (a row of thin, hollow stalactites that rang with a musical note when tapped gently), \"the curtain\" (a sheet of translucent calcite hanging from a ledge), and — at the far end of the chamber — \"passage continues here.\" An arrow pointed into the darkness beyond the main chamber, into the section Grandpa Arthur had never explored.\n\n(12) Sam looked at Jess. Jess looked at Sam. The sensible thing — the thing Sam usually argued for — would be to turn back, tell someone qualified about the cave, and let professionals investigate the unexplored passage. But standing in this extraordinary place that their grandfather had kept secret for over fifty years, with the sound of the waterfall a distant rumble and the ancient rock glittering all around them, the sensible thing felt remarkably unpersuasive. Sam folded the map, tucked it back into its wallet, and nodded towards the darkness. \"Shall we?\" he said. Jess grinned. \"Thought you'd never ask.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 4, what does 'translucent' mean?",
+    "correctAnswer": "Allowing some light through but not fully transparent",
+    "correctWords": 8,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Completely see-through",
+        "currentWords": 2,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Sparkling with colour",
+        "currentWords": 3,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Completely solid and dark"
+      },
+      {
+        "index": 2,
+        "text": "Reflecting light like a mirror"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#14",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "cave-waterfall",
+      "arr": "vocabularyQuestions",
+      "id": 21,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 5, what does 'fissure'"
+    },
+    "passageTitle": "The Cave Beyond the Waterfall",
+    "passage": "(1) The waterfall roared like a living thing. It tumbled over the lip of the cliff in a great white curtain, crashing into the pool below with a force that sent plumes of spray drifting across the rocks. Sam could feel the vibration through the soles of his boots, a deep, constant tremor that seemed to come from the earth itself. He tightened his grip on the mossy ledge and tried not to look down.\n\n(2) \"Just three more metres,\" called his sister Jess, who was already perched on a narrow shelf of rock behind the falls. She had scrambled across the ledge as casually as if she were walking along a garden path. Jess was like that — she approached everything with the unshakeable confidence of someone who had never once considered that things might go wrong. Sam, two years younger at eleven, approached everything with a detailed mental catalogue of exactly how wrong things could go.\n\n(3) The ledge that ran behind the waterfall was barely thirty centimetres wide, slick with spray, and bordered on one side by a wall of wet rock and on the other by a thundering column of water. If he slipped, he would fall four metres into the pool below — which was deep enough to cushion the impact, probably, but that single word 'probably' occupied a very large and uncomfortable space in Sam's imagination. He pressed his back against the rock wall, edged sideways, and tried to focus on Jess's outstretched hand rather than the roaring void beside him.\n\n(4) \"Got you,\" Jess said, pulling him onto the wider ledge behind the falls. Sam exhaled a breath he had not realised he was holding. The noise here was extraordinary — not louder, exactly, but different. The water formed a translucent curtain barely a metre from where they stood, and the sound was all around them, above and below and behind, as though they were standing inside the throat of some enormous creature. Light filtered through the falling water in rippling, greenish patterns that danced across the rock walls like something from a dream.\n\n(5) And there, exactly where their grandfather's map had said it would be, was the cave. It was little more than a crack in the rock at first — a dark fissure about a metre wide and two metres tall, just large enough for a person to squeeze through sideways. But beyond the entrance, the crack widened rapidly, and Sam could see the passage opening out into what appeared to be a much larger space beyond.\n\n(6) Their grandfather, Arthur Hargreaves, had been a geologist who had spent his career mapping the cave systems of the Yorkshire Dales. He had died the previous winter, leaving behind a house full of books, a shed full of rock samples, and — tucked inside a battered leather journal — a hand-drawn map of a cave he claimed to have discovered in 1967 but had never told anyone about. \"Behind the falls at Thorndale Beck\" was written in his careful, sloping handwriting, followed by: \"Remarkable formations. Must return with proper equipment. Note: passage continues beyond the main chamber — have not explored.\"\n\n(7) Jess had found the journal while helping to sort Grandpa Arthur's belongings. She had shown it to Sam with shining eyes and the unmistakeable expression of someone who had already decided what they were going to do. Sam had pointed out, reasonably, that exploring an unmapped cave behind a waterfall was exactly the sort of thing their parents would forbid. Jess had pointed out, less reasonably but more persuasively, that it was exactly the sort of thing Grandpa Arthur would have wanted them to do.\n\n(8) They squeezed through the entrance one at a time, Jess first with the torch, Sam following with the map sealed in a plastic wallet. The passage was cool and dry — a sharp contrast to the drenching spray outside. The rock beneath their feet was smooth, worn by water that must have flowed here thousands of years ago but had long since found a different route. After about ten metres, the passage opened into a chamber that made both of them stop and stare.\n\n(9) The cave was roughly circular, perhaps fifteen metres across, with a ceiling that arched overhead like the inside of a cathedral dome. But it was the formations that took their breath away. Stalactites hung from the ceiling in dense clusters, some as thin as drinking straws, others as thick as Sam's arm, their surfaces glistening with moisture in the torchlight. Stalagmites rose from the floor to meet them, creating pillars where the two had joined over millennia. The colours were astonishing — bands of cream, amber, and russet, with veins of pale blue where mineral deposits had seeped through the limestone.\n\n(10) \"It's like a palace,\" Jess whispered. Her voice echoed softly off the walls, returning to them as a gentle murmur. She moved the torch beam slowly across the chamber, and the light caught a frozen waterfall of calcite flowing down one wall — a cascade of stone that had taken tens of thousands of years to form, each layer deposited grain by grain by water carrying dissolved limestone from the surface above.\n\n(11) Sam unfolded the map and held it up to the torchlight. His grandfather's careful annotations marked the positions of key formations: \"organ pipes\" (a row of thin, hollow stalactites that rang with a musical note when tapped gently), \"the curtain\" (a sheet of translucent calcite hanging from a ledge), and — at the far end of the chamber — \"passage continues here.\" An arrow pointed into the darkness beyond the main chamber, into the section Grandpa Arthur had never explored.\n\n(12) Sam looked at Jess. Jess looked at Sam. The sensible thing — the thing Sam usually argued for — would be to turn back, tell someone qualified about the cave, and let professionals investigate the unexplored passage. But standing in this extraordinary place that their grandfather had kept secret for over fifty years, with the sound of the waterfall a distant rumble and the ancient rock glittering all around them, the sensible thing felt remarkably unpersuasive. Sam folded the map, tucked it back into its wallet, and nodded towards the darkness. \"Shall we?\" he said. Jess grinned. \"Thought you'd never ask.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 5, what does 'fissure' mean?",
+    "correctAnswer": "A narrow opening or crack in rock",
+    "correctWords": 7,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A deep pool",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "A natural shelf"
+      },
+      {
+        "index": 4,
+        "text": "A loose boulder"
+      },
+      {
+        "index": 2,
+        "text": "A type of cave animal"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#15",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "cave-waterfall",
+      "arr": "vocabularyQuestions",
+      "id": 22,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 12, what does 'unpersuasive'"
+    },
+    "passageTitle": "The Cave Beyond the Waterfall",
+    "passage": "(1) The waterfall roared like a living thing. It tumbled over the lip of the cliff in a great white curtain, crashing into the pool below with a force that sent plumes of spray drifting across the rocks. Sam could feel the vibration through the soles of his boots, a deep, constant tremor that seemed to come from the earth itself. He tightened his grip on the mossy ledge and tried not to look down.\n\n(2) \"Just three more metres,\" called his sister Jess, who was already perched on a narrow shelf of rock behind the falls. She had scrambled across the ledge as casually as if she were walking along a garden path. Jess was like that — she approached everything with the unshakeable confidence of someone who had never once considered that things might go wrong. Sam, two years younger at eleven, approached everything with a detailed mental catalogue of exactly how wrong things could go.\n\n(3) The ledge that ran behind the waterfall was barely thirty centimetres wide, slick with spray, and bordered on one side by a wall of wet rock and on the other by a thundering column of water. If he slipped, he would fall four metres into the pool below — which was deep enough to cushion the impact, probably, but that single word 'probably' occupied a very large and uncomfortable space in Sam's imagination. He pressed his back against the rock wall, edged sideways, and tried to focus on Jess's outstretched hand rather than the roaring void beside him.\n\n(4) \"Got you,\" Jess said, pulling him onto the wider ledge behind the falls. Sam exhaled a breath he had not realised he was holding. The noise here was extraordinary — not louder, exactly, but different. The water formed a translucent curtain barely a metre from where they stood, and the sound was all around them, above and below and behind, as though they were standing inside the throat of some enormous creature. Light filtered through the falling water in rippling, greenish patterns that danced across the rock walls like something from a dream.\n\n(5) And there, exactly where their grandfather's map had said it would be, was the cave. It was little more than a crack in the rock at first — a dark fissure about a metre wide and two metres tall, just large enough for a person to squeeze through sideways. But beyond the entrance, the crack widened rapidly, and Sam could see the passage opening out into what appeared to be a much larger space beyond.\n\n(6) Their grandfather, Arthur Hargreaves, had been a geologist who had spent his career mapping the cave systems of the Yorkshire Dales. He had died the previous winter, leaving behind a house full of books, a shed full of rock samples, and — tucked inside a battered leather journal — a hand-drawn map of a cave he claimed to have discovered in 1967 but had never told anyone about. \"Behind the falls at Thorndale Beck\" was written in his careful, sloping handwriting, followed by: \"Remarkable formations. Must return with proper equipment. Note: passage continues beyond the main chamber — have not explored.\"\n\n(7) Jess had found the journal while helping to sort Grandpa Arthur's belongings. She had shown it to Sam with shining eyes and the unmistakeable expression of someone who had already decided what they were going to do. Sam had pointed out, reasonably, that exploring an unmapped cave behind a waterfall was exactly the sort of thing their parents would forbid. Jess had pointed out, less reasonably but more persuasively, that it was exactly the sort of thing Grandpa Arthur would have wanted them to do.\n\n(8) They squeezed through the entrance one at a time, Jess first with the torch, Sam following with the map sealed in a plastic wallet. The passage was cool and dry — a sharp contrast to the drenching spray outside. The rock beneath their feet was smooth, worn by water that must have flowed here thousands of years ago but had long since found a different route. After about ten metres, the passage opened into a chamber that made both of them stop and stare.\n\n(9) The cave was roughly circular, perhaps fifteen metres across, with a ceiling that arched overhead like the inside of a cathedral dome. But it was the formations that took their breath away. Stalactites hung from the ceiling in dense clusters, some as thin as drinking straws, others as thick as Sam's arm, their surfaces glistening with moisture in the torchlight. Stalagmites rose from the floor to meet them, creating pillars where the two had joined over millennia. The colours were astonishing — bands of cream, amber, and russet, with veins of pale blue where mineral deposits had seeped through the limestone.\n\n(10) \"It's like a palace,\" Jess whispered. Her voice echoed softly off the walls, returning to them as a gentle murmur. She moved the torch beam slowly across the chamber, and the light caught a frozen waterfall of calcite flowing down one wall — a cascade of stone that had taken tens of thousands of years to form, each layer deposited grain by grain by water carrying dissolved limestone from the surface above.\n\n(11) Sam unfolded the map and held it up to the torchlight. His grandfather's careful annotations marked the positions of key formations: \"organ pipes\" (a row of thin, hollow stalactites that rang with a musical note when tapped gently), \"the curtain\" (a sheet of translucent calcite hanging from a ledge), and — at the far end of the chamber — \"passage continues here.\" An arrow pointed into the darkness beyond the main chamber, into the section Grandpa Arthur had never explored.\n\n(12) Sam looked at Jess. Jess looked at Sam. The sensible thing — the thing Sam usually argued for — would be to turn back, tell someone qualified about the cave, and let professionals investigate the unexplored passage. But standing in this extraordinary place that their grandfather had kept secret for over fifty years, with the sound of the waterfall a distant rumble and the ancient rock glittering all around them, the sensible thing felt remarkably unpersuasive. Sam folded the map, tucked it back into its wallet, and nodded towards the darkness. \"Shall we?\" he said. Jess grinned. \"Thought you'd never ask.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 12, what does 'unpersuasive' mean in the phrase 'the sensible thing felt remarkably unpersuasive'?",
+    "correctAnswer": "Not convincing or compelling",
+    "correctWords": 4,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Very convincing",
+        "currentWords": 2,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Difficult to understand",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Dangerous and risky",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Impossible to do",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-vocabulary#16",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "lighthouse-storms-end",
+      "arr": "vocabularyQuestions",
+      "id": 19,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 1, what does 'silhouette'"
+    },
+    "passageTitle": "The Lighthouse at Storm's End",
+    "passage": "(1) Nobody had lived in the lighthouse at Storm's End for eleven years, and the village of Pencarrow had grown so accustomed to its dark silhouette against the evening sky that most people had stopped noticing it entirely. It stood on a spur of black rock at the headland, battered by salt wind, its white paint peeling in long grey strips. The glass at the top, which had once housed the great revolving lamp that warned ships away from the reef, was cracked and clouded with grime. The lighthouse was, by every reasonable measure, abandoned.\n\n(2) Which was why, on the evening of October the fourteenth, twelve-year-old Noor Abbas nearly dropped her binoculars when she saw the light.\n\n(3) It was not a steady beam, like the old lighthouse would have produced. It was a quick, irregular flicker — three short flashes, then a pause, then two long flashes, then darkness again. Noor watched from her bedroom window, which looked directly across the bay towards the headland, and counted the pattern carefully. Three short, two long. A pause of exactly ten seconds. Then the sequence repeated. It was too deliberate, too rhythmic, to be a reflection or a trick of the moonlight. Someone was up there, and they were signalling.\n\n(4) Noor had moved to Pencarrow eighteen months earlier, when her mother had taken the position of headteacher at the village primary school. She had not entirely settled — the village was small, the nearest town was a forty-minute bus ride away, and the other children treated her with the polite wariness that small communities reserve for newcomers. But she had developed two consuming passions that made the isolation bearable: birdwatching, which was superb along this stretch of the Cornish coast, and codes.\n\n(5) The codes had begun as a rainy-afternoon hobby, when she discovered a battered copy of Simon Singh's 'The Code Book' in the mobile library. She had devoured it in three days and moved on to teaching herself Morse code, the Caesar cipher, and a handful of other systems that she practised by writing encrypted messages to herself in a notebook she kept under her mattress. She was not yet fluent in Morse, but she knew enough to recognise what she was seeing through the binoculars. The pattern was not Morse. Three short, two long did not correspond to any standard Morse character. This was something else — something she did not yet understand.\n\n(6) Over the following three nights, Noor kept careful watch. The signals appeared at precisely 9:47 pm each evening, lasted for approximately eight minutes, and followed the same basic structure — short and long flashes in varying combinations, separated by ten-second pauses. She recorded every sequence in her notebook, filling four pages with neat columns of dots and dashes. On the fourth night, she brought her mother's camera with its telephoto lens and managed to photograph the light source. When she enlarged the image on her laptop, she could just make out a pale, rectangular glow — not a torch, she decided, but something flat and even. A lantern, perhaps, or a tablet screen held up to the window.\n\n(7) The obvious step was to tell someone. Noor considered this carefully and decided against it. Adults, in her experience, had a tendency to either dismiss things they could not immediately explain or to overreact in ways that shut down the interesting possibilities. She wanted to understand the signal before anyone else got involved. She wanted to crack the code.\n\n(8) On Saturday morning, armed with a flask of tea, a packet of digestive biscuits, and her notebook, Noor climbed the coastal path to the headland. The lighthouse up close was more decrepit than it appeared from the village — the wooden door at the base hung from a single rusted hinge, and the interior smelled of damp stone and seagull droppings. She did not go inside. Instead, she circled the base of the tower, looking for clues, and found three things of interest.\n\n(9) The first was a fresh bicycle tyre track in the muddy path leading from the road to the lighthouse. Someone had visited recently and repeatedly — the track was deep and well-worn. The second was a length of blue nylon rope tied to the iron railing at the base of the tower, its end frayed as though something had been lowered from it. The third, and most puzzling, was scratched into the white paint beside the door at a height of roughly one and a half metres — low enough, Noor realised, to have been made by someone her own age. It read: \"E8 G3 C1 A5.\"\n\n(10) Noor stared at the inscription for a long time. Four pairs of letters and numbers. It could be a grid reference, but it did not match any standard mapping format. It could be a book cipher — each pair pointing to a specific letter on a specific page — but without knowing the source book, that was a dead end. She copied it carefully into her notebook and walked home along the cliff path, her mind turning the puzzle over like a tumbler lock searching for the right combination.\n\n(11) The breakthrough came that evening, quite by accident. Noor was helping her mother organise the school's music cupboard when she noticed the labels on a shelf of glockenspiels: C, D, E, F, G, A, B — the musical notes. E8, G3, C1, A5. What if the letters were not code letters at all, but musical notes? What if the numbers indicated something about those notes — the octave, perhaps, or the number of beats? And what if the flashing lights from the lighthouse were not random patterns but a visual representation of a melody, transcribed by someone who could not play it aloud without being heard?\n\n(12) Noor sat down at the school's upright piano, which her mother had the key to, and carefully picked out the notes: E, G, C, A. Then again, in the rhythm of the light signals — three short, two long. She played it faster, then slower, trying different timings. And then, with a sudden rush of recognition that made the hairs on her arms stand up, she heard it. It was the opening four notes of a melody she knew — one that Grandpa Haroon used to hum while making tea. A folk song. A very old Cornish folk song. Someone at the lighthouse was playing music in light, and Noor was going to find out who.",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 1, what does 'silhouette' mean?",
+    "correctAnswer": "A dark outline seen against a lighter background",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A shadow",
+        "currentWords": 2,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "A photograph",
+        "currentWords": 2,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "A type of building",
+        "currentWords": 4,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "A reflection in water"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#17",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "lighthouse-storms-end",
+      "arr": "vocabularyQuestions",
+      "id": 21,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 8, what does 'decrepit'"
+    },
+    "passageTitle": "The Lighthouse at Storm's End",
+    "passage": "(1) Nobody had lived in the lighthouse at Storm's End for eleven years, and the village of Pencarrow had grown so accustomed to its dark silhouette against the evening sky that most people had stopped noticing it entirely. It stood on a spur of black rock at the headland, battered by salt wind, its white paint peeling in long grey strips. The glass at the top, which had once housed the great revolving lamp that warned ships away from the reef, was cracked and clouded with grime. The lighthouse was, by every reasonable measure, abandoned.\n\n(2) Which was why, on the evening of October the fourteenth, twelve-year-old Noor Abbas nearly dropped her binoculars when she saw the light.\n\n(3) It was not a steady beam, like the old lighthouse would have produced. It was a quick, irregular flicker — three short flashes, then a pause, then two long flashes, then darkness again. Noor watched from her bedroom window, which looked directly across the bay towards the headland, and counted the pattern carefully. Three short, two long. A pause of exactly ten seconds. Then the sequence repeated. It was too deliberate, too rhythmic, to be a reflection or a trick of the moonlight. Someone was up there, and they were signalling.\n\n(4) Noor had moved to Pencarrow eighteen months earlier, when her mother had taken the position of headteacher at the village primary school. She had not entirely settled — the village was small, the nearest town was a forty-minute bus ride away, and the other children treated her with the polite wariness that small communities reserve for newcomers. But she had developed two consuming passions that made the isolation bearable: birdwatching, which was superb along this stretch of the Cornish coast, and codes.\n\n(5) The codes had begun as a rainy-afternoon hobby, when she discovered a battered copy of Simon Singh's 'The Code Book' in the mobile library. She had devoured it in three days and moved on to teaching herself Morse code, the Caesar cipher, and a handful of other systems that she practised by writing encrypted messages to herself in a notebook she kept under her mattress. She was not yet fluent in Morse, but she knew enough to recognise what she was seeing through the binoculars. The pattern was not Morse. Three short, two long did not correspond to any standard Morse character. This was something else — something she did not yet understand.\n\n(6) Over the following three nights, Noor kept careful watch. The signals appeared at precisely 9:47 pm each evening, lasted for approximately eight minutes, and followed the same basic structure — short and long flashes in varying combinations, separated by ten-second pauses. She recorded every sequence in her notebook, filling four pages with neat columns of dots and dashes. On the fourth night, she brought her mother's camera with its telephoto lens and managed to photograph the light source. When she enlarged the image on her laptop, she could just make out a pale, rectangular glow — not a torch, she decided, but something flat and even. A lantern, perhaps, or a tablet screen held up to the window.\n\n(7) The obvious step was to tell someone. Noor considered this carefully and decided against it. Adults, in her experience, had a tendency to either dismiss things they could not immediately explain or to overreact in ways that shut down the interesting possibilities. She wanted to understand the signal before anyone else got involved. She wanted to crack the code.\n\n(8) On Saturday morning, armed with a flask of tea, a packet of digestive biscuits, and her notebook, Noor climbed the coastal path to the headland. The lighthouse up close was more decrepit than it appeared from the village — the wooden door at the base hung from a single rusted hinge, and the interior smelled of damp stone and seagull droppings. She did not go inside. Instead, she circled the base of the tower, looking for clues, and found three things of interest.\n\n(9) The first was a fresh bicycle tyre track in the muddy path leading from the road to the lighthouse. Someone had visited recently and repeatedly — the track was deep and well-worn. The second was a length of blue nylon rope tied to the iron railing at the base of the tower, its end frayed as though something had been lowered from it. The third, and most puzzling, was scratched into the white paint beside the door at a height of roughly one and a half metres — low enough, Noor realised, to have been made by someone her own age. It read: \"E8 G3 C1 A5.\"\n\n(10) Noor stared at the inscription for a long time. Four pairs of letters and numbers. It could be a grid reference, but it did not match any standard mapping format. It could be a book cipher — each pair pointing to a specific letter on a specific page — but without knowing the source book, that was a dead end. She copied it carefully into her notebook and walked home along the cliff path, her mind turning the puzzle over like a tumbler lock searching for the right combination.\n\n(11) The breakthrough came that evening, quite by accident. Noor was helping her mother organise the school's music cupboard when she noticed the labels on a shelf of glockenspiels: C, D, E, F, G, A, B — the musical notes. E8, G3, C1, A5. What if the letters were not code letters at all, but musical notes? What if the numbers indicated something about those notes — the octave, perhaps, or the number of beats? And what if the flashing lights from the lighthouse were not random patterns but a visual representation of a melody, transcribed by someone who could not play it aloud without being heard?\n\n(12) Noor sat down at the school's upright piano, which her mother had the key to, and carefully picked out the notes: E, G, C, A. Then again, in the rhythm of the light signals — three short, two long. She played it faster, then slower, trying different timings. And then, with a sudden rush of recognition that made the hairs on her arms stand up, she heard it. It was the opening four notes of a melody she knew — one that Grandpa Haroon used to hum while making tea. A folk song. A very old Cornish folk song. Someone at the lighthouse was playing music in light, and Noor was going to find out who.",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 8, what does 'decrepit' mean?",
+    "correctAnswer": "In a very poor condition due to age and neglect",
+    "correctWords": 10,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Extremely tall",
+        "currentWords": 2,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Recently painted",
+        "currentWords": 2,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 0,
+        "text": "Beautiful but old"
+      },
+      {
+        "index": 4,
+        "text": "Hidden from view"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#18",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "boudicca",
+      "arr": "vocabularyQuestions",
+      "id": 20,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 5, what does 'complacent'"
+    },
+    "passageTitle": "Boudicca: Warrior Queen of the Iceni",
+    "passage": "(1) In the year 60 AD, the most powerful empire the world had ever known was shaken to its foundations — not by a rival army or a foreign invasion, but by a woman from a small tribal kingdom in what is now Norfolk. Her name was Boudicca, queen of the Iceni, and her rebellion against Roman rule remains one of the most dramatic and violent episodes in the history of Britain.\n\n(2) The Iceni were a Celtic tribe who had occupied the flat, marshy lands of East Anglia for generations before the Romans arrived. When the Emperor Claudius invaded Britain in 43 AD, the Iceni king, Prasutagus, made a pragmatic decision: rather than fight, he would cooperate with Rome. He signed a treaty that allowed the Iceni to keep their lands and customs in exchange for accepting Roman authority. For nearly two decades, this uneasy arrangement held. Prasutagus even named the Roman emperor as co-heir to his kingdom in his will, alongside his two daughters — a gesture of loyalty that he hoped would protect his family after his death.\n\n(3) It did not. When Prasutagus died around 60 AD, the Romans ignored the will entirely. Imperial officials seized the Iceni kingdom as if it were conquered territory, confiscating the property of tribal nobles and treating the people as slaves. When Boudicca protested, the Roman soldiers had her publicly flogged and assaulted her daughters. It was an act of breathtaking cruelty and arrogance, and it ignited a fury that the Romans had gravely underestimated.\n\n(4) Boudicca gathered an army. The Iceni rallied to her immediately, joined by the Trinovantes — a neighbouring tribe that had its own grievances against Rome — and warriors from several other Celtic groups. Ancient sources disagree on the size of Boudicca's force, but most suggest it numbered well over a hundred thousand. This was not a disciplined professional army like Rome's legions; it was a vast, furious tide of men, women, and even children, united by rage and a desire for vengeance.\n\n(5) The first target was Camulodunum — modern Colchester — which the Romans had established as a colony for retired soldiers. The town had no defensive walls. Its inhabitants had grown complacent, believing that Roman military superiority made them untouchable. They were wrong. Boudicca's forces swept through Camulodunum with devastating ferocity, burning buildings, destroying the temple dedicated to the former Emperor Claudius, and killing everyone they could find. The small Roman garrison was overwhelmed within hours. Archaeological excavations in Colchester have revealed a thick layer of burnt debris from this period — a red-black scar in the soil that archaeologists call the 'destruction layer'.\n\n(6) The Ninth Legion, a Roman military unit stationed nearby, marched south to intercept Boudicca. It was ambushed and virtually annihilated. The legion's infantry was destroyed almost to a man, and only the cavalry escaped by fleeing at full gallop. News of the disaster sent shockwaves through the Roman administration. The procurator — the empire's chief financial officer in Britain — abandoned his post and fled across the Channel to Gaul.\n\n(7) Boudicca turned next towards Londinium — London — which was rapidly growing into an important trading settlement. The Roman governor, Gaius Suetonius Paulinus, had been campaigning in Wales when the rebellion erupted and rushed back with his available forces. Arriving in London, he made a cold but calculated decision: the city could not be defended. He ordered a retreat, advising any Romans who could travel to leave with his army. Those who stayed — the elderly, the sick, traders who refused to abandon their goods — were left to face Boudicca's army alone.\n\n(8) Londinium was burned to the ground. So was Verulamium — modern St Albans — which fell next. The Roman historian Tacitus recorded that approximately seventy thousand people were killed across the three towns. Boudicca's forces, he wrote, \"had no interest in taking prisoners or selling slaves, or in any other commerce of war. They would only slaughter, hang, burn, and crucify.\" Whether this is entirely accurate or partly Roman propaganda — written by the losing side's own historians trying to justify their eventual brutal response — remains a matter of scholarly debate.\n\n(9) The rebellion's climax came at a location that historians have never definitively identified, somewhere in the Midlands along the Roman road known as Watling Street. Suetonius Paulinus had finally assembled a force of roughly ten thousand legionaries and chose his ground carefully — a narrow valley with thick forest behind and open ground in front. This was critical: Boudicca's enormous numerical advantage was useless in a confined space where only a few warriors could engage at a time.\n\n(10) The resulting battle was a catastrophe for the Britons. The Roman legionaries, heavily armoured and fighting in disciplined formation, advanced in a wedge shape through the charging mass of Celtic warriors. Behind Boudicca's army, their own supply wagons blocked the escape route. Tens of thousands were killed. Tacitus claims the Romans lost just four hundred men, though this figure may be exaggerated to glorify the victory. What is certain is that the rebellion was crushed utterly.\n\n(11) Boudicca herself disappeared from the historical record after the battle. Tacitus states she took poison. Another Roman historian, Cassius Dio, says she fell ill and died. No grave has ever been found. The popular legend that she is buried beneath Platform 9 at King's Cross station is entirely fictional — though it is a story that refuses to die, perhaps because it captures something essential about Boudicca's enduring presence in the national imagination.\n\n(12) Today, a bronze statue of Boudicca stands on the Victoria Embankment in London, beside Westminster Bridge and the Houses of Parliament. She is depicted riding a chariot with scythed wheels, her arm raised defiantly, her two daughters beside her. The statue was erected in 1902, and its placement beside the seat of government is deeply symbolic. Boudicca, who burned London to ashes, now watches over it as a symbol of British resistance and courage. History, as so often, has transformed a defeated rebel into an icon of defiance — a woman who, for a few extraordinary months, brought the mightiest empire on Earth to the brink of losing an entire province.",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 5, what does 'complacent' mean?",
+    "correctAnswer": "Satisfied to the point of not recognising danger",
+    "correctWords": 8,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Frightened",
+        "currentWords": 1,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Extremely well-prepared"
+      },
+      {
+        "index": 3,
+        "text": "Friendly and welcoming"
+      },
+      {
+        "index": 4,
+        "text": "Suspicious and careful"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#19",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "boudicca",
+      "arr": "vocabularyQuestions",
+      "id": 22,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 12, what does 'defiance'"
+    },
+    "passageTitle": "Boudicca: Warrior Queen of the Iceni",
+    "passage": "(1) In the year 60 AD, the most powerful empire the world had ever known was shaken to its foundations — not by a rival army or a foreign invasion, but by a woman from a small tribal kingdom in what is now Norfolk. Her name was Boudicca, queen of the Iceni, and her rebellion against Roman rule remains one of the most dramatic and violent episodes in the history of Britain.\n\n(2) The Iceni were a Celtic tribe who had occupied the flat, marshy lands of East Anglia for generations before the Romans arrived. When the Emperor Claudius invaded Britain in 43 AD, the Iceni king, Prasutagus, made a pragmatic decision: rather than fight, he would cooperate with Rome. He signed a treaty that allowed the Iceni to keep their lands and customs in exchange for accepting Roman authority. For nearly two decades, this uneasy arrangement held. Prasutagus even named the Roman emperor as co-heir to his kingdom in his will, alongside his two daughters — a gesture of loyalty that he hoped would protect his family after his death.\n\n(3) It did not. When Prasutagus died around 60 AD, the Romans ignored the will entirely. Imperial officials seized the Iceni kingdom as if it were conquered territory, confiscating the property of tribal nobles and treating the people as slaves. When Boudicca protested, the Roman soldiers had her publicly flogged and assaulted her daughters. It was an act of breathtaking cruelty and arrogance, and it ignited a fury that the Romans had gravely underestimated.\n\n(4) Boudicca gathered an army. The Iceni rallied to her immediately, joined by the Trinovantes — a neighbouring tribe that had its own grievances against Rome — and warriors from several other Celtic groups. Ancient sources disagree on the size of Boudicca's force, but most suggest it numbered well over a hundred thousand. This was not a disciplined professional army like Rome's legions; it was a vast, furious tide of men, women, and even children, united by rage and a desire for vengeance.\n\n(5) The first target was Camulodunum — modern Colchester — which the Romans had established as a colony for retired soldiers. The town had no defensive walls. Its inhabitants had grown complacent, believing that Roman military superiority made them untouchable. They were wrong. Boudicca's forces swept through Camulodunum with devastating ferocity, burning buildings, destroying the temple dedicated to the former Emperor Claudius, and killing everyone they could find. The small Roman garrison was overwhelmed within hours. Archaeological excavations in Colchester have revealed a thick layer of burnt debris from this period — a red-black scar in the soil that archaeologists call the 'destruction layer'.\n\n(6) The Ninth Legion, a Roman military unit stationed nearby, marched south to intercept Boudicca. It was ambushed and virtually annihilated. The legion's infantry was destroyed almost to a man, and only the cavalry escaped by fleeing at full gallop. News of the disaster sent shockwaves through the Roman administration. The procurator — the empire's chief financial officer in Britain — abandoned his post and fled across the Channel to Gaul.\n\n(7) Boudicca turned next towards Londinium — London — which was rapidly growing into an important trading settlement. The Roman governor, Gaius Suetonius Paulinus, had been campaigning in Wales when the rebellion erupted and rushed back with his available forces. Arriving in London, he made a cold but calculated decision: the city could not be defended. He ordered a retreat, advising any Romans who could travel to leave with his army. Those who stayed — the elderly, the sick, traders who refused to abandon their goods — were left to face Boudicca's army alone.\n\n(8) Londinium was burned to the ground. So was Verulamium — modern St Albans — which fell next. The Roman historian Tacitus recorded that approximately seventy thousand people were killed across the three towns. Boudicca's forces, he wrote, \"had no interest in taking prisoners or selling slaves, or in any other commerce of war. They would only slaughter, hang, burn, and crucify.\" Whether this is entirely accurate or partly Roman propaganda — written by the losing side's own historians trying to justify their eventual brutal response — remains a matter of scholarly debate.\n\n(9) The rebellion's climax came at a location that historians have never definitively identified, somewhere in the Midlands along the Roman road known as Watling Street. Suetonius Paulinus had finally assembled a force of roughly ten thousand legionaries and chose his ground carefully — a narrow valley with thick forest behind and open ground in front. This was critical: Boudicca's enormous numerical advantage was useless in a confined space where only a few warriors could engage at a time.\n\n(10) The resulting battle was a catastrophe for the Britons. The Roman legionaries, heavily armoured and fighting in disciplined formation, advanced in a wedge shape through the charging mass of Celtic warriors. Behind Boudicca's army, their own supply wagons blocked the escape route. Tens of thousands were killed. Tacitus claims the Romans lost just four hundred men, though this figure may be exaggerated to glorify the victory. What is certain is that the rebellion was crushed utterly.\n\n(11) Boudicca herself disappeared from the historical record after the battle. Tacitus states she took poison. Another Roman historian, Cassius Dio, says she fell ill and died. No grave has ever been found. The popular legend that she is buried beneath Platform 9 at King's Cross station is entirely fictional — though it is a story that refuses to die, perhaps because it captures something essential about Boudicca's enduring presence in the national imagination.\n\n(12) Today, a bronze statue of Boudicca stands on the Victoria Embankment in London, beside Westminster Bridge and the Houses of Parliament. She is depicted riding a chariot with scythed wheels, her arm raised defiantly, her two daughters beside her. The statue was erected in 1902, and its placement beside the seat of government is deeply symbolic. Boudicca, who burned London to ashes, now watches over it as a symbol of British resistance and courage. History, as so often, has transformed a defeated rebel into an icon of defiance — a woman who, for a few extraordinary months, brought the mightiest empire on Earth to the brink of losing an entire province.",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 12, what does 'defiance' mean?",
+    "correctAnswer": "Bold resistance and refusal to obey",
+    "correctWords": 6,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 3,
+        "currentText": "Quiet acceptance",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Physical strength",
+        "currentWords": 2,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "Agreement with authority",
+        "currentWords": 3,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Fear of power",
+        "currentWords": 3,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-vocabulary#20",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "lambton-worm",
+      "arr": "vocabularyQuestions",
+      "id": 19,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 2, what does 'reckless'"
+    },
+    "passageTitle": "The Legend of the Lambton Worm",
+    "passage": "(1) Of all the legends that have emerged from the hills and rivers of northern England, few are as strange, as enduring, or as delightfully gruesome as the tale of the Lambton Worm. This story, which has been told around firesides in County Durham for at least four hundred years, concerns a young nobleman, a monstrous serpent, and a curse that would haunt an entire family for nine generations. Whether there is any grain of truth behind the tale is impossible to say — but the people of the North East have never let a small matter like historical accuracy get in the way of a good story.\n\n(2) The legend begins, as many legends do, with a young man behaving badly. John Lambton, heir to the Lambton estate near the River Wear, was a wild and reckless youth who had little time for church or responsibility. One Sunday morning, instead of attending the service at the local chapel, he took his fishing rod down to the river. An old man passing by warned him that no good would come of fishing on the Sabbath, but John laughed the warning off and cast his line.\n\n(3) What he caught was not a fish. Hooked on the end of his line was a small, black creature — slimy, eyeless, and about the length of a man's thumb. It looked, according to various retellings, like a cross between an eel and a lizard, with nine holes along each side of its head where gills might have been. Repulsed, John pulled the creature from the hook and threw it into a nearby well. He thought no more about it.\n\n(4) Years passed. John Lambton, filled with remorse for his wayward youth, joined the Crusades and travelled to the Holy Land to fight. In his absence, the creature in the well grew. It grew to an extraordinary size — some versions of the story claim it became large enough to wrap itself three times around a local hill known as Worm Hill. The word 'worm' in this context is the old English word for serpent or dragon, and by the time the creature emerged from the well, it was a dragon in all but name: enormous, vicious, and possessed of an insatiable appetite.\n\n(5) The Worm terrorised the surrounding countryside. It devoured sheep, cattle, and any unwary traveller who ventured too close. Farmers found their livestock missing each morning, and the pastures nearest the river were stripped bare. Worse still, whenever anyone attempted to fight the creature, it simply reassembled itself. Knights and soldiers would hack it to pieces, only to watch in horror as the severed sections crawled back together and the Worm reformed, apparently unharmed. No weapon, no strategy, and no amount of courage could destroy it.\n\n(6) When John Lambton finally returned from the Crusades — older, wiser, and carrying the weight of years of battle — he discovered the devastation his careless act had caused. The worm he had thrown into the well as a boy had become a monster that was destroying his family's land and terrifying its people. The responsibility was his, and he resolved to put it right.\n\n(7) John sought advice from a wise woman — a witch, in some versions of the tale — who lived in the hills above the estate. She told him how to defeat the Worm: he must cover his armour with razor-sharp spearheads, so that when the creature wrapped itself around him to crush him, it would cut itself to ribbons on the blades. But the wise woman attached a terrible condition. After killing the Worm, John must immediately kill the first living thing he saw, or a curse would fall upon the Lambton family — for nine generations, no Lord of Lambton would die peacefully in his bed.\n\n(8) John prepared carefully. He arranged a signal with his father: after the battle, John would blow his hunting horn three times, and his father would release the family's favourite greyhound. The dog would run to John, and John would kill it — satisfying the wise woman's condition without taking a human life. It was a clever plan, and John took his position on a rock in the middle of the River Wear, where the Worm came to drink each evening, and waited.\n\n(9) The battle was ferocious. The Worm coiled itself around John with crushing force, but the spearheads embedded in his armour sliced through its flesh. Each severed piece fell into the river and was swept away by the current before it could rejoin the body. Gradually, piece by piece, the Worm was destroyed. John stood bloodied and exhausted on his rock as the last fragments of the creature disappeared downstream.\n\n(10) He blew his horn three times. But his father, overcome with relief and joy at seeing his son alive, forgot the plan. Instead of releasing the dog, the old man ran out of the castle himself, arms outstretched, tears streaming down his face. John saw his father before he saw the greyhound. He could not bring himself to kill his own father. The greyhound arrived moments later and John killed it immediately — but the damage was done. The first living thing he had seen was his father, and the condition had been broken.\n\n(11) The curse fell upon the Lambton family. According to local tradition, for the next nine generations, no Lord of Lambton died peacefully. Henry Lambton was drowned crossing a bridge. Another Lambton was killed in battle. A third died in a riding accident. The records of the Lambton family during these generations are patchy and incomplete, but enough unfortunate deaths occurred to keep the legend firmly alive in local memory. The ninth Lord Lambton, Henry Lambton, died in his carriage in 1761 — and with him, the curse was said to have been finally fulfilled.\n\n(12) The Lambton Worm remains one of the most popular legends in the North East of England. It has been adapted into a famous dialect song, a pantomime performed annually in the region, and numerous children's books. The ruins of the original Lambton estate still stand beside the River Wear, and Worm Hill — if it ever existed — has been claimed by at least three different locations in County Durham, each insisting it is the genuine site. The story endures because it contains everything a good legend needs: a reckless youth, a terrible mistake, a heroic quest, an impossible condition, and a curse that echoes down the centuries. As the old song goes: \"Whisht, lads, haad yer gobs — Aa'll tell ye aall an aaful story.\"",
+    "difficulty": 2,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 2, what does 'reckless' mean?",
+    "correctAnswer": "Acting without thinking about consequences",
+    "correctWords": 5,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Brave and strong",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Lazy and uninterested",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Clever but dishonest",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Quiet and thoughtful"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#21",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "lambton-worm",
+      "arr": "vocabularyQuestions",
+      "id": 22,
+      "correctIndex": 2,
+      "questionHead": "In paragraph 1, what does 'enduring'"
+    },
+    "passageTitle": "The Legend of the Lambton Worm",
+    "passage": "(1) Of all the legends that have emerged from the hills and rivers of northern England, few are as strange, as enduring, or as delightfully gruesome as the tale of the Lambton Worm. This story, which has been told around firesides in County Durham for at least four hundred years, concerns a young nobleman, a monstrous serpent, and a curse that would haunt an entire family for nine generations. Whether there is any grain of truth behind the tale is impossible to say — but the people of the North East have never let a small matter like historical accuracy get in the way of a good story.\n\n(2) The legend begins, as many legends do, with a young man behaving badly. John Lambton, heir to the Lambton estate near the River Wear, was a wild and reckless youth who had little time for church or responsibility. One Sunday morning, instead of attending the service at the local chapel, he took his fishing rod down to the river. An old man passing by warned him that no good would come of fishing on the Sabbath, but John laughed the warning off and cast his line.\n\n(3) What he caught was not a fish. Hooked on the end of his line was a small, black creature — slimy, eyeless, and about the length of a man's thumb. It looked, according to various retellings, like a cross between an eel and a lizard, with nine holes along each side of its head where gills might have been. Repulsed, John pulled the creature from the hook and threw it into a nearby well. He thought no more about it.\n\n(4) Years passed. John Lambton, filled with remorse for his wayward youth, joined the Crusades and travelled to the Holy Land to fight. In his absence, the creature in the well grew. It grew to an extraordinary size — some versions of the story claim it became large enough to wrap itself three times around a local hill known as Worm Hill. The word 'worm' in this context is the old English word for serpent or dragon, and by the time the creature emerged from the well, it was a dragon in all but name: enormous, vicious, and possessed of an insatiable appetite.\n\n(5) The Worm terrorised the surrounding countryside. It devoured sheep, cattle, and any unwary traveller who ventured too close. Farmers found their livestock missing each morning, and the pastures nearest the river were stripped bare. Worse still, whenever anyone attempted to fight the creature, it simply reassembled itself. Knights and soldiers would hack it to pieces, only to watch in horror as the severed sections crawled back together and the Worm reformed, apparently unharmed. No weapon, no strategy, and no amount of courage could destroy it.\n\n(6) When John Lambton finally returned from the Crusades — older, wiser, and carrying the weight of years of battle — he discovered the devastation his careless act had caused. The worm he had thrown into the well as a boy had become a monster that was destroying his family's land and terrifying its people. The responsibility was his, and he resolved to put it right.\n\n(7) John sought advice from a wise woman — a witch, in some versions of the tale — who lived in the hills above the estate. She told him how to defeat the Worm: he must cover his armour with razor-sharp spearheads, so that when the creature wrapped itself around him to crush him, it would cut itself to ribbons on the blades. But the wise woman attached a terrible condition. After killing the Worm, John must immediately kill the first living thing he saw, or a curse would fall upon the Lambton family — for nine generations, no Lord of Lambton would die peacefully in his bed.\n\n(8) John prepared carefully. He arranged a signal with his father: after the battle, John would blow his hunting horn three times, and his father would release the family's favourite greyhound. The dog would run to John, and John would kill it — satisfying the wise woman's condition without taking a human life. It was a clever plan, and John took his position on a rock in the middle of the River Wear, where the Worm came to drink each evening, and waited.\n\n(9) The battle was ferocious. The Worm coiled itself around John with crushing force, but the spearheads embedded in his armour sliced through its flesh. Each severed piece fell into the river and was swept away by the current before it could rejoin the body. Gradually, piece by piece, the Worm was destroyed. John stood bloodied and exhausted on his rock as the last fragments of the creature disappeared downstream.\n\n(10) He blew his horn three times. But his father, overcome with relief and joy at seeing his son alive, forgot the plan. Instead of releasing the dog, the old man ran out of the castle himself, arms outstretched, tears streaming down his face. John saw his father before he saw the greyhound. He could not bring himself to kill his own father. The greyhound arrived moments later and John killed it immediately — but the damage was done. The first living thing he had seen was his father, and the condition had been broken.\n\n(11) The curse fell upon the Lambton family. According to local tradition, for the next nine generations, no Lord of Lambton died peacefully. Henry Lambton was drowned crossing a bridge. Another Lambton was killed in battle. A third died in a riding accident. The records of the Lambton family during these generations are patchy and incomplete, but enough unfortunate deaths occurred to keep the legend firmly alive in local memory. The ninth Lord Lambton, Henry Lambton, died in his carriage in 1761 — and with him, the curse was said to have been finally fulfilled.\n\n(12) The Lambton Worm remains one of the most popular legends in the North East of England. It has been adapted into a famous dialect song, a pantomime performed annually in the region, and numerous children's books. The ruins of the original Lambton estate still stand beside the River Wear, and Worm Hill — if it ever existed — has been claimed by at least three different locations in County Durham, each insisting it is the genuine site. The story endures because it contains everything a good legend needs: a reckless youth, a terrible mistake, a heroic quest, an impossible condition, and a curse that echoes down the centuries. As the old song goes: \"Whisht, lads, haad yer gobs — Aa'll tell ye aall an aaful story.\"",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 1, what does 'enduring' mean in 'as enduring' as the tale?",
+    "correctAnswer": "Lasting for a very long time",
+    "correctWords": 6,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "Recently discovered",
+        "currentWords": 2,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "Painful and difficult",
+        "currentWords": 3,
+        "targetMinWords": 8,
+        "targetMaxWords": 10,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Boring and repetitive"
+      },
+      {
+        "index": 3,
+        "text": "Extremely popular right now"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-vocabulary#22",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "red-kite",
+      "arr": "vocabularyQuestions",
+      "id": 21,
+      "correctIndex": 1,
+      "questionHead": "In paragraph 6, what does 'controversy'"
+    },
+    "passageTitle": "The Return of the Red Kite",
+    "passage": "(1) There is a bird flying over the Chiltern Hills today that, thirty years ago, you would have been more likely to see in a museum than in the sky. With its russet body, forked tail, and wingspan of nearly two metres, the red kite is one of Britain's most magnificent raptors. Yet by the late 1980s, this elegant predator had been driven to the very edge of extinction in England, Wales, and Scotland. Its remarkable recovery since then is one of the greatest conservation success stories in European history — and a powerful lesson in what can be achieved when science, determination, and community effort work together.\n\n(2) Red kites were once among the most common birds in Britain. In medieval London, they were so numerous that foreign visitors remarked upon them. The birds served a vital function as scavengers, swooping down to clean the streets of waste, scraps, and carrion. Laws were passed making it illegal to kill a kite, and the penalty was reportedly severe — though historians disagree on whether the punishment was really execution, as some accounts claim. What is certain is that kites were valued, protected, and very much part of everyday life.\n\n(3) The decline began in the sixteenth century and accelerated brutally over the following three hundred years. As farming methods changed and estates began to be managed for game shooting, the red kite came to be seen as vermin — a threat to pheasant chicks and lambs. Gamekeepers shot, trapped, and poisoned kites in enormous numbers. Egg collectors, drawn by the bird's increasing rarity, raided the few remaining nests. By the early twentieth century, the red kite had been completely wiped out across England and Scotland. Only a handful survived — fewer than twenty individuals — clinging to existence in the remote oak valleys of central Wales.\n\n(4) For decades, those Welsh kites were the subject of one of the longest-running protection programmes in conservation history. Volunteers guarded nesting sites around the clock during breeding season, and farmers were paid to tolerate the birds on their land. The population grew slowly — agonisingly slowly — because the Welsh kites were so inbred that fertility rates were low and many eggs failed to hatch. By 1989, there were still only around fifty breeding pairs in the whole of Britain, all in Wales. The species was surviving, but only barely, and the prospect of kites returning to England or Scotland under their own power seemed impossibly remote.\n\n(5) The breakthrough came from an ambitious plan called the Red Kite Reintroduction Programme. Beginning in 1989, conservationists from the RSPB and Natural England, working with the Swedish and Spanish governments, imported young red kites from healthy populations in Sweden and Spain. These birds were released at carefully chosen sites in the Chiltern Hills in southern England and in the Black Isle in northern Scotland. Over the following five years, ninety-three kites were released in the Chilterns and over a hundred in Scotland.\n\n(6) The programme was not without controversy. Some local residents objected to what they saw as an artificial interference with nature. Farmers worried that the kites would attack their poultry. Gamekeepers on nearby shooting estates were suspected of illegally poisoning some of the released birds — suspicions that, in several cases, proved to be well-founded. Despite these setbacks, the released kites began to breed successfully. The Chilterns population grew from the initial ninety-three birds to over three hundred breeding pairs within fifteen years.\n\n(7) What made the Chilterns site so successful was not just the landscape — rolling chalk hills with mixed woodland and open farmland — but the extraordinary response of the local community. Farmers left areas of rough ground uncut, providing habitat for the small mammals and invertebrates that kites feed on. Homeowners put out scraps in their gardens, and 'kite feeding stations' became a popular tourist attraction. Schools adopted the kite as their emblem. The bird became a source of local pride, transforming from a creature most people had never heard of into a symbol of the Chiltern Hills themselves.\n\n(8) The success in the Chilterns inspired further reintroductions across the country. Kites were released in Northamptonshire, Yorkshire, the north-east of England, County Down in Northern Ireland, and the central belt of Scotland. Each new population was carefully monitored, with some birds fitted with wing-tags or satellite transmitters that allowed scientists to track their movements across the country. The data revealed fascinating insights into kite behaviour: they could travel remarkable distances, with some birds moving over three hundred kilometres from their release sites.\n\n(9) The numbers are remarkable. In 1989, there were roughly fifty breeding pairs of red kites in Britain — all in Wales. By 2023, the population had grown to an estimated four thousand eight hundred breeding pairs spread across England, Scotland, Wales, and Northern Ireland. The species has been officially reclassified from 'endangered' to 'near threatened' — still not completely safe, but a transformation from the brink of extinction to a thriving, expanding population.\n\n(10) Driving through the Chilterns today, it is common to see half a dozen kites circling on a single stretch of motorway. Their distinctive silhouette — long wings angled slightly forward, deeply forked tail constantly adjusting for balance — has become as much a part of the English landscape as church spires and hedgerows. Children growing up in the area have never known a time without kites. For them, the bird is simply part of the scenery, which is perhaps the greatest measure of the reintroduction's success.\n\n(11) The recovery has not been without ongoing challenges. Illegal poisoning continues to be a problem, particularly in areas managed for game shooting. Collisions with vehicles account for a significant number of deaths, and the growing kite population increasingly competes for food with buzzards, another raptor that has expanded dramatically in recent decades. Scientists debate whether the current population can continue to grow or has reached the carrying capacity of the available habitat.\n\n(12) Yet the red kite's return offers something beyond pure ecology. It demonstrates that conservation works — that it is possible to reverse decades of decline if the commitment is sustained and the approach is scientific. It shows that communities can embrace wildlife as an asset rather than a threat, and that a single species can change the identity of a landscape. The red kite flying over the Chilterns is not just a bird. It is proof that the natural world, given half a chance, is capable of an extraordinary comeback.",
+    "difficulty": 3,
+    "subtype": "vocabulary-in-context",
+    "question": "In paragraph 6, what does 'controversy' mean?",
+    "correctAnswer": "Prolonged public disagreement",
+    "correctWords": 3,
+    "targetRankForCorrect": 3,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Excitement",
+        "currentWords": 1,
+        "targetMinWords": 4,
+        "targetMaxWords": 6,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Scientific research"
+      },
+      {
+        "index": 3,
+        "text": "Financial support"
+      },
+      {
+        "index": 4,
+        "text": "Legal protection"
+      }
+    ]
+  }
+]

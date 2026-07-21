@@ -282,7 +282,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 3, what does the word 'electrified' mean?",
-        options: ["Shocked by electricity", "Made extremely angry", "Filled with great excitement", "Confused and bewildered", "Made deeply worried"],
+        options: ["Given a painful shock by electric current", "Made furious and resentful by the discovery", "Filled with great excitement", "Left puzzled and unable to understand the find", "Made deeply worried"],
         correct: 2,
         explanation: "'Electrified' here means thrilled or filled with great excitement. The scientists were amazed and excited by the discovery, not literally given an electric shock. ✓"
       },
@@ -291,7 +291,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 5, what does 'undeterred' mean?",
-        options: ["Not discouraged or put off", "Not interested", "Not educated", "Not believed", "Not invited"],
+        options: ["Not discouraged or put off", "Not interested in continuing her fossil work", "Not properly trained or taught in science", "Not believed or trusted by the scientific community", "Not invited"],
         correct: 0,
         explanation: "'Undeterred' means not discouraged or prevented from continuing. Despite the lack of recognition described in paragraph 4, Mary carried on with 'fierce determination'. ✓"
       },
@@ -301,11 +301,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 8, what does 'teetered on the edge of financial ruin' suggest?",
         options: [
-          "The family was about to become very wealthy",
+          "The family stood on the brink of suddenly becoming extremely rich and comfortable for life",
           "The family was dangerously close to having no money at all",
-          "The family lived on a cliff edge",
-          "The family was saving money carefully",
-          "The family had recently lost some money"
+          "The family literally lived in a cottage perched on the crumbling cliff edge",
+          "The family was carefully setting aside money to protect their future security",
+          "The family had recently lost a small amount of money in a bad deal"
         ],
         correct: 1,
         explanation: "'Teetered on the edge' means to be in a very unstable, precarious position. Combined with 'financial ruin', it means the family was constantly close to being completely out of money. ✓"
@@ -315,7 +315,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 10, what does the word 'elusive' mean in 'public recognition remained elusive'?",
-        options: ["Unnecessary", "Impossible to achieve", "Difficult to obtain or find", "Unwanted", "Forgotten"],
+        options: ["Not needed or important to her", "Impossible to achieve", "Difficult to obtain or find", "Something she actively did not want to receive", "Quickly lost from people's memory over the years"],
         correct: 2,
         explanation: "'Elusive' means difficult to find, catch, or achieve. Public recognition kept slipping away from Mary despite her growing reputation among scientists. ✓"
       }
@@ -637,7 +637,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 2, what does the word 'consortium' mean?",
-        options: ["A government department", "A group of companies working together", "A type of construction machine", "A financial penalty", "A legal agreement"],
+        options: ["A department run by the national government", "A group of companies working together", "A type of construction machine", "A large fine charged for breaking the rules", "A legal agreement"],
         correct: 1,
         explanation: "A 'consortium' is a group of organisations that join together for a shared purpose. Here, Eurotunnel was a consortium of 'construction companies and banks' working together to build the tunnel. ✓"
       },
@@ -646,7 +646,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 7, what does 'nerve-wracking' mean?",
-        options: ["Physically exhausting", "Extremely boring", "Causing great anxiety or tension", "Surprisingly easy", "Dangerously cold"],
+        options: ["Leaving the body completely worn out", "Extremely boring", "Causing great anxiety or tension", "Surprisingly easy", "Dangerously cold"],
         correct: 2,
         explanation: "'Nerve-wracking' means causing great stress or anxiety. The breakthrough moment was tense because tiny errors in alignment over such a vast distance could have meant the tunnels missed each other. ✓"
       },
@@ -984,7 +984,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 3, what does 'bioluminescence' mean?",
-        options: ["The ability to see in darkness", "The ability to produce light from within the body", "The ability to detect heat from other creatures", "The ability to change shape underwater", "The ability to glow when touched"],
+        options: ["The ability to see clearly in the complete darkness of the deep", "The ability to produce light from within the body", "The ability to sense the body heat given off by other nearby creatures", "The ability to change the body's shape to escape from hungry predators", "The ability to light up only at the moment of being touched"],
         correct: 1,
         explanation: "The passage defines bioluminescence as 'the ability to produce light from within their own bodies'. The prefix 'bio-' means life and 'luminescence' means light production. ✓"
       },
@@ -993,7 +993,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 4, what does 'captivated' mean?",
-        options: ["Frightened", "Fascinated and held the attention of", "Captured and imprisoned", "Confused and puzzled", "Bored and disappointed"],
+        options: ["Filled with fear and a desire to flee", "Fascinated and held the attention of", "Physically caught and held prisoner against its will", "Left confused and unable to make any sense of it", "Bored and disappointed"],
         correct: 1,
         explanation: "'Captivated' means to have attracted and held someone's interest or attention. The giant squid has fascinated humans for centuries through legends and stories. ✓"
       },
@@ -1003,9 +1003,9 @@ export const mockComprehensionPassages = [
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 5, what does the word 'sobering' suggest about the discovery of the plastic bag?",
         options: [
-          "It was exciting and unexpected",
+          "It was a thrilling and completely unexpected surprise for everyone",
           "It made people think seriously about a worrying issue",
-          "It helped scientists understand deep-sea pressure",
+          "It helped scientists better understand the crushing pressure of the deep",
           "It proved that plastic is very strong",
           "It was amusing but not important"
         ],
@@ -1362,7 +1362,7 @@ export const mockComprehensionPassages = [
           "Beautiful and delicate",
           "Deeply moving and impossible to forget",
           "Old and crumbling",
-          "Scientifically valuable"
+          "Highly useful to researchers studying the disaster"
         ],
         correct: 2,
         explanation: "'Haunting' means staying in the mind because of being emotionally powerful. The body casts are not frightening in a ghost-story sense, but they are so moving and thought-provoking that they stay with you long after you have seen them. ✓"
@@ -1372,7 +1372,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 10, what does 'intricate' mean?",
-        options: ["Very old", "Extremely large", "Containing very fine, detailed patterns", "Made from expensive materials", "Hidden beneath the floor"],
+        options: ["Extremely old and dating from ancient times", "Very large and covering a great area", "Containing very fine, detailed patterns", "Made from rare and very costly precious materials", "Concealed underneath the floor and completely out of sight"],
         correct: 2,
         explanation: "'Intricate' means very detailed and complex, with many small parts. The mosaic floors were made up of thousands of tiny pieces arranged in detailed patterns. ✓"
       }
@@ -1688,7 +1688,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 1, what does 'dread' mean?",
-        options: ["Excitement", "Curiosity", "Great fear or anxiety about something", "Tiredness", "Confusion"],
+        options: ["A thrilling sense of eager and happy anticipation", "A strong and eager desire to explore something new", "Great fear or anxiety about something", "A heavy feeling of being completely physically worn out", "Confusion"],
         correct: 2,
         explanation: "'Dread' means a strong feeling of fear or anxiety about something that is going to happen. Aisha was deeply worried about living in this unfamiliar place. ✓"
       },
@@ -2046,7 +2046,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 4, what does 'translucent' mean?",
-        options: ["Completely see-through", "Allowing some light through but not fully transparent", "Reflecting light like a mirror", "Completely solid and dark", "Sparkling with colour"],
+        options: ["Perfectly clear and easy to see straight through completely", "Allowing some light through but not fully transparent", "Reflecting light like a mirror", "Completely solid and dark", "Brightly sparkling and shining with many different bright rainbow colours"],
         correct: 1,
         explanation: "'Translucent' means allowing light to pass through but not completely clear — you can see light and colour but not sharp details. The waterfall lets greenish light filter through without being fully transparent. ✓"
       },
@@ -2055,7 +2055,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 5, what does 'fissure' mean?",
-        options: ["A deep pool", "A narrow opening or crack in rock", "A type of cave animal", "A natural shelf", "A loose boulder"],
+        options: ["A deep pool of water at the base", "A narrow opening or crack in rock", "A type of cave animal", "A natural shelf", "A loose boulder"],
         correct: 1,
         explanation: "A 'fissure' is a long, narrow crack or opening in rock or earth. The cave entrance was 'a dark fissure about a metre wide and two metres tall'. ✓"
       },
@@ -2065,11 +2065,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 12, what does 'unpersuasive' mean in the phrase 'the sensible thing felt remarkably unpersuasive'?",
         options: [
-          "Very convincing",
-          "Difficult to understand",
+          "Extremely convincing and hard to resist",
+          "Confusing and very difficult to understand",
           "Not convincing or compelling",
-          "Dangerous and risky",
-          "Impossible to do"
+          "Extremely dangerous and full of serious risk",
+          "Completely impossible to actually carry out in practice"
         ],
         correct: 2,
         explanation: "'Unpersuasive' means not convincing — failing to make someone want to agree. Even though turning back was 'sensible', the beauty and excitement of the cave made that option feel unconvincing compared to exploring further. ✓"
@@ -2386,7 +2386,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 1, what does 'silhouette' mean?",
-        options: ["A shadow", "A dark outline seen against a lighter background", "A photograph", "A type of building", "A reflection in water"],
+        options: ["A dark shadow cast onto the ground by sunlight", "A dark outline seen against a lighter background", "A photograph taken of the old tower at very close range", "A particular style of tall stone building found along the coast", "A reflection in water"],
         correct: 1,
         explanation: "A 'silhouette' is the dark shape or outline of something seen against a lighter background — here, the lighthouse's dark shape against the evening sky. ✓"
       },
@@ -2404,7 +2404,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 8, what does 'decrepit' mean?",
-        options: ["Beautiful but old", "Extremely tall", "In a very poor condition due to age and neglect", "Recently painted", "Hidden from view"],
+        options: ["Beautiful but old", "Rising to an extremely great and impressive height above the surrounding rocks", "In a very poor condition due to age and neglect", "Freshly painted and looking bright, clean and in completely new condition again", "Hidden from view"],
         correct: 2,
         explanation: "'Decrepit' means worn out and in very poor condition through age and neglect. The lighthouse's peeling paint, rusted hinge, and smell of damp confirm this meaning. ✓"
       },
@@ -2750,7 +2750,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 5, what does 'complacent' mean?",
-        options: ["Frightened", "Satisfied to the point of not recognising danger", "Extremely well-prepared", "Friendly and welcoming", "Suspicious and careful"],
+        options: ["Deeply frightened and constantly afraid of an approaching attack", "Satisfied to the point of not recognising danger", "Extremely well-prepared", "Friendly and welcoming", "Suspicious and careful"],
         correct: 1,
         explanation: "'Complacent' means feeling so satisfied with the current situation that you fail to recognise potential problems. The Colchester Romans felt so safe that they did not build defensive walls. ✓"
       },
@@ -2768,7 +2768,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 12, what does 'defiance' mean?",
-        options: ["Agreement with authority", "Fear of power", "Bold resistance and refusal to obey", "Quiet acceptance", "Physical strength"],
+        options: ["Complete agreement with the wishes of those in authority", "A deep and lasting fear of those who hold great power", "Bold resistance and refusal to obey", "Calm and quiet acceptance of being ruled", "Great physical strength and raw power used in battle"],
         correct: 2,
         explanation: "'Defiance' means bold resistance to authority or opposition. Boudicca's raised arm in the statue symbolises her refusal to accept Roman domination. ✓"
       }
@@ -3084,7 +3084,7 @@ export const mockComprehensionPassages = [
         difficulty: 2,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 2, what does 'reckless' mean?",
-        options: ["Brave and strong", "Acting without thinking about consequences", "Lazy and uninterested", "Clever but dishonest", "Quiet and thoughtful"],
+        options: ["Genuinely brave and physically strong in danger", "Acting without thinking about consequences", "Lazy and showing no interest in anything", "Clever and cunning but not at all honest", "Quiet and thoughtful"],
         correct: 1,
         explanation: "'Reckless' means acting without thinking about the potential dangers or consequences. Young John was 'wild and reckless' — he fished on the Sabbath despite warnings, not caring about potential results. ✓"
       },
@@ -3111,7 +3111,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 1, what does 'enduring' mean in 'as enduring' as the tale?",
-        options: ["Painful and difficult", "Boring and repetitive", "Lasting for a very long time", "Extremely popular right now", "Recently discovered"],
+        options: ["Painful and difficult to get through or bear", "Boring and repetitive", "Lasting for a very long time", "Extremely popular right now", "Only found or discovered a short time ago"],
         correct: 2,
         explanation: "'Enduring' means lasting over a long period of time. The tale has been told for 'at least four hundred years' — it has endured across centuries. ✓"
       }
@@ -3451,7 +3451,7 @@ export const mockComprehensionPassages = [
         difficulty: 3,
         questionSubType: 'vocabulary-in-context',
         question: "In paragraph 6, what does 'controversy' mean?",
-        options: ["Excitement", "Prolonged public disagreement", "Scientific research", "Financial support", "Legal protection"],
+        options: ["Great excitement and eager enthusiasm", "Prolonged public disagreement", "Scientific research", "Financial support", "Legal protection"],
         correct: 1,
         explanation: "'Controversy' means prolonged public disagreement or argument. The programme caused debate — some supported it while others objected to 'artificial interference with nature' or worried about their poultry. ✓"
       },
