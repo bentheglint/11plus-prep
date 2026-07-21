@@ -316,4 +316,10 @@ export const englishPaperConfig = {
   ]
 };
 
-export default { vrTypeInstructions, vrPaperVariants, mathsPaperConfig, englishPaperConfig };
+// Target difficulty mix for sampled mock sections (English spelling/punctuation/
+// grammar, and every VR type-section). Matches the real GL ~30/40/30 spread, so
+// a section is drawn as a deliberate ramp instead of a random handful that can
+// come out all-easy. Tunable here without touching assembly code.
+export const sectionDifficultyWeights = { d1: 0.3, d2: 0.4, d3: 0.3 };
+
+export default { vrTypeInstructions, vrPaperVariants, mathsPaperConfig, englishPaperConfig, sectionDifficultyWeights };

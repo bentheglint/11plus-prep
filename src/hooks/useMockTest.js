@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
-import { vrPaperVariants, vrTypeInstructions, mathsPaperConfig, englishPaperConfig } from '../questionData/mockVRConfig';
+import { vrPaperVariants, vrTypeInstructions, mathsPaperConfig, englishPaperConfig, sectionDifficultyWeights } from '../questionData/mockVRConfig';
 import mockComprehensionPassages from '../questionData/mockComprehensionData';
 
 // Shuffle array (Fisher-Yates)
@@ -17,6 +17,49 @@ function pickQuestions(pool, count, difficulty = null) {
   let filtered = difficulty ? pool.filter(q => q.difficulty === difficulty) : pool;
   if (filtered.length < count) filtered = pool; // fallback if not enough at target difficulty
   return shuffle(filtered).slice(0, count);
+}
+
+// Allocate `count` questions across difficulties [1,2,3] using the target
+// weights, via largest-remainder rounding. Ties break toward the HARDER band so
+// a section back-loads difficulty (matches the real GL ramp). Pure + testable.
+// e.g. distributionForCount(8) -> { 1: 2, 2: 3, 3: 3 }
+export function distributionForCount(count, weights = sectionDifficultyWeights) {
+  const w = [weights.d1, weights.d2, weights.d3];
+  const raw = w.map(x => x * count);
+  const floors = raw.map(Math.floor);
+  const remaining = count - floors.reduce((a, b) => a + b, 0);
+  const order = raw
+    .map((v, i) => ({ i, rem: v - floors[i] }))
+    .sort((a, b) => (b.rem - a.rem) || (b.i - a.i)); // tie -> harder band (higher i)
+  const counts = [...floors];
+  for (let k = 0; k < remaining; k++) counts[order[k].i]++;
+  return { 1: counts[0], 2: counts[1], 3: counts[2] };
+}
+
+// Draw `count` questions from a single-topic pool matching the target difficulty
+// distribution, so a section is a deliberate ramp rather than a random draw that
+// can come out all-easy. Falls back to any remaining question if a band is short,
+// so it never under-fills. Ids are unique within a topic pool.
+function pickByDistribution(pool, count) {
+  const dist = distributionForCount(count);
+  const used = new Set();
+  const picked = [];
+  [1, 2, 3].forEach(d => {
+    const atBand = shuffle(pool.filter(q => q.difficulty === d && !used.has(q.id)));
+    for (let i = 0; i < dist[d] && i < atBand.length; i++) {
+      picked.push(atBand[i]);
+      used.add(atBand[i].id);
+    }
+  });
+  if (picked.length < count) { // a band was short — backfill from anything left
+    const rest = shuffle(pool.filter(q => !used.has(q.id)));
+    for (const q of rest) {
+      if (picked.length >= count) break;
+      picked.push(q);
+      used.add(q.id);
+    }
+  }
+  return picked;
 }
 
 // Sort questions easy → hard within a set
@@ -134,10 +177,10 @@ function generateEnglishPaper(englishTopics) {
   }));
   sections.push(...wcQs);
 
-  // Section 4: Spelling error-spotting (8 Qs)
+  // Section 4: Spelling error-spotting (8 Qs) — targeted difficulty ramp
   if (englishTopics.spelling) {
     const spellingPool = englishTopics.spelling.questions;
-    const spellingQs = shuffle(spellingPool).slice(0, 8).map(q => ({
+    const spellingQs = pickByDistribution(spellingPool, 8).map(q => ({
       question: q,
       topicKey: 'spelling',
       topicName: 'Spelling',
@@ -147,10 +190,10 @@ function generateEnglishPaper(englishTopics) {
     sections.push(...sortByDifficulty(spellingQs));
   }
 
-  // Section 5: Punctuation error-spotting (8 Qs)
+  // Section 5: Punctuation error-spotting (8 Qs) — targeted difficulty ramp
   if (englishTopics.punctuation) {
     const punctPool = englishTopics.punctuation.questions;
-    const punctQs = shuffle(punctPool).slice(0, 8).map(q => ({
+    const punctQs = pickByDistribution(punctPool, 8).map(q => ({
       question: q,
       topicKey: 'punctuation',
       topicName: 'Punctuation',
@@ -160,10 +203,10 @@ function generateEnglishPaper(englishTopics) {
     sections.push(...sortByDifficulty(punctQs));
   }
 
-  // Section 6: Grammar/Cloze (8 Qs)
+  // Section 6: Grammar/Cloze (8 Qs) — targeted difficulty ramp
   if (englishTopics.grammar) {
     const grammarPool = englishTopics.grammar.questions;
-    const grammarQs = shuffle(grammarPool).slice(0, 8).map(q => ({
+    const grammarQs = pickByDistribution(grammarPool, 8).map(q => ({
       question: q,
       topicKey: 'grammar',
       topicName: 'Grammar',
@@ -204,7 +247,7 @@ function generateVRPaper(vrTopics) {
     if (!topic) return;
 
     const pool = topic.questions;
-    const picked = shuffle(pool).slice(0, section.questions);
+    const picked = pickByDistribution(pool, section.questions);
     const sorted = sortByDifficulty(picked);
 
     sorted.forEach(q => {
@@ -220,6 +263,9 @@ function generateVRPaper(vrTopics) {
 
   return { questions, sectionBreaks, variant };
 }
+
+// Exported for tests (assembly is otherwise internal to the hook)
+export { generateEnglishPaper, generateVRPaper, generateMathsPaper };
 
 // ========== MAIN HOOK ==========
 export default function useMockTest() {
