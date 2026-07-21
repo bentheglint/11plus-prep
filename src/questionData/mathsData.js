@@ -13,24 +13,24 @@ const mathsData = {
             id: 1,
             difficulty: 1,
             question: "What is 25% of £200?",
-            options: ["£50", "£40", "£60", "£75", "£25"],
-            correct: 0,
+            options: ["£150", "£50", "£45", "£8", "£55"],
+            correct: 1,
             explanation: "To find 25% of £200, we can calculate 200 ÷ 4 = £50 (because 25% is the same as 1/4). Or multiply: 200 × 0.25 = £50. ✓"
           },
           {
             id: 2,
             difficulty: 2,
             question: "A shirt costs £40. In a sale, it is reduced by 20%. What is the sale price?",
-            options: ["£20", "£32", "£35", "£38", "£30"],
-            correct: 1,
+            options: ["£40", "£48", "£32", "£27", "£37"],
+            correct: 2,
             explanation: "First find 20% of £40: 40 ÷ 5 = £8 (because 20% = 1/5). Then subtract: £40 - £8 = £32. The sale price is £32. ✓"
           },
           {
             id: 3,
             difficulty: 2,
             question: "In a class of 25 children, 15 are girls. What percentage are girls?",
-            options: ["50%", "65%", "60%", "70%", "75%"],
-            correct: 2,
+            options: ["40%", "15%", "65%", "60%", "55%"],
+            correct: 3,
             explanation: "To find the percentage: (15 ÷ 25) × 100 = 0.6 × 100 = 60%. So 60% of the class are girls. ✓"
           },
           {
@@ -45,8 +45,8 @@ const mathsData = {
             id: 5,
             difficulty: 2,
             question: "A bicycle was priced at £300. After a 15% discount, what is the new price?",
-            options: ["£250", "£285", "£265", "£270", "£255"],
-            correct: 4,
+            options: ["£255", "£250", "£45", "£260", "£300"],
+            correct: 0,
             explanation: "First find 15% of £300: 10% = £30, so 5% = £15, therefore 15% = £45. Then subtract: £300 - £45 = £255. ✓"
           },
           {
@@ -61,8 +61,8 @@ const mathsData = {
             id: 7,
             difficulty: 2,
             question: "A shop has 80 apples. 35% of them are green. How many green apples are there?",
-            options: ["24", "28", "26", "30", "32"],
-            correct: 1,
+            options: ["33", "52", "28", "23", "2"],
+            correct: 2,
             explanation: "Find 35% of 80: First find 10% = 8, so 30% = 24. Then 5% = 4. Add them: 24 + 4 = 28 green apples. ✓"
           },
           {
@@ -77,24 +77,24 @@ const mathsData = {
             id: 9,
             difficulty: 2,
             question: "A football team won 18 out of 30 matches. What percentage did they win?",
-            options: ["50%", "55%", "65%", "60%", "70%"],
-            correct: 3,
+            options: ["55%", "40%", "18%", "65%", "60%"],
+            correct: 4,
             explanation: "Calculate: (18 ÷ 30) × 100. Simplify 18/30 = 3/5 = 0.6. Then 0.6 × 100 = 60%. ✓"
           },
           {
             id: 10,
             difficulty: 1,
             question: "A swimming pool holds 160 litres. It is 75% full. How many litres of water are in the pool?",
-            options: ["100", "110", "140", "130", "120"],
-            correct: 4,
+            options: ["120", "115", "40", "2", "125"],
+            correct: 0,
             explanation: "75% is the same as 3/4. To find 3/4 of 160: 160 ÷ 4 = 40, then 40 × 3 = 120. ✓"
           },
           {
             id: 11,
             difficulty: 3,
             question: "A games console costs £240 after a 20% discount. What was the original price?",
-            options: ["£300", "£288", "£280", "£320", "£360"],
-            correct: 0,
+            options: ["£336", "£300", "£295", "£288", "£305"],
+            correct: 1,
             explanation: "If £240 is 80% of the original price (100% - 20% = 80%), then 10% = £30 (240 ÷ 8). So 100% = £30 × 10 = £300. ✓"
           },
           {
@@ -133,8 +133,8 @@ const mathsData = {
             id: 16,
             difficulty: 2,
             question: "A farmer has 120 sheep. 65% of them are female. How many male sheep does he have?",
-            options: ["42", "38", "40", "36", "44"],
-            correct: 0,
+            options: ["198", "42", "47", "78", "120"],
+            correct: 1,
             explanation: "If 65% are female, then 35% are male (100% - 65% = 35%). Find 35% of 120: 10% = 12, so 30% = 36, and 5% = 6. Therefore 35% = 36 + 6 = 42 male sheep. ✓"
           },
           {
@@ -149,32 +149,32 @@ const mathsData = {
             id: 18,
             difficulty: 2,
             question: "A cinema has 400 seats. On Friday night, 85% of the seats were filled. How many seats were empty?",
-            options: ["40", "50", "60", "70", "80"],
-            correct: 2,
+            options: ["65", "340", "400", "60", "55"],
+            correct: 3,
             explanation: "If 85% were filled, then 15% were empty (100% - 85% = 15%). Find 15% of 400: 10% = 40, and 5% = 20, so 15% = 60 empty seats. ✓"
           },
           {
             id: 19,
             difficulty: 2,
             question: "What is 12% of 350?",
-            options: ["40", "46", "44", "42", "48"],
-            correct: 3,
+            options: ["37", "29", "47", "308", "42"],
+            correct: 4,
             explanation: "Find 10% = 35, then 1% = 3.5, so 2% = 7. Total: 35 + 7 = 42. ✓"
           },
           {
             id: 20,
             difficulty: 3,
             question: "A jacket originally cost £75. It is reduced by 10%, and then the new price is reduced by 10% again. What is the final price?",
-            options: ["£60.00", "£67.50", "£61.25", "£61.50", "£60.75"],
-            correct: 4,
+            options: ["£60.75", "£60.00", "£55.75", "£65.75", "£67.50"],
+            correct: 0,
             explanation: "First discount: 10% of £75 = £7.50, so price = £67.50. Second discount: 10% of £67.50 = £6.75, so final price = £67.50 - £6.75 = £60.75. ✓ Remember: two 10% discounts don't equal 20%!"
           },
           {
             id: 21,
             difficulty: 2,
             question: "In a test, Sarah scored 32 out of 40. What percentage did she score?",
-            options: ["80%", "78%", "75%", "82%", "85%"],
-            correct: 0,
+            options: ["85%", "80%", "75%", "32%", "20%"],
+            correct: 1,
             explanation: "Calculate: (32 ÷ 40) × 100. Simplify: 32/40 = 4/5 = 0.8. Then 0.8 × 100 = 80%. ✓"
           },
           {
@@ -189,16 +189,16 @@ const mathsData = {
             id: 23,
             difficulty: 2,
             question: "A train ticket costs £45 for adults. Children pay 60% of the adult price. How much does a child ticket cost?",
-            options: ["£25", "£29", "£27", "£30", "£32"],
-            correct: 2,
+            options: ["£18", "£1", "£32", "£27", "£22"],
+            correct: 3,
             explanation: "Find 60% of £45. First find 10% = £4.50, so 60% = £4.50 × 6 = £27. ✓"
           },
           {
             id: 24,
             difficulty: 2,
             question: "A shop increases all prices by 15%. A TV that cost £400 now costs how much?",
-            options: ["£450", "£455", "£465", "£460", "£470"],
-            correct: 3,
+            options: ["£455", "£400", "£340", "£60", "£460"],
+            correct: 4,
             explanation: "Find 15% of £400: 10% = £40, and 5% = £20, so 15% = £60. Add to original: £400 + £60 = £460. ✓"
           },
           {
@@ -221,24 +221,24 @@ const mathsData = {
             id: 27,
             difficulty: 3,
             question: "A phone costs £180 after a 25% discount. What was the original price?",
-            options: ["£220", "£240", "£230", "£225", "£250"],
-            correct: 1,
+            options: ["£180", "£245", "£240", "£235", "£225"],
+            correct: 2,
             explanation: "£180 is 75% of the original (100% - 25% = 75%). If 75% = £180, then 25% = £60 (180 ÷ 3), so 100% = £60 × 4 = £240. ✓"
           },
           {
             id: 28,
             difficulty: 2,
             question: "What is 45% of 220?",
-            options: ["95", "103", "99", "107", "110"],
-            correct: 2,
+            options: ["5", "104", "121", "99", "94"],
+            correct: 3,
             explanation: "Find 10% of 220 = 22, so 40% = 88. Then 5% = 11. Add them: 88 + 11 = 99. ✓"
           },
           {
             id: 29,
             difficulty: 2,
             question: "A school has 600 students. 48% are boys. How many are girls?",
-            options: ["288", "300", "320", "312", "352"],
-            correct: 3,
+            options: ["307", "317", "600", "888", "312"],
+            correct: 4,
             explanation: "If 48% are boys, then 52% are girls (100% - 48% = 52%). Find 52% of 600: 50% = 300, and 2% = 12, so 52% = 312 girls. ✓"
           },
           {
@@ -253,32 +253,32 @@ const mathsData = {
             id: 31,
             difficulty: 2,
             question: "A recipe needs 250g of flour. Tom only wants to make 60% of the recipe. How much flour does he need?",
-            options: ["150g", "130g", "140g", "120g", "160g"],
-            correct: 0,
+            options: ["155g", "150g", "145g", "100g", "4g"],
+            correct: 1,
             explanation: "Find 60% of 250g: 10% = 25g, so 60% = 25g × 6 = 150g. ✓"
           },
           {
             id: 32,
             difficulty: 1,
             question: "A store sells 180 items in a week. 20% were sold on Saturday. How many items were sold on Saturday?",
-            options: ["30", "36", "34", "32", "38"],
-            correct: 1,
+            options: ["41", "144", "36", "31", "9"],
+            correct: 2,
             explanation: "Find 20% of 180: 10% of 180 = 18, so 20% = 18 × 2 = 36 items. ✓"
           },
           {
             id: 33,
             difficulty: 1,
             question: "What percentage is 24 out of 96?",
-            options: ["20%", "22%", "25%", "24%", "30%"],
-            correct: 2,
+            options: ["20%", "30%", "75%", "25%", "24%"],
+            correct: 3,
             explanation: "Calculate: (24 ÷ 96) × 100. Simplify: 24/96 = 1/4 = 0.25. Then 0.25 × 100 = 25%. ✓"
           },
           {
             id: 34,
             difficulty: 2,
             question: "A library has 540 books. After buying more books, it has 15% more than before. How many books does it have now?",
-            options: ["555", "595", "615", "621", "635"],
-            correct: 3,
+            options: ["616", "540", "459", "81", "621"],
+            correct: 4,
             explanation: "Find 15% of 540: 10% = 54, and 5% = 27, so 15% = 81. Add to original: 540 + 81 = 621 books. ✓"
           },
           {
@@ -293,80 +293,80 @@ const mathsData = {
       id: 36,
       difficulty: 1,
       question: "A farm has 180 animals. 30% of them are sheep. How many sheep are there?",
-      options: ["54", "51", "52", "48", "56"],
-      correct: 0,
+      options: ["126", "54", "49", "6", "59"],
+      correct: 1,
       explanation: "To find 30%, first find 10% then multiply by 3. 10% of 180 = 18, so 30% = 18 × 3 = 54. ✓"
     },
     {
       id: 37,
       difficulty: 2,
       question: "A backpack costs £80. During a clearance sale, it is reduced by 35%. What is the sale price?",
-      options: ["£50", "£52", "£54", "£56", "£58"],
-      correct: 1,
+      options: ["£80", "£108", "£52", "£47", "£57"],
+      correct: 2,
       explanation: "First find 35% of £80: 10% = £8, so 30% = £24, and 5% = £4. Therefore 35% = £28. Subtract: £80 - £28 = £52. ✓"
     },
     {
       id: 38,
       difficulty: 1,
       question: "In a box of 64 crayons, 16 are red. What percentage are red?",
-      options: ["20%", "22%", "25%", "28%", "30%"],
-      correct: 2,
+      options: ["16%", "30%", "75%", "25%", "20%"],
+      correct: 3,
       explanation: "Calculate: (16 ÷ 64) × 100. Simplify: 16/64 = 1/4 = 0.25. Then 0.25 × 100 = 25%. ✓"
     },
     {
       id: 39,
       difficulty: 1,
       question: "A school trip costs £240. A deposit of 15% is needed to book a place. How much is the deposit?",
-      options: ["£32", "£40", "£38", "£36", "£42"],
-      correct: 3,
+      options: ["£31", "£16", "£41", "£204", "£36"],
+      correct: 4,
       explanation: "Find 10% of £240 = £24. Then 5% = £12. Add them: £24 + £12 = £36. ✓"
     },
     {
       id: 40,
       difficulty: 3,
       question: "A tablet was priced at £68 after a 15% discount. What was the original price?",
-      options: ["£75", "£76", "£78", "£79", "£80"],
-      correct: 4,
+      options: ["£80", "£78", "£75", "£68", "£85"],
+      correct: 0,
       explanation: "If £68 is 85% of the original (100% - 15% = 85%), then £68 ÷ 0.85 = £80. ✓"
     },
     {
       id: 41,
       difficulty: 1,
       question: "What is 60% of 350?",
-      options: ["210", "190", "200", "180", "220"],
-      correct: 0,
+      options: ["215", "210", "205", "140", "6"],
+      correct: 1,
       explanation: "60% is 6/10. Calculate: 350 × 0.6 = 210. Or find 10% = 35, then 60% = 35 × 6 = 210. ✓"
     },
     {
       id: 42,
       difficulty: 1,
       question: "A garden has 150 plants. 45 are flowers. What percentage are flowers?",
-      options: ["25%", "30%", "28%", "32%", "35%"],
-      correct: 1,
+      options: ["70%", "333%", "30%", "35%", "45%"],
+      correct: 2,
       explanation: "Calculate: (45 ÷ 150) × 100. Simplify: 45/150 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 43,
       difficulty: 2,
       question: "A school has 450 pupils. 72% attended the assembly. How many pupils were absent?",
-      options: ["116", "120", "126", "130", "135"],
-      correct: 2,
+      options: ["324", "450", "774", "126", "131"],
+      correct: 3,
       explanation: "If 72% attended, then 28% were absent (100% - 72%). Find 28% of 450: 10% = 45, so 20% = 90, and 8% = 36. Therefore 28% = 126. ✓"
     },
     {
       id: 44,
       difficulty: 2,
       question: "What is 8% of £650?",
-      options: ["£50", "£56", "£54", "£52", "£58"],
-      correct: 3,
+      options: ["£47", "£57", "£81", "£598", "£52"],
+      correct: 4,
       explanation: "Find 10% of £650 = £65. Then 8% = £65 × 0.8 = £52. Or: 1% = £6.50, so 8% = £52. ✓"
     },
     {
       id: 45,
       difficulty: 3,
       question: "A video game costs £90 after a 40% discount. What was the original price?",
-      options: ["£120", "£130", "£140", "£160", "£150"],
-      correct: 4,
+      options: ["£150", "£145", "£126", "£90", "£155"],
+      correct: 0,
       explanation: "£90 is 60% of the original (100% - 40%). If 60% = £90, then 10% = £15, so 100% = £150. ✓"
     },
     {
@@ -381,40 +381,40 @@ const mathsData = {
       id: 47,
       difficulty: 2,
       question: "A school has 280 students in an assembly. 55% are female. How many are male?",
-      options: ["120", "126", "122", "130", "134"],
-      correct: 1,
+      options: ["280", "434", "126", "131", "154"],
+      correct: 2,
       explanation: "If 55% are female, then 45% are male (100% - 55%). Find 45% of 280: 10% = 28, so 40% = 112, and 5% = 14. Therefore 45% = 126. ✓"
     },
     {
       id: 48,
       difficulty: 2,
       question: "A watch costs £120. If the price increases by 25%, what is the new price?",
-      options: ["£135", "£140", "£150", "£148", "£145"],
-      correct: 2,
+      options: ["£120", "£90", "£30", "£150", "£145"],
+      correct: 3,
       explanation: "Find 25% of £120 = £30. Add to original: £120 + £30 = £150. ✓"
     },
     {
       id: 49,
       difficulty: 2,
       question: "In a test, Noah scored 18 out of 45. What percentage did he score?",
-      options: ["35%", "38%", "42%", "40%", "45%"],
-      correct: 3,
+      options: ["35%", "45%", "60%", "250%", "40%"],
+      correct: 4,
       explanation: "Calculate: (18 ÷ 45) × 100. Simplify: 18/45 = 2/5 = 0.4. Then 0.4 × 100 = 40%. ✓"
     },
     {
       id: 50,
       difficulty: 2,
       question: "What is 35% of 420?",
-      options: ["140", "144", "153", "150", "147"],
-      correct: 4,
+      options: ["147", "142", "12", "152", "273"],
+      correct: 0,
       explanation: "Find 10% of 420 = 42, so 30% = 126. Then 5% = 21. Add them: 126 + 21 = 147. ✓"
     },
     {
       id: 51,
       difficulty: 3,
       question: "A camera costs £144 after a 20% discount. What was the original price?",
-      options: ["£180", "£160", "£190", "£200", "£210"],
-      correct: 0,
+      options: ["£185", "£180", "£175", "£173", "£144"],
+      correct: 1,
       explanation: "£144 is 80% of the original (100% - 20%). If 80% = £144, then 10% = £18, so 100% = £180. ✓"
     },
     {
@@ -429,8 +429,8 @@ const mathsData = {
       id: 53,
       difficulty: 2,
       question: "A gym membership costs £85. If it increases by 20%, what is the new price?",
-      options: ["£95", "£98", "£102", "£101", "£100"],
-      correct: 2,
+      options: ["£85", "£68", "£17", "£102", "£97"],
+      correct: 3,
       explanation: "Find 20% of £85: 10% = £8.50, so 20% = £17. Add: £85 + £17 = £102. ✓"
     },
     {
@@ -445,96 +445,96 @@ const mathsData = {
       id: 55,
       difficulty: 2,
       question: "Ella scored 63 marks out of 90. What percentage did she score?",
-      options: ["65%", "68%", "69%", "72%", "70%"],
-      correct: 4,
+      options: ["70%", "65%", "63%", "30%", "75%"],
+      correct: 0,
       explanation: "Calculate: (63 ÷ 90) × 100. Simplify: 63/90 = 7/10 = 0.7. Then 0.7 × 100 = 70%. ✓"
     },
     {
       id: 56,
       difficulty: 2,
       question: "What is 12% of 550?",
-      options: ["66", "63", "65", "60", "68"],
-      correct: 0,
+      options: ["484", "66", "61", "46", "71"],
+      correct: 1,
       explanation: "Find 10% of 550 = 55. Then 2% = 11. Add them: 55 + 11 = 66. ✓"
     },
     {
       id: 57,
       difficulty: 2,
       question: "In a vote, 200 people participated. 65% voted 'yes'. How many voted 'no'?",
-      options: ["60", "70", "68", "65", "75"],
-      correct: 1,
+      options: ["200", "330", "70", "75", "130"],
+      correct: 2,
       explanation: "If 65% voted yes, then 35% voted no (100% - 65%). Find 35% of 200: 10% = 20, so 30% = 60, and 5% = 10. Therefore 35% = 70. ✓"
     },
     {
       id: 58,
       difficulty: 2,
       question: "A bag contains 800g of rice. If 45% is used, how much remains?",
-      options: ["420g", "430g", "440g", "450g", "460g"],
-      correct: 2,
+      options: ["445g", "800g", "1160g", "440g", "435g"],
+      correct: 3,
       explanation: "If 45% is used, then 55% remains (100% - 45%). Find 55% of 800g: 10% = 80g, so 50% = 400g, and 5% = 40g. Therefore 55% = 440g. ✓"
     },
     {
       id: 59,
       difficulty: 3,
       question: "A pair of headphones costs £156 after a 20% discount. What was the original price?",
-      options: ["£180", "£210", "£200", "£195", "£220"],
-      correct: 3,
+      options: ["£190", "£187", "£156", "£200", "£195"],
+      correct: 4,
       explanation: "£156 is 80% of the original (100% - 20%). If 80% = £156, then 10% = £19.50, so 100% = £195. ✓"
     },
     {
       id: 60,
       difficulty: 2,
       question: "What percentage is 48 out of 320?",
-      options: ["22%", "16%", "18%", "20%", "15%"],
-      correct: 4,
+      options: ["15%", "13%", "17%", "48%", "85%"],
+      correct: 0,
       explanation: "Calculate: (48 ÷ 320) × 100. Simplify: 48/320 = 3/20 = 0.15. Then 0.15 × 100 = 15%. ✓"
     },
     {
       id: 61,
       difficulty: 3,
       question: "A store offers two successive discounts of 15% and then 10% on an item originally priced at £200. What is the final price?",
-      options: ["£153", "£150", "£152", "£145", "£155"],
-      correct: 0,
+      options: ["£170", "£153", "£150", "£148", "£158"],
+      correct: 1,
       explanation: "First discount: £200 × 0.85 = £170. Second discount: £170 × 0.90 = £153. ✓"
     },
     {
       id: 62,
       difficulty: 2,
       question: "What is 18% of 350?",
-      options: ["60", "63", "61", "65", "67"],
-      correct: 1,
+      options: ["68", "287", "63", "58", "19"],
+      correct: 2,
       explanation: "Find 10% of 350 = 35, so 20% = 70. Then 2% = 7. Subtract: 70 - 7 = 63. Or: 10% = 35, 8% = 28, so 18% = 63. ✓"
     },
     {
       id: 63,
       difficulty: 2,
       question: "A sweet shop has 450 sweets. 38% are chocolate. How many are NOT chocolate?",
-      options: ["261", "270", "279", "275", "285"],
-      correct: 2,
+      options: ["284", "450", "621", "279", "274"],
+      correct: 3,
       explanation: "If 38% are chocolate, then 62% are not (100% - 38%). Find 62% of 450: 10% = 45, so 60% = 270, and 2% = 9. Therefore 62% = 279. ✓"
     },
     {
       id: 64,
       difficulty: 2,
       question: "A coat costs £75. If the price increases by 32%, what is the new price?",
-      options: ["£95", "£105", "£102", "£99", "£108"],
-      correct: 3,
+      options: ["£94", "£75", "£51", "£24", "£99"],
+      correct: 4,
       explanation: "Find 32% of £75: 10% = £7.50, so 30% = £22.50, and 2% = £1.50. Therefore 32% = £24. Add: £75 + £24 = £99. ✓"
     },
     {
       id: 65,
       difficulty: 2,
       question: "Max scored 56 marks out of 140. What percentage did he score?",
-      options: ["35%", "38%", "39%", "42%", "40%"],
-      correct: 4,
+      options: ["40%", "45%", "56%", "60%", "250%"],
+      correct: 0,
       explanation: "Calculate: (56 ÷ 140) × 100. Simplify: 56/140 = 2/5 = 0.4. Then 0.4 × 100 = 40%. ✓"
     },
     {
       id: 66,
       difficulty: 2,
       question: "What is 22% of 650?",
-      options: ["143", "145", "148", "150", "153"],
-      correct: 0,
+      options: ["507", "143", "138", "30", "148"],
+      correct: 1,
       explanation: "Find 10% of 650 = 65, so 20% = 130. Then 2% = 13. Add them: 130 + 13 = 143. ✓"
     },
     {
@@ -549,8 +549,8 @@ const mathsData = {
       id: 68,
       difficulty: 3,
       question: "A tablet costs £105 after a 30% discount. What was the original price?",
-      options: ["£130", "£135", "£150", "£145", "£140"],
-      correct: 2,
+      options: ["£137", "£105", "£155", "£150", "£145"],
+      correct: 3,
       explanation: "£105 is 70% of the original (100% - 30%). If 70% = £105, then 10% = £15, so 100% = £150. ✓"
     },
     {
@@ -565,32 +565,32 @@ const mathsData = {
       id: 70,
       difficulty: 2,
       question: "What percentage is 27 out of 180?",
-      options: ["12%", "14%", "18%", "16%", "15%"],
-      correct: 4,
+      options: ["15%", "13%", "17%", "27%", "85%"],
+      correct: 0,
       explanation: "Calculate: (27 ÷ 180) × 100. Simplify: 27/180 = 3/20 = 0.15. Then 0.15 × 100 = 15%. ✓"
     },
     {
       id: 71,
       difficulty: 2,
       question: "A college has 750 students. 44% are studying science. How many are NOT studying science?",
-      options: ["420", "360", "390", "330", "450"],
-      correct: 0,
+      options: ["1080", "420", "415", "425", "750"],
+      correct: 1,
       explanation: "If 44% study science, then 56% don't (100% - 44%). Find 56% of 750: 10% = 75, so 50% = 375, and 6% = 45. Therefore 56% = 420. ✓"
     },
     {
       id: 72,
       difficulty: 2,
       question: "What is 16% of 875?",
-      options: ["145", "140", "150", "155", "160"],
-      correct: 1,
+      options: ["145", "735", "140", "135", "55"],
+      correct: 2,
       explanation: "Find 10% of 875 = 87.5, so 20% = 175. Then 4% = 35. Subtract: 175 - 35 = 140. Or: 1% = 8.75, so 16% = 140. ✓"
     },
     {
       id: 73,
       difficulty: 3,
       question: "A keyboard costs £216 after a 10% discount. What was the original price?",
-      options: ["£230", "£250", "£240", "£260", "£270"],
-      correct: 2,
+      options: ["£235", "£216", "£245", "£240", "£238"],
+      correct: 3,
       explanation: "£216 is 90% of the original (100% - 10%). If 90% = £216, then 10% = £24, so 100% = £240. ✓"
     },
     {
@@ -605,64 +605,64 @@ const mathsData = {
       id: 75,
       difficulty: 2,
       question: "What is 85% of 360?",
-      options: ["296", "300", "316", "310", "306"],
-      correct: 4,
+      options: ["306", "301", "54", "4", "311"],
+      correct: 0,
       explanation: "Find 10% of 360 = 36, so 80% = 288. Then 5% = 18. Add them: 288 + 18 = 306. ✓"
     },
     {
       id: 76,
       difficulty: 1,
       question: "What percentage is 72 out of 240?",
-      options: ["30%", "28%", "25%", "32%", "35%"],
-      correct: 0,
+      options: ["333%", "30%", "35%", "70%", "72%"],
+      correct: 1,
       explanation: "Calculate: (72 ÷ 240) × 100. Simplify: 72/240 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 77,
       difficulty: 2,
       question: "A phone bill is £140. If it increases by 18%, what is the new bill?",
-      options: ["£165.80", "£165.20", "£166.00", "£166.20", "£166.80"],
-      correct: 1,
+      options: ["£114.80", "£25.20", "£165.20", "£160.20", "£140.00"],
+      correct: 2,
       explanation: "Find 18% of £140: 10% = £14, so 20% = £28. Then 2% = £2.80. Subtract: £28 - £2.80 = £25.20. Add to original: £140 + £25.20 = £165.20. ✓"
     },
     {
       id: 78,
       difficulty: 2,
       question: "In an election, 500 people voted. 58% voted for candidate A. How many voted for other candidates?",
-      options: ["200", "220", "210", "230", "240"],
-      correct: 2,
+      options: ["290", "500", "790", "210", "215"],
+      correct: 3,
       explanation: "If 58% voted for A, then 42% voted for others (100% - 58%). Find 42% of 500: 10% = 50, so 40% = 200, and 2% = 10. Therefore 42% = 210. ✓"
     },
     {
       id: 79,
       difficulty: 2,
       question: "What is 26% of 450?",
-      options: ["108", "112", "115", "117", "120"],
-      correct: 3,
+      options: ["112", "17", "122", "333", "117"],
+      correct: 4,
       explanation: "Find 10% of 450 = 45, so 20% = 90. Then 6% = 27. Add them: 90 + 27 = 117. ✓"
     },
     {
       id: 80,
       difficulty: 3,
       question: "A games console costs £168 after a 25% discount. What was the original price?",
-      options: ["£200", "£210", "£240", "£230", "£224"],
-      correct: 4,
+      options: ["£224", "£219", "£210", "£168", "£229"],
+      correct: 0,
       explanation: "£168 is 75% of the original (100% - 25%). If 75% = £168, then 25% = £56 (168 ÷ 3), so 100% = £56 × 4 = £224. ✓"
     },
     {
       id: 81,
       difficulty: 2,
       question: "Lily uses 35% of a 600g bag of flour. How much flour did she use?",
-      options: ["210g", "200g", "205g", "190g", "215g"],
-      correct: 0,
+      options: ["390g", "210g", "205g", "17g", "215g"],
+      correct: 1,
       explanation: "Find 35% of 600g: 10% = 60g, so 30% = 180g, and 5% = 30g. Therefore 35% = 210g. ✓"
     },
     {
       id: 82,
       difficulty: 1,
       question: "What percentage is 54 out of 180?",
-      options: ["25%", "30%", "28%", "32%", "35%"],
-      correct: 1,
+      options: ["70%", "333%", "30%", "35%", "54%"],
+      correct: 2,
       explanation: "Calculate: (54 ÷ 180) × 100. Simplify: 54/180 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
@@ -685,40 +685,40 @@ const mathsData = {
       id: 85,
       difficulty: 2,
       question: "What is 14% of 725?",
-      options: ["98", "108", "103", "105", "101.5"],
-      correct: 4,
+      options: ["101.5", "96.5", "51.8", "106.5", "623.5"],
+      correct: 0,
       explanation: "Find 10% of 725 = 72.5. Then 4% = 29. Add them: 72.5 + 29 = 101.5. ✓"
     },
     {
       id: 86,
       difficulty: 2,
       question: "A school has 900 pupils. If 42% passed a swimming test, how many did not pass?",
-      options: ["522", "510", "516", "502", "530"],
-      correct: 0,
+      options: ["1278", "522", "517", "527", "900"],
+      correct: 1,
       explanation: "If 42% passed, then 58% did not pass (100% - 42%). Find 58% of 900: 10% = 90, so 50% = 450, and 8% = 72. Therefore 58% = 522. ✓"
     },
     {
       id: 87,
       difficulty: 1,
       question: "What percentage is 96 out of 160?",
-      options: ["55%", "60%", "58%", "62%", "65%"],
-      correct: 1,
+      options: ["96%", "167%", "60%", "55%", "65%"],
+      correct: 2,
       explanation: "Calculate: (96 ÷ 160) × 100. Simplify: 96/160 = 3/5 = 0.6. Then 0.6 × 100 = 60%. ✓"
     },
     {
       id: 88,
       difficulty: 2,
       question: "What is 38% of 550?",
-      options: ["205", "213", "209", "217", "221"],
-      correct: 2,
+      options: ["14", "214", "341", "209", "204"],
+      correct: 3,
       explanation: "Find 10% of 550 = 55, so 30% = 165. Then 8% = 44. Add them: 165 + 44 = 209. ✓"
     },
     {
       id: 89,
       difficulty: 2,
       question: "A dining table costs £135. If the price increases by 24%, what is the new price?",
-      options: ["£155.20", "£160.40", "£165.00", "£167.40", "£170.00"],
-      correct: 3,
+      options: ["£162.40", "£135.00", "£102.60", "£32.40", "£167.40"],
+      correct: 4,
       explanation: "Find 24% of £135: 10% = £13.50, so 20% = £27, and 4% = £5.40. Therefore 24% = £32.40. Add: £135 + £32.40 = £167.40. ✓"
     },
     {
@@ -733,8 +733,8 @@ const mathsData = {
       id: 91,
       difficulty: 3,
       question: "A sofa costs £252 after a 10% discount. What was the original price?",
-      options: ["£280", "£270", "£260", "£290", "£300"],
-      correct: 0,
+      options: ["£285", "£280", "£277", "£275", "£252"],
+      correct: 1,
       explanation: "£252 is 90% of the original (100% - 10%). If 90% = £252, then 10% = £28, so 100% = £280. ✓"
     },
     {
@@ -749,8 +749,8 @@ const mathsData = {
       id: 93,
       difficulty: 1,
       question: "What percentage is 84 out of 210?",
-      options: ["35%", "38%", "40%", "42%", "45%"],
-      correct: 2,
+      options: ["60%", "84%", "250%", "40%", "45%"],
+      correct: 3,
       explanation: "Calculate: (84 ÷ 210) × 100. Simplify: 84/210 = 2/5 = 0.4. Then 0.4 × 100 = 40%. ✓"
     },
     {
@@ -765,48 +765,48 @@ const mathsData = {
       id: 95,
       difficulty: 2,
       question: "What is 19% of 680?",
-      options: ["127.2", "135.2", "131.2", "133.2", "129.2"],
-      correct: 4,
+      options: ["129.2", "124.2", "35.8", "134.2", "550.8"],
+      correct: 0,
       explanation: "Find 10% of 680 = 68, so 20% = 136. Then 1% = 6.8. Subtract: 136 - 6.8 = 129.2. ✓"
     },
     {
       id: 96,
       difficulty: 3,
       question: "A television costs £192 after a 20% discount. What was the original price?",
-      options: ["£240", "£230", "£235", "£220", "£250"],
-      correct: 0,
+      options: ["£245", "£240", "£235", "£230", "£192"],
+      correct: 1,
       explanation: "£192 is 80% of the original (100% - 20%). If 80% = £192, then 10% = £24, so 100% = £240. ✓"
     },
     {
       id: 97,
       difficulty: 2,
       question: "A school has 420 students. 35% are in Year 5. The rest are in Year 6. How many are in Year 6?",
-      options: ["280", "273", "285", "290", "295"],
-      correct: 1,
+      options: ["420", "567", "273", "268", "278"],
+      correct: 2,
       explanation: "If 35% are Year 5, then 65% are Year 6 (100% - 35%). Find 65% of 420: 10% = 42, so 60% = 252, and 5% = 21. Therefore 65% = 273. ✓"
     },
     {
       id: 98,
       difficulty: 2,
       question: "What is 32% of 875?",
-      options: ["270", "275", "280", "285", "290"],
-      correct: 2,
+      options: ["27", "285", "595", "280", "275"],
+      correct: 3,
       explanation: "Find 10% of 875 = 87.5, so 30% = 262.5. Then 2% = 17.5. Add them: 262.5 + 17.5 = 280. ✓"
     },
     {
       id: 99,
       difficulty: 1,
       question: "What percentage is 108 out of 360?",
-      options: ["25%", "28%", "32%", "30%", "35%"],
-      correct: 3,
+      options: ["35%", "70%", "108%", "333%", "30%"],
+      correct: 4,
       explanation: "Calculate: (108 ÷ 360) × 100. Simplify: 108/360 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 100,
       difficulty: 2,
       question: "A haircut costs £88. If the price increases by 15%, what is the new price?",
-      options: ["£98.20", "£100.00", "£105.00", "£103.00", "£101.20"],
-      correct: 4,
+      options: ["£101.20", "£96.20", "£88.00", "£74.80", "£13.20"],
+      correct: 0,
       explanation: "Find 15% of £88: 10% = £8.80, and 5% = £4.40, so 15% = £13.20. Add: £88 + £13.20 = £101.20. ✓"
     },
     {
@@ -829,96 +829,96 @@ const mathsData = {
       id: 103,
       difficulty: 3,
       question: "A bicycle costs £117 after a 35% discount. What was the original price?",
-      options: ["£160", "£170", "£180", "£175", "£190"],
-      correct: 2,
+      options: ["£158", "£117", "£185", "£180", "£175"],
+      correct: 3,
       explanation: "£117 is 65% of the original (100% - 35%). If 65% = £117, then 5% = £9 (117 ÷ 13), so 100% = £9 × 20 = £180. ✓"
     },
     {
       id: 104,
       difficulty: 2,
       question: "What is 27% of 740?",
-      options: ["195.6", "197.8", "201.8", "199.8", "203.8"],
-      correct: 3,
+      options: ["194.8", "27.4", "204.8", "540.2", "199.8"],
+      correct: 4,
       explanation: "Find 10% of 740 = 74, so 20% = 148. Then 7% = 51.8. Add them: 148 + 51.8 = 199.8. ✓"
     },
     {
       id: 105,
       difficulty: 2,
       question: "In a survey, 650 people responded. 58% agreed. How many disagreed?",
-      options: ["263", "268", "283", "278", "273"],
-      correct: 4,
+      options: ["273", "278", "377", "650", "1027"],
+      correct: 0,
       explanation: "If 58% agreed, then 42% disagreed (100% - 58%). Find 42% of 650: 10% = 65, so 40% = 260, and 2% = 13. Therefore 42% = 273. ✓"
     },
     {
       id: 106,
       difficulty: 1,
       question: "What percentage is 135 out of 450?",
-      options: ["30%", "28%", "25%", "32%", "35%"],
-      correct: 0,
+      options: ["333%", "30%", "35%", "70%", "135%"],
+      correct: 1,
       explanation: "Calculate: (135 ÷ 450) × 100. Simplify: 135/450 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 107,
       difficulty: 2,
       question: "A restaurant bill is £210. If it increases by 16%, what is the new total?",
-      options: ["£238.60", "£243.60", "£240.60", "£246.00", "£248.60"],
-      correct: 1,
+      options: ["£176.40", "£33.60", "£243.60", "£238.60", "£210.00"],
+      correct: 2,
       explanation: "Find 16% of £210: 10% = £21, so 20% = £42. Then 4% = £8.40. Subtract: £42 - £8.40 = £33.60. Add: £210 + £33.60 = £243.60. ✓"
     },
     {
       id: 108,
       difficulty: 2,
       question: "What is 46% of 950?",
-      options: ["427", "432", "437", "442", "447"],
-      correct: 2,
+      options: ["21", "442", "513", "437", "432"],
+      correct: 3,
       explanation: "Find 10% of 950 = 95, so 40% = 380. Then 6% = 57. Add them: 380 + 57 = 437. ✓"
     },
     {
       id: 109,
       difficulty: 3,
       question: "A monitor costs £234 after a 10% discount. What was the original price?",
-      options: ["£250", "£255", "£265", "£260", "£270"],
-      correct: 3,
+      options: ["£257", "£255", "£234", "£265", "£260"],
+      correct: 4,
       explanation: "£234 is 90% of the original (100% - 10%). If 90% = £234, then 10% = £26, so 100% = £260. ✓"
     },
     {
       id: 110,
       difficulty: 2,
       question: "A zoo has 800 animals. 62% are mammals. How many are NOT mammals?",
-      options: ["296", "300", "312", "308", "304"],
-      correct: 4,
+      options: ["304", "309", "496", "800", "1296"],
+      correct: 0,
       explanation: "If 62% are mammals, then 38% are not (100% - 62%). Find 38% of 800: 10% = 80, so 30% = 240, and 8% = 64. Therefore 38% = 304. ✓"
     },
     {
       id: 111,
       difficulty: 3,
       question: "A jacket originally costs £300. After two successive discounts of 20% and then 15%, what is the final price?",
-      options: ["£204", "£200", "£195", "£210", "£215"],
-      correct: 0,
+      options: ["£240", "£204", "£199", "£195", "£209"],
+      correct: 1,
       explanation: "First discount: £300 × 0.80 = £240. Second discount: £240 × 0.85 = £204. ✓"
     },
     {
       id: 112,
       difficulty: 1,
       question: "What percentage is 144 out of 480?",
-      options: ["25%", "30%", "28%", "32%", "35%"],
-      correct: 1,
+      options: ["70%", "144%", "30%", "25%", "35%"],
+      correct: 2,
       explanation: "Calculate: (144 ÷ 480) × 100. Simplify: 144/480 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 113,
       difficulty: 2,
       question: "What is 34% of 850?",
-      options: ["301", "295", "289", "307", "313"],
-      correct: 2,
+      options: ["25", "294", "561", "289", "284"],
+      correct: 3,
       explanation: "Find 10% of 850 = 85, so 30% = 255. Then 4% = 34. Add them: 255 + 34 = 289. ✓"
     },
     {
       id: 114,
       difficulty: 3,
       question: "A car costs £161 after a 30% discount. What was the original price?",
-      options: ["£210", "£220", "£240", "£230", "£250"],
-      correct: 3,
+      options: ["£225", "£209", "£161", "£235", "£230"],
+      correct: 4,
       explanation: "£161 is 70% of the original (100% - 30%). If 70% = £161, then 10% = £23, so 100% = £230. ✓"
     },
     {
@@ -941,48 +941,48 @@ const mathsData = {
       id: 117,
       difficulty: 2,
       question: "A concert ticket costs £104. If the price increases by 22%, what is the new price?",
-      options: ["£122.88", "£126.88", "£124.88", "£128.88", "£130.88"],
-      correct: 1,
+      options: ["£81.12", "£22.88", "£126.88", "£121.88", "£104.00"],
+      correct: 2,
       explanation: "Find 22% of £104: 10% = £10.40, so 20% = £20.80, and 2% = £2.08. Therefore 22% = £22.88. Add: £104 + £22.88 = £126.88. ✓"
     },
     {
       id: 118,
       difficulty: 2,
       question: "What is 24% of 625?",
-      options: ["145", "148", "150", "153", "155"],
-      correct: 2,
+      options: ["26", "155", "475", "150", "145"],
+      correct: 3,
       explanation: "Find 10% of 625 = 62.5, so 20% = 125. Then 4% = 25. Add them: 125 + 25 = 150. ✓"
     },
     {
       id: 119,
       difficulty: 2,
       question: "A park has 560 trees. 45% are oak. How many trees are NOT oak?",
-      options: ["298", "302", "304", "308", "306"],
-      correct: 3,
+      options: ["303", "313", "560", "812", "308"],
+      correct: 4,
       explanation: "If 45% are oak, then 55% are not (100% - 45%). Find 55% of 560: 10% = 56, so 50% = 280, and 5% = 28. Therefore 55% = 308. ✓"
     },
     {
       id: 120,
       difficulty: 1,
       question: "What percentage is 168 out of 560?",
-      options: ["25%", "28%", "35%", "32%", "30%"],
-      correct: 4,
+      options: ["30%", "35%", "70%", "168%", "333%"],
+      correct: 0,
       explanation: "Calculate: (168 ÷ 560) × 100. Simplify: 168/560 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 121,
       difficulty: 3,
       question: "A printer costs £189 after a 30% discount. What was the original price?",
-      options: ["£270", "£260", "£250", "£280", "£290"],
-      correct: 0,
+      options: ["£275", "£270", "£265", "£246", "£189"],
+      correct: 1,
       explanation: "£189 is 70% of the original (100% - 30%). If 70% = £189, then 10% = £27, so 100% = £270. ✓"
     },
     {
       id: 122,
       difficulty: 2,
       question: "What is 42% of 725?",
-      options: ["298.5", "304.5", "302.5", "306.5", "308.5"],
-      correct: 1,
+      options: ["309.5", "420.5", "304.5", "299.5", "17.3"],
+      correct: 2,
       explanation: "Find 10% of 725 = 72.5, so 40% = 290. Then 2% = 14.5. Add them: 290 + 14.5 = 304.5. ✓"
     },
     {
@@ -997,40 +997,40 @@ const mathsData = {
       id: 124,
       difficulty: 2,
       question: "A membership fee is £95. If the price increases by 28%, what is the new fee?",
-      options: ["£118.60", "£119.60", "£120.60", "£121.60", "£122.60"],
-      correct: 3,
+      options: ["£116.60", "£95.00", "£68.40", "£26.60", "£121.60"],
+      correct: 4,
       explanation: "Find 28% of £95: 10% = £9.50, so 20% = £19, and 8% = £7.60. Therefore 28% = £26.60. Add: £95 + £26.60 = £121.60. ✓"
     },
     {
       id: 125,
       difficulty: 1,
       question: "What percentage is 192 out of 640?",
-      options: ["25%", "28%", "35%", "32%", "30%"],
-      correct: 4,
+      options: ["30%", "35%", "70%", "192%", "333%"],
+      correct: 0,
       explanation: "Calculate: (192 ÷ 640) × 100. Simplify: 192/640 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 126,
       difficulty: 3,
       question: "A painting costs £133 after a 5% discount. What was the original price?",
-      options: ["£140", "£138", "£135", "£142", "£145"],
-      correct: 0,
+      options: ["£146", "£140", "£135", "£133", "£145"],
+      correct: 1,
       explanation: "£133 is 95% of the original (100% - 5%). If 95% = £133, then 5% = £7, so 100% = £140. ✓"
     },
     {
       id: 127,
       difficulty: 2,
       question: "What is 36% of 825?",
-      options: ["289", "297", "293", "301", "305"],
-      correct: 1,
+      options: ["302", "528", "297", "292", "23"],
+      correct: 2,
       explanation: "Find 10% of 825 = 82.5, so 30% = 247.5. Then 6% = 49.5. Add them: 247.5 + 49.5 = 297. ✓"
     },
     {
       id: 128,
       difficulty: 2,
       question: "A library has 900 books. 48% are fiction. How many are non-fiction?",
-      options: ["452", "460", "468", "464", "472"],
-      correct: 2,
+      options: ["473", "900", "1332", "468", "463"],
+      correct: 3,
       explanation: "If 48% are fiction, then 52% are non-fiction (100% - 48%). Find 52% of 900: 10% = 90, so 50% = 450, and 2% = 18. Therefore 52% = 468. ✓"
     },
     {
@@ -1045,32 +1045,32 @@ const mathsData = {
       id: 130,
       difficulty: 3,
       question: "A desk costs £198 after a 12% discount. What was the original price?",
-      options: ["£215", "£220", "£235", "£230", "£225"],
-      correct: 4,
+      options: ["£225", "£222", "£220", "£198", "£230"],
+      correct: 0,
       explanation: "£198 is 88% of the original (100% - 12%). If 88% = £198, then 8% = £18 (198 ÷ 11), so 100% = £18 × 12.5 = £225. ✓"
     },
     {
       id: 131,
       difficulty: 2,
       question: "What is 28% of 675?",
-      options: ["189", "186", "183", "192", "195"],
-      correct: 0,
+      options: ["486", "189", "184", "24", "194"],
+      correct: 1,
       explanation: "Find 10% of 675 = 67.5, so 20% = 135. Then 8% = 54. Add them: 135 + 54 = 189. ✓"
     },
     {
       id: 132,
       difficulty: 1,
       question: "What percentage is 216 out of 720?",
-      options: ["25%", "30%", "28%", "32%", "35%"],
-      correct: 1,
+      options: ["216%", "333%", "30%", "35%", "70%"],
+      correct: 2,
       explanation: "Calculate: (216 ÷ 720) × 100. Simplify: 216/720 = 3/10 = 0.3. Then 0.3 × 100 = 30%. ✓"
     },
     {
       id: 133,
       difficulty: 2,
       question: "A holiday costs £155. If the price increases by 26%, what is the new price?",
-      options: ["£190.30", "£192.30", "£195.30", "£193.30", "£197.30"],
-      correct: 2,
+      options: ["£155.00", "£114.70", "£40.30", "£195.30", "£190.30"],
+      correct: 3,
       explanation: "Find 26% of £155: 10% = £15.50, so 20% = £31, and 6% = £9.30. Therefore 26% = £40.30. Add: £155 + £40.30 = £195.30. ✓"
     },
     {
@@ -1085,80 +1085,80 @@ const mathsData = {
       id: 135,
       difficulty: 2,
       question: "What is 54% of 950?",
-      options: ["503", "508", "510", "518", "513"],
-      correct: 4,
+      options: ["513", "508", "437", "18", "518"],
+      correct: 0,
       explanation: "Find 10% of 950 = 95, so 50% = 475. Then 4% = 38. Add them: 475 + 38 = 513. ✓"
     },
     {
       id: 136,
       difficulty: 1,
       question: "A coat costs £60. In a sale, it is reduced by 10%. What is the sale price?",
-      options: ["£54", "£52", "£50", "£56", "£58"],
-      correct: 0,
+      options: ["£66", "£54", "£49", "£59", "£60"],
+      correct: 1,
       explanation: "Find 10% of £60 = £6. Subtract from original: £60 - £6 = £54. ✓"
     },
     {
       id: 137,
       difficulty: 1,
       question: "A skateboard costs £45. It is reduced by 20% in a sale. What is the sale price?",
-      options: ["£32", "£36", "£34", "£38", "£40"],
-      correct: 1,
+      options: ["£45", "£54", "£36", "£31", "£41"],
+      correct: 2,
       explanation: "Find 20% of £45: 10% = £4.50, so 20% = £9. Subtract: £45 - £9 = £36. ✓"
     },
     {
       id: 138,
       difficulty: 2,
       question: "A laptop costs £480. In a clearance sale, it is reduced by 25%. What is the sale price?",
-      options: ["£340", "£350", "£360", "£355", "£370"],
-      correct: 2,
+      options: ["£365", "£480", "£600", "£360", "£355"],
+      correct: 3,
       explanation: "Find 25% of £480: 25% = 1/4, so £480 ÷ 4 = £120. Subtract: £480 - £120 = £360. ✓"
     },
     {
       id: 139,
       difficulty: 2,
       question: "A pair of jeans costs £55. They are reduced by 30% in a sale. What is the sale price?",
-      options: ["£35.50", "£37.00", "£40.00", "£38.50", "£41.50"],
-      correct: 3,
+      options: ["£33.50", "£43.50", "£55.00", "£71.50", "£38.50"],
+      correct: 4,
       explanation: "Find 30% of £55: 10% = £5.50, so 30% = £16.50. Subtract: £55 - £16.50 = £38.50. ✓"
     },
     {
       id: 140,
       difficulty: 2,
       question: "A scooter costs £125. The price is reduced by 12% in a sale. What is the sale price?",
-      options: ["£108", "£116", "£112", "£114", "£110"],
-      correct: 4,
+      options: ["£110", "£105", "£115", "£125", "£140"],
+      correct: 0,
       explanation: "Find 12% of £125: 10% = £12.50, and 2% = £2.50, so 12% = £15. Subtract: £125 - £15 = £110. ✓"
     },
     {
       id: 141,
       difficulty: 2,
       question: "A school bag costs £36. In a sale, it is reduced by 15%. What is the sale price?",
-      options: ["£30.60", "£29.60", "£30.00", "£28.60", "£31.60"],
-      correct: 0,
+      options: ["£41.40", "£30.60", "£25.60", "£35.60", "£36.00"],
+      correct: 1,
       explanation: "Find 15% of £36: 10% = £3.60, and 5% = £1.80, so 15% = £5.40. Subtract: £36 - £5.40 = £30.60. ✓"
     },
     {
       id: 142,
       difficulty: 2,
       question: "A board game costs £28. It is reduced by 25% in a sale. What is the sale price?",
-      options: ["£19", "£21", "£20", "£22", "£23"],
-      correct: 1,
+      options: ["£28", "£35", "£21", "£16", "£26"],
+      correct: 2,
       explanation: "Find 25% of £28: 25% = 1/4, so £28 ÷ 4 = £7. Subtract: £28 - £7 = £21. ✓"
     },
     {
       id: 143,
       difficulty: 2,
       question: "A dress costs £64. In the January sales, it is reduced by 35%. What is the sale price?",
-      options: ["£40.60", "£41.00", "£41.60", "£42.00", "£42.60"],
-      correct: 2,
+      options: ["£46.60", "£64.00", "£86.40", "£41.60", "£36.60"],
+      correct: 3,
       explanation: "Find 35% of £64: 10% = £6.40, so 30% = £19.20, and 5% = £3.20. Therefore 35% = £22.40. Subtract: £64 - £22.40 = £41.60. ✓"
     },
     {
       id: 144,
       difficulty: 3,
       question: "A television costs £750. It is first reduced by 20%, then a further 5% off the reduced price. What is the final price?",
-      options: ["£555", "£560", "£562.50", "£570", "£565"],
-      correct: 3,
+      options: ["£565", "£563", "£575", "£600", "£570"],
+      correct: 4,
       explanation: "First reduction: 20% of £750 = £150, so price = £600. Second reduction: 5% of £600 = £30, so final price = £600 - £30 = £570. ✓"
     },
     {
@@ -1173,104 +1173,104 @@ const mathsData = {
       id: 146,
       difficulty: 2,
       question: "A football shirt costs £42. It is reduced by 15% in a sale. How much do you save?",
-      options: ["£6.30", "£5.80", "£5.30", "£6.80", "£7.30"],
-      correct: 0,
+      options: ["£35.70", "£6.30", "£4.30", "£2.80", "£8.30"],
+      correct: 1,
       explanation: "Find 15% of £42: 10% = £4.20, and 5% = £2.10, so 15% = £6.30. You save £6.30. ✓"
     },
     {
       id: 147,
       difficulty: 2,
       question: "A shop reduces all prices by 18%. A jacket originally costs £85. What is the sale price?",
-      options: ["£68.30", "£69.70", "£69.00", "£70.30", "£71.00"],
-      correct: 1,
+      options: ["£85.00", "£100.30", "£69.70", "£64.70", "£74.70"],
+      correct: 2,
       explanation: "Find 18% of £85: 10% = £8.50, and 8% = £6.80, so 18% = £15.30. Subtract: £85 - £15.30 = £69.70. ✓"
     },
     {
       id: 148,
       difficulty: 1,
       question: "A book costs £12. It is reduced by 25% in a sale. What is the sale price?",
-      options: ["£7", "£8", "£9", "£10", "£11"],
-      correct: 2,
+      options: ["£11", "£12", "£15", "£9", "£7"],
+      correct: 3,
       explanation: "25% = 1/4. One quarter of £12 = £3. Subtract: £12 - £3 = £9. ✓"
     },
     {
       id: 149,
       difficulty: 2,
       question: "A pair of boots costs £90. They are reduced by 22% in a sale. What is the sale price?",
-      options: ["£68.20", "£69.20", "£70.00", "£70.20", "£71.20"],
-      correct: 3,
+      options: ["£65.20", "£75.20", "£90.00", "£109.80", "£70.20"],
+      correct: 4,
       explanation: "Find 22% of £90: 10% = £9, so 20% = £18, and 2% = £1.80. Therefore 22% = £19.80. Subtract: £90 - £19.80 = £70.20. ✓"
     },
     {
       id: 150,
       difficulty: 2,
       question: "A tablet costs £320. It is reduced by 35% in a closing-down sale. What is the sale price?",
-      options: ["£200", "£204", "£216", "£212", "£208"],
-      correct: 4,
+      options: ["£208", "£203", "£213", "£320", "£432"],
+      correct: 0,
       explanation: "Find 35% of £320: 10% = £32, so 30% = £96, and 5% = £16. Therefore 35% = £112. Subtract: £320 - £112 = £208. ✓"
     },
     {
       id: 151,
       difficulty: 2,
       question: "A coat costs £74. It is reduced by 40% in a sale. What is the sale price?",
-      options: ["£44.40", "£43.40", "£42.40", "£45.40", "£46.40"],
-      correct: 0,
+      options: ["£103.60", "£44.40", "£39.40", "£49.40", "£74.00"],
+      correct: 1,
       explanation: "Find 40% of £74: 10% = £7.40, so 40% = £29.60. Subtract: £74 - £29.60 = £44.40. ✓"
     },
     {
       id: 152,
       difficulty: 2,
       question: "A bicycle costs £260. In a summer sale, it is reduced by 15%. What is the sale price?",
-      options: ["£217", "£221", "£219", "£223", "£225"],
-      correct: 1,
+      options: ["£260", "£299", "£221", "£216", "£226"],
+      correct: 2,
       explanation: "Find 15% of £260: 10% = £26, and 5% = £13, so 15% = £39. Subtract: £260 - £39 = £221. ✓"
     },
     {
       id: 153,
       difficulty: 2,
       question: "A guitar costs £180. It is on sale with 28% off. What is the sale price?",
-      options: ["£125.60", "£127.60", "£129.60", "£131.60", "£133.60"],
-      correct: 2,
+      options: ["£134.60", "£180.00", "£230.40", "£129.60", "£124.60"],
+      correct: 3,
       explanation: "Find 28% of £180: 10% = £18, so 20% = £36, and 8% = £14.40. Therefore 28% = £50.40. Subtract: £180 - £50.40 = £129.60. ✓"
     },
     {
       id: 154,
       difficulty: 2,
       question: "A train ticket costs £54. If the price increases by 10%, what is the new price?",
-      options: ["£56.40", "£57.40", "£58.40", "£59.40", "£60.40"],
-      correct: 3,
+      options: ["£54.40", "£54.00", "£48.60", "£5.40", "£59.40"],
+      correct: 4,
       explanation: "Find 10% of £54 = £5.40. Add to original: £54 + £5.40 = £59.40. ✓"
     },
     {
       id: 155,
       difficulty: 1,
       question: "A bus fare costs £2.40. If it increases by 25%, what is the new fare?",
-      options: ["£2.80", "£2.90", "£3.20", "£3.10", "£3.00"],
-      correct: 4,
+      options: ["£3.00", "£2.40", "£1.80", "£1.00", "£0.60"],
+      correct: 0,
       explanation: "Find 25% of £2.40: 25% = 1/4, so £2.40 ÷ 4 = £0.60. Add: £2.40 + £0.60 = £3.00. ✓"
     },
     {
       id: 156,
       difficulty: 2,
       question: "A cinema ticket costs £9.50. If the price increases by 20%, what is the new price?",
-      options: ["£11.40", "£10.90", "£11.00", "£10.40", "£11.90"],
-      correct: 0,
+      options: ["£1.90", "£11.40", "£9.50", "£9.40", "£7.60"],
+      correct: 1,
       explanation: "Find 20% of £9.50: 10% = £0.95, so 20% = £1.90. Add: £9.50 + £1.90 = £11.40. ✓"
     },
     {
       id: 157,
       difficulty: 2,
       question: "A school dinner costs £2.80. If the price increases by 15%, what is the new price?",
-      options: ["£3.12", "£3.22", "£3.17", "£3.27", "£3.32"],
-      correct: 1,
+      options: ["£1.22", "£0.42", "£3.22", "£2.80", "£2.38"],
+      correct: 2,
       explanation: "Find 15% of £2.80: 10% = £0.28, and 5% = £0.14, so 15% = £0.42. Add: £2.80 + £0.42 = £3.22. ✓"
     },
     {
       id: 158,
       difficulty: 2,
       question: "A gym membership costs £45 per month. If it increases by 12%, what is the new monthly cost?",
-      options: ["£49.00", "£49.40", "£50.40", "£50.00", "£51.00"],
-      correct: 2,
+      options: ["£45.00", "£39.60", "£5.40", "£50.40", "£45.40"],
+      correct: 3,
       explanation: "Find 12% of £45: 10% = £4.50, and 2% = £0.90, so 12% = £5.40. Add: £45 + £5.40 = £50.40. ✓"
     },
     {
@@ -1285,16 +1285,16 @@ const mathsData = {
       id: 160,
       difficulty: 2,
       question: "A car insurance premium is £360. If it increases by 8%, what is the new premium?",
-      options: ["£385.80", "£386.80", "£387.80", "£389.80", "£388.80"],
-      correct: 4,
+      options: ["£388.80", "£383.80", "£360.00", "£331.20", "£28.80"],
+      correct: 0,
       explanation: "Find 8% of £360: 10% = £36, so 1% = £3.60, and 8% = £28.80. Add: £360 + £28.80 = £388.80. ✓"
     },
     {
       id: 161,
       difficulty: 2,
       question: "A monthly phone contract costs £32. If it increases by 14%, what is the new cost?",
-      options: ["£36.48", "£36.00", "£35.48", "£37.00", "£37.48"],
-      correct: 0,
+      options: ["£4.48", "£36.48", "£32.00", "£31.48", "£27.52"],
+      correct: 1,
       explanation: "Find 14% of £32: 10% = £3.20, and 4% = £1.28, so 14% = £4.48. Add: £32 + £4.48 = £36.48. ✓"
     },
     {
@@ -1317,8 +1317,8 @@ const mathsData = {
       id: 164,
       difficulty: 1,
       question: "Which of these is equal to 1/2? 45%, 50%, 55%, 60%, 65%",
-      options: ["45%", "60%", "55%", "50%", "65%"],
-      correct: 3,
+      options: ["45%", "1%", "55%", "200%", "50%"],
+      correct: 4,
       explanation: "This is worth memorising: 1/2 = 50%. Half of 100 is 50 — one of those key facts that saves time in the exam. ✓"
     },
     {
@@ -1397,16 +1397,16 @@ const mathsData = {
       id: 174,
       difficulty: 3,
       question: "A bicycle costs £180. It is reduced by 15%, then the sale price is reduced by a further 10%. What is the final price?",
-      options: ["£133.70", "£135.00", "£136.50", "£137.70", "£139.00"],
-      correct: 3,
+      options: ["£135.00", "£132.70", "£142.70", "£153.00", "£137.70"],
+      correct: 4,
       explanation: "First reduction: 15% of £180 = £27, so price = £153. Second reduction: 10% of £153 = £15.30, so final price = £153 - £15.30 = £137.70. ✓"
     },
     {
       id: 175,
       difficulty: 3,
       question: "A school has 400 pupils. 40% are boys. 50% of the girls play netball. How many girls play netball?",
-      options: ["100", "110", "140", "130", "120"],
-      correct: 4,
+      options: ["120", "115", "40", "125", "240"],
+      correct: 0,
       explanation: "60% are girls (100% - 40%). Girls = 60% of 400 = 240. Girls playing netball = 50% of 240 = 120. ✓"
     },
     {
@@ -1431,8 +1431,8 @@ const mathsData = {
             id: 178,
             difficulty: 3,
             question: "After a 15% pay rise, Tom earns £460 per week. What was his weekly pay before the rise?",
-            options: ["£380", "£391", "£400", "£410", "£445"],
-            correct: 2,
+            options: ["£391", "£322", "£405", "£400", "£395"],
+            correct: 3,
             explanation: "£460 is 115% of his original pay (100% + 15%). If 115% = £460, then 1% = £4, so 100% = £400. Common mistake: finding 15% of £460 (= £69) and subtracting to get £391. ✓"
           },
           {
@@ -1447,32 +1447,32 @@ const mathsData = {
             id: 180,
             difficulty: 3,
             question: "After a 25% increase, the number of members in a swimming club is 150. How many members were there before?",
-            options: ["112", "113", "130", "125", "120"],
-            correct: 4,
+            options: ["120", "115", "113", "75", "125"],
+            correct: 0,
             explanation: "150 is 125% of the original. If 125% = 150, then 25% = 30 (150 ÷ 5), so 100% = 30 × 4 = 120. ✓"
           },
           {
             id: 181,
             difficulty: 3,
             question: "A school's intake this year is 360 pupils, which is a 20% increase on last year. How many pupils joined last year?",
-            options: ["300", "288", "280", "310", "340"],
-            correct: 0,
+            options: ["305", "300", "295", "288", "216"],
+            correct: 1,
             explanation: "360 is 120% of last year's intake. If 120% = 360, then 10% = 30 (360 ÷ 12), so 100% = 300. ✓"
           },
           {
             id: 182,
             difficulty: 3,
             question: "After adding a 30% mark-up, a shopkeeper sells a jumper for £52. What did the jumper cost him?",
-            options: ["£36.40", "£40", "£38", "£42", "£44"],
-            correct: 1,
+            options: ["£21", "£45", "£40", "£36", "£35"],
+            correct: 2,
             explanation: "£52 is 130% of the cost price. If 130% = £52, then 10% = £4 (52 ÷ 13), so 100% = £40. ✓"
           },
           {
             id: 183,
             difficulty: 3,
             question: "After a 12% increase, the price of a train ticket is £28. What was the original price?",
-            options: ["£24.64", "£26", "£25", "£26.50", "£27"],
-            correct: 2,
+            options: ["£20", "£28", "£30", "£25", "£21"],
+            correct: 3,
             explanation: "£28 is 112% of the original. If 112% = £28, then 1% = £0.25 (28 ÷ 112), so 100% = £25. ✓"
           },
           {
@@ -1567,8 +1567,8 @@ const mathsData = {
             id: 195,
             difficulty: 3,
             question: "A shop increases the price of an £80 toy by 25%, then later reduces the new price by 25%. What is the final price?",
-            options: ["£72", "£82", "£78", "£80", "£75"],
-            correct: 4,
+            options: ["£75", "£70", "£25", "£13", "£80"],
+            correct: 0,
             explanation: "Increase: 25% of £80 = £20, so price = £100. Decrease: 25% of £100 = £25, so final price = £75. The price does NOT return to £80. ✓"
           },
           {
@@ -1639,8 +1639,8 @@ const mathsData = {
             id: 204,
             difficulty: 3,
             question: "A school has 800 pupils. 45% walk to school and 1/8 of the rest cycle. How many pupils cycle?",
-            options: ["45", "50", "60", "55", "100"],
-            correct: 3,
+            options: ["50", "45", "23", "60", "55"],
+            correct: 4,
             explanation: "Walk: 45% of 800 = 360. Rest: 440. Cycle: 1/8 of 440 = 55. ✓"
           },
           {
@@ -1725,16 +1725,16 @@ const mathsData = {
       id: 2,
       difficulty: 2,
       question: "Two parcels weigh 4.6 kg and 2.8 kg. What is their total weight?",
-      options: ["6.4", "7.2", "7.14", "6.14", "7.4"],
-      correct: 4,
+      options: ["1.8", "74.0", "7.4", "4.6", "2.8"],
+      correct: 2,
       explanation: "Add the whole numbers: 4 + 2 = 6. Add the decimals: 0.6 + 0.8 = 1.4. So 6 + 1.4 = 7.4. ✓"
     },
     {
       id: 3,
       difficulty: 1,
       question: "A jug holds 8.5 litres of water. After pouring out 3.2 litres, how much is left?",
-      options: ["5.3", "5.7", "4.3", "6.3", "11.7"],
-      correct: 0,
+      options: ["0.5", "8.5", "11.7", "5.3", "3.2"],
+      correct: 3,
       explanation: "Subtract the whole numbers: 8 - 3 = 5. Subtract the decimals: 0.5 - 0.2 = 0.3. So 5 + 0.3 = 5.3. ✓"
     },
     {
@@ -1773,8 +1773,8 @@ const mathsData = {
       id: 8,
       difficulty: 1,
       question: "A recipe says to use 3/4 of a litre of milk. What is 3/4 written as a decimal?",
-      options: ["0.75", "0.5", "0.25", "0.8", "0.34"],
-      correct: 0,
+      options: ["1.33", "3.00", "7.50", "0.75", "0.08"],
+      correct: 3,
       explanation: "3/4 means 3 ÷ 4 = 0.75. Or think: 1/4 = 0.25, so 3/4 = 3 × 0.25 = 0.75. ✓"
     },
     {
@@ -1805,8 +1805,8 @@ const mathsData = {
       id: 12,
       difficulty: 2,
       question: "In a science experiment, Sam measures 5.8 ml in one beaker and 3.6 ml in another. What is the total volume?",
-      options: ["8.4", "9.2", "9.14", "8.14", "9.4"],
-      correct: 4,
+      options: ["2.2", "0.9", "9.4", "5.8", "3.6"],
+      correct: 2,
       explanation: "5.8 + 3.6: Add whole numbers: 5 + 3 = 8. Add decimals: 0.8 + 0.6 = 1.4. So 8 + 1.4 = 9.4. ✓"
     },
     {
@@ -1837,8 +1837,8 @@ const mathsData = {
       id: 16,
       difficulty: 2,
       question: "A pencil costs £0.35 and a ruler costs £0.68. What is the total cost?",
-      options: ["£0.93", "£1.13", "£0.103", "£1.03", "£0.33"],
-      correct: 3,
+      options: ["£10.30", "£1.03", "£0.68", "£0.35", "£0.33"],
+      correct: 1,
       explanation: "Add: £0.35 + £0.68. 35p + 68p = 103p = £1.03. ✓"
     },
     {
@@ -1861,40 +1861,40 @@ const mathsData = {
       id: 19,
       difficulty: 2,
       question: "Dad drives 15.4 km to the shops and 8.7 km back by a shorter route. How much longer is the first journey?",
-      options: ["6.3", "6.7", "7.7", "6.9", "7.3"],
-      correct: 1,
+      options: ["8.7", "15.4", "24.1", "67.0", "6.7"],
+      correct: 4,
       explanation: "15.4 - 8.7: Subtract carefully. 15.4 - 8 = 7.4, then 7.4 - 0.7 = 6.7. The first journey is 6.7 km longer. ✓"
     },
     {
       id: 20,
       difficulty: 2,
       question: "A rope is 3.75 metres long. It is cut into 5 equal pieces. How long is each piece?",
-      options: ["0.65 m", "0.70 m", "0.75 m", "0.80 m", "0.85 m"],
-      correct: 2,
+      options: ["0.75 m", "0.08 m", "1.33 m", "3.75 m", "7.50 m"],
+      correct: 0,
       explanation: "Divide: 3.75 ÷ 5 = 0.75 metres. Check: 0.75 × 5 = 3.75. ✓"
     },
     {
       id: 21,
       difficulty: 2,
       question: "A recipe uses 6.5 grams of salt. Mum only needs 0.2 of that amount. How many grams does she need?",
-      options: ["1.2", "1.5", "1.4", "1.3", "13"],
-      correct: 3,
+      options: ["13.0", "1.3", "0.1", "6.5", "6.7"],
+      correct: 1,
       explanation: "6.5 × 0.2: Think 65 × 2 = 130. Two decimal places total, so answer is 1.30 = 1.3. Or: 0.2 is 1/5, so 6.5 ÷ 5 = 1.3. ✓"
     },
     {
       id: 22,
       difficulty: 1,
       question: "In a spelling test, Amy gets 2/5 of the words correct. What is this as a decimal?",
-      options: ["0.2", "0.25", "0.8", "0.5", "0.4"],
-      correct: 4,
+      options: ["4.0", "10.0", "0.4", "2.0", "2.5"],
+      correct: 2,
       explanation: "2/5 means 2 ÷ 5 = 0.4. Or: 1/5 = 0.2, so 2/5 = 2 × 0.2 = 0.4. ✓"
     },
     {
       id: 23,
       difficulty: 1,
       question: "A box of crayons costs £4.80. How many pence is this? (Hint: multiply 4.8 × 100)",
-      options: ["480", "4800", "0.48", "48", "0.048"],
-      correct: 0,
+      options: ["48", "5", "4800", "480", "105"],
+      correct: 3,
       explanation: "When multiplying by 100, the digits shift two places to the left (the number gets 100 times bigger). 4.8 × 100 = 480. ✓"
     },
     {
@@ -1909,8 +1909,8 @@ const mathsData = {
       id: 25,
       difficulty: 2,
       question: "Sarah runs 2.4 km on Monday and 3.8 km on Tuesday. How far does she run in total?",
-      options: ["5.2 km", "5.12 km", "6.2 km", "6.12 km", "5.8 km"],
-      correct: 2,
+      options: ["6.2 km", "3.8 km", "2.4 km", "1.4 km", "0.6 km"],
+      correct: 0,
       explanation: "Add: 2.4 + 3.8 = 6.2 km. (2 + 3 = 5, and 0.4 + 0.8 = 1.2, so 5 + 1.2 = 6.2). ✓"
     },
     {
@@ -1933,8 +1933,8 @@ const mathsData = {
       id: 28,
       difficulty: 2,
       question: "A book costs £8.45 and a pen costs £1.28. What is the total cost?",
-      options: ["£9.73", "£9.83", "£10.73", "£9.63", "£7.17"],
-      correct: 0,
+      options: ["£7.17", "£1.28", "£0.97", "£9.73", "£8.45"],
+      correct: 3,
       explanation: "Add: £8.45 + £1.28. Line up decimals: 8.45 + 1.28 = 9.73. ✓"
     },
     {
@@ -1957,24 +1957,24 @@ const mathsData = {
       id: 31,
       difficulty: 2,
       question: "A square tile measures 0.9 metres on each side. What is the area of the tile in square metres? (Hint: multiply 0.9 × 0.9)",
-      options: ["0.18", "8.1", "1.8", "0.81", "0.081"],
-      correct: 3,
+      options: ["8.10", "0.81", "0.08", "0.90", "1.80"],
+      correct: 1,
       explanation: "0.9 × 0.9: Think 9 × 9 = 81. Two decimal places total, so answer is 0.81. ✓"
     },
     {
       id: 32,
       difficulty: 2,
       question: "Tom has £10. He spends £3.65. How much money does he have left?",
-      options: ["£6.65", "£6.45", "£7.35", "£13.65", "£6.35"],
-      correct: 4,
+      options: ["£10.00", "£13.65", "£6.35", "£3.65", "£0.64"],
+      correct: 2,
       explanation: "Subtract: £10.00 - £3.65 = £6.35. ✓"
     },
     {
       id: 33,
       difficulty: 1,
       question: "Tickets for a school play cost £2.50 each. How much do 8 tickets cost?",
-      options: ["20", "18", "16", "22", "24"],
-      correct: 0,
+      options: ["3", "2", "200", "20", "11"],
+      correct: 3,
       explanation: "2.5 × 8: Think 2 × 8 = 16, and 0.5 × 8 = 4, so 16 + 4 = 20. Or: 25 × 8 = 200, with one decimal place = 20.0 = 20. ✓"
     },
     {
@@ -1989,24 +1989,24 @@ const mathsData = {
       id: 35,
       difficulty: 2,
       question: "A ribbon is 5.4 metres long. It is cut into pieces that are each 0.6 metres. How many pieces are there?",
-      options: ["0.9", "90", "9", "0.09", "3.2"],
-      correct: 2,
+      options: ["9", "5", "3", "1", "90"],
+      correct: 0,
       explanation: "5.4 ÷ 0.6: How many 0.6s fit into 5.4? Think: 54 ÷ 6 = 9. The answer is 9. Check: 9 × 0.6 = 5.4. ✓"
     },
     {
       id: 36,
       difficulty: 2,
       question: "A plank of wood is 5.8 metres long. Another plank is 4.7 metres long. What is their total length?",
-      options: ["9.5", "11.5", "10.15", "10.5", "9.15"],
-      correct: 3,
+      options: ["105.0", "10.5", "5.8", "4.7", "1.1"],
+      correct: 1,
       explanation: "Add whole numbers: 5 + 4 = 9. Add decimals: 0.8 + 0.7 = 1.5. So 9 + 1.5 = 10.5. ✓"
     },
     {
       id: 37,
       difficulty: 2,
       question: "A water tank holds 12.6 litres. After watering some plants, 7.9 litres are used. How many litres remain in the tank?",
-      options: ["4.3", "5.7", "6.7", "5.3", "4.7"],
-      correct: 4,
+      options: ["20.5", "47.0", "4.7", "7.9", "12.6"],
+      correct: 2,
       explanation: "12.6 - 7.9: Borrow from the ones. 12.6 - 7.9 = 4.7. Check: 4.7 + 7.9 = 12.6. ✓"
     },
     {
@@ -2037,32 +2037,32 @@ const mathsData = {
       id: 41,
       difficulty: 1,
       question: "A garden path is 6.5 metres long. Dad walks along it 3 times. How many metres does he walk in total?",
-      options: ["18.5", "19.0", "19.3", "19.5", "18.0"],
-      correct: 3,
+      options: ["195.0", "19.5", "9.5", "6.5", "2.0"],
+      correct: 1,
       explanation: "6 × 3 = 18, and 0.5 × 3 = 1.5. So 18 + 1.5 = 19.5. ✓"
     },
     {
       id: 42,
       difficulty: 2,
       question: "A piece of cheese weighs 9.6 kg. It is cut into 4 equal blocks. How much does each block weigh?",
-      options: ["2.2", "3.0", "2.6", "2.8", "2.4"],
-      correct: 4,
+      options: ["9.6", "24.0", "2.4", "0.4", "0.2"],
+      correct: 2,
       explanation: "96 ÷ 4 = 24, so 9.6 ÷ 4 = 2.4. Check: 2.4 × 4 = 9.6. ✓"
     },
     {
       id: 43,
       difficulty: 1,
       question: "In a spelling test, Mia gets 3/5 of the answers right. What is 3/5 written as a decimal?",
-      options: ["0.6", "0.35", "0.5", "0.3", "0.65"],
-      correct: 0,
+      options: ["3.0", "6.0", "15.0", "0.6", "1.7"],
+      correct: 3,
       explanation: "3/5 means 3 ÷ 5 = 0.6. Or: 1/5 = 0.2, so 3/5 = 3 × 0.2 = 0.6. ✓"
     },
     {
       id: 44,
       difficulty: 2,
       question: "On sports day, Zara throws a javelin 7.8 metres and then 5.6 metres. What is her total distance across both throws?",
-      options: ["12.4", "13.4", "13.2", "12.14", "13.14"],
-      correct: 1,
+      options: ["7.8", "5.6", "2.2", "1.3", "13.4"],
+      correct: 4,
       explanation: "7 + 5 = 12, and 0.8 + 0.6 = 1.4. So 12 + 1.4 = 13.4. ✓"
     },
     {
@@ -2077,16 +2077,16 @@ const mathsData = {
       id: 46,
       difficulty: 2,
       question: "Emma has £10. She spends £4.35. How much does she have left?",
-      options: ["£5.35", "£6.65", "£5.75", "£5.65", "£6.35"],
-      correct: 3,
+      options: ["£14.35", "£5.65", "£4.35", "£0.57", "£10.00"],
+      correct: 1,
       explanation: "£10.00 - £4.35 = £5.65. ✓"
     },
     {
       id: 47,
       difficulty: 2,
       question: "A group of 8 children share 18 stickers equally. How many stickers does each child get?",
-      options: ["2.15", "2.20", "2.35", "2.30", "2.25"],
-      correct: 4,
+      options: ["18.00", "22.50", "2.25", "0.44", "0.23"],
+      correct: 2,
       explanation: "18 ÷ 8 = 2 remainder 2. The remainder 2/8 = 1/4 = 0.25. So 18 ÷ 8 = 2.25. ✓"
     },
     {
@@ -2101,8 +2101,8 @@ const mathsData = {
       id: 49,
       difficulty: 2,
       question: "A rectangular label is 0.7 metres wide and 0.6 metres tall. What is its area in square metres? (Hint: multiply 0.7 × 0.6)",
-      options: ["0.13", "0.42", "1.3", "4.2", "0.042"],
-      correct: 1,
+      options: ["0.04", "0.70", "1.30", "4.20", "0.42"],
+      correct: 4,
       explanation: "Area = 0.7 × 0.6 = 0.42 m². Common mistakes: adding instead of multiplying (0.7 + 0.6 = 1.3), shifting the decimal point (4.2), or confusing the number of decimal places (0.042). ✓"
     },
     {
@@ -2117,16 +2117,16 @@ const mathsData = {
       id: 51,
       difficulty: 1,
       question: "A bag of rice weighs 4.2 kg. What do 5 bags weigh altogether?",
-      options: ["20", "20.5", "21.5", "21", "22"],
-      correct: 3,
+      options: ["210", "21", "9", "4", "2"],
+      correct: 1,
       explanation: "4 × 5 = 20, and 0.2 × 5 = 1.0. So 20 + 1 = 21. ✓"
     },
     {
       id: 52,
       difficulty: 2,
       question: "A pencil costs £0.42 and an eraser costs £0.79. What is the total?",
-      options: ["£1.11", "£0.37", "£1.19", "£1.31", "£1.21"],
-      correct: 4,
+      options: ["£0.37", "£0.12", "£1.21", "£0.79", "£0.42"],
+      correct: 2,
       explanation: "£0.42 + £0.79 = £1.21. (42p + 79p = 121p = £1.21). ✓"
     },
     {
@@ -2141,16 +2141,16 @@ const mathsData = {
       id: 54,
       difficulty: 2,
       question: "A chocolate bar is split into 8 equal pieces. Tom eats 1 piece. What decimal of the whole bar has he eaten? (Which decimal equals 1/8?)",
-      options: ["0.08", "0.125", "0.18", "0.25", "0.8"],
-      correct: 1,
+      options: ["0.013", "1.000", "1.250", "8.000", "0.125"],
+      correct: 4,
       explanation: "1/8 means 1 ÷ 8 = 0.125. Check: 0.125 × 8 = 1. ✓"
     },
     {
       id: 55,
       difficulty: 2,
       question: "A jug holds 11.2 litres of lemonade. After pouring out 6.8 litres for a party, how many litres are left?",
-      options: ["4.2", "5.4", "4.4", "5.2", "4.6"],
-      correct: 2,
+      options: ["4.4", "6.8", "11.2", "18.0", "44.0"],
+      correct: 0,
       explanation: "11.2 - 6.8 = 4.4. Check: 4.4 + 6.8 = 11.2. ✓"
     },
     {
@@ -2165,8 +2165,8 @@ const mathsData = {
       id: 57,
       difficulty: 2,
       question: "A piece of string is 8.4 metres long. It is shared equally among 7 children for a craft project. How long is each piece?",
-      options: ["1.1", "1.5", "1.3", "1.4", "1.2"],
-      correct: 4,
+      options: ["8.4", "12.0", "1.2", "0.8", "0.1"],
+      correct: 2,
       explanation: "84 ÷ 7 = 12, so 8.4 ÷ 7 = 1.2. Check: 1.2 × 7 = 8.4. ✓"
     },
     {
@@ -2181,8 +2181,8 @@ const mathsData = {
       id: 59,
       difficulty: 2,
       question: "A cook has 0.9 litres of cream but only needs 0.7 of that amount for a sauce. How many litres does the sauce need? (Hint: multiply 0.9 × 0.7)",
-      options: ["0.16", "0.63", "6.3", "1.6", "0.063"],
-      correct: 1,
+      options: ["0.06", "0.90", "1.60", "6.30", "0.63"],
+      correct: 4,
       explanation: "9 × 7 = 63. Two decimal places total, so 0.63. ✓"
     },
     {
@@ -2197,8 +2197,8 @@ const mathsData = {
       id: 61,
       difficulty: 2,
       question: "A model aeroplane weighs 3.6 kg. Its box weighs 7.9 kg. What is the total weight?",
-      options: ["10.5", "11.4", "10.15", "11.5", "11.15"],
-      correct: 3,
+      options: ["1.2", "11.5", "7.9", "4.3", "3.6"],
+      correct: 1,
       explanation: "3 + 7 = 10, and 0.6 + 0.9 = 1.5. So 10 + 1.5 = 11.5. ✓"
     },
     {
@@ -2213,8 +2213,8 @@ const mathsData = {
       id: 63,
       difficulty: 2,
       question: "A garden fence panel is 7.2 metres long. A decorator paints 0.3 of the panel before lunch. How many metres has he painted? (Hint: multiply 7.2 × 0.3)",
-      options: ["2.16", "2.06", "2.26", "2.36", "21.6"],
-      correct: 0,
+      options: ["7.20", "7.50", "21.60", "2.16", "0.22"],
+      correct: 3,
       explanation: "72 × 3 = 216. Two decimal places total, so 2.16. ✓"
     },
     {
@@ -2229,16 +2229,16 @@ const mathsData = {
       id: 65,
       difficulty: 2,
       question: "A rope is 4.8 metres long. It's cut into 6 equal pieces. How long is each piece?",
-      options: ["0.6 m", "0.7 m", "0.8 m", "0.9 m", "1.0 m"],
-      correct: 2,
+      options: ["0.8 m", "0.1 m", "1.3 m", "4.8 m", "8.0 m"],
+      correct: 0,
       explanation: "4.8 ÷ 6 = 0.8 metres. Check: 0.8 × 6 = 4.8. ✓"
     },
     {
       id: 66,
       difficulty: 1,
       question: "A scientist measures 5.5 metres of wire. How many centimetres is that? (Hint: multiply 5.5 × 100)",
-      options: ["55", "0.55", "5500", "550", "0.055"],
-      correct: 3,
+      options: ["5500", "550", "106", "55", "6"],
+      correct: 1,
       explanation: "When multiplying by 100, move decimal two places right. 5.5 × 100 = 550. ✓"
     },
     {
@@ -2253,8 +2253,8 @@ const mathsData = {
       id: 68,
       difficulty: 1,
       question: "Dad has a plank of wood that is 14.8 metres long. He saws off 9.3 metres. How long is the remaining piece?",
-      options: ["5.5", "6.5", "4.5", "5.3", "5.7"],
-      correct: 0,
+      options: ["14.8", "24.1", "55.0", "5.5", "9.3"],
+      correct: 3,
       explanation: "14.8 - 9.3 = 5.5. Check: 5.5 + 9.3 = 14.8. ✓"
     },
     {
@@ -2269,16 +2269,16 @@ const mathsData = {
       id: 70,
       difficulty: 1,
       question: "Each shelf in a bookcase is 2.8 metres wide. There are 6 shelves. What is the total shelf width?",
-      options: ["16.2", "16.4", "16.8", "16.6", "17.0"],
-      correct: 2,
+      options: ["16.8", "8.8", "2.8", "1.7", "168.0"],
+      correct: 0,
       explanation: "2 × 6 = 12, and 0.8 × 6 = 4.8. So 12 + 4.8 = 16.8. ✓"
     },
     {
       id: 71,
       difficulty: 2,
       question: "Noah buys a notebook for £2.45 and a pen for £1.38. What's the total cost?",
-      options: ["£3.73", "£3.93", "£4.83", "£3.83", "£1.07"],
-      correct: 3,
+      options: ["£0.38", "£3.83", "£2.45", "£1.38", "£1.07"],
+      correct: 1,
       explanation: "£2.45 + £1.38 = £3.83. ✓"
     },
     {
@@ -2309,32 +2309,32 @@ const mathsData = {
       id: 75,
       difficulty: 2,
       question: "A factory produces 9.1 litres of paint and pours it into 100 tiny pots. How many litres go into each pot?",
-      options: ["0.91", "91", "0.091", "9.1", "0.0091"],
-      correct: 2,
+      options: ["0.091", "0.009", "0.910", "9.100", "10.989"],
+      correct: 0,
       explanation: "When dividing by 100, move decimal two places left. 9.1 ÷ 100 = 0.091. ✓"
     },
     {
       id: 76,
       difficulty: 1,
       question: "A bookshelf is 3.5 metres tall. A climbing wall is 8.8 metres tall. What is their combined height?",
-      options: ["11.3", "12.2", "11.13", "12.3", "12.13"],
-      correct: 3,
+      options: ["1.2", "12.3", "8.8", "5.3", "3.5"],
+      correct: 1,
       explanation: "3 + 8 = 11, and 0.5 + 0.8 = 1.3. So 11 + 1.3 = 12.3. ✓"
     },
     {
       id: 77,
       difficulty: 1,
       question: "A hiker walks 5.6 km each day for 4 days. How far does she walk in total?",
-      options: ["22.0", "22.2", "22.8", "22.6", "22.4"],
-      correct: 4,
+      options: ["2.2", "224.0", "22.4", "9.6", "5.6"],
+      correct: 2,
       explanation: "5 × 4 = 20, and 0.6 × 4 = 2.4. So 20 + 2.4 = 22.4. ✓"
     },
     {
       id: 78,
       difficulty: 1,
       question: "A bag of potatoes weighs 11.5 kg. It is split equally into 5 smaller bags. How much does each bag weigh?",
-      options: ["2.3", "2.2", "2.1", "2.4", "2.5"],
-      correct: 0,
+      options: ["0.2", "11.5", "23.0", "2.3", "0.4"],
+      correct: 3,
       explanation: "115 ÷ 5 = 23, so 11.5 ÷ 5 = 2.3. Check: 2.3 × 5 = 11.5. ✓"
     },
     {
@@ -2349,8 +2349,8 @@ const mathsData = {
       id: 80,
       difficulty: 2,
       question: "A rectangular poster is 0.8 metres wide and 0.9 metres tall. What is its area in square metres? (Hint: multiply 0.8 × 0.9)",
-      options: ["7.2", "0.62", "0.72", "6.2", "0.062"],
-      correct: 2,
+      options: ["0.72", "0.07", "0.80", "1.70", "7.20"],
+      correct: 0,
       explanation: "8 × 9 = 72. Two decimal places total, so 0.72. ✓"
     },
     {
@@ -2365,8 +2365,8 @@ const mathsData = {
       id: 82,
       difficulty: 2,
       question: "A bucket holds 16.7 litres of water. After washing the car, 8.9 litres have been used. How many litres are left?",
-      options: ["7.2", "7.6", "8.2", "8.8", "7.8"],
-      correct: 4,
+      options: ["25.6", "78.0", "7.8", "8.9", "16.7"],
+      correct: 2,
       explanation: "16.7 - 8.9 = 7.8. Check: 7.8 + 8.9 = 16.7. ✓"
     },
     {
@@ -2413,40 +2413,40 @@ const mathsData = {
       id: 88,
       difficulty: 2,
       question: "A roll of tape is 8.2 metres long. Each gift tag needs 0.2 metres of tape. How many gift tags can be made?",
-      options: ["41", "4.1", "410", "0.41", "4.01"],
-      correct: 0,
+      options: ["4", "2", "410", "41", "8"],
+      correct: 3,
       explanation: "How many 0.2s in 8.2? Think: 82 ÷ 2 = 41. The answer is 41. ✓"
     },
     {
       id: 89,
       difficulty: 2,
       question: "Lily runs 3.6 km on Monday and 4.9 km on Tuesday. How far in total?",
-      options: ["7.5 km", "8.5 km", "8.4 km", "7.15 km", "8.15 km"],
-      correct: 1,
+      options: ["4.9 km", "3.6 km", "1.3 km", "0.9 km", "8.5 km"],
+      correct: 4,
       explanation: "3.6 + 4.9 = 8.5 km. (3 + 4 = 7, and 0.6 + 0.9 = 1.5, so 7 + 1.5 = 8.5). ✓"
     },
     {
       id: 90,
       difficulty: 1,
       question: "A pizza is cut into 4 equal slices. Dad eats 1 slice. What decimal of the whole pizza did he eat? (Which decimal equals 1/4?)",
-      options: ["0.14", "0.2", "0.25", "0.4", "0.5"],
-      correct: 2,
+      options: ["0.25", "0.03", "1.00", "2.50", "4.00"],
+      correct: 0,
       explanation: "1/4 means 1 ÷ 4 = 0.25. Check: 0.25 × 4 = 1. ✓"
     },
     {
       id: 91,
       difficulty: 2,
       question: "A swimming pool is 4.9 metres wide. A duck swims across 0.4 of the width. How far does the duck swim? (Hint: multiply 4.9 × 0.4)",
-      options: ["1.86", "2.16", "2.06", "1.96", "19.6"],
-      correct: 3,
+      options: ["19.60", "1.96", "0.20", "4.90", "5.30"],
+      correct: 1,
       explanation: "49 × 4 = 196. Two decimal places total, so 1.96. ✓"
     },
     {
       id: 92,
       difficulty: 2,
       question: "Gran gives Tom £12 for his birthday. He spends £5.75 at the bookshop. How much does he have left?",
-      options: ["6.15", "6.45", "6.35", "7.25", "6.25"],
-      correct: 4,
+      options: ["12.00", "17.75", "6.25", "5.75", "0.63"],
+      correct: 2,
       explanation: "12.00 - 5.75 = 6.25. ✓"
     },
     {
@@ -2469,8 +2469,8 @@ const mathsData = {
       id: 95,
       difficulty: 2,
       question: "A bag of apples weighs 7.5 kg and a bag of pears weighs 6.8 kg. What do they weigh altogether?",
-      options: ["13.3", "14.2", "14.3", "13.13", "14.13"],
-      correct: 2,
+      options: ["14.3", "7.5", "6.8", "1.4", "0.7"],
+      correct: 0,
       explanation: "7 + 6 = 13, and 0.5 + 0.8 = 1.3. So 13 + 1.3 = 14.3. ✓"
     },
     {
@@ -2485,24 +2485,24 @@ const mathsData = {
       id: 97,
       difficulty: 2,
       question: "A skipping rope is 9.6 metres long. It is folded in half. How long is the folded rope? (Hint: multiply 9.6 × 0.5)",
-      options: ["4.6", "4.7", "48", "4.9", "4.8"],
-      correct: 4,
+      options: ["10.1", "48.0", "4.8", "0.5", "9.6"],
+      correct: 2,
       explanation: "96 × 5 = 480. Two decimal places total, so 4.80 = 4.8. Or: 0.5 is half, so 9.6 ÷ 2 = 4.8. ✓"
     },
     {
       id: 98,
       difficulty: 2,
       question: "A book costs £6.85 and a magazine costs £2.47. What's the total?",
-      options: ["£9.32", "£9.22", "£9.42", "£8.32", "£4.38"],
-      correct: 0,
+      options: ["£4.38", "£2.47", "£0.93", "£9.32", "£6.85"],
+      correct: 3,
       explanation: "£6.85 + £2.47 = £9.32. ✓"
     },
     {
       id: 99,
       difficulty: 2,
       question: "A length of fabric measuring 14.4 metres is cut into 6 equal strips. How long is each strip?",
-      options: ["2.2", "2.4", "2.3", "2.5", "2.6"],
-      correct: 1,
+      options: ["0.4", "0.2", "14.4", "24.0", "2.4"],
+      correct: 4,
       explanation: "144 ÷ 6 = 24, so 14.4 ÷ 6 = 2.4. Check: 2.4 × 6 = 14.4. ✓"
     },
     {
@@ -2517,16 +2517,16 @@ const mathsData = {
       id: 101,
       difficulty: 1,
       question: "Each lap of a running track is 3.7 km. A cyclist completes 9 laps. How many kilometres does the cyclist ride?",
-      options: ["32.3", "33.0", "34.3", "33.3", "33.6"],
-      correct: 3,
+      options: ["333.0", "33.3", "12.7", "3.7", "3.3"],
+      correct: 1,
       explanation: "3 × 9 = 27, and 0.7 × 9 = 6.3. So 27 + 6.3 = 33.3. ✓"
     },
     {
       id: 102,
       difficulty: 3,
       question: "A jug contains 0.72 litres of juice. Each glass holds 0.9 litres. What fraction of a glass can be filled? (Hint: divide 0.72 by 0.9)",
-      options: ["0.088", "8", "80", "0.08", "0.8"],
-      correct: 4,
+      options: ["1.3", "8.0", "0.8", "0.7", "0.6"],
+      correct: 2,
       explanation: "Multiply both numbers by 10 to make the divisor a whole number: 7.2 ÷ 9 = 0.8. Check: 0.8 × 0.9 = 0.72. ✓"
     },
     {
@@ -2541,40 +2541,40 @@ const mathsData = {
       id: 104,
       difficulty: 2,
       question: "A ribbon is 5.6 metres long and is cut into 8 equal pieces. How long is each?",
-      options: ["0.6 m", "0.7 m", "0.65 m", "0.75 m", "0.8 m"],
-      correct: 1,
+      options: ["0.1 m", "1.4 m", "5.6 m", "7.0 m", "0.7 m"],
+      correct: 4,
       explanation: "5.6 ÷ 8 = 0.7 metres. Check: 0.7 × 8 = 5.6. ✓"
     },
     {
       id: 105,
       difficulty: 1,
       question: "A gold coin weighs 0.85 grams. How much would 100 of these coins weigh?",
-      options: ["8.5", "850", "85", "0.085", "0.0085"],
-      correct: 2,
+      options: ["85", "9", "1", "101", "850"],
+      correct: 0,
       explanation: "When multiplying by 100, move decimal two places right. 0.85 × 100 = 85. ✓"
     },
     {
       id: 106,
       difficulty: 2,
       question: "A fish tank holds 18.9 litres of water. After cleaning, 11.4 litres are removed. How many litres remain?",
-      options: ["7.3", "6.5", "8.5", "7.5", "7.7"],
-      correct: 3,
+      options: ["75.0", "7.5", "11.4", "18.9", "30.3"],
+      correct: 1,
       explanation: "18.9 - 11.4 = 7.5. Check: 7.5 + 11.4 = 18.9. ✓"
     },
     {
       id: 107,
       difficulty: 1,
       question: "A school choir has learnt 4/5 of the songs for the concert. What is 4/5 written as a decimal?",
-      options: ["0.4", "0.45", "0.5", "0.85", "0.8"],
-      correct: 4,
+      options: ["8.0", "20.0", "0.8", "1.3", "4.0"],
+      correct: 2,
       explanation: "4/5 means 4 ÷ 5 = 0.8. Or: 1/5 = 0.2, so 4/5 = 4 × 0.2 = 0.8. ✓"
     },
     {
       id: 108,
       difficulty: 2,
       question: "Grandma knits a scarf that is 4.5 metres long and then adds another section of 9.7 metres. What is the total length?",
-      options: ["14.2", "14.1", "13.2", "13.12", "14.12"],
-      correct: 0,
+      options: ["5.2", "4.5", "1.4", "14.2", "9.7"],
+      correct: 3,
       explanation: "4 + 9 = 13, and 0.5 + 0.7 = 1.2. So 13 + 1.2 = 14.2. ✓"
     },
     {
@@ -2589,16 +2589,16 @@ const mathsData = {
       id: 110,
       difficulty: 2,
       question: "A kitchen worktop is 8.1 metres long. A spill covers 0.7 of its length. How many metres of worktop are covered? (Hint: multiply 8.1 × 0.7)",
-      options: ["5.57", "5.77", "5.67", "5.87", "56.7"],
-      correct: 2,
+      options: ["5.67", "0.57", "8.10", "8.80", "56.70"],
+      correct: 0,
       explanation: "81 × 7 = 567. Two decimal places total, so 5.67. ✓"
     },
     {
       id: 111,
       difficulty: 2,
       question: "Max spends £5.60 on lunch. He pays with a £10 note. How much change?",
-      options: ["£4.30", "£5.40", "£4.50", "£4.40", "£3.40"],
-      correct: 3,
+      options: ["£44.00", "£4.40", "£5.60", "£10.00", "£15.60"],
+      correct: 1,
       explanation: "£10.00 - £5.60 = £4.40. ✓"
     },
     {
@@ -2621,8 +2621,8 @@ const mathsData = {
       id: 114,
       difficulty: 1,
       question: "A toy car track is 2.4 metres long. How many centimetres is this? (Hint: multiply 2.4 × 100)",
-      options: ["24", "240", "2400", "0.24", "0.024"],
-      correct: 1,
+      options: ["102", "24", "2", "2400", "240"],
+      correct: 4,
       explanation: "When multiplying by 100, move decimal two places right. 2.4 × 100 = 240. ✓"
     },
     {
@@ -2645,24 +2645,24 @@ const mathsData = {
       id: 117,
       difficulty: 2,
       question: "A baker uses 5.2 kg of flour each day. How much flour does he use over 7 days?",
-      options: ["35.4", "36.0", "37.4", "35.0", "36.4"],
-      correct: 4,
+      options: ["3.6", "364.0", "36.4", "12.2", "5.2"],
+      correct: 2,
       explanation: "5 × 7 = 35, and 0.2 × 7 = 1.4. So 35 + 1.4 = 36.4. ✓"
     },
     {
       id: 118,
       difficulty: 2,
       question: "A chocolate bar weighing 10.8 grams is shared equally among 9 friends. How many grams does each friend receive?",
-      options: ["1.2", "1.3", "1.4", "1.1", "1.5"],
-      correct: 0,
+      options: ["0.1", "10.8", "12.0", "1.2", "0.8"],
+      correct: 3,
       explanation: "108 ÷ 9 = 12, so 10.8 ÷ 9 = 1.2. Check: 1.2 × 9 = 10.8. ✓"
     },
     {
       id: 119,
       difficulty: 2,
       question: "A photograph measures 0.6 metres wide and 0.8 metres tall. What is its area in square metres? (Hint: multiply 0.6 × 0.8)",
-      options: ["0.46", "0.48", "0.52", "4.8", "0.50"],
-      correct: 1,
+      options: ["0.05", "0.60", "1.40", "4.80", "0.48"],
+      correct: 4,
       explanation: "6 × 8 = 48. Two decimal places total, so 0.48. ✓"
     },
     {
@@ -2677,8 +2677,8 @@ const mathsData = {
       id: 121,
       difficulty: 2,
       question: "Mum has 13.5 metres of wrapping paper. She uses 7.8 metres to wrap presents. How many metres are left?",
-      options: ["5.3", "6.3", "6.7", "5.7", "5.5"],
-      correct: 3,
+      options: ["57.0", "5.7", "7.8", "13.5", "21.3"],
+      correct: 1,
       explanation: "13.5 - 7.8 = 5.7. Check: 5.7 + 7.8 = 13.5. ✓"
     },
     {
@@ -2701,32 +2701,32 @@ const mathsData = {
       id: 124,
       difficulty: 3,
       question: "A cake is divided into 8 equal slices. Mia eats 3 slices. What decimal of the whole cake has she eaten? (Which decimal equals 3/8?)",
-      options: ["0.3", "0.375", "0.35", "0.325", "0.38"],
-      correct: 1,
+      options: ["0.038", "2.667", "3.000", "3.750", "0.375"],
+      correct: 4,
       explanation: "3/8 means 3 ÷ 8 = 0.375. Check: 0.375 × 8 = 3. ✓"
     },
     {
       id: 125,
       difficulty: 2,
       question: "A suitcase weighs 6.4 kg and a rucksack weighs 8.9 kg. What is their combined weight?",
-      options: ["14.3", "15.2", "15.3", "14.13", "15.13"],
-      correct: 2,
+      options: ["15.3", "8.9", "6.4", "2.5", "1.5"],
+      correct: 0,
       explanation: "6 + 8 = 14, and 0.4 + 0.9 = 1.3. So 14 + 1.3 = 15.3. ✓"
     },
     {
       id: 126,
       difficulty: 2,
       question: "A teacher shares 23 coloured pencils equally among 4 tables. How many pencils does each table get?",
-      options: ["5.5", "5.6", "5.7", "5.75", "5.8"],
-      correct: 3,
+      options: ["57.50", "5.75", "0.57", "0.17", "23.00"],
+      correct: 1,
       explanation: "23 ÷ 4 = 5 remainder 3. The remainder 3/4 = 0.75. So 23 ÷ 4 = 5.75. ✓"
     },
     {
       id: 127,
       difficulty: 2,
       question: "A roll of fabric is 7.8 metres long. A tailor uses 0.6 of the roll. How many metres of fabric does the tailor use? (Hint: multiply 7.8 × 0.6)",
-      options: ["4.58", "46.8", "4.78", "4.88", "4.68"],
-      correct: 4,
+      options: ["8.40", "46.80", "4.68", "0.47", "7.80"],
+      correct: 2,
       explanation: "78 × 6 = 468. Two decimal places total, so 4.68. ✓"
     },
     {
@@ -2741,8 +2741,8 @@ const mathsData = {
       id: 129,
       difficulty: 2,
       question: "A roll of string is 11 metres long. After cutting off 6.45 metres, how much string is left?",
-      options: ["4.45", "4.55", "4.65", "5.55", "5.45"],
-      correct: 1,
+      options: ["6.45", "11.00", "17.45", "45.50", "4.55"],
+      correct: 4,
       explanation: "11.00 - 6.45 = 4.55. ✓"
     },
     {
@@ -2757,16 +2757,16 @@ const mathsData = {
       id: 131,
       difficulty: 2,
       question: "A ball of wool is 9.6 metres long. Each pompom uses 0.4 metres of wool. How many pompoms can be made?",
-      options: ["2.4", "0.24", "240", "24", "2.04"],
-      correct: 3,
+      options: ["240", "24", "10", "4", "2"],
+      correct: 1,
       explanation: "How many 0.4s in 9.6? Think: 96 ÷ 4 = 24. The answer is 24. ✓"
     },
     {
       id: 132,
       difficulty: 2,
       question: "Ava cycles 2.7 km on Saturday and 5.8 km on Sunday. How far in total?",
-      options: ["7.5 km", "8.4 km", "8.15 km", "7.15 km", "8.5 km"],
-      correct: 4,
+      options: ["2.7 km", "0.9 km", "8.5 km", "5.8 km", "3.1 km"],
+      correct: 2,
       explanation: "2.7 + 5.8 = 8.5 km. (2 + 5 = 7, and 0.7 + 0.8 = 1.5, so 7 + 1.5 = 8.5). ✓"
     },
     {
@@ -2781,24 +2781,24 @@ const mathsData = {
       id: 134,
       difficulty: 2,
       question: "A bag of sand weighs 4.8 kg. Only 0.8 of the bag is needed for a sandcastle. How many kg of sand are used? (Hint: multiply 4.8 × 0.8)",
-      options: ["3.74", "3.84", "3.94", "4.04", "38.4"],
-      correct: 1,
+      options: ["0.38", "4.80", "5.60", "38.40", "3.84"],
+      correct: 4,
       explanation: "48 × 8 = 384. Two decimal places total, so 3.84. ✓"
     },
     {
       id: 135,
       difficulty: 2,
       question: "A hosepipe is 12.6 metres long. It is cut into 7 equal sections. How long is each section?",
-      options: ["1.6", "1.7", "1.8", "1.9", "2.0"],
-      correct: 2,
+      options: ["1.8", "0.6", "0.2", "12.6", "18.0"],
+      correct: 0,
       explanation: "126 ÷ 7 = 18, so 12.6 ÷ 7 = 1.8. Check: 1.8 × 7 = 12.6. ✓"
     },
     {
       id: 136,
       difficulty: 3,
       question: "A shop gives £0.15 discount for every £1 spent. Priya buys items costing £4.60 and £3.40. How much does she save in total?",
-      options: ["£0.80", "£1.00", "£1.15", "£1.20", "£1.35"],
-      correct: 3,
+      options: ["£12.00", "£1.20", "£3.40", "£4.60", "£8.00"],
+      correct: 1,
       explanation: "Total spent: £4.60 + £3.40 = £8.00. Discount per pound: £0.15. Saving: £8 × £0.15 = £1.20. ✓"
     },
     {
@@ -2949,8 +2949,8 @@ const mathsData = {
       id: 155,
       difficulty: 3,
       question: "A shop sells apples at £1.20 per kilogram. Mrs Chen buys 2.5 kg of apples and pays with a £5 note. How much change does she receive?",
-      options: ["£1.00", "£1.50", "£2.00", "£2.50", "£3.00"],
-      correct: 2,
+      options: ["£2.00", "£0.50", "£0.20", "£5.00", "£12.50"],
+      correct: 0,
       explanation: "Cost of apples: 2.5 × £1.20 = £3.00. Change from £5: £5.00 − £3.00 = £2.00. ✓"
     },
     {
@@ -3100,8 +3100,8 @@ const mathsData = {
       id: 173,
       difficulty: 3,
       question: "A shop gives a 0.15 discount on all items. Charlotte buys a coat costing £60. How much money does she save?",
-      options: ["£9.00", "£6.00", "£1.50", "£15.00", "£0.90"],
-      correct: 0,
+      options: ["£0.15", "£60.15", "£90.00", "£9.00", "£0.90"],
+      correct: 3,
       explanation: "0.15 as a percentage is 15%. 15% of £60 = 60 × 0.15 = £9.00. ✓"
     },
     {
@@ -3150,8 +3150,8 @@ const mathsData = {
       id: 179,
       difficulty: 2,
       question: "A factory produces 12.5 kg of flour. It is packed into bags of 0.5 kg each. How many bags are needed?",
-      options: ["6", "20", "25", "125", "250"],
-      correct: 2,
+      options: ["13", "6", "3", "250", "25"],
+      correct: 4,
       explanation: "12.5 ÷ 0.5 = 25 bags. To divide by 0.5, multiply both by 10: 125 ÷ 5 = 25. Or think: how many halves in 12.5? That's 12.5 × 2 = 25. ✓"
     },
     {
@@ -3176,24 +3176,24 @@ const mathsData = {
       id: 182,
       difficulty: 1,
       question: "Tom buys a sandwich for £2.50 and a drink for £1.30. How much does he spend altogether?",
-      options: ["£3.20", "£4.80", "£4.00", "£3.70", "£3.80"],
-      correct: 4,
+      options: ["£1.20", "£0.38", "£3.80", "£2.50", "£1.30"],
+      correct: 2,
       explanation: "£2.50 + £1.30: Add the pounds: 2 + 1 = 3. Add the pence: 50p + 30p = 80p. Total = £3.80. ✓"
     },
     {
       id: 183,
       difficulty: 1,
       question: "A rope is 4.5 m long. Emma cuts off 1.2 m. How much rope is left?",
-      options: ["3.3 m", "3.7 m", "2.3 m", "5.7 m", "3.2 m"],
-      correct: 0,
+      options: ["0.3 m", "4.5 m", "5.7 m", "3.3 m", "1.2 m"],
+      correct: 3,
       explanation: "4.5 − 1.2: Subtract the whole numbers: 4 − 1 = 3. Subtract the decimals: 0.5 − 0.2 = 0.3. So 3 + 0.3 = 3.3 m. ✓"
     },
     {
       id: 184,
       difficulty: 1,
       question: "A pencil costs £0.35. Amelia buys 4 pencils. How much does she pay?",
-      options: ["£1.20", "£1.40", "£1.50", "£0.39", "£1.35"],
-      correct: 1,
+      options: ["£0.35", "£0.14", "£4.35", "£14.00", "£1.40"],
+      correct: 4,
       explanation: "£0.35 × 4: Think 35p × 4 = 140p = £1.40. ✓"
     },
     {
@@ -3208,16 +3208,16 @@ const mathsData = {
       id: 186,
       difficulty: 2,
       question: "A recipe needs 0.75 kg of flour. Sophie wants to make 3 batches. How much flour does she need in total?",
-      options: ["1.50 kg", "2.00 kg", "2.75 kg", "2.25 kg", "3.25 kg"],
-      correct: 3,
+      options: ["3.75 kg", "2.25 kg", "0.75 kg", "0.23 kg", "3.00 kg"],
+      correct: 1,
       explanation: "0.75 × 3: Think 75 × 3 = 225, so 0.75 × 3 = 2.25 kg. ✓"
     },
     {
       id: 187,
       difficulty: 2,
       question: "Harry runs 2.4 km on Monday and 3.75 km on Tuesday. How much further did he run on Tuesday?",
-      options: ["1.15 km", "1.25 km", "1.55 km", "1.45 km", "1.35 km"],
-      correct: 4,
+      options: ["6.15 km", "13.50 km", "1.35 km", "2.40 km", "3.75 km"],
+      correct: 2,
       explanation: "3.75 − 2.40 = 1.35 km. Line up the decimal points: 75 − 40 = 35 hundredths, 3 − 2 = 1 one. So the difference is 1.35 km. ✓"
     },
     {
@@ -3283,16 +3283,16 @@ const mathsData = {
       id: 195,
       difficulty: 3,
       question: "What is £20 − £13.67?",
-      options: ["£6.23", "£6.43", "£6.33", "£7.33", "£7.67"],
-      correct: 2,
+      options: ["£6.33", "£13.67", "£20.00", "£33.67", "£63.30"],
+      correct: 0,
       explanation: "£20.00 − £13.67: Start from the hundredths. 0 − 7: borrow to get 10 − 7 = 3. Tenths: 9 − 6 = 3 (after borrowing). Ones: 9 − 3 = 6. Tens: 1 − 1 = 0. Answer: £6.33. ✓"
     },
     {
       id: 196,
       difficulty: 3,
       question: "What is 5.003 − 2.997?",
-      options: ["3.006", "2.016", "2.106", "2.006", "2.996"],
-      correct: 3,
+      options: ["20.060", "2.006", "2.997", "5.003", "8.000"],
+      correct: 1,
       explanation: "5.003 − 2.997: Thousandths: 3 − 7, borrow to get 13 − 7 = 6. Hundredths: 9 − 9 = 0 (after borrowing). Tenths: 9 − 9 = 0 (after borrowing). Ones: 4 − 2 = 2. Answer: 2.006. ✓"
     },
     {
@@ -3324,16 +3324,16 @@ const mathsData = {
       id: 200,
       difficulty: 3,
       question: "Convert 5/8 to a decimal.",
-      options: ["0.58", "0.6", "0.625", "0.65", "0.675"],
-      correct: 2,
+      options: ["0.625", "0.063", "1.600", "5.000", "6.250"],
+      correct: 0,
       explanation: "5/8 means 5 ÷ 8. 8 goes into 5.000: 0.625. So 5/8 = 0.625. ✓"
     },
     {
       id: 201,
       difficulty: 2,
       question: "Convert 7/20 to a decimal.",
-      options: ["0.07", "0.7", "0.37", "0.35", "3.5"],
-      correct: 3,
+      options: ["7.00", "0.35", "0.03", "2.86", "3.50"],
+      correct: 1,
       explanation: "7/20 means 7 ÷ 20. Multiply top and bottom by 5: 7/20 = 35/100 = 0.35. ✓"
     },
     {
@@ -3398,16 +3398,16 @@ const mathsData = {
       id: 209,
       difficulty: 3,
       question: "A plank costs £3.45 per metre. How much do 8 metres cost?",
-      options: ["£24.60", "£27.60", "£27.20", "£28.40", "£31.60"],
-      correct: 1,
+      options: ["£11.45", "£3.45", "£2.76", "£276.00", "£27.60"],
+      correct: 4,
       explanation: "8 × £3.45: 8 × £3 = £24, 8 × £0.45 = £3.60. Total: £24 + £3.60 = £27.60. ✓"
     },
     {
       id: 210,
       difficulty: 2,
       question: "What is 7 × 0.99?",
-      options: ["6.30", "7.07", "6.93", "7.63", "7.93"],
-      correct: 2,
+      options: ["6.93", "0.69", "7.00", "7.99", "69.30"],
+      correct: 0,
       explanation: "7 × 0.99: Think of it as 7 × 1 − 7 × 0.01 = 7 − 0.07 = 6.93. Or multiply: 7 × 99 = 693, then place the decimal: 6.93. ✓"
     },
     {
@@ -3422,8 +3422,8 @@ const mathsData = {
       id: 212,
       difficulty: 3,
       question: "Rosie buys 12 notebooks at £1.35 each. How much does she spend?",
-      options: ["£15.00", "£15.20", "£16.00", "£16.35", "£16.20"],
-      correct: 4,
+      options: ["£1.62", "£162.00", "£16.20", "£13.35", "£12.00"],
+      correct: 2,
       explanation: "12 × £1.35: 12 × £1 = £12, 12 × £0.35 = £4.20. Total: £12 + £4.20 = £16.20. Check: 10 × £1.35 = £13.50, 2 × £1.35 = £2.70, total = £16.20. ✓"
     },
     // ===== ROUNDING DECIMALS D2/D3 (IDs 213–216) =====
@@ -3772,7 +3772,7 @@ longdivision: {
       id: 1,
       difficulty: 1,
       question: "A teacher shares 144 coloured pencils equally among 12 tables. How many pencils does each table get?",
-      options: ["10", "12", "11", "13", "14"],
+      options: ["24", "12", "11", "6", "13"],
       correct: 1,
       explanation: "Divide: 12 goes into 144 exactly 12 times. Check: 12 × 12 = 144. ✓"
     },
@@ -3780,7 +3780,7 @@ longdivision: {
       id: 2,
       difficulty: 1,
       question: "A baker makes 375 biscuits and packs them into boxes of 15. How many boxes does he fill?",
-      options: ["20", "23", "25", "27", "30"],
+      options: ["50", "250", "25", "24", "26"],
       correct: 2,
       explanation: "15 goes into 37 twice (15 × 2 = 30), remainder 7. Bring down 5 to make 75. 15 goes into 75 five times (15 × 5 = 75). Answer: 25. ✓"
     },
@@ -3788,7 +3788,7 @@ longdivision: {
       id: 3,
       difficulty: 2,
       question: "A school has 456 exercise books to share equally among 24 classes. How many books does each class receive?",
-      options: ["17", "18", "20", "19", "21"],
+      options: ["24", "38", "190", "19", "20"],
       correct: 3,
       explanation: "24 goes into 45 once (24 × 1 = 24), remainder 21. Bring down 6 to make 216. 24 goes into 216 nine times (24 × 9 = 216). Answer: 19. ✓"
     },
@@ -3796,7 +3796,7 @@ longdivision: {
       id: 4,
       difficulty: 2,
       question: "A coach can carry 48 passengers. How many coaches are needed to carry 336 passengers?",
-      options: ["6", "10", "8", "9", "7"],
+      options: ["6", "4", "8", "14", "7"],
       correct: 4,
       explanation: "Divide: 336 ÷ 48 = 7. Check: 48 × 7 = 336. So 7 coaches are needed. ✓"
     },
@@ -3804,7 +3804,7 @@ longdivision: {
       id: 5,
       difficulty: 2,
       question: "A sweet shop has 624 lollipops to put into jars of 26. How many jars can they fill?",
-      options: ["24", "23", "22", "25", "26"],
+      options: ["24", "23", "25", "26", "48"],
       correct: 0,
       explanation: "26 goes into 62 twice (26 × 2 = 52), remainder 10. Bring down 4 to make 104. 26 goes into 104 four times (26 × 4 = 104). Answer: 24. ✓"
     },
@@ -3812,7 +3812,7 @@ longdivision: {
       id: 6,
       difficulty: 2,
       question: "A PE teacher has 540 tennis balls to share equally among 18 groups. How many balls does each group get?",
-      options: ["28", "30", "29", "31", "32"],
+      options: ["31", "30", "29", "18", "15"],
       correct: 1,
       explanation: "18 goes into 54 three times (18 × 3 = 54), remainder 0. Bring down 0 to make 00. Answer: 30. ✓"
     },
@@ -3820,7 +3820,7 @@ longdivision: {
       id: 7,
       difficulty: 2,
       question: "A gardener plants 420 seeds in trays. Each tray holds 35 seeds. How many trays does he use?",
-      options: ["10", "11", "12", "13", "14"],
+      options: ["35", "120", "12", "13", "24"],
       correct: 2,
       explanation: "Divide: 420 ÷ 35 = 12. Check: 35 × 12 = 420. So 12 trays are used. ✓"
     },
@@ -3828,7 +3828,7 @@ longdivision: {
       id: 8,
       difficulty: 2,
       question: "A farmer picks 672 apples and packs them into crates of 21. How many crates does he fill?",
-      options: ["30", "31", "33", "32", "34"],
+      options: ["21", "16", "33", "32", "31"],
       correct: 3,
       explanation: "21 goes into 67 three times (21 × 3 = 63), remainder 4. Bring down 2 to make 42. 21 goes into 42 twice (21 × 2 = 42). Answer: 32. ✓"
     },
@@ -3836,7 +3836,7 @@ longdivision: {
       id: 9,
       difficulty: 2,
       question: "A charity collects 736 tins of soup and distributes them equally to 32 food banks. How many tins does each food bank receive?",
-      options: ["21", "22", "25", "24", "23"],
+      options: ["22", "12", "24", "32", "23"],
       correct: 4,
       explanation: "32 goes into 73 twice (32 × 2 = 64), remainder 9. Bring down 6 to make 96. 32 goes into 96 three times (32 × 3 = 96). Answer: 23. ✓"
     },
@@ -3844,7 +3844,7 @@ longdivision: {
       id: 10,
       difficulty: 1,
       question: "Cricket balls are packed in boxes of 12. John has 156 cricket balls. How many boxes can he fill completely?",
-      options: ["13", "12", "11", "14", "15"],
+      options: ["13", "12", "14", "26", "130"],
       correct: 0,
       explanation: "Divide: 156 ÷ 12 = 13. Check: 12 × 13 = 156. John can fill 13 boxes completely. ✓"
     },
@@ -3852,7 +3852,7 @@ longdivision: {
       id: 11,
       difficulty: 2,
       question: "A printing company prints 812 leaflets and bundles them into packs of 28. How many packs are there?",
-      options: ["27", "29", "28", "30", "31"],
+      options: ["58", "29", "28", "15", "30"],
       correct: 1,
       explanation: "28 goes into 81 twice (28 × 2 = 56), remainder 25. Bring down 2 to make 252. 28 goes into 252 nine times (28 × 9 = 252). Answer: 29. ✓"
     },
@@ -3860,7 +3860,7 @@ longdivision: {
       id: 12,
       difficulty: 2,
       question: "A garden centre has 945 flower pots arranged in rows of 27. How many rows are there?",
-      options: ["33", "34", "35", "36", "37"],
+      options: ["18", "36", "35", "34", "27"],
       correct: 2,
       explanation: "27 goes into 94 three times (27 × 3 = 81), remainder 13. Bring down 5 to make 135. 27 goes into 135 five times (27 × 5 = 135). Answer: 35. ✓"
     },
@@ -3868,7 +3868,7 @@ longdivision: {
       id: 13,
       difficulty: 2,
       question: "A rope 840 cm long is cut into 24 equal pieces. How long is each piece?",
-      options: ["33 cm", "34 cm", "36 cm", "35 cm", "37 cm"],
+      options: ["36 cm", "70 cm", "350 cm", "35 cm", "34 cm"],
       correct: 3,
       explanation: "Divide: 840 ÷ 24 = 35 cm. Check: 24 × 35 = 840. ✓"
     },
@@ -3876,7 +3876,7 @@ longdivision: {
       id: 14,
       difficulty: 2,
       question: "A school canteen makes 966 sandwiches for 42 classes. How many sandwiches does each class get?",
-      options: ["21", "22", "25", "24", "23"],
+      options: ["24", "42", "46", "230", "23"],
       correct: 4,
       explanation: "42 goes into 96 twice (42 × 2 = 84), remainder 12. Bring down 6 to make 126. 42 goes into 126 three times (42 × 3 = 126). Answer: 23. ✓"
     },
@@ -3884,7 +3884,7 @@ longdivision: {
       id: 15,
       difficulty: 2,
       question: "A newsagent has 780 newspapers to deliver equally along 26 streets. How many papers go to each street?",
-      options: ["30", "29", "28", "31", "32"],
+      options: ["30", "29", "26", "15", "3"],
       correct: 0,
       explanation: "26 goes into 78 three times (26 × 3 = 78), remainder 0. Bring down 0 to make 00. Answer: 30. ✓"
     },
@@ -3892,7 +3892,7 @@ longdivision: {
       id: 16,
       difficulty: 2,
       question: "Pencils are sold in packs of 16. A school orders 448 pencils. How many packs is this?",
-      options: ["26", "28", "27", "29", "30"],
+      options: ["29", "28", "27", "16", "14"],
       correct: 1,
       explanation: "Divide: 448 ÷ 16 = 28. Check: 16 × 28 = 448. So 28 packs. ✓"
     },
@@ -3900,7 +3900,7 @@ longdivision: {
       id: 17,
       difficulty: 2,
       question: "A toy shop receives 1044 building blocks and sorts them into bags of 36. How many bags are there?",
-      options: ["27", "28", "29", "30", "31"],
+      options: ["58", "290", "29", "30", "36"],
       correct: 2,
       explanation: "36 goes into 104 twice (36 × 2 = 72), remainder 32. Bring down 4 to make 324. 36 goes into 324 nine times (36 × 9 = 324). Answer: 29. ✓"
     },
@@ -3908,7 +3908,7 @@ longdivision: {
       id: 18,
       difficulty: 2,
       question: "A craft teacher has 588 beads to share equally among 14 children. How many beads does each child get?",
-      options: ["40", "41", "43", "42", "44"],
+      options: ["21", "43", "84", "42", "41"],
       correct: 3,
       explanation: "14 goes into 58 four times (14 × 4 = 56), remainder 2. Bring down 8 to make 28. 14 goes into 28 twice (14 × 2 = 28). Answer: 42. ✓"
     },
@@ -3916,7 +3916,7 @@ longdivision: {
       id: 19,
       difficulty: 2,
       question: "A farmer packs 792 eggs into boxes of 36. How many boxes does he need?",
-      options: ["20", "21", "24", "23", "22"],
+      options: ["21", "23", "36", "44", "22"],
       correct: 4,
       explanation: "Divide: 792 ÷ 36 = 22. Check: 36 × 22 = 792. So 22 boxes. ✓"
     },
@@ -3924,7 +3924,7 @@ longdivision: {
       id: 20,
       difficulty: 2,
       question: "A coach travels 1140 miles over 38 days. If it travels the same distance each day, how many miles does it cover per day?",
-      options: ["30", "29", "28", "31", "32"],
+      options: ["30", "29", "15", "3", "31"],
       correct: 0,
       explanation: "38 goes into 114 three times (38 × 3 = 114), remainder 0. Bring down 0 to make 00. Answer: 30. ✓"
     },
@@ -3932,7 +3932,7 @@ longdivision: {
       id: 21,
       difficulty: 2,
       question: "A library receives a donation of 851 books to be placed equally on 23 shelves. How many books go on each shelf?",
-      options: ["35", "37", "36", "38", "39"],
+      options: ["74", "37", "36", "23", "38"],
       correct: 1,
       explanation: "23 goes into 85 three times (23 × 3 = 69), remainder 16. Bring down 1 to make 161. 23 goes into 161 seven times (23 × 7 = 161). Answer: 37. ✓"
     },
@@ -3940,7 +3940,7 @@ longdivision: {
       id: 22,
       difficulty: 2,
       question: "Books are arranged in boxes of 45. There are 1080 books. How many boxes are there?",
-      options: ["22", "23", "24", "25", "26"],
+      options: ["48", "240", "24", "25", "45"],
       correct: 2,
       explanation: "Divide: 1080 ÷ 45 = 24. Check: 45 × 24 = 1080. So 24 boxes. ✓"
     },
@@ -3948,7 +3948,7 @@ longdivision: {
       id: 23,
       difficulty: 2,
       question: "A school orders 1224 rulers for 34 classrooms. How many rulers does each classroom receive?",
-      options: ["34", "35", "37", "36", "38"],
+      options: ["37", "72", "360", "36", "35"],
       correct: 3,
       explanation: "34 goes into 122 three times (34 × 3 = 102), remainder 20. Bring down 4 to make 204. 34 goes into 204 six times (34 × 6 = 204). Answer: 36. ✓"
     },
@@ -3956,7 +3956,7 @@ longdivision: {
       id: 24,
       difficulty: 2,
       question: "A farmer has 912 strawberries to put into punnets of 16. How many punnets does he fill?",
-      options: ["55", "56", "59", "58", "57"],
+      options: ["56", "29", "16", "58", "57"],
       correct: 4,
       explanation: "16 goes into 91 five times (16 × 5 = 80), remainder 11. Bring down 2 to make 112. 16 goes into 112 seven times (16 × 7 = 112). Answer: 57. ✓"
     },
@@ -3964,7 +3964,7 @@ longdivision: {
       id: 25,
       difficulty: 2,
       question: "A school trip costs £1560 in total. There are 52 students. How much does each student pay?",
-      options: ["£30", "£29", "£28", "£31", "£32"],
+      options: ["£30", "£31", "£52", "£60", "£300"],
       correct: 0,
       explanation: "Divide: £1560 ÷ 52 = £30. Check: 52 × £30 = £1560. Each student pays £30. ✓"
     },
@@ -3972,7 +3972,7 @@ longdivision: {
       id: 26,
       difficulty: 2,
       question: "A sports club raises £1368 and splits it equally among 38 members. How many pounds does each member get?",
-      options: ["£34", "£36", "£35", "£37", "£38"],
+      options: ["£38", "£36", "£35", "£18", "£37"],
       correct: 1,
       explanation: "38 goes into 136 three times (38 × 3 = 114), remainder 22. Bring down 8 to make 228. 38 goes into 228 six times (38 × 6 = 228). Answer: £36. ✓"
     },
@@ -3980,7 +3980,7 @@ longdivision: {
       id: 27,
       difficulty: 2,
       question: "Sweets are packed in bags of 48. A factory produces 1392 sweets. How many bags can be filled?",
-      options: ["27", "28", "29", "30", "31"],
+      options: ["48", "58", "29", "28", "30"],
       correct: 2,
       explanation: "Divide: 1392 ÷ 48 = 29. Check: 48 × 29 = 1392. So 29 bags can be filled. ✓"
     },
@@ -3988,7 +3988,7 @@ longdivision: {
       id: 28,
       difficulty: 2,
       question: "A swimming pool has 1575 tiles laid in rows of 45. How many rows of tiles are there?",
-      options: ["33", "34", "36", "35", "37"],
+      options: ["45", "70", "350", "35", "36"],
       correct: 3,
       explanation: "45 goes into 157 three times (45 × 3 = 135), remainder 22. Bring down 5 to make 225. 45 goes into 225 five times (45 × 5 = 225). Answer: 35. ✓"
     },
@@ -3996,7 +3996,7 @@ longdivision: {
       id: 29,
       difficulty: 2,
       question: "A warehouse stores 1764 bottles of juice on shelves holding 42 bottles each. How many shelves are used?",
-      options: ["40", "41", "44", "43", "42"],
+      options: ["41", "21", "43", "84", "42"],
       correct: 4,
       explanation: "42 goes into 176 four times (42 × 4 = 168), remainder 8. Bring down 4 to make 84. 42 goes into 84 twice (42 × 2 = 84). Answer: 42. ✓"
     },
@@ -4004,7 +4004,7 @@ longdivision: {
       id: 30,
       difficulty: 2,
       question: "A charity raises £2016. They split it equally between 56 families. How much does each family receive?",
-      options: ["£36", "£35", "£34", "£37", "£38"],
+      options: ["£36", "£35", "£37", "£56", "£72"],
       correct: 0,
       explanation: "Divide: £2016 ÷ 56 = £36. Check: 56 × £36 = £2016. Each family receives £36. ✓"
     },
@@ -4012,7 +4012,7 @@ longdivision: {
       id: 31,
       difficulty: 2,
       question: "A scout group has 576 badges to share equally among 16 troops. How many badges does each troop receive?",
-      options: ["34", "36", "35", "37", "38"],
+      options: ["37", "36", "35", "18", "16"],
       correct: 1,
       explanation: "16 goes into 57 three times (16 × 3 = 48), remainder 9. Bring down 6 to make 96. 16 goes into 96 six times (16 × 6 = 96). Answer: 36. ✓"
     },
@@ -4020,7 +4020,7 @@ longdivision: {
       id: 32,
       difficulty: 1,
       question: "A factory produces 825 toy cars and packs them into boxes of 25. How many boxes are filled?",
-      options: ["31", "35", "33", "37", "39"],
+      options: ["17", "34", "33", "32", "25"],
       correct: 2,
       explanation: "25 goes into 82 three times (25 × 3 = 75), remainder 7. Bring down 5 to make 75. 25 goes into 75 three times (25 × 3 = 75). Answer: 33. ✓"
     },
@@ -4028,7 +4028,7 @@ longdivision: {
       id: 33,
       difficulty: 2,
       question: "A gardener has 432 seeds to plant in 18 equal rows. How many seeds go in each row?",
-      options: ["22", "23", "25", "24", "26"],
+      options: ["18", "25", "48", "24", "23"],
       correct: 3,
       explanation: "18 goes into 43 twice (18 × 2 = 36), remainder 7. Bring down 2 to make 72. 18 goes into 72 four times (18 × 4 = 72). Answer: 24. ✓"
     },
@@ -4036,7 +4036,7 @@ longdivision: {
       id: 34,
       difficulty: 2,
       question: "A cinema has 960 seats arranged in 32 equal rows. How many seats are in each row?",
-      options: ["28", "29", "32", "31", "30"],
+      options: ["31", "32", "60", "300", "30"],
       correct: 4,
       explanation: "32 goes into 96 three times (32 × 3 = 96), remainder 0. Bring down 0 to make 00. Answer: 30. ✓"
     },
@@ -4044,7 +4044,7 @@ longdivision: {
       id: 35,
       difficulty: 2,
       question: "Emma has 714 stickers. She arranges them in albums with 14 stickers per page. How many pages does she fill?",
-      options: ["51", "50", "49", "52", "53"],
+      options: ["51", "50", "52", "102", "510"],
       correct: 0,
       explanation: "Divide: 714 ÷ 14 = 51. Check: 14 × 51 = 714. Emma fills 51 pages. ✓"
     },
@@ -4052,7 +4052,7 @@ longdivision: {
       id: 36,
       difficulty: 2,
       question: "A bookshop sells 1188 pencils in packs of 27. How many packs is that?",
-      options: ["42", "44", "43", "45", "46"],
+      options: ["45", "44", "43", "27", "22"],
       correct: 1,
       explanation: "27 goes into 118 four times (27 × 4 = 108), remainder 10. Bring down 8 to make 108. 27 goes into 108 four times (27 × 4 = 108). Answer: 44. ✓"
     },
@@ -4060,7 +4060,7 @@ longdivision: {
       id: 37,
       difficulty: 2,
       question: "A zookeeper has 684 pieces of fruit to feed 19 monkeys equally. How many pieces does each monkey get?",
-      options: ["34", "38", "36", "40", "42"],
+      options: ["37", "72", "36", "35", "19"],
       correct: 2,
       explanation: "19 goes into 68 three times (19 × 3 = 57), remainder 11. Bring down 4 to make 114. 19 goes into 114 six times (19 × 6 = 114). Answer: 36. ✓"
     },
@@ -4068,7 +4068,7 @@ longdivision: {
       id: 38,
       difficulty: 2,
       question: "A bakery makes 1350 cupcakes. They pack them in boxes of 54. How many boxes do they fill?",
-      options: ["28", "26", "27", "25", "29"],
+      options: ["50", "54", "250", "25", "26"],
       correct: 3,
       explanation: "Divide: 1350 ÷ 54 = 25. Check: 54 × 25 = 1350. They fill 25 boxes. ✓"
     },
@@ -4076,7 +4076,7 @@ longdivision: {
       id: 39,
       difficulty: 1,
       question: "A supermarket receives 876 yoghurts and places them in fridges holding 12 each. How many fridges are needed?",
-      options: ["71", "72", "75", "74", "73"],
+      options: ["72", "74", "146", "730", "73"],
       correct: 4,
       explanation: "12 goes into 87 seven times (12 × 7 = 84), remainder 3. Bring down 6 to make 36. 12 goes into 36 three times (12 × 3 = 36). Answer: 73. ✓"
     },
@@ -4084,7 +4084,7 @@ longdivision: {
       id: 40,
       difficulty: 2,
       question: "A delivery driver travels 1295 miles over 35 trips. If each trip is the same distance, how many miles is each trip?",
-      options: ["37", "36", "35", "38", "39"],
+      options: ["37", "36", "35", "19", "38"],
       correct: 0,
       explanation: "35 goes into 129 three times (35 × 3 = 105), remainder 24. Bring down 5 to make 245. 35 goes into 245 seven times (35 × 7 = 245). Answer: 37. ✓"
     },
@@ -4092,7 +4092,7 @@ longdivision: {
       id: 41,
       difficulty: 2,
       question: "A school collects 1104 cereal box tokens to share equally among 23 classrooms. How many tokens does each classroom get?",
-      options: ["46", "48", "47", "49", "50"],
+      options: ["96", "48", "47", "24", "49"],
       correct: 1,
       explanation: "23 goes into 110 four times (23 × 4 = 92), remainder 18. Bring down 4 to make 184. 23 goes into 184 eight times (23 × 8 = 184). Answer: 48. ✓"
     },
@@ -4100,7 +4100,7 @@ longdivision: {
       id: 42,
       difficulty: 2,
       question: "Tom divides £1456 equally among 28 people. How much does each person receive?",
-      options: ["£50", "£51", "£52", "£53", "£54"],
+      options: ["£104", "£520", "£52", "£51", "£53"],
       correct: 2,
       explanation: "Divide: £1456 ÷ 28 = £52. Check: 28 × £52 = £1456. Each person receives £52. ✓"
     },
@@ -4108,7 +4108,7 @@ longdivision: {
       id: 43,
       difficulty: 2,
       question: "A park ranger plants 1540 trees in rows of 35. How many rows does she plant?",
-      options: ["42", "43", "45", "44", "46"],
+      options: ["35", "22", "45", "44", "43"],
       correct: 3,
       explanation: "35 goes into 154 four times (35 × 4 = 140), remainder 14. Bring down 0 to make 140. 35 goes into 140 four times (35 × 4 = 140). Answer: 44. ✓"
     },
@@ -4116,7 +4116,7 @@ longdivision: {
       id: 44,
       difficulty: 2,
       question: "A post office sorts 1680 letters into 40 equal bundles. How many letters are in each bundle?",
-      options: ["40", "41", "44", "43", "42"],
+      options: ["41", "40", "43", "84", "42"],
       correct: 4,
       explanation: "40 goes into 168 four times (40 × 4 = 160), remainder 8. Bring down 0 to make 80. 40 goes into 80 twice (40 × 2 = 80). Answer: 42. ✓"
     },
@@ -4124,7 +4124,7 @@ longdivision: {
       id: 45,
       difficulty: 2,
       question: "Sophie has 1824 beads. She strings them in necklaces of 57 beads each. How many necklaces can she make?",
-      options: ["32", "31", "30", "33", "34"],
+      options: ["32", "33", "57", "64", "320"],
       correct: 0,
       explanation: "Divide: 1824 ÷ 57 = 32. Check: 57 × 32 = 1824. Sophie can make 32 necklaces. ✓"
     },
@@ -4132,7 +4132,7 @@ longdivision: {
       id: 46,
       difficulty: 2,
       question: "A school raises £1,927 at a fair and shares it equally among 47 charities. How many pounds does each charity receive?",
-      options: ["£39", "£41", "£40", "£42", "£43"],
+      options: ["£410", "£41", "£42", "£47", "£82"],
       correct: 1,
       explanation: "47 goes into 192 4 times (47 × 4 = 188), remainder 4. Bring down 7 to make 47. 47 goes into 47 once (47 × 1 = 47). Answer: £41. ✓"
     },
@@ -4140,7 +4140,7 @@ longdivision: {
       id: 47,
       difficulty: 1,
       question: "A baker uses 2100 grams of flour, dividing it equally into 50 portions. How many grams is each portion?",
-      options: ["40", "41", "42", "43", "44"],
+      options: ["50", "84", "42", "41", "43"],
       correct: 2,
       explanation: "50 goes into 210 four times (50 × 4 = 200), remainder 10. Bring down 0 to make 100. 50 goes into 100 twice (50 × 2 = 100). Answer: 42. ✓"
     },
@@ -4148,7 +4148,7 @@ longdivision: {
       id: 48,
       difficulty: 2,
       question: "A football club has 2232 programmes to distribute equally among 31 stewards. How many programmes does each steward get?",
-      options: ["70", "71", "73", "72", "74"],
+      options: ["36", "31", "73", "72", "71"],
       correct: 3,
       explanation: "31 goes into 223 seven times (31 × 7 = 217), remainder 6. Bring down 2 to make 62. 31 goes into 62 twice (31 × 2 = 62). Answer: 72. ✓"
     },
@@ -4156,7 +4156,7 @@ longdivision: {
       id: 49,
       difficulty: 2,
       question: "Jake packs 2,365 cards into sets of 43. How many complete sets can he make?",
-      options: ["53", "54", "57", "56", "55"],
+      options: ["54", "43", "56", "110", "55"],
       correct: 4,
       explanation: "Divide: 2,365 ÷ 43 = 55. Check: 43 × 55 = 2,365. ✓"
     },
@@ -4164,7 +4164,7 @@ longdivision: {
       id: 50,
       difficulty: 2,
       question: "A warehouse packs 2496 oranges into crates of 52. How many crates are filled?",
-      options: ["48", "47", "46", "49", "50"],
+      options: ["48", "49", "52", "96", "480"],
       correct: 0,
       explanation: "52 goes into 249 four times (52 × 4 = 208), remainder 41. Bring down 6 to make 416. 52 goes into 416 eight times (52 × 8 = 416). Answer: 48. ✓"
     },
@@ -4172,7 +4172,7 @@ longdivision: {
       id: 51,
       difficulty: 2,
       question: "A carpet fitter has 2640 centimetres of carpet to cut into 55 equal strips. How long is each strip in centimetres?",
-      options: ["46", "48", "47", "49", "50"],
+      options: ["96", "48", "47", "49", "55"],
       correct: 1,
       explanation: "55 goes into 264 four times (55 × 4 = 220), remainder 44. Bring down 0 to make 440. 55 goes into 440 eight times (55 × 8 = 440). Answer: 48. ✓"
     },
@@ -4180,7 +4180,7 @@ longdivision: {
       id: 52,
       difficulty: 2,
       question: "A school kitchen prepares 2772 fish fingers for 63 classes. How many fish fingers does each class get?",
-      options: ["42", "43", "44", "45", "46"],
+      options: ["88", "440", "44", "45", "63"],
       correct: 2,
       explanation: "63 goes into 277 four times (63 × 4 = 252), remainder 25. Bring down 2 to make 252. 63 goes into 252 four times (63 × 4 = 252). Answer: 44. ✓"
     },
@@ -4188,7 +4188,7 @@ longdivision: {
       id: 53,
       difficulty: 2,
       question: "Lucy divides £2898 equally among 69 winners. How much does each winner receive?",
-      options: ["£40", "£41", "£43", "£42", "£44"],
+      options: ["£21", "£43", "£69", "£42", "£41"],
       correct: 3,
       explanation: "Divide: £2898 ÷ 69 = £42. Check: 69 × £42 = £2898. Each winner receives £42. ✓"
     },
@@ -4196,7 +4196,7 @@ longdivision: {
       id: 54,
       difficulty: 2,
       question: "A museum receives 3024 visitors over 72 days. If the same number visit each day, how many visitors come per day?",
-      options: ["40", "41", "44", "43", "42"],
+      options: ["41", "43", "72", "84", "42"],
       correct: 4,
       explanation: "72 goes into 302 four times (72 × 4 = 288), remainder 14. Bring down 4 to make 144. 72 goes into 144 twice (72 × 2 = 144). Answer: 42. ✓"
     },
@@ -4204,7 +4204,7 @@ longdivision: {
       id: 55,
       difficulty: 2,
       question: "A charity shop sorts 3150 donated books onto shelves holding 75 books each. How many shelves are needed?",
-      options: ["42", "41", "40", "43", "44"],
+      options: ["42", "43", "75", "84", "420"],
       correct: 0,
       explanation: "75 goes into 315 four times (75 × 4 = 300), remainder 15. Bring down 0 to make 150. 75 goes into 150 twice (75 × 2 = 150). Answer: 42. ✓"
     },
@@ -4212,7 +4212,7 @@ longdivision: {
       id: 56,
       difficulty: 2,
       question: "A school collects 3276 crisp packets for a recycling scheme over 78 days. How many packets are collected each day?",
-      options: ["40", "42", "41", "43", "44"],
+      options: ["78", "42", "41", "21", "43"],
       correct: 1,
       explanation: "78 goes into 327 four times (78 × 4 = 312), remainder 15. Bring down 6 to make 156. 78 goes into 156 twice (78 × 2 = 156). Answer: 42. ✓"
     },
@@ -4220,7 +4220,7 @@ longdivision: {
       id: 57,
       difficulty: 3,
       question: "Ben packs 3384 marbles into bags of 94. How many bags can he fill?",
-      options: ["34", "35", "36", "37", "38"],
+      options: ["72", "94", "36", "35", "37"],
       correct: 2,
       explanation: "Divide: 3384 ÷ 94 = 36. Check: 94 × 36 = 3384. Ben can fill 36 bags. ✓"
     },
@@ -4228,7 +4228,7 @@ longdivision: {
       id: 58,
       difficulty: 1,
       question: "A lorry carries 3500 bricks, delivering them equally to 70 houses. How many bricks does each house receive?",
-      options: ["48", "49", "51", "50", "52"],
+      options: ["25", "5", "51", "50", "49"],
       correct: 3,
       explanation: "70 goes into 350 five times (70 × 5 = 350), remainder 0. Bring down 0 to make 00. Answer: 50. ✓"
     },
@@ -4236,7 +4236,7 @@ longdivision: {
       id: 59,
       difficulty: 3,
       question: "A farm harvests 3,612 potatoes and packs them into sacks of 86. How many sacks are filled?",
-      options: ["40", "41", "44", "43", "42"],
+      options: ["43", "84", "86", "420", "42"],
       correct: 4,
       explanation: "86 goes into 361 4 times (86 × 4 = 344), remainder 17. Bring down 2 to make 172. 86 goes into 172 2 times (86 × 2 = 172). Answer: 42. ✓"
     },
@@ -4244,7 +4244,7 @@ longdivision: {
       id: 60,
       difficulty: 3,
       question: "A printing press produces 3744 magazines and bundles them into stacks of 96. How many stacks are there?",
-      options: ["39", "38", "37", "40", "41"],
+      options: ["39", "38", "20", "40", "78"],
       correct: 0,
       explanation: "96 goes into 374 three times (96 × 3 = 288), remainder 86. Bring down 4 to make 864. 96 goes into 864 nine times (96 × 9 = 864). Answer: 39. ✓"
     },
@@ -4252,7 +4252,7 @@ longdivision: {
       id: 61,
       difficulty: 3,
       question: "Mia divides £3,913 equally among 91 charities. How much does each charity receive?",
-      options: ["£41", "£43", "£42", "£44", "£45"],
+      options: ["£91", "£43", "£42", "£44", "£86"],
       correct: 1,
       explanation: "Divide: £3,913 ÷ 91 = £43. Check: 91 × £43 = £3,913. ✓"
     },
@@ -4260,7 +4260,7 @@ longdivision: {
       id: 62,
       difficulty: 3,
       question: "A confectionery factory makes 3,916 sweets and packs them into tins of 89. How many tins are packed?",
-      options: ["42", "43", "44", "45", "46"],
+      options: ["89", "440", "44", "45", "88"],
       correct: 2,
       explanation: "89 goes into 391 4 times (89 × 4 = 356), remainder 35. Bring down 6 to make 356. 89 goes into 356 4 times (89 × 4 = 356). Answer: 44. ✓"
     },
@@ -4268,7 +4268,7 @@ longdivision: {
       id: 63,
       difficulty: 3,
       question: "A garden centre sells 4095 plant pots over 91 days. If they sell the same number each day, how many do they sell per day?",
-      options: ["43", "44", "46", "45", "47"],
+      options: ["23", "46", "90", "45", "44"],
       correct: 3,
       explanation: "91 goes into 409 four times (91 × 4 = 364), remainder 45. Bring down 5 to make 455. 91 goes into 455 five times (91 × 5 = 455). Answer: 45. ✓"
     },
@@ -4276,7 +4276,7 @@ longdivision: {
       id: 64,
       difficulty: 3,
       question: "A school distributes 4,185 reading books equally among 93 pupils. How many books does each pupil receive?",
-      options: ["43", "44", "47", "46", "45"],
+      options: ["44", "46", "90", "93", "45"],
       correct: 4,
       explanation: "93 goes into 418 4 times (93 × 4 = 372), remainder 46. Bring down 5 to make 465. 93 goes into 465 5 times (93 × 5 = 465). Answer: 45. ✓"
     },
@@ -4284,7 +4284,7 @@ longdivision: {
       id: 65,
       difficulty: 3,
       question: "Oliver packs 4,263 stamps into albums of 87 stamps each. How many albums does he fill?",
-      options: ["49", "48", "47", "50", "51"],
+      options: ["49", "50", "87", "98", "490"],
       correct: 0,
       explanation: "Divide: 4,263 ÷ 87 = 49. Check: 87 × 49 = 4,263. ✓"
     },
@@ -4292,7 +4292,7 @@ longdivision: {
       id: 66,
       difficulty: 3,
       question: "A sports shop orders 4,455 footballs and stores them in boxes of 99. How many boxes are used?",
-      options: ["43", "45", "44", "46", "47"],
+      options: ["90", "45", "44", "23", "46"],
       correct: 1,
       explanation: "99 goes into 445 4 times (99 × 4 = 396), remainder 49. Bring down 5 to make 495. 99 goes into 495 5 times (99 × 5 = 495). Answer: 45. ✓"
     },
@@ -4300,7 +4300,7 @@ longdivision: {
       id: 67,
       difficulty: 3,
       question: "A train travels 4560 miles over 95 journeys. If each journey is the same length, how many miles is each journey?",
-      options: ["46", "47", "48", "49", "50"],
+      options: ["95", "96", "48", "47", "49"],
       correct: 2,
       explanation: "95 goes into 456 four times (95 × 4 = 380), remainder 76. Bring down 0 to make 760. 95 goes into 760 eight times (95 × 8 = 760). Answer: 48. ✓"
     },
@@ -4308,7 +4308,7 @@ longdivision: {
       id: 68,
       difficulty: 3,
       question: "A furniture workshop uses 4,656 screws to build 97 identical tables. How many screws are used per table?",
-      options: ["46", "47", "49", "48", "50"],
+      options: ["96", "97", "480", "48", "49"],
       correct: 3,
       explanation: "97 goes into 465 4 times (97 × 4 = 388), remainder 77. Bring down 6 to make 776. 97 goes into 776 8 times (97 × 8 = 776). Answer: 48. ✓"
     },
@@ -4316,7 +4316,7 @@ longdivision: {
       id: 69,
       difficulty: 3,
       question: "A farmer gathers 4,784 eggs over 92 days. If the same number are gathered each day, how many eggs per day?",
-      options: ["50", "51", "54", "53", "52"],
+      options: ["51", "26", "53", "92", "52"],
       correct: 4,
       explanation: "92 goes into 478 5 times (92 × 5 = 460), remainder 18. Bring down 4 to make 184. 92 goes into 184 2 times (92 × 2 = 184). Answer: 52. ✓"
     },
@@ -4324,7 +4324,7 @@ longdivision: {
       id: 70,
       difficulty: 2,
       question: "Hannah divides £4900 equally among 98 people. How much does each person receive?",
-      options: ["£50", "£49", "£48", "£51", "£52"],
+      options: ["£50", "£49", "£25", "£5", "£51"],
       correct: 0,
       explanation: "Divide: £4900 ÷ 98 = £50. Check: 98 × £50 = £4900. Each person receives £50. ✓"
     },
@@ -4332,7 +4332,7 @@ longdivision: {
       id: 71,
       difficulty: 3,
       question: "A paper mill produces 5016 sheets of card and cuts them into 88 equal batches. How many sheets are in each batch?",
-      options: ["55", "57", "56", "58", "59"],
+      options: ["114", "57", "56", "58", "88"],
       correct: 1,
       explanation: "88 goes into 501 five times (88 × 5 = 440), remainder 61. Bring down 6 to make 616. 88 goes into 616 seven times (88 × 7 = 616). Answer: 57. ✓"
     },
@@ -4340,7 +4340,7 @@ longdivision: {
       id: 72,
       difficulty: 3,
       question: "A nursery grows 5130 seedlings and plants them in 90 equal rows. How many seedlings are in each row?",
-      options: ["55", "56", "57", "58", "59"],
+      options: ["114", "570", "57", "58", "90"],
       correct: 2,
       explanation: "90 goes into 513 five times (90 × 5 = 450), remainder 63. Bring down 0 to make 630. 90 goes into 630 seven times (90 × 7 = 630). Answer: 57. ✓"
     },
@@ -4348,7 +4348,7 @@ longdivision: {
       id: 73,
       difficulty: 3,
       question: "A bottling plant fills 5244 bottles of water and packs them in trays of 92. How many trays are needed?",
-      options: ["55", "56", "58", "57", "59"],
+      options: ["29", "58", "92", "57", "56"],
       correct: 3,
       explanation: "92 goes into 524 five times (92 × 5 = 460), remainder 64. Bring down 4 to make 644. 92 goes into 644 seven times (92 × 7 = 644). Answer: 57. ✓"
     },
@@ -4356,7 +4356,7 @@ longdivision: {
       id: 74,
       difficulty: 3,
       question: "Charlie packs 5,340 coins into rolls of 89. How many rolls can he make?",
-      options: ["58", "59", "62", "61", "60"],
+      options: ["59", "30", "6", "61", "60"],
       correct: 4,
       explanation: "Divide: 5,340 ÷ 89 = 60. Check: 89 × 60 = 5,340. ✓"
     },
@@ -4364,7 +4364,7 @@ longdivision: {
       id: 75,
       difficulty: 3,
       question: "A school kitchen uses 5472 paper plates over 96 school days. How many plates are used each day?",
-      options: ["57", "56", "55", "58", "59"],
+      options: ["57", "56", "58", "96", "114"],
       correct: 0,
       explanation: "96 goes into 547 five times (96 × 5 = 480), remainder 67. Bring down 2 to make 672. 96 goes into 672 seven times (96 × 7 = 672). Answer: 57. ✓"
     },
@@ -4372,7 +4372,7 @@ longdivision: {
       id: 76,
       difficulty: 3,
       question: "An art teacher orders 5,580 sheets of coloured paper for 93 pupils. How many sheets does each pupil get?",
-      options: ["58", "60", "59", "61", "62"],
+      options: ["61", "60", "59", "30", "6"],
       correct: 1,
       explanation: "93 goes into 558 6 times (93 × 6 = 558), remainder 0. Bring down 0 to make 0. 93 goes into 0 0 times (93 × 0 = 0). Answer: 60. ✓"
     },
@@ -4380,7 +4380,7 @@ longdivision: {
       id: 77,
       difficulty: 3,
       question: "A charity event raises £5700 and distributes it equally among 95 families. How many pounds does each family receive?",
-      options: ["£58", "£59", "£60", "£61", "£62"],
+      options: ["£6", "£61", "£60", "£59", "£30"],
       correct: 2,
       explanation: "95 goes into 570 six times (95 × 6 = 570), remainder 0. Bring down 0 to make 00. Answer: £60. ✓"
     },
@@ -4388,7 +4388,7 @@ longdivision: {
       id: 78,
       difficulty: 3,
       question: "Ella divides £5,820 equally among 97 families. How much does each family receive?",
-      options: ["£58", "£59", "£61", "£60", "£62"],
+      options: ["£30", "£6", "£61", "£60", "£59"],
       correct: 3,
       explanation: "Divide: £5,820 ÷ 97 = £60. Check: 97 × £60 = £5,820. ✓"
     },
@@ -4396,7 +4396,7 @@ longdivision: {
       id: 79,
       difficulty: 3,
       question: "A shoe factory produces 5,880 pairs of trainers and ships them in boxes of 98. How many boxes are shipped?",
-      options: ["58", "59", "62", "61", "60"],
+      options: ["59", "30", "6", "61", "60"],
       correct: 4,
       explanation: "98 goes into 588 6 times (98 × 6 = 588), remainder 0. Bring down 0 to make 0. 98 goes into 0 0 times (98 × 0 = 0). Answer: 60. ✓"
     },
@@ -4404,7 +4404,7 @@ longdivision: {
       id: 80,
       difficulty: 3,
       question: "A school canteen serves 6,039 meals over 99 days. How many meals are served each day?",
-      options: ["61", "60", "59", "62", "63"],
+      options: ["61", "62", "99", "122", "610"],
       correct: 0,
       explanation: "99 goes into 603 6 times (99 × 6 = 594), remainder 9. Bring down 9 to make 99. 99 goes into 99 once (99 × 1 = 99). Answer: 61. ✓"
     },
@@ -4412,7 +4412,7 @@ longdivision: {
       id: 81,
       difficulty: 3,
       question: "A builder lays 6,132 bricks over 84 hours. How many bricks does he lay per hour?",
-      options: ["71", "73", "72", "74", "75"],
+      options: ["84", "73", "72", "37", "74"],
       correct: 1,
       explanation: "84 goes into 613 7 times (84 × 7 = 588), remainder 25. Bring down 2 to make 252. 84 goes into 252 3 times (84 × 3 = 252). Answer: 73. ✓"
     },
@@ -4420,7 +4420,7 @@ longdivision: {
       id: 82,
       difficulty: 3,
       question: "Max packs 6,210 pencils into boxes of 90. How many boxes does he need?",
-      options: ["67", "68", "69", "70", "71"],
+      options: ["90", "138", "69", "68", "70"],
       correct: 2,
       explanation: "Divide: 6,210 ÷ 90 = 69. Check: 90 × 69 = 6,210. ✓"
     },
@@ -4428,7 +4428,7 @@ longdivision: {
       id: 83,
       difficulty: 3,
       question: "A warehouse stores 6384 jars of jam on shelves holding 84 jars each. How many shelves are used?",
-      options: ["74", "75", "77", "76", "78"],
+      options: ["84", "152", "760", "76", "77"],
       correct: 3,
       explanation: "84 goes into 638 seven times (84 × 7 = 588), remainder 50. Bring down 4 to make 504. 84 goes into 504 six times (84 × 6 = 504). Answer: 76. ✓"
     },
@@ -4436,7 +4436,7 @@ longdivision: {
       id: 84,
       difficulty: 3,
       question: "A chocolate factory wraps 6,438 bars and packs them into cartons of 87. How many cartons are packed?",
-      options: ["72", "73", "76", "75", "74"],
+      options: ["73", "37", "75", "87", "74"],
       correct: 4,
       explanation: "87 goes into 643 7 times (87 × 7 = 609), remainder 34. Bring down 8 to make 348. 87 goes into 348 4 times (87 × 4 = 348). Answer: 74. ✓"
     },
@@ -4444,7 +4444,7 @@ longdivision: {
       id: 85,
       difficulty: 3,
       question: "A council delivers 6,624 recycling bags to 92 streets equally. How many bags does each street receive?",
-      options: ["72", "71", "70", "73", "74"],
+      options: ["72", "71", "73", "92", "144"],
       correct: 0,
       explanation: "92 goes into 662 7 times (92 × 7 = 644), remainder 18. Bring down 4 to make 184. 92 goes into 184 2 times (92 × 2 = 184). Answer: 72. ✓"
     },
@@ -4452,7 +4452,7 @@ longdivision: {
       id: 86,
       difficulty: 3,
       question: "Ava divides £6720 equally among 96 students. How much does each student receive?",
-      options: ["£68", "£70", "£69", "£71", "£72"],
+      options: ["£71", "£70", "£69", "£35", "£7"],
       correct: 1,
       explanation: "Divide: £6720 ÷ 96 = £70. Check: 96 × £70 = £6720. Each student receives £70. ✓"
     },
@@ -4460,7 +4460,7 @@ longdivision: {
       id: 87,
       difficulty: 3,
       question: "A music shop sells 6,825 guitar picks over 91 weeks. How many picks are sold each week?",
-      options: ["73", "74", "75", "76", "77"],
+      options: ["150", "750", "75", "76", "91"],
       correct: 2,
       explanation: "91 goes into 682 7 times (91 × 7 = 637), remainder 45. Bring down 5 to make 455. 91 goes into 455 5 times (91 × 5 = 455). Answer: 75. ✓"
     },
@@ -4468,7 +4468,7 @@ longdivision: {
       id: 88,
       difficulty: 3,
       question: "A bakery bakes 6,942 bread rolls over 89 days. How many rolls are baked each day?",
-      options: ["76", "77", "79", "78", "80"],
+      options: ["39", "79", "89", "78", "77"],
       correct: 3,
       explanation: "89 goes into 694 7 times (89 × 7 = 623), remainder 71. Bring down 2 to make 712. 89 goes into 712 8 times (89 × 8 = 712). Answer: 78. ✓"
     },
@@ -4476,7 +4476,7 @@ longdivision: {
       id: 89,
       difficulty: 3,
       question: "A florist arranges 7056 roses into bunches of 98. How many bunches does she make?",
-      options: ["70", "71", "74", "73", "72"],
+      options: ["71", "73", "98", "144", "72"],
       correct: 4,
       explanation: "98 goes into 705 seven times (98 × 7 = 686), remainder 19. Bring down 6 to make 196. 98 goes into 196 twice (98 × 2 = 196). Answer: 72. ✓"
     },
@@ -4484,7 +4484,7 @@ longdivision: {
       id: 90,
       difficulty: 3,
       question: "Noah packs 7,144 buttons into boxes of 94. How many boxes can he fill?",
-      options: ["76", "75", "74", "77", "78"],
+      options: ["76", "77", "94", "152", "760"],
       correct: 0,
       explanation: "Divide: 7,144 ÷ 94 = 76. Check: 94 × 76 = 7,144. ✓"
     },
@@ -4492,7 +4492,7 @@ longdivision: {
       id: 91,
       difficulty: 3,
       question: "A bus company covers 7280 miles over 91 routes. If each route is the same distance, how many miles is each route?",
-      options: ["78", "80", "79", "81", "82"],
+      options: ["81", "80", "79", "40", "8"],
       correct: 1,
       explanation: "91 goes into 728 eight times (91 × 8 = 728), remainder 0. Bring down 0 to make 00. Answer: 80. ✓"
     },
@@ -4500,7 +4500,7 @@ longdivision: {
       id: 92,
       difficulty: 3,
       question: "A toy factory packs 7392 action figures into display boxes of 96. How many display boxes are filled?",
-      options: ["75", "76", "77", "78", "79"],
+      options: ["78", "96", "77", "76", "39"],
       correct: 2,
       explanation: "96 goes into 739 seven times (96 × 7 = 672), remainder 67. Bring down 2 to make 672. 96 goes into 672 seven times (96 × 7 = 672). Answer: 77. ✓"
     },
@@ -4508,7 +4508,7 @@ longdivision: {
       id: 93,
       difficulty: 3,
       question: "A farm produces 7,480 litres of milk over 88 days. How many litres are produced each day?",
-      options: ["83", "84", "86", "85", "87"],
+      options: ["86", "88", "170", "85", "84"],
       correct: 3,
       explanation: "88 goes into 748 8 times (88 × 8 = 704), remainder 44. Bring down 0 to make 440. 88 goes into 440 5 times (88 × 5 = 440). Answer: 85. ✓"
     },
@@ -4516,7 +4516,7 @@ longdivision: {
       id: 94,
       difficulty: 3,
       question: "Sophie divides £7,544 equally among 92 charities. How much does each charity receive?",
-      options: ["£80", "£81", "£84", "£83", "£82"],
+      options: ["£83", "£92", "£164", "£820", "£82"],
       correct: 4,
       explanation: "Divide: £7,544 ÷ 92 = £82. Check: 92 × £82 = £7,544. ✓"
     },
@@ -4524,7 +4524,7 @@ longdivision: {
       id: 95,
       difficulty: 3,
       question: "A tile shop has 7,680 mosaic tiles to arrange into sets of 96. How many sets can they make?",
-      options: ["80", "79", "78", "81", "82"],
+      options: ["80", "79", "40", "8", "81"],
       correct: 0,
       explanation: "96 goes into 768 8 times (96 × 8 = 768), remainder 0. Bring down 0 to make 0. 96 goes into 0 0 times (96 × 0 = 0). Answer: 80. ✓"
     },
@@ -4532,7 +4532,7 @@ longdivision: {
       id: 96,
       difficulty: 3,
       question: "A postal worker delivers 7840 letters over 98 days. How many letters does he deliver each day?",
-      options: ["78", "80", "79", "81", "82"],
+      options: ["81", "80", "79", "40", "8"],
       correct: 1,
       explanation: "98 goes into 784 eight times (98 × 8 = 784), remainder 0. Bring down 0 to make 00. Answer: 80. ✓"
     },
@@ -4540,7 +4540,7 @@ longdivision: {
       id: 97,
       difficulty: 3,
       question: "A school uses 7,920 pieces of chalk over 88 weeks. How many pieces are used each week?",
-      options: ["88", "89", "90", "91", "92"],
+      options: ["45", "9", "90", "89", "88"],
       correct: 2,
       explanation: "88 goes into 792 9 times (88 × 9 = 792), remainder 0. Bring down 0 to make 0. 88 goes into 0 0 times (88 × 0 = 0). Answer: 90. ✓"
     },
@@ -4548,7 +4548,7 @@ longdivision: {
       id: 98,
       difficulty: 3,
       question: "Lily packs 8064 stickers into albums of 96 per album. How many albums does she fill?",
-      options: ["82", "83", "85", "84", "86"],
+      options: ["42", "85", "96", "84", "83"],
       correct: 3,
       explanation: "Divide: 8064 ÷ 96 = 84. Check: 96 × 84 = 8064. Lily fills 84 albums. ✓"
     },
@@ -4556,7 +4556,7 @@ longdivision: {
       id: 99,
       difficulty: 3,
       question: "A pet shop orders 8,178 dog treats and divides them equally into 94 bags. How many treats go in each bag?",
-      options: ["85", "86", "89", "88", "87"],
+      options: ["86", "88", "94", "174", "87"],
       correct: 4,
       explanation: "94 goes into 817 8 times (94 × 8 = 752), remainder 65. Bring down 8 to make 658. 94 goes into 658 7 times (94 × 7 = 658). Answer: 87. ✓"
     },
@@ -4564,7 +4564,7 @@ longdivision: {
       id: 100,
       difficulty: 3,
       question: "A painter uses 8280 millilitres of paint over 90 days. How many millilitres does he use each day?",
-      options: ["92", "91", "90", "93", "94"],
+      options: ["92", "91", "90", "46", "93"],
       correct: 0,
       explanation: "90 goes into 828 nine times (90 × 9 = 810), remainder 18. Bring down 0 to make 180. 90 goes into 180 twice (90 × 2 = 180). Answer: 92. ✓"
     },
@@ -4572,7 +4572,7 @@ longdivision: {
       id: 101,
       difficulty: 3,
       question: "A stationery supplier distributes 8,366 notebooks equally to 89 shops. How many notebooks does each shop receive?",
-      options: ["92", "94", "93", "95", "96"],
+      options: ["95", "94", "93", "89", "47"],
       correct: 1,
       explanation: "89 goes into 836 9 times (89 × 9 = 801), remainder 35. Bring down 6 to make 356. 89 goes into 356 4 times (89 × 4 = 356). Answer: 94. ✓"
     },
@@ -4580,7 +4580,7 @@ longdivision: {
       id: 102,
       difficulty: 3,
       question: "Ben divides £8,439 equally among 97 organizations. How much does each organization receive?",
-      options: ["£85", "£86", "£87", "£88", "£89"],
+      options: ["£174", "£870", "£87", "£88", "£97"],
       correct: 2,
       explanation: "Divide: £8,439 ÷ 97 = £87. Check: 97 × £87 = £8,439. ✓"
     },
@@ -4588,7 +4588,7 @@ longdivision: {
       id: 103,
       difficulty: 3,
       question: "A sports club buys 8,556 shuttlecocks and shares them equally among 93 players. How many does each player get?",
-      options: ["90", "91", "93", "92", "94"],
+      options: ["46", "93", "184", "92", "91"],
       correct: 3,
       explanation: "93 goes into 855 9 times (93 × 9 = 837), remainder 18. Bring down 6 to make 186. 93 goes into 186 2 times (93 × 2 = 186). Answer: 92. ✓"
     },
@@ -4596,7 +4596,7 @@ longdivision: {
       id: 104,
       difficulty: 3,
       question: "A sweet factory produces 8,740 lemon drops and fills jars of 95. How many jars are filled?",
-      options: ["90", "91", "94", "93", "92"],
+      options: ["91", "93", "95", "184", "92"],
       correct: 4,
       explanation: "95 goes into 874 9 times (95 × 9 = 855), remainder 19. Bring down 0 to make 190. 95 goes into 190 2 times (95 × 2 = 190). Answer: 92. ✓"
     },
@@ -4604,7 +4604,7 @@ longdivision: {
       id: 105,
       difficulty: 3,
       question: "A school photocopier prints 8832 worksheets over 96 days. How many worksheets are printed each day?",
-      options: ["92", "91", "90", "93", "94"],
+      options: ["92", "93", "96", "184", "920"],
       correct: 0,
       explanation: "96 goes into 883 nine times (96 × 9 = 864), remainder 19. Bring down 2 to make 192. 96 goes into 192 twice (96 × 2 = 192). Answer: 92. ✓"
     },
@@ -4612,7 +4612,7 @@ longdivision: {
       id: 106,
       difficulty: 3,
       question: "A window cleaner earns £8,900 over 89 jobs. If he charges the same for each job, how much does each job cost?",
-      options: ["£98", "£100", "£99", "£101", "£102"],
+      options: ["£10", "£100", "£99", "£89", "£50"],
       correct: 1,
       explanation: "89 goes into 890 10 times (89 × 10 = 890), remainder 0. Bring down 0 to make 0. 89 goes into 0 0 times (89 × 0 = 0). Answer: £100. ✓"
     },
@@ -4620,7 +4620,7 @@ longdivision: {
       id: 107,
       difficulty: 3,
       question: "Hannah packs 9,024 beads into boxes of 94. How many boxes can she fill?",
-      options: ["94", "95", "96", "97", "98"],
+      options: ["48", "97", "96", "95", "94"],
       correct: 2,
       explanation: "Divide: 9,024 ÷ 94 = 96. Check: 94 × 96 = 9,024. ✓"
     },
@@ -4628,7 +4628,7 @@ longdivision: {
       id: 108,
       difficulty: 3,
       question: "A juice company fills 9,114 cartons of orange juice and packs them into crates of 98. How many crates are needed?",
-      options: ["91", "92", "94", "93", "95"],
+      options: ["47", "94", "98", "93", "92"],
       correct: 3,
       explanation: "98 goes into 911 9 times (98 × 9 = 882), remainder 29. Bring down 4 to make 294. 98 goes into 294 3 times (98 × 3 = 294). Answer: 93. ✓"
     },
@@ -4636,7 +4636,7 @@ longdivision: {
       id: 109,
       difficulty: 3,
       question: "A biscuit factory bakes 9,216 digestives and packs them in tins of 96. How many tins are packed?",
-      options: ["94", "95", "98", "97", "96"],
+      options: ["95", "97", "192", "960", "96"],
       correct: 4,
       explanation: "96 goes into 921 9 times (96 × 9 = 864), remainder 57. Bring down 6 to make 576. 96 goes into 576 6 times (96 × 6 = 576). Answer: 96. ✓"
     },
@@ -4644,7 +4644,7 @@ longdivision: {
       id: 110,
       difficulty: 3,
       question: "A courier delivers 9,292 parcels over 92 days. How many parcels does he deliver each day?",
-      options: ["101", "100", "99", "102", "103"],
+      options: ["101", "100", "92", "51", "11"],
       correct: 0,
       explanation: "92 goes into 929 10 times (92 × 10 = 920), remainder 9. Bring down 2 to make 92. 92 goes into 92 once (92 × 1 = 92). Answer: 101. ✓"
     },
@@ -4652,7 +4652,7 @@ longdivision: {
       id: 111,
       difficulty: 3,
       question: "Charlie divides £9,405 equally among 95 winners. How much does each winner receive?",
-      options: ["£97", "£99", "£98", "£100", "£101"],
+      options: ["£100", "£99", "£98", "£95", "£50"],
       correct: 1,
       explanation: "Divide: £9,405 ÷ 95 = £99. Check: 95 × £99 = £9,405. ✓"
     },
@@ -4660,7 +4660,7 @@ longdivision: {
       id: 112,
       difficulty: 3,
       question: "A school fundraiser raises £9,579 and splits it equally among 93 projects. How many pounds does each project receive?",
-      options: ["£101", "£102", "£103", "£104", "£105"],
+      options: ["£52", "£13", "£103", "£102", "£93"],
       correct: 2,
       explanation: "93 goes into 957 10 times (93 × 10 = 930), remainder 27. Bring down 9 to make 279. 93 goes into 279 3 times (93 × 3 = 279). Answer: £103. ✓"
     },
@@ -4668,7 +4668,7 @@ longdivision: {
       id: 113,
       difficulty: 3,
       question: "A vegetable farm packs 9696 carrots into bags of 96. How many bags are filled?",
-      options: ["99", "100", "102", "101", "103"],
+      options: ["96", "51", "11", "101", "100"],
       correct: 3,
       explanation: "96 goes into 969 ten times (96 × 10 = 960), remainder 9. Bring down 6 to make 96. 96 goes into 96 once (96 × 1 = 96). Answer: 101. ✓"
     },
@@ -4676,7 +4676,7 @@ longdivision: {
       id: 114,
       difficulty: 3,
       question: "A theme park sells 9800 tickets over 98 days. If the same number are sold each day, how many tickets are sold per day?",
-      options: ["98", "99", "102", "101", "100"],
+      options: ["99", "98", "50", "10", "100"],
       correct: 4,
       explanation: "98 goes into 980 ten times (98 × 10 = 980), remainder 0. Bring down 0 to make 00. Answer: 100. ✓"
     },
@@ -4684,7 +4684,7 @@ longdivision: {
       id: 115,
       difficulty: 3,
       question: "A sticker company prints 9,856 stickers and puts them into packets of 88. How many packets are made?",
-      options: ["112", "111", "110", "113", "114"],
+      options: ["112", "111", "88", "113", "224"],
       correct: 0,
       explanation: "88 goes into 985 11 times (88 × 11 = 968), remainder 17. Bring down 6 to make 176. 88 goes into 176 2 times (88 × 2 = 176). Answer: 112. ✓"
     },
@@ -4692,7 +4692,7 @@ longdivision: {
       id: 116,
       difficulty: 3,
       question: "Max packs 10,010 cards into boxes of 91. How many complete boxes can he fill?",
-      options: ["108", "110", "109", "111", "112"],
+      options: ["11", "110", "109", "91", "55"],
       correct: 1,
       explanation: "Divide: 10,010 ÷ 91 = 110. Check: 91 × 110 = 10,010. ✓"
     },
@@ -4700,7 +4700,7 @@ longdivision: {
       id: 117,
       difficulty: 3,
       question: "A bread factory bakes 10,080 loaves over 96 days. How many loaves are baked each day?",
-      options: ["103", "104", "105", "106", "107"],
+      options: ["53", "15", "105", "104", "96"],
       correct: 2,
       explanation: "96 goes into 1008 10 times (96 × 10 = 960), remainder 48. Bring down 0 to make 480. 96 goes into 480 5 times (96 × 5 = 480). Answer: 105. ✓"
     },
@@ -4708,7 +4708,7 @@ longdivision: {
       id: 118,
       difficulty: 3,
       question: "A pencil factory produces 10,152 pencils and bundles them into packs of 94. How many packs are made?",
-      options: ["106", "107", "109", "108", "110"],
+      options: ["94", "54", "18", "108", "107"],
       correct: 3,
       explanation: "94 goes into 1015 10 times (94 × 10 = 940), remainder 75. Bring down 2 to make 752. 94 goes into 752 8 times (94 × 8 = 752). Answer: 108. ✓"
     },
@@ -4716,7 +4716,7 @@ longdivision: {
       id: 119,
       difficulty: 3,
       question: "A bookshop receives 10,282 paperbacks and arranges them equally on 97 shelves. How many books go on each shelf?",
-      options: ["104", "105", "108", "107", "106"],
+      options: ["105", "97", "53", "16", "106"],
       correct: 4,
       explanation: "97 goes into 1028 10 times (97 × 10 = 970), remainder 58. Bring down 2 to make 582. 97 goes into 582 6 times (97 × 6 = 582). Answer: 106. ✓"
     },
@@ -4724,7 +4724,7 @@ longdivision: {
       id: 120,
       difficulty: 3,
       question: "Ella divides £10,396 equally among 92 people. How much does each person receive?",
-      options: ["£113", "£112", "£111", "£114", "£115"],
+      options: ["£113", "£112", "£114", "£226", "£1130"],
       correct: 0,
       explanation: "Divide: £10,396 ÷ 92 = £113. Check: 92 × £113 = £10,396. ✓"
     },
@@ -4732,7 +4732,7 @@ longdivision: {
       id: 121,
       difficulty: 3,
       question: "A plumber cuts 10,486 centimetres of pipe into 98 equal lengths. How many centimetres long is each piece?",
-      options: ["105", "107", "106", "108", "109"],
+      options: ["17", "107", "106", "98", "54"],
       correct: 1,
       explanation: "98 goes into 1048 10 times (98 × 10 = 980), remainder 68. Bring down 6 to make 686. 98 goes into 686 7 times (98 × 7 = 686). Answer: 107. ✓"
     },
@@ -4740,7 +4740,7 @@ longdivision: {
       id: 122,
       difficulty: 3,
       question: "A craft shop sorts 10656 buttons into jars of 96. How many jars are needed?",
-      options: ["109", "110", "111", "112", "113"],
+      options: ["56", "112", "111", "110", "96"],
       correct: 2,
       explanation: "96 goes into 1065 eleven times (96 × 11 = 1056), remainder 9. Bring down 6 to make 96. 96 goes into 96 once (96 × 1 = 96). Answer: 111. ✓"
     },
@@ -4748,7 +4748,7 @@ longdivision: {
       id: 123,
       difficulty: 3,
       question: "A honey farm fills 10,769 jars of honey and distributes them equally to 89 shops. How many jars does each shop receive?",
-      options: ["119", "120", "122", "121", "123"],
+      options: ["89", "122", "242", "121", "120"],
       correct: 3,
       explanation: "89 goes into 1076 12 times (89 × 12 = 1068), remainder 8. Bring down 9 to make 89. 89 goes into 89 once (89 × 1 = 89). Answer: 121. ✓"
     },
@@ -4756,7 +4756,7 @@ longdivision: {
       id: 124,
       difficulty: 3,
       question: "Noah packs 10,788 marbles into bags of 93. How many bags can he fill?",
-      options: ["114", "115", "118", "117", "116"],
+      options: ["115", "117", "232", "1160", "116"],
       correct: 4,
       explanation: "Divide: 10,788 ÷ 93 = 116. Check: 93 × 116 = 10,788. ✓"
     },
@@ -4764,7 +4764,7 @@ longdivision: {
       id: 125,
       difficulty: 3,
       question: "An ice cream van sells 10,920 ice lollies over 91 days. How many lollies are sold each day?",
-      options: ["120", "119", "118", "121", "122"],
+      options: ["120", "119", "91", "60", "12"],
       correct: 0,
       explanation: "91 goes into 1092 12 times (91 × 12 = 1092), remainder 0. Bring down 0 to make 0. 91 goes into 0 0 times (91 × 0 = 0). Answer: 120. ✓"
     },
@@ -4772,7 +4772,7 @@ longdivision: {
       id: 126,
       difficulty: 3,
       question: "A school buys 11,040 crayons to share equally among 96 pupils. How many crayons does each pupil receive?",
-      options: ["113", "115", "114", "116", "117"],
+      options: ["116", "115", "114", "96", "58"],
       correct: 1,
       explanation: "96 goes into 1104 11 times (96 × 11 = 1056), remainder 48. Bring down 0 to make 480. 96 goes into 480 5 times (96 × 5 = 480). Answer: 115. ✓"
     },
@@ -4780,7 +4780,7 @@ longdivision: {
       id: 127,
       difficulty: 3,
       question: "Sophie divides £11,186 equally among 94 teams. How much does each team receive?",
-      options: ["£117", "£118", "£119", "£120", "£121"],
+      options: ["£120", "£238", "£119", "£118", "£94"],
       correct: 2,
       explanation: "Divide: £11,186 ÷ 94 = £119. Check: 94 × £119 = £11,186. ✓"
     },
@@ -4788,7 +4788,7 @@ longdivision: {
       id: 128,
       difficulty: 3,
       question: "A cheese factory makes 11,286 slices and packs them into packets of 99. How many packets are filled?",
-      options: ["112", "113", "115", "114", "116"],
+      options: ["115", "228", "1140", "114", "113"],
       correct: 3,
       explanation: "99 goes into 1128 11 times (99 × 11 = 1089), remainder 39. Bring down 6 to make 396. 99 goes into 396 4 times (99 × 4 = 396). Answer: 114. ✓"
     },
@@ -4796,7 +4796,7 @@ longdivision: {
       id: 129,
       difficulty: 3,
       question: "A marathon raises £11,349 in sponsorship, split equally among 97 runners. How many pounds does each runner raise?",
-      options: ["£115", "£116", "£119", "£118", "£117"],
+      options: ["£116", "£97", "£59", "£118", "£117"],
       correct: 4,
       explanation: "97 goes into 1134 11 times (97 × 11 = 1067), remainder 67. Bring down 9 to make 679. 97 goes into 679 7 times (97 × 7 = 679). Answer: £117. ✓"
     },
@@ -4804,7 +4804,7 @@ longdivision: {
       id: 130,
       difficulty: 3,
       question: "A warehouse ships 11520 light bulbs in boxes of 96. How many boxes are shipped?",
-      options: ["120", "119", "118", "121", "122"],
+      options: ["120", "119", "96", "60", "12"],
       correct: 0,
       explanation: "96 goes into 1152 twelve times (96 × 12 = 1152), remainder 0. Bring down 0 to make 00. Answer: 120. ✓"
     },
@@ -4812,7 +4812,7 @@ longdivision: {
       id: 131,
       difficulty: 1,
       question: "A teacher has 96 gold stars to give out equally to 8 pupils. How many stars does each pupil get?",
-      options: ["10", "12", "11", "13", "14"],
+      options: ["120", "12", "13", "24", "88"],
       correct: 1,
       explanation: "8 goes into 96 exactly 12 times. Check: 8 × 12 = 96. ✓"
     },
@@ -4820,7 +4820,7 @@ longdivision: {
       id: 132,
       difficulty: 1,
       question: "A teacher shares 55 stickers equally among 5 children. How many stickers does each child get?",
-      options: ["9", "10", "11", "12", "13"],
+      options: ["50", "110", "11", "12", "22"],
       correct: 2,
       explanation: "Divide: 55 ÷ 5 = 11. Check: 5 × 11 = 55. Each child gets 11 stickers. ✓"
     },
@@ -4828,7 +4828,7 @@ longdivision: {
       id: 133,
       difficulty: 1,
       question: "A shopkeeper arranges 150 tins of beans into rows of 10. How many rows does she make?",
-      options: ["12", "13", "14", "15", "16"],
+      options: ["30", "140", "150", "15", "16"],
       correct: 3,
       explanation: "To divide by 10, remove the zero from the end. 150 ÷ 10 = 15. Check: 10 × 15 = 150. ✓"
     },
@@ -4836,7 +4836,7 @@ longdivision: {
       id: 134,
       difficulty: 1,
       question: "A farmer packs 108 eggs into boxes of 12. How many boxes does he fill?",
-      options: ["7", "8", "11", "10", "9"],
+      options: ["10", "12", "18", "90", "9"],
       correct: 4,
       explanation: "Divide: 108 ÷ 12 = 9. Check: 12 × 9 = 108. The farmer fills 9 boxes. ✓"
     },
@@ -4844,7 +4844,7 @@ longdivision: {
       id: 135,
       difficulty: 1,
       question: "A football coach has 126 cones to set out equally on 7 pitches. How many cones go on each pitch?",
-      options: ["18", "17", "16", "19", "20"],
+      options: ["18", "17", "9", "19", "36"],
       correct: 0,
       explanation: "7 goes into 12 once (7 × 1 = 7), remainder 5. Bring down 6 to make 56. 7 goes into 56 eight times (7 × 8 = 56). Answer: 18. Check: 7 × 18 = 126. ✓"
     },
@@ -4852,7 +4852,7 @@ longdivision: {
       id: 136,
       difficulty: 1,
       question: "A librarian places 135 books equally onto 9 shelves. How many books go on each shelf?",
-      options: ["13", "15", "14", "16", "17"],
+      options: ["126", "15", "14", "16", "30"],
       correct: 1,
       explanation: "Divide: 135 ÷ 9 = 15. Check: 9 × 15 = 135. Each shelf gets 15 books. ✓"
     },
@@ -4860,7 +4860,7 @@ longdivision: {
       id: 137,
       difficulty: 1,
       question: "A dinner lady serves 168 fish fingers equally onto 8 trays. How many fish fingers go on each tray?",
-      options: ["19", "20", "21", "22", "23"],
+      options: ["8", "22", "21", "20", "11"],
       correct: 2,
       explanation: "8 goes into 16 twice (8 × 2 = 16), remainder 0. Bring down 8. 8 goes into 8 once (8 × 1 = 8). Answer: 21. Check: 8 × 21 = 168. ✓"
     },
@@ -4868,7 +4868,7 @@ longdivision: {
       id: 138,
       difficulty: 1,
       question: "James has 110 marbles. He shares them equally among 5 friends. How many marbles does each friend get?",
-      options: ["20", "21", "23", "22", "24"],
+      options: ["44", "105", "220", "22", "23"],
       correct: 3,
       explanation: "Divide: 110 ÷ 5 = 22. Check: 5 × 22 = 110. Each friend gets 22 marbles. ✓"
     },
@@ -4876,7 +4876,7 @@ longdivision: {
       id: 139,
       difficulty: 1,
       question: "A camp leader has 192 marshmallows to divide equally among 6 campfire groups. How many marshmallows does each group get?",
-      options: ["30", "31", "34", "33", "32"],
+      options: ["31", "16", "33", "64", "32"],
       correct: 4,
       explanation: "6 goes into 19 three times (6 × 3 = 18), remainder 1. Bring down 2 to make 12. 6 goes into 12 twice (6 × 2 = 12). Answer: 32. Check: 6 × 32 = 192. ✓"
     },
@@ -4884,7 +4884,7 @@ longdivision: {
       id: 140,
       difficulty: 1,
       question: "A cricket club has 176 balls to split equally into 11 nets. How many balls go in each net?",
-      options: ["16", "15", "14", "17", "18"],
+      options: ["16", "15", "17", "32", "160"],
       correct: 0,
       explanation: "11 goes into 17 once (11 × 1 = 11), remainder 6. Bring down 6 to make 66. 11 goes into 66 six times (11 × 6 = 66). Answer: 16. Check: 11 × 16 = 176. ✓"
     },
@@ -4892,7 +4892,7 @@ longdivision: {
       id: 141,
       difficulty: 1,
       question: "A baker packs 180 biscuits into tins of 12. How many tins does she need?",
-      options: ["13", "15", "14", "16", "17"],
+      options: ["16", "15", "14", "12", "8"],
       correct: 1,
       explanation: "Divide: 180 ÷ 12 = 15. Check: 12 × 15 = 180. She needs 15 tins. ✓"
     },
@@ -4900,7 +4900,7 @@ longdivision: {
       id: 142,
       difficulty: 1,
       question: "A teacher has 117 reward stickers to give out equally to 9 children. How many stickers does each child get?",
-      options: ["11", "12", "13", "14", "15"],
+      options: ["108", "130", "13", "14", "26"],
       correct: 2,
       explanation: "9 goes into 11 once (9 × 1 = 9), remainder 2. Bring down 7 to make 27. 9 goes into 27 three times (9 × 3 = 27). Answer: 13. Check: 9 × 13 = 117. ✓"
     },
@@ -4908,7 +4908,7 @@ longdivision: {
       id: 143,
       difficulty: 1,
       question: "There are 152 crayons to be shared equally among 8 tables. How many crayons does each table get?",
-      options: ["17", "18", "20", "19", "21"],
+      options: ["10", "20", "38", "19", "18"],
       correct: 3,
       explanation: "Divide: 152 ÷ 8 = 19. 8 goes into 15 once (8 × 1 = 8), remainder 7. Bring down 2 to make 72. 8 goes into 72 nine times (8 × 9 = 72). Answer: 19. Check: 8 × 19 = 152. Each table gets 19 crayons. ✓"
     },
@@ -4916,7 +4916,7 @@ longdivision: {
       id: 144,
       difficulty: 1,
       question: "A baker cuts 170 slices of cake and arranges them on plates of 10. How many plates does she fill?",
-      options: ["15", "16", "19", "18", "17"],
+      options: ["16", "18", "34", "160", "17"],
       correct: 4,
       explanation: "To divide by 10, remove the zero from the end. 170 ÷ 10 = 17. Check: 10 × 17 = 170. ✓"
     },
@@ -4924,7 +4924,7 @@ longdivision: {
       id: 145,
       difficulty: 1,
       question: "A gardener plants 198 bulbs in rows of 11. How many rows does she make?",
-      options: ["18", "17", "16", "19", "20"],
+      options: ["18", "17", "11", "9", "19"],
       correct: 0,
       explanation: "Divide: 198 ÷ 11 = 18. 11 goes into 19 once (11 × 1 = 11), remainder 8. Bring down 8 to make 88. 11 goes into 88 eight times (11 × 8 = 88). Answer: 18. Check: 11 × 18 = 198. She makes 18 rows. ✓"
     },
@@ -4932,7 +4932,7 @@ longdivision: {
       id: 146,
       difficulty: 1,
       question: "A pet shop has 84 goldfish to put equally into 6 tanks. How many goldfish go in each tank?",
-      options: ["12", "14", "13", "15", "16"],
+      options: ["140", "14", "15", "28", "78"],
       correct: 1,
       explanation: "6 goes into 8 once (6 × 1 = 6), remainder 2. Bring down 4 to make 24. 6 goes into 24 four times (6 × 4 = 24). Answer: 14. Check: 6 × 14 = 84. ✓"
     },
@@ -4940,7 +4940,7 @@ longdivision: {
       id: 147,
       difficulty: 1,
       question: "Sarah has 144 centimetres of ribbon. She cuts it into 9 equal pieces. How long is each piece?",
-      options: ["14 cm", "15 cm", "16 cm", "17 cm", "18 cm"],
+      options: ["17 cm", "32 cm", "16 cm", "15 cm", "9 cm"],
       correct: 2,
       explanation: "Divide: 144 ÷ 9 = 16. 9 goes into 14 once (9 × 1 = 9), remainder 5. Bring down 4 to make 54. 9 goes into 54 six times (9 × 6 = 54). Answer: 16 cm. Check: 9 × 16 = 144. Each piece is 16 cm long. ✓"
     },
@@ -4948,7 +4948,7 @@ longdivision: {
       id: 148,
       difficulty: 1,
       question: "A postman delivers 91 letters equally to 7 streets. How many letters does each street receive?",
-      options: ["11", "12", "14", "13", "15"],
+      options: ["14", "26", "84", "13", "12"],
       correct: 3,
       explanation: "7 goes into 9 once (7 × 1 = 7), remainder 2. Bring down 1 to make 21. 7 goes into 21 three times (7 × 3 = 21). Answer: 13. Check: 7 × 13 = 91. ✓"
     },
@@ -4956,7 +4956,7 @@ longdivision: {
       id: 149,
       difficulty: 1,
       question: "A greengrocer packs 132 oranges into bags of 12. How many bags does he fill?",
-      options: ["9", "10", "13", "12", "11"],
+      options: ["12", "22", "110", "120", "11"],
       correct: 4,
       explanation: "Divide: 132 ÷ 12 = 11. 12 goes into 13 once (12 × 1 = 12), remainder 1. Bring down 2 to make 12. 12 goes into 12 once (12 × 1 = 12). Answer: 11. Check: 12 × 11 = 132. He fills 11 bags. ✓"
     },
@@ -4964,7 +4964,7 @@ longdivision: {
       id: 150,
       difficulty: 1,
       question: "A gardener picks 175 daffodils and ties them into bunches of 5. How many bunches does she make?",
-      options: ["35", "34", "33", "36", "37"],
+      options: ["35", "34", "18", "5", "36"],
       correct: 0,
       explanation: "5 goes into 17 three times (5 × 3 = 15), remainder 2. Bring down 5 to make 25. 5 goes into 25 five times (5 × 5 = 25). Answer: 35. Check: 5 × 35 = 175. ✓"
     },
@@ -4975,7 +4975,7 @@ longdivision: {
       id: 151,
       difficulty: 1,
       question: "Mia has 36 sweets to share equally among 4 friends. How many sweets does each friend get?",
-      options: ["7", "9", "8", "10", "11"],
+      options: ["18", "9", "8", "5", "10"],
       correct: 1,
       explanation: "36 ÷ 4 = 9. Sharing equally is the same as dividing. Check: 4 × 9 = 36. ✓"
     },
@@ -4983,7 +4983,7 @@ longdivision: {
       id: 152,
       difficulty: 1,
       question: "A teacher has 45 stickers to share equally among 5 tables. How many stickers does each table get?",
-      options: ["7", "8", "9", "10", "11"],
+      options: ["18", "40", "9", "8", "10"],
       correct: 2,
       explanation: "45 ÷ 5 = 9. Sharing equally means dividing. Check: 5 × 9 = 45. ✓"
     },
@@ -4991,7 +4991,7 @@ longdivision: {
       id: 153,
       difficulty: 1,
       question: "Oliver has 72 football cards to share equally among 8 friends. How many cards does each friend get?",
-      options: ["7", "8", "10", "9", "11"],
+      options: ["18", "64", "90", "9", "10"],
       correct: 3,
       explanation: "72 ÷ 8 = 9. Sharing equally is dividing. Check: 8 × 9 = 72. ✓"
     },
@@ -4999,7 +4999,7 @@ longdivision: {
       id: 154,
       difficulty: 1,
       question: "A dinner lady shares 54 fish fingers equally among 6 plates. How many fish fingers go on each plate?",
-      options: ["7", "8", "11", "10", "9"],
+      options: ["8", "6", "5", "10", "9"],
       correct: 4,
       explanation: "54 ÷ 6 = 9. Sharing equally means dividing the total by the number of groups. Check: 6 × 9 = 54. ✓"
     },
@@ -5007,7 +5007,7 @@ longdivision: {
       id: 155,
       difficulty: 1,
       question: "A charity has 168 selection boxes to share equally among 7 children's homes. How many boxes does each home receive?",
-      options: ["24", "23", "22", "25", "26"],
+      options: ["24", "23", "12", "25", "48"],
       correct: 0,
       explanation: "168 ÷ 7 = 24. 7 goes into 16 twice (7 × 2 = 14), remainder 2. Bring down 8 to make 28. 7 goes into 28 four times. Answer: 24. Check: 7 × 24 = 168. ✓"
     },
@@ -5015,7 +5015,7 @@ longdivision: {
       id: 156,
       difficulty: 1,
       question: "A scout leader shares 252 badges equally among 9 scout groups. How many badges does each group get?",
-      options: ["26", "28", "27", "29", "30"],
+      options: ["243", "28", "27", "29", "56"],
       correct: 1,
       explanation: "252 ÷ 9 = 28. 9 goes into 25 twice (9 × 2 = 18), remainder 7. Bring down 2 to make 72. 9 goes into 72 eight times. Answer: 28. Check: 9 × 28 = 252. ✓"
     },
@@ -5023,7 +5023,7 @@ longdivision: {
       id: 157,
       difficulty: 1,
       question: "A farmer shares 336 eggs equally among 8 shops. How many eggs does each shop receive?",
-      options: ["40", "41", "42", "43", "44"],
+      options: ["8", "43", "42", "41", "21"],
       correct: 2,
       explanation: "336 ÷ 8 = 42. 8 goes into 33 four times (8 × 4 = 32), remainder 1. Bring down 6 to make 16. 8 goes into 16 twice. Answer: 42. Check: 8 × 42 = 336. ✓"
     },
@@ -5085,7 +5085,7 @@ longdivision: {
       id: 164,
       difficulty: 1,
       question: "A minibus holds 9 people. There are 50 people going on a trip. How many minibuses are needed so everyone can go?",
-      options: ["4", "5", "8", "7", "6"],
+      options: ["7", "9", "12", "41", "6"],
       correct: 4,
       explanation: "50 ÷ 9 = 5 remainder 5. You need an extra minibus for the remaining 5 people. So 6 minibuses are needed. ✓"
     },
@@ -5093,7 +5093,7 @@ longdivision: {
       id: 165,
       difficulty: 1,
       question: "Eggs are sold in boxes of 6. A baker needs 40 eggs. How many boxes must she buy?",
-      options: ["7", "6", "5", "8", "9"],
+      options: ["7", "6", "4", "8", "14"],
       correct: 0,
       explanation: "40 ÷ 6 = 6 remainder 4. She needs 4 more eggs, so she must buy one more box. That means 7 boxes in total. ✓"
     },
@@ -5101,7 +5101,7 @@ longdivision: {
       id: 166,
       difficulty: 1,
       question: "A gardener has 50 tulip bulbs. She plants 8 bulbs in each row. How many complete rows can she plant?",
-      options: ["4", "6", "5", "7", "8"],
+      options: ["12", "6", "5", "7", "8"],
       correct: 1,
       explanation: "50 ÷ 8 = 6 remainder 2. She can only plant 6 complete rows. The leftover 2 bulbs are not enough for another full row. ✓"
     },
@@ -5109,7 +5109,7 @@ longdivision: {
       id: 167,
       difficulty: 1,
       question: "A teacher has 47 pencils to share equally among 5 children. How many pencils does each child get?",
-      options: ["8", "10", "9", "11", "12"],
+      options: ["2", "10", "9", "8", "5"],
       correct: 2,
       explanation: "47 ÷ 5 = 9 remainder 2. Each child gets 9 pencils. The 2 leftover pencils cannot be shared equally. ✓"
     },
@@ -5117,7 +5117,7 @@ longdivision: {
       id: 168,
       difficulty: 1,
       question: "Cupcakes are packed in boxes of 4. A baker makes 30 cupcakes. How many full boxes can she fill?",
-      options: ["5", "6", "8", "7", "9"],
+      options: ["14", "26", "70", "7", "8"],
       correct: 3,
       explanation: "30 ÷ 4 = 7 remainder 2. She can fill 7 full boxes. The 2 leftover cupcakes are not enough for another full box. ✓"
     },
@@ -5125,7 +5125,7 @@ longdivision: {
       id: 169,
       difficulty: 2,
       question: "A school needs to transport 155 children to a sports event. Each coach holds 48 passengers. How many coaches must the school book?",
-      options: ["2", "3", "6", "5", "4"],
+      options: ["3", "2", "5", "8", "4"],
       correct: 4,
       explanation: "155 ÷ 48 = 3 remainder 11. Three coaches hold 144 children, leaving 11 without a seat. A fourth coach is needed. So 4 coaches must be booked. ✓"
     },
@@ -5133,7 +5133,7 @@ longdivision: {
       id: 170,
       difficulty: 2,
       question: "A rope is 500 cm long. Tom cuts it into pieces exactly 12 cm long. How many complete pieces can he cut?",
-      options: ["41", "40", "42", "43", "44"],
+      options: ["41", "40", "21", "12", "8"],
       correct: 0,
       explanation: "500 ÷ 12 = 41 remainder 8. He can cut 41 complete pieces. The remaining 8 cm is too short for another full piece. Check: 12 × 41 = 492, and 500 − 492 = 8. ✓"
     },
@@ -5141,7 +5141,7 @@ longdivision: {
       id: 171,
       difficulty: 2,
       question: "A farmer has 200 strawberries. He puts 15 in each punnet. How many full punnets can he fill?",
-      options: ["12", "13", "14", "15", "16"],
+      options: ["26", "13", "12", "14", "15"],
       correct: 1,
       explanation: "200 ÷ 15 = 13 remainder 5. He can fill 13 full punnets. The remaining 5 strawberries are not enough for another full punnet. Check: 15 × 13 = 195, remainder 5. ✓"
     },
@@ -5149,15 +5149,15 @@ longdivision: {
       id: 172,
       difficulty: 1,
       question: "Chairs are arranged in rows of 12 for a school assembly. There are 250 children. How many full rows are there?",
-      options: ["19", "20", "21", "22", "23"],
-      correct: 1,
+      options: ["10", "2", "20", "19", "12"],
+      correct: 2,
       explanation: "250 ÷ 12 = 20 remainder 10. There are 20 full rows. The remaining 10 children sit in an incomplete 21st row, but only 20 rows are full. ✓"
     },
     {
       id: 173,
       difficulty: 2,
       question: "A builder needs 350 bricks. Bricks are sold in packs of 24. How many packs must he buy?",
-      options: ["13", "14", "16", "15", "17"],
+      options: ["24", "30", "150", "15", "16"],
       correct: 3,
       explanation: "350 ÷ 24 = 14 remainder 14. Fourteen packs give only 336 bricks, which is not enough. He must buy 15 packs (15 × 24 = 360). ✓"
     },
@@ -5165,7 +5165,7 @@ longdivision: {
       id: 174,
       difficulty: 2,
       question: "A ferry holds 45 cars. There are 280 cars waiting to cross. How many ferry trips are needed to carry all the cars?",
-      options: ["5", "6", "9", "8", "7"],
+      options: ["6", "4", "8", "10", "7"],
       correct: 4,
       explanation: "280 ÷ 45 = 6 remainder 10. Six trips carry 270 cars, leaving 10 behind. A seventh trip is needed. So 7 trips in total. ✓"
     },
@@ -5173,7 +5173,7 @@ longdivision: {
       id: 175,
       difficulty: 2,
       question: "A school orders 500 exercise books. They come in packs of 36. How many packs must the school order?",
-      options: ["14", "13", "12", "15", "16"],
+      options: ["14", "13", "15", "28", "32"],
       correct: 0,
       explanation: "500 ÷ 36 = 13 remainder 32. Thirteen packs give only 468 books, not enough. The school must order 14 packs (14 × 36 = 504). ✓"
     },
@@ -5181,7 +5181,7 @@ longdivision: {
       id: 176,
       difficulty: 3,
       question: "A florist has 500 roses. She makes bouquets of 18 roses each and sells each bouquet for £12. How many bouquets can she sell?",
-      options: ["25", "27", "26", "28", "29"],
+      options: ["28", "27", "26", "18", "14"],
       correct: 1,
       explanation: "500 ÷ 18 = 27 remainder 14. She can make 27 complete bouquets. The 14 remaining roses are not enough for another bouquet. Check: 18 × 27 = 486, remainder 14. ✓"
     },
@@ -5291,7 +5291,7 @@ longdivision: {
       id: 189,
       difficulty: 1,
       question: "A shopkeeper arranges 120 tins into rows of 10. How many rows does he make?",
-      options: ["10", "11", "14", "13", "12"],
+      options: ["11", "10", "6", "13", "12"],
       correct: 4,
       explanation: "120 ÷ 10 = 12. To divide by 10, remove the zero. Check: 10 × 12 = 120. ✓"
     },
@@ -5299,7 +5299,7 @@ longdivision: {
       id: 190,
       difficulty: 1,
       question: "A school has 264 pencils to share equally among 12 classes. How many pencils does each class get?",
-      options: ["22", "21", "20", "23", "24"],
+      options: ["22", "23", "44", "220", "252"],
       correct: 0,
       explanation: "12 goes into 26 twice (12 × 2 = 24), remainder 2. Bring down 4 to make 24. 12 goes into 24 twice (12 × 2 = 24). Answer: 22. Check: 12 × 22 = 264. ✓"
     },
@@ -5307,7 +5307,7 @@ longdivision: {
       id: 191,
       difficulty: 1,
       question: "A baker puts 11 biscuits in each packet. She has 341 biscuits. How many packets can she fill?",
-      options: ["29", "31", "30", "32", "33"],
+      options: ["62", "31", "30", "16", "32"],
       correct: 1,
       explanation: "11 goes into 34 three times (11 × 3 = 33), remainder 1. Bring down 1 to make 11. 11 goes into 11 once. Answer: 31. Check: 11 × 31 = 341. ✓"
     },
@@ -5315,7 +5315,7 @@ longdivision: {
       id: 192,
       difficulty: 1,
       question: "A gardener plants 360 seeds in rows of 12. How many rows does she plant?",
-      options: ["28", "29", "30", "31", "32"],
+      options: ["12", "3", "30", "29", "15"],
       correct: 2,
       explanation: "12 goes into 36 three times (12 × 3 = 36), remainder 0. Bring down 0. Answer: 30. Check: 12 × 30 = 360. ✓"
     },
@@ -5323,7 +5323,7 @@ longdivision: {
       id: 193,
       difficulty: 1,
       question: "A warehouse stores 1,452 bottles of water in crates of 12. How many crates are needed?",
-      options: ["119", "120", "122", "121", "123"],
+      options: ["122", "242", "1210", "121", "120"],
       correct: 3,
       explanation: "12 goes into 14 once (12), remainder 2. Bring down 5 to make 25. 12 goes into 25 twice (24), remainder 1. Bring down 2 to make 12. 12 goes into 12 once. Answer: 121. Check: 12 × 121 = 1,452. ✓"
     },
@@ -5334,7 +5334,7 @@ longdivision: {
       id: 194,
       difficulty: 1,
       question: "A school fete raises £450. The money is shared equally among 5 charities. How much does each charity receive?",
-      options: ["£80", "£85", "£100", "£95", "£90"],
+      options: ["£89", "£45", "£9", "£5", "£90"],
       correct: 4,
       explanation: "£450 ÷ 5 = £90. Check: 5 × £90 = £450. Each charity receives £90. ✓"
     },
@@ -5342,7 +5342,7 @@ longdivision: {
       id: 195,
       difficulty: 1,
       question: "A roll of ribbon is 240 cm long. Sophie cuts it into equal pieces of 8 cm. How many pieces does she get?",
-      options: ["30", "29", "28", "31", "32"],
+      options: ["30", "29", "15", "8", "3"],
       correct: 0,
       explanation: "240 ÷ 8 = 30. Check: 8 × 30 = 240. She gets 30 pieces. ✓"
     },
@@ -5350,7 +5350,7 @@ longdivision: {
       id: 196,
       difficulty: 1,
       question: "A car travels 525 miles using 25 litres of petrol. How many miles does it travel per litre?",
-      options: ["19", "21", "20", "22", "23"],
+      options: ["210", "21", "22", "25", "42"],
       correct: 1,
       explanation: "525 ÷ 25 = 21. 25 goes into 52 twice (50), remainder 2. Bring down 5 to make 25. 25 goes into 25 once. Answer: 21 miles per litre. Check: 25 × 21 = 525. ✓"
     },
@@ -5358,7 +5358,7 @@ longdivision: {
       id: 197,
       difficulty: 2,
       question: "A swimming pool holds 5,400 litres of water. A pump fills it at 75 litres per minute. How many minutes does it take to fill the pool?",
-      options: ["68", "70", "72", "74", "76"],
+      options: ["73", "75", "72", "71", "36"],
       correct: 2,
       explanation: "5,400 ÷ 75 = 72. 75 goes into 540 seven times (525), remainder 15. Bring down 0 to make 150. 75 goes into 150 twice. Answer: 72 minutes. Check: 75 × 72 = 5,400. ✓"
     },
@@ -5366,7 +5366,7 @@ longdivision: {
       id: 198,
       difficulty: 2,
       question: "A school trip costs £1,260 in total. There are 45 children going. How much does each child need to pay?",
-      options: ["£26", "£27", "£29", "£28", "£30"],
+      options: ["£29", "£45", "£56", "£28", "£27"],
       correct: 3,
       explanation: "£1,260 ÷ 45 = £28. 45 goes into 126 twice (90), remainder 36. Bring down 0 to make 360. 45 goes into 360 eight times. Answer: £28. Check: 45 × £28 = £1,260. ✓"
     },
@@ -5393,7 +5393,7 @@ longdivision: {
       id: 201,
       difficulty: 1,
       question: "A mum shares 28 grapes equally among 4 children. How many grapes does each child get?",
-      options: ["5", "7", "6", "8", "9"],
+      options: ["70", "7", "8", "14", "24"],
       correct: 1,
       explanation: "28 ÷ 4 = 7. Sharing equally is the same as dividing. Check: 4 × 7 = 28. ✓"
     },
@@ -5401,7 +5401,7 @@ longdivision: {
       id: 202,
       difficulty: 1,
       question: "There are 63 counters shared equally among 7 groups. How many counters does each group get?",
-      options: ["7", "8", "9", "10", "11"],
+      options: ["5", "10", "9", "8", "7"],
       correct: 2,
       explanation: "63 ÷ 7 = 9. Sharing equally means dividing. Check: 7 × 9 = 63. ✓"
     },
@@ -5409,7 +5409,7 @@ longdivision: {
       id: 203,
       difficulty: 1,
       question: "A teacher shares 216 coloured pencils equally among 6 art tables. How many pencils does each table get?",
-      options: ["34", "35", "37", "36", "38"],
+      options: ["18", "6", "37", "36", "35"],
       correct: 3,
       explanation: "216 ÷ 6 = 36. 6 goes into 21 three times (18), remainder 3. Bring down 6 to make 36. 6 goes into 36 six times. Answer: 36. Check: 6 × 36 = 216. ✓"
     },
@@ -5417,7 +5417,7 @@ longdivision: {
       id: 204,
       difficulty: 1,
       question: "A camp leader shares 294 marshmallows equally among 7 campfire groups. How many marshmallows does each group get?",
-      options: ["40", "41", "44", "43", "42"],
+      options: ["41", "21", "43", "84", "42"],
       correct: 4,
       explanation: "294 ÷ 7 = 42. 7 goes into 29 four times (28), remainder 1. Bring down 4 to make 14. 7 goes into 14 twice. Answer: 42. Check: 7 × 42 = 294. ✓"
     },
@@ -5425,7 +5425,7 @@ longdivision: {
       id: 205,
       difficulty: 1,
       question: "A baker shares 378 iced buns equally among 9 shop counters. How many buns go on each counter?",
-      options: ["42", "41", "40", "43", "44"],
+      options: ["42", "41", "43", "84", "369"],
       correct: 0,
       explanation: "378 ÷ 9 = 42. 9 goes into 37 four times (36), remainder 1. Bring down 8 to make 18. 9 goes into 18 twice. Answer: 42. Check: 9 × 42 = 378. ✓"
     },
@@ -5650,7 +5650,7 @@ longdivision: {
       id: 232,
       difficulty: 1,
       question: "A lift holds 8 people. There are 35 people waiting. How many trips must the lift make to carry everyone?",
-      options: ["3", "4", "5", "6", "7"],
+      options: ["10", "27", "5", "6", "8"],
       correct: 2,
       explanation: "35 ÷ 8 = 4 remainder 3. Four trips carry 32 people, leaving 3 behind. A fifth trip is needed. So 5 trips. ✓"
     },
@@ -5658,7 +5658,7 @@ longdivision: {
       id: 233,
       difficulty: 1,
       question: "A packet holds 6 muffins. Sam bakes 26 muffins. How many full packets can he fill?",
-      options: ["3", "6", "5", "4", "7"],
+      options: ["2", "5", "6", "4", "3"],
       correct: 3,
       explanation: "26 ÷ 6 = 4 remainder 2. He can fill 4 full packets. The 2 leftover muffins are not enough for another full packet. ✓"
     },
@@ -5666,7 +5666,7 @@ longdivision: {
       id: 234,
       difficulty: 1,
       question: "Tables seat 5 people each. There are 23 guests at a party. How many tables are needed so everyone has a seat?",
-      options: ["3", "4", "7", "6", "5"],
+      options: ["4", "6", "10", "18", "5"],
       correct: 4,
       explanation: "23 ÷ 5 = 4 remainder 3. Four tables seat 20, leaving 3 without seats. A fifth table is needed. So 5 tables. ✓"
     },
@@ -5674,7 +5674,7 @@ longdivision: {
       id: 235,
       difficulty: 1,
       question: "A jar holds 7 pencils. Tom has 45 pencils. How many full jars can he fill?",
-      options: ["6", "5", "4", "7", "8"],
+      options: ["6", "7", "12", "38", "60"],
       correct: 0,
       explanation: "45 ÷ 7 = 6 remainder 3. He can fill 6 full jars. The 3 leftover pencils do not fill another jar. ✓"
     },
@@ -5682,7 +5682,7 @@ longdivision: {
       id: 236,
       difficulty: 1,
       question: "Benches hold 4 children each. There are 19 children in the class. How many benches are needed?",
-      options: ["3", "5", "4", "6", "7"],
+      options: ["10", "5", "4", "3", "6"],
       correct: 1,
       explanation: "19 ÷ 4 = 4 remainder 3. Four benches seat 16 children, leaving 3 without seats. A fifth bench is needed. So 5 benches. ✓"
     },
@@ -5690,7 +5690,7 @@ longdivision: {
       id: 237,
       difficulty: 1,
       question: "A baker cuts a 29 cm ribbon into 8 cm pieces. How many complete pieces can she cut?",
-      options: ["2", "4", "3", "5", "6"],
+      options: ["5", "6", "3", "2", "4"],
       correct: 2,
       explanation: "29 ÷ 8 = 3 remainder 5. She can cut 3 complete pieces. The remaining 5 cm is too short for another 8 cm piece. ✓"
     },
@@ -5698,7 +5698,7 @@ longdivision: {
       id: 238,
       difficulty: 1,
       question: "A taxi holds 4 passengers. There are 27 people who need a taxi. How many taxis must be booked?",
-      options: ["5", "6", "8", "7", "9"],
+      options: ["4", "3", "8", "7", "6"],
       correct: 3,
       explanation: "27 ÷ 4 = 6 remainder 3. Six taxis carry 24, leaving 3 people. A seventh taxi is needed. So 7 taxis. ✓"
     },
@@ -5706,7 +5706,7 @@ longdivision: {
       id: 239,
       difficulty: 2,
       question: "Eggs come in boxes of 6. A recipe needs 32 eggs. How many boxes must be bought?",
-      options: ["4", "5", "8", "7", "6"],
+      options: ["5", "3", "2", "7", "6"],
       correct: 4,
       explanation: "32 ÷ 6 = 5 remainder 2. Five boxes give only 30 eggs, not enough. A sixth box is needed (6 × 6 = 36). So 6 boxes. ✓"
     },
@@ -5714,7 +5714,7 @@ longdivision: {
       id: 240,
       difficulty: 2,
       question: "A rope is 200 cm long. It is cut into pieces of 15 cm. How many complete pieces can be cut?",
-      options: ["13", "12", "11", "14", "15"],
+      options: ["13", "12", "7", "5", "14"],
       correct: 0,
       explanation: "200 ÷ 15 = 13 remainder 5. He can cut 13 complete pieces. The remaining 5 cm is too short for another 15 cm piece. Check: 15 × 13 = 195, remainder 5. ✓"
     },
@@ -5722,7 +5722,7 @@ longdivision: {
       id: 241,
       difficulty: 2,
       question: "A school trip needs to transport 83 children. Each minibus holds 14 children. How many minibuses must be booked?",
-      options: ["4", "6", "5", "7", "8"],
+      options: ["14", "6", "7", "12", "13"],
       correct: 1,
       explanation: "83 ÷ 14 = 5 remainder 13. Five minibuses carry 70 children, leaving 13. A sixth minibus is needed. So 6 minibuses. ✓"
     },
@@ -5730,7 +5730,7 @@ longdivision: {
       id: 242,
       difficulty: 2,
       question: "A gardener has 100 plants. Each row holds 7 plants. How many complete rows can she plant?",
-      options: ["12", "13", "14", "15", "16"],
+      options: ["15", "28", "14", "13", "7"],
       correct: 2,
       explanation: "100 ÷ 7 = 14 remainder 2. She can plant 14 complete rows. The 2 leftover plants do not make a full row. Check: 7 × 14 = 98, remainder 2. ✓"
     },
@@ -5738,7 +5738,7 @@ longdivision: {
       id: 243,
       difficulty: 2,
       question: "A baker needs 250 grams of butter. Butter comes in 90g packets. How many packets must she buy?",
-      options: ["1", "2", "4", "3", "5"],
+      options: ["4", "6", "30", "3", "2"],
       correct: 3,
       explanation: "250 ÷ 90 = 2 remainder 70. Two packets give 180g, not enough. A third packet is needed (3 × 90 = 270g). So 3 packets. ✓"
     },
@@ -5754,7 +5754,7 @@ longdivision: {
       id: 245,
       difficulty: 2,
       question: "An egg box holds 12 eggs. A farmer has 500 eggs. How many full boxes can he fill?",
-      options: ["41", "40", "39", "42", "43"],
+      options: ["41", "40", "21", "12", "8"],
       correct: 0,
       explanation: "500 ÷ 12 = 41 remainder 8. He can fill 41 full boxes. The remaining 8 eggs do not fill another box. Check: 12 × 41 = 492, remainder 8. ✓"
     },
@@ -5762,7 +5762,7 @@ longdivision: {
       id: 246,
       difficulty: 2,
       question: "A ferry carries 35 cars per trip. There are 150 cars waiting. How many ferry trips are needed?",
-      options: ["3", "5", "4", "6", "7"],
+      options: ["50", "5", "6", "10", "35"],
       correct: 1,
       explanation: "150 ÷ 35 = 4 remainder 10. Four trips carry 140 cars, leaving 10. A fifth trip is needed. So 5 trips. ✓"
     },
@@ -5770,7 +5770,7 @@ longdivision: {
       id: 247,
       difficulty: 2,
       question: "Children sit in groups of 6 for lunch. There are 100 children. How many full tables are there?",
-      options: ["14", "15", "16", "17", "18"],
+      options: ["6", "4", "16", "15", "8"],
       correct: 2,
       explanation: "100 ÷ 6 = 16 remainder 4. There are 16 full tables. The remaining 4 children sit at a partially filled table. ✓"
     },
@@ -5794,7 +5794,7 @@ longdivision: {
       id: 250,
       difficulty: 2,
       question: "A school orders pencils in packs of 24. They need at least 500 pencils. How many packs must they order?",
-      options: ["21", "20", "19", "22", "23"],
+      options: ["21", "20", "11", "22", "24"],
       correct: 0,
       explanation: "500 ÷ 24 = 20 remainder 20. Twenty packs give only 480, not enough. Twenty-one packs give 504, which is enough. So 21 packs. ✓"
     },
@@ -5802,7 +5802,7 @@ longdivision: {
       id: 251,
       difficulty: 3,
       question: "A lorry can carry 750 kg. Boxes weigh 32 kg each. How many boxes can the lorry carry?",
-      options: ["21", "23", "22", "24", "25"],
+      options: ["24", "23", "22", "14", "12"],
       correct: 1,
       explanation: "750 ÷ 32 = 23 remainder 14. Twenty-three boxes weigh 736 kg (within the limit). Twenty-four boxes would weigh 768 kg (over the limit). So 23 boxes. ✓"
     },
@@ -5912,7 +5912,7 @@ longdivision: {
       id: 264,
       difficulty: 1,
       question: "A PE teacher has 84 tennis balls to share equally among 7 groups. How many balls does each group get?",
-      options: ["10", "11", "14", "13", "12"],
+      options: ["11", "13", "24", "77", "12"],
       correct: 4,
       explanation: "Using the bus stop method: 7 goes into 8 once (7), remainder 1. Bring down 4 to make 14. 7 goes into 14 twice (14). Answer: 12. Check: 7 × 12 = 84. ✓"
     },
@@ -5920,7 +5920,7 @@ longdivision: {
       id: 265,
       difficulty: 2,
       question: "A factory packs 396 biscuits into packets of 11. How many packets are made?",
-      options: ["36", "35", "34", "37", "38"],
+      options: ["36", "35", "18", "11", "37"],
       correct: 0,
       explanation: "Using the bus stop method: 11 goes into 39 three times (33), remainder 6. Bring down 6 to make 66. 11 goes into 66 six times (66). Answer: 36. Check: 11 × 36 = 396. ✓"
     }
@@ -5935,8 +5935,8 @@ ratio: {
       difficulty: 1,
       visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "30 children" } },
       question: "In a class of 30 children, the ratio of boys to girls is 3:2. How many boys are there?",
-      options: ["12", "15", "24", "20", "18"],
-      correct: 4,
+      options: ["30", "18", "15", "12", "6"],
+      correct: 1,
       explanation: "The ratio 3:2 means 5 equal parts total (3+2=5). Divide 30 by 5 = 6 per part. Boys = 3 parts = 3 × 6 = 18 boys. ✓"
     },
     {
@@ -5944,8 +5944,8 @@ ratio: {
       difficulty: 1,
       visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "80 marbles" } },
       question: "Tom and Jerry share 80 marbles in the ratio 3:5. How many marbles does Jerry get?",
-      options: ["50", "35", "40", "45", "30"],
-      correct: 0,
+      options: ["10", "80", "50", "40", "30"],
+      correct: 2,
       explanation: "Total parts: 3 + 5 = 8 parts. Each part = 80 ÷ 8 = 10 marbles. Jerry gets 5 parts = 5 × 10 = 50 marbles. ✓"
     },
     {
@@ -5960,16 +5960,16 @@ ratio: {
       id: 4,
       difficulty: 1,
       question: "The ratio of cats to dogs at a vet is 5:3. If there are 15 cats, how many dogs are there?",
-      options: ["6", "12", "9", "15", "18"],
-      correct: 2,
+      options: ["2", "11", "15", "25", "9"],
+      correct: 4,
       explanation: "If 5 parts = 15 cats, then 1 part = 3. Dogs = 3 parts = 3 × 3 = 9 dogs. ✓"
     },
     {
       id: 5,
       difficulty: 1,
       question: "Red paint and blue paint are mixed in the ratio 2:3 to make purple. If 6 litres of red paint are used, how much blue paint is needed?",
-      options: ["4 litres", "6 litres", "8 litres", "9 litres", "12 litres"],
-      correct: 3,
+      options: ["9 litres", "6 litres", "4 litres", "1 litres", "11 litres"],
+      correct: 0,
       explanation: "If 2 parts = 6 litres, then 1 part = 3 litres. Blue = 3 parts = 3 × 3 = 9 litres. ✓"
     },
     {
@@ -5985,16 +5985,16 @@ ratio: {
       difficulty: 2,
       visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "96 sweets" } },
       question: "Andrew and Matthew share 96 sweets in the ratio 5:3. How many more sweets does Andrew get than Matthew?",
-      options: ["24", "18", "12", "30", "36"],
-      correct: 0,
+      options: ["60", "96", "24", "26", "36"],
+      correct: 2,
       explanation: "Total parts: 5 + 3 = 8. Each part = 96 ÷ 8 = 12. Andrew gets 5 × 12 = 60, Matthew gets 3 × 12 = 36. Difference: 60 - 36 = 24. ✓"
     },
     {
       id: 8,
       difficulty: 2,
       question: "A recipe for 6 biscuits uses 150g of butter. How much butter is needed for 20 biscuits?",
-      options: ["400g", "500g", "450g", "550g", "600g"],
-      correct: 1,
+      options: ["150g", "20g", "1g", "500g", "170g"],
+      correct: 3,
       explanation: "For 1 biscuit: 150 ÷ 6 = 25g. For 20 biscuits: 25 × 20 = 500g. ✓"
     },
     {
@@ -6017,24 +6017,24 @@ ratio: {
       id: 11,
       difficulty: 1,
       question: "The ratio of boys to girls in a swimming class is 2:5. If there are 35 children, how many are girls?",
-      options: ["10", "15", "20", "30", "25"],
-      correct: 4,
+      options: ["35", "25", "18", "10", "5"],
+      correct: 1,
       explanation: "Total parts: 2 + 5 = 7. Each part = 35 ÷ 7 = 5. Girls = 5 parts = 5 × 5 = 25 girls. ✓"
     },
     {
       id: 12,
       difficulty: 1,
       question: "A map scale is 1cm : 5km. A distance on the map is 8cm. What is the actual distance?",
-      options: ["40 km", "35 km", "45 km", "50 km", "55 km"],
-      correct: 0,
+      options: ["5 km", "2 km", "40 km", "13 km", "8 km"],
+      correct: 2,
       explanation: "If 1 cm = 5 km, then 8 cm = 8 × 5 = 40 km. ✓"
     },
     {
       id: 13,
       difficulty: 2,
       question: "A recipe for 10 shortbread biscuits uses 150g flour. Oliver wants to make 25 biscuits. How much flour does he need?",
-      options: ["325g", "375g", "350g", "400g", "425g"],
-      correct: 1,
+      options: ["150g", "25g", "2g", "375g", "175g"],
+      correct: 3,
       explanation: "25 is 2.5 times 10 (25 ÷ 10 = 2.5). Flour needed = 150 × 2.5 = 375g. ✓"
     },
     {
@@ -6049,16 +6049,16 @@ ratio: {
       id: 15,
       difficulty: 1,
       question: "A photocopier makes 12 copies in 3 minutes. How many copies can it make in 15 minutes?",
-      options: ["48", "52", "56", "60", "64"],
-      correct: 3,
+      options: ["60", "27", "15", "12", "4"],
+      correct: 0,
       explanation: "Copies per minute = 12 ÷ 3 = 4. In 15 minutes: 4 × 15 = 60 copies. ✓"
     },
     {
       id: 16,
       difficulty: 1,
       question: "The ratio of red balls to blue balls in a bag is 7:3. If there are 21 red balls, how many blue balls are there?",
-      options: ["6", "18", "12", "15", "9"],
-      correct: 4,
+      options: ["49", "9", "2", "11", "21"],
+      correct: 1,
       explanation: "If 7 parts = 21 red balls, then 1 part = 3. Blue balls = 3 parts = 3 × 3 = 9 balls. ✓"
     },
     {
@@ -6073,8 +6073,8 @@ ratio: {
       id: 18,
       difficulty: 1,
       question: "Sam and Lucy share £120 in the ratio 2:3. How much does Lucy receive?",
-      options: ["£48", "£72", "£60", "£80", "£90"],
-      correct: 1,
+      options: ["£48", "£24", "£120", "£72", "£60"],
+      correct: 3,
       explanation: "Total parts: 2 + 3 = 5. Each part = £120 ÷ 5 = £24. Lucy gets 3 parts = 3 × £24 = £72. ✓"
     },
     {
@@ -6105,8 +6105,8 @@ ratio: {
       id: 22,
       difficulty: 1,
       question: "Orange juice and lemonade are mixed in the ratio 3:7. If 30ml of orange juice is used, how much lemonade is needed?",
-      options: ["70ml", "60ml", "50ml", "80ml", "90ml"],
-      correct: 0,
+      options: ["3ml", "72ml", "70ml", "30ml", "13ml"],
+      correct: 2,
       explanation: "If 3 parts = 30ml, then 1 part = 10ml. Lemonade = 7 parts = 7 × 10 = 70ml. ✓"
     },
     {
@@ -6145,16 +6145,16 @@ ratio: {
       id: 27,
       difficulty: 2,
       question: "In a bag of counters, red and yellow are in the ratio 5:8. If there are 40 red counters, how many yellow counters are there?",
-      options: ["64", "56", "48", "72", "80"],
-      correct: 0,
+      options: ["3", "66", "64", "40", "25"],
+      correct: 2,
       explanation: "If 5 parts = 40 red, then 1 part = 8. Yellow = 8 parts = 8 × 8 = 64 counters. ✓"
     },
     {
       id: 28,
       difficulty: 1,
       question: "A recipe uses butter and flour in the ratio 1:3. If 80g of butter is used, how much flour is needed?",
-      options: ["200g", "240g", "220g", "260g", "280g"],
-      correct: 1,
+      options: ["27g", "20g", "242g", "240g", "80g"],
+      correct: 3,
       explanation: "If 1 part = 80g, then flour = 3 parts = 3 × 80 = 240g. ✓"
     },
     {
@@ -6170,24 +6170,24 @@ ratio: {
       difficulty: 2,
       visual: { component: "BarModel", props: { segments: [{value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#818cf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}, {value: 1, label: "?", color: "#38bdf8"}], totalLabel: "144 stickers" } },
       question: "Sarah and Tom divide 144 stickers in the ratio 7:5. How many stickers does Sarah get?",
-      options: ["60", "72", "96", "84", "108"],
-      correct: 3,
+      options: ["84", "72", "60", "12", "144"],
+      correct: 0,
       explanation: "Total parts: 7 + 5 = 12. Each part = 144 ÷ 12 = 12. Sarah gets 7 parts = 7 × 12 = 84 stickers. ✓"
     },
     {
       id: 31,
       difficulty: 1,
       question: "In a class of 48 children, the ratio of boys to girls is 5:3. How many girls are there?",
-      options: ["15", "16", "24", "20", "18"],
-      correct: 4,
+      options: ["48", "18", "6", "24", "30"],
+      correct: 1,
       explanation: "The ratio 5:3 means 8 equal parts total (5+3=8). Divide 48 by 8 = 6 per part. Girls = 3 parts = 3 × 6 = 18 girls. ✓"
     },
     {
       id: 32,
       difficulty: 1,
       question: "Emma and Jack share 135 sweets in the ratio 4:5. How many sweets does Emma get?",
-      options: ["60", "55", "50", "65", "70"],
-      correct: 0,
+      options: ["75", "135", "60", "15", "68"],
+      correct: 2,
       explanation: "Total parts: 4 + 5 = 9 parts. Each part = 135 ÷ 9 = 15 sweets. Emma gets 4 parts = 4 × 15 = 60 sweets. ✓"
     },
     {
@@ -6202,16 +6202,16 @@ ratio: {
       id: 34,
       difficulty: 1,
       question: "The ratio of cats to dogs at a shelter is 7:2. If there are 28 cats, how many dogs are there?",
-      options: ["4", "12", "8", "14", "16"],
-      correct: 2,
+      options: ["3", "10", "28", "98", "8"],
+      correct: 4,
       explanation: "If 7 parts = 28 cats, then 1 part = 4. Dogs = 2 parts = 2 × 4 = 8 dogs. ✓"
     },
     {
       id: 35,
       difficulty: 1,
       question: "Green paint and yellow paint are mixed in the ratio 3:5 to make lime. If 12 litres of green paint are used, how much yellow paint is needed?",
-      options: ["15 litres", "16 litres", "18 litres", "20 litres", "19 litres"],
-      correct: 3,
+      options: ["20 litres", "12 litres", "7 litres", "2 litres", "22 litres"],
+      correct: 0,
       explanation: "If 3 parts = 12 litres, then 1 part = 4 litres. Yellow = 5 parts = 5 × 4 = 20 litres. ✓"
     },
     {
@@ -6226,8 +6226,8 @@ ratio: {
       id: 37,
       difficulty: 2,
       question: "Sophie and Ben share 84 stickers in the ratio 4:3. How many more stickers does Sophie get than Ben?",
-      options: ["12", "10", "8", "14", "16"],
-      correct: 0,
+      options: ["48", "84", "12", "14", "36"],
+      correct: 2,
       explanation: "Total parts: 4 + 3 = 7. Each part = 84 ÷ 7 = 12. Sophie gets 4 × 12 = 48, Ben gets 3 × 12 = 36. Difference: 48 - 36 = 12. ✓"
     },
     {
@@ -6250,32 +6250,32 @@ ratio: {
       id: 40,
       difficulty: 1,
       question: "A map scale is 1cm : 8km. A distance on the map is 6cm. What is the actual distance?",
-      options: ["60 km", "50 km", "54 km", "48 km", "64 km"],
-      correct: 3,
+      options: ["48 km", "14 km", "8 km", "6 km", "1 km"],
+      correct: 0,
       explanation: "If 1 cm = 8 km, then 6 cm = 6 × 8 = 48 km. ✓"
     },
     {
       id: 41,
       difficulty: 1,
       question: "The ratio of boys to girls in a choir is 3:7. If there are 50 children, how many are boys?",
-      options: ["12", "24", "18", "21", "15"],
-      correct: 4,
+      options: ["50", "15", "5", "25", "35"],
+      correct: 1,
       explanation: "Total parts: 3 + 7 = 10. Each part = 50 ÷ 10 = 5. Boys = 3 parts = 3 × 5 = 15 boys. ✓"
     },
     {
       id: 42,
       difficulty: 1,
       question: "Lucy and Tom share £96 in the ratio 5:3. How much does Tom receive?",
-      options: ["£36", "£33", "£30", "£39", "£42"],
-      correct: 0,
+      options: ["£60", "£96", "£36", "£12", "£48"],
+      correct: 2,
       explanation: "Total parts: 5 + 3 = 8. Each part = £96 ÷ 8 = £12. Tom gets 3 parts = 3 × £12 = £36. ✓"
     },
     {
       id: 43,
       difficulty: 2,
       question: "A recipe for 12 cookies uses 180g butter. How much butter is needed for 30 cookies?",
-      options: ["400g", "450g", "425g", "475g", "500g"],
-      correct: 1,
+      options: ["180g", "30g", "2g", "450g", "210g"],
+      correct: 3,
       explanation: "For 1 cookie: 180 ÷ 12 = 15g. For 30 cookies: 15 × 30 = 450g. ✓"
     },
     {
@@ -6290,16 +6290,16 @@ ratio: {
       id: 45,
       difficulty: 2,
       question: "A printer prints 18 pages in 4 minutes. How many pages can it print in 20 minutes?",
-      options: ["80", "85", "95", "90", "100"],
-      correct: 3,
+      options: ["90", "38", "20", "18", "4"],
+      correct: 0,
       explanation: "Pages per minute = 18 ÷ 4 = 4.5. In 20 minutes: 4.5 × 20 = 90 pages. ✓"
     },
     {
       id: 46,
       difficulty: 2,
       question: "The ratio of fiction to non-fiction books is 8:3. If there are 32 fiction books, how many non-fiction books are there?",
-      options: ["8", "10", "16", "14", "12"],
-      correct: 4,
+      options: ["85", "12", "3", "14", "32"],
+      correct: 1,
       explanation: "If 8 parts = 32 fiction books, then 1 part = 4. Non-fiction = 3 parts = 3 × 4 = 12 books. ✓"
     },
     {
@@ -6314,24 +6314,24 @@ ratio: {
       id: 48,
       difficulty: 1,
       question: "Max and Lily divide 120 cards in the ratio 7:5. How many cards does Max get?",
-      options: ["60", "70", "65", "75", "80"],
-      correct: 1,
+      options: ["50", "10", "120", "70", "60"],
+      correct: 3,
       explanation: "Total parts: 7 + 5 = 12. Each part = 120 ÷ 12 = 10. Max gets 7 parts = 7 × 10 = 70 cards. ✓"
     },
     {
       id: 49,
       difficulty: 2,
       question: "A recipe for 6 pizzas uses 3 tins of tomato. How many tins are needed for 14 pizzas?",
-      options: ["5", "6", "7", "8", "9"],
-      correct: 2,
+      options: ["3", "14", "17", "28", "7"],
+      correct: 4,
       explanation: "Tins per pizza = 3 ÷ 6 = 0.5. For 14 pizzas: 0.5 × 14 = 7 tins. ✓"
     },
     {
       id: 50,
       difficulty: 1,
       question: "In a car park, the ratio of motorcycles to cars is 2:9. If there are 8 motorcycles, how many cars are there?",
-      options: ["32", "34", "38", "36", "40"],
-      correct: 3,
+      options: ["36", "8", "2", "1", "38"],
+      correct: 0,
       explanation: "If 2 parts = 8 motorcycles, then 1 part = 4. Cars = 9 parts = 9 × 4 = 36 cars. ✓"
     },
     {
@@ -6346,32 +6346,32 @@ ratio: {
       id: 52,
       difficulty: 1,
       question: "To make chai for a school fair, tea and sugar are mixed in the ratio 5:2. If 25g of tea is used, how much sugar is needed?",
-      options: ["10g", "9g", "8g", "11g", "12g"],
-      correct: 0,
+      options: ["25g", "63g", "10g", "4g", "12g"],
+      correct: 2,
       explanation: "If 5 parts = 25g, then 1 part = 5g. Sugar = 2 parts = 2 × 5 = 10g. ✓"
     },
     {
       id: 53,
       difficulty: 2,
       question: "The ratio of adults to children at a concert is 3:4. If there are 280 people, how many are adults?",
-      options: ["100", "120", "110", "130", "140"],
-      correct: 1,
+      options: ["140", "160", "280", "120", "40"],
+      correct: 3,
       explanation: "Total parts: 3 + 4 = 7. Each part = 280 ÷ 7 = 40. Adults = 3 parts = 3 × 40 = 120 adults. ✓"
     },
     {
       id: 54,
       difficulty: 2,
       question: "A recipe for 15 tarts uses 225g of jam. How much jam is needed for 40 tarts?",
-      options: ["550g", "575g", "600g", "625g", "650g"],
-      correct: 2,
+      options: ["265g", "225g", "40g", "3g", "600g"],
+      correct: 4,
       explanation: "Jam per tart = 225 ÷ 15 = 15g. For 40 tarts: 15 × 40 = 600g. ✓"
     },
     {
       id: 55,
       difficulty: 2,
       question: "Charlie and Olivia split money in the ratio 2:7. If Charlie receives £24, how much does Olivia receive?",
-      options: ["£72", "£78", "£80", "£84", "£90"],
-      correct: 3,
+      options: ["£84", "£24", "£7", "£3", "£86"],
+      correct: 0,
       explanation: "If 2 parts = £24, then 1 part = £12. Olivia gets 7 parts = 7 × £12 = £84. ✓"
     },
     {
@@ -6386,48 +6386,48 @@ ratio: {
       id: 57,
       difficulty: 2,
       question: "In a box of pens, red and black are in the ratio 4:7. If there are 28 red pens, how many black pens are there?",
-      options: ["49", "45", "48", "42", "56"],
-      correct: 0,
+      options: ["3", "51", "49", "28", "16"],
+      correct: 2,
       explanation: "If 4 parts = 28 red, then 1 part = 7. Black = 7 parts = 7 × 7 = 49 pens. ✓"
     },
     {
       id: 58,
       difficulty: 2,
       question: "A recipe uses chocolate and cream in the ratio 2:5. If 80g of chocolate is used, how much cream is needed?",
-      options: ["180g", "200g", "190g", "210g", "220g"],
-      correct: 1,
+      options: ["32g", "11g", "202g", "200g", "80g"],
+      correct: 3,
       explanation: "If 2 parts = 80g, then 1 part = 40g. Cream = 5 parts = 5 × 40 = 200g. ✓"
     },
     {
       id: 59,
       difficulty: 1,
       question: "The scale on a map is 1cm : 12km. Two villages are 9cm apart on the map. What is the actual distance?",
-      options: ["96 km", "102 km", "108 km", "114 km", "120 km"],
-      correct: 2,
+      options: ["21 km", "12 km", "9 km", "1 km", "108 km"],
+      correct: 4,
       explanation: "If 1 cm = 12 km, then 9 cm = 9 × 12 = 108 km. ✓"
     },
     {
       id: 60,
       difficulty: 1,
       question: "Noah and Hannah divide 180 sweets in the ratio 4:5. How many sweets does Hannah get?",
-      options: ["80", "90", "110", "100", "120"],
-      correct: 3,
+      options: ["100", "90", "80", "20", "180"],
+      correct: 0,
       explanation: "Total parts: 4 + 5 = 9. Each part = 180 ÷ 9 = 20. Hannah gets 5 parts = 5 × 20 = 100 sweets. ✓"
     },
     {
       id: 61,
       difficulty: 2,
       question: "A recipe for 10 brownies uses 150g of chocolate. How much chocolate is needed for 35 brownies?",
-      options: ["475g", "500g", "575g", "550g", "525g"],
-      correct: 4,
+      options: ["2g", "525g", "185g", "150g", "35g"],
+      correct: 1,
       explanation: "Chocolate per brownie = 150 ÷ 10 = 15g. For 35 brownies: 15 × 35 = 525g. ✓"
     },
     {
       id: 62,
       difficulty: 2,
       question: "In a library, fiction books and reference books are in the ratio 9:4. If there are 72 fiction books, how many reference books are there?",
-      options: ["32", "30", "28", "34", "36"],
-      correct: 0,
+      options: ["72", "162", "32", "6", "34"],
+      correct: 2,
       explanation: "If 9 parts = 72 fiction, then 1 part = 8. Reference = 4 parts = 4 × 8 = 32 books. ✓"
     },
     {
@@ -6442,24 +6442,24 @@ ratio: {
       id: 64,
       difficulty: 2,
       question: "Ella is painting her bedroom wall. She mixes white paint and blue paint in the ratio 7:3. If 35ml of white paint is used, how much blue paint is needed?",
-      options: ["12ml", "13ml", "15ml", "14ml", "18ml"],
-      correct: 2,
+      options: ["4ml", "17ml", "35ml", "82ml", "15ml"],
+      correct: 4,
       explanation: "If 7 parts = 35ml, then 1 part = 5ml. Blue = 3 parts = 3 × 5 = 15ml. ✓"
     },
     {
       id: 65,
       difficulty: 2,
       question: "The ratio of boys to girls in a club is 5:6. If there are 88 members, how many are girls?",
-      options: ["40", "44", "52", "48", "56"],
-      correct: 3,
+      options: ["48", "44", "40", "8", "88"],
+      correct: 0,
       explanation: "Total parts: 5 + 6 = 11. Each part = 88 ÷ 11 = 8. Girls = 6 parts = 6 × 8 = 48 girls. ✓"
     },
     {
       id: 66,
       difficulty: 2,
       question: "Ava and Ethan share £144 in the ratio 3:5. How much more does Ethan receive than Ava?",
-      options: ["£30", "£32", "£34", "£38", "£36"],
-      correct: 4,
+      options: ["£144", "£36", "£38", "£54", "£90"],
+      correct: 1,
       explanation: "Total parts: 3 + 5 = 8. Each part = £144 ÷ 8 = £18. Ava gets 3 × £18 = £54, Ethan gets 5 × £18 = £90. Difference: £90 - £54 = £36. ✓"
     },
     {
@@ -6474,24 +6474,24 @@ ratio: {
       id: 68,
       difficulty: 2,
       question: "In a wildlife park, the ratio of zebras to giraffes is 8:3. If there are 40 zebras, how many giraffes are there?",
-      options: ["12", "15", "14", "13", "16"],
-      correct: 1,
+      options: ["17", "40", "107", "15", "4"],
+      correct: 3,
       explanation: "If 8 parts = 40 zebras, then 1 part = 5. Giraffes = 3 parts = 3 × 5 = 15 giraffes. ✓"
     },
     {
       id: 69,
       difficulty: 2,
       question: "A runner covers 120 metres in 15 seconds. At the same pace, how far will they run in 40 seconds?",
-      options: ["300m", "310m", "320m", "330m", "340m"],
-      correct: 2,
+      options: ["160m", "120m", "40m", "5m", "320m"],
+      correct: 4,
       explanation: "Speed = 120 ÷ 15 = 8 metres per second. In 40 seconds: 8 × 40 = 320 metres. ✓"
     },
     {
       id: 70,
       difficulty: 2,
       question: "Juice and fizzy water are mixed in the ratio 2:9. If 14ml of juice is used, how much fizzy water is needed?",
-      options: ["56ml", "59ml", "61ml", "63ml", "66ml"],
-      correct: 3,
+      options: ["63ml", "14ml", "3ml", "1ml", "65ml"],
+      correct: 0,
       explanation: "If 2 parts = 14ml, then 1 part = 7ml. Fizzy water = 9 parts = 9 × 7 = 63ml. ✓"
     },
     {
@@ -6506,16 +6506,16 @@ ratio: {
       id: 72,
       difficulty: 2,
       question: "A recipe for 8 cupcakes uses 120g of flour. How much flour is needed for 22 cupcakes?",
-      options: ["330g", "315g", "300g", "345g", "360g"],
-      correct: 0,
+      options: ["22g", "1g", "330g", "142g", "120g"],
+      correct: 2,
       explanation: "Flour per cupcake = 120 ÷ 8 = 15g. For 22 cupcakes: 15 × 22 = 330g. ✓"
     },
     {
       id: 73,
       difficulty: 2,
       question: "Mia and Oscar split prize money in the ratio 6:7. If Mia receives £72, how much does Oscar receive?",
-      options: ["£78", "£84", "£82", "£80", "£86"],
-      correct: 1,
+      options: ["£62", "£6", "£86", "£84", "£72"],
+      correct: 3,
       explanation: "If 6 parts = £72, then 1 part = £12. Oscar gets 7 parts = 7 × £12 = £84. ✓"
     },
     {
@@ -6530,8 +6530,8 @@ ratio: {
       id: 75,
       difficulty: 2,
       question: "In a bag of sweets, strawberry and lemon are in the ratio 3:8. If there are 24 strawberry sweets, how many lemon sweets are there?",
-      options: ["56", "60", "68", "64", "72"],
-      correct: 3,
+      options: ["64", "24", "9", "2", "66"],
+      correct: 0,
       explanation: "If 3 parts = 24 strawberry, then 1 part = 8. Lemon = 8 parts = 8 × 8 = 64 sweets. ✓"
     },
     {
@@ -6546,32 +6546,32 @@ ratio: {
       id: 77,
       difficulty: 1,
       question: "The scale on a map is 1cm : 15km. Two cities are 11cm apart on the map. What is the actual distance?",
-      options: ["165 km", "155 km", "160 km", "150 km", "170 km"],
-      correct: 0,
+      options: ["11 km", "1 km", "165 km", "26 km", "15 km"],
+      correct: 2,
       explanation: "If 1 cm = 15 km, then 11 cm = 11 × 15 = 165 km. ✓"
     },
     {
       id: 78,
       difficulty: 2,
       question: "Isla and James divide 210 stamps in the ratio 3:4. How many stamps does James get?",
-      options: ["90", "120", "110", "100", "130"],
-      correct: 1,
+      options: ["90", "30", "210", "120", "105"],
+      correct: 3,
       explanation: "Total parts: 3 + 4 = 7. Each part = 210 ÷ 7 = 30. James gets 4 parts = 4 × 30 = 120 stamps. ✓"
     },
     {
       id: 79,
       difficulty: 2,
       question: "A recipe for 18 scones uses 270g of butter. How much butter is needed for 24 scones?",
-      options: ["340g", "350g", "360g", "370g", "380g"],
-      correct: 2,
+      options: ["294g", "270g", "24g", "2g", "360g"],
+      correct: 4,
       explanation: "Butter per scone = 270 ÷ 18 = 15g. For 24 scones: 15 × 24 = 360g. ✓"
     },
     {
       id: 80,
       difficulty: 2,
       question: "In a pet shop, hamsters and guinea pigs are in the ratio 5:3. If there are 35 hamsters, how many guinea pigs are there?",
-      options: ["18", "19", "20", "21", "22"],
-      correct: 3,
+      options: ["21", "4", "23", "35", "58"],
+      correct: 0,
       explanation: "If 5 parts = 35 hamsters, then 1 part = 7. Guinea pigs = 3 parts = 3 × 7 = 21 guinea pigs. ✓"
     },
     {
@@ -6586,8 +6586,8 @@ ratio: {
       id: 82,
       difficulty: 2,
       question: "Mrs Clarke is making lunch for her family. She mixes pasta and sauce in the ratio 8:3. If 48g of pasta is used, how much sauce is needed?",
-      options: ["18g", "17g", "16g", "19g", "20g"],
-      correct: 0,
+      options: ["48g", "128g", "18g", "4g", "20g"],
+      correct: 2,
       explanation: "If 8 parts = 48g, then 1 part = 6g. Sauce = 3 parts = 3 × 6 = 18g. ✓"
     },
     {
@@ -6602,16 +6602,16 @@ ratio: {
       id: 84,
       difficulty: 2,
       question: "A recipe for 16 cookies uses 200g of sugar. How much sugar is needed for 36 cookies?",
-      options: ["425g", "475g", "450g", "500g", "525g"],
-      correct: 2,
+      options: ["236g", "200g", "36g", "3g", "450g"],
+      correct: 4,
       explanation: "Sugar per cookie = 200 ÷ 16 = 12.5g. For 36 cookies: 12.5 × 36 = 450g. ✓"
     },
     {
       id: 85,
       difficulty: 2,
       question: "Lucas and Sophie split earnings in the ratio 9:4. If Lucas receives £108, how much does Sophie receive?",
-      options: ["£40", "£44", "£52", "£48", "£56"],
-      correct: 3,
+      options: ["£48", "£8", "£50", "£108", "£243"],
+      correct: 0,
       explanation: "If 9 parts = £108, then 1 part = £12. Sophie gets 4 parts = 4 × £12 = £48. ✓"
     },
     {
@@ -6626,16 +6626,16 @@ ratio: {
       id: 87,
       difficulty: 2,
       question: "In a classroom, pencils and pens are in the ratio 7:5. If there are 42 pencils, how many pens are there?",
-      options: ["30", "28", "25", "32", "35"],
-      correct: 0,
+      options: ["42", "59", "30", "4", "32"],
+      correct: 2,
       explanation: "If 7 parts = 42 pencils, then 1 part = 6. Pens = 5 parts = 5 × 6 = 30 pens. ✓"
     },
     {
       id: 88,
       difficulty: 2,
       question: "Gran's flapjack recipe uses flour and sugar in the ratio 5:2. If 150g of flour is used, how much sugar is needed?",
-      options: ["55g", "60g", "58g", "62g", "65g"],
-      correct: 1,
+      options: ["62g", "150g", "375g", "60g", "21g"],
+      correct: 3,
       explanation: "If 5 parts = 150g, then 1 part = 30g. Sugar = 2 parts = 2 × 30 = 60g. ✓"
     },
     {
@@ -6650,56 +6650,56 @@ ratio: {
       id: 90,
       difficulty: 2,
       question: "Theo and Grace divide 156 coins in the ratio 8:5. How many coins does Theo get?",
-      options: ["88", "92", "100", "96", "104"],
-      correct: 3,
+      options: ["96", "78", "60", "12", "156"],
+      correct: 0,
       explanation: "Total parts: 8 + 5 = 13. Each part = 156 ÷ 13 = 12. Theo gets 8 parts = 8 × 12 = 96 coins. ✓"
     },
     {
       id: 91,
       difficulty: 2,
       question: "A recipe for 25 flapjacks uses 375g of oats. How much oats is needed for 40 flapjacks?",
-      options: ["560g", "580g", "640g", "620g", "600g"],
-      correct: 4,
+      options: ["3g", "600g", "415g", "375g", "40g"],
+      correct: 1,
       explanation: "Oats per flapjack = 375 ÷ 25 = 15g. For 40 flapjacks: 15 × 40 = 600g. ✓"
     },
     {
       id: 92,
       difficulty: 2,
       question: "In a garden, roses and tulips are in the ratio 6:7. If there are 48 roses, how many tulips are there?",
-      options: ["56", "54", "52", "58", "60"],
-      correct: 0,
+      options: ["4", "58", "56", "48", "41"],
+      correct: 2,
       explanation: "If 6 parts = 48 roses, then 1 part = 8. Tulips = 7 parts = 7 × 8 = 56 tulips. ✓"
     },
     {
       id: 93,
       difficulty: 2,
       question: "A robot on a production line assembles 144 circuit boards in 6 minutes. How many circuit boards can it assemble in 25 minutes?",
-      options: ["580", "600", "590", "610", "620"],
-      correct: 1,
+      options: ["144", "25", "1", "600", "169"],
+      correct: 3,
       explanation: "Circuit boards per minute = 144 ÷ 6 = 24. In 25 minutes: 24 × 25 = 600 circuit boards. ✓"
     },
     {
       id: 94,
       difficulty: 2,
       question: "For art class, yellow paint and red paint are mixed in the ratio 4:3 to make orange. If 28ml of yellow paint is used, how much red paint is needed?",
-      options: ["18ml", "19ml", "21ml", "20ml", "22ml"],
-      correct: 2,
+      options: ["4ml", "23ml", "28ml", "37ml", "21ml"],
+      correct: 4,
       explanation: "If 4 parts = 28ml, then 1 part = 7ml. Red = 3 parts = 3 × 7 = 21ml. ✓"
     },
     {
       id: 95,
       difficulty: 2,
       question: "The ratio of boys to girls in a dance class is 3:8. If there are 66 students, how many are boys?",
-      options: ["16", "22", "20", "18", "24"],
-      correct: 3,
+      options: ["18", "6", "33", "48", "66"],
+      correct: 0,
       explanation: "Total parts: 3 + 8 = 11. Each part = 66 ÷ 11 = 6. Boys = 3 parts = 3 × 6 = 18 boys. ✓"
     },
     {
       id: 96,
       difficulty: 2,
       question: "Amelia and William share £168 in the ratio 5:9. How much more does William receive than Amelia?",
-      options: ["£44", "£46", "£52", "£50", "£48"],
-      correct: 4,
+      options: ["£168", "£48", "£50", "£60", "£108"],
+      correct: 1,
       explanation: "Total parts: 5 + 9 = 14. Each part = £168 ÷ 14 = £12. Amelia gets 5 × £12 = £60, William gets 9 × £12 = £108. Difference: £108 - £60 = £48. ✓"
     },
     {
@@ -6714,8 +6714,8 @@ ratio: {
       id: 98,
       difficulty: 1,
       question: "In a zoo, lions and tigers are in the ratio 2:3. If there are 10 lions, how many tigers are there?",
-      options: ["12", "15", "14", "13", "16"],
-      correct: 1,
+      options: ["7", "2", "17", "15", "10"],
+      correct: 3,
       explanation: "If 2 parts = 10 lions, then 1 part = 5. Tigers = 3 parts = 3 × 5 = 15 tigers. ✓"
     },
     {
@@ -6730,32 +6730,32 @@ ratio: {
       id: 100,
       difficulty: 2,
       question: "Coffee and milk are mixed in the ratio 3:10. If 21ml of coffee is used, how much milk is needed?",
-      options: ["65ml", "68ml", "72ml", "70ml", "75ml"],
-      correct: 3,
+      options: ["70ml", "21ml", "6ml", "2ml", "72ml"],
+      correct: 0,
       explanation: "If 3 parts = 21ml, then 1 part = 7ml. Milk = 10 parts = 10 × 7 = 70ml. ✓"
     },
     {
       id: 101,
       difficulty: 1,
       question: "The ratio of rainy days to sunny days in May was 2:3. If there were 12 rainy days, how many sunny days were there?",
-      options: ["15", "16", "17", "19", "18"],
-      correct: 4,
+      options: ["20", "18", "12", "8", "2"],
+      correct: 1,
       explanation: "If 2 parts = 12 rainy days, then 1 part = 6. Sunny days = 3 parts = 3 × 6 = 18 days. ✓"
     },
     {
       id: 102,
       difficulty: 2,
       question: "A recipe for 14 muffins uses 210g of blueberries. How much is needed for 32 muffins?",
-      options: ["480g", "470g", "460g", "490g", "500g"],
-      correct: 0,
+      options: ["32g", "2g", "480g", "242g", "210g"],
+      correct: 2,
       explanation: "Blueberries per muffin = 210 ÷ 14 = 15g. For 32 muffins: 15 × 32 = 480g. ✓"
     },
     {
       id: 103,
       difficulty: 2,
       question: "Poppy and Alex split reward points in the ratio 7:8. If Poppy receives 84 points, how many does Alex receive?",
-      options: ["92", "96", "94", "98", "100"],
-      correct: 1,
+      options: ["74", "6", "98", "96", "84"],
+      correct: 3,
       explanation: "If 7 parts = 84 points, then 1 part = 12. Alex gets 8 parts = 8 × 12 = 96 points. ✓"
     },
     {
@@ -6770,16 +6770,16 @@ ratio: {
       id: 105,
       difficulty: 2,
       question: "In a shop, notebooks and folders are in the ratio 9:5. If there are 54 notebooks, how many folders are there?",
-      options: ["25", "28", "32", "30", "35"],
-      correct: 3,
+      options: ["30", "4", "32", "54", "97"],
+      correct: 0,
       explanation: "If 9 parts = 54 notebooks, then 1 part = 6. Folders = 5 parts = 5 × 6 = 30 folders. ✓"
     },
     {
       id: 106,
       difficulty: 2,
       question: "Dad is cooking a curry for dinner. His recipe uses rice and lentils in the ratio 7:3. If 140g of rice is used, how many grams of lentils are needed?",
-      options: ["55g", "58g", "65g", "62g", "60g"],
-      correct: 4,
+      options: ["327g", "60g", "14g", "62g", "140g"],
+      correct: 1,
       explanation: "If 7 parts = 140g, then 1 part = 20g. Lentils = 3 parts = 3 × 20 = 60g. ✓"
     },
     {
@@ -6794,24 +6794,24 @@ ratio: {
       id: 108,
       difficulty: 2,
       question: "Ruby and Mason divide 192 beads in the ratio 5:7. How many beads does Mason get?",
-      options: ["108", "112", "110", "114", "116"],
-      correct: 1,
+      options: ["80", "16", "192", "112", "96"],
+      correct: 3,
       explanation: "Total parts: 5 + 7 = 12. Each part = 192 ÷ 12 = 16. Mason gets 7 parts = 7 × 16 = 112 beads. ✓"
     },
     {
       id: 109,
       difficulty: 2,
       question: "A recipe for 35 biscuits uses 420g of chocolate chips. How much is needed for 50 biscuits?",
-      options: ["580g", "590g", "600g", "610g", "620g"],
-      correct: 2,
+      options: ["470g", "420g", "50g", "4g", "600g"],
+      correct: 4,
       explanation: "Chocolate per biscuit = 420 ÷ 35 = 12g. For 50 biscuits: 12 × 50 = 600g. ✓"
     },
     {
       id: 110,
       difficulty: 2,
       question: "In a museum, paintings and sculptures are in the ratio 8:3. If there are 64 paintings, how many sculptures are there?",
-      options: ["20", "22", "26", "24", "28"],
-      correct: 3,
+      options: ["24", "6", "26", "64", "171"],
+      correct: 0,
       explanation: "If 8 parts = 64 paintings, then 1 part = 8. Sculptures = 3 parts = 3 × 8 = 24 sculptures. ✓"
     },
     {
@@ -6826,40 +6826,40 @@ ratio: {
       id: 112,
       difficulty: 2,
       question: "For a tropical smoothie, orange juice and pineapple juice are mixed in the ratio 5:4. If 35ml of orange juice is used, how much pineapple juice is needed?",
-      options: ["28ml", "27ml", "26ml", "29ml", "30ml"],
-      correct: 0,
+      options: ["35ml", "44ml", "28ml", "4ml", "30ml"],
+      correct: 2,
       explanation: "If 5 parts = 35ml, then 1 part = 7ml. Pineapple = 4 parts = 4 × 7 = 28ml. ✓"
     },
     {
       id: 113,
       difficulty: 2,
       question: "The ratio of men to women at an event is 4:7. If there are 220 people, how many are men?",
-      options: ["70", "80", "75", "85", "90"],
-      correct: 1,
+      options: ["110", "140", "220", "80", "20"],
+      correct: 3,
       explanation: "Total parts: 4 + 7 = 11. Each part = 220 ÷ 11 = 20. Men = 4 parts = 4 × 20 = 80 men. ✓"
     },
     {
       id: 114,
       difficulty: 2,
       question: "Harper and Leo share £200 in the ratio 9:11. How much more does Leo receive than Harper?",
-      options: ["£18", "£22", "£20", "£24", "£26"],
-      correct: 2,
+      options: ["£22", "£90", "£110", "£200", "£20"],
+      correct: 4,
       explanation: "Total parts: 9 + 11 = 20. Each part = £200 ÷ 20 = £10. Harper gets 9 × £10 = £90, Leo gets 11 × £10 = £110. Difference: £110 - £90 = £20. ✓"
     },
     {
       id: 115,
       difficulty: 1,
       question: "A recipe for 8 cupcakes uses 3 eggs. How many eggs are needed for 24 cupcakes?",
-      options: ["6", "7", "8", "9", "10"],
-      correct: 3,
+      options: ["9", "3", "24", "27", "64"],
+      correct: 0,
       explanation: "24 cupcakes is 24 ÷ 8 = 3 times the recipe. So eggs needed = 3 × 3 = 9 eggs. ✓"
     },
     {
       id: 116,
       difficulty: 2,
       question: "In a forest, oak trees and pine trees are in the ratio 3:5. If there are 21 oak trees, how many pine trees are there?",
-      options: ["30", "32", "34", "38", "35"],
-      correct: 4,
+      options: ["37", "35", "21", "13", "3"],
+      correct: 1,
       explanation: "If 3 parts = 21 oak trees, then 1 part = 7. Pine = 5 parts = 5 × 7 = 35 pine trees. ✓"
     },
     {
@@ -6874,32 +6874,32 @@ ratio: {
       id: 118,
       difficulty: 2,
       question: "To make salad dressing for a school picnic, vinegar and oil are mixed in the ratio 2:7. If 18ml of vinegar is used, how much oil is needed?",
-      options: ["59ml", "63ml", "61ml", "65ml", "67ml"],
-      correct: 1,
+      options: ["5ml", "2ml", "65ml", "63ml", "18ml"],
+      correct: 3,
       explanation: "If 2 parts = 18ml, then 1 part = 9ml. Oil = 7 parts = 7 × 9 = 63ml. ✓"
     },
     {
       id: 119,
       difficulty: 1,
       question: "The ratio of weekdays to weekend days in a month is 5:2. If there are 20 weekdays, how many weekend days are there?",
-      options: ["6", "7", "8", "9", "10"],
-      correct: 2,
+      options: ["3", "10", "20", "50", "8"],
+      correct: 4,
       explanation: "If 5 parts = 20 weekdays, then 1 part = 4. Weekend days = 2 parts = 2 × 4 = 8 days. ✓"
     },
     {
       id: 120,
       difficulty: 2,
       question: "A recipe for 18 pancakes uses 270g of flour. How much flour is needed for 26 pancakes?",
-      options: ["380g", "385g", "395g", "390g", "400g"],
-      correct: 3,
+      options: ["390g", "296g", "270g", "26g", "2g"],
+      correct: 0,
       explanation: "Flour per pancake = 270 ÷ 18 = 15g. For 26 pancakes: 15 × 26 = 390g. ✓"
     },
     {
       id: 121,
       difficulty: 2,
       question: "Zoe and Oliver split tickets in the ratio 8:3. If Zoe receives 96 tickets, how many does Oliver receive?",
-      options: ["32", "34", "40", "38", "36"],
-      correct: 4,
+      options: ["256", "36", "9", "38", "96"],
+      correct: 1,
       explanation: "If 8 parts = 96 tickets, then 1 part = 12. Oliver gets 3 parts = 3 × 12 = 36 tickets. ✓"
     },
     {
@@ -6914,8 +6914,8 @@ ratio: {
       id: 123,
       difficulty: 2,
       question: "In a box, blue buttons and green buttons are in the ratio 4:9. If there are 32 blue buttons, how many green buttons are there?",
-      options: ["68", "72", "70", "74", "76"],
-      correct: 1,
+      options: ["14", "2", "74", "72", "32"],
+      correct: 3,
       explanation: "If 4 parts = 32 blue, then 1 part = 8. Green = 9 parts = 9 × 8 = 72 buttons. ✓"
     },
     {
@@ -6930,40 +6930,40 @@ ratio: {
       id: 125,
       difficulty: 1,
       question: "The scale on a map is 1cm : 18km. Two locations are 10cm apart on the map. What is the actual distance?",
-      options: ["160 km", "170 km", "190 km", "180 km", "200 km"],
-      correct: 3,
+      options: ["180 km", "28 km", "18 km", "10 km", "1 km"],
+      correct: 0,
       explanation: "If 1 cm = 18 km, then 10 cm = 10 × 18 = 180 km. ✓"
     },
     {
       id: 126,
       difficulty: 2,
       question: "Emily and Daniel divide 252 pencils in the ratio 3:4. How many pencils does Daniel get?",
-      options: ["132", "136", "140", "148", "144"],
-      correct: 4,
+      options: ["252", "144", "126", "108", "36"],
+      correct: 1,
       explanation: "Total parts: 3 + 4 = 7. Each part = 252 ÷ 7 = 36. Daniel gets 4 parts = 4 × 36 = 144 pencils. ✓"
     },
     {
       id: 127,
       difficulty: 2,
       question: "A recipe for 45 cupcakes uses 540g of icing sugar. How much is needed for 60 cupcakes?",
-      options: ["720g", "710g", "700g", "730g", "740g"],
-      correct: 0,
+      options: ["60g", "5g", "720g", "600g", "540g"],
+      correct: 2,
       explanation: "Icing per cupcake = 540 ÷ 45 = 12g. For 60 cupcakes: 12 × 60 = 720g. ✓"
     },
     {
       id: 128,
       difficulty: 2,
       question: "In an aquarium, goldfish and tropical fish are in the ratio 7:4. If there are 56 goldfish, how many tropical fish are there?",
-      options: ["28", "32", "30", "34", "36"],
-      correct: 1,
+      options: ["34", "56", "98", "32", "5"],
+      correct: 3,
       explanation: "If 7 parts = 56 goldfish, then 1 part = 8. Tropical = 4 parts = 4 × 8 = 32 fish. ✓"
     },
     {
       id: 129,
       difficulty: 2,
       question: "The school newsletter is being printed. The printing press produces 420 pages in 7 minutes. How many pages can it produce in 30 minutes?",
-      options: ["1750", "1775", "1800", "1825", "1850"],
-      correct: 2,
+      options: ["450", "420", "30", "1", "1800"],
+      correct: 4,
       explanation: "Pages per minute = 420 ÷ 7 = 60. In 30 minutes: 60 × 30 = 1800 pages. ✓"
     },
     {
@@ -7002,8 +7002,8 @@ ratio: {
       id: 134,
       difficulty: 1,
       question: "If 5 oranges cost £2, how much do 10 oranges cost?",
-      options: ["£3", "£3.50", "£4", "£4.50", "£5"],
-      correct: 2,
+      options: ["£2", "£10", "£12", "£25", "£4"],
+      correct: 4,
       explanation: "10 oranges is double 5 oranges. So the cost is £2 × 2 = £4. ✓"
     },
     {
@@ -7042,8 +7042,8 @@ ratio: {
       id: 139,
       difficulty: 1,
       question: "If 2 books cost £8, how much do 7 books cost?",
-      options: ["£24", "£26", "£28", "£30", "£32"],
-      correct: 2,
+      options: ["£15", "£8", "£7", "£2", "£28"],
+      correct: 4,
       explanation: "One book costs £8 ÷ 2 = £4. So 7 books cost 7 × £4 = £28. ✓"
     },
     {
@@ -7058,16 +7058,16 @@ ratio: {
       id: 141,
       difficulty: 1,
       question: "If 6 cakes cost £12, how much do 9 cakes cost?",
-      options: ["£15", "£16", "£21", "£20", "£18"],
-      correct: 4,
+      options: ["£21", "£18", "£12", "£9", "£5"],
+      correct: 1,
       explanation: "One cake costs £12 ÷ 6 = £2. So 9 cakes cost 9 × £2 = £18. ✓"
     },
     {
       id: 142,
       difficulty: 1,
       question: "A map has a scale of 1 cm : 2 km. A path on the map is 7 cm long. What is the real length of the path?",
-      options: ["14 km", "12 km", "9 km", "16 km", "18 km"],
-      correct: 0,
+      options: ["4 km", "2 km", "14 km", "9 km", "7 km"],
+      correct: 2,
       explanation: "If 1 cm = 2 km, then 7 cm = 7 × 2 = 14 km. ✓"
     },
     {
@@ -7082,16 +7082,16 @@ ratio: {
       id: 144,
       difficulty: 1,
       question: "If 3 bottles of water cost £1.50, how much do 10 bottles cost?",
-      options: ["£4.00", "£4.50", "£5.00", "£5.50", "£6.00"],
-      correct: 2,
+      options: ["£1.50", "£10.00", "£11.50", "£20.00", "£5.00"],
+      correct: 4,
       explanation: "One bottle costs £1.50 ÷ 3 = £0.50. So 10 bottles cost 10 × £0.50 = £5.00. ✓"
     },
     {
       id: 145,
       difficulty: 1,
       question: "A recipe uses 3 eggs for every 4 people. How many eggs are needed for 20 people?",
-      options: ["12", "13", "14", "15", "16"],
-      correct: 3,
+      options: ["15", "3", "20", "23", "27"],
+      correct: 0,
       explanation: "20 ÷ 4 = 5 groups of 4 people. Each group needs 3 eggs, so 5 × 3 = 15 eggs. ✓"
     },
 
@@ -7134,16 +7134,16 @@ ratio: {
       id: 150,
       difficulty: 3,
       question: "A sum of money is shared between three people in the ratio 1:2:3. The difference between the largest and smallest share is £40. What is the total amount?",
-      options: ["£100", "£110", "£130", "£120", "£140"],
-      correct: 3,
+      options: ["£120", "£43", "£40", "£13", "£3"],
+      correct: 0,
       explanation: "Difference between largest (3 parts) and smallest (1 part) = 2 parts = £40. So 1 part = £20. Total parts = 1 + 2 + 3 = 6. Total = 6 × £20 = £120. ✓"
     },
     {
       id: 151,
       difficulty: 3,
       question: "The ratio of adults to children at a funfair is 2:5. If there are 84 people in total, how many more children are there than adults?",
-      options: ["30", "32", "34", "38", "36"],
-      correct: 4,
+      options: ["84", "36", "24", "38", "60"],
+      correct: 1,
       explanation: "Total parts: 2 + 5 = 7. Each part = 84 ÷ 7 = 12. Adults = 2 × 12 = 24. Children = 5 × 12 = 60. Difference = 60 − 24 = 36. ✓"
     },
     {
@@ -7174,8 +7174,8 @@ ratio: {
       id: 155,
       difficulty: 3,
       question: "A netball team scored goals in two halves in the ratio 7:3. They scored 150 goals in total. What is the difference between the goals scored in each half?",
-      options: ["45", "50", "55", "60", "65"],
-      correct: 3,
+      options: ["60", "45", "62", "105", "150"],
+      correct: 0,
       explanation: "Total parts: 7 + 3 = 10. Each part = 150 ÷ 10 = 15. First half = 7 × 15 = 105 goals and second half = 3 × 15 = 45 goals. Difference = 105 − 45 = 60. ✓"
     },
     {
@@ -7265,8 +7265,8 @@ ratio: {
       id: 166,
       difficulty: 2,
       question: "The ratio of red to blue to green beads on a necklace is 5:3:2. If there are 45 red beads, how many green beads are there?",
-      options: ["12", "15", "27", "20", "18"],
-      correct: 4,
+      options: ["113", "18", "2", "45", "47"],
+      correct: 1,
       explanation: "If 5 parts = 45 red beads, then 1 part = 45 ÷ 5 = 9. Green = 2 parts = 2 × 9 = 18 green beads. ✓"
     },
     {
@@ -7289,8 +7289,8 @@ ratio: {
       id: 169,
       difficulty: 3,
       question: "The ratio of sand to cement to gravel in concrete is 3:1:5. If 27 kg of sand is used, what is the total weight of concrete made?",
-      options: ["72 kg", "78 kg", "81 kg", "84 kg", "90 kg"],
-      correct: 2,
+      options: ["27 kg", "9 kg", "7 kg", "83 kg", "81 kg"],
+      correct: 4,
       explanation: "If 3 parts = 27 kg, then 1 part = 9 kg. Total parts = 3 + 1 + 5 = 9. Total weight = 9 × 9 = 81 kg. ✓"
     },
     {
@@ -7337,8 +7337,8 @@ ratio: {
       id: 175,
       difficulty: 3,
       question: "The ratio of fiction to non-fiction books on a shelf is 8:5. There are 78 books altogether. How many more fiction books are there than non-fiction?",
-      options: ["14", "16", "20", "18", "22"],
-      correct: 3,
+      options: ["18", "20", "30", "48", "78"],
+      correct: 0,
       explanation: "Total parts: 8 + 5 = 13. Each part = 78 ÷ 13 = 6. Fiction = 8 × 6 = 48. Non-fiction = 5 × 6 = 30. Difference = 48 − 30 = 18. ✓"
     },
 
@@ -7389,8 +7389,8 @@ ratio: {
             id: 181,
             difficulty: 3,
             question: "In a school, the ratio of boys to girls is 3:5. There are 120 pupils in total. 40% of the girls play netball. How many girls play netball?",
-            options: ["24", "28", "48", "36", "30"],
-            correct: 4,
+            options: ["120", "30", "32", "45", "75"],
+            correct: 1,
             explanation: "Total parts: 8. Each part = 15. Girls = 75. 40% of 75 = 30. ✓"
           },
           {
@@ -7405,8 +7405,8 @@ ratio: {
             id: 183,
             difficulty: 3,
             question: "In a class, the ratio of boys to girls is 4:5. There are 90 children. 60% of the boys and 80% of the girls walk to school. How many children walk to school altogether?",
-            options: ["56", "64", "60", "68", "72"],
-            correct: 1,
+            options: ["66", "80", "100", "64", "9"],
+            correct: 3,
             explanation: "Boys = 40, girls = 50. Boys walking = 24. Girls walking = 40. Total = 64. ✓"
           },
           {
@@ -7461,8 +7461,8 @@ ratio: {
             id: 190,
             difficulty: 3,
             question: "A box has red and blue counters in the ratio 5:2. After 8 more blue counters are added, the ratio becomes 5:4. How many red counters are in the box?",
-            options: ["10", "15", "16", "20", "25"],
-            correct: 3,
+            options: ["20", "8", "3", "1", "22"],
+            correct: 0,
             explanation: "Let red = 5x, blue = 2x. 5x:(2x+8) = 5:4. 20x = 10x+40, so x = 4. Red = 20. ✓"
           },
           {
@@ -7525,8 +7525,8 @@ ratio: {
             id: 198,
             difficulty: 3,
             question: "Prize money of £400 is shared between three winners in the ratio 2:3:5. The person with the largest share donates 20% of it to charity. How much does this person keep?",
-            options: ["£120", "£160", "£140", "£180", "£200"],
-            correct: 1,
+            options: ["£200", "£240", "£400", "£160", "£80"],
+            correct: 3,
             explanation: "Largest share = 5 × £40 = £200. 20% of £200 = £40. Keeps £160. ✓"
           },
           {
@@ -7798,8 +7798,8 @@ ratio: {
             id: 232,
             difficulty: 2,
             question: "Three friends share 100 sweets in the ratio 2:3:5. How many does the friend with the smallest share get?",
-            options: ["20", "30", "50", "10", "25"],
-            correct: 0,
+            options: ["60", "100", "20", "22", "40"],
+            correct: 2,
             explanation: "Total parts: 10. Each part = 10. Smallest = 2 × 10 = 20. ✓"
           },
           {
@@ -7822,8 +7822,8 @@ ratio: {
             id: 235,
             difficulty: 2,
             question: "Jake, Kai and Leo share £80 in the ratio 3:2:5. How much does Kai receive?",
-            options: ["£24", "£30", "£16", "£40", "£8"],
-            correct: 2,
+            options: ["£16", "£18", "£32", "£48", "£80"],
+            correct: 0,
             explanation: "Total parts: 10. Each part = £8. Kai = 2 × £8 = £16. ✓"
           },
           {
@@ -7933,8 +7933,8 @@ fractions: {
       id: 3,
       difficulty: 2,
       question: "There are 20 children in a swimming class. 3/4 of them can swim a full length. How many children can swim a full length?",
-      options: ["12", "20", "16", "18", "15"],
-      correct: 4,
+      options: ["5", "20", "27", "15", "10"],
+      correct: 3,
       explanation: "Find 1/4 of 20 first: 20 ÷ 4 = 5. Then 3/4 = 3 × 5 = 15 children. ✓"
     },
     {
@@ -8022,8 +8022,8 @@ fractions: {
       id: 14,
       difficulty: 2,
       question: "Noah has 8 metres of ribbon. He uses 3/4 of it for a craft project. How many metres does he use?",
-      options: ["6", "5", "4", "7", "8"],
-      correct: 0,
+      options: ["4", "2", "8", "11", "6"],
+      correct: 4,
       explanation: "3/4 of 8 = (3 × 8) ÷ 4 = 24 ÷ 4 = 6. Or: 1/4 of 8 = 2, so 3/4 of 8 = 6 metres. ✓"
     },
     {
@@ -8054,8 +8054,8 @@ fractions: {
       id: 18,
       difficulty: 2,
       question: "A baker makes 30 biscuits. He gives 2/5 of them to his neighbours. How many biscuits does he give away?",
-      options: ["10", "18", "14", "15", "12"],
-      correct: 4,
+      options: ["18", "30", "75", "12", "6"],
+      correct: 3,
       explanation: "Find 1/5 of 30 first: 30 ÷ 5 = 6. Then 2/5 = 2 × 6 = 12 biscuits. ✓"
     },
     {
@@ -8135,8 +8135,8 @@ fractions: {
       id: 28,
       difficulty: 2,
       question: "A school choir has 45 members. 4/5 of them attend a concert. How many members attend?",
-      options: ["32", "34", "40", "38", "36"],
-      correct: 4,
+      options: ["9", "45", "56", "36", "27"],
+      correct: 3,
       explanation: "Find 1/5 of 45 first: 45 ÷ 5 = 9. Then 4/5 = 4 × 9 = 36 members attend. ✓"
     },
     {
@@ -8183,8 +8183,8 @@ fractions: {
       id: 34,
       difficulty: 2,
       question: "There are 12 eggs in a box. Mum uses 5/6 of them to make a cake. How many eggs does she use?",
-      options: ["10", "9", "8", "11", "12"],
-      correct: 0,
+      options: ["8", "2", "12", "14", "10"],
+      correct: 4,
       explanation: "5/6 of 12 = (5 × 12) ÷ 6 = 60 ÷ 6 = 10. Or: 1/6 of 12 = 2, so 5/6 of 12 = 10 eggs. ✓"
     },
     {
@@ -8215,8 +8215,8 @@ fractions: {
       id: 38,
       difficulty: 2,
       question: "There are 35 children in a year group. 2/5 of them sign up for the school play. How many children sign up?",
-      options: ["10", "12", "13", "15", "14"],
-      correct: 4,
+      options: ["21", "35", "88", "14", "7"],
+      correct: 3,
       explanation: "Find 1/5 of 35 first: 35 ÷ 5 = 7. Then 2/5 = 2 × 7 = 14. ✓"
     },
     {
@@ -8239,8 +8239,8 @@ fractions: {
       id: 41,
       difficulty: 2,
       question: "A craft box has 24 coloured buttons. Priya uses 3/8 of them for her project. How many buttons does she use?",
-      options: ["6", "12", "9", "15", "18"],
-      correct: 2,
+      options: ["64", "9", "12", "15", "24"],
+      correct: 1,
       explanation: "Find 1/8 of 24 first: 24 ÷ 8 = 3. Then 3/8 = 3 × 3 = 9. ✓"
     },
     {
@@ -8305,8 +8305,8 @@ fractions: {
       id: 49,
       difficulty: 2,
       question: "What is 3/7 of 28?",
-      options: ["12", "10", "11", "9", "14"],
-      correct: 0,
+      options: ["8", "16", "28", "65", "12"],
+      correct: 4,
       explanation: "Find 1/7 of 28 first: 28 ÷ 7 = 4. Then 3/7 = 3 × 4 = 12. ✓"
     },
     {
@@ -8329,8 +8329,8 @@ fractions: {
       id: 52,
       difficulty: 2,
       question: "What is 4/9 of 27?",
-      options: ["8", "10", "14", "12", "16"],
-      correct: 3,
+      options: ["27", "61", "12", "9", "15"],
+      correct: 2,
       explanation: "Find 1/9 of 27 first: 27 ÷ 9 = 3. Then 4/9 = 4 × 3 = 12. ✓"
     },
     {
@@ -8345,8 +8345,8 @@ fractions: {
       id: 54,
       difficulty: 2,
       question: "Emma has 60 stickers. She gives away 3/5 of them. How many does she give away?",
-      options: ["36", "32", "34", "30", "38"],
-      correct: 0,
+      options: ["24", "12", "48", "60", "36"],
+      correct: 4,
       explanation: "Find 1/5 of 60 first: 60 ÷ 5 = 12. Then 3/5 = 3 × 12 = 36 stickers. ✓"
     },
     {
@@ -8385,16 +8385,16 @@ fractions: {
       id: 59,
       difficulty: 2,
       question: "There are 32 children going on a school trip. 7/8 of them bring a packed lunch. How many children bring a packed lunch?",
-      options: ["28", "26", "24", "30", "32"],
-      correct: 0,
+      options: ["24", "4", "32", "37", "28"],
+      correct: 4,
       explanation: "7/8 of 32 = (7 × 32) ÷ 8 = 224 ÷ 8 = 28 children bring a packed lunch. ✓"
     },
     {
       id: 60,
       difficulty: 2,
       question: "Tom has read 5/8 of a 160-page book. How many pages has he read?",
-      options: ["90", "100", "95", "105", "110"],
-      correct: 1,
+      options: ["100", "80", "60", "20", "120"],
+      correct: 0,
       explanation: "Find 1/8 of 160 first: 160 ÷ 8 = 20. Then 5/8 = 5 × 20 = 100 pages. ✓"
     },
     {
@@ -8433,8 +8433,8 @@ fractions: {
       id: 65,
       difficulty: 2,
       question: "There are 48 crayons in a box. Leah uses 5/12 of them for her drawing. How many crayons does she use?",
-      options: ["15", "20", "18", "22", "24"],
-      correct: 1,
+      options: ["20", "24", "28", "48", "115"],
+      correct: 0,
       explanation: "Find 1/12 of 48 first: 48 ÷ 12 = 4. Then 5/12 = 5 × 4 = 20. ✓"
     },
     {
@@ -8481,16 +8481,16 @@ fractions: {
       id: 71,
       difficulty: 2,
       question: "On sports day, 20 races are planned. 3/4 of them are completed before it rains. How many races are completed?",
-      options: ["12", "13", "15", "14", "16"],
-      correct: 2,
+      options: ["27", "15", "10", "5", "20"],
+      correct: 1,
       explanation: "3/4 of 20 = (3 × 20) ÷ 4 = 60 ÷ 4 = 15 races completed. ✓"
     },
     {
       id: 72,
       difficulty: 2,
       question: "Ben travels 3/8 of a 64 km journey. How far has he travelled?",
-      options: ["20 km", "22 km", "26 km", "24 km", "28 km"],
-      correct: 3,
+      options: ["64 km", "171 km", "24 km", "32 km", "40 km"],
+      correct: 2,
       explanation: "Find 1/8 of 64 first: 64 ÷ 8 = 8. Then 3/8 = 3 × 8 = 24 km. ✓"
     },
     {
@@ -8529,8 +8529,8 @@ fractions: {
       id: 77,
       difficulty: 2,
       question: "A netball club has 45 members. 2/5 of them are in Year 5. How many members are in Year 5?",
-      options: ["14", "16", "20", "18", "22"],
-      correct: 3,
+      options: ["45", "113", "18", "9", "27"],
+      correct: 2,
       explanation: "Find 1/5 of 45 first: 45 ÷ 5 = 9. Then 2/5 = 2 × 9 = 18. ✓"
     },
     {
@@ -8545,8 +8545,8 @@ fractions: {
       id: 79,
       difficulty: 1,
       question: "A garden is 3/4 acre. What decimal is this?",
-      options: ["0.75", "0.6", "0.65", "0.5", "0.8"],
-      correct: 0,
+      options: ["0.80", "1.33", "3.00", "4.00", "0.75"],
+      correct: 4,
       explanation: "3/4 = 3 ÷ 4 = 0.75. ✓"
     },
     {
@@ -8585,16 +8585,16 @@ fractions: {
       id: 84,
       difficulty: 2,
       question: "A PE teacher has 33 tennis balls. She puts 4/11 of them into a basket. How many balls are in the basket?",
-      options: ["12", "11", "10", "13", "14"],
-      correct: 0,
+      options: ["15", "21", "33", "91", "12"],
+      correct: 4,
       explanation: "4/11 × 33 = (4 × 33) ÷ 11 = 132 ÷ 11 = 12. ✓"
     },
     {
       id: 85,
       difficulty: 2,
       question: "Mia drinks 2/7 of a 700 ml bottle. How much does she drink?",
-      options: ["180 ml", "200 ml", "190 ml", "210 ml", "220 ml"],
-      correct: 1,
+      options: ["200 ml", "100 ml", "300 ml", "500 ml", "700 ml"],
+      correct: 0,
       explanation: "Find 1/7 of 700 first: 700 ÷ 7 = 100. Then 2/7 = 2 × 100 = 200 ml. ✓"
     },
     {
@@ -8609,8 +8609,8 @@ fractions: {
       id: 87,
       difficulty: 2,
       question: "What is 5/8 × 16?",
-      options: ["8", "9", "11", "10", "12"],
-      correct: 3,
+      options: ["2", "12", "10", "8", "6"],
+      correct: 2,
       explanation: "5/8 × 16 = (5 × 16) ÷ 8 = 80 ÷ 8 = 10. ✓"
     },
     {
@@ -8665,8 +8665,8 @@ fractions: {
       id: 94,
       difficulty: 2,
       question: "A jug holds 2 litres. How much is 3/4 of the jug in millilitres?",
-      options: ["1500ml", "1450ml", "1400ml", "1550ml", "1600ml"],
-      correct: 0,
+      options: ["1000ml", "500ml", "2000ml", "2667ml", "1500ml"],
+      correct: 4,
       explanation: "2 litres = 2000ml. 3/4 of 2000ml = 2000 ÷ 4 × 3 = 500 × 3 = 1500ml. ✓"
     },
     {
@@ -8705,8 +8705,8 @@ fractions: {
       id: 99,
       difficulty: 2,
       question: "A recipe makes 50 biscuits. Oscar gives 7/10 of them to his friends. How many biscuits does he give away?",
-      options: ["35", "32", "30", "38", "40"],
-      correct: 0,
+      options: ["30", "15", "5", "40", "35"],
+      correct: 4,
       explanation: "Find 1/10 of 50 first: 50 ÷ 10 = 5. Then 7/10 = 7 × 5 = 35. ✓"
     },
     {
@@ -8761,8 +8761,8 @@ fractions: {
       id: 106,
       difficulty: 2,
       question: "What is 4/7 of 42?",
-      options: ["20", "22", "24", "26", "28"],
-      correct: 2,
+      options: ["74", "24", "18", "30", "42"],
+      correct: 1,
       explanation: "Find 1/7 of 42 first: 42 ÷ 7 = 6. Then 4/7 = 4 × 6 = 24. ✓"
     },
     {
@@ -8833,8 +8833,8 @@ fractions: {
       id: 115,
       difficulty: 2,
       question: "What is 5/8 × 24?",
-      options: ["12", "15", "14", "13", "16"],
-      correct: 1,
+      options: ["15", "12", "9", "3", "18"],
+      correct: 0,
       explanation: "5/8 × 24 = (5 × 24) ÷ 8 = 120 ÷ 8 = 15. ✓"
     },
     {
@@ -8889,8 +8889,8 @@ fractions: {
       id: 122,
       difficulty: 2,
       question: "What is 5/9 of 36?",
-      options: ["15", "18", "22", "20", "24"],
-      correct: 3,
+      options: ["36", "65", "20", "16", "24"],
+      correct: 2,
       explanation: "Find 1/9 of 36 first: 36 ÷ 9 = 4. Then 5/9 = 5 × 4 = 20. ✓"
     },
     {
@@ -8945,8 +8945,8 @@ fractions: {
       id: 129,
       difficulty: 2,
       question: "What is 7/12 × 24?",
-      options: ["14", "13", "12", "15", "16"],
-      correct: 0,
+      options: ["12", "10", "2", "16", "14"],
+      correct: 4,
       explanation: "7/12 × 24 = (7 × 24) ÷ 12 = 168 ÷ 12 = 14. ✓"
     },
     {
@@ -8961,8 +8961,8 @@ fractions: {
       id: 131,
       difficulty: 2,
       question: "A bag contains 72 sweets. If 2/9 are strawberry flavour, how many are strawberry?",
-      options: ["12", "14", "16", "18", "20"],
-      correct: 2,
+      options: ["72", "16", "8", "24", "56"],
+      correct: 1,
       explanation: "Find 1/9 of 72 first: 72 ÷ 9 = 8. Then 2/9 = 2 × 8 = 16. ✓"
     },
     {
@@ -9141,8 +9141,8 @@ fractions: {
       id: 153,
       difficulty: 1,
       question: "There are 30 children on a school trip. 2/5 of them bring a packed lunch. How many children bring a packed lunch?",
-      options: ["6", "10", "18", "15", "12"],
-      correct: 4,
+      options: ["18", "30", "75", "12", "6"],
+      correct: 3,
       explanation: "1/5 of 30 = 30 ÷ 5 = 6. Then 2/5 = 2 × 6 = 12 children. ✓"
     },
     {
@@ -9175,8 +9175,8 @@ fractions: {
       id: 157,
       difficulty: 3,
       question: "A jar holds 48 marbles. 3/8 are blue and 1/4 are green. How many marbles are neither blue nor green?",
-      options: ["12", "15", "20", "18", "24"],
-      correct: 3,
+      options: ["48", "128", "18", "24", "30"],
+      correct: 2,
       explanation: "Blue: 3/8 of 48 = 18. Green: 1/4 of 48 = 12. Neither: 48 − 18 − 12 = 18 marbles. ✓"
     },
     {
@@ -9281,8 +9281,8 @@ fractions: {
       id: 170,
       difficulty: 3,
       question: "A farmer plants carrots on 2/5 of his field and potatoes on 1/4. The rest of the field is 140 square metres. What is the total area of the field?",
-      options: ["300 m²", "400 m²", "350 m²", "450 m²", "500 m²"],
-      correct: 1,
+      options: ["400 m²", "200 m²", "600 m²", "1000 m²", "2500 m²"],
+      correct: 0,
       explanation: "Planted: 2/5 + 1/4. Common denominator 20: 8/20 + 5/20 = 13/20. Remaining: 7/20 = 140 m². So 1/20 = 20 m² and 20/20 = 400 m². ✓"
     },
 
@@ -9514,16 +9514,16 @@ fractions: {
       id: 197,
       difficulty: 2,
       question: "What is 3/4 × 8?",
-      options: ["4", "5", "7", "6", "8"],
-      correct: 3,
+      options: ["8", "11", "6", "4", "2"],
+      correct: 2,
       explanation: "3/4 × 8 = (3 × 8) ÷ 4 = 24 ÷ 4 = 6. ✓"
     },
     {
       id: 198,
       difficulty: 2,
       question: "What is 2/5 × 15?",
-      options: ["3", "4", "5", "7", "6"],
-      correct: 4,
+      options: ["9", "15", "38", "6", "3"],
+      correct: 3,
       explanation: "2/5 × 15 = (2 × 15) ÷ 5 = 30 ÷ 5 = 6. ✓"
     },
     {
@@ -9565,8 +9565,8 @@ fractions: {
       id: 203,
       difficulty: 2,
       question: "What is 3/8 as a decimal?",
-      options: ["0.35", "0.425", "0.38", "0.4", "0.375"],
-      correct: 4,
+      options: ["2.667", "3.000", "8.000", "0.375", "0.430"],
+      correct: 3,
       explanation: "3/8 = 3 ÷ 8 = 0.375. ✓"
     },
     {
@@ -9640,856 +9640,856 @@ longmultiplication: {
       id: 1,
       difficulty: 2,
       question: "A school hall has 23 rows of chairs with 14 chairs in each row. How many chairs are there altogether?",
-      options: ["302", "312", "332", "322", "342"],
-      correct: 3,
+      options: ["448", "322", "299", "222", "332"],
+      correct: 1,
       explanation: "23 × 14: (23 × 10 = 230) + (23 × 4 = 92) = 230 + 92 = 322. ✓"
     },
     {
       id: 2,
       difficulty: 2,
       question: "A farmer plants 46 rows of apple trees with 27 trees in each row. How many apple trees does he plant?",
-      options: ["1,142", "1,222", "1,442", "1,342", "1,242"],
-      correct: 4,
+      options: ["1,728", "3,312", "1,242", "1,196", "1,252"],
+      correct: 2,
       explanation: "46 × 27: (46 × 20 = 920) + (46 × 7 = 322) = 920 + 322 = 1,242. ✓"
     },
     {
       id: 3,
       difficulty: 2,
       question: "A box contains 36 chocolates. How many chocolates are in 15 boxes?",
-      options: ["540", "530", "520", "550", "560"],
-      correct: 0,
+      options: ["440", "216", "550", "540", "504"],
+      correct: 3,
       explanation: "36 × 15 = 540. Check: 36 × 10 = 360, 36 × 5 = 180, so 360 + 180 = 540 chocolates. ✓"
     },
     {
       id: 4,
       difficulty: 2,
       question: "A sweet shop orders 58 jars of sweets, with 32 sweets in each jar. How many sweets are ordered in total?",
-      options: ["1,756", "1,856", "1,826", "1,926", "1,956"],
-      correct: 1,
+      options: ["1,798", "1,756", "1,334", "290", "1,856"],
+      correct: 4,
       explanation: "58 × 32: (58 × 30 = 1,740) + (58 × 2 = 116) = 1,740 + 116 = 1,856. ✓"
     },
     {
       id: 5,
       difficulty: 2,
       question: "A factory produces 125 toys every hour. How many toys are made in 24 hours?",
-      options: ["2,900", "2,950", "3,000", "3,050", "3,100"],
-      correct: 2,
+      options: ["3,000", "3,010", "5,250", "12,504", "30,000"],
+      correct: 0,
       explanation: "125 × 24: (125 × 20 = 2,500) + (125 × 4 = 500) = 2,500 + 500 = 3,000. ✓"
     },
     {
       id: 6,
       difficulty: 2,
       question: "A school trip costs £37 per student. If 28 students go, what is the total cost?",
-      options: ["£1,006", "£1,026", "£1,046", "£1,036", "£1,056"],
-      correct: 3,
+      options: ["£2,044", "£1,036", "£999", "£936", "£1,046"],
+      correct: 1,
       explanation: "37 × 28 = £1,036. Check: 37 × 30 = 1,110, 37 × 2 = 74, so 1,110 - 74 = £1,036. ✓"
     },
     {
       id: 7,
       difficulty: 2,
       question: "A gardener plants 74 seeds in each flowerbed. If there are 19 flowerbeds, how many seeds are planted altogether?",
-      options: ["1,306", "1,356", "1,506", "1,456", "1,406"],
-      correct: 4,
+      options: ["6,734", "14,060", "1,406", "1,332", "1,416"],
+      correct: 2,
       explanation: "74 × 19: (74 × 20 = 1,480) - (74 × 1 = 74) = 1,480 - 74 = 1,406. ✓"
     },
     {
       id: 8,
       difficulty: 2,
       question: "A school kitchen uses 235 millilitres of milk per pupil at breakfast. How many millilitres are needed for 16 pupils?",
-      options: ["3,760", "3,710", "3,660", "3,810", "3,860"],
-      correct: 0,
+      options: ["3,525", "1,645", "3,770", "3,760", "3,660"],
+      correct: 3,
       explanation: "235 × 16: (235 × 10 = 2,350) + (235 × 6 = 1,410) = 2,350 + 1,410 = 3,760. ✓"
     },
     {
       id: 9,
       difficulty: 2,
       question: "A cinema ticket costs £12. How much do 45 tickets cost?",
-      options: ["£520", "£540", "£530", "£550", "£560"],
-      correct: 1,
+      options: ["£550", "£648", "£945", "£5400", "£540"],
+      correct: 4,
       explanation: "12 × 45 = £540. Check: 12 × 40 = 480, 12 × 5 = 60, so 480 + 60 = £540. ✓"
     },
     {
       id: 10,
       difficulty: 2,
       question: "A PE teacher orders 89 tennis balls for each of 26 classes. How many tennis balls are ordered altogether?",
-      options: ["2,214", "2,264", "2,314", "2,364", "2,414"],
-      correct: 2,
+      options: ["2,314", "2,225", "2,214", "712", "534"],
+      correct: 0,
       explanation: "89 × 26: (89 × 20 = 1,780) + (89 × 6 = 534) = 1,780 + 534 = 2,314. ✓"
     },
     {
       id: 11,
       difficulty: 2,
       question: "A baker bakes 145 bread rolls each day. How many bread rolls are baked in 32 days?",
-      options: ["4,540", "4,580", "4,620", "4,640", "4,680"],
-      correct: 3,
+      options: ["17,312", "4,640", "4,540", "4,495", "4,650"],
+      correct: 1,
       explanation: "145 × 32: (145 × 30 = 4,350) + (145 × 2 = 290) = 4,350 + 290 = 4,640. ✓"
     },
     {
       id: 12,
       difficulty: 2,
       question: "A factory produces 126 toys per day. How many toys does it produce in 18 days?",
-      options: ["2,168", "2,218", "2,368", "2,318", "2,268"],
-      correct: 4,
+      options: ["10,206", "11,178", "2,268", "2,168", "2,278"],
+      correct: 2,
       explanation: "126 × 18 = 2,268. Check: 126 × 20 = 2,520, 126 × 2 = 252, so 2,520 - 252 = 2,268 toys. ✓"
     },
     {
       id: 13,
       difficulty: 2,
       question: "A car park has 67 spaces on each floor. If it has 38 floors, how many spaces are there in total?",
-      options: ["2,546", "2,496", "2,446", "2,596", "2,646"],
-      correct: 0,
+      options: ["2,446", "737", "2,556", "2,546", "2,479"],
+      correct: 3,
       explanation: "67 × 38: (67 × 30 = 2,010) + (67 × 8 = 536) = 2,010 + 536 = 2,546. ✓"
     },
     {
       id: 14,
       difficulty: 2,
       question: "Each carton holds 218 millilitres of orange juice. How many millilitres are in 25 cartons?",
-      options: ["5,350", "5,450", "5,400", "5,500", "5,550"],
-      correct: 1,
+      options: ["5,460", "11,336", "20,300", "54,500", "5,450"],
+      correct: 4,
       explanation: "218 × 25: Think of 25 as 100÷4. So 218 × 100 = 21,800, then 21,800 ÷ 4 = 5,450. ✓"
     },
     {
       id: 15,
       difficulty: 2,
       question: "A book has 78 pages. Each page has 35 lines. How many lines are in the book?",
-      options: ["2,630", "2,680", "2,730", "2,780", "2,830"],
-      correct: 2,
+      options: ["2,730", "2,652", "2,630", "624", "390"],
+      correct: 0,
       explanation: "78 × 35 = 2,730. Check: 78 × 30 = 2,340, 78 × 5 = 390, so 2,340 + 390 = 2,730 lines. ✓"
     },
     {
       id: 16,
       difficulty: 2,
       question: "A library receives 156 new books each month. How many new books arrive over 42 months?",
-      options: ["6,452", "6,502", "6,602", "6,552", "6,652"],
-      correct: 3,
+      options: ["27,342", "6,552", "6,452", "6,396", "6,562"],
+      correct: 1,
       explanation: "156 × 42: (156 × 40 = 6,240) + (156 × 2 = 312) = 6,240 + 312 = 6,552. ✓"
     },
     {
       id: 17,
       difficulty: 2,
       question: "A sports club has 93 members, and each member pays £47 for a kit. What is the total cost of all the kits?",
-      options: ["£4,271", "£4,321", "£4,471", "£4,421", "£4,371"],
-      correct: 4,
+      options: ["£6,882", "£43,710", "£4,371", "£4,278", "£4,381"],
+      correct: 2,
       explanation: "93 × 47: (93 × 40 = 3,720) + (93 × 7 = 651) = 3,720 + 651 = 4,371. ✓"
     },
     {
       id: 18,
       difficulty: 2,
       question: "A train ticket costs £54. How much do 29 tickets cost?",
-      options: ["£1,566", "£1,516", "£1,466", "£1,616", "£1,666"],
-      correct: 0,
+      options: ["£1,466", "£1,305", "£1,576", "£1,566", "£1,512"],
+      correct: 3,
       explanation: "54 × 29 = £1,566. Check: 54 × 30 = 1,620, 54 × 1 = 54, so 1,620 - 54 = £1,566. ✓"
     },
     {
       id: 19,
       difficulty: 3,
       question: "A printing press prints 284 posters per hour. How many posters are printed in 36 hours?",
-      options: ["10,124", "10,224", "10,324", "10,424", "10,524"],
-      correct: 1,
+      options: ["10,234", "17,352", "17,892", "102,240", "10,224"],
+      correct: 4,
       explanation: "284 × 36: (284 × 30 = 8,520) + (284 × 6 = 1,704) = 8,520 + 1,704 = 10,224. ✓"
     },
     {
       id: 20,
       difficulty: 3,
       question: "A farmer collects 127 eggs each day. How many eggs does he collect in 48 days?",
-      options: ["6,046", "6,146", "6,096", "6,196", "6,246"],
-      correct: 2,
+      options: ["6,096", "5,996", "5,969", "1,524", "1,016"],
+      correct: 0,
       explanation: "127 × 48: (127 × 50 = 6,350) - (127 × 2 = 254) = 6,350 - 254 = 6,096. ✓"
     },
     {
       id: 21,
       difficulty: 2,
       question: "A café sells 86 cups of coffee per day. How many cups do they sell in 52 days?",
-      options: ["4,372", "4,422", "4,522", "4,472", "4,572"],
-      correct: 3,
+      options: ["44,720", "4,472", "4,386", "4,372", "4,482"],
+      correct: 1,
       explanation: "86 × 52 = 4,472. Check: 86 × 50 = 4,300, 86 × 2 = 172, so 4,300 + 172 = 4,472 cups. ✓"
     },
     {
       id: 22,
       difficulty: 2,
       question: "A school tuck shop sells 315 snacks per week. How many snacks are sold over 28 weeks?",
-      options: ["8,720", "8,770", "8,920", "8,870", "8,820"],
-      correct: 4,
+      options: ["14,364", "25,830", "8,820", "8,720", "8,830"],
+      correct: 2,
       explanation: "315 × 28: (315 × 30 = 9,450) - (315 × 2 = 630) = 9,450 - 630 = 8,820. ✓"
     },
     {
       id: 23,
       difficulty: 2,
       question: "A charity walk has 176 walkers, and each walker raises £35. How much money is raised altogether?",
-      options: ["£6,160", "£6,110", "£6,060", "£6,210", "£6,260"],
-      correct: 0,
+      options: ["£5,984", "£1,408", "£6,170", "£6,160", "£6,060"],
+      correct: 3,
       explanation: "176 × 35: (176 × 30 = 5,280) + (176 × 5 = 880) = 5,280 + 880 = 6,160. ✓"
     },
     {
       id: 24,
       difficulty: 2,
       question: "A warehouse ships 247 packages per day. How many packages are shipped in 24 days?",
-      options: ["5,828", "5,928", "5,878", "5,978", "6,028"],
-      correct: 1,
+      options: ["5,938", "10,374", "17,808", "59,280", "5,928"],
+      correct: 4,
       explanation: "247 × 24 = 5,928. Check: 247 × 20 = 4,940, 247 × 4 = 988, so 4,940 + 988 = 5,928 packages. ✓"
     },
     {
       id: 25,
       difficulty: 3,
       question: "A warehouse ships 408 parcels each day. How many parcels are shipped in 37 days?",
-      options: ["14,996", "15,046", "15,096", "15,146", "15,196"],
-      correct: 2,
+      options: ["15,096", "14,996", "14,688", "4,080", "2,856"],
+      correct: 0,
       explanation: "408 × 37: (408 × 30 = 12,240) + (408 × 7 = 2,856) = 12,240 + 2,856 = 15,096. ✓"
     },
     {
       id: 26,
       difficulty: 2,
       question: "A craft club needs 34 beads for each necklace. How many beads are needed to make 18 necklaces?",
-      options: ["592", "602", "622", "612", "632"],
-      correct: 3,
+      options: ["774", "612", "578", "512", "622"],
+      correct: 1,
       explanation: "34 × 18: (34 × 10 = 340) + (34 × 8 = 272) = 340 + 272 = 612. ✓"
     },
     {
       id: 27,
       difficulty: 2,
       question: "A swimming pool sells 52 tickets each session. How many tickets are sold over 29 sessions?",
-      options: ["1,458", "1,488", "1,498", "1,518", "1,508"],
-      correct: 4,
+      options: ["4,784", "15,080", "1,508", "1,456", "1,518"],
+      correct: 2,
       explanation: "52 × 29: (52 × 30 = 1,560) - (52 × 1 = 52) = 1,560 - 52 = 1,508. ✓"
     },
     {
       id: 28,
       difficulty: 2,
       question: "A school orders 87 exercise books for each of 23 classes. How many exercise books are ordered in total?",
-      options: ["2,001", "1,951", "2,051", "2,101", "2,151"],
-      correct: 0,
+      options: ["1,901", "1,794", "2,011", "2,001", "1,914"],
+      correct: 3,
       explanation: "87 × 23: (87 × 20 = 1,740) + (87 × 3 = 261) = 1,740 + 261 = 2,001. ✓"
     },
     {
       id: 29,
       difficulty: 2,
       question: "A coach can carry 115 passengers. How many passengers can 34 coaches carry altogether?",
-      options: ["3,860", "3,910", "3,885", "3,935", "3,960"],
-      correct: 1,
+      options: ["3,920", "4,945", "17,374", "39,100", "3,910"],
+      correct: 4,
       explanation: "115 × 34: (115 × 30 = 3,450) + (115 × 4 = 460) = 3,450 + 460 = 3,910. ✓"
     },
     {
       id: 30,
       difficulty: 2,
       question: "A shop sells 64 items per day. How many items does it sell in 41 days?",
-      options: ["2,564", "2,594", "2,624", "2,604", "2,654"],
-      correct: 2,
+      options: ["2,624", "2,560", "2,524", "1,886", "896"],
+      correct: 0,
       explanation: "64 × 41 = 2,624. Check: 64 × 40 = 2,560, 64 × 1 = 64, so 2,560 + 64 = 2,624 items. ✓"
     },
     {
       id: 31,
       difficulty: 2,
       question: "A beekeeper harvests 138 grams of honey from each hive. How many grams does she harvest from 26 hives?",
-      options: ["3,538", "3,688", "3,638", "3,588", "3,738"],
-      correct: 3,
+      options: ["8,556", "3,588", "3,488", "3,450", "3,598"],
+      correct: 1,
       explanation: "138 × 26: (138 × 20 = 2,760) + (138 × 6 = 828) = 2,760 + 828 = 3,588. ✓"
     },
     {
       id: 32,
       difficulty: 2,
       question: "A cake stall sells 76 cupcakes each day at a fair. How many cupcakes are sold over 37 days?",
-      options: ["2,762", "2,792", "2,872", "2,842", "2,812"],
-      correct: 4,
+      options: ["5,548", "28,120", "2,812", "2,736", "2,822"],
+      correct: 2,
       explanation: "76 × 37: (76 × 30 = 2,280) + (76 × 7 = 532) = 2,280 + 532 = 2,812. ✓"
     },
     {
       id: 33,
       difficulty: 2,
       question: "A delivery van carries 195 packages on each trip. How many packages are delivered in 22 trips?",
-      options: ["4,290", "4,230", "4,250", "4,270", "4,190"],
-      correct: 0,
+      options: ["4,095", "780", "4,300", "4,290", "4,190"],
+      correct: 3,
       explanation: "195 × 22: (195 × 20 = 3,900) + (195 × 2 = 390) = 3,900 + 390 = 4,290. ✓"
     },
     {
       id: 34,
       difficulty: 2,
       question: "A pet shop has 49 fish tanks, each containing 58 fish. How many fish are there in total?",
-      options: ["2,792", "2,842", "2,822", "2,872", "2,902"],
-      correct: 1,
+      options: ["2,852", "4,165", "5,452", "28,420", "2,842"],
+      correct: 4,
       explanation: "49 × 58: (49 × 60 = 2,940) - (49 × 2 = 98) = 2,940 - 98 = 2,842. ✓"
     },
     {
       id: 35,
       difficulty: 2,
       question: "A music shop sells 217 guitar picks per week. How many guitar picks are sold in 31 weeks?",
-      options: ["6,677", "6,777", "6,727", "6,827", "6,877"],
-      correct: 2,
+      options: ["6,727", "6,627", "6,510", "2,821", "868"],
+      correct: 0,
       explanation: "217 × 31: (217 × 30 = 6,510) + (217 × 1 = 217) = 6,510 + 217 = 6,727. ✓"
     },
     {
       id: 36,
       difficulty: 2,
       question: "A hotel has 83 rooms. Each room costs £46 per night. What is the total revenue for one night?",
-      options: ["£3,768", "£3,798", "£3,838", "£3,818", "£3,868"],
-      correct: 3,
+      options: ["£5,312", "£3,818", "£3,735", "£3,718", "£3,828"],
+      correct: 1,
       explanation: "83 × 46 = £3,818. Check: 83 × 50 = 4,150, 83 × 4 = 332, so 4,150 - 332 = £3,818. ✓"
     },
     {
       id: 37,
       difficulty: 2,
       question: "A football stadium sells 164 hot dogs at each match. How many hot dogs are sold over 45 matches?",
-      options: ["7,330", "7,530", "7,430", "7,480", "7,380"],
-      correct: 4,
+      options: ["8,856", "20,745", "7,380", "7,280", "7,390"],
+      correct: 2,
       explanation: "164 × 45: (164 × 40 = 6,560) + (164 × 5 = 820) = 6,560 + 820 = 7,380. ✓"
     },
     {
       id: 38,
       difficulty: 2,
       question: "A Year 5 sponsored read challenge has 28 pupils, each reading 76 pages. How many pages are read altogether?",
-      options: ["2,088", "2,108", "2,128", "2,168", "2,188"],
-      correct: 2,
+      options: ["2,028", "1,876", "2,138", "2,128", "2,100"],
+      correct: 3,
       explanation: "28 × 76: (28 × 70 = 1,960) + (28 × 6 = 168) = 1,960 + 168 = 2,128. ✓"
     },
     {
       id: 39,
       difficulty: 3,
       question: "A tile shop sells 258 tiles per day. How many tiles are sold in 39 days?",
-      options: ["9,962", "10,062", "10,012", "10,112", "10,162"],
-      correct: 1,
+      options: ["10,072", "23,994", "33,228", "100,620", "10,062"],
+      correct: 4,
       explanation: "258 × 39: (258 × 40 = 10,320) - (258 × 1 = 258) = 10,320 - 258 = 10,062. ✓"
     },
     {
       id: 40,
       difficulty: 2,
       question: "A biscuit factory packs 72 biscuits into each tin. How many biscuits are in 68 tins?",
-      options: ["4,846", "4,876", "4,896", "4,926", "4,956"],
-      correct: 2,
+      options: ["4,896", "4,824", "4,796", "1,836", "1,008"],
+      correct: 0,
       explanation: "72 × 68: (72 × 70 = 5,040) - (72 × 2 = 144) = 5,040 - 144 = 4,896. ✓"
     },
     {
       id: 41,
       difficulty: 2,
       question: "A factory makes 186 products per day. How many products does it make in 33 days?",
-      options: ["6,088", "6,118", "6,168", "6,138", "6,198"],
-      correct: 3,
+      options: ["22,473", "6,138", "6,038", "5,952", "6,148"],
+      correct: 1,
       explanation: "186 × 33 = 6,138. Check: 186 × 30 = 5,580, 186 × 3 = 558, so 5,580 + 558 = 6,138 products. ✓"
     },
     {
       id: 42,
       difficulty: 3,
       question: "A newsagent sells 143 newspapers each week. How many newspapers are sold in 52 weeks?",
-      options: ["7,386", "7,426", "7,516", "7,476", "7,436"],
-      correct: 4,
+      options: ["17,732", "74,360", "7,436", "7,336", "7,446"],
+      correct: 2,
       explanation: "143 × 52: (143 × 50 = 7,150) + (143 × 2 = 286) = 7,150 + 286 = 7,436. ✓"
     },
     {
       id: 43,
       difficulty: 3,
       question: "A fruit picker fills 95 punnets of strawberries each day. How many punnets are filled in 63 days?",
-      options: ["5,985", "5,975", "5,935", "6,025", "6,075"],
-      correct: 0,
+      options: ["5,885", "3,717", "5,995", "5,985", "5,890"],
+      correct: 3,
       explanation: "95 × 63: (95 × 60 = 5,700) + (95 × 3 = 285) = 5,700 + 285 = 5,985. ✓"
     },
     {
       id: 44,
       difficulty: 3,
       question: "A scout group collects 279 items for a food bank each month. How many items are collected in 28 months?",
-      options: ["7,712", "7,812", "7,762", "7,862", "7,912"],
-      correct: 1,
+      options: ["7,822", "22,878", "27,216", "78,120", "7,812"],
+      correct: 4,
       explanation: "279 × 28: (279 × 30 = 8,370) - (279 × 2 = 558) = 8,370 - 558 = 7,812. ✓"
     },
     {
       id: 45,
       difficulty: 2,
       question: "A toy shop sells 56 building sets per week. How many are sold over 74 weeks?",
-      options: ["4,094", "4,124", "4,144", "4,174", "4,204"],
-      correct: 2,
+      options: ["4,144", "4,088", "4,044", "2,632", "616"],
+      correct: 0,
       explanation: "56 × 74: (56 × 70 = 3,920) + (56 × 4 = 224) = 3,920 + 224 = 4,144. ✓"
     },
     {
       id: 46,
       difficulty: 2,
       question: "A bakery produces 208 loaves per day. How many loaves does it produce in 46 days?",
-      options: ["9,518", "9,558", "9,608", "9,568", "9,658"],
-      correct: 3,
+      options: ["13,312", "9,568", "9,468", "9,360", "9,578"],
+      correct: 1,
       explanation: "208 × 46 = 9,568. Check: 208 × 50 = 10,400, 208 × 4 = 832, so 10,400 - 832 = 9,568 loaves. ✓"
     },
     {
       id: 47,
       difficulty: 2,
       question: "A zoo feeds 174 grams of food to each penguin daily. How many grams are needed for 35 penguins?",
-      options: ["6,040", "6,070", "6,150", "6,120", "6,090"],
-      correct: 4,
+      options: ["9,222", "16,485", "6,090", "5,990", "6,100"],
+      correct: 2,
       explanation: "174 × 35: (174 × 30 = 5,220) + (174 × 5 = 870) = 5,220 + 870 = 6,090. ✓"
     },
     {
       id: 48,
       difficulty: 2,
       question: "A chocolate factory makes 88 bars every hour. How many bars are made in 49 hours?",
-      options: ["4,312", "4,292", "4,262", "4,342", "4,392"],
-      correct: 0,
+      options: ["4,212", "1,144", "4,322", "4,312", "4,224"],
+      correct: 3,
       explanation: "88 × 49: (88 × 50 = 4,400) - (88 × 1 = 88) = 4,400 - 88 = 4,312. ✓"
     },
     {
       id: 49,
       difficulty: 3,
       question: "A school canteen serves 326 lunches each day. How many lunches are served in 27 days?",
-      options: ["8,702", "8,802", "8,752", "8,852", "8,902"],
-      correct: 1,
+      options: ["8,812", "16,821", "23,472", "88,020", "8,802"],
+      correct: 4,
       explanation: "326 × 27: (326 × 30 = 9,780) - (326 × 3 = 978) = 9,780 - 978 = 8,802. ✓"
     },
     {
       id: 50,
       difficulty: 3,
       question: "Each class in a school has 69 reading books. If there are 82 classes, how many reading books are there altogether?",
-      options: ["5,608", "5,638", "5,658", "5,688", "5,718"],
-      correct: 2,
+      options: ["5,658", "5,589", "5,558", "1,932", "690"],
+      correct: 0,
       explanation: "69 × 82: (69 × 80 = 5,520) + (69 × 2 = 138) = 5,520 + 138 = 5,658. ✓"
     },
     {
       id: 51,
       difficulty: 2,
       question: "A shop sells 119 magazines per week. How many magazines does it sell in 38 weeks?",
-      options: ["4,472", "4,502", "4,552", "4,522", "4,582"],
-      correct: 3,
+      options: ["9,877", "4,522", "4,422", "4,403", "4,532"],
+      correct: 1,
       explanation: "119 × 38 = 4,522. Check: 119 × 40 = 4,760, 119 × 2 = 238, so 4,760 - 238 = 4,522 magazines. ✓"
     },
     {
       id: 52,
       difficulty: 3,
       question: "A bike hire company has 197 bikes at each of 43 stations. How many bikes does it have in total?",
-      options: ["8,421", "8,461", "8,561", "8,511", "8,471"],
-      correct: 4,
+      options: ["34,013", "84,710", "8,471", "8,371", "8,481"],
+      correct: 2,
       explanation: "197 × 43: (197 × 40 = 7,880) + (197 × 3 = 591) = 7,880 + 591 = 8,471. ✓"
     },
     {
       id: 53,
       difficulty: 2,
       question: "A garden centre sells 84 packets of seeds each week. How many packets are sold in 57 weeks?",
-      options: ["4,788", "4,768", "4,738", "4,818", "4,848"],
-      correct: 0,
+      options: ["4,688", "2,736", "4,798", "4,788", "4,704"],
+      correct: 3,
       explanation: "84 × 57: (84 × 60 = 5,040) - (84 × 3 = 252) = 5,040 - 252 = 4,788. ✓"
     },
     {
       id: 54,
       difficulty: 3,
       question: "A water bottling plant fills 345 bottles per minute. How many bottles are filled in 29 minutes?",
-      options: ["9,955", "10,005", "10,055", "10,105", "10,155"],
-      correct: 1,
+      options: ["10,015", "15,747", "31,740", "100,050", "10,005"],
+      correct: 4,
       explanation: "345 × 29: (345 × 30 = 10,350) - (345 × 1 = 345) = 10,350 - 345 = 10,005. ✓"
     },
     {
       id: 55,
       difficulty: 3,
       question: "An ice cream van sells 73 ice creams at each event. How many ice creams are sold over 91 events?",
-      options: ["6,593", "6,633", "6,643", "6,683", "6,733"],
-      correct: 2,
+      options: ["6,643", "6,570", "6,543", "3,367", "1,387"],
+      correct: 0,
       explanation: "73 × 91: (73 × 90 = 6,570) + (73 × 1 = 73) = 6,570 + 73 = 6,643. ✓"
     },
     {
       id: 56,
       difficulty: 3,
       question: "A gym has 226 members. Each member pays £64 per month. What is the monthly revenue?",
-      options: ["£14,384", "£14,444", "£14,524", "£14,464", "£14,584"],
-      correct: 3,
+      options: ["£39,808", "£14,464", "£14,364", "£14,238", "£14,474"],
+      correct: 1,
       explanation: "226 × 64 = £14,464. Check: 226 × 60 = 13,560, 226 × 4 = 904, so 13,560 + 904 = £14,464. ✓"
     },
     {
       id: 57,
       difficulty: 2,
       question: "A supermarket stocks 159 tins of soup on each shelf. How many tins are on 36 shelves?",
-      options: ["5,674", "5,704", "5,804", "5,754", "5,724"],
-      correct: 4,
+      options: ["10,017", "34,236", "5,724", "5,624", "5,734"],
+      correct: 2,
       explanation: "159 × 36: (159 × 30 = 4,770) + (159 × 6 = 954) = 4,770 + 954 = 5,724. ✓"
     },
     {
       id: 58,
       difficulty: 3,
       question: "A rugby club has 97 members, and each member pays £66 in annual fees. What is the total amount collected?",
-      options: ["£6,402", "£6,382", "£6,352", "£6,432", "£6,462"],
-      correct: 0,
+      options: ["£6,302", "£5,214", "£6,412", "£6,402", "£6,305"],
+      correct: 3,
       explanation: "97 × 66: (97 × 70 = 6,790) - (97 × 4 = 388) = 6,790 - 388 = 6,402. ✓"
     },
     {
       id: 59,
       difficulty: 2,
       question: "A power station generates 382 megawatts each hour. How many megawatts are generated in 24 hours?",
-      options: ["9,068", "9,168", "9,118", "9,218", "9,268"],
-      correct: 1,
+      options: ["9,068", "8,786", "6,792", "2,292", "9,168"],
+      correct: 4,
       explanation: "382 × 24: (382 × 20 = 7,640) + (382 × 4 = 1,528) = 7,640 + 1,528 = 9,168. ✓"
     },
     {
       id: 60,
       difficulty: 2,
       question: "A bookshop sells 65 copies of a popular book each week. How many copies are sold in 78 weeks?",
-      options: ["5,020", "5,050", "5,070", "5,100", "5,130"],
-      correct: 2,
+      options: ["5,070", "5,005", "4,970", "5,080", "5,655"],
+      correct: 0,
       explanation: "65 × 78: (65 × 80 = 5,200) - (65 × 2 = 130) = 5,200 - 130 = 5,070. ✓"
     },
     {
       id: 61,
       difficulty: 2,
       question: "A company employs 154 workers. Each worker earns £42 per day. What is the daily wage bill?",
-      options: ["£6,418", "£6,458", "£6,508", "£6,468", "£6,558"],
-      correct: 3,
+      options: ["£64,680", "£6,468", "£6,368", "£6,478", "£18,942"],
+      correct: 1,
       explanation: "154 × 42 = £6,468. Check: 154 × 40 = 6,160, 154 × 2 = 308, so 6,160 + 308 = £6,468. ✓"
     },
     {
       id: 62,
       difficulty: 3,
       question: "A post office handles 213 letters each hour. How many letters are handled in 51 hours?",
-      options: ["10,813", "11,013", "10,913", "10,963", "10,863"],
-      correct: 4,
+      options: ["3,195", "10,873", "10,863", "10,763", "10,650"],
+      correct: 2,
       explanation: "213 × 51: (213 × 50 = 10,650) + (213 × 1 = 213) = 10,650 + 213 = 10,863. ✓"
     },
     {
       id: 63,
       difficulty: 3,
       question: "A stationery shop sells 79 pens per day. How many pens are sold over 85 days?",
-      options: ["6,715", "6,695", "6,665", "6,745", "6,795"],
-      correct: 0,
+      options: ["6,615", "4,582", "1,027", "6,715", "6,636"],
+      correct: 3,
       explanation: "79 × 85: (79 × 80 = 6,320) + (79 × 5 = 395) = 6,320 + 395 = 6,715. ✓"
     },
     {
       id: 64,
       difficulty: 3,
       question: "A bottled water company fills 418 bottles per batch. How many bottles are filled in 32 batches?",
-      options: ["13,276", "13,376", "13,326", "13,426", "13,476"],
-      correct: 1,
+      options: ["13,276", "12,958", "13,386", "26,048", "13,376"],
+      correct: 4,
       explanation: "418 × 32: (418 × 30 = 12,540) + (418 × 2 = 836) = 12,540 + 836 = 13,376. ✓"
     },
     {
       id: 65,
       difficulty: 3,
       question: "A florist arranges 68 bouquets each week. How many bouquets are arranged in 93 weeks?",
-      options: ["6,274", "6,304", "6,324", "6,354", "6,404"],
-      correct: 2,
+      options: ["6,324", "6,256", "6,334", "7,998", "63,240"],
+      correct: 0,
       explanation: "68 × 93: (68 × 90 = 6,120) + (68 × 3 = 204) = 6,120 + 204 = 6,324. ✓"
     },
     {
       id: 66,
       difficulty: 3,
       question: "A train carries 267 passengers. Each passenger pays £56. What is the total fare collected?",
-      options: ["£14,902", "£15,052", "£15,002", "£14,952", "£15,102"],
-      correct: 3,
+      options: ["£149,520", "£14,952", "£14,962", "£17,355", "£42,672"],
+      correct: 1,
       explanation: "267 × 56 = £14,952. Check: 267 × 50 = 13,350, 267 × 6 = 1,602, so 13,350 + 1,602 = £14,952. ✓"
     },
     {
       id: 67,
       difficulty: 3,
       question: "An orchard produces 182 apples from each tree. How many apples come from 47 trees?",
-      options: ["8,504", "8,534", "8,634", "8,584", "8,554"],
-      correct: 4,
+      options: ["13,468", "85,540", "8,554", "8,564", "13,207"],
+      correct: 2,
       explanation: "182 × 47: (182 × 50 = 9,100) - (182 × 3 = 546) = 9,100 - 546 = 8,554. ✓"
     },
     {
       id: 68,
       difficulty: 2,
       question: "A sandwich shop makes 96 sandwiches each day. How many sandwiches are made in 72 days?",
-      options: ["6,912", "6,892", "6,862", "6,942", "6,992"],
-      correct: 0,
+      options: ["6,812", "4,968", "6,922", "6,912", "6,816"],
+      correct: 3,
       explanation: "96 × 72: (96 × 70 = 6,720) + (96 × 2 = 192) = 6,720 + 192 = 6,912. ✓"
     },
     {
       id: 69,
       difficulty: 3,
       question: "A lorry transports 453 crates on each journey. How many crates are transported in 26 journeys?",
-      options: ["11,678", "11,778", "11,728", "11,828", "11,878"],
-      correct: 1,
+      options: ["11,678", "11,325", "9,204", "3,624", "11,778"],
+      correct: 4,
       explanation: "453 × 26: (453 × 20 = 9,060) + (453 × 6 = 2,718) = 9,060 + 2,718 = 11,778. ✓"
     },
     {
       id: 70,
       difficulty: 2,
       question: "A bowling alley has 81 pairs of shoes. Each pair is used 59 times per year. How many total uses is that?",
-      options: ["4,729", "4,759", "4,779", "4,809", "4,859"],
-      correct: 2,
+      options: ["4,779", "4,698", "4,679", "4,789", "7,695"],
+      correct: 0,
       explanation: "81 × 59: (81 × 60 = 4,860) - (81 × 1 = 81) = 4,860 - 81 = 4,779. ✓"
     },
     {
       id: 71,
       difficulty: 2,
       question: "A warehouse stores 295 boxes. Each box contains 44 items. How many items in total?",
-      options: ["12,880", "12,930", "13,030", "12,980", "13,080"],
-      correct: 3,
+      options: ["129,800", "12,980", "12,880", "12,990", "26,048"],
+      correct: 1,
       explanation: "295 × 44 = 12,980. Check: 295 × 40 = 11,800, 295 × 4 = 1,180, so 11,800 + 1,180 = 12,980 items. ✓"
     },
     {
       id: 72,
       difficulty: 2,
       question: "A school photocopier prints 167 worksheets per class. How many worksheets are printed for 39 classes?",
-      options: ["6,463", "6,493", "6,593", "6,543", "6,513"],
-      correct: 4,
+      options: ["29,679", "65,130", "6,513", "6,523", "15,531"],
+      correct: 2,
       explanation: "167 × 39: (167 × 40 = 6,680) - (167 × 1 = 167) = 6,680 - 167 = 6,513. ✓"
     },
     {
       id: 73,
       difficulty: 3,
       question: "A park ranger plants 92 saplings in each area. How many saplings are planted across 67 areas?",
-      options: ["6,164", "6,144", "6,114", "6,194", "6,244"],
-      correct: 0,
+      options: ["6,064", "1,943", "6,174", "6,164", "6,072"],
+      correct: 3,
       explanation: "92 × 67: (92 × 70 = 6,440) - (92 × 3 = 276) = 6,440 - 276 = 6,164. ✓"
     },
     {
       id: 74,
       difficulty: 2,
       question: "A theatre sells 524 programmes at each performance. How many programmes are sold over 28 performances?",
-      options: ["14,572", "14,672", "14,622", "14,722", "14,772"],
-      correct: 1,
+      options: ["14,572", "14,148", "11,900", "5,240", "14,672"],
+      correct: 4,
       explanation: "524 × 28: (524 × 30 = 15,720) - (524 × 2 = 1,048) = 15,720 - 1,048 = 14,672. ✓"
     },
     {
       id: 75,
       difficulty: 2,
       question: "A recycling centre collects 75 bags of cans each day. How many bags are collected in 86 days?",
-      options: ["6,400", "6,430", "6,450", "6,480", "6,530"],
-      correct: 2,
+      options: ["6,450", "6,375", "6,350", "6,460", "64,500"],
+      correct: 0,
       explanation: "75 × 86: (75 × 80 = 6,000) + (75 × 6 = 450) = 6,000 + 450 = 6,450. ✓"
     },
     {
       id: 76,
       difficulty: 2,
       question: "A school orders 336 textbooks. Each textbook costs £38. What is the total cost?",
-      options: ["£12,668", "£12,718", "£12,818", "£12,768", "£12,868"],
-      correct: 3,
+      options: ["£127,680", "£12,768", "£12,778", "£24,054", "£27,888"],
+      correct: 1,
       explanation: "336 × 38 = £12,768. Check: 336 × 40 = 13,440, 336 × 2 = 672, so 13,440 - 672 = £12,768. ✓"
     },
     {
       id: 77,
       difficulty: 2,
       question: "A museum welcomes 149 visitors per tour. How many visitors attend 53 tours?",
-      options: ["7,847", "8,047", "7,947", "7,997", "7,897"],
-      correct: 4,
+      options: ["49,873", "78,970", "7,897", "7,797", "7,907"],
+      correct: 2,
       explanation: "149 × 53: (149 × 50 = 7,450) + (149 × 3 = 447) = 7,450 + 447 = 7,897. ✓"
     },
     {
       id: 78,
       difficulty: 2,
       question: "A school chess club meets for 86 minutes each session. How many minutes do they play over 75 sessions?",
-      options: ["6,450", "6,430", "6,400", "6,480", "6,530"],
-      correct: 0,
+      options: ["6,350", "5,100", "6,460", "6,450", "6,364"],
+      correct: 3,
       explanation: "86 × 75: (86 × 80 = 6,880) - (86 × 5 = 430) = 6,880 - 430 = 6,450. ✓"
     },
     {
       id: 79,
       difficulty: 3,
       question: "An airport handles 597 passengers each hour. How many passengers pass through in 24 hours?",
-      options: ["14,228", "14,328", "14,278", "14,378", "14,428"],
-      correct: 1,
+      options: ["14,338", "19,080", "25,074", "143,280", "14,328"],
+      correct: 4,
       explanation: "597 × 24: (597 × 20 = 11,940) + (597 × 4 = 2,388) = 11,940 + 2,388 = 14,328. ✓"
     },
     {
       id: 80,
       difficulty: 2,
       question: "A wildlife reserve has 63 enclosures, each with 94 animals. How many animals are in the reserve?",
-      options: ["5,872", "5,902", "5,922", "5,952", "6,002"],
-      correct: 2,
+      options: ["5,922", "5,859", "5,822", "3,384", "3,087"],
+      correct: 0,
       explanation: "63 × 94: (63 × 100 = 6,300) - (63 × 6 = 378) = 6,300 - 378 = 5,922. ✓"
     },
     {
       id: 81,
       difficulty: 3,
       question: "A cinema has 284 seats. Tickets cost £49 each. What is the revenue if all seats are sold?",
-      options: ["£13,766", "£13,816", "£13,866", "£13,916", "£13,966"],
-      correct: 3,
+      options: ["£23,618", "£13,916", "£13,816", "£13,632", "£13,926"],
+      correct: 1,
       explanation: "284 × 49 = £13,916. Check: 284 × 50 = 14,200, 284 × 1 = 284, so 14,200 - 284 = £13,916. ✓"
     },
     {
       id: 82,
       difficulty: 3,
       question: "A crisp factory packs 193 bags per hour. How many bags are packed in 62 hours?",
-      options: ["11,866", "11,916", "12,066", "12,016", "11,966"],
-      correct: 4,
+      options: ["24,242", "119,660", "11,966", "11,866", "11,976"],
+      correct: 2,
       explanation: "193 × 62: (193 × 60 = 11,580) + (193 × 2 = 386) = 11,580 + 386 = 11,966. ✓"
     },
     {
       id: 83,
       difficulty: 3,
       question: "A swimming school runs 186 lessons each term. How many lessons are run over 43 terms?",
-      options: ["7,958", "7,978", "7,998", "8,028", "8,048"],
-      correct: 2,
+      options: ["7,812", "6,324", "8,008", "7,998", "7,898"],
+      correct: 3,
       explanation: "186 × 43: (186 × 40 = 7,440) + (186 × 3 = 558) = 7,440 + 558 = 7,998. ✓"
     },
     {
       id: 84,
       difficulty: 3,
       question: "A solar panel farm produces 672 kilowatt-hours per day. How many kilowatt-hours are produced in 29 days?",
-      options: ["19,388", "19,488", "19,438", "19,538", "19,588"],
-      correct: 1,
+      options: ["19,388", "18,816", "8,004", "7,392", "19,488"],
+      correct: 4,
       explanation: "672 × 29: (672 × 30 = 20,160) - (672 × 1 = 672) = 20,160 - 672 = 19,488. ✓"
     },
     {
       id: 85,
       difficulty: 3,
       question: "A pottery class makes 77 bowls in each session. How many bowls are made in 69 sessions?",
-      options: ["5,263", "5,293", "5,313", "5,343", "5,393"],
-      correct: 2,
+      options: ["5,313", "5,236", "5,213", "5,323", "7,392"],
+      correct: 0,
       explanation: "77 × 69: (77 × 70 = 5,390) - (77 × 1 = 77) = 5,390 - 77 = 5,313. ✓"
     },
     {
       id: 86,
       difficulty: 3,
       question: "A company produces 248 units per hour. How many units does it produce in 56 hours?",
-      options: ["13,788", "13,838", "13,938", "13,888", "13,988"],
-      correct: 3,
+      options: ["138,880", "13,888", "13,898", "16,120", "47,152"],
+      correct: 1,
       explanation: "248 × 56 = 13,888. Check: 248 × 50 = 12,400, 248 × 6 = 1,488, so 12,400 + 1,488 = 13,888 units. ✓"
     },
     {
       id: 87,
       difficulty: 2,
       question: "A school orchestra practises for 165 minutes each week. How many minutes do they practise over 48 weeks?",
-      options: ["7,870", "8,070", "7,970", "8,020", "7,920"],
-      correct: 4,
+      options: ["13,860", "26,928", "7,920", "7,820", "7,930"],
+      correct: 2,
       explanation: "165 × 48: (165 × 50 = 8,250) - (165 × 2 = 330) = 8,250 - 330 = 7,920. ✓"
     },
     {
       id: 88,
       difficulty: 3,
       question: "A campsite has 94 pitches, and each pitch holds 73 litres of water in its tank. How many litres are stored in total?",
-      options: ["6,862", "6,842", "6,812", "6,892", "6,942"],
-      correct: 0,
+      options: ["6,762", "3,577", "6,872", "6,862", "6,768"],
+      correct: 3,
       explanation: "94 × 73: (94 × 70 = 6,580) + (94 × 3 = 282) = 6,580 + 282 = 6,862. ✓"
     },
     {
       id: 89,
       difficulty: 3,
       question: "A wind farm generates 738 units of electricity per day. How many units are generated in 31 days?",
-      options: ["22,778", "22,878", "22,828", "22,928", "22,978"],
-      correct: 1,
+      options: ["22,778", "22,140", "9,594", "2,952", "22,878"],
+      correct: 4,
       explanation: "738 × 31: (738 × 30 = 22,140) + (738 × 1 = 738) = 22,140 + 738 = 22,878. ✓"
     },
     {
       id: 90,
       difficulty: 2,
       question: "A knitting group uses 62 balls of wool each month. How many balls are used in 87 months?",
-      options: ["5,344", "5,374", "5,394", "5,424", "5,474"],
-      correct: 2,
+      options: ["5,394", "5,332", "5,294", "5,404", "53,940"],
+      correct: 0,
       explanation: "62 × 87: (62 × 90 = 5,580) - (62 × 3 = 186) = 5,580 - 186 = 5,394. ✓"
     },
     {
       id: 91,
       difficulty: 3,
       question: "A store sells 319 products. Each product generates £65 profit. What is the total profit?",
-      options: ["£20,635", "£20,685", "£20,785", "£20,735", "£20,835"],
-      correct: 3,
+      options: ["£207,350", "£20,735", "£20,635", "£20,745", "£59,345"],
+      correct: 1,
       explanation: "319 × 65 = £20,735. Check: 319 × 60 = 19,140, 319 × 5 = 1,595, so 19,140 + 1,595 = £20,735. ✓"
     },
     {
       id: 92,
       difficulty: 2,
       question: "A dairy farm produces 178 litres of milk per cow each week. How many litres do 54 cows produce?",
-      options: ["9,562", "9,762", "9,662", "9,712", "9,612"],
-      correct: 4,
+      options: ["8,010", "9,622", "9,612", "9,512", "9,434"],
+      correct: 2,
       explanation: "178 × 54: (178 × 50 = 8,900) + (178 × 4 = 712) = 8,900 + 712 = 9,612. ✓"
     },
     {
       id: 93,
       difficulty: 3,
       question: "A skateboard park has 89 visitors each day. How many visitors come over 76 days?",
-      options: ["6,764", "6,744", "6,714", "6,794", "6,844"],
-      correct: 0,
+      options: ["6,664", "5,963", "1,157", "6,764", "6,675"],
+      correct: 3,
       explanation: "89 × 76: (89 × 80 = 7,120) - (89 × 4 = 356) = 7,120 - 356 = 6,764. ✓"
     },
     {
       id: 94,
       difficulty: 3,
       question: "A newspaper prints 814 copies per edition. How many copies are printed over 27 editions?",
-      options: ["21,878", "21,978", "21,928", "22,028", "22,078"],
-      correct: 1,
+      options: ["21,878", "21,164", "21,988", "58,608", "21,978"],
+      correct: 4,
       explanation: "814 × 27: (814 × 30 = 24,420) - (814 × 3 = 2,442) = 24,420 - 2,442 = 21,978. ✓"
     },
     {
       id: 95,
       difficulty: 3,
       question: "A bird sanctuary rescues 147 birds each month. How many birds are rescued over 46 months?",
-      options: ["6,722", "6,742", "6,762", "6,792", "6,822"],
-      correct: 2,
+      options: ["6,762", "6,772", "9,408", "34,086", "67,620"],
+      correct: 0,
       explanation: "147 × 46: (147 × 40 = 5,880) + (147 × 6 = 882) = 5,880 + 882 = 6,762. ✓"
     },
     {
       id: 96,
       difficulty: 3,
       question: "A farm has 426 chickens. Each chicken lays 58 eggs per year. How many eggs per year?",
-      options: ["24,608", "24,658", "24,758", "24,708", "24,808"],
-      correct: 3,
+      options: ["247,080", "24,708", "24,718", "36,192", "36,210"],
+      correct: 1,
       explanation: "426 × 58 = 24,708. Check: 426 × 60 = 25,560, 426 × 2 = 852, so 25,560 - 852 = 24,708 eggs. ✓"
     },
     {
       id: 97,
       difficulty: 3,
       question: "A paintball arena uses 191 paintballs per game. How many paintballs are used in 45 games?",
-      options: ["8,545", "8,745", "8,645", "8,695", "8,595"],
-      correct: 4,
+      options: ["10,314", "85,950", "8,595", "8,495", "8,605"],
+      correct: 2,
       explanation: "191 × 45: (191 × 40 = 7,640) + (191 × 5 = 955) = 7,640 + 955 = 8,595. ✓"
     },
     {
       id: 98,
       difficulty: 3,
       question: "A candle maker produces 83 candles per day. How many candles are produced in 84 days?",
-      options: ["6,972", "6,922", "6,872", "7,022", "7,072"],
-      correct: 0,
+      options: ["6,872", "3,984", "6,982", "6,972", "6,889"],
+      correct: 3,
       explanation: "83 × 84: (83 × 80 = 6,640) + (83 × 4 = 332) = 6,640 + 332 = 6,972. ✓"
     },
     {
       id: 99,
       difficulty: 3,
       question: "A concert hall has 958 seats. If 23 concerts are held with full houses, how many tickets are sold in total?",
-      options: ["22,084", "22,034", "22,134", "22,184", "22,234"],
-      correct: 1,
+      options: ["21,934", "21,076", "19,757", "4,790", "22,034"],
+      correct: 4,
       explanation: "958 × 23: (958 × 20 = 19,160) + (958 × 3 = 2,874) = 19,160 + 2,874 = 22,034. ✓"
     },
     {
       id: 100,
       difficulty: 2,
       question: "A charity sends 66 parcels each week. How many parcels are sent over 95 weeks?",
-      options: ["6,220", "6,250", "6,270", "6,300", "6,350"],
-      correct: 2,
+      options: ["6,270", "6,204", "6,170", "6,280", "62,700"],
+      correct: 0,
       explanation: "66 × 95: (66 × 100 = 6,600) - (66 × 5 = 330) = 6,600 - 330 = 6,270. ✓"
     },
     {
       id: 101,
       difficulty: 3,
       question: "A library has 543 books. Each book has 74 pages. How many pages in total?",
-      options: ["40,082", "40,132", "40,232", "40,182", "40,282"],
-      correct: 3,
+      options: ["40,192", "40,182", "40,082", "39,639", "25,530"],
+      correct: 1,
       explanation: "543 × 74 = 40,182. Check: 543 × 70 = 38,010, 543 × 4 = 2,172, so 38,010 + 2,172 = 40,182 pages. ✓"
     },
     {
       id: 102,
       difficulty: 3,
       question: "A car factory assembles 206 parts per vehicle. How many parts are needed for 59 vehicles?",
-      options: ["12,104", "12,304", "12,204", "12,254", "12,154"],
-      correct: 4,
+      options: ["35,518", "121,540", "12,154", "12,164", "19,570"],
+      correct: 2,
       explanation: "206 × 59: (206 × 60 = 12,360) - (206 × 1 = 206) = 12,360 - 206 = 12,154. ✓"
     },
     {
       id: 103,
       difficulty: 3,
       question: "A cricket club orders 214 balls each season. How many balls are ordered over 29 seasons?",
-      options: ["6,166", "6,186", "6,206", "6,236", "6,256"],
-      correct: 2,
+      options: ["6,216", "11,948", "19,688", "6,206", "6,106"],
+      correct: 3,
       explanation: "214 × 29: (214 × 30 = 6,420) - (214 × 1 = 214) = 6,420 - 214 = 6,206. ✓"
     },
     {
       id: 104,
       difficulty: 3,
       question: "What is 869 × 34?",
-      options: ["29,446", "29,546", "29,496", "29,596", "29,646"],
-      correct: 1,
+      options: ["29,556", "32,912", "37,367", "295,460", "29,546"],
+      correct: 4,
       explanation: "869 × 34: (869 × 30 = 26,070) + (869 × 4 = 3,476) = 26,070 + 3,476 = 29,546. ✓"
     },
     {
       id: 105,
       difficulty: 3,
       question: "A dance studio holds 243 classes each term. How many classes are held over 27 terms?",
-      options: ["6,521", "6,541", "6,561", "6,591", "6,611"],
-      correct: 2,
+      options: ["6,561", "6,461", "6,318", "2,187", "1,701"],
+      correct: 0,
       explanation: "243 × 27: (243 × 30 = 7,290) - (243 × 3 = 729) = 7,290 - 729 = 6,561. ✓"
     },
     {
       id: 106,
       difficulty: 3,
       question: "A restaurant serves 397 customers per day. Each customer spends £76. What is the daily revenue?",
-      options: ["£30,072", "£30,122", "£30,222", "£30,172", "£30,272"],
-      correct: 3,
+      options: ["£60,268", "£30,172", "£30,072", "£29,775", "£30,182"],
+      correct: 1,
       explanation: "397 × 76 = £30,172. Check: 397 × 80 = 31,760, 397 × 4 = 1,588, so 31,760 - 1,588 = £30,172. ✓"
     },
     {
       id: 107,
       difficulty: 3,
       question: "A bread delivery driver drops off 183 loaves at each shop. How many loaves are delivered to 67 shops?",
-      options: ["12,211", "12,411", "12,311", "12,361", "12,261"],
-      correct: 4,
+      options: ["13,908", "25,527", "12,261", "12,161", "12,271"],
+      correct: 2,
       explanation: "183 × 67: (183 × 70 = 12,810) - (183 × 3 = 549) = 12,810 - 549 = 12,261. ✓"
     },
     {
@@ -10504,280 +10504,280 @@ longmultiplication: {
       id: 109,
       difficulty: 3,
       question: "A ferry carries 925 passengers on each crossing. How many passengers does it carry over 38 crossings?",
-      options: ["35,050", "35,150", "35,100", "35,200", "35,250"],
-      correct: 1,
+      options: ["35,050", "34,225", "20,102", "35,160", "35,150"],
+      correct: 4,
       explanation: "925 × 38: (925 × 40 = 37,000) - (925 × 2 = 1,850) = 37,000 - 1,850 = 35,150. ✓"
     },
     {
       id: 110,
       difficulty: 2,
       question: "A farm shop sells 85 boxes of eggs each week. How many boxes are sold in 71 weeks?",
-      options: ["6,005", "6,055", "6,035", "6,085", "6,135"],
-      correct: 2,
+      options: ["6,035", "5,950", "5,935", "4,118", "1,445"],
+      correct: 0,
       explanation: "85 × 71: (85 × 70 = 5,950) + (85 × 1 = 85) = 5,950 + 85 = 6,035. ✓"
     },
     {
       id: 111,
       difficulty: 3,
       question: "A publisher prints 614 copies of a book. Each copy has 89 pages. How many total pages?",
-      options: ["54,546", "54,596", "54,696", "54,646", "54,746"],
-      correct: 3,
+      options: ["60,172", "54,646", "54,546", "54,032", "54,656"],
+      correct: 1,
       explanation: "614 × 89 = 54,646. Check: 614 × 90 = 55,260, 614 × 1 = 614, so 55,260 - 614 = 54,646 pages. ✓"
     },
     {
       id: 112,
       difficulty: 3,
       question: "A magazine has 197 pages in each issue. How many pages are in 52 issues?",
-      options: ["10,194", "10,394", "10,294", "10,344", "10,244"],
-      correct: 4,
+      options: ["41,132", "102,440", "10,244", "10,144", "10,254"],
+      correct: 2,
       explanation: "197 × 52: (197 × 50 = 9,850) + (197 × 2 = 394) = 9,850 + 394 = 10,244. ✓"
     },
     {
       id: 113,
       difficulty: 3,
       question: "A gymnastics team scores 82 points per routine. How many points are scored in 96 routines?",
-      options: ["7,872", "7,852", "7,822", "7,902", "7,952"],
-      correct: 0,
+      options: ["7,772", "5,658", "7,882", "7,872", "7,790"],
+      correct: 3,
       explanation: "82 × 96: (82 × 100 = 8,200) - (82 × 4 = 328) = 8,200 - 328 = 7,872. ✓"
     },
     {
       id: 114,
       difficulty: 2,
       question: "A drinks machine dispenses 976 cups per day. How many cups are dispensed in 25 days?",
-      options: ["24,300", "24,400", "24,350", "24,450", "24,500"],
-      correct: 1,
+      options: ["24,300", "23,424", "16,975", "6,832", "24,400"],
+      correct: 4,
       explanation: "976 × 25: Think of 25 as 100÷4. So 976 × 100 = 97,600, then 97,600 ÷ 4 = 24,400. ✓"
     },
     {
       id: 115,
       difficulty: 3,
       question: "A train has 74 seats in each carriage. How many seats are in 88 carriages?",
-      options: ["6,462", "6,492", "6,512", "6,542", "6,592"],
-      correct: 2,
+      options: ["6,512", "6,438", "6,412", "6,522", "65,120"],
+      correct: 0,
       explanation: "74 × 88: (74 × 90 = 6,660) - (74 × 2 = 148) = 6,660 - 148 = 6,512. ✓"
     },
     {
       id: 116,
       difficulty: 3,
       question: "A stadium has 738 rows. Each row has 63 seats. How many seats in total?",
-      options: ["46,394", "46,444", "46,544", "46,494", "46,594"],
-      correct: 3,
+      options: ["464,940", "46,494", "46,394", "46,504", "52,731"],
+      correct: 1,
       explanation: "738 × 63 = 46,494. Check: 738 × 60 = 44,280, 738 × 3 = 2,214, so 44,280 + 2,214 = 46,494 seats. ✓"
     },
     {
       id: 117,
       difficulty: 3,
       question: "A sports shop sells 209 footballs each month. How many footballs are sold in 46 months?",
-      options: ["9,564", "9,764", "9,664", "9,714", "9,614"],
-      correct: 4,
+      options: ["41,492", "96,140", "9,614", "9,624", "13,376"],
+      correct: 2,
       explanation: "209 × 46: (209 × 50 = 10,450) - (209 × 4 = 836) = 10,450 - 836 = 9,614. ✓"
     },
     {
       id: 118,
       difficulty: 3,
       question: "A holiday park has 93 caravans, and each caravan uses 77 litres of water per day. How many litres are used in total each day?",
-      options: ["7,161", "7,141", "7,111", "7,191", "7,241"],
-      correct: 0,
+      options: ["7,061", "3,003", "7,171", "7,161", "7,068"],
+      correct: 3,
       explanation: "93 × 77: (93 × 80 = 7,440) - (93 × 3 = 279) = 7,440 - 279 = 7,161. ✓"
     },
     {
       id: 119,
       difficulty: 3,
       question: "A juice company produces 847 bottles per hour. How many bottles are produced in 36 hours?",
-      options: ["30,392", "30,492", "30,442", "30,542", "30,592"],
-      correct: 1,
+      options: ["30,392", "29,645", "26,928", "7,623", "30,492"],
+      correct: 4,
       explanation: "847 × 36: (847 × 40 = 33,880) - (847 × 4 = 3,388) = 33,880 - 3,388 = 30,492. ✓"
     },
     {
       id: 120,
       difficulty: 2,
       question: "A market stall sells 67 bags of sweets each Saturday. How many bags are sold over 94 Saturdays?",
-      options: ["6,248", "6,278", "6,298", "6,328", "6,378"],
-      correct: 2,
+      options: ["6,298", "6,231", "6,198", "6,308", "7,144"],
+      correct: 0,
       explanation: "67 × 94: (67 × 100 = 6,700) - (67 × 6 = 402) = 6,700 - 402 = 6,298. ✓"
     },
     {
       id: 121,
       difficulty: 3,
       question: "A delivery company handles 526 packages per day. Each package weighs 84 kg. What is the total weight?",
-      options: ["44,084 kg", "44,134 kg", "44,234 kg", "44,184 kg", "44,284 kg"],
-      correct: 3,
+      options: ["441,840 kg", "44,184 kg", "44,084 kg", "44,194 kg", "52,500 kg"],
+      correct: 1,
       explanation: "526 × 84 = 44,184 kg. Check: 526 × 80 = 42,080, 526 × 4 = 2,104, so 42,080 + 2,104 = 44,184 kg. ✓"
     },
     {
       id: 122,
       difficulty: 3,
       question: "A brickworks makes 175 bricks per hour. How many bricks are made in 69 hours?",
-      options: ["12,025", "12,225", "12,125", "12,175", "12,075"],
-      correct: 4,
+      options: ["39,399", "120,750", "12,075", "12,085", "16,800"],
+      correct: 2,
       explanation: "175 × 69: (175 × 70 = 12,250) - (175 × 1 = 175) = 12,250 - 175 = 12,075. ✓"
     },
     {
       id: 123,
       difficulty: 2,
       question: "A pizza restaurant uses 88 grams of cheese on each pizza. How many grams are used for 62 pizzas?",
-      options: ["5,456", "5,426", "5,396", "5,486", "5,536"],
-      correct: 0,
+      options: ["5,356", "2,288", "5,466", "5,456", "5,368"],
+      correct: 3,
       explanation: "88 × 62: (88 × 60 = 5,280) + (88 × 2 = 176) = 5,280 + 176 = 5,456. ✓"
     },
     {
       id: 124,
       difficulty: 3,
       question: "A logistics company delivers 913 parcels per day. How many parcels are delivered in 43 days?",
-      options: ["39,159", "39,259", "39,209", "39,309", "39,359"],
-      correct: 1,
+      options: ["39,159", "38,346", "31,042", "13,717", "39,259"],
+      correct: 4,
       explanation: "913 × 43: (913 × 40 = 36,520) + (913 × 3 = 2,739) = 36,520 + 2,739 = 39,259. ✓"
     },
     {
       id: 125,
       difficulty: 2,
       question: "A greenhouse grows 69 tomato plants in each row. How many plants are in 85 rows?",
-      options: ["5,815", "5,845", "5,865", "5,895", "5,945"],
-      correct: 2,
+      options: ["5,865", "5,796", "5,765", "5,875", "8,160"],
+      correct: 0,
       explanation: "69 × 85: (69 × 80 = 5,520) + (69 × 5 = 345) = 5,520 + 345 = 5,865. ✓"
     },
     {
       id: 126,
       difficulty: 1,
       question: "A packet of crisps has 24 crisps inside. How many crisps are in 3 packets?",
-      options: ["62", "68", "76", "72", "82"],
-      correct: 3,
+      options: ["720", "72", "48", "82", "126"],
+      correct: 1,
       explanation: "24 × 3 = 72. You can work this out as (20 × 3) + (4 × 3) = 60 + 12 = 72. ✓"
     },
     {
       id: 127,
       difficulty: 1,
       question: "There are 15 marbles in each bag. How many marbles are in 12 bags?",
-      options: ["160", "170", "200", "190", "180"],
-      correct: 4,
+      options: ["612", "1800", "180", "190", "315"],
+      correct: 2,
       explanation: "15 × 12 = 180. You can work this out as (15 × 10) + (15 × 2) = 150 + 30 = 180. ✓"
     },
     {
       id: 128,
       difficulty: 1,
       question: "A pack of colouring pencils costs £4. How much do 13 packs cost?",
-      options: ["£52", "£50", "£48", "£54", "£56"],
-      correct: 0,
+      options: ["£17", "£16", "£62", "£52", "£48"],
+      correct: 3,
       explanation: "4 × 13 = £52. You can work this out as (4 × 10) + (4 × 3) = 40 + 12 = £52. ✓"
     },
     {
       id: 129,
       difficulty: 1,
       question: "A minibus has 36 seats. How many seats are on 5 minibuses?",
-      options: ["160", "180", "175", "170", "190"],
-      correct: 1,
+      options: ["144", "80", "41", "18", "180"],
+      correct: 4,
       explanation: "36 × 5 = 180. You can work this out as (30 × 5) + (6 × 5) = 150 + 30 = 180. ✓"
     },
     {
       id: 130,
       difficulty: 1,
       question: "Each shelf holds 11 books. How many books are on 14 shelves?",
-      options: ["144", "148", "154", "152", "158"],
-      correct: 2,
+      options: ["154", "143", "55", "164", "451"],
+      correct: 0,
       explanation: "11 × 14 = 154. You can work this out as (11 × 10) + (11 × 4) = 110 + 44 = 154. ✓"
     },
     {
       id: 131,
       difficulty: 1,
       question: "A car journey to school takes 20 minutes each way. How many minutes are spent travelling over 18 one-way trips?",
-      options: ["340", "350", "370", "360", "380"],
-      correct: 3,
+      options: ["3600", "360", "340", "370", "1620"],
+      correct: 1,
       explanation: "20 × 18 = 360. You can work this out as 2 × 18 = 36, then add a zero to get 360. ✓"
     },
     {
       id: 132,
       difficulty: 1,
       question: "A baker makes 43 scones each morning. How many scones does he make in 7 mornings?",
-      options: ["291", "296", "311", "306", "301"],
-      correct: 4,
+      options: ["201", "311", "301", "258", "238"],
+      correct: 2,
       explanation: "43 × 7 = 301. You can work this out as (40 × 7) + (3 × 7) = 280 + 21 = 301. ✓"
     },
     {
       id: 133,
       difficulty: 1,
       question: "A bag of apples costs £3. How much do 25 bags cost?",
-      options: ["£75", "£70", "£65", "£80", "£85"],
-      correct: 0,
+      options: ["£28", "£21", "£15", "£75", "£72"],
+      correct: 3,
       explanation: "3 × 25 = £75. You can work this out as 3 × 25 = 75. Or think: 25p × 3 = 75p, so £3 × 25 = £75. ✓"
     },
     {
       id: 134,
       difficulty: 1,
       question: "A crayon box holds 16 crayons. How many crayons are in 11 boxes?",
-      options: ["166", "176", "170", "180", "186"],
-      correct: 1,
+      options: ["160", "76", "186", "671", "176"],
+      correct: 4,
       explanation: "16 × 11 = 176. A quick way: 16 × 11 = 16 × 10 + 16 = 160 + 16 = 176. ✓"
     },
     {
       id: 135,
       difficulty: 1,
       question: "There are 12 eggs in a box. How many eggs are in 8 boxes?",
-      options: ["84", "90", "96", "102", "108"],
-      correct: 2,
+      options: ["96", "84", "106", "168", "960"],
+      correct: 0,
       explanation: "12 × 8 = 96. This is a times table fact: 12 × 8 = 96. ✓"
     },
     {
       id: 136,
       difficulty: 1,
       question: "A netball team scores 32 goals each match. How many goals do they score in 9 matches?",
-      options: ["278", "283", "293", "288", "298"],
-      correct: 3,
+      options: ["298", "288", "256", "207", "188"],
+      correct: 1,
       explanation: "32 × 9 = 288. You can work this out as (32 × 10) − 32 = 320 − 32 = 288. ✓"
     },
     {
       id: 137,
       difficulty: 1,
       question: "A football sticker costs 6p. How much do 45 stickers cost?",
-      options: ["250p", "260p", "290p", "280p", "270p"],
-      correct: 4,
+      options: ["54p", "51p", "270p", "264p", "170p"],
+      correct: 2,
       explanation: "6 × 45 = 270p. You can work this out as (6 × 40) + (6 × 5) = 240 + 30 = 270p (or £2.70). ✓"
     },
     {
       id: 138,
       difficulty: 1,
       question: "There are 25 stickers on each sheet. How many stickers are on 16 sheets?",
-      options: ["400", "390", "375", "410", "425"],
-      correct: 0,
+      options: ["832", "1525", "4000", "400", "410"],
+      correct: 3,
       explanation: "25 × 16 = 400. You can work this out as (25 × 10) + (25 × 6) = 250 + 150 = 400. ✓"
     },
     {
       id: 139,
       difficulty: 1,
       question: "Each table seats 6 children. How many children can sit at 19 tables?",
-      options: ["104", "114", "112", "108", "118"],
-      correct: 1,
+      options: ["108", "60", "124", "546", "114"],
+      correct: 4,
       explanation: "6 × 19 = 114. You can work this out as (6 × 20) − 6 = 120 − 6 = 114. ✓"
     },
     {
       id: 140,
       difficulty: 1,
       question: "A garden has 14 sunflowers in each row. How many sunflowers are in 13 rows?",
-      options: ["172", "177", "182", "187", "192"],
-      correct: 2,
+      options: ["182", "192", "434", "533", "1820"],
+      correct: 0,
       explanation: "14 × 13 = 182. You can work this out as (14 × 10) + (14 × 3) = 140 + 42 = 182. ✓"
     },
     {
       id: 141,
       difficulty: 1,
       question: "A pencil costs 8p. How much do 35 pencils cost?",
-      options: ["260p", "270p", "290p", "280p", "300p"],
-      correct: 3,
+      options: ["2800p", "280p", "272p", "290p", "424p"],
+      correct: 1,
       explanation: "8 × 35 = 280p. You can work this out as (8 × 30) + (8 × 5) = 240 + 40 = 280p (or £2.80). ✓"
     },
     {
       id: 142,
       difficulty: 1,
       question: "A box of chalk contains 50 sticks. How many sticks of chalk are in 9 boxes?",
-      options: ["400", "420", "440", "470", "450"],
-      correct: 4,
+      options: ["59", "460", "450", "400", "350"],
+      correct: 2,
       explanation: "50 × 9 = 450. You can work this out as 5 × 9 = 45, then add a zero to get 450. ✓"
     },
     {
       id: 143,
       difficulty: 1,
       question: "Each row in a classroom has 7 desks. There are 12 rows. How many desks are there?",
-      options: ["84", "78", "82", "74", "88"],
-      correct: 0,
+      options: ["21", "19", "14", "84", "77"],
+      correct: 3,
       explanation: "7 × 12 = 84. This is a times table fact: 7 × 12 = 84. ✓"
     },
     {
@@ -10928,304 +10928,304 @@ longmultiplication: {
       id: 162,
       difficulty: 1,
       question: "What is 30 × 40?",
-      options: ["120", "70", "12,000", "700", "1,200"],
-      correct: 4,
+      options: ["1,210", "12,000", "1,200", "1,170", "1,100"],
+      correct: 2,
       explanation: "30 × 40: Think 3 × 4 = 12, then add two zeros = 1,200. ✓"
     },
     {
       id: 163,
       difficulty: 1,
       question: "What is 50 × 20?",
-      options: ["1,000", "700", "100", "10,000", "500"],
-      correct: 0,
+      options: ["900", "100", "1,010", "1,000", "950"],
+      correct: 3,
       explanation: "50 × 20: Think 5 × 2 = 10, then add two zeros = 1,000. ✓"
     },
     {
       id: 164,
       difficulty: 1,
       question: "What is 60 × 30?",
-      options: ["180", "1,800", "18,000", "900", "1,080"],
-      correct: 1,
+      options: ["1,740", "1,700", "180", "90", "1,800"],
+      correct: 4,
       explanation: "60 × 30: Think 6 × 3 = 18, then add two zeros = 1,800. ✓"
     },
     {
       id: 165,
       difficulty: 1,
       question: "A bus makes 20 trips a day. Each trip covers 15 miles. How many miles does the bus cover in a day?",
-      options: ["200", "250", "300", "350", "400"],
-      correct: 2,
+      options: ["300", "280", "310", "1020", "3000"],
+      correct: 0,
       explanation: "20 × 15 = 300. Think 2 × 15 = 30, then add one zero = 300. ✓"
     },
     {
       id: 166,
       difficulty: 1,
       question: "What is 70 × 50?",
-      options: ["350", "1,200", "35,000", "3,500", "12,000"],
-      correct: 3,
+      options: ["35,000", "3,500", "3,430", "3,400", "3,510"],
+      correct: 1,
       explanation: "70 × 50: Think 7 × 5 = 35, then add two zeros = 3,500. ✓"
     },
     {
       id: 167,
       difficulty: 1,
       question: "What is 300 × 40?",
-      options: ["1,200", "4,200", "7,000", "120,000", "12,000"],
-      correct: 4,
+      options: ["1,200", "12,010", "12,000", "11,900", "11,700"],
+      correct: 2,
       explanation: "300 × 40: Think 3 × 4 = 12, then add three zeros = 12,000. ✓"
     },
     {
       id: 168,
       difficulty: 1,
       question: "A school needs 30 boxes of pencils. Each box contains 250 pencils. How many pencils is that?",
-      options: ["7,500", "2,500", "5,000", "750", "25,000"],
-      correct: 0,
+      options: ["7,400", "1,560", "750", "7,500", "7,470"],
+      correct: 3,
       explanation: "30 × 250 = 7,500. Think 3 × 250 = 750, then add one zero = 7,500. ✓"
     },
     {
       id: 169,
       difficulty: 1,
       question: "What is 40 × 600?",
-      options: ["2,400", "24,000", "6,400", "64,000", "4,600"],
-      correct: 1,
+      options: ["23,960", "23,900", "24,010", "240,000", "24,000"],
+      correct: 4,
       explanation: "40 × 600: Think 4 × 6 = 24, then add three zeros = 24,000. ✓"
     },
     {
       id: 170,
       difficulty: 1,
       question: "A farmer plants 50 rows of carrots with 120 carrots in each row. How many carrots is that?",
-      options: ["1,700", "3,000", "6,000", "12,000", "60,000"],
-      correct: 2,
+      options: ["6,000", "5,950", "5,900", "1,050", "6,010"],
+      correct: 0,
       explanation: "50 × 120 = 6,000. Think 5 × 12 = 60, then add two zeros = 6,000. ✓"
     },
     {
       id: 171,
       difficulty: 1,
       question: "What is 80 × 700?",
-      options: ["5,600", "7,800", "78,000", "56,000", "15,600"],
-      correct: 3,
+      options: ["780", "56,000", "55,920", "55,900", "5,600"],
+      correct: 1,
       explanation: "80 × 700: Think 8 × 7 = 56, then add three zeros = 56,000. ✓"
     },
     {
       id: 172,
       difficulty: 1,
       question: "What is 200 × 50?",
-      options: ["1,000", "2,500", "100,000", "25,000", "10,000"],
-      correct: 4,
+      options: ["10,010", "100,000", "10,000", "9,900", "9,800"],
+      correct: 2,
       explanation: "200 × 50: Think 2 × 5 = 10, then add three zeros = 10,000. ✓"
     },
     {
       id: 173,
       difficulty: 1,
       question: "A charity event has 60 tables. Each table seats 40 people. How many people can be seated?",
-      options: ["2,400", "240", "1,000", "100", "24,000"],
-      correct: 0,
+      options: ["2,300", "240", "2,410", "2,400", "2,340"],
+      correct: 3,
       explanation: "60 × 40 = 2,400. Think 6 × 4 = 24, then add two zeros = 2,400. ✓"
     },
     {
       id: 174,
       difficulty: 1,
       question: "What is 90 × 300?",
-      options: ["2,700", "27,000", "9,300", "93,000", "270"],
-      correct: 1,
+      options: ["26,910", "26,900", "2,700", "390", "27,000"],
+      correct: 4,
       explanation: "90 × 300: Think 9 × 3 = 27, then add three zeros = 27,000. ✓"
     },
     {
       id: 175,
       difficulty: 1,
       question: "What is 400 × 500?",
-      options: ["2,000", "20,000", "200,000", "900", "9,000"],
-      correct: 2,
+      options: ["200,000", "199,900", "199,600", "200,010", "2,000,000"],
+      correct: 0,
       explanation: "400 × 500: Think 4 × 5 = 20, then add four zeros = 200,000. ✓"
     },
     {
       id: 176,
       difficulty: 1,
       question: "A warehouse stores 60 pallets. Each pallet holds 350 boxes. How many boxes in total?",
-      options: ["2,100", "4,100", "41,000", "21,000", "210,000"],
-      correct: 3,
+      options: ["21,010", "21,000", "20,940", "20,900", "3,180"],
+      correct: 1,
       explanation: "60 × 350 = 21,000. Think 6 × 35 = 210, then add two zeros = 21,000. ✓"
     },
     {
       id: 177,
       difficulty: 1,
       question: "What is 800 × 90?",
-      options: ["7,200", "8,900", "720", "89,000", "72,000"],
-      correct: 4,
+      options: ["7,200", "890", "72,000", "71,900", "71,200"],
+      correct: 2,
       explanation: "800 × 90: Think 8 × 9 = 72, then add three zeros = 72,000. ✓"
     },
     {
       id: 178,
       difficulty: 1,
       question: "Work out 23 × 6 by splitting 23 into 20 + 3. What is (20 × 6) + (3 × 6)?",
-      options: ["138", "128", "118", "148", "158"],
-      correct: 0,
+      options: ["148", "192", "1380", "138", "115"],
+      correct: 3,
       explanation: "20 × 6 = 120 and 3 × 6 = 18. 120 + 18 = 138. ✓"
     },
     {
       id: 179,
       difficulty: 1,
       question: "To work out 34 × 5, Olivia splits 34 into 30 + 4. What is her answer?",
-      options: ["150", "170", "160", "180", "190"],
-      correct: 1,
+      options: ["136", "180", "215", "1700", "170"],
+      correct: 4,
       explanation: "30 × 5 = 150 and 4 × 5 = 20. 150 + 20 = 170. ✓"
     },
     {
       id: 180,
       difficulty: 1,
       question: "What is 42 × 3? Use partitioning: (40 × 3) + (2 × 3).",
-      options: ["116", "121", "126", "131", "136"],
-      correct: 2,
+      options: ["126", "84", "72", "136", "1260"],
+      correct: 0,
       explanation: "40 × 3 = 120 and 2 × 3 = 6. 120 + 6 = 126. ✓"
     },
     {
       id: 181,
       difficulty: 1,
       question: "Work out 56 × 4 by partitioning 56 into 50 + 6.",
-      options: ["204", "214", "234", "224", "244"],
-      correct: 3,
+      options: ["2240", "224", "168", "234", "260"],
+      correct: 1,
       explanation: "50 × 4 = 200 and 6 × 4 = 24. 200 + 24 = 224. ✓"
     },
     {
       id: 182,
       difficulty: 2,
       question: "Work out 46 × 23 by partitioning 23 into 20 + 3. What is (46 × 20) + (46 × 3)?",
-      options: ["1,018", "1,038", "1,098", "1,078", "1,058"],
-      correct: 4,
+      options: ["1,472", "10,580", "1,058", "1,012", "1,068"],
+      correct: 2,
       explanation: "46 × 20 = 920 and 46 × 3 = 138. 920 + 138 = 1,058. ✓"
     },
     {
       id: 183,
       difficulty: 2,
       question: "Ben works out 67 × 14 by splitting 14 into 10 + 4. What answer does he get?",
-      options: ["938", "928", "918", "948", "958"],
-      correct: 0,
+      options: ["1064", "2747", "9380", "938", "948"],
+      correct: 3,
       explanation: "67 × 10 = 670 and 67 × 4 = 268. 670 + 268 = 938. ✓"
     },
     {
       id: 184,
       difficulty: 2,
       question: "Use partitioning to work out 83 × 17. Split 17 into 10 + 7.",
-      options: ["1,381", "1,411", "1,401", "1,391", "1,421"],
-      correct: 1,
+      options: ["1,328", "1,421", "5,893", "14,110", "1,411"],
+      correct: 4,
       explanation: "83 × 10 = 830 and 83 × 7 = 581. 830 + 581 = 1,411. ✓"
     },
     {
       id: 185,
       difficulty: 2,
       question: "Work out 125 × 16 by partitioning 16 into 10 + 6. What is (125 × 10) + (125 × 6)?",
-      options: ["1,900", "1,950", "2,000", "2,050", "2,100"],
-      correct: 2,
+      options: ["2,000", "2,010", "7,625", "8,336", "20,000"],
+      correct: 0,
       explanation: "125 × 10 = 1,250 and 125 × 6 = 750. 1,250 + 750 = 2,000. ✓"
     },
     {
       id: 186,
       difficulty: 2,
       question: "Partition 54 × 32 into (54 × 30) + (54 × 2). What is the answer?",
-      options: ["1,688", "1,708", "1,748", "1,728", "1,768"],
-      correct: 3,
+      options: ["1,738", "1,728", "1,674", "1,628", "1,440"],
+      correct: 1,
       explanation: "54 × 30 = 1,620 and 54 × 2 = 108. 1,620 + 108 = 1,728. ✓"
     },
     {
       id: 187,
       difficulty: 2,
       question: "Work out 73 × 25 by partitioning 25 into 20 + 5.",
-      options: ["1,775", "1,800", "1,875", "1,850", "1,825"],
-      correct: 4,
+      options: ["925", "511", "1,825", "1,752", "1,725"],
+      correct: 2,
       explanation: "73 × 20 = 1,460 and 73 × 5 = 365. 1,460 + 365 = 1,825. ✓"
     },
     {
       id: 188,
       difficulty: 2,
       question: "Use partitioning to calculate 215 × 14. Split 14 into 10 + 4.",
-      options: ["3,010", "2,990", "2,960", "3,040", "3,070"],
-      correct: 0,
+      options: ["7,168", "8,815", "30,100", "3,010", "3,020"],
+      correct: 3,
       explanation: "215 × 10 = 2,150 and 215 × 4 = 860. 2,150 + 860 = 3,010. ✓"
     },
     {
       id: 189,
       difficulty: 2,
       question: "Use partitioning to work out 148 × 23. Split 23 into 20 + 3.",
-      options: ["3,354", "3,404", "3,384", "3,424", "3,454"],
-      correct: 1,
+      options: ["3,414", "4,736", "19,343", "34,040", "3,404"],
+      correct: 4,
       explanation: "148 × 20 = 2,960 and 148 × 3 = 444. 2,960 + 444 = 3,404. ✓"
     },
     {
       id: 190,
       difficulty: 2,
       question: "Amy partitions 256 × 34 into (256 × 30) + (256 × 4). What is the final answer?",
-      options: ["8,654", "8,684", "8,704", "8,734", "8,764"],
-      correct: 2,
+      options: ["8,704", "8,714", "11,008", "22,168", "87,040"],
+      correct: 0,
       explanation: "256 × 30 = 7,680 and 256 × 4 = 1,024. 7,680 + 1,024 = 8,704. ✓"
     },
     {
       id: 191,
       difficulty: 2,
       question: "Work out 365 × 28 by partitioning: (365 × 20) + (365 × 8).",
-      options: ["10,170", "10,200", "10,250", "10,220", "10,280"],
-      correct: 3,
+      options: ["102,200", "10,220", "10,230", "15,764", "29,930"],
+      correct: 1,
       explanation: "365 × 20 = 7,300 and 365 × 8 = 2,920. 7,300 + 2,920 = 10,220. ✓"
     },
     {
       id: 192,
       difficulty: 2,
       question: "Partition and calculate: 437 × 15 = (437 × 10) + (437 × 5).",
-      options: ["6,505", "6,535", "6,605", "6,575", "6,555"],
-      correct: 4,
+      options: ["22,287", "65,550", "6,555", "6,565", "11,010"],
+      correct: 2,
       explanation: "437 × 10 = 4,370 and 437 × 5 = 2,185. 4,370 + 2,185 = 6,555. ✓"
     },
     {
       id: 193,
       difficulty: 1,
       question: "Use a grid to work out 24 × 13. Split into (20 + 4) × (10 + 3). What is the total?",
-      options: ["312", "302", "292", "322", "332"],
-      correct: 0,
+      options: ["546", "744", "3120", "312", "322"],
+      correct: 3,
       explanation: "Grid: 20×10=200, 20×3=60, 4×10=40, 4×3=12. Total: 200+60+40+12 = 312. ✓"
     },
     {
       id: 194,
       difficulty: 1,
       question: "Use a grid to work out 35 × 12. Split into (30 + 5) × (10 + 2). What is the total?",
-      options: ["400", "420", "410", "430", "440"],
-      correct: 1,
+      options: ["430", "636", "735", "4200", "420"],
+      correct: 4,
       explanation: "Grid: 30×10=300, 30×2=60, 5×10=50, 5×2=10. Total: 300+60+50+10 = 420. ✓"
     },
     {
       id: 195,
       difficulty: 1,
       question: "In a grid for 46 × 7, you get 40 × 7 and 6 × 7. What is the total?",
-      options: ["302", "312", "322", "332", "342"],
-      correct: 2,
+      options: ["322", "276", "222", "332", "448"],
+      correct: 0,
       explanation: "Grid: 40×7=280, 6×7=42. Total: 280+42 = 322. ✓"
     },
     {
       id: 196,
       difficulty: 1,
       question: "Use a grid to work out 53 × 8. Split into (50 + 3) × 8.",
-      options: ["404", "414", "434", "424", "444"],
-      correct: 3,
+      options: ["434", "424", "371", "324", "280"],
+      correct: 1,
       explanation: "Grid: 50×8=400, 3×8=24. Total: 400+24 = 424. ✓"
     },
     {
       id: 197,
       difficulty: 2,
       question: "Use the grid method to work out 37 × 24. Split into (30 + 7) × (20 + 4).",
-      options: ["868", "878", "908", "898", "888"],
-      correct: 4,
+      options: ["1554", "1752", "888", "851", "898"],
+      correct: 2,
       explanation: "Grid: 30×20=600, 30×4=120, 7×20=140, 7×4=28. Total: 600+120+140+28 = 888. ✓"
     },
     {
       id: 198,
       difficulty: 2,
       question: "Use the grid method to work out 56 × 34.",
-      options: ["1,904", "1,894", "1,884", "1,914", "1,924"],
-      correct: 0,
+      options: ["2,210", "2,408", "19,040", "1,904", "1,914"],
+      correct: 3,
       explanation: "Grid: 50×30=1,500, 50×4=200, 6×30=180, 6×4=24. Total: 1,500+200+180+24 = 1,904. ✓"
     },
     {
       id: 199,
       difficulty: 2,
       question: "Use the grid method to work out 68 × 27.",
-      options: ["1,816", "1,836", "1,826", "1,846", "1,856"],
-      correct: 1,
+      options: ["1,768", "1,736", "612", "476", "1,836"],
+      correct: 4,
       explanation: "Grid: 60×20=1,200, 60×7=420, 8×20=160, 8×7=56. Total: 1,200+420+160+56 = 1,836. ✓"
     },
     {
@@ -11240,224 +11240,224 @@ longmultiplication: {
       id: 201,
       difficulty: 2,
       question: "Use the grid method to work out 82 × 45.",
-      options: ["3,670", "3,680", "3,700", "3,690", "3,710"],
-      correct: 3,
+      options: ["4,428", "3,690", "3,608", "3,590", "3,700"],
+      correct: 1,
       explanation: "Grid: 80×40=3,200, 80×5=400, 2×40=80, 2×5=10. Total: 3,200+400+80+10 = 3,690. ✓"
     },
     {
       id: 202,
       difficulty: 2,
       question: "Use the grid method to work out 73 × 52.",
-      options: ["3,776", "3,786", "3,816", "3,806", "3,796"],
-      correct: 4,
+      options: ["1,924", "3,806", "3,796", "3,723", "3,696"],
+      correct: 2,
       explanation: "Grid: 70×50=3,500, 70×2=140, 3×50=150, 3×2=6. Total: 3,500+140+150+6 = 3,796. ✓"
     },
     {
       id: 203,
       difficulty: 2,
       question: "Use the grid method to work out 64 × 38.",
-      options: ["2,432", "2,422", "2,412", "2,442", "2,452"],
-      correct: 0,
+      options: ["2,442", "5,312", "24,320", "2,432", "2,368"],
+      correct: 3,
       explanation: "Grid: 60×30=1,800, 60×8=480, 4×30=120, 4×8=32. Total: 1,800+480+120+32 = 2,432. ✓"
     },
     {
       id: 204,
       difficulty: 2,
       question: "Use the grid method to work out 136 × 24.",
-      options: ["3,224", "3,264", "3,244", "3,284", "3,304"],
-      correct: 1,
+      options: ["3,274", "5,712", "15,144", "32,640", "3,264"],
+      correct: 4,
       explanation: "Grid: 100×20=2,000, 100×4=400, 30×20=600, 30×4=120, 6×20=120, 6×4=24. Total: 2,000+400+600+120+120+24 = 3,264. ✓"
     },
     {
       id: 205,
       difficulty: 2,
       question: "Use the grid method to work out 214 × 35.",
-      options: ["7,470", "7,480", "7,490", "7,500", "7,510"],
-      correct: 2,
+      options: ["7,490", "7,390", "7,276", "1,712", "1,070"],
+      correct: 0,
       explanation: "Grid: 200×30=6,000, 200×5=1,000, 10×30=300, 10×5=50, 4×30=120, 4×5=20. Total: 6,000+1,000+300+50+120+20 = 7,490. ✓"
     },
     {
       id: 206,
       difficulty: 2,
       question: "Use the grid method to work out 163 × 47.",
-      options: ["7,641", "7,651", "7,671", "7,661", "7,681"],
-      correct: 3,
+      options: ["12,062", "7,661", "7,561", "7,498", "7,671"],
+      correct: 1,
       explanation: "Grid: 100×40=4,000, 100×7=700, 60×40=2,400, 60×7=420, 3×40=120, 3×7=21. Total: 4,000+700+2,400+420+120+21 = 7,661. ✓"
     },
     {
       id: 207,
       difficulty: 2,
       question: "Use the grid method to work out 248 × 53.",
-      options: ["13,124", "13,134", "13,164", "13,154", "13,144"],
-      correct: 4,
+      options: ["44,626", "131,440", "13,144", "13,044", "13,154"],
+      correct: 2,
       explanation: "Grid: 200×50=10,000, 200×3=600, 40×50=2,000, 40×3=120, 8×50=400, 8×3=24. Total: 10,000+600+2,000+120+400+24 = 13,144. ✓"
     },
     {
       id: 208,
       difficulty: 1,
       question: "In the column method for 47 × 3, what is the answer to the ones row (47 × 3)?",
-      options: ["141", "131", "121", "151", "161"],
-      correct: 0,
+      options: ["50", "41", "151", "141", "94"],
+      correct: 3,
       explanation: "47 × 3: Start from the right. 3 × 7 = 21, write 1 carry 2. 3 × 4 = 12, plus 2 = 14. The ones row is 141. ✓"
     },
     {
       id: 209,
       difficulty: 1,
       question: "In the column method for 86 × 4, what is the ones row (86 × 4)?",
-      options: ["324", "344", "334", "354", "364"],
-      correct: 1,
+      options: ["272", "258", "244", "90", "344"],
+      correct: 4,
       explanation: "86 × 4: Start from the right. 4 × 6 = 24, write 4 carry 2. 4 × 8 = 32, plus 2 = 34. The ones row is 344. ✓"
     },
     {
       id: 210,
       difficulty: 2,
       question: "In the column method for 53 × 27, what is the first partial product (53 × 7)?",
-      options: ["351", "361", "371", "381", "391"],
-      correct: 2,
+      options: ["371", "318", "271", "381", "3710"],
+      correct: 0,
       explanation: "53 × 7: Start from the right. 7 × 3 = 21, write 1 carry 2. 7 × 5 = 35, plus 2 = 37. The first partial product is 371. ✓"
     },
     {
       id: 211,
       difficulty: 1,
       question: "In the column method for 129 × 6, what is the ones row (129 × 6)?",
-      options: ["754", "764", "784", "774", "794"],
-      correct: 3,
+      options: ["7740", "774", "674", "784", "5526"],
+      correct: 1,
       explanation: "129 × 6: 6 × 9 = 54, write 4 carry 5. 6 × 2 = 12, plus 5 = 17, write 7 carry 1. 6 × 1 = 6, plus 1 = 7. The ones row is 774. ✓"
     },
     {
       id: 212,
       difficulty: 1,
       question: "In the column method for 245 × 8, what is the ones row (245 × 8)?",
-      options: ["1,940", "1,950", "1,980", "1,970", "1,960"],
-      correct: 4,
+      options: ["253", "1,970", "1,960", "1,860", "1,715"],
+      correct: 2,
       explanation: "245 × 8: 8 × 5 = 40, write 0 carry 4. 8 × 4 = 32, plus 4 = 36, write 6 carry 3. 8 × 2 = 16, plus 3 = 19. The ones row is 1,960. ✓"
     },
     {
       id: 213,
       difficulty: 1,
       question: "In the column method for 47 × 23, the tens row is 47 × 20. What is it?",
-      options: ["940", "930", "920", "950", "960"],
-      correct: 0,
+      options: ["840", "94", "67", "940", "893"],
+      correct: 3,
       explanation: "47 × 20 = 940. Think of it as 47 × 2 = 94, then write a 0 to get 940. ✓"
     },
     {
       id: 214,
       difficulty: 1,
       question: "In the column method for 86 × 34, the tens row is 86 × 30. What is it?",
-      options: ["2,560", "2,580", "2,570", "2,590", "2,600"],
-      correct: 1,
+      options: ["2,494", "2,480", "2,590", "25,800", "2,580"],
+      correct: 4,
       explanation: "86 × 30 = 2,580. Think of it as 86 × 3 = 258, then write a 0 to get 2,580. ✓"
     },
     {
       id: 215,
       difficulty: 1,
       question: "In the column method for 65 × 43, the tens row is 65 × 40. What is it?",
-      options: ["2,580", "2,590", "2,600", "2,610", "2,620"],
-      correct: 2,
+      options: ["2,600", "2,535", "2,500", "2,240", "2,610"],
+      correct: 0,
       explanation: "65 × 40 = 2,600. Think of it as 65 × 4 = 260, then write a 0 to get 2,600. ✓"
     },
     {
       id: 216,
       difficulty: 2,
       question: "In the column method for 134 × 52, the tens row is 134 × 50. What is it?",
-      options: ["6,680", "6,690", "6,710", "6,700", "6,720"],
-      correct: 3,
+      options: ["67,000", "6,700", "6,600", "6,710", "21,550"],
+      correct: 1,
       explanation: "134 × 50 = 6,700. Think of it as 134 × 5 = 670, then write a 0 to get 6,700. ✓"
     },
     {
       id: 217,
       difficulty: 2,
       question: "In the column method for 258 × 63, the tens row is 258 × 60. What is it?",
-      options: ["15,460", "15,470", "15,500", "15,490", "15,480"],
-      correct: 4,
+      options: ["1,548", "318", "15,480", "15,380", "15,222"],
+      correct: 2,
       explanation: "258 × 60 = 15,480. Think of it as 258 × 6 = 1,548, then write a 0 to get 15,480. ✓"
     },
     {
       id: 218,
       difficulty: 1,
       question: "In the column method for 36 × 24, the ones row is 144 and the tens row is 720. What is the final answer?",
-      options: ["864", "854", "844", "874", "884"],
-      correct: 0,
+      options: ["764", "874", "1512", "864", "828"],
+      correct: 3,
       explanation: "Add the two rows: 144 + 720 = 864. So 36 × 24 = 864. ✓"
     },
     {
       id: 219,
       difficulty: 2,
       question: "In the column method for 58 × 35, the ones row is 290 and the tens row is 1,740. What is the final answer?",
-      options: ["2,010", "2,030", "2,020", "2,040", "2,050"],
-      correct: 1,
+      options: ["2,040", "2,975", "3,074", "20,300", "2,030"],
+      correct: 4,
       explanation: "Add the two rows: 290 + 1,740 = 2,030. So 58 × 35 = 2,030. ✓"
     },
     {
       id: 220,
       difficulty: 2,
       question: "In the column method for 74 × 46, the ones row is 444 and the tens row is 2,960. What is the final answer?",
-      options: ["3,384", "3,394", "3,404", "3,414", "3,424"],
-      correct: 2,
+      options: ["3,404", "3,330", "3,414", "4,736", "34,040"],
+      correct: 0,
       explanation: "Add the two rows: 444 + 2,960 = 3,404. So 74 × 46 = 3,404. ✓"
     },
     {
       id: 221,
       difficulty: 2,
       question: "In the column method for 126 × 34, the ones row is 504 and the tens row is 3,780. What is the final answer?",
-      options: ["4,264", "4,274", "4,294", "4,284", "4,304"],
-      correct: 3,
+      options: ["42,840", "4,284", "4,294", "5,418", "21,114"],
+      correct: 1,
       explanation: "Add the two rows: 504 + 3,780 = 4,284. So 126 × 34 = 4,284. ✓"
     },
     {
       id: 222,
       difficulty: 2,
       question: "In the column method for 215 × 27, the ones row is 1,505 and the tens row is 4,300. What is the final answer?",
-      options: ["5,785", "5,795", "5,825", "5,815", "5,805"],
-      correct: 4,
+      options: ["15,480", "58,050", "5,805", "5,815", "13,824"],
+      correct: 2,
       explanation: "Add the two rows: 1,505 + 4,300 = 5,805. So 215 × 27 = 5,805. ✓"
     },
     {
       id: 223,
       difficulty: 1,
       question: "A Year 5 class has 47 pupils. Each pupil brings 8 cakes for the bake sale. How many cakes are there altogether?",
-      options: ["376", "366", "356", "386", "396"],
-      correct: 0,
+      options: ["276", "55", "386", "376", "329"],
+      correct: 3,
       explanation: "47 × 8 = 376. Work it out: (40 × 8) + (7 × 8) = 320 + 56 = 376 cakes. ✓"
     },
     {
       id: 224,
       difficulty: 1,
       question: "A bookshop receives 156 books in each delivery. How many books arrive in 6 deliveries?",
-      options: ["916", "936", "926", "946", "956"],
-      correct: 1,
+      options: ["836", "780", "162", "94", "936"],
+      correct: 4,
       explanation: "156 × 6 = 936. Work it out: (100 × 6) + (50 × 6) + (6 × 6) = 600 + 300 + 36 = 936 books. ✓"
     },
     {
       id: 225,
       difficulty: 3,
       question: "What is 347 × 56?",
-      options: ["19,412", "19,422", "19,432", "19,442", "19,452"],
-      correct: 2,
+      options: ["19,432", "19,442", "22,555", "41,608", "194,320"],
+      correct: 0,
       explanation: "347 × 56: (347 × 50 = 17,350) + (347 × 6 = 2,082) = 17,350 + 2,082 = 19,432. ✓"
     },
     {
       id: 226,
       difficulty: 3,
       question: "What is 589 × 43?",
-      options: ["25,307", "25,317", "25,337", "25,327", "25,347"],
-      correct: 3,
+      options: ["42,355", "25,327", "25,227", "24,738", "25,337"],
+      correct: 1,
       explanation: "589 × 43: (589 × 40 = 23,560) + (589 × 3 = 1,767) = 23,560 + 1,767 = 25,327. ✓"
     },
     {
       id: 227,
       difficulty: 3,
       question: "What is 726 × 38?",
-      options: ["27,568", "27,578", "27,608", "27,598", "27,588"],
-      correct: 4,
+      options: ["60,258", "275,880", "27,588", "27,488", "27,598"],
+      correct: 2,
       explanation: "726 × 38: (726 × 40 = 29,040) - (726 × 2 = 1,452) = 29,040 - 1,452 = 27,588. ✓"
     },
     {
       id: 228,
       difficulty: 3,
       question: "What is 463 × 67?",
-      options: ["31,021", "31,011", "31,001", "31,031", "31,041"],
-      correct: 0,
+      options: ["30,558", "24,388", "31,031", "31,021", "30,921"],
+      correct: 3,
       explanation: "463 × 67: (463 × 70 = 32,410) - (463 × 3 = 1,389) = 32,410 - 1,389 = 31,021. ✓"
     }
   ]
@@ -11470,8 +11470,8 @@ algebra: {
       id: 1,
       difficulty: 1,
       question: "Emma thinks of a number, adds 7, and gets 15. What number did Emma think of?",
-      options: ["8", "7", "6", "9", "22"],
-      correct: 0,
+      options: ["15", "8", "7", "1", "9"],
+      correct: 1,
       explanation: "Let Emma's number be x. So x + 7 = 15. To find x, subtract 7 from both sides: x = 15 - 7 = 8. Emma thought of 8. ✓"
     },
     {
@@ -11502,8 +11502,8 @@ algebra: {
       id: 5,
       difficulty: 2,
       question: "Lily thinks of a number, multiplies it by 4, then adds 5 to get 29. What was Lily's number?",
-      options: ["4", "5", "8", "7", "6"],
-      correct: 4,
+      options: ["6", "5", "7", "19", "29"],
+      correct: 0,
       explanation: "Let the number be x. So 4x + 5 = 29. First subtract 5: 4x = 24. Then divide by 4: x = 6. Lily's number was 6. ✓"
     },
     {
@@ -11568,8 +11568,8 @@ algebra: {
       id: 13,
       difficulty: 2,
       question: "In a number puzzle, 2x + 6 = 20. What is x?",
-      options: ["x = 5", "x = 6", "x = 7", "x = 8", "x = 13"],
-      correct: 2,
+      options: ["x = 10", "x = 13", "x = 14", "x = 7", "x = 8"],
+      correct: 3,
       explanation: "Subtract 6 from both sides: 2x = 14. Then divide by 2: x = 7. Check: 2 × 7 + 6 = 14 + 6 = 20. ✓"
     },
     {
@@ -11585,8 +11585,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["× 2", "− 3"], output: 13, direction: "backwards" } },
       question: "A number machine doubles a number then subtracts 3. The output is 13. What was the input?",
-      options: ["5", "6", "7", "10", "8"],
-      correct: 4,
+      options: ["8", "7", "9", "10", "13"],
+      correct: 0,
       explanation: "Let input = x. The machine does 2x - 3 = 13. Add 3: 2x = 16. Divide by 2: x = 8. The input was 8. ✓"
     },
     {
@@ -11617,8 +11617,8 @@ algebra: {
       id: 19,
       difficulty: 2,
       question: "Tom thinks of a number n. He multiplies it by 3 and subtracts 4 to get 17. What is n?",
-      options: ["n = 5", "n = 6", "n = 8", "n = 7", "n = 13"],
-      correct: 3,
+      options: ["n = 8", "n = 9", "n = 13", "n = 17", "n = 7"],
+      correct: 4,
       explanation: "Add 4 to both sides: 3n = 21. Divide by 3: n = 7. Check: 3 × 7 - 4 = 21 - 4 = 17. ✓"
     },
     {
@@ -11633,8 +11633,8 @@ algebra: {
       id: 21,
       difficulty: 2,
       question: "If p = 8, what is (p + 4) × 2?",
-      options: ["24", "20", "16", "28", "32"],
-      correct: 0,
+      options: ["26", "24", "20", "16", "8"],
+      correct: 1,
       explanation: "Substitute p = 8: (p + 4) × 2 = (8 + 4) × 2 = 12 × 2 = 24. Remember BODMAS — brackets first! ✓"
     },
     {
@@ -11657,8 +11657,8 @@ algebra: {
       id: 24,
       difficulty: 2,
       question: "Ahmed thinks of a number, adds 9, then divides by 3 to get 7. What was Ahmed's number?",
-      options: ["21", "15", "18", "12", "30"],
-      correct: 3,
+      options: ["11", "7", "2", "1", "12"],
+      correct: 4,
       explanation: "Working backwards: if dividing by 3 gives 7, then before dividing he had 21 (7 × 3 = 21). If adding 9 gave 21, his number was 21 - 9 = 12. ✓"
     },
     {
@@ -11682,8 +11682,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["+ 5", "× 2"], output: 24, direction: "backwards" } },
       question: "A number machine adds 5 then multiplies by 2. If the output is 24, what was the input?",
-      options: ["9", "7", "10", "12", "14"],
-      correct: 1,
+      options: ["20", "24", "7", "6", "8"],
+      correct: 2,
       explanation: "Working backwards: before multiplying by 2, the value was 24 ÷ 2 = 12. Before adding 5, the input was 12 - 5 = 7. ✓"
     },
     {
@@ -11714,8 +11714,8 @@ algebra: {
       id: 31,
       difficulty: 2,
       question: "If m = 7 and n = 4, what is 3m - 2n?",
-      options: ["13", "12", "11", "14", "15"],
-      correct: 0,
+      options: ["29", "13", "8", "21", "28"],
+      correct: 1,
       explanation: "Substitute values: 3m - 2n = 3 × 7 - 2 × 4 = 21 - 8 = 13. ✓"
     },
     {
@@ -11730,8 +11730,8 @@ algebra: {
       id: 33,
       difficulty: 2,
       question: "In a board game, 4y - 7 = 21. What is the value of y?",
-      options: ["y = 5", "y = 6", "y = 7", "y = 8", "y = 14"],
-      correct: 2,
+      options: ["y = 5", "y = 8", "y = 28", "y = 7", "y = 6"],
+      correct: 3,
       explanation: "Add 7 to both sides: 4y = 28. Divide by 4: y = 7. Check: 4 × 7 - 7 = 28 - 7 = 21. ✓"
     },
     {
@@ -11754,8 +11754,8 @@ algebra: {
       id: 36,
       difficulty: 1,
       question: "Noah thinks of a number, adds 9, and gets 21. What number did Noah think of?",
-      options: ["12", "11", "10", "13", "30"],
-      correct: 0,
+      options: ["21", "12", "11", "3", "13"],
+      correct: 1,
       explanation: "Let Noah's number be x. So x + 9 = 21. Subtract 9 from both sides: x = 21 - 9 = 12. ✓"
     },
     {
@@ -11770,8 +11770,8 @@ algebra: {
       id: 38,
       difficulty: 2,
       question: "Mia thinks of a number x. She multiplies it by 3 and adds 5 to get 26. What is x?",
-      options: ["x = 5", "x = 6", "x = 7", "x = 8", "x = 9"],
-      correct: 2,
+      options: ["x = 16", "x = 26", "x = 31", "x = 7", "x = 8"],
+      correct: 3,
       explanation: "Subtract 5: 3x = 21. Divide by 3: x = 7. Check: 3 × 7 + 5 = 21 + 5 = 26. ✓"
     },
     {
@@ -11786,8 +11786,8 @@ algebra: {
       id: 40,
       difficulty: 2,
       question: "In a number game, 5x - 8 = 22. Find the value of x.",
-      options: ["x = 5", "x = 14", "x = 7", "x = 8", "x = 6"],
-      correct: 4,
+      options: ["x = 6", "x = 5", "x = 4", "x = 3", "x = 7"],
+      correct: 0,
       explanation: "Add 8: 5x = 30. Divide by 5: x = 6. Check: 5 × 6 - 8 = 30 - 8 = 22. ✓"
     },
     {
@@ -11818,8 +11818,8 @@ algebra: {
       id: 44,
       difficulty: 2,
       question: "On a classroom puzzle wall, 6x - 10 = 32. What is x?",
-      options: ["x = 5", "x = 6", "x = 8", "x = 7", "x = 42"],
-      correct: 3,
+      options: ["x = 6", "x = 5", "x = 4", "x = 8", "x = 7"],
+      correct: 4,
       explanation: "Add 10: 6x = 42. Divide by 6: x = 7. Check: 6 × 7 - 10 = 42 - 10 = 32. ✓"
     },
     {
@@ -11834,8 +11834,8 @@ algebra: {
       id: 46,
       difficulty: 2,
       question: "Isla thinks of a number, multiplies it by 5, then adds 8 to get 43. What was her number?",
-      options: ["7", "6", "5", "8", "9"],
-      correct: 0,
+      options: ["51", "7", "8", "27", "43"],
+      correct: 1,
       explanation: "Let the number be x. So 5x + 8 = 43. Subtract 8: 5x = 35. Divide by 5: x = 7. ✓"
     },
     {
@@ -11876,8 +11876,8 @@ algebra: {
       id: 51,
       difficulty: 2,
       question: "On a maths challenge card, 4n + 9 = 37. What is the value of n?",
-      options: ["n = 7", "n = 6", "n = 8", "n = 9", "n = 46"],
-      correct: 0,
+      options: ["n = 12", "n = 7", "n = 6", "n = 8", "n = 9"],
+      correct: 1,
       explanation: "Subtract 9: 4n = 28. Divide by 4: n = 7. Check: 4 × 7 + 9 = 28 + 9 = 37. ✓"
     },
     {
@@ -11901,8 +11901,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["× 4", "− 7"], output: 25, direction: "backwards" } },
       question: "A number machine multiplies by 4 then subtracts 7. The output is 25. What was the input?",
-      options: ["6", "7", "9", "8", "10"],
-      correct: 3,
+      options: ["9", "11", "18", "25", "8"],
+      correct: 4,
       explanation: "Let input = x. So 4x - 7 = 25. Add 7: 4x = 32. Divide by 4: x = 8. ✓"
     },
     {
@@ -11917,8 +11917,8 @@ algebra: {
       id: 56,
       difficulty: 2,
       question: "Jack thinks of a number x. He multiplies it by 7 and subtracts 12 to get 30. What is x?",
-      options: ["x = 6", "x = 5", "x = 4", "x = 7", "x = 42"],
-      correct: 0,
+      options: ["x = 30", "x = 6", "x = 5", "x = 7", "x = 18"],
+      correct: 1,
       explanation: "Add 12: 7x = 42. Divide by 7: x = 6. Check: 7 × 6 - 12 = 42 - 12 = 30. ✓"
     },
     {
@@ -11981,8 +11981,8 @@ algebra: {
       id: 64,
       difficulty: 2,
       question: "Ava thinks of a number, adds 15, then divides by 4 to get 8. What was her number?",
-      options: ["23", "19", "21", "17", "32"],
-      correct: 3,
+      options: ["16", "8", "2", "18", "17"],
+      correct: 4,
       explanation: "Working backwards: if dividing by 4 gives 8, before dividing she had 32. If adding 15 gave 32, her number was 32 - 15 = 17. ✓"
     },
     {
@@ -11997,16 +11997,16 @@ algebra: {
       id: 66,
       difficulty: 2,
       question: "Solve: 9x - 14 = 40",
-      options: ["x = 6", "x = 5", "x = 4", "x = 7", "x = 54"],
-      correct: 0,
+      options: ["x = 54", "x = 6", "x = 5", "x = 4", "x = 7"],
+      correct: 1,
       explanation: "Add 14: 9x = 54. Divide by 9: x = 6. Check: 9 × 6 - 14 = 54 - 14 = 40. ✓"
     },
     {
       id: 67,
       difficulty: 2,
       question: "On a game show, m = 9 and n = 7. What is 5m - 3n?",
-      options: ["18", "24", "22", "20", "26"],
-      correct: 1,
+      options: ["64", "66", "24", "21", "45"],
+      correct: 2,
       explanation: "Substitute: 5m - 3n = 5 × 9 - 3 × 7 = 45 - 21 = 24. ✓"
     },
     {
@@ -12022,8 +12022,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["− 6", "× 5"], output: 35, direction: "backwards" } },
       question: "A number machine subtracts 6 then multiplies by 5. If the output is 35, what was the input?",
-      options: ["7", "8", "9", "13", "11"],
-      correct: 3,
+      options: ["12", "14", "25", "35", "13"],
+      correct: 4,
       explanation: "Working backwards: before multiplying by 5, value was 35 ÷ 5 = 7. Before subtracting 6, input was 7 + 6 = 13. ✓"
     },
     {
@@ -12038,8 +12038,8 @@ algebra: {
       id: 71,
       difficulty: 2,
       question: "A sports coach writes the puzzle 6y + 11 = 47 on the whiteboard. What is y?",
-      options: ["y = 6", "y = 5", "y = 4", "y = 7", "y = 58"],
-      correct: 0,
+      options: ["y = 36", "y = 6", "y = 7", "y = 8", "y = 10"],
+      correct: 1,
       explanation: "Subtract 11: 6y = 36. Divide by 6: y = 6. Check: 6 × 6 + 11 = 36 + 11 = 47. ✓"
     },
     {
@@ -12070,8 +12070,8 @@ algebra: {
       id: 75,
       difficulty: 2,
       question: "Solve: 5n - 6 = 34",
-      options: ["n = 6", "n = 7", "n = 40", "n = 9", "n = 8"],
-      correct: 4,
+      options: ["n = 8", "n = 7", "n = 6", "n = 9", "n = 40"],
+      correct: 0,
       explanation: "Add 6: 5n = 40. Divide by 5: n = 8. Check: 5 × 8 - 6 = 40 - 6 = 34. ✓"
     },
     {
@@ -12086,8 +12086,8 @@ algebra: {
       id: 77,
       difficulty: 2,
       question: "In a quiz, 10x - 15 = 45. What is x?",
-      options: ["x = 4", "x = 6", "x = 5", "x = 7", "x = 60"],
-      correct: 1,
+      options: ["x = 7", "x = 60", "x = 6", "x = 5", "x = 3"],
+      correct: 2,
       explanation: "Add 15: 10x = 60. Divide by 10: x = 6. ✓"
     },
     {
@@ -12110,8 +12110,8 @@ algebra: {
       id: 80,
       difficulty: 2,
       question: "Solve: 7y + 8 = 50",
-      options: ["y = 4", "y = 5", "y = 58", "y = 7", "y = 6"],
-      correct: 4,
+      options: ["y = 6", "y = 5", "y = 7", "y = 8", "y = 42"],
+      correct: 0,
       explanation: "Subtract 8: 7y = 42. Divide by 7: y = 6. ✓"
     },
     {
@@ -12134,8 +12134,8 @@ algebra: {
       id: 83,
       difficulty: 2,
       question: "Solve: 4x + 13 = 45",
-      options: ["x = 6", "x = 7", "x = 8", "x = 9", "x = 58"],
-      correct: 2,
+      options: ["x = 11", "x = 15", "x = 32", "x = 8", "x = 9"],
+      correct: 3,
       explanation: "Subtract 13: 4x = 32. Divide by 4: x = 8. ✓"
     },
     {
@@ -12159,8 +12159,8 @@ algebra: {
       id: 86,
       difficulty: 2,
       question: "Solve: 8x - 24 = 32",
-      options: ["x = 7", "x = 6", "x = 5", "x = 8", "x = 56"],
-      correct: 0,
+      options: ["x = 8", "x = 7", "x = 6", "x = 4", "x = 1"],
+      correct: 1,
       explanation: "Add 24: 8x = 56. Divide by 8: x = 7. ✓"
     },
     {
@@ -12183,8 +12183,8 @@ algebra: {
       id: 89,
       difficulty: 2,
       question: "Solve: 9x + 7 = 70",
-      options: ["x = 6", "x = 9", "x = 8", "x = 7", "x = 77"],
-      correct: 3,
+      options: ["x = 6", "x = 8", "x = 9", "x = 63", "x = 7"],
+      correct: 4,
       explanation: "Subtract 7: 9x = 63. Divide by 9: x = 7. ✓"
     },
     {
@@ -12208,8 +12208,8 @@ algebra: {
       id: 92,
       difficulty: 2,
       question: "Solve: 6y - 9 = 39",
-      options: ["y = 6", "y = 8", "y = 7", "y = 9", "y = 48"],
-      correct: 1,
+      options: ["y = 9", "y = 48", "y = 8", "y = 7", "y = 5"],
+      correct: 2,
       explanation: "Add 9: 6y = 48. Divide by 6: y = 8. ✓"
     },
     {
@@ -12224,16 +12224,16 @@ algebra: {
       id: 94,
       difficulty: 2,
       question: "If m = 11 and n = 8, what is 4m - 3n?",
-      options: ["16", "18", "22", "20", "24"],
-      correct: 3,
+      options: ["24", "44", "67", "68", "20"],
+      correct: 4,
       explanation: "Substitute: 4 × 11 - 3 × 8 = 44 - 24 = 20. ✓"
     },
     {
       id: 95,
       difficulty: 2,
       question: "Solve: 5x + 16 = 51",
-      options: ["x = 5", "x = 6", "x = 67", "x = 8", "x = 7"],
-      correct: 4,
+      options: ["x = 7", "x = 8", "x = 10", "x = 13", "x = 35"],
+      correct: 0,
       explanation: "Subtract 16: 5x = 35. Divide by 5: x = 7. ✓"
     },
     {
@@ -12256,8 +12256,8 @@ algebra: {
       id: 98,
       difficulty: 2,
       question: "Solve: 7n - 18 = 38",
-      options: ["n = 6", "n = 7", "n = 8", "n = 9", "n = 56"],
-      correct: 2,
+      options: ["n = 5", "n = 3", "n = 9", "n = 8", "n = 7"],
+      correct: 3,
       explanation: "Add 18: 7n = 56. Divide by 7: n = 8. ✓"
     },
     {
@@ -12272,16 +12272,16 @@ algebra: {
       id: 100,
       difficulty: 2,
       question: "If a = 7 and b = 11, what is 5a + 2b?",
-      options: ["47", "52", "67", "62", "57"],
-      correct: 4,
+      options: ["57", "35", "22", "13", "63"],
+      correct: 0,
       explanation: "Substitute: 5 × 7 + 2 × 11 = 35 + 22 = 57. ✓"
     },
     {
       id: 101,
       difficulty: 2,
       question: "Solve: 8x + 9 = 65",
-      options: ["x = 7", "x = 6", "x = 8", "x = 9", "x = 74"],
-      correct: 0,
+      options: ["x = 56", "x = 7", "x = 6", "x = 8", "x = 9"],
+      correct: 1,
       explanation: "Subtract 9: 8x = 56. Divide by 8: x = 7. ✓"
     },
     {
@@ -12289,8 +12289,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["× 2", "− 11"], output: 27, direction: "backwards" } },
       question: "A number machine doubles a number then subtracts 11. Output is 27. What was input?",
-      options: ["16", "19", "18", "17", "20"],
-      correct: 1,
+      options: ["20", "27", "19", "18", "16"],
+      correct: 2,
       explanation: "Let input = x. 2x - 11 = 27. Add 11: 2x = 38. Divide: x = 19. ✓"
     },
     {
@@ -12305,8 +12305,8 @@ algebra: {
       id: 104,
       difficulty: 2,
       question: "Solve: 9x - 27 = 45",
-      options: ["x = 6", "x = 7", "x = 9", "x = 8", "x = 72"],
-      correct: 3,
+      options: ["x = 7", "x = 5", "x = 2", "x = 9", "x = 8"],
+      correct: 4,
       explanation: "Add 27: 9x = 72. Divide by 9: x = 8. ✓"
     },
     {
@@ -12329,8 +12329,8 @@ algebra: {
       id: 107,
       difficulty: 2,
       question: "Solve: 6n + 17 = 53",
-      options: ["n = 4", "n = 6", "n = 5", "n = 7", "n = 70"],
-      correct: 1,
+      options: ["n = 12", "n = 36", "n = 6", "n = 7", "n = 9"],
+      correct: 2,
       explanation: "Subtract 17: 6n = 36. Divide by 6: n = 6. ✓"
     },
     {
@@ -12353,8 +12353,8 @@ algebra: {
       id: 110,
       difficulty: 2,
       question: "Solve: 7y + 15 = 64",
-      options: ["y = 5", "y = 6", "y = 79", "y = 8", "y = 7"],
-      correct: 4,
+      options: ["y = 7", "y = 8", "y = 9", "y = 11", "y = 49"],
+      correct: 0,
       explanation: "Subtract 15: 7y = 49. Divide by 7: y = 7. ✓"
     },
     {
@@ -12369,16 +12369,16 @@ algebra: {
       id: 112,
       difficulty: 2,
       question: "If a = 15 and b = 6, what is 2a - 3b?",
-      options: ["10", "12", "14", "16", "18"],
-      correct: 1,
+      options: ["48", "53", "12", "18", "30"],
+      correct: 2,
       explanation: "Substitute: 2 × 15 - 3 × 6 = 30 - 18 = 12. ✓"
     },
     {
       id: 113,
       difficulty: 2,
       question: "Solve: 10x - 35 = 45",
-      options: ["x = 6", "x = 7", "x = 8", "x = 9", "x = 80"],
-      correct: 2,
+      options: ["x = 5", "x = 9", "x = 80", "x = 8", "x = 7"],
+      correct: 3,
       explanation: "Add 35: 10x = 80. Divide by 10: x = 8. ✓"
     },
     {
@@ -12401,8 +12401,8 @@ algebra: {
       id: 116,
       difficulty: 2,
       question: "Solve: 5x + 21 = 56",
-      options: ["x = 7", "x = 6", "x = 5", "x = 8", "x = 77"],
-      correct: 0,
+      options: ["x = 15", "x = 7", "x = 6", "x = 8", "x = 11"],
+      correct: 1,
       explanation: "Subtract 21: 5x = 35. Divide by 5: x = 7. ✓"
     },
     {
@@ -12425,8 +12425,8 @@ algebra: {
       id: 119,
       difficulty: 2,
       question: "Solve: 8n - 16 = 56",
-      options: ["n = 7", "n = 8", "n = 10", "n = 9", "n = 72"],
-      correct: 3,
+      options: ["n = 8", "n = 7", "n = 5", "n = 10", "n = 9"],
+      correct: 4,
       explanation: "Add 16: 8n = 72. Divide by 8: n = 9. ✓"
     },
     {
@@ -12449,8 +12449,8 @@ algebra: {
       id: 122,
       difficulty: 2,
       question: "Solve: 9y + 13 = 76",
-      options: ["y = 5", "y = 7", "y = 6", "y = 8", "y = 89"],
-      correct: 1,
+      options: ["y = 10", "y = 63", "y = 7", "y = 6", "y = 8"],
+      correct: 2,
       explanation: "Subtract 13: 9y = 63. Divide by 9: y = 7. ✓"
     },
     {
@@ -12458,24 +12458,24 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["− 8", "× 6"], output: 48, direction: "backwards" } },
       question: "A number machine subtracts 8 then multiplies by 6. Output is 48. What was input?",
-      options: ["14", "15", "16", "17", "18"],
-      correct: 2,
+      options: ["17", "36", "48", "16", "15"],
+      correct: 3,
       explanation: "Working back: before ×6 was 48÷6=8. Before -8 was 8+8=16. ✓"
     },
     {
       id: 124,
       difficulty: 2,
       question: "If a = 13 and b = 10, what is 3a + 2b?",
-      options: ["53", "57", "61", "59", "63"],
-      correct: 3,
+      options: ["58", "39", "20", "19", "59"],
+      correct: 4,
       explanation: "Substitute: 3 × 13 + 2 × 10 = 39 + 20 = 59. ✓"
     },
     {
       id: 125,
       difficulty: 2,
       question: "Solve: 6x + 19 = 61",
-      options: ["x = 5", "x = 6", "x = 80", "x = 8", "x = 7"],
-      correct: 4,
+      options: ["x = 7", "x = 8", "x = 10", "x = 13", "x = 42"],
+      correct: 0,
       explanation: "Subtract 19: 6x = 42. Divide by 6: x = 7. ✓"
     },
     {
@@ -12498,8 +12498,8 @@ algebra: {
       id: 128,
       difficulty: 2,
       question: "Solve: 7x - 21 = 42",
-      options: ["x = 7", "x = 8", "x = 9", "x = 10", "x = 63"],
-      correct: 2,
+      options: ["x = 6", "x = 10", "x = 63", "x = 9", "x = 8"],
+      correct: 3,
       explanation: "Add 21: 7x = 63. Divide by 7: x = 9. ✓"
     },
     {
@@ -12522,8 +12522,8 @@ algebra: {
       id: 131,
       difficulty: 2,
       question: "Solve: 8n + 25 = 73",
-      options: ["n = 6", "n = 5", "n = 4", "n = 7", "n = 98"],
-      correct: 0,
+      options: ["n = 48", "n = 6", "n = 7", "n = 9", "n = 12"],
+      correct: 1,
       explanation: "Subtract 25: 8n = 48. Divide by 8: n = 6. ✓"
     },
     {
@@ -12546,8 +12546,8 @@ algebra: {
       id: 134,
       difficulty: 2,
       question: "Solve: 10y - 42 = 58",
-      options: ["y = 8", "y = 9", "y = 11", "y = 10", "y = 100"],
-      correct: 3,
+      options: ["y = 9", "y = 6", "y = 2", "y = 11", "y = 10"],
+      correct: 4,
       explanation: "Add 42: 10y = 100. Divide by 10: y = 10. ✓"
     },
     {
@@ -12581,8 +12581,8 @@ algebra: {
       difficulty: 1,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["− 6"], output: 11, direction: "backwards" } },
       question: "A number machine subtracts 6. The output is 11. What number was put in?",
-      options: ["5", "11", "17", "15", "19"],
-      correct: 2,
+      options: ["11", "5", "18", "17", "16"],
+      correct: 3,
       explanation: "The machine subtracts 6 and the output is 11. Working backwards, add 6: 11 + 6 = 17. The input was 17. ✓"
     },
     {
@@ -12590,8 +12590,8 @@ algebra: {
       difficulty: 1,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["÷ 4"], output: 9, direction: "backwards" } },
       question: "A number machine divides by 4. The output is 9. What number was put in?",
-      options: ["5", "13", "32", "36", "45"],
-      correct: 3,
+      options: ["35", "9", "2", "1", "36"],
+      correct: 4,
       explanation: "The machine divides by 4 and the output is 9. Working backwards, multiply by 4: 9 × 4 = 36. The input was 36. ✓"
     },
     {
@@ -12599,8 +12599,8 @@ algebra: {
       difficulty: 1,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["× 8"], output: 56, direction: "backwards" } },
       question: "A number machine multiplies by 8. The output is 56. What number was put in?",
-      options: ["6", "48", "8", "9", "7"],
-      correct: 4,
+      options: ["7", "6", "8", "40", "56"],
+      correct: 0,
       explanation: "The machine multiplies by 8 and the output is 56. Working backwards, divide by 8: 56 ÷ 8 = 7. The input was 7. ✓"
     },
     {
@@ -12608,8 +12608,8 @@ algebra: {
       difficulty: 1,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["+ 15"], output: 42, direction: "backwards" } },
       question: "A number machine adds 15. The output is 42. What number was put in?",
-      options: ["27", "23", "29", "37", "57"],
-      correct: 0,
+      options: ["42", "27", "26", "12", "28"],
+      correct: 1,
       explanation: "The machine adds 15 and the output is 42. Working backwards, subtract 15: 42 − 15 = 27. The input was 27. ✓"
     },
     {
@@ -12635,8 +12635,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["× 3", "− 5"], output: 19, direction: "backwards" } },
       question: "A number machine multiplies by 3 then subtracts 5. The output is 19. What was the input?",
-      options: ["6", "7", "9", "8", "10"],
-      correct: 3,
+      options: ["7", "9", "14", "19", "8"],
+      correct: 4,
       explanation: "Working backwards: the last step subtracted 5, so reverse it by adding 5: 19 + 5 = 24. The first step multiplied by 3, so reverse it by dividing by 3: 24 ÷ 3 = 8. The input was 8. ✓"
     },
     {
@@ -12644,8 +12644,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["+ 4", "× 5"], output: 50, direction: "backwards" } },
       question: "A number machine adds 4 then multiplies by 5. The output is 50. What was the input?",
-      options: ["4", "5", "8", "7", "6"],
-      correct: 4,
+      options: ["6", "5", "7", "40", "50"],
+      correct: 0,
       explanation: "Working backwards: the last step multiplied by 5, so divide by 5: 50 ÷ 5 = 10. The first step added 4, so subtract 4: 10 − 4 = 6. The input was 6. ✓"
     },
     {
@@ -12671,8 +12671,8 @@ algebra: {
       difficulty: 2,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["÷ 2", "+ 8"], output: 14, direction: "backwards" } },
       question: "A number machine divides by 2 then adds 8. The output is 14. What was the input?",
-      options: ["3", "6", "12", "10", "16"],
-      correct: 2,
+      options: ["13", "14", "22", "12", "11"],
+      correct: 3,
       explanation: "Working backwards: the last step added 8, so subtract 8: 14 − 8 = 6. The first step divided by 2, so multiply by 2: 6 × 2 = 12. The input was 12. ✓"
     },
     {
@@ -12698,8 +12698,8 @@ algebra: {
       difficulty: 3,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["+ 5", "× 3", "− 9"], output: 18, direction: "backwards" } },
       question: "A number machine adds 5, multiplies by 3, then subtracts 9. The output is 18. What was the input?",
-      options: ["4", "3", "2", "5", "6"],
-      correct: 0,
+      options: ["18", "4", "3", "5", "9"],
+      correct: 1,
       explanation: "Working backwards through three steps. Last step subtracted 9, so add 9: 18 + 9 = 27. Middle step multiplied by 3, so divide by 3: 27 ÷ 3 = 9. First step added 5, so subtract 5: 9 − 5 = 4. The input was 4. ✓"
     },
     {
@@ -12716,8 +12716,8 @@ algebra: {
       difficulty: 3,
       visual: { component: "FunctionMachine", props: { input: "?", operations: ["× 3", "+ 7"], output: 31, direction: "backwards" } },
       question: "Machine A multiplies by 3. Machine B adds 7. A number goes through Machine A first, then Machine B. The output is 31. What was the original input?",
-      options: ["6", "7", "8", "9", "10"],
-      correct: 2,
+      options: ["17", "31", "38", "8", "9"],
+      correct: 3,
       explanation: "Working backwards from 31. Machine B added 7, so subtract 7: 31 − 7 = 24. Machine A multiplied by 3, so divide by 3: 24 ÷ 3 = 8. The original input was 8. ✓"
     },
     {
@@ -12733,8 +12733,8 @@ algebra: {
       id: 155,
       difficulty: 1,
       question: "Oliver thinks of a number, adds 8, and gets 23. What number did Oliver think of?",
-      options: ["13", "14", "31", "16", "15"],
-      correct: 4,
+      options: ["15", "14", "7", "16", "23"],
+      correct: 0,
       explanation: "Oliver added 8 to get 23. The inverse of adding 8 is subtracting 8. So 23 − 8 = 15. Oliver thought of 15. ✓"
     },
     {
@@ -12749,8 +12749,8 @@ algebra: {
       id: 157,
       difficulty: 1,
       question: "Ava thinks of a number, subtracts 12, and gets 19. What number did Ava think of?",
-      options: ["7", "31", "27", "19", "33"],
-      correct: 1,
+      options: ["7", "32", "31", "30", "19"],
+      correct: 2,
       explanation: "Ava subtracted 12 to get 19. The inverse of subtracting 12 is adding 12. So 19 + 12 = 31. Ava thought of 31. ✓"
     },
     {
@@ -12765,48 +12765,48 @@ algebra: {
       id: 159,
       difficulty: 1,
       question: "Jack thinks of a number, multiplies it by 7, and gets 63. What number did Jack think of?",
-      options: ["7", "8", "10", "9", "56"],
-      correct: 3,
+      options: ["8", "10", "49", "63", "9"],
+      correct: 4,
       explanation: "Jack multiplied by 7 to get 63. The inverse of multiplying by 7 is dividing by 7. So 63 ÷ 7 = 9. Jack thought of 9. ✓"
     },
     {
       id: 160,
       difficulty: 2,
       question: "Sophie thinks of a number, multiplies it by 4, then adds 7, and gets 35. What number did Sophie think of?",
-      options: ["5", "6", "9", "8", "7"],
-      correct: 4,
+      options: ["7", "8", "21", "35", "42"],
+      correct: 0,
       explanation: "Work backwards using inverse operations. Last step: added 7, so subtract 7: 35 − 7 = 28. First step: multiplied by 4, so divide by 4: 28 ÷ 4 = 7. Sophie thought of 7. Check: 7 × 4 + 7 = 28 + 7 = 35 ✓. ✓"
     },
     {
       id: 161,
       difficulty: 2,
       question: "Emma thinks of a number, adds 6, then multiplies by 3, and gets 33. What number did Emma think of?",
-      options: ["5", "4", "3", "6", "7"],
-      correct: 0,
+      options: ["33", "5", "4", "6", "27"],
+      correct: 1,
       explanation: "Work backwards using inverse operations. Last step: multiplied by 3, so divide by 3: 33 ÷ 3 = 11. First step: added 6, so subtract 6: 11 − 6 = 5. Emma thought of 5. Check: (5 + 6) × 3 = 11 × 3 = 33 ✓. ✓"
     },
     {
       id: 162,
       difficulty: 2,
       question: "Tom thinks of a number, multiplies it by 5, then subtracts 8, and gets 32. What number did Tom think of?",
-      options: ["6", "8", "7", "9", "10"],
-      correct: 1,
+      options: ["24", "32", "8", "9", "16"],
+      correct: 2,
       explanation: "Work backwards using inverse operations. Last step: subtracted 8, so add 8: 32 + 8 = 40. First step: multiplied by 5, so divide by 5: 40 ÷ 5 = 8. Tom thought of 8. Check: 8 × 5 − 8 = 40 − 8 = 32 ✓. ✓"
     },
     {
       id: 163,
       difficulty: 2,
       question: "Lily thinks of a number, subtracts 4, then divides by 3, and gets 5. What number did Lily think of?",
-      options: ["15", "17", "19", "21", "23"],
-      correct: 2,
+      options: ["5", "2", "20", "19", "18"],
+      correct: 3,
       explanation: "Work backwards using inverse operations. Last step: divided by 3, so multiply by 3: 5 × 3 = 15. First step: subtracted 4, so add 4: 15 + 4 = 19. Lily thought of 19. Check: (19 − 4) ÷ 3 = 15 ÷ 3 = 5 ✓. ✓"
     },
     {
       id: 164,
       difficulty: 2,
       question: "Harry starts with a number, doubles it, then adds 11, and gets 37. What number did Harry start with?",
-      options: ["11", "12", "14", "13", "24"],
-      correct: 3,
+      options: ["14", "15", "37", "48", "13"],
+      correct: 4,
       explanation: "Work backwards using inverse operations. Last step: added 11, so subtract 11: 37 − 11 = 26. First step: doubled (×2), so divide by 2: 26 ÷ 2 = 13. Harry started with 13. Check: 13 × 2 + 11 = 26 + 11 = 37 ✓. ✓"
     },
     {
@@ -12821,40 +12821,40 @@ algebra: {
       id: 166,
       difficulty: 2,
       question: "Noah thinks of a number, adds 3, then multiplies by 6, and gets 54. What number did Noah think of?",
-      options: ["6", "5", "4", "7", "8"],
-      correct: 0,
+      options: ["54", "6", "5", "7", "42"],
+      correct: 1,
       explanation: "Work backwards using inverse operations. Last step: multiplied by 6, so divide by 6: 54 ÷ 6 = 9. First step: added 3, so subtract 3: 9 − 3 = 6. Noah thought of 6. Check: (6 + 3) × 6 = 9 × 6 = 54 ✓. ✓"
     },
     {
       id: 167,
       difficulty: 2,
       question: "Amelia thinks of a number, subtracts 7, then multiplies by 4, and gets 36. What number did Amelia think of?",
-      options: ["14", "16", "15", "17", "18"],
-      correct: 1,
+      options: ["36", "144", "16", "17", "28"],
+      correct: 2,
       explanation: "Work backwards using inverse operations. Last step: multiplied by 4, so divide by 4: 36 ÷ 4 = 9. First step: subtracted 7, so add 7: 9 + 7 = 16. Amelia thought of 16. Check: (16 − 7) × 4 = 9 × 4 = 36 ✓. ✓"
     },
     {
       id: 168,
       difficulty: 3,
       question: "George thinks of a number, multiplies it by 3, adds 5, then doubles the result, and gets 46. What number did George think of?",
-      options: ["4", "5", "6", "7", "8"],
-      correct: 2,
+      options: ["7", "42", "46", "6", "5"],
+      correct: 3,
       explanation: "Work backwards through three steps. Step 3 doubled, so halve: 46 ÷ 2 = 23. Step 2 added 5, so subtract 5: 23 − 5 = 18. Step 1 multiplied by 3, so divide by 3: 18 ÷ 3 = 6. George thought of 6. Check: 6 × 3 = 18, then 18 + 5 = 23, then 23 × 2 = 46 ✓. ✓"
     },
     {
       id: 169,
       difficulty: 3,
       question: "Freya thinks of a number, adds 4, multiplies by 2, then subtracts 6, and gets 22. What number did Freya think of?",
-      options: ["8", "9", "11", "10", "12"],
-      correct: 3,
+      options: ["9", "11", "16", "22", "10"],
+      correct: 4,
       explanation: "Work backwards through three steps. Step 3 subtracted 6, so add 6: 22 + 6 = 28. Step 2 multiplied by 2, so divide by 2: 28 ÷ 2 = 14. Step 1 added 4, so subtract 4: 14 − 4 = 10. Freya thought of 10. Check: (10 + 4) × 2 − 6 = 14 × 2 − 6 = 28 − 6 = 22 ✓. ✓"
     },
     {
       id: 170,
       difficulty: 3,
       question: "Ethan thinks of a number, doubles it, subtracts 3, then multiplies by 5, and gets 85. What number did Ethan think of?",
-      options: ["8", "9", "12", "11", "10"],
-      correct: 4,
+      options: ["10", "9", "11", "75", "85"],
+      correct: 0,
       explanation: "Work backwards through three steps. Step 3 multiplied by 5, so divide by 5: 85 ÷ 5 = 17. Step 2 subtracted 3, so add 3: 17 + 3 = 20. Step 1 doubled, so halve: 20 ÷ 2 = 10. Ethan thought of 10. Check: 10 × 2 = 20, then 20 − 3 = 17, then 17 × 5 = 85 ✓. ✓"
     },
     {
@@ -13102,16 +13102,16 @@ algebra: {
       id: 200,
       difficulty: 2,
       question: "2n + 4 = 12. What is the value of n?",
-      options: ["n = 2", "n = 3", "n = 8", "n = 6", "n = 4"],
-      correct: 4,
+      options: ["n = 4", "n = 3", "n = 5", "n = 6", "n = 8"],
+      correct: 0,
       explanation: "Subtract 4 from both sides: 2n = 8. Divide both sides by 2: n = 4. Check: 2 × 4 + 4 = 8 + 4 = 12. ✓"
     },
     {
       id: 201,
       difficulty: 2,
       question: "3x - 7 = 14. What is x?",
-      options: ["x = 7", "x = 6", "x = 5", "x = 8", "x = 21"],
-      correct: 0,
+      options: ["x = 21", "x = 7", "x = 6", "x = 5", "x = 8"],
+      correct: 1,
       explanation: "Add 7 to both sides: 3x = 21. Divide both sides by 3: x = 7. Check: 3 × 7 - 7 = 21 - 7 = 14. ✓"
     },
     {
@@ -13767,39 +13767,39 @@ algebra: {
             id: 283,
             difficulty: 1,
             question: "Ruby thinks of a number. She adds 5, then adds 8. She gets 19. What was her number?",
-            options: ["4", "6", "8", "10", "12"],
-            correct: 1,
+            options: ["3", "7", "19", "6", "5"],
+            correct: 3,
             explanation: "Work backwards: 19 − 8 = 11, then 11 − 5 = 6. The starting number was 6. Check: 6 + 5 = 11, 11 + 8 = 19. ✓"
           },
           {
             id: 284,
             difficulty: 1,
             question: "Marcus thinks of a number. He multiplies it by 3. He gets 18. What was his number?",
-            options: ["3", "4", "5", "6", "7"],
-            correct: 3,
+            options: ["7", "12", "18", "54", "6"],
+            correct: 4,
             explanation: "Work backwards: 18 ÷ 3 = 6. The starting number was 6. Check: 6 × 3 = 18. ✓"
           },
           {
             id: 285,
             difficulty: 1,
             question: "Priya thinks of a number. She subtracts 4, then subtracts 3. She gets 7. What was her number?",
-            options: ["10", "12", "14", "16", "18"],
-            correct: 2,
+            options: ["14", "13", "7", "4", "1"],
+            correct: 0,
             explanation: "Work backwards: 7 + 3 = 10, then 10 + 4 = 14. The starting number was 14. Check: 14 − 4 = 10, 10 − 3 = 7. ✓"
           },
           {
             id: 286,
             difficulty: 1,
             question: "Kal thinks of a number. He doubles it. He gets 16. What was his number?",
-            options: ["4", "6", "8", "10", "12"],
-            correct: 2,
+            options: ["32", "8", "9", "12", "16"],
+            correct: 1,
             explanation: "Work backwards: 16 ÷ 2 = 8. The starting number was 8. Check: 8 × 2 = 16. ✓"
           },
           {
             id: 287,
             difficulty: 1,
             question: "Yasmin thinks of a number. She multiplies it by 5, then adds 2. She gets 27. What was her number?",
-            options: ["3", "4", "5", "6", "7"],
+            options: ["27", "29", "5", "6", "23"],
             correct: 2,
             explanation: "Work backwards: 27 − 2 = 25, then 25 ÷ 5 = 5. The starting number was 5. Check: 5 × 5 = 25, 25 + 2 = 27. ✓"
           },
@@ -13807,7 +13807,7 @@ algebra: {
             id: 288,
             difficulty: 1,
             question: "Diego thinks of a number. He adds 6, then multiplies by 2. He gets 24. What was his number?",
-            options: ["3", "4", "5", "6", "8"],
+            options: ["20", "24", "48", "6", "7"],
             correct: 3,
             explanation: "Work backwards: 24 ÷ 2 = 12, then 12 − 6 = 6. The starting number was 6. Check: 6 + 6 = 12, 12 × 2 = 24. ✓"
           },
@@ -13815,8 +13815,8 @@ algebra: {
             id: 289,
             difficulty: 1,
             question: "Tanya thinks of a number. She multiplies it by 4, then subtracts 5. She gets 15. What was her number?",
-            options: ["3", "4", "5", "6", "7"],
-            correct: 2,
+            options: ["4", "6", "10", "15", "5"],
+            correct: 4,
             explanation: "Work backwards: 15 + 5 = 20, then 20 ÷ 4 = 5. The starting number was 5. Check: 5 × 4 = 20, 20 − 5 = 15. ✓"
           },
           {
@@ -13831,15 +13831,15 @@ algebra: {
             id: 291,
             difficulty: 1,
             question: "Sofia thinks of a number. She subtracts 3, then multiplies by 4. She gets 28. What was her number?",
-            options: ["4", "5", "7", "8", "10"],
-            correct: 4,
+            options: ["112", "10", "11", "20", "28"],
+            correct: 1,
             explanation: "Work backwards: 28 ÷ 4 = 7, then 7 + 3 = 10. The starting number was 10. Check: 10 − 3 = 7, 7 × 4 = 28. ✓"
           },
           {
             id: 292,
             difficulty: 1,
             question: "Amrit thinks of a number. He adds 2, then doubles it. He gets 20. What was his number?",
-            options: ["6", "7", "8", "9", "10"],
+            options: ["20", "40", "8", "9", "16"],
             correct: 2,
             explanation: "Work backwards: 20 ÷ 2 = 10, then 10 − 2 = 8. The starting number was 8. Check: 8 + 2 = 10, 10 × 2 = 20. ✓"
           },
@@ -13847,39 +13847,39 @@ algebra: {
             id: 293,
             difficulty: 2,
             question: "Bethany thinks of a number. She adds 4, multiplies by 3, then adds 6. She gets 36. What was her number?",
-            options: ["2", "3", "4", "5", "6"],
-            correct: 4,
+            options: ["24", "36", "42", "6", "7"],
+            correct: 3,
             explanation: "Work backwards: 36 − 6 = 30, then 30 ÷ 3 = 10, then 10 − 4 = 6. The starting number was 6. Check: 6 + 4 = 10, 10 × 3 = 30, 30 + 6 = 36. ✓"
           },
           {
             id: 294,
             difficulty: 2,
             question: "Leo thinks of a number. He multiplies it by 2, adds 7, then multiplies by 2. He gets 38. What was his number?",
-            options: ["3", "4", "5", "6", "7"],
-            correct: 3,
+            options: ["7", "34", "38", "76", "6"],
+            correct: 4,
             explanation: "Work backwards: 38 ÷ 2 = 19, then 19 − 7 = 12, then 12 ÷ 2 = 6. The starting number was 6. Check: 6 × 2 = 12, 12 + 7 = 19, 19 × 2 = 38. ✓"
           },
           {
             id: 295,
             difficulty: 2,
             question: "Harper thinks of a number. She subtracts 2, multiplies by 5, then subtracts 4. She gets 26. What was her number?",
-            options: ["4", "5", "6", "7", "8"],
-            correct: 4,
+            options: ["8", "7", "9", "18", "22"],
+            correct: 0,
             explanation: "Work backwards: 26 + 4 = 30, then 30 ÷ 5 = 6, then 6 + 2 = 8. The starting number was 8. Check: 8 − 2 = 6, 6 × 5 = 30, 30 − 4 = 26. ✓"
           },
           {
             id: 296,
             difficulty: 2,
             question: "Sarah thinks of a number. She subtracts 3, then multiplies by 5. She gets 15. What was her number?",
-            options: ["3", "5", "6", "9", "12"],
-            correct: 2,
+            options: ["75", "6", "5", "7", "15"],
+            correct: 1,
             explanation: "Work backwards: 15 ÷ 5 = 3, then 3 + 3 = 6. The starting number was 6. Check: 6 − 3 = 3, 3 × 5 = 15. ✓"
           },
           {
             id: 297,
             difficulty: 2,
             question: "Sienna thinks of a number. She multiplies it by 3, subtracts 6, then adds 9. She gets 24. What was her number?",
-            options: ["5", "6", "7", "8", "9"],
+            options: ["24", "33", "7", "6", "8"],
             correct: 2,
             explanation: "Work backwards: 24 − 9 = 15, then 15 + 6 = 21, then 21 ÷ 3 = 7. The starting number was 7. Check: 7 × 3 = 21, 21 − 6 = 15, 15 + 9 = 24. ✓"
           },
@@ -13887,7 +13887,7 @@ algebra: {
             id: 298,
             difficulty: 2,
             question: "Ezra thinks of a number. He adds 5, divides by 3, then multiplies by 2. He gets 16. What was his number?",
-            options: ["16", "17", "18", "19", "20"],
+            options: ["16", "12", "20", "19", "18"],
             correct: 3,
             explanation: "Work backwards: 16 ÷ 2 = 8, then 8 × 3 = 24, then 24 − 5 = 19. The starting number was 19. Check: 19 + 5 = 24, 24 ÷ 3 = 8, 8 × 2 = 16. ✓"
           },
@@ -13903,15 +13903,15 @@ algebra: {
             id: 300,
             difficulty: 2,
             question: "Jonas thinks of a number. He subtracts 4, multiplies by 2, then subtracts 3. He gets 21. What was his number?",
-            options: ["13", "14", "15", "16", "17"],
-            correct: 3,
+            options: ["16", "15", "17", "18", "21"],
+            correct: 0,
             explanation: "Work backwards: 21 + 3 = 24, then 24 ÷ 2 = 12, then 12 + 4 = 16. The starting number was 16. Check: 16 − 4 = 12, 12 × 2 = 24, 24 − 3 = 21. ✓"
           },
           {
             id: 301,
             difficulty: 2,
             question: "Nora thinks of a number. She multiplies it by 4, adds 8, then divides by 2. She gets 20. What was her number?",
-            options: ["6", "8", "10", "12", "14"],
+            options: ["20", "8", "9", "10", "16"],
             correct: 1,
             explanation: "Work backwards: 20 × 2 = 40, then 40 − 8 = 32, then 32 ÷ 4 = 8. The starting number was 8. Check: 8 × 4 = 32, 32 + 8 = 40, 40 ÷ 2 = 20. ✓"
           },
@@ -13919,16 +13919,16 @@ algebra: {
             id: 302,
             difficulty: 2,
             question: "Kai thinks of a number. He adds 3, multiplies by 2, then adds 10. He gets 30. What was his number?",
-            options: ["4", "5", "6", "7", "8"],
-            correct: 3,
+            options: ["30", "40", "7", "8", "10"],
+            correct: 2,
             explanation: "Work backwards: 30 − 10 = 20, then 20 ÷ 2 = 10, then 10 − 3 = 7. The starting number was 7. Check: 7 + 3 = 10, 10 × 2 = 20, 20 + 10 = 30. ✓"
           },
           {
             id: 303,
             difficulty: 3,
             question: "Olivia thinks of a number. She multiplies it by 3, adds 6, divides by 5, then multiplies by 2. She gets 12. What was her number?",
-            options: ["6", "8", "10", "12", "14"],
-            correct: 1,
+            options: ["9", "12", "24", "8", "7"],
+            correct: 3,
             explanation: "Work backwards: 12 ÷ 2 = 6, then 6 × 5 = 30, then 30 − 6 = 24, then 24 ÷ 3 = 8. The starting number was 8. Check: 8 × 3 = 24, 24 + 6 = 30, 30 ÷ 5 = 6, 6 × 2 = 12. ✓"
           },
           {
@@ -13951,56 +13951,56 @@ algebra: {
             id: 306,
             difficulty: 3,
             question: "Priya thinks of a number. She multiplies it by 4, adds 10, divides by 2, then subtracts 3. She gets 16. What was her number?",
-            options: ["4", "5", "6", "7", "8"],
-            correct: 3,
+            options: ["16", "7", "8", "10", "13"],
+            correct: 1,
             explanation: "Work backwards: 16 + 3 = 19, then 19 × 2 = 38, then 38 − 10 = 28, then 28 ÷ 4 = 7. The starting number was 7. Check: 7 × 4 = 28, 28 + 10 = 38, 38 ÷ 2 = 19, 19 − 3 = 16. ✓"
           },
           {
             id: 307,
             difficulty: 3,
             question: "Grace thinks of a number. She subtracts 6, multiplies by 2, adds 8, then divides by 4. She gets 5. What was her number?",
-            options: ["10", "12", "14", "16", "18"],
-            correct: 1,
+            options: ["1", "13", "12", "11", "5"],
+            correct: 2,
             explanation: "Work backwards: 5 × 4 = 20, then 20 − 8 = 12, then 12 ÷ 2 = 6, then 6 + 6 = 12. The starting number was 12. Check: 12 − 6 = 6, 6 × 2 = 12, 12 + 8 = 20, 20 ÷ 4 = 5. ✓"
           },
           {
             id: 308,
             difficulty: 3,
             question: "Aiden thinks of a number. He adds 4, divides by 2, multiplies by 3, then subtracts 5. He gets 13. What was his number?",
-            options: ["6", "8", "10", "12", "14"],
-            correct: 1,
+            options: ["3", "9", "13", "8", "7"],
+            correct: 3,
             explanation: "Work backwards: 13 + 5 = 18, then 18 ÷ 3 = 6, then 6 × 2 = 12, then 12 − 4 = 8. The starting number was 8. Check: 8 + 4 = 12, 12 ÷ 2 = 6, 6 × 3 = 18, 18 − 5 = 13. ✓"
           },
           {
             id: 309,
             difficulty: 3,
             question: "Zoe thinks of a number. She multiplies it by 5, subtracts 10, divides by 3, then adds 8. She gets 18. What was her number?",
-            options: ["8", "10", "12", "14", "16"],
-            correct: 0,
+            options: ["7", "2", "9", "18", "8"],
+            correct: 4,
             explanation: "Work backwards: 18 − 8 = 10, then 10 × 3 = 30, then 30 + 10 = 40, then 40 ÷ 5 = 8. The starting number was 8. Check: 8 × 5 = 40, 40 − 10 = 30, 30 ÷ 3 = 10, 10 + 8 = 18. ✓"
           },
           {
             id: 310,
             difficulty: 3,
             question: "Marcus thinks of a number. He subtracts 2, multiplies by 3, adds 4, then divides by 2. He gets 11. What was his number?",
-            options: ["4", "5", "6", "8", "10"],
-            correct: 3,
+            options: ["8", "7", "6", "9", "11"],
+            correct: 0,
             explanation: "Work backwards: 11 × 2 = 22, then 22 − 4 = 18, then 18 ÷ 3 = 6, then 6 + 2 = 8. The starting number was 8. Check: 8 − 2 = 6, 6 × 3 = 18, 18 + 4 = 22, 22 ÷ 2 = 11. ✓"
           },
           {
             id: 311,
             difficulty: 3,
             question: "Zara thinks of a number. She adds 6, divides by 3, multiplies by 4, then adds 2. She gets 22. What was her number?",
-            options: ["6", "7", "8", "9", "12"],
-            correct: 3,
+            options: ["24", "9", "10", "18", "22"],
+            correct: 1,
             explanation: "Work backwards: 22 − 2 = 20, then 20 ÷ 4 = 5, then 5 × 3 = 15, then 15 − 6 = 9. The starting number was 9. Check: 9 + 6 = 15, 15 ÷ 3 = 5, 5 × 4 = 20, 20 + 2 = 22. ✓"
           },
           {
             id: 312,
             difficulty: 3,
             question: "Finn thinks of a number. He multiplies it by 3, adds 12, divides by 3, then multiplies by 2. He gets 20. What was his number?",
-            options: ["2", "3", "4", "5", "6"],
-            correct: 4,
+            options: ["20", "40", "6", "7", "16"],
+            correct: 2,
             explanation: "Work backwards: 20 ÷ 2 = 10, then 10 × 3 = 30, then 30 − 12 = 18, then 18 ÷ 3 = 6. The starting number was 6. Check: 6 × 3 = 18, 18 + 12 = 30, 30 ÷ 3 = 10, 10 × 2 = 20. ✓"
           }
         ]
@@ -14013,8 +14013,8 @@ placevalue: {
       id: 1,
       difficulty: 1,
       question: "Sophie's school raised £4,567 for charity. What is the value of the digit 5 in this number?",
-      options: ["5", "50", "500", "5,000", "50,000"],
-      correct: 2,
+      options: ["1000", "500", "400", "50", "600"],
+      correct: 1,
       explanation: "In 4,567, the digit 5 is in the hundreds place. So its value is 5 hundreds = 500. ✓"
     },
     {
@@ -14045,8 +14045,8 @@ placevalue: {
       id: 5,
       difficulty: 2,
       question: "A school library has 56,729 books. Which digit is in the tens place of this number?",
-      options: ["9", "2", "7", "6", "5"],
-      correct: 1,
+      options: ["2", "1", "3", "7", "9"],
+      correct: 0,
       explanation: "In 56,729, reading from right to left: 9 is ones, 2 is tens, 7 is hundreds, 6 is thousands, 5 is ten-thousands. The tens digit is 2. ✓"
     },
     {
@@ -14077,8 +14077,8 @@ placevalue: {
       id: 9,
       difficulty: 1,
       question: "A charity has raised £34,567 so far. After one more donation of £1,000, what is their new total?",
-      options: ["£35,567", "£35,467", "£34,667", "£44,567", "£34,568"],
-      correct: 0,
+      options: ["£34,567", "£33,567", "£1,000", "£35,577", "£35,567"],
+      correct: 4,
       explanation: "Add the £1,000 donation to £34,567. The thousands digit increases by 1: £34,567 + £1,000 = £35,567. ✓"
     },
     {
@@ -14093,8 +14093,8 @@ placevalue: {
       id: 11,
       difficulty: 2,
       question: "A football stadium holds 83,512 fans. What is the value of the digit 3 in this number?",
-      options: ["3", "30", "3,000", "300", "30,000"],
-      correct: 2,
+      options: ["6,000", "3,000", "2,000", "300", "4,000"],
+      correct: 1,
       explanation: "In 83,512, the digit 3 is in the thousands place. Its value is 3 thousands = 3,000. ✓"
     },
     {
@@ -14133,8 +14133,8 @@ placevalue: {
       id: 16,
       difficulty: 1,
       question: "A swimming pool has had 45,023 visitors this year. If 100 of those visits were counted by mistake, what is the correct number?",
-      options: ["44,913", "45,013", "44,923", "45,123", "44,023"],
-      correct: 2,
+      options: ["45,123", "44,923", "44,913", "100", "45,023"],
+      correct: 1,
       explanation: "Subtract the 100 mistaken visits from 45,023. The hundreds digit decreases by 1: 45,023 - 100 = 44,923. ✓"
     },
     {
@@ -14205,16 +14205,16 @@ placevalue: {
       id: 25,
       difficulty: 2,
       question: "Amelia's town is exactly halfway between two cities that are 56,000 metres apart. How far is Amelia's town from each city?",
-      options: ["26,000 m", "28,000 m", "30,000 m", "32,000 m", "34,000 m"],
-      correct: 1,
+      options: ["28,000 m", "27,900 m", "28,100 m", "56,000 m", "112,000 m"],
+      correct: 0,
       explanation: "Halfway means divide by 2: 56,000 ÷ 2 = 28,000 metres from each city. ✓"
     },
     {
       id: 26,
       difficulty: 1,
       question: "A running counter on a website shows 63,418 visitors. What is the value of the digit 4 in this number?",
-      options: ["4", "40", "400", "4,000", "40,000"],
-      correct: 2,
+      options: ["500", "400", "300", "40", "4"],
+      correct: 1,
       explanation: "In 63,418, the digit 4 is in the hundreds place. Its value is 4 hundreds = 400. ✓"
     },
     {
@@ -14237,8 +14237,8 @@ placevalue: {
       id: 29,
       difficulty: 1,
       question: "A city has 52,789 people. If 10,000 new residents move in, what is the new population?",
-      options: ["62,789", "52,889", "53,789", "52,799", "152,789"],
-      correct: 0,
+      options: ["52,789", "42,789", "10,000", "62,799", "62,789"],
+      correct: 4,
       explanation: "Add the 10,000 new residents to 52,789. The ten-thousands digit increases by 1: 52,789 + 10,000 = 62,789. ✓"
     },
     {
@@ -14253,8 +14253,8 @@ placevalue: {
       id: 31,
       difficulty: 1,
       question: "A car's mileage counter shows 98,527 kilometres. What value does the digit 8 represent?",
-      options: ["8", "80", "8,000", "800", "80,000"],
-      correct: 2,
+      options: ["80,000", "8,000", "7,000", "9,000", "16,000"],
+      correct: 1,
       explanation: "In 98,527, the digit 8 is in the thousands place. Its value is 8 thousands = 8,000. ✓"
     },
     {
@@ -14269,8 +14269,8 @@ placevalue: {
       id: 33,
       difficulty: 1,
       question: "A museum had 73,245 visitors last year. This year they had 1,000 fewer visitors. How many visitors did they have this year?",
-      options: ["73,145", "72,345", "73,235", "63,245", "72,245"],
-      correct: 4,
+      options: ["1,000", "73,245", "74,245", "72,245", "72,235"],
+      correct: 3,
       explanation: "Subtract 1,000 fewer visitors from 73,245. The thousands digit decreases by 1: 73,245 - 1,000 = 72,245 visitors. ✓"
     },
     {
@@ -14285,8 +14285,8 @@ placevalue: {
       id: 35,
       difficulty: 1,
       question: "A zoo had 42,615 visitors last year. What is the value of the digit 6 in this number?",
-      options: ["6", "600", "60", "6,000", "60,000"],
-      correct: 1,
+      options: ["600", "500", "700", "1200", "6000"],
+      correct: 0,
       explanation: "In 42,615, the digit 6 is in the hundreds place. Its value is 6 hundreds = 600. ✓"
     },
     {
@@ -14325,8 +14325,8 @@ placevalue: {
       id: 40,
       difficulty: 1,
       question: "A website has had 81,756 visitors this month. If it gets 100 more visitors, what will the new total be?",
-      options: ["81,766", "81,856", "82,756", "81,757", "91,756"],
-      correct: 1,
+      options: ["81,856", "81,756", "81,656", "100", "81,866"],
+      correct: 0,
       explanation: "Add 100 to 81,756. The hundreds digit increases by 1: 81,756 + 100 = 81,856. ✓"
     },
     {
@@ -14341,8 +14341,8 @@ placevalue: {
       id: 42,
       difficulty: 1,
       question: "In the number 71,493, which digit is in the hundreds place?",
-      options: ["3", "9", "1", "4", "7"],
-      correct: 3,
+      options: ["5", "9", "4", "3", "1"],
+      correct: 2,
       explanation: "In 71,493, reading from right: 3 is ones, 9 is tens, 4 is hundreds, 1 is thousands, 7 is ten-thousands. ✓"
     },
     {
@@ -14365,8 +14365,8 @@ placevalue: {
       id: 45,
       difficulty: 1,
       question: "A town's population is 57,824. What is the value of the digit 7 in this number?",
-      options: ["7", "7,000", "700", "70", "70,000"],
-      correct: 1,
+      options: ["7,000", "6,000", "8,000", "14,000", "70,000"],
+      correct: 0,
       explanation: "In 57,824, the digit 7 is in the thousands place. Its value is 7,000. ✓"
     },
     {
@@ -14381,8 +14381,8 @@ placevalue: {
       id: 47,
       difficulty: 2,
       question: "A concert venue has 46,320 seats. If 500 seats are set aside for staff, how many seats are left for the public?",
-      options: ["46,310", "46,220", "45,920", "45,820", "41,320"],
-      correct: 3,
+      options: ["46,320", "46,820", "45,820", "45,810", "500"],
+      correct: 2,
       explanation: "Subtract the 500 staff seats from 46,320: 46,320 - 500 = 45,820 seats for the public. ✓"
     },
     {
@@ -14493,16 +14493,16 @@ placevalue: {
       id: 61,
       difficulty: 2,
       question: "A charity has £83,407 in its fund. After spending £200 on supplies, how much is left?",
-      options: ["83,205", "83,307", "83,207", "81,407", "83,607"],
-      correct: 2,
+      options: ["83,607", "83,207", "83,197", "200", "83,407"],
+      correct: 1,
       explanation: "Subtract 200 from 83,407: 83,407 - 200 = 83,207. ✓"
     },
     {
       id: 62,
       difficulty: 1,
       question: "In the number 38,572, what is the value of the digit 3?",
-      options: ["3", "30", "300", "30,000", "3,000"],
-      correct: 3,
+      options: ["3", "40,000", "30,000", "20,000", "3,000"],
+      correct: 2,
       explanation: "In 38,572, the digit 3 is in the ten-thousands place. Its value is 30,000. ✓"
     },
     {
@@ -14533,8 +14533,8 @@ placevalue: {
       id: 66,
       difficulty: 1,
       question: "In the number 52,894, which digit is in the thousands place?",
-      options: ["4", "9", "2", "8", "5"],
-      correct: 2,
+      options: ["8", "2", "1", "3", "5"],
+      correct: 1,
       explanation: "In 52,894, reading from right: 4 is ones, 9 is tens, 8 is hundreds, 2 is thousands, 5 is ten-thousands. ✓"
     },
     {
@@ -14549,8 +14549,8 @@ placevalue: {
       id: 68,
       difficulty: 2,
       question: "A town has a population of 61,528. If 3,000 people move away, what is the new population?",
-      options: ["61,525", "61,228", "64,528", "31,528", "58,528"],
-      correct: 4,
+      options: ["3,000", "61,528", "64,528", "58,528", "58,518"],
+      correct: 3,
       explanation: "Subtract 3,000 from 61,528: 61,528 - 3,000 = 58,528. ✓"
     },
     {
@@ -14581,8 +14581,8 @@ placevalue: {
       id: 72,
       difficulty: 2,
       question: "A bookshop has sold 25,134 copies of a novel. After a weekend sale they sell 800 more. What is the new total?",
-      options: ["25,942", "33,134", "26,134", "25,934", "25,142"],
-      correct: 3,
+      options: ["800", "25,944", "25,934", "25,134", "24,334"],
+      correct: 2,
       explanation: "Add 800 to 25,134: 25,134 + 800 = 25,934. ✓"
     },
     {
@@ -14629,8 +14629,8 @@ placevalue: {
       id: 78,
       difficulty: 2,
       question: "What number is 50 less than 91,003?",
-      options: ["90,963", "91,053", "90,993", "90,903", "90,953"],
-      correct: 4,
+      options: ["50", "91,003", "91,053", "90,953", "90,943"],
+      correct: 3,
       explanation: "Subtract 50 from 91,003: 91,003 - 50 = 90,953. ✓"
     },
     {
@@ -14677,8 +14677,8 @@ placevalue: {
       id: 84,
       difficulty: 2,
       question: "A wildlife park has 48,521 annual visitors. After a new exhibit opens, 6,000 extra visitors arrive. What is the new total?",
-      options: ["54,521", "48,527", "42,521", "108,521", "49,521"],
-      correct: 0,
+      options: ["48,521", "42,521", "6,000", "54,531", "54,521"],
+      correct: 4,
       explanation: "Add 6,000 to 48,521: 48,521 + 6,000 = 54,521. ✓"
     },
     {
@@ -14717,8 +14717,8 @@ placevalue: {
       id: 89,
       difficulty: 2,
       question: "A warehouse holds 72,186 boxes. After a delivery of 400 boxes is sent out, how many remain?",
-      options: ["71,786", "71,886", "72,586", "68,186", "71,796"],
-      correct: 0,
+      options: ["71,776", "400", "72,186", "72,586", "71,786"],
+      correct: 4,
       explanation: "Subtract 400 from 72,186: 72,186 - 400 = 71,786. ✓"
     },
     {
@@ -14749,8 +14749,8 @@ placevalue: {
       id: 93,
       difficulty: 2,
       question: "A factory produced 67,835 items last year. This year it produced 2,000 more. What is this year's total?",
-      options: ["67,855", "65,835", "87,835", "67,837", "69,835"],
-      correct: 4,
+      options: ["65,835", "2,000", "69,845", "69,835", "67,835"],
+      correct: 3,
       explanation: "Add 2,000 to 67,835: 67,835 + 2,000 = 69,835. ✓"
     },
     {
@@ -14789,16 +14789,16 @@ placevalue: {
       id: 98,
       difficulty: 2,
       question: "A farmer harvests 54,281 apples. After selling 700 at a market, how many does she have left?",
-      options: ["53,681", "54,981", "54,211", "47,281", "53,581"],
-      correct: 4,
+      options: ["700", "54,281", "54,981", "53,581", "53,571"],
+      correct: 3,
       explanation: "Subtract 700 from 54,281: 54,281 - 700 = 53,581. ✓"
     },
     {
       id: 99,
       difficulty: 1,
       question: "In the number 39,467, what is the value of the digit 3?",
-      options: ["30,000", "30", "300", "3,000", "3"],
-      correct: 0,
+      options: ["20,000", "40,000", "60,000", "300,000", "30,000"],
+      correct: 4,
       explanation: "In 39,467, the digit 3 is in the ten-thousands place. Its value is 30,000. ✓"
     },
     {
@@ -14821,8 +14821,8 @@ placevalue: {
       id: 102,
       difficulty: 2,
       question: "A concert venue sold 31,647 tickets last season. This season they sold 9,000 more. What is the new total?",
-      options: ["31,656", "32,647", "121,647", "40,647", "39,647"],
-      correct: 3,
+      options: ["9,000", "40,657", "40,647", "31,647", "22,647"],
+      correct: 2,
       explanation: "Add 9,000 to 31,647: 31,647 + 9,000 = 40,647. ✓"
     },
     {
@@ -14861,8 +14861,8 @@ placevalue: {
       id: 107,
       difficulty: 2,
       question: "What number is 150 more than 89,675?",
-      options: ["89,680", "89,785", "91,175", "89,825", "90,175"],
-      correct: 3,
+      options: ["150", "89,835", "89,825", "89,675", "89,525"],
+      correct: 2,
       explanation: "Add 150 to 89,675: 89,675 + 150 = 89,825. ✓"
     },
     {
@@ -14893,8 +14893,8 @@ placevalue: {
       id: 111,
       difficulty: 2,
       question: "A council's budget is £82,436. After a cut of £4,000, what is the new budget?",
-      options: ["86,436", "82,036", "78,436", "42,436", "78,336"],
-      correct: 2,
+      options: ["86,436", "78,436", "78,426", "4,000", "82,436"],
+      correct: 1,
       explanation: "Subtract 4,000 from 82,436: 82,436 - 4,000 = 78,436. ✓"
     },
     {
@@ -14925,8 +14925,8 @@ placevalue: {
       id: 115,
       difficulty: 1,
       question: "In the number 68,345, what is the value of the digit 4?",
-      options: ["4", "40", "400", "4,000", "40,000"],
-      correct: 1,
+      options: ["40", "30", "50", "80", "400"],
+      correct: 0,
       explanation: "In 68,345, the digit 4 is in the tens place. Its value is 40. ✓"
     },
     {
@@ -14941,8 +14941,8 @@ placevalue: {
       id: 117,
       difficulty: 2,
       question: "What number is 8,000 more than 55,729?",
-      options: ["55,737", "56,729", "135,729", "63,729", "61,729"],
-      correct: 3,
+      options: ["8,000", "63,739", "63,729", "55,729", "47,729"],
+      correct: 2,
       explanation: "Add 8,000 to 55,729: 55,729 + 8,000 = 63,729. ✓"
     },
     {
@@ -14973,8 +14973,8 @@ placevalue: {
       id: 121,
       difficulty: 2,
       question: "What number is 250 less than 43,812?",
-      options: ["43,602", "44,062", "43,562", "41,312", "43,567"],
-      correct: 2,
+      options: ["44,062", "43,562", "43,552", "250", "43,812"],
+      correct: 1,
       explanation: "Subtract 250 from 43,812: 43,812 - 250 = 43,562. ✓"
     },
     {
@@ -15393,16 +15393,16 @@ placevalue: {
       id: 173,
       difficulty: 1,
       question: "A school hall has 3,456 seats. 100 more chairs are added. How many seats are there now?",
-      options: ["3,466", "3,356", "4,456", "3,457", "3,556"],
-      correct: 4,
+      options: ["3,356", "100", "3,566", "3,556", "3,456"],
+      correct: 3,
       explanation: "Adding 100 increases the hundreds digit by 1: 3,456 + 100 = 3,556. ✓"
     },
     {
       id: 174,
       difficulty: 1,
       question: "What number is 1,000 less than 52,347?",
-      options: ["51,347", "42,347", "52,247", "52,337", "52,346"],
-      correct: 0,
+      options: ["51,337", "1,000", "52,347", "53,347", "51,347"],
+      correct: 4,
       explanation: "Subtracting 1,000 decreases the thousands digit by 1: 52,347 − 1,000 = 51,347. ✓"
     },
     {
@@ -15432,8 +15432,8 @@ negativenumbers: {
       difficulty: 1,
       visual: { component: "ThermometerDiagram", props: { min: -10, max: 10, value: -3 } },
       question: "The temperature in Edinburgh is -3°C. In London it is 5°C warmer. What is the temperature in London?",
-      options: ["-8°C", "-2°C", "3°C", "8°C", "2°C"],
-      correct: 4,
+      options: ["5°C", "2°C", "-2°C", "-3°C", "3°C"],
+      correct: 1,
       explanation: "Start at -3°C and add 5°C: -3 + 5 = 2°C. Think of a number line: from -3, count 5 places to the right. ✓"
     },
     {
@@ -15441,16 +15441,16 @@ negativenumbers: {
       difficulty: 1,
       visual: { component: "NumberLine", props: { min: -10, max: 5, points: [{value: -8, label: "-8"}, {value: -5, label: "-5"}, {value: -2, label: "-2"}, {value: 0, label: "0"}, {value: 3, label: "3"}] } },
       question: "Which number is the smallest? -5, 3, -2, 0, -8",
-      options: ["-8", "3", "-2", "0", "-5"],
-      correct: 0,
+      options: ["2", "3", "-8", "-7", "-5"],
+      correct: 2,
       explanation: "On a number line, the further left a number is, the smaller it is. -8 is furthest left, so it's the smallest. ✓"
     },
     {
       id: 3,
       difficulty: 1,
       question: "Sarah's bank balance is £20. She spends £35. What is her new balance?",
-      options: ["£15", "-£15", "£55", "-£55", "£5"],
-      correct: 1,
+      options: ["£15", "£20", "£35", "-£15", "-£14"],
+      correct: 3,
       explanation: "She starts with £20 and spends £35: 20 - 35 = -15. Her balance is -£15, meaning she's £15 overdrawn. ✓"
     },
     {
@@ -15458,8 +15458,8 @@ negativenumbers: {
       difficulty: 1,
       visual: { component: "ThermometerDiagram", props: { min: -10, max: 10, value: -7, rise: 12 } },
       question: "The temperature at midnight was -7°C. By midday it had risen by 12°C. What was the temperature at midday?",
-      options: ["-19°C", "-5°C", "5°C", "19°C", "12°C"],
-      correct: 2,
+      options: ["-5°C", "6°C", "12°C", "19°C", "5°C"],
+      correct: 4,
       explanation: "Start at -7°C and add 12°C: -7 + 12 = 5°C. Count from -7: go up 7 to reach 0, then up another 5 to reach 5°C. ✓"
     },
     {
@@ -15484,8 +15484,8 @@ negativenumbers: {
       id: 7,
       difficulty: 1,
       question: "Jack scored -5 points in a game. Emma scored 3 points more than Jack. How many points did Emma score?",
-      options: ["-2", "-8", "2", "8", "-5"],
-      correct: 0,
+      options: ["2", "3", "-2", "-5", "-1"],
+      correct: 2,
       explanation: "Jack has -5 points. Emma has 3 more: -5 + 3 = -2 points. ✓"
     },
     {
@@ -15493,8 +15493,8 @@ negativenumbers: {
       difficulty: 2,
       visual: { component: "ThermometerDiagram", props: { min: -10, max: 10, value: -4, target: 3 } },
       question: "What is the difference between -4°C and 3°C?",
-      options: ["1°C", "7°C", "-1°C", "-7°C", "4°C"],
-      correct: 1,
+      options: ["1°C", "-4°C", "8°C", "7°C", "3°C"],
+      correct: 3,
       explanation: "The difference means how far apart they are: from -4 to 3 is 7 degrees. Count: -4 to 0 is 4, then 0 to 3 is 3, so 4 + 3 = 7°C. ✓"
     },
     {
@@ -15510,8 +15510,8 @@ negativenumbers: {
       id: 10,
       difficulty: 1,
       question: "The temperature was 2°C. It dropped by 8°C. What is the new temperature?",
-      options: ["-10°C", "10°C", "6°C", "-6°C", "-4°C"],
-      correct: 3,
+      options: ["-6°C", "-5°C", "2°C", "6°C", "8°C"],
+      correct: 0,
       explanation: "Start at 2°C and subtract 8°C: 2 - 8 = -6°C. ✓"
     },
     {
@@ -15535,8 +15535,8 @@ negativenumbers: {
       id: 13,
       difficulty: 2,
       question: "The temperature in Moscow is -12°C. In Dubai it is 38°C warmer. What is the temperature in Dubai?",
-      options: ["50°C", "26°C", "-50°C", "30°C", "20°C"],
-      correct: 1,
+      options: ["-26°C", "27°C", "38°C", "26°C", "-12°C"],
+      correct: 3,
       explanation: "Start at -12°C and add 38°C: -12 + 38 = 26°C. Count up: from -12 to 0 is 12, then 0 to 26 is 26, so 12 + 26 = 38°C warmer. ✓"
     },
     {
@@ -15568,24 +15568,24 @@ negativenumbers: {
       id: 17,
       difficulty: 3,
       question: "The lowest temperature recorded in Antarctica was -89°C. The lowest in the Arctic was -68°C. What is the difference?",
-      options: ["21°C", "157°C", "68°C", "89°C", "25°C"],
-      correct: 0,
+      options: ["-89°C", "22°C", "21°C", "-21°C", "-68°C"],
+      correct: 2,
       explanation: "Find the difference between -89°C and -68°C: -68 - (-89) = -68 + 89 = 21°C difference. Or count: from -89 to -68 is 21 degrees. ✓"
     },
     {
       id: 18,
       difficulty: 2,
       question: "Ben has -£12 in his account (overdrawn). His dad puts £20 in. What is his new balance?",
-      options: ["-£32", "£8", "-£8", "£32", "£12"],
-      correct: 1,
+      options: ["-£12", "£9", "£20", "£8", "-£8"],
+      correct: 3,
       explanation: "Start with -£12 and add £20: -12 + 20 = £8. His new balance is £8. ✓"
     },
     {
       id: 19,
       difficulty: 1,
       question: "Which of these numbers is closest to zero? -7, 5, -3, 9, -10",
-      options: ["-7", "5", "-3", "9", "-10"],
-      correct: 2,
+      options: ["-7", "-10", "-2", "3", "-3"],
+      correct: 4,
       explanation: "Distance from zero: -7 is 7 away; 5 is 5 away; -3 is 3 away; 9 is 9 away; -10 is 10 away. Closest is -3. ✓"
     },
     {
@@ -15600,8 +15600,8 @@ negativenumbers: {
       id: 21,
       difficulty: 1,
       question: "The temperature is -5°C in the morning. It rises by 8°C during the day. What is the new temperature?",
-      options: ["-13°C", "-3°C", "-8°C", "13°C", "3°C"],
-      correct: 4,
+      options: ["13°C", "3°C", "-3°C", "4°C", "8°C"],
+      correct: 1,
       explanation: "Start at -5 and add 8: -5 + 8 = 3. On a number line, count 8 places right from -5. ✓"
     },
     {
@@ -15616,32 +15616,32 @@ negativenumbers: {
       id: 23,
       difficulty: 1,
       question: "The temperature was -8°C. It rose by 15°C. What is the new temperature?",
-      options: ["-23°C", "7°C", "-7°C", "8°C", "15°C"],
-      correct: 1,
+      options: ["8°C", "15°C", "23°C", "7°C", "-7°C"],
+      correct: 3,
       explanation: "Start at -8°C and add 15°C: -8 + 15 = 7°C. ✓"
     },
     {
       id: 24,
       difficulty: 1,
       question: "Noah has £12. He spends £20. What is his new balance?",
-      options: ["£32", "£8", "-£8", "-£32", "£12"],
-      correct: 2,
+      options: ["-£7", "£8", "£12", "£20", "-£8"],
+      correct: 4,
       explanation: "Start with £12 and subtract £20: 12 - 20 = -£8. He's £8 overdrawn. ✓"
     },
     {
       id: 25,
       difficulty: 2,
       question: "What is the difference between -7°C and 4°C?",
-      options: ["3°C", "7°C", "-11°C", "11°C", "4°C"],
-      correct: 3,
+      options: ["11°C", "4°C", "3°C", "-7°C", "-11°C"],
+      correct: 0,
       explanation: "From -7 to 4 is 11 degrees. Count: -7 to 0 is 7, then 0 to 4 is 4, so 7 + 4 = 11°C. ✓"
     },
     {
       id: 26,
       difficulty: 2,
       question: "A fish is swimming at 15 metres below sea level. It rises 9 metres. What is its new position relative to sea level?",
-      options: ["-24", "-9", "6", "24", "-6"],
-      correct: 4,
+      options: ["15", "-6", "-5", "6", "9"],
+      correct: 1,
       explanation: "Start at -15 and add 9: -15 + 9 = -6. The fish is 6 metres below sea level. ✓"
     },
     {
@@ -15656,8 +15656,8 @@ negativenumbers: {
       id: 28,
       difficulty: 1,
       question: "The temperature in Belfast is 3°C. Overnight it drops by 11°C. What is the temperature in the morning?",
-      options: ["8°C", "-8°C", "14°C", "-14°C", "11°C"],
-      correct: 1,
+      options: ["3°C", "8°C", "11°C", "-8°C", "-7°C"],
+      correct: 3,
       explanation: "3 - 11 = -8°C. Subtracting a larger number gives a negative result. ✓"
     },
     {
@@ -15672,8 +15672,8 @@ negativenumbers: {
       id: 30,
       difficulty: 2,
       question: "What number is halfway between -10 and 6?",
-      options: ["-4", "2", "0", "-2", "4"],
-      correct: 3,
+      options: ["-2", "-10", "-1", "2", "6"],
+      correct: 0,
       explanation: "Distance is 16 (from -10 to 6). Half is 8. From -10, count up 8: -10 + 8 = -2. ✓"
     },
     {
@@ -15696,8 +15696,8 @@ negativenumbers: {
       id: 33,
       difficulty: 2,
       question: "The temperature in Oslo is -16°C. In Athens it is 28°C warmer. What is the temperature in Athens?",
-      options: ["44°C", "12°C", "-44°C", "16°C", "28°C"],
-      correct: 1,
+      options: ["-16°C", "13°C", "28°C", "12°C", "-12°C"],
+      correct: 3,
       explanation: "Start at -16°C and add 28°C: -16 + 28 = 12°C. ✓"
     },
     {
@@ -15712,16 +15712,16 @@ negativenumbers: {
       id: 35,
       difficulty: 1,
       question: "Lily scored -8 points. Mia scored 6 points more than Lily. How many points did Mia score?",
-      options: ["-14", "14", "2", "-2", "-8"],
-      correct: 3,
+      options: ["-2", "-8", "-1", "2", "6"],
+      correct: 0,
       explanation: "Lily has -8 points. Mia has 6 more: -8 + 6 = -2 points. ✓"
     },
     {
       id: 36,
       difficulty: 2,
       question: "Which of these numbers is closest to zero? -11, 8, -4, 12, -15",
-      options: ["-11", "8", "-15", "12", "-4"],
-      correct: 4,
+      options: ["4", "-4", "-11", "-15", "-3"],
+      correct: 1,
       explanation: "Distance from zero: -11 is 11 away; 8 is 8 away; -4 is 4 away; 12 is 12 away; -15 is 15 away. Closest is -4. ✓"
     },
     {
@@ -15736,32 +15736,32 @@ negativenumbers: {
       id: 38,
       difficulty: 2,
       question: "Jake has £7 in his account. He spends £18 on a book. What is his balance now?",
-      options: ["£25", "-£11", "£11", "-£25", "£18"],
-      correct: 1,
+      options: ["£7", "£11", "£18", "-£11", "-£10"],
+      correct: 3,
       explanation: "7 - 18 = -11. Jake is now £11 overdrawn. ✓"
     },
     {
       id: 39,
       difficulty: 2,
       question: "The temperature was -5°C. It dropped by 9°C. What is the new temperature?",
-      options: ["4°C", "-4°C", "-14°C", "14°C", "-9°C"],
-      correct: 2,
+      options: ["-13°C", "-5°C", "-4°C", "9°C", "-14°C"],
+      correct: 4,
       explanation: "Start at -5°C and subtract 9°C: -5 - 9 = -14°C. ✓"
     },
     {
       id: 40,
       difficulty: 2,
       question: "The temperature in Glasgow is -12°C. It warms up by 17°C during the day. What is the new temperature?",
-      options: ["-29°C", "-5°C", "29°C", "5°C", "12°C"],
-      correct: 3,
+      options: ["5°C", "-5°C", "-12°C", "6°C", "17°C"],
+      correct: 0,
       explanation: "Start at -12°C and add 17°C: -12 + 17 = 5°C. ✓"
     },
     {
       id: 41,
       difficulty: 2,
       question: "Ben has -£25 in his account. His mum deposits £40. What is his new balance?",
-      options: ["-£65", "-£15", "£25", "£65", "£15"],
-      correct: 4,
+      options: ["£65", "£15", "-£15", "£16", "£40"],
+      correct: 1,
       explanation: "Start with -£25 and add £40: -25 + 40 = £15. ✓"
     },
     {
@@ -15776,32 +15776,32 @@ negativenumbers: {
       id: 43,
       difficulty: 2,
       question: "What is the difference between -15 and 8?",
-      options: ["7", "23", "15", "-23", "8"],
-      correct: 1,
+      options: ["7", "-15", "-23", "23", "8"],
+      correct: 3,
       explanation: "From -15 to 8 is 23 units. Count: -15 to 0 is 15, then 0 to 8 is 8, so 15 + 8 = 23. ✓"
     },
     {
       id: 44,
       difficulty: 2,
       question: "The temperature in York is 2°C. It drops by 14°C overnight. What is the new temperature?",
-      options: ["16°C", "12°C", "-12°C", "-16°C", "14°C"],
-      correct: 2,
+      options: ["-11°C", "2°C", "12°C", "14°C", "-12°C"],
+      correct: 4,
       explanation: "Start at 2°C and drop 14. You pass through zero at 2, then keep going 12 more — landing on -12°C. ✓"
     },
     {
       id: 45,
       difficulty: 2,
       question: "Sophie owes her sister £15. She pays back £9. How much does she still owe?",
-      options: ["£24", "-£24", "-£6", "£6", "£15"],
-      correct: 3,
+      options: ["£6", "-£6", "£7", "£9", "£15"],
+      correct: 0,
       explanation: "Owing £15 means -£15. Paying back £9 means adding: -15 + 9 = -6. She still owes £6. ✓"
     },
     {
       id: 46,
       difficulty: 2,
       question: "A whale is swimming at 18 metres below sea level. It rises 11 metres. What is its new depth?",
-      options: ["-29", "-11", "7", "29", "-7"],
-      correct: 4,
+      options: ["18", "-7", "-6", "7", "11"],
+      correct: 1,
       explanation: "Start at -18 and add 11: -18 + 11 = -7. ✓"
     },
     {
@@ -15816,32 +15816,32 @@ negativenumbers: {
       id: 48,
       difficulty: 2,
       question: "What number is halfway between -14 and 2?",
-      options: ["-8", "-6", "-4", "-2", "0"],
-      correct: 1,
+      options: ["-5", "2", "6", "-6", "-14"],
+      correct: 3,
       explanation: "Distance is 16 (from -14 to 2). Half is 8. From -14, count up 8: -14 + 8 = -6. ✓"
     },
     {
       id: 49,
       difficulty: 2,
       question: "The temperature in Aberdeen is -6°C. It falls by another 8°C overnight. What is the new temperature?",
-      options: ["2°C", "-2°C", "-14°C", "14°C", "-8°C"],
-      correct: 2,
+      options: ["-13°C", "-6°C", "-2°C", "8°C", "-14°C"],
+      correct: 4,
       explanation: "-6 - 8 = -14°C. Subtracting makes it more negative. ✓"
     },
     {
       id: 50,
       difficulty: 2,
       question: "The temperature in Alaska is -22°C. In Florida it is 48°C warmer. What is the temperature in Florida?",
-      options: ["30°C", "70°C", "-70°C", "26°C", "48°C"],
-      correct: 3,
+      options: ["26°C", "-22°C", "-26°C", "27°C", "48°C"],
+      correct: 0,
       explanation: "Start at -22°C and add 48°C: -22 + 48 = 26°C. ✓"
     },
     {
       id: 51,
       difficulty: 2,
       question: "Mia has £15 on her bus pass. She buys a £28 weekly ticket. What is her balance now?",
-      options: ["£43", "£13", "£28", "-£43", "-£13"],
-      correct: 4,
+      options: ["£28", "-£13", "-£12", "£13", "£15"],
+      correct: 1,
       explanation: "15 - 28 = -13. Mia's balance is -£13. ✓"
     },
     {
@@ -15872,32 +15872,32 @@ negativenumbers: {
       id: 55,
       difficulty: 2,
       question: "What is the difference between -20 and -8?",
-      options: ["-28", "28", "-12", "12", "8"],
-      correct: 3,
+      options: ["12", "-8", "-12", "-20", "13"],
+      correct: 0,
       explanation: "From -20 to -8 is 12 units. Count: -20 to -8 is 12 places to the right. ✓"
     },
     {
       id: 56,
       difficulty: 2,
       question: "The temperature in Cardiff is 4°C. Overnight it drops by 19°C. What is the new temperature?",
-      options: ["23°C", "15°C", "19°C", "-23°C", "-15°C"],
-      correct: 4,
+      options: ["19°C", "-15°C", "-14°C", "4°C", "15°C"],
+      correct: 1,
       explanation: "You've only got 4°C but you're losing 19. That's 15 more than you have, so you end up 15 below zero: -15°C. ✓"
     },
     {
       id: 57,
       difficulty: 2,
       question: "Ava scored -12 points. Tom scored 8 points more than Ava. How many points did Tom score?",
-      options: ["-4", "-20", "4", "20", "-8"],
-      correct: 0,
+      options: ["4", "8", "-4", "-12", "-3"],
+      correct: 2,
       explanation: "Ava has -12 points. Tom has 8 more: -12 + 8 = -4 points. ✓"
     },
     {
       id: 58,
       difficulty: 2,
       question: "A submarine is at 30 metres below sea level. It rises 25 metres. What is its new depth?",
-      options: ["-55", "-5", "5", "55", "-25"],
-      correct: 1,
+      options: ["5", "25", "30", "-5", "-4"],
+      correct: 3,
       explanation: "Start at -30 and add 25: -30 + 25 = -5. ✓"
     },
     {
@@ -15912,8 +15912,8 @@ negativenumbers: {
       id: 60,
       difficulty: 2,
       question: "The temperature was -11°C. It rose by 18°C. What is the new temperature?",
-      options: ["-29°C", "-7°C", "29°C", "7°C", "18°C"],
-      correct: 3,
+      options: ["7°C", "-7°C", "-11°C", "8°C", "18°C"],
+      correct: 0,
       explanation: "Start at -11°C and add 18°C: -11 + 18 = 7°C. ✓"
     },
     {
@@ -15928,16 +15928,16 @@ negativenumbers: {
       id: 62,
       difficulty: 2,
       question: "Mason has £8. He spends £23. What is his new balance?",
-      options: ["-£15", "£15", "£31", "-£31", "£8"],
-      correct: 0,
+      options: ["£15", "£23", "-£15", "-£14", "£8"],
+      correct: 2,
       explanation: "Start with £8 and subtract £23: 8 - 23 = -£15. He's £15 overdrawn. ✓"
     },
     {
       id: 63,
       difficulty: 1,
       question: "Lucy has -£7 in her savings account. Her gran gives her £20 for her birthday. What is her balance now?",
-      options: ["-£27", "£13", "-£13", "£27", "£20"],
-      correct: 1,
+      options: ["-£13", "£14", "£20", "£13", "-£7"],
+      correct: 3,
       explanation: "Start at -7 and add 20: -7 + 20 = 13. ✓"
     },
     {
@@ -15952,8 +15952,8 @@ negativenumbers: {
       id: 65,
       difficulty: 2,
       question: "Tom has £6 in his account. He buys a toy costing £22. What is his balance now?",
-      options: ["£28", "£16", "-£28", "-£16", "£22"],
-      correct: 3,
+      options: ["-£16", "-£15", "£6", "£16", "£22"],
+      correct: 0,
       explanation: "He's £16 short! 6 - 22 = -16. When you spend more than you have, you go into the negatives. ✓"
     },
     {
@@ -15968,32 +15968,32 @@ negativenumbers: {
       id: 67,
       difficulty: 3,
       question: "The temperature in Inverness is -35°C. It warms up by 28°C. What is the new temperature?",
-      options: ["-7", "-63", "7", "63", "-28"],
-      correct: 0,
+      options: ["7", "28", "-7", "-35", "-6"],
+      correct: 2,
       explanation: "Start at -35 and add 28: -35 + 28 = -7. ✓"
     },
     {
       id: 68,
       difficulty: 2,
       question: "What number is halfway between -18 and 4?",
-      options: ["-9", "-7", "-5", "-3", "-1"],
-      correct: 1,
+      options: ["-6", "4", "7", "-7", "-18"],
+      correct: 3,
       explanation: "Distance is 22 (from -18 to 4). Half is 11. From -18, count up 11: -18 + 11 = -7. ✓"
     },
     {
       id: 69,
       difficulty: 3,
       question: "What is the difference between -25 and 10?",
-      options: ["15", "25", "35", "-35", "10"],
-      correct: 2,
+      options: ["15", "10", "-25", "-35", "35"],
+      correct: 4,
       explanation: "From -25 to 10 is 35 units. Count: -25 to 0 is 25, then 0 to 10 is 10, so 25 + 10 = 35. ✓"
     },
     {
       id: 70,
       difficulty: 1,
       question: "The temperature is 10°C during the day. It drops by 27°C at night. What is the new temperature?",
-      options: ["37°C", "17°C", "-37°C", "-17°C", "27°C"],
-      correct: 3,
+      options: ["-17°C", "-16°C", "10°C", "17°C", "27°C"],
+      correct: 0,
       explanation: "10°C minus 27°C: you run out of degrees at 10, then drop 17 more below zero. That's -17°C. ✓"
     },
     {
@@ -16024,16 +16024,16 @@ negativenumbers: {
       id: 74,
       difficulty: 3,
       question: "A lift is at floor -28 in a deep mine. It goes up 35 floors. Which floor is it on now?",
-      options: ["-63", "-7", "7", "63", "35"],
-      correct: 2,
+      options: ["-7", "-28", "8", "35", "7"],
+      correct: 4,
       explanation: "Start at -28 and add 35: -28 + 35 = 7. ✓"
     },
     {
       id: 75,
       difficulty: 2,
       question: "The temperature was -17°C. It dropped by 11°C. What is the new temperature?",
-      options: ["28°C", "-6°C", "6°C", "-28°C", "-11°C"],
-      correct: 3,
+      options: ["-28°C", "-27°C", "-17°C", "6°C", "11°C"],
+      correct: 0,
       explanation: "Start at -17°C and subtract 11°C: -17 - 11 = -28°C. ✓"
     },
     {
@@ -16048,24 +16048,24 @@ negativenumbers: {
       id: 77,
       difficulty: 2,
       question: "The temperature in Edinburgh is 1°C. It drops by 16°C overnight. What is the new temperature?",
-      options: ["-15°C", "15°C", "17°C", "-17°C", "16°C"],
-      correct: 0,
+      options: ["15°C", "16°C", "-15°C", "-14°C", "1°C"],
+      correct: 2,
       explanation: "Only 1°C to spare, but it drops 16. Past zero by 15, so -15°C. Picture a thermometer going down! ✓"
     },
     {
       id: 78,
       difficulty: 2,
       question: "Oscar owes his dad £30. He pays back £18. How much does he still owe?",
-      options: ["£48", "£12", "-£12", "-£48", "£30"],
-      correct: 1,
+      options: ["£13", "£18", "£30", "£12", "-£12"],
+      correct: 3,
       explanation: "Owing £30 means -£30. Paying back £18 means adding: -30 + 18 = -12. He still owes £12. ✓"
     },
     {
       id: 79,
       difficulty: 3,
       question: "A deep-sea robot is at 42 metres below sea level. It rises 29 metres. What is its new depth?",
-      options: ["-71", "13", "-13", "71", "-29"],
-      correct: 2,
+      options: ["-12", "13", "29", "42", "-13"],
+      correct: 4,
       explanation: "Start at -42 and add 29: -42 + 29 = -13. ✓"
     },
     {
@@ -16080,8 +16080,8 @@ negativenumbers: {
       id: 81,
       difficulty: 2,
       question: "Freddie has £9 in his wallet. He owes his friend £31. After paying, what is his balance?",
-      options: ["£40", "£22", "£31", "-£40", "-£22"],
-      correct: 4,
+      options: ["£31", "-£22", "-£21", "£9", "£22"],
+      correct: 1,
       explanation: "£9 minus £31 — he's £22 short. When you owe more than you have, the answer goes negative: -£22. ✓"
     },
     {
@@ -16096,16 +16096,16 @@ negativenumbers: {
       id: 83,
       difficulty: 2,
       question: "The temperature in Iceland is -19°C. In Spain it is 37°C warmer. What is the temperature in Spain?",
-      options: ["56°C", "18°C", "-56°C", "22°C", "37°C"],
-      correct: 1,
+      options: ["-19°C", "19°C", "37°C", "18°C", "-18°C"],
+      correct: 3,
       explanation: "Start at -19°C and add 37°C: -19 + 37 = 18°C. ✓"
     },
     {
       id: 84,
       difficulty: 2,
       question: "The temperature is -11°C. It drops by another 14°C during a blizzard. What is the new temperature?",
-      options: ["3", "-3", "-25", "25", "-14"],
-      correct: 2,
+      options: ["-24", "-11", "-3", "14", "-25"],
+      correct: 4,
       explanation: "Already -11°C and dropping 14 more. When you're below zero and it gets colder, add the numbers: 11 + 14 = 25, so -25°C. ✓"
     },
     {
@@ -16120,16 +16120,16 @@ negativenumbers: {
       id: 86,
       difficulty: 2,
       question: "Hannah has £13 on her library card. She buys a £35 book. What is her balance now?",
-      options: ["£48", "£22", "£35", "-£48", "-£22"],
-      correct: 4,
+      options: ["£35", "-£22", "-£21", "£13", "£22"],
+      correct: 1,
       explanation: "£13 minus £35 = -£22. She's £22 short! Subtracting more than you have always gives a negative answer. ✓"
     },
     {
       id: 87,
       difficulty: 2,
       question: "Isla has -£18 in her account. Her grandad deposits £50. What is her new balance?",
-      options: ["£32", "-£32", "-£68", "£68", "£18"],
-      correct: 0,
+      options: ["£33", "£50", "£32", "-£18", "-£32"],
+      correct: 2,
       explanation: "Start with -£18 and add £50: -18 + 50 = £32. ✓"
     },
     {
@@ -16152,8 +16152,8 @@ negativenumbers: {
       id: 90,
       difficulty: 2,
       question: "What is the difference between -30 and -12?",
-      options: ["-42", "42", "-18", "18", "12"],
-      correct: 3,
+      options: ["18", "-12", "-18", "-30", "19"],
+      correct: 0,
       explanation: "From -30 to -12 is 18 units. Count: -30 to -12 is 18 places to the right. ✓"
     },
     {
@@ -16168,8 +16168,8 @@ negativenumbers: {
       id: 92,
       difficulty: 2,
       question: "The temperature in Dundee is 5°C. It drops by 24°C overnight. What is the new temperature?",
-      options: ["-19°C", "19°C", "29°C", "-29°C", "24°C"],
-      correct: 0,
+      options: ["19°C", "24°C", "-19°C", "-18°C", "5°C"],
+      correct: 2,
       explanation: "5 - 24: you use up the 5 reaching zero, then still need to drop 19 more. That's -19°C. ✓"
     },
     {
@@ -16192,24 +16192,24 @@ negativenumbers: {
       id: 95,
       difficulty: 2,
       question: "The temperature was -13°C. It rose by 22°C. What is the new temperature?",
-      options: ["-35°C", "-9°C", "35°C", "9°C", "22°C"],
-      correct: 3,
+      options: ["9°C", "-9°C", "-13°C", "10°C", "22°C"],
+      correct: 0,
       explanation: "Start at -13°C and add 22°C: -13 + 22 = 9°C. ✓"
     },
     {
       id: 96,
       difficulty: 2,
       question: "What number is halfway between -20 and 8?",
-      options: ["-10", "-8", "-2", "-4", "-6"],
-      correct: 4,
+      options: ["8", "-6", "-20", "-5", "6"],
+      correct: 1,
       explanation: "Distance is 28 (from -20 to 8). Half is 14. From -20, count up 14: -20 + 14 = -6. ✓"
     },
     {
       id: 97,
       difficulty: 2,
       question: "The temperature in Reykjavik is -21°C. It falls by another 9°C. What is the new temperature?",
-      options: ["-30", "-12", "12", "30", "-9"],
-      correct: 0,
+      options: ["9", "12", "-30", "-29", "-21"],
+      correct: 2,
       explanation: "Already -21°C, falling another 9. It just gets colder: 21 + 9 = 30, so -30°C. ✓"
     },
     {
@@ -16224,24 +16224,24 @@ negativenumbers: {
       id: 99,
       difficulty: 2,
       question: "Sam has £11 in his account. He pays a £38 bill. What is his balance now?",
-      options: ["£49", "£27", "-£27", "-£49", "£38"],
-      correct: 2,
+      options: ["-£26", "£11", "£27", "£38", "-£27"],
+      correct: 4,
       explanation: "£11 can't cover a £38 bill — that's £27 short. 11 - 38 = -27. Into the red! ✓"
     },
     {
       id: 100,
       difficulty: 2,
       question: "Zoe scored -15 points. Jack scored 12 points more than Zoe. How many points did Jack score?",
-      options: ["-27", "27", "3", "-3", "-12"],
-      correct: 3,
+      options: ["-3", "-15", "-2", "3", "12"],
+      correct: 0,
       explanation: "Zoe has -15 points. Jack has 12 more: -15 + 12 = -3 points. ✓"
     },
     {
       id: 101,
       difficulty: 3,
       question: "A submarine is at 45 metres below sea level. It rises 38 metres. What is its new depth?",
-      options: ["-83", "-38", "7", "83", "-7"],
-      correct: 4,
+      options: ["45", "-7", "-6", "7", "38"],
+      correct: 1,
       explanation: "Start at -45 and add 38: -45 + 38 = -7. ✓"
     },
     {
@@ -16256,16 +16256,16 @@ negativenumbers: {
       id: 103,
       difficulty: 3,
       question: "The temperature in Bristol is 14°C. It drops by 42°C during a freak cold snap. What is the new temperature?",
-      options: ["56°C", "-28°C", "28°C", "-56°C", "42°C"],
-      correct: 1,
+      options: ["14°C", "28°C", "42°C", "-28°C", "-27°C"],
+      correct: 3,
       explanation: "14 - 42: past zero by 28. When the drop is bigger than what you start with, the answer is negative. -28°C. ✓"
     },
     {
       id: 104,
       difficulty: 3,
       question: "What is the difference between -35 and 5?",
-      options: ["30", "35", "40", "-40", "5"],
-      correct: 2,
+      options: ["30", "5", "-35", "-40", "40"],
+      correct: 4,
       explanation: "From -35 to 5 is 40 units. Count: -35 to 0 is 35, then 0 to 5 is 5, so 35 + 5 = 40. ✓"
     },
     {
@@ -16280,24 +16280,24 @@ negativenumbers: {
       id: 106,
       difficulty: 2,
       question: "Lucas has £6. He spends £29. What is his new balance?",
-      options: ["£35", "£23", "£6", "-£35", "-£23"],
-      correct: 4,
+      options: ["£29", "-£23", "-£22", "£6", "£23"],
+      correct: 1,
       explanation: "Start with £6 and subtract £29: 6 - 29 = -£23. He's £23 overdrawn. ✓"
     },
     {
       id: 107,
       difficulty: 3,
       question: "Grace has -£38 in her account. She receives £52 for her birthday. What is her balance now?",
-      options: ["14", "-14", "-90", "90", "52"],
-      correct: 0,
+      options: ["15", "52", "14", "-14", "-38"],
+      correct: 2,
       explanation: "Start at -38 and add 52: -38 + 52 = 14. ✓"
     },
     {
       id: 108,
       difficulty: 2,
       question: "The temperature was -21°C. It dropped by 14°C. What is the new temperature?",
-      options: ["-7°C", "-35°C", "7°C", "35°C", "-14°C"],
-      correct: 1,
+      options: ["-21°C", "7°C", "14°C", "-35°C", "-34°C"],
+      correct: 3,
       explanation: "Start at -21°C and subtract 14°C: -21 - 14 = -35°C. ✓"
     },
     {
@@ -16312,8 +16312,8 @@ negativenumbers: {
       id: 110,
       difficulty: 3,
       question: "The temperature in Manchester is 8°C. A cold front causes it to drop by 33°C. What is the new temperature?",
-      options: ["41°C", "25°C", "-41°C", "-25°C", "33°C"],
-      correct: 3,
+      options: ["-25°C", "-24°C", "8°C", "25°C", "33°C"],
+      correct: 0,
       explanation: "8 - 33 = -25°C. You blow past zero after just 8 degrees, then keep dropping another 25. ✓"
     },
     {
@@ -16352,24 +16352,24 @@ negativenumbers: {
       id: 115,
       difficulty: 3,
       question: "Alfie has £17 saved up. He buys a game costing £45. What is his balance now?",
-      options: ["£62", "£28", "-£62", "-£28", "£45"],
-      correct: 3,
+      options: ["-£28", "-£27", "£17", "£28", "£45"],
+      correct: 0,
       explanation: "£17 minus £45 = -£28. He's £28 short — that's what negative means here, the amount you're missing! ✓"
     },
     {
       id: 116,
       difficulty: 2,
       question: "What number is halfway between -16 and 10?",
-      options: ["-6", "-4", "0", "-2", "-3"],
-      correct: 4,
+      options: ["10", "-3", "-16", "-2", "3"],
+      correct: 1,
       explanation: "Distance is 26 (from -16 to 10). Half is 13. From -16, count up 13: -16 + 13 = -3. ✓"
     },
     {
       id: 117,
       difficulty: 3,
       question: "The temperature in northern Canada is -32°C. It drops by another 8°C. What is the new temperature?",
-      options: ["-40", "-24", "24", "40", "-8"],
-      correct: 0,
+      options: ["8", "24", "-40", "-39", "-32"],
+      correct: 2,
       explanation: "Already a freezing -32°C, then 8 more degrees colder. 32 + 8 = 40, so -40°C. Brrr! ✓"
     },
     {
@@ -16384,8 +16384,8 @@ negativenumbers: {
       id: 119,
       difficulty: 3,
       question: "A research station is 51 metres below sea level. A balloon rises 46 metres from there. What is its position?",
-      options: ["-97", "5", "-5", "97", "-46"],
-      correct: 2,
+      options: ["-4", "5", "46", "51", "-5"],
+      correct: 4,
       explanation: "Start at -51 and add 46: -51 + 46 = -5. ✓"
     },
     {
@@ -16424,8 +16424,8 @@ negativenumbers: {
       id: 124,
       difficulty: 2,
       question: "The temperature changed from −15°C to 7°C. How many degrees did it change by?",
-      options: ["-22°C", "-8°C", "22°C", "8°C", "15°C"],
-      correct: 2,
+      options: ["15°C", "7°C", "-22°C", "23°C", "22°C"],
+      correct: 4,
       explanation: "Change = new temperature − old temperature = 7 − (−15) = 7 + 15 = 22°C. The temperature rose by 22 degrees. ✓"
     },
     {
@@ -16456,8 +16456,8 @@ negativenumbers: {
       id: 128,
       difficulty: 3,
       question: "At 6am the temperature was −9°C. By noon it was 5°C. By midnight it had fallen by 18°C from its noon value. What was the temperature at midnight?",
-      options: ["-23°C", "-13°C", "-9°C", "-4°C", "13°C"],
-      correct: 1,
+      options: ["5°C", "13°C", "18°C", "-13°C", "-12°C"],
+      correct: 3,
       explanation: "At noon: 5°C. By midnight it fell 18°C: 5 − 18 = −13°C. The temperature at midnight was −13°C. ✓"
     },
     {
@@ -16480,16 +16480,16 @@ negativenumbers: {
       id: 131,
       difficulty: 2,
       question: "The temperatures in five cities are: Aberdeen −4°C, Belfast −1°C, Cardiff 3°C, Dover 2°C, Edinburgh −6°C. What is the difference between the warmest and coldest cities?",
-      options: ["5°C", "7°C", "3°C", "10°C", "9°C"],
-      correct: 4,
+      options: ["10°C", "9°C", "6°C", "3°C", "-9°C"],
+      correct: 1,
       explanation: "Warmest: Cardiff at 3°C. Coldest: Edinburgh at −6°C. Difference: 3 − (−6) = 3 + 6 = 9°C. ✓"
     },
     {
       id: 132,
       difficulty: 3,
       question: "Oliver has −£8 in his account. He receives £15, spends £22, then receives £10. What is his final balance?",
-      options: ["-£5", "-£15", "£5", "£15", "-£25"],
-      correct: 0,
+      options: ["£10", "£15", "-£5", "-£4", "£5"],
+      correct: 2,
       explanation: "Start: −£8. Receive £15: −8 + 15 = £7. Spend £22: 7 − 22 = −£15. Receive £10: −15 + 10 = −£5. His final balance is −£5. ✓"
     },
     {
@@ -16521,8 +16521,8 @@ negativenumbers: {
       id: 136,
       difficulty: 1,
       question: "The temperature in Aberdeen is −4°C. It rises by 9°C during the day. What is the new temperature?",
-      options: ["−13°C", "−5°C", "4°C", "13°C", "5°C"],
-      correct: 4,
+      options: ["9°C", "5°C", "4°C", "-5°C", "6°C"],
+      correct: 1,
       explanation: "Start at −4°C and add 9°C: −4 + 9 = 5°C. Count up from −4: go 4 to reach 0, then 5 more to reach 5°C. ✓"
     },
     {
@@ -16537,16 +16537,16 @@ negativenumbers: {
       id: 138,
       difficulty: 2,
       question: "Priya has −£9 in her bank account. She earns £16 from babysitting. What is her new balance?",
-      options: ["−£25", "£7", "−£7", "£25", "£9"],
-      correct: 1,
+      options: ["£8", "£9", "£16", "£7", "-£7"],
+      correct: 3,
       explanation: "Start with −£9 and add £16: −9 + 16 = £7. She crosses zero and ends up with £7. ✓"
     },
     {
       id: 139,
       difficulty: 2,
       question: "The temperature at dawn was −14°C. By afternoon it had risen by 20°C. What was the afternoon temperature?",
-      options: ["−34°C", "−6°C", "6°C", "34°C", "14°C"],
-      correct: 2,
+      options: ["-6°C", "7°C", "14°C", "20°C", "6°C"],
+      correct: 4,
       explanation: "Start at −14°C and add 20°C: −14 + 20 = 6°C. Count up 14 to reach 0, then 6 more to reach 6°C. ✓"
     },
     {
@@ -16602,8 +16602,8 @@ negativenumbers: {
       id: 146,
       difficulty: 1,
       question: "Which number is exactly 7 less than −3?",
-      options: ["−7", "−4", "4", "10", "−10"],
-      correct: 4,
+      options: ["−11", "−10", "−7", "−3", "-−10"],
+      correct: 1,
       explanation: "7 less than −3 means −3 − 7 = −10. Moving 7 places left on the number line from −3 gives −10. ✓"
     },
     {
@@ -16626,8 +16626,8 @@ negativenumbers: {
       id: 149,
       difficulty: 2,
       question: "Five children measure the temperature outside their homes at 7am. Results: Ava −3°C, Ben −7°C, Cara 2°C, Dan −1°C, Eve 4°C. What is the range of their temperatures?",
-      options: ["7°C", "9°C", "11°C", "13°C", "3°C"],
-      correct: 2,
+      options: ["7°C", "4°C", "-11°C", "12°C", "11°C"],
+      correct: 4,
       explanation: "Range = highest − lowest = 4 − (−7) = 4 + 7 = 11°C. ✓"
     },
     // === NEW QUESTIONS: subtracting-into-negatives (5 new) ===
@@ -16635,16 +16635,16 @@ negativenumbers: {
       id: 150,
       difficulty: 1,
       question: "Ruby has £5 saved. She buys a comic costing £12. What is her balance now?",
-      options: ["£17", "£7", "−£17", "−£7", "£12"],
-      correct: 3,
+      options: ["−£7", "−£5", "-−£7", "−£8", "−£12"],
+      correct: 0,
       explanation: "5 − 12 = −7. Ruby now owes £7. ✓"
     },
     {
       id: 151,
       difficulty: 1,
       question: "The temperature in Bournemouth is 6°C. A cold front causes it to drop by 15°C. What is the new temperature?",
-      options: ["21°C", "9°C", "15°C", "−21°C", "−9°C"],
-      correct: 4,
+      options: ["−15°C", "−9°C", "−6°C", "-−9°C", "−10°C"],
+      correct: 1,
       explanation: "6 − 15 = −9°C. The temperature drops below zero. ✓"
     },
     {
@@ -16667,8 +16667,8 @@ negativenumbers: {
       id: 154,
       difficulty: 3,
       question: "Ethan has £25. He buys a book for £9, a game for £14, and a snack for £8. What is his balance?",
-      options: ["£4", "−£4", "−£6", "£6", "−£2"],
-      correct: 2,
+      options: ["-−£6", "−£7", "−£8", "−£14", "−£6"],
+      correct: 4,
       explanation: "Total spent: 9 + 14 + 8 = £31. Balance: 25 − 31 = −£6. Ethan is £6 overdrawn. ✓"
     },
     // === NEW QUESTIONS: difference-across-zero (9 new) ===
@@ -16676,72 +16676,72 @@ negativenumbers: {
       id: 155,
       difficulty: 1,
       question: "What is the difference between −3°C and 5°C?",
-      options: ["2°C", "5°C", "−8°C", "8°C", "3°C"],
-      correct: 3,
+      options: ["8°C", "5°C", "3°C", "-8°C", "9°C"],
+      correct: 0,
       explanation: "From −3 to 5: count 3 from −3 to 0, then 5 from 0 to 5. Difference = 3 + 5 = 8°C. ✓"
     },
     {
       id: 156,
       difficulty: 1,
       question: "The temperature in the morning was −2°C. By the afternoon it was 6°C. How much did the temperature rise?",
-      options: ["4°C", "6°C", "2°C", "−8°C", "8°C"],
-      correct: 4,
+      options: ["9°C", "8°C", "6°C", "2°C", "-8°C"],
+      correct: 1,
       explanation: "Rise = 6 − (−2) = 6 + 2 = 8°C. The temperature rose by 8 degrees. ✓"
     },
     {
       id: 157,
       difficulty: 2,
       question: "A freezer is at −18°C. Room temperature is 20°C. What is the difference between these temperatures?",
-      options: ["38°C", "18°C", "20°C", "2°C", "−38°C"],
-      correct: 0,
+      options: ["-38°C", "39°C", "38°C", "20°C", "18°C"],
+      correct: 2,
       explanation: "Difference = 20 − (−18) = 20 + 18 = 38°C. ✓"
     },
     {
       id: 158,
       difficulty: 2,
       question: "On Monday the temperature was −5°C. On Tuesday it was 9°C. How many degrees warmer was Tuesday?",
-      options: ["4°C", "14°C", "9°C", "−14°C", "5°C"],
-      correct: 1,
+      options: ["5°C", "-14°C", "15°C", "14°C", "9°C"],
+      correct: 3,
       explanation: "Change = 9 − (−5) = 9 + 5 = 14°C. Tuesday was 14 degrees warmer. ✓"
     },
     {
       id: 159,
       difficulty: 2,
       question: "The deepest point of a lake is 12 metres below the surface. A bird is flying 8 metres above the surface. What is the distance between the bird and the deepest point?",
-      options: ["4m", "12m", "20m", "16m", "8m"],
-      correct: 2,
+      options: ["12m", "8m", "-20m", "21m", "20m"],
+      correct: 4,
       explanation: "The deepest point is at −12m and the bird is at +8m. Distance = 8 − (−12) = 8 + 12 = 20m. ✓"
     },
     {
       id: 160,
       difficulty: 2,
       question: "Edinburgh recorded −7°C and London recorded 4°C on the same day. How much warmer was London?",
-      options: ["3°C", "7°C", "−11°C", "11°C", "4°C"],
-      correct: 3,
+      options: ["11°C", "7°C", "4°C", "-11°C", "12°C"],
+      correct: 0,
       explanation: "Difference = 4 − (−7) = 4 + 7 = 11°C. London was 11 degrees warmer. ✓"
     },
     {
       id: 161,
       difficulty: 2,
       question: "What is the difference between −13 and −4?",
-      options: ["4", "−9", "13", "17", "9"],
-      correct: 4,
+      options: ["13", "9", "4", "-9", "10"],
+      correct: 1,
       explanation: "From −13 to −4 is 9 places to the right on the number line. Difference = −4 − (−13) = −4 + 13 = 9. ✓"
     },
     {
       id: 162,
       difficulty: 3,
       question: "The highest temperature ever recorded in the UK was 40°C. The lowest was −27°C. What is the difference between these record temperatures?",
-      options: ["67°C", "27°C", "40°C", "53°C", "13°C"],
-      correct: 0,
+      options: ["-67°C", "68°C", "67°C", "40°C", "27°C"],
+      correct: 2,
       explanation: "Difference = 40 − (−27) = 40 + 27 = 67°C. ✓"
     },
     {
       id: 163,
       difficulty: 3,
       question: "A submarine is at −45 metres. A helicopter is at 120 metres above sea level. What is the distance between them?",
-      options: ["75m", "165m", "145m", "120m", "210m"],
-      correct: 1,
+      options: ["45m", "-165m", "166m", "165m", "120m"],
+      correct: 3,
       explanation: "Distance = 120 − (−45) = 120 + 45 = 165m. ✓"
     },
     // === NEW QUESTIONS: counting-through-zero (8 new) ===
@@ -16814,16 +16814,16 @@ negativenumbers: {
       id: 172,
       difficulty: 2,
       question: "A submarine is at −20 metres. It rises 8 metres. What is its new depth?",
-      options: ["−12m", "−28m", "12m", "28m", "−8m"],
-      correct: 0,
+      options: ["−13m", "−20m", "−12m", "−8m", "-−12m"],
+      correct: 2,
       explanation: "Start at −20 and add 8: −20 + 8 = −12. The submarine is still 12 metres below sea level. ✓"
     },
     {
       id: 173,
       difficulty: 1,
       question: "The temperature is −10°C. It warms up by 4°C. What is the new temperature?",
-      options: ["−14°C", "−6°C", "6°C", "14°C", "−4°C"],
-      correct: 1,
+      options: ["-−6°C", "−7°C", "−10°C", "−6°C", "−4°C"],
+      correct: 3,
       explanation: "Start at −10°C and add 4°C: −10 + 4 = −6°C. It warms up but stays below zero. ✓"
     },
     {
@@ -16839,8 +16839,8 @@ negativenumbers: {
       id: 175,
       difficulty: 1,
       question: "A car park has floors numbered −2, −1, 0, 1, 2, 3. James parks on floor −2 and takes the lift to floor 3. How many floors does he travel?",
-      options: ["1", "2", "3", "5", "4"],
-      correct: 3,
+      options: ["5", "3", "2", "-5", "6"],
+      correct: 0,
       explanation: "From floor −2 to floor 3: count −2 → −1 → 0 → 1 → 2 → 3. That is 5 floors. Or 3 − (−2) = 5. ✓"
     },
     {
@@ -16893,7 +16893,7 @@ primenumbersfactors: {
       id: 2,
       difficulty: 1,
       question: "A maths challenge card asks: how many factors does 24 have?",
-      options: ["4", "6", "8", "10", "12"],
+      options: ["9", "16", "8", "7", "4"],
       correct: 2,
       explanation: "The factors of 24 are: 1, 2, 3, 4, 6, 8, 12, 24. Count them: that's 8 factors. ✓"
     },
@@ -16965,7 +16965,7 @@ primenumbersfactors: {
       id: 11,
       difficulty: 2,
       question: "Two flashing lights start together. One flashes every 4 seconds and the other every 6 seconds. After how many seconds will they next flash at the same time? (Find the smallest number that is a multiple of both 4 and 6.)",
-      options: ["10", "12", "18", "24", "30"],
+      options: ["24", "12", "6", "2", "16"],
       correct: 1,
       explanation: "Multiples of 4: 4, 8, 12, 16, 20, 24... Multiples of 6: 6, 12, 18, 24, 30... The smallest common multiple is 12. ✓"
     },
@@ -17053,7 +17053,7 @@ primenumbersfactors: {
       id: 117,
       difficulty: 2,
       question: "Jack is listing all the numbers that divide exactly into 30. How many factors does 30 have?",
-      options: ["6", "7", "8", "9", "10"],
+      options: ["3", "9", "8", "7", "4"],
       correct: 2,
       explanation: "Factors of 30 are: 1, 2, 3, 5, 6, 10, 15, and 30. That's 8 factors. ✓"
     },
@@ -17077,7 +17077,7 @@ primenumbersfactors: {
       id: 120,
       difficulty: 3,
       question: "Two buses leave the station at the same time. Bus A comes every 16 minutes and Bus B every 24 minutes. How many minutes until they both leave together again? (Find the Lowest Common Multiple (LCM) of 16 and 24.)",
-      options: ["48", "40", "32", "56", "64"],
+      options: ["48", "24", "8", "64", "96"],
       correct: 0,
       explanation: "Multiples of 16: 16, 32, 48... Multiples of 24: 24, 48, 72... The Lowest Common Multiple (LCM) is 48. ✓"
     },
@@ -17117,7 +17117,7 @@ primenumbersfactors: {
       id: 25,
       difficulty: 2,
       question: "What is the Lowest Common Multiple (LCM) of 14 and 21?",
-      options: ["42", "28", "56", "63", "84"],
+      options: ["42", "21", "7", "56", "84"],
       correct: 0,
       explanation: "Multiples of 14: 14, 28, 42, 56... Multiples of 21: 21, 42, 63... The Lowest Common Multiple (LCM) is 42. ✓"
     },
@@ -17133,7 +17133,7 @@ primenumbersfactors: {
       id: 27,
       difficulty: 1,
       question: "For homework, Emily must find all the factors of 50. How many factors does 50 have?",
-      options: ["4", "5", "6", "7", "8"],
+      options: ["2", "7", "6", "5", "3"],
       correct: 2,
       explanation: "Factors of 50 are: 1, 2, 5, 10, 25, and 50. That's 6 factors. ✓"
     },
@@ -17157,7 +17157,7 @@ primenumbersfactors: {
       id: 30,
       difficulty: 2,
       question: "Hot dogs come in packs of 10 and rolls come in packs of 15. What is the smallest number of each you need to buy so you have the same number of hot dogs and rolls? (Find the Lowest Common Multiple (LCM) of 10 and 15.)",
-      options: ["30", "25", "15", "45", "60"],
+      options: ["30", "15", "5", "40", "60"],
       correct: 0,
       explanation: "Multiples of 10: 10, 20, 30, 40... Multiples of 15: 15, 30, 45... The Lowest Common Multiple (LCM) is 30. ✓"
     },
@@ -17205,7 +17205,7 @@ primenumbersfactors: {
       id: 36,
       difficulty: 2,
       question: "Bus A leaves the station every 8 minutes and Bus B leaves every 14 minutes. They both leave at 9:00 am. What is the Lowest Common Multiple (LCM) of 8 and 14 to find when they next leave together?",
-      options: ["28", "56", "42", "70", "84"],
+      options: ["64", "56", "28", "14", "2"],
       correct: 1,
       explanation: "Multiples of 8: 8, 16, 24, 32, 40, 48, 56... Multiples of 14: 14, 28, 42, 56... The Lowest Common Multiple (LCM) is 56. ✓"
     },
@@ -17221,7 +17221,7 @@ primenumbersfactors: {
       id: 38,
       difficulty: 1,
       question: "Mrs Jones asks her class to find all the ways 48 chairs can be arranged in equal rows. How many different factors does 48 have?",
-      options: ["8", "9", "11", "10", "12"],
+      options: ["5", "2", "11", "10", "9"],
       correct: 3,
       explanation: "Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. That's 10 factors. ✓"
     },
@@ -17245,7 +17245,7 @@ primenumbersfactors: {
       id: 41,
       difficulty: 2,
       question: "Two lighthouses flash their lights. One flashes every 9 seconds and the other every 12 seconds. What is the Lowest Common Multiple (LCM) of 9 and 12 to find when they next flash together?",
-      options: ["18", "36", "24", "48", "72"],
+      options: ["45", "36", "18", "12", "3"],
       correct: 1,
       explanation: "Multiples of 9: 9, 18, 27, 36... Multiples of 12: 12, 24, 36... The Lowest Common Multiple (LCM) is 36. ✓"
     },
@@ -17261,7 +17261,7 @@ primenumbersfactors: {
       id: 43,
       difficulty: 2,
       question: "In a number hunt, Zara must find the first prime number after 60 on the number line. Which is the smallest prime number greater than 60?",
-      options: ["64", "62", "63", "61", "65"],
+      options: ["59", "62", "63", "61", "60"],
       correct: 3,
       explanation: "61 is only divisible by 1 and 61, so it's prime. It's the smallest prime > 60. ✓"
     },
@@ -17285,7 +17285,7 @@ primenumbersfactors: {
       id: 46,
       difficulty: 2,
       question: "Class 5 has PE every 6 school days and art every 9 school days. Both happen today. What is the Lowest Common Multiple (LCM) of 6 and 9 to find when they next fall on the same day?",
-      options: ["12", "18", "15", "24", "36"],
+      options: ["36", "18", "9", "3", "24"],
       correct: 1,
       explanation: "Multiples of 6: 6, 12, 18, 24... Multiples of 9: 9, 18, 27... The Lowest Common Multiple (LCM) is 18. ✓"
     },
@@ -17301,7 +17301,7 @@ primenumbersfactors: {
       id: 48,
       difficulty: 1,
       question: "A teacher arranges 36 chairs into equal rows. She lists every possible row size. How many factors does 36 have?",
-      options: ["7", "8", "10", "9", "11"],
+      options: ["2", "10", "18", "9", "8"],
       correct: 3,
       explanation: "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. That's 9 factors. ✓"
     },
@@ -17325,7 +17325,7 @@ primenumbersfactors: {
       id: 51,
       difficulty: 2,
       question: "Two runners circle a track. One completes a lap every 20 seconds, the other every 30 seconds. What is the Lowest Common Multiple (LCM) of 20 and 30 to find when they next cross the start line together?",
-      options: ["40", "60", "50", "70", "80"],
+      options: ["120", "60", "30", "10", "80"],
       correct: 1,
       explanation: "Multiples of 20: 20, 40, 60... Multiples of 30: 30, 60, 90... The Lowest Common Multiple (LCM) is 60. ✓"
     },
@@ -17373,7 +17373,7 @@ primenumbersfactors: {
       id: 57,
       difficulty: 2,
       question: "At sports day, the drum beats every 4 seconds and the whistle blows every 10 seconds. They start together. What is the Lowest Common Multiple (LCM) of 4 and 10 to find when they next happen at the same time?",
-      options: ["10", "14", "20", "30", "40"],
+      options: ["24", "40", "20", "10", "2"],
       correct: 2,
       explanation: "Multiples of 4: 4, 8, 12, 16, 20... Multiples of 10: 10, 20, 30... The Lowest Common Multiple (LCM) is 20. ✓"
     },
@@ -17381,7 +17381,7 @@ primenumbersfactors: {
       id: 58,
       difficulty: 1,
       question: "A quiz master asks: what is the biggest prime number you can find that is still less than 70? Which is the largest prime number less than 70?",
-      options: ["63", "65", "68", "67", "69"],
+      options: ["68", "69", "70", "67", "65"],
       correct: 3,
       explanation: "Testing: 69 = 3 × 23, 68 = 4 × 17 (composite). 67 is only divisible by 1 and 67, so it's prime. ✓"
     },
@@ -17389,7 +17389,7 @@ primenumbersfactors: {
       id: 59,
       difficulty: 1,
       question: "A school hall has 60 seats to arrange in equal rows for the assembly. How many factors does 60 have?",
-      options: ["10", "11", "14", "13", "12"],
+      options: ["11", "6", "3", "13", "12"],
       correct: 4,
       explanation: "Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. That's 12 factors. ✓"
     },
@@ -17413,7 +17413,7 @@ primenumbersfactors: {
       id: 62,
       difficulty: 2,
       question: "A clock chimes every 5 minutes and a cuckoo clock calls every 8 minutes. They both sound at noon. What is the Lowest Common Multiple (LCM) of 5 and 8?",
-      options: ["13", "20", "40", "30", "45"],
+      options: ["1", "45", "40", "20", "8"],
       correct: 2,
       explanation: "Since 5 and 8 have no common factors, the Lowest Common Multiple (LCM) = 5 × 8 = 40. ✓"
     },
@@ -17453,7 +17453,7 @@ primenumbersfactors: {
       id: 67,
       difficulty: 3,
       question: "What is the Lowest Common Multiple (LCM) of 11 and 13?",
-      options: ["24", "121", "143", "156", "169"],
+      options: ["154", "286", "143", "13", "1"],
       correct: 2,
       explanation: "Since 11 and 13 are both prime with no common factors, the Lowest Common Multiple (LCM) = 11 × 13 = 143. ✓"
     },
@@ -17461,7 +17461,7 @@ primenumbersfactors: {
       id: 68,
       difficulty: 2,
       question: "Which is the smallest prime number greater than 80?",
-      options: ["81", "82", "84", "83", "85"],
+      options: ["80", "84", "85", "83", "81"],
       correct: 3,
       explanation: "Testing: 81 = 9², 82 = 2 × 41 (composite). 83 is only divisible by 1 and 83, so it's prime. ✓"
     },
@@ -17477,7 +17477,7 @@ primenumbersfactors: {
       id: 70,
       difficulty: 1,
       question: "Tom has 64 football stickers to stick evenly across pages of his album. How many factors does 64 have?",
-      options: ["7", "6", "5", "8", "9"],
+      options: ["7", "6", "1", "8", "14"],
       correct: 0,
       explanation: "Factors of 64: 1, 2, 4, 8, 16, 32, 64. That's 7 factors. ✓"
     },
@@ -17501,7 +17501,7 @@ primenumbersfactors: {
       id: 73,
       difficulty: 3,
       question: "What is the Lowest Common Multiple (LCM) of 25 and 30?",
-      options: ["50", "100", "125", "150", "750"],
+      options: ["30", "5", "175", "150", "75"],
       correct: 3,
       explanation: "Multiples of 25: 25, 50, 75, 100, 125, 150... Multiples of 30: 30, 60, 90, 120, 150... The Lowest Common Multiple (LCM) is 150. ✓"
     },
@@ -17533,7 +17533,7 @@ primenumbersfactors: {
       id: 77,
       difficulty: 2,
       question: "A school bell rings every 7 minutes for one class and every 10 minutes for another. What is the Lowest Common Multiple (LCM) of 7 and 10 to find when they next ring at the same time?",
-      options: ["17", "35", "70", "50", "100"],
+      options: ["1", "77", "70", "35", "10"],
       correct: 2,
       explanation: "Since 7 and 10 have no common factors, the Lowest Common Multiple (LCM) = 7 × 10 = 70. ✓"
     },
@@ -17541,7 +17541,7 @@ primenumbersfactors: {
       id: 78,
       difficulty: 1,
       question: "Which is the largest prime number less than 100?",
-      options: ["93", "95", "98", "97", "99"],
+      options: ["98", "99", "100", "97", "95"],
       correct: 3,
       explanation: "Testing: 99 = 9 × 11, 98 = 2 × 49 (composite). 97 is only divisible by 1 and 97, so it's prime. ✓"
     },
@@ -17549,7 +17549,7 @@ primenumbersfactors: {
       id: 79,
       difficulty: 1,
       question: "A baker made 72 cupcakes and wants to know every way to pack them equally into boxes. How many factors does 72 have?",
-      options: ["10", "11", "14", "13", "12"],
+      options: ["11", "6", "2", "13", "12"],
       correct: 4,
       explanation: "Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. That's 12 factors. ✓"
     },
@@ -17573,7 +17573,7 @@ primenumbersfactors: {
       id: 82,
       difficulty: 2,
       question: "Lily waters her tomatoes every 4 days and her sunflowers every 6 days. She waters both today. What is the Lowest Common Multiple (LCM) of 4 and 6 to find when she next waters both on the same day?",
-      options: ["10", "18", "12", "24", "30"],
+      options: ["16", "24", "12", "6", "2"],
       correct: 2,
       explanation: "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... The Lowest Common Multiple (LCM) is 12. ✓"
     },
@@ -17621,7 +17621,7 @@ primenumbersfactors: {
       id: 88,
       difficulty: 3,
       question: "Train A departs every 18 minutes and Train B every 24 minutes from the same platform. What is the Lowest Common Multiple (LCM) of 18 and 24 to find when they next depart together?",
-      options: ["36", "48", "60", "72", "96"],
+      options: ["24", "6", "90", "72", "36"],
       correct: 3,
       explanation: "Multiples of 18: 18, 36, 54, 72... Multiples of 24: 24, 48, 72... The Lowest Common Multiple (LCM) is 72. ✓"
     },
@@ -17637,7 +17637,7 @@ primenumbersfactors: {
       id: 90,
       difficulty: 1,
       question: "Grandma knitted 81 squares for a patchwork blanket. She wants to sew them into equal rows. How many factors does 81 have?",
-      options: ["5", "4", "3", "6", "7"],
+      options: ["5", "4", "1", "6", "10"],
       correct: 0,
       explanation: "Factors of 81: 1, 3, 9, 27, 81. That's 5 factors. ✓"
     },
@@ -17661,7 +17661,7 @@ primenumbersfactors: {
       id: 93,
       difficulty: 1,
       question: "What is the Lowest Common Multiple (LCM) of 3 and 7?",
-      options: ["10", "14", "18", "21", "28"],
+      options: ["1", "24", "42", "21", "7"],
       correct: 3,
       explanation: "Since 3 and 7 are both prime with no common factors, the Lowest Common Multiple (LCM) = 3 × 7 = 21. ✓"
     },
@@ -17701,7 +17701,7 @@ primenumbersfactors: {
       id: 98,
       difficulty: 3,
       question: "What is the Lowest Common Multiple (LCM) of 15 and 25?",
-      options: ["50", "125", "100", "75", "150"],
+      options: ["5", "90", "150", "75", "25"],
       correct: 3,
       explanation: "Multiples of 15: 15, 30, 45, 60, 75... Multiples of 25: 25, 50, 75... The Lowest Common Multiple (LCM) is 75. ✓"
     },
@@ -17725,7 +17725,7 @@ primenumbersfactors: {
       id: 101,
       difficulty: 1,
       question: "A farmer is planting 100 bulbs in equal rows across a flower bed. How many factors does 100 have?",
-      options: ["7", "9", "8", "10", "11"],
+      options: ["18", "9", "8", "2", "10"],
       correct: 1,
       explanation: "Factors of 100: 1, 2, 4, 5, 10, 20, 25, 50, 100. That's 9 factors. ✓"
     },
@@ -17749,7 +17749,7 @@ primenumbersfactors: {
       id: 104,
       difficulty: 2,
       question: "What is the Lowest Common Multiple (LCM) of 22 and 33?",
-      options: ["44", "55", "132", "99", "66"],
+      options: ["33", "11", "88", "132", "66"],
       correct: 4,
       explanation: "Multiples of 22: 22, 44, 66, 88... Multiples of 33: 33, 66, 99... The Lowest Common Multiple (LCM) is 66. ✓"
     },
@@ -17757,7 +17757,7 @@ primenumbersfactors: {
       id: 105,
       difficulty: 2,
       question: "Which is the smallest prime number greater than 100?",
-      options: ["101", "102", "103", "104", "105"],
+      options: ["101", "100", "99", "102", "103"],
       correct: 0,
       explanation: "101 is only divisible by 1 and 101, so it's prime. It's the smallest prime > 100. ✓"
     },
@@ -17781,7 +17781,7 @@ primenumbersfactors: {
       id: 108,
       difficulty: 2,
       question: "What is the Lowest Common Multiple (LCM) of 12 and 16?",
-      options: ["24", "32", "64", "48", "96"],
+      options: ["16", "4", "60", "48", "24"],
       correct: 3,
       explanation: "Multiples of 12: 12, 24, 36, 48... Multiples of 16: 16, 32, 48... The Lowest Common Multiple (LCM) is 48. ✓"
     },
@@ -17805,7 +17805,7 @@ primenumbersfactors: {
       id: 111,
       difficulty: 2,
       question: "The school kitchen has 96 cartons of milk to place equally on trays. How many factors does 96 have?",
-      options: ["10", "12", "11", "13", "14"],
+      options: ["13", "12", "11", "6", "2"],
       correct: 1,
       explanation: "Factors of 96: 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96. That's 12 factors. ✓"
     },
@@ -17829,7 +17829,7 @@ primenumbersfactors: {
       id: 114,
       difficulty: 3,
       question: "What is the Lowest Common Multiple (LCM) of 28 and 35?",
-      options: ["70", "105", "210", "175", "140"],
+      options: ["70", "35", "7", "168", "140"],
       correct: 4,
       explanation: "Multiples of 28: 28, 56, 84, 112, 140... Multiples of 35: 35, 70, 105, 140... The Lowest Common Multiple (LCM) is 140. ✓"
     },
@@ -17888,7 +17888,7 @@ primenumbersfactors: {
       id: 126,
       difficulty: 1,
       question: "How many factors does 20 have?",
-      options: ["4", "6", "5", "7", "8"],
+      options: ["7", "6", "5", "3", "2"],
       correct: 1,
       explanation: "Factors of 20: 1, 2, 4, 5, 10, 20. That's 6 factors. ✓"
     },
@@ -17904,7 +17904,7 @@ primenumbersfactors: {
       id: 128,
       difficulty: 1,
       question: "How many factors does 15 have?",
-      options: ["2", "3", "5", "4", "6"],
+      options: ["2", "5", "8", "4", "3"],
       correct: 3,
       explanation: "Factors of 15: 1, 3, 5, 15. That's 4 factors. ✓"
     },
@@ -17920,7 +17920,7 @@ primenumbersfactors: {
       id: 130,
       difficulty: 1,
       question: "How many factors does 25 have?",
-      options: ["3", "2", "4", "5", "6"],
+      options: ["3", "2", "1", "4", "6"],
       correct: 0,
       explanation: "Factors of 25: 1, 5, 25. That's 3 factors. ✓"
     },
@@ -18074,7 +18074,7 @@ primenumbersfactors: {
       id: 149,
       difficulty: 1,
       question: "What is the Lowest Common Multiple (LCM) of 6 and 10?",
-      options: ["20", "24", "60", "40", "30"],
+      options: ["15", "10", "2", "36", "30"],
       correct: 4,
       explanation: "Multiples of 6: 6, 12, 18, 24, 30... Multiples of 10: 10, 20, 30... The Lowest Common Multiple (LCM) is 30. ✓"
     },
@@ -18115,7 +18115,7 @@ primenumbersfactors: {
       id: 154,
       difficulty: 2,
       question: "Sausages come in packs of 8 and bread rolls come in packs of 12. What is the smallest number of each you need to buy so you have the same number of sausages and rolls?",
-      options: ["12", "16", "96", "48", "24"],
+      options: ["12", "4", "32", "48", "24"],
       correct: 4,
       explanation: "Find the Lowest Common Multiple (LCM) of 8 and 12. Multiples of 8: 8, 16, 24... Multiples of 12: 12, 24... The LCM is 24. You need 24 of each. ✓"
     },
@@ -18460,8 +18460,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 8, width: 5, dimUnit: "m" } },
       question: "Emily's rectangular garden is 8 metres long and 5 metres wide. What is the perimeter of her garden?",
-      options: ["13 metres", "18 metres", "40 metres", "26 metres", "21 metres"],
-      correct: 3,
+      options: ["40 metres", "26 metres", "24 metres", "21 metres", "28 metres"],
+      correct: 1,
       explanation: "To find the perimeter of a rectangle, add all four sides together. The formula is: Perimeter = 2 × (length + width). So: 2 × (8 + 5) = 2 × 13 = 26 metres. ✓"
     },
     {
@@ -18496,8 +18496,8 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 9, width: 4, dimUnit: "cm" } },
       question: "A rectangle has a length of 9 cm and a width of 4 cm. What is the difference between its perimeter and its area?",
-      options: ["26", "5", "10", "13", "36"],
-      correct: 2,
+      options: ["10", "15", "26", "36", "62"],
+      correct: 0,
       explanation: "First find the perimeter: 2 × (9 + 4) = 2 × 13 = 26 cm. Then find the area: 9 × 4 = 36 cm². The difference is 36 - 26 = 10. Note: we're comparing numbers, not units. ✓"
     },
     {
@@ -18505,8 +18505,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 90, width: 60, dimUnit: "m" } },
       question: "Tom's rectangular football pitch is 90 metres long and 60 metres wide. What is its perimeter?",
-      options: ["150 metres", "180 metres", "5400 metres", "300 metres", "240 metres"],
-      correct: 3,
+      options: ["302 metres", "300 metres", "298 metres", "240 metres", "150 metres"],
+      correct: 1,
       explanation: "Perimeter = 2 × (length + width) = 2 × (90 + 60) = 2 × 150 = 300 metres. ✓"
     },
     {
@@ -18523,8 +18523,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 8, width: "?", dimUnit: "cm", label: "Perimeter = 24 cm" } },
       question: "A rectangle has a perimeter of 24 cm. Its length is 8 cm. What is its width?",
-      options: ["4 cm", "3 cm", "6 cm", "8 cm", "16 cm"],
-      correct: 0,
+      options: ["6 cm", "8 cm", "16 cm", "4 cm", "2 cm"],
+      correct: 3,
       explanation: "Perimeter = 2 × (length + width), so 24 = 2 × (8 + width). Divide both sides by 2: 12 = 8 + width. Therefore width = 12 - 8 = 4 cm. ✓"
     },
     {
@@ -18532,8 +18532,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 3, width: 2, dimUnit: "m" } },
       question: "Oliver is tiling his bathroom floor which is 3 metres long and 2 metres wide. Each tile covers 1 square metre. How many tiles does he need?",
-      options: ["5 tiles", "6 tiles", "10 tiles", "12 tiles", "15 tiles"],
-      correct: 1,
+      options: ["5 tiles", "4 tiles", "9 tiles", "10 tiles", "6 tiles"],
+      correct: 4,
       explanation: "Area of bathroom = 3 × 2 = 6 square metres. Each tile covers 1 square metre, so he needs 6 tiles. ✓"
     },
     {
@@ -18622,8 +18622,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 15, width: 2, dimUnit: "m" } },
       question: "Mia's rectangular garden path is 15 metres long and 2 metres wide. She wants to put stones along both long sides and both short sides. What total length of stones does she need?",
-      options: ["17 metres", "34 metres", "30 metres", "68 metres", "60 metres"],
-      correct: 1,
+      options: ["32 metres", "30 metres", "17 metres", "36 metres", "34 metres"],
+      correct: 4,
       explanation: "This is asking for the perimeter. Perimeter = 2 × (15 + 2) = 2 × 17 = 34 metres. ✓"
     },
     {
@@ -18640,8 +18640,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "(w + 5)", width: "w", dimUnit: "cm", label: "w = 7" } },
       question: "A rectangle has width w cm and length (w + 5) cm. If w = 7, what is the perimeter?",
-      options: ["19 cm", "26 cm", "84 cm", "38 cm", "12 cm"],
-      correct: 3,
+      options: ["84 cm", "38 cm", "36 cm", "40 cm", "76 cm"],
+      correct: 1,
       explanation: "If w = 7, then width = 7 cm and length = 7 + 5 = 12 cm. Perimeter = 2 × (7 + 12) = 2 × 19 = 38 cm. ✓"
     },
     {
@@ -18702,8 +18702,8 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: "(2y + 3)", width: "y", dimUnit: "m", label: "y = 5" } },
       question: "A rectangular swimming pool has a length of (2y + 3) metres and a width of y metres. If y = 5, what is the perimeter?",
-      options: ["36 metres", "26 metres", "13 metres", "40 metres", "65 metres"],
-      correct: 0,
+      options: ["31 metres", "38 metres", "65 metres", "36 metres", "34 metres"],
+      correct: 3,
       explanation: "If y = 5, then length = (2 × 5) + 3 = 13 metres and width = 5 metres. Perimeter = 2 × (13 + 5) = 2 × 18 = 36 metres. ✓"
     },
     {
@@ -18729,8 +18729,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 10, width: 7, dimUnit: "m" } },
       question: "A rectangular classroom is 10 metres long and 7 metres wide. What is the perimeter?",
-      options: ["17 metres", "140 metres", "70 metres", "34 metres", "24 metres"],
-      correct: 3,
+      options: ["70 metres", "34 metres", "32 metres", "36 metres", "68 metres"],
+      correct: 1,
       explanation: "Perimeter = 2 × (length + width) = 2 × (10 + 7) = 2 × 17 = 34 metres. ✓"
     },
     {
@@ -18783,8 +18783,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 18, width: 6, dimUnit: "cm" } },
       question: "Lily's rectangular book is 18 cm long and 6 cm wide. What is its perimeter?",
-      options: ["24 cm", "36 cm", "30 cm", "108 cm", "48 cm"],
-      correct: 4,
+      options: ["24 cm", "50 cm", "48 cm", "46 cm", "42 cm"],
+      correct: 2,
       explanation: "Perimeter = 2 × (18 + 6) = 2 × 24 = 48 cm. ✓"
     },
     {
@@ -18792,8 +18792,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 15, width: "?", dimUnit: "cm", label: "Perimeter = 50 cm" } },
       question: "A rectangle has a perimeter of 50 cm and a length of 15 cm. What is its width?",
-      options: ["10 cm", "8 cm", "5 cm", "12 cm", "20 cm"],
-      correct: 0,
+      options: ["15 cm", "20 cm", "35 cm", "10 cm", "12 cm"],
+      correct: 3,
       explanation: "Perimeter = 2 × (length + width), so 50 = 2 × (15 + width). Therefore 25 = 15 + width, so width = 10 cm. ✓"
     },
     {
@@ -18810,8 +18810,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 11, width: 11, dimUnit: "cm" } },
       question: "A square tile has sides of 11 cm. What is its perimeter?",
-      options: ["22 cm", "121 cm", "44 cm", "33 cm", "55 cm"],
-      correct: 2,
+      options: ["44 cm", "22 cm", "11 cm", "3 cm", "121 cm"],
+      correct: 0,
       explanation: "Perimeter = 4 × side = 4 × 11 = 44 cm. ✓"
     },
     {
@@ -18819,8 +18819,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 14, width: 9, dimUnit: "m" } },
       question: "Oliver is fencing a rectangular garden that is 14 metres long and 9 metres wide. How much fencing does he need?",
-      options: ["23 metres", "63 metres", "126 metres", "46 metres", "92 metres"],
-      correct: 3,
+      options: ["92 metres", "46 metres", "44 metres", "37 metres", "48 metres"],
+      correct: 1,
       explanation: "Perimeter = 2 × (14 + 9) = 2 × 23 = 46 metres. ✓"
     },
     {
@@ -18837,8 +18837,8 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 13, width: 5, dimUnit: "cm" } },
       question: "A rectangle has a length of 13 cm and a width of 5 cm. What is the difference between its perimeter and its area?",
-      options: ["29", "1", "36", "65", "8"],
-      correct: 0,
+      options: ["36", "65", "101", "29", "34"],
+      correct: 3,
       explanation: "Perimeter = 2 × (13 + 5) = 36 cm. Area = 13 × 5 = 65 cm². Difference = 65 - 36 = 29. ✓"
     },
     {
@@ -18864,8 +18864,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "2 × width", width: 6, dimUnit: "cm" } },
       question: "A rectangle is twice as long as it is wide. If the width is 6 cm, what is the perimeter?",
-      options: ["18 cm", "24 cm", "48 cm", "36 cm", "72 cm"],
-      correct: 3,
+      options: ["72 cm", "36 cm", "34 cm", "30 cm", "38 cm"],
+      correct: 1,
       explanation: "Width = 6 cm, length = 2 × 6 = 12 cm. Perimeter = 2 × (12 + 6) = 2 × 18 = 36 cm. ✓"
     },
     {
@@ -18873,8 +18873,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 22, width: 18, dimUnit: "m" } },
       question: "Mason's rectangular yard is 22 metres long and 18 metres wide. What is its perimeter?",
-      options: ["40 metres", "120 metres", "396 metres", "176 metres", "80 metres"],
-      correct: 4,
+      options: ["160 metres", "396 metres", "80 metres", "78 metres", "82 metres"],
+      correct: 2,
       explanation: "Perimeter = 2 × (22 + 18) = 2 × 40 = 80 metres. ✓"
     },
     {
@@ -18900,8 +18900,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 7, width: 5, dimUnit: "m", showGrid: true } },
       question: "Harper is tiling a rectangular floor that is 7 metres long and 5 metres wide. Each tile covers 1 square metre. How many tiles are needed?",
-      options: ["12 tiles", "24 tiles", "35 tiles", "30 tiles", "70 tiles"],
-      correct: 2,
+      options: ["35 tiles", "25 tiles", "24 tiles", "12 tiles", "49 tiles"],
+      correct: 0,
       explanation: "Area = 7 × 5 = 35 square metres. Each tile is 1 m², so 35 tiles needed. ✓"
     },
     {
@@ -18927,8 +18927,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 16, width: 10, dimUnit: "m" } },
       question: "Ethan's rectangular swimming pool is 16 metres long and 10 metres wide. What is its perimeter?",
-      options: ["52 metres", "32 metres", "26 metres", "160 metres", "80 metres"],
-      correct: 0,
+      options: ["54 metres", "104 metres", "160 metres", "52 metres", "50 metres"],
+      correct: 3,
       explanation: "Perimeter = 2 × (16 + 10) = 2 × 26 = 52 metres. ✓"
     },
     {
@@ -18990,8 +18990,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 19, width: 11, dimUnit: "m" } },
       question: "Leo's rectangular garden is 19 metres long and 11 metres wide. What is its perimeter?",
-      options: ["30 metres", "209 metres", "60 metres", "120 metres", "90 metres"],
-      correct: 2,
+      options: ["60 metres", "58 metres", "49 metres", "62 metres", "120 metres"],
+      correct: 0,
       explanation: "Perimeter = 2 × (19 + 11) = 2 × 30 = 60 metres. ✓"
     },
     {
@@ -19053,8 +19053,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 50, width: 30, dimUnit: "m" } },
       question: "A rectangular field is 50 metres long and 30 metres wide. A farmer wants to fence all four sides. How much fencing is needed?",
-      options: ["80 metres", "240 metres", "1,500 metres", "3,000 metres", "160 metres"],
-      correct: 4,
+      options: ["320 metres", "1500 metres", "160 metres", "158 metres", "162 metres"],
+      correct: 2,
       explanation: "Perimeter = 2 × (50 + 30) = 2 × 80 = 160 metres. ✓"
     },
     {
@@ -19088,8 +19088,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 23, width: 12, dimUnit: "cm", missingDim: "length" } },
       question: "A rectangle has a perimeter of 70 cm and a width of 12 cm. What is its length?",
-      options: ["46 cm", "29 cm", "35 cm", "23 cm", "58 cm"],
-      correct: 3,
+      options: ["46 cm", "23 cm", "21 cm", "12 cm", "25 cm"],
+      correct: 1,
       explanation: "Perimeter = 2 × (L + 12), so 70 = 2 × (L + 12). Therefore 35 = L + 12, L = 23 cm. ✓"
     },
     {
@@ -19097,8 +19097,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 17, width: 14, dimUnit: "m" } },
       question: "Jack's rectangular vegetable patch is 17 metres long and 14 metres wide. What is its perimeter?",
-      options: ["31 metres", "93 metres", "238 metres", "124 metres", "62 metres"],
-      correct: 4,
+      options: ["31 metres", "64 metres", "62 metres", "60 metres", "48 metres"],
+      correct: 2,
       explanation: "Perimeter = 2 × (17 + 14) = 2 × 31 = 62 metres. ✓"
     },
     {
@@ -19106,8 +19106,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "4 × width", width: 6, dimUnit: "m" } },
       question: "A rectangle is four times as long as it is wide. If the width is 6 metres, what is the perimeter?",
-      options: ["60 metres", "48 metres", "30 metres", "120 metres", "144 metres"],
-      correct: 0,
+      options: ["62 metres", "120 metres", "144 metres", "60 metres", "58 metres"],
+      correct: 3,
       explanation: "Width = 6 m, length = 4 × 6 = 24 m. Perimeter = 2 × (24 + 6) = 2 × 30 = 60 metres. ✓"
     },
     {
@@ -19142,8 +19142,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 14, width: 14, dimUnit: "cm" } },
       question: "A square has sides of 14 cm. What is its perimeter?",
-      options: ["28 cm", "42 cm", "196 cm", "70 cm", "56 cm"],
-      correct: 4,
+      options: ["4 cm", "196 cm", "56 cm", "28 cm", "14 cm"],
+      correct: 2,
       explanation: "Perimeter = 4 × 14 = 56 cm. ✓"
     },
     {
@@ -19160,8 +19160,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 26, width: 19, dimUnit: "m" } },
       question: "A rectangular office is 26 metres long and 19 metres wide. What is its perimeter?",
-      options: ["45 metres", "90 metres", "494 metres", "180 metres", "135 metres"],
-      correct: 1,
+      options: ["88 metres", "71 metres", "92 metres", "180 metres", "90 metres"],
+      correct: 4,
       explanation: "Perimeter = 2 × (26 + 19) = 2 × 45 = 90 metres. ✓"
     },
     {
@@ -19205,8 +19205,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 35, width: 28, dimUnit: "m" } },
       question: "A rectangular park is 35 metres long and 28 metres wide. What is its perimeter?",
-      options: ["63 metres", "126 metres", "980 metres", "252 metres", "189 metres"],
-      correct: 1,
+      options: ["124 metres", "128 metres", "252 metres", "980 metres", "126 metres"],
+      correct: 4,
       explanation: "Perimeter = 2 × (35 + 28) = 2 × 63 = 126 metres. ✓"
     },
     {
@@ -19241,8 +19241,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 20, width: "?", dimUnit: "cm", label: "Perimeter = 64 cm" } },
       question: "A rectangle has a perimeter of 64 cm. Its length is 20 cm. What is its width?",
-      options: ["12 cm", "10 cm", "8 cm", "14 cm", "16 cm"],
-      correct: 0,
+      options: ["20 cm", "24 cm", "44 cm", "12 cm", "14 cm"],
+      correct: 3,
       explanation: "Perimeter = 2 × (20 + W), so 64 = 2 × (20 + W). Therefore 32 = 20 + W, W = 12 cm. ✓"
     },
     {
@@ -19313,8 +19313,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 21, width: 16, dimUnit: "m" } },
       question: "A rectangular meeting room is 21 metres long and 16 metres wide. What is its perimeter?",
-      options: ["37 metres", "148 metres", "336 metres", "74 metres", "111 metres"],
-      correct: 3,
+      options: ["76 metres", "74 metres", "72 metres", "58 metres", "37 metres"],
+      correct: 1,
       explanation: "Perimeter = 2 × (21 + 16) = 2 × 37 = 74 metres. ✓"
     },
     {
@@ -19322,8 +19322,8 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "RectangleDiagram", props: { length: 14, width: 9, dimUnit: "cm" } },
       question: "A rectangle has a length of 14 cm and a width of 9 cm. What is the sum of its perimeter and area?",
-      options: ["46", "92", "126", "200", "172"],
-      correct: 4,
+      options: ["46", "177", "172", "167", "126"],
+      correct: 2,
       explanation: "Perimeter = 2 × (14 + 9) = 46 cm. Area = 14 × 9 = 126 cm². Sum = 46 + 126 = 172. ✓"
     },
     {
@@ -19376,8 +19376,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: 14, dimUnit: "m", label: "Perimeter = 72 m" } },
       question: "A rectangle has a perimeter of 72 metres and a width of 14 metres. What is its length?",
-      options: ["22 metres", "20 metres", "18 metres", "24 metres", "26 metres"],
-      correct: 0,
+      options: ["14 metres", "24 metres", "44 metres", "22 metres", "20 metres"],
+      correct: 3,
       explanation: "Perimeter = 2 × (L + 14), so 72 = 2 × (L + 14). Therefore 36 = L + 14, L = 22 metres. ✓"
     },
     {
@@ -19385,8 +19385,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 27, width: 19, dimUnit: "m" } },
       question: "Lucy's rectangular courtyard is 27 metres long and 19 metres wide. What is its perimeter?",
-      options: ["46 metres", "92 metres", "513 metres", "184 metres", "138 metres"],
-      correct: 1,
+      options: ["90 metres", "94 metres", "184 metres", "513 metres", "92 metres"],
+      correct: 4,
       explanation: "Perimeter = 2 × (27 + 19) = 2 × 46 = 92 metres. ✓"
     },
     {
@@ -19430,8 +19430,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 17, width: 17, dimUnit: "m" } },
       question: "A square has sides of 17 metres. What is its perimeter?",
-      options: ["34 metres", "68 metres", "51 metres", "85 metres", "289 metres"],
-      correct: 1,
+      options: ["34 metres", "17 metres", "4 metres", "289 metres", "68 metres"],
+      correct: 4,
       explanation: "Perimeter = 4 × 17 = 68 metres. ✓"
     },
     {
@@ -19556,8 +19556,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: "?", width: 16, dimUnit: "cm", label: "Perimeter = 84 cm" } },
       question: "A rectangle has a perimeter of 84 cm and a width of 16 cm. What is its length?",
-      options: ["26 cm", "24 cm", "22 cm", "28 cm", "30 cm"],
-      correct: 0,
+      options: ["16 cm", "28 cm", "52 cm", "26 cm", "24 cm"],
+      correct: 3,
       explanation: "Perimeter = 2 × (L + 16), so 84 = 2 × (L + 16). Therefore 42 = L + 16, L = 26 cm. ✓"
     },
     {
@@ -19574,8 +19574,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 31, width: 23, dimUnit: "m" } },
       question: "Benjamin's rectangular study is 31 metres long and 23 metres wide. What is its perimeter?",
-      options: ["54 metres", "713 metres", "108 metres", "216 metres", "162 metres"],
-      correct: 2,
+      options: ["108 metres", "106 metres", "110 metres", "216 metres", "713 metres"],
+      correct: 0,
       explanation: "Perimeter = 2 × (31 + 23) = 2 × 54 = 108 metres. ✓"
     },
     {
@@ -19628,64 +19628,64 @@ areaperimeter: {
       id: 131,
       difficulty: 2,
       question: "A shape is made of two rectangles joined together. Rectangle A is 6 cm × 3 cm and Rectangle B is 4 cm × 2 cm. What is the total area?",
-      options: ["18 cm²", "24 cm²", "20 cm²", "26 cm²", "32 cm²"],
-      correct: 3,
+      options: ["8 cm²", "26 cm²", "22 cm²", "18 cm²", "10 cm²"],
+      correct: 1,
       explanation: "Area of Rectangle A = 6 × 3 = 18 cm². Area of Rectangle B = 4 × 2 = 8 cm². Total area = 18 + 8 = 26 cm². ✓"
     },
     {
       id: 132,
       difficulty: 2,
       question: "Oliver made an L-shape from two rectangles. One rectangle is 5 cm × 4 cm and the other is 3 cm × 2 cm. What is the total area of the L-shape?",
-      options: ["14 cm²", "20 cm²", "40 cm²", "30 cm²", "26 cm²"],
-      correct: 4,
+      options: ["14 cm²", "6 cm²", "26 cm²", "22 cm²", "20 cm²"],
+      correct: 2,
       explanation: "First rectangle: 5 × 4 = 20 cm². Second rectangle: 3 × 2 = 6 cm². Total = 20 + 6 = 26 cm². ✓"
     },
     {
       id: 133,
       difficulty: 2,
       question: "A shape is made by joining two rectangles. Rectangle P is 7 cm × 3 cm and Rectangle Q is 5 cm × 3 cm. What is the total area?",
-      options: ["36 cm²", "21 cm²", "15 cm²", "42 cm²", "30 cm²"],
-      correct: 0,
+      options: ["21 cm²", "15 cm²", "6 cm²", "36 cm²", "32 cm²"],
+      correct: 3,
       explanation: "Rectangle P: 7 × 3 = 21 cm². Rectangle Q: 5 × 3 = 15 cm². Total = 21 + 15 = 36 cm². ✓"
     },
     {
       id: 134,
       difficulty: 2,
       question: "Emma's garden is an L-shape made from two rectangles. The first is 8 cm × 4 cm and the second is 6 cm × 2 cm. What is the total area?",
-      options: ["32 cm²", "44 cm²", "12 cm²", "56 cm²", "40 cm²"],
-      correct: 1,
+      options: ["40 cm²", "32 cm²", "20 cm²", "12 cm²", "44 cm²"],
+      correct: 4,
       explanation: "First rectangle: 8 × 4 = 32 cm². Second rectangle: 6 × 2 = 12 cm². Total = 32 + 12 = 44 cm². ✓"
     },
     {
       id: 135,
       difficulty: 2,
       question: "A compound shape is made of two rectangles joined together. One is 10 cm × 3 cm and the other is 4 cm × 5 cm. What is the total area?",
-      options: ["30 cm²", "20 cm²", "50 cm²", "45 cm²", "35 cm²"],
-      correct: 2,
+      options: ["50 cm²", "46 cm²", "30 cm²", "20 cm²", "10 cm²"],
+      correct: 0,
       explanation: "First rectangle: 10 × 3 = 30 cm². Second rectangle: 4 × 5 = 20 cm². Total = 30 + 20 = 50 cm². ✓"
     },
     {
       id: 136,
       difficulty: 2,
       question: "Jack's bedroom floor is an L-shape. It is made of two rectangles: one is 9 cm × 5 cm and the other is 3 cm × 4 cm. What is the total area?",
-      options: ["45 cm²", "12 cm²", "54 cm²", "57 cm²", "48 cm²"],
-      correct: 3,
+      options: ["12 cm²", "57 cm²", "53 cm²", "45 cm²", "33 cm²"],
+      correct: 1,
       explanation: "First rectangle: 9 × 5 = 45 cm². Second rectangle: 3 × 4 = 12 cm². Total = 45 + 12 = 57 cm². ✓"
     },
     {
       id: 137,
       difficulty: 2,
       question: "A shape is made of two rectangles. Rectangle A is 8 cm × 6 cm and Rectangle B is 5 cm × 4 cm. What is the total area?",
-      options: ["48 cm²", "62 cm²", "20 cm²", "52 cm²", "68 cm²"],
-      correct: 4,
+      options: ["28 cm²", "20 cm²", "68 cm²", "64 cm²", "48 cm²"],
+      correct: 2,
       explanation: "Rectangle A: 8 × 6 = 48 cm². Rectangle B: 5 × 4 = 20 cm². Total = 48 + 20 = 68 cm². ✓"
     },
     {
       id: 138,
       difficulty: 2,
       question: "Sophie made a compound shape from two rectangles. One is 12 cm × 3 cm and the other is 6 cm × 4 cm. What is the total area of the shape?",
-      options: ["60 cm²", "24 cm²", "72 cm²", "36 cm²", "48 cm²"],
-      correct: 0,
+      options: ["36 cm²", "24 cm²", "12 cm²", "60 cm²", "56 cm²"],
+      correct: 3,
       explanation: "First rectangle: 12 × 3 = 36 cm². Second rectangle: 6 × 4 = 24 cm². Total = 36 + 24 = 60 cm². ✓"
     },
     {
@@ -19701,8 +19701,8 @@ areaperimeter: {
       id: 140,
       difficulty: 2,
       question: "A T-shape is made from two rectangles. The top bar is 10 cm × 2 cm and the vertical part is 3 cm × 6 cm. What is the total area?",
-      options: ["18 cm²", "20 cm²", "38 cm²", "60 cm²", "30 cm²"],
-      correct: 2,
+      options: ["38 cm²", "34 cm²", "20 cm²", "18 cm²", "2 cm²"],
+      correct: 0,
       explanation: "Top bar: 10 × 2 = 20 cm². Vertical part: 3 × 6 = 18 cm². Total = 20 + 18 = 38 cm². ✓"
     },
     {
@@ -19710,8 +19710,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "LShapeDiagram", props: { totalLength: 12, totalWidth: 9, cutLength: 5, cutWidth: 4, dimUnit: "m" } },
       question: "An L-shaped garden is 12 m long and 9 m wide overall. A 5 m × 4 m piece is cut from one corner. What is the area of the garden?",
-      options: ["128 m²", "108 m²", "20 m²", "88 m²", "68 m²"],
-      correct: 3,
+      options: ["128 m²", "88 m²", "20 m²", "92 m²", "108 m²"],
+      correct: 1,
       explanation: "Full rectangle: 12 × 9 = 108 m². Cut-out: 5 × 4 = 20 m². Area = 108 − 20 = 88 m². ✓"
     },
     {
@@ -19726,8 +19726,8 @@ areaperimeter: {
       id: 143,
       difficulty: 2,
       question: "Harry drew a T-shape. The top bar is 12 cm × 3 cm and the stem is 4 cm × 7 cm. What is the total area?",
-      options: ["64 cm²", "36 cm²", "28 cm²", "84 cm²", "56 cm²"],
-      correct: 0,
+      options: ["36 cm²", "28 cm²", "8 cm²", "64 cm²", "60 cm²"],
+      correct: 3,
       explanation: "Top bar: 12 × 3 = 36 cm². Stem: 4 × 7 = 28 cm². Total = 36 + 28 = 64 cm². ✓"
     },
     {
@@ -19744,16 +19744,16 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 15, width: 10, dimUnit: "cm" } },
       question: "A rectangular card is 15 cm × 10 cm. A smaller rectangle of 5 cm × 4 cm is cut out from the middle. What is the remaining area?",
-      options: ["150 cm²", "120 cm²", "130 cm²", "110 cm²", "100 cm²"],
-      correct: 2,
+      options: ["130 cm²", "20 cm²", "134 cm²", "150 cm²", "170 cm²"],
+      correct: 0,
       explanation: "Large rectangle: 15 × 10 = 150 cm². Cut-out: 5 × 4 = 20 cm². Remaining = 150 − 20 = 130 cm². ✓"
     },
     {
       id: 146,
       difficulty: 3,
       question: "A compound shape is made of three rectangles: 8 cm × 3 cm, 5 cm × 4 cm, and 6 cm × 2 cm. What is the total area?",
-      options: ["44 cm²", "48 cm²", "36 cm²", "56 cm²", "68 cm²"],
-      correct: 3,
+      options: ["60 cm²", "56 cm²", "52 cm²", "24 cm²", "20 cm²"],
+      correct: 1,
       explanation: "First: 8 × 3 = 24 cm². Second: 5 × 4 = 20 cm². Third: 6 × 2 = 12 cm². Total = 24 + 20 + 12 = 56 cm². ✓"
     },
     {
@@ -19761,8 +19761,8 @@ areaperimeter: {
       difficulty: 3,
       visual: { component: "LShapeDiagram", props: { totalLength: 12, totalWidth: 8, cutLength: 5, cutWidth: 3, dimUnit: "m" } },
       question: "Isla's L-shaped room is 12 m long and 8 m wide overall. A 5 m × 3 m piece is cut from one corner. What is the perimeter of the L-shape?",
-      options: ["56 m", "44 m", "36 m", "48 m", "40 m"],
-      correct: 4,
+      options: ["42 m", "80 m", "40 m", "38 m", "32 m"],
+      correct: 2,
       explanation: "Trace around the outside: 12 + 8 + (12 − 5) + 3 + 5 + (8 − 3) = 12 + 8 + 7 + 3 + 5 + 5 = 40 m. ✓"
     },
     {
@@ -19780,8 +19780,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "TriangleAreaDiagram", props: { base: 8, height: 6, dimUnit: "cm" } },
       question: "A triangle has a base of 8 cm and a height of 6 cm. What is its area?",
-      options: ["48 cm²", "24 cm²", "14 cm²", "36 cm²", "12 cm²"],
-      correct: 1,
+      options: ["22 cm²", "14 cm²", "26 cm²", "48 cm²", "24 cm²"],
+      correct: 4,
       explanation: "Area of a triangle = ½ × base × height = ½ × 8 × 6 = 24 cm². ✓"
     },
     {
@@ -19789,8 +19789,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "TriangleAreaDiagram", props: { base: 6, height: 4, dimUnit: "cm" } },
       question: "A right-angled triangle has a base of 6 cm and a height of 4 cm. What is its area?",
-      options: ["24 cm²", "10 cm²", "12 cm²", "20 cm²", "48 cm²"],
-      correct: 2,
+      options: ["12 cm²", "10 cm²", "6 cm²", "14 cm²", "24 cm²"],
+      correct: 0,
       explanation: "Area = ½ × base × height = ½ × 6 × 4 = 12 cm². ✓"
     },
     {
@@ -19798,8 +19798,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "TriangleAreaDiagram", props: { base: 10, height: 8, dimUnit: "cm" } },
       question: "A triangle has a base of 10 cm and a height of 8 cm. What is its area?",
-      options: ["80 cm²", "18 cm²", "36 cm²", "40 cm²", "20 cm²"],
-      correct: 3,
+      options: ["42 cm²", "40 cm²", "38 cm²", "20 cm²", "18 cm²"],
+      correct: 1,
       explanation: "Area = ½ × base × height = ½ × 10 × 8 = 40 cm². ✓"
     },
     {
@@ -19807,8 +19807,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "TriangleAreaDiagram", props: { base: 12, height: 6, dimUnit: "cm" } },
       question: "A right-angled triangle has a base of 12 cm and a height of 6 cm. What is its area?",
-      options: ["72 cm²", "24 cm²", "18 cm²", "30 cm²", "36 cm²"],
-      correct: 4,
+      options: ["38 cm²", "72 cm²", "36 cm²", "34 cm²", "18 cm²"],
+      correct: 2,
       explanation: "Area = ½ × base × height = ½ × 12 × 6 = 36 cm². ✓"
     },
     {
@@ -19816,8 +19816,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "TriangleAreaDiagram", props: { base: 14, height: 4, dimUnit: "cm" } },
       question: "Grace drew a triangle with a base of 14 cm and a height of 4 cm. What is the area of her triangle?",
-      options: ["28 cm²", "18 cm²", "56 cm²", "32 cm²", "7 cm²"],
-      correct: 0,
+      options: ["18 cm²", "14 cm²", "30 cm²", "28 cm²", "26 cm²"],
+      correct: 3,
       explanation: "Area = ½ × base × height = ½ × 14 × 4 = 28 cm². ✓"
     },
     {
@@ -19861,8 +19861,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "TriangleAreaDiagram", props: { base: 16, height: 10, dimUnit: "cm" } },
       question: "Oliver's pennant is a triangle with a base of 16 cm and a height of 10 cm. What is its area?",
-      options: ["80 cm²", "160 cm²", "26 cm²", "60 cm²", "40 cm²"],
-      correct: 0,
+      options: ["40 cm²", "26 cm²", "82 cm²", "80 cm²", "78 cm²"],
+      correct: 3,
       explanation: "Area = ½ × base × height = ½ × 16 × 10 = 80 cm². ✓"
     },
     {
@@ -20130,8 +20130,8 @@ areaperimeter: {
       difficulty: 2,
       visual: { component: "RectangleDiagram", props: { length: 9, width: 5, dimUnit: "cm" } },
       question: "A rectangle is 9 cm long and 5 cm wide. What is the difference between its area and its perimeter?",
-      options: ["17", "15", "13", "19", "21"],
-      correct: 0,
+      options: ["28", "45", "73", "17", "22"],
+      correct: 3,
       explanation: "Area = 9 × 5 = 45. Perimeter = 2 × (9 + 5) = 28. Difference = 45 − 28 = 17. ✓"
     },
     {
@@ -20263,8 +20263,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: "?", width: 2, dimUnit: "cm", areaLabel: "18 cm²" } },
       question: "A rectangle has an area of 18 cm² and a width of 2 cm. What is the length?",
-      options: ["9 cm", "7 cm", "8 cm", "6 cm", "10 cm"],
-      correct: 0,
+      options: ["2 cm", "11 cm", "36 cm", "9 cm", "7 cm"],
+      correct: 3,
       explanation: "Area = length × width, so 18 = length × 2. Length = 18 ÷ 2 = 9 cm. ✓"
     },
     {
@@ -20290,8 +20290,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 6, width: "?", dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 18 cm and a length of 6 cm. What is the width?",
-      options: ["2 cm", "5 cm", "4 cm", "3 cm", "6 cm"],
-      correct: 3,
+      options: ["12 cm", "3 cm", "1 cm", "5 cm", "6 cm"],
+      correct: 1,
       explanation: "Perimeter = 2 × (length + width), so 18 = 2 × (6 + width). Divide by 2: 9 = 6 + width. Width = 9 − 6 = 3 cm. ✓"
     },
     {
@@ -20308,8 +20308,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 7, width: "?", dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 22 cm and a length of 7 cm. What is the width?",
-      options: ["4 cm", "3 cm", "5 cm", "6 cm", "8 cm"],
-      correct: 0,
+      options: ["7 cm", "8 cm", "15 cm", "4 cm", "6 cm"],
+      correct: 3,
       explanation: "Perimeter = 2 × (length + width), so 22 = 2 × (7 + width). Divide by 2: 11 = 7 + width. Width = 11 − 7 = 4 cm. ✓"
     },
     {
@@ -20317,8 +20317,8 @@ areaperimeter: {
       difficulty: 1,
       visual: { component: "RectangleDiagram", props: { length: 8, width: "?", dimUnit: "cm" } },
       question: "A rectangle has a perimeter of 26 cm and a length of 8 cm. What is the width?",
-      options: ["3 cm", "5 cm", "4 cm", "6 cm", "7 cm"],
-      correct: 1,
+      options: ["7 cm", "8 cm", "10 cm", "18 cm", "5 cm"],
+      correct: 4,
       explanation: "Perimeter = 2 × (length + width), so 26 = 2 × (8 + width). Divide by 2: 13 = 8 + width. Width = 13 − 8 = 5 cm. ✓"
     }
   ]
@@ -20349,8 +20349,8 @@ volume: {
       difficulty: 2,
       question: "Tom's fish tank is 50 cm long, 30 cm wide, and 40 cm high. What is its volume in litres? (Remember: 1 litre = 1000 cm³)",
       visual: { component: "CuboidDiagram", props: { length: 50, width: 30, height: 40, dimUnit: "cm" } },
-      options: ["12 litres", "120 litres", "60 litres", "600 litres", "6000 litres"],
-      correct: 2,
+      options: ["2 litres", "62 litres", "600 litres", "60 litres", "58 litres"],
+      correct: 3,
       explanation: "First find volume in cm³: 50 × 30 × 40 = 60,000 cm³. Then convert to litres: 60,000 ÷ 1000 = 60 litres. ✓"
     },
     {
@@ -20358,8 +20358,8 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 120 cm³, a length of 10 cm, and a width of 4 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 10, width: 4, height: 3, dimUnit: "cm", missingDim: "height" } },
-      options: ["2 cm", "5 cm", "4 cm", "3 cm", "6 cm"],
-      correct: 3,
+      options: ["4 cm", "5 cm", "10 cm", "12 cm", "3 cm"],
+      correct: 4,
       explanation: "Volume = length × width × height, so 120 = 10 × 4 × height. This means 120 = 40 × height, so height = 120 ÷ 40 = 3 cm. ✓"
     },
     {
@@ -20375,8 +20375,8 @@ volume: {
       difficulty: 2,
       question: "A cube has a volume of 125 cm³. What is the length of each edge?",
       visual: { component: "CuboidDiagram", props: { length: 5, width: 5, height: 5, dimUnit: "cm", missingDim: "all" } },
-      options: ["5 cm", "4 cm", "3 cm", "25 cm", "10 cm"],
-      correct: 0,
+      options: ["42 cm", "5 cm", "4 cm", "6 cm", "25 cm"],
+      correct: 1,
       explanation: "Volume of cube = edge³, so edge³ = 125. We need to find what number multiplied by itself three times equals 125. 5 × 5 × 5 = 125, so each edge is 5 cm. ✓"
     },
     {
@@ -20401,8 +20401,8 @@ volume: {
       id: 9,
       difficulty: 2,
       question: "Mia fills a container that is 20 cm long, 10 cm wide, and 5 cm high with water. How many millilitres of water does it hold? (1 cm³ = 1 ml)",
-      options: ["35 ml", "100 ml", "200 ml", "1000 ml", "2000 ml"],
-      correct: 3,
+      options: ["200 ml", "100 ml", "35 ml", "1020 ml", "1000 ml"],
+      correct: 4,
       explanation: "Volume = 20 × 10 × 5 = 1000 cm³. Since 1 cm³ = 1 ml, the container holds 1000 ml (or 1 litre). ✓"
     },
     {
@@ -20523,8 +20523,8 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 180 cm³, a length of 12 cm, and a width of 5 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 12, width: 5, height: 3, dimUnit: "cm", missingDim: "height" } },
-      options: ["2 cm", "2.5 cm", "3 cm", "3.5 cm", "4 cm"],
-      correct: 2,
+      options: ["12 cm", "15 cm", "36 cm", "3 cm", "5 cm"],
+      correct: 3,
       explanation: "Volume = L × W × H, so 180 = 12 × 5 × H. Therefore 180 = 60 × H, H = 180 ÷ 60 = 3 cm. ✓"
     },
     {
@@ -20541,8 +20541,8 @@ volume: {
       difficulty: 2,
       question: "A fish tank is 40 cm long, 25 cm wide, and 30 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
       visual: { component: "CuboidDiagram", props: { length: 40, width: 25, height: 30, dimUnit: "cm" } },
-      options: ["3 litres", "15 litres", "3000 litres", "300 litres", "30 litres"],
-      correct: 4,
+      options: ["30 litres", "28 litres", "1 litres", "32 litres", "300 litres"],
+      correct: 0,
       explanation: "Volume = 40 × 25 × 30 = 30,000 cm³. Convert: 30,000 ÷ 1000 = 30 litres. ✓"
     },
     {
@@ -20619,8 +20619,8 @@ volume: {
       id: 34,
       difficulty: 2,
       question: "Ava fills a container that is 30 cm long, 20 cm wide, and 10 cm high with water. How many litres does it hold? (1 litre = 1000 cm³)",
-      options: ["6000 litres", "60 litres", "600 litres", "6 litres", "0.6 litres"],
-      correct: 3,
+      options: ["4 litres", "1 litres", "8 litres", "60 litres", "6 litres"],
+      correct: 4,
       explanation: "Volume = 30 × 20 × 10 = 6,000 cm³. Convert: 6,000 ÷ 1000 = 6 litres. ✓"
     },
     {
@@ -20644,8 +20644,8 @@ volume: {
       id: 37,
       difficulty: 2,
       question: "A cuboid has a volume of 360 cm³. The base is 12 cm by 6 cm. How tall is it?",
-      options: ["3 cm", "5 cm", "4 cm", "6 cm", "7 cm"],
-      correct: 1,
+      options: ["30 cm", "60 cm", "5 cm", "3 cm", "7 cm"],
+      correct: 2,
       explanation: "Base area = 12 × 6 = 72 cm². Height = 360 ÷ 72 = 5 cm. ✓"
     },
     {
@@ -20748,8 +20748,8 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 480 cm³, a length of 16 cm, and a width of 5 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 16, width: 5, height: 6, dimUnit: "cm", missingDim: "height" } },
-      options: ["4 cm", "5 cm", "7 cm", "6 cm", "8 cm"],
-      correct: 3,
+      options: ["5 cm", "8 cm", "16 cm", "30 cm", "6 cm"],
+      correct: 4,
       explanation: "480 = 16 × 5 × H. So 480 = 80 × H, H = 480 ÷ 80 = 6 cm. ✓"
     },
     {
@@ -20766,8 +20766,8 @@ volume: {
       difficulty: 2,
       question: "A fish tank is 70 cm long, 35 cm wide, and 40 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
       visual: { component: "CuboidDiagram", props: { length: 70, width: 35, height: 40, dimUnit: "cm" } },
-      options: ["98 litres", "49 litres", "9.8 litres", "245 litres", "980 litres"],
-      correct: 0,
+      options: ["100 litres", "98 litres", "96 litres", "3 litres", "2 litres"],
+      correct: 1,
       explanation: "Volume = 70 × 35 × 40 = 98,000 cm³. Convert: 98,000 ÷ 1000 = 98 litres. ✓"
     },
     {
@@ -20842,8 +20842,8 @@ volume: {
       id: 60,
       difficulty: 2,
       question: "Isabella fills a container that is 45 cm long, 30 cm wide, and 20 cm high with water. How many millilitres does it hold? (1 cm³ = 1 ml)",
-      options: ["2700 ml", "13,500 ml", "6750 ml", "54,000 ml", "27,000 ml"],
-      correct: 4,
+      options: ["27,000 ml", "1,350 ml", "900 ml", "95 ml", "27,045 ml"],
+      correct: 0,
       explanation: "Volume = 45 × 30 × 20 = 27,000 cm³. Since 1 cm³ = 1 ml, it holds 27,000 ml. ✓"
     },
     {
@@ -20903,16 +20903,16 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 840 cm³, a length of 21 cm, and a width of 8 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 21, width: 8, height: 5, dimUnit: "cm", missingDim: "height" } },
-      options: ["3 cm", "5 cm", "4 cm", "6 cm", "7 cm"],
-      correct: 1,
+      options: ["21 cm", "40 cm", "5 cm", "7 cm", "8 cm"],
+      correct: 2,
       explanation: "840 = 21 × 8 × H. So 840 = 168 × H, H = 840 ÷ 168 = 5 cm. ✓"
     },
     {
       id: 68,
       difficulty: 2,
       question: "Ruby is filling a rectangular aquarium that measures 80 cm by 50 cm by 45 cm. How many litres does it hold? (1 litre = 1000 cm³)",
-      options: ["18 litres", "90 litres", "180 litres", "360 litres", "1800 litres"],
-      correct: 2,
+      options: ["4 litres", "182 litres", "1800 litres", "180 litres", "178 litres"],
+      correct: 3,
       explanation: "Volume = 80 × 50 × 45 = 180,000 cm³. Convert: 180,000 ÷ 1000 = 180 litres. ✓"
     },
     {
@@ -21014,8 +21014,8 @@ volume: {
       difficulty: 3,
       question: "A fish tank is 90 cm long, 45 cm wide, and 50 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
       visual: { component: "CuboidDiagram", props: { length: 90, width: 45, height: 50, dimUnit: "cm" } },
-      options: ["20.25 litres", "101.25 litres", "810 litres", "405 litres", "202.5 litres"],
-      correct: 4,
+      options: ["202.5 litres", "200.5 litres", "4.5 litres", "4.1 litres", "204.5 litres"],
+      correct: 0,
       explanation: "Volume = 90 × 45 × 50 = 202,500 cm³. Convert: 202,500 ÷ 1000 = 202.5 litres. ✓"
     },
     {
@@ -21023,8 +21023,8 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 1200 cm³, a length of 24 cm, and a width of 10 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 24, width: 10, height: 5, dimUnit: "cm", missingDim: "height" } },
-      options: ["5 cm", "4 cm", "3 cm", "6 cm", "7 cm"],
-      correct: 0,
+      options: ["50 cm", "5 cm", "7 cm", "10 cm", "24 cm"],
+      correct: 1,
       explanation: "1200 = 24 × 10 × H. So 1200 = 240 × H, H = 1200 ÷ 240 = 5 cm. ✓"
     },
     {
@@ -21125,8 +21125,8 @@ volume: {
       id: 93,
       difficulty: 2,
       question: "Charlie fills a container that is 55 cm long, 40 cm wide, and 25 cm high with water. How many litres does it hold? (1 litre = 1000 cm³)",
-      options: ["5.5 litres", "22 litres", "55 litres", "110 litres", "220 litres"],
-      correct: 2,
+      options: ["2 litres", "57 litres", "550 litres", "55 litres", "53 litres"],
+      correct: 3,
       explanation: "Volume = 55 × 40 × 25 = 55,000 cm³. Convert: 55,000 ÷ 1000 = 55 litres. ✓"
     },
     {
@@ -21142,8 +21142,8 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 1800 cm³, a length of 30 cm, and a width of 12 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 30, width: 12, height: 5, dimUnit: "cm", missingDim: "height" } },
-      options: ["3 cm", "4 cm", "7 cm", "6 cm", "5 cm"],
-      correct: 4,
+      options: ["5 cm", "7 cm", "12 cm", "30 cm", "60 cm"],
+      correct: 0,
       explanation: "1800 = 30 × 12 × H. So 1800 = 360 × H, H = 1800 ÷ 360 = 5 cm. ✓"
     },
     {
@@ -21169,8 +21169,8 @@ volume: {
       difficulty: 2,
       question: "A fish tank is 100 cm long, 50 cm wide, and 60 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
       visual: { component: "CuboidDiagram", props: { length: 100, width: 50, height: 60, dimUnit: "cm" } },
-      options: ["30 litres", "150 litres", "300 litres", "600 litres", "3000 litres"],
-      correct: 2,
+      options: ["6 litres", "5 litres", "302 litres", "300 litres", "298 litres"],
+      correct: 3,
       explanation: "Volume = 100 × 50 × 60 = 300,000 cm³. Convert: 300,000 ÷ 1000 = 300 litres. ✓"
     },
     {
@@ -21271,8 +21271,8 @@ volume: {
       difficulty: 2,
       question: "A cuboid has a volume of 2520 cm³, a length of 36 cm, and a width of 14 cm. What is its height?",
       visual: { component: "CuboidDiagram", props: { length: 36, width: 14, height: 5, dimUnit: "cm", missingDim: "height" } },
-      options: ["3 cm", "4 cm", "7 cm", "6 cm", "5 cm"],
-      correct: 4,
+      options: ["5 cm", "7 cm", "14 cm", "36 cm", "70 cm"],
+      correct: 0,
       explanation: "2520 = 36 × 14 × H. So 2520 = 504 × H, H = 2520 ÷ 504 = 5 cm. ✓"
     },
     {
@@ -21289,8 +21289,8 @@ volume: {
       difficulty: 3,
       question: "A fish tank is 110 cm long, 55 cm wide, and 70 cm high. What is its volume in litres? (1 litre = 1000 cm³)",
       visual: { component: "CuboidDiagram", props: { length: 110, width: 55, height: 70, dimUnit: "cm" } },
-      options: ["42.35 litres", "423.5 litres", "211.75 litres", "847 litres", "4235 litres"],
-      correct: 1,
+      options: ["425.5 litres", "4235.0 litres", "423.5 litres", "421.5 litres", "7.7 litres"],
+      correct: 2,
       explanation: "Volume = 110 × 55 × 70 = 423,500 cm³. Convert: 423,500 ÷ 1000 = 423.5 litres. ✓"
     },
     {
@@ -21490,8 +21490,8 @@ volume: {
       id: 136,
       difficulty: 1,
       question: "A cardboard box is 30 cm long, 20 cm wide, and 15 cm high. Daisy fills it with sand for a school project. What volume of sand does she need?",
-      options: ["9,000 cm\u00B3", "8,500 cm\u00B3", "8,000 cm\u00B3", "9,500 cm\u00B3", "10,000 cm\u00B3"],
-      correct: 0,
+      options: ["9,030 cm³", "9,000 cm³", "600 cm³", "450 cm³", "65 cm³"],
+      correct: 1,
       explanation: "Volume = 30 \u00D7 20 \u00D7 15 = 9,000 cm\u00B3. \u2713"
     },
     {
@@ -21536,8 +21536,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#7C3AED"}, {value: 65, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 115° and x°. What is the value of x?",
-      options: ["45°", "55°", "65°", "75°", "85°"],
-      correct: 2,
+      options: ["90°", "65°", "55°", "45°", "75°"],
+      correct: 1,
       explanation: "Angles on a straight line add up to 180°. So 115° + x° = 180°. Therefore x = 180 - 115 = 65°. ✓"
     },
     {
@@ -21554,8 +21554,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 70, angle2: 55, angle3: 55, showAngle3: false } },
       question: "A triangle has angles of 70° and 55°. What is the third angle?",
-      options: ["45°", "50°", "65°", "60°", "55°"],
-      correct: 4,
+      options: ["65°", "70°", "90°", "55°", "45°"],
+      correct: 3,
       explanation: "Angles in a triangle add up to 180°. So 70° + 55° + third angle = 180°. The third angle = 180 - 70 - 55 = 55°. ✓"
     },
     {
@@ -21572,8 +21572,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 60, angle2: 60, angle3: 60, labels: ["?°", "?°", "?°"] } },
       question: "An equilateral triangle has all three sides equal. What is each angle in an equilateral triangle?",
-      options: ["45°", "60°", "75°", "90°", "120°"],
-      correct: 1,
+      options: ["60°", "50°", "45°", "70°", "90°"],
+      correct: 0,
       explanation: "In an equilateral triangle, all three angles are equal. Since angles in a triangle add up to 180°, each angle = 180 ÷ 3 = 60°. ✓"
     },
     {
@@ -21607,8 +21607,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "85°", color: "#7C3AED"}, {value: 90, label: "90°", color: "#22C55E"}, {value: 105, label: "105°", color: "#7C3AED"}, {value: 80, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 85°, 90°, and 105°. What is the fourth angle?",
-      options: ["80°", "75°", "70°", "85°", "90°"],
-      correct: 0,
+      options: ["85°", "90°", "105°", "180°", "80°"],
+      correct: 4,
       explanation: "Angles around a point add up to 360°. So 85° + 90° + 105° + fourth angle = 360°. The fourth angle = 360 - 280 = 80°. ✓"
     },
     {
@@ -21616,8 +21616,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [80, 100, 95, 85], labels: ["80°", "100°", "95°", "?"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "Lucy draws a quadrilateral with angles 80°, 100°, and 95°. What is the fourth angle?",
-      options: ["75°", "85°", "80°", "90°", "95°"],
-      correct: 1,
+      options: ["85°", "80°", "75°", "65°", "95°"],
+      correct: 0,
       explanation: "Angles in a quadrilateral add up to 360°. So 80° + 100° + 95° + fourth angle = 360°. The fourth angle = 360 - 275 = 85°. ✓"
     },
     {
@@ -21634,8 +21634,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3x°", color: "#7C3AED"}, {value: 72, label: "2x°", color: "#FDCB6E"}], size: 200 } },
       question: "Ben measures angles on a straight line. One angle is 3x° and the other is 2x°. What is the value of x?",
-      options: ["30°", "45°", "40°", "36°", "60°"],
-      correct: 3,
+      options: ["60°", "72°", "36°", "35°", "37°"],
+      correct: 2,
       explanation: "Angles on a straight line add up to 180°. So 3x + 2x = 180. This gives 5x = 180, so x = 180 ÷ 5 = 36°. ✓"
     },
     {
@@ -21652,8 +21652,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 65, highlight: "corresponding", hideAnswer: true } },
       question: "Oliver draws two parallel lines crossed by a third line. An angle on one side is 65°. What is the corresponding angle on the other parallel line?",
-      options: ["65°", "60°", "55°", "115°", "125°"],
-      correct: 0,
+      options: ["55°", "75°", "90°", "115°", "65°"],
+      correct: 4,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 65°. ✓"
     },
     {
@@ -21661,8 +21661,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 70, angle2: 50, angle3: 60, showExterior: true, exteriorLabel: "120°", angle2Label: "y°" } },
       question: "Mia finds that an exterior angle of a triangle is 120°. The two interior opposite angles are 70° and y°. What is y?",
-      options: ["40°", "50°", "45°", "55°", "60°"],
-      correct: 1,
+      options: ["50°", "60°", "70°", "120°", "190°"],
+      correct: 0,
       explanation: "An exterior angle of a triangle equals the sum of the two opposite interior angles. So 70° + y = 120°. Therefore y = 120 - 70 = 50°. ✓"
     },
     {
@@ -21670,8 +21670,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "RegularPolygon", props: { sides: 5, eachAngle: 108, angleLabel: "?", highlightAngle: true } },
       question: "A regular pentagon has 5 equal sides and 5 equal angles. What is each interior angle?",
-      options: ["100°", "105°", "108°", "110°", "120°"],
-      correct: 2,
+      options: ["540°", "108°", "90°", "72°", "120°"],
+      correct: 1,
       explanation: "The sum of interior angles in a pentagon is (5-2) × 180° = 540°. In a regular pentagon, all angles are equal, so each angle = 540 ÷ 5 = 108°. ✓"
     },
     {
@@ -21688,8 +21688,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "QuadShape", props: { angles: [60, 120, 60, 120], labels: ["60°", "120°", "60°", "x°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A rhombus has angles of 60°, 120°, 60°, and x°. What is x?",
-      options: ["60°", "90°", "100°", "150°", "120°"],
-      correct: 4,
+      options: ["100°", "60°", "130°", "120°", "110°"],
+      correct: 3,
       explanation: "Angles in a quadrilateral add up to 360°. So 60° + 120° + 60° + x = 360°. This gives x = 360 - 240 = 120°. ✓"
     },
     {
@@ -21697,8 +21697,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 110, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 110°. What is the alternate angle?",
-      options: ["110°", "70°", "80°", "90°", "60°"],
-      correct: 0,
+      options: ["100°", "90°", "70°", "120°", "110°"],
+      correct: 4,
       explanation: "When parallel lines are cut by a transversal, alternate angles are equal. So the alternate angle is also 110°. ✓"
     },
     {
@@ -21706,8 +21706,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 40, angle2: 60, angle3: 80, labels: ["2x°", "3x°", "4x°"] } },
       question: "A triangle has angles of 2x°, 3x°, and 4x°. What is the value of x?",
-      options: ["15°", "20°", "25°", "30°", "36°"],
-      correct: 1,
+      options: ["20°", "19°", "21°", "36°", "40°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 2x + 3x + 4x = 180. This gives 9x = 180, so x = 20°. ✓"
     },
     {
@@ -21724,8 +21724,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "RegularPolygon", props: { sides: 6, eachAngle: 120, angleLabel: "?", highlightAngle: true } },
       question: "A regular hexagon has 6 equal sides and 6 equal angles. What is each interior angle?",
-      options: ["100°", "108°", "110°", "120°", "135°"],
-      correct: 3,
+      options: ["129°", "720°", "120°", "108°", "60°"],
+      correct: 2,
       explanation: "The sum of interior angles in a hexagon is (6-2) × 180° = 720°. In a regular hexagon, all angles are equal, so each angle = 720 ÷ 6 = 120°. ✓"
     },
     {
@@ -21733,8 +21733,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 128, label: "128°", color: "#7C3AED"}, {value: 52, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 128° and x°. What is the value of x?",
-      options: ["42°", "48°", "62°", "58°", "52°"],
-      correct: 4,
+      options: ["90°", "128°", "180°", "52°", "62°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 128° + x° = 180°. Therefore x = 180 - 128 = 52°. ✓"
     },
     {
@@ -21742,8 +21742,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 48, angle2: 67, angle3: 65, showAngle3: false } },
       question: "Emma draws a triangle with angles 48°, 67°, and y°. What is y?",
-      options: ["65°", "60°", "55°", "70°", "75°"],
-      correct: 0,
+      options: ["55°", "48°", "45°", "67°", "65°"],
+      correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 48° + 67° + y = 180°. Therefore y = 180 - 48 - 67 = 65°. ✓"
     },
     {
@@ -21751,8 +21751,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 95, angle2: 42, angle3: 43, showAngle3: false } },
       question: "A triangle has angles of 95°, 42°, and z°. What is z?",
-      options: ["33°", "43°", "38°", "48°", "53°"],
-      correct: 1,
+      options: ["43°", "53°", "85°", "90°", "95°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 95° + 42° + z = 180°. Therefore z = 180 - 95 - 42 = 43°. ✓"
     },
     {
@@ -21760,8 +21760,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [92, 88, 105, 75], labels: ["92°", "88°", "105°", "a°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A quadrilateral has angles 92°, 88°, 105°, and a°. What is a?",
-      options: ["65°", "70°", "75°", "80°", "85°"],
-      correct: 2,
+      options: ["88°", "75°", "65°", "55°", "85°"],
+      correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 92° + 88° + 105° + a = 360°. Therefore a = 360 - 285 = 75°. ✓"
     },
     {
@@ -21769,8 +21769,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 72, angle2: 72, angle3: 36, showAngle3: false } },
       question: "Tom draws an isosceles triangle with two equal angles of 72° each. What is the third angle?",
-      options: ["26°", "31°", "41°", "36°", "46°"],
-      correct: 3,
+      options: ["54°", "72°", "36°", "26°", "46°"],
+      correct: 2,
       explanation: "In an isosceles triangle, two angles are equal. The angles sum to 180°. So 72° + 72° + third angle = 180°. The third angle = 180 - 144 = 36°. ✓"
     },
     {
@@ -21787,8 +21787,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "4x°", color: "#7C3AED"}, {value: 100, label: "5x°", color: "#FDCB6E"}], size: 200 } },
       question: "Sophie has angles on a straight line measuring 4x° and 5x°. What is x?",
-      options: ["20°", "18°", "15°", "24°", "30°"],
-      correct: 0,
+      options: ["19°", "21°", "40°", "45°", "20°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 4x + 5x = 180. This gives 9x = 180, so x = 20°. ✓"
     },
     {
@@ -21796,8 +21796,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 58, angle2: 58, angle3: 64, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 58°. What is the angle at the top?",
-      options: ["54°", "64°", "59°", "69°", "74°"],
-      correct: 1,
+      options: ["64°", "61°", "58°", "54°", "74°"],
+      correct: 0,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 58° + 58° + top angle = 180°. The top angle = 180 - 116 = 64°. ✓"
     },
     {
@@ -21814,8 +21814,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "RegularPolygon", props: { sides: 8, eachAngle: 135, angleLabel: "?", highlightAngle: true } },
       question: "A regular octagon has 8 equal sides and 8 equal angles. What is each interior angle?",
-      options: ["120°", "125°", "130°", "135°", "140°"],
-      correct: 3,
+      options: ["140°", "1080°", "135°", "129°", "45°"],
+      correct: 2,
       explanation: "The sum of interior angles in an octagon is (8-2) × 180° = 1080°. In a regular octagon, all angles are equal, so each angle = 1080 ÷ 8 = 135°. ✓"
     },
     {
@@ -21841,8 +21841,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 118, highlight: "corresponding", hideAnswer: true } },
       question: "Ben measures parallel lines crossed by a transversal. One angle is 118°. What is the corresponding angle?",
-      options: ["62°", "118°", "82°", "72°", "128°"],
-      correct: 1,
+      options: ["118°", "108°", "90°", "62°", "128°"],
+      correct: 0,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 118°. ✓"
     },
     {
@@ -21850,8 +21850,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 45, angle2: 60, angle3: 75, labels: ["3y°", "4y°", "5y°"] } },
       question: "A triangle has angles measuring 3y°, 4y°, and 5y°. What is y?",
-      options: ["12°", "18°", "15°", "20°", "24°"],
-      correct: 2,
+      options: ["30°", "15°", "14°", "16°", "26°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 3y + 4y + 5y = 180. This gives 12y = 180, so y = 15°. ✓"
     },
     {
@@ -21859,8 +21859,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 68, angle2: 67, angle3: 45, showExterior: true, exteriorLabel: "135°", angle2Label: "m°" } },
       question: "An exterior angle of a triangle measures 135°. Two interior opposite angles are 68° and m°. What is m?",
-      options: ["57°", "62°", "72°", "67°", "77°"],
-      correct: 3,
+      options: ["135°", "203°", "67°", "68°", "77°"],
+      correct: 2,
       explanation: "An exterior angle of a triangle equals the sum of the two opposite interior angles. So 68° + m = 135°. Therefore m = 135 - 68 = 67°. ✓"
     },
     {
@@ -21868,8 +21868,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [78, 102, 96, 84], labels: ["78°", "102°", "96°", "n°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "Mia draws a quadrilateral with angles 78°, 102°, 96°, and n°. What is n?",
-      options: ["74°", "79°", "94°", "89°", "84°"],
-      correct: 4,
+      options: ["96°", "102°", "180°", "84°", "94°"],
+      correct: 3,
       explanation: "Angles in a quadrilateral add up to 360°. So 78° + 102° + 96° + n = 360°. Therefore n = 360 - 276 = 84°. ✓"
     },
     {
@@ -21886,8 +21886,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 68, angle2: 68, angle3: 44, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 68° each. What is the third angle?",
-      options: ["34°", "44°", "39°", "49°", "54°"],
-      correct: 1,
+      options: ["44°", "34°", "54°", "56°", "68°"],
+      correct: 0,
       explanation: "Angles in a triangle sum to 180°. So 68° + 68° + third angle = 180°. The third angle = 180 - 136 = 44°. ✓"
     },
     {
@@ -21895,8 +21895,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 50, angle2: 60, angle3: 70, labels: ["5a°", "6a°", "7a°"] } },
       question: "Charlie finds a triangle with angles 5a°, 6a°, and 7a°. What is a?",
-      options: ["8°", "12°", "10°", "15°", "18°"],
-      correct: 2,
+      options: ["20°", "10°", "9°", "11°", "16°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 5a + 6a + 7a = 180. This gives 18a = 180, so a = 10°. ✓"
     },
     {
@@ -21904,8 +21904,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 73, highlight: "alternate", hideAnswer: true } },
       question: "Parallel lines are cut by a transversal. An angle measures 73°. What is the alternate interior angle?",
-      options: ["63°", "68°", "107°", "73°", "117°"],
-      correct: 3,
+      options: ["90°", "107°", "73°", "63°", "83°"],
+      correct: 2,
       explanation: "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 73°. ✓"
     },
     {
@@ -21922,8 +21922,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "7c°", color: "#7C3AED"}, {value: 110, label: "11c°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line measure 7c° and 11c°. What is c?",
-      options: ["10°", "8°", "12°", "15°", "18°"],
-      correct: 0,
+      options: ["9°", "11°", "20°", "26°", "10°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 7c + 11c = 180. This gives 18c = 180, so c = 10°. ✓"
     },
     {
@@ -21931,8 +21931,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 65, angle2: 48, angle3: 67, labels: ["65°", "48°", "?"] } },
       question: "A triangle has angles of 65° and 48°. What is the third angle?",
-      options: ["57°", "62°", "67°", "72°", "77°"],
-      correct: 2,
+      options: ["67°", "65°", "57°", "48°", "47°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. Third angle = 180° - 65° - 48° = 67°. ✓"
     },
     {
@@ -21958,8 +21958,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "RegularPolygon", props: { sides: 9, eachAngle: 140, angleLabel: "?", highlightAngle: true } },
       question: "A regular nonagon has 9 equal sides and 9 equal angles. What is each interior angle?",
-      options: ["130°", "135°", "150°", "145°", "140°"],
-      correct: 4,
+      options: ["40°", "144°", "1260°", "140°", "135°"],
+      correct: 3,
       explanation: "The sum of interior angles in a nonagon is (9-2) × 180° = 1260°. In a regular nonagon, all angles are equal, so each angle = 1260 ÷ 9 = 140°. ✓"
     },
     {
@@ -21967,8 +21967,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "108°", color: "#7C3AED"}, {value: 127, label: "127°", color: "#22C55E"}, {value: 84, label: "84°", color: "#7C3AED"}, {value: 41, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 108°, 127°, and 84°. What is the fourth angle?",
-      options: ["41°", "36°", "31°", "46°", "51°"],
-      correct: 0,
+      options: ["51°", "84°", "108°", "125°", "41°"],
+      correct: 4,
       explanation: "Angles around a point add up to 360°. So 108° + 127° + 84° + fourth angle = 360°. The fourth angle = 360 - 319 = 41°. ✓"
     },
     {
@@ -21985,8 +21985,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "3f°", color: "#7C3AED"}, {value: 72, label: "2f°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 3f° and 2f°. What is f?",
-      options: ["30°", "40°", "36°", "45°", "50°"],
-      correct: 2,
+      options: ["72°", "36°", "35°", "37°", "60°"],
+      correct: 1,
       explanation: "Angles on a straight line add up to 180°. So 3f + 2f = 180. This gives 5f = 180, so f = 36°. ✓"
     },
     {
@@ -22003,8 +22003,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 76, angle2: 76, angle3: 28, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 76° each. What is the third angle?",
-      options: ["18°", "23°", "38°", "33°", "28°"],
-      correct: 4,
+      options: ["38°", "52°", "76°", "28°", "18°"],
+      correct: 3,
       explanation: "Angles in a triangle sum to 180°. So 76° + 76° + third angle = 180°. The third angle = 180 - 152 = 28°. ✓"
     },
     {
@@ -22012,8 +22012,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "RegularPolygon", props: { sides: 10, eachAngle: 144, angleLabel: "?", highlightAngle: true } },
       question: "A regular decagon has 10 equal sides and 10 equal angles. What is each interior angle?",
-      options: ["144°", "140°", "135°", "150°", "156°"],
-      correct: 0,
+      options: ["140°", "36°", "147°", "1440°", "144°"],
+      correct: 4,
       explanation: "The sum of interior angles in a decagon is (10-2) × 180° = 1440°. In a regular decagon, all angles are equal, so each angle = 1440 ÷ 10 = 144°. ✓"
     },
     {
@@ -22030,8 +22030,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [68, 112, 68, 112], labels: ["68°", "112°", "68°", "h°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A parallelogram has angles 68°, 112°, 68°, and h°. What is h?",
-      options: ["102°", "107°", "112°", "117°", "122°"],
-      correct: 2,
+      options: ["122°", "112°", "102°", "90°", "68°"],
+      correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 68° + 112° + 68° + h = 360°. Therefore h = 360 - 248 = 112°. ✓"
     },
     {
@@ -22039,8 +22039,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "ParallelLines", props: { givenAngle: 124, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are crossed by a transversal. One angle measures 124°. What is the corresponding angle?",
-      options: ["56°", "66°", "76°", "124°", "114°"],
-      correct: 3,
+      options: ["56°", "134°", "124°", "114°", "90°"],
+      correct: 2,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 124°. ✓"
     },
     {
@@ -22048,8 +22048,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 108, label: "9j°", color: "#7C3AED"}, {value: 72, label: "6j°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 9j° and 6j°. What is j?",
-      options: ["10°", "20°", "15°", "18°", "12°"],
-      correct: 4,
+      options: ["13°", "20°", "24°", "12°", "11°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 9j + 6j = 180. This gives 15j = 180, so j = 12°. ✓"
     },
     {
@@ -22066,8 +22066,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 88, angle2: 68, angle3: 24, showExterior: true, exteriorLabel: "156°", angle2Label: "k°" } },
       question: "An exterior angle of a triangle is 156°. The two opposite interior angles are 88° and k°. What is k?",
-      options: ["58°", "68°", "63°", "73°", "78°"],
-      correct: 1,
+      options: ["68°", "78°", "88°", "156°", "244°"],
+      correct: 0,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 88° + k = 156°. Therefore k = 156 - 88 = 68°. ✓"
     },
     {
@@ -22075,8 +22075,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 40, angle2: 60, angle3: 80, labels: ["2p°", "3p°", "4p°"] } },
       question: "A triangle has angles 2p°, 3p°, and 4p°. What is p?",
-      options: ["15°", "18°", "20°", "24°", "30°"],
-      correct: 2,
+      options: ["40°", "20°", "19°", "21°", "36°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 2p + 3p + 4p = 180. This gives 9p = 180, so p = 20°. ✓"
     },
     {
@@ -22093,8 +22093,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 75, label: "5r°", color: "#7C3AED"}, {value: 105, label: "7r°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 5r° and 7r°. What is r?",
-      options: ["12°", "24°", "18°", "20°", "15°"],
-      correct: 4,
+      options: ["16°", "30°", "36°", "15°", "14°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 5r + 7r = 180. This gives 12r = 180, so r = 180 ÷ 12 = 15°. ✓"
     },
     {
@@ -22129,8 +22129,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [84, 93, 97, 86], labels: ["84°", "93°", "97°", "s°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A quadrilateral has angles 84°, 93°, 97°, and s°. What is s?",
-      options: ["76°", "81°", "91°", "86°", "96°"],
-      correct: 3,
+      options: ["93°", "96°", "86°", "84°", "76°"],
+      correct: 2,
       explanation: "Angles in a quadrilateral add up to 360°. So s = 360 − (84 + 93 + 97) = 360 − 274 = 86°. ✓"
     },
     {
@@ -22138,8 +22138,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 67, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 67°. What is the alternate interior angle?",
-      options: ["57°", "62°", "123°", "113°", "67°"],
-      correct: 4,
+      options: ["77°", "90°", "113°", "67°", "57°"],
+      correct: 3,
       explanation: "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 67°. ✓"
     },
     {
@@ -22147,8 +22147,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 54, angle2: 54, angle3: 72, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 54° each. What is the third angle?",
-      options: ["72°", "67°", "62°", "77°", "82°"],
-      correct: 0,
+      options: ["63°", "62°", "54°", "82°", "72°"],
+      correct: 4,
       explanation: "Angles in a triangle sum to 180°. So 54° + 54° + third angle = 180°. The third angle = 180 - 108 = 72°. ✓"
     },
     {
@@ -22156,8 +22156,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 48, angle2: 60, angle3: 72, labels: ["4t°", "5t°", "6t°"] } },
       question: "A triangle has angles 4t°, 5t°, and 6t°. What is t?",
-      options: ["10°", "12°", "15°", "18°", "20°"],
-      correct: 1,
+      options: ["12°", "11°", "13°", "20°", "24°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 4t + 5t + 6t = 180. This gives 15t = 180, so t = 12°. ✓"
     },
     {
@@ -22165,8 +22165,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 70, angle2: 80, angle3: 30, labels: ["7u°", "8u°", "3u°"] } },
       question: "A triangle has angles measuring 7u°, 8u°, and 3u°. What is u?",
-      options: ["8°", "12°", "10°", "15°", "18°"],
-      correct: 2,
+      options: ["20°", "10°", "9°", "11°", "12°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 7u + 8u + 3u = 180. This gives 18u = 180, so u = 10°. ✓"
     },
     {
@@ -22174,8 +22174,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 80, label: "8v°", color: "#7C3AED"}, {value: 100, label: "10v°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 8v° and 10v°. What is v?",
-      options: ["8°", "15°", "12°", "10°", "20°"],
-      correct: 3,
+      options: ["20°", "23°", "10°", "9°", "11°"],
+      correct: 2,
       explanation: "Angles on a straight line add up to 180°. So 8v + 10v = 180. This gives 18v = 180, so v = 10°. ✓"
     },
     {
@@ -22183,8 +22183,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 95, angle2: 67, angle3: 18, showExterior: true, exteriorLabel: "162°", angle2Label: "w°" } },
       question: "An exterior angle of a triangle is 162°. The two opposite interior angles are 95° and w°. What is w?",
-      options: ["57°", "62°", "77°", "72°", "67°"],
-      correct: 4,
+      options: ["95°", "162°", "257°", "67°", "77°"],
+      correct: 3,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 95° + w = 162°. Therefore w = 162 - 95 = 67°. ✓"
     },
     {
@@ -22192,8 +22192,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 116, label: "116°", color: "#7C3AED"}, {value: 98, label: "98°", color: "#22C55E"}, {value: 82, label: "82°", color: "#7C3AED"}, {value: 64, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 116°, 98°, and 82°. What is the fourth angle?",
-      options: ["64°", "59°", "54°", "69°", "74°"],
-      correct: 0,
+      options: ["54°", "44°", "74°", "82°", "64°"],
+      correct: 4,
       explanation: "Angles around a point add up to 360°. So 116° + 98° + 82° + fourth angle = 360°. The fourth angle = 360 - 296 = 64°. ✓"
     },
     {
@@ -22219,8 +22219,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 60, label: "6x°", color: "#7C3AED"}, {value: 120, label: "12x°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 6x° and 12x°. What is x?",
-      options: ["8°", "15°", "12°", "10°", "18°"],
-      correct: 3,
+      options: ["20°", "30°", "10°", "9°", "11°"],
+      correct: 2,
       explanation: "Angles on a straight line add up to 180°. So 6x + 12x = 180. This gives 18x = 180, so x = 10°. ✓"
     },
     {
@@ -22237,8 +22237,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 60, angle2: 70, angle3: 50, labels: ["6y°", "7y°", "5y°"] } },
       question: "A triangle has angles 6y°, 7y°, and 5y°. What is y?",
-      options: ["10°", "8°", "12°", "15°", "18°"],
-      correct: 0,
+      options: ["9°", "11°", "14°", "20°", "10°"],
+      correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 6y + 7y + 5y = 180. This gives 18y = 180, so y = 10°. ✓"
     },
     {
@@ -22246,8 +22246,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 139, highlight: "corresponding", hideAnswer: true } },
       question: "Parallel lines are crossed by a transversal. One angle is 139°. What is the corresponding angle?",
-      options: ["39°", "139°", "49°", "131°", "41°"],
-      correct: 1,
+      options: ["139°", "129°", "90°", "41°", "149°"],
+      correct: 0,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 139°. ✓"
     },
     {
@@ -22282,8 +22282,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 110, label: "11c°", color: "#7C3AED"}, {value: 70, label: "7c°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 11c° and 7c°. What is c?",
-      options: ["10°", "8°", "12°", "15°", "18°"],
-      correct: 0,
+      options: ["9°", "11°", "16°", "20°", "10°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 11c + 7c = 180. This gives 18c = 180, so c = 10°. ✓"
     },
     {
@@ -22291,8 +22291,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 92, angle2: 53, angle3: 35, showAngle3: false } },
       question: "A triangle has angles 92°, 53°, and d°. What is d?",
-      options: ["25°", "35°", "30°", "40°", "45°"],
-      correct: 1,
+      options: ["35°", "45°", "53°", "88°", "90°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 92° + 53° + d = 180°. Therefore d = 180 - 145 = 35°. ✓"
     },
     {
@@ -22300,8 +22300,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [87, 94, 91, 88], labels: ["87°", "94°", "91°", "e°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A quadrilateral has angles 87°, 94°, 91°, and e°. What is e?",
-      options: ["78°", "83°", "88°", "93°", "98°"],
-      correct: 2,
+      options: ["94°", "88°", "87°", "78°", "91°"],
+      correct: 1,
       explanation: "Angles in a quadrilateral add up to 360°. So 87° + 94° + 91° + e = 360°. Therefore e = 360 - 272 = 88°. ✓"
     },
     {
@@ -22309,8 +22309,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 76, angle2: 65, angle3: 39, showExterior: true, exteriorLabel: "141°", angle2Label: "f°" } },
       question: "An exterior angle of a triangle is 141°. The two opposite interior angles are 76° and f°. What is f?",
-      options: ["55°", "60°", "70°", "65°", "75°"],
-      correct: 3,
+      options: ["141°", "217°", "65°", "75°", "76°"],
+      correct: 2,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 76° + f = 141°. Therefore f = 141 - 76 = 65°. ✓"
     },
     {
@@ -22327,8 +22327,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "13g°", color: "#7C3AED"}, {value: 50, label: "5g°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 13g° and 5g°. What is g?",
-      options: ["10°", "8°", "12°", "15°", "18°"],
-      correct: 0,
+      options: ["9°", "11°", "14°", "20°", "10°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. So 13g + 5g = 180. This gives 18g = 180, so g = 10°. ✓"
     },
     {
@@ -22354,8 +22354,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 124, label: "124°", color: "#7C3AED"}, {value: 87, label: "87°", color: "#22C55E"}, {value: 96, label: "96°", color: "#7C3AED"}, {value: 53, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 124°, 87°, and 96°. What is the fourth angle?",
-      options: ["43°", "48°", "58°", "53°", "63°"],
-      correct: 3,
+      options: ["63°", "87°", "53°", "43°", "33°"],
+      correct: 2,
       explanation: "Angles around a point add up to 360°. So 124° + 87° + 96° + fourth angle = 360°. The fourth angle = 360 - 307 = 53°. ✓"
     },
     {
@@ -22363,8 +22363,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 82, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 82°. What is the alternate interior angle?",
-      options: ["72°", "78°", "108°", "98°", "82°"],
-      correct: 4,
+      options: ["90°", "92°", "98°", "82°", "72°"],
+      correct: 3,
       explanation: "When two parallel lines are crossed by another line (called a transversal), the angles on opposite sides are equal. These are called alternate angles. Since one angle is 82°, the alternate angle is also 82°. ✓"
     },
     {
@@ -22372,8 +22372,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 90, angle2: 60, angle3: 30, labels: ["9j°", "6j°", "3j°"] } },
       question: "A triangle has angles 9j°, 6j°, and 3j°. What is j?",
-      options: ["10°", "8°", "12°", "15°", "18°"],
-      correct: 0,
+      options: ["9°", "11°", "12°", "20°", "10°"],
+      correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 9j + 6j + 3j = 180. This gives 18j = 180, so j = 10°. ✓"
     },
     {
@@ -22381,8 +22381,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "QuadShape", props: { angles: [65, 115, 65, 115], labels: ["65°", "115°", "65°", "k°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A rhombus has angles 65°, 115°, 65°, and k°. What is k?",
-      options: ["105°", "115°", "110°", "120°", "125°"],
-      correct: 1,
+      options: ["115°", "105°", "95°", "65°", "125°"],
+      correct: 0,
       explanation: "A rhombus is a quadrilateral (4-sided shape), so its angles add up to 360°. So k = 360 − (65 + 115 + 65) = 360 − 245 = 115°. ✓"
     },
     {
@@ -22390,8 +22390,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 86, angle2: 58, angle3: 36, showAngle3: false } },
       question: "A triangle has angles 86°, 58°, and m°. What is m?",
-      options: ["26°", "31°", "36°", "41°", "46°"],
-      correct: 2,
+      options: ["90°", "36°", "46°", "58°", "86°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 86° + 58° + m = 180°. Therefore m = 180 - 144 = 36°. ✓"
     },
     {
@@ -22408,8 +22408,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 140, label: "14n°", color: "#7C3AED"}, {value: 40, label: "4n°", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles on a straight line are 14n° and 4n°. What is n?",
-      options: ["8°", "18°", "12°", "15°", "10°"],
-      correct: 4,
+      options: ["11°", "13°", "20°", "10°", "9°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 14n + 4n = 180. This gives 18n = 180, so n = 10°. ✓"
     },
     {
@@ -22417,8 +22417,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 52, angle2: 52, angle3: 76, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 52°. What is the top angle?",
-      options: ["76°", "71°", "66°", "81°", "86°"],
-      correct: 0,
+      options: ["66°", "64°", "52°", "86°", "76°"],
+      correct: 4,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 52° + 52° + top angle = 180°. The top angle = 180 - 104 = 76°. ✓"
     },
     {
@@ -22453,8 +22453,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 150, label: "15r°", color: "#7C3AED"}, {value: 30, label: "3r°", color: "#FDCB6E"}], size: 200 } },
       question: "Angles on a straight line are 15r° and 3r°. What is r?",
-      options: ["8°", "18°", "12°", "15°", "10°"],
-      correct: 4,
+      options: ["11°", "12°", "20°", "10°", "9°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. So 15r + 3r = 180. This gives 18r = 180, so r = 10°. ✓"
     },
     {
@@ -22480,8 +22480,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 146, highlight: "corresponding", hideAnswer: true } },
       question: "Parallel lines are crossed by a transversal. One angle is 146°. What is the corresponding angle?",
-      options: ["34°", "44°", "146°", "136°", "54°"],
-      correct: 2,
+      options: ["156°", "146°", "136°", "90°", "34°"],
+      correct: 1,
       explanation: "When a line crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 146°. ✓"
     },
     {
@@ -22489,8 +22489,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 100, angle2: 50, angle3: 30, labels: ["10t°", "5t°", "3t°"] } },
       question: "A triangle has angles 10t°, 5t°, and 3t°. What is t?",
-      options: ["8°", "15°", "12°", "10°", "18°"],
-      correct: 3,
+      options: ["12°", "20°", "10°", "9°", "11°"],
+      correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 10t + 5t + 3t = 180. This gives 18t = 180, so t = 10°. ✓"
     },
     {
@@ -22525,8 +22525,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ExteriorAngle", props: { angle1: 82, angle2: 68, angle3: 30, showExterior: true, exteriorLabel: "150°", angle2Label: "v°" } },
       question: "An exterior angle of a triangle is 150°. The two opposite interior angles are 82° and v°. What is v?",
-      options: ["58°", "63°", "68°", "73°", "78°"],
-      correct: 2,
+      options: ["232°", "68°", "78°", "82°", "150°"],
+      correct: 1,
       explanation: "An exterior angle equals the sum of the two opposite interior angles. So 82° + v = 150°. Therefore v = 150 - 82 = 68°. ✓"
     },
     {
@@ -22534,8 +22534,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 110, angle2: 40, angle3: 30, labels: ["11w°", "4w°", "3w°"] } },
       question: "A triangle has angles 11w°, 4w°, and 3w°. What is w?",
-      options: ["8°", "15°", "12°", "10°", "18°"],
-      correct: 3,
+      options: ["12°", "20°", "10°", "9°", "11°"],
+      correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 11w + 4w + 3w = 180. This gives 18w = 180, so w = 10°. ✓"
     },
     {
@@ -22543,8 +22543,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDiagram", props: { angle1: 78, angle2: 64, angle3: 38, showAngle3: false } },
       question: "A triangle has angles 78°, 64°, and x°. What is x?",
-      options: ["28°", "33°", "48°", "43°", "38°"],
-      correct: 4,
+      options: ["18°", "48°", "64°", "38°", "28°"],
+      correct: 3,
       explanation: "Angles in a triangle add up to 180°. So 78° + 64° + x = 180°. Therefore x = 180 - 142 = 38°. ✓"
     },
     {
@@ -22552,8 +22552,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 132, label: "132°", color: "#7C3AED"}, {value: 78, label: "78°", color: "#22C55E"}, {value: 105, label: "105°", color: "#7C3AED"}, {value: 45, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles at a point measure 132°, 78°, and 105°. What is the fourth angle?",
-      options: ["45°", "40°", "35°", "50°", "55°"],
-      correct: 0,
+      options: ["35°", "25°", "55°", "78°", "45°"],
+      correct: 4,
       explanation: "Angles around a point add up to 360°. So 132° + 78° + 105° + fourth angle = 360°. The fourth angle = 360 - 315 = 45°. ✓"
     },
     {
@@ -22561,8 +22561,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "QuadShape", props: { angles: [74, 106, 74, 106], labels: ["74°", "106°", "74°", "y°"], colors: ["#7C3AED", "#7C3AED", "#7C3AED", "#FDCB6E"] } },
       question: "A parallelogram has angles 74°, 106°, 74°, and y°. What is y?",
-      options: ["96°", "106°", "101°", "111°", "116°"],
-      correct: 1,
+      options: ["106°", "96°", "90°", "74°", "116°"],
+      correct: 0,
       explanation: "Angles in a quadrilateral add up to 360°. So 74° + 106° + 74° + y = 360°. Therefore y = 360 - 254 = 106°. ✓"
     },
     {
@@ -22579,8 +22579,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 70, angle2: 70, angle3: 40, showAngle3: false } },
       question: "An isosceles triangle has two equal angles of 70° each. What is the third angle?",
-      options: ["30°", "35°", "45°", "40°", "50°"],
-      correct: 3,
+      options: ["55°", "70°", "40°", "30°", "50°"],
+      correct: 2,
       explanation: "Angles in a triangle sum to 180°. So 70° + 70° + third angle = 180°. The third angle = 180 - 140 = 40°. ✓"
     },
     {
@@ -22588,8 +22588,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDiagram", props: { angle1: 36, angle2: 36, angle3: 108, showAngle3: false } },
       question: "An isosceles triangle has a base angle of 36°. What is the top angle?",
-      options: ["98°", "103°", "118°", "113°", "108°"],
-      correct: 4,
+      options: ["72°", "36°", "118°", "108°", "98°"],
+      correct: 3,
       explanation: "In an isosceles triangle, the two base angles are equal. So we have 36° + 36° + top angle = 180°. The top angle = 180 - 72 = 108°. ✓"
     },
     {
@@ -22597,8 +22597,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "ParallelLines", props: { givenAngle: 93, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 93°. What is the alternate interior angle?",
-      options: ["93°", "87°", "83°", "97°", "103°"],
-      correct: 0,
+      options: ["90°", "87°", "83°", "103°", "93°"],
+      correct: 4,
       explanation: "When parallel lines are cut by a transversal, alternate interior angles are equal. So the alternate interior angle is also 93°. ✓"
     },
     {
@@ -22650,8 +22650,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 115, label: "115°", color: "#7C3AED"}, {value: 65, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles are on a straight line. One angle is 115°. What is the other angle?",
-      options: ["65°", "55°", "75°", "85°", "95°"],
-      correct: 0,
+      options: ["75°", "90°", "115°", "180°", "65°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. The other angle = 180° − 115° = 65°. ✓"
     },
     {
@@ -22659,8 +22659,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 72, label: "72°", color: "#7C3AED"}, {value: 108, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles sit on a straight line. One angle is 72°. What is the other angle?",
-      options: ["98°", "108°", "100°", "112°", "118°"],
-      correct: 1,
+      options: ["108°", "98°", "90°", "88°", "72°"],
+      correct: 0,
       explanation: "Angles on a straight line add up to 180°. The other angle = 180° − 72° = 108°. ✓"
     },
     {
@@ -22668,8 +22668,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 90, label: "90°", color: "#7C3AED"}, {value: 90, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "An angle of 90° sits on a straight line with another angle. What is the other angle?",
-      options: ["45°", "60°", "90°", "120°", "180°"],
-      correct: 2,
+      options: ["180°", "90°", "80°", "70°", "100°"],
+      correct: 1,
       explanation: "Angles on a straight line add up to 180°. The other angle = 180° − 90° = 90°. Both angles are right angles. ✓"
     },
     {
@@ -22677,8 +22677,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 143, label: "143°", color: "#7C3AED"}, {value: 37, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two angles are formed on a straight line. One is 143°. What is the other?",
-      options: ["27°", "47°", "43°", "37°", "57°"],
-      correct: 3,
+      options: ["143°", "180°", "37°", "47°", "90°"],
+      correct: 2,
       explanation: "Angles on a straight line add up to 180°. The other angle = 180° − 143° = 37°. ✓"
     },
     {
@@ -22686,8 +22686,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 58, label: "58°", color: "#7C3AED"}, {value: 122, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Oliver draws a straight line and marks an angle of 58° on one side. What is the angle on the other side?",
-      options: ["112°", "118°", "132°", "128°", "122°"],
-      correct: 4,
+      options: ["102°", "90°", "58°", "122°", "112°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. The other angle = 180° − 58° = 122°. ✓"
     },
     {
@@ -22695,8 +22695,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 165, label: "165°", color: "#7C3AED"}, {value: 15, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Emma measures one of two angles on a straight line and gets 165°. What is the other angle?",
-      options: ["15°", "10°", "5°", "20°", "25°"],
-      correct: 0,
+      options: ["25°", "90°", "165°", "180°", "15°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. The other angle = 180° − 165° = 15°. ✓"
     },
     {
@@ -22716,8 +22716,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 54, label: "54°", color: "#7C3AED"}, {value: 68, label: "68°", color: "#22C55E"}, {value: 58, label: "x°", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles on a straight line are 54°, 68°, and x°. What is x?",
-      options: ["48°", "52°", "58°", "56°", "62°"],
-      correct: 2,
+      options: ["90°", "58°", "54°", "48°", "68°"],
+      correct: 1,
       explanation: "Angles on a straight line add up to 180°. So 54° + 68° + x° = 180°. That gives 122° + x° = 180°, so x = 180 − 122 = 58°. ✓"
     },
     {
@@ -22725,8 +22725,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 37, label: "37°", color: "#7C3AED"}, {value: 85, label: "85°", color: "#22C55E"}, {value: 58, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles sit on a straight line. Two of them are 37° and 85°. What is the third angle?",
-      options: ["48°", "52°", "56°", "58°", "62°"],
-      correct: 3,
+      options: ["68°", "85°", "58°", "48°", "38°"],
+      correct: 2,
       explanation: "Angles on a straight line add up to 180°. The third angle = 180° − 37° − 85° = 58°. ✓"
     },
     {
@@ -22743,8 +22743,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 70, label: "70°", color: "#7C3AED"}, {value: 110, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Two straight lines cross. One angle is 70°. What is the angle next to it on the straight line?",
-      options: ["110°", "90°", "100°", "70°", "120°"],
-      correct: 0,
+      options: ["100°", "90°", "70°", "120°", "110°"],
+      correct: 4,
       explanation: "Adjacent angles on a straight line add up to 180°. The angle next to 70° = 180° − 70° = 110°. ✓"
     },
     {
@@ -22752,8 +22752,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 42, label: "42°", color: "#7C3AED"}, {value: 65, label: "y°", color: "#FDCB6E"}, {value: 73, label: "73°", color: "#22C55E"}], size: 200 } },
       question: "Sophie marks three angles on a straight line: 42°, y°, and 73°. What is y?",
-      options: ["55°", "65°", "60°", "70°", "75°"],
-      correct: 1,
+      options: ["65°", "73°", "75°", "90°", "138°"],
+      correct: 0,
       explanation: "Angles on a straight line add up to 180°. So 42° + y° + 73° = 180°. That gives 115° + y° = 180°, so y = 180 − 115 = 65°. ✓"
     },
     {
@@ -22809,8 +22809,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "AngleDisplay", props: { angles: [{value: 130, label: "130°", color: "#7C3AED"}, {value: 50, label: "a°", color: "#FDCB6E"}], size: 200 } },
       question: "Angle a is on a straight line with 130°. Angle b is vertically opposite to angle a. What is b?",
-      options: ["40°", "60°", "50°", "130°", "140°"],
-      correct: 2,
+      options: ["90°", "50°", "40°", "30°", "60°"],
+      correct: 1,
       explanation: "Angles on a straight line add up to 180°. So angle a = 180° − 130° = 50°. Vertically opposite angles are equal, so angle b = 50°. ✓"
     },
     {
@@ -22836,8 +22836,8 @@ anglesshapes: {
       difficulty: 3,
       visual: { component: "AngleDisplay", props: { angles: [{value: 68, label: "68°", color: "#7C3AED"}, {value: 112, label: "q°", color: "#FDCB6E"}], size: 200 } },
       question: "Angle p and angle q are on a straight line. Angle r is vertically opposite to angle q. If p = 68°, what is angle r?",
-      options: ["112°", "68°", "102°", "22°", "122°"],
-      correct: 0,
+      options: ["102°", "92°", "90°", "68°", "112°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°, so angle q = 180° − 68° = 112°. \"Vertically opposite\" angles are the pair that sit directly across from each other where two straight lines cross — they are always equal. So angle r = angle q = 112°. ✓"
     },
 
@@ -22986,72 +22986,72 @@ anglesshapes: {
       id: 159,
       difficulty: 1,
       question: "A triangle has angles of 60° and 80°. What is the third angle?",
-      options: ["40°", "30°", "50°", "60°", "70°"],
-      correct: 0,
+      options: ["50°", "60°", "80°", "90°", "40°"],
+      correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 60° + 80° + third angle = 180°. The third angle = 180 - 60 - 80 = 40°. ✓"
     },
     {
       id: 160,
       difficulty: 1,
       question: "A triangle has angles of 50° and 90°. What is the third angle?",
-      options: ["30°", "40°", "35°", "45°", "50°"],
-      correct: 1,
+      options: ["40°", "30°", "20°", "50°", "90°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 50° + 90° + third angle = 180°. The third angle = 180 - 50 - 90 = 40°. ✓"
     },
     {
       id: 161,
       difficulty: 1,
       question: "A triangle has angles of 75° and 65°. What is the third angle?",
-      options: ["30°", "35°", "40°", "45°", "50°"],
-      correct: 2,
+      options: ["90°", "40°", "50°", "65°", "75°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 75° + 65° + third angle = 180°. The third angle = 180 - 75 - 65 = 40°. ✓"
     },
     {
       id: 162,
       difficulty: 1,
       question: "A triangle has angles of 45° and 85°. What is the third angle?",
-      options: ["40°", "45°", "55°", "50°", "60°"],
-      correct: 3,
+      options: ["30°", "60°", "50°", "45°", "40°"],
+      correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 45° + 85° + third angle = 180°. The third angle = 180 - 45 - 85 = 50°. ✓"
     },
     {
       id: 163,
       difficulty: 1,
       question: "A triangle has angles of 38° and 72°. What is the third angle?",
-      options: ["60°", "65°", "80°", "75°", "70°"],
-      correct: 4,
+      options: ["50°", "38°", "72°", "70°", "60°"],
+      correct: 3,
       explanation: "Angles in a triangle add up to 180°. So 38° + 72° + third angle = 180°. The third angle = 180 - 38 - 72 = 70°. ✓"
     },
     {
       id: 164,
       difficulty: 2,
       question: "Emma draws a triangle with angles 35° and 110°. What is the third angle?",
-      options: ["35°", "30°", "25°", "40°", "45°"],
-      correct: 0,
+      options: ["25°", "15°", "45°", "90°", "35°"],
+      correct: 4,
       explanation: "Angles in a triangle add up to 180°. So 35° + 110° + third angle = 180°. The third angle = 180 - 35 - 110 = 35°. This is an obtuse triangle because one angle is greater than 90°. ✓"
     },
     {
       id: 165,
       difficulty: 2,
       question: "Oliver draws a triangle. One angle is 28° and another is 124°. What is the third angle?",
-      options: ["18°", "28°", "23°", "33°", "38°"],
-      correct: 1,
+      options: ["28°", "38°", "90°", "124°", "152°"],
+      correct: 0,
       explanation: "Angles in a triangle add up to 180°. So 28° + 124° + third angle = 180°. The third angle = 180 - 28 - 124 = 28°. This is an obtuse triangle with two equal angles, making it an obtuse isosceles triangle. ✓"
     },
     {
       id: 166,
       difficulty: 2,
       question: "Lily measures two angles in a triangle as 56° and 97°. What is the third angle?",
-      options: ["17°", "22°", "27°", "32°", "37°"],
-      correct: 2,
+      options: ["56°", "27°", "17°", "7°", "37°"],
+      correct: 1,
       explanation: "Angles in a triangle add up to 180°. So 56° + 97° + third angle = 180°. The third angle = 180 - 56 - 97 = 27°. ✓"
     },
     {
       id: 167,
       difficulty: 2,
       question: "Sophie draws a triangle where one angle is twice another. The two angles are 46° and 92°. What is the third angle?",
-      options: ["32°", "37°", "47°", "42°", "52°"],
-      correct: 3,
+      options: ["90°", "92°", "42°", "46°", "52°"],
+      correct: 2,
       explanation: "Angles in a triangle add up to 180°. So 46° + 92° + third angle = 180°. The third angle = 180 - 46 - 92 = 42°. ✓"
     },
     {
@@ -23102,8 +23102,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 78, label: "78°", color: "#7C3AED"}, {value: 112, label: "112°", color: "#22C55E"}, {value: 95, label: "95°", color: "#7C3AED"}, {value: 75, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 78°, 112°, and 95°. What is the fourth angle?",
-      options: ["65°", "70°", "85°", "80°", "75°"],
-      correct: 4,
+      options: ["55°", "78°", "85°", "75°", "65°"],
+      correct: 3,
       explanation: "Angles around a point add up to 360°. So 78° + 112° + 95° + fourth angle = 360°. The fourth angle = 360 - 285 = 75°. ✓"
     },
     {
@@ -23111,8 +23111,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 148, label: "148°", color: "#7C3AED"}, {value: 97, label: "97°", color: "#22C55E"}, {value: 115, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Three angles meet at a point. Two of them are 148° and 97°. What is the third angle?",
-      options: ["115°", "110°", "105°", "120°", "125°"],
-      correct: 0,
+      options: ["105°", "97°", "95°", "125°", "115°"],
+      correct: 4,
       explanation: "Angles around a point add up to 360°. So 148° + 97° + third angle = 360°. The third angle = 360 - 245 = 115°. ✓"
     },
     {
@@ -23120,8 +23120,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 65, label: "65°", color: "#7C3AED"}, {value: 82, label: "82°", color: "#22C55E"}, {value: 74, label: "74°", color: "#7C3AED"}, {value: 91, label: "91°", color: "#22C55E"}, {value: 48, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Five angles meet at a point. Four of them are 65°, 82°, 74°, and 91°. What is the fifth angle?",
-      options: ["38°", "48°", "43°", "53°", "58°"],
-      correct: 1,
+      options: ["48°", "58°", "65°", "74°", "82°"],
+      correct: 0,
       explanation: "Angles around a point add up to 360°. So 65° + 82° + 74° + 91° + fifth angle = 360°. The fifth angle = 360 - 312 = 48°. ✓"
     },
     {
@@ -23147,8 +23147,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "AngleDisplay", props: { angles: [{value: 64, label: "64°", color: "#7C3AED"}, {value: 128, label: "128°", color: "#22C55E"}, {value: 96, label: "96°", color: "#7C3AED"}, {value: 72, label: "?", color: "#FDCB6E"}], size: 200 } },
       question: "Four angles meet at a point. Three of them are 64°, 128°, and 96°. What is the fourth angle?",
-      options: ["62°", "67°", "82°", "77°", "72°"],
-      correct: 4,
+      options: ["62°", "52°", "82°", "72°", "64°"],
+      correct: 3,
       explanation: "Angles around a point add up to 360°. So 64° + 128° + 96° + fourth angle = 360°. The fourth angle = 360 - 288 = 72°. ✓"
     },
     {
@@ -23203,16 +23203,16 @@ anglesshapes: {
       id: 184,
       difficulty: 2,
       question: "An irregular quadrilateral has angles of 115°, 82°, and 74°. What is the fourth angle?",
-      options: ["89°", "84°", "79°", "94°", "99°"],
-      correct: 0,
+      options: ["82°", "79°", "74°", "69°", "89°"],
+      correct: 4,
       explanation: "Angles in a quadrilateral add up to 360°. So 115° + 82° + 74° + fourth angle = 360°. The fourth angle = 360 - 271 = 89°. ✓"
     },
     {
       id: 185,
       difficulty: 2,
       question: "A parallelogram has one angle of 65°. What is the angle directly opposite to it?",
-      options: ["55°", "65°", "90°", "115°", "125°"],
-      correct: 1,
+      options: ["65°", "55°", "75°", "90°", "115°"],
+      correct: 0,
       explanation: "In a parallelogram, opposite angles are equal. So the angle opposite 65° is also 65°. ✓"
     },
     {
@@ -23227,8 +23227,8 @@ anglesshapes: {
       id: 187,
       difficulty: 2,
       question: "A quadrilateral has angles of 93°, 107°, and 68°. What is the fourth angle?",
-      options: ["82°", "87°", "97°", "92°", "102°"],
-      correct: 3,
+      options: ["68°", "93°", "92°", "82°", "72°"],
+      correct: 2,
       explanation: "Angles in a quadrilateral add up to 360°. So 93° + 107° + 68° + fourth angle = 360°. The fourth angle = 360 - 268 = 92°. ✓"
     },
     {
@@ -23243,8 +23243,8 @@ anglesshapes: {
       id: 189,
       difficulty: 3,
       question: "Three angles of a quadrilateral are 80°, 100°, and 95°. What is the fourth angle?",
-      options: ["85°", "80°", "75°", "90°", "95°"],
-      correct: 0,
+      options: ["80°", "75°", "95°", "100°", "85°"],
+      correct: 4,
       explanation: "Angles in a quadrilateral add up to 360°. So 80° + 100° + 95° + fourth angle = 360°. The fourth angle = 360 - 275 = 85°. ✓"
     },
     {
@@ -23351,8 +23351,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "RegularPolygon", props: { sides: 6, eachAngle: 120, angleLabel: "?", highlightAngle: true } },
       question: "What is each interior angle of a regular hexagon?",
-      options: ["120°", "108°", "110°", "100°", "135°"],
-      correct: 0,
+      options: ["108°", "60°", "129°", "720°", "120°"],
+      correct: 4,
       explanation: "The sum of interior angles in a hexagon is (6−2) × 180° = 720°. A regular hexagon has 6 equal angles, so each angle = 720° ÷ 6 = 120°. ✓"
     },
     {
@@ -23360,8 +23360,8 @@ anglesshapes: {
       difficulty: 2,
       visual: { component: "RegularPolygon", props: { sides: 5, eachAngle: 108, angleLabel: "?", highlightAngle: true } },
       question: "How many degrees is each interior angle of a regular pentagon?",
-      options: ["100°", "108°", "104°", "112°", "120°"],
-      correct: 1,
+      options: ["108°", "90°", "72°", "120°", "540°"],
+      correct: 0,
       explanation: "The sum of interior angles in a pentagon is (5−2) × 180° = 540°. A regular pentagon has 5 equal angles, so each angle = 540° ÷ 5 = 108°. ✓"
     },
     {
@@ -23464,16 +23464,16 @@ anglesshapes: {
       id: 210,
       difficulty: 1,
       question: "An isosceles triangle has two equal angles of 70°. What is the third angle?",
-      options: ["30°", "40°", "35°", "45°", "50°"],
-      correct: 1,
+      options: ["40°", "30°", "50°", "55°", "70°"],
+      correct: 0,
       explanation: "In an isosceles triangle, two angles are equal. Angles in a triangle add up to 180°. So 70° + 70° + third angle = 180°. The third angle = 180° − 140° = 40°. ✓"
     },
     {
       id: 211,
       difficulty: 1,
       question: "An isosceles triangle has two equal angles of 50°. What is the third angle?",
-      options: ["60°", "70°", "80°", "90°", "100°"],
-      correct: 2,
+      options: ["90°", "80°", "70°", "65°", "50°"],
+      correct: 1,
       explanation: "In an isosceles triangle, two angles are equal. Angles in a triangle add up to 180°. So 50° + 50° + third angle = 180°. The third angle = 180° − 100° = 80°. ✓"
     },
     {
@@ -23497,8 +23497,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "ExteriorAngle", props: { angle1: 60, angle2: 60, angle3: 60, showExterior: true, exteriorLabel: "?" } },
       question: "The interior angle of a triangle at one vertex is 60°. What is the exterior angle at that vertex?",
-      options: ["60°", "90°", "100°", "130°", "120°"],
-      correct: 4,
+      options: ["100°", "90°", "60°", "120°", "110°"],
+      correct: 3,
       explanation: "An interior angle and its exterior angle sit on a straight line, so they add up to 180°. The exterior angle = 180° − 60° = 120°. ✓"
     },
     {
@@ -23506,8 +23506,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "ExteriorAngle", props: { angle1: 60, angle2: 45, angle3: 75, showExterior: true, exteriorLabel: "?" } },
       question: "The interior angle of a triangle at one vertex is 75°. What is the exterior angle at that vertex?",
-      options: ["105°", "95°", "85°", "115°", "125°"],
-      correct: 0,
+      options: ["95°", "90°", "85°", "75°", "105°"],
+      correct: 4,
       explanation: "An interior angle and its exterior angle sit on a straight line, so they add up to 180°. The exterior angle = 180° − 75° = 105°. ✓"
     },
 
@@ -23544,8 +23544,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "ParallelLines", props: { givenAngle: 70, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 70°. What is the corresponding angle?",
-      options: ["100°", "80°", "90°", "70°", "110°"],
-      correct: 3,
+      options: ["90°", "110°", "70°", "60°", "80°"],
+      correct: 2,
       explanation: "When a transversal crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 70°. ✓"
     },
     {
@@ -23553,8 +23553,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "ParallelLines", props: { givenAngle: 115, highlight: "alternate", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 115°. What is the alternate angle?",
-      options: ["55°", "65°", "75°", "105°", "115°"],
-      correct: 4,
+      options: ["90°", "65°", "125°", "115°", "105°"],
+      correct: 3,
       explanation: "When a transversal crosses two parallel lines, alternate angles are equal. So the alternate angle is also 115°. ✓"
     },
     {
@@ -23562,8 +23562,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "ParallelLines", props: { givenAngle: 48, highlight: "corresponding", hideAnswer: true } },
       question: "Two parallel lines are cut by a transversal. One angle is 48°. What is the corresponding angle on the other parallel line?",
-      options: ["48°", "42°", "52°", "132°", "138°"],
-      correct: 0,
+      options: ["38°", "58°", "90°", "132°", "48°"],
+      correct: 4,
       explanation: "When a transversal crosses two parallel lines, corresponding angles are equal. So the corresponding angle is also 48°. ✓"
     },
 
@@ -23607,8 +23607,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 50, label: "x°", color: "#FDCB6E"}, {value: 130, label: "130°", color: "#7C3AED"}], size: 200 } },
       question: "Two angles on a straight line are x° and 130°. What is x?",
-      options: ["40°", "80°", "60°", "70°", "50°"],
-      correct: 4,
+      options: ["90°", "130°", "180°", "50°", "60°"],
+      correct: 3,
       explanation: "Angles on a straight line add up to 180°. So x + 130 = 180. Therefore x = 180 − 130 = 50°. ✓"
     },
     {
@@ -23616,8 +23616,8 @@ anglesshapes: {
       difficulty: 1,
       visual: { component: "AngleDisplay", props: { angles: [{value: 85, label: "x°", color: "#FDCB6E"}, {value: 95, label: "95°", color: "#7C3AED"}], size: 200 } },
       question: "Two angles on a straight line are x° and 95°. What is x?",
-      options: ["85°", "80°", "75°", "90°", "95°"],
-      correct: 0,
+      options: ["90°", "95°", "180°", "265°", "85°"],
+      correct: 4,
       explanation: "Angles on a straight line add up to 180°. So x + 95 = 180. Therefore x = 180 − 95 = 85°. ✓"
     },
     {
@@ -23646,8 +23646,8 @@ sequences: {
       id: 2,
       difficulty: 1,
       question: "Emma writes the sequence: 2, 4, 8, 16, 32, ?. What comes next?",
-      options: ["64", "54", "60", "48", "68"],
-      correct: 0,
+      options: ["96", "128", "64", "48", "32"],
+      correct: 2,
       explanation: "This sequence doubles each time (multiply by 2). 32 × 2 = 64. ✓"
     },
     {
@@ -23663,8 +23663,8 @@ sequences: {
       difficulty: 2,
       visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:1, label:"1×1"}, {n:2, value:4, label:"2×2"}, {n:3, value:9, label:"3×3"}, {n:4, value:16, label:"4×4"}, {n:5, value:25, label:"5×5"}], questionLabel: "6×6" } },
       question: "Tom notices the pattern: 1, 4, 9, 16, 25, ?. What is the next number?",
-      options: ["30", "32", "36", "34", "38"],
-      correct: 2,
+      options: ["35", "37", "49", "50", "36"],
+      correct: 4,
       explanation: "These are square numbers: 1², 2², 3², 4², 5², 6². So 6² = 36. ✓"
     },
     {
@@ -23695,8 +23695,8 @@ sequences: {
       id: 8,
       difficulty: 1,
       question: "Jake creates a sequence: 3, 6, 12, 24, 48, ?. What is the next term?",
-      options: ["72", "96", "90", "84", "100"],
-      correct: 1,
+      options: ["48", "2", "144", "96", "72"],
+      correct: 3,
       explanation: "This sequence doubles each time (multiply by 2). 48 × 2 = 96. ✓"
     },
     {
@@ -23727,8 +23727,8 @@ sequences: {
       id: 12,
       difficulty: 2,
       question: "Ben creates a Fibonacci-style sequence: 1, 1, 2, 3, 5, 8, ?. What comes next?",
-      options: ["13", "12", "11", "14", "15"],
-      correct: 0,
+      options: ["14", "16", "13", "12", "8"],
+      correct: 2,
       explanation: "In a Fibonacci sequence, each term is the sum of the previous two terms. 5 + 8 = 13. ✓"
     },
     {
@@ -23767,16 +23767,16 @@ sequences: {
       id: 17,
       difficulty: 2,
       question: "What is the 8th term in the sequence: 3, 7, 11, 15, 19, ...?",
-      options: ["31", "29", "33", "35", "37"],
-      correct: 0,
+      options: ["32", "35", "31", "27", "4"],
+      correct: 2,
       explanation: "This sequence adds 4 each time. Starting from 3: the pattern is 4n - 1. So the 8th term is (4 × 8) - 1 = 31. ✓"
     },
     {
       id: 18,
       difficulty: 2,
       question: "Sarah creates a sequence: 5, 15, 45, 135, ?. What is the next term?",
-      options: ["270", "405", "360", "315", "450"],
-      correct: 1,
+      options: ["135", "3", "540", "405", "225"],
+      correct: 3,
       explanation: "This sequence multiplies by 3 each time. 135 × 3 = 405. ✓"
     },
     {
@@ -23792,8 +23792,8 @@ sequences: {
       id: 20,
       difficulty: 1,
       question: "Charlie finds: 128, 64, 32, 16, 8, ?. What comes next?",
-      options: ["2", "3", "5", "4", "6"],
-      correct: 3,
+      options: ["4", "2", "1", "8", "12"],
+      correct: 0,
       explanation: "This sequence halves each time (divide by 2). 8 ÷ 2 = 4. ✓"
     },
     {
@@ -23825,8 +23825,8 @@ sequences: {
       difficulty: 2,
       visual: { component: "DotPattern", props: { type: "square", terms: [{n:1, value:1, label:"1×1"}, {n:2, value:4, label:"2×2"}, {n:3, value:9, label:"3×3"}, {n:4, value:16, label:"4×4"}, {n:5, value:25, label:"5×5"}, {n:6, value:36, label:"6×6"}], showQuestion: true, questionLabel: "7×7" } },
       question: "Tiles are arranged in square patterns: 1, 4, 9, 16, 25, 36. How many tiles are needed for the next square pattern?",
-      options: ["42", "45", "49", "48", "47"],
-      correct: 2,
+      options: ["48", "50", "64", "72", "49"],
+      correct: 4,
       explanation: "These are square numbers: 1², 2², 3², 4², 5², 6², 7². So 7² = 49 tiles. ✓"
     },
     {
@@ -23857,8 +23857,8 @@ sequences: {
       id: 28,
       difficulty: 2,
       question: "In a game, your score triples each level: 2, 6, 18, 54. What will your score be at the next level?",
-      options: ["108", "162", "144", "180", "216"],
-      correct: 1,
+      options: ["54", "3", "216", "162", "90"],
+      correct: 3,
       explanation: "The score multiplies by 3 each level. 54 × 3 = 162. ✓"
     },
     {
@@ -23873,8 +23873,8 @@ sequences: {
       id: 30,
       difficulty: 2,
       question: "Raj spots a Fibonacci pattern on a nature poster: 1, 2, 3, 5, 8. What number comes next in the pattern?",
-      options: ["10", "11", "15", "13", "16"],
-      correct: 3,
+      options: ["13", "12", "8", "5", "14"],
+      correct: 0,
       explanation: "Each term is the sum of the previous two. 5 + 8 = 13. ✓"
     },
     {
@@ -23889,8 +23889,8 @@ sequences: {
       id: 32,
       difficulty: 2,
       question: "A lily pad doubles in size each day. Its area in cm² goes 6, 12, 24, 48, 96. What will its area be the next day?",
-      options: ["192", "168", "180", "144", "204"],
-      correct: 0,
+      options: ["288", "384", "192", "144", "96"],
+      correct: 2,
       explanation: "The lily pad doubles each day. 96 × 2 = 192 cm². ✓"
     },
     {
@@ -23945,8 +23945,8 @@ sequences: {
       id: 39,
       difficulty: 2,
       question: "A plant grows three times taller each week: 4 cm, 12 cm, 36 cm, 108 cm. How tall will it be next week?",
-      options: ["216", "288", "324", "312", "360"],
-      correct: 2,
+      options: ["180", "108", "3", "432", "324"],
+      correct: 4,
       explanation: "This sequence multiplies by 3 each time. 108 × 3 = 324. ✓"
     },
     {
@@ -23985,8 +23985,8 @@ sequences: {
       id: 44,
       difficulty: 1,
       question: "A computer file is being compressed, halving each time: 512 KB, 256 KB, 128 KB, 64 KB, 32 KB. What size comes next?",
-      options: ["8", "12", "16", "20", "24"],
-      correct: 2,
+      options: ["8", "1", "32", "48", "16"],
+      correct: 4,
       explanation: "The file halves each time. 32 ÷ 2 = 16 KB. ✓"
     },
     {
@@ -24010,8 +24010,8 @@ sequences: {
       id: 47,
       difficulty: 2,
       question: "Seeds in a garden triple each week: 7, 21, 63, 189. How many seeds will there be next week?",
-      options: ["567", "441", "504", "378", "630"],
-      correct: 0,
+      options: ["3", "756", "567", "315", "189"],
+      correct: 2,
       explanation: "This sequence multiplies by 3 each time. 189 × 3 = 567. ✓"
     },
     {
@@ -24026,8 +24026,8 @@ sequences: {
       id: 49,
       difficulty: 2,
       question: "What comes next in this Fibonacci sequence? 2, 3, 5, 8, 13, ?",
-      options: ["18", "19", "21", "20", "22"],
-      correct: 2,
+      options: ["20", "13", "22", "26", "21"],
+      correct: 4,
       explanation: "Each term is the sum of the previous two. 8 + 13 = 21. ✓"
     },
     {
@@ -24050,8 +24050,8 @@ sequences: {
       id: 52,
       difficulty: 2,
       question: "A rumour spreads through a school, doubling each day: 10, 20, 40, 80, 160. How many people know after the next day?",
-      options: ["320", "280", "300", "240", "360"],
-      correct: 0,
+      options: ["2", "480", "320", "240", "160"],
+      correct: 2,
       explanation: "This sequence doubles each time. 160 × 2 = 320. ✓"
     },
     {
@@ -24066,16 +24066,16 @@ sequences: {
       id: 54,
       difficulty: 2,
       question: "A balloon loses half its air each hour: 400 ml, 200 ml, 100 ml, 50 ml, 25 ml. How much air is left after the next hour?",
-      options: ["10", "11.5", "12.5", "15", "20"],
-      correct: 2,
+      options: ["6.3", "0.5", "25.0", "37.5", "12.5"],
+      correct: 4,
       explanation: "This sequence halves each time. 25 ÷ 2 = 12.5. ✓"
     },
     {
       id: 55,
       difficulty: 2,
       question: "A colony of bacteria doubles every hour. It starts with 8 bacteria, then grows to 16, 32, 64, 128. How many bacteria will there be after the next hour?",
-      options: ["192", "224", "240", "256", "288"],
-      correct: 3,
+      options: ["256", "192", "128", "2", "384"],
+      correct: 0,
       explanation: "The bacteria double each hour. 128 × 2 = 256 bacteria. ✓"
     },
     {
@@ -24106,8 +24106,8 @@ sequences: {
       id: 59,
       difficulty: 2,
       question: "A science experiment triples a bacteria count each hour: 9, 27, 81, 243. What is the count after the next hour?",
-      options: ["486", "648", "729", "810", "891"],
-      correct: 2,
+      options: ["405", "243", "972", "2187", "729"],
+      correct: 4,
       explanation: "This sequence multiplies by 3 each time. 243 × 3 = 729. ✓"
     },
     {
@@ -24130,8 +24130,8 @@ sequences: {
       id: 62,
       difficulty: 1,
       question: "A computer file is being compressed, halving each time: 1024 KB, 512 KB, 256 KB, 128 KB, 64 KB. What size comes next?",
-      options: ["32", "24", "16", "40", "48"],
-      correct: 0,
+      options: ["64", "96", "32", "16", "1"],
+      correct: 2,
       explanation: "This sequence halves each time. 64 ÷ 2 = 32. ✓"
     },
     {
@@ -24162,8 +24162,8 @@ sequences: {
       id: 66,
       difficulty: 2,
       question: "What comes next in this Fibonacci sequence? 3, 5, 8, 13, 21, ?",
-      options: ["29", "31", "33", "35", "34"],
-      correct: 4,
+      options: ["35", "34", "33", "21", "13"],
+      correct: 1,
       explanation: "Each term is the sum of the previous two. 13 + 21 = 34. ✓"
     },
     {
@@ -24178,8 +24178,8 @@ sequences: {
       id: 68,
       difficulty: 2,
       question: "A science experiment triples bacteria each hour: 11, 33, 99, 297. How many bacteria are there after the next hour?",
-      options: ["594", "891", "792", "990", "1089"],
-      correct: 1,
+      options: ["297", "3", "1188", "891", "495"],
+      correct: 3,
       explanation: "This sequence multiplies by 3 each time. 297 × 3 = 891. ✓"
     },
     {
@@ -24194,8 +24194,8 @@ sequences: {
       id: 70,
       difficulty: 2,
       question: "A chain letter doubles each day: 14, 28, 56, 112, 224 people have received it. How many will have received it the next day?",
-      options: ["336", "392", "420", "448", "476"],
-      correct: 3,
+      options: ["448", "336", "224", "672", "896"],
+      correct: 0,
       explanation: "This sequence doubles each time. 224 × 2 = 448. ✓"
     },
     {
@@ -24242,16 +24242,16 @@ sequences: {
       id: 76,
       difficulty: 1,
       question: "A bouncy ball loses half its height with each bounce: 800 cm, 400 cm, 200 cm, 100 cm, 50 cm. How high does it bounce next?",
-      options: ["20", "22.5", "30", "27.5", "25"],
-      correct: 4,
+      options: ["75", "25", "13", "1", "50"],
+      correct: 1,
       explanation: "This sequence halves each time. 50 ÷ 2 = 25. ✓"
     },
     {
       id: 77,
       difficulty: 2,
       question: "What is the next term? 13, 39, 117, 351, ?",
-      options: ["1053", "936", "702", "1170", "1287"],
-      correct: 0,
+      options: ["3", "1404", "1053", "585", "351"],
+      correct: 2,
       explanation: "This sequence multiplies by 3 each time. 351 × 3 = 1053. ✓"
     },
     {
@@ -24282,8 +24282,8 @@ sequences: {
       id: 81,
       difficulty: 2,
       question: "A colony of ants doubles each week: 16, 32, 64, 128, 256. How many ants will there be the next week?",
-      options: ["384", "448", "480", "544", "512"],
-      correct: 4,
+      options: ["768", "512", "384", "256", "2"],
+      correct: 1,
       explanation: "This sequence doubles each time. 256 × 2 = 512. ✓"
     },
     {
@@ -24314,8 +24314,8 @@ sequences: {
       id: 85,
       difficulty: 2,
       question: "What comes next in this Fibonacci sequence? 5, 8, 13, 21, 34, ?",
-      options: ["47", "51", "53", "55", "57"],
-      correct: 3,
+      options: ["55", "54", "34", "56", "68"],
+      correct: 0,
       explanation: "Each term is the sum of the previous two. 21 + 34 = 55. ✓"
     },
     {
@@ -24338,8 +24338,8 @@ sequences: {
       id: 88,
       difficulty: 2,
       question: "What is the next term? 18, 54, 162, 486, ?",
-      options: ["972", "1458", "1296", "1620", "1782"],
-      correct: 1,
+      options: ["486", "3", "1944", "1458", "810"],
+      correct: 3,
       explanation: "This sequence multiplies by 3 each time. 486 × 3 = 1458. ✓"
     },
     {
@@ -24370,8 +24370,8 @@ sequences: {
       id: 92,
       difficulty: 1,
       question: "What comes next? 1600, 800, 400, 200, 100, ?",
-      options: ["50", "45", "40", "55", "60"],
-      correct: 0,
+      options: ["100", "150", "50", "25", "1"],
+      correct: 2,
       explanation: "This sequence halves each time. 100 ÷ 2 = 50. ✓"
     },
     {
@@ -24426,8 +24426,8 @@ sequences: {
       id: 99,
       difficulty: 2,
       question: "What comes next? 20, 60, 180, 540, ?",
-      options: ["1080", "1440", "1620", "1800", "1980"],
-      correct: 2,
+      options: ["900", "540", "3", "2160", "1620"],
+      correct: 4,
       explanation: "This sequence multiplies by 3 each time. 540 × 3 = 1620. ✓"
     },
     {
@@ -24458,8 +24458,8 @@ sequences: {
       id: 103,
       difficulty: 2,
       question: "What comes next in this Fibonacci sequence? 8, 13, 21, 34, 55, ?",
-      options: ["76", "89", "84", "81", "92"],
-      correct: 1,
+      options: ["55", "90", "110", "89", "88"],
+      correct: 3,
       explanation: "Each term is the sum of the previous two. 34 + 55 = 89. ✓"
     },
     {
@@ -24474,16 +24474,16 @@ sequences: {
       id: 105,
       difficulty: 1,
       question: "What comes next? 3200, 1600, 800, 400, 200, ?",
-      options: ["80", "90", "110", "100", "120"],
-      correct: 3,
+      options: ["100", "50", "1", "200", "300"],
+      correct: 0,
       explanation: "This sequence halves each time. 200 ÷ 2 = 100. ✓"
     },
     {
       id: 106,
       difficulty: 2,
       question: "What is the next term? 25, 75, 225, 675, ?",
-      options: ["1350", "1800", "2475", "2250", "2025"],
-      correct: 4,
+      options: ["2700", "2025", "1125", "675", "3"],
+      correct: 1,
       explanation: "This sequence multiplies by 3 each time. 675 × 3 = 2025. ✓"
     },
     {
@@ -24530,8 +24530,8 @@ sequences: {
       id: 112,
       difficulty: 2,
       question: "What is the next number? 32, 64, 128, 256, 512, ?",
-      options: ["1024", "896", "960", "768", "1088"],
-      correct: 0,
+      options: ["2", "1536", "1024", "768", "512"],
+      correct: 2,
       explanation: "This sequence doubles each time. 512 × 2 = 1024. ✓"
     },
     {
@@ -24578,24 +24578,24 @@ sequences: {
       id: 118,
       difficulty: 1,
       question: "What comes next? 6400, 3200, 1600, 800, 400, ?",
-      options: ["160", "200", "180", "220", "240"],
-      correct: 1,
+      options: ["1", "400", "600", "200", "100"],
+      correct: 3,
       explanation: "This sequence halves each time. 400 ÷ 2 = 200. ✓"
     },
     {
       id: 119,
       difficulty: 2,
       question: "What is the next term? 30, 90, 270, 810, ?",
-      options: ["1620", "2160", "2430", "2700", "2970"],
-      correct: 2,
+      options: ["1350", "810", "3", "3240", "2430"],
+      correct: 4,
       explanation: "This sequence multiplies by 3 each time. 810 × 3 = 2430. ✓"
     },
     {
       id: 120,
       difficulty: 2,
       question: "What comes next in this Fibonacci sequence? 13, 21, 34, 55, 89, ?",
-      options: ["121", "132", "138", "144", "150"],
-      correct: 3,
+      options: ["144", "143", "89", "145", "178"],
+      correct: 0,
       explanation: "Each term is the sum of the previous two. 55 + 89 = 144. ✓"
     },
     {
@@ -24930,8 +24930,8 @@ sequences: {
       id: 160,
       difficulty: 1,
       question: "What is the 6th term of the sequence: 2, 5, 8, 11, 14?",
-      options: ["15", "17", "18", "20", "24"],
-      correct: 1,
+      options: ["17", "14", "3", "18", "20"],
+      correct: 0,
       explanation: "The difference is +3. Continuing: 14 + 3 = 17. ✓"
     },
     {
@@ -24970,8 +24970,8 @@ sequences: {
       id: 165,
       difficulty: 2,
       question: "A sequence is: 1, 4, 9, 16, 25, ___. What is the next number?",
-      options: ["30", "32", "34", "36", "40"],
-      correct: 3,
+      options: ["36", "35", "37", "49", "50"],
+      correct: 0,
       explanation: "These are square numbers: 1², 2², 3², 4², 5². The next is 6² = 36. ✓"
     },
     {
@@ -24994,16 +24994,16 @@ sequences: {
       id: 168,
       difficulty: 2,
       question: "What is the 10th term of the sequence 4, 10, 16, 22, ...?",
-      options: ["52", "56", "58", "60", "64"],
-      correct: 2,
+      options: ["6", "60", "64", "58", "52"],
+      correct: 3,
       explanation: "The difference is +6 each time. The nth term is 6n - 2. When n = 10: 6 × 10 - 2 = 58. ✓"
     },
     {
       id: 169,
       difficulty: 2,
       question: "The sequence 5, 9, 13, 17, 21 follows the rule 4n + 1. What is the 12th term?",
-      options: ["45", "48", "49", "50", "52"],
-      correct: 2,
+      options: ["48", "45", "4", "53", "49"],
+      correct: 4,
       explanation: "Substitute n = 12: 4 × 12 + 1 = 48 + 1 = 49. ✓"
     },
     {
@@ -25018,8 +25018,8 @@ sequences: {
       id: 171,
       difficulty: 2,
       question: "What is the next number in: 3, 6, 12, 24, 48, ___?",
-      options: ["72", "84", "96", "108", "120"],
-      correct: 2,
+      options: ["144", "96", "72", "48", "2"],
+      correct: 1,
       explanation: "Each number is doubled (multiplied by 2). 48 × 2 = 96. ✓"
     },
     {
@@ -25106,7 +25106,7 @@ sequences: {
       id: 182,
       difficulty: 3,
       question: "In the Fibonacci sequence 1, 1, 2, 3, 5, 8, 13, 21, what is the next number?",
-      options: ["29", "33", "34", "35", "36"],
+      options: ["13", "35", "34", "33", "21"],
       correct: 2,
       explanation: "Each term is the sum of the previous two. 13 + 21 = 34. ✓"
     }
@@ -25143,7 +25143,7 @@ datahandling: {
       id: 4,
       difficulty: 1,
       question: "Jake measures heights: 140cm, 155cm, 148cm, 162cm, 145cm. What is the range?",
-      options: ["15cm", "18cm", "20cm", "25cm", "22cm"],
+      options: ["21cm", "11cm", "23cm", "140cm", "22cm"],
       correct: 4,
       explanation: "Range = highest value - lowest value. Range = 162 - 140 = 22cm. ✓"
     },
@@ -25216,7 +25216,7 @@ datahandling: {
       id: 11,
       difficulty: 1,
       question: "Charlie scores: 15, 18, 12, 20, 15. What is the range?",
-      options: ["5", "8", "7", "6", "9"],
+      options: ["20", "8", "7", "9", "12"],
       correct: 1,
       explanation: "Range = highest - lowest = 20 - 12 = 8. ✓"
     },
@@ -25305,7 +25305,7 @@ datahandling: {
       id: 20,
       difficulty: 3,
       question: "Ella has scores: 7, 8, 9, ?, 11. If the mean is 9, what is the missing score?",
-      options: ["10", "9", "8", "11", "12"],
+      options: ["10", "9", "1", "12", "35"],
       correct: 0,
       explanation: "If the mean is 9 and there are 5 numbers, the total sum must be 9 × 5 = 45. The four known numbers add up to 7 + 8 + 9 + 11 = 35. So the missing score = 45 - 35 = 10. ✓"
     },
@@ -25395,7 +25395,7 @@ datahandling: {
       id: 29,
       difficulty: 1,
       question: "What is the range? 25, 38, 42, 31, 29",
-      options: ["13", "25", "19", "21", "17"],
+      options: ["18", "25", "42", "67", "17"],
       correct: 4,
       explanation: "Range = highest - lowest = 42 - 25 = 17. ✓"
     },
@@ -25419,7 +25419,7 @@ datahandling: {
       id: 32,
       difficulty: 1,
       question: "What is the range? 18, 32, 45, 28, 19",
-      options: ["14", "24", "27", "26", "32"],
+      options: ["45", "63", "27", "26", "28"],
       correct: 2,
       explanation: "Range = 45 - 18 = 27. ✓"
     },
@@ -25490,7 +25490,7 @@ datahandling: {
       id: 39,
       difficulty: 1,
       question: "What is the range? 52, 68, 45, 79, 61",
-      options: ["24", "29", "32", "37", "34"],
+      options: ["35", "45", "79", "124", "34"],
       correct: 4,
       explanation: "Range = 79 - 45 = 34. ✓"
     },
@@ -25540,7 +25540,7 @@ datahandling: {
       id: 45,
       difficulty: 1,
       question: "What is the range? 35, 48, 62, 41, 54",
-      options: ["27", "23", "19", "31", "35"],
+      options: ["27", "26", "28", "35", "62"],
       correct: 0,
       explanation: "Range = 62 - 35 = 27. ✓"
     },
@@ -25589,7 +25589,7 @@ datahandling: {
       id: 51,
       difficulty: 1,
       question: "What is the range? 24, 37, 51, 29, 44",
-      options: ["20", "27", "24", "30", "33"],
+      options: ["51", "27", "26", "24", "28"],
       correct: 1,
       explanation: "Range = 51 - 24 = 27. ✓"
     },
@@ -25661,7 +25661,7 @@ datahandling: {
       id: 58,
       difficulty: 1,
       question: "What is the range? 66, 82, 58, 91, 74",
-      options: ["25", "29", "37", "33", "41"],
+      options: ["58", "91", "149", "33", "34"],
       correct: 3,
       explanation: "Range = 91 - 58 = 33. ✓"
     },
@@ -25711,7 +25711,7 @@ datahandling: {
       id: 64,
       difficulty: 1,
       question: "What is the range? 39, 56, 47, 68, 52",
-      options: ["21", "25", "37", "33", "29"],
+      options: ["28", "30", "39", "68", "29"],
       correct: 4,
       explanation: "Range = 68 - 39 = 29. ✓"
     },
@@ -25776,7 +25776,7 @@ datahandling: {
       id: 70,
       difficulty: 1,
       question: "What is the range? 43, 59, 38, 72, 55",
-      options: ["34", "31", "29", "37", "40"],
+      options: ["34", "33", "17", "35", "38"],
       correct: 0,
       explanation: "Range = 72 - 38 = 34. ✓"
     },
@@ -25826,7 +25826,7 @@ datahandling: {
       id: 76,
       difficulty: 1,
       question: "What is the range? 57, 74, 49, 86, 63",
-      options: ["29", "37", "33", "41", "45"],
+      options: ["135", "37", "38", "49", "86"],
       correct: 1,
       explanation: "Range = 86 - 49 = 37. ✓"
     },
@@ -25875,7 +25875,7 @@ datahandling: {
       id: 82,
       difficulty: 1,
       question: "What is the range? 48, 67, 42, 79, 56",
-      options: ["31", "35", "37", "41", "45"],
+      options: ["42", "79", "37", "36", "38"],
       correct: 2,
       explanation: "Range = 79 - 42 = 37. ✓"
     },
@@ -25940,7 +25940,7 @@ datahandling: {
       id: 88,
       difficulty: 1,
       question: "What is the range? 52, 71, 45, 84, 59",
-      options: ["32", "36", "43", "39", "47"],
+      options: ["45", "84", "129", "39", "40"],
       correct: 3,
       explanation: "Range = 84 - 45 = 39. ✓"
     },
@@ -25989,7 +25989,7 @@ datahandling: {
       id: 94,
       difficulty: 1,
       question: "What is the range? 61, 78, 54, 92, 69",
-      options: ["31", "35", "46", "42", "38"],
+      options: ["37", "19", "39", "54", "38"],
       correct: 4,
       explanation: "Range = 92 - 54 = 38. ✓"
     },
@@ -26054,7 +26054,7 @@ datahandling: {
       id: 100,
       difficulty: 1,
       question: "What is the range? 56, 75, 49, 88, 63",
-      options: ["39", "36", "32", "43", "47"],
+      options: ["39", "38", "40", "49", "88"],
       correct: 0,
       explanation: "Range = 88 - 49 = 39. ✓"
     },
@@ -26103,7 +26103,7 @@ datahandling: {
       id: 106,
       difficulty: 1,
       question: "What is the range? 64, 83, 57, 96, 71",
-      options: ["32", "39", "36", "43", "47"],
+      options: ["153", "39", "40", "57", "96"],
       correct: 1,
       explanation: "Range = 96 - 57 = 39. ✓"
     },
@@ -26153,7 +26153,7 @@ datahandling: {
       id: 112,
       difficulty: 1,
       question: "What is the range? 68, 87, 61, 100, 75",
-      options: ["32", "36", "39", "43", "47"],
+      options: ["61", "100", "39", "38", "40"],
       correct: 2,
       explanation: "Range = 100 - 61 = 39. ✓"
     },
@@ -26217,7 +26217,7 @@ datahandling: {
       id: 118,
       difficulty: 1,
       question: "What is the range? 72, 91, 65, 104, 79",
-      options: ["32", "36", "43", "39", "47"],
+      options: ["65", "104", "169", "39", "40"],
       correct: 3,
       explanation: "Range = 104 - 65 = 39. ✓"
     },
@@ -26267,7 +26267,7 @@ datahandling: {
       id: 124,
       difficulty: 1,
       question: "What is the range? 76, 95, 69, 108, 83",
-      options: ["32", "36", "47", "43", "39"],
+      options: ["38", "40", "69", "108", "39"],
       correct: 4,
       explanation: "Range = 108 - 69 = 39. ✓"
     },
@@ -26331,7 +26331,7 @@ datahandling: {
       id: 132,
       difficulty: 2,
       question: "Six children measured their heights: 132 cm, 145 cm, 128 cm, 151 cm, 139 cm, 147 cm. What is the median height?",
-      options: ["139 cm", "140 cm", "142 cm", "145 cm", "147 cm"],
+      options: ["143 cm", "151 cm", "142 cm", "141 cm", "140 cm"],
       correct: 2,
       explanation: "First, order the heights: 128, 132, 139, 145, 147, 151. With 6 values, the median is the mean of the 3rd and 4th values. Median = (139 + 145) ÷ 2 = 284 ÷ 2 = 142 cm. ✓"
     },
@@ -27623,7 +27623,7 @@ datahandling: {
       id: 200,
       difficulty: 3,
       question: "Six children scored these marks in a test: 12, 18, 25, 36, ?, 49. The range is 37. After removing the highest score, the range decreases by 7. What is the missing score?",
-      options: ["42", "40", "38", "44", "46"],
+      options: ["42", "41", "21", "7", "43"],
       correct: 0,
       explanation: "Original range = 49 − 12 = 37 ✓. After removing the highest score (49), the new range = 37 − 7 = 30. The lowest is still 12, so the new highest must be 12 + 30 = 42. The missing score is 42. Check: without 49, the data is 12, 18, 25, 36, 42 and the range = 42 − 12 = 30 ✓. ✓"
     },
@@ -27811,8 +27811,8 @@ speeddistancetime: {
       id: 1,
       difficulty: 1,
       question: "Emma drives 150 km in 3 hours. What is her average speed?",
-      options: ["45 km/h", "60 km/h", "55 km/h", "50 km/h", "65 km/h"],
-      correct: 3,
+      options: ["150 km/h", "50 km/h", "45 km/h", "1 km/h", "55 km/h"],
+      correct: 1,
       explanation: "Speed = Distance ÷ Time. Speed = 150 ÷ 3 = 50 km/h. ✓"
     },
     {
@@ -27835,8 +27835,8 @@ speeddistancetime: {
       id: 4,
       difficulty: 2,
       question: "Jake cycles 12 km in 20 minutes. What is his speed in km/h?",
-      options: ["30 km/h", "36 km/h", "34 km/h", "32 km/h", "38 km/h"],
-      correct: 1,
+      options: ["31 km/h", "12 km/h", "4 km/h", "41 km/h", "36 km/h"],
+      correct: 4,
       explanation: "First convert 20 minutes to hours: 20 ÷ 60 = 1/3 hour. Speed = 12 ÷ 1/3 = 12 × 3 = 36 km/h. ✓"
     },
     {
@@ -27851,8 +27851,8 @@ speeddistancetime: {
       id: 6,
       difficulty: 3,
       question: "Ben drives 60 km in 1 hour on the motorway, then 120 km in 3 hours through country roads. What is his average speed for the whole journey?",
-      options: ["45 km/h", "50 km/h", "48 km/h", "42 km/h", "55 km/h"],
-      correct: 0,
+      options: ["180 km/h", "45 km/h", "40 km/h", "50 km/h", "60 km/h"],
+      correct: 1,
       explanation: "Total distance = 60 + 120 = 180 km. Total time = 1 + 3 = 4 hours. Average speed = 180 ÷ 4 = 45 km/h. Don't just average the two speeds (60 + 40) ÷ 2 = 50 — that's a common trap! Always use total distance ÷ total time. ✓"
     },
     {
@@ -27883,8 +27883,8 @@ speeddistancetime: {
       id: 10,
       difficulty: 2,
       question: "Charlie drives 20 km in 30 minutes. What is his speed in km/h?",
-      options: ["35 km/h", "38 km/h", "40 km/h", "42 km/h", "45 km/h"],
-      correct: 2,
+      options: ["40 km/h", "35 km/h", "20 km/h", "10 km/h", "1 km/h"],
+      correct: 0,
       explanation: "Convert 30 minutes to hours: 30 ÷ 60 = 0.5 hours. Speed = Distance ÷ Time = 20 ÷ 0.5 = 40 km/h. ✓"
     },
     {
@@ -27915,8 +27915,8 @@ speeddistancetime: {
       id: 14,
       difficulty: 2,
       question: "Ella drives 90 km in 2 hours, then 60 km in 1 hour. What is her average speed?",
-      options: ["45 km/h", "50 km/h", "52 km/h", "55 km/h", "60 km/h"],
-      correct: 1,
+      options: ["45 km/h", "53 km/h", "60 km/h", "150 km/h", "50 km/h"],
+      correct: 4,
       explanation: "Total distance = 90 + 60 = 150 km. Total time = 2 + 1 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. Don't average the speeds (45 + 60) ÷ 2 = 52.5 — that gives the wrong answer! ✓"
     },
     {
@@ -27931,8 +27931,8 @@ speeddistancetime: {
       id: 16,
       difficulty: 1,
       question: "A family drives 180 km to the seaside in 4 hours. What is their average speed?",
-      options: ["60 km/h", "50 km/h", "55 km/h", "45 km/h", "65 km/h"],
-      correct: 3,
+      options: ["180 km/h", "45 km/h", "40 km/h", "1 km/h", "50 km/h"],
+      correct: 1,
       explanation: "Speed = Distance ÷ Time = 180 ÷ 4 = 45 km/h. ✓"
     },
     {
@@ -27955,8 +27955,8 @@ speeddistancetime: {
       id: 19,
       difficulty: 2,
       question: "A cyclist covers 18 km in 30 minutes. What is the speed in km/h?",
-      options: ["32 km/h", "36 km/h", "40 km/h", "44 km/h", "48 km/h"],
-      correct: 1,
+      options: ["31 km/h", "18 km/h", "9 km/h", "41 km/h", "36 km/h"],
+      correct: 4,
       explanation: "First convert 30 minutes to hours: 30 ÷ 60 = 0.5 hours. Speed = 18 ÷ 0.5 = 36 km/h. Remember: 30 minutes = 0.5 hours, not 0.3 — time uses base 60, not base 10! ✓"
     },
     {
@@ -27987,8 +27987,8 @@ speeddistancetime: {
       id: 23,
       difficulty: 2,
       question: "A driver covers 90 km in 1 hour on the dual carriageway, then 60 km in 2 hours in traffic. What is the average speed?",
-      options: ["50 km/h", "60 km/h", "55 km/h", "45 km/h", "65 km/h"],
-      correct: 0,
+      options: ["60 km/h", "90 km/h", "150 km/h", "50 km/h", "30 km/h"],
+      correct: 3,
       explanation: "Total distance = 90 + 60 = 150 km. Total time = 1 + 2 = 3 hours. Average speed = 150 ÷ 3 = 50 km/h. Don't average the two speeds (90 + 30) ÷ 2 = 60 — that only works when you spend equal time at each speed. ✓"
     },
     {
@@ -28011,8 +28011,8 @@ speeddistancetime: {
       id: 26,
       difficulty: 1,
       question: "A delivery van covers 210 km in 3 hours. What is its speed?",
-      options: ["65 km/h", "68 km/h", "72 km/h", "70 km/h", "75 km/h"],
-      correct: 3,
+      options: ["210 km/h", "70 km/h", "65 km/h", "1 km/h", "75 km/h"],
+      correct: 1,
       explanation: "Speed = 210 ÷ 3 = 70 km/h. ✓"
     },
     {
@@ -28035,8 +28035,8 @@ speeddistancetime: {
       id: 29,
       difficulty: 2,
       question: "A cyclist covers 24 km in 40 minutes. What is the speed in km/h?",
-      options: ["32 km/h", "36 km/h", "34 km/h", "38 km/h", "40 km/h"],
-      correct: 1,
+      options: ["31 km/h", "24 km/h", "16 km/h", "1 km/h", "36 km/h"],
+      correct: 4,
       explanation: "40 min = 40/60 = 2/3 hour. Speed = 24 ÷ 2/3 = 24 × 3/2 = 36 km/h. ✓"
     },
     {
@@ -28067,8 +28067,8 @@ speeddistancetime: {
       id: 33,
       difficulty: 3,
       question: "A car drives 100 km in 1 hour on the A-road, then 80 km in 2 hours through town. What is the average speed?",
-      options: ["60 km/h", "70 km/h", "65 km/h", "55 km/h", "75 km/h"],
-      correct: 0,
+      options: ["70 km/h", "100 km/h", "180 km/h", "60 km/h", "40 km/h"],
+      correct: 3,
       explanation: "Total distance = 100 + 80 = 180 km. Total time = 1 + 2 = 3 hours. Average = 180 ÷ 3 = 60 km/h. The trap answer (100 + 40) ÷ 2 = 70 is wrong because you spent longer at the slower speed. ✓"
     },
     {
@@ -28091,8 +28091,8 @@ speeddistancetime: {
       id: 36,
       difficulty: 2,
       question: "A coach must cover 270 km in 4.5 hours to arrive on time. What speed does it need to average?",
-      options: ["55 km/h", "58 km/h", "62 km/h", "60 km/h", "65 km/h"],
-      correct: 3,
+      options: ["270 km/h", "60 km/h", "55 km/h", "1 km/h", "65 km/h"],
+      correct: 1,
       explanation: "Speed = 270 ÷ 4.5 = 60 km/h. ✓"
     },
     {
@@ -28115,8 +28115,8 @@ speeddistancetime: {
       id: 39,
       difficulty: 3,
       question: "A car covers 30 km in 25 minutes. What is the speed in km/h?",
-      options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
-      correct: 1,
+      options: ["67 km/h", "30 km/h", "13 km/h", "77 km/h", "72 km/h"],
+      correct: 4,
       explanation: "25 min = 25/60 = 5/12 hours. Speed = 30 ÷ (5/12) = 30 × 12/5 = 72 km/h. This is tricky because 25 minutes doesn't convert to a simple decimal — you need to work with fractions. ✓"
     },
     {
@@ -28171,8 +28171,8 @@ speeddistancetime: {
       id: 46,
       difficulty: 1,
       question: "A rescue helicopter flies 280 km to reach an island in 4 hours. What speed does it fly at?",
-      options: ["65 km/h", "68 km/h", "72 km/h", "70 km/h", "75 km/h"],
-      correct: 3,
+      options: ["280 km/h", "70 km/h", "65 km/h", "1 km/h", "75 km/h"],
+      correct: 1,
       explanation: "Speed = distance ÷ time = 280 ÷ 4 = 70 km/h. ✓"
     },
     {
@@ -28195,8 +28195,8 @@ speeddistancetime: {
       id: 49,
       difficulty: 2,
       question: "A motorbike zips along a coastal road, covering 36 km in 20 minutes. Speed in km/h?",
-      options: ["96 km/h", "108 km/h", "104 km/h", "100 km/h", "112 km/h"],
-      correct: 1,
+      options: ["103 km/h", "36 km/h", "12 km/h", "2 km/h", "108 km/h"],
+      correct: 4,
       explanation: "20 min = 1/3 hour. Speed = 36 \u00f7 (1/3) = 108 km/h. \u2713"
     },
     {
@@ -28251,16 +28251,16 @@ speeddistancetime: {
       id: 56,
       difficulty: 2,
       question: "A taxi needs to reach the airport 396 km away in 5.5 hours. What speed must the driver average?",
-      options: ["68 km/h", "70 km/h", "74 km/h", "72 km/h", "76 km/h"],
-      correct: 3,
+      options: ["396 km/h", "72 km/h", "67 km/h", "1 km/h", "77 km/h"],
+      correct: 1,
       explanation: "Speed = 396 \u00f7 5.5 = 72 km/h. \u2713"
     },
     {
       id: 57,
       difficulty: 2,
       question: "A delivery driver covers 145 km between Bournemouth and Bristol in 2.5 hours. What was her average speed?",
-      options: ["52 km/h", "54 km/h", "56 km/h", "60 km/h", "58 km/h"],
-      correct: 4,
+      options: ["145 km/h", "363 km/h", "58 km/h", "53 km/h", "63 km/h"],
+      correct: 2,
       explanation: "Speed = distance ÷ time = 145 ÷ 2.5 = 58 km/h. ✓"
     },
     {
@@ -28275,8 +28275,8 @@ speeddistancetime: {
       id: 59,
       difficulty: 3,
       question: "A speedboat races across the bay, covering 42 km in 35 minutes. Speed in km/h?",
-      options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
-      correct: 1,
+      options: ["67 km/h", "42 km/h", "25 km/h", "77 km/h", "72 km/h"],
+      correct: 4,
       explanation: "35 min = 7/12 hours. Speed = 42 \u00f7 (7/12) = 72 km/h. \u2713"
     },
     {
@@ -28331,8 +28331,8 @@ speeddistancetime: {
       id: 66,
       difficulty: 1,
       question: "A courier van must deliver a parcel 456 km away in exactly 6 hours. What speed is needed?",
-      options: ["72 km/h", "74 km/h", "78 km/h", "76 km/h", "80 km/h"],
-      correct: 3,
+      options: ["456 km/h", "76 km/h", "71 km/h", "1 km/h", "81 km/h"],
+      correct: 1,
       explanation: "Speed = 456 \u00f7 6 = 76 km/h. \u2713"
     },
     {
@@ -28355,8 +28355,8 @@ speeddistancetime: {
       id: 69,
       difficulty: 3,
       question: "A car drives along the A31 through the New Forest, covering 48 km in 40 minutes. Average speed?",
-      options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
-      correct: 1,
+      options: ["67 km/h", "48 km/h", "32 km/h", "1 km/h", "72 km/h"],
+      correct: 4,
       explanation: "40 min = 2/3 hour. Speed = 48 \u00f7 (2/3) = 72 km/h. \u2713"
     },
     {
@@ -28411,16 +28411,16 @@ speeddistancetime: {
       id: 76,
       difficulty: 1,
       question: "A relief lorry must reach a flooded village 480 km away in 6 hours. What speed is needed?",
-      options: ["75 km/h", "78 km/h", "82 km/h", "80 km/h", "85 km/h"],
-      correct: 3,
+      options: ["480 km/h", "80 km/h", "75 km/h", "1 km/h", "85 km/h"],
+      correct: 1,
       explanation: "Speed = distance ÷ time = 480 ÷ 6 = 80 km/h. ✓"
     },
     {
       id: 77,
       difficulty: 2,
       question: "During a charity bike ride, Maya cycles 77 km in 3.5 hours. What was her average speed?",
-      options: ["18 km/h", "20 km/h", "26 km/h", "24 km/h", "22 km/h"],
-      correct: 4,
+      options: ["77 km/h", "270 km/h", "22 km/h", "17 km/h", "27 km/h"],
+      correct: 2,
       explanation: "Speed = distance ÷ time = 77 ÷ 3.5 = 22 km/h. ✓"
     },
     {
@@ -28435,8 +28435,8 @@ speeddistancetime: {
       id: 79,
       difficulty: 2,
       question: "A bus travels 54 km from Poole to Dorchester in 45 minutes. Average speed?",
-      options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
-      correct: 1,
+      options: ["67 km/h", "54 km/h", "41 km/h", "77 km/h", "72 km/h"],
+      correct: 4,
       explanation: "45 min = 0.75 hours. Speed = 54 \u00f7 0.75 = 72 km/h. \u2713"
     },
     {
@@ -28491,8 +28491,8 @@ speeddistancetime: {
       id: 86,
       difficulty: 1,
       question: "An emergency plumber drives 360 km to reach a burst pipe in 6 hours. What is his average speed?",
-      options: ["55 km/h", "58 km/h", "62 km/h", "60 km/h", "65 km/h"],
-      correct: 3,
+      options: ["360 km/h", "60 km/h", "55 km/h", "1 km/h", "65 km/h"],
+      correct: 1,
       explanation: "Speed = distance ÷ time = 360 ÷ 6 = 60 km/h. ✓"
     },
     {
@@ -28515,8 +28515,8 @@ speeddistancetime: {
       id: 89,
       difficulty: 3,
       question: "A lorry covers 60 km on the motorway in 50 minutes before hitting roadworks. What was its speed?",
-      options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
-      correct: 1,
+      options: ["67 km/h", "60 km/h", "50 km/h", "1 km/h", "72 km/h"],
+      correct: 4,
       explanation: "50 min = 5/6 hours. Speed = 60 \u00f7 (5/6) = 72 km/h. \u2713"
     },
     {
@@ -28571,16 +28571,16 @@ speeddistancetime: {
       id: 96,
       difficulty: 1,
       question: "A pilot flies 450 km to a small airfield in 5 hours. What speed is needed?",
-      options: ["85 km/h", "88 km/h", "92 km/h", "90 km/h", "95 km/h"],
-      correct: 3,
+      options: ["450 km/h", "90 km/h", "85 km/h", "2 km/h", "95 km/h"],
+      correct: 1,
       explanation: "Speed = distance ÷ time = 450 ÷ 5 = 90 km/h. ✓"
     },
     {
       id: 97,
       difficulty: 2,
       question: "A school minibus drives 77 km from Poole to Salisbury in 1.75 hours. What was its average speed?",
-      options: ["40 km/h", "42 km/h", "48 km/h", "46 km/h", "44 km/h"],
-      correct: 4,
+      options: ["77 km/h", "135 km/h", "44 km/h", "39 km/h", "49 km/h"],
+      correct: 2,
       explanation: "Speed = distance ÷ time = 77 ÷ 1.75 = 44 km/h. ✓"
     },
     {
@@ -28595,8 +28595,8 @@ speeddistancetime: {
       id: 99,
       difficulty: 3,
       question: "A delivery van races 66 km through the countryside in 55 minutes. Speed in km/h?",
-      options: ["68 km/h", "72 km/h", "70 km/h", "74 km/h", "76 km/h"],
-      correct: 1,
+      options: ["67 km/h", "66 km/h", "61 km/h", "77 km/h", "72 km/h"],
+      correct: 4,
       explanation: "55 min = 11/12 hours. Speed = 66 \u00f7 (11/12) = 72 km/h. \u2713"
     },
     {
@@ -28651,8 +28651,8 @@ speeddistancetime: {
       id: 106,
       difficulty: 1,
       question: "A lorry driver drives 520 km to a warehouse in 8 hours. What is his average speed?",
-      options: ["60 km/h", "63 km/h", "67 km/h", "65 km/h", "70 km/h"],
-      correct: 3,
+      options: ["520 km/h", "65 km/h", "60 km/h", "1 km/h", "70 km/h"],
+      correct: 1,
       explanation: "Speed = distance ÷ time = 520 ÷ 8 = 65 km/h. ✓"
     },
     {

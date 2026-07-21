@@ -3,9 +3,11 @@
  *
  * DRY-RUN by default. For each verifiable question, regenerates misconception-based
  * distractors (Oracle catalogue) and reports before/after rank/ladder/length stats.
- * Writes NOTHING unless --apply (not yet implemented — proof phase).
+ * Writes NOTHING unless --apply. --apply does a surgical, all-or-nothing write-back of
+ * only the regenerated questions' options+correct fields, gated by a re-parse of the
+ * rewritten source (see applyEdits at the foot of this file).
  *
- * Usage: node scripts/data-generation/regenerate-distractors.mjs --topic <key|all> [--samples N]
+ * Usage: node scripts/data-generation/regenerate-distractors.mjs --topic <key|all> [--samples N] [--apply]
  *
  * ARCHITECTURE (topic-agnostic core + per-topic handlers):
  *  - core: verify-gate loop, greedy rank-balancing selector, plausibility guards,
@@ -27,21 +29,28 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(__dirname, '..', '..');
 const MATHS = path.join(REPO, 'src/questionData/mathsData.js');
+// --apply (full `--topic all` run) records exactly which question ids it auto-fixed, so
+// the Jest gate test can assert the fix over precisely those questions, and the authoring
+// wave knows which remain. Flagged questions = numeric-5-option Qs NOT in this manifest.
+const MANIFEST = path.join(REPO, 'scripts/data-generation/fix2-applied-manifest.json');
 
 const args = process.argv.slice(2);
 const argOpt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
 const TOPIC = argOpt('--topic', 'longdivision');
 const SAMPLES = parseInt(argOpt('--samples', '12'), 10);
+const APPLY = args.includes('--apply');
 
 // ── load bank ───────────────────────────────────────────────────────────────────
-function loadData(p) {
-  let txt = fs.readFileSync(p, 'utf8');
+// parseSource evals the module text (used both to load the file AND to re-validate the
+// rewritten source in memory before --apply writes it to disk).
+function parseSource(txt) {
   txt = txt.replace(/^\s*import[^\n]*\n/gm, '');
   txt = txt.replace(/export\s+default\s+(\w+)\s*;?/, 'module.exports = $1;');
   const mod = { exports: {} };
   new Function('module', 'exports', txt)(mod, mod.exports);
   return mod.exports;
 }
+function loadData(p) { return parseSource(fs.readFileSync(p, 'utf8')); }
 const data = loadData(MATHS);
 function collectTopic(node, key) {
   const topics = node.topics || node;
@@ -1916,6 +1925,7 @@ function runTopic(topicKey) {
   const after = { rank: [0, 0, 0, 0, 0], ladder: 0, n: 0, longest: 0, shortest: 0 };
   let nonNumeric = 0, unverified = 0, tooFew = 0, stuckMid = 0;
   const samples = [];
+  const edits = [];
   rankTally.fill(0);
 
   for (const q of questions) {
@@ -1939,6 +1949,7 @@ function runTopic(topicKey) {
     const order = [0, 1, 2, 3, 4].sort((a, b) => ((q.id * 31 + a) % 5) - ((q.id * 31 + b) % 5));
     const shuf = order.map(i => newStrs[i]);
     const newCorrect = order.indexOf(0);
+    edits.push({ id: q.id, oldOptions: q.options, oldCorrect: q.correct, newOptions: shuf, newCorrect });
     const vals = shuf.map(optNum);
     after.n++;
     const rk = rankOf(vals, C); after.rank[rk]++; if (rk === 2) stuckMid++;
@@ -1948,7 +1959,7 @@ function runTopic(topicKey) {
     if (cl < Math.min(...lens.filter((_, i) => i !== newCorrect))) after.shortest++;
     if (samples.length < SAMPLES) samples.push({ id: q.id, q: q.question.slice(0, 60), C, r: sel.targetRank, old: q.options, neu: shuf, m: sel.chosen.map(c => `${c.name}=${c.value}`) });
   }
-  return { topicKey, total: questions.length, before, after, nonNumeric, unverified, tooFew, stuckMid, samples, implemented: !!handler };
+  return { topicKey, total: questions.length, before, after, nonNumeric, unverified, tooFew, stuckMid, samples, edits, implemented: !!handler };
 }
 
 // ── report ──────────────────────────────────────────────────────────────────────
@@ -1969,8 +1980,102 @@ function report(res) {
   }
 }
 
+// ── APPLY: surgical write-back into mathsData.js ─────────────────────────────────
+// Only regenerated questions are touched; flagged ones stay byte-identical. Located by
+// topic-span + id (ids repeat across topics); each block is bounded by the NEXT id: so a
+// '}' inside a question string can't mislocate. Every edit must match the stored
+// options+correct (drift check); the fully-rewritten source must re-parse with unchanged
+// question counts and every edit confirmed present — else NOTHING is written. Git (clean
+// tree @ a known commit) is the external safety net.
+const serOpts = arr => '[' + arr.map(s => JSON.stringify(s)).join(', ') + ']';
+
+function applyEdits(editsByTopic) {
+  const src = fs.readFileSync(MATHS, 'utf8');
+  const keys = allTopicKeys(data);
+  const declOff = {};
+  for (const k of keys) {
+    const m = new RegExp('\\b' + k + ':\\s*\\{').exec(src);
+    if (!m) throw new Error(`APPLY ABORT: topic declaration not found for "${k}"`);
+    declOff[k] = m.index;
+  }
+  const sortedOff = Object.values(declOff).sort((a, b) => a - b);
+  const spanEnd = k => { const s = declOff[k]; const nx = sortedOff.find(o => o > s); return nx == null ? src.length : nx; };
+
+  const ranges = []; // absolute {from,to,text} replacements
+  let count = 0;
+  for (const [topicKey, edits] of Object.entries(editsByTopic)) {
+    const s0 = declOff[topicKey], s1 = spanEnd(topicKey);
+    const span = src.slice(s0, s1);
+    for (const e of edits) {
+      const idm = new RegExp(`\\n\\s*id:\\s*${e.id},`).exec(span);
+      if (!idm) throw new Error(`APPLY ABORT: ${topicKey} id ${e.id} not found in span`);
+      const objStart = s0 + idm.index;
+      // block ends at the NEXT question's id: (or the span end) — never at a '}', which
+      // could appear inside a question/explanation string.
+      const nextIdRe = /\n\s*id:\s*\d+,/g;
+      nextIdRe.lastIndex = idm.index + 1;
+      const nextm = nextIdRe.exec(span);
+      const block = src.slice(objStart, nextm ? s0 + nextm.index : s1);
+      // options + correct are each their own line — anchor on \n so prose can't match.
+      const om = /\n\s*options:\s*(\[[^\]]*\])/.exec(block);
+      if (!om) throw new Error(`APPLY ABORT: ${topicKey} id ${e.id} options literal not found`);
+      let curOpts;
+      try { curOpts = JSON.parse(om[1]); } catch { throw new Error(`APPLY ABORT: ${topicKey} id ${e.id} options not JSON-parseable`); }
+      if (JSON.stringify(curOpts) !== JSON.stringify(e.oldOptions))
+        throw new Error(`APPLY ABORT: ${topicKey} id ${e.id} options drift — source ${om[1]} != loaded ${serOpts(e.oldOptions)}`);
+      const cm = /\n\s*correct:\s*(\d+)/.exec(block);
+      if (!cm) throw new Error(`APPLY ABORT: ${topicKey} id ${e.id} correct literal not found`);
+      if (Number(cm[1]) !== e.oldCorrect)
+        throw new Error(`APPLY ABORT: ${topicKey} id ${e.id} correct drift — source ${cm[1]} != loaded ${e.oldCorrect}`);
+      const oFrom = objStart + om.index + om[0].indexOf(om[1]);
+      ranges.push({ from: oFrom, to: oFrom + om[1].length, text: serOpts(e.newOptions) });
+      const cFrom = objStart + cm.index + cm[0].indexOf(cm[1]);
+      ranges.push({ from: cFrom, to: cFrom + cm[1].length, text: String(e.newCorrect) });
+      count++;
+    }
+  }
+  // splice descending so earlier offsets stay valid; refuse overlapping ranges
+  ranges.sort((a, b) => b.from - a.from);
+  for (let i = 1; i < ranges.length; i++)
+    if (ranges[i].to > ranges[i - 1].from) throw new Error('APPLY ABORT: overlapping edit ranges');
+  let out = src;
+  for (const r of ranges) out = out.slice(0, r.from) + r.text + out.slice(r.to);
+
+  // GATE: rewritten source must re-parse, keep every topic's question count, and every
+  // edit must be present exactly as computed — validated in memory BEFORE touching disk.
+  let reparsed;
+  try { reparsed = parseSource(out); } catch (err) { throw new Error('APPLY ABORT: rewritten source failed to parse — ' + err.message); }
+  for (const k of keys) {
+    const a = collectTopic(data, k)?.length ?? -1;
+    const b = collectTopic(reparsed, k)?.length ?? -2;
+    if (a !== b) throw new Error(`APPLY ABORT: question count changed for ${k} (${a} -> ${b})`);
+  }
+  for (const [topicKey, edits] of Object.entries(editsByTopic)) {
+    const byId = new Map(collectTopic(reparsed, topicKey).map(q => [q.id, q]));
+    for (const e of edits) {
+      const q = byId.get(e.id);
+      if (!q || JSON.stringify(q.options) !== JSON.stringify(e.newOptions) || q.correct !== e.newCorrect)
+        throw new Error(`APPLY ABORT: post-write mismatch for ${topicKey} id ${e.id}`);
+    }
+  }
+  fs.writeFileSync(MATHS, out, 'utf8');
+  console.log(`\n✅ APPLIED ${count} question edits to ${path.relative(REPO, MATHS)} — re-parsed clean, counts unchanged.`);
+
+  // Manifest of auto-fixed ids — only on a full-bank apply (a single-topic apply must not
+  // clobber the whole-bank record). Consumed by the Jest gate test + authoring wave.
+  if (TOPIC === 'all') {
+    const manifest = {};
+    for (const [t, edits] of Object.entries(editsByTopic)) manifest[t] = edits.map(e => e.id).sort((a, b) => a - b);
+    fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+    console.log(`   wrote ${path.relative(REPO, MANIFEST)} (${count} ids across ${Object.keys(manifest).length} topics).`);
+  }
+}
+
 const topics = TOPIC === 'all' ? allTopicKeys(data) : [TOPIC];
-console.log(`FIX #2 DRY-RUN — ${topics.length} topic(s)`);
+console.log(`FIX #2 ${APPLY ? 'APPLY' : 'DRY-RUN'} — ${topics.length} topic(s)`);
 let sumTotal = 0, sumRegen = 0;
-for (const t of topics) { const r = runTopic(t); report(r); sumTotal += r.total; sumRegen += r.after.n; }
+const editsByTopic = {};
+for (const t of topics) { const r = runTopic(t); report(r); sumTotal += r.total; sumRegen += r.after.n; if (r.edits && r.edits.length) editsByTopic[t] = r.edits; }
 if (topics.length > 1) console.log(`\n== OVERALL auto-fix coverage: ${sumRegen}/${sumTotal} = ${pct(sumRegen, sumTotal)} (rest flagged for authoring wave) ==`);
+
+if (APPLY) applyEdits(editsByTopic);
