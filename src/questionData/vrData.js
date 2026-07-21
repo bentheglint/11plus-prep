@@ -14376,1153 +14376,1153 @@ const vrData = {
           id: 1,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word CAT?",
-          options: ["24","27","6","23","9"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out K − F and write your answer as a letter.",
+          options: ["E","C","D","F","Q"],
           correct: 0,
-          explanation: "C=3, A=1, T=20. Add them together: 3 + 1 + 20 = 24. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          explanation: "K = 11 and F = 6, so 11 − 6 = 5. The 5th letter is E. (Adding, K + F = 17 = Q, is the trap.) ✓"
         },
         {
           id: 2,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word BED?",
-          options: ["12","11","13","14","15"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out C + H and write your answer as a letter.",
+          options: ["E","K","I","J","L"],
           correct: 1,
-          explanation: "B=2, E=5, D=4. Total: 2 + 5 + 4 = 11. Tip: E=5 is an EJOTY anchor — use it to double-check nearby letters (D=4, F=6). ✓"
+          explanation: "C = 3 and H = 8, so 3 + 8 = 11. The 11th letter is K. (Subtracting, H − C = 5 = E, is the trap.) ✓"
         },
         {
           id: 3,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word AGE?",
-          options: ["12","14","13","15","16"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out M − D and write your answer as a letter.",
+          options: ["G","H","I","J","Q"],
           correct: 2,
-          explanation: "A=1, G=7, E=5. Total: 1 + 7 + 5 = 13. Tip: Double-check by adding the numbers in a different order. ✓"
+          explanation: "M = 13 and D = 4, so 13 − 4 = 9. The 9th letter is I. (Adding, M + D = 17 = Q, is the trap.) ✓"
         },
         {
           id: 4,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which of these words has the highest total value?",
-          options: ["DOG","HEN","APE","COW","FIG"],
-          correct: 3,
-          explanation: "FIG: F=6+I=9+G=7=22. HEN: H=8+E=5+N=14=27. APE: A=1+P=16+E=5=22. COW: C=3+O=15+W=23=41. DOG: D=4+O=15+G=7=26. COW has the highest value at 41. Tip: For comparison questions, estimate first — words with late-alphabet letters score higher. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + C × D and write your answer as a letter.",
+          options: ["M","K","L","N","P"],
+          correct: 0,
+          explanation: "BODMAS: multiply first, C × D = 3 × 4 = 12, then + 1 = 13. The 13th letter is M. (Left to right (1+3)×4 = 16 = P is the trap.) ✓"
         },
         {
           id: 5,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word ICE?",
-          options: ["16","19","15","18","17"],
-          correct: 4,
-          explanation: "I=9, C=3, E=5. Total: 9 + 3 + 5 = 17. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out G + M and write your answer as a letter.",
+          options: ["F","R","S","T","U"],
+          correct: 3,
+          explanation: "G = 7 and M = 13, so 7 + 13 = 20. The 20th letter is T. (Subtracting, M − G = 6 = F, is the trap.) ✓"
         },
         {
           id: 6,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=2, B=4, C=6, D=8, what does BAD = ?",
-          options: ["12","14","16","18","20"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + A × D and write your answer as a letter.",
+          options: ["D","F","E","G","L"],
           correct: 1,
-          explanation: "B=4, A=2, D=8. BAD = 4 + 2 + 8 = 14. Each letter equals its position doubled (A=2, B=4, C=6, D=8). Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          explanation: "BODMAS: multiply first, A × D = 1 × 4 = 4, then + 2 = 6. The 6th letter is F. (Left to right (2+1)×4 = 12 = L is the trap.) ✓"
         },
         {
           id: 7,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=3, B=5, C=7, what is the value of A + B + C?",
-          options: ["12","15","14","13","16"],
-          correct: 1,
-          explanation: "A=3, B=5, C=7. A + B + C = 3 + 5 + 7 = 15. Tip: When the values are given (not alphabet positions), re-read them carefully before adding. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + B × E and write your answer as a letter.",
+          options: ["I","J","K","L","O"],
+          correct: 2,
+          explanation: "BODMAS: multiply first, B × E = 2 × 5 = 10, then + 1 = 11. The 11th letter is K. (Left to right (1+2)×5 = 15 = O is the trap.) ✓"
         },
         {
           id: 8,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word DOG?",
-          options: ["24","25","26","27","28"],
-          correct: 2,
-          explanation: "D=4, O=15, G=7. Total: 4 + 15 + 7 = 26. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out P − B and write your answer as a letter.",
+          options: ["L","M","O","R","N"],
+          correct: 4,
+          explanation: "P = 16 and B = 2, so 16 − 2 = 14. The 14th letter is N. (Adding, P + B = 18 = R, is the trap.) ✓"
         },
         {
           id: 9,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word PIG?",
-          options: ["28","30","31","32","34"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + A × E and write your answer as a letter.",
+          options: ["E","F","H","G","O"],
           correct: 3,
-          explanation: "P=16, I=9, G=7. Total: 16 + 9 + 7 = 32. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          explanation: "BODMAS: multiply first, A × E = 1 × 5 = 5, then + 2 = 7. The 7th letter is G. (Left to right (2+1)×5 = 15 = O is the trap.) ✓"
         },
         {
           id: 10,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which of these words has the lowest total value?",
-          options: ["BID","BIG","BAG","BED","BAD"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + C × C and write your answer as a letter.",
+          options: ["H","I","K","L","J"],
           correct: 4,
-          explanation: "BAD: B=2+A=1+D=4=7. BIG: B=2+I=9+G=7=18. BAG: B=2+A=1+G=7=10. BED: B=2+E=5+D=4=11. BID: B=2+I=9+D=4=15. BAD has the lowest value at 7. Tip: All five words start with B, so compare the last two letters only — it saves time. ✓"
+          explanation: "BODMAS: multiply first, C × C = 3 × 3 = 9, then + 1 = 10. The 10th letter is J. (Left to right (1+3)×3 = 12 = L is the trap.) ✓"
         },
         {
           id: 11,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=5, B=10, C=15, what is the value of A + B − C?",
-          options: ["0","-5","5","10","15"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + E × C and write your answer as a letter.",
+          options: ["P","N","O","Q","R"],
           correct: 0,
-          explanation: "A=5, B=10, C=15. A + B − C = 5 + 10 − 15 = 0. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          explanation: "BODMAS: multiply first, E × C = 5 × 3 = 15, then + 1 = 16. The 16th letter is P. (Left to right (1+5)×3 = 18 = R is the trap.) ✓"
         },
         {
           id: 12,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=4, B=7, C=2, what is A × B − C?",
-          options: ["24","26","28","30","22"],
-          correct: 1,
-          explanation: "A=4, B=7, C=2. First multiply: A × B = 4 × 7 = 28. Then subtract: 28 − C = 28 − 2 = 26. Remember BODMAS — multiplication before subtraction. Tip: When a line mixes × with + or −, always do the × first — even if the − comes later. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (I ÷ F) × D and write your answer as a letter.",
+          options: ["F","D","E","G","H"],
+          correct: 0,
+          explanation: "Brackets first: 9 ÷ 6 = 1½. Then 1½ × 4 = 6 — the half clears. 6th letter = F. (Round down 1×4=4=D; round up 2×4=8=H.) ✓"
         },
         {
           id: 13,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word FACE?",
-          options: ["12","14","15","16","18"],
-          correct: 2,
-          explanation: "F=6, A=1, C=3, E=5. Total: 6 + 1 + 3 + 5 = 15. Tip: E=5 is an EJOTY anchor — use it to spot-check nearby letters quickly. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out D + O and write your answer as a letter.",
+          options: ["S","K","Q","R","T"],
+          correct: 0,
+          explanation: "D = 4 and O = 15, so 4 + 15 = 19. The 19th letter is S. (Subtracting, O − D = 11 = K, is the trap.) ✓"
         },
         {
           id: 14,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=3, B=6, C=9, what is the value of (B × C) ÷ A?",
-          options: ["12","15","21","18","24"],
-          correct: 3,
-          explanation: "B=6, C=9, A=3. First multiply: B × C = 6 × 9 = 54. Then divide: 54 ÷ A = 54 ÷ 3 = 18. Remember BODMAS — brackets and multiplication before division (left to right here). Tip: For × and ÷ on the same line, work strictly left to right. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (O ÷ F) × D + C and write your answer as a letter.",
+          options: ["J","M","K","L","O"],
+          correct: 1,
+          explanation: "Brackets first: 15 ÷ 6 = 2½. Then 2½ × 4 = 10 — the half clears — and 10 + 3 = 13. 13th letter = M. (Round down 2×4+3=11=K; round up 3×4+3=15=O; stop early at 10=J.) ✓"
         },
         {
           id: 15,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word SUN?",
-          options: ["54","48","56","50","52"],
-          correct: 0,
-          explanation: "S=19, U=21, N=14. Total: 19 + 21 + 14 = 54. Tip: Double-check by adding the numbers in a different order. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + F × C and write your answer as a letter.",
+          options: ["R","S","T","U","V"],
+          correct: 1,
+          explanation: "BODMAS: multiply first, F × C = 6 × 3 = 18, then + 1 = 19. The 19th letter is S. (Left to right (1+6)×3 = 21 = U is the trap.) ✓"
         },
         {
           id: 16,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word HAT?",
-          options: ["27","28","31","30","29"],
-          correct: 4,
-          explanation: "H=8, A=1, T=20. Total: 8 + 1 + 20 = 29. Tip: T=20 is an EJOTY anchor — lean on it for speed with nearby letters. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out Q − D and write your answer as a letter.",
+          options: ["K","M","L","N","U"],
+          correct: 1,
+          explanation: "Q = 17 and D = 4, so 17 − 4 = 13. The 13th letter is M. (Adding, Q + D = 21 = U, is the trap.) ✓"
         },
         {
           id: 17,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word CUP?",
-          options: ["38","40","36","42","44"],
-          correct: 1,
-          explanation: "C=3, U=21, P=16. Total: 3 + 21 + 16 = 40. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + G × C and write your answer as a letter.",
+          options: ["T","U","V","W","X"],
+          correct: 2,
+          explanation: "BODMAS: multiply first, G × C = 7 × 3 = 21, then + 1 = 22. The 22nd letter is V. (Left to right (1+7)×3 = 24 = X is the trap.) ✓"
         },
         {
           id: 18,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word BOX?",
-          options: ["39","43","41","37","45"],
-          correct: 2,
-          explanation: "B=2, O=15, X=24. Total: 2 + 15 + 24 = 41. Tip: O=15 is an EJOTY anchor — use it to pin down nearby letters (N=14, P=16). ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + E × C and write your answer as a letter.",
+          options: ["O","P","R","Q","U"],
+          correct: 3,
+          explanation: "BODMAS: multiply first, E × C = 5 × 3 = 15, then + 2 = 17. The 17th letter is Q. (Left to right (2+5)×3 = 21 = U is the trap.) ✓"
         },
         {
           id: 19,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word JAM?",
-          options: ["22","26","28","24","20"],
-          correct: 3,
-          explanation: "J=10, A=1, M=13. Total: 10 + 1 + 13 = 24. Tip: J=10 is an EJOTY anchor, and M sits at 13 — the middle of the alphabet. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out J + B and write your answer as a letter.",
+          options: ["H","K","L","M","N"],
+          correct: 2,
+          explanation: "J = 10 and B = 2, so 10 + 2 = 12. The 12th letter is L. (Subtracting, J − B = 8 = H, is the trap.) ✓"
         },
         {
           id: 20,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word FIG?",
-          options: ["26","24","20","18","22"],
-          correct: 4,
-          explanation: "F=6, I=9, G=7. Total: 6 + 9 + 7 = 22. Tip: Pair F+G (6+7=13) then add I=9 to reach 22 — pairing small values helps. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out S − C and write your answer as a letter.",
+          options: ["O","Q","R","P","V"],
+          correct: 3,
+          explanation: "S = 19 and C = 3, so 19 − 3 = 16. The 16th letter is P. (Adding, S + C = 22 = V, is the trap.) ✓"
         },
         {
           id: 21,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word PEN?",
-          options: ["35","33","37","31","39"],
-          correct: 0,
-          explanation: "P=16, E=5, N=14. Total: 16 + 5 + 14 = 35. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + P and write your answer as a letter.",
+          options: ["N","Q","S","T","R"],
+          correct: 4,
+          explanation: "B = 2 and P = 16, so 2 + 16 = 18. The 18th letter is R. (Subtracting, P − B = 14 = N, is the trap.) ✓"
         },
         {
           id: 22,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word FISH?",
-          options: ["40","42","38","44","46"],
-          correct: 1,
-          explanation: "F=6, I=9, S=19, H=8. Total: 6 + 9 + 19 + 8 = 42. Tip: Add in pairs that make round numbers — 6+8=14, 9+19=28, total 42. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out C + E × C and write your answer as a letter.",
+          options: ["O","Q","S","X","R"],
+          correct: 4,
+          explanation: "BODMAS: multiply first, E × C = 5 × 3 = 15, then + 3 = 18. The 18th letter is R. (Left to right (3+5)×3 = 24 = X is the trap.) ✓"
         },
         {
           id: 23,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word CAKE?",
-          options: ["18","22","20","24","16"],
-          correct: 2,
-          explanation: "C=3, A=1, K=11, E=5. Total: 3 + 1 + 11 + 5 = 20. Tip: Double-check by adding the numbers in a different order. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out F + G × B and write your answer as a letter.",
+          options: ["T","N","S","U","Z"],
+          correct: 0,
+          explanation: "BODMAS: multiply first, G × B = 7 × 2 = 14, then + 6 = 20. The 20th letter is T. (Left to right (6+7)×2 = 26 = Z is the trap.) ✓"
         },
         {
           id: 24,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word JUMP?",
-          options: ["64","62","56","60","58"],
-          correct: 3,
-          explanation: "J=10, U=21, M=13, P=16. Total: 10 + 21 + 13 + 16 = 60. Tip: J=10 is an EJOTY anchor — always a handy starting point. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + K × B and write your answer as a letter.",
+          options: ["U","W","V","X","Y"],
+          correct: 1,
+          explanation: "BODMAS: multiply first, K × B = 11 × 2 = 22, then + 1 = 23. The 23rd letter is W. (Left to right (1+11)×2 = 24 = X is the trap.) ✓"
         },
         {
           id: 25,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word KING?",
-          options: ["39","45","43","37","41"],
-          correct: 4,
-          explanation: "K=11, I=9, N=14, G=7. Total: 11 + 9 + 14 + 7 = 41. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + A × B and write your answer as a letter.",
+          options: ["A","B","C","D","E"],
+          correct: 2,
+          explanation: "BODMAS: multiply first, A × B = 1 × 2 = 2, then + 1 = 3. The 3rd letter is C. (Left to right (1+1)×2 = 4 = D is the trap.) ✓"
         },
         {
           id: 26,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word DRUM?",
-          options: ["56","58","52","60","54"],
-          correct: 0,
-          explanation: "D=4, R=18, U=21, M=13. Total: 4 + 18 + 21 + 13 = 56. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + B × B and write your answer as a letter.",
+          options: ["C","D","F","E","G"],
+          correct: 3,
+          explanation: "BODMAS: multiply first, B × B = 2 × 2 = 4, then + 1 = 5. The 5th letter is E. (Left to right (1+2)×2 = 6 = F is the trap.) ✓"
         },
         {
           id: 27,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word LIME?",
-          options: ["37","39","35","41","43"],
-          correct: 1,
-          explanation: "L=12, I=9, M=13, E=5. Total: 12 + 9 + 13 + 5 = 39. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + C × B and write your answer as a letter.",
+          options: ["F","G","I","J","H"],
+          correct: 4,
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then + 2 = 8. The 8th letter is H. (Left to right (2+3)×2 = 10 = J is the trap.) ✓"
         },
         {
           id: 28,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which of these words has the highest total value?",
-          options: ["BIKE","HIKE","PIKE","MIKE","LIKE"],
-          correct: 2,
-          explanation: "BIKE: 2+9+11+5=27. HIKE: 8+9+11+5=33. LIKE: 12+9+11+5=37. MIKE: 13+9+11+5=38. PIKE: 16+9+11+5=41. PIKE has the highest value at 41. Tip: All five words end in IKE — compare only the first letters to save time. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out C + C × B and write your answer as a letter.",
+          options: ["I","F","H","J","L"],
+          correct: 0,
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then + 3 = 9. The 9th letter is I. (Left to right (3+3)×2 = 12 = L is the trap.) ✓"
         },
         {
           id: 29,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which of these tree names has the lowest total value?",
-          options: ["FIR","ELM","ASH","OAK","YEW"],
-          correct: 3,
-          explanation: "OAK: 15+1+11=27. ELM: 5+12+13=30. ASH: 1+19+8=28. FIR: 6+9+18=33. YEW: 25+5+23=53. OAK has the lowest value at 27. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out C + F × B and write your answer as a letter.",
+          options: ["L","O","N","P","R"],
+          correct: 1,
+          explanation: "BODMAS: multiply first, F × B = 6 × 2 = 12, then + 3 = 15. The 15th letter is O. (Left to right (3+6)×2 = 18 = R is the trap.) ✓"
         },
         {
           id: 30,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word BRAVE?",
-          options: ["46","50","52","44","48"],
-          correct: 4,
-          explanation: "B=2, R=18, A=1, V=22, E=5. Total: 2 + 18 + 1 + 22 + 5 = 48. Tip: Late-alphabet letters (R, V) are the big hitters here — add those first to keep a running total. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (U ÷ F) × D + F and write your answer as a letter.",
+          options: ["N","R","T","S","V"],
+          correct: 2,
+          explanation: "Brackets first: 21 ÷ 6 = 3½. Then 3½ × 4 = 14 — the half clears — and 14 + 6 = 20. 20th letter = T. (Round down 3×4+6=18=R; round up 4×4+6=22=V; stop early at 14=N.) ✓"
         },
         {
           id: 31,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word LIGHT?",
-          options: ["54","56","58","52","60"],
-          correct: 1,
-          explanation: "L=12, I=9, G=7, H=8, T=20. Total: 12 + 9 + 7 + 8 + 20 = 56. Tip: Double-check by adding the numbers in a different order. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (J ÷ D) × F − E and write your answer as a letter.",
+          options: ["G","I","M","J","O"],
+          correct: 3,
+          explanation: "Brackets first: 10 ÷ 4 = 2½. Then 2½ × 6 = 15 — the half clears — and 15 − 5 = 10. 10th letter = J. (Round down 2×6−5=7=G; round up 3×6−5=13=M; stop early at 15=O.) ✓"
         },
         {
           id: 32,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word STONE?",
-          options: ["73","75","71","69","77"],
-          correct: 0,
-          explanation: "S=19, T=20, O=15, N=14, E=5. Total: 19 + 20 + 15 + 14 + 5 = 73. Tip: Four EJOTY-neighbour letters here (S, T, O, E) — lean on the anchors to speed it up. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (N ÷ D) × F and write your answer as a letter.",
+          options: ["R","T","V","X","U"],
+          correct: 4,
+          explanation: "Brackets first: 14 ÷ 4 = 3½. Then 3½ × 6 = 21 — the half clears. 21st letter = U. (Round down 3×6=18=R; round up 4×6=24=X.) ✓"
         },
         {
           id: 33,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word CLOUD?",
-          options: ["53","57","55","51","59"],
-          correct: 2,
-          explanation: "C=3, L=12, O=15, U=21, D=4. Total: 3 + 12 + 15 + 21 + 4 = 55. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (R ÷ D) × B and write your answer as a letter.",
+          options: ["I","G","H","J","K"],
+          correct: 0,
+          explanation: "Brackets first: 18 ÷ 4 = 4½. Then 4½ × 2 = 9 — the half clears. 9th letter = I. (Round down 4×2=8=H; round up 5×2=10=J.) ✓"
         },
         {
           id: 34,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word RIVER?",
-          options: ["68","70","74","72","76"],
-          correct: 3,
-          explanation: "R=18, I=9, V=22, E=5, R=18. Total: 18 + 9 + 22 + 5 + 18 = 72. Tip: R appears twice — make sure you count it both times (a common trap with repeated letters). ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (V ÷ D) × B + C and write your answer as a letter.",
+          options: ["K","N","L","M","O"],
+          correct: 1,
+          explanation: "Brackets first: 22 ÷ 4 = 5½. Then 5½ × 2 = 11 — the half clears — and 11 + 3 = 14. 14th letter = N. (Round down 5×2+3=13=M; round up 6×2+3=15=O; stop early at 11=K.) ✓"
         },
         {
           id: 35,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which of these words has the highest total value?",
-          options: ["SPARK","BLAZE","FLAME","EMBER","LIGHT"],
-          correct: 0,
-          explanation: "FLAME: 6+12+1+13+5=37. BLAZE: 2+12+1+26+5=46. SPARK: 19+16+1+18+11=65. EMBER: 5+13+2+5+18=43. LIGHT: 12+9+7+8+20=56. SPARK has the highest value at 65. Tip: Estimate first — words with late-alphabet letters (S, P, R) usually score highest. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (I ÷ F) × H and write your answer as a letter.",
+          options: ["H","K","L","M","P"],
+          correct: 2,
+          explanation: "Brackets first: 9 ÷ 6 = 1½. Then 1½ × 8 = 12 — the half clears. 12th letter = L. (Round down 1×8=8=H; round up 2×8=16=P.) ✓"
         },
         {
           id: 36,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word RUN?",
-          options: ["53","51","55","49","57"],
-          correct: 0,
-          explanation: "R=18, U=21, N=14. Total: 18 + 21 + 14 = 53. Tip: All three letters are past the midpoint — expect a total above 30. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + K × B and write your answer as a letter.",
+          options: ["V","W","X","Y","Z"],
+          correct: 2,
+          explanation: "BODMAS: multiply first, K × B = 11 × 2 = 22, then + 2 = 24. The 24th letter is X. (Left to right (2+11)×2 = 26 = Z is the trap.) ✓"
         },
         {
           id: 37,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word DEN?",
-          options: ["21","23","19","25","27"],
-          correct: 1,
-          explanation: "D=4, E=5, N=14. Total: 4 + 5 + 14 = 23. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick letter counting! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out P − I and write your answer as a letter.",
+          options: ["G","E","F","H","Y"],
+          correct: 0,
+          explanation: "P = 16 and I = 9, so 16 − 9 = 7. The 7th letter is G. (Adding, P + I = 25 = Y, is the trap.) ✓"
         },
         {
           id: 38,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word NEST?",
-          options: ["56","60","58","54","62"],
-          correct: 2,
-          explanation: "N=14, E=5, S=19, T=20. Total: 14 + 5 + 19 + 20 = 58. Tip: Add in pairs that make round numbers — 14+5=19, paired with 19+20=39, total 58. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out A + J × B and write your answer as a letter.",
+          options: ["S","T","V","U","W"],
+          correct: 3,
+          explanation: "BODMAS: multiply first, J × B = 10 × 2 = 20, then + 1 = 21. The 21st letter is U. (Left to right (1+10)×2 = 22 = V is the trap.) ✓"
         },
         {
           id: 39,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word WOLF?",
-          options: ["52","54","58","56","60"],
-          correct: 3,
-          explanation: "W=23, O=15, L=12, F=6. Total: 23 + 15 + 12 + 6 = 56. Tip: Double-check by adding the numbers in a different order. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out B + F × B and write your answer as a letter.",
+          options: ["L","M","O","P","N"],
+          correct: 4,
+          explanation: "BODMAS: multiply first, F × B = 6 × 2 = 12, then + 2 = 14. The 14th letter is N. (Left to right (2+6)×2 = 16 = P is the trap.) ✓"
         },
         {
           id: 40,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word QUEEN?",
-          options: ["66","64","58","60","62"],
-          correct: 4,
-          explanation: "Q=17, U=21, E=5, E=5, N=14. Total: 17 + 21 + 5 + 5 + 14 = 62. Tip: E appears twice — count both Es (a common letter-sum trap with double letters). ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (O ÷ F) × H − F and write your answer as a letter.",
+          options: ["J","P","R","N","T"],
+          correct: 3,
+          explanation: "Brackets first: 15 ÷ 6 = 2½. Then 2½ × 8 = 20 — the half clears — and 20 − 6 = 14. 14th letter = N. (Round down 2×8−6=10=J; round up 3×8−6=18=R; stop early at 20=T.) ✓"
         },
         {
           id: 41,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which of these words has the highest total value?",
-          options: ["NOTE","BITE","LATE","GATE","KITE"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out H − C × B and write your answer as a letter.",
+          options: ["B","A","F","J","N"],
           correct: 0,
-          explanation: "GATE: 7+1+20+5=33. KITE: 11+9+20+5=45. LATE: 12+1+20+5=38. NOTE: 14+15+20+5=54. BITE: 2+9+20+5=36. NOTE has the highest value at 54. ✓"
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then 8 − 6 = 2. The 2nd letter is B. (Left to right (8−3)×2 = 10 = J is the trap.) ✓"
         },
         {
           id: 42,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word FROST?",
-          options: ["74","76","82","80","78"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (F ÷ D) × L and write your answer as a letter.",
+          options: ["L","Q","S","X","R"],
           correct: 4,
-          explanation: "F=6, R=18, O=15, S=19, T=20. Total: 6 + 18 + 15 + 19 + 20 = 78. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          explanation: "Brackets first: 6 ÷ 4 = 1½. Then 1½ × 12 = 18 — the half clears. 18th letter = R. (Round down 1×12=12=L; round up 2×12=24=X.) ✓"
         },
         {
           id: 43,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of the word MAP?",
-          options: ["28","32","30","26","34"],
-          correct: 2,
-          explanation: "M=13, A=1, P=16. Total: 13 + 1 + 16 = 30. Tip: Learn the alphabet in groups of 5 (A-E=1-5, F-J=6-10, K-O=11-15, P-T=16-20, U-Z=21-26). ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out H + O and write your answer as a letter.",
+          options: ["G","W","U","V","X"],
+          correct: 1,
+          explanation: "H = 8 and O = 15, so 8 + 15 = 23. The 23rd letter is W. (Subtracting, O − H = 7 = G, is the trap.) ✓"
         },
         {
           id: 44,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... how much more is the word STOP worth than the word STEP?",
-          options: ["8","12","14","10","6"],
-          correct: 3,
-          explanation: "STOP: S=19+T=20+O=15+P=16 = 70. STEP: S=19+T=20+E=5+P=16 = 60. Difference: 70 − 60 = 10. Tip: Only the third letter differs (O vs E) — the difference is just O − E = 15 − 5 = 10. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out I − D × B and write your answer as a letter.",
+          options: ["B","A","H","J","Q"],
+          correct: 1,
+          explanation: "BODMAS: multiply first, D × B = 4 × 2 = 8, then 9 − 8 = 1. The 1st letter is A. (Left to right (9−4)×2 = 10 = J is the trap.) ✓"
         },
         {
           id: 45,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=3 and B=8, what is the value of A + B?",
-          options: ["10","13","12","9","11"],
-          correct: 4,
-          explanation: "A=3, B=8. A + B = 3 + 8 = 11. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out J − F and write your answer as a letter.",
+          options: ["B","C","D","E","P"],
+          correct: 2,
+          explanation: "J = 10 and F = 6, so 10 − 6 = 4. The 4th letter is D. (Adding, J + F = 16 = P, is the trap.) ✓"
         },
         {
           id: 46,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=2, B=5 and C=9, what is the value of A + B + C?",
-          options: ["16","17","14","15","18"],
-          correct: 0,
-          explanation: "A=2, B=5, C=9. A + B + C = 2 + 5 + 9 = 16. Tip: Spot pairs that make round numbers — 2 + 9 = 11, then add 5 to get 16. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out N + G and write your answer as a letter.",
+          options: ["G","T","V","U","W"],
+          correct: 3,
+          explanation: "N = 14 and G = 7, so 14 + 7 = 21. The 21st letter is U. (Subtracting, N − G = 7 = G, is the trap.) ✓"
         },
         {
           id: 47,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=6 and B=4, what is the value of A × B?",
-          options: ["26","22","20","24","28"],
-          correct: 3,
-          explanation: "A=6, B=4. A × B = 6 × 4 = 24. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out K − E and write your answer as a letter.",
+          options: ["D","E","G","P","F"],
+          correct: 4,
+          explanation: "K = 11 and E = 5, so 11 − 5 = 6. The 6th letter is F. (Adding, K + E = 16 = P, is the trap.) ✓"
         },
         {
           id: 48,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=8, B=3 and C=5, what is the value of A + B − C?",
-          options: ["6","5","4","7","8"],
-          correct: 0,
-          explanation: "A=8, B=3, C=5. A + B = 8 + 3 = 11. Then 11 − C = 11 − 5 = 6. Tip: Only + and − here, so just work strictly left to right. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out J − C × B and write your answer as a letter.",
+          options: ["E","F","D","N","P"],
+          correct: 2,
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then 10 − 6 = 4. The 4th letter is D. (Left to right (10−3)×2 = 14 = N is the trap.) ✓"
         },
         {
           id: 49,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=5, B=6 and C=3, what is the value of A × B + C?",
-          options: ["30","45","36","33","27"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out K − D × B and write your answer as a letter.",
+          options: ["B","H","N","C","S"],
           correct: 3,
-          explanation: "A=5, B=6, C=3. By BODMAS, multiply first: A × B = 5 × 6 = 30. Then add: 30 + C = 30 + 3 = 33. Tip: Mixed operators — always do × before + or −, even when + appears first. ✓"
+          explanation: "BODMAS: multiply first, D × B = 4 × 2 = 8, then 11 − 8 = 3. The 3rd letter is C. (Left to right (11−4)×2 = 14 = N is the trap.) ✓"
         },
         {
           id: 50,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=9, B=4 and C=6, what is the value of A × B − C?",
-          options: ["28","32","34","36","30"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out K − C × B and write your answer as a letter.",
+          options: ["D","F","P","Q","E"],
           correct: 4,
-          explanation: "A=9, B=4, C=6. Work out the × part first (this is the standard maths rule — × and ÷ are done before + and −). A × B = 9 × 4 = 36. Now subtract: 36 − C = 36 − 6 = 30. Tip: When a letter sum mixes × with + or −, do the × first, then the + or − — even if the × comes later in the line. ✓"
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then 11 − 6 = 5. The 5th letter is E. (Left to right (11−3)×2 = 16 = P is the trap.) ✓"
         },
         {
           id: 51,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=7, B=3 and C=2, what is the value of (A − B) × C?",
-          options: ["8","12","10","6","14"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out O − C × B and write your answer as a letter.",
+          options: ["I","F","J","U","X"],
           correct: 0,
-          explanation: "A=7, B=3, C=2. Brackets first: A − B = 7 − 3 = 4. Then multiply: 4 × C = 4 × 2 = 8. Tip: Brackets always come first in BODMAS — do what's inside them before anything else. ✓"
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then 15 − 6 = 9. The 9th letter is I. (Left to right (15−3)×2 = 24 = X is the trap.) ✓"
         },
         {
           id: 52,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=8 and B=2, what is the value of A ÷ B + 5?",
-          options: ["7","8","10","9","11"],
-          correct: 3,
-          explanation: "A=8, B=2. By BODMAS, divide first: A ÷ B = 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: × and ÷ are done before + and −, so tackle the division first. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out N − C × B and write your answer as a letter.",
+          options: ["F","H","G","T","V"],
+          correct: 1,
+          explanation: "BODMAS: multiply first, C × B = 3 × 2 = 6, then 14 − 6 = 8. The 8th letter is H. (Left to right (14−3)×2 = 22 = V is the trap.) ✓"
         },
         {
           id: 53,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=4, B=11 and C=3, what is the value of B − A + C?",
-          options: ["8","12","10","4","14"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out P − G × B and write your answer as a letter.",
+          options: ["A","C","B","N","R"],
           correct: 2,
-          explanation: "A=4, B=11, C=3. B − A = 11 − 4 = 7. Then 7 + C = 7 + 3 = 10. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          explanation: "BODMAS: multiply first, G × B = 7 × 2 = 14, then 16 − 14 = 2. The 2nd letter is B. (Left to right (16−7)×2 = 18 = R is the trap.) ✓"
         },
         {
           id: 54,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=6 and B=5, what is the value of A × B − A?",
-          options: ["26","22","20","24","28"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["1","2","3","6","7","9"] }], compact: true } },
+          question: "Use this code: A=1, B=2, C=3, D=6, E=7, F=9. Work out A + B × C and write your answer as a letter.",
+          options: ["A","B","D","E","F"],
           correct: 3,
-          explanation: "A=6, B=5. By BODMAS, multiply first: A × B = 6 × 5 = 30. Then subtract: 30 − A = 30 − 6 = 24. Tip: Write down intermediate totals — don't hold everything in your head. ✓"
+          explanation: "BODMAS: 2 × 3 = 6, then + 1 = 7. In this code, 7 is E. (Left to right (1+2)×3 = 9 = F; the product 2 × 3 = 6 alone = D.) ✓"
         },
         {
           id: 55,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=3, B=5 and C=2, what is the value of A × (B + C)?",
-          options: ["17","19","25","23","21"],
-          correct: 4,
-          explanation: "A=3, B=5, C=2. Brackets first: B + C = 5 + 2 = 7. Then multiply: A × 7 = 3 × 7 = 21. Tip: Whatever is in brackets always comes first — do that before the ×. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (P + F) ÷ B + C and write your answer as a letter.",
+          options: ["N","K","M","O","V"],
+          correct: 0,
+          explanation: "Brackets first: 16 + 6 = 22. Then 22 ÷ 2 = 11, and 11 + 3 = 14. 14th letter = N. (Ignoring the brackets gives 16 + 6÷2 + 3 = 22 = V; stopping before + C gives 11 = K.) ✓"
         },
         {
           id: 56,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=2, B=4, C=6 and D=3, what is the value of A × B + C ÷ D?",
-          options: ["10","8","12","14","6"],
-          correct: 0,
-          explanation: "A=2, B=4, C=6, D=3. By BODMAS, do multiplication and division first: A × B = 2 × 4 = 8 and C ÷ D = 6 ÷ 3 = 2. Then add: 8 + 2 = 10. Tip: Work out both × and ÷ parts before you touch the + sign. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (T + H) ÷ D + A and write your answer as a letter.",
+          options: ["F","H","G","I","W"],
+          correct: 1,
+          explanation: "Brackets first: 20 + 8 = 28. Then 28 ÷ 4 = 7, and 7 + 1 = 8. 8th letter = H. (Ignoring the brackets gives 20 + 8÷4 + 1 = 23 = W; stopping before + A gives 7 = G.) ✓"
         },
         {
           id: 57,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=2, B=3 and C=10, what is the value of C − A × B?",
-          options: ["6","4","8","24","2"],
-          correct: 1,
-          explanation: "A=2, B=3, C=10. By BODMAS, multiply first: A × B = 2 × 3 = 6. Then subtract: C − 6 = 10 − 6 = 4. Remember, multiplication comes before subtraction. Tip: The trap here is C − A first (=8), then × B (=24). Always do the × before the − . ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (R + F) ÷ C × B and write your answer as a letter.",
+          options: ["H","O","P","Q","V"],
+          correct: 2,
+          explanation: "Brackets first: 18 + 6 = 24. Then 24 ÷ 3 = 8, and 8 × 2 = 16. 16th letter = P. (Ignoring the brackets gives 18 + 6÷3×2 = 22 = V; stopping before × B gives 8 = H.) ✓"
         },
         {
           id: 58,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=12, B=4 and C=7, what is the value of A ÷ B + C?",
-          options: ["8","9","10","12","11"],
-          correct: 2,
-          explanation: "A=12, B=4, C=7. By BODMAS, divide first: A ÷ B = 12 ÷ 4 = 3. Then add: 3 + C = 3 + 7 = 10. Tip: ÷ is done before +, even though + looks simpler. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (U + C) ÷ C + B and write your answer as a letter.",
+          options: ["H","I","K","J","X"],
+          correct: 3,
+          explanation: "Brackets first: 21 + 3 = 24. Then 24 ÷ 3 = 8, and 8 + 2 = 10. 10th letter = J. (Ignoring the brackets gives 21 + 3÷3 + 2 = 24 = X; stopping before + B gives 8 = H.) ✓"
         },
         {
           id: 59,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=7 and B=9, what is the value of 2 × A + B?",
-          options: ["21","27","25","32","23"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["3","4","2","8","11","14"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=2, D=8, E=11, F=14. Work out A + B × C and write your answer as a letter.",
+          options: ["A","C","D","F","E"],
           correct: 4,
-          explanation: "A=7, B=9. By BODMAS, multiply first: 2 × A = 2 × 7 = 14. Then add: 14 + B = 14 + 9 = 23. Tip: Always do × before + — even when the number (2) comes before the letter. ✓"
+          explanation: "BODMAS: 4 × 2 = 8, then + 3 = 11. In this code, 11 is E. (Left to right (3+4)×2 = 14 = F; the product 4 × 2 = 8 alone = D.) ✓"
         },
         {
           id: 60,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=4, C=8 and D=5, what is the value of (A + B) × (C − D)?",
-          options: ["12","14","13","15","16"],
-          correct: 3,
-          explanation: "A=1, B=4, C=8, D=5. First bracket: A + B = 1 + 4 = 5. Second bracket: C − D = 8 − 5 = 3. Then multiply: 5 × 3 = 15. Tip: Work out each bracket fully before multiplying — treat each bracket as one number. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (X + L) ÷ F − D and write your answer as a letter.",
+          options: ["A","C","F","V","B"],
+          correct: 4,
+          explanation: "Brackets first: 24 + 12 = 36. Then 36 ÷ 6 = 6, and 6 − 4 = 2. 2nd letter = B. (Ignoring the brackets gives 24 + 12÷6 − 4 = 22 = V; stopping before − D gives 6 = F.) ✓"
         },
         {
           id: 61,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=10, B=3 and C=2, what is the value of A − B × C?",
-          options: ["14","4","6","8","16"],
-          correct: 1,
-          explanation: "A=10, B=3, C=2. In maths, × is always done before − (it doesn't matter that − comes first when you read left to right). So work out B × C first: 3 × 2 = 6. Now subtract that from A: 10 − 6 = 4. If you did A − B first you'd get 7, then × C would give 14 — that's the trap. Tip: Underline the × or ÷ part in the line and do it before anything else. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["2","4","13","5","8","28"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=13, D=5, E=8, F=28. Work out D + A × B and write your answer as a letter.",
+          options: ["C","A","D","E","F"],
+          correct: 0,
+          explanation: "BODMAS: 2 × 4 = 8, then + 5 = 13. In this code, 13 is C. (Left to right (5+2)×4 = 28 = F; the product 2 × 4 = 8 alone = E.) ✓"
         },
         {
           id: 62,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=4, B=2 and C=8, what is the value of (C + A) ÷ B?",
-          options: ["6","5","4","7","8"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (N + J) ÷ B − E and write your answer as a letter.",
+          options: ["G","F","H","L","N"],
           correct: 0,
-          explanation: "A=4, B=2, C=8. Brackets first: C + A = 8 + 4 = 12. Then divide: 12 ÷ B = 12 ÷ 2 = 6. Tip: Brackets always come first — finish the sum inside before dividing. ✓"
+          explanation: "Brackets first: 14 + 10 = 24. Then 24 ÷ 2 = 12, and 12 − 5 = 7. 7th letter = G. (Ignoring the brackets gives 14 + 10÷2 − 5 = 14 = N; stopping before − E gives 12 = L.) ✓"
         },
         {
           id: 63,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=5 and B=7, what is the value of A × A − B?",
-          options: ["16","20","18","22","24"],
-          correct: 2,
-          explanation: "A=5, B=7. By BODMAS, multiply first: A × A = 5 × 5 = 25. Then subtract: 25 − B = 25 − 7 = 18. Tip: A × A means A multiplied by itself — work that out first, then subtract. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["4","14","2","5","10","30"] }], compact: true } },
+          question: "Use this code: A=4, B=14, C=2, D=5, E=10, F=30. Work out A + C × D and write your answer as a letter.",
+          options: ["A","B","D","E","F"],
+          correct: 1,
+          explanation: "BODMAS: 2 × 5 = 10, then + 4 = 14. In this code, 14 is B. (Left to right (4+2)×5 = 30 = F; the product 2 × 5 = 10 alone = E.) ✓"
         },
         {
           id: 64,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=3, B=2, C=5 and D=4, what is the value of A × C − B × D?",
-          options: ["5","11","9","3","7"],
-          correct: 4,
-          explanation: "A=3, B=2, C=5, D=4. By BODMAS, do both multiplications first: A × C = 3 × 5 = 15 and B × D = 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: When two × parts sit around a − sign, work out both products first, then subtract. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (H + P) ÷ D × B and write your answer as a letter.",
+          options: ["F","L","K","M","P"],
+          correct: 1,
+          explanation: "Brackets first: 8 + 16 = 24. Then 24 ÷ 4 = 6, and 6 × 2 = 12. 12th letter = L. (Ignoring the brackets gives 8 + 16÷4×2 = 16 = P; stopping before × B gives 6 = F.) ✓"
         },
         {
           id: 65,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=12 and B=5, what is the value of A − B?",
-          options: ["5","6","8","7","9"],
-          correct: 3,
-          explanation: "A=12, B=5. A − B = 12 − 5 = 7. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out E + L and write your answer as a letter.",
+          options: ["Q","G","P","R","S"],
+          correct: 0,
+          explanation: "E = 5 and L = 12, so 5 + 12 = 17. The 17th letter is Q. (Subtracting, L − E = 7 = G, is the trap.) ✓"
         },
         {
           id: 66,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=4 and B=3, what is the value of B × B + A?",
-          options: ["11","13","15","17","19"],
-          correct: 1,
-          explanation: "A=4, B=3. By BODMAS, multiply first: B × B = 3 × 3 = 9. Then add: 9 + A = 9 + 4 = 13. Tip: Write down intermediate totals — don't hold everything in your head. ✓"
+          visual: { component: "CodeTable", props: { headers: ["K","L","M","N","O","P"], rows: [{ cells: ["9","4","2","1","10","8"] }], compact: true } },
+          question: "Use this code: K=9, L=4, M=2, N=1, O=10, P=8. Work out K − L × M and write your answer as a letter.",
+          options: ["K","M","N","O","P"],
+          correct: 2,
+          explanation: "BODMAS: 4 × 2 = 8, then 9 − 8 = 1. In this code, 1 is N. (Left to right (9 − 4)×2 = 10 = O; the product 4 × 2 = 8 alone = P.) ✓"
         },
         {
           id: 67,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=10, B=6 and C=2, what is the value of (A − B) × (A − C)?",
-          options: ["32","30","34","28","36"],
-          correct: 0,
-          explanation: "A=10, B=6, C=2. First bracket: A − B = 10 − 6 = 4. Second bracket: A − C = 10 − 2 = 8. Then multiply: 4 × 8 = 32. Tip: Double-check by adding the numbers in a different order. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (P + X) ÷ D − E and write your answer as a letter.",
+          options: ["D","F","E","J","Q"],
+          correct: 2,
+          explanation: "Brackets first: 16 + 24 = 40. Then 40 ÷ 4 = 10, and 10 − 5 = 5. 5th letter = E. (Ignoring the brackets gives 16 + 24÷4 − 5 = 17 = Q; stopping before − E gives 10 = J.) ✓"
         },
         {
           id: 68,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=8, B=3 and C=1, what is the value of A − B − C?",
-          options: ["2","3","5","4","6"],
+          visual: { component: "CodeTable", props: { headers: ["P","Q","R","S","T","U"], rows: [{ cells: ["13","4","2","5","18","8"] }], compact: true } },
+          question: "Use this code: P=13, Q=4, R=2, S=5, T=18, U=8. Work out P − Q × R and write your answer as a letter.",
+          options: ["Q","R","T","S","U"],
           correct: 3,
-          explanation: "A=8, B=3, C=1. A − B = 8 − 3 = 5. Then 5 − C = 5 − 1 = 4. Tip: Only subtractions here — just work strictly left to right. ✓"
+          explanation: "BODMAS: 4 × 2 = 8, then 13 − 8 = 5. In this code, 5 is S. (Left to right (13 − 4)×2 = 18 = T; the product 4 × 2 = 8 alone = U.) ✓"
         },
         {
           id: 69,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=3, B=8 and C=3, what is the value of B × C ÷ A?",
-          options: ["6","7","9","8","10"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (I + F) ÷ C + H and write your answer as a letter.",
+          options: ["E","L","N","M","S"],
           correct: 3,
-          explanation: "A=3, B=8, C=3. By BODMAS, work left to right for multiplication and division: B × C = 8 × 3 = 24. Then 24 ÷ A = 24 ÷ 3 = 8. Tip: When × and ÷ appear together, work strictly left to right. ✓"
+          explanation: "Brackets first: 9 + 6 = 15. Then 15 ÷ 3 = 5, and 5 + 8 = 13. 13th letter = M. (Ignoring the brackets gives 9 + 6÷3 + 8 = 19 = S; stopping before + H gives 5 = E.) ✓"
         },
         {
           id: 70,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=4 and B=6, what is the value of A + B + A?",
-          options: ["14","18","16","10","12"],
-          correct: 0,
-          explanation: "A=4, B=6. A + B + A = 4 + 6 + 4 = 14. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E"], rows: [{ cells: ["2","3","5","6","8"] }], compact: true } },
+          question: "Use this code: A=2, B=3, C=5, D=6, E=8. Work out A + B and write your answer as a letter.",
+          options: ["A","C","B","D","E"],
+          correct: 1,
+          explanation: "2 + 3 = 5. In this code, 5 is C. (Just taking the first number gives 2 = A; the largest code value is 8 = E.) ✓"
         },
         {
           id: 71,
           difficulty: 3,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=5, B=2 and C=4, what is the value of A × B + A × C?",
-          options: ["25","28","35","32","30"],
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Work out (O + L) ÷ C + B and write your answer as a letter.",
+          options: ["I","J","L","U","K"],
           correct: 4,
-          explanation: "A=5, B=2, C=4. By BODMAS, do both multiplications first: A × B = 5 × 2 = 10 and A × C = 5 × 4 = 20. Then add: 10 + 20 = 30. Tip: When two × parts sit around a + sign, work out both products before adding. ✓"
+          explanation: "Brackets first: 15 + 12 = 27. Then 27 ÷ 3 = 9, and 9 + 2 = 11. 11th letter = K. (Ignoring the brackets gives 15 + 12÷3 + 2 = 21 = U; stopping before + B gives 9 = I.) ✓"
         },
         {
           id: 72,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=9 and B=2, what is the value of A × B + B?",
-          options: ["18","20","22","16","24"],
-          correct: 1,
-          explanation: "A=9, B=2. By BODMAS, multiply first: A × B = 9 × 2 = 18. Then add: 18 + B = 18 + 2 = 20. Tip: Do the × before the + — even when the same letter (B) appears on both sides. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["15","6","2","3","18","12"] }], compact: true } },
+          question: "Use this code: A=15, B=6, C=2, D=3, E=18, F=12. Work out A − B × C and write your answer as a letter.",
+          options: ["B","C","E","F","D"],
+          correct: 4,
+          explanation: "BODMAS: 6 × 2 = 12, then 15 − 12 = 3. In this code, 3 is D. (Left to right (15 − 6)×2 = 18 = E; the product 6 × 2 = 12 alone = F.) ✓"
         },
         {
           id: 73,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=6, B=2 and C=5, what is the value of (A + C) × B − C?",
-          options: ["15","19","17","21","13"],
-          correct: 2,
-          explanation: "A=6, B=2, C=5. Brackets first: A + C = 6 + 5 = 11. Then multiply: 11 × B = 11 × 2 = 22. Finally subtract: 22 − C = 22 − 5 = 17. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["4","6","10","12","14","15"] }], compact: true } },
+          question: "Use this code: A=4, B=6, C=10, D=12, E=14, F=15. Work out (F ÷ C) × A + B and write your answer as a letter.",
+          options: ["D","B","C","E","F"],
+          correct: 0,
+          explanation: "Brackets first: 15 ÷ 10 = 1½. Then 1½ × 4 = 6, and 6 + 6 = 12 — the half clears. Here 12 is D. (Add before you multiply and you get 1½ × 10 = 15 = F; round the half down 1 × 4 + 6 = 10 = C; round up 2 × 4 + 6 = 14 = E; drop the + 6 and you are left with 6 = B.) ✓"
         },
         {
           id: 74,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=7, B=4 and C=3, what is the value of A + B × C?",
-          options: ["33","21","17","19","15"],
-          correct: 3,
-          explanation: "A=7, B=4, C=3. By BODMAS, multiply first: B × C = 4 × 3 = 12. Then add: A + 12 = 7 + 12 = 19. Be careful — multiplication comes before addition! Tip: The trap answer (33) comes from adding A + B first — always spot the × and do it first. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["10","2","3","4","6","24"] }], compact: true } },
+          question: "Use this code: A=10, B=2, C=3, D=4, E=6, F=24. Work out A − B × C and write your answer as a letter.",
+          options: ["D","B","C","E","F"],
+          correct: 0,
+          explanation: "BODMAS: 2 × 3 = 6, then 10 − 6 = 4. In this code, 4 is D. (Left to right (10 − 2)×3 = 24 = F; the product 2 × 3 = 6 alone = E.) ✓"
         },
         {
           id: 75,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "The same number fills both gaps. What is it? 2 × ___ + ___ = 27",
-          options: ["11","8","7","10","9"],
-          correct: 4,
-          explanation: "Call the missing number n. The line becomes 2 × n + n, which is 3 lots of n altogether, so 3 × n = 27. That means n = 27 ÷ 3 = 9. Check: 2 × 9 + 9 = 18 + 9 = 27. Tip: When the same unknown appears twice in a line, count how many of it there are in total — then divide to find its value. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","4","5","10","18","20","22","35"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=5, D=10, E=18, F=20, G=22, H=35. Work out (C ÷ A) × B + D and write your answer as a letter.",
+          options: ["D","F","E","G","H"],
+          correct: 1,
+          explanation: "Brackets first: 5 ÷ 2 = 2½. Then 2½ × 4 = 10, and 10 + 10 = 20 — the half clears. Here 20 is F. (Add first 2½ × 14 = 35 = H; round the half down 2 × 4 + 10 = 18 = E; round up 3 × 4 + 10 = 22 = G; drop the + 10 to get 10 = D.) ✓"
         },
         {
           id: 76,
           difficulty: 1,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 2, B = 5 and C = 3, what is the value of A + B + C?",
-          options: ["8","10","9","11","12"],
-          correct: 1,
-          explanation: "A + B + C = 2 + 5 + 3 = 10. Tip: Double-check by adding the numbers in a different order. ✓"
+          visual: { component: "CodeTable", props: { headers: ["K","L","M","N","O"], rows: [{ cells: ["9","4","5","1","7"] }], compact: true } },
+          question: "Use this code: K=9, L=4, M=5, N=1, O=7. Work out K − M and write your answer as a letter.",
+          options: ["K","M","L","N","O"],
+          correct: 2,
+          explanation: "9 − 5 = 4. In this code, 4 is L. (Adding instead gives 14, which is not in the code; the smallest code value is 1 = N.) ✓"
         },
         {
           id: 77,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 6 and B = 9, what is the value of B − A?",
-          options: ["1","2","3","4","5"],
-          correct: 2,
-          explanation: "B − A = 9 − 6 = 3. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word BED?",
+          options: ["10","12","13","11","9"],
+          correct: 3,
+          explanation: "B=2, E=5, D=4. Total 2 + 5 + 4 = 11. ✓"
         },
         {
           id: 78,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 4 and B = 7, what is the value of A + A + B?",
-          options: ["13","14","16","15","17"],
-          correct: 3,
-          explanation: "A + A + B = 4 + 4 + 7 = 15. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word CAB?",
+          options: ["5","7","4","8","6"],
+          correct: 4,
+          explanation: "C=3, A=1, B=2. Total 3 + 1 + 2 = 6. ✓"
         },
         {
           id: 79,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 3, B = 8 and C = 1, what is the value of B − A − C?",
-          options: ["2","3","6","5","4"],
-          correct: 4,
-          explanation: "B − A − C = 8 − 3 − 1 = 4. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word ACE?",
+          options: ["9","8","10","7","11"],
+          correct: 0,
+          explanation: "A=1, C=3, E=5. Total 1 + 3 + 5 = 9. ✓"
         },
         {
           id: 80,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 5, B = 10 and C = 2, what is the value of B − A + C?",
-          options: ["6","5","7","8","9"],
-          correct: 2,
-          explanation: "B − A + C = 10 − 5 + 2 = 7. Tip: Only + and −, so just work strictly left to right. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word DAB?",
+          options: ["6","7","8","5","9"],
+          correct: 1,
+          explanation: "D=4, A=1, B=2. Total 4 + 1 + 2 = 7. ✓"
         },
         {
           id: 81,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 3, B = 7 and C = 4, what is the value of B × C + A?",
-          options: ["29","33","31","35","37"],
-          correct: 2,
-          explanation: "B × C + A = 7 × 4 + 3. By BODMAS, multiply first: 7 × 4 = 28. Then add: 28 + 3 = 31. Tip: Do × before + — even when + looks like the easier step. ✓"
+          visual: { component: "CodeTable", props: { headers: ["R","S","T","U","V","W"], rows: [{ cells: ["7","3","2","1","8","6"] }], compact: true } },
+          question: "Use this code: R=7, S=3, T=2, U=1, V=8, W=6. Work out R − S × T and write your answer as a letter.",
+          options: ["R","U","T","V","W"],
+          correct: 1,
+          explanation: "BODMAS: 3 × 2 = 6, then 7 − 6 = 1. In this code, 1 is U. (Left to right (7 − 3)×2 = 8 = V; the product 3 × 2 = 6 alone = W.) ✓"
         },
         {
           id: 82,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 8, B = 2 and C = 5, what is the value of A ÷ B + C?",
-          options: ["9","8","7","10","11"],
-          correct: 0,
-          explanation: "A ÷ B + C = 8 ÷ 2 + 5. By BODMAS, divide first: 8 ÷ 2 = 4. Then add: 4 + 5 = 9. Tip: × and ÷ always go before + and −, so tackle the division first. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["14","3","2","8","22","6"] }], compact: true } },
+          question: "Use this code: A=14, B=3, C=2, D=8, E=22, F=6. Work out A − B × C and write your answer as a letter.",
+          options: ["B","C","D","E","F"],
+          correct: 2,
+          explanation: "BODMAS: 3 × 2 = 6, then 14 − 6 = 8. In this code, 8 is D. (Left to right (14 − 3)×2 = 22 = E; the product 3 × 2 = 6 alone = F.) ✓"
         },
         {
           id: 83,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 6, B = 3 and C = 9, what is the value of C − A × B?",
-          options: ["-9","-6","3","-3","9"],
-          correct: 0,
-          explanation: "C − A × B = 9 − 6 × 3. By BODMAS, multiply first: 6 × 3 = 18. Then subtract: 9 − 18 = −9. Remember, multiplication comes before subtraction! Tip: A negative answer is fine — it just means the × part was bigger than C. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["1","2","4","5","6","15","20"] }], compact: true } },
+          question: "Use this code: A=1, B=2, C=4, D=5, E=6, F=15, G=20. Work out (F ÷ E) × B and write your answer as a letter.",
+          options: ["A","C","D","E","G"],
+          correct: 2,
+          explanation: "Brackets first: 15 ÷ 6 = 2½. Then 2½ × 2 = 5 — the half clears. Here 5 is D. (Round the half down 2 × 2 = 4 = C; round up 3 × 2 = 6 = E; the biggest number 20 = G and the smallest 1 = A are traps.) ✓"
         },
         {
           id: 84,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 5 and B = 4, what is the value of A × B − B?",
-          options: ["14","15","18","17","16"],
-          correct: 4,
-          explanation: "A × B − B = 5 × 4 − 4. By BODMAS, multiply first: 5 × 4 = 20. Then subtract: 20 − 4 = 16. Tip: Do × before − — even when the same letter (B) appears on both sides. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["2","3","4","12","14","20"] }], compact: true } },
+          question: "Use this code: A=2, B=3, C=4, D=12, E=14, F=20. Work out A + B × C and write your answer as a letter.",
+          options: ["A","C","D","E","F"],
+          correct: 3,
+          explanation: "BODMAS: 3 × 4 = 12, then + 2 = 14. In this code, 14 is E. (Left to right (2+3)×4 = 20 = F; the product 3 × 4 = 12 alone = D.) ✓"
         },
         {
           id: 85,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 7, B = 3 and C = 6, what is the value of (A + B) × C?",
-          options: ["54","48","60","66","72"],
-          correct: 2,
-          explanation: "Brackets first: A + B = 7 + 3 = 10. Then multiply: 10 × C = 10 × 6 = 60. Tip: Brackets always come first — finish the sum inside, then multiply. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["6","8","9","12","20","24","28","30"] }], compact: true } },
+          question: "Use this code: A=6, B=8, C=9, D=12, E=20, F=24, G=28, H=30. Work out (C ÷ A) × B + D and write your answer as a letter.",
+          options: ["D","E","G","F","H"],
+          correct: 3,
+          explanation: "Brackets first: 9 ÷ 6 = 1½. Then 1½ × 8 = 12, and 12 + 12 = 24 — the half clears. Here 24 is F. (Add first 1½ × 20 = 30 = H; round the half down 1 × 8 + 12 = 20 = E; round up 2 × 8 + 12 = 28 = G; drop the + 12 to get 12 = D.) ✓"
         },
         {
           id: 86,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 11 and B = 3, what is the value of A × B − A?",
-          options: ["20","24","22","26","28"],
-          correct: 2,
-          explanation: "A × B − A = 11 × 3 − 11. By BODMAS, multiply first: 11 × 3 = 33. Then subtract: 33 − 11 = 22. Tip: Remember BODMAS! Multiply before you add or subtract. ✓"
+          visual: { component: "CodeTable", props: { headers: ["K","L","M","N","O","P"], rows: [{ cells: ["2","5","3","15","17","21"] }], compact: true } },
+          question: "Use this code: K=2, L=5, M=3, N=15, O=17, P=21. Work out K + L × M and write your answer as a letter.",
+          options: ["K","M","N","P","O"],
+          correct: 4,
+          explanation: "BODMAS: 5 × 3 = 15, then + 2 = 17. In this code, 17 is O. (Left to right (2+5)×3 = 21 = P; the product 5 × 3 = 15 alone = N.) ✓"
         },
         {
           id: 87,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 9, B = 4 and C = 2, what is the value of A − B × C?",
-          options: ["-1","0","1","2","10"],
-          correct: 2,
-          explanation: "A − B × C = 9 − 4 × 2. By BODMAS, multiply first: 4 × 2 = 8. Then subtract: 9 − 8 = 1. Be careful — multiplication comes before subtraction! Tip: The trap answer (10) comes from doing A − B first — always spot the × and do it first. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["4","3","5","15","19","35"] }], compact: true } },
+          question: "Use this code: A=4, B=3, C=5, D=15, E=19, F=35. Work out A + B × C and write your answer as a letter.",
+          options: ["E","A","C","D","F"],
+          correct: 0,
+          explanation: "BODMAS: 3 × 5 = 15, then + 4 = 19. In this code, 19 is E. (Left to right (4+3)×5 = 35 = F; the product 3 × 5 = 15 alone = D.) ✓"
         },
         {
           id: 88,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 15, B = 5 and C = 8, what is the value of A ÷ B + C?",
-          options: ["9","12","11","10","13"],
-          correct: 2,
-          explanation: "A ÷ B + C = 15 ÷ 5 + 8. By BODMAS, divide first: 15 ÷ 5 = 3. Then add: 3 + 8 = 11. Tip: ÷ is always done before +, no matter which comes first in the line. ✓"
+          visual: { component: "CodeTable", props: { headers: ["P","Q","R","S","T","U"], rows: [{ cells: ["1","4","2","8","9","10"] }], compact: true } },
+          question: "Use this code: P=1, Q=4, R=2, S=8, T=9, U=10. Work out P + Q × R and write your answer as a letter.",
+          options: ["P","T","R","S","U"],
+          correct: 1,
+          explanation: "BODMAS: 4 × 2 = 8, then + 1 = 9. In this code, 9 is T. (Left to right (1+4)×2 = 10 = U; the product 4 × 2 = 8 alone = S.) ✓"
         },
         {
           id: 89,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 3, B = 5, C = 2 and D = 4, what is the value of A × B − C × D?",
-          options: ["5","7","13","11","9"],
-          correct: 1,
-          explanation: "A × B − C × D = 3 × 5 − 2 × 4. By BODMAS, do both multiplications first: 3 × 5 = 15 and 2 × 4 = 8. Then subtract: 15 − 8 = 7. Tip: When two × parts sit around a − sign, work out both products before subtracting. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["4","6","10","15","18","20","22","35"] }], compact: true } },
+          question: "Use this code: A=4, B=6, C=10, D=15, E=18, F=20, G=22, H=35. Work out (D ÷ B) × A + C and write your answer as a letter.",
+          options: ["C","E","G","H","F"],
+          correct: 4,
+          explanation: "Brackets first: 15 ÷ 6 = 2½. Then 2½ × 4 = 10, and 10 + 10 = 20 — the half clears. Here 20 is F. (Add first 2½ × 14 = 35 = H; round the half down 2 × 4 + 10 = 18 = E; round up 3 × 4 + 10 = 22 = G; drop the + 10 to get 10 = C.) ✓"
         },
         {
           id: 90,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 4, B = 6 and C = 2, what is the value of (A + B) × (B − C)?",
-          options: ["45","35","40","30","50"],
-          correct: 2,
-          explanation: "First bracket: A + B = 4 + 6 = 10. Second bracket: B − C = 6 − 2 = 4. Then multiply: 10 × 4 = 40. Tip: Write down intermediate totals — don't try to hold everything in your head. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","4","7","14","26","28","30","63"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=7, D=14, E=26, F=28, G=30, H=63. Work out (C ÷ A) × B + D and write your answer as a letter.",
+          options: ["F","D","E","G","H"],
+          correct: 0,
+          explanation: "Brackets first: 7 ÷ 2 = 3½. Then 3½ × 4 = 14, and 14 + 14 = 28 — the half clears. Here 28 is F. (Add first 3½ × 18 = 63 = H; round the half down 3 × 4 + 14 = 26 = E; round up 4 × 4 + 14 = 30 = G; drop the + 14 to get 14 = D.) ✓"
         },
         {
           id: 91,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 2, B = 3, C = 6 and D = 4, what is the value of C × D ÷ A + B?",
-          options: ["12","14","13","15","16"],
-          correct: 3,
-          explanation: "C × D ÷ A + B = 6 × 4 ÷ 2 + 3. By BODMAS, do multiplication and division left to right: 6 × 4 = 24, then 24 ÷ 2 = 12. Then add: 12 + 3 = 15. Tip: When × and ÷ appear together, work strictly left to right — neither beats the other. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["2","5","6","9","10","11","15"] }], compact: true } },
+          question: "Use this code: A=2, B=5, C=6, D=9, E=10, F=11, G=15. Work out B + (G ÷ C) × A and write your answer as a letter.",
+          options: ["B","E","D","F","G"],
+          correct: 1,
+          explanation: "Brackets first: 15 ÷ 6 = 2½. Then 2½ × 2 = 5, and 5 + 5 = 10 — the half clears. Here 10 is E. (Add before you multiply (5 + 2½) × 2 = 15 = G; round the half down 5 + 2 × 2 = 9 = D; round up 5 + 3 × 2 = 11 = F; drop the + 5 to get 5 = B.) ✓"
         },
         {
           id: 92,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 5, B = 8 and C = 3, what is the value of B × B − A × C?",
-          options: ["45","47","49","51","53"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["2","6","7","13","14","15","21"] }], compact: true } },
+          question: "Use this code: A=2, B=6, C=7, D=13, E=14, F=15, G=21. Work out C + (G ÷ B) × A and write your answer as a letter.",
+          options: ["C","D","E","F","G"],
           correct: 2,
-          explanation: "B × B − A × C = 8 × 8 − 5 × 3. By BODMAS, do both multiplications first: 8 × 8 = 64 and 5 × 3 = 15. Then subtract: 64 − 15 = 49. Tip: B × B means B multiplied by itself — work that out like any other × sum. ✓"
+          explanation: "Brackets first: 21 ÷ 6 = 3½. Then 3½ × 2 = 7, and 7 + 7 = 14 — the half clears. Here 14 is E. (Add before you multiply (7 + 3½) × 2 = 21 = G; round the half down 7 + 3 × 2 = 13 = D; round up 7 + 4 × 2 = 15 = F; drop the + 7 to get 7 = C.) ✓"
         },
         {
           id: 93,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 7, B = 2, C = 3 and D = 5, what is the value of (A − B) × C + D?",
-          options: ["18","19","21","20","22"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["2","6","9","17","18","19","27"] }], compact: true } },
+          question: "Use this code: A=2, B=6, C=9, D=17, E=18, F=19, G=27. Work out C + (G ÷ B) × A and write your answer as a letter.",
+          options: ["C","D","F","E","G"],
           correct: 3,
-          explanation: "Brackets first: A − B = 7 − 2 = 5. Then multiply: 5 × C = 5 × 3 = 15. Then add: 15 + D = 15 + 5 = 20. Tip: Brackets first, then × , then + — follow BODMAS one layer at a time. ✓"
+          explanation: "Brackets first: 27 ÷ 6 = 4½. Then 4½ × 2 = 9, and 9 + 9 = 18 — the half clears. Here 18 is E. (Add before you multiply (9 + 4½) × 2 = 27 = G; round the half down 9 + 4 × 2 = 17 = D; round up 9 + 5 × 2 = 19 = F; drop the + 9 to get 9 = C.) ✓"
         },
         {
           id: 94,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A = 2, B = 9, C = 4 and D = 3, what is the value of B × C ÷ D + A?",
-          options: ["16","13","14","15","12"],
-          correct: 2,
-          explanation: "B × C ÷ D + A = 9 × 4 ÷ 3 + 2. By BODMAS, multiplication and division left to right: 9 × 4 = 36, then 36 ÷ 3 = 12. Then add: 12 + 2 = 14. Tip: Double-check by adding in a different order. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["2","6","11","21","22","23","33"] }], compact: true } },
+          question: "Use this code: A=2, B=6, C=11, D=21, E=22, F=23, G=33. Work out C + (G ÷ B) × A and write your answer as a letter.",
+          options: ["C","D","F","G","E"],
+          correct: 4,
+          explanation: "Brackets first: 33 ÷ 6 = 5½. Then 5½ × 2 = 11, and 11 + 11 = 22 — the half clears. Here 22 is E. (Add before you multiply (11 + 5½) × 2 = 33 = G; round the half down 11 + 5 × 2 = 21 = D; round up 11 + 6 × 2 = 23 = F; drop the + 11 to get 11 = C.) ✓"
         },
         {
           id: 95,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which two words have the same total value? ACE, DAD, BIG, HEN, FIG",
-          options: ["ACE and DAD","ACE and BIG","ACE and HEN","ACE and FIG","DAD and BIG"],
-          correct: 0,
-          explanation: "ACE = A(1)+C(3)+E(5) = 9. DAD = D(4)+A(1)+D(4) = 9. BIG = B(2)+I(9)+G(7) = 18. HEN = H(8)+E(5)+N(14) = 27. FIG = F(6)+I(9)+G(7) = 22. ACE and DAD both equal 9! Tip: Calculate ALL words before comparing — don't stop early! ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["3","2","6","12","15","30"] }], compact: true } },
+          question: "Use this code: A=3, B=2, C=6, D=12, E=15, F=30. Work out A + B × C and write your answer as a letter.",
+          options: ["A","C","E","D","F"],
+          correct: 2,
+          explanation: "BODMAS: 2 × 6 = 12, then + 3 = 15. In this code, 15 is E. (Left to right (3+2)×6 = 30 = F; the product 2 × 6 = 12 alone = D.) ✓"
         },
         {
           id: 96,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which two words have the same total value? STONE, PLANE, MOUSE, TRAIN, TIGER",
-          options: ["STONE and MOUSE","STONE and PLANE","STONE and TRAIN","STONE and TIGER","PLANE and MOUSE"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","4","5","6","8","11","14","15"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=5, D=6, E=8, F=11, G=14, H=15. Work out (C ÷ A) × D − B and write your answer as a letter.",
+          options: ["F","C","E","G","H"],
           correct: 0,
-          explanation: "STONE = S(19)+T(20)+O(15)+N(14)+E(5) = 73. PLANE = P(16)+L(12)+A(1)+N(14)+E(5) = 48. MOUSE = M(13)+O(15)+U(21)+S(19)+E(5) = 73. TRAIN = T(20)+R(18)+A(1)+I(9)+N(14) = 62. TIGER = T(20)+I(9)+G(7)+E(5)+R(18) = 59. STONE and MOUSE both equal 73! Tip: Calculate ALL words before comparing — don't stop early! ✓"
+          explanation: "Brackets first: 5 ÷ 2 = 2½. Then 2½ × 6 = 15, and 15 − 4 = 11 — the half clears. Here 11 is F. (Subtract inside first 2½ × (6 − 4) = 5 = C; round the half down 2 × 6 − 4 = 8 = E; round up 3 × 6 − 4 = 14 = G; drop the − 4 to get 15 = H.) ✓"
         },
         {
           id: 97,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the difference in value between CAT and DOG?",
-          options: ["1","2","3","4","0"],
-          correct: 1,
-          explanation: "CAT = 24. DOG = 26. Difference = 26 - 24 = 2. Tip: Always subtract the smaller from the larger! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word EGG?",
+          options: ["18","20","19","17","21"],
+          correct: 2,
+          explanation: "E=5, G=7, G=7. Total 5 + 7 + 7 = 19. ✓"
         },
         {
           id: 98,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the difference in value between FISH and BIRD?",
-          options: ["11","10","8","9","7"],
+          visual: { component: "CodeTable", props: { headers: ["L","M","N","O","P","Q"], rows: [{ cells: ["5","4","3","12","17","27"] }], compact: true } },
+          question: "Use this code: L=5, M=4, N=3, O=12, P=17, Q=27. Work out L + M × N and write your answer as a letter.",
+          options: ["L","N","O","P","Q"],
           correct: 3,
-          explanation: "FISH = 42. BIRD = 33. Difference = 42 - 33 = 9. Tip: Always subtract the smaller from the larger! ✓"
+          explanation: "BODMAS: 4 × 3 = 12, then + 5 = 17. In this code, 17 is P. (Left to right (5+4)×3 = 27 = Q; the product 4 × 3 = 12 alone = O.) ✓"
         },
         {
           id: 99,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the difference in value between HOME and LAND?",
-          options: ["8","11","9","12","10"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["7","3","2","6","13","20"] }], compact: true } },
+          question: "Use this code: A=7, B=3, C=2, D=6, E=13, F=20. Work out A + B × C and write your answer as a letter.",
+          options: ["B","C","D","F","E"],
           correct: 4,
-          explanation: "HOME = 41. LAND = 31. Difference = 41 - 31 = 10. Tip: Always subtract the smaller from the larger! ✓"
+          explanation: "BODMAS: 3 × 2 = 6, then + 7 = 13. In this code, 13 is E. (Left to right (7+3)×2 = 20 = F; the product 3 × 2 = 6 alone = D.) ✓"
         },
         {
           id: 100,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the difference in value between SMILE and FROWN?",
-          options: ["18","19","17","20","16"],
-          correct: 0,
-          explanation: "SMILE = 58. FROWN = 76. Difference = 76 - 58 = 18. Tip: Always subtract the smaller from the larger! ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["1","4","6","8","9","12"] }], compact: true } },
+          question: "Use this code: A=1, B=4, C=6, D=8, E=9, F=12. Work out (E ÷ C) × B and write your answer as a letter.",
+          options: ["A","C","B","D","F"],
+          correct: 1,
+          explanation: "Brackets first: 9 ÷ 6 = 1½. Then 1½ × 4 = 6 — the half clears. Here 6 is C. (Round the half down 1 × 4 = 4 = B; round up 2 × 4 = 8 = D; the biggest number 12 = F and the smallest 1 = A are traps.) ✓"
         },
         {
           id: 101,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the difference in value between TIGER and MOUSE?",
-          options: ["15","14","13","16","12"],
-          correct: 1,
-          explanation: "TIGER = 59. MOUSE = 73. Difference = 73 - 59 = 14. Tip: Always subtract the smaller from the larger! ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["3","4","5","7","20","23","35"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=5, D=7, E=20, F=23, G=35. Work out A + B × C and write your answer as a letter.",
+          options: ["A","D","F","E","G"],
+          correct: 2,
+          explanation: "Times before plus: 4 × 5 = 20, then 3 + 20 = 23. Here 23 is F. (Adding first (3 + 4) × 5 = 35 = G; keeping only 4 × 5 = 20 = E; only 3 + 4 = 7 = D; the smallest number 3 = A is a trap.) ✓"
         },
         {
           id: 102,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is E - B?",
-          options: ["2","4","3","5","1"],
-          correct: 2,
-          explanation: "E = 5, B = 2. So E - B = 5 - 2 = 3. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word GEM?",
+          options: ["24","26","23","25","27"],
+          correct: 3,
+          explanation: "G=7, E=5, M=13. Total 7 + 5 + 13 = 25. ✓"
         },
         {
           id: 103,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is H - C?",
-          options: ["7","6","4","5","3"],
-          correct: 3,
-          explanation: "H = 8, C = 3. So H - C = 8 - 3 = 5. Tip: H sits in the F-J group (6-10) — grouping letters in fives helps you find them fast. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Which of these words has the greatest total value?",
+          options: ["CAD","AGE","FAD","EBB","BID"],
+          correct: 4,
+          explanation: "BID=15, CAD=8, AGE=13, FAD=11, EBB=9. BID is greatest at 15. ✓"
         },
         {
           id: 104,
           difficulty: 1,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is G - D?",
-          options: ["1","4","2","5","3"],
-          correct: 4,
-          explanation: "G = 7, D = 4. So G - D = 7 - 4 = 3. Tip: Both letters live in the first ten — count on from A to lock in their values. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Which of these words has the greatest total value?",
+          options: ["DIN","FIB","GAP","CUB","BAG"],
+          correct: 0,
+          explanation: "FIB=17, GAP=24, DIN=27, CUB=26, BAG=10. DIN is greatest at 27. ✓"
         },
         {
           id: 105,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is M - F?",
-          options: ["7","8","6","9","5"],
+          visual: { component: "CodeTable", props: { headers: ["K","L","M","N","O","P"], rows: [{ cells: ["11","4","2","3","14","8"] }], compact: true } },
+          question: "Use this code: K=11, L=4, M=2, N=3, O=14, P=8. Work out K − L × M and write your answer as a letter.",
+          options: ["N","L","M","O","P"],
           correct: 0,
-          explanation: "M = 13, F = 6. So M - F = 13 - 6 = 7. Tip: M sits right in the middle of the alphabet (position 13) — a useful landmark. ✓"
+          explanation: "BODMAS: 4 × 2 = 8, then 11 − 8 = 3. In this code, 3 is N. (Left to right (11 − 4)×2 = 14 = O; the product 4 × 2 = 8 alone = P.) ✓"
         },
         {
           id: 106,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is P - H?",
-          options: ["9","8","7","10","6"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["6","2","4","8","14","32"] }], compact: true } },
+          question: "Use this code: A=6, B=2, C=4, D=8, E=14, F=32. Work out A + B × C and write your answer as a letter.",
+          options: ["B","E","C","D","F"],
           correct: 1,
-          explanation: "P = 16, H = 8. So P - H = 16 - 8 = 8. Tip: P starts the P-T group (16-20) and H sits in F-J (6-10) — groups of five make positions quick to find. ✓"
+          explanation: "BODMAS: 2 × 4 = 8, then + 6 = 14. In this code, 14 is E. (Left to right (6+2)×4 = 32 = F; the product 2 × 4 = 8 alone = D.) ✓"
         },
         {
           id: 107,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is T - K?",
-          options: ["8","10","9","11","7"],
+          visual: { component: "CodeTable", props: { headers: ["P","Q","R","S","T","U"], rows: [{ cells: ["17","6","2","5","22","12"] }], compact: true } },
+          question: "Use this code: P=17, Q=6, R=2, S=5, T=22, U=12. Work out P − Q × R and write your answer as a letter.",
+          options: ["Q","R","S","T","U"],
           correct: 2,
-          explanation: "T = 20, K = 11. So T - K = 20 - 11 = 9. Tip: Use EJOTY anchors (E=5, J=10, O=15, T=20, Y=25) for quick counting! ✓"
+          explanation: "BODMAS: 6 × 2 = 12, then 17 − 12 = 5. In this code, 5 is S. (Left to right (17 − 6)×2 = 22 = T; the product 6 × 2 = 12 alone = U.) ✓"
         },
         {
           id: 108,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which word has the highest total value? SUN, RAIN, SNOW, WIND, HAIL",
-          options: ["RAIN","SUN","WIND","SNOW","HAIL"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["8","2","3","6","14","30"] }], compact: true } },
+          question: "Use this code: A=8, B=2, C=3, D=6, E=14, F=30. Work out A + B × C and write your answer as a letter.",
+          options: ["B","C","D","E","F"],
           correct: 3,
-          explanation: "SNOW=71, SUN=54, WIND=50, RAIN=42, HAIL=30. SNOW has the highest value at 71! Tip: Estimate first — words with late-alphabet letters (S,T,U,V,W) score higher. ✓"
+          explanation: "BODMAS: 2 × 3 = 6, then + 8 = 14. In this code, 14 is E. (Left to right (8+2)×3 = 30 = F; the product 2 × 3 = 6 alone = D.) ✓"
         },
         {
           id: 109,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... which word has the highest total value? GRAPE, LEMON, PEACH, MANGO, PLUM",
-          options: ["PEACH","LEMON","MANGO","GRAPE","PLUM"],
-          correct: 4,
-          explanation: "PLUM=62, LEMON=59, MANGO=50, GRAPE=47, PEACH=33. PLUM has the highest value at 62! Tip: Estimate first — words with late-alphabet letters (S,T,U,V,W) score higher. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["3","4","5","6","8","13","24"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=5, D=6, E=8, F=13, G=24. Work out D × B ÷ A + C and write your answer as a letter.",
+          options: ["A","C","E","F","G"],
+          correct: 3,
+          explanation: "Divide before add: 6 × 4 = 24, 24 ÷ 3 = 8, then 8 + 5 = 13. Here 13 is F. (Adding first 24 ÷ (3 + 5) = 3 = A; dropping the + 5 gives 8 = E; forgetting to divide leaves 24 = G; the loose 5 = C is a trap.) ✓"
         },
         {
           id: 110,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of RHYTHM?",
-          options: ["92","93","91","94","90"],
-          correct: 0,
-          explanation: "R(18) + H(8) + Y(25) + T(20) + H(8) + M(13) = 92. Tip: H appears twice — remember to count it both times (a classic double-letter trap). ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["4","5","6","9","30","34","54"] }], compact: true } },
+          question: "Use this code: A=4, B=5, C=6, D=9, E=30, F=34, G=54. Work out (A + B) × C and write your answer as a letter.",
+          options: ["A","D","E","F","G"],
+          correct: 4,
+          explanation: "Brackets first: 4 + 5 = 9, then 9 × 6 = 54. Here 54 is G. (No brackets 4 + 5 × 6 = 34 = F; stopping at 4 + 5 = 9 = D; only 5 × 6 = 30 = E; the smallest number 4 = A is a trap.) ✓"
         },
         {
           id: 111,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of WIZARD?",
-          options: ["82","81","80","83","79"],
-          correct: 1,
-          explanation: "W(23) + I(9) + Z(26) + A(1) + R(18) + D(4) = 81. Tip: W, Z, R are all high-value letters — expect a total in the 70s or 80s. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","3","4","6","8","10","18","28"] }], compact: true } },
+          question: "Use this code: A=2, B=3, C=4, D=6, E=8, F=10, G=18, H=28. Work out D × B − C × A and write your answer as a letter.",
+          options: ["F","A","E","G","H"],
+          correct: 0,
+          explanation: "Do both products first: 6 × 3 = 18 and 4 × 2 = 8, then 18 − 8 = 10. Here 10 is F. (Working left to right (18 − 4) × 2 = 28 = H; only the first product 18 = G; only the second product 8 = E; the smallest number 2 = A is a trap.) ✓"
         },
         {
           id: 112,
           difficulty: 2,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is the total value of MONEY?",
-          options: ["72","73","71","74","70"],
-          correct: 0,
-          explanation: "M(13) + O(15) + N(14) + E(5) + Y(25) = 72. Tip: Three EJOTY neighbours here (O=15, E=5, Y=25) — use the anchors to speed it up. ✓"
+          visual: { component: "CodeTable", props: { headers: ["K","L","M","N","O","P"], rows: [{ cells: ["13","5","2","3","16","10"] }], compact: true } },
+          question: "Use this code: K=13, L=5, M=2, N=3, O=16, P=10. Work out K − L × M and write your answer as a letter.",
+          options: ["L","M","O","P","N"],
+          correct: 4,
+          explanation: "BODMAS: 5 × 2 = 10, then 13 − 10 = 3. In this code, 3 is N. (Left to right (13 − 5)×2 = 16 = O; the product 5 × 2 = 10 alone = P.) ✓"
         },
         {
           id: 113,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is C × D?",
-          options: ["10","11","13","12","14"],
-          correct: 3,
-          explanation: "Multiply the two letter values: C(3) × D(4) = 12. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the difference between the values of the words FROG and TOAD?",
+          options: ["6","5","7","4","8"],
+          correct: 0,
+          explanation: "FROG = 6 + 18 + 15 + 7 = 46. TOAD = 20 + 15 + 1 + 4 = 40. Difference 46 − 40 = 6. ✓"
         },
         {
           id: 114,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is E × C?",
-          options: ["13","14","17","16","15"],
-          correct: 4,
-          explanation: "E(5) × C(3) = 15. Tip: E=5 is an EJOTY anchor — handy for quick position checks. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the difference between the values of the words HAND and FOOT?",
+          options: ["28","29","30","27","31"],
+          correct: 1,
+          explanation: "HAND = 8 + 1 + 14 + 4 = 27. FOOT = 6 + 15 + 15 + 20 = 56. Difference 56 − 27 = 29. ✓"
         },
         {
           id: 115,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is B × F?",
-          options: ["12","11","10","13","14"],
-          correct: 0,
-          explanation: "Multiply the two letter values: B(2) × F(6) = 12. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Which of these words has the greatest total value?",
+          options: ["BEAR","LION","WOLF","DEER","SEAL"],
+          correct: 2,
+          explanation: "BEAR=26, WOLF=56, LION=50, DEER=32, SEAL=37. WOLF is greatest at 56. ✓"
         },
         {
           id: 116,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is D × E - C?",
-          options: ["15","17","16","18","19"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","4","5","9","12","13","15","58"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=5, D=9, E=12, F=13, G=15, H=58. Work out E ÷ B × C − A and write your answer as a letter.",
+          options: ["A","F","D","G","H"],
           correct: 1,
-          explanation: "D(4) × E(5) = 20, then 20 - C(3) = 17. Remember BODMAS — multiply first! Tip: Mixed operators — always do × before − , even when − appears later. ✓"
+          explanation: "Times and divide before minus, left to right: 12 ÷ 4 = 3, 3 × 5 = 15, then 15 − 2 = 13. Here 13 is F. (Subtracting first 3 × (5 − 2) = 9 = D; dropping the − 2 gives 15 = G; forgetting to divide 12 × 5 − 2 = 58 = H; the smallest number 2 = A is a trap.) ✓"
         },
         {
           id: 117,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is G × B + D?",
-          options: ["16","17","18","19","20"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["2","4","6","8","24","28","48"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=6, D=8, E=24, F=28, G=48. Work out (C × D) ÷ (A + B) and write your answer as a letter.",
+          options: ["A","E","D","F","G"],
           correct: 2,
-          explanation: "G(7) × B(2) = 14, then 14 + D(4) = 18. Multiply before adding! Tip: Mixed operators — always do × before + , even when + comes second. ✓"
+          explanation: "Both brackets first: 6 × 8 = 48 and 2 + 4 = 6, then 48 ÷ 6 = 8. Here 8 is D. (Ignoring the bottom bracket 6 × 8 ÷ 2 + 4 = 28 = F; dividing by just 2 gives 24 = E; forgetting to divide leaves 48 = G; the smallest number 2 = A is a trap.) ✓"
         },
         {
           id: 118,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is F × C - E?",
-          options: ["11","12","14","13","15"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","4","5","6","12","16","20","26"] }], compact: true } },
+          question: "Use this code: A=2, B=4, C=5, D=6, E=12, F=16, G=20, H=26. Work out C × B + E ÷ A and write your answer as a letter.",
+          options: ["A","D","F","H","G"],
           correct: 3,
-          explanation: "F(6) × C(3) = 18, then 18 - E(5) = 13. BODMAS: multiply first! Tip: Mixed operators — always do × before − to avoid the trap. ✓"
+          explanation: "Times and divide before add: 5 × 4 = 20 and 12 ÷ 2 = 6, then 20 + 6 = 26. Here 26 is H. (Adding first (20 + 12) ÷ 2 = 16 = F; dropping the 12 ÷ 2 leaves 20 = G; only 12 ÷ 2 = 6 = D; the smallest number 2 = A is a trap.) ✓"
         },
         {
           id: 119,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is H × B - C?",
-          options: ["11","12","15","14","13"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["3","4","5","6","7","10","20","27"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=5, D=6, E=7, F=10, G=20, H=27. Work out A × (B + C) − E and write your answer as a letter.",
+          options: ["A","D","F","H","G"],
           correct: 4,
-          explanation: "H(8) × B(2) = 16, then 16 - C(3) = 13. Tip: Mixed operators — always do × before − , no matter the order shown. ✓"
+          explanation: "Brackets first: 4 + 5 = 9, then 3 × 9 = 27, then 27 − 7 = 20. Here 20 is G. (No brackets 3 × 4 + 5 − 7 = 10 = F; dropping the − 7 gives 27 = H; subtracting inside the bracket 3 × (9 − 7) = 6 = D; the smallest number 3 = A is a trap.) ✓"
         },
         {
           id: 120,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is E × D + B?",
-          options: ["22","21","20","23","24"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","3","4","5","6","8","9","24"] }], compact: true } },
+          question: "Use this code: A=2, B=3, C=4, D=5, E=6, F=8, G=9, H=24. Work out H ÷ (F − A) + D and write your answer as a letter.",
+          options: ["G","A","B","C","E"],
           correct: 0,
-          explanation: "E(5) × D(4) = 20, then 20 + B(2) = 22. Tip: Mixed operators — always do × before + , even when + comes later. ✓"
+          explanation: "Bracket first: 8 − 2 = 6, then 24 ÷ 6 = 4, then 4 + 5 = 9. Here 9 is G. (No brackets 24 ÷ 8 − 2 + 5 = 6 = E; dropping the + 5 gives 4 = C; dividing by 8 instead of 6 gives 3 = B; the smallest number 2 = A is a trap.) ✓"
         },
         {
           id: 121,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is C × C × B?",
-          options: ["16","18","17","19","20"],
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G"], rows: [{ cells: ["3","4","5","6","8","24","40"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=5, D=6, E=8, F=24, G=40. Work out D × B ÷ A × C and write your answer as a letter.",
+          options: ["A","G","C","E","F"],
           correct: 1,
-          explanation: "C(3) × C(3) = 9, then 9 × B(2) = 18. Tip: Only × signs here — work strictly left to right. ✓"
+          explanation: "Left to right, times and divide rank equally: 6 × 4 = 24, 24 ÷ 3 = 8, 8 × 5 = 40. Here 40 is G. (Dropping the × 5 gives 8 = E; stopping at 6 × 4 = 24 = F; the smallest number 3 = A and the loose 5 = C are traps.) ✓"
         },
         {
           id: 122,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is F + G - D?",
-          options: ["7","8","9","10","11"],
-          correct: 2,
-          explanation: "F(6) + G(7) = 13, then 13 - D(4) = 9. Tip: Work left to right, writing down each intermediate total! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. Which of these words has the greatest total value?",
+          options: ["PEAR","KIWI","LIME","PLUM","DATE"],
+          correct: 3,
+          explanation: "PEAR=40, KIWI=52, PLUM=62, LIME=39, DATE=30. PLUM is greatest at 62. ✓"
         },
         {
           id: 123,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is J - E + C?",
-          options: ["6","7","9","8","10"],
-          correct: 3,
-          explanation: "J(10) - E(5) = 5, then 5 + C(3) = 8. Tip: J=10 and E=5 are both EJOTY anchors — lean on them for speed. ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word DRUM?",
+          options: ["55","57","54","58","56"],
+          correct: 4,
+          explanation: "D=4, R=18, U=21, M=13. Total 4 + 18 + 21 + 13 = 56. ✓"
         },
         {
           id: 124,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is H + D - F?",
-          options: ["4","5","8","7","6"],
-          correct: 4,
-          explanation: "H(8) + D(4) = 12, then 12 - F(6) = 6. Tip: Work left to right, writing down each intermediate total! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the total value of the word QUIZ?",
+          options: ["73","72","74","71","75"],
+          correct: 0,
+          explanation: "Q=17, U=21, I=9, Z=26. Total 17 + 21 + 9 + 26 = 73. ✓"
         },
         {
           id: 125,
           difficulty: 2,
           visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is K - G + E?",
-          options: ["9","8","7","10","11"],
-          correct: 0,
-          explanation: "K(11) - G(7) = 4, then 4 + E(5) = 9. Tip: Work left to right, writing down each intermediate total! ✓"
+          question: "The alphabet is coded A=1, B=2, C=3 ... Z=26. What is the difference between the values of the words ZOO and ANT?",
+          options: ["20","21","22","19","23"],
+          correct: 1,
+          explanation: "ZOO = 26 + 15 + 15 = 56. ANT = 1 + 14 + 20 = 35. Difference 56 − 35 = 21. ✓"
         },
         {
           id: 126,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is T - J + E - B?",
-          options: ["11","13","12","14","15"],
-          correct: 1,
-          explanation: "T(20) - J(10) = 10, + E(5) = 15, - B(2) = 13. Tip: Three EJOTY anchors in one line (T, J, E) — the anchors make this one quick. ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["3","4","5","8","13","25","28","49"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=5, D=8, E=13, F=25, G=28, H=49. Work out D + C × B − A and write your answer as a letter.",
+          options: ["A","E","F","G","H"],
+          correct: 2,
+          explanation: "Times before plus and minus: 5 × 4 = 20, then 8 + 20 − 3 = 25. Here 25 is F. (Adding first (8 + 5) × 4 − 3 = 49 = H; bracketing the subtraction 8 + 5 × (4 − 3) = 13 = E; dropping the − 3 gives 28 = G; the smallest number 3 = A is a trap.) ✓"
         },
         {
           id: 127,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is M + H - K + C?",
-          options: ["11","12","13","14","15"],
-          correct: 2,
-          explanation: "M(13) + H(8) = 21, - K(11) = 10, + C(3) = 13. Tip: Work left to right, writing down each intermediate total! ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F","G","H"], rows: [{ cells: ["2","3","4","7","9","21","25","49"] }], compact: true } },
+          question: "Use this code: A=2, B=3, C=4, D=7, E=9, F=21, G=25, H=49. Work out (E − A) × (B + C) and write your answer as a letter.",
+          options: ["A","D","F","H","G"],
+          correct: 3,
+          explanation: "Both brackets first: 9 − 2 = 7 and 3 + 4 = 7, then 7 × 7 = 49. Here 49 is H. (No brackets 9 − 2 × 3 + 4 = 7 = D; multiplying by only the 3 gives 7 × 3 + 4 = 25 = G; dropping the + 4 gives 7 × 3 = 21 = F; the smallest number 2 = A is a trap.) ✓"
         },
         {
           id: 128,
           difficulty: 3,
-          visual: { component: "AlphabetLine", props: { showPositionNumbers: true, showEJOTY: true } },
-          question: "If A=1, B=2, C=3... what is O - F + D - A?",
-          options: ["10","11","12","13","14"],
-          correct: 2,
-          explanation: "O(15) - F(6) + D(4) - A(1) = 12. Work left to right: 15-6=9, 9+4=13, 13-1=12. Tip: Write down intermediate totals! ✓"
+          visual: { component: "CodeTable", props: { headers: ["A","B","C","D","E","F"], rows: [{ cells: ["3","4","5","15","20","40"] }], compact: true } },
+          question: "Use this code: A=3, B=4, C=5, D=15, E=20, F=40. Work out E ÷ B + A × C and write your answer as a letter.",
+          options: ["A","C","D","F","E"],
+          correct: 4,
+          explanation: "Divide and times before add: 20 ÷ 4 = 5 and 3 × 5 = 15, then 5 + 15 = 20. Here 20 is E. (Working left to right (5 + 3) × 5 = 40 = F; only 20 ÷ 4 = 5 = C; only 3 × 5 = 15 = D; the smallest number 3 = A is a trap.) ✓"
         }
       ]
     },
