@@ -1,0 +1,1673 @@
+[
+  {
+    "ref": "MOCK-comprehension#1",
+    "file": "mockComprehensionData.js",
+    "container": "mary-anning",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 1,
+    "question": "What does Mary's final quoted remark reveal about her?",
+    "correctText": "She felt the unfair treatment had affected her ability to trust others",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "She was joking about her difficult life",
+        "newText": "She was making a lighthearted joke about her hardships and did not truly mean it"
+      },
+      {
+        "index": 3,
+        "currentText": "She blamed herself for her lack of recognition",
+        "newText": "She believed her own lack of education was the reason she never received proper recognition"
+      },
+      {
+        "index": 4,
+        "currentText": "She was warning other women not to pursue science",
+        "newText": "She was warning other women that a career in science would only bring them disappointment and mistrust"
+      },
+      {
+        "index": 0,
+        "currentText": "She was bitter and had given up on people entirely",
+        "newText": "She had become so bitter that she had completely given up on other people and abandoned her work"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#2",
+    "file": "mockComprehensionData.js",
+    "container": "mary-anning",
+    "arr": "comprehensionQuestions",
+    "id": 14,
+    "correctIndex": 3,
+    "question": "Which of the following is NOT mentioned as one of Mary's discoveries?",
+    "correctText": "A Tyrannosaurus Rex tooth",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "An Ichthyosaurus skeleton",
+        "newText": "The complete skeleton of an Ichthyosaurus"
+      },
+      {
+        "index": 1,
+        "currentText": "A complete Plesiosaurus",
+        "newText": "The first complete Plesiosaurus, a long-necked reptile"
+      },
+      {
+        "index": 2,
+        "currentText": "A Pterodactyl specimen",
+        "newText": "The first British example of a flying Pterodactyl"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#3",
+    "file": "mockComprehensionData.js",
+    "container": "mary-anning",
+    "arr": "comprehensionQuestions",
+    "id": 17,
+    "correctIndex": 2,
+    "question": "What is the author's main purpose in writing this passage?",
+    "correctText": "To celebrate Mary's achievements and highlight the unfairness she faced",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To persuade readers to visit Lyme Regis",
+        "newText": "To persuade readers to visit the Jurassic Coast where her statue stands"
+      },
+      {
+        "index": 1,
+        "currentText": "To explain how fossils are formed in limestone",
+        "newText": "To explain how fossils form in the Blue Lias limestone of the Dorset cliffs"
+      },
+      {
+        "index": 4,
+        "currentText": "To describe the different types of prehistoric creatures",
+        "newText": "To describe the different prehistoric creatures whose fossils were found along the Dorset coast"
+      },
+      {
+        "index": 3,
+        "currentText": "To argue that women are better scientists than men",
+        "newText": "To argue that women make better scientists than men and should replace them in the field"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#4",
+    "file": "mockComprehensionData.js",
+    "container": "channel-tunnel",
+    "arr": "comprehensionQuestions",
+    "id": 8,
+    "correctIndex": 1,
+    "question": "What made the breakthrough on 1st December 1990 so remarkable?",
+    "correctText": "The two tunnels met with only centimetres of error after boring over 40 kilometres in total",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "It happened ahead of schedule",
+        "newText": "The two teams finished the breakthrough far ahead of the planned schedule despite all the earlier delays"
+      },
+      {
+        "index": 4,
+        "currentText": "The breakthrough happened at exactly midnight",
+        "newText": "The final section of rock was broken through at exactly midnight while millions of people watched on television"
+      },
+      {
+        "index": 3,
+        "currentText": "The workers had to dig through unexpectedly hard rock",
+        "newText": "The workers had to bore their way through unexpectedly hard rock that the boring machines struggled to cut through"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#5",
+    "file": "mockComprehensionData.js",
+    "container": "channel-tunnel",
+    "arr": "comprehensionQuestions",
+    "id": 11,
+    "correctIndex": 1,
+    "question": "What does the phrase 'white elephant' mean in paragraph 9?",
+    "correctText": "An expensive project that turns out to be useless or wasteful",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "A rare and valuable treasure",
+        "newText": "A rare and precious treasure that everyone wants to own and admire"
+      },
+      {
+        "index": 3,
+        "currentText": "A symbol of friendship between nations",
+        "newText": "A powerful symbol of the lasting friendship that formed between Britain and France"
+      },
+      {
+        "index": 4,
+        "currentText": "A very large building or structure",
+        "newText": "An enormous and impressive structure so large that it dominates the whole landscape around it"
+      },
+      {
+        "index": 2,
+        "currentText": "A construction project that takes too long",
+        "newText": "A construction project that takes far longer to finish than anyone had originally planned or expected"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#6",
+    "file": "mockComprehensionData.js",
+    "container": "channel-tunnel",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 1,
+    "question": "Why does the author describe the TBMs as 'mechanical moles'?",
+    "correctText": "Because they burrowed through the ground like the animal does",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Because they were small and furry",
+        "newText": "Because they were small and furry like the animals they were named after"
+      },
+      {
+        "index": 4,
+        "currentText": "Because they worked best in darkness",
+        "newText": "Because moles are blind and the machines could operate in complete underground darkness"
+      },
+      {
+        "index": 2,
+        "currentText": "Because they were designed by a scientist called Mole",
+        "newText": "Because they were designed by a famous engineer whose surname happened to be Mole"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#7",
+    "file": "mockComprehensionData.js",
+    "container": "channel-tunnel",
+    "arr": "comprehensionQuestions",
+    "id": 16,
+    "correctIndex": 2,
+    "question": "Why does the author begin the passage by describing the Channel as defeating armies and wrecking ships?",
+    "correctText": "To establish how formidable the barrier was, making the tunnel achievement more impressive",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To explain why the Channel is dangerous for boats",
+        "newText": "To explain why the Channel has always been such a dangerous stretch of water for boats"
+      },
+      {
+        "index": 1,
+        "currentText": "To give a history of naval warfare in the Channel",
+        "newText": "To provide a detailed history of the many naval battles and wars fought across the Channel"
+      },
+      {
+        "index": 3,
+        "currentText": "To argue that a bridge would have been a better solution",
+        "newText": "To argue that a bridge across the Channel would have been a far better solution than the tunnel"
+      },
+      {
+        "index": 4,
+        "currentText": "To show that the tunnel was unnecessary because boats already crossed it",
+        "newText": "To show that the tunnel was completely unnecessary because ships had already been crossing the Channel for centuries"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#8",
+    "file": "mockComprehensionData.js",
+    "container": "channel-tunnel",
+    "arr": "comprehensionQuestions",
+    "id": 18,
+    "correctIndex": 1,
+    "question": "Based on the information in the passage, which statement is most likely to be true in the future?",
+    "correctText": "The tunnel will continue to be an important transport and trade link",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "The Channel Tunnel will be replaced by a bridge",
+        "newText": "The Channel Tunnel will soon be replaced by a bridge linking the two countries"
+      },
+      {
+        "index": 2,
+        "currentText": "Eurotunnel will build a fourth tunnel beneath the Channel",
+        "newText": "Eurotunnel will build a fourth tunnel beneath the Channel to cope with increasing passenger demand"
+      },
+      {
+        "index": 3,
+        "currentText": "Passenger numbers will decline as people prefer to fly",
+        "newText": "Passenger numbers will steadily decline in the coming years as more travellers choose to fly instead"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#9",
+    "file": "mockComprehensionData.js",
+    "container": "deep-sea-creatures",
+    "arr": "comprehensionQuestions",
+    "id": 5,
+    "correctIndex": 1,
+    "question": "Why does the author compare our knowledge of the deep sea to our knowledge of Mars?",
+    "correctText": "To show how surprisingly little we know about our own oceans",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "To suggest we should stop exploring space",
+        "newText": "To suggest that we should stop exploring space until we understand our oceans"
+      },
+      {
+        "index": 3,
+        "currentText": "To explain why deep-sea creatures look alien",
+        "newText": "To explain why so many deep-sea creatures look strange and alien to human eyes"
+      },
+      {
+        "index": 0,
+        "currentText": "To prove that space exploration is more important",
+        "newText": "To prove that exploring distant planets like Mars matters more than exploring our own deep oceans"
+      },
+      {
+        "index": 4,
+        "currentText": "To argue that Mars might have oceans too",
+        "newText": "To argue that Mars might once have had deep oceans similar to the ones on Earth"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#10",
+    "file": "mockComprehensionData.js",
+    "container": "deep-sea-creatures",
+    "arr": "comprehensionQuestions",
+    "id": 7,
+    "correctIndex": 2,
+    "question": "Why is food 'desperately scarce' in the deep ocean?",
+    "correctText": "Without sunlight, no plants can grow to form the base of a food chain",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "The cold temperatures prevent animals from eating",
+        "newText": "The freezing temperatures near the ocean floor stop most animals from being able to eat properly"
+      },
+      {
+        "index": 3,
+        "currentText": "Pollution has killed most of the organisms",
+        "newText": "Human pollution reaching the deep ocean has killed off most of the organisms that once lived there"
+      },
+      {
+        "index": 0,
+        "currentText": "There are too many predators competing for food",
+        "newText": "There are far too many hungry predators all competing with one another for the same limited supply of food"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#11",
+    "file": "mockComprehensionData.js",
+    "container": "deep-sea-creatures",
+    "arr": "comprehensionQuestions",
+    "id": 11,
+    "correctIndex": 2,
+    "question": "What is the connection between deep-sea vents on Earth and Jupiter's moon Europa?",
+    "correctText": "Both might have conditions that could support life",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Both are equally well-explored by scientists",
+        "newText": "Both have already been thoroughly explored and mapped by scientists"
+      },
+      {
+        "index": 4,
+        "currentText": "Both are heated by the sun",
+        "newText": "Both are warmed by heat coming directly from the sun above"
+      },
+      {
+        "index": 0,
+        "currentText": "Both have the same species of bacteria",
+        "newText": "Both are home to exactly the same species of heat-loving bacteria"
+      },
+      {
+        "index": 3,
+        "currentText": "Both were discovered in the same year",
+        "newText": "Both were first discovered by scientists during the very same year of exploration"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#12",
+    "file": "mockComprehensionData.js",
+    "container": "deep-sea-creatures",
+    "arr": "comprehensionQuestions",
+    "id": 16,
+    "correctIndex": 1,
+    "question": "Why does the author describe the anglerfish's hunting method in detail?",
+    "correctText": "To give a vivid example of how bioluminescence is used for survival",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To frighten the reader about deep-sea creatures",
+        "newText": "To frighten the reader by making deep-sea creatures seem like terrifying monsters of the deep"
+      },
+      {
+        "index": 3,
+        "currentText": "To compare the anglerfish to creatures on land",
+        "newText": "To compare the anglerfish and its glowing lure with similar hunting creatures found on land"
+      },
+      {
+        "index": 2,
+        "currentText": "To explain why the anglerfish is the most dangerous deep-sea predator",
+        "newText": "To explain why the anglerfish is the most dangerous and deadly predator in the deep sea"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#13",
+    "file": "mockComprehensionData.js",
+    "container": "deep-sea-creatures",
+    "arr": "comprehensionQuestions",
+    "id": 17,
+    "correctIndex": 1,
+    "question": "What is the main message of the final paragraph?",
+    "correctText": "That we should be inspired by the resilience of life and motivated to protect the deep ocean",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "That marine biologists are the most important scientists",
+        "newText": "That marine biologists like Sylvia Earle are the most important and valuable scientists working anywhere in the world today"
+      },
+      {
+        "index": 0,
+        "currentText": "That deep-sea creatures are more dangerous than we thought",
+        "newText": "That the creatures living in the deep ocean are far more dangerous and threatening to humans than scientists had ever thought"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#14",
+    "file": "mockComprehensionData.js",
+    "container": "deep-sea-creatures",
+    "arr": "comprehensionQuestions",
+    "id": 18,
+    "correctIndex": 1,
+    "question": "What effect does the opening paragraph have on the reader?",
+    "correctText": "It makes the reader feel curious by describing an alien-like world on our own planet",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "It creates a relaxing, peaceful atmosphere",
+        "newText": "It creates a calm and peaceful atmosphere that makes the deep ocean feel gentle and welcoming"
+      },
+      {
+        "index": 3,
+        "currentText": "It makes the reader feel guilty about pollution",
+        "newText": "It makes the reader feel guilty about all the pollution that humans have dumped into the deep ocean"
+      },
+      {
+        "index": 4,
+        "currentText": "It bores the reader with too many statistics",
+        "newText": "It bores the reader by listing far too many dry statistics and numbers about the depth of the ocean"
+      },
+      {
+        "index": 2,
+        "currentText": "It confuses the reader with too many scientific terms",
+        "newText": "It confuses the reader by using far too many difficult scientific terms before the topic has even been introduced"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#15",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 6,
+    "correctIndex": 1,
+    "question": "This passage is best described as:",
+    "correctText": "A factual account of a historical event and its rediscovery",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "A scientific explanation of how volcanoes work",
+        "newText": "A scientific explanation of how volcanoes form and why they erupt"
+      },
+      {
+        "index": 0,
+        "currentText": "A diary entry written by a Pompeii resident",
+        "newText": "A personal diary entry written by a resident who lived through the eruption"
+      },
+      {
+        "index": 2,
+        "currentText": "A persuasive text arguing for the preservation of Pompeii",
+        "newText": "A persuasive text urging readers to help fund the preservation of the ruins of Pompeii"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#16",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 9,
+    "correctIndex": 2,
+    "question": "What does the graffiti found on Pompeii's walls tell us?",
+    "correctText": "That ordinary Romans had the same kinds of everyday thoughts and feelings as people today",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "That Roman children were poorly behaved",
+        "newText": "That Roman children were badly behaved and often scribbled rude words all over the walls of the city"
+      },
+      {
+        "index": 1,
+        "currentText": "That Romans had no system of writing",
+        "newText": "That the Romans had no proper system of writing and could only scratch simple pictures onto their walls"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#17",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 12,
+    "correctIndex": 2,
+    "question": "Why do archaeologists deliberately leave parts of Pompeii unexcavated?",
+    "correctText": "They want future generations with better technology to excavate them",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "They have run out of funding",
+        "newText": "They have completely run out of the funding needed to continue digging"
+      },
+      {
+        "index": 1,
+        "currentText": "The remaining sections are not interesting",
+        "newText": "The sections that remain buried are not thought to contain anything interesting or valuable"
+      },
+      {
+        "index": 3,
+        "currentText": "The Italian government has forbidden further digging",
+        "newText": "The Italian government has passed a law that forbids any further digging at the site"
+      },
+      {
+        "index": 4,
+        "currentText": "They are afraid of disturbing the volcano",
+        "newText": "They are afraid that digging further might somehow disturb the volcano and trigger another eruption"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#18",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 2,
+    "question": "What emotions would a visitor to Pompeii most likely feel when seeing the plaster body casts?",
+    "correctText": "Sadness and empathy for the people who died",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Amusement at how different Romans looked",
+        "newText": "Amusement at how strange and different the ancient Romans looked"
+      },
+      {
+        "index": 4,
+        "currentText": "Confusion about what the casts represent",
+        "newText": "Confusion about what the mysterious plaster casts are actually meant to represent"
+      },
+      {
+        "index": 1,
+        "currentText": "Boredom because they are just plaster shapes",
+        "newText": "Boredom because the casts are just dull grey shapes made of plaster"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#19",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 15,
+    "correctIndex": 2,
+    "question": "Which of these statements about the eruption is NOT supported by the passage?",
+    "correctText": "Most deaths were caused by buildings collapsing under the weight of ash",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "The eruption continued through the night",
+        "newText": "The eruption carried on all through the night and into the following early morning"
+      },
+      {
+        "index": 0,
+        "currentText": "The eruption column rose over thirty kilometres high",
+        "newText": "The towering column of ash and gas rose more than thirty kilometres up into the sky"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#20",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 16,
+    "correctIndex": 2,
+    "question": "Why does the author begin the passage by describing ordinary daily activities in Pompeii?",
+    "correctText": "To create a contrast between normal life and the disaster that followed",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "To show that Roman daily life was boring",
+        "newText": "To show that daily life in a Roman city like Pompeii was dull and boring"
+      },
+      {
+        "index": 1,
+        "currentText": "To prove that the eruption happened without warning",
+        "newText": "To prove that the people of Pompeii had been warned about the volcano but ignored it"
+      },
+      {
+        "index": 3,
+        "currentText": "To explain what a typical Roman city looked like",
+        "newText": "To explain in careful detail what a typical prosperous Roman city like Pompeii looked like"
+      },
+      {
+        "index": 4,
+        "currentText": "To demonstrate that Romans were similar to modern people",
+        "newText": "To demonstrate that ordinary Romans lived their daily lives in much the same way as modern people do"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#21",
+    "file": "mockComprehensionData.js",
+    "container": "pompeii",
+    "arr": "comprehensionQuestions",
+    "id": 17,
+    "correctIndex": 1,
+    "question": "Why does the author use the word 'paradoxically' in the final paragraph?",
+    "correctText": "Because something that caused destruction also caused preservation — two opposite outcomes",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Because the eruption was unexpected",
+        "newText": "Because the sudden eruption was completely unexpected by everyone living in the city"
+      },
+      {
+        "index": 4,
+        "currentText": "Because the author disagrees with Robert Harris",
+        "newText": "Because the author strongly disagrees with what the novelist Robert Harris wrote about the city"
+      },
+      {
+        "index": 3,
+        "currentText": "Because tourists both help and harm the site",
+        "newText": "Because the many tourists who visit the site both help to fund it and slowly damage it"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#22",
+    "file": "mockComprehensionData.js",
+    "container": "new-neighbourhood",
+    "arr": "comprehensionQuestions",
+    "id": 5,
+    "correctIndex": 1,
+    "question": "Why did Aisha arrange her books in alphabetical order?",
+    "correctText": "It was a way of creating something familiar and controlled in an unfamiliar place",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Her mum told her to",
+        "newText": "Her mother, who kept insisting the move would be brilliant, had ordered her to sort them"
+      },
+      {
+        "index": 2,
+        "currentText": "She needed to find a specific book quickly",
+        "newText": "She wanted to be able to find any particular book quickly once homework started at her new school"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#23",
+    "file": "mockComprehensionData.js",
+    "container": "new-neighbourhood",
+    "arr": "comprehensionQuestions",
+    "id": 8,
+    "correctIndex": 1,
+    "question": "Why does the author describe Aisha's mum's cheerfulness as 'relentless'?",
+    "correctText": "Because her mum would not stop being cheerful, even though it felt forced",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "Because relentless means gentle and kind",
+        "newText": "Because the word relentless is a gentle, soothing term describing a naturally warm and patient mother"
+      },
+      {
+        "index": 2,
+        "currentText": "Because her mum was trying to annoy Aisha",
+        "newText": "Because her mother repeated the phrase deliberately to irritate Aisha and wear down her objections to moving"
+      },
+      {
+        "index": 3,
+        "currentText": "Because her mum was always a cheerful person",
+        "newText": "Because her mother had always been a naturally cheerful person, long before the family ever decided to move"
+      },
+      {
+        "index": 0,
+        "currentText": "Because her mum was genuinely very happy about the move",
+        "newText": "Because her mother was genuinely delighted about the move to the new town and could not hide her joy"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#24",
+    "file": "mockComprehensionData.js",
+    "container": "new-neighbourhood",
+    "arr": "comprehensionQuestions",
+    "id": 9,
+    "correctIndex": 1,
+    "question": "What kind of person is Meg?",
+    "correctText": "Confident, creative, and friendly without being calculating",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Quiet, thoughtful, and shy",
+        "newText": "Quiet, reserved, and too shy to approach new people"
+      },
+      {
+        "index": 2,
+        "currentText": "Popular, sporty, and competitive",
+        "newText": "Popular and sporty, endlessly competing to win at everything"
+      },
+      {
+        "index": 3,
+        "currentText": "Nervous, careful, and easily upset",
+        "newText": "Nervous and careful, easily upset whenever anything goes slightly wrong"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#25",
+    "file": "mockComprehensionData.js",
+    "container": "new-neighbourhood",
+    "arr": "comprehensionQuestions",
+    "id": 12,
+    "correctIndex": 2,
+    "question": "What does the description of Meg's friends tell us about the group?",
+    "correctText": "They are individuals with different interests who accept each other",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "They all love art and painting",
+        "newText": "They all share a deep love of art and painting murals together"
+      },
+      {
+        "index": 1,
+        "currentText": "They are all very similar to each other",
+        "newText": "They are all very similar, sharing the same hobbies and the same personalities"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#26",
+    "file": "mockComprehensionData.js",
+    "container": "new-neighbourhood",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 2,
+    "question": "How does Aisha's attitude towards the school uniform change throughout the passage, and what does this represent?",
+    "correctText": "It changes from feeling like a costume to feeling like it belongs to her — representing her growing sense of belonging",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "She stops noticing it — showing she becomes distracted by friends",
+        "newText": "She gradually stops noticing the uniform altogether, which shows that her new friends have distracted her so completely that school itself no longer matters"
+      },
+      {
+        "index": 4,
+        "currentText": "She customises it to express her individuality — showing her confidence grows",
+        "newText": "She begins customising and decorating the blazer to express her individuality, which shows that her growing confidence has made her want to stand out"
+      },
+      {
+        "index": 1,
+        "currentText": "She loves it from the start — showing she is excited about the new school",
+        "newText": "She adores the maroon blazer from the very first morning, which shows that she was genuinely excited about starting at her new school all along"
+      },
+      {
+        "index": 0,
+        "currentText": "She hates it at first and continues to hate it — showing she never settles in",
+        "newText": "She hates the stiff new uniform at the beginning and goes on hating it right to the end, which shows that she never truly settles in"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#27",
+    "file": "mockComprehensionData.js",
+    "container": "new-neighbourhood",
+    "arr": "comprehensionQuestions",
+    "id": 17,
+    "correctIndex": 2,
+    "question": "What is the main theme of this passage?",
+    "correctText": "How new friendships can help someone find belonging in an unfamiliar place",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "The difficulties of being a parent",
+        "newText": "The struggles that parents face when they move their children to a completely new town"
+      },
+      {
+        "index": 0,
+        "currentText": "The importance of being good at art",
+        "newText": "How becoming skilled at painting and art can help a nervous child succeed at school"
+      },
+      {
+        "index": 1,
+        "currentText": "Why moving house is always a mistake",
+        "newText": "The idea that moving house is always a serious mistake that families should try hard to avoid"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#28",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 7,
+    "correctIndex": 1,
+    "question": "What is the main difference between Sam and Jess's personalities?",
+    "correctText": "Sam is cautious and thinks about risks; Jess is confident and acts without hesitation",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "Sam is practical; Jess is lazy",
+        "newText": "Sam is practical and hard-working, while Jess is lazy and unwilling to make any real effort"
+      },
+      {
+        "index": 3,
+        "currentText": "Sam loves the outdoors; Jess prefers staying at home",
+        "newText": "Sam loves being outdoors on adventures, while Jess would always rather stay safely at home indoors"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#29",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 8,
+    "correctIndex": 1,
+    "question": "Why had Grandpa Arthur never told anyone about the cave?",
+    "correctText": "He was planning to return with proper equipment but never did",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "He had forgotten about it",
+        "newText": "He had completely forgotten the cave existed in the many years since discovering it"
+      },
+      {
+        "index": 0,
+        "currentText": "The passage explains this in detail",
+        "newText": "The passage sets out his exact reasons clearly and in careful, complete detail"
+      },
+      {
+        "index": 2,
+        "currentText": "He was afraid of the cave",
+        "newText": "He was frightened of the dark, unexplored passage and never dared to venture inside"
+      },
+      {
+        "index": 3,
+        "currentText": "He wanted to sell it to the government",
+        "newText": "He was secretly hoping to sell the valuable cave to the government for a large sum"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#30",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 9,
+    "correctIndex": 2,
+    "question": "What does the description of the cave floor as 'smooth, worn by water that must have flowed here thousands of years ago' tell us?",
+    "correctText": "The cave is very ancient and water shaped it over a long period before finding a new path",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "The cave was recently formed",
+        "newText": "The cave was formed only very recently, in the last few years, by fast-moving water that is still carving the rock"
+      },
+      {
+        "index": 1,
+        "currentText": "Water still flows through the cave regularly",
+        "newText": "Water still flows regularly through the cave today, which is exactly what made the rock beneath their feet feel so smooth"
+      },
+      {
+        "index": 4,
+        "currentText": "The floor is dangerous because it is slippery",
+        "newText": "The floor is dangerous because the constant water has left it wet and slippery, making it very easy for the children to fall"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#31",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 10,
+    "correctIndex": 1,
+    "question": "Why does Jess whisper 'It's like a palace' rather than speaking normally?",
+    "correctText": "The cave was so beautiful it inspired a sense of awe and reverence",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "She was afraid someone might hear them",
+        "newText": "She was afraid that someone hiding deeper inside the cave might overhear them and discover them"
+      },
+      {
+        "index": 3,
+        "currentText": "Sam had asked her to be quiet",
+        "newText": "Sam had firmly told her to keep her voice down so they would not attract attention"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#32",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 11,
+    "correctIndex": 2,
+    "question": "How did Jess convince Sam to explore the cave?",
+    "correctText": "By appealing to their grandfather's memory and what he would have wanted",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "By bribing him with sweets",
+        "newText": "By bribing him with sweets and promising to share her pocket money afterwards"
+      },
+      {
+        "index": 0,
+        "currentText": "By threatening to go without him",
+        "newText": "By threatening to go into the dark cave alone if he refused to come with her"
+      },
+      {
+        "index": 3,
+        "currentText": "By promising it would be completely safe",
+        "newText": "By promising him that exploring the cave would be completely safe and free of any real danger"
+      },
+      {
+        "index": 4,
+        "currentText": "By saying their parents had given permission",
+        "newText": "By telling him that their parents had already given full permission for the two of them to explore"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#33",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 1,
+    "question": "What does Sam's decision at the end of the passage reveal about his character development?",
+    "correctText": "He is still cautious but the experience has made him willing to push beyond his comfort zone",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "He has completely overcome his fears",
+        "newText": "He has completely overcome every one of his fears and now feels no anxiety whatsoever about any kind of danger"
+      },
+      {
+        "index": 4,
+        "currentText": "He feels obligated to finish what his grandfather started",
+        "newText": "He feels a heavy sense of duty to finish the exploration that his grandfather began but was never able to complete"
+      },
+      {
+        "index": 0,
+        "currentText": "He has become reckless and no longer cares about danger",
+        "newText": "He has become completely reckless and no longer cares at all about the danger, throwing away the caution that once defined him"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#34",
+    "file": "mockComprehensionData.js",
+    "container": "cave-waterfall",
+    "arr": "comprehensionQuestions",
+    "id": 18,
+    "correctIndex": 1,
+    "question": "What effect does the author create by describing the cave formations in such vivid detail in paragraphs 9 and 10?",
+    "correctText": "It creates a sense of wonder and helps the reader visualise the extraordinary beauty of the cave",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "It makes the cave sound dangerous and unstable",
+        "newText": "It makes the cave sound dangerous and unstable, as though the heavy stone formations might suddenly collapse onto the children"
+      },
+      {
+        "index": 2,
+        "currentText": "It proves that the author has visited many caves",
+        "newText": "It proves that the author must have personally visited a great many real caves in order to describe them so accurately"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#35",
+    "file": "mockComprehensionData.js",
+    "container": "lighthouse-storms-end",
+    "arr": "comprehensionQuestions",
+    "id": 9,
+    "correctIndex": 1,
+    "question": "Why does Noor rule out Morse code?",
+    "correctText": "The pattern does not match any standard Morse character",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "She does not know Morse code",
+        "newText": "She has never learned Morse code and cannot read it at all"
+      },
+      {
+        "index": 2,
+        "currentText": "Morse code uses sound, not light",
+        "newText": "Morse code can only be sent using sound, never using flashes of light"
+      },
+      {
+        "index": 4,
+        "currentText": "She thinks Morse code is too old-fashioned",
+        "newText": "She thinks Morse code is far too old-fashioned for anyone to be using now"
+      },
+      {
+        "index": 3,
+        "currentText": "The signals were too slow for Morse code",
+        "newText": "The flashing signals appeared far too slowly to possibly be genuine Morse code"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#36",
+    "file": "mockComprehensionData.js",
+    "container": "lighthouse-storms-end",
+    "arr": "comprehensionQuestions",
+    "id": 12,
+    "correctIndex": 1,
+    "question": "How does Noor feel about living in Pencarrow?",
+    "correctText": "She has not fully settled but has found ways to cope with the isolation",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "She does not care where she lives",
+        "newText": "She does not care in the slightest where she lives, feeling equally at home anywhere"
+      },
+      {
+        "index": 0,
+        "currentText": "She loves it and has many close friends",
+        "newText": "She absolutely loves the village and has already made a large circle of close, loyal friends there"
+      },
+      {
+        "index": 2,
+        "currentText": "She hates it and wants to move back immediately",
+        "newText": "She hates living in Pencarrow so much that she is desperate to move straight back to her old home"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#37",
+    "file": "mockComprehensionData.js",
+    "container": "lighthouse-storms-end",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 1,
+    "question": "What is Noor's breakthrough at the end of the passage?",
+    "correctText": "She realises the inscription letters are musical notes, not code letters, and the light signals represent a melody",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "She deciphers a Morse code message",
+        "newText": "She finally manages to decipher a hidden Morse code message that spells out the name of the mysterious signaller"
+      },
+      {
+        "index": 0,
+        "currentText": "She discovers who is sending the signals",
+        "newText": "She works out exactly who has been climbing the lighthouse each night to send the mysterious flashing signals across the bay"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#38",
+    "file": "mockComprehensionData.js",
+    "container": "lighthouse-storms-end",
+    "arr": "comprehensionQuestions",
+    "id": 16,
+    "correctIndex": 1,
+    "question": "Why does the author reveal details about the light pattern gradually across several paragraphs rather than all at once?",
+    "correctText": "To build suspense and mirror the step-by-step process of solving a mystery",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "To make the passage longer",
+        "newText": "To make the passage much longer so that it fills more space on the page"
+      },
+      {
+        "index": 0,
+        "currentText": "Because the author forgot to include them earlier",
+        "newText": "Because the author simply forgot to include all of the details together earlier in the story"
+      },
+      {
+        "index": 4,
+        "currentText": "To test whether the reader is paying attention",
+        "newText": "To test whether the reader is paying close enough attention to remember all the earlier clues"
+      },
+      {
+        "index": 3,
+        "currentText": "Because Noor was confused and needed time to think",
+        "newText": "Because Noor herself was confused by the pattern and needed a long time to think it all through"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#39",
+    "file": "mockComprehensionData.js",
+    "container": "lighthouse-storms-end",
+    "arr": "comprehensionQuestions",
+    "id": 17,
+    "correctIndex": 2,
+    "question": "Why does the passage end with 'Noor was going to find out who' rather than revealing the answer?",
+    "correctText": "To create a cliffhanger that makes the reader want to read on",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "To frustrate the reader deliberately",
+        "newText": "To deliberately frustrate and annoy the reader by refusing to give them any answer"
+      },
+      {
+        "index": 0,
+        "currentText": "Because the author does not know who it is",
+        "newText": "Because the author has not yet decided who is sending the signals from the lighthouse"
+      },
+      {
+        "index": 3,
+        "currentText": "Because who is sending the signal is not important",
+        "newText": "Because the identity of the person sending the signals does not really matter to the story"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#40",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 4,
+    "correctIndex": 2,
+    "question": "Where does Boudicca's statue stand today?",
+    "correctText": "Victoria Embankment, near Westminster Bridge",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Trafalgar Square",
+        "newText": "In Trafalgar Square, close to Nelson's Column"
+      },
+      {
+        "index": 3,
+        "currentText": "Buckingham Palace",
+        "newText": "In the gardens outside Buckingham Palace, the royal residence"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#41",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 5,
+    "correctIndex": 2,
+    "question": "Why did King Prasutagus name the Roman emperor as co-heir in his will?",
+    "correctText": "Because he hoped it would protect his family from Roman aggression after his death",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "Because Roman law required it",
+        "newText": "Because Roman law compelled every conquered king to leave part of his kingdom to the emperor"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#42",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 7,
+    "correctIndex": 2,
+    "question": "Why did Suetonius Paulinus choose a narrow valley for the final battle?",
+    "correctText": "The confined space would neutralise Boudicca's huge numerical advantage",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "It was close to his supply base",
+        "newText": "It sat close to the supply base where his legions were provisioned"
+      },
+      {
+        "index": 1,
+        "currentText": "It was near London and easy to reach",
+        "newText": "It lay near London, making it quick for his forces to reach"
+      },
+      {
+        "index": 3,
+        "currentText": "The valley had water supplies for his soldiers",
+        "newText": "The valley contained fresh streams that would keep his ten thousand soldiers supplied"
+      },
+      {
+        "index": 4,
+        "currentText": "He wanted to trap Boudicca's army from behind",
+        "newText": "He intended to surround Boudicca's warriors from behind and cut off their retreat"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#43",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 8,
+    "correctIndex": 1,
+    "question": "What does the 'destruction layer' found in Colchester prove?",
+    "correctText": "That a catastrophic fire occurred at this location during Boudicca's rebellion",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "That the archaeology is unreliable",
+        "newText": "That the archaeological evidence from Colchester is confused and cannot be trusted"
+      },
+      {
+        "index": 3,
+        "currentText": "That Boudicca's army used advanced weapons",
+        "newText": "That Boudicca's warriors must have been armed with unusually advanced weapons for the period"
+      },
+      {
+        "index": 0,
+        "currentText": "That Colchester was built by the Romans",
+        "newText": "That Colchester was originally built and settled by the Romans as a colony for soldiers"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#44",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 10,
+    "correctIndex": 1,
+    "question": "What does Suetonius Paulinus's decision to abandon London suggest about him?",
+    "correctText": "He was a pragmatic military commander who prioritised winning the war over saving one city",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "He was tricked by Boudicca into leaving",
+        "newText": "He had been outwitted and deceived by one of Boudicca's clever schemes into abandoning the city"
+      },
+      {
+        "index": 0,
+        "currentText": "He was a coward who ran from danger",
+        "newText": "He was a frightened coward who fled from the approaching danger to save only his own life"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#45",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 11,
+    "correctIndex": 1,
+    "question": "What motivated Boudicca's rebellion?",
+    "correctText": "Fury at the cruel treatment of herself and her daughters, and the theft of her kingdom",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Religious differences with the Romans",
+        "newText": "A determination to defend the ancient Celtic religion and its priests against the new beliefs the Romans were imposing"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#46",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 16,
+    "correctIndex": 1,
+    "question": "Why does the author describe the placement of Boudicca's statue beside Parliament as 'deeply symbolic'?",
+    "correctText": "Because it is ironic that a woman who destroyed London now watches over its seat of government",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "Because the statue is the largest in London",
+        "newText": "Because the enormous bronze statue is the largest and most impressive monument anywhere in the whole of London"
+      },
+      {
+        "index": 0,
+        "currentText": "Because Parliament is the most visited building in London",
+        "newText": "Because the Houses of Parliament are the most visited and most photographed tourist building in the entire city of London"
+      },
+      {
+        "index": 3,
+        "currentText": "Because Boudicca was the first woman to sit in Parliament",
+        "newText": "Because Boudicca is remembered and honoured there as the very first woman ever to take her seat inside the English Parliament"
+      },
+      {
+        "index": 4,
+        "currentText": "Because the statue was built by the same people who built Parliament",
+        "newText": "Because the same craftsmen and architects who constructed the Houses of Parliament were also responsible for designing and casting the statue"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#47",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 17,
+    "correctIndex": 1,
+    "question": "What is the author's main purpose in this passage?",
+    "correctText": "To present a vivid, balanced account of a pivotal event in British history",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "To describe archaeological methods used at Colchester",
+        "newText": "To explain in detail the archaeological methods used to excavate the destruction layer at Colchester"
+      },
+      {
+        "index": 0,
+        "currentText": "To argue that the Romans should never have invaded Britain",
+        "newText": "To argue forcefully that the Roman invasion of Britain was wrong and should never have happened"
+      },
+      {
+        "index": 3,
+        "currentText": "To explain why Roman civilisation was superior to Celtic culture",
+        "newText": "To explain why Roman civilisation was far more advanced and superior to the culture of the Celtic tribes"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#48",
+    "file": "mockComprehensionData.js",
+    "container": "boudicca",
+    "arr": "comprehensionQuestions",
+    "id": 18,
+    "correctIndex": 1,
+    "question": "What effect does the opening sentence create?",
+    "correctText": "It immediately grabs attention by showing how one woman challenged the world's greatest empire",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "It creates a peaceful, calm atmosphere",
+        "newText": "It creates a peaceful and calm atmosphere that gently settles the reader before the story begins"
+      },
+      {
+        "index": 0,
+        "currentText": "It bores the reader with a date",
+        "newText": "It bores the reader by opening with a dull historical date instead of any real excitement"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#49",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 1,
+    "correctIndex": 1,
+    "question": "Where is the Lambton estate located?",
+    "correctText": "Near the River Wear in County Durham",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Near the River Thames",
+        "newText": "Beside the River Thames in the south of England"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#50",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 2,
+    "correctIndex": 2,
+    "question": "What was John Lambton doing when he caught the creature?",
+    "correctText": "Fishing instead of going to church",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Walking his dog",
+        "newText": "Taking his father's greyhound for a walk"
+      },
+      {
+        "index": 4,
+        "currentText": "Exploring a cave",
+        "newText": "Exploring a dark cave in the nearby hills"
+      },
+      {
+        "index": 0,
+        "currentText": "Hunting in the forest",
+        "newText": "Hunting wild animals in the forest near the estate"
+      },
+      {
+        "index": 1,
+        "currentText": "Swimming in the river",
+        "newText": "Swimming in the cold waters of the River Wear one morning"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#51",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 8,
+    "correctIndex": 1,
+    "question": "Why did John's plan to kill the greyhound fail?",
+    "correctText": "John's father forgot the plan and ran out before the dog was released",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "The greyhound escaped from the castle",
+        "newText": "The greyhound broke free and escaped from the castle before the horn signal was given"
+      },
+      {
+        "index": 4,
+        "currentText": "The greyhound was faster than John's father",
+        "newText": "The greyhound ran faster than John's father and reached the rock first after the horn"
+      },
+      {
+        "index": 2,
+        "currentText": "John could not find his sword after the battle",
+        "newText": "John was unable to find his sword after the exhausting battle and could not kill the animal"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#52",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 10,
+    "correctIndex": 2,
+    "question": "How had John Lambton changed by the time he returned from the Crusades?",
+    "correctText": "He had matured and was willing to take responsibility for his past mistake",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "He had forgotten about the creature entirely",
+        "newText": "He had completely forgotten about the creature he once threw into the well as a boy"
+      },
+      {
+        "index": 0,
+        "currentText": "He had become even more reckless and irresponsible",
+        "newText": "He had grown even more reckless and irresponsible than he had been in his wild youth"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#53",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 11,
+    "correctIndex": 2,
+    "question": "Why could John not bring himself to kill his father?",
+    "correctText": "Natural love and morality prevented him from killing his own parent",
+    "rewrites": [
+      {
+        "index": 1,
+        "currentText": "His father was wearing armour",
+        "newText": "His father was protected by thick armour that no ordinary weapon could pierce"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#54",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 12,
+    "correctIndex": 1,
+    "question": "Why does the author say the curse was 'finally fulfilled' when the ninth Lord Lambton died?",
+    "correctText": "Because the wise woman had specified nine generations, and this was the ninth",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Because the Worm returned and killed him",
+        "newText": "Because the Worm returned from the river after many years and finally killed the ninth lord"
+      },
+      {
+        "index": 4,
+        "currentText": "Because the family ran out of heirs",
+        "newText": "Because after the ninth lord died there were no heirs left to continue the Lambton family line"
+      },
+      {
+        "index": 0,
+        "currentText": "Because the ninth lord was the first to die peacefully",
+        "newText": "Because the ninth lord was the very first Lambton to die peacefully and quietly in his own bed"
+      },
+      {
+        "index": 2,
+        "currentText": "Because the ninth lord broke the curse with a magic spell",
+        "newText": "Because the ninth lord discovered a powerful magic spell that finally broke the ancient family curse forever"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#55",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 2,
+    "question": "What does the author's tone in the first paragraph suggest about how they view the legend?",
+    "correctText": "They are affectionately amused by it while acknowledging it is probably not factual",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "They are frightened by the story",
+        "newText": "They are genuinely frightened by the gruesome story and warn readers to take it seriously"
+      },
+      {
+        "index": 4,
+        "currentText": "They think it should be forgotten",
+        "newText": "They believe the old legend is embarrassing and should quietly be forgotten by the local people"
+      },
+      {
+        "index": 0,
+        "currentText": "They believe every detail is historically accurate",
+        "newText": "They firmly believe that every single detail of the legend is completely true and historically accurate"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#56",
+    "file": "mockComprehensionData.js",
+    "container": "lambton-worm",
+    "arr": "comprehensionQuestions",
+    "id": 18,
+    "correctIndex": 1,
+    "question": "What effect does the detail of the father running out 'arms outstretched, tears streaming down his face' create?",
+    "correctText": "It creates sympathy because his reaction is completely natural — a father relieved his son is alive",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "It shows that the father never loved John",
+        "newText": "It shows that the father never truly loved John and cared nothing for whether he lived or died"
+      },
+      {
+        "index": 2,
+        "currentText": "It creates humour because the father's behaviour is comical",
+        "newText": "It creates humour because the father's clumsy and comical behaviour makes the reader laugh out loud at the whole scene"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#57",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 5,
+    "correctIndex": 1,
+    "question": "Why were red kites protected by law in medieval London?",
+    "correctText": "Because they performed a useful role cleaning the streets of waste",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Because they were already very rare",
+        "newText": "Because they had already become extremely rare and needed protection from hunters"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#58",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 6,
+    "correctIndex": 2,
+    "question": "This passage is best described as:",
+    "correctText": "An informative account of a wildlife conservation programme",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "A scientific paper about bird genetics",
+        "newText": "A technical scientific paper focused entirely on red kite genetics"
+      },
+      {
+        "index": 0,
+        "currentText": "A fictional story about a bird rescue",
+        "newText": "A fictional adventure story about the rescue of a single bird"
+      },
+      {
+        "index": 1,
+        "currentText": "A persuasive letter arguing against game shooting",
+        "newText": "A persuasive letter written to campaign against the practice of game shooting"
+      },
+      {
+        "index": 4,
+        "currentText": "A travel guide to the Chiltern Hills",
+        "newText": "A travel guide describing places to visit across the beautiful Chiltern Hills"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#59",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 7,
+    "correctIndex": 2,
+    "question": "Why were the Welsh kites slow to recover on their own?",
+    "correctText": "The remaining population was so inbred that fertility was low and many eggs failed",
+    "rewrites": [
+      {
+        "index": 3,
+        "currentText": "Welsh farmers refused to protect them",
+        "newText": "Welsh farmers refused to protect the birds and instead drove them away from all their land"
+      },
+      {
+        "index": 0,
+        "currentText": "There were too many predators in Wales",
+        "newText": "There were far too many other predators in the remote Welsh valleys that hunted and competed with them"
+      },
+      {
+        "index": 4,
+        "currentText": "There was not enough food in Wales",
+        "newText": "There was simply not enough food in the remote Welsh oak valleys to support a steadily growing population"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#60",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 8,
+    "correctIndex": 3,
+    "question": "Why did conservationists import kites from Sweden and Spain rather than using Welsh kites?",
+    "correctText": "The Welsh population was too small and inbred to provide healthy birds for new sites",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Welsh kites were a different species",
+        "newText": "The Welsh kites belonged to a completely different species that could not breed with the others"
+      },
+      {
+        "index": 2,
+        "currentText": "Foreign kites were cheaper to obtain",
+        "newText": "Importing young kites from Sweden and Spain turned out to be far cheaper than capturing the protected Welsh birds"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#61",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 12,
+    "correctIndex": 2,
+    "question": "What do the satellite tracking data reveal about kite behaviour?",
+    "correctText": "That individual birds can travel over three hundred kilometres from their release sites",
+    "rewrites": [
+      {
+        "index": 4,
+        "currentText": "That kites avoid urban areas completely",
+        "newText": "That kites completely avoid all urban areas and never fly near towns or busy roads"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#62",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 13,
+    "correctIndex": 1,
+    "question": "What does the phrase 'carrying capacity of the available habitat' mean in paragraph 11?",
+    "correctText": "The maximum number of kites the environment can sustainably feed and house",
+    "rewrites": [
+      {
+        "index": 2,
+        "currentText": "The distance kites can carry food",
+        "newText": "The maximum distance a kite is able to carry food back to its nest"
+      },
+      {
+        "index": 0,
+        "currentText": "The maximum weight the land can support",
+        "newText": "The maximum total weight of birds and animals that the land is able to support"
+      },
+      {
+        "index": 3,
+        "currentText": "The amount of pollution the habitat can absorb",
+        "newText": "The amount of pollution and waste that the surrounding habitat is able to safely absorb"
+      },
+      {
+        "index": 4,
+        "currentText": "The number of species that can live together",
+        "newText": "The total number of different bird and animal species that can live together in one shared habitat"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#63",
+    "file": "mockComprehensionData.js",
+    "container": "red-kite",
+    "arr": "comprehensionQuestions",
+    "id": 14,
+    "correctIndex": 3,
+    "question": "Which of the following is NOT mentioned as a threat to red kites?",
+    "correctText": "Loss of habitat to housing development",
+    "rewrites": [
+      {
+        "index": 0,
+        "currentText": "Illegal poisoning",
+        "newText": "Illegal poisoning by gamekeepers on shooting estates"
+      },
+      {
+        "index": 1,
+        "currentText": "Vehicle collisions",
+        "newText": "Fatal collisions with vehicles on busy roads and motorways"
+      },
+      {
+        "index": 2,
+        "currentText": "Competition with buzzards",
+        "newText": "Growing competition for food with the expanding buzzard population"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1088 @@
+[
+  {
+    "ref": "MOCK-comprehension#1",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "comprehensionQuestions",
+      "id": 13,
+      "correctIndex": 1,
+      "questionHead": "What does Mary's final quoted remark"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 3,
+    "subtype": "character-inference",
+    "question": "What does Mary's final quoted remark reveal about her?",
+    "correctAnswer": "She felt the unfair treatment had affected her ability to trust others",
+    "correctWords": 12,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 2,
+        "currentText": "She was joking about her difficult life",
+        "currentWords": 7,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "She blamed herself for her lack of recognition",
+        "currentWords": 8,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "She was warning other women not to pursue science",
+        "currentWords": 9,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "She was bitter and had given up on people entirely",
+        "currentWords": 10,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#2",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "comprehensionQuestions",
+      "id": 14,
+      "correctIndex": 3,
+      "questionHead": "Which of the following is NOT"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 3,
+    "subtype": "negative-retrieval",
+    "question": "Which of the following is NOT mentioned as one of Mary's discoveries?",
+    "correctAnswer": "A Tyrannosaurus Rex tooth",
+    "correctWords": 4,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "An Ichthyosaurus skeleton",
+        "currentWords": 3,
+        "targetMinWords": 5,
+        "targetMaxWords": 7,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "A complete Plesiosaurus",
+        "currentWords": 3,
+        "targetMinWords": 6,
+        "targetMaxWords": 8,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "A Pterodactyl specimen",
+        "currentWords": 3,
+        "targetMinWords": 7,
+        "targetMaxWords": 9,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "Fossilised animal droppings"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#3",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "mary-anning",
+      "arr": "comprehensionQuestions",
+      "id": 17,
+      "correctIndex": 2,
+      "questionHead": "What is the author's main purpose"
+    },
+    "passageTitle": "Mary Anning: The Fossil Hunter of Lyme Regis",
+    "passage": "(1) On a wild winter's day in 1811, a twelve-year-old girl scrambled along the crumbling cliffs near Lyme Regis in Dorset. The wind tugged at her bonnet and the sea crashed against the rocks below, but Mary Anning barely noticed. Her eyes were fixed on something extraordinary — a row of huge, stony bones jutting out from the dark cliff face. Her brother Joseph had spotted a peculiar skull in the same stretch of rock a year earlier, but what Mary was uncovering now was far more remarkable: the complete skeleton of a creature that no living person had ever seen.\n\n(2) Mary had been hunting for fossils since she was old enough to walk. Her father, Richard, was a cabinetmaker who earned extra money by collecting curiosities from the cliffs and selling them to tourists. He had taught both his children to recognise the coiled shells and strange stone shapes that tumbled from the crumbling Blue Lias limestone after heavy storms. When Richard died in 1810, leaving the family in desperate poverty, Mary and Joseph continued the dangerous work. It was no hobby — it was their survival.\n\n(3) The skeleton Mary unearthed that winter took months of painstaking effort to extract. Local quarrymen were hired to help chip away the surrounding rock, and gradually an astonishing creature emerged: over five metres long, with a dolphin-like snout packed with razor-sharp teeth, enormous eye sockets, and four paddle-shaped limbs. Scientists in London were electrified. Nothing like it had ever been recorded. They named it Ichthyosaurus, meaning 'fish lizard', and the discovery made headlines across Europe.\n\n(4) Yet despite her extraordinary find, Mary received little recognition. She was a woman in a world where science was considered a gentleman's pursuit. She had received almost no formal education, having attended only a church school where she learned to read and write. The wealthy men who purchased her fossils often published papers about them without mentioning her name. Mary was expected to be grateful for their business, not their respect.\n\n(5) Undeterred, Mary continued her work with fierce determination. She became the most knowledgeable fossil hunter in Britain, teaching herself anatomy, geology, and scientific illustration. She would spend hours copying detailed diagrams from books she borrowed, and she dissected modern fish and cuttlefish to better understand the ancient creatures she was finding. Her technical skill was remarkable — she could identify a fossil species from a single fragment of bone.\n\n(6) In 1823, Mary made another sensational discovery: the first complete Plesiosaurus, a marine reptile with a tiny head, extraordinarily long neck, and broad, flat body. The specimen was so unusual that some scientists initially accused her of faking it, claiming she had attached the neck of a sea serpent to the body of a different animal. The great French anatomist Georges Cuvier examined her work and declared it entirely genuine, silencing the doubters.\n\n(7) Mary's finds continued to reshape scientific understanding. In 1828, she discovered the first British example of a Pterodactyl — a flying reptile — and also identified strange stones found inside fossil skeletons as coprolites, or fossilised animal droppings. This last discovery might sound unpleasant, but it was scientifically revolutionary: by examining coprolites, scientists could determine what prehistoric creatures had eaten, opening an entirely new field of research.\n\n(8) Life for Mary, however, remained a constant struggle. The fossil trade was unpredictable — months could pass without a significant find, and the family frequently teetered on the edge of financial ruin. The cliffs themselves were treacherous. In 1833, a landslide killed her beloved dog, Tray, and came within inches of taking Mary's own life. She wrote to a friend afterwards: \"The cliff fell upon my poor dog and killed him in a moment before my eyes.\"\n\n(9) Despite these hardships, Mary's reputation grew steadily among the scientific community, even if public recognition remained elusive. Prominent geologists including Henry De la Beche, William Buckland, and Richard Owen all relied on her expertise. De la Beche painted a famous watercolour called 'Duria Antiquior' — meaning 'a more ancient Dorset' — depicting the prehistoric world based entirely on Mary's discoveries. He sold prints of it to raise money for her when she was struggling financially.\n\n(10) Sadly, Mary Anning did not live to see her contributions fully acknowledged. She was diagnosed with breast cancer in 1846 and died on 9th March 1847, aged just forty-seven. The Geological Society of London — which did not admit women as members until 1904 — published an obituary praising her remarkable achievements. It was one of the few times the Society had honoured someone who was not a fellow member.\n\n(11) Today, Mary Anning is celebrated as one of the most important figures in the history of palaeontology. The stretch of Dorset coastline where she made her discoveries is now a UNESCO World Heritage Site, known as the Jurassic Coast. A statue of Mary, striding forward with her hammer and basket, stands on the seafront at Lyme Regis. In 2024, the Royal Mint featured her on a commemorative fifty-pence coin.\n\n(12) Mary Anning's story is not simply one of scientific brilliance, though she possessed that in abundance. It is a story of perseverance against poverty, prejudice, and physical danger. She proved that great discoveries are not the preserve of the privileged, and that curiosity, determination, and careful observation can change the way we understand the world. As she once remarked, with characteristic modesty: \"The world has used me so unkindly, I fear it has made me suspicious of everyone.\"",
+    "difficulty": 3,
+    "subtype": "author-purpose",
+    "question": "What is the author's main purpose in writing this passage?",
+    "correctAnswer": "To celebrate Mary's achievements and highlight the unfairness she faced",
+    "correctWords": 10,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To persuade readers to visit Lyme Regis",
+        "currentWords": 7,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To explain how fossils are formed in limestone",
+        "currentWords": 8,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "To describe the different types of prehistoric creatures",
+        "currentWords": 8,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To argue that women are better scientists than men",
+        "currentWords": 9,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#4",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "comprehensionQuestions",
+      "id": 8,
+      "correctIndex": 1,
+      "questionHead": "What made the breakthrough on 1st"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 2,
+    "subtype": "inference",
+    "question": "What made the breakthrough on 1st December 1990 so remarkable?",
+    "correctAnswer": "The two tunnels met with only centimetres of error after boring over 40 kilometres in total",
+    "correctWords": 16,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "It happened ahead of schedule",
+        "currentWords": 5,
+        "targetMinWords": 17,
+        "targetMaxWords": 19,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "The breakthrough happened at exactly midnight",
+        "currentWords": 6,
+        "targetMinWords": 18,
+        "targetMaxWords": 20,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "The workers had to dig through unexpectedly hard rock",
+        "currentWords": 9,
+        "targetMinWords": 19,
+        "targetMaxWords": 21,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "It was the first tunnel ever bored beneath a sea"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#5",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "comprehensionQuestions",
+      "id": 11,
+      "correctIndex": 1,
+      "questionHead": "What does the phrase 'white elephant'"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 2,
+    "subtype": "inference",
+    "question": "What does the phrase 'white elephant' mean in paragraph 9?",
+    "correctAnswer": "An expensive project that turns out to be useless or wasteful",
+    "correctWords": 11,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "A rare and valuable treasure",
+        "currentWords": 5,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "A symbol of friendship between nations",
+        "currentWords": 6,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "A very large building or structure",
+        "currentWords": 6,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "A construction project that takes too long",
+        "currentWords": 7,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#6",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "comprehensionQuestions",
+      "id": 13,
+      "correctIndex": 1,
+      "questionHead": "Why does the author describe the"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 3,
+    "subtype": "inference",
+    "question": "Why does the author describe the TBMs as 'mechanical moles'?",
+    "correctAnswer": "Because they burrowed through the ground like the animal does",
+    "correctWords": 10,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Because they were small and furry",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Because they worked best in darkness",
+        "currentWords": 6,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Because they were designed by a scientist called Mole",
+        "currentWords": 9,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Because they were used to search for underground creatures"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#7",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "comprehensionQuestions",
+      "id": 16,
+      "correctIndex": 2,
+      "questionHead": "Why does the author begin the"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 3,
+    "subtype": "author-purpose",
+    "question": "Why does the author begin the passage by describing the Channel as defeating armies and wrecking ships?",
+    "correctAnswer": "To establish how formidable the barrier was, making the tunnel achievement more impressive",
+    "correctWords": 13,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To explain why the Channel is dangerous for boats",
+        "currentWords": 9,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To give a history of naval warfare in the Channel",
+        "currentWords": 10,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To argue that a bridge would have been a better solution",
+        "currentWords": 11,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "To show that the tunnel was unnecessary because boats already crossed it",
+        "currentWords": 12,
+        "targetMinWords": 17,
+        "targetMaxWords": 19,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#8",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "channel-tunnel",
+      "arr": "comprehensionQuestions",
+      "id": 18,
+      "correctIndex": 1,
+      "questionHead": "Based on the information in the"
+    },
+    "passageTitle": "The Building of the Channel Tunnel",
+    "passage": "(1) For centuries, the narrow strip of water separating England from France seemed like an impossible barrier. Just thirty-four kilometres wide at its narrowest point, the English Channel had defeated armies, wrecked countless ships, and frustrated engineers who dreamed of bridging the gap. Yet beneath those grey, churning waves lay a layer of chalk marl — a soft, waterproof rock — that would eventually make one of the most ambitious construction projects in history possible.\n\n(2) The idea of a tunnel under the Channel was not new. As early as 1802, a French mining engineer named Albert Mathieu proposed digging a passage beneath the seabed, lit by oil lamps and ventilated by chimneys poking above the waves. Napoleon Bonaparte reportedly considered the scheme, imagining his soldiers marching beneath the sea to invade England. The British government, unsurprisingly, was not enthusiastic. For the next two hundred years, proposals came and went. Tunnels were started and abandoned. Politicians argued. Engineers drew plans that gathered dust.\n\n(3) It was not until 1986 that the British and French governments finally signed the Treaty of Canterbury, committing both nations to building a fixed link beneath the Channel. The project would be privately funded — no taxpayer money — and would be delivered by a consortium of construction companies and banks called Eurotunnel. The estimated cost was £4.65 billion. The actual cost, when the tunnel finally opened eight years later, would be more than double that figure.\n\n(4) The engineering challenge was staggering. Workers would need to bore three parallel tunnels through the chalk marl: two for trains — one running north, one south — and a smaller service tunnel between them for maintenance and emergency evacuation. Each running tunnel would be 7.6 metres in diameter, large enough to accommodate double-decker trains travelling at 160 kilometres per hour. The total length of tunnelling required, including cross-passages connecting the three tunnels every 375 metres, was over 150 kilometres.\n\n(5) To accomplish this, engineers deployed eleven enormous tunnel boring machines, or TBMs. These extraordinary devices were mechanical moles, each weighing over a thousand tonnes and stretching the length of two football pitches. At the front, a rotating cutting head studded with tungsten carbide teeth gnawed through the chalk at a rate of roughly fifteen metres per day. Behind the cutting head, the machine automatically lined the freshly cut tunnel with pre-cast concrete segments, bolting each ring into place before inching forward again.\n\n(6) Six TBMs started from the English side at Folkestone, boring southward beneath the seabed. Five more started from the French side at Coquelles, near Calais, boring northward. The machines worked around the clock in three eight-hour shifts, and at the peak of construction over fifteen thousand workers were employed on both sides of the Channel. The conditions underground were harsh: temperatures reached thirty degrees, the air was thick with chalk dust, and the noise from the boring machines was relentless. Workers wore ear defenders and breathed through filtered masks.\n\n(7) The most nerve-wracking moment in the entire project came on 1st December 1990. Deep beneath the seabed, roughly fifteen kilometres from each shore, the British and French service tunnel teams were closing in on each other. Using laser guidance systems and satellite positioning, the two teams had been steering their TBMs towards a meeting point with astonishing precision. When the final section of rock was broken through, the gap between the two tunnels was just a few centimetres — a remarkable feat of engineering, given that each team had bored over twenty kilometres through pitch darkness.\n\n(8) Graham Fagg, a British construction worker, and Philippe Cozette, his French counterpart, shook hands through the breakthrough hole. It was the first time since the Ice Age, over eight thousand years earlier, that Britain and France had been physically connected. Flags were waved, champagne was sprayed, and the moment was broadcast live on television across the world. Fagg later recalled that pushing through the final chunk of chalk was \"the most emotional moment of my life.\"\n\n(9) Yet the celebrations masked serious problems. The project was massively over budget, eventually costing £9.5 billion — more than twice the original estimate. Eurotunnel was drowning in debt, and the company would later need to restructure its finances to avoid collapse. Construction had also been plagued by setbacks: flooding, equipment breakdowns, labour disputes, and a devastating fire in 1996 that closed one tunnel for six months. Critics who had always dismissed the project as a white elephant felt vindicated.\n\n(10) Despite these difficulties, the Channel Tunnel — or 'Chunnel' as it became known — transformed travel between Britain and continental Europe. When it opened on 6th May 1994, passengers could travel from London to Paris in just three hours by Eurostar train. Today, that journey takes little more than two hours. Over twenty million passengers use the Eurostar each year, and millions more vehicles cross through the tunnel aboard Le Shuttle, a drive-on, drive-off train service that completes the crossing in just thirty-five minutes.\n\n(11) The tunnel also carries an enormous volume of freight. Around a quarter of all trade in goods between Britain and the European Union passes through the Channel Tunnel, making it one of the most economically important pieces of infrastructure in Europe. The three tunnels stretch 50.45 kilometres in total, of which 37.9 kilometres run beneath the sea — making it the longest undersea tunnel in the world until Japan's Seikan Tunnel reclaimed that record in terms of total length.\n\n(12) The Channel Tunnel stands as a monument to what human ingenuity and international cooperation can achieve. It was delivered late, it cost too much, and it very nearly bankrupted the company that built it. But it fundamentally changed the relationship between two nations that had spent much of their history as rivals. As one French engineer remarked during the breakthrough celebrations: \"We have not just connected two countries. We have connected two ways of life.\"",
+    "difficulty": 3,
+    "subtype": "prediction",
+    "question": "Based on the information in the passage, which statement is most likely to be true in the future?",
+    "correctAnswer": "The tunnel will continue to be an important transport and trade link",
+    "correctWords": 12,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "The Channel Tunnel will be replaced by a bridge",
+        "currentWords": 9,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "Eurotunnel will build a fourth tunnel beneath the Channel",
+        "currentWords": 9,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Passenger numbers will decline as people prefer to fly",
+        "currentWords": 9,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "The tunnel will be closed permanently due to rising sea levels"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#9",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "comprehensionQuestions",
+      "id": 5,
+      "correctIndex": 1,
+      "questionHead": "Why does the author compare our"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 1,
+    "subtype": "inference",
+    "question": "Why does the author compare our knowledge of the deep sea to our knowledge of Mars?",
+    "correctAnswer": "To show how surprisingly little we know about our own oceans",
+    "correctWords": 11,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 2,
+        "currentText": "To suggest we should stop exploring space",
+        "currentWords": 7,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To explain why deep-sea creatures look alien",
+        "currentWords": 7,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "To prove that space exploration is more important",
+        "currentWords": 8,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "To argue that Mars might have oceans too",
+        "currentWords": 8,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#10",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "comprehensionQuestions",
+      "id": 7,
+      "correctIndex": 2,
+      "questionHead": "Why is food 'desperately scarce' in"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 2,
+    "subtype": "inference",
+    "question": "Why is food 'desperately scarce' in the deep ocean?",
+    "correctAnswer": "Without sunlight, no plants can grow to form the base of a food chain",
+    "correctWords": 14,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "The cold temperatures prevent animals from eating",
+        "currentWords": 7,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Pollution has killed most of the organisms",
+        "currentWords": 7,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "There are too many predators competing for food",
+        "currentWords": 8,
+        "targetMinWords": 17,
+        "targetMaxWords": 19,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "The pressure makes it impossible for animals to digest food"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#11",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "comprehensionQuestions",
+      "id": 11,
+      "correctIndex": 2,
+      "questionHead": "What is the connection between deep-sea"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 2,
+    "subtype": "inference",
+    "question": "What is the connection between deep-sea vents on Earth and Jupiter's moon Europa?",
+    "correctAnswer": "Both might have conditions that could support life",
+    "correctWords": 8,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 1,
+        "currentText": "Both are equally well-explored by scientists",
+        "currentWords": 6,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Both are heated by the sun",
+        "currentWords": 6,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "Both have the same species of bacteria",
+        "currentWords": 7,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Both were discovered in the same year",
+        "currentWords": 7,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#12",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "comprehensionQuestions",
+      "id": 16,
+      "correctIndex": 1,
+      "questionHead": "Why does the author describe the"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 3,
+    "subtype": "author-purpose",
+    "question": "Why does the author describe the anglerfish's hunting method in detail?",
+    "correctAnswer": "To give a vivid example of how bioluminescence is used for survival",
+    "correctWords": 12,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To frighten the reader about deep-sea creatures",
+        "currentWords": 7,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To compare the anglerfish to creatures on land",
+        "currentWords": 8,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "To explain why the anglerfish is the most dangerous deep-sea predator",
+        "currentWords": 11,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 4,
+        "text": "To show that the anglerfish is the most common deep-sea fish"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#13",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "comprehensionQuestions",
+      "id": 17,
+      "correctIndex": 1,
+      "questionHead": "What is the main message of"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 3,
+    "subtype": "author-purpose",
+    "question": "What is the main message of the final paragraph?",
+    "correctAnswer": "That we should be inspired by the resilience of life and motivated to protect the deep ocean",
+    "correctWords": 17,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 2,
+        "currentText": "That marine biologists are the most important scientists",
+        "currentWords": 8,
+        "targetMinWords": 18,
+        "targetMaxWords": 20,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "That deep-sea creatures are more dangerous than we thought",
+        "currentWords": 9,
+        "targetMinWords": 19,
+        "targetMaxWords": 21,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "That we will never fully understand the deep sea"
+      },
+      {
+        "index": 4,
+        "text": "That life on Earth began in the deep ocean"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#14",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "deep-sea-creatures",
+      "arr": "comprehensionQuestions",
+      "id": 18,
+      "correctIndex": 1,
+      "questionHead": "What effect does the opening paragraph"
+    },
+    "passageTitle": "The Secret World of Deep-Sea Creatures",
+    "passage": "(1) Imagine a world of absolute darkness, where the pressure would crush a submarine like a tin can, where the temperature hovers just above freezing, and where no plant can grow. This is the deep ocean — the largest habitat on Earth and one of the least explored. Scientists estimate that more than eighty per cent of the ocean floor has never been mapped, photographed, or even visited by humans. We know more about the surface of Mars than we do about the bottom of our own seas.\n\n(2) The deep sea begins where sunlight can no longer penetrate the water, roughly two hundred metres below the surface. This boundary is called the photic zone, and below it lies a world that operates by entirely different rules. Without sunlight, photosynthesis is impossible, which means there are no plants, no algae, and no coral reefs. Food is desperately scarce. Most deep-sea creatures survive on what scientists grimly call 'marine snow' — a constant, gentle rain of dead organisms, waste, and fragments that drift down from the sunlit waters above.\n\n(3) To survive in this extreme environment, deep-sea creatures have evolved some of the most extraordinary adaptations in the animal kingdom. Perhaps the most spectacular is bioluminescence — the ability to produce light from within their own bodies. An estimated ninety per cent of deep-sea animals can generate light, using it to attract prey, confuse predators, or communicate with potential mates. The anglerfish, one of the ocean's most recognisable deep-sea inhabitants, dangles a glowing lure from a modified spine above its head, tempting smaller fish towards its enormous, fang-lined jaws.\n\n(4) The giant squid is another creature that has captivated human imagination for centuries. Growing up to thirteen metres long, with eyes the size of dinner plates — the largest in the animal kingdom — it was long dismissed as a sailor's myth. Ancient mariners told tales of monstrous tentacles dragging ships beneath the waves, and the Norse legend of the Kraken was almost certainly inspired by encounters with these magnificent animals. It was not until 2004 that scientists obtained the first photograph of a living giant squid in its natural habitat, at a depth of nine hundred metres in the Pacific Ocean.\n\n(5) At the very deepest point on Earth — the Challenger Deep in the Mariana Trench, nearly eleven kilometres below the surface — the pressure is over a thousand times greater than at sea level. A human body would be instantly crushed. Yet even here, life persists. In 2019, an expedition led by the American explorer Victor Vescovo reached the bottom and discovered, to widespread astonishment, tiny shrimp-like amphipods and strange, translucent sea cucumbers gliding across the sediment. A plastic bag was also found, a sobering reminder that human pollution has reached even the most remote corners of the planet.\n\n(6) One of the most remarkable discoveries in deep-sea biology came in 1977, when scientists aboard the research submarine Alvin were exploring the ocean floor near the Galápagos Islands. At a depth of 2,500 metres, they stumbled upon something that overturned a fundamental assumption of biology: hydrothermal vents. These underwater chimneys spew superheated water, rich in minerals, from cracks in the Earth's crust. The water can reach temperatures of 400 degrees Celsius, yet it does not boil because of the immense pressure.\n\n(7) Clustered around these vents was a thriving ecosystem unlike anything seen before. Giant tube worms, up to two metres tall, swayed in the current. Vast colonies of blind white crabs picked their way across the rocks. Mats of bacteria carpeted every surface. None of these organisms relied on sunlight. Instead, specialised bacteria at the base of the food chain used a process called chemosynthesis — converting the chemical energy from the vent minerals into food. This was a revelation: life did not require the sun to exist.\n\n(8) The discovery of hydrothermal vent communities had profound implications beyond marine biology. If life could thrive in such hostile conditions on Earth, scientists reasoned, then perhaps it could also exist on other worlds. Jupiter's moon Europa is believed to have a vast ocean beneath its icy surface, heated by gravitational forces. Saturn's moon Enceladus shoots plumes of water vapour into space from cracks in its southern ice cap. Both worlds might harbour hydrothermal vents — and therefore, potentially, life.\n\n(9) Closer to home, deep-sea organisms are proving to have practical applications that few predicted. Enzymes extracted from heat-resistant bacteria found near hydrothermal vents are now used in medical diagnostics and industrial processes. Compounds from deep-sea sponges are being investigated as potential treatments for cancer and antibiotic-resistant infections. The deep ocean, it turns out, may be as valuable as a pharmacy as it is as a habitat.\n\n(10) Yet this fragile world faces growing threats. Deep-sea mining companies are eager to extract valuable minerals — including cobalt, manganese, and rare earth elements — from the ocean floor. Environmentalists warn that dragging heavy machinery across the seabed would destroy ecosystems that took thousands of years to develop and might never recover. Overfishing, pollution, and climate change are also altering deep-sea environments in ways that scientists are only beginning to understand.\n\n(11) The deep ocean remains one of the great frontiers of exploration. Every expedition returns with new species, new questions, and new reasons to protect this hidden world. As the marine biologist Sylvia Earle has observed: \"No water, no life. No blue, no green.\" The creatures that thrive in the crushing darkness of the abyss remind us that life is far more resilient, far more inventive, and far more mysterious than we ever imagined.",
+    "difficulty": 3,
+    "subtype": "effect-on-reader",
+    "question": "What effect does the opening paragraph have on the reader?",
+    "correctAnswer": "It makes the reader feel curious by describing an alien-like world on our own planet",
+    "correctWords": 15,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "It creates a relaxing, peaceful atmosphere",
+        "currentWords": 6,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "It makes the reader feel guilty about pollution",
+        "currentWords": 8,
+        "targetMinWords": 17,
+        "targetMaxWords": 19,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "It bores the reader with too many statistics",
+        "currentWords": 8,
+        "targetMinWords": 18,
+        "targetMaxWords": 20,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "It confuses the reader with too many scientific terms",
+        "currentWords": 9,
+        "targetMinWords": 19,
+        "targetMaxWords": 21,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#15",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 6,
+      "correctIndex": 1,
+      "questionHead": "This passage is best described as:"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 1,
+    "subtype": "text-type",
+    "question": "This passage is best described as:",
+    "correctAnswer": "A factual account of a historical event and its rediscovery",
+    "correctWords": 10,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "A scientific explanation of how volcanoes work",
+        "currentWords": 7,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "A diary entry written by a Pompeii resident",
+        "currentWords": 8,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 2,
+        "currentText": "A persuasive text arguing for the preservation of Pompeii",
+        "currentWords": 9,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "A fictional story set during the eruption of Vesuvius"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#16",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 9,
+      "correctIndex": 2,
+      "questionHead": "What does the graffiti found on"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 2,
+    "subtype": "inference",
+    "question": "What does the graffiti found on Pompeii's walls tell us?",
+    "correctAnswer": "That ordinary Romans had the same kinds of everyday thoughts and feelings as people today",
+    "correctWords": 15,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "That Roman children were poorly behaved",
+        "currentWords": 6,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "That Romans had no system of writing",
+        "currentWords": 7,
+        "targetMinWords": 17,
+        "targetMaxWords": 19,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "That all Romans could read and write fluently"
+      },
+      {
+        "index": 4,
+        "text": "That the walls were used instead of paper because paper was expensive"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#17",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 12,
+      "correctIndex": 2,
+      "questionHead": "Why do archaeologists deliberately leave parts"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 2,
+    "subtype": "inference",
+    "question": "Why do archaeologists deliberately leave parts of Pompeii unexcavated?",
+    "correctAnswer": "They want future generations with better technology to excavate them",
+    "correctWords": 10,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "They have run out of funding",
+        "currentWords": 6,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "The remaining sections are not interesting",
+        "currentWords": 6,
+        "targetMinWords": 12,
+        "targetMaxWords": 14,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "The Italian government has forbidden further digging",
+        "currentWords": 7,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "They are afraid of disturbing the volcano",
+        "currentWords": 7,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#18",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 13,
+      "correctIndex": 2,
+      "questionHead": "What emotions would a visitor to"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 3,
+    "subtype": "character-inference",
+    "question": "What emotions would a visitor to Pompeii most likely feel when seeing the plaster body casts?",
+    "correctAnswer": "Sadness and empathy for the people who died",
+    "correctWords": 8,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Amusement at how different Romans looked",
+        "currentWords": 6,
+        "targetMinWords": 9,
+        "targetMaxWords": 11,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Confusion about what the casts represent",
+        "currentWords": 6,
+        "targetMinWords": 10,
+        "targetMaxWords": 12,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "Boredom because they are just plaster shapes",
+        "currentWords": 7,
+        "targetMinWords": 11,
+        "targetMaxWords": 13,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 3,
+        "text": "Anger at the archaeologists who made them"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#19",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 15,
+      "correctIndex": 2,
+      "questionHead": "Which of these statements about the"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 3,
+    "subtype": "negative-retrieval",
+    "question": "Which of these statements about the eruption is NOT supported by the passage?",
+    "correctAnswer": "Most deaths were caused by buildings collapsing under the weight of ash",
+    "correctWords": 12,
+    "targetRankForCorrect": 2,
+    "distractorsToRewrite": [
+      {
+        "index": 4,
+        "currentText": "The eruption continued through the night",
+        "currentWords": 6,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 0,
+        "currentText": "The eruption column rose over thirty kilometres high",
+        "currentWords": 8,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 1,
+        "text": "Pumice stones fell on the city for several hours"
+      },
+      {
+        "index": 3,
+        "text": "A pyroclastic flow reached speeds over one hundred kilometres per hour"
+      }
+    ]
+  },
+  {
+    "ref": "MOCK-comprehension#20",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 16,
+      "correctIndex": 2,
+      "questionHead": "Why does the author begin the"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 3,
+    "subtype": "author-purpose",
+    "question": "Why does the author begin the passage by describing ordinary daily activities in Pompeii?",
+    "correctAnswer": "To create a contrast between normal life and the disaster that followed",
+    "correctWords": 12,
+    "targetRankForCorrect": 0,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "To show that Roman daily life was boring",
+        "currentWords": 8,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 1,
+        "currentText": "To prove that the eruption happened without warning",
+        "currentWords": 8,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "To explain what a typical Roman city looked like",
+        "currentWords": 9,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "To demonstrate that Romans were similar to modern people",
+        "currentWords": 9,
+        "targetMinWords": 16,
+        "targetMaxWords": 18,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": []
+  },
+  {
+    "ref": "MOCK-comprehension#21",
+    "key": {
+      "file": "mockComprehensionData.js",
+      "container": "pompeii",
+      "arr": "comprehensionQuestions",
+      "id": 17,
+      "correctIndex": 1,
+      "questionHead": "Why does the author use the"
+    },
+    "passageTitle": "The Lost City of Pompeii",
+    "passage": "(1) On the morning of 24th August in the year 79 AD, the citizens of Pompeii went about their daily routines without the faintest suspicion that their world was about to end. Bakers lit their ovens. Merchants arranged their stalls in the forum. Children chased each other through the narrow, stone-paved streets. Pompeii was a prosperous Roman city of roughly twenty thousand people, nestled at the foot of a mountain that provided fertile volcanic soil for the surrounding farms and vineyards. That mountain was Vesuvius, and it had been silent for so long that most Pompeians did not even realise it was a volcano.\n\n(2) The first sign of danger came around midday, when a tremendous explosion tore open the summit of Vesuvius. A column of superheated gas, ash, and pulverised rock shot upwards with extraordinary force, climbing over thirty kilometres into the sky before spreading outward like the canopy of a vast, grey umbrella. The Roman writer Pliny the Younger, who watched the eruption from across the Bay of Naples, described the cloud as resembling a Mediterranean stone pine tree — a tall trunk topped by spreading branches. His account, written in two letters to the historian Tacitus, remains the most detailed eyewitness record of the disaster.\n\n(3) Within minutes, a rain of pumice stones began to fall on Pompeii. These lightweight volcanic rocks, some no bigger than a fist, clattered onto rooftops and bounced through the streets. At first, many citizens gathered up the pumice out of curiosity. But as the fall intensified, roofs began to collapse under the accumulating weight. Darkness descended as the ash cloud blotted out the sun completely. People tied cushions over their heads with strips of cloth, trying to protect themselves from the bombardment. Many fled towards the harbour, hoping to escape by sea.\n\n(4) The eruption continued throughout the night. Layer upon layer of pumice and ash buried the city, eventually reaching a depth of nearly three metres. Buildings that had stood for centuries vanished beneath the grey blanket. But the worst was yet to come. In the early hours of 25th August, the eruption column, which had been held aloft by the force of the explosion, finally collapsed under its own weight. A devastating surge of superheated gas and rock — known today as a pyroclastic flow — raced down the mountainside at speeds exceeding one hundred kilometres per hour and temperatures above 300 degrees Celsius.\n\n(5) The pyroclastic flow reached Pompeii in minutes. Anyone still in the city had no chance of survival. The intense heat killed people instantly, and the fine ash that followed preserved their bodies in the exact positions in which they died. Some were found crouching in corners, arms raised to shield their faces. Others were discovered clutching children or precious belongings. One man was found still holding a bag of coins. A dog lay curled at the end of its chain. These haunting casts, created centuries later by pouring plaster into the hollows left by decomposed bodies, remain the most powerful and emotional evidence of the disaster.\n\n(6) Pompeii was not the only victim. The neighbouring town of Herculaneum, smaller but wealthier, was engulfed by an even thicker layer of volcanic material — in places over twenty metres deep. The intense heat carbonised wooden objects rather than burning them to ash, which meant that doors, furniture, food, and even scrolls of papyrus were preserved in remarkable condition. A loaf of bread, still bearing the baker's stamp, was found almost perfectly intact after nearly two thousand years.\n\n(7) After the eruption, Pompeii was not immediately forgotten. The Roman emperor Titus sent rescue parties and allocated funds for survivors. But the sheer depth of the burial made recovery impossible with the technology of the time, and within a few generations the exact location of the city was lost. Fields were planted over the ruins. New communities grew up nearby. Pompeii slept beneath the soil for over sixteen hundred years.\n\n(8) The city was rediscovered by accident in 1748, when workmen digging a channel for a local nobleman struck ancient walls. Systematic excavation began under the direction of the Spanish engineer Rocque Joaquin de Alcubierre, although his methods were crude by modern standards — he was primarily interested in finding treasures for the King of Naples rather than preserving the archaeological context. It was not until the nineteenth century, under the leadership of the Italian archaeologist Giuseppe Fiorelli, that excavation became truly scientific.\n\n(9) Fiorelli transformed the study of Pompeii. He mapped the city methodically, dividing it into numbered regions and blocks. He pioneered the technique of pouring liquid plaster into the cavities left by decomposed organic material, producing the haunting body casts that are now among the site's most famous features. He also insisted on preserving objects where they were found, rather than removing them to distant museums, allowing visitors to experience the city as a complete, living environment.\n\n(10) Today, Pompeii is one of the most visited archaeological sites in the world, attracting over three million visitors each year. Walking through its streets, you can peer into shops where amphorae still line the shelves, read election slogans painted on walls, and admire intricate mosaic floors in the houses of wealthy merchants. Graffiti scratched into plaster reveals the thoughts of ordinary Romans — their jokes, complaints, love declarations, and advertisements. One inscription, found near the amphitheatre, simply reads: \"I am amazed, O wall, that you have not yet collapsed, so many writers' scribbles do you bear.\"\n\n(11) Yet the excavation of Pompeii is far from complete. Roughly a third of the city remains buried, and archaeologists deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy. Conservation is an enormous challenge: exposed buildings are vulnerable to weathering, plant growth, and the sheer volume of tourist footfall. Several structures have collapsed in recent decades, prompting urgent restoration programmes funded by the Italian government and the European Union.\n\n(12) Pompeii endures as both a tragedy and a treasure. It is a place where the past feels startlingly present — where you can stand in a Roman kitchen and see the soot marks on the ceiling, or walk along a pavement still grooved by chariot wheels. The disaster that destroyed Pompeii also, paradoxically, preserved it more completely than any other ancient city. As the novelist Robert Harris wrote: \"Pompeii is the most complete picture of Roman daily life that exists anywhere in the world — because it was frozen in a single, terrible moment.\"",
+    "difficulty": 3,
+    "subtype": "author-purpose",
+    "question": "Why does the author use the word 'paradoxically' in the final paragraph?",
+    "correctAnswer": "Because something that caused destruction also caused preservation — two opposite outcomes",
+    "correctWords": 12,
+    "targetRankForCorrect": 1,
+    "distractorsToRewrite": [
+      {
+        "index": 0,
+        "currentText": "Because the eruption was unexpected",
+        "currentWords": 5,
+        "targetMinWords": 13,
+        "targetMaxWords": 15,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 4,
+        "currentText": "Because the author disagrees with Robert Harris",
+        "currentWords": 7,
+        "targetMinWords": 14,
+        "targetMaxWords": 16,
+        "explanationQuotesThis": false
+      },
+      {
+        "index": 3,
+        "currentText": "Because tourists both help and harm the site",
+        "currentWords": 8,
+        "targetMinWords": 15,
+        "targetMaxWords": 17,
+        "explanationQuotesThis": false
+      }
+    ],
+    "distractorsToKeep": [
+      {
+        "index": 2,
+        "text": "Because Pompeii is both old and modern at the same time"
+      }
+    ]
+  }
+]

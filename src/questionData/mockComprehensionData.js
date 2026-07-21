@@ -191,11 +191,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "What does Mary's final quoted remark reveal about her?",
         options: [
-          "She was bitter and had given up on people entirely",
+          "She had become so bitter that she had completely given up on other people and abandoned her work",
           "She felt the unfair treatment had affected her ability to trust others",
-          "She was joking about her difficult life",
-          "She blamed herself for her lack of recognition",
-          "She was warning other women not to pursue science"
+          "She was making a lighthearted joke about her hardships and did not truly mean it",
+          "She believed her own lack of education was the reason she never received proper recognition",
+          "She was warning other women that a career in science would only bring them disappointment and mistrust"
         ],
         correct: 1,
         explanation: "Mary's words — 'The world has used me so unkindly, I fear it has made me suspicious of everyone' — show self-awareness about how years of being overlooked and mistreated had made her wary. It is honest and reflective, not bitter or self-blaming. ✓"
@@ -206,9 +206,9 @@ export const mockComprehensionPassages = [
         questionSubType: 'negative-retrieval',
         question: "Which of the following is NOT mentioned as one of Mary's discoveries?",
         options: [
-          "An Ichthyosaurus skeleton",
-          "A complete Plesiosaurus",
-          "A Pterodactyl specimen",
+          "The complete skeleton of an Ichthyosaurus",
+          "The first complete Plesiosaurus, a long-necked reptile",
+          "The first British example of a flying Pterodactyl",
           "A Tyrannosaurus Rex tooth",
           "Fossilised animal droppings"
         ],
@@ -251,11 +251,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "What is the author's main purpose in writing this passage?",
         options: [
-          "To persuade readers to visit Lyme Regis",
-          "To explain how fossils are formed in limestone",
+          "To persuade readers to visit the Jurassic Coast where her statue stands",
+          "To explain how fossils form in the Blue Lias limestone of the Dorset cliffs",
           "To celebrate Mary's achievements and highlight the unfairness she faced",
-          "To argue that women are better scientists than men",
-          "To describe the different types of prehistoric creatures"
+          "To argue that women make better scientists than men and should replace them in the field",
+          "To describe the different prehistoric creatures whose fossils were found along the Dorset coast"
         ],
         correct: 2,
         explanation: "The passage consistently highlights both Mary's remarkable discoveries and the lack of recognition she received due to her gender and social class. Paragraph 12 explicitly states it is 'a story of perseverance against poverty, prejudice, and physical danger'. ✓"
@@ -471,11 +471,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What made the breakthrough on 1st December 1990 so remarkable?",
         options: [
-          "It happened ahead of schedule",
+          "The two teams finished the breakthrough far ahead of the planned schedule despite all the earlier delays",
           "The two tunnels met with only centimetres of error after boring over 40 kilometres in total",
           "It was the first tunnel ever bored beneath a sea",
-          "The workers had to dig through unexpectedly hard rock",
-          "The breakthrough happened at exactly midnight"
+          "The workers had to bore their way through unexpectedly hard rock that the boring machines struggled to cut through",
+          "The final section of rock was broken through at exactly midnight while millions of people watched on television"
         ],
         correct: 1,
         explanation: "Paragraph 7 emphasises the 'astonishing precision' — the gap was 'just a few centimetres' despite each team boring 'over twenty kilometres through pitch darkness'. The accuracy over such a vast distance is what made it remarkable. ✓"
@@ -516,11 +516,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What does the phrase 'white elephant' mean in paragraph 9?",
         options: [
-          "A rare and valuable treasure",
+          "A rare and precious treasure that everyone wants to own and admire",
           "An expensive project that turns out to be useless or wasteful",
-          "A construction project that takes too long",
-          "A symbol of friendship between nations",
-          "A very large building or structure"
+          "A construction project that takes far longer to finish than anyone had originally planned or expected",
+          "A powerful symbol of the lasting friendship that formed between Britain and France",
+          "An enormous and impressive structure so large that it dominates the whole landscape around it"
         ],
         correct: 1,
         explanation: "A 'white elephant' is an idiom meaning something expensive to maintain but of little practical use. Critics used this term because they believed the tunnel would cost too much and not be worthwhile. ✓"
@@ -546,11 +546,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why does the author describe the TBMs as 'mechanical moles'?",
         options: [
-          "Because they were small and furry",
+          "Because they were small and furry like the animals they were named after",
           "Because they burrowed through the ground like the animal does",
-          "Because they were designed by a scientist called Mole",
+          "Because they were designed by a famous engineer whose surname happened to be Mole",
           "Because they were used to search for underground creatures",
-          "Because they worked best in darkness"
+          "Because moles are blind and the machines could operate in complete underground darkness"
         ],
         correct: 1,
         explanation: "The comparison to moles is a metaphor — just as moles dig through earth underground, the TBMs bored through chalk beneath the seabed. The author uses this image to help the reader visualise what the machines did. ✓"
@@ -591,11 +591,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the author begin the passage by describing the Channel as defeating armies and wrecking ships?",
         options: [
-          "To explain why the Channel is dangerous for boats",
-          "To give a history of naval warfare in the Channel",
+          "To explain why the Channel has always been such a dangerous stretch of water for boats",
+          "To provide a detailed history of the many naval battles and wars fought across the Channel",
           "To establish how formidable the barrier was, making the tunnel achievement more impressive",
-          "To argue that a bridge would have been a better solution",
-          "To show that the tunnel was unnecessary because boats already crossed it"
+          "To argue that a bridge across the Channel would have been a far better solution than the tunnel",
+          "To show that the tunnel was completely unnecessary because ships had already been crossing the Channel for centuries"
         ],
         correct: 2,
         explanation: "By emphasising how the Channel had 'defeated armies' and 'frustrated engineers' for centuries, the author makes the eventual success of the tunnel project seem all the more impressive. It sets up the scale of the achievement. ✓"
@@ -621,10 +621,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'prediction',
         question: "Based on the information in the passage, which statement is most likely to be true in the future?",
         options: [
-          "The Channel Tunnel will be replaced by a bridge",
+          "The Channel Tunnel will soon be replaced by a bridge linking the two countries",
           "The tunnel will continue to be an important transport and trade link",
-          "Eurotunnel will build a fourth tunnel beneath the Channel",
-          "Passenger numbers will decline as people prefer to fly",
+          "Eurotunnel will build a fourth tunnel beneath the Channel to cope with increasing passenger demand",
+          "Passenger numbers will steadily decline in the coming years as more travellers choose to fly instead",
           "The tunnel will be closed permanently due to rising sea levels"
         ],
         correct: 1,
@@ -773,11 +773,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why does the author compare our knowledge of the deep sea to our knowledge of Mars?",
         options: [
-          "To prove that space exploration is more important",
+          "To prove that exploring distant planets like Mars matters more than exploring our own deep oceans",
           "To show how surprisingly little we know about our own oceans",
-          "To suggest we should stop exploring space",
-          "To explain why deep-sea creatures look alien",
-          "To argue that Mars might have oceans too"
+          "To suggest that we should stop exploring space until we understand our oceans",
+          "To explain why so many deep-sea creatures look strange and alien to human eyes",
+          "To argue that Mars might once have had deep oceans similar to the ones on Earth"
         ],
         correct: 1,
         explanation: "The comparison in paragraph 1 — 'We know more about the surface of Mars than we do about the bottom of our own seas' — highlights how unexplored the deep ocean remains, which is surprising given that it is on our own planet. ✓"
@@ -803,10 +803,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why is food 'desperately scarce' in the deep ocean?",
         options: [
-          "There are too many predators competing for food",
-          "The cold temperatures prevent animals from eating",
+          "There are far too many hungry predators all competing with one another for the same limited supply of food",
+          "The freezing temperatures near the ocean floor stop most animals from being able to eat properly",
           "Without sunlight, no plants can grow to form the base of a food chain",
-          "Pollution has killed most of the organisms",
+          "Human pollution reaching the deep ocean has killed off most of the organisms that once lived there",
           "The pressure makes it impossible for animals to digest food"
         ],
         correct: 2,
@@ -863,11 +863,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What is the connection between deep-sea vents on Earth and Jupiter's moon Europa?",
         options: [
-          "Both have the same species of bacteria",
-          "Both are equally well-explored by scientists",
+          "Both are home to exactly the same species of heat-loving bacteria",
+          "Both have already been thoroughly explored and mapped by scientists",
           "Both might have conditions that could support life",
-          "Both were discovered in the same year",
-          "Both are heated by the sun"
+          "Both were first discovered by scientists during the very same year of exploration",
+          "Both are warmed by heat coming directly from the sun above"
         ],
         correct: 2,
         explanation: "Paragraph 8 explains that if life can thrive at hostile hydrothermal vents on Earth, then Europa's ocean (which might also have vents) could potentially harbour life too. The connection is the possibility of similar conditions supporting life. ✓"
@@ -938,10 +938,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the author describe the anglerfish's hunting method in detail?",
         options: [
-          "To frighten the reader about deep-sea creatures",
+          "To frighten the reader by making deep-sea creatures seem like terrifying monsters of the deep",
           "To give a vivid example of how bioluminescence is used for survival",
-          "To explain why the anglerfish is the most dangerous deep-sea predator",
-          "To compare the anglerfish to creatures on land",
+          "To explain why the anglerfish is the most dangerous and deadly predator in the deep sea",
+          "To compare the anglerfish and its glowing lure with similar hunting creatures found on land",
           "To show that the anglerfish is the most common deep-sea fish"
         ],
         correct: 1,
@@ -953,9 +953,9 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "What is the main message of the final paragraph?",
         options: [
-          "That deep-sea creatures are more dangerous than we thought",
+          "That the creatures living in the deep ocean are far more dangerous and threatening to humans than scientists had ever thought",
           "That we should be inspired by the resilience of life and motivated to protect the deep ocean",
-          "That marine biologists are the most important scientists",
+          "That marine biologists like Sylvia Earle are the most important and valuable scientists working anywhere in the world today",
           "That we will never fully understand the deep sea",
           "That life on Earth began in the deep ocean"
         ],
@@ -968,11 +968,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'effect-on-reader',
         question: "What effect does the opening paragraph have on the reader?",
         options: [
-          "It creates a relaxing, peaceful atmosphere",
+          "It creates a calm and peaceful atmosphere that makes the deep ocean feel gentle and welcoming",
           "It makes the reader feel curious by describing an alien-like world on our own planet",
-          "It confuses the reader with too many scientific terms",
-          "It makes the reader feel guilty about pollution",
-          "It bores the reader with too many statistics"
+          "It confuses the reader by using far too many difficult scientific terms before the topic has even been introduced",
+          "It makes the reader feel guilty about all the pollution that humans have dumped into the deep ocean",
+          "It bores the reader by listing far too many dry statistics and numbers about the depth of the ocean"
         ],
         correct: 1,
         explanation: "The opening invites the reader to 'Imagine a world' with dramatic conditions (darkness, crushing pressure, freezing temperatures), then reveals this world is on Earth. This creates curiosity and wonder about what lives in such an extreme environment. ✓"
@@ -1143,11 +1143,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'text-type',
         question: "This passage is best described as:",
         options: [
-          "A diary entry written by a Pompeii resident",
+          "A personal diary entry written by a resident who lived through the eruption",
           "A factual account of a historical event and its rediscovery",
-          "A persuasive text arguing for the preservation of Pompeii",
+          "A persuasive text urging readers to help fund the preservation of the ruins of Pompeii",
           "A fictional story set during the eruption of Vesuvius",
-          "A scientific explanation of how volcanoes work"
+          "A scientific explanation of how volcanoes form and why they erupt"
         ],
         correct: 1,
         explanation: "The passage presents factual, chronological information about the eruption, burial, and excavation of Pompeii. It is informative historical non-fiction. ✓"
@@ -1188,8 +1188,8 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What does the graffiti found on Pompeii's walls tell us?",
         options: [
-          "That Roman children were poorly behaved",
-          "That Romans had no system of writing",
+          "That Roman children were badly behaved and often scribbled rude words all over the walls of the city",
+          "That the Romans had no proper system of writing and could only scratch simple pictures onto their walls",
           "That ordinary Romans had the same kinds of everyday thoughts and feelings as people today",
           "That all Romans could read and write fluently",
           "That the walls were used instead of paper because paper was expensive"
@@ -1233,11 +1233,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why do archaeologists deliberately leave parts of Pompeii unexcavated?",
         options: [
-          "They have run out of funding",
-          "The remaining sections are not interesting",
+          "They have completely run out of the funding needed to continue digging",
+          "The sections that remain buried are not thought to contain anything interesting or valuable",
           "They want future generations with better technology to excavate them",
-          "The Italian government has forbidden further digging",
-          "They are afraid of disturbing the volcano"
+          "The Italian government has passed a law that forbids any further digging at the site",
+          "They are afraid that digging further might somehow disturb the volcano and trigger another eruption"
         ],
         correct: 2,
         explanation: "Paragraph 11 states archaeologists 'deliberately leave sections unexcavated, knowing that future technology will allow them to recover information that current methods would destroy'. ✓"
@@ -1248,11 +1248,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "What emotions would a visitor to Pompeii most likely feel when seeing the plaster body casts?",
         options: [
-          "Amusement at how different Romans looked",
-          "Boredom because they are just plaster shapes",
+          "Amusement at how strange and different the ancient Romans looked",
+          "Boredom because the casts are just dull grey shapes made of plaster",
           "Sadness and empathy for the people who died",
           "Anger at the archaeologists who made them",
-          "Confusion about what the casts represent"
+          "Confusion about what the mysterious plaster casts are actually meant to represent"
         ],
         correct: 2,
         explanation: "The passage describes the casts as 'haunting' and 'the most powerful and emotional evidence of the disaster' (paragraph 5). Seeing people frozen in their final moments — shielding their faces, clutching children — would naturally evoke sadness and empathy. ✓"
@@ -1278,11 +1278,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'negative-retrieval',
         question: "Which of these statements about the eruption is NOT supported by the passage?",
         options: [
-          "The eruption column rose over thirty kilometres high",
+          "The towering column of ash and gas rose more than thirty kilometres up into the sky",
           "Pumice stones fell on the city for several hours",
           "Most deaths were caused by buildings collapsing under the weight of ash",
           "A pyroclastic flow reached speeds over one hundred kilometres per hour",
-          "The eruption continued through the night"
+          "The eruption carried on all through the night and into the following early morning"
         ],
         correct: 2,
         explanation: "The passage states that the pyroclastic flow on 25th August killed 'anyone still in the city' instantly with 'intense heat' (paragraph 5). While roofs did collapse (paragraph 3), the passage does not say most deaths were caused by building collapse — the pyroclastic flow was the main killer. ✓"
@@ -1293,11 +1293,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the author begin the passage by describing ordinary daily activities in Pompeii?",
         options: [
-          "To show that Roman daily life was boring",
-          "To prove that the eruption happened without warning",
+          "To show that daily life in a Roman city like Pompeii was dull and boring",
+          "To prove that the people of Pompeii had been warned about the volcano but ignored it",
           "To create a contrast between normal life and the disaster that followed",
-          "To explain what a typical Roman city looked like",
-          "To demonstrate that Romans were similar to modern people"
+          "To explain in careful detail what a typical prosperous Roman city like Pompeii looked like",
+          "To demonstrate that ordinary Romans lived their daily lives in much the same way as modern people do"
         ],
         correct: 2,
         explanation: "Opening with bakers, merchants, and playing children creates a vivid picture of ordinary life — which makes the destruction that follows far more dramatic and poignant. The contrast between normality and catastrophe is a deliberate technique. ✓"
@@ -1308,11 +1308,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the author use the word 'paradoxically' in the final paragraph?",
         options: [
-          "Because the eruption was unexpected",
+          "Because the sudden eruption was completely unexpected by everyone living in the city",
           "Because something that caused destruction also caused preservation — two opposite outcomes",
           "Because Pompeii is both old and modern at the same time",
-          "Because tourists both help and harm the site",
-          "Because the author disagrees with Robert Harris"
+          "Because the many tourists who visit the site both help to fund it and slowly damage it",
+          "Because the author strongly disagrees with what the novelist Robert Harris wrote about the city"
         ],
         correct: 1,
         explanation: "A paradox is a seemingly contradictory statement that is actually true. The disaster destroyed Pompeii as a living city but simultaneously preserved it for future generations — destruction and preservation are opposite outcomes from the same event. ✓"
@@ -1477,9 +1477,9 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why did Aisha arrange her books in alphabetical order?",
         options: [
-          "Her mum told her to",
+          "Her mother, who kept insisting the move would be brilliant, had ordered her to sort them",
           "It was a way of creating something familiar and controlled in an unfamiliar place",
-          "She needed to find a specific book quickly",
+          "She wanted to be able to find any particular book quickly once homework started at her new school",
           "The shelves were too small for any other arrangement",
           "Her teacher had asked her to organise them for homework"
         ],
@@ -1522,11 +1522,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why does the author describe Aisha's mum's cheerfulness as 'relentless'?",
         options: [
-          "Because her mum was genuinely very happy about the move",
+          "Because her mother was genuinely delighted about the move to the new town and could not hide her joy",
           "Because her mum would not stop being cheerful, even though it felt forced",
-          "Because her mum was trying to annoy Aisha",
-          "Because her mum was always a cheerful person",
-          "Because relentless means gentle and kind"
+          "Because her mother repeated the phrase deliberately to irritate Aisha and wear down her objections to moving",
+          "Because her mother had always been a naturally cheerful person, long before the family ever decided to move",
+          "Because the word relentless is a gentle, soothing term describing a naturally warm and patient mother"
         ],
         correct: 1,
         explanation: "'Relentless' means never stopping. Combined with the detail that she was 'trying to convince herself as much as anyone else', it suggests the cheerfulness was forced and constant — her mum kept it up because she was anxious too, not because the situation genuinely felt brilliant. ✓"
@@ -1537,10 +1537,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "What kind of person is Meg?",
         options: [
-          "Quiet, thoughtful, and shy",
+          "Quiet, reserved, and too shy to approach new people",
           "Confident, creative, and friendly without being calculating",
-          "Popular, sporty, and competitive",
-          "Nervous, careful, and easily upset",
+          "Popular and sporty, endlessly competing to win at everything",
+          "Nervous and careful, easily upset whenever anything goes slightly wrong",
           "Bossy, demanding, and difficult to please"
         ],
         correct: 1,
@@ -1583,9 +1583,9 @@ export const mockComprehensionPassages = [
         question: "What does the description of Meg's friends tell us about the group?",
         options: [
           "They are the most popular students in the year",
-          "They are all very similar to each other",
+          "They are all very similar, sharing the same hobbies and the same personalities",
           "They are individuals with different interests who accept each other",
-          "They all love art and painting",
+          "They all share a deep love of art and painting murals together",
           "They are all new to the school like Aisha"
         ],
         correct: 2,
@@ -1597,11 +1597,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "How does Aisha's attitude towards the school uniform change throughout the passage, and what does this represent?",
         options: [
-          "She hates it at first and continues to hate it — showing she never settles in",
-          "She loves it from the start — showing she is excited about the new school",
+          "She hates the stiff new uniform at the beginning and goes on hating it right to the end, which shows that she never truly settles in",
+          "She adores the maroon blazer from the very first morning, which shows that she was genuinely excited about starting at her new school all along",
           "It changes from feeling like a costume to feeling like it belongs to her — representing her growing sense of belonging",
-          "She stops noticing it — showing she becomes distracted by friends",
-          "She customises it to express her individuality — showing her confidence grows"
+          "She gradually stops noticing the uniform altogether, which shows that her new friends have distracted her so completely that school itself no longer matters",
+          "She begins customising and decorating the blazer to express her individuality, which shows that her growing confidence has made her want to stand out"
         ],
         correct: 2,
         explanation: "In paragraph 3, the uniform feels like 'a costume for a part she had not auditioned for'. By paragraph 11, the blazer 'began to feel less like a costume and more like something that actually belonged to her'. This mirrors her journey from outsider to belonging. ✓"
@@ -1657,10 +1657,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "What is the main theme of this passage?",
         options: [
-          "The importance of being good at art",
-          "Why moving house is always a mistake",
+          "How becoming skilled at painting and art can help a nervous child succeed at school",
+          "The idea that moving house is always a serious mistake that families should try hard to avoid",
           "How new friendships can help someone find belonging in an unfamiliar place",
-          "The difficulties of being a parent",
+          "The struggles that parents face when they move their children to a completely new town",
           "Why large schools are better than small ones"
         ],
         correct: 2,
@@ -1859,8 +1859,8 @@ export const mockComprehensionPassages = [
           "Sam is older and more experienced; Jess is younger and inexperienced",
           "Sam is cautious and thinks about risks; Jess is confident and acts without hesitation",
           "Sam is brave and adventurous; Jess is timid and fearful",
-          "Sam loves the outdoors; Jess prefers staying at home",
-          "Sam is practical; Jess is lazy"
+          "Sam loves being outdoors on adventures, while Jess would always rather stay safely at home indoors",
+          "Sam is practical and hard-working, while Jess is lazy and unwilling to make any real effort"
         ],
         correct: 1,
         explanation: "Paragraph 2 explicitly contrasts them: Jess had 'unshakeable confidence' while Sam had 'a detailed mental catalogue of exactly how wrong things could go'. This contrast runs throughout the passage. ✓"
@@ -1871,11 +1871,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why had Grandpa Arthur never told anyone about the cave?",
         options: [
-          "The passage explains this in detail",
+          "The passage sets out his exact reasons clearly and in careful, complete detail",
           "He was planning to return with proper equipment but never did",
-          "He was afraid of the cave",
-          "He wanted to sell it to the government",
-          "He had forgotten about it"
+          "He was frightened of the dark, unexplored passage and never dared to venture inside",
+          "He was secretly hoping to sell the valuable cave to the government for a large sum",
+          "He had completely forgotten the cave existed in the many years since discovering it"
         ],
         correct: 1,
         explanation: "Paragraph 6 shows his note: 'Must return with proper equipment. Note: passage continues beyond the main chamber — have not explored.' He intended to come back but apparently never did, and the secret remained in his journal until he died. ✓"
@@ -1886,11 +1886,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What does the description of the cave floor as 'smooth, worn by water that must have flowed here thousands of years ago' tell us?",
         options: [
-          "The cave was recently formed",
-          "Water still flows through the cave regularly",
+          "The cave was formed only very recently, in the last few years, by fast-moving water that is still carving the rock",
+          "Water still flows regularly through the cave today, which is exactly what made the rock beneath their feet feel so smooth",
           "The cave is very ancient and water shaped it over a long period before finding a new path",
           "The cave is artificial and was carved by humans",
-          "The floor is dangerous because it is slippery"
+          "The floor is dangerous because the constant water has left it wet and slippery, making it very easy for the children to fall"
         ],
         correct: 2,
         explanation: "The smooth rock worn by water that 'had long since found a different route' tells us the cave is extremely old and was shaped by flowing water over thousands of years, but the water no longer flows through this passage. ✓"
@@ -1901,10 +1901,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why does Jess whisper 'It's like a palace' rather than speaking normally?",
         options: [
-          "She was afraid someone might hear them",
+          "She was afraid that someone hiding deeper inside the cave might overhear them and discover them",
           "The cave was so beautiful it inspired a sense of awe and reverence",
           "She had a sore throat from the cold air",
-          "Sam had asked her to be quiet",
+          "Sam had firmly told her to keep her voice down so they would not attract attention",
           "The echo would have been painfully loud"
         ],
         correct: 1,
@@ -1916,11 +1916,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "How did Jess convince Sam to explore the cave?",
         options: [
-          "By threatening to go without him",
-          "By bribing him with sweets",
+          "By threatening to go into the dark cave alone if he refused to come with her",
+          "By bribing him with sweets and promising to share her pocket money afterwards",
           "By appealing to their grandfather's memory and what he would have wanted",
-          "By promising it would be completely safe",
-          "By saying their parents had given permission"
+          "By promising him that exploring the cave would be completely safe and free of any real danger",
+          "By telling him that their parents had already given full permission for the two of them to explore"
         ],
         correct: 2,
         explanation: "Paragraph 7 says Jess argued 'it was exactly the sort of thing Grandpa Arthur would have wanted them to do'. She used an emotional appeal based on their grandfather's legacy, which Sam found persuasive. ✓"
@@ -1946,11 +1946,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "What does Sam's decision at the end of the passage reveal about his character development?",
         options: [
-          "He has become reckless and no longer cares about danger",
+          "He has become completely reckless and no longer cares at all about the danger, throwing away the caution that once defined him",
           "He is still cautious but the experience has made him willing to push beyond his comfort zone",
           "He is only going further because Jess is pressuring him",
-          "He has completely overcome his fears",
-          "He feels obligated to finish what his grandfather started"
+          "He has completely overcome every one of his fears and now feels no anxiety whatsoever about any kind of danger",
+          "He feels a heavy sense of duty to finish the exploration that his grandfather began but was never able to complete"
         ],
         correct: 1,
         explanation: "Sam acknowledges 'the sensible thing' would be to turn back — showing he is still aware of risks. But he chooses to continue anyway, suggesting the cave experience has expanded his courage. He is growing, not transformed — the 'shall we?' is quiet and deliberate, not reckless. ✓"
@@ -2023,8 +2023,8 @@ export const mockComprehensionPassages = [
         options: [
           "It makes the reader feel bored by too much description",
           "It creates a sense of wonder and helps the reader visualise the extraordinary beauty of the cave",
-          "It proves that the author has visited many caves",
-          "It makes the cave sound dangerous and unstable",
+          "It proves that the author must have personally visited a great many real caves in order to describe them so accurately",
+          "It makes the cave sound dangerous and unstable, as though the heavy stone formations might suddenly collapse onto the children",
           "It slows the story down so the reader loses interest"
         ],
         correct: 1,
@@ -2235,11 +2235,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why does Noor rule out Morse code?",
         options: [
-          "She does not know Morse code",
+          "She has never learned Morse code and cannot read it at all",
           "The pattern does not match any standard Morse character",
-          "Morse code uses sound, not light",
-          "The signals were too slow for Morse code",
-          "She thinks Morse code is too old-fashioned"
+          "Morse code can only be sent using sound, never using flashes of light",
+          "The flashing signals appeared far too slowly to possibly be genuine Morse code",
+          "She thinks Morse code is far too old-fashioned for anyone to be using now"
         ],
         correct: 1,
         explanation: "Paragraph 5 states she 'knew enough to recognise what she was seeing' and that 'Three short, two long did not correspond to any standard Morse character. This was something else.' ✓"
@@ -2280,10 +2280,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "How does Noor feel about living in Pencarrow?",
         options: [
-          "She loves it and has many close friends",
+          "She absolutely loves the village and has already made a large circle of close, loyal friends there",
           "She has not fully settled but has found ways to cope with the isolation",
-          "She hates it and wants to move back immediately",
-          "She does not care where she lives",
+          "She hates living in Pencarrow so much that she is desperate to move straight back to her old home",
+          "She does not care in the slightest where she lives, feeling equally at home anywhere",
           "She finds the village exciting and full of things to do"
         ],
         correct: 1,
@@ -2295,10 +2295,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What is Noor's breakthrough at the end of the passage?",
         options: [
-          "She discovers who is sending the signals",
+          "She works out exactly who has been climbing the lighthouse each night to send the mysterious flashing signals across the bay",
           "She realises the inscription letters are musical notes, not code letters, and the light signals represent a melody",
           "She finds a secret entrance to the lighthouse",
-          "She deciphers a Morse code message",
+          "She finally manages to decipher a hidden Morse code message that spells out the name of the mysterious signaller",
           "She recognises the light pattern as a distress signal"
         ],
         correct: 1,
@@ -2340,11 +2340,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the author reveal details about the light pattern gradually across several paragraphs rather than all at once?",
         options: [
-          "Because the author forgot to include them earlier",
+          "Because the author simply forgot to include all of the details together earlier in the story",
           "To build suspense and mirror the step-by-step process of solving a mystery",
-          "To make the passage longer",
-          "Because Noor was confused and needed time to think",
-          "To test whether the reader is paying attention"
+          "To make the passage much longer so that it fills more space on the page",
+          "Because Noor herself was confused by the pattern and needed a long time to think it all through",
+          "To test whether the reader is paying close enough attention to remember all the earlier clues"
         ],
         correct: 1,
         explanation: "The gradual revelation — first seeing the light, then recording patterns, then photographing it, then finding physical clues, then cracking the code — mirrors a real investigation and builds suspense. Each new detail draws the reader deeper into the mystery. ✓"
@@ -2355,10 +2355,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the passage end with 'Noor was going to find out who' rather than revealing the answer?",
         options: [
-          "Because the author does not know who it is",
-          "To frustrate the reader deliberately",
+          "Because the author has not yet decided who is sending the signals from the lighthouse",
+          "To deliberately frustrate and annoy the reader by refusing to give them any answer",
           "To create a cliffhanger that makes the reader want to read on",
-          "Because who is sending the signal is not important",
+          "Because the identity of the person sending the signals does not really matter to the story",
           "To show that Noor has given up on the mystery"
         ],
         correct: 2,
@@ -2520,7 +2520,7 @@ export const mockComprehensionPassages = [
         difficulty: 1,
         questionSubType: 'retrieval',
         question: "Where does Boudicca's statue stand today?",
-        options: ["Trafalgar Square", "Outside the British Museum", "Victoria Embankment, near Westminster Bridge", "Buckingham Palace", "Tower of London"],
+        options: ["In Trafalgar Square, close to Nelson's Column", "Outside the British Museum", "Victoria Embankment, near Westminster Bridge", "In the gardens outside Buckingham Palace, the royal residence", "Tower of London"],
         correct: 2,
         explanation: "Paragraph 12 states 'a bronze statue of Boudicca stands on the Victoria Embankment in London, beside Westminster Bridge and the Houses of Parliament'. ✓"
       },
@@ -2531,7 +2531,7 @@ export const mockComprehensionPassages = [
         question: "Why did King Prasutagus name the Roman emperor as co-heir in his will?",
         options: [
           "Because the emperor was his personal friend",
-          "Because Roman law required it",
+          "Because Roman law compelled every conquered king to leave part of his kingdom to the emperor",
           "Because he hoped it would protect his family from Roman aggression after his death",
           "Because he wanted the Romans to have all his wealth",
           "Because his daughters were too young to rule"
@@ -2560,11 +2560,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why did Suetonius Paulinus choose a narrow valley for the final battle?",
         options: [
-          "It was close to his supply base",
-          "It was near London and easy to reach",
+          "It sat close to the supply base where his legions were provisioned",
+          "It lay near London, making it quick for his forces to reach",
           "The confined space would neutralise Boudicca's huge numerical advantage",
-          "The valley had water supplies for his soldiers",
-          "He wanted to trap Boudicca's army from behind"
+          "The valley contained fresh streams that would keep his ten thousand soldiers supplied",
+          "He intended to surround Boudicca's warriors from behind and cut off their retreat"
         ],
         correct: 2,
         explanation: "Paragraph 9 explains that 'Boudicca's enormous numerical advantage was useless in a confined space where only a few warriors could engage at a time'. The narrow valley was chosen deliberately to negate the Britons' superior numbers. ✓"
@@ -2575,11 +2575,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What does the 'destruction layer' found in Colchester prove?",
         options: [
-          "That Colchester was built by the Romans",
+          "That Colchester was originally built and settled by the Romans as a colony for soldiers",
           "That a catastrophic fire occurred at this location during Boudicca's rebellion",
           "That the Romans rebuilt the town after the rebellion",
-          "That Boudicca's army used advanced weapons",
-          "That the archaeology is unreliable"
+          "That Boudicca's warriors must have been armed with unusually advanced weapons for the period",
+          "That the archaeological evidence from Colchester is confused and cannot be trusted"
         ],
         correct: 1,
         explanation: "Paragraph 5 describes 'a thick layer of burnt debris' — 'a red-black scar in the soil' — which is physical archaeological evidence confirming the historical accounts of Boudicca burning Colchester. ✓"
@@ -2605,10 +2605,10 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "What does Suetonius Paulinus's decision to abandon London suggest about him?",
         options: [
-          "He was a coward who ran from danger",
+          "He was a frightened coward who fled from the approaching danger to save only his own life",
           "He was a pragmatic military commander who prioritised winning the war over saving one city",
           "He did not care about the people of London",
-          "He was tricked by Boudicca into leaving",
+          "He had been outwitted and deceived by one of Boudicca's clever schemes into abandoning the city",
           "He had already decided to surrender to Boudicca"
         ],
         correct: 1,
@@ -2623,7 +2623,7 @@ export const mockComprehensionPassages = [
           "A desire for personal wealth and power",
           "Fury at the cruel treatment of herself and her daughters, and the theft of her kingdom",
           "A long-standing plan to unite all Celtic tribes",
-          "Religious differences with the Romans",
+          "A determination to defend the ancient Celtic religion and its priests against the new beliefs the Romans were imposing",
           "Encouragement from other foreign enemies of Rome"
         ],
         correct: 1,
@@ -2695,11 +2695,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "Why does the author describe the placement of Boudicca's statue beside Parliament as 'deeply symbolic'?",
         options: [
-          "Because Parliament is the most visited building in London",
+          "Because the Houses of Parliament are the most visited and most photographed tourist building in the entire city of London",
           "Because it is ironic that a woman who destroyed London now watches over its seat of government",
-          "Because the statue is the largest in London",
-          "Because Boudicca was the first woman to sit in Parliament",
-          "Because the statue was built by the same people who built Parliament"
+          "Because the enormous bronze statue is the largest and most impressive monument anywhere in the whole of London",
+          "Because Boudicca is remembered and honoured there as the very first woman ever to take her seat inside the English Parliament",
+          "Because the same craftsmen and architects who constructed the Houses of Parliament were also responsible for designing and casting the statue"
         ],
         correct: 1,
         explanation: "The symbolism lies in the contradiction: Boudicca burned London to ashes, yet her statue now stands guard beside the centre of British government. The rebel has become a protector — a dramatic reversal that the author highlights. ✓"
@@ -2710,11 +2710,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'author-purpose',
         question: "What is the author's main purpose in this passage?",
         options: [
-          "To argue that the Romans should never have invaded Britain",
+          "To argue forcefully that the Roman invasion of Britain was wrong and should never have happened",
           "To present a vivid, balanced account of a pivotal event in British history",
           "To prove that Boudicca was a better leader than the Roman generals",
-          "To explain why Roman civilisation was superior to Celtic culture",
-          "To describe archaeological methods used at Colchester"
+          "To explain why Roman civilisation was far more advanced and superior to the culture of the Celtic tribes",
+          "To explain in detail the archaeological methods used to excavate the destruction layer at Colchester"
         ],
         correct: 1,
         explanation: "The passage presents both sides — Boudicca's justified fury and the Roman tactical brilliance — using vivid narrative while noting where sources may be unreliable. This is balanced historical storytelling. ✓"
@@ -2725,11 +2725,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'effect-on-reader',
         question: "What effect does the opening sentence create?",
         options: [
-          "It bores the reader with a date",
+          "It bores the reader by opening with a dull historical date instead of any real excitement",
           "It immediately grabs attention by showing how one woman challenged the world's greatest empire",
           "It confuses the reader about when the story is set",
           "It makes the reader sympathise with the Roman Empire",
-          "It creates a peaceful, calm atmosphere"
+          "It creates a peaceful and calm atmosphere that gently settles the reader before the story begins"
         ],
         correct: 1,
         explanation: "Opening with 'the most powerful empire the world had ever known was shaken to its foundations' by 'a woman from a small tribal kingdom' creates an immediate David-vs-Goliath tension that hooks the reader. ✓"
@@ -2836,7 +2836,7 @@ export const mockComprehensionPassages = [
         difficulty: 1,
         questionSubType: 'retrieval',
         question: "Where is the Lambton estate located?",
-        options: ["Near the River Thames", "Near the River Wear in County Durham", "Near the River Severn in Wales", "Near the River Tyne in Newcastle", "Near the River Avon in Bath"],
+        options: ["Beside the River Thames in the south of England", "Near the River Wear in County Durham", "Near the River Severn in Wales", "Near the River Tyne in Newcastle", "Near the River Avon in Bath"],
         correct: 1,
         explanation: "Paragraph 2 states 'John Lambton, heir to the Lambton estate near the River Wear' and paragraph 1 places the story in County Durham. ✓"
       },
@@ -2845,7 +2845,7 @@ export const mockComprehensionPassages = [
         difficulty: 1,
         questionSubType: 'retrieval',
         question: "What was John Lambton doing when he caught the creature?",
-        options: ["Hunting in the forest", "Swimming in the river", "Fishing instead of going to church", "Walking his dog", "Exploring a cave"],
+        options: ["Hunting wild animals in the forest near the estate", "Swimming in the cold waters of the River Wear one morning", "Fishing instead of going to church", "Taking his father's greyhound for a walk", "Exploring a dark cave in the nearby hills"],
         correct: 2,
         explanation: "Paragraph 2 states 'instead of attending the service at the local chapel, he took his fishing rod down to the river'. ✓"
       },
@@ -2924,11 +2924,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why did John's plan to kill the greyhound fail?",
         options: [
-          "The greyhound escaped from the castle",
+          "The greyhound broke free and escaped from the castle before the horn signal was given",
           "John's father forgot the plan and ran out before the dog was released",
-          "John could not find his sword after the battle",
+          "John was unable to find his sword after the exhausting battle and could not kill the animal",
           "The horn signal was too quiet for his father to hear",
-          "The greyhound was faster than John's father"
+          "The greyhound ran faster than John's father and reached the rock first after the horn"
         ],
         correct: 1,
         explanation: "Paragraph 10 explains: 'his father, overcome with relief and joy at seeing his son alive, forgot the plan. Instead of releasing the dog, the old man ran out of the castle himself'. ✓"
@@ -2948,11 +2948,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "How had John Lambton changed by the time he returned from the Crusades?",
         options: [
-          "He had become even more reckless and irresponsible",
+          "He had grown even more reckless and irresponsible than he had been in his wild youth",
           "He was physically weaker and unable to fight",
           "He had matured and was willing to take responsibility for his past mistake",
           "He was angry with his father for not dealing with the Worm",
-          "He had forgotten about the creature entirely"
+          "He had completely forgotten about the creature he once threw into the well as a boy"
         ],
         correct: 2,
         explanation: "Paragraph 6 describes him as 'older, wiser' and states 'The responsibility was his, and he resolved to put it right'. He had grown from a 'wild and reckless youth' into a responsible adult. ✓"
@@ -2964,7 +2964,7 @@ export const mockComprehensionPassages = [
         question: "Why could John not bring himself to kill his father?",
         options: [
           "He was too exhausted from the battle",
-          "His father was wearing armour",
+          "His father was protected by thick armour that no ordinary weapon could pierce",
           "Natural love and morality prevented him from killing his own parent",
           "The wise woman had forbidden it",
           "He did not have a weapon nearby"
@@ -2978,11 +2978,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why does the author say the curse was 'finally fulfilled' when the ninth Lord Lambton died?",
         options: [
-          "Because the ninth lord was the first to die peacefully",
+          "Because the ninth lord was the very first Lambton to die peacefully and quietly in his own bed",
           "Because the wise woman had specified nine generations, and this was the ninth",
-          "Because the ninth lord broke the curse with a magic spell",
-          "Because the Worm returned and killed him",
-          "Because the family ran out of heirs"
+          "Because the ninth lord discovered a powerful magic spell that finally broke the ancient family curse forever",
+          "Because the Worm returned from the river after many years and finally killed the ninth lord",
+          "Because after the ninth lord died there were no heirs left to continue the Lambton family line"
         ],
         correct: 1,
         explanation: "Paragraph 7 states the curse would last 'for nine generations'. Paragraph 11 counts through to 'The ninth Lord Lambton' whose death completed the nine-generation span predicted by the wise woman. ✓"
@@ -2993,11 +2993,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'character-inference',
         question: "What does the author's tone in the first paragraph suggest about how they view the legend?",
         options: [
-          "They believe every detail is historically accurate",
+          "They firmly believe that every single detail of the legend is completely true and historically accurate",
           "They think the legend is boring and not worth retelling",
           "They are affectionately amused by it while acknowledging it is probably not factual",
-          "They are frightened by the story",
-          "They think it should be forgotten"
+          "They are genuinely frightened by the gruesome story and warn readers to take it seriously",
+          "They believe the old legend is embarrassing and should quietly be forgotten by the local people"
         ],
         correct: 2,
         explanation: "Phrases like 'delightfully gruesome' and 'never let a small matter like historical accuracy get in the way of a good story' show warm amusement and affection for the tale, combined with honest acknowledgment that it is legend, not history. ✓"
@@ -3070,9 +3070,9 @@ export const mockComprehensionPassages = [
         options: [
           "It makes the reader angry at the father for being foolish",
           "It creates sympathy because his reaction is completely natural — a father relieved his son is alive",
-          "It creates humour because the father's behaviour is comical",
+          "It creates humour because the father's clumsy and comical behaviour makes the reader laugh out loud at the whole scene",
           "It makes the reader want the curse to be even worse",
-          "It shows that the father never loved John"
+          "It shows that the father never truly loved John and cared nothing for whether he lived or died"
         ],
         correct: 1,
         explanation: "The image of an emotional father running to embrace his son is deeply human and relatable. The tragedy is that this natural, loving reaction is precisely what triggers the curse — making the reader feel sympathy for both father and son, trapped between love and fate. ✓"
@@ -3225,7 +3225,7 @@ export const mockComprehensionPassages = [
           "Because they were beautiful and people enjoyed watching them",
           "Because they performed a useful role cleaning the streets of waste",
           "Because the king kept them as pets",
-          "Because they were already very rare",
+          "Because they had already become extremely rare and needed protection from hunters",
           "Because they ate the rats that spread disease"
         ],
         correct: 1,
@@ -3237,11 +3237,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'text-type',
         question: "This passage is best described as:",
         options: [
-          "A fictional story about a bird rescue",
-          "A persuasive letter arguing against game shooting",
+          "A fictional adventure story about the rescue of a single bird",
+          "A persuasive letter written to campaign against the practice of game shooting",
           "An informative account of a wildlife conservation programme",
-          "A scientific paper about bird genetics",
-          "A travel guide to the Chiltern Hills"
+          "A technical scientific paper focused entirely on red kite genetics",
+          "A travel guide describing places to visit across the beautiful Chiltern Hills"
         ],
         correct: 2,
         explanation: "The passage gives a factual, chronological account of the red kite's decline and recovery through conservation. It is informative non-fiction about a real wildlife programme. ✓"
@@ -3252,11 +3252,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why were the Welsh kites slow to recover on their own?",
         options: [
-          "There were too many predators in Wales",
+          "There were far too many other predators in the remote Welsh valleys that hunted and competed with them",
           "The climate in Wales was unsuitable for kites",
           "The remaining population was so inbred that fertility was low and many eggs failed",
-          "Welsh farmers refused to protect them",
-          "There was not enough food in Wales"
+          "Welsh farmers refused to protect the birds and instead drove them away from all their land",
+          "There was simply not enough food in the remote Welsh oak valleys to support a steadily growing population"
         ],
         correct: 2,
         explanation: "Paragraph 4 explains 'the Welsh kites were so inbred that fertility rates were low and many eggs failed to hatch'. The tiny population meant all the birds were closely related, reducing breeding success. ✓"
@@ -3267,9 +3267,9 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "Why did conservationists import kites from Sweden and Spain rather than using Welsh kites?",
         options: [
-          "Welsh kites were a different species",
+          "The Welsh kites belonged to a completely different species that could not breed with the others",
           "The Welsh kites were too wild to capture",
-          "Foreign kites were cheaper to obtain",
+          "Importing young kites from Sweden and Spain turned out to be far cheaper than capturing the protected Welsh birds",
           "The Welsh population was too small and inbred to provide healthy birds for new sites",
           "Swedish and Spanish kites were larger and more impressive"
         ],
@@ -3331,7 +3331,7 @@ export const mockComprehensionPassages = [
           "That kites migrate to Africa in winter",
           "That individual birds can travel over three hundred kilometres from their release sites",
           "That kites always return to the exact spot where they were born",
-          "That kites avoid urban areas completely"
+          "That kites completely avoid all urban areas and never fly near towns or busy roads"
         ],
         correct: 2,
         explanation: "Paragraph 8 states the data 'revealed fascinating insights into kite behaviour: they could travel remarkable distances, with some birds moving over three hundred kilometres from their release sites'. ✓"
@@ -3342,11 +3342,11 @@ export const mockComprehensionPassages = [
         questionSubType: 'inference',
         question: "What does the phrase 'carrying capacity of the available habitat' mean in paragraph 11?",
         options: [
-          "The maximum weight the land can support",
+          "The maximum total weight of birds and animals that the land is able to support",
           "The maximum number of kites the environment can sustainably feed and house",
-          "The distance kites can carry food",
-          "The amount of pollution the habitat can absorb",
-          "The number of species that can live together"
+          "The maximum distance a kite is able to carry food back to its nest",
+          "The amount of pollution and waste that the surrounding habitat is able to safely absorb",
+          "The total number of different bird and animal species that can live together in one shared habitat"
         ],
         correct: 1,
         explanation: "'Carrying capacity' is an ecological term for the maximum population an environment can sustain indefinitely — determined by food availability, nesting sites, and other resources. Scientists wonder if the habitat can support continued growth. ✓"
@@ -3357,9 +3357,9 @@ export const mockComprehensionPassages = [
         questionSubType: 'negative-retrieval',
         question: "Which of the following is NOT mentioned as a threat to red kites?",
         options: [
-          "Illegal poisoning",
-          "Vehicle collisions",
-          "Competition with buzzards",
+          "Illegal poisoning by gamekeepers on shooting estates",
+          "Fatal collisions with vehicles on busy roads and motorways",
+          "Growing competition for food with the expanding buzzard population",
           "Loss of habitat to housing development",
           "Egg collecting in earlier centuries"
         ],
