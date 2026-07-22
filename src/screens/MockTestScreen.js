@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { BookOpen, ChevronRight, ChevronLeft, ArrowLeft, AlertTriangle, Flag, Grid3X3 } from 'lucide-react';
 import Timer from '../components/Timer';
 import ClozeQuestionText from '../components/ClozeQuestionText';
+import ClozePassage from '../components/ClozePassage';
 import MockTestNavigator from '../components/MockTestNavigator';
 
 function MockTestScreen({
@@ -155,8 +156,8 @@ function MockTestScreen({
   // Section name label for context
   const sectionLabel = currentQ.sectionName || '';
 
-  // Check if English comprehension — show passage
-  const showPassage = (currentQ.section === 'comprehension' || currentQ.section === 'vocabulary' || currentQ.section === 'wordClass') && currentQ.passage;
+  // Check if English comprehension or running-passage cloze — show passage
+  const showPassage = (currentQ.section === 'comprehension' || currentQ.section === 'vocabulary' || currentQ.section === 'wordClass' || currentQ.section === 'cloze') && currentQ.passage;
 
   return (
     <div className="app-bg p-4 min-h-screen">
@@ -225,7 +226,9 @@ function MockTestScreen({
                 <span className="text-xs text-slate-500 ml-auto">Click to show/hide passage</span>
               </summary>
               <div className="px-4 pb-4 text-gray-800 text-sm leading-relaxed whitespace-pre-line max-h-64 overflow-y-auto">
-                {currentQ.passage}
+                {currentQ.section === 'cloze'
+                  ? <ClozePassage passage={currentQ.passage} currentGap={question.gapNumber} />
+                  : currentQ.passage}
               </div>
             </details>
           )}
@@ -358,7 +361,7 @@ function MockTestScreen({
           )}
 
           {/* Standard 5-option MC */}
-          {(!question.questionType || question.questionType === 'passage' || question.questionType === 'error-spotting' || question.questionType === 'letter-codes') && question.options && (
+          {(!question.questionType || question.questionType === 'passage' || question.questionType === 'cloze' || question.questionType === 'error-spotting' || question.questionType === 'letter-codes') && question.options && (
             <div className="space-y-3">
               {question.options.map((option, idx) => {
                 const letter = String.fromCharCode(65 + idx);

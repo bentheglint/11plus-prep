@@ -52,6 +52,7 @@ import useTestingCoverage from './hooks/useTestingCoverage';
 import TestingDashboard, { FlagModal, TestingResultsSummary } from './TestingMode';
 import { getDueQuestions } from './utils/leitnerSchedule';
 import PreQuizTipCard from './components/PreQuizTipCard';
+import ClozePassage from './components/ClozePassage';
 import WelcomeBackScreen from './components/WelcomeBackScreen';
 import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
@@ -1479,31 +1480,47 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     const updatedSeen = { ...seenQuestions };
     let seenIds = updatedSeen[topicKey] || [];
 
-    // Passage-based comprehension: select by passage groups
-    const hasPassages = topicQuestions.some(q => q.passageId);
-    if (hasPassages) {
-      // Group questions by passageId
-      const passageGroups = {};
-      topicQuestions.forEach(q => {
-        if (!passageGroups[q.passageId]) passageGroups[q.passageId] = [];
-        passageGroups[q.passageId].push(q);
-      });
-      const passageIds = Object.keys(passageGroups);
-      // Pick passages until we have ~10 questions
+    // Passage-grouped selection. Comprehension is purely passage-based; `grammar`
+    // is a MIXED topic — mostly standalone single-sentence questions plus the
+    // running-passage cloze sets (fix #6), which carry a passageId. Split the two
+    // so adding cloze never hides the standalone grammar bank.
+    const passageQuestions = topicQuestions.filter(q => q.passageId);
+    const standaloneQuestions = topicQuestions.filter(q => !q.passageId);
+    const hasPassages = passageQuestions.length > 0;
+
+    // Group the passage questions by passageId (each cloze passage = 8 gaps).
+    const passageGroups = {};
+    passageQuestions.forEach(q => {
+      if (!passageGroups[q.passageId]) passageGroups[q.passageId] = [];
+      passageGroups[q.passageId].push(q);
+    });
+    const passageIds = Object.keys(passageGroups);
+
+    // Serve a passage session when the topic is purely passage-based
+    // (comprehension), or — for a mixed topic like grammar — ~40% of the time so
+    // a child still meets authentic cloze passages while standalone grammar keeps
+    // its difficulty-ramped selection the rest of the time.
+    const servePassageSession = hasPassages && (standaloneQuestions.length === 0 || Math.random() < 0.4);
+    if (servePassageSession) {
       const shuffledPassages = shuffleArray([...passageIds]);
       const selected = [];
       for (const pid of shuffledPassages) {
         if (selected.length >= 10) break;
-        passageGroups[pid].forEach(q => {
-          selected.push({ question: q, topicKey, topicName });
-        });
+        const group = passageGroups[pid];
+        // Keep a passage whole: skip a group that would overflow the 10-question
+        // session (prevents splitting an 8-gap cloze passage mid-story). The first
+        // group is always taken even if large (comprehension passages are ~18 Qs).
+        if (selected.length > 0 && selected.length + group.length > 10) continue;
+        group.forEach(q => selected.push({ question: q, topicKey, topicName }));
       }
       // Return in passage order (don't shuffle — questions follow the passage)
       return selected.slice(0, 10);
     }
 
+    // Standalone difficulty-ramped selection. Draw only from standalone (non-passage)
+    // questions so cloze gaps are never pulled in as loose single questions.
     // Reset if fewer than 10 unseen remain
-    const unseenCount = topicQuestions.filter(q => !seenIds.includes(q.id)).length;
+    const unseenCount = standaloneQuestions.filter(q => !seenIds.includes(q.id)).length;
     if (unseenCount < 10) {
       updatedSeen[topicKey] = [];
       seenIds = [];
@@ -1515,12 +1532,12 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
     const usedIds = [];
 
     diffTargets.forEach(diff => {
-      let pool = topicQuestions.filter(q => q.difficulty === diff && !seenIds.includes(q.id) && !usedIds.includes(q.id));
+      let pool = standaloneQuestions.filter(q => q.difficulty === diff && !seenIds.includes(q.id) && !usedIds.includes(q.id));
       if (pool.length === 0) {
-        pool = topicQuestions.filter(q => !seenIds.includes(q.id) && !usedIds.includes(q.id));
+        pool = standaloneQuestions.filter(q => !seenIds.includes(q.id) && !usedIds.includes(q.id));
       }
       if (pool.length === 0) {
-        pool = topicQuestions.filter(q => !usedIds.includes(q.id));
+        pool = standaloneQuestions.filter(q => !usedIds.includes(q.id));
       }
       if (pool.length > 0) {
         const question = pool[Math.floor(Math.random() * pool.length)];
@@ -1706,6 +1723,15 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
                       <span className="text-gray-900 text-sm font-medium">{seg}</span>
                     </div>
                   ))}
+                </div>
+              )}
+              {/* Running-passage cloze: show the passage with numbered gaps (dev preview) */}
+              {found.questionType === 'cloze' && found.passage && (
+                <div className="mb-4 bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4">
+                  <div className="text-sm font-heading font-bold text-slate-800 mb-2">{found.passageTitle}</div>
+                  <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
+                    <ClozePassage passage={found.passage} currentGap={found.gapNumber} />
+                  </div>
                 </div>
               )}
               {/* Question text */}

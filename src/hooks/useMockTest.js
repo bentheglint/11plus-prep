@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { vrPaperVariants, vrTypeInstructions, mathsPaperConfig, englishPaperConfig, sectionDifficultyWeights } from '../questionData/mockVRConfig';
 import mockComprehensionPassages from '../questionData/mockComprehensionData';
+import { mockClozePassages } from '../questionData/mockClozeData';
 
 // Shuffle array (Fisher-Yates)
 function shuffle(arr) {
@@ -215,6 +216,21 @@ function generateEnglishPaper(englishTopics) {
     }));
     sections.push(...sortByDifficulty(grammarQs));
   }
+
+  // Section 7: Cloze — authentic GL running-passage gap-fill (one passage, 8 gaps,
+  // already ordered to ramp D1->D3 across the passage). Real "errors children write"
+  // distractors (homophones, wrong verb forms, should-of, preposition traps).
+  const clozePassage = mockClozePassages[Math.floor(Math.random() * mockClozePassages.length)];
+  const clozeQs = clozePassage.clozeQuestions.map(q => ({
+    question: q,
+    topicKey: 'grammar',
+    topicName: 'Cloze',
+    section: 'cloze',
+    sectionName: 'Cloze',
+    passage: clozePassage.passage,
+    passageTitle: clozePassage.title,
+  }));
+  sections.push(...clozeQs);
 
   return { questions: sections, passage };
 }

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from '../components/Motion';
 import { celebrateCorrect } from '../utils/confetti';
 import PostQuestionTipBanner from '../components/PostQuestionTipBanner';
 import ClozeQuestionText from '../components/ClozeQuestionText';
+import ClozePassage from '../components/ClozePassage';
 import Timer from '../components/Timer';
 import { FlagModal } from '../TestingMode';
 
@@ -187,8 +188,8 @@ function QuizScreen({
                 </button>
               </div>}
 
-              {/* Passage rendering for comprehension questions */}
-              {currentQuestion.questionType === 'passage' && currentQuestion.passage && (
+              {/* Passage rendering for comprehension AND running-passage cloze questions */}
+              {(currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'cloze') && currentQuestion.passage && (
                 <div className="mb-6 relative" data-testid="passage-block">
                   <div className="bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto scroll-passage"
                     onScroll={(e) => {
@@ -208,7 +209,9 @@ function QuizScreen({
                       <span className="text-sm font-heading font-bold text-slate-800">{currentQuestion.passageTitle}</span>
                     </div>
                     <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">
-                      {currentQuestion.passage}
+                      {currentQuestion.questionType === 'cloze'
+                        ? <ClozePassage passage={currentQuestion.passage} currentGap={currentQuestion.gapNumber} />
+                        : currentQuestion.passage}
                     </div>
                   </div>
                   <div className="scroll-hint absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#FFF8E8] to-transparent rounded-b-xl pointer-events-none flex items-end justify-center pb-1 transition-opacity"
@@ -416,7 +419,7 @@ function QuizScreen({
                 );
               })()}
               
-              {(!currentQuestion.questionType || currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'error-spotting' || currentQuestion.questionType === 'letter-codes') ? (
+              {(!currentQuestion.questionType || currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'cloze' || currentQuestion.questionType === 'error-spotting' || currentQuestion.questionType === 'letter-codes') ? (
                 <div className="space-y-3" data-testid="options-standard">
                   {currentQuestion.options.map((option, idx) => {
                     const letter = String.fromCharCode(65 + idx);
