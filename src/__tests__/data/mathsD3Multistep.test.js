@@ -35,7 +35,10 @@ const NEW_RANGES = {
 };
 
 const EXPECTED_TOTAL_NEW = 100;
-const EXPECTED_BANK_TOTAL = 3476; // 3376 baseline + 100
+// 3376 baseline + 100 (fix #8). Later Maths waves (e.g. #9a graph-reading) only ADD, so
+// assert >= rather than an exact total that every future wave would break; this wave's own
+// items are pinned exactly by the id-range count checks below.
+const MIN_BANK_TOTAL = 3476;
 
 // Parse the leading numeric value from an option string: strips a leading sign +
 // currency symbol ("-£11" -> -11), thousands separators, and any trailing unit/%.
@@ -54,9 +57,9 @@ function newItemsForTopic(topicKey) {
 }
 
 describe('Maths D3 multi-step wave (benchmark fix #8)', () => {
-  it('bank total is the expected post-insert size', () => {
+  it('bank total is at least the expected post-insert size', () => {
     const total = Object.values(mathsData.topics).reduce((a, t) => a + t.questions.length, 0);
-    expect(total).toBe(EXPECTED_BANK_TOTAL);
+    expect(total).toBeGreaterThanOrEqual(MIN_BANK_TOTAL);
   });
 
   it('every topic has exactly the expected number of new items in its id range', () => {

@@ -28553,6 +28553,250 @@ datahandling: {
             correct: 0,
             explanation: "Step 1: The netball children = 40 − (18 + 10 + 8) = 40 − 36 = 4. Step 2: Football as a percentage of the class = 18/40 = 45%; netball = 4/40 = 10%. Step 3: 45% − 10% = 35% more of the class chose football than netball. ✓"
           }
+,
+          {
+            id: 224,
+            difficulty: 1,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"8 km","value":5},{"label":"16 km","value":10},{"label":"24 km","value":15},{"label":"32 km","value":20},{"label":"40 km","value":25}],"xLabel":"Distance (km)","yLabel":"Distance (miles)","unit":"","showValues":false}},
+            question: "The graph converts kilometres to miles. A cycle route is 16 km long. Using the graph, how many miles is that? A second route is twice as far. How many miles is the second route?",
+            options: ["10 miles","16 miles","20 miles","25 miles","32 miles"],
+            correct: 2,
+            explanation: "At 16 km the graph line is at 10 miles. The second route is twice as far: 10 x 2 = 20 miles. ✓"
+          },
+          {
+            id: 225,
+            difficulty: 1,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£4","value":5},{"label":"£8","value":10},{"label":"£12","value":15},{"label":"£16","value":20},{"label":"£20","value":25}],"xLabel":"Pounds (£)","yLabel":"US dollars ($)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to US dollars ($). Sam changes £16 into dollars. He then spends $6 on a snack. How many dollars does he have left?",
+            options: ["$6","$16","$14","$20","$25"],
+            correct: 2,
+            explanation: "At £16 the graph reads $20. After a $6 snack: 20 - 6 = $14 left. ✓"
+          },
+          {
+            id: 226,
+            difficulty: 1,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"2 in","value":5},{"label":"4 in","value":10},{"label":"6 in","value":15},{"label":"8 in","value":20},{"label":"10 in","value":25}],"xLabel":"Length (inches)","yLabel":"Length (cm)","unit":"","showValues":false}},
+            question: "The graph converts inches to centimetres. A toy car is 6 inches long. Using the graph, how long is it in cm? A model lorry is 4 times as long. How long is the lorry in cm?",
+            options: ["15 cm","60 cm","24 cm","30 cm","100 cm"],
+            correct: 1,
+            explanation: "At 6 inches the line is at 15 cm. The lorry is 4 times as long: 15 x 4 = 60 cm. ✓"
+          },
+          {
+            id: 227,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£8","value":10},{"label":"£16","value":20},{"label":"£24","value":30},{"label":"£32","value":40},{"label":"£40","value":50}],"xLabel":"Pounds (£)","yLabel":"US dollars ($)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to US dollars ($). A book costs £24 in the UK. Using the graph, read its price in dollars. In New York the same book costs $42. How many dollars cheaper is the UK price?",
+            options: ["$2","$30","$12","$42","$72"],
+            correct: 2,
+            explanation: "At £24 the line is at $30. The New York price is $42, so the UK is 42 - 30 = $12 cheaper. ✓"
+          },
+          {
+            id: 228,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"16 km","value":10},{"label":"32 km","value":20},{"label":"48 km","value":30},{"label":"64 km","value":40},{"label":"80 km","value":50}],"xLabel":"Distance (km)","yLabel":"Distance (miles)","unit":"","showValues":false}},
+            question: "The graph converts kilometres to miles. A cycle race is 48 km long. Using the graph, read the distance in miles. A rider has already cycled 18 miles. How many more miles must she ride to finish?",
+            options: ["18 miles","12 miles","22 miles","30 miles","48 miles"],
+            correct: 1,
+            explanation: "At 48 km the line is at 30 miles. She has ridden 18 miles, so 30 - 18 = 12 miles remain. ✓"
+          },
+          {
+            id: 229,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£8","value":10},{"label":"£16","value":20},{"label":"£24","value":30},{"label":"£32","value":40},{"label":"£40","value":50}],"xLabel":"Pounds (£)","yLabel":"Euros (€)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to euros (€). On holiday, Grandad changes £32 into euros. Using the graph, how many euros does he get? He spends €25 on a meal. How many euros are left?",
+            options: ["€7","€25","€40","€50","€15"],
+            correct: 4,
+            explanation: "At £32 the line is at €40. After spending €25: 40 - 25 = €15 left. ✓"
+          },
+          {
+            id: 230,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"2 in","value":5},{"label":"4 in","value":10},{"label":"6 in","value":15},{"label":"8 in","value":20},{"label":"10 in","value":25}],"xLabel":"Length (inches)","yLabel":"Length (cm)","unit":"","showValues":false}},
+            question: "The graph converts inches to centimetres. A ribbon is 8 inches long. Using the graph, read its length in cm. What total length of ribbon, in cm, is needed for 4 ribbons of this length?",
+            options: ["80 cm","20 cm","32 cm","40 cm","100 cm"],
+            correct: 0,
+            explanation: "At 8 inches the line is at 20 cm. Four ribbons need 20 x 4 = 80 cm. ✓"
+          },
+          {
+            id: 231,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£5","value":10},{"label":"£10","value":20},{"label":"£15","value":30},{"label":"£20","value":40},{"label":"£25","value":50}],"xLabel":"Pounds (£)","yLabel":"Australian dollars (A$)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to Australian dollars (A$). A concert ticket costs £15. Using the graph, read the price in Australian dollars. A group buys 3 tickets. What is the total cost in Australian dollars?",
+            options: ["A$90","A$18","A$30","A$45","A$150"],
+            correct: 0,
+            explanation: "At £15 the line is at A$30. Three tickets cost 30 x 3 = A$90. ✓"
+          },
+          {
+            id: 232,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"8 km","value":5},{"label":"16 km","value":10},{"label":"24 km","value":15},{"label":"32 km","value":20},{"label":"40 km","value":25}],"xLabel":"Distance (km)","yLabel":"Distance (miles)","unit":"","showValues":false}},
+            question: "The graph converts kilometres to miles. A delivery van drives 40 km in the morning and 8 km in the afternoon. Using the graph, how many miles does it drive in total?",
+            options: ["5 miles","25 miles","33 miles","48 miles","30 miles"],
+            correct: 4,
+            explanation: "At 40 km the line reads 25 miles and at 8 km it reads 5 miles. Total = 25 + 5 = 30 miles. ✓"
+          },
+          {
+            id: 233,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£8","value":10},{"label":"£16","value":20},{"label":"£24","value":30},{"label":"£32","value":40},{"label":"£40","value":50}],"xLabel":"Pounds (£)","yLabel":"US dollars ($)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to US dollars ($). A tourist changes £40 into dollars. She spends $30 on a meal and $12 on a taxi. How many dollars does she have left?",
+            options: ["$20","$38","$42","$50","$8"],
+            correct: 4,
+            explanation: "At £40 the line is at $50. She spends 30 + 12 = $42, leaving 50 - 42 = $8. ✓"
+          },
+          {
+            id: 234,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"2 in","value":5},{"label":"4 in","value":10},{"label":"6 in","value":15},{"label":"8 in","value":20},{"label":"10 in","value":25}],"xLabel":"Length (inches)","yLabel":"Length (cm)","unit":"","showValues":false}},
+            question: "The graph converts inches to centimetres. A shelf is 8 inches deep. Using the graph, read its depth in cm. A carpenter needs 6 shelves of this depth. What total length of wood, in cm, is needed for the 6 shelves?",
+            options: ["20 cm","120 cm","48 cm","100 cm","150 cm"],
+            correct: 1,
+            explanation: "At 8 inches the line is at 20 cm. Six shelves need 20 x 6 = 120 cm of wood. ✓"
+          },
+          {
+            id: 235,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£8","value":10},{"label":"£16","value":20},{"label":"£24","value":30},{"label":"£32","value":40},{"label":"£40","value":50}],"xLabel":"Pounds (£)","yLabel":"Euros (€)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to euros (€). A tour guide changes £32 into euros. She shares the euros equally between 4 helpers. Each helper then spends €5. How many euros does each helper have left?",
+            options: ["€8","€10","€35","€40","€5"],
+            correct: 4,
+            explanation: "At £32 the line is at €40. Shared between 4 helpers: 40 ÷ 4 = €10 each. After spending €5: 10 - 5 = €5 left. ✓"
+          },
+          {
+            id: 236,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"16 km","value":10},{"label":"32 km","value":20},{"label":"48 km","value":30},{"label":"64 km","value":40},{"label":"80 km","value":50}],"xLabel":"Distance (km)","yLabel":"Distance (miles)","unit":"","showValues":false}},
+            question: "The graph converts kilometres to miles. A driver plans a 64 km trip. Using the graph, read the distance in miles. He drives at 20 miles each hour. How long, in hours, will the trip take?",
+            options: ["2 hours","1.5 hours","3.2 hours","40 hours","64 hours"],
+            correct: 0,
+            explanation: "At 64 km the line is at 40 miles. At 20 miles each hour: 40 ÷ 20 = 2 hours. ✓"
+          },
+          {
+            id: 237,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"£4","value":5},{"label":"£8","value":10},{"label":"£12","value":15},{"label":"£16","value":20},{"label":"£20","value":25}],"xLabel":"Pounds (£)","yLabel":"US dollars ($)","unit":"","showValues":false}},
+            question: "The graph converts pounds (£) to US dollars ($). A UK shop sells a game for £20. An American website sells the same game for $30 in total, including $6 postage. Using the graph for the UK price, how many dollars cheaper is the UK shop?",
+            options: ["$5","$6","$24","$25","$30"],
+            correct: 0,
+            explanation: "At £20 the line is at $25 for the UK shop. The website costs $30 in total, so the UK is 30 - 25 = $5 cheaper. ✓"
+          },
+          {
+            id: 238,
+            difficulty: 1,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Stall A","value":40},{"label":"Stall B","value":50}],"xLabel":"Stall","yLabel":"Money taken (GBP)","unit":"","yStart":30,"showValues":false}},
+            question: "This graph shows how much two lemonade stalls took. The bar for Stall B looks much taller than the bar for Stall A, but look carefully at the axis. Using the numbers on the axis, how much more money did Stall B take than Stall A?",
+            options: ["£5","£10","£20","£40","£90"],
+            correct: 1,
+            explanation: "The axis starts at £30, not £0, so a small gap is stretched to look huge. Read the real values off the axis: Stall A = £40 and Stall B = £50. The true difference is £50 − £40 = £10, even though the bar looks about twice as tall. A truncated axis exaggerates differences. ✓"
+          },
+          {
+            id: 239,
+            difficulty: 1,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Reds","value":20},{"label":"Blues","value":25}],"xLabel":"Team","yLabel":"Points","unit":"","yStart":15,"showValues":false}},
+            question: "The graph shows points scored by two teams. The bar for the Blues looks far taller than the bar for the Reds, but the axis starts at 15. Reading the axis values, how many more points did the Blues score than the Reds?",
+            options: ["1","10","5","25","45"],
+            correct: 2,
+            explanation: "Because the axis starts at 15 instead of 0, a small gap looks enormous. Read the real values: Reds = 20 and Blues = 25, so the true difference is 25 − 20 = 5 points. Always read the numbers on the axis, not the bar heights. ✓"
+          },
+          {
+            id: 240,
+            difficulty: 2,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Mon","value":40},{"label":"Tue","value":60}],"xLabel":"Day","yLabel":"Visitors","unit":"","yStart":30,"showValues":false}},
+            question: "This graph shows visitors to a website on two days. The bar for Tuesday looks about three times as tall as the bar for Monday, but the axis starts at 30. Using the axis values, how many times as many visitors came on Tuesday as on Monday?",
+            options: ["1.5","1.25","2","3","20"],
+            correct: 0,
+            explanation: "The axis starts at 30, so the bars exaggerate the gap. Reading the axis: Monday = 40 and Tuesday = 60. Really Tuesday = 60 ÷ 40 = 1.5 times Monday, not the 3 times the bars suggest. A truncated axis makes 1.5 times look like 3 times. ✓"
+          },
+          {
+            id: 241,
+            difficulty: 2,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Shop X","value":80},{"label":"Shop Y","value":120}],"xLabel":"Shop","yLabel":"Sales (GBP)","unit":"","yStart":60,"showValues":false}},
+            question: "The graph shows the sales of two shops. The bar for Shop Y looks about three times as tall as the bar for Shop X because the axis starts at £60, not £0. How much more did Shop Y actually take than Shop X?",
+            options: ["£2","£20","£120","£40","£200"],
+            correct: 3,
+            explanation: "Do not trust the bar heights. Read the axis: Shop X = £80 and Shop Y = £120. The real difference is £120 − £80 = £40. The truncated axis stretches a £40 gap into a bar that looks three times as tall. ✓"
+          },
+          {
+            id: 242,
+            difficulty: 2,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Fri","value":100},{"label":"Sat","value":120}],"xLabel":"Night","yLabel":"Tickets sold","unit":"","yStart":80,"showValues":false}},
+            question: "The graph shows cinema tickets sold on two nights. The axis starts at 80, so the bar for Saturday looks much taller than the bar for Friday. How many more tickets were sold on Saturday than on Friday?",
+            options: ["10","40","20","120","220"],
+            correct: 2,
+            explanation: "The axis starts at 80, which exaggerates the difference. Read the real values: Friday = 100 and Saturday = 120. The true difference is 120 − 100 = 20 tickets, even though the bar for Saturday looks far taller. ✓"
+          },
+          {
+            id: 243,
+            difficulty: 2,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Charity P","value":60},{"label":"Charity Q","value":120}],"xLabel":"Charity","yLabel":"Money raised (GBP)","unit":"","yStart":40,"showValues":false}},
+            question: "This graph shows money raised by two charities. The bar for Charity Q looks about four times as tall as the bar for Charity P because the axis starts at £40. Really, how many times as much did Charity Q raise as Charity P?",
+            options: ["1.5","2","3","4","60"],
+            correct: 1,
+            explanation: "The truncated axis (starting at £40) makes the gap look four times bigger than it is. Read the axis: Charity P = £60 and Charity Q = £120. So Charity Q raised 120 ÷ 60 = 2 times as much, not the 4 times the bars suggest. ✓"
+          },
+          {
+            id: 244,
+            difficulty: 2,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Van 1","value":20},{"label":"Van 2","value":40}],"xLabel":"Van","yLabel":"Cones sold","unit":"","yStart":10,"showValues":false}},
+            question: "This graph shows cones sold by two ice-cream vans. The axis does not start at 0, it starts at 10. How many times TALLER does the graph make the bar for Van 2 look than the bar for Van 1?",
+            options: ["3","2","20","30","40"],
+            correct: 0,
+            explanation: "This question is about the misleading LOOK, not the real values. The bar for Van 1 rises 20 − 10 = 10 above the axis; the bar for Van 2 rises 40 − 10 = 30. So it looks 30 ÷ 10 = 3 times taller. But really Van 2 (40) is only twice Van 1 (20), which is how a truncated axis misleads. ✓"
+          },
+          {
+            id: 245,
+            difficulty: 3,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"2022","value":40},{"label":"2023","value":50},{"label":"2024","value":60}],"xLabel":"Year","yLabel":"Members","unit":"","yStart":30,"showValues":false}},
+            question: "This graph shows the members of a sports club over three years. Because the axis starts at 30, the club looks like it grew enormously. What is the REAL difference between the number of members in 2024 and in 2022?",
+            options: ["5","20","10","30","60"],
+            correct: 1,
+            explanation: "The axis starts at 30, so a modest rise looks dramatic. Read the real values: 2022 = 40 and 2024 = 60. The true difference is 60 − 40 = 20 members. The steep-looking bars are caused by the truncated axis, not by huge growth. ✓"
+          },
+          {
+            id: 246,
+            difficulty: 3,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Sat","value":40},{"label":"Sun","value":100}],"xLabel":"Day","yLabel":"Cakes sold","unit":"","yStart":20,"showValues":false}},
+            question: "This graph shows cakes sold at a bakery on two days. The graph makes the bar for Sunday look about four times as tall as the bar for Saturday because the axis starts at 20. How many more cakes were sold on Sunday than on Saturday?",
+            options: ["80","100","140","160","60"],
+            correct: 4,
+            explanation: "The truncated axis (starting at 20) makes the Sunday bar look four times as tall. Read the real values: Saturday = 40 and Sunday = 100. The true difference is 100 − 40 = 60 cakes. Sunday is really only 2.5 times Saturday, not 4 times. ✓"
+          },
+          {
+            id: 247,
+            difficulty: 3,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Channel A","value":20},{"label":"Channel B","value":60}],"xLabel":"Channel","yLabel":"Subscribers","unit":"","yStart":10,"showValues":false}},
+            question: "This graph shows subscribers for two YouTube channels. The bar for Channel B looks about five times as tall as the bar for Channel A because the axis starts at 10. Really, how many times as many subscribers does Channel B have as Channel A?",
+            options: ["5","40","50","3","60"],
+            correct: 3,
+            explanation: "The axis starts at 10, which stretches the gap. Read the axis: Channel A = 20 and Channel B = 60. So Channel B has 60 ÷ 20 = 3 times as many, not the five times the bars suggest. ✓"
+          },
+          {
+            id: 248,
+            difficulty: 3,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Stall 1","value":50},{"label":"Stall 2","value":60}],"xLabel":"Stall","yLabel":"Apples sold","unit":"","yStart":40,"showValues":false}},
+            question: "This graph shows apples sold at two market stalls. The axis starts at 40, so the bar for Stall 2 looks twice as tall as the bar for Stall 1. How many times TALLER does the graph make the bar for Stall 2 look than the bar for Stall 1?",
+            options: ["1.2","10","20","2","60"],
+            correct: 3,
+            explanation: "This is about the misleading appearance, not the real values. The bar for Stall 1 rises 50 − 40 = 10 above the axis; the bar for Stall 2 rises 60 − 40 = 20. So it looks 20 ÷ 10 = 2 times taller. But the real values (50 and 60) are almost the same, 60 is only 1.2 times 50. The truncated axis creates a false impression. ✓"
+          },
+          {
+            id: 249,
+            difficulty: 3,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Class A","value":10},{"label":"Class B","value":12}],"xLabel":"Class","yLabel":"Books read","unit":"","yStart":6,"showValues":false}},
+            question: "This graph shows books read by two classes. The axis starts at 6, so the bar for Class B looks much taller than the bar for Class A. How many more books did Class B read than Class A?",
+            options: ["4","6","12","2","22"],
+            correct: 3,
+            explanation: "The axis starts at 6, not 0, so a difference of just 2 books looks large. Read the real values: Class A = 10 and Class B = 12. The true difference is 12 − 10 = 2 books. A truncated axis can make tiny differences look big. ✓"
+          },
+          {
+            id: 250,
+            difficulty: 2,
+            visual: {"component":"BarChart","props":{"bars":[{"label":"Raffle","value":25},{"label":"Tombola","value":30}],"xLabel":"Stall","yLabel":"Money made (GBP)","unit":"","yStart":15,"showValues":false}},
+            question: "This graph shows money made by two stalls at a school fair. The axis starts at £15, so the Tombola bar looks much taller than the Raffle bar. How much more money did the Tombola make than the Raffle?",
+            options: ["£1","£15","£30","£5","£55"],
+            correct: 3,
+            explanation: "Because the axis starts at £15, a £5 gap is stretched to look large. Read the real values: Raffle = £25 and Tombola = £30. The true difference is £30 − £25 = £5. Always read the axis numbers rather than judging by height. ✓"
+          }
 ]
 },
 speeddistancetime: {
@@ -29625,6 +29869,124 @@ speeddistancetime: {
             options: ["80 km","160 km","180 km","220 km","320 km"],
             correct: 1,
             explanation: "Step 1: Total distance = 210 + 110 = 320 km; total time = 3 + 1 = 4 hours. Step 2: Average speed = 320 ÷ 4 = 80 km/h (not the average of 70 and 110). Step 3: In 2 hours it travels 80 × 2 = 160 km. ✓"
+          }
+,
+          {
+            id: 134,
+            difficulty: 1,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":20},{"label":"2 h","value":40},{"label":"3 h","value":60}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows Priya's cycle ride: her distance from home is plotted against time. What was her average speed for the whole ride?",
+            options: ["20 km/h","12 km/h","30 km/h","40 km/h","60 km/h"],
+            correct: 0,
+            explanation: "Step 1 - Read off the graph: at 3 h the distance is 60 km. Step 2 - Average speed = 60÷3 = 20 km/h. ✓"
+          },
+          {
+            id: 135,
+            difficulty: 1,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":6},{"label":"2 h","value":12}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows Tom's walk to his gran's house: how far he has walked is plotted against time. What was his average walking speed?",
+            options: ["3 km/h","6 km/h","8 km/h","9 km/h","12 km/h"],
+            correct: 1,
+            explanation: "Step 1 - Read off the graph: at 2 h the distance is 12 km. Step 2 - Average speed = 12÷2 = 6 km/h. ✓"
+          },
+          {
+            id: 136,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"8am","value":0},{"label":"9am","value":30},{"label":"10am","value":30},{"label":"11am","value":60}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a family's car journey. The line is flat between 9am and 10am because the car was parked for a rest. What was the car's speed during the last hour, from 10am to 11am?",
+            options: ["10 km/h","15 km/h","30 km/h","20 km/h","60 km/h"],
+            correct: 2,
+            explanation: "Step 1 - Read off the graph: at 10am the distance is 30 km and at 11am it is 60 km (the flat part 9am-10am is the rest). Step 2 - Distance in that hour = 60 - 30 = 30 km, so speed = 30÷1 = 30 km/h. ✓"
+          },
+          {
+            id: 137,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"12pm","value":0},{"label":"1pm","value":40},{"label":"2pm","value":80},{"label":"3pm","value":120}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a train journey. The whole trip is 120 km long. Using the graph, how much further does the train still have to travel at 2pm?",
+            options: ["20 km","40 km","30 km","60 km","80 km"],
+            correct: 1,
+            explanation: "Step 1 - Read off the graph: at 2pm the distance is 80 km. Step 2 - Remaining distance = 120 - 80 = 40 km. ✓"
+          },
+          {
+            id: 138,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":10},{"label":"2 h","value":40},{"label":"3 h","value":60}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a coach journey. The line is steepest between 1 h and 2 h, so the coach was travelling fastest then. What was its speed during that hour?",
+            options: ["30 km/h","10 km/h","15 km/h","20 km/h","40 km/h"],
+            correct: 0,
+            explanation: "Step 1 - Read off the graph: at 1 h the distance is 10 km and at 2 h it is 40 km. Step 2 - Distance in that hour = 40 - 10 = 30 km, so speed = 30÷1 = 30 km/h. ✓"
+          },
+          {
+            id: 139,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"30 min","value":10},{"label":"60 min","value":20}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows the start of Sunil's bike ride: how far he has ridden is plotted against time in minutes. What was his speed in kilometres per hour?",
+            options: ["5 km/h","10 km/h","12 km/h","20 km/h","40 km/h"],
+            correct: 3,
+            explanation: "Step 1 - Read off the graph: at 30 min the distance is 10 km. Step 2 - 30 min = 0.5 h, so speed = 10÷0.5 = 20 km/h. ✓"
+          },
+          {
+            id: 140,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"9am","value":0},{"label":"10am","value":30},{"label":"11am","value":30},{"label":"12pm","value":60},{"label":"1pm","value":90}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a bus route. The line is flat between 10am and 11am because the bus waited at a depot. What was the bus's average speed from 11am to 1pm?",
+            options: ["15 km/h","40 km/h","45 km/h","60 km/h","30 km/h"],
+            correct: 4,
+            explanation: "Step 1 - Read off the graph: at 11am the distance is 30 km and at 1pm it is 90 km (the flat 10am-11am is the wait). Step 2 - Distance = 90 - 30 = 60 km over 2 hours, so speed = 60÷2 = 30 km/h. ✓"
+          },
+          {
+            id: 141,
+            difficulty: 2,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"90 min","value":15},{"label":"180 min","value":30}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows Maya's charity run: how far she has run is plotted against time in minutes. What was her speed in kilometres per hour?",
+            options: ["8 km/h","12 km/h","10 km/h","15 km/h","20 km/h"],
+            correct: 2,
+            explanation: "Step 1 - Read off the graph: at 90 min the distance is 15 km. Step 2 - 90 min = 1.5 h, so speed = 15÷1.5 = 10 km/h. ✓"
+          },
+          {
+            id: 142,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":60},{"label":"2 h","value":100},{"label":"3 h","value":120}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a car journey: fast for the first hour, then slower for the rest. What was the car's average speed for the whole journey?",
+            options: ["30 km/h","45 km/h","60 km/h","100 km/h","40 km/h"],
+            correct: 4,
+            explanation: "Step 1 - Read off the graph: the total distance at 3 h is 120 km. Step 2 - Average speed = total distance ÷ total time = 120÷3 = 40 km/h (not the average of the separate speeds). ✓"
+          },
+          {
+            id: 143,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":40},{"label":"2 h","value":50},{"label":"3 h","value":60}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a delivery van's journey: quick for the first hour, then slow for the rest. What was the van's average speed for the whole journey?",
+            options: ["10 km/h","25 km/h","20 km/h","40 km/h","60 km/h"],
+            correct: 2,
+            explanation: "Step 1 - Read off the graph: the total distance at 3 h is 60 km. Step 2 - Average speed = total distance ÷ total time = 60÷3 = 20 km/h (not the average of the separate speeds). ✓"
+          },
+          {
+            id: 144,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":30},{"label":"2 h","value":50}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows the first part of a lorry's trip. The full trip is 110 km and must be finished within 4 hours of setting off. What speed must the lorry average for the rest of the journey?",
+            options: ["30 km/h","18 km/h","22 km/h","25 km/h","55 km/h"],
+            correct: 0,
+            explanation: "Step 1 - Read off the graph: at 2 h the lorry has covered 50 km. Step 2 - Remaining = 110 - 50 = 60 km in the remaining 4 - 2 = 2 hours, so speed = 60÷2 = 30 km/h. ✓"
+          },
+          {
+            id: 145,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"40 min","value":20},{"label":"80 min","value":40}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a motorbike's journey: how far it has travelled is plotted against time in minutes. What was its speed in kilometres per hour?",
+            options: ["15 km/h","30 km/h","20 km/h","24 km/h","45 km/h"],
+            correct: 1,
+            explanation: "Step 1 - Read off the graph: at 40 min the distance is 20 km. Step 2 - 40 min = 2/3 h, so speed = 20÷(2/3) = 30 km/h. ✓"
+          },
+          {
+            id: 146,
+            difficulty: 3,
+            visual: {"component":"LineGraph","props":{"data":[{"label":"0","value":0},{"label":"1 h","value":20},{"label":"2 h","value":80},{"label":"3 h","value":100}],"xLabel":"Time","yLabel":"Distance","unit":" km","showValues":false}},
+            question: "The graph shows a car's journey over three hours. How much faster was the car during the second hour than during the first hour?",
+            options: ["25 km/h","60 km/h","70 km/h","40 km/h","80 km/h"],
+            correct: 3,
+            explanation: "Step 1 - Read off the graph: at 1 h the distance is 20 km and at 2 h it is 80 km. Step 2 - First hour speed = 20÷1 = 20 km/h; second hour speed = (80 - 20)÷1 = 60 km/h; difference = 60 - 20 = 40 km/h. ✓"
           }
 ]
 },

@@ -16742,6 +16742,141 @@
       "questionId": 223,
       "subConceptId": "reading-pie-charts",
       "confidence": "medium"
+    },
+    {
+      "questionId": 224,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 225,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 226,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 227,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 228,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 229,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 230,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 231,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 232,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 233,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 234,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 235,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 236,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 237,
+      "subConceptId": "reading-line-graphs",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 238,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 239,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 240,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 241,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 242,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 243,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 244,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 245,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 246,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 247,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 248,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 249,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 250,
+      "subConceptId": "reading-bar-charts",
+      "confidence": "medium"
     }
   ],
   "speeddistancetime": [
@@ -17408,6 +17543,71 @@
     {
       "questionId": 133,
       "subConceptId": "average-speed",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 134,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 135,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 136,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 137,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 138,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 139,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 140,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 141,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 142,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 143,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 144,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 145,
+      "subConceptId": "master-speed-formula",
+      "confidence": "medium"
+    },
+    {
+      "questionId": 146,
+      "subConceptId": "master-speed-formula",
       "confidence": "medium"
     }
   ]
