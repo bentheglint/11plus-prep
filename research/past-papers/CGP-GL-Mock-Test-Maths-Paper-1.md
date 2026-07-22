@@ -110,8 +110,8 @@ Which of these is the largest capacity?
 
 What is 87.5 × 4.2?
 
-- **A 3675** ✓  
-- B 367.5  
+- A 3675  
+- **B 367.5** ✓  
 - C 36.75  
 - D 3.675  
 - E 0.3675
@@ -441,8 +441,8 @@ Which two shapes have exactly one line of symmetry? [Six shapes labelled P, Q, R
 
 In Amina's school there are 560 children. 45% of the children have blue as their favourite colour. How many children in the school like blue the best?
 
-- A 252  
-- **B 308** ✓  
+- **A 252** ✓  
+- B 308  
 - C 260  
 - D 300  
 - E 250
@@ -458,8 +458,8 @@ Chocolates can have hard centres or soft centres. A box of chocolates has twice 
 - A 11  
 - B 22  
 - C 33  
-- **D 44** ✓  
-- E 66
+- D 44  
+- **E 66** ✓
 
 *Note: Hard = 2 × 22 = 44. Total = 44 + 22 = 66. Answer should be E 66. Flagged for Oracle review.*
 
@@ -732,8 +732,8 @@ Ian has a plastic bag that can only hold up to 10 kg without breaking. A tin of 
 - A 40  
 - B 25  
 - C 10  
-- D 6  
-- **E 4** ✓  
+- **D 6** ✓  
+- E 4  
 - 
 *Note: Each pack = 4 × 400 g = 1600 g = 1.6 kg. Max packs = 10 ÷ 1.6 = 6.25 → 6 packs. Answer should be D 6. Flagged for Oracle review.*
 
@@ -744,9 +744,9 @@ Ian has a plastic bag that can only hold up to 10 kg without breaking. A tin of 
 A school pays £70 to print 100 copies of the school magazine. The school sells 90 copies for £1.50 each. What is the profit after paying for the printing?
 
 - A £85  
-- **B £72** ✓  
+- B £72  
 - C £70  
-- D £65  
+- **D £65** ✓  
 - E £56
 
 *Note: Revenue = 90 × £1.50 = £135. Profit = £135 − £70 = £65. Answer should be D £65. Flagged for Oracle review.*
@@ -774,8 +774,8 @@ How many US dollars are equivalent to £75?
 
 Jo's car can travel 40 miles on a gallon of petrol. Sue's car can travel 30 miles on a gallon of petrol. A gallon of petrol costs £7.40. How much more will the petrol cost Sue than Jo if they both travel a distance of 60 miles?
 
-- A £3.70  
-- **B £4.40** ✓  
+- **A £3.70** ✓  
+- B £4.40  
 - C £5.10  
 - D £6.80  
 - E £7.00
@@ -850,3 +850,5 @@ The following answers need the Oracle to double-check against the physical paper
 | Q49 | A £3.70 | B £4.40 |
 
 *These discrepancies are likely due to difficulty reading the circled answers in the photographs, or misreading question details. The Oracle should treat the question text as correct and verify the answers independently.*
+
+**RESOLVED (22 Jul 2026, benchmark fix #8 prerequisite):** Six plain-text (no-diagram) items where the working is unambiguously correct and the ✓ was a photo-misread have been corrected in place above — Q6 (→B 367.5), Q28 (→A 252), Q29 (→E 66), Q46 (→D 6), Q47 (→D £65), Q49 (→A £3.70). The remaining eight (Q5, Q7, Q9, Q10, Q13, Q19, Q21, Q45) depend on a diagram or a possibly-misread input, so they are left flagged pending the diagram-rendering work (#9); do not author D3 chains from those until verified.

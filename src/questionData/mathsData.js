@@ -1707,7 +1707,72 @@ const mathsData = {
             correct: 1,
             explanation: "Total children = 30. Percentage = (12 ÷ 30) × 100 = 40%. You must add both groups to find the whole. ✓"
           }
-        ]
+        ,
+          {
+            id: 213,
+            difficulty: 3,
+            question: "A charity collects £960 in donations. It gives ⅜ of the money to a local food bank, then keeps 15% of that donation to cover admin costs. How much does the charity keep for admin?",
+            options: ["£360","£54","£144","£306","£600"],
+            correct: 1,
+            explanation: "Step 1: ⅜ of £960 = 960 ÷ 8 × 3 = £360 (the food bank's share). Step 2: 15% of £360 = 360 ÷ 100 × 15 = £54 kept for admin. ✓"
+          },
+          {
+            id: 214,
+            difficulty: 3,
+            question: "In a sale, a table is reduced by 20% and now costs £96. Tom buys the table and pays a £12 delivery charge. What was the original price of the table plus the delivery charge?",
+            options: ["£132","£108","£127.20","£120","£115.20"],
+            correct: 0,
+            explanation: "Step 1: the £96 sale price is 80% of the original (100% − 20%), so the original table price = £96 ÷ 0.8 = £120. Step 2: add the £12 delivery: £120 + £12 = £132. ✓"
+          },
+          {
+            id: 215,
+            difficulty: 3,
+            question: "A school has 500 pupils. 60% of them walk to school. Of the pupils who walk, 25% wear a coat. Of those wearing a coat, 40% carry an umbrella. How many pupils carry an umbrella?",
+            options: ["300","75","625","45","30"],
+            correct: 4,
+            explanation: "Step 1: 60% of 500 = 300 pupils walk. Step 2: 25% of 300 = 75 wear a coat. Step 3: 40% of 75 = 30 carry an umbrella. ✓"
+          },
+          {
+            id: 216,
+            difficulty: 3,
+            question: "A jar holds 240 sweets. 25% of the sweets are red. The rest are shared between green and yellow sweets in the ratio 3:2. How many yellow sweets are in the jar?",
+            options: ["72","60","90","180","108"],
+            correct: 0,
+            explanation: "Step 1: 25% of 240 = 60 red sweets. Step 2: the rest = 240 − 60 = 180 sweets, shared 3:2. Step 3: yellow is 2 parts of 5, so 2/5 of 180 = 72 yellow sweets. ✓"
+          },
+          {
+            id: 217,
+            difficulty: 3,
+            question: "A painting is valued at £500. In the first year its value rises by 20%. In the second year it falls by 10%. In the third year it rises by 20%. What is the painting worth after the three years?",
+            options: ["£540","£600","£486","£648","£650"],
+            correct: 3,
+            explanation: "Step 1: year one, £500 × 1.2 = £600. Step 2: year two, £600 × 0.9 = £540. Step 3: year three, £540 × 1.2 = £648. ✓"
+          },
+          {
+            id: 218,
+            difficulty: 3,
+            question: "A library has 800 books. 45% of them are fiction. Of the fiction books, 288 are hardbacks. What percentage of the fiction books are hardbacks?",
+            options: ["36%","20%","80%","125%","45%"],
+            correct: 2,
+            explanation: "Step 1: 45% of 800 = 360 fiction books. Step 2: express 288 as a percentage of 360: 288 ÷ 360 × 100 = 80%. ✓"
+          },
+          {
+            id: 219,
+            difficulty: 3,
+            question: "A rectangular garden measures 15 metres by 8 metres. A vegetable patch covers 30% of the garden and grass covers the rest. What is the area of the grass, in square metres?",
+            options: ["36","120","84","46","90"],
+            correct: 2,
+            explanation: "Step 1: garden area = 15 × 8 = 120 m². Step 2: grass is the rest, 100% − 30% = 70%, so 70% of 120 = 84 m². ✓"
+          },
+          {
+            id: 220,
+            difficulty: 3,
+            question: "The price of a phone is £330, which includes 20% VAT. A shop offers Amara 5% off the price before VAT was added. How much money does Amara save with the 5% discount?",
+            options: ["£275","£13.75","£16.50","£66","£55"],
+            correct: 1,
+            explanation: "Step 1: remove the VAT — £330 is 120% of the pre-VAT price, so pre-VAT = £330 ÷ 1.2 = £275. Step 2: 5% of £275 = 275 ÷ 100 × 5 = £13.75 saved. ✓"
+          }
+]
         }
         ,
       decimals: {
@@ -3762,7 +3827,72 @@ const mathsData = {
             correct: 1,
             explanation: "Convert to grams: 10 kg = 10000 g and 3.5 kg = 3500 g. Add the two amounts used: 3500 + 2750 = 6250 g. Then subtract: 10000 − 6250 = 3750 g. ✓"
           }
-        ]
+        ,
+          {
+            id: 254,
+            difficulty: 3,
+            question: "A stall sells fudge at £3.60 per kilogram. Mrs Okafor buys 250 grams. She pays with a £5 note. How much change does she receive?",
+            options: ["£0.90","£4.10","£1.40","£3.20","£4.91"],
+            correct: 1,
+            explanation: "Step 1: convert the weight, 250 g = 0.25 kg. Step 2: cost = £3.60 × 0.25 = £0.90. Step 3: change = £5.00 − £0.90 = £4.10. ✓"
+          },
+          {
+            id: 255,
+            difficulty: 3,
+            question: "A length of rope is 4.5 metres long. Ravi cuts off 0.6 of it. He then cuts the piece he removed exactly in half. How long is each of these two smaller pieces, in centimetres?",
+            options: ["135 cm","90 cm","225 cm","270 cm","1350 cm"],
+            correct: 0,
+            explanation: "Step 1: Ravi cuts off 0.6 of 4.5 m = 2.7 m. Step 2: half of 2.7 m = 1.35 m. Step 3: convert, 1.35 m = 135 cm. ✓"
+          },
+          {
+            id: 256,
+            difficulty: 3,
+            question: "Ella has 3.5 litres of juice. She pours it into cups that each hold 0.4 litres. A cup only counts if there is enough juice to fill it completely. How many cups can she completely fill?",
+            options: ["7","8.75","9","14","8"],
+            correct: 4,
+            explanation: "Step 1: 3.5 ÷ 0.4 = 8.75. Step 2: only whole cups count, so 8 cups are completely filled (0.3 litres is left, not enough for a ninth). ✓"
+          },
+          {
+            id: 257,
+            difficulty: 3,
+            question: "A phone shop takes £84.50 on Monday and £95.50 on Tuesday. The owner puts 20% of the two-day total into savings. How much money goes into savings?",
+            options: ["£36.00","£3.60","£16.90","£144.00","£180.00"],
+            correct: 0,
+            explanation: "Step 1: two-day total = £84.50 + £95.50 = £180.00. Step 2: 20% of £180.00 = £36.00. ✓"
+          },
+          {
+            id: 258,
+            difficulty: 3,
+            question: "Three friends share a taxi. The fare is £14.70. They add a tip equal to 10% of the fare, then split the total cost equally between the three of them. How much does each friend pay?",
+            options: ["£4.90","£5.88","£16.17","£5.39","£53.90"],
+            correct: 3,
+            explanation: "Step 1: tip = 10% of £14.70 = £1.47. Step 2: total = £14.70 + £1.47 = £16.17. Step 3: each friend pays £16.17 ÷ 3 = £5.39. ✓"
+          },
+          {
+            id: 259,
+            difficulty: 3,
+            question: "Two shops sell the same flour. Shop A sells a 1.5 kg bag for £1.80. Shop B sells a 2 kg bag for £2.60. What is the difference in price per kilogram between the two shops?",
+            options: ["£0.40","£0.80","£0.10","£1.20","£1.30"],
+            correct: 2,
+            explanation: "Step 1: Shop A = £1.80 ÷ 1.5 kg = £1.20 per kg. Step 2: Shop B = £2.60 ÷ 2 kg = £1.30 per kg. Step 3: difference = £1.30 − £1.20 = £0.10. ✓"
+          },
+          {
+            id: 260,
+            difficulty: 3,
+            question: "A recipe needs 0.35 kg of sugar. Sam has a bag holding 3/4 of a kilogram of sugar and uses exactly what the recipe needs. How much sugar is left in the bag, in grams?",
+            options: ["40 g","250 g","400 g","350 g","750 g"],
+            correct: 2,
+            explanation: "Step 1: convert the bag, 3/4 kg = 0.75 kg. Step 2: 0.75 − 0.35 = 0.40 kg left. Step 3: convert, 0.40 kg = 400 g. ✓"
+          },
+          {
+            id: 261,
+            difficulty: 3,
+            question: "A dripping tap loses 0.15 litres of water every minute. It drips steadily for 1.5 hours. The water is collected in 2-litre bottles. How many bottles are completely filled?",
+            options: ["6.75","6","7","13","27"],
+            correct: 1,
+            explanation: "Step 1: 1.5 hours = 90 minutes. Step 2: 0.15 × 90 = 13.5 litres collected. Step 3: 13.5 ÷ 2 = 6.75, so 6 bottles are completely filled (0.75 of a bottle is left unfilled). ✓"
+          }
+]
 }
 ,
 longdivision: {
@@ -5924,7 +6054,72 @@ longdivision: {
       correct: 0,
       explanation: "Using the bus stop method: 11 goes into 39 three times (33), remainder 6. Bring down 6 to make 66. 11 goes into 66 six times (66). Answer: 36. Check: 11 × 36 = 396. ✓"
     }
-  ]
+  ,
+          {
+            id: 266,
+            difficulty: 3,
+            question: "A free-range farm collects 2,182 eggs. They are packed into trays that each hold 30 eggs. Every full tray is sold for £4, and any eggs left over are kept back for the farm shop. How much money is made from selling the full trays?",
+            options: ["£72","£288","£292","£310","£8728"],
+            correct: 1,
+            explanation: "Step 1: Divide to find full trays: 2,182 ÷ 30 = 72 remainder 22, so 72 full trays (the 22 spare eggs don't fill a tray). Step 2: Each full tray sells for £4, so 72 × £4 = £288. ✓"
+          },
+          {
+            id: 267,
+            difficulty: 3,
+            question: "Oliver has 537 conkers to put into bags of 24. He fills as many full bags as he can and keeps the leftover conkers in a jar. He then finds 8 more conkers and adds them to the jar. How many conkers are in the jar now?",
+            options: ["17","9","22","25","30"],
+            correct: 0,
+            explanation: "Step 1: Divide to fill the bags: 537 ÷ 24 = 22 remainder 9, so 22 full bags with 9 conkers left in the jar. Step 2: He adds 8 more conkers: 9 + 8 = 17. ✓"
+          },
+          {
+            id: 268,
+            difficulty: 3,
+            question: "Priya thinks of a number. She multiplies it by 23, then adds 19, and gets 663. She then divides her original number by 4. What is her result?",
+            options: ["6","8","14","28","7"],
+            correct: 4,
+            explanation: "Step 1: Work backwards to the starting number: (663 - 19) ÷ 23 = 644 ÷ 23 = 28. Step 2: Divide the starting number by 4: 28 ÷ 4 = 7. ✓"
+          },
+          {
+            id: 269,
+            difficulty: 3,
+            question: "A baker buys a 5 kg sack of flour for £6.75. Each loaf uses 250 g of flour, and she sells each loaf for 90p. If she uses the whole sack, how much profit does she make?",
+            options: ["£11.25","£1.80","£2.25","£18.00","£24.75"],
+            correct: 0,
+            explanation: "Step 1: Loaves from the sack: 5,000 g ÷ 250 g = 20 loaves. Step 2: Takings: 20 × 90p = £18.00. Step 3: Subtract the cost of the flour: £18.00 - £6.75 = £11.25 profit. ✓"
+          },
+          {
+            id: 270,
+            difficulty: 3,
+            question: "A greengrocer sells apples two ways. A tray of 24 apples costs £7.20, and a bag of 15 apples costs £4.80. How much cheaper, per apple, is the better-value option?",
+            options: ["30p","32p","62p","2p","240p"],
+            correct: 3,
+            explanation: "Step 1: Tray price per apple: 720p ÷ 24 = 30p. Step 2: Bag price per apple: 480p ÷ 15 = 32p. Step 3: The tray is cheaper, by 32p - 30p = 2p per apple. ✓"
+          },
+          {
+            id: 271,
+            difficulty: 3,
+            question: "A carpenter has a plank 5.4 metres long. She cuts as many 0.35 m shelves from it as she can, and the wood left over is thrown away. What length of wood is thrown away?",
+            options: ["0.35 m","0.50 m","0.15 m","5.05 m","5.25 m"],
+            correct: 2,
+            explanation: "Step 1: How many shelves: 5.4 ÷ 0.35 = 15 shelves, with wood left over. Step 2: Wood used: 15 × 0.35 = 5.25 m. Step 3: Thrown away: 5.4 - 5.25 = 0.15 m. ✓"
+          },
+          {
+            id: 272,
+            difficulty: 3,
+            question: "A school has 900 pupils. Two-thirds of them take part in sports day. The pupils at sports day are then split equally into 12 teams. How many pupils are in each team?",
+            options: ["25","52","50","75","600"],
+            correct: 2,
+            explanation: "Step 1: Two-thirds go to sports day: 900 ÷ 3 × 2 = 600 pupils. Step 2: Split into 12 equal teams: 600 ÷ 12 = 50 per team. ✓"
+          },
+          {
+            id: 273,
+            difficulty: 3,
+            question: "A whole number divided by 16 gives 27 remainder 9. Robert then subtracts 145 from that number. What is his result?",
+            options: ["287","296","432","441","586"],
+            correct: 1,
+            explanation: "Step 1: Rebuild the number using divisor × quotient + remainder: 16 × 27 + 9 = 432 + 9 = 441. Step 2: Robert subtracts 145: 441 - 145 = 296. ✓"
+          }
+]
 }
 ,
 ratio: {
@@ -7906,7 +8101,40 @@ ratio: {
             correct: 2,
             explanation: "White:black = 10:15. HCF = 5. Divide: 2:3. ✓"
           }
-        ]
+        ,
+          {
+            id: 246,
+            difficulty: 3,
+            question: "At a village fête, £560 was raised. The money is shared between the school, the scout group and the church in the ratio 5:2:1. The school then gives 30% of its share to a local food bank. How much does the school give to the food bank?",
+            options: ["£70","£105","£168","£245","£350"],
+            correct: 1,
+            explanation: "Step 1: add the parts, 5 + 2 + 1 = 8, so one part = £560 ÷ 8 = £70. Step 2: the school's share = 5 × £70 = £350. Step 3: 30% of £350 = 0.3 × 350 = £105. ✓"
+          },
+          {
+            id: 247,
+            difficulty: 3,
+            question: "James, Sofia and Leah share £720 in the ratio 3:4:5. Sofia spends three-eighths of her share on a new bike. How much of her share does Sofia have left?",
+            options: ["£90","£240","£150","£270","£450"],
+            correct: 2,
+            explanation: "Step 1: add the parts, 3 + 4 + 5 = 12, so one part = £720 ÷ 12 = £60. Step 2: Sofia's share = 4 × £60 = £240. Step 3: she spends 3/8, so she keeps 5/8 of £240 = £150. ✓"
+          },
+          {
+            id: 248,
+            difficulty: 3,
+            question: "A flapjack recipe for 12 flapjacks uses butter and sugar in the ratio 5:3. The recipe uses 40g more butter than sugar. How much butter is needed to make 30 flapjacks?",
+            options: ["50g","100g","150g","250g","400g"],
+            correct: 3,
+            explanation: "Step 1: butter and sugar differ by 5 − 3 = 2 parts, and that difference is 40g, so one part = 40 ÷ 2 = 20g. Step 2: butter = 5 × 20 = 100g for 12 flapjacks. Step 3: scale up to 30 flapjacks, a factor of 30 ÷ 12 = 2.5, so butter = 100 × 2.5 = 250g. ✓"
+          },
+          {
+            id: 249,
+            difficulty: 3,
+            question: "In a swimming club, the ratio of boys to girls is 3:5. There are 18 boys. Every member pays £5 to enter the summer gala. What is the total entry cost for the whole club?",
+            options: ["£240","£48","£90","£150","£720"],
+            correct: 0,
+            explanation: "Step 1: 18 boys = 3 parts, so one part = 18 ÷ 3 = 6 members. Step 2: total members = (3 + 5) × 6 = 8 × 6 = 48. Step 3: each pays £5, so total = 48 × £5 = £240. ✓"
+          }
+]
 }
 ,
 fractions: {
@@ -9631,7 +9859,72 @@ fractions: {
       correct: 1,
       explanation: "To convert to a percentage, multiply by 100. 7/20 × 100 = 700 ÷ 20 = 35%. ✓"
     }
-  ]
+  ,
+          {
+            id: 211,
+            difficulty: 3,
+            question: "A Bournemouth bakery bakes 480 loaves for the day. It sells 2/5 of them during the morning. In the afternoon it sells 3/4 of the loaves that are still left. How many loaves are unsold at the end of the day?",
+            options: ["216","72","288","360","192"],
+            correct: 1,
+            explanation: "Step 1: morning sales = 2/5 of 480 = 192, so loaves left = 480 - 192 = 288. Step 2: afternoon sales = 3/4 of the remaining 288 = 216. Step 3: unsold = 288 - 216 = 72. ✓"
+          },
+          {
+            id: 212,
+            difficulty: 3,
+            question: "Priya emptied her money box. She gave 5/8 of her coins to charity and had 60 coins left. Of the coins she gave away, 2/5 were pound coins. How many pound coins did she give away?",
+            options: ["40","100","64","24","96"],
+            correct: 0,
+            explanation: "Step 1: the 60 left over are 3/8 of the coins, so 1/8 = 20 and the total = 160. Step 2: coins given away = 160 - 60 = 100. Step 3: pound coins = 2/5 of 100 = 40. ✓"
+          },
+          {
+            id: 213,
+            difficulty: 3,
+            question: "A water butt in Meera's garden holds 90 litres when full. In the first hour of rain it fills to 2/5 of its capacity. In the second hour it gains a further 1/3 of its capacity. How many more litres are needed to fill the water butt completely?",
+            options: ["66 litres","54 litres","36 litres","30 litres","24 litres"],
+            correct: 4,
+            explanation: "Step 1: total filled = 2/5 + 1/3 = 6/15 + 5/15 = 11/15 of the butt. Step 2: the part still empty = 1 - 11/15 = 4/15. Step 3: 4/15 of 90 = 24 litres. ✓"
+          },
+          {
+            id: 214,
+            difficulty: 3,
+            question: "A cricket club has 200 members. 3/5 of them are adults and the rest are juniors. The juniors are shared between two teams in the ratio 3:5. How many juniors are in the larger team?",
+            options: ["50","125","80","30","75"],
+            correct: 0,
+            explanation: "Step 1: juniors = 2/5 of 200 = 80 (the members who are not adults). Step 2: the ratio 3:5 has 3 + 5 = 8 parts, and the larger team is 5 parts, so it gets 5/8 of the juniors. Step 3: 5/8 of 80 = 50. ✓"
+          },
+          {
+            id: 215,
+            difficulty: 3,
+            question: "A cake recipe needs 0.7 kg of flour. George has a bag of flour that is 4/5 full and holds 1 kg when it is full. After weighing out what the recipe needs, how many grams of flour will George have left over?",
+            options: ["10 g","200 g","300 g","100 g","800 g"],
+            correct: 3,
+            explanation: "Step 1: flour in the bag = 4/5 of 1 kg = 800 g. Step 2: the recipe needs 0.7 kg = 700 g. Step 3: left over = 800 - 700 = 100 g. ✓"
+          },
+          {
+            id: 216,
+            difficulty: 3,
+            question: "Tom had £60. He spent 1/4 of it on a book, then spent 2/5 of the money he had left on his lunch. How much money does Tom have now?",
+            options: ["£45","£42","£27","£33","£21"],
+            correct: 2,
+            explanation: "Step 1: book = 1/4 of £60 = £15, so money left = £60 - £15 = £45. Step 2: lunch = 2/5 of the remaining £45 = £18. Step 3: money now = £45 - £18 = £27. ✓"
+          },
+          {
+            id: 217,
+            difficulty: 3,
+            question: "A farmer picked a basket of apples. He sold 5/9 of them at the market and brought the other 48 apples home. Of the whole basket he picked, 1/6 were bruised. How many apples were bruised?",
+            options: ["60","8","18","10","12"],
+            correct: 2,
+            explanation: "Step 1: the 48 apples brought home are 4/9 of the basket, so 1/9 = 12 and the whole basket = 108. Step 2: bruised = 1/6 of 108 = 18. ✓"
+          },
+          {
+            id: 218,
+            difficulty: 3,
+            question: "On a school trip of 80 pupils, 1/4 chose the museum and 2/5 chose the aquarium. The rest went to the park. On the way home, 25% of the park group realised they had forgotten their coats. How many park pupils forgot their coats?",
+            options: ["28","7","20","13","12"],
+            correct: 1,
+            explanation: "Step 1: museum + aquarium = 1/4 + 2/5 = 5/20 + 8/20 = 13/20, so the park group = 1 - 13/20 = 7/20. Step 2: park pupils = 7/20 of 80 = 28. Step 3: 25% of 28 = 7. ✓"
+          }
+]
 },
 longmultiplication: {
   name: "Long Multiplication",
@@ -11460,7 +11753,72 @@ longmultiplication: {
       correct: 3,
       explanation: "463 × 67: (463 × 70 = 32,410) - (463 × 3 = 1,389) = 32,410 - 1,389 = 31,021. ✓"
     }
-  ]
+  ,
+          {
+            id: 229,
+            difficulty: 3,
+            question: "A market trader buys 45 boxes of mugs. He sells all of them, taking £18 for each box, having paid £13 for each box. What is his total profit?",
+            options: ["£810","£225","£1395","£5","£585"],
+            correct: 1,
+            explanation: "Step 1: takings = 45 × 18 = £810. Step 2: cost = 45 × 13 = £585. Step 3: profit = 810 − 585 = £225. ✓"
+          },
+          {
+            id: 230,
+            difficulty: 3,
+            question: "A garden centre has 25 trays of plant pots with 24 pots in every tray. During delivery 137 pots are cracked and thrown away. How many usable pots are left?",
+            options: ["463","600","737","363","473"],
+            correct: 0,
+            explanation: "Step 1: total pots = 25 × 24 = 600. Step 2: usable = 600 − 137 = 463. ✓"
+          },
+          {
+            id: 231,
+            difficulty: 3,
+            question: "A theatre has 28 rows of seats with 24 seats in each row. For a matinee, three-quarters of the seats are sold. How many seats are sold?",
+            options: ["672","168","336","224","504"],
+            correct: 4,
+            explanation: "Step 1: total seats = 28 × 24 = 672. Step 2: one quarter = 672 ÷ 4 = 168. Step 3: three quarters = 168 × 3 = 504. ✓"
+          },
+          {
+            id: 232,
+            difficulty: 3,
+            question: "A school compares two minibus firms for a residential. Firm A charges £45 per day for 18 days. Firm B charges £32 per day for 26 days. How much cheaper is the cheaper firm?",
+            options: ["£22","£810","£832","£1642","£427"],
+            correct: 0,
+            explanation: "Step 1: Firm A = 45 × 18 = £810. Step 2: Firm B = 32 × 26 = £832. Step 3: Firm A is cheaper by 832 − 810 = £22. ✓"
+          },
+          {
+            id: 233,
+            difficulty: 3,
+            question: "A gallery sells 35 prints at £48 each. The artist is paid 15% of the total takings. How much is the artist paid?",
+            options: ["£1680","£1428","£168","£252","£2520"],
+            correct: 3,
+            explanation: "Step 1: takings = 35 × 48 = £1,680. Step 2: 10% = £168 and 5% = £84. Step 3: 15% = 168 + 84 = £252. ✓"
+          },
+          {
+            id: 234,
+            difficulty: 3,
+            question: "A holiday club charges £13 per child each day. It runs for 15 days with 24 children attending every day. The club's running costs for the fortnight are £3,950. What profit does it make?",
+            options: ["£4680","£8630","£730","£195","£4240"],
+            correct: 2,
+            explanation: "Step 1: fee per child for the fortnight = 13 × 15 = £195. Step 2: total income = 195 × 24 = £4,680. Step 3: profit = 4,680 − 3,950 = £730. ✓"
+          },
+          {
+            id: 235,
+            difficulty: 3,
+            question: "A builder needs 145 bricks for each wall and is building 18 identical walls. He already has 2,500 bricks on site. How many more bricks does he need?",
+            options: ["2610","5110","110","10","255"],
+            correct: 2,
+            explanation: "Step 1: bricks needed = 145 × 18 = 2,610. Step 2: extra needed = 2,610 − 2,500 = 110. ✓"
+          },
+          {
+            id: 236,
+            difficulty: 3,
+            question: "A recipe for 8 people uses 360g of flour. A baker makes it for 22 people. He has a 900g bag of flour. How much more flour does he need?",
+            options: ["45g","90g","990g","1890g","7920g"],
+            correct: 1,
+            explanation: "Step 1: flour per person = 360 ÷ 8 = 45g. Step 2: flour for 22 people = 45 × 22 = 990g. Step 3: extra needed = 990 − 900 = 90g. ✓"
+          }
+]
 }
 ,
 algebra: {
@@ -14003,7 +14361,32 @@ algebra: {
             correct: 2,
             explanation: "Work backwards: 20 ÷ 2 = 10, then 10 × 3 = 30, then 30 − 12 = 18, then 18 ÷ 3 = 6. The starting number was 6. Check: 6 × 3 = 18, 18 + 12 = 30, 30 ÷ 3 = 10, 10 × 2 = 20. ✓"
           }
-        ]
+        ,
+          {
+            id: 313,
+            difficulty: 3,
+            question: "In a school quiz, Priya scored some points. Omar scored 5 more than double Priya's score. Altogether they scored 50 points. How many points did Omar score?",
+            options: ["15","35","25","30","45"],
+            correct: 1,
+            explanation: "Step 1: Call Priya's score p, so Omar scored 2p + 5. Step 2: p + (2p + 5) = 50, so 3p + 5 = 50 and 3p = 45, giving p = 15 (Priya). Step 3: Omar scored 2 x 15 + 5 = 35 points. ✓"
+          },
+          {
+            id: 314,
+            difficulty: 3,
+            question: "Solve the equation 5x - 8 = 27. Using your value of x, work out the value of 3x + 4.",
+            options: ["7","14","25","21","39"],
+            correct: 2,
+            explanation: "Step 1: 5x - 8 = 27, so 5x = 35 and x = 7. Step 2: Substitute into 3x + 4 = 3 x 7 + 4 = 21 + 4 = 25. ✓"
+          },
+          {
+            id: 315,
+            difficulty: 3,
+            question: "A rectangle has a perimeter of 44 cm. Its length is 4 cm more than its width. What is the area of the rectangle?",
+            options: ["117 cm²","13 cm²","22 cm²","81 cm²","140 cm²"],
+            correct: 0,
+            explanation: "Step 1: Let the width be w, so the length is w + 4. Step 2: Perimeter 2(w + w + 4) = 44, so 2w + 4 = 22, 2w = 18 and w = 9 cm. Step 3: Length = 13 cm, so area = 9 x 13 = 117 cm². ✓"
+          }
+]
 }
 ,
 placevalue: {
@@ -15421,7 +15804,32 @@ placevalue: {
       correct: 2,
       explanation: "Adding 10,000 changes the ten-thousands digit to 6, meaning it was 5. So the number is 5_,___. No other digit changes, so the thousands digit doesn't carry — meaning it's 0-9 (any). Subtracting 100 makes the hundreds digit 2, meaning the hundreds digit was 3 (since 3 − 1 = 2, no borrowing needed). So the number is 53,_00 or 53,___. Actually, we know ten-thousands = 5 and hundreds = 3. The question says only the ten-thousands digit changes when adding 10,000, so thousands ≤ 8. And only hundreds changes when subtracting 100, so tens and ones stay the same. We need the full number. The simplest answer matching the pattern is 53,300. Check: 53,300 + 10,000 = 63,300 (ten-thousands went from 5 to 6, no other change ✓). 53,300 − 100 = 53,200 (hundreds went from 3 to 2, no other change ✓). ✓"
     }
-  ]
+  ,
+          {
+            id: 177,
+            difficulty: 3,
+            question: "A number rounds to 3,600 when rounded to the nearest hundred. Priya works out the largest whole number and the smallest whole number it could be, then finds the difference between them. What is that difference?",
+            options: ["149","99","100","49","199"],
+            correct: 1,
+            explanation: "Step 1: The largest whole number that rounds to 3,600 (nearest 100) is 3,649, because 3,650 would round up to 3,700. Step 2: The smallest is 3,550, because 3,549 would round down to 3,500. Step 3: The difference is 3,649 − 3,550 = 99. ✓"
+          },
+          {
+            id: 178,
+            difficulty: 3,
+            question: "A stationery shop orders 39 boxes, each holding 21 pencils. Ravi first estimates the total number of pencils by rounding each number to the nearest 10, then he works out the exact total. How much bigger is the exact total than his estimate?",
+            options: ["800","20","19","819","219"],
+            correct: 2,
+            explanation: "Step 1: Round each number to the nearest 10: 39 → 40 and 21 → 20, so the estimate is 40 × 20 = 800. Step 2: Work out the exact total: 39 × 21 = 819. Step 3: The exact total is 819 − 800 = 19 more than the estimate. ✓"
+          },
+          {
+            id: 179,
+            difficulty: 3,
+            question: "Ella writes a five-digit number using these clues: the ten thousands digit is 8; the thousands digit is half the ten thousands digit; the hundreds digit is 0; the tens digit is the largest single digit possible; and the ones digit is 8 less than the tens digit. In Ella's number, what is the value of the digit 4 added to the value of the digit 9?",
+            options: ["4,090","4,900","490","13","4,009"],
+            correct: 0,
+            explanation: "Step 1: Build the number. Ten thousands = 8 (80,000); thousands = half of 8 = 4 (4,000); hundreds = 0; tens = 9 (90); ones = 9 − 8 = 1. The number is 84,091. Step 2: The value of the 4 is 4,000 and the value of the 9 is 90. Step 3: 4,000 + 90 = 4,090. ✓"
+          }
+]
 }
 ,
 negativenumbers: {
@@ -16875,7 +17283,72 @@ negativenumbers: {
       correct: 2,
       explanation: "Let w = wrong answers. Correct = 12 − w. Score: 10(12 − w) − 4w = 64. So 120 − 10w − 4w = 64. 120 − 14w = 64. 14w = 56. w = 4. She got 4 wrong. ✓"
     }
-  ]
+  ,
+          {
+            id: 180,
+            difficulty: 3,
+            question: "In a quiz, each correct answer scores 5 points and each wrong answer loses 3 points. Ravi gets 6 correct and 8 wrong. Megan gets 4 correct and 9 wrong. How many more points does Ravi score than Megan?",
+            options: ["6","13","-1","7","-7"],
+            correct: 1,
+            explanation: "Step 1: Ravi scores 6 x 5 = 30 for correct answers and loses 8 x 3 = 24 for wrong ones, giving 30 - 24 = 6 points. Step 2: Megan scores 4 x 5 = 20 and loses 9 x 3 = 27, giving 20 - 27 = -7 points. Step 3: Ravi scores 6 - (-7) = 13 more points than Megan. ✓"
+          },
+          {
+            id: 181,
+            difficulty: 3,
+            question: "At dawn the temperature on a mountain top was -6°C. By mid-morning it had risen 4°C, then by nightfall it had fallen 9°C. In the valley below, the temperature stayed at 3°C all day. At nightfall, how many degrees colder was the mountain top than the valley?",
+            options: ["14","-11","5","-14","-8"],
+            correct: 0,
+            explanation: "Step 1: The mountain warms from -6°C: -6 + 4 = -2°C by mid-morning. Step 2: It then falls 9°C: -2 - 9 = -11°C at nightfall. Step 3: The valley is 3°C, so the mountain is 3 - (-11) = 14 degrees colder. ✓"
+          },
+          {
+            id: 182,
+            difficulty: 3,
+            question: "Leah's bank account starts the week with £15. She pays a £22 bill, then £30 wages are paid in, then she pays £28 for a train ticket. If the account is below £0 at the end of the week, the bank takes a £6 overdraft charge. What is Leah's balance after any charge?",
+            options: ["-£5","£1","£23","£17","-£11"],
+            correct: 4,
+            explanation: "Step 1: Start £15, pay the £22 bill: 15 - 22 = -£7. Step 2: £30 wages in, then the £28 ticket: -7 + 30 - 28 = -£5. Step 3: The account is below £0, so the £6 overdraft charge applies: -5 - 6 = -£11. ✓"
+          },
+          {
+            id: 183,
+            difficulty: 3,
+            question: "A submarine starts at the surface (0 m) and descends 15 m every minute for 4 minutes. It then rises 50 m to inspect a shipwreck. At what depth is the submarine now?",
+            options: ["-10 m","-60 m","-110 m","-25 m","50 m"],
+            correct: 0,
+            explanation: "Step 1: Descending 15 m each minute for 4 minutes is -15 x 4 = -60 m (60 m below the surface). Step 2: Rising 50 m: -60 + 50 = -10 m, so it is 10 m below the surface. ✓"
+          },
+          {
+            id: 184,
+            difficulty: 3,
+            question: "The temperature is falling by 3°C every hour. At 8 pm it is 4°C. What will the temperature be at 1 am, five hours later?",
+            options: ["-15°C","11°C","19°C","-11°C","-8°C"],
+            correct: 3,
+            explanation: "Step 1: Falling 3°C for 5 hours is a change of -3 x 5 = -15°C. Step 2: Starting from 4°C: 4 - 15 = -11°C. ✓"
+          },
+          {
+            id: 185,
+            difficulty: 3,
+            question: "In a crazy-golf match, a player scores -1 for each hole they win and +2 for each hole they lose (a lower score is better). Sam wins 9 holes and loses 4. Priya wins 5 holes and loses 6. How many points lower is Sam's score than Priya's?",
+            options: ["-1","7","8","6","-8"],
+            correct: 2,
+            explanation: "Step 1: Sam scores 9 x (-1) + 4 x 2 = -9 + 8 = -1. Step 2: Priya scores 5 x (-1) + 6 x 2 = -5 + 12 = 7. Step 3: Sam's score is lower by 7 - (-1) = 8 points. ✓"
+          },
+          {
+            id: 186,
+            difficulty: 3,
+            question: "Ben's bank account is overdrawn at -£50. He pays in £15 each week for 3 weeks. At the end of the three weeks the bank also takes a £4 fee. What is Ben's balance then?",
+            options: ["-£5","-£1","-£9","-£24","£91"],
+            correct: 2,
+            explanation: "Step 1: Three weekly deposits of £15 add 15 x 3 = £45. Step 2: Starting overdrawn at -£50: -50 + 45 = -£5. Step 3: The £4 fee is taken: -5 - 4 = -£9. ✓"
+          },
+          {
+            id: 187,
+            difficulty: 3,
+            question: "The top of a sea cliff is 34 m above sea level. The entrance to a cave is 12 m below sea level. A diver is exploring 8 m below the cave entrance. How far below the top of the cliff is the diver?",
+            options: ["46 m","54 m","20 m","14 m","38 m"],
+            correct: 1,
+            explanation: "Step 1: The cave is -12 m and the diver is 8 m below it: -12 - 8 = -20 m. Step 2: The cliff top is 34 m, so the diver is 34 - (-20) = 54 m below it. ✓"
+          }
+]
 }
 ,
 primenumbersfactors: {
@@ -18450,7 +18923,72 @@ primenumbersfactors: {
       correct: 0,
       explanation: "63 ÷ 9 = 7 exactly, so 9 is a factor of 63. None of the other options divide into 63 evenly. ✓"
     }
-  ]
+  ,
+          {
+            id: 196,
+            difficulty: 3,
+            question: "Two rotating beacons at a harbour flash together at exactly 8:00:00 pm. The first flashes every 12 seconds and the second every 18 seconds. In the 3 minutes after 8:00:00 pm, how many more times do the two beacons flash together?",
+            options: ["4","5","6","30","36"],
+            correct: 1,
+            explanation: "Step 1: LCM of 12 and 18 = 36, so the beacons coincide every 36 seconds. Step 2: 3 minutes = 180 seconds, and 180 ÷ 36 = 5, so they flash together 5 more times (at 36, 72, 108, 144 and 180 seconds). ✓"
+          },
+          {
+            id: 197,
+            difficulty: 3,
+            question: "A gardener has 48 sunflower seeds and 36 marigold seeds. She plants them in rows so that every row holds only one type of seed and every row holds the same number of seeds, using the largest number of seeds per row possible. How many rows does she plant altogether?",
+            options: ["7","12","14","144","4"],
+            correct: 0,
+            explanation: "Step 1: HCF of 48 and 36 = 12, the largest number of seeds per row. Step 2: sunflower rows = 48 ÷ 12 = 4; marigold rows = 36 ÷ 12 = 3. Step 3: 4 + 3 = 7 rows altogether. ✓"
+          },
+          {
+            id: 198,
+            difficulty: 3,
+            question: "Callum writes 126 as a product of its prime factors. He adds together all of these prime factors, counting any that are repeated. He then subtracts the largest prime factor from that total. What number does he end with?",
+            options: ["15","13","9","5","8"],
+            correct: 4,
+            explanation: "Step 1: 126 = 2 × 3 × 3 × 7. Step 2: add the prime factors including repeats: 2 + 3 + 3 + 7 = 15. Step 3: subtract the largest prime factor: 15 − 7 = 8. ✓"
+          },
+          {
+            id: 199,
+            difficulty: 3,
+            question: "At a barbecue, sausages come in packs of 8 and finger rolls come in packs of 6. Priya wants exactly one roll for every sausage, with none of either left over, buying as few packs as possible. How many packs does she buy in total?",
+            options: ["7","24","48","14","3"],
+            correct: 0,
+            explanation: "Step 1: LCM of 8 and 6 = 24, the smallest equal number of sausages and rolls. Step 2: sausage packs = 24 ÷ 8 = 3; roll packs = 24 ÷ 6 = 4. Step 3: 3 + 4 = 7 packs in total. ✓"
+          },
+          {
+            id: 200,
+            difficulty: 3,
+            question: "Nadia writes 54 as a product of its prime factors. She adds all of the prime factors together, counting any repeats, and then doubles her total. What is her final answer?",
+            options: ["16","11","24","22","10"],
+            correct: 3,
+            explanation: "Step 1: 54 = 2 × 3 × 3 × 3. Step 2: add the prime factors including repeats: 2 + 3 + 3 + 3 = 11. Step 3: double it: 11 × 2 = 22. ✓"
+          },
+          {
+            id: 201,
+            difficulty: 3,
+            question: "What is the smallest whole number greater than 100 that is a multiple of both 6 and 8?",
+            options: ["24","96","120","102","144"],
+            correct: 2,
+            explanation: "Step 1: LCM of 6 and 8 = 24, so the common multiples are 24, 48, 72, 96, 120, … Step 2: the first one greater than 100 is 24 × 5 = 120. ✓"
+          },
+          {
+            id: 202,
+            difficulty: 3,
+            question: "A youth club makes identical goody bags from 90 badges and 63 stickers, so that every bag has the same number of badges and the same number of stickers, using the greatest possible number of bags. The 25 lollipops are then shared equally between those bags, with any that will not divide equally kept back. How many lollipops are kept back?",
+            options: ["2","9","7","16","25"],
+            correct: 2,
+            explanation: "Step 1: HCF of 90 and 63 = 9, the greatest number of bags. Step 2: 25 ÷ 9 = 2 remainder 7 (each bag gets 2 lollipops, using 18). Step 3: 25 − 18 = 7 lollipops kept back. ✓"
+          },
+          {
+            id: 203,
+            difficulty: 3,
+            question: "The prime factorisation of a number is 2² × 3². First work out the number, then work out how many factors it has in total.",
+            options: ["4","9","6","8","36"],
+            correct: 1,
+            explanation: "Step 1: 2² × 3² = 4 × 9 = 36. Step 2: the number of factors = (2 + 1) × (2 + 1) = 3 × 3 = 9. (The factors are 1, 2, 3, 4, 6, 9, 12, 18, 36.) ✓"
+          }
+]
 },
 areaperimeter: {
   name: "Area and Perimeter",
@@ -20321,7 +20859,72 @@ areaperimeter: {
       correct: 4,
       explanation: "Perimeter = 2 × (length + width), so 26 = 2 × (8 + width). Divide by 2: 13 = 8 + width. Width = 13 − 8 = 5 cm. ✓"
     }
-  ]
+  ,
+          {
+            id: 210,
+            difficulty: 3,
+            question: "A rectangular lawn measures 20 m by 12 m. A gravel path 2 m wide is laid all the way around the outside of the lawn. Gravel costs £8 for each square metre. How much does the gravel for the path cost?",
+            options: ["£640","£1152","£544","£3072","£144"],
+            correct: 1,
+            explanation: "Step 1: the path adds 2 m to every side, so the outer rectangle is 24 m by 16 m, area 24 x 16 = 384 m². Step 2: subtract the lawn: 384 - (20 x 12) = 384 - 240 = 144 m² of path. Step 3: cost = 144 x £8 = £1152. ✓"
+          },
+          {
+            id: 211,
+            difficulty: 3,
+            question: "A rectangular hall floor measures 10 m by 7 m. A square storage cupboard 3 m by 3 m is built into one corner, so the floor to be covered is the hall with that square removed. Vinyl flooring costs £12 for each square metre. How much does it cost to cover the floor?",
+            options: ["£732","£840","£108","£408","£61"],
+            correct: 0,
+            explanation: "Step 1: whole hall area = 10 x 7 = 70 m². Step 2: subtract the cupboard: 70 - (3 x 3) = 70 - 9 = 61 m² of floor. Step 3: cost = 61 x £12 = £732. ✓"
+          },
+          {
+            id: 212,
+            difficulty: 3,
+            question: "A rectangular field has an area of 216 m². Its width is 6 m. A farmer puts a fence all the way around the field, and fencing costs £5 for each metre. How much does the fencing cost?",
+            options: ["£210","£84","£1080","£120","£420"],
+            correct: 4,
+            explanation: "Step 1: length = area ÷ width = 216 ÷ 6 = 36 m. Step 2: perimeter = 2 x (36 + 6) = 84 m. Step 3: cost = 84 x £5 = £420. ✓"
+          },
+          {
+            id: 213,
+            difficulty: 3,
+            question: "A rectangular playground measures 30 m by 16 m. Two fifths of the playground is covered with soft rubber tiles and the rest is tarmac. What area of the playground is tarmac?",
+            options: ["288 m²","192 m²","480 m²","92 m²","96 m²"],
+            correct: 0,
+            explanation: "Step 1: playground area = 30 x 16 = 480 m². Step 2: tarmac is the other three fifths, so 480 ÷ 5 x 3 = 288 m². ✓"
+          },
+          {
+            id: 214,
+            difficulty: 3,
+            question: "A kitchen floor is L-shaped, made from two rectangles joined along one edge: one rectangle measures 5 m by 3 m and the other measures 4 m by 2 m. The floor is covered with square tiles that each have sides of 0.5 m. How many tiles are needed to cover the whole floor?",
+            options: ["46","60","23","92","32"],
+            correct: 3,
+            explanation: "Step 1: area = (5 x 3) + (4 x 2) = 15 + 8 = 23 m². Step 2: each tile is 0.5 m by 0.5 m = 0.25 m². Step 3: number of tiles = 23 ÷ 0.25 = 92. ✓"
+          },
+          {
+            id: 215,
+            difficulty: 3,
+            question: "A rectangular tabletop measures 120 cm by 80 cm. Its top surface is to be varnished. Varnish is sold by the square metre and costs £15 for each square metre. How much does the varnish for the tabletop cost?",
+            options: ["£1.44","£144.00","£14.40","£1440.00","£60.00"],
+            correct: 2,
+            explanation: "Step 1: area = 120 x 80 = 9600 cm². Step 2: convert to m² (1 m² = 10 000 cm²): 9600 ÷ 10 000 = 0.96 m². Step 3: cost = 0.96 x £15 = £14.40. ✓"
+          },
+          {
+            id: 216,
+            difficulty: 3,
+            question: "A rectangular photograph 20 cm by 15 cm is mounted in the centre of a rectangular card 30 cm by 24 cm, leaving a border of card showing all the way around the photo. Three quarters of that border is decorated with a pattern. What area of the card is decorated?",
+            options: ["540 cm²","105 cm²","315 cm²","420 cm²","765 cm²"],
+            correct: 2,
+            explanation: "Step 1: card area = 30 x 24 = 720 cm²; photo area = 20 x 15 = 300 cm². Step 2: border = 720 - 300 = 420 cm². Step 3: three quarters decorated = 420 ÷ 4 x 3 = 315 cm². ✓"
+          },
+          {
+            id: 217,
+            difficulty: 3,
+            question: "A triangular flag has a base of 32 cm and a perpendicular height of 25 cm. Three eighths of the flag is coloured red. What area of the flag is red?",
+            options: ["400 cm²","150 cm²","300 cm²","250 cm²","50 cm²"],
+            correct: 1,
+            explanation: "Step 1: flag area = ½ x 32 x 25 = 400 cm². Step 2: red part = 400 ÷ 8 x 3 = 150 cm². ✓"
+          }
+]
 },
 volume: {
   name: "Volume",
@@ -21526,7 +22129,40 @@ volume: {
       correct: 4,
       explanation: "Volume = 100 \u00D7 40 \u00D7 30 = 120,000 cm\u00B3 = 120 litres. Time = 120 \u00F7 5 = 24 minutes. \u2713"
     }
-  ]
+  ,
+          {
+            id: 141,
+            difficulty: 3,
+            question: "A garden water butt is a cuboid measuring 60 cm by 30 cm by 40 cm on the inside. After heavy rain it is 3/4 full. How many litres of water are in the water butt? (1 litre = 1000 cm³)",
+            options: ["72 litres","54 litres","18 litres","540 litres","96 litres"],
+            correct: 1,
+            explanation: "Step 1: Volume = 60 × 30 × 40 = 72,000 cm³. Step 2: Convert to litres, 72,000 ÷ 1000 = 72 litres (full capacity). Step 3: It is 3/4 full, so 72 × 3/4 = 54 litres. ✓"
+          },
+          {
+            id: 142,
+            difficulty: 3,
+            question: "A solid block of candle wax is a cuboid measuring 20 cm by 12 cm by 10 cm. A rectangular hole measuring 10 cm by 6 cm by 10 cm is cut all the way through the block and the wax is removed. The remaining wax is melted down and poured into moulds that each hold 150 cm³. How many moulds can be completely filled?",
+            options: ["16","4","12","1800","20"],
+            correct: 2,
+            explanation: "Step 1: Whole block = 20 × 12 × 10 = 2,400 cm³. Step 2: Hole cut out = 10 × 6 × 10 = 600 cm³, so wax left = 2,400 − 600 = 1,800 cm³. Step 3: 1,800 ÷ 150 = 12 moulds. ✓"
+          },
+          {
+            id: 143,
+            difficulty: 3,
+            question: "A fish tank is a cuboid measuring 80 cm by 50 cm by 30 cm. It is already 1/4 full of water. A tap adds water at 6 litres every minute. How many minutes will it take to fill the tank completely? (1 litre = 1000 cm³)",
+            options: ["5 minutes","150 minutes","20 minutes","15 minutes","90 minutes"],
+            correct: 3,
+            explanation: "Step 1: Volume = 80 × 50 × 30 = 120,000 cm³ = 120 litres. Step 2: It is 1/4 full, so the water still needed is 3/4 of 120 = 90 litres. Step 3: At 6 litres per minute, 90 ÷ 6 = 15 minutes. ✓"
+          },
+          {
+            id: 144,
+            difficulty: 3,
+            question: "A storage crate measures 90 cm by 70 cm by 50 cm on the inside. Priya wants to pack it with solid wooden cubes that each have edges of 20 cm. What is the greatest number of these cubes that will fit inside the crate?",
+            options: ["24","12","39","60","30"],
+            correct: 0,
+            explanation: "Step 1: Work out how many whole cubes fit along each edge (you cannot use the leftover space): 90 ÷ 20 → 4 (10 cm spare), 70 ÷ 20 → 3 (10 cm spare), 50 ÷ 20 → 2 (10 cm spare). Step 2: Multiply the three counts: 4 × 3 × 2 = 24 cubes. (Dividing total volumes, 315,000 ÷ 8,000, wrongly gives 39.) ✓"
+          }
+]
 },
 anglesshapes: {
   name: "Angles and Shapes",
@@ -23629,7 +24265,72 @@ anglesshapes: {
       correct: 1,
       explanation: "Angles around a point add up to 360°. So x + 100 + 150 = 360. Therefore x = 360 − 250 = 110°. ✓"
     }
-  ]
+  ,
+          {
+            id: 226,
+            difficulty: 3,
+            question: "The five interior angles of a pentagon add up to a fixed total. In one pentagon, three of the angles are 100°, 120° and 140°. The two remaining angles are in the ratio 2:3. What is the size of the smaller of these two remaining angles?",
+            options: ["90°","72°","108°","144°","112°"],
+            correct: 1,
+            explanation: "Step 1: Interior angles of a pentagon sum to (5−2)×180 = 540°. Step 2: Subtract the three known angles: 540 − 100 − 120 − 140 = 180° left for the two remaining angles. Step 3: Split 180° in the ratio 2:3, so one part = 180 ÷ 5 = 36°, and the smaller angle (2 parts) = 2 × 36 = 72°. ✓"
+          },
+          {
+            id: 227,
+            difficulty: 3,
+            question: "A hexagon has interior angles that add up to a fixed total. Four of its angles are 100°, 130°, 140° and 110°. Of the two angles that are left, one is twice the size of the other. What is the size of the smaller of these two angles?",
+            options: ["80°","160°","120°","240°","20°"],
+            correct: 0,
+            explanation: "Step 1: Interior angles of a hexagon sum to (6−2)×180 = 720°. Step 2: Subtract the four known angles: 720 − 100 − 130 − 140 − 110 = 240° left. Step 3: The two remaining angles are x and 2x, so x + 2x = 240, giving 3x = 240 and x = 80°. ✓"
+          },
+          {
+            id: 228,
+            difficulty: 3,
+            question: "In a triangle, one angle measures 60°. The other two angles are in the ratio 3:5. The larger of these two angles lies on a straight line next to an angle y. What is the size of angle y?",
+            options: ["75°","45°","135°","60°","105°"],
+            correct: 4,
+            explanation: "Step 1: Angles in a triangle sum to 180°, so the other two angles add up to 180 − 60 = 120°. Step 2: Split 120° in the ratio 3:5, so one part = 120 ÷ 8 = 15°, and the larger angle (5 parts) = 5 × 15 = 75°. Step 3: y is on a straight line with this 75° angle, so y = 180 − 75 = 105°. ✓"
+          },
+          {
+            id: 229,
+            difficulty: 3,
+            question: "The three angles of a triangle are in the ratio 2:3:4. The largest of these angles lies on a straight line next to another angle. What is the size of that other angle?",
+            options: ["100°","80°","160°","60°","20°"],
+            correct: 0,
+            explanation: "Step 1: Angles in a triangle sum to 180°, and the ratio 2:3:4 has 2+3+4 = 9 parts, so one part = 180 ÷ 9 = 20°. Step 2: The largest angle is 4 parts = 4 × 20 = 80°. Step 3: The angle beside it on the straight line = 180 − 80 = 100°. ✓"
+          },
+          {
+            id: 230,
+            difficulty: 3,
+            question: "Four angles meet at a single point. One is 90° and another is 70°. The remaining two angles are equal to each other. One of these equal angles then lies on a straight line beside an angle z. What is the size of angle z?",
+            options: ["100°","200°","170°","80°","45°"],
+            correct: 3,
+            explanation: "Step 1: Angles at a point sum to 360°, so the two equal angles together = 360 − 90 − 70 = 200°. Step 2: Each equal angle = 200 ÷ 2 = 100°. Step 3: z is on a straight line with a 100° angle, so z = 180 − 100 = 80°. ✓"
+          },
+          {
+            id: 231,
+            difficulty: 3,
+            question: "One interior angle of a regular hexagon and one interior angle of a regular pentagon are placed together so that they share a common vertex. What size angle is needed to complete a full turn (360°) at that vertex?",
+            options: ["228°","120°","132°","240°","252°"],
+            correct: 2,
+            explanation: "Step 1: Each interior angle of a regular hexagon = (6−2)×180 ÷ 6 = 720 ÷ 6 = 120°. Step 2: Each interior angle of a regular pentagon = (5−2)×180 ÷ 5 = 540 ÷ 5 = 108°. Step 3: Angles at a point sum to 360°, so the missing angle = 360 − 120 − 108 = 132°. ✓"
+          },
+          {
+            id: 232,
+            difficulty: 3,
+            question: "A, B and C are the three angles of an isosceles triangle. Angle A is 80°, and it is one of the two equal angles. Angle C is the odd one out. Angle C then lies on a straight line beside another angle. What is the size of that other angle?",
+            options: ["20°","50°","160°","100°","130°"],
+            correct: 2,
+            explanation: "Step 1: The two equal angles are each 80°, so together they are 160°. Step 2: Angle C = 180 − 160 = 20°. Step 3: The angle beside C on the straight line = 180 − 20 = 160°. ✓"
+          },
+          {
+            id: 233,
+            difficulty: 3,
+            question: "The four angles of a quadrilateral are in the ratio 3:4:5:6. The largest of these angles lies on a straight line next to another angle. What is the size of that other angle?",
+            options: ["120°","60°","100°","90°","20°"],
+            correct: 1,
+            explanation: "Step 1: Angles in a quadrilateral sum to 360°, and the ratio 3:4:5:6 has 3+4+5+6 = 18 parts, so one part = 360 ÷ 18 = 20°. Step 2: The largest angle is 6 parts = 6 × 20 = 120°. Step 3: The angle beside it on the straight line = 180 − 120 = 60°. ✓"
+          }
+]
 },
 sequences: {
   name: "Sequences",
@@ -25110,7 +25811,32 @@ sequences: {
       correct: 2,
       explanation: "Each term is the sum of the previous two. 13 + 21 = 34. ✓"
     }
-  ]
+  ,
+          {
+            id: 183,
+            difficulty: 3,
+            question: "A sequence begins 6, 11, 16, 21, ... Priya adds together the 4th term and the 7th term of this sequence. What total does she get?",
+            options: ["36","57","21","67","55"],
+            correct: 1,
+            explanation: "Step 1 - Find the rule: the terms rise by 5 each time, so the position-to-term rule is 5n + 1. Step 2 - The 4th term = 5×4 + 1 = 21 and the 7th term = 5×7 + 1 = 36. Step 3 - Add them together: 21 + 36 = 57. ✓"
+          },
+          {
+            id: 184,
+            difficulty: 3,
+            question: "A sequence begins 58, 50, 42, 34, ... The first term that is negative sits at a certain position in the sequence. Multiply that term's value by its position number. What is the result?",
+            options: ["-6","54","-54","-48","-140"],
+            correct: 2,
+            explanation: "Step 1 - The sequence falls by 8 each time, so the rule is 66 - 8n. Step 2 - Find where it first turns negative: the 8th term is 2 (still positive) and the 9th term is 66 - 72 = -6, so the first negative term is -6 at position 9. Step 3 - Multiply the term by its position: -6 × 9 = -54. ✓"
+          },
+          {
+            id: 185,
+            difficulty: 3,
+            question: "A sequence begins 3, 40, 7, 34, 11, 28, ... The odd-position terms and the even-position terms each follow their own rule. Find the 7th term and the 8th term, then add them together.",
+            options: ["37","39","22","7","35"],
+            correct: 0,
+            explanation: "Step 1 - Separate the two woven patterns: the odd positions 3, 7, 11, ... rise by 4, and the even positions 40, 34, 28, ... fall by 6. Step 2 - The 7th term is the 4th odd-position term: 3 + 4×3 = 15. The 8th term is the 4th even-position term: 40 - 6×3 = 22. Step 3 - Add them: 15 + 22 = 37. ✓"
+          }
+]
 },
 datahandling: {
   name: "Data Handling",
@@ -27802,7 +28528,32 @@ datahandling: {
       correct: 0,
       explanation: "The mode is 4, so 4 appears more than once. With 5 numbers, the median is the 3rd value = 5. Since 4 < 5, both 4s must be in the first two positions: 4, 4, 5, ?, ?. The range is 8. The smallest number is 4, so the largest = 4 + 8 = 12. Check: 4, 4, 5, ?, 12 — we need the 4th number to be between 5 and 12 and not equal to 4. For example, 4, 4, 5, 7, 12 works: mode = 4 ✓, median = 5 ✓, range = 12 − 4 = 8 ✓. The largest number is 12. ✓"
     }
-  ]
+  ,
+          {
+            id: 221,
+            difficulty: 3,
+            question: "At a gymnastics competition, five judges each gave the same performer a score out of 10. Four of the scores were 7, 9, 6 and 8. The mean of all five scores was exactly 8. Work out the range of the five scores.",
+            options: ["10","4","40","3","16"],
+            correct: 1,
+            explanation: "Step 1: The mean of 5 scores is 8, so the total = 8 × 5 = 40. Step 2: The four known scores add to 7 + 9 + 6 + 8 = 30, so the missing fifth score = 40 − 30 = 10. Step 3: The five scores are 6, 7, 8, 9 and 10, so the range = 10 − 6 = 4. ✓"
+          },
+          {
+            id: 222,
+            difficulty: 3,
+            question: "In a spelling test, five children scored 12, 15, 11 and 14, plus one more score which was the highest of the five. The range of all five scores is 9. Work out the mean of the five scores.",
+            options: ["20","13","14.4","12","14"],
+            correct: 2,
+            explanation: "Step 1: The lowest known score is 11, and the missing score is the highest, so the highest = lowest + range = 11 + 9 = 20. Step 2: The five scores now total 12 + 15 + 11 + 14 + 20 = 72. Step 3: The mean = 72 ÷ 5 = 14.4. ✓"
+          },
+          {
+            id: 223,
+            difficulty: 3,
+            question: "In a class survey of 40 children, 18 chose football, 10 chose swimming, 8 chose cycling and the rest chose netball. What percentage more of the class chose football than netball?",
+            options: ["35%","45%","10%","50%","55%"],
+            correct: 0,
+            explanation: "Step 1: The netball children = 40 − (18 + 10 + 8) = 40 − 36 = 4. Step 2: Football as a percentage of the class = 18/40 = 45%; netball = 4/40 = 10%. Step 3: 45% − 10% = 35% more of the class chose football than netball. ✓"
+          }
+]
 },
 speeddistancetime: {
   name: "Speed, Distance, Time",
@@ -28810,7 +29561,72 @@ speeddistancetime: {
       correct: 2,
       explanation: "Distance = speed × time = 0.05 × 4 = 0.2 km (that's 200 metres!). ✓"
     }
-  ]
+  ,
+          {
+            id: 126,
+            difficulty: 3,
+            question: "A courier drives 30 km in 1 hour 30 minutes, then a clear road lets him cover the next 30 km in just 30 minutes. What is his average speed for the whole 60 km journey?",
+            options: ["20 km/h","30 km/h","37.5 km/h","40 km/h","60 km/h"],
+            correct: 1,
+            explanation: "Step 1: Convert the leg times — 1 hour 30 minutes = 1.5 hours and 30 minutes = 0.5 hours. Step 2: Total distance = 30 + 30 = 60 km; total time = 1.5 + 0.5 = 2 hours. Step 3: Average speed = total distance ÷ total time = 60 ÷ 2 = 30 km/h (not the average of 20 and 60). ✓"
+          },
+          {
+            id: 127,
+            difficulty: 3,
+            question: "A delivery lorry drives 120 km to Leeds, then 40 km on to Harrogate. It uses 1 litre of diesel every 8 km, and diesel costs £1.60 per litre. What is the total fuel cost for the whole journey?",
+            options: ["£32.00","£8.00","£20.00","£24.00","£256.00"],
+            correct: 0,
+            explanation: "Step 1: Total distance = 120 + 40 = 160 km. Step 2: Diesel used = 160 ÷ 8 = 20 litres. Step 3: Cost = 20 × £1.60 = £32.00. ✓"
+          },
+          {
+            id: 128,
+            difficulty: 3,
+            question: "Priya and Raj leave school at the same time. Priya walks at 5 km/h for 36 minutes. Raj cycles at 15 km/h for 18 minutes. How much further does Raj travel than Priya?",
+            options: ["0.9 km","3 km","4.5 km","7.5 km","1.5 km"],
+            correct: 4,
+            explanation: "Step 1: Convert the times — 36 minutes = 0.6 hours, 18 minutes = 0.3 hours. Step 2: Priya walks 5 × 0.6 = 3 km; Raj cycles 15 × 0.3 = 4.5 km. Step 3: Raj travels 4.5 − 3 = 1.5 km further. ✓"
+          },
+          {
+            id: 129,
+            difficulty: 3,
+            question: "A train leaves Exeter at 13:40 and arrives in Bristol at 15:10. The distance is 120 km. What is the train's average speed?",
+            options: ["80 km/h","60 km/h","90 km/h","96 km/h","180 km/h"],
+            correct: 0,
+            explanation: "Step 1: Journey time from 13:40 to 15:10 = 1 hour 30 minutes = 1.5 hours. Step 2: Average speed = distance ÷ time = 120 ÷ 1.5 = 80 km/h. ✓"
+          },
+          {
+            id: 130,
+            difficulty: 3,
+            question: "A lorry must deliver a load 240 km away. It leaves the depot at 09:00 and must arrive by 13:30. After 3 hours it has covered 150 km. What speed must it now average to arrive exactly on time?",
+            options: ["20 km/h","45 km/h","50 km/h","60 km/h","160 km/h"],
+            correct: 3,
+            explanation: "Step 1: Remaining distance = 240 − 150 = 90 km. Step 2: It left at 09:00 and after 3 hours it is 12:00, so time left to the 13:30 deadline = 1.5 hours. Step 3: Required speed = 90 ÷ 1.5 = 60 km/h. ✓"
+          },
+          {
+            id: 131,
+            difficulty: 3,
+            question: "A ferry sails 60 km at 30 km/h, then a further 20 km at 40 km/h. Fuel costs the operator £18 for every hour the ferry is sailing. What is the total fuel cost for the crossing?",
+            options: ["£9.00","£36.00","£45.00","£41.40","£54.00"],
+            correct: 2,
+            explanation: "Step 1: Leg times — 60 ÷ 30 = 2 hours and 20 ÷ 40 = 0.5 hours. Step 2: Total sailing time = 2 + 0.5 = 2.5 hours. Step 3: Fuel cost = 2.5 × £18 = £45.00. ✓"
+          },
+          {
+            id: 132,
+            difficulty: 3,
+            question: "In a school sports test, Ellie runs 1500 metres in 6 minutes and Tom cycles 3 km in 8 minutes. How much faster is Tom than Ellie, in km/h?",
+            options: ["1.25 km/h","15 km/h","7.5 km/h","22.5 km/h","37.5 km/h"],
+            correct: 2,
+            explanation: "Step 1: Convert units — Ellie: 1500 m = 1.5 km, 6 min = 0.1 h; Tom: 3 km, 8 min = 8/60 h. Step 2: Ellie's speed = 1.5 ÷ 0.1 = 15 km/h; Tom's speed = 3 ÷ (8/60) = 22.5 km/h. Step 3: Difference = 22.5 − 15 = 7.5 km/h. ✓"
+          },
+          {
+            id: 133,
+            difficulty: 3,
+            question: "A train travels 210 km in 3 hours, then 110 km in 1 hour. If it keeps the same average speed for the whole trip, how far will it travel in the next 2 hours?",
+            options: ["80 km","160 km","180 km","220 km","320 km"],
+            correct: 1,
+            explanation: "Step 1: Total distance = 210 + 110 = 320 km; total time = 3 + 1 = 4 hours. Step 2: Average speed = 320 ÷ 4 = 80 km/h (not the average of 70 and 110). Step 3: In 2 hours it travels 80 × 2 = 160 km. ✓"
+          }
+]
 },
 
     }

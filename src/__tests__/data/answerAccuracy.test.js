@@ -366,8 +366,17 @@ describe('Answer Accuracy — mathematical verification', () => {
 
   describe('Speed, Distance, Time', () => {
     const result = verifySpeedDistanceTime();
-    it('verifies at least 40% of questions', () => {
-      expect(result.verified / result.total).toBeGreaterThan(0.4);
+    // Coverage floor for this HEURISTIC pairwise checker. Lowered 0.40 -> 0.35 when
+    // benchmark fix #8 (22 Jul 2026) added unit-converting multi-step D3 questions:
+    // their answers cannot be reconstructed from the raw numbers in the text (times
+    // are given as "1 h 30 min" / "13:40 to 15:10", not "1.5"), so this checker
+    // legitimately cannot parse them — the same reason Area sits at 20%. Those items
+    // are verified DETERMINISTICALLY by scripts/data-generation/verify-maths-d3.mjs
+    // and pinned by src/__tests__/data/mathsD3Multistep.test.js. The
+    // 'no wrong answers in verified questions' test below still independently checks
+    // every answer this heuristic CAN parse, so correctness coverage is undiminished.
+    it('verifies at least 35% of questions', () => {
+      expect(result.verified / result.total).toBeGreaterThan(0.35);
     });
     it('has no wrong answers in verified questions', () => {
       expect(result.failures).toEqual([]);
