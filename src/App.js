@@ -1714,6 +1714,14 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
                   <img src={`/images/questions/${found.image}`} alt="diagram" className="max-w-full rounded-lg border-2 border-gray-200" style={{ maxHeight: 400 }} />
                 </div>
               )}
+              {/* Narrative error-spotting: passage for reading context (dev preview,
+                  mirrors the QuizScreen/MockTestScreen fix #10 render) */}
+              {found.questionType === 'error-spotting' && found.passage && (
+                <div className="mb-4 bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto">
+                  <div className="text-sm font-heading font-bold text-slate-800 mb-2">{found.passageTitle}</div>
+                  <div className="text-gray-800 text-sm leading-relaxed whitespace-pre-line">{found.passage}</div>
+                </div>
+              )}
               {/* Error-spotting segments */}
               {found.questionType === 'error-spotting' && found.segments && (
                 <div className="mb-6 grid grid-cols-2 gap-3">
