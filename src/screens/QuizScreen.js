@@ -188,8 +188,12 @@ function QuizScreen({
                 </button>
               </div>}
 
-              {/* Passage rendering for comprehension AND running-passage cloze questions */}
-              {(currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'cloze') && currentQuestion.passage && (
+              {/* Passage rendering for comprehension, running-passage cloze, AND
+                  narrative error-spotting (fix #10) — an error-spotting question that
+                  carries a passage shows the 8-line narrative for reading context above
+                  its segments. Single-sentence error-spotting has no passage, so the
+                  `&& currentQuestion.passage` guard leaves it unchanged. */}
+              {(currentQuestion.questionType === 'passage' || currentQuestion.questionType === 'cloze' || currentQuestion.questionType === 'error-spotting') && currentQuestion.passage && (
                 <div className="mb-6 relative" data-testid="passage-block">
                   <div className="bg-[#FFF8E8] border-2 border-[#FDCB6E]/40 rounded-xl p-4 max-h-64 overflow-y-auto scroll-passage"
                     onScroll={(e) => {

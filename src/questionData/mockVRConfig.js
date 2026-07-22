@@ -317,16 +317,21 @@ export const mathsPaperConfig = {
 };
 
 // English paper configuration
+// Metadata describing the sections generateEnglishPaper() actually builds (keep in
+// step with src/hooks/useMockTest.js:generateEnglishPaper). Was stale at 49 (missing
+// the #6 Cloze section) before fix #10 added the anchored Vocabulary-in-Context section.
 export const englishPaperConfig = {
-  totalQuestions: 49,
+  totalQuestions: 61,
   timeMinutes: 50,
   sections: [
     { name: 'Reading Comprehension', key: 'comprehension', questions: 18, source: 'mockComprehension' },
     { name: 'Vocabulary in Context', key: 'vocabulary', questions: 4, source: 'mockComprehension' },
+    { name: 'Vocabulary in Context (passage-anchored)', key: 'vocabulary', questions: 4, source: 'englishData' },
     { name: 'Word Class & Grammar', key: 'wordClass', questions: 3, source: 'mockComprehension' },
     { name: 'Spelling', key: 'spelling', questions: 8, source: 'englishData' },
     { name: 'Punctuation', key: 'punctuation', questions: 8, source: 'englishData' },
     { name: 'Grammar & Cloze', key: 'grammar', questions: 8, source: 'englishData' },
+    { name: 'Cloze', key: 'cloze', questions: 8, source: 'englishData' },
   ]
 };
 

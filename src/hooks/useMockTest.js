@@ -166,6 +166,31 @@ function generateEnglishPaper(englishTopics) {
   }));
   sections.push(...vocabQs);
 
+  // Section 2b: passage-anchored Vocabulary in Context from the MAIN bank (fix #10) —
+  // pick one short anchored passage from englishData.vocabulary and take ~4 of its
+  // word-in-context questions, difficulty-ramped. Ensures the fix-#10 anchored vocab
+  // reaches the mock (the comprehension-passage vocab above uses a separate mock pool).
+  if (englishTopics.vocabulary) {
+    const anchored = englishTopics.vocabulary.questions.filter(q => q.questionType === 'passage' && q.passageId);
+    if (anchored.length) {
+      const byPassage = {};
+      anchored.forEach(q => { (byPassage[q.passageId] = byPassage[q.passageId] || []).push(q); });
+      const passageIds = Object.keys(byPassage);
+      const pid = passageIds[Math.floor(Math.random() * passageIds.length)];
+      const set = byPassage[pid];
+      const anchoredQs = sortByDifficulty(pickByDistribution(set, Math.min(4, set.length)).map(q => ({
+        question: q,
+        topicKey: 'vocabulary',
+        topicName: 'Vocabulary in Context',
+        section: 'vocabulary',
+        sectionName: 'Vocabulary in Context',
+        passage: q.passage,
+        passageTitle: q.passageTitle,
+      })));
+      sections.push(...anchoredQs);
+    }
+  }
+
   // Section 3: Word Class (3 Qs from passage)
   const wcQs = passage.wordClassQuestions.map(q => ({
     question: q,

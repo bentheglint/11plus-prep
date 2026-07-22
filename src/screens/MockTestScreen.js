@@ -156,8 +156,11 @@ function MockTestScreen({
   // Section name label for context
   const sectionLabel = currentQ.sectionName || '';
 
-  // Check if English comprehension or running-passage cloze — show passage
-  const showPassage = (currentQ.section === 'comprehension' || currentQ.section === 'vocabulary' || currentQ.section === 'wordClass' || currentQ.section === 'cloze') && currentQ.passage;
+  // Check if English comprehension, cloze, OR a narrative error-spotting question
+  // (fix #10) — show the passage. Only passage-bearing questions have currentQ.passage,
+  // so error-spotting narratives render their 8-line context; single-sentence
+  // error-spotting has no passage and is unaffected.
+  const showPassage = (currentQ.section === 'comprehension' || currentQ.section === 'vocabulary' || currentQ.section === 'wordClass' || currentQ.section === 'cloze' || currentQ.questionType === 'error-spotting') && currentQ.passage;
 
   return (
     <div className="app-bg p-4 min-h-screen">
