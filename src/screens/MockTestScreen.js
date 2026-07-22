@@ -296,6 +296,25 @@ function MockTestScreen({
           {/* Select-two options (VR) */}
           {question.questionType === 'select-two' && (
             <div className="mb-6">
+              {currentQ.topicKey === 'hiddenWords' ? (
+                // Hidden Words render as a flowing SENTENCE to read and scan (not a grid,
+                // which would scramble reading order) — matches the QuizScreen renderer.
+                <div className="text-2xl leading-loose text-slate-800 text-center px-1" data-testid="hiddenwords-sentence">
+                  {question.options.map((word, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => handleSelectTwo(idx)}
+                      className={`inline-block mx-0.5 px-1.5 py-0.5 rounded-md transition-all ${
+                        selectedPair.includes(idx)
+                          ? 'bg-[#EDE8FF] text-slate-900 ring-2 ring-[#A29BFE] font-bold'
+                          : 'hover:bg-[#EDE8FF]/60'
+                      }`}
+                    >
+                      {word}
+                    </button>
+                  ))}
+                </div>
+              ) : (
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {question.options.map((option, idx) => (
                   <button
@@ -311,8 +330,9 @@ function MockTestScreen({
                   </button>
                 ))}
               </div>
+              )}
               <p className="text-sm text-gray-500 mt-2 text-center">
-                Select exactly 2 {selectedPair.length > 0 ? `(${selectedPair.length}/2 selected)` : ''}
+                {currentQ.topicKey === 'hiddenWords' ? 'Tap the 2 words that hide the word between them' : 'Select exactly 2'} {selectedPair.length > 0 ? `(${selectedPair.length}/2 selected)` : ''}
               </p>
             </div>
           )}

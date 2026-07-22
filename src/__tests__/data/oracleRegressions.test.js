@@ -392,10 +392,15 @@ describe('Oracle Sweep — Critical Content Fixes (2026-04-03)', () => {
 // ══════════════════════════════════════════════════════════════
 
 describe('Oracle Sweep — Structural Invariants', () => {
-  // No question should have duplicate options (Letter Codes Q14 was the case)
+  // No question should have duplicate ANSWER options (Letter Codes Q14 was the case).
+  // hiddenWords is exempt: its "options" are the WORDS OF A SENTENCE (fix #7 natural
+  // sentences), where repeating function words like "the"/"a" is normal English; the
+  // child selects by position and scoring is index-based (correctPair), so repeated
+  // word values are not a defect.
   it('no VR question has duplicate options', () => {
     const problems = [];
     Object.entries(vrData.topics || {}).forEach(([topicKey, topic]) => {
+      if (topicKey === 'hiddenWords') return;
       (topic.questions || []).forEach(q => {
         if (!q.options) return;
         const unique = new Set(q.options);

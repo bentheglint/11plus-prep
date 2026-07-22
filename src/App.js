@@ -1736,8 +1736,16 @@ Remember: This is a child learning. Be warm and make learning fun — but the le
               )}
               {/* Question text */}
               <h3 className="text-xl font-heading font-bold text-slate-800 mb-4 whitespace-pre-line">{found.question}</h3>
+              {/* Hidden Words: render the sentence with the answer pair highlighted (dev preview) */}
+              {found.correctPair && found.options && (
+                <div className="text-2xl leading-loose text-slate-800 text-center px-1 mb-2">
+                  {found.options.map((word, i) => (
+                    <span key={i} className={`inline-block mx-0.5 px-1.5 py-0.5 rounded-md ${found.correctPair.includes(i) ? 'bg-green-100 text-green-900 ring-2 ring-green-400 font-bold' : ''}`}>{word}</span>
+                  ))}
+                </div>
+              )}
               {/* Options */}
-              {found.options && (
+              {found.options && !found.correctPair && (
                 <div className="space-y-2">
                   {found.options.map((opt, i) => (
                     <div key={i} className={`p-3 rounded-lg border-2 flex items-center gap-3 ${i === found.correct ? 'border-green-500 bg-green-50' : 'border-gray-200'}`}>

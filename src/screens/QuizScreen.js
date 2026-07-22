@@ -300,13 +300,39 @@ function QuizScreen({
               {/* Select-two rendering for dual-answer questions (e.g. VR synonyms, odd-two-out, hidden words) */}
               {currentQuestion.questionType === 'select-two' && (
                 <div className="mb-6" data-testid="select-two-grid">
-                  <div className={selectedTopic === 'hiddenWords' ? 'flex flex-wrap justify-center gap-2' : 'grid grid-cols-2 gap-3 sm:grid-cols-3'}>
+                  {selectedTopic === 'hiddenWords' ? (
+                    // Hidden Words render as a flowing SENTENCE the child must read and scan
+                    // (not pre-chopped chips), so longer sentences carry a real reading load.
+                    <div className="text-2xl leading-loose text-slate-800 text-center px-1" data-testid="hiddenwords-sentence">
+                      {currentQuestion.options.map((word, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => onSelectTwoToggle(idx)}
+                          disabled={showFeedback}
+                          className={`inline-block mx-0.5 px-1.5 py-0.5 rounded-md transition-all ${
+                            showFeedback
+                              ? currentQuestion.correctPair.includes(idx)
+                                ? 'bg-green-100 text-green-900 ring-2 ring-green-400 font-bold'
+                                : selectedPair.includes(idx)
+                                ? 'bg-red-100 text-red-900'
+                                : 'text-slate-800'
+                              : selectedPair.includes(idx)
+                              ? 'bg-[#EDE8FF] text-slate-900 ring-2 ring-[#A29BFE] font-bold'
+                              : 'hover:bg-[#EDE8FF]/60'
+                          }`}
+                        >
+                          {word}
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
                     {currentQuestion.options.map((option, idx) => (
                       <button
                         key={idx}
                         onClick={() => onSelectTwoToggle(idx)}
                         disabled={showFeedback}
-                        className={`${selectedTopic === 'hiddenWords' ? 'px-5 py-3' : 'p-4'} text-center rounded-xl border-2 transition-all font-medium text-lg ${
+                        className={`p-4 text-center rounded-xl border-2 transition-all font-medium text-lg ${
                           showFeedback
                             ? currentQuestion.correctPair.includes(idx)
                               ? 'border-green-500 bg-green-50 text-green-900 ring-2 ring-green-400'
@@ -322,6 +348,7 @@ function QuizScreen({
                       </button>
                     ))}
                   </div>
+                  )}
                   {!showFeedback && (
                     <p className="text-sm text-gray-500 mt-2 text-center">
                       {selectedTopic === 'hiddenWords'

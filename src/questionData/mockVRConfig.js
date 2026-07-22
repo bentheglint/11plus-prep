@@ -41,6 +41,17 @@ export const vrTypeInstructions = {
     }
   },
 
+  balanceEquations: {
+    typeName: "Balance the Equation",
+    questionsPerSection: 6,
+    instruction: "In each of these questions one number is missing, shown as a bracket ( ). Work out the value that makes both sides of the equation equal. Remember to do any × and ÷ before + and −, and mark the letter next to the correct answer.",
+    workedExample: {
+      question: "Solve the equation: 3 + 7 = 2 × ( )",
+      answer: "5",
+      explanation: "Work out the left side first: 3 + 7 = 10. The right side is 2 × ( ), so 2 × ( ) = 10, which means ( ) = 10 ÷ 2 = 5."
+    }
+  },
+
   verbalAnalogies: {
     typeName: "Verbal Analogies",
     questionsPerSection: 7,
@@ -204,12 +215,13 @@ export const vrPaperVariants = [
   {
     id: 'variant-a',
     name: 'Paper Variant A',
-    totalQuestions: 85,
+    totalQuestions: 91,
     timeMinutes: 50,
     sections: [
       { topicKey: 'letterMove', questions: 7 },
       { topicKey: 'oddTwoOut', questions: 7 },
       { topicKey: 'letterSums', questions: 7 },
+      { topicKey: 'balanceEquations', questions: 6 },
       { topicKey: 'logicShort', questions: 1, sourceKey: 'logicAndLanguage' },
       { topicKey: 'verbalAnalogies', questions: 7 },
       { topicKey: 'compoundWords', questions: 7 },
@@ -226,7 +238,7 @@ export const vrPaperVariants = [
   {
     id: 'variant-b',
     name: 'Paper Variant B',
-    totalQuestions: 85,
+    totalQuestions: 91,
     timeMinutes: 50,
     sections: [
       { topicKey: 'oddTwoOut', questions: 7 },
@@ -238,6 +250,7 @@ export const vrPaperVariants = [
       { topicKey: 'compoundWords', questions: 7 },
       { topicKey: 'verbalAnalogies', questions: 7 },
       { topicKey: 'letterSums', questions: 7 },
+      { topicKey: 'balanceEquations', questions: 6 },
       { topicKey: 'logicLong', questions: 1, sourceKey: 'logicAndLanguage' },
       { topicKey: 'missingLettersWords', questions: 7 },
       { topicKey: 'letterPairSeries', questions: 7 },
@@ -248,11 +261,12 @@ export const vrPaperVariants = [
   {
     id: 'variant-c',
     name: 'Paper Variant C',
-    totalQuestions: 85,
+    totalQuestions: 91,
     timeMinutes: 50,
     sections: [
       { topicKey: 'compoundWords', questions: 7 },
       { topicKey: 'letterSums', questions: 7 },
+      { topicKey: 'balanceEquations', questions: 6 },
       { topicKey: 'oddTwoOut', questions: 7 },
       { topicKey: 'logicShort', questions: 1, sourceKey: 'logicAndLanguage' },
       { topicKey: 'hiddenWords', questions: 7 },
