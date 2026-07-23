@@ -5900,13 +5900,13 @@ export function CoordinateGrid({
         <desc id={`${uid}-d`}>{description}</desc>
         <defs>
           <marker id={`${uid}-arrow`} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
+            <polygon points="0 0, 8 3, 0 6" fill="#1e293b" />
           </marker>
         </defs>
 
         {/* 1. Surface, then gridlines — neutral so the purple reads as content */}
         <rect x={left} y={sy(yMax)} width={gridW} height={gridH} fill="#FAFBFF" />
-        <g className="grid">
+        <g className="cg-grid">
           {ticksX.map(x => (
             <line key={`gx${x}`} x1={sx(x)} y1={sy(yMin)} x2={sx(x)} y2={sy(yMax)}
               stroke="#E5E7EB" strokeWidth={1} />
@@ -5920,12 +5920,12 @@ export function CoordinateGrid({
         {/* 2. Shape fills, image first so the original reads as primary */}
         {polygonImage && polygonImage.length > 2 && (
           <polygon points={toPointsAttr(polygonImage)}
-            fill="#f0f0ff" fillOpacity={0.55} stroke="#818cf8" strokeWidth={2.5}
+            fill="#FDCB6E30" stroke="#FDCB6E" strokeWidth={2.5}
             strokeDasharray="7,4" strokeLinejoin="round" strokeLinecap="round" />
         )}
         {polygon && polygon.length > 2 && (
           <polygon points={toPointsAttr(polygon)}
-            fill="#f0f0ff" stroke="#6366f1" strokeWidth={3}
+            fill="#7C3AED30" stroke="#7C3AED" strokeWidth={2.5}
             strokeLinejoin="round" strokeLinecap="round" />
         )}
 
@@ -5933,17 +5933,17 @@ export function CoordinateGrid({
         <g className="mirror-lines">
           {allLines.map(l => (
             <line key={l.key} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2}
-              stroke="#818cf8" strokeWidth={2.5} strokeDasharray="8,5" strokeLinecap="round" />
+              stroke="#1e293b" strokeWidth={2.5} strokeDasharray="8,5" strokeLinecap="round" />
           ))}
         </g>
 
         {/* 4. Axes, drawn over the grid so they read as the reference lines */}
         <g className="axes">
           <line x1={sx(xMin)} y1={axisY} x2={sx(xMax) + 8} y2={axisY}
-            stroke="#6366f1" strokeWidth={2.5} strokeLinecap="round"
+            stroke="#1e293b" strokeWidth={3} strokeLinecap="round"
             markerEnd={`url(#${uid}-arrow)`} />
           <line x1={axisX} y1={sy(yMin)} x2={axisX} y2={sy(yMax) - 8}
-            stroke="#6366f1" strokeWidth={2.5} strokeLinecap="round"
+            stroke="#1e293b" strokeWidth={3} strokeLinecap="round"
             markerEnd={`url(#${uid}-arrow)`} />
         </g>
 
@@ -5980,7 +5980,7 @@ export function CoordinateGrid({
             const cxp = sx(p.x), cyp = sy(p.y);
             // Unknown = grey, matching AngleDiagram's "?°" convention (the
             // skill's named style benchmark). Red would read as "wrong".
-            const colour = p.unknown ? "#9ca3af" : "#6366f1";
+            const colour = p.unknown ? "#dc2626" : "#7C3AED";
             // An unknown point is the thing being asked about, so its
             // coordinates are never rendered — `unknown` overrides showCoords.
             const withCoords = p.showCoords === true && !p.unknown;
@@ -5996,7 +5996,7 @@ export function CoordinateGrid({
                 <circle cx={cxp} cy={cyp} r={5} fill={colour} stroke="white" strokeWidth={2} />
                 {pos && (
                   <text x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
-                    fontSize={pos.fontSize} fontWeight="bold" fill={colour}
+                    fontSize={pos.fontSize} fontWeight={800} fill={colour}
                     fontFamily="system-ui, -apple-system, sans-serif">{text}</text>
                 )}
               </g>
@@ -6012,7 +6012,7 @@ export function CoordinateGrid({
               { w: vw, h: vh }, { fontSize: 14, charWidth: 9, allowShrink: true, margin: 3 });
             return (
               <text key={l.key} x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
-                fontSize={pos.fontSize} fontWeight="bold" fill="#6366f1"
+                fontSize={pos.fontSize} fontWeight={800} fill="#7C3AED"
                 fontFamily="system-ui, -apple-system, sans-serif">{l.letter}</text>
             );
           })}
@@ -6099,7 +6099,7 @@ export function VennDiagram({
     ? [[95, 72], [305, 72]]
     : [[88, 84], [312, 84], [200, 347]];
 
-  const accents = ['#818cf8', '#38bdf8', '#34d399'];
+  const accents = ['#7C3AED', '#FDCB6E', '#22C55E'];
   const isUnknown = (key) => unknownRegions.indexOf(key) !== -1;
   const uid = `venn-${n}-${Object.keys(regions).join('')}`;
 
@@ -6122,7 +6122,7 @@ export function VennDiagram({
             it carries meaning (everything counted sits inside it) but is not
             the subject of the diagram. */}
         <rect x={16} y={16} width={vw - 32} height={vh - 32} rx={10}
-          fill="#FAFBFF" stroke="#E5E7EB" strokeWidth={1.5} />
+          fill="none" stroke="#E5E7EB" strokeWidth={2} />
 
         {/* Circles: ONE soft lavender fill across all of them, exactly as
             AngleDiagram uses a single #f0f0ff shape fill. Set identity comes
@@ -6130,7 +6130,7 @@ export function VennDiagram({
             overlaps clean instead of turning muddy where fills mix. */}
         {circles.map((c, i) => (
           <circle key={i} cx={c.cx} cy={c.cy} r={r}
-            fill="#f0f0ff" fillOpacity={0.7}
+            fill={accents[i] + '30'}
             stroke={accents[i]} strokeWidth={2.5} />
         ))}
 
@@ -6144,7 +6144,7 @@ export function VennDiagram({
             return (
               <text key={key} x={lx} y={ly} textAnchor="middle" dominantBaseline="middle"
                 fontSize={17} fontWeight="bold"
-                fill={unknown ? '#9ca3af' : '#1e293b'}
+                fill={unknown ? '#dc2626' : '#1e293b'}
                 fontFamily="system-ui, -apple-system, sans-serif">
                 {unknown ? '?' : value}
               </text>
@@ -6159,7 +6159,7 @@ export function VennDiagram({
                 ("none of these") cannot run out of the box. */}
             <text x={34} y={vh - 58} textAnchor="start" dominantBaseline="middle"
               fontSize={17} fontWeight="bold"
-              fill={isUnknown('outside') ? '#9ca3af' : '#1e293b'}
+              fill={isUnknown('outside') ? '#dc2626' : '#1e293b'}
               fontFamily="system-ui, -apple-system, sans-serif">
               {isUnknown('outside') ? '?' : regions.outside}
             </text>
@@ -6191,6 +6191,204 @@ export function VennDiagram({
           {total} altogether
         </p>
       )}
+    </div>
+  );
+}
+
+
+// ============================================================
+// NetDiagram — nets of cubes and cuboids
+// ============================================================
+// Benchmark fix #9c, the last of the zero-coverage GL types. Two shapes of
+// question, sharing one layout engine:
+//
+//   1. `cells` — a net of unit squares on a grid. For spatial-reasoning
+//      items: "which of these folds into a cube?", "which face ends up
+//      opposite the shaded one?"
+//   2. `cuboid` — {length, width, height}, drawn as the standard cross net
+//      with each face sized in proportion and its dimensions labelled. For
+//      read-then-compute items: "what is the surface area of the solid this
+//      net folds into?"
+//
+// FOLD LINES ARE THE POINT. An edge shared by two faces is a fold (dashed);
+// an unshared edge is the outline (solid). Getting that distinction right is
+// what makes a net readable as a net rather than a pile of rectangles, so it
+// is computed from the geometry — every edge is counted, appearing twice
+// means fold — never hand-listed per layout.
+//
+// Props:
+//   cells       — [{ col, row, label, shaded }] unit-square faces
+//   cuboid      — { length, width, height, unit } proportional cross net
+//   showDims    — label the cuboid's edge dimensions (default true)
+//   unknownFace — label of a face to render "?" instead of its own label
+//
+// ANSWER LEAKAGE — see [[feedback_diagrams_must_not_leak_answers]].
+// If the stem asks for the surface area, the figure gives the DIMENSIONS and
+// the child computes; it must never print an area. If it asks which face is
+// opposite the shaded one, the candidate faces carry neutral letters, not
+// answers. Use unknownFace to withhold a label the question is asking for.
+
+export function NetDiagram({
+  cells = null,
+  cuboid = null,
+  showDims = true,
+  unknownFace = null
+}) {
+  // ---- Build the face rectangles, in abstract units ----
+  let faces = [];
+
+  if (cuboid) {
+    const L = Number(cuboid.length), W = Number(cuboid.width), H = Number(cuboid.height);
+    if (!(L > 0 && W > 0 && H > 0)) return null;
+    // Standard cross net. Column widths [W, L, W, L]; row heights [W, H, W].
+    const colX = [0, W, W + L, W + L + W];
+    const rowY = [0, W, W + H];
+    faces = [
+      { x: colX[1], y: rowY[0], w: L, h: W, label: 'top' },
+      { x: colX[0], y: rowY[1], w: W, h: H, label: 'left' },
+      { x: colX[1], y: rowY[1], w: L, h: H, label: 'front' },
+      { x: colX[2], y: rowY[1], w: W, h: H, label: 'right' },
+      { x: colX[3], y: rowY[1], w: L, h: H, label: 'back' },
+      { x: colX[1], y: rowY[2], w: L, h: W, label: 'bottom' },
+    ];
+  } else if (cells && cells.length) {
+    faces = cells.map(c => ({
+      x: c.col, y: c.row, w: 1, h: 1, label: c.label || null, shaded: !!c.shaded
+    }));
+  } else {
+    return null;
+  }
+
+  // ---- Fit to the viewBox ----
+  const minX = Math.min(...faces.map(f => f.x));
+  const minY = Math.min(...faces.map(f => f.y));
+  const maxX = Math.max(...faces.map(f => f.x + f.w));
+  const maxY = Math.max(...faces.map(f => f.y + f.h));
+  const unitsW = maxX - minX, unitsH = maxY - minY;
+
+  const vw = 400, vh = 340;
+  // Generous padding so dimension labels sit OUTSIDE the net with room —
+  // the AngleDiagram convention.
+  const pad = showDims && cuboid ? 54 : 34;
+  const scale = Math.min((vw - 2 * pad) / unitsW, (vh - 2 * pad) / unitsH);
+  const netW = unitsW * scale, netH = unitsH * scale;
+  const ox = (vw - netW) / 2 - minX * scale;
+  const oy = (vh - netH) / 2 - minY * scale;
+
+  const px = (u) => ox + u * scale;
+  const py = (u) => oy + u * scale;
+
+  // ---- Classify every edge: shared == fold, unshared == outline ----
+  // Faces are grid-aligned in both modes, so edges either coincide exactly
+  // or not at all, and a simple occurrence count is exact.
+  const edgeMap = new Map();
+  const keyOf = (x1, y1, x2, y2) => {
+    const r = (v) => Math.round(v * 1000) / 1000;
+    return `${r(x1)},${r(y1)},${r(x2)},${r(y2)}`;
+  };
+  faces.forEach(f => {
+    const { x, y, w, h } = f;
+    const es = [
+      [x, y, x + w, y],         // top
+      [x + w, y, x + w, y + h], // right
+      [x, y + h, x + w, y + h], // bottom
+      [x, y, x, y + h],         // left
+    ];
+    es.forEach(e => {
+      const k = keyOf(e[0], e[1], e[2], e[3]);
+      edgeMap.set(k, (edgeMap.get(k) || 0) + 1);
+    });
+  });
+
+  const folds = [], outline = [];
+  edgeMap.forEach((count, k) => {
+    const [x1, y1, x2, y2] = k.split(',').map(Number);
+    (count > 1 ? folds : outline).push({ x1, y1, x2, y2 });
+  });
+
+  const uid = `net-${cuboid ? `${cuboid.length}x${cuboid.width}x${cuboid.height}` : `c${faces.length}`}`;
+  const unit = (cuboid && cuboid.unit) || 'cm';
+  const description = cuboid
+    ? `The net of a cuboid, opened out flat into six rectangles. ` +
+      `Its edges are labelled ${cuboid.length}, ${cuboid.width} and ${cuboid.height} ${unit}.`
+    : `A net made of ${faces.length} squares joined edge to edge, which can be folded up.`;
+
+  return (
+    <div className="flex flex-col items-center space-y-2">
+      <svg role="img" aria-labelledby={`${uid}-t ${uid}-d`} viewBox={`0 0 ${vw} ${vh}`}
+        width="100%" style={{ maxWidth: 360 }}>
+        <title id={`${uid}-t`}>Net diagram</title>
+        <desc id={`${uid}-d`}>{description}</desc>
+
+        {/* 1. Face fills — one soft lavender across the whole net, exactly as
+               AngleDiagram fills its shape. A shaded face is picked out with
+               an accent instead of a second fill colour. */}
+        {faces.map((f, i) => (
+          <rect key={i} x={px(f.x)} y={py(f.y)} width={f.w * scale} height={f.h * scale}
+            fill={f.shaded ? '#FDCB6E30' : '#7C3AED30'} />
+        ))}
+
+        {/* 2. Fold lines — dashed accent. This is what makes it read as a net. */}
+        <g className="folds">
+          {folds.map((e, i) => (
+            <line key={i} x1={px(e.x1)} y1={py(e.y1)} x2={px(e.x2)} y2={py(e.y2)}
+              stroke="#7C3AED" strokeWidth={2} strokeDasharray="5,4" strokeLinecap="round" />
+          ))}
+        </g>
+
+        {/* 3. Outline — solid primary, drawn last so corners stay crisp */}
+        <g className="net-outline">
+          {outline.map((e, i) => (
+            <line key={i} x1={px(e.x1)} y1={py(e.y1)} x2={px(e.x2)} y2={py(e.y2)}
+              stroke="#1e293b" strokeWidth={3} strokeLinecap="round" />
+          ))}
+        </g>
+
+        {/* 4. Face labels */}
+        <g className="face-labels">
+          {faces.map((f, i) => {
+            if (!f.label) return null;
+            const hidden = unknownFace != null && f.label === unknownFace;
+            return (
+              <text key={i} x={px(f.x + f.w / 2)} y={py(f.y + f.h / 2)}
+                textAnchor="middle" dominantBaseline="middle"
+                fontSize={14} fontWeight="bold"
+                fill={hidden ? '#dc2626' : '#7C3AED'}
+                fontFamily="system-ui, -apple-system, sans-serif">
+                {hidden ? '?' : f.label}
+              </text>
+            );
+          })}
+        </g>
+
+        {/* 5. Dimension labels, placed OUTSIDE the net so they never sit on a
+               fold or an outline. Only the three distinct edge lengths are
+               labelled — repeating all twelve would clutter it. */}
+        {cuboid && showDims && (() => {
+          const L = Number(cuboid.length), W = Number(cuboid.width), H = Number(cuboid.height);
+          const front = faces[2], top = faces[0], left = faces[1];
+          return (
+            <g className="dims">
+              {/* length, under the bottom face */}
+              <text x={px(faces[5].x + faces[5].w / 2)} y={py(maxY) + 24}
+                textAnchor="middle" fontSize={15} fontWeight={800} fill="#1e293b"
+                fontFamily="system-ui, -apple-system, sans-serif">{L} {unit}</text>
+              {/* height, left of the left face */}
+              <text x={px(minX) - 12} y={py(left.y + left.h / 2)}
+                textAnchor="end" dominantBaseline="middle"
+                fontSize={15} fontWeight={800} fill="#1e293b"
+                fontFamily="system-ui, -apple-system, sans-serif">{H} {unit}</text>
+              {/* width/depth. This labels the top face's VERTICAL extent, so
+                  it must sit beside that edge — placed above and centred it
+                  reads as the face's width (the length), which is wrong. */}
+              <text x={px(top.x + top.w) + 12} y={py(top.y + top.h / 2)}
+                textAnchor="start" dominantBaseline="middle"
+                fontSize={15} fontWeight={800} fill="#1e293b"
+                fontFamily="system-ui, -apple-system, sans-serif">{W} {unit}</text>
+            </g>
+          );
+        })()}
+      </svg>
     </div>
   );
 }

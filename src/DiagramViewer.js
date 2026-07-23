@@ -29,7 +29,8 @@ import {
   TriangleAreaDiagram,
   ParallelogramDiagram,
   CoordinateGrid,
-  VennDiagram
+  VennDiagram,
+  NetDiagram
 } from './microLessons/visuals';
 
 // Registry of all available visual components
@@ -63,7 +64,8 @@ const COMPONENTS = {
   TriangleAreaDiagram,
   ParallelogramDiagram,
   CoordinateGrid,
-  VennDiagram
+  VennDiagram,
+  NetDiagram
 };
 
 // URL format:

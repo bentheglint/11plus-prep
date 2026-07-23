@@ -21,7 +21,7 @@
 
 import React from 'react';
 import { render } from '@testing-library/react';
-import { CoordinateGrid } from '../../microLessons/visuals';
+import { CoordinateGrid, VennDiagram, NetDiagram } from '../../microLessons/visuals';
 
 // Pull every piece of text the SVG actually renders.
 function renderedText(ui) {
@@ -81,7 +81,7 @@ describe('CoordinateGrid renders a readable, correct grid', () => {
     const { container } = render(
       <CoordinateGrid xRange={[0, 10]} yRange={[0, 4]} />
     );
-    const lines = [...container.querySelectorAll('g.grid line')];
+    const lines = [...container.querySelectorAll('g.cg-grid line')];
     const vertical = lines.filter((l) => l.getAttribute('x1') === l.getAttribute('x2'));
     const horizontal = lines.filter((l) => l.getAttribute('y1') === l.getAttribute('y2'));
 
@@ -92,7 +92,7 @@ describe('CoordinateGrid renders a readable, correct grid', () => {
 
   it('draws a gridline for every integer in range', () => {
     const { container } = render(<CoordinateGrid xRange={[0, 6]} yRange={[0, 4]} />);
-    const lines = [...container.querySelectorAll('g.grid line')];
+    const lines = [...container.querySelectorAll('g.cg-grid line')];
     const vertical = lines.filter((l) => l.getAttribute('x1') === l.getAttribute('x2'));
     const horizontal = lines.filter((l) => l.getAttribute('y1') === l.getAttribute('y2'));
     expect(vertical).toHaveLength(7); // 0..6
@@ -121,5 +121,29 @@ describe('CoordinateGrid renders a readable, correct grid', () => {
   it('renders nothing rather than crashing on a degenerate range', () => {
     const { container } = render(<CoordinateGrid xRange={[5, 5]} yRange={[0, 10]} />);
     expect(container.querySelector('svg')).toBeNull();
+  });
+});
+
+describe('SVG group names do not collide with Tailwind utilities', () => {
+  // Tailwind ships utility classes called `grid` (display: grid) and `outline`
+  // (outline-style: solid). Naming an SVG <g> after one lets Tailwind style it:
+  // NetDiagram's <g className="outline"> picked up a 3px CSS outline and painted
+  // a black box around the net's bounding rectangle. The SVG was geometrically
+  // perfect; a class name drew the rectangle. Caught only by looking at it.
+  const TAILWIND_UTILITIES = [
+    'grid', 'outline', 'border', 'flex', 'block', 'hidden', 'table',
+    'ring', 'shadow', 'container', 'static', 'fixed', 'absolute', 'relative',
+  ];
+
+  it.each([
+    ['CoordinateGrid', <CoordinateGrid xRange={[0, 6]} yRange={[0, 6]} polygon={[[1, 1], [3, 1], [3, 3]]} mirrorLine={{ vertical: 4 }} />],
+    ['VennDiagram', <VennDiagram sets={['A', 'B']} regions={{ A: 1, B: 2, AB: 3, outside: 4 }} />],
+    ['NetDiagram', <NetDiagram cuboid={{ length: 4, width: 2, height: 3 }} />],
+  ])('%s uses no Tailwind-colliding group names', (_name, ui) => {
+    const { container } = render(ui);
+    const offenders = [...container.querySelectorAll('svg g[class]')]
+      .map((g) => g.getAttribute('class'))
+      .filter((cls) => TAILWIND_UTILITIES.includes(cls));
+    expect(offenders).toEqual([]);
   });
 });
