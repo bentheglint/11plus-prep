@@ -6236,6 +6236,7 @@ export function NetDiagram({
   cells = null,
   cuboid = null,
   showDims = true,
+  showFaceLabels = false,
   unknownFace = null
 }) {
   // ---- Build the face rectangles, in abstract units ----
@@ -6270,14 +6271,19 @@ export function NetDiagram({
   const maxY = Math.max(...faces.map(f => f.y + f.h));
   const unitsW = maxX - minX, unitsH = maxY - minY;
 
-  const vw = 400, vh = 340;
-  // 70 matches RectangleDiagram's padL — the room a dimension line plus its
-  // rotated label actually needs outside the figure.
-  const pad = showDims && cuboid ? 70 : 34;
-  const scale = Math.min((vw - 2 * pad) / unitsW, (vh - 2 * pad) / unitsH);
+  // The viewBox HEIGHT follows the net's own aspect rather than being fixed.
+  // A cuboid cross is wide and flat (22 x 11 units for an 8x3x5), so a fixed
+  // square-ish canvas pinned the scale to the width and left the figure tiny
+  // inside big empty margins — which is what made this look cramped.
+  const vw = 400;
+  const padX = showDims && cuboid ? 68 : 30;   // room for a rotated dim label
+  const padY = showDims && cuboid ? 52 : 30;
+  const drawW = vw - 2 * padX;
+  const scale = drawW / unitsW;
   const netW = unitsW * scale, netH = unitsH * scale;
-  const ox = (vw - netW) / 2 - minX * scale;
-  const oy = (vh - netH) / 2 - minY * scale;
+  const vh = Math.round(netH + 2 * padY);
+  const ox = padX - minX * scale;
+  const oy = padY - minY * scale;
 
   const px = (u) => ox + u * scale;
   const py = (u) => oy + u * scale;
@@ -6351,7 +6357,13 @@ export function NetDiagram({
         {/* 4. Face labels */}
         <g className="face-labels">
           {faces.map((f, i) => {
-            if (!f.label) return null;
+            // OFF by default: RectangleDiagram and CuboidDiagram never name
+            // their faces. On a cuboid net the left/right faces are only as
+            // wide as the depth, so a label fills the face and collides with
+            // the fold lines either side.
+            if (!f.label || !showFaceLabels) return null;
+            // Never label a face too small to hold the text legibly.
+            if (f.w * scale < 46 || f.h * scale < 24) return null;
             const hidden = unknownFace != null && f.label === unknownFace;
             return (
               <text key={i} x={px(f.x + f.w / 2)} y={py(f.y + f.h / 2)}
@@ -6395,16 +6407,18 @@ export function NetDiagram({
                 fontFamily="system-ui, -apple-system, sans-serif"
                 transform={`rotate(-90, ${px(minX) - 38}, ${py(left.y + left.h / 2)})`}>{H} {unit}</text>
 
-              {/* width/depth. This measures the top face's VERTICAL extent, so
-                  the line runs down that edge — placed above and centred it
-                  would read as the face's width (the length), which is wrong. */}
-              <line x1={px(top.x + top.w) + 20} y1={py(top.y)} x2={px(top.x + top.w) + 20} y2={py(top.y + top.h)}
+              {/* width/depth. Measured HORIZONTALLY across the left face,
+                  which is W wide, and drawn clear above the whole net. Two
+                  vertical dimensions stacked on the left edge end up reading
+                  as one string ("5 cm 3 cm"), and beside the top face the
+                  arrowhead lands on a neighbouring face's corner — so it goes
+                  here, in its own empty zone, perpendicular to the other two. */}
+              <line x1={px(left.x)} y1={py(minY) - 20} x2={px(left.x + left.w)} y2={py(minY) - 20}
                 stroke="#6366f1" strokeWidth="2"
-                markerStart={`url(#${uid}-au)`} markerEnd={`url(#${uid}-ad)`} />
-              <text x={px(top.x + top.w) + 38} y={py(top.y + top.h / 2)}
+                markerStart={`url(#${uid}-al)`} markerEnd={`url(#${uid}-ar)`} />
+              <text x={px(left.x + left.w / 2)} y={py(minY) - 28}
                 textAnchor="middle" fontSize={18} fontWeight="bold" fill="#6366f1"
-                fontFamily="system-ui, -apple-system, sans-serif"
-                transform={`rotate(-90, ${px(top.x + top.w) + 38}, ${py(top.y + top.h / 2)})`}>{W} {unit}</text>
+                fontFamily="system-ui, -apple-system, sans-serif">{W} {unit}</text>
 
               <defs>
                 <marker id={`${uid}-ar`} markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">

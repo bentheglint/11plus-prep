@@ -65,11 +65,26 @@ const probeSource = `() => {
   const vb = (svg.getAttribute('viewBox') || '0 0 0 0').split(/\\s+/).map(Number);
   const [vx, vy, vw, vh] = vb;
 
+  // Measure in the SVG's own user units but THROUGH any transform. getBBox()
+  // returns the PRE-transform box, so a rotate(-90) label is reported where it
+  // would have been unrotated — which is how two rotated dimension labels sat
+  // visibly on top of each other while this check reported no overlaps.
+  const root = svg.getScreenCTM();
+  const toUser = (rect) => {
+    const inv = root.inverse();
+    const pt = (x, y) => {
+      const p = svg.createSVGPoint(); p.x = x; p.y = y;
+      const q = p.matrixTransform(inv); return q;
+    };
+    const a = pt(rect.left, rect.top), b = pt(rect.right, rect.bottom);
+    return { x: Math.min(a.x, b.x), y: Math.min(a.y, b.y),
+             w: Math.abs(b.x - a.x), h: Math.abs(b.y - a.y) };
+  };
   const texts = [...svg.querySelectorAll('text')].map(t => {
-    const b = t.getBBox();
+    const b = toUser(t.getBoundingClientRect());
     return {
       el: t, s: t.textContent,
-      x: b.x, y: b.y, w: b.width, h: b.height,
+      x: b.x, y: b.y, w: b.w, h: b.h,
       size: parseFloat(t.getAttribute('font-size') || t.getAttribute('fontSize') || '0'),
       family: t.getAttribute('font-family') || t.getAttribute('fontFamily'),
     };
