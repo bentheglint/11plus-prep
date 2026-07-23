@@ -4531,14 +4531,25 @@ export function ClockFace({
 // ============================================================
 // RegularPolygon — draws a regular polygon with interior angle marked
 // Props: sides (number 3-12), eachAngle (number), angleLabel (string),
-//        showDiagonals (boolean), highlightAngle (boolean)
+//        showDiagonals (boolean), highlightAngle (boolean),
+//        mirrorLines (number), labelMirrorLines (boolean)
+//
+// mirrorLines draws the first n lines of symmetry (a regular n-gon has
+// exactly n). ANSWER LEAKAGE WARNING: drawing all of them answers "how many
+// lines of symmetry does this shape have?" by simple counting — the child
+// never reasons about the shape. Use it to SHOW a property the question then
+// builds on, or to draw a subset as candidates ("is the dashed line a line of
+// symmetry?"), never alongside a stem that asks for the count. The verify
+// harness enforces this against the stem.
 // ============================================================
 export function RegularPolygon({
   sides = 5,
   eachAngle = 108,
   angleLabel = null,
   showDiagonals = false,
-  highlightAngle = true
+  highlightAngle = true,
+  mirrorLines = 0,
+  labelMirrorLines = false
 }) {
   const DEG = Math.PI / 180;
   const vw = 300, vh = 260;
@@ -4592,6 +4603,38 @@ export function RegularPolygon({
 
   const label = angleLabel || `${eachAngle}°`;
 
+  // Lines of symmetry (benchmark fix #9b). A regular n-gon has exactly n,
+  // at angles -90° + j·(180°/n). Rather than guess a radius — which would
+  // overshoot the edge-midpoint axes and look sloppy — find where each axis
+  // actually meets the polygon boundary.
+  function boundaryHit(theta) {
+    const dx = Math.cos(theta), dy = Math.sin(theta);
+    let best = null;
+    for (let i = 0; i < sides; i++) {
+      const A = vertices[i];
+      const B = vertices[(i + 1) % sides];
+      const ex = B.x - A.x, ey = B.y - A.y;
+      const denom = dx * ey - dy * ex;
+      if (Math.abs(denom) < 1e-9) continue; // parallel
+      const t = ((A.x - cx) * ey - (A.y - cy) * ex) / denom;
+      const s = (dx * (A.y - cy) - dy * (A.x - cx)) / -denom;
+      if (t > 1e-6 && s >= -1e-6 && s <= 1 + 1e-6) {
+        if (best === null || t < best) best = t;
+      }
+    }
+    const R = best === null ? r : best;
+    return { x: cx + R * dx, y: cy + R * dy };
+  }
+
+  const symmetryAxes = [];
+  const axisCount = Math.max(0, Math.min(mirrorLines, sides));
+  for (let j = 0; j < axisCount; j++) {
+    const theta = -Math.PI / 2 + (Math.PI * j) / sides;
+    const p1 = boundaryHit(theta);
+    const p2 = boundaryHit(theta + Math.PI);
+    symmetryAxes.push({ p1, p2, letter: String.fromCharCode(65 + j) });
+  }
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '4px 0', gap: 4 }}>
       <svg role="img" aria-label="Regular polygon" viewBox={`0 0 ${vw} ${vh}`} style={{ width: '100%', maxWidth: 340, height: 'auto' }}>
@@ -4602,6 +4645,19 @@ export function RegularPolygon({
         {diagonals.map((d, i) => (
           <line key={i} x1={v0.x} y1={v0.y} x2={d.x} y2={d.y}
             stroke="#818cf8" strokeWidth={1.5} strokeDasharray="5,4" />
+        ))}
+
+        {/* Lines of symmetry */}
+        {symmetryAxes.map((ax, i) => (
+          <g key={`sym${i}`}>
+            <line x1={ax.p1.x} y1={ax.p1.y} x2={ax.p2.x} y2={ax.p2.y}
+              stroke="#6366f1" strokeWidth={2} strokeDasharray="8,5" strokeLinecap="round" />
+            {labelMirrorLines && (
+              <text x={ax.p1.x + (ax.p1.x > cx ? 12 : -12)} y={ax.p1.y + (ax.p1.y > cy ? 14 : -8)}
+                textAnchor="middle" fontSize={13} fontWeight="bold" fill="#6366f1"
+                fontFamily="system-ui, -apple-system, sans-serif">{ax.letter}</text>
+            )}
+          </g>
         ))}
 
         {/* Vertex dots */}
@@ -5690,6 +5746,260 @@ export function BuildingDiagram({
         {/* Ground line */}
         <line x1={startX - 30} y1={groundY + floorH} x2={startX + buildW + 30} y2={groundY + floorH}
               stroke="#6366f1" strokeWidth="2.5" strokeDasharray="6,3" />
+      </svg>
+    </div>
+  );
+}
+
+
+// ============================================================
+// CoordinateGrid — squared paper with labelled axes
+// ============================================================
+// The workhorse for benchmark fix #9b. One component covers four
+// question families, because they are all "a shape and/or some points
+// on a labelled grid, plus an optional line":
+//   • reading and plotting coordinates, midpoints
+//   • reflecting a shape in a mirror line
+//   • translating a shape
+//   • lines of symmetry for a shape drawn on squared paper
+//
+// Real GL papers make the child READ a value off the figure and THEN
+// compute. So the grid must be genuinely readable: equal x and y scale,
+// every integer gridline drawn, ticks numbered.
+//
+// Props:
+//   xRange, yRange  — [min, max] integer bounds, e.g. [0, 10] or [-5, 5]
+//   points          — [{ x, y, label, showCoords, unknown }] plotted points
+//
+// ANSWER LEAKAGE — read this before adding a point.
+// A figure must never print the answer the question is asking for. If the
+// stem says "what are the coordinates of B?" and the figure renders
+// "B (4, -3)", the child can score without reading the grid, which is the
+// exact test-wiseness the GL benchmark told us to design out.
+// So coordinates are OPT-IN PER POINT (`showCoords: true`), never a blanket
+// switch, and a point marked `unknown` can never show them whatever else is
+// set. Label a point with its letter alone unless the coordinates are GIVEN
+// information the child needs (e.g. "A is at (2,3); find the midpoint of AB").
+// The verify harness enforces this against the question stem as a hard gate.
+//   polygon         — [[x,y], ...] a shape drawn on the grid
+//   polygonImage    — [[x,y], ...] optional second shape (e.g. the reflection),
+//                     drawn dashed so the original stays the primary object
+//   mirrorLine      — one of:
+//                       { vertical: k }    the line x = k
+//                       { horizontal: k }  the line y = k
+//                       { diagonal: 'y=x' | 'y=-x' }
+//   symmetryLines   — [mirrorLine, ...] candidate lines of symmetry, drawn
+//                     with the same dashed treatment and optionally lettered
+//   xLabel, yLabel  — axis captions
+//
+// Every colour, stroke width and font size comes from
+// .claude/skills/diagram-design/references/design-tokens.md.
+
+export function CoordinateGrid({
+  xRange = [0, 10],
+  yRange = [0, 10],
+  points = [],
+  polygon = null,
+  polygonImage = null,
+  mirrorLine = null,
+  symmetryLines = [],
+  xLabel = "x",
+  yLabel = "y"
+}) {
+  const [xMin, xMax] = xRange;
+  const [yMin, yMax] = yRange;
+  const xSpan = xMax - xMin;
+  const ySpan = yMax - yMin;
+  if (xSpan <= 0 || ySpan <= 0) return null;
+
+  const vw = 360, vh = 360;
+  const padLeft = 40, padRight = 18, padTop = 18, padBottom = 38;
+  const availW = vw - padLeft - padRight;
+  const availH = vh - padTop - padBottom;
+
+  // EQUAL scale on both axes. A squashed grid makes a reflection or a line
+  // of symmetry look wrong even when the maths is right, so this is not
+  // cosmetic — it is a correctness property of the figure.
+  const cell = Math.min(availW / xSpan, availH / ySpan);
+  const gridW = cell * xSpan;
+  const gridH = cell * ySpan;
+  const left = padLeft + (availW - gridW) / 2;
+  const bottom = padTop + (availH + gridH) / 2;
+
+  const sx = (x) => left + (x - xMin) * cell;
+  const sy = (y) => bottom - (y - yMin) * cell;
+
+  // Axes sit on zero when zero is inside the range, otherwise on the edge.
+  const axisX = xMin <= 0 && xMax >= 0 ? sx(0) : sx(xMin);
+  const axisY = yMin <= 0 && yMax >= 0 ? sy(0) : sy(yMin);
+
+  const ticksX = [];
+  for (let x = xMin; x <= xMax; x++) ticksX.push(x);
+  const ticksY = [];
+  for (let y = yMin; y <= yMax; y++) ticksY.push(y);
+
+  const toPointsAttr = (pts) => pts.map(([x, y]) => `${sx(x)},${sy(y)}`).join(' ');
+
+  // A mirror/symmetry line, clipped to the grid.
+  function lineCoords(spec) {
+    if (!spec) return null;
+    if (spec.vertical != null) {
+      return { x1: sx(spec.vertical), y1: sy(yMin), x2: sx(spec.vertical), y2: sy(yMax) };
+    }
+    if (spec.horizontal != null) {
+      return { x1: sx(xMin), y1: sy(spec.horizontal), x2: sx(xMax), y2: sy(spec.horizontal) };
+    }
+    if (spec.diagonal === 'y=x') {
+      const lo = Math.max(xMin, yMin), hi = Math.min(xMax, yMax);
+      return { x1: sx(lo), y1: sy(lo), x2: sx(hi), y2: sy(hi) };
+    }
+    if (spec.diagonal === 'y=-x') {
+      const lo = Math.max(xMin, -yMax), hi = Math.min(xMax, -yMin);
+      return { x1: sx(lo), y1: sy(-lo), x2: sx(hi), y2: sy(-hi) };
+    }
+    return null;
+  }
+
+  const allLines = [];
+  const mainLine = lineCoords(mirrorLine);
+  if (mainLine) allLines.push({ ...mainLine, key: 'mirror', letter: null });
+  symmetryLines.forEach((spec, i) => {
+    const c = lineCoords(spec);
+    if (c) allLines.push({ ...c, key: `sym${i}`, letter: spec.letter || null });
+  });
+
+  const labelRegistry = [];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '4px 0' }}>
+      <svg role="img" aria-label="Coordinate grid" viewBox={`0 0 ${vw} ${vh}`}
+        style={{ width: '100%', maxWidth: 380, height: 'auto' }}>
+        <defs>
+          <marker id="cg-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#6366f1" />
+          </marker>
+        </defs>
+
+        {/* 1. Gridlines — subtle light blue, every integer */}
+        <g className="grid">
+          {ticksX.map(x => (
+            <line key={`gx${x}`} x1={sx(x)} y1={sy(yMin)} x2={sx(x)} y2={sy(yMax)}
+              stroke="#93c5fd" strokeWidth={0.8} />
+          ))}
+          {ticksY.map(y => (
+            <line key={`gy${y}`} x1={sx(xMin)} y1={sy(y)} x2={sx(xMax)} y2={sy(y)}
+              stroke="#93c5fd" strokeWidth={0.8} />
+          ))}
+        </g>
+
+        {/* 2. Shape fills, image first so the original reads as primary */}
+        {polygonImage && polygonImage.length > 2 && (
+          <polygon points={toPointsAttr(polygonImage)}
+            fill="#bfdbfe" fillOpacity={0.45} stroke="#3b82f6" strokeWidth={2}
+            strokeDasharray="6,4" strokeLinejoin="round" />
+        )}
+        {polygon && polygon.length > 2 && (
+          <polygon points={toPointsAttr(polygon)}
+            fill="#bfdbfe" fillOpacity={0.75} stroke="#3b82f6" strokeWidth={2.5}
+            strokeLinejoin="round" />
+        )}
+
+        {/* 3. Mirror / symmetry lines */}
+        <g className="mirror-lines">
+          {allLines.map(l => (
+            <line key={l.key} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2}
+              stroke="#6366f1" strokeWidth={2} strokeDasharray="8,5" strokeLinecap="round" />
+          ))}
+        </g>
+
+        {/* 4. Axes, drawn over the grid so they read as the reference lines */}
+        <g className="axes">
+          <line x1={sx(xMin)} y1={axisY} x2={sx(xMax) + 8} y2={axisY}
+            stroke="#6366f1" strokeWidth={2} markerEnd="url(#cg-arrow)" />
+          <line x1={axisX} y1={sy(yMin)} x2={axisX} y2={sy(yMax) - 8}
+            stroke="#6366f1" strokeWidth={2} markerEnd="url(#cg-arrow)" />
+        </g>
+
+        {/* 5. Tick numbers. Zero is drawn once, at the origin. */}
+        <g className="ticks">
+          {ticksX.map(x => (
+            x === 0 && yMin <= 0 && yMax >= 0 ? null : (
+              <text key={`tx${x}`} x={sx(x)} y={axisY + 18} textAnchor="middle"
+                fontSize={13} fontWeight="bold" fill="#6366f1"
+                fontFamily="system-ui, -apple-system, sans-serif">{x}</text>
+            )
+          ))}
+          {ticksY.map(y => (
+            y === 0 && xMin <= 0 && xMax >= 0 ? null : (
+              <text key={`ty${y}`} x={axisX - 10} y={sy(y) + 4} textAnchor="end"
+                fontSize={13} fontWeight="bold" fill="#6366f1"
+                fontFamily="system-ui, -apple-system, sans-serif">{y}</text>
+            )
+          ))}
+          {/* The origin belongs to both axes, so it is drawn once, tucked
+              into the empty lower-left corner. It has to clear the y-axis
+              "-1" directly beneath it — hence the extra horizontal offset
+              rather than sitting in the same column. */}
+          {xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0 && (
+            <text x={axisX - 7} y={axisY + 15} textAnchor="end"
+              fontSize={12} fontWeight="bold" fill="#6366f1"
+              fontFamily="system-ui, -apple-system, sans-serif">0</text>
+          )}
+        </g>
+
+        {/* 6. Points and their labels, always on top */}
+        <g className="points">
+          {points.map((p, i) => {
+            const cxp = sx(p.x), cyp = sy(p.y);
+            const colour = p.unknown ? "#dc2626" : "#3b82f6";
+            // An unknown point is the thing being asked about, so its
+            // coordinates are never rendered — `unknown` overrides showCoords.
+            const withCoords = p.showCoords === true && !p.unknown;
+            const text = withCoords
+              ? `${p.label ? p.label + ' ' : ''}(${p.x}, ${p.y})`
+              : (p.label || '');
+            const pos = text
+              ? safeLabelPosition(cxp + 14, cyp - 14, text, labelRegistry, { w: vw, h: vh },
+                  { fontSize: 14, charWidth: 8, allowShrink: true, margin: 3 })
+              : null;
+            return (
+              <g key={i}>
+                <circle cx={cxp} cy={cyp} r={5} fill={colour} stroke="white" strokeWidth={2} />
+                {pos && (
+                  <text x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
+                    fontSize={pos.fontSize} fontWeight="bold" fill={colour}
+                    fontFamily="system-ui, -apple-system, sans-serif">{text}</text>
+                )}
+              </g>
+            );
+          })}
+        </g>
+
+        {/* 7. Line letters, for "which line is a line of symmetry?" */}
+        <g className="line-letters">
+          {allLines.filter(l => l.letter).map(l => {
+            const mx = (l.x1 + l.x2) / 2, my = (l.y1 + l.y2) / 2;
+            const pos = safeLabelPosition(mx + 12, my - 12, l.letter, labelRegistry,
+              { w: vw, h: vh }, { fontSize: 14, charWidth: 9, allowShrink: true, margin: 3 });
+            return (
+              <text key={l.key} x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle"
+                fontSize={pos.fontSize} fontWeight="bold" fill="#6366f1"
+                fontFamily="system-ui, -apple-system, sans-serif">{l.letter}</text>
+            );
+          })}
+        </g>
+
+        {/* 8. Axis captions */}
+        {xLabel && (
+          <text x={sx(xMax) + 6} y={axisY - 10} textAnchor="end"
+            fontSize={14} fontWeight="bold" fill="#64748b"
+            fontFamily="system-ui, -apple-system, sans-serif">{xLabel}</text>
+        )}
+        {yLabel && (
+          <text x={axisX + 12} y={sy(yMax) - 6} textAnchor="start"
+            fontSize={14} fontWeight="bold" fill="#64748b"
+            fontFamily="system-ui, -apple-system, sans-serif">{yLabel}</text>
+        )}
       </svg>
     </div>
   );

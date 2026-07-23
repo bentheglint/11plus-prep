@@ -27,7 +27,8 @@ import {
   FunctionMachine,
   LineGraph,
   TriangleAreaDiagram,
-  ParallelogramDiagram
+  ParallelogramDiagram,
+  CoordinateGrid
 } from './microLessons/visuals';
 
 // Registry of all available visual components
@@ -59,7 +60,8 @@ const COMPONENTS = {
   FunctionMachine,
   LineGraph,
   TriangleAreaDiagram,
-  ParallelogramDiagram
+  ParallelogramDiagram,
+  CoordinateGrid
 };
 
 // URL format:
