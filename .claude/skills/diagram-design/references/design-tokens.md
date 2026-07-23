@@ -24,31 +24,50 @@ Every diagram MUST reference these tokens.
 >
 > ### The actual rule
 >
-> **`AngleDiagram` is the reference. Match it.** When any guidance conflicts,
-> the reference component wins — it is what the app really looks like.
+> **The reference is `AngleDisplay`, as rendered by Angles & Shapes Q1.**
+> Open it and LOOK at it before building anything:
 >
-> | Role | Value | Where |
-> |---|---|---|
-> | In-SVG primary (outlines, axes, structural lines) | `#6366f1` | shape strokes |
-> | Shape fill | `#f0f0ff` | soft lavender, one fill per figure |
-> | Element accents (tie a label to the thing it names) | `#818cf8`, `#38bdf8`, `#34d399` | labels + their element |
-> | Unknown / withheld value | `#9ca3af` with "?" | NOT red — red reads as "wrong" |
-> | Secondary text (ticks, captions) | `#64748b` | |
-> | Grid / hairlines | `#E5E7EB` | |
-> | Surface | `#FAFBFF` | |
-> | Body text | `#1e293b` | |
-> | Caption BELOW the figure (HTML, not SVG) | `#7C3AED` | `totalLabel` convention |
+> ```
+> ?diagram-viewer=true&component=AngleDisplay&props=<base64 of>
+> {"angles":[{"value":115,"label":"115°","color":"#7C3AED"},
+>            {"value":65,"label":"x°","color":"#FDCB6E"}],"size":200}
+> ```
+>
+> Do not infer the style by reading component source — that is how two passes
+> got built pale and foreign before anyone noticed. Render it, screenshot it,
+> put your diagram beside it.
+>
+> | Role | Value |
+> |---|---|
+> | Structure — rays, axes, outlines | `#1e293b`, width **3**, `strokeLinecap="round"` |
+> | Vertex / point markers | solid `#1e293b`, `r=5` |
+> | Meaningful regions | the element's colour at `+'30'` fill, **solid matching stroke at 2.5** |
+> | Element colours | `#7C3AED` purple · `#FDCB6E` amber · `#22C55E` green |
+> | Labels | weight **800**, size 15–18, in their region's colour |
+> | Unknown / withheld value | `#dc2626` |
+> | Secondary text (ticks, captions) | `#64748b` |
+> | Grid / hairlines | `#E5E7EB` |
 >
 > ### The feel, not just the palette
 >
-> - **One** soft fill per figure. Distinguish elements by STROKE colour, never
->   by different fills — mixed fills go muddy where they overlap.
-> - A label takes the colour of the element it describes.
-> - Generous padding, sized so labels can sit OUTSIDE a shape with room.
-> - If a label can't sit clear, move it out and draw a **leader line**
->   (dashed `3,2`, opacity `0.6`, in the element's colour).
+> The single biggest error to avoid is **washing it out**. The reference is
+> BOLD and confident: heavy dark structure carrying saturated colour regions.
+> Pale lavender fills with thin indigo strokes look weak and wrong, however
+> "tasteful" they seem in isolation.
+>
+> - Colour does semantic work — it distinguishes *this* angle/set/face from
+>   *that* one. A label always takes the colour of what it names.
+> - Generous whitespace. No frames or boxes around the figure.
 > - Supplementary text goes BELOW the SVG as HTML — never inside the figure.
 > - No titles inside the diagram; the question text supplies the context.
+>
+> ### Never name an SVG `<g>` after a Tailwind utility
+>
+> `grid`, `outline`, `border`, `flex`, `ring`, `shadow`, `container`, … are all
+> real Tailwind classes. `<g className="outline">` picked up `outline: solid
+> 3px` and painted a black box around a net's bounding rectangle while the SVG
+> geometry was provably correct. Prefix them (`cg-grid`, `net-outline`); there
+> is a test asserting this in `src/__tests__/data/coordinateGridNoLeak.test.js`.
 >
 > Verify with `scripts/validation/diagram-qa-probe.js`, which checks text-on-
 > shape collisions (not just text-on-text), viewBox escapes, minimum sizes and
